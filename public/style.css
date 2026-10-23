@@ -443,3 +443,4 @@ button { cursor: pointer; }
 .modal-body.explain p { margin: 4px 0 10px; }
 .ex-box { background: var(--accent-soft); border-radius: 12px; padding: 10px 12px; }
 .q .expected.lumi { color: var(--ink); font-weight: 700; }
+.extra-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; padding-bottom: 6px; }

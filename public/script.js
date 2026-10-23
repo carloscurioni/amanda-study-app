@@ -1120,9 +1120,34 @@ function openDay(date) {
   VIEW.work = { kind: 'day', date };
   show('work');
 }
-async function openExtras() {
+// Extras: a aluna escolhe a matéria. Math e English sempre disponíveis (sem assunto na semana = revisão do ano).
+const EXTRA_GROUPS = [
+  { id: 'mix', label: '🎲 Misturado', subjects: null },
+  { id: 'math', label: '➗ Math', subjects: ['math'] },
+  { id: 'en', label: '🔤 English', subjects: ['en', 'en_spell', 'en_read', 'en_guided'] },
+  { id: 'pt', label: '📝 Português', subjects: ['pt', 'pt_ort', 'pt_leit'] },
+  { id: 'ipc', label: '🌍 IPC', subjects: ['ipc'] },
+  { id: 'bss', label: '🇧🇷 BSS', subjects: ['bss'] },
+];
+// Assuntos de revisão quando a matéria não tem tópico na semana (gerador interno).
+const EXTRA_DEFAULTS = {
+  math: 'mixed', en: 'review', pt: 'revisão',
+  en_spell: 'ancient, curiosity, determined, environment, familiar, guarantee, rhythm, sincere',
+  pt_ort: 'exceção, cachorro, chuveiro, açúcar, girassol, enxergar, passeio, assobio',
+  ipc: 'solar system, plants, water cycle, continents', bss: 'regiões e capitais do Brasil, biomas, história do Brasil',
+};
+function openExtras() {
   const t = today();
   if (S.extra && S.extra.date === t && S.extra.status !== 'done') { VIEW.work = { kind: 'extra' }; show('work'); return; }
+  const ex = S.extras[t] || { sets: 0 };
+  const left = Math.max(0, S.settings.extraSetsPerDay - ex.sets);
+  const c = openModal(`<div class="modal-head"><h3>⭐ Exercícios extras</h3><button class="btn small" data-close>Fechar</button></div>
+    <div class="modal-body"><p class="tiny muted" style="margin:0 0 8px">${left ? `Valem <b>${S.settings.extraPerCorrect} 🪙 por acerto</b> · ${left} rodada${left > 1 ? 's' : ''} com moedas hoje.` : 'As rodadas com moedas de hoje acabaram: agora é só treino. 💪'}<br>Qual matéria você quer treinar?</p>
+    <div class="extra-grid">${EXTRA_GROUPS.map(g => `<button class="btn big" data-g="${g.id}">${g.label}</button>`).join('')}</div></div>`);
+  $$('[data-g]', c).forEach(btn => btn.onclick = () => { closeModal(); startExtras(EXTRA_GROUPS.find(g => g.id === btn.dataset.g)); });
+}
+async function startExtras(group) {
+  const t = today();
   const ex = S.extras[t] || { sets: 0 };
   const paid = ex.sets < S.settings.extraSetsPerDay;
   const size = S.settings.extraSetSize;
@@ -1130,31 +1155,30 @@ async function openExtras() {
   if (Server.ai) {
     const stop = showLoading(['Inventando perguntas novas…', 'Afiando o lápis… ✏️', 'Quase lá!']);
     try {
-      const w = S.week;
       const r = await apiCall('/api/more', { method: 'POST', timeout: 90000, data: {
-        name: S.name, n: size, objectiveOnly: true, topics: weekTopicsText(w),
-        exclude: recentQuestionTexts(40) } });
-      qs = validateImported(r).ok.filter(q => q.type !== 'open');
+        name: S.name, n: size, objectiveOnly: true, topics: weekTopicsText(S.week),
+        subjects: group.subjects || [], exclude: recentQuestionTexts(40) } });
+      qs = validateImported(r).ok.filter(q => q.type !== 'open' && (!group.subjects || group.subjects.includes(q.subject)));
     } catch (e) { toast('Lumi offline: usei perguntas do próprio app.'); }
     finally { stop(); }
   }
-  if (qs.length < 2) qs = localExtras(size);
-  if (!qs.length) { say('Não consegui criar extras agora. Conte o que você aprendeu em Minha semana! 📝'); return; }
-  S.extra = { date: t, paid, status: 'todo', questions: qs.slice(0, size).map((q, j) => Object.assign({ lang: SUBJ[q.subject].lang }, q, { id: `x-${j}-${uid()}` })), answers: {}, result: null };
+  if (qs.length < 2) qs = localExtras(size, group.subjects);
+  if (!qs.length) { say('Não consegui criar extras dessa matéria agora. Tente outra! 🙂', { mood: 'think' }); return; }
+  S.extra = { date: t, paid, group: group.id, status: 'todo', questions: qs.slice(0, size).map((q, j) => Object.assign({ lang: SUBJ[q.subject].lang }, q, { id: `x-${j}-${uid()}` })), answers: {}, result: null };
   save();
   VIEW.work = { kind: 'extra' };
   show('work');
   if (!paid) setTimeout(() => say('Você já usou as rodadas com moedas de hoje. Esta é só para treinar! 💪'), 300);
 }
-function localExtras(size) {
+function localExtras(size, subjects) {
   const t = today();
-  const topics = S.week ? S.week.topics : S.lastTopics;
-  let act = SUBJECTS.filter(s => (topics[s.id] || '').trim()).map(s => s.id);
-  const tp = act.length ? topics : { math: 'mixed', pt: 'revisão', en: 'review' };
-  if (!act.length) act = ['math', 'pt', 'en'];
+  const topics = (S.week ? S.week.topics : S.lastTopics) || {};
+  let act = subjects || [...new Set(['math', 'en', ...SUBJECTS.filter(s => (topics[s.id] || '').trim()).map(s => s.id)])];
   const rng = makeRng('extra|' + t + '|' + uid());
-  const pools = act.map(id => buildPool(id, tp[id] || '', 'x' + t + uid(), []).filter(q => q.type !== 'open' && q.type !== 'listen'));
+  const pools = act.map(id => buildPool(id, (topics[id] || '').trim() || EXTRA_DEFAULTS[id] || '', 'x' + t + uid(), [])
+    .filter(q => q.type !== 'open' && (q.type !== 'listen' || speechOK))).filter(p => p.length);
   const qs = []; let i = 0, g = 0;
+  if (!pools.length) return qs;
   const order = rng.shuffle(pools.map((_, j) => j));
   while (qs.length < size && g++ < 200) { const p = pools[order[i++ % order.length]]; if (p.length) qs.push(p.splice(rng.int(0, Math.min(5, p.length - 1)), 1)[0]); }
   return qs;

@@ -29,7 +29,7 @@ Os dados ficam salvos num servidor, então funcionam em qualquer aparelho.
    - **Na tela:** as objetivas são corrigidas na hora, e as **livres são corrigidas pela Lumi** com um comentário.
    - **No papel:** em **📄 Corrigir folha**, ela tira uma foto e o Claude lê a letra dela e corrige tudo (livres inclusive). Ou ela corrige sozinha com o gabarito, marcando ✓/✗.
    - Os pais veem todas as livres com o comentário da Lumi e podem confirmar ou mudar.
-5. **Sexta** é o dia de entregar a semana. **⭐ Extras** dão moedas a mais. As moedas compram itens na **🛒 Lojinha**.
+5. **Sexta** é o dia de entregar a semana. **⭐ Extras** dão moedas a mais. Ela escolhe a matéria: Math, English, Português, IPC, BSS ou misturado. Math e English estão sempre disponíveis; sem assunto na semana, viram revisão do ano. As moedas compram itens na **🛒 Lojinha**.
 
 ## 2. Moedas e lojinha
 
@@ -74,8 +74,8 @@ Vocês precisam de duas contas: **Anthropic** (API do Claude, pré-paga) e **Clo
 - No iPad/iPhone: **Compartilhar → Adicionar à Tela de Início** para virar um ícone de app.
 - A cada `git push` neste repositório, a Cloudflare publica a nova versão sozinha.
 
-### Desligar o GitHub Pages
-O app agora roda na Cloudflare. No GitHub: **Settings → Pages → Source → None**. O endereço antigo deixa de funcionar e não fica uma versão velha no ar.
+### E o link do GitHub Pages?
+O link antigo (`carloscurioni.github.io/amanda-study-app`) continua funcionando como **versão sem servidor**: sem Claude, com perguntas do gerador interno e dados só naquele aparelho. Quando a versão da Cloudflare estiver no ar, desligue-o em **Settings → Pages → Source → None**, para não haver duas versões.
 
 ---
 

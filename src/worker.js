@@ -237,7 +237,7 @@ async function handleMore(env, b) {
   const subjects = (b.subjects || []).filter(s => SUBJECT_IDS.includes(s));
   const content = [{ type: 'text', text: `Assuntos da semana:
 ${String(b.topics || '').slice(0, 3000) || '(revisão geral do 5º ano)'}
-${subjects.length ? `\nUse só estas matérias: ${subjects.join(', ')}.` : ''}
+${subjects.length ? `\nUse só estas matérias: ${subjects.join(', ')}. Se alguma delas não tiver assunto listado acima, faça uma revisão do conteúdo típico dessa matéria para ~10 anos (5º ano no Brasil / Year 5–6 no currículo britânico).` : '\nMisture as matérias da semana e inclua sempre Math e English.'}
 ${b.objectiveOnly ? '\nNÃO use o tipo "open" — só mc, short e num (correção automática).' : ''}
 ${b.exclude?.length ? `\nNão repita estas perguntas:\n- ${b.exclude.slice(0, 60).map(x => String(x).slice(0, 120)).join('\n- ')}` : ''}
 
