@@ -5,6 +5,8 @@
   "name": "amanda-study-app",
   "main": "src/worker.js",
   "compatibility_date": "2025-09-01",
+  "workers_dev": true,
+  "preview_urls": false,
   "assets": { "directory": "./public", "binding": "ASSETS" },
   "durable_objects": {
     "bindings": [{ "name": "STORE", "class_name": "FamilyStore" }]
