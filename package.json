@@ -1,0 +1,13 @@
+{
+  "name": "amanda-study-app",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Estudos com a Lumi — app de estudos gamificado com perguntas criadas pelo Claude",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

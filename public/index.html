@@ -32,9 +32,12 @@
 
     <main id="screens">
       <section id="scr-welcome" class="screen" aria-label="Boas-vindas"></section>
+      <section id="scr-login" class="screen" aria-label="Código da família"></section>
       <section id="scr-home" class="screen" aria-label="Início"></section>
       <section id="scr-setup" class="screen" aria-label="Minha semana"></section>
       <section id="scr-work" class="screen" aria-label="Tarefa"></section>
+      <section id="scr-check" class="screen" aria-label="Corrigir folha"></section>
+      <section id="scr-selfcheck" class="screen" aria-label="Corrigir sozinha"></section>
       <section id="scr-shop" class="screen" aria-label="Lojinha"></section>
       <section id="scr-parents" class="screen" aria-label="Área dos pais"></section>
     </main>
@@ -44,6 +47,8 @@
     <div id="modal-card" class="modal-card"></div>
   </div>
   <div id="toast" class="toast hidden" role="status"></div>
+  <!-- Folhas para imprimir (montadas pelo script; só aparecem na impressão) -->
+  <div id="print-root" aria-hidden="true"></div>
 
   <script src="script.js"></script>
 </body>

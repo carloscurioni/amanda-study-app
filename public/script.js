@@ -186,29 +186,31 @@ function defaultState() {
     owned: [],                  // ids de itens comprados
     equipped: { hat: null, glasses: null, neck: null, bg: null },
     redemptions: [],            // vales resgatados {id, voucherId, name, date, delivered}
+    rev: 0,                     // versão no servidor
   };
 }
 function structuredCloneSafe(o) { return JSON.parse(JSON.stringify(o)); }
+function normalizeState(s) {
+  const base = defaultState();
+  const merged = Object.assign(base, s || {});
+  merged.settings = Object.assign(structuredCloneSafe(DEFAULT_SETTINGS), (s && s.settings) || {});
+  merged.settings.counts = Object.assign({}, DEFAULT_SETTINGS.counts, ((s && s.settings) || {}).counts || {});
+  merged.equipped = Object.assign(base.equipped, (s && s.equipped) || {});
+  return merged;
+}
 function load() {
   try {
     const raw = localStorage.getItem(STORE_KEY);
-    if (raw) {
-      const s = JSON.parse(raw);
-      const base = defaultState();
-      const merged = Object.assign(base, s);
-      merged.settings = Object.assign(structuredCloneSafe(DEFAULT_SETTINGS), s.settings || {});
-      merged.settings.counts = Object.assign({}, DEFAULT_SETTINGS.counts, (s.settings || {}).counts || {});
-      merged.equipped = Object.assign(base.equipped, s.equipped || {});
-      return merged;
-    }
+    if (raw) return normalizeState(JSON.parse(raw));
   } catch (e) { console.warn('Estado inválido, recomeçando', e); }
   return defaultState();
 }
 let S = load();
-function save() {
+function persistLocal() {
   try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); }
   catch (e) { toast('⚠️ Não consegui salvar neste navegador.'); }
 }
+function save() { persistLocal(); schedulePush(); }
 let saveTimer = null;
 function saveSoon() { clearTimeout(saveTimer); saveTimer = setTimeout(save, 250); }
 
@@ -218,6 +220,120 @@ function addCoins(amount, reason) {
   S.ledger = S.ledger.slice(0, 200);
   save();
   renderCoins(true);
+}
+
+/* =========================================================================
+   3b. SERVIDOR — sincronização do estado e chamadas ao Claude
+   Quando o app roda no Cloudflare Worker, os dados ficam no servidor
+   (e uma cópia no navegador). Aberto sem servidor, funciona só local.
+   ========================================================================= */
+const CODE_KEY = 'lumi-family-code';
+const Server = { on: false, ai: false, configured: false, code: readCode(), pushing: false, again: false, dirty: false, timer: null, status: 'local' };
+function readCode() { try { return localStorage.getItem(CODE_KEY) || ''; } catch (e) { return ''; } }
+function writeCode(c) { try { if (c) localStorage.setItem(CODE_KEY, c); else localStorage.removeItem(CODE_KEY); } catch (e) { /* ignora */ } Server.code = c || ''; }
+
+async function apiCall(path, { method = 'GET', data, timeout = 30000 } = {}) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), timeout);
+  try {
+    const r = await fetch(path, { method, signal: ctrl.signal, cache: 'no-store',
+      headers: { 'content-type': 'application/json', 'x-family-code': Server.code },
+      body: data === undefined ? undefined : JSON.stringify(data) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) { const e = new Error(j.error || `Erro ${r.status}`); e.status = r.status; e.data = j; throw e; }
+    return j;
+  } catch (e) {
+    if (e.name === 'AbortError') { const err = new Error('o servidor demorou demais'); err.status = 0; throw err; }
+    if (e.status === undefined) e.status = 0;
+    throw e;
+  } finally { clearTimeout(t); }
+}
+async function detectServer() {
+  try {
+    const r = await fetch('/api/health', { cache: 'no-store' });
+    if (!r.ok) return false;
+    const j = await r.json();
+    Server.on = !!j.ok; Server.ai = !!j.ai; Server.configured = !!j.configured;
+    return Server.on;
+  } catch (e) { return false; }
+}
+function schedulePush() {
+  if (!Server.on || !Server.code) return;
+  Server.dirty = true;
+  clearTimeout(Server.timer);
+  Server.timer = setTimeout(pushState, 800);
+}
+async function pushState() {
+  if (!Server.on || !Server.code) return;
+  if (Server.pushing) { Server.again = true; return; }
+  Server.pushing = true; Server.dirty = false;
+  try {
+    const r = await apiCall('/api/state', { method: 'PUT', data: { state: S, baseRev: S.rev || 0 } });
+    S.rev = r.rev; persistLocal(); Server.status = 'ok';
+  } catch (e) {
+    if (e.status === 409 && e.data && e.data.state) {
+      S = normalizeState(e.data.state); persistLocal(); Server.status = 'ok';
+      applyTheme(); renderMascotMini(); renderCoins();
+      if (!['work', 'check', 'selfcheck'].includes(currentScreen)) show(currentScreen);
+      toast('🔄 Atualizado com as mudanças de outro aparelho');
+    } else if (e.status === 401) {
+      Server.status = 'auth'; writeCode(''); toast('Código da família mudou: entre de novo.'); show('login');
+    } else { Server.dirty = true; Server.status = 'offline'; }
+  } finally {
+    Server.pushing = false;
+    if (Server.again) { Server.again = false; pushState(); }
+  }
+}
+async function loadFromServer() {
+  const r = await apiCall('/api/state');
+  if (r.state) { S = normalizeState(r.state); persistLocal(); }
+  else { S.rev = 0; await pushState(); }   // primeira vez: sobe o que já existe neste aparelho
+  Server.status = 'ok';
+}
+window.addEventListener('online', () => { if (Server.dirty) pushState(); });
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden' && Server.dirty) pushState(); });
+
+// Foto → JPEG reduzido em base64 (para mandar ao Claude)
+async function fileToJpeg(file, max = 1600, quality = 0.82) {
+  const url = URL.createObjectURL(file);
+  try {
+    const img = await new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = url; });
+    const scale = Math.min(1, max / Math.max(img.naturalWidth, img.naturalHeight));
+    const cv = document.createElement('canvas');
+    cv.width = Math.round(img.naturalWidth * scale); cv.height = Math.round(img.naturalHeight * scale);
+    cv.getContext('2d').drawImage(img, 0, 0, cv.width, cv.height);
+    return { type: 'image/jpeg', data: cv.toDataURL('image/jpeg', quality).split(',')[1] };
+  } finally { URL.revokeObjectURL(url); }
+}
+// Tela de espera com a Lumi (as chamadas ao Claude podem levar alguns segundos)
+function showLoading(msgs) {
+  let i = 0;
+  const c = openModal(`<div class="modal-body celebrate"><div class="owl-big thinking">${mascotSVG(S.equipped, 'think')}</div>
+    <p id="ld-msg" style="font-weight:800">${esc(msgs[0])}</p><div class="dots"><i></i><i></i><i></i></div></div>`);
+  $('#modal').onclick = null;
+  const timer = setInterval(() => { i = (i + 1) % msgs.length; const m = $('#ld-msg', c); if (m) m.textContent = msgs[i]; }, 3500);
+  return () => { clearInterval(timer); $('#modal')._onClose = null; closeModal(); };
+}
+
+/* ---------- Tela: código da família ---------- */
+function renderLogin() {
+  const el = $('#scr-login');
+  el.innerHTML = `<div class="welcome"><div class="owl-big">${mascotSVG(S.equipped, 'happy')}</div>
+    <h1>Código da família 🔐</h1>
+    ${Server.configured ? `<p class="muted">Digite o código que os pais configuraram no servidor. Só precisa fazer isso uma vez neste aparelho.</p>
+    <input id="fc" type="password" autocomplete="current-password" placeholder="Código da família">
+    <button class="btn primary big wide" id="fgo">Entrar</button>`
+    : '<p class="muted">O servidor ainda não tem o <b>FAMILY_CODE</b> configurado. Veja o passo a passo no README do projeto.</p>'}
+    <button class="btn ghost small" id="flocal" style="margin-top:10px">Usar só neste aparelho (sem servidor)</button></div>`;
+  const go = async () => {
+    const v = $('#fc').value.trim(); if (!v) return;
+    writeCode(v);
+    try { await apiCall('/api/login', { method: 'POST', data: {} }); await loadFromServer(); toast('✅ Conectado!'); startApp(); }
+    catch (e) { writeCode(''); toast(e.status === 401 ? 'Código incorreto.' : `Erro: ${e.message}`); }
+  };
+  const b = $('#fgo', el); if (b) b.onclick = go;
+  const i = $('#fc', el); if (i) i.onkeydown = e => { if (e.key === 'Enter') go(); };
+  $('#flocal', el).onclick = () => { Server.on = false; Server.ai = false; startApp(); };
 }
 
 /* =========================================================================
@@ -310,10 +426,10 @@ function tipsFor(screen) {
       'Matéria em branco não entra na semana.',
     ],
     work: [
-      'Toque no 💡 de uma pergunta e eu dou uma dica.',
-      'Perguntas abertas são corrigidas pelos seus pais. Capriche na resposta!',
+      'Toque no 💡 para uma dica, ou no ? para eu explicar o conteúdo.',
+      'Nas respostas livres, escreva com suas palavras: eu corrijo e comento!',
       S.settings.gabaritoAfterFinish ? 'Quando terminar, aperte <b>Concluir</b> e o gabarito libera.' : 'O botão <b>Gabarito</b> mostra as respostas para você se corrigir.',
-      'No 🔊 eu falo a palavra em voz alta.',
+      'Prefere papel? Toque em 🖨️ Imprimir. Depois, em 📄 Corrigir folha, eu corrijo pela foto!',
     ],
     shop: ['Compre roupinhas para mim! 😍', 'Os vales são prêmios de verdade: os pais confirmam a entrega.', 'Experimente um fundo novo para o app!'],
     parents: ['Área dos pais: correção das respostas livres, moedas, vales e ajustes.'],
@@ -859,16 +975,16 @@ function archiveWeek(w) {
    7. TELAS
    ========================================================================= */
 let currentScreen = 'home';
-const VIEW = { setupTab: 'pt', setupCycle: null, shopCat: 'hat', parentTab: 'review', parentsUnlocked: false, work: null };
+const VIEW = { setupTab: 'pt', setupCycle: null, setupMode: null, shopCat: 'hat', parentTab: 'review', parentsUnlocked: false, work: null, check: null, selfMarks: {} };
 
 function show(screen) {
   currentScreen = screen;
   $$('.screen').forEach(s => s.classList.toggle('active', s.id === 'scr-' + screen));
   $$('.top-nav button').forEach(b => b.classList.toggle('active', b.dataset.nav === screen));
-  const titles = { welcome: 'Bem-vinda!', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', shop: '🛒 Lojinha', parents: '🔒 Área dos pais' };
+  const titles = { welcome: 'Bem-vinda!', login: 'Entrar', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', check: '📄 Corrigir folha', selfcheck: '✍️ Corrigir', shop: '🛒 Lojinha', parents: '🔒 Área dos pais' };
   $('#top-title').textContent = titles[screen] || 'Estudos';
   hideBubble();
-  ({ welcome: renderWelcome, home: renderHome, setup: renderSetup, work: renderWork, shop: renderShop, parents: renderParents })[screen]();
+  ({ welcome: renderWelcome, login: renderLogin, home: renderHome, setup: renderSetup, work: renderWork, check: renderCheck, selfcheck: renderSelfCheck, shop: renderShop, parents: renderParents })[screen]();
 }
 function renderCoins(pop) {
   $('#coin-count').textContent = S.coins;
@@ -952,6 +1068,7 @@ function renderHome() {
     if (w.settled === 'delivered') main = `<div class="notice good">🎉 Semana entregue! Quer adiantar a próxima?</div><button class="btn primary big wide" data-act="setup-next">Planejar a próxima semana</button>`;
     else if (w.settled === 'missed') main = `<button class="btn primary big wide" data-act="setup">Planejar nova semana</button>`;
     else if (late.length) main = `<button class="btn primary big wide" data-day="${late[0].date}">⏰ Fazer tarefa atrasada (${DOW_LABEL[late[0].dow]})</button>`;
+    else if (td && dayState(td) === 'today' && td.printed) main = `<button class="btn gold big wide" data-check="${t}">📄 Corrigir a folha de hoje</button><button class="btn wide" data-day="${t}">📘 Fazer na tela</button>`;
     else if (td && dayState(td) === 'today') main = `<button class="btn primary big wide" data-day="${t}">📘 Abrir a tarefa de hoje (${td.questions.length} perguntas)</button>`;
     else if (weekAllDone(w) && t === w.end) main = `<button class="btn gold big wide" data-act="deliver">🎁 Entregar a semana (+${S.settings.reward} 🪙)</button>`;
     else if (td && td.status === 'done') main = `<div class="notice good">✅ Tarefa de hoje feita! Que tal uns extras?</div>`;
@@ -960,7 +1077,8 @@ function renderHome() {
 
     const ex = S.extras[t] || { sets: 0 };
     const left = Math.max(0, S.settings.extraSetsPerDay - ex.sets);
-    body = `<div class="card span2"><div class="week-strip">${strip}</div></div>
+    const sum = (w.summary || []).length ? `<div class="card span2 week-sum"><b>Esta semana</b>${w.summary.map(x => `<span>${SUBJ[x.subject] ? SUBJ[x.subject].icon : '•'} ${esc(x.summary)}</span>`).join('')}</div>` : '';
+    body = `<div class="card span2"><div class="week-strip">${strip}</div></div>${sum}
       <div class="card actions">${main}</div>
       <div class="card actions">
         <button class="btn gold wide" data-act="extra">⭐ Exercícios extras ${left ? `(+${S.settings.extraPerCorrect} 🪙/acerto · ${left} hoje)` : '(sem moedas hoje)'}</button>
@@ -973,6 +1091,7 @@ function renderHome() {
   el.innerHTML = `<div class="home">${hero}${noticeHtml}${body}${shelf}</div>`;
 
   $$('[data-day]', el).forEach(b => b.onclick = () => openDay(b.dataset.day));
+  $$('[data-check]', el).forEach(b => b.onclick = () => openCheck(b.dataset.check));
   $$('[data-act]', el).forEach(b => b.onclick = () => {
     const a = b.dataset.act;
     if (a === 'setup') { VIEW.setupCycle = null; show('setup'); }
@@ -1001,76 +1120,212 @@ function openDay(date) {
   VIEW.work = { kind: 'day', date };
   show('work');
 }
-function openExtras() {
+async function openExtras() {
   const t = today();
   if (S.extra && S.extra.date === t && S.extra.status !== 'done') { VIEW.work = { kind: 'extra' }; show('work'); return; }
   const ex = S.extras[t] || { sets: 0 };
   const paid = ex.sets < S.settings.extraSetsPerDay;
-  const topics = S.week ? S.week.topics : S.lastTopics;
-  let act = SUBJECTS.filter(s => (topics[s.id] || '').trim()).map(s => s.id);
-  const fallback = !act.length;
-  const tp = fallback ? { math: 'mixed', pt: 'revisão', en: 'review' } : topics;
-  if (fallback) act = ['math', 'pt', 'en'];
-  const rng = makeRng('extra|' + t + '|' + ex.sets + '|' + uid());
-  const pools = act.map(id => buildPool(id, tp[id] || '', 'x' + t + ex.sets + uid(), []).filter(q => q.type !== 'open'));
-  const qs = []; let i = 0, g = 0;
-  const order = rng.shuffle(pools.map((_, j) => j));
-  while (qs.length < S.settings.extraSetSize && g++ < 200) { const p = pools[order[i++ % order.length]]; if (p.length) qs.push(p.splice(rng.int(0, Math.min(5, p.length - 1)), 1)[0]); }
-  if (!qs.length) { say('Não consegui criar extras agora. Escreva tópicos em Minha semana! 📝'); return; }
-  S.extra = { date: t, paid, status: 'todo', questions: qs.map((q, j) => Object.assign({}, q, { id: `x-${j}-${uid()}` })), answers: {}, result: null };
+  const size = S.settings.extraSetSize;
+  let qs = [];
+  if (Server.ai) {
+    const stop = showLoading(['Inventando perguntas novas…', 'Afiando o lápis… ✏️', 'Quase lá!']);
+    try {
+      const w = S.week;
+      const r = await apiCall('/api/more', { method: 'POST', timeout: 90000, data: {
+        name: S.name, n: size, objectiveOnly: true, topics: weekTopicsText(w),
+        exclude: recentQuestionTexts(40) } });
+      qs = validateImported(r).ok.filter(q => q.type !== 'open');
+    } catch (e) { toast('Lumi offline: usei perguntas do próprio app.'); }
+    finally { stop(); }
+  }
+  if (qs.length < 2) qs = localExtras(size);
+  if (!qs.length) { say('Não consegui criar extras agora. Conte o que você aprendeu em Minha semana! 📝'); return; }
+  S.extra = { date: t, paid, status: 'todo', questions: qs.slice(0, size).map((q, j) => Object.assign({ lang: SUBJ[q.subject].lang }, q, { id: `x-${j}-${uid()}` })), answers: {}, result: null };
   save();
   VIEW.work = { kind: 'extra' };
   show('work');
   if (!paid) setTimeout(() => say('Você já usou as rodadas com moedas de hoje. Esta é só para treinar! 💪'), 300);
 }
+function localExtras(size) {
+  const t = today();
+  const topics = S.week ? S.week.topics : S.lastTopics;
+  let act = SUBJECTS.filter(s => (topics[s.id] || '').trim()).map(s => s.id);
+  const tp = act.length ? topics : { math: 'mixed', pt: 'revisão', en: 'review' };
+  if (!act.length) act = ['math', 'pt', 'en'];
+  const rng = makeRng('extra|' + t + '|' + uid());
+  const pools = act.map(id => buildPool(id, tp[id] || '', 'x' + t + uid(), []).filter(q => q.type !== 'open' && q.type !== 'listen'));
+  const qs = []; let i = 0, g = 0;
+  const order = rng.shuffle(pools.map((_, j) => j));
+  while (qs.length < size && g++ < 200) { const p = pools[order[i++ % order.length]]; if (p.length) qs.push(p.splice(rng.int(0, Math.min(5, p.length - 1)), 1)[0]); }
+  return qs;
+}
+function weekTopicsText(w) {
+  if (!w) return Object.entries(S.lastTopics || {}).filter(([, v]) => v).map(([k, v]) => `${SUBJ[k] ? SUBJ[k].name : k}: ${v}`).join('\n');
+  const lines = SUBJECTS.filter(s => (w.topics[s.id] || '').trim()).map(s => `${s.name}: ${w.topics[s.id].trim().replace(/\n/g, ' / ')}`);
+  return (w.brief ? `O que a aluna contou: ${w.brief}\n` : '') + lines.join('\n');
+}
+function recentQuestionTexts(n) {
+  const out = [];
+  if (S.week) Object.values(S.week.days).forEach(d => d.questions.forEach(q => out.push(q.q)));
+  if (S.extra) S.extra.questions.forEach(q => out.push(q.q));
+  return out.slice(-n);
+}
 
 /* ---------- Minha semana (input semanal) ---------- */
 function renderSetup() {
+  if (Server.ai && VIEW.setupMode !== 'subjects') return renderSetupAI();
   const el = $('#scr-setup');
   const t = today();
   const w = S.week;
   const editing = w && !w.settled && VIEW.setupCycle !== 'next';
-  const thisStart = cycleStartOf(t);
-  const nextStart = addDays(thisStart, 7);
-  if (!editing && !VIEW.setupCycle) VIEW.setupCycle = (w && w.settled === 'delivered' && w.start === thisStart) ? 'next' : ['qui', 'sex'].includes(dowOf(t)) ? 'next' : 'this';
-  if (w && w.settled === 'delivered' && w.start === thisStart) VIEW.setupCycle = 'next';
   const topics = VIEW.draftTopics || (editing ? w.topics : Object.assign({}, S.lastTopics));
   const counts = VIEW.draftCounts || (editing ? Object.assign({}, w.counts) : Object.assign({}, S.settings.counts));
   VIEW.draftTopics = topics; VIEW.draftCounts = counts;
   const subs = SUBJECTS.filter(s => s.group === VIEW.setupTab);
   const fields = subs.map(s => `<div class="topic" style="--subj:${s.color}"><label for="tp-${s.id}">${s.icon} ${esc(s.name)}<span class="help">${esc(s.help)}</span></label>
       <textarea id="tp-${s.id}" data-sid="${s.id}" placeholder="${esc(s.ph)}">${esc(topics[s.id] || '')}</textarea></div>`).join('');
-  const countBoxes = CYCLE.map(dk => {
-    const lockedDay = editing && (() => { const d = Object.values(w.days).find(x => x.dow === dk); return d && (d.status === 'done' || dayStarted(d) || d.date < t); })();
-    return `<div class="count-box"><div class="lbl">${DOW_LABEL[dk]}${['sab', 'dom'].includes(dk) ? ' ★' : ''}</div><div class="val">${counts[dk]}</div>
-      <div class="pm"><button data-c="${dk}" data-d="-1" ${lockedDay ? 'disabled' : ''} aria-label="menos">−</button><button data-c="${dk}" data-d="1" ${lockedDay ? 'disabled' : ''} aria-label="mais">+</button></div></div>`;
-  }).join('');
-  const cycleChoice = editing
-    ? `<div class="notice info">Editando a semana ${fmtDM(w.start)}–${fmtDM(w.end)}. Só os dias <b>ainda não começados</b> serão refeitos.</div>`
-    : `<div class="radio-row">
-        <label><input type="radio" name="cyc" value="this" ${VIEW.setupCycle === 'this' ? 'checked' : ''} ${(w && w.start === thisStart && w.settled) ? 'disabled' : ''}> Esta semana (hoje → sex ${fmtDM(addDays(thisStart, 6))})</label>
-        <label><input type="radio" name="cyc" value="next" ${VIEW.setupCycle === 'next' ? 'checked' : ''}> Próxima semana (sáb ${fmtDM(nextStart)} → sex ${fmtDM(addDays(nextStart, 6))})</label></div>`;
   const pending = (S.pendingImport || []).length;
   el.innerHTML = `<div class="setup">
+    ${Server.ai ? '<div class="notice info">Modo por matéria (sem o Claude). <button class="btn small" data-act="ai">✨ Voltar ao modo Lumi</button></div>' : (Server.on ? '' : '<div class="notice info">📴 Sem conexão com o servidor: as perguntas vêm do próprio app.</div>')}
     <div class="row wrap"><div class="seg"><button data-tab="pt" class="${VIEW.setupTab === 'pt' ? 'on' : ''}">🇧🇷 Em português</button><button data-tab="en" class="${VIEW.setupTab === 'en' ? 'on' : ''}">🇬🇧 In English</button></div>
       <span class="muted tiny grow">O que você aprendeu na escola esta semana?</span></div>
     <div class="topic-grid">${fields}</div>
-    <div><b>Perguntas por dia</b> <span class="muted tiny">(mín. ${S.settings.minPerDay}, máx. ${S.settings.maxPerDay} · fim de semana ★ um pouco mais)</span></div>
-    <div class="counts">${countBoxes}</div>
-    ${cycleChoice}
+    ${countsAndCycleHtml(editing, counts)}
     ${pending ? `<div class="notice info">📥 ${pending} perguntas importadas pelos pais serão incluídas.</div>` : ''}
     <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? 'Atualizar tarefas ✨' : 'Criar tarefas da semana ✨'}</button></div>
   </div>`;
   $$('[data-tab]', el).forEach(b => b.onclick = () => { collectDraft(); VIEW.setupTab = b.dataset.tab; renderSetup(); });
   $$('textarea[data-sid]', el).forEach(ta => ta.oninput = () => { VIEW.draftTopics[ta.dataset.sid] = ta.value; });
+  bindCountsAndCycle(el, counts, () => { collectDraft(); renderSetup(); });
+  const ai = $('[data-act=ai]', el); if (ai) ai.onclick = () => { VIEW.setupMode = null; renderSetup(); };
+  $('[data-act=cancel]', el).onclick = () => { resetDraft(); show('home'); };
+  $('[data-act=gen]', el).onclick = () => generateFromSetup(editing);
+}
+function resetDraft() { VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.draftText = null; VIEW.draftImages = null; VIEW.setupCycle = null; }
+function setupCycleDefaults() {
+  const t = today(); const w = S.week;
+  const editing = w && !w.settled && VIEW.setupCycle !== 'next';
+  const thisStart = cycleStartOf(t);
+  if (!editing && !VIEW.setupCycle) VIEW.setupCycle = ['qui', 'sex'].includes(dowOf(t)) ? 'next' : 'this';
+  if (w && w.settled === 'delivered' && w.start === thisStart) VIEW.setupCycle = 'next';
+  return editing;
+}
+function countsAndCycleHtml(editing, counts) {
+  const t = today(); const w = S.week;
+  const thisStart = cycleStartOf(t); const nextStart = addDays(thisStart, 7);
+  const countBoxes = CYCLE.map(dk => {
+    const lockedDay = editing && (() => { const d = Object.values(w.days).find(x => x.dow === dk); return d && (d.status === 'done' || dayStarted(d) || d.date < t); })();
+    return `<div class="count-box"><div class="lbl">${DOW_LABEL[dk]}${['sab', 'dom'].includes(dk) ? ' ★' : ''}</div><div class="val">${counts[dk]}</div>
+      <div class="pm"><button data-c="${dk}" data-d="-1" ${lockedDay ? 'disabled' : ''} aria-label="menos">−</button><button data-c="${dk}" data-d="1" ${lockedDay ? 'disabled' : ''} aria-label="mais">+</button></div></div>`;
+  }).join('');
+  const cycle = editing
+    ? `<div class="notice info">Editando a semana ${fmtDM(w.start)}–${fmtDM(w.end)}. Só os dias <b>ainda não começados</b> serão refeitos.</div>`
+    : `<div class="radio-row">
+        <label><input type="radio" name="cyc" value="this" ${VIEW.setupCycle === 'this' ? 'checked' : ''} ${(w && w.start === thisStart && w.settled) ? 'disabled' : ''}> Esta semana (hoje → sex ${fmtDM(addDays(thisStart, 6))})</label>
+        <label><input type="radio" name="cyc" value="next" ${VIEW.setupCycle === 'next' ? 'checked' : ''}> Próxima semana (sáb ${fmtDM(nextStart)} → sex ${fmtDM(addDays(nextStart, 6))})</label></div>`;
+  return `<div><b>Perguntas por dia</b> <span class="muted tiny">(mín. ${S.settings.minPerDay}, máx. ${S.settings.maxPerDay} · fim de semana ★ um pouco mais)</span></div>
+    <div class="counts">${countBoxes}</div>${cycle}`;
+}
+function bindCountsAndCycle(el, counts, rerender) {
   $$('[data-c]', el).forEach(b => b.onclick = () => {
     const dk = b.dataset.c; const v = clamp((counts[dk] || 0) + Number(b.dataset.d), 0, S.settings.maxPerDay);
     counts[dk] = v > 0 && v < S.settings.minPerDay ? (Number(b.dataset.d) > 0 ? S.settings.minPerDay : 0) : v;
-    collectDraft(); renderSetup();
+    rerender();
   });
   $$('input[name=cyc]', el).forEach(r => r.onchange = () => { VIEW.setupCycle = r.value; });
-  $('[data-act=cancel]', el).onclick = () => { VIEW.draftTopics = null; VIEW.draftCounts = null; show('home'); };
-  $('[data-act=gen]', el).onclick = () => generateFromSetup(editing);
+}
+
+// Planejamento em linguagem natural: um texto livre (e fotos opcionais) → Claude cria a semana.
+function renderSetupAI() {
+  const el = $('#scr-setup');
+  const w = S.week;
+  const editing = setupCycleDefaults();
+  if (VIEW.draftText == null) VIEW.draftText = editing ? (w.brief || '') : '';
+  if (!VIEW.draftImages) VIEW.draftImages = [];
+  const counts = VIEW.draftCounts || (editing ? Object.assign({}, w.counts) : Object.assign({}, S.settings.counts));
+  VIEW.draftCounts = counts;
+  const thumbs = VIEW.draftImages.map((im, i) => `<div class="thumb"><img src="data:${im.type};base64,${im.data}" alt="Foto ${i + 1}"><button data-rm="${i}" aria-label="Remover foto">✕</button></div>`).join('');
+  el.innerHTML = `<div class="setup">
+    <div class="ai-box">
+      <label for="brief" class="ai-label">🏫 Conte para a Lumi o que você está aprendendo na escola</label>
+      <textarea id="brief" class="brief" placeholder="Ex.: Em BSS estamos aprendendo sobre as bacias hidrográficas. Em Math, frações e perímetro. Spelling: because, friend, believe, island. Em Português, substantivos e adjetivos. Estamos lendo O Pequeno Príncipe, capítulos 3 e 4. No IPC, o Sistema Solar.">${esc(VIEW.draftText)}</textarea>
+      <div class="row wrap tiny muted"><span>🎤 Dica: toque no microfone do teclado para falar em vez de escrever.</span></div>
+      <div class="row wrap">
+        <label class="btn small">📷 Foto do worksheet ou da agenda<input type="file" id="ph" accept="image/*" multiple hidden></label>
+        <span class="tiny muted">opcional · até 4 fotos</span>
+      </div>
+      ${thumbs ? `<div class="thumbs">${thumbs}</div>` : ''}
+    </div>
+    ${countsAndCycleHtml(editing, counts)}
+    <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? '✨ Atualizar a semana' : '✨ Criar minha semana com a Lumi'}</button></div>
+    <button class="btn ghost small" data-act="subjects">Prefiro escrever por matéria (sem o Claude)</button>
+  </div>`;
+  const ta = $('#brief', el);
+  ta.oninput = () => { VIEW.draftText = ta.value; };
+  $('#ph', el).onchange = async e => {
+    const files = [...e.target.files].slice(0, 4 - VIEW.draftImages.length);
+    for (const f of files) { try { VIEW.draftImages.push(await fileToJpeg(f, 1600)); } catch (err) { toast('Não consegui ler essa foto.'); } }
+    renderSetupAI();
+  };
+  $$('[data-rm]', el).forEach(b => b.onclick = () => { VIEW.draftImages.splice(Number(b.dataset.rm), 1); renderSetupAI(); });
+  bindCountsAndCycle(el, counts, () => renderSetupAI());
+  $('[data-act=cancel]', el).onclick = () => { resetDraft(); show('home'); };
+  $('[data-act=subjects]', el).onclick = () => { VIEW.setupMode = 'subjects'; renderSetup(); };
+  $('[data-act=gen]', el).onclick = () => generateWithClaude(editing);
+}
+async function generateWithClaude(editing) {
+  const text = (VIEW.draftText || '').trim();
+  const images = VIEW.draftImages || [];
+  if (!text && !images.length) { say('Me conta o que você está aprendendo (ou manda uma foto do worksheet)! ✍️', { mood: 'think' }); $('#brief').focus(); return; }
+  const counts = Object.assign({}, VIEW.draftCounts);
+  const t = today();
+  // Quais dias vão receber perguntas
+  let start, from, redo = null;
+  if (editing) {
+    const w = S.week;
+    redo = Object.values(w.days).filter(d => d.status !== 'done' && !dayStarted(d) && d.date >= t).map(d => d.date);
+    start = w.start; from = w.created > w.start ? w.created : w.start;
+  } else {
+    const thisStart = cycleStartOf(t);
+    start = VIEW.setupCycle === 'next' ? addDays(thisStart, 7) : thisStart;
+    from = VIEW.setupCycle === 'next' ? start : t;
+  }
+  const dates = CYCLE.map((_, i) => addDays(start, i)).filter(d => d >= from && (!redo || redo.includes(d)));
+  const days = dates.map(d => ({ dow: dowOf(d), label: `${DOW_FULL[dowOf(d)]} ${fmtDM(d)}`, n: counts[dowOf(d)] || 0 })).filter(d => d.n > 0);
+  if (!days.length) { say('Nenhum dia com perguntas. Aumente a quantidade em algum dia. 🙂'); return; }
+  const stop = showLoading(['Lendo o que você contou… 📖', 'Separando por matéria… 🗂️', 'Inventando perguntas… ✏️', 'Caprichando nas dicas… 💡', 'Organizando os dias da semana… 📅', 'Quase pronto! 🦉']);
+  let res;
+  try {
+    res = await apiCall('/api/plan', { method: 'POST', timeout: 240000, data: { name: S.name, text, images, days, previous: S.week && S.week.summary ? S.week.summary.map(x => `${x.subject}: ${x.summary}`).join(' | ') : '' } });
+  } catch (e) {
+    stop();
+    say(`Ops, não consegui falar com o Claude agora (${esc(e.message)}). Tente de novo em instantes, ou use o modo por matéria.`, { mood: 'sad', ms: 12000 });
+    return;
+  }
+  stop();
+  const valid = validateImported({ questions: (res.questions || []).map(q => Object.assign({}, q, { options: q.type === 'mc' ? q.options : undefined, accept: (q.accept || []).filter(Boolean) })) }).ok;
+  const topics = {};
+  (res.topics || []).forEach(x => { if (SUBJ[x.subject]) topics[x.subject] = (topics[x.subject] ? topics[x.subject] + '; ' : '') + x.summary; });
+  if (editing) {
+    const w = S.week;
+    const redoDows = redo.map(dowOf);
+    w.brief = text; w.summary = res.topics || []; w.topics = topics;
+    w.imported = (w.imported || []).filter(q => !q.day || !redoDows.includes(q.day)).concat(valid);
+    redo.forEach(date => { const d = w.days[date]; d.n = counts[d.dow]; d.required = (d.n || 0) > 0 && date >= from; d.printed = false; });
+    w.counts = counts;
+    regenerateDays(w, redo, '|' + uid());
+  } else {
+    if (S.week) archiveWeek(S.week);
+    S.week = createWeek(start, from, topics, counts, valid.concat(S.pendingImport || []));
+    S.week.brief = text; S.week.summary = res.topics || []; S.week.ai = true;
+    S.pendingImport = [];
+  }
+  S.lastTopics = topics;
+  resetDraft();
+  save();
+  const total = requiredDays(S.week).reduce((a, d) => a + d.questions.length, 0);
+  show('home');
+  say(`${esc(res.message || 'Prontinho!')} Criei <b>${total}</b> perguntas. ${S.week.start > t ? `Elas começam no sábado ${fmtDM(S.week.start)}.` : ''}`, { mood: 'wow', ms: 9000 });
 }
 function collectDraft() { $$('#scr-setup textarea[data-sid]').forEach(ta => { VIEW.draftTopics[ta.dataset.sid] = ta.value; }); }
 async function generateFromSetup(editing) {
@@ -1085,7 +1340,7 @@ async function generateFromSetup(editing) {
     w.topics = topics;
     if ((S.pendingImport || []).length) { w.imported = (w.imported || []).concat(S.pendingImport); S.pendingImport = []; }
     const redo = Object.values(w.days).filter(d => d.status !== 'done' && !dayStarted(d) && d.date >= t).map(d => d.date);
-    redo.forEach(date => { const d = w.days[date]; d.n = counts[d.dow]; d.required = (d.n || 0) > 0 && date >= (w.created > w.start ? w.created : w.start); });
+    redo.forEach(date => { const d = w.days[date]; d.n = counts[d.dow]; d.required = (d.n || 0) > 0 && date >= (w.created > w.start ? w.created : w.start); d.printed = false; });
     w.counts = counts;
     regenerateDays(w, redo, '|' + uid());
   } else {
@@ -1097,7 +1352,7 @@ async function generateFromSetup(editing) {
     S.pendingImport = [];
   }
   S.lastTopics = topics;
-  VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.setupCycle = null;
+  resetDraft();
   save();
   const total = requiredDays(S.week).reduce((a, d) => a + d.questions.length, 0);
   show('home');
@@ -1110,27 +1365,38 @@ function workCtx() {
   if (!v) return null;
   if (v.kind === 'extra') {
     const x = S.extra; if (!x) return null;
-    return { kind: 'extra', title: '⭐ Exercícios extras', obj: x, questions: x.questions, answers: x.answers, done: x.status === 'done', marks: {} };
+    return { kind: 'extra', title: '⭐ Exercícios extras', obj: x, questions: x.questions, answers: x.answers, done: x.status === 'done', marks: {}, verdicts: x.verdicts || {} };
   }
   const d = S.week && S.week.days[v.date]; if (!d) return null;
-  return { kind: 'day', title: `${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, obj: d, questions: d.questions, answers: d.answers, done: d.status === 'done', marks: d.marks || {} };
+  return { kind: 'day', title: `${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, obj: d, questions: d.questions, answers: d.answers, done: d.status === 'done', marks: d.marks || {}, verdicts: d.verdicts || {} };
+}
+// Correção: usa o veredito da foto/autocorreção quando existir; senão compara com o gabarito.
+function verdict(c, q) {
+  const v = c.verdicts && c.verdicts[q.id];
+  if (v === 'ok') return true;
+  if (v === 'bad') return false;
+  if (v === 'open') return null;
+  return isCorrect(q, c.answers[q.id]);
 }
 function renderWork() {
   const el = $('#scr-work');
   const c = workCtx();
   if (!c) { show('home'); return; }
   $('#top-title').textContent = c.kind === 'extra' ? '⭐ Extras' : `📘 ${c.title}`;
-  const canQty = c.kind === 'day' && !c.done && !dayStarted(c.obj);
+  const canQty = c.kind === 'day' && !c.done && !dayStarted(c.obj) && !c.obj.printed;
   const cards = c.questions.map((q, i) => questionCard(q, i, c)).join('');
+  const paper = c.kind === 'day' && !c.done;
   el.innerHTML = `<div class="work">
     <div class="work-head">
       <h2>${esc(c.title)}</h2>
       <div class="progress" aria-hidden="true"><i id="prog-bar"></i></div><span class="prog-txt" id="prog-txt"></span>
       ${canQty ? `<span class="qty" title="Quantas perguntas hoje?"><button data-qty="-1" aria-label="menos perguntas">−</button><span>${c.questions.length}</span><button data-qty="1" aria-label="mais perguntas">+</button></span>` : ''}
+      ${paper && c.obj.printed ? '<button class="btn small gold" data-act="check">📄 Corrigir folha</button>' : ''}
     </div>
     <div class="sheet" id="sheet">${cards}</div>
     <div class="work-foot">
-      <button class="btn" data-act="back">◂ Voltar</button>
+      <button class="btn" data-act="back" aria-label="Voltar">◂</button>
+      ${c.kind === 'day' ? '<button class="btn" data-act="print">🖨️ Imprimir</button>' : ''}
       <button class="btn" data-act="key">🔑 Gabarito</button>
       ${c.done ? '' : '<button class="btn primary" data-act="finish">✔ Concluir</button>'}
     </div></div>`;
@@ -1143,20 +1409,28 @@ function questionCard(q, i, c) {
   const ans = c.answers[q.id];
   let control = '';
   const dis = c.done ? 'disabled' : '';
-  if (q.type === 'mc') control = `<div class="opts">${q.options.map(o => `<button type="button" class="opt ${ans != null && norm(ans, true) === norm(o, true) ? 'sel' : ''}" data-opt="${esc(o)}" ${dis}>${esc(o)}</button>`).join('')}</div>`;
+  const onPaper = c.done && !answered(q, ans) && c.verdicts[q.id];
+  if (onPaper) control = `<div class="paper-note">📄 ${q.lang === 'pt' ? 'feita no papel' : 'done on paper'}</div>`;
+  else if (q.type === 'mc') control = `<div class="opts">${q.options.map(o => `<button type="button" class="opt ${ans != null && norm(ans, true) === norm(o, true) ? 'sel' : ''}" data-opt="${esc(o)}" ${dis}>${esc(o)}</button>`).join('')}</div>`;
   else if (q.type === 'open') control = `<textarea data-in placeholder="${q.lang === 'pt' ? 'Sua resposta…' : 'Your answer…'}" ${dis}>${esc(ans || '')}</textarea>`;
   else control = `<input type="text" data-in ${q.type === 'num' ? 'inputmode="decimal"' : ''} autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(ans || '')}" placeholder="${q.lang === 'pt' ? 'Resposta' : 'Answer'}" ${dis}>`;
   let stateCls = '', mark = '', expected = '';
   if (c.done) {
-    const ok = isCorrect(q, ans);
+    const ok = verdict(c, q);
+    const note = c.obj.notes && c.obj.notes[q.id];
     if (ok === true) { stateCls = 'state-ok'; mark = '✓'; }
-    else if (ok === false) { stateCls = 'state-bad'; mark = '✗'; expected = `<div class="expected">${q.lang === 'pt' ? 'Resposta' : 'Answer'}: ${esc(q.answer)}</div>`; }
+    else if (ok === false) { stateCls = 'state-bad'; mark = '✗'; expected = `<div class="expected">${q.lang === 'pt' ? 'Resposta' : 'Answer'}: ${esc(q.answer)}${note ? ` · ${esc(note)}` : ''}</div>`; }
     else { const pm = c.marks[q.id]; mark = pm === 'ok' ? '✓ pais' : pm === 'no' ? '↺ pais' : '📝'; if (pm === 'ok') stateCls = 'state-ok'; }
+    if (q.type === 'open' && ok !== null) {
+      const pm = c.marks[q.id];
+      if (pm) { mark = pm === 'ok' ? '✓ pais' : '↺ pais'; stateCls = pm === 'ok' ? 'state-ok' : 'state-bad'; }
+      expected = note ? `<div class="expected lumi">🦉 ${esc(note)}</div>` : '';
+    }
   }
   return `<div class="q ${stateCls}" style="--subj:${s.color}" data-qid="${q.id}">
     <div class="q-top"><span class="q-num">${i + 1}</span>
       <div class="q-text"><span class="q-subj">${s.icon} ${esc(s.short)}</span>${esc(q.q)}</div>
-      <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Ouvir">🔊</button>` : ''}<button type="button" data-hint title="Dica">💡</button></div>
+      <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Ouvir">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Explain this topic' : 'Explicar o conteúdo'}" aria-label="Explicar o conteúdo">?</button><button type="button" data-hint title="Dica">💡</button></div>
     </div>${control}${expected}${mark ? `<span class="mark">${mark}</span>` : ''}</div>`;
 }
 function bindWork(el, c) {
@@ -1171,19 +1445,52 @@ function bindWork(el, c) {
     const inp = $('[data-in]', card);
     if (inp) inp.oninput = () => { c.answers[q.id] = inp.value; saveSoon(); updateProgress(c); };
     const h = $('[data-hint]', card);
-    if (h) h.onclick = () => say(`💡 ${esc(q.hint || (q.lang === 'pt' ? 'Leia a pergunta de novo, com calma. Você consegue!' : 'Read the question again slowly. You can do it!'))}`, { mood: 'think' });
+    if (h) h.onclick = () => showHint(q, c);
     const sp = $('[data-say]', card);
     if (sp) sp.onclick = () => speak(q.say || q.answer, q.lang);
+    const ex = $('[data-explain]', card);
+    if (ex) ex.onclick = () => explainContent(q, c);
   });
-  $$('[data-qty]', el).forEach(b => b.onclick = () => {
-    const d = c.obj; const n = clamp(d.questions.length + Number(b.dataset.qty), S.settings.minPerDay, S.settings.maxPerDay);
-    if (n === d.questions.length) { say(`O mínimo é ${S.settings.minPerDay} e o máximo é ${S.settings.maxPerDay} perguntas por dia.`); return; }
-    d.n = n; regenerateDays(S.week, [d.date], '|' + uid()); save(); renderWork();
-  });
+  $$('[data-qty]', el).forEach(b => b.onclick = () => changeQty(c, Number(b.dataset.qty)));
   $('[data-act=back]', el).onclick = () => { save(); show('home'); };
   $('[data-act=key]', el).onclick = () => openGabarito(c);
+  const pr = $('[data-act=print]', el); if (pr) pr.onclick = () => openPrintDialog(c.obj.date);
+  const ck = $('[data-act=check]', el); if (ck) ck.onclick = () => openCheck(c.obj.date);
   const fin = $('[data-act=finish]', el);
   if (fin) fin.onclick = () => finishWork(c);
+}
+function showHint(q, c) {
+  const base = q.hint || (q.lang === 'pt' ? 'Leia a pergunta de novo, com calma. Você consegue!' : 'Read the question again slowly. You can do it!');
+  const actions = Server.ai && !c.done ? [{ label: q.lang === 'en' ? '🦉 Explain more' : '🦉 Me explica mais', primary: true, onClick: () => askTutor(q, c) }] : [];
+  say(`💡 ${esc(base)}`, { mood: 'think', actions, sticky: actions.length > 0 });
+}
+async function askTutor(q, c) {
+  say(q.lang === 'en' ? 'Thinking… 🤔' : 'Pensando… 🤔', { mood: 'think', sticky: true });
+  try {
+    const r = await apiCall('/api/tutor', { method: 'POST', timeout: 45000, data: {
+      q: q.q, options: q.options || [], answer: q.answer, attempt: c.answers[q.id] || '', lang: q.lang, subject: q.subject, subjectName: SUBJ[q.subject] && SUBJ[q.subject].name } });
+    say(`🦉 ${esc(r.text)}`, { mood: 'think', ms: 16000 });
+  } catch (e) { say(q.lang === 'en' ? 'I could not think right now. Try the hint again later!' : 'Não consegui pensar agora. Tente de novo daqui a pouco!', { mood: 'sad' }); }
+}
+async function changeQty(c, delta) {
+  const d = c.obj; const n = clamp(d.questions.length + delta, S.settings.minPerDay, S.settings.maxPerDay);
+  if (n === d.questions.length) { say(`O mínimo é ${S.settings.minPerDay} e o máximo é ${S.settings.maxPerDay} perguntas por dia.`); return; }
+  d.n = n;
+  if (delta < 0) { d.questions = d.questions.slice(0, n); save(); renderWork(); return; }
+  let added = [];
+  if (Server.ai) {
+    const subjects = [...new Set(d.questions.map(q => q.subject))];
+    try {
+      const r = await apiCall('/api/more', { method: 'POST', timeout: 60000, data: { name: S.name, n: n - d.questions.length, subjects, topics: weekTopicsText(S.week), exclude: recentQuestionTexts(60) } });
+      added = validateImported(r).ok;
+    } catch (e) { /* cai para o gerador local */ }
+  }
+  if (added.length) {
+    d.questions = d.questions.concat(added.slice(0, n - d.questions.length).map((q, j) => Object.assign({ lang: SUBJ[q.subject].lang }, q, { id: `${d.date}-a${j}-${uid()}` })));
+  } else {
+    regenerateDays(S.week, [d.date], '|' + uid());
+  }
+  save(); renderWork();
 }
 function updateProgress(c) {
   const n = c.questions.length;
@@ -1191,10 +1498,10 @@ function updateProgress(c) {
   const bar = $('#prog-bar'); if (bar) bar.style.width = (n ? a / n * 100 : 0) + '%';
   const tx = $('#prog-txt'); if (tx) tx.textContent = `${a}/${n}`;
 }
-// Ajusta fonte e colunas até tudo caber na tela (sem rolagem).
+// Ajusta fonte e colunas até tudo caber (tela ou página impressa) sem rolagem.
 function fitGrid(grid, opts = {}) {
   if (!grid) return true;
-  const { min = 11, max = 17, step = 0.5, colMin = 250, maxCols = 3 } = opts;
+  const { min = 11, max = 17, step = 0.5, colMin = 250, maxCols = 3, allowOverflow = true } = opts;
   const n = grid.children.length || 1;
   const W = grid.clientWidth;
   let possible = Math.max(1, Math.min(maxCols, Math.floor(W / colMin) || 1, n));
@@ -1215,23 +1522,24 @@ function fitGrid(grid, opts = {}) {
   possible = Math.max(possible, Math.min(maxCols, Math.floor(W / (colMin * 0.62)) || 1, n));
   if (attempt()) return true;
   grid.style.setProperty('--fs', min + 'px'); grid.style.setProperty('--cols', possible);
-  grid.classList.add('overflow'); // último recurso (tela minúscula)
+  if (allowOverflow) grid.classList.add('overflow'); // último recurso (tela minúscula)
   return false;
 }
 function openGabarito(c) {
   const locked = S.settings.gabaritoAfterFinish && !c.done;
-  if (locked) { say(c.questions[0] && c.questions[0].lang === 'en' && c.kind === 'extra' ? 'Finish first, then the answer key unlocks! 🔑' : 'Primeiro termine e aperte <b>Concluir</b>. Aí o gabarito libera! 🔑', { mood: 'think' }); return; }
+  if (locked) { say('Primeiro termine e aperte <b>Concluir</b>. Aí o gabarito libera! 🔑', { mood: 'think' }); return; }
   const items = c.questions.map((q, i) => {
     const ans = c.answers[q.id];
-    const ok = isCorrect(q, ans);
-    const cls = ok === true ? 'ok' : ok === false && answered(q, ans) ? 'bad' : '';
-    const answerTxt = q.type === 'open' ? '<span class="free">[Resposta Livre]</span>' : `<span class="ans">${esc(q.answer)}</span>`;
+    const ok = c.done ? verdict(c, q) : isCorrect(q, ans);
+    const cls = ok === true ? 'ok' : ok === false && (answered(q, ans) || c.verdicts[q.id]) ? 'bad' : '';
+    const note = c.obj.notes && c.obj.notes[q.id];
+    const answerTxt = q.type === 'open' ? `<span class="free">[Resposta Livre]</span>${c.done && ok !== null ? ` <span class="yours">· 🦉 ${ok ? '✓' : '✗'} ${esc(note || '')}</span>` : ''}` : `<span class="ans">${esc(q.answer)}</span>`;
     const yours = answered(q, ans) && q.type !== 'open' ? `<span class="yours">· você: ${esc(ans)}</span>` : '';
     return `<div class="key ${cls}"><b>${i + 1}.</b><div>${answerTxt} ${yours}</div></div>`;
   }).join('');
   const m = openModal(`<div class="modal-head"><h3>🔑 Gabarito</h3><button class="btn small" data-close>Fechar</button></div>
     <div class="modal-body fit"><div class="key-grid" id="key-grid">${items}</div></div>
-    <div class="modal-foot"><span class="muted tiny grow">[Resposta Livre] = os pais corrigem.</span></div>`, { wide: true });
+    <div class="modal-foot"><span class="muted tiny grow">[Resposta Livre] = resposta com suas palavras. A Lumi corrige e os pais podem conferir.</span></div>`, { wide: true });
   m.style.height = 'calc(100dvh - 24px)';
   requestAnimationFrame(() => fitGrid($('#key-grid'), { min: 11, max: 17, colMin: 200, maxCols: 3 }));
 }
@@ -1245,10 +1553,53 @@ async function finishWork(c) {
     if (card) { card.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.03)' }, { transform: 'scale(1)' }], { duration: 400 }); const i = $('[data-in]', card); if (i) i.focus(); }
     return;
   }
-  const obj = c.questions.filter(q => q.type !== 'open');
-  const correct = obj.filter(q => isCorrect(q, c.answers[q.id])).length;
-  const open = c.questions.length - obj.length;
+  await gradeOpenAnswers(c);
+  completeWork(c, 'screen');
+}
+// A Lumi (Claude) corrige as respostas livres; sem servidor, ficam para os pais.
+async function gradeOpenAnswers(c) {
+  const opens = c.questions.map((q, i) => ({ q, i })).filter(x => x.q.type === 'open' && answered(x.q, c.answers[x.q.id]));
+  if (!opens.length || !Server.ai) return;
+  const stop = showLoading(['Lendo suas respostas… 📖', 'Pensando com carinho… 🦉', 'Escrevendo comentários… ✍️']);
+  try {
+    const r = await apiCall('/api/check-open', { method: 'POST', timeout: 90000, data: {
+      context: weekTopicsText(S.week),
+      items: opens.map(x => ({ q: x.q.q, answer: c.answers[x.q.id], lang: x.q.lang, subject: x.q.subject, subjectName: SUBJ[x.q.subject] && SUBJ[x.q.subject].name })) } });
+    c.obj.verdicts = c.obj.verdicts || {}; c.obj.notes = c.obj.notes || {};
+    (r.results || []).forEach(res => { const x = opens[res.number - 1]; if (!x) return; c.obj.verdicts[x.q.id] = res.verdict === 'ok' ? 'ok' : 'bad'; if (res.note) c.obj.notes[x.q.id] = res.note; });
+    c.verdicts = c.obj.verdicts;
+  } catch (e) { toast('A Lumi não conseguiu corrigir as livres agora: ficam para os pais.'); }
+  finally { stop(); }
+}
+// Botão "?": a Lumi explica o conteúdo por trás da pergunta (gerado na hora e guardado).
+async function explainContent(q, c) {
+  hideBubble();
+  const pt = q.lang !== 'en';
+  const key = c.done ? 'explainDone' : 'explain';
+  const render = ex => openModal(`<div class="modal-head"><div class="owl-mini">${mascotSVG(S.equipped, 'happy')}</div><h3>${esc(ex.title)}</h3><button class="btn small" data-close>${pt ? 'Entendi!' : 'Got it!'}</button></div>
+    <div class="modal-body explain"><p>${esc(ex.explanation)}</p><div class="ex-box"><b>${pt ? 'Exemplo' : 'Example'}:</b> ${esc(ex.example)}</div></div>
+    <div class="modal-foot"><button class="btn primary" data-close>${pt ? 'Voltar para a pergunta' : 'Back to the question'}</button></div>`);
+  if (q[key]) { render(q[key]); return; }
+  if (!Server.ai) { say(pt ? 'Para explicar o conteúdo eu preciso estar conectada ao servidor. Por enquanto, toque no 💡 para uma dica!' : 'I need the server to explain this. Try the 💡 hint for now!', { mood: 'think' }); return; }
+  const stop = showLoading(pt ? ['Preparando uma mini-aula… 🦉', 'Procurando um bom exemplo… 🔎'] : ['Preparing a mini-lesson… 🦉', 'Finding a good example… 🔎']);
+  try {
+    const r = await apiCall('/api/explain', { method: 'POST', timeout: 60000, data: {
+      q: q.q, options: q.options || [], answer: q.answer, done: c.done, lang: q.lang, subject: q.subject,
+      subjectName: SUBJ[q.subject] && SUBJ[q.subject].name, context: weekTopicsText(S.week) } });
+    stop();
+    q[key] = { title: r.title, explanation: r.explanation, example: r.example };
+    save();
+    render(q[key]);
+  } catch (e) { stop(); say(pt ? 'Não consegui explicar agora. Tente de novo daqui a pouco!' : 'I could not explain right now. Try again soon!', { mood: 'sad' }); }
+}
+// Marca o dia (ou extras) como concluído e comemora. via: screen | photo | self
+function completeWork(c, via, extraMsg = '') {
+  c.verdicts = c.obj.verdicts || c.verdicts || {};
+  const obj = c.questions.filter(q => verdict(c, q) !== null);   // objetivas + livres já corrigidas
+  const correct = obj.filter(q => verdict(c, q) === true).length;
+  const open = c.questions.length - obj.length;                  // livres que ficam para os pais
   c.obj.status = 'done';
+  c.obj.via = via;
   c.obj.result = { correct, total: obj.length, open, at: new Date().toISOString() };
   if (c.kind === 'extra') {
     const t = today();
@@ -1261,10 +1612,11 @@ async function finishWork(c) {
     return;
   }
   save();
-  renderWork();
+  VIEW.work = { kind: 'day', date: c.obj.date };
+  show('work');
   const w = S.week;
   const allDone = weekAllDone(w);
-  const msg = `Você acertou <b>${correct} de ${obj.length}</b> objetivas.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais corrigirem.` : ''}`;
+  const msg = (extraMsg ? extraMsg + '<br>' : '') + `Você acertou <b>${correct} de ${obj.length}</b>.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais corrigirem.` : ''}`;
   if (allDone && today() === w.end && !w.settled) {
     showCelebrate('Tudo pronto! 🎉', '', msg + `<br><br>Todas as tarefas da semana estão feitas. Volte ao início e toque em <b>Entregar a semana</b> para ganhar <b>+${S.settings.reward}</b> 🪙!`);
   } else if (allDone) {
@@ -1272,6 +1624,140 @@ async function finishWork(c) {
   } else {
     showCelebrate('Tarefa do dia concluída! ✅', '', msg + ' O gabarito já está liberado.', 'happy');
   }
+}
+
+/* ---------- Impressão: uma página A4 por dia ---------- */
+function openPrintDialog(date) {
+  const w = S.week; if (!w) return;
+  const printable = requiredDays(w).filter(d => d.status !== 'done' && d.questions.length);
+  const c = openModal(`<div class="modal-head"><h3>🖨️ Imprimir tarefas</h3><button class="btn small" data-close>Fechar</button></div>
+    <div class="modal-body"><div class="radio-col">
+      <label><input type="radio" name="pw" value="day" checked> Só ${esc(DOW_FULL[w.days[date].dow].toLowerCase())} ${fmtDM(date)} (1 página)</label>
+      <label><input type="radio" name="pw" value="week" ${printable.length > 1 ? '' : 'disabled'}> A semana toda que falta (${printable.length} página${printable.length > 1 ? 's' : ''}, uma por dia)</label>
+      <label class="chk"><input type="checkbox" id="pkey"> Incluir gabarito em página separada (para os pais)</label></div>
+      <p class="tiny muted">Depois de fazer no papel, abra o dia no app e toque em <b>📄 Corrigir folha</b>: tire uma foto e a Lumi corrige, ou corrija sozinha com o gabarito.</p></div>
+    <div class="modal-foot"><button class="btn primary" id="pgo">🖨️ Imprimir</button></div>`);
+  $('#pgo', c).onclick = () => {
+    const which = $('input[name=pw]:checked', c).value;
+    const days = which === 'week' ? printable : [w.days[date]];
+    const withKey = $('#pkey', c).checked;
+    closeModal();
+    printDays(days, withKey);
+  };
+}
+function printQuestionHtml(q, i) {
+  const s = SUBJ[q.subject] || { short: '', icon: '' };
+  let ans = '';
+  if (q.type === 'mc') ans = `<div class="p-opts">${q.options.map((o, j) => `<span>◯ ${'abcd'[j] || ''}) ${esc(o)}</span>`).join('')}</div>`;
+  else if (q.type === 'open') ans = '<div class="p-lines"><i></i><i></i><i></i></div>';
+  else if (q.type === 'listen') ans = `<div class="p-line">${q.lang === 'pt' ? 'Ditado: um adulto lê a palavra do gabarito.' : 'Dictation: an adult reads the word from the answer key.'}</div>`;
+  else ans = '<div class="p-line"></div>';
+  return `<div class="p-q"><div class="p-qt"><b>${i + 1}.</b> <span class="p-subj">${s.icon} ${esc(s.short)}</span> ${esc(q.q)}</div>${ans}</div>`;
+}
+function printDays(days, withKey) {
+  const root = $('#print-root');
+  const pages = [];
+  days.forEach(d => {
+    const obj = d.questions.filter(q => q.type !== 'open').length;
+    pages.push(`<section class="page"><header class="p-head">
+        <div><div class="p-brand">🦉 Estudos com a Lumi</div><div class="p-day">${esc(DOW_FULL[d.dow])} ${fmtDM(d.date)} · ${esc(S.name)}</div></div>
+        <div class="p-score">Acertos: ____ / ${obj}</div></header>
+      <div class="p-grid">${d.questions.map(printQuestionHtml).join('')}</div>
+      <footer class="p-foot">Terminou? No app, abra ${esc(DOW_FULL[d.dow].toLowerCase())} e toque em “📄 Corrigir folha”.</footer></section>`);
+    if (withKey) {
+      pages.push(`<section class="page key-page"><header class="p-head"><div><div class="p-brand">🔑 Gabarito — para os pais</div><div class="p-day">${esc(DOW_FULL[d.dow])} ${fmtDM(d.date)}</div></div></header>
+        <div class="p-grid">${d.questions.map((q, i) => `<div class="p-k"><b>${i + 1}.</b> ${q.type === 'open' ? '<i>[Resposta Livre]</i>' : esc(q.answer)}</div>`).join('')}</div></section>`);
+    }
+  });
+  root.innerHTML = pages.join('');
+  root.classList.add('measuring');
+  $$('.p-grid', root).forEach(g => fitGrid(g, { min: 9, max: 15, step: 0.5, colMin: 320, maxCols: 2, allowOverflow: false }));
+  root.classList.remove('measuring');
+  days.forEach(d => { d.printed = true; });
+  save();
+  setTimeout(() => { window.print(); if (currentScreen === 'work') renderWork(); }, 60);
+}
+
+/* ---------- Corrigir folha feita no papel ---------- */
+function openCheck(date) { VIEW.check = { date, images: [] }; show('check'); }
+function renderCheck() {
+  const el = $('#scr-check');
+  const d = S.week && VIEW.check && S.week.days[VIEW.check.date];
+  if (!d) { show('home'); return; }
+  $('#top-title').textContent = `📄 Corrigir ${DOW_LABEL[d.dow]} ${fmtDM(d.date)}`;
+  const imgs = VIEW.check.images;
+  el.innerHTML = `<div class="check">
+    ${Server.ai ? `<div class="card check-opt">
+      <h3>📷 A Lumi corrige pela foto</h3>
+      <p class="tiny muted">Tire uma foto da folha inteira, de cima, com boa luz.</p>
+      <div class="row wrap"><label class="btn primary">📷 Tirar foto<input type="file" id="cph" accept="image/*" capture="environment" hidden></label>
+        ${imgs.length ? `<span class="tiny">✔ ${imgs.length} foto${imgs.length > 1 ? 's' : ''}</span><label class="btn small">+ outra<input type="file" id="cph2" accept="image/*" hidden></label>` : ''}</div>
+      ${imgs.length ? `<div class="thumbs">${imgs.map(im => `<div class="thumb"><img src="data:${im.type};base64,${im.data}" alt="Foto da folha"></div>`).join('')}</div>
+        <button class="btn gold big wide" id="cgo">✨ Corrigir com a Lumi</button>` : ''}
+    </div>` : ''}
+    <div class="card check-opt">
+      <h3>✍️ Corrigir sozinha com o gabarito</h3>
+      <p class="tiny muted">Compare sua folha com as respostas e marque ✓ ou ✗.</p>
+      <button class="btn wide" id="cself">Abrir o gabarito para corrigir</button>
+    </div>
+    <button class="btn ghost" id="cback">◂ Voltar</button>
+  </div>`;
+  const addPhoto = async e => { const f = e.target.files[0]; if (!f) return; try { VIEW.check.images.push(await fileToJpeg(f, 1800, 0.85)); } catch (err) { toast('Não consegui ler a foto.'); } renderCheck(); };
+  const p1 = $('#cph', el); if (p1) p1.onchange = addPhoto;
+  const p2 = $('#cph2', el); if (p2) p2.onchange = addPhoto;
+  const go = $('#cgo', el); if (go) go.onclick = () => gradeByPhoto(d);
+  $('#cself', el).onclick = () => { VIEW.selfMarks = {}; show('selfcheck'); };
+  $('#cback', el).onclick = () => { VIEW.work = { kind: 'day', date: d.date }; show('work'); };
+}
+async function gradeByPhoto(d) {
+  const stop = showLoading(['Olhando sua folha… 👀', 'Lendo sua letra… ✍️', 'Conferindo as respostas… ✔️', 'Quase lá! 🦉']);
+  let r;
+  try {
+    r = await apiCall('/api/grade', { method: 'POST', timeout: 180000, data: {
+      title: `${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, images: VIEW.check.images,
+      questions: d.questions.map(q => ({ type: q.type, q: q.q, options: q.options || [], answer: q.answer, accept: q.accept || [] })) } });
+  } catch (e) { stop(); say(`Não consegui corrigir agora (${esc(e.message)}). Tente de novo ou corrija sozinha com o gabarito.`, { mood: 'sad', ms: 12000 }); return; }
+  stop();
+  if (!r.legible) { VIEW.check.images = []; renderCheck(); say(`${esc(r.message || '')} Não consegui ler bem a folha. Tire outra foto, de cima e com mais luz. 📷`, { mood: 'think', ms: 12000 }); return; }
+  d.verdicts = {}; d.notes = {};
+  (r.results || []).forEach(x => {
+    const q = d.questions[x.number - 1]; if (!q) return;
+    if (x.read) d.answers[q.id] = x.read;
+    d.verdicts[q.id] = x.verdict === 'ok' ? 'ok' : 'bad';
+    if (x.note) d.notes[q.id] = x.note;
+  });
+  d.questions.forEach(q => { if (!d.verdicts[q.id]) d.verdicts[q.id] = 'bad'; });
+  VIEW.check.images = [];
+  const c = Object.assign(workCtxFor(d), {});
+  completeWork(c, 'photo', esc(r.message || ''));
+}
+function workCtxFor(d) { return { kind: 'day', title: `${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, obj: d, questions: d.questions, answers: d.answers, done: false, marks: d.marks || {}, verdicts: d.verdicts || {} }; }
+function renderSelfCheck() {
+  const el = $('#scr-selfcheck');
+  const d = S.week && VIEW.check && S.week.days[VIEW.check.date];
+  if (!d) { show('home'); return; }
+  $('#top-title').textContent = `✍️ Corrigir ${DOW_LABEL[d.dow]} ${fmtDM(d.date)}`;
+  const marks = VIEW.selfMarks;
+  const items = d.questions.map((q, i) => {
+    const s = SUBJ[q.subject] || { color: '#7b5cf0' };
+    if (q.type === 'open') return `<div class="key" style="border-left:4px solid ${s.color}"><b>${i + 1}.</b><div class="grow"><span class="free">[Resposta Livre]</span> <span class="yours">· os pais corrigem</span></div></div>`;
+    const m = marks[q.id];
+    return `<div class="key ${m === 'ok' ? 'ok' : m === 'bad' ? 'bad' : ''}" style="border-left:4px solid ${s.color}"><b>${i + 1}.</b><div class="grow"><span class="ans">${esc(q.answer)}</span> <span class="yours">· ${esc(q.q.length > 70 ? q.q.slice(0, 67) + '…' : q.q)}</span></div>
+      <span class="mk"><button data-m="ok" data-q="${q.id}" class="${m === 'ok' ? 'on-ok' : ''}" aria-label="Acertei">✓</button><button data-m="bad" data-q="${q.id}" class="${m === 'bad' ? 'on-bad' : ''}" aria-label="Errei">✗</button></span></div>`;
+  }).join('');
+  const need = d.questions.filter(q => q.type !== 'open' && !marks[q.id]).length;
+  el.innerHTML = `<div class="work">
+    <div class="work-head"><h2>Marque ✓ acertei ou ✗ errei</h2><span class="prog-txt">${need ? `faltam ${need}` : 'tudo marcado!'}</span></div>
+    <div class="sheet key-grid" id="self-grid">${items}</div>
+    <div class="work-foot"><button class="btn" id="sback">◂ Voltar</button><button class="btn primary" id="ssave" ${need ? 'disabled' : ''}>✔ Salvar correção</button></div></div>`;
+  $$('[data-m]', el).forEach(b => b.onclick = () => { marks[b.dataset.q] = b.dataset.m; renderSelfCheck(); });
+  $('#sback', el).onclick = () => show('check');
+  $('#ssave', el).onclick = () => {
+    d.verdicts = {};
+    d.questions.forEach(q => { d.verdicts[q.id] = q.type === 'open' ? 'open' : marks[q.id]; });
+    completeWork(workCtxFor(d), 'self');
+  };
+  requestAnimationFrame(() => fitGrid($('#self-grid'), { min: 12, max: 18, colMin: 220, maxCols: 3 }));
 }
 
 /* ---------- Lojinha ---------- */
@@ -1361,16 +1847,17 @@ function pReview(box) {
     return `<div class="row"><b style="width:90px">${DOW_LABEL[d.dow]} ${fmtDM(d.date)}</b><span class="grow">${d.status === 'done' ? `✅ ${r.correct}/${r.total} objetivas${r.open ? ` · ${r.open} livres` : ''}` : dayState(d) === 'late' ? '⏰ atrasada' : dayState(d) === 'locked' ? '🔒 ainda não abriu' : '📘 pendente'}</span></div>`;
   }).join('');
   const opens = [];
-  req.forEach(d => d.questions.forEach(q => { if (q.type === 'open' && answered(q, d.answers[q.id])) opens.push({ d, q }); }));
+  req.forEach(d => d.questions.forEach(q => { if (q.type === 'open' && (answered(q, d.answers[q.id]) || (d.verdicts && d.verdicts[q.id] === 'open'))) opens.push({ d, q }); }));
   const list = opens.map(({ d, q }) => {
     const mk = (d.marks || {})[q.id];
     return `<div class="review-item"><div class="meta">${DOW_LABEL[d.dow]} ${fmtDM(d.date)} · ${SUBJ[q.subject].icon} ${esc(SUBJ[q.subject].name)}</div>
-      <div><b>${esc(q.q)}</b></div><div class="ans">${esc(d.answers[q.id])}</div>
+      <div><b>${esc(q.q)}</b></div><div class="ans">${answered(q, d.answers[q.id]) ? esc(d.answers[q.id]) : '<i>(feita no papel — confira a folha)</i>'}${d.via === 'photo' && answered(q, d.answers[q.id]) ? ' <span class="tiny muted">(lido da foto)</span>' : ''}</div>
+      ${d.verdicts && ['ok', 'bad'].includes(d.verdicts[q.id]) ? `<div class="tiny"><b>🦉 Lumi: ${d.verdicts[q.id] === 'ok' ? '✓ certo' : '✗ precisa melhorar'}</b>${d.notes && d.notes[q.id] ? ` — ${esc(d.notes[q.id])}` : ''}</div>` : ''}
       <div class="row"><button class="btn small ${mk === 'ok' ? 'ok' : ''}" data-mark="ok" data-d="${d.date}" data-q="${q.id}">✓ Certo</button>
       <button class="btn small ${mk === 'no' ? 'danger' : ''}" data-mark="no" data-d="${d.date}" data-q="${q.id}">↺ Refazer/conversar</button></div></div>`;
   }).join('');
   box.innerHTML = `<div class="card"><b>Semana ${fmtDM(w.start)}–${fmtDM(w.end)}</b> ${w.settled ? `· ${w.settled === 'delivered' ? 'entregue ✔' : w.settled === 'missed' ? 'não entregue ✗' : ''}` : ''}<div style="margin-top:6px;display:grid;gap:3px">${summary}</div></div>
-    <h3 style="margin:6px 0 0">Respostas livres para corrigir (${opens.length})</h3>${list || '<p class="muted">Nada para corrigir ainda.</p>'}
+    <h3 style="margin:6px 0 0">Respostas livres (${opens.length}) <span class="tiny muted">— a Lumi corrige; vocês podem confirmar ou mudar</span></h3>${list || '<p class="muted">Nada para corrigir ainda.</p>'}
     ${S.history.length ? `<div class="card"><b>Histórico</b>${S.history.slice(0, 8).map(h => `<div class="tiny">${fmtDM(h.start)}–${fmtDM(h.end)}: ${h.done}/${h.total} dias · ${h.settled === 'delivered' ? 'entregue' : h.settled === 'missed' ? 'não entregue' : '—'}</div>`).join('')}</div>` : ''}`;
   $$('[data-mark]', box).forEach(b => b.onclick = () => { const d = S.week.days[b.dataset.d]; d.marks = d.marks || {}; d.marks[b.dataset.q] = b.dataset.mark; save(); pReview(box); });
 }
@@ -1432,7 +1919,11 @@ function pSettings(box) {
 }
 function pData(box) {
   const topics = S.week ? S.week.topics : S.lastTopics;
-  box.innerHTML = `<div class="card"><b>1. Perguntas feitas pelo Claude (opcional)</b>
+  const st = { ok: '🟢 Conectado ao servidor', offline: '🟠 Servidor fora do ar — salvando só neste aparelho', auth: '🔴 Código da família inválido', local: '⚪ Sem servidor — dados só neste aparelho' }[Server.on ? Server.status : 'local'];
+  box.innerHTML = `<div class="card"><b>Servidor</b><div style="margin:4px 0">${st}</div>
+      ${Server.on ? `<div class="tiny">Claude: ${Server.ai ? '✅ ligado' : '❌ sem chave de API (ANTHROPIC_API_KEY)'} <span id="usage"></span></div>
+      <div class="row wrap" style="margin-top:6px"><button class="btn small" id="sv-sync">🔄 Sincronizar agora</button><button class="btn small" id="sv-out">Sair deste aparelho</button></div>` : ''}</div>
+    <div class="card"><b>1. Importar perguntas prontas (opcional)</b>
       <p class="tiny muted" style="margin:2px 0 6px">Copie o prompt (já com os tópicos da semana), cole no Claude junto com o Study Worksheet, e cole aqui o JSON que ele devolver.
       As perguntas importadas entram primeiro; o gerador do app completa o resto.</p>
       <button class="btn small" id="cp-prompt">📋 Copiar prompt para o Claude</button>
@@ -1441,6 +1932,11 @@ function pData(box) {
     <div class="card"><b>2. Backup</b><p class="tiny muted" style="margin:2px 0 6px">Os dados ficam só neste navegador. Faça backup para trocar de aparelho.</p>
       <div class="row wrap"><button class="btn small" id="bk-exp">⬇️ Baixar backup</button><label class="btn small">⬆️ Restaurar backup<input type="file" id="bk-imp" accept="application/json,.json" hidden></label></div></div>
     <div class="card"><b>3. Zerar</b><div class="row wrap" style="margin-top:6px"><button class="btn small" id="rs-week">Apagar a semana atual</button><button class="btn small danger" id="rs-all">Apagar TUDO</button></div></div>`;
+  if (Server.on) {
+    apiCall('/api/usage').then(r => { const u = $('#usage'); if (u && r.usage) u.textContent = `· hoje: ${r.usage.day === new Date().toISOString().slice(0, 10) ? r.usage.n : 0}/${r.limit} chamadas`; }).catch(() => {});
+    $('#sv-sync').onclick = async () => { await pushState(); toast(Server.status === 'ok' ? 'Sincronizado ✔' : 'Não consegui sincronizar'); pData(box); };
+    $('#sv-out').onclick = async () => { if (await confirmBox('Sair deste aparelho?', 'Os dados continuam no servidor. Para voltar, digite o código da família de novo.', 'Sair')) { writeCode(''); VIEW.parentsUnlocked = false; show('login'); } };
+  }
   $('#cp-prompt').onclick = async () => {
     const p = claudePrompt(topics || {});
     try { await navigator.clipboard.writeText(p); toast('Prompt copiado!'); }
@@ -1498,6 +1994,24 @@ function init() {
   window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (currentScreen === 'work') fitGrid($('#sheet')); const k = $('#key-grid'); if (k && !$('#modal').classList.contains('hidden')) fitGrid(k, { colMin: 200 }); }, 120); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#modal').classList.contains('hidden')) closeModal(); });
 
+  boot();
+}
+// Descobre se há servidor; se houver, pede o código da família e carrega os dados de lá.
+async function boot() {
+  const has = await detectServer();
+  if (has) {
+    if (!Server.code || !Server.configured) { show('login'); return; }
+    try { await loadFromServer(); }
+    catch (e) {
+      if (e.status === 401) { writeCode(''); show('login'); return; }
+      Server.status = 'offline';
+      toast('Sem conexão com o servidor: usando os dados deste aparelho.');
+    }
+  }
+  startApp();
+}
+function startApp() {
+  applyTheme(); renderMascotMini(); renderCoins();
   if (!S.name) { show('welcome'); return; }
   show('home');
   if (!S.tourDone) setTimeout(runTour, 400);

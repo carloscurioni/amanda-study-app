@@ -203,12 +203,13 @@ button { cursor: pointer; }
   width: 100%; resize: vertical; min-height: 44px; height: 52px;
   border: 1.5px solid var(--line); border-radius: 9px; padding: 6px 8px; font-size: 14px; background: var(--card2);
 }
-.counts { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
+.counts { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
+.count-box { min-width: 0; }
 .count-box { background: var(--card); border-radius: 10px; padding: 5px 2px; text-align: center; box-shadow: var(--shadow); }
 .count-box .lbl { font-size: 12px; font-weight: 900; }
 .count-box .val { font-size: 18px; font-weight: 900; }
 .count-box .pm { display: flex; justify-content: center; gap: 2px; }
-.count-box .pm button { width: 26px; height: 24px; border: none; border-radius: 7px; background: var(--accent-soft); font-weight: 900; }
+.count-box .pm button { width: clamp(17px, 5vw, 26px); height: 24px; padding: 0; border: none; border-radius: 7px; background: var(--accent-soft); font-weight: 900; }
 .radio-row { display: flex; flex-wrap: wrap; gap: 8px; font-weight: 800; font-size: 14px; }
 .radio-row label { background: var(--card); padding: 7px 10px; border-radius: 10px; box-shadow: inset 0 0 0 1.5px var(--line); display: flex; gap: 6px; align-items: center; }
 
@@ -367,3 +368,78 @@ button { cursor: pointer; }
   .home { grid-template-columns: 1fr 1fr; max-width: 1100px; margin: 0 auto; width: 100%; }
   .home .span2 { grid-column: span 2; }
 }
+
+/* ---------- Planejamento com a Lumi (texto livre + fotos) ---------- */
+.ai-box { background: var(--card); border-radius: 14px; box-shadow: var(--shadow); padding: 12px; display: grid; gap: 8px; }
+.ai-label { font-weight: 900; font-size: 16px; }
+.brief { width: 100%; min-height: 150px; resize: vertical; border: 2px solid var(--line); border-radius: 12px; padding: 10px 12px; font-size: 16px; font-weight: 700; background: var(--card2); line-height: 1.35; }
+.brief:focus { outline: 2px solid var(--accent); background: #fff; }
+.thumbs { display: flex; gap: 8px; flex-wrap: wrap; }
+.thumb { position: relative; width: 74px; height: 74px; border-radius: 10px; overflow: hidden; box-shadow: var(--shadow); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+.thumb button { position: absolute; top: 2px; right: 2px; width: 22px; height: 22px; border-radius: 50%; border: none; background: rgba(0,0,0,.6); color: #fff; font-size: 12px; padding: 0; }
+.week-sum { display: grid; gap: 2px; font-size: 13.5px; }
+.week-sum span { font-weight: 700; color: var(--muted); }
+.radio-col { display: grid; gap: 8px; font-weight: 800; font-size: 14.5px; }
+.radio-col label { display: flex; gap: 8px; align-items: center; }
+.dots { display: flex; justify-content: center; gap: 6px; margin: 6px 0 4px; }
+.dots i { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); animation: dot 1.2s infinite ease-in-out; }
+.dots i:nth-child(2) { animation-delay: .2s; } .dots i:nth-child(3) { animation-delay: .4s; }
+@keyframes dot { 0%, 80%, 100% { opacity: .25; transform: scale(.8); } 40% { opacity: 1; transform: scale(1.1); } }
+.owl-big.thinking svg { animation: bob 1.4s ease-in-out infinite; }
+
+/* ---------- Corrigir folha feita no papel ---------- */
+.check { display: flex; flex-direction: column; gap: 10px; padding: 12px; height: 100%; overflow-y: auto; max-width: 620px; margin: 0 auto; width: 100%; }
+.check-opt h3 { margin: 0 0 4px; font-size: 17px; }
+.check-opt .thumbs { margin: 8px 0; }
+.paper-note { font-size: .85em; font-weight: 800; color: var(--muted); }
+.key .mk { display: flex; gap: .3em; margin-left: auto; }
+.key .mk button { width: 2.1em; height: 1.9em; border-radius: .5em; border: none; font-weight: 900; font-size: 1em; background: var(--card); box-shadow: inset 0 0 0 1.5px var(--line); }
+.key .mk button.on-ok { background: var(--ok); color: #fff; box-shadow: none; }
+.key .mk button.on-bad { background: var(--bad); color: #fff; box-shadow: none; }
+#self-grid .key { align-items: center; }
+
+/* ---------- Impressão: uma página A4 por dia ---------- */
+#print-root { position: fixed; left: -10000px; top: 0; visibility: hidden; pointer-events: none; }
+#print-root .page {
+  width: 190mm; height: 277mm; overflow: hidden; background: #fff; color: #111;
+  display: flex; flex-direction: column; gap: 3mm; font-family: "Nunito", Arial, sans-serif;
+}
+.p-head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid #111; padding-bottom: 2mm; }
+.p-brand { font-weight: 900; font-size: 15px; }
+.p-day { font-weight: 800; font-size: 13px; color: #333; }
+.p-score { font-weight: 900; font-size: 13px; border: 1.5px solid #111; border-radius: 6px; padding: 3px 8px; }
+.p-grid {
+  --fs: 13px; --cols: 1;
+  flex: 1; min-height: 0; overflow: hidden; font-size: var(--fs);
+  display: grid; grid-template-columns: repeat(var(--cols), minmax(0, 1fr)); grid-auto-rows: min-content; align-content: start;
+  gap: calc(var(--fs) * .7) calc(var(--fs) * 1.2);
+}
+.p-q { break-inside: avoid; display: grid; gap: .35em; }
+.p-qt { line-height: 1.3; font-weight: 700; }
+.p-subj { font-size: .72em; font-weight: 900; text-transform: uppercase; color: #555; letter-spacing: .02em; }
+.p-opts { display: flex; flex-wrap: wrap; gap: .25em 1.2em; padding-left: 1.2em; }
+.p-line { border-bottom: 1.2px solid #444; height: 1.6em; margin-left: 1.2em; font-size: .8em; color: #666; display: flex; align-items: flex-end; }
+.p-lines { display: grid; gap: .2em; margin-left: 1.2em; }
+.p-lines i { display: block; border-bottom: 1px solid #888; height: 1.6em; }
+.p-k { line-height: 1.3; }
+.p-foot { border-top: 1px dashed #999; padding-top: 1.5mm; font-size: 10.5px; color: #555; text-align: center; }
+.p-grid.compact .p-lines i:nth-child(3) { display: none; }
+@page { size: A4; margin: 10mm; }
+@media print {
+  html, body { height: auto; overflow: visible; background: #fff !important; }
+  #app, #modal, #toast { display: none !important; }
+  #print-root { position: static; left: 0; visibility: visible; }
+  #print-root .page { break-after: page; page-break-after: always; }
+  #print-root .page:last-child { break-after: auto; page-break-after: auto; }
+}
+.work-foot .btn { white-space: nowrap; font-size: clamp(12px, 3.7vw, 14.5px); padding-left: 4px; padding-right: 4px; }
+.work-foot [data-act=back] { flex: 0 0 44px; }
+
+/* ---------- Botão "?" e mini-aula da Lumi ---------- */
+.q-tools button.qx { font-weight: 900; color: var(--accent); background: #fff; box-shadow: inset 0 0 0 1.5px var(--accent); }
+.owl-mini svg { width: 40px; height: 40px; }
+.modal-body.explain { font-size: 16px; line-height: 1.45; font-weight: 600; }
+.modal-body.explain p { margin: 4px 0 10px; }
+.ex-box { background: var(--accent-soft); border-radius: 12px; padding: 10px 12px; }
+.q .expected.lumi { color: var(--ink); font-weight: 700; }

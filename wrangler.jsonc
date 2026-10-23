@@ -1,0 +1,20 @@
+{
+  // Cloudflare Worker: serve o app (public/) e a API (/api/*).
+  // O nome abaixo precisa ser igual ao nome do Worker no painel da Cloudflare.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "amanda-study-app",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-09-01",
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "durable_objects": {
+    "bindings": [{ "name": "STORE", "class_name": "FamilyStore" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["FamilyStore"] }],
+  "vars": {
+    // Modelos do Claude: planejar a semana e corrigir fotos (mais capaz) / extras e dicas (rápido).
+    "MODEL_PLAN": "claude-sonnet-5-5",
+    "MODEL_FAST": "claude-haiku-5-5",
+    "AI_DAILY_LIMIT": "150"
+  },
+  "observability": { "enabled": true }
+}
