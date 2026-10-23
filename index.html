@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Estudos com a Lumi</title>
+  <meta name="description" content="App de estudos gamificado: tarefas da semana, mascote tutora, moedas e lojinha.">
+  <meta name="theme-color" content="#7b5cf0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A6%89%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-default">
+  <div id="app">
+    <!-- Barra superior: mascote presente em todas as telas -->
+    <header id="topbar">
+      <button id="mascot-btn" class="mascot-mini" type="button" aria-label="Falar com a Lumi"></button>
+      <div id="top-title" class="top-title">Estudos</div>
+      <button id="coin-pill" class="coins" type="button" title="Suas moedas">🪙 <span id="coin-count">0</span></button>
+      <nav class="top-nav" aria-label="Navegação">
+        <button type="button" data-nav="home" title="Início" aria-label="Início">🏠</button>
+        <button type="button" data-nav="shop" title="Lojinha" aria-label="Lojinha">🛒</button>
+        <button type="button" data-nav="parents" title="Área dos pais" aria-label="Área dos pais">🔒</button>
+      </nav>
+      <div id="bubble" class="bubble hidden" role="status" aria-live="polite">
+        <div id="bubble-text"></div>
+        <div id="bubble-actions"></div>
+      </div>
+    </header>
+
+    <main id="screens">
+      <section id="scr-welcome" class="screen" aria-label="Boas-vindas"></section>
+      <section id="scr-home" class="screen" aria-label="Início"></section>
+      <section id="scr-setup" class="screen" aria-label="Minha semana"></section>
+      <section id="scr-work" class="screen" aria-label="Tarefa"></section>
+      <section id="scr-shop" class="screen" aria-label="Lojinha"></section>
+      <section id="scr-parents" class="screen" aria-label="Área dos pais"></section>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div id="modal-card" class="modal-card"></div>
+  </div>
+  <div id="toast" class="toast hidden" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

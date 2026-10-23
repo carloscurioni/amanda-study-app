@@ -1,0 +1,1505 @@
+/* =========================================================================
+   Estudos com a Lumi — app de estudos gamificado (HTML/CSS/JS puros)
+   Estado salvo no localStorage do navegador. Sem back-end.
+   -------------------------------------------------------------------------
+   Seções:
+     1. Configuração (matérias, valores de moedas, lojinha)
+     2. Utilitários (datas, sorteio com semente, textos)
+     3. Estado e persistência (localStorage)
+     4. Mascote (SVG + balão de fala)
+     5. Gerador de perguntas (por matéria) + importação JSON
+     6. Semana: planejamento, distribuição, entrega/penalidade
+     7. Telas: boas-vindas, início, minha semana, tarefa, lojinha, pais
+     8. Inicialização
+   ========================================================================= */
+'use strict';
+
+/* =========================================================================
+   1. CONFIGURAÇÃO
+   ========================================================================= */
+const STORE_KEY = 'lumi-estudos-v1';
+const MASCOT_NAME = 'Lumi';
+
+// Ciclo semanal: começa no sábado e termina na sexta (dia da entrega).
+const CYCLE = ['sab', 'dom', 'seg', 'ter', 'qua', 'qui', 'sex'];
+const JS_DOW = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sab'];
+const DOW_LABEL = { sab: 'Sáb', dom: 'Dom', seg: 'Seg', ter: 'Ter', qua: 'Qua', qui: 'Qui', sex: 'Sex' };
+const DOW_FULL = { sab: 'Sábado', dom: 'Domingo', seg: 'Segunda', ter: 'Terça', qua: 'Quarta', qui: 'Quinta', sex: 'Sexta' };
+
+const DEFAULT_SETTINGS = {
+  pin: '1234',
+  reward: 100,            // recompensa base: semana completa entregue na sexta
+  penalty: 150,           // penalidade: semana não entregue (sempre MAIOR que a recompensa)
+  extraPerCorrect: 2,     // moedas por acerto nos exercícios extras
+  extraSetSize: 5,        // perguntas por rodada de extras
+  extraSetsPerDay: 3,     // rodadas de extras com moedas por dia
+  minPerDay: 3,           // mínimo de perguntas que a aluna pode escolher por dia
+  maxPerDay: 15,
+  counts: { sab: 9, dom: 9, seg: 7, ter: 7, qua: 7, qui: 7, sex: 5 }, // fim de semana um pouco maior
+  gabaritoAfterFinish: true, // gabarito libera depois de concluir o dia
+  voice: true,
+};
+
+const SUBJECTS = [
+  { id: 'pt',        lang: 'pt', group: 'pt', icon: '📝', short: 'Português',   name: 'Português',              color: '#e8590c', kind: 'grammar',
+    ph: 'Ex.: substantivos e adjetivos; plural; sinônimos e antônimos', help: 'assuntos' },
+  { id: 'pt_ort',    lang: 'pt', group: 'pt', icon: '✏️', short: 'Ortografia',  name: 'Português – Ortografia', color: '#d6336c', kind: 'spelling',
+    ph: 'Palavras da semana, separadas por vírgula: exceção, cachorro, passeio…', help: 'palavras' },
+  { id: 'pt_leit',   lang: 'pt', group: 'pt', icon: '📖', short: 'Leitura',     name: 'Português – Leitura',    color: '#ae3ec9', kind: 'reading',
+    ph: '1ª linha: livro/capítulo. Opcional: cole um trecho do texto nas linhas seguintes.', help: 'livro + trecho' },
+  { id: 'bss',       lang: 'pt', group: 'pt', icon: '🇧🇷', short: 'BSS',         name: 'BSS – Brazilian Social Studies', color: '#2b8a3e', kind: 'social',
+    ph: 'Tema: regiões do Brasil, capitais, biomas, história… (ou "pergunta = resposta")', help: 'tema' },
+  { id: 'en',        lang: 'en', group: 'en', icon: '🔤', short: 'English',     name: 'English',                color: '#1c7ed6', kind: 'grammar',
+    ph: 'e.g. nouns & verbs; past tense; synonyms; prefixes; homophones', help: 'topics' },
+  { id: 'en_read',   lang: 'en', group: 'en', icon: '📚', short: 'Reading',     name: 'English Reading',        color: '#5f3dc4', kind: 'reading',
+    ph: '1st line: book/chapter. Optional: paste a passage on the next lines.', help: 'book + passage' },
+  { id: 'en_spell',  lang: 'en', group: 'en', icon: '🐝', short: 'Spelling',    name: 'English Spelling',       color: '#f08c00', kind: 'spelling',
+    ph: 'Spelling words, comma separated: because, friend, believe…', help: 'words' },
+  { id: 'en_guided', lang: 'en', group: 'en', icon: '🔍', short: 'Guided Rdg',  name: 'Guided Reading',         color: '#0c8599', kind: 'guided',
+    ph: '1st line: guided reading book. Optional: paste a passage below.', help: 'book + passage' },
+  { id: 'ipc',       lang: 'en', group: 'en', icon: '🌍', short: 'IPC',         name: 'IPC – International Primary Curriculum', color: '#087f5b', kind: 'social',
+    ph: 'Unit: Solar System, Ancient Egypt, plants… (or "question = answer")', help: 'unit' },
+  { id: 'math',      lang: 'en', group: 'en', icon: '➗', short: 'Math',        name: 'Math',                   color: '#c92a2a', kind: 'math',
+    ph: 'e.g. fractions, times tables, place value, perimeter, rounding', help: 'topics' },
+];
+const SUBJ = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
+
+// Lojinha: itens permanentes (roupinhas, fundos, adesivos) e vales (prêmios reais, repetíveis).
+const SHOP_CATS = [
+  { id: 'hat', label: '🎩 Chapéus' },
+  { id: 'glasses', label: '👓 Óculos' },
+  { id: 'neck', label: '🎀 Acessórios' },
+  { id: 'bg', label: '🖼️ Fundos' },
+  { id: 'sticker', label: '⭐ Adesivos' },
+  { id: 'voucher', label: '🎟️ Vales' },
+];
+const SHOP_ITEMS = [
+  { id: 'hat-cap',     cat: 'hat', name: 'Boné vermelho', price: 40 },
+  { id: 'hat-flowers', cat: 'hat', name: 'Coroa de flores', price: 70 },
+  { id: 'hat-witch',   cat: 'hat', name: 'Chapéu de bruxinha', price: 90 },
+  { id: 'hat-crown',   cat: 'hat', name: 'Coroa dourada', price: 150 },
+  { id: 'hat-grad',    cat: 'hat', name: 'Capelo de formatura', price: 200 },
+  { id: 'gl-round',    cat: 'glasses', name: 'Óculos redondos', price: 35 },
+  { id: 'gl-heart',    cat: 'glasses', name: 'Óculos de coração', price: 60 },
+  { id: 'gl-sun',      cat: 'glasses', name: 'Óculos escuros', price: 80 },
+  { id: 'nk-bow',      cat: 'neck', name: 'Gravata-borboleta', price: 30 },
+  { id: 'nk-scarf',    cat: 'neck', name: 'Cachecol', price: 50 },
+  { id: 'nk-medal',    cat: 'neck', name: 'Medalha de campeã', price: 120 },
+  { id: 'bg-ocean',    cat: 'bg', name: 'Oceano', price: 60, theme: 'theme-ocean', sw: 'linear-gradient(160deg,#c9ecff,#e0fbff)' },
+  { id: 'bg-forest',   cat: 'bg', name: 'Floresta', price: 60, theme: 'theme-forest', sw: 'linear-gradient(160deg,#d8f3dc,#f1fbe7)' },
+  { id: 'bg-sunset',   cat: 'bg', name: 'Pôr do sol', price: 90, theme: 'theme-sunset', sw: 'linear-gradient(160deg,#ffd6a5,#ffc6d9)' },
+  { id: 'bg-candy',    cat: 'bg', name: 'Doceria', price: 90, theme: 'theme-candy', sw: 'linear-gradient(160deg,#ffd6ec,#d6f5ff)' },
+  { id: 'bg-space',    cat: 'bg', name: 'Galáxia', price: 140, theme: 'theme-space', sw: 'linear-gradient(160deg,#1b1446,#3b2a85)' },
+  ...[['🌈', 15], ['⭐', 15], ['🍉', 15], ['🌸', 15], ['🍩', 15], ['🎀', 15], ['🐬', 20], ['🦋', 20], ['🐱', 20], ['🎨', 20],
+      ['🦄', 25], ['🐼', 25], ['🚀', 25], ['🐴', 30], ['🏆', 40]]
+    .map(([e, p], i) => ({ id: 'st-' + i, cat: 'sticker', name: 'Adesivo', emoji: e, price: p })),
+];
+const DEFAULT_VOUCHERS = [
+  { id: 'v-screen', name: '30 min extras de tela', price: 150 },
+  { id: 'v-dinner', name: 'Escolher o jantar', price: 250 },
+  { id: 'v-movie',  name: 'Escolher o filme da família', price: 300 },
+];
+
+/* =========================================================================
+   2. UTILITÁRIOS
+   ========================================================================= */
+const $ = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
+const uid = () => Math.random().toString(36).slice(2, 9);
+
+function pad2(n) { return String(n).padStart(2, '0'); }
+function ymd(d) { return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}`; }
+function parseYmd(s) { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); }
+function addDays(s, n) { const d = parseYmd(s); d.setDate(d.getDate() + n); return ymd(d); }
+function dowOf(s) { return JS_DOW[parseYmd(s).getDay()]; }
+function fmtDM(s) { const d = parseYmd(s); return `${pad2(d.getDate())}/${pad2(d.getMonth() + 1)}`; }
+function daysBetween(a, b) { return Math.round((parseYmd(b) - parseYmd(a)) / 86400000); }
+// "Hoje" pode ser simulado para testes com ?hoje=AAAA-MM-DD na URL.
+function today() {
+  const p = new URLSearchParams(location.search).get('hoje');
+  return p && /^\d{4}-\d{2}-\d{2}$/.test(p) ? p : ymd(new Date());
+}
+function cycleStartOf(s) { const back = (parseYmd(s).getDay() + 1) % 7; return addDays(s, -back); } // sábado anterior (ou hoje)
+
+// Sorteio com semente: as tarefas geradas são estáveis.
+function hashStr(str) { let h = 1779033703 ^ str.length; for (let i = 0; i < str.length; i++) { h = Math.imul(h ^ str.charCodeAt(i), 3432918353); h = (h << 13) | (h >>> 19); } return h >>> 0; }
+function makeRng(seed) {
+  let a = hashStr(String(seed));
+  const next = () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  const int = (lo, hi) => lo + Math.floor(next() * (hi - lo + 1));
+  const pick = arr => arr[Math.floor(next() * arr.length)];
+  const shuffle = arr => { const a2 = [...arr]; for (let i = a2.length - 1; i > 0; i--) { const j = Math.floor(next() * (i + 1)); [a2[i], a2[j]] = [a2[j], a2[i]]; } return a2; };
+  const sample = (arr, n) => shuffle(arr).slice(0, n);
+  return { next, int, pick, shuffle, sample };
+}
+
+// Normalização de respostas
+function norm(s, strict) {
+  let t = String(s ?? '').trim().toLowerCase()
+    .replace(/[’‘`´]/g, "'").replace(/\s+/g, ' ').replace(/^["“”']+|["“”']+$/g, '').replace(/[.!?;]+$/, '').trim();
+  if (!strict) t = t.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/^(the|a|an|o|a|os|as) /, '');
+  return t;
+}
+function parseNum(s) {
+  let t = String(s ?? '').trim().replace(/[^0-9.,/\-\s]/g, '').trim();
+  const mixed = t.match(/^(-?\d+)\s+(\d+)\s*\/\s*(\d+)$/);
+  if (mixed) return Number(mixed[1]) + Number(mixed[2]) / Number(mixed[3]);
+  const fr = t.match(/^(-?\d+)\s*\/\s*(\d+)$/);
+  if (fr) return Number(fr[2]) ? Number(fr[1]) / Number(fr[2]) : NaN;
+  t = t.replace(/\s/g, '');
+  if (/^-?\d{1,3}(,\d{3})+(\.\d+)?$/.test(t)) t = t.replace(/,/g, '');      // 47,382
+  else if (/^-?\d{1,3}(\.\d{3})+(,\d+)?$/.test(t)) t = t.replace(/\./g, '').replace(',', '.'); // 47.382,5
+  else t = t.replace(',', '.');
+  return t === '' ? NaN : Number(t);
+}
+function numEq(a, b) { const x = parseNum(a), y = parseNum(b); return Number.isFinite(x) && Number.isFinite(y) && Math.abs(x - y) < 1e-6; }
+
+function isCorrect(q, ans) {
+  if (q.type === 'open') return null;
+  if (ans == null || String(ans).trim() === '') return false;
+  const list = [q.answer, ...(q.accept || [])];
+  if (q.type === 'num') return list.some(a => numEq(ans, a));
+  return list.some(a => norm(a, q.strict) === norm(ans, q.strict));
+}
+function answered(q, ans) { return ans != null && String(ans).trim() !== ''; }
+
+/* =========================================================================
+   3. ESTADO E PERSISTÊNCIA
+   ========================================================================= */
+function defaultState() {
+  return {
+    v: 1,
+    name: '',
+    tourDone: false,
+    coins: 0,
+    ledger: [],                 // {date, amount, reason}
+    settings: structuredCloneSafe(DEFAULT_SETTINGS),
+    vouchers: structuredCloneSafe(DEFAULT_VOUCHERS),
+    week: null,                 // semana atual (ver createWeek)
+    lastTopics: {},             // tópicos da última semana (para reaproveitar)
+    pendingImport: [],          // perguntas importadas antes de planejar a semana
+    history: [],                // resumo das semanas anteriores
+    extras: {},                 // { 'AAAA-MM-DD': { sets: n } }
+    extra: null,                // rodada de extras em andamento
+    owned: [],                  // ids de itens comprados
+    equipped: { hat: null, glasses: null, neck: null, bg: null },
+    redemptions: [],            // vales resgatados {id, voucherId, name, date, delivered}
+  };
+}
+function structuredCloneSafe(o) { return JSON.parse(JSON.stringify(o)); }
+function load() {
+  try {
+    const raw = localStorage.getItem(STORE_KEY);
+    if (raw) {
+      const s = JSON.parse(raw);
+      const base = defaultState();
+      const merged = Object.assign(base, s);
+      merged.settings = Object.assign(structuredCloneSafe(DEFAULT_SETTINGS), s.settings || {});
+      merged.settings.counts = Object.assign({}, DEFAULT_SETTINGS.counts, (s.settings || {}).counts || {});
+      merged.equipped = Object.assign(base.equipped, s.equipped || {});
+      return merged;
+    }
+  } catch (e) { console.warn('Estado inválido, recomeçando', e); }
+  return defaultState();
+}
+let S = load();
+function save() {
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); }
+  catch (e) { toast('⚠️ Não consegui salvar neste navegador.'); }
+}
+let saveTimer = null;
+function saveSoon() { clearTimeout(saveTimer); saveTimer = setTimeout(save, 250); }
+
+function addCoins(amount, reason) {
+  S.coins += amount;
+  S.ledger.unshift({ date: new Date().toISOString(), amount, reason });
+  S.ledger = S.ledger.slice(0, 200);
+  save();
+  renderCoins(true);
+}
+
+/* =========================================================================
+   4. MASCOTE — a corujinha Lumi (SVG original) + balão de fala
+   ========================================================================= */
+const ACCESSORY_SVG = {
+  'hat-cap': '<path d="M27 23 Q50 -2 73 23 Z" fill="#e5484d"/><path d="M66 22 Q86 20 90 26 Q77 28 63 25Z" fill="#c43a3f"/><circle cx="50" cy="7" r="2.6" fill="#c43a3f"/>',
+  'hat-crown': '<path d="M30 23 L32 5 L41 14 L50 1 L59 14 L68 5 L70 23 Z" fill="#ffc83d" stroke="#e0a800" stroke-width="1.5" stroke-linejoin="round"/><circle cx="50" cy="15" r="2.6" fill="#e5484d"/><circle cx="38" cy="18" r="1.8" fill="#3fa7ff"/><circle cx="62" cy="18" r="1.8" fill="#3fa7ff"/>',
+  'hat-witch': '<path d="M20 22 Q50 13 80 22 Q50 29 20 22Z" fill="#4b2a8a"/><path d="M35 20 L58 -10 L64 19 Z" fill="#5d36a8"/><path d="M37 16 Q50 12 62 15 L63 19 Q50 16 36 20Z" fill="#ffb703"/>',
+  'hat-grad': '<path d="M50 3 L84 13 L50 23 L16 13 Z" fill="#222"/><path d="M33 17 L33 26 Q50 33 67 26 L67 17 L50 23Z" fill="#383838"/><path d="M50 13 L77 17 L77 29" stroke="#ffb703" stroke-width="1.6" fill="none"/><circle cx="77" cy="30" r="2.3" fill="#ffb703"/>',
+  'hat-flowers': [[27, 22, '#ff8fab'], [36, 17, '#ffd43b'], [45, 15, '#74c0fc'], [55, 15, '#ff8fab'], [64, 17, '#ffd43b'], [73, 22, '#74c0fc']]
+    .map(([x, y, c]) => `<g transform="translate(${x} ${y})">${[0, 72, 144, 216, 288].map(r => `<circle cx="0" cy="-3.2" r="2.6" fill="${c}" transform="rotate(${r})"/>`).join('')}<circle r="2" fill="#fff3bf"/></g>`).join(''),
+  'gl-round': '<g fill="none" stroke="#3a2c7a" stroke-width="2.4"><circle cx="37" cy="40" r="12"/><circle cx="63" cy="40" r="12"/><path d="M49 40 Q50 37 51 40"/></g>',
+  'gl-heart': ['37', '63'].map(x => `<path transform="translate(${x} 41) scale(1.25)" d="M0 -3 C-5 -10 -14 -3 0 8 C14 -3 5 -10 0 -3Z" fill="#ff6b9a" fill-opacity=".82" stroke="#d6336c" stroke-width="1"/>`).join('') + '<path d="M47 39 h6" stroke="#d6336c" stroke-width="2"/>',
+  'gl-sun': '<rect x="24" y="33" width="25" height="15" rx="6" fill="#1b1b2f"/><rect x="51" y="33" width="25" height="15" rx="6" fill="#1b1b2f"/><path d="M48 38 h4" stroke="#1b1b2f" stroke-width="3"/><path d="M28 37 h6 M55 37 h6" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>',
+  'nk-bow': '<path d="M50 62 L37 55 L37 69 Z M50 62 L63 55 L63 69 Z" fill="#e5484d" stroke="#c43a3f" stroke-width="1" stroke-linejoin="round"/><circle cx="50" cy="62" r="3.2" fill="#c43a3f"/>',
+  'nk-scarf': '<path d="M22 57 Q50 71 78 57 L78 64 Q50 78 22 64Z" fill="#2a9d8f"/><path d="M60 66 L64 86 L71 84 L68 64Z" fill="#2a9d8f"/><path d="M33 63 l2 5 M45 66 l1 5 M57 66 l-1 5 M68 62 l-2 5 M63 74 l7 -1 M64 80 l7 -1" stroke="#ffd43b" stroke-width="2"/>',
+  'nk-medal': '<path d="M38 55 L50 73 L62 55" stroke="#3fa7ff" stroke-width="3.2" fill="none"/><circle cx="50" cy="77" r="7" fill="#ffc83d" stroke="#e0a800" stroke-width="1.5"/><text x="50" y="80.5" font-size="8.5" font-weight="900" text-anchor="middle" fill="#9c6c00" font-family="Nunito,sans-serif">1</text>',
+};
+function mascotSVG(eq = S.equipped, mood = 'happy') {
+  const pupils = mood === 'think' ? [[39, 36], [61, 36]] : mood === 'wow' ? [[37, 41], [63, 41]] : [[38, 42], [62, 42]];
+  const pr = mood === 'wow' ? 7 : 5.5;
+  const brows = mood === 'sad'
+    ? '<path d="M27 27 L45 31 M73 27 L55 31" stroke="#3a2c7a" stroke-width="2.6" stroke-linecap="round"/>'
+    : mood === 'think' ? '<path d="M28 27 Q37 23 46 27" stroke="#3a2c7a" stroke-width="2.2" fill="none" stroke-linecap="round"/>' : '';
+  const acc = id => (id && ACCESSORY_SVG[id]) || '';
+  return `<svg class="owl" viewBox="0 -12 100 112" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <ellipse cx="50" cy="96" rx="24" ry="4" fill="rgba(0,0,0,.12)"/>
+    <path d="M23 28 L28 8 L41 22 Z" fill="#6a4fd8"/><path d="M77 28 L72 8 L59 22 Z" fill="#6a4fd8"/>
+    <path d="M19 52 Q8 72 26 84 Q30 66 19 52Z" fill="#6a4fd8"/><path d="M81 52 Q92 72 74 84 Q70 66 81 52Z" fill="#6a4fd8"/>
+    <ellipse cx="50" cy="56" rx="32" ry="36" fill="#7b5cf0"/>
+    <ellipse cx="50" cy="67" rx="20" ry="22" fill="#ffe6b3"/>
+    <path d="M41 64 q3 3 6 0 M53 64 q3 3 6 0 M47 72 q3 3 6 0 M41 80 q3 3 6 0 M53 80 q3 3 6 0" stroke="#e8c98a" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="26" cy="53" rx="5" ry="3" fill="#ff8fab" opacity=".55"/><ellipse cx="74" cy="53" rx="5" ry="3" fill="#ff8fab" opacity=".55"/>
+    <circle cx="37" cy="40" r="12" fill="#fff" stroke="#5b43c4" stroke-width="2"/><circle cx="63" cy="40" r="12" fill="#fff" stroke="#5b43c4" stroke-width="2"/>
+    <circle cx="${pupils[0][0]}" cy="${pupils[0][1]}" r="${pr}" fill="#2b2350"/><circle cx="${pupils[1][0]}" cy="${pupils[1][1]}" r="${pr}" fill="#2b2350"/>
+    <circle cx="${pupils[0][0] + 2}" cy="${pupils[0][1] - 2}" r="1.8" fill="#fff"/><circle cx="${pupils[1][0] + 2}" cy="${pupils[1][1] - 2}" r="1.8" fill="#fff"/>
+    ${brows}
+    <path d="M45 50 L55 50 L50 58 Z" fill="#ffb703" stroke="#e09600" stroke-width="1" stroke-linejoin="round"/>
+    <path d="M38 91 q2 -5 4 0 q2 -5 4 0 M54 91 q2 -5 4 0 q2 -5 4 0" stroke="#ffb703" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    ${acc(eq.neck)}${acc(eq.glasses)}${acc(eq.hat)}
+  </svg>`;
+}
+function itemPreviewSVG(item) {
+  const eq = { hat: null, glasses: null, neck: null };
+  eq[item.cat] = item.id;
+  return mascotSVG(eq);
+}
+
+let bubbleTimer = null;
+function say(text, opts = {}) {
+  const b = $('#bubble');
+  $('#bubble-text').innerHTML = text;
+  const actions = $('#bubble-actions');
+  actions.innerHTML = '';
+  (opts.actions || []).forEach(a => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'btn small ' + (a.primary ? 'primary' : '');
+    btn.textContent = a.label;
+    btn.onclick = e => { e.stopPropagation(); a.onClick(); };
+    actions.appendChild(btn);
+  });
+  b.classList.remove('hidden');
+  renderMascotMini(opts.mood || 'happy');
+  const m = $('#mascot-btn');
+  m.classList.remove('talking'); void m.offsetWidth; m.classList.add('talking');
+  clearTimeout(bubbleTimer);
+  if (!opts.sticky) bubbleTimer = setTimeout(hideBubble, opts.ms || Math.min(11000, 3500 + text.length * 45));
+}
+function hideBubble() { $('#bubble').classList.add('hidden'); renderMascotMini(); }
+function renderMascotMini(mood = 'happy') { $('#mascot-btn').innerHTML = mascotSVG(S.equipped, mood); }
+
+function tipsFor(screen) {
+  const st = S.settings;
+  const t = {
+    home: [
+      'Toque no dia de hoje para abrir sua tarefa! 📅',
+      'Sábado e domingo têm um pouquinho mais de perguntas. ⭐',
+      `Sexta é dia de entregar: semana completa vale <b>+${st.reward}</b> moedas! 🪙`,
+      `Se a semana não for entregue até sexta, a gente perde <b>${st.penalty}</b> moedas. Vamos caprichar! 💪`,
+      `Terminou? Os exercícios extras dão <b>${st.extraPerCorrect}</b> moedas por acerto.`,
+      'Escreva o que aprendeu na escola em <b>Minha semana</b> para eu criar as tarefas.',
+    ],
+    setup: [
+      'Escreva o que você aprendeu na escola em cada matéria. Pode ser curtinho!',
+      'Em Ortografia e Spelling, coloque as palavras separadas por vírgula.',
+      'Truque: escreva <b>pergunta = resposta</b> em uma linha e eu viro isso em flashcard!',
+      'Em Math, escreva o assunto em inglês ou português: <i>fractions, times tables, perimeter…</i>',
+      'Matéria em branco não entra na semana.',
+    ],
+    work: [
+      'Toque no 💡 de uma pergunta e eu dou uma dica.',
+      'Perguntas abertas são corrigidas pelos seus pais. Capriche na resposta!',
+      S.settings.gabaritoAfterFinish ? 'Quando terminar, aperte <b>Concluir</b> e o gabarito libera.' : 'O botão <b>Gabarito</b> mostra as respostas para você se corrigir.',
+      'No 🔊 eu falo a palavra em voz alta.',
+    ],
+    shop: ['Compre roupinhas para mim! 😍', 'Os vales são prêmios de verdade: os pais confirmam a entrega.', 'Experimente um fundo novo para o app!'],
+    parents: ['Área dos pais: correção das respostas livres, moedas, vales e ajustes.'],
+    welcome: ['Oi! Eu sou a Lumi, sua corujinha de estudos! 🦉'],
+  };
+  return t[screen] || t.home;
+}
+let tipIdx = 0;
+function mascotClick() {
+  if (!$('#bubble').classList.contains('hidden') && $('#bubble-actions').children.length) return;
+  const tips = tipsFor(currentScreen);
+  say(tips[tipIdx++ % tips.length]);
+}
+
+function runTour() {
+  const st = S.settings;
+  const steps = [
+    `Oi, ${esc(S.name)}! Eu sou a <b>${MASCOT_NAME}</b> 🦉 e vou estudar com você!`,
+    'Toda semana você escreve em <b>📝 Minha semana</b> o que está aprendendo na escola. Eu transformo isso em tarefas.',
+    'Cada dia tem uma tarefa curtinha. <b>Sábado e domingo</b> têm um pouquinho mais.',
+    `<b>Sexta-feira é dia de entrega!</b> Semana completa: <b>+${st.reward}</b> 🪙. Semana não entregue: <b>−${st.penalty}</b> 🪙.`,
+    `Quer mais moedas? Faça os <b>⭐ Exercícios extras</b>: ${st.extraPerCorrect} moedas por acerto.`,
+    'Gaste as moedas na <b>🛒 Lojinha</b>: roupinhas para mim, fundos e adesivos!',
+    'Travou numa pergunta? Toque no <b>💡</b> ou em mim que eu ajudo. Vamos lá?',
+  ];
+  let i = 0;
+  const step = () => {
+    const last = i === steps.length - 1;
+    say(steps[i], {
+      sticky: true, mood: i === 3 ? 'wow' : 'happy',
+      actions: [
+        ...(last ? [] : [{ label: 'Pular', onClick: () => { finish(); } }]),
+        { label: last ? 'Começar!' : 'Próximo ▸', primary: true, onClick: () => { if (last) finish(); else { i++; step(); } } },
+      ],
+    });
+  };
+  const finish = () => { S.tourDone = true; save(); hideBubble(); };
+  step();
+}
+
+/* =========================================================================
+   5. GERADOR DE PERGUNTAS
+   Prioriza VOLUME e SIMPLICIDADE: muitas perguntas curtas e objetivas.
+   Tipos: mc (múltipla escolha), short (resposta curta), num (número),
+          listen (ditado com voz), open (resposta livre — pais corrigem)
+   ========================================================================= */
+const speechOK = typeof window !== 'undefined' && 'speechSynthesis' in window;
+function speak(text, lang) {
+  if (!speechOK || !S.settings.voice) { toast('🔇 Voz indisponível neste navegador'); return; }
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = lang === 'pt' ? 'pt-BR' : 'en-GB';
+    u.rate = .85;
+    speechSynthesis.speak(u);
+  } catch (e) { /* ignora */ }
+}
+
+function Q(type, q, answer, extra = {}) { return Object.assign({ type, q, answer: answer == null ? '' : String(answer) }, extra); }
+function mcQ(q, answer, distractors, rng, extra = {}) {
+  const opts = rng.shuffle([answer, ...rng.sample([...new Set(distractors.filter(d => norm(d) !== norm(answer)))], 3)].map(String));
+  return Q('mc', q, answer, Object.assign({ options: opts }, extra));
+}
+// Intercala listas (uma de cada tipo) para variar as perguntas do dia.
+function interleave(buckets) {
+  const out = []; const bs = buckets.map(b => [...b]).filter(b => b.length);
+  while (bs.some(b => b.length)) bs.forEach(b => { if (b.length) out.push(b.shift()); });
+  return out;
+}
+// Separa o texto da matéria em linhas de tópico e "flashcards" (pergunta = resposta).
+function parseTopic(text) {
+  const lines = String(text || '').split(/\n/).map(l => l.trim()).filter(Boolean);
+  const facts = []; const rest = [];
+  lines.forEach(l => {
+    const m = l.match(/^(.{2,}?)\s*(?:=|→|->)\s*(.+)$/);
+    if (m) facts.push({ q: m[1].trim(), a: m[2].trim() }); else rest.push(l);
+  });
+  return { facts, lines: rest, text: rest.join('\n') };
+}
+function factQuestions(facts, subj, rng) {
+  const pt = subj.lang === 'pt';
+  const answers = facts.map(f => f.a);
+  const out = [];
+  facts.forEach(f => {
+    const q = /[?]$/.test(f.q) ? f.q : (pt ? `${f.q}?` : `${f.q}?`);
+    const hint = pt ? `Começa com "${f.a.charAt(0).toUpperCase()}" e tem ${f.a.length} caracteres.` : `It starts with "${f.a.charAt(0).toUpperCase()}" and has ${f.a.length} characters.`;
+    if (answers.length >= 4) out.push(mcQ(q, f.a, answers, rng, { hint, src: 'fact' }));
+    out.push(Q('short', q, f.a, { hint, src: 'fact' }));
+  });
+  return out;
+}
+
+/* ---------- Português / English: gramática ---------- */
+const PT = {
+  classes: {
+    substantivo: ['casa', 'escola', 'cachorro', 'livro', 'árvore', 'cidade', 'amigo', 'janela', 'flor', 'professora', 'mesa', 'praia'],
+    adjetivo: ['bonito', 'alto', 'feliz', 'rápido', 'azul', 'gelado', 'inteligente', 'pequeno', 'corajoso', 'macio', 'barulhento', 'gostoso'],
+    verbo: ['correr', 'pular', 'estudar', 'cantar', 'escrever', 'brincar', 'comer', 'dormir', 'ler', 'nadar', 'desenhar', 'viajar'],
+  },
+  plural: [['animal', 'animais'], ['pão', 'pães'], ['mão', 'mãos'], ['flor', 'flores'], ['lápis', 'lápis'], ['papel', 'papéis'], ['limão', 'limões'], ['anel', 'anéis'], ['nariz', 'narizes'], ['jovem', 'jovens'], ['coração', 'corações'], ['caracol', 'caracóis'], ['cidadão', 'cidadãos'], ['mar', 'mares']],
+  sin: [['feliz', 'alegre'], ['bonito', 'belo'], ['rápido', 'veloz'], ['começar', 'iniciar'], ['casa', 'lar'], ['medo', 'temor'], ['triste', 'chateado'], ['falar', 'conversar'], ['enorme', 'gigante'], ['esperto', 'inteligente'], ['olhar', 'observar'], ['caminho', 'trajeto']],
+  ant: [['alto', 'baixo'], ['quente', 'frio'], ['alegre', 'triste'], ['grande', 'pequeno'], ['claro', 'escuro'], ['cheio', 'vazio'], ['rápido', 'lento'], ['abrir', 'fechar'], ['dia', 'noite'], ['forte', 'fraco'], ['subir', 'descer'], ['limpo', 'sujo']],
+  fem: [['ator', 'atriz'], ['cavalo', 'égua'], ['boi', 'vaca'], ['rei', 'rainha'], ['pai', 'mãe'], ['homem', 'mulher'], ['galo', 'galinha'], ['leão', 'leoa'], ['professor', 'professora'], ['padrinho', 'madrinha'], ['herói', 'heroína'], ['cão', 'cadela']],
+  punct: [['Que dia lindo', '!'], ['Você vai à escola amanhã', '?'], ['Eu gosto de maçã', '.'], ['Onde está meu lápis', '?'], ['Cuidado com o degrau', '!'], ['Hoje choveu muito', '.'], ['Qual é o seu nome', '?'], ['Que susto', '!'], ['Minha irmã tem dez anos', '.']],
+  dim: [['casa', 'casinha'], ['pé', 'pezinho'], ['flor', 'florzinha'], ['livro', 'livrinho'], ['gato', 'gatinho'], ['mão', 'mãozinha'], ['bola', 'bolinha'], ['café', 'cafezinho'], ['pássaro', 'passarinho']],
+  silabas: [['casa', 2], ['borboleta', 4], ['sol', 1], ['escola', 3], ['computador', 4], ['pássaro', 3], ['mar', 1], ['janela', 3], ['elefante', 4], ['chuva', 2], ['hipopótamo', 5], ['árvore', 3], ['pão', 1], ['abacaxi', 4]],
+  acento: [['café', 'cafe', 'cafê'], ['lâmpada', 'lampada', 'lampáda'], ['ônibus', 'onibus', 'ônibús'], ['médico', 'medico', 'medíco'], ['sofá', 'sofa', 'sôfa'], ['árvore', 'arvore', 'arvóre'], ['você', 'voce', 'vocé'], ['pássaro', 'passaro', 'passáro'], ['avô', 'avo', 'ávo'], ['máquina', 'maquina', 'maquína']],
+};
+const EN = {
+  classes: {
+    noun: ['dog', 'city', 'pencil', 'garden', 'friend', 'window', 'ocean', 'teacher', 'castle', 'apple'],
+    verb: ['run', 'write', 'swim', 'think', 'build', 'laugh', 'climb', 'read', 'jump', 'sing'],
+    adjective: ['tall', 'bright', 'noisy', 'brave', 'cold', 'purple', 'enormous', 'tiny', 'gentle', 'shiny'],
+    adverb: ['quickly', 'quietly', 'carefully', 'happily', 'slowly', 'loudly', 'bravely', 'gently', 'softly', 'often'],
+  },
+  past: [['go', 'went'], ['eat', 'ate'], ['see', 'saw'], ['run', 'ran'], ['swim', 'swam'], ['write', 'wrote'], ['buy', 'bought'], ['think', 'thought'], ['bring', 'brought'], ['catch', 'caught'], ['sing', 'sang'], ['take', 'took'], ['fly', 'flew'], ['play', 'played'], ['carry', 'carried'], ['stop', 'stopped']],
+  plural: [['child', 'children'], ['mouse', 'mice'], ['box', 'boxes'], ['baby', 'babies'], ['leaf', 'leaves'], ['tooth', 'teeth'], ['bus', 'buses'], ['knife', 'knives'], ['foot', 'feet'], ['city', 'cities'], ['sheep', 'sheep'], ['potato', 'potatoes'], ['woman', 'women']],
+  syn: [['big', 'large'], ['happy', 'glad'], ['small', 'tiny'], ['fast', 'quick'], ['begin', 'start'], ['angry', 'cross'], ['smart', 'clever'], ['scared', 'afraid'], ['shout', 'yell'], ['difficult', 'hard'], ['end', 'finish'], ['look', 'see']],
+  ant: [['hot', 'cold'], ['early', 'late'], ['empty', 'full'], ['ancient', 'modern'], ['remember', 'forget'], ['push', 'pull'], ['generous', 'selfish'], ['shallow', 'deep'], ['rough', 'smooth'], ['brave', 'cowardly'], ['arrive', 'leave']],
+  pron: [['Tom is my brother.', 'Tom', 'He'], ['The books are on the table.', 'The books', 'They'], ['Sarah and I love pizza.', 'Sarah and I', 'We'], ['Grandma bakes cakes.', 'Grandma', 'She'], ['The cat is sleeping.', 'The cat', 'It'], ['Leo and Ana are friends.', 'Leo and Ana', 'They']],
+  contr: [['do not', "don't"], ['I am', "I'm"], ['cannot', "can't"], ['they are', "they're"], ['it is', "it's"], ['we will', "we'll"], ['she is', "she's"], ['would not', "wouldn't"], ['I have', "I've"], ['you are', "you're"]],
+  prefix: [['happy', 'un'], ['possible', 'im'], ['agree', 'dis'], ['legal', 'il'], ['correct', 'in'], ['regular', 'ir'], ['kind', 'un'], ['appear', 'dis'], ['polite', 'im'], ['lock', 'un']],
+  homo: [['I can ___ the sea from here.', 'see', ['sea']], ['They left ___ bags at school.', 'their', ['there', "they're"]], ['I have ___ apples.', 'two', ['too', 'to']], ['Can you ___ the music?', 'hear', ['here']], ['I ___ the answer!', 'know', ['no', 'now']], ['We ___ the race!', 'won', ['one']], ['The wind ___ the leaves away.', 'blew', ['blue']], ['Please ___ the letter.', 'write', ['right']]],
+};
+function grammarPool(subj, topicText, rng) {
+  const pt = subj.lang === 'pt';
+  const t = topicText.toLowerCase();
+  const B = {};
+  if (pt) {
+    const allClassWords = Object.entries(PT.classes).flatMap(([c, ws]) => ws.map(w => [w, c]));
+    B.classe = rng.sample(allClassWords, 10).map(([w, c]) => Q('mc', `A palavra "${w}" é um:`, c, { options: ['substantivo', 'adjetivo', 'verbo'], hint: 'Substantivo dá nome; adjetivo descreve; verbo é ação.' }));
+    B.plural = rng.sample(PT.plural, 8).map(([a, b]) => Q('short', `Escreva o plural de "${a}".`, b, { strict: true, hint: 'Palavras em -ão podem virar -ões, -ães ou -ãos. Em -l, viram -is.' }));
+    B.sinonimo = rng.sample(PT.sin, 8).map(([a, b]) => mcQ(`Qual é o sinônimo de "${a}"?`, b, PT.sin.map(p => p[1]), rng, { hint: 'Sinônimo = palavra com o MESMO sentido.' }));
+    B.antonimo = rng.sample(PT.ant, 8).map(([a, b]) => mcQ(`Qual é o antônimo de "${a}"?`, b, PT.ant.map(p => p[1]), rng, { hint: 'Antônimo = palavra com sentido CONTRÁRIO.' }));
+    B.feminino = rng.sample(PT.fem, 8).map(([a, b]) => Q('short', `Qual é o feminino de "${a}"?`, b, { strict: true, hint: 'Pense em uma menina ou uma fêmea.' }));
+    B.pontuacao = rng.sample(PT.punct, 6).map(([f, p]) => Q('mc', `Qual sinal completa a frase: "${f}__"`, p, { options: ['.', '?', '!'], hint: '? = pergunta · ! = emoção/surpresa · . = afirmação' }));
+    B.diminutivo = rng.sample(PT.dim, 6).map(([a, b]) => Q('short', `Qual é o diminutivo de "${a}"?`, b, { strict: true, hint: 'Diminutivo costuma terminar em -inho/-inha ou -zinho/-zinha.' }));
+    B.silaba = rng.sample(PT.silabas, 6).map(([w, n]) => Q('num', `Quantas sílabas tem a palavra "${w}"?`, n, { hint: 'Bata palmas falando a palavra devagar.' }));
+    B.acento = rng.sample(PT.acento, 6).map(([c, ...w]) => Q('mc', 'Qual palavra está escrita corretamente?', c, { options: rng.shuffle([c, ...w]), strict: true, hint: 'Leia em voz alta e veja onde a palavra é mais forte.' }));
+    const map = [['classe', /substant|adjetiv|verbo|classe|classific/], ['plural', /plural/], ['sinonimo', /sin[oô]nim/], ['antonimo', /ant[oô]nim/], ['feminino', /femin|mascul|g[eê]nero/],
+      ['pontuacao', /pontua/], ['diminutivo', /diminut|aumentat|grau/], ['silaba', /s[ií]laba|silab/], ['acento', /acent|t[oô]nica/]];
+    return pickBuckets(B, map, t, ['classe', 'sinonimo', 'antonimo', 'pontuacao', 'plural']);
+  }
+  const allClassWords = Object.entries(EN.classes).flatMap(([c, ws]) => ws.map(w => [w, c]));
+  B.classes = rng.sample(allClassWords, 10).map(([w, c]) => Q('mc', `"${w}" is a…`, c, { options: ['noun', 'verb', 'adjective', 'adverb'], hint: 'Noun = name · verb = action · adjective = describes a noun · adverb = describes a verb (often -ly).' }));
+  B.past = rng.sample(EN.past, 8).map(([a, b]) => Q('short', `Write the past tense of "${a}".`, b, { strict: true, hint: 'Yesterday I…' }));
+  B.plural = rng.sample(EN.plural, 8).map(([a, b]) => Q('short', `Write the plural of "${a}".`, b, { strict: true, hint: 'Some plurals are irregular: one foot, two feet.' }));
+  B.syn = rng.sample(EN.syn, 8).map(([a, b]) => mcQ(`Which word is a synonym of "${a}"?`, b, EN.syn.map(p => p[1]), rng, { hint: 'Synonym = SAME meaning.' }));
+  B.ant = rng.sample(EN.ant, 8).map(([a, b]) => mcQ(`Which word is the opposite of "${a}"?`, b, EN.ant.map(p => p[1]), rng, { hint: 'Antonym = OPPOSITE meaning.' }));
+  B.pron = rng.sample(EN.pron, 6).map(([s, w, p]) => Q('mc', `Which pronoun can replace "${w}" in: "${s}"`, p, { options: ['He', 'She', 'It', 'We', 'They'], hint: 'One boy = he · one girl = she · a thing/animal = it · more than one = they/we.' }));
+  B.contr = rng.sample(EN.contr, 7).map(([a, b]) => Q('short', `Write the contraction of "${a}".`, b, { strict: true, accept: [b.replace("'", '’')], hint: 'Use an apostrophe (\') where letters are missing.' }));
+  B.prefix = rng.sample(EN.prefix, 7).map(([w, p]) => Q('mc', `Which prefix makes the opposite of "${w}"?`, p, { options: rng.shuffle([p, ...rng.sample(['un', 'dis', 'im', 'in', 'il', 'ir'].filter(x => x !== p), 3)]), hint: 'Try each prefix aloud: does it sound like a real word?' }));
+  B.homo = rng.sample(EN.homo, 6).map(([s, a, wrong]) => Q('mc', `Choose the right word: "${s}"`, a, { options: rng.shuffle([a, ...wrong]), strict: true, hint: 'Homophones sound the same but have different meanings and spellings.' }));
+  const map = [['classes', /noun|verb|adjective|adverb|word class/], ['past', /past|tense|irregular/], ['plural', /plural/], ['syn', /synonym/], ['ant', /antonym|opposite/],
+    ['pron', /pronoun/], ['contr', /contraction|apostroph/], ['prefix', /prefix|suffix/], ['homo', /homophone/]];
+  return pickBuckets(B, map, t, ['classes', 'syn', 'ant', 'past', 'plural']);
+}
+function pickBuckets(B, map, t, fallback) {
+  const chosen = map.filter(([, re]) => re.test(t)).map(([k]) => k);
+  return { buckets: (chosen.length ? chosen : fallback).map(k => B[k]), matched: chosen.length > 0 };
+}
+
+/* ---------- Ortografia / Spelling ---------- */
+const MISSPELL = {
+  pt: [[/ss/, 'ç'], [/ç/, 'ss'], [/ç/, 's'], [/([aeiouáéíóú])s([aeiou])/, '$1z$2'], [/z/, 's'], [/x/, 'ch'], [/ch/, 'x'], [/g(?=[ei])/, 'j'], [/j(?=[ei])/, 'g'],
+    [/rr/, 'r'], [/([aeiou])r([aeiou])/, '$1rr$2'], [/^h/, ''], [/l$/, 'u'], [/u$/, 'l'], [/e$/, 'i'], [/o$/, 'u'], [/ão$/, 'am'], [/sc/, 's'], [/xc/, 'c'], [/s(?=[ei])/, 'c'], [/c(?=[ei])/, 's'], [/lh/, 'li'], [/nh/, 'ni']],
+  en: [[/ie/, 'ei'], [/ei/, 'ie'], [/([a-z])\1/, '$1'], [/([aeiou])([bdgklmnprt])([aeiouy])/, '$1$2$2$3'], [/ph/, 'f'], [/f/, 'ph'], [/ck/, 'k'], [/tion$/, 'sion'], [/sion$/, 'tion'],
+    [/c(?=[eiy])/, 's'], [/y$/, 'ey'], [/e$/, ''], [/ous$/, 'us'], [/ight/, 'ite'], [/wh/, 'w'], [/kn/, 'n'], [/able$/, 'ible'], [/ible$/, 'able'], [/ence$/, 'ance'], [/ance$/, 'ence'], [/au/, 'aw'], [/ue$/, 'oo']],
+};
+function misspellings(word, lang, rng) {
+  const w = word;
+  const out = new Set();
+  rng.shuffle(MISSPELL[lang]).forEach(([re, rep]) => { const v = w.replace(re, rep); if (v !== w && v.length > 1) out.add(v); });
+  const noAcc = w.normalize('NFD').replace(/[̀-ͯ]/g, '');
+  if (lang === 'pt' && noAcc !== w) out.add(noAcc);
+  let guard = 0;
+  while (out.size < 3 && guard++ < 20 && w.length > 3) {
+    const i = rng.int(1, w.length - 2);
+    const v = w.slice(0, i) + w[i + 1] + w[i] + w.slice(i + 2);
+    if (v !== w) out.add(v);
+  }
+  return rng.shuffle([...out]).slice(0, 3);
+}
+function spellingPool(subj, text, rng) {
+  const pt = subj.lang === 'pt';
+  const words = [...new Set(text.split(/[,;\n]+/).map(w => w.trim()).filter(w => w && w.length <= 30))];
+  if (!words.length) return { buckets: [] };
+  const L = { listen: [], missing: [], choose: [], scramble: [], sentence: [] };
+  words.forEach(w => {
+    const hint = pt ? `Começa com "${w[0]}" e tem ${w.length} letras.` : `It starts with "${w[0]}" and has ${w.length} letters.`;
+    if (speechOK) L.listen.push(Q('listen', pt ? 'Ouça a palavra e escreva:' : 'Listen and write the word:', w, { say: w, strict: true, hint }));
+    if (w.length >= 4 && !/\s/.test(w)) {
+      const k = w.length >= 7 ? 2 : 1;
+      const idx = rng.sample([...Array(w.length).keys()].slice(1), k).sort((a, b) => a - b);
+      const shown = [...w].map((c, i) => idx.includes(i) ? '_' : c).join('');
+      L.missing.push(Q('short', pt ? `Complete e escreva a palavra inteira: ${shown}` : `Fill the gaps and write the whole word: ${shown}`, w, { strict: true, hint }));
+      let scr = w; let g = 0;
+      while (scr === w && g++ < 10) scr = rng.shuffle([...w]).join('');
+      L.scramble.push(Q('short', pt ? `Desembaralhe: ${scr.toUpperCase().split('').join(' ')}` : `Unscramble: ${scr.toUpperCase().split('').join(' ')}`, w, { strict: true, hint }));
+    }
+    const wrong = misspellings(w, subj.lang, rng);
+    if (wrong.length >= 2) L.choose.push(Q('mc', pt ? 'Qual está escrita corretamente?' : 'Which spelling is correct?', w, { options: rng.shuffle([w, ...wrong]), strict: true, hint: pt ? 'Leia cada opção bem devagar.' : 'Read each option slowly — which one looks right?' }));
+    L.sentence.push(Q('open', pt ? `Escreva uma frase usando a palavra "${w}".` : `Write a sentence using the word "${w}".`, '', { hint: pt ? 'Comece com letra maiúscula e termine com ponto.' : 'Start with a capital letter and end with a full stop.' }));
+  });
+  Object.values(L).forEach(arr => arr.splice(0, arr.length, ...rng.shuffle(arr)));
+  return { buckets: [L.listen, L.choose, L.missing, L.scramble, L.sentence] };
+}
+
+/* ---------- Leitura / Reading / Guided reading ---------- */
+const READ_T = {
+  pt: [
+    'Quem são os personagens principais de {t}?', 'Resuma o que aconteceu em {t} em 2 ou 3 frases.', 'Qual foi a parte de que você mais gostou em {t}? Por quê?',
+    'Escreva 2 palavras novas que você encontrou em {t} e o que significam.', 'Onde e quando acontece a história de {t}?', 'O que você acha que vai acontecer depois em {t}?',
+    'Como o personagem principal de {t} se sentiu? Copie uma frase que mostra isso.', 'Qual é a mensagem (lição) de {t}?', 'Invente um novo título para {t} e explique.',
+  ],
+  en: [
+    'Who are the main characters in {t}?', 'Summarise what happened in {t} in 2–3 sentences.', 'What was your favourite part of {t}? Why?',
+    'Write 2 new words from {t} and what they mean.', 'Where and when does {t} take place?', 'What do you think will happen next in {t}?',
+    'How did the main character in {t} feel? Copy a sentence that shows it.', 'What is the message of {t}?',
+  ],
+  guided: [
+    'Vocabulary: choose 2 interesting words from {t}. What do they mean?', 'Infer: how does the main character feel in {t}? Give one clue from the text.',
+    'Predict: what will happen next in {t}? Why do you think so?', 'Explain: why do you think the author chose this title for {t}?',
+    'Retrieve: write 3 facts or events from {t}.', 'Sequence: put 3 main events from {t} in order (first, then, finally).',
+    'Summarise {t} in 3 short sentences.', 'Explain: which word best describes the main character in {t}? Why?',
+  ],
+};
+function clozeQuestions(passage, subj, rng) {
+  const pt = subj.lang === 'pt';
+  const sentences = passage.replace(/\s+/g, ' ').split(/(?<=[.!?])\s+/).map(s => s.trim()).filter(s => { const n = s.split(' ').length; return n >= 5 && n <= 28; });
+  const out = [];
+  rng.shuffle(sentences).slice(0, 10).forEach(s => {
+    const words = s.split(' ');
+    const cands = words.map((w, i) => [w.replace(/[^\p{L}'-]/gu, ''), i]).filter(([w, i]) => i > 0 && w.length >= 5);
+    if (!cands.length) return;
+    const [w, i] = rng.pick(cands);
+    const shown = words.map((x, j) => j === i ? x.replace(w, '_____') : x).join(' ');
+    out.push(Q('short', pt ? `Complete com a palavra do texto: "${shown}"` : `Complete with the word from the text: "${shown}"`, w,
+      { hint: pt ? `Procure essa frase no texto. A palavra começa com "${w[0]}".` : `Find this sentence in the text. The word starts with "${w[0]}".` }));
+  });
+  return out;
+}
+function readingPool(subj, text, rng, guided) {
+  const pt = subj.lang === 'pt';
+  const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+  if (!lines.length) return { buckets: [] };
+  const title = lines[0].length > 80 ? lines[0].slice(0, 77) + '…' : lines[0];
+  const passage = lines.slice(1).join(' ');
+  const t = pt ? `"${title}"` : `"${title}"`;
+  const tpl = guided ? READ_T.guided : READ_T[subj.lang];
+  const open = rng.shuffle(tpl).map(s => Q('open', s.replace('{t}', t), '', { hint: pt ? 'Volte ao texto e procure a parte que fala disso.' : 'Go back to the text and find the part about it.' }));
+  const cloze = passage.length > 120 ? clozeQuestions(passage, subj, rng) : [];
+  return { buckets: [cloze, open] };
+}
+
+/* ---------- Estudos sociais: BSS / IPC ---------- */
+const BR_STATES = [ // [estado, capital, região, preposição]
+  ['Acre', 'Rio Branco', 'Norte', 'do'], ['Amapá', 'Macapá', 'Norte', 'do'], ['Amazonas', 'Manaus', 'Norte', 'do'], ['Pará', 'Belém', 'Norte', 'do'], ['Rondônia', 'Porto Velho', 'Norte', 'de'], ['Roraima', 'Boa Vista', 'Norte', 'de'], ['Tocantins', 'Palmas', 'Norte', 'do'],
+  ['Alagoas', 'Maceió', 'Nordeste', 'de'], ['Bahia', 'Salvador', 'Nordeste', 'da'], ['Ceará', 'Fortaleza', 'Nordeste', 'do'], ['Maranhão', 'São Luís', 'Nordeste', 'do'], ['Paraíba', 'João Pessoa', 'Nordeste', 'da'], ['Pernambuco', 'Recife', 'Nordeste', 'de'], ['Piauí', 'Teresina', 'Nordeste', 'do'], ['Rio Grande do Norte', 'Natal', 'Nordeste', 'do'], ['Sergipe', 'Aracaju', 'Nordeste', 'de'],
+  ['Goiás', 'Goiânia', 'Centro-Oeste', 'de'], ['Mato Grosso', 'Cuiabá', 'Centro-Oeste', 'de'], ['Mato Grosso do Sul', 'Campo Grande', 'Centro-Oeste', 'de'], ['Distrito Federal', 'Brasília', 'Centro-Oeste', 'do'],
+  ['Espírito Santo', 'Vitória', 'Sudeste', 'do'], ['Minas Gerais', 'Belo Horizonte', 'Sudeste', 'de'], ['Rio de Janeiro', 'Rio de Janeiro', 'Sudeste', 'do'], ['São Paulo', 'São Paulo', 'Sudeste', 'de'],
+  ['Paraná', 'Curitiba', 'Sul', 'do'], ['Rio Grande do Sul', 'Porto Alegre', 'Sul', 'do'], ['Santa Catarina', 'Florianópolis', 'Sul', 'de'],
+];
+const BR_BIOMES = [['a maior floresta tropical do mundo', 'Amazônia'], ['clima semiárido e plantas que guardam água, como o mandacaru', 'Caatinga'], ['a maior planície alagável do mundo', 'Pantanal'],
+  ['a floresta do litoral, a mais desmatada do Brasil', 'Mata Atlântica'], ['árvores de troncos tortos e o "berço das águas" no centro do país', 'Cerrado'], ['campos com vegetação rasteira no sul do Rio Grande do Sul', 'Pampa']];
+const BR_HIST = [['Em que ano os portugueses chegaram ao Brasil?', '1500', 'num'], ['Quem comandava a frota portuguesa que chegou ao Brasil em 1500?', 'Pedro Álvares Cabral', 'short', ['Cabral']],
+  ['Em que ano foi a Independência do Brasil?', '1822', 'num'], ['Quem declarou a Independência do Brasil?', 'Dom Pedro I', 'short', ['D. Pedro I', 'Pedro I']], ['Em que ano a escravidão foi abolida no Brasil?', '1888', 'num'],
+  ['Qual lei aboliu a escravidão no Brasil?', 'Lei Áurea', 'short'], ['Em que ano foi proclamada a República no Brasil?', '1889', 'num'], ['Qual foi a primeira capital do Brasil?', 'Salvador', 'short'],
+  ['Qual árvore deu nome ao Brasil?', 'Pau-brasil', 'short', ['pau brasil']], ['Desde que ano Brasília é a capital do Brasil?', '1960', 'num']];
+const EN_SOCIAL = {
+  continent: [['Brazil', 'South America'], ['Egypt', 'Africa'], ['Japan', 'Asia'], ['France', 'Europe'], ['Canada', 'North America'], ['Australia', 'Oceania'], ['Kenya', 'Africa'], ['India', 'Asia'], ['Argentina', 'South America'], ['Mexico', 'North America'], ['Italy', 'Europe'], ['China', 'Asia']],
+  space: [['Which planet is closest to the Sun?', 'Mercury'], ['Which is the largest planet?', 'Jupiter'], ['Which planet is known as the Red Planet?', 'Mars'], ['Which planet has the most famous rings?', 'Saturn'], ['How many planets are in our Solar System?', '8'], ['What is at the centre of our Solar System?', 'The Sun'], ['What is the name of our galaxy?', 'The Milky Way'], ['What natural satellite orbits the Earth?', 'The Moon']],
+  water: [['What do we call water turning into vapour when it is heated?', 'Evaporation'], ['What do we call water vapour cooling to form clouds?', 'Condensation'], ['What do we call rain, snow or hail falling from clouds?', 'Precipitation'], ['What do we call water gathering in rivers, lakes and seas?', 'Collection']],
+  egypt: [['Ancient Egyptians wrote with pictures called…', 'Hieroglyphs'], ['Which river was vital to Ancient Egypt?', 'The Nile'], ['What were the kings of Ancient Egypt called?', 'Pharaohs'], ['What do we call preserved bodies from Ancient Egypt?', 'Mummies'], ['What huge stone tombs did Egyptians build?', 'Pyramids']],
+  rome: [['What language did the Ancient Romans speak?', 'Latin'], ['What was the huge arena in Rome called?', 'The Colosseum'], ['Which volcano destroyed Pompeii?', 'Vesuvius'], ['Who was the first Roman emperor?', 'Augustus']],
+  plants: [['Which part of a plant takes in water from the soil?', 'Roots'], ['Which part of a plant makes food using sunlight?', 'Leaves'], ['What is the process plants use to make food?', 'Photosynthesis'], ['Which gas do plants take in from the air?', 'Carbon dioxide'], ['Which gas do plants give out?', 'Oxygen'], ['Which part of the plant carries water up to the leaves?', 'Stem']],
+  body: [['Which organ pumps blood around the body?', 'Heart'], ['Which organs help us breathe?', 'Lungs'], ['Which bone protects the brain?', 'Skull'], ['How many bones does an adult human have?', '206'], ['Which organ controls the whole body?', 'Brain']],
+};
+function socialPool(subj, text, rng) {
+  const pt = subj.lang === 'pt';
+  const t = text.toLowerCase();
+  const topic = text.split('\n')[0].trim();
+  const banks = [];
+  if (pt) {
+    if (/capita|estado/.test(t)) banks.push(rng.sample(BR_STATES.filter(x => x[0] !== x[1]), 10).map(([e, c, , pr]) => mcQ(`Qual é a capital ${pr} ${e}?`, c, BR_STATES.map(s => s[1]), rng, { hint: 'Lembre do mapa do Brasil que você estudou.' })));
+    if (/regi/.test(t)) banks.push(rng.sample(BR_STATES, 10).map(([e, , r, pr]) => mcQ(`Em qual região do Brasil fica ${({ do: 'o ', da: 'a ' })[pr] || ''}${e}?`, r, ['Norte', 'Nordeste', 'Centro-Oeste', 'Sudeste', 'Sul'], rng, { hint: 'O Brasil tem 5 regiões: Norte, Nordeste, Centro-Oeste, Sudeste e Sul.' })));
+    if (/bioma|vegeta|floresta/.test(t)) banks.push(BR_BIOMES.map(([d, b]) => mcQ(`Qual bioma tem ${d}?`, b, BR_BIOMES.map(x => x[1]), rng, { hint: 'Os biomas do Brasil: Amazônia, Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa.' })));
+    if (/hist|descobr|independ|colon|rep[uú]bl|cabral|imp[eé]rio|escrav|aboli/.test(t)) banks.push(rng.shuffle(BR_HIST).map(([q, a, ty, acc]) => Q(ty, q, a, { accept: acc, hint: 'Pense na linha do tempo do Brasil: 1500 → 1822 → 1888 → 1889.' })));
+  } else {
+    const pairs = [['continent', /continent|countr|world|map/], ['space', /planet|solar|space|moon|star/], ['water', /water cycle|evapor|condens|rain/], ['egypt', /egypt/], ['rome', /roman|rome/], ['plants', /plant|seed|flower|photosynth/], ['body', /body|skeleton|heart|organ|bone/]];
+    pairs.forEach(([k, re]) => {
+      if (!re.test(t)) return;
+      if (k === 'continent') banks.push(rng.shuffle(EN_SOCIAL.continent).map(([c, a]) => mcQ(`On which continent is ${c}?`, a, ['South America', 'North America', 'Africa', 'Asia', 'Europe', 'Oceania'], rng, { hint: 'There are 7 continents. Picture the world map!' })));
+      else banks.push(rng.shuffle(EN_SOCIAL[k]).map(([q, a]) => (/^\d+$/.test(a) ? Q('num', q, a) : mcQ(q, a, EN_SOCIAL[k].map(x => x[1]).filter(x => !/^\d+$/.test(x)), rng)) ) .map(q => Object.assign(q, { hint: 'Think about what you learnt in class this week.' })));
+    });
+  }
+  const O = pt
+    ? ['O que você aprendeu esta semana sobre {t}?', 'Cite 3 fatos importantes sobre {t}.', 'Por que {t} é importante?', 'Explique uma palavra nova que você aprendeu em {t}.', 'Escreva 2 perguntas que você ainda tem sobre {t}.', 'Desenhe mentalmente e descreva em 2 frases: {t}.']
+    : ['What did you learn this week about {t}?', 'Write 3 important facts about {t}.', 'Why is {t} important?', 'Explain a new word you learnt in {t}.', 'Write 2 questions you still have about {t}.', 'Describe {t} to a friend in 2 sentences.'];
+  const open = topic ? rng.shuffle(O).map(s => Q('open', s.replace('{t}', `"${topic}"`), '', { hint: pt ? 'Lembre do que a professora explicou e do seu caderno.' : 'Look at your notes from class.' })) : [];
+  return { buckets: [...banks, open] };
+}
+
+/* ---------- Math ---------- */
+const NAMES = ['Leo', 'Sofia', 'Maya', 'Tom', 'Ana', 'Ben', 'Lucas', 'Julia'];
+const fmtN = n => n.toLocaleString('en-GB');
+const M = {
+  add: r => { const a = r.int(120, 4999), b = r.int(50, 2999); return Q('num', `${fmtN(a)} + ${fmtN(b)} = ?`, a + b, { hint: 'Line up ones, tens, hundreds… and carry when you pass 9.' }); },
+  sub: r => { const a = r.int(300, 9999), b = r.int(50, a - 20); return Q('num', `${fmtN(a)} − ${fmtN(b)} = ?`, a - b, { hint: 'Line up the digits. Exchange from the next column if you need to.' }); },
+  mul: r => r.next() < .55
+    ? (() => { const a = r.int(2, 12), b = r.int(2, 12); return Q('num', `${a} × ${b} = ?`, a * b, { hint: `Count in ${a}s, ${b} times.` }); })()
+    : (() => { const a = r.int(12, 99), b = r.int(3, 9); return Q('num', `${a} × ${b} = ?`, a * b, { hint: `Split it: ${Math.floor(a / 10) * 10} × ${b} + ${a % 10} × ${b}.` }); })(),
+  div: r => { const b = r.int(2, 12), q = r.int(2, 15); return Q('num', `${b * q} ÷ ${b} = ?`, q, { hint: `Which number × ${b} = ${b * q}?` }); },
+  fracOf: r => { const den = r.pick([2, 3, 4, 5, 6, 8, 10]), num = r.int(1, den - 1), whole = den * r.int(2, 10); return Q('num', `What is ${num}/${den} of ${whole}?`, whole / den * num, { hint: `First find 1/${den}: ${whole} ÷ ${den}. Then multiply by ${num}.` }); },
+  fracEq: r => { const den = r.pick([2, 3, 4, 5, 6]), num = r.int(1, den - 1), k = r.int(2, 5); return Q('num', `${num}/${den} = ?/${den * k}`, num * k, { hint: `The bottom was multiplied by ${k}. Do the same to the top!` }); },
+  fracAdd: r => { const den = r.pick([5, 6, 7, 8, 9, 10, 12]), a = r.int(1, den - 2), b = r.int(1, den - 1 - a); return Q('num', `${a}/${den} + ${b}/${den} = ?`, `${a + b}/${den}`, { hint: 'Same denominator: add the tops, keep the bottom.' }); },
+  fracCmp: r => { const opts = r.sample([[1, 2], [1, 3], [1, 4], [2, 3], [3, 4], [2, 5], [3, 5], [5, 8], [3, 10], [7, 10]], 4); const best = opts.reduce((m, f) => f[0] / f[1] > m[0] / m[1] ? f : m); return Q('mc', 'Which fraction is the biggest?', `${best[0]}/${best[1]}`, { options: opts.map(f => `${f[0]}/${f[1]}`), hint: 'Imagine each fraction as a slice of the same pizza.' }); },
+  decAdd: r => { const a = r.int(11, 999), b = r.int(11, 999); return Q('num', `${(a / 10).toFixed(1)} + ${(b / 10).toFixed(1)} = ?`, ((a + b) / 10).toFixed(1), { hint: 'Line up the decimal points.' }); },
+  decCmp: r => { const base = r.int(1, 9); const opts = r.shuffle([`0.${base}`, `0.${base}5`, `0.0${base}`, `0.${base}05`]); const best = opts.reduce((m, x) => Number(x) > Number(m) ? x : m); return Q('mc', 'Which decimal is the largest?', best, { options: opts, hint: 'Compare the tenths first, then the hundredths.' }); },
+  place: r => { let n, d, pos; do { n = r.int(10000, 999999); const s = String(n); pos = r.int(0, s.length - 1); d = s[pos]; if (d !== '0' && s.split(d).length === 2) break; } while (true); const val = Number(d) * 10 ** (String(n).length - 1 - pos); return Q('num', `What is the value of the digit ${d} in ${fmtN(n)}?`, val, { hint: 'Ones, tens, hundreds, thousands, ten thousands…' }); },
+  round: r => { const n = r.int(1000, 99999), to = r.pick([10, 100, 1000]); return Q('num', `Round ${fmtN(n)} to the nearest ${fmtN(to)}.`, Math.round(n / to) * to, { hint: 'Look at the digit to the right: 5 or more, round up.' }); },
+  perim: r => { const w = r.int(3, 20), h = r.int(2, 15); return Q('num', `A rectangle is ${w} cm long and ${h} cm wide. What is its perimeter (cm)?`, 2 * (w + h), { hint: 'Perimeter = add all 4 sides.' }); },
+  area: r => { const w = r.int(3, 15), h = r.int(2, 12); return Q('num', `A rectangle is ${w} cm long and ${h} cm wide. What is its area (cm²)?`, w * h, { hint: 'Area of a rectangle = length × width.' }); },
+  time: r => r.next() < .5
+    ? (() => { const h = r.int(1, 4), m = r.pick([5, 10, 15, 20, 30, 45]); return Q('num', `How many minutes are in ${h} hour${h > 1 ? 's' : ''} and ${m} minutes?`, h * 60 + m, { hint: '1 hour = 60 minutes.' }); })()
+    : (() => { const h = r.int(1, 10), m = r.pick([0, 15, 30, 45]), add = r.pick([15, 20, 30, 45, 50]); const t = h * 60 + m + add; const ans = `${Math.floor(t / 60)}:${pad2(t % 60)}`; return Q('short', `It is ${h}:${pad2(m)}. What time will it be in ${add} minutes? (h:mm)`, ans, { accept: [pad2(Math.floor(t / 60)) + ':' + pad2(t % 60)], hint: 'Count on to the next hour first.' }); })(),
+  money: r => { const p = r.int(105, 895); return Q('num', `You buy a book for £${(p / 100).toFixed(2)} and pay with a £10 note. How much change do you get (£)?`, ((1000 - p) / 100).toFixed(2), { hint: 'Count up from the price to £10.' }); },
+  factor: r => { const n = r.pick([12, 18, 20, 24, 30, 36, 40, 48]); const fs = []; for (let i = 2; i < n; i++) if (n % i === 0) fs.push(i); const non = []; for (let i = 2; i < n; i++) if (n % i) non.push(i); return mcQ(`Which number is a factor of ${n}?`, r.pick(fs), non, r, { hint: `A factor divides ${n} exactly, with nothing left over.` }); },
+  multiple: r => { const k = r.int(3, 9); const ans = k * r.int(3, 12); const non = []; for (let i = 10; i < 110; i++) if (i % k) non.push(i); return mcQ(`Which number is a multiple of ${k}?`, ans, non, r, { hint: `Count in ${k}s.` }); },
+  prime: r => { const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37], comp = [4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 21, 22, 25, 27, 33, 35]; return mcQ('Which of these is a prime number?', r.pick(primes), comp, r, { hint: 'A prime number has only 2 factors: 1 and itself.' }); },
+  square: r => { const n = r.int(2, 12); return Q('num', `What is ${n} squared (${n} × ${n})?`, n * n, { hint: `${n} rows of ${n}.` }); },
+  neg: r => { const a = -r.int(1, 9), b = r.int(3, 15); return Q('num', `The temperature is ${a}°C and it rises by ${b}°C. What is the new temperature?`, a + b, { hint: 'Use a number line: count up from the negative number.' }); },
+  word: r => {
+    const n = r.pick(NAMES);
+    return r.pick([
+      () => { const a = r.int(3, 9), b = r.int(6, 12); return Q('num', `A box holds ${b} pencils. How many pencils are in ${a} boxes?`, a * b, { hint: 'Equal groups → multiply.' }); },
+      () => { const a = r.int(40, 120), b = r.int(5, a - 5); return Q('num', `${n} has ${a} stickers and gives away ${b}. How many are left?`, a - b, { hint: 'Gives away → subtract.' }); },
+      () => { const b = r.int(3, 8), q = r.int(3, 9); return Q('num', `${b * q} children are split equally into ${b} teams. How many children are in each team?`, q, { hint: 'Split equally → divide.' }); },
+      () => { const a = r.int(20, 45), b = r.int(3, 12), c = r.int(2, 10); return Q('num', `A bus has ${a} passengers. At a stop, ${b} get off and ${c} get on. How many are on the bus now?`, a - b + c, { hint: 'Do it in two steps.' }); },
+      () => { const a = r.int(8, 25), d = r.int(3, 7); return Q('num', `${n} reads ${a} pages a day. How many pages does ${n} read in ${d} days?`, a * d, { hint: 'Every day the same amount → multiply.' }); },
+    ])();
+  },
+};
+const MATH_TOPICS = [
+  ['add', /add|soma|adi[cç]|plus|sum\b/], ['sub', /subtra|minus|take away/], ['mul', /multipl|times table|tabuada|\btimes\b/], ['div', /divi/],
+  ['fracOf', /fraction|fra[cç]/], ['fracEq', /fraction|fra[cç]|equivalent/], ['fracAdd', /fraction|fra[cç]/], ['fracCmp', /fraction|fra[cç]|compar/],
+  ['decAdd', /decimal/], ['decCmp', /decimal/], ['place', /place value|valor posicional|digit/], ['round', /round|arredond|estimat/],
+  ['perim', /perimet|per[ií]metro/], ['area', /\barea\b|[aá]rea/], ['time', /\btime(?!s)|clock|hora|minute/], ['money', /money|dinheiro|change|coins|£/],
+  ['factor', /factor|fator/], ['multiple', /multiple|m[uú]ltipl/], ['prime', /prime|primo/], ['square', /square|quadrad/], ['neg', /negativ/], ['word', /word problem|problem/],
+];
+function mathPool(subj, text, rng) {
+  const t = text.toLowerCase();
+  let keys = [...new Set(MATH_TOPICS.filter(([, re]) => re.test(t)).map(([k]) => k))];
+  if (!keys.length) keys = ['add', 'sub', 'mul', 'div', 'fracOf', 'word'];
+  const per = Math.max(6, Math.ceil(40 / keys.length));
+  const buckets = keys.map(k => { const seen = new Set(); const arr = []; let g = 0; while (arr.length < per && g++ < per * 4) { const q = M[k](rng); if (!seen.has(q.q)) { seen.add(q.q); arr.push(q); } } return arr; });
+  return { buckets };
+}
+
+/* ---------- Pool por matéria ---------- */
+function buildPool(subjId, rawText, seed, imported = []) {
+  const subj = SUBJ[subjId];
+  const rng = makeRng(seed + '|' + subjId);
+  const { facts, text } = parseTopic(rawText);
+  let res = { buckets: [] };
+  if (text.trim() || (subj.kind === 'math' && rawText.trim())) {
+    if (subj.kind === 'grammar') res = grammarPool(subj, text, rng);
+    else if (subj.kind === 'spelling') res = spellingPool(subj, text, rng);
+    else if (subj.kind === 'reading') res = readingPool(subj, text, rng, false);
+    else if (subj.kind === 'guided') res = readingPool(subj, text, rng, true);
+    else if (subj.kind === 'social') res = socialPool(subj, text, rng);
+    else if (subj.kind === 'math') res = mathPool(subj, text, rng);
+  }
+  const base = interleave([rng.shuffle(factQuestions(facts, subj, rng)), ...res.buckets]);
+  const imp = imported.filter(q => q.subject === subjId);
+  const all = [...imp, ...base].map(q => Object.assign({ subject: subjId, lang: subj.lang }, q));
+  // remove duplicadas
+  const seen = new Set();
+  return all.filter(q => { const k = q.type + '|' + q.q; if (seen.has(k)) return false; seen.add(k); return true; });
+}
+
+/* ---------- Importação de perguntas (JSON gerado pelo Claude ou pelos pais) ---------- */
+function validateImported(data) {
+  const arr = Array.isArray(data) ? data : (data && Array.isArray(data.questions) ? data.questions : null);
+  if (!arr) throw new Error('O JSON precisa ter uma lista "questions".');
+  const ok = []; const errs = [];
+  arr.forEach((q, i) => {
+    const subject = String(q.subject || '').trim();
+    const type = String(q.type || '').trim();
+    if (!SUBJ[subject]) { errs.push(`#${i + 1}: matéria "${subject}" desconhecida`); return; }
+    if (!['mc', 'short', 'num', 'open', 'listen'].includes(type)) { errs.push(`#${i + 1}: tipo "${type}" inválido`); return; }
+    if (!q.q && type !== 'listen') { errs.push(`#${i + 1}: falta o texto "q"`); return; }
+    const item = { subject, type, q: String(q.q || (SUBJ[subject].lang === 'pt' ? 'Ouça a palavra e escreva:' : 'Listen and write the word:')), answer: String(q.answer ?? ''), hint: q.hint ? String(q.hint) : '' , src: 'import' };
+    if (type === 'mc') {
+      if (!Array.isArray(q.options) || q.options.length < 2) { errs.push(`#${i + 1}: múltipla escolha precisa de "options"`); return; }
+      item.options = q.options.map(String);
+      if (!item.options.some(o => norm(o) === norm(item.answer))) { errs.push(`#${i + 1}: a resposta não está entre as opções`); return; }
+    }
+    if (type === 'listen') item.say = String(q.say || q.answer || '');
+    if (Array.isArray(q.accept)) item.accept = q.accept.map(String);
+    if (q.strict) item.strict = true;
+    if (q.day && CYCLE.includes(String(q.day))) item.day = String(q.day);
+    ok.push(item);
+  });
+  return { ok, errs };
+}
+function claudePrompt(topics) {
+  const lines = SUBJECTS.map(s => `- ${s.id} (${s.name}, ${s.lang === 'pt' ? 'em português' : 'in English'}): ${(topics[s.id] || '').trim().replace(/\n/g, ' / ') || '(sem tópico esta semana)'}`).join('\n');
+  return `Você gera exercícios para uma aluna de escola internacional (currículo britânico/IPC + matérias brasileiras), por volta de 10 anos.
+Use os tópicos abaixo (e o "Study Worksheet" da escola, se eu colar no final) para criar perguntas CURTAS e SIMPLES.
+Regra: prefira muitas perguntas fáceis a poucas difíceis. Gere cerca de 6 perguntas por matéria que tenha tópico.
+Matérias em português: perguntas em português. Matérias em inglês: perguntas em inglês.
+
+Responda APENAS com JSON válido, sem comentários, neste formato:
+{"questions":[
+ {"subject":"math","type":"num","q":"7 × 8 = ?","answer":"56","hint":"7 × 8 = 7 × 4 × 2"},
+ {"subject":"pt","type":"mc","q":"Qual é o antônimo de 'alto'?","options":["baixo","grande","forte","feliz"],"answer":"baixo","hint":"Antônimo é o contrário."},
+ {"subject":"en_spell","type":"listen","say":"because","answer":"because","hint":"It starts with b."},
+ {"subject":"ipc","type":"open","q":"Write 3 facts about the Solar System.","answer":""}
+]}
+
+Campos:
+- subject: pt, pt_ort, pt_leit, bss, en, en_read, en_spell, en_guided, ipc, math
+- type: mc (múltipla escolha: "options" com 3–4 itens e "answer" igual a uma delas), short (resposta curta exata), num (resposta numérica), listen (ditado: "say" = palavra), open (resposta livre, "answer" vazio — os pais corrigem)
+- hint: uma dica curta, sem entregar a resposta
+- day (opcional): sab, dom, seg, ter, qua, qui, sex
+- No máximo 1 em cada 4 perguntas pode ser "open".
+
+Tópicos da semana:
+${lines}
+
+Study Worksheet (cole aqui, se tiver):
+`;
+}
+
+/* =========================================================================
+   6. SEMANA — planejamento, distribuição, entrega e penalidade
+   ========================================================================= */
+function createWeek(startDate, fromDate, topics, counts, imported) {
+  const end = addDays(startDate, 6);
+  const week = { id: startDate + '-' + uid(), start: startDate, end, created: today(), topics, counts, imported: imported || [], days: {}, settled: null, settledAt: null };
+  CYCLE.forEach((dk, i) => {
+    const date = addDays(startDate, i);
+    week.days[date] = { date, dow: dk, required: date >= fromDate && (counts[dk] || 0) > 0, n: counts[dk] || 0, questions: [], answers: {}, status: 'todo', marks: {}, result: null };
+  });
+  regenerateDays(week, Object.keys(week.days));
+  return week;
+}
+function activeSubjects(week) {
+  return SUBJECTS.filter(s => (week.topics[s.id] || '').trim() || (week.imported || []).some(q => q.subject === s.id)).map(s => s.id);
+}
+// (Re)gera as perguntas dos dias indicados que ainda não foram começados.
+function regenerateDays(week, dates, nonce = '') {
+  const act = activeSubjects(week);
+  const usedElsewhere = new Set();
+  Object.values(week.days).forEach(d => { if (!dates.includes(d.date)) d.questions.forEach(q => usedElsewhere.add(q.type + '|' + q.q)); });
+  const pools = {};
+  act.forEach(id => {
+    pools[id] = buildPool(id, week.topics[id] || '', week.id + nonce, (week.imported || []).filter(q => !q.day)).filter(q => !usedElsewhere.has(q.type + '|' + q.q));
+  });
+  const order = CYCLE.map((_, i) => addDays(week.start, i)).filter(d => dates.includes(d));
+  order.forEach(date => {
+    const day = week.days[date];
+    if (!day.required) { day.questions = []; return; }
+    const cycleIdx = CYCLE.indexOf(day.dow);
+    const N = day.n;
+    const qs = [];
+    // perguntas importadas marcadas para este dia vêm primeiro
+    (week.imported || []).filter(q => q.day === day.dow).forEach(q => { if (qs.length < N) qs.push(Object.assign({ lang: SUBJ[q.subject].lang }, q)); });
+    if (act.length) {
+      const k = Math.min(act.length, N >= 9 ? 4 : 3);
+      const start = (cycleIdx * k) % act.length;
+      let daySubj = Array.from({ length: k }, (_, j) => act[(start + j) % act.length]);
+      const openCap = Math.max(2, Math.ceil(N * 0.3));
+      let openCount = qs.filter(q => q.type === 'open').length;
+      let i = 0, stall = 0;
+      while (qs.length < N && stall < act.length * 3) {
+        const sid = daySubj[i % daySubj.length]; i++;
+        const pool = pools[sid];
+        if (!pool || !pool.length) {
+          stall++;
+          if (stall >= daySubj.length) { const extra = act.filter(a => !daySubj.includes(a) && pools[a] && pools[a].length); if (extra.length) { daySubj = daySubj.concat(extra.slice(0, 1)); stall = 0; } }
+          continue;
+        }
+        let idx = 0;
+        if (openCount >= openCap) { idx = pool.findIndex(q => q.type !== 'open'); if (idx < 0) { stall++; continue; } }
+        const q = pool.splice(idx, 1)[0];
+        if (q.type === 'open') openCount++;
+        qs.push(q); stall = 0;
+      }
+    }
+    // agrupa por matéria para a folha ficar organizada
+    const ordered = qs.sort((a, b) => SUBJECTS.findIndex(s => s.id === a.subject) - SUBJECTS.findIndex(s => s.id === b.subject));
+    day.questions = ordered.map((q, j) => Object.assign({}, q, { id: `${date}-${j}-${uid()}` }));
+    day.answers = {}; day.status = 'todo'; day.result = null; day.marks = {};
+  });
+}
+function dayStarted(day) { return Object.values(day.answers || {}).some(v => v != null && String(v).trim() !== ''); }
+function dayState(day) {
+  const t = today();
+  if (!day.required) return 'off';
+  if (day.status === 'done') return 'done';
+  if (day.date > t) return 'locked';
+  if (day.date === t) return 'today';
+  return 'late';
+}
+function weekAllDone(w) { return Object.values(w.days).filter(d => d.required).every(d => d.status === 'done'); }
+function requiredDays(w) { return Object.values(w.days).filter(d => d.required); }
+
+// Liquidação: roda ao abrir o app. Depois da sexta, recompensa ou penalidade.
+function settleIfNeeded() {
+  const w = S.week;
+  if (!w || w.settled) return null;
+  if (today() <= w.end) return null;
+  const done = requiredDays(w).filter(d => d.status === 'done').length;
+  const total = requiredDays(w).length;
+  if (total === 0) { w.settled = 'empty'; save(); return null; }
+  if (done === total) {
+    w.settled = 'delivered'; w.settledAt = today();
+    addCoins(S.settings.reward, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue`);
+    return { type: 'good', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} estava completa: <b>+${S.settings.reward}</b> 🪙!` };
+  }
+  w.settled = 'missed'; w.settledAt = today();
+  addCoins(-S.settings.penalty, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} não entregue (${done}/${total} dias)`);
+  return { type: 'bad', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} não foi entregue (${done} de ${total} dias). <b>−${S.settings.penalty}</b> 🪙. Bora recuperar nesta semana!` };
+}
+function deliverWeek() {
+  const w = S.week;
+  if (!w || w.settled || !weekAllDone(w) || today() !== w.end) return;
+  w.settled = 'delivered'; w.settledAt = today();
+  addCoins(S.settings.reward, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue`);
+  save();
+  showCelebrate('Semana entregue! 🎉', `+${S.settings.reward}`, 'Você completou todas as tarefas da semana. Que orgulho!');
+}
+function archiveWeek(w) {
+  if (!w) return;
+  const req = requiredDays(w);
+  S.history.unshift({ start: w.start, end: w.end, settled: w.settled, done: req.filter(d => d.status === 'done').length, total: req.length });
+  S.history = S.history.slice(0, 52);
+}
+
+/* =========================================================================
+   7. TELAS
+   ========================================================================= */
+let currentScreen = 'home';
+const VIEW = { setupTab: 'pt', setupCycle: null, shopCat: 'hat', parentTab: 'review', parentsUnlocked: false, work: null };
+
+function show(screen) {
+  currentScreen = screen;
+  $$('.screen').forEach(s => s.classList.toggle('active', s.id === 'scr-' + screen));
+  $$('.top-nav button').forEach(b => b.classList.toggle('active', b.dataset.nav === screen));
+  const titles = { welcome: 'Bem-vinda!', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', shop: '🛒 Lojinha', parents: '🔒 Área dos pais' };
+  $('#top-title').textContent = titles[screen] || 'Estudos';
+  hideBubble();
+  ({ welcome: renderWelcome, home: renderHome, setup: renderSetup, work: renderWork, shop: renderShop, parents: renderParents })[screen]();
+}
+function renderCoins(pop) {
+  $('#coin-count').textContent = S.coins;
+  const pill = $('#coin-pill');
+  pill.classList.toggle('negative', S.coins < 0);
+  if (pop) { pill.classList.remove('pop'); void pill.offsetWidth; pill.classList.add('pop'); }
+}
+function applyTheme() {
+  const item = SHOP_ITEMS.find(i => i.id === S.equipped.bg);
+  document.body.className = item ? item.theme : 'theme-default';
+}
+
+/* ---------- Modais e avisos ---------- */
+function openModal(html, { wide = false, onClose } = {}) {
+  const m = $('#modal'), c = $('#modal-card');
+  c.className = 'modal-card' + (wide ? ' wide' : '');
+  c.innerHTML = html;
+  m.classList.remove('hidden');
+  m.onclick = e => { if (e.target === m) closeModal(); };
+  m._onClose = onClose;
+  $$('[data-close]', c).forEach(b => b.onclick = closeModal);
+  return c;
+}
+function closeModal() { const m = $('#modal'); m.classList.add('hidden'); if (m._onClose) { const f = m._onClose; m._onClose = null; f(); } }
+function confirmBox(title, text, okLabel = 'Confirmar', danger = false) {
+  return new Promise(res => {
+    const c = openModal(`<div class="modal-head"><h3>${title}</h3></div><div class="modal-body"><p>${text}</p></div>
+      <div class="modal-foot"><button class="btn" data-no>Cancelar</button><button class="btn ${danger ? 'danger' : 'primary'}" data-yes>${okLabel}</button></div>`, { onClose: () => res(false) });
+    $('[data-no]', c).onclick = () => closeModal();
+    $('[data-yes]', c).onclick = () => { $('#modal')._onClose = null; closeModal(); res(true); };
+  });
+}
+let toastTimer = null;
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.remove('hidden'); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.add('hidden'), 2600); }
+function showCelebrate(title, big, text, mood = 'wow') {
+  openModal(`<div class="modal-body celebrate"><div class="owl-big">${mascotSVG(S.equipped, mood)}</div><h3 style="margin:4px 0">${title}</h3>
+    ${big ? `<div class="big-num">${big} 🪙</div>` : ''}<p>${text}</p></div><div class="modal-foot" style="justify-content:center"><button class="btn primary big" data-close>Oba!</button></div>`);
+}
+
+/* ---------- Boas-vindas ---------- */
+function renderWelcome() {
+  const el = $('#scr-welcome');
+  el.innerHTML = `<div class="welcome"><div class="owl-big">${mascotSVG(S.equipped, 'wow')}</div>
+    <h1>Oi! Eu sou a ${MASCOT_NAME} 🦉</h1><p class="muted">Vou ser sua parceira de estudos. Como você se chama?</p>
+    <input id="w-name" maxlength="24" placeholder="Seu nome" autocomplete="off">
+    <button class="btn primary big wide" id="w-go">Vamos começar!</button></div>`;
+  const go = () => { const n = $('#w-name').value.trim(); if (!n) { $('#w-name').focus(); return; } S.name = n; save(); show('home'); if (!S.tourDone) setTimeout(runTour, 350); };
+  $('#w-go').onclick = go;
+  $('#w-name').onkeydown = e => { if (e.key === 'Enter') go(); };
+}
+
+/* ---------- Início ---------- */
+function renderHome() {
+  const el = $('#scr-home');
+  const w = S.week;
+  const t = today();
+  const settled = settleIfNeeded();
+  if (settled) VIEW.homeNotice = settled;
+  const notice = VIEW.homeNotice; VIEW.homeNotice = null;
+  let body = '';
+  const hero = `<div class="card home-hero span2"><div class="owl-big">${mascotSVG(S.equipped)}</div>
+    <div class="grow"><p class="home-hello">Oi, ${esc(S.name)}! 👋</p>${w ? deadlineText(w) : '<div class="deadline">Vamos planejar a sua semana?</div>'}</div></div>`;
+  const noticeHtml = notice ? `<div class="notice ${notice.type} span2">${notice.msg}</div>` : '';
+
+  if (!w || (w.settled && w.end < t)) {
+    body = `<div class="card span2"><h3 style="margin:0 0 6px">📝 Nova semana</h3>
+      <p class="muted" style="margin:0 0 10px">Escreva o que você está aprendendo na escola e eu crio as tarefas de sábado a sexta.</p>
+      <button class="btn primary big wide" data-act="setup">Planejar minha semana ✨</button></div>`;
+  } else {
+    const days = CYCLE.map((_, i) => w.days[addDays(w.start, i)]);
+    const strip = days.map(d => {
+      const st = dayState(d);
+      const icon = { done: '✅', today: '📘', late: '⏰', locked: '🔒', off: '–' }[st];
+      const isT = d.date === t;
+      return `<button class="day-chip ${st} ${isT ? 'today' : ''} ${['sab', 'dom'].includes(d.dow) ? 'weekend' : ''}" data-day="${d.date}" ${st === 'off' || st === 'locked' ? 'aria-disabled="true"' : ''}>
+        <span class="d">${DOW_LABEL[d.dow]}</span><span class="dt">${fmtDM(d.date)}</span><span class="st">${icon}</span><span class="n">${d.required ? d.questions.length + ' perg.' : ''}</span></button>`;
+    }).join('');
+    const late = days.filter(d => dayState(d) === 'late');
+    const td = w.days[t];
+    let main = '';
+    if (w.settled === 'delivered') main = `<div class="notice good">🎉 Semana entregue! Quer adiantar a próxima?</div><button class="btn primary big wide" data-act="setup-next">Planejar a próxima semana</button>`;
+    else if (w.settled === 'missed') main = `<button class="btn primary big wide" data-act="setup">Planejar nova semana</button>`;
+    else if (late.length) main = `<button class="btn primary big wide" data-day="${late[0].date}">⏰ Fazer tarefa atrasada (${DOW_LABEL[late[0].dow]})</button>`;
+    else if (td && dayState(td) === 'today') main = `<button class="btn primary big wide" data-day="${t}">📘 Abrir a tarefa de hoje (${td.questions.length} perguntas)</button>`;
+    else if (weekAllDone(w) && t === w.end) main = `<button class="btn gold big wide" data-act="deliver">🎁 Entregar a semana (+${S.settings.reward} 🪙)</button>`;
+    else if (td && td.status === 'done') main = `<div class="notice good">✅ Tarefa de hoje feita! Que tal uns extras?</div>`;
+    else main = `<div class="notice info">Nenhuma tarefa para hoje. Aproveite para fazer extras!</div>`;
+    if (weekAllDone(w) && t === w.end && !w.settled && !main.includes('deliver')) main += `<button class="btn gold big wide" data-act="deliver">🎁 Entregar a semana (+${S.settings.reward} 🪙)</button>`;
+
+    const ex = S.extras[t] || { sets: 0 };
+    const left = Math.max(0, S.settings.extraSetsPerDay - ex.sets);
+    body = `<div class="card span2"><div class="week-strip">${strip}</div></div>
+      <div class="card actions">${main}</div>
+      <div class="card actions">
+        <button class="btn gold wide" data-act="extra">⭐ Exercícios extras ${left ? `(+${S.settings.extraPerCorrect} 🪙/acerto · ${left} hoje)` : '(sem moedas hoje)'}</button>
+        <div class="actions-2"><button class="btn" data-act="setup">📝 Minha semana</button><button class="btn" data-act="shop">🛒 Lojinha</button></div>
+      </div>`;
+  }
+  const stickers = S.owned.map(id => SHOP_ITEMS.find(i => i.id === id)).filter(i => i && i.cat === 'sticker');
+  const shelf = `<div class="card span2"><div class="row"><b>Meu álbum</b><span class="muted tiny grow">adesivos da lojinha</span></div>
+    <div class="sticker-shelf">${stickers.length ? stickers.map(s => `<span title="Adesivo">${s.emoji}</span>`).join('') : '<span class="empty">Ainda vazio — compre adesivos na lojinha! ⭐</span>'}</div></div>`;
+  el.innerHTML = `<div class="home">${hero}${noticeHtml}${body}${shelf}</div>`;
+
+  $$('[data-day]', el).forEach(b => b.onclick = () => openDay(b.dataset.day));
+  $$('[data-act]', el).forEach(b => b.onclick = () => {
+    const a = b.dataset.act;
+    if (a === 'setup') { VIEW.setupCycle = null; show('setup'); }
+    else if (a === 'setup-next') { VIEW.setupCycle = 'next'; show('setup'); }
+    else if (a === 'extra') openExtras();
+    else if (a === 'shop') show('shop');
+    else if (a === 'deliver') deliverWeek();
+  });
+  if (notice) say(notice.msg, { mood: notice.type === 'bad' ? 'sad' : 'wow' });
+}
+function deadlineText(w) {
+  const t = today();
+  if (w.settled === 'delivered') return `<div class="deadline">Semana ${fmtDM(w.start)}–${fmtDM(w.end)}: <b>entregue ✔</b></div>`;
+  if (w.settled === 'missed') return `<div class="deadline">A última semana não foi entregue.</div>`;
+  const left = daysBetween(t, w.end);
+  const req = requiredDays(w);
+  const done = req.filter(d => d.status === 'done').length;
+  return `<div class="deadline">Entrega: <b>sexta ${fmtDM(w.end)}</b> · ${left === 0 ? '<b>é hoje!</b>' : `faltam ${left} dia${left > 1 ? 's' : ''}`} · ${done}/${req.length} dias feitos</div>`;
+}
+function openDay(date) {
+  const w = S.week; if (!w) return;
+  const d = w.days[date]; if (!d) return;
+  const st = dayState(d);
+  if (st === 'off') { say('Esse dia não tem tarefa nesta semana. 😉'); return; }
+  if (st === 'locked') { say(`Calma! A tarefa de ${DOW_FULL[d.dow].toLowerCase()} abre no dia ${fmtDM(d.date)}. 🔒`); return; }
+  VIEW.work = { kind: 'day', date };
+  show('work');
+}
+function openExtras() {
+  const t = today();
+  if (S.extra && S.extra.date === t && S.extra.status !== 'done') { VIEW.work = { kind: 'extra' }; show('work'); return; }
+  const ex = S.extras[t] || { sets: 0 };
+  const paid = ex.sets < S.settings.extraSetsPerDay;
+  const topics = S.week ? S.week.topics : S.lastTopics;
+  let act = SUBJECTS.filter(s => (topics[s.id] || '').trim()).map(s => s.id);
+  const fallback = !act.length;
+  const tp = fallback ? { math: 'mixed', pt: 'revisão', en: 'review' } : topics;
+  if (fallback) act = ['math', 'pt', 'en'];
+  const rng = makeRng('extra|' + t + '|' + ex.sets + '|' + uid());
+  const pools = act.map(id => buildPool(id, tp[id] || '', 'x' + t + ex.sets + uid(), []).filter(q => q.type !== 'open'));
+  const qs = []; let i = 0, g = 0;
+  const order = rng.shuffle(pools.map((_, j) => j));
+  while (qs.length < S.settings.extraSetSize && g++ < 200) { const p = pools[order[i++ % order.length]]; if (p.length) qs.push(p.splice(rng.int(0, Math.min(5, p.length - 1)), 1)[0]); }
+  if (!qs.length) { say('Não consegui criar extras agora. Escreva tópicos em Minha semana! 📝'); return; }
+  S.extra = { date: t, paid, status: 'todo', questions: qs.map((q, j) => Object.assign({}, q, { id: `x-${j}-${uid()}` })), answers: {}, result: null };
+  save();
+  VIEW.work = { kind: 'extra' };
+  show('work');
+  if (!paid) setTimeout(() => say('Você já usou as rodadas com moedas de hoje. Esta é só para treinar! 💪'), 300);
+}
+
+/* ---------- Minha semana (input semanal) ---------- */
+function renderSetup() {
+  const el = $('#scr-setup');
+  const t = today();
+  const w = S.week;
+  const editing = w && !w.settled && VIEW.setupCycle !== 'next';
+  const thisStart = cycleStartOf(t);
+  const nextStart = addDays(thisStart, 7);
+  if (!editing && !VIEW.setupCycle) VIEW.setupCycle = (w && w.settled === 'delivered' && w.start === thisStart) ? 'next' : ['qui', 'sex'].includes(dowOf(t)) ? 'next' : 'this';
+  if (w && w.settled === 'delivered' && w.start === thisStart) VIEW.setupCycle = 'next';
+  const topics = VIEW.draftTopics || (editing ? w.topics : Object.assign({}, S.lastTopics));
+  const counts = VIEW.draftCounts || (editing ? Object.assign({}, w.counts) : Object.assign({}, S.settings.counts));
+  VIEW.draftTopics = topics; VIEW.draftCounts = counts;
+  const subs = SUBJECTS.filter(s => s.group === VIEW.setupTab);
+  const fields = subs.map(s => `<div class="topic" style="--subj:${s.color}"><label for="tp-${s.id}">${s.icon} ${esc(s.name)}<span class="help">${esc(s.help)}</span></label>
+      <textarea id="tp-${s.id}" data-sid="${s.id}" placeholder="${esc(s.ph)}">${esc(topics[s.id] || '')}</textarea></div>`).join('');
+  const countBoxes = CYCLE.map(dk => {
+    const lockedDay = editing && (() => { const d = Object.values(w.days).find(x => x.dow === dk); return d && (d.status === 'done' || dayStarted(d) || d.date < t); })();
+    return `<div class="count-box"><div class="lbl">${DOW_LABEL[dk]}${['sab', 'dom'].includes(dk) ? ' ★' : ''}</div><div class="val">${counts[dk]}</div>
+      <div class="pm"><button data-c="${dk}" data-d="-1" ${lockedDay ? 'disabled' : ''} aria-label="menos">−</button><button data-c="${dk}" data-d="1" ${lockedDay ? 'disabled' : ''} aria-label="mais">+</button></div></div>`;
+  }).join('');
+  const cycleChoice = editing
+    ? `<div class="notice info">Editando a semana ${fmtDM(w.start)}–${fmtDM(w.end)}. Só os dias <b>ainda não começados</b> serão refeitos.</div>`
+    : `<div class="radio-row">
+        <label><input type="radio" name="cyc" value="this" ${VIEW.setupCycle === 'this' ? 'checked' : ''} ${(w && w.start === thisStart && w.settled) ? 'disabled' : ''}> Esta semana (hoje → sex ${fmtDM(addDays(thisStart, 6))})</label>
+        <label><input type="radio" name="cyc" value="next" ${VIEW.setupCycle === 'next' ? 'checked' : ''}> Próxima semana (sáb ${fmtDM(nextStart)} → sex ${fmtDM(addDays(nextStart, 6))})</label></div>`;
+  const pending = (S.pendingImport || []).length;
+  el.innerHTML = `<div class="setup">
+    <div class="row wrap"><div class="seg"><button data-tab="pt" class="${VIEW.setupTab === 'pt' ? 'on' : ''}">🇧🇷 Em português</button><button data-tab="en" class="${VIEW.setupTab === 'en' ? 'on' : ''}">🇬🇧 In English</button></div>
+      <span class="muted tiny grow">O que você aprendeu na escola esta semana?</span></div>
+    <div class="topic-grid">${fields}</div>
+    <div><b>Perguntas por dia</b> <span class="muted tiny">(mín. ${S.settings.minPerDay}, máx. ${S.settings.maxPerDay} · fim de semana ★ um pouco mais)</span></div>
+    <div class="counts">${countBoxes}</div>
+    ${cycleChoice}
+    ${pending ? `<div class="notice info">📥 ${pending} perguntas importadas pelos pais serão incluídas.</div>` : ''}
+    <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? 'Atualizar tarefas ✨' : 'Criar tarefas da semana ✨'}</button></div>
+  </div>`;
+  $$('[data-tab]', el).forEach(b => b.onclick = () => { collectDraft(); VIEW.setupTab = b.dataset.tab; renderSetup(); });
+  $$('textarea[data-sid]', el).forEach(ta => ta.oninput = () => { VIEW.draftTopics[ta.dataset.sid] = ta.value; });
+  $$('[data-c]', el).forEach(b => b.onclick = () => {
+    const dk = b.dataset.c; const v = clamp((counts[dk] || 0) + Number(b.dataset.d), 0, S.settings.maxPerDay);
+    counts[dk] = v > 0 && v < S.settings.minPerDay ? (Number(b.dataset.d) > 0 ? S.settings.minPerDay : 0) : v;
+    collectDraft(); renderSetup();
+  });
+  $$('input[name=cyc]', el).forEach(r => r.onchange = () => { VIEW.setupCycle = r.value; });
+  $('[data-act=cancel]', el).onclick = () => { VIEW.draftTopics = null; VIEW.draftCounts = null; show('home'); };
+  $('[data-act=gen]', el).onclick = () => generateFromSetup(editing);
+}
+function collectDraft() { $$('#scr-setup textarea[data-sid]').forEach(ta => { VIEW.draftTopics[ta.dataset.sid] = ta.value; }); }
+async function generateFromSetup(editing) {
+  collectDraft();
+  const topics = {}; SUBJECTS.forEach(s => { topics[s.id] = (VIEW.draftTopics[s.id] || '').trim(); });
+  const counts = Object.assign({}, VIEW.draftCounts);
+  const hasAny = Object.values(topics).some(Boolean) || (S.pendingImport || []).length || (editing && (S.week.imported || []).length);
+  if (!hasAny) { say('Escreva pelo menos uma matéria para eu criar as tarefas! ✍️'); return; }
+  const t = today();
+  if (editing) {
+    const w = S.week;
+    w.topics = topics;
+    if ((S.pendingImport || []).length) { w.imported = (w.imported || []).concat(S.pendingImport); S.pendingImport = []; }
+    const redo = Object.values(w.days).filter(d => d.status !== 'done' && !dayStarted(d) && d.date >= t).map(d => d.date);
+    redo.forEach(date => { const d = w.days[date]; d.n = counts[d.dow]; d.required = (d.n || 0) > 0 && date >= (w.created > w.start ? w.created : w.start); });
+    w.counts = counts;
+    regenerateDays(w, redo, '|' + uid());
+  } else {
+    if (S.week) archiveWeek(S.week);
+    const thisStart = cycleStartOf(t);
+    const start = VIEW.setupCycle === 'next' ? addDays(thisStart, 7) : thisStart;
+    const from = VIEW.setupCycle === 'next' ? start : t;
+    S.week = createWeek(start, from, topics, counts, S.pendingImport || []);
+    S.pendingImport = [];
+  }
+  S.lastTopics = topics;
+  VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.setupCycle = null;
+  save();
+  const total = requiredDays(S.week).reduce((a, d) => a + d.questions.length, 0);
+  show('home');
+  say(`Pronto! Criei <b>${total}</b> perguntas para a semana. 🎉 ${S.week.start > t ? `Elas começam no sábado ${fmtDM(S.week.start)}.` : 'Vamos começar pela de hoje?'}`, { mood: 'wow' });
+}
+
+/* ---------- Folha de exercícios (dia ou extras) — SEM ROLAGEM ---------- */
+function workCtx() {
+  const v = VIEW.work;
+  if (!v) return null;
+  if (v.kind === 'extra') {
+    const x = S.extra; if (!x) return null;
+    return { kind: 'extra', title: '⭐ Exercícios extras', obj: x, questions: x.questions, answers: x.answers, done: x.status === 'done', marks: {} };
+  }
+  const d = S.week && S.week.days[v.date]; if (!d) return null;
+  return { kind: 'day', title: `${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, obj: d, questions: d.questions, answers: d.answers, done: d.status === 'done', marks: d.marks || {} };
+}
+function renderWork() {
+  const el = $('#scr-work');
+  const c = workCtx();
+  if (!c) { show('home'); return; }
+  $('#top-title').textContent = c.kind === 'extra' ? '⭐ Extras' : `📘 ${c.title}`;
+  const canQty = c.kind === 'day' && !c.done && !dayStarted(c.obj);
+  const cards = c.questions.map((q, i) => questionCard(q, i, c)).join('');
+  el.innerHTML = `<div class="work">
+    <div class="work-head">
+      <h2>${esc(c.title)}</h2>
+      <div class="progress" aria-hidden="true"><i id="prog-bar"></i></div><span class="prog-txt" id="prog-txt"></span>
+      ${canQty ? `<span class="qty" title="Quantas perguntas hoje?"><button data-qty="-1" aria-label="menos perguntas">−</button><span>${c.questions.length}</span><button data-qty="1" aria-label="mais perguntas">+</button></span>` : ''}
+    </div>
+    <div class="sheet" id="sheet">${cards}</div>
+    <div class="work-foot">
+      <button class="btn" data-act="back">◂ Voltar</button>
+      <button class="btn" data-act="key">🔑 Gabarito</button>
+      ${c.done ? '' : '<button class="btn primary" data-act="finish">✔ Concluir</button>'}
+    </div></div>`;
+  bindWork(el, c);
+  updateProgress(c);
+  requestAnimationFrame(() => fitGrid($('#sheet')));
+}
+function questionCard(q, i, c) {
+  const s = SUBJ[q.subject] || { color: '#7b5cf0', icon: '❓', short: '' };
+  const ans = c.answers[q.id];
+  let control = '';
+  const dis = c.done ? 'disabled' : '';
+  if (q.type === 'mc') control = `<div class="opts">${q.options.map(o => `<button type="button" class="opt ${ans != null && norm(ans, true) === norm(o, true) ? 'sel' : ''}" data-opt="${esc(o)}" ${dis}>${esc(o)}</button>`).join('')}</div>`;
+  else if (q.type === 'open') control = `<textarea data-in placeholder="${q.lang === 'pt' ? 'Sua resposta…' : 'Your answer…'}" ${dis}>${esc(ans || '')}</textarea>`;
+  else control = `<input type="text" data-in ${q.type === 'num' ? 'inputmode="decimal"' : ''} autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(ans || '')}" placeholder="${q.lang === 'pt' ? 'Resposta' : 'Answer'}" ${dis}>`;
+  let stateCls = '', mark = '', expected = '';
+  if (c.done) {
+    const ok = isCorrect(q, ans);
+    if (ok === true) { stateCls = 'state-ok'; mark = '✓'; }
+    else if (ok === false) { stateCls = 'state-bad'; mark = '✗'; expected = `<div class="expected">${q.lang === 'pt' ? 'Resposta' : 'Answer'}: ${esc(q.answer)}</div>`; }
+    else { const pm = c.marks[q.id]; mark = pm === 'ok' ? '✓ pais' : pm === 'no' ? '↺ pais' : '📝'; if (pm === 'ok') stateCls = 'state-ok'; }
+  }
+  return `<div class="q ${stateCls}" style="--subj:${s.color}" data-qid="${q.id}">
+    <div class="q-top"><span class="q-num">${i + 1}</span>
+      <div class="q-text"><span class="q-subj">${s.icon} ${esc(s.short)}</span>${esc(q.q)}</div>
+      <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Ouvir">🔊</button>` : ''}<button type="button" data-hint title="Dica">💡</button></div>
+    </div>${control}${expected}${mark ? `<span class="mark">${mark}</span>` : ''}</div>`;
+}
+function bindWork(el, c) {
+  $$('.q', el).forEach(card => {
+    const q = c.questions.find(x => x.id === card.dataset.qid);
+    $$('.opt', card).forEach(b => b.onclick = () => {
+      if (c.done) return;
+      c.answers[q.id] = b.dataset.opt;
+      $$('.opt', card).forEach(x => x.classList.toggle('sel', x === b));
+      saveSoon(); updateProgress(c);
+    });
+    const inp = $('[data-in]', card);
+    if (inp) inp.oninput = () => { c.answers[q.id] = inp.value; saveSoon(); updateProgress(c); };
+    const h = $('[data-hint]', card);
+    if (h) h.onclick = () => say(`💡 ${esc(q.hint || (q.lang === 'pt' ? 'Leia a pergunta de novo, com calma. Você consegue!' : 'Read the question again slowly. You can do it!'))}`, { mood: 'think' });
+    const sp = $('[data-say]', card);
+    if (sp) sp.onclick = () => speak(q.say || q.answer, q.lang);
+  });
+  $$('[data-qty]', el).forEach(b => b.onclick = () => {
+    const d = c.obj; const n = clamp(d.questions.length + Number(b.dataset.qty), S.settings.minPerDay, S.settings.maxPerDay);
+    if (n === d.questions.length) { say(`O mínimo é ${S.settings.minPerDay} e o máximo é ${S.settings.maxPerDay} perguntas por dia.`); return; }
+    d.n = n; regenerateDays(S.week, [d.date], '|' + uid()); save(); renderWork();
+  });
+  $('[data-act=back]', el).onclick = () => { save(); show('home'); };
+  $('[data-act=key]', el).onclick = () => openGabarito(c);
+  const fin = $('[data-act=finish]', el);
+  if (fin) fin.onclick = () => finishWork(c);
+}
+function updateProgress(c) {
+  const n = c.questions.length;
+  const a = c.questions.filter(q => answered(q, c.answers[q.id])).length;
+  const bar = $('#prog-bar'); if (bar) bar.style.width = (n ? a / n * 100 : 0) + '%';
+  const tx = $('#prog-txt'); if (tx) tx.textContent = `${a}/${n}`;
+}
+// Ajusta fonte e colunas até tudo caber na tela (sem rolagem).
+function fitGrid(grid, opts = {}) {
+  if (!grid) return true;
+  const { min = 11, max = 17, step = 0.5, colMin = 250, maxCols = 3 } = opts;
+  const n = grid.children.length || 1;
+  const W = grid.clientWidth;
+  let possible = Math.max(1, Math.min(maxCols, Math.floor(W / colMin) || 1, n));
+  grid.classList.remove('compact', 'overflow');
+  const attempt = () => {
+    for (let fs = max; fs >= min; fs -= step) {
+      for (let cols = 1; cols <= possible; cols++) {
+        grid.style.setProperty('--fs', fs + 'px');
+        grid.style.setProperty('--cols', cols);
+        if (grid.scrollHeight <= grid.clientHeight + 1) return true;
+      }
+    }
+    return false;
+  };
+  if (attempt()) return true;
+  grid.classList.add('compact');
+  if (attempt()) return true;
+  possible = Math.max(possible, Math.min(maxCols, Math.floor(W / (colMin * 0.62)) || 1, n));
+  if (attempt()) return true;
+  grid.style.setProperty('--fs', min + 'px'); grid.style.setProperty('--cols', possible);
+  grid.classList.add('overflow'); // último recurso (tela minúscula)
+  return false;
+}
+function openGabarito(c) {
+  const locked = S.settings.gabaritoAfterFinish && !c.done;
+  if (locked) { say(c.questions[0] && c.questions[0].lang === 'en' && c.kind === 'extra' ? 'Finish first, then the answer key unlocks! 🔑' : 'Primeiro termine e aperte <b>Concluir</b>. Aí o gabarito libera! 🔑', { mood: 'think' }); return; }
+  const items = c.questions.map((q, i) => {
+    const ans = c.answers[q.id];
+    const ok = isCorrect(q, ans);
+    const cls = ok === true ? 'ok' : ok === false && answered(q, ans) ? 'bad' : '';
+    const answerTxt = q.type === 'open' ? '<span class="free">[Resposta Livre]</span>' : `<span class="ans">${esc(q.answer)}</span>`;
+    const yours = answered(q, ans) && q.type !== 'open' ? `<span class="yours">· você: ${esc(ans)}</span>` : '';
+    return `<div class="key ${cls}"><b>${i + 1}.</b><div>${answerTxt} ${yours}</div></div>`;
+  }).join('');
+  const m = openModal(`<div class="modal-head"><h3>🔑 Gabarito</h3><button class="btn small" data-close>Fechar</button></div>
+    <div class="modal-body fit"><div class="key-grid" id="key-grid">${items}</div></div>
+    <div class="modal-foot"><span class="muted tiny grow">[Resposta Livre] = os pais corrigem.</span></div>`, { wide: true });
+  m.style.height = 'calc(100dvh - 24px)';
+  requestAnimationFrame(() => fitGrid($('#key-grid'), { min: 11, max: 17, colMin: 200, maxCols: 3 }));
+}
+async function finishWork(c) {
+  hideBubble();
+  const missing = c.questions.filter(q => !answered(q, c.answers[q.id])).length;
+  if (missing) {
+    say(`Faltam <b>${missing}</b> pergunta${missing > 1 ? 's' : ''}. Toque no 💡 se precisar de ajuda!`, { mood: 'think' });
+    const first = c.questions.find(q => !answered(q, c.answers[q.id]));
+    const card = first && $(`.q[data-qid="${first.id}"]`);
+    if (card) { card.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.03)' }, { transform: 'scale(1)' }], { duration: 400 }); const i = $('[data-in]', card); if (i) i.focus(); }
+    return;
+  }
+  const obj = c.questions.filter(q => q.type !== 'open');
+  const correct = obj.filter(q => isCorrect(q, c.answers[q.id])).length;
+  const open = c.questions.length - obj.length;
+  c.obj.status = 'done';
+  c.obj.result = { correct, total: obj.length, open, at: new Date().toISOString() };
+  if (c.kind === 'extra') {
+    const t = today();
+    const coins = c.obj.paid ? correct * S.settings.extraPerCorrect : 0;
+    S.extras[t] = { sets: (S.extras[t] ? S.extras[t].sets : 0) + (c.obj.paid ? 1 : 0) };
+    save();
+    if (coins) addCoins(coins, `Extras: ${correct}/${obj.length} acertos`);
+    renderWork();
+    showCelebrate('Extras concluídos! ⭐', coins ? `+${coins}` : '', `Você acertou <b>${correct} de ${obj.length}</b>.${c.obj.paid ? '' : ' (Rodada só de treino.)'} Abra o gabarito para ver as correções.`);
+    return;
+  }
+  save();
+  renderWork();
+  const w = S.week;
+  const allDone = weekAllDone(w);
+  const msg = `Você acertou <b>${correct} de ${obj.length}</b> objetivas.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais corrigirem.` : ''}`;
+  if (allDone && today() === w.end && !w.settled) {
+    showCelebrate('Tudo pronto! 🎉', '', msg + `<br><br>Todas as tarefas da semana estão feitas. Volte ao início e toque em <b>Entregar a semana</b> para ganhar <b>+${S.settings.reward}</b> 🪙!`);
+  } else if (allDone) {
+    showCelebrate('Semana completa! 🎉', '', msg + `<br><br>Agora é só <b>entregar na sexta ${fmtDM(w.end)}</b> para ganhar <b>+${S.settings.reward}</b> 🪙.`);
+  } else {
+    showCelebrate('Tarefa do dia concluída! ✅', '', msg + ' O gabarito já está liberado.', 'happy');
+  }
+}
+
+/* ---------- Lojinha ---------- */
+function vouchersAsItems() { return (S.vouchers || []).map(v => ({ id: v.id, cat: 'voucher', name: v.name, price: Number(v.price) || 0 })); }
+function renderShop() {
+  const el = $('#scr-shop');
+  const cat = VIEW.shopCat;
+  const items = cat === 'voucher' ? vouchersAsItems() : SHOP_ITEMS.filter(i => i.cat === cat);
+  const tryOn = VIEW.tryOn && SHOP_ITEMS.find(i => i.id === VIEW.tryOn);
+  const previewEq = Object.assign({}, S.equipped);
+  if (tryOn && ['hat', 'glasses', 'neck'].includes(tryOn.cat)) previewEq[tryOn.cat] = tryOn.id;
+  const cards = items.map(it => {
+    const owned = S.owned.includes(it.id);
+    const equipped = S.equipped[it.cat] === it.id;
+    let pic = '';
+    if (['hat', 'glasses', 'neck'].includes(it.cat)) pic = itemPreviewSVG(it);
+    else if (it.cat === 'bg') pic = `<div class="swatch" style="background:${it.sw}"></div>`;
+    else if (it.cat === 'sticker') pic = it.emoji;
+    else pic = '🎟️';
+    let btn;
+    if (it.cat === 'voucher') btn = `<button class="btn small primary" data-buy="${it.id}">Resgatar</button>`;
+    else if (it.cat === 'sticker') btn = owned ? '<span class="tiny muted">No álbum ✔</span>' : `<button class="btn small primary" data-buy="${it.id}">Comprar</button>`;
+    else if (!owned) btn = `<div class="row"><button class="btn small" data-try="${it.id}">Provar</button><button class="btn small primary" data-buy="${it.id}">Comprar</button></div>`;
+    else btn = equipped ? `<button class="btn small ok" data-unequip="${it.id}">Usando ✔</button>` : `<button class="btn small" data-equip="${it.id}">Usar</button>`;
+    return `<div class="item ${owned && it.cat !== 'voucher' ? 'owned' : ''}"><div class="pic">${pic}</div><div class="nm">${esc(it.name)}</div><div class="pr">🪙 ${it.price}</div>${btn}</div>`;
+  }).join('');
+  const pend = (S.redemptions || []).filter(r => !r.delivered);
+  el.innerHTML = `<div class="shop">
+    <div class="shop-preview"><div>${mascotSVG(previewEq, tryOn ? 'wow' : 'happy')}</div>
+      <div><b>Saldo: 🪙 ${S.coins}</b>${S.coins < 0 ? '<div class="tiny" style="color:var(--bad)">Saldo negativo: a lojinha volta quando ficar positivo.</div>' : ''}
+      ${tryOn ? `<div class="tiny muted">Provando: ${esc(tryOn.name)}</div>` : ''}
+      ${pend.length ? `<div class="tiny muted">🎟️ ${pend.length} vale(s) aguardando os pais</div>` : ''}</div></div>
+    <div class="shop-main">
+      <div class="tabs">${SHOP_CATS.map(c => `<button data-cat="${c.id}" class="${c.id === cat ? 'on' : ''}">${c.label}</button>`).join('')}</div>
+      <div class="items">${cards || '<p class="muted">Nada aqui ainda.</p>'}</div>
+    </div></div>`;
+  $$('[data-cat]', el).forEach(b => b.onclick = () => { VIEW.shopCat = b.dataset.cat; VIEW.tryOn = null; renderShop(); });
+  $$('[data-try]', el).forEach(b => b.onclick = () => { VIEW.tryOn = b.dataset.try; renderShop(); });
+  $$('[data-buy]', el).forEach(b => b.onclick = () => buy(b.dataset.buy));
+  $$('[data-equip]', el).forEach(b => b.onclick = () => { const it = SHOP_ITEMS.find(i => i.id === b.dataset.equip); S.equipped[it.cat] = it.id; save(); applyTheme(); renderMascotMini(); renderShop(); });
+  $$('[data-unequip]', el).forEach(b => b.onclick = () => { const it = SHOP_ITEMS.find(i => i.id === b.dataset.unequip); S.equipped[it.cat] = null; save(); applyTheme(); renderMascotMini(); renderShop(); });
+}
+async function buy(id) {
+  const it = SHOP_ITEMS.find(i => i.id === id) || vouchersAsItems().find(v => v.id === id);
+  if (!it) return;
+  if (S.coins < it.price) { say(`Faltam <b>${it.price - Math.max(0, S.coins)}</b> moedas para ${esc(it.name)}. Que tal uns exercícios extras? ⭐`, { mood: 'think' }); return; }
+  const ok = await confirmBox(it.cat === 'voucher' ? 'Resgatar vale?' : 'Comprar?', `${esc(it.name)} por <b>🪙 ${it.price}</b>?${it.cat === 'voucher' ? '<br><span class="muted tiny">Os pais vão confirmar a entrega do prêmio.</span>' : ''}`, it.cat === 'voucher' ? 'Resgatar' : 'Comprar');
+  if (!ok) return;
+  addCoins(-it.price, (it.cat === 'voucher' ? 'Vale: ' : 'Lojinha: ') + it.name);
+  if (it.cat === 'voucher') {
+    S.redemptions.unshift({ id: uid(), voucherId: it.id, name: it.name, price: it.price, date: today(), delivered: false });
+  } else {
+    S.owned.push(it.id);
+    if (['hat', 'glasses', 'neck', 'bg'].includes(it.cat)) S.equipped[it.cat] = it.id;
+  }
+  VIEW.tryOn = null;
+  save(); applyTheme(); renderMascotMini(); renderShop();
+  say(it.cat === 'sticker' ? `${it.emoji} foi para o seu álbum!` : it.cat === 'voucher' ? 'Vale resgatado! Mostre para os seus pais. 🎟️' : 'Amei! Obrigada! 😍', { mood: 'wow' });
+}
+
+/* ---------- Área dos pais ---------- */
+function renderParents() {
+  const el = $('#scr-parents');
+  if (!VIEW.parentsUnlocked) {
+    el.innerHTML = `<div class="parents"><div class="card" style="max-width:360px;margin:20px auto;width:100%;text-align:center">
+      <h3 style="margin:4px 0 8px">🔒 Área dos pais</h3><p class="muted tiny">Digite o PIN (padrão: 1234 — troque em Ajustes).</p>
+      <input class="pin-input" id="pin" type="password" inputmode="numeric" maxlength="8" autocomplete="off">
+      <button class="btn primary wide" style="margin-top:10px" id="pin-go">Entrar</button></div></div>`;
+    const go = () => { if ($('#pin').value === String(S.settings.pin)) { VIEW.parentsUnlocked = true; renderParents(); } else { toast('PIN incorreto'); $('#pin').value = ''; } };
+    $('#pin-go').onclick = go; $('#pin').onkeydown = e => { if (e.key === 'Enter') go(); };
+    setTimeout(() => $('#pin') && $('#pin').focus(), 50);
+    return;
+  }
+  const tabs = [['review', '📝 Correção'], ['coins', '🪙 Moedas'], ['vouchers', '🎟️ Vales'], ['settings', '⚙️ Ajustes'], ['data', '📥 Dados']];
+  el.innerHTML = `<div class="parents"><div class="row wrap"><div class="tabs grow">${tabs.map(([k, l]) => `<button data-ptab="${k}" class="${VIEW.parentTab === k ? 'on' : ''}">${l}</button>`).join('')}</div>
+    <button class="btn small" id="lock">Sair</button></div><div class="parents-body" id="pbody"></div></div>`;
+  $$('[data-ptab]', el).forEach(b => b.onclick = () => { VIEW.parentTab = b.dataset.ptab; renderParents(); });
+  $('#lock').onclick = () => { VIEW.parentsUnlocked = false; show('home'); };
+  ({ review: pReview, coins: pCoins, vouchers: pVouchers, settings: pSettings, data: pData })[VIEW.parentTab]($('#pbody'));
+}
+function pReview(box) {
+  const w = S.week;
+  if (!w) { box.innerHTML = '<p class="muted">Nenhuma semana planejada ainda.</p>'; return; }
+  const req = requiredDays(w);
+  const summary = req.map(d => {
+    const r = d.result;
+    return `<div class="row"><b style="width:90px">${DOW_LABEL[d.dow]} ${fmtDM(d.date)}</b><span class="grow">${d.status === 'done' ? `✅ ${r.correct}/${r.total} objetivas${r.open ? ` · ${r.open} livres` : ''}` : dayState(d) === 'late' ? '⏰ atrasada' : dayState(d) === 'locked' ? '🔒 ainda não abriu' : '📘 pendente'}</span></div>`;
+  }).join('');
+  const opens = [];
+  req.forEach(d => d.questions.forEach(q => { if (q.type === 'open' && answered(q, d.answers[q.id])) opens.push({ d, q }); }));
+  const list = opens.map(({ d, q }) => {
+    const mk = (d.marks || {})[q.id];
+    return `<div class="review-item"><div class="meta">${DOW_LABEL[d.dow]} ${fmtDM(d.date)} · ${SUBJ[q.subject].icon} ${esc(SUBJ[q.subject].name)}</div>
+      <div><b>${esc(q.q)}</b></div><div class="ans">${esc(d.answers[q.id])}</div>
+      <div class="row"><button class="btn small ${mk === 'ok' ? 'ok' : ''}" data-mark="ok" data-d="${d.date}" data-q="${q.id}">✓ Certo</button>
+      <button class="btn small ${mk === 'no' ? 'danger' : ''}" data-mark="no" data-d="${d.date}" data-q="${q.id}">↺ Refazer/conversar</button></div></div>`;
+  }).join('');
+  box.innerHTML = `<div class="card"><b>Semana ${fmtDM(w.start)}–${fmtDM(w.end)}</b> ${w.settled ? `· ${w.settled === 'delivered' ? 'entregue ✔' : w.settled === 'missed' ? 'não entregue ✗' : ''}` : ''}<div style="margin-top:6px;display:grid;gap:3px">${summary}</div></div>
+    <h3 style="margin:6px 0 0">Respostas livres para corrigir (${opens.length})</h3>${list || '<p class="muted">Nada para corrigir ainda.</p>'}
+    ${S.history.length ? `<div class="card"><b>Histórico</b>${S.history.slice(0, 8).map(h => `<div class="tiny">${fmtDM(h.start)}–${fmtDM(h.end)}: ${h.done}/${h.total} dias · ${h.settled === 'delivered' ? 'entregue' : h.settled === 'missed' ? 'não entregue' : '—'}</div>`).join('')}</div>` : ''}`;
+  $$('[data-mark]', box).forEach(b => b.onclick = () => { const d = S.week.days[b.dataset.d]; d.marks = d.marks || {}; d.marks[b.dataset.q] = b.dataset.mark; save(); pReview(box); });
+}
+function pCoins(box) {
+  box.innerHTML = `<div class="card"><div class="row"><b class="grow">Saldo atual: 🪙 ${S.coins}</b></div>
+    <div class="form-grid" style="margin-top:8px"><label class="field">Quantidade (+ ou −)<input id="adj-n" type="number" step="1" value="10"></label>
+    <label class="field">Motivo<input id="adj-r" placeholder="Ex.: ajudou em casa"></label></div>
+    <button class="btn primary" id="adj-go" style="margin-top:8px">Lançar</button></div>
+    <div class="card"><b>Extrato</b><div class="ledger" style="margin-top:6px">${S.ledger.slice(0, 40).map(l => `<div><span class="tiny muted" style="min-width:82px">${new Date(l.date).toLocaleDateString('pt-BR')}</span><span class="grow">${esc(l.reason)}</span><span class="amt ${l.amount >= 0 ? 'plus' : 'minus'}">${l.amount >= 0 ? '+' : ''}${l.amount}</span></div>`).join('') || '<span class="muted">Sem lançamentos.</span>'}</div></div>`;
+  $('#adj-go').onclick = () => { const n = Math.round(Number($('#adj-n').value)); if (!n) return; addCoins(n, 'Pais: ' + ($('#adj-r').value.trim() || 'ajuste')); toast('Lançado'); pCoins(box); };
+}
+function pVouchers(box) {
+  const pend = S.redemptions.filter(r => !r.delivered);
+  box.innerHTML = `<div class="card"><b>Vales resgatados aguardando entrega (${pend.length})</b>${pend.map(r => `<div class="row" style="margin-top:6px"><span class="grow">${fmtDM(r.date)} · ${esc(r.name)} (🪙 ${r.price})</span><button class="btn small ok" data-deliv="${r.id}">Entregue ✔</button></div>`).join('') || '<p class="muted tiny">Nenhum.</p>'}</div>
+    <div class="card"><b>Vales da lojinha</b><p class="muted tiny" style="margin:2px 0 6px">Prêmios reais que vocês combinam. Edite nome e preço.</p>
+    <div id="vlist" style="display:grid;gap:6px">${S.vouchers.map((v, i) => `<div class="row"><input class="grow" data-vn="${i}" value="${esc(v.name)}" style="padding:6px;border-radius:8px;border:1.5px solid var(--line)"><input type="number" data-vp="${i}" value="${v.price}" style="width:80px;padding:6px;border-radius:8px;border:1.5px solid var(--line)"><button class="btn small" data-vdel="${i}">✕</button></div>`).join('')}</div>
+    <div class="row" style="margin-top:8px"><button class="btn small" id="vadd">+ Novo vale</button><button class="btn small primary" id="vsave">Salvar vales</button></div></div>`;
+  $$('[data-deliv]', box).forEach(b => b.onclick = () => { const r = S.redemptions.find(x => x.id === b.dataset.deliv); r.delivered = true; save(); pVouchers(box); });
+  const collect = () => { $$('[data-vn]', box).forEach(inp => { S.vouchers[inp.dataset.vn].name = inp.value.trim() || 'Vale'; }); $$('[data-vp]', box).forEach(inp => { S.vouchers[inp.dataset.vp].price = Math.max(1, Math.round(Number(inp.value) || 1)); }); };
+  $$('[data-vdel]', box).forEach(b => b.onclick = () => { collect(); S.vouchers.splice(Number(b.dataset.vdel), 1); save(); pVouchers(box); });
+  $('#vadd').onclick = () => { collect(); S.vouchers.push({ id: 'v-' + uid(), name: 'Novo vale', price: 200 }); save(); pVouchers(box); };
+  $('#vsave').onclick = () => { collect(); save(); toast('Vales salvos'); };
+}
+function pSettings(box) {
+  const st = S.settings;
+  box.innerHTML = `<div class="card"><b>Economia de moedas</b><div class="form-grid" style="margin-top:6px">
+      <label class="field">Recompensa da semana entregue<input type="number" id="s-reward" value="${st.reward}"></label>
+      <label class="field">Penalidade (semana não entregue)<input type="number" id="s-penalty" value="${st.penalty}"></label>
+      <label class="field">Moedas por acerto nos extras<input type="number" id="s-xpc" value="${st.extraPerCorrect}"></label>
+      <label class="field">Perguntas por rodada de extras<input type="number" id="s-xsize" value="${st.extraSetSize}"></label>
+      <label class="field">Rodadas de extras com moedas/dia<input type="number" id="s-xsets" value="${st.extraSetsPerDay}"></label></div>
+      <p class="tiny muted">A penalidade precisa ser maior que a recompensa.</p></div>
+    <div class="card"><b>Tarefas</b><div class="form-grid" style="margin-top:6px">
+      <label class="field">Nome da aluna<input id="s-name" value="${esc(S.name)}"></label>
+      <label class="field">Mínimo de perguntas/dia<input type="number" id="s-min" value="${st.minPerDay}"></label>
+      <label class="field">Máximo de perguntas/dia<input type="number" id="s-max" value="${st.maxPerDay}"></label>
+      <label class="field">Gabarito<select id="s-gab"><option value="1" ${st.gabaritoAfterFinish ? 'selected' : ''}>Libera depois de concluir</option><option value="0" ${!st.gabaritoAfterFinish ? 'selected' : ''}>Sempre disponível</option></select></label>
+      <label class="field">Voz (ditado)<select id="s-voice"><option value="1" ${st.voice ? 'selected' : ''}>Ligada</option><option value="0" ${!st.voice ? 'selected' : ''}>Desligada</option></select></label>
+      <label class="field">Novo PIN dos pais<input id="s-pin" inputmode="numeric" maxlength="8" placeholder="(manter)"></label></div>
+      <div style="margin-top:6px"><b class="tiny">Perguntas padrão por dia</b><div class="counts" style="margin-top:4px">${CYCLE.map(dk => `<label class="count-box"><div class="lbl">${DOW_LABEL[dk]}</div><input type="number" data-dc="${dk}" value="${st.counts[dk]}" style="width:44px;text-align:center;border:1.5px solid var(--line);border-radius:6px"></label>`).join('')}</div></div></div>
+    <button class="btn primary" id="s-save">Salvar ajustes</button>
+    <button class="btn" id="s-tour">Rever o tutorial da Lumi</button>`;
+  $('#s-save').onclick = () => {
+    const num = (id, d) => { const v = Math.round(Number($(id).value)); return Number.isFinite(v) ? v : d; };
+    const reward = Math.max(0, num('#s-reward', st.reward)), penalty = num('#s-penalty', st.penalty);
+    if (penalty <= reward) { toast('A penalidade precisa ser MAIOR que a recompensa.'); return; }
+    Object.assign(st, {
+      reward, penalty, extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
+      extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10), minPerDay: clamp(num('#s-min', st.minPerDay), 1, 15), maxPerDay: clamp(num('#s-max', st.maxPerDay), 3, 25),
+      gabaritoAfterFinish: $('#s-gab').value === '1', voice: $('#s-voice').value === '1',
+    });
+    if (st.maxPerDay < st.minPerDay) st.maxPerDay = st.minPerDay;
+    $$('[data-dc]', box).forEach(inp => { st.counts[inp.dataset.dc] = clamp(Math.round(Number(inp.value) || 0), 0, st.maxPerDay); });
+    const pin = $('#s-pin').value.trim(); if (pin) st.pin = pin;
+    const nm = $('#s-name').value.trim(); if (nm) S.name = nm;
+    save(); toast('Ajustes salvos');
+  };
+  $('#s-tour').onclick = () => { show('home'); setTimeout(runTour, 300); };
+}
+function pData(box) {
+  const topics = S.week ? S.week.topics : S.lastTopics;
+  box.innerHTML = `<div class="card"><b>1. Perguntas feitas pelo Claude (opcional)</b>
+      <p class="tiny muted" style="margin:2px 0 6px">Copie o prompt (já com os tópicos da semana), cole no Claude junto com o Study Worksheet, e cole aqui o JSON que ele devolver.
+      As perguntas importadas entram primeiro; o gerador do app completa o resto.</p>
+      <button class="btn small" id="cp-prompt">📋 Copiar prompt para o Claude</button>
+      <label class="field" style="margin-top:8px">JSON das perguntas<textarea id="imp-json" placeholder='{"questions":[ ... ]}'></textarea></label>
+      <button class="btn primary small" id="imp-go">Importar perguntas</button><div id="imp-msg" class="tiny" style="margin-top:6px"></div></div>
+    <div class="card"><b>2. Backup</b><p class="tiny muted" style="margin:2px 0 6px">Os dados ficam só neste navegador. Faça backup para trocar de aparelho.</p>
+      <div class="row wrap"><button class="btn small" id="bk-exp">⬇️ Baixar backup</button><label class="btn small">⬆️ Restaurar backup<input type="file" id="bk-imp" accept="application/json,.json" hidden></label></div></div>
+    <div class="card"><b>3. Zerar</b><div class="row wrap" style="margin-top:6px"><button class="btn small" id="rs-week">Apagar a semana atual</button><button class="btn small danger" id="rs-all">Apagar TUDO</button></div></div>`;
+  $('#cp-prompt').onclick = async () => {
+    const p = claudePrompt(topics || {});
+    try { await navigator.clipboard.writeText(p); toast('Prompt copiado!'); }
+    catch (e) { $('#imp-json').value = p; toast('Copie o texto da caixa abaixo'); }
+  };
+  $('#imp-go').onclick = () => {
+    const msg = $('#imp-msg');
+    let data;
+    try { const raw = $('#imp-json').value.trim().replace(/^```(json)?/i, '').replace(/```$/, ''); data = JSON.parse(raw); }
+    catch (e) { msg.innerHTML = '<span style="color:var(--bad)">JSON inválido. Confira se copiou tudo, do { ao }.</span>'; return; }
+    let res;
+    try { res = validateImported(data); } catch (e) { msg.innerHTML = `<span style="color:var(--bad)">${esc(e.message)}</span>`; return; }
+    if (!res.ok.length) { msg.innerHTML = `<span style="color:var(--bad)">Nenhuma pergunta válida.</span> ${esc(res.errs.slice(0, 5).join('; '))}`; return; }
+    const w = S.week;
+    if (w && !w.settled) {
+      w.imported = (w.imported || []).concat(res.ok);
+      const redo = Object.values(w.days).filter(d => d.required && d.status !== 'done' && !dayStarted(d) && d.date >= today()).map(d => d.date);
+      regenerateDays(w, redo, '|' + uid());
+      msg.innerHTML = `✅ ${res.ok.length} perguntas importadas. ${redo.length} dia(s) ainda não começados foram refeitos.` + (res.errs.length ? ` <span class="muted">${res.errs.length} ignorada(s).</span>` : '');
+    } else {
+      S.pendingImport = (S.pendingImport || []).concat(res.ok);
+      msg.innerHTML = `✅ ${res.ok.length} perguntas guardadas. Elas entram quando a próxima semana for planejada.` + (res.errs.length ? ` <span class="muted">${res.errs.length} ignorada(s).</span>` : '');
+    }
+    save();
+  };
+  $('#bk-exp').onclick = () => {
+    const blob = new Blob([JSON.stringify(S, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `lumi-backup-${today()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  };
+  $('#bk-imp').onchange = async e => {
+    const f = e.target.files[0]; if (!f) return;
+    try { const s = JSON.parse(await f.text()); if (typeof s !== 'object' || !('coins' in s)) throw new Error(); if (!(await confirmBox('Restaurar backup?', 'Isso substitui todos os dados atuais.', 'Restaurar', true))) return; localStorage.setItem(STORE_KEY, JSON.stringify(s)); S = load(); applyTheme(); renderCoins(); toast('Backup restaurado'); renderParents(); }
+    catch (err) { toast('Arquivo de backup inválido'); }
+  };
+  $('#rs-week').onclick = async () => { if (await confirmBox('Apagar a semana atual?', 'As tarefas e respostas desta semana serão perdidas. As moedas ficam.', 'Apagar', true)) { S.week = null; save(); toast('Semana apagada'); } };
+  $('#rs-all').onclick = async () => { if (await confirmBox('Apagar TUDO?', 'Moedas, compras, semanas e ajustes serão apagados deste navegador.', 'Apagar tudo', true)) { localStorage.removeItem(STORE_KEY); location.reload(); } };
+}
+
+/* =========================================================================
+   8. INICIALIZAÇÃO
+   ========================================================================= */
+function init() {
+  applyTheme();
+  renderMascotMini();
+  renderCoins();
+  $('#mascot-btn').onclick = mascotClick;
+  $('#bubble').onclick = () => { if (!$('#bubble-actions').children.length) hideBubble(); };
+  $('#coin-pill').onclick = () => say(`Você tem <b>${S.coins}</b> moedas. ${S.coins < 0 ? 'Saldo negativo: faça extras e entregue a semana para recuperar!' : 'Gaste na 🛒 Lojinha!'}`);
+  $$('.top-nav button').forEach(b => b.onclick = () => {
+    if (!S.name) return;
+    if (currentScreen === 'work') save();
+    show(b.dataset.nav);
+  });
+  let rt = null;
+  window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (currentScreen === 'work') fitGrid($('#sheet')); const k = $('#key-grid'); if (k && !$('#modal').classList.contains('hidden')) fitGrid(k, { colMin: 200 }); }, 120); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#modal').classList.contains('hidden')) closeModal(); });
+
+  if (!S.name) { show('welcome'); return; }
+  show('home');
+  if (!S.tourDone) setTimeout(runTour, 400);
+}
+document.addEventListener('DOMContentLoaded', init);
