@@ -474,7 +474,7 @@ function mergeStates(localRaw, remoteRaw) {
    ========================================================================= */
 const CHILD_KEY = 'lumi-child';
 const Server = { on: false, ai: false, needsSetup: false, canSetup: false, me: null, childId: null, pushing: false, again: false, dirty: false, timer: null, status: 'local' };
-const AI_ROUTES = { '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open', '/api/lesson': 'lesson', '/api/reading': 'reading' };
+const AI_ROUTES = { '/api/plan-outline': 'plan-outline', '/api/plan-day': 'plan-day', '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open', '/api/lesson': 'lesson', '/api/reading': 'reading' };
 const AVATARS = ['🦉', '🦊', '🐼', '🐱', '🐶', '🦄', '🐸', '🐧', '🐯', '🐰', '🐨', '🐙'];
 function localKey(id = Server.childId) { return id ? `${STORE_KEY}:${id}` : STORE_KEY; }
 function savedChild() { try { return localStorage.getItem(CHILD_KEY) || ''; } catch (e) { return ''; } }
@@ -2655,13 +2655,14 @@ async function generateWithClaude(editing) {
   const stop = showLoading(['Lendo o que você contou… 📖', 'Separando por matéria… 🗂️', 'Inventando perguntas… ✏️', 'Caprichando nas dicas… 💡', 'Organizando os dias da semana… 📅', 'Escrevendo os capítulos do livro da semana… 📚', 'Quase pronto! 🦉']);
   let res;
   try {
-    res = await apiCall('/api/plan', { method: 'POST', timeout: 330000, data: { name: S.name, text, images, days, perSubject: S.settings.perSubject || 2, previous: S.week && S.week.summary ? S.week.summary.map(x => `${x.subject}: ${x.summary}`).join(' | ') : '' } });
+    res = await planInSteps({ name: S.name, text, images, days, perSubject: S.settings.perSubject || 2, previous: S.week && S.week.summary ? S.week.summary.map(x => `${x.subject}: ${x.summary}`).join(' | ') : '' });
   } catch (e) {
     stop();
     say(`Ops, não consegui falar com o Claude agora (${esc(e.message)}). Tente de novo em instantes, ou use o modo por matéria.`, { mood: 'sad', ms: 12000 });
     return;
   }
   stop();
+  if (res.failedDays && res.failedDays.length) setTimeout(() => say(`${res.failedDays.length === 1 ? 'Um dia foi criado' : `${res.failedDays.length} dias foram criados`} pelo gerador do próprio app (o Claude demorou). Dá para refazer depois em Minha semana. 🙂`, { mood: 'think', ms: 9000 }), 9500);
   const valid = validateImported({ questions: (res.questions || []).map(q => Object.assign({}, q, { options: q.type === 'mc' ? q.options : undefined, accept: (q.accept || []).filter(Boolean) })) }).ok;
   const topics = {};
   (res.topics || []).forEach(x => { if (SUBJ[x.subject]) topics[x.subject] = (topics[x.subject] ? topics[x.subject] + '; ' : '') + x.summary; });
@@ -2687,6 +2688,37 @@ async function generateWithClaude(editing) {
   const total = requiredDays(S.week).reduce((a, d) => a + d.questions.length, 0);
   show('home');
   say(`${esc(res.message || 'Prontinho!')} Criei <b>${total}</b> perguntas. ${S.week.start > t ? `Elas começam no sábado ${fmtDM(S.week.start)}.` : ''}`, { mood: 'wow', ms: 9000 });
+}
+// Planejamento em etapas: 1) roteiro da semana (assuntos, subtemas por dia, sinopse dos capítulos); 2) cada dia em paralelo.
+// Assim cada chamada ao Claude é curta (sem tempo esgotado) e a criança vê o progresso.
+async function planInSteps(base) {
+  const prog = t => { const m = $('#ld-msg'); if (m) m.textContent = t; };
+  const outline = await apiCall('/api/plan-outline', { method: 'POST', timeout: 150000, data: base });
+  const dayLabel = d => d.label || d.dow;
+  let done = 0; const total = base.days.length;
+  const tick = () => prog(`Criando os dias com a Lumi… ${done} de ${total} prontos ✏️`);
+  tick();
+  const bookFor = d => { if (!d.read) return null; const b = (outline.books || []).find(x => x.subject === d.read.subject); if (!b) return null;
+    const i = b.chapters.findIndex(c => c.day === d.dow); return { title: b.title, premise: b.premise, chapter: b.chapters[i] || { title: '', synopsis: '' }, before: i > 0 ? b.chapters.slice(0, i) : [] }; };
+  const runDay = async d => {
+    const data = { name: base.name, day: d, perSubject: base.perSubject, topics: outline.topics || [], modes: String(base.text || '').slice(0, 1500),
+      focus: ((outline.focus || []).find(f => f.day === d.dow) || {}).items || [], book: bookFor(d) };
+    let last;
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try { const r = await apiCall('/api/plan-day', { method: 'POST', timeout: 180000, data }); done++; tick(); return { d, r }; }
+      catch (e) { last = e; if (e.status === 429) break; }
+    }
+    done++; tick(); return { d, err: last };
+  };
+  const results = await Promise.all(base.days.map(runDay));
+  const ok = results.filter(x => x.r);
+  if (!ok.length) throw results[0].err || new Error('o Claude não respondeu');
+  return {
+    topics: outline.topics || [], message: outline.message || '',
+    questions: ok.flatMap(x => (x.r.questions || []).map(q => Object.assign({}, q, { day: x.d.dow }))),
+    passages: ok.filter(x => x.d.read && x.r.passage && x.r.passage.text).map(x => ({ subject: x.d.read.subject, day: x.d.dow, title: x.r.passage.title, text: x.r.passage.text })),
+    failedDays: results.filter(x => x.err).map(x => dayLabel(x.d)),
+  };
 }
 function collectDraft() { $$('#scr-setup textarea[data-sid]').forEach(ta => { VIEW.draftTopics[ta.dataset.sid] = ta.value; }); }
 async function generateFromSetup(editing) {

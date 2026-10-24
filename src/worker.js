@@ -178,22 +178,29 @@ async function claude(env, ctx, { model, effort, system, content, schema, maxTok
   if (!ok.ok) throw new HttpError(429, ok.why === 'child'
     ? 'A Lumi já trabalhou bastante hoje! O limite diário desta criança foi atingido. Amanhã libera de novo. 🦉'
     : 'O limite mensal de uso do app foi atingido. Avise o administrador.');
-  const res = await fetch(`${env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com'}/v1/messages`, {
-    method: 'POST',
-    headers: { 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-    body: JSON.stringify({
-      model, max_tokens: maxTokens, system: system + CHILD_SAFETY,
-      messages: [{ role: 'user', content }],
-      output_config: { effort, format: { type: 'json_schema', schema } },
-    }),
+  // Streaming: a conexão recebe dados o tempo todo e não cai por tempo esgotado (erro 524) em respostas longas.
+  const reqBody = JSON.stringify({
+    model, max_tokens: maxTokens, system: system + CHILD_SAFETY, stream: true,
+    messages: [{ role: 'user', content }],
+    output_config: { effort, format: { type: 'json_schema', schema } },
   });
-  const raw = await res.text();
+  let res;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    res = await fetch(`${env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com'}/v1/messages`, {
+      method: 'POST', body: reqBody,
+      headers: { 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+    });
+    if (res.ok || ![429, 500, 502, 503, 504, 524, 529].includes(res.status) || attempt) break;
+    await res.text().catch(() => '');
+    await new Promise(r => setTimeout(r, 1500));   // uma nova tentativa para sobrecarga/instabilidade
+  }
   if (!res.ok) {
+    const raw = await res.text().catch(() => '');
     let msg = raw.slice(0, 300);
     try { msg = JSON.parse(raw).error?.message || msg; } catch { /* mantém texto */ }
     throw new HttpError(502, `Claude respondeu ${res.status}: ${msg}`);
   }
-  const data = JSON.parse(raw);
+  const data = await readStream(res);
   const u = data.usage || {};
   const [pin, pout] = PRICES[model] || [4, 20];
   const usd = ((u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) * 1.25 + (u.cache_read_input_tokens || 0) * 0.1) * pin / 1e6 + (u.output_tokens || 0) * pout / 1e6;
@@ -202,6 +209,30 @@ async function claude(env, ctx, { model, effort, system, content, schema, maxTok
   if (data.stop_reason === 'max_tokens') throw new HttpError(502, 'A resposta do Claude ficou longa demais. Tente com menos perguntas.');
   const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
   try { return JSON.parse(text); } catch { throw new HttpError(502, 'Resposta do Claude em formato inesperado.'); }
+}
+
+// Lê o stream SSE da API: junta só os pedaços de texto (ignora o raciocínio) e guarda uso e motivo de parada.
+async function readStream(res) {
+  const reader = res.body.getReader(); const dec = new TextDecoder();
+  let buf = '', text = '', usage = {}, stop = null;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buf += dec.decode(value, { stream: true });
+    let i;
+    while ((i = buf.indexOf('\n\n')) >= 0) {
+      const ev = buf.slice(0, i); buf = buf.slice(i + 2);
+      const k = ev.indexOf('data: '); if (k < 0) continue;
+      const line = ev.slice(k + 6);
+      if (line.includes('"text_delta"')) { const d = JSON.parse(line); text += d.delta.text; continue; }
+      if (line.includes('_delta') && !line.includes('"message_delta"')) continue;   // raciocínio/outros pedaços
+      const d = JSON.parse(line);
+      if (d.type === 'message_start') usage = Object.assign({}, d.message && d.message.usage);
+      else if (d.type === 'message_delta') { if (d.usage) Object.assign(usage, d.usage); if (d.delta && d.delta.stop_reason) stop = d.delta.stop_reason; }
+      else if (d.type === 'error') throw new HttpError(502, `Claude respondeu com erro: ${(d.error && d.error.message) || 'desconhecido'}`);
+    }
+  }
+  return { content: [{ type: 'text', text }], usage, stop_reason: stop };
 }
 
 /* ---------------- Esquemas de saída ---------------- */
@@ -251,6 +282,41 @@ const PLAN_SCHEMA = {
     questions: { type: 'array', items: qSchema(true) },
   },
   required: ['topics', 'message', 'passages', 'questions'],
+  additionalProperties: false,
+};
+// Planejamento em duas etapas (rápido e sem tempo esgotado): 1) roteiro da semana; 2) cada dia em paralelo.
+const OUTLINE_SCHEMA = {
+  type: 'object',
+  properties: {
+    topics: {
+      type: 'array', description: 'Uma linha por matéria encontrada, com TODOS os detalhes necessários (listas de palavras completas, exemplos, fórmulas, livro/capítulo): as próximas etapas não verão as fotos.',
+      items: { type: 'object', properties: { subject: { type: 'string', enum: SUBJECT_IDS }, summary: { type: 'string' } }, required: ['subject', 'summary'], additionalProperties: false },
+    },
+    message: { type: 'string', description: 'Mensagem curta e animada da mascote Lumi para o estudante, em português.' },
+    focus: {
+      type: 'array', description: 'Para cada dia, o subtema de cada matéria (variando ao longo da semana).',
+      items: { type: 'object', properties: { day: { type: 'string', enum: DOWS },
+        items: { type: 'array', items: { type: 'object', properties: { subject: { type: 'string', enum: SUBJECT_IDS }, focus: { type: 'string' } }, required: ['subject', 'focus'], additionalProperties: false } } },
+        required: ['day', 'items'], additionalProperties: false },
+    },
+    books: {
+      type: 'array', description: 'Um livro original por idioma de leitura (vazia se não houver leitura diária).',
+      items: { type: 'object', properties: {
+        subject: { type: 'string', enum: READ_IDS }, title: { type: 'string' }, premise: { type: 'string', description: 'Personagens, cenário e tom (2–3 frases).' },
+        chapters: { type: 'array', items: { type: 'object', properties: { day: { type: 'string', enum: DOWS }, title: { type: 'string' }, synopsis: { type: 'string', description: 'O que acontece no capítulo (2–3 frases), com gancho para o próximo.' } }, required: ['day', 'title', 'synopsis'], additionalProperties: false } },
+      }, required: ['subject', 'title', 'premise', 'chapters'], additionalProperties: false },
+    },
+  },
+  required: ['topics', 'message', 'focus', 'books'],
+  additionalProperties: false,
+};
+const DAY_SCHEMA = {
+  type: 'object',
+  properties: {
+    questions: { type: 'array', items: qSchema(false) },
+    passage: { type: 'object', description: 'O capítulo do dia (título e texto vazios se o dia não tiver leitura).', properties: { title: { type: 'string' }, text: { type: 'string' } }, required: ['title', 'text'], additionalProperties: false },
+  },
+  required: ['questions', 'passage'],
   additionalProperties: false,
 };
 const MORE_SCHEMA = { type: 'object', properties: { questions: { type: 'array', items: qSchema(false) } }, required: ['questions'], additionalProperties: false };
@@ -407,6 +473,67 @@ ${dayList}
   return out;
 }
 
+const READ_LEVELS_TXT = { below: 'mais fácil (cerca de 1 ano abaixo)', at: 'no nível do ano', above: 'acima (cerca de 1 ano acima)', way: 'bem acima (cerca de 2 anos acima)' };
+async function handlePlanOutline(env, b, ctx) {
+  const days = (b.days || []).filter(d => DOWS.includes(d.dow) && d.n > 0);
+  if (!days.length) throw new HttpError(400, 'Nenhum dia com perguntas.');
+  days.forEach(d => { d.read = d.read && READ_IDS.includes(d.read.subject) ? { subject: d.read.subject, level: READ_LEVELS_TXT[d.read.level] || READ_LEVELS_TXT.at } : null; });
+  const images = (b.images || []).slice(0, 4);
+  const text = String(b.text || '').slice(0, 6000);
+  if (!text.trim() && !images.length) throw new HttpError(400, 'Conte o que você está aprendendo (ou mande uma foto).');
+  const reading = days.filter(d => d.read);
+  const content = [
+    ...images.flatMap((img, i) => [{ type: 'text', text: `Foto ${i + 1} (material da escola):` }, { type: 'image', source: { type: 'base64', media_type: img.type || 'image/jpeg', data: img.data } }]),
+    { type: 'text', text: `O que o estudante (ou os pais) escreveu sobre a semana na escola, por matéria:
+"""
+${text || '(sem texto — use as fotos)'}
+"""
+${b.previous ? `\nTópicos da semana anterior (para revisão leve, opcional): ${String(b.previous).slice(0, 800)}` : ''}
+
+Dias da semana com tarefa: ${days.map(d => `${d.dow} (${d.label || d.dow})${d.read ? ` · leitura do dia: ${d.read.subject}` : ''}`).join('; ')}.
+
+Tarefa (é só o ROTEIRO; as perguntas serão criadas depois, dia a dia):
+1. "topics": uma linha por matéria citada, no idioma da matéria, com os detalhes necessários para criar exercícios sem ver as fotos. Corrija erros de digitação óbvios (ex.: "surfs" = surds).
+   Ortografia/Spelling — respeite o [modo]: "lista de palavras" = use exatamente as dadas; "tema" ou "a Lumi escolhe" = escolha 8–10 palavras adequadas ao ano e liste todas em "topics".
+2. "focus": para cada dia acima, um subtema curto de CADA matéria citada, variando ao longo da semana (sem repetir a mesma ideia).
+3. ${reading.length ? `"books": um livro original por matéria de leitura (${[...new Set(reading.map(d => d.read.subject))].join(', ')}), com título, premissa e um capítulo por dia em que essa matéria é a leitura do dia (${reading.map(d => `${d.dow}: ${d.read.subject}`).join(', ')}). Cada capítulo continua o anterior do mesmo livro (personagens fixos, gancho no fim). Se o estudante citou um livro, autor ou tema, inspire-se sem copiar.` : '"books": lista vazia (sem leitura diária).'}
+4. "message": 1–2 frases da Lumi animando o estudante, em português.` },
+  ];
+  return claude(env, ctx, {
+    model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low',
+    system: studentProfile(b.name, b.year, b.mine, yearNum(b), b.levels), content, schema: OUTLINE_SCHEMA, maxTokens: 8000,
+  });
+}
+async function handlePlanDay(env, b, ctx) {
+  const d = b.day || {};
+  if (!DOWS.includes(d.dow) || !(d.n > 0)) throw new HttpError(400, 'Dia inválido.');
+  const n = Math.max(1, Math.min(40, Number(d.n)));
+  const yn = yearNum(b);
+  const read = d.read && READ_IDS.includes(d.read.subject) ? d.read : null;
+  const topics = (b.topics || []).slice(0, 30).map(t => `- ${t.subject}: ${String(t.summary || '').slice(0, 600)}`).join('\n');
+  const focus = (b.focus || []).slice(0, 30).map(f => `- ${f.subject}: ${String(f.focus || '').slice(0, 200)}`).join('\n');
+  const spell = (b.topics || []).some(t => ['pt_ort', 'en_spell'].includes(t.subject));
+  const content = [{ type: 'text', text: `Assuntos da semana (por matéria):
+${topics || '(sem assuntos)'}
+${b.modes ? `\nModos escolhidos: ${String(b.modes).slice(0, 600)}` : ''}
+
+Hoje é ${d.label || d.dow}. Subtema de hoje em cada matéria:
+${focus || '(escolha um subtema de cada matéria)'}
+
+Crie EXATAMENTE ${n} perguntas para hoje:
+- Cerca de ${Math.max(1, Math.min(4, Number(b.perSubject) || 2))} perguntas de CADA matéria listada acima${read ? ' (fora as 3 da leitura)' : ''}; se a conta não fechar, use 1 a 3 por matéria, sem deixar matéria de fora.
+${spell ? '- Se houver Ortografia ou Spelling, inclua UMA pergunta "proof" (caça-erros) dessa matéria.\n' : ''}${read ? `- LEITURA DO DIA (${read.subject}, nível: ${READ_LEVELS_TXT[read.level] || READ_LEVELS_TXT.at}): escreva em "passage" o capítulo de hoje do livro "${String(b.book && b.book.title || '').slice(0, 120)}".
+  Premissa: ${String(b.book && b.book.premise || '').slice(0, 600)}
+  ${b.book && b.book.before && b.book.before.length ? `Capítulos anteriores: ${b.book.before.slice(-6).map(c => `${c.title}: ${c.synopsis}`).join(' | ').slice(0, 1500)}` : 'É o primeiro capítulo.'}
+  Capítulo de hoje: "${String(b.book && b.book.chapter && b.book.chapter.title || '').slice(0, 120)}" — ${String(b.book && b.book.chapter && b.book.chapter.synopsis || '').slice(0, 500)}
+  "title": "Nome do livro — Capítulo N: título". Tamanho: ${yn <= 2 ? '120–200' : yn <= 6 ? '250–400' : '400–600'} palavras, no idioma da matéria, parágrafos separados por \n.
+  EXATAMENTE 3 das perguntas são sobre o capítulo (subject ${read.subject}): 1 "open" pedindo o resumo em 2–3 frases e 2 de compreensão ("mc" ou "short", começando com "No capítulo…"/"In the chapter…").` : '- Sem leitura hoje: "passage" com título e texto vazios.'}` }];
+  return claude(env, ctx, {
+    model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low',
+    system: studentProfile(b.name, b.year, b.mine, yn, b.levels), content, schema: DAY_SCHEMA, maxTokens: 14000,
+  });
+}
+
 async function handleMore(env, b, ctx) {
   const n = Math.max(1, Math.min(15, Number(b.n) || 5));  // (reforço também usa este limite)
   const subjects = (b.subjects || []).filter(s => SUBJECT_IDS.includes(s));
@@ -532,7 +659,7 @@ Para cada número: "ok" se responde à pergunta de forma correta e razoável par
 }
 
 /* ---------------- Roteador ---------------- */
-const AI_HANDLERS = { plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen, lesson: handleLesson, reading: handleReading };
+const AI_HANDLERS = { 'plan-outline': handlePlanOutline, 'plan-day': handlePlanDay, plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen, lesson: handleLesson, reading: handleReading };
 
 async function api(req, env, url) {
   const path = url.pathname, m = req.method;
