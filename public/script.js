@@ -350,6 +350,9 @@ function normalizeState(s) {
   merged.equipped = Object.assign(base.equipped, (s && s.equipped) || {});
   merged.practice = Object.assign({ pt: [], en: [] }, merged.practice || {});
   merged.touched = merged.touched || {};
+  // Coleção (ovos): quem já tinha amiguinhos/mascotes comprados continua com eles
+  merged.collection = merged.collection || {};
+  (merged.owned || []).forEach(id => { if ((/^pt-/.test(id) || /^ms-/.test(id)) && !merged.collection[id]) merged.collection[id] = 1; });
   // Extrato v2: todo lançamento tem id; o saldo passa a ser calculado (coinsBase guarda o que já não está no extrato)
   merged.ledger = (merged.ledger || []).map((l, i) => l.id ? l : Object.assign({ id: 'm-' + hashStr(`${l.date}|${l.amount}|${l.reason}|${i}`).toString(36) }, l));
   if (!s || (s.ledgerV || 0) < 2) { merged.coinsBase = (Number(merged.coins) || 0) - ledgerSum(merged.ledger); merged.ledgerV = 2; }
@@ -413,6 +416,7 @@ function mergeStates(localRaw, remoteRaw) {
   M.ledger = led; M.coinsBase = Number.isFinite(R.coinsBase) ? R.coinsBase : L.coinsBase; compactLedger(M);
   M.coins = coinBalance(M);
   M.owned = [...new Set([...(R.owned || []), ...(L.owned || [])])];
+  M.collection = Object.assign({}, R.collection); Object.entries(L.collection || {}).forEach(([k, v]) => { M.collection[k] = Math.max(v || 0, M.collection[k] || 0); });
   Object.keys(L.equipped || {}).forEach(k => { const v = L.equipped[k]; if (v == null || M.owned.includes(v) || k === 'mascot') M.equipped[k] = v; });
   M.redemptions = byId(L.redemptions, R.redemptions).map(x => { const a = (L.redemptions || []).find(y => y.id === x.id), b = (R.redemptions || []).find(y => y.id === x.id); return Object.assign({}, x, { delivered: !!((a && a.delivered) || (b && b.delivered)) }); });
   const newer = k => ((L.touched || {})[k] || 0) > ((R.touched || {})[k] || 0) ? L : R;
@@ -1013,6 +1017,200 @@ function itemPreviewSVG(item) {
   return mascotSVG(eq);
 }
 
+/* ---------- Fase 3: ovos, coleção e troca de mascote ---------- */
+// Mascotes alternativos (desenhos originais no mesmo molde da coruja). O apelido aparece no app quando o mascote está em uso.
+Object.assign(ANIMAL_COLORS, {
+  'ms-bunny': { body: '#f1f3f5', dark: '#c9ced6', belly: '#ffffff', marks: '#ffc9de', ring: '#868e96' },
+  'ms-fox': { body: '#f08c3a', dark: '#c25e12', belly: '#fff4e6', marks: '#3b2a20', ring: '#7a3b0c' },
+  'ms-penguin': { body: '#34495e', dark: '#1f2d3a', belly: '#ffffff', marks: '#ffa94d', ring: '#1f2d3a' },
+  'ms-dino': { body: '#69db7c', dark: '#2f9e44', belly: '#d3f9d8', marks: '#ffd43b', ring: '#2b8a3e' },
+});
+const smile = (mood, y = 55, c = INK) => mood === 'sad'
+  ? `<path d="M45 ${y + 5} q5 -3 10 0" stroke="${c}" stroke-width="1.6" fill="none" stroke-linecap="round"/>`
+  : `<path d="M50 ${y} v2.5 M45 ${y + 2.5} q2.5 3 5 0 q2.5 3 5 0" stroke="${c}" stroke-width="1.5" fill="none" stroke-linecap="round"/>`;
+Object.assign(ANIMALS, {
+  'ms-bunny': (P, mood) => ({
+    behind: `<ellipse cx="37" cy="6" rx="8" ry="19" fill="${P.body}" stroke="${P.dark}" stroke-width="1.5" transform="rotate(-12 37 4)"/><ellipse cx="37" cy="7" rx="4" ry="13.5" fill="${P.marks}" transform="rotate(-12 37 5)"/>
+      <ellipse cx="63" cy="6" rx="8" ry="19" fill="${P.body}" stroke="${P.dark}" stroke-width="1.5" transform="rotate(12 63 4)"/><ellipse cx="63" cy="7" rx="4" ry="13.5" fill="${P.marks}" transform="rotate(12 63 5)"/>
+      <circle cx="81" cy="80" r="8" fill="#fff" stroke="${P.dark}" stroke-width="1.2"/>`,
+    arms: `<ellipse cx="23" cy="69" rx="6" ry="10" fill="${P.body}" stroke="${P.dark}" stroke-width="1.2" transform="rotate(14 23 69)"/><ellipse cx="77" cy="69" rx="6" ry="10" fill="${P.body}" stroke="${P.dark}" stroke-width="1.2" transform="rotate(-14 77 69)"/>`,
+    belly: `<ellipse cx="50" cy="72" rx="17" ry="17" fill="${P.belly}" stroke="${P.dark}" stroke-width=".8" opacity=".95"/>`,
+    face: `${animalEyes(mood, 6)}<path d="M47 50 Q50 48 53 50 Q50 54 47 50Z" fill="#f783ac"/>
+      ${smile(mood, 52.5)}${mood === 'sad' ? '' : '<rect x="48" y="57" width="4" height="4" rx="1" fill="#fff" stroke="#adb5bd" stroke-width=".6"/>'}
+      <path d="M33 52 h-12 M33 55 l-11 3 M67 52 h12 M67 55 l11 3" stroke="#868e96" stroke-width="1" opacity=".6" stroke-linecap="round"/>`,
+    front: '',
+    feet: `<ellipse cx="38" cy="90" rx="10" ry="5" fill="${P.belly}" stroke="${P.dark}" stroke-width="1.2"/><ellipse cx="62" cy="90" rx="10" ry="5" fill="${P.belly}" stroke="${P.dark}" stroke-width="1.2"/>`,
+  }),
+  'ms-fox': (P, mood) => ({
+    behind: `<path d="M22 34 L20 3 L45 20Z" fill="${P.body}"/><path d="M21 12 L20 3 L29 9Z" fill="${P.marks}"/><path d="M78 34 L80 3 L55 20Z" fill="${P.body}"/><path d="M79 12 L80 3 L71 9Z" fill="${P.marks}"/>
+      <path d="M74 84 Q102 84 98 54 Q96 40 86 44 Q92 52 89 62 Q86 74 72 74Z" fill="${P.body}" stroke="${P.dark}" stroke-width="1.4"/><path d="M93 46 Q97 41 98 50 Q98 56 95 58 Q90 52 93 46Z" fill="#fff"/>`,
+    arms: `<ellipse cx="23" cy="69" rx="6" ry="10" fill="${P.dark}" transform="rotate(14 23 69)"/><ellipse cx="77" cy="69" rx="6" ry="10" fill="${P.dark}" transform="rotate(-14 77 69)"/>`,
+    belly: `<ellipse cx="50" cy="73" rx="16" ry="16" fill="${P.belly}"/>`,
+    face: `<path d="M22 50 Q30 63 50 64 Q70 63 78 50 Q66 56 50 49 Q34 56 22 50Z" fill="${P.belly}"/>${animalEyes(mood)}
+      <ellipse cx="50" cy="51" rx="3.6" ry="2.6" fill="${INK}"/>${smile(mood, 54)}`,
+    front: '',
+    feet: `<ellipse cx="39" cy="90" rx="8" ry="4.5" fill="${P.marks}"/><ellipse cx="61" cy="90" rx="8" ry="4.5" fill="${P.marks}"/>`,
+  }),
+  'ms-penguin': (P, mood) => ({
+    behind: `<path d="M46 20 Q50 10 54 20" stroke="${P.body}" stroke-width="3" fill="none" stroke-linecap="round"/>`,
+    arms: `<ellipse cx="20" cy="64" rx="6.5" ry="16" fill="${P.dark}" transform="rotate(22 20 64)"/><ellipse cx="80" cy="64" rx="6.5" ry="16" fill="${P.dark}" transform="rotate(-22 80 64)"/>`,
+    belly: `<path d="M50 30 Q60 28 66 32 Q78 36 77 50 Q80 62 72 78 Q64 92 50 92 Q36 92 28 78 Q20 62 23 50 Q22 36 34 32 Q40 28 50 30Z" fill="${P.belly}"/>`,
+    face: `${animalEyes(mood)}<path d="M44.5 49 L55.5 49 L50 56Z" fill="${P.marks}" stroke="#e8590c" stroke-width=".9" stroke-linejoin="round"/>
+      ${mood === 'sad' ? `<path d="M45 61 q5 -3 10 0" stroke="${INK}" stroke-width="1.5" fill="none" stroke-linecap="round"/>` : ''}`,
+    front: '',
+    feet: `<path d="M31 88 l9 -2 l6 4 l-7 3Z M69 88 l-9 -2 l-6 4 l7 3Z" fill="${P.marks}" stroke="#e8590c" stroke-width=".8" stroke-linejoin="round"/>`,
+  }),
+  'ms-dino': (P, mood) => ({
+    behind: `${[[27, 26], [36, 19], [46, 16], [56, 16], [66, 19], [74, 26]].map(([x, y]) => `<path d="M${x - 5} ${y + 6} L${x} ${y - 6} L${x + 5} ${y + 6}Z" fill="${P.marks}" stroke="#f08c00" stroke-width="1" stroke-linejoin="round"/>`).join('')}
+      <path d="M74 80 Q96 86 102 70 Q94 76 80 70Z" fill="${P.body}" stroke="${P.dark}" stroke-width="1.4" stroke-linejoin="round"/>`,
+    arms: `<ellipse cx="24" cy="66" rx="5.5" ry="8" fill="${P.body}" stroke="${P.dark}" stroke-width="1.2" transform="rotate(30 24 66)"/><ellipse cx="76" cy="66" rx="5.5" ry="8" fill="${P.body}" stroke="${P.dark}" stroke-width="1.2" transform="rotate(-30 76 66)"/>`,
+    belly: `<ellipse cx="50" cy="72" rx="17" ry="18" fill="${P.belly}"/><path d="M36 66 h28 M34 73 h32 M36 80 h28" stroke="${P.dark}" stroke-width="1" opacity=".35"/>`,
+    face: `${animalEyes(mood)}<circle cx="46" cy="51" r="1.2" fill="${P.dark}"/><circle cx="54" cy="51" r="1.2" fill="${P.dark}"/>
+      ${mood === 'sad' ? `<path d="M42 60 q8 -4 16 0" stroke="${INK}" stroke-width="1.6" fill="none" stroke-linecap="round"/>` : `<path d="M40 55 Q50 63 60 55" stroke="${INK}" stroke-width="1.7" fill="none" stroke-linecap="round"/>`}
+      <circle cx="30" cy="34" r="2" fill="${P.dark}" opacity=".35"/><circle cx="70" cy="30" r="2.5" fill="${P.dark}" opacity=".35"/>`,
+    front: '',
+    feet: `<ellipse cx="38" cy="90" rx="9" ry="5" fill="${P.body}" stroke="${P.dark}" stroke-width="1.2"/><ellipse cx="62" cy="90" rx="9" ry="5" fill="${P.body}" stroke="${P.dark}" stroke-width="1.2"/><path d="M33 89 v2 M37 89 v2 M57 89 v2 M61 89 v2" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>`,
+  }),
+});
+const MASCOTS = [
+  { id: 'ms-owl', name: 'Corujinha', nick: 'Lumi' },
+  { id: 'ms-dog', name: 'Cachorrinho', nick: 'Pipoca' },
+  { id: 'ms-cat', name: 'Gatinho', nick: 'Mel' },
+  { id: 'ms-panda', name: 'Pandinha', nick: 'Bambu' },
+  { id: 'ms-bunny', name: 'Coelhinho', nick: 'Nina' },
+  { id: 'ms-fox', name: 'Raposinha', nick: 'Faísca' },
+  { id: 'ms-penguin', name: 'Pinguim', nick: 'Picolé' },
+  { id: 'ms-dino', name: 'Dinossaurinho', nick: 'Brontinho' },
+];
+function mascotName(eq = S.equipped) { const m = MASCOTS.find(x => x.id === (eq && eq.mascot)); return m ? m.nick : 'Lumi'; }
+// Amiguinhos: só por ovo. Raridade e chances (transparentes para a criança).
+SHOP_ITEMS.push(
+  { id: 'pt-hamster', cat: 'pet', name: 'Hamster', price: 0, emoji: '🐹' },
+  { id: 'pt-ladybug', cat: 'pet', name: 'Joaninha', price: 0, emoji: '🐞' },
+  { id: 'pt-snail', cat: 'pet', name: 'Caracol', price: 0, emoji: '🐌' },
+  { id: 'pt-hedgehog', cat: 'pet', name: 'Porco-espinho', price: 0, emoji: '🦔' },
+  { id: 'pt-parrot', cat: 'pet', name: 'Papagaio', price: 0, emoji: '🦜' },
+  { id: 'pt-sloth', cat: 'pet', name: 'Bicho-preguiça', price: 0, emoji: '🦥' },
+);
+const RARITY = {
+  common: { label: 'Comum', pct: 55, color: '#868e96' },
+  rare: { label: 'Raro', pct: 28, color: '#1c7ed6' },
+  epic: { label: 'Épico', pct: 14, color: '#9c36b5' },
+  legendary: { label: 'Lendário', pct: 3, color: '#f08c00' },
+};
+const PET_RARITY = {
+  common: ['pt-fish', 'pt-bunny', 'pt-turtle', 'pt-chick', 'pt-hamster', 'pt-snail', 'pt-ladybug', 'pt-octo'],
+  rare: ['pt-cat', 'pt-dog', 'pt-penguin', 'pt-hedgehog', 'pt-parrot', 'pt-sloth'],
+  epic: ['pt-fox', 'pt-koala', 'pt-dolphin', 'pt-pony', 'pt-panda'],
+  legendary: ['pt-dragon', 'pt-unicorn'],
+};
+const petRarity = id => Object.keys(PET_RARITY).find(r => PET_RARITY[r].includes(id)) || 'common';
+const ALL_PETS = Object.values(PET_RARITY).flat();
+// Os ovos à venda (as categorias "Amiguinhos" e "Trocar de bicho" saem da compra direta)
+SHOP_CATS.splice(0, SHOP_CATS.length, ...SHOP_CATS.filter(c => !['pet', 'mascot'].includes(c.id)));
+SHOP_CATS.unshift({ id: 'egg', label: '🥚 Ovos' });
+SHOP_CATS.forEach(c => { if (c.id === 'skin') c.label = '🎨 Cores'; });
+SHOP_ITEMS.push(
+  { id: 'egg-pet', cat: 'egg', name: 'Ovo de amiguinho', price: 250, egg: 'pet' },
+  { id: 'egg-mascot', cat: 'egg', name: 'Ovo de mascote', price: 600, egg: 'mascot' },
+);
+function eggSVG(kind, cls = '') {
+  const c = kind === 'mascot' ? ['#ffe066', '#f59f00', '#fff9db', '#ff922b'] : ['#a5d8ff', '#339af0', '#e7f5ff', '#ff8fab'];
+  const id = 'e' + uid();
+  const deco = kind === 'mascot'
+    ? [[34, 40], [62, 30], [50, 66], [30, 72], [70, 66]].map(([x, y]) => `<path d="M${x} ${y - 6} l1.8 4 l4.2 .4 l-3.2 2.8 l1 4.2 l-3.8 -2.2 l-3.8 2.2 l1 -4.2 l-3.2 -2.8 l4.2 -.4Z" fill="${c[3]}" opacity=".85"/>`).join('')
+    : [[36, 36, 5], [62, 28, 4], [56, 52, 6], [32, 64, 4], [68, 70, 5], [46, 80, 3.5]].map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r}" fill="${c[3]}" opacity=".7"/>`).join('');
+  const egg = `<path d="M50 6 C72 6 86 40 86 62 C86 84 70 96 50 96 C30 96 14 84 14 62 C14 40 28 6 50 6Z" fill="${c[0]}" stroke="${c[1]}" stroke-width="2"/>${deco}<path d="M32 26 Q38 16 46 14" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" opacity=".6"/>`;
+  const zz = '0,54 10,48 20,56 30,48 40,56 50,48 60,56 70,48 80,56 90,48 100,54';
+  return `<svg class="egg ${cls}" viewBox="-6 -10 112 112" aria-hidden="true"><defs><clipPath id="${id}t"><polygon points="0,-10 100,-10 ${zz.split(' ').reverse().join(' ')}"/></clipPath><clipPath id="${id}b"><polygon points="${zz} 100,100 0,100"/></clipPath></defs>
+    <ellipse cx="50" cy="98" rx="26" ry="4" fill="rgba(0,0,0,.12)"/>
+    <g class="egg-bot" clip-path="url(#${id}b)">${egg}</g><g class="egg-top" clip-path="url(#${id}t)">${egg}</g>
+    <polyline class="egg-crack" points="${zz}" fill="none" stroke="#5c3a1a" stroke-width="2" stroke-linejoin="round"/></svg>`;
+}
+function rollPet() {
+  const r = Math.random() * 100; let acc = 0; let rar = 'common';
+  for (const k of Object.keys(RARITY)) { acc += RARITY[k].pct; if (r < acc) { rar = k; break; } }
+  const list = PET_RARITY[rar];
+  return list[Math.floor(Math.random() * list.length)];
+}
+function rollMascot() { const list = MASCOTS.filter(m => m.id !== 'ms-owl'); return list[Math.floor(Math.random() * list.length)].id; }
+function collectionCount(id) { return (S.collection || {})[id] || 0; }
+async function buyEgg(it) {
+  if (S.coins < it.price) { say(`Faltam <b>${it.price - Math.max(0, S.coins)}</b> moedas para o ${esc(it.name.toLowerCase())}. Que tal uns exercícios extras? ⭐`, { mood: 'think' }); return; }
+  const ok = await confirmBox('Comprar e chocar?', `${esc(it.name)} por <b>🪙 ${it.price}</b>?<br><span class="tiny muted">Sai um ${it.egg === 'mascot' ? 'mascote' : 'amiguinho'} surpresa. Pode vir repetido!</span>`, 'Comprar 🥚');
+  if (!ok) return;
+  const prize = it.egg === 'mascot' ? rollMascot() : rollPet();
+  addCoins(-it.price, 'Lojinha: ' + it.name);
+  S.collection = S.collection || {};
+  const n = (S.collection[prize] || 0) + 1;
+  S.collection[prize] = n;
+  if (!S.owned.includes(prize)) S.owned.push(prize);
+  S.eggsToday = S.eggsToday && S.eggsToday.date === today() ? { date: today(), n: S.eggsToday.n + 1 } : { date: today(), n: 1 };
+  save();
+  if (typeof questEvent === 'function') questEvent('buy', { cat: 'egg', price: it.price });
+  if (currentScreen === 'shop') renderShop();
+  hatchModal(it.egg, prize, n);
+}
+function prizeInfo(id) {
+  const m = MASCOTS.find(x => x.id === id);
+  if (m) return { name: `${m.name} “${m.nick}”`, pic: mascotSVG(Object.assign({}, S.equipped, { mascot: id, skin: null }), 'wow'), rar: null };
+  const p = SHOP_ITEMS.find(x => x.id === id) || {};
+  return { name: p.name || id, pic: `<span class="hatch-emoji">${p.emoji || '❓'}</span>`, rar: petRarity(id) };
+}
+function hatchModal(kind, prize, n) {
+  const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const m = openModal(`<div class="modal-body hatch"><div class="egg-stage" id="egg-stage">${eggSVG(kind, 'shake')}</div>
+    <h3 id="hatch-t">${kind === 'mascot' ? 'Chocando o ovo de mascote…' : 'Chocando o ovo…'} 🥚</h3><div id="hatch-r"></div></div>
+    <div class="modal-foot" id="hatch-f" style="justify-content:center"></div>`);
+  const stage = $('#egg-stage', m);
+  const reveal = () => {
+    const info = prizeInfo(prize);
+    const rar = info.rar ? RARITY[info.rar] : null;
+    stage.innerHTML = `<div class="hatch-prize ${info.rar || 'mascot'}">${info.pic}</div>`;
+    $('#hatch-t', m).innerHTML = n > 1 ? `Repetido! ${esc(info.name)} <span class="dup">×${n}</span>` : `Nasceu: ${esc(info.name)}! 🎉`;
+    $('#hatch-r', m).innerHTML = `${rar ? `<span class="rar-tag" style="--rar:${rar.color}">${rar.label}</span>` : '<span class="rar-tag" style="--rar:#f59f00">Mascote</span>'}
+      <p class="tiny muted">${n > 1 ? 'Ele vai para a coleção como repetido. Continue caçando os que faltam! 🔎' : 'Novo na sua coleção! 📖'}</p>`;
+    const isM = MASCOTS.some(x => x.id === prize);
+    $('#hatch-f', m).innerHTML = `<button class="btn" data-col>📖 Ver coleção</button><button class="btn primary" data-use>${isM ? 'Usar este mascote' : 'Levar comigo'}</button>`;
+    $('[data-col]', m).onclick = () => { closeModal(); show('collection'); };
+    $('[data-use]', m).onclick = () => { equipCollectible(prize); closeModal(); };
+    if (typeof celebrateFX === 'function') celebrateFX(info.rar === 'legendary' || isM ? 'big' : 'small');
+  };
+  if (reduce) { setTimeout(reveal, 400); return; }
+  setTimeout(() => { const e = $('.egg', stage); if (e) e.classList.add('crack'); }, 1300);
+  setTimeout(() => { const e = $('.egg', stage); if (e) e.classList.add('open'); }, 2100);
+  setTimeout(reveal, 2700);
+}
+function equipCollectible(id) {
+  if (MASCOTS.some(x => x.id === id)) S.equipped.mascot = id === 'ms-owl' ? null : id;
+  else S.equipped.pet = S.equipped.pet === id ? null : id;
+  save(); renderMascotMini(); renderCoins();
+  if (currentScreen === 'collection') renderCollection(); else if (currentScreen === 'shop') renderShop();
+  say(MASCOTS.some(x => x.id === id) ? `Oi! Agora eu sou ${esc(mascotName())}! Vamos estudar? 😄` : (S.equipped.pet ? 'Que amiguinho fofo! Ele vai ficar do meu lado. 💛' : 'Amiguinho guardado na coleção.'), { mood: 'wow' });
+}
+function renderCollection() {
+  const el = $('#scr-collection');
+  const pets = ALL_PETS.map(id => SHOP_ITEMS.find(x => x.id === id)).filter(Boolean);
+  const havePets = pets.filter(p => collectionCount(p.id)).length;
+  const haveM = MASCOTS.filter(m => m.id === 'ms-owl' || collectionCount(m.id)).length;
+  const petCard = p => { const n = collectionCount(p.id); const r = RARITY[petRarity(p.id)];
+    return n ? `<button type="button" class="col-card ${S.equipped.pet === p.id ? 'on' : ''}" data-col="${p.id}" style="--rar:${r.color}"><span class="col-emoji">${p.emoji}</span><b>${esc(p.name)}</b><span class="rar-mini">${r.label}</span>${n > 1 ? `<span class="dup">×${n}</span>` : ''}${S.equipped.pet === p.id ? '<span class="col-on">Comigo ✔</span>' : ''}</button>`
+      : `<div class="col-card missing" style="--rar:${r.color}"><span class="col-emoji sil">${p.emoji}</span><b>???</b><span class="rar-mini">${r.label}</span></div>`; };
+  const mCard = mm => { const n = mm.id === 'ms-owl' ? 1 : collectionCount(mm.id); const on = (S.equipped.mascot || 'ms-owl') === mm.id;
+    const svg = mascotSVG({ hat: null, glasses: null, neck: null, back: null, skin: null, pet: null, fx: null, mascot: mm.id === 'ms-owl' ? null : mm.id });
+    return n ? `<button type="button" class="col-card m ${on ? 'on' : ''}" data-col="${mm.id}"><span class="col-svg">${svg}</span><b>${esc(mm.nick)}</b><span class="rar-mini">${esc(mm.name)}</span>${n > 1 ? `<span class="dup">×${n}</span>` : ''}${on ? '<span class="col-on">No app ✔</span>' : ''}</button>`
+      : `<div class="col-card m missing"><span class="col-svg sil">${svg}</span><b>???</b><span class="rar-mini">Mascote</span></div>`; };
+  el.innerHTML = `<div class="collection">
+    <div class="card"><div class="row wrap"><h3 class="grow" style="margin:0">📖 Minha coleção</h3><button class="btn small" data-act="toshop">🥚 Comprar ovos</button></div>
+      <p class="tiny muted" style="margin:4px 0 0">Toque num amiguinho para levá-lo com você, ou num mascote para trocar quem aparece no app. As roupinhas servem em todos os mascotes.</p></div>
+    <div class="card"><b>🦉 Mascotes <span class="col-count">${haveM}/${MASCOTS.length}</span></b><div class="col-grid">${MASCOTS.map(mCard).join('')}</div></div>
+    <div class="card"><b>🐾 Amiguinhos <span class="col-count">${havePets}/${pets.length}</span></b>
+      <div class="tiny muted">Chances no ovo: ${Object.values(RARITY).map(r => `<span style="color:${r.color};font-weight:800">${r.label} ${r.pct}%</span>`).join(' · ')}</div>
+      <div class="col-grid">${pets.map(petCard).join('')}</div></div></div>`;
+  $$('[data-col]', el).forEach(b => b.onclick = () => equipCollectible(b.dataset.col));
+  $('[data-act=toshop]', el).onclick = () => { VIEW.shopCat = 'egg'; show('shop'); };
+}
+
 let bubbleTimer = null;
 function say(text, opts = {}) {
   const b = $('#bubble');
@@ -1080,7 +1278,7 @@ function mascotClick() {
 function runTour() {
   const st = S.settings;
   const steps = [
-    `Oi, ${esc(S.name)}! Eu sou a <b>${MASCOT_NAME}</b> 🦉 e vou estudar com você!`,
+    `Oi, ${esc(S.name)}! Eu sou ${S.equipped && S.equipped.mascot ? '' : 'a '}<b>${mascotName()}</b> ${S.equipped && S.equipped.mascot ? '' : '🦉 '}e vou estudar com você!`,
     'Eu sou uma <b>inteligência artificial</b> (um programa de computador, feito com o Claude), não uma pessoa. Às vezes posso errar: se algo parecer estranho, mostre para um adulto. 💜',
     'Toda semana você escreve em <b>📝 Minha semana</b> o que está aprendendo na escola. Eu transformo isso em tarefas.',
     'Cada dia tem uma tarefa curtinha. <b>Sábado e domingo</b> têm um pouquinho mais.',
@@ -1844,17 +2042,17 @@ function archiveWeek(w) {
    7. TELAS
    ========================================================================= */
 let currentScreen = 'home';
-const VIEW = { setupTab: 'pt', setupCycle: null, setupMode: null, shopCat: 'hat', parentTab: 'review', parentsUnlocked: false, work: null, check: null, selfMarks: {} };
+const VIEW = { setupTab: 'pt', setupCycle: null, setupMode: null, shopCat: 'egg', parentTab: 'review', parentsUnlocked: false, work: null, check: null, selfMarks: {} };
 
 function show(screen) {
   currentScreen = screen;
   $('#app').dataset.mode = screen === 'login' ? 'auth' : 'app';
   $$('.screen').forEach(s => s.classList.toggle('active', s.id === 'scr-' + screen));
   $$('.top-nav button').forEach(b => b.classList.toggle('active', b.dataset.nav === screen));
-  const titles = { welcome: 'Bem-vinda!', login: 'Estudos com a Lumi', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', check: '📄 Corrigir folha', selfcheck: '✍️ Corrigir', shop: '🛒 Lojinha', parents: '🔒 Área dos pais', workshop: '✏️ Oficina de palavras' };
+  const titles = { welcome: 'Bem-vinda!', login: 'Estudos com a Lumi', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', check: '📄 Corrigir folha', selfcheck: '✍️ Corrigir', shop: '🛒 Lojinha', parents: '🔒 Área dos pais', workshop: '✏️ Oficina de palavras', collection: '📖 Minha coleção' };
   $('#top-title').textContent = titles[screen] || 'Estudos';
   hideBubble();
-  ({ welcome: renderWelcome, login: renderLogin, home: renderHome, setup: renderSetup, work: renderWork, check: renderCheck, selfcheck: renderSelfCheck, shop: renderShop, parents: renderParents, workshop: renderWorkshop })[screen]();
+  ({ welcome: renderWelcome, login: renderLogin, home: renderHome, setup: renderSetup, work: renderWork, check: renderCheck, selfcheck: renderSelfCheck, shop: renderShop, parents: renderParents, workshop: renderWorkshop, collection: renderCollection })[screen]();
 }
 function renderCoins(pop) {
   $('#coin-count').textContent = S.coins;
@@ -3117,6 +3315,7 @@ function renderSelfCheck() {
 function vouchersAsItems() { return (S.vouchers || []).map(v => ({ id: v.id, cat: 'voucher', name: v.name, price: Number(v.price) || 0 })); }
 function renderShop() {
   const el = $('#scr-shop');
+  if (!SHOP_CATS.some(c => c.id === VIEW.shopCat)) VIEW.shopCat = 'egg';
   const cat = VIEW.shopCat;
   const items = (cat === 'voucher' ? vouchersAsItems() : SHOP_ITEMS.filter(i => i.cat === cat)).slice().sort((a, b) => a.price - b.price);
   const tryOn = VIEW.tryOn && SHOP_ITEMS.find(i => i.id === VIEW.tryOn);
@@ -3126,6 +3325,11 @@ function renderShop() {
     const owned = S.owned.includes(it.id) || it.id === 'ms-owl';
     const equipped = it.id === 'ms-owl' ? !S.equipped.mascot : S.equipped[it.cat] === it.id;
     let pic = '';
+    if (it.cat === 'egg') {
+      const chances = it.egg === 'mascot' ? `${MASCOTS.length - 1} mascotes, chances iguais · você tem ${MASCOTS.filter(m => m.id !== 'ms-owl' && collectionCount(m.id)).length}/${MASCOTS.length - 1}`
+        : `${Object.values(RARITY).map(r => `<span style="color:${r.color}">${r.label} ${r.pct}%</span>`).join(' · ')} · você tem ${ALL_PETS.filter(id => collectionCount(id)).length}/${ALL_PETS.length}`;
+      return `<div class="item egg-item"><div class="pic">${eggSVG(it.egg, 'idle')}</div><div class="nm">${esc(it.name)}</div><div class="tiny egg-odds">${chances}</div><div class="pr">🪙 ${it.price}</div><div class="item-act"><button class="btn small primary" data-buy="${it.id}">Comprar e chocar 🥚</button></div></div>`;
+    }
     if (WEAR.includes(it.cat)) pic = itemPreviewSVG(it);
     else if (it.cat === 'bg') pic = `<div class="swatch" style="background:${it.sw}"></div>`;
     else if (it.cat === 'sticker') pic = it.emoji;
@@ -3143,12 +3347,15 @@ function renderShop() {
     <div class="shop-preview"><div>${mascotSVG(previewEq, tryOn ? 'wow' : 'happy')}</div>
       <div><b>Saldo: 🪙 ${S.coins}</b>${S.coins < 0 ? '<div class="tiny" style="color:var(--bad)">Saldo negativo: a lojinha volta quando ficar positivo.</div>' : ''}
       ${tryOn ? `<div class="tiny muted">Provando: ${esc(tryOn.name)}</div>` : ''}
-      ${pend.length ? `<div class="tiny muted">🎟️ ${pend.length} vale(s) aguardando os pais</div>` : ''}</div></div>
+      ${pend.length ? `<div class="tiny muted">🎟️ ${pend.length} vale(s) aguardando os pais</div>` : ''}
+      <button class="btn small" data-act="collection" style="margin-top:4px">📖 Minha coleção</button>
+      ${['hat', 'glasses', 'neck', 'back', 'skin'].includes(cat) ? '<div class="tiny muted">As roupinhas servem em todos os mascotes.</div>' : ''}</div></div>
     <div class="shop-main">
       <div class="tabs">${SHOP_CATS.map(c => `<button data-cat="${c.id}" class="${c.id === cat ? 'on' : ''}">${c.label}</button>`).join('')}</div>
       <div class="items">${cards || '<p class="muted">Nada aqui ainda.</p>'}</div>
     </div></div>`;
   $$('[data-cat]', el).forEach(b => b.onclick = () => { VIEW.shopCat = b.dataset.cat; VIEW.tryOn = null; renderShop(); });
+  $('[data-act=collection]', el).onclick = () => show('collection');
   $$('[data-try]', el).forEach(b => b.onclick = () => { VIEW.tryOn = b.dataset.try; renderShop(); });
   $$('[data-buy]', el).forEach(b => b.onclick = () => buy(b.dataset.buy));
   $$('[data-equip]', el).forEach(b => b.onclick = () => { const it = SHOP_ITEMS.find(i => i.id === b.dataset.equip); S.equipped[it.cat] = it.id === 'ms-owl' ? null : it.id; save(); applyTheme(); renderMascotMini(); renderShop(); });
@@ -3157,6 +3364,7 @@ function renderShop() {
 async function buy(id) {
   const it = SHOP_ITEMS.find(i => i.id === id) || vouchersAsItems().find(v => v.id === id);
   if (!it) return;
+  if (it.cat === 'egg') return buyEgg(it);
   if (S.coins < it.price) { say(`Faltam <b>${it.price - Math.max(0, S.coins)}</b> moedas para ${esc(it.name)}. Que tal uns exercícios extras? ⭐`, { mood: 'think' }); return; }
   const ok = await confirmBox(it.cat === 'voucher' ? 'Resgatar vale?' : 'Comprar?', `${esc(it.name)} por <b>🪙 ${it.price}</b>?${it.cat === 'voucher' ? '<br><span class="muted tiny">Os pais vão confirmar a entrega do prêmio.</span>' : ''}`, it.cat === 'voucher' ? 'Resgatar' : 'Comprar');
   if (!ok) return;
@@ -3169,7 +3377,7 @@ async function buy(id) {
   }
   VIEW.tryOn = null;
   save(); applyTheme(); renderMascotMini(); renderShop();
-  say(it.cat === 'sticker' ? `${it.emoji} foi para o seu álbum!` : it.cat === 'voucher' ? 'Vale resgatado! Mostre para os seus pais. 🎟️' : (it.cat === 'mascot' ? `Olha eu de ${esc(it.name.toLowerCase())}! Continuo sendo a Lumi. 😍` : 'Amei! Obrigada! 😍'), { mood: 'wow' });
+  say(it.cat === 'sticker' ? `${it.emoji} foi para o seu álbum!` : it.cat === 'voucher' ? 'Vale resgatado! Mostre para os seus pais. 🎟️' : 'Amei! Obrigada! 😍', { mood: 'wow' });
 }
 
 /* ---------- ✏️ Oficina de palavras: treinar as palavras da semana e as que errou ---------- */
