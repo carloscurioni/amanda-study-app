@@ -1,0 +1,765 @@
+{
+  "version": 1,
+  "year": "Y12",
+  "stage": "ib",
+  "subject": "math",
+  "level": "sl",
+  "language": "en",
+  "source": "IB Diploma Programme Mathematics: analysis and approaches guide (first assessment 2021), SL — topics 1–5 and toolkit/exploration",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Number skills: scientific notation and the GDC toolkit (SL 1.1)",
+      "objectives": [
+        "Operate with numbers in the form a × 10^k",
+        "Use the GDC efficiently for calculations and graphs",
+        "Round answers to an appropriate degree of accuracy"
+      ],
+      "keywords": [
+        "scientific notation",
+        "standard form",
+        "significant figures",
+        "GDC",
+        "toolkit"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Arithmetic sequences and series (SL 1.2)",
+      "objectives": [
+        "Use the nth term formula of an arithmetic sequence",
+        "Find sums of arithmetic series using sigma notation",
+        "Model real-life contexts with arithmetic sequences"
+      ],
+      "keywords": [
+        "arithmetic sequence",
+        "common difference",
+        "nth term",
+        "series",
+        "sigma notation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Geometric sequences and series; infinite geometric series (SL 1.3, 1.8)",
+      "objectives": [
+        "Use nth term and sum formulas for geometric sequences",
+        "Decide when an infinite geometric series converges",
+        "Calculate the sum to infinity"
+      ],
+      "keywords": [
+        "geometric sequence",
+        "common ratio",
+        "sum to infinity",
+        "convergence",
+        "series"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Financial applications: compound interest and depreciation (SL 1.4)",
+      "objectives": [
+        "Calculate compound interest with different compounding periods",
+        "Model depreciation with geometric sequences",
+        "Use the GDC finance solver"
+      ],
+      "keywords": [
+        "compound interest",
+        "depreciation",
+        "annual rate",
+        "compounding",
+        "TVM solver"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Laws of exponents and introduction to logarithms (SL 1.5, 1.7)",
+      "objectives": [
+        "Apply the laws of exponents, including rational exponents",
+        "Understand logarithms as the inverse of exponentials",
+        "Evaluate logarithms in base 10 and base e"
+      ],
+      "keywords": [
+        "exponent",
+        "index laws",
+        "logarithm",
+        "base",
+        "natural logarithm",
+        "e"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Laws of logarithms and exponential equations (SL 1.7)",
+      "objectives": [
+        "Apply the laws of logarithms",
+        "Use the change of base formula",
+        "Solve exponential equations using logarithms"
+      ],
+      "keywords": [
+        "laws of logarithms",
+        "change of base",
+        "exponential equation",
+        "ln",
+        "log"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Simple deductive proof (SL 1.6)",
+      "objectives": [
+        "Construct proofs working from LHS to RHS",
+        "Use correct mathematical notation and language",
+        "Distinguish between proof and checking examples"
+      ],
+      "keywords": [
+        "deductive proof",
+        "identity",
+        "LHS",
+        "RHS",
+        "notation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "The binomial theorem (SL 1.9)",
+      "objectives": [
+        "Expand (a + b)^n for positive integer n",
+        "Use Pascal's triangle and nCr",
+        "Find a specific term or coefficient in an expansion"
+      ],
+      "keywords": [
+        "binomial theorem",
+        "Pascal's triangle",
+        "nCr",
+        "coefficient",
+        "expansion"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Lines and the concept of a function (SL 2.1, 2.2)",
+      "objectives": [
+        "Find equations of lines in gradient-intercept and general form",
+        "Use function notation, domain and range",
+        "Use gradients of parallel and perpendicular lines"
+      ],
+      "keywords": [
+        "gradient",
+        "y = mx + c",
+        "function",
+        "domain",
+        "range",
+        "perpendicular"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Graphs, composite and inverse functions (SL 2.3–2.5)",
+      "objectives": [
+        "Sketch graphs and identify key features (intercepts, asymptotes, extrema)",
+        "Form composite functions",
+        "Find inverse functions and reflect in y = x"
+      ],
+      "keywords": [
+        "graph",
+        "intercept",
+        "asymptote",
+        "composite function",
+        "inverse function",
+        "y = x"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Quadratic functions, equations and the discriminant (SL 2.6, 2.7)",
+      "objectives": [
+        "Use standard, factorised and vertex forms of a quadratic",
+        "Solve quadratic equations and inequalities",
+        "Use the discriminant to classify roots"
+      ],
+      "keywords": [
+        "quadratic",
+        "vertex",
+        "axis of symmetry",
+        "discriminant",
+        "roots",
+        "completing the square"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "Rational, exponential and logarithmic functions (SL 2.8, 2.9)",
+      "objectives": [
+        "Sketch reciprocal and simple rational functions with asymptotes",
+        "Sketch exponential and logarithmic graphs",
+        "Interpret exponential growth and decay models"
+      ],
+      "keywords": [
+        "reciprocal function",
+        "rational function",
+        "asymptote",
+        "exponential function",
+        "logarithmic function"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Solving equations graphically and analytically (SL 2.10)",
+      "objectives": [
+        "Solve equations by factorising, substitution and logarithms",
+        "Use the GDC to find intersections and roots",
+        "Choose between analytic and graphical methods"
+      ],
+      "keywords": [
+        "solve",
+        "intersection",
+        "root",
+        "analytic method",
+        "graphical method"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Transformations of graphs (SL 2.11)",
+      "objectives": [
+        "Apply translations, stretches and reflections",
+        "Describe composite transformations in order",
+        "Relate f(x) notation to graph changes"
+      ],
+      "keywords": [
+        "translation",
+        "stretch",
+        "reflection",
+        "f(x + a)",
+        "af(x)",
+        "transformation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Review: number, algebra and functions",
+      "objectives": [
+        "Consolidate sequences, logarithms and binomial expansion",
+        "Practise function and graph questions",
+        "Identify personal gaps for the holiday"
+      ],
+      "keywords": [
+        "review",
+        "sequences",
+        "logarithms",
+        "functions",
+        "graphs"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Statistics: sampling and presenting data (SL 4.1, 4.2)",
+      "objectives": [
+        "Distinguish populations and samples and sampling techniques",
+        "Construct histograms, box plots and cumulative frequency graphs",
+        "Identify outliers and bias"
+      ],
+      "keywords": [
+        "population",
+        "sample",
+        "sampling technique",
+        "histogram",
+        "box plot",
+        "cumulative frequency",
+        "outlier"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Measures of central tendency and dispersion (SL 4.3)",
+      "objectives": [
+        "Calculate mean, median, mode, quartiles and IQR",
+        "Find variance and standard deviation with the GDC",
+        "Interpret the effect of constant changes on data"
+      ],
+      "keywords": [
+        "mean",
+        "median",
+        "quartile",
+        "interquartile range",
+        "standard deviation",
+        "variance"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Correlation and regression (SL 4.4, 4.10)",
+      "objectives": [
+        "Calculate and interpret Pearson's correlation coefficient r",
+        "Find regression lines of y on x and x on y",
+        "Judge when predictions are valid"
+      ],
+      "keywords": [
+        "correlation",
+        "Pearson's r",
+        "regression line",
+        "scatter diagram",
+        "extrapolation",
+        "interpolation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Probability: Venn diagrams, tree diagrams and conditional probability (SL 4.5, 4.6, 4.11)",
+      "objectives": [
+        "Use sample spaces, Venn and tree diagrams",
+        "Calculate conditional probabilities",
+        "Test for independent and mutually exclusive events"
+      ],
+      "keywords": [
+        "probability",
+        "sample space",
+        "Venn diagram",
+        "tree diagram",
+        "conditional probability",
+        "independent events"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Discrete random variables and expected value (SL 4.7)",
+      "objectives": [
+        "Construct probability distributions for discrete random variables",
+        "Calculate expected value E(X)",
+        "Apply expected value to fair games"
+      ],
+      "keywords": [
+        "random variable",
+        "probability distribution",
+        "expected value",
+        "fair game",
+        "discrete"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "The binomial distribution (SL 4.8)",
+      "objectives": [
+        "Recognise conditions for a binomial model",
+        "Calculate binomial probabilities with the GDC",
+        "Find mean and variance of B(n, p)"
+      ],
+      "keywords": [
+        "binomial distribution",
+        "trials",
+        "success",
+        "B(n, p)",
+        "mean",
+        "variance"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "The normal distribution and standardisation (SL 4.9, 4.12)",
+      "objectives": [
+        "Describe properties of the normal distribution",
+        "Calculate normal probabilities and inverse normal values",
+        "Standardise values using z-scores"
+      ],
+      "keywords": [
+        "normal distribution",
+        "bell curve",
+        "z-score",
+        "standardisation",
+        "inverse normal"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "3D geometry and right-angled trigonometry (SL 3.1, 3.2)",
+      "objectives": [
+        "Find distances, midpoints, volumes and surface areas of 3D solids",
+        "Find the angle between a line and a plane",
+        "Use sine, cosine and tangent in right triangles"
+      ],
+      "keywords": [
+        "3D solid",
+        "volume",
+        "surface area",
+        "midpoint",
+        "SOH CAH TOA",
+        "angle with a plane"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Non-right-angled trigonometry and applications (SL 3.2, 3.3)",
+      "objectives": [
+        "Use the sine rule, including the ambiguous case",
+        "Use the cosine rule and area = ½ab sin C",
+        "Solve problems with bearings and angles of elevation"
+      ],
+      "keywords": [
+        "sine rule",
+        "cosine rule",
+        "ambiguous case",
+        "area of triangle",
+        "bearings",
+        "angle of elevation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Radian measure, arcs, sectors and the unit circle (SL 3.4, 3.5)",
+      "objectives": [
+        "Convert between degrees and radians",
+        "Calculate arc length and sector area",
+        "Define sin, cos and tan using the unit circle"
+      ],
+      "keywords": [
+        "radian",
+        "arc length",
+        "sector",
+        "unit circle",
+        "exact values"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Trigonometric identities: Pythagorean and double angle (SL 3.6)",
+      "objectives": [
+        "Use sin²θ + cos²θ = 1",
+        "Use double angle identities for sine and cosine",
+        "Find exact values of trigonometric ratios"
+      ],
+      "keywords": [
+        "identity",
+        "Pythagorean identity",
+        "double angle",
+        "exact value",
+        "tan θ"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mid-year exams: number, functions and statistics",
+      "objectives": [
+        "Complete timed papers with and without a calculator",
+        "Apply topics 1, 2 and 4 under exam conditions",
+        "Reflect on errors and time management"
+      ],
+      "keywords": [
+        "exam",
+        "Paper 1",
+        "Paper 2",
+        "time management",
+        "command terms"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Circular functions and their graphs (SL 3.7)",
+      "objectives": [
+        "Sketch y = a sin(b(x + c)) + d and related graphs",
+        "Identify amplitude, period and principal axis",
+        "Model periodic contexts"
+      ],
+      "keywords": [
+        "circular function",
+        "amplitude",
+        "period",
+        "principal axis",
+        "phase shift"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Solving trigonometric equations (SL 3.8)",
+      "objectives": [
+        "Solve trigonometric equations in a finite interval",
+        "Solve quadratic equations in sin x or cos x",
+        "Use identities and the GDC to find all solutions"
+      ],
+      "keywords": [
+        "trigonometric equation",
+        "interval",
+        "general solution",
+        "quadratic in sin x",
+        "GDC"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Limits and the derivative as a gradient function (SL 5.1, 5.2)",
+      "objectives": [
+        "Understand the derivative as a limit and as rate of change",
+        "Interpret dy/dx and f'(x) notation",
+        "Identify increasing and decreasing functions"
+      ],
+      "keywords": [
+        "limit",
+        "derivative",
+        "gradient function",
+        "rate of change",
+        "increasing",
+        "decreasing"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Differentiating polynomials; tangents and normals (SL 5.3, 5.4)",
+      "objectives": [
+        "Differentiate ax^n including negative and rational n",
+        "Find equations of tangents and normals",
+        "Use the GDC to find gradients at a point"
+      ],
+      "keywords": [
+        "power rule",
+        "tangent",
+        "normal",
+        "gradient at a point",
+        "dy/dx"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Introduction to integration: anti-derivatives and area (SL 5.5)",
+      "objectives": [
+        "Integrate x^n as the reverse of differentiation",
+        "Find the constant of integration from boundary conditions",
+        "Use definite integrals to find area under a curve"
+      ],
+      "keywords": [
+        "integration",
+        "anti-derivative",
+        "constant of integration",
+        "definite integral",
+        "area under a curve"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Toolkit: mathematical modelling and inquiry skills",
+      "objectives": [
+        "Follow the modelling cycle: assumptions, model, test, refine",
+        "Use technology to fit and evaluate models",
+        "Communicate mathematics clearly in writing"
+      ],
+      "keywords": [
+        "modelling cycle",
+        "assumption",
+        "technology",
+        "inquiry",
+        "communication"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "IA exploration: choosing a topic and writing a proposal",
+      "objectives": [
+        "Explore personal interests with mathematical potential",
+        "Write a focused aim for the exploration",
+        "Understand criteria A–E for the exploration"
+      ],
+      "keywords": [
+        "exploration",
+        "IA",
+        "aim",
+        "assessment criteria",
+        "personal engagement"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "IA exploration: mathematical research and first outline",
+      "objectives": [
+        "Identify the mathematics needed for the chosen aim",
+        "Collect or generate data where relevant",
+        "Plan the structure of the exploration"
+      ],
+      "keywords": [
+        "research",
+        "data",
+        "outline",
+        "mathematical model",
+        "sources"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "End-of-year exams: DP1 mathematics",
+      "objectives": [
+        "Sit Paper 1 and Paper 2 style school exams",
+        "Demonstrate all DP1 content under timed conditions",
+        "Show full working for method marks"
+      ],
+      "keywords": [
+        "exam",
+        "Paper 1",
+        "Paper 2",
+        "method marks",
+        "working"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Review: DP1 reflection and exploration plan for the holidays",
+      "objectives": [
+        "Analyse exam results by topic",
+        "Set a revision and exploration timeline",
+        "Prepare data or research for the IA over the break"
+      ],
+      "keywords": [
+        "reflection",
+        "exam analysis",
+        "IA timeline",
+        "goals",
+        "holiday plan"
+      ],
+      "spelling": []
+    }
+  ]
+}

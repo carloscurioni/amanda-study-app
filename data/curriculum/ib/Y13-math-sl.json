@@ -1,0 +1,741 @@
+{
+  "version": 1,
+  "year": "Y13",
+  "stage": "ib",
+  "subject": "math",
+  "level": "sl",
+  "language": "en",
+  "source": "IB Diploma Programme Mathematics: analysis and approaches guide (first assessment 2021), SL — topics 1–5 and toolkit/exploration",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "IA exploration: drafting the mathematics and communication",
+      "objectives": [
+        "Develop the mathematics with clear reasoning",
+        "Structure the exploration with introduction, body and conclusion",
+        "Apply criteria A–E to self-assess"
+      ],
+      "keywords": [
+        "draft",
+        "communication",
+        "mathematical presentation",
+        "reflection",
+        "criteria"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Derivatives of sin, cos, e^x and ln x; the chain rule (SL 5.6)",
+      "objectives": [
+        "Differentiate standard functions",
+        "Apply the chain rule to composite functions",
+        "Find rates of change in context"
+      ],
+      "keywords": [
+        "derivative",
+        "sin x",
+        "cos x",
+        "e^x",
+        "ln x",
+        "chain rule"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Product and quotient rules (SL 5.6)",
+      "objectives": [
+        "Differentiate products and quotients",
+        "Combine rules for more complex functions",
+        "Simplify derivatives fully"
+      ],
+      "keywords": [
+        "product rule",
+        "quotient rule",
+        "composite",
+        "simplify"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Second derivative, concavity and points of inflexion (SL 5.7, 5.8)",
+      "objectives": [
+        "Find and interpret the second derivative",
+        "Determine concavity of a graph",
+        "Locate points of inflexion"
+      ],
+      "keywords": [
+        "second derivative",
+        "concave up",
+        "concave down",
+        "point of inflexion"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Local maxima and minima and optimisation (SL 5.8)",
+      "objectives": [
+        "Find and classify stationary points",
+        "Solve optimisation problems in context",
+        "Check endpoints of a domain"
+      ],
+      "keywords": [
+        "stationary point",
+        "local maximum",
+        "local minimum",
+        "optimisation",
+        "domain"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Kinematics: displacement, velocity and acceleration (SL 5.9)",
+      "objectives": [
+        "Relate displacement, velocity and acceleration by differentiation",
+        "Interpret signs of velocity and acceleration",
+        "Determine when a particle is at rest"
+      ],
+      "keywords": [
+        "kinematics",
+        "displacement",
+        "velocity",
+        "acceleration",
+        "at rest"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "IA exploration: first draft submission and feedback",
+      "objectives": [
+        "Submit a complete first draft",
+        "Act on teacher feedback on rigour and reflection",
+        "Check correctness and appropriate notation"
+      ],
+      "keywords": [
+        "first draft",
+        "feedback",
+        "rigour",
+        "reflection",
+        "notation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Indefinite integration of standard functions (SL 5.10)",
+      "objectives": [
+        "Integrate x^n, sin x, cos x, 1/x and e^x",
+        "Integrate composites of linear functions",
+        "Use substitution by inspection"
+      ],
+      "keywords": [
+        "indefinite integral",
+        "constant of integration",
+        "1/x",
+        "e^x",
+        "reverse chain rule"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Definite integrals and areas between curves (SL 5.11)",
+      "objectives": [
+        "Evaluate definite integrals analytically and with the GDC",
+        "Find areas between a curve and the x-axis",
+        "Find areas between two curves"
+      ],
+      "keywords": [
+        "definite integral",
+        "limits of integration",
+        "area",
+        "between curves",
+        "GDC"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Kinematics with integration: displacement and total distance (SL 5.9, 5.11)",
+      "objectives": [
+        "Find displacement from velocity by integration",
+        "Calculate total distance travelled using |v|",
+        "Use initial conditions to find constants"
+      ],
+      "keywords": [
+        "displacement",
+        "total distance",
+        "|v(t)|",
+        "initial condition",
+        "integration"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Calculus in context: modelling rates of change",
+      "objectives": [
+        "Build calculus models from real situations",
+        "Interpret derivatives and integrals in context",
+        "Evaluate the limitations of a model"
+      ],
+      "keywords": [
+        "modelling",
+        "rate of change",
+        "accumulation",
+        "context",
+        "interpretation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "IA exploration: final version and academic integrity",
+      "objectives": [
+        "Refine the exploration after feedback",
+        "Reference sources and acknowledge technology",
+        "Submit the final exploration"
+      ],
+      "keywords": [
+        "final draft",
+        "academic integrity",
+        "referencing",
+        "bibliography",
+        "submission"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Paper 1 skills: non-calculator algebra and calculus",
+      "objectives": [
+        "Work accurately without a calculator",
+        "Show clear working for method marks",
+        "Use exact values and simplified forms"
+      ],
+      "keywords": [
+        "Paper 1",
+        "non-calculator",
+        "exact values",
+        "simplify",
+        "method marks"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Paper 2 skills: GDC strategies for functions and statistics",
+      "objectives": [
+        "Use the GDC to graph, solve and analyse data",
+        "Decide when technology is efficient",
+        "Present GDC results with correct notation"
+      ],
+      "keywords": [
+        "Paper 2",
+        "GDC",
+        "intersection",
+        "statistics",
+        "notation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Review: differential and integral calculus",
+      "objectives": [
+        "Consolidate differentiation rules and applications",
+        "Practise integration and areas",
+        "Identify gaps before the mocks"
+      ],
+      "keywords": [
+        "review",
+        "differentiation",
+        "integration",
+        "kinematics"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Extended problems: sequences, logarithms and binomial expansions",
+      "objectives": [
+        "Combine sequences with logarithms in multi-step problems",
+        "Apply binomial expansion to unfamiliar questions",
+        "Link algebra to financial contexts"
+      ],
+      "keywords": [
+        "sequences",
+        "logarithms",
+        "binomial",
+        "multi-step",
+        "problem solving"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Extended problems: functions, transformations and inverses",
+      "objectives": [
+        "Solve multi-part function problems",
+        "Combine transformations and inverses",
+        "Interpret graphs in context"
+      ],
+      "keywords": [
+        "functions",
+        "transformations",
+        "inverse",
+        "graphs",
+        "context"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Extended problems: trigonometry and geometry",
+      "objectives": [
+        "Combine 3D geometry with trigonometry",
+        "Solve trigonometric equations within longer questions",
+        "Model periodic situations"
+      ],
+      "keywords": [
+        "trigonometry",
+        "3D geometry",
+        "periodic model",
+        "equations",
+        "radians"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Extended problems: statistics and regression in context",
+      "objectives": [
+        "Interpret summary statistics in context",
+        "Evaluate regression models and predictions",
+        "Communicate statistical conclusions"
+      ],
+      "keywords": [
+        "statistics",
+        "regression",
+        "correlation",
+        "interpretation",
+        "context"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Extended problems: probability distributions",
+      "objectives": [
+        "Combine binomial and normal models",
+        "Use conditional probability with distributions",
+        "Interpret expected values"
+      ],
+      "keywords": [
+        "probability",
+        "binomial",
+        "normal",
+        "conditional",
+        "expected value"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Extended problems: differentiation and optimisation",
+      "objectives": [
+        "Solve unfamiliar optimisation problems",
+        "Link derivatives to graph features",
+        "Justify answers using calculus"
+      ],
+      "keywords": [
+        "differentiation",
+        "optimisation",
+        "graph features",
+        "justification"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Extended problems: integration and areas",
+      "objectives": [
+        "Combine integration with kinematics and areas",
+        "Choose analytic or GDC methods",
+        "Check reasonableness of answers"
+      ],
+      "keywords": [
+        "integration",
+        "area",
+        "kinematics",
+        "GDC",
+        "reasonableness"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Exam technique: command terms and mark schemes",
+      "objectives": [
+        "Interpret IB command terms (show that, hence, sketch)",
+        "Understand how M, A and R marks are awarded",
+        "Plan answers to earn method marks"
+      ],
+      "keywords": [
+        "command terms",
+        "show that",
+        "hence",
+        "M marks",
+        "A marks"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Timed practice: full Paper 1",
+      "objectives": [
+        "Complete a full Paper 1 under timed conditions",
+        "Manage time across sections A and B",
+        "Self-mark and log errors"
+      ],
+      "keywords": [
+        "Paper 1",
+        "timed practice",
+        "section A",
+        "section B",
+        "error log"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Timed practice: full Paper 2",
+      "objectives": [
+        "Complete a full Paper 2 under timed conditions",
+        "Use the GDC efficiently under pressure",
+        "Self-mark and log errors"
+      ],
+      "keywords": [
+        "Paper 2",
+        "timed practice",
+        "GDC",
+        "error log"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Common misconceptions and mixed-topic problems",
+      "objectives": [
+        "Identify frequent errors across topics",
+        "Correct misconceptions with targeted practice",
+        "Prepare a personal mock revision plan"
+      ],
+      "keywords": [
+        "misconceptions",
+        "mixed topics",
+        "revision plan",
+        "accuracy"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mock exams: full Paper 1 and Paper 2",
+      "objectives": [
+        "Sit full IB-style mock papers",
+        "Apply all SL topics under exam conditions",
+        "Analyse performance by topic"
+      ],
+      "keywords": [
+        "mock exam",
+        "Paper 1",
+        "Paper 2",
+        "analysis"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "review",
+      "topic": "Revision: number and algebra (topic 1)",
+      "objectives": [
+        "Review sequences, financial maths and logarithms",
+        "Practise proof and binomial questions",
+        "Fix recurring errors"
+      ],
+      "keywords": [
+        "sequences",
+        "logarithms",
+        "binomial",
+        "proof",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "review",
+      "topic": "Revision: functions (topic 2)",
+      "objectives": [
+        "Review quadratics, rational, exponential and log functions",
+        "Practise transformations and inverses",
+        "Use graphical and analytic methods"
+      ],
+      "keywords": [
+        "functions",
+        "quadratics",
+        "transformations",
+        "inverse",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "review",
+      "topic": "Revision: geometry and trigonometry (topic 3)",
+      "objectives": [
+        "Review 3D geometry and triangle trigonometry",
+        "Practise identities, graphs and equations",
+        "Use radians accurately"
+      ],
+      "keywords": [
+        "trigonometry",
+        "sine rule",
+        "identities",
+        "radians",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "review",
+      "topic": "Revision: statistics and probability (topic 4)",
+      "objectives": [
+        "Review summary statistics and regression",
+        "Practise conditional probability",
+        "Practise binomial and normal distributions"
+      ],
+      "keywords": [
+        "statistics",
+        "probability",
+        "binomial",
+        "normal",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "review",
+      "topic": "Revision: differential calculus (topic 5)",
+      "objectives": [
+        "Review derivative rules",
+        "Practise tangents, optimisation and inflexion",
+        "Interpret derivatives in context"
+      ],
+      "keywords": [
+        "derivative",
+        "optimisation",
+        "tangent",
+        "inflexion",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "review",
+      "topic": "Revision: integral calculus and kinematics (topic 5)",
+      "objectives": [
+        "Review integration techniques",
+        "Practise areas and kinematics problems",
+        "Use the formula booklet effectively"
+      ],
+      "keywords": [
+        "integration",
+        "area",
+        "kinematics",
+        "formula booklet",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "exam",
+      "topic": "IB exam preparation: formula booklet and key methods",
+      "objectives": [
+        "Know what is and is not in the formula booklet",
+        "Rehearse key methods for each topic",
+        "Plan exam-day timing"
+      ],
+      "keywords": [
+        "formula booklet",
+        "key methods",
+        "exam timing",
+        "final revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "exam",
+      "topic": "IB examinations: Paper 1 (no calculator)",
+      "objectives": [
+        "Sit Paper 1 in the May session",
+        "Apply exact methods without technology",
+        "Show clear working"
+      ],
+      "keywords": [
+        "IB exam",
+        "Paper 1",
+        "non-calculator",
+        "May session"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "IB examinations: Paper 2 (calculator)",
+      "objectives": [
+        "Sit Paper 2 in the May session",
+        "Use the GDC accurately",
+        "Manage time across sections"
+      ],
+      "keywords": [
+        "IB exam",
+        "Paper 2",
+        "GDC",
+        "May session"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "exam",
+      "topic": "IB examination period: completion and reflection",
+      "objectives": [
+        "Complete remaining IB examinations",
+        "Reflect on the DP mathematics course",
+        "Consider mathematics in future studies"
+      ],
+      "keywords": [
+        "exam period",
+        "reflection",
+        "future studies",
+        "DP completion"
+      ],
+      "spelling": []
+    }
+  ]
+}

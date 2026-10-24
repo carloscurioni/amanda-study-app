@@ -1,0 +1,780 @@
+{
+  "version": 1,
+  "year": "Y12",
+  "stage": "ib",
+  "subject": "comp",
+  "level": "hl",
+  "language": "en",
+  "source": "IB Diploma Programme Computer Science guide (first assessment 2027), HL (SL content + additional higher level) — themes A (concepts) and B (computational thinking and problem-solving), case study and IA computational solution",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "B1.1 Approaches to computational thinking",
+      "objectives": [
+        "Apply decomposition, pattern recognition and abstraction",
+        "Represent algorithms with flowcharts and pseudocode",
+        "Evaluate algorithms for a given problem"
+      ],
+      "keywords": [
+        "decomposition",
+        "abstraction",
+        "pattern recognition",
+        "algorithm",
+        "flowchart",
+        "pseudocode"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "B2.1 Programming fundamentals: variables, data types and operators",
+      "objectives": [
+        "Declare variables and use primitive data types",
+        "Use arithmetic, relational and logical operators",
+        "Manipulate strings"
+      ],
+      "keywords": [
+        "variable",
+        "data type",
+        "operator",
+        "string",
+        "Python",
+        "Java"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "B2.3 Programming constructs: selection and iteration",
+      "objectives": [
+        "Write programs with if/else selection",
+        "Use count-controlled and condition-controlled loops",
+        "Nest constructs to solve problems"
+      ],
+      "keywords": [
+        "selection",
+        "iteration",
+        "for loop",
+        "while loop",
+        "nested loop",
+        "Boolean condition"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "B2.2 Data structures: arrays, lists and 2D arrays",
+      "objectives": [
+        "Use static and dynamic arrays/lists",
+        "Traverse and update 1D and 2D structures",
+        "Choose suitable data structures"
+      ],
+      "keywords": [
+        "array",
+        "list",
+        "2D array",
+        "index",
+        "traversal",
+        "dynamic"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "B2.3 Functions, parameters and scope",
+      "objectives": [
+        "Write functions/methods with parameters and return values",
+        "Distinguish local and global scope",
+        "Design modular programs"
+      ],
+      "keywords": [
+        "function",
+        "method",
+        "parameter",
+        "return value",
+        "scope",
+        "modularity"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "B2.4 Programming algorithms: linear and binary search",
+      "objectives": [
+        "Implement linear and binary search",
+        "Compare search algorithms",
+        "Trace searches step by step"
+      ],
+      "keywords": [
+        "linear search",
+        "binary search",
+        "sorted data",
+        "trace table"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "B2.4 Sorting algorithms and Big O efficiency",
+      "objectives": [
+        "Implement bubble sort and selection sort",
+        "Compare time complexity using Big O",
+        "Trace sorting algorithms"
+      ],
+      "keywords": [
+        "bubble sort",
+        "selection sort",
+        "Big O",
+        "time complexity",
+        "efficiency"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "B2.5 File processing",
+      "objectives": [
+        "Open, read, write and append to text files",
+        "Process records from files",
+        "Handle file errors"
+      ],
+      "keywords": [
+        "file",
+        "read",
+        "write",
+        "append",
+        "CSV",
+        "exception"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "A1.1 Computer hardware and operation",
+      "objectives": [
+        "Describe CPU components: ALU, CU and registers",
+        "Explain the fetch–decode–execute cycle",
+        "Compare primary and secondary memory, cache and GPUs"
+      ],
+      "keywords": [
+        "CPU",
+        "ALU",
+        "control unit",
+        "register",
+        "fetch–decode–execute",
+        "cache",
+        "GPU"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "A1.2 Data representation: binary, hexadecimal and encoding",
+      "objectives": [
+        "Convert between binary, denary and hexadecimal",
+        "Represent characters, images and sound in binary",
+        "Explain data compression"
+      ],
+      "keywords": [
+        "binary",
+        "hexadecimal",
+        "bit",
+        "byte",
+        "ASCII",
+        "Unicode",
+        "compression"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "A1.2 Computer logic: logic gates and Boolean expressions",
+      "objectives": [
+        "Use AND, OR, NOT, NAND, NOR and XOR gates",
+        "Construct truth tables and logic diagrams",
+        "Simplify Boolean expressions"
+      ],
+      "keywords": [
+        "logic gate",
+        "truth table",
+        "Boolean expression",
+        "XOR",
+        "NAND",
+        "logic diagram"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "A1.3 Operating systems and control systems",
+      "objectives": [
+        "Describe the roles of an operating system",
+        "Explain scheduling, interrupts and memory management",
+        "Describe control systems with sensors and actuators",
+        "HL: Compare paging and segmentation; explain multitasking"
+      ],
+      "keywords": [
+        "operating system",
+        "scheduling",
+        "interrupt",
+        "memory management",
+        "sensor",
+        "actuator",
+        "paging",
+        "multitasking"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "A1.4 Translation: compilers, interpreters and virtual machines (HL)",
+      "objectives": [
+        "Compare compilers and interpreters",
+        "Describe lexical analysis, parsing and code generation",
+        "Explain bytecode and virtual machines"
+      ],
+      "keywords": [
+        "compiler",
+        "interpreter",
+        "lexical analysis",
+        "parsing",
+        "bytecode",
+        "virtual machine"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "B2.1 Testing, debugging and exception handling",
+      "objectives": [
+        "Design test plans with normal, boundary and erroneous data",
+        "Use debugging techniques",
+        "Handle runtime exceptions"
+      ],
+      "keywords": [
+        "testing",
+        "test data",
+        "boundary",
+        "debugging",
+        "exception handling"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Review: programming fundamentals and computer systems",
+      "objectives": [
+        "Consolidate programming constructs and data structures",
+        "Review hardware, data representation and logic",
+        "Practise trace tables",
+        "Consolidate translation and OS memory management"
+      ],
+      "keywords": [
+        "review",
+        "programming",
+        "hardware",
+        "logic gates",
+        "trace table",
+        "compiler"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "B3.1 OOP for a single class: classes, objects and encapsulation",
+      "objectives": [
+        "Define classes with attributes and methods",
+        "Instantiate and use objects",
+        "Apply encapsulation with access modifiers"
+      ],
+      "keywords": [
+        "class",
+        "object",
+        "attribute",
+        "method",
+        "encapsulation",
+        "instance"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "B3.1 Constructors, accessors, mutators and UML class diagrams",
+      "objectives": [
+        "Write constructors, getters and setters",
+        "Use static and instance members",
+        "Draw UML class diagrams"
+      ],
+      "keywords": [
+        "constructor",
+        "getter",
+        "setter",
+        "static",
+        "UML",
+        "class diagram"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "B3.2 OOP for multiple classes: inheritance and polymorphism (HL)",
+      "objectives": [
+        "Implement inheritance with superclasses and subclasses",
+        "Use method overriding and polymorphism",
+        "Explain advantages of inheritance"
+      ],
+      "keywords": [
+        "inheritance",
+        "superclass",
+        "subclass",
+        "polymorphism",
+        "overriding"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "B3.2 Aggregation, composition, abstract classes and design patterns (HL)",
+      "objectives": [
+        "Model aggregation and composition",
+        "Use abstract classes and interfaces",
+        "Recognise common design patterns"
+      ],
+      "keywords": [
+        "aggregation",
+        "composition",
+        "abstract class",
+        "interface",
+        "design pattern"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "A2.1 Network fundamentals",
+      "objectives": [
+        "Compare LAN, WAN, PAN and VPN",
+        "Describe network devices such as routers and switches",
+        "Explain the TCP/IP and OSI layer models"
+      ],
+      "keywords": [
+        "LAN",
+        "WAN",
+        "VPN",
+        "router",
+        "switch",
+        "TCP/IP model",
+        "OSI model"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "A2.2 Network architecture",
+      "objectives": [
+        "Compare client–server and peer-to-peer models",
+        "Describe network topologies",
+        "Explain cloud computing and segmentation"
+      ],
+      "keywords": [
+        "client–server",
+        "peer-to-peer",
+        "topology",
+        "cloud computing",
+        "subnet"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "A2.3 Data transmission",
+      "objectives": [
+        "Explain packet switching and routing",
+        "Describe IP addressing and DNS",
+        "Compare wired and wireless transmission media"
+      ],
+      "keywords": [
+        "packet switching",
+        "routing",
+        "IP address",
+        "DNS",
+        "bandwidth",
+        "latency"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "A2.4 Network security",
+      "objectives": [
+        "Identify threats such as malware and phishing",
+        "Explain encryption and digital certificates",
+        "Describe firewalls and access control"
+      ],
+      "keywords": [
+        "malware",
+        "phishing",
+        "encryption",
+        "public key",
+        "firewall",
+        "authentication"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "A3.1 Database fundamentals",
+      "objectives": [
+        "Describe the relational model",
+        "Identify primary, foreign and composite keys",
+        "Explain data integrity and redundancy"
+      ],
+      "keywords": [
+        "database",
+        "relational model",
+        "table",
+        "primary key",
+        "foreign key",
+        "integrity"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "A3.2 Database design",
+      "objectives": [
+        "Draw entity–relationship diagrams",
+        "Normalise data to 3NF",
+        "Choose data types and constraints"
+      ],
+      "keywords": [
+        "ERD",
+        "entity",
+        "relationship",
+        "normalisation",
+        "3NF",
+        "data type"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "A3.3 Database programming: SQL queries",
+      "objectives": [
+        "Write SELECT queries with WHERE and ORDER BY",
+        "Create tables with constraints",
+        "Insert data with SQL"
+      ],
+      "keywords": [
+        "SQL",
+        "SELECT",
+        "WHERE",
+        "ORDER BY",
+        "CREATE TABLE",
+        "INSERT"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mid-year exams: programming, computer fundamentals and networks",
+      "objectives": [
+        "Sit Paper 1 and Paper 2 style questions",
+        "Write and trace code under time",
+        "Reflect on errors and timing",
+        "Include HL inheritance and polymorphism"
+      ],
+      "keywords": [
+        "exam",
+        "Paper 1",
+        "Paper 2",
+        "trace",
+        "code",
+        "polymorphism"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "A3.3 SQL joins, aggregate functions and updates",
+      "objectives": [
+        "Join tables with INNER JOIN",
+        "Use aggregate functions with GROUP BY",
+        "Update and delete records safely"
+      ],
+      "keywords": [
+        "JOIN",
+        "GROUP BY",
+        "COUNT",
+        "AVG",
+        "UPDATE",
+        "DELETE"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "A3.4 Alternative databases and data warehouses (HL)",
+      "objectives": [
+        "Compare relational and NoSQL databases",
+        "Describe distributed databases",
+        "Explain data warehouses and data mining"
+      ],
+      "keywords": [
+        "NoSQL",
+        "document database",
+        "distributed database",
+        "data warehouse",
+        "OLAP",
+        "data mining"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "A4.1 Machine learning fundamentals",
+      "objectives": [
+        "Define machine learning and its applications",
+        "Compare supervised, unsupervised and reinforcement learning",
+        "Describe training and testing data"
+      ],
+      "keywords": [
+        "machine learning",
+        "supervised",
+        "unsupervised",
+        "reinforcement learning",
+        "training data",
+        "model"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "A4.4 Ethical considerations in machine learning",
+      "objectives": [
+        "Discuss bias in data and algorithms",
+        "Evaluate privacy, accountability and transparency",
+        "Analyse societal impacts of ML"
+      ],
+      "keywords": [
+        "bias",
+        "privacy",
+        "accountability",
+        "transparency",
+        "ethics",
+        "fairness"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "IA: identifying a problem and defining success criteria",
+      "objectives": [
+        "Identify a real problem suitable for a computational solution",
+        "Research the context and potential users",
+        "Write measurable success criteria"
+      ],
+      "keywords": [
+        "internal assessment",
+        "problem specification",
+        "success criteria",
+        "context",
+        "computational solution"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "IA: planning the solution and record of tasks",
+      "objectives": [
+        "Plan development stages and timeline",
+        "Choose tools and programming language",
+        "Justify the proposed approach"
+      ],
+      "keywords": [
+        "planning",
+        "timeline",
+        "tools",
+        "justification",
+        "record of tasks"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "IA: system design — diagrams and test plan",
+      "objectives": [
+        "Design the system with UML and flowcharts",
+        "Plan data structures and algorithms",
+        "Write a test plan linked to success criteria"
+      ],
+      "keywords": [
+        "design",
+        "UML",
+        "flowchart",
+        "test plan",
+        "data structures"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "IA: building a working prototype",
+      "objectives": [
+        "Develop a prototype of key features",
+        "Use version control and backups",
+        "Document techniques used"
+      ],
+      "keywords": [
+        "prototype",
+        "development",
+        "version control",
+        "documentation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "End-of-year exams: DP1 computer science",
+      "objectives": [
+        "Sit school exams covering DP1 topics",
+        "Answer theory and programming questions",
+        "Use precise terminology"
+      ],
+      "keywords": [
+        "exam",
+        "theory",
+        "programming",
+        "DP1"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Review: DP1 reflection and IA development plan",
+      "objectives": [
+        "Analyse exam performance by topic",
+        "Set IA development milestones for the break",
+        "Practise coding independently"
+      ],
+      "keywords": [
+        "reflection",
+        "IA",
+        "milestones",
+        "coding practice"
+      ],
+      "spelling": []
+    }
+  ]
+}

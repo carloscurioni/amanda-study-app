@@ -1,0 +1,757 @@
+{
+  "version": 1,
+  "year": "Y12",
+  "stage": "ib",
+  "subject": "phys",
+  "level": "sl",
+  "language": "en",
+  "source": "IB Diploma Programme Physics guide (first assessment 2025), SL — themes A–E, tools, inquiry process and internal assessment",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Tools and inquiry: measurement, uncertainties and graphs",
+      "objectives": [
+        "Use SI units and prefixes",
+        "Estimate and propagate uncertainties",
+        "Plot graphs with error bars and find gradients"
+      ],
+      "keywords": [
+        "SI units",
+        "uncertainty",
+        "error bars",
+        "gradient",
+        "significant figures",
+        "orders of magnitude"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "A.1 Kinematics: motion graphs and equations of motion",
+      "objectives": [
+        "Distinguish distance/displacement and speed/velocity",
+        "Interpret displacement–time and velocity–time graphs",
+        "Use the suvat equations"
+      ],
+      "keywords": [
+        "displacement",
+        "velocity",
+        "acceleration",
+        "suvat",
+        "motion graph"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "A.1 Kinematics: projectile motion",
+      "objectives": [
+        "Resolve projectile motion into components",
+        "Solve projectile problems without air resistance",
+        "Describe qualitative effects of air resistance"
+      ],
+      "keywords": [
+        "projectile",
+        "horizontal component",
+        "vertical component",
+        "trajectory",
+        "air resistance"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "A.2 Forces: Newton's laws and free-body diagrams",
+      "objectives": [
+        "Draw free-body diagrams",
+        "Apply Newton's three laws of motion",
+        "Model friction, drag and tension"
+      ],
+      "keywords": [
+        "force",
+        "Newton's laws",
+        "free-body diagram",
+        "friction",
+        "equilibrium",
+        "tension"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "A.2 Momentum, impulse and circular motion",
+      "objectives": [
+        "Apply conservation of momentum to collisions",
+        "Relate impulse to force–time graphs",
+        "Analyse uniform circular motion"
+      ],
+      "keywords": [
+        "momentum",
+        "impulse",
+        "conservation",
+        "collision",
+        "centripetal force",
+        "angular velocity"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "A.3 Work, energy and power",
+      "objectives": [
+        "Calculate work done by a force",
+        "Apply conservation of energy with KE, GPE and elastic PE",
+        "Calculate power and efficiency"
+      ],
+      "keywords": [
+        "work",
+        "kinetic energy",
+        "potential energy",
+        "conservation of energy",
+        "power",
+        "efficiency"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Practical: energy transfer and efficiency investigation",
+      "objectives": [
+        "Measure energy input and output in a system",
+        "Calculate efficiency with uncertainty",
+        "Evaluate energy losses"
+      ],
+      "keywords": [
+        "practical",
+        "efficiency",
+        "energy transfer",
+        "uncertainty"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "B.1 Thermal energy transfers",
+      "objectives": [
+        "Describe the kinetic model and internal energy",
+        "Use specific heat capacity and specific latent heat",
+        "Explain conduction, convection and radiation"
+      ],
+      "keywords": [
+        "internal energy",
+        "specific heat capacity",
+        "latent heat",
+        "conduction",
+        "convection",
+        "black-body radiation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "B.2 Greenhouse effect",
+      "objectives": [
+        "Apply the Stefan–Boltzmann law",
+        "Explain albedo and emissivity",
+        "Model Earth's energy balance"
+      ],
+      "keywords": [
+        "greenhouse effect",
+        "Stefan–Boltzmann law",
+        "albedo",
+        "emissivity",
+        "energy balance"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "B.3 Gas laws and the ideal gas equation",
+      "objectives": [
+        "Use pressure, volume and temperature relationships",
+        "Use pV = nRT and the Avogadro constant",
+        "Explain absolute zero and the kelvin scale"
+      ],
+      "keywords": [
+        "gas laws",
+        "pressure",
+        "pV = nRT",
+        "kelvin",
+        "absolute zero",
+        "mole"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "B.3 Kinetic model of an ideal gas",
+      "objectives": [
+        "Relate pressure to molecular collisions",
+        "Relate temperature to mean kinetic energy",
+        "Describe differences between real and ideal gases"
+      ],
+      "keywords": [
+        "kinetic model",
+        "molecular collisions",
+        "mean kinetic energy",
+        "Boltzmann constant",
+        "ideal gas"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "Practical: specific heat capacity and gas law experiments",
+      "objectives": [
+        "Measure specific heat capacity electrically",
+        "Verify a gas law with data",
+        "Analyse results graphically"
+      ],
+      "keywords": [
+        "practical",
+        "specific heat capacity",
+        "Boyle's law",
+        "graph analysis"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "B.5 Current and circuits: charge, potential difference and resistance",
+      "objectives": [
+        "Define current, potential difference and resistance",
+        "Use Ohm's law and resistivity",
+        "Interpret I–V characteristics"
+      ],
+      "keywords": [
+        "current",
+        "potential difference",
+        "resistance",
+        "Ohm's law",
+        "resistivity",
+        "I–V graph"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "B.5 Circuits: internal resistance, emf and potential dividers",
+      "objectives": [
+        "Combine resistors in series and parallel",
+        "Apply emf and internal resistance",
+        "Use potential dividers with sensors"
+      ],
+      "keywords": [
+        "series",
+        "parallel",
+        "emf",
+        "internal resistance",
+        "potential divider",
+        "thermistor"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Review: mechanics and thermal physics",
+      "objectives": [
+        "Consolidate kinematics, forces and energy",
+        "Review thermal physics and gases",
+        "Practise data-based questions"
+      ],
+      "keywords": [
+        "review",
+        "mechanics",
+        "energy",
+        "thermal physics",
+        "gases"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "C.1 Simple harmonic motion",
+      "objectives": [
+        "Describe conditions for SHM",
+        "Relate acceleration to displacement",
+        "Calculate the period of a pendulum and mass–spring system"
+      ],
+      "keywords": [
+        "simple harmonic motion",
+        "period",
+        "amplitude",
+        "restoring force",
+        "pendulum"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "C.2 Wave model",
+      "objectives": [
+        "Compare transverse and longitudinal waves",
+        "Use v = fλ",
+        "Describe the electromagnetic spectrum and sound waves"
+      ],
+      "keywords": [
+        "transverse",
+        "longitudinal",
+        "wavelength",
+        "frequency",
+        "wave speed",
+        "EM spectrum"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "C.3 Wave phenomena: reflection, refraction and diffraction",
+      "objectives": [
+        "Apply Snell's law and critical angle",
+        "Describe total internal reflection",
+        "Describe diffraction through apertures"
+      ],
+      "keywords": [
+        "reflection",
+        "refraction",
+        "Snell's law",
+        "critical angle",
+        "total internal reflection",
+        "diffraction"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "C.3 Wave phenomena: superposition and double-slit interference",
+      "objectives": [
+        "Apply superposition and path difference",
+        "Use the double-slit equation",
+        "Describe conditions for coherence"
+      ],
+      "keywords": [
+        "superposition",
+        "interference",
+        "path difference",
+        "double slit",
+        "coherence",
+        "fringe spacing"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "C.4 Standing waves and resonance",
+      "objectives": [
+        "Explain formation of standing waves",
+        "Analyse harmonics on strings and in pipes",
+        "Describe resonance and damping"
+      ],
+      "keywords": [
+        "standing wave",
+        "node",
+        "antinode",
+        "harmonic",
+        "resonance",
+        "damping"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "C.5 Doppler effect",
+      "objectives": [
+        "Describe the Doppler effect for sound",
+        "Apply Δλ/λ ≈ v/c for light",
+        "Relate redshift to receding galaxies"
+      ],
+      "keywords": [
+        "Doppler effect",
+        "frequency shift",
+        "redshift",
+        "blueshift",
+        "relative velocity"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Practical: speed of sound and refractive index",
+      "objectives": [
+        "Measure the speed of sound using resonance",
+        "Determine refractive index from Snell's law",
+        "Evaluate measurement uncertainties"
+      ],
+      "keywords": [
+        "practical",
+        "speed of sound",
+        "refractive index",
+        "resonance tube"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Data skills: linearising graphs and gradient analysis",
+      "objectives": [
+        "Linearise non-linear relationships",
+        "Determine constants from gradients and intercepts",
+        "Use max/min gradient lines for uncertainty"
+      ],
+      "keywords": [
+        "linearisation",
+        "gradient",
+        "intercept",
+        "logarithmic graph",
+        "uncertainty"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "D.1 Gravitational fields and Newton's law of gravitation",
+      "objectives": [
+        "Apply Newton's universal law of gravitation",
+        "Calculate gravitational field strength",
+        "Draw field lines"
+      ],
+      "keywords": [
+        "gravitational field",
+        "Newton's law of gravitation",
+        "field strength",
+        "field lines",
+        "inverse square"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "D.1 Orbital motion and Kepler's laws",
+      "objectives": [
+        "Apply Kepler's three laws",
+        "Derive orbital speed and period for circular orbits",
+        "Describe satellite motion"
+      ],
+      "keywords": [
+        "orbit",
+        "Kepler's laws",
+        "orbital speed",
+        "satellite",
+        "period"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Collaborative sciences project",
+      "objectives": [
+        "Work in an interdisciplinary team on a real-world problem",
+        "Apply physics to a shared investigation",
+        "Communicate and reflect on collaboration"
+      ],
+      "keywords": [
+        "collaboration",
+        "interdisciplinary",
+        "sustainability",
+        "teamwork",
+        "reflection"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mid-year exams: mechanics, matter and waves",
+      "objectives": [
+        "Sit Paper 1 and Paper 2 style questions",
+        "Use the data booklet accurately",
+        "Reflect on errors and timing"
+      ],
+      "keywords": [
+        "exam",
+        "Paper 1",
+        "Paper 2",
+        "data booklet"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "D.2 Electric fields",
+      "objectives": [
+        "Apply Coulomb's law",
+        "Calculate electric field strength",
+        "Describe uniform fields between parallel plates"
+      ],
+      "keywords": [
+        "Coulomb's law",
+        "electric field",
+        "charge",
+        "field lines",
+        "parallel plates"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "D.2 Magnetic fields",
+      "objectives": [
+        "Draw magnetic field patterns of wires and solenoids",
+        "Calculate force on a current-carrying conductor",
+        "Describe forces between parallel wires"
+      ],
+      "keywords": [
+        "magnetic field",
+        "solenoid",
+        "F = BIL",
+        "right-hand rule",
+        "magnetic flux density"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "D.3 Motion in electromagnetic fields",
+      "objectives": [
+        "Describe motion of charges in uniform electric fields",
+        "Analyse circular motion of charges in magnetic fields",
+        "Explain velocity selectors"
+      ],
+      "keywords": [
+        "charged particle",
+        "F = qvB",
+        "circular path",
+        "velocity selector",
+        "electric field"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Practical: I–V characteristics and internal resistance",
+      "objectives": [
+        "Plot I–V characteristics of components",
+        "Determine emf and internal resistance of a cell",
+        "Evaluate systematic errors"
+      ],
+      "keywords": [
+        "practical",
+        "I–V characteristic",
+        "emf",
+        "internal resistance"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "E.1 Structure of the atom: Rutherford scattering and the nucleus",
+      "objectives": [
+        "Describe the Geiger–Marsden–Rutherford experiment",
+        "Use nuclear notation",
+        "Describe the nuclear model of the atom"
+      ],
+      "keywords": [
+        "Rutherford scattering",
+        "nucleus",
+        "alpha particle",
+        "nucleon",
+        "isotope"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "E.3 Radioactive decay: types of radiation and half-life",
+      "objectives": [
+        "Compare alpha, beta and gamma radiation",
+        "Write nuclear decay equations",
+        "Determine half-life from data"
+      ],
+      "keywords": [
+        "alpha",
+        "beta",
+        "gamma",
+        "half-life",
+        "decay equation",
+        "background radiation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "IA: exploring research questions",
+      "objectives": [
+        "Generate focused, investigable research questions",
+        "Identify independent, dependent and controlled variables",
+        "Review background physics"
+      ],
+      "keywords": [
+        "internal assessment",
+        "research question",
+        "variables",
+        "background",
+        "scientific investigation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "IA: planning methodology and risk assessment",
+      "objectives": [
+        "Design a method with sufficient range and repeats",
+        "Plan measurements to reduce uncertainty",
+        "Complete a safety and environmental assessment"
+      ],
+      "keywords": [
+        "methodology",
+        "range",
+        "repeats",
+        "uncertainty",
+        "risk assessment"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "End-of-year exams: DP1 physics",
+      "objectives": [
+        "Sit school exams covering DP1 topics",
+        "Show working in calculations",
+        "Interpret graphs and data"
+      ],
+      "keywords": [
+        "exam",
+        "calculations",
+        "graphs",
+        "DP1"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Review: DP1 reflection and IA preparation",
+      "objectives": [
+        "Analyse exam performance by topic",
+        "Refine the IA research question",
+        "Plan preliminary trials"
+      ],
+      "keywords": [
+        "reflection",
+        "IA",
+        "preliminary trial",
+        "goals"
+      ],
+      "spelling": []
+    }
+  ]
+}

@@ -1,0 +1,761 @@
+{
+  "version": 1,
+  "year": "Y12",
+  "stage": "ib",
+  "subject": "econ",
+  "level": "sl",
+  "language": "en",
+  "source": "IB Diploma Programme Economics guide (first assessment 2022) — SL, DP1: Units 1–3 (introduction, microeconomics, macroeconomics), IA portfolio",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "What is economics? Scarcity, choice and opportunity cost",
+      "objectives": [
+        "Explain scarcity and the basic economic problem",
+        "Identify factors of production and their rewards",
+        "Illustrate opportunity cost with a production possibilities curve"
+      ],
+      "keywords": [
+        "scarcity",
+        "choice",
+        "opportunity cost",
+        "factors of production",
+        "PPC"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Economic methodology and the nine key concepts",
+      "objectives": [
+        "Distinguish positive and normative statements",
+        "Explain the role of models, assumptions and ceteris paribus",
+        "Apply the key concepts (scarcity, efficiency, equity, sustainability…)"
+      ],
+      "keywords": [
+        "key concepts",
+        "positive",
+        "normative",
+        "ceteris paribus",
+        "model",
+        "economic well-being"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Economic systems and the circular flow of income",
+      "objectives": [
+        "Compare market, planned and mixed economies",
+        "Draw the circular flow with leakages and injections",
+        "Outline the evolution of economic thinking (Smith to behavioural)"
+      ],
+      "keywords": [
+        "circular flow",
+        "leakages",
+        "injections",
+        "mixed economy",
+        "Adam Smith",
+        "Keynes"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Demand: the law of demand and its determinants",
+      "objectives": [
+        "Explain the law of demand (income and substitution effects)",
+        "Distinguish movements along and shifts of the demand curve",
+        "Identify non-price determinants of demand"
+      ],
+      "keywords": [
+        "demand",
+        "law of demand",
+        "determinants",
+        "shift",
+        "movement",
+        "marginal utility"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Supply and competitive market equilibrium",
+      "objectives": [
+        "Explain the law of supply and its determinants",
+        "Analyse excess demand and excess supply",
+        "Explain the signalling and incentive functions of price"
+      ],
+      "keywords": [
+        "supply",
+        "equilibrium",
+        "surplus",
+        "shortage",
+        "price mechanism",
+        "rationing"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Consumer and producer surplus and allocative efficiency",
+      "objectives": [
+        "Define consumer and producer surplus",
+        "Explain allocative efficiency where MB = MC",
+        "Show community surplus on diagrams"
+      ],
+      "keywords": [
+        "consumer surplus",
+        "producer surplus",
+        "allocative efficiency",
+        "marginal benefit",
+        "marginal cost"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Behavioural economics: critique of the rational consumer",
+      "objectives": [
+        "Explain assumptions of rational consumer choice",
+        "Analyse biases: availability, anchoring, framing, defaults",
+        "Evaluate nudge theory and choice architecture"
+      ],
+      "keywords": [
+        "behavioural economics",
+        "bounded rationality",
+        "nudge",
+        "choice architecture",
+        "anchoring",
+        "framing"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Price elasticity of demand (PED)",
+      "objectives": [
+        "Calculate and interpret PED values",
+        "Explain the determinants of PED",
+        "Link PED to total revenue and firm pricing"
+      ],
+      "keywords": [
+        "PED",
+        "elastic",
+        "inelastic",
+        "total revenue",
+        "unit elastic"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "PES, YED and primary versus manufactured goods",
+      "objectives": [
+        "Calculate and interpret PES and YED",
+        "Distinguish normal, inferior, necessity and luxury goods",
+        "Explain why commodities have low PED and PES"
+      ],
+      "keywords": [
+        "PES",
+        "YED",
+        "normal good",
+        "inferior good",
+        "commodities",
+        "Engel curve"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Government intervention: indirect taxes and subsidies",
+      "objectives": [
+        "Analyse specific and ad valorem taxes",
+        "Analyse the effects of subsidies",
+        "Evaluate the impact on consumers, producers and government"
+      ],
+      "keywords": [
+        "indirect tax",
+        "ad valorem",
+        "specific tax",
+        "subsidy",
+        "stakeholders"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Price controls: price ceilings and price floors",
+      "objectives": [
+        "Analyse maximum prices such as rent control",
+        "Analyse minimum prices and minimum wages",
+        "Evaluate shortages, surpluses and parallel markets"
+      ],
+      "keywords": [
+        "price ceiling",
+        "price floor",
+        "minimum wage",
+        "parallel market",
+        "welfare loss"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "Market failure: negative externalities",
+      "objectives": [
+        "Explain market failure as a divergence of private and social costs",
+        "Draw negative production and consumption externality diagrams",
+        "Apply to pollution, tobacco and alcohol"
+      ],
+      "keywords": [
+        "negative externality",
+        "MSC",
+        "MPC",
+        "welfare loss",
+        "demerit good"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Positive externalities and responses to externalities",
+      "objectives": [
+        "Analyse positive production and consumption externalities",
+        "Evaluate carbon taxes, tradable permits and regulation",
+        "Assess subsidies and awareness campaigns"
+      ],
+      "keywords": [
+        "positive externality",
+        "MSB",
+        "carbon tax",
+        "tradable permits",
+        "regulation",
+        "merit good"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Common pool resources, public goods and sustainability",
+      "objectives": [
+        "Explain the tragedy of the commons",
+        "Analyse public goods and the free-rider problem",
+        "Discuss collective self-governance and international cooperation"
+      ],
+      "keywords": [
+        "common pool resources",
+        "public goods",
+        "free rider",
+        "sustainability",
+        "non-excludable"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Term 1 review: microeconomic foundations and market failure",
+      "objectives": [
+        "Practise Paper 1 part (a) and (b) answers with diagrams",
+        "Revise elasticities and government intervention",
+        "Self-assess definitions and diagram labelling"
+      ],
+      "keywords": [
+        "Paper 1",
+        "diagrams",
+        "definitions",
+        "evaluation",
+        "real-world examples"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Alternative business objectives and corporate social responsibility",
+      "objectives": [
+        "Compare profit, revenue and growth maximization",
+        "Explain satisficing and CSR",
+        "Evaluate how objectives affect behaviour"
+      ],
+      "keywords": [
+        "profit maximization",
+        "revenue maximization",
+        "growth",
+        "satisficing",
+        "CSR"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "The market's inability to achieve equity",
+      "objectives": [
+        "Explain why markets can lead to unequal outcomes",
+        "Analyse policies addressing inequality in access to goods",
+        "Evaluate equity versus efficiency trade-offs"
+      ],
+      "keywords": [
+        "equity",
+        "equality",
+        "income distribution",
+        "access",
+        "trade-off"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "IA portfolio: writing a microeconomics commentary",
+      "objectives": [
+        "Select a recent news article and link it to a key concept",
+        "Use diagrams and terminology accurately",
+        "Plan analysis and evaluation within the word limit"
+      ],
+      "keywords": [
+        "internal assessment",
+        "commentary",
+        "news article",
+        "key concept",
+        "word limit"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Measuring economic activity: GDP, GNI and real values",
+      "objectives": [
+        "Distinguish GDP, GNI, nominal and real values",
+        "Calculate real GDP using a price deflator",
+        "Explain limitations of GDP data"
+      ],
+      "keywords": [
+        "GDP",
+        "GNI",
+        "real GDP",
+        "nominal",
+        "deflator",
+        "business cycle"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Measuring well-being: GDP per capita, PPP and alternative measures",
+      "objectives": [
+        "Compare GDP per capita and PPP",
+        "Evaluate HDI, OECD Better Life Index and happiness indices",
+        "Discuss the limits of output-based measures"
+      ],
+      "keywords": [
+        "PPP",
+        "HDI",
+        "Better Life Index",
+        "happiness index",
+        "green GDP"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Aggregate demand and its components",
+      "objectives": [
+        "Define AD and its components C + I + G + (X − M)",
+        "Explain the shape of the AD curve",
+        "Identify factors that shift AD"
+      ],
+      "keywords": [
+        "aggregate demand",
+        "consumption",
+        "investment",
+        "government spending",
+        "net exports"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Short-run aggregate supply and macroeconomic equilibrium",
+      "objectives": [
+        "Explain SRAS and its determinants",
+        "Show short-run equilibrium, recessionary and inflationary gaps",
+        "Analyse supply shocks"
+      ],
+      "keywords": [
+        "SRAS",
+        "equilibrium",
+        "output gap",
+        "supply shock",
+        "recession"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Long-run aggregate supply: new classical and Keynesian views",
+      "objectives": [
+        "Compare the vertical LRAS and the Keynesian AS curve",
+        "Explain full-employment output",
+        "Analyse shifts in LRAS"
+      ],
+      "keywords": [
+        "LRAS",
+        "Keynesian AS",
+        "full employment",
+        "potential output",
+        "new classical"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Macroeconomic objective: low unemployment",
+      "objectives": [
+        "Calculate the unemployment rate",
+        "Explain structural, frictional, seasonal and cyclical unemployment",
+        "Evaluate costs of unemployment"
+      ],
+      "keywords": [
+        "unemployment rate",
+        "structural",
+        "frictional",
+        "cyclical",
+        "hidden unemployment"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Macroeconomic objective: low and stable inflation",
+      "objectives": [
+        "Explain demand-pull and cost-push inflation",
+        "Evaluate costs of inflation and deflation",
+        "Interpret the consumer price index"
+      ],
+      "keywords": [
+        "inflation",
+        "deflation",
+        "disinflation",
+        "CPI",
+        "demand-pull",
+        "cost-push"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Macroeconomic objective: economic growth",
+      "objectives": [
+        "Explain causes of growth using PPC and LRAS",
+        "Evaluate consequences of growth for living standards and environment",
+        "Calculate growth rates"
+      ],
+      "keywords": [
+        "economic growth",
+        "potential growth",
+        "productivity",
+        "PPC",
+        "LRAS"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mid-year exams: microeconomics and introductory macroeconomics",
+      "objectives": [
+        "Complete timed Paper 1 and Paper 2 questions",
+        "Apply diagrams under exam conditions",
+        "Review feedback and set targets"
+      ],
+      "keywords": [
+        "mock exam",
+        "Paper 1",
+        "Paper 2",
+        "timing",
+        "feedback"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Equity: income and wealth inequality and poverty",
+      "objectives": [
+        "Interpret Lorenz curves and Gini coefficients",
+        "Distinguish absolute and relative poverty",
+        "Explain causes of inequality"
+      ],
+      "keywords": [
+        "Lorenz curve",
+        "Gini coefficient",
+        "absolute poverty",
+        "relative poverty",
+        "wealth"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Taxation and policies to reduce inequality",
+      "objectives": [
+        "Compare progressive, regressive and proportional taxes",
+        "Evaluate transfer payments and universal basic income",
+        "Discuss Bolsa Família as a real-world example"
+      ],
+      "keywords": [
+        "progressive tax",
+        "regressive tax",
+        "transfer payments",
+        "UBI",
+        "Bolsa Família"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Environmental sustainability and government debt",
+      "objectives": [
+        "Explain sustainability as a macroeconomic objective",
+        "Distinguish budget deficit and government debt",
+        "Evaluate consequences of high public debt"
+      ],
+      "keywords": [
+        "sustainability",
+        "budget deficit",
+        "government debt",
+        "credit rating",
+        "debt servicing"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Demand-side policies: monetary policy",
+      "objectives": [
+        "Explain the role and goals of central banks",
+        "Analyse interest rate changes and quantitative easing",
+        "Evaluate strengths and constraints of monetary policy"
+      ],
+      "keywords": [
+        "monetary policy",
+        "central bank",
+        "interest rate",
+        "inflation targeting",
+        "QE",
+        "Banco Central do Brasil"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Demand-side policies: fiscal policy",
+      "objectives": [
+        "Analyse expansionary and contractionary fiscal policy",
+        "Explain automatic stabilizers and discretionary policy",
+        "Evaluate crowding out and time lags"
+      ],
+      "keywords": [
+        "fiscal policy",
+        "automatic stabilizers",
+        "crowding out",
+        "time lags",
+        "budget"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Supply-side policies: market-based and interventionist",
+      "objectives": [
+        "Analyse labour market, deregulation and privatization policies",
+        "Analyse investment in education, infrastructure and R&D",
+        "Evaluate effects on growth and inequality"
+      ],
+      "keywords": [
+        "supply-side policy",
+        "deregulation",
+        "privatization",
+        "infrastructure",
+        "human capital"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "IA portfolio: planning a macroeconomics commentary",
+      "objectives": [
+        "Choose an article from a different unit and key concept",
+        "Apply AD/AS diagrams to the article",
+        "Draft an evaluation that weighs stakeholders"
+      ],
+      "keywords": [
+        "internal assessment",
+        "AD/AS",
+        "key concept",
+        "evaluation",
+        "stakeholders"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Policy conflicts and trade-offs between macroeconomic objectives",
+      "objectives": [
+        "Analyse growth versus inflation and growth versus environment",
+        "Evaluate the effectiveness of policy mixes",
+        "Apply to Brazil's recent macro data"
+      ],
+      "keywords": [
+        "trade-offs",
+        "policy mix",
+        "stagflation",
+        "data analysis",
+        "Brazil"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "End-of-year exams: Units 1–3",
+      "objectives": [
+        "Complete timed Paper 1 essays and Paper 2 data response",
+        "Use accurate diagrams and real-world examples",
+        "Reflect on strengths and gaps"
+      ],
+      "keywords": [
+        "end-of-year exam",
+        "Paper 1",
+        "Paper 2",
+        "diagrams",
+        "examples"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Year review: consolidating micro and macro; summer IA plan",
+      "objectives": [
+        "Map links between micro and macro concepts",
+        "Correct exam errors with model diagrams",
+        "Plan the next IA commentary"
+      ],
+      "keywords": [
+        "review",
+        "concept map",
+        "IA plan",
+        "diagrams",
+        "consolidation"
+      ],
+      "spelling": []
+    }
+  ]
+}

@@ -1,0 +1,733 @@
+{
+  "version": 1,
+  "year": "Y13",
+  "stage": "ib",
+  "subject": "comp",
+  "level": "hl",
+  "language": "en",
+  "source": "IB Diploma Programme Computer Science guide (first assessment 2027), HL (SL content + additional higher level) — themes A (concepts) and B (computational thinking and problem-solving), case study and IA computational solution",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "IA: developing core functionality",
+      "objectives": [
+        "Implement the core features of the solution",
+        "Use appropriate algorithmic techniques",
+        "Document development with evidence"
+      ],
+      "keywords": [
+        "development",
+        "core features",
+        "techniques",
+        "evidence"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "IA: testing against the plan and iterating",
+      "objectives": [
+        "Execute the test plan",
+        "Fix defects and refine features",
+        "Gather user or self-evaluation feedback"
+      ],
+      "keywords": [
+        "testing",
+        "iteration",
+        "defects",
+        "feedback"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "A4.2 Data preprocessing (HL)",
+      "objectives": [
+        "Clean data: missing values, outliers and duplicates",
+        "Apply normalisation and feature selection",
+        "Explain dimensionality reduction"
+      ],
+      "keywords": [
+        "data cleaning",
+        "normalisation",
+        "feature selection",
+        "outlier",
+        "dimensionality reduction"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "A4.3 Machine learning approaches: supervised learning (HL)",
+      "objectives": [
+        "Describe linear regression and classification",
+        "Explain k-nearest neighbours and decision trees",
+        "Evaluate models with accuracy measures"
+      ],
+      "keywords": [
+        "linear regression",
+        "classification",
+        "k-NN",
+        "decision tree",
+        "accuracy",
+        "confusion matrix"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "A4.3 Unsupervised, reinforcement learning, neural networks and genetic algorithms (HL)",
+      "objectives": [
+        "Describe clustering and association rules",
+        "Explain neural network structure",
+        "Outline genetic algorithms and reinforcement learning"
+      ],
+      "keywords": [
+        "clustering",
+        "neural network",
+        "neuron layer",
+        "genetic algorithm",
+        "reinforcement learning"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "B4.1 Abstract data types: stacks and queues (HL)",
+      "objectives": [
+        "Define ADTs and their operations",
+        "Implement stacks and queues",
+        "Apply stacks and queues to problems"
+      ],
+      "keywords": [
+        "ADT",
+        "stack",
+        "queue",
+        "push",
+        "pop",
+        "enqueue"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "B4.1 Abstract data types: linked lists (HL)",
+      "objectives": [
+        "Describe singly, doubly and circular linked lists",
+        "Insert and delete nodes",
+        "Compare linked lists and arrays"
+      ],
+      "keywords": [
+        "linked list",
+        "node",
+        "pointer",
+        "insertion",
+        "deletion"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "B4.1 Binary search trees and recursion (HL)",
+      "objectives": [
+        "Build and traverse binary search trees",
+        "Write recursive algorithms",
+        "Compare recursive and iterative solutions"
+      ],
+      "keywords": [
+        "binary search tree",
+        "traversal",
+        "recursion",
+        "base case",
+        "in-order"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Case study: scenario, stakeholders and key terminology",
+      "objectives": [
+        "Read the pre-released case study carefully",
+        "Build a glossary of key terms",
+        "Identify stakeholders and their needs"
+      ],
+      "keywords": [
+        "case study",
+        "pre-release",
+        "terminology",
+        "stakeholders"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Case study: technical challenges and further research",
+      "objectives": [
+        "Analyse the technical challenges in the case",
+        "Research technologies mentioned",
+        "Link challenges to syllabus content"
+      ],
+      "keywords": [
+        "case study",
+        "challenges",
+        "research",
+        "technology"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "IA: evaluation against success criteria and documentation",
+      "objectives": [
+        "Evaluate the solution against each success criterion",
+        "Suggest realistic improvements",
+        "Complete documentation within the word limit"
+      ],
+      "keywords": [
+        "evaluation",
+        "success criteria",
+        "improvements",
+        "documentation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "IA: final submission and academic integrity",
+      "objectives": [
+        "Check all required components are complete",
+        "Acknowledge libraries and sources",
+        "Submit the final IA"
+      ],
+      "keywords": [
+        "submission",
+        "academic integrity",
+        "libraries",
+        "sources"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Paper 1 practice: theme A and case study questions",
+      "objectives": [
+        "Answer structured theory questions",
+        "Apply case study knowledge",
+        "Use command terms correctly",
+        "HL: Include extended HL theory questions"
+      ],
+      "keywords": [
+        "Paper 1",
+        "theme A",
+        "case study",
+        "command terms",
+        "HL"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Paper 2 practice: theme B programming questions",
+      "objectives": [
+        "Write code and pseudocode solutions",
+        "Trace and correct algorithms",
+        "Explain OOP design decisions",
+        "HL: Include ADT and multi-class OOP questions"
+      ],
+      "keywords": [
+        "Paper 2",
+        "theme B",
+        "pseudocode",
+        "OOP",
+        "ADT"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Review: IA progress, case study and machine learning",
+      "objectives": [
+        "Consolidate ML and case study content",
+        "Review IA progress",
+        "Identify gaps before the mocks"
+      ],
+      "keywords": [
+        "review",
+        "case study",
+        "machine learning",
+        "IA"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Theme A practice: computer fundamentals and networks",
+      "objectives": [
+        "Answer exam questions on hardware, logic and OS",
+        "Answer exam questions on networks and security",
+        "Use precise terminology"
+      ],
+      "keywords": [
+        "theme A",
+        "hardware",
+        "networks",
+        "security"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Theme A practice: databases and machine learning",
+      "objectives": [
+        "Answer exam questions on database design and SQL",
+        "Answer exam questions on ML",
+        "Justify answers with examples"
+      ],
+      "keywords": [
+        "theme A",
+        "databases",
+        "SQL",
+        "machine learning"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Case study: ethics, impacts and evaluation",
+      "objectives": [
+        "Evaluate ethical issues raised in the case",
+        "Discuss social and economic impacts",
+        "Write balanced evaluations"
+      ],
+      "keywords": [
+        "case study",
+        "ethics",
+        "impacts",
+        "evaluation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Paper 2: writing code and pseudocode solutions",
+      "objectives": [
+        "Solve problems with loops, arrays and functions",
+        "Write readable, correct code by hand",
+        "Check edge cases"
+      ],
+      "keywords": [
+        "Paper 2",
+        "code writing",
+        "arrays",
+        "edge cases"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Paper 2: object-oriented programming questions",
+      "objectives": [
+        "Write and modify classes from specifications",
+        "Interpret UML diagrams",
+        "Explain OOP concepts"
+      ],
+      "keywords": [
+        "Paper 2",
+        "OOP",
+        "UML",
+        "classes"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Paper 2: abstract data type problems (HL)",
+      "objectives": [
+        "Solve problems with stacks, queues and linked lists",
+        "Trace recursive algorithms on trees",
+        "Choose suitable ADTs"
+      ],
+      "keywords": [
+        "ADT",
+        "stack",
+        "linked list",
+        "binary tree",
+        "recursion"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Command terms and extended-response technique",
+      "objectives": [
+        "Interpret command terms such as explain, evaluate, construct",
+        "Structure extended answers",
+        "Use mark schemes to self-assess"
+      ],
+      "keywords": [
+        "command terms",
+        "extended response",
+        "mark scheme"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Timed practice: full Paper 1",
+      "objectives": [
+        "Complete Paper 1 under timed conditions",
+        "Self-mark and log errors",
+        "Refine case study answers"
+      ],
+      "keywords": [
+        "timed practice",
+        "Paper 1",
+        "error log"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Timed practice: full Paper 2",
+      "objectives": [
+        "Complete Paper 2 under timed conditions",
+        "Self-mark and log errors",
+        "Improve code accuracy"
+      ],
+      "keywords": [
+        "timed practice",
+        "Paper 2",
+        "error log"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Case study: practice questions",
+      "objectives": [
+        "Answer case study practice questions",
+        "Link answers to specific case details",
+        "Peer-review answers"
+      ],
+      "keywords": [
+        "case study",
+        "practice questions",
+        "peer review"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Common misconceptions and mixed-topic problems",
+      "objectives": [
+        "Identify frequent errors across themes",
+        "Correct misconceptions with targeted practice",
+        "Prepare a mock revision plan"
+      ],
+      "keywords": [
+        "misconceptions",
+        "mixed topics",
+        "revision plan"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mock exams: Paper 1 and Paper 2",
+      "objectives": [
+        "Sit full IB-style mock papers",
+        "Apply all topics under exam conditions",
+        "Analyse performance by topic"
+      ],
+      "keywords": [
+        "mock exam",
+        "Paper 1",
+        "Paper 2",
+        "analysis"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "review",
+      "topic": "Revision: A1 computer fundamentals",
+      "objectives": [
+        "Review hardware and the FDE cycle",
+        "Review data representation and logic",
+        "Review operating systems",
+        "HL: Review translation and memory management"
+      ],
+      "keywords": [
+        "hardware",
+        "binary",
+        "logic gates",
+        "OS",
+        "revision",
+        "compiler"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "review",
+      "topic": "Revision: A2 networks",
+      "objectives": [
+        "Review network types and models",
+        "Review transmission and protocols",
+        "Review network security"
+      ],
+      "keywords": [
+        "networks",
+        "TCP/IP",
+        "protocols",
+        "security",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "review",
+      "topic": "Revision: A3 databases",
+      "objectives": [
+        "Review relational design and normalisation",
+        "Practise SQL queries",
+        "Review integrity and keys",
+        "HL: Review NoSQL and data warehouses"
+      ],
+      "keywords": [
+        "databases",
+        "normalisation",
+        "SQL",
+        "keys",
+        "revision",
+        "NoSQL"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "review",
+      "topic": "Revision: A4 machine learning and the case study",
+      "objectives": [
+        "Review ML fundamentals and ethics",
+        "Review the case study glossary",
+        "Practise case study questions",
+        "HL: Review preprocessing and ML approaches"
+      ],
+      "keywords": [
+        "machine learning",
+        "ethics",
+        "case study",
+        "revision",
+        "neural network"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "review",
+      "topic": "Revision: B1–B2 computational thinking and programming",
+      "objectives": [
+        "Review computational thinking",
+        "Practise searching, sorting and file processing",
+        "Trace and write code"
+      ],
+      "keywords": [
+        "computational thinking",
+        "algorithms",
+        "file processing",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "review",
+      "topic": "Revision: B3 object-oriented programming",
+      "objectives": [
+        "Review classes, objects and encapsulation",
+        "Practise UML and class code",
+        "Review testing",
+        "HL: Review inheritance, polymorphism and ADTs"
+      ],
+      "keywords": [
+        "OOP",
+        "encapsulation",
+        "UML",
+        "revision",
+        "ADTs"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "exam",
+      "topic": "IB exam preparation: key definitions and pseudocode conventions",
+      "objectives": [
+        "Rehearse key definitions",
+        "Review IB pseudocode conventions",
+        "Plan exam-day timing"
+      ],
+      "keywords": [
+        "definitions",
+        "pseudocode",
+        "exam timing",
+        "final revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "exam",
+      "topic": "IB examinations: Paper 1 (concepts and case study)",
+      "objectives": [
+        "Sit Paper 1 in the May session",
+        "Apply case study knowledge",
+        "Manage time across sections"
+      ],
+      "keywords": [
+        "IB exam",
+        "Paper 1",
+        "case study",
+        "May session"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "IB examinations: Paper 2 (problem-solving and programming)",
+      "objectives": [
+        "Sit Paper 2 in the May session",
+        "Write and trace code accurately",
+        "Explain design decisions"
+      ],
+      "keywords": [
+        "IB exam",
+        "Paper 2",
+        "programming",
+        "May session"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "exam",
+      "topic": "IB examination period: completion and reflection",
+      "objectives": [
+        "Complete remaining IB examinations",
+        "Reflect on the DP computer science course",
+        "Consider computing in future studies"
+      ],
+      "keywords": [
+        "exam period",
+        "reflection",
+        "future studies",
+        "DP completion"
+      ],
+      "spelling": []
+    }
+  ]
+}

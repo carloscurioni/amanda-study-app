@@ -1,0 +1,767 @@
+{
+  "version": 1,
+  "year": "Y12",
+  "stage": "ib",
+  "subject": "chem",
+  "level": "sl",
+  "language": "en",
+  "source": "IB Diploma Programme Chemistry guide (first assessment 2025), SL — Structure 1–3, Reactivity 1–3, tools, inquiry process and internal assessment",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Tools and inquiry: lab safety, measurement and uncertainty",
+      "objectives": [
+        "Use common lab apparatus safely",
+        "Record measurements with uncertainties and significant figures",
+        "Distinguish random and systematic errors"
+      ],
+      "keywords": [
+        "lab safety",
+        "uncertainty",
+        "significant figures",
+        "random error",
+        "systematic error",
+        "precision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "S1.1 Introduction to the particulate nature of matter",
+      "objectives": [
+        "Classify matter as elements, compounds and mixtures",
+        "Describe changes of state with the kinetic model",
+        "Choose separation techniques for mixtures"
+      ],
+      "keywords": [
+        "element",
+        "compound",
+        "mixture",
+        "kinetic theory",
+        "state symbol",
+        "separation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "S1.2 The nuclear atom",
+      "objectives": [
+        "Describe subatomic particles and atomic structure",
+        "Use nuclear symbols and isotopes",
+        "Calculate relative atomic mass from abundance"
+      ],
+      "keywords": [
+        "proton",
+        "neutron",
+        "electron",
+        "isotope",
+        "atomic number",
+        "relative atomic mass"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "S1.3 Electron configurations",
+      "objectives": [
+        "Interpret emission spectra and energy levels",
+        "Write electron configurations using s, p, d and f sublevels",
+        "Apply the Aufbau principle and Hund's rule"
+      ],
+      "keywords": [
+        "emission spectrum",
+        "energy level",
+        "orbital",
+        "sublevel",
+        "Aufbau principle",
+        "Hund's rule"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "S1.4 Counting particles by mass: the mole",
+      "objectives": [
+        "Use the Avogadro constant and molar mass",
+        "Determine empirical and molecular formulas",
+        "Calculate concentrations of solutions"
+      ],
+      "keywords": [
+        "mole",
+        "Avogadro constant",
+        "molar mass",
+        "empirical formula",
+        "molecular formula",
+        "concentration"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "S1.5 Ideal gases",
+      "objectives": [
+        "Describe the ideal gas model and its limits",
+        "Use the ideal gas equation pV = nRT",
+        "Calculate molar volume of gases"
+      ],
+      "keywords": [
+        "ideal gas",
+        "pV = nRT",
+        "molar volume",
+        "STP",
+        "real gas",
+        "gas laws"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "R2.1 Stoichiometry: equations, limiting reactants and yield",
+      "objectives": [
+        "Balance equations including state symbols",
+        "Identify the limiting reactant",
+        "Calculate theoretical and percentage yield and atom economy"
+      ],
+      "keywords": [
+        "stoichiometry",
+        "limiting reactant",
+        "excess",
+        "percentage yield",
+        "atom economy",
+        "balanced equation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "R2.1 Solutions: concentration and titration calculations",
+      "objectives": [
+        "Calculate amounts in solution reactions",
+        "Perform acid–base titration calculations",
+        "Prepare standard solutions"
+      ],
+      "keywords": [
+        "titration",
+        "standard solution",
+        "concentration",
+        "mol dm⁻³",
+        "burette",
+        "end point"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "S2.1 The ionic model",
+      "objectives": [
+        "Explain ionic bond formation",
+        "Deduce formulas of ionic compounds and polyatomic ions",
+        "Relate lattice structure to properties"
+      ],
+      "keywords": [
+        "ionic bond",
+        "cation",
+        "anion",
+        "lattice",
+        "polyatomic ion",
+        "lattice enthalpy"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "S2.2 Covalent model: Lewis structures, VSEPR and polarity",
+      "objectives": [
+        "Draw Lewis formulas for molecules and ions",
+        "Predict shapes and bond angles with VSEPR",
+        "Determine bond and molecular polarity"
+      ],
+      "keywords": [
+        "covalent bond",
+        "Lewis formula",
+        "VSEPR",
+        "bond angle",
+        "electronegativity",
+        "polarity"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "S2.2 Intermolecular forces, giant covalent structures and chromatography",
+      "objectives": [
+        "Compare London, dipole–dipole forces and hydrogen bonding",
+        "Relate intermolecular forces to physical properties",
+        "Separate mixtures using chromatography"
+      ],
+      "keywords": [
+        "intermolecular forces",
+        "London dispersion",
+        "hydrogen bonding",
+        "allotrope",
+        "chromatography",
+        "Rf value"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "S2.3–S2.4 Metallic bonding and from models to materials",
+      "objectives": [
+        "Explain metallic bonding and properties of metals",
+        "Use the bonding triangle to classify materials",
+        "Describe alloys and addition polymers"
+      ],
+      "keywords": [
+        "metallic bond",
+        "delocalised electrons",
+        "alloy",
+        "bonding triangle",
+        "addition polymer",
+        "material"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "S3.1 The periodic table: periodicity",
+      "objectives": [
+        "Relate position in the table to electron configuration",
+        "Explain trends in atomic radius, ionisation energy and electronegativity",
+        "Describe acid–base character of oxides"
+      ],
+      "keywords": [
+        "period",
+        "group",
+        "atomic radius",
+        "ionisation energy",
+        "electronegativity",
+        "oxide"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "S3.1 Periodic trends in the reactions of elements",
+      "objectives": [
+        "Describe reactions of group 1 metals with water",
+        "Describe displacement reactions of halogens",
+        "Explain trends using atomic structure"
+      ],
+      "keywords": [
+        "alkali metals",
+        "halogens",
+        "displacement",
+        "reactivity",
+        "trend"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Review: atomic structure, the mole and bonding",
+      "objectives": [
+        "Consolidate atomic structure and electron configuration",
+        "Practise mole and stoichiometry calculations",
+        "Review bonding models"
+      ],
+      "keywords": [
+        "review",
+        "atomic structure",
+        "mole",
+        "bonding",
+        "stoichiometry"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "R1.1 Measuring enthalpy changes",
+      "objectives": [
+        "Distinguish exothermic and endothermic reactions",
+        "Calculate enthalpy change from calorimetry data",
+        "Draw energy profile diagrams"
+      ],
+      "keywords": [
+        "enthalpy",
+        "exothermic",
+        "endothermic",
+        "calorimetry",
+        "q = mcΔT",
+        "energy profile"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "R1.2 Energy cycles in reactions",
+      "objectives": [
+        "Use bond enthalpies to estimate ΔH",
+        "Apply Hess's law",
+        "Construct energy cycles"
+      ],
+      "keywords": [
+        "bond enthalpy",
+        "Hess's law",
+        "energy cycle",
+        "standard conditions"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "R1.3 Energy from fuels",
+      "objectives": [
+        "Compare complete and incomplete combustion",
+        "Evaluate fossil fuels and biofuels",
+        "Describe fuel cells"
+      ],
+      "keywords": [
+        "combustion",
+        "fossil fuel",
+        "biofuel",
+        "specific energy",
+        "fuel cell",
+        "carbon footprint"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Practical: calorimetry and error analysis",
+      "objectives": [
+        "Carry out a calorimetry experiment",
+        "Calculate ΔH with propagated uncertainty",
+        "Compare results with literature values"
+      ],
+      "keywords": [
+        "calorimetry",
+        "percentage error",
+        "literature value",
+        "heat loss",
+        "propagation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "R2.2 Rates of reaction: collision theory and measurement",
+      "objectives": [
+        "Define rate of reaction",
+        "Explain collision theory and activation energy",
+        "Measure rates by mass, gas volume or colour change"
+      ],
+      "keywords": [
+        "rate of reaction",
+        "collision theory",
+        "activation energy",
+        "gradient",
+        "data logger"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "R2.2 Factors affecting rate, Maxwell–Boltzmann and catalysts",
+      "objectives": [
+        "Explain effects of temperature, concentration and surface area",
+        "Interpret Maxwell–Boltzmann distributions",
+        "Explain how catalysts work"
+      ],
+      "keywords": [
+        "Maxwell–Boltzmann",
+        "temperature",
+        "catalyst",
+        "surface area",
+        "frequency of collisions"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "R2.3 Dynamic equilibrium and Le Châtelier's principle",
+      "objectives": [
+        "Describe dynamic equilibrium in closed systems",
+        "Predict effects of changes using Le Châtelier's principle",
+        "Apply equilibrium ideas to industrial processes"
+      ],
+      "keywords": [
+        "equilibrium",
+        "dynamic",
+        "Le Châtelier's principle",
+        "closed system",
+        "Haber process"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "R2.3 Equilibrium constant Kc and reaction quotient Q",
+      "objectives": [
+        "Write Kc expressions",
+        "Relate the size of Kc to equilibrium position",
+        "Compare Q with Kc to predict direction"
+      ],
+      "keywords": [
+        "equilibrium constant",
+        "Kc",
+        "reaction quotient",
+        "Q",
+        "position of equilibrium"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "S3.2 Functional groups and IUPAC nomenclature",
+      "objectives": [
+        "Identify functional groups in organic molecules",
+        "Name compounds using IUPAC rules",
+        "Draw full, condensed and skeletal formulas"
+      ],
+      "keywords": [
+        "functional group",
+        "IUPAC",
+        "skeletal formula",
+        "alkane",
+        "alcohol",
+        "carboxylic acid"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "S3.2 Homologous series and structural isomers",
+      "objectives": [
+        "Describe trends in homologous series",
+        "Draw structural isomers",
+        "Classify primary, secondary and tertiary compounds"
+      ],
+      "keywords": [
+        "homologous series",
+        "isomer",
+        "structural isomer",
+        "primary",
+        "secondary",
+        "tertiary"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Collaborative sciences project",
+      "objectives": [
+        "Work in an interdisciplinary team on a real-world problem",
+        "Apply chemical knowledge to a shared investigation",
+        "Communicate and reflect on collaboration"
+      ],
+      "keywords": [
+        "collaboration",
+        "interdisciplinary",
+        "sustainability",
+        "teamwork",
+        "reflection"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mid-year exams: structure, energetics and kinetics",
+      "objectives": [
+        "Sit Paper 1 and Paper 2 style questions",
+        "Apply calculations under timed conditions",
+        "Reflect on errors and timing"
+      ],
+      "keywords": [
+        "exam",
+        "Paper 1",
+        "Paper 2",
+        "calculations"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "S3.2 Spectroscopic identification of organic compounds",
+      "objectives": [
+        "Calculate index of hydrogen deficiency",
+        "Interpret IR spectra and mass spectra",
+        "Interpret ¹H NMR spectra"
+      ],
+      "keywords": [
+        "IHD",
+        "infrared spectroscopy",
+        "mass spectrometry",
+        "¹H NMR",
+        "chemical shift",
+        "fragment"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "R3.1 Acids and bases: Brønsted–Lowry theory and pH",
+      "objectives": [
+        "Identify conjugate acid–base pairs",
+        "Calculate pH from [H⁺]",
+        "Describe reactions of acids"
+      ],
+      "keywords": [
+        "Brønsted–Lowry",
+        "conjugate pair",
+        "pH",
+        "amphiprotic",
+        "neutralisation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "R3.1 Strong and weak acids and bases; the ionic product of water",
+      "objectives": [
+        "Distinguish strong and weak acids and bases",
+        "Use Kw to relate [H⁺] and [OH⁻]",
+        "Compare conductivity and pH of strong and weak acids"
+      ],
+      "keywords": [
+        "strong acid",
+        "weak acid",
+        "Kw",
+        "dissociation",
+        "conductivity",
+        "hydroxide ion"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Practical: acid–base titration and indicators",
+      "objectives": [
+        "Carry out an accurate titration",
+        "Choose a suitable indicator",
+        "Process titration data with uncertainty"
+      ],
+      "keywords": [
+        "titration",
+        "indicator",
+        "concordant results",
+        "uncertainty",
+        "burette"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "R3.2 Redox: oxidation states and reactivity",
+      "objectives": [
+        "Assign oxidation states",
+        "Write redox half-equations",
+        "Use the activity series of metals"
+      ],
+      "keywords": [
+        "oxidation state",
+        "oxidising agent",
+        "reducing agent",
+        "half-equation",
+        "activity series"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "R3.2 Electrochemical cells: primary, secondary and fuel cells",
+      "objectives": [
+        "Describe the operation of voltaic cells",
+        "Compare primary and secondary cells",
+        "Describe fuel cells"
+      ],
+      "keywords": [
+        "voltaic cell",
+        "anode",
+        "cathode",
+        "salt bridge",
+        "secondary cell",
+        "fuel cell"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "IA: exploring research questions",
+      "objectives": [
+        "Generate focused, investigable research questions",
+        "Identify variables and suitable techniques",
+        "Review background chemistry"
+      ],
+      "keywords": [
+        "internal assessment",
+        "research question",
+        "variables",
+        "background",
+        "scientific investigation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "IA: planning methodology and risk assessment",
+      "objectives": [
+        "Design a method with sufficient, relevant data",
+        "Plan controls and repeat trials",
+        "Complete a safety, ethical and environmental assessment"
+      ],
+      "keywords": [
+        "methodology",
+        "controls",
+        "trials",
+        "risk assessment",
+        "COSHH"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "End-of-year exams: DP1 chemistry",
+      "objectives": [
+        "Sit school exams covering DP1 topics",
+        "Use the data booklet accurately",
+        "Answer structured questions"
+      ],
+      "keywords": [
+        "exam",
+        "data booklet",
+        "structured questions",
+        "DP1"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Review: DP1 reflection and IA preparation",
+      "objectives": [
+        "Analyse exam performance by topic",
+        "Refine the IA research question",
+        "Plan preliminary trials"
+      ],
+      "keywords": [
+        "reflection",
+        "IA",
+        "preliminary trial",
+        "goals"
+      ],
+      "spelling": []
+    }
+  ]
+}

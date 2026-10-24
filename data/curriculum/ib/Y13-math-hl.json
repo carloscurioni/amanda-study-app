@@ -1,0 +1,738 @@
+{
+  "version": 1,
+  "year": "Y13",
+  "stage": "ib",
+  "subject": "math",
+  "level": "hl",
+  "language": "en",
+  "source": "IB Diploma Programme Mathematics: analysis and approaches guide (first assessment 2021), HL (SL core + additional higher level) — topics 1–5 and toolkit/exploration",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "IA exploration: drafting the mathematics and communication",
+      "objectives": [
+        "Develop the mathematics with clear reasoning",
+        "Structure the exploration with introduction, body and conclusion",
+        "Apply criteria A–E to self-assess"
+      ],
+      "keywords": [
+        "draft",
+        "communication",
+        "mathematical presentation",
+        "reflection",
+        "criteria"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Kinematics with calculus (SL 5.9)",
+      "objectives": [
+        "Relate displacement, velocity and acceleration",
+        "Use calculus to find distance travelled",
+        "Interpret motion in context"
+      ],
+      "keywords": [
+        "kinematics",
+        "displacement",
+        "velocity",
+        "acceleration",
+        "distance"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Integration of standard functions, including AHL integrals (SL 5.10, AHL 5.15)",
+      "objectives": [
+        "Integrate standard functions and composites of linear functions",
+        "Integrate using inverse trigonometric results",
+        "Use substitution by inspection"
+      ],
+      "keywords": [
+        "indefinite integral",
+        "arctan",
+        "arcsin",
+        "reverse chain rule",
+        "standard integrals"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Integration by substitution and by parts (AHL 5.16)",
+      "objectives": [
+        "Integrate using a given or chosen substitution",
+        "Integrate by parts, including repeated parts",
+        "Choose an appropriate technique"
+      ],
+      "keywords": [
+        "substitution",
+        "integration by parts",
+        "repeated parts",
+        "technique"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Definite integrals, areas and volumes of revolution (SL 5.11, AHL 5.17)",
+      "objectives": [
+        "Find areas between curves and with the y-axis",
+        "Calculate volumes of revolution about x- and y-axes",
+        "Use the GDC for definite integrals"
+      ],
+      "keywords": [
+        "definite integral",
+        "area",
+        "volume of revolution",
+        "y-axis",
+        "GDC"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Limits and L'Hôpital's rule (AHL 5.13)",
+      "objectives": [
+        "Evaluate limits of indeterminate forms",
+        "Apply L'Hôpital's rule, repeatedly if needed",
+        "Use limits to describe function behaviour"
+      ],
+      "keywords": [
+        "limit",
+        "indeterminate form",
+        "L'Hôpital's rule",
+        "0/0",
+        "∞/∞"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "IA exploration: first draft submission and feedback",
+      "objectives": [
+        "Submit a complete first draft",
+        "Act on teacher feedback on rigour and reflection",
+        "Check correctness and appropriate notation"
+      ],
+      "keywords": [
+        "first draft",
+        "feedback",
+        "rigour",
+        "reflection",
+        "notation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Differential equations: Euler's method and separation of variables (AHL 5.18)",
+      "objectives": [
+        "Form first-order differential equations from contexts",
+        "Use Euler's method for numerical solutions",
+        "Solve separable differential equations"
+      ],
+      "keywords": [
+        "differential equation",
+        "Euler's method",
+        "separable",
+        "slope field",
+        "initial condition"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Differential equations: homogeneous and integrating factor methods (AHL 5.18)",
+      "objectives": [
+        "Solve homogeneous equations using y = vx",
+        "Solve linear equations with an integrating factor",
+        "Interpret solutions in context"
+      ],
+      "keywords": [
+        "homogeneous",
+        "substitution y = vx",
+        "integrating factor",
+        "linear ODE"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Maclaurin series of standard functions (AHL 5.19)",
+      "objectives": [
+        "Derive Maclaurin series for e^x, sin x, cos x and ln(1 + x)",
+        "Use the series with a given number of terms",
+        "Understand approximation and convergence"
+      ],
+      "keywords": [
+        "Maclaurin series",
+        "polynomial approximation",
+        "e^x",
+        "ln(1 + x)",
+        "convergence"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Maclaurin series: composites, products and applications (AHL 5.19)",
+      "objectives": [
+        "Find series by substitution, products and differentiation",
+        "Use series to evaluate limits",
+        "Use series to solve differential equations approximately"
+      ],
+      "keywords": [
+        "Maclaurin series",
+        "substitution",
+        "product of series",
+        "limits",
+        "approximation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "IA exploration: final version and academic integrity",
+      "objectives": [
+        "Refine the exploration after feedback",
+        "Reference sources and acknowledge technology",
+        "Submit the final exploration"
+      ],
+      "keywords": [
+        "final draft",
+        "academic integrity",
+        "referencing",
+        "bibliography",
+        "submission"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Paper 1 and Paper 2 skills: with and without technology",
+      "objectives": [
+        "Work accurately without a calculator",
+        "Use the GDC efficiently when allowed",
+        "Show clear working for method marks"
+      ],
+      "keywords": [
+        "Paper 1",
+        "Paper 2",
+        "non-calculator",
+        "GDC",
+        "method marks"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Paper 3 skills: extended problem-solving and investigation",
+      "objectives": [
+        "Explore patterns and make conjectures",
+        "Work through scaffolded multi-part problems",
+        "Generalise and prove results"
+      ],
+      "keywords": [
+        "Paper 3",
+        "conjecture",
+        "generalise",
+        "problem solving",
+        "proof"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Review: integration, differential equations and series",
+      "objectives": [
+        "Consolidate integration techniques",
+        "Practise differential equations and Maclaurin series",
+        "Identify gaps before the mocks"
+      ],
+      "keywords": [
+        "review",
+        "integration",
+        "differential equations",
+        "Maclaurin"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Extended problems: complex numbers, proof and algebra",
+      "objectives": [
+        "Combine complex numbers with polynomials and trigonometry",
+        "Write rigorous induction proofs",
+        "Solve systems and counting problems"
+      ],
+      "keywords": [
+        "complex numbers",
+        "induction",
+        "polynomials",
+        "counting",
+        "systems"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Extended problems: functions, polynomials and inequalities",
+      "objectives": [
+        "Solve multi-step function and polynomial problems",
+        "Sketch and interpret rational and modulus graphs",
+        "Solve inequalities analytically and graphically"
+      ],
+      "keywords": [
+        "functions",
+        "polynomials",
+        "rational functions",
+        "modulus",
+        "inequalities"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Extended problems: trigonometry and vectors",
+      "objectives": [
+        "Combine identities with equation solving",
+        "Solve problems with lines and planes in 3D",
+        "Interpret vector results geometrically"
+      ],
+      "keywords": [
+        "trigonometry",
+        "identities",
+        "vectors",
+        "planes",
+        "3D geometry"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Extended problems: probability and continuous distributions",
+      "objectives": [
+        "Work with pdfs, mean, median and mode",
+        "Combine Bayes' theorem with distributions",
+        "Model with binomial and normal distributions"
+      ],
+      "keywords": [
+        "pdf",
+        "continuous random variable",
+        "Bayes' theorem",
+        "normal",
+        "binomial"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Extended problems: differentiation, related rates and optimisation",
+      "objectives": [
+        "Solve related rates and optimisation problems",
+        "Use implicit differentiation in context",
+        "Justify results with calculus"
+      ],
+      "keywords": [
+        "related rates",
+        "optimisation",
+        "implicit differentiation",
+        "justification"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Extended problems: integration, differential equations and series",
+      "objectives": [
+        "Choose integration techniques for unfamiliar integrals",
+        "Solve and interpret differential equations",
+        "Apply Maclaurin series in longer problems"
+      ],
+      "keywords": [
+        "integration",
+        "differential equations",
+        "Maclaurin series",
+        "volumes",
+        "techniques"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Exam technique: command terms, mark schemes and proof writing",
+      "objectives": [
+        "Interpret IB command terms (show that, hence, prove)",
+        "Understand how M, A and R marks are awarded",
+        "Write concise, rigorous solutions"
+      ],
+      "keywords": [
+        "command terms",
+        "show that",
+        "hence",
+        "M marks",
+        "R marks"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Timed practice: full Paper 1 HL",
+      "objectives": [
+        "Complete a full Paper 1 under timed conditions",
+        "Manage time across sections A and B",
+        "Self-mark and log errors"
+      ],
+      "keywords": [
+        "Paper 1",
+        "timed practice",
+        "non-calculator",
+        "error log"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Timed practice: full Paper 2 HL",
+      "objectives": [
+        "Complete a full Paper 2 under timed conditions",
+        "Use the GDC efficiently",
+        "Self-mark and log errors"
+      ],
+      "keywords": [
+        "Paper 2",
+        "timed practice",
+        "GDC",
+        "error log"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Timed practice: full Paper 3 HL",
+      "objectives": [
+        "Complete a Paper 3 investigation under time",
+        "Communicate conjectures and proofs",
+        "Reflect on problem-solving strategies"
+      ],
+      "keywords": [
+        "Paper 3",
+        "timed practice",
+        "investigation",
+        "strategy"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Common misconceptions and mixed HL problems",
+      "objectives": [
+        "Identify frequent errors across HL topics",
+        "Correct misconceptions with targeted practice",
+        "Prepare a personal mock revision plan"
+      ],
+      "keywords": [
+        "misconceptions",
+        "mixed topics",
+        "HL",
+        "revision plan"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mock exams: Papers 1, 2 and 3 HL",
+      "objectives": [
+        "Sit full IB-style HL mock papers",
+        "Apply all topics under exam conditions",
+        "Analyse performance by topic"
+      ],
+      "keywords": [
+        "mock exam",
+        "Paper 1",
+        "Paper 2",
+        "Paper 3"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "review",
+      "topic": "Revision: number, algebra and complex numbers (topic 1)",
+      "objectives": [
+        "Review sequences, logarithms and counting",
+        "Practise complex numbers and De Moivre",
+        "Practise proof by induction and contradiction"
+      ],
+      "keywords": [
+        "sequences",
+        "complex numbers",
+        "De Moivre",
+        "induction",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "review",
+      "topic": "Revision: functions, polynomials and inequalities (topic 2)",
+      "objectives": [
+        "Review polynomial and rational functions",
+        "Practise transformations and modulus graphs",
+        "Practise inequalities"
+      ],
+      "keywords": [
+        "functions",
+        "polynomials",
+        "rational",
+        "modulus",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "review",
+      "topic": "Revision: trigonometry and vectors (topic 3)",
+      "objectives": [
+        "Review identities and trigonometric equations",
+        "Practise vectors, lines and planes",
+        "Use scalar and vector products"
+      ],
+      "keywords": [
+        "trigonometry",
+        "identities",
+        "vectors",
+        "planes",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "review",
+      "topic": "Revision: statistics and probability (topic 4)",
+      "objectives": [
+        "Review regression and conditional probability",
+        "Practise Bayes' theorem and distributions",
+        "Practise continuous random variables"
+      ],
+      "keywords": [
+        "statistics",
+        "Bayes' theorem",
+        "normal",
+        "pdf",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "review",
+      "topic": "Revision: differential calculus and limits (topic 5)",
+      "objectives": [
+        "Review derivative rules and first principles",
+        "Practise implicit differentiation and related rates",
+        "Practise L'Hôpital's rule"
+      ],
+      "keywords": [
+        "derivative",
+        "implicit",
+        "related rates",
+        "L'Hôpital",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "review",
+      "topic": "Revision: integral calculus, differential equations and series (topic 5)",
+      "objectives": [
+        "Review substitution and integration by parts",
+        "Practise volumes and differential equations",
+        "Practise Maclaurin series"
+      ],
+      "keywords": [
+        "integration",
+        "volumes",
+        "differential equations",
+        "Maclaurin",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "exam",
+      "topic": "IB exam preparation: formula booklet and key methods",
+      "objectives": [
+        "Know what is and is not in the formula booklet",
+        "Rehearse key methods for each topic",
+        "Plan exam-day timing"
+      ],
+      "keywords": [
+        "formula booklet",
+        "key methods",
+        "exam timing",
+        "final revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "exam",
+      "topic": "IB examinations: Paper 1 (no calculator)",
+      "objectives": [
+        "Sit Paper 1 in the May session",
+        "Apply exact methods without technology",
+        "Show clear working"
+      ],
+      "keywords": [
+        "IB exam",
+        "Paper 1",
+        "non-calculator",
+        "May session"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "IB examinations: Paper 2 (calculator)",
+      "objectives": [
+        "Sit Paper 2 in the May session",
+        "Use the GDC accurately",
+        "Manage time across sections"
+      ],
+      "keywords": [
+        "IB exam",
+        "Paper 2",
+        "GDC",
+        "May session"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "exam",
+      "topic": "IB examinations: Paper 3 (HL problem-solving)",
+      "objectives": [
+        "Sit Paper 3 in the May session",
+        "Work through extended problem-solving questions",
+        "Reflect on the DP mathematics course"
+      ],
+      "keywords": [
+        "IB exam",
+        "Paper 3",
+        "problem solving",
+        "reflection"
+      ],
+      "spelling": []
+    }
+  ]
+}
