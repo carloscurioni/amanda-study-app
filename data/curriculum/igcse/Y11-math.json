@@ -1,0 +1,683 @@
+{
+  "version": 1,
+  "year": "Y11",
+  "stage": "igcse",
+  "subject": "math",
+  "level": null,
+  "language": "en",
+  "source": "Cambridge IGCSE Mathematics 0580 (Extended) syllabus 2025–2027, Cambridge International",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Algebraic fractions: simplifying, adding, subtracting and solving",
+      "objectives": [
+        "Simplify and combine algebraic fractions",
+        "Solve equations involving algebraic fractions"
+      ],
+      "keywords": [
+        "algebraic fraction",
+        "common denominator",
+        "simplify",
+        "factorise"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Simultaneous equations: one linear and one quadratic",
+      "objectives": [
+        "Solve linear–quadratic simultaneous equations algebraically",
+        "Interpret solutions as intersection points"
+      ],
+      "keywords": [
+        "simultaneous",
+        "quadratic",
+        "substitution",
+        "intersection"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Surds: simplifying and rationalising the denominator",
+      "objectives": [
+        "Simplify expressions with surds",
+        "Rationalise denominators of the form a/√b and a/(b + √c)"
+      ],
+      "keywords": [
+        "surd",
+        "rationalise",
+        "exact value",
+        "denominator"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Exponential growth and decay",
+      "objectives": [
+        "Model growth and decay with multipliers",
+        "Solve problems involving depreciation and population change"
+      ],
+      "keywords": [
+        "exponential growth",
+        "exponential decay",
+        "multiplier",
+        "depreciation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Functions: notation, domain, range, composite and inverse functions",
+      "objectives": [
+        "Use function notation f(x)",
+        "Find composite functions fg(x) and inverse functions f⁻¹(x)"
+      ],
+      "keywords": [
+        "function",
+        "domain",
+        "range",
+        "composite",
+        "inverse"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Graphical methods: tangents, gradients and solving equations from graphs",
+      "objectives": [
+        "Estimate gradients by drawing tangents",
+        "Use graphs to solve equations and find turning points"
+      ],
+      "keywords": [
+        "tangent",
+        "gradient",
+        "graphical solution",
+        "turning point"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Differentiation: gradient functions and turning points of polynomials",
+      "objectives": [
+        "Differentiate axⁿ and polynomial functions",
+        "Find and classify turning points"
+      ],
+      "keywords": [
+        "differentiate",
+        "derivative",
+        "dy/dx",
+        "stationary point",
+        "maximum",
+        "minimum"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Non-right-angled trigonometry: sine rule, cosine rule and area ½ab sin C",
+      "objectives": [
+        "Use the sine and cosine rules to find sides and angles",
+        "Calculate the area of any triangle"
+      ],
+      "keywords": [
+        "sine rule",
+        "cosine rule",
+        "area of triangle",
+        "ambiguous case"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Trigonometric graphs and equations from 0° to 360°",
+      "objectives": [
+        "Sketch graphs of sine, cosine and tangent",
+        "Solve simple trigonometric equations in a given interval"
+      ],
+      "keywords": [
+        "sine graph",
+        "cosine graph",
+        "tangent graph",
+        "period",
+        "trigonometric equation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Pythagoras and trigonometry in three dimensions",
+      "objectives": [
+        "Find lengths and angles in 3D shapes",
+        "Calculate the angle between a line and a plane"
+      ],
+      "keywords": [
+        "3D",
+        "space diagonal",
+        "angle between line and plane",
+        "cuboid"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Vectors: notation, magnitude and vector geometry",
+      "objectives": [
+        "Add, subtract and scale vectors",
+        "Use vectors to prove geometric results"
+      ],
+      "keywords": [
+        "vector",
+        "magnitude",
+        "position vector",
+        "parallel",
+        "collinear"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "Circle theorems: cyclic quadrilaterals, alternate segment and chord properties",
+      "objectives": [
+        "Apply all circle theorems with reasons",
+        "Use symmetry properties of chords and tangents"
+      ],
+      "keywords": [
+        "cyclic quadrilateral",
+        "alternate segment",
+        "chord",
+        "tangent",
+        "perpendicular bisector"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Parallel and perpendicular lines; perpendicular bisectors",
+      "objectives": [
+        "Find equations of parallel and perpendicular lines",
+        "Find the perpendicular bisector of a line segment"
+      ],
+      "keywords": [
+        "parallel",
+        "perpendicular",
+        "gradient product",
+        "perpendicular bisector"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Cumulative frequency, quartiles and box plots",
+      "objectives": [
+        "Draw and interpret cumulative frequency diagrams",
+        "Find median, quartiles and interquartile range"
+      ],
+      "keywords": [
+        "cumulative frequency",
+        "quartile",
+        "interquartile range",
+        "box plot",
+        "percentile"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Term 1 review: algebra, functions, calculus, trigonometry and vectors",
+      "objectives": [
+        "Consolidate Term 1 topics with mixed questions",
+        "Correct common errors"
+      ],
+      "keywords": [
+        "algebra",
+        "functions",
+        "trigonometry",
+        "vectors"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Histograms with unequal class widths",
+      "objectives": [
+        "Draw histograms using frequency density",
+        "Interpret histograms to estimate frequencies"
+      ],
+      "keywords": [
+        "histogram",
+        "frequency density",
+        "class width",
+        "grouped data"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Grouped data: estimated mean, modal class and class containing the median",
+      "objectives": [
+        "Estimate the mean from a grouped frequency table",
+        "Identify the modal class and median class"
+      ],
+      "keywords": [
+        "estimated mean",
+        "midpoint",
+        "modal class",
+        "grouped frequency"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Conditional probability",
+      "objectives": [
+        "Calculate conditional probabilities from tables, trees and Venn diagrams",
+        "Solve problems involving dependent events"
+      ],
+      "keywords": [
+        "conditional probability",
+        "dependent events",
+        "given that",
+        "two-way table"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Combined transformations and describing transformations fully",
+      "objectives": [
+        "Perform successive transformations",
+        "Identify the single transformation equivalent to a combination"
+      ],
+      "keywords": [
+        "combined transformation",
+        "invariant point",
+        "centre of rotation",
+        "scale factor"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Compound measures: speed, density and pressure",
+      "objectives": [
+        "Use formulae for speed, density and pressure",
+        "Convert between units including area and volume units"
+      ],
+      "keywords": [
+        "speed",
+        "density",
+        "pressure",
+        "unit conversion",
+        "compound measure"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Recurring decimals and bounds in multi-step problems",
+      "objectives": [
+        "Convert recurring decimals to fractions",
+        "Apply upper and lower bounds in formulae"
+      ],
+      "keywords": [
+        "recurring decimal",
+        "bounds",
+        "maximum value",
+        "minimum value"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Sketching quadratic graphs: roots, intercepts and turning points",
+      "objectives": [
+        "Use completed-square form to find turning points",
+        "Sketch quadratics showing key features"
+      ],
+      "keywords": [
+        "sketch",
+        "roots",
+        "turning point",
+        "line of symmetry",
+        "intercept"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Non-calculator problem solving: Paper 2 multi-step questions",
+      "objectives": [
+        "Use efficient mental and written methods",
+        "Solve unfamiliar multi-step problems without a calculator"
+      ],
+      "keywords": [
+        "non-calculator",
+        "multi-step",
+        "exact answers",
+        "Paper 2"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Calculator problem solving: Paper 4 modelling questions",
+      "objectives": [
+        "Model real situations with algebra and geometry",
+        "Give answers to appropriate accuracy"
+      ],
+      "keywords": [
+        "modelling",
+        "calculator",
+        "accuracy",
+        "Paper 4"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Mathematical reasoning and proof across topics",
+      "objectives": [
+        "Construct algebraic and geometric arguments",
+        "Show that results hold using clear steps"
+      ],
+      "keywords": [
+        "proof",
+        "show that",
+        "reasoning",
+        "justify"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Exam technique: command words, working and accuracy",
+      "objectives": [
+        "Interpret command words such as calculate, show and explain",
+        "Avoid premature rounding and lost method marks"
+      ],
+      "keywords": [
+        "command words",
+        "method marks",
+        "accuracy",
+        "exam technique"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mock exams: full Paper 2 and Paper 4 (Extended)",
+      "objectives": [
+        "Sit full mock papers under exam conditions",
+        "Analyse results to plan revision"
+      ],
+      "keywords": [
+        "mock",
+        "Paper 2",
+        "Paper 4",
+        "grade boundaries"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "review",
+      "topic": "Revision: number (types, fractions, percentages, bounds, standard form)",
+      "objectives": [
+        "Practise number topics across both papers",
+        "Fix recurring errors in percentages and bounds"
+      ],
+      "keywords": [
+        "number",
+        "percentages",
+        "bounds",
+        "standard form"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "review",
+      "topic": "Revision: algebra and graphs (equations, functions, sequences, calculus)",
+      "objectives": [
+        "Revise solving equations and manipulating expressions",
+        "Practise functions and differentiation questions"
+      ],
+      "keywords": [
+        "algebra",
+        "functions",
+        "graphs",
+        "differentiation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "review",
+      "topic": "Revision: coordinate geometry and geometry (angles, circles, constructions)",
+      "objectives": [
+        "Revise lines, circle theorems and similarity",
+        "Give geometric reasons accurately"
+      ],
+      "keywords": [
+        "coordinate geometry",
+        "circle theorems",
+        "similarity",
+        "constructions"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "review",
+      "topic": "Revision: mensuration and trigonometry",
+      "objectives": [
+        "Practise area, volume and arc problems",
+        "Revise sine and cosine rules and 3D trigonometry"
+      ],
+      "keywords": [
+        "mensuration",
+        "volume",
+        "sine rule",
+        "cosine rule"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "review",
+      "topic": "Revision: transformations, vectors and probability",
+      "objectives": [
+        "Practise describing transformations and vector proofs",
+        "Revise combined and conditional probability"
+      ],
+      "keywords": [
+        "transformations",
+        "vectors",
+        "probability",
+        "tree diagrams"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "review",
+      "topic": "Revision: statistics (averages, charts, cumulative frequency, histograms)",
+      "objectives": [
+        "Interpret statistical diagrams",
+        "Practise estimated mean and histogram questions"
+      ],
+      "keywords": [
+        "statistics",
+        "histogram",
+        "cumulative frequency",
+        "averages"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "exam",
+      "topic": "Final exams: Paper 2 (Extended, non-calculator)",
+      "objectives": [
+        "Sit Paper 2 applying non-calculator methods",
+        "Manage time across all questions"
+      ],
+      "keywords": [
+        "Paper 2",
+        "non-calculator",
+        "IGCSE exam"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "exam",
+      "topic": "Final exams: Paper 4 (Extended, calculator)",
+      "objectives": [
+        "Sit Paper 4 with structured problem-solving questions",
+        "Check answers and accuracy"
+      ],
+      "keywords": [
+        "Paper 4",
+        "calculator",
+        "IGCSE exam"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "Exam season: targeted practice between papers",
+      "objectives": [
+        "Review errors from the papers already taken",
+        "Keep skills sharp with short practice sets"
+      ],
+      "keywords": [
+        "exam season",
+        "targeted practice",
+        "weak topics"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "exam",
+      "topic": "Exam season close: reflection and bridge to A Level / IB Mathematics",
+      "objectives": [
+        "Reflect on the IGCSE course",
+        "Preview algebra skills needed for post-16 maths"
+      ],
+      "keywords": [
+        "reflection",
+        "post-16",
+        "IB Mathematics",
+        "A Level"
+      ],
+      "spelling": []
+    }
+  ]
+}

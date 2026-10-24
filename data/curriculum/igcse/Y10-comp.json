@@ -1,0 +1,702 @@
+{
+  "version": 1,
+  "year": "Y10",
+  "stage": "igcse",
+  "subject": "comp",
+  "level": null,
+  "language": "en",
+  "source": "Cambridge IGCSE Computer Science 0478 syllabus 2026–2028, Cambridge International",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Number systems: binary, denary and hexadecimal conversions",
+      "objectives": [
+        "Convert between binary, denary and hexadecimal",
+        "Explain why computers use binary"
+      ],
+      "keywords": [
+        "binary",
+        "denary",
+        "hexadecimal",
+        "bit",
+        "conversion"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Uses of hexadecimal; binary addition and overflow",
+      "objectives": [
+        "Describe uses of hexadecimal such as MAC addresses and colour codes",
+        "Add 8-bit binary numbers and identify overflow"
+      ],
+      "keywords": [
+        "hexadecimal",
+        "binary addition",
+        "overflow",
+        "8-bit register"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Logical binary shifts and two's complement",
+      "objectives": [
+        "Perform left and right logical shifts",
+        "Represent negative integers in two's complement"
+      ],
+      "keywords": [
+        "logical shift",
+        "two's complement",
+        "negative numbers",
+        "most significant bit"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Representing text: ASCII and Unicode character sets",
+      "objectives": [
+        "Explain how characters are represented in binary",
+        "Compare ASCII and Unicode"
+      ],
+      "keywords": [
+        "character set",
+        "ASCII",
+        "Unicode",
+        "encoding"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Representing sound: sample rate and sample resolution",
+      "objectives": [
+        "Explain how sound is sampled and stored",
+        "Describe the effect of sample rate and resolution on quality and size"
+      ],
+      "keywords": [
+        "sampling",
+        "sample rate",
+        "sample resolution",
+        "analogue",
+        "digital"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Representing images: pixels, resolution and colour depth",
+      "objectives": [
+        "Explain how bitmap images are stored",
+        "Describe the effect of resolution and colour depth"
+      ],
+      "keywords": [
+        "pixel",
+        "resolution",
+        "colour depth",
+        "bitmap"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Data storage units and file size calculations",
+      "objectives": [
+        "Use units from bit to exbibyte",
+        "Calculate image and sound file sizes"
+      ],
+      "keywords": [
+        "byte",
+        "kibibyte",
+        "mebibyte",
+        "file size",
+        "calculation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Data compression: lossy and lossless methods",
+      "objectives": [
+        "Explain why compression is needed",
+        "Compare lossy and lossless compression including run-length encoding"
+      ],
+      "keywords": [
+        "compression",
+        "lossy",
+        "lossless",
+        "run-length encoding"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Data transmission: packets and packet switching",
+      "objectives": [
+        "Describe the structure of a packet",
+        "Explain how packet switching works"
+      ],
+      "keywords": [
+        "packet",
+        "header",
+        "payload",
+        "trailer",
+        "packet switching",
+        "router"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Transmission methods: serial, parallel, simplex, half-duplex, full-duplex and USB",
+      "objectives": [
+        "Compare serial and parallel transmission",
+        "Describe simplex, half-duplex and full-duplex and the USB interface"
+      ],
+      "keywords": [
+        "serial",
+        "parallel",
+        "simplex",
+        "half-duplex",
+        "full-duplex",
+        "USB"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Error detection: parity, checksum, echo check, check digit and ARQ",
+      "objectives": [
+        "Explain why errors occur during transmission",
+        "Describe methods of error detection"
+      ],
+      "keywords": [
+        "parity check",
+        "checksum",
+        "echo check",
+        "check digit",
+        "ARQ"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "Encryption: symmetric and asymmetric",
+      "objectives": [
+        "Explain the purpose of encryption",
+        "Compare symmetric and asymmetric encryption"
+      ],
+      "keywords": [
+        "encryption",
+        "plaintext",
+        "ciphertext",
+        "symmetric",
+        "asymmetric",
+        "public key"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Algorithm design: the program development life cycle and decomposition",
+      "objectives": [
+        "Describe analysis, design, coding and testing",
+        "Decompose problems into inputs, processes, outputs and storage"
+      ],
+      "keywords": [
+        "development life cycle",
+        "decomposition",
+        "abstraction",
+        "structure diagram"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Representing algorithms: flowcharts and pseudocode",
+      "objectives": [
+        "Use standard flowchart symbols",
+        "Write simple algorithms in pseudocode"
+      ],
+      "keywords": [
+        "flowchart",
+        "pseudocode",
+        "algorithm",
+        "sequence"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Term 1 review: data representation, transmission and algorithm design",
+      "objectives": [
+        "Consolidate conversions and file size calculations",
+        "Practise exam-style explanation questions"
+      ],
+      "keywords": [
+        "data representation",
+        "transmission",
+        "encryption",
+        "algorithms"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Computer architecture: CPU, von Neumann model and fetch–decode–execute cycle",
+      "objectives": [
+        "Describe the role of the ALU, CU, registers and buses",
+        "Explain the fetch–decode–execute cycle"
+      ],
+      "keywords": [
+        "CPU",
+        "von Neumann",
+        "ALU",
+        "control unit",
+        "registers",
+        "buses"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "CPU performance, instruction sets and embedded systems",
+      "objectives": [
+        "Explain how cores, cache and clock speed affect performance",
+        "Describe embedded systems with examples"
+      ],
+      "keywords": [
+        "cores",
+        "cache",
+        "clock speed",
+        "instruction set",
+        "embedded system"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Input and output devices",
+      "objectives": [
+        "Describe how common input and output devices work",
+        "Choose devices for given scenarios"
+      ],
+      "keywords": [
+        "input device",
+        "output device",
+        "scanner",
+        "touch screen",
+        "printer"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Sensors and their applications",
+      "objectives": [
+        "Identify types of sensors and the data they capture",
+        "Choose sensors for monitoring and control"
+      ],
+      "keywords": [
+        "sensor",
+        "temperature",
+        "pressure",
+        "infrared",
+        "monitoring"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Primary storage: RAM, ROM and virtual memory",
+      "objectives": [
+        "Compare RAM and ROM",
+        "Explain the purpose of virtual memory"
+      ],
+      "keywords": [
+        "primary storage",
+        "RAM",
+        "ROM",
+        "virtual memory"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Secondary storage: magnetic, optical, solid-state and cloud storage",
+      "objectives": [
+        "Explain how magnetic, optical and solid-state storage work",
+        "Evaluate cloud storage"
+      ],
+      "keywords": [
+        "secondary storage",
+        "magnetic",
+        "optical",
+        "solid-state",
+        "cloud storage"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Network hardware: NIC, MAC address, IP address and router",
+      "objectives": [
+        "Describe the role of a NIC and MAC address",
+        "Compare IPv4 and IPv6 and static and dynamic addresses"
+      ],
+      "keywords": [
+        "NIC",
+        "MAC address",
+        "IP address",
+        "IPv4",
+        "IPv6",
+        "router"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Software: system software, application software and the operating system",
+      "objectives": [
+        "Distinguish system and application software",
+        "Describe the functions of an operating system"
+      ],
+      "keywords": [
+        "system software",
+        "application software",
+        "operating system",
+        "utility"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Interrupts, firmware and running applications",
+      "objectives": [
+        "Explain how interrupts are generated and handled",
+        "Describe the role of firmware and the bootloader"
+      ],
+      "keywords": [
+        "interrupt",
+        "interrupt service routine",
+        "firmware",
+        "bootloader"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Programming languages, translators and IDEs",
+      "objectives": [
+        "Compare high-level and low-level languages",
+        "Compare compilers, interpreters and assemblers; describe IDE features"
+      ],
+      "keywords": [
+        "high-level",
+        "low-level",
+        "compiler",
+        "interpreter",
+        "assembler",
+        "IDE"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Programming concepts: variables, constants, data types, input and output",
+      "objectives": [
+        "Declare variables and constants with suitable data types",
+        "Write programs that use input and output"
+      ],
+      "keywords": [
+        "variable",
+        "constant",
+        "data type",
+        "integer",
+        "string",
+        "Boolean"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mid-year exams: Computer Science Terms 1–2",
+      "objectives": [
+        "Sit timed theory questions on data, hardware and software",
+        "Identify topics for follow-up"
+      ],
+      "keywords": [
+        "mock exam",
+        "theory",
+        "Paper 1"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Selection: IF and CASE statements",
+      "objectives": [
+        "Write algorithms using IF…THEN…ELSE",
+        "Use CASE statements for multiple options"
+      ],
+      "keywords": [
+        "selection",
+        "IF",
+        "CASE",
+        "condition"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Iteration: count-controlled, pre-condition and post-condition loops",
+      "objectives": [
+        "Write FOR, WHILE and REPEAT…UNTIL loops",
+        "Choose the appropriate loop type"
+      ],
+      "keywords": [
+        "iteration",
+        "FOR loop",
+        "WHILE loop",
+        "REPEAT UNTIL"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Totalling, counting and string handling",
+      "objectives": [
+        "Use totalling and counting in algorithms",
+        "Use string operations: length, substring, upper and lower"
+      ],
+      "keywords": [
+        "totalling",
+        "counting",
+        "string",
+        "substring",
+        "length"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Arithmetic, logical and Boolean operators; nested statements",
+      "objectives": [
+        "Use arithmetic, comparison and Boolean operators",
+        "Write nested selection and iteration"
+      ],
+      "keywords": [
+        "operator",
+        "AND",
+        "OR",
+        "NOT",
+        "nested"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Validation and verification",
+      "objectives": [
+        "Write range, length, type, presence, format and check-digit validation",
+        "Describe double entry and visual check verification"
+      ],
+      "keywords": [
+        "validation",
+        "range check",
+        "presence check",
+        "verification",
+        "double entry"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Test data and trace tables",
+      "objectives": [
+        "Choose normal, abnormal, extreme and boundary test data",
+        "Complete trace tables to test algorithms"
+      ],
+      "keywords": [
+        "test data",
+        "normal",
+        "abnormal",
+        "extreme",
+        "boundary",
+        "trace table"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Standard algorithms: linear search and bubble sort",
+      "objectives": [
+        "Write a linear search",
+        "Write and trace a bubble sort"
+      ],
+      "keywords": [
+        "linear search",
+        "bubble sort",
+        "algorithm",
+        "swap"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Standard algorithms: maximum, minimum and average",
+      "objectives": [
+        "Find maximum and minimum values in a list",
+        "Calculate averages using totalling"
+      ],
+      "keywords": [
+        "maximum",
+        "minimum",
+        "average",
+        "list"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "End-of-year exams: Year 10 Computer Science",
+      "objectives": [
+        "Sit theory and algorithm papers on Year 10 content",
+        "Write pseudocode under timed conditions"
+      ],
+      "keywords": [
+        "end-of-year exam",
+        "theory",
+        "pseudocode"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Year 10 review and preview of arrays and the internet",
+      "objectives": [
+        "Correct exam errors",
+        "Preview arrays and internet technologies"
+      ],
+      "keywords": [
+        "exam feedback",
+        "arrays",
+        "internet",
+        "Year 11"
+      ],
+      "spelling": []
+    }
+  ]
+}

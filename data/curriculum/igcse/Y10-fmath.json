@@ -1,0 +1,682 @@
+{
+  "version": 1,
+  "year": "Y10",
+  "stage": "igcse",
+  "subject": "fmath",
+  "level": null,
+  "language": "en",
+  "source": "Cambridge IGCSE Additional Mathematics 0606 syllabus 2025–2027, Cambridge International",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Functions: mappings, notation, domain and range",
+      "objectives": [
+        "Use function notation and mapping diagrams",
+        "Identify domain and range, including one-one functions"
+      ],
+      "keywords": [
+        "function",
+        "mapping",
+        "domain",
+        "range",
+        "one-one"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Composite functions",
+      "objectives": [
+        "Form composite functions such as fg(x) and f²(x)",
+        "State the domain of a composite function"
+      ],
+      "keywords": [
+        "composite function",
+        "fg(x)",
+        "domain",
+        "order of composition"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Inverse functions and their graphs",
+      "objectives": [
+        "Find f⁻¹(x) for one-one functions",
+        "Relate graphs of f and f⁻¹ by reflection in y = x"
+      ],
+      "keywords": [
+        "inverse function",
+        "f⁻¹(x)",
+        "reflection",
+        "y = x"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Modulus functions and graphs of y = |f(x)|",
+      "objectives": [
+        "Sketch y = |f(x)| for linear and quadratic f",
+        "Interpret the modulus as distance from zero"
+      ],
+      "keywords": [
+        "modulus",
+        "absolute value",
+        "|f(x)|",
+        "sketch"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Quadratic functions: completing the square, maximum and minimum values",
+      "objectives": [
+        "Write quadratics in completed-square form",
+        "Find the vertex and line of symmetry"
+      ],
+      "keywords": [
+        "completing the square",
+        "vertex",
+        "maximum",
+        "minimum",
+        "line of symmetry"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "The discriminant and the nature of roots",
+      "objectives": [
+        "Use b² − 4ac to classify roots",
+        "Find conditions for real, equal or no real roots"
+      ],
+      "keywords": [
+        "discriminant",
+        "b² − 4ac",
+        "real roots",
+        "equal roots",
+        "no real roots"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Quadratic inequalities",
+      "objectives": [
+        "Solve quadratic inequalities using a sketch",
+        "Express solution sets in inequality notation"
+      ],
+      "keywords": [
+        "quadratic inequality",
+        "critical values",
+        "sketch",
+        "solution set"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Intersection of a line and a curve; conditions for tangency",
+      "objectives": [
+        "Find points of intersection of a line and a quadratic curve",
+        "Use the discriminant to test for tangency"
+      ],
+      "keywords": [
+        "intersection",
+        "tangent",
+        "discriminant",
+        "line and curve"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Polynomials: the factor theorem",
+      "objectives": [
+        "Use the factor theorem to find factors of cubics",
+        "Factorise cubic polynomials completely"
+      ],
+      "keywords": [
+        "polynomial",
+        "factor theorem",
+        "cubic",
+        "factorise"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "The remainder theorem and solving cubic equations",
+      "objectives": [
+        "Find remainders using the remainder theorem",
+        "Solve cubic equations and find unknown coefficients"
+      ],
+      "keywords": [
+        "remainder theorem",
+        "cubic equation",
+        "coefficient",
+        "algebraic division"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Simultaneous equations: linear and non-linear",
+      "objectives": [
+        "Solve one linear and one non-linear equation",
+        "Interpret the solutions graphically"
+      ],
+      "keywords": [
+        "simultaneous equations",
+        "non-linear",
+        "substitution",
+        "intersection points"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "Surds: simplifying, rationalising and solving equations",
+      "objectives": [
+        "Simplify and manipulate surds",
+        "Rationalise denominators and solve equations with surds"
+      ],
+      "keywords": [
+        "surd",
+        "rationalise",
+        "conjugate",
+        "exact form"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Modulus equations and inequalities",
+      "objectives": [
+        "Solve |ax + b| = |cx + d| and related equations",
+        "Solve simple modulus inequalities"
+      ],
+      "keywords": [
+        "modulus equation",
+        "modulus inequality",
+        "squaring",
+        "critical values"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Sketching cubic graphs and their modulus graphs",
+      "objectives": [
+        "Sketch factorised cubic polynomials",
+        "Sketch y = |f(x)| for cubics and use graphs to solve inequalities"
+      ],
+      "keywords": [
+        "cubic graph",
+        "roots",
+        "y-intercept",
+        "modulus graph"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Term 1 review: functions, quadratics, polynomials and surds",
+      "objectives": [
+        "Consolidate Term 1 algebra",
+        "Practise exam-style multi-part questions"
+      ],
+      "keywords": [
+        "functions",
+        "quadratics",
+        "polynomials",
+        "surds"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Laws of logarithms",
+      "objectives": [
+        "Convert between index and logarithmic forms",
+        "Apply the laws of logarithms to simplify expressions"
+      ],
+      "keywords": [
+        "logarithm",
+        "base",
+        "log laws",
+        "index form"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Exponential functions and natural logarithms (e and ln)",
+      "objectives": [
+        "Use the exponential function eˣ and ln x",
+        "Understand ln as the inverse of eˣ"
+      ],
+      "keywords": [
+        "exponential",
+        "e",
+        "natural logarithm",
+        "ln",
+        "inverse"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Solving exponential and logarithmic equations; change of base",
+      "objectives": [
+        "Solve equations of the form aˣ = b",
+        "Use the change of base formula"
+      ],
+      "keywords": [
+        "exponential equation",
+        "log equation",
+        "change of base",
+        "substitution"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Graphs of exponential and logarithmic functions",
+      "objectives": [
+        "Sketch graphs of eˣ, ln x and transformations",
+        "Identify asymptotes and intercepts"
+      ],
+      "keywords": [
+        "exponential graph",
+        "logarithmic graph",
+        "asymptote",
+        "transformation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Straight-line graphs: converting relationships to linear form",
+      "objectives": [
+        "Transform y = axⁿ and y = abˣ to linear form using logs",
+        "Find unknown constants from a straight-line graph"
+      ],
+      "keywords": [
+        "linear form",
+        "Y = mX + c",
+        "logarithms",
+        "gradient",
+        "intercept"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Coordinate geometry: lengths, midpoints, perpendicular lines and areas",
+      "objectives": [
+        "Find equations of perpendicular bisectors",
+        "Calculate areas of polygons from coordinates"
+      ],
+      "keywords": [
+        "midpoint",
+        "perpendicular",
+        "gradient",
+        "area",
+        "shoelace method"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Coordinate geometry of the circle: equation of a circle",
+      "objectives": [
+        "Use (x − a)² + (y − b)² = r²",
+        "Find centre and radius by completing the square"
+      ],
+      "keywords": [
+        "circle equation",
+        "centre",
+        "radius",
+        "completing the square"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Circles: intersections with lines and tangents",
+      "objectives": [
+        "Find intersections of a line and a circle",
+        "Find equations of tangents to a circle"
+      ],
+      "keywords": [
+        "tangent",
+        "intersection",
+        "normal",
+        "circle"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Circular measure: radians, arc length and sector area",
+      "objectives": [
+        "Convert between degrees and radians",
+        "Use s = rθ and A = ½r²θ"
+      ],
+      "keywords": [
+        "radian",
+        "arc length",
+        "sector area",
+        "circular measure"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Circular measure problems: segments and compound shapes",
+      "objectives": [
+        "Find areas of segments",
+        "Solve problems combining arcs, sectors and triangles"
+      ],
+      "keywords": [
+        "segment",
+        "compound shape",
+        "perimeter",
+        "area"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Permutations: arrangements and factorial notation",
+      "objectives": [
+        "Use n! and ⁿPᵣ for arrangements",
+        "Solve arrangement problems with restrictions"
+      ],
+      "keywords": [
+        "permutation",
+        "factorial",
+        "arrangement",
+        "nPr"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mid-year exams: Additional Mathematics Terms 1–2",
+      "objectives": [
+        "Sit timed papers on algebra, logarithms, coordinate geometry and circular measure",
+        "Identify topics for follow-up"
+      ],
+      "keywords": [
+        "mock exam",
+        "timing",
+        "exact answers"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Combinations: selections with and without restrictions",
+      "objectives": [
+        "Use ⁿCᵣ for selections",
+        "Distinguish between permutation and combination problems"
+      ],
+      "keywords": [
+        "combination",
+        "selection",
+        "nCr",
+        "restriction"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Binomial expansion of (a + b)ⁿ for positive integer n",
+      "objectives": [
+        "Expand (a + b)ⁿ using binomial coefficients",
+        "Find specific terms and coefficients"
+      ],
+      "keywords": [
+        "binomial expansion",
+        "Pascal's triangle",
+        "coefficient",
+        "general term"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Arithmetic progressions",
+      "objectives": [
+        "Find the nth term and sum of an arithmetic progression",
+        "Solve problems with unknown first term or common difference"
+      ],
+      "keywords": [
+        "arithmetic progression",
+        "common difference",
+        "nth term",
+        "sum"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Geometric progressions and sum to infinity",
+      "objectives": [
+        "Find the nth term and sum of a geometric progression",
+        "Use the condition |r| < 1 for the sum to infinity"
+      ],
+      "keywords": [
+        "geometric progression",
+        "common ratio",
+        "sum to infinity",
+        "convergence"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Vectors in two dimensions: notation, magnitude and unit vectors",
+      "objectives": [
+        "Use i, j and column vector notation",
+        "Find magnitudes and unit vectors"
+      ],
+      "keywords": [
+        "vector",
+        "magnitude",
+        "unit vector",
+        "i and j"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Position vectors and vector geometry",
+      "objectives": [
+        "Use position vectors to find points dividing a line",
+        "Solve geometric problems with vectors"
+      ],
+      "keywords": [
+        "position vector",
+        "ratio",
+        "collinear",
+        "parallel vectors"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Velocity vectors and constant-velocity motion",
+      "objectives": [
+        "Use r = r₀ + vt for motion",
+        "Find when objects meet or are a given distance apart"
+      ],
+      "keywords": [
+        "velocity",
+        "position",
+        "constant velocity",
+        "relative position"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Simultaneous equations involving logarithms and indices",
+      "objectives": [
+        "Solve simultaneous equations with logarithmic terms",
+        "Solve simultaneous equations with exponential terms"
+      ],
+      "keywords": [
+        "simultaneous equations",
+        "logarithms",
+        "indices",
+        "substitution"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "End-of-year exams: Year 10 Additional Mathematics",
+      "objectives": [
+        "Sit papers on all Year 10 topics",
+        "Show full algebraic working"
+      ],
+      "keywords": [
+        "end-of-year exam",
+        "algebra",
+        "logarithms",
+        "vectors"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Year 10 review and preview of trigonometry and calculus",
+      "objectives": [
+        "Correct exam errors",
+        "Preview trigonometric functions and gradients of curves"
+      ],
+      "keywords": [
+        "exam feedback",
+        "trigonometry",
+        "calculus",
+        "Year 11"
+      ],
+      "spelling": []
+    }
+  ]
+}

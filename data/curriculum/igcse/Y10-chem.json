@@ -1,0 +1,755 @@
+{
+  "version": 1,
+  "year": "Y10",
+  "stage": "igcse",
+  "subject": "chem",
+  "level": null,
+  "language": "en",
+  "source": "Cambridge IGCSE Chemistry (0620) syllabus for examination in 2026, 2027 and 2028 — Cambridge International; Year 10 covers topics 1–8 (first half of the two-year course)",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "States of matter: solids, liquids, gases and changes of state",
+      "objectives": [
+        "Describe the properties of solids, liquids and gases",
+        "Explain melting, boiling, evaporation, condensation and freezing using particle theory",
+        "Interpret heating and cooling curves"
+      ],
+      "keywords": [
+        "solid",
+        "liquid",
+        "gas",
+        "melting",
+        "boiling",
+        "condensation",
+        "heating curve"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Kinetic particle theory, gas pressure and diffusion",
+      "objectives": [
+        "Explain the effect of temperature and pressure on gas volume",
+        "Describe diffusion in terms of particle movement",
+        "Explain how relative molecular mass affects the rate of diffusion"
+      ],
+      "keywords": [
+        "kinetic particle theory",
+        "gas pressure",
+        "diffusion",
+        "relative molecular mass",
+        "random motion"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Elements, compounds and mixtures",
+      "objectives": [
+        "Distinguish between elements, compounds and mixtures",
+        "Describe the differences between metals and non-metals"
+      ],
+      "keywords": [
+        "element",
+        "compound",
+        "mixture",
+        "metal",
+        "non-metal",
+        "pure substance"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Atomic structure: protons, neutrons, electrons and electronic configuration",
+      "objectives": [
+        "State the relative charges and masses of subatomic particles",
+        "Define proton number and mass number",
+        "Write electronic configurations for the first 20 elements"
+      ],
+      "keywords": [
+        "proton",
+        "neutron",
+        "electron",
+        "proton number",
+        "mass number",
+        "electron shell",
+        "configuration"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Isotopes and relative atomic mass",
+      "objectives": [
+        "Define isotopes and explain why they have the same chemical properties",
+        "Calculate relative atomic mass from isotopic abundances"
+      ],
+      "keywords": [
+        "isotope",
+        "relative atomic mass",
+        "abundance",
+        "nucleon number",
+        "Ar"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Ions and ionic bonding",
+      "objectives": [
+        "Describe how ions form by electron loss or gain",
+        "Draw dot-and-cross diagrams for ionic compounds",
+        "Relate the giant lattice structure to the properties of ionic compounds"
+      ],
+      "keywords": [
+        "ion",
+        "cation",
+        "anion",
+        "ionic bond",
+        "dot-and-cross",
+        "giant lattice",
+        "electrostatic attraction"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Simple molecules and covalent bonding",
+      "objectives": [
+        "Describe covalent bonds as shared pairs of electrons",
+        "Draw dot-and-cross diagrams for H2, Cl2, H2O, CH4, NH3, CO2 and others",
+        "Explain the low melting points of simple molecular substances"
+      ],
+      "keywords": [
+        "covalent bond",
+        "shared pair",
+        "simple molecule",
+        "intermolecular forces",
+        "dot-and-cross"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Giant covalent structures: diamond, graphite and silicon(IV) oxide",
+      "objectives": [
+        "Describe the structures of diamond, graphite and silicon(IV) oxide",
+        "Relate structure to properties and uses"
+      ],
+      "keywords": [
+        "giant covalent",
+        "diamond",
+        "graphite",
+        "silicon dioxide",
+        "delocalised electrons",
+        "lubricant"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Metallic bonding",
+      "objectives": [
+        "Describe metallic bonding as positive ions in a sea of delocalised electrons",
+        "Explain electrical conductivity, malleability and high melting points of metals"
+      ],
+      "keywords": [
+        "metallic bonding",
+        "delocalised electrons",
+        "positive ions",
+        "malleable",
+        "ductile",
+        "conductivity"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Formulas, state symbols and balancing chemical equations",
+      "objectives": [
+        "Deduce formulae of ionic compounds from ion charges",
+        "Write balanced symbol equations with state symbols",
+        "Write ionic equations"
+      ],
+      "keywords": [
+        "formula",
+        "word equation",
+        "symbol equation",
+        "state symbols",
+        "balancing",
+        "ionic equation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Relative formula mass and the mole",
+      "objectives": [
+        "Calculate relative formula mass",
+        "Use the mole and the Avogadro constant",
+        "Convert between mass, moles and molar mass"
+      ],
+      "keywords": [
+        "relative formula mass",
+        "mole",
+        "Avogadro constant",
+        "molar mass",
+        "Mr"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "Reacting masses, limiting reactants and percentage yield",
+      "objectives": [
+        "Calculate reacting masses from balanced equations",
+        "Identify limiting reactants",
+        "Calculate percentage yield"
+      ],
+      "keywords": [
+        "reacting masses",
+        "limiting reactant",
+        "excess",
+        "percentage yield",
+        "stoichiometry"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Molar gas volume and concentration of solutions",
+      "objectives": [
+        "Use 24 dm³ as the molar gas volume at room temperature",
+        "Calculate concentration in g/dm³ and mol/dm³",
+        "Convert between cm³ and dm³"
+      ],
+      "keywords": [
+        "molar gas volume",
+        "concentration",
+        "mol/dm³",
+        "dm³",
+        "solution",
+        "solute"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Empirical and molecular formulae; percentage purity and composition",
+      "objectives": [
+        "Calculate empirical formulae from masses or percentages",
+        "Deduce molecular formulae from relative mass",
+        "Calculate percentage purity and percentage composition"
+      ],
+      "keywords": [
+        "empirical formula",
+        "molecular formula",
+        "percentage composition",
+        "percentage purity"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Review: particles, atomic structure, bonding and stoichiometry",
+      "objectives": [
+        "Revise bonding diagrams and structure–property links",
+        "Practise multi-step mole calculations"
+      ],
+      "keywords": [
+        "bonding",
+        "structure",
+        "moles",
+        "calculations",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Electrolysis of molten compounds and aqueous solutions",
+      "objectives": [
+        "Define electrolysis and identify electrodes and electrolyte",
+        "Predict products of electrolysis of molten and aqueous compounds",
+        "Describe the electrolysis of brine and copper(II) sulfate"
+      ],
+      "keywords": [
+        "electrolysis",
+        "electrolyte",
+        "anode",
+        "cathode",
+        "inert electrode",
+        "brine"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Electrolysis: ionic half-equations and electroplating",
+      "objectives": [
+        "Write ionic half-equations at each electrode",
+        "Describe electroplating and refining of copper"
+      ],
+      "keywords": [
+        "half-equation",
+        "oxidation",
+        "reduction",
+        "electroplating",
+        "refining",
+        "copper"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Hydrogen–oxygen fuel cells",
+      "objectives": [
+        "Describe how a hydrogen–oxygen fuel cell produces electricity",
+        "Compare fuel cells with petrol engines"
+      ],
+      "keywords": [
+        "fuel cell",
+        "hydrogen",
+        "oxygen",
+        "electricity",
+        "water",
+        "advantages"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Exothermic and endothermic reactions; reaction pathway diagrams",
+      "objectives": [
+        "Define exothermic and endothermic reactions",
+        "Draw and interpret reaction pathway diagrams",
+        "Identify activation energy and enthalpy change"
+      ],
+      "keywords": [
+        "exothermic",
+        "endothermic",
+        "enthalpy change",
+        "activation energy",
+        "reaction pathway diagram"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Bond energies and enthalpy change calculations",
+      "objectives": [
+        "Explain bond breaking as endothermic and bond making as exothermic",
+        "Calculate enthalpy change from bond energies"
+      ],
+      "keywords": [
+        "bond energy",
+        "bond breaking",
+        "bond making",
+        "ΔH",
+        "kJ/mol"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Physical and chemical changes; factors affecting rate of reaction",
+      "objectives": [
+        "Distinguish physical and chemical changes",
+        "Describe the effects of concentration, pressure, surface area, temperature and catalysts on rate"
+      ],
+      "keywords": [
+        "physical change",
+        "chemical change",
+        "rate of reaction",
+        "concentration",
+        "surface area",
+        "catalyst"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Collision theory and rate investigations",
+      "objectives": [
+        "Explain rate changes using collision theory and activation energy",
+        "Investigate rate by measuring gas volume or mass loss",
+        "Interpret rate graphs"
+      ],
+      "keywords": [
+        "collision theory",
+        "collision frequency",
+        "activation energy",
+        "gas syringe",
+        "rate graph"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Reversible reactions and dynamic equilibrium",
+      "objectives": [
+        "Describe reversible reactions such as hydrated copper(II) sulfate",
+        "Explain dynamic equilibrium",
+        "Predict the effect of changing conditions on equilibrium position"
+      ],
+      "keywords": [
+        "reversible reaction",
+        "dynamic equilibrium",
+        "equilibrium position",
+        "closed system",
+        "hydrated"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "The Haber process and the Contact process",
+      "objectives": [
+        "State the conditions used in the Haber and Contact processes",
+        "Explain the compromise between rate, yield and cost"
+      ],
+      "keywords": [
+        "Haber process",
+        "ammonia",
+        "Contact process",
+        "sulfuric acid",
+        "catalyst",
+        "compromise conditions"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Redox: oxidation, reduction, oxidising and reducing agents",
+      "objectives": [
+        "Define oxidation and reduction in terms of oxygen, electrons and oxidation number",
+        "Identify oxidising and reducing agents",
+        "Use Roman numerals in names"
+      ],
+      "keywords": [
+        "redox",
+        "oxidation",
+        "reduction",
+        "oxidation number",
+        "oxidising agent",
+        "reducing agent"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Properties of acids and bases; pH and indicators",
+      "objectives": [
+        "Describe reactions of acids with metals, bases and carbonates",
+        "Use the pH scale and universal indicator",
+        "Identify H+ and OH– ions in acids and alkalis"
+      ],
+      "keywords": [
+        "acid",
+        "base",
+        "alkali",
+        "pH scale",
+        "universal indicator",
+        "litmus",
+        "methyl orange"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mid-year exams: topics 1–6 (states of matter to chemical reactions)",
+      "objectives": [
+        "Complete timed papers on content taught so far",
+        "Use mark schemes to correct calculation errors"
+      ],
+      "keywords": [
+        "exam",
+        "multiple choice",
+        "structured questions",
+        "calculations",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Strong and weak acids, neutralisation and proton transfer",
+      "objectives": [
+        "Compare strong and weak acids",
+        "Describe neutralisation as H+ + OH– → H2O",
+        "Define acids as proton donors and bases as proton acceptors"
+      ],
+      "keywords": [
+        "strong acid",
+        "weak acid",
+        "neutralisation",
+        "proton donor",
+        "proton acceptor",
+        "dissociation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Oxides: acidic, basic and amphoteric",
+      "objectives": [
+        "Classify oxides as acidic, basic, neutral or amphoteric",
+        "Relate metallic and non-metallic character to oxide type"
+      ],
+      "keywords": [
+        "acidic oxide",
+        "basic oxide",
+        "amphoteric",
+        "aluminium oxide",
+        "zinc oxide"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Preparation of soluble salts and solubility rules",
+      "objectives": [
+        "Prepare a soluble salt from an acid and an insoluble base",
+        "Use titration for salts from alkalis",
+        "Apply general solubility rules"
+      ],
+      "keywords": [
+        "soluble salt",
+        "crystallisation",
+        "filtration",
+        "titration",
+        "solubility rules"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Preparation of insoluble salts by precipitation; water of crystallisation",
+      "objectives": [
+        "Prepare an insoluble salt by precipitation",
+        "Define hydrated, anhydrous and water of crystallisation"
+      ],
+      "keywords": [
+        "precipitation",
+        "insoluble salt",
+        "hydrated",
+        "anhydrous",
+        "water of crystallisation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Arrangement of elements in the Periodic Table",
+      "objectives": [
+        "Describe groups and periods",
+        "Relate group number to outer-shell electrons",
+        "Describe the change from metallic to non-metallic character across a period"
+      ],
+      "keywords": [
+        "periodic table",
+        "group",
+        "period",
+        "outer shell",
+        "metallic character"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Group I alkali metals: properties and trends",
+      "objectives": [
+        "Describe the reactions of lithium, sodium and potassium with water",
+        "Predict properties of other Group I elements from trends"
+      ],
+      "keywords": [
+        "alkali metals",
+        "lithium",
+        "sodium",
+        "potassium",
+        "reactivity trend",
+        "hydroxide"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Group VII halogens: properties and displacement reactions",
+      "objectives": [
+        "Describe the colours and states of chlorine, bromine and iodine",
+        "Explain halogen displacement reactions",
+        "Predict trends down the group"
+      ],
+      "keywords": [
+        "halogens",
+        "chlorine",
+        "bromine",
+        "iodine",
+        "displacement",
+        "halide"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Transition elements and noble gases",
+      "objectives": [
+        "Describe the properties of transition elements including variable oxidation states and coloured compounds",
+        "Explain the unreactivity of noble gases and their uses"
+      ],
+      "keywords": [
+        "transition elements",
+        "catalyst",
+        "coloured compounds",
+        "variable oxidation number",
+        "noble gases",
+        "argon"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "End-of-year exams: topics 1–8",
+      "objectives": [
+        "Complete end-of-year papers on all Year 10 content",
+        "Apply knowledge in practical and data questions"
+      ],
+      "keywords": [
+        "exam",
+        "theory paper",
+        "alternative to practical",
+        "data analysis"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Review: salt preparation and Periodic Table trends before Year 11",
+      "objectives": [
+        "Correct errors from end-of-year exams",
+        "Consolidate salt preparation methods and group trends"
+      ],
+      "keywords": [
+        "acids",
+        "salts",
+        "group trends",
+        "periodic table",
+        "consolidation"
+      ],
+      "spelling": []
+    }
+  ]
+}

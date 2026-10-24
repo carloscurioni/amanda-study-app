@@ -1,0 +1,686 @@
+{
+  "version": 1,
+  "year": "Y11",
+  "stage": "igcse",
+  "subject": "comp",
+  "level": null,
+  "language": "en",
+  "source": "Cambridge IGCSE Computer Science 0478 syllabus 2026–2028, Cambridge International",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "The internet and the World Wide Web: URLs, HTTP and HTTPS",
+      "objectives": [
+        "Distinguish the internet from the World Wide Web",
+        "Describe the parts of a URL and the purpose of HTTP and HTTPS"
+      ],
+      "keywords": [
+        "internet",
+        "World Wide Web",
+        "URL",
+        "HTTP",
+        "HTTPS"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Web browsers, DNS and cookies",
+      "objectives": [
+        "Explain how a web page is located and displayed using DNS",
+        "Compare session and persistent cookies"
+      ],
+      "keywords": [
+        "web browser",
+        "DNS",
+        "IP address",
+        "cookies",
+        "HTML"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Digital currency and blockchain",
+      "objectives": [
+        "Explain the concept of digital currency",
+        "Describe how blockchain tracks transactions"
+      ],
+      "keywords": [
+        "digital currency",
+        "blockchain",
+        "ledger",
+        "transaction"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Cyber security threats: malware, phishing, pharming, DDoS and hacking",
+      "objectives": [
+        "Describe common cyber security threats",
+        "Explain the aims and effects of each threat"
+      ],
+      "keywords": [
+        "malware",
+        "phishing",
+        "pharming",
+        "DDoS",
+        "brute-force",
+        "social engineering"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Cyber security solutions: firewalls, proxy servers, SSL and authentication",
+      "objectives": [
+        "Explain how firewalls and proxy servers protect data",
+        "Describe SSL/TLS, two-step verification and anti-malware"
+      ],
+      "keywords": [
+        "firewall",
+        "proxy server",
+        "SSL",
+        "two-step verification",
+        "anti-malware"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Automated systems: sensors, microprocessors and actuators",
+      "objectives": [
+        "Explain how automated systems use sensors and actuators",
+        "Evaluate automated systems in industry, transport and agriculture"
+      ],
+      "keywords": [
+        "automated system",
+        "sensor",
+        "microprocessor",
+        "actuator"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Robotics: characteristics, roles and impact",
+      "objectives": [
+        "Describe the characteristics of a robot",
+        "Evaluate the advantages and disadvantages of robots"
+      ],
+      "keywords": [
+        "robotics",
+        "robot",
+        "mechanical structure",
+        "end effector"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Artificial intelligence: expert systems and machine learning",
+      "objectives": [
+        "Describe the main characteristics of AI",
+        "Explain how expert systems and machine learning work"
+      ],
+      "keywords": [
+        "artificial intelligence",
+        "expert system",
+        "knowledge base",
+        "inference engine",
+        "machine learning"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Arrays: one-dimensional and two-dimensional",
+      "objectives": [
+        "Declare and use 1D and 2D arrays",
+        "Use loops to process arrays"
+      ],
+      "keywords": [
+        "array",
+        "index",
+        "1D array",
+        "2D array",
+        "nested loop"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Procedures, functions, parameters and variable scope",
+      "objectives": [
+        "Write procedures and functions with parameters",
+        "Distinguish local and global variables"
+      ],
+      "keywords": [
+        "procedure",
+        "function",
+        "parameter",
+        "local variable",
+        "global variable"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Library routines and maintainable programs",
+      "objectives": [
+        "Use MOD, DIV, ROUND, LENGTH and RANDOM",
+        "Write maintainable code with meaningful identifiers and comments"
+      ],
+      "keywords": [
+        "library routine",
+        "MOD",
+        "DIV",
+        "RANDOM",
+        "maintainability",
+        "comments"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "File handling: reading and writing text files",
+      "objectives": [
+        "Open, read, write and close text files",
+        "Explain why programs store data in files"
+      ],
+      "keywords": [
+        "file handling",
+        "OPENFILE",
+        "READFILE",
+        "WRITEFILE",
+        "CLOSEFILE"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Identifying and correcting errors in algorithms",
+      "objectives": [
+        "Find and correct logic and syntax errors in given algorithms",
+        "Explain the purpose of an algorithm"
+      ],
+      "keywords": [
+        "logic error",
+        "syntax error",
+        "debugging",
+        "amend algorithm"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Writing a complete solution to a scenario problem",
+      "objectives": [
+        "Design a program from a written scenario",
+        "Combine arrays, loops, selection and validation"
+      ],
+      "keywords": [
+        "scenario",
+        "design",
+        "program",
+        "15-mark question"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Term 1 review: internet, cyber security, emerging technologies and programming",
+      "objectives": [
+        "Consolidate theory topics from Term 1",
+        "Practise array and subroutine questions"
+      ],
+      "keywords": [
+        "internet",
+        "cyber security",
+        "AI",
+        "arrays"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Databases: single-table databases, fields, records and primary keys",
+      "objectives": [
+        "Define fields, records and primary keys",
+        "Choose suitable data types for fields"
+      ],
+      "keywords": [
+        "database",
+        "field",
+        "record",
+        "primary key",
+        "data type"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "SQL: SELECT, FROM, WHERE, ORDER BY, SUM and COUNT",
+      "objectives": [
+        "Write SQL queries to search a table",
+        "Use ORDER BY, SUM and COUNT"
+      ],
+      "keywords": [
+        "SQL",
+        "SELECT",
+        "WHERE",
+        "ORDER BY",
+        "COUNT"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Boolean logic: logic gates and their symbols",
+      "objectives": [
+        "Recognise NOT, AND, OR, NAND, NOR and XOR gates",
+        "Complete truth tables for single gates"
+      ],
+      "keywords": [
+        "logic gate",
+        "AND",
+        "OR",
+        "NAND",
+        "NOR",
+        "XOR"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Logic circuits and truth tables",
+      "objectives": [
+        "Draw logic circuits with up to three inputs",
+        "Complete truth tables for logic circuits"
+      ],
+      "keywords": [
+        "logic circuit",
+        "truth table",
+        "inputs",
+        "output"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Logic expressions from problem statements and circuits",
+      "objectives": [
+        "Write logic expressions from scenarios",
+        "Convert between expressions, circuits and truth tables"
+      ],
+      "keywords": [
+        "logic expression",
+        "problem statement",
+        "Boolean",
+        "conversion"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Programming practice: 2D arrays combined with file handling",
+      "objectives": [
+        "Process tabular data stored in files",
+        "Read data into 2D arrays and write results back"
+      ],
+      "keywords": [
+        "2D array",
+        "file handling",
+        "data processing",
+        "program"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Programming practice: modular design with functions and validation",
+      "objectives": [
+        "Break programs into reusable subroutines",
+        "Validate user input inside functions"
+      ],
+      "keywords": [
+        "modular design",
+        "subroutine",
+        "validation",
+        "reusable code"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Tracing complex algorithms with trace tables",
+      "objectives": [
+        "Trace algorithms with nested loops and arrays",
+        "Identify the output and purpose of algorithms"
+      ],
+      "keywords": [
+        "trace table",
+        "nested loop",
+        "dry run",
+        "output"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Paper 1 practice: extended explain and compare questions",
+      "objectives": [
+        "Write structured answers to 6–8 mark theory questions",
+        "Use technical vocabulary precisely"
+      ],
+      "keywords": [
+        "Paper 1",
+        "explain",
+        "compare",
+        "technical vocabulary"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Paper 2 practice: the 15-mark programming scenario",
+      "objectives": [
+        "Plan a structured solution before coding",
+        "Meet every requirement in the scenario"
+      ],
+      "keywords": [
+        "Paper 2",
+        "scenario",
+        "planning",
+        "pseudocode"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Exam technique: pseudocode conventions and command words",
+      "objectives": [
+        "Use Cambridge pseudocode conventions",
+        "Interpret command words such as describe, explain and identify"
+      ],
+      "keywords": [
+        "pseudocode conventions",
+        "command words",
+        "exam technique"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mock exams: Paper 1 and Paper 2",
+      "objectives": [
+        "Sit both papers under exam conditions",
+        "Analyse results to plan revision"
+      ],
+      "keywords": [
+        "mock",
+        "Paper 1",
+        "Paper 2"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "review",
+      "topic": "Revision: data representation and data transmission",
+      "objectives": [
+        "Practise conversions, shifts and file sizes",
+        "Revise packets, error detection and encryption"
+      ],
+      "keywords": [
+        "binary",
+        "hexadecimal",
+        "compression",
+        "error detection"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "review",
+      "topic": "Revision: hardware and software",
+      "objectives": [
+        "Revise CPU, storage and network hardware",
+        "Revise operating systems, interrupts and translators"
+      ],
+      "keywords": [
+        "CPU",
+        "storage",
+        "operating system",
+        "translators"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "review",
+      "topic": "Revision: internet, cyber security and emerging technologies",
+      "objectives": [
+        "Revise web technologies and threats",
+        "Revise automated systems, robotics and AI"
+      ],
+      "keywords": [
+        "DNS",
+        "cyber security",
+        "robotics",
+        "AI"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "review",
+      "topic": "Revision: algorithm design and programming",
+      "objectives": [
+        "Practise writing and tracing algorithms",
+        "Revise arrays, subroutines and file handling"
+      ],
+      "keywords": [
+        "algorithms",
+        "trace tables",
+        "arrays",
+        "subroutines"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "review",
+      "topic": "Revision: databases and Boolean logic",
+      "objectives": [
+        "Practise SQL queries",
+        "Practise logic circuits, expressions and truth tables"
+      ],
+      "keywords": [
+        "SQL",
+        "logic gates",
+        "truth tables",
+        "databases"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "review",
+      "topic": "Revision: full past-paper practice for both papers",
+      "objectives": [
+        "Complete timed past papers",
+        "Compare answers with mark schemes"
+      ],
+      "keywords": [
+        "past paper",
+        "mark scheme",
+        "timing"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "exam",
+      "topic": "Final exams: Paper 1 Computer Systems",
+      "objectives": [
+        "Sit Paper 1 on computer systems theory",
+        "Use precise technical terms"
+      ],
+      "keywords": [
+        "Paper 1",
+        "Computer Systems",
+        "IGCSE exam"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "exam",
+      "topic": "Final exams: Paper 2 Algorithms, Programming and Logic",
+      "objectives": [
+        "Sit Paper 2 on algorithms, programming and logic",
+        "Write clear, complete pseudocode"
+      ],
+      "keywords": [
+        "Paper 2",
+        "algorithms",
+        "programming",
+        "logic"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "Exam season: targeted practice between papers",
+      "objectives": [
+        "Review errors from papers already taken",
+        "Keep programming skills active"
+      ],
+      "keywords": [
+        "exam season",
+        "targeted practice",
+        "weak topics"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "exam",
+      "topic": "Exam season close: reflection and bridge to IB Computer Science",
+      "objectives": [
+        "Reflect on the IGCSE course",
+        "Preview object-oriented programming and computational thinking"
+      ],
+      "keywords": [
+        "reflection",
+        "IB Computer Science",
+        "post-16"
+      ],
+      "spelling": []
+    }
+  ]
+}

@@ -1,0 +1,740 @@
+{
+  "version": 1,
+  "year": "Y11",
+  "stage": "igcse",
+  "subject": "phys",
+  "level": null,
+  "language": "en",
+  "source": "Cambridge IGCSE Physics (0625) syllabus for examination in 2026, 2027 and 2028 — Cambridge International; Year 11 covers topics 4–6 plus full-course revision for the May/June exams",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Electrical charge and electric fields",
+      "objectives": [
+        "Describe positive and negative charges and forces between them",
+        "Explain charging by friction",
+        "Describe electric field patterns"
+      ],
+      "keywords": [
+        "charge",
+        "static electricity",
+        "electrons",
+        "electric field",
+        "insulator",
+        "conductor"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Electric current: conventional current and electron flow",
+      "objectives": [
+        "Define current as rate of flow of charge",
+        "Use Q = It",
+        "Distinguish conventional current and electron flow"
+      ],
+      "keywords": [
+        "current",
+        "ampere",
+        "ammeter",
+        "charge",
+        "coulomb",
+        "Q = It"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Electromotive force and potential difference",
+      "objectives": [
+        "Define e.m.f. and potential difference",
+        "Measure p.d. with a voltmeter"
+      ],
+      "keywords": [
+        "electromotive force",
+        "potential difference",
+        "volt",
+        "voltmeter",
+        "energy per charge"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Resistance and current–voltage characteristics",
+      "objectives": [
+        "Use R = V/I",
+        "Sketch I–V graphs for a resistor, filament lamp and diode"
+      ],
+      "keywords": [
+        "resistance",
+        "ohm",
+        "R = V/I",
+        "I-V graph",
+        "filament lamp",
+        "diode"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Resistance of a wire: length and cross-sectional area",
+      "objectives": [
+        "Describe how resistance depends on length and cross-sectional area",
+        "Investigate resistance of a wire experimentally"
+      ],
+      "keywords": [
+        "resistance",
+        "length",
+        "cross-sectional area",
+        "proportional",
+        "wire"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Electrical energy and power; the kilowatt-hour",
+      "objectives": [
+        "Use P = IV and E = IVt",
+        "Calculate the cost of electricity using kWh"
+      ],
+      "keywords": [
+        "electrical power",
+        "P = IV",
+        "energy",
+        "kilowatt-hour",
+        "cost"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Circuit diagrams and components: thermistors, LDRs and diodes",
+      "objectives": [
+        "Draw and interpret circuit diagrams",
+        "Describe the behaviour of thermistors and light-dependent resistors"
+      ],
+      "keywords": [
+        "circuit symbols",
+        "thermistor",
+        "LDR",
+        "variable resistor",
+        "diode",
+        "LED"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Series and parallel circuits",
+      "objectives": [
+        "Calculate current, p.d. and combined resistance in series and parallel circuits",
+        "Explain the advantages of parallel lighting circuits"
+      ],
+      "keywords": [
+        "series circuit",
+        "parallel circuit",
+        "combined resistance",
+        "current",
+        "potential difference"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Potential dividers",
+      "objectives": [
+        "Explain how a potential divider works",
+        "Use the ratio of resistances to calculate output voltage",
+        "Describe sensor circuits"
+      ],
+      "keywords": [
+        "potential divider",
+        "output voltage",
+        "ratio",
+        "sensor circuit"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Electrical safety: fuses, earthing and circuit breakers",
+      "objectives": [
+        "Identify hazards such as damaged insulation and overloading",
+        "Explain the use of fuses, circuit breakers and earthing",
+        "Choose an appropriate fuse rating"
+      ],
+      "keywords": [
+        "fuse",
+        "circuit breaker",
+        "earth wire",
+        "double insulation",
+        "overheating"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Electromagnetic induction",
+      "objectives": [
+        "Describe how an e.m.f. is induced by changing magnetic fields",
+        "State the factors affecting the size of induced e.m.f.",
+        "Apply Lenz's law"
+      ],
+      "keywords": [
+        "electromagnetic induction",
+        "induced e.m.f.",
+        "magnetic field",
+        "coil",
+        "Lenz's law"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "The a.c. generator",
+      "objectives": [
+        "Describe the structure of a simple a.c. generator",
+        "Sketch and interpret output voltage–time graphs"
+      ],
+      "keywords": [
+        "a.c. generator",
+        "slip rings",
+        "brushes",
+        "alternating current",
+        "coil"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Magnetic effect of a current; electromagnets and relays",
+      "objectives": [
+        "Describe the field around a wire and a solenoid",
+        "Explain how electromagnets and relays work"
+      ],
+      "keywords": [
+        "magnetic effect",
+        "solenoid",
+        "electromagnet",
+        "relay",
+        "right-hand grip rule"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Force on a current-carrying conductor; Fleming's left-hand rule",
+      "objectives": [
+        "Describe the force on a wire in a magnetic field",
+        "Use Fleming's left-hand rule to predict direction",
+        "Describe the deflection of charged particle beams"
+      ],
+      "keywords": [
+        "motor effect",
+        "Fleming's left-hand rule",
+        "force",
+        "current",
+        "magnetic field"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Review: electrical quantities, circuits and electromagnetism",
+      "objectives": [
+        "Practise circuit calculations",
+        "Revise electromagnetic effects and safety"
+      ],
+      "keywords": [
+        "current",
+        "resistance",
+        "circuits",
+        "induction",
+        "revision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "The d.c. motor",
+      "objectives": [
+        "Explain how a d.c. motor works",
+        "Describe the role of the split-ring commutator",
+        "Identify ways to increase turning effect"
+      ],
+      "keywords": [
+        "d.c. motor",
+        "commutator",
+        "turning effect",
+        "coil",
+        "brushes"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Transformers and electricity transmission",
+      "objectives": [
+        "Describe the structure of a transformer",
+        "Use Vp/Vs = Np/Ns",
+        "Explain why high voltages reduce power losses in transmission"
+      ],
+      "keywords": [
+        "transformer",
+        "step-up",
+        "step-down",
+        "turns ratio",
+        "transmission",
+        "power loss"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "The nuclear model of the atom and nuclide notation",
+      "objectives": [
+        "Describe the structure of the atom",
+        "Use nuclide notation for protons and nucleons",
+        "Describe the alpha-scattering evidence for the nucleus"
+      ],
+      "keywords": [
+        "nucleus",
+        "proton number",
+        "nucleon number",
+        "isotope",
+        "nuclide notation",
+        "alpha scattering"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Nuclear fission and fusion",
+      "objectives": [
+        "Describe nuclear fission in reactors",
+        "Describe nuclear fusion in stars"
+      ],
+      "keywords": [
+        "fission",
+        "fusion",
+        "chain reaction",
+        "nuclear reactor",
+        "energy release"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Detection of radioactivity and background radiation",
+      "objectives": [
+        "Describe how a Geiger–Müller tube detects radiation",
+        "Identify sources of background radiation",
+        "Correct count rates for background"
+      ],
+      "keywords": [
+        "Geiger-Müller tube",
+        "count rate",
+        "background radiation",
+        "radon",
+        "cosmic rays"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Alpha, beta and gamma radiation: properties and decay equations",
+      "objectives": [
+        "Compare the penetration and ionising effects of alpha, beta and gamma",
+        "Write decay equations",
+        "Describe deflection in electric and magnetic fields"
+      ],
+      "keywords": [
+        "alpha",
+        "beta",
+        "gamma",
+        "ionising",
+        "penetration",
+        "radioactive decay",
+        "decay equation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Half-life",
+      "objectives": [
+        "Define half-life",
+        "Calculate half-life from data and decay curves"
+      ],
+      "keywords": [
+        "half-life",
+        "decay curve",
+        "count rate",
+        "isotope",
+        "random"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Safety precautions and uses of radioactivity",
+      "objectives": [
+        "Describe safe handling and storage of radioactive sources",
+        "Explain uses in smoke alarms, tracers, sterilisation and thickness control"
+      ],
+      "keywords": [
+        "safety",
+        "lead shielding",
+        "smoke alarm",
+        "tracer",
+        "sterilisation",
+        "radiotherapy"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Earth and the Solar System: day, seasons, the Moon and orbits",
+      "objectives": [
+        "Explain day and night, seasons and phases of the Moon",
+        "Describe the planets and their orbits",
+        "Calculate orbital speed using v = 2πr/T"
+      ],
+      "keywords": [
+        "Solar System",
+        "orbit",
+        "axis",
+        "seasons",
+        "Moon phases",
+        "orbital speed",
+        "planets"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "The Sun as a star and the life cycle of stars",
+      "objectives": [
+        "Describe the Sun as a medium-sized star powered by fusion",
+        "Describe the life cycle of stars including supernovae and black holes"
+      ],
+      "keywords": [
+        "star",
+        "protostar",
+        "main sequence",
+        "red giant",
+        "supernova",
+        "neutron star",
+        "black hole"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Galaxies, redshift, the Big Bang and the Hubble constant",
+      "objectives": [
+        "Describe galaxies and the Milky Way",
+        "Explain redshift as evidence for an expanding Universe",
+        "Use the Hubble constant to estimate the age of the Universe"
+      ],
+      "keywords": [
+        "galaxy",
+        "light-year",
+        "redshift",
+        "Big Bang",
+        "CMBR",
+        "Hubble constant"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mock exams: full syllabus (multiple choice, theory and practical papers)",
+      "objectives": [
+        "Complete full-length mock papers under exam conditions",
+        "Use mock feedback to set revision priorities"
+      ],
+      "keywords": [
+        "mock exam",
+        "multiple choice",
+        "theory",
+        "alternative to practical",
+        "revision plan"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "review",
+      "topic": "Review: motion, forces and momentum",
+      "objectives": [
+        "Revise motion graphs and equations of motion",
+        "Practise moments and momentum calculations"
+      ],
+      "keywords": [
+        "motion",
+        "graphs",
+        "forces",
+        "moments",
+        "momentum"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "review",
+      "topic": "Review: energy, work, power and pressure",
+      "objectives": [
+        "Practise energy and efficiency calculations",
+        "Revise energy resources and pressure"
+      ],
+      "keywords": [
+        "energy",
+        "efficiency",
+        "power",
+        "energy resources",
+        "pressure"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "review",
+      "topic": "Review: thermal physics",
+      "objectives": [
+        "Revise the particle model and gas laws",
+        "Practise specific heat capacity and latent heat questions"
+      ],
+      "keywords": [
+        "particle model",
+        "gas pressure",
+        "specific heat capacity",
+        "latent heat",
+        "thermal transfer"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "review",
+      "topic": "Review: waves, light and sound",
+      "objectives": [
+        "Practise ray diagrams and refraction calculations",
+        "Revise the electromagnetic spectrum and sound"
+      ],
+      "keywords": [
+        "waves",
+        "refraction",
+        "lenses",
+        "electromagnetic spectrum",
+        "sound"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "review",
+      "topic": "Review: electricity and magnetism",
+      "objectives": [
+        "Practise circuit calculations",
+        "Revise motors, generators and transformers"
+      ],
+      "keywords": [
+        "circuits",
+        "resistance",
+        "electromagnetism",
+        "motor",
+        "transformer"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "review",
+      "topic": "Review: nuclear and space physics; practical skills",
+      "objectives": [
+        "Revise radioactivity and half-life",
+        "Revise space physics",
+        "Practise planning experiments and analysing data"
+      ],
+      "keywords": [
+        "radioactivity",
+        "half-life",
+        "space physics",
+        "practical skills",
+        "variables"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "exam",
+      "topic": "IGCSE exams: multiple choice paper (Paper 1 or 2)",
+      "objectives": [
+        "Answer multiple-choice questions efficiently",
+        "Check units and use estimation"
+      ],
+      "keywords": [
+        "multiple choice",
+        "time management",
+        "units",
+        "estimation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "exam",
+      "topic": "IGCSE exams: theory paper (Paper 3 or 4)",
+      "objectives": [
+        "Answer structured questions with correct equations and units",
+        "Show working clearly"
+      ],
+      "keywords": [
+        "theory paper",
+        "equations",
+        "working",
+        "units",
+        "command words"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "IGCSE exams: practical or alternative to practical paper (Paper 5 or 6)",
+      "objectives": [
+        "Plan experiments and identify variables",
+        "Record readings and plot graphs accurately"
+      ],
+      "keywords": [
+        "practical paper",
+        "variables",
+        "readings",
+        "graph",
+        "precision"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "exam",
+      "topic": "IGCSE exams: final exam window and course reflection",
+      "objectives": [
+        "Complete any remaining exam papers",
+        "Reflect on the course and next steps for IB or A Level Physics"
+      ],
+      "keywords": [
+        "exam window",
+        "reflection",
+        "next steps",
+        "IB",
+        "A Level"
+      ],
+      "spelling": []
+    }
+  ]
+}

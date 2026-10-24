@@ -1,0 +1,679 @@
+{
+  "version": 1,
+  "year": "Y11",
+  "stage": "igcse",
+  "subject": "fmath",
+  "level": null,
+  "language": "en",
+  "source": "Cambridge IGCSE Additional Mathematics 0606 syllabus 2025–2027, Cambridge International",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Trigonometric functions of any angle; sec, cosec and cot",
+      "objectives": [
+        "Define sin, cos, tan for any angle",
+        "Use sec, cosec and cot and exact values"
+      ],
+      "keywords": [
+        "trigonometric function",
+        "secant",
+        "cosecant",
+        "cotangent",
+        "exact value"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Graphs of trigonometric functions: amplitude, period and transformations",
+      "objectives": [
+        "Sketch y = a sin(bx) + c and similar graphs",
+        "Identify amplitude and period"
+      ],
+      "keywords": [
+        "amplitude",
+        "period",
+        "transformation",
+        "sine curve",
+        "cosine curve"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Modulus of trigonometric graphs and graphical solutions",
+      "objectives": [
+        "Sketch y = |a sin(bx)| and related graphs",
+        "Use graphs to find numbers of solutions"
+      ],
+      "keywords": [
+        "modulus",
+        "trigonometric graph",
+        "number of solutions",
+        "sketch"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Trigonometric identities: sin²x + cos²x = 1 and sec²x = 1 + tan²x",
+      "objectives": [
+        "Use the Pythagorean identities",
+        "Use tan x = sin x / cos x"
+      ],
+      "keywords": [
+        "identity",
+        "Pythagorean identity",
+        "sec²x",
+        "tan x"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Solving trigonometric equations in degrees and radians",
+      "objectives": [
+        "Solve equations in a given interval",
+        "Use identities to form quadratic trigonometric equations"
+      ],
+      "keywords": [
+        "trigonometric equation",
+        "interval",
+        "radians",
+        "quadratic in sin x"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Proving trigonometric identities",
+      "objectives": [
+        "Prove identities by manipulating one side",
+        "Present clear chains of reasoning"
+      ],
+      "keywords": [
+        "prove",
+        "identity",
+        "LHS",
+        "RHS"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Differentiation: derivative of xⁿ and gradients of curves",
+      "objectives": [
+        "Differentiate powers of x including negative and fractional",
+        "Find gradients at given points"
+      ],
+      "keywords": [
+        "derivative",
+        "dy/dx",
+        "gradient",
+        "power rule"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Differentiation: chain, product and quotient rules",
+      "objectives": [
+        "Differentiate composite functions with the chain rule",
+        "Use product and quotient rules"
+      ],
+      "keywords": [
+        "chain rule",
+        "product rule",
+        "quotient rule",
+        "composite"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Derivatives of eˣ, ln x and trigonometric functions",
+      "objectives": [
+        "Differentiate eˣ, ln x, sin x, cos x and tan x",
+        "Combine with the chain, product and quotient rules"
+      ],
+      "keywords": [
+        "eˣ",
+        "ln x",
+        "sin x",
+        "cos x",
+        "tan x"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Tangents and normals to curves",
+      "objectives": [
+        "Find equations of tangents and normals",
+        "Solve problems involving tangents meeting axes"
+      ],
+      "keywords": [
+        "tangent",
+        "normal",
+        "gradient",
+        "equation of line"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Stationary points and the second derivative",
+      "objectives": [
+        "Find stationary points",
+        "Classify maxima and minima using the second derivative"
+      ],
+      "keywords": [
+        "stationary point",
+        "second derivative",
+        "maximum",
+        "minimum"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "Connected rates of change",
+      "objectives": [
+        "Use the chain rule for related rates",
+        "Solve problems with changing area or volume"
+      ],
+      "keywords": [
+        "rate of change",
+        "connected rates",
+        "dV/dt",
+        "chain rule"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Small increments and approximations",
+      "objectives": [
+        "Use δy ≈ (dy/dx)δx",
+        "Estimate small changes in a quantity"
+      ],
+      "keywords": [
+        "small increment",
+        "approximation",
+        "δx",
+        "δy"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Integration as the reverse of differentiation",
+      "objectives": [
+        "Find indefinite integrals of powers of x",
+        "Find the equation of a curve from its gradient"
+      ],
+      "keywords": [
+        "integration",
+        "indefinite integral",
+        "constant of integration",
+        "antiderivative"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Term 1 review: trigonometry and differentiation",
+      "objectives": [
+        "Consolidate trigonometric equations and identities",
+        "Practise differentiation questions"
+      ],
+      "keywords": [
+        "trigonometry",
+        "identities",
+        "differentiation",
+        "stationary points"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Integrating eˣ, 1/(ax + b) and trigonometric functions",
+      "objectives": [
+        "Integrate e^(ax+b), (ax+b)ⁿ and 1/(ax+b)",
+        "Integrate sin(ax+b) and cos(ax+b)"
+      ],
+      "keywords": [
+        "integration",
+        "exponential",
+        "logarithm",
+        "trigonometric"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Definite integrals",
+      "objectives": [
+        "Evaluate definite integrals",
+        "Use exact values with ln and e"
+      ],
+      "keywords": [
+        "definite integral",
+        "limits",
+        "exact value",
+        "evaluate"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Areas under curves and between a line and a curve",
+      "objectives": [
+        "Find areas bounded by curves and the x-axis",
+        "Find areas between a line and a curve"
+      ],
+      "keywords": [
+        "area under curve",
+        "bounded region",
+        "definite integral",
+        "line and curve"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Kinematics: displacement, velocity and acceleration by differentiation",
+      "objectives": [
+        "Differentiate displacement to find velocity and acceleration",
+        "Find when a particle is at rest"
+      ],
+      "keywords": [
+        "kinematics",
+        "displacement",
+        "velocity",
+        "acceleration",
+        "at rest"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Kinematics: using integration and total distance travelled",
+      "objectives": [
+        "Integrate acceleration and velocity",
+        "Distinguish displacement from total distance travelled"
+      ],
+      "keywords": [
+        "integration",
+        "displacement",
+        "distance travelled",
+        "initial conditions"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Practical maximisation and minimisation problems",
+      "objectives": [
+        "Form an expression to optimise from a context",
+        "Use differentiation to find and justify optimum values"
+      ],
+      "keywords": [
+        "optimisation",
+        "maximum",
+        "minimum",
+        "context"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Roots of quadratic equations: α and β, sum and product",
+      "objectives": [
+        "Use α + β = −b/a and αβ = c/a",
+        "Form new equations with roots related to α and β"
+      ],
+      "keywords": [
+        "roots",
+        "alpha",
+        "beta",
+        "sum of roots",
+        "product of roots"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Binomial expansion: products of expansions and approximations",
+      "objectives": [
+        "Find coefficients in products such as (1 + x)(2 − x)⁵",
+        "Use expansions for approximations"
+      ],
+      "keywords": [
+        "binomial",
+        "coefficient",
+        "product of expansions",
+        "approximation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Mixed problem solving: functions, logarithms and calculus",
+      "objectives": [
+        "Combine topics in multi-step questions",
+        "Select efficient methods"
+      ],
+      "keywords": [
+        "problem solving",
+        "functions",
+        "calculus",
+        "logarithms"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Mixed problem solving: trigonometry, vectors, series and combinatorics",
+      "objectives": [
+        "Solve unfamiliar multi-part questions",
+        "Link topics across the syllabus"
+      ],
+      "keywords": [
+        "problem solving",
+        "trigonometry",
+        "vectors",
+        "series"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Exam technique: show-that questions, exact answers and accuracy",
+      "objectives": [
+        "Present complete reasoning for show-that questions",
+        "Give exact or 3 s.f. answers as required"
+      ],
+      "keywords": [
+        "show that",
+        "exact answer",
+        "accuracy",
+        "exam technique"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mock exams: Paper 1 and Paper 2",
+      "objectives": [
+        "Sit both papers under exam conditions",
+        "Analyse results to plan revision"
+      ],
+      "keywords": [
+        "mock",
+        "Paper 1",
+        "Paper 2",
+        "grade boundaries"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "review",
+      "topic": "Revision: functions, quadratics, modulus and inequalities",
+      "objectives": [
+        "Revise composite and inverse functions",
+        "Practise discriminant and inequality questions"
+      ],
+      "keywords": [
+        "functions",
+        "quadratics",
+        "modulus",
+        "discriminant"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "review",
+      "topic": "Revision: polynomials, simultaneous equations, surds and logarithms",
+      "objectives": [
+        "Revise factor and remainder theorems",
+        "Practise log and exponential equations"
+      ],
+      "keywords": [
+        "polynomials",
+        "surds",
+        "logarithms",
+        "simultaneous equations"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "review",
+      "topic": "Revision: straight-line graphs, coordinate geometry and circles",
+      "objectives": [
+        "Revise linear form transformations",
+        "Practise circle equations and tangents"
+      ],
+      "keywords": [
+        "linear form",
+        "coordinate geometry",
+        "circle",
+        "tangent"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "review",
+      "topic": "Revision: circular measure and trigonometry",
+      "objectives": [
+        "Revise radians, arcs and sectors",
+        "Practise trigonometric equations and identities"
+      ],
+      "keywords": [
+        "radians",
+        "sector",
+        "trigonometric equations",
+        "identities"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "review",
+      "topic": "Revision: permutations, combinations, series and vectors",
+      "objectives": [
+        "Revise counting methods and binomial expansion",
+        "Practise progressions and vector problems"
+      ],
+      "keywords": [
+        "permutations",
+        "combinations",
+        "progressions",
+        "vectors"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "review",
+      "topic": "Revision: differentiation, integration and kinematics",
+      "objectives": [
+        "Revise all differentiation rules",
+        "Practise area and kinematics questions"
+      ],
+      "keywords": [
+        "differentiation",
+        "integration",
+        "kinematics",
+        "area"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "exam",
+      "topic": "Final exams: Additional Mathematics Paper 1",
+      "objectives": [
+        "Sit Paper 1 with full working",
+        "Manage time across all questions"
+      ],
+      "keywords": [
+        "Paper 1",
+        "IGCSE exam",
+        "working"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "exam",
+      "topic": "Final exams: Additional Mathematics Paper 2",
+      "objectives": [
+        "Sit Paper 2 with full working",
+        "Check exact answers and accuracy"
+      ],
+      "keywords": [
+        "Paper 2",
+        "IGCSE exam",
+        "accuracy"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "Exam season: targeted practice on weakest topics",
+      "objectives": [
+        "Review errors from papers already taken",
+        "Practise short calculus and algebra sets"
+      ],
+      "keywords": [
+        "exam season",
+        "targeted practice",
+        "weak topics"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "exam",
+      "topic": "Exam season close: reflection and bridge to IB Mathematics AA",
+      "objectives": [
+        "Reflect on the course",
+        "Preview proof and calculus extensions in IB AA"
+      ],
+      "keywords": [
+        "reflection",
+        "IB Mathematics",
+        "Analysis and Approaches",
+        "post-16"
+      ],
+      "spelling": []
+    }
+  ]
+}

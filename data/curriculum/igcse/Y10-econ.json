@@ -1,0 +1,694 @@
+{
+  "version": 1,
+  "year": "Y10",
+  "stage": "igcse",
+  "subject": "econ",
+  "level": null,
+  "language": "en",
+  "source": "Cambridge IGCSE Economics 0455 syllabus 2027–2029, Cambridge International",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "The basic economic problem: scarcity, needs and wants",
+      "objectives": [
+        "Define the basic economic problem",
+        "Distinguish economic goods from free goods"
+      ],
+      "keywords": [
+        "scarcity",
+        "needs",
+        "wants",
+        "finite resources",
+        "economic good"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Factors of production: land, labour, capital and enterprise",
+      "objectives": [
+        "Identify the four factors and their rewards",
+        "Explain influences on the mobility and quality of factors"
+      ],
+      "keywords": [
+        "land",
+        "labour",
+        "capital",
+        "enterprise",
+        "factor mobility"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Opportunity cost and decision making",
+      "objectives": [
+        "Define opportunity cost",
+        "Apply opportunity cost to consumers, workers, firms and governments"
+      ],
+      "keywords": [
+        "opportunity cost",
+        "choice",
+        "trade-off",
+        "decision making"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Production possibility curves",
+      "objectives": [
+        "Draw and interpret PPC diagrams",
+        "Explain movements along and shifts of the PPC"
+      ],
+      "keywords": [
+        "PPC",
+        "efficiency",
+        "economic growth",
+        "shift",
+        "opportunity cost"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "The allocation of resources: the market system",
+      "objectives": [
+        "Identify the key economic questions",
+        "Explain how the price mechanism allocates resources"
+      ],
+      "keywords": [
+        "market system",
+        "price mechanism",
+        "what to produce",
+        "for whom"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Demand: the demand curve and conditions of demand",
+      "objectives": [
+        "Draw a demand curve and explain the law of demand",
+        "Explain the causes of shifts in demand"
+      ],
+      "keywords": [
+        "demand",
+        "demand curve",
+        "shift",
+        "income",
+        "substitutes",
+        "complements"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Supply: the supply curve and conditions of supply",
+      "objectives": [
+        "Draw a supply curve and explain the law of supply",
+        "Explain the causes of shifts in supply"
+      ],
+      "keywords": [
+        "supply",
+        "supply curve",
+        "costs of production",
+        "shift"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Price determination: market equilibrium and disequilibrium",
+      "objectives": [
+        "Identify equilibrium price and quantity",
+        "Explain excess demand and excess supply"
+      ],
+      "keywords": [
+        "equilibrium",
+        "excess demand",
+        "excess supply",
+        "shortage",
+        "surplus"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Price changes: effects of shifts in demand and supply",
+      "objectives": [
+        "Analyse changes in equilibrium using diagrams",
+        "Apply analysis to real markets"
+      ],
+      "keywords": [
+        "price change",
+        "equilibrium",
+        "diagram",
+        "market analysis"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Price elasticity of demand (PED)",
+      "objectives": [
+        "Calculate and interpret PED",
+        "Explain determinants of PED and its link to total revenue"
+      ],
+      "keywords": [
+        "PED",
+        "elastic",
+        "inelastic",
+        "total revenue",
+        "determinants"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Price elasticity of supply (PES)",
+      "objectives": [
+        "Calculate and interpret PES",
+        "Explain the determinants of PES"
+      ],
+      "keywords": [
+        "PES",
+        "elastic supply",
+        "inelastic supply",
+        "time period"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "The market economic system: advantages and disadvantages",
+      "objectives": [
+        "Describe the market economic system",
+        "Evaluate its advantages and disadvantages"
+      ],
+      "keywords": [
+        "market economy",
+        "consumer sovereignty",
+        "competition",
+        "profit motive"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Market failure: public goods, merit goods and demerit goods",
+      "objectives": [
+        "Define public, merit and demerit goods",
+        "Explain why markets fail to provide them efficiently"
+      ],
+      "keywords": [
+        "market failure",
+        "public good",
+        "merit good",
+        "demerit good",
+        "free rider"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Market failure: externalities, private and social costs and benefits",
+      "objectives": [
+        "Distinguish private, external and social costs and benefits",
+        "Explain the consequences of externalities"
+      ],
+      "keywords": [
+        "externality",
+        "social cost",
+        "social benefit",
+        "private cost"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Term 1 review: the basic economic problem and allocation of resources",
+      "objectives": [
+        "Consolidate demand, supply and elasticity diagrams",
+        "Practise short-answer and data questions"
+      ],
+      "keywords": [
+        "demand",
+        "supply",
+        "elasticity",
+        "market failure"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "The mixed economic system and government intervention in markets",
+      "objectives": [
+        "Explain maximum and minimum prices, taxes and subsidies",
+        "Evaluate regulation, privatisation and nationalisation"
+      ],
+      "keywords": [
+        "mixed economy",
+        "maximum price",
+        "minimum price",
+        "indirect tax",
+        "subsidy",
+        "regulation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Money and banking: functions of money, central and commercial banks",
+      "objectives": [
+        "Describe the functions and characteristics of money",
+        "Explain the roles of central and commercial banks"
+      ],
+      "keywords": [
+        "money",
+        "medium of exchange",
+        "central bank",
+        "commercial bank"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Households: spending, saving and borrowing",
+      "objectives": [
+        "Explain influences on household spending, saving and borrowing",
+        "Analyse how income and interest rates affect choices"
+      ],
+      "keywords": [
+        "household",
+        "saving",
+        "borrowing",
+        "interest rate",
+        "disposable income"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Workers: factors affecting choice of occupation and wage determination",
+      "objectives": [
+        "Explain wage and non-wage factors in job choice",
+        "Analyse wage determination using demand and supply of labour"
+      ],
+      "keywords": [
+        "wage",
+        "non-wage factors",
+        "labour market",
+        "minimum wage"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Workers: division of labour and specialisation",
+      "objectives": [
+        "Explain the division of labour",
+        "Evaluate specialisation for workers and firms"
+      ],
+      "keywords": [
+        "division of labour",
+        "specialisation",
+        "productivity",
+        "efficiency"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Trade unions: role, influence and impact",
+      "objectives": [
+        "Describe the role of trade unions",
+        "Evaluate the advantages and disadvantages of union membership"
+      ],
+      "keywords": [
+        "trade union",
+        "collective bargaining",
+        "industrial action",
+        "strike"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Firms: classification, small firms and the growth of firms",
+      "objectives": [
+        "Classify firms by sector and ownership",
+        "Explain why small firms survive and how firms grow"
+      ],
+      "keywords": [
+        "primary sector",
+        "secondary sector",
+        "tertiary sector",
+        "small firm",
+        "internal growth"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Mergers, economies and diseconomies of scale",
+      "objectives": [
+        "Distinguish horizontal, vertical and conglomerate mergers",
+        "Explain internal and external economies of scale"
+      ],
+      "keywords": [
+        "merger",
+        "horizontal",
+        "vertical",
+        "conglomerate",
+        "economies of scale"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Firms and production: labour- and capital-intensive production, productivity",
+      "objectives": [
+        "Explain influences on the demand for factors of production",
+        "Distinguish production and productivity"
+      ],
+      "keywords": [
+        "labour-intensive",
+        "capital-intensive",
+        "productivity",
+        "production"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Firms' costs, revenue and objectives",
+      "objectives": [
+        "Calculate fixed, variable, total and average costs",
+        "Calculate revenue and explain different objectives of firms"
+      ],
+      "keywords": [
+        "fixed cost",
+        "variable cost",
+        "total revenue",
+        "average revenue",
+        "profit maximisation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Market structure: competitive markets and monopoly",
+      "objectives": [
+        "Describe the characteristics of competitive markets and monopoly",
+        "Evaluate the advantages and disadvantages of monopoly"
+      ],
+      "keywords": [
+        "market structure",
+        "competition",
+        "monopoly",
+        "barriers to entry"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mid-year exams: microeconomics (Topics 1–3)",
+      "objectives": [
+        "Sit multiple-choice and structured questions on micro topics",
+        "Identify topics for follow-up"
+      ],
+      "keywords": [
+        "mock exam",
+        "multiple choice",
+        "structured questions"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "The role of government and macroeconomic aims",
+      "objectives": [
+        "Describe the roles of government locally, nationally and globally",
+        "Identify the macroeconomic aims"
+      ],
+      "keywords": [
+        "government",
+        "macroeconomic aims",
+        "economic growth",
+        "full employment",
+        "price stability"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Fiscal policy: government budget and taxation",
+      "objectives": [
+        "Explain the government budget and types of tax",
+        "Analyse the effects of fiscal policy"
+      ],
+      "keywords": [
+        "fiscal policy",
+        "budget",
+        "direct tax",
+        "indirect tax",
+        "progressive tax"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Monetary policy",
+      "objectives": [
+        "Explain the tools of monetary policy",
+        "Analyse the effects of changes in interest rates and money supply"
+      ],
+      "keywords": [
+        "monetary policy",
+        "interest rate",
+        "money supply",
+        "central bank"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Supply-side policy",
+      "objectives": [
+        "Describe supply-side measures",
+        "Evaluate their effects on the economy"
+      ],
+      "keywords": [
+        "supply-side policy",
+        "education and training",
+        "privatisation",
+        "deregulation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Economic growth: GDP, the business cycle and its causes",
+      "objectives": [
+        "Define and measure economic growth using real GDP",
+        "Explain the phases of the business cycle"
+      ],
+      "keywords": [
+        "economic growth",
+        "GDP",
+        "real GDP",
+        "business cycle",
+        "recession"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Employment and unemployment: types, causes and consequences",
+      "objectives": [
+        "Calculate the unemployment rate",
+        "Explain types, causes and consequences of unemployment"
+      ],
+      "keywords": [
+        "unemployment",
+        "unemployment rate",
+        "cyclical",
+        "structural",
+        "frictional"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Inflation and deflation: measurement, causes and consequences",
+      "objectives": [
+        "Explain how CPI measures inflation",
+        "Distinguish demand-pull and cost-push inflation"
+      ],
+      "keywords": [
+        "inflation",
+        "deflation",
+        "CPI",
+        "demand-pull",
+        "cost-push"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Applying macroeconomic aims: data response with real economies",
+      "objectives": [
+        "Interpret macroeconomic data tables and graphs",
+        "Compare performance of Brazil and other economies"
+      ],
+      "keywords": [
+        "data response",
+        "macroeconomic data",
+        "Brazil",
+        "comparison"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "End-of-year exams: Year 10 Economics",
+      "objectives": [
+        "Sit papers on Topics 1–4",
+        "Use diagrams in structured answers"
+      ],
+      "keywords": [
+        "end-of-year exam",
+        "diagrams",
+        "analysis"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Year 10 review and preview of economic development and trade",
+      "objectives": [
+        "Correct exam errors",
+        "Preview development indicators and international trade"
+      ],
+      "keywords": [
+        "exam feedback",
+        "development",
+        "trade",
+        "Year 11"
+      ],
+      "spelling": []
+    }
+  ]
+}
