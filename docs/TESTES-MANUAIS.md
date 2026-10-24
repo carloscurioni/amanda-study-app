@@ -15,3 +15,10 @@ Use `?hoje=AAAA-MM-DD` no fim do endereço para simular a data (ex.: `https://am
 1. Abra o mesmo perfil no celular e no computador.
 2. No celular, conclua a tarefa do dia. No computador (sem recarregar), faça uma rodada de extras.
 3. Esperado: aparece "🔄 Juntei com as mudanças de outro aparelho" e, depois de recarregar, os dois aparelhos mostram o dia concluído e o saldo com as duas moedas somadas.
+
+## Temas do dia e impressão A4 (24/10)
+1. Abra o dia: aparece **🗂️ Temas** (📖 Leitura do dia primeiro). Toque em **▶ Começar**: abre a leitura e depois as 3 perguntas dela.
+2. No fim do tema, **Próximo tema ▸** vai para Português; volte em **🗂️ Temas** e toque em Math: só perguntas de Math, numeradas 1, 2…
+3. Em **🗂️ Temas**, toque **✔ Concluir** com perguntas faltando: abre o tema e a pergunta que falta. Responda tudo e conclua.
+4. Toque **🔑 Gabarito** dentro de um tema: só aquele tema.
+5. **🖨️ Imprimir** no dia, num extra, no Livro extra e na aulinha (botão 🖨️ ao lado do 🔊): a visualização de impressão mostra folhas **A4**; leitura longa continua na folha 2 ("continuação").

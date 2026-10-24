@@ -2887,9 +2887,9 @@ function pageSize() {
   if (w < 1000) return h < 800 ? 8 : 10;
   return h < 760 ? 9 : 12;
 }
-function workPages(c) {
+function workPages(c, idxs) {
   const per = pageSize(); const pages = []; let cur = [], sum = 0;
-  c.questions.forEach((q, i) => {
+  (idxs || c.questions.map((_, i) => i)).forEach(i => { const q = c.questions[i];
     const wt = q.type === 'proof' ? 3 : q.type === 'open' ? 1.5 : 1;
     if (cur.length && sum + wt > per) { pages.push(cur); cur = []; sum = 0; }
     cur.push(i); sum += wt;
@@ -2898,43 +2898,132 @@ function workPages(c) {
   return pages.length ? pages : [[]];
 }
 function workKey(c) { return c.kind + '|' + (c.rec ? 'r' : '') + (c.obj.date || c.obj.started || ''); }
+/* ---------- Temas do dia: a tarefa é organizada por tema (leitura primeiro, depois cada matéria) ----------
+   A criança escolhe o tema que quer fazer; se não escolher, "Começar/Continuar" segue a sequência. */
+function workThemes(c) {
+  const read = dayPassages(c.obj).map(x => x.subject);
+  const pos = id => SUBJECTS.findIndex(s => s.id === id);
+  const ids = [...new Set(c.questions.map(q => q.subject))].sort((a, b) => (read.includes(b) - read.includes(a)) || pos(a) - pos(b));
+  return ids.map(id => ({ id, reading: read.includes(id), idxs: c.questions.map((q, i) => (q.subject === id ? i : -1)).filter(i => i >= 0) }));
+}
+const themeAnswered = (c, t) => t.idxs.filter(i => answered(c.questions[i], c.answers[c.questions[i].id])).length;
+const themeDone = (c, t) => themeAnswered(c, t) === t.idxs.length;
+// próximo tema que ainda falta, na sequência (a partir do tema atual)
+function nextTheme(c, themes, fromId) {
+  const k = themes.findIndex(t => t.id === fromId);
+  const order = k < 0 ? themes : [...themes.slice(k + 1), ...themes.slice(0, k)];
+  return order.find(t => !themeDone(c, t)) || null;
+}
+function firstOpenPage(c, t) { const pages = workPages(c, t.idxs); const k = pages.findIndex(p => p.some(i => !answered(c.questions[i], c.answers[c.questions[i].id]))); return k < 0 ? 0 : k; }
+function openTheme(id) {
+  const c = workCtx(); if (!c || !VIEW.wp) return;
+  const t = id && workThemes(c).find(x => x.id === id);
+  VIEW.wp.theme = t ? t.id : null; VIEW.wp.page = t ? firstOpenPage(c, t) : 0;
+  save(); renderWork();
+}
+function themeTopic(c, id) {
+  const tp = c.kind === 'day' && !c.rec && S.week && S.week.topics ? (S.week.topics[id] || '') : '';
+  const line = String(tp).split('\n')[0].replace(/^[🔁📝]\s*/u, '').trim();
+  return line.length > 70 ? line.slice(0, 68) + '…' : line;
+}
+function renderHub(c, themes) {
+  const el = $('#scr-work');
+  const canQty = c.kind === 'day' && !c.rec && !c.done && !dayStarted(c.obj) && !c.obj.printed;
+  const paper = c.kind === 'day' && !c.rec && !c.done;
+  const next = nextTheme(c, themes, null);
+  const started = c.questions.some(q => answered(q, c.answers[q.id]));
+  VIEW.curPages = [];
+  const card = t => {
+    const sb = SUBJ[t.id] || { icon: '❓', name: t.id, color: '#7b5cf0' }; const n = t.idxs.length; const a = themeAnswered(c, t);
+    const ok = c.done ? t.idxs.filter(i => verdict(c, c.questions[i]) === true).length : 0;
+    const st = c.done ? `✓ ${ok}/${n}` : a === n ? '✅' : a ? `${a}/${n}` : '';
+    const topic = themeTopic(c, t.id);
+    return `<button type="button" class="theme-card ${a === n ? 'done' : ''} ${!c.done && next && next.id === t.id ? 'next' : ''}" data-theme="${t.id}" style="--subj:${sb.color}">
+      <span class="tc-top"><span class="tc-ic">${t.reading ? '📖' : sb.icon}</span><span class="tc-name">${esc(t.reading ? (sb.lang === 'en' ? 'Today\'s reading' : 'Leitura do dia') : sb.name)}</span><span class="tc-st">${st}</span></span>
+      <span class="tc-meta">${t.reading ? (sb.lang === 'en' ? 'text + ' : 'texto + ') : ''}${n} ${n === 1 ? 'pergunta' : 'perguntas'}</span>
+      ${topic ? `<span class="tc-topic">${esc(topic)}</span>` : ''}
+      <span class="tc-bar"><i style="width:${n ? a / n * 100 : 0}%"></i></span></button>`;
+  };
+  el.innerHTML = `<div class="work hub">
+    ${c.done ? `<div class="done-banner">✅ <b>${c.kind === 'extra' ? 'Extras concluídos!' : 'Tarefa concluída!'}</b><button type="button" class="btn small primary" data-act="home2">🏠 Voltar ao início</button></div>` : ''}
+    <div class="work-head">
+      <h2>${esc(c.title)}</h2>
+      <div class="progress" aria-hidden="true"><i id="prog-bar"></i></div><span class="prog-txt" id="prog-txt"></span>
+      ${canQty ? `<span class="qty" title="Quantas perguntas hoje?"><button data-qty="-1" aria-label="menos perguntas">−</button><span>${c.questions.length}</span><button data-qty="1" aria-label="mais perguntas">+</button></span>` : ''}
+      ${paper && c.obj.printed ? '<button class="btn small gold" data-act="check">📄 Corrigir folha</button>' : ''}
+    </div>
+    ${!c.done && next ? `<div class="hub-go-wrap"><button type="button" class="btn primary big hub-go" data-theme="${next.id}">▶ ${started ? 'Continuar' : 'Começar'}: ${next.reading ? '📖' : (SUBJ[next.id] || {}).icon || ''} ${esc(next.reading ? (SUBJ[next.id].lang === 'en' ? 'Reading' : 'Leitura') : (SUBJ[next.id] || {}).name || next.id)}</button>
+      <span class="tiny muted">${started ? 'ou escolha outro tema 👇' : 'na sequência — ou escolha um tema 👇'}</span></div>` : ''}
+    ${!c.done && !next ? `<div class="hub-go-wrap"><span class="hub-all">🎉 Todos os temas respondidos! Confira e toque em <b>✔ Concluir</b>.</span></div>` : ''}
+    <div class="theme-grid">${themes.map(card).join('')}</div>
+    <div class="work-foot">
+      <button class="btn home-btn" data-act="back" aria-label="Voltar ao início">🏠 <span class="lbl">Início</span></button>
+      <button class="btn" data-act="print" aria-label="Imprimir">🖨️ <span class="lbl">Imprimir</span></button>
+      <button class="btn" data-act="key">🔑 Gabarito</button>
+      ${c.done ? '' : `<button class="btn ${next ? '' : 'primary'}" data-act="finish">✔ Concluir</button>`}
+    </div></div>`;
+  $$('[data-theme]', el).forEach(b => b.onclick = () => openTheme(b.dataset.theme));
+  $$('[data-qty]', el).forEach(b => b.onclick = () => changeQty(c, Number(b.dataset.qty)));
+  $('[data-act=back]', el).onclick = () => { save(); show('home'); };
+  const h2 = $('[data-act=home2]', el); if (h2) h2.onclick = () => { save(); show('home'); };
+  $('[data-act=key]', el).onclick = () => openGabarito(c);
+  $('[data-act=print]', el).onclick = () => printWork(c);
+  const ck = $('[data-act=check]', el); if (ck) ck.onclick = () => openCheck(c.obj.date);
+  const fin = $('[data-act=finish]', el); if (fin) fin.onclick = () => finishWork(c);
+  updateProgress(c);
+}
 function renderWork() {
   const el = $('#scr-work');
   const c = workCtx();
   if (!c) { show('home'); return; }
   $('#top-title').textContent = c.kind === 'extra' ? '⭐ Extras' : `📘 ${c.title}`;
   const canQty = c.kind === 'day' && !c.rec && !c.done && !dayStarted(c.obj) && !c.obj.printed;
-  const pages = workPages(c);
-  if (!VIEW.wp || VIEW.wp.key !== workKey(c)) VIEW.wp = { key: workKey(c), page: 0 };
+  const themes = workThemes(c);
+  const hub = themes.length > 1;
+  if (!VIEW.wp || VIEW.wp.key !== workKey(c)) VIEW.wp = { key: workKey(c), page: 0, theme: hub ? null : 'all' };
+  if (!hub) VIEW.wp.theme = 'all';
+  else if (VIEW.wp.theme === 'all' || (VIEW.wp.theme && !themes.some(t => t.id === VIEW.wp.theme))) VIEW.wp.theme = null;
+  if (hub && !VIEW.wp.theme) { renderHub(c, themes); return; }
+  const th = hub ? themes.find(t => t.id === VIEW.wp.theme) : { id: 'all', idxs: c.questions.map((_, i) => i), reading: dayPassages(c.obj).length > 0 };
+  const pages = workPages(c, th.idxs);
   const pg = VIEW.wp.page = clamp(VIEW.wp.page, 0, pages.length - 1);
   VIEW.curPages = pages;
-  const cards = pages[pg].map(i => questionCard(c.questions[i], i, c)).join('');
+  const numOf = i => (hub ? th.idxs.indexOf(i) : i);   // dentro do tema: 1, 2, 3…
+  const cards = pages[pg].map(i => questionCard(c.questions[i], i, c, numOf(i))).join('');
   const last = pg === pages.length - 1;
   const pager = pages.length > 1 ? `<div class="pager"><button type="button" class="btn small" data-pg="-1" ${pg === 0 ? 'disabled' : ''} aria-label="Parte anterior">◂</button>
       <span class="pg-dots">${pages.map((p, j) => `<button type="button" data-pgi="${j}" class="${j === pg ? 'on' : ''}" aria-label="Parte ${j + 1}">${j + 1}</button>`).join('')}</span>
       <span class="pg-txt">Parte ${pg + 1} de ${pages.length}</span>
       <button type="button" class="btn small" data-pg="1" ${last ? 'disabled' : ''} aria-label="Próxima parte">▸</button></div>` : '';
   const paper = c.kind === 'day' && !c.rec && !c.done;
+  const sbT = hub ? (SUBJ[th.id] || { icon: '❓', name: th.id, color: '#7b5cf0' }) : null;
+  const nxt = hub && !c.done ? nextTheme(c, themes, th.id) : null;
+  const lastBtn = c.done ? (hub ? '<button class="btn primary" data-act="themes">🗂️ Temas</button>' : '')
+    : nxt ? `<button class="btn primary" data-act="nexttheme" data-nt="${nxt.id}">${nxt.reading ? '📖' : (SUBJ[nxt.id] || {}).icon || ''} Próximo tema ▸</button>`
+    : '<button class="btn primary" data-act="finish">✔ Concluir</button>';
   el.innerHTML = `<div class="work">
     ${c.done ? `<div class="done-banner">✅ <b>${c.kind === 'extra' ? 'Extras concluídos!' : 'Tarefa concluída!'}</b><button type="button" class="btn small primary" data-act="home2">🏠 Voltar ao início</button></div>` : ''}
     <div class="work-head">
-      <h2>${esc(c.title)}</h2>
+      ${hub ? `<button class="btn small themes-btn" data-act="themes" aria-label="Voltar aos temas">◂ 🗂️</button><span class="theme-chip" style="--subj:${sbT.color}">${th.reading ? '📖' : sbT.icon} ${esc(sbT.short || sbT.name)} <b id="theme-cnt">${themeAnswered(c, th)}/${th.idxs.length}</b></span>` : `<h2>${esc(c.title)}</h2>`}
       <div class="progress" aria-hidden="true"><i id="prog-bar"></i></div><span class="prog-txt" id="prog-txt"></span>
       ${canQty ? `<span class="qty" title="Quantas perguntas hoje?"><button data-qty="-1" aria-label="menos perguntas">−</button><span>${c.questions.length}</span><button data-qty="1" aria-label="mais perguntas">+</button></span>` : ''}
-      ${dayPassages(c.obj).length ? `<button class="btn small read-btn" data-act="passage">📖 ${dayPassages(c.obj).length > 1 ? 'Textos' : 'Leitura'}</button>` : ''}
+      ${th.reading ? `<button class="btn small read-btn" data-act="passage">📖 ${dayPassages(c.obj).length > 1 && !hub ? 'Textos' : 'Leitura'}</button>` : ''}
       ${paper && c.obj.printed ? '<button class="btn small gold" data-act="check">📄 Corrigir folha</button>' : ''}
     </div>
     <div class="sheet" id="sheet">${cards}</div>${pager}
     <div class="work-foot">
-      <button class="btn home-btn" data-act="back" aria-label="Voltar ao início">🏠 <span class="lbl">Início</span></button>
+      ${hub ? '<button class="btn home-btn" data-act="themes" aria-label="Temas">🗂️ <span class="lbl">Temas</span></button>' : '<button class="btn home-btn" data-act="back" aria-label="Voltar ao início">🏠 <span class="lbl">Início</span></button>'}
       <button class="btn" data-act="print" aria-label="Imprimir">🖨️ <span class="lbl">Imprimir</span></button>
       <button class="btn" data-act="key">🔑 Gabarito</button>
-      ${c.done ? (last ? '' : '<button class="btn primary" data-pg="1">Próxima ▸</button>') : last ? '<button class="btn primary" data-act="finish">✔ Concluir</button>' : '<button class="btn primary" data-pg="1">Próxima parte ▸</button>'}
+      ${last ? lastBtn : `<button class="btn primary" data-pg="1">${c.done ? 'Próxima ▸' : 'Próxima parte ▸'}</button>`}
     </div></div>`;
   bindWork(el, c);
+  $$('[data-act=themes]', el).forEach(b => b.onclick = () => openTheme(null));
+  const nt = $('[data-act=nexttheme]', el); if (nt) nt.onclick = () => openTheme(nt.dataset.nt);
+  VIEW.curTheme = th;
   updateProgress(c);
   requestAnimationFrame(() => fitGrid($('#sheet')));
-  if (dayPassages(c.obj).length && !c.obj.passageSeen && !c.done) { c.obj.passageSeen = true; save(); setTimeout(() => showPassages(c.obj), 250); }
+  if (th.reading && !c.obj.passageSeen && !c.done) { c.obj.passageSeen = true; save(); setTimeout(() => showPassages(c.obj), 250); }
 }
 function goPage(n) { if (!VIEW.wp) return; VIEW.wp.page = n; save(); renderWork(); }
 // Texto(s) de leitura escritos pela Lumi para o dia
@@ -2953,7 +3042,7 @@ function passageContext(q, d) {
   const ps = d ? dayPassages(d).filter(x => x.subject === q.subject) : [];
   return ps.map(x => `Texto "${x.title}": ${x.text}`).join('\n');
 }
-function questionCard(q, i, c) {
+function questionCard(q, i, c, num = i) {
   const s = SUBJ[q.subject] || { color: '#7b5cf0', icon: '❓', short: '' };
   const ans = c.answers[q.id];
   let control = '';
@@ -2978,7 +3067,7 @@ function questionCard(q, i, c) {
     }
   }
   return `<div class="q ${stateCls} ${q.type === 'proof' ? 'wide' : ''}" style="--subj:${s.color}" data-qid="${q.id}">
-    <div class="q-top"><span class="q-num">${i + 1}</span>
+    <div class="q-top"><span class="q-num">${num + 1}</span>
       <div class="q-text"><span class="q-subj">${s.icon} ${esc(s.short)}</span>${esc(q.q)}</div>
       <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Ouvir">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha: não sei isso'}" aria-label="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha'}">?</button><button type="button" data-hint title="Dica">💡</button>${c.done && q.bank && Server.me ? `<button type="button" data-bankrep title="${q.lang === 'en' ? 'Report a problem with this question' : 'Avisar problema nesta pergunta'}">🚩</button>` : ''}</div>
     </div>${control}${expected}${mark ? `<span class="mark">${mark}</span>` : ''}</div>`;
@@ -3011,9 +3100,9 @@ function bindWork(el, c) {
   $$('[data-qty]', el).forEach(b => b.onclick = () => changeQty(c, Number(b.dataset.qty)));
   $$('[data-pg]', el).forEach(b => b.onclick = () => goPage(VIEW.wp.page + Number(b.dataset.pg)));
   $$('[data-pgi]', el).forEach(b => b.onclick = () => goPage(Number(b.dataset.pgi)));
-  $('[data-act=back]', el).onclick = () => { save(); show('home'); };
+  const bk = $('[data-act=back]', el); if (bk) bk.onclick = () => { save(); show('home'); };
   const h2 = $('[data-act=home2]', el); if (h2) h2.onclick = () => { save(); show('home'); };
-  $('[data-act=key]', el).onclick = () => openGabarito(c);
+  $('[data-act=key]', el).onclick = () => openGabarito(c, VIEW.wp && VIEW.wp.theme && VIEW.wp.theme !== 'all' ? VIEW.curTheme : null);
   const pr = $('[data-act=print]', el); if (pr) pr.onclick = () => printWork(c);
   const ck = $('[data-act=check]', el); if (ck) ck.onclick = () => openCheck(c.obj.date);
   const ps = $('[data-act=passage]', el); if (ps) ps.onclick = () => showPassages(c.obj);
@@ -3060,6 +3149,7 @@ function updateProgress(c) {
   const a = c.questions.filter(q => answered(q, c.answers[q.id])).length;
   const bar = $('#prog-bar'); if (bar) bar.style.width = (n ? a / n * 100 : 0) + '%';
   const tx = $('#prog-txt'); if (tx) tx.textContent = `${a}/${n}`;
+  const tc = $('#theme-cnt'); if (tc && VIEW.curTheme && VIEW.curTheme.idxs) tc.textContent = `${themeAnswered(c, VIEW.curTheme)}/${VIEW.curTheme.idxs.length}`;
   (VIEW.curPages || []).forEach((p, j) => { const b = $(`.pg-dots [data-pgi="${j}"]`); if (b) b.classList.toggle('full', p.every(i => c.questions[i] && answered(c.questions[i], c.answers[c.questions[i].id]))); });
 }
 // Ajusta fonte e colunas até tudo caber (tela ou página impressa) sem rolagem.
@@ -3092,10 +3182,11 @@ function fitGrid(grid, opts = {}) {
   if (allowOverflow) grid.classList.add('overflow'); // último recurso (tela minúscula)
   return false;
 }
-function openGabarito(c) {
+function openGabarito(c, th = null) {
   const locked = S.settings.gabaritoAfterFinish && !c.done;
   if (locked) { say('Primeiro termine e aperte <b>Concluir</b>. Aí o gabarito libera! 🔑', { mood: 'think' }); return; }
-  const items = c.questions.map((q, i) => {
+  const idxs = th && th.idxs ? th.idxs : c.questions.map((_, i) => i);
+  const items = idxs.map((qi, i) => { const q = c.questions[qi];
     const ans = c.answers[q.id];
     const ok = c.done ? verdict(c, q) : isCorrect(q, ans);
     const cls = ok === true ? 'ok' : ok === false && (answered(q, ans) || c.verdicts[q.id]) ? 'bad' : '';
@@ -3104,7 +3195,7 @@ function openGabarito(c) {
     const yours = !answered(q, ans) || q.type === 'open' ? '' : q.type === 'proof' ? `<span class="yours">· ${q.lang === 'en' ? 'you fixed' : 'você corrigiu'} ${proofScore(q, ans)} ${q.lang === 'en' ? 'of' : 'de'} ${q.errors.length}</span>` : `<span class="yours">· você: ${esc(ans)}</span>`;
     return `<div class="key ${cls}"><b>${i + 1}.</b><div>${answerTxt} ${yours}</div></div>`;
   }).join('');
-  const m = openModal(`<div class="modal-head"><h3>🔑 Gabarito</h3><button class="btn small" data-close>Fechar</button></div>
+  const m = openModal(`<div class="modal-head"><h3>🔑 Gabarito${th && th.idxs ? ` · ${esc((SUBJ[th.id] || {}).short || th.id)}` : ''}</h3><button class="btn small" data-close>Fechar</button></div>
     <div class="modal-body fit"><div class="key-grid" id="key-grid">${items}</div></div>
     <div class="modal-foot"><span class="muted tiny grow">[Resposta Livre] = resposta com suas palavras. A Lumi corrige e os pais podem conferir.</span></div>`, { wide: true });
   m.style.height = 'calc(100dvh - 24px)';
@@ -3117,8 +3208,10 @@ async function finishWork(c) {
     say(`Faltam <b>${missing}</b> pergunta${missing > 1 ? 's' : ''}. Toque no 💡 se precisar de ajuda!`, { mood: 'think' });
     const first = c.questions.find(q => !answered(q, c.answers[q.id]));
     const fi = c.questions.indexOf(first);
-    const pi = (VIEW.curPages || []).findIndex(p => p.includes(fi));
-    if (pi >= 0 && VIEW.wp && pi !== VIEW.wp.page) { VIEW.wp.page = pi; renderWork(); }
+    const th = VIEW.wp && VIEW.wp.theme !== 'all' ? workThemes(c).find(t => t.idxs.includes(fi)) : null;
+    if (th) { VIEW.wp.theme = th.id; VIEW.wp.page = workPages(c, th.idxs).findIndex(p => p.includes(fi)); renderWork(); }
+    else { const pi = (VIEW.curPages || []).findIndex(p => p.includes(fi));
+      if (pi >= 0 && VIEW.wp && pi !== VIEW.wp.page) { VIEW.wp.page = pi; renderWork(); } }
     const card = first && $(`.q[data-qid="${first.id}"]`);
     if (card) { card.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.03)' }, { transform: 'scale(1)' }], { duration: 400 }); const i = $('[data-in]', card); if (i) i.focus(); }
     return;

@@ -73,9 +73,13 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
    - **📖 Leitura diária:** cada dia começa com um capítulo do **livro da semana**, escrito pela Lumi.
      - Os capítulos alternam entre um livro em português e outro em inglês, e a história continua de um dia para o outro.
      - Depois do capítulo: um **resumo** e 2 perguntas de compreensão.
-     - O botão **🔊** lê o capítulo em voz alta, e **🖨️ Imprimir só o texto** imprime só a leitura.
-   - **Na tela:** a tarefa é dividida em **partes** (1, 2, 3…) que cabem na tela sem rolar; as bolinhas ficam verdes quando a parte está completa.
-   - **🖨️ Imprimir:** o texto numa folha própria e as perguntas em quantas folhas A4 forem precisas, com gabarito opcional para os pais.
+     - O botão **🔊** lê o capítulo em voz alta, e **🖨️ Imprimir** (no topo do texto) imprime só a leitura em A4.
+   - **🗂️ Temas do dia:** ao abrir o dia aparece um cartão por tema (📖 leitura primeiro, depois cada matéria), com o assunto da semana, quantas perguntas tem e o progresso (✅ quando termina).
+     - **▶ Começar / Continuar** segue a sequência. Ela também pode tocar no tema que quiser fazer agora.
+     - Dentro do tema aparecem só as perguntas dele, numeradas 1, 2, 3…; no fim, **Próximo tema ▸** leva ao próximo que falta. Depois do último, **✔ Concluir**.
+     - Se tentar concluir com algo faltando, a Lumi abre o tema e a pergunta que faltam.
+   - **Na tela:** cada tema é dividido em **partes** (1, 2, 3…) que cabem na tela sem rolar; as bolinhas ficam verdes quando a parte está completa.
+   - **🖨️ Imprimir (A4):** em toda tarefa (dia, recuperação, extras, reforço e Livro extra) e na aulinha. O texto vem numa folha própria e continua na folha seguinte se for longo. As perguntas ocupam quantas folhas forem precisas, com gabarito opcional para os pais.
 3. **Ajuda em cada pergunta:**
    - **💡** dá uma dica. Com **"Me explica mais"**, o Claude dá uma explicação nova, sem entregar a resposta.
    - **? Aulinha:** explicação em partes, exemplos e um macete, lida em voz alta pela Lumi. Depois, **"Vamos treinar"**: 3–4 exercícios na hora, com correção.
