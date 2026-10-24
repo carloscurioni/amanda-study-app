@@ -590,3 +590,24 @@ body.theme-moon .home-hello, body.theme-moon .screen-title, body.theme-aurora .h
 .q.wide.collapsed .q-top { flex: 0 0 auto; }
 .q.wide.collapsed .proof-wrap { flex: 1; min-width: 0; }
 .q.wide.collapsed .proof-open { font-size: .95em; padding: .35em .6em; }
+
+/* Escolher matérias */
+.pick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); gap: 6px; margin: 4px 0 10px; }
+.pick { display: flex; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 12px; border: 2px solid var(--line, #e3e3ee); cursor: pointer; font-size: .92rem; background: var(--card, #fff); }
+.pick input { accent-color: var(--subj); width: 18px; height: 18px; flex: none; margin: 0; }
+.pick.on { border-color: var(--subj); background: color-mix(in srgb, var(--subj) 10%, var(--card, #fff)); }
+.pick i { margin-left: auto; font-style: normal; }
+
+/* Recuperação de dias atrasados (vale metade) */
+.recovery { border: 2px dashed #f08c00; background: #fff8ec; }
+.recovery .rec-pot { font-weight: 900; color: #b35c00; }
+.rec-days { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.rec-days .day-chip { flex: 0 0 auto; min-width: 72px; }
+body.theme-space .recovery { background: #2b1f5e; }
+body.theme-space .recovery .rec-pot { color: #ffd08a; }
+.pick .grow { flex: 1; min-width: 0; }
+.hlsl { display: inline-flex; border: 1.5px solid var(--line); border-radius: 8px; overflow: hidden; flex: none; }
+.hlsl button { border: 0; background: transparent; font: inherit; font-size: 11px; font-weight: 800; padding: 3px 6px; cursor: pointer; color: var(--muted); }
+.hlsl button.on { background: var(--subj); color: #fff; }
+.rec-head { display: flex; align-items: baseline; gap: 8px; }
+.rec-head b { flex: 1; min-width: 0; }

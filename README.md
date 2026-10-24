@@ -43,7 +43,19 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
 
 ## 1. Como a Amanda usa
 
-1. **📝 Minha semana:** ela escolhe o **ano escolar** (Year 1–9, com o equivalente brasileiro). Depois abre a seção de cada matéria e escreve do jeito dela, ou fala pelo microfone do teclado. Por exemplo, em BSS: *"estamos aprendendo sobre as bacias hidrográficas"*.
+1. **📝 Minha semana:** o estudante escolhe o **ano escolar** e o app mostra as matérias da etapa. Depois abre a seção de cada matéria e escreve do jeito dele, ou fala pelo microfone do teclado. Por exemplo, em BSS: *"estamos aprendendo sobre as bacias hidrográficas"*.
+
+   | Ano | Brasil | Etapa | Matérias sugeridas |
+   |---|---|---|---|
+   | Year 1–6 | Infantil 5 a 5º ano | Primary (KS1–KS2) | Português, Ortografia, Leitura, BSS, English, Reading, Spelling, Guided Reading, IPC, Math |
+   | Year 7–9 | 6º a 8º ano | Key Stage 3 | Português, Leitura, BSS, English, Reading, Math, Science, History, Geography |
+   | Year 10–11 | 9º ano e 1ª série EM | IGCSE | Português, Literatura, BSS, English, English Literature, Math, Biology, Chemistry, Physics, History, Geography |
+   | Year 12–13 | 2ª e 3ª série EM | **IB Diploma** (DP1 e DP2) | Português A, English A, Math, Biology, Chemistry, Economics, Theory of Knowledge |
+
+   - **📚 Escolher matérias:** cada estudante marca as que faz. Também estão disponíveis Redação, Additional/Further Maths, Computer Science, Business, Psychology, Spanish e French. No IB, ele marca também **HL** ou **SL** em cada matéria, e a Lumi ajusta a profundidade.
+   - O Claude segue o estilo da etapa: *command words* do IGCSE, *command terms* e Papers do IB, BNCC no português.
+   - **Additional Maths** (Cambridge 0606 / Edexcel Further Pure) está coberta: logaritmos, surds, completar o quadrado, raízes α e β, funções inversas e compostas. Respostas algébricas são aceitas com espaços e símbolos diferentes (`x<-1 or x>4` = `x > 4, x < −1`).
+   - Erros de digitação óbvios nos tópicos são corrigidos (ex.: *"surfs"* → *surds*).
    - **Ortografia/Spelling:** 📝 lista de palavras, 🎯 tema (ex.: *silent letters*) ou 🎲 a Lumi escolhe as palavras.
      Todo dia com Ortografia ou Spelling tem um **🔎 Caça-erros**: um parágrafo curto com 4–5 palavras escritas errado.
      - **Na tela:** a criança toca na palavra, corrige ali mesmo e acompanha o contador ("2 de 5 marcadas"). Ao concluir, cada palavra aparece em verde (corrigida), vermelho (faltou, com a forma certa) ou laranja (estava certa).
@@ -61,7 +73,7 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
    - **Na tela:** as objetivas são corrigidas na hora, e as **livres são corrigidas pela Lumi** com um comentário.
    - **No papel:** em **📄 Corrigir folha**, ela tira uma foto e o Claude lê a letra dela e corrige tudo (livres inclusive). Ou ela corrige sozinha com o gabarito, marcando ✓/✗.
    - Os pais veem todas as livres com o comentário da Lumi e podem confirmar ou mudar.
-5. **Sexta** é o dia de entregar a semana. **⭐ Extras** dão moedas a mais. Ela escolhe a matéria: Math, English, Português, IPC, BSS ou misturado. Math e English estão sempre disponíveis; sem assunto na semana, viram revisão do ano. As moedas compram itens na **🛒 Lojinha**.
+5. **Sexta** é o dia de entregar a semana. **⭐ Extras** dão moedas a mais. A matéria é escolhida entre as do próprio estudante (ou misturado). Sem assunto na semana, viram revisão do ano. As moedas compram itens na **🛒 Lojinha**.
 
 ## 2. Moedas e lojinha
 
@@ -69,6 +81,7 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
 |---|---|
 | Semana entregue (todos os dias feitos, até sexta) | **+100** |
 | Semana não entregue | **−150** (maior que a recompensa) |
+| ⏳ Recuperação: dias que faltaram, feitos até a sexta seguinte | **metade da recompensa** (+50 se recuperar todos, dividido entre os dias) |
 | Exercícios extras | **+2 por acerto** (rodadas de 5, até 3 rodadas pagas por dia) |
 
 Lojinha (**135 itens**, do mais barato ao mais caro em cada categoria):
@@ -80,6 +93,11 @@ Lojinha (**135 itens**, do mais barato ao mais caro em cada categoria):
 - 🖼️ 13 fundos para o app e ⭐ 45 adesivos para o álbum.
 - 🎟️ Vales de prêmios reais, editáveis pelos pais.
 - Os itens a partir de 1.000 moedas aparecem como **✨ SONHO** (até 3.000).
+
+**⏳ Recuperação:** quando a semana fecha sem entrega, a penalidade é aplicada. Os dias que faltaram continuam abertos, num cartão na tela inicial, até a sexta seguinte.
+- Cada dia recuperado vale uma parte de **metade da recompensa**. Exemplo: faltaram 6 dias → cerca de +8 por dia, +50 ao recuperar todos.
+- A porcentagem é ajustável nos Ajustes dos pais (0 desliga a recuperação).
+- Os dias recuperados aparecem como "⏳ recuperada" no resumo dos pais.
 
 **🔥 Sequência:** fazer a tarefa no próprio dia, vários dias seguidos, mostra a chama na tela inicial. A cada 5 dias seguidos, ganha **+15 moedas**.
 

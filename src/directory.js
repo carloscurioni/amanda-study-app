@@ -39,7 +39,7 @@ function sameString(a, b) {
 }
 const cleanEmail = e => String(e || '').trim().toLowerCase();
 const cleanText = (s, max = 60) => String(s || '').replace(/[<>]/g, '').trim().slice(0, max);
-const YEARS = ['Y1', 'Y2', 'Y3', 'Y4', 'Y5', 'Y6', 'Y7', 'Y8', 'Y9'];
+const YEARS = ['Y1', 'Y2', 'Y3', 'Y4', 'Y5', 'Y6', 'Y7', 'Y8', 'Y9', 'Y10', 'Y11', 'Y12', 'Y13'];
 const AVATARS = ['🦉', '🦊', '🐼', '🐱', '🐶', '🦄', '🐸', '🐧', '🐯', '🐰', '🐨', '🐙'];
 function checkPassword(p) {
   if (String(p || '').length < 8) throw new AppError(400, 'A senha precisa ter pelo menos 8 caracteres.');

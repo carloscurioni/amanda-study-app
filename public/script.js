@@ -30,6 +30,7 @@ const DEFAULT_SETTINGS = {
   pin: '1234',
   reward: 100,            // recompensa base: semana completa entregue na sexta
   penalty: 150,           // penalidade: semana não entregue (sempre MAIOR que a recompensa)
+  latePct: 50,            // recuperação: dias não feitos podem ser feitos até a sexta seguinte, valendo esta % da recompensa
   extraPerCorrect: 2,     // moedas por acerto nos exercícios extras
   extraSetSize: 5,        // perguntas por rodada de extras
   extraSetsPerDay: 3,     // rodadas de extras com moedas por dia
@@ -62,6 +63,41 @@ const SUBJECTS = [
     ph: 'Unit: Solar System, Ancient Egypt, plants… (or "question = answer")', help: 'unit' },
   { id: 'math',      lang: 'en', group: 'en', icon: '➗', short: 'Math',        name: 'Math',                   color: '#c92a2a', kind: 'math',
     ph: 'e.g. fractions, times tables, place value, perimeter, rounding', help: 'topics' },
+  // ---- Ensino fundamental II / médio (Key Stage 3, IGCSE e IB Diploma) ----
+  { id: 'pt_lit',    lang: 'pt', group: 'pt', icon: '📜', short: 'Literatura',  name: 'Português – Literatura',  color: '#9c36b5', kind: 'reading',
+    ph: 'Ex.: Modernismo; estamos lendo Dom Casmurro, capítulos 10–20', help: 'tema / obra' },
+  { id: 'pt_red',    lang: 'pt', group: 'pt', icon: '🖋️', short: 'Redação',     name: 'Português – Redação',     color: '#c2255c', kind: 'social',
+    ph: 'Ex.: texto dissertativo-argumentativo; conectivos; proposta de intervenção', help: 'tema' },
+  { id: 'en_lit',    lang: 'en', group: 'en', icon: '🎭', short: 'Eng Lit',     name: 'English Literature',     color: '#7048e8', kind: 'reading',
+    ph: 'e.g. Macbeth, Act 1; An Inspector Calls; war poetry', help: 'text / theme' },
+  { id: 'sci',       lang: 'en', group: 'en', icon: '🔬', short: 'Science',     name: 'Science',                color: '#0ca678', kind: 'social',
+    ph: 'e.g. cells and organisation; forces and motion; acids and alkalis', help: 'topics' },
+  { id: 'bio',       lang: 'en', group: 'en', icon: '🧬', short: 'Biology',     name: 'Biology',                color: '#2f9e44', kind: 'social',
+    ph: 'e.g. photosynthesis; enzymes; inheritance and DNA', help: 'topics' },
+  { id: 'chem',      lang: 'en', group: 'en', icon: '⚗️', short: 'Chemistry',   name: 'Chemistry',              color: '#1098ad', kind: 'social',
+    ph: 'e.g. atomic structure; bonding; rates of reaction; moles', help: 'topics' },
+  { id: 'phys',      lang: 'en', group: 'en', icon: '🧲', short: 'Physics',     name: 'Physics',                color: '#4263eb', kind: 'social',
+    ph: 'e.g. energy; electricity; waves; Newton\'s laws', help: 'topics' },
+  { id: 'hist',      lang: 'en', group: 'en', icon: '🏛️', short: 'History',     name: 'History',                color: '#a06c00', kind: 'social',
+    ph: 'e.g. the Tudors; causes of World War I; the Cold War', help: 'topics' },
+  { id: 'geog',      lang: 'en', group: 'en', icon: '🗺️', short: 'Geography',   name: 'Geography',              color: '#5c940d', kind: 'social',
+    ph: 'e.g. rivers and coasts; urbanisation; climate change', help: 'topics' },
+  { id: 'comp',      lang: 'en', group: 'en', icon: '💻', short: 'Computing',   name: 'Computer Science',       color: '#495057', kind: 'social',
+    ph: 'e.g. binary; algorithms; Python loops; networks', help: 'topics' },
+  { id: 'econ',      lang: 'en', group: 'en', icon: '📈', short: 'Economics',   name: 'Economics',              color: '#2b8a3e', kind: 'social',
+    ph: 'e.g. supply and demand; elasticity; inflation; market failure', help: 'topics' },
+  { id: 'bus',       lang: 'en', group: 'en', icon: '💼', short: 'Business',    name: 'Business',               color: '#e67700', kind: 'social',
+    ph: 'e.g. marketing mix; cash flow; motivation theories', help: 'topics' },
+  { id: 'psych',     lang: 'en', group: 'en', icon: '🧠', short: 'Psychology',  name: 'Psychology',             color: '#ae3ec9', kind: 'social',
+    ph: 'e.g. memory models; social influence; research methods', help: 'topics' },
+  { id: 'fmath',     lang: 'en', group: 'en', icon: '∑', short: 'Add Maths', name: 'Additional / Further Maths', color: '#a61e4d', kind: 'math',
+    ph: 'e.g. logarithms; surds; completing the square; roots α and β; functions and inverses', help: 'topics' },
+  { id: 'spa',       lang: 'en', group: 'en', icon: '🇪🇸', short: 'Spanish',     name: 'Spanish',                color: '#f03e3e', kind: 'social',
+    ph: 'e.g. preterite vs imperfect; vocabulary: holidays', help: 'topics' },
+  { id: 'fre',       lang: 'en', group: 'en', icon: '🇫🇷', short: 'French',      name: 'French',                 color: '#3b5bdb', kind: 'social',
+    ph: 'e.g. passé composé; vocabulary: school and family', help: 'topics' },
+  { id: 'tok',       lang: 'en', group: 'en', icon: '🤔', short: 'TOK',         name: 'Theory of Knowledge (IB)', color: '#5f3dc4', kind: 'social',
+    ph: 'e.g. knowledge and technology; AOK: the natural sciences; knowledge questions', help: 'themes / AOK' },
 ];
 const SUBJ = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
 // Anos escolares (currículo britânico) com equivalente brasileiro e idade.
@@ -69,7 +105,27 @@ const SCHOOL_YEARS = [
   ['Y1', 'Year 1', 'Infantil 5', '5–6'], ['Y2', 'Year 2', '1º ano', '6–7'], ['Y3', 'Year 3', '2º ano', '7–8'],
   ['Y4', 'Year 4', '3º ano', '8–9'], ['Y5', 'Year 5', '4º ano', '9–10'], ['Y6', 'Year 6', '5º ano', '10–11'],
   ['Y7', 'Year 7', '6º ano', '11–12'], ['Y8', 'Year 8', '7º ano', '12–13'], ['Y9', 'Year 9', '8º ano', '13–14'],
+  ['Y10', 'Year 10 (IGCSE)', '9º ano', '14–15'], ['Y11', 'Year 11 (IGCSE)', '1ª série EM', '15–16'],
+  ['Y12', 'Year 12 (IB DP1)', '2ª série EM', '16–17'], ['Y13', 'Year 13 (IB DP2)', '3ª série EM', '17–18'],
 ];
+// Etapas do currículo britânico e as matérias sugeridas em cada uma (cada estudante pode mudar).
+function stageOf(year) {
+  const n = Number(String(year || 'Y5').slice(1)) || 5;
+  return n <= 6 ? 'primary' : n <= 9 ? 'ks3' : n <= 11 ? 'igcse' : 'ib';
+}
+const STAGE_LABEL = { primary: 'Primary (KS1–KS2)', ks3: 'Key Stage 3', igcse: 'IGCSE (KS4)', ib: 'IB Diploma Programme' };
+const STAGE_SUBJECTS = {
+  primary: ['pt', 'pt_ort', 'pt_leit', 'bss', 'en', 'en_read', 'en_spell', 'en_guided', 'ipc', 'math'],
+  ks3: ['pt', 'pt_leit', 'bss', 'en', 'en_read', 'math', 'sci', 'hist', 'geog'],
+  igcse: ['pt', 'pt_lit', 'bss', 'en', 'en_lit', 'math', 'bio', 'chem', 'phys', 'hist', 'geog'],
+  ib: ['pt_lit', 'en_lit', 'math', 'bio', 'chem', 'econ', 'tok'],
+};
+// Matérias deste estudante: as escolhidas por ele, ou as sugeridas para a etapa do ano escolar.
+function mySubjects() {
+  const st = S.settings || {};
+  const list = st.subjectsCustom && Array.isArray(st.subjects) && st.subjects.length ? st.subjects : STAGE_SUBJECTS[stageOf(st.year)];
+  return SUBJECTS.map(x => x.id).filter(id => list.includes(id));
+}
 function yearLabel(id) {
   const y = SCHOOL_YEARS.find(x => x[0] === id);
   return y ? `${y[1]} do currículo britânico (≈ ${y[2]} no Brasil, ${y[3]} anos)` : '';
@@ -203,7 +259,17 @@ function isCorrect(q, ans) {
   if (ans == null || String(ans).trim() === '') return false;
   const list = [q.answer, ...(q.accept || [])];
   if (q.type === 'num') return list.some(a => numEq(ans, a));
+  if (SUBJ[q.subject] && SUBJ[q.subject].kind === 'math' && list.some(a => mathCanon(a) === mathCanon(ans))) return true;
   return list.some(a => norm(a, q.strict) === norm(ans, q.strict));
+}
+// Respostas algébricas (Add Maths, IB): ignora espaços e variações de símbolos. Ex.: "x<-1 or x>4" = "x < −1 ou x > 4".
+function mathCanon(s) {
+  return String(s ?? '').toLowerCase()
+    .replace(/\s+(or|ou|and|e)\s+/g, '|').replace(/[,;]/g, '|')
+    .replace(/[−–—]/g, '-').replace(/[×·]/g, '*').replace(/÷/g, '/').replace(/⁻¹/g, '^-1').replace(/²/g, '^2').replace(/³/g, '^3')
+    .replace(/√/g, 'sqrt').replace(/≤/g, '<=').replace(/≥/g, '>=').replace(/α/g, 'alpha').replace(/β/g, 'beta')
+    .replace(/\s+/g, '').replace(/[.]$/, '').split('|').filter(Boolean)
+    .map((x, _, all) => all.length === 1 ? x.replace(/^[a-z]=(?=-?[\d(s])/, '') : x).sort().join('|');
 }
 function answered(q, ans) {
   if (q && q.type === 'proof') return Object.keys(proofAns(ans)).length > 0;
@@ -284,7 +350,7 @@ function rememberChild(id) { try { if (id) localStorage.setItem(CHILD_KEY, id); 
 function currentChild() { return Server.me && Server.me.children.find(c => c.id === Server.childId); }
 
 async function apiCall(path, { method = 'GET', data, timeout = 30000 } = {}) {
-  if (AI_ROUTES[path]) { path = '/api/ai/' + AI_ROUTES[path]; data = Object.assign({}, data, { childId: Server.childId }); }
+  if (AI_ROUTES[path]) { path = '/api/ai/' + AI_ROUTES[path]; data = Object.assign({ mine: mySubjects(), levels: stageOf(S.settings.year) === 'ib' ? (S.settings.ibLevels || {}) : {} }, data, { childId: Server.childId }); }
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeout);
   try {
@@ -792,6 +858,7 @@ function tipsFor(screen) {
       'Sábado e domingo têm um pouquinho mais de perguntas. ⭐',
       `Sexta é dia de entregar: semana completa vale <b>+${st.reward}</b> moedas! 🪙`,
       `Se a semana não for entregue até sexta, a gente perde <b>${st.penalty}</b> moedas. Vamos caprichar! 💪`,
+      `Perdeu algum dia? Dá para <b>recuperar</b> até a sexta seguinte, valendo metade. ⏳`,
       `Terminou? Os exercícios extras dão <b>${st.extraPerCorrect}</b> moedas por acerto.`,
       'Escreva o que aprendeu na escola em <b>Minha semana</b> para eu criar as tarefas.',
     ],
@@ -828,7 +895,7 @@ function runTour() {
     'Eu sou uma <b>inteligência artificial</b> (um programa de computador, feito com o Claude), não uma pessoa. Às vezes posso errar: se algo parecer estranho, mostre para um adulto. 💜',
     'Toda semana você escreve em <b>📝 Minha semana</b> o que está aprendendo na escola. Eu transformo isso em tarefas.',
     'Cada dia tem uma tarefa curtinha. <b>Sábado e domingo</b> têm um pouquinho mais.',
-    `<b>Sexta-feira é dia de entrega!</b> Semana completa: <b>+${st.reward}</b> 🪙. Semana não entregue: <b>−${st.penalty}</b> 🪙.`,
+    `<b>Sexta-feira é dia de entrega!</b> Semana completa: <b>+${st.reward}</b> 🪙. Semana não entregue: <b>−${st.penalty}</b> 🪙 — mas os dias que faltaram ainda podem ser <b>recuperados</b> até a sexta seguinte, valendo metade. ⏳`,
     `Quer mais moedas? Faça os <b>⭐ Exercícios extras</b>: ${st.extraPerCorrect} moedas por acerto.`,
     'Gaste as moedas na <b>🛒 Lojinha</b>: roupinhas para mim, fundos e adesivos!',
     'Travou numa pergunta? Toque no <b>💡</b> ou em mim que eu ajudo. Vamos lá?',
@@ -1353,8 +1420,8 @@ function validateImported(data) {
   return { ok, errs };
 }
 function claudePrompt(topics) {
-  const lines = SUBJECTS.map(s => `- ${s.id} (${s.name}, ${s.lang === 'pt' ? 'em português' : 'in English'}): ${(topics[s.id] || '').trim().replace(/\n/g, ' / ') || '(sem tópico esta semana)'}`).join('\n');
-  return `Você gera exercícios para uma aluna de escola internacional (currículo britânico/IPC + matérias brasileiras), por volta de 10 anos.
+  const lines = mySubjects().map(id => SUBJ[id]).map(s => `- ${s.id} (${s.name}, ${s.lang === 'pt' ? 'em português' : 'in English'}): ${(topics[s.id] || '').trim().replace(/\n/g, ' / ') || '(sem tópico esta semana)'}`).join('\n');
+  return `Você gera exercícios para um estudante de escola internacional (currículo britânico + matérias brasileiras), ${S.settings.year ? yearLabel(S.settings.year) : 'por volta de 10 anos'}.
 Use os tópicos abaixo (e o "Study Worksheet" da escola, se eu colar no final) para criar perguntas CURTAS e SIMPLES.
 Regra: prefira muitas perguntas fáceis a poucas difíceis. Gere cerca de 6 perguntas por matéria que tenha tópico.
 Matérias em português: perguntas em português. Matérias em inglês: perguntas em inglês.
@@ -1368,7 +1435,7 @@ Responda APENAS com JSON válido, sem comentários, neste formato:
 ]}
 
 Campos:
-- subject: pt, pt_ort, pt_leit, bss, en, en_read, en_spell, en_guided, ipc, math
+- subject: ${mySubjects().join(', ')}
 - type: mc (múltipla escolha: "options" com 3–4 itens e "answer" igual a uma delas), short (resposta curta exata), num (resposta numérica), listen (ditado: "say" = palavra), open (resposta livre, "answer" vazio — os pais corrigem)
 - hint: uma dica curta, sem entregar a resposta
 - day (opcional): sab, dom, seg, ter, qua, qui, sex
@@ -1455,9 +1522,28 @@ function dayState(day) {
 function weekAllDone(w) { return Object.values(w.days).filter(d => d.required).every(d => d.status === 'done'); }
 function requiredDays(w) { return Object.values(w.days).filter(d => d.required); }
 
+// Recuperação: os dias que faltaram numa semana não entregue ficam abertos até a sexta seguinte.
+// Recuperar todos vale metade da recompensa da semana (S.settings.latePct), dividida entre os dias.
+function latePct() { const v = Number(S.settings.latePct); return Number.isFinite(v) ? clamp(v, 0, 100) : 50; }
+function openRecovery(w) {
+  const left = requiredDays(w).filter(d => d.status !== 'done' && d.questions.length);
+  if (!left.length) return null;
+  const pass = w.passages || [];
+  S.recovery = { start: w.start, end: w.end, until: addDays(w.end, 7), pot: Math.round(S.settings.reward * latePct() / 100), total: left.length, n: 0, earned: 0,
+    topicsText: weekTopicsText(w),
+    days: Object.fromEntries(left.map(d => [d.date, Object.assign(JSON.parse(JSON.stringify(d)), { rec: true, printed: false, recPassages: pass.filter(x => x.day === d.dow) })])) };
+  return S.recovery;
+}
+function recoveryActive() {
+  const r = S.recovery;
+  return r && today() <= r.until && Object.values(r.days).some(d => d.status !== 'done') ? r : null;
+}
+function recoveryLeftCoins(r) { return r.pot - r.earned; }
 // Liquidação: roda ao abrir o app. Depois da sexta, recompensa ou penalidade.
 function settleIfNeeded() {
   const w = S.week;
+  // semanas fechadas antes desta função existir também ganham a recuperação
+  if (w && w.settled === 'missed' && (!S.recovery || S.recovery.start !== w.start) && today() <= addDays(w.end, 7)) { openRecovery(w); save(); }
   if (!w || w.settled) return null;
   if (today() <= w.end) return null;
   const done = requiredDays(w).filter(d => d.status === 'done').length;
@@ -1470,7 +1556,9 @@ function settleIfNeeded() {
   }
   w.settled = 'missed'; w.settledAt = today();
   addCoins(-S.settings.penalty, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} não entregue (${done}/${total} dias)`);
-  return { type: 'bad', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} não foi entregue (${done} de ${total} dias). <b>−${S.settings.penalty}</b> 🪙. Bora recuperar nesta semana!` };
+  const r = latePct() > 0 ? openRecovery(w) : null; save();
+  return { type: 'bad', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} não foi entregue (${done} de ${total} dias). <b>−${S.settings.penalty}</b> 🪙.`
+    + (r ? ` Mas dá para <b>recuperar</b>: faça ${r.total === 1 ? 'o dia que faltou' : `os ${r.total} dias que faltaram`} até sexta ${fmtDM(r.until)} e ganhe metade da recompensa (<b>+${r.pot}</b> 🪙). ⏳` : ' Bora recuperar nesta semana!') };
 }
 function deliverWeek() {
   const w = S.week;
@@ -1569,7 +1657,7 @@ function renderHome() {
   if (!w || (w.settled && w.end < t)) {
     body = `<div class="card span2"><h3 style="margin:0 0 6px">📝 Nova semana</h3>
       <p class="muted" style="margin:0 0 10px">Escreva o que você está aprendendo na escola e eu crio as tarefas de sábado a sexta.</p>
-      <button class="btn primary big wide" data-act="setup">Planejar minha semana ✨</button></div>`;
+      <button class="btn primary big wide" data-act="setup">Planejar minha semana ✨</button></div>${recoveryHtml()}`;
   } else {
     const days = CYCLE.map((_, i) => w.days[addDays(w.start, i)]);
     const strip = days.map(d => {
@@ -1594,7 +1682,7 @@ function renderHome() {
 
     const ex = S.extras[t] || { sets: 0 };
     const left = Math.max(0, S.settings.extraSetsPerDay - ex.sets);
-    const sum = (w.summary || []).length ? `<div class="card span2 week-sum"><b>Esta semana</b>${w.summary.map(x => `<span>${SUBJ[x.subject] ? SUBJ[x.subject].icon : '•'} ${esc(x.summary)}</span>`).join('')}</div>` : '';
+    const sum = recoveryHtml() + ((w.summary || []).length ? `<div class="card span2 week-sum"><b>Esta semana</b>${w.summary.map(x => `<span>${SUBJ[x.subject] ? SUBJ[x.subject].icon : '•'} ${esc(x.summary)}</span>`).join('')}</div>` : '');
     body = `<div class="card span2"><div class="week-strip">${strip}</div></div>${sum}
       <div class="card actions">${main}</div>
       <div class="card actions">
@@ -1608,6 +1696,7 @@ function renderHome() {
   el.innerHTML = `<div class="home">${hero}${noticeHtml}${body}${shelf}</div>`;
 
   $$('[data-day]', el).forEach(b => b.onclick = () => openDay(b.dataset.day));
+  $$('[data-rec]', el).forEach(b => b.onclick = () => { VIEW.work = { kind: 'day', date: b.dataset.rec, rec: true }; show('work'); });
   $$('[data-check]', el).forEach(b => b.onclick = () => openCheck(b.dataset.check));
   $$('[data-act]', el).forEach(b => b.onclick = () => {
     const a = b.dataset.act;
@@ -1619,6 +1708,17 @@ function renderHome() {
     else if (a === 'switch') switchProfile();
   });
   if (notice) say(notice.msg, { mood: notice.type === 'bad' ? 'sad' : 'wow' });
+}
+function recoveryHtml() {
+  const r = recoveryActive(); if (!r) return '';
+  const days = Object.values(r.days).sort((a, b) => a.date < b.date ? -1 : 1);
+  const left = days.filter(d => d.status !== 'done').length;
+  const per = Math.round(r.pot / r.total);
+  return `<div class="card span2 recovery"><div class="rec-head"><b>⏳ Recuperação · semana ${fmtDM(r.start)}–${fmtDM(r.end)}</b><span class="rec-pot">+${recoveryLeftCoins(r)} 🪙</span></div>
+      <div class="tiny muted">Vale metade · até sexta ${fmtDM(r.until)} · ${left} de ${r.total} dia${r.total > 1 ? 's' : ''} para fazer</div>
+    <div class="rec-days">${days.map(d => d.status === 'done'
+      ? `<button class="day-chip done" data-rec="${d.date}"><span class="d">${DOW_LABEL[d.dow]}</span><span class="dt">${fmtDM(d.date)}</span><span class="st">✅</span></button>`
+      : `<button class="day-chip late" data-rec="${d.date}"><span class="d">${DOW_LABEL[d.dow]}</span><span class="dt">${fmtDM(d.date)}</span><span class="st">⏰</span><span class="n">≈ +${per} 🪙</span></button>`).join('')}</div></div>`;
 }
 function deadlineText(w) {
   const t = today();
@@ -1635,24 +1735,38 @@ function openDay(date) {
   const st = dayState(d);
   if (st === 'off') { say('Esse dia não tem tarefa nesta semana. 😉'); return; }
   if (st === 'locked') { say(`Calma! A tarefa de ${DOW_FULL[d.dow].toLowerCase()} abre no dia ${fmtDM(d.date)}. 🔒`); return; }
+  if (w.settled && st === 'late') {
+    const r = recoveryActive();
+    if (r && r.start === w.start && r.days[date]) { VIEW.work = { kind: 'day', date, rec: true }; show('work'); return; }
+    say('Essa semana já fechou e o prazo de recuperação acabou. Bora caprichar na próxima! 💪'); return;
+  }
   VIEW.work = { kind: 'day', date };
   show('work');
 }
-// Extras: a aluna escolhe a matéria. Math e English sempre disponíveis (sem assunto na semana = revisão do ano).
-const EXTRA_GROUPS = [
-  { id: 'mix', label: '🎲 Misturado', subjects: null },
-  { id: 'math', label: '➗ Math', subjects: ['math'] },
-  { id: 'en', label: '🔤 English', subjects: ['en', 'en_spell', 'en_read', 'en_guided'] },
-  { id: 'pt', label: '📝 Português', subjects: ['pt', 'pt_ort', 'pt_leit'] },
-  { id: 'ipc', label: '🌍 IPC', subjects: ['ipc'] },
-  { id: 'bss', label: '🇧🇷 BSS', subjects: ['bss'] },
-];
+// Extras: o estudante escolhe a matéria, entre as que ele faz. Math e English sempre aparecem se fizerem parte.
+function extraGroups() {
+  const mine = mySubjects();
+  const has = id => mine.includes(id);
+  const g = [{ id: 'mix', label: '🎲 Misturado', subjects: null }];
+  const used = new Set();
+  const add = (id, label, list) => { const subs = list.filter(has); if (subs.length) { g.push({ id, label, subjects: subs }); subs.forEach(x => used.add(x)); } };
+  add('math', '➗ Math', ['math', 'fmath']);
+  add('en', '🔤 English', ['en', 'en_spell', 'en_read', 'en_guided', 'en_lit']);
+  add('pt', '📝 Português', ['pt', 'pt_ort', 'pt_leit', 'pt_lit', 'pt_red']);
+  mine.filter(id => !used.has(id)).forEach(id => g.push({ id, label: `${SUBJ[id].icon} ${SUBJ[id].short}`, subjects: [id] }));
+  return g;
+}
 // Assuntos de revisão quando a matéria não tem tópico na semana (gerador interno).
 const EXTRA_DEFAULTS = {
   math: 'mixed', en: 'review', pt: 'revisão',
   en_spell: 'ancient, curiosity, determined, environment, familiar, guarantee, rhythm, sincere',
   pt_ort: 'exceção, cachorro, chuveiro, açúcar, girassol, enxergar, passeio, assobio',
   ipc: 'solar system, plants, water cycle, continents', bss: 'regiões e capitais do Brasil, biomas, história do Brasil',
+  sci: 'cells, forces, states of matter, energy', bio: 'cells, photosynthesis, enzymes, the heart', chem: 'atoms, the periodic table, acids and alkalis',
+  phys: 'forces, energy, electricity, waves', hist: 'the Tudors, World War I, World War II, the Cold War', geog: 'rivers, coasts, plate tectonics, climate',
+  comp: 'binary, algorithms, networks', econ: 'supply and demand, inflation, market failure', bus: 'marketing mix, cash flow, stakeholders',
+  psych: 'memory, social influence, research methods', fmath: 'complex numbers, matrices', spa: 'vocabulario: la familia, el colegio', fre: 'vocabulaire : la famille, l\'école',
+  pt_lit: 'Romantismo, Realismo, Modernismo', pt_red: 'texto dissertativo-argumentativo, conectivos', en_lit: 'poetry, drama, prose',
 };
 function openExtras() {
   const t = today();
@@ -1661,8 +1775,8 @@ function openExtras() {
   const left = Math.max(0, S.settings.extraSetsPerDay - ex.sets);
   const c = openModal(`<div class="modal-head"><h3>⭐ Exercícios extras</h3><button class="btn small" data-close>Fechar</button></div>
     <div class="modal-body"><p class="tiny muted" style="margin:0 0 8px">${left ? `Valem <b>${S.settings.extraPerCorrect} 🪙 por acerto</b> · ${left} rodada${left > 1 ? 's' : ''} com moedas hoje.` : 'As rodadas com moedas de hoje acabaram: agora é só treino. 💪'}<br>Qual matéria você quer treinar?</p>
-    <div class="extra-grid">${EXTRA_GROUPS.map(g => `<button class="btn big" data-g="${g.id}">${g.label}</button>`).join('')}</div></div>`);
-  $$('[data-g]', c).forEach(btn => btn.onclick = () => { closeModal(); startExtras(EXTRA_GROUPS.find(g => g.id === btn.dataset.g)); });
+    <div class="extra-grid">${extraGroups().map(g => `<button class="btn big" data-g="${g.id}">${g.label}</button>`).join('')}</div></div>`);
+  $$('[data-g]', c).forEach(btn => btn.onclick = () => { closeModal(); startExtras(extraGroups().find(g => g.id === btn.dataset.g)); });
 }
 async function startExtras(group) {
   const t = today();
@@ -1691,7 +1805,9 @@ async function startExtras(group) {
 function localExtras(size, subjects) {
   const t = today();
   const topics = (S.week ? S.week.topics : S.lastTopics) || {};
-  let act = subjects || [...new Set(['math', 'en', ...SUBJECTS.filter(s => (topics[s.id] || '').trim()).map(s => s.id)])];
+  const mine = mySubjects();
+  let act = subjects || [...new Set([...['math', 'en'].filter(x => mine.includes(x)), ...mine.filter(id => (topics[id] || '').trim())])];
+  if (!act.length) act = mine.slice(0, 4);
   const rng = makeRng('extra|' + t + '|' + uid());
   const pools = act.map(id => buildPool(id, (topics[id] || '').trim() || EXTRA_DEFAULTS[id] || '', 'x' + t + uid(), [])
     .filter(q => q.type !== 'open' && (q.type !== 'listen' || speechOK))).filter(p => p.length);
@@ -1704,7 +1820,7 @@ function localExtras(size, subjects) {
 function weekTopicsText(w) {
   if (!w) return Object.entries(S.lastTopics || {}).filter(([, v]) => v).map(([k, v]) => `${SUBJ[k] ? SUBJ[k].name : k}: ${v}`).join('\n');
   const lines = SUBJECTS.filter(s => (w.topics[s.id] || '').trim()).map(s => `${s.name}: ${w.topics[s.id].trim().replace(/\n/g, ' / ')}`);
-  return (w.brief ? `O que a aluna contou: ${w.brief}\n` : '') + lines.join('\n');
+  return (w.brief ? `O que o estudante contou: ${w.brief}\n` : '') + lines.join('\n');
 }
 function recentQuestionTexts(n) {
   const out = [];
@@ -1723,7 +1839,7 @@ function renderSetup() {
   const topics = VIEW.draftTopics || (editing ? w.topics : Object.assign({}, S.lastTopics));
   const counts = VIEW.draftCounts || (editing ? Object.assign({}, w.counts) : Object.assign({}, S.settings.counts));
   VIEW.draftTopics = topics; VIEW.draftCounts = counts;
-  const subs = SUBJECTS.filter(s => s.group === VIEW.setupTab);
+  const subs = SUBJECTS.filter(s => s.group === VIEW.setupTab && mySubjects().includes(s.id));
   const fields = subs.map(s => `<div class="topic" style="--subj:${s.color}"><label for="tp-${s.id}">${s.icon} ${esc(s.name)}<span class="help">${esc(s.help)}</span></label>
       <textarea id="tp-${s.id}" data-sid="${s.id}" placeholder="${esc(s.ph)}">${esc(topics[s.id] || '')}</textarea></div>`).join('');
   const pending = (S.pendingImport || []).length;
@@ -1744,7 +1860,8 @@ function renderSetup() {
   $('[data-act=gen]', el).onclick = () => generateFromSetup(editing);
 }
 function cleanPassages(list) { return (list || []).filter(x => x && SUBJ[x.subject] && CYCLE.includes(x.day) && x.text).map(x => ({ subject: x.subject, day: x.day, title: String(x.title || ''), text: String(x.text) })); }
-function dayPassages(d) { return S.week && d ? (S.week.passages || []).filter(x => x.day === d.dow) : []; }
+function dayPassages(d) { if (d && d.recPassages) return d.recPassages; return S.week && d ? (S.week.passages || []).filter(x => x.day === d.dow) : []; }
+const ctxTopics = c => c.rec && S.recovery ? S.recovery.topicsText : weekTopicsText(S.week);
 function resetDraft() { VIEW.draftOpt = null; VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.draftText = null; VIEW.draftSubj = null; VIEW.draftImages = null; VIEW.openSubj = null; VIEW.setupCycle = null; }
 function setupCycleDefaults() {
   const t = today(); const w = S.week;
@@ -1792,7 +1909,8 @@ function renderSetupAI() {
   const counts = VIEW.draftCounts || (editing ? Object.assign({}, w.counts) : Object.assign({}, S.settings.counts));
   VIEW.draftCounts = counts;
   const thumbs = VIEW.draftImages.map((im, i) => `<div class="thumb"><img src="data:${im.type};base64,${im.data}" alt="Foto ${i + 1}"><button data-rm="${i}" aria-label="Remover foto">✕</button></div>`).join('');
-  const filled = SUBJECTS.filter(sb => subjFilled(sb.id)).length;
+  const mine = mySubjects().map(id => SUBJ[id]);
+  const filled = mine.filter(sb => subjFilled(sb.id)).length;
   const section = sb => {
     const txt = VIEW.draftSubj[sb.id] || '';
     const has = subjFilled(sb.id);
@@ -1802,7 +1920,7 @@ function renderSetupAI() {
       : isRead(sb.id)
         ? `<div class="chips-lbl tiny muted">${sb.lang === 'pt' ? 'Nível do texto que a Lumi vai escrever:' : 'Level of the text Lumi will write:'}</div><div class="chips">${READ_LEVELS.map(([k, l]) => `<button type="button" class="chip ${opt === k ? 'on' : ''}" data-opt="${sb.id}" data-v="${k}">${l}</button>`).join('')}</div>`
         : '';
-    const ph = isSpell(sb.id) ? SPELL_PH[sb.id][opt] : isRead(sb.id) ? (sb.lang === 'pt' ? 'Opcional: livro que está lendo, tema que você gosta (ex.: cavalos, espaço)…' : 'Optional: book you are reading, a topic you like (e.g. horses, space)…') : AI_PH[sb.id];
+    const ph = isSpell(sb.id) ? SPELL_PH[sb.id][opt] : isRead(sb.id) ? (sb.lang === 'pt' ? `Opcional: ${sb.id === 'pt_lit' ? 'obra ou escola literária' : 'livro que está lendo'}, tema que você gosta…` : `Optional: ${sb.id === 'en_lit' ? 'set text, poem or play' : 'book you are reading'}, a topic you like…`) : (AI_PH[sb.id] || sb.ph);
     const preview = txt.trim() ? txt.trim().slice(0, 50) + (txt.trim().length > 50 ? '…' : '') : (isSpell(sb.id) && opt === 'auto') ? '🎲 a Lumi escolhe' : (isRead(sb.id) && opt) ? READ_LEVELS.find(x => x[0] === opt)[1] : (sb.lang === 'pt' ? 'toque para escrever' : 'tap to write');
     return `<details class="subj-acc" style="--subj:${sb.color}" data-sid="${sb.id}" ${VIEW.openSubj[sb.id] ? 'open' : ''}>
       <summary><span class="sa-ic">${sb.icon}</span><span class="sa-name">${esc(sb.name)}</span>
@@ -1817,11 +1935,12 @@ function renderSetupAI() {
         <option value="">Selecione o ano…</option>
         ${SCHOOL_YEARS.map(([id, uk, br, age]) => `<option value="${id}" ${S.settings.year === id ? 'selected' : ''}>${uk} · ${br} · ${age} anos</option>`).join('')}
       </select>
+      <div class="row wrap tiny muted" style="margin-top:6px"><span class="grow">${S.settings.year ? `Etapa: <b>${STAGE_LABEL[stageOf(S.settings.year)]}</b> · ${mine.length} matérias${S.settings.subjectsCustom ? ' (escolhidas por você)' : ''}` : ''}</span>
+        <button type="button" class="btn small" data-act="pick-subj">📚 Escolher matérias</button></div>
     </div>
     <div class="ai-box">
-      <div class="ai-label">🏫 O que você está aprendendo em cada matéria? <span class="tiny muted">(${filled} de ${SUBJECTS.length} preenchidas · pode escrever do seu jeito)</span></div>
-      <div class="acc-group"><div class="acc-title">🇧🇷 Em português</div>${SUBJECTS.filter(x => x.group === 'pt').map(section).join('')}</div>
-      <div class="acc-group"><div class="acc-title">🇬🇧 In English</div>${SUBJECTS.filter(x => x.group === 'en').map(section).join('')}</div>
+      <div class="ai-label">🏫 O que você está aprendendo em cada matéria? <span class="tiny muted">(${filled} de ${mine.length} preenchidas · pode escrever do seu jeito)</span></div>
+      ${['pt', 'en'].map(gp => { const l = mine.filter(x => x.group === gp); return l.length ? `<div class="acc-group"><div class="acc-title">${gp === 'pt' ? '🇧🇷 Em português' : '🇬🇧 In English'}</div>${l.map(section).join('')}</div>` : ''; }).join('')}
       <div class="row wrap tiny muted"><span>🎤 Dica: toque no microfone do teclado para falar em vez de escrever. Matéria em branco não entra na semana.</span></div>
       <div class="row wrap">
         <label class="btn small">📷 Foto do worksheet ou da agenda<input type="file" id="ph" accept="image/*" multiple hidden></label>
@@ -1833,8 +1952,11 @@ function renderSetupAI() {
     <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? '✨ Atualizar a semana' : '✨ Criar minha semana com a Lumi'}</button></div>
     <button class="btn ghost small" data-act="subjects">Prefiro o gerador do próprio app (sem o Claude)</button>
   </div>`;
-  $('#year', el).onchange = e => { S.settings.year = e.target.value; save();
-    if (Server.me && Server.childId) apiCall(`/api/family/children/${Server.childId}`, { method: 'PATCH', data: { year: e.target.value } }).then(refreshMe).catch(() => {}); };
+  $('#year', el).onchange = e => { const before = stageOf(S.settings.year); S.settings.year = e.target.value; save();
+    if (Server.me && Server.childId) apiCall(`/api/family/children/${Server.childId}`, { method: 'PATCH', data: { year: e.target.value } }).then(refreshMe).catch(() => {});
+    renderSetupAI();
+    if (e.target.value && stageOf(e.target.value) !== before && !S.settings.subjectsCustom) say(`Mudei as matérias para as de <b>${STAGE_LABEL[stageOf(e.target.value)]}</b>. Toque em 📚 para ajustar. 🦉`); };
+  $('[data-act=pick-subj]', el).onclick = () => pickSubjects(() => renderSetupAI());
   $$('details.subj-acc', el).forEach(d => d.addEventListener('toggle', () => {
     VIEW.openSubj[d.dataset.sid] = d.open;
   }));
@@ -1870,10 +1992,40 @@ const SPELL_PH = {
   en_spell: { list: 'e.g. because, friend, believe, island', theme: 'e.g. silent letters; words ending in -tion', auto: '(optional) anything specific? e.g. tricky words' },
 };
 const isSpell = id => id === 'pt_ort' || id === 'en_spell';
-const isRead = id => id === 'pt_leit' || id === 'en_read' || id === 'en_guided';
+const isRead = id => ['pt_leit', 'en_read', 'en_guided', 'pt_lit', 'en_lit'].includes(id);
 function subjFilled(id) {
   const t = ((VIEW.draftSubj || {})[id] || '').trim(); const o = (VIEW.draftOpt || {})[id];
   return !!t || (isSpell(id) && o === 'auto') || (isRead(id) && !!o);
+}
+// Escolher as matérias do estudante (cada um faz as suas, principalmente no IGCSE e no IB, com HL/SL).
+function pickSubjects(after) {
+  const sel = new Set(mySubjects());
+  const stage = stageOf(S.settings.year);
+  const ib = stage === 'ib';
+  const lv = Object.assign({}, S.settings.ibLevels || {});
+  const hl = id => `<span class="hlsl" data-hl="${id}"><button type="button" data-v="HL" class="${lv[id] === 'HL' ? 'on' : ''}">HL</button><button type="button" data-v="SL" class="${lv[id] === 'SL' ? 'on' : ''}">SL</button></span>`;
+  const row = sb => `<label class="pick ${sel.has(sb.id) ? 'on' : ''}" style="--subj:${sb.color}"><input type="checkbox" value="${sb.id}" ${sel.has(sb.id) ? 'checked' : ''}><span>${sb.icon}</span> <span class="grow">${esc(sb.name)}${STAGE_SUBJECTS[stage].includes(sb.id) ? ' <i class="tiny muted">sugerida</i>' : ''}</span>${ib && sb.id !== 'tok' ? hl(sb.id) : ''}</label>`;
+  const c = openModal(`<div class="modal-head"><h3>📚 Minhas matérias</h3><button class="btn small" data-close>Fechar</button></div>
+    <div class="modal-body"><p class="tiny muted" style="margin:0 0 8px">Marque as matérias que você faz${S.settings.year ? ` (${esc((SCHOOL_YEARS.find(y => y[0] === S.settings.year) || [])[1] || '')} · ${STAGE_LABEL[stage]})` : ''}. Só elas aparecem no planejamento e nos extras.${ib ? ' No IB, marque também se é <b>HL</b> (Higher Level) ou <b>SL</b> (Standard Level) — a Lumi ajusta a dificuldade.' : ''}</p>
+      <div class="acc-title">🇧🇷 Em português</div><div class="pick-grid">${SUBJECTS.filter(x => x.group === 'pt').map(row).join('')}</div>
+      <div class="acc-title">🇬🇧 In English</div><div class="pick-grid">${SUBJECTS.filter(x => x.group === 'en').map(row).join('')}</div></div>
+    <div class="modal-foot"><button class="btn" data-act="sugg">↺ Usar as sugeridas</button><button class="btn primary grow" data-act="ok">Salvar</button></div>`);
+  $$('input[type=checkbox]', c).forEach(ch => ch.onchange = () => ch.closest('label').classList.toggle('on', ch.checked));
+  $$('.hlsl button', c).forEach(b => b.onclick = e => {
+    e.preventDefault(); e.stopPropagation();
+    const box = b.parentElement; const id = box.dataset.hl;
+    lv[id] = lv[id] === b.dataset.v ? '' : b.dataset.v;
+    $$('button', box).forEach(x => x.classList.toggle('on', x.dataset.v === lv[id]));
+    const ch = box.closest('label').querySelector('input'); if (lv[id] && !ch.checked) { ch.checked = true; ch.closest('label').classList.add('on'); }
+  });
+  $('[data-act=sugg]', c).onclick = () => { S.settings.subjectsCustom = false; delete S.settings.subjects; save(); closeModal(); toast('Matérias sugeridas para o ano.'); after && after(); };
+  $('[data-act=ok]', c).onclick = () => {
+    const ids = $$('input[type=checkbox]', c).filter(ch => ch.checked).map(ch => ch.value);
+    if (!ids.length) { toast('Escolha pelo menos uma matéria.'); return; }
+    S.settings.subjects = ids; S.settings.subjectsCustom = true;
+    if (ib) S.settings.ibLevels = Object.fromEntries(Object.entries(lv).filter(([k, v]) => v && ids.includes(k)));
+    save(); closeModal(); after && after();
+  };
 }
 const AI_PH = {
   pt: 'Ex.: estamos estudando substantivos e adjetivos, e sinônimos.',
@@ -1889,11 +2041,12 @@ const AI_PH = {
 };
 async function generateWithClaude(editing) {
   const subjTexts = {}; const subjOpts = {};
-  SUBJECTS.forEach(sb => {
+  const mineList = mySubjects().map(id => SUBJ[id]);
+  mineList.forEach(sb => {
     const v = ((VIEW.draftSubj || {})[sb.id] || '').trim(); if (v) subjTexts[sb.id] = v;
     const o = (VIEW.draftOpt || {})[sb.id]; if (o) subjOpts[sb.id] = o;
   });
-  const text = SUBJECTS.filter(sb => subjFilled(sb.id)).map(sb => {
+  const text = mineList.filter(sb => subjFilled(sb.id)).map(sb => {
     const o = subjOpts[sb.id] || (isSpell(sb.id) ? 'list' : '');
     const tag = isSpell(sb.id) ? ` [modo: ${SPELL_TXT[o]}]` : (isRead(sb.id) && o) ? ` [nível do texto: ${READ_TXT[o]}]` : '';
     return `- ${sb.id} (${sb.name})${tag}: ${subjTexts[sb.id] || '(sem detalhes)'}`;
@@ -1993,8 +2146,8 @@ function workCtx() {
     const x = S.extra; if (!x) return null;
     return { kind: 'extra', title: '⭐ Exercícios extras', obj: x, questions: x.questions, answers: x.answers, done: x.status === 'done', marks: {}, verdicts: x.verdicts || {} };
   }
-  const d = S.week && S.week.days[v.date]; if (!d) return null;
-  return { kind: 'day', title: `${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, obj: d, questions: d.questions, answers: d.answers, done: d.status === 'done', marks: d.marks || {}, verdicts: d.verdicts || {} };
+  const d = v.rec ? (S.recovery && S.recovery.days[v.date]) : (S.week && S.week.days[v.date]); if (!d) return null;
+  return { kind: 'day', rec: !!v.rec, title: `${v.rec ? '⏳ Recuperação · ' : ''}${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, obj: d, questions: d.questions, answers: d.answers, done: d.status === 'done', marks: d.marks || {}, verdicts: d.verdicts || {} };
 }
 // Correção: usa o veredito da foto/autocorreção quando existir; senão compara com o gabarito.
 function verdict(c, q) {
@@ -2009,9 +2162,9 @@ function renderWork() {
   const c = workCtx();
   if (!c) { show('home'); return; }
   $('#top-title').textContent = c.kind === 'extra' ? '⭐ Extras' : `📘 ${c.title}`;
-  const canQty = c.kind === 'day' && !c.done && !dayStarted(c.obj) && !c.obj.printed;
+  const canQty = c.kind === 'day' && !c.rec && !c.done && !dayStarted(c.obj) && !c.obj.printed;
   const cards = c.questions.map((q, i) => questionCard(q, i, c)).join('');
-  const paper = c.kind === 'day' && !c.done;
+  const paper = c.kind === 'day' && !c.rec && !c.done;
   el.innerHTML = `<div class="work">
     <div class="work-head">
       <h2>${esc(c.title)}</h2>
@@ -2023,7 +2176,7 @@ function renderWork() {
     <div class="sheet" id="sheet">${cards}</div>
     <div class="work-foot">
       <button class="btn" data-act="back" aria-label="Voltar">◂</button>
-      ${c.kind === 'day' ? '<button class="btn" data-act="print">🖨️ Imprimir</button>' : ''}
+      ${c.kind === 'day' && !c.rec ? '<button class="btn" data-act="print">🖨️ Imprimir</button>' : ''}
       <button class="btn" data-act="key">🔑 Gabarito</button>
       ${c.done ? '' : '<button class="btn primary" data-act="finish">✔ Concluir</button>'}
     </div></div>`;
@@ -2211,7 +2364,7 @@ async function gradeOpenAnswers(c) {
   const stop = showLoading(['Lendo suas respostas… 📖', 'Pensando com carinho… 🦉', 'Escrevendo comentários… ✍️']);
   try {
     const r = await apiCall('/api/check-open', { method: 'POST', timeout: 90000, data: {
-      context: weekTopicsText(S.week) + (c.kind === 'day' ? '\n' + dayPassages(c.obj).map(x => `Texto "${x.title}": ${x.text}`).join('\n') : ''),
+      context: ctxTopics(c) + (c.kind === 'day' ? '\n' + dayPassages(c.obj).map(x => `Texto "${x.title}": ${x.text}`).join('\n') : ''),
       items: opens.map(x => ({ q: x.q.q, answer: c.answers[x.q.id], lang: x.q.lang, subject: x.q.subject, subjectName: SUBJ[x.q.subject] && SUBJ[x.q.subject].name })) } });
     c.obj.verdicts = c.obj.verdicts || {}; c.obj.notes = c.obj.notes || {};
     (r.results || []).forEach(res => { const x = opens[res.number - 1]; if (!x) return; c.obj.verdicts[x.q.id] = res.verdict === 'ok' ? 'ok' : 'bad'; if (res.note) c.obj.notes[x.q.id] = res.note; });
@@ -2236,7 +2389,7 @@ async function explainContent(q, c) {
   try {
     const r = await apiCall('/api/explain', { method: 'POST', timeout: 60000, data: {
       q: q.type === 'proof' ? `${q.q} Texto: "${q.text}"` : q.q, options: q.options || [], answer: q.answer, done: c.done, lang: q.lang, subject: q.subject,
-      subjectName: SUBJ[q.subject] && SUBJ[q.subject].name, context: weekTopicsText(S.week) + (c.kind === 'day' ? '\n' + passageContext(q, c.obj) : '') } });
+      subjectName: SUBJ[q.subject] && SUBJ[q.subject].name, context: ctxTopics(c) + (c.kind === 'day' ? '\n' + passageContext(q, c.obj) : '') } });
     stop();
     q[key] = { title: r.title, explanation: r.explanation, example: r.example };
     save();
@@ -2262,6 +2415,7 @@ function completeWork(c, via, extraMsg = '') {
     showCelebrate('Extras concluídos! ⭐', coins ? `+${coins}` : '', `Você acertou <b>${correct} de ${obj.length}</b>.${c.obj.paid ? '' : ' (Rodada só de treino.)'} Abra o gabarito para ver as correções.`);
     return;
   }
+  if (c.rec) return completeRecovery(c, correct, obj.length, open, extraMsg);
   const streakMsg = bumpStreak(c.obj.date);
   save();
   VIEW.work = { kind: 'day', date: c.obj.date };
@@ -2278,6 +2432,23 @@ function completeWork(c, via, extraMsg = '') {
   }
 }
 
+function completeRecovery(c, correct, total, open, extraMsg) {
+  const r = S.recovery; const d = c.obj;
+  r.n = Math.min(r.total, r.n + 1);
+  const coins = Math.round(r.pot * r.n / r.total) - Math.round(r.pot * (r.n - 1) / r.total);
+  r.earned += coins;
+  // reflete na semana original (resumo dos pais e histórico)
+  if (S.week && S.week.start === r.start && S.week.days[d.date]) Object.assign(S.week.days[d.date], { status: 'done', answers: d.answers, result: d.result, verdicts: d.verdicts, notes: d.notes, via: d.via, recovered: true });
+  const h = S.history.find(x => x.start === r.start); if (h) { h.done = Math.min(h.total, h.done + 1); h.recovered = (h.recovered || 0) + 1; }
+  save();
+  if (coins) addCoins(coins, `Recuperação ${DOW_LABEL[d.dow]} ${fmtDM(d.date)} (vale metade)`);
+  VIEW.work = { kind: 'day', date: d.date, rec: true };
+  show('work');
+  const left = Object.values(r.days).filter(x => x.status !== 'done').length;
+  const msg = (extraMsg ? extraMsg + '<br>' : '') + `Você acertou <b>${correct} de ${total}</b>.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais.` : ''}`
+    + (left ? `<br>Falta${left > 1 ? 'm' : ''} <b>${left}</b> dia${left > 1 ? 's' : ''} para recuperar até sexta ${fmtDM(r.until)} (+${recoveryLeftCoins(r)} 🪙).` : `<br><br>Você recuperou a semana toda: <b>+${r.earned}</b> 🪙 no total. Isso é que é não desistir! 💪`);
+  showCelebrate(left ? 'Dia recuperado! ⏳' : 'Semana recuperada! 🎉', coins ? `+${coins}` : '', msg, 'happy');
+}
 // Sequência de dias seguidos fazendo a tarefa no próprio dia. A cada 5 dias: +15 moedas.
 const STREAK_BONUS = 15;
 function bumpStreak(date) {
@@ -2532,7 +2703,7 @@ function pReview(box) {
   const req = requiredDays(w);
   const summary = req.map(d => {
     const r = d.result;
-    return `<div class="row"><b style="width:90px">${DOW_LABEL[d.dow]} ${fmtDM(d.date)}</b><span class="grow">${d.status === 'done' ? `✅ ${r.correct}/${r.total} objetivas${r.open ? ` · ${r.open} livres` : ''}` : dayState(d) === 'late' ? '⏰ atrasada' : dayState(d) === 'locked' ? '🔒 ainda não abriu' : '📘 pendente'}</span></div>`;
+    return `<div class="row"><b style="width:90px">${DOW_LABEL[d.dow]} ${fmtDM(d.date)}</b><span class="grow">${d.status === 'done' ? `${d.recovered ? '⏳ recuperada' : '✅'} ${r.correct}/${r.total} objetivas${r.open ? ` · ${r.open} livres` : ''}` : dayState(d) === 'late' ? '⏰ atrasada' : dayState(d) === 'locked' ? '🔒 ainda não abriu' : '📘 pendente'}</span></div>`;
   }).join('');
   const opens = [];
   req.forEach(d => d.questions.forEach(q => { if (q.type === 'open' && (answered(q, d.answers[q.id]) || (d.verdicts && d.verdicts[q.id] === 'open'))) opens.push({ d, q }); }));
@@ -2546,7 +2717,7 @@ function pReview(box) {
   }).join('');
   box.innerHTML = `<div class="card"><b>Semana ${fmtDM(w.start)}–${fmtDM(w.end)}</b> ${w.settled ? `· ${w.settled === 'delivered' ? 'entregue ✔' : w.settled === 'missed' ? 'não entregue ✗' : ''}` : ''}<div style="margin-top:6px;display:grid;gap:3px">${summary}</div></div>
     <h3 style="margin:6px 0 0">Respostas livres (${opens.length}) <span class="tiny muted">— a Lumi corrige; vocês podem confirmar ou mudar</span></h3>${list || '<p class="muted">Nada para corrigir ainda.</p>'}
-    ${S.history.length ? `<div class="card"><b>Histórico</b>${S.history.slice(0, 8).map(h => `<div class="tiny">${fmtDM(h.start)}–${fmtDM(h.end)}: ${h.done}/${h.total} dias · ${h.settled === 'delivered' ? 'entregue' : h.settled === 'missed' ? 'não entregue' : '—'}</div>`).join('')}</div>` : ''}`;
+    ${S.history.length ? `<div class="card"><b>Histórico</b>${S.history.slice(0, 8).map(h => `<div class="tiny">${fmtDM(h.start)}–${fmtDM(h.end)}: ${h.done}/${h.total} dias · ${h.settled === 'delivered' ? 'entregue' : h.settled === 'missed' ? 'não entregue' : '—'}${h.recovered ? ` · ${h.recovered} recuperado${h.recovered > 1 ? 's' : ''}` : ''}</div>`).join('')}</div>` : ''}`;
   $$('[data-mark]', box).forEach(b => b.onclick = () => { const d = S.week.days[b.dataset.d]; d.marks = d.marks || {}; d.marks[b.dataset.q] = b.dataset.mark; save(); pReview(box); });
 }
 function pCoins(box) {
@@ -2574,12 +2745,13 @@ function pSettings(box) {
   box.innerHTML = `<div class="card"><b>Economia de moedas</b><div class="form-grid" style="margin-top:6px">
       <label class="field">Recompensa da semana entregue<input type="number" id="s-reward" value="${st.reward}"></label>
       <label class="field">Penalidade (semana não entregue)<input type="number" id="s-penalty" value="${st.penalty}"></label>
+      <label class="field">Recuperação atrasada vale (% da recompensa)<input type="number" id="s-late" value="${latePct()}"></label>
       <label class="field">Moedas por acerto nos extras<input type="number" id="s-xpc" value="${st.extraPerCorrect}"></label>
       <label class="field">Perguntas por rodada de extras<input type="number" id="s-xsize" value="${st.extraSetSize}"></label>
       <label class="field">Rodadas de extras com moedas/dia<input type="number" id="s-xsets" value="${st.extraSetsPerDay}"></label></div>
-      <p class="tiny muted">A penalidade precisa ser maior que a recompensa.</p></div>
+      <p class="tiny muted">A penalidade precisa ser maior que a recompensa. Dias não feitos podem ser recuperados até a sexta seguinte: recuperar todos vale essa % da recompensa (0 = sem recuperação).</p></div>
     <div class="card"><b>Tarefas</b><div class="form-grid" style="margin-top:6px">
-      ${Server.me ? '' : `<label class="field">Nome da aluna<input id="s-name" value="${esc(S.name)}"></label>`}
+      ${Server.me ? '' : `<label class="field">Nome<input id="s-name" value="${esc(S.name)}"></label>`}
       <label class="field">Mínimo de perguntas/dia<input type="number" id="s-min" value="${st.minPerDay}"></label>
       <label class="field">Máximo de perguntas/dia<input type="number" id="s-max" value="${st.maxPerDay}"></label>
       <label class="field">Gabarito<select id="s-gab"><option value="1" ${st.gabaritoAfterFinish ? 'selected' : ''}>Libera depois de concluir</option><option value="0" ${!st.gabaritoAfterFinish ? 'selected' : ''}>Sempre disponível</option></select></label>
@@ -2593,7 +2765,7 @@ function pSettings(box) {
     const reward = Math.max(0, num('#s-reward', st.reward)), penalty = num('#s-penalty', st.penalty);
     if (penalty <= reward) { toast('A penalidade precisa ser MAIOR que a recompensa.'); return; }
     Object.assign(st, {
-      reward, penalty, extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
+      reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
       extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10), minPerDay: clamp(num('#s-min', st.minPerDay), 1, 15), maxPerDay: clamp(num('#s-max', st.maxPerDay), 3, 25),
       gabaritoAfterFinish: $('#s-gab').value === '1', voice: $('#s-voice').value === '1',
     });

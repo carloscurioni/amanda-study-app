@@ -14,26 +14,81 @@ import { DurableObject } from 'cloudflare:workers';
 import { Directory, AppError } from './directory.js';
 export { Directory };
 
-const SUBJECT_IDS = ['pt', 'pt_ort', 'pt_leit', 'bss', 'en', 'en_read', 'en_spell', 'en_guided', 'ipc', 'math'];
-const SUBJECTS_TXT = `
-- pt: Português (gramática, interpretação) — em português do Brasil
-- pt_ort: Português – Ortografia — em português
-- pt_leit: Português – Leitura — em português
-- bss: BSS – Brazilian Social Studies (história e geografia do Brasil) — em português
-- en: English (grammar, vocabulary, writing) — in British English
-- en_read: English Reading — in English
-- en_spell: English Spelling — in English
-- en_guided: Guided Reading (VIPERS: vocabulary, infer, predict, explain, retrieve, sequence/summarise) — in English
-- ipc: IPC – International Primary Curriculum (science, history, geography units) — in English
-- math: Math — in English`;
+// Catálogo de matérias (id — descrição — idioma). O app manda quais o estudante faz; o prompt só lista essas.
+const SUBJECT_CATALOG = [
+  ['pt', 'Português (gramática, interpretação de texto) — em português do Brasil'],
+  ['pt_ort', 'Português – Ortografia — em português'],
+  ['pt_leit', 'Português – Leitura — em português'],
+  ['pt_lit', 'Português – Literatura (escolas literárias, obras e autores brasileiros e portugueses, análise de texto) — em português'],
+  ['pt_red', 'Português – Redação (gêneros textuais, dissertação argumentativa no estilo ENEM/vestibular, coesão e coerência) — em português'],
+  ['bss', 'BSS – Brazilian Social Studies (história e geografia do Brasil) — em português'],
+  ['en', 'English / English Language (grammar, vocabulary, writing; no IGCSE: First Language/ESL English) — in British English'],
+  ['en_read', 'English Reading — in English'],
+  ['en_spell', 'English Spelling — in English'],
+  ['en_guided', 'Guided Reading (VIPERS: vocabulary, infer, predict, explain, retrieve, sequence/summarise) — in English'],
+  ['en_lit', 'English Literature (set texts, poetry, drama, prose; themes, characters, language and structure) — in English'],
+  ['ipc', 'IPC – International Primary Curriculum (science, history, geography units) — in English'],
+  ['math', 'Math / Mathematics — in English'],
+  ['fmath', 'Additional Mathematics (Cambridge IGCSE 0606 / Edexcel Further Pure Mathematics) ou Further Maths — in English'],
+  ['sci', 'Science (combined: biology, chemistry, physics) — in English'],
+  ['bio', 'Biology — in English'],
+  ['chem', 'Chemistry — in English'],
+  ['phys', 'Physics — in English'],
+  ['hist', 'History — in English'],
+  ['geog', 'Geography — in English'],
+  ['comp', 'Computer Science (algorithms, programming in Python/pseudocode, data, networks) — in English'],
+  ['econ', 'Economics — in English'],
+  ['bus', 'Business — in English'],
+  ['psych', 'Psychology — in English'],
+  ['spa', 'Spanish (língua estrangeira: exercícios em espanhol, instruções em inglês)'],
+  ['fre', 'French (língua estrangeira: exercícios em francês, instruções em inglês)'],
+  ['tok', 'Theory of Knowledge (IB core: knowledge questions, themes, areas of knowledge) — in English'],
+];
+const SUBJECT_IDS = SUBJECT_CATALOG.map(x => x[0]);
+const READ_IDS = ['pt_leit', 'en_read', 'en_guided', 'pt_lit', 'en_lit'];
+const PRIMARY_IDS = ['pt', 'pt_ort', 'pt_leit', 'bss', 'en', 'en_read', 'en_spell', 'en_guided', 'ipc', 'math'];
+const subjectsTxt = (ids, levels) => {
+  const want = (Array.isArray(ids) ? ids : []).filter(id => SUBJECT_IDS.includes(id));
+  const list = SUBJECT_CATALOG.filter(x => (want.length ? want : PRIMARY_IDS).includes(x[0]));
+  const lv = levels && typeof levels === 'object' ? levels : {};
+  return '\n' + list.map(([id, d]) => `- ${id}: ${d}${lv[id] === 'HL' ? ' — IB Higher Level (HL)' : lv[id] === 'SL' ? ' — IB Standard Level (SL)' : ''}`).join('\n');
+};
 const DOWS = ['sab', 'dom', 'seg', 'ter', 'qua', 'qui', 'sex'];
 const YEAR_LABELS = {
-  Y1: 'Year 1 do currículo britânico (≈ Infantil 5 no Brasil, 5–6 anos)', Y2: 'Year 2 do currículo britânico (≈ 1º ano no Brasil, 6–7 anos)',
-  Y3: 'Year 3 do currículo britânico (≈ 2º ano no Brasil, 7–8 anos)', Y4: 'Year 4 do currículo britânico (≈ 3º ano no Brasil, 8–9 anos)',
-  Y5: 'Year 5 do currículo britânico (≈ 4º ano no Brasil, 9–10 anos)', Y6: 'Year 6 do currículo britânico (≈ 5º ano no Brasil, 10–11 anos)',
-  Y7: 'Year 7 do currículo britânico (≈ 6º ano no Brasil, 11–12 anos)', Y8: 'Year 8 do currículo britânico (≈ 7º ano no Brasil, 12–13 anos)',
-  Y9: 'Year 9 do currículo britânico (≈ 8º ano no Brasil, 13–14 anos)',
+  Y1: 'Year 1, Key Stage 1 do currículo britânico (≈ Infantil 5 no Brasil, 5–6 anos)', Y2: 'Year 2, Key Stage 1 do currículo britânico (≈ 1º ano no Brasil, 6–7 anos)',
+  Y3: 'Year 3, Key Stage 2 do currículo britânico (≈ 2º ano no Brasil, 7–8 anos)', Y4: 'Year 4, Key Stage 2 do currículo britânico (≈ 3º ano no Brasil, 8–9 anos)',
+  Y5: 'Year 5, Key Stage 2 do currículo britânico (≈ 4º ano no Brasil, 9–10 anos)', Y6: 'Year 6, Key Stage 2 do currículo britânico (≈ 5º ano no Brasil, 10–11 anos)',
+  Y7: 'Year 7, Key Stage 3 do currículo britânico (≈ 6º ano no Brasil, 11–12 anos)', Y8: 'Year 8, Key Stage 3 do currículo britânico (≈ 7º ano no Brasil, 12–13 anos)',
+  Y9: 'Year 9, Key Stage 3 do currículo britânico (≈ 8º ano no Brasil, 13–14 anos)',
+  Y10: 'Year 10, Key Stage 4 / 1º ano do IGCSE (GCSE) do currículo britânico (≈ 9º ano no Brasil, 14–15 anos)',
+  Y11: 'Year 11, Key Stage 4 / ano das provas do IGCSE (GCSE) do currículo britânico (≈ 1ª série do Ensino Médio no Brasil, 15–16 anos)',
+  Y12: 'Year 12, 1º ano do IB Diploma Programme (DP1) (≈ 2ª série do Ensino Médio no Brasil, 16–17 anos)',
+  Y13: 'Year 13, 2º ano do IB Diploma Programme (DP2, ano das provas finais do IB) (≈ 3ª série do Ensino Médio no Brasil, 17–18 anos)',
 };
+const yearNum = b => Number((String((b && b.yearId) || '').match(/\d+/) || [5])[0]);
+// Orientação extra para o fundamental II e o médio (Key Stage 3, IGCSE e IB Diploma).
+function stageRules(n) {
+  if (n <= 6) return '';
+  if (n <= 9) return `
+- Key Stage 3: perguntas mais exigentes que no primário, com o vocabulário técnico da matéria; em Math inclua álgebra, proporção, geometria e estatística do ano.`;
+  if (n <= 11) return `
+- IGCSE/GCSE: siga o estilo das provas Cambridge IGCSE / Edexcel / AQA, com os "command words" (state, describe, explain, calculate, compare, evaluate) e a terminologia da especificação.
+- Em Math e Sciences: cálculos com unidades, fórmulas e alguns passos; em "num" a resposta é só o número (com o arredondamento pedido no enunciado, ex.: "to 1 d.p.").
+- Additional Mathematics (Cambridge 0606 / Edexcel Further Pure): logaritmos e exponenciais (inclusive equações e sistemas com logaritmos), surds (simplificar, racionalizar), completar o quadrado, discriminante e natureza das raízes, raízes α e β (soma e produto, expressões simétricas, nova equação), sistemas não lineares, inequações quadráticas, funções (domínio, imagem, composta, inversa), polinômios, trigonometria e introdução ao cálculo. Exercícios no estilo das provas, com resposta exata (ex.: "2√3", "x < -1 or x > 4", "f⁻¹(x) = (x+3)/2"): use "short" para respostas algébricas, com variações aceitas em "accept".
+- Em literatura e humanas: perguntas de análise ("open") curtas, pedindo evidência do texto (PEE/PEEL), respondíveis em 2–4 frases.
+- Em português: conteúdo da BNCC do ano equivalente (gramática, interpretação e literatura no nível do Ensino Médio quando for o caso).`;
+  return `
+- IB Diploma Programme: nível pré-universitário, no estilo das provas do IB (Paper 1/Paper 2/Paper 3), com os "command terms" do IB (define, describe, explain, analyse, compare and contrast, evaluate, discuss, to what extent) e a terminologia do guia de cada matéria.
+- Respeite o nível de cada matéria: HL (Higher Level) tem mais profundidade e tópicos extras (AHL); SL (Standard Level) só o núcleo. Sem nível indicado, use SL.
+- Mathematics: Analysis and Approaches (AA) ou Applications and Interpretation (AI), conforme o assunto informado (cálculo, funções, vetores, estatística e probabilidade, modelagem); em "num" só o resultado final (com a precisão pedida, ex.: "to 3 s.f.").
+- Sciences (Biology, Chemistry, Physics): conceitos do guia atual, cálculos com unidades e algarismos significativos, interpretação de dados e "nature of science".
+- Individuals & Societies (Economics, Business Management, History, Geography, Psychology): conceitos, aplicação a exemplos reais e avaliação; "open" pede 3–5 frases com argumento e contra-argumento.
+- Language A (English A / Português A: literatura ou language & literature): análise guiada de trechos (estilo Paper 1), obras e temas globais (estilo Paper 2), recursos de linguagem e estrutura. Se citar ENEM/vestibular, inclua também esse estilo em português.
+- Language B / ab initio (Spanish, French): vocabulário e gramática dos temas do IB (identities, experiences, human ingenuity, social organisation, sharing the planet).
+- Theory of Knowledge: perguntas de conhecimento (knowledge questions), temas centrais e opcionais, áreas de conhecimento; peça perspectivas e exemplos, sem uma única resposta "certa" ("open"), ou "mc" sobre conceitos de TOK.
+- Não escreva Internal Assessments, Extended Essay nem trabalhos avaliados pelo estudante: crie apenas exercícios de prática.
+- As perguntas continuam claras e verificáveis: difíceis no conteúdo, claras na forma.`;
+}
 // Preço por milhão de tokens (US$): entrada / saída. Usado para estimar o gasto e aplicar os limites.
 const PRICES = { 'claude-sonnet-5-5': [2, 10], 'claude-haiku-5-5': [0.10, 0.50], 'claude-opus-5-5': [4, 20] };
 
@@ -87,10 +142,10 @@ const clearCookie = () => `${COOKIE}=; Path=/; HttpOnly; Secure; SameSite=Lax; M
 // Regras de segurança infantil acrescentadas a TODOS os prompts.
 const CHILD_SAFETY = `
 
-Segurança infantil (obrigatório): quem usa este app é uma criança. Todo conteúdo deve ser apropriado para crianças, gentil e educativo.
+Segurança infantil (obrigatório): quem usa este app é uma criança ou adolescente (menor de idade). Todo conteúdo deve ser apropriado para a idade, gentil e educativo.
 Nunca peça, repita ou invente dados pessoais (nome completo, endereço, escola, telefone, redes sociais, fotos de rosto).
 Se o texto recebido trouxer algo impróprio, perigoso, pessoal ou fora do contexto escolar, ignore essa parte e produza apenas conteúdo escolar adequado.
-Não inclua links nem nomes de sites, e nunca incentive a criança a conversar com desconhecidos.
+Não inclua links nem nomes de sites, e nunca incentive o estudante a conversar com desconhecidos.
 Você é uma inteligência artificial (a mascote Lumi); nunca finja ser uma pessoa.`;
 async function claude(env, ctx, { model, effort, system, content, schema, maxTokens }) {
   if (!env.ANTHROPIC_API_KEY) throw new HttpError(503, 'A chave da API do Claude não foi configurada no servidor.');
@@ -153,14 +208,14 @@ const PLAN_SCHEMA = {
       type: 'array',
       items: { type: 'object', properties: { subject: { type: 'string', enum: SUBJECT_IDS }, summary: { type: 'string' } }, required: ['subject', 'summary'], additionalProperties: false },
     },
-    message: { type: 'string', description: 'Mensagem curta e animada da mascote Lumi para a aluna, em português.' },
+    message: { type: 'string', description: 'Mensagem curta e animada da mascote Lumi para o estudante, em português.' },
     passages: {
       type: 'array',
-      description: 'Textos de leitura escritos para a aluna (só para matérias de leitura com nível escolhido). Pode ser vazia.',
+      description: 'Textos de leitura escritos para o estudante (só para matérias de leitura com nível escolhido). Pode ser vazia.',
       items: {
         type: 'object',
         properties: {
-          subject: { type: 'string', enum: ['pt_leit', 'en_read', 'en_guided'] },
+          subject: { type: 'string', enum: READ_IDS },
           day: { type: 'string', enum: DOWS },
           title: { type: 'string' },
           text: { type: 'string', description: 'Texto original, 120–200 palavras, no idioma da matéria, em parágrafos separados por \n.' },
@@ -179,7 +234,7 @@ const EXPLAIN_SCHEMA = {
   type: 'object',
   properties: {
     title: { type: 'string', description: 'Título curto do conteúdo (ex.: "O que é uma bacia hidrográfica?").' },
-    explanation: { type: 'string', description: 'Explicação clara para a idade da aluna, 3 a 6 frases curtas.' },
+    explanation: { type: 'string', description: 'Explicação clara para a idade e o ano do estudante, 3 a 6 frases curtas.' },
     example: { type: 'string', description: 'Um exemplo concreto ou analogia do dia a dia (1–2 frases).' },
   },
   required: ['title', 'explanation', 'example'],
@@ -215,7 +270,7 @@ const GRADE_SCHEMA = {
         type: 'object',
         properties: {
           number: { type: 'integer' },
-          read: { type: 'string', description: 'O que a aluna escreveu/marcou, transcrito. Vazio se em branco ou ilegível.' },
+          read: { type: 'string', description: 'O que o estudante escreveu/marcou, transcrito. Vazio se em branco ou ilegível.' },
           verdict: { type: 'string', enum: ['ok', 'bad', 'blank'] },
           note: { type: 'string', description: 'Comentário curto e gentil (pode ser vazio).' },
         },
@@ -232,12 +287,13 @@ const GRADE_SCHEMA = {
 
 /* ---------------- Prompts ---------------- */
 const level = b => (b && b.year ? String(b.year).slice(0, 80) : 'cerca de 10 anos');
-function studentProfile(name, year) {
-  return `Você cria exercícios para ${name || 'uma aluna'} (${year || 'cerca de 10 anos'}), aluna de uma escola internacional bilíngue em São Paulo (currículo britânico/IPC em inglês + matérias brasileiras em português).
-Matérias (id — idioma):${SUBJECTS_TXT}
+function studentProfile(name, year, subjects, n, levels) {
+  return `Você cria exercícios para ${name || 'um estudante'} (${year || 'cerca de 10 anos'}), de uma escola internacional bilíngue em São Paulo (currículo britânico e IB em inglês + matérias brasileiras em português).
+Matérias que este estudante faz (id — descrição — idioma):${subjectsTxt(subjects, levels)}
 
 Regras de qualidade:
-- Prefira MUITAS perguntas curtas e simples a poucas difíceis. Nível e conteúdo adequados exatamente ao ano escolar dela (${year || 'cerca de 10 anos'}), seguindo o currículo britânico e a BNCC brasileira desse ano.
+- Prefira MUITAS perguntas curtas e diretas a poucas longas. Nível e conteúdo adequados exatamente ao ano escolar (${year || 'cerca de 10 anos'}), seguindo o currículo da escola (National Curriculum / IGCSE / IB Diploma) e a BNCC brasileira do ano equivalente.${stageRules(n || 5)}
+- Spanish/French: o exercício é na língua estrangeira (vocabulário, gramática, tradução curta), com a instrução em inglês.
 - Cada pergunta precisa funcionar sozinha, na tela E impressa em papel (sem imagens, sem áudio, sem "veja a figura").
 - Fatos sempre corretos e verificáveis; se não tiver certeza de um fato, não use.
 - Perguntas das matérias em português: português do Brasil. Das matérias em inglês: inglês britânico.
@@ -249,7 +305,7 @@ Regras de qualidade:
   "errors": lista {wrong, right}, em que "wrong" é a palavra exatamente como está no texto. "q": instrução curta, ex.: "Caça-erros: encontre e corrija as 5 palavras escritas errado." / "Spot the mistakes: find and fix the 5 misspelled words.". "answer": "errada → certa; …". "options" e "accept" vazios.
   Nos outros tipos, "text" fica vazio e "errors" é uma lista vazia.
 - Em Ortografia/Spelling use as palavras da semana: completar letras que faltam (ex.: "Complete: ca_ _orro"), escolher a grafia correta, desembaralhar letras, escrever uma frase com a palavra.
-- Em leitura, se não houver o texto, faça perguntas de compreensão que funcionem para quem leu (de preferência "open" curtas) e algumas sobre vocabulário/gramática ligadas ao tema.
+- Em leitura/literatura, se não houver o texto, faça perguntas de compreensão que funcionem para quem leu (de preferência "open" curtas) e algumas sobre vocabulário/gramática ligadas ao tema.
 - "hint" ajuda a pensar, nunca contém a resposta.
 - Não repita perguntas iguais ou quase iguais.`;
 }
@@ -264,7 +320,7 @@ async function handlePlan(env, b, ctx) {
   const dayList = days.map(d => `- ${d.dow} (${d.label || d.dow}): ${d.n} perguntas`).join('\n');
   const content = [
     ...images.flatMap((img, i) => [{ type: 'text', text: `Foto ${i + 1} (material da escola):` }, { type: 'image', source: { type: 'base64', media_type: img.type || 'image/jpeg', data: img.data } }]),
-    { type: 'text', text: `O que a aluna (ou os pais) escreveu sobre a semana na escola, por matéria:
+    { type: 'text', text: `O que o estudante (ou os pais) escreveu sobre a semana na escola, por matéria:
 """
 ${text || '(sem texto — use as fotos)'}
 """
@@ -276,21 +332,22 @@ Tarefa:
 ${dayList}
 3. Em cada dia, misture 2 a 4 matérias; ao longo da semana, cubra todas as matérias citadas, com mais peso nas que tiverem mais conteúdo.
 4. Use apenas as matérias citadas. Se algo não se encaixar claramente, escolha a matéria mais próxima.
+   Corrija erros de digitação óbvios nos tópicos escritos pelo estudante (ex.: em matemática, "surfs" = surds; "simutanious" = simultaneous) e use o nome certo em "topics".
 5. Ortografia/Spelling — respeite o [modo] indicado:
    - "lista de palavras": use exatamente as palavras dadas;
-   - "tema": escolha 8–10 palavras desse padrão ortográfico (ex.: silent letters → knight, island, wrap…), adequadas ao ano dela;
-   - "a Lumi escolhe": escolha 8–10 palavras adequadas ao ano dela (UK spelling lists / dificuldades ortográficas do português nessa série).
+   - "tema": escolha 8–10 palavras desse padrão ortográfico (ex.: silent letters → knight, island, wrap…), adequadas ao ano;
+   - "a Lumi escolhe": escolha 8–10 palavras adequadas ao ano (UK spelling lists / dificuldades ortográficas do português nessa série).
    Em "topics", liste as palavras escolhidas.
    Em cada dia que tiver Ortografia ou Spelling, inclua UMA pergunta "proof" (caça-erros) dessa matéria.
-6. Leitura/Reading/Guided Reading com [nível do texto]: ESCREVA textos originais em "passages" (120–200 palavras, interessantes para a idade; histórias ou textos informativos; se ela citou um livro ou tema, inspire-se nele sem copiar trechos).
-   Níveis em relação ao ano dela: "mais fácil" = cerca de 1 ano abaixo; "no meu nível" = o ano dela; "acima" = cerca de 1 ano acima; "bem acima" = cerca de 2 anos acima.
+6. Leitura/Reading/Guided Reading/Literatura com [nível do texto]: ESCREVA textos originais em "passages" (120–200 palavras no primário, até 350 a partir do Year 7; interessantes para a idade; histórias ou textos informativos; se ela citou um livro ou tema, inspire-se nele sem copiar trechos).
+   Níveis em relação ao ano do estudante: "mais fácil" = cerca de 1 ano abaixo; "no meu nível" = o ano dele(a); "acima" = cerca de 1 ano acima; "bem acima" = cerca de 2 anos acima.
    Crie um texto para cada dia em que essa matéria tiver perguntas (no máximo 3 textos por matéria na semana). Nesses dias, TODAS as perguntas dessa matéria devem ser sobre o texto do dia (comece com "No texto…"/"In the text…").
    Se a matéria de leitura NÃO tiver [nível do texto], deixe sem texto e siga a regra normal de leitura.
-7. "message": 1–2 frases da Lumi (corujinha) animando a aluna, em português.` },
+7. "message": 1–2 frases da Lumi (corujinha) animando o estudante, em português.` },
   ];
   const out = await claude(env, ctx, {
     model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: env.EFFORT_PLAN || 'medium',
-    system: studentProfile(b.name, b.year), content, schema: PLAN_SCHEMA, maxTokens: 32000,
+    system: studentProfile(b.name, b.year, b.mine, yearNum(b), b.levels), content, schema: PLAN_SCHEMA, maxTokens: 32000,
   });
   return out;
 }
@@ -299,15 +356,15 @@ async function handleMore(env, b, ctx) {
   const n = Math.max(1, Math.min(15, Number(b.n) || 5));
   const subjects = (b.subjects || []).filter(s => SUBJECT_IDS.includes(s));
   const content = [{ type: 'text', text: `Assuntos da semana:
-${String(b.topics || '').slice(0, 3000) || '(revisão geral do 5º ano)'}
-${subjects.length ? `\nUse só estas matérias: ${subjects.join(', ')}. Se alguma delas não tiver assunto listado acima, faça uma revisão do conteúdo típico dessa matéria para o ano escolar dela.` : '\nMisture as matérias da semana e inclua sempre Math e English.'}
+${String(b.topics || '').slice(0, 3000) || '(revisão geral do conteúdo do ano escolar)'}
+${subjects.length ? `\nUse só estas matérias: ${subjects.join(', ')}. Se alguma delas não tiver assunto listado acima, faça uma revisão do conteúdo típico dessa matéria para o ano escolar.` : '\nMisture as matérias da semana (inclua Math e English se fizerem parte das matérias do estudante).'}
 ${b.objectiveOnly ? '\nNÃO use o tipo "open" — só mc, short, num e proof (correção automática). Se houver Spelling/Ortografia, inclua 1 "proof".' : ''}
 ${b.exclude?.length ? `\nNão repita estas perguntas:\n- ${b.exclude.slice(0, 60).map(x => String(x).slice(0, 120)).join('\n- ')}` : ''}
 
 Crie exatamente ${n} perguntas novas, curtas e variadas.` }];
   return claude(env, ctx, {
     model: env.MODEL_FAST || 'claude-haiku-5-5', effort: env.EFFORT_FAST || 'low',
-    system: studentProfile(b.name, b.year), content, schema: MORE_SCHEMA, maxTokens: 8000,
+    system: studentProfile(b.name, b.year, b.mine, yearNum(b), b.levels), content, schema: MORE_SCHEMA, maxTokens: 8000,
   });
 }
 
@@ -316,14 +373,14 @@ async function handleTutor(env, b, ctx) {
   const content = [{ type: 'text', text: `Pergunta (${b.subjectName || b.subject}): ${String(b.q || '').slice(0, 600)}
 ${b.options?.length ? `Opções: ${b.options.join(' | ')}` : ''}
 ${b.answer ? `Resposta correta (NÃO revele): ${b.answer}` : ''}
-${b.context ? `Contexto (texto que ela leu / assuntos): ${String(b.context).slice(0, 2000)}\n` : ''}${b.attempt ? `O que a aluna respondeu até agora: ${String(b.attempt).slice(0, 300)}` : 'A aluna ainda não respondeu.'}
+${b.context ? `Contexto (texto lido / assuntos): ${String(b.context).slice(0, 2000)}\n` : ''}${b.attempt ? `O que o estudante respondeu até agora: ${String(b.attempt).slice(0, 300)}` : 'O estudante ainda não respondeu.'}
 
-Você é a Lumi, uma corujinha tutora gentil. Escreva em ${lang === 'en' ? 'English' : 'português'} de 1 a 3 frases curtas para uma criança (${level(b)}):
+Você é a Lumi, uma corujinha tutora gentil. Escreva em ${lang === 'en' ? 'English' : 'português'} de 1 a 3 frases curtas para um estudante (${level(b)}):
 explique a ideia por trás da pergunta ou dê um exemplo parecido, SEM dizer a resposta e sem eliminar opções diretamente.
 Se ela já respondeu errado, diga com carinho onde pensar de novo.` }];
   return claude(env, ctx, {
     model: env.MODEL_FAST || 'claude-haiku-5-5', effort: 'low',
-    system: 'Você é uma tutora paciente para crianças. Nunca entregue a resposta.', content, schema: TUTOR_SCHEMA, maxTokens: 1500,
+    system: 'Você é uma tutora paciente para estudantes. Nunca entregue a resposta.', content, schema: TUTOR_SCHEMA, maxTokens: 1500,
   });
 }
 
@@ -334,7 +391,7 @@ async function handleGrade(env, b, ctx) {
   const list = qs.map((q, i) => `${i + 1}. [${q.type}] ${q.q}${q.options?.length ? ` (opções: ${q.options.join(' | ')})` : ''} → resposta esperada: ${q.type === 'open' ? '(resposta livre)' : q.answer}${q.accept?.length ? ` (também aceitar: ${q.accept.join(', ')})` : ''}`).join('\n');
   const content = [
     ...images.flatMap((img, i) => [{ type: 'text', text: `Foto ${i + 1} da folha respondida:` }, { type: 'image', source: { type: 'base64', media_type: img.type || 'image/jpeg', data: img.data } }]),
-    { type: 'text', text: `Esta é a folha impressa "${b.title || ''}" respondida à mão por uma criança (${level(b)}). As perguntas, na ordem impressa:
+    { type: 'text', text: `Esta é a folha impressa "${b.title || ''}" respondida à mão por um estudante (${level(b)}). As perguntas, na ordem impressa:
 ${list}
 
 Para cada número, transcreva em "read" o que ela escreveu ou marcou e dê o veredito:
@@ -346,7 +403,7 @@ Em "note", um comentário curto e gentil: quando errada, diga a forma certa; nas
   ];
   return claude(env, ctx, {
     model: env.MODEL_GRADE || env.MODEL_PLAN || 'claude-sonnet-5-5', effort: env.EFFORT_GRADE || 'medium',
-    system: 'Você corrige folhas de exercícios escritas à mão por crianças, com precisão e carinho.', content, schema: GRADE_SCHEMA, maxTokens: 8000,
+    system: 'Você corrige folhas de exercícios escritas à mão por estudantes, com precisão e carinho.', content, schema: GRADE_SCHEMA, maxTokens: 8000,
   });
 }
 
@@ -354,17 +411,17 @@ const LANG_NAME = l => (l === 'en' ? 'English' : 'português do Brasil');
 async function handleExplain(env, b, ctx) {
   const lang = b.lang === 'en' ? 'en' : 'pt';
   const content = [{ type: 'text', text: `Matéria: ${b.subjectName || b.subject}
-Pergunta que a aluna está estudando: ${String(b.q || '').slice(0, 600)}
+Pergunta que o estudante está estudando: ${String(b.q || '').slice(0, 600)}
 ${b.options?.length ? `Opções: ${b.options.join(' | ')}` : ''}
 ${b.context ? `Contexto (assuntos da semana e texto lido): ${String(b.context).slice(0, 2500)}` : ''}
 
-Explique, em ${LANG_NAME(lang)}, o CONTEÚDO por trás desta pergunta para uma criança (${level(b)}), como uma mini-aula:
+Explique, em ${LANG_NAME(lang)}, o CONTEÚDO por trás desta pergunta para um estudante (${level(b)}), como uma mini-aula:
 o conceito, por que ele importa e um exemplo do dia a dia.
 ${b.done ? `Ela já respondeu. A resposta correta é: ${b.answer || '(resposta livre)'}. Pode explicar por que essa resposta está certa.` : 'Ela ainda NÃO respondeu: explique o conceito sem dar a resposta desta pergunta (use outro exemplo).'}
 Fatos sempre corretos. Linguagem simples e animada, sem infantilizar.` }];
   return claude(env, ctx, {
     model: env.MODEL_EXPLAIN || env.MODEL_FAST || 'claude-haiku-5-5', effort: 'medium',
-    system: 'Você é a Lumi, uma corujinha professora que explica conteúdos escolares para crianças com clareza e precisão.', content, schema: EXPLAIN_SCHEMA, maxTokens: 4000,
+    system: 'Você é a Lumi, uma corujinha professora que explica conteúdos escolares para estudantes com clareza e precisão.', content, schema: EXPLAIN_SCHEMA, maxTokens: 4000,
   });
 }
 async function handleCheckOpen(env, b, ctx) {
@@ -372,8 +429,8 @@ async function handleCheckOpen(env, b, ctx) {
   if (!items.length) return { results: [] };
   const list = items.map((x, i) => `${i + 1}. (${x.subjectName || x.subject}; responder em ${LANG_NAME(x.lang)})
 Pergunta: ${String(x.q).slice(0, 500)}
-Resposta da aluna: ${String(x.answer || '').slice(0, 1200) || '(em branco)'}`).join('\n\n');
-  const content = [{ type: 'text', text: `Corrija estas respostas livres de uma aluna (${level(b)}).
+Resposta do estudante: ${String(x.answer || '').slice(0, 1200) || '(em branco)'}`).join('\n\n');
+  const content = [{ type: 'text', text: `Corrija estas respostas livres de um estudante (${level(b)}).
 ${b.context ? `Contexto (assuntos da semana e texto lido): ${String(b.context).slice(0, 2500)}\n` : ''}
 ${list}
 
@@ -381,7 +438,7 @@ Para cada número: "ok" se responde à pergunta de forma correta e razoável par
 "note": 1–2 frases gentis no idioma da pergunta, dizendo o que ficou bom e, se for o caso, o que faltou ou qual seria a ideia certa.` }];
   return claude(env, ctx, {
     model: env.MODEL_FAST || 'claude-haiku-5-5', effort: 'medium',
-    system: 'Você corrige respostas de crianças com justiça e carinho.', content, schema: OPEN_SCHEMA, maxTokens: 6000,
+    system: 'Você corrige respostas de estudantes com justiça e carinho.', content, schema: OPEN_SCHEMA, maxTokens: 6000,
   });
 }
 
@@ -489,7 +546,9 @@ async function api(req, env, url) {
     const b = await body(req);
     const child = me.children.find(c => c.id === b.childId);
     need(child);
-    b.name = child.name; b.year = YEAR_LABELS[child.year] || YEAR_LABELS.Y5;
+    b.name = child.name; b.yearId = YEAR_LABELS[child.year] ? child.year : 'Y5'; b.year = YEAR_LABELS[b.yearId];
+    b.mine = (Array.isArray(b.mine) ? b.mine : []).filter(x => SUBJECT_IDS.includes(x)).slice(0, 30);
+    b.levels = Object.fromEntries(Object.entries(b.levels && typeof b.levels === 'object' ? b.levels : {}).filter(([k, v]) => SUBJECT_IDS.includes(k) && (v === 'HL' || v === 'SL')));
     return json(await AI_HANDLERS[aiM[1]](env, b, { familyId, childId: child.id }));
   }
 
