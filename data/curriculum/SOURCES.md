@@ -1,3 +1,5 @@
+> **24/10/2026:** Guided Reading (`en_guided`) saiu do app; os arquivos dessa matéria foram removidos. As notas abaixo ficam como histórico.
+
 # Fontes do currículo de referência
 
 Currículo de referência usado pela 🪄 varinha mágica. Cada arquivo JSON também traz a fonte no campo `source`. É uma referência: cada escola organiza a sua sequência, e os pais podem ajustar as linhas no Admin.

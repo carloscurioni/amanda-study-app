@@ -48,5 +48,5 @@ Anos: Y1 ≈ Infantil 5 (5–6 anos) … Y5 ≈ 4º ano (9–10) … Y9 ≈ 8º 
 - Série de episódios: cada capítulo tem começo, meio e fim e dá para ler sozinho; a história avança (personagens fixos, gancho leve).
 - Tamanho de cada capítulo: Y1–Y2 120–200 palavras; Y3–Y6 250–400; Y7+ 400–600. Parágrafos separados por `\n`.
 - Planeje os capítulos para praticar a habilidade de leitura da semana (`topic`/`objectives`). Em `pt_lit`/`en_lit` (IGCSE/IB) podem ser contos/crônicas originais com recursos literários.
-- Cada capítulo: `title` ("Capítulo 1: …" / "Chapter 1: …"), `synopsis` (1–2 frases), `text`, e `questions` com 3 itens: 1 `open` pedindo o resumo em 2–3 frases e 2 de compreensão (`mc` ou `short`, começando com "No capítulo…" / "In the chapter…").
+- Cada capítulo: `title` ("Capítulo 1: …" / "Chapter 1: …"), `synopsis` (1–2 frases), `text`, e `questions` com 8 itens: 1 `open` pedindo o resumo em 2–3 frases e 7 de compreensão (das mais literais às de inferência) (`mc` ou `short`, começando com "No capítulo…" / "In the chapter…").
 - Sem personagens ou trechos de obras reais.

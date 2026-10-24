@@ -41,10 +41,9 @@ const DEFAULT_SETTINGS = {
   extraPerCorrect: 2,     // moedas por acerto nos exercícios extras
   extraSetSize: 5,        // perguntas por rodada de extras
   extraSetsPerDay: 3,     // rodadas de extras com moedas por dia
-  minPerDay: 3,           // mínimo de perguntas que o estudante pode escolher por dia
-  maxPerDay: 30,
-  countMode: 'auto',      // auto: 2 perguntas por matéria por dia (+ leitura); manual: números abaixo
-  perSubject: 2,          // perguntas de cada matéria por dia (modo automático)
+  perTheme: 2,            // perguntas de cada tema (matéria) por dia
+  readQ: { pt: 'auto', en: 'auto' }, // perguntas do texto do dia, por idioma: 'auto' (5–8 pelo tamanho/complexidade) ou 5–8
+  minPerDay: 3, maxPerDay: 30, countMode: 'auto', perSubject: 2,   // (antigos: não são mais usados)
   dailyReading: true,     // todo dia tem um texto (capítulo do "livro da semana") com resumo e perguntas
   readLevel: 'at',        // nível padrão do texto diário
   autoVoice: true,        // a Lumi lê as aulinhas em voz alta sozinha
@@ -71,7 +70,7 @@ const SUBJECTS = [
     ph: '1st line: book/chapter. Optional: paste a passage on the next lines.', help: 'book + passage' },
   { id: 'en_spell',  lang: 'en', group: 'en', icon: '🐝', short: 'Spelling',    name: 'English Spelling',       color: '#f08c00', kind: 'spelling',
     ph: 'Spelling words, comma separated: because, friend, believe…', help: 'words' },
-  { id: 'en_guided', lang: 'en', group: 'en', icon: '🔍', short: 'Guided Rdg',  name: 'Guided Reading',         color: '#0c8599', kind: 'guided',
+  { id: 'en_guided', lang: 'en', group: 'en', icon: '🔍', short: 'Guided Rdg',  name: 'Guided Reading',         retired: true, color: '#0c8599', kind: 'guided',
     ph: '1st line: guided reading book. Optional: paste a passage below.', help: 'book + passage' },
   { id: 'ipc',       lang: 'en', group: 'en', icon: '🌍', short: 'IPC',         name: 'IPC – International Primary Curriculum', color: '#087f5b', kind: 'social',
     ph: 'Unit: Solar System, Ancient Egypt, plants… (or "question = answer")', help: 'unit' },
@@ -129,7 +128,7 @@ function stageOf(year) {
 }
 const STAGE_LABEL = { primary: 'Primary (KS1–KS2)', ks3: 'Key Stage 3', igcse: 'IGCSE (KS4)', ib: 'IB Diploma Programme' };
 const STAGE_SUBJECTS = {
-  primary: ['pt', 'pt_ort', 'pt_leit', 'bss', 'en', 'en_read', 'en_spell', 'en_guided', 'ipc', 'math'],
+  primary: ['pt', 'pt_ort', 'pt_leit', 'bss', 'en', 'en_read', 'en_spell', 'ipc', 'math'],
   ks3: ['pt', 'pt_leit', 'bss', 'en', 'en_read', 'math', 'sci', 'hist', 'geog'],
   igcse: ['pt', 'pt_lit', 'bss', 'en', 'en_lit', 'math', 'bio', 'chem', 'phys', 'hist', 'geog'],
   ib: ['pt_lit', 'en_lit', 'math', 'bio', 'chem', 'econ', 'tok'],
@@ -138,7 +137,7 @@ const STAGE_SUBJECTS = {
 function mySubjects() {
   const st = S.settings || {};
   const list = st.subjectsCustom && Array.isArray(st.subjects) && st.subjects.length ? st.subjects : STAGE_SUBJECTS[stageOf(st.year)];
-  return SUBJECTS.map(x => x.id).filter(id => list.includes(id));
+  return SUBJECTS.filter(x => !x.retired).map(x => x.id).filter(id => list.includes(id));
 }
 function yearLabel(id) {
   const y = SCHOOL_YEARS.find(x => x[0] === id);
@@ -353,6 +352,9 @@ function normalizeState(s) {
   const merged = Object.assign(base, s || {});
   merged.settings = Object.assign(structuredCloneSafe(DEFAULT_SETTINGS), (s && s.settings) || {});
   merged.settings.counts = Object.assign({}, DEFAULT_SETTINGS.counts, ((s && s.settings) || {}).counts || {});
+  const ss = (s && s.settings) || {};
+  if (ss.perTheme == null && ss.perSubject) merged.settings.perTheme = ss.perSubject;   // quem já tinha "por matéria" herda
+  merged.settings.readQ = Object.assign({ pt: 'auto', en: 'auto' }, ss.readQ || {});
   merged.equipped = Object.assign(base.equipped, (s && s.equipped) || {});
   merged.practice = Object.assign({ pt: [], en: [] }, merged.practice || {});
   merged.touched = merged.touched || {};
@@ -503,7 +505,7 @@ async function detectServer() {
     const r = await fetch('/api/health', { cache: 'no-store' });
     if (!r.ok) return false;
     const j = await r.json();
-    Server.on = !!j.ok; Server.ai = !!j.ai; Server.needsSetup = !!j.setup; Server.canSetup = !!j.canSetup;
+    Server.on = !!j.ok; Server.ai = !!j.ai; Server.tts = !!j.tts; Server.needsSetup = !!j.setup; Server.canSetup = !!j.canSetup;
     return Server.on;
   } catch (e) { return false; }
 }
@@ -561,7 +563,7 @@ async function enterChild(id) {
   if (!st && Server.status === 'ok') pushState();
   startApp();
 }
-async function refreshMe() { Server.me = await apiCall('/api/auth/me'); Server.ai = Server.me.ai; return Server.me; }
+async function refreshMe() { Server.me = await apiCall('/api/auth/me'); Server.ai = Server.me.ai; Server.tts = !!Server.me.tts; return Server.me; }
 function afterLogin() {
   history.replaceState(null, '', location.pathname + (new URLSearchParams(location.search).get('hoje') ? `?hoje=${new URLSearchParams(location.search).get('hoje')}` : ''));
   const kids = Server.me.children;
@@ -1324,52 +1326,108 @@ function runTour() {
           listen (ditado com voz), open (resposta livre — pais corrigem)
    ========================================================================= */
 const speechOK = typeof window !== 'undefined' && 'speechSynthesis' in window;
+// Ditado (perguntas "listen"): mesma voz da Lumi, um pouco mais devagar
 function speak(text, lang) {
-  if (!speechOK || !S.settings.voice) { toast('🔇 Voz indisponível neste navegador'); return; }
-  try {
-    speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = lang === 'pt' ? 'pt-BR' : 'en-GB';
-    const v = bestVoice(lang); if (v) u.voice = v;
-    u.rate = .85;
-    speechSynthesis.speak(u);
-  } catch (e) { /* ignora */ }
+  if (!S.settings.voice) { toast('🔇 Voz desligada nos Ajustes'); return; }
+  lumiSpeak(esc(String(text || '')), lang === 'en' ? 'en' : 'pt', null, { rate: .85 });
 }
-// A Lumi fala: escolhe a voz mais natural disponível e lê textos longos em pedaços (frase a frase).
+/* Voz da Lumi
+   1) Voz natural (servidor, Google Cloud Text-to-Speech) quando a chave estiver configurada — padrão.
+   2) Senão, a melhor voz do aparelho: neural/natural/aprimorada antes das compactas, ou a escolhida nos Ajustes. */
+const VOICE_LANG = { pt: ['pt-br', 'pt'], en: ['en-gb', 'en-us', 'en'] };
+function deviceVoices(lang) {
+  if (!speechOK) return [];
+  const want = VOICE_LANG[lang === 'en' ? 'en' : 'pt'];
+  return speechSynthesis.getVoices().filter(v => v.lang && want.some(w => v.lang.replace('_', '-').toLowerCase().startsWith(w)));
+}
+function voiceScore(v, lang) {
+  const n = v.name || ''; const l = (v.lang || '').replace('_', '-').toLowerCase();
+  let sc = 0;
+  if (/natural|neural|online/i.test(n)) sc += 100;                       // Edge/Windows (Francisca Online (Natural)…)
+  if (/premium|enhanced|melhorad|aprimorad|siri/i.test(n)) sc += 80;     // iPhone/iPad/Mac com voz baixada
+  if (/google/i.test(n)) sc += 60;                                        // Chrome/Android
+  if (v.localService === false) sc += 20;
+  if (/compact|espeak|e-speak|robot/i.test(n)) sc -= 80;
+  if (l === VOICE_LANG[lang === 'en' ? 'en' : 'pt'][0]) sc += 30;         // pt-BR / en-GB exatos
+  return sc;
+}
 function bestVoice(lang) {
-  if (!speechOK) return null;
-  const want = lang === 'en' ? ['en-GB', 'en-US', 'en'] : ['pt-BR', 'pt-PT', 'pt'];
-  const vs = speechSynthesis.getVoices();
-  for (const w of want) {
-    const list = vs.filter(v => v.lang && v.lang.replace('_', '-').toLowerCase().startsWith(w.toLowerCase()));
-    if (list.length) return list.find(v => /natural|neural|google|premium|enhanced|luciana|francisca|thalita|serena|libby|sonia/i.test(v.name)) || list[0];
-  }
-  return null;
+  const list = deviceVoices(lang); if (!list.length) return null;
+  const pick = (S.settings.deviceVoice || {})[lang === 'en' ? 'en' : 'pt'];
+  const chosen = pick && list.find(v => v.voiceURI === pick || v.name === pick);
+  return chosen || list.slice().sort((a, b) => voiceScore(b, lang) - voiceScore(a, lang))[0];
 }
 function plainForSpeech(html) {
   const d = document.createElement('div'); d.innerHTML = String(html || '');
   return d.textContent.replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}\u{200D}]/gu, '').replace(/\s+/g, ' ').trim();
 }
-let talkId = 0;
-function lumiSpeak(html, lang = 'pt', onEnd) {
-  if (!speechOK) { toast('🔇 Voz indisponível neste navegador'); return; }
+// Trechos para falar: frases juntas até ~maxLen (o 1º trecho é curto, para começar logo)
+function speechChunks(text, firstMax, maxLen) {
+  const sents = text.match(/[^.!?…]+[.!?…]+["”»')]*\s*|[^.!?…]+$/g) || [text];
+  const out = []; let cur = '';
+  sents.forEach(x => { const lim = out.length ? maxLen : firstMax; if (cur && (cur + x).length > lim) { out.push(cur.trim()); cur = ''; } cur += x; });
+  if (cur.trim()) out.push(cur.trim());
+  return out;
+}
+let talkId = 0, talkAudio = null;
+const useNaturalVoice = () => !!(Server.tts && Server.me && Server.childId && S.settings.naturalVoice !== false);
+const TTS_CACHE = new Map();
+function ttsFetch(text, lang) {
+  const k = lang + '|' + text;
+  if (!TTS_CACHE.has(k)) {
+    TTS_CACHE.set(k, fetch('/api/tts', { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-lumi': '1' }, body: JSON.stringify({ text, lang, childId: Server.childId }) })
+      .then(r => { if (!r.ok) throw Object.assign(new Error('tts ' + r.status), { status: r.status }); return r.blob(); })
+      .then(b => URL.createObjectURL(b))
+      .catch(e => { TTS_CACHE.delete(k); throw e; }));
+    if (TTS_CACHE.size > 60) TTS_CACHE.delete(TTS_CACHE.keys().next().value);
+  }
+  return TTS_CACHE.get(k);
+}
+function lumiSpeak(html, lang = 'pt', onEnd, opt = {}) {
   const text = plainForSpeech(html); if (!text) return;
+  lumiStop();
   const id = ++talkId;
-  speechSynthesis.cancel();
-  const parts = text.match(/[^.!?…]+[.!?…]*\s*/g) || [text];
+  if (useNaturalVoice()) {
+    const parts = speechChunks(text, 220, 1500);
+    let i = 0;
+    const play = () => {
+      if (id !== talkId) return;
+      if (i >= parts.length) { onEnd && onEnd(); return; }
+      const cur = ttsFetch(parts[i], lang); if (i + 1 < parts.length) ttsFetch(parts[i + 1], lang).catch(() => {});   // já pede o próximo trecho
+      cur.then(url => {
+        if (id !== talkId) return;
+        const a = talkAudio = new Audio(url); a.playbackRate = opt.rate && opt.rate < 1 ? .9 : 1;
+        a.onended = () => { i++; play(); }; a.onerror = () => { i++; play(); };
+        a.play().catch(() => { if (id === talkId) deviceSpeak(parts.slice(i).join(' '), lang, onEnd, opt, id); });
+      }).catch(() => { if (id === talkId) deviceSpeak(parts.slice(i).join(' '), lang, onEnd, opt, id); });   // sem voz natural: voz do aparelho
+    };
+    play();
+    return;
+  }
+  deviceSpeak(text, lang, onEnd, opt, id);
+}
+function deviceSpeak(text, lang, onEnd, opt, id) {
+  if (!speechOK) { toast('🔇 Voz indisponível neste aparelho'); onEnd && onEnd(); return; }
+  try { speechSynthesis.cancel(); } catch (e) { /* ignora */ }
+  const parts = speechChunks(text, 180, 220);   // trechos médios: sem pausas picadas e sem o corte de falas longas do Chrome
   const v = bestVoice(lang);
   let i = 0;
   const next = () => {
     if (id !== talkId) return;
     if (i >= parts.length) { onEnd && onEnd(); return; }
-    const u = new SpeechSynthesisUtterance(parts[i++].trim());
-    u.lang = lang === 'en' ? 'en-GB' : 'pt-BR'; if (v) u.voice = v; u.rate = .95; u.pitch = 1.1;
+    const u = new SpeechSynthesisUtterance(parts[i++]);
+    u.lang = v ? v.lang : (lang === 'en' ? 'en-GB' : 'pt-BR'); if (v) u.voice = v;
+    u.rate = opt.rate || 1; u.pitch = 1;
     u.onend = next; u.onerror = next;
     try { speechSynthesis.speak(u); } catch (e) { /* ignora */ }
   };
   next();
 }
-function lumiStop() { talkId++; if (speechOK) try { speechSynthesis.cancel(); } catch (e) { /* ignora */ } }
+function lumiStop() {
+  talkId++;
+  if (talkAudio) { try { talkAudio.pause(); } catch (e) { /* ignora */ } talkAudio = null; }
+  if (speechOK) try { speechSynthesis.cancel(); } catch (e) { /* ignora */ }
+}
 // Botão 🔊 que lê/para um trecho
 function speakBtn(sel, lang) { return `<button type="button" class="btn small speak-btn" data-speak="${sel}" data-lang="${lang}" title="${lang === 'en' ? 'Listen' : 'Ouvir'}" aria-label="${lang === 'en' ? 'Listen' : 'Ouvir a Lumi'}">🔊</button>`; }
 function bindSpeak(root) {
@@ -1945,8 +2003,13 @@ function regenerateDays(week, dates, nonce = '') {
       const openCap = Math.max(2, Math.ceil(N * 0.3));
       let openCount = qs.filter(q => q.type === 'open').length;
       let i = 0, stall = 0;
+      const cnt = id => qs.filter(q => q.subject === id).length;
+      const daily = (week.passages || []).length > 0;   // com texto diário, leitura só vem do texto do dia
       while (qs.length < N && stall < act.length * 3) {
-        const sid = daySubj[i % daySubj.length]; i++;
+        // completa primeiro o tema que está com menos perguntas no dia (equilíbrio por tema)
+        const cands = daySubj.filter(id => pools[id] && pools[id].length && !(daily && isRead(id)));
+        if (!cands.length) { const extra = act.filter(a => !daySubj.includes(a) && pools[a] && pools[a].length && !(daily && isRead(a))); if (!extra.length) break; daySubj = daySubj.concat(extra); continue; }
+        const sid = cands.reduce((m, id) => (cnt(id) < cnt(m) ? id : m), cands[(i++) % cands.length]);
         const pool = pools[sid];
         if (!pool || !pool.length) {
           stall++;
@@ -1976,7 +2039,7 @@ function dayState(day) {
   return 'late';
 }
 // Recompensa e penalidade proporcionais aos dias obrigatórios: semana começada na sexta vale 1/7.
-function weekFullDays() { return CYCLE.filter(dk => (S.settings.counts[dk] || 0) > 0).length || 7; }
+function weekFullDays() { return CYCLE.length; }   // todo dia tem tarefa
 function weekReward(w) { return Math.round(S.settings.reward * Math.min(1, requiredDays(w).length / weekFullDays())); }
 function weekPenalty(w) { return Math.round(S.settings.penalty * Math.min(1, requiredDays(w).length / weekFullDays())); }
 function weekAllDone(w) { return Object.values(w.days).filter(d => d.required).every(d => d.status === 'done'); }
@@ -2267,12 +2330,15 @@ function openExtras() {
   if (S.extra && S.extra.date === t && S.extra.status !== 'done') { VIEW.work = { kind: 'extra' }; show('work'); return; }
   const ex = S.extras[t] || { sets: 0 };
   const left = Math.max(0, S.settings.extraSetsPerDay - ex.sets);
-  const langs = bookLangs();
+  // texto extra: o idioma que NÃO está no texto do dia (sem texto hoje: os dois)
+  const todayLangs = S.week && S.week.days[t] ? dayPassages(S.week.days[t]).map(x => SUBJ[x.subject].lang) : [];
+  const other = ['pt', 'en'].filter(l => !todayLangs.includes(l));
+  const langs = todayLangs.length && other.length ? other : bookLangs();
   const books = S.books || {};
   const missed = (S.missed || []).length;
   const c = openModal(`<div class="modal-head"><h3>⭐ Exercícios extras</h3><button class="btn small" data-close>Fechar</button></div>
     <div class="modal-body extras-menu"><p class="tiny muted" style="margin:0 0 6px">${left ? `Valem <b>${S.settings.extraPerCorrect} 🪙 por acerto</b> · ${left} rodada${left > 1 ? 's' : ''} com moedas hoje.` : 'As rodadas com moedas de hoje acabaram: agora é só treino. 💪'}</p>
-    ${Server.ai && langs.length ? `<div class="xm-sec"><b>📖 Livro extra</b> <span class="tiny muted">um capítulo novo + resumo + perguntas</span>
+    ${Server.ai && langs.length ? `<div class="xm-sec"><b>📖 Texto extra</b> <span class="tiny muted">${todayLangs.length && other.length ? `hoje o texto foi em ${todayLangs[0] === 'pt' ? 'português' : 'inglês'}, então o extra é em ${other[0] === 'pt' ? 'português' : 'inglês'}` : 'um capítulo novo + resumo + perguntas'}</span>
       <div class="extra-grid">${langs.map(l => `<button class="btn big" data-book="${l}">${l === 'pt' ? '🇧🇷 Em português' : '🇬🇧 In English'}<span class="tiny muted">${books[l] && books[l].title ? `continua “${esc(books[l].title)}” · cap. ${books[l].chapters.length + 1}` : 'começa um livro novo'}</span></button>`).join('')}</div></div>` : ''}
     ${missed ? `<div class="xm-sec"><b>🧠 Reforço</b> <span class="tiny muted">${missed} pergunta${missed > 1 ? 's' : ''} que você errou ou não sabia</span>
       <div class="extra-grid one"><button class="btn big gold" data-review>🧠 Treinar o que eu errei</button></div></div>` : ''}
@@ -2299,13 +2365,13 @@ async function startReading(lang) {
   const stop = showLoading(lang === 'en' ? ['Writing a new chapter… 📚', 'Inventing the characters… 🧚', 'Almost ready!'] : ['Escrevendo um capítulo novo… 📚', 'Imaginando os personagens… 🧚', 'Quase pronto!']);
   let r;
   try {
-    r = await apiCall('/api/reading', { method: 'POST', timeout: 150000, data: { lang, level: S.settings.readLevel || 'at',
+    r = await apiCall('/api/reading', { method: 'POST', timeout: 150000, data: { lang, level: S.settings.readLevel || 'at', n: readQ(lang),
       bookTitle: book ? book.title : '', chapters: book ? book.chapters : [] } });
   } catch (e) { stop(); say(`Não consegui escrever o capítulo agora (${esc(e.message)}). Tente o quiz extra!`, { mood: 'sad' }); return; }
   stop();
   const subject = mySubjects().find(id => isRead(id) && SUBJ[id].lang === lang) || (lang === 'en' ? 'en_read' : 'pt_leit');
   const qs = validateImported({ questions: (r.questions || []).map(q => Object.assign({}, q, { subject })) }).ok;
-  if (!r.text || qs.length < 2) { say('O capítulo veio incompleto. Tente de novo! 🙂', { mood: 'think' }); return; }
+  if (!r.text || !qs.length) { say('O capítulo veio incompleto. Tente de novo! 🙂', { mood: 'think' }); return; }
   const same = book && book.title === r.bookTitle;
   S.books[lang] = { title: r.bookTitle, chapters: (same ? book.chapters : []).concat([{ title: r.title, summary: r.summary }]).slice(-12) };
   S.extra = { date: t, paid, group: 'book', status: 'todo', passage: { subject, title: `${r.bookTitle} — ${r.title}`, text: r.text },
@@ -2382,11 +2448,9 @@ function renderSetup() {
   const w = S.week;
   const editing = w && !w.settled && VIEW.setupCycle !== 'next';
   const topics = VIEW.draftTopics || (editing ? w.topics : Object.assign({}, S.lastTopics));
-  const counts = VIEW.draftCounts || (editing ? Object.assign({}, w.counts) : Object.assign({}, S.settings.counts));
-  VIEW.draftTopics = topics; VIEW.draftCounts = counts;
+  VIEW.draftTopics = topics;
   const subs = SUBJECTS.filter(s => s.group === VIEW.setupTab && mySubjects().includes(s.id));
   const nFill = mySubjects().filter(id => (topics[id] || '').trim()).length || 3;
-  VIEW.autoShown = isAuto() ? autoCounts(nFill, false) : null;
   const fields = subs.map(s => `<div class="topic" style="--subj:${s.color}"><label for="tp-${s.id}">${s.icon} ${esc(s.name)}<span class="help">${esc(s.help)}</span></label>
       <textarea id="tp-${s.id}" data-sid="${s.id}" placeholder="${esc(s.ph)}">${esc(topics[s.id] || '')}</textarea></div>`).join('');
   const pending = (S.pendingImport || []).length;
@@ -2396,13 +2460,13 @@ function renderSetup() {
       <span class="muted tiny grow">O que você aprendeu na escola esta semana?</span></div>
     ${wandBarHtml()}
     <div class="topic-grid">${fields}</div>
-    ${countsAndCycleHtml(editing, counts, VIEW.autoShown)}
+    ${countsAndCycleHtml(editing, nFill, false)}
     ${pending ? `<div class="notice info">📥 ${pending} perguntas importadas pelos pais serão incluídas.</div>` : ''}
     <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? 'Atualizar tarefas ✨' : 'Criar tarefas da semana ✨'}</button></div>
   </div>`;
   $$('[data-tab]', el).forEach(b => b.onclick = () => { collectDraft(); VIEW.setupTab = b.dataset.tab; renderSetup(); });
   $$('textarea[data-sid]', el).forEach(ta => ta.oninput = () => { VIEW.draftTopics[ta.dataset.sid] = ta.value; });
-  bindCountsAndCycle(el, counts, () => { collectDraft(); renderSetup(); });
+  bindCountsAndCycle(el, () => { collectDraft(); renderSetup(); });
   bindWand(el);
   const ai = $('[data-act=ai]', el); if (ai) ai.onclick = () => { VIEW.setupMode = null; renderSetup(); };
   $('[data-act=cancel]', el).onclick = () => { resetDraft(); show('home'); };
@@ -2412,12 +2476,20 @@ function cleanPassages(list) { return (list || []).filter(x => x && SUBJ[x.subje
 function dayPassages(d) { if (d && d.passage) return [d.passage]; if (d && d.recPassages) return d.recPassages; return S.week && d ? (S.week.passages || []).filter(x => x.day === d.dow) : []; }
 const ctxTopics = c => c.rec && S.recovery ? S.recovery.topicsText : weekTopicsText(S.week);
 function resetDraft() { VIEW.wand = null; VIEW.draftOpt = null; VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.draftText = null; VIEW.draftSubj = null; VIEW.draftImages = null; VIEW.openSubj = null; VIEW.setupCycle = null; }
-// Quantidade automática: ~2 perguntas de cada matéria por dia (+3 da leitura do dia). Fim de semana +2, sexta −2.
-function autoCounts(nSubj, reading) {
-  const per = clamp(Number(S.settings.perSubject) || 2, 1, 4);
-  const base = per * Math.max(1, nSubj) + (reading ? 3 : 0);
+// Quantidade de perguntas: só 3 variáveis — perguntas por tema, e perguntas do texto em português / em inglês.
+// Total do dia = por tema × temas + perguntas do texto do dia (pelo idioma do texto). Sem mínimo/máximo.
+const perTheme = () => clamp(Math.round(Number(S.settings.perTheme) || 2), 1, 6);
+// Perguntas do texto: 5 a 8, pelo tamanho e complexidade do texto (ano escolar e nível de leitura), ou fixo pelos pais.
+function readQAuto(level) {
+  const n = Number(String(S.settings.year || 'Y5').slice(1)) || 5;
+  const base = n <= 2 ? 5 : n <= 6 ? 6 : n <= 9 ? 7 : 8;
+  return clamp(base + (['above', 'way'].includes(level || S.settings.readLevel) ? 1 : 0), 5, 8);
+}
+const readQSet = lang => { const v = (S.settings.readQ || {})[lang === 'en' ? 'en' : 'pt']; return v === 'auto' || v == null ? 'auto' : clamp(Math.round(Number(v)) || 6, 5, 8); };
+const readQ = (lang, level) => { const v = readQSet(lang); return v === 'auto' ? readQAuto(level) : v; };
+function dayCounts(nThemes, readPlan) {
   const out = {};
-  CYCLE.forEach(dk => { out[dk] = clamp(base + (['sab', 'dom'].includes(dk) ? 2 : dk === 'sex' ? -2 : 0), S.settings.minPerDay, S.settings.maxPerDay); });
+  CYCLE.forEach((dk, i) => { const rs = readPlan && readPlan[i]; out[dk] = perTheme() * Math.max(1, nThemes) + (rs ? readQ(SUBJ[rs].lang, (VIEW.draftOpt || {})[rs]) : 0); });
   return out;
 }
 // Leitura diária: qual matéria de leitura em cada dia (alterna português e inglês quando houver as duas).
@@ -2427,7 +2499,6 @@ function readingPlan() {
   const pt = rs.find(id => SUBJ[id].lang === 'pt'); const en = rs.find(id => SUBJ[id].lang === 'en');
   return CYCLE.map((dk, i) => (pt && en) ? (i % 2 ? en : pt) : (pt || en || null));
 }
-const isAuto = () => S.settings.countMode !== 'manual';
 function setupCycleDefaults() {
   const t = today(); const w = S.week;
   const editing = w && !w.settled && VIEW.setupCycle !== 'next';
@@ -2436,37 +2507,41 @@ function setupCycleDefaults() {
   if (w && w.settled === 'delivered' && w.start === thisStart) VIEW.setupCycle = 'next';
   return editing;
 }
-function countsAndCycleHtml(editing, counts, auto) {
+function qTotText(nThemes, rp) {
+  const tot = Object.values(dayCounts(nThemes, rp)); const lo = Math.min(...tot), hi = Math.max(...tot);
+  return `≈ ${lo}${hi > lo ? '–' + hi : ''} por dia · ${nThemes} tema${nThemes > 1 ? 's' : ''} × ${perTheme()}${rp && rp.some(Boolean) ? ' + texto do dia' : ''}`;
+}
+function rqSelect(l, label, id = '') {
+  const v = readQSet(l);
+  return `<label class="qstep"><span class="qs-lbl">${label}</span><select ${id ? `id="${id}"` : `data-rq="${l}"`} class="qs-sel"><option value="auto" ${v === 'auto' ? 'selected' : ''}>Automático (${readQAuto()})</option>${[5, 6, 7, 8].map(n => `<option value="${n}" ${v === n ? 'selected' : ''}>${n} perguntas</option>`).join('')}</select></label>`;
+}
+function countsAndCycleHtml(editing, nThemes, withReading) {
   const t = today(); const w = S.week;
   const thisStart = cycleStartOf(t); const nextStart = addDays(thisStart, 7);
-  const countBoxes = CYCLE.map(dk => {
-    const lockedDay = editing && (() => { const d = Object.values(w.days).find(x => x.dow === dk); return d && (d.status === 'done' || dayStarted(d) || d.date < t); })();
-    return `<div class="count-box"><div class="lbl">${DOW_LABEL[dk]}${['sab', 'dom'].includes(dk) ? ' ★' : ''}</div><div class="val">${counts[dk]}</div>
-      <div class="pm"><button data-c="${dk}" data-d="-1" ${lockedDay ? 'disabled' : ''} aria-label="menos">−</button><button data-c="${dk}" data-d="1" ${lockedDay ? 'disabled' : ''} aria-label="mais">+</button></div></div>`;
-  }).join('');
+  const rp = withReading ? readingPlan() : null;
+  const langs = rp ? [...new Set(rp.filter(Boolean).map(id => SUBJ[id].lang))] : [];
+  const step = (k, label, val) => `<div class="qstep"><span class="qs-lbl">${label}</span><span class="qs-pm"><button type="button" data-qs="${k}" data-d="-1" aria-label="menos">−</button><b>${val}</b><button type="button" data-qs="${k}" data-d="1" aria-label="mais">+</button></span></div>`;
+  const qbox = `<div class="qcount"><div class="row wrap"><b>Perguntas</b><span class="muted tiny grow" id="qtot">${qTotText(nThemes, rp)}</span></div>
+    <div class="qsteps">${step('theme', '🗂️ Por tema', perTheme())}${langs.map(l => rqSelect(l, l === 'pt' ? '📖 Texto em português' : '📖 Texto em inglês')).join('')}</div>
+    ${langs.length ? `<div class="tiny muted">${langs.length > 1 ? 'Cada dia tem um texto, alternando português e inglês.' : `Cada dia tem um texto em ${langs[0] === 'pt' ? 'português' : 'inglês'}.`} 5 a 8 perguntas (1 de resumo + compreensão); no automático, quanto maior e mais complexo o texto, mais perguntas.</div>` : ''}</div>`;
   const cycle = editing
     ? `<div class="notice info">Editando a semana ${fmtDM(w.start)}–${fmtDM(w.end)}. Só os dias <b>ainda não começados</b> serão refeitos.</div>`
     : `<div class="radio-row">
         <label><input type="radio" name="cyc" value="this" ${VIEW.setupCycle === 'this' ? 'checked' : ''} ${(w && w.start === thisStart && w.settled) ? 'disabled' : ''}> Esta semana (hoje → sex ${fmtDM(addDays(thisStart, 6))})</label>
         <label><input type="radio" name="cyc" value="next" ${VIEW.setupCycle === 'next' ? 'checked' : ''}> Próxima semana (sáb ${fmtDM(nextStart)} → sex ${fmtDM(addDays(nextStart, 6))})</label></div>`;
-  if (auto) {
-    return `<div class="row wrap"><b>Perguntas por dia</b> <span class="muted tiny grow">automático: ~${S.settings.perSubject || 2} de cada matéria${Server.ai && S.settings.dailyReading && readingPlan().some(Boolean) ? ' + 3 da leitura do dia' : ''} · fim de semana ★ um pouco mais</span>
-        <button type="button" class="btn small ghost" data-act="manual">✋ Ajustar à mão</button></div>
-      <div class="counts auto">${CYCLE.map(dk => `<div class="count-box"><div class="lbl">${DOW_LABEL[dk]}${['sab', 'dom'].includes(dk) ? ' ★' : ''}</div><div class="val">${auto[dk]}</div></div>`).join('')}</div>${cycle}`;
-  }
-  return `<div class="row wrap"><b>Perguntas por dia</b> <span class="muted tiny grow">(mín. ${S.settings.minPerDay}, máx. ${S.settings.maxPerDay} · fim de semana ★ um pouco mais)</span>
-      <button type="button" class="btn small ghost" data-act="auto">↺ Automático</button></div>
-    <div class="counts">${countBoxes}</div>${cycle}`;
+  return qbox + cycle;
 }
-function bindCountsAndCycle(el, counts, rerender) {
-  $$('[data-c]', el).forEach(b => b.onclick = () => {
-    const dk = b.dataset.c; const v = clamp((counts[dk] || 0) + Number(b.dataset.d), 0, S.settings.maxPerDay);
-    counts[dk] = v > 0 && v < S.settings.minPerDay ? (Number(b.dataset.d) > 0 ? S.settings.minPerDay : 0) : v;
-    rerender();
+function bindCountsAndCycle(el, rerender) {
+  $$('[data-qs]', el).forEach(b => b.onclick = () => {
+    const k = b.dataset.qs, d = Number(b.dataset.d);
+    if (k === 'theme') S.settings.perTheme = clamp(perTheme() + d, 1, 6);
+    touch('settings'); save(); rerender();
+  });
+  $$('[data-rq]', el).forEach(sel => sel.onchange = () => {
+    S.settings.readQ = Object.assign({ pt: 'auto', en: 'auto' }, S.settings.readQ, { [sel.dataset.rq]: sel.value === 'auto' ? 'auto' : Number(sel.value) });
+    touch('settings'); save(); rerender();
   });
   $$('input[name=cyc]', el).forEach(r => r.onchange = () => { VIEW.setupCycle = r.value; });
-  const man = $('[data-act=manual]', el); if (man) man.onclick = () => { if (VIEW.autoShown) Object.assign(counts, VIEW.autoShown); S.settings.countMode = 'manual'; save(); rerender(); };
-  const au = $('[data-act=auto]', el); if (au) au.onclick = () => { S.settings.countMode = 'auto'; save(); rerender(); };
 }
 
 // Planejamento em linguagem natural: ano escolar + uma seção (que abre e fecha) por matéria + fotos opcionais.
@@ -2479,12 +2554,10 @@ function renderSetupAI() {
   if (!S.settings.year) { S.settings.year = 'Y5'; save(); }
   if (!VIEW.draftImages) VIEW.draftImages = [];
   if (!VIEW.openSubj) VIEW.openSubj = {};
-  const counts = VIEW.draftCounts || (editing ? Object.assign({}, w.counts) : Object.assign({}, S.settings.counts));
-  VIEW.draftCounts = counts;
   const thumbs = VIEW.draftImages.map((im, i) => `<div class="thumb"><img src="data:${im.type};base64,${im.data}" alt="Foto ${i + 1}"><button data-rm="${i}" aria-label="Remover foto">✕</button></div>`).join('');
   const mine = mySubjects().map(id => SUBJ[id]);
   const filled = mine.filter(sb => subjFilled(sb.id)).length;
-  VIEW.autoShown = isAuto() ? autoCounts(mine.filter(sb => subjFilled(sb.id) && !(S.settings.dailyReading && isRead(sb.id))).length || 4, readingPlan().some(Boolean)) : null;
+  const nThemesAI = () => mySubjects().filter(id => subjFilled(id) && !(S.settings.dailyReading && isRead(id))).length || 4;
   const section = sb => {
     const txt = VIEW.draftSubj[sb.id] || '';
     const has = subjFilled(sb.id);
@@ -2523,7 +2596,7 @@ function renderSetupAI() {
       </div>
       ${thumbs ? `<div class="thumbs">${thumbs}</div>` : ''}
     </div>
-    ${countsAndCycleHtml(editing, counts, VIEW.autoShown)}
+    ${countsAndCycleHtml(editing, nThemesAI(), true)}
     <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? '✨ Atualizar a semana' : '✨ Criar minha semana com a Lumi'}</button></div>
     <button class="btn ghost small" data-act="subjects">Prefiro o gerador do próprio app (sem o Claude)</button>
   </div>`;
@@ -2544,10 +2617,7 @@ function renderSetupAI() {
     ta.oninput = () => { VIEW.draftSubj[ta.dataset.subj] = ta.value; };
     ta.onblur = () => { const d = ta.closest('details'); const has = subjFilled(ta.dataset.subj);
       $('.sa-st', d).textContent = has ? '✅' : '＋';
-      if (isAuto()) {   // atualiza só os números (sem redesenhar a tela, para não perder o toque)
-        VIEW.autoShown = autoCounts(mySubjects().filter(id => subjFilled(id) && !(S.settings.dailyReading && isRead(id))).length || 4, readingPlan().some(Boolean));
-        $$('.counts.auto .val', el).forEach((v, i) => { v.textContent = VIEW.autoShown[CYCLE[i]]; });
-      }
+      const qt = $('#qtot', el); if (qt) qt.textContent = qTotText(nThemesAI(), readingPlan());   // atualiza só o total (sem redesenhar a tela)
       if (ta.value.trim()) $('.sa-prev', d).textContent = ta.value.trim().slice(0, 50) + (ta.value.trim().length > 50 ? '…' : ''); };
   });
   $('#ph', el).onchange = async e => {
@@ -2556,7 +2626,7 @@ function renderSetupAI() {
     renderSetupAI();
   };
   $$('[data-rm]', el).forEach(btn => btn.onclick = () => { VIEW.draftImages.splice(Number(btn.dataset.rm), 1); renderSetupAI(); });
-  bindCountsAndCycle(el, counts, () => renderSetupAI());
+  bindCountsAndCycle(el, () => renderSetupAI());
   bindWand(el);
   $('[data-act=cancel]', el).onclick = () => { resetDraft(); show('home'); };
   $('[data-act=subjects]', el).onclick = () => { VIEW.setupMode = 'subjects'; renderSetup(); };
@@ -2587,8 +2657,8 @@ function pickSubjects(after) {
   const row = sb => `<label class="pick ${sel.has(sb.id) ? 'on' : ''}" style="--subj:${sb.color}"><input type="checkbox" value="${sb.id}" ${sel.has(sb.id) ? 'checked' : ''}><span>${sb.icon}</span> <span class="grow">${esc(sb.name)}${STAGE_SUBJECTS[stage].includes(sb.id) ? ' <i class="tiny muted">sugerida</i>' : ''}</span>${ib && sb.id !== 'tok' ? hl(sb.id) : ''}</label>`;
   const c = openModal(`<div class="modal-head"><h3>📚 Minhas matérias</h3><button class="btn small" data-close>Fechar</button></div>
     <div class="modal-body"><p class="tiny muted" style="margin:0 0 8px">Marque as matérias que você faz${S.settings.year ? ` (${esc((SCHOOL_YEARS.find(y => y[0] === S.settings.year) || [])[1] || '')} · ${STAGE_LABEL[stage]})` : ''}. Só elas aparecem no planejamento e nos extras.${ib ? ' No IB, marque também se é <b>HL</b> (Higher Level) ou <b>SL</b> (Standard Level) — a Lumi ajusta a dificuldade.' : ''}</p>
-      <div class="acc-title">🇧🇷 Em português</div><div class="pick-grid">${SUBJECTS.filter(x => x.group === 'pt').map(row).join('')}</div>
-      <div class="acc-title">🇬🇧 In English</div><div class="pick-grid">${SUBJECTS.filter(x => x.group === 'en').map(row).join('')}</div></div>
+      <div class="acc-title">🇧🇷 Em português</div><div class="pick-grid">${SUBJECTS.filter(x => x.group === 'pt' && !x.retired).map(row).join('')}</div>
+      <div class="acc-title">🇬🇧 In English</div><div class="pick-grid">${SUBJECTS.filter(x => x.group === 'en' && !x.retired).map(row).join('')}</div></div>
     <div class="modal-foot"><button class="btn" data-act="sugg">↺ Usar as sugeridas</button><button class="btn primary grow" data-act="ok">Salvar</button></div>`);
   $$('input[type=checkbox]', c).forEach(ch => ch.onchange = () => ch.closest('label').classList.toggle('on', ch.checked));
   $$('.hlsl button', c).forEach(b => b.onclick = e => {
@@ -2638,7 +2708,7 @@ async function generateWithClaude(editing) {
   if (!text && !images.length) { say('Abra pelo menos uma matéria e me conta o que você está aprendendo (ou manda uma foto do worksheet)! ✍️', { mood: 'think' }); return; }
   const readPlan = Server.ai ? readingPlan() : CYCLE.map(() => null);
   const nSubj = mineList.filter(sb => subjFilled(sb.id) && !(S.settings.dailyReading && isRead(sb.id))).length || 4;
-  const counts = isAuto() ? autoCounts(nSubj, readPlan.some(Boolean)) : Object.assign({}, VIEW.draftCounts);
+  const counts = dayCounts(nSubj, readPlan);
   const t = today();
   // Quais dias vão receber perguntas
   let start, from, redo = null;
@@ -2653,12 +2723,12 @@ async function generateWithClaude(editing) {
   }
   const dates = CYCLE.map((_, i) => addDays(start, i)).filter(d => d >= from && (!redo || redo.includes(d)));
   const days = dates.map(d => { const dk = dowOf(d); const rs = readPlan[CYCLE.indexOf(dk)];
-    return { dow: dk, label: `${DOW_FULL[dk]} ${fmtDM(d)}`, n: counts[dk] || 0, read: rs ? { subject: rs, level: (VIEW.draftOpt || {})[rs] || S.settings.readLevel || 'at' } : null }; }).filter(d => d.n > 0);
+    return { dow: dk, label: `${DOW_FULL[dk]} ${fmtDM(d)}`, n: counts[dk] || 0, read: rs ? { subject: rs, level: (VIEW.draftOpt || {})[rs] || S.settings.readLevel || 'at', n: readQ(SUBJ[rs].lang, (VIEW.draftOpt || {})[rs]) } : null }; }).filter(d => d.n > 0);
   if (!days.length) { say('Nenhum dia com perguntas. Aumente a quantidade em algum dia. 🙂'); return; }
   const stop = showLoading(['Lendo o que você contou… 📖', 'Separando por matéria… 🗂️', 'Inventando perguntas… ✏️', 'Caprichando nas dicas… 💡', 'Organizando os dias da semana… 📅', 'Escrevendo os capítulos do livro da semana… 📚', 'Quase pronto! 🦉']);
   let res;
   try {
-    const base = { name: S.name, text, images, days, perSubject: S.settings.perSubject || 2, previous: S.week && S.week.summary ? S.week.summary.map(x => `${x.subject}: ${x.summary}`).join(' | ') : '' };
+    const base = { name: S.name, text, images, days, perSubject: perTheme(), previous: S.week && S.week.summary ? S.week.summary.map(x => `${x.subject}: ${x.summary}`).join(' | ') : '' };
     const info = await bankPlanInfo(subjTexts, subjOpts, images);
     res = info && Object.keys(info.shared).length ? await planWithBank(base, info, lineOf) : await planInSteps(base);
   } catch (e) {
@@ -2752,11 +2822,7 @@ async function planWithBank(base, info, lineOf) {
   const mixIds = mySubjects().filter(id => subjFilled(id) && !(daily && isRead(id)));
   // quantas perguntas de cada matéria em cada dia (a leitura do dia leva 3)
   const alloc = {};
-  base.days.forEach((d, di) => {
-    const pool = Math.max(0, d.n - (d.read ? 3 : 0)); const k = mixIds.length || 1; const a = {};
-    mixIds.forEach((id, j) => { a[id] = Math.floor(pool / k) + (((j + di) % k) < (pool % k) ? 1 : 0); });
-    alloc[d.dow] = a;
-  });
+  base.days.forEach(d => { alloc[d.dow] = Object.fromEntries(mixIds.map(id => [id, perTheme()])); });
   const sharedMix = mixIds.filter(id => info.shared[id]);
   const personal = mixIds.filter(id => !info.shared[id]);
   const need = id => base.days.reduce((a, d) => a + (alloc[d.dow][id] || 0), 0);
@@ -2800,7 +2866,7 @@ async function planWithBank(base, info, lineOf) {
   });
   let personalRes = null;
   const pDays = base.days.map(d => ({ dow: d.dow, label: d.label, read: d.read && !info.shared[d.read.subject] ? d.read : null, n: personal.reduce((a, id) => a + (alloc[d.dow][id] || 0), 0) }))
-    .map(d => Object.assign(d, { n: d.n + (d.read ? 3 : 0) })).filter(d => d.n > 0);
+    .map(d => Object.assign(d, { n: d.n + (d.read ? d.read.n || 3 : 0) })).filter(d => d.n > 0);
   const pIds = [...personal, ...new Set(pDays.filter(d => d.read).map(d => d.read.subject))];
   if (pIds.length && pDays.length) job(async () => { personalRes = await planInSteps(Object.assign({}, base, { text: pIds.map(id => lineOf[id]).filter(Boolean).join('\n'), days: pDays })).catch(e => ({ error: e })); });
   if (jobs.length) { tick(); await Promise.all(jobs.map(fn => fn().finally(() => { done++; tick(); }))); }
@@ -2815,7 +2881,9 @@ async function planWithBank(base, info, lineOf) {
     base.days.filter(d => d.read && d.read.subject === sid).forEach((d, i) => {
       const c = b.chapters[i]; if (!c || !c.text) return;
       passages.push({ subject: sid, day: d.dow, title: `${b.title} — ${c.title}`, text: c.text });
-      (c.questions || []).forEach(q => questions.push(Object.assign({}, q, { subject: sid, day: d.dow, bank: b.key ? `${b.key}#${i}` : undefined })));
+      const cq = c.questions || []; const rn = (d.read && d.read.n) || 3;
+      [...cq.filter(q => q.type === 'open'), ...cq.filter(q => q.type !== 'open')].slice(0, rn)   // resumo primeiro, depois compreensão
+        .forEach(q => questions.push(Object.assign({}, q, { subject: sid, day: d.dow, bank: b.key ? `${b.key}#${i}` : undefined })));
     });
   });
   const pr = personalRes && !personalRes.error ? personalRes : null;
@@ -2833,7 +2901,7 @@ function collectDraft() { $$('#scr-setup textarea[data-sid]').forEach(ta => { VI
 async function generateFromSetup(editing) {
   collectDraft();
   const topics = {}; SUBJECTS.forEach(s => { topics[s.id] = (VIEW.draftTopics[s.id] || '').trim(); });
-  const counts = isAuto() ? autoCounts(mySubjects().filter(id => topics[id]).length || 3, false) : Object.assign({}, VIEW.draftCounts);
+  const counts = dayCounts(mySubjects().filter(id => topics[id]).length || 3, null);
   const hasAny = Object.values(topics).some(Boolean) || (S.pendingImport || []).length || (editing && (S.week.imported || []).length);
   if (!hasAny) { say('Escreva pelo menos uma matéria para eu criar as tarefas! ✍️'); return; }
   const t = today();
@@ -2928,7 +2996,7 @@ function themeTopic(c, id) {
 }
 function renderHub(c, themes) {
   const el = $('#scr-work');
-  const canQty = c.kind === 'day' && !c.rec && !c.done && !dayStarted(c.obj) && !c.obj.printed;
+  const canQty = false;   // a quantidade vem das 3 variáveis (por tema e por texto)
   const paper = c.kind === 'day' && !c.rec && !c.done;
   const next = nextTheme(c, themes, null);
   const started = c.questions.some(q => answered(q, c.answers[q.id]));
@@ -2963,7 +3031,6 @@ function renderHub(c, themes) {
       ${c.done ? '' : `<button class="btn ${next ? '' : 'primary'}" data-act="finish">✔ Concluir</button>`}
     </div></div>`;
   $$('[data-theme]', el).forEach(b => b.onclick = () => openTheme(b.dataset.theme));
-  $$('[data-qty]', el).forEach(b => b.onclick = () => changeQty(c, Number(b.dataset.qty)));
   $('[data-act=back]', el).onclick = () => { save(); show('home'); };
   const h2 = $('[data-act=home2]', el); if (h2) h2.onclick = () => { save(); show('home'); };
   $('[data-act=key]', el).onclick = () => openGabarito(c);
@@ -2977,7 +3044,7 @@ function renderWork() {
   const c = workCtx();
   if (!c) { show('home'); return; }
   $('#top-title').textContent = c.kind === 'extra' ? '⭐ Extras' : `📘 ${c.title}`;
-  const canQty = c.kind === 'day' && !c.rec && !c.done && !dayStarted(c.obj) && !c.obj.printed;
+  const canQty = false;
   const themes = workThemes(c);
   const hub = themes.length > 1;
   if (!VIEW.wp || VIEW.wp.key !== workKey(c)) VIEW.wp = { key: workKey(c), page: 0, theme: hub ? null : 'all' };
@@ -3097,7 +3164,6 @@ function bindWork(el, c) {
     };
     if (q.type === 'proof') bindProof(q, c, card);
   });
-  $$('[data-qty]', el).forEach(b => b.onclick = () => changeQty(c, Number(b.dataset.qty)));
   $$('[data-pg]', el).forEach(b => b.onclick = () => goPage(VIEW.wp.page + Number(b.dataset.pg)));
   $$('[data-pgi]', el).forEach(b => b.onclick = () => goPage(Number(b.dataset.pgi)));
   const bk = $('[data-act=back]', el); if (bk) bk.onclick = () => { save(); show('home'); };
@@ -3123,26 +3189,6 @@ async function askTutor(q, c) {
       context: passageContext(q, c.obj) } });
     say(`🦉 ${esc(r.text)}`, { mood: 'think', ms: 16000 });
   } catch (e) { say(q.lang === 'en' ? 'I could not think right now. Try the hint again later!' : 'Não consegui pensar agora. Tente de novo daqui a pouco!', { mood: 'sad' }); }
-}
-async function changeQty(c, delta) {
-  const d = c.obj; const n = clamp(d.questions.length + delta, S.settings.minPerDay, S.settings.maxPerDay);
-  if (n === d.questions.length) { say(`O mínimo é ${S.settings.minPerDay} e o máximo é ${S.settings.maxPerDay} perguntas por dia.`); return; }
-  d.n = n;
-  if (delta < 0) { d.questions = d.questions.slice(0, n); save(); renderWork(); return; }
-  let added = [];
-  if (Server.ai) {
-    const subjects = [...new Set(d.questions.map(q => q.subject))];
-    try {
-      const r = await apiCall('/api/more', { method: 'POST', timeout: 60000, data: { name: S.name, n: n - d.questions.length, subjects, topics: weekTopicsText(S.week), exclude: recentQuestionTexts(60) } });
-      added = validateImported(r).ok;
-    } catch (e) { /* cai para o gerador local */ }
-  }
-  if (added.length) {
-    d.questions = d.questions.concat(added.slice(0, n - d.questions.length).map((q, j) => Object.assign({ lang: SUBJ[q.subject].lang }, q, { id: `${d.date}-a${j}-${uid()}` })));
-  } else {
-    regenerateDays(S.week, [d.date], '|' + uid());
-  }
-  save(); renderWork();
 }
 function updateProgress(c) {
   const n = c.questions.length;
@@ -4619,17 +4665,19 @@ function pSettings(box) {
       <p class="tiny muted">Valores de uma semana completa (7 dias): se a semana começar no meio, a recompensa e a penalidade são proporcionais aos dias obrigatórios. A penalidade precisa ser maior que a recompensa. Dias não feitos podem ser recuperados até a sexta seguinte: recuperar todos vale essa % da recompensa (0 = sem recuperação).</p></div>
     <div class="card"><b>Tarefas</b><div class="form-grid" style="margin-top:6px">
       ${Server.me ? '' : `<label class="field">Nome<input id="s-name" value="${esc(S.name)}"></label>`}
-      <label class="field">Quantidade por dia<select id="s-cmode"><option value="auto" ${st.countMode !== 'manual' ? 'selected' : ''}>Automática (por matéria)</option><option value="manual" ${st.countMode === 'manual' ? 'selected' : ''}>Manual (números abaixo)</option></select></label>
-      <label class="field">Perguntas de cada matéria por dia (automático)<input type="number" id="s-per" value="${st.perSubject || 2}"></label>
+      <label class="field">🗂️ Perguntas por tema (cada matéria, por dia)<input type="number" id="s-ptheme" min="1" max="6" value="${perTheme()}"></label>
+      <div class="field">${rqSelect('pt', '📖 Perguntas do texto em português', 's-rqpt')}</div>
+      <div class="field">${rqSelect('en', '📖 Perguntas do texto em inglês', 's-rqen')}</div>
       <label class="field">Leitura diária (capítulo do livro da semana)<select id="s-dread"><option value="1" ${st.dailyReading ? 'selected' : ''}>Ligada</option><option value="0" ${!st.dailyReading ? 'selected' : ''}>Desligada</option></select></label>
       <label class="field">Nível padrão da leitura<select id="s-rlevel">${READ_LEVELS.map(([k, l]) => `<option value="${k}" ${(st.readLevel || 'at') === k ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
       <label class="field">A Lumi lê as aulinhas em voz alta<select id="s-avoice"><option value="1" ${st.autoVoice ? 'selected' : ''}>Sim, sozinha</option><option value="0" ${!st.autoVoice ? 'selected' : ''}>Só no 🔊</option></select></label>
-      <label class="field">Mínimo de perguntas/dia<input type="number" id="s-min" value="${st.minPerDay}"></label>
-      <label class="field">Máximo de perguntas/dia<input type="number" id="s-max" value="${st.maxPerDay}"></label>
       <label class="field">Gabarito<select id="s-gab"><option value="1" ${st.gabaritoAfterFinish ? 'selected' : ''}>Libera depois de concluir</option><option value="0" ${!st.gabaritoAfterFinish ? 'selected' : ''}>Sempre disponível</option></select></label>
       <label class="field">Voz (ditado)<select id="s-voice"><option value="1" ${st.voice ? 'selected' : ''}>Ligada</option><option value="0" ${!st.voice ? 'selected' : ''}>Desligada</option></select></label>
+      <label class="field">🔊 Voz da Lumi<select id="s-nvoice"><option value="1" ${st.naturalVoice !== false ? 'selected' : ''}>Natural (servidor)${Server.tts ? '' : ' — ainda não configurada'}</option><option value="0" ${st.naturalVoice === false ? 'selected' : ''}>Do aparelho</option></select></label>
+      ${['pt', 'en'].map(l => { const vs = deviceVoices(l).sort((a, b) => voiceScore(b, l) - voiceScore(a, l)); const cur = (st.deviceVoice || {})[l] || '';
+        return `<label class="field">Voz do aparelho em ${l === 'pt' ? 'português' : 'inglês'}<span class="row"><select id="s-dv-${l}" class="grow"><option value="">Automática (a melhor: ${esc((vs[0] || {}).name || '—')})</option>${vs.map(v => `<option value="${esc(v.voiceURI)}" ${cur === v.voiceURI ? 'selected' : ''}>${esc(v.name)}${voiceScore(v, l) >= 60 ? ' ⭐' : ''}</option>`).join('')}</select><button type="button" class="btn small" data-vtest="${l}">▶</button></span></label>`; }).join('')}
       ${Server.me ? '' : '<label class="field">Novo PIN dos pais<input id="s-pin" inputmode="numeric" maxlength="8" placeholder="(manter)"></label>'}</div>
-      <div style="margin-top:6px"><b class="tiny">Perguntas padrão por dia</b><div class="counts" style="margin-top:4px">${CYCLE.map(dk => `<label class="count-box"><div class="lbl">${DOW_LABEL[dk]}</div><input type="number" data-dc="${dk}" value="${st.counts[dk]}" style="width:44px;text-align:center;border:1.5px solid var(--line);border-radius:6px"></label>`).join('')}</div></div></div>
+      <p class="tiny muted" style="margin:6px 0 0">Total do dia = perguntas por tema × matérias da semana + perguntas do texto do dia. Cada dia tem um texto (alternando português e inglês); o texto extra dos Extras vem no idioma que não foi o do dia. O texto tem de 5 a 8 perguntas (1 de resumo + compreensão); no automático, depende do tamanho e da complexidade do texto (ano escolar e nível de leitura).</p></div>
     ${calendarSettingsHtml(st)}
     <button class="btn primary" id="s-save">Salvar ajustes</button>
     <button class="btn" id="s-tour">Rever o tutorial da Lumi</button>`;
@@ -4639,14 +4687,14 @@ function pSettings(box) {
     if (penalty <= reward) { toast('A penalidade precisa ser MAIOR que a recompensa.'); return; }
     Object.assign(st, {
       reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), questsOn: $('#s-quests').value === '1', notePrice: clamp(num('#s-notep', notePrice()), 1, 100000), sound: $('#s-sound').value === '1', buyQuests: $('#s-bquests').value === '1', extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
-      extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10), minPerDay: clamp(num('#s-min', st.minPerDay), 1, 15), maxPerDay: clamp(num('#s-max', st.maxPerDay), 3, 40),
+      extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10),
+      perTheme: clamp(num('#s-ptheme', perTheme()), 1, 6), readQ: { pt: $('#s-rqpt').value === 'auto' ? 'auto' : Number($('#s-rqpt').value), en: $('#s-rqen').value === 'auto' ? 'auto' : Number($('#s-rqen').value) },
       workshopCoins: clamp(num('#s-wkc', st.workshopCoins ?? 3), 0, 50), workshopPerDay: clamp(num('#s-wkd', st.workshopPerDay ?? 5), 0, 20),
-      countMode: $('#s-cmode').value, perSubject: clamp(num('#s-per', st.perSubject || 2), 1, 4), dailyReading: $('#s-dread').value === '1',
+      dailyReading: $('#s-dread').value === '1',
       readLevel: $('#s-rlevel').value, autoVoice: $('#s-avoice').value === '1',
       gabaritoAfterFinish: $('#s-gab').value === '1', voice: $('#s-voice').value === '1',
+      naturalVoice: $('#s-nvoice').value === '1', deviceVoice: { pt: $('#s-dv-pt').value, en: $('#s-dv-en').value },
     });
-    if (st.maxPerDay < st.minPerDay) st.maxPerDay = st.minPerDay;
-    $$('[data-dc]', box).forEach(inp => { st.counts[inp.dataset.dc] = clamp(Math.round(Number(inp.value) || 0), 0, st.maxPerDay); });
     const pin = ($('#s-pin') || { value: '' }).value.trim(); if (pin) st.pin = pin;
     const nm = ($('#s-name') || { value: '' }).value.trim(); if (nm) S.name = nm;
     if ($('#s-sstart').value) st.schoolStart = $('#s-sstart').value;
@@ -4654,6 +4702,13 @@ function pSettings(box) {
     touch('settings'); save(); toast('Ajustes salvos');
   };
   $('#s-tour').onclick = () => { show('home'); setTimeout(runTour, 300); };
+  $$('[data-vtest]', box).forEach(b => b.onclick = () => {   // testa a voz escolhida (do aparelho, ou a natural se estiver ligada)
+    const l = b.dataset.vtest; const keep = { n: S.settings.naturalVoice, d: S.settings.deviceVoice };
+    S.settings.naturalVoice = $('#s-nvoice').value === '1'; S.settings.deviceVoice = Object.assign({}, keep.d, { [l]: $('#s-dv-' + l).value });
+    lumiSpeak(l === 'pt' ? 'Oi! Eu sou a Lumi. Vamos ler juntas a história de hoje?' : 'Hi! I am Lumi. Shall we read today\'s story together?', l);
+    S.settings.naturalVoice = keep.n; S.settings.deviceVoice = keep.d;
+  });
+  if (speechOK && !deviceVoices('pt').length) speechSynthesis.onvoiceschanged = () => { if (currentScreen === 'parents') pSettings(box); };
   bindCalendarSettings(box, () => pSettings(box));
 }
 function pData(box) {

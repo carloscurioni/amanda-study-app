@@ -13,14 +13,16 @@
       { "name": "STORE", "class_name": "FamilyStore" },
       { "name": "DIRECTORY", "class_name": "Directory" },
       { "name": "CURRICULUM", "class_name": "Curriculum" },
-      { "name": "BANK", "class_name": "Bank" }
+      { "name": "BANK", "class_name": "Bank" },
+      { "name": "TTS", "class_name": "Tts" }
     ]
   },
   "migrations": [
     { "tag": "v1", "new_sqlite_classes": ["FamilyStore"] },
     { "tag": "v2", "new_sqlite_classes": ["Directory"] },
     { "tag": "v3", "new_sqlite_classes": ["Curriculum"] },
-    { "tag": "v4", "new_sqlite_classes": ["Bank"] }
+    { "tag": "v4", "new_sqlite_classes": ["Bank"] },
+    { "tag": "v5", "new_sqlite_classes": ["Tts"] }
   ],
   "vars": {
     // Modelos do Claude: planejar a semana e corrigir fotos (mais capaz) / extras e dicas (rápido).

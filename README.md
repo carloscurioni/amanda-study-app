@@ -52,7 +52,7 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
 
    | Ano | Brasil | Etapa | Matérias sugeridas |
    |---|---|---|---|
-   | Year 1–6 | Infantil 5 a 5º ano | Primary (KS1–KS2) | Português, Ortografia, Leitura, BSS, English, Reading, Spelling, Guided Reading, IPC, Math |
+   | Year 1–6 | Infantil 5 a 5º ano | Primary (KS1–KS2) | Português, Ortografia, Leitura, BSS, English, Reading, Spelling, IPC, Math |
    | Year 7–9 | 6º a 8º ano | Key Stage 3 | Português, Leitura, BSS, English, Reading, Math, Science, History, Geography |
    | Year 10–11 | 9º ano e 1ª série EM | IGCSE | Português, Literatura, BSS, English, English Literature, Math, Biology, Chemistry, Physics, History, Geography |
    | Year 12–13 | 2ª e 3ª série EM | **IB Diploma** (DP1 e DP2) | Português A, English A, Math, Biology, Chemistry, Economics, Theory of Knowledge |
@@ -66,13 +66,15 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
      - **Na tela:** a criança toca na palavra, corrige ali mesmo e acompanha o contador ("2 de 5 marcadas"). Ao concluir, cada palavra aparece em verde (corrigida), vermelho (faltou, com a forma certa) ou laranja (estava certa).
      - **No papel:** o parágrafo sai com espaço para escrever por cima e linhas para as correções.
      - **Em celulares bem pequenos:** vira um botão que abre o texto em tela cheia, para a folha continuar sem rolagem.
-   - **Leitura/Reading/Guided Reading:** ela escolhe o nível do texto (⬇️ mais fácil, 🎯 no nível dela, ⬆️ acima ou 🚀 bem acima). A Lumi **escreve o texto** e as perguntas são sobre ele. O texto abre antes das perguntas e sai impresso no topo da folha.
+   - **Leitura/Reading:** ela escolhe o nível do texto (⬇️ mais fácil, 🎯 no nível dela, ⬆️ acima ou 🚀 bem acima). A Lumi **escreve o texto** e as perguntas são sobre ele. O texto abre antes das perguntas e sai impresso no topo da folha.
    - Também pode mandar **foto do worksheet ou da agenda**. O Claude cria as perguntas de sábado a sexta no nível do ano escolhido.
 2. **Todo dia** ela abre a tarefa:
-   - **Quantidade:** automática, cerca de **2 perguntas de cada matéria** todo dia (sábado e domingo +2, sexta −2). Os pais podem mudar para manual.
+   - **Quantidade — só 3 ajustes** (Minha semana e Ajustes dos pais): **perguntas por tema** (padrão 2, de 1 a 6), **perguntas do texto em português** e **do texto em inglês** (5 a 8, ou automático). Total do dia = por tema × matérias + perguntas do texto do dia. Todo dia tem tarefa; não há mais mínimo/máximo por dia.
+     - **Automático do texto:** Y1–Y2 5, Y3–Y6 6, Y7–Y9 7, IGCSE/IB 8 perguntas; +1 com nível "acima"/"bem acima" (até 8).
    - **📖 Leitura diária:** cada dia começa com um capítulo do **livro da semana**, escrito pela Lumi.
-     - Os capítulos alternam entre um livro em português e outro em inglês, e a história continua de um dia para o outro.
-     - Depois do capítulo: um **resumo** e 2 perguntas de compreensão.
+     - **Cada dia tem um texto**, em português ou em inglês: com as duas línguas, os dias alternam (sábado português, domingo inglês…), e a história continua de um dia para o outro.
+     - Depois do capítulo: 1 **resumo** e as perguntas de compreensão (5 a 8 no total).
+     - **📖 Texto extra** (nos Extras): vem no idioma que não foi o do texto do dia.
      - O botão **🔊** lê o capítulo em voz alta, e **🖨️ Imprimir** (no topo do texto) imprime só a leitura em A4.
    - **🗂️ Temas do dia:** ao abrir o dia aparece um cartão por tema (📖 leitura primeiro, depois cada matéria), com o assunto da semana, quantas perguntas tem e o progresso (✅ quando termina).
      - **▶ Começar / Continuar** segue a sequência. Ela também pode tocar no tema que quiser fazer agora.
@@ -182,6 +184,13 @@ As mensagens sempre ficam em Área dos pais → **💬 Mensagens** (só o admin 
 2. No computador, dentro da pasta do projeto: `npx wrangler secret put RESEND_API_KEY` e cole a chave. Ou, no painel da Cloudflare: Worker → *Settings* → *Variables and Secrets* → **Add** → tipo **Secret**.
 3. Sem domínio próprio, o Resend envia de `onboarding@resend.dev` **só para o e-mail da sua conta Resend**. Para mandar para outro endereço, verifique um domínio no Resend e crie a variável `RESEND_FROM` (ex.: `Lumi <lumi@seudominio.com>`).
 4. O endereço que recebe é configurável no Admin → 💬 Mensagens (padrão carloscurioni@gmail.com). Limite: até 20 mensagens e 10 e-mails por família por dia.
+
+### Passo 5 (recomendado) — Voz natural da Lumi
+Sem isso, a Lumi lê com a voz do aparelho (o app escolhe a melhor disponível, e nos Ajustes dá para trocar e testar). Para uma voz natural em português do Brasil e inglês britânico:
+1. Em [console.cloud.google.com](https://console.cloud.google.com), crie um projeto, ative a **Cloud Text-to-Speech API** e crie uma **chave de API** (Credenciais → Criar credenciais → Chave de API), restrita a essa API.
+2. No Cloudflare (Worker → Settings → Variables and Secrets), adicione o secret **`GOOGLE_TTS_API_KEY`** com a chave.
+3. Pronto: o app usa a melhor voz do Google (Chirp 3 HD, senão Neural2). Para fixar uma voz, crie as variáveis `TTS_VOICE_PT` / `TTS_VOICE_EN` com o nome dela.
+- Custo: cota grátis mensal (1 milhão de caracteres nas vozes neurais); depois, cerca de US$ 16–30 por milhão. Cada áudio fica guardado no servidor, então um texto do banco lido por várias crianças é pago uma vez só. O gasto entra no limite diário de cada criança.
 
 ### E o link do GitHub Pages?
 O link antigo (`carloscurioni.github.io/amanda-study-app`) continua funcionando como **versão sem servidor**: sem Claude, com perguntas do gerador interno e dados só naquele aparelho. Quando a versão da Cloudflare estiver no ar, desligue-o em **Settings → Pages → Source → None**, para não haver duas versões.

@@ -64,7 +64,7 @@ export function cleanQuestion(raw, subject) {
   return { q };
 }
 
-// Capítulo de livro: { title, text, questions[3] }
+// Capítulo de livro: { title, text, questions[8] } (1 resumo + 7 compreensão; o app usa as primeiras N, de 5 a 8)
 export function cleanChapter(raw, subject) {
   const r = raw || {};
   const ch = { title: s(r.title, 160), synopsis: s(r.synopsis, 600), text: s(r.text, 6000), questions: [] };
@@ -72,7 +72,7 @@ export function cleanChapter(raw, subject) {
   if (r.text !== undefined || r.questions !== undefined) {
     if (ch.text.split(/\s+/).length < 60) return { err: 'capítulo curto demais' };
     if (unsafe(ch.text)) return { err: 'link no capítulo' };
-    for (const x of (Array.isArray(r.questions) ? r.questions : []).slice(0, 4)) { const c = cleanQuestion(x, subject); if (c.q) ch.questions.push(c.q); }
+    for (const x of (Array.isArray(r.questions) ? r.questions : []).slice(0, 9)) { const c = cleanQuestion(x, subject); if (c.q) ch.questions.push(c.q); }
     if (ch.questions.length < 2) return { err: 'capítulo com menos de 2 perguntas válidas' };
   }
   return { ch };

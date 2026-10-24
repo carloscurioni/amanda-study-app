@@ -16,7 +16,7 @@ Um arquivo por currículo + ano + semana letiva: `data/bank/<currículo>/<ano>/w
   },
   "books": [
     { "subject": "pt_leit", "level": "", "read_level": "at", "title": "O Segredo do Farol", "premise": "…",
-      "chapters": [ { "title": "Capítulo 1: …", "synopsis": "…", "text": "parágrafo\nparágrafo", "questions": [ {"type": "open", "q": "Resuma…"}, {"type": "mc", "q": "No capítulo…"}, {"type": "short", "q": "No capítulo…"} ] } ] }
+      "chapters": [ { "title": "Capítulo 1: …", "synopsis": "…", "text": "parágrafo\nparágrafo", "questions": [ {"type": "open", "q": "Resuma…"}, {"type": "mc", "q": "No capítulo…"}, … 8 no total ] } ] }
   ]
 }
 ```
@@ -25,7 +25,7 @@ Um arquivo por currículo + ano + semana letiva: `data/bank/<currículo>/<ano>/w
 - `id` é opcional: o build cria um id estável pelo conteúdo.
 - Tipos: `mc` (2–5 opções, `answer` igual a uma delas), `short` (1–3 palavras), `num` (só o número ou fração), `open` (`answer` vazio), `proof` (caça-erros: `text` com 3–7 palavras erradas, cada `wrong` aparece exatamente 1 vez no texto).
 - A dica (`hint`) nunca contém a resposta. Nada de links, e-mails, telefones, nomes de pessoas reais ou de escolas.
-- Livros: exatamente 7 capítulos-episódio (cada um com começo, meio e fim), cada capítulo com texto (≥ 60 palavras) e 3 perguntas (1 `open` de resumo + 2 de compreensão). `read_level`: `below`, `at`, `above` ou `way`.
+- Livros: exatamente 7 capítulos-episódio (cada um com começo, meio e fim), cada capítulo com texto (≥ 60 palavras) e 8 perguntas (1 `open` de resumo + 7 de compreensão, das mais literais às de inferência; o app usa as primeiras 5 a 8, conforme o tamanho do texto ou o ajuste dos pais). `read_level`: `below`, `at`, `above` ou `way`.
 - Leitura diária do app: o 1º livro em português e o 1º em inglês da etapa (`pt_leit`/`en_read` até o Year 9, `pt_lit`/`en_lit` do Year 10 em diante).
 
 ## Scripts

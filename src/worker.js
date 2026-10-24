@@ -9,13 +9,15 @@
    Segredos (Cloudflare → Worker → Settings → Variables and Secrets):
      ANTHROPIC_API_KEY  chave da API (platform.claude.com)
      FAMILY_CODE        usado só no primeiro acesso, para criar a conta do administrador
+     GOOGLE_TTS_API_KEY (opcional) voz natural da Lumi (Google Cloud Text-to-Speech); sem ela, o app usa a voz do aparelho
    ========================================================================= */
 import { DurableObject } from 'cloudflare:workers';
 import { Directory, AppError } from './directory.js';
 import { Curriculum } from './curriculum.js';
 import { Bank } from './bank.js';
+import { Tts } from './tts.js';
 import { BANK_CURRICULUM, BANK_READ_IDS, READ_LEVELS as BANK_READ_LEVELS, qKey, bookKey, fileOf, cleanQuestion, chapterDone, BOOK_CHAPTERS } from './bank-format.js';
-export { Directory, Curriculum, Bank };
+export { Directory, Curriculum, Bank, Tts };
 
 // Catálogo de matérias (id — descrição — idioma). O app manda quais o estudante faz; o prompt só lista essas.
 const SUBJECT_CATALOG = [
@@ -49,7 +51,7 @@ const SUBJECT_CATALOG = [
 ];
 const SUBJECT_IDS = SUBJECT_CATALOG.map(x => x[0]);
 const READ_IDS = ['pt_leit', 'en_read', 'en_guided', 'pt_lit', 'en_lit'];
-const PRIMARY_IDS = ['pt', 'pt_ort', 'pt_leit', 'bss', 'en', 'en_read', 'en_spell', 'en_guided', 'ipc', 'math'];
+const PRIMARY_IDS = ['pt', 'pt_ort', 'pt_leit', 'bss', 'en', 'en_read', 'en_spell', 'ipc', 'math'];   // (Guided Reading saiu do app)
 const subjectsTxt = (ids, levels) => {
   const want = (Array.isArray(ids) ? ids : []).filter(id => SUBJECT_IDS.includes(id));
   const list = SUBJECT_CATALOG.filter(x => (want.length ? want : PRIMARY_IDS).includes(x[0]));
@@ -352,7 +354,7 @@ const READING_SCHEMA = {
     title: { type: 'string', description: 'Título do capítulo, ex.: "Capítulo 3: A porta escondida".' },
     text: { type: 'string', description: 'O capítulo, em parágrafos separados por \n.' },
     summary: { type: 'string', description: 'Resumo do capítulo em 1–2 frases (para continuar a história depois).' },
-    questions: { type: 'array', items: qSchema(false), description: 'Exatamente 4: 1 "open" pedindo um resumo do capítulo em 2–3 frases, e 3 de compreensão ("mc" ou "short").' },
+    questions: { type: 'array', items: qSchema(false), description: 'Na quantidade pedida: 1 "open" pedindo um resumo do capítulo em 2–3 frases e as demais de compreensão ("mc" ou "short").' },
   },
   required: ['bookTitle', 'title', 'text', 'summary', 'questions'],
   additionalProperties: false,
@@ -512,6 +514,8 @@ async function handlePlanDay(env, b, ctx) {
   const n = Math.max(1, Math.min(40, Number(d.n)));
   const yn = yearNum(b);
   const read = d.read && READ_IDS.includes(d.read.subject) ? d.read : null;
+  const rn = read ? Math.max(1, Math.min(8, Number(read.n) || 6)) : 0;   // perguntas sobre o texto do dia
+  const per = Math.max(1, Math.min(6, Number(b.perSubject) || 2));          // perguntas por tema
   const topics = (b.topics || []).slice(0, 30).map(t => `- ${t.subject}: ${String(t.summary || '').slice(0, 600)}`).join('\n');
   const focus = (b.focus || []).slice(0, 30).map(f => `- ${f.subject}: ${String(f.focus || '').slice(0, 200)}`).join('\n');
   const spell = (b.topics || []).some(t => ['pt_ort', 'en_spell'].includes(t.subject));
@@ -523,13 +527,13 @@ Hoje é ${d.label || d.dow}. Subtema de hoje em cada matéria:
 ${focus || '(escolha um subtema de cada matéria)'}
 
 Crie EXATAMENTE ${n} perguntas para hoje:
-- Cerca de ${Math.max(1, Math.min(4, Number(b.perSubject) || 2))} perguntas de CADA matéria listada acima${read ? ' (fora as 3 da leitura)' : ''}; se a conta não fechar, use 1 a 3 por matéria, sem deixar matéria de fora.
+- EXATAMENTE ${per} pergunta${per > 1 ? 's' : ''} de CADA matéria listada acima${read ? `, mais as ${rn} do texto do dia` : ''}.
 ${spell ? '- Se houver Ortografia ou Spelling, inclua UMA pergunta "proof" (caça-erros) dessa matéria.\n' : ''}${read ? `- LEITURA DO DIA (${read.subject}, nível: ${READ_LEVELS_TXT[read.level] || READ_LEVELS_TXT.at}): escreva em "passage" o capítulo de hoje do livro "${String(b.book && b.book.title || '').slice(0, 120)}".
   Premissa: ${String(b.book && b.book.premise || '').slice(0, 600)}
   ${b.book && b.book.before && b.book.before.length ? `Capítulos anteriores: ${b.book.before.slice(-6).map(c => `${c.title}: ${c.synopsis}`).join(' | ').slice(0, 1500)}` : 'É o primeiro capítulo.'}
   Capítulo de hoje: "${String(b.book && b.book.chapter && b.book.chapter.title || '').slice(0, 120)}" — ${String(b.book && b.book.chapter && b.book.chapter.synopsis || '').slice(0, 500)}
   "title": "Nome do livro — Capítulo N: título". Tamanho: ${yn <= 2 ? '120–200' : yn <= 6 ? '250–400' : '400–600'} palavras, no idioma da matéria, parágrafos separados por \n.
-  EXATAMENTE 3 das perguntas são sobre o capítulo (subject ${read.subject}): 1 "open" pedindo o resumo em 2–3 frases e 2 de compreensão ("mc" ou "short", começando com "No capítulo…"/"In the chapter…").` : '- Sem leitura hoje: "passage" com título e texto vazios.'}` }];
+  EXATAMENTE ${rn} das perguntas são sobre o capítulo (subject ${read.subject}): 1 "open" pedindo o resumo em 2–3 frases${rn > 1 ? ` e ${rn - 1} de compreensão ("mc" ou "short", começando com "No capítulo…"/"In the chapter…")` : ''}.` : '- Sem leitura hoje: "passage" com título e texto vazios.'}` }];
   return claude(env, ctx, {
     model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low',
     system: studentProfile(b.name, b.year, b.mine, yn, b.levels), content, schema: DAY_SCHEMA, maxTokens: 14000,
@@ -575,11 +579,12 @@ async function handleReading(env, b, ctx) {
   const lang = b.lang === 'en' ? 'en' : 'pt';
   const n = yearNum(b);
   const LEVELS = { below: 'mais fácil (cerca de 1 ano abaixo do ano dele)', at: 'no nível do ano dele', above: 'acima (cerca de 1 ano acima)', way: 'bem acima (cerca de 2 anos acima)' };
+  const rn = Math.max(1, Math.min(8, Number(b.n) || 6));
   const prev = (Array.isArray(b.chapters) ? b.chapters : []).slice(-6).map((c, i) => `- ${String(c.title || '').slice(0, 120)}: ${String(c.summary || '').slice(0, 300)}`).join('\n');
   const content = [{ type: 'text', text: `Escreva o próximo capítulo de um livro original em ${LANG_NAME(lang)} para o estudante ler (${level(b)}).
 ${b.bookTitle && prev ? `É a continuação do livro "${String(b.bookTitle).slice(0, 120)}". Capítulos anteriores:\n${prev}\nMantenha personagens e mundo; avance a história e termine com um gancho.` : `Comece um livro novo${b.theme ? ` sobre: ${String(b.theme).slice(0, 200)}` : ''} (aventura, mistério, animais, amizade ou ciência — escolha algo envolvente para a idade). Este é o Capítulo 1.`}
 Nível de leitura: ${LEVELS[b.level] || LEVELS.at}. Tamanho: ${n <= 2 ? '150–250' : n <= 6 ? '300–450' : '450–650'} palavras.
-Depois, 4 perguntas: 1 "open" pedindo o resumo do capítulo em 2–3 frases e 3 de compreensão ("mc" ou "short") sobre o capítulo (subject: ${lang === 'en' ? 'en_read' : 'pt_leit'}).` }];
+Depois, EXATAMENTE ${rn} pergunta${rn > 1 ? 's' : ''} (subject: ${lang === 'en' ? 'en_read' : 'pt_leit'}): 1 "open" pedindo o resumo do capítulo em 2–3 frases${rn > 1 ? ` e ${rn - 1} de compreensão ("mc" ou "short") sobre o capítulo` : ''}.` }];
   return claude(env, ctx, {
     model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low',
     system: studentProfile(b.name, b.year, b.mine, yearNum(b), b.levels), content, schema: READING_SCHEMA, maxTokens: 8000,
@@ -738,7 +743,7 @@ const BOOK_HEADER_SCHEMA = {
 const CHAPTER_SCHEMA = {
   type: 'object', properties: {
     text: { type: 'string', description: 'O capítulo, em parágrafos separados por \n.' },
-    questions: { type: 'array', items: qSchema(false), description: 'EXATAMENTE 3: 1 "open" pedindo o resumo do capítulo em 2–3 frases e 2 de compreensão ("mc" ou "short").' },
+    questions: { type: 'array', items: qSchema(false), description: 'EXATAMENTE 8: 1 "open" pedindo o resumo do capítulo em 2–3 frases e 7 de compreensão ("mc" ou "short"), das mais literais às de inferência.' },
   }, required: ['text', 'questions'], additionalProperties: false,
 };
 function bookArgs(b) {
@@ -783,7 +788,7 @@ Roteiro: ${book.chapters.map((x, i) => `${i + 1}. ${x.title} — ${x.synopsis}`)
 Escreva o capítulo ${idx + 1}: "${c.title}" — ${c.synopsis}
 - Tamanho: ${yn <= 2 ? '120–200' : yn <= 6 ? '250–400' : '400–600'} palavras; nível de leitura ${READ_LEVELS_TXT[a.readLevel]}; parágrafos separados por \n.
 - Um episódio com começo, meio e fim, que também funcione para quem não leu os anteriores (relembre em 1 frase o que for preciso).
-- Depois, EXATAMENTE 3 perguntas (subject ${a.subject}): 1 "open" pedindo o resumo do capítulo em 2–3 frases e 2 de compreensão ("mc" ou "short", começando com "${a.lang === 'pt' ? 'No capítulo…' : 'In the chapter…'}")${row ? `, praticando a habilidade da semana: ${row.topic}` : ''}.` }];
+- Depois, EXATAMENTE 8 perguntas (subject ${a.subject}): 1 "open" pedindo o resumo do capítulo em 2–3 frases e 7 de compreensão (das mais literais às de inferência) ("mc" ou "short", começando com "${a.lang === 'pt' ? 'No capítulo…' : 'In the chapter…'}")${row ? `, praticando a habilidade da semana: ${row.topic}` : ''}.` }];
   const out = await claude(env, ctx, { model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low', system: studentProfile(null, YEAR_LABELS[b.yearId], [a.subject], yn, {}), content, schema: CHAPTER_SCHEMA, maxTokens: 6000 });
   const ch = await B.bookChapter(a.ckey, a.subject, idx, out);
   if (!ch) throw new HttpError(502, 'O capítulo veio em formato inesperado.');
@@ -801,7 +806,7 @@ async function api(req, env, url) {
 
   if (path === '/api/health') {
     const st = await D.status();
-    return json({ ok: true, ai: !!env.ANTHROPIC_API_KEY, setup: st.accounts === 0, canSetup: !!env.FAMILY_CODE });
+    return json({ ok: true, ai: !!env.ANTHROPIC_API_KEY, tts: !!env.GOOGLE_TTS_API_KEY, setup: st.accounts === 0, canSetup: !!env.FAMILY_CODE });
   }
   // Primeiro acesso: cria a conta do administrador e leva os dados antigos para o 1º perfil.
   if (path === '/api/setup' && m === 'POST') {
@@ -837,7 +842,7 @@ async function api(req, env, url) {
   const isAdmin = me.parent.role === 'admin';
   const need = cond => { if (!cond) throw new HttpError(403, 'Sem permissão.'); };
 
-  if (path === '/api/auth/me' && m === 'GET') return json({ parent: me.parent, family: { id: me.family.id, name: me.family.name }, children: me.children, ai: !!env.ANTHROPIC_API_KEY });
+  if (path === '/api/auth/me' && m === 'GET') return json({ parent: me.parent, family: { id: me.family.id, name: me.family.name }, children: me.children, ai: !!env.ANTHROPIC_API_KEY, tts: !!env.GOOGLE_TTS_API_KEY });
   if (path === '/api/auth/logout' && m === 'POST') { await D.logout(token); return json({ ok: true }, 200, { 'set-cookie': clearCookie() }); }
   if (path === '/api/auth/verify' && m === 'POST') { const b = await body(req, 5_000); return json(await D.verifyPassword(me.parent.id, b.password, token)); }
   if (path === '/api/auth/lock' && m === 'POST') return json(await D.lockSession(token));
@@ -935,6 +940,36 @@ async function api(req, env, url) {
     return json(await AI_HANDLERS[aiM[1]](env, b, { familyId, childId: child.id, url }));
   }
 
+  // 🔊 Voz natural da Lumi (Google Cloud Text-to-Speech), com os áudios guardados para reaproveitar
+  if (path === '/api/tts' && m === 'POST') {
+    const b = await body(req, 20_000);
+    const child = me.children.find(c => c.id === b.childId); need(child);
+    if (!env.GOOGLE_TTS_API_KEY) throw new HttpError(503, 'Voz natural não configurada.');
+    const lang = b.lang === 'en' ? 'en' : 'pt';
+    const text = String(b.text || '').replace(/\s+/g, ' ').trim().slice(0, 1800);
+    if (!text) throw new HttpError(400, 'Texto vazio.');
+    const voice = await ttsVoice(env, lang);
+    const k = await sha256hex(`${voice.name}|${text}`);
+    const T = env.TTS.get(env.TTS.idFromName('tts'));
+    let audio = await T.get(k);
+    if (!audio) {
+      const ok = await D.aiCheck(familyId, child.id, Number(env.CHILD_DAILY_USD || 0.5), Number(env.MONTHLY_USD || 40));
+      if (!ok.ok) throw new HttpError(429, 'O limite de uso de hoje foi atingido.');
+      const audioConfig = { audioEncoding: 'MP3' };
+      if (!/Chirp/i.test(voice.name)) audioConfig.speakingRate = 0.95;
+      const res = await fetch(`${env.TTS_BASE_URL || 'https://texttospeech.googleapis.com'}/v1/text:synthesize?key=${encodeURIComponent(env.GOOGLE_TTS_API_KEY)}`, {
+        method: 'POST', headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ input: { text }, voice: { languageCode: voice.lang, name: voice.name }, audioConfig }),
+      });
+      if (!res.ok) { const raw = await res.text().catch(() => ''); console.error('tts', res.status, raw.slice(0, 300)); throw new HttpError(502, `Voz natural indisponível (${res.status}).`); }
+      const j = await res.json();
+      audio = Uint8Array.from(atob(j.audioContent || ''), c => c.charCodeAt(0));
+      await T.put(k, voice.name, text.length, audio);
+      await D.aiRecord(familyId, child.id, text.length * (/Chirp/i.test(voice.name) ? 30 : 16) / 1e6);
+    }
+    return new Response(audio, { headers: { 'content-type': 'audio/mpeg', 'cache-control': 'private, max-age=604800' } });
+  }
+
   // 🏦 Banco de sugestões: sorteia perguntas e livros já prontos para a semana letiva (sem chamar o Claude)
   if (path === '/api/bank/draw' && m === 'POST') {
     const b = await body(req, 200_000);
@@ -1030,6 +1065,26 @@ async function api(req, env, url) {
     if (rpM && m === 'POST') return json(await D.resolveReport(rpM[1]));
   }
   throw new HttpError(404, 'Rota não encontrada.');
+}
+
+/* Voz natural: escolhe a melhor voz do Google para cada idioma (Chirp 3 HD > Neural2 > WaveNet; feminina), ou a definida em TTS_VOICE_PT/TTS_VOICE_EN */
+const TTS_VOICES = {};
+async function ttsVoice(env, lang) {
+  const code = lang === 'en' ? 'en-GB' : 'pt-BR';
+  const forced = lang === 'en' ? env.TTS_VOICE_EN : env.TTS_VOICE_PT;
+  if (forced) return { name: forced, lang: code };
+  if (TTS_VOICES[lang]) return TTS_VOICES[lang];
+  let list = [];
+  try { const r = await fetch(`${env.TTS_BASE_URL || 'https://texttospeech.googleapis.com'}/v1/voices?languageCode=${code}&key=${encodeURIComponent(env.GOOGLE_TTS_API_KEY)}`); if (r.ok) list = (await r.json()).voices || []; } catch { /* usa o padrão */ }
+  const fem = v => v.ssmlGender === 'FEMALE';
+  const rank = v => (/Chirp3-HD/.test(v.name) ? 40 : /Chirp/.test(v.name) ? 30 : /Neural2/.test(v.name) ? 20 : /Wavenet/.test(v.name) ? 10 : 0) + (fem(v) ? 5 : 0);
+  const best = list.filter(v => (v.languageCodes || []).includes(code)).sort((a, b) => rank(b) - rank(a))[0];
+  TTS_VOICES[lang] = { name: best ? best.name : (lang === 'en' ? 'en-GB-Neural2-C' : 'pt-BR-Neural2-C'), lang: code };
+  return TTS_VOICES[lang];
+}
+async function sha256hex(s) {
+  const d = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+  return [...new Uint8Array(d)].map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
 /* E-mail do feedback pela API do Resend (o workers.dev não tem domínio próprio para o Email Routing) */
