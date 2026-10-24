@@ -201,6 +201,15 @@ O link antigo (`carloscurioni.github.io/amanda-study-app`) continua funcionando 
 
 Os modelos e os limites ficam em `wrangler.jsonc` (`MODEL_PLAN`, `MODEL_FAST`, `CHILD_DAILY_USD`, `MONTHLY_USD`).
 
+### 🏦 Banco de sugestões (menos custo, semana pronta na hora)
+
+Perguntas e livros da leitura diária ficam num **banco compartilhado entre todas as famílias**, por currículo · ano · matéria · nível (HL/SL) · semana letiva.
+- **Ao criar a semana:** cada matéria que segue o currículo de referência (preenchida pela 🪄 varinha, com texto igual ao do currículo, ou "a Lumi escolhe") vem do banco. Cada criança recebe uma ordem diferente, e as perguntas que ela já tem não se repetem.
+- **Quando falta:** o Claude cria só o que falta, e o resultado volta para o banco. A próxima criança do mesmo ano e semana não gasta nada.
+- **O que nunca entra no banco:** texto digitado diferente do currículo, fotos e reforço com os erros da criança. Isso continua personalizado e não é compartilhado. Os prompts do banco usam só a linha do currículo, sem o nome nem o texto da criança.
+- **Avisos:** o 🚩 numa pergunta do banco (depois de concluir o dia) avisa o admin. Avisos de 2 famílias diferentes, ou do admin, escondem o item até a revisão no cartão 🏦 do Admin.
+- **Job que enche o banco:** uma tarefa agendada do Claude, que usa a conta Pro e não a chave da API, gera lotes seguindo `docs/JOB-BANCO.md`. Cada lote é validado e publicado direto no `main`, e o Cloudflare faz o deploy. A ordem é a semana letiva atual primeiro, com os anos de `data/bank/priority.json` na frente.
+
 ## 5. Segurança e privacidade
 
 - A chave da API fica **só no servidor** (Secret da Cloudflare). O navegador nunca a vê.
@@ -223,6 +232,8 @@ npm run dev            # http://localhost:8787
 
 Para testar outra data, acrescente `?hoje=2026-10-30` ao endereço (simula uma sexta). Roteiros de teste manual: `docs/TESTES-MANUAIS.md`.
 
+**Banco de sugestões:** formato em `data/bank/FORMAT.md`; `npm run bank:todo` (o que falta), `bank:add lote.json`, `bank:check`, `bank:build` (publica em `public/bank`). Instruções do job: `docs/JOB-BANCO.md`.
+
 **Currículo de referência (varinha):**
 - **Onde ficam:** os arquivos estão em `data/curriculum/<etapa>/<ano>-<matéria>[-sl|-hl].json`. O formato e o calendário de 37 semanas estão em `data/curriculum/FORMAT.md`.
 - **Validar:** `node scripts/validate-curriculum.mjs`.
@@ -237,6 +248,8 @@ public/privacidade.html  aviso de privacidade
 src/worker.js       servidor: rotas /api/*, cofre de cada criança, chamadas ao Claude com limite de gasto
 src/directory.js    diretório de contas: famílias, pais, crianças, convites, sessões, uso, avisos, mensagens (💬) e ajustes do app
 src/curriculum.js   currículo de referência (Durable Object com SQLite)
+src/bank.js         banco de sugestões compartilhado (Durable Object com SQLite); src/bank-format.js valida (servidor e scripts)
+data/bank/          banco no repositório (JSON por ano/semana) + priority.json; docs/JOB-BANCO.md = instruções do job
 data/curriculum/    currículo semana a semana (JSON) + fontes; scripts/ valida e publica
 wrangler.jsonc      configuração da Cloudflare (nome, Durable Objects, modelos, limites)
 ```
@@ -250,7 +263,8 @@ Rotas do servidor:
 | Família | `GET/DELETE /api/family`, `POST /api/family/children`, `PATCH/DELETE /api/family/children/:id`, `POST /api/family/children/:id/unlock`, `POST /api/family/invite-parent`, `GET /api/family/export`, `POST /api/report` |
 | Dados da criança | `GET/PUT/DELETE /api/children/:id/state`; 💌 `GET/POST /api/children/:id/notes`, `DELETE …/notes/:nid` (com a área dos pais desbloqueada), `GET …/notes/status`, `POST …/notes/open` |
 | Currículo e mensagens | `GET /api/curriculum?year=&week=&subjects=`, `POST /api/feedback` |
-| Claude | `POST /api/ai/plan`, `/more`, `/tutor`, `/explain`, `/check-open`, `/grade` (sempre com `childId`) |
-| Admin | `GET/PUT /api/admin/curriculum`, `POST /api/admin/curriculum/seed`, `GET /api/admin/feedback`, `POST /api/admin/feedback/:id`, `GET/PUT /api/admin/settings`, `GET /api/admin/overview`, `POST /api/admin/invites`, `DELETE /api/admin/invites/:id`, `POST /api/admin/reset-link`, `PATCH/DELETE /api/admin/families/:id`, `POST /api/admin/reports/:id` |
+| Banco | `POST /api/bank/draw` (sorteia sem chamar o Claude), `POST /api/bank/report` (🚩) |
+| Claude | `POST /api/ai/plan-outline`, `/plan-day`, `/bank-fill`, `/bank-book`, `/bank-chapter`, `/more`, `/tutor`, `/explain`, `/check-open`, `/grade`, `/lesson`, `/reading` (sempre com `childId`) |
+| Admin | `GET /api/admin/bank[?prefix=|?ckey=]`, `POST /api/admin/bank/status`, `PUT /api/admin/bank/item`, `GET /api/admin/bank/export`, `GET/PUT /api/admin/curriculum`, `POST /api/admin/curriculum/seed`, `GET /api/admin/feedback`, `POST /api/admin/feedback/:id`, `GET/PUT /api/admin/settings`, `GET /api/admin/overview`, `POST /api/admin/invites`, `DELETE /api/admin/invites/:id`, `POST /api/admin/reset-link`, `PATCH/DELETE /api/admin/families/:id`, `POST /api/admin/reports/:id` |
 
 Todas as respostas do Claude usam *structured outputs* (JSON garantido pelo esquema).
