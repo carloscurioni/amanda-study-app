@@ -32,7 +32,8 @@ const DEFAULT_SETTINGS = {
   penalty: 150,           // penalidade: semana não entregue (sempre MAIOR que a recompensa)
   latePct: 50,
   dayCoins: 10,
-  notePrice: 500,         // 💌 preço do recadinho secreto
+  notePrice: 500,
+  sound: true,            // 🔊 musiquinhas das reações (🔇 desliga)         // 💌 preço do recadinho secreto
   questsOn: true,         // 📜 missões do dia e da semana
   buyQuests: true,        // missões de compra (recompensa = valor gasto + 50)           // moedas por tarefa do dia concluída no próprio dia (0 desliga; atrasada dentro da semana vale metade)            // recuperação: dias não feitos podem ser feitos até a sexta seguinte, valendo esta % da recompensa
   extraPerCorrect: 2,     // moedas por acerto nos exercícios extras
@@ -998,7 +999,8 @@ function mascotSVG(eq = S.equipped, mood = 'happy') {
   if (kind) {
     const A = ANIMALS[kind](P, mood);
     const blush = '<ellipse cx="25" cy="52" rx="5" ry="3" fill="#ff8fab" opacity=".5"/><ellipse cx="75" cy="52" rx="5" ry="3" fill="#ff8fab" opacity=".5"/>';
-    return `${head}${A.behind}${A.arms}
+    const [la, ra] = A.arms.includes('/><') ? [A.arms.split('/><')[0] + '/>', '<' + A.arms.split('/><').slice(1).join('/><')] : [A.arms, ''];
+    return `${head}${A.behind}<g class="arm-l">${la}</g><g class="arm-r">${ra}</g>
     <ellipse cx="50" cy="56" rx="32" ry="36" fill="${P.body}"/>${A.belly}${P.extra || ''}${blush}${A.face}${A.front}${A.feet}${tail}`;
   }
   const pupils = mood === 'think' ? [[39, 36], [61, 36]] : mood === 'wow' ? [[37, 41], [63, 41]] : [[38, 42], [62, 42]];
@@ -1008,7 +1010,7 @@ function mascotSVG(eq = S.equipped, mood = 'happy') {
     : mood === 'think' ? '<path d="M28 27 Q37 23 46 27" stroke="#3a2c7a" stroke-width="2.2" fill="none" stroke-linecap="round"/>' : '';
   return `${head}
     <path d="M23 28 L28 8 L41 22 Z" fill="${P.dark}"/><path d="M77 28 L72 8 L59 22 Z" fill="${P.dark}"/>
-    <path d="M19 52 Q8 72 26 84 Q30 66 19 52Z" fill="${P.dark}"/><path d="M81 52 Q92 72 74 84 Q70 66 81 52Z" fill="${P.dark}"/>
+    <g class="arm-l"><path d="M19 52 Q8 72 26 84 Q30 66 19 52Z" fill="${P.dark}"/></g><g class="arm-r"><path d="M81 52 Q92 72 74 84 Q70 66 81 52Z" fill="${P.dark}"/></g>
     <ellipse cx="50" cy="56" rx="32" ry="36" fill="${P.body}"/>
     <ellipse cx="50" cy="67" rx="20" ry="22" fill="${P.belly}"/>
     <path d="M41 64 q3 3 6 0 M53 64 q3 3 6 0 M47 72 q3 3 6 0 M41 80 q3 3 6 0 M53 80 q3 3 6 0" stroke="${P.marks}" stroke-width="1.6" fill="none" stroke-linecap="round"/>${P.extra || ''}
@@ -3112,6 +3114,7 @@ function completeWork(c, via, extraMsg = '') {
     S.extras[t] = { sets: (S.extras[t] ? S.extras[t].sets : 0) + (c.obj.paid ? 1 : 0) };
     if (c.obj.review && obj.length && correct / obj.length >= 0.6) S.missed = (S.missed || []).filter(m => !c.obj.review.includes(m.q.q));
     questEvent('extra_done', { perfect: obj.length > 0 && correct === obj.length, book: c.obj.group === 'book' });
+    if (obj.length > 0 && correct === obj.length) setTimeout(() => celebrateFX('perfect'), 350);
     save();
     if (coins) addCoins(coins, `Extras: ${correct}/${obj.length} acertos`);
     renderWork();
@@ -3119,6 +3122,7 @@ function completeWork(c, via, extraMsg = '') {
     return;
   }
   const perfect = obj.length > 0 && correct === obj.length;
+  if (perfect) setTimeout(() => celebrateFX('perfect'), 350);   // gabaritou: o mascote joga confete (e dança/música, se tiver)
   if (c.rec) { questEvent('day_done', { onTime: false, perfect }); return completeRecovery(c, correct, obj.length, open, extraMsg); }
   const streakMsg = bumpStreak(c.obj.date);
   // Moedas do dia: na hora (no próprio dia, valor cheio; atrasada dentro da semana, metade)
@@ -3376,11 +3380,16 @@ function renderShop() {
       ${['hat', 'glasses', 'neck', 'back', 'skin'].includes(cat) ? '<div class="tiny muted">As roupinhas servem em todos os mascotes.</div>' : ''}</div></div>
     <div class="shop-main">
       <div class="tabs">${SHOP_CATS.map(c => `<button data-cat="${c.id}" class="${c.id === cat ? 'on' : ''}">${c.label}</button>`).join('')}</div>
-      <div class="items">${cat === 'note' ? noteShopHtml() : (cards || '<p class="muted">Nada aqui ainda.</p>')}</div>
+      ${cat === 'react' ? `<div class="row wrap tiny muted react-head"><span class="grow">Equipe 1 dancinha, 1 musiquinha e 1 confete. Eles aparecem quando você gabarita! 🎉 (O confete colorido é grátis.)</span><button class="btn small" data-act="sound">${soundOn() ? '🔊 Som ligado' : '🔇 Som desligado'}</button></div>` : ''}
+      <div class="items">${cat === 'note' ? noteShopHtml() : cat === 'react' ? items.map(reactCard).join('') : (cards || '<p class="muted">Nada aqui ainda.</p>')}</div>
     </div></div>`;
   $$('[data-cat]', el).forEach(b => b.onclick = () => { VIEW.shopCat = b.dataset.cat; VIEW.tryOn = null; renderShop(); });
   $('[data-act=collection]', el).onclick = () => show('collection');
   const nb = $('[data-note-buy]', el); if (nb) nb.onclick = buyNote;
+  $$('[data-test]', el).forEach(b => b.onclick = () => { const it = SHOP_ITEMS.find(i => i.id === b.dataset.test); celebrateFX('test', it); });
+  $$('[data-requip]', el).forEach(b => b.onclick = () => { const it = SHOP_ITEMS.find(i => i.id === b.dataset.requip); S.equipped[it.sub] = it.id; save(); renderShop(); celebrateFX('test', it); });
+  $$('[data-runequip]', el).forEach(b => b.onclick = () => { const it = SHOP_ITEMS.find(i => i.id === b.dataset.runequip); S.equipped[it.sub] = null; save(); renderShop(); });
+  const snd = $('[data-act=sound]', el); if (snd) snd.onclick = () => { S.settings.sound = !soundOn(); touch('settings'); save(); renderShop(); if (soundOn()) playMelody('default'); };
   const mn = $('[data-act=mynotes]', el); if (mn) mn.onclick = () => show('notes');
   $$('[data-try]', el).forEach(b => b.onclick = () => { VIEW.tryOn = b.dataset.try; renderShop(); });
   $$('[data-buy]', el).forEach(b => b.onclick = () => buy(b.dataset.buy));
@@ -3401,6 +3410,7 @@ async function buy(id) {
   } else {
     S.owned.push(it.id);
     if (WEAR.includes(it.cat) || it.cat === 'bg') S.equipped[it.cat] = it.id;
+    if (it.cat === 'react') { S.equipped[it.sub] = it.id; setTimeout(() => celebrateFX('test', it), 200); }
   }
   VIEW.tryOn = null;
   save(); applyTheme(); renderMascotMini(); renderShop();
@@ -3858,6 +3868,116 @@ async function pNotes(box) {
     try { await apiCall(`/api/children/${VIEW.noteKid}/notes/${b.dataset.ndel}`, { method: 'DELETE' }); pNotes(box); } catch (e) { toast(e.message); } });
 }
 
+/* ---------- Fase 6: confete ao gabaritar + 🎉 Reações (dancinhas, musiquinhas, confetes) ---------- */
+SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'bg'), 0, { id: 'react', label: '🎉 Reações' });
+SHOP_ITEMS.push(
+  // dancinhas do mascote (só movimentos)
+  { id: 're-dance-jump', cat: 'react', sub: 'dance', name: 'Pulinhos', price: 300, emoji: '🦘' },
+  { id: 're-dance-spin', cat: 'react', sub: 'dance', name: 'Giro', price: 400, emoji: '🌀' },
+  { id: 're-dance-robot', cat: 'react', sub: 'dance', name: 'Dança do robô', price: 500, emoji: '🤖' },
+  { id: 're-dance-macarena', cat: 'react', sub: 'dance', name: 'Dancinha estilo Macarena', price: 600, emoji: '💃' },
+  { id: 're-dance-moon', cat: 'react', sub: 'dance', name: 'Moonwalk', price: 800, emoji: '🕺' },
+  // musiquinhas originais (Web Audio)
+  { id: 're-mus-fanfare', cat: 'react', sub: 'music', name: 'Fanfarra da vitória', price: 250, emoji: '🎺' },
+  { id: 're-mus-bells', cat: 'react', sub: 'music', name: 'Sininhos mágicos', price: 250, emoji: '🔔' },
+  { id: 're-mus-arcade', cat: 'react', sub: 'music', name: 'Fliperama', price: 300, emoji: '🕹️' },
+  { id: 're-mus-robot', cat: 'react', sub: 'music', name: 'Bip-bop do robô', price: 300, emoji: '📟' },
+  { id: 're-mus-harp', cat: 'react', sub: 'music', name: 'Harpa das estrelas', price: 400, emoji: '🪕' },
+  // confetes
+  { id: 're-conf-stars', cat: 'react', sub: 'confetti', name: 'Chuva de estrelas', price: 300, emoji: '⭐' },
+  { id: 're-conf-hearts', cat: 'react', sub: 'confetti', name: 'Corações', price: 300, emoji: '💖' },
+  { id: 're-conf-rainbow', cat: 'react', sub: 'confetti', name: 'Arco-íris', price: 400, emoji: '🌈' },
+  { id: 're-conf-fireworks', cat: 'react', sub: 'confetti', name: 'Fogos de artifício', price: 500, emoji: '🎆' },
+);
+const reducedMotion = () => !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+const soundOn = () => S.settings.sound !== false;
+/* Confete em canvas, saindo do mascote */
+function confettiBurst(style = 'classic', origin = null, amount = 1) {
+  if (reducedMotion()) return;
+  const cv = document.createElement('canvas'); cv.className = 'fx-canvas';
+  const W = cv.width = innerWidth * (devicePixelRatio || 1), H = cv.height = innerHeight * (devicePixelRatio || 1);
+  cv.style.width = innerWidth + 'px'; cv.style.height = innerHeight + 'px';
+  document.body.appendChild(cv);
+  const g = cv.getContext('2d'); const k = devicePixelRatio || 1;
+  const o = origin || (() => { const el = $('#modal:not(.hidden) .owl-big svg') || $('#mascot-btn'); const r = el ? el.getBoundingClientRect() : { left: innerWidth / 2, top: innerHeight / 3, width: 0, height: 0 }; return { x: r.left + r.width / 2, y: r.top + r.height / 2 }; })();
+  const COLORS = ['#ff6b6b', '#ffd43b', '#51cf66', '#339af0', '#cc5de8', '#ff922b', '#f783ac'];
+  const RAIN = ['#ff6b6b', '#ff922b', '#ffd43b', '#51cf66', '#339af0', '#5c7cfa', '#cc5de8'];
+  const P = []; const N = Math.round((style === 'fireworks' ? 0 : 90) * amount);
+  for (let i = 0; i < N; i++) {
+    const a = -Math.PI / 2 + (Math.random() - .5) * Math.PI * 1.3, sp = (6 + Math.random() * 9) * k;
+    P.push({ x: o.x * k, y: o.y * k, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp, r: (5 + Math.random() * 6) * k, rot: Math.random() * 6, vr: (Math.random() - .5) * .3,
+      c: style === 'rainbow' ? RAIN[i % RAIN.length] : style === 'stars' ? ['#ffd43b', '#fcc419', '#fff3bf', '#ffe066'][i % 4] : style === 'hearts' ? ['#ff6b9a', '#f06595', '#e64980', '#ffa8c5'][i % 4] : COLORS[i % COLORS.length], life: 1 });
+  }
+  if (style === 'fireworks') for (let b = 0; b < 4; b++) { const cx = (.2 + Math.random() * .6) * W, cy = (.15 + Math.random() * .35) * H, col = COLORS[b * 2 % COLORS.length], delay = b * 18;
+    for (let i = 0; i < 40 * amount; i++) { const a = i / 40 * Math.PI * 2, sp = (3 + Math.random() * 4) * k; P.push({ x: cx, y: cy, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp, r: 3 * k, c: col, life: 1, delay, spark: true }); } }
+  const star = (x, y, r) => { g.beginPath(); for (let i = 0; i < 10; i++) { const a = i * Math.PI / 5 - Math.PI / 2, rr = i % 2 ? r * .45 : r; g.lineTo(x + Math.cos(a) * rr, y + Math.sin(a) * rr); } g.closePath(); g.fill(); };
+  const heart = (x, y, r) => { g.beginPath(); g.moveTo(x, y + r * .7); g.bezierCurveTo(x - r * 1.4, y - r * .2, x - r * .6, y - r * 1.2, x, y - r * .4); g.bezierCurveTo(x + r * .6, y - r * 1.2, x + r * 1.4, y - r * .2, x, y + r * .7); g.fill(); };
+  let frame = 0;
+  const tick = () => {
+    frame++; g.clearRect(0, 0, W, H); let alive = 0;
+    P.forEach(p => {
+      if (p.delay && frame < p.delay) { alive++; return; }
+      p.vy += (p.spark ? .06 : .32) * k; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.rot += p.vr || 0; p.life -= p.spark ? .018 : .006;
+      if (p.life <= 0 || p.y > H + 40) return; alive++;
+      g.globalAlpha = Math.max(0, Math.min(1, p.life * 1.6)); g.fillStyle = p.c;
+      if (style === 'stars') star(p.x, p.y, p.r); else if (style === 'hearts') heart(p.x, p.y, p.r);
+      else if (p.spark) { g.beginPath(); g.arc(p.x, p.y, p.r, 0, 6.3); g.fill(); }
+      else { g.save(); g.translate(p.x, p.y); g.rotate(p.rot); g.fillRect(-p.r / 2, -p.r / 4, p.r, p.r / 2); g.restore(); }
+    });
+    if (alive && frame < 260) requestAnimationFrame(tick); else cv.remove();
+  };
+  requestAnimationFrame(tick);
+}
+/* Musiquinhas originais (melodias próprias, 2–4 s) */
+let AC = null;
+const MELODIES = {
+  // [frequência em Hz (0 = pausa), duração em batidas]
+  're-mus-fanfare': { wave: 'triangle', bpm: 300, notes: [[523, 1], [659, 1], [784, 1], [1047, 2], [784, 1], [1047, 3]] },
+  're-mus-bells': { wave: 'sine', bpm: 360, notes: [[1319, 1], [1568, 1], [2093, 1], [1568, 1], [1760, 1], [2349, 1], [2637, 3]] },
+  're-mus-arcade': { wave: 'square', bpm: 420, notes: [[392, 1], [523, 1], [659, 1], [784, 1], [659, 1], [784, 1], [1047, 1], [1319, 3]] },
+  're-mus-robot': { wave: 'square', bpm: 260, notes: [[220, 1], [0, 1], [330, 1], [220, 1], [440, 1], [0, 1], [660, 2]] },
+  're-mus-harp': { wave: 'sine', bpm: 480, notes: [[523, 1], [659, 1], [784, 1], [988, 1], [1175, 1], [1319, 1], [1568, 1], [1976, 1], [2093, 4]] },
+  default: { wave: 'triangle', bpm: 340, notes: [[659, 1], [784, 1], [1047, 2]] },
+};
+function playMelody(id) {
+  if (!soundOn()) return;
+  const m = MELODIES[id] || MELODIES.default;
+  try {
+    AC = AC || new (window.AudioContext || window.webkitAudioContext)();
+    if (AC.state === 'suspended') AC.resume();
+    let t = AC.currentTime + .05; const beat = 60 / m.bpm;
+    m.notes.forEach(([f, d]) => {
+      if (f) { const o = AC.createOscillator(), gn = AC.createGain(); o.type = m.wave; o.frequency.value = f;
+        gn.gain.setValueAtTime(.0001, t); gn.gain.exponentialRampToValueAtTime(.18, t + .02); gn.gain.exponentialRampToValueAtTime(.0001, t + d * beat * .95);
+        o.connect(gn).connect(AC.destination); o.start(t); o.stop(t + d * beat); }
+      t += d * beat;
+    });
+  } catch (e) { /* sem áudio */ }
+}
+/* Dancinhas: classes CSS no SVG do mascote (braços são grupos .arm-l/.arm-r) */
+const DANCE_CLASS = { 're-dance-jump': 'dance-jump', 're-dance-spin': 'dance-spin', 're-dance-robot': 'dance-robot', 're-dance-macarena': 'dance-macarena', 're-dance-moon': 'dance-moon' };
+function danceOn(svg, id) {
+  if (!svg || !DANCE_CLASS[id] || reducedMotion()) return;
+  const cls = DANCE_CLASS[id];
+  svg.classList.remove(...Object.values(DANCE_CLASS)); void svg.getBoundingClientRect(); svg.classList.add(cls);
+  setTimeout(() => svg.classList.remove(cls), 4200);
+}
+// kind: 'perfect' (gabaritou: confete equipado + dança + música), 'small'/'big' (missões, ovos), 'hearts' (recadinho)
+function celebrateFX(kind = 'small', only = null) {
+  const eq = S.equipped || {};
+  const conf = only ? (only.sub === 'confetti' ? only.id : null) : eq.confetti;
+  const style = kind === 'hearts' ? 'hearts' : ({ 're-conf-stars': 'stars', 're-conf-hearts': 'hearts', 're-conf-rainbow': 'rainbow', 're-conf-fireworks': 'fireworks' })[conf] || 'classic';
+  if (!only || only.sub === 'confetti') confettiBurst(style, null, kind === 'small' ? .6 : kind === 'big' || kind === 'perfect' ? 1.3 : 1);
+  if (kind === 'perfect' || (only && only.sub === 'dance')) danceOn($('#modal:not(.hidden) .owl-big svg') || $('.shop-preview svg') || $('#mascot-btn svg'), only ? only.id : eq.dance);
+  if (kind === 'perfect' || (only && only.sub === 'music')) playMelody(only ? only.id : eq.music);
+}
+function reactCard(it) {
+  const owned = S.owned.includes(it.id); const on = (S.equipped || {})[it.sub] === it.id;
+  const subL = { dance: 'Dancinha', music: 'Musiquinha', confetti: 'Confete' }[it.sub];
+  return `<div class="item react-item ${owned ? 'owned' : ''}"><div class="pic react-pic">${it.emoji}</div><div class="nm">${esc(it.name)}</div><div class="tiny muted">${subL}</div><div class="pr">🪙 ${it.price}</div>
+    <div class="item-act"><button class="btn small" data-test="${it.id}">▶ Testar</button>${!owned ? `<button class="btn small primary" data-buy="${it.id}">Comprar</button>` : on ? `<button class="btn small ok" data-runequip="${it.id}">Usando ✔</button>` : `<button class="btn small" data-requip="${it.id}">Usar</button>`}</div></div>`;
+}
+
 /* ---------- Área dos pais ---------- */
 function renderParents() {
   const el = $('#scr-parents');
@@ -3946,6 +4066,7 @@ function pSettings(box) {
       <label class="field">Penalidade (semana não entregue)<input type="number" id="s-penalty" value="${st.penalty}"></label>
       <label class="field">Recuperação atrasada vale (% da recompensa)<input type="number" id="s-late" value="${latePct()}"></label>
       <label class="field">Moedas por tarefa do dia (0 desliga)<input type="number" id="s-dayc" value="${st.dayCoins ?? 10}"></label>
+      <label class="field">Som das musiquinhas<select id="s-sound"><option value="1" ${st.sound !== false ? 'selected' : ''}>🔊 Ligado</option><option value="0" ${st.sound === false ? 'selected' : ''}>🔇 Desligado</option></select></label>
       <label class="field">💌 Preço do recadinho secreto<input type="number" id="s-notep" value="${notePrice()}"></label>
       <label class="field">📜 Missões<select id="s-quests"><option value="1" ${st.questsOn !== false ? 'selected' : ''}>Ligadas</option><option value="0" ${st.questsOn === false ? 'selected' : ''}>Desligadas</option></select></label>
       <label class="field">Missões de compra (ganha o gasto + 50)<select id="s-bquests"><option value="1" ${st.buyQuests !== false ? 'selected' : ''}>Ligadas</option><option value="0" ${st.buyQuests === false ? 'selected' : ''}>Desligadas</option></select></label>
@@ -3975,7 +4096,7 @@ function pSettings(box) {
     const reward = Math.max(0, num('#s-reward', st.reward)), penalty = num('#s-penalty', st.penalty);
     if (penalty <= reward) { toast('A penalidade precisa ser MAIOR que a recompensa.'); return; }
     Object.assign(st, {
-      reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), questsOn: $('#s-quests').value === '1', notePrice: clamp(num('#s-notep', notePrice()), 1, 100000), buyQuests: $('#s-bquests').value === '1', extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
+      reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), questsOn: $('#s-quests').value === '1', notePrice: clamp(num('#s-notep', notePrice()), 1, 100000), sound: $('#s-sound').value === '1', buyQuests: $('#s-bquests').value === '1', extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
       extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10), minPerDay: clamp(num('#s-min', st.minPerDay), 1, 15), maxPerDay: clamp(num('#s-max', st.maxPerDay), 3, 40),
       workshopCoins: clamp(num('#s-wkc', st.workshopCoins ?? 3), 0, 50), workshopPerDay: clamp(num('#s-wkd', st.workshopPerDay ?? 5), 0, 20),
       countMode: $('#s-cmode').value, perSubject: clamp(num('#s-per', st.perSubject || 2), 1, 4), dailyReading: $('#s-dread').value === '1',
