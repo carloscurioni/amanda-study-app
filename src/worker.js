@@ -2,13 +2,17 @@
    Estudos com a Lumi — servidor (Cloudflare Worker)
    -------------------------------------------------------------------------
    - Serve o app (pasta public/) e as rotas /api/*.
-   - Guarda o estado da família num Durable Object com SQLite (persistente).
-   - Chama a API do Claude para criar perguntas, dar dicas e corrigir folhas.
+   - Contas por família (convite + e-mail e senha), perfis de crianças com PIN.
+   - Diretório de contas: Durable Object "Directory" (SQLite).
+   - Dados de cada criança: um Durable Object "FamilyStore" por criança (cofre isolado).
+   - Chama a API do Claude com limite de gasto por criança/dia e por mês.
    Segredos (Cloudflare → Worker → Settings → Variables and Secrets):
-     ANTHROPIC_API_KEY  chave da API (console.anthropic.com)
-     FAMILY_CODE        senha da família, digitada uma vez em cada aparelho
+     ANTHROPIC_API_KEY  chave da API (platform.claude.com)
+     FAMILY_CODE        usado só no primeiro acesso, para criar a conta do administrador
    ========================================================================= */
 import { DurableObject } from 'cloudflare:workers';
+import { Directory, AppError } from './directory.js';
+export { Directory };
 
 const SUBJECT_IDS = ['pt', 'pt_ort', 'pt_leit', 'bss', 'en', 'en_read', 'en_spell', 'en_guided', 'ipc', 'math'];
 const SUBJECTS_TXT = `
@@ -23,12 +27,19 @@ const SUBJECTS_TXT = `
 - ipc: IPC – International Primary Curriculum (science, history, geography units) — in English
 - math: Math — in English`;
 const DOWS = ['sab', 'dom', 'seg', 'ter', 'qua', 'qui', 'sex'];
+const YEAR_LABELS = {
+  Y1: 'Year 1 do currículo britânico (≈ Infantil 5 no Brasil, 5–6 anos)', Y2: 'Year 2 do currículo britânico (≈ 1º ano no Brasil, 6–7 anos)',
+  Y3: 'Year 3 do currículo britânico (≈ 2º ano no Brasil, 7–8 anos)', Y4: 'Year 4 do currículo britânico (≈ 3º ano no Brasil, 8–9 anos)',
+  Y5: 'Year 5 do currículo britânico (≈ 4º ano no Brasil, 9–10 anos)', Y6: 'Year 6 do currículo britânico (≈ 5º ano no Brasil, 10–11 anos)',
+  Y7: 'Year 7 do currículo britânico (≈ 6º ano no Brasil, 11–12 anos)', Y8: 'Year 8 do currículo britânico (≈ 7º ano no Brasil, 12–13 anos)',
+  Y9: 'Year 9 do currículo britânico (≈ 8º ano no Brasil, 13–14 anos)',
+};
+// Preço por milhão de tokens (US$): entrada / saída. Usado para estimar o gasto e aplicar os limites.
+const PRICES = { 'claude-sonnet-5-5': [2, 10], 'claude-haiku-5-5': [0.10, 0.50], 'claude-opus-5-5': [4, 20] };
 
-/* ---------------- Durable Object: o "banco de dados" da família ---------------- */
+/* ---------------- Cofre de cada criança (Durable Object) ---------------- */
 export class FamilyStore extends DurableObject {
-  async load() {
-    return (await this.ctx.storage.get('state')) ?? null;
-  }
+  async load() { return (await this.ctx.storage.get('state')) ?? null; }
   async save(state, baseRev) {
     const cur = await this.ctx.storage.get('state');
     const curRev = cur?.rev ?? 0;
@@ -37,26 +48,12 @@ export class FamilyStore extends DurableObject {
     await this.ctx.storage.put('state', next);
     return { ok: true, rev: next.rev, savedAt: next.savedAt };
   }
-  async reset() {
-    await this.ctx.storage.delete('state');
-    return { ok: true };
-  }
-  // Limite diário de chamadas ao Claude (proteção de custo).
-  async useAi(limit) {
-    const day = new Date().toISOString().slice(0, 10);
-    const u = (await this.ctx.storage.get('ai')) || { day, n: 0 };
-    if (u.day !== day) { u.day = day; u.n = 0; }
-    if (u.n >= limit) return { ok: false, used: u.n };
-    u.n++;
-    await this.ctx.storage.put('ai', u);
-    return { ok: true, used: u.n };
-  }
-  async aiUsage() { return (await this.ctx.storage.get('ai')) || null; }
+  async reset() { await this.ctx.storage.deleteAll(); return { ok: true }; }
 }
 
 /* ---------------- Utilitários HTTP ---------------- */
-class HttpError extends Error { constructor(status, message) { super(message); this.status = status; } }
-const json = (data, status = 200) => new Response(JSON.stringify(data), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
+const HttpError = AppError;
+const json = (data, status = 200, headers = {}) => new Response(JSON.stringify(data), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', ...headers } });
 function safeEqual(a, b) {
   a = String(a || ''); b = String(b || '');
   let diff = a.length ^ b.length;
@@ -68,19 +65,45 @@ async function body(req, max = 12_000_000) {
   if (len > max) throw new HttpError(413, 'Envio grande demais.');
   try { return await req.json(); } catch { throw new HttpError(400, 'JSON inválido.'); }
 }
-const store = env => env.STORE.get(env.STORE.idFromName('familia'));
+const dir = env => {
+  const stub = env.DIRECTORY.get(env.DIRECTORY.idFromName('directory'));
+  return new Proxy({}, { get: (_, name) => async (...args) => {
+    const r = await stub.rpc(String(name), ...args);
+    if (r.err) throw new HttpError(r.status, r.err);
+    return r.v;
+  } });
+};
+const childStore = (env, childId) => env.STORE.get(env.STORE.idFromName('child:' + childId));
+const legacyStore = env => env.STORE.get(env.STORE.idFromName('familia'));
+const COOKIE = 'lumi_s';
+function getCookie(req, name) {
+  const m = (req.headers.get('cookie') || '').match(new RegExp('(?:^|;\\s*)' + name + '=([^;]+)'));
+  return m ? decodeURIComponent(m[1]) : '';
+}
+const sessionCookie = token => `${COOKIE}=${encodeURIComponent(token)}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${60 * 86400}`;
+const clearCookie = () => `${COOKIE}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0`;
 
 /* ---------------- Chamada ao Claude com saída JSON garantida ---------------- */
-async function claude(env, { model, effort, system, content, schema, maxTokens }) {
+// Regras de segurança infantil acrescentadas a TODOS os prompts.
+const CHILD_SAFETY = `
+
+Segurança infantil (obrigatório): quem usa este app é uma criança. Todo conteúdo deve ser apropriado para crianças, gentil e educativo.
+Nunca peça, repita ou invente dados pessoais (nome completo, endereço, escola, telefone, redes sociais, fotos de rosto).
+Se o texto recebido trouxer algo impróprio, perigoso, pessoal ou fora do contexto escolar, ignore essa parte e produza apenas conteúdo escolar adequado.
+Não inclua links nem nomes de sites, e nunca incentive a criança a conversar com desconhecidos.
+Você é uma inteligência artificial (a mascote Lumi); nunca finja ser uma pessoa.`;
+async function claude(env, ctx, { model, effort, system, content, schema, maxTokens }) {
   if (!env.ANTHROPIC_API_KEY) throw new HttpError(503, 'A chave da API do Claude não foi configurada no servidor.');
-  const limit = Number(env.AI_DAILY_LIMIT || 150);
-  const quota = await store(env).useAi(limit);
-  if (!quota.ok) throw new HttpError(429, `Limite diário de ${limit} chamadas ao Claude atingido. Amanhã libera de novo.`);
+  const childCap = Number(env.CHILD_DAILY_USD || 0.5), monthCap = Number(env.MONTHLY_USD || 40);
+  const ok = await dir(env).aiCheck(ctx.familyId, ctx.childId, childCap, monthCap);
+  if (!ok.ok) throw new HttpError(429, ok.why === 'child'
+    ? 'A Lumi já trabalhou bastante hoje! O limite diário desta criança foi atingido. Amanhã libera de novo. 🦉'
+    : 'O limite mensal de uso do app foi atingido. Avise o administrador.');
   const res = await fetch(`${env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com'}/v1/messages`, {
     method: 'POST',
     headers: { 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
     body: JSON.stringify({
-      model, max_tokens: maxTokens, system,
+      model, max_tokens: maxTokens, system: system + CHILD_SAFETY,
       messages: [{ role: 'user', content }],
       output_config: { effort, format: { type: 'json_schema', schema } },
     }),
@@ -92,6 +115,10 @@ async function claude(env, { model, effort, system, content, schema, maxTokens }
     throw new HttpError(502, `Claude respondeu ${res.status}: ${msg}`);
   }
   const data = JSON.parse(raw);
+  const u = data.usage || {};
+  const [pin, pout] = PRICES[model] || [4, 20];
+  const usd = ((u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) * 1.25 + (u.cache_read_input_tokens || 0) * 0.1) * pin / 1e6 + (u.output_tokens || 0) * pout / 1e6;
+  await dir(env).aiRecord(ctx.familyId, ctx.childId, usd);
   if (data.stop_reason === 'refusal') throw new HttpError(502, 'O Claude recusou este pedido.');
   if (data.stop_reason === 'max_tokens') throw new HttpError(502, 'A resposta do Claude ficou longa demais. Tente com menos perguntas.');
   const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
@@ -217,7 +244,7 @@ Regras de qualidade:
 - Não repita perguntas iguais ou quase iguais.`;
 }
 
-async function handlePlan(env, b) {
+async function handlePlan(env, b, ctx) {
   const days = (b.days || []).filter(d => DOWS.includes(d.dow) && d.n > 0);
   if (!days.length) throw new HttpError(400, 'Nenhum dia com perguntas.');
   const total = days.reduce((a, d) => a + d.n, 0);
@@ -250,14 +277,14 @@ ${dayList}
    Se a matéria de leitura NÃO tiver [nível do texto], deixe sem texto e siga a regra normal de leitura.
 7. "message": 1–2 frases da Lumi (corujinha) animando a aluna, em português.` },
   ];
-  const out = await claude(env, {
+  const out = await claude(env, ctx, {
     model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: env.EFFORT_PLAN || 'medium',
     system: studentProfile(b.name, b.year), content, schema: PLAN_SCHEMA, maxTokens: 32000,
   });
   return out;
 }
 
-async function handleMore(env, b) {
+async function handleMore(env, b, ctx) {
   const n = Math.max(1, Math.min(15, Number(b.n) || 5));
   const subjects = (b.subjects || []).filter(s => SUBJECT_IDS.includes(s));
   const content = [{ type: 'text', text: `Assuntos da semana:
@@ -267,13 +294,13 @@ ${b.objectiveOnly ? '\nNÃO use o tipo "open" — só mc, short e num (correçã
 ${b.exclude?.length ? `\nNão repita estas perguntas:\n- ${b.exclude.slice(0, 60).map(x => String(x).slice(0, 120)).join('\n- ')}` : ''}
 
 Crie exatamente ${n} perguntas novas, curtas e variadas.` }];
-  return claude(env, {
+  return claude(env, ctx, {
     model: env.MODEL_FAST || 'claude-haiku-5-5', effort: env.EFFORT_FAST || 'low',
     system: studentProfile(b.name, b.year), content, schema: MORE_SCHEMA, maxTokens: 8000,
   });
 }
 
-async function handleTutor(env, b) {
+async function handleTutor(env, b, ctx) {
   const lang = b.lang === 'en' ? 'en' : 'pt';
   const content = [{ type: 'text', text: `Pergunta (${b.subjectName || b.subject}): ${String(b.q || '').slice(0, 600)}
 ${b.options?.length ? `Opções: ${b.options.join(' | ')}` : ''}
@@ -283,13 +310,13 @@ ${b.context ? `Contexto (texto que ela leu / assuntos): ${String(b.context).slic
 Você é a Lumi, uma corujinha tutora gentil. Escreva em ${lang === 'en' ? 'English' : 'português'} de 1 a 3 frases curtas para uma criança (${level(b)}):
 explique a ideia por trás da pergunta ou dê um exemplo parecido, SEM dizer a resposta e sem eliminar opções diretamente.
 Se ela já respondeu errado, diga com carinho onde pensar de novo.` }];
-  return claude(env, {
+  return claude(env, ctx, {
     model: env.MODEL_FAST || 'claude-haiku-5-5', effort: 'low',
     system: 'Você é uma tutora paciente para crianças. Nunca entregue a resposta.', content, schema: TUTOR_SCHEMA, maxTokens: 1500,
   });
 }
 
-async function handleGrade(env, b) {
+async function handleGrade(env, b, ctx) {
   const images = (b.images || []).slice(0, 3);
   if (!images.length) throw new HttpError(400, 'Mande a foto da folha.');
   const qs = (b.questions || []).slice(0, 30);
@@ -305,14 +332,14 @@ Para cada número, transcreva em "read" o que ela escreveu ou marcou e dê o ver
 - Perguntas de resposta livre também recebem "ok" ou "bad": "ok" se a resposta responde à pergunta de forma correta e razoável para a idade (não exija perfeição); "bad" se está errada, fora do assunto ou incompleta demais.
 Em "note", um comentário curto e gentil: quando errada, diga a forma certa; nas livres, diga o que ficou bom e o que poderia melhorar. Se a foto não for desta folha ou estiver ilegível, legible=false.` },
   ];
-  return claude(env, {
+  return claude(env, ctx, {
     model: env.MODEL_GRADE || env.MODEL_PLAN || 'claude-sonnet-5-5', effort: env.EFFORT_GRADE || 'medium',
     system: 'Você corrige folhas de exercícios escritas à mão por crianças, com precisão e carinho.', content, schema: GRADE_SCHEMA, maxTokens: 8000,
   });
 }
 
 const LANG_NAME = l => (l === 'en' ? 'English' : 'português do Brasil');
-async function handleExplain(env, b) {
+async function handleExplain(env, b, ctx) {
   const lang = b.lang === 'en' ? 'en' : 'pt';
   const content = [{ type: 'text', text: `Matéria: ${b.subjectName || b.subject}
 Pergunta que a aluna está estudando: ${String(b.q || '').slice(0, 600)}
@@ -323,12 +350,12 @@ Explique, em ${LANG_NAME(lang)}, o CONTEÚDO por trás desta pergunta para uma c
 o conceito, por que ele importa e um exemplo do dia a dia.
 ${b.done ? `Ela já respondeu. A resposta correta é: ${b.answer || '(resposta livre)'}. Pode explicar por que essa resposta está certa.` : 'Ela ainda NÃO respondeu: explique o conceito sem dar a resposta desta pergunta (use outro exemplo).'}
 Fatos sempre corretos. Linguagem simples e animada, sem infantilizar.` }];
-  return claude(env, {
+  return claude(env, ctx, {
     model: env.MODEL_EXPLAIN || env.MODEL_FAST || 'claude-haiku-5-5', effort: 'medium',
     system: 'Você é a Lumi, uma corujinha professora que explica conteúdos escolares para crianças com clareza e precisão.', content, schema: EXPLAIN_SCHEMA, maxTokens: 4000,
   });
 }
-async function handleCheckOpen(env, b) {
+async function handleCheckOpen(env, b, ctx) {
   const items = (b.items || []).slice(0, 20);
   if (!items.length) return { results: [] };
   const list = items.map((x, i) => `${i + 1}. (${x.subjectName || x.subject}; responder em ${LANG_NAME(x.lang)})
@@ -340,39 +367,148 @@ ${list}
 
 Para cada número: "ok" se responde à pergunta de forma correta e razoável para a idade (não exija perfeição nem ortografia impecável, a menos que a pergunta seja de ortografia/escrita); "bad" se está errada, fora do assunto, em branco ou incompleta demais.
 "note": 1–2 frases gentis no idioma da pergunta, dizendo o que ficou bom e, se for o caso, o que faltou ou qual seria a ideia certa.` }];
-  return claude(env, {
+  return claude(env, ctx, {
     model: env.MODEL_FAST || 'claude-haiku-5-5', effort: 'medium',
     system: 'Você corrige respostas de crianças com justiça e carinho.', content, schema: OPEN_SCHEMA, maxTokens: 6000,
   });
 }
 
 /* ---------------- Roteador ---------------- */
-async function api(req, env, path) {
-  if (path === '/api/health') {
-    return json({ ok: true, ai: !!env.ANTHROPIC_API_KEY, configured: !!env.FAMILY_CODE });
-  }
-  if (!env.FAMILY_CODE) throw new HttpError(503, 'Falta configurar o FAMILY_CODE no servidor.');
-  if (!safeEqual(req.headers.get('x-family-code'), env.FAMILY_CODE)) throw new HttpError(401, 'Código da família incorreto.');
+const AI_HANDLERS = { plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen };
 
-  const m = req.method;
-  if (path === '/api/login' && m === 'POST') return json({ ok: true, ai: !!env.ANTHROPIC_API_KEY });
-  if (path === '/api/state' && m === 'GET') return json({ state: await store(env).load() });
-  if (path === '/api/state' && m === 'PUT') {
-    const b = await body(req, 3_000_000);
-    if (!b.state || typeof b.state !== 'object') throw new HttpError(400, 'Estado inválido.');
-    const r = await store(env).save(b.state, Number(b.baseRev) || 0);
-    return json(r, r.ok ? 200 : 409);
+async function api(req, env, url) {
+  const path = url.pathname, m = req.method;
+  // Proteção contra requisições de outros sites: toda escrita precisa do cabeçalho do app.
+  if (m !== 'GET' && req.headers.get('x-lumi') !== '1') throw new HttpError(403, 'Requisição recusada.');
+  const D = dir(env);
+
+  if (path === '/api/health') {
+    const st = await D.status();
+    return json({ ok: true, ai: !!env.ANTHROPIC_API_KEY, setup: st.accounts === 0, canSetup: !!env.FAMILY_CODE });
   }
-  if (path === '/api/state' && m === 'DELETE') return json(await store(env).reset());
-  if (path === '/api/usage' && m === 'GET') return json({ usage: await store(env).aiUsage(), limit: Number(env.AI_DAILY_LIMIT || 150) });
-  if (m === 'POST') {
+  // Primeiro acesso: cria a conta do administrador e leva os dados antigos para o 1º perfil.
+  if (path === '/api/setup' && m === 'POST') {
+    const b = await body(req, 50_000);
+    if (!env.FAMILY_CODE || !safeEqual(b.code, env.FAMILY_CODE)) throw new HttpError(401, 'Código de configuração incorreto.');
+    const r = await D.setup(b);
+    const old = await legacyStore(env).load();
+    if (old) {
+      const st = { ...old, rev: 0 };
+      if (b.childName) st.name = String(b.childName).slice(0, 30);
+      await childStore(env, r.childId).save(st, 0);
+    }
+    return json({ ok: true, migrated: !!old }, 200, { 'set-cookie': sessionCookie(r.token) });
+  }
+  if (path === '/api/auth/login' && m === 'POST') {
+    const b = await body(req, 10_000);
+    const r = await D.login(b.email, b.password);
+    return json({ ok: true }, 200, { 'set-cookie': sessionCookie(r.token) });
+  }
+  const invM = path.match(/^\/api\/invite\/([A-Za-z0-9_-]{10,80})(\/accept)?$/);
+  if (invM && m === 'GET' && !invM[2]) return json(await D.inviteInfo(invM[1]));
+  if (invM && m === 'POST' && invM[2]) {
+    const b = await body(req, 20_000);
+    const r = await D.acceptInvite(invM[1], b);
+    return json({ ok: true }, 200, { 'set-cookie': sessionCookie(r.token) });
+  }
+
+  // ---- daqui para baixo, precisa estar logado ----
+  const token = getCookie(req, COOKIE);
+  const me = await D.auth(token);
+  if (!me) throw new HttpError(401, 'Sessão expirada. Entre de novo.');
+  const familyId = me.family.id;
+  const isAdmin = me.parent.role === 'admin';
+  const need = cond => { if (!cond) throw new HttpError(403, 'Sem permissão.'); };
+
+  if (path === '/api/auth/me' && m === 'GET') return json({ parent: me.parent, family: { id: me.family.id, name: me.family.name }, children: me.children, ai: !!env.ANTHROPIC_API_KEY });
+  if (path === '/api/auth/logout' && m === 'POST') { await D.logout(token); return json({ ok: true }, 200, { 'set-cookie': clearCookie() }); }
+  if (path === '/api/auth/verify' && m === 'POST') { const b = await body(req, 5_000); return json(await D.verifyPassword(me.parent.id, b.password)); }
+  if (path === '/api/auth/password' && m === 'POST') { const b = await body(req, 5_000); return json(await D.changePassword(me.parent.id, b.old, b.new)); }
+
+  // Família: crianças, responsáveis, uso, convite para outro responsável, exportar e apagar
+  if (path === '/api/family' && m === 'GET') return json({ parents: await D.familyParents(familyId), usage: await D.familyUsage(familyId) });
+  if (path === '/api/family/children' && m === 'POST') { const b = await body(req, 5_000); return json(await D.addChild(familyId, b)); }
+  const chM = path.match(/^\/api\/family\/children\/([A-Za-z0-9_-]+)(\/unlock)?$/);
+  if (chM && m === 'PATCH') { const b = await body(req, 5_000); return json(await D.updateChild(familyId, chM[1], b)); }
+  if (chM && m === 'POST' && chM[2]) { const b = await body(req, 2_000); return json(await D.unlockChild(familyId, chM[1], b.pin)); }
+  if (chM && m === 'DELETE' && !chM[2]) {
+    const b = await body(req, 5_000);
+    if (!(await D.verifyPassword(me.parent.id, b.password)).ok) throw new HttpError(401, 'Senha incorreta.');
+    await D.deleteChild(familyId, chM[1]);
+    await childStore(env, chM[1]).reset();
+    return json({ ok: true });
+  }
+  if (path === '/api/family/invite-parent' && m === 'POST') {
+    const r = await D.createInvite(me.parent.id, { kind: 'join', familyId });
+    return json({ link: `${url.origin}/?convite=${r.token}`, expires: r.expires });
+  }
+  if (path === '/api/family/export' && m === 'GET') {
+    const out = { family: me.family.name, exportedAt: new Date().toISOString(), children: [] };
+    for (const c of me.children) out.children.push({ ...c, data: await childStore(env, c.id).load() });
+    return json(out);
+  }
+  if (path === '/api/family' && m === 'DELETE') {
+    const b = await body(req, 5_000);
+    if (!(await D.verifyPassword(me.parent.id, b.password)).ok) throw new HttpError(401, 'Senha incorreta.');
+    const r = await D.deleteFamily(familyId);
+    for (const id of r.childIds) await childStore(env, id).reset();
+    return json({ ok: true }, 200, { 'set-cookie': clearCookie() });
+  }
+  if (path === '/api/report' && m === 'POST') { const b = await body(req, 10_000); return json(await D.report(familyId, b.childId, b.kind, b.text)); }
+
+  // Dados de cada criança (só da própria família)
+  const stM = path.match(/^\/api\/children\/([A-Za-z0-9_-]+)\/state$/);
+  if (stM) {
+    need(me.children.some(c => c.id === stM[1]));
+    const S = childStore(env, stM[1]);
+    if (m === 'GET') return json({ state: await S.load() });
+    if (m === 'PUT') {
+      const b = await body(req, 3_000_000);
+      if (!b.state || typeof b.state !== 'object') throw new HttpError(400, 'Estado inválido.');
+      const r = await S.save(b.state, Number(b.baseRev) || 0);
+      return json(r, r.ok ? 200 : 409);
+    }
+    if (m === 'DELETE') return json(await S.reset());
+  }
+
+  // Claude (sempre em nome de uma criança da família, com limite de gasto)
+  const aiM = path.match(/^\/api\/ai\/([a-z-]+)$/);
+  if (aiM && m === 'POST' && AI_HANDLERS[aiM[1]]) {
     const b = await body(req);
-    if (path === '/api/plan') return json(await handlePlan(env, b));
-    if (path === '/api/more') return json(await handleMore(env, b));
-    if (path === '/api/tutor') return json(await handleTutor(env, b));
-    if (path === '/api/grade') return json(await handleGrade(env, b));
-    if (path === '/api/explain') return json(await handleExplain(env, b));
-    if (path === '/api/check-open') return json(await handleCheckOpen(env, b));
+    const child = me.children.find(c => c.id === b.childId);
+    need(child);
+    b.name = child.name; b.year = YEAR_LABELS[child.year] || YEAR_LABELS.Y5;
+    return json(await AI_HANDLERS[aiM[1]](env, b, { familyId, childId: child.id }));
+  }
+
+  // Administrador
+  if (path.startsWith('/api/admin/')) {
+    need(isAdmin);
+    if (path === '/api/admin/overview' && m === 'GET') return json({ ...(await D.adminOverview()), monthCap: Number(env.MONTHLY_USD || 40), childCap: Number(env.CHILD_DAILY_USD || 0.5) });
+    if (path === '/api/admin/invites' && m === 'POST') {
+      const b = await body(req, 5_000);
+      const r = await D.createInvite(me.parent.id, { kind: 'family', note: b.note });
+      return json({ link: `${url.origin}/?convite=${r.token}`, expires: r.expires });
+    }
+    const rvM = path.match(/^\/api\/admin\/invites\/([a-f0-9]{12})$/);
+    if (rvM && m === 'DELETE') return json(await D.revokeInvite(rvM[1]));
+    if (path === '/api/admin/reset-link' && m === 'POST') {
+      const b = await body(req, 2_000);
+      const p = await D.parentById(b.parentId);
+      if (!p) throw new HttpError(404, 'Responsável não encontrado.');
+      const r = await D.createInvite(me.parent.id, { kind: 'reset', parentId: p.id });
+      return json({ link: `${url.origin}/?redefinir=${r.token}`, expires: r.expires });
+    }
+    const fM = path.match(/^\/api\/admin\/families\/([A-Za-z0-9_-]+)$/);
+    if (fM && m === 'PATCH') { const b = await body(req, 2_000); return json(await D.setFamily(fM[1], b)); }
+    if (fM && m === 'DELETE') {
+      need(fM[1] !== familyId);
+      const r = await D.deleteFamily(fM[1]);
+      for (const id of r.childIds) await childStore(env, id).reset();
+      return json({ ok: true });
+    }
+    const rpM = path.match(/^\/api\/admin\/reports\/(\d+)$/);
+    if (rpM && m === 'POST') return json(await D.resolveReport(rpM[1]));
   }
   throw new HttpError(404, 'Rota não encontrada.');
 }
@@ -381,11 +517,11 @@ export default {
   async fetch(req, env) {
     const url = new URL(req.url);
     if (url.pathname.startsWith('/api/')) {
-      try { return await api(req, env, url.pathname); }
+      try { return await api(req, env, url); }
       catch (e) {
-        const status = e instanceof HttpError ? e.status : 500;
+        const status = e && Number.isInteger(e.status) ? e.status : 500;
         if (status === 500) console.error(e);
-        return json({ error: e.message || 'Erro no servidor.' }, status);
+        return json({ error: (e && e.message) || 'Erro no servidor.' }, status);
       }
     }
     return env.ASSETS.fetch(req);

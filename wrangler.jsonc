@@ -9,14 +9,22 @@
   "preview_urls": false,
   "assets": { "directory": "./public", "binding": "ASSETS" },
   "durable_objects": {
-    "bindings": [{ "name": "STORE", "class_name": "FamilyStore" }]
+    "bindings": [
+      { "name": "STORE", "class_name": "FamilyStore" },
+      { "name": "DIRECTORY", "class_name": "Directory" }
+    ]
   },
-  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["FamilyStore"] }],
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["FamilyStore"] },
+    { "tag": "v2", "new_sqlite_classes": ["Directory"] }
+  ],
   "vars": {
     // Modelos do Claude: planejar a semana e corrigir fotos (mais capaz) / extras e dicas (rápido).
     "MODEL_PLAN": "claude-sonnet-5-5",
     "MODEL_FAST": "claude-haiku-5-5",
-    "AI_DAILY_LIMIT": "150"
+    // Limites de gasto com o Claude (US$): por criança por dia e total do app por mês.
+    "CHILD_DAILY_USD": "0.50",
+    "MONTHLY_USD": "40"
   },
   "observability": { "enabled": true }
 }

@@ -250,7 +250,7 @@ function load() {
 }
 let S = load();
 function persistLocal() {
-  try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); }
+  try { localStorage.setItem(localKey(), JSON.stringify(S)); }
   catch (e) { toast('⚠️ Não consegui salvar neste navegador.'); }
 }
 function save() { persistLocal(); schedulePush(); }
@@ -266,22 +266,26 @@ function addCoins(amount, reason) {
 }
 
 /* =========================================================================
-   3b. SERVIDOR — sincronização do estado e chamadas ao Claude
-   Quando o app roda no Cloudflare Worker, os dados ficam no servidor
-   (e uma cópia no navegador). Aberto sem servidor, funciona só local.
+   3b. SERVIDOR — contas da família, perfis das crianças e sincronização
+   Com servidor: os pais entram com e-mail e senha; cada criança tem um perfil
+   (com PIN) e um cofre de dados próprio. Sem servidor: tudo só neste aparelho.
    ========================================================================= */
-const CODE_KEY = 'lumi-family-code';
-const Server = { on: false, ai: false, configured: false, code: readCode(), pushing: false, again: false, dirty: false, timer: null, status: 'local' };
-function readCode() { try { return localStorage.getItem(CODE_KEY) || ''; } catch (e) { return ''; } }
-function writeCode(c) { try { if (c) localStorage.setItem(CODE_KEY, c); else localStorage.removeItem(CODE_KEY); } catch (e) { /* ignora */ } Server.code = c || ''; }
+const CHILD_KEY = 'lumi-child';
+const Server = { on: false, ai: false, needsSetup: false, canSetup: false, me: null, childId: null, pushing: false, again: false, dirty: false, timer: null, status: 'local' };
+const AI_ROUTES = { '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open' };
+const AVATARS = ['🦉', '🦊', '🐼', '🐱', '🐶', '🦄', '🐸', '🐧', '🐯', '🐰', '🐨', '🐙'];
+function localKey(id = Server.childId) { return id ? `${STORE_KEY}:${id}` : STORE_KEY; }
+function savedChild() { try { return localStorage.getItem(CHILD_KEY) || ''; } catch (e) { return ''; } }
+function rememberChild(id) { try { if (id) localStorage.setItem(CHILD_KEY, id); else localStorage.removeItem(CHILD_KEY); } catch (e) { /* ignora */ } }
+function currentChild() { return Server.me && Server.me.children.find(c => c.id === Server.childId); }
 
 async function apiCall(path, { method = 'GET', data, timeout = 30000 } = {}) {
+  if (AI_ROUTES[path]) { path = '/api/ai/' + AI_ROUTES[path]; data = Object.assign({}, data, { childId: Server.childId }); }
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeout);
   try {
-    if (data && typeof data === 'object' && path !== '/api/state' && data.year === undefined && S.settings.year) data = Object.assign({ year: yearLabel(S.settings.year) }, data);
-    const r = await fetch(path, { method, signal: ctrl.signal, cache: 'no-store',
-      headers: { 'content-type': 'application/json', 'x-family-code': Server.code },
+    const r = await fetch(path, { method, signal: ctrl.signal, cache: 'no-store', credentials: 'same-origin',
+      headers: { 'content-type': 'application/json', 'x-lumi': '1' },
       body: data === undefined ? undefined : JSON.stringify(data) });
     const j = await r.json().catch(() => ({}));
     if (!r.ok) { const e = new Error(j.error || `Erro ${r.status}`); e.status = r.status; e.data = j; throw e; }
@@ -297,45 +301,93 @@ async function detectServer() {
     const r = await fetch('/api/health', { cache: 'no-store' });
     if (!r.ok) return false;
     const j = await r.json();
-    Server.on = !!j.ok; Server.ai = !!j.ai; Server.configured = !!j.configured;
+    Server.on = !!j.ok; Server.ai = !!j.ai; Server.needsSetup = !!j.setup; Server.canSetup = !!j.canSetup;
     return Server.on;
   } catch (e) { return false; }
 }
 function schedulePush() {
-  if (!Server.on || !Server.code) return;
+  if (!Server.on || !Server.childId) return;
   Server.dirty = true;
   clearTimeout(Server.timer);
   Server.timer = setTimeout(pushState, 800);
 }
 async function pushState() {
-  if (!Server.on || !Server.code) return;
+  if (!Server.on || !Server.childId) return;
   if (Server.pushing) { Server.again = true; return; }
   Server.pushing = true; Server.dirty = false;
+  const id = Server.childId;
   try {
-    const r = await apiCall('/api/state', { method: 'PUT', data: { state: S, baseRev: S.rev || 0 } });
-    S.rev = r.rev; persistLocal(); Server.status = 'ok';
+    const r = await apiCall(`/api/children/${id}/state`, { method: 'PUT', data: { state: S, baseRev: S.rev || 0 } });
+    if (id === Server.childId) { S.rev = r.rev; persistLocal(); Server.status = 'ok'; }
   } catch (e) {
-    if (e.status === 409 && e.data && e.data.state) {
+    if (e.status === 409 && e.data && e.data.state && id === Server.childId) {
       S = normalizeState(e.data.state); persistLocal(); Server.status = 'ok';
       applyTheme(); renderMascotMini(); renderCoins();
       if (!['work', 'check', 'selfcheck'].includes(currentScreen)) show(currentScreen);
       toast('🔄 Atualizado com as mudanças de outro aparelho');
     } else if (e.status === 401) {
-      Server.status = 'auth'; writeCode(''); toast('Código da família mudou: entre de novo.'); show('login');
+      Server.status = 'auth'; Server.me = null; VIEW.auth = { mode: 'login' }; show('login'); toast('Sua sessão expirou. Entre de novo.');
     } else { Server.dirty = true; Server.status = 'offline'; }
   } finally {
     Server.pushing = false;
     if (Server.again) { Server.again = false; pushState(); }
   }
 }
-async function loadFromServer() {
-  const r = await apiCall('/api/state');
-  if (r.state) { S = normalizeState(r.state); persistLocal(); }
-  else { S.rev = 0; await pushState(); }   // primeira vez: sobe o que já existe neste aparelho
-  Server.status = 'ok';
-}
+async function flushPush() { clearTimeout(Server.timer); if (Server.dirty || Server.pushing) { await pushState(); } }
 window.addEventListener('online', () => { if (Server.dirty) pushState(); });
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden' && Server.dirty) pushState(); });
+
+// Entra no perfil de uma criança: carrega o cofre dela (servidor; cópia local se estiver sem internet).
+async function enterChild(id) {
+  const child = Server.me.children.find(c => c.id === id);
+  if (!child) { rememberChild(''); VIEW.auth = { mode: 'profiles' }; show('login'); return; }
+  await flushPush();
+  Server.childId = id; rememberChild(id);
+  let st = null;
+  try { st = (await apiCall(`/api/children/${id}/state`)).state; Server.status = 'ok'; }
+  catch (e) {
+    if (e.status === 401) { Server.me = null; VIEW.auth = { mode: 'login' }; show('login'); return; }
+    try { const raw = localStorage.getItem(localKey(id)); if (raw) st = JSON.parse(raw); } catch (err) { /* ignora */ }
+    Server.status = 'offline'; toast('Sem conexão: usando a cópia deste aparelho.');
+  }
+  S = st ? normalizeState(st) : defaultState();
+  S.name = child.name;
+  S.settings.year = child.year || S.settings.year;
+  if (!st) S.rev = 0;
+  persistLocal();
+  if (!st && Server.status === 'ok') pushState();
+  startApp();
+}
+async function refreshMe() { Server.me = await apiCall('/api/auth/me'); Server.ai = Server.me.ai; return Server.me; }
+function afterLogin() {
+  history.replaceState(null, '', location.pathname + (new URLSearchParams(location.search).get('hoje') ? `?hoje=${new URLSearchParams(location.search).get('hoje')}` : ''));
+  const kids = Server.me.children;
+  if (!kids.length) { VIEW.auth = { mode: 'addchild', first: true }; show('login'); return; }
+  const saved = savedChild();
+  if (saved && kids.some(c => c.id === saved)) { enterChild(saved); return; }
+  VIEW.auth = { mode: 'profiles' }; show('login');
+}
+async function switchProfile() {
+  await flushPush();
+  Server.childId = null; rememberChild(''); VIEW.parentsUnlocked = false;
+  VIEW.auth = { mode: 'profiles' }; show('login');
+}
+async function logout() {
+  await flushPush();
+  try { await apiCall('/api/auth/logout', { method: 'POST', data: {} }); } catch (e) { /* ignora */ }
+  Server.me = null; Server.childId = null; rememberChild(''); VIEW.parentsUnlocked = false;
+  VIEW.auth = { mode: 'login' }; show('login');
+}
+// Copiar / compartilhar links de convite
+async function shareLink(link, text) {
+  if (navigator.share) { try { await navigator.share({ title: 'Estudos com a Lumi', text, url: link }); return; } catch (e) { /* cancelado */ } }
+  try { await navigator.clipboard.writeText(link); toast('Link copiado!'); } catch (e) { toast('Copie o link da caixa.'); }
+}
+function linkBox(link, expires, text) {
+  return `<div class="link-box"><input readonly value="${esc(link)}" onclick="this.select()"><button class="btn small primary" data-share="${esc(link)}" data-text="${esc(text)}">📤 Enviar</button></div>
+    <div class="tiny muted">Vale até ${new Date(expires).toLocaleDateString('pt-BR')}. Só funciona uma vez.</div>`;
+}
+function bindShare(root) { $$('[data-share]', root).forEach(b => b.onclick = () => shareLink(b.dataset.share, b.dataset.text)); }
 
 // Foto → JPEG reduzido em base64 (para mandar ao Claude)
 async function fileToJpeg(file, max = 1600, quality = 0.82) {
@@ -359,25 +411,161 @@ function showLoading(msgs) {
   return () => { clearInterval(timer); $('#modal')._onClose = null; closeModal(); };
 }
 
-/* ---------- Tela: código da família ---------- */
+/* ---------- Telas de conta: primeiro acesso, login, convite, nova senha, perfis ---------- */
+const CONSENT_HTML = `<label class="consent"><input type="checkbox" id="a-consent">
+  <span>Sou pai, mãe ou responsável legal e autorizo o uso dos dados das crianças que eu cadastrar para as atividades do app, conforme o
+  <a href="/privacidade.html" target="_blank" rel="noopener">Aviso de Privacidade</a>. Entendo que a Lumi é uma <b>inteligência artificial</b> (Claude, da Anthropic) e que respostas e fotos de atividades são enviadas a ela para criar e corrigir exercícios.</span></label>`;
+const yearOptions = sel => SCHOOL_YEARS.map(([id, uk, br, age]) => `<option value="${id}" ${sel === id ? 'selected' : ''}>${uk} · ${br} · ${age} anos</option>`).join('');
+const avatarPicker = sel => `<div class="avatars">${AVATARS.map(a => `<button type="button" class="av ${a === sel ? 'on' : ''}" data-av="${a}">${a}</button>`).join('')}</div>`;
+function bindAvatar(root, state) { $$('[data-av]', root).forEach(b => b.onclick = () => { state.avatar = b.dataset.av; $$('[data-av]', root).forEach(x => x.classList.toggle('on', x === b)); }); }
+const val = id => (($('#' + id) || {}).value || '').trim();
+
 function renderLogin() {
   const el = $('#scr-login');
-  el.innerHTML = `<div class="welcome"><div class="owl-big">${mascotSVG(S.equipped, 'happy')}</div>
-    <h1>Código da família 🔐</h1>
-    ${Server.configured ? `<p class="muted">Digite o código que os pais configuraram no servidor. Só precisa fazer isso uma vez neste aparelho.</p>
-    <input id="fc" type="password" autocomplete="current-password" placeholder="Código da família">
-    <button class="btn primary big wide" id="fgo">Entrar</button>`
-    : '<p class="muted">O servidor ainda não tem o <b>FAMILY_CODE</b> configurado. Veja o passo a passo no README do projeto.</p>'}
-    <button class="btn ghost small" id="flocal" style="margin-top:10px">Usar só neste aparelho (sem servidor)</button></div>`;
-  const go = async () => {
-    const v = $('#fc').value.trim(); if (!v) return;
-    writeCode(v);
-    try { await apiCall('/api/login', { method: 'POST', data: {} }); await loadFromServer(); toast('✅ Conectado!'); startApp(); }
-    catch (e) { writeCode(''); toast(e.status === 401 ? 'Código incorreto.' : `Erro: ${e.message}`); }
-  };
-  const b = $('#fgo', el); if (b) b.onclick = go;
-  const i = $('#fc', el); if (i) i.onkeydown = e => { if (e.key === 'Enter') go(); };
-  $('#flocal', el).onclick = () => { Server.on = false; Server.ai = false; startApp(); };
+  const a = VIEW.auth || { mode: 'login' };
+  const owl = mood => `<div class="owl-big">${mascotSVG({ hat: null, glasses: null, neck: null }, mood || 'happy')}</div>`;
+  const wrap = (inner) => `<div class="auth"><div class="auth-card">${inner}</div></div>`;
+  const busy = async (btn, fn) => { btn.disabled = true; try { await fn(); } catch (e) { toast(e.message || 'Algo deu errado.'); } finally { btn.disabled = false; } };
+
+  if (a.mode === 'firstrun') {
+    const st = { avatar: '🦉' };
+    el.innerHTML = wrap(`${owl('wow')}<h1>Configurar o app</h1>
+      <p class="muted">Primeiro acesso: crie a sua conta de administrador. ${Server.canSetup ? 'Use o <b>FAMILY_CODE</b> que você cadastrou na Cloudflare.' : '<b>Falta configurar o FAMILY_CODE na Cloudflare.</b>'}</p>
+      <label class="field">Código de configuração (FAMILY_CODE)<input id="a-code" type="password" autocomplete="off"></label>
+      <div class="form-grid"><label class="field">Nome da família<input id="a-fam" placeholder="Ex.: Família Silva"></label>
+      <label class="field">Seu nome<input id="a-pname" autocomplete="name"></label></div>
+      <label class="field">Seu e-mail<input id="a-email" type="email" autocomplete="email"></label>
+      <label class="field">Senha (mín. 8 caracteres)<input id="a-pass" type="password" autocomplete="new-password"></label>
+      <h3>Primeira criança</h3>
+      <p class="tiny muted">Os dados que já estão no app (moedas, compras, semana) vão para este perfil.</p>
+      <div class="form-grid"><label class="field">Nome<input id="a-cname" maxlength="30"></label>
+      <label class="field">Ano escolar<select id="a-cyear">${yearOptions('Y5')}</select></label>
+      <label class="field">PIN da criança (4 números)<input id="a-cpin" inputmode="numeric" maxlength="4" autocomplete="off"></label></div>
+      ${avatarPicker(st.avatar)}${CONSENT_HTML}
+      <button class="btn primary big wide" id="a-go">Criar conta e entrar</button>`);
+    bindAvatar(el, st);
+    $('#a-go').onclick = e => busy(e.target, async () => {
+      if (!$('#a-consent').checked) throw new Error('Marque a autorização para continuar.');
+      await apiCall('/api/setup', { method: 'POST', data: { code: val('a-code'), familyName: val('a-fam'), parentName: val('a-pname'), email: val('a-email'), password: $('#a-pass').value,
+        childName: val('a-cname'), childYear: $('#a-cyear').value, childPin: val('a-cpin'), childAvatar: st.avatar, consent: true } });
+      Server.needsSetup = false;
+      await refreshMe(); toast('✅ Conta criada!'); afterLogin();
+    });
+    return;
+  }
+  if (a.mode === 'login') {
+    el.innerHTML = wrap(`${owl()}<h1>Estudos com a Lumi</h1><p class="muted">Entre com a conta da família.</p>
+      <label class="field">E-mail<input id="a-email" type="email" autocomplete="username"></label>
+      <label class="field">Senha<input id="a-pass" type="password" autocomplete="current-password"></label>
+      <button class="btn primary big wide" id="a-go">Entrar</button>
+      <button class="btn ghost small" id="a-forgot">Esqueci a senha</button>
+      <p class="tiny muted">O app é só para famílias convidadas. Recebeu um convite? Abra o link que você recebeu.</p>`);
+    const go = () => busy($('#a-go'), async () => {
+      await apiCall('/api/auth/login', { method: 'POST', data: { email: val('a-email'), password: $('#a-pass').value } });
+      await refreshMe(); afterLogin();
+    });
+    $('#a-go').onclick = go;
+    $('#a-pass').onkeydown = e => { if (e.key === 'Enter') go(); };
+    $('#a-forgot').onclick = () => say('Peça ao administrador do app um <b>link para criar uma nova senha</b>. 🔑', { mood: 'think' });
+    return;
+  }
+  if (a.mode === 'invite' || a.mode === 'reset') {
+    if (!a.info) {
+      el.innerHTML = wrap(`${owl('think')}<p>Abrindo o convite…</p>`);
+      apiCall(`/api/invite/${encodeURIComponent(a.token)}`).then(info => { a.info = info; renderLogin(); })
+        .catch(() => { a.info = { valid: false }; renderLogin(); });
+      return;
+    }
+    if (!a.info.valid) {
+      el.innerHTML = wrap(`${owl('sad')}<h1>Link inválido</h1><p class="muted">Este link expirou ou já foi usado. Peça um novo a quem enviou.</p><button class="btn primary wide" id="a-back">Ir para o login</button>`);
+      $('#a-back').onclick = () => { history.replaceState(null, '', location.pathname); VIEW.auth = { mode: 'login' }; renderLogin(); };
+      return;
+    }
+    const k = a.info.kind;
+    if (k === 'reset') {
+      el.innerHTML = wrap(`${owl()}<h1>Nova senha</h1><p class="muted">Para <b>${esc(a.info.email)}</b>.</p>
+        <label class="field">Nova senha (mín. 8 caracteres)<input id="a-pass" type="password" autocomplete="new-password"></label>
+        <label class="field">Repita a senha<input id="a-pass2" type="password" autocomplete="new-password"></label>
+        <button class="btn primary big wide" id="a-go">Salvar e entrar</button>`);
+    } else {
+      el.innerHTML = wrap(`${owl('wow')}<h1>${k === 'join' ? `Entrar na família ${esc(a.info.familyName)}` : 'Bem-vindos!'}</h1>
+        <p class="muted">${k === 'join' ? 'Crie o seu acesso como responsável.' : 'Crie a conta da sua família. Depois você cadastra as crianças.'}</p>
+        ${k === 'family' ? '<label class="field">Nome da família<input id="a-fam" placeholder="Ex.: Família Silva"></label>' : ''}
+        <label class="field">Seu nome<input id="a-pname" autocomplete="name"></label>
+        <label class="field">Seu e-mail<input id="a-email" type="email" autocomplete="email"></label>
+        <label class="field">Senha (mín. 8 caracteres)<input id="a-pass" type="password" autocomplete="new-password"></label>
+        ${CONSENT_HTML}<button class="btn primary big wide" id="a-go">Criar acesso</button>`);
+    }
+    $('#a-go').onclick = e => busy(e.target, async () => {
+      if (k === 'reset' && $('#a-pass').value !== $('#a-pass2').value) throw new Error('As senhas não são iguais.');
+      if (k !== 'reset' && !$('#a-consent').checked) throw new Error('Marque a autorização para continuar.');
+      await apiCall(`/api/invite/${encodeURIComponent(a.token)}/accept`, { method: 'POST', data: {
+        password: $('#a-pass').value, email: val('a-email'), parentName: val('a-pname'), familyName: val('a-fam'), consent: k !== 'reset' } });
+      await refreshMe(); toast(k === 'reset' ? '✅ Senha alterada!' : '✅ Acesso criado!'); afterLogin();
+    });
+    return;
+  }
+  if (a.mode === 'addchild') {
+    const st = { avatar: AVATARS[(Server.me.children.length + 1) % AVATARS.length] };
+    el.innerHTML = wrap(`${owl('wow')}<h1>${a.first ? 'Cadastre a primeira criança' : 'Nova criança'}</h1>
+      <div class="form-grid"><label class="field">Nome<input id="a-cname" maxlength="30"></label>
+      <label class="field">Ano escolar<select id="a-cyear">${yearOptions('Y5')}</select></label></div>
+      <label class="field">PIN da criança (4 números) <span class="tiny muted">— ela usa para entrar no próprio perfil</span><input id="a-cpin" inputmode="numeric" maxlength="4" autocomplete="off"></label>
+      <div class="field">Personagem</div>${avatarPicker(st.avatar)}
+      <button class="btn primary big wide" id="a-go">Salvar</button>
+      ${a.first ? '' : '<button class="btn ghost" id="a-cancel">Cancelar</button>'}`);
+    bindAvatar(el, st);
+    const c = $('#a-cancel'); if (c) c.onclick = () => { VIEW.auth = { mode: 'profiles' }; renderLogin(); };
+    $('#a-go').onclick = e => busy(e.target, async () => {
+      await apiCall('/api/family/children', { method: 'POST', data: { name: val('a-cname'), year: $('#a-cyear').value, pin: val('a-cpin'), avatar: st.avatar } });
+      await refreshMe(); VIEW.auth = { mode: 'profiles' }; renderLogin();
+    });
+    return;
+  }
+  // Perfis: quem vai estudar?
+  const kids = Server.me ? Server.me.children : [];
+  el.innerHTML = wrap(`<h1>Quem vai estudar? 📚</h1><p class="muted">${esc(Server.me ? Server.me.family.name : '')}</p>
+    <div class="profiles">${kids.map(c => `<button class="profile" data-kid="${c.id}"><span class="pf-av">${c.avatar || '🦉'}</span><b>${esc(c.name)}</b><span class="tiny muted">${esc((SCHOOL_YEARS.find(y => y[0] === c.year) || [])[1] || '')}</span></button>`).join('')}</div>
+    <div class="row wrap center-row"><button class="btn small" id="a-add">＋ Adicionar criança</button><button class="btn small ghost" id="a-out">Sair da conta</button></div>`);
+  $$('[data-kid]', el).forEach(b => b.onclick = () => askPin(kids.find(k => k.id === b.dataset.kid)));
+  $('#a-add').onclick = async () => { if (await askParentPassword()) { VIEW.auth = { mode: 'addchild' }; renderLogin(); } };
+  $('#a-out').onclick = () => logout();
+}
+// Teclado de PIN da criança
+function askPin(child) {
+  let pin = '';
+  const c = openModal(`<div class="modal-body center"><div class="pf-av big">${child.avatar || '🦉'}</div><h3 style="margin:4px 0">Oi, ${esc(child.name)}!</h3>
+    <p class="muted tiny">Digite o seu PIN</p><div class="pin-dots" id="pdots"></div>
+    <div class="pinpad">${[1, 2, 3, 4, 5, 6, 7, 8, 9, '', 0, '⌫'].map(k => `<button class="btn" ${k === '' ? 'disabled style="visibility:hidden"' : ''} data-k="${k}">${k}</button>`).join('')}</div></div>
+    <div class="modal-foot"><button class="btn" data-close>Voltar</button></div>`);
+  const dots = () => { $('#pdots', c).innerHTML = [0, 1, 2, 3].map(i => `<i class="${i < pin.length ? 'on' : ''}"></i>`).join(''); };
+  dots();
+  $$('[data-k]', c).forEach(b => b.onclick = async () => {
+    const k = b.dataset.k;
+    if (k === '⌫') pin = pin.slice(0, -1); else if (pin.length < 4) pin += k;
+    dots();
+    if (pin.length === 4) {
+      try { await apiCall(`/api/family/children/${child.id}/unlock`, { method: 'POST', data: { pin } }); $('#modal')._onClose = null; closeModal(); enterChild(child.id); }
+      catch (e) { pin = ''; dots(); const d = $('#pdots', c); d.animate([{ transform: 'translateX(-6px)' }, { transform: 'translateX(6px)' }, { transform: 'none' }], { duration: 250 }); toast(e.message); }
+    }
+  });
+}
+// Senha do responsável (para a área dos pais e ações sensíveis)
+function askParentPassword(title = '🔒 Senha do responsável') {
+  return new Promise(res => {
+    const c = openModal(`<div class="modal-head"><h3>${title}</h3></div><div class="modal-body">
+      <p class="tiny muted">${esc(Server.me.parent.email)}</p><input class="pin-input" id="pp" type="password" autocomplete="current-password" style="letter-spacing:normal;font-size:18px"></div>
+      <div class="modal-foot"><button class="btn" data-no>Cancelar</button><button class="btn primary" data-yes>Confirmar</button></div>`, { onClose: () => res(false) });
+    const go = async () => {
+      try { const r = await apiCall('/api/auth/verify', { method: 'POST', data: { password: $('#pp', c).value } });
+        if (r.ok) { $('#modal')._onClose = null; closeModal(); res($('#pp', c) ? true : true); } else { toast('Senha incorreta.'); $('#pp', c).value = ''; } }
+      catch (e) { toast(e.message); }
+    };
+    $('[data-no]', c).onclick = () => closeModal();
+    $('[data-yes]', c).onclick = go;
+    $('#pp', c).onkeydown = e => { if (e.key === 'Enter') go(); };
+    setTimeout(() => $('#pp', c) && $('#pp', c).focus(), 50);
+  });
 }
 
 /* =========================================================================
@@ -633,6 +821,7 @@ function runTour() {
   const st = S.settings;
   const steps = [
     `Oi, ${esc(S.name)}! Eu sou a <b>${MASCOT_NAME}</b> 🦉 e vou estudar com você!`,
+    'Eu sou uma <b>inteligência artificial</b> (um programa de computador, feito com o Claude), não uma pessoa. Às vezes posso errar: se algo parecer estranho, mostre para um adulto. 💜',
     'Toda semana você escreve em <b>📝 Minha semana</b> o que está aprendendo na escola. Eu transformo isso em tarefas.',
     'Cada dia tem uma tarefa curtinha. <b>Sábado e domingo</b> têm um pouquinho mais.',
     `<b>Sexta-feira é dia de entrega!</b> Semana completa: <b>+${st.reward}</b> 🪙. Semana não entregue: <b>−${st.penalty}</b> 🪙.`,
@@ -1164,9 +1353,10 @@ const VIEW = { setupTab: 'pt', setupCycle: null, setupMode: null, shopCat: 'hat'
 
 function show(screen) {
   currentScreen = screen;
+  $('#app').dataset.mode = screen === 'login' ? 'auth' : 'app';
   $$('.screen').forEach(s => s.classList.toggle('active', s.id === 'scr-' + screen));
   $$('.top-nav button').forEach(b => b.classList.toggle('active', b.dataset.nav === screen));
-  const titles = { welcome: 'Bem-vinda!', login: 'Entrar', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', check: '📄 Corrigir folha', selfcheck: '✍️ Corrigir', shop: '🛒 Lojinha', parents: '🔒 Área dos pais' };
+  const titles = { welcome: 'Bem-vinda!', login: 'Estudos com a Lumi', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', check: '📄 Corrigir folha', selfcheck: '✍️ Corrigir', shop: '🛒 Lojinha', parents: '🔒 Área dos pais' };
   $('#top-title').textContent = titles[screen] || 'Estudos';
   hideBubble();
   ({ welcome: renderWelcome, login: renderLogin, home: renderHome, setup: renderSetup, work: renderWork, check: renderCheck, selfcheck: renderSelfCheck, shop: renderShop, parents: renderParents })[screen]();
@@ -1231,7 +1421,7 @@ function renderHome() {
   const notice = VIEW.homeNotice; VIEW.homeNotice = null;
   let body = '';
   const hero = `<div class="card home-hero span2"><div class="owl-big">${mascotSVG(S.equipped)}</div>
-    <div class="grow"><p class="home-hello">Oi, ${esc(S.name)}! 👋 ${S.streak && S.streak.n > 0 && (S.streak.last === today() || S.streak.last === addDays(today(), -1)) ? `<span class="streak" title="Dias seguidos">🔥 ${S.streak.n}</span>` : ''}</p>${w ? deadlineText(w) : '<div class="deadline">Vamos planejar a sua semana?</div>'}</div></div>`;
+    <div class="grow">${Server.me && Server.me.children.length > 1 ? '<button class="btn small ghost switch-btn" data-act="switch">👤 Trocar</button>' : ''}<p class="home-hello">Oi, ${esc(S.name)}! 👋 ${S.streak && S.streak.n > 0 && (S.streak.last === today() || S.streak.last === addDays(today(), -1)) ? `<span class="streak" title="Dias seguidos">🔥 ${S.streak.n}</span>` : ''}</p>${w ? deadlineText(w) : '<div class="deadline">Vamos planejar a sua semana?</div>'}</div></div>`;
   const noticeHtml = notice ? `<div class="notice ${notice.type} span2">${notice.msg}</div>` : '';
 
   if (!w || (w.settled && w.end < t)) {
@@ -1284,6 +1474,7 @@ function renderHome() {
     else if (a === 'extra') openExtras();
     else if (a === 'shop') show('shop');
     else if (a === 'deliver') deliverWeek();
+    else if (a === 'switch') switchProfile();
   });
   if (notice) say(notice.msg, { mood: notice.type === 'bad' ? 'sad' : 'wow' });
 }
@@ -1500,7 +1691,8 @@ function renderSetupAI() {
     <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? '✨ Atualizar a semana' : '✨ Criar minha semana com a Lumi'}</button></div>
     <button class="btn ghost small" data-act="subjects">Prefiro o gerador do próprio app (sem o Claude)</button>
   </div>`;
-  $('#year', el).onchange = e => { S.settings.year = e.target.value; save(); };
+  $('#year', el).onchange = e => { S.settings.year = e.target.value; save();
+    if (Server.me && Server.childId) apiCall(`/api/family/children/${Server.childId}`, { method: 'PATCH', data: { year: e.target.value } }).then(refreshMe).catch(() => {}); };
   $$('details.subj-acc', el).forEach(d => d.addEventListener('toggle', () => {
     VIEW.openSubj[d.dataset.sid] = d.open;
   }));
@@ -1887,8 +2079,11 @@ async function explainContent(q, c) {
   const key = c.done ? 'explainDone' : 'explain';
   const render = ex => openModal(`<div class="modal-head"><div class="owl-mini">${mascotSVG(S.equipped, 'happy')}</div><h3>${esc(ex.title)}</h3><button class="btn small" data-close>${pt ? 'Entendi!' : 'Got it!'}</button></div>
     <div class="modal-body explain"><p>${esc(ex.explanation)}</p><div class="ex-box"><b>${pt ? 'Exemplo' : 'Example'}:</b> ${esc(ex.example)}</div></div>
-    <div class="modal-foot"><button class="btn primary" data-close>${pt ? 'Voltar para a pergunta' : 'Back to the question'}</button></div>`);
-  if (q[key]) { render(q[key]); return; }
+    <div class="modal-foot">${Server.me ? `<button class="btn small ghost" data-report>🚩 ${pt ? 'Algo estranho?' : 'Something wrong?'}</button>` : ''}<button class="btn primary" data-close>${pt ? 'Voltar para a pergunta' : 'Back to the question'}</button></div>`);
+  const render0 = render;
+  const renderR = ex => { const m = render0(ex); const r = $('[data-report]', m); if (r) r.onclick = async () => {
+    try { await apiCall('/api/report', { method: 'POST', data: { childId: Server.childId, kind: 'explicação', text: `${q.q}\n---\n${ex.title}: ${ex.explanation} ${ex.example}` } }); toast(pt ? 'Obrigada! Avisei um adulto. 💜' : 'Thanks! An adult was told. 💜'); closeModal(); } catch (e) { toast(e.message); } }; return m; };
+  if (q[key]) { renderR(q[key]); return; }
   if (!Server.ai) { say(pt ? 'Para explicar o conteúdo eu preciso estar conectada ao servidor. Por enquanto, toque no 💡 para uma dica!' : 'I need the server to explain this. Try the 💡 hint for now!', { mood: 'think' }); return; }
   const stop = showLoading(pt ? ['Preparando uma mini-aula… 🦉', 'Procurando um bom exemplo… 🔎'] : ['Preparing a mini-lesson… 🦉', 'Finding a good example… 🔎']);
   try {
@@ -1898,7 +2093,7 @@ async function explainContent(q, c) {
     stop();
     q[key] = { title: r.title, explanation: r.explanation, example: r.example };
     save();
-    render(q[key]);
+    renderR(q[key]);
   } catch (e) { stop(); say(pt ? 'Não consegui explicar agora. Tente de novo daqui a pouco!' : 'I could not explain right now. Try again soon!', { mood: 'sad' }); }
 }
 // Marca o dia (ou extras) como concluído e comemora. via: screen | photo | self
@@ -2146,6 +2341,20 @@ async function buy(id) {
 /* ---------- Área dos pais ---------- */
 function renderParents() {
   const el = $('#scr-parents');
+  if (!VIEW.parentsUnlocked && Server.me) {
+    el.innerHTML = `<div class="parents"><div class="card" style="max-width:380px;margin:20px auto;width:100%;text-align:center"><h3 style="margin:4px 0 8px">🔒 Área dos pais</h3>
+      <p class="muted tiny">Digite a senha do responsável (${esc(Server.me.parent.email)}).</p>
+      <input class="pin-input" id="ppw" type="password" autocomplete="current-password" style="letter-spacing:normal;font-size:18px">
+      <button class="btn primary wide" style="margin-top:10px" id="ppw-go">Entrar</button></div></div>`;
+    const go = async () => {
+      try { const r = await apiCall('/api/auth/verify', { method: 'POST', data: { password: $('#ppw').value } });
+        if (r.ok) { VIEW.parentsUnlocked = true; renderParents(); } else { toast('Senha incorreta'); $('#ppw').value = ''; } }
+      catch (e) { toast(e.message); }
+    };
+    $('#ppw-go').onclick = go; $('#ppw').onkeydown = e => { if (e.key === 'Enter') go(); };
+    setTimeout(() => $('#ppw') && $('#ppw').focus(), 50);
+    return;
+  }
   if (!VIEW.parentsUnlocked) {
     el.innerHTML = `<div class="parents"><div class="card" style="max-width:360px;margin:20px auto;width:100%;text-align:center">
       <h3 style="margin:4px 0 8px">🔒 Área dos pais</h3><p class="muted tiny">Digite o PIN (padrão: 1234 — troque em Ajustes).</p>
@@ -2157,11 +2366,15 @@ function renderParents() {
     return;
   }
   const tabs = [['review', '📝 Correção'], ['coins', '🪙 Moedas'], ['vouchers', '🎟️ Vales'], ['settings', '⚙️ Ajustes'], ['data', '📥 Dados']];
-  el.innerHTML = `<div class="parents"><div class="row wrap"><div class="tabs grow">${tabs.map(([k, l]) => `<button data-ptab="${k}" class="${VIEW.parentTab === k ? 'on' : ''}">${l}</button>`).join('')}</div>
+  if (Server.me) tabs.push(['family', '👨‍👩‍👧 Família']);
+  if (Server.me && Server.me.parent.role === 'admin') tabs.push(['admin', '🛠️ Admin']);
+  if (!tabs.some(t => t[0] === VIEW.parentTab)) VIEW.parentTab = 'review';
+  const kid = currentChild();
+  el.innerHTML = `<div class="parents">${kid ? `<div class="tiny muted">Perfil aberto: <b>${kid.avatar || ''} ${esc(kid.name)}</b> — Correção, Moedas, Vales, Ajustes e Dados valem para este perfil.</div>` : ''}<div class="row wrap"><div class="tabs grow">${tabs.map(([k, l]) => `<button data-ptab="${k}" class="${VIEW.parentTab === k ? 'on' : ''}">${l}</button>`).join('')}</div>
     <button class="btn small" id="lock">Sair</button></div><div class="parents-body" id="pbody"></div></div>`;
   $$('[data-ptab]', el).forEach(b => b.onclick = () => { VIEW.parentTab = b.dataset.ptab; renderParents(); });
   $('#lock').onclick = () => { VIEW.parentsUnlocked = false; show('home'); };
-  ({ review: pReview, coins: pCoins, vouchers: pVouchers, settings: pSettings, data: pData })[VIEW.parentTab]($('#pbody'));
+  ({ review: pReview, coins: pCoins, vouchers: pVouchers, settings: pSettings, data: pData, family: pFamily, admin: pAdmin })[VIEW.parentTab]($('#pbody'));
 }
 function pReview(box) {
   const w = S.week;
@@ -2216,12 +2429,12 @@ function pSettings(box) {
       <label class="field">Rodadas de extras com moedas/dia<input type="number" id="s-xsets" value="${st.extraSetsPerDay}"></label></div>
       <p class="tiny muted">A penalidade precisa ser maior que a recompensa.</p></div>
     <div class="card"><b>Tarefas</b><div class="form-grid" style="margin-top:6px">
-      <label class="field">Nome da aluna<input id="s-name" value="${esc(S.name)}"></label>
+      ${Server.me ? '' : `<label class="field">Nome da aluna<input id="s-name" value="${esc(S.name)}"></label>`}
       <label class="field">Mínimo de perguntas/dia<input type="number" id="s-min" value="${st.minPerDay}"></label>
       <label class="field">Máximo de perguntas/dia<input type="number" id="s-max" value="${st.maxPerDay}"></label>
       <label class="field">Gabarito<select id="s-gab"><option value="1" ${st.gabaritoAfterFinish ? 'selected' : ''}>Libera depois de concluir</option><option value="0" ${!st.gabaritoAfterFinish ? 'selected' : ''}>Sempre disponível</option></select></label>
       <label class="field">Voz (ditado)<select id="s-voice"><option value="1" ${st.voice ? 'selected' : ''}>Ligada</option><option value="0" ${!st.voice ? 'selected' : ''}>Desligada</option></select></label>
-      <label class="field">Novo PIN dos pais<input id="s-pin" inputmode="numeric" maxlength="8" placeholder="(manter)"></label></div>
+      ${Server.me ? '' : '<label class="field">Novo PIN dos pais<input id="s-pin" inputmode="numeric" maxlength="8" placeholder="(manter)"></label>'}</div>
       <div style="margin-top:6px"><b class="tiny">Perguntas padrão por dia</b><div class="counts" style="margin-top:4px">${CYCLE.map(dk => `<label class="count-box"><div class="lbl">${DOW_LABEL[dk]}</div><input type="number" data-dc="${dk}" value="${st.counts[dk]}" style="width:44px;text-align:center;border:1.5px solid var(--line);border-radius:6px"></label>`).join('')}</div></div></div>
     <button class="btn primary" id="s-save">Salvar ajustes</button>
     <button class="btn" id="s-tour">Rever o tutorial da Lumi</button>`;
@@ -2236,31 +2449,30 @@ function pSettings(box) {
     });
     if (st.maxPerDay < st.minPerDay) st.maxPerDay = st.minPerDay;
     $$('[data-dc]', box).forEach(inp => { st.counts[inp.dataset.dc] = clamp(Math.round(Number(inp.value) || 0), 0, st.maxPerDay); });
-    const pin = $('#s-pin').value.trim(); if (pin) st.pin = pin;
-    const nm = $('#s-name').value.trim(); if (nm) S.name = nm;
+    const pin = ($('#s-pin') || { value: '' }).value.trim(); if (pin) st.pin = pin;
+    const nm = ($('#s-name') || { value: '' }).value.trim(); if (nm) S.name = nm;
     save(); toast('Ajustes salvos');
   };
   $('#s-tour').onclick = () => { show('home'); setTimeout(runTour, 300); };
 }
 function pData(box) {
   const topics = S.week ? S.week.topics : S.lastTopics;
-  const st = { ok: '🟢 Conectado ao servidor', offline: '🟠 Servidor fora do ar — salvando só neste aparelho', auth: '🔴 Código da família inválido', local: '⚪ Sem servidor — dados só neste aparelho' }[Server.on ? Server.status : 'local'];
+  const st = { ok: '🟢 Conectado ao servidor', offline: '🟠 Servidor fora do ar — salvando só neste aparelho', auth: '🔴 Sessão expirada', local: '⚪ Sem servidor — dados só neste aparelho' }[Server.me ? Server.status : 'local'];
   box.innerHTML = `<div class="card"><b>Servidor</b><div style="margin:4px 0">${st}</div>
-      ${Server.on ? `<div class="tiny">Claude: ${Server.ai ? '✅ ligado' : '❌ sem chave de API (ANTHROPIC_API_KEY)'} <span id="usage"></span></div>
-      <div class="row wrap" style="margin-top:6px"><button class="btn small" id="sv-sync">🔄 Sincronizar agora</button><button class="btn small" id="sv-out">Sair deste aparelho</button></div>` : ''}</div>
+      ${Server.me ? `<div class="tiny">Conta: ${esc(Server.me.parent.email)} · família ${esc(Server.me.family.name)} · Claude ${Server.ai ? '✅ ligado' : '❌ sem chave'}</div>
+      <div class="row wrap" style="margin-top:6px"><button class="btn small" id="sv-sync">🔄 Sincronizar agora</button><button class="btn small" id="sv-switch">👤 Trocar de perfil</button></div>` : ''}</div>
     <div class="card"><b>1. Importar perguntas prontas (opcional)</b>
       <p class="tiny muted" style="margin:2px 0 6px">Copie o prompt (já com os tópicos da semana), cole no Claude junto com o Study Worksheet, e cole aqui o JSON que ele devolver.
       As perguntas importadas entram primeiro; o gerador do app completa o resto.</p>
       <button class="btn small" id="cp-prompt">📋 Copiar prompt para o Claude</button>
       <label class="field" style="margin-top:8px">JSON das perguntas<textarea id="imp-json" placeholder='{"questions":[ ... ]}'></textarea></label>
       <button class="btn primary small" id="imp-go">Importar perguntas</button><div id="imp-msg" class="tiny" style="margin-top:6px"></div></div>
-    <div class="card"><b>2. Backup</b><p class="tiny muted" style="margin:2px 0 6px">Os dados ficam só neste navegador. Faça backup para trocar de aparelho.</p>
+    <div class="card"><b>2. Backup</b><p class="tiny muted" style="margin:2px 0 6px">${Server.me ? 'Cópia dos dados deste perfil (os dados já ficam guardados no servidor).' : 'Os dados ficam só neste navegador. Faça backup para trocar de aparelho.'}</p>
       <div class="row wrap"><button class="btn small" id="bk-exp">⬇️ Baixar backup</button><label class="btn small">⬆️ Restaurar backup<input type="file" id="bk-imp" accept="application/json,.json" hidden></label></div></div>
     <div class="card"><b>3. Zerar</b><div class="row wrap" style="margin-top:6px"><button class="btn small" id="rs-week">Apagar a semana atual</button><button class="btn small danger" id="rs-all">Apagar TUDO</button></div></div>`;
-  if (Server.on) {
-    apiCall('/api/usage').then(r => { const u = $('#usage'); if (u && r.usage) u.textContent = `· hoje: ${r.usage.day === new Date().toISOString().slice(0, 10) ? r.usage.n : 0}/${r.limit} chamadas`; }).catch(() => {});
+  if (Server.me) {
     $('#sv-sync').onclick = async () => { await pushState(); toast(Server.status === 'ok' ? 'Sincronizado ✔' : 'Não consegui sincronizar'); pData(box); };
-    $('#sv-out').onclick = async () => { if (await confirmBox('Sair deste aparelho?', 'Os dados continuam no servidor. Para voltar, digite o código da família de novo.', 'Sair')) { writeCode(''); VIEW.parentsUnlocked = false; show('login'); } };
+    $('#sv-switch').onclick = () => switchProfile();
   }
   $('#cp-prompt').onclick = async () => {
     const p = claudePrompt(topics || {});
@@ -2293,18 +2505,161 @@ function pData(box) {
   };
   $('#bk-imp').onchange = async e => {
     const f = e.target.files[0]; if (!f) return;
-    try { const s = JSON.parse(await f.text()); if (typeof s !== 'object' || !('coins' in s)) throw new Error(); if (!(await confirmBox('Restaurar backup?', 'Isso substitui todos os dados atuais.', 'Restaurar', true))) return; localStorage.setItem(STORE_KEY, JSON.stringify(s)); S = load(); applyTheme(); renderCoins(); toast('Backup restaurado'); renderParents(); }
+    try { const s = JSON.parse(await f.text()); if (typeof s !== 'object' || !('coins' in s)) throw new Error(); if (!(await confirmBox('Restaurar backup?', 'Isso substitui todos os dados atuais.', 'Restaurar', true))) return; const rev = S.rev; S = normalizeState(s); S.rev = rev; if (Server.me) { const k = currentChild(); if (k) S.name = k.name; } save(); applyTheme(); renderCoins(); toast('Backup restaurado'); renderParents(); }
     catch (err) { toast('Arquivo de backup inválido'); }
   };
   $('#rs-week').onclick = async () => { if (await confirmBox('Apagar a semana atual?', 'As tarefas e respostas desta semana serão perdidas. As moedas ficam.', 'Apagar', true)) { S.week = null; save(); toast('Semana apagada'); } };
   $('#rs-all').onclick = async () => {
-    const where = Server.on ? 'do servidor e deste aparelho (os outros aparelhos também começam do zero)' : 'deste navegador';
-    if (!(await confirmBox('Apagar TUDO?', `Moedas, compras, semanas e ajustes serão apagados ${where}. Não dá para desfazer.`, 'Apagar tudo', true))) return;
-    try { if (Server.on && Server.code) { clearTimeout(Server.timer); Server.dirty = false; await apiCall('/api/state', { method: 'DELETE' }); } }
-    catch (e) { toast(`Não consegui apagar no servidor: ${e.message}`); return; }
+    const kid = currentChild();
+    const what = kid ? `Moedas, compras, semanas e ajustes de <b>${esc(kid.name)}</b> serão apagados (o perfil continua).` : 'Moedas, compras, semanas e ajustes serão apagados deste navegador.';
+    if (!(await confirmBox('Apagar TUDO?', `${what} Não dá para desfazer.`, 'Apagar tudo', true))) return;
+    if (kid) {
+      try { clearTimeout(Server.timer); Server.dirty = false; await apiCall(`/api/children/${kid.id}/state`, { method: 'DELETE' }); }
+      catch (e) { toast(`Não consegui apagar no servidor: ${e.message}`); return; }
+      try { localStorage.removeItem(localKey(kid.id)); } catch (e) { /* ignora */ }
+      VIEW.parentsUnlocked = false; enterChild(kid.id); return;
+    }
     try { localStorage.removeItem(STORE_KEY); } catch (e) { /* ignora */ }
     location.reload();
   };
+}
+
+/* ---------- Área dos pais: Família (contas) e Admin ---------- */
+const usd = n => 'US$ ' + (Number(n) || 0).toFixed(2);
+async function pFamily(box) {
+  box.innerHTML = '<p class="muted">Carregando…</p>';
+  let fam;
+  try { await refreshMe(); fam = await apiCall('/api/family'); } catch (e) { box.innerHTML = `<p class="muted">Sem conexão com o servidor (${esc(e.message)}).</p>`; return; }
+  const me = Server.me;
+  const usageOf = id => fam.usage.find(u => u.id === id) || { today_usd: 0, month_usd: 0, month_calls: 0 };
+  box.innerHTML = `
+    <div class="card"><b>👧 Crianças da família ${esc(me.family.name)}</b>
+      <div class="kid-list">${me.children.map(c => { const u = usageOf(c.id); return `<details class="kid" data-id="${c.id}">
+        <summary><span class="pf-av">${c.avatar || '🦉'}</span><b>${esc(c.name)}</b><span class="tiny muted grow">${esc((SCHOOL_YEARS.find(y => y[0] === c.year) || [])[1] || '')} · Lumi hoje ${usd(u.today_usd)} · mês ${usd(u.month_usd)}</span><span class="tiny">editar ▾</span></summary>
+        <div class="form-grid"><label class="field">Nome<input data-f="name" value="${esc(c.name)}" maxlength="30"></label>
+        <label class="field">Ano escolar<select data-f="year">${yearOptions(c.year)}</select></label>
+        <label class="field">Novo PIN <span class="tiny muted">(deixe vazio para manter)</span><input data-f="pin" inputmode="numeric" maxlength="4" autocomplete="off"></label></div>
+        ${avatarPicker(c.avatar)}
+        <div class="row wrap"><button class="btn small primary" data-save>Salvar</button><button class="btn small danger" data-del>Apagar perfil e dados</button></div></details>`; }).join('')}</div>
+      <button class="btn small" id="f-add">＋ Adicionar criança</button></div>
+    <div class="card"><b>👨‍👩‍👧 Responsáveis</b>
+      ${fam.parents.map(p => `<div class="row tiny"><span class="grow"><b>${esc(p.name)}</b> · ${esc(p.email)}${p.role === 'admin' ? ' · admin' : ''}</span><span class="muted">${p.last_login ? 'último acesso ' + new Date(p.last_login).toLocaleDateString('pt-BR') : ''}</span></div>`).join('')}
+      <button class="btn small" id="f-invite" style="margin-top:6px">✉️ Convidar outro responsável</button><div id="f-invite-out"></div></div>
+    <div class="card"><b>🔑 Minha senha</b><div class="form-grid" style="margin-top:6px">
+      <label class="field">Senha atual<input id="f-old" type="password" autocomplete="current-password"></label>
+      <label class="field">Nova senha (mín. 8)<input id="f-new" type="password" autocomplete="new-password"></label></div>
+      <button class="btn small primary" id="f-pw">Trocar senha</button></div>
+    <div class="card"><b>🚩 Relatar um problema</b><p class="tiny muted" style="margin:2px 0 6px">Viu alguma resposta estranha ou inadequada da Lumi? Conte aqui: o administrador recebe o aviso.</p>
+      <textarea id="f-rep" class="report-ta" placeholder="O que aconteceu?"></textarea><button class="btn small" id="f-rep-go">Enviar aviso</button></div>
+    <div class="card"><b>🔐 Privacidade</b>
+      <p class="tiny muted" style="margin:2px 0 6px">Os dados de cada criança ficam num cofre separado no servidor. Veja o <a href="/privacidade.html" target="_blank" rel="noopener">Aviso de Privacidade</a>.</p>
+      <div class="row wrap"><button class="btn small" id="f-export">⬇️ Baixar todos os dados da família</button><button class="btn small" id="f-switch">👤 Trocar de perfil</button><button class="btn small" id="f-logout">Sair da conta</button>
+      ${me.parent.role === 'admin' ? '' : '<button class="btn small danger" id="f-delete">Apagar a conta da família</button>'}</div></div>`;
+  $$('details.kid', box).forEach(d => {
+    const st = { avatar: (me.children.find(c => c.id === d.dataset.id) || {}).avatar };
+    bindAvatar(d, st);
+    $('[data-save]', d).onclick = async () => {
+      const data = { name: $('[data-f=name]', d).value, year: $('[data-f=year]', d).value, avatar: st.avatar };
+      const pin = $('[data-f=pin]', d).value.trim(); if (pin) data.pin = pin;
+      try { await apiCall(`/api/family/children/${d.dataset.id}`, { method: 'PATCH', data }); toast('Salvo ✔');
+        if (d.dataset.id === Server.childId) { S.name = data.name.trim() || S.name; S.settings.year = data.year; save(); }
+        pFamily(box); } catch (e) { toast(e.message); }
+    };
+    $('[data-del]', d).onclick = async () => {
+      const kid = me.children.find(c => c.id === d.dataset.id);
+      if (!(await confirmBox(`Apagar ${esc(kid.name)}?`, 'O perfil e TODOS os dados desta criança (semanas, moedas, compras) serão apagados para sempre.', 'Continuar', true))) return;
+      const pw = await promptPassword(); if (!pw) return;
+      try { await apiCall(`/api/family/children/${kid.id}`, { method: 'DELETE', data: { password: pw } }); toast('Perfil apagado');
+        try { localStorage.removeItem(localKey(kid.id)); } catch (e) { /* ignora */ }
+        if (kid.id === Server.childId) { Server.childId = null; rememberChild(''); await refreshMe(); afterLogin(); return; }
+        pFamily(box); } catch (e) { toast(e.message); }
+    };
+  });
+  $('#f-add').onclick = () => { VIEW.parentsUnlocked = false; VIEW.auth = { mode: 'addchild' }; show('login'); };
+  $('#f-invite').onclick = async () => {
+    try { const r = await apiCall('/api/family/invite-parent', { method: 'POST', data: {} });
+      $('#f-invite-out').innerHTML = linkBox(r.link, r.expires, `Convite para entrar na família ${me.family.name} no app Estudos com a Lumi`); bindShare(box); } catch (e) { toast(e.message); }
+  };
+  $('#f-pw').onclick = async () => {
+    try { await apiCall('/api/auth/password', { method: 'POST', data: { old: $('#f-old').value, new: $('#f-new').value } }); toast('Senha trocada ✔'); $('#f-old').value = $('#f-new').value = ''; }
+    catch (e) { toast(e.message); }
+  };
+  $('#f-rep-go').onclick = async () => {
+    const t = $('#f-rep').value.trim(); if (!t) return;
+    try { await apiCall('/api/report', { method: 'POST', data: { childId: Server.childId, kind: 'pais', text: t } }); $('#f-rep').value = ''; toast('Aviso enviado. Obrigado!'); } catch (e) { toast(e.message); }
+  };
+  $('#f-export').onclick = async () => {
+    try { const data = await apiCall('/api/family/export');
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `lumi-familia-${today()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    } catch (e) { toast(e.message); }
+  };
+  $('#f-switch').onclick = () => switchProfile();
+  $('#f-logout').onclick = () => logout();
+  const del = $('#f-delete');
+  if (del) del.onclick = async () => {
+    if (!(await confirmBox('Apagar a conta da família?', 'Todos os responsáveis, crianças e dados serão apagados para sempre. Não dá para desfazer.', 'Continuar', true))) return;
+    const pw = await promptPassword(); if (!pw) return;
+    try { await apiCall('/api/family', { method: 'DELETE', data: { password: pw } });
+      try { Object.keys(localStorage).filter(k => k.startsWith(STORE_KEY)).forEach(k => localStorage.removeItem(k)); } catch (e) { /* ignora */ }
+      Server.me = null; Server.childId = null; rememberChild(''); VIEW.parentsUnlocked = false; VIEW.auth = { mode: 'login' }; show('login'); toast('Conta apagada.');
+    } catch (e) { toast(e.message); }
+  };
+}
+function promptPassword() {
+  return new Promise(res => {
+    const c = openModal(`<div class="modal-head"><h3>Confirme com a sua senha</h3></div><div class="modal-body"><input class="pin-input" id="pp2" type="password" autocomplete="current-password" style="letter-spacing:normal;font-size:18px"></div>
+      <div class="modal-foot"><button class="btn" data-no>Cancelar</button><button class="btn danger" data-yes>Apagar</button></div>`, { onClose: () => res('') });
+    $('[data-no]', c).onclick = () => closeModal();
+    $('[data-yes]', c).onclick = () => { const v = $('#pp2', c).value; $('#modal')._onClose = null; closeModal(); res(v); };
+    setTimeout(() => $('#pp2', c) && $('#pp2', c).focus(), 50);
+  });
+}
+async function pAdmin(box) {
+  box.innerHTML = '<p class="muted">Carregando…</p>';
+  let o;
+  try { o = await apiCall('/api/admin/overview'); } catch (e) { box.innerHTML = `<p class="muted">${esc(e.message)}</p>`; return; }
+  const pct = Math.min(100, (o.monthUsd / o.monthCap) * 100);
+  box.innerHTML = `
+    <div class="card"><b>💳 Gasto com o Claude neste mês</b>
+      <div class="spend"><div class="spend-bar"><i style="width:${pct}%"></i></div><span><b>${usd(o.monthUsd)}</b> de ${usd(o.monthCap)}</span></div>
+      <p class="tiny muted" style="margin:4px 0 0">Limite padrão: ${usd(o.childCap)} por criança por dia. Os valores são estimativas pelos tokens usados. Para mudar os limites padrão, edite CHILD_DAILY_USD e MONTHLY_USD no wrangler.jsonc.</p></div>
+    <div class="card"><b>✉️ Convidar uma nova família</b>
+      <div class="row wrap" style="margin-top:6px"><input id="ad-note" placeholder="Para quem? (ex.: Família Silva)" class="grow input"><button class="btn small primary" id="ad-inv">Gerar convite</button></div>
+      <div id="ad-inv-out"></div>
+      ${o.invites.length ? `<div class="tiny" style="margin-top:8px"><b>Convites</b>${o.invites.map(i => `<div class="row"><span class="grow">${esc(i.note || '(sem nome)')} · ${new Date(i.created).toLocaleDateString('pt-BR')}</span>
+        <span class="muted">${i.used_at ? '✅ usado' : i.expires < new Date().toISOString() ? 'expirado' : 'pendente'}</span>${!i.used_at && i.expires >= new Date().toISOString() ? `<button class="btn small" data-revoke="${i.id}">Cancelar</button>` : ''}</div>`).join('')}</div>` : ''}</div>
+    <div class="card"><b>👨‍👩‍👧 Famílias (${o.families.length})</b>
+      ${o.families.map(f => `<div class="fam ${f.status !== 'active' ? 'paused' : ''}" data-fam="${f.id}">
+        <div class="row wrap"><b class="grow">${esc(f.name)}${f.status !== 'active' ? ' · ⏸️ pausada' : ''}</b><span class="tiny">hoje ${usd(f.today_usd)} · mês <b>${usd(f.month_usd)}</b> (${f.month_calls} chamadas)</span></div>
+        <div class="tiny">${f.children.map(c => `${c.avatar || '🦉'} ${esc(c.name)}`).join(' · ') || '<span class="muted">sem crianças</span>'}</div>
+        ${f.parents.map(p => `<div class="row tiny"><span class="grow">${esc(p.name)} · ${esc(p.email)}${p.last_login ? ' · ' + new Date(p.last_login).toLocaleDateString('pt-BR') : ''}</span><button class="btn small" data-reset="${p.id}" data-email="${esc(p.email)}">🔑 Link de nova senha</button></div>`).join('')}
+        <div class="row wrap tiny" style="margin-top:4px"><label>Limite por criança/dia (US$) <input type="number" step="0.1" min="0" data-cap value="${f.child_daily_usd ?? ''}" placeholder="${o.childCap}" style="width:70px"></label>
+          <button class="btn small" data-capsave>Salvar limite</button>
+          ${f.id !== Server.me.family.id ? `<button class="btn small" data-status="${f.status === 'active' ? 'paused' : 'active'}">${f.status === 'active' ? '⏸️ Pausar' : '▶️ Reativar'}</button><button class="btn small danger" data-famdel>Apagar</button>` : '<span class="muted">(sua família)</span>'}</div>
+        <div data-out></div></div>`).join('')}</div>
+    <div class="card"><b>🚩 Avisos de problema (${o.reports.length})</b>
+      ${o.reports.map(r => `<div class="review-item"><div class="meta">${new Date(r.created).toLocaleString('pt-BR')} · ${esc(r.family_name || '')}${r.child_name ? ' · ' + esc(r.child_name) : ''} · ${esc(r.kind || '')}</div><div class="ans">${esc(r.text)}</div>
+        <button class="btn small" data-resolve="${r.id}">✔ Resolvido</button></div>`).join('') || '<p class="tiny muted">Nenhum aviso.</p>'}</div>`;
+  $('#ad-inv').onclick = async () => {
+    try { const r = await apiCall('/api/admin/invites', { method: 'POST', data: { note: $('#ad-note').value } });
+      $('#ad-inv-out').innerHTML = linkBox(r.link, r.expires, 'Convite para o app de estudos Estudos com a Lumi'); bindShare(box); } catch (e) { toast(e.message); }
+  };
+  $$('[data-revoke]', box).forEach(b => b.onclick = async () => { await apiCall(`/api/admin/invites/${b.dataset.revoke}`, { method: 'DELETE' }); pAdmin(box); });
+  $$('[data-resolve]', box).forEach(b => b.onclick = async () => { await apiCall(`/api/admin/reports/${b.dataset.resolve}`, { method: 'POST', data: {} }); pAdmin(box); });
+  $$('.fam', box).forEach(f => {
+    const id = f.dataset.fam;
+    $$('[data-reset]', f).forEach(b => b.onclick = async () => {
+      try { const r = await apiCall('/api/admin/reset-link', { method: 'POST', data: { parentId: b.dataset.reset } });
+        $('[data-out]', f).innerHTML = `<div class="tiny">Link de nova senha para <b>${esc(b.dataset.email)}</b>:</div>` + linkBox(r.link, r.expires, 'Link para criar uma nova senha no app Estudos com a Lumi'); bindShare(f); } catch (e) { toast(e.message); }
+    });
+    $('[data-capsave]', f).onclick = async () => { const v = $('[data-cap]', f).value; await apiCall(`/api/admin/families/${id}`, { method: 'PATCH', data: { child_daily_usd: v === '' ? null : Number(v) } }); toast('Limite salvo'); };
+    const st = $('[data-status]', f); if (st) st.onclick = async () => { await apiCall(`/api/admin/families/${id}`, { method: 'PATCH', data: { status: st.dataset.status } }); pAdmin(box); };
+    const del = $('[data-famdel]', f); if (del) del.onclick = async () => {
+      if (!(await confirmBox('Apagar esta família?', 'Todos os responsáveis, crianças e dados desta família serão apagados para sempre.', 'Apagar', true))) return;
+      await apiCall(`/api/admin/families/${id}`, { method: 'DELETE' }); pAdmin(box);
+    };
+  });
 }
 
 /* =========================================================================
@@ -2328,19 +2683,20 @@ function init() {
 
   boot();
 }
-// Descobre se há servidor; se houver, pede o código da família e carrega os dados de lá.
+// Descobre se há servidor. Com servidor: login da família → perfil da criança. Sem servidor: modo local.
 async function boot() {
   const has = await detectServer();
-  if (has) {
-    if (!Server.code || !Server.configured) { show('login'); return; }
-    try { await loadFromServer(); }
-    catch (e) {
-      if (e.status === 401) { writeCode(''); show('login'); return; }
-      Server.status = 'offline';
-      toast('Sem conexão com o servidor: usando os dados deste aparelho.');
-    }
+  if (!has) { startApp(); return; }
+  const q = new URLSearchParams(location.search);
+  if (q.get('convite')) { VIEW.auth = { mode: 'invite', token: q.get('convite') }; show('login'); return; }
+  if (q.get('redefinir')) { VIEW.auth = { mode: 'reset', token: q.get('redefinir') }; show('login'); return; }
+  if (Server.needsSetup) { VIEW.auth = { mode: 'firstrun' }; show('login'); return; }
+  try { await refreshMe(); }
+  catch (e) {
+    if (e.status === 401) { VIEW.auth = { mode: 'login' }; show('login'); return; }
+    toast('Sem conexão com o servidor.'); VIEW.auth = { mode: 'login' }; show('login'); return;
   }
-  startApp();
+  afterLogin();
 }
 function startApp() {
   applyTheme(); renderMascotMini(); renderCoins();

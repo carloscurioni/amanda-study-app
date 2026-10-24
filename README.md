@@ -1,18 +1,43 @@
 # 🦉 Estudos com a Lumi
 
-App de estudos gamificado para a Amanda. Toda semana ela conta, com as próprias palavras, o que está aprendendo na escola. O **Claude** cria na hora as perguntas de cada dia. Ela faz na tela ou **imprime** a folha, e a corujinha **Lumi**:
+App de estudos gamificado para crianças de escola internacional, usado por **famílias convidadas**. Começou para a Amanda. Toda semana a criança conta, com as próprias palavras, o que está aprendendo na escola. O **Claude** cria na hora as perguntas de cada dia. Ela faz na tela ou **imprime** a folha, e a corujinha **Lumi**:
 - dá dicas (💡);
 - explica o conteúdo (**?**);
 - corrige tudo, inclusive as respostas livres e a folha de papel por foto.
 
-Os dados ficam salvos num servidor, então funcionam em qualquer aparelho.
+Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perfil com PIN e um **cofre de dados separado** no servidor, então tudo funciona em qualquer aparelho.
 
 ```
  Tablet / celular / computador ──▶ Cloudflare Worker (grátis)
                                      ├─ serve o app (pasta public/)
-                                     ├─ banco de dados da família (Durable Object + SQLite)
+                                     ├─ Diretório: famílias, pais, crianças, convites, sessões, uso (Durable Object + SQLite)
+                                     ├─ Cofre de cada criança: semana, moedas, lojinha (um Durable Object por criança)
                                      └─ chama a API do Claude ──▶ perguntas, dicas, explicações e correções
 ```
+
+## 0. Contas e famílias
+
+- **Só por convite.** O administrador gera, em **Área dos pais → 🛠️ Admin**, um link de convite para cada família (válido por 14 dias, uso único) e o envia por WhatsApp ou e-mail.
+- **Pais:** entram com e-mail e senha. As senhas ficam guardadas só como hash (PBKDF2), e o login usa um cookie seguro (HttpOnly). Depois de 5 senhas erradas, o acesso bloqueia por 15 minutos.
+- **Outro responsável:** em **Família → Convidar outro responsável**, um pai gera o link para o outro entrar na mesma família.
+- **Esqueci a senha:** o administrador gera um **link de nova senha** (vale 48 h) na aba Admin.
+- **Crianças:** não usam e-mail. No aparelho da família, tocam no próprio personagem e digitam o **PIN de 4 números**. A **Área dos pais** pede a senha do responsável.
+- **Isolamento:** o servidor só abre os cofres das crianças da família logada. Uma família nunca vê os dados da outra.
+- **Custo do Claude:** pago pela chave do administrador, com limite por criança por dia (padrão **US$ 0,50**) e total por mês (padrão **US$ 40**). A aba Admin mostra o gasto de cada família, permite mudar o limite de uma família, pausar ou apagar uma família e ver os avisos de problema.
+- **Privacidade (LGPD, art. 14):**
+  - autorização do responsável no cadastro e [Aviso de Privacidade](public/privacidade.html);
+  - download de todos os dados da família;
+  - apagar o perfil de uma criança ou a conta inteira.
+- **Regras da Anthropic para apps usados por crianças:**
+  - o tutorial avisa que a Lumi é uma inteligência artificial;
+  - todos os prompts levam regras de segurança infantil;
+  - há um botão "🚩 Algo estranho?" na mini-aula e um formulário de aviso para os pais.
+
+### Primeiro acesso (uma vez, depois de publicar esta versão)
+1. Abra o endereço do app. Aparece a tela **"Configurar o app"**.
+2. Digite o **FAMILY_CODE**, o secret que já está na Cloudflare. Depois, os seus dados (nome da família, e-mail, senha) e os da Amanda: ano escolar e um PIN de 4 números.
+3. Os dados que já estavam no app (moedas, compras, semana) passam para o perfil da Amanda. Você vira o **administrador**.
+4. No tablet dela, entre com o seu e-mail e senha uma vez. Depois, ela só toca no personagem e digita o PIN.
 
 ---
 
@@ -75,11 +100,11 @@ Vocês precisam de duas contas: **Anthropic** (API do Claude, pré-paga) e **Clo
 3. Deixe o **nome do projeto exatamente `amanda-study-app`** (precisa bater com o `wrangler.jsonc`) e os comandos padrão. Toque em **Deploy**.
 4. Quando terminar, abra o Worker → **Settings → Variables and Secrets → Add** e crie dois **Secrets**:
    - `ANTHROPIC_API_KEY` = a chave do passo 1;
-   - `FAMILY_CODE` = uma senha da família (ex.: `coruja-azul-2026`). É o que se digita uma vez em cada aparelho.
+   - `FAMILY_CODE` = um código secreto usado **só no primeiro acesso**, para criar a conta do administrador.
 5. Salve (**Deploy**). O endereço do app aparece em **Settings → Domains & Routes**, no formato `https://amanda-study-app.<sua-conta>.workers.dev`.
 
 ### Passo 3 — Usar
-- Abra o endereço no tablet ou celular dela, digite o **código da família** e pronto.
+- Faça o **primeiro acesso** (seção 0) e depois entre no tablet ou celular dela com o seu e-mail.
 - No iPad/iPhone: **Compartilhar → Adicionar à Tela de Início** para virar um ícone de app.
 - A cada `git push` neste repositório, a Cloudflare publica a nova versão sozinha.
 
@@ -99,12 +124,17 @@ O link antigo (`carloscurioni.github.io/amanda-study-app`) continua funcionando 
 | Corrigir a folha por foto | Claude Sonnet 5.5 | ~US$ 0,03 por folha |
 | Dicas, "?", extras, correção das livres na tela | Claude Haiku 5.5 | frações de centavo cada |
 
-**Total típico: menos de US$ 2 por mês.** Para proteger o custo, o servidor limita a **150 chamadas por dia**. A Área dos pais → Dados mostra o uso do dia. Os modelos e o limite ficam em `wrangler.jsonc` (`MODEL_PLAN`, `MODEL_FAST`, `AI_DAILY_LIMIT`).
+**Total típico: US$ 1–2 por criança por mês.** O servidor calcula o custo de cada chamada pelos tokens e aplica dois limites:
+- **por criança por dia:** `CHILD_DAILY_USD`, padrão US$ 0,50, que a aba Admin pode mudar para uma família;
+- **total do app por mês:** `MONTHLY_USD`, padrão US$ 40.
+
+Os modelos e os limites ficam em `wrangler.jsonc` (`MODEL_PLAN`, `MODEL_FAST`, `CHILD_DAILY_USD`, `MONTHLY_USD`).
 
 ## 5. Segurança e privacidade
 
 - A chave da API fica **só no servidor** (Secret da Cloudflare). O navegador nunca a vê.
-- Todas as rotas exigem o **código da família**.
+- Todas as rotas de dados exigem login (cookie de sessão HttpOnly e Secure, válido por 60 dias). Toda escrita exige o cabeçalho `x-lumi`, como proteção contra requisições vindas de outros sites.
+- Senhas e PINs ficam guardados só como hash (PBKDF2-SHA256), com bloqueio após várias tentativas erradas.
 - As fotos vão direto para o Claude corrigir e **não são guardadas** pelo app. O que fica guardado: tarefas, respostas, moedas e compras.
 - Sem servidor (ex.: o arquivo aberto direto), o app ainda funciona **só naquele aparelho**: perguntas do gerador interno, sem Claude.
 
@@ -125,19 +155,22 @@ Para testar outra data, acrescente `?hoje=2026-10-30` ao endereço (simula uma s
 ```
 public/index.html   telas do app
 public/style.css    visual, layout sem rolagem, folha A4 de impressão
-public/script.js    lógica do app: semana, moedas, lojinha, impressão, correção, sincronização
-src/worker.js       servidor: banco da família + rotas /api/* que chamam o Claude
-wrangler.jsonc      configuração da Cloudflare (nome, banco, modelos, limite diário)
+public/script.js    lógica do app: contas e perfis, semana, moedas, lojinha, impressão, correção, sincronização
+public/privacidade.html  aviso de privacidade
+src/worker.js       servidor: rotas /api/*, cofre de cada criança, chamadas ao Claude com limite de gasto
+src/directory.js    diretório de contas: famílias, pais, crianças, convites, sessões, uso, avisos
+wrangler.jsonc      configuração da Cloudflare (nome, Durable Objects, modelos, limites)
 ```
 
-Rotas do servidor (todas com o cabeçalho `x-family-code`):
-- `/api/state`: guarda e lê o estado da família.
-- `/api/plan`: cria a semana a partir de texto e fotos.
-- `/api/more`: extras.
-- `/api/tutor`: dica.
-- `/api/explain`: botão "?".
-- `/api/check-open`: corrige as livres.
-- `/api/grade`: corrige a folha por foto.
-- `/api/usage`: uso do dia.
+Rotas do servidor:
+
+| Grupo | Rotas |
+|---|---|
+| Público | `GET /api/health`, `POST /api/setup` (primeiro acesso), `POST /api/auth/login`, `GET/POST /api/invite/:token[/accept]` |
+| Sessão | `GET /api/auth/me`, `POST /api/auth/logout`, `POST /api/auth/verify`, `POST /api/auth/password` |
+| Família | `GET/DELETE /api/family`, `POST /api/family/children`, `PATCH/DELETE /api/family/children/:id`, `POST /api/family/children/:id/unlock`, `POST /api/family/invite-parent`, `GET /api/family/export`, `POST /api/report` |
+| Dados da criança | `GET/PUT/DELETE /api/children/:id/state` |
+| Claude | `POST /api/ai/plan`, `/more`, `/tutor`, `/explain`, `/check-open`, `/grade` (sempre com `childId`) |
+| Admin | `GET /api/admin/overview`, `POST /api/admin/invites`, `DELETE /api/admin/invites/:id`, `POST /api/admin/reset-link`, `PATCH/DELETE /api/admin/families/:id`, `POST /api/admin/reports/:id` |
 
 Todas as respostas do Claude usam *structured outputs* (JSON garantido pelo esquema).
