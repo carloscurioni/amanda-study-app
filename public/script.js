@@ -135,6 +135,11 @@ const DEFAULT_VOUCHERS = [
   { id: 'v-dinner', name: 'Escolher o jantar', price: 250 },
   { id: 'v-movie',  name: 'Escolher o filme da família', price: 300 },
 ];
+DEFAULT_VOUCHERS.push(
+  { id: 'v-icecream', name: 'Sorvete no fim de semana', price: 200 },
+  { id: 'v-late', name: 'Dormir 30 min mais tarde', price: 250 },
+  { id: 'v-outing', name: 'Escolher o passeio do domingo', price: 400 },
+);
 
 /* =========================================================================
    2. UTILITÁRIOS
@@ -222,7 +227,7 @@ function defaultState() {
     extras: {},                 // { 'AAAA-MM-DD': { sets: n } }
     extra: null,                // rodada de extras em andamento
     owned: [],                  // ids de itens comprados
-    equipped: { hat: null, glasses: null, neck: null, bg: null, back: null, skin: null, pet: null },
+    equipped: { hat: null, glasses: null, neck: null, bg: null, back: null, skin: null, pet: null, fx: null },
     redemptions: [],            // vales resgatados {id, voucherId, name, date, delivered}
     rev: 0,                     // versão no servidor
   };
@@ -410,6 +415,125 @@ const BACK_SVG = {
   'bk-cape': '<path d="M26 40 Q50 50 74 40 L90 96 Q50 104 10 96 Z" fill="#e5484d"/><path d="M26 40 Q50 50 74 40 L78 48 Q50 58 22 48Z" fill="#c43a3f"/>',
   'bk-bag': '<rect x="74" y="44" width="20" height="26" rx="5" fill="#ffb703" stroke="#e09600" stroke-width="1.5"/><rect x="77" y="56" width="14" height="8" rx="2" fill="#ffd166"/>',
 };
+/* ---------- Lojinha ampliada: mais roupinhas, cores, amiguinhos, fundos e efeitos ---------- */
+SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'bg'), 0, { id: 'fx', label: '✨ Efeitos' });
+SHOP_ITEMS.push(
+  // chapéus
+  { id: 'hat-party', cat: 'hat', name: 'Chapéu de festa', price: 45 },
+  { id: 'hat-bow', cat: 'hat', name: 'Laço gigante', price: 50, emoji: '🎀', pos: [50, 20, 26] },
+  { id: 'hat-beret', cat: 'hat', name: 'Boina de artista', price: 60 },
+  { id: 'hat-beanie', cat: 'hat', name: 'Gorro de inverno', price: 70 },
+  { id: 'hat-beach', cat: 'hat', name: 'Chapéu de praia', price: 80, emoji: '👒', pos: [50, 24, 38] },
+  { id: 'hat-cat', cat: 'hat', name: 'Orelhas de gatinho', price: 90 },
+  { id: 'hat-chef', cat: 'hat', name: 'Chapéu de chef', price: 100 },
+  { id: 'hat-pirate', cat: 'hat', name: 'Chapéu de pirata', price: 160 },
+  { id: 'hat-magic', cat: 'hat', name: 'Cartola mágica', price: 350, emoji: '🎩', pos: [50, 22, 36] },
+  { id: 'hat-astro', cat: 'hat', name: 'Capacete de astronauta', price: 900 },
+  // óculos
+  { id: 'gl-nerd', cat: 'glasses', name: 'Óculos de nerd', price: 40 },
+  { id: 'gl-3d', cat: 'glasses', name: 'Óculos 3D', price: 90 },
+  { id: 'gl-swim', cat: 'glasses', name: 'Óculos de natação', price: 70 },
+  { id: 'gl-mono', cat: 'glasses', name: 'Monóculo chique', price: 150 },
+  { id: 'gl-hero', cat: 'glasses', name: 'Máscara de heroína', price: 200 },
+  // acessórios
+  { id: 'nk-tie', cat: 'neck', name: 'Gravata', price: 40 },
+  { id: 'nk-bandana', cat: 'neck', name: 'Bandana', price: 45 },
+  { id: 'nk-bell', cat: 'neck', name: 'Sininho', price: 60 },
+  { id: 'nk-lei', cat: 'neck', name: 'Colar havaiano', price: 100 },
+  { id: 'nk-heart', cat: 'neck', name: 'Colar de coração', price: 180 },
+  // costas
+  { id: 'bk-butterfly', cat: 'back', name: 'Asas de borboleta', price: 450 },
+  { id: 'bk-wizard', cat: 'back', name: 'Capa de mago', price: 500 },
+  { id: 'bk-angel', cat: 'back', name: 'Asas de anjo', price: 800 },
+  { id: 'bk-jet', cat: 'back', name: 'Mochila a jato', price: 1500 },
+  // cores
+  { id: 'sk-lilac', cat: 'skin', name: 'Lumi Lilás', price: 120 },
+  { id: 'sk-orange', cat: 'skin', name: 'Lumi Laranja', price: 120 },
+  { id: 'sk-snow', cat: 'skin', name: 'Lumi Neve', price: 300 },
+  { id: 'sk-night', cat: 'skin', name: 'Lumi Noite', price: 400 },
+  { id: 'sk-rainbow', cat: 'skin', name: 'Lumi Arco-íris', price: 2000 },
+  // amiguinhos
+  { id: 'pt-fish', cat: 'pet', name: 'Peixinho', price: 200, emoji: '🐠' },
+  { id: 'pt-bunny', cat: 'pet', name: 'Coelhinho', price: 300, emoji: '🐰' },
+  { id: 'pt-turtle', cat: 'pet', name: 'Tartaruguinha', price: 350, emoji: '🐢' },
+  { id: 'pt-octo', cat: 'pet', name: 'Polvinho', price: 400, emoji: '🐙' },
+  { id: 'pt-dog', cat: 'pet', name: 'Cachorrinho', price: 450, emoji: '🐶' },
+  { id: 'pt-penguin', cat: 'pet', name: 'Pinguim', price: 500, emoji: '🐧' },
+  { id: 'pt-fox', cat: 'pet', name: 'Raposinha', price: 600, emoji: '🦊' },
+  { id: 'pt-koala', cat: 'pet', name: 'Coala', price: 700, emoji: '🐨' },
+  { id: 'pt-dolphin', cat: 'pet', name: 'Golfinho', price: 800, emoji: '🐬' },
+  { id: 'pt-unicorn', cat: 'pet', name: 'Unicórnio', price: 2000, emoji: '🦄' },
+  // efeitos ao redor da Lumi
+  { id: 'fx-bubbles', cat: 'fx', name: 'Bolhas', price: 150, fx: '🫧' },
+  { id: 'fx-sparkle', cat: 'fx', name: 'Brilhos', price: 150, fx: '✨' },
+  { id: 'fx-hearts', cat: 'fx', name: 'Corações', price: 200, fx: '💕' },
+  { id: 'fx-music', cat: 'fx', name: 'Notas musicais', price: 200, fx: '🎵' },
+  { id: 'fx-flowers', cat: 'fx', name: 'Pétalas', price: 250, fx: '🌸' },
+  { id: 'fx-stars', cat: 'fx', name: 'Estrelinhas', price: 250, fx: '⭐' },
+  { id: 'fx-snow', cat: 'fx', name: 'Floquinhos de neve', price: 300, fx: '❄️' },
+  { id: 'fx-rainbow', cat: 'fx', name: 'Arco-íris', price: 600 },
+  { id: 'fx-crown', cat: 'fx', name: 'Aura dourada', price: 2000 },
+  // fundos
+  { id: 'bg-clouds', cat: 'bg', name: 'Nuvens', price: 150, theme: 'theme-clouds', sw: 'linear-gradient(180deg,#dbeafe,#ffffff)' },
+  { id: 'bg-jungle', cat: 'bg', name: 'Selva', price: 250, theme: 'theme-jungle', sw: 'linear-gradient(160deg,#9be7a8,#e9fcd2)' },
+  { id: 'bg-snow', cat: 'bg', name: 'Inverno', price: 250, theme: 'theme-snow', sw: 'linear-gradient(180deg,#e3f2fd,#f8fbff)' },
+  { id: 'bg-moon', cat: 'bg', name: 'Noite de lua', price: 400, theme: 'theme-moon', sw: 'linear-gradient(160deg,#0f1b3d,#3b4a8a)' },
+  { id: 'bg-aurora', cat: 'bg', name: 'Aurora boreal', price: 1500, theme: 'theme-aurora', sw: 'linear-gradient(160deg,#0b2545,#13a89e,#8f6bff)' },
+  // adesivos
+  ...[['🍓', 15], ['🌻', 15], ['🐞', 15], ['🎈', 15], ['🍕', 15], ['🐸', 20], ['🦉', 20], ['🐙', 20], ['🎸', 25], ['⚽', 25],
+      ['🏇', 30], ['🌍', 30], ['🦜', 30], ['🍭', 20], ['🧸', 35], ['🔮', 40], ['🪐', 45], ['🌠', 50], ['🦚', 60], ['🏰', 80]]
+    .map(([e, p], i) => ({ id: 'st2-' + i, cat: 'sticker', name: 'Adesivo', emoji: e, price: p })),
+);
+
+Object.assign(ACCESSORY_SVG, {
+  'hat-party': '<path d="M38 22 L50 -6 L62 22 Z" fill="#74c0fc"/><path d="M41 15 L59 15 M44 8 L56 8 M47 1 L53 1" stroke="#ff6b9a" stroke-width="3"/><circle cx="50" cy="-7" r="3.5" fill="#ffd43b"/>',
+  'hat-beret': '<ellipse cx="46" cy="18" rx="25" ry="9" fill="#e03131" transform="rotate(-8 46 18)"/><circle cx="44" cy="8" r="2.5" fill="#c92a2a"/>',
+  'hat-beanie': '<path d="M26 24 Q28 0 50 0 Q72 0 74 24 Z" fill="#4dabf7"/><rect x="25" y="18" width="50" height="8" rx="4" fill="#1c7ed6"/><circle cx="50" cy="-2" r="6" fill="#fff"/><path d="M36 6 v12 M50 3 v15 M64 6 v12" stroke="#74c0fc" stroke-width="2"/>',
+  'hat-cat': '<path d="M24 26 L26 2 L42 18 Z" fill="#ffc9de" stroke="#f783ac" stroke-width="2"/><path d="M76 26 L74 2 L58 18 Z" fill="#ffc9de" stroke="#f783ac" stroke-width="2"/><path d="M28 20 Q50 12 72 20" stroke="#f783ac" stroke-width="3.5" fill="none" stroke-linecap="round"/>',
+  'hat-chef': '<rect x="34" y="12" width="32" height="12" rx="2" fill="#fff" stroke="#dee2e6"/><circle cx="38" cy="8" r="9" fill="#fff" stroke="#dee2e6"/><circle cx="50" cy="3" r="10" fill="#fff" stroke="#dee2e6"/><circle cx="62" cy="8" r="9" fill="#fff" stroke="#dee2e6"/>',
+  'hat-pirate': '<path d="M18 22 Q50 -6 82 22 Q50 14 18 22Z" fill="#212529"/><circle cx="50" cy="10" r="4" fill="#fff"/><path d="M47 15 l6 -3 M47 12 l6 3" stroke="#fff" stroke-width="1.2"/>',
+  'hat-astro': '<circle cx="50" cy="44" r="40" fill="#d0ebff" fill-opacity=".28" stroke="#adb5bd" stroke-width="3"/><path d="M24 22 Q34 12 46 10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/><circle cx="50" cy="3" r="3" fill="#fa5252"/>',
+  'gl-nerd': '<g fill="none" stroke="#212529" stroke-width="3"><rect x="25" y="32" width="23" height="17" rx="3"/><rect x="52" y="32" width="23" height="17" rx="3"/><path d="M48 39 h4"/></g>',
+  'gl-3d': '<rect x="24" y="32" width="25" height="15" rx="2" fill="#fa5252" fill-opacity=".75" stroke="#fff" stroke-width="2"/><rect x="51" y="32" width="25" height="15" rx="2" fill="#4dabf7" fill-opacity=".75" stroke="#fff" stroke-width="2"/>',
+  'gl-swim': '<path d="M20 40 H80" stroke="#15aabf" stroke-width="3"/><ellipse cx="37" cy="40" rx="12" ry="10" fill="#99e9f2" fill-opacity=".55" stroke="#1098ad" stroke-width="3"/><ellipse cx="63" cy="40" rx="12" ry="10" fill="#99e9f2" fill-opacity=".55" stroke="#1098ad" stroke-width="3"/>',
+  'gl-mono': '<circle cx="63" cy="40" r="12" fill="none" stroke="#f59f00" stroke-width="2.5"/><path d="M74 46 Q80 64 70 78" stroke="#f59f00" stroke-width="1.5" fill="none"/>',
+  'gl-hero': '<path d="M18 36 Q50 26 82 36 Q84 46 74 50 Q62 54 50 46 Q38 54 26 50 Q16 46 18 36Z" fill="#212529"/><ellipse cx="37" cy="41" rx="7" ry="6" fill="#fff"/><ellipse cx="63" cy="41" rx="7" ry="6" fill="#fff"/><circle cx="38" cy="42" r="3.5" fill="#2b2350"/><circle cx="62" cy="42" r="3.5" fill="#2b2350"/>',
+  'nk-tie': '<path d="M46 58 L54 58 L52 62 L56 82 L50 88 L44 82 L48 62 Z" fill="#1c7ed6"/><path d="M47 70 l6 -4 M46 77 l8 -5" stroke="#74c0fc" stroke-width="1.5"/>',
+  'nk-bandana': '<path d="M28 56 Q50 64 72 56 L50 80 Z" fill="#fa5252"/><circle cx="44" cy="62" r="1.5" fill="#fff"/><circle cx="56" cy="62" r="1.5" fill="#fff"/><circle cx="50" cy="70" r="1.5" fill="#fff"/>',
+  'nk-bell': '<path d="M36 58 Q50 64 64 58" stroke="#e03131" stroke-width="3" fill="none"/><circle cx="50" cy="66" r="6" fill="#fcc419" stroke="#f08c00" stroke-width="1.5"/><path d="M46 66 h8" stroke="#f08c00" stroke-width="1.2"/>',
+  'nk-lei': [28, 34, 40, 46, 52, 58, 64, 70].map((x, i) => `<circle cx="${x}" cy="${58 + (i > 0 && i < 7 ? 3 : 0) + (i > 1 && i < 6 ? 2 : 0)}" r="3.6" fill="${['#ff8fab', '#ffd43b', '#ff922b', '#da77f2'][i % 4]}"/>`).join(''),
+  'nk-heart': '<path d="M36 57 Q50 66 64 57" stroke="#adb5bd" stroke-width="1.5" fill="none"/><path transform="translate(50 68) scale(.75)" d="M0 -3 C-5 -10 -14 -3 0 8 C14 -3 5 -10 0 -3Z" fill="#f03e3e"/>',
+});
+Object.assign(BACK_SVG, {
+  'bk-butterfly': '<path d="M50 50 Q8 4 4 40 Q4 62 50 54Z" fill="#ffa94d" stroke="#e8590c" stroke-width="1.5"/><path d="M50 50 Q92 4 96 40 Q96 62 50 54Z" fill="#ffa94d" stroke="#e8590c" stroke-width="1.5"/><path d="M50 56 Q14 64 16 86 Q32 90 50 60Z" fill="#da77f2"/><path d="M50 56 Q86 64 84 86 Q68 90 50 60Z" fill="#da77f2"/><circle cx="18" cy="36" r="4" fill="#fff"/><circle cx="82" cy="36" r="4" fill="#fff"/>',
+  'bk-wizard': '<path d="M24 40 Q50 50 76 40 L92 98 Q50 106 8 98 Z" fill="#5f3dc4"/><path d="M20 90 l2 4 l4 1 l-4 1 l-2 4 l-2 -4 l-4 -1 l4 -1Z M80 84 l2 4 l4 1 l-4 1 l-2 4 l-2 -4 l-4 -1 l4 -1Z M14 66 l1.5 3 l3 1 l-3 1 l-1.5 3 l-1.5 -3 l-3 -1 l3 -1Z" fill="#ffd43b"/>',
+  'bk-angel': '<g fill="#fff" stroke="#dee2e6" stroke-width="1.5"><path d="M30 46 Q-6 30 2 62 Q10 76 30 64Z"/><path d="M70 46 Q106 30 98 62 Q90 76 70 64Z"/><path d="M28 52 Q4 50 8 70 Q18 78 30 66Z"/><path d="M72 52 Q96 50 92 70 Q82 78 70 66Z"/></g><ellipse cx="50" cy="2" rx="16" ry="4" fill="none" stroke="#ffd43b" stroke-width="3"/>',
+  'bk-jet': '<rect x="10" y="42" width="14" height="34" rx="6" fill="#868e96" stroke="#495057" stroke-width="1.5"/><rect x="76" y="42" width="14" height="34" rx="6" fill="#868e96" stroke="#495057" stroke-width="1.5"/><path d="M12 76 Q17 98 22 76Z M78 76 Q83 98 88 76Z" fill="#ff922b"/><path d="M14 76 Q17 90 20 76Z M80 76 Q83 90 86 76Z" fill="#ffd43b"/>',
+});
+Object.assign(SKINS, {
+  'sk-lilac': { body: '#b197fc', dark: '#9775fa', belly: '#f3f0ff', marks: '#d0bfff', ring: '#7950f2' },
+  'sk-orange': { body: '#ff922b', dark: '#f76707', belly: '#fff4e6', marks: '#ffd8a8', ring: '#e8590c' },
+  'sk-snow': { body: '#f8f9fa', dark: '#dee2e6', belly: '#ffffff', marks: '#e9ecef', ring: '#adb5bd' },
+  'sk-night': { body: '#364fc7', dark: '#283593', belly: '#dbe4ff', marks: '#bac8ff', ring: '#1a237e', extra: '<path d="M70 70 a6 6 0 1 0 6 8 a5 5 0 1 1 -6 -8Z" fill="#ffe066"/>' },
+  'sk-rainbow': { body: 'url(#lumiRainbow)', dark: '#845ef7', belly: '#fff9db', marks: '#ffe066', ring: '#7048e8',
+    extra: '<defs><linearGradient id="lumiRainbow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff6b6b"/><stop offset=".25" stop-color="#ffd43b"/><stop offset=".5" stop-color="#69db7c"/><stop offset=".75" stop-color="#4dabf7"/><stop offset="1" stop-color="#b197fc"/></linearGradient></defs>' },
+});
+// Efeitos: emojis espalhados ao redor da Lumi (ou desenhos especiais)
+const FX_POS = [[4, 14, 13], [86, 6, 11], [92, 52, 12], [2, 60, 11], [16, 98, 10], [60, -4, 9]];
+function fxSVG(id) {
+  if (!id) return '';
+  if (id === 'fx-rainbow') return '<g fill="none" stroke-width="4" opacity=".75"><path d="M2 60 A48 48 0 0 1 98 60" stroke="#ff6b6b"/><path d="M7 60 A43 43 0 0 1 93 60" stroke="#ffd43b"/><path d="M12 60 A38 38 0 0 1 88 60" stroke="#69db7c"/><path d="M17 60 A33 33 0 0 1 83 60" stroke="#4dabf7"/></g>';
+  if (id === 'fx-crown') return '<ellipse cx="50" cy="56" rx="46" ry="48" fill="#ffd43b" opacity=".22"/><ellipse cx="50" cy="56" rx="40" ry="42" fill="none" stroke="#fcc419" stroke-width="2" stroke-dasharray="3 5"/>' + FX_POS.map(([x, y, s]) => `<text x="${x}" y="${y}" font-size="${s}">✨</text>`).join('');
+  const it = SHOP_ITEMS.find(i => i.id === id);
+  return it && it.fx ? FX_POS.map(([x, y, s]) => `<text x="${x}" y="${y}" font-size="${s}" font-family="Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif">${it.fx}</text>`).join('') : '';
+}
+function emojiAcc(id) {
+  const it = id && SHOP_ITEMS.find(i => i.id === id);
+  if (!it || !it.emoji || !it.pos) return '';
+  const [x, y, s] = it.pos;
+  return `<text x="${x}" y="${y}" font-size="${s}" text-anchor="middle" font-family="Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif">${it.emoji}</text>`;
+}
+
 function mascotSVG(eq = S.equipped, mood = 'happy') {
   const P = SKINS[eq.skin] || SKINS.base;
   const pet = eq.pet && (SHOP_ITEMS.find(i => i.id === eq.pet) || {}).emoji;
@@ -418,10 +542,10 @@ function mascotSVG(eq = S.equipped, mood = 'happy') {
   const brows = mood === 'sad'
     ? '<path d="M27 27 L45 31 M73 27 L55 31" stroke="#3a2c7a" stroke-width="2.6" stroke-linecap="round"/>'
     : mood === 'think' ? '<path d="M28 27 Q37 23 46 27" stroke="#3a2c7a" stroke-width="2.2" fill="none" stroke-linecap="round"/>' : '';
-  const acc = id => (id && ACCESSORY_SVG[id]) || '';
+  const acc = id => (id && (ACCESSORY_SVG[id] || emojiAcc(id))) || '';
   return `<svg class="owl" viewBox="0 -12 100 112" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <ellipse cx="50" cy="96" rx="24" ry="4" fill="rgba(0,0,0,.12)"/>
-    ${(eq.back && BACK_SVG[eq.back]) || ''}
+    ${fxSVG(eq.fx)}${(eq.back && (BACK_SVG[eq.back] || emojiAcc(eq.back))) || ''}
     <path d="M23 28 L28 8 L41 22 Z" fill="${P.dark}"/><path d="M77 28 L72 8 L59 22 Z" fill="${P.dark}"/>
     <path d="M19 52 Q8 72 26 84 Q30 66 19 52Z" fill="${P.dark}"/><path d="M81 52 Q92 72 74 84 Q70 66 81 52Z" fill="${P.dark}"/>
     <ellipse cx="50" cy="56" rx="32" ry="36" fill="${P.body}"/>
@@ -439,7 +563,7 @@ function mascotSVG(eq = S.equipped, mood = 'happy') {
   </svg>`;
 }
 function itemPreviewSVG(item) {
-  const eq = { hat: null, glasses: null, neck: null, back: null, skin: null, pet: null };
+  const eq = { hat: null, glasses: null, neck: null, back: null, skin: null, pet: null, fx: null };
   eq[item.cat] = item.id;
   return mascotSVG(eq);
 }
@@ -1965,23 +2089,24 @@ function vouchersAsItems() { return (S.vouchers || []).map(v => ({ id: v.id, cat
 function renderShop() {
   const el = $('#scr-shop');
   const cat = VIEW.shopCat;
-  const items = cat === 'voucher' ? vouchersAsItems() : SHOP_ITEMS.filter(i => i.cat === cat);
+  const items = (cat === 'voucher' ? vouchersAsItems() : SHOP_ITEMS.filter(i => i.cat === cat)).slice().sort((a, b) => a.price - b.price);
   const tryOn = VIEW.tryOn && SHOP_ITEMS.find(i => i.id === VIEW.tryOn);
   const previewEq = Object.assign({}, S.equipped);
-  if (tryOn && ['hat', 'glasses', 'neck', 'back', 'skin', 'pet'].includes(tryOn.cat)) previewEq[tryOn.cat] = tryOn.id;
+  if (tryOn && ['hat', 'glasses', 'neck', 'back', 'skin', 'pet', 'fx'].includes(tryOn.cat)) previewEq[tryOn.cat] = tryOn.id;
   const cards = items.map(it => {
     const owned = S.owned.includes(it.id);
     const equipped = S.equipped[it.cat] === it.id;
     let pic = '';
-    if (['hat', 'glasses', 'neck', 'back', 'skin', 'pet'].includes(it.cat)) pic = itemPreviewSVG(it);
+    if (['hat', 'glasses', 'neck', 'back', 'skin', 'pet', 'fx'].includes(it.cat)) pic = itemPreviewSVG(it);
     else if (it.cat === 'bg') pic = `<div class="swatch" style="background:${it.sw}"></div>`;
     else if (it.cat === 'sticker') pic = it.emoji;
     else pic = '🎟️';
     let btn;
     if (it.cat === 'voucher') btn = `<button class="btn small primary" data-buy="${it.id}">Resgatar</button>`;
     else if (it.cat === 'sticker') btn = owned ? '<span class="tiny muted">No álbum ✔</span>' : `<button class="btn small primary" data-buy="${it.id}">Comprar</button>`;
-    else if (!owned) btn = `<div class="row"><button class="btn small" data-try="${it.id}">Provar</button><button class="btn small primary" data-buy="${it.id}">Comprar</button></div>`;
+    else if (!owned) btn = `<button class="btn small" data-try="${it.id}">Provar</button><button class="btn small primary" data-buy="${it.id}">Comprar</button>`;
     else btn = equipped ? `<button class="btn small ok" data-unequip="${it.id}">Usando ✔</button>` : `<button class="btn small" data-equip="${it.id}">Usar</button>`;
+    btn = `<div class="item-act">${btn}</div>`;
     return `<div class="item ${owned && it.cat !== 'voucher' ? 'owned' : ''} ${it.price >= 1000 ? 'dream' : ''}">${it.price >= 1000 ? '<span class="dream-tag">✨ SONHO</span>' : ''}<div class="pic">${pic}</div><div class="nm">${esc(it.name)}</div><div class="pr">🪙 ${it.price}</div>${btn}</div>`;
   }).join('');
   const pend = (S.redemptions || []).filter(r => !r.delivered);
@@ -2011,7 +2136,7 @@ async function buy(id) {
     S.redemptions.unshift({ id: uid(), voucherId: it.id, name: it.name, price: it.price, date: today(), delivered: false });
   } else {
     S.owned.push(it.id);
-    if (['hat', 'glasses', 'neck', 'bg', 'back', 'skin', 'pet'].includes(it.cat)) S.equipped[it.cat] = it.id;
+    if (['hat', 'glasses', 'neck', 'bg', 'back', 'skin', 'pet', 'fx'].includes(it.cat)) S.equipped[it.cat] = it.id;
   }
   VIEW.tryOn = null;
   save(); applyTheme(); renderMascotMini(); renderShop();

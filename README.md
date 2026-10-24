@@ -42,11 +42,13 @@ Os dados ficam salvos num servidor, então funcionam em qualquer aparelho.
 | Semana não entregue | **−150** (maior que a recompensa) |
 | Exercícios extras | **+2 por acerto** (rodadas de 5, até 3 rodadas pagas por dia) |
 
-Lojinha:
-- 🎩 Chapéus, inclusive capacete de hipismo, tiara de unicórnio e coroa de diamante.
-- 👓 Óculos e 🎀 acessórios.
-- 🦋 Asas e capas, 🎨 cores da Lumi (rosa, azul, menta, **dourada**, **galáxia**) e 🐾 amiguinhos (pintinho, gatinho, pônei, **pandinha**, **dragãozinho**).
-- 🖼️ Fundos e ⭐ 25 adesivos.
+Lojinha (**135 itens**, do mais barato ao mais caro em cada categoria):
+- 🎩 18 chapéus, 👓 9 óculos e 🎀 9 acessórios.
+- 🦋 7 asas e capas, incluindo a mochila a jato.
+- 🎨 10 cores da Lumi, incluindo a **Arco-íris** e a **Galáxia**.
+- 🐾 15 amiguinhos, do pintinho ao **dragãozinho**.
+- ✨ 9 efeitos ao redor da Lumi: corações, notas musicais, neve, arco-íris, **aura dourada**.
+- 🖼️ 13 fundos para o app e ⭐ 45 adesivos para o álbum.
 - 🎟️ Vales de prêmios reais, editáveis pelos pais.
 - Os itens a partir de 1.000 moedas aparecem como **✨ SONHO** (até 3.000).
 
