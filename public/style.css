@@ -956,3 +956,6 @@ body[data-screen=shop] .fb-btn, body[data-screen=setup] .fb-btn { opacity: .4; }
 .notice.ok { background: #ebfbee; border-radius: 10px; padding: 8px 10px; }
 
 .gap-note { display: inline-block; font-size: .78em; font-weight: 800; color: #8a5a00; background: #fff3bf; border-radius: 8px; padding: 0 6px; margin-left: 4px; }
+
+.tt-pad button, .tt-ans input { touch-action: manipulation; -webkit-user-select: none; user-select: none; }
+.tt-ans input { caret-color: transparent; }

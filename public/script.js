@@ -2979,7 +2979,7 @@ function runTimesTables(mode, table, missed) {
     <div class="modal-body tt-play"><div class="tt-top"><span id="tt-n"></span><span id="tt-score"></span></div>
       <div class="tt-bar"><i id="tt-bar"></i></div>
       <div class="tt-q" id="tt-q"></div>
-      <div class="tt-ans"><input id="tt-in" inputmode="numeric" autocomplete="off" maxlength="3" aria-label="Answer"></div>
+      <div class="tt-ans"><input id="tt-in" readonly inputmode="none" tabindex="-1" autocomplete="off" maxlength="3" aria-label="Answer"></div>
       <div class="tt-fb" id="tt-fb"></div>
       <div class="tt-pad">${[1, 2, 3, 4, 5, 6, 7, 8, 9, '⌫', 0, '✔'].map(k => `<button type="button" data-k="${k}">${k}</button>`).join('')}</div></div>`, { wide: true });
   const inp = $('#tt-in', m), bar = $('#tt-bar', m);
@@ -2990,7 +2990,7 @@ function runTimesTables(mode, table, missed) {
     const [a, b] = facts[i]; locked = false;
     $('#tt-n', m).textContent = `${i + 1} / ${facts.length}`; $('#tt-score', m).textContent = `✓ ${res.filter(r => r.ok).length}`;
     $('#tt-q', m).textContent = `${a} × ${b} =`; $('#tt-fb', m).textContent = ''; $('#tt-fb', m).className = 'tt-fb';
-    inp.value = ''; inp.focus({ preventScroll: true });
+    inp.value = '';   // sem foco: o teclado do celular não abre (só o teclado da tela)
     started = performance.now(); tick();
     timer = setTimeout(() => answer(true), secs * 1000);
   };
@@ -3003,7 +3003,7 @@ function runTimesTables(mode, table, missed) {
     i++; setTimeout(show, ok ? 450 : 1300);
   };
   const finish = () => {
-    stop();
+    stop(); document.removeEventListener('keydown', onKey);
     const st = ttState(); const t = today(); const score = res.filter(r => r.ok).length;
     res.forEach(r => { const k = `${Math.min(r.a, r.b)}x${Math.max(r.a, r.b)}`; st.weak[k] = r.ok ? Math.max(0, (st.weak[k] || 0) - 1) : (st.weak[k] || 0) + 1; if (!st.weak[k]) delete st.weak[k]; });
     const key = mode === 'check' ? 'check' : mode === 'table' ? 't' + table : null;
@@ -3025,11 +3025,16 @@ function runTimesTables(mode, table, missed) {
   $$('[data-k]', m).forEach(b => b.onclick = () => {
     const k = b.dataset.k;
     if (k === '⌫') inp.value = inp.value.slice(0, -1); else if (k === '✔') { if (inp.value) answer(); } else if (inp.value.length < 3) inp.value += k;
-    inp.focus({ preventScroll: true });
   });
-  inp.oninput = () => { inp.value = inp.value.replace(/\D/g, '').slice(0, 3); };
-  inp.onkeydown = e => { if (e.key === 'Enter' && inp.value) answer(); };
-  $('[data-quit]', m).onclick = () => { stop(); i = facts.length; closeModal(); if (res.length) finish(); };
+  // teclado físico (computador/tablet com teclado): números, apagar e Enter — sem abrir o teclado do celular
+  const onKey = e => {
+    if (!document.body.contains(m)) { document.removeEventListener('keydown', onKey); return; }
+    if (/^\d$/.test(e.key)) { if (inp.value.length < 3 && !locked) inp.value += e.key; e.preventDefault(); }
+    else if (e.key === 'Backspace') { inp.value = inp.value.slice(0, -1); e.preventDefault(); }
+    else if (e.key === 'Enter') { if (inp.value) answer(); e.preventDefault(); }
+  };
+  document.addEventListener('keydown', onKey);
+  $('[data-quit]', m).onclick = () => { stop(); i = facts.length; document.removeEventListener('keydown', onKey); closeModal(); if (res.length) finish(); };
   setTimeout(show, 300);
 }
 /* ---------- 🙋 Challenge the marking ----------
