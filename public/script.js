@@ -2927,7 +2927,7 @@ function renderWork() {
     <div class="sheet" id="sheet">${cards}</div>${pager}
     <div class="work-foot">
       <button class="btn home-btn" data-act="back" aria-label="Voltar ao início">🏠 <span class="lbl">Início</span></button>
-      ${c.kind === 'day' && !c.rec ? '<button class="btn" data-act="print" aria-label="Imprimir">🖨️ <span class="lbl">Imprimir</span></button>' : ''}
+      <button class="btn" data-act="print" aria-label="Imprimir">🖨️ <span class="lbl">Imprimir</span></button>
       <button class="btn" data-act="key">🔑 Gabarito</button>
       ${c.done ? (last ? '' : '<button class="btn primary" data-pg="1">Próxima ▸</button>') : last ? '<button class="btn primary" data-act="finish">✔ Concluir</button>' : '<button class="btn primary" data-pg="1">Próxima parte ▸</button>'}
     </div></div>`;
@@ -2942,12 +2942,12 @@ function showPassages(d) {
   const ps = dayPassages(d);
   if (d && !d.readQ) { d.readQ = true; questEvent('read'); }
   const pt = ps[0] && SUBJ[ps[0].subject].lang === 'pt';
-  const m = openModal(`<div class="modal-head"><h3>📖 ${pt ? 'Leitura do dia' : 'Today\'s reading'}</h3><button class="btn small" data-close>${pt ? 'Fechar' : 'Close'}</button></div>
+  const m = openModal(`<div class="modal-head"><h3>📖 ${pt ? 'Leitura do dia' : 'Today\'s reading'}</h3><button class="btn small" data-ptext title="${pt ? 'Imprimir a leitura (A4)' : 'Print the reading (A4)'}">🖨️ ${pt ? 'Imprimir' : 'Print'}</button><button class="btn small" data-close>${pt ? 'Fechar' : 'Close'}</button></div>
     <div class="modal-body passage">${ps.map((x, k) => `<div class="pas" id="pas-${k}"><div class="pas-subj">${SUBJ[x.subject].icon} ${esc(SUBJ[x.subject].name)} ${speakBtn('#pas-' + k, SUBJ[x.subject].lang)}</div><h4>${esc(x.title)}</h4>${x.text.split(/\n+/).map(par => `<p>${esc(par)}</p>`).join('')}</div>`).join('')}</div>
-    <div class="modal-foot"><button class="btn" data-ptext>🖨️ ${pt ? 'Imprimir só o texto' : 'Print the text only'}</button><button class="btn primary" data-close>${pt ? 'Li! Vamos às perguntas' : 'Done! To the questions'}</button></div>`, { wide: true, onClose: lumiStop });
+    <div class="modal-foot"><button class="btn" data-ptext>🖨️ ${pt ? 'Imprimir a leitura' : 'Print the reading'}</button><button class="btn primary" data-close>${pt ? 'Li! Vamos às perguntas' : 'Done! To the questions'}</button></div>`, { wide: true, onClose: lumiStop });
   m.style.maxHeight = 'calc(100dvh - 24px)';
   bindSpeak(m);
-  $('[data-ptext]', m).onclick = () => { lumiStop(); closeModal(); printPassages(ps); };
+  $$('[data-ptext]', m).forEach(b => b.onclick = () => { lumiStop(); closeModal(); printPassages(ps, d && d.date ? `${DOW_FULL[d.dow]} ${fmtDM(d.date)} · ${S.name}` : undefined); });
 }
 function passageContext(q, d) {
   const ps = d ? dayPassages(d).filter(x => x.subject === q.subject) : [];
@@ -3014,7 +3014,7 @@ function bindWork(el, c) {
   $('[data-act=back]', el).onclick = () => { save(); show('home'); };
   const h2 = $('[data-act=home2]', el); if (h2) h2.onclick = () => { save(); show('home'); };
   $('[data-act=key]', el).onclick = () => openGabarito(c);
-  const pr = $('[data-act=print]', el); if (pr) pr.onclick = () => openPrintDialog(c.obj.date);
+  const pr = $('[data-act=print]', el); if (pr) pr.onclick = () => printWork(c);
   const ck = $('[data-act=check]', el); if (ck) ck.onclick = () => openCheck(c.obj.date);
   const ps = $('[data-act=passage]', el); if (ps) ps.onclick = () => showPassages(c.obj);
   const fin = $('[data-act=finish]', el);
@@ -3193,7 +3193,7 @@ function showLesson(L, lang, q) {
         ${L.examples.length ? `<div class="ex-box"><b>👀 ${pt ? 'Exemplos' : 'Examples'}</b><ul>${L.examples.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
         ${L.tip ? `<div class="tip-box"><b>💡 ${pt ? 'Macete' : 'Trick'}:</b> ${esc(L.tip)}</div>` : ''}
       </div>
-      <div class="modal-foot">${speakBtn('#lesson-body', lang)}${Server.me ? `<button class="btn small ghost" data-report>🚩</button>` : ''}<span class="grow"></span>
+      <div class="modal-foot">${speakBtn('#lesson-body', lang)}<button class="btn small" data-lprint title="${pt ? 'Imprimir a aulinha (A4)' : 'Print the lesson (A4)'}">🖨️</button>${Server.me ? `<button class="btn small ghost" data-report>🚩</button>` : ''}<span class="grow"></span>
         ${L.practice.length ? `<button class="btn primary" data-practice>${pt ? 'Vamos treinar ▸' : 'Let\'s practise ▸'}</button>` : `<button class="btn primary" data-close>${pt ? 'Entendi!' : 'Got it!'}</button>`}</div>`, { wide: true, onClose: lumiStop });
     m.style.maxHeight = 'calc(100dvh - 24px)';
     bindSpeak(m);
@@ -3201,6 +3201,7 @@ function showLesson(L, lang, q) {
     const r = $('[data-report]', m); if (r) r.onclick = async () => {
       try { await apiCall('/api/report', { method: 'POST', data: { childId: Server.childId, kind: 'aulinha', text: `${q.q || ''}\n---\n${L.title}: ${L.explanation.join(' ')}` } }); toast(pt ? 'Obrigada! Avisei um adulto. 💜' : 'Thanks! An adult was told. 💜'); } catch (e) { toast(e.message); } };
     const pr = $('[data-practice]', m); if (pr) pr.onclick = () => { lumiStop(); practice(0, 0); };
+    const lp = $('[data-lprint]', m); if (lp) lp.onclick = () => { lumiStop(); printLesson(L, lang); };
   };
   const practice = (i, score) => {
     if (i >= L.practice.length) {
@@ -3376,39 +3377,104 @@ function printChunks(qs) {
   return out;
 }
 function dayPrintPages(d) { return dayPassages(d).length + printChunks(d.questions).length; }
+const pDate = () => new Date(today() + 'T12:00:00').toLocaleDateString('pt-BR');
 function passagePageHtml(x, sub) {
-  return `<section class="page"><header class="p-head"><div><div class="p-brand">📖 ${SUBJ[x.subject].lang === 'en' ? 'Reading' : 'Leitura'}</div><div class="p-day">${esc(sub)}</div></div></header>
+  return `<section class="page pas-page"><header class="p-head"><div><div class="p-brand">📖 ${SUBJ[x.subject].lang === 'en' ? 'Reading' : 'Leitura'}</div><div class="p-day">${esc(sub)}</div></div></header>
     <div class="p-passage long"><h2>${esc(x.title)}</h2>${x.text.split(/\n+/).map(par => `<p>${esc(par)}</p>`).join('')}</div></section>`;
 }
-function printPassages(ps) {
-  const root = $('#print-root');
-  root.innerHTML = ps.map(x => passagePageHtml(x, S.name)).join('');
-  setTimeout(() => window.print(), 60);
+// Folhas de perguntas (A4): cabeçalho, perguntas em 1–2 colunas, rodapé; gabarito opcional em folha separada.
+function questionPagesHtml(qs, { brand = '🦉 Estudos com a Lumi', sub, footer, withKey }) {
+  const obj = qs.filter(q => q.type !== 'open').length;
+  const chunks = printChunks(qs); const out = [];
+  chunks.forEach((ch, k) => out.push(`<section class="page"><header class="p-head">
+      <div><div class="p-brand">${brand}</div><div class="p-day">${esc(sub)}${chunks.length > 1 ? ` · folha ${k + 1}/${chunks.length}` : ''}</div></div>
+      ${k === 0 && obj ? `<div class="p-score">Acertos: ____ / ${obj}</div>` : ''}</header>
+    <div class="p-grid">${ch.map(i => printQuestionHtml(qs[i], i)).join('')}</div>
+    ${k === chunks.length - 1 && footer ? `<footer class="p-foot">${footer}</footer>` : ''}</section>`));
+  if (withKey) out.push(`<section class="page key-page"><header class="p-head"><div><div class="p-brand">🔑 Gabarito — para os pais</div><div class="p-day">${esc(sub)}</div></div></header>
+      <div class="p-grid">${qs.map((q, i) => `<div class="p-k"><b>${i + 1}.</b> ${q.type === 'open' ? '<i>[Resposta Livre]</i>' : esc(q.answer)}</div>`).join('')}</div></section>`);
+  return out;
 }
-function printDays(days, withKey) {
+// Monta as folhas fora da tela, ajusta ao A4 (fonte/colunas; texto longo continua na folha seguinte) e abre a impressão.
+function printPages(pages, after) {
   const root = $('#print-root');
-  const pages = [];
-  days.forEach(d => {
-    const obj = d.questions.filter(q => q.type !== 'open').length;
-    const chunks = printChunks(d.questions);
-    dayPassages(d).forEach(x => pages.push(passagePageHtml(x, `${DOW_FULL[d.dow]} ${fmtDM(d.date)} · ${S.name}`)));
-    chunks.forEach((ch, k) => pages.push(`<section class="page"><header class="p-head">
-        <div><div class="p-brand">🦉 Estudos com a Lumi</div><div class="p-day">${esc(DOW_FULL[d.dow])} ${fmtDM(d.date)} · ${esc(S.name)}${chunks.length > 1 ? ` · folha ${k + 1}/${chunks.length}` : ''}</div></div>
-        ${k === 0 ? `<div class="p-score">Acertos: ____ / ${obj}</div>` : ''}</header>
-      <div class="p-grid">${ch.map(i => printQuestionHtml(d.questions[i], i)).join('')}</div>
-      ${k === chunks.length - 1 ? `<footer class="p-foot">Terminou? No app, abra ${esc(DOW_FULL[d.dow].toLowerCase())} e toque em “📄 Corrigir folha”.</footer>` : ''}</section>`));
-    if (withKey) {
-      pages.push(`<section class="page key-page"><header class="p-head"><div><div class="p-brand">🔑 Gabarito — para os pais</div><div class="p-day">${esc(DOW_FULL[d.dow])} ${fmtDM(d.date)}</div></div></header>
-        <div class="p-grid">${d.questions.map((q, i) => `<div class="p-k"><b>${i + 1}.</b> ${q.type === 'open' ? '<i>[Resposta Livre]</i>' : esc(q.answer)}</div>`).join('')}</div></section>`);
-    }
-  });
   root.innerHTML = pages.join('');
   root.classList.add('measuring');
+  paginatePassages(root);
   $$('.p-grid', root).forEach(g => fitGrid(g, { min: 9, max: 15, step: 0.5, colMin: 320, maxCols: 2, allowOverflow: false }));
   root.classList.remove('measuring');
+  setTimeout(() => { window.print(); if (after) after(); }, 60);
+}
+function paginatePassages(root) {
+  const fits = pg => pg.scrollHeight <= pg.clientHeight + 1;
+  $$('.page.pas-page', root).forEach(first => {
+    const body0 = $('.p-passage', first);
+    for (let fs = 13; !fits(first) && fs > 11.5; fs -= 0.5) body0.style.fontSize = (fs - 0.5) + 'px';   // primeiro tenta caber diminuindo um pouco a letra
+    let page = first, guard = 0;
+    while (!fits(page) && guard++ < 12) {
+      const body = $('.p-passage', page);
+      const next = page.cloneNode(true); const nb = $('.p-passage', next);
+      $$('h2, p', nb).forEach(x => x.remove());
+      const moved = [];
+      while (!fits(page) && $$('p', body).length > 1) { const lastP = $$('p', body).pop(); lastP.remove(); moved.unshift(lastP); }
+      if (!fits(page)) {   // um parágrafo só, longo demais: continua por frases na folha seguinte
+        const p0 = $$('p', body).pop();
+        const sent = p0.textContent.match(/[^.!?…]+[.!?…]+["”»')]*\s*|[^.!?…]+$/g) || [p0.textContent];
+        const rest = [];
+        while (!fits(page) && sent.length > 1) { rest.unshift(sent.pop()); p0.textContent = sent.join(''); }
+        if (rest.length) { const np = document.createElement('p'); np.className = 'cont'; np.textContent = rest.join('').trim(); moved.unshift(np); }
+      }
+      if (!moved.length) break;
+      moved.forEach(x => nb.appendChild(x));
+      const day = $('.p-day', next); if (day) day.textContent += /Reading/.test($('.p-brand', next).textContent) ? ' · continued' : ' · continuação';
+      page.after(next); page = next;
+    }
+  });
+}
+function printPassages(ps, sub) {
+  printPages(ps.map(x => passagePageHtml(x, sub || `${S.name} · ${pDate()}`)));
+}
+function printDays(days, withKey) {
+  const pages = [];
+  days.forEach(d => {
+    const sub = `${DOW_FULL[d.dow]} ${fmtDM(d.date)} · ${S.name}`;
+    dayPassages(d).forEach(x => pages.push(passagePageHtml(x, sub)));
+    pages.push(...questionPagesHtml(d.questions, { sub, withKey, footer: `Terminou? No app, abra ${esc(DOW_FULL[d.dow].toLowerCase())} e toque em “📄 Corrigir folha”.` }));
+  });
   days.forEach(d => { d.printed = true; });
   save();
-  setTimeout(() => { window.print(); if (currentScreen === 'work') renderWork(); }, 60);
+  printPages(pages, () => { if (currentScreen === 'work') renderWork(); });
+}
+// Extras, Livro extra, Reforço e Recuperação: imprime o texto (se houver) e as perguntas, com gabarito opcional.
+function openPrintWork(c) {
+  const ps = dayPassages(c.obj);
+  const m = openModal(`<div class="modal-head"><h3>🖨️ Imprimir</h3><button class="btn small" data-close>Fechar</button></div>
+    <div class="modal-body"><p style="margin:0 0 8px"><b>${esc(c.title)}</b> · folhas A4</p><div class="radio-col">
+      <label><input type="radio" name="pw" value="all" checked> ${ps.length ? 'Texto e perguntas' : 'Perguntas'} (${ps.length + printChunks(c.questions).length} folha${ps.length + printChunks(c.questions).length > 1 ? 's' : ''})</label>
+      ${ps.length ? '<label><input type="radio" name="pw" value="text"> Só o texto de leitura</label>' : ''}
+      <label class="chk"><input type="checkbox" id="pkey"> Incluir gabarito em folha separada (para os pais)</label></div>
+      <p class="tiny muted">Depois de fazer no papel, passe as respostas para o app e toque em <b>✔ Concluir</b> — ou corrija com o gabarito.</p></div>
+    <div class="modal-foot"><button class="btn primary" id="pgo">🖨️ Imprimir</button></div>`);
+  $('#pgo', m).onclick = () => {
+    const which = $('input[name=pw]:checked', m).value; const withKey = $('#pkey', m).checked;
+    const sub = `${c.title.replace(/^\S+\s/, '')} · ${S.name} · ${pDate()}`;
+    closeModal();
+    if (which === 'text') { printPassages(ps, sub); return; }
+    printPages([...ps.map(x => passagePageHtml(x, sub)), ...questionPagesHtml(c.questions, { sub, withKey, footer: 'Terminou? Passe as respostas para o app e toque em “✔ Concluir”.' })]);
+  };
+}
+function printWork(c) { if (c.kind === 'day' && !c.rec) openPrintDialog(c.obj.date); else openPrintWork(c); }
+// Aulinha: explicação, exemplos, macete e o treino, numa folha A4 (respostas do treino no rodapé)
+function printLesson(L, lang) {
+  const pt = lang === 'pt';
+  const qs = (L.practice || []).map(q => Object.assign({ lang, subject: q.subject }, q));
+  const page = `<section class="page lesson-page"><header class="p-head"><div><div class="p-brand">🎓 ${pt ? 'Aulinha da Lumi' : 'Lumi\'s mini-lesson'}</div><div class="p-day">${esc(S.name)} · ${pDate()}</div></div></header>
+    <div class="p-lesson"><h2>${esc(L.title)}</h2>${L.explanation.map(x => `<p>${esc(x)}</p>`).join('')}
+      ${L.examples.length ? `<div class="p-ex"><b>👀 ${pt ? 'Exemplos' : 'Examples'}</b><ul>${L.examples.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+      ${L.tip ? `<div class="p-tip"><b>💡 ${pt ? 'Macete' : 'Trick'}:</b> ${esc(L.tip)}</div>` : ''}</div>
+    ${qs.length ? `<div class="p-sec">✏️ ${pt ? 'Treino' : 'Practice'}</div><div class="p-grid">${qs.map(printQuestionHtml).join('')}</div>
+      <footer class="p-foot p-ans">${pt ? 'Respostas' : 'Answers'}: ${qs.map((q, i) => `${i + 1}) ${esc(q.type === 'open' ? (pt ? 'livre' : 'free') : q.answer)}`).join(' · ')}</footer>` : ''}</section>`;
+  printPages([page]);
 }
 
 /* ---------- Corrigir folha feita no papel ---------- */
