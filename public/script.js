@@ -2172,7 +2172,14 @@ function pData(box) {
     catch (err) { toast('Arquivo de backup inválido'); }
   };
   $('#rs-week').onclick = async () => { if (await confirmBox('Apagar a semana atual?', 'As tarefas e respostas desta semana serão perdidas. As moedas ficam.', 'Apagar', true)) { S.week = null; save(); toast('Semana apagada'); } };
-  $('#rs-all').onclick = async () => { if (await confirmBox('Apagar TUDO?', 'Moedas, compras, semanas e ajustes serão apagados deste navegador.', 'Apagar tudo', true)) { localStorage.removeItem(STORE_KEY); location.reload(); } };
+  $('#rs-all').onclick = async () => {
+    const where = Server.on ? 'do servidor e deste aparelho (os outros aparelhos também começam do zero)' : 'deste navegador';
+    if (!(await confirmBox('Apagar TUDO?', `Moedas, compras, semanas e ajustes serão apagados ${where}. Não dá para desfazer.`, 'Apagar tudo', true))) return;
+    try { if (Server.on && Server.code) { clearTimeout(Server.timer); Server.dirty = false; await apiCall('/api/state', { method: 'DELETE' }); } }
+    catch (e) { toast(`Não consegui apagar no servidor: ${e.message}`); return; }
+    try { localStorage.removeItem(STORE_KEY); } catch (e) { /* ignora */ }
+    location.reload();
+  };
 }
 
 /* =========================================================================
