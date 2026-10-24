@@ -1,0 +1,717 @@
+{
+  "version": 1,
+  "year": "Y8",
+  "stage": "ks3",
+  "subject": "comp",
+  "level": null,
+  "language": "en",
+  "source": "England National Curriculum — Computing programmes of study: key stage 3, DfE 2013 — Year 8",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Cyber security threats: malware",
+      "objectives": [
+        "Describe viruses, worms, trojans and ransomware",
+        "Explain how anti-malware software protects devices"
+      ],
+      "keywords": [
+        "malware",
+        "virus",
+        "worm",
+        "trojan",
+        "ransomware"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Social engineering and protecting data",
+      "objectives": [
+        "Explain social engineering techniques",
+        "Describe ways to protect personal data"
+      ],
+      "keywords": [
+        "social engineering",
+        "shoulder surfing",
+        "blagging",
+        "firewall",
+        "backup"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Python: strings and string handling",
+      "objectives": [
+        "Use string indexing and slicing",
+        "Apply string methods such as upper and len"
+      ],
+      "keywords": [
+        "string",
+        "index",
+        "slice",
+        "len",
+        "concatenation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Python: while loops",
+      "objectives": [
+        "Use condition-controlled loops",
+        "Validate user input with a loop"
+      ],
+      "keywords": [
+        "while loop",
+        "condition-controlled",
+        "validation",
+        "infinite loop",
+        "condition"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Python: lists",
+      "objectives": [
+        "Create, access and modify lists",
+        "Loop through lists"
+      ],
+      "keywords": [
+        "list",
+        "index",
+        "append",
+        "element",
+        "traverse"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Python: functions",
+      "objectives": [
+        "Define and call functions",
+        "Use parameters to reuse code"
+      ],
+      "keywords": [
+        "function",
+        "def",
+        "parameter",
+        "call",
+        "reuse"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Debugging and testing programs",
+      "objectives": [
+        "Identify syntax, runtime and logic errors",
+        "Use test plans"
+      ],
+      "keywords": [
+        "syntax error",
+        "logic error",
+        "runtime error",
+        "test plan",
+        "debug"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Python project: text adventure game",
+      "objectives": [
+        "Plan a program using decomposition",
+        "Implement with functions, lists and loops"
+      ],
+      "keywords": [
+        "project",
+        "decomposition",
+        "text adventure",
+        "function",
+        "list"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Boolean logic: AND, OR and NOT",
+      "objectives": [
+        "Evaluate Boolean expressions",
+        "Use logical operators in programs"
+      ],
+      "keywords": [
+        "Boolean",
+        "AND",
+        "OR",
+        "NOT",
+        "true",
+        "false"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Logic gates and truth tables",
+      "objectives": [
+        "Draw logic gate diagrams",
+        "Complete truth tables for simple circuits"
+      ],
+      "keywords": [
+        "logic gate",
+        "truth table",
+        "input",
+        "output",
+        "circuit"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Representing sound",
+      "objectives": [
+        "Explain sampling, sample rate and bit depth",
+        "Describe how these affect file size and quality"
+      ],
+      "keywords": [
+        "sound",
+        "sampling",
+        "sample rate",
+        "bit depth",
+        "analogue",
+        "digital"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "Binary addition",
+      "objectives": [
+        "Add two 8-bit binary numbers",
+        "Explain overflow"
+      ],
+      "keywords": [
+        "binary addition",
+        "carry",
+        "overflow",
+        "8-bit",
+        "bit"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Hexadecimal",
+      "objectives": [
+        "Convert between hexadecimal, binary and denary",
+        "Explain why programmers use hex"
+      ],
+      "keywords": [
+        "hexadecimal",
+        "base 16",
+        "nibble",
+        "colour code",
+        "conversion"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Data compression",
+      "objectives": [
+        "Distinguish lossy and lossless compression",
+        "Apply run-length encoding"
+      ],
+      "keywords": [
+        "compression",
+        "lossy",
+        "lossless",
+        "run-length encoding",
+        "file size"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Term 1 review: security, Python and data representation",
+      "objectives": [
+        "Revisit key concepts and programming skills",
+        "Practise conversions and code tracing"
+      ],
+      "keywords": [
+        "review",
+        "Python",
+        "binary",
+        "hexadecimal",
+        "logic"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Searching algorithms: linear search",
+      "objectives": [
+        "Describe how linear search works",
+        "Implement linear search in Python"
+      ],
+      "keywords": [
+        "linear search",
+        "algorithm",
+        "list",
+        "item",
+        "comparison"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Searching algorithms: binary search",
+      "objectives": [
+        "Describe how binary search works",
+        "Compare linear and binary search"
+      ],
+      "keywords": [
+        "binary search",
+        "sorted list",
+        "midpoint",
+        "efficiency",
+        "comparison"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Sorting algorithms: bubble sort",
+      "objectives": [
+        "Trace a bubble sort",
+        "Explain passes and swaps"
+      ],
+      "keywords": [
+        "bubble sort",
+        "pass",
+        "swap",
+        "sorted",
+        "trace"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Sorting algorithms: insertion and merge sort",
+      "objectives": [
+        "Trace insertion and merge sorts",
+        "Compare sorting algorithms"
+      ],
+      "keywords": [
+        "insertion sort",
+        "merge sort",
+        "divide and conquer",
+        "efficiency",
+        "compare"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "The CPU and the fetch–decode–execute cycle",
+      "objectives": [
+        "Describe the fetch–decode–execute cycle",
+        "Name the main CPU components"
+      ],
+      "keywords": [
+        "fetch",
+        "decode",
+        "execute",
+        "ALU",
+        "control unit",
+        "register"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Memory and storage",
+      "objectives": [
+        "Compare primary and secondary storage",
+        "Compare magnetic, optical and solid-state storage"
+      ],
+      "keywords": [
+        "primary storage",
+        "secondary storage",
+        "SSD",
+        "hard disk",
+        "optical"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Networks: hardware and topologies",
+      "objectives": [
+        "Describe routers, switches and network cards",
+        "Compare star and mesh topologies"
+      ],
+      "keywords": [
+        "router",
+        "switch",
+        "NIC",
+        "star topology",
+        "mesh topology"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Protocols and packet switching",
+      "objectives": [
+        "Explain how data travels in packets",
+        "Describe protocols such as TCP/IP and HTTP"
+      ],
+      "keywords": [
+        "packet",
+        "protocol",
+        "TCP/IP",
+        "HTTP",
+        "IP address"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Databases: tables, records and fields",
+      "objectives": [
+        "Describe the structure of a database",
+        "Choose suitable data types for fields"
+      ],
+      "keywords": [
+        "database",
+        "table",
+        "record",
+        "field",
+        "primary key"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Database searches and queries",
+      "objectives": [
+        "Search and sort data in a database",
+        "Write simple queries"
+      ],
+      "keywords": [
+        "query",
+        "search",
+        "sort",
+        "criteria",
+        "filter"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Physical computing with the micro:bit",
+      "objectives": [
+        "Program inputs and outputs on a micro:bit",
+        "Use sensors in programs"
+      ],
+      "keywords": [
+        "micro:bit",
+        "sensor",
+        "LED",
+        "input",
+        "output"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mid-year exams: Year 8 computing",
+      "objectives": [
+        "Answer questions on algorithms, hardware and networks",
+        "Trace and write code"
+      ],
+      "keywords": [
+        "exam",
+        "algorithm",
+        "CPU",
+        "network",
+        "Python"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Physical computing project",
+      "objectives": [
+        "Design and build a micro:bit project to solve a problem",
+        "Test and evaluate it"
+      ],
+      "keywords": [
+        "project",
+        "prototype",
+        "sensor",
+        "test",
+        "evaluate"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Data science: collecting and visualising data",
+      "objectives": [
+        "Collect and clean data",
+        "Create charts to show patterns"
+      ],
+      "keywords": [
+        "data science",
+        "dataset",
+        "clean data",
+        "visualisation",
+        "pattern"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Artificial intelligence and machine learning",
+      "objectives": [
+        "Explain how machine learning uses training data",
+        "Train a simple classifier"
+      ],
+      "keywords": [
+        "artificial intelligence",
+        "machine learning",
+        "training data",
+        "classifier",
+        "model"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Ethics of AI: bias and fairness",
+      "objectives": [
+        "Explain how bias enters AI systems",
+        "Discuss fairness and accountability"
+      ],
+      "keywords": [
+        "bias",
+        "fairness",
+        "ethics",
+        "accountability",
+        "algorithm"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "User experience and app design",
+      "objectives": [
+        "Design an app interface with wireframes",
+        "Apply accessibility principles"
+      ],
+      "keywords": [
+        "UX",
+        "user interface",
+        "wireframe",
+        "accessibility",
+        "prototype"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Vector graphics and digital design",
+      "objectives": [
+        "Create vector graphics",
+        "Compare vector and bitmap images"
+      ],
+      "keywords": [
+        "vector graphic",
+        "bitmap",
+        "shape",
+        "scalable",
+        "layer"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Spreadsheets for data analysis: lookups and pivot tables",
+      "objectives": [
+        "Use lookup functions to find data",
+        "Summarise data with pivot tables"
+      ],
+      "keywords": [
+        "VLOOKUP",
+        "XLOOKUP",
+        "pivot table",
+        "filter",
+        "data analysis"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Legal issues: copyright and data protection",
+      "objectives": [
+        "Explain copyright and Creative Commons",
+        "Describe data protection laws such as GDPR and LGPD"
+      ],
+      "keywords": [
+        "copyright",
+        "Creative Commons",
+        "data protection",
+        "GDPR",
+        "LGPD"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "End-of-year exams: Year 8 computing",
+      "objectives": [
+        "Answer questions covering the year",
+        "Write algorithms in pseudocode"
+      ],
+      "keywords": [
+        "exam",
+        "pseudocode",
+        "searching",
+        "sorting",
+        "databases"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Year 8 review: algorithms and next steps",
+      "objectives": [
+        "Reflect on exam performance",
+        "Practise tracing searching and sorting algorithms"
+      ],
+      "keywords": [
+        "review",
+        "trace",
+        "algorithm",
+        "targets",
+        "reflection"
+      ],
+      "spelling": []
+    }
+  ]
+}

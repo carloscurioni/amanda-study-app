@@ -1,0 +1,714 @@
+{
+  "version": 1,
+  "year": "Y9",
+  "stage": "ks3",
+  "subject": "comp",
+  "level": null,
+  "language": "en",
+  "source": "England National Curriculum — Computing programmes of study: key stage 3, DfE 2013 — Year 9",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Python: nested selection and logical operators",
+      "objectives": [
+        "Write nested if statements",
+        "Combine conditions with and, or and not"
+      ],
+      "keywords": [
+        "nested selection",
+        "logical operator",
+        "and",
+        "or",
+        "not"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Python: lists and dictionaries",
+      "objectives": [
+        "Use lists and dictionaries to store data",
+        "Choose the right data structure"
+      ],
+      "keywords": [
+        "data structure",
+        "list",
+        "dictionary",
+        "key",
+        "value"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Python: file handling",
+      "objectives": [
+        "Read from and write to text files",
+        "Process data from a file"
+      ],
+      "keywords": [
+        "file handling",
+        "read",
+        "write",
+        "text file",
+        "open"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Subroutines: parameters and return values",
+      "objectives": [
+        "Write functions that return values",
+        "Explain local and global scope"
+      ],
+      "keywords": [
+        "subroutine",
+        "return value",
+        "local variable",
+        "global variable",
+        "scope"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Robust programs: validation and defensive design",
+      "objectives": [
+        "Apply range, type and presence checks",
+        "Handle errors with try and except"
+      ],
+      "keywords": [
+        "validation",
+        "range check",
+        "presence check",
+        "exception",
+        "defensive design"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Using libraries and modular programming",
+      "objectives": [
+        "Import and use modules such as random and math",
+        "Split a program into modules"
+      ],
+      "keywords": [
+        "library",
+        "module",
+        "import",
+        "random",
+        "modular"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Programming project: analysis and design",
+      "objectives": [
+        "Write requirements and success criteria",
+        "Design with pseudocode and flowcharts"
+      ],
+      "keywords": [
+        "requirements",
+        "success criteria",
+        "pseudocode",
+        "design",
+        "flowchart"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Programming project: implementation",
+      "objectives": [
+        "Develop a solution iteratively",
+        "Comment and structure code clearly"
+      ],
+      "keywords": [
+        "implementation",
+        "iterative development",
+        "comments",
+        "code structure",
+        "version"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Programming project: testing and evaluation",
+      "objectives": [
+        "Test with normal, boundary and erroneous data",
+        "Evaluate against success criteria"
+      ],
+      "keywords": [
+        "test data",
+        "boundary data",
+        "erroneous data",
+        "evaluation",
+        "success criteria"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Algorithm efficiency",
+      "objectives": [
+        "Compare algorithms by number of steps",
+        "Explain why efficiency matters"
+      ],
+      "keywords": [
+        "efficiency",
+        "time",
+        "steps",
+        "comparison",
+        "scalability"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Pseudocode and trace tables",
+      "objectives": [
+        "Write algorithms in pseudocode",
+        "Use trace tables to find errors"
+      ],
+      "keywords": [
+        "pseudocode",
+        "trace table",
+        "dry run",
+        "variable",
+        "output"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "Object-oriented programming: an introduction",
+      "objectives": [
+        "Explain classes, objects and attributes",
+        "Create a simple class in Python"
+      ],
+      "keywords": [
+        "class",
+        "object",
+        "attribute",
+        "method",
+        "instance"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Web programming with JavaScript",
+      "objectives": [
+        "Add interactivity to a web page with JavaScript",
+        "Handle events such as clicks"
+      ],
+      "keywords": [
+        "JavaScript",
+        "event",
+        "function",
+        "DOM",
+        "interactivity"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "Computer architecture: von Neumann",
+      "objectives": [
+        "Describe the von Neumann architecture",
+        "Explain the roles of key registers"
+      ],
+      "keywords": [
+        "von Neumann",
+        "register",
+        "program counter",
+        "accumulator",
+        "memory address"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Term 1 review: programming and architecture",
+      "objectives": [
+        "Revisit programming techniques and theory",
+        "Practise code-writing questions"
+      ],
+      "keywords": [
+        "review",
+        "Python",
+        "pseudocode",
+        "architecture",
+        "testing"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "CPU performance: clock speed, cores and cache",
+      "objectives": [
+        "Explain factors affecting CPU performance",
+        "Compare processor specifications"
+      ],
+      "keywords": [
+        "clock speed",
+        "core",
+        "cache",
+        "gigahertz",
+        "performance"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Embedded systems",
+      "objectives": [
+        "Define embedded systems",
+        "Give examples in everyday devices"
+      ],
+      "keywords": [
+        "embedded system",
+        "microcontroller",
+        "dedicated function",
+        "device",
+        "sensor"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Operating systems and utility software",
+      "objectives": [
+        "Describe the functions of an operating system",
+        "Explain utilities such as defragmentation and encryption"
+      ],
+      "keywords": [
+        "operating system",
+        "memory management",
+        "multitasking",
+        "utility",
+        "driver"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Programming languages and translators",
+      "objectives": [
+        "Compare high-level and low-level languages",
+        "Distinguish compilers and interpreters"
+      ],
+      "keywords": [
+        "high-level",
+        "low-level",
+        "compiler",
+        "interpreter",
+        "assembler"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Calculating file sizes",
+      "objectives": [
+        "Calculate image and sound file sizes",
+        "Convert between storage units"
+      ],
+      "keywords": [
+        "file size",
+        "resolution",
+        "colour depth",
+        "sample rate",
+        "metadata"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Binary shifts and overflow",
+      "objectives": [
+        "Perform left and right binary shifts",
+        "Explain overflow errors"
+      ],
+      "keywords": [
+        "binary shift",
+        "left shift",
+        "right shift",
+        "overflow",
+        "multiplication"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Character sets: ASCII and Unicode",
+      "objectives": [
+        "Compare ASCII and Unicode",
+        "Explain why Unicode supports many languages"
+      ],
+      "keywords": [
+        "ASCII",
+        "Unicode",
+        "character set",
+        "bits per character",
+        "encoding"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Encryption and ciphers",
+      "objectives": [
+        "Use a Caesar cipher",
+        "Explain symmetric and public-key encryption"
+      ],
+      "keywords": [
+        "encryption",
+        "Caesar cipher",
+        "key",
+        "plaintext",
+        "ciphertext"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Network security",
+      "objectives": [
+        "Describe firewalls, encryption and authentication",
+        "Explain penetration testing"
+      ],
+      "keywords": [
+        "firewall",
+        "authentication",
+        "penetration testing",
+        "access control",
+        "encryption"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "The internet: DNS, hosting and the cloud",
+      "objectives": [
+        "Explain how DNS works",
+        "Evaluate cloud computing"
+      ],
+      "keywords": [
+        "DNS",
+        "web hosting",
+        "cloud computing",
+        "server",
+        "domain name"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Relational databases and SQL",
+      "objectives": [
+        "Explain relational databases",
+        "Write SELECT, FROM, WHERE queries"
+      ],
+      "keywords": [
+        "relational database",
+        "SQL",
+        "SELECT",
+        "WHERE",
+        "foreign key"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Mid-year exams: Year 9 computing",
+      "objectives": [
+        "Answer IGCSE-style theory and programming questions",
+        "Write and trace code"
+      ],
+      "keywords": [
+        "exam",
+        "SQL",
+        "encryption",
+        "architecture",
+        "programming"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Cyber attacks: SQL injection, DDoS and brute force",
+      "objectives": [
+        "Describe common attack methods",
+        "Explain how to prevent them"
+      ],
+      "keywords": [
+        "SQL injection",
+        "DDoS",
+        "brute force",
+        "attack",
+        "prevention"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Ethical, legal and environmental impacts",
+      "objectives": [
+        "Discuss the impacts of technology on society",
+        "Explain e-waste and energy use"
+      ],
+      "keywords": [
+        "ethics",
+        "legislation",
+        "e-waste",
+        "digital divide",
+        "privacy"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Emerging technologies: AI and automation",
+      "objectives": [
+        "Describe current uses of AI and robotics",
+        "Evaluate impacts on jobs"
+      ],
+      "keywords": [
+        "AI",
+        "automation",
+        "robotics",
+        "emerging technology",
+        "impact"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Generative AI: how it works and responsible use",
+      "objectives": [
+        "Explain how large language models generate text",
+        "Use AI tools responsibly and critically"
+      ],
+      "keywords": [
+        "generative AI",
+        "large language model",
+        "prompt",
+        "hallucination",
+        "academic integrity"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Data and privacy: big data and surveillance",
+      "objectives": [
+        "Explain big data and how companies use it",
+        "Discuss privacy and surveillance"
+      ],
+      "keywords": [
+        "big data",
+        "surveillance",
+        "cookies",
+        "tracking",
+        "consent"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Capstone project: solving a real problem",
+      "objectives": [
+        "Plan and build a solution to a real-world problem",
+        "Present and evaluate the product"
+      ],
+      "keywords": [
+        "capstone",
+        "real-world problem",
+        "product",
+        "presentation",
+        "evaluation"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Wired and wireless networks: bandwidth and latency",
+      "objectives": [
+        "Compare wired and wireless connections",
+        "Explain factors affecting network performance"
+      ],
+      "keywords": [
+        "bandwidth",
+        "latency",
+        "Wi-Fi",
+        "Ethernet",
+        "performance"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "IGCSE preparation: exam skills in computer science",
+      "objectives": [
+        "Answer command-word questions",
+        "Write algorithms under timed conditions"
+      ],
+      "keywords": [
+        "IGCSE",
+        "command word",
+        "algorithm",
+        "timed practice",
+        "mark scheme"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "End-of-year exams: Year 9 computing",
+      "objectives": [
+        "Answer IGCSE-style papers covering KS3",
+        "Write and debug code"
+      ],
+      "keywords": [
+        "exam",
+        "IGCSE",
+        "theory",
+        "programming",
+        "algorithm"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Year 9 review and readiness for IGCSE computer science",
+      "objectives": [
+        "Reflect on strengths and weaknesses",
+        "Set targets for IGCSE study"
+      ],
+      "keywords": [
+        "review",
+        "IGCSE",
+        "targets",
+        "revision",
+        "programming"
+      ],
+      "spelling": []
+    }
+  ]
+}
