@@ -44,6 +44,11 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
 ## 1. Como a Amanda usa
 
 1. **📝 Minha semana:** o estudante escolhe o **ano escolar** e o app mostra as matérias da etapa. Depois abre a seção de cada matéria e escreve do jeito dele, ou fala pelo microfone do teclado. Por exemplo, em BSS: *"estamos aprendendo sobre as bacias hidrográficas"*.
+   - **🪄 Preencher pela varinha:** preenche cada matéria com o tópico, os objetivos e as palavras-chave da **semana letiva** atual, segundo um currículo de referência pré-planejado semana a semana. Tudo continua editável.
+     - **Fontes:** English National Curriculum e BNCC até o Year 9, Cambridge IGCSE no Year 10–11, IB Diploma (SL/HL) no Year 12–13 e IPC no Primary. Cada fonte está em `data/curriculum/SOURCES.md`.
+     - **Cálculo da semana:** o app usa o início do ano letivo e as semanas de férias configurados em Ajustes.
+     - **Escola adiantada ou atrasada?** Use **◂ semana N ▸**. É uma referência: vale ajustar ao que a escola realmente passou.
+   - **💬 Dúvida, sugestão ou problema:** botão pequeno no canto da tela. A mensagem vai para o administrador do app (ver Passo 4).
 
    | Ano | Brasil | Etapa | Matérias sugeridas |
    |---|---|---|---|
@@ -96,18 +101,36 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
 
 | Evento | Moedas |
 |---|---|
-| Semana entregue (todos os dias feitos, até sexta) | **+100** numa semana completa; proporcional aos dias se a semana começou no meio (planejada na sexta = só 1 dia = +14) |
+| Tarefa do dia concluída **no próprio dia** | **+10** na hora (atrasada dentro da semana: +5; ajustável, 0 desliga) |
+| Semana entregue (todos os dias feitos, até sexta) — bônus | **+100** numa semana completa; proporcional aos dias se a semana começou no meio (planejada na sexta = só 1 dia = +14) |
 | Semana não entregue | **−150** (maior que a recompensa; também proporcional) |
 | ⏳ Recuperação: dias que faltaram, feitos até a sexta seguinte | **metade da recompensa** (+50 se recuperar todos, dividido entre os dias) |
 | Exercícios extras | **+2 por acerto** (rodadas de 5, até 3 rodadas pagas por dia) |
 | Jogos da Oficina de palavras | **+3 por jogo** (até 5 por dia) |
+| 📜 Missões (3 do dia + 2 da semana) | fácil **+5–10**, média **+20–30**, difícil **+50–80**; missão de compra = valor gasto **+50** |
+
+A tela inicial mostra o bônus pendente: *"🎁 +100 na sexta 30/10 se completar todos os dias (2 de 7 feitos)"*.
+
+**📜 Missões:** sorteadas por dia e por semana, para cada criança, e não mudam ao recarregar. Exemplos: "Conclua a tarefa de hoje", "Acerte 100% nos extras", "Use o ? para aprender algo novo", "Mantenha a sequência por 3 dias". Às vezes aparece "Compre 2 ovos hoje", que devolve o valor gasto + 50. Toque em **Resgatar** para receber. Os pais ligam ou desligam as missões (e as de compra) em Ajustes.
 
 Lojinha (do mais barato ao mais caro em cada categoria):
-- 🐾 **Trocar de bicho:** a Lumi pode virar 🐶 **Cachorrinho** (2.000), 🐱 **Gatinho** (2.000) ou 🐼 **Pandinha** (2.500). São desenhos originais, e chapéus, óculos, colares e cores servem em todos. Mais bichos virão aos poucos.
+- 🥚 **Ovos:**
+  - **Ovo de amiguinho** (250): choca um amiguinho surpresa, com chances à mostra: Comum 55%, Raro 28%, Épico 14% e Lendário 3% (o Dragãozinho e o Unicórnio).
+  - **Ovo de mascote** (600): libera um mascote para trocar a Lumi. São 7, com chances iguais: Pipoca 🐶, Mel 🐱, Bambu 🐼, Nina 🐰, Faísca 🦊, Picolé 🐧 e Brontinho 🦖.
+  - Pode vir repetido (×2). O ovo treme, racha e revela.
+- 📖 **Minha coleção:** amiguinhos e mascotes, silhuetas dos que faltam e contagem (ex.: 7/21). Tocar num mascote troca quem aparece no app, e o nome muda junto. As roupinhas servem em todos os mascotes.
+- 💌 **Recadinho secreto** (500, ajustável): os pais escrevem recadinhos em Área dos pais → 💌 Recadinhos.
+  - A criança compra um envelope, que sorteia um recadinho ainda não lido (nunca repete) e abre com animação. Ela relê os que já abriu em 📬 Meus recadinhos.
+  - Sem recadinhos guardados, o envelope aparece como "Em breve".
+  - Os textos ficam no servidor, fora do aparelho da criança, até a compra.
+- 🎉 **Reações:** aparecem quando a criança gabarita, e cada uma tem botão **Testar**. Ela equipa 1 de cada:
+  - **dancinhas do mascote:** Pulinhos, Giro, Robô, Dancinha estilo Macarena e Moonwalk;
+  - **musiquinhas originais curtas:** 🔇 desliga o som;
+  - **confetes:** estrelas, corações, arco-íris e fogos.
+  - O confete colorido é grátis sempre que gabaritar.
 - 🎩 18 chapéus, 👓 9 óculos e 🎀 9 acessórios.
 - 🦋 7 asas e capas, incluindo a mochila a jato.
 - 🎨 10 cores da Lumi, incluindo a **Arco-íris** e a **Galáxia**.
-- 🐾 15 amiguinhos, do pintinho ao **dragãozinho**.
 - ✨ 9 efeitos ao redor da Lumi: corações, notas musicais, neve, arco-íris, **aura dourada**.
 - 🖼️ 13 fundos para o app e ⭐ 45 adesivos para o álbum.
 - 🎟️ **24 vales de prêmios reais**, de 150 a 10.000 moedas: escolher as músicas do carro, pizza, livro novo, dormir mais tarde, cinema, R$ 20, jogo novo, Dia do SIM, ingresso para show/jogo, escolher a viagem do fim de semana… Os pais editam, apagam e criam vales.
@@ -148,6 +171,13 @@ Vocês precisam de duas contas: **Anthropic** (API do Claude, pré-paga) e **Clo
 - Faça o **primeiro acesso** (seção 0) e depois entre no tablet ou celular dela com o seu e-mail.
 - No iPad/iPhone: **Compartilhar → Adicionar à Tela de Início** para virar um ícone de app.
 - A cada `git push` neste repositório, a Cloudflare publica a nova versão sozinha.
+
+### Passo 4 (opcional) — E-mail das mensagens do botão 💬
+As mensagens sempre ficam em Área dos pais → **💬 Mensagens** (só o admin vê). Para recebê-las também por e-mail:
+1. Crie uma conta grátis em **resend.com** (com o mesmo e-mail de atendimento, ex.: carloscurioni@gmail.com) e gere uma **API key** em *API Keys*.
+2. No computador, dentro da pasta do projeto: `npx wrangler secret put RESEND_API_KEY` e cole a chave. Ou, no painel da Cloudflare: Worker → *Settings* → *Variables and Secrets* → **Add** → tipo **Secret**.
+3. Sem domínio próprio, o Resend envia de `onboarding@resend.dev` **só para o e-mail da sua conta Resend**. Para mandar para outro endereço, verifique um domínio no Resend e crie a variável `RESEND_FROM` (ex.: `Lumi <lumi@seudominio.com>`).
+4. O endereço que recebe é configurável no Admin → 💬 Mensagens (padrão carloscurioni@gmail.com). Limite: até 20 mensagens e 10 e-mails por família por dia.
 
 ### E o link do GitHub Pages?
 O link antigo (`carloscurioni.github.io/amanda-study-app`) continua funcionando como **versão sem servidor**: sem Claude, com perguntas do gerador interno e dados só naquele aparelho. Quando a versão da Cloudflare estiver no ar, desligue-o em **Settings → Pages → Source → None**, para não haver duas versões.
@@ -191,7 +221,13 @@ printf 'FAMILY_CODE=teste\nANTHROPIC_API_KEY=sk-ant-...\n' > .dev.vars   # não 
 npm run dev            # http://localhost:8787
 ```
 
-Para testar outra data, acrescente `?hoje=2026-10-30` ao endereço (simula uma sexta).
+Para testar outra data, acrescente `?hoje=2026-10-30` ao endereço (simula uma sexta). Roteiros de teste manual: `docs/TESTES-MANUAIS.md`.
+
+**Currículo de referência (varinha):**
+- **Onde ficam:** os arquivos estão em `data/curriculum/<etapa>/<ano>-<matéria>[-sl|-hl].json`. O formato e o calendário de 37 semanas estão em `data/curriculum/FORMAT.md`.
+- **Validar:** `node scripts/validate-curriculum.mjs`.
+- **Publicar:** depois de editar, rode `node scripts/build-curriculum.mjs`, que gera `public/curriculum/*.json`, e faça o push.
+- **Carga no servidor:** o servidor carrega os arquivos no SQLite sozinho na primeira consulta e quando a versão muda. No Admin, **Recarregar currículo** força a carga, sem apagar as linhas editadas lá.
 
 ```
 public/index.html   telas do app
@@ -199,7 +235,9 @@ public/style.css    visual, layout sem rolagem, folha A4 de impressão
 public/script.js    lógica do app: contas e perfis, semana, moedas, lojinha, impressão, correção, sincronização
 public/privacidade.html  aviso de privacidade
 src/worker.js       servidor: rotas /api/*, cofre de cada criança, chamadas ao Claude com limite de gasto
-src/directory.js    diretório de contas: famílias, pais, crianças, convites, sessões, uso, avisos
+src/directory.js    diretório de contas: famílias, pais, crianças, convites, sessões, uso, avisos, mensagens (💬) e ajustes do app
+src/curriculum.js   currículo de referência (Durable Object com SQLite)
+data/curriculum/    currículo semana a semana (JSON) + fontes; scripts/ valida e publica
 wrangler.jsonc      configuração da Cloudflare (nome, Durable Objects, modelos, limites)
 ```
 
@@ -210,8 +248,9 @@ Rotas do servidor:
 | Público | `GET /api/health`, `POST /api/setup` (primeiro acesso), `POST /api/auth/login`, `GET/POST /api/invite/:token[/accept]` |
 | Sessão | `GET /api/auth/me`, `POST /api/auth/logout`, `POST /api/auth/verify`, `POST /api/auth/password` |
 | Família | `GET/DELETE /api/family`, `POST /api/family/children`, `PATCH/DELETE /api/family/children/:id`, `POST /api/family/children/:id/unlock`, `POST /api/family/invite-parent`, `GET /api/family/export`, `POST /api/report` |
-| Dados da criança | `GET/PUT/DELETE /api/children/:id/state` |
+| Dados da criança | `GET/PUT/DELETE /api/children/:id/state`; 💌 `GET/POST /api/children/:id/notes`, `DELETE …/notes/:nid` (com a área dos pais desbloqueada), `GET …/notes/status`, `POST …/notes/open` |
+| Currículo e mensagens | `GET /api/curriculum?year=&week=&subjects=`, `POST /api/feedback` |
 | Claude | `POST /api/ai/plan`, `/more`, `/tutor`, `/explain`, `/check-open`, `/grade` (sempre com `childId`) |
-| Admin | `GET /api/admin/overview`, `POST /api/admin/invites`, `DELETE /api/admin/invites/:id`, `POST /api/admin/reset-link`, `PATCH/DELETE /api/admin/families/:id`, `POST /api/admin/reports/:id` |
+| Admin | `GET/PUT /api/admin/curriculum`, `POST /api/admin/curriculum/seed`, `GET /api/admin/feedback`, `POST /api/admin/feedback/:id`, `GET/PUT /api/admin/settings`, `GET /api/admin/overview`, `POST /api/admin/invites`, `DELETE /api/admin/invites/:id`, `POST /api/admin/reset-link`, `PATCH/DELETE /api/admin/families/:id`, `POST /api/admin/reports/:id` |
 
 Todas as respostas do Claude usam *structured outputs* (JSON garantido pelo esquema).

@@ -2066,6 +2066,8 @@ function show(screen) {
   }
   currentScreen = screen;
   $('#app').dataset.mode = screen === 'login' ? 'auth' : 'app';
+  document.body.dataset.screen = screen;   // posiciona o 💬 sem cobrir botões
+  const fb = $('#fb-btn'); if (fb) { fb.hidden = ['login', 'welcome'].includes(screen); fb.onclick = openFeedback; }
   $$('.screen').forEach(s => s.classList.toggle('active', s.id === 'scr-' + screen));
   $$('.top-nav button').forEach(b => b.classList.toggle('active', b.dataset.nav === screen));
   const titles = { welcome: 'Bem-vinda!', login: 'Estudos com a Lumi', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', check: '📄 Corrigir folha', selfcheck: '✍️ Corrigir', shop: '🛒 Lojinha', parents: '🔒 Área dos pais', workshop: '✏️ Oficina de palavras', collection: '📖 Minha coleção', notes: '💌 Meus recadinhos' };
@@ -4114,6 +4116,50 @@ function bindAdminCurriculum(box) {
   };
 }
 
+/* ---------- Fase 8: 💬 botão discreto de dúvida / sugestão / problema ---------- */
+const APP_VERSION = '2026.10.24';
+const FB_KINDS = [['duvida', '❓ Dúvida'], ['sugestao', '💡 Sugestão'], ['problema', '🐞 Problema']];
+function openFeedback() {
+  if (!VIEW.fbKind) VIEW.fbKind = 'duvida';
+  const m = openModal(`<div class="modal-head"><h3>💬 Fale com a gente</h3><button class="btn small" data-close>Fechar</button></div>
+    <div class="modal-body fb-body">
+      <div class="seg fb-kinds">${FB_KINDS.map(([k, l]) => `<button type="button" data-fk="${k}" class="${VIEW.fbKind === k ? 'on' : ''}">${l}</button>`).join('')}</div>
+      <textarea id="fb-text" maxlength="2000" rows="6" placeholder="Conte o que aconteceu, a sua dúvida ou a sua ideia…"></textarea>
+      <div class="row tiny muted"><span class="grow">${Server.me ? 'A mensagem vai para o administrador do app.' : 'Sem servidor: vamos abrir o seu e-mail.'}</span><span id="fb-count">0/2000</span></div>
+    </div>
+    <div class="modal-foot"><span class="grow"></span><button class="btn primary" id="fb-send">Enviar</button></div>`);
+  const ta = $('#fb-text', m); ta.focus();
+  ta.oninput = () => { $('#fb-count', m).textContent = `${ta.value.length}/2000`; };
+  $$('[data-fk]', m).forEach(b => b.onclick = () => { VIEW.fbKind = b.dataset.fk; $$('[data-fk]', m).forEach(x => x.classList.toggle('on', x === b)); });
+  $('#fb-send', m).onclick = async () => {
+    const text = ta.value.trim();
+    if (text.length < 3) { toast('Escreva a sua mensagem. 🙂'); return; }
+    if (!Server.me) { location.href = `mailto:carloscurioni@gmail.com?subject=${encodeURIComponent('[Lumi] ' + FB_KINDS.find(k => k[0] === VIEW.fbKind)[1])}&body=${encodeURIComponent(text)}`; closeModal(); return; }
+    const btn = $('#fb-send', m); btn.disabled = true;
+    try {
+      await apiCall('/api/feedback', { method: 'POST', data: { kind: VIEW.fbKind, text, screen: currentScreen, version: APP_VERSION, childId: Server.childId || null } });
+      closeModal(); toast('Mensagem enviada. Obrigado! 💜');
+    } catch (e) { btn.disabled = false; toast(e.message); }
+  };
+}
+// Admin: aba 💬 Mensagens (marcar como resolvida) + e-mail de atendimento
+async function pMessages(box) {
+  box.innerHTML = '<p class="muted">Carregando…</p>';
+  let r, st;
+  try { [r, st] = await Promise.all([apiCall(`/api/admin/feedback${VIEW.fbAll ? '?all=1' : ''}`), apiCall('/api/admin/settings')]); } catch (e) { box.innerHTML = `<p class="muted">${esc(e.message)}</p>`; return; }
+  const label = Object.fromEntries(FB_KINDS);
+  box.innerHTML = `<div class="card"><b>📮 E-mail de atendimento</b>
+      <div class="row wrap" style="margin-top:6px"><input id="fb-mail" type="email" value="${esc(st.support_email)}" class="grow" style="padding:6px;border-radius:8px;border:1.5px solid var(--line)"><button class="btn small primary" id="fb-mail-save">Salvar</button></div>
+      <div class="tiny muted">${r.resend ? '✅ Envio de e-mail ligado (Resend).' : '⚠️ Sem RESEND_API_KEY: as mensagens ficam só aqui. Veja o README para ligar o e-mail.'}</div></div>
+    <div class="card"><div class="row"><b class="grow">💬 Mensagens (${r.items.length})</b><label class="tiny"><input type="checkbox" id="fb-all" ${VIEW.fbAll ? 'checked' : ''}> mostrar resolvidas</label></div>
+      ${r.items.map(f => `<div class="review-item ${f.resolved ? 'fb-done' : ''}"><div class="meta">${new Date(f.created).toLocaleString('pt-BR')} · ${label[f.kind] || f.kind} · ${esc(f.family_name || '')} · ${esc(f.who || '')} · tela ${esc(f.screen || '')} · v${esc(f.app_version || '')}${f.emailed ? ' · 📧 enviado' : ''}</div>
+        <div class="ans" style="white-space:pre-wrap">${esc(f.text)}</div>
+        <div class="row"><button class="btn small" data-fbres="${f.id}" data-v="${f.resolved ? 0 : 1}">${f.resolved ? '↺ Reabrir' : '✔ Resolvida'}</button></div></div>`).join('') || '<p class="tiny muted">Nenhuma mensagem.</p>'}</div>`;
+  $('#fb-all', box).onchange = e => { VIEW.fbAll = e.target.checked; pMessages(box); };
+  $('#fb-mail-save', box).onclick = async () => { try { await apiCall('/api/admin/settings', { method: 'PUT', data: { support_email: $('#fb-mail', box).value } }); toast('E-mail salvo'); } catch (e) { toast(e.message); } };
+  $$('[data-fbres]', box).forEach(b => b.onclick = async () => { try { await apiCall(`/api/admin/feedback/${b.dataset.fbres}`, { method: 'POST', data: { resolved: b.dataset.v === '1' } }); pMessages(box); } catch (e) { toast(e.message); } });
+}
+
 /* ---------- Área dos pais ---------- */
 function renderParents() {
   const el = $('#scr-parents');
@@ -4143,14 +4189,14 @@ function renderParents() {
   }
   const tabs = [['review', '📝 Correção'], ['coins', '🪙 Moedas'], ['vouchers', '🎟️ Vales'], ['settings', '⚙️ Ajustes'], ['data', '📥 Dados']];
   if (Server.me) tabs.push(['notes', '💌 Recadinhos'], ['family', '👨‍👩‍👧 Família']);
-  if (Server.me && Server.me.parent.role === 'admin') tabs.push(['admin', '🛠️ Admin']);
+  if (Server.me && Server.me.parent.role === 'admin') tabs.push(['admin', '🛠️ Admin'], ['msgs', '💬 Mensagens']);
   if (!tabs.some(t => t[0] === VIEW.parentTab)) VIEW.parentTab = 'review';
   const kid = currentChild();
   el.innerHTML = `<div class="parents">${kid ? `<div class="tiny muted">Perfil aberto: <b>${kid.avatar || ''} ${esc(kid.name)}</b> — Correção, Moedas, Vales, Ajustes e Dados valem para este perfil.</div>` : ''}<div class="row wrap"><div class="tabs grow">${tabs.map(([k, l]) => `<button data-ptab="${k}" class="${VIEW.parentTab === k ? 'on' : ''}">${l}</button>`).join('')}</div>
     <button class="btn small" id="lock">Sair</button></div><div class="parents-body" id="pbody"></div></div>`;
   $$('[data-ptab]', el).forEach(b => b.onclick = () => { VIEW.parentTab = b.dataset.ptab; renderParents(); });
   $('#lock').onclick = () => { VIEW.parentsUnlocked = false; show('home'); };
-  ({ review: pReview, coins: pCoins, vouchers: pVouchers, settings: pSettings, data: pData, family: pFamily, admin: pAdmin, notes: pNotes })[VIEW.parentTab]($('#pbody'));
+  ({ review: pReview, coins: pCoins, vouchers: pVouchers, settings: pSettings, data: pData, family: pFamily, admin: pAdmin, notes: pNotes, msgs: pMessages })[VIEW.parentTab]($('#pbody'));
 }
 function pReview(box) {
   const w = S.week;

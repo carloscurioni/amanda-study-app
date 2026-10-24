@@ -613,6 +613,22 @@ async function api(req, env, url) {
     for (const id of r.childIds) await childStore(env, id).reset();
     return json({ ok: true }, 200, { 'set-cookie': clearCookie() });
   }
+  // 💬 Dúvida / sugestão / problema: grava no Directory e, se houver RESEND_API_KEY, manda e-mail ao atendimento
+  if (path === '/api/feedback' && m === 'POST') {
+    const b = await body(req, 12_000);
+    const kind = ['duvida', 'sugestao', 'problema'].includes(b.kind) ? b.kind : 'duvida';
+    const text = String(b.text || '').trim().slice(0, 2000);
+    if (text.length < 3) throw new HttpError(400, 'Escreva a sua mensagem.');
+    const child = b.childId ? me.children.find(c => c.id === b.childId) : null;
+    const who = child ? `${child.name} (criança, perfil aberto por ${me.parent.name})` : `${me.parent.name} (responsável)`;
+    const r = await D.feedbackAdd({ familyId, parentId: me.parent.id, childId: child ? child.id : null, who, kind, text, screen: b.screen, version: b.version, userAgent: req.headers.get('user-agent') });
+    let emailed = false;
+    if (env.RESEND_API_KEY && r.canEmail) {
+      try { emailed = await sendFeedbackEmail(env, r, { kind, text, who, family: r.familyName, email: me.parent.email, screen: b.screen, version: b.version }); if (emailed) await D.feedbackEmailed(r.id); }
+      catch (e) { console.error('feedback email', e); }
+    }
+    return json({ ok: true, id: r.id, emailed });
+  }
   if (path === '/api/report' && m === 'POST') { const b = await body(req, 10_000); return json(await D.report(familyId, b.childId, b.kind, b.text)); }
 
   // Dados de cada criança (só da própria família)
@@ -709,10 +725,32 @@ async function api(req, env, url) {
       const r = await env.CURRICULUM.get(env.CURRICULUM.idFromName('curriculum')).edit(String(b.year), String(b.subject), b.level || '', Number(b.week), b);
       if (r.err) throw new HttpError(404, r.err); return json(r);
     }
+    if (path === '/api/admin/feedback' && m === 'GET') return json({ items: await D.feedbackList(url.searchParams.get('all') === '1'), resend: !!env.RESEND_API_KEY });
+    const fbM = path.match(/^\/api\/admin\/feedback\/(\d+)$/);
+    if (fbM && m === 'POST') { const b = await body(req, 1_000); return json(await D.feedbackResolve(fbM[1], b.resolved !== false)); }
+    if (path === '/api/admin/settings' && m === 'GET') return json(await D.settings());
+    if (path === '/api/admin/settings' && m === 'PUT') { const b = await body(req, 2_000); if (b.support_email !== undefined) await D.setSetting('support_email', String(b.support_email).trim()); return json(await D.settings()); }
     const rpM = path.match(/^\/api\/admin\/reports\/(\d+)$/);
     if (rpM && m === 'POST') return json(await D.resolveReport(rpM[1]));
   }
   throw new HttpError(404, 'Rota não encontrada.');
+}
+
+/* E-mail do feedback pela API do Resend (o workers.dev não tem domínio próprio para o Email Routing) */
+const escHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+async function sendFeedbackEmail(env, r, d) {
+  const label = { duvida: 'Dúvida', sugestao: 'Sugestão', problema: 'Problema' }[d.kind];
+  const html = `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222">
+    <h2 style="margin:0 0 8px">💬 ${escHtml(label)} — Estudos com a Lumi</h2>
+    <p style="white-space:pre-wrap;background:#f7f4ff;border-radius:8px;padding:12px">${escHtml(d.text)}</p>
+    <p style="color:#555;font-size:12px">Família: ${escHtml(d.family)} · De: ${escHtml(d.who)} · Responsável: ${escHtml(d.email)}<br>Tela: ${escHtml(d.screen)} · Versão: ${escHtml(d.version)} · Mensagem #${escHtml(r.id)}</p></div>`;
+  const res = await fetch('https://api.resend.com/emails', {
+    method: 'POST', headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
+    body: JSON.stringify({ from: env.RESEND_FROM || 'Estudos com a Lumi <onboarding@resend.dev>', to: [r.supportEmail], reply_to: d.email || undefined,
+      subject: `[Lumi] ${label}: ${String(d.text).replace(/\s+/g, ' ').slice(0, 60)}`, html }),
+  });
+  if (!res.ok) console.error('resend', res.status, await res.text().catch(() => ''));
+  return res.ok;
 }
 
 /* Currículo: carrega os JSON publicados (public/curriculum) no SQLite na primeira vez e quando a versão muda */

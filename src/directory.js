@@ -65,6 +65,13 @@ export class Directory extends DurableObject {
     `);
     // migração: sessão "desbloqueada" por alguns minutos depois que o responsável digita a senha (área dos pais)
     try { this.sql.exec('ALTER TABLE sessions ADD COLUMN unlocked_until TEXT'); } catch (e) { /* já existe */ }
+    // 💬 mensagens do botão de dúvida/feedback e ajustes do app (ex.: e-mail de atendimento)
+    this.sql.exec(`
+      CREATE TABLE IF NOT EXISTS feedback (id INTEGER PRIMARY KEY AUTOINCREMENT, family_id TEXT, parent_id TEXT, child_id TEXT, who TEXT, kind TEXT NOT NULL, text TEXT NOT NULL,
+        screen TEXT, app_version TEXT, user_agent TEXT, created TEXT NOT NULL, emailed INTEGER NOT NULL DEFAULT 0, resolved INTEGER NOT NULL DEFAULT 0);
+      CREATE INDEX IF NOT EXISTS feedback_family ON feedback (family_id, created);
+      CREATE TABLE IF NOT EXISTS app_settings (key TEXT PRIMARY KEY, value TEXT);
+    `);
   }
   // Chamada única usada pelo Worker: devolve o erro com o código HTTP certo
   // (erros lançados dentro de um Durable Object perdem campos extras no caminho).
@@ -255,6 +262,7 @@ export class Directory extends DurableObject {
     this.sql.exec('DELETE FROM sessions WHERE family_id = ?', familyId);
     this.sql.exec('DELETE FROM parents WHERE family_id = ?', familyId);
     this.sql.exec('DELETE FROM reports WHERE family_id = ?', familyId);
+    this.sql.exec('DELETE FROM feedback WHERE family_id = ?', familyId);
     this.sql.exec('DELETE FROM families WHERE id = ?', familyId);
     return { childIds: kids };
   }
@@ -311,6 +319,30 @@ export class Directory extends DurableObject {
     if (d.child_daily_usd !== undefined) this.sql.exec('UPDATE families SET child_daily_usd = ? WHERE id = ?', d.child_daily_usd === null || d.child_daily_usd === '' ? null : Math.max(0, Number(d.child_daily_usd) || 0), familyId);
     return { ok: true };
   }
+  // 💬 Feedback: grava sempre (até 20 por família/dia); diz se ainda pode mandar e-mail (até 10 por família/dia)
+  feedbackAdd(d) {
+    const day = addMs(-86400000);
+    const n = this.one('SELECT COUNT(*) AS n FROM feedback WHERE family_id = ? AND created > ?', d.familyId, day).n;
+    if (n >= 20) throw new AppError(429, 'Muitas mensagens hoje. Tente amanhã. 🙂');
+    const mailed = this.one('SELECT COUNT(*) AS n FROM feedback WHERE family_id = ? AND created > ? AND emailed = 1', d.familyId, day).n;
+    this.sql.exec('INSERT INTO feedback (family_id, parent_id, child_id, who, kind, text, screen, app_version, user_agent, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+      d.familyId, d.parentId, d.childId || null, cleanText(d.who, 60), d.kind, String(d.text).slice(0, 2000), cleanText(d.screen, 40), cleanText(d.version, 20), String(d.userAgent || '').slice(0, 300), now());
+    const id = this.one('SELECT last_insert_rowid() AS id').id;
+    const fam = this.one('SELECT name FROM families WHERE id = ?', d.familyId);
+    return { id, canEmail: mailed < 10, familyName: fam ? fam.name : '', supportEmail: this.getSetting('support_email', 'carloscurioni@gmail.com') };
+  }
+  feedbackEmailed(id) { this.sql.exec('UPDATE feedback SET emailed = 1 WHERE id = ?', Number(id)); return { ok: true }; }
+  feedbackList(all) {
+    return this.all(`SELECT fb.*, f.name AS family_name, c.name AS child_name, p.name AS parent_name FROM feedback fb LEFT JOIN families f ON f.id = fb.family_id LEFT JOIN children c ON c.id = fb.child_id LEFT JOIN parents p ON p.id = fb.parent_id
+      ${all ? '' : 'WHERE fb.resolved = 0'} ORDER BY fb.created DESC LIMIT 100`);
+  }
+  feedbackResolve(id, resolved = true) { this.sql.exec('UPDATE feedback SET resolved = ? WHERE id = ?', resolved ? 1 : 0, Number(id)); return { ok: true }; }
+  getSetting(key, def = null) { const r = this.one('SELECT value FROM app_settings WHERE key = ?', key); return r ? r.value : def; }
+  setSetting(key, value) {
+    if (key === 'support_email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value))) throw new AppError(400, 'E-mail inválido.');
+    this.sql.exec('INSERT INTO app_settings (key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value', key, String(value).slice(0, 200)); return { ok: true };
+  }
+  settings() { return { support_email: this.getSetting('support_email', 'carloscurioni@gmail.com') }; }
   resolveReport(id) { this.sql.exec('UPDATE reports SET resolved = 1 WHERE id = ?', Number(id)); return { ok: true }; }
   parentById(id) { return this.one('SELECT id, family_id, name, email FROM parents WHERE id = ?', String(id || '')); }
 }

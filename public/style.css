@@ -871,3 +871,16 @@ svg.owl.dance-moon .arm-l, svg.owl.dance-moon .arm-r { animation: d-flap-l .5s e
 .hol-row input:not([type]) { padding: 4px 6px; border-radius: 8px; border: 1.5px solid var(--line); font: inherit; font-size: 13px; min-width: 80px; }
 #cur-admin select, #cur-admin input { padding: 5px 6px; border-radius: 8px; border: 1.5px solid var(--line); font: inherit; }
 #cur-admin .field input, #cur-admin .field textarea { width: 100%; }
+
+/* ---------- 💬 Dúvida / feedback (Fase 8) ---------- */
+.fb-btn { position: fixed; right: 8px; bottom: 10px; z-index: 50; width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--line); background: var(--card); opacity: .5; font-size: 16px; line-height: 1; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.08); padding: 0; transition: opacity .2s; }
+.fb-btn:hover, .fb-btn:focus-visible { opacity: 1; }
+.fb-btn[hidden] { display: none; }
+/* na tarefa: fica na linha da paginação, à direita (acima do rodapé), sem cobrir botões */
+body[data-screen=work] .fb-btn { bottom: 62px; width: 28px; height: 28px; font-size: 13px; }
+body[data-screen=shop] .fb-btn, body[data-screen=setup] .fb-btn { opacity: .4; }
+@media print { .fb-btn { display: none !important; } }
+.fb-body { display: grid; gap: 8px; }
+.fb-body textarea { width: 100%; padding: 10px; border-radius: 12px; border: 2px solid var(--line); font: inherit; resize: vertical; }
+.fb-kinds { flex-wrap: wrap; }
+.fb-done { opacity: .6; }
