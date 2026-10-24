@@ -45,6 +45,10 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
 
 1. **📝 Minha semana:** ela escolhe o **ano escolar** (Year 1–9, com o equivalente brasileiro). Depois abre a seção de cada matéria e escreve do jeito dela, ou fala pelo microfone do teclado. Por exemplo, em BSS: *"estamos aprendendo sobre as bacias hidrográficas"*.
    - **Ortografia/Spelling:** 📝 lista de palavras, 🎯 tema (ex.: *silent letters*) ou 🎲 a Lumi escolhe as palavras.
+     Todo dia com Ortografia ou Spelling tem um **🔎 Caça-erros**: um parágrafo curto com 4–5 palavras escritas errado.
+     - **Na tela:** a criança toca na palavra, corrige ali mesmo e acompanha o contador ("2 de 5 marcadas"). Ao concluir, cada palavra aparece em verde (corrigida), vermelho (faltou, com a forma certa) ou laranja (estava certa).
+     - **No papel:** o parágrafo sai com espaço para escrever por cima e linhas para as correções.
+     - **Em celulares bem pequenos:** vira um botão que abre o texto em tela cheia, para a folha continuar sem rolagem.
    - **Leitura/Reading/Guided Reading:** ela escolhe o nível do texto (⬇️ mais fácil, 🎯 no nível dela, ⬆️ acima ou 🚀 bem acima). A Lumi **escreve o texto** e as perguntas são sobre ele. O texto abre antes das perguntas e sai impresso no topo da folha.
    - Também pode mandar **foto do worksheet ou da agenda**. O Claude cria as perguntas de sábado a sexta no nível do ano escolhido.
 2. **Todo dia** ela abre a tarefa:

@@ -551,3 +551,42 @@ body.theme-moon .home-hello, body.theme-moon .screen-title, body.theme-aurora .h
 .sheet.compact .q-tools button { width: 1.7em; height: 1.5em; font-size: .85em; }
 .sheet.compact .opts { gap: .2em; }
 .sheet.compact .opt { padding: .2em .45em; }
+
+/* ---------- Caça-erros ---------- */
+.q.wide { grid-column: 1 / -1; }
+.proof { line-height: 1.75; font-weight: 600; background: var(--card2); border-radius: .6em; padding: .45em .65em; }
+.proof .w { cursor: pointer; border-radius: .35em; padding: .05em .1em; margin: 0 -.1em; box-shadow: inset 0 -2px 0 transparent; transition: background .15s; }
+.proof .w.fixed, .proof .w.res-ok, .proof .w.res-miss, .proof .w.res-extra { margin: 0; }
+.proof:not(.done) .w:hover, .proof:not(.done) .w:focus-visible { background: var(--accent-soft); outline: none; box-shadow: inset 0 -2px 0 var(--accent); }
+.proof .w.fixed { background: #fff4d1; }
+.proof .w.fixed s, .proof .w.res-ok s, .proof .w.res-miss s { color: var(--bad); opacity: .75; }
+.proof .w.fixed b { color: var(--accent); }
+.proof .w.res-ok { background: var(--ok-soft); }
+.proof .w.res-ok b { color: var(--ok); }
+.proof .w.res-miss { background: var(--bad-soft); }
+.proof .w.res-miss b { color: #11603f; }
+.proof .w.res-miss i, .proof .w.res-extra i { font-size: .8em; color: var(--muted); font-style: normal; }
+.proof .w.res-extra { background: #fff1e0; }
+.proof .w.editing { background: transparent; padding: 0; white-space: nowrap; }
+.w-in { font: inherit; font-weight: 800; border: 2px solid var(--accent); border-radius: .4em; padding: 0 .3em; background: #fff; color: var(--ink); min-width: 4ch; }
+.w-ok { border: none; background: var(--accent); color: #fff; border-radius: .4em; font-weight: 900; margin-left: .15em; padding: 0 .45em; height: 1.6em; }
+.proof-bar { display: flex; align-items: center; gap: .6em; flex-wrap: wrap; font-size: .85em; }
+.proof-dots { display: inline-flex; gap: .25em; }
+.proof-dots i { width: .7em; height: .7em; border-radius: 50%; background: var(--line); }
+.proof-dots i.on { background: var(--gold); }
+.proof-help { color: var(--muted); font-weight: 700; }
+.p-proof { margin-left: 1.2em; line-height: 2.3; font-size: 1.05em; border: 1px dashed #999; border-radius: 4px; padding: .2em .6em; }
+.p-fix-lbl { margin-left: 1.2em; font-size: .85em; color: #444; }
+.p-fixes { margin-left: 1.2em; display: flex; flex-wrap: wrap; gap: .4em 1.6em; }
+.proof-open { display: none; align-self: flex-start; }
+.q.wide.collapsed .proof-open { display: inline-flex; }
+.q.wide.collapsed .proof, .q.wide.collapsed .proof-bar { display: none; }
+.q.wide.collapsed { grid-column: auto; }
+.proof-modal { font-size: 18px; }
+.proof-modal .proof-open { display: none !important; }
+.proof-modal .proof-bar { margin-top: 8px; }
+.q.wide.collapsed { flex-direction: row; align-items: center; flex-wrap: wrap; gap: .4em; }
+.q.wide.collapsed .q-text { display: none; }
+.q.wide.collapsed .q-top { flex: 0 0 auto; }
+.q.wide.collapsed .proof-wrap { flex: 1; min-width: 0; }
+.q.wide.collapsed .proof-open { font-size: .95em; padding: .35em .6em; }

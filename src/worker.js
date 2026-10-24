@@ -128,12 +128,17 @@ async function claude(env, ctx, { model, effort, system, content, schema, maxTok
 /* ---------------- Esquemas de saída ---------------- */
 const QUESTION_PROPS = {
   subject: { type: 'string', enum: SUBJECT_IDS },
-  type: { type: 'string', enum: ['mc', 'short', 'num', 'open'] },
+  type: { type: 'string', enum: ['mc', 'short', 'num', 'open', 'proof'] },
   q: { type: 'string', description: 'Enunciado curto (até ~25 palavras), autoexplicativo, que faça sentido impresso no papel.' },
   options: { type: 'array', items: { type: 'string' }, description: 'Para "mc": 3 ou 4 opções curtas. Para os outros tipos: lista vazia.' },
   answer: { type: 'string', description: 'Resposta correta exata (para "mc", igual a uma das opções). Vazia para "open".' },
   accept: { type: 'array', items: { type: 'string' }, description: 'Outras grafias aceitáveis da resposta (pode ser vazia).' },
   hint: { type: 'string', description: 'Dica curta da mascote que ajuda sem entregar a resposta.' },
+  text: { type: 'string', description: 'Só para "proof": o parágrafo COM as palavras escritas errado. Vazio nos outros tipos.' },
+  errors: {
+    type: 'array', description: 'Só para "proof": cada palavra errada exatamente como aparece no texto e a forma correta. Vazia nos outros tipos.',
+    items: { type: 'object', properties: { wrong: { type: 'string' }, right: { type: 'string' } }, required: ['wrong', 'right'], additionalProperties: false },
+  },
 };
 const qSchema = withDay => ({
   type: 'object',
@@ -238,6 +243,11 @@ Regras de qualidade:
 - Perguntas das matérias em português: português do Brasil. Das matérias em inglês: inglês britânico.
 - Tipos: "mc" (3–4 opções, só uma correta, opções do mesmo tipo e tamanho parecido), "short" (resposta de 1–3 palavras, sem ambiguidade), "num" (resposta numérica exata; em "answer" só o número ou fração como "3/4"), "open" (resposta livre de 1–3 frases; answer vazio).
 - No máximo 1 em cada 4 perguntas pode ser "open".
+- "proof" (caça-erros, só em Ortografia/Spelling): em "text", um parágrafo curto e natural (35–60 palavras), adequado ao ano e no idioma da matéria, com EXATAMENTE 4 ou 5 palavras escritas errado.
+  De preferência use as palavras da semana, com erros típicos (letras trocadas, faltando ou dobradas, acento errado; em inglês, erros comuns como ie/ei, letra muda, -tion/-sion).
+  Cada palavra errada aparece uma única vez no texto; todo o resto do texto está 100% correto. Não marque os erros (nada de negrito ou aspas).
+  "errors": lista {wrong, right}, em que "wrong" é a palavra exatamente como está no texto. "q": instrução curta, ex.: "Caça-erros: encontre e corrija as 5 palavras escritas errado." / "Spot the mistakes: find and fix the 5 misspelled words.". "answer": "errada → certa; …". "options" e "accept" vazios.
+  Nos outros tipos, "text" fica vazio e "errors" é uma lista vazia.
 - Em Ortografia/Spelling use as palavras da semana: completar letras que faltam (ex.: "Complete: ca_ _orro"), escolher a grafia correta, desembaralhar letras, escrever uma frase com a palavra.
 - Em leitura, se não houver o texto, faça perguntas de compreensão que funcionem para quem leu (de preferência "open" curtas) e algumas sobre vocabulário/gramática ligadas ao tema.
 - "hint" ajuda a pensar, nunca contém a resposta.
@@ -271,6 +281,7 @@ ${dayList}
    - "tema": escolha 8–10 palavras desse padrão ortográfico (ex.: silent letters → knight, island, wrap…), adequadas ao ano dela;
    - "a Lumi escolhe": escolha 8–10 palavras adequadas ao ano dela (UK spelling lists / dificuldades ortográficas do português nessa série).
    Em "topics", liste as palavras escolhidas.
+   Em cada dia que tiver Ortografia ou Spelling, inclua UMA pergunta "proof" (caça-erros) dessa matéria.
 6. Leitura/Reading/Guided Reading com [nível do texto]: ESCREVA textos originais em "passages" (120–200 palavras, interessantes para a idade; histórias ou textos informativos; se ela citou um livro ou tema, inspire-se nele sem copiar trechos).
    Níveis em relação ao ano dela: "mais fácil" = cerca de 1 ano abaixo; "no meu nível" = o ano dela; "acima" = cerca de 1 ano acima; "bem acima" = cerca de 2 anos acima.
    Crie um texto para cada dia em que essa matéria tiver perguntas (no máximo 3 textos por matéria na semana). Nesses dias, TODAS as perguntas dessa matéria devem ser sobre o texto do dia (comece com "No texto…"/"In the text…").
@@ -290,7 +301,7 @@ async function handleMore(env, b, ctx) {
   const content = [{ type: 'text', text: `Assuntos da semana:
 ${String(b.topics || '').slice(0, 3000) || '(revisão geral do 5º ano)'}
 ${subjects.length ? `\nUse só estas matérias: ${subjects.join(', ')}. Se alguma delas não tiver assunto listado acima, faça uma revisão do conteúdo típico dessa matéria para o ano escolar dela.` : '\nMisture as matérias da semana e inclua sempre Math e English.'}
-${b.objectiveOnly ? '\nNÃO use o tipo "open" — só mc, short e num (correção automática).' : ''}
+${b.objectiveOnly ? '\nNÃO use o tipo "open" — só mc, short, num e proof (correção automática). Se houver Spelling/Ortografia, inclua 1 "proof".' : ''}
 ${b.exclude?.length ? `\nNão repita estas perguntas:\n- ${b.exclude.slice(0, 60).map(x => String(x).slice(0, 120)).join('\n- ')}` : ''}
 
 Crie exatamente ${n} perguntas novas, curtas e variadas.` }];
@@ -329,6 +340,7 @@ ${list}
 Para cada número, transcreva em "read" o que ela escreveu ou marcou e dê o veredito:
 - "ok": correta (aceite pequenas variações de letra de mão e maiúsculas; em Ortografia/Spelling a grafia precisa estar certa, inclusive acentos);
 - "bad": errada; - "blank": em branco ou ilegível.
+- Caça-erros [proof]: em "read", liste as palavras que ela marcou e o que escreveu (ex.: "freind → friend"). "ok" só se encontrou e corrigiu TODAS as palavras erradas; em "note", diga quantas acertou.
 - Perguntas de resposta livre também recebem "ok" ou "bad": "ok" se a resposta responde à pergunta de forma correta e razoável para a idade (não exija perfeição); "bad" se está errada, fora do assunto ou incompleta demais.
 Em "note", um comentário curto e gentil: quando errada, diga a forma certa; nas livres, diga o que ficou bom e o que poderia melhorar. Se a foto não for desta folha ou estiver ilegível, legible=false.` },
   ];

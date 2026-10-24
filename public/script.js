@@ -199,12 +199,16 @@ function numEq(a, b) { const x = parseNum(a), y = parseNum(b); return Number.isF
 
 function isCorrect(q, ans) {
   if (q.type === 'open') return null;
+  if (q.type === 'proof') return proofScore(q, ans) === q.errors.length;
   if (ans == null || String(ans).trim() === '') return false;
   const list = [q.answer, ...(q.accept || [])];
   if (q.type === 'num') return list.some(a => numEq(ans, a));
   return list.some(a => norm(a, q.strict) === norm(ans, q.strict));
 }
-function answered(q, ans) { return ans != null && String(ans).trim() !== ''; }
+function answered(q, ans) {
+  if (q && q.type === 'proof') return Object.keys(proofAns(ans)).length > 0;
+  return ans != null && String(ans).trim() !== '';
+}
 
 /* =========================================================================
    3. ESTADO E PERSISTÊNCIA
@@ -966,6 +970,139 @@ function pickBuckets(B, map, t, fallback) {
   return { buckets: (chosen.length ? chosen : fallback).map(k => B[k]), matched: chosen.length > 0 };
 }
 
+/* ---------- Caça-erros: parágrafo com palavras escritas errado ---------- */
+// O texto é quebrado em pedaços: índices ímpares são palavras (tocáveis), pares são espaços/pontuação.
+const WORD_RE = /([\p{L}\p{M}][\p{L}\p{M}'’-]*)/u;
+function proofTokens(text) { return String(text || '').split(WORD_RE); }
+const proofClean = s => String(s || '').replace(/[.,;:!?"“”()]/g, '');
+const proofEq = (a, b) => norm(proofClean(a), true) === norm(proofClean(b), true);
+// Localiza cada erro no texto; descarta os que não aparecem. Precisa de pelo menos 2 erros.
+function proofPrepare(item, text, errors) {
+  const tokens = proofTokens(text); const used = new Set(); const errs = [];
+  (errors || []).forEach(e => {
+    const wrong = String((e && e.wrong) || '').trim(), right = String((e && e.right) || '').trim();
+    if (!wrong || !right || proofEq(wrong, right)) return;
+    for (let t = 1; t < tokens.length; t += 2) {
+      if (!used.has(t) && proofEq(tokens[t], wrong)) { used.add(t); errs.push({ idx: t, wrong: tokens[t], right }); return; }
+    }
+  });
+  if (errs.length < 2) return null;
+  item.text = String(text); item.errors = errs.sort((a, b) => a.idx - b.idx);
+  item.q = String(item.q || '').replace(/\b\d\b/, String(errs.length));   // a instrução sempre bate com o número real de erros
+  item.answer = item.errors.map(e => `${e.wrong} → ${e.right}`).join('; ');
+  return item;
+}
+function proofAns(ans) {
+  if (ans && typeof ans === 'object') return ans;
+  try { const o = JSON.parse(ans); return o && typeof o === 'object' ? o : {}; } catch (e) { return {}; }
+}
+function proofScore(q, ans) { const a = proofAns(ans); return q.errors.filter(e => a[e.idx] != null && proofEq(a[e.idx], e.right)).length; }
+function proofHtml(q, ans, done) {
+  const pt = q.lang !== 'en';
+  const a = proofAns(ans); const tokens = proofTokens(q.text);
+  const errAt = Object.fromEntries(q.errors.map(e => [e.idx, e]));
+  const marked = Object.keys(a).length, n = q.errors.length;
+  const html = tokens.map((tk, t) => {
+    if (t % 2 === 0) return esc(tk);
+    const fix = a[t], err = errAt[t];
+    if (!done) return fix != null
+      ? `<span class="w fixed" data-w="${t}" role="button" tabindex="0"><s>${esc(tk)}</s> <b>${esc(fix)}</b></span>`
+      : `<span class="w" data-w="${t}" role="button" tabindex="0">${esc(tk)}</span>`;
+    if (err) {
+      if (fix != null && proofEq(fix, err.right)) return `<span class="w res-ok"><s>${esc(tk)}</s> <b>${esc(fix)}</b></span>`;
+      return `<span class="w res-miss"><s>${esc(tk)}</s> <b>${esc(err.right)}</b>${fix != null ? ` <i>(${pt ? 'você' : 'you'}: ${esc(fix)})</i>` : ''}</span>`;
+    }
+    if (fix != null) return `<span class="w res-extra">${esc(tk)} <i>(${pt ? 'já estava certa' : 'was correct'})</i></span>`;
+    return esc(tk);
+  }).join('');
+  const dots = Array.from({ length: n }, (_, k) => `<i class="${k < (done ? proofScore(q, ans) : marked) ? 'on' : ''}"></i>`).join('');
+  const status = done
+    ? `<b>${proofScore(q, ans)} ${pt ? 'de' : 'of'} ${n}</b> ${pt ? 'corrigidas' : 'fixed'}`
+    : `🔎 <b>${marked} ${pt ? 'de' : 'of'} ${n}</b> ${pt ? 'marcadas' : 'marked'}`;
+  const openBtn = `<button type="button" class="btn small primary proof-open">🔎 ${pt ? 'Caça-erros' : 'Spot the mistakes'} · ${done ? proofScore(q, ans) : marked}/${n} ${done ? '✓' : '▸'}</button>`;
+  return `${openBtn}<div class="proof ${done ? 'done' : ''}">${html}</div>
+    <div class="proof-bar"><span class="proof-dots">${dots}</span><span class="proof-count">${status}</span>
+    ${done ? '' : `<span class="proof-help">${pt ? 'Toque na palavra errada e escreva certo.' : 'Tap a wrong word and fix it.'}</span>`}</div>`;
+}
+// Edição no lugar: a palavra vira um campo já preenchido; a criança corrige e confirma.
+function proofEdit(q, c, card, t) {
+  const tokens = proofTokens(q.text);
+  const span = $(`.w[data-w="${t}"]`, card);
+  if (!span || span.querySelector('input')) return;
+  const a = proofAns(c.answers[q.id]);
+  const cur = a[t] != null ? a[t] : tokens[t];
+  const pt = q.lang !== 'en';
+  span.className = 'w editing';
+  span.onclick = null; span.onkeydown = null;   // enquanto edita, a palavra não reabre a edição
+  span.innerHTML = `<input class="w-in" value="${esc(cur)}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="${pt ? 'Escreva a palavra certa' : 'Type the correct word'}"><button type="button" class="w-ok" aria-label="OK">✓</button>`;
+  const inp = $('input', span);
+  const fit = () => { inp.style.width = `${Math.max(4, inp.value.length + 1.5)}ch`; };
+  fit(); inp.focus(); inp.select();
+  let closed = false;
+  const close = save => {
+    if (closed) return; closed = true;
+    const ans = proofAns(c.answers[q.id]);
+    if (save) { const v = inp.value.trim(); if (!v || proofEq(v, tokens[t])) delete ans[t]; else ans[t] = v; }
+    c.answers[q.id] = ans; saveSoon(); updateProgress(c);
+    $('.proof-wrap', card).innerHTML = proofHtml(q, ans, false);
+    bindProof(q, c, card);
+    requestAnimationFrame(() => fitGrid($('#sheet')));
+    const n = q.errors.length, m = Object.keys(ans).length;
+    if (save && m === n) say(pt ? `Você marcou ${n} palavras! Confira se escreveu todas certinho. ✨` : `You marked ${n} words! Check your spelling. ✨`, { mood: 'wow' });
+  };
+  inp.oninput = fit;
+  inp.onkeydown = e => { e.stopPropagation(); if (e.key === 'Enter') { e.preventDefault(); close(true); } else if (e.key === 'Escape') close(false); };
+  inp.onclick = e => e.stopPropagation();
+  inp.onblur = () => setTimeout(() => close(true), 120);
+  $('.w-ok', span).onmousedown = e => e.preventDefault();
+  $('.w-ok', span).onclick = e => { e.stopPropagation(); close(true); };
+}
+function bindProof(q, c, card) {
+  const ob = $('.proof-open', card);
+  if (ob) ob.onclick = () => openProofModal(q, c);
+  if (c.done) return;
+  $$('.w[data-w]', card).forEach(w => {
+    w.onclick = () => proofEdit(q, c, card, Number(w.dataset.w));
+    w.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); proofEdit(q, c, card, Number(w.dataset.w)); } };
+  });
+}
+// Em telas muito pequenas o parágrafo abre em tela cheia (a folha continua sem rolagem).
+function openProofModal(q, c) {
+  const m = openModal(`<div class="modal-head"><h3>${esc(q.q)}</h3><button class="btn small primary" data-close>${q.lang === 'en' ? 'Done' : 'Pronto'}</button></div>
+    <div class="modal-body proof-modal"><div class="proof-wrap">${proofHtml(q, c.answers[q.id], c.done)}</div></div>`, { wide: true, onClose: () => { if (currentScreen === 'work') renderWork(); } });
+  bindProof(q, c, m);
+}
+// Textos-base para o modo sem servidor (o gerador local troca 4–5 palavras por grafias erradas).
+const PROOF_BASE = {
+  pt: [
+    'No sábado, minha família foi passear no parque. O céu estava azul e o sol brilhava forte. Meu irmão levou a bicicleta nova e eu levei um caderno para desenhar os pássaros. Depois, comemos sorvete de chocolate e voltamos para casa felizes.',
+    'A professora pediu que cada aluno trouxesse uma planta para a escola. Eu escolhi um girassol amarelo. Todos os dias, coloco água no vaso e deixo perto da janela. A planta cresceu bastante e agora já tem uma flor enorme.',
+    'Ontem choveu muito na cidade. As ruas ficaram molhadas e as crianças brincaram com guarda-chuvas coloridos. À noite, a família assistiu a um filme engraçado e preparou pipoca quentinha. Foi um dia tranquilo e divertido.',
+  ],
+  en: [
+    'Last weekend my friend and I went to the beach. The water was cold, but we decided to swim anyway. Afterwards we built a huge sandcastle and collected beautiful shells. It was one of the best days of the whole summer.',
+    'Our class visited the science museum on Thursday. We learned about planets, dinosaurs and electricity. My favourite part was the giant model of the solar system. Before we left, the teacher bought everyone a small notebook.',
+    'Every morning my grandmother walks her dog through the village. They stop at the bakery to buy fresh bread and say hello to the neighbours. In the afternoon she reads interesting books in the garden while the dog sleeps quietly.',
+  ],
+};
+function localProof(subj, rng) {
+  const pt = subj.lang === 'pt';
+  let text = rng.pick(PROOF_BASE[subj.lang]);
+  const tokens = proofTokens(text);
+  const count = {}; for (let t = 1; t < tokens.length; t += 2) count[tokens[t].toLowerCase()] = (count[tokens[t].toLowerCase()] || 0) + 1;
+  const cands = rng.shuffle([...Array(tokens.length).keys()].filter(t => t % 2 === 1 && tokens[t].length >= 5 && tokens[t] === tokens[t].toLowerCase() && count[tokens[t]] === 1));
+  const errors = [];
+  for (const t of cands) {
+    if (errors.length >= rng.int(4, 5)) break;
+    const bad = misspellings(tokens[t], subj.lang, rng).find(w => w.length > 2 && !count[w.toLowerCase()]);
+    if (!bad) continue;
+    errors.push({ wrong: bad, right: tokens[t] }); tokens[t] = bad;
+  }
+  text = tokens.join('');
+  return proofPrepare(Q('proof', pt ? `Caça-erros: encontre e corrija as ${errors.length} palavras escritas errado.` : `Spot the mistakes: find and fix the ${errors.length} misspelled words.`, '',
+    { strict: true, hint: pt ? 'Leia devagar, palavra por palavra. Procure letras trocadas, faltando ou sobrando.' : 'Read slowly, word by word. Look for swapped, missing or extra letters.' }), text, errors);
+}
+
 /* ---------- Ortografia / Spelling ---------- */
 const MISSPELL = {
   pt: [[/ss/, 'ç'], [/ç/, 'ss'], [/ç/, 's'], [/([aeiouáéíóú])s([aeiou])/, '$1z$2'], [/z/, 's'], [/x/, 'ch'], [/ch/, 'x'], [/g(?=[ei])/, 'j'], [/j(?=[ei])/, 'g'],
@@ -1009,7 +1146,8 @@ function spellingPool(subj, text, rng) {
     L.sentence.push(Q('open', pt ? `Escreva uma frase usando a palavra "${w}".` : `Write a sentence using the word "${w}".`, '', { hint: pt ? 'Comece com letra maiúscula e termine com ponto.' : 'Start with a capital letter and end with a full stop.' }));
   });
   Object.values(L).forEach(arr => arr.splice(0, arr.length, ...rng.shuffle(arr)));
-  return { buckets: [L.listen, L.choose, L.missing, L.scramble, L.sentence] };
+  const proof = [localProof(subj, rng), localProof(subj, rng)].filter(Boolean);
+  return { buckets: [proof, L.listen, L.choose, L.missing, L.scramble, L.sentence] };
 }
 
 /* ---------- Leitura / Reading / Guided reading ---------- */
@@ -1194,7 +1332,7 @@ function validateImported(data) {
     const subject = String(q.subject || '').trim();
     const type = String(q.type || '').trim();
     if (!SUBJ[subject]) { errs.push(`#${i + 1}: matéria "${subject}" desconhecida`); return; }
-    if (!['mc', 'short', 'num', 'open', 'listen'].includes(type)) { errs.push(`#${i + 1}: tipo "${type}" inválido`); return; }
+    if (!['mc', 'short', 'num', 'open', 'listen', 'proof'].includes(type)) { errs.push(`#${i + 1}: tipo "${type}" inválido`); return; }
     if (!q.q && type !== 'listen') { errs.push(`#${i + 1}: falta o texto "q"`); return; }
     const item = { subject, type, q: String(q.q || (SUBJ[subject].lang === 'pt' ? 'Ouça a palavra e escreva:' : 'Listen and write the word:')), answer: String(q.answer ?? ''), hint: q.hint ? String(q.hint) : '' , src: 'import' };
     if (type === 'mc') {
@@ -1203,6 +1341,10 @@ function validateImported(data) {
       if (!item.options.some(o => norm(o) === norm(item.answer))) { errs.push(`#${i + 1}: a resposta não está entre as opções`); return; }
     }
     if (type === 'listen') item.say = String(q.say || q.answer || '');
+    if (type === 'proof') {
+      item.strict = true;
+      if (!proofPrepare(item, q.text, q.errors)) { errs.push(`#${i + 1}: caça-erros sem erros válidos no texto`); return; }
+    }
     if (Array.isArray(q.accept)) item.accept = q.accept.map(String);
     if (q.strict) item.strict = true;
     if (q.day && CYCLE.includes(String(q.day))) item.day = String(q.day);
@@ -1909,7 +2051,8 @@ function questionCard(q, i, c) {
   let control = '';
   const dis = c.done ? 'disabled' : '';
   const onPaper = c.done && !answered(q, ans) && c.verdicts[q.id];
-  if (onPaper) control = `<div class="paper-note">📄 ${q.lang === 'pt' ? 'feita no papel' : 'done on paper'}</div>`;
+  if (q.type === 'proof') control = `<div class="proof-wrap">${proofHtml(q, ans, c.done)}</div>`;
+  else if (onPaper) control = `<div class="paper-note">📄 ${q.lang === 'pt' ? 'feita no papel' : 'done on paper'}</div>`;
   else if (q.type === 'mc') control = `<div class="opts">${q.options.map(o => `<button type="button" class="opt ${ans != null && norm(ans, true) === norm(o, true) ? 'sel' : ''}" data-opt="${esc(o)}" ${dis}>${esc(o)}</button>`).join('')}</div>`;
   else if (q.type === 'open') control = `<textarea data-in placeholder="${q.lang === 'pt' ? 'Sua resposta…' : 'Your answer…'}" ${dis}>${esc(ans || '')}</textarea>`;
   else control = `<input type="text" data-in ${q.type === 'num' ? 'inputmode="decimal"' : ''} autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(ans || '')}" placeholder="${q.lang === 'pt' ? 'Resposta' : 'Answer'}" ${dis}>`;
@@ -1918,7 +2061,7 @@ function questionCard(q, i, c) {
     const ok = verdict(c, q);
     const note = c.obj.notes && c.obj.notes[q.id];
     if (ok === true) { stateCls = 'state-ok'; mark = '✓'; }
-    else if (ok === false) { stateCls = 'state-bad'; mark = '✗'; expected = `<div class="expected">${q.lang === 'pt' ? 'Resposta' : 'Answer'}: ${esc(q.answer)}${note ? ` · ${esc(note)}` : ''}</div>`; }
+    else if (ok === false) { stateCls = 'state-bad'; mark = '✗'; expected = q.type === 'proof' ? (note ? `<div class="expected">🦉 ${esc(note)}</div>` : '') : `<div class="expected">${q.lang === 'pt' ? 'Resposta' : 'Answer'}: ${esc(q.answer)}${note ? ` · ${esc(note)}` : ''}</div>`; }
     else { const pm = c.marks[q.id]; mark = pm === 'ok' ? '✓ pais' : pm === 'no' ? '↺ pais' : '📝'; if (pm === 'ok') stateCls = 'state-ok'; }
     if (q.type === 'open' && ok !== null) {
       const pm = c.marks[q.id];
@@ -1926,7 +2069,7 @@ function questionCard(q, i, c) {
       expected = note ? `<div class="expected lumi">🦉 ${esc(note)}</div>` : '';
     }
   }
-  return `<div class="q ${stateCls}" style="--subj:${s.color}" data-qid="${q.id}">
+  return `<div class="q ${stateCls} ${q.type === 'proof' ? 'wide' : ''}" style="--subj:${s.color}" data-qid="${q.id}">
     <div class="q-top"><span class="q-num">${i + 1}</span>
       <div class="q-text"><span class="q-subj">${s.icon} ${esc(s.short)}</span>${esc(q.q)}</div>
       <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Ouvir">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Explain this topic' : 'Explicar o conteúdo'}" aria-label="Explicar o conteúdo">?</button><button type="button" data-hint title="Dica">💡</button></div>
@@ -1949,6 +2092,7 @@ function bindWork(el, c) {
     if (sp) sp.onclick = () => speak(q.say || q.answer, q.lang);
     const ex = $('[data-explain]', card);
     if (ex) ex.onclick = () => explainContent(q, c);
+    if (q.type === 'proof') bindProof(q, c, card);
   });
   $$('[data-qty]', el).forEach(b => b.onclick = () => changeQty(c, Number(b.dataset.qty)));
   $('[data-act=back]', el).onclick = () => { save(); show('home'); };
@@ -1968,7 +2112,7 @@ async function askTutor(q, c) {
   say(q.lang === 'en' ? 'Thinking… 🤔' : 'Pensando… 🤔', { mood: 'think', sticky: true });
   try {
     const r = await apiCall('/api/tutor', { method: 'POST', timeout: 45000, data: {
-      q: q.q, options: q.options || [], answer: q.answer, attempt: c.answers[q.id] || '', lang: q.lang, subject: q.subject, subjectName: SUBJ[q.subject] && SUBJ[q.subject].name,
+      q: q.type === 'proof' ? `${q.q} Texto: "${q.text}"` : q.q, options: q.options || [], answer: q.answer, attempt: q.type === 'proof' ? `${Object.keys(proofAns(c.answers[q.id])).length} palavras marcadas` : (c.answers[q.id] || ''), lang: q.lang, subject: q.subject, subjectName: SUBJ[q.subject] && SUBJ[q.subject].name,
       context: c.kind === 'day' ? passageContext(q, c.obj) : '' } });
     say(`🦉 ${esc(r.text)}`, { mood: 'think', ms: 16000 });
   } catch (e) { say(q.lang === 'en' ? 'I could not think right now. Try the hint again later!' : 'Não consegui pensar agora. Tente de novo daqui a pouco!', { mood: 'sad' }); }
@@ -2007,8 +2151,9 @@ function fitGrid(grid, opts = {}) {
   const W = grid.clientWidth;
   let possible = Math.max(1, Math.min(maxCols, Math.floor(W / colMin) || 1, n));
   grid.classList.remove('compact', 'overflow');
-  const attempt = () => {
-    for (let fs = max; fs >= min; fs -= step) {
+  $$('.q.wide.collapsed', grid).forEach(x => x.classList.remove('collapsed'));
+  const attempt = (lo = min) => {
+    for (let fs = max; fs >= lo; fs -= step) {
       for (let cols = 1; cols <= possible; cols++) {
         grid.style.setProperty('--fs', fs + 'px');
         grid.style.setProperty('--cols', cols);
@@ -2022,6 +2167,8 @@ function fitGrid(grid, opts = {}) {
   if (attempt()) return true;
   possible = Math.max(possible, Math.min(maxCols, Math.floor(W / (colMin * 0.62)) || 1, n));
   if (attempt()) return true;
+  if ($('.q.wide:not(.collapsed)', grid)) { $$('.q.wide', grid).forEach(x => x.classList.add('collapsed')); if (attempt()) return true; }
+  if (allowOverflow && attempt(Math.max(9.5, min - 1.5))) return true;   // telas minúsculas: fonte um pouco menor antes de rolar
   grid.style.setProperty('--fs', min + 'px'); grid.style.setProperty('--cols', possible);
   if (allowOverflow) grid.classList.add('overflow'); // último recurso (tela minúscula)
   return false;
@@ -2035,7 +2182,7 @@ function openGabarito(c) {
     const cls = ok === true ? 'ok' : ok === false && (answered(q, ans) || c.verdicts[q.id]) ? 'bad' : '';
     const note = c.obj.notes && c.obj.notes[q.id];
     const answerTxt = q.type === 'open' ? `<span class="free">[Resposta Livre]</span>${c.done && ok !== null ? ` <span class="yours">· 🦉 ${ok ? '✓' : '✗'} ${esc(note || '')}</span>` : ''}` : `<span class="ans">${esc(q.answer)}</span>`;
-    const yours = answered(q, ans) && q.type !== 'open' ? `<span class="yours">· você: ${esc(ans)}</span>` : '';
+    const yours = !answered(q, ans) || q.type === 'open' ? '' : q.type === 'proof' ? `<span class="yours">· ${q.lang === 'en' ? 'you fixed' : 'você corrigiu'} ${proofScore(q, ans)} ${q.lang === 'en' ? 'of' : 'de'} ${q.errors.length}</span>` : `<span class="yours">· você: ${esc(ans)}</span>`;
     return `<div class="key ${cls}"><b>${i + 1}.</b><div>${answerTxt} ${yours}</div></div>`;
   }).join('');
   const m = openModal(`<div class="modal-head"><h3>🔑 Gabarito</h3><button class="btn small" data-close>Fechar</button></div>
@@ -2088,7 +2235,7 @@ async function explainContent(q, c) {
   const stop = showLoading(pt ? ['Preparando uma mini-aula… 🦉', 'Procurando um bom exemplo… 🔎'] : ['Preparing a mini-lesson… 🦉', 'Finding a good example… 🔎']);
   try {
     const r = await apiCall('/api/explain', { method: 'POST', timeout: 60000, data: {
-      q: q.q, options: q.options || [], answer: q.answer, done: c.done, lang: q.lang, subject: q.subject,
+      q: q.type === 'proof' ? `${q.q} Texto: "${q.text}"` : q.q, options: q.options || [], answer: q.answer, done: c.done, lang: q.lang, subject: q.subject,
       subjectName: SUBJ[q.subject] && SUBJ[q.subject].name, context: weekTopicsText(S.week) + (c.kind === 'day' ? '\n' + passageContext(q, c.obj) : '') } });
     stop();
     q[key] = { title: r.title, explanation: r.explanation, example: r.example };
@@ -2168,6 +2315,9 @@ function printQuestionHtml(q, i) {
   let ans = '';
   if (q.type === 'mc') ans = `<div class="p-opts">${q.options.map((o, j) => `<span>◯ ${'abcd'[j] || ''}) ${esc(o)}</span>`).join('')}</div>`;
   else if (q.type === 'open') ans = '<div class="p-lines"><i></i><i></i><i></i></div>';
+  else if (q.type === 'proof') ans = `<div class="p-proof">${esc(q.text)}</div>
+    <div class="p-fix-lbl">${q.lang === 'pt' ? 'Circule as palavras erradas e escreva certo:' : 'Circle the wrong words and write them correctly:'}</div>
+    <div class="p-fixes">${q.errors.map((e, k) => `<span>${k + 1}. ____________</span>`).join('')}</div>`;
   else if (q.type === 'listen') ans = `<div class="p-line">${q.lang === 'pt' ? 'Ditado: um adulto lê a palavra do gabarito.' : 'Dictation: an adult reads the word from the answer key.'}</div>`;
   else ans = '<div class="p-line"></div>';
   return `<div class="p-q"><div class="p-qt"><b>${i + 1}.</b> <span class="p-subj">${s.icon} ${esc(s.short)}</span> ${esc(q.q)}</div>${ans}</div>`;
@@ -2234,7 +2384,7 @@ async function gradeByPhoto(d) {
   try {
     r = await apiCall('/api/grade', { method: 'POST', timeout: 180000, data: {
       title: `${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, images: VIEW.check.images,
-      questions: d.questions.map(q => ({ type: q.type, q: q.q, options: q.options || [], answer: q.answer, accept: q.accept || [] })) } });
+      questions: d.questions.map(q => ({ type: q.type, q: q.type === 'proof' ? `${q.q} Texto impresso: "${q.text}"` : q.q, options: q.options || [], answer: q.answer, accept: q.accept || [] })) } });
   } catch (e) { stop(); say(`Não consegui corrigir agora (${esc(e.message)}). Tente de novo ou corrija sozinha com o gabarito.`, { mood: 'sad', ms: 12000 }); return; }
   stop();
   if (!r.legible) { VIEW.check.images = []; renderCheck(); say(`${esc(r.message || '')} Não consegui ler bem a folha. Tire outra foto, de cima e com mais luz. 📷`, { mood: 'think', ms: 12000 }); return; }
