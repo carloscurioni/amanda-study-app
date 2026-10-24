@@ -12,7 +12,8 @@
    ========================================================================= */
 import { DurableObject } from 'cloudflare:workers';
 import { Directory, AppError } from './directory.js';
-export { Directory };
+import { Curriculum } from './curriculum.js';
+export { Directory, Curriculum };
 
 // Catálogo de matérias (id — descrição — idioma). O app manda quais o estudante faz; o prompt só lista essas.
 const SUBJECT_CATALOG = [
@@ -659,6 +660,16 @@ async function api(req, env, url) {
     return json(await AI_HANDLERS[aiM[1]](env, b, { familyId, childId: child.id }));
   }
 
+  // 🪄 Currículo de referência (varinha mágica): a semana letiva de cada matéria
+  if (path === '/api/curriculum' && m === 'GET') {
+    const C = await curriculum(env, url);
+    const year = String(url.searchParams.get('year') || '').slice(0, 4);
+    const week = Math.max(1, Math.min(37, Number(url.searchParams.get('week')) || 1));
+    const subjects = String(url.searchParams.get('subjects') || '').split(',').filter(Boolean).slice(0, 30).map(x => { const [subject, level] = x.split(':'); return { subject, level: level === 'hl' || level === 'sl' ? level : '' }; });
+    if (!/^Y\d{1,2}$/.test(year)) throw new HttpError(400, 'Ano escolar inválido.');
+    return json({ year, week, rows: await C.week(year, week, subjects) });
+  }
+
   // Administrador
   if (path.startsWith('/api/admin/')) {
     need(isAdmin);
@@ -685,10 +696,45 @@ async function api(req, env, url) {
       for (const id of r.childIds) await childStore(env, id).reset();
       return json({ ok: true });
     }
+    if (path === '/api/admin/curriculum' && m === 'GET') {
+      const C = await curriculum(env, url);
+      const y = url.searchParams.get('year');
+      if (!y) return json(await C.stats());
+      if (!url.searchParams.get('subject')) return json({ subjects: await C.subjectsFor(y) });
+      return json({ row: await C.get(y, url.searchParams.get('subject'), url.searchParams.get('level') || '', Number(url.searchParams.get('week')) || 1) });
+    }
+    if (path === '/api/admin/curriculum/seed' && m === 'POST') return json(await seedCurriculum(env, url, true));
+    if (path === '/api/admin/curriculum' && m === 'PUT') {
+      const b = await body(req, 20_000);
+      const r = await env.CURRICULUM.get(env.CURRICULUM.idFromName('curriculum')).edit(String(b.year), String(b.subject), b.level || '', Number(b.week), b);
+      if (r.err) throw new HttpError(404, r.err); return json(r);
+    }
     const rpM = path.match(/^\/api\/admin\/reports\/(\d+)$/);
     if (rpM && m === 'POST') return json(await D.resolveReport(rpM[1]));
   }
   throw new HttpError(404, 'Rota não encontrada.');
+}
+
+/* Currículo: carrega os JSON publicados (public/curriculum) no SQLite na primeira vez e quando a versão muda */
+async function seedCurriculum(env, url, force) {
+  const C = env.CURRICULUM.get(env.CURRICULUM.idFromName('curriculum'));
+  const idx = await (await env.ASSETS.fetch(new URL('/curriculum/index.json', url.origin))).json().catch(() => null);
+  if (!idx) throw new HttpError(500, 'Arquivos do currículo não encontrados.');
+  const st = await C.stats();
+  if (!force && st.version === idx.version && st.rows > 0) return { ok: true, skipped: true, ...st };
+  let rows = 0;
+  for (const stage of Object.keys(idx.stages)) {
+    const files = await (await env.ASSETS.fetch(new URL(`/curriculum/${stage}.json`, url.origin))).json();
+    rows += (await C.seed(files, null)).rows;
+  }
+  await C.seed([], idx.version);
+  return { ok: true, rows, ...(await C.stats()) };
+}
+async function curriculum(env, url) {
+  const C = env.CURRICULUM.get(env.CURRICULUM.idFromName('curriculum'));
+  const st = await C.stats();
+  if (!st.rows) await seedCurriculum(env, url, false);   // primeira vez: carrega sozinho
+  return C;
 }
 
 export default {

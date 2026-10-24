@@ -33,6 +33,8 @@ const DEFAULT_SETTINGS = {
   latePct: 50,
   dayCoins: 10,
   notePrice: 500,
+  schoolStart: '2026-08-03', // início do ano letivo (varinha)
+  holidays: null,         // semanas de férias [{from, to, label}] (null = padrão 2026–27)
   sound: true,            // 🔊 musiquinhas das reações (🔇 desliga)         // 💌 preço do recadinho secreto
   questsOn: true,         // 📜 missões do dia e da semana
   buyQuests: true,        // missões de compra (recompensa = valor gasto + 50)           // moedas por tarefa do dia concluída no próprio dia (0 desliga; atrasada dentro da semana vale metade)            // recuperação: dias não feitos podem ser feitos até a sexta seguinte, valendo esta % da recompensa
@@ -2389,6 +2391,7 @@ function renderSetup() {
     ${Server.ai ? '<div class="notice info">Modo por matéria (sem o Claude). <button class="btn small" data-act="ai">✨ Voltar ao modo Lumi</button></div>' : (Server.on ? '' : '<div class="notice info">📴 Sem conexão com o servidor: as perguntas vêm do próprio app.</div>')}
     <div class="row wrap"><div class="seg"><button data-tab="pt" class="${VIEW.setupTab === 'pt' ? 'on' : ''}">🇧🇷 Em português</button><button data-tab="en" class="${VIEW.setupTab === 'en' ? 'on' : ''}">🇬🇧 In English</button></div>
       <span class="muted tiny grow">O que você aprendeu na escola esta semana?</span></div>
+    ${wandBarHtml()}
     <div class="topic-grid">${fields}</div>
     ${countsAndCycleHtml(editing, counts, VIEW.autoShown)}
     ${pending ? `<div class="notice info">📥 ${pending} perguntas importadas pelos pais serão incluídas.</div>` : ''}
@@ -2397,6 +2400,7 @@ function renderSetup() {
   $$('[data-tab]', el).forEach(b => b.onclick = () => { collectDraft(); VIEW.setupTab = b.dataset.tab; renderSetup(); });
   $$('textarea[data-sid]', el).forEach(ta => ta.oninput = () => { VIEW.draftTopics[ta.dataset.sid] = ta.value; });
   bindCountsAndCycle(el, counts, () => { collectDraft(); renderSetup(); });
+  bindWand(el);
   const ai = $('[data-act=ai]', el); if (ai) ai.onclick = () => { VIEW.setupMode = null; renderSetup(); };
   $('[data-act=cancel]', el).onclick = () => { resetDraft(); show('home'); };
   $('[data-act=gen]', el).onclick = () => generateFromSetup(editing);
@@ -2404,7 +2408,7 @@ function renderSetup() {
 function cleanPassages(list) { return (list || []).filter(x => x && SUBJ[x.subject] && CYCLE.includes(x.day) && x.text).map(x => ({ subject: x.subject, day: x.day, title: String(x.title || ''), text: String(x.text) })); }
 function dayPassages(d) { if (d && d.passage) return [d.passage]; if (d && d.recPassages) return d.recPassages; return S.week && d ? (S.week.passages || []).filter(x => x.day === d.dow) : []; }
 const ctxTopics = c => c.rec && S.recovery ? S.recovery.topicsText : weekTopicsText(S.week);
-function resetDraft() { VIEW.draftOpt = null; VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.draftText = null; VIEW.draftSubj = null; VIEW.draftImages = null; VIEW.openSubj = null; VIEW.setupCycle = null; }
+function resetDraft() { VIEW.wand = null; VIEW.draftOpt = null; VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.draftText = null; VIEW.draftSubj = null; VIEW.draftImages = null; VIEW.openSubj = null; VIEW.setupCycle = null; }
 // Quantidade automática: ~2 perguntas de cada matéria por dia (+3 da leitura do dia). Fim de semana +2, sexta −2.
 function autoCounts(nSubj, reading) {
   const per = clamp(Number(S.settings.perSubject) || 2, 1, 4);
@@ -2507,6 +2511,7 @@ function renderSetupAI() {
     </div>
     <div class="ai-box">
       <div class="ai-label">🏫 O que você está aprendendo em cada matéria? <span class="tiny muted">(${filled} de ${mine.length} preenchidas · pode escrever do seu jeito)</span></div>
+      ${wandBarHtml()}
       ${['pt', 'en'].map(gp => { const l = mine.filter(x => x.group === gp); return l.length ? `<div class="acc-group"><div class="acc-title">${gp === 'pt' ? '🇧🇷 Em português' : '🇬🇧 In English'}</div>${l.map(section).join('')}</div>` : ''; }).join('')}
       <div class="row wrap tiny muted"><span>🎤 Dica: toque no microfone do teclado para falar em vez de escrever. Matéria em branco não entra na semana.</span></div>
       <div class="row wrap">
@@ -2549,6 +2554,7 @@ function renderSetupAI() {
   };
   $$('[data-rm]', el).forEach(btn => btn.onclick = () => { VIEW.draftImages.splice(Number(btn.dataset.rm), 1); renderSetupAI(); });
   bindCountsAndCycle(el, counts, () => renderSetupAI());
+  bindWand(el);
   $('[data-act=cancel]', el).onclick = () => { resetDraft(); show('home'); };
   $('[data-act=subjects]', el).onclick = () => { VIEW.setupMode = 'subjects'; renderSetup(); };
   $('[data-act=gen]', el).onclick = () => generateWithClaude(editing);
@@ -3978,6 +3984,136 @@ function reactCard(it) {
     <div class="item-act"><button class="btn small" data-test="${it.id}">▶ Testar</button>${!owned ? `<button class="btn small primary" data-buy="${it.id}">Comprar</button>` : on ? `<button class="btn small ok" data-runequip="${it.id}">Usando ✔</button>` : `<button class="btn small" data-requip="${it.id}">Usar</button>`}</div></div>`;
 }
 
+/* ---------- Fase 7: 🪄 Varinha mágica — preencher a semana pelo currículo de referência ---------- */
+// Calendário letivo: início do ano e semanas de férias (os pais ajustam em Ajustes). Semanas de férias não contam.
+const DEFAULT_SCHOOL_START = '2026-08-03';
+const DEFAULT_HOLIDAYS = [
+  { from: '2026-10-12', to: '2026-10-16', label: 'Feriado de outubro / half-term' },
+  { from: '2026-12-14', to: '2027-01-29', label: 'Férias de verão' },
+  { from: '2027-02-08', to: '2027-02-12', label: 'Carnaval' },
+  { from: '2027-03-29', to: '2027-04-02', label: 'Semana Santa' },
+];
+function mondayOf(d) { const dt = new Date(d + 'T12:00:00'); const wd = (dt.getDay() + 6) % 7; return addDays(d, -wd); }
+function isHolidayWeek(mon, hol) { const mid = addDays(mon, 2); return (hol || []).some(h => h.from && h.to && mid >= h.from && mid <= h.to); }
+function academicWeekOf(date) {
+  const start = mondayOf(S.settings.schoolStart || DEFAULT_SCHOOL_START);
+  const hol = S.settings.holidays || DEFAULT_HOLIDAYS;
+  const mon = mondayOf(date);
+  if (mon < start) return 1;
+  let w = 0;
+  for (let d = start; d <= mon; d = addDays(d, 7)) if (!isHolidayWeek(d, hol)) w++;
+  return clamp(w || 1, 1, 37);
+}
+// semana letiva da semana que está sendo planejada (o ciclo do app vai de sábado a sexta)
+function planningAcademicWeek() {
+  const t = today(); const start = VIEW.setupCycle === 'next' ? addDays(cycleStartOf(t), 7) : cycleStartOf(t);
+  return academicWeekOf(addDays(start, 2));
+}
+const stageDir = y => ({ primary: 'primary', ks3: 'ks3', igcse: 'igcse', ib: 'ib' })[stageOf(y)];
+async function curriculumRows(year, week, subs) {
+  const spec = subs.map(id => `${id}${stageOf(year) === 'ib' && id !== 'tok' ? ':' + ((S.settings.ibLevels || {})[id] || 'sl').toLowerCase() : ''}`);
+  if (Server.on) {
+    try { return (await apiCall(`/api/curriculum?year=${year}&week=${week}&subjects=${encodeURIComponent(spec.join(','))}`)).rows; } catch (e) { /* cai para os arquivos estáticos */ }
+  }
+  VIEW.curCache = VIEW.curCache || {};
+  const st = stageDir(year);
+  if (!VIEW.curCache[st]) VIEW.curCache[st] = await (await fetch(`curriculum/${st}.json`)).json();
+  return spec.map(x => { const [subject, level] = x.split(':');
+    const f = VIEW.curCache[st].find(f => f.year === year && f.subject === subject && (f.level || '') === (level || '')) || VIEW.curCache[st].find(f => f.year === year && f.subject === subject);
+    const w = f && f.weeks.find(w => w.academic_week === week);
+    return w ? Object.assign({ year, subject, level: f.level || null, source: f.source }, w) : null; }).filter(Boolean);
+}
+function wandText(row, sid) {
+  const pt = SUBJ[sid].lang === 'pt';
+  const head = row.type === 'review' ? (pt ? '🔁 Revisão: ' : '🔁 Review: ') : row.type === 'exam' ? (pt ? '📝 Semana de provas: ' : '📝 Exam week: ') : '';
+  if (isSpell(sid) && (row.spelling || []).length) return `${row.spelling.join(', ')}\n(${pt ? 'Tema' : 'Pattern'}: ${head}${row.topic})`;
+  return `${head}${row.topic}\n${pt ? 'Objetivos' : 'Objectives'}: ${row.objectives.join('; ')}\n${pt ? 'Palavras-chave' : 'Key words'}: ${row.keywords.join(', ')}`;
+}
+async function useWand(week) {
+  const year = S.settings.year;
+  if (!year) { say('Primeiro escolha o <b>ano escolar</b>. 🎓', { mood: 'think' }); return; }
+  const w = clamp(week || planningAcademicWeek(), 1, 37);
+  const subs = mySubjects();
+  const stop = showLoading(['Agitando a varinha… 🪄', 'Procurando a semana no currículo… 📚']);
+  let rows = [];
+  try { rows = await curriculumRows(year, w, subs); } catch (e) { stop(); say('Não consegui abrir o currículo agora. Tente de novo. 🙂', { mood: 'sad' }); return; }
+  stop();
+  const ai = currentScreen === 'setup' && Server.ai && VIEW.setupMode !== 'subjects';
+  if (!ai && $('#scr-setup textarea[data-sid]')) collectDraft();
+  const filled = [];
+  rows.forEach(r => {
+    const sid = r.subject; if (!SUBJ[sid]) return;
+    const txt = wandText(r, sid);
+    if (ai) { VIEW.draftSubj = VIEW.draftSubj || {}; VIEW.draftSubj[sid] = txt; VIEW.draftOpt = VIEW.draftOpt || {}; if (isSpell(sid) && (r.spelling || []).length) VIEW.draftOpt[sid] = 'list'; }
+    else { if (!VIEW.draftTopics) VIEW.draftTopics = {}; VIEW.draftTopics[sid] = txt; }
+    filled.push(sid);
+  });
+  const r0 = rows[0];
+  VIEW.wand = { week: w, filled, missing: subs.filter(id => !filled.includes(id)), term: r0 && r0.term, wot: r0 && r0.week_of_term, auto: w === planningAcademicWeek() };
+  if (ai) { VIEW.openSubj = {}; renderSetupAI(); } else renderSetup();
+  if (!filled.length) say('Não achei essa semana no currículo de referência para as suas matérias. 🤔', { mood: 'think' });
+}
+function wandBarHtml() {
+  const v = VIEW.wand;
+  const btn = `<button type="button" class="btn small wand-btn" data-act="wand">🪄 Preencher pela varinha</button>`;
+  if (!v) return `<div class="wand-bar">${btn}<span class="tiny muted">Preenche cada matéria com o conteúdo da semana letiva ${S.settings.year ? planningAcademicWeek() : ''} (currículo de referência).</span></div>`;
+  return `<div class="wand-bar on"><div class="row wrap"><b>🪄 Semana letiva</b>
+      <span class="wk-nav"><button type="button" class="btn small" data-wk="-1" aria-label="Semana anterior" ${v.week <= 1 ? 'disabled' : ''}>◂</button><b>semana ${v.week}</b><button type="button" class="btn small" data-wk="1" aria-label="Próxima semana" ${v.week >= 37 ? 'disabled' : ''}>▸</button></span>
+      <span class="tiny muted">${v.term ? `term ${v.term}, semana ${v.wot}` : ''}${v.auto ? ' · pelo calendário' : ''}</span></div>
+    <div class="tiny">É um <b>currículo de referência</b>: confira e ajuste ao que a escola realmente passou. Escola adiantada ou atrasada? Use ◂ ▸.${v.missing.length ? ` <span class="muted">Sem referência para: ${v.missing.map(id => SUBJ[id].short).join(', ')}.</span>` : ''}</div></div>`;
+}
+function bindWand(el) {
+  const b = $('[data-act=wand]', el); if (b) b.onclick = () => useWand();
+  $$('[data-wk]', el).forEach(x => x.onclick = () => useWand((VIEW.wand ? VIEW.wand.week : planningAcademicWeek()) + Number(x.dataset.wk)));
+}
+// Ajustes dos pais: calendário escolar
+function calendarSettingsHtml(st) {
+  const hol = st.holidays || DEFAULT_HOLIDAYS;
+  return `<div class="card"><b>📅 Calendário escolar (para a 🪄 varinha)</b>
+    <div class="form-grid" style="margin-top:6px"><label class="field">Início do ano letivo<input type="date" id="s-sstart" value="${esc(st.schoolStart || DEFAULT_SCHOOL_START)}"></label></div>
+    <div class="tiny muted" style="margin:4px 0">Semanas de férias (não contam como semana letiva). Hoje: <b>semana letiva ${academicWeekOf(today())}</b>.</div>
+    <div id="hol-list" style="display:grid;gap:6px">${hol.map((h, i) => `<div class="row wrap hol-row"><input type="date" data-hf="${i}" value="${esc(h.from)}"><span>até</span><input type="date" data-ht="${i}" value="${esc(h.to)}"><input data-hl="${i}" value="${esc(h.label || '')}" placeholder="nome" class="grow"><button class="btn small" data-hdel="${i}" aria-label="Remover">✕</button></div>`).join('')}</div>
+    <div class="row" style="margin-top:6px"><button class="btn small" id="hol-add">+ Semana de férias</button><button class="btn small" id="hol-reset">↺ Padrão 2026–27</button></div></div>`;
+}
+function readHolidays(box) {
+  return $$('.hol-row', box).map(r => ({ from: $('[data-hf]', r).value, to: $('[data-ht]', r).value, label: $('[data-hl]', r).value.trim() })).filter(h => h.from && h.to && h.from <= h.to);
+}
+function bindCalendarSettings(box, rerender) {
+  $$('[data-hdel]', box).forEach(b => b.onclick = () => { S.settings.holidays = readHolidays(box).filter((_, i) => i !== Number(b.dataset.hdel)); touch('settings'); save(); rerender(); });
+  $('#hol-add', box).onclick = () => { S.settings.holidays = [...readHolidays(box), { from: today(), to: addDays(today(), 4), label: 'Férias' }]; touch('settings'); save(); rerender(); };
+  $('#hol-reset', box).onclick = () => { S.settings.holidays = DEFAULT_HOLIDAYS.map(h => Object.assign({}, h)); S.settings.schoolStart = DEFAULT_SCHOOL_START; touch('settings'); save(); rerender(); };
+}
+// Admin: currículo no SQLite (recarregar, ver e editar uma linha)
+async function adminCurriculumHtml() {
+  let st = {}; try { st = await apiCall('/api/admin/curriculum'); } catch (e) { st = { error: e.message }; }
+  return `<div class="card" id="cur-admin"><b>📚 Currículo de referência (varinha)</b>
+    <div class="tiny muted" style="margin:4px 0">${st.error ? esc(st.error) : `${st.rows} semanas · ${st.files} arquivos · versão ${esc(st.version || '—')} · ${st.edited || 0} editadas no admin${st.seededAt ? ` · carregado em ${new Date(st.seededAt).toLocaleString('pt-BR')}` : ''}`}</div>
+    <div class="row wrap"><button class="btn small" id="cur-seed">🔄 Recarregar currículo</button><span class="tiny muted">(não apaga as linhas editadas aqui)</span></div>
+    <div class="row wrap" style="margin-top:8px"><select id="cur-y">${SCHOOL_YEARS.map(y => `<option value="${y[0]}" ${y[0] === (VIEW.curY || 'Y5') ? 'selected' : ''}>${y[1]}</option>`).join('')}</select>
+      <select id="cur-s"><option>…</option></select><input type="number" id="cur-w" min="1" max="37" value="${VIEW.curW || 1}" style="width:64px"><button class="btn small" id="cur-load">Ver</button></div>
+    <div id="cur-row" style="margin-top:6px"></div></div>`;
+}
+function bindAdminCurriculum(box) {
+  const loadSubs = async () => { VIEW.curY = $('#cur-y', box).value; let r = { subjects: [] }; try { r = await apiCall(`/api/admin/curriculum?year=${VIEW.curY}`); } catch (e) { /* ignora */ }
+    $('#cur-s', box).innerHTML = r.subjects.map(s => `<option value="${s.subject}:${s.level || ''}">${SUBJ[s.subject] ? SUBJ[s.subject].name : s.subject}${s.level ? ' ' + s.level.toUpperCase() : ''}</option>`).join(''); };
+  $('#cur-y', box).onchange = loadSubs; loadSubs();
+  $('#cur-seed', box).onclick = async () => { try { const r = await apiCall('/api/admin/curriculum/seed', { method: 'POST', data: {}, timeout: 120000 }); toast(`Currículo recarregado: ${r.rows} semanas`); pAdmin($('#pbody')); } catch (e) { toast(e.message); } };
+  $('#cur-load', box).onclick = async () => {
+    const [subject, level] = $('#cur-s', box).value.split(':'); VIEW.curW = Number($('#cur-w', box).value) || 1;
+    let r; try { r = await apiCall(`/api/admin/curriculum?year=${VIEW.curY}&subject=${subject}&level=${level || ''}&week=${VIEW.curW}`); } catch (e) { toast(e.message); return; }
+    const row = r.row; const out = $('#cur-row', box);
+    if (!row) { out.innerHTML = '<p class="muted">Semana não encontrada.</p>'; return; }
+    out.innerHTML = `<div class="tiny muted">${esc(row.source || '')} · term ${row.term}, semana ${row.week_of_term} · ${row.type}${row.edited ? ' · ✏️ editada' : ''}</div>
+      <label class="field">Tópico<input id="cr-topic" value="${esc(row.topic)}"></label>
+      <label class="field">Objetivos (um por linha)<textarea id="cr-obj" rows="3">${esc(row.objectives.join('\n'))}</textarea></label>
+      <label class="field">Palavras-chave (uma por linha)<textarea id="cr-kw" rows="2">${esc(row.keywords.join('\n'))}</textarea></label>
+      <label class="field">Spelling (uma por linha)<textarea id="cr-sp" rows="2">${esc((row.spelling || []).join('\n'))}</textarea></label>
+      <button class="btn small primary" id="cr-save">Salvar linha</button>`;
+    $('#cr-save', box).onclick = async () => { try { await apiCall('/api/admin/curriculum', { method: 'PUT', data: { year: VIEW.curY, subject, level: level || '', week: VIEW.curW, topic: $('#cr-topic', box).value,
+      objectives: $('#cr-obj', box).value.split('\n'), keywords: $('#cr-kw', box).value.split('\n'), spelling: $('#cr-sp', box).value.split('\n') } }); toast('Linha salva ✏️'); } catch (e) { toast(e.message); } };
+  };
+}
+
 /* ---------- Área dos pais ---------- */
 function renderParents() {
   const el = $('#scr-parents');
@@ -4089,6 +4225,7 @@ function pSettings(box) {
       <label class="field">Voz (ditado)<select id="s-voice"><option value="1" ${st.voice ? 'selected' : ''}>Ligada</option><option value="0" ${!st.voice ? 'selected' : ''}>Desligada</option></select></label>
       ${Server.me ? '' : '<label class="field">Novo PIN dos pais<input id="s-pin" inputmode="numeric" maxlength="8" placeholder="(manter)"></label>'}</div>
       <div style="margin-top:6px"><b class="tiny">Perguntas padrão por dia</b><div class="counts" style="margin-top:4px">${CYCLE.map(dk => `<label class="count-box"><div class="lbl">${DOW_LABEL[dk]}</div><input type="number" data-dc="${dk}" value="${st.counts[dk]}" style="width:44px;text-align:center;border:1.5px solid var(--line);border-radius:6px"></label>`).join('')}</div></div></div>
+    ${calendarSettingsHtml(st)}
     <button class="btn primary" id="s-save">Salvar ajustes</button>
     <button class="btn" id="s-tour">Rever o tutorial da Lumi</button>`;
   $('#s-save').onclick = () => {
@@ -4107,9 +4244,12 @@ function pSettings(box) {
     $$('[data-dc]', box).forEach(inp => { st.counts[inp.dataset.dc] = clamp(Math.round(Number(inp.value) || 0), 0, st.maxPerDay); });
     const pin = ($('#s-pin') || { value: '' }).value.trim(); if (pin) st.pin = pin;
     const nm = ($('#s-name') || { value: '' }).value.trim(); if (nm) S.name = nm;
+    if ($('#s-sstart').value) st.schoolStart = $('#s-sstart').value;
+    st.holidays = readHolidays(box);
     touch('settings'); save(); toast('Ajustes salvos');
   };
   $('#s-tour').onclick = () => { show('home'); setTimeout(runTour, 300); };
+  bindCalendarSettings(box, () => pSettings(box));
 }
 function pData(box) {
   const topics = S.week ? S.week.topics : S.lastTopics;
@@ -4296,7 +4436,9 @@ async function pAdmin(box) {
         <div data-out></div></div>`).join('')}</div>
     <div class="card"><b>🚩 Avisos de problema (${o.reports.length})</b>
       ${o.reports.map(r => `<div class="review-item"><div class="meta">${new Date(r.created).toLocaleString('pt-BR')} · ${esc(r.family_name || '')}${r.child_name ? ' · ' + esc(r.child_name) : ''} · ${esc(r.kind || '')}</div><div class="ans">${esc(r.text)}</div>
-        <button class="btn small" data-resolve="${r.id}">✔ Resolvido</button></div>`).join('') || '<p class="tiny muted">Nenhum aviso.</p>'}</div>`;
+        <button class="btn small" data-resolve="${r.id}">✔ Resolvido</button></div>`).join('') || '<p class="tiny muted">Nenhum aviso.</p>'}</div>
+    ${await adminCurriculumHtml()}`;
+  bindAdminCurriculum(box);
   $('#ad-inv').onclick = async () => {
     try { const r = await apiCall('/api/admin/invites', { method: 'POST', data: { note: $('#ad-note').value } });
       $('#ad-inv-out').innerHTML = linkBox(r.link, r.expires, 'Convite para o app de estudos Estudos com a Lumi'); bindShare(box); } catch (e) { toast(e.message); }

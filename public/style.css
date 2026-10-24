@@ -861,3 +861,13 @@ svg.owl.dance-moon { animation: d-moon 4s ease-in-out 1; transform-origin: 50% 1
 @keyframes d-moon { 0% { transform: none; } 20% { transform: translateX(-22%) translateY(-2%); } 25% { transform: translateX(-22%); } 45% { transform: translateX(-44%) translateY(-2%); } 50% { transform: translateX(-44%) scaleX(-1); } 70% { transform: translateX(-22%) scaleX(-1) translateY(-2%); } 95% { transform: translateX(0) scaleX(-1); } 100% { transform: none; } }
 svg.owl.dance-moon .arm-l, svg.owl.dance-moon .arm-r { animation: d-flap-l .5s ease-in-out 8; }
 @media (prefers-reduced-motion: reduce) { svg.owl[class*="dance-"], svg.owl[class*="dance-"] .arm-l, svg.owl[class*="dance-"] .arm-r { animation: none !important; } }
+
+/* ---------- Varinha mágica (Fase 7) ---------- */
+.wand-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 6px 0; }
+.wand-bar.on { display: grid; gap: 4px; background: #f3f0ff; border: 2px dashed #9775fa; border-radius: 12px; padding: 8px 10px; }
+.wand-btn { background: linear-gradient(90deg, #845ef7, #cc5de8); color: #fff; box-shadow: none; }
+.wk-nav { display: inline-flex; align-items: center; gap: 6px; }
+.hol-row input[type=date] { padding: 4px 6px; border-radius: 8px; border: 1.5px solid var(--line); font: inherit; font-size: 13px; }
+.hol-row input:not([type]) { padding: 4px 6px; border-radius: 8px; border: 1.5px solid var(--line); font: inherit; font-size: 13px; min-width: 80px; }
+#cur-admin select, #cur-admin input { padding: 5px 6px; border-radius: 8px; border: 1.5px solid var(--line); font: inherit; }
+#cur-admin .field input, #cur-admin .field textarea { width: 100%; }
