@@ -4242,6 +4242,59 @@ async function adminCurriculumHtml() {
       <select id="cur-s"><option>…</option></select><input type="number" id="cur-w" min="1" max="37" value="${VIEW.curW || 1}" style="width:64px"><button class="btn small" id="cur-load">Ver</button></div>
     <div id="cur-row" style="margin-top:6px"></div></div>`;
 }
+// Admin: 🏦 banco de sugestões compartilhado (números, avisos, revisar por semana)
+async function adminBankHtml() {
+  let st; try { st = await apiCall('/api/admin/bank'); } catch (e) { return `<div class="card"><b>🏦 Banco de sugestões</b><p class="tiny muted">${esc(e.message)}</p></div>`; }
+  const sum = (l, f = () => true) => (l || []).filter(f).reduce((a, x) => a + x.n, 0);
+  const uses = l => (l || []).reduce((a, x) => a + (x.uses || 0), 0);
+  VIEW.bkReported = st.items;
+  const item = it => `<div class="review-item bank-it ${it.status !== 'ok' ? 'fb-done' : ''}" data-bid="${esc(it.id)}"><div class="meta">${esc(it.ckey || '')} · ${it.source} · ${it.status === 'hidden' ? '🙈 escondida' : '✅ ativa'} · usada ${it.uses}× · 🚩 ${it.reports}</div>
+      <div class="ans"><b>${esc(it.q.type)}</b> ${esc(it.q.q)}${it.q.options && it.q.options.length ? `<div class="tiny">opções: ${it.q.options.map(esc).join(' | ')}</div>` : ''}${it.q.text ? `<div class="tiny">${esc(it.q.text)}</div>` : ''}<div class="tiny">resposta: <b>${esc(it.q.answer || '(livre)')}</b> · dica: ${esc(it.q.hint || '')}</div></div>
+      <div class="row wrap">${it.status !== 'ok' ? `<button class="btn small" data-bst="ok">↺ Reativar</button>` : `<button class="btn small" data-bst="hidden">🙈 Esconder</button>`}<button class="btn small" data-bedit>✏️ Editar</button><button class="btn small danger" data-bst="deleted">Apagar</button></div></div>`;
+  return `<div class="card" id="bank-admin"><b>🏦 Banco de sugestões (compartilhado entre as famílias)</b>
+    <div class="tiny muted" style="margin:4px 0">${sum(st.questions, x => x.status === 'ok')} perguntas ativas (${sum(st.questions, x => x.source === 'repo' && x.status === 'ok')} do repositório · ${sum(st.questions, x => x.source === 'api' && x.status === 'ok')} criadas na hora · ${sum(st.questions, x => x.source === 'admin')} editadas) · ${sum(st.books, x => x.status === 'ok')} livros · ${st.keys} matérias-semana · usadas ${uses(st.questions)}× · ${st.repoFiles} semanas publicadas no repositório (${st.files} já carregadas)</div>
+    <div class="tiny"><b>Avisados ou escondidos (${st.items.length + st.books.length})</b></div>
+    ${st.items.map(item).join('')}${st.books.map(bk => `<div class="review-item bank-it" data-bid="${esc(bk.ckey)}"><div class="meta">📚 ${esc(bk.ckey)} · ${bk.status} · 🚩 ${bk.reports}</div><div class="ans">${esc(bk.title)}</div>
+      <div class="row">${bk.status !== 'ok' ? '<button class="btn small" data-bst="ok">↺ Reativar</button>' : '<button class="btn small" data-bst="hidden">🙈 Esconder</button>'}</div></div>`).join('') || (st.items.length ? '' : '<p class="tiny muted">Nenhum aviso.</p>')}
+    <div class="row wrap" style="margin-top:8px"><select id="bk-y">${SCHOOL_YEARS.map(y => `<option value="${y[0]}" ${y[0] === (VIEW.bkY || 'Y5') ? 'selected' : ''}>${y[1]}</option>`).join('')}</select>
+      <input type="number" id="bk-w" min="1" max="37" value="${VIEW.bkW || planningAcademicWeek()}" style="width:64px"><button class="btn small" id="bk-load">Ver semana</button></div>
+    <div id="bk-out" style="margin-top:6px"></div></div>`;
+}
+function bindAdminBank(box) {
+  const B = $('#bank-admin', box); if (!B) return;
+  const bindItems = (root, again) => {
+    $$('[data-bst]', root).forEach(b => b.onclick = async () => { const id = b.closest('[data-bid]').dataset.bid;
+      if (b.dataset.bst === 'deleted' && !(await confirmBox('Apagar do banco?', 'Ela não será mais sorteada para nenhuma criança.', 'Apagar', true))) return;
+      try { await apiCall('/api/admin/bank/status', { method: 'POST', data: { id, status: b.dataset.bst } }); toast('Feito'); again(); } catch (e) { toast(e.message); } });
+    $$('[data-bedit]', root).forEach(b => b.onclick = () => { const el = b.closest('[data-bid]'); const id = el.dataset.bid;
+      const cur = (VIEW.bkItems || []).find(x => x.id === id) || {}; const q = cur.q || {};
+      el.innerHTML = `<label class="field">Enunciado<textarea data-f="q" rows="2">${esc(q.q || '')}</textarea></label>${q.type === 'mc' ? `<label class="field">Opções (uma por linha)<textarea data-f="options" rows="3">${esc((q.options || []).join('\n'))}</textarea></label>` : ''}
+        <label class="field">Resposta<input data-f="answer" value="${esc(q.answer || '')}"></label><label class="field">Dica<input data-f="hint" value="${esc(q.hint || '')}"></label>
+        <div class="row"><button class="btn small primary" data-bsave>Salvar</button></div>`;
+      $('[data-bsave]', el).onclick = async () => { const d = {}; $$('[data-f]', el).forEach(f => { d[f.dataset.f] = f.dataset.f === 'options' ? f.value.split('\n').map(x => x.trim()).filter(Boolean) : f.value; });
+        try { await apiCall('/api/admin/bank/item', { method: 'PUT', data: { id, q: d } }); toast('Pergunta salva ✏️'); again(); } catch (e) { toast(e.message); } };
+    });
+  };
+  VIEW.bkItems = VIEW.bkReported || [];
+  bindItems(B, () => pAdmin($('#pbody')));
+  const load = async () => {
+    VIEW.bkY = $('#bk-y', B).value; VIEW.bkW = clamp(Number($('#bk-w', B).value) || 1, 1, 37);
+    const out = $('#bk-out', B); out.innerHTML = '<p class="tiny muted">Carregando…</p>';
+    let r; try { r = await apiCall(`/api/admin/bank?prefix=${encodeURIComponent('uk|' + VIEW.bkY + '|')}`); } catch (e) { out.innerHTML = esc(e.message); return; }
+    const keys = r.keys.filter(k => k.ckey.endsWith('|w' + VIEW.bkW));
+    out.innerHTML = keys.length ? `<div class="tiny">${keys.map(k => `<button class="btn small" data-bkey="${esc(k.ckey)}">${esc((SUBJ[k.ckey.split('|')[2]] || {}).short || k.ckey.split('|')[2])}${k.ckey.split('|')[3] ? ' ' + k.ckey.split('|')[3].toUpperCase() : ''} · ${k.n}</button>`).join(' ')}</div><div id="bk-items"></div>` : '<p class="tiny muted">Nada no banco para esta semana ainda.</p>';
+    $$('[data-bkey]', out).forEach(b => b.onclick = async () => {
+      let l; try { l = await apiCall(`/api/admin/bank?ckey=${encodeURIComponent(b.dataset.bkey)}`); } catch (e) { toast(e.message); return; }
+      VIEW.bkItems = l.items; const box2 = $('#bk-items', out);
+      box2.innerHTML = l.items.map(item).join('') || '<p class="tiny muted">Vazio.</p>';
+      bindItems(box2, () => b.click());
+    });
+  };
+  $('#bk-load', B).onclick = load;
+  function item(it) { return `<div class="review-item bank-it ${it.status !== 'ok' ? 'fb-done' : ''}" data-bid="${esc(it.id)}"><div class="meta">${it.source} · ${it.status === 'hidden' ? '🙈 escondida' : '✅ ativa'} · usada ${it.uses}× · 🚩 ${it.reports}</div>
+      <div class="ans"><b>${esc(it.q.type)}</b> ${esc(it.q.q)}${it.q.options && it.q.options.length ? `<div class="tiny">opções: ${it.q.options.map(esc).join(' | ')}</div>` : ''}<div class="tiny">resposta: <b>${esc(it.q.answer || '(livre)')}</b> · dica: ${esc(it.q.hint || '')}</div></div>
+      <div class="row wrap">${it.status !== 'ok' ? '<button class="btn small" data-bst="ok">↺ Reativar</button>' : '<button class="btn small" data-bst="hidden">🙈 Esconder</button>'}<button class="btn small" data-bedit>✏️ Editar</button><button class="btn small danger" data-bst="deleted">Apagar</button></div></div>`; }
+}
 function bindAdminCurriculum(box) {
   const loadSubs = async () => { VIEW.curY = $('#cur-y', box).value; let r = { subjects: [] }; try { r = await apiCall(`/api/admin/curriculum?year=${VIEW.curY}`); } catch (e) { /* ignora */ }
     $('#cur-s', box).innerHTML = r.subjects.map(s => `<option value="${s.subject}:${s.level || ''}">${SUBJ[s.subject] ? SUBJ[s.subject].name : s.subject}${s.level ? ' ' + s.level.toUpperCase() : ''}</option>`).join(''); };
@@ -4630,8 +4683,10 @@ async function pAdmin(box) {
     <div class="card"><b>🚩 Avisos de problema (${o.reports.length})</b>
       ${o.reports.map(r => `<div class="review-item"><div class="meta">${new Date(r.created).toLocaleString('pt-BR')} · ${esc(r.family_name || '')}${r.child_name ? ' · ' + esc(r.child_name) : ''} · ${esc(r.kind || '')}</div><div class="ans">${esc(r.text)}</div>
         <button class="btn small" data-resolve="${r.id}">✔ Resolvido</button></div>`).join('') || '<p class="tiny muted">Nenhum aviso.</p>'}</div>
-    ${await adminCurriculumHtml()}`;
+    ${await adminCurriculumHtml()}
+    ${await adminBankHtml()}`;
   bindAdminCurriculum(box);
+  bindAdminBank(box);
   $('#ad-inv').onclick = async () => {
     try { const r = await apiCall('/api/admin/invites', { method: 'POST', data: { note: $('#ad-note').value } });
       $('#ad-inv-out').innerHTML = linkBox(r.link, r.expires, 'Convite para o app de estudos Estudos com a Lumi'); bindShare(box); } catch (e) { toast(e.message); }

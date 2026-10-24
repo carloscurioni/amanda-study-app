@@ -5,9 +5,14 @@
   "description": "Estudos com a Lumi — app de estudos gamificado com perguntas criadas pelo Claude",
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "bank:todo": "node scripts/bank-todo.mjs",
+    "bank:add": "node scripts/bank-add.mjs",
+    "bank:check": "node scripts/validate-bank.mjs",
+    "bank:build": "node scripts/build-bank.mjs"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
-  }
+  },
+  "type": "module"
 }
