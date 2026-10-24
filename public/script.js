@@ -30,7 +30,8 @@ const DEFAULT_SETTINGS = {
   pin: '1234',
   reward: 100,            // recompensa base: semana completa entregue na sexta
   penalty: 150,           // penalidade: semana não entregue (sempre MAIOR que a recompensa)
-  latePct: 50,            // recuperação: dias não feitos podem ser feitos até a sexta seguinte, valendo esta % da recompensa
+  latePct: 50,
+  dayCoins: 10,           // moedas por tarefa do dia concluída no próprio dia (0 desliga; atrasada dentro da semana vale metade)            // recuperação: dias não feitos podem ser feitos até a sexta seguinte, valendo esta % da recompensa
   extraPerCorrect: 2,     // moedas por acerto nos exercícios extras
   extraSetSize: 5,        // perguntas por rodada de extras
   extraSetsPerDay: 3,     // rodadas de extras com moedas por dia
@@ -316,7 +317,10 @@ function defaultState() {
     name: '',
     tourDone: false,
     coins: 0,
-    ledger: [],                 // {date, amount, reason}
+    ledger: [],                 // {id, date, amount, reason} — o saldo é coinsBase + soma do extrato
+    coinsBase: 0,               // moedas que não estão no extrato (lançamentos antigos já resumidos)
+    ledgerV: 2,
+    touched: {},                // quando os pais mexeram por último em ajustes/vales (para o merge entre aparelhos)
     settings: structuredCloneSafe(DEFAULT_SETTINGS),
     vouchers: structuredCloneSafe(DEFAULT_VOUCHERS),
     week: null,                 // semana atual (ver createWeek)
@@ -345,6 +349,11 @@ function normalizeState(s) {
   merged.settings.counts = Object.assign({}, DEFAULT_SETTINGS.counts, ((s && s.settings) || {}).counts || {});
   merged.equipped = Object.assign(base.equipped, (s && s.equipped) || {});
   merged.practice = Object.assign({ pt: [], en: [] }, merged.practice || {});
+  merged.touched = merged.touched || {};
+  // Extrato v2: todo lançamento tem id; o saldo passa a ser calculado (coinsBase guarda o que já não está no extrato)
+  merged.ledger = (merged.ledger || []).map((l, i) => l.id ? l : Object.assign({ id: 'm-' + hashStr(`${l.date}|${l.amount}|${l.reason}|${i}`).toString(36) }, l));
+  if (!s || (s.ledgerV || 0) < 2) { merged.coinsBase = (Number(merged.coins) || 0) - ledgerSum(merged.ledger); merged.ledgerV = 2; }
+  merged.coins = coinBalance(merged);
   if (!s || !s.voucherPack || s.voucherPack < 2) {   // perfis antigos recebem os vales novos uma vez
     const have = new Set((merged.vouchers || []).map(v => v.id));
     merged.vouchers = (merged.vouchers || []).concat(VOUCHER_PACK2.filter(v => !have.has(v.id)).map(v => Object.assign({}, v)));
@@ -368,13 +377,77 @@ function save() { persistLocal(); schedulePush(); }
 let saveTimer = null;
 function saveSoon() { clearTimeout(saveTimer); saveTimer = setTimeout(save, 250); }
 
-function addCoins(amount, reason) {
-  S.coins += amount;
-  S.ledger.unshift({ date: new Date().toISOString(), amount, reason });
-  S.ledger = S.ledger.slice(0, 200);
+// key: id fixo para eventos que só podem acontecer uma vez (ex.: 'day-2026-10-24'); assim dois aparelhos não pagam duas vezes.
+function addCoins(amount, reason, key) {
+  const id = key || ('L' + uid());
+  if (key && S.ledger.some(l => l.id === key || (l.covers || []).includes(key))) return false;
+  S.ledger.unshift({ id, date: new Date().toISOString(), amount, reason });
+  compactLedger(S);
+  S.coins = coinBalance(S);
   save();
   renderCoins(true);
+  return true;
 }
+function ledgerSum(list) { return (list || []).reduce((a, l) => a + (Number(l.amount) || 0), 0); }
+function coinBalance(st) { return (Number(st.coinsBase) || 0) + ledgerSum(st.ledger); }
+// Extrato muito grande: os lançamentos mais antigos viram um só "saldo anterior" (com a lista de ids que ele cobre).
+function compactLedger(st) {
+  if (st.ledger.length <= 1200) return;
+  const keep = st.ledger.slice(0, 600), old = st.ledger.slice(600);
+  const covers = old.flatMap(l => [l.id, ...(l.covers || [])]);
+  keep.push({ id: 'c-' + hashStr(covers.slice().sort().join(',')).toString(36), date: old[0].date, amount: ledgerSum(old), reason: 'Saldo de lançamentos antigos', covers });
+  st.ledger = keep;
+}
+function touch(k) { S.touched = S.touched || {}; S.touched[k] = Date.now(); }
+
+/* ---------- Merge seguro entre aparelhos (quando o servidor responde 409) ---------- */
+// Nada que a criança fez se perde: une dias concluídos, extrato, compras, resgates, palavras e histórico.
+function mergeStates(localRaw, remoteRaw) {
+  const L = normalizeState(JSON.parse(JSON.stringify(localRaw))), R = normalizeState(JSON.parse(JSON.stringify(remoteRaw)));
+  const M = R;
+  const byId = (a, b, key = 'id') => { const m = new Map(); [...(b || []), ...(a || [])].forEach(x => { if (x && x[key] != null && !m.has(x[key])) m.set(x[key], x); }); return [...m.values()]; };
+  // extrato: união por id, sem lançamentos já cobertos por um resumo
+  let led = byId(L.ledger, R.ledger);
+  const covered = new Set(led.flatMap(l => l.covers || []));
+  led = led.filter(l => !covered.has(l.id)).sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+  M.ledger = led; M.coinsBase = Number.isFinite(R.coinsBase) ? R.coinsBase : L.coinsBase; compactLedger(M);
+  M.coins = coinBalance(M);
+  M.owned = [...new Set([...(R.owned || []), ...(L.owned || [])])];
+  Object.keys(L.equipped || {}).forEach(k => { const v = L.equipped[k]; if (v == null || M.owned.includes(v) || k === 'mascot') M.equipped[k] = v; });
+  M.redemptions = byId(L.redemptions, R.redemptions).map(x => { const a = (L.redemptions || []).find(y => y.id === x.id), b = (R.redemptions || []).find(y => y.id === x.id); return Object.assign({}, x, { delivered: !!((a && a.delivered) || (b && b.delivered)) }); });
+  const newer = k => ((L.touched || {})[k] || 0) > ((R.touched || {})[k] || 0) ? L : R;
+  M.settings = newer('settings').settings; M.vouchers = newer('vouchers').vouchers;
+  M.touched = Object.assign({}, R.touched, L.touched, { settings: Math.max((L.touched || {}).settings || 0, (R.touched || {}).settings || 0), vouchers: Math.max((L.touched || {}).vouchers || 0, (R.touched || {}).vouchers || 0) });
+  M.tourDone = L.tourDone || R.tourDone;
+  // semana: a mais nova vale; se for a mesma, junta os dias (concluído ganha de não concluído; senão, o que tem mais respostas)
+  const wk = (a, b) => { if (!a) return b; if (!b) return a; if (a.id !== b.id) return (a.start > b.start || (a.start === b.start && (a.created || '') > (b.created || ''))) ? a : b;
+    const w = JSON.parse(JSON.stringify(b));
+    Object.keys(a.days || {}).forEach(dt => { const x = a.days[dt], y = w.days[dt]; if (!y) { w.days[dt] = x; return; }
+      const nx = Object.keys(x.answers || {}).length, ny = Object.keys(y.answers || {}).length;
+      if ((x.status === 'done' && y.status !== 'done') || (x.status === y.status && nx > ny)) w.days[dt] = x;
+      if (x.coinsAt || y.coinsAt) w.days[dt].coinsAt = x.coinsAt || y.coinsAt; });
+    w.settled = a.settled || b.settled; w.settledAt = a.settledAt || b.settledAt; return w; };
+  M.week = wk(L.week, R.week);
+  if (M.week === L.week) { M.lastTopics = L.lastTopics; M.lastOpts = L.lastOpts; }
+  if (L.recovery && R.recovery && L.recovery.start === R.recovery.start) {
+    const r = M.recovery; Object.keys(L.recovery.days).forEach(dt => { if (L.recovery.days[dt].status === 'done' && (!r.days[dt] || r.days[dt].status !== 'done')) r.days[dt] = L.recovery.days[dt]; });
+    r.n = Math.max(L.recovery.n, R.recovery.n); r.earned = Math.max(L.recovery.earned, R.recovery.earned);
+  } else if (L.recovery && (!R.recovery || L.recovery.start > R.recovery.start)) M.recovery = L.recovery;
+  M.history = byId(L.history, R.history, 'start').map(h => { const a = (L.history || []).find(x => x.start === h.start), b = (R.history || []).find(x => x.start === h.start); return a && b && a.done > b.done ? a : h; }).sort((a, b) => (a.start < b.start ? 1 : -1));
+  const sa = L.streak || {}, sb = R.streak || {};
+  M.streak = ((sa.last || '') > (sb.last || '') || ((sa.last || '') === (sb.last || '') && (sa.n || 0) > (sb.n || 0))) ? sa : sb;
+  M.streak.best = Math.max(sa.best || 0, sb.best || 0);
+  M.extras = Object.assign({}, R.extras); Object.entries(L.extras || {}).forEach(([d, v]) => { M.extras[d] = { sets: Math.max(v.sets || 0, (M.extras[d] || {}).sets || 0) }; });
+  M.workshop = Object.assign({}, R.workshop); Object.entries(L.workshop || {}).forEach(([d, v]) => { M.workshop[d] = Math.max(v || 0, M.workshop[d] || 0); });
+  if (L.extra && (!R.extra || (L.extra.date || '') >= (R.extra.date || ''))) M.extra = L.extra;
+  ['pt', 'en'].forEach(k => { M.practice[k] = [...new Set([...(L.practice[k] || []), ...(R.practice[k] || [])])].slice(0, 30); });
+  M.missed = (() => { const m = new Map(); [...(L.missed || []), ...(R.missed || [])].forEach(x => { if (x && x.q && !m.has(x.q.q)) m.set(x.q.q, x); }); return [...m.values()].slice(0, 40); })();
+  M.books = Object.assign({}, R.books); Object.entries(L.books || {}).forEach(([k, b]) => { if (!M.books[k] || (b.chapters || []).length > (M.books[k].chapters || []).length) M.books[k] = b; });
+  M.pendingImport = (() => { const m = new Map(); [...(L.pendingImport || []), ...(R.pendingImport || [])].forEach(q => { if (q && !m.has(q.q)) m.set(q.q, q); }); return [...m.values()]; })();
+  M.rev = R.rev;
+  return M;
+}
+
 
 /* =========================================================================
    3b. SERVIDOR — contas da família, perfis das crianças e sincronização
@@ -432,10 +505,11 @@ async function pushState() {
     if (id === Server.childId) { S.rev = r.rev; persistLocal(); Server.status = 'ok'; }
   } catch (e) {
     if (e.status === 409 && e.data && e.data.state && id === Server.childId) {
-      S = normalizeState(e.data.state); persistLocal(); Server.status = 'ok';
+      // outro aparelho salvou antes: junta os dois estados (nada se perde) e manda o resultado de volta
+      S = mergeStates(S, e.data.state); persistLocal(); Server.status = 'ok'; Server.again = true;
       applyTheme(); renderMascotMini(); renderCoins();
       if (!['work', 'check', 'selfcheck'].includes(currentScreen)) show(currentScreen);
-      toast('🔄 Atualizado com as mudanças de outro aparelho');
+      toast('🔄 Juntei com as mudanças de outro aparelho');
     } else if (e.status === 401) {
       Server.status = 'auth'; Server.me = null; VIEW.auth = { mode: 'login' }; show('login'); toast('Sua sessão expirou. Entre de novo.');
     } else { Server.dirty = true; Server.status = 'offline'; }
@@ -1711,9 +1785,26 @@ function recoveryActive() {
   return r && today() <= r.until && Object.values(r.days).some(d => d.status !== 'done') ? r : null;
 }
 function recoveryLeftCoins(r) { return r.pot - r.earned; }
+// Dias desta semana concluídos antes das moedas diárias existirem (ex.: sábado 24/10) recebem as moedas uma vez.
+function grantMissingDayCoins() {
+  const w = S.week; const dc = Math.max(0, Number(S.settings.dayCoins ?? 10));
+  if (!w || !dc) return 0;
+  let got = 0;
+  Object.values(w.days).forEach(d => {
+    if (d.status !== 'done' || d.coinsAt || !d.result || d.rec) return;
+    const doneOn = String(d.result.at || '').slice(0, 10);
+    if (!doneOn) { d.coinsAt = today(); return; }
+    const amt = doneOn && doneOn <= d.date ? dc : Math.round(dc / 2);
+    if (addCoins(amt, `Tarefa de ${DOW_FULL[d.dow].toLowerCase()} ${fmtDM(d.date)}`, 'day-' + d.date)) { d.coinsAt = today(); d.coins = amt; got += amt; }
+    else d.coinsAt = today();
+  });
+  return got;
+}
 // Liquidação: roda ao abrir o app. Depois da sexta, recompensa ou penalidade.
 function settleIfNeeded() {
   const w = S.week;
+  const back = grantMissingDayCoins();
+  if (back) setTimeout(() => say(`Opa! Faltou te dar as moedas das tarefas que você já fez: <b>+${back}</b> 🪙. 🎉`, { mood: 'wow' }), 600);
   // semanas fechadas antes desta função existir também ganham a recuperação
   if (w && w.settled === 'missed' && (!S.recovery || S.recovery.start !== w.start) && today() <= addDays(w.end, 7)) { openRecovery(w); save(); }
   if (!w || w.settled) return null;
@@ -1723,12 +1814,12 @@ function settleIfNeeded() {
   if (total === 0) { w.settled = 'empty'; save(); return null; }
   if (done === total) {
     w.settled = 'delivered'; w.settledAt = today();
-    addCoins(weekReward(w), `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue (${total} dia${total > 1 ? 's' : ''})`);
+    addCoins(weekReward(w), `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue (${total} dia${total > 1 ? 's' : ''})`, 'week-' + w.start);
     return { type: 'good', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} estava completa: <b>+${weekReward(w)}</b> 🪙!` };
   }
   w.settled = 'missed'; w.settledAt = today();
   const pen = weekPenalty(w);
-  addCoins(-pen, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} não entregue (${done}/${total} dias)`);
+  addCoins(-pen, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} não entregue (${done}/${total} dias)`, 'weekpen-' + w.start);
   const r = latePct() > 0 ? openRecovery(w) : null; save();
   return { type: 'bad', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} não foi entregue (${done} de ${total} dias). <b>−${pen}</b> 🪙.`
     + (r ? ` Mas dá para <b>recuperar</b>: faça ${r.total === 1 ? 'o dia que faltou' : `os ${r.total} dias que faltaram`} até sexta ${fmtDM(r.until)} e ganhe metade da recompensa (<b>+${r.pot}</b> 🪙). ⏳` : ' Bora recuperar nesta semana!') };
@@ -1738,7 +1829,7 @@ function deliverWeek() {
   if (!w || w.settled || !weekAllDone(w) || today() !== w.end) return;
   w.settled = 'delivered'; w.settledAt = today();
   const rw = weekReward(w);
-  addCoins(rw, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue (${requiredDays(w).length} dias)`);
+  addCoins(rw, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue (${requiredDays(w).length} dias)`, 'week-' + w.start);
   save();
   showCelebrate('Semana entregue! 🎉', `+${rw}`, 'Você completou todas as tarefas da semana. Que orgulho!');
 }
@@ -1901,7 +1992,8 @@ function deadlineText(w) {
   const left = daysBetween(t, w.end);
   const req = requiredDays(w);
   const done = req.filter(d => d.status === 'done').length;
-  return `<div class="deadline">Entrega: <b>sexta ${fmtDM(w.end)}</b> · ${left === 0 ? '<b>é hoje!</b>' : `faltam ${left} dia${left > 1 ? 's' : ''}`} · ${done}/${req.length} dias feitos</div>`;
+  return `<div class="deadline">Entrega: <b>sexta ${fmtDM(w.end)}</b> · ${left === 0 ? '<b>é hoje!</b>' : `faltam ${left} dia${left > 1 ? 's' : ''}`}</div>
+    <div class="bonus-line">🎁 <b>+${weekReward(w)}</b> na sexta ${fmtDM(w.end)} se completar todos os dias <span class="tiny">(${done} de ${req.length} feitos)</span>${Number(S.settings.dayCoins ?? 10) > 0 ? ` · cada tarefa no dia: <b>+${S.settings.dayCoins ?? 10}</b> 🪙` : ''}</div>`;
 }
 function openDay(date) {
   const w = S.week; if (!w) return;
@@ -2204,7 +2296,7 @@ function renderSetupAI() {
     <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? '✨ Atualizar a semana' : '✨ Criar minha semana com a Lumi'}</button></div>
     <button class="btn ghost small" data-act="subjects">Prefiro o gerador do próprio app (sem o Claude)</button>
   </div>`;
-  $('#year', el).onchange = e => { const before = stageOf(S.settings.year); S.settings.year = e.target.value; save();
+  $('#year', el).onchange = e => { const before = stageOf(S.settings.year); S.settings.year = e.target.value; touch('settings'); save();
     if (Server.me && Server.childId) apiCall(`/api/family/children/${Server.childId}`, { method: 'PATCH', data: { year: e.target.value } }).then(refreshMe).catch(() => {});
     renderSetupAI();
     if (e.target.value && stageOf(e.target.value) !== before && !S.settings.subjectsCustom) say(`Mudei as matérias para as de <b>${STAGE_LABEL[stageOf(e.target.value)]}</b>. Toque em 📚 para ajustar. 🦉`); };
@@ -2278,7 +2370,7 @@ function pickSubjects(after) {
   $('[data-act=ok]', c).onclick = () => {
     const ids = $$('input[type=checkbox]', c).filter(ch => ch.checked).map(ch => ch.value);
     if (!ids.length) { toast('Escolha pelo menos uma matéria.'); return; }
-    S.settings.subjects = ids; S.settings.subjectsCustom = true;
+    S.settings.subjects = ids; S.settings.subjectsCustom = true; touch('settings');
     if (ib) S.settings.ibLevels = Object.fromEntries(Object.entries(lv).filter(([k, v]) => v && ids.includes(k)));
     save(); closeModal(); after && after();
   };
@@ -2800,18 +2892,26 @@ function completeWork(c, via, extraMsg = '') {
   }
   if (c.rec) return completeRecovery(c, correct, obj.length, open, extraMsg);
   const streakMsg = bumpStreak(c.obj.date);
+  // Moedas do dia: na hora (no próprio dia, valor cheio; atrasada dentro da semana, metade)
+  const dc = Math.max(0, Number(S.settings.dayCoins ?? 10));
+  const onTime = c.obj.date === today();
+  const dayAmt = onTime ? dc : Math.round(dc / 2);
+  let dayGot = 0;
+  if (dayAmt > 0 && !c.obj.coinsAt && addCoins(dayAmt, `Tarefa de ${DOW_FULL[c.obj.dow].toLowerCase()} ${fmtDM(c.obj.date)}${onTime ? '' : ' (atrasada)'}`, 'day-' + c.obj.date)) { c.obj.coinsAt = today(); c.obj.coins = dayAmt; dayGot = dayAmt; }
   save();
   VIEW.work = { kind: 'day', date: c.obj.date };
   show('work');
   const w = S.week;
   const allDone = weekAllDone(w);
   const msg = (extraMsg ? extraMsg + '<br>' : '') + streakMsg + `Você acertou <b>${correct} de ${obj.length}</b>.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais corrigirem.` : ''}`;
+  const big = dayGot ? `+${dayGot}` : '';
   if (allDone && today() === w.end && !w.settled) {
-    showCelebrate('Tudo pronto! 🎉', '', msg + `<br><br>Todas as tarefas da semana estão feitas. Volte ao início e toque em <b>Entregar a semana</b> para ganhar <b>+${weekReward(w)}</b> 🪙!`);
+    showCelebrate('Tudo pronto! 🎉', big, msg + `<br><br>Todas as tarefas da semana estão feitas. Volte ao início e toque em <b>Entregar a semana</b> para ganhar <b>+${weekReward(w)}</b> 🪙!`);
   } else if (allDone) {
-    showCelebrate('Semana completa! 🎉', '', msg + `<br><br>Agora é só <b>entregar na sexta ${fmtDM(w.end)}</b> para ganhar <b>+${weekReward(w)}</b> 🪙.`);
+    showCelebrate('Semana completa! 🎉', big, msg + `<br><br>Agora é só <b>entregar na sexta ${fmtDM(w.end)}</b> para ganhar <b>+${weekReward(w)}</b> 🪙.`);
   } else {
-    showCelebrate('Tarefa do dia concluída! ✅', '', msg + ' O gabarito já está liberado.', 'happy');
+    const bonus = !w.settled ? `<br>🎁 Bônus da semana: <b>+${weekReward(w)}</b> na sexta ${fmtDM(w.end)} se completar todos os dias (${requiredDays(w).filter(d => d.status === 'done').length} de ${requiredDays(w).length} feitos).` : '';
+    showCelebrate('Tarefa do dia concluída! ✅', big, msg + (dayGot ? ` Você ganhou <b>+${dayGot}</b> 🪙 pela tarefa${onTime ? '' : ' (atrasada vale metade)'}.` : '') + bonus, 'happy');
   }
 }
 
@@ -2824,7 +2924,7 @@ function completeRecovery(c, correct, total, open, extraMsg) {
   if (S.week && S.week.start === r.start && S.week.days[d.date]) Object.assign(S.week.days[d.date], { status: 'done', answers: d.answers, result: d.result, verdicts: d.verdicts, notes: d.notes, via: d.via, recovered: true });
   const h = S.history.find(x => x.start === r.start); if (h) { h.done = Math.min(h.total, h.done + 1); h.recovered = (h.recovered || 0) + 1; }
   save();
-  if (coins) addCoins(coins, `Recuperação ${DOW_LABEL[d.dow]} ${fmtDM(d.date)} (vale metade)`);
+  if (coins) addCoins(coins, `Recuperação ${DOW_LABEL[d.dow]} ${fmtDM(d.date)} (vale metade)`, 'rec-' + d.date);
   VIEW.work = { kind: 'day', date: d.date, rec: true };
   show('work');
   const left = Object.values(r.days).filter(x => x.status !== 'done').length;
@@ -2841,7 +2941,7 @@ function bumpStreak(date) {
   if (st.last === t) return '';
   st.n = st.last === addDays(t, -1) ? st.n + 1 : 1;
   st.last = t; st.best = Math.max(st.best || 0, st.n);
-  if (st.n % 5 === 0) { addCoins(STREAK_BONUS, `Sequência de ${st.n} dias 🔥`); return `🔥 <b>${st.n} dias seguidos!</b> Bônus de <b>+${STREAK_BONUS}</b> 🪙<br>`; }
+  if (st.n % 5 === 0) { addCoins(STREAK_BONUS, `Sequência de ${st.n} dias 🔥`, 'streak-' + t); return `🔥 <b>${st.n} dias seguidos!</b> Bônus de <b>+${STREAK_BONUS}</b> 🪙<br>`; }
   return `🔥 Sequência: <b>${st.n} dia${st.n > 1 ? 's' : ''}</b> (a cada 5 dias: +${STREAK_BONUS} 🪙)<br>`;
 }
 
@@ -3401,9 +3501,9 @@ function pVouchers(box) {
     <div class="row" style="margin-top:8px"><button class="btn small" id="vadd">+ Novo vale</button><button class="btn small primary" id="vsave">Salvar vales</button></div></div>`;
   $$('[data-deliv]', box).forEach(b => b.onclick = () => { const r = S.redemptions.find(x => x.id === b.dataset.deliv); r.delivered = true; save(); pVouchers(box); });
   const collect = () => { $$('[data-vn]', box).forEach(inp => { S.vouchers[inp.dataset.vn].name = inp.value.trim() || 'Vale'; }); $$('[data-vp]', box).forEach(inp => { S.vouchers[inp.dataset.vp].price = Math.max(1, Math.round(Number(inp.value) || 1)); }); };
-  $$('[data-vdel]', box).forEach(b => b.onclick = () => { collect(); S.vouchers.splice(Number(b.dataset.vdel), 1); save(); pVouchers(box); });
-  $('#vadd').onclick = () => { collect(); S.vouchers.push({ id: 'v-' + uid(), name: 'Novo vale', price: 200 }); save(); pVouchers(box); };
-  $('#vsave').onclick = () => { collect(); save(); toast('Vales salvos'); };
+  $$('[data-vdel]', box).forEach(b => b.onclick = () => { collect(); S.vouchers.splice(Number(b.dataset.vdel), 1); touch('vouchers'); save(); pVouchers(box); });
+  $('#vadd').onclick = () => { collect(); S.vouchers.push({ id: 'v-' + uid(), name: 'Novo vale', price: 200 }); touch('vouchers'); save(); pVouchers(box); };
+  $('#vsave').onclick = () => { collect(); touch('vouchers'); save(); toast('Vales salvos'); };
 }
 function pSettings(box) {
   const st = S.settings;
@@ -3411,6 +3511,7 @@ function pSettings(box) {
       <label class="field">Recompensa da semana entregue<input type="number" id="s-reward" value="${st.reward}"></label>
       <label class="field">Penalidade (semana não entregue)<input type="number" id="s-penalty" value="${st.penalty}"></label>
       <label class="field">Recuperação atrasada vale (% da recompensa)<input type="number" id="s-late" value="${latePct()}"></label>
+      <label class="field">Moedas por tarefa do dia (0 desliga)<input type="number" id="s-dayc" value="${st.dayCoins ?? 10}"></label>
       <label class="field">Moedas por acerto nos extras<input type="number" id="s-xpc" value="${st.extraPerCorrect}"></label>
       <label class="field">Perguntas por rodada de extras<input type="number" id="s-xsize" value="${st.extraSetSize}"></label>
       <label class="field">Rodadas de extras com moedas/dia<input type="number" id="s-xsets" value="${st.extraSetsPerDay}"></label>
@@ -3437,7 +3538,7 @@ function pSettings(box) {
     const reward = Math.max(0, num('#s-reward', st.reward)), penalty = num('#s-penalty', st.penalty);
     if (penalty <= reward) { toast('A penalidade precisa ser MAIOR que a recompensa.'); return; }
     Object.assign(st, {
-      reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
+      reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
       extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10), minPerDay: clamp(num('#s-min', st.minPerDay), 1, 15), maxPerDay: clamp(num('#s-max', st.maxPerDay), 3, 40),
       workshopCoins: clamp(num('#s-wkc', st.workshopCoins ?? 3), 0, 50), workshopPerDay: clamp(num('#s-wkd', st.workshopPerDay ?? 5), 0, 20),
       countMode: $('#s-cmode').value, perSubject: clamp(num('#s-per', st.perSubject || 2), 1, 4), dailyReading: $('#s-dread').value === '1',
@@ -3448,7 +3549,7 @@ function pSettings(box) {
     $$('[data-dc]', box).forEach(inp => { st.counts[inp.dataset.dc] = clamp(Math.round(Number(inp.value) || 0), 0, st.maxPerDay); });
     const pin = ($('#s-pin') || { value: '' }).value.trim(); if (pin) st.pin = pin;
     const nm = ($('#s-name') || { value: '' }).value.trim(); if (nm) S.name = nm;
-    save(); toast('Ajustes salvos');
+    touch('settings'); save(); toast('Ajustes salvos');
   };
   $('#s-tour').onclick = () => { show('home'); setTimeout(runTour, 300); };
 }

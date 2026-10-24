@@ -735,3 +735,7 @@ body.theme-space .recovery .rec-pot { color: #ffd08a; }
 .wk-draw .dw { display: grid; gap: 1.5mm; justify-items: center; }
 .wk-draw .box { width: 100%; height: 32mm; border: 1.4px solid #444; border-radius: 3mm; }
 .wk-draw i { width: 100%; height: 7mm; border-bottom: 1.3px solid #444; }
+
+/* Bônus pendente da semana */
+.bonus-line { margin-top: 4px; font-size: 13.5px; font-weight: 700; background: #fff3bf; border-radius: 10px; padding: 4px 8px; display: inline-block; }
+body.theme-space .bonus-line, body.theme-moon .bonus-line, body.theme-aurora .bonus-line { color: #2b2350; }
