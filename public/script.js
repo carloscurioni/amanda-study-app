@@ -46,7 +46,7 @@ const DEFAULT_SETTINGS = {
   minPerDay: 3, maxPerDay: 30, countMode: 'auto', perSubject: 2,   // (antigos: não são mais usados)
   dailyReading: true,     // todo dia tem um texto (capítulo do "livro da semana") com resumo e perguntas
   readLevel: 'at',        // nível padrão do texto diário
-  autoVoice: true,        // a Lumi lê as aulinhas em voz alta sozinha
+  autoVoice: false,       // a Lumi NÃO lê sozinha: o áudio só toca no 🔊 (pedido do Carlos, 24/10)
   workshopCoins: 3,       // moedas por atividade concluída na Oficina de palavras
   workshopPerDay: 5,      // atividades com moedas por dia na Oficina
   counts: { sab: 9, dom: 9, seg: 7, ter: 7, qua: 7, qui: 7, sex: 5 }, // fim de semana um pouco maior
@@ -355,6 +355,7 @@ function normalizeState(s) {
   const ss = (s && s.settings) || {};
   if (ss.perTheme == null && ss.perSubject) merged.settings.perTheme = ss.perSubject;   // quem já tinha "por matéria" herda
   merged.settings.readQ = Object.assign({ pt: 'auto', en: 'auto' }, ss.readQ || {});
+  if (!ss.autoVoiceV2) { merged.settings.autoVoice = false; merged.settings.autoVoiceV2 = true; }   // desliga o áudio automático de quem já tinha
   merged.equipped = Object.assign(base.equipped, (s && s.equipped) || {});
   merged.practice = Object.assign({ pt: [], en: [] }, merged.practice || {});
   merged.touched = merged.touched || {};
@@ -476,7 +477,8 @@ function mergeStates(localRaw, remoteRaw) {
    ========================================================================= */
 const CHILD_KEY = 'lumi-child';
 const Server = { on: false, ai: false, needsSetup: false, canSetup: false, me: null, childId: null, pushing: false, again: false, dirty: false, timer: null, status: 'local' };
-const AI_ROUTES = { '/api/plan-outline': 'plan-outline', '/api/plan-day': 'plan-day', '/api/ai/bank-fill': 'bank-fill', '/api/ai/bank-book': 'bank-book', '/api/ai/bank-chapter': 'bank-chapter', '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open', '/api/lesson': 'lesson', '/api/reading': 'reading' };
+
+const AI_ROUTES = { '/api/ai/challenge': 'challenge', '/api/plan-outline': 'plan-outline', '/api/plan-day': 'plan-day', '/api/ai/bank-fill': 'bank-fill', '/api/ai/bank-book': 'bank-book', '/api/ai/bank-chapter': 'bank-chapter', '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open', '/api/lesson': 'lesson', '/api/reading': 'reading' };
 const AVATARS = ['🦉', '🦊', '🐼', '🐱', '🐶', '🦄', '🐸', '🐧', '🐯', '🐰', '🐨', '🐙'];
 function localKey(id = Server.childId) { return id ? `${STORE_KEY}:${id}` : STORE_KEY; }
 function savedChild() { try { return localStorage.getItem(CHILD_KEY) || ''; } catch (e) { return ''; } }
@@ -2242,6 +2244,7 @@ function renderHome() {
       <div class="card actions">${main}</div>${questsHtml()}
       <div class="card actions">
         <button class="btn gold wide" data-act="extra">⭐ Extra exercises ${left ? `(+${S.settings.extraPerCorrect} 🪙/correct · ${left} today)` : '(no coins today)'}</button>
+        ${ttOn() ? '<button class="btn wide tt-home" data-act="tt">⏱️ Times tables</button>' : ''}
         <div class="actions-2"><button class="btn" data-act="setup">📝 My week</button><button class="btn" data-act="shop">🛒 Shop</button></div>
       </div>`;
   }
@@ -2259,6 +2262,7 @@ function renderHome() {
     if (a === 'setup') { VIEW.setupCycle = null; show('setup'); }
     else if (a === 'setup-next') { VIEW.setupCycle = 'next'; show('setup'); }
     else if (a === 'extra') openExtras();
+    else if (a === 'tt') openTimesTables();
     else if (a === 'shop') show('shop');
     else if (a === 'deliver') deliverWeek();
     else if (a === 'switch') switchProfile();
@@ -2301,10 +2305,16 @@ function openDay(date) {
   show('work');
 }
 // Extras: o estudante escolhe a matéria, entre as que ele faz. Math e English sempre aparecem se fizerem parte.
+// Matérias com assunto nesta semana (os extras ficam nelas)
+function weekSubjects() {
+  const tp = (S.week ? S.week.topics : S.lastTopics) || {};
+  const ids = mySubjects().filter(id => String(tp[id] || '').trim());
+  return ids.length ? ids : null;
+}
 function extraGroups() {
-  const mine = mySubjects();
+  const mine = weekSubjects() || mySubjects();
   const has = id => mine.includes(id);
-  const g = [{ id: 'mix', label: '🎲 Mixed', subjects: null }];
+  const g = [{ id: 'mix', label: '🎲 Mixed', subjects: weekSubjects() }];
   const used = new Set();
   const add = (id, label, list) => { const subs = list.filter(has); if (subs.length) { g.push({ id, label, subjects: subs }); subs.forEach(x => used.add(x)); } };
   add('math', '➗ Math', ['math', 'fmath']);
@@ -2333,20 +2343,23 @@ function openExtras() {
   // texto extra: o idioma que NÃO está no texto do dia (sem texto hoje: os dois)
   const todayLangs = S.week && S.week.days[t] ? dayPassages(S.week.days[t]).map(x => SUBJ[x.subject].lang) : [];
   const other = ['pt', 'en'].filter(l => !todayLangs.includes(l));
-  const langs = todayLangs.length && other.length ? other : bookLangs();
+  const suggest = todayLangs.length && other.length ? other[0] : null;   // sugestão: o idioma que não foi o do texto do dia
+  const langs = ['pt', 'en'].sort((a, b) => (b === suggest) - (a === suggest));   // a criança escolhe inglês ou português
   const books = S.books || {};
   const missed = (S.missed || []).length;
   const c = openModal(`<div class="modal-head"><h3>⭐ Extra exercises</h3><button class="btn small" data-close>Close</button></div>
     <div class="modal-body extras-menu"><p class="tiny muted" style="margin:0 0 6px">${left ? `Worth <b>${S.settings.extraPerCorrect} 🪙 per correct answer</b> · ${left} coin round${left > 1 ? 's' : ''} left today.` : 'Today’s coin rounds are used up: now it’s just practice. 💪'}</p>
-    ${Server.ai && langs.length ? `<div class="xm-sec"><b>📖 Extra reading</b> <span class="tiny muted">${todayLangs.length && other.length ? `today’s text was in ${todayLangs[0] === 'pt' ? 'Portuguese' : 'English'}, so the extra one is in ${other[0] === 'pt' ? 'Portuguese' : 'English'}` : 'a new chapter + summary + questions'}</span>
-      <div class="extra-grid">${langs.map(l => `<button class="btn big" data-book="${l}">${l === 'pt' ? '🇧🇷 Em português' : '🇬🇧 In English'}<span class="tiny muted">${books[l] && books[l].title ? `continues “${esc(books[l].title)}” · ch. ${books[l].chapters.length + 1}` : 'starts a new book'}</span></button>`).join('')}</div></div>` : ''}
+    ${Server.ai && langs.length ? `<div class="xm-sec"><b>📖 Extra reading</b> <span class="tiny muted">a new chapter + summary + questions — choose English or Portuguese${suggest ? ` (today’s text was in ${todayLangs[0] === 'pt' ? 'Portuguese' : 'English'}, so ⭐ ${suggest === 'pt' ? 'Portuguese' : 'English'} is suggested)` : ''}</span>
+      <div class="extra-grid">${langs.map(l => `<button class="btn big ${l === suggest ? 'suggested' : ''}" data-book="${l}">${l === suggest ? '⭐ ' : ''}${l === 'pt' ? '🇧🇷 Em português' : '🇬🇧 In English'}<span class="tiny muted">${books[l] && books[l].title ? `continues “${esc(books[l].title)}” · ch. ${books[l].chapters.length + 1}` : 'starts a new book'}</span></button>`).join('')}</div></div>` : ''}
     ${missed ? `<div class="xm-sec"><b>🧠 Practise my mistakes</b> <span class="tiny muted">${missed} question${missed > 1 ? 's' : ''} you got wrong or didn’t know</span>
       <div class="extra-grid one"><button class="btn big gold" data-review>🧠 Practise what I got wrong</button></div></div>` : ''}
-    <div class="xm-sec"><b>🎲 Extra quiz</b> <span class="tiny muted">choose a subject</span>
+    ${ttOn() ? `<div class="xm-sec"><div class="extra-grid one"><button class="btn big" data-tt>⏱️ Times tables <span class="tiny muted">against the clock · ${ttSeconds()} s per question</span></button></div></div>` : ''}
+    <div class="xm-sec"><b>🎲 Extra quiz</b> <span class="tiny muted">${weekSubjects() ? 'about this week’s topics — choose a subject' : 'choose a subject'}</span>
       <div class="extra-grid">${extraGroups().map(g => `<button class="btn big" data-g="${g.id}">${g.label}</button>`).join('')}</div></div>
     <div class="xm-sec"><div class="extra-grid one"><button class="btn big" data-workshop>✏️ Word workshop <span class="tiny muted">word search, rainbow words and more</span></button></div></div></div>`);
   $$('[data-g]', c).forEach(btn => btn.onclick = () => { closeModal(); startExtras(extraGroups().find(g => g.id === btn.dataset.g)); });
   $$('[data-book]', c).forEach(btn => btn.onclick = () => { closeModal(); startReading(btn.dataset.book); });
+  const ttb = $('[data-tt]', c); if (ttb) ttb.onclick = () => { closeModal(); openTimesTables(); };
   const rv = $('[data-review]', c); if (rv) rv.onclick = () => { closeModal(); startReview(); };
   $('[data-workshop]', c).onclick = () => { closeModal(); show('workshop'); };
 }
@@ -2417,7 +2430,7 @@ function localExtras(size, subjects) {
   const t = today();
   const topics = (S.week ? S.week.topics : S.lastTopics) || {};
   const mine = mySubjects();
-  let act = subjects || [...new Set([...['math', 'en'].filter(x => mine.includes(x)), ...mine.filter(id => (topics[id] || '').trim())])];
+  let act = subjects || weekSubjects() || [...new Set([...['math', 'en'].filter(x => mine.includes(x)), ...mine.filter(id => (topics[id] || '').trim())])];
   if (!act.length) act = mine.slice(0, 4);
   const rng = makeRng('extra|' + t + '|' + uid());
   const pools = act.map(id => buildPool(id, (topics[id] || '').trim() || EXTRA_DEFAULTS[id] || '', 'x' + t + uid(), [])
@@ -2897,6 +2910,176 @@ async function planWithBank(base, info, lineOf) {
     bank: { fromBank, created },
   };
 }
+/* ---------- ⏱️ Times tables (Year 4–5) ----------
+   Like the Multiplication Tables Check (Year 4, England): 25 questions from the 2–12 times tables, one at a time, against
+   the clock (6 s in Year 4, 5 s in Year 5; parents can change it). Plus practice of a single table and of the facts missed.
+   Facts the child gets wrong come back more often. Coins: 1 per correct answer (3 paid rounds a day). */
+const ttOn = () => ['Y4', 'Y5'].includes(S.settings.year) && mySubjects().includes('math');
+const ttSeconds = () => clamp(Number(S.settings.ttSeconds) || (S.settings.year === 'Y4' ? 6 : 5), 3, 15);
+function ttState() { S.tt = S.tt || { best: {}, weak: {}, history: [], days: {} }; S.tt.weak = S.tt.weak || {}; S.tt.days = S.tt.days || {}; S.tt.best = S.tt.best || {}; S.tt.history = S.tt.history || []; return S.tt; }
+function ttFacts(mode, table, missed) {
+  const st = ttState(); const rng = makeRng('tt|' + Date.now());
+  if (mode === 'missed') return rng.shuffle(missed.slice()).slice(0, 25);
+  if (mode === 'table') {   // one table: every fact 2–12, shuffled, both orders
+    return rng.shuffle(Array.from({ length: 11 }, (_, i) => (rng.next() < .5 ? [table, i + 2] : [i + 2, table])));
+  }
+  const pool = [];   // check: 2–12 × 2–12, weighted (missed facts and the harder tables come up more)
+  for (let a = 2; a <= 12; a++) for (let b = 2; b <= 12; b++) {
+    const w = 1 + (st.weak[`${Math.min(a, b)}x${Math.max(a, b)}`] || 0) * 2 + ([6, 7, 8, 9, 12].includes(a) || [6, 7, 8, 9, 12].includes(b) ? .6 : 0);
+    pool.push({ f: [a, b], w });
+  }
+  const out = []; const seen = new Set();
+  while (out.length < 25) {
+    let r = rng.next() * pool.reduce((x, p) => x + p.w, 0); const p = pool.find(x => (r -= x.w) <= 0) || pool[0];
+    const k = `${Math.min(...p.f)}x${Math.max(...p.f)}`; if (seen.has(k)) continue; seen.add(k); out.push(p.f);
+  }
+  return out;
+}
+function openTimesTables() {
+  const st = ttState(); const t = today();
+  const paidLeft = Math.max(0, 3 - (st.days[t] || 0));
+  const best = k => st.best[k] != null ? `<span class="tiny muted">best ${st.best[k]}</span>` : '';
+  const weak = Object.entries(st.weak).filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1]).slice(0, 12);
+  const m = openModal(`<div class="modal-head"><h3>⏱️ Times tables</h3><button class="btn small" data-close>Close</button></div>
+    <div class="modal-body tt-menu"><p class="tiny muted" style="margin:0 0 8px">${ttSeconds()} seconds per question · ${paidLeft ? `+1 🪙 per correct answer (${paidLeft} round${paidLeft > 1 ? 's' : ''} with coins left today)` : 'practice only today — no more coins'}</p>
+      <button class="btn primary big wide" data-ttgo="check">🎯 Times tables check — 25 questions ${best('check')}</button>
+      <div class="xm-sec"><b>🔢 Practise one table</b><div class="tt-tables">${Array.from({ length: 11 }, (_, i) => i + 2).map(n => `<button class="btn" data-ttgo="table" data-n="${n}">${n}×<br>${best('t' + n) || '<span class="tiny muted">·</span>'}</button>`).join('')}</div></div>
+      ${weak.length ? `<div class="xm-sec"><b>🧠 Facts to practise</b> <span class="tiny muted">${weak.map(([k]) => k.replace('x', '×')).join(' · ')}</span>
+        <div class="extra-grid one"><button class="btn" data-ttgo="missed">Practise these ${weak.length}</button></div></div>` : ''}
+      ${st.history.length ? `<div class="tiny muted" style="margin-top:8px">Last: ${st.history.slice(-3).reverse().map(h => `${h.mode === 'check' ? 'check' : h.mode === 'table' ? h.table + '×' : 'missed'} ${h.score}/${h.total}`).join(' · ')}</div>` : ''}</div>`);
+  $$('[data-ttgo]', m).forEach(b => b.onclick = () => {
+    const mode = b.dataset.ttgo;
+    const missed = weak.map(([k]) => k.split('x').map(Number));
+    closeModal(); runTimesTables(mode, Number(b.dataset.n) || 0, mode === 'missed' ? missed : []);
+  });
+}
+function runTimesTables(mode, table, missed) {
+  const facts = ttFacts(mode, table, missed);
+  const secs = ttSeconds(); const res = []; let i = 0, timer = null, started = 0, locked = false;
+  const m = openModal(`<div class="modal-head"><h3>⏱️ ${mode === 'check' ? 'Times tables check' : mode === 'table' ? `The ${table} times table` : 'Facts to practise'}</h3><button class="btn small" data-quit>Stop</button></div>
+    <div class="modal-body tt-play"><div class="tt-top"><span id="tt-n"></span><span id="tt-score"></span></div>
+      <div class="tt-bar"><i id="tt-bar"></i></div>
+      <div class="tt-q" id="tt-q"></div>
+      <div class="tt-ans"><input id="tt-in" inputmode="numeric" autocomplete="off" maxlength="3" aria-label="Answer"></div>
+      <div class="tt-fb" id="tt-fb"></div>
+      <div class="tt-pad">${[1, 2, 3, 4, 5, 6, 7, 8, 9, '⌫', 0, '✔'].map(k => `<button type="button" data-k="${k}">${k}</button>`).join('')}</div></div>`, { wide: true });
+  const inp = $('#tt-in', m), bar = $('#tt-bar', m);
+  const stop = () => { clearTimeout(timer); timer = null; cancelAnimationFrame(VIEW.ttRaf); };
+  const tick = () => { const left = Math.max(0, 1 - (performance.now() - started) / (secs * 1000)); bar.style.width = (left * 100) + '%'; bar.classList.toggle('low', left < .34); if (left > 0 && !locked) VIEW.ttRaf = requestAnimationFrame(tick); };
+  const show = () => {
+    if (i >= facts.length) { finish(); return; }
+    const [a, b] = facts[i]; locked = false;
+    $('#tt-n', m).textContent = `${i + 1} / ${facts.length}`; $('#tt-score', m).textContent = `✓ ${res.filter(r => r.ok).length}`;
+    $('#tt-q', m).textContent = `${a} × ${b} =`; $('#tt-fb', m).textContent = ''; $('#tt-fb', m).className = 'tt-fb';
+    inp.value = ''; inp.focus({ preventScroll: true });
+    started = performance.now(); tick();
+    timer = setTimeout(() => answer(true), secs * 1000);
+  };
+  const answer = (timeout = false) => {
+    if (locked) return; locked = true; stop();
+    const [a, b] = facts[i]; const v = inp.value.trim(); const ok = !timeout && Number(v) === a * b && v !== '';
+    res.push({ a, b, given: v, ok, ms: Math.round(performance.now() - started), timeout });
+    const fb = $('#tt-fb', m); fb.className = 'tt-fb ' + (ok ? 'ok' : 'bad');
+    fb.textContent = ok ? '✓' : `${timeout ? '⏰ ' : ''}${a} × ${b} = ${a * b}`;
+    i++; setTimeout(show, ok ? 450 : 1300);
+  };
+  const finish = () => {
+    stop();
+    const st = ttState(); const t = today(); const score = res.filter(r => r.ok).length;
+    res.forEach(r => { const k = `${Math.min(r.a, r.b)}x${Math.max(r.a, r.b)}`; st.weak[k] = r.ok ? Math.max(0, (st.weak[k] || 0) - 1) : (st.weak[k] || 0) + 1; if (!st.weak[k]) delete st.weak[k]; });
+    const key = mode === 'check' ? 'check' : mode === 'table' ? 't' + table : null;
+    const newBest = key && (st.best[key] == null || score > st.best[key]);
+    if (newBest) st.best[key] = score;
+    const answered = res.filter(r => !r.timeout);
+    st.history = st.history.concat([{ date: t, mode, table, score, total: res.length, avgMs: answered.length ? Math.round(answered.reduce((x, r) => x + r.ms, 0) / answered.length) : null }]).slice(-50);
+    const paid = (st.days[t] || 0) < 3; let coins = 0;
+    if (paid && res.length) { st.days[t] = (st.days[t] || 0) + 1; coins = score + (mode === 'check' && score === res.length ? 5 : 0); }
+    if (coins) addCoins(coins, `Times tables: ${score}/${res.length}`, 'tt-' + Date.now());
+    questEvent('extra_done', { perfect: score === res.length });
+    save();
+    const wrong = res.filter(r => !r.ok);
+    if (score === res.length) setTimeout(() => celebrateFX('perfect'), 300);
+    showCelebrate(score === res.length ? 'Perfect! 🎉' : score >= res.length * .8 ? 'Brilliant! ⭐' : 'Good practice! 💪', coins ? `+${coins}` : '',
+      `You got <b>${score} of ${res.length}</b> in time${newBest && res.length ? ' — a new best! 🏆' : ''}.${answered.length ? ` Average: <b>${(answered.reduce((x, r) => x + r.ms, 0) / answered.length / 1000).toFixed(1)} s</b>.` : ''}
+      ${wrong.length ? `<br><br><b>Practise these:</b> ${wrong.map(r => `${r.a} × ${r.b} = ${r.a * r.b}`).join(' · ')}` : ''}`, score === res.length ? 'wow' : 'happy');
+  };
+  $$('[data-k]', m).forEach(b => b.onclick = () => {
+    const k = b.dataset.k;
+    if (k === '⌫') inp.value = inp.value.slice(0, -1); else if (k === '✔') { if (inp.value) answer(); } else if (inp.value.length < 3) inp.value += k;
+    inp.focus({ preventScroll: true });
+  });
+  inp.oninput = () => { inp.value = inp.value.replace(/\D/g, '').slice(0, 3); };
+  inp.onkeydown = e => { if (e.key === 'Enter' && inp.value) answer(); };
+  $('[data-quit]', m).onclick = () => { stop(); i = facts.length; closeModal(); if (res.length) finish(); };
+  setTimeout(show, 300);
+}
+/* ---------- 🙋 Challenge the marking ----------
+   After finishing, a question marked wrong gets "🙋 I think I’m right". Lumi checks again (Claude); if the child is right, the
+   mark (and the coins of an extra) are fixed. If Lumi still disagrees, the child can ask a grown-up: it shows up in the
+   Parents’ area (Marking), where the parent decides. One challenge per question. */
+const chalOf = (c, q) => ((c.obj.challenges || {})[q.id]) || null;
+function chalBtn(q, c) {
+  if (!c.done || q.type === 'listen') return '';
+  const ch = chalOf(c, q);
+  if (ch) return ch.status === 'parent' ? '<button type="button" class="chal wait" data-chal title="Waiting for a grown-up">🙋⏳</button>' : '';
+  const v = verdict(c, q);
+  if (v !== false) return '';
+  return `<button type="button" class="chal" data-chal title="${q.lang === 'pt' ? 'Acho que acertei' : 'I think I’m right'}">🙋</button>`;
+}
+function chalAccept(c, q, note, by) {
+  c.obj.verdicts = c.obj.verdicts || {}; c.obj.notes = c.obj.notes || {}; c.obj.challenges = c.obj.challenges || {};
+  c.obj.verdicts[q.id] = 'ok'; if (note) c.obj.notes[q.id] = note;
+  c.obj.challenges[q.id] = Object.assign(c.obj.challenges[q.id] || {}, { status: 'accepted', by });
+  if (c.obj.result) c.obj.result.correct = Math.min(c.obj.result.total, (c.obj.result.correct || 0) + 1);
+  S.missed = (S.missed || []).filter(m => m.q.q !== q.q);
+  if (c.kind === 'extra' && c.obj.paid) addCoins(S.settings.extraPerCorrect, 'Challenge accepted ✓', 'chal-' + q.id);
+  save();
+}
+function openChallenge(q, c) {
+  const ch = chalOf(c, q); const pt = q.lang === 'pt';
+  if (ch && ch.status === 'parent') { say(pt ? 'Um adulto vai olhar essa pergunta na área dos pais. 🙋' : 'A grown-up will look at this one in the Parents’ area. 🙋', { mood: 'think' }); return; }
+  const given = q.type === 'proof' ? Object.entries(proofAns(c.answers[q.id])).map(([i, v]) => `${(q.errors.find(e => String(e.idx) === String(i)) || {}).wrong || ''} → ${v}`).join('; ') : String(c.answers[q.id] || '');
+  const m = openModal(`<div class="modal-head"><h3>🙋 ${pt ? 'Acho que acertei' : 'I think I’m right'}</h3><button class="btn small" data-close>${pt ? 'Fechar' : 'Close'}</button></div>
+    <div class="modal-body chal-body"><p><b>${esc(q.q)}</b></p>
+      <div class="chal-row"><span>${pt ? 'Sua resposta' : 'Your answer'}:</span> <b>${esc(given || '—')}</b></div>
+      <div class="chal-row"><span>${pt ? 'Gabarito' : 'Answer key'}:</span> <b>${esc(q.type === 'open' ? (pt ? '(resposta livre)' : '(free answer)') : q.answer)}</b></div>
+      <label class="field">${pt ? 'Por que você acha que está certo? (opcional)' : 'Why do you think you’re right? (optional)'}<textarea id="chal-why" rows="2" maxlength="300"></textarea></label>
+      <div id="chal-out"></div></div>
+    <div class="modal-foot"><span class="grow"></span>${Server.ai ? `<button class="btn primary" id="chal-go">🦉 ${pt ? 'Lumi, confere de novo' : 'Lumi, check again'}</button>` : `<button class="btn primary" id="chal-adult">🙋 ${pt ? 'Pedir para um adulto' : 'Ask a grown-up'}</button>`}</div>`);
+  const askAdult = (lumi) => {
+    c.obj.challenges = c.obj.challenges || {};
+    c.obj.challenges[q.id] = { status: 'parent', given, why: $('#chal-why', m) ? $('#chal-why', m).value.trim() : '', lumi: lumi || '', at: new Date().toISOString() };
+    save();
+    if (Server.me) apiCall('/api/report', { method: 'POST', data: { childId: Server.childId, kind: 'challenge', text: `${q.q}\nAnswer key: ${q.answer}\nChild: ${given}\n${lumi ? 'Lumi: ' + lumi : ''}` } }).catch(() => {});
+    closeModal(); renderWork(); toast(pt ? 'Pronto! Um adulto vai olhar. 🙋' : 'Done! A grown-up will take a look. 🙋');
+  };
+  const ad = $('#chal-adult', m); if (ad) ad.onclick = () => askAdult('');
+  const go = $('#chal-go', m); if (go) go.onclick = async () => {
+    go.disabled = true; $('#chal-out', m).innerHTML = `<p class="muted">${pt ? 'A Lumi está conferindo… 🦉' : 'Lumi is checking… 🦉'}</p>`;
+    let r;
+    try { r = await apiCall('/api/ai/challenge', { method: 'POST', timeout: 60000, data: { q: q.type === 'proof' ? `${q.q} Text: "${q.text}"` : q.q, type: q.type, options: q.options || [], answer: q.answer, accept: q.accept || [], given, why: $('#chal-why', m).value.trim(), lang: q.lang, subject: q.subject, subjectName: SUBJ[q.subject] && SUBJ[q.subject].name, context: passageContext(q, c.obj) } }); }
+    catch (e) { go.disabled = false; $('#chal-out', m).innerHTML = `<p class="muted">${esc(e.message)}</p><button class="btn small" id="chal-adult2">🙋 ${pt ? 'Pedir para um adulto' : 'Ask a grown-up'}</button>`; $('#chal-adult2', m).onclick = () => askAdult(''); return; }
+    if (r.verdict === 'right') {
+      chalAccept(c, q, r.explanation, 'lumi');
+      $('#chal-out', m).innerHTML = `<div class="notice ok">✅ <b>${pt ? 'Você tinha razão!' : 'You were right!'}</b> ${esc(r.explanation)}</div>`;
+      $('.modal-foot', m).innerHTML = `<span class="grow"></span><button class="btn primary" data-close>${pt ? 'Oba! 🎉' : 'Yay! 🎉'}</button>`; $('[data-close]', $('.modal-foot', m)).onclick = () => { closeModal(); renderWork(); };
+      celebrateFX('small');
+    } else {
+      $('#chal-out', m).innerHTML = `<div class="notice info">🦉 ${esc(r.explanation)}</div>`;
+      $('.modal-foot', m).innerHTML = `<button class="btn" id="chal-adult3">🙋 ${pt ? 'Ainda acho que acertei — pedir para um adulto' : 'I still think I’m right — ask a grown-up'}</button><span class="grow"></span><button class="btn primary" data-close>${pt ? 'Entendi' : 'Got it'}</button>`;
+      $('#chal-adult3', m).onclick = () => askAdult(r.explanation); $('[data-close]', $('.modal-foot', m)).onclick = () => closeModal();
+      c.obj.challenges = c.obj.challenges || {}; c.obj.challenges[q.id] = { status: 'kept', given, lumi: r.explanation }; save();
+    }
+  };
+}
+// Parents’ area: challenges waiting for a grown-up
+function pendingChallenges() {
+  const out = [];
+  const scan = (obj, kind, label) => Object.entries(obj.challenges || {}).forEach(([qid, ch]) => { if (ch.status !== 'parent') return; const q = (obj.questions || []).find(x => x.id === qid); if (q) out.push({ obj, kind, q, ch, label }); });
+  if (S.week) Object.values(S.week.days).forEach(d => scan(d, 'day', `${DOW_LABEL[d.dow]} ${fmtDM(d.date)}`));
+  if (S.extra) scan(S.extra, 'extra', 'Extras');
+  return out;
+}
 function collectDraft() { $$('#scr-setup textarea[data-sid]').forEach(ta => { VIEW.draftTopics[ta.dataset.sid] = ta.value; }); }
 async function generateFromSetup(editing) {
   collectDraft();
@@ -3136,7 +3319,7 @@ function questionCard(q, i, c, num = i) {
   return `<div class="q ${stateCls} ${q.type === 'proof' ? 'wide' : ''}" style="--subj:${s.color}" data-qid="${q.id}">
     <div class="q-top"><span class="q-num">${num + 1}</span>
       <div class="q-text"><span class="q-subj">${s.icon} ${esc(s.short)}</span>${esc(q.q)}</div>
-      <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Listen">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha: não sei isso'}" aria-label="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha'}">?</button><button type="button" data-hint title="Hint">💡</button>${c.done && q.bank && Server.me ? `<button type="button" data-bankrep title="${q.lang === 'en' ? 'Report a problem with this question' : 'Avisar problema nesta pergunta'}">🚩</button>` : ''}</div>
+      <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Listen">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha: não sei isso'}" aria-label="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha'}">?</button><button type="button" data-hint title="Hint">💡</button>${chalBtn(q, c)}${c.done && q.bank && Server.me ? `<button type="button" data-bankrep title="${q.lang === 'en' ? 'Report a problem with this question' : 'Avisar problema nesta pergunta'}">🚩</button>` : ''}</div>
     </div>${control}${expected}${mark ? `<span class="mark">${mark}</span>` : ''}</div>`;
 }
 function bindWork(el, c) {
@@ -3156,6 +3339,7 @@ function bindWork(el, c) {
     if (sp) sp.onclick = () => speak(q.say || q.answer, q.lang);
     const ex = $('[data-explain]', card);
     if (ex) ex.onclick = () => openLesson(q, c);
+    const ch = $('[data-chal]', card); if (ch) ch.onclick = () => openChallenge(q, c);
     const br = $('[data-bankrep]', card);
     if (br) br.onclick = async () => {
       const pt = q.lang !== 'en';
@@ -4622,9 +4806,16 @@ function pReview(box) {
       <button class="btn small ${mk === 'no' ? 'danger' : ''}" data-mark="no" data-d="${d.date}" data-q="${q.id}">↺ Redo / talk it over</button></div></div>`;
   }).join('');
   box.innerHTML = `<div class="card"><b>Week ${fmtDM(w.start)}–${fmtDM(w.end)}</b> ${w.settled ? `· ${w.settled === 'delivered' ? 'completed ✔' : w.settled === 'missed' ? 'not completed ✗' : ''}` : ''}<div style="margin-top:6px;display:grid;gap:3px">${summary}</div></div>
+    ${(() => { const pc = pendingChallenges(); return pc.length ? `<div class="card chal-card"><b>🙋 Challenges (${pc.length})</b> <span class="tiny muted">— your child thinks the marking was wrong</span>
+      ${pc.map((x, k) => `<div class="review-item"><div class="meta">${esc(x.label)} · ${SUBJ[x.q.subject] ? SUBJ[x.q.subject].icon + ' ' + esc(SUBJ[x.q.subject].name) : ''}</div><div><b>${esc(x.q.q)}</b></div>
+        <div class="tiny">Answer key: <b>${esc(x.q.answer || '(free answer)')}</b> · Child: <b>${esc(x.ch.given || '—')}</b>${x.ch.why ? ` · Why: “${esc(x.ch.why)}”` : ''}</div>${x.ch.lumi ? `<div class="tiny">🦉 Lumi: ${esc(x.ch.lumi)}</div>` : ''}
+        <div class="row"><button class="btn small ok" data-chok="${k}">✓ Child is right</button><button class="btn small" data-chno="${k}">✗ Keep it wrong</button></div></div>`).join('')}</div>` : ''; })()}
     <h3 style="margin:6px 0 0">Open answers (${opens.length}) <span class="tiny muted">— Lumi marks them; you can confirm or change</span></h3>${list || '<p class="muted">Nothing to mark yet.</p>'}
     ${S.history.length ? `<div class="card"><b>History</b>${S.history.slice(0, 8).map(h => `<div class="tiny">${fmtDM(h.start)}–${fmtDM(h.end)}: ${h.done}/${h.total} days · ${h.settled === 'delivered' ? 'completed' : h.settled === 'missed' ? 'not completed' : '—'}${h.recovered ? ` · ${h.recovered} caught up` : ''}</div>`).join('')}</div>` : ''}`;
   $$('[data-mark]', box).forEach(b => b.onclick = () => { const d = S.week.days[b.dataset.d]; d.marks = d.marks || {}; d.marks[b.dataset.q] = b.dataset.mark; save(); pReview(box); });
+  const pc = pendingChallenges();
+  $$('[data-chok]', box).forEach(b => b.onclick = () => { const x = pc[Number(b.dataset.chok)]; chalAccept({ obj: x.obj, kind: x.kind }, x.q, 'A grown-up checked: you were right!', 'parent'); toast('Marked as correct ✓'); pReview(box); });
+  $$('[data-chno]', box).forEach(b => b.onclick = () => { const x = pc[Number(b.dataset.chno)]; x.obj.challenges[x.q.id].status = 'kept'; x.obj.challenges[x.q.id].by = 'parent'; save(); pReview(box); });
 }
 function pCoins(box) {
   box.innerHTML = `<div class="card"><div class="row"><b class="grow">Current balance: 🪙 ${S.coins}</b></div>
@@ -4665,6 +4856,7 @@ function pSettings(box) {
       <p class="tiny muted">Values are for a full week (7 days): if the week starts midway, the reward and penalty are proportional to the required days. The penalty must be greater than the reward. Missed days can be caught up until the following Friday: catching up all of them is worth this % of the reward (0 = no catch-up).</p></div>
     <div class="card"><b>Tasks</b><div class="form-grid" style="margin-top:6px">
       ${Server.me ? '' : `<label class="field">Name<input id="s-name" value="${esc(S.name)}"></label>`}
+      ${['Y4', 'Y5'].includes(st.year) ? `<label class="field">⏱️ Times tables: seconds per question<input type="number" id="s-tts" min="3" max="15" value="${ttSeconds()}"></label>` : ''}
       <label class="field">🗂️ Questions per topic (each subject, per day)<input type="number" id="s-ptheme" min="1" max="6" value="${perTheme()}"></label>
       <div class="field">${rqSelect('pt', '📖 Questions on the Portuguese text', 's-rqpt')}</div>
       <div class="field">${rqSelect('en', '📖 Questions on the English text', 's-rqen')}</div>
@@ -4688,6 +4880,7 @@ function pSettings(box) {
     Object.assign(st, {
       reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), questsOn: $('#s-quests').value === '1', notePrice: clamp(num('#s-notep', notePrice()), 1, 100000), sound: $('#s-sound').value === '1', buyQuests: $('#s-bquests').value === '1', extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
       extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10),
+      ttSeconds: $('#s-tts') ? clamp(num('#s-tts', ttSeconds()), 3, 15) : st.ttSeconds,
       perTheme: clamp(num('#s-ptheme', perTheme()), 1, 6), readQ: { pt: $('#s-rqpt').value === 'auto' ? 'auto' : Number($('#s-rqpt').value), en: $('#s-rqen').value === 'auto' ? 'auto' : Number($('#s-rqen').value) },
       workshopCoins: clamp(num('#s-wkc', st.workshopCoins ?? 3), 0, 50), workshopPerDay: clamp(num('#s-wkd', st.workshopPerDay ?? 5), 0, 20),
       dailyReading: $('#s-dread').value === '1',

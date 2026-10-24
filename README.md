@@ -85,6 +85,10 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
      - Se tentar concluir com algo faltando, a Lumi abre o tema e a pergunta que faltam.
    - **Na tela:** cada tema é dividido em **partes** (1, 2, 3…) que cabem na tela sem rolar; as bolinhas ficam verdes quando a parte está completa.
    - **🖨️ Imprimir (A4):** em toda tarefa (dia, recuperação, extras, reforço e Livro extra) e na aulinha. O texto vem numa folha própria e continua na folha seguinte se for longo. As perguntas ocupam quantas folhas forem precisas, com gabarito opcional para os pais.
+   - **⏱️ Times tables (Year 4 e 5):** botão na tela inicial e nos Extras. *Times tables check* com 25 contas da tabuada do 2 ao 12 contra o relógio (6 s por conta no Year 4, como no Multiplication Tables Check; 5 s no Year 5; os pais mudam nos Ajustes). Também dá para praticar uma tabuada só ou as contas que errou (as erradas voltam mais vezes). Tem teclado numérico na tela, recorde por modo e 1 🪙 por acerto (3 rodadas com moedas por dia).
+   - **🙋 Contestar a correção:** depois de concluir, a pergunta marcada como errada ganha o botão 🙋. A Lumi confere de novo e, se a criança tiver razão, corrige a nota (e as moedas dos extras). Se a Lumi mantiver, a criança pode pedir para um adulto: a contestação aparece em **Área dos pais → Marking → 🙋 Challenges**, onde os pais decidem.
+   - **Extras:** ficam nos temas da semana (só as matérias da semana e os mesmos assuntos). Na **leitura extra**, a criança escolhe inglês ou português; a ⭐ sugere o idioma que não foi o do texto do dia.
+   - **Áudio:** nada toca sozinho; a Lumi só lê quando a criança toca no 🔊.
 3. **Ajuda em cada pergunta:**
    - **💡** dá uma dica. Com **"Me explica mais"**, o Claude dá uma explicação nova, sem entregar a resposta.
    - **? Aulinha:** explicação em partes, exemplos e um macete, lida em voz alta pela Lumi. Depois, **"Vamos treinar"**: 3–4 exercícios na hora, com correção.

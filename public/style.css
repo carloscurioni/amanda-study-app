@@ -928,3 +928,29 @@ body[data-screen=shop] .fb-btn, body[data-screen=setup] .fb-btn { opacity: .4; }
 .qs-pm button { width: 30px; height: 30px; border-radius: 9px; border: none; background: var(--accent-soft); font-weight: 900; font-size: 17px; }
 .qs-pm b { min-width: 18px; text-align: center; font-size: 16px; }
 .qs-sel { padding: 5px 8px; border-radius: 9px; border: 1.5px solid var(--line); font-weight: 800; background: #fff; }
+
+.extra-grid .btn.suggested { box-shadow: 0 0 0 2.5px var(--accent), 0 4px 12px rgba(40, 20, 90, .12); }
+
+/* ---------- ⏱️ Times tables ---------- */
+.tt-tables { display: grid; grid-template-columns: repeat(auto-fill, minmax(62px, 1fr)); gap: 6px; margin-top: 6px; }
+.tt-tables .btn { padding: 8px 4px; font-weight: 900; line-height: 1.15; }
+.tt-home { background: #e7f5ff; box-shadow: inset 0 0 0 2px #74c0fc; }
+.tt-play { display: grid; gap: 10px; justify-items: center; text-align: center; }
+.tt-top { width: 100%; display: flex; justify-content: space-between; font-weight: 900; color: var(--muted); }
+.tt-bar { width: 100%; height: 12px; border-radius: 99px; background: #ece8f7; overflow: hidden; }
+.tt-bar i { display: block; height: 100%; width: 100%; background: #51cf66; border-radius: 99px; }
+.tt-bar i.low { background: #ff6b6b; }
+.tt-q { font-size: clamp(40px, 12vw, 64px); font-weight: 900; letter-spacing: .02em; }
+.tt-ans input { width: 4.2em; text-align: center; font-size: clamp(32px, 9vw, 48px); font-weight: 900; border: 3px solid var(--accent); border-radius: 16px; padding: 4px 8px; }
+.tt-fb { min-height: 1.6em; font-size: 22px; font-weight: 900; }
+.tt-fb.ok { color: #2b8a3e; } .tt-fb.bad { color: #e03131; }
+.tt-pad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; width: 100%; max-width: 320px; }
+.tt-pad button { font-size: 24px; font-weight: 900; padding: 12px 0; border: none; border-radius: 14px; background: var(--accent-soft); color: var(--ink); }
+.tt-pad button[data-k="✔"] { background: var(--accent); color: #fff; }
+
+/* ---------- 🙋 Challenge ---------- */
+.q-tools button.chal { background: #fff4e6; box-shadow: inset 0 0 0 1.5px #ffa94d; }
+.q-tools button.chal.wait { opacity: .75; }
+.chal-body { display: grid; gap: 6px; }
+.chal-row span { color: var(--muted); font-weight: 800; }
+.notice.ok { background: #ebfbee; border-radius: 10px; padding: 8px 10px; }

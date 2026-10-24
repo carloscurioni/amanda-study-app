@@ -545,7 +545,8 @@ async function handleMore(env, b, ctx) {
   const subjects = (b.subjects || []).filter(s => SUBJECT_IDS.includes(s));
   const content = [{ type: 'text', text: `Assuntos da semana:
 ${String(b.topics || '').slice(0, 3000) || '(revisão geral do conteúdo do ano escolar)'}
-${subjects.length ? `\nUse só estas matérias: ${subjects.join(', ')}. Se alguma delas não tiver assunto listado acima, faça uma revisão do conteúdo típico dessa matéria para o ano escolar.` : '\nMisture as matérias da semana (inclua Math e English se fizerem parte das matérias do estudante).'}
+${subjects.length ? `\nUse só estas matérias: ${subjects.join(', ')}.` : '\nMisture as matérias da semana.'}
+${String(b.topics || '').trim() ? 'IMPORTANTE: as perguntas têm que ser sobre os ASSUNTOS DA SEMANA listados acima (os mesmos conteúdos, com outros exemplos, números e palavras). Não traga conteúdos que não estão na lista. Só se uma matéria pedida não tiver assunto listado, faça uma revisão do conteúdo típico dela para o ano escolar.' : 'Sem assuntos da semana: faça uma revisão do conteúdo típico de cada matéria para o ano escolar.'}
 ${b.objectiveOnly ? '\nNÃO use o tipo "open" — só mc, short, num e proof (correção automática). Se houver Spelling/Ortografia, inclua 1 "proof".' : ''}
 ${Array.isArray(b.focus) && b.focus.length ? `\nREFORÇO: o estudante errou ou disse que não sabia estas perguntas. Crie perguntas NOVAS e parecidas (mesmo conteúdo, outros números/palavras/exemplos), começando pelas mais fáceis, para ele aprender de verdade:\n- ${b.focus.slice(0, 15).map(x => String(x).slice(0, 200)).join('\n- ')}` : ''}
 ${b.exclude?.length ? `\nNão repita estas perguntas:\n- ${b.exclude.slice(0, 60).map(x => String(x).slice(0, 120)).join('\n- ')}` : ''}
@@ -664,6 +665,30 @@ Para cada número: "ok" se responde à pergunta de forma correta e razoável par
     model: env.MODEL_FAST || 'claude-haiku-5-5', effort: 'medium',
     system: 'Você corrige respostas de estudantes com justiça e carinho.', content, schema: OPEN_SCHEMA, maxTokens: 6000,
   });
+}
+
+/* ---------------- 🙋 Contestação: a criança acha que a correção automática errou ---------------- */
+const CHALLENGE_SCHEMA = {
+  type: 'object', properties: {
+    verdict: { type: 'string', enum: ['right', 'wrong'], description: '"right" se a resposta do estudante deve ser aceita como correta; "wrong" se continua errada.' },
+    explanation: { type: 'string', description: '1–3 frases curtas, gentis, no idioma pedido: por que está certa, ou qual é a ideia certa.' },
+  }, required: ['verdict', 'explanation'], additionalProperties: false,
+};
+async function handleChallenge(env, b, ctx) {
+  const lang = b.lang === 'pt' ? 'pt' : 'en';
+  const spell = ['pt_ort', 'en_spell'].includes(b.subject);
+  const content = [{ type: 'text', text: `A student (${level(b)}) disagrees with the automatic marking of this question. Decide fairly whether the student's answer should be ACCEPTED as correct.
+Subject: ${String(b.subjectName || b.subject || '').slice(0, 80)}
+Question (${String(b.type || '').slice(0, 10)}): ${String(b.q || '').slice(0, 800)}
+${(b.options || []).length ? `Options: ${b.options.slice(0, 6).map(x => String(x).slice(0, 120)).join(' | ')}\n` : ''}Answer key: ${String(b.answer || '').slice(0, 300) || '(free answer)'}${(b.accept || []).length ? ` (also accepted: ${b.accept.slice(0, 8).join(', ')})` : ''}
+Student's answer: ${String(b.given || '').slice(0, 600) || '(blank)'}
+${b.why ? `Student's reason: ${String(b.why).slice(0, 300)}\n` : ''}${b.context ? `Context (text read / topics): ${String(b.context).slice(0, 2500)}\n` : ''}
+Rules:
+- Accept ("right") if the student's answer is correct or equivalent: same value in another format (e.g. 0.5 = 1/2, "7" = "seven"), a synonym that answers the question, a valid alternative interpretation of an ambiguous question, small typos in non-spelling subjects, or if the answer key itself is wrong.
+- ${spell ? 'This is a SPELLING activity: the spelling (including accents) must be exactly right.' : 'Do not require perfect spelling unless the question is about spelling.'}
+- Otherwise "wrong", and explain kindly what the right idea is (without making the student feel bad).
+- Write "explanation" in ${lang === 'pt' ? 'Brazilian Portuguese' : 'British English'}, 1–3 short sentences.` }];
+  return claude(env, ctx, { model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low', system: 'You are Lumi, a fair and kind tutor who double-checks marking for school students.', content, schema: CHALLENGE_SCHEMA, maxTokens: 1500 });
 }
 
 /* ---------------- Banco de sugestões compartilhado ---------------- */
@@ -797,7 +822,7 @@ Escreva o capítulo ${idx + 1}: "${c.title}" — ${c.synopsis}
 }
 
 /* ---------------- Roteador ---------------- */
-const AI_HANDLERS = { 'bank-fill': handleBankFill, 'bank-book': handleBankBook, 'bank-chapter': handleBankChapter, 'plan-outline': handlePlanOutline, 'plan-day': handlePlanDay, plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen, lesson: handleLesson, reading: handleReading };
+const AI_HANDLERS = { challenge: handleChallenge, 'bank-fill': handleBankFill, 'bank-book': handleBankBook, 'bank-chapter': handleBankChapter, 'plan-outline': handlePlanOutline, 'plan-day': handlePlanDay, plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen, lesson: handleLesson, reading: handleReading };
 
 async function api(req, env, url) {
   const path = url.pathname, m = req.method;
