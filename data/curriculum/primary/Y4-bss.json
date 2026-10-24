@@ -1,0 +1,679 @@
+{
+  "version": 1,
+  "year": "Y4",
+  "stage": "primary",
+  "subject": "bss",
+  "level": null,
+  "language": "pt",
+  "source": "BNCC — História e Geografia, Ensino Fundamental Anos Iniciais (3º ano), MEC 2017, com foco no Brasil e em São Paulo",
+  "weeks": [
+    {
+      "academic_week": 1,
+      "term": 1,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "O município: bairros, zona urbana e zona rural",
+      "objectives": [
+        "Explicar o que é um município",
+        "Diferenciar zona urbana e zona rural"
+      ],
+      "keywords": [
+        "município",
+        "bairro",
+        "zona urbana",
+        "zona rural"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 2,
+      "term": 1,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "A fundação de São Paulo em 1554 e o Pátio do Colégio",
+      "objectives": [
+        "Conhecer a fundação de São Paulo pelos jesuítas",
+        "Localizar o Pátio do Colégio no centro da cidade"
+      ],
+      "keywords": [
+        "fundação",
+        "1554",
+        "jesuítas",
+        "Pátio do Colégio"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 3,
+      "term": 1,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Povos indígenas na formação de São Paulo",
+      "objectives": [
+        "Conhecer os povos indígenas que viviam na região",
+        "Reconhecer nomes de origem tupi na cidade"
+      ],
+      "keywords": [
+        "povos indígenas",
+        "tupi",
+        "Piratininga",
+        "herança"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 4,
+      "term": 1,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Bandeirantes e a expansão de São Paulo: diferentes visões",
+      "objectives": [
+        "Explicar quem foram os bandeirantes",
+        "Discutir os impactos sobre indígenas e africanos"
+      ],
+      "keywords": [
+        "bandeirantes",
+        "expansão",
+        "impacto",
+        "ponto de vista"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 5,
+      "term": 1,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Imigração em São Paulo: italianos, japoneses, árabes e outros",
+      "objectives": [
+        "Identificar grupos de imigrantes que vieram para São Paulo",
+        "Reconhecer suas contribuições em bairros e costumes"
+      ],
+      "keywords": [
+        "imigração",
+        "imigrante",
+        "Bixiga",
+        "Liberdade"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 6,
+      "term": 1,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Migração interna: nordestinos na construção de São Paulo",
+      "objectives": [
+        "Explicar por que muitas pessoas migraram do Nordeste",
+        "Valorizar a cultura nordestina na cidade"
+      ],
+      "keywords": [
+        "migração interna",
+        "Nordeste",
+        "trabalho",
+        "cultura"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 7,
+      "term": 1,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Patrimônio histórico e cultural do município",
+      "objectives": [
+        "Identificar construções e manifestações que são patrimônio",
+        "Explicar por que preservá-las"
+      ],
+      "keywords": [
+        "patrimônio",
+        "preservação",
+        "monumento",
+        "cultura"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 8,
+      "term": 1,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Espaços públicos e privados",
+      "objectives": [
+        "Diferenciar espaços públicos e privados",
+        "Discutir o cuidado com praças e parques"
+      ],
+      "keywords": [
+        "espaço público",
+        "espaço privado",
+        "praça",
+        "parque"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 9,
+      "term": 1,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "A administração do município: prefeito, vereadores e serviços",
+      "objectives": [
+        "Identificar as funções do prefeito e dos vereadores",
+        "Reconhecer serviços públicos do município"
+      ],
+      "keywords": [
+        "prefeitura",
+        "vereador",
+        "serviço público",
+        "cidadania"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 10,
+      "term": 1,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Cidade e campo: diferenças e interdependência",
+      "objectives": [
+        "Comparar paisagens e atividades da cidade e do campo",
+        "Explicar como um depende do outro"
+      ],
+      "keywords": [
+        "cidade",
+        "campo",
+        "interdependência",
+        "troca"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 11,
+      "term": 1,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Produção no campo: agricultura, pecuária e extrativismo",
+      "objectives": [
+        "Diferenciar agricultura, pecuária e extrativismo",
+        "Identificar produtos do campo no dia a dia"
+      ],
+      "keywords": [
+        "agricultura",
+        "pecuária",
+        "extrativismo",
+        "produto"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 12,
+      "term": 1,
+      "week_of_term": 12,
+      "type": "teaching",
+      "topic": "Indústria: matéria-prima e produtos",
+      "objectives": [
+        "Explicar a transformação da matéria-prima em produto",
+        "Identificar indústrias da região"
+      ],
+      "keywords": [
+        "indústria",
+        "matéria-prima",
+        "produto",
+        "transformação"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 13,
+      "term": 1,
+      "week_of_term": 13,
+      "type": "teaching",
+      "topic": "Comércio e serviços: do produtor ao consumidor",
+      "objectives": [
+        "Seguir o caminho de um produto até o consumidor",
+        "Diferenciar comércio e serviços"
+      ],
+      "keywords": [
+        "comércio",
+        "serviço",
+        "produtor",
+        "consumidor"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 14,
+      "term": 1,
+      "week_of_term": 14,
+      "type": "teaching",
+      "topic": "O trabalho ontem e hoje: tecnologia e mudanças",
+      "objectives": [
+        "Comparar formas de trabalho do passado e do presente",
+        "Discutir como a tecnologia muda as profissões"
+      ],
+      "keywords": [
+        "trabalho",
+        "tecnologia",
+        "profissão",
+        "mudança"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 15,
+      "term": 1,
+      "week_of_term": 15,
+      "type": "review",
+      "topic": "Revisão: história do município e atividades econômicas",
+      "objectives": [
+        "Revisar a fundação e a formação de São Paulo",
+        "Revisar campo, cidade, indústria e comércio"
+      ],
+      "keywords": [
+        "revisão",
+        "município",
+        "economia",
+        "São Paulo"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 16,
+      "term": 2,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "Paisagem natural e paisagem modificada",
+      "objectives": [
+        "Diferenciar paisagem natural e modificada",
+        "Comparar fotos antigas e atuais de São Paulo"
+      ],
+      "keywords": [
+        "paisagem natural",
+        "paisagem modificada",
+        "transformação",
+        "comparação"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 17,
+      "term": 2,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Formas de relevo: montanhas, planaltos, planícies e depressões",
+      "objectives": [
+        "Identificar formas de relevo",
+        "Reconhecer que São Paulo fica em um planalto"
+      ],
+      "keywords": [
+        "relevo",
+        "montanha",
+        "planalto",
+        "planície"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 18,
+      "term": 2,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Rios e bacias hidrográficas: o Rio Tietê",
+      "objectives": [
+        "Identificar nascente, foz e afluentes",
+        "Conhecer a história e a situação do Rio Tietê"
+      ],
+      "keywords": [
+        "rio",
+        "bacia hidrográfica",
+        "nascente",
+        "Tietê"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 19,
+      "term": 2,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Água: usos, poluição e preservação",
+      "objectives": [
+        "Identificar usos da água na cidade, no campo e na indústria",
+        "Discutir causas da poluição e formas de preservação"
+      ],
+      "keywords": [
+        "água",
+        "poluição",
+        "preservação",
+        "consumo"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 20,
+      "term": 2,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Tempo atmosférico, clima e estações do ano no Brasil",
+      "objectives": [
+        "Diferenciar tempo atmosférico e clima",
+        "Observar e registrar o tempo durante uma semana"
+      ],
+      "keywords": [
+        "tempo atmosférico",
+        "clima",
+        "estação do ano",
+        "registro"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 21,
+      "term": 2,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Biomas brasileiros",
+      "objectives": [
+        "Conhecer Amazônia, Mata Atlântica, Cerrado, Caatinga, Pampa e Pantanal",
+        "Localizar os biomas no mapa do Brasil"
+      ],
+      "keywords": [
+        "bioma",
+        "Amazônia",
+        "Mata Atlântica",
+        "Cerrado",
+        "Pantanal"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 22,
+      "term": 2,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Impactos ambientais: desmatamento, queimadas e poluição",
+      "objectives": [
+        "Identificar impactos causados pelas pessoas na natureza",
+        "Propor ações para reduzi-los"
+      ],
+      "keywords": [
+        "impacto ambiental",
+        "desmatamento",
+        "queimada",
+        "poluição"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 23,
+      "term": 2,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Resíduos sólidos: coleta seletiva e consumo consciente",
+      "objectives": [
+        "Explicar o caminho do lixo na cidade",
+        "Praticar os 3 Rs: reduzir, reutilizar e reciclar"
+      ],
+      "keywords": [
+        "resíduo",
+        "coleta seletiva",
+        "reciclagem",
+        "consumo consciente"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 24,
+      "term": 2,
+      "week_of_term": 9,
+      "type": "teaching",
+      "topic": "Mapas: título, legenda, escala e rosa dos ventos",
+      "objectives": [
+        "Identificar os elementos de um mapa",
+        "Ler mapas do município"
+      ],
+      "keywords": [
+        "mapa",
+        "legenda",
+        "escala",
+        "rosa dos ventos"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 25,
+      "term": 2,
+      "week_of_term": 10,
+      "type": "teaching",
+      "topic": "Pontos cardeais e orientação pelo Sol",
+      "objectives": [
+        "Identificar os pontos cardeais",
+        "Orientar-se pela posição do Sol"
+      ],
+      "keywords": [
+        "pontos cardeais",
+        "norte",
+        "sul",
+        "leste",
+        "oeste"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 26,
+      "term": 2,
+      "week_of_term": 11,
+      "type": "teaching",
+      "topic": "Imagens de satélite e fotografias aéreas",
+      "objectives": [
+        "Comparar mapas, fotos aéreas e imagens de satélite",
+        "Localizar a escola em uma imagem de satélite"
+      ],
+      "keywords": [
+        "imagem de satélite",
+        "foto aérea",
+        "localização",
+        "mapa"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 27,
+      "term": 2,
+      "week_of_term": 12,
+      "type": "exam",
+      "topic": "Avaliação semestral: História e Geografia",
+      "objectives": [
+        "Responder perguntas sobre o município e as paisagens",
+        "Ler mapas e imagens de satélite"
+      ],
+      "keywords": [
+        "avaliação",
+        "município",
+        "paisagem",
+        "mapa"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 28,
+      "term": 3,
+      "week_of_term": 1,
+      "type": "teaching",
+      "topic": "O Brasil: regiões e estados",
+      "objectives": [
+        "Identificar as cinco regiões do Brasil",
+        "Localizar o estado de São Paulo e sua capital"
+      ],
+      "keywords": [
+        "região",
+        "estado",
+        "capital",
+        "Sudeste"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 29,
+      "term": 3,
+      "week_of_term": 2,
+      "type": "teaching",
+      "topic": "Cultura afro-brasileira em São Paulo: samba, capoeira e festas",
+      "objectives": [
+        "Conhecer manifestações afro-brasileiras na cidade",
+        "Reconhecer a importância da cultura negra"
+      ],
+      "keywords": [
+        "cultura afro-brasileira",
+        "samba",
+        "capoeira",
+        "resistência"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 30,
+      "term": 3,
+      "week_of_term": 3,
+      "type": "teaching",
+      "topic": "Festas e tradições regionais do Brasil",
+      "objectives": [
+        "Conhecer o Bumba meu boi, o Círio de Nazaré e a Festa Junina",
+        "Comparar tradições de diferentes regiões"
+      ],
+      "keywords": [
+        "festa regional",
+        "tradição",
+        "Bumba meu boi",
+        "cultura"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 31,
+      "term": 3,
+      "week_of_term": 4,
+      "type": "teaching",
+      "topic": "Mobilidade urbana: transportes na cidade",
+      "objectives": [
+        "Identificar os meios de transporte de São Paulo",
+        "Discutir problemas e soluções para o trânsito"
+      ],
+      "keywords": [
+        "mobilidade urbana",
+        "metrô",
+        "ônibus",
+        "trânsito"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 32,
+      "term": 3,
+      "week_of_term": 5,
+      "type": "teaching",
+      "topic": "Meios de comunicação e tecnologia: mudanças e impactos",
+      "objectives": [
+        "Comparar meios de comunicação ao longo do tempo",
+        "Discutir o uso seguro da internet"
+      ],
+      "keywords": [
+        "comunicação",
+        "tecnologia",
+        "internet",
+        "segurança"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 33,
+      "term": 3,
+      "week_of_term": 6,
+      "type": "teaching",
+      "topic": "Cidadania: direitos, deveres e participação",
+      "objectives": [
+        "Relacionar direitos e deveres dos cidadãos",
+        "Propor melhorias para a escola ou o bairro"
+      ],
+      "keywords": [
+        "cidadania",
+        "direito",
+        "dever",
+        "participação"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 34,
+      "term": 3,
+      "week_of_term": 7,
+      "type": "teaching",
+      "topic": "Comunidades tradicionais: quilombolas, ribeirinhos e caiçaras",
+      "objectives": [
+        "Conhecer modos de vida de comunidades tradicionais",
+        "Valorizar sua relação com a natureza"
+      ],
+      "keywords": [
+        "quilombola",
+        "ribeirinho",
+        "caiçara",
+        "comunidade tradicional"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 35,
+      "term": 3,
+      "week_of_term": 8,
+      "type": "teaching",
+      "topic": "Projeto: guia turístico do meu bairro",
+      "objectives": [
+        "Pesquisar lugares, história e serviços do bairro",
+        "Produzir um guia com mapa e textos"
+      ],
+      "keywords": [
+        "guia turístico",
+        "bairro",
+        "pesquisa",
+        "mapa"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 36,
+      "term": 3,
+      "week_of_term": 9,
+      "type": "exam",
+      "topic": "Avaliação final: História e Geografia",
+      "objectives": [
+        "Responder perguntas sobre o município, o Brasil e as paisagens",
+        "Interpretar mapas e linhas do tempo"
+      ],
+      "keywords": [
+        "avaliação",
+        "município",
+        "Brasil",
+        "mapa"
+      ],
+      "spelling": []
+    },
+    {
+      "academic_week": 37,
+      "term": 3,
+      "week_of_term": 10,
+      "type": "review",
+      "topic": "Revisão do ano e preparação para o próximo",
+      "objectives": [
+        "Revisar os principais temas do ano",
+        "Conhecer os temas do próximo ano: o Brasil e suas regiões"
+      ],
+      "keywords": [
+        "revisão",
+        "reflexão",
+        "Brasil",
+        "próximo ano"
+      ],
+      "spelling": []
+    }
+  ]
+}
