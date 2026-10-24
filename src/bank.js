@@ -153,7 +153,7 @@ export class Bank extends DurableObject {
     return [...this.sql.exec(`SELECT ckey, COUNT(*) AS n, SUM(source = 'repo') AS repo, SUM(source = 'api') AS api FROM bank_q WHERE ckey LIKE ? AND status = 'ok' GROUP BY ckey ORDER BY ckey`, String(prefix || '') + '%')];
   }
   async setStatus(id, status) {
-    if (!['ok', 'hidden', 'deleted'].includes(status)) return { err: 'Status inválido.' };
+    if (!['ok', 'hidden', 'deleted'].includes(status)) return { err: 'Invalid status.' };
     const isBook = id.includes('|');
     this.sql.exec(`UPDATE ${isBook ? 'bank_books' : 'bank_q'} SET status = ?, reports = CASE WHEN ? = 'ok' THEN 0 ELSE reports END, updated = ? WHERE ${isBook ? 'ckey' : 'id'} = ?`, status, status, new Date().toISOString(), id);
     if (status === 'ok') this.sql.exec('DELETE FROM bank_reports WHERE id = ?', id);
@@ -161,7 +161,7 @@ export class Bank extends DurableObject {
   }
   async edit(id, raw) {
     const r = [...this.sql.exec('SELECT * FROM bank_q WHERE id = ?', id)][0];
-    if (!r) return { err: 'Pergunta não encontrada.' };
+    if (!r) return { err: 'Question not found.' };
     const c = cleanQuestion(Object.assign(JSON.parse(r.payload), raw), r.subject);
     if (c.err) return { err: c.err };
     this.sql.exec(`UPDATE bank_q SET payload = ?, source = 'admin', status = 'ok', reports = 0, updated = ? WHERE id = ?`, JSON.stringify(c.q), new Date().toISOString(), id);

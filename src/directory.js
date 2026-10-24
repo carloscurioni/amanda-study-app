@@ -42,10 +42,10 @@ const cleanText = (s, max = 60) => String(s || '').replace(/[<>]/g, '').trim().s
 const YEARS = ['Y1', 'Y2', 'Y3', 'Y4', 'Y5', 'Y6', 'Y7', 'Y8', 'Y9', 'Y10', 'Y11', 'Y12', 'Y13'];
 const AVATARS = ['🦉', '🦊', '🐼', '🐱', '🐶', '🦄', '🐸', '🐧', '🐯', '🐰', '🐨', '🐙'];
 function checkPassword(p) {
-  if (String(p || '').length < 8) throw new AppError(400, 'A senha precisa ter pelo menos 8 caracteres.');
+  if (String(p || '').length < 8) throw new AppError(400, 'The password must be at least 8 characters long.');
 }
 function checkPin(pin) {
-  if (!/^\d{4}$/.test(String(pin || ''))) throw new AppError(400, 'O PIN precisa ter 4 números.');
+  if (!/^\d{4}$/.test(String(pin || ''))) throw new AppError(400, 'The PIN must be 4 digits.');
 }
 
 export class Directory extends DurableObject {
@@ -76,9 +76,9 @@ export class Directory extends DurableObject {
   // Chamada única usada pelo Worker: devolve o erro com o código HTTP certo
   // (erros lançados dentro de um Durable Object perdem campos extras no caminho).
   async rpc(name, ...args) {
-    if (name === 'rpc' || name.startsWith('_') || typeof this[name] !== 'function') return { err: 'Operação inválida.', status: 400 };
+    if (name === 'rpc' || name.startsWith('_') || typeof this[name] !== 'function') return { err: 'Invalid operation.', status: 400 };
     try { return { v: await this[name](...args) }; }
-    catch (e) { return { err: e && e.message ? e.message : 'Erro no servidor.', status: e && Number.isInteger(e.status) ? e.status : 500 }; }
+    catch (e) { return { err: e && e.message ? e.message : 'Server error.', status: e && Number.isInteger(e.status) ? e.status : 500 }; }
   }
   one(q, ...a) { return this.sql.exec(q, ...a).toArray()[0] || null; }
   all(q, ...a) { return this.sql.exec(q, ...a).toArray(); }
@@ -119,18 +119,18 @@ export class Directory extends DurableObject {
   /* ---------- primeiro acesso (administrador) ---------- */
   status() { return { accounts: this.one('SELECT COUNT(*) AS n FROM parents').n }; }
   async setup(d) {
-    if (this.status().accounts > 0) throw new AppError(409, 'O app já foi configurado.');
+    if (this.status().accounts > 0) throw new AppError(409, 'The app has already been set up.');
     checkPassword(d.password); checkPin(d.childPin);
     const email = cleanEmail(d.email);
-    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) throw new AppError(400, 'E-mail inválido.');
-    if (!d.consent) throw new AppError(400, 'É preciso aceitar o aviso de privacidade.');
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) throw new AppError(400, 'Invalid e-mail address.');
+    if (!d.consent) throw new AppError(400, 'You need to accept the privacy notice.');
     const familyId = newId(), parentId = newId(), childId = newId();
     const salt = newSalt(), pinSalt = newSalt();
-    this.sql.exec('INSERT INTO families (id, name, created) VALUES (?, ?, ?)', familyId, cleanText(d.familyName) || 'Minha família', now());
+    this.sql.exec('INSERT INTO families (id, name, created) VALUES (?, ?, ?)', familyId, cleanText(d.familyName) || 'My family', now());
     this.sql.exec('INSERT INTO parents (id, family_id, name, email, pass_hash, pass_salt, role, consent_at, consent_version, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-      parentId, familyId, cleanText(d.parentName) || 'Responsável', email, await pbkdf2(d.password, salt, PBKDF2_ITER), salt, 'admin', now(), 'v1', now());
+      parentId, familyId, cleanText(d.parentName) || 'Parent', email, await pbkdf2(d.password, salt, PBKDF2_ITER), salt, 'admin', now(), 'v1', now());
     this.sql.exec('INSERT INTO children (id, family_id, name, year, avatar, pin_hash, pin_salt, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
-      childId, familyId, cleanText(d.childName, 30) || 'Criança', YEARS.includes(d.childYear) ? d.childYear : 'Y5', AVATARS.includes(d.childAvatar) ? d.childAvatar : '🦉', await pbkdf2(String(d.childPin), pinSalt, PIN_ITER), pinSalt, now());
+      childId, familyId, cleanText(d.childName, 30) || 'Child', YEARS.includes(d.childYear) ? d.childYear : 'Y5', AVATARS.includes(d.childAvatar) ? d.childAvatar : '🦉', await pbkdf2(String(d.childPin), pinSalt, PIN_ITER), pinSalt, now());
     return { token: await this.newSession(parentId, familyId), childId };
   }
 
@@ -138,18 +138,18 @@ export class Directory extends DurableObject {
   async login(email, password) {
     email = cleanEmail(email);
     const k = 'login:' + email;
-    if (this.throttled(k)) throw new AppError(429, 'Muitas tentativas. Espere 15 minutos e tente de novo.');
+    if (this.throttled(k)) throw new AppError(429, 'Too many attempts. Wait 15 minutes and try again.');
     const p = this.one('SELECT * FROM parents WHERE email = ?', email);
     const hash = p ? await pbkdf2(String(password || ''), p.pass_salt, PBKDF2_ITER) : await pbkdf2('x', newSalt(), PBKDF2_ITER);
-    if (!p || !sameString(hash, p.pass_hash)) { this.fail(k, 5, 15); throw new AppError(401, 'E-mail ou senha incorretos.'); }
+    if (!p || !sameString(hash, p.pass_hash)) { this.fail(k, 5, 15); throw new AppError(401, 'Incorrect e-mail or password.'); }
     const fam = this.one('SELECT status FROM families WHERE id = ?', p.family_id);
-    if (fam && fam.status !== 'active' && p.role !== 'admin') throw new AppError(403, 'Esta conta está pausada. Fale com o administrador.');
+    if (fam && fam.status !== 'active' && p.role !== 'admin') throw new AppError(403, 'This account is paused. Please contact the administrator.');
     this.clearFail(k);
     return { token: await this.newSession(p.id, p.family_id) };
   }
   async verifyPassword(parentId, password, token) {
     const k = 'verify:' + parentId;
-    if (this.throttled(k)) throw new AppError(429, 'Muitas tentativas. Espere 15 minutos.');
+    if (this.throttled(k)) throw new AppError(429, 'Too many attempts. Wait 15 minutes.');
     const p = this.one('SELECT pass_hash, pass_salt FROM parents WHERE id = ?', parentId);
     const ok = !!p && sameString(await pbkdf2(String(password || ''), p.pass_salt, PBKDF2_ITER), p.pass_hash);
     if (!ok) this.fail(k, 5, 15); else this.clearFail(k);
@@ -157,7 +157,7 @@ export class Directory extends DurableObject {
     return { ok };
   }
   async changePassword(parentId, oldPw, newPw) {
-    if (!(await this.verifyPassword(parentId, oldPw)).ok) throw new AppError(401, 'Senha atual incorreta.');
+    if (!(await this.verifyPassword(parentId, oldPw)).ok) throw new AppError(401, 'Current password is incorrect.');
     checkPassword(newPw);
     const salt = newSalt();
     this.sql.exec('UPDATE parents SET pass_hash = ?, pass_salt = ? WHERE id = ?', await pbkdf2(newPw, salt, PBKDF2_ITER), salt, parentId);
@@ -186,7 +186,7 @@ export class Directory extends DurableObject {
   }
   async acceptInvite(token, d) {
     const inv = await this.inviteRow(token);
-    if (!inv) throw new AppError(410, 'Este link expirou ou já foi usado. Peça um novo.');
+    if (!inv) throw new AppError(410, 'This link has expired or has already been used. Ask for a new one.');
     checkPassword(d.password);
     const salt = newSalt();
     const hash = await pbkdf2(d.password, salt, PBKDF2_ITER);
@@ -194,25 +194,25 @@ export class Directory extends DurableObject {
     if (inv.kind === 'reset') {
       parentId = inv.parent_id;
       const p = this.one('SELECT family_id FROM parents WHERE id = ?', parentId);
-      if (!p) throw new AppError(410, 'Conta não encontrada.');
+      if (!p) throw new AppError(410, 'Account not found.');
       familyId = p.family_id;
       this.sql.exec('UPDATE parents SET pass_hash = ?, pass_salt = ? WHERE id = ?', hash, salt, parentId);
       this.sql.exec('DELETE FROM sessions WHERE parent_id = ?', parentId);
     } else {
       const email = cleanEmail(d.email);
-      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) throw new AppError(400, 'E-mail inválido.');
-      if (this.one('SELECT id FROM parents WHERE email = ?', email)) throw new AppError(409, 'Já existe uma conta com este e-mail. Entre com ele ou use outro.');
-      if (!d.consent) throw new AppError(400, 'É preciso aceitar o aviso de privacidade.');
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) throw new AppError(400, 'Invalid e-mail address.');
+      if (this.one('SELECT id FROM parents WHERE email = ?', email)) throw new AppError(409, 'There is already an account with this e-mail. Log in with it or use another one.');
+      if (!d.consent) throw new AppError(400, 'You need to accept the privacy notice.');
       parentId = newId();
       if (inv.kind === 'family') {
         familyId = newId();
-        this.sql.exec('INSERT INTO families (id, name, created) VALUES (?, ?, ?)', familyId, cleanText(d.familyName) || 'Família', now());
+        this.sql.exec('INSERT INTO families (id, name, created) VALUES (?, ?, ?)', familyId, cleanText(d.familyName) || 'Family', now());
       } else {
         familyId = inv.family_id;
-        if (!this.one('SELECT id FROM families WHERE id = ?', familyId)) throw new AppError(410, 'Família não encontrada.');
+        if (!this.one('SELECT id FROM families WHERE id = ?', familyId)) throw new AppError(410, 'Family not found.');
       }
       this.sql.exec('INSERT INTO parents (id, family_id, name, email, pass_hash, pass_salt, role, consent_at, consent_version, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-        parentId, familyId, cleanText(d.parentName) || 'Responsável', email, hash, salt, 'parent', now(), 'v1', now());
+        parentId, familyId, cleanText(d.parentName) || 'Parent', email, hash, salt, 'parent', now(), 'v1', now());
     }
     this.sql.exec('UPDATE invites SET used_at = ? WHERE token_hash = ?', now(), inv.token_hash);
     return { token: await this.newSession(parentId, familyId) };
@@ -221,20 +221,20 @@ export class Directory extends DurableObject {
   /* ---------- crianças ---------- */
   ownChild(familyId, childId) {
     const c = this.one('SELECT * FROM children WHERE id = ? AND family_id = ?', String(childId || ''), familyId);
-    if (!c) throw new AppError(404, 'Criança não encontrada nesta família.');
+    if (!c) throw new AppError(404, 'Child not found in this family.');
     return c;
   }
   async addChild(familyId, d) {
-    if (this.one('SELECT COUNT(*) AS n FROM children WHERE family_id = ?', familyId).n >= 8) throw new AppError(400, 'Limite de 8 crianças por família.');
+    if (this.one('SELECT COUNT(*) AS n FROM children WHERE family_id = ?', familyId).n >= 8) throw new AppError(400, 'Limit of 8 children per family.');
     checkPin(d.pin);
     const id = newId(), salt = newSalt();
     this.sql.exec('INSERT INTO children (id, family_id, name, year, avatar, pin_hash, pin_salt, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
-      id, familyId, cleanText(d.name, 30) || 'Criança', YEARS.includes(d.year) ? d.year : 'Y5', AVATARS.includes(d.avatar) ? d.avatar : '🦉', await pbkdf2(String(d.pin), salt, PIN_ITER), salt, now());
+      id, familyId, cleanText(d.name, 30) || 'Child', YEARS.includes(d.year) ? d.year : 'Y5', AVATARS.includes(d.avatar) ? d.avatar : '🦉', await pbkdf2(String(d.pin), salt, PIN_ITER), salt, now());
     return { id };
   }
   async updateChild(familyId, childId, d) {
     this.ownChild(familyId, childId);
-    if (d.name !== undefined) this.sql.exec('UPDATE children SET name = ? WHERE id = ?', cleanText(d.name, 30) || 'Criança', childId);
+    if (d.name !== undefined) this.sql.exec('UPDATE children SET name = ? WHERE id = ?', cleanText(d.name, 30) || 'Child', childId);
     if (d.year !== undefined && YEARS.includes(d.year)) this.sql.exec('UPDATE children SET year = ? WHERE id = ?', d.year, childId);
     if (d.avatar !== undefined && AVATARS.includes(d.avatar)) this.sql.exec('UPDATE children SET avatar = ? WHERE id = ?', d.avatar, childId);
     if (d.pin !== undefined) { checkPin(d.pin); const salt = newSalt(); this.sql.exec('UPDATE children SET pin_hash = ?, pin_salt = ? WHERE id = ?', await pbkdf2(String(d.pin), salt, PIN_ITER), salt, childId); }
@@ -248,16 +248,16 @@ export class Directory extends DurableObject {
   async unlockChild(familyId, childId, pin) {
     const c = this.ownChild(familyId, childId);
     const k = 'pin:' + childId;
-    if (this.throttled(k)) throw new AppError(429, 'Muitas tentativas. Espere 10 minutos ou peça ajuda a um adulto.');
+    if (this.throttled(k)) throw new AppError(429, 'Too many attempts. Wait 10 minutes or ask a grown-up for help.');
     const ok = sameString(await pbkdf2(String(pin || ''), c.pin_salt, PIN_ITER), c.pin_hash);
-    if (!ok) { this.fail(k, 8, 10); throw new AppError(401, 'PIN incorreto.'); }
+    if (!ok) { this.fail(k, 8, 10); throw new AppError(401, 'Incorrect PIN.'); }
     this.clearFail(k);
     return { ok: true };
   }
   deleteFamily(familyId) {
     const kids = this.all('SELECT id FROM children WHERE family_id = ?', familyId).map(r => r.id);
     if (this.one("SELECT id FROM parents WHERE family_id = ? AND role = 'admin'", familyId) && this.one("SELECT COUNT(*) AS n FROM parents WHERE role = 'admin'").n <= 1)
-      throw new AppError(400, 'A família do administrador não pode ser apagada por aqui.');
+      throw new AppError(400, 'The administrator’s family cannot be deleted here.');
     for (const t of ['children', 'invites', 'usage']) this.sql.exec(`DELETE FROM ${t} WHERE family_id = ?`, familyId);
     this.sql.exec('DELETE FROM sessions WHERE family_id = ?', familyId);
     this.sql.exec('DELETE FROM parents WHERE family_id = ?', familyId);
@@ -323,7 +323,7 @@ export class Directory extends DurableObject {
   feedbackAdd(d) {
     const day = addMs(-86400000);
     const n = this.one('SELECT COUNT(*) AS n FROM feedback WHERE family_id = ? AND created > ?', d.familyId, day).n;
-    if (n >= 20) throw new AppError(429, 'Muitas mensagens hoje. Tente amanhã. 🙂');
+    if (n >= 20) throw new AppError(429, 'Too many messages today. Try again tomorrow. 🙂');
     const mailed = this.one('SELECT COUNT(*) AS n FROM feedback WHERE family_id = ? AND created > ? AND emailed = 1', d.familyId, day).n;
     this.sql.exec('INSERT INTO feedback (family_id, parent_id, child_id, who, kind, text, screen, app_version, user_agent, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
       d.familyId, d.parentId, d.childId || null, cleanText(d.who, 60), d.kind, String(d.text).slice(0, 2000), cleanText(d.screen, 40), cleanText(d.version, 20), String(d.userAgent || '').slice(0, 300), now());
@@ -339,7 +339,7 @@ export class Directory extends DurableObject {
   feedbackResolve(id, resolved = true) { this.sql.exec('UPDATE feedback SET resolved = ? WHERE id = ?', resolved ? 1 : 0, Number(id)); return { ok: true }; }
   getSetting(key, def = null) { const r = this.one('SELECT value FROM app_settings WHERE key = ?', key); return r ? r.value : def; }
   setSetting(key, value) {
-    if (key === 'support_email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value))) throw new AppError(400, 'E-mail inválido.');
+    if (key === 'support_email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value))) throw new AppError(400, 'Invalid e-mail address.');
     this.sql.exec('INSERT INTO app_settings (key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value', key, String(value).slice(0, 200)); return { ok: true };
   }
   settings() { return { support_email: this.getSetting('support_email', 'carloscurioni@gmail.com') }; }

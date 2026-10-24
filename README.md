@@ -43,6 +43,9 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
 
 ## 1. Como a Amanda usa
 
+> **Idioma:** o app é em **inglês** (telas, Lumi, área dos pais). O português aparece só nos textos e atividades das matérias em português (Português, Ortografia, Leitura, Literatura, Redação, BSS).
+
+
 1. **📝 Minha semana:** o estudante escolhe o **ano escolar** e o app mostra as matérias da etapa. Depois abre a seção de cada matéria e escreve do jeito dele, ou fala pelo microfone do teclado. Por exemplo, em BSS: *"estamos aprendendo sobre as bacias hidrográficas"*.
    - **🪄 Preencher pela varinha:** preenche cada matéria com o tópico, os objetivos e as palavras-chave da **semana letiva** atual, segundo um currículo de referência pré-planejado semana a semana. Tudo continua editável.
      - **Fontes:** English National Curriculum e BNCC até o Year 9, Cambridge IGCSE no Year 10–11, IB Diploma (SL/HL) no Year 12–13 e IPC no Primary. Cada fonte está em `data/curriculum/SOURCES.md`.

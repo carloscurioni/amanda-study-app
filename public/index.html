@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Estudos com a Lumi</title>
-  <meta name="description" content="App de estudos gamificado: tarefas da semana, mascote tutora, moedas e lojinha.">
+  <title>Study with Lumi</title>
+  <meta name="description" content="Gamified study app: weekly tasks, a tutor mascot, coins and a shop.">
   <meta name="theme-color" content="#7b5cf0">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A6%89%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +16,13 @@
   <div id="app">
     <!-- Barra superior: mascote presente em todas as telas -->
     <header id="topbar">
-      <button id="mascot-btn" class="mascot-mini" type="button" aria-label="Falar com a Lumi"></button>
-      <div id="top-title" class="top-title">Estudos</div>
-      <button id="coin-pill" class="coins" type="button" title="Suas moedas">🪙 <span id="coin-count">0</span></button>
-      <nav class="top-nav" aria-label="Navegação">
-        <button type="button" data-nav="home" title="Início" aria-label="Início">🏠</button>
-        <button type="button" data-nav="shop" title="Lojinha" aria-label="Lojinha">🛒</button>
-        <button type="button" data-nav="parents" title="Área dos pais" aria-label="Área dos pais">🔒</button>
+      <button id="mascot-btn" class="mascot-mini" type="button" aria-label="Talk to Lumi"></button>
+      <div id="top-title" class="top-title">Study with Lumi</div>
+      <button id="coin-pill" class="coins" type="button" title="Your coins">🪙 <span id="coin-count">0</span></button>
+      <nav class="top-nav" aria-label="Navigation">
+        <button type="button" data-nav="home" title="Home" aria-label="Home">🏠</button>
+        <button type="button" data-nav="shop" title="Shop" aria-label="Shop">🛒</button>
+        <button type="button" data-nav="parents" title="Parents’ area" aria-label="Parents’ area">🔒</button>
       </nav>
       <div id="bubble" class="bubble hidden" role="status" aria-live="polite">
         <div id="bubble-text"></div>
@@ -31,18 +31,18 @@
     </header>
 
     <main id="screens">
-      <section id="scr-welcome" class="screen" aria-label="Boas-vindas"></section>
-      <section id="scr-login" class="screen" aria-label="Código da família"></section>
-      <section id="scr-home" class="screen" aria-label="Início"></section>
-      <section id="scr-setup" class="screen" aria-label="Minha semana"></section>
-      <section id="scr-work" class="screen" aria-label="Tarefa"></section>
-      <section id="scr-check" class="screen" aria-label="Corrigir folha"></section>
-      <section id="scr-selfcheck" class="screen" aria-label="Corrigir sozinha"></section>
-      <section id="scr-shop" class="screen" aria-label="Lojinha"></section>
-      <section id="scr-workshop" class="screen" aria-label="Oficina de palavras"></section>
-      <section id="scr-collection" class="screen" aria-label="Minha coleção"></section>
-      <section id="scr-notes" class="screen" aria-label="Meus recadinhos"></section>
-      <section id="scr-parents" class="screen" aria-label="Área dos pais"></section>
+      <section id="scr-welcome" class="screen" aria-label="Welcome"></section>
+      <section id="scr-login" class="screen" aria-label="Family code"></section>
+      <section id="scr-home" class="screen" aria-label="Home"></section>
+      <section id="scr-setup" class="screen" aria-label="My week"></section>
+      <section id="scr-work" class="screen" aria-label="Task"></section>
+      <section id="scr-check" class="screen" aria-label="Mark my sheet"></section>
+      <section id="scr-selfcheck" class="screen" aria-label="Mark it myself"></section>
+      <section id="scr-shop" class="screen" aria-label="Shop"></section>
+      <section id="scr-workshop" class="screen" aria-label="Word workshop"></section>
+      <section id="scr-collection" class="screen" aria-label="My collection"></section>
+      <section id="scr-notes" class="screen" aria-label="My secret notes"></section>
+      <section id="scr-parents" class="screen" aria-label="Parents’ area"></section>
     </main>
   </div>
 
@@ -50,7 +50,7 @@
     <div id="modal-card" class="modal-card"></div>
   </div>
   <div id="toast" class="toast hidden" role="status"></div>
-  <button type="button" id="fb-btn" class="fb-btn" aria-label="Dúvida, sugestão ou problema" title="Dúvida, sugestão ou problema" hidden>💬</button>
+  <button type="button" id="fb-btn" class="fb-btn" aria-label="Question, suggestion or problem" title="Question, suggestion or problem" hidden>💬</button>
   <!-- Folhas para imprimir (montadas pelo script; só aparecem na impressão) -->
   <div id="print-root" aria-hidden="true"></div>
 

@@ -61,7 +61,7 @@ export class Curriculum extends DurableObject {
   async get(year, subject, level, week) { return this.row([...this.sql.exec('SELECT * FROM curriculum_weeks WHERE year = ? AND subject = ? AND level = ? AND academic_week = ?', year, subject, level || '', week)][0]) || null; }
   async edit(year, subject, level, week, d) {
     const cur = await this.get(year, subject, level, week);
-    if (!cur) return { err: 'Linha não encontrada.' };
+    if (!cur) return { err: 'Row not found.' };
     const clean = (a, n) => (Array.isArray(a) ? a : String(a || '').split(/\n|;/)).map(x => String(x).trim()).filter(Boolean).slice(0, n).map(x => x.slice(0, 200));
     this.sql.exec('UPDATE curriculum_weeks SET topic = ?, objectives = ?, keywords = ?, spelling = ?, edited = 1, updated = ? WHERE year = ? AND subject = ? AND level = ? AND academic_week = ?',
       String(d.topic || cur.topic).slice(0, 140), JSON.stringify(clean(d.objectives ?? cur.objectives, 6)), JSON.stringify(clean(d.keywords ?? cur.keywords, 10)), JSON.stringify(clean(d.spelling ?? cur.spelling, 14)),

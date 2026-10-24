@@ -39,28 +39,28 @@ function wordCount(text, w) {
 export function cleanQuestion(raw, subject) {
   const r = raw || {};
   const type = String(r.type || '').trim();
-  if (!QTYPES.includes(type)) return { err: `tipo inválido "${type}"` };
+  if (!QTYPES.includes(type)) return { err: `invalid type "${type}"` };
   const q = { subject, type, q: s(r.q, 500), options: [], answer: s(r.answer, 300), accept: [], hint: s(r.hint, 240), text: '', errors: [] };
-  if (!q.q) return { err: 'sem enunciado' };
+  if (!q.q) return { err: 'missing question text' };
   if (Array.isArray(r.accept)) q.accept = r.accept.map(x => s(x, 120)).filter(Boolean).slice(0, 8);
   if (type === 'mc') {
     q.options = (Array.isArray(r.options) ? r.options : []).map(x => s(x, 160)).filter(Boolean).slice(0, 5);
-    if (q.options.length < 2) return { err: 'múltipla escolha sem opções' };
-    if (new Set(q.options.map(normTxt)).size !== q.options.length) return { err: 'opções repetidas' };
-    if (!q.options.some(o => normTxt(o) === normTxt(q.answer))) return { err: 'resposta fora das opções' };
+    if (q.options.length < 2) return { err: 'multiple choice without options' };
+    if (new Set(q.options.map(normTxt)).size !== q.options.length) return { err: 'repeated options' };
+    if (!q.options.some(o => normTxt(o) === normTxt(q.answer))) return { err: 'answer is not one of the options' };
   }
-  if ((type === 'short' || type === 'num') && !q.answer) return { err: 'sem resposta' };
-  if (type === 'num' && !/^-?[\d.,/ ]+$/.test(q.answer.replace(/\s/g, ''))) return { err: 'resposta numérica inválida' };
+  if ((type === 'short' || type === 'num') && !q.answer) return { err: 'missing answer' };
+  if (type === 'num' && !/^-?[\d.,/ ]+$/.test(q.answer.replace(/\s/g, ''))) return { err: 'invalid numeric answer' };
   if (type === 'open') q.answer = '';
   if (type === 'proof') {
     q.text = s(r.text, 1200);
     q.errors = (Array.isArray(r.errors) ? r.errors : []).map(e => ({ wrong: s(e && e.wrong, 60), right: s(e && e.right, 60) })).filter(e => e.wrong && e.right && e.wrong !== e.right).slice(0, 7);
-    if (!q.text || q.errors.length < 3) return { err: 'caça-erros sem texto ou com menos de 3 erros' };
-    if (q.errors.some(e => wordCount(q.text, e.wrong) !== 1)) return { err: 'caça-erros: palavra errada não aparece exatamente 1 vez' };
+    if (!q.text || q.errors.length < 3) return { err: 'spot-the-mistakes without text or with fewer than 3 mistakes' };
+    if (q.errors.some(e => wordCount(q.text, e.wrong) !== 1)) return { err: 'spot-the-mistakes: a wrong word does not appear exactly once' };
     q.answer = q.errors.map(e => `${e.wrong} → ${e.right}`).join('; ');
   }
-  if (q.hint && q.answer && q.answer.length >= 3 && type !== 'proof' && normTxt(q.hint).includes(normTxt(q.answer))) return { err: 'a dica entrega a resposta' };
-  if (unsafe(q.q, q.hint, q.text, ...q.options)) return { err: 'link, e-mail ou telefone no texto' };
+  if (q.hint && q.answer && q.answer.length >= 3 && type !== 'proof' && normTxt(q.hint).includes(normTxt(q.answer))) return { err: 'the hint gives away the answer' };
+  if (unsafe(q.q, q.hint, q.text, ...q.options)) return { err: 'link, e-mail or phone number in the text' };
   return { q };
 }
 
@@ -68,24 +68,24 @@ export function cleanQuestion(raw, subject) {
 export function cleanChapter(raw, subject) {
   const r = raw || {};
   const ch = { title: s(r.title, 160), synopsis: s(r.synopsis, 600), text: s(r.text, 6000), questions: [] };
-  if (!ch.title) return { err: 'capítulo sem título' };
+  if (!ch.title) return { err: 'chapter without a title' };
   if (r.text !== undefined || r.questions !== undefined) {
-    if (ch.text.split(/\s+/).length < 60) return { err: 'capítulo curto demais' };
-    if (unsafe(ch.text)) return { err: 'link no capítulo' };
+    if (ch.text.split(/\s+/).length < 60) return { err: 'chapter too short' };
+    if (unsafe(ch.text)) return { err: 'link in the chapter' };
     for (const x of (Array.isArray(r.questions) ? r.questions : []).slice(0, 9)) { const c = cleanQuestion(x, subject); if (c.q) ch.questions.push(c.q); }
-    if (ch.questions.length < 2) return { err: 'capítulo com menos de 2 perguntas válidas' };
+    if (ch.questions.length < 2) return { err: 'chapter with fewer than 2 valid questions' };
   }
   return { ch };
 }
 export function cleanBook(raw, subject) {
   const r = raw || {};
   const b = { title: s(r.title, 120), premise: s(r.premise, 800), chapters: [] };
-  if (!b.title) return { err: 'livro sem título' };
+  if (!b.title) return { err: 'book without a title' };
   for (const c of (Array.isArray(r.chapters) ? r.chapters : []).slice(0, BOOK_CHAPTERS)) {
     const x = cleanChapter(c, subject); if (x.err) return { err: x.err };
     b.chapters.push(x.ch);
   }
-  if (b.chapters.length !== BOOK_CHAPTERS) return { err: `o livro precisa de ${BOOK_CHAPTERS} capítulos (tem ${b.chapters.length})` };
+  if (b.chapters.length !== BOOK_CHAPTERS) return { err: `the book needs ${BOOK_CHAPTERS} chapters (has ${b.chapters.length})` };
   return { b };
 }
 export const chapterDone = c => !!(c && c.text && c.questions && c.questions.length);

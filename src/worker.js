@@ -113,20 +113,20 @@ export class FamilyStore extends DurableObject {
   async notes() { return (await this.ctx.storage.get('notes')) || []; }
   async notesAdd(text, from) {
     const l = await this.notes();
-    if (l.length >= 300) return { err: 'Limite de recadinhos atingido.' };
+    if (l.length >= 300) return { err: 'Secret note limit reached.' };
     const n = { id: crypto.randomUUID().slice(0, 12), text, from, createdAt: new Date().toISOString(), openedAt: null };
     l.push(n); await this.ctx.storage.put('notes', l); return { note: n };
   }
   async notesDelete(id) {
     const l = await this.notes(); const n = l.find(x => x.id === id);
-    if (!n) return { err: 'Recadinho não encontrado.' };
-    if (n.openedAt) return { err: 'Este recadinho já foi aberto.' };
+    if (!n) return { err: 'Secret note not found.' };
+    if (n.openedAt) return { err: 'This secret note has already been opened.' };
     await this.ctx.storage.put('notes', l.filter(x => x.id !== id)); return { ok: true };
   }
   async notesAvailable() { return (await this.notes()).filter(n => !n.openedAt).length; }
   async notesOpen() {
     const l = await this.notes(); const un = l.filter(n => !n.openedAt);
-    if (!un.length) return { err: 'Sem recadinhos disponíveis.' };
+    if (!un.length) return { err: 'No secret notes available.' };
     const n = un[Math.floor(Math.random() * un.length)];
     n.openedAt = new Date().toISOString();
     await this.ctx.storage.put('notes', l);
@@ -145,8 +145,8 @@ function safeEqual(a, b) {
 }
 async function body(req, max = 12_000_000) {
   const len = Number(req.headers.get('content-length') || 0);
-  if (len > max) throw new HttpError(413, 'Envio grande demais.');
-  try { return await req.json(); } catch { throw new HttpError(400, 'JSON inválido.'); }
+  if (len > max) throw new HttpError(413, 'Upload too large.');
+  try { return await req.json(); } catch { throw new HttpError(400, 'Invalid JSON.'); }
 }
 const dir = env => {
   const stub = env.DIRECTORY.get(env.DIRECTORY.idFromName('directory'));
@@ -176,12 +176,12 @@ Se o texto recebido trouxer algo impróprio, perigoso, pessoal ou fora do contex
 Não inclua links nem nomes de sites, e nunca incentive o estudante a conversar com desconhecidos.
 Você é uma inteligência artificial (a mascote Lumi); nunca finja ser uma pessoa.`;
 async function claude(env, ctx, { model, effort, system, content, schema, maxTokens }) {
-  if (!env.ANTHROPIC_API_KEY) throw new HttpError(503, 'A chave da API do Claude não foi configurada no servidor.');
+  if (!env.ANTHROPIC_API_KEY) throw new HttpError(503, 'The Claude API key has not been set up on the server.');
   const childCap = Number(env.CHILD_DAILY_USD || 0.5), monthCap = Number(env.MONTHLY_USD || 40);
   const ok = await dir(env).aiCheck(ctx.familyId, ctx.childId, childCap, monthCap);
   if (!ok.ok) throw new HttpError(429, ok.why === 'child'
-    ? 'A Lumi já trabalhou bastante hoje! O limite diário desta criança foi atingido. Amanhã libera de novo. 🦉'
-    : 'O limite mensal de uso do app foi atingido. Avise o administrador.');
+    ? 'Lumi has worked really hard today! This child’s daily limit has been reached. It opens up again tomorrow. 🦉'
+    : 'The app’s monthly usage limit has been reached. Please let the administrator know.');
   // Streaming: a conexão recebe dados o tempo todo e não cai por tempo esgotado (erro 524) em respostas longas.
   const reqBody = JSON.stringify({
     model, max_tokens: maxTokens, system: system + CHILD_SAFETY, stream: true,
@@ -202,17 +202,17 @@ async function claude(env, ctx, { model, effort, system, content, schema, maxTok
     const raw = await res.text().catch(() => '');
     let msg = raw.slice(0, 300);
     try { msg = JSON.parse(raw).error?.message || msg; } catch { /* mantém texto */ }
-    throw new HttpError(502, `Claude respondeu ${res.status}: ${msg}`);
+    throw new HttpError(502, `Claude replied ${res.status}: ${msg}`);
   }
   const data = await readStream(res);
   const u = data.usage || {};
   const [pin, pout] = PRICES[model] || [4, 20];
   const usd = ((u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) * 1.25 + (u.cache_read_input_tokens || 0) * 0.1) * pin / 1e6 + (u.output_tokens || 0) * pout / 1e6;
   await dir(env).aiRecord(ctx.familyId, ctx.childId, usd);
-  if (data.stop_reason === 'refusal') throw new HttpError(502, 'O Claude recusou este pedido.');
-  if (data.stop_reason === 'max_tokens') throw new HttpError(502, 'A resposta do Claude ficou longa demais. Tente com menos perguntas.');
+  if (data.stop_reason === 'refusal') throw new HttpError(502, 'Claude declined this request.');
+  if (data.stop_reason === 'max_tokens') throw new HttpError(502, 'Claude’s answer was too long. Try with fewer questions.');
   const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
-  try { return JSON.parse(text); } catch { throw new HttpError(502, 'Resposta do Claude em formato inesperado.'); }
+  try { return JSON.parse(text); } catch { throw new HttpError(502, 'Claude’s answer came in an unexpected format.'); }
 }
 
 // Lê o stream SSE da API: junta só os pedaços de texto (ignora o raciocínio) e guarda uso e motivo de parada.
@@ -233,7 +233,7 @@ async function readStream(res) {
       const d = JSON.parse(line);
       if (d.type === 'message_start') usage = Object.assign({}, d.message && d.message.usage);
       else if (d.type === 'message_delta') { if (d.usage) Object.assign(usage, d.usage); if (d.delta && d.delta.stop_reason) stop = d.delta.stop_reason; }
-      else if (d.type === 'error') throw new HttpError(502, `Claude respondeu com erro: ${(d.error && d.error.message) || 'desconhecido'}`);
+      else if (d.type === 'error') throw new HttpError(502, `Claude replied with an error: ${(d.error && d.error.message) || 'unknown'}`);
     }
   }
   return { content: [{ type: 'text', text }], usage, stop_reason: stop };
@@ -267,7 +267,7 @@ const PLAN_SCHEMA = {
       type: 'array',
       items: { type: 'object', properties: { subject: { type: 'string', enum: SUBJECT_IDS }, summary: { type: 'string' } }, required: ['subject', 'summary'], additionalProperties: false },
     },
-    message: { type: 'string', description: 'Mensagem curta e animada da mascote Lumi para o estudante, em português.' },
+    message: { type: 'string', description: 'Mensagem curta e animada da mascote Lumi para o estudante, in British English.' },
     passages: {
       type: 'array',
       description: 'Leitura diária: um capítulo do "livro da semana" para cada dia marcado com leitura. Pode ser vazia se nenhum dia tiver leitura.',
@@ -296,7 +296,7 @@ const OUTLINE_SCHEMA = {
       type: 'array', description: 'Uma linha por matéria encontrada, com TODOS os detalhes necessários (listas de palavras completas, exemplos, fórmulas, livro/capítulo): as próximas etapas não verão as fotos.',
       items: { type: 'object', properties: { subject: { type: 'string', enum: SUBJECT_IDS }, summary: { type: 'string' } }, required: ['subject', 'summary'], additionalProperties: false },
     },
-    message: { type: 'string', description: 'Mensagem curta e animada da mascote Lumi para o estudante, em português.' },
+    message: { type: 'string', description: 'Mensagem curta e animada da mascote Lumi para o estudante, in British English.' },
     focus: {
       type: 'array', description: 'Para cada dia, o subtema de cada matéria (variando ao longo da semana).',
       items: { type: 'object', properties: { day: { type: 'string', enum: DOWS },
@@ -391,13 +391,13 @@ const GRADE_SCHEMA = {
           number: { type: 'integer' },
           read: { type: 'string', description: 'O que o estudante escreveu/marcou, transcrito. Vazio se em branco ou ilegível.' },
           verdict: { type: 'string', enum: ['ok', 'bad', 'blank'] },
-          note: { type: 'string', description: 'Comentário curto e gentil (pode ser vazio).' },
+          note: { type: 'string', description: 'Comentário curto e gentil, no idioma da pergunta (português do Brasil nas matérias em português; inglês britânico nas demais). Pode ser vazio.' },
         },
         required: ['number', 'read', 'verdict', 'note'],
         additionalProperties: false,
       },
     },
-    message: { type: 'string', description: 'Mensagem curta e encorajadora da Lumi, em português.' },
+    message: { type: 'string', description: 'Mensagem curta e encorajadora da Lumi, in British English.' },
     legible: { type: 'boolean', description: 'false se a foto estiver ilegível ou não for a folha certa.' },
   },
   required: ['results', 'message', 'legible'],
@@ -434,11 +434,11 @@ async function handlePlan(env, b, ctx) {
   const LEVELS = { below: 'mais fácil (cerca de 1 ano abaixo)', at: 'no nível do ano', above: 'acima (cerca de 1 ano acima)', way: 'bem acima (cerca de 2 anos acima)' };
   days.forEach(d => { d.read = d.read && READ_IDS.includes(d.read.subject) ? { subject: d.read.subject, level: LEVELS[d.read.level] || LEVELS.at } : null; });
   const reading = days.some(d => d.read);
-  if (!days.length) throw new HttpError(400, 'Nenhum dia com perguntas.');
+  if (!days.length) throw new HttpError(400, 'No days with questions.');
   const total = days.reduce((a, d) => a + d.n, 0);
   const images = (b.images || []).slice(0, 4);
   const text = String(b.text || '').slice(0, 6000);
-  if (!text.trim() && !images.length) throw new HttpError(400, 'Conte o que você está aprendendo (ou mande uma foto).');
+  if (!text.trim() && !images.length) throw new HttpError(400, 'Tell me what you’re learning (or send a photo).');
   const dayList = days.map(d => `- ${d.dow} (${d.label || d.dow}): ${d.n} perguntas${d.read ? ` · leitura do dia: ${d.read.subject} (nível: ${d.read.level}) — 3 dessas perguntas são sobre o capítulo` : ''}`).join('\n');
   const n = yearNum(b);
   const content = [
@@ -468,7 +468,7 @@ ${dayList}
    - Tamanho: ${n <= 2 ? '120–200' : n <= 6 ? '250–400' : '400–600'} palavras. Nível de leitura conforme indicado para o dia, em relação ao ano do estudante. Em literatura (pt_lit/en_lit) a partir do IGCSE, pode ser um conto ou crônica original com recursos literários para analisar.
    - Se o estudante citou um livro, autor ou tema nessas matérias, inspire-se (sem copiar trechos de obras reais).
    - Nesse dia, EXATAMENTE 3 perguntas dessa matéria são sobre o capítulo: 1 "open" pedindo o resumo do capítulo em 2–3 frases ("Resuma o capítulo de hoje…"/"Summarise today's chapter…") e 2 de compreensão ("mc" ou "short"; comece com "No capítulo…"/"In the chapter…"). Essas 3 contam no total do dia.` : 'Sem leitura diária nesta semana: "passages" vazia. Em leitura, se não houver texto, siga a regra normal de leitura.'}
-7. "message": 1–2 frases da Lumi (corujinha) animando o estudante, em português.` },
+7. "message": 1–2 frases da Lumi (corujinha) animando o estudante, in British English.` },
   ];
   const out = await claude(env, ctx, {
     model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: env.EFFORT_PLAN || 'medium',
@@ -480,11 +480,11 @@ ${dayList}
 const READ_LEVELS_TXT = { below: 'mais fácil (cerca de 1 ano abaixo)', at: 'no nível do ano', above: 'acima (cerca de 1 ano acima)', way: 'bem acima (cerca de 2 anos acima)' };
 async function handlePlanOutline(env, b, ctx) {
   const days = (b.days || []).filter(d => DOWS.includes(d.dow) && d.n > 0);
-  if (!days.length) throw new HttpError(400, 'Nenhum dia com perguntas.');
+  if (!days.length) throw new HttpError(400, 'No days with questions.');
   days.forEach(d => { d.read = d.read && READ_IDS.includes(d.read.subject) ? { subject: d.read.subject, level: READ_LEVELS_TXT[d.read.level] || READ_LEVELS_TXT.at } : null; });
   const images = (b.images || []).slice(0, 4);
   const text = String(b.text || '').slice(0, 6000);
-  if (!text.trim() && !images.length) throw new HttpError(400, 'Conte o que você está aprendendo (ou mande uma foto).');
+  if (!text.trim() && !images.length) throw new HttpError(400, 'Tell me what you’re learning (or send a photo).');
   const reading = days.filter(d => d.read);
   const content = [
     ...images.flatMap((img, i) => [{ type: 'text', text: `Foto ${i + 1} (material da escola):` }, { type: 'image', source: { type: 'base64', media_type: img.type || 'image/jpeg', data: img.data } }]),
@@ -501,7 +501,7 @@ Tarefa (é só o ROTEIRO; as perguntas serão criadas depois, dia a dia):
    Ortografia/Spelling — respeite o [modo]: "lista de palavras" = use exatamente as dadas; "tema" ou "a Lumi escolhe" = escolha 8–10 palavras adequadas ao ano e liste todas em "topics".
 2. "focus": para cada dia acima, um subtema curto de CADA matéria citada, variando ao longo da semana (sem repetir a mesma ideia).
 3. ${reading.length ? `"books": um livro original por matéria de leitura (${[...new Set(reading.map(d => d.read.subject))].join(', ')}), com título, premissa e um capítulo por dia em que essa matéria é a leitura do dia (${reading.map(d => `${d.dow}: ${d.read.subject}`).join(', ')}). Cada capítulo continua o anterior do mesmo livro (personagens fixos, gancho no fim). Se o estudante citou um livro, autor ou tema, inspire-se sem copiar.` : '"books": lista vazia (sem leitura diária).'}
-4. "message": 1–2 frases da Lumi animando o estudante, em português.` },
+4. "message": 1–2 frases da Lumi animando o estudante, in British English.` },
   ];
   return claude(env, ctx, {
     model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low',
@@ -510,7 +510,7 @@ Tarefa (é só o ROTEIRO; as perguntas serão criadas depois, dia a dia):
 }
 async function handlePlanDay(env, b, ctx) {
   const d = b.day || {};
-  if (!DOWS.includes(d.dow) || !(d.n > 0)) throw new HttpError(400, 'Dia inválido.');
+  if (!DOWS.includes(d.dow) || !(d.n > 0)) throw new HttpError(400, 'Invalid day.');
   const n = Math.max(1, Math.min(40, Number(d.n)));
   const yn = yearNum(b);
   const read = d.read && READ_IDS.includes(d.read.subject) ? d.read : null;
@@ -609,7 +609,7 @@ Se ela já respondeu errado, diga com carinho onde pensar de novo.` }];
 
 async function handleGrade(env, b, ctx) {
   const images = (b.images || []).slice(0, 6);
-  if (!images.length) throw new HttpError(400, 'Mande a foto da folha.');
+  if (!images.length) throw new HttpError(400, 'Send a photo of the sheet.');
   const qs = (b.questions || []).slice(0, 45);
   const list = qs.map((q, i) => `${i + 1}. [${q.type}] ${q.q}${q.options?.length ? ` (opções: ${q.options.join(' | ')})` : ''} → resposta esperada: ${q.type === 'open' ? '(resposta livre)' : q.answer}${q.accept?.length ? ` (também aceitar: ${q.accept.join(', ')})` : ''}`).join('\n');
   const content = [
@@ -622,7 +622,8 @@ Para cada número, transcreva em "read" o que ela escreveu ou marcou e dê o ver
 - "bad": errada; - "blank": em branco ou ilegível.
 - Caça-erros [proof]: em "read", liste as palavras que ela marcou e o que escreveu (ex.: "freind → friend"). "ok" só se encontrou e corrigiu TODAS as palavras erradas; em "note", diga quantas acertou.
 - Perguntas de resposta livre também recebem "ok" ou "bad": "ok" se a resposta responde à pergunta de forma correta e razoável para a idade (não exija perfeição); "bad" se está errada, fora do assunto ou incompleta demais.
-Em "note", um comentário curto e gentil: quando errada, diga a forma certa; nas livres, diga o que ficou bom e o que poderia melhorar. Se a foto não for desta folha ou estiver ilegível, legible=false.` },
+Em "note", um comentário curto e gentil, no idioma da pergunta (português do Brasil nas matérias em português; inglês britânico nas demais): quando errada, diga a forma certa; nas livres, diga o que ficou bom e o que poderia melhorar. Se a foto não for desta folha ou estiver ilegível, legible=false.
+Em "message", 1–2 frases encorajadoras da Lumi, in British English.` },
   ];
   return claude(env, ctx, {
     model: env.MODEL_GRADE || env.MODEL_PLAN || 'claude-sonnet-5-5', effort: env.EFFORT_GRADE || 'medium',
@@ -704,10 +705,10 @@ const SHARED_NOTE = `ATENÇÃO — BANCO COMPARTILHADO: este conteúdo será reu
 Não use nomes de pessoas reais, nomes de escolas nem nada pessoal. Se precisar de personagens, invente nomes variados (brasileiros nas matérias em português, britânicos/internacionais nas em inglês).`;
 const BANK_Q_SCHEMA = { type: 'object', properties: { questions: { type: 'array', items: qSchema(false) } }, required: ['questions'], additionalProperties: false };
 async function handleBankFill(env, b, ctx) {
-  const subject = String(b.subject || ''); if (!SUBJECT_IDS.includes(subject)) throw new HttpError(400, 'Matéria inválida.');
+  const subject = String(b.subject || ''); if (!SUBJECT_IDS.includes(subject)) throw new HttpError(400, 'Invalid subject.');
   const level = bankLevel(b, subject); const week = Math.max(1, Math.min(37, Number(b.week) || 1));
   const row = await curriculumRow(env, ctx.url, b.yearId, subject, level, week);
-  if (!row) throw new HttpError(404, 'Semana não encontrada no currículo de referência.');
+  if (!row) throw new HttpError(404, 'Week not found in the reference curriculum.');
   const ckey = qKey(BANK_CURRICULUM, b.yearId, subject, level, week);
   const B = await bankEnsure(env, ctx.url, b.yearId, week);
   const n = Math.max(4, Math.min(30, Number(b.n) || 10));
@@ -747,7 +748,7 @@ const CHAPTER_SCHEMA = {
   }, required: ['text', 'questions'], additionalProperties: false,
 };
 function bookArgs(b) {
-  const subject = String(b.subject || ''); if (!BANK_READ_IDS.includes(subject)) throw new HttpError(400, 'Matéria de leitura inválida.');
+  const subject = String(b.subject || ''); if (!BANK_READ_IDS.includes(subject)) throw new HttpError(400, 'Invalid reading subject.');
   const level = bankLevel(b, subject); const week = Math.max(1, Math.min(37, Number(b.week) || 1));
   const readLevel = BANK_READ_LEVELS.includes(b.readLevel) ? b.readLevel : 'at';
   return { subject, level, week, readLevel, ckey: bookKey(BANK_CURRICULUM, b.yearId, subject, level, week, readLevel), lang: isPtSubj(subject) ? 'pt' : 'en' };
@@ -766,16 +767,16 @@ Crie o ROTEIRO de um livro original em ${LANG_NAME(a.lang)} para a leitura diár
 - Habilidade de leitura da semana (pelo currículo): ${row ? `${row.topic} — ${(row.objectives || []).join('; ')}` : 'compreensão e inferência'}. Planeje os capítulos para dar oportunidades de praticar essa habilidade.
 - Em literatura (pt_lit/en_lit) a partir do IGCSE, pode ser uma sequência de contos ou crônicas originais com recursos literários para analisar.` }];
   const out = await claude(env, ctx, { model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low', system: studentProfile(null, YEAR_LABELS[b.yearId], [a.subject], yearNum(b), {}), content, schema: BOOK_HEADER_SCHEMA, maxTokens: 4000 });
-  if ((out.chapters || []).length < BOOK_CHAPTERS) throw new HttpError(502, 'O roteiro do livro veio incompleto.');
+  if ((out.chapters || []).length < BOOK_CHAPTERS) throw new HttpError(502, 'The book outline came back incomplete.');
   out.chapters = out.chapters.slice(0, BOOK_CHAPTERS);
   const book = await B.bookHeader(a.ckey, a.subject, out);
-  if (!book) throw new HttpError(409, 'Livro indisponível.');
+  if (!book) throw new HttpError(409, 'Book unavailable.');
   return { book: Object.assign({ key: a.ckey }, book) };
 }
 async function handleBankChapter(env, b, ctx) {
   const a = bookArgs(b); const idx = Math.max(0, Math.min(BOOK_CHAPTERS - 1, Number(b.idx) || 0));
   const B = await bankEnsure(env, ctx.url, b.yearId, a.week);
-  const book = await B.book(a.ckey); if (!book) throw new HttpError(404, 'Livro não encontrado.');
+  const book = await B.book(a.ckey); if (!book) throw new HttpError(404, 'Book not found.');
   if (chapterDone(book.chapters[idx])) return { chapter: book.chapters[idx], title: book.title };
   const row = await curriculumRow(env, ctx.url, b.yearId, a.subject, a.level, a.week);
   const yn = yearNum(b);
@@ -791,7 +792,7 @@ Escreva o capítulo ${idx + 1}: "${c.title}" — ${c.synopsis}
 - Depois, EXATAMENTE 8 perguntas (subject ${a.subject}): 1 "open" pedindo o resumo do capítulo em 2–3 frases e 7 de compreensão (das mais literais às de inferência) ("mc" ou "short", começando com "${a.lang === 'pt' ? 'No capítulo…' : 'In the chapter…'}")${row ? `, praticando a habilidade da semana: ${row.topic}` : ''}.` }];
   const out = await claude(env, ctx, { model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low', system: studentProfile(null, YEAR_LABELS[b.yearId], [a.subject], yn, {}), content, schema: CHAPTER_SCHEMA, maxTokens: 6000 });
   const ch = await B.bookChapter(a.ckey, a.subject, idx, out);
-  if (!ch) throw new HttpError(502, 'O capítulo veio em formato inesperado.');
+  if (!ch) throw new HttpError(502, 'The chapter came back in an unexpected format.');
   return { chapter: ch, title: book.title };
 }
 
@@ -801,7 +802,7 @@ const AI_HANDLERS = { 'bank-fill': handleBankFill, 'bank-book': handleBankBook, 
 async function api(req, env, url) {
   const path = url.pathname, m = req.method;
   // Proteção contra requisições de outros sites: toda escrita precisa do cabeçalho do app.
-  if (m !== 'GET' && req.headers.get('x-lumi') !== '1') throw new HttpError(403, 'Requisição recusada.');
+  if (m !== 'GET' && req.headers.get('x-lumi') !== '1') throw new HttpError(403, 'Request refused.');
   const D = dir(env);
 
   if (path === '/api/health') {
@@ -811,7 +812,7 @@ async function api(req, env, url) {
   // Primeiro acesso: cria a conta do administrador e leva os dados antigos para o 1º perfil.
   if (path === '/api/setup' && m === 'POST') {
     const b = await body(req, 50_000);
-    if (!env.FAMILY_CODE || !safeEqual(b.code, env.FAMILY_CODE)) throw new HttpError(401, 'Código de configuração incorreto.');
+    if (!env.FAMILY_CODE || !safeEqual(b.code, env.FAMILY_CODE)) throw new HttpError(401, 'Incorrect setup code.');
     const r = await D.setup(b);
     const old = await legacyStore(env).load();
     if (old) {
@@ -837,10 +838,10 @@ async function api(req, env, url) {
   // ---- daqui para baixo, precisa estar logado ----
   const token = getCookie(req, COOKIE);
   const me = await D.auth(token);
-  if (!me) throw new HttpError(401, 'Sessão expirada. Entre de novo.');
+  if (!me) throw new HttpError(401, 'Session expired. Please log in again.');
   const familyId = me.family.id;
   const isAdmin = me.parent.role === 'admin';
-  const need = cond => { if (!cond) throw new HttpError(403, 'Sem permissão.'); };
+  const need = cond => { if (!cond) throw new HttpError(403, 'Not allowed.'); };
 
   if (path === '/api/auth/me' && m === 'GET') return json({ parent: me.parent, family: { id: me.family.id, name: me.family.name }, children: me.children, ai: !!env.ANTHROPIC_API_KEY, tts: !!env.GOOGLE_TTS_API_KEY });
   if (path === '/api/auth/logout' && m === 'POST') { await D.logout(token); return json({ ok: true }, 200, { 'set-cookie': clearCookie() }); }
@@ -856,7 +857,7 @@ async function api(req, env, url) {
   if (chM && m === 'POST' && chM[2]) { const b = await body(req, 2_000); return json(await D.unlockChild(familyId, chM[1], b.pin)); }
   if (chM && m === 'DELETE' && !chM[2]) {
     const b = await body(req, 5_000);
-    if (!(await D.verifyPassword(me.parent.id, b.password)).ok) throw new HttpError(401, 'Senha incorreta.');
+    if (!(await D.verifyPassword(me.parent.id, b.password)).ok) throw new HttpError(401, 'Incorrect password.');
     await D.deleteChild(familyId, chM[1]);
     await childStore(env, chM[1]).reset();
     return json({ ok: true });
@@ -872,7 +873,7 @@ async function api(req, env, url) {
   }
   if (path === '/api/family' && m === 'DELETE') {
     const b = await body(req, 5_000);
-    if (!(await D.verifyPassword(me.parent.id, b.password)).ok) throw new HttpError(401, 'Senha incorreta.');
+    if (!(await D.verifyPassword(me.parent.id, b.password)).ok) throw new HttpError(401, 'Incorrect password.');
     const r = await D.deleteFamily(familyId);
     for (const id of r.childIds) await childStore(env, id).reset();
     return json({ ok: true }, 200, { 'set-cookie': clearCookie() });
@@ -882,9 +883,9 @@ async function api(req, env, url) {
     const b = await body(req, 12_000);
     const kind = ['duvida', 'sugestao', 'problema'].includes(b.kind) ? b.kind : 'duvida';
     const text = String(b.text || '').trim().slice(0, 2000);
-    if (text.length < 3) throw new HttpError(400, 'Escreva a sua mensagem.');
+    if (text.length < 3) throw new HttpError(400, 'Please write your message.');
     const child = b.childId ? me.children.find(c => c.id === b.childId) : null;
-    const who = child ? `${child.name} (criança, perfil aberto por ${me.parent.name})` : `${me.parent.name} (responsável)`;
+    const who = child ? `${child.name} (child, profile opened by ${me.parent.name})` : `${me.parent.name} (parent)`;
     const r = await D.feedbackAdd({ familyId, parentId: me.parent.id, childId: child ? child.id : null, who, kind, text, screen: b.screen, version: b.version, userAgent: req.headers.get('user-agent') });
     let emailed = false;
     if (env.RESEND_API_KEY && r.canEmail) {
@@ -903,7 +904,7 @@ async function api(req, env, url) {
     if (m === 'GET') return json({ state: await S.load() });
     if (m === 'PUT') {
       const b = await body(req, 3_000_000);
-      if (!b.state || typeof b.state !== 'object') throw new HttpError(400, 'Estado inválido.');
+      if (!b.state || typeof b.state !== 'object') throw new HttpError(400, 'Invalid state.');
       const r = await S.save(b.state, Number(b.baseRev) || 0);
       return json(r, r.ok ? 200 : 409);
     }
@@ -917,12 +918,12 @@ async function api(req, env, url) {
     const N = childStore(env, ntM[1]); const sub = ntM[2];
     if (sub === 'status' && m === 'GET') return json({ available: await N.notesAvailable() });
     if (sub === 'open' && m === 'POST') { const r = await N.notesOpen(); if (r.err) throw new HttpError(404, r.err); return json(r); }
-    if (!me.unlocked) throw new HttpError(403, 'Digite a senha da área dos pais de novo.');
+    if (!me.unlocked) throw new HttpError(403, 'Please enter the Parents’ area password again.');
     if (!sub && m === 'GET') return json({ notes: await N.notes() });
     if (!sub && m === 'POST') {
       const b = await body(req, 10_000);
       const text = String(b.text || '').replace(/\s+$/g, '').slice(0, 1000);
-      if (!text.trim()) throw new HttpError(400, 'Escreva o recadinho.');
+      if (!text.trim()) throw new HttpError(400, 'Please write the secret note.');
       const r = await N.notesAdd(text, String(me.parent.name || '').slice(0, 40)); if (r.err) throw new HttpError(400, r.err); return json(r);
     }
     if (sub && m === 'DELETE') { const r = await N.notesDelete(sub); if (r.err) throw new HttpError(400, r.err); return json(r); }
@@ -944,24 +945,24 @@ async function api(req, env, url) {
   if (path === '/api/tts' && m === 'POST') {
     const b = await body(req, 20_000);
     const child = me.children.find(c => c.id === b.childId); need(child);
-    if (!env.GOOGLE_TTS_API_KEY) throw new HttpError(503, 'Voz natural não configurada.');
+    if (!env.GOOGLE_TTS_API_KEY) throw new HttpError(503, 'Natural voice is not set up.');
     const lang = b.lang === 'en' ? 'en' : 'pt';
     const text = String(b.text || '').replace(/\s+/g, ' ').trim().slice(0, 1800);
-    if (!text) throw new HttpError(400, 'Texto vazio.');
+    if (!text) throw new HttpError(400, 'Empty text.');
     const voice = await ttsVoice(env, lang);
     const k = await sha256hex(`${voice.name}|${text}`);
     const T = env.TTS.get(env.TTS.idFromName('tts'));
     let audio = await T.get(k);
     if (!audio) {
       const ok = await D.aiCheck(familyId, child.id, Number(env.CHILD_DAILY_USD || 0.5), Number(env.MONTHLY_USD || 40));
-      if (!ok.ok) throw new HttpError(429, 'O limite de uso de hoje foi atingido.');
+      if (!ok.ok) throw new HttpError(429, 'Today’s usage limit has been reached.');
       const audioConfig = { audioEncoding: 'MP3' };
       if (!/Chirp/i.test(voice.name)) audioConfig.speakingRate = 0.95;
       const res = await fetch(`${env.TTS_BASE_URL || 'https://texttospeech.googleapis.com'}/v1/text:synthesize?key=${encodeURIComponent(env.GOOGLE_TTS_API_KEY)}`, {
         method: 'POST', headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ input: { text }, voice: { languageCode: voice.lang, name: voice.name }, audioConfig }),
       });
-      if (!res.ok) { const raw = await res.text().catch(() => ''); console.error('tts', res.status, raw.slice(0, 300)); throw new HttpError(502, `Voz natural indisponível (${res.status}).`); }
+      if (!res.ok) { const raw = await res.text().catch(() => ''); console.error('tts', res.status, raw.slice(0, 300)); throw new HttpError(502, `Natural voice unavailable (${res.status}).`); }
       const j = await res.json();
       audio = Uint8Array.from(atob(j.audioContent || ''), c => c.charCodeAt(0));
       await T.put(k, voice.name, text.length, audio);
@@ -990,9 +991,9 @@ async function api(req, env, url) {
   }
   if (path === '/api/bank/report' && m === 'POST') {
     const b = await body(req, 5_000);
-    const id = String(b.id || '').slice(0, 120); if (!id) throw new HttpError(400, 'Item inválido.');
+    const id = String(b.id || '').slice(0, 120); if (!id) throw new HttpError(400, 'Invalid item.');
     const r = await bankStub(env).report(id, familyId, isAdmin);
-    await D.report(familyId, b.childId, 'banco', `Item do banco ${id}: ${String(b.text || '').slice(0, 800)}`).catch(() => {});
+    await D.report(familyId, b.childId, 'banco', `Question bank item ${id}:${String(b.text || '').slice(0, 800)}`).catch(() => {});
     return json(r);
   }
 
@@ -1002,7 +1003,7 @@ async function api(req, env, url) {
     const year = String(url.searchParams.get('year') || '').slice(0, 4);
     const week = Math.max(1, Math.min(37, Number(url.searchParams.get('week')) || 1));
     const subjects = String(url.searchParams.get('subjects') || '').split(',').filter(Boolean).slice(0, 30).map(x => { const [subject, level] = x.split(':'); return { subject, level: level === 'hl' || level === 'sl' ? level : '' }; });
-    if (!/^Y\d{1,2}$/.test(year)) throw new HttpError(400, 'Ano escolar inválido.');
+    if (!/^Y\d{1,2}$/.test(year)) throw new HttpError(400, 'Invalid school year.');
     return json({ year, week, rows: await C.week(year, week, subjects) });
   }
 
@@ -1020,7 +1021,7 @@ async function api(req, env, url) {
     if (path === '/api/admin/reset-link' && m === 'POST') {
       const b = await body(req, 2_000);
       const p = await D.parentById(b.parentId);
-      if (!p) throw new HttpError(404, 'Responsável não encontrado.');
+      if (!p) throw new HttpError(404, 'Parent not found.');
       const r = await D.createInvite(me.parent.id, { kind: 'reset', parentId: p.id });
       return json({ link: `${url.origin}/?redefinir=${r.token}`, expires: r.expires });
     }
@@ -1064,7 +1065,7 @@ async function api(req, env, url) {
     const rpM = path.match(/^\/api\/admin\/reports\/(\d+)$/);
     if (rpM && m === 'POST') return json(await D.resolveReport(rpM[1]));
   }
-  throw new HttpError(404, 'Rota não encontrada.');
+  throw new HttpError(404, 'Route not found.');
 }
 
 /* Voz natural: escolhe a melhor voz do Google para cada idioma (Chirp 3 HD > Neural2 > WaveNet; feminina), ou a definida em TTS_VOICE_PT/TTS_VOICE_EN */
@@ -1090,14 +1091,14 @@ async function sha256hex(s) {
 /* E-mail do feedback pela API do Resend (o workers.dev não tem domínio próprio para o Email Routing) */
 const escHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 async function sendFeedbackEmail(env, r, d) {
-  const label = { duvida: 'Dúvida', sugestao: 'Sugestão', problema: 'Problema' }[d.kind];
+  const label = { duvida: 'Question', sugestao: 'Suggestion', problema: 'Problem' }[d.kind];
   const html = `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222">
-    <h2 style="margin:0 0 8px">💬 ${escHtml(label)} — Estudos com a Lumi</h2>
+    <h2 style="margin:0 0 8px">💬 ${escHtml(label)} — Study with Lumi</h2>
     <p style="white-space:pre-wrap;background:#f7f4ff;border-radius:8px;padding:12px">${escHtml(d.text)}</p>
-    <p style="color:#555;font-size:12px">Família: ${escHtml(d.family)} · De: ${escHtml(d.who)} · Responsável: ${escHtml(d.email)}<br>Tela: ${escHtml(d.screen)} · Versão: ${escHtml(d.version)} · Mensagem #${escHtml(r.id)}</p></div>`;
+    <p style="color:#555;font-size:12px">Family: ${escHtml(d.family)} · From: ${escHtml(d.who)} · Parent: ${escHtml(d.email)}<br>Screen: ${escHtml(d.screen)} · Version: ${escHtml(d.version)} · Message #${escHtml(r.id)}</p></div>`;
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST', headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
-    body: JSON.stringify({ from: env.RESEND_FROM || 'Estudos com a Lumi <onboarding@resend.dev>', to: [r.supportEmail], reply_to: d.email || undefined,
+    body: JSON.stringify({ from: env.RESEND_FROM || 'Study with Lumi <onboarding@resend.dev>', to: [r.supportEmail], reply_to: d.email || undefined,
       subject: `[Lumi] ${label}: ${String(d.text).replace(/\s+/g, ' ').slice(0, 60)}`, html }),
   });
   if (!res.ok) console.error('resend', res.status, await res.text().catch(() => ''));
@@ -1108,7 +1109,7 @@ async function sendFeedbackEmail(env, r, d) {
 async function seedCurriculum(env, url, force) {
   const C = env.CURRICULUM.get(env.CURRICULUM.idFromName('curriculum'));
   const idx = await (await env.ASSETS.fetch(new URL('/curriculum/index.json', url.origin))).json().catch(() => null);
-  if (!idx) throw new HttpError(500, 'Arquivos do currículo não encontrados.');
+  if (!idx) throw new HttpError(500, 'Curriculum files not found.');
   const st = await C.stats();
   if (!force && st.version === idx.version && st.rows > 0) return { ok: true, skipped: true, ...st };
   let rows = 0;
@@ -1134,7 +1135,7 @@ export default {
       catch (e) {
         const status = e && Number.isInteger(e.status) ? e.status : 500;
         if (status === 500) console.error(e);
-        return json({ error: (e && e.message) || 'Erro no servidor.' }, status);
+        return json({ error: (e && e.message) || 'Server error.' }, status);
       }
     }
     return env.ASSETS.fetch(req);

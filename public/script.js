@@ -23,8 +23,8 @@ const MASCOT_NAME = 'Lumi';
 // Ciclo semanal: começa no sábado e termina na sexta (dia da entrega).
 const CYCLE = ['sab', 'dom', 'seg', 'ter', 'qua', 'qui', 'sex'];
 const JS_DOW = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sab'];
-const DOW_LABEL = { sab: 'Sáb', dom: 'Dom', seg: 'Seg', ter: 'Ter', qua: 'Qua', qui: 'Qui', sex: 'Sex' };
-const DOW_FULL = { sab: 'Sábado', dom: 'Domingo', seg: 'Segunda', ter: 'Terça', qua: 'Quarta', qui: 'Quinta', sex: 'Sexta' };
+const DOW_LABEL = { sab: 'Sat', dom: 'Sun', seg: 'Mon', ter: 'Tue', qua: 'Wed', qui: 'Thu', sex: 'Fri' };
+const DOW_FULL = { sab: 'Saturday', dom: 'Sunday', seg: 'Monday', ter: 'Tuesday', qua: 'Wednesday', qui: 'Thursday', sex: 'Friday' };
 
 const DEFAULT_SETTINGS = {
   pin: '1234',
@@ -141,94 +141,94 @@ function mySubjects() {
 }
 function yearLabel(id) {
   const y = SCHOOL_YEARS.find(x => x[0] === id);
-  return y ? `${y[1]} do currículo britânico (≈ ${y[2]} no Brasil, ${y[3]} anos)` : '';
+  return y ? `${y[1]} of the British curriculum (≈ ${y[2]} in Brazil, ${y[3]} years old)` : '';
 }
 
 // Lojinha: itens permanentes (roupinhas, fundos, adesivos) e vales (prêmios reais, repetíveis).
 const SHOP_CATS = [
-  { id: 'hat', label: '🎩 Chapéus' },
-  { id: 'glasses', label: '👓 Óculos' },
-  { id: 'neck', label: '🎀 Acessórios' },
-  { id: 'back', label: '🦋 Asas e capas' },
-  { id: 'skin', label: '🎨 Cores da Lumi' },
-  { id: 'pet', label: '🐾 Amiguinhos' },
-  { id: 'bg', label: '🖼️ Fundos' },
-  { id: 'sticker', label: '⭐ Adesivos' },
-  { id: 'voucher', label: '🎟️ Vales' },
+  { id: 'hat', label: '🎩 Hats' },
+  { id: 'glasses', label: '👓 Glasses' },
+  { id: 'neck', label: '🎀 Accessories' },
+  { id: 'back', label: '🦋 Wings and capes' },
+  { id: 'skin', label: '🎨 Lumi’s colours' },
+  { id: 'pet', label: '🐾 Pets' },
+  { id: 'bg', label: '🖼️ Backgrounds' },
+  { id: 'sticker', label: '⭐ Stickers' },
+  { id: 'voucher', label: '🎟️ Vouchers' },
 ];
 const SHOP_ITEMS = [
-  { id: 'hat-cap',     cat: 'hat', name: 'Boné vermelho', price: 40 },
-  { id: 'hat-flowers', cat: 'hat', name: 'Coroa de flores', price: 70 },
-  { id: 'hat-witch',   cat: 'hat', name: 'Chapéu de bruxinha', price: 90 },
-  { id: 'hat-crown',   cat: 'hat', name: 'Coroa dourada', price: 150 },
-  { id: 'hat-grad',    cat: 'hat', name: 'Capelo de formatura', price: 200 },
-  { id: 'hat-riding',  cat: 'hat', name: 'Capacete de hipismo', price: 180 },
-  { id: 'hat-unicorn', cat: 'hat', name: 'Tiara de unicórnio', price: 300 },
-  { id: 'hat-diamond', cat: 'hat', name: 'Coroa de diamante', price: 1200 },
-  { id: 'gl-round',    cat: 'glasses', name: 'Óculos redondos', price: 35 },
-  { id: 'gl-heart',    cat: 'glasses', name: 'Óculos de coração', price: 60 },
-  { id: 'gl-sun',      cat: 'glasses', name: 'Óculos escuros', price: 80 },
-  { id: 'gl-star',     cat: 'glasses', name: 'Óculos de estrela', price: 110 },
-  { id: 'nk-bow',      cat: 'neck', name: 'Gravata-borboleta', price: 30 },
-  { id: 'nk-scarf',    cat: 'neck', name: 'Cachecol', price: 50 },
-  { id: 'nk-medal',    cat: 'neck', name: 'Medalha de campeã', price: 120 },
-  { id: 'nk-pearls',   cat: 'neck', name: 'Colar de pérolas', price: 140 },
-  { id: 'bk-bag',      cat: 'back', name: 'Mochila escolar', price: 90 },
-  { id: 'bk-cape',     cat: 'back', name: 'Capa de super-heroína', price: 400 },
-  { id: 'bk-wings',    cat: 'back', name: 'Asas de fada', price: 600 },
-  { id: 'sk-pink',     cat: 'skin', name: 'Lumi Rosa', price: 120 },
-  { id: 'sk-sky',      cat: 'skin', name: 'Lumi Azul-céu', price: 120 },
-  { id: 'sk-mint',     cat: 'skin', name: 'Lumi Menta', price: 150 },
-  { id: 'sk-gold',     cat: 'skin', name: 'Lumi Dourada', price: 1500 },
-  { id: 'sk-galaxy',   cat: 'skin', name: 'Lumi Galáxia', price: 2500 },
-  { id: 'pt-chick',    cat: 'pet', name: 'Pintinho', price: 250, emoji: '🐣' },
-  { id: 'pt-cat',      cat: 'pet', name: 'Gatinho', price: 450, emoji: '🐱' },
-  { id: 'pt-pony',     cat: 'pet', name: 'Pônei', price: 900, emoji: '🐴' },
-  { id: 'pt-panda',    cat: 'pet', name: 'Pandinha', price: 1100, emoji: '🐼' },
-  { id: 'pt-dragon',   cat: 'pet', name: 'Dragãozinho', price: 3000, emoji: '🐉' },
-  { id: 'bg-ocean',    cat: 'bg', name: 'Oceano', price: 60, theme: 'theme-ocean', sw: 'linear-gradient(160deg,#c9ecff,#e0fbff)' },
-  { id: 'bg-forest',   cat: 'bg', name: 'Floresta', price: 60, theme: 'theme-forest', sw: 'linear-gradient(160deg,#d8f3dc,#f1fbe7)' },
-  { id: 'bg-sunset',   cat: 'bg', name: 'Pôr do sol', price: 90, theme: 'theme-sunset', sw: 'linear-gradient(160deg,#ffd6a5,#ffc6d9)' },
-  { id: 'bg-candy',    cat: 'bg', name: 'Doceria', price: 90, theme: 'theme-candy', sw: 'linear-gradient(160deg,#ffd6ec,#d6f5ff)' },
-  { id: 'bg-space',    cat: 'bg', name: 'Galáxia', price: 140, theme: 'theme-space', sw: 'linear-gradient(160deg,#1b1446,#3b2a85)' },
-  { id: 'bg-rainbow',  cat: 'bg', name: 'Arco-íris', price: 200, theme: 'theme-rainbow', sw: 'linear-gradient(120deg,#ffd6d6,#fff1c1,#d6ffd9,#d6eaff,#ead6ff)' },
-  { id: 'bg-castle',   cat: 'bg', name: 'Castelo encantado', price: 700, theme: 'theme-castle', sw: 'linear-gradient(160deg,#c9b6ff,#ffd1f0)' },
-  { id: 'bg-gold',     cat: 'bg', name: 'Tesouro dourado', price: 1000, theme: 'theme-gold', sw: 'linear-gradient(160deg,#ffe28a,#fff6d6)' },
+  { id: 'hat-cap',     cat: 'hat', name: 'Red cap', price: 40 },
+  { id: 'hat-flowers', cat: 'hat', name: 'Flower crown', price: 70 },
+  { id: 'hat-witch',   cat: 'hat', name: 'Little witch hat', price: 90 },
+  { id: 'hat-crown',   cat: 'hat', name: 'Golden crown', price: 150 },
+  { id: 'hat-grad',    cat: 'hat', name: 'Graduation cap', price: 200 },
+  { id: 'hat-riding',  cat: 'hat', name: 'Riding helmet', price: 180 },
+  { id: 'hat-unicorn', cat: 'hat', name: 'Unicorn headband', price: 300 },
+  { id: 'hat-diamond', cat: 'hat', name: 'Diamond crown', price: 1200 },
+  { id: 'gl-round',    cat: 'glasses', name: 'Round glasses', price: 35 },
+  { id: 'gl-heart',    cat: 'glasses', name: 'Heart glasses', price: 60 },
+  { id: 'gl-sun',      cat: 'glasses', name: 'Sunglasses', price: 80 },
+  { id: 'gl-star',     cat: 'glasses', name: 'Star glasses', price: 110 },
+  { id: 'nk-bow',      cat: 'neck', name: 'Bow tie', price: 30 },
+  { id: 'nk-scarf',    cat: 'neck', name: 'Scarf', price: 50 },
+  { id: 'nk-medal',    cat: 'neck', name: 'Champion’s medal', price: 120 },
+  { id: 'nk-pearls',   cat: 'neck', name: 'Pearl necklace', price: 140 },
+  { id: 'bk-bag',      cat: 'back', name: 'School backpack', price: 90 },
+  { id: 'bk-cape',     cat: 'back', name: 'Superhero cape', price: 400 },
+  { id: 'bk-wings',    cat: 'back', name: 'Fairy wings', price: 600 },
+  { id: 'sk-pink',     cat: 'skin', name: 'Pink Lumi', price: 120 },
+  { id: 'sk-sky',      cat: 'skin', name: 'Sky-blue Lumi', price: 120 },
+  { id: 'sk-mint',     cat: 'skin', name: 'Mint Lumi', price: 150 },
+  { id: 'sk-gold',     cat: 'skin', name: 'Golden Lumi', price: 1500 },
+  { id: 'sk-galaxy',   cat: 'skin', name: 'Galaxy Lumi', price: 2500 },
+  { id: 'pt-chick',    cat: 'pet', name: 'Chick', price: 250, emoji: '🐣' },
+  { id: 'pt-cat',      cat: 'pet', name: 'Kitten', price: 450, emoji: '🐱' },
+  { id: 'pt-pony',     cat: 'pet', name: 'Pony', price: 900, emoji: '🐴' },
+  { id: 'pt-panda',    cat: 'pet', name: 'Little panda', price: 1100, emoji: '🐼' },
+  { id: 'pt-dragon',   cat: 'pet', name: 'Little dragon', price: 3000, emoji: '🐉' },
+  { id: 'bg-ocean',    cat: 'bg', name: 'Ocean', price: 60, theme: 'theme-ocean', sw: 'linear-gradient(160deg,#c9ecff,#e0fbff)' },
+  { id: 'bg-forest',   cat: 'bg', name: 'Forest', price: 60, theme: 'theme-forest', sw: 'linear-gradient(160deg,#d8f3dc,#f1fbe7)' },
+  { id: 'bg-sunset',   cat: 'bg', name: 'Sunset', price: 90, theme: 'theme-sunset', sw: 'linear-gradient(160deg,#ffd6a5,#ffc6d9)' },
+  { id: 'bg-candy',    cat: 'bg', name: 'Sweet shop', price: 90, theme: 'theme-candy', sw: 'linear-gradient(160deg,#ffd6ec,#d6f5ff)' },
+  { id: 'bg-space',    cat: 'bg', name: 'Galaxy', price: 140, theme: 'theme-space', sw: 'linear-gradient(160deg,#1b1446,#3b2a85)' },
+  { id: 'bg-rainbow',  cat: 'bg', name: 'Rainbow', price: 200, theme: 'theme-rainbow', sw: 'linear-gradient(120deg,#ffd6d6,#fff1c1,#d6ffd9,#d6eaff,#ead6ff)' },
+  { id: 'bg-castle',   cat: 'bg', name: 'Enchanted castle', price: 700, theme: 'theme-castle', sw: 'linear-gradient(160deg,#c9b6ff,#ffd1f0)' },
+  { id: 'bg-gold',     cat: 'bg', name: 'Golden treasure', price: 1000, theme: 'theme-gold', sw: 'linear-gradient(160deg,#ffe28a,#fff6d6)' },
   ...[['🌈', 15], ['⭐', 15], ['🍉', 15], ['🌸', 15], ['🍩', 15], ['🎀', 15], ['🐬', 20], ['🦋', 20], ['🐱', 20], ['🎨', 20],
       ['🦄', 25], ['🐼', 25], ['🚀', 25], ['🐴', 30], ['🏆', 40],
       ['🍦', 20], ['🧁', 20], ['🛼', 30], ['🦖', 40], ['🎡', 50], ['🌋', 50], ['🎠', 60], ['🐉', 120], ['👑', 150], ['💎', 300]]
-    .map(([e, p], i) => ({ id: 'st-' + i, cat: 'sticker', name: 'Adesivo', emoji: e, price: p })),
+    .map(([e, p], i) => ({ id: 'st-' + i, cat: 'sticker', name: 'Sticker', emoji: e, price: p })),
 ];
 const DEFAULT_VOUCHERS = [
-  { id: 'v-screen', name: '30 min extras de tela', price: 150 },
-  { id: 'v-dinner', name: 'Escolher o jantar', price: 250 },
-  { id: 'v-movie',  name: 'Escolher o filme da família', price: 300 },
+  { id: 'v-screen', name: '30 min extra screen time', price: 150 },
+  { id: 'v-dinner', name: 'Choose dinner', price: 250 },
+  { id: 'v-movie',  name: 'Choose the family film', price: 300 },
 ];
 DEFAULT_VOUCHERS.push(
-  { id: 'v-icecream', name: 'Sorvete no fim de semana', price: 200 },
-  { id: 'v-late', name: 'Dormir 30 min mais tarde', price: 250 },
-  { id: 'v-outing', name: 'Escolher o passeio do domingo', price: 400 },
+  { id: 'v-icecream', name: 'Ice cream at the weekend', price: 200 },
+  { id: 'v-late', name: 'Stay up 30 min later', price: 250 },
+  { id: 'v-outing', name: 'Choose the Sunday outing', price: 400 },
 );
 // Pacote 2: muito mais vales (prêmios reais), alguns bem caros. Os pais editam ou apagam.
 const VOUCHER_PACK2 = [
-  { id: 'v-music', name: 'Escolher as músicas do carro por 1 semana', price: 300 },
-  { id: 'v-bed', name: 'Um dia sem arrumar a cama', price: 350 },
-  { id: 'v-game1h', name: '1 hora extra de videogame', price: 450 },
-  { id: 'v-breakfast', name: 'Café da manhã na cama', price: 500 },
-  { id: 'v-pizza', name: 'Pizza no jantar', price: 600 },
-  { id: 'v-late1h', name: 'Dormir 1 hora mais tarde no fim de semana', price: 700 },
-  { id: 'v-book', name: 'Um livro novo à escolha', price: 800 },
-  { id: 'v-sleepover', name: 'Convidar um amigo para dormir em casa', price: 1000 },
-  { id: 'v-cash20', name: 'R$ 20 para gastar como quiser', price: 1200 },
-  { id: 'v-restaurant', name: 'Escolher o restaurante do fim de semana', price: 1300 },
-  { id: 'v-cinema', name: 'Cinema com pipoca', price: 1500 },
-  { id: 'v-nochores', name: 'Fim de semana sem tarefas de casa', price: 1800 },
-  { id: 'v-newgame', name: 'Um jogo novo (até R$ 60)', price: 2000 },
-  { id: 'v-trip', name: 'Passeio especial (parque, aquário, kart…)', price: 2500 },
-  { id: 'v-yesday', name: 'Dia do SIM (os pais dizem sim a pedidos combinados)', price: 3500 },
-  { id: 'v-event', name: 'Ingresso para um jogo, show ou evento', price: 5000 },
-  { id: 'v-wish', name: 'Item grande da lista de desejos', price: 7000 },
-  { id: 'v-weekend', name: 'Escolher a viagem de um fim de semana', price: 10000 },
+  { id: 'v-music', name: 'Choose the car music for 1 week', price: 300 },
+  { id: 'v-bed', name: 'A day off making the bed', price: 350 },
+  { id: 'v-game1h', name: '1 extra hour of video games', price: 450 },
+  { id: 'v-breakfast', name: 'Breakfast in bed', price: 500 },
+  { id: 'v-pizza', name: 'Pizza for dinner', price: 600 },
+  { id: 'v-late1h', name: 'Stay up 1 hour later at the weekend', price: 700 },
+  { id: 'v-book', name: 'A new book of your choice', price: 800 },
+  { id: 'v-sleepover', name: 'Invite a friend for a sleepover', price: 1000 },
+  { id: 'v-cash20', name: 'R$ 20 to spend however you like', price: 1200 },
+  { id: 'v-restaurant', name: 'Choose the weekend restaurant', price: 1300 },
+  { id: 'v-cinema', name: 'Cinema with popcorn', price: 1500 },
+  { id: 'v-nochores', name: 'A weekend with no chores', price: 1800 },
+  { id: 'v-newgame', name: 'A new game (up to R$ 60)', price: 2000 },
+  { id: 'v-trip', name: 'Special outing (park, aquarium, go-karting…)', price: 2500 },
+  { id: 'v-yesday', name: 'YES Day (parents say yes to agreed requests)', price: 3500 },
+  { id: 'v-event', name: 'Ticket to a match, concert or event', price: 5000 },
+  { id: 'v-wish', name: 'Big item from the wish list', price: 7000 },
+  { id: 'v-weekend', name: 'Choose a weekend trip', price: 10000 },
 ];
 DEFAULT_VOUCHERS.push(...VOUCHER_PACK2.map(v => Object.assign({}, v)));
 
@@ -382,7 +382,7 @@ function load() {
 let S = load();
 function persistLocal() {
   try { localStorage.setItem(localKey(), JSON.stringify(S)); }
-  catch (e) { toast('⚠️ Não consegui salvar neste navegador.'); }
+  catch (e) { toast('⚠️ I couldn’t save in this browser.'); }
 }
 function save() { persistLocal(); schedulePush(); }
 let saveTimer = null;
@@ -406,7 +406,7 @@ function compactLedger(st) {
   if (st.ledger.length <= 1200) return;
   const keep = st.ledger.slice(0, 600), old = st.ledger.slice(600);
   const covers = old.flatMap(l => [l.id, ...(l.covers || [])]);
-  keep.push({ id: 'c-' + hashStr(covers.slice().sort().join(',')).toString(36), date: old[0].date, amount: ledgerSum(old), reason: 'Saldo de lançamentos antigos', covers });
+  keep.push({ id: 'c-' + hashStr(covers.slice().sort().join(',')).toString(36), date: old[0].date, amount: ledgerSum(old), reason: 'Balance from older entries', covers });
   st.ledger = keep;
 }
 function touch(k) { S.touched = S.touched || {}; S.touched[k] = Date.now(); }
@@ -492,10 +492,10 @@ async function apiCall(path, { method = 'GET', data, timeout = 30000 } = {}) {
       headers: { 'content-type': 'application/json', 'x-lumi': '1' },
       body: data === undefined ? undefined : JSON.stringify(data) });
     const j = await r.json().catch(() => ({}));
-    if (!r.ok) { const e = new Error(j.error || `Erro ${r.status}`); e.status = r.status; e.data = j; throw e; }
+    if (!r.ok) { const e = new Error(j.error || `Error ${r.status}`); e.status = r.status; e.data = j; throw e; }
     return j;
   } catch (e) {
-    if (e.name === 'AbortError') { const err = new Error('o servidor demorou demais'); err.status = 0; throw err; }
+    if (e.name === 'AbortError') { const err = new Error('the server took too long'); err.status = 0; throw err; }
     if (e.status === undefined) e.status = 0;
     throw e;
   } finally { clearTimeout(t); }
@@ -529,9 +529,9 @@ async function pushState() {
       S = mergeStates(S, e.data.state); persistLocal(); Server.status = 'ok'; Server.again = true;
       applyTheme(); renderMascotMini(); renderCoins();
       if (!['work', 'check', 'selfcheck'].includes(currentScreen)) show(currentScreen);
-      toast('🔄 Juntei com as mudanças de outro aparelho');
+      toast('🔄 Merged with changes from another device');
     } else if (e.status === 401) {
-      Server.status = 'auth'; Server.me = null; VIEW.auth = { mode: 'login' }; show('login'); toast('Sua sessão expirou. Entre de novo.');
+      Server.status = 'auth'; Server.me = null; VIEW.auth = { mode: 'login' }; show('login'); toast('Your session has expired. Please log in again.');
     } else { Server.dirty = true; Server.status = 'offline'; }
   } finally {
     Server.pushing = false;
@@ -553,7 +553,7 @@ async function enterChild(id) {
   catch (e) {
     if (e.status === 401) { Server.me = null; VIEW.auth = { mode: 'login' }; show('login'); return; }
     try { const raw = localStorage.getItem(localKey(id)); if (raw) st = JSON.parse(raw); } catch (err) { /* ignora */ }
-    Server.status = 'offline'; toast('Sem conexão: usando a cópia deste aparelho.');
+    Server.status = 'offline'; toast('No connection: using this device’s copy.');
   }
   S = st ? normalizeState(st) : defaultState();
   S.name = child.name;
@@ -585,12 +585,12 @@ async function logout() {
 }
 // Copiar / compartilhar links de convite
 async function shareLink(link, text) {
-  if (navigator.share) { try { await navigator.share({ title: 'Estudos com a Lumi', text, url: link }); return; } catch (e) { /* cancelado */ } }
-  try { await navigator.clipboard.writeText(link); toast('Link copiado!'); } catch (e) { toast('Copie o link da caixa.'); }
+  if (navigator.share) { try { await navigator.share({ title: 'Study with Lumi', text, url: link }); return; } catch (e) { /* cancelado */ } }
+  try { await navigator.clipboard.writeText(link); toast('Link copied!'); } catch (e) { toast('Copy the link from the box.'); }
 }
 function linkBox(link, expires, text) {
-  return `<div class="link-box"><input readonly value="${esc(link)}" onclick="this.select()"><button class="btn small primary" data-share="${esc(link)}" data-text="${esc(text)}">📤 Enviar</button></div>
-    <div class="tiny muted">Vale até ${new Date(expires).toLocaleDateString('pt-BR')}. Só funciona uma vez.</div>`;
+  return `<div class="link-box"><input readonly value="${esc(link)}" onclick="this.select()"><button class="btn small primary" data-share="${esc(link)}" data-text="${esc(text)}">📤 Send</button></div>
+    <div class="tiny muted">Valid until ${new Date(expires).toLocaleDateString('en-GB')}. Works only once.</div>`;
 }
 function bindShare(root) { $$('[data-share]', root).forEach(b => b.onclick = () => shareLink(b.dataset.share, b.dataset.text)); }
 
@@ -618,9 +618,9 @@ function showLoading(msgs) {
 
 /* ---------- Telas de conta: primeiro acesso, login, convite, nova senha, perfis ---------- */
 const CONSENT_HTML = `<label class="consent"><input type="checkbox" id="a-consent">
-  <span>Sou pai, mãe ou responsável legal e autorizo o uso dos dados das crianças que eu cadastrar para as atividades do app, conforme o
-  <a href="/privacidade.html" target="_blank" rel="noopener">Aviso de Privacidade</a>. Entendo que a Lumi é uma <b>inteligência artificial</b> (Claude, da Anthropic) e que respostas e fotos de atividades são enviadas a ela para criar e corrigir exercícios.</span></label>`;
-const yearOptions = sel => SCHOOL_YEARS.map(([id, uk, br, age]) => `<option value="${id}" ${sel === id ? 'selected' : ''}>${uk} · ${br} · ${age} anos</option>`).join('');
+  <span>I am a parent or legal guardian and I authorise the use of the data of the children I register for the app’s activities, as described in the
+  <a href="/privacidade.html" target="_blank" rel="noopener">Privacy Notice</a>. I understand that Lumi is an <b>artificial intelligence</b> (Claude, by Anthropic) and that answers and photos of activities are sent to it to create and mark exercises.</span></label>`;
+const yearOptions = sel => SCHOOL_YEARS.map(([id, uk, br, age]) => `<option value="${id}" ${sel === id ? 'selected' : ''}>${uk} · ${br} · ${age} years old</option>`).join('');
 const avatarPicker = sel => `<div class="avatars">${AVATARS.map(a => `<button type="button" class="av ${a === sel ? 'on' : ''}" data-av="${a}">${a}</button>`).join('')}</div>`;
 function bindAvatar(root, state) { $$('[data-av]', root).forEach(b => b.onclick = () => { state.avatar = b.dataset.av; $$('[data-av]', root).forEach(x => x.classList.toggle('on', x === b)); }); }
 const val = id => (($('#' + id) || {}).value || '').trim();
@@ -630,95 +630,95 @@ function renderLogin() {
   const a = VIEW.auth || { mode: 'login' };
   const owl = mood => `<div class="owl-big">${mascotSVG({ hat: null, glasses: null, neck: null }, mood || 'happy')}</div>`;
   const wrap = (inner) => `<div class="auth"><div class="auth-card">${inner}</div></div>`;
-  const busy = async (btn, fn) => { btn.disabled = true; try { await fn(); } catch (e) { toast(e.message || 'Algo deu errado.'); } finally { btn.disabled = false; } };
+  const busy = async (btn, fn) => { btn.disabled = true; try { await fn(); } catch (e) { toast(e.message || 'Something went wrong.'); } finally { btn.disabled = false; } };
 
   if (a.mode === 'firstrun') {
     const st = { avatar: '🦉' };
-    el.innerHTML = wrap(`${owl('wow')}<h1>Configurar o app</h1>
-      <p class="muted">Primeiro acesso: crie a sua conta de administrador. ${Server.canSetup ? 'Use o <b>FAMILY_CODE</b> que você cadastrou na Cloudflare.' : '<b>Falta configurar o FAMILY_CODE na Cloudflare.</b>'}</p>
-      <label class="field">Código de configuração (FAMILY_CODE)<input id="a-code" type="password" autocomplete="off"></label>
-      <div class="form-grid"><label class="field">Nome da família<input id="a-fam" placeholder="Ex.: Família Silva"></label>
-      <label class="field">Seu nome<input id="a-pname" autocomplete="name"></label></div>
-      <label class="field">Seu e-mail<input id="a-email" type="email" autocomplete="email"></label>
-      <label class="field">Senha (mín. 8 caracteres)<input id="a-pass" type="password" autocomplete="new-password"></label>
-      <h3>Primeira criança</h3>
-      <p class="tiny muted">Os dados que já estão no app (moedas, compras, semana) vão para este perfil.</p>
-      <div class="form-grid"><label class="field">Nome<input id="a-cname" maxlength="30"></label>
-      <label class="field">Ano escolar<select id="a-cyear">${yearOptions('Y5')}</select></label>
-      <label class="field">PIN da criança (4 números)<input id="a-cpin" inputmode="numeric" maxlength="4" autocomplete="off"></label></div>
+    el.innerHTML = wrap(`${owl('wow')}<h1>Set up the app</h1>
+      <p class="muted">First access: create your administrator account. ${Server.canSetup ? 'Use the <b>FAMILY_CODE</b> you set up in Cloudflare.' : '<b>The FAMILY_CODE still needs to be set up in Cloudflare.</b>'}</p>
+      <label class="field">Setup code (FAMILY_CODE)<input id="a-code" type="password" autocomplete="off"></label>
+      <div class="form-grid"><label class="field">Family name<input id="a-fam" placeholder="e.g. The Silva family"></label>
+      <label class="field">Your name<input id="a-pname" autocomplete="name"></label></div>
+      <label class="field">Your email<input id="a-email" type="email" autocomplete="email"></label>
+      <label class="field">Password (min. 8 characters)<input id="a-pass" type="password" autocomplete="new-password"></label>
+      <h3>First child</h3>
+      <p class="tiny muted">The data already in the app (coins, purchases, week) will go to this profile.</p>
+      <div class="form-grid"><label class="field">Name<input id="a-cname" maxlength="30"></label>
+      <label class="field">School year<select id="a-cyear">${yearOptions('Y5')}</select></label>
+      <label class="field">Child’s PIN (4 digits)<input id="a-cpin" inputmode="numeric" maxlength="4" autocomplete="off"></label></div>
       ${avatarPicker(st.avatar)}${CONSENT_HTML}
-      <button class="btn primary big wide" id="a-go">Criar conta e entrar</button>`);
+      <button class="btn primary big wide" id="a-go">Create account and log in</button>`);
     bindAvatar(el, st);
     $('#a-go').onclick = e => busy(e.target, async () => {
-      if (!$('#a-consent').checked) throw new Error('Marque a autorização para continuar.');
+      if (!$('#a-consent').checked) throw new Error('Tick the authorisation box to continue.');
       await apiCall('/api/setup', { method: 'POST', data: { code: val('a-code'), familyName: val('a-fam'), parentName: val('a-pname'), email: val('a-email'), password: $('#a-pass').value,
         childName: val('a-cname'), childYear: $('#a-cyear').value, childPin: val('a-cpin'), childAvatar: st.avatar, consent: true } });
       Server.needsSetup = false;
-      await refreshMe(); toast('✅ Conta criada!'); afterLogin();
+      await refreshMe(); toast('✅ Account created!'); afterLogin();
     });
     return;
   }
   if (a.mode === 'login') {
-    el.innerHTML = wrap(`${owl()}<h1>Estudos com a Lumi</h1><p class="muted">Entre com a conta da família.</p>
-      <label class="field">E-mail<input id="a-email" type="email" autocomplete="username"></label>
-      <label class="field">Senha<input id="a-pass" type="password" autocomplete="current-password"></label>
-      <button class="btn primary big wide" id="a-go">Entrar</button>
-      <button class="btn ghost small" id="a-forgot">Esqueci a senha</button>
-      <p class="tiny muted">O app é só para famílias convidadas. Recebeu um convite? Abra o link que você recebeu.</p>`);
+    el.innerHTML = wrap(`${owl()}<h1>Study with Lumi</h1><p class="muted">Log in with the family account.</p>
+      <label class="field">Email<input id="a-email" type="email" autocomplete="username"></label>
+      <label class="field">Password<input id="a-pass" type="password" autocomplete="current-password"></label>
+      <button class="btn primary big wide" id="a-go">Log in</button>
+      <button class="btn ghost small" id="a-forgot">I forgot my password</button>
+      <p class="tiny muted">The app is only for invited families. Got an invitation? Open the link you received.</p>`);
     const go = () => busy($('#a-go'), async () => {
       await apiCall('/api/auth/login', { method: 'POST', data: { email: val('a-email'), password: $('#a-pass').value } });
       await refreshMe(); afterLogin();
     });
     $('#a-go').onclick = go;
     $('#a-pass').onkeydown = e => { if (e.key === 'Enter') go(); };
-    $('#a-forgot').onclick = () => say('Peça ao administrador do app um <b>link para criar uma nova senha</b>. 🔑', { mood: 'think' });
+    $('#a-forgot').onclick = () => say('Ask the app’s administrator for a <b>link to create a new password</b>. 🔑', { mood: 'think' });
     return;
   }
   if (a.mode === 'invite' || a.mode === 'reset') {
     if (!a.info) {
-      el.innerHTML = wrap(`${owl('think')}<p>Abrindo o convite…</p>`);
+      el.innerHTML = wrap(`${owl('think')}<p>Opening the invitation…</p>`);
       apiCall(`/api/invite/${encodeURIComponent(a.token)}`).then(info => { a.info = info; renderLogin(); })
         .catch(() => { a.info = { valid: false }; renderLogin(); });
       return;
     }
     if (!a.info.valid) {
-      el.innerHTML = wrap(`${owl('sad')}<h1>Link inválido</h1><p class="muted">Este link expirou ou já foi usado. Peça um novo a quem enviou.</p><button class="btn primary wide" id="a-back">Ir para o login</button>`);
+      el.innerHTML = wrap(`${owl('sad')}<h1>Invalid link</h1><p class="muted">This link has expired or has already been used. Ask whoever sent it for a new one.</p><button class="btn primary wide" id="a-back">Go to login</button>`);
       $('#a-back').onclick = () => { history.replaceState(null, '', location.pathname); VIEW.auth = { mode: 'login' }; renderLogin(); };
       return;
     }
     const k = a.info.kind;
     if (k === 'reset') {
-      el.innerHTML = wrap(`${owl()}<h1>Nova senha</h1><p class="muted">Para <b>${esc(a.info.email)}</b>.</p>
-        <label class="field">Nova senha (mín. 8 caracteres)<input id="a-pass" type="password" autocomplete="new-password"></label>
-        <label class="field">Repita a senha<input id="a-pass2" type="password" autocomplete="new-password"></label>
-        <button class="btn primary big wide" id="a-go">Salvar e entrar</button>`);
+      el.innerHTML = wrap(`${owl()}<h1>New password</h1><p class="muted">For <b>${esc(a.info.email)}</b>.</p>
+        <label class="field">New password (min. 8 characters)<input id="a-pass" type="password" autocomplete="new-password"></label>
+        <label class="field">Repeat the password<input id="a-pass2" type="password" autocomplete="new-password"></label>
+        <button class="btn primary big wide" id="a-go">Save and log in</button>`);
     } else {
-      el.innerHTML = wrap(`${owl('wow')}<h1>${k === 'join' ? `Entrar na família ${esc(a.info.familyName)}` : 'Bem-vindos!'}</h1>
-        <p class="muted">${k === 'join' ? 'Crie o seu acesso como responsável.' : 'Crie a conta da sua família. Depois você cadastra as crianças.'}</p>
-        ${k === 'family' ? '<label class="field">Nome da família<input id="a-fam" placeholder="Ex.: Família Silva"></label>' : ''}
-        <label class="field">Seu nome<input id="a-pname" autocomplete="name"></label>
-        <label class="field">Seu e-mail<input id="a-email" type="email" autocomplete="email"></label>
-        <label class="field">Senha (mín. 8 caracteres)<input id="a-pass" type="password" autocomplete="new-password"></label>
-        ${CONSENT_HTML}<button class="btn primary big wide" id="a-go">Criar acesso</button>`);
+      el.innerHTML = wrap(`${owl('wow')}<h1>${k === 'join' ? `Join the ${esc(a.info.familyName)} family` : 'Welcome!'}</h1>
+        <p class="muted">${k === 'join' ? 'Create your parent access.' : 'Create your family account. Then you can add the children.'}</p>
+        ${k === 'family' ? '<label class="field">Family name<input id="a-fam" placeholder="e.g. The Silva family"></label>' : ''}
+        <label class="field">Your name<input id="a-pname" autocomplete="name"></label>
+        <label class="field">Your email<input id="a-email" type="email" autocomplete="email"></label>
+        <label class="field">Password (min. 8 characters)<input id="a-pass" type="password" autocomplete="new-password"></label>
+        ${CONSENT_HTML}<button class="btn primary big wide" id="a-go">Create access</button>`);
     }
     $('#a-go').onclick = e => busy(e.target, async () => {
-      if (k === 'reset' && $('#a-pass').value !== $('#a-pass2').value) throw new Error('As senhas não são iguais.');
-      if (k !== 'reset' && !$('#a-consent').checked) throw new Error('Marque a autorização para continuar.');
+      if (k === 'reset' && $('#a-pass').value !== $('#a-pass2').value) throw new Error('The passwords don’t match.');
+      if (k !== 'reset' && !$('#a-consent').checked) throw new Error('Tick the authorisation box to continue.');
       await apiCall(`/api/invite/${encodeURIComponent(a.token)}/accept`, { method: 'POST', data: {
         password: $('#a-pass').value, email: val('a-email'), parentName: val('a-pname'), familyName: val('a-fam'), consent: k !== 'reset' } });
-      await refreshMe(); toast(k === 'reset' ? '✅ Senha alterada!' : '✅ Acesso criado!'); afterLogin();
+      await refreshMe(); toast(k === 'reset' ? '✅ Password changed!' : '✅ Access created!'); afterLogin();
     });
     return;
   }
   if (a.mode === 'addchild') {
     const st = { avatar: AVATARS[(Server.me.children.length + 1) % AVATARS.length] };
-    el.innerHTML = wrap(`${owl('wow')}<h1>${a.first ? 'Cadastre a primeira criança' : 'Nova criança'}</h1>
-      <div class="form-grid"><label class="field">Nome<input id="a-cname" maxlength="30"></label>
-      <label class="field">Ano escolar<select id="a-cyear">${yearOptions('Y5')}</select></label></div>
-      <label class="field">PIN da criança (4 números) <span class="tiny muted">— ela usa para entrar no próprio perfil</span><input id="a-cpin" inputmode="numeric" maxlength="4" autocomplete="off"></label>
-      <div class="field">Personagem</div>${avatarPicker(st.avatar)}
-      <button class="btn primary big wide" id="a-go">Salvar</button>
-      ${a.first ? '' : '<button class="btn ghost" id="a-cancel">Cancelar</button>'}`);
+    el.innerHTML = wrap(`${owl('wow')}<h1>${a.first ? 'Add the first child' : 'New child'}</h1>
+      <div class="form-grid"><label class="field">Name<input id="a-cname" maxlength="30"></label>
+      <label class="field">School year<select id="a-cyear">${yearOptions('Y5')}</select></label></div>
+      <label class="field">Child’s PIN (4 digits) <span class="tiny muted">— used to open their own profile</span><input id="a-cpin" inputmode="numeric" maxlength="4" autocomplete="off"></label>
+      <div class="field">Character</div>${avatarPicker(st.avatar)}
+      <button class="btn primary big wide" id="a-go">Save</button>
+      ${a.first ? '' : '<button class="btn ghost" id="a-cancel">Cancel</button>'}`);
     bindAvatar(el, st);
     const c = $('#a-cancel'); if (c) c.onclick = () => { VIEW.auth = { mode: 'profiles' }; renderLogin(); };
     $('#a-go').onclick = e => busy(e.target, async () => {
@@ -729,9 +729,9 @@ function renderLogin() {
   }
   // Perfis: quem vai estudar?
   const kids = Server.me ? Server.me.children : [];
-  el.innerHTML = wrap(`<h1>Quem vai estudar? 📚</h1><p class="muted">${esc(Server.me ? Server.me.family.name : '')}</p>
+  el.innerHTML = wrap(`<h1>Who’s studying? 📚</h1><p class="muted">${esc(Server.me ? Server.me.family.name : '')}</p>
     <div class="profiles">${kids.map(c => `<button class="profile" data-kid="${c.id}"><span class="pf-av">${c.avatar || '🦉'}</span><b>${esc(c.name)}</b><span class="tiny muted">${esc((SCHOOL_YEARS.find(y => y[0] === c.year) || [])[1] || '')}</span></button>`).join('')}</div>
-    <div class="row wrap center-row"><button class="btn small" id="a-add">＋ Adicionar criança</button><button class="btn small ghost" id="a-out">Sair da conta</button></div>`);
+    <div class="row wrap center-row"><button class="btn small" id="a-add">＋ Add a child</button><button class="btn small ghost" id="a-out">Log out</button></div>`);
   $$('[data-kid]', el).forEach(b => b.onclick = () => askPin(kids.find(k => k.id === b.dataset.kid)));
   $('#a-add').onclick = async () => { if (await askParentPassword()) { VIEW.auth = { mode: 'addchild' }; renderLogin(); } };
   $('#a-out').onclick = () => logout();
@@ -739,10 +739,10 @@ function renderLogin() {
 // Teclado de PIN da criança
 function askPin(child) {
   let pin = '';
-  const c = openModal(`<div class="modal-body center"><div class="pf-av big">${child.avatar || '🦉'}</div><h3 style="margin:4px 0">Oi, ${esc(child.name)}!</h3>
-    <p class="muted tiny">Digite o seu PIN</p><div class="pin-dots" id="pdots"></div>
+  const c = openModal(`<div class="modal-body center"><div class="pf-av big">${child.avatar || '🦉'}</div><h3 style="margin:4px 0">Hi, ${esc(child.name)}!</h3>
+    <p class="muted tiny">Type your PIN</p><div class="pin-dots" id="pdots"></div>
     <div class="pinpad">${[1, 2, 3, 4, 5, 6, 7, 8, 9, '', 0, '⌫'].map(k => `<button class="btn" ${k === '' ? 'disabled style="visibility:hidden"' : ''} data-k="${k}">${k}</button>`).join('')}</div></div>
-    <div class="modal-foot"><button class="btn" data-close>Voltar</button></div>`);
+    <div class="modal-foot"><button class="btn" data-close>Back</button></div>`);
   const dots = () => { $('#pdots', c).innerHTML = [0, 1, 2, 3].map(i => `<i class="${i < pin.length ? 'on' : ''}"></i>`).join(''); };
   dots();
   $$('[data-k]', c).forEach(b => b.onclick = async () => {
@@ -756,14 +756,14 @@ function askPin(child) {
   });
 }
 // Senha do responsável (para a área dos pais e ações sensíveis)
-function askParentPassword(title = '🔒 Senha do responsável') {
+function askParentPassword(title = '🔒 Parent password') {
   return new Promise(res => {
     const c = openModal(`<div class="modal-head"><h3>${title}</h3></div><div class="modal-body">
       <p class="tiny muted">${esc(Server.me.parent.email)}</p><input class="pin-input" id="pp" type="password" autocomplete="current-password" style="letter-spacing:normal;font-size:18px"></div>
-      <div class="modal-foot"><button class="btn" data-no>Cancelar</button><button class="btn primary" data-yes>Confirmar</button></div>`, { onClose: () => res(false) });
+      <div class="modal-foot"><button class="btn" data-no>Cancel</button><button class="btn primary" data-yes>Confirm</button></div>`, { onClose: () => res(false) });
     const go = async () => {
       try { const r = await apiCall('/api/auth/verify', { method: 'POST', data: { password: $('#pp', c).value } });
-        if (r.ok) { $('#modal')._onClose = null; closeModal(); res($('#pp', c) ? true : true); } else { toast('Senha incorreta.'); $('#pp', c).value = ''; } }
+        if (r.ok) { $('#modal')._onClose = null; closeModal(); res($('#pp', c) ? true : true); } else { toast('Wrong password.'); $('#pp', c).value = ''; } }
       catch (e) { toast(e.message); }
     };
     $('[data-no]', c).onclick = () => closeModal();
@@ -809,81 +809,81 @@ const BACK_SVG = {
   'bk-bag': '<rect x="74" y="44" width="20" height="26" rx="5" fill="#ffb703" stroke="#e09600" stroke-width="1.5"/><rect x="77" y="56" width="14" height="8" rx="2" fill="#ffd166"/>',
 };
 /* ---------- Lojinha ampliada: mais roupinhas, cores, amiguinhos, fundos e efeitos ---------- */
-SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'bg'), 0, { id: 'fx', label: '✨ Efeitos' });
-SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'skin'), 0, { id: 'mascot', label: '🐾 Trocar de bicho' });
+SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'bg'), 0, { id: 'fx', label: '✨ Effects' });
+SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'skin'), 0, { id: 'mascot', label: '🐾 Change animal' });
 // Categorias que vestem a mascote (aparecem no desenho)
 const WEAR = ['hat', 'glasses', 'neck', 'back', 'skin', 'pet', 'fx', 'mascot'];
 SHOP_ITEMS.push(
   // chapéus
-  { id: 'hat-party', cat: 'hat', name: 'Chapéu de festa', price: 45 },
-  { id: 'hat-bow', cat: 'hat', name: 'Laço gigante', price: 50 },
-  { id: 'hat-beret', cat: 'hat', name: 'Boina de artista', price: 60 },
-  { id: 'hat-beanie', cat: 'hat', name: 'Gorro de inverno', price: 70 },
-  { id: 'hat-beach', cat: 'hat', name: 'Chapéu de praia', price: 80 },
-  { id: 'hat-cat', cat: 'hat', name: 'Orelhas de gatinho', price: 90 },
-  { id: 'hat-chef', cat: 'hat', name: 'Chapéu de chef', price: 100 },
-  { id: 'hat-pirate', cat: 'hat', name: 'Chapéu de pirata', price: 160 },
-  { id: 'hat-magic', cat: 'hat', name: 'Cartola mágica', price: 350 },
-  { id: 'hat-astro', cat: 'hat', name: 'Capacete de astronauta', price: 900 },
+  { id: 'hat-party', cat: 'hat', name: 'Party hat', price: 45 },
+  { id: 'hat-bow', cat: 'hat', name: 'Giant bow', price: 50 },
+  { id: 'hat-beret', cat: 'hat', name: 'Artist’s beret', price: 60 },
+  { id: 'hat-beanie', cat: 'hat', name: 'Winter beanie', price: 70 },
+  { id: 'hat-beach', cat: 'hat', name: 'Beach hat', price: 80 },
+  { id: 'hat-cat', cat: 'hat', name: 'Kitten ears', price: 90 },
+  { id: 'hat-chef', cat: 'hat', name: 'Chef’s hat', price: 100 },
+  { id: 'hat-pirate', cat: 'hat', name: 'Pirate hat', price: 160 },
+  { id: 'hat-magic', cat: 'hat', name: 'Magic top hat', price: 350 },
+  { id: 'hat-astro', cat: 'hat', name: 'Astronaut helmet', price: 900 },
   // óculos
-  { id: 'gl-nerd', cat: 'glasses', name: 'Óculos de nerd', price: 40 },
-  { id: 'gl-3d', cat: 'glasses', name: 'Óculos 3D', price: 90 },
-  { id: 'gl-swim', cat: 'glasses', name: 'Óculos de natação', price: 70 },
-  { id: 'gl-mono', cat: 'glasses', name: 'Monóculo chique', price: 150 },
-  { id: 'gl-hero', cat: 'glasses', name: 'Máscara de heroína', price: 200 },
+  { id: 'gl-nerd', cat: 'glasses', name: 'Nerdy glasses', price: 40 },
+  { id: 'gl-3d', cat: 'glasses', name: '3D glasses', price: 90 },
+  { id: 'gl-swim', cat: 'glasses', name: 'Swimming goggles', price: 70 },
+  { id: 'gl-mono', cat: 'glasses', name: 'Fancy monocle', price: 150 },
+  { id: 'gl-hero', cat: 'glasses', name: 'Superhero mask', price: 200 },
   // acessórios
-  { id: 'nk-tie', cat: 'neck', name: 'Gravata', price: 40 },
+  { id: 'nk-tie', cat: 'neck', name: 'Tie', price: 40 },
   { id: 'nk-bandana', cat: 'neck', name: 'Bandana', price: 45 },
-  { id: 'nk-bell', cat: 'neck', name: 'Sininho', price: 60 },
-  { id: 'nk-lei', cat: 'neck', name: 'Colar havaiano', price: 100 },
-  { id: 'nk-heart', cat: 'neck', name: 'Colar de coração', price: 180 },
+  { id: 'nk-bell', cat: 'neck', name: 'Little bell', price: 60 },
+  { id: 'nk-lei', cat: 'neck', name: 'Hawaiian lei', price: 100 },
+  { id: 'nk-heart', cat: 'neck', name: 'Heart necklace', price: 180 },
   // costas
-  { id: 'bk-butterfly', cat: 'back', name: 'Asas de borboleta', price: 450 },
-  { id: 'bk-wizard', cat: 'back', name: 'Capa de mago', price: 500 },
-  { id: 'bk-angel', cat: 'back', name: 'Asas de anjo', price: 800 },
-  { id: 'bk-jet', cat: 'back', name: 'Mochila a jato', price: 1500 },
+  { id: 'bk-butterfly', cat: 'back', name: 'Butterfly wings', price: 450 },
+  { id: 'bk-wizard', cat: 'back', name: 'Wizard’s cape', price: 500 },
+  { id: 'bk-angel', cat: 'back', name: 'Angel wings', price: 800 },
+  { id: 'bk-jet', cat: 'back', name: 'Jetpack', price: 1500 },
   // cores
-  { id: 'sk-lilac', cat: 'skin', name: 'Lumi Lilás', price: 120 },
-  { id: 'sk-orange', cat: 'skin', name: 'Lumi Laranja', price: 120 },
-  { id: 'sk-snow', cat: 'skin', name: 'Lumi Neve', price: 300 },
-  { id: 'sk-night', cat: 'skin', name: 'Lumi Noite', price: 400 },
-  { id: 'sk-rainbow', cat: 'skin', name: 'Lumi Arco-íris', price: 2000 },
+  { id: 'sk-lilac', cat: 'skin', name: 'Lilac Lumi', price: 120 },
+  { id: 'sk-orange', cat: 'skin', name: 'Orange Lumi', price: 120 },
+  { id: 'sk-snow', cat: 'skin', name: 'Snow Lumi', price: 300 },
+  { id: 'sk-night', cat: 'skin', name: 'Night Lumi', price: 400 },
+  { id: 'sk-rainbow', cat: 'skin', name: 'Rainbow Lumi', price: 2000 },
   // amiguinhos
-  { id: 'pt-fish', cat: 'pet', name: 'Peixinho', price: 200, emoji: '🐠' },
-  { id: 'pt-bunny', cat: 'pet', name: 'Coelhinho', price: 300, emoji: '🐰' },
-  { id: 'pt-turtle', cat: 'pet', name: 'Tartaruguinha', price: 350, emoji: '🐢' },
-  { id: 'pt-octo', cat: 'pet', name: 'Polvinho', price: 400, emoji: '🐙' },
-  { id: 'pt-dog', cat: 'pet', name: 'Cachorrinho', price: 450, emoji: '🐶' },
-  { id: 'pt-penguin', cat: 'pet', name: 'Pinguim', price: 500, emoji: '🐧' },
-  { id: 'pt-fox', cat: 'pet', name: 'Raposinha', price: 600, emoji: '🦊' },
-  { id: 'pt-koala', cat: 'pet', name: 'Coala', price: 700, emoji: '🐨' },
-  { id: 'pt-dolphin', cat: 'pet', name: 'Golfinho', price: 800, emoji: '🐬' },
-  { id: 'pt-unicorn', cat: 'pet', name: 'Unicórnio', price: 2000, emoji: '🦄' },
+  { id: 'pt-fish', cat: 'pet', name: 'Little fish', price: 200, emoji: '🐠' },
+  { id: 'pt-bunny', cat: 'pet', name: 'Bunny', price: 300, emoji: '🐰' },
+  { id: 'pt-turtle', cat: 'pet', name: 'Little turtle', price: 350, emoji: '🐢' },
+  { id: 'pt-octo', cat: 'pet', name: 'Little octopus', price: 400, emoji: '🐙' },
+  { id: 'pt-dog', cat: 'pet', name: 'Puppy', price: 450, emoji: '🐶' },
+  { id: 'pt-penguin', cat: 'pet', name: 'Penguin', price: 500, emoji: '🐧' },
+  { id: 'pt-fox', cat: 'pet', name: 'Little fox', price: 600, emoji: '🦊' },
+  { id: 'pt-koala', cat: 'pet', name: 'Koala', price: 700, emoji: '🐨' },
+  { id: 'pt-dolphin', cat: 'pet', name: 'Dolphin', price: 800, emoji: '🐬' },
+  { id: 'pt-unicorn', cat: 'pet', name: 'Unicorn', price: 2000, emoji: '🦄' },
   // trocar de bicho: a Lumi vira outro animal (desenhos originais; roupinhas continuam servindo)
-  { id: 'ms-owl', cat: 'mascot', name: 'Corujinha (original)', price: 0 },
-  { id: 'ms-dog', cat: 'mascot', name: 'Cachorrinho', price: 2000 },
-  { id: 'ms-cat', cat: 'mascot', name: 'Gatinho', price: 2000 },
-  { id: 'ms-panda', cat: 'mascot', name: 'Pandinha', price: 2500 },
+  { id: 'ms-owl', cat: 'mascot', name: 'Little owl (original)', price: 0 },
+  { id: 'ms-dog', cat: 'mascot', name: 'Puppy', price: 2000 },
+  { id: 'ms-cat', cat: 'mascot', name: 'Kitten', price: 2000 },
+  { id: 'ms-panda', cat: 'mascot', name: 'Little panda', price: 2500 },
   // efeitos ao redor da Lumi
-  { id: 'fx-bubbles', cat: 'fx', name: 'Bolhas', price: 150, fx: '🫧' },
-  { id: 'fx-sparkle', cat: 'fx', name: 'Brilhos', price: 150, fx: '✨' },
-  { id: 'fx-hearts', cat: 'fx', name: 'Corações', price: 200, fx: '💕' },
-  { id: 'fx-music', cat: 'fx', name: 'Notas musicais', price: 200, fx: '🎵' },
-  { id: 'fx-flowers', cat: 'fx', name: 'Pétalas', price: 250, fx: '🌸' },
-  { id: 'fx-stars', cat: 'fx', name: 'Estrelinhas', price: 250, fx: '⭐' },
-  { id: 'fx-snow', cat: 'fx', name: 'Floquinhos de neve', price: 300, fx: '❄️' },
-  { id: 'fx-rainbow', cat: 'fx', name: 'Arco-íris', price: 600 },
-  { id: 'fx-crown', cat: 'fx', name: 'Aura dourada', price: 2000 },
+  { id: 'fx-bubbles', cat: 'fx', name: 'Bubbles', price: 150, fx: '🫧' },
+  { id: 'fx-sparkle', cat: 'fx', name: 'Sparkles', price: 150, fx: '✨' },
+  { id: 'fx-hearts', cat: 'fx', name: 'Hearts', price: 200, fx: '💕' },
+  { id: 'fx-music', cat: 'fx', name: 'Music notes', price: 200, fx: '🎵' },
+  { id: 'fx-flowers', cat: 'fx', name: 'Petals', price: 250, fx: '🌸' },
+  { id: 'fx-stars', cat: 'fx', name: 'Little stars', price: 250, fx: '⭐' },
+  { id: 'fx-snow', cat: 'fx', name: 'Snowflakes', price: 300, fx: '❄️' },
+  { id: 'fx-rainbow', cat: 'fx', name: 'Rainbow', price: 600 },
+  { id: 'fx-crown', cat: 'fx', name: 'Golden aura', price: 2000 },
   // fundos
-  { id: 'bg-clouds', cat: 'bg', name: 'Nuvens', price: 150, theme: 'theme-clouds', sw: 'linear-gradient(180deg,#dbeafe,#ffffff)' },
-  { id: 'bg-jungle', cat: 'bg', name: 'Selva', price: 250, theme: 'theme-jungle', sw: 'linear-gradient(160deg,#9be7a8,#e9fcd2)' },
-  { id: 'bg-snow', cat: 'bg', name: 'Inverno', price: 250, theme: 'theme-snow', sw: 'linear-gradient(180deg,#e3f2fd,#f8fbff)' },
-  { id: 'bg-moon', cat: 'bg', name: 'Noite de lua', price: 400, theme: 'theme-moon', sw: 'linear-gradient(160deg,#0f1b3d,#3b4a8a)' },
-  { id: 'bg-aurora', cat: 'bg', name: 'Aurora boreal', price: 1500, theme: 'theme-aurora', sw: 'linear-gradient(160deg,#0b2545,#13a89e,#8f6bff)' },
+  { id: 'bg-clouds', cat: 'bg', name: 'Clouds', price: 150, theme: 'theme-clouds', sw: 'linear-gradient(180deg,#dbeafe,#ffffff)' },
+  { id: 'bg-jungle', cat: 'bg', name: 'Jungle', price: 250, theme: 'theme-jungle', sw: 'linear-gradient(160deg,#9be7a8,#e9fcd2)' },
+  { id: 'bg-snow', cat: 'bg', name: 'Winter', price: 250, theme: 'theme-snow', sw: 'linear-gradient(180deg,#e3f2fd,#f8fbff)' },
+  { id: 'bg-moon', cat: 'bg', name: 'Moonlit night', price: 400, theme: 'theme-moon', sw: 'linear-gradient(160deg,#0f1b3d,#3b4a8a)' },
+  { id: 'bg-aurora', cat: 'bg', name: 'Northern lights', price: 1500, theme: 'theme-aurora', sw: 'linear-gradient(160deg,#0b2545,#13a89e,#8f6bff)' },
   // adesivos
   ...[['🍓', 15], ['🌻', 15], ['🐞', 15], ['🎈', 15], ['🍕', 15], ['🐸', 20], ['🦉', 20], ['🐙', 20], ['🎸', 25], ['⚽', 25],
       ['🏇', 30], ['🌍', 30], ['🦜', 30], ['🍭', 20], ['🧸', 35], ['🔮', 40], ['🪐', 45], ['🌠', 50], ['🦚', 60], ['🏰', 80]]
-    .map(([e, p], i) => ({ id: 'st2-' + i, cat: 'sticker', name: 'Adesivo', emoji: e, price: p })),
+    .map(([e, p], i) => ({ id: 'st2-' + i, cat: 'sticker', name: 'Sticker', emoji: e, price: p })),
 );
 
 Object.assign(ACCESSORY_SVG, {
@@ -1090,30 +1090,30 @@ Object.assign(ANIMALS, {
   }),
 });
 const MASCOTS = [
-  { id: 'ms-owl', name: 'Corujinha', nick: 'Lumi' },
-  { id: 'ms-dog', name: 'Cachorrinho', nick: 'Pipoca' },
-  { id: 'ms-cat', name: 'Gatinho', nick: 'Mel' },
-  { id: 'ms-panda', name: 'Pandinha', nick: 'Bambu' },
-  { id: 'ms-bunny', name: 'Coelhinho', nick: 'Nina' },
-  { id: 'ms-fox', name: 'Raposinha', nick: 'Faísca' },
-  { id: 'ms-penguin', name: 'Pinguim', nick: 'Picolé' },
-  { id: 'ms-dino', name: 'Dinossaurinho', nick: 'Brontinho' },
+  { id: 'ms-owl', name: 'Little owl', nick: 'Lumi' },
+  { id: 'ms-dog', name: 'Puppy', nick: 'Pipoca' },
+  { id: 'ms-cat', name: 'Kitten', nick: 'Mel' },
+  { id: 'ms-panda', name: 'Little panda', nick: 'Bambu' },
+  { id: 'ms-bunny', name: 'Bunny', nick: 'Nina' },
+  { id: 'ms-fox', name: 'Little fox', nick: 'Faísca' },
+  { id: 'ms-penguin', name: 'Penguin', nick: 'Picolé' },
+  { id: 'ms-dino', name: 'Little dinosaur', nick: 'Brontinho' },
 ];
 function mascotName(eq = S.equipped) { const m = MASCOTS.find(x => x.id === (eq && eq.mascot)); return m ? m.nick : 'Lumi'; }
 // Amiguinhos: só por ovo. Raridade e chances (transparentes para a criança).
 SHOP_ITEMS.push(
   { id: 'pt-hamster', cat: 'pet', name: 'Hamster', price: 0, emoji: '🐹' },
-  { id: 'pt-ladybug', cat: 'pet', name: 'Joaninha', price: 0, emoji: '🐞' },
-  { id: 'pt-snail', cat: 'pet', name: 'Caracol', price: 0, emoji: '🐌' },
-  { id: 'pt-hedgehog', cat: 'pet', name: 'Porco-espinho', price: 0, emoji: '🦔' },
-  { id: 'pt-parrot', cat: 'pet', name: 'Papagaio', price: 0, emoji: '🦜' },
-  { id: 'pt-sloth', cat: 'pet', name: 'Bicho-preguiça', price: 0, emoji: '🦥' },
+  { id: 'pt-ladybug', cat: 'pet', name: 'Ladybird', price: 0, emoji: '🐞' },
+  { id: 'pt-snail', cat: 'pet', name: 'Snail', price: 0, emoji: '🐌' },
+  { id: 'pt-hedgehog', cat: 'pet', name: 'Hedgehog', price: 0, emoji: '🦔' },
+  { id: 'pt-parrot', cat: 'pet', name: 'Parrot', price: 0, emoji: '🦜' },
+  { id: 'pt-sloth', cat: 'pet', name: 'Sloth', price: 0, emoji: '🦥' },
 );
 const RARITY = {
-  common: { label: 'Comum', pct: 55, color: '#868e96' },
-  rare: { label: 'Raro', pct: 28, color: '#1c7ed6' },
-  epic: { label: 'Épico', pct: 14, color: '#9c36b5' },
-  legendary: { label: 'Lendário', pct: 3, color: '#f08c00' },
+  common: { label: 'Common', pct: 55, color: '#868e96' },
+  rare: { label: 'Rare', pct: 28, color: '#1c7ed6' },
+  epic: { label: 'Epic', pct: 14, color: '#9c36b5' },
+  legendary: { label: 'Legendary', pct: 3, color: '#f08c00' },
 };
 const PET_RARITY = {
   common: ['pt-fish', 'pt-bunny', 'pt-turtle', 'pt-chick', 'pt-hamster', 'pt-snail', 'pt-ladybug', 'pt-octo'],
@@ -1125,11 +1125,11 @@ const petRarity = id => Object.keys(PET_RARITY).find(r => PET_RARITY[r].includes
 const ALL_PETS = Object.values(PET_RARITY).flat();
 // Os ovos à venda (as categorias "Amiguinhos" e "Trocar de bicho" saem da compra direta)
 SHOP_CATS.splice(0, SHOP_CATS.length, ...SHOP_CATS.filter(c => !['pet', 'mascot'].includes(c.id)));
-SHOP_CATS.unshift({ id: 'egg', label: '🥚 Ovos' });
-SHOP_CATS.forEach(c => { if (c.id === 'skin') c.label = '🎨 Cores'; });
+SHOP_CATS.unshift({ id: 'egg', label: '🥚 Eggs' });
+SHOP_CATS.forEach(c => { if (c.id === 'skin') c.label = '🎨 Colours'; });
 SHOP_ITEMS.push(
-  { id: 'egg-pet', cat: 'egg', name: 'Ovo de amiguinho', price: 250, egg: 'pet' },
-  { id: 'egg-mascot', cat: 'egg', name: 'Ovo de mascote', price: 600, egg: 'mascot' },
+  { id: 'egg-pet', cat: 'egg', name: 'Pet egg', price: 250, egg: 'pet' },
+  { id: 'egg-mascot', cat: 'egg', name: 'Mascot egg', price: 600, egg: 'mascot' },
 );
 function eggSVG(kind, cls = '') {
   const c = kind === 'mascot' ? ['#ffe066', '#f59f00', '#fff9db', '#ff922b'] : ['#a5d8ff', '#339af0', '#e7f5ff', '#ff8fab'];
@@ -1153,11 +1153,11 @@ function rollPet() {
 function rollMascot() { const list = MASCOTS.filter(m => m.id !== 'ms-owl'); return list[Math.floor(Math.random() * list.length)].id; }
 function collectionCount(id) { return (S.collection || {})[id] || 0; }
 async function buyEgg(it) {
-  if (S.coins < it.price) { say(`Faltam <b>${it.price - Math.max(0, S.coins)}</b> moedas para o ${esc(it.name.toLowerCase())}. Que tal uns exercícios extras? ⭐`, { mood: 'think' }); return; }
-  const ok = await confirmBox('Comprar e chocar?', `${esc(it.name)} por <b>🪙 ${it.price}</b>?<br><span class="tiny muted">Sai um ${it.egg === 'mascot' ? 'mascote' : 'amiguinho'} surpresa. Pode vir repetido!</span>`, 'Comprar 🥚');
+  if (S.coins < it.price) { say(`You need <b>${it.price - Math.max(0, S.coins)}</b> more coins for the ${esc(it.name.toLowerCase())}. How about some extra exercises? ⭐`, { mood: 'think' }); return; }
+  const ok = await confirmBox('Buy and hatch?', `${esc(it.name)} for <b>🪙 ${it.price}</b>?<br><span class="tiny muted">A surprise ${it.egg === 'mascot' ? 'mascot' : 'pet'} will hatch. You might get a duplicate!</span>`, 'Buy 🥚');
   if (!ok) return;
   const prize = it.egg === 'mascot' ? rollMascot() : rollPet();
-  addCoins(-it.price, 'Lojinha: ' + it.name);
+  addCoins(-it.price, 'Shop: ' + it.name);
   S.collection = S.collection || {};
   const n = (S.collection[prize] || 0) + 1;
   S.collection[prize] = n;
@@ -1177,18 +1177,18 @@ function prizeInfo(id) {
 function hatchModal(kind, prize, n) {
   const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   const m = openModal(`<div class="modal-body hatch"><div class="egg-stage" id="egg-stage">${eggSVG(kind, 'shake')}</div>
-    <h3 id="hatch-t">${kind === 'mascot' ? 'Chocando o ovo de mascote…' : 'Chocando o ovo…'} 🥚</h3><div id="hatch-r"></div></div>
+    <h3 id="hatch-t">${kind === 'mascot' ? 'Hatching the mascot egg…' : 'Hatching the egg…'} 🥚</h3><div id="hatch-r"></div></div>
     <div class="modal-foot" id="hatch-f" style="justify-content:center"></div>`);
   const stage = $('#egg-stage', m);
   const reveal = () => {
     const info = prizeInfo(prize);
     const rar = info.rar ? RARITY[info.rar] : null;
     stage.innerHTML = `<div class="hatch-prize ${info.rar || 'mascot'}">${info.pic}</div>`;
-    $('#hatch-t', m).innerHTML = n > 1 ? `Repetido! ${esc(info.name)} <span class="dup">×${n}</span>` : `Nasceu: ${esc(info.name)}! 🎉`;
-    $('#hatch-r', m).innerHTML = `${rar ? `<span class="rar-tag" style="--rar:${rar.color}">${rar.label}</span>` : '<span class="rar-tag" style="--rar:#f59f00">Mascote</span>'}
-      <p class="tiny muted">${n > 1 ? 'Ele vai para a coleção como repetido. Continue caçando os que faltam! 🔎' : 'Novo na sua coleção! 📖'}</p>`;
+    $('#hatch-t', m).innerHTML = n > 1 ? `Duplicate! ${esc(info.name)} <span class="dup">×${n}</span>` : `It’s a ${esc(info.name)}! 🎉`;
+    $('#hatch-r', m).innerHTML = `${rar ? `<span class="rar-tag" style="--rar:${rar.color}">${rar.label}</span>` : '<span class="rar-tag" style="--rar:#f59f00">Mascot</span>'}
+      <p class="tiny muted">${n > 1 ? 'It goes into your collection as a duplicate. Keep hunting for the ones you’re missing! 🔎' : 'New in your collection! 📖'}</p>`;
     const isM = MASCOTS.some(x => x.id === prize);
-    $('#hatch-f', m).innerHTML = `<button class="btn" data-col>📖 Ver coleção</button><button class="btn primary" data-use>${isM ? 'Usar este mascote' : 'Levar comigo'}</button>`;
+    $('#hatch-f', m).innerHTML = `<button class="btn" data-col>📖 See collection</button><button class="btn primary" data-use>${isM ? 'Use this mascot' : 'Take it with me'}</button>`;
     $('[data-col]', m).onclick = () => { closeModal(); show('collection'); };
     $('[data-use]', m).onclick = () => { equipCollectible(prize); closeModal(); };
     if (typeof celebrateFX === 'function') celebrateFX(info.rar === 'legendary' || isM ? 'big' : 'small');
@@ -1203,7 +1203,7 @@ function equipCollectible(id) {
   else S.equipped.pet = S.equipped.pet === id ? null : id;
   save(); renderMascotMini(); renderCoins();
   if (currentScreen === 'collection') renderCollection(); else if (currentScreen === 'shop') renderShop();
-  say(MASCOTS.some(x => x.id === id) ? `Oi! Agora eu sou ${esc(mascotName())}! Vamos estudar? 😄` : (S.equipped.pet ? 'Que amiguinho fofo! Ele vai ficar do meu lado. 💛' : 'Amiguinho guardado na coleção.'), { mood: 'wow' });
+  say(MASCOTS.some(x => x.id === id) ? `Hi! Now I’m ${esc(mascotName())}! Shall we study? 😄` : (S.equipped.pet ? 'What a cute pet! It’ll stay right beside me. 💛' : 'Pet put away in your collection.'), { mood: 'wow' });
 }
 function renderCollection() {
   const el = $('#scr-collection');
@@ -1211,18 +1211,18 @@ function renderCollection() {
   const havePets = pets.filter(p => collectionCount(p.id)).length;
   const haveM = MASCOTS.filter(m => m.id === 'ms-owl' || collectionCount(m.id)).length;
   const petCard = p => { const n = collectionCount(p.id); const r = RARITY[petRarity(p.id)];
-    return n ? `<button type="button" class="col-card ${S.equipped.pet === p.id ? 'on' : ''}" data-col="${p.id}" style="--rar:${r.color}"><span class="col-emoji">${p.emoji}</span><b>${esc(p.name)}</b><span class="rar-mini">${r.label}</span>${n > 1 ? `<span class="dup">×${n}</span>` : ''}${S.equipped.pet === p.id ? '<span class="col-on">Comigo ✔</span>' : ''}</button>`
+    return n ? `<button type="button" class="col-card ${S.equipped.pet === p.id ? 'on' : ''}" data-col="${p.id}" style="--rar:${r.color}"><span class="col-emoji">${p.emoji}</span><b>${esc(p.name)}</b><span class="rar-mini">${r.label}</span>${n > 1 ? `<span class="dup">×${n}</span>` : ''}${S.equipped.pet === p.id ? '<span class="col-on">With me ✔</span>' : ''}</button>`
       : `<div class="col-card missing" style="--rar:${r.color}"><span class="col-emoji sil">${p.emoji}</span><b>???</b><span class="rar-mini">${r.label}</span></div>`; };
   const mCard = mm => { const n = mm.id === 'ms-owl' ? 1 : collectionCount(mm.id); const on = (S.equipped.mascot || 'ms-owl') === mm.id;
     const svg = mascotSVG({ hat: null, glasses: null, neck: null, back: null, skin: null, pet: null, fx: null, mascot: mm.id === 'ms-owl' ? null : mm.id });
-    return n ? `<button type="button" class="col-card m ${on ? 'on' : ''}" data-col="${mm.id}"><span class="col-svg">${svg}</span><b>${esc(mm.nick)}</b><span class="rar-mini">${esc(mm.name)}</span>${n > 1 ? `<span class="dup">×${n}</span>` : ''}${on ? '<span class="col-on">No app ✔</span>' : ''}</button>`
-      : `<div class="col-card m missing"><span class="col-svg sil">${svg}</span><b>???</b><span class="rar-mini">Mascote</span></div>`; };
+    return n ? `<button type="button" class="col-card m ${on ? 'on' : ''}" data-col="${mm.id}"><span class="col-svg">${svg}</span><b>${esc(mm.nick)}</b><span class="rar-mini">${esc(mm.name)}</span>${n > 1 ? `<span class="dup">×${n}</span>` : ''}${on ? '<span class="col-on">In use ✔</span>' : ''}</button>`
+      : `<div class="col-card m missing"><span class="col-svg sil">${svg}</span><b>???</b><span class="rar-mini">Mascot</span></div>`; };
   el.innerHTML = `<div class="collection">
-    <div class="card"><div class="row wrap"><h3 class="grow" style="margin:0">📖 Minha coleção</h3><button class="btn small" data-act="toshop">🥚 Comprar ovos</button></div>
-      <p class="tiny muted" style="margin:4px 0 0">Toque num amiguinho para levá-lo com você, ou num mascote para trocar quem aparece no app. As roupinhas servem em todos os mascotes.</p></div>
-    <div class="card"><b>🦉 Mascotes <span class="col-count">${haveM}/${MASCOTS.length}</span></b><div class="col-grid">${MASCOTS.map(mCard).join('')}</div></div>
-    <div class="card"><b>🐾 Amiguinhos <span class="col-count">${havePets}/${pets.length}</span></b>
-      <div class="tiny muted">Chances no ovo: ${Object.values(RARITY).map(r => `<span style="color:${r.color};font-weight:800">${r.label} ${r.pct}%</span>`).join(' · ')}</div>
+    <div class="card"><div class="row wrap"><h3 class="grow" style="margin:0">📖 My collection</h3><button class="btn small" data-act="toshop">🥚 Buy eggs</button></div>
+      <p class="tiny muted" style="margin:4px 0 0">Tap a pet to take it with you, or a mascot to change who appears in the app. The outfits fit every mascot.</p></div>
+    <div class="card"><b>🦉 Mascots <span class="col-count">${haveM}/${MASCOTS.length}</span></b><div class="col-grid">${MASCOTS.map(mCard).join('')}</div></div>
+    <div class="card"><b>🐾 Pets <span class="col-count">${havePets}/${pets.length}</span></b>
+      <div class="tiny muted">Egg chances:${Object.values(RARITY).map(r => `<span style="color:${r.color};font-weight:800">${r.label} ${r.pct}%</span>`).join(' · ')}</div>
       <div class="col-grid">${pets.map(petCard).join('')}</div></div></div>`;
   $$('[data-col]', el).forEach(b => b.onclick = () => equipCollectible(b.dataset.col));
   $('[data-act=toshop]', el).onclick = () => { VIEW.shopCat = 'egg'; show('shop'); };
@@ -1242,8 +1242,8 @@ function say(text, opts = {}) {
     btn.onclick = e => { e.stopPropagation(); a.onClick(); };
     actions.appendChild(btn);
   });
-  if (speechOK) { const sb = document.createElement('button'); sb.type = 'button'; sb.className = 'bubble-speak'; sb.title = 'Ouvir a Lumi'; sb.setAttribute('aria-label', 'Ouvir a Lumi'); sb.textContent = '🔊';
-    sb.onclick = e => { e.stopPropagation(); lumiSpeak(text, opts.lang || 'pt'); }; actions.prepend(sb); }
+  if (speechOK) { const sb = document.createElement('button'); sb.type = 'button'; sb.className = 'bubble-speak'; sb.title = 'Listen to Lumi'; sb.setAttribute('aria-label', 'Listen to Lumi'); sb.textContent = '🔊';
+    sb.onclick = e => { e.stopPropagation(); lumiSpeak(text, opts.lang || 'en'); }; actions.prepend(sb); }
   b.classList.remove('hidden');
   renderMascotMini(opts.mood || 'happy');
   const m = $('#mascot-btn');
@@ -1258,30 +1258,30 @@ function tipsFor(screen) {
   const st = S.settings;
   const t = {
     home: [
-      'Toque no dia de hoje para abrir sua tarefa! 📅',
-      'Sábado e domingo têm um pouquinho mais de perguntas. ⭐',
-      `Sexta é dia de entregar: semana completa vale até <b>+${st.reward}</b> moedas (proporcional aos dias da semana). 🪙`,
-      `Se a semana não for entregue até sexta, a gente perde <b>${st.penalty}</b> moedas. Vamos caprichar! 💪`,
-      `Perdeu algum dia? Dá para <b>recuperar</b> até a sexta seguinte, valendo metade. ⏳`,
-      `Terminou? Os exercícios extras dão <b>${st.extraPerCorrect}</b> moedas por acerto.`,
-      'Escreva o que aprendeu na escola em <b>Minha semana</b> para eu criar as tarefas.',
+      'Tap today to open your task! 📅',
+      'Saturday and Sunday have a few more questions. ⭐',
+      `Friday is hand-in day: a complete week is worth up to <b>+${st.reward}</b> coins (in proportion to the days in the week). 🪙`,
+      `If the week isn’t handed in by Friday, we lose <b>${st.penalty}</b> coins. Let’s do our best! 💪`,
+      `Missed a day? You can <b>catch up</b> until the following Friday, for half the coins. ⏳`,
+      `All done? Extra exercises give <b>${st.extraPerCorrect}</b> coins for each right answer.`,
+      'Write what you learnt at school in <b>My week</b> so I can create your tasks.',
     ],
     setup: [
-      'Escreva o que você aprendeu na escola em cada matéria. Pode ser curtinho!',
-      'Em Ortografia e Spelling, coloque as palavras separadas por vírgula.',
-      'Truque: escreva <b>pergunta = resposta</b> em uma linha e eu viro isso em flashcard!',
-      'Em Math, escreva o assunto em inglês ou português: <i>fractions, times tables, perimeter…</i>',
-      'Matéria em branco não entra na semana.',
+      'Write what you learnt at school in each subject. It can be really short!',
+      'In Ortografia and Spelling, separate the words with commas.',
+      'Trick: write <b>question = answer</b> on one line and I’ll turn it into a flashcard!',
+      'In Math, write the topic in English or Portuguese: <i>fractions, times tables, perimeter…</i>',
+      'Subjects left blank won’t be included in the week.',
     ],
     work: [
-      'Toque no 💡 para uma dica, ou no ? para eu explicar o conteúdo.',
-      'Nas respostas livres, escreva com suas palavras: eu corrijo e comento!',
-      S.settings.gabaritoAfterFinish ? 'Quando terminar, aperte <b>Concluir</b> e o gabarito libera.' : 'O botão <b>Gabarito</b> mostra as respostas para você se corrigir.',
-      'Prefere papel? Toque em 🖨️ Imprimir. Depois, em 📄 Corrigir folha, eu corrijo pela foto!',
+      'Tap 💡 for a hint, or ? for me to explain the topic.',
+      'For written answers, use your own words: I’ll mark them and comment!',
+      S.settings.gabaritoAfterFinish ? 'When you’re done, press <b>Finish</b> and the answer key unlocks.' : 'The <b>Answer key</b> button shows the answers so you can check your work.',
+      'Prefer paper? Tap 🖨️ Print. Then, in 📄 Mark my sheet, I’ll mark it from a photo!',
     ],
-    shop: ['Compre roupinhas para mim! 😍', 'Os vales são prêmios de verdade: os pais confirmam a entrega.', 'Experimente um fundo novo para o app!'],
-    parents: ['Área dos pais: correção das respostas livres, moedas, vales e ajustes.'],
-    welcome: ['Oi! Eu sou a Lumi, sua corujinha de estudos! 🦉'],
+    shop: ['Buy me some outfits! 😍', 'Vouchers are real prizes: your parents confirm when you get them.', 'Try a new background for the app!'],
+    parents: ['Parents’ area: marking written answers, coins, vouchers and settings.'],
+    welcome: ['Hi! I’m Lumi, your study owl! 🦉'],
   };
   return t[screen] || t.home;
 }
@@ -1295,14 +1295,14 @@ function mascotClick() {
 function runTour() {
   const st = S.settings;
   const steps = [
-    `Oi, ${esc(S.name)}! Eu sou ${S.equipped && S.equipped.mascot ? '' : 'a '}<b>${mascotName()}</b> ${S.equipped && S.equipped.mascot ? '' : '🦉 '}e vou estudar com você!`,
-    'Eu sou uma <b>inteligência artificial</b> (um programa de computador, feito com o Claude), não uma pessoa. Às vezes posso errar: se algo parecer estranho, mostre para um adulto. 💜',
-    'Toda semana você escreve em <b>📝 Minha semana</b> o que está aprendendo na escola. Eu transformo isso em tarefas.',
-    'Cada dia tem uma tarefa curtinha. <b>Sábado e domingo</b> têm um pouquinho mais.',
-    `<b>Sexta-feira é dia de entrega!</b> Semana completa: <b>+${st.reward}</b> 🪙. Semana não entregue: <b>−${st.penalty}</b> 🪙 — mas os dias que faltaram ainda podem ser <b>recuperados</b> até a sexta seguinte, valendo metade. ⏳`,
-    `Quer mais moedas? Faça os <b>⭐ Exercícios extras</b>: ${st.extraPerCorrect} moedas por acerto.`,
-    'Gaste as moedas na <b>🛒 Lojinha</b>: roupinhas para mim, fundos e adesivos!',
-    'Travou numa pergunta? Toque no <b>💡</b> ou em mim que eu ajudo. Vamos lá?',
+    `Hi, ${esc(S.name)}! I’m <b>${mascotName()}</b> ${S.equipped && S.equipped.mascot ? '' : '🦉 '}and I’m going to study with you!`,
+    'I’m an <b>artificial intelligence</b> (a computer program, made with Claude), not a person. Sometimes I can make mistakes: if something looks odd, show a grown-up. 💜',
+    'Every week you write in <b>📝 My week</b> what you’re learning at school. I turn it into tasks.',
+    'Each day has a short task. <b>Saturday and Sunday</b> have a little bit more.',
+    `<b>Friday is hand-in day!</b> Complete week: <b>+${st.reward}</b> 🪙. Week not handed in: <b>−${st.penalty}</b> 🪙 — but missed days can still be <b>caught up</b> until the following Friday, for half the coins. ⏳`,
+    `Want more coins? Do the <b>⭐ Extra exercises</b>: ${st.extraPerCorrect} coins for each right answer.`,
+    'Spend your coins in the <b>🛒 Shop</b>: outfits for me, backgrounds and stickers!',
+    'Stuck on a question? Tap <b>💡</b> or tap me and I’ll help. Ready?',
   ];
   let i = 0;
   const step = () => {
@@ -1310,8 +1310,8 @@ function runTour() {
     say(steps[i], {
       sticky: true, mood: i === 3 ? 'wow' : 'happy',
       actions: [
-        ...(last ? [] : [{ label: 'Pular', onClick: () => { finish(); } }]),
-        { label: last ? 'Começar!' : 'Próximo ▸', primary: true, onClick: () => { if (last) finish(); else { i++; step(); } } },
+        ...(last ? [] : [{ label: 'Skip', onClick: () => { finish(); } }]),
+        { label: last ? 'Start!' : 'Next ▸', primary: true, onClick: () => { if (last) finish(); else { i++; step(); } } },
       ],
     });
   };
@@ -1328,7 +1328,7 @@ function runTour() {
 const speechOK = typeof window !== 'undefined' && 'speechSynthesis' in window;
 // Ditado (perguntas "listen"): mesma voz da Lumi, um pouco mais devagar
 function speak(text, lang) {
-  if (!S.settings.voice) { toast('🔇 Voz desligada nos Ajustes'); return; }
+  if (!S.settings.voice) { toast('🔇 Voice is turned off in Settings'); return; }
   lumiSpeak(esc(String(text || '')), lang === 'en' ? 'en' : 'pt', null, { rate: .85 });
 }
 /* Voz da Lumi
@@ -1407,7 +1407,7 @@ function lumiSpeak(html, lang = 'pt', onEnd, opt = {}) {
   deviceSpeak(text, lang, onEnd, opt, id);
 }
 function deviceSpeak(text, lang, onEnd, opt, id) {
-  if (!speechOK) { toast('🔇 Voz indisponível neste aparelho'); onEnd && onEnd(); return; }
+  if (!speechOK) { toast('🔇 Voice isn’t available on this device'); onEnd && onEnd(); return; }
   try { speechSynthesis.cancel(); } catch (e) { /* ignora */ }
   const parts = speechChunks(text, 180, 220);   // trechos médios: sem pausas picadas e sem o corte de falas longas do Chrome
   const v = bestVoice(lang);
@@ -1906,24 +1906,24 @@ function buildPool(subjId, rawText, seed, imported = []) {
 /* ---------- Importação de perguntas (JSON gerado pelo Claude ou pelos pais) ---------- */
 function validateImported(data) {
   const arr = Array.isArray(data) ? data : (data && Array.isArray(data.questions) ? data.questions : null);
-  if (!arr) throw new Error('O JSON precisa ter uma lista "questions".');
+  if (!arr) throw new Error('The JSON needs a "questions" list.');
   const ok = []; const errs = [];
   arr.forEach((q, i) => {
     const subject = String(q.subject || '').trim();
     const type = String(q.type || '').trim();
-    if (!SUBJ[subject]) { errs.push(`#${i + 1}: matéria "${subject}" desconhecida`); return; }
-    if (!['mc', 'short', 'num', 'open', 'listen', 'proof'].includes(type)) { errs.push(`#${i + 1}: tipo "${type}" inválido`); return; }
-    if (!q.q && type !== 'listen') { errs.push(`#${i + 1}: falta o texto "q"`); return; }
+    if (!SUBJ[subject]) { errs.push(`#${i + 1}: unknown subject "${subject}"`); return; }
+    if (!['mc', 'short', 'num', 'open', 'listen', 'proof'].includes(type)) { errs.push(`#${i + 1}: invalid type "${type}"`); return; }
+    if (!q.q && type !== 'listen') { errs.push(`#${i + 1}: missing the "q" text`); return; }
     const item = { subject, type, q: String(q.q || (SUBJ[subject].lang === 'pt' ? 'Ouça a palavra e escreva:' : 'Listen and write the word:')), answer: String(q.answer ?? ''), hint: q.hint ? String(q.hint) : '' , src: 'import' };
     if (type === 'mc') {
-      if (!Array.isArray(q.options) || q.options.length < 2) { errs.push(`#${i + 1}: múltipla escolha precisa de "options"`); return; }
+      if (!Array.isArray(q.options) || q.options.length < 2) { errs.push(`#${i + 1}: multiple choice needs "options"`); return; }
       item.options = q.options.map(String);
-      if (!item.options.some(o => norm(o) === norm(item.answer))) { errs.push(`#${i + 1}: a resposta não está entre as opções`); return; }
+      if (!item.options.some(o => norm(o) === norm(item.answer))) { errs.push(`#${i + 1}: the answer is not one of the options`); return; }
     }
     if (type === 'listen') item.say = String(q.say || q.answer || '');
     if (type === 'proof') {
       item.strict = true;
-      if (!proofPrepare(item, q.text, q.errors)) { errs.push(`#${i + 1}: caça-erros sem erros válidos no texto`); return; }
+      if (!proofPrepare(item, q.text, q.errors)) { errs.push(`#${i + 1}: spot-the-mistakes item has no valid mistakes in the text`); return; }
     }
     if (Array.isArray(q.accept)) item.accept = q.accept.map(String);
     if (q.strict) item.strict = true;
@@ -2004,7 +2004,7 @@ function regenerateDays(week, dates, nonce = '') {
       let openCount = qs.filter(q => q.type === 'open').length;
       let i = 0, stall = 0;
       const cnt = id => qs.filter(q => q.subject === id).length;
-      const daily = (week.passages || []).length > 0;   // com texto diário, leitura só vem do texto do dia
+      const daily = (week.passages || []).length > 0 || (week.imported || []).some(q => q.day && isRead(q.subject));   // com texto diário, leitura só vem do texto do dia
       while (qs.length < N && stall < act.length * 3) {
         // completa primeiro o tema que está com menos perguntas no dia (equilíbrio por tema)
         const cands = daySubj.filter(id => pools[id] && pools[id].length && !(daily && isRead(id)));
@@ -2072,7 +2072,7 @@ function grantMissingDayCoins() {
     const doneOn = String(d.result.at || '').slice(0, 10);
     if (!doneOn) { d.coinsAt = today(); return; }
     const amt = doneOn && doneOn <= d.date ? dc : Math.round(dc / 2);
-    if (addCoins(amt, `Tarefa de ${DOW_FULL[d.dow].toLowerCase()} ${fmtDM(d.date)}`, 'day-' + d.date)) { d.coinsAt = today(); d.coins = amt; got += amt; }
+    if (addCoins(amt, `${DOW_FULL[d.dow]} task ${fmtDM(d.date)}`,'day-' + d.date)) { d.coinsAt = today(); d.coins = amt; got += amt; }
     else d.coinsAt = today();
   });
   return got;
@@ -2081,7 +2081,7 @@ function grantMissingDayCoins() {
 function settleIfNeeded() {
   const w = S.week;
   const back = grantMissingDayCoins();
-  if (back) setTimeout(() => say(`Opa! Faltou te dar as moedas das tarefas que você já fez: <b>+${back}</b> 🪙. 🎉`, { mood: 'wow' }), 600);
+  if (back) setTimeout(() => say(`Oops! I still owed you the coins for the tasks you’d already done: <b>+${back}</b> 🪙. 🎉`, { mood: 'wow' }), 600);
   // semanas fechadas antes desta função existir também ganham a recuperação
   if (w && w.settled === 'missed' && (!S.recovery || S.recovery.start !== w.start) && today() <= addDays(w.end, 7)) { openRecovery(w); save(); }
   if (!w || w.settled) return null;
@@ -2091,24 +2091,24 @@ function settleIfNeeded() {
   if (total === 0) { w.settled = 'empty'; save(); return null; }
   if (done === total) {
     w.settled = 'delivered'; w.settledAt = today();
-    addCoins(weekReward(w), `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue (${total} dia${total > 1 ? 's' : ''})`, 'week-' + w.start);
-    return { type: 'good', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} estava completa: <b>+${weekReward(w)}</b> 🪙!` };
+    addCoins(weekReward(w), `Week ${fmtDM(w.start)}–${fmtDM(w.end)} handed in (${total} day${total > 1 ? 's' : ''})`, 'week-' + w.start);
+    return { type: 'good', msg: `The week from ${fmtDM(w.start)} to ${fmtDM(w.end)} was complete: <b>+${weekReward(w)}</b> 🪙!` };
   }
   w.settled = 'missed'; w.settledAt = today();
   const pen = weekPenalty(w);
-  addCoins(-pen, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} não entregue (${done}/${total} dias)`, 'weekpen-' + w.start);
+  addCoins(-pen, `Week ${fmtDM(w.start)}–${fmtDM(w.end)} not handed in (${done}/${total} days)`, 'weekpen-' + w.start);
   const r = latePct() > 0 ? openRecovery(w) : null; save();
-  return { type: 'bad', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} não foi entregue (${done} de ${total} dias). <b>−${pen}</b> 🪙.`
-    + (r ? ` Mas dá para <b>recuperar</b>: faça ${r.total === 1 ? 'o dia que faltou' : `os ${r.total} dias que faltaram`} até sexta ${fmtDM(r.until)} e ganhe metade da recompensa (<b>+${r.pot}</b> 🪙). ⏳` : ' Bora recuperar nesta semana!') };
+  return { type: 'bad', msg: `The week from ${fmtDM(w.start)} to ${fmtDM(w.end)} wasn’t handed in (${done} of ${total} days). <b>−${pen}</b> 🪙.`
+    + (r ? ` But you can still <b>catch up</b>: do ${r.total === 1 ? 'the missing day' : `the ${r.total} missing days`} by Friday ${fmtDM(r.until)} and earn half the reward (<b>+${r.pot}</b> 🪙). ⏳` : ' Let’s make up for it this week!') };
 }
 function deliverWeek() {
   const w = S.week;
   if (!w || w.settled || !weekAllDone(w) || today() !== w.end) return;
   w.settled = 'delivered'; w.settledAt = today();
   const rw = weekReward(w);
-  addCoins(rw, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue (${requiredDays(w).length} dias)`, 'week-' + w.start);
+  addCoins(rw, `Week ${fmtDM(w.start)}–${fmtDM(w.end)} handed in (${requiredDays(w).length} days)`, 'week-' + w.start);
   save();
-  showCelebrate('Semana entregue! 🎉', `+${rw}`, 'Você completou todas as tarefas da semana. Que orgulho!');
+  showCelebrate('Week handed in! 🎉', `+${rw}`, 'You finished every task this week. So proud of you!');
 }
 function archiveWeek(w) {
   if (!w) return;
@@ -2134,8 +2134,8 @@ function show(screen) {
   const fb = $('#fb-btn'); if (fb) { fb.hidden = ['login', 'welcome'].includes(screen); fb.onclick = openFeedback; }
   $$('.screen').forEach(s => s.classList.toggle('active', s.id === 'scr-' + screen));
   $$('.top-nav button').forEach(b => b.classList.toggle('active', b.dataset.nav === screen));
-  const titles = { welcome: 'Bem-vinda!', login: 'Estudos com a Lumi', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', check: '📄 Corrigir folha', selfcheck: '✍️ Corrigir', shop: '🛒 Lojinha', parents: '🔒 Área dos pais', workshop: '✏️ Oficina de palavras', collection: '📖 Minha coleção', notes: '💌 Meus recadinhos' };
-  $('#top-title').textContent = titles[screen] || 'Estudos';
+  const titles = { welcome: 'Welcome!', login: 'Study with Lumi', home: 'Study', setup: '📝 My week', work: 'Task', check: '📄 Mark my sheet', selfcheck: '✍️ Mark it', shop: '🛒 Shop', parents: '🔒 Parents’ area', workshop: '✏️ Word workshop', collection: '📖 My collection', notes: '💌 My secret notes' };
+  $('#top-title').textContent = titles[screen] || 'Study';
   hideBubble();
   ({ welcome: renderWelcome, login: renderLogin, home: renderHome, setup: renderSetup, work: renderWork, check: renderCheck, selfcheck: renderSelfCheck, shop: renderShop, parents: renderParents, workshop: renderWorkshop, collection: renderCollection, notes: renderNotes })[screen]();
 }
@@ -2162,10 +2162,10 @@ function openModal(html, { wide = false, onClose } = {}) {
   return c;
 }
 function closeModal() { const m = $('#modal'); m.classList.add('hidden'); if (m._onClose) { const f = m._onClose; m._onClose = null; f(); } }
-function confirmBox(title, text, okLabel = 'Confirmar', danger = false) {
+function confirmBox(title, text, okLabel = 'Confirm', danger = false) {
   return new Promise(res => {
     const c = openModal(`<div class="modal-head"><h3>${title}</h3></div><div class="modal-body"><p>${text}</p></div>
-      <div class="modal-foot"><button class="btn" data-no>Cancelar</button><button class="btn ${danger ? 'danger' : 'primary'}" data-yes>${okLabel}</button></div>`, { onClose: () => res(false) });
+      <div class="modal-foot"><button class="btn" data-no>Cancel</button><button class="btn ${danger ? 'danger' : 'primary'}" data-yes>${okLabel}</button></div>`, { onClose: () => res(false) });
     $('[data-no]', c).onclick = () => closeModal();
     $('[data-yes]', c).onclick = () => { $('#modal')._onClose = null; closeModal(); res(true); };
   });
@@ -2175,8 +2175,8 @@ function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.re
 // opts.done: mostra "🏠 Voltar ao início" (principal) e "🔑 Ver gabarito" em vez de "Oba!"
 function showCelebrate(title, big, text, mood = 'wow', opts = {}) {
   const foot = opts.done
-    ? `<button class="btn" data-cgab>🔑 Ver gabarito</button><button class="btn primary big" data-chome>🏠 Voltar ao início</button>`
-    : `<button class="btn primary big" data-close>Oba!</button>`;
+    ? `<button class="btn" data-cgab>🔑 See answer key</button><button class="btn primary big" data-chome>🏠 Back to Home</button>`
+    : `<button class="btn primary big" data-close>Yay!</button>`;
   const m = openModal(`<div class="modal-body celebrate"><div class="owl-big">${mascotSVG(S.equipped, mood)}</div><h3 style="margin:4px 0">${title}</h3>
     ${big ? `<div class="big-num">${big} 🪙</div>` : ''}<p>${text}</p></div><div class="modal-foot celebrate-foot" style="justify-content:center">${foot}</div>`);
   const h = $('[data-chome]', m); if (h) h.onclick = () => { closeModal(); save(); show('home'); };
@@ -2188,9 +2188,9 @@ function showCelebrate(title, big, text, mood = 'wow', opts = {}) {
 function renderWelcome() {
   const el = $('#scr-welcome');
   el.innerHTML = `<div class="welcome"><div class="owl-big">${mascotSVG(S.equipped, 'wow')}</div>
-    <h1>Oi! Eu sou a ${MASCOT_NAME} 🦉</h1><p class="muted">Vou ser sua parceira de estudos. Como você se chama?</p>
-    <input id="w-name" maxlength="24" placeholder="Seu nome" autocomplete="off">
-    <button class="btn primary big wide" id="w-go">Vamos começar!</button></div>`;
+    <h1>Hi! I’m ${MASCOT_NAME} 🦉</h1><p class="muted">I’ll be your study buddy. What’s your name?</p>
+    <input id="w-name" maxlength="24" placeholder="Your name" autocomplete="off">
+    <button class="btn primary big wide" id="w-go">Let’s start!</button></div>`;
   const go = () => { const n = $('#w-name').value.trim(); if (!n) { $('#w-name').focus(); return; } S.name = n; save(); show('home'); if (!S.tourDone) setTimeout(runTour, 350); };
   $('#w-go').onclick = go;
   $('#w-name').onkeydown = e => { if (e.key === 'Enter') go(); };
@@ -2206,13 +2206,13 @@ function renderHome() {
   const notice = VIEW.homeNotice; VIEW.homeNotice = null;
   let body = '';
   const hero = `<div class="card home-hero span2"><div class="owl-big">${mascotSVG(S.equipped)}</div>
-    <div class="grow">${Server.me && Server.me.children.length > 1 ? '<button class="btn small ghost switch-btn" data-act="switch">👤 Trocar</button>' : ''}<p class="home-hello">Oi, ${esc(S.name)}! 👋 ${S.streak && S.streak.n > 0 && (S.streak.last === today() || S.streak.last === addDays(today(), -1)) ? `<span class="streak" title="Dias seguidos">🔥 ${S.streak.n}</span>` : ''}</p>${w ? deadlineText(w) : '<div class="deadline">Vamos planejar a sua semana?</div>'}</div></div>`;
+    <div class="grow">${Server.me && Server.me.children.length > 1 ? '<button class="btn small ghost switch-btn" data-act="switch">👤 Switch</button>' : ''}<p class="home-hello">Hi, ${esc(S.name)}! 👋 ${S.streak && S.streak.n > 0 && (S.streak.last === today() || S.streak.last === addDays(today(), -1)) ? `<span class="streak" title="Day streak">🔥 ${S.streak.n}</span>` : ''}</p>${w ? deadlineText(w) : '<div class="deadline">Shall we plan your week?</div>'}</div></div>`;
   const noticeHtml = notice ? `<div class="notice ${notice.type} span2">${notice.msg}</div>` : '';
 
   if (!w || (w.settled && w.end < t)) {
-    body = `<div class="card span2"><h3 style="margin:0 0 6px">📝 Nova semana</h3>
-      <p class="muted" style="margin:0 0 10px">Escreva o que você está aprendendo na escola e eu crio as tarefas de sábado a sexta.</p>
-      <button class="btn primary big wide" data-act="setup">Planejar minha semana ✨</button></div>${recoveryHtml()}${questsHtml()}`;
+    body = `<div class="card span2"><h3 style="margin:0 0 6px">📝 New week</h3>
+      <p class="muted" style="margin:0 0 10px">Write what you’re learning at school and I’ll create your tasks from Saturday to Friday.</p>
+      <button class="btn primary big wide" data-act="setup">Plan my week ✨</button></div>${recoveryHtml()}${questsHtml()}`;
   } else {
     const days = CYCLE.map((_, i) => w.days[addDays(w.start, i)]);
     const strip = days.map(d => {
@@ -2220,34 +2220,34 @@ function renderHome() {
       const icon = { done: '✅', today: '📘', late: '⏰', locked: '🔒', off: '–' }[st];
       const isT = d.date === t;
       return `<button class="day-chip ${st} ${isT ? 'today' : ''} ${['sab', 'dom'].includes(d.dow) ? 'weekend' : ''}" data-day="${d.date}" ${st === 'off' || st === 'locked' ? 'aria-disabled="true"' : ''}>
-        <span class="d">${DOW_LABEL[d.dow]}</span><span class="dt">${fmtDM(d.date)}</span><span class="st">${icon}</span><span class="n">${d.required ? d.questions.length + ' perg.' : ''}</span></button>`;
+        <span class="d">${DOW_LABEL[d.dow]}</span><span class="dt">${fmtDM(d.date)}</span><span class="st">${icon}</span><span class="n">${d.required ? d.questions.length + ' Qs' : ''}</span></button>`;
     }).join('');
     const late = days.filter(d => dayState(d) === 'late');
     const td = w.days[t];
     let main = '';
-    if (w.settled === 'delivered') main = `<div class="notice good">🎉 Semana entregue! Quer adiantar a próxima?</div><button class="btn primary big wide" data-act="setup-next">Planejar a próxima semana</button>`;
-    else if (w.settled === 'missed') main = `<button class="btn primary big wide" data-act="setup">Planejar nova semana</button>`;
-    else if (late.length) main = `<button class="btn primary big wide" data-day="${late[0].date}">⏰ Fazer tarefa atrasada (${DOW_LABEL[late[0].dow]})</button>`;
-    else if (td && dayState(td) === 'today' && td.printed) main = `<button class="btn gold big wide" data-check="${t}">📄 Corrigir a folha de hoje</button><button class="btn wide" data-day="${t}">📘 Fazer na tela</button>`;
-    else if (td && dayState(td) === 'today') main = `<button class="btn primary big wide" data-day="${t}">📘 Abrir a tarefa de hoje (${td.questions.length} perguntas)</button>`;
-    else if (weekAllDone(w) && t === w.end) main = `<button class="btn gold big wide" data-act="deliver">🎁 Entregar a semana (+${weekReward(w)} 🪙)</button>`;
-    else if (td && td.status === 'done') main = `<div class="notice good">✅ Tarefa de hoje feita! Que tal uns extras?</div>`;
-    else main = `<div class="notice info">Nenhuma tarefa para hoje. Aproveite para fazer extras!</div>`;
-    if (weekAllDone(w) && t === w.end && !w.settled && !main.includes('deliver')) main += `<button class="btn gold big wide" data-act="deliver">🎁 Entregar a semana (+${weekReward(w)} 🪙)</button>`;
+    if (w.settled === 'delivered') main = `<div class="notice good">🎉 Week handed in! Want to get ahead on the next one?</div><button class="btn primary big wide" data-act="setup-next">Plan next week</button>`;
+    else if (w.settled === 'missed') main = `<button class="btn primary big wide" data-act="setup">Plan a new week</button>`;
+    else if (late.length) main = `<button class="btn primary big wide" data-day="${late[0].date}">⏰ Do late task (${DOW_LABEL[late[0].dow]})</button>`;
+    else if (td && dayState(td) === 'today' && td.printed) main = `<button class="btn gold big wide" data-check="${t}">📄 Mark today’s sheet</button><button class="btn wide" data-day="${t}">📘 Do it on screen</button>`;
+    else if (td && dayState(td) === 'today') main = `<button class="btn primary big wide" data-day="${t}">📘 Open today’s task (${td.questions.length} questions)</button>`;
+    else if (weekAllDone(w) && t === w.end) main = `<button class="btn gold big wide" data-act="deliver">🎁 Hand in the week (+${weekReward(w)} 🪙)</button>`;
+    else if (td && td.status === 'done') main = `<div class="notice good">✅ Today’s task is done! How about some extras?</div>`;
+    else main = `<div class="notice info">No task today. A great time for some extras!</div>`;
+    if (weekAllDone(w) && t === w.end && !w.settled && !main.includes('deliver')) main += `<button class="btn gold big wide" data-act="deliver">🎁 Hand in the week (+${weekReward(w)} 🪙)</button>`;
 
     const ex = S.extras[t] || { sets: 0 };
     const left = Math.max(0, S.settings.extraSetsPerDay - ex.sets);
-    const sum = recoveryHtml() + ((w.summary || []).length ? `<div class="card span2 week-sum"><b>Esta semana</b>${w.summary.map(x => `<span>${SUBJ[x.subject] ? SUBJ[x.subject].icon : '•'} ${esc(x.summary)}</span>`).join('')}</div>` : '');
+    const sum = recoveryHtml() + ((w.summary || []).length ? `<div class="card span2 week-sum"><b>This week</b>${w.summary.map(x => `<span>${SUBJ[x.subject] ? SUBJ[x.subject].icon : '•'} ${esc(x.summary)}</span>`).join('')}</div>` : '');
     body = `<div class="card span2"><div class="week-strip">${strip}</div></div>${sum}
       <div class="card actions">${main}</div>${questsHtml()}
       <div class="card actions">
-        <button class="btn gold wide" data-act="extra">⭐ Exercícios extras ${left ? `(+${S.settings.extraPerCorrect} 🪙/acerto · ${left} hoje)` : '(sem moedas hoje)'}</button>
-        <div class="actions-2"><button class="btn" data-act="setup">📝 Minha semana</button><button class="btn" data-act="shop">🛒 Lojinha</button></div>
+        <button class="btn gold wide" data-act="extra">⭐ Extra exercises ${left ? `(+${S.settings.extraPerCorrect} 🪙/correct · ${left} today)` : '(no coins today)'}</button>
+        <div class="actions-2"><button class="btn" data-act="setup">📝 My week</button><button class="btn" data-act="shop">🛒 Shop</button></div>
       </div>`;
   }
   const stickers = S.owned.map(id => SHOP_ITEMS.find(i => i.id === id)).filter(i => i && i.cat === 'sticker');
-  const shelf = `<div class="card span2"><div class="row"><b>Meu álbum</b><span class="muted tiny grow">adesivos da lojinha</span></div>
-    <div class="sticker-shelf">${stickers.length ? stickers.map(s => `<span title="Adesivo">${s.emoji}</span>`).join('') : '<span class="empty">Ainda vazio — compre adesivos na lojinha! ⭐</span>'}</div></div>`;
+  const shelf = `<div class="card span2"><div class="row"><b>My album</b><span class="muted tiny grow">stickers from the shop</span></div>
+    <div class="sticker-shelf">${stickers.length ? stickers.map(s => `<span title="Sticker">${s.emoji}</span>`).join('') : '<span class="empty">Still empty — buy stickers in the shop! ⭐</span>'}</div></div>`;
   el.innerHTML = `<div class="home">${hero}${noticeHtml}${body}${shelf}</div>`;
 
   $$('[data-day]', el).forEach(b => b.onclick = () => openDay(b.dataset.day));
@@ -2270,32 +2270,32 @@ function recoveryHtml() {
   const days = Object.values(r.days).sort((a, b) => a.date < b.date ? -1 : 1);
   const left = days.filter(d => d.status !== 'done').length;
   const per = Math.round(r.pot / r.total);
-  return `<div class="card span2 recovery"><div class="rec-head"><b>⏳ Recuperação · semana ${fmtDM(r.start)}–${fmtDM(r.end)}</b><span class="rec-pot">+${recoveryLeftCoins(r)} 🪙</span></div>
-      <div class="tiny muted">Vale metade · até sexta ${fmtDM(r.until)} · ${left} de ${r.total} dia${r.total > 1 ? 's' : ''} para fazer</div>
+  return `<div class="card span2 recovery"><div class="rec-head"><b>⏳ Catch-up · week ${fmtDM(r.start)}–${fmtDM(r.end)}</b><span class="rec-pot">+${recoveryLeftCoins(r)} 🪙</span></div>
+      <div class="tiny muted">Worth half · until Friday ${fmtDM(r.until)} · ${left} of ${r.total} day${r.total > 1 ? 's' : ''} to do</div>
     <div class="rec-days">${days.map(d => d.status === 'done'
       ? `<button class="day-chip done" data-rec="${d.date}"><span class="d">${DOW_LABEL[d.dow]}</span><span class="dt">${fmtDM(d.date)}</span><span class="st">✅</span></button>`
       : `<button class="day-chip late" data-rec="${d.date}"><span class="d">${DOW_LABEL[d.dow]}</span><span class="dt">${fmtDM(d.date)}</span><span class="st">⏰</span><span class="n">≈ +${per} 🪙</span></button>`).join('')}</div></div>`;
 }
 function deadlineText(w) {
   const t = today();
-  if (w.settled === 'delivered') return `<div class="deadline">Semana ${fmtDM(w.start)}–${fmtDM(w.end)}: <b>entregue ✔</b></div>`;
-  if (w.settled === 'missed') return `<div class="deadline">A última semana não foi entregue.</div>`;
+  if (w.settled === 'delivered') return `<div class="deadline">Week ${fmtDM(w.start)}–${fmtDM(w.end)}: <b>handed in ✔</b></div>`;
+  if (w.settled === 'missed') return `<div class="deadline">Last week wasn’t handed in.</div>`;
   const left = daysBetween(t, w.end);
   const req = requiredDays(w);
   const done = req.filter(d => d.status === 'done').length;
-  return `<div class="deadline">Entrega: <b>sexta ${fmtDM(w.end)}</b> · ${left === 0 ? '<b>é hoje!</b>' : `faltam ${left} dia${left > 1 ? 's' : ''}`}</div>
-    <div class="bonus-line">🎁 <b>+${weekReward(w)}</b> na sexta ${fmtDM(w.end)} se completar todos os dias (${done} de ${req.length} feitos)</div>`;
+  return `<div class="deadline">Due: <b>Friday ${fmtDM(w.end)}</b> · ${left === 0 ? '<b>it’s today!</b>' : `${left} day${left > 1 ? 's' : ''} left`}</div>
+    <div class="bonus-line">🎁 <b>+${weekReward(w)}</b> on Friday ${fmtDM(w.end)} if you complete every day (${done} of ${req.length} done)</div>`;
 }
 function openDay(date) {
   const w = S.week; if (!w) return;
   const d = w.days[date]; if (!d) return;
   const st = dayState(d);
-  if (st === 'off') { say('Esse dia não tem tarefa nesta semana. 😉'); return; }
-  if (st === 'locked') { say(`Calma! A tarefa de ${DOW_FULL[d.dow].toLowerCase()} abre no dia ${fmtDM(d.date)}. 🔒`); return; }
+  if (st === 'off') { say('There’s no task on this day this week. 😉'); return; }
+  if (st === 'locked') { say(`Hold on! ${DOW_FULL[d.dow]}’s task opens on ${fmtDM(d.date)}. 🔒`); return; }
   if (w.settled && st === 'late') {
     const r = recoveryActive();
     if (r && r.start === w.start && r.days[date]) { VIEW.work = { kind: 'day', date, rec: true }; show('work'); return; }
-    say('Essa semana já fechou e o prazo de recuperação acabou. Bora caprichar na próxima! 💪'); return;
+    say('This week has closed and the catch-up time is over. Let’s nail the next one! 💪'); return;
   }
   VIEW.work = { kind: 'day', date };
   show('work');
@@ -2304,7 +2304,7 @@ function openDay(date) {
 function extraGroups() {
   const mine = mySubjects();
   const has = id => mine.includes(id);
-  const g = [{ id: 'mix', label: '🎲 Misturado', subjects: null }];
+  const g = [{ id: 'mix', label: '🎲 Mixed', subjects: null }];
   const used = new Set();
   const add = (id, label, list) => { const subs = list.filter(has); if (subs.length) { g.push({ id, label, subjects: subs }); subs.forEach(x => used.add(x)); } };
   add('math', '➗ Math', ['math', 'fmath']);
@@ -2336,15 +2336,15 @@ function openExtras() {
   const langs = todayLangs.length && other.length ? other : bookLangs();
   const books = S.books || {};
   const missed = (S.missed || []).length;
-  const c = openModal(`<div class="modal-head"><h3>⭐ Exercícios extras</h3><button class="btn small" data-close>Fechar</button></div>
-    <div class="modal-body extras-menu"><p class="tiny muted" style="margin:0 0 6px">${left ? `Valem <b>${S.settings.extraPerCorrect} 🪙 por acerto</b> · ${left} rodada${left > 1 ? 's' : ''} com moedas hoje.` : 'As rodadas com moedas de hoje acabaram: agora é só treino. 💪'}</p>
-    ${Server.ai && langs.length ? `<div class="xm-sec"><b>📖 Texto extra</b> <span class="tiny muted">${todayLangs.length && other.length ? `hoje o texto foi em ${todayLangs[0] === 'pt' ? 'português' : 'inglês'}, então o extra é em ${other[0] === 'pt' ? 'português' : 'inglês'}` : 'um capítulo novo + resumo + perguntas'}</span>
-      <div class="extra-grid">${langs.map(l => `<button class="btn big" data-book="${l}">${l === 'pt' ? '🇧🇷 Em português' : '🇬🇧 In English'}<span class="tiny muted">${books[l] && books[l].title ? `continua “${esc(books[l].title)}” · cap. ${books[l].chapters.length + 1}` : 'começa um livro novo'}</span></button>`).join('')}</div></div>` : ''}
-    ${missed ? `<div class="xm-sec"><b>🧠 Reforço</b> <span class="tiny muted">${missed} pergunta${missed > 1 ? 's' : ''} que você errou ou não sabia</span>
-      <div class="extra-grid one"><button class="btn big gold" data-review>🧠 Treinar o que eu errei</button></div></div>` : ''}
-    <div class="xm-sec"><b>🎲 Quiz extra</b> <span class="tiny muted">escolha a matéria</span>
+  const c = openModal(`<div class="modal-head"><h3>⭐ Extra exercises</h3><button class="btn small" data-close>Close</button></div>
+    <div class="modal-body extras-menu"><p class="tiny muted" style="margin:0 0 6px">${left ? `Worth <b>${S.settings.extraPerCorrect} 🪙 per correct answer</b> · ${left} coin round${left > 1 ? 's' : ''} left today.` : 'Today’s coin rounds are used up: now it’s just practice. 💪'}</p>
+    ${Server.ai && langs.length ? `<div class="xm-sec"><b>📖 Extra reading</b> <span class="tiny muted">${todayLangs.length && other.length ? `today’s text was in ${todayLangs[0] === 'pt' ? 'Portuguese' : 'English'}, so the extra one is in ${other[0] === 'pt' ? 'Portuguese' : 'English'}` : 'a new chapter + summary + questions'}</span>
+      <div class="extra-grid">${langs.map(l => `<button class="btn big" data-book="${l}">${l === 'pt' ? '🇧🇷 Em português' : '🇬🇧 In English'}<span class="tiny muted">${books[l] && books[l].title ? `continues “${esc(books[l].title)}” · ch. ${books[l].chapters.length + 1}` : 'starts a new book'}</span></button>`).join('')}</div></div>` : ''}
+    ${missed ? `<div class="xm-sec"><b>🧠 Practise my mistakes</b> <span class="tiny muted">${missed} question${missed > 1 ? 's' : ''} you got wrong or didn’t know</span>
+      <div class="extra-grid one"><button class="btn big gold" data-review>🧠 Practise what I got wrong</button></div></div>` : ''}
+    <div class="xm-sec"><b>🎲 Extra quiz</b> <span class="tiny muted">choose a subject</span>
       <div class="extra-grid">${extraGroups().map(g => `<button class="btn big" data-g="${g.id}">${g.label}</button>`).join('')}</div></div>
-    <div class="xm-sec"><div class="extra-grid one"><button class="btn big" data-workshop>✏️ Oficina de palavras <span class="tiny muted">caça-palavras, arco-íris e mais</span></button></div></div></div>`);
+    <div class="xm-sec"><div class="extra-grid one"><button class="btn big" data-workshop>✏️ Word workshop <span class="tiny muted">word search, rainbow words and more</span></button></div></div></div>`);
   $$('[data-g]', c).forEach(btn => btn.onclick = () => { closeModal(); startExtras(extraGroups().find(g => g.id === btn.dataset.g)); });
   $$('[data-book]', c).forEach(btn => btn.onclick = () => { closeModal(); startReading(btn.dataset.book); });
   const rv = $('[data-review]', c); if (rv) rv.onclick = () => { closeModal(); startReview(); };
@@ -2367,11 +2367,11 @@ async function startReading(lang) {
   try {
     r = await apiCall('/api/reading', { method: 'POST', timeout: 150000, data: { lang, level: S.settings.readLevel || 'at', n: readQ(lang),
       bookTitle: book ? book.title : '', chapters: book ? book.chapters : [] } });
-  } catch (e) { stop(); say(`Não consegui escrever o capítulo agora (${esc(e.message)}). Tente o quiz extra!`, { mood: 'sad' }); return; }
+  } catch (e) { stop(); say(`I couldn’t write the chapter right now (${esc(e.message)}). Try the extra quiz!`, { mood: 'sad' }); return; }
   stop();
   const subject = mySubjects().find(id => isRead(id) && SUBJ[id].lang === lang) || (lang === 'en' ? 'en_read' : 'pt_leit');
   const qs = validateImported({ questions: (r.questions || []).map(q => Object.assign({}, q, { subject })) }).ok;
-  if (!r.text || !qs.length) { say('O capítulo veio incompleto. Tente de novo! 🙂', { mood: 'think' }); return; }
+  if (!r.text || !qs.length) { say('The chapter came back incomplete. Try again! 🙂', { mood: 'think' }); return; }
   const same = book && book.title === r.bookTitle;
   S.books[lang] = { title: r.bookTitle, chapters: (same ? book.chapters : []).concat([{ title: r.title, summary: r.summary }]).slice(-12) };
   S.extra = { date: t, paid, group: 'book', status: 'todo', passage: { subject, title: `${r.bookTitle} — ${r.title}`, text: r.text },
@@ -2379,14 +2379,14 @@ async function startReading(lang) {
   save();
   VIEW.wp = null; VIEW.work = { kind: 'extra' };
   show('work');
-  if (!paid) setTimeout(() => say('Você já usou as rodadas com moedas de hoje. Esta é só para treinar! 💪'), 300);
+  if (!paid) setTimeout(() => say('You’ve already used today’s coin rounds. This one is just for practice! 💪'), 300);
 }
 // 🧠 Reforço: perguntas novas parecidas com as que errou (ou as mesmas, sem servidor).
 async function startReview() {
   const items = (S.missed || []).slice(0, 10);
   if (!items.length) return;
   const subjects = [...new Set(items.map(m => m.q.subject).filter(id => SUBJ[id]))];
-  await startExtras({ id: 'review', label: '🧠 Reforço', subjects, focus: items.map(m => `${m.q.q}${m.q.answer ? ` (resposta: ${m.q.answer})` : ''}`), review: items.map(m => m.q.q) });
+  await startExtras({ id: 'review', label: '🧠 Practise my mistakes', subjects, focus: items.map(m => `${m.q.q}${m.q.answer ? ` (resposta: ${m.q.answer})` : ''}`), review: items.map(m => m.q.q) });
 }
 async function startExtras(group) {
   const t = today();
@@ -2395,23 +2395,23 @@ async function startExtras(group) {
   const size = S.settings.extraSetSize;
   let qs = [];
   if (Server.ai) {
-    const stop = showLoading(['Inventando perguntas novas…', 'Afiando o lápis… ✏️', 'Quase lá!']);
+    const stop = showLoading(['Inventing new questions…', 'Sharpening my pencil… ✏️', 'Almost there!']);
     try {
       const r = await apiCall('/api/more', { method: 'POST', timeout: 90000, data: {
         name: S.name, n: size, objectiveOnly: true, topics: weekTopicsText(S.week),
         subjects: group.subjects || [], focus: group.focus || [], exclude: recentQuestionTexts(40) } });
       qs = validateImported(r).ok.filter(q => q.type !== 'open' && (!group.subjects || group.subjects.includes(q.subject)));
-    } catch (e) { toast('Lumi offline: usei perguntas do próprio app.'); }
+    } catch (e) { toast('Lumi is offline: I used the app’s own questions.'); }
     finally { stop(); }
   }
   if (qs.length < 2 && group.review) qs = (S.missed || []).filter(m => group.review.includes(m.q.q) && m.q.type !== 'open').map(m => Object.assign({}, m.q));
   if (qs.length < 2) qs = localExtras(size, group.subjects);
-  if (!qs.length) { say('Não consegui criar extras dessa matéria agora. Tente outra! 🙂', { mood: 'think' }); return; }
+  if (!qs.length) { say('I couldn’t create extras for this subject right now. Try another one! 🙂', { mood: 'think' }); return; }
   S.extra = { date: t, paid, group: group.id, review: group.review || null, status: 'todo', questions: qs.slice(0, size).map((q, j) => Object.assign({ lang: SUBJ[q.subject].lang }, q, { id: `x-${j}-${uid()}` })), answers: {}, result: null };
   save();
   VIEW.wp = null; VIEW.work = { kind: 'extra' };
   show('work');
-  if (!paid) setTimeout(() => say('Você já usou as rodadas com moedas de hoje. Esta é só para treinar! 💪'), 300);
+  if (!paid) setTimeout(() => say('You’ve already used today’s coin rounds. This one is just for practice! 💪'), 300);
 }
 function localExtras(size, subjects) {
   const t = today();
@@ -2455,14 +2455,14 @@ function renderSetup() {
       <textarea id="tp-${s.id}" data-sid="${s.id}" placeholder="${esc(s.ph)}">${esc(topics[s.id] || '')}</textarea></div>`).join('');
   const pending = (S.pendingImport || []).length;
   el.innerHTML = `<div class="setup">
-    ${Server.ai ? '<div class="notice info">Modo por matéria (sem o Claude). <button class="btn small" data-act="ai">✨ Voltar ao modo Lumi</button></div>' : (Server.on ? '' : '<div class="notice info">📴 Sem conexão com o servidor: as perguntas vêm do próprio app.</div>')}
+    ${Server.ai ? '<div class="notice info">Subject-by-subject mode (without Claude). <button class="btn small" data-act="ai">✨ Back to Lumi mode</button></div>' : (Server.on ? '' : '<div class="notice info">📴 No connection to the server: the questions come from the app itself.</div>')}
     <div class="row wrap"><div class="seg"><button data-tab="pt" class="${VIEW.setupTab === 'pt' ? 'on' : ''}">🇧🇷 Em português</button><button data-tab="en" class="${VIEW.setupTab === 'en' ? 'on' : ''}">🇬🇧 In English</button></div>
-      <span class="muted tiny grow">O que você aprendeu na escola esta semana?</span></div>
+      <span class="muted tiny grow">What did you learn at school this week?</span></div>
     ${wandBarHtml()}
     <div class="topic-grid">${fields}</div>
     ${countsAndCycleHtml(editing, nFill, false)}
-    ${pending ? `<div class="notice info">📥 ${pending} perguntas importadas pelos pais serão incluídas.</div>` : ''}
-    <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? 'Atualizar tarefas ✨' : 'Criar tarefas da semana ✨'}</button></div>
+    ${pending ? `<div class="notice info">📥 ${pending} questions imported by your parents will be included.</div>` : ''}
+    <div class="row"><button class="btn" data-act="cancel">Back</button><button class="btn primary grow big" data-act="gen">${editing ? 'Update tasks ✨' : 'Create this week’s tasks ✨'}</button></div>
   </div>`;
   $$('[data-tab]', el).forEach(b => b.onclick = () => { collectDraft(); VIEW.setupTab = b.dataset.tab; renderSetup(); });
   $$('textarea[data-sid]', el).forEach(ta => ta.oninput = () => { VIEW.draftTopics[ta.dataset.sid] = ta.value; });
@@ -2509,26 +2509,26 @@ function setupCycleDefaults() {
 }
 function qTotText(nThemes, rp) {
   const tot = Object.values(dayCounts(nThemes, rp)); const lo = Math.min(...tot), hi = Math.max(...tot);
-  return `≈ ${lo}${hi > lo ? '–' + hi : ''} por dia · ${nThemes} tema${nThemes > 1 ? 's' : ''} × ${perTheme()}${rp && rp.some(Boolean) ? ' + texto do dia' : ''}`;
+  return `≈ ${lo}${hi > lo ? '–' + hi : ''} per day · ${nThemes} topic${nThemes > 1 ? 's' : ''} × ${perTheme()}${rp && rp.some(Boolean) ? ' + today’s text' : ''}`;
 }
 function rqSelect(l, label, id = '') {
   const v = readQSet(l);
-  return `<label class="qstep"><span class="qs-lbl">${label}</span><select ${id ? `id="${id}"` : `data-rq="${l}"`} class="qs-sel"><option value="auto" ${v === 'auto' ? 'selected' : ''}>Automático (${readQAuto()})</option>${[5, 6, 7, 8].map(n => `<option value="${n}" ${v === n ? 'selected' : ''}>${n} perguntas</option>`).join('')}</select></label>`;
+  return `<label class="qstep"><span class="qs-lbl">${label}</span><select ${id ? `id="${id}"` : `data-rq="${l}"`} class="qs-sel"><option value="auto" ${v === 'auto' ? 'selected' : ''}>Automatic (${readQAuto()})</option>${[5, 6, 7, 8].map(n => `<option value="${n}" ${v === n ? 'selected' : ''}>${n} questions</option>`).join('')}</select></label>`;
 }
 function countsAndCycleHtml(editing, nThemes, withReading) {
   const t = today(); const w = S.week;
   const thisStart = cycleStartOf(t); const nextStart = addDays(thisStart, 7);
   const rp = withReading ? readingPlan() : null;
   const langs = rp ? [...new Set(rp.filter(Boolean).map(id => SUBJ[id].lang))] : [];
-  const step = (k, label, val) => `<div class="qstep"><span class="qs-lbl">${label}</span><span class="qs-pm"><button type="button" data-qs="${k}" data-d="-1" aria-label="menos">−</button><b>${val}</b><button type="button" data-qs="${k}" data-d="1" aria-label="mais">+</button></span></div>`;
-  const qbox = `<div class="qcount"><div class="row wrap"><b>Perguntas</b><span class="muted tiny grow" id="qtot">${qTotText(nThemes, rp)}</span></div>
-    <div class="qsteps">${step('theme', '🗂️ Por tema', perTheme())}${langs.map(l => rqSelect(l, l === 'pt' ? '📖 Texto em português' : '📖 Texto em inglês')).join('')}</div>
-    ${langs.length ? `<div class="tiny muted">${langs.length > 1 ? 'Cada dia tem um texto, alternando português e inglês.' : `Cada dia tem um texto em ${langs[0] === 'pt' ? 'português' : 'inglês'}.`} 5 a 8 perguntas (1 de resumo + compreensão); no automático, quanto maior e mais complexo o texto, mais perguntas.</div>` : ''}</div>`;
+  const step = (k, label, val) => `<div class="qstep"><span class="qs-lbl">${label}</span><span class="qs-pm"><button type="button" data-qs="${k}" data-d="-1" aria-label="less">−</button><b>${val}</b><button type="button" data-qs="${k}" data-d="1" aria-label="more">+</button></span></div>`;
+  const qbox = `<div class="qcount"><div class="row wrap"><b>Questions</b><span class="muted tiny grow" id="qtot">${qTotText(nThemes, rp)}</span></div>
+    <div class="qsteps">${step('theme', '🗂️ Per topic', perTheme())}${langs.map(l => rqSelect(l, l === 'pt' ? '📖 Portuguese text' : '📖 English text')).join('')}</div>
+    ${langs.length ? `<div class="tiny muted">${langs.length > 1 ? 'Each day has a text, alternating Portuguese and English.' : `Each day has a text in ${langs[0] === 'pt' ? 'Portuguese' : 'English'}.`} 5 to 8 questions (1 summary + comprehension); on Automatic, the longer and harder the text, the more questions.</div>` : ''}</div>`;
   const cycle = editing
-    ? `<div class="notice info">Editando a semana ${fmtDM(w.start)}–${fmtDM(w.end)}. Só os dias <b>ainda não começados</b> serão refeitos.</div>`
+    ? `<div class="notice info">Editing the week ${fmtDM(w.start)}–${fmtDM(w.end)}. Only the days <b>not started yet</b> will be redone.</div>`
     : `<div class="radio-row">
-        <label><input type="radio" name="cyc" value="this" ${VIEW.setupCycle === 'this' ? 'checked' : ''} ${(w && w.start === thisStart && w.settled) ? 'disabled' : ''}> Esta semana (hoje → sex ${fmtDM(addDays(thisStart, 6))})</label>
-        <label><input type="radio" name="cyc" value="next" ${VIEW.setupCycle === 'next' ? 'checked' : ''}> Próxima semana (sáb ${fmtDM(nextStart)} → sex ${fmtDM(addDays(nextStart, 6))})</label></div>`;
+        <label><input type="radio" name="cyc" value="this" ${VIEW.setupCycle === 'this' ? 'checked' : ''} ${(w && w.start === thisStart && w.settled) ? 'disabled' : ''}> This week (today → Fri ${fmtDM(addDays(thisStart, 6))})</label>
+        <label><input type="radio" name="cyc" value="next" ${VIEW.setupCycle === 'next' ? 'checked' : ''}> Next week (Sat ${fmtDM(nextStart)} → Fri ${fmtDM(addDays(nextStart, 6))})</label></div>`;
   return qbox + cycle;
 }
 function bindCountsAndCycle(el, rerender) {
@@ -2554,7 +2554,7 @@ function renderSetupAI() {
   if (!S.settings.year) { S.settings.year = 'Y5'; save(); }
   if (!VIEW.draftImages) VIEW.draftImages = [];
   if (!VIEW.openSubj) VIEW.openSubj = {};
-  const thumbs = VIEW.draftImages.map((im, i) => `<div class="thumb"><img src="data:${im.type};base64,${im.data}" alt="Foto ${i + 1}"><button data-rm="${i}" aria-label="Remover foto">✕</button></div>`).join('');
+  const thumbs = VIEW.draftImages.map((im, i) => `<div class="thumb"><img src="data:${im.type};base64,${im.data}" alt="Photo ${i + 1}"><button data-rm="${i}" aria-label="Remove photo">✕</button></div>`).join('');
   const mine = mySubjects().map(id => SUBJ[id]);
   const filled = mine.filter(sb => subjFilled(sb.id)).length;
   const nThemesAI = () => mySubjects().filter(id => subjFilled(id) && !(S.settings.dailyReading && isRead(id))).length || 4;
@@ -2568,7 +2568,7 @@ function renderSetupAI() {
         ? `<div class="chips-lbl tiny muted">${sb.lang === 'pt' ? 'Nível do texto que a Lumi vai escrever:' : 'Level of the text Lumi will write:'}</div><div class="chips">${READ_LEVELS.map(([k, l]) => `<button type="button" class="chip ${opt === k ? 'on' : ''}" data-opt="${sb.id}" data-v="${k}">${l}</button>`).join('')}</div>`
         : '';
     const ph = isSpell(sb.id) ? SPELL_PH[sb.id][opt] : isRead(sb.id) ? (sb.lang === 'pt' ? `Opcional: ${sb.id === 'pt_lit' ? 'obra ou escola literária' : 'livro que está lendo'}, tema que você gosta…` : `Optional: ${sb.id === 'en_lit' ? 'set text, poem or play' : 'book you are reading'}, a topic you like…`) : (AI_PH[sb.id] || sb.ph);
-    const preview = txt.trim() ? txt.trim().slice(0, 50) + (txt.trim().length > 50 ? '…' : '') : (isSpell(sb.id) && opt === 'auto') ? '🎲 a Lumi escolhe' : (isRead(sb.id) && opt) ? READ_LEVELS.find(x => x[0] === opt)[1] : (sb.lang === 'pt' ? 'toque para escrever' : 'tap to write');
+    const preview = txt.trim() ? txt.trim().slice(0, 50) + (txt.trim().length > 50 ? '…' : '') : (isSpell(sb.id) && opt === 'auto') ? '🎲 Lumi chooses' : (isRead(sb.id) && opt) ? READ_LEVELS.find(x => x[0] === opt)[1] : (sb.lang === 'pt' ? 'toque para escrever' : 'tap to write');
     return `<details class="subj-acc" style="--subj:${sb.color}" data-sid="${sb.id}" ${VIEW.openSubj[sb.id] ? 'open' : ''}>
       <summary><span class="sa-ic">${sb.icon}</span><span class="sa-name">${esc(sb.name)}</span>
         <span class="sa-prev">${esc(preview)}</span>
@@ -2577,33 +2577,33 @@ function renderSetupAI() {
   };
   el.innerHTML = `<div class="setup">
     <div class="ai-box">
-      <label class="ai-label" for="year">🎓 Ano escolar</label>
+      <label class="ai-label" for="year">🎓 School year</label>
       <select id="year" class="year-sel">
-        <option value="">Selecione o ano…</option>
-        ${SCHOOL_YEARS.map(([id, uk, br, age]) => `<option value="${id}" ${S.settings.year === id ? 'selected' : ''}>${uk} · ${br} · ${age} anos</option>`).join('')}
+        <option value="">Select your year…</option>
+        ${SCHOOL_YEARS.map(([id, uk, br, age]) => `<option value="${id}" ${S.settings.year === id ? 'selected' : ''}>${uk} · ${br} · ${age} years old</option>`).join('')}
       </select>
-      <div class="row wrap tiny muted" style="margin-top:6px"><span class="grow">${S.settings.year ? `Etapa: <b>${STAGE_LABEL[stageOf(S.settings.year)]}</b> · ${mine.length} matérias${S.settings.subjectsCustom ? ' (escolhidas por você)' : ''}` : ''}</span>
-        <button type="button" class="btn small" data-act="pick-subj">📚 Escolher matérias</button></div>
+      <div class="row wrap tiny muted" style="margin-top:6px"><span class="grow">${S.settings.year ? `Stage: <b>${STAGE_LABEL[stageOf(S.settings.year)]}</b> · ${mine.length} subjects${S.settings.subjectsCustom ? ' (chosen by you)' : ''}` : ''}</span>
+        <button type="button" class="btn small" data-act="pick-subj">📚 Choose subjects</button></div>
     </div>
     <div class="ai-box">
-      <div class="ai-label">🏫 O que você está aprendendo em cada matéria? <span class="tiny muted">(${filled} de ${mine.length} preenchidas · pode escrever do seu jeito)</span></div>
+      <div class="ai-label">🏫 What are you learning in each subject? <span class="tiny muted">(${filled} of ${mine.length} filled in · write it your own way)</span></div>
       ${wandBarHtml()}
       ${['pt', 'en'].map(gp => { const l = mine.filter(x => x.group === gp); return l.length ? `<div class="acc-group"><div class="acc-title">${gp === 'pt' ? '🇧🇷 Em português' : '🇬🇧 In English'}</div>${l.map(section).join('')}</div>` : ''; }).join('')}
-      <div class="row wrap tiny muted"><span>🎤 Dica: toque no microfone do teclado para falar em vez de escrever. Matéria em branco não entra na semana.</span></div>
+      <div class="row wrap tiny muted"><span>🎤 Hint: tap the microphone on your keyboard to speak instead of typing. Blank subjects are left out of the week.</span></div>
       <div class="row wrap">
-        <label class="btn small">📷 Foto do worksheet ou da agenda<input type="file" id="ph" accept="image/*" multiple hidden></label>
-        <span class="tiny muted">opcional · até 4 fotos</span>
+        <label class="btn small">📷 Photo of the worksheet or planner<input type="file" id="ph" accept="image/*" multiple hidden></label>
+        <span class="tiny muted">optional · up to 4 photos</span>
       </div>
       ${thumbs ? `<div class="thumbs">${thumbs}</div>` : ''}
     </div>
     ${countsAndCycleHtml(editing, nThemesAI(), true)}
-    <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? '✨ Atualizar a semana' : '✨ Criar minha semana com a Lumi'}</button></div>
-    <button class="btn ghost small" data-act="subjects">Prefiro o gerador do próprio app (sem o Claude)</button>
+    <div class="row"><button class="btn" data-act="cancel">Back</button><button class="btn primary grow big" data-act="gen">${editing ? '✨ Update the week' : '✨ Create my week with Lumi'}</button></div>
+    <button class="btn ghost small" data-act="subjects">I’d rather use the app’s own generator (without Claude)</button>
   </div>`;
   $('#year', el).onchange = e => { const before = stageOf(S.settings.year); S.settings.year = e.target.value; touch('settings'); save();
     if (Server.me && Server.childId) apiCall(`/api/family/children/${Server.childId}`, { method: 'PATCH', data: { year: e.target.value } }).then(refreshMe).catch(() => {});
     renderSetupAI();
-    if (e.target.value && stageOf(e.target.value) !== before && !S.settings.subjectsCustom) say(`Mudei as matérias para as de <b>${STAGE_LABEL[stageOf(e.target.value)]}</b>. Toque em 📚 para ajustar. 🦉`); };
+    if (e.target.value && stageOf(e.target.value) !== before && !S.settings.subjectsCustom) say(`I switched your subjects to the <b>${STAGE_LABEL[stageOf(e.target.value)]}</b> ones. Tap 📚 to adjust them. 🦉`); };
   $('[data-act=pick-subj]', el).onclick = () => pickSubjects(() => renderSetupAI());
   $$('details.subj-acc', el).forEach(d => d.addEventListener('toggle', () => {
     VIEW.openSubj[d.dataset.sid] = d.open;
@@ -2622,7 +2622,7 @@ function renderSetupAI() {
   });
   $('#ph', el).onchange = async e => {
     const files = [...e.target.files].slice(0, 4 - VIEW.draftImages.length);
-    for (const f of files) { try { VIEW.draftImages.push(await fileToJpeg(f, 1600)); } catch (err) { toast('Não consegui ler essa foto.'); } }
+    for (const f of files) { try { VIEW.draftImages.push(await fileToJpeg(f, 1600)); } catch (err) { toast('I couldn’t read that photo.'); } }
     renderSetupAI();
   };
   $$('[data-rm]', el).forEach(btn => btn.onclick = () => { VIEW.draftImages.splice(Number(btn.dataset.rm), 1); renderSetupAI(); });
@@ -2633,8 +2633,8 @@ function renderSetupAI() {
   $('[data-act=gen]', el).onclick = () => generateWithClaude(editing);
 }
 // Ortografia/Spelling: como escolher as palavras. Leitura: nível do texto que a Lumi escreve.
-const SPELL_MODES = [['list', '📝 Lista'], ['theme', '🎯 Tema'], ['auto', '🎲 A Lumi escolhe']];
-const READ_LEVELS = [['below', '⬇️ Mais fácil'], ['at', '🎯 No meu nível'], ['above', '⬆️ Acima'], ['way', '🚀 Bem acima']];
+const SPELL_MODES = [['list', '📝 List'], ['theme', '🎯 Topic'], ['auto', '🎲 Lumi chooses']];
+const READ_LEVELS = [['below', '⬇️ Easier'], ['at', '🎯 At my level'], ['above', '⬆️ Above'], ['way', '🚀 Way above']];
 const SPELL_TXT = { list: 'lista de palavras', theme: 'tema', auto: 'a Lumi escolhe as palavras' };
 const READ_TXT = { below: 'mais fácil (abaixo do ano dela)', at: 'no meu nível', above: 'acima do nível', way: 'bem acima do nível' };
 const SPELL_PH = {
@@ -2654,12 +2654,12 @@ function pickSubjects(after) {
   const ib = stage === 'ib';
   const lv = Object.assign({}, S.settings.ibLevels || {});
   const hl = id => `<span class="hlsl" data-hl="${id}"><button type="button" data-v="HL" class="${lv[id] === 'HL' ? 'on' : ''}">HL</button><button type="button" data-v="SL" class="${lv[id] === 'SL' ? 'on' : ''}">SL</button></span>`;
-  const row = sb => `<label class="pick ${sel.has(sb.id) ? 'on' : ''}" style="--subj:${sb.color}"><input type="checkbox" value="${sb.id}" ${sel.has(sb.id) ? 'checked' : ''}><span>${sb.icon}</span> <span class="grow">${esc(sb.name)}${STAGE_SUBJECTS[stage].includes(sb.id) ? ' <i class="tiny muted">sugerida</i>' : ''}</span>${ib && sb.id !== 'tok' ? hl(sb.id) : ''}</label>`;
-  const c = openModal(`<div class="modal-head"><h3>📚 Minhas matérias</h3><button class="btn small" data-close>Fechar</button></div>
-    <div class="modal-body"><p class="tiny muted" style="margin:0 0 8px">Marque as matérias que você faz${S.settings.year ? ` (${esc((SCHOOL_YEARS.find(y => y[0] === S.settings.year) || [])[1] || '')} · ${STAGE_LABEL[stage]})` : ''}. Só elas aparecem no planejamento e nos extras.${ib ? ' No IB, marque também se é <b>HL</b> (Higher Level) ou <b>SL</b> (Standard Level) — a Lumi ajusta a dificuldade.' : ''}</p>
+  const row = sb => `<label class="pick ${sel.has(sb.id) ? 'on' : ''}" style="--subj:${sb.color}"><input type="checkbox" value="${sb.id}" ${sel.has(sb.id) ? 'checked' : ''}><span>${sb.icon}</span> <span class="grow">${esc(sb.name)}${STAGE_SUBJECTS[stage].includes(sb.id) ? ' <i class="tiny muted">suggested</i>' : ''}</span>${ib && sb.id !== 'tok' ? hl(sb.id) : ''}</label>`;
+  const c = openModal(`<div class="modal-head"><h3>📚 My subjects</h3><button class="btn small" data-close>Close</button></div>
+    <div class="modal-body"><p class="tiny muted" style="margin:0 0 8px">Tick the subjects you take${S.settings.year ? ` (${esc((SCHOOL_YEARS.find(y => y[0] === S.settings.year) || [])[1] || '')} · ${STAGE_LABEL[stage]})` : ''}. Only these appear in planning and extras.${ib ? ' For the IB, also mark whether each one is <b>HL</b> (Higher Level) or <b>SL</b> (Standard Level) — Lumi adjusts the difficulty.' : ''}</p>
       <div class="acc-title">🇧🇷 Em português</div><div class="pick-grid">${SUBJECTS.filter(x => x.group === 'pt' && !x.retired).map(row).join('')}</div>
       <div class="acc-title">🇬🇧 In English</div><div class="pick-grid">${SUBJECTS.filter(x => x.group === 'en' && !x.retired).map(row).join('')}</div></div>
-    <div class="modal-foot"><button class="btn" data-act="sugg">↺ Usar as sugeridas</button><button class="btn primary grow" data-act="ok">Salvar</button></div>`);
+    <div class="modal-foot"><button class="btn" data-act="sugg">↺ Use suggested</button><button class="btn primary grow" data-act="ok">Save</button></div>`);
   $$('input[type=checkbox]', c).forEach(ch => ch.onchange = () => ch.closest('label').classList.toggle('on', ch.checked));
   $$('.hlsl button', c).forEach(b => b.onclick = e => {
     e.preventDefault(); e.stopPropagation();
@@ -2668,10 +2668,10 @@ function pickSubjects(after) {
     $$('button', box).forEach(x => x.classList.toggle('on', x.dataset.v === lv[id]));
     const ch = box.closest('label').querySelector('input'); if (lv[id] && !ch.checked) { ch.checked = true; ch.closest('label').classList.add('on'); }
   });
-  $('[data-act=sugg]', c).onclick = () => { S.settings.subjectsCustom = false; delete S.settings.subjects; save(); closeModal(); toast('Matérias sugeridas para o ano.'); after && after(); };
+  $('[data-act=sugg]', c).onclick = () => { S.settings.subjectsCustom = false; delete S.settings.subjects; save(); closeModal(); toast('Suggested subjects for your year.'); after && after(); };
   $('[data-act=ok]', c).onclick = () => {
     const ids = $$('input[type=checkbox]', c).filter(ch => ch.checked).map(ch => ch.value);
-    if (!ids.length) { toast('Escolha pelo menos uma matéria.'); return; }
+    if (!ids.length) { toast('Choose at least one subject.'); return; }
     S.settings.subjects = ids; S.settings.subjectsCustom = true; touch('settings');
     if (ib) S.settings.ibLevels = Object.fromEntries(Object.entries(lv).filter(([k, v]) => v && ids.includes(k)));
     save(); closeModal(); after && after();
@@ -2704,8 +2704,8 @@ async function generateWithClaude(editing) {
   });
   const text = Object.values(lineOf).join('\n');
   const images = VIEW.draftImages || [];
-  if (!S.settings.year) { say('Primeiro escolha o <b>ano escolar</b> lá em cima. 🎓', { mood: 'think' }); $('#year').focus(); return; }
-  if (!text && !images.length) { say('Abra pelo menos uma matéria e me conta o que você está aprendendo (ou manda uma foto do worksheet)! ✍️', { mood: 'think' }); return; }
+  if (!S.settings.year) { say('First choose your <b>school year</b> at the top. 🎓', { mood: 'think' }); $('#year').focus(); return; }
+  if (!text && !images.length) { say('Open at least one subject and tell me what you’re learning (or send a photo of the worksheet)! ✍️', { mood: 'think' }); return; }
   const readPlan = Server.ai ? readingPlan() : CYCLE.map(() => null);
   const nSubj = mineList.filter(sb => subjFilled(sb.id) && !(S.settings.dailyReading && isRead(sb.id))).length || 4;
   const counts = dayCounts(nSubj, readPlan);
@@ -2724,8 +2724,8 @@ async function generateWithClaude(editing) {
   const dates = CYCLE.map((_, i) => addDays(start, i)).filter(d => d >= from && (!redo || redo.includes(d)));
   const days = dates.map(d => { const dk = dowOf(d); const rs = readPlan[CYCLE.indexOf(dk)];
     return { dow: dk, label: `${DOW_FULL[dk]} ${fmtDM(d)}`, n: counts[dk] || 0, read: rs ? { subject: rs, level: (VIEW.draftOpt || {})[rs] || S.settings.readLevel || 'at', n: readQ(SUBJ[rs].lang, (VIEW.draftOpt || {})[rs]) } : null }; }).filter(d => d.n > 0);
-  if (!days.length) { say('Nenhum dia com perguntas. Aumente a quantidade em algum dia. 🙂'); return; }
-  const stop = showLoading(['Lendo o que você contou… 📖', 'Separando por matéria… 🗂️', 'Inventando perguntas… ✏️', 'Caprichando nas dicas… 💡', 'Organizando os dias da semana… 📅', 'Escrevendo os capítulos do livro da semana… 📚', 'Quase pronto! 🦉']);
+  if (!days.length) { say('There are no days with questions. Add some questions to a day. 🙂'); return; }
+  const stop = showLoading(['Reading what you told me… 📖', 'Sorting by subject… 🗂️', 'Inventing questions… ✏️', 'Polishing the hints… 💡', 'Organising the days of the week… 📅', 'Writing the chapters of this week’s book… 📚', 'Almost ready! 🦉']);
   let res;
   try {
     const base = { name: S.name, text, images, days, perSubject: perTheme(), previous: S.week && S.week.summary ? S.week.summary.map(x => `${x.subject}: ${x.summary}`).join(' | ') : '' };
@@ -2733,11 +2733,11 @@ async function generateWithClaude(editing) {
     res = info && Object.keys(info.shared).length ? await planWithBank(base, info, lineOf) : await planInSteps(base);
   } catch (e) {
     stop();
-    say(`Ops, não consegui falar com o Claude agora (${esc(e.message)}). Tente de novo em instantes, ou use o modo por matéria.`, { mood: 'sad', ms: 12000 });
+    say(`Oops, I couldn’t reach Claude right now (${esc(e.message)}). Try again in a moment, or use subject-by-subject mode.`, { mood: 'sad', ms: 12000 });
     return;
   }
   stop();
-  if (res.failedDays && res.failedDays.length) setTimeout(() => say(`${res.failedDays.length === 1 ? 'Um dia foi criado' : `${res.failedDays.length} dias foram criados`} pelo gerador do próprio app (o Claude demorou). Dá para refazer depois em Minha semana. 🙂`, { mood: 'think', ms: 9000 }), 9500);
+  if (res.failedDays && res.failedDays.length) setTimeout(() => say(`${res.failedDays.length === 1 ? 'One day was created' : `${res.failedDays.length} days were created`} by the app’s own generator (Claude took too long). You can redo it later in My week. 🙂`, { mood: 'think', ms: 9000 }), 9500);
   const valid = validateImported({ questions: (res.questions || []).map(q => Object.assign({}, q, { options: q.type === 'mc' ? q.options : undefined, accept: (q.accept || []).filter(Boolean) })) }).ok;
   const topics = {};
   (res.topics || []).forEach(x => { if (SUBJ[x.subject]) topics[x.subject] = (topics[x.subject] ? topics[x.subject] + '; ' : '') + x.summary; });
@@ -2762,7 +2762,7 @@ async function generateWithClaude(editing) {
   save();
   const total = requiredDays(S.week).reduce((a, d) => a + d.questions.length, 0);
   show('home');
-  say(`${esc(res.message || 'Prontinho!')} Criei <b>${total}</b> perguntas. ${S.week.start > t ? `Elas começam no sábado ${fmtDM(S.week.start)}.` : ''}`, { mood: 'wow', ms: 9000 });
+  say(`${esc(res.message || 'All done!')} I created <b>${total}</b> questions. ${S.week.start > t ? `They start on Saturday ${fmtDM(S.week.start)}.` : ''}`, { mood: 'wow', ms: 9000 });
 }
 // Planejamento em etapas: 1) roteiro da semana (assuntos, subtemas por dia, sinopse dos capítulos); 2) cada dia em paralelo.
 // Assim cada chamada ao Claude é curta (sem tempo esgotado) e a criança vê o progresso.
@@ -2771,7 +2771,7 @@ async function planInSteps(base) {
   const outline = await apiCall('/api/plan-outline', { method: 'POST', timeout: 150000, data: base });
   const dayLabel = d => d.label || d.dow;
   let done = 0; const total = base.days.length;
-  const tick = () => prog(`Criando os dias com a Lumi… ${done} de ${total} prontos ✏️`);
+  const tick = () => prog(`Creating the days with Lumi… ${done} of ${total} ready ✏️`);
   tick();
   const bookFor = d => { if (!d.read) return null; const b = (outline.books || []).find(x => x.subject === d.read.subject); if (!b) return null;
     const i = b.chapters.findIndex(c => c.day === d.dow); return { title: b.title, premise: b.premise, chapter: b.chapters[i] || { title: '', synopsis: '' }, before: i > 0 ? b.chapters.slice(0, i) : [] }; };
@@ -2787,7 +2787,7 @@ async function planInSteps(base) {
   };
   const results = await Promise.all(base.days.map(runDay));
   const ok = results.filter(x => x.r);
-  if (!ok.length) throw results[0].err || new Error('o Claude não respondeu');
+  if (!ok.length) throw results[0].err || new Error('Claude did not respond');
   return {
     topics: outline.topics || [], message: outline.message || '',
     questions: ok.flatMap(x => (x.r.questions || []).map(q => Object.assign({}, q, { day: x.d.dow }))),
@@ -2817,7 +2817,7 @@ async function bankPlanInfo(subjTexts, subjOpts, images) {
 }
 async function planWithBank(base, info, lineOf) {
   const prog = t => { const m = $('#ld-msg'); if (m) m.textContent = t; };
-  prog('Procurando no banco da Lumi… 📚');
+  prog('Searching Lumi’s question bank… 📚');
   const daily = !!S.settings.dailyReading;
   const mixIds = mySubjects().filter(id => subjFilled(id) && !(daily && isRead(id)));
   // quantas perguntas de cada matéria em cada dia (a leitura do dia leva 3)
@@ -2837,7 +2837,7 @@ async function planWithBank(base, info, lineOf) {
   const books = Object.assign({}, drawn.books || {});
   // o que falta: perguntas por matéria, livros e capítulos, e a parte personalizada — tudo em paralelo
   const jobs = []; let done = 0, fromBank = sharedMix.reduce((a, id) => a + got[id].length, 0), created = 0;
-  const tick = () => prog(`Completando com a Lumi… ${done} de ${jobs.length} prontos ✏️`);
+  const tick = () => prog(`Filling in the rest with Lumi… ${done} of ${jobs.length} ready ✏️`);
   const job = fn => jobs.push(fn);
   sharedMix.forEach(id => {
     const miss = need(id) - got[id].length; if (miss <= 0) return;
@@ -2890,7 +2890,7 @@ async function planWithBank(base, info, lineOf) {
   const topics = sharedMix.concat(readSubs).map(id => ({ subject: id, summary: info.shared[id].row.topic }));
   return {
     topics: topics.concat(pr ? pr.topics.filter(t => !info.shared[t.subject]) : []),
-    message: (pr && pr.message) || 'Sua semana está pronta! Bora aprender? 🦉',
+    message: (pr && pr.message) || 'Your week is ready! Shall we learn? 🦉',
     questions: questions.concat(pr ? pr.questions : []),
     passages: passages.concat(pr ? pr.passages : []),
     failedDays: pr ? pr.failedDays : (personalRes && personalRes.error ? pDays.map(d => d.label) : []),
@@ -2903,7 +2903,7 @@ async function generateFromSetup(editing) {
   const topics = {}; SUBJECTS.forEach(s => { topics[s.id] = (VIEW.draftTopics[s.id] || '').trim(); });
   const counts = dayCounts(mySubjects().filter(id => topics[id]).length || 3, null);
   const hasAny = Object.values(topics).some(Boolean) || (S.pendingImport || []).length || (editing && (S.week.imported || []).length);
-  if (!hasAny) { say('Escreva pelo menos uma matéria para eu criar as tarefas! ✍️'); return; }
+  if (!hasAny) { say('Write at least one subject so I can create the tasks! ✍️'); return; }
   const t = today();
   if (editing) {
     const w = S.week;
@@ -2926,7 +2926,7 @@ async function generateFromSetup(editing) {
   save();
   const total = requiredDays(S.week).reduce((a, d) => a + d.questions.length, 0);
   show('home');
-  say(`Pronto! Criei <b>${total}</b> perguntas para a semana. 🎉 ${S.week.start > t ? `Elas começam no sábado ${fmtDM(S.week.start)}.` : 'Vamos começar pela de hoje?'}`, { mood: 'wow' });
+  say(`Done! I made <b>${total}</b> questions for the week. 🎉 ${S.week.start > t ? `They start on Saturday ${fmtDM(S.week.start)}.` : 'Shall we start with today’s?'}`, { mood: 'wow' });
 }
 
 /* ---------- Folha de exercícios (dia ou extras) — SEM ROLAGEM ---------- */
@@ -2935,10 +2935,10 @@ function workCtx() {
   if (!v) return null;
   if (v.kind === 'extra') {
     const x = S.extra; if (!x) return null;
-    return { kind: 'extra', title: x.group === 'book' ? '📖 Livro extra' : x.group === 'review' ? '🧠 Reforço' : '⭐ Exercícios extras', obj: x, questions: x.questions, answers: x.answers, done: x.status === 'done', marks: {}, verdicts: x.verdicts || {} };
+    return { kind: 'extra', title: x.group === 'book' ? '📖 Extra reading' : x.group === 'review' ? '🧠 Practise my mistakes' : '⭐ Extra exercises', obj: x, questions: x.questions, answers: x.answers, done: x.status === 'done', marks: {}, verdicts: x.verdicts || {} };
   }
   const d = v.rec ? (S.recovery && S.recovery.days[v.date]) : (S.week && S.week.days[v.date]); if (!d) return null;
-  return { kind: 'day', rec: !!v.rec, title: `${v.rec ? '⏳ Recuperação · ' : ''}${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, obj: d, questions: d.questions, answers: d.answers, done: d.status === 'done', marks: d.marks || {}, verdicts: d.verdicts || {} };
+  return { kind: 'day', rec: !!v.rec, title: `${v.rec ? '⏳ Catch-up · ' : ''}${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, obj: d, questions: d.questions, answers: d.answers, done: d.status === 'done', marks: d.marks || {}, verdicts: d.verdicts || {} };
 }
 // Correção: usa o veredito da foto/autocorreção quando existir; senão compara com o gabarito.
 function verdict(c, q) {
@@ -3008,27 +3008,27 @@ function renderHub(c, themes) {
     const topic = themeTopic(c, t.id);
     return `<button type="button" class="theme-card ${a === n ? 'done' : ''} ${!c.done && next && next.id === t.id ? 'next' : ''}" data-theme="${t.id}" style="--subj:${sb.color}">
       <span class="tc-top"><span class="tc-ic">${t.reading ? '📖' : sb.icon}</span><span class="tc-name">${esc(t.reading ? (sb.lang === 'en' ? 'Today\'s reading' : 'Leitura do dia') : sb.name)}</span><span class="tc-st">${st}</span></span>
-      <span class="tc-meta">${t.reading ? (sb.lang === 'en' ? 'text + ' : 'texto + ') : ''}${n} ${n === 1 ? 'pergunta' : 'perguntas'}</span>
+      <span class="tc-meta">${t.reading ? 'text + ' : ''}${n} ${n === 1 ? 'question' : 'questions'}</span>
       ${topic ? `<span class="tc-topic">${esc(topic)}</span>` : ''}
       <span class="tc-bar"><i style="width:${n ? a / n * 100 : 0}%"></i></span></button>`;
   };
   el.innerHTML = `<div class="work hub">
-    ${c.done ? `<div class="done-banner">✅ <b>${c.kind === 'extra' ? 'Extras concluídos!' : 'Tarefa concluída!'}</b><button type="button" class="btn small primary" data-act="home2">🏠 Voltar ao início</button></div>` : ''}
+    ${c.done ? `<div class="done-banner">✅ <b>${c.kind === 'extra' ? 'Extras finished!' : 'Task finished!'}</b><button type="button" class="btn small primary" data-act="home2">🏠 Back to Home</button></div>` : ''}
     <div class="work-head">
       <h2>${esc(c.title)}</h2>
       <div class="progress" aria-hidden="true"><i id="prog-bar"></i></div><span class="prog-txt" id="prog-txt"></span>
-      ${canQty ? `<span class="qty" title="Quantas perguntas hoje?"><button data-qty="-1" aria-label="menos perguntas">−</button><span>${c.questions.length}</span><button data-qty="1" aria-label="mais perguntas">+</button></span>` : ''}
-      ${paper && c.obj.printed ? '<button class="btn small gold" data-act="check">📄 Corrigir folha</button>' : ''}
+      ${canQty ? `<span class="qty" title="How many questions today?"><button data-qty="-1" aria-label="fewer questions">−</button><span>${c.questions.length}</span><button data-qty="1" aria-label="more questions">+</button></span>` : ''}
+      ${paper && c.obj.printed ? '<button class="btn small gold" data-act="check">📄 Mark my sheet</button>' : ''}
     </div>
-    ${!c.done && next ? `<div class="hub-go-wrap"><button type="button" class="btn primary big hub-go" data-theme="${next.id}">▶ ${started ? 'Continuar' : 'Começar'}: ${next.reading ? '📖' : (SUBJ[next.id] || {}).icon || ''} ${esc(next.reading ? (SUBJ[next.id].lang === 'en' ? 'Reading' : 'Leitura') : (SUBJ[next.id] || {}).name || next.id)}</button>
-      <span class="tiny muted">${started ? 'ou escolha outro tema 👇' : 'na sequência — ou escolha um tema 👇'}</span></div>` : ''}
-    ${!c.done && !next ? `<div class="hub-go-wrap"><span class="hub-all">🎉 Todos os temas respondidos! Confira e toque em <b>✔ Concluir</b>.</span></div>` : ''}
+    ${!c.done && next ? `<div class="hub-go-wrap"><button type="button" class="btn primary big hub-go" data-theme="${next.id}">▶ ${started ? 'Continue' : 'Start'}: ${next.reading ? '📖' : (SUBJ[next.id] || {}).icon || ''} ${esc(next.reading ? (SUBJ[next.id].lang === 'en' ? 'Reading' : 'Leitura') : (SUBJ[next.id] || {}).name || next.id)}</button>
+      <span class="tiny muted">${started ? 'or pick another topic 👇' : 'in order — or pick a topic 👇'}</span></div>` : ''}
+    ${!c.done && !next ? `<div class="hub-go-wrap"><span class="hub-all">🎉 All topics answered! Check them and tap <b>✔ Finish</b>.</span></div>` : ''}
     <div class="theme-grid">${themes.map(card).join('')}</div>
     <div class="work-foot">
-      <button class="btn home-btn" data-act="back" aria-label="Voltar ao início">🏠 <span class="lbl">Início</span></button>
-      <button class="btn" data-act="print" aria-label="Imprimir">🖨️ <span class="lbl">Imprimir</span></button>
-      <button class="btn" data-act="key">🔑 Gabarito</button>
-      ${c.done ? '' : `<button class="btn ${next ? '' : 'primary'}" data-act="finish">✔ Concluir</button>`}
+      <button class="btn home-btn" data-act="back" aria-label="Back to Home">🏠 <span class="lbl">Home</span></button>
+      <button class="btn" data-act="print" aria-label="Print">🖨️ <span class="lbl">Print</span></button>
+      <button class="btn" data-act="key">🔑 Answer key</button>
+      ${c.done ? '' : `<button class="btn ${next ? '' : 'primary'}" data-act="finish">✔ Finish</button>`}
     </div></div>`;
   $$('[data-theme]', el).forEach(b => b.onclick = () => openTheme(b.dataset.theme));
   $('[data-act=back]', el).onclick = () => { save(); show('home'); };
@@ -3058,31 +3058,31 @@ function renderWork() {
   const numOf = i => (hub ? th.idxs.indexOf(i) : i);   // dentro do tema: 1, 2, 3…
   const cards = pages[pg].map(i => questionCard(c.questions[i], i, c, numOf(i))).join('');
   const last = pg === pages.length - 1;
-  const pager = pages.length > 1 ? `<div class="pager"><button type="button" class="btn small" data-pg="-1" ${pg === 0 ? 'disabled' : ''} aria-label="Parte anterior">◂</button>
-      <span class="pg-dots">${pages.map((p, j) => `<button type="button" data-pgi="${j}" class="${j === pg ? 'on' : ''}" aria-label="Parte ${j + 1}">${j + 1}</button>`).join('')}</span>
-      <span class="pg-txt">Parte ${pg + 1} de ${pages.length}</span>
-      <button type="button" class="btn small" data-pg="1" ${last ? 'disabled' : ''} aria-label="Próxima parte">▸</button></div>` : '';
+  const pager = pages.length > 1 ? `<div class="pager"><button type="button" class="btn small" data-pg="-1" ${pg === 0 ? 'disabled' : ''} aria-label="Previous part">◂</button>
+      <span class="pg-dots">${pages.map((p, j) => `<button type="button" data-pgi="${j}" class="${j === pg ? 'on' : ''}" aria-label="Part ${j + 1}">${j + 1}</button>`).join('')}</span>
+      <span class="pg-txt">Part ${pg + 1} of ${pages.length}</span>
+      <button type="button" class="btn small" data-pg="1" ${last ? 'disabled' : ''} aria-label="Next part">▸</button></div>` : '';
   const paper = c.kind === 'day' && !c.rec && !c.done;
   const sbT = hub ? (SUBJ[th.id] || { icon: '❓', name: th.id, color: '#7b5cf0' }) : null;
   const nxt = hub && !c.done ? nextTheme(c, themes, th.id) : null;
-  const lastBtn = c.done ? (hub ? '<button class="btn primary" data-act="themes">🗂️ Temas</button>' : '')
-    : nxt ? `<button class="btn primary" data-act="nexttheme" data-nt="${nxt.id}">${nxt.reading ? '📖' : (SUBJ[nxt.id] || {}).icon || ''} Próximo tema ▸</button>`
-    : '<button class="btn primary" data-act="finish">✔ Concluir</button>';
+  const lastBtn = c.done ? (hub ? '<button class="btn primary" data-act="themes">🗂️ Topics</button>' : '')
+    : nxt ? `<button class="btn primary" data-act="nexttheme" data-nt="${nxt.id}">${nxt.reading ? '📖' : (SUBJ[nxt.id] || {}).icon || ''} Next topic ▸</button>`
+    : '<button class="btn primary" data-act="finish">✔ Finish</button>';
   el.innerHTML = `<div class="work">
-    ${c.done ? `<div class="done-banner">✅ <b>${c.kind === 'extra' ? 'Extras concluídos!' : 'Tarefa concluída!'}</b><button type="button" class="btn small primary" data-act="home2">🏠 Voltar ao início</button></div>` : ''}
+    ${c.done ? `<div class="done-banner">✅ <b>${c.kind === 'extra' ? 'Extras finished!' : 'Task finished!'}</b><button type="button" class="btn small primary" data-act="home2">🏠 Back to Home</button></div>` : ''}
     <div class="work-head">
-      ${hub ? `<button class="btn small themes-btn" data-act="themes" aria-label="Voltar aos temas">◂ 🗂️</button><span class="theme-chip" style="--subj:${sbT.color}">${th.reading ? '📖' : sbT.icon} ${esc(sbT.short || sbT.name)} <b id="theme-cnt">${themeAnswered(c, th)}/${th.idxs.length}</b></span>` : `<h2>${esc(c.title)}</h2>`}
+      ${hub ? `<button class="btn small themes-btn" data-act="themes" aria-label="Back to topics">◂ 🗂️</button><span class="theme-chip" style="--subj:${sbT.color}">${th.reading ? '📖' : sbT.icon} ${esc(sbT.short || sbT.name)} <b id="theme-cnt">${themeAnswered(c, th)}/${th.idxs.length}</b></span>` : `<h2>${esc(c.title)}</h2>`}
       <div class="progress" aria-hidden="true"><i id="prog-bar"></i></div><span class="prog-txt" id="prog-txt"></span>
-      ${canQty ? `<span class="qty" title="Quantas perguntas hoje?"><button data-qty="-1" aria-label="menos perguntas">−</button><span>${c.questions.length}</span><button data-qty="1" aria-label="mais perguntas">+</button></span>` : ''}
-      ${th.reading ? `<button class="btn small read-btn" data-act="passage">📖 ${dayPassages(c.obj).length > 1 && !hub ? 'Textos' : 'Leitura'}</button>` : ''}
-      ${paper && c.obj.printed ? '<button class="btn small gold" data-act="check">📄 Corrigir folha</button>' : ''}
+      ${canQty ? `<span class="qty" title="How many questions today?"><button data-qty="-1" aria-label="fewer questions">−</button><span>${c.questions.length}</span><button data-qty="1" aria-label="more questions">+</button></span>` : ''}
+      ${th.reading ? `<button class="btn small read-btn" data-act="passage">📖 ${dayPassages(c.obj).length > 1 && !hub ? 'Texts' : 'Reading'}</button>` : ''}
+      ${paper && c.obj.printed ? '<button class="btn small gold" data-act="check">📄 Mark my sheet</button>' : ''}
     </div>
     <div class="sheet" id="sheet">${cards}</div>${pager}
     <div class="work-foot">
-      ${hub ? '<button class="btn home-btn" data-act="themes" aria-label="Temas">🗂️ <span class="lbl">Temas</span></button>' : '<button class="btn home-btn" data-act="back" aria-label="Voltar ao início">🏠 <span class="lbl">Início</span></button>'}
-      <button class="btn" data-act="print" aria-label="Imprimir">🖨️ <span class="lbl">Imprimir</span></button>
-      <button class="btn" data-act="key">🔑 Gabarito</button>
-      ${last ? lastBtn : `<button class="btn primary" data-pg="1">${c.done ? 'Próxima ▸' : 'Próxima parte ▸'}</button>`}
+      ${hub ? '<button class="btn home-btn" data-act="themes" aria-label="Topics">🗂️ <span class="lbl">Topics</span></button>' : '<button class="btn home-btn" data-act="back" aria-label="Back to Home">🏠 <span class="lbl">Home</span></button>'}
+      <button class="btn" data-act="print" aria-label="Print">🖨️ <span class="lbl">Print</span></button>
+      <button class="btn" data-act="key">🔑 Answer key</button>
+      ${last ? lastBtn : `<button class="btn primary" data-pg="1">${c.done ? 'Next ▸' : 'Next part ▸'}</button>`}
     </div></div>`;
   bindWork(el, c);
   $$('[data-act=themes]', el).forEach(b => b.onclick = () => openTheme(null));
@@ -3126,17 +3126,17 @@ function questionCard(q, i, c, num = i) {
     const note = c.obj.notes && c.obj.notes[q.id];
     if (ok === true) { stateCls = 'state-ok'; mark = '✓'; }
     else if (ok === false) { stateCls = 'state-bad'; mark = '✗'; expected = q.type === 'proof' ? (note ? `<div class="expected">🦉 ${esc(note)}</div>` : '') : `<div class="expected">${q.lang === 'pt' ? 'Resposta' : 'Answer'}: ${esc(q.answer)}${note ? ` · ${esc(note)}` : ''}</div>`; }
-    else { const pm = c.marks[q.id]; mark = pm === 'ok' ? '✓ pais' : pm === 'no' ? '↺ pais' : '📝'; if (pm === 'ok') stateCls = 'state-ok'; }
+    else { const pm = c.marks[q.id]; mark = pm === 'ok' ? '✓ parents' : pm === 'no' ? '↺ parents' : '📝'; if (pm === 'ok') stateCls = 'state-ok'; }
     if (q.type === 'open' && ok !== null) {
       const pm = c.marks[q.id];
-      if (pm) { mark = pm === 'ok' ? '✓ pais' : '↺ pais'; stateCls = pm === 'ok' ? 'state-ok' : 'state-bad'; }
+      if (pm) { mark = pm === 'ok' ? '✓ parents' : '↺ parents'; stateCls = pm === 'ok' ? 'state-ok' : 'state-bad'; }
       expected = note ? `<div class="expected lumi">🦉 ${esc(note)}</div>` : '';
     }
   }
   return `<div class="q ${stateCls} ${q.type === 'proof' ? 'wide' : ''}" style="--subj:${s.color}" data-qid="${q.id}">
     <div class="q-top"><span class="q-num">${num + 1}</span>
       <div class="q-text"><span class="q-subj">${s.icon} ${esc(s.short)}</span>${esc(q.q)}</div>
-      <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Ouvir">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha: não sei isso'}" aria-label="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha'}">?</button><button type="button" data-hint title="Dica">💡</button>${c.done && q.bank && Server.me ? `<button type="button" data-bankrep title="${q.lang === 'en' ? 'Report a problem with this question' : 'Avisar problema nesta pergunta'}">🚩</button>` : ''}</div>
+      <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Listen">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha: não sei isso'}" aria-label="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha'}">?</button><button type="button" data-hint title="Hint">💡</button>${c.done && q.bank && Server.me ? `<button type="button" data-bankrep title="${q.lang === 'en' ? 'Report a problem with this question' : 'Avisar problema nesta pergunta'}">🚩</button>` : ''}</div>
     </div>${control}${expected}${mark ? `<span class="mark">${mark}</span>` : ''}</div>`;
 }
 function bindWork(el, c) {
@@ -3230,20 +3230,20 @@ function fitGrid(grid, opts = {}) {
 }
 function openGabarito(c, th = null) {
   const locked = S.settings.gabaritoAfterFinish && !c.done;
-  if (locked) { say('Primeiro termine e aperte <b>Concluir</b>. Aí o gabarito libera! 🔑', { mood: 'think' }); return; }
+  if (locked) { say('Finish first by tapping <b>Finish</b>. Then the answer key unlocks! 🔑', { mood: 'think' }); return; }
   const idxs = th && th.idxs ? th.idxs : c.questions.map((_, i) => i);
   const items = idxs.map((qi, i) => { const q = c.questions[qi];
     const ans = c.answers[q.id];
     const ok = c.done ? verdict(c, q) : isCorrect(q, ans);
     const cls = ok === true ? 'ok' : ok === false && (answered(q, ans) || c.verdicts[q.id]) ? 'bad' : '';
     const note = c.obj.notes && c.obj.notes[q.id];
-    const answerTxt = q.type === 'open' ? `<span class="free">[Resposta Livre]</span>${c.done && ok !== null ? ` <span class="yours">· 🦉 ${ok ? '✓' : '✗'} ${esc(note || '')}</span>` : ''}` : `<span class="ans">${esc(q.answer)}</span>`;
-    const yours = !answered(q, ans) || q.type === 'open' ? '' : q.type === 'proof' ? `<span class="yours">· ${q.lang === 'en' ? 'you fixed' : 'você corrigiu'} ${proofScore(q, ans)} ${q.lang === 'en' ? 'of' : 'de'} ${q.errors.length}</span>` : `<span class="yours">· você: ${esc(ans)}</span>`;
+    const answerTxt = q.type === 'open' ? `<span class="free">[Free answer]</span>${c.done && ok !== null ? ` <span class="yours">· 🦉 ${ok ? '✓' : '✗'} ${esc(note || '')}</span>` : ''}` : `<span class="ans">${esc(q.answer)}</span>`;
+    const yours = !answered(q, ans) || q.type === 'open' ? '' : q.type === 'proof' ? `<span class="yours">· ${q.lang === 'en' ? 'you fixed' : 'você corrigiu'} ${proofScore(q, ans)} ${q.lang === 'en' ? 'of' : 'de'} ${q.errors.length}</span>` : `<span class="yours">· you: ${esc(ans)}</span>`;
     return `<div class="key ${cls}"><b>${i + 1}.</b><div>${answerTxt} ${yours}</div></div>`;
   }).join('');
-  const m = openModal(`<div class="modal-head"><h3>🔑 Gabarito${th && th.idxs ? ` · ${esc((SUBJ[th.id] || {}).short || th.id)}` : ''}</h3><button class="btn small" data-close>Fechar</button></div>
+  const m = openModal(`<div class="modal-head"><h3>🔑 Answer key${th && th.idxs ? ` · ${esc((SUBJ[th.id] || {}).short || th.id)}` : ''}</h3><button class="btn small" data-close>Close</button></div>
     <div class="modal-body fit"><div class="key-grid" id="key-grid">${items}</div></div>
-    <div class="modal-foot"><span class="muted tiny grow">[Resposta Livre] = resposta com suas palavras. A Lumi corrige e os pais podem conferir.</span></div>`, { wide: true });
+    <div class="modal-foot"><span class="muted tiny grow">[Free answer] = an answer in your own words. Lumi marks it and your parents can check.</span></div>`, { wide: true });
   m.style.height = 'calc(100dvh - 24px)';
   requestAnimationFrame(() => fitGrid($('#key-grid'), { min: 11, max: 17, colMin: 200, maxCols: 3 }));
 }
@@ -3251,7 +3251,7 @@ async function finishWork(c) {
   hideBubble();
   const missing = c.questions.filter(q => !answered(q, c.answers[q.id])).length;
   if (missing) {
-    say(`Faltam <b>${missing}</b> pergunta${missing > 1 ? 's' : ''}. Toque no 💡 se precisar de ajuda!`, { mood: 'think' });
+    say(`<b>${missing}</b> question${missing > 1 ? 's' : ''} left. Tap 💡 if you need help!`, { mood: 'think' });
     const first = c.questions.find(q => !answered(q, c.answers[q.id]));
     const fi = c.questions.indexOf(first);
     const th = VIEW.wp && VIEW.wp.theme !== 'all' ? workThemes(c).find(t => t.idxs.includes(fi)) : null;
@@ -3269,7 +3269,7 @@ async function finishWork(c) {
 async function gradeOpenAnswers(c) {
   const opens = c.questions.map((q, i) => ({ q, i })).filter(x => x.q.type === 'open' && answered(x.q, c.answers[x.q.id]));
   if (!opens.length || !Server.ai) return;
-  const stop = showLoading(['Lendo suas respostas… 📖', 'Pensando com carinho… 🦉', 'Escrevendo comentários… ✍️']);
+  const stop = showLoading(['Reading your answers… 📖', 'Thinking carefully… 🦉', 'Writing comments… ✍️']);
   try {
     const r = await apiCall('/api/check-open', { method: 'POST', timeout: 90000, data: {
       context: ctxTopics(c) + '\n' + dayPassages(c.obj).map(x => `Texto "${x.title}": ${x.text}`).join('\n'),
@@ -3277,7 +3277,7 @@ async function gradeOpenAnswers(c) {
     c.obj.verdicts = c.obj.verdicts || {}; c.obj.notes = c.obj.notes || {};
     (r.results || []).forEach(res => { const x = opens[res.number - 1]; if (!x) return; c.obj.verdicts[x.q.id] = res.verdict === 'ok' ? 'ok' : 'bad'; if (res.note) c.obj.notes[x.q.id] = res.note; });
     c.verdicts = c.obj.verdicts;
-  } catch (e) { toast('A Lumi não conseguiu corrigir as livres agora: ficam para os pais.'); }
+  } catch (e) { toast('Lumi couldn’t mark the free answers right now: they’re left for your parents.'); }
   finally { stop(); }
 }
 /* ---------- Aulinha: explicação + exemplos + macete + treino na hora ---------- */
@@ -3411,9 +3411,9 @@ function completeWork(c, via, extraMsg = '') {
     questEvent('extra_done', { perfect: obj.length > 0 && correct === obj.length, book: c.obj.group === 'book' });
     if (obj.length > 0 && correct === obj.length) setTimeout(() => celebrateFX('perfect'), 350);
     save();
-    if (coins) addCoins(coins, `Extras: ${correct}/${obj.length} acertos`);
+    if (coins) addCoins(coins, `Extras: ${correct}/${obj.length} correct`);
     renderWork();
-    showCelebrate('Extras concluídos! ⭐', coins ? `+${coins}` : '', `Você acertou <b>${correct} de ${obj.length}</b>.${c.obj.paid ? '' : ' (Rodada só de treino.)'} Abra o gabarito para ver as correções.`, 'wow', { done: true });
+    showCelebrate('Extras finished! ⭐', coins ? `+${coins}` : '', `You got <b>${correct} of ${obj.length}</b> right.${c.obj.paid ? '' : ' (Practice round only.)'} Open the answer key to see the corrections.`, 'wow', { done: true });
     return;
   }
   const perfect = obj.length > 0 && correct === obj.length;
@@ -3426,21 +3426,21 @@ function completeWork(c, via, extraMsg = '') {
   const dayAmt = onTime ? dc : Math.round(dc / 2);
   let dayGot = 0;
   questEvent('day_done', { onTime, perfect: obj.length > 0 && correct === obj.length });
-  if (dayAmt > 0 && !c.obj.coinsAt && addCoins(dayAmt, `Tarefa de ${DOW_FULL[c.obj.dow].toLowerCase()} ${fmtDM(c.obj.date)}${onTime ? '' : ' (atrasada)'}`, 'day-' + c.obj.date)) { c.obj.coinsAt = today(); c.obj.coins = dayAmt; dayGot = dayAmt; }
+  if (dayAmt > 0 && !c.obj.coinsAt && addCoins(dayAmt, `${DOW_FULL[c.obj.dow]} task ${fmtDM(c.obj.date)}${onTime ? '' : ' (late)'}`, 'day-' + c.obj.date)) { c.obj.coinsAt = today(); c.obj.coins = dayAmt; dayGot = dayAmt; }
   save();
   VIEW.work = { kind: 'day', date: c.obj.date };
   show('work');
   const w = S.week;
   const allDone = weekAllDone(w);
-  const msg = (extraMsg ? extraMsg + '<br>' : '') + streakMsg + `Você acertou <b>${correct} de ${obj.length}</b>.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais corrigirem.` : ''}`;
+  const msg = (extraMsg ? extraMsg + '<br>' : '') + streakMsg + `You got <b>${correct} of ${obj.length}</b> right.${open ? ` ${open} free answer${open > 1 ? 's' : ''} ${open > 1 ? 'go' : 'goes'} to your parents to mark.` : ''}`;
   const big = dayGot ? `+${dayGot}` : '';
   if (allDone && today() === w.end && !w.settled) {
-    showCelebrate('Tudo pronto! 🎉', big, msg + `<br><br>Todas as tarefas da semana estão feitas. Volte ao início e toque em <b>Entregar a semana</b> para ganhar <b>+${weekReward(w)}</b> 🪙!`, 'wow', { done: true });
+    showCelebrate('All done! 🎉', big, msg + `<br><br>All of this week’s tasks are done. Go back Home and tap <b>Hand in the week</b> to earn <b>+${weekReward(w)}</b> 🪙!`, 'wow', { done: true });
   } else if (allDone) {
-    showCelebrate('Semana completa! 🎉', big, msg + `<br><br>Agora é só <b>entregar na sexta ${fmtDM(w.end)}</b> para ganhar <b>+${weekReward(w)}</b> 🪙.`, 'wow', { done: true });
+    showCelebrate('Week complete! 🎉', big, msg + `<br><br>Now just <b>hand it in on Friday ${fmtDM(w.end)}</b> to earn <b>+${weekReward(w)}</b> 🪙.`, 'wow', { done: true });
   } else {
-    const bonus = !w.settled ? `<br>🎁 Bônus da semana: <b>+${weekReward(w)}</b> na sexta ${fmtDM(w.end)} se completar todos os dias (${requiredDays(w).filter(d => d.status === 'done').length} de ${requiredDays(w).length} feitos).` : '';
-    showCelebrate('Tarefa do dia concluída! ✅', big, msg + (dayGot ? ` Você ganhou <b>+${dayGot}</b> 🪙 pela tarefa${onTime ? '' : ' (atrasada vale metade)'}.` : '') + bonus, 'happy', { done: true });
+    const bonus = !w.settled ? `<br>🎁 Weekly bonus: <b>+${weekReward(w)}</b> on Friday ${fmtDM(w.end)} if you complete every day (${requiredDays(w).filter(d => d.status === 'done').length} of ${requiredDays(w).length} done).` : '';
+    showCelebrate('Day’s task finished! ✅', big, msg + (dayGot ? ` You earned <b>+${dayGot}</b> 🪙 for the task${onTime ? '' : ' (late counts half)'}.` : '') + bonus, 'happy', { done: true });
   }
 }
 
@@ -3453,13 +3453,13 @@ function completeRecovery(c, correct, total, open, extraMsg) {
   if (S.week && S.week.start === r.start && S.week.days[d.date]) Object.assign(S.week.days[d.date], { status: 'done', answers: d.answers, result: d.result, verdicts: d.verdicts, notes: d.notes, via: d.via, recovered: true });
   const h = S.history.find(x => x.start === r.start); if (h) { h.done = Math.min(h.total, h.done + 1); h.recovered = (h.recovered || 0) + 1; }
   save();
-  if (coins) addCoins(coins, `Recuperação ${DOW_LABEL[d.dow]} ${fmtDM(d.date)} (vale metade)`, 'rec-' + d.date);
+  if (coins) addCoins(coins, `Catch-up ${DOW_LABEL[d.dow]} ${fmtDM(d.date)} (half value)`, 'rec-' + d.date);
   VIEW.work = { kind: 'day', date: d.date, rec: true };
   show('work');
   const left = Object.values(r.days).filter(x => x.status !== 'done').length;
-  const msg = (extraMsg ? extraMsg + '<br>' : '') + `Você acertou <b>${correct} de ${total}</b>.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais.` : ''}`
-    + (left ? `<br>Falta${left > 1 ? 'm' : ''} <b>${left}</b> dia${left > 1 ? 's' : ''} para recuperar até sexta ${fmtDM(r.until)} (+${recoveryLeftCoins(r)} 🪙).` : `<br><br>Você recuperou a semana toda: <b>+${r.earned}</b> 🪙 no total. Isso é que é não desistir! 💪`);
-  showCelebrate(left ? 'Dia recuperado! ⏳' : 'Semana recuperada! 🎉', coins ? `+${coins}` : '', msg, 'happy', { done: true });
+  const msg = (extraMsg ? extraMsg + '<br>' : '') + `You got <b>${correct} of ${total}</b> right.${open ? ` ${open} free answer${open > 1 ? 's' : ''} ${open > 1 ? 'go' : 'goes'} to your parents.` : ''}`
+    + (left ? `<br><b>${left}</b> day${left > 1 ? 's' : ''} left to catch up by Friday ${fmtDM(r.until)} (+${recoveryLeftCoins(r)} 🪙).` : `<br><br>You caught up the whole week: <b>+${r.earned}</b> 🪙 in total. That’s what never giving up looks like! 💪`);
+  showCelebrate(left ? 'Day caught up! ⏳' : 'Week caught up! 🎉', coins ? `+${coins}` : '', msg, 'happy', { done: true });
 }
 // Sequência de dias seguidos fazendo a tarefa no próprio dia. A cada 5 dias: +15 moedas.
 const STREAK_BONUS = 15;
@@ -3470,22 +3470,22 @@ function bumpStreak(date) {
   if (st.last === t) return '';
   st.n = st.last === addDays(t, -1) ? st.n + 1 : 1;
   st.last = t; st.best = Math.max(st.best || 0, st.n);
-  if (st.n % 5 === 0) { addCoins(STREAK_BONUS, `Sequência de ${st.n} dias 🔥`, 'streak-' + t); return `🔥 <b>${st.n} dias seguidos!</b> Bônus de <b>+${STREAK_BONUS}</b> 🪙<br>`; }
-  return `🔥 Sequência: <b>${st.n} dia${st.n > 1 ? 's' : ''}</b> (a cada 5 dias: +${STREAK_BONUS} 🪙)<br>`;
+  if (st.n % 5 === 0) { addCoins(STREAK_BONUS, `${st.n}-day streak 🔥`, 'streak-' + t); return `🔥 <b>${st.n} days in a row!</b> Bonus of <b>+${STREAK_BONUS}</b> 🪙<br>`; }
+  return `🔥 Streak: <b>${st.n} day${st.n > 1 ? 's' : ''}</b> (every 5 days: +${STREAK_BONUS} 🪙)<br>`;
 }
 
 /* ---------- Impressão: uma página A4 por dia ---------- */
 function openPrintDialog(date) {
   const w = S.week; if (!w) return;
   const printable = requiredDays(w).filter(d => d.status !== 'done' && d.questions.length);
-  const c = openModal(`<div class="modal-head"><h3>🖨️ Imprimir tarefas</h3><button class="btn small" data-close>Fechar</button></div>
+  const c = openModal(`<div class="modal-head"><h3>🖨️ Print tasks</h3><button class="btn small" data-close>Close</button></div>
     <div class="modal-body"><div class="radio-col">
-      <label><input type="radio" name="pw" value="day" checked> Só ${esc(DOW_FULL[w.days[date].dow].toLowerCase())} ${fmtDM(date)} (${dayPrintPages(w.days[date])} folha${dayPrintPages(w.days[date]) > 1 ? 's' : ''})</label>
-      ${dayPassages(w.days[date]).length ? `<label><input type="radio" name="pw" value="text"> Só o texto de leitura de ${esc(DOW_FULL[w.days[date].dow].toLowerCase())}</label>` : ''}
-      <label><input type="radio" name="pw" value="week" ${printable.length > 1 ? '' : 'disabled'}> A semana toda que falta (${printable.length} dias, ${printable.reduce((a, d) => a + dayPrintPages(d), 0)} folhas)</label>
-      <label class="chk"><input type="checkbox" id="pkey"> Incluir gabarito em página separada (para os pais)</label></div>
-      <p class="tiny muted">Depois de fazer no papel, abra o dia no app e toque em <b>📄 Corrigir folha</b>: tire uma foto e a Lumi corrige, ou corrija sozinha com o gabarito.</p></div>
-    <div class="modal-foot"><button class="btn primary" id="pgo">🖨️ Imprimir</button></div>`);
+      <label><input type="radio" name="pw" value="day" checked> Only ${esc(DOW_FULL[w.days[date].dow])} ${fmtDM(date)} (${dayPrintPages(w.days[date])} sheet${dayPrintPages(w.days[date]) > 1 ? 's' : ''})</label>
+      ${dayPassages(w.days[date]).length ? `<label><input type="radio" name="pw" value="text"> Only ${esc(DOW_FULL[w.days[date].dow])}’s reading text</label>` : ''}
+      <label><input type="radio" name="pw" value="week" ${printable.length > 1 ? '' : 'disabled'}> The rest of the week (${printable.length} days, ${printable.reduce((a, d) => a + dayPrintPages(d), 0)} sheets)</label>
+      <label class="chk"><input type="checkbox" id="pkey"> Include the answer key on a separate page (for parents)</label></div>
+      <p class="tiny muted">After doing it on paper, open the day in the app and tap <b>📄 Mark my sheet</b>: take a photo and Lumi marks it, or mark it yourself with the answer key.</p></div>
+    <div class="modal-foot"><button class="btn primary" id="pgo">🖨️ Print</button></div>`);
   $('#pgo', c).onclick = () => {
     const which = $('input[name=pw]:checked', c).value;
     if (which === 'text') { closeModal(); printPassages(dayPassages(w.days[date])); return; }
@@ -3516,22 +3516,22 @@ function printChunks(qs) {
   return out;
 }
 function dayPrintPages(d) { return dayPassages(d).length + printChunks(d.questions).length; }
-const pDate = () => new Date(today() + 'T12:00:00').toLocaleDateString('pt-BR');
+const pDate = () => new Date(today() + 'T12:00:00').toLocaleDateString('en-GB');
 function passagePageHtml(x, sub) {
   return `<section class="page pas-page"><header class="p-head"><div><div class="p-brand">📖 ${SUBJ[x.subject].lang === 'en' ? 'Reading' : 'Leitura'}</div><div class="p-day">${esc(sub)}</div></div></header>
     <div class="p-passage long"><h2>${esc(x.title)}</h2>${x.text.split(/\n+/).map(par => `<p>${esc(par)}</p>`).join('')}</div></section>`;
 }
 // Folhas de perguntas (A4): cabeçalho, perguntas em 1–2 colunas, rodapé; gabarito opcional em folha separada.
-function questionPagesHtml(qs, { brand = '🦉 Estudos com a Lumi', sub, footer, withKey }) {
+function questionPagesHtml(qs, { brand = '🦉 Study with Lumi', sub, footer, withKey }) {
   const obj = qs.filter(q => q.type !== 'open').length;
   const chunks = printChunks(qs); const out = [];
   chunks.forEach((ch, k) => out.push(`<section class="page"><header class="p-head">
-      <div><div class="p-brand">${brand}</div><div class="p-day">${esc(sub)}${chunks.length > 1 ? ` · folha ${k + 1}/${chunks.length}` : ''}</div></div>
-      ${k === 0 && obj ? `<div class="p-score">Acertos: ____ / ${obj}</div>` : ''}</header>
+      <div><div class="p-brand">${brand}</div><div class="p-day">${esc(sub)}${chunks.length > 1 ? ` · sheet ${k + 1}/${chunks.length}` : ''}</div></div>
+      ${k === 0 && obj ? `<div class="p-score">Score: ____ / ${obj}</div>` : ''}</header>
     <div class="p-grid">${ch.map(i => printQuestionHtml(qs[i], i)).join('')}</div>
     ${k === chunks.length - 1 && footer ? `<footer class="p-foot">${footer}</footer>` : ''}</section>`));
-  if (withKey) out.push(`<section class="page key-page"><header class="p-head"><div><div class="p-brand">🔑 Gabarito — para os pais</div><div class="p-day">${esc(sub)}</div></div></header>
-      <div class="p-grid">${qs.map((q, i) => `<div class="p-k"><b>${i + 1}.</b> ${q.type === 'open' ? '<i>[Resposta Livre]</i>' : esc(q.answer)}</div>`).join('')}</div></section>`);
+  if (withKey) out.push(`<section class="page key-page"><header class="p-head"><div><div class="p-brand">🔑 Answer key — for parents</div><div class="p-day">${esc(sub)}</div></div></header>
+      <div class="p-grid">${qs.map((q, i) => `<div class="p-k"><b>${i + 1}.</b> ${q.type === 'open' ? '<i>[Free answer]</i>' : esc(q.answer)}</div>`).join('')}</div></section>`);
   return out;
 }
 // Monta as folhas fora da tela, ajusta ao A4 (fonte/colunas; texto longo continua na folha seguinte) e abre a impressão.
@@ -3578,7 +3578,7 @@ function printDays(days, withKey) {
   days.forEach(d => {
     const sub = `${DOW_FULL[d.dow]} ${fmtDM(d.date)} · ${S.name}`;
     dayPassages(d).forEach(x => pages.push(passagePageHtml(x, sub)));
-    pages.push(...questionPagesHtml(d.questions, { sub, withKey, footer: `Terminou? No app, abra ${esc(DOW_FULL[d.dow].toLowerCase())} e toque em “📄 Corrigir folha”.` }));
+    pages.push(...questionPagesHtml(d.questions, { sub, withKey, footer: `Finished? In the app, open ${esc(DOW_FULL[d.dow])} and tap “📄 Mark my sheet”.` }));
   });
   days.forEach(d => { d.printed = true; });
   save();
@@ -3587,19 +3587,19 @@ function printDays(days, withKey) {
 // Extras, Livro extra, Reforço e Recuperação: imprime o texto (se houver) e as perguntas, com gabarito opcional.
 function openPrintWork(c) {
   const ps = dayPassages(c.obj);
-  const m = openModal(`<div class="modal-head"><h3>🖨️ Imprimir</h3><button class="btn small" data-close>Fechar</button></div>
-    <div class="modal-body"><p style="margin:0 0 8px"><b>${esc(c.title)}</b> · folhas A4</p><div class="radio-col">
-      <label><input type="radio" name="pw" value="all" checked> ${ps.length ? 'Texto e perguntas' : 'Perguntas'} (${ps.length + printChunks(c.questions).length} folha${ps.length + printChunks(c.questions).length > 1 ? 's' : ''})</label>
-      ${ps.length ? '<label><input type="radio" name="pw" value="text"> Só o texto de leitura</label>' : ''}
-      <label class="chk"><input type="checkbox" id="pkey"> Incluir gabarito em folha separada (para os pais)</label></div>
-      <p class="tiny muted">Depois de fazer no papel, passe as respostas para o app e toque em <b>✔ Concluir</b> — ou corrija com o gabarito.</p></div>
-    <div class="modal-foot"><button class="btn primary" id="pgo">🖨️ Imprimir</button></div>`);
+  const m = openModal(`<div class="modal-head"><h3>🖨️ Print</h3><button class="btn small" data-close>Close</button></div>
+    <div class="modal-body"><p style="margin:0 0 8px"><b>${esc(c.title)}</b> · A4 sheets</p><div class="radio-col">
+      <label><input type="radio" name="pw" value="all" checked> ${ps.length ? 'Text and questions' : 'Questions'} (${ps.length + printChunks(c.questions).length} sheet${ps.length + printChunks(c.questions).length > 1 ? 's' : ''})</label>
+      ${ps.length ? '<label><input type="radio" name="pw" value="text"> Reading text only</label>' : ''}
+      <label class="chk"><input type="checkbox" id="pkey"> Include the answer key on a separate sheet (for parents)</label></div>
+      <p class="tiny muted">After doing it on paper, type the answers into the app and tap <b>✔ Finish</b> — or mark it with the answer key.</p></div>
+    <div class="modal-foot"><button class="btn primary" id="pgo">🖨️ Print</button></div>`);
   $('#pgo', m).onclick = () => {
     const which = $('input[name=pw]:checked', m).value; const withKey = $('#pkey', m).checked;
     const sub = `${c.title.replace(/^\S+\s/, '')} · ${S.name} · ${pDate()}`;
     closeModal();
     if (which === 'text') { printPassages(ps, sub); return; }
-    printPages([...ps.map(x => passagePageHtml(x, sub)), ...questionPagesHtml(c.questions, { sub, withKey, footer: 'Terminou? Passe as respostas para o app e toque em “✔ Concluir”.' })]);
+    printPages([...ps.map(x => passagePageHtml(x, sub)), ...questionPagesHtml(c.questions, { sub, withKey, footer: 'Finished? Type the answers into the app and tap “✔ Finish”.' })]);
   };
 }
 function printWork(c) { if (c.kind === 'day' && !c.rec) openPrintDialog(c.obj.date); else openPrintWork(c); }
@@ -3622,25 +3622,25 @@ function renderCheck() {
   const el = $('#scr-check');
   const d = S.week && VIEW.check && S.week.days[VIEW.check.date];
   if (!d) { show('home'); return; }
-  $('#top-title').textContent = `📄 Corrigir ${DOW_LABEL[d.dow]} ${fmtDM(d.date)}`;
+  $('#top-title').textContent = `📄 Mark ${DOW_LABEL[d.dow]} ${fmtDM(d.date)}`;
   const imgs = VIEW.check.images;
   el.innerHTML = `<div class="check">
     ${Server.ai ? `<div class="card check-opt">
-      <h3>📷 A Lumi corrige pela foto</h3>
-      <p class="tiny muted">Tire uma foto de cada folha (${printChunks(d.questions).length > 1 ? `são ${printChunks(d.questions).length} folhas de perguntas` : 'a folha inteira'}), de cima, com boa luz.</p>
-      <div class="row wrap"><label class="btn primary">📷 Tirar foto<input type="file" id="cph" accept="image/*" capture="environment" hidden></label>
-        ${imgs.length ? `<span class="tiny">✔ ${imgs.length} foto${imgs.length > 1 ? 's' : ''}</span><label class="btn small">+ outra<input type="file" id="cph2" accept="image/*" hidden></label>` : ''}</div>
-      ${imgs.length ? `<div class="thumbs">${imgs.map(im => `<div class="thumb"><img src="data:${im.type};base64,${im.data}" alt="Foto da folha"></div>`).join('')}</div>
-        <button class="btn gold big wide" id="cgo">✨ Corrigir com a Lumi</button>` : ''}
+      <h3>📷 Lumi marks it from a photo</h3>
+      <p class="tiny muted">Take a photo of each sheet (${printChunks(d.questions).length > 1 ? `there are ${printChunks(d.questions).length} question sheets` : 'the whole sheet'}), from above, in good light.</p>
+      <div class="row wrap"><label class="btn primary">📷 Take a photo<input type="file" id="cph" accept="image/*" capture="environment" hidden></label>
+        ${imgs.length ? `<span class="tiny">✔ ${imgs.length} photo${imgs.length > 1 ? 's' : ''}</span><label class="btn small">+ another<input type="file" id="cph2" accept="image/*" hidden></label>` : ''}</div>
+      ${imgs.length ? `<div class="thumbs">${imgs.map(im => `<div class="thumb"><img src="data:${im.type};base64,${im.data}" alt="Photo of the sheet"></div>`).join('')}</div>
+        <button class="btn gold big wide" id="cgo">✨ Mark it with Lumi</button>` : ''}
     </div>` : ''}
     <div class="card check-opt">
-      <h3>✍️ Corrigir sozinha com o gabarito</h3>
-      <p class="tiny muted">Compare sua folha com as respostas e marque ✓ ou ✗.</p>
-      <button class="btn wide" id="cself">Abrir o gabarito para corrigir</button>
+      <h3>✍️ Mark it myself with the answer key</h3>
+      <p class="tiny muted">Compare your sheet with the answers and tick ✓ or ✗.</p>
+      <button class="btn wide" id="cself">Open the answer key to mark</button>
     </div>
-    <button class="btn ghost" id="cback">◂ Voltar</button>
+    <button class="btn ghost" id="cback">◂ Back</button>
   </div>`;
-  const addPhoto = async e => { const f = e.target.files[0]; if (!f) return; try { VIEW.check.images.push(await fileToJpeg(f, 1800, 0.85)); } catch (err) { toast('Não consegui ler a foto.'); } renderCheck(); };
+  const addPhoto = async e => { const f = e.target.files[0]; if (!f) return; try { VIEW.check.images.push(await fileToJpeg(f, 1800, 0.85)); } catch (err) { toast('I couldn’t read the photo.'); } renderCheck(); };
   const p1 = $('#cph', el); if (p1) p1.onchange = addPhoto;
   const p2 = $('#cph2', el); if (p2) p2.onchange = addPhoto;
   const go = $('#cgo', el); if (go) go.onclick = () => gradeByPhoto(d);
@@ -3648,15 +3648,15 @@ function renderCheck() {
   $('#cback', el).onclick = () => { VIEW.work = { kind: 'day', date: d.date }; show('work'); };
 }
 async function gradeByPhoto(d) {
-  const stop = showLoading(['Olhando sua folha… 👀', 'Lendo sua letra… ✍️', 'Conferindo as respostas… ✔️', 'Quase lá! 🦉']);
+  const stop = showLoading(['Looking at your sheet… 👀', 'Reading your handwriting… ✍️', 'Checking the answers… ✔️', 'Almost there! 🦉']);
   let r;
   try {
     r = await apiCall('/api/grade', { method: 'POST', timeout: 180000, data: {
       title: `${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, images: VIEW.check.images,
       questions: d.questions.map(q => ({ type: q.type, q: q.type === 'proof' ? `${q.q} Texto impresso: "${q.text}"` : q.q, options: q.options || [], answer: q.answer, accept: q.accept || [] })) } });
-  } catch (e) { stop(); say(`Não consegui corrigir agora (${esc(e.message)}). Tente de novo ou corrija sozinha com o gabarito.`, { mood: 'sad', ms: 12000 }); return; }
+  } catch (e) { stop(); say(`I couldn’t mark it right now (${esc(e.message)}). Try again or mark it yourself with the answer key.`, { mood: 'sad', ms: 12000 }); return; }
   stop();
-  if (!r.legible) { VIEW.check.images = []; renderCheck(); say(`${esc(r.message || '')} Não consegui ler bem a folha. Tire outra foto, de cima e com mais luz. 📷`, { mood: 'think', ms: 12000 }); return; }
+  if (!r.legible) { VIEW.check.images = []; renderCheck(); say(`${esc(r.message || '')} I couldn’t read the sheet properly. Take another photo, from above and with more light. 📷`, { mood: 'think', ms: 12000 }); return; }
   d.verdicts = {}; d.notes = {};
   (r.results || []).forEach(x => {
     const q = d.questions[x.number - 1]; if (!q) return;
@@ -3674,20 +3674,20 @@ function renderSelfCheck() {
   const el = $('#scr-selfcheck');
   const d = S.week && VIEW.check && S.week.days[VIEW.check.date];
   if (!d) { show('home'); return; }
-  $('#top-title').textContent = `✍️ Corrigir ${DOW_LABEL[d.dow]} ${fmtDM(d.date)}`;
+  $('#top-title').textContent = `✍️ Mark ${DOW_LABEL[d.dow]} ${fmtDM(d.date)}`;
   const marks = VIEW.selfMarks;
   const items = d.questions.map((q, i) => {
     const s = SUBJ[q.subject] || { color: '#7b5cf0' };
-    if (q.type === 'open') return `<div class="key" style="border-left:4px solid ${s.color}"><b>${i + 1}.</b><div class="grow"><span class="free">[Resposta Livre]</span> <span class="yours">· os pais corrigem</span></div></div>`;
+    if (q.type === 'open') return `<div class="key" style="border-left:4px solid ${s.color}"><b>${i + 1}.</b><div class="grow"><span class="free">[Free answer]</span> <span class="yours">· parents mark this</span></div></div>`;
     const m = marks[q.id];
     return `<div class="key ${m === 'ok' ? 'ok' : m === 'bad' ? 'bad' : ''}" style="border-left:4px solid ${s.color}"><b>${i + 1}.</b><div class="grow"><span class="ans">${esc(q.answer)}</span> <span class="yours">· ${esc(q.q.length > 70 ? q.q.slice(0, 67) + '…' : q.q)}</span></div>
-      <span class="mk"><button data-m="ok" data-q="${q.id}" class="${m === 'ok' ? 'on-ok' : ''}" aria-label="Acertei">✓</button><button data-m="bad" data-q="${q.id}" class="${m === 'bad' ? 'on-bad' : ''}" aria-label="Errei">✗</button></span></div>`;
+      <span class="mk"><button data-m="ok" data-q="${q.id}" class="${m === 'ok' ? 'on-ok' : ''}" aria-label="I got it right">✓</button><button data-m="bad" data-q="${q.id}" class="${m === 'bad' ? 'on-bad' : ''}" aria-label="I got it wrong">✗</button></span></div>`;
   }).join('');
   const need = d.questions.filter(q => q.type !== 'open' && !marks[q.id]).length;
   el.innerHTML = `<div class="work">
-    <div class="work-head"><h2>Marque ✓ acertei ou ✗ errei</h2><span class="prog-txt">${need ? `faltam ${need}` : 'tudo marcado!'}</span></div>
+    <div class="work-head"><h2>Tick ✓ right or ✗ wrong</h2><span class="prog-txt">${need ? `${need} left` : 'all marked!'}</span></div>
     <div class="sheet key-grid" id="self-grid">${items}</div>
-    <div class="work-foot"><button class="btn" id="sback">◂ Voltar</button><button class="btn primary" id="ssave" ${need ? 'disabled' : ''}>✔ Salvar correção</button></div></div>`;
+    <div class="work-foot"><button class="btn" id="sback">◂ Back</button><button class="btn primary" id="ssave" ${need ? 'disabled' : ''}>✔ Save marking</button></div></div>`;
   $$('[data-m]', el).forEach(b => b.onclick = () => { marks[b.dataset.q] = b.dataset.m; renderSelfCheck(); });
   $('#sback', el).onclick = () => show('check');
   $('#ssave', el).onclick = () => {
@@ -3714,34 +3714,34 @@ function renderShop() {
     const equipped = it.id === 'ms-owl' ? !S.equipped.mascot : S.equipped[it.cat] === it.id;
     let pic = '';
     if (it.cat === 'egg') {
-      const chances = it.egg === 'mascot' ? `${MASCOTS.length - 1} mascotes, chances iguais · você tem ${MASCOTS.filter(m => m.id !== 'ms-owl' && collectionCount(m.id)).length}/${MASCOTS.length - 1}`
-        : `${Object.values(RARITY).map(r => `<span style="color:${r.color}">${r.label} ${r.pct}%</span>`).join(' · ')} · você tem ${ALL_PETS.filter(id => collectionCount(id)).length}/${ALL_PETS.length}`;
-      return `<div class="item egg-item"><div class="pic">${eggSVG(it.egg, 'idle')}</div><div class="nm">${esc(it.name)}</div><div class="tiny egg-odds">${chances}</div><div class="pr">🪙 ${it.price}</div><div class="item-act"><button class="btn small primary" data-buy="${it.id}">Comprar e chocar 🥚</button></div></div>`;
+      const chances = it.egg === 'mascot' ? `${MASCOTS.length - 1} mascots, equal chances · you have ${MASCOTS.filter(m => m.id !== 'ms-owl' && collectionCount(m.id)).length}/${MASCOTS.length - 1}`
+        : `${Object.values(RARITY).map(r => `<span style="color:${r.color}">${r.label} ${r.pct}%</span>`).join(' · ')} · you have ${ALL_PETS.filter(id => collectionCount(id)).length}/${ALL_PETS.length}`;
+      return `<div class="item egg-item"><div class="pic">${eggSVG(it.egg, 'idle')}</div><div class="nm">${esc(it.name)}</div><div class="tiny egg-odds">${chances}</div><div class="pr">🪙 ${it.price}</div><div class="item-act"><button class="btn small primary" data-buy="${it.id}">Buy and hatch 🥚</button></div></div>`;
     }
     if (WEAR.includes(it.cat)) pic = itemPreviewSVG(it);
     else if (it.cat === 'bg') pic = `<div class="swatch" style="background:${it.sw}"></div>`;
     else if (it.cat === 'sticker') pic = it.emoji;
     else pic = '🎟️';
     let btn;
-    if (it.cat === 'voucher') btn = `<button class="btn small primary" data-buy="${it.id}">Resgatar</button>`;
-    else if (it.cat === 'sticker') btn = owned ? '<span class="tiny muted">No álbum ✔</span>' : `<button class="btn small primary" data-buy="${it.id}">Comprar</button>`;
-    else if (!owned) btn = `<button class="btn small" data-try="${it.id}">Provar</button><button class="btn small primary" data-buy="${it.id}">Comprar</button>`;
-    else btn = equipped ? (it.cat === 'mascot' ? '<span class="btn small ok">Usando ✔</span>' : `<button class="btn small ok" data-unequip="${it.id}">Usando ✔</button>`) : `<button class="btn small" data-equip="${it.id}">Usar</button>`;
+    if (it.cat === 'voucher') btn = `<button class="btn small primary" data-buy="${it.id}">Redeem</button>`;
+    else if (it.cat === 'sticker') btn = owned ? '<span class="tiny muted">In the album ✔</span>' : `<button class="btn small primary" data-buy="${it.id}">Buy</button>`;
+    else if (!owned) btn = `<button class="btn small" data-try="${it.id}">Try on</button><button class="btn small primary" data-buy="${it.id}">Buy</button>`;
+    else btn = equipped ? (it.cat === 'mascot' ? '<span class="btn small ok">Wearing ✔</span>' : `<button class="btn small ok" data-unequip="${it.id}">Wearing ✔</button>`) : `<button class="btn small" data-equip="${it.id}">Use</button>`;
     btn = `<div class="item-act">${btn}</div>`;
-    return `<div class="item ${owned && it.cat !== 'voucher' ? 'owned' : ''} ${it.price >= 1000 ? 'dream' : ''}">${it.price >= 1000 ? '<span class="dream-tag">✨ SONHO</span>' : ''}<div class="pic">${pic}</div><div class="nm">${esc(it.name)}</div><div class="pr">🪙 ${it.price}</div>${btn}</div>`;
+    return `<div class="item ${owned && it.cat !== 'voucher' ? 'owned' : ''} ${it.price >= 1000 ? 'dream' : ''}">${it.price >= 1000 ? '<span class="dream-tag">✨ DREAM</span>' : ''}<div class="pic">${pic}</div><div class="nm">${esc(it.name)}</div><div class="pr">🪙 ${it.price}</div>${btn}</div>`;
   }).join('');
   const pend = (S.redemptions || []).filter(r => !r.delivered);
   el.innerHTML = `<div class="shop">
     <div class="shop-preview"><div>${mascotSVG(previewEq, tryOn ? 'wow' : 'happy')}</div>
-      <div><b>Saldo: 🪙 ${S.coins}</b>${S.coins < 0 ? '<div class="tiny" style="color:var(--bad)">Saldo negativo: a lojinha volta quando ficar positivo.</div>' : ''}
-      ${tryOn ? `<div class="tiny muted">Provando: ${esc(tryOn.name)}</div>` : ''}
-      ${pend.length ? `<div class="tiny muted">🎟️ ${pend.length} vale(s) aguardando os pais</div>` : ''}
-      <button class="btn small" data-act="collection" style="margin-top:4px">📖 Minha coleção</button>
-      ${['hat', 'glasses', 'neck', 'back', 'skin'].includes(cat) ? '<div class="tiny muted">As roupinhas servem em todos os mascotes.</div>' : ''}</div></div>
+      <div><b>Balance: 🪙 ${S.coins}</b>${S.coins < 0 ? '<div class="tiny" style="color:var(--bad)">Negative balance: the shop comes back when it’s positive again.</div>' : ''}
+      ${tryOn ? `<div class="tiny muted">Trying on: ${esc(tryOn.name)}</div>` : ''}
+      ${pend.length ? `<div class="tiny muted">🎟️ ${pend.length} voucher${pend.length > 1 ? 's' : ''} waiting for your parents</div>` : ''}
+      <button class="btn small" data-act="collection" style="margin-top:4px">📖 My collection</button>
+      ${['hat', 'glasses', 'neck', 'back', 'skin'].includes(cat) ? '<div class="tiny muted">The outfits fit every mascot.</div>' : ''}</div></div>
     <div class="shop-main">
       <div class="tabs">${SHOP_CATS.map(c => `<button data-cat="${c.id}" class="${c.id === cat ? 'on' : ''}">${c.label}</button>`).join('')}</div>
-      ${cat === 'react' ? `<div class="row wrap tiny muted react-head"><span class="grow">Equipe 1 dancinha, 1 musiquinha e 1 confete. Eles aparecem quando você gabarita! 🎉 (O confete colorido é grátis.)</span><button class="btn small" data-act="sound">${soundOn() ? '🔊 Som ligado' : '🔇 Som desligado'}</button></div>` : ''}
-      <div class="items">${cat === 'note' ? noteShopHtml() : cat === 'react' ? items.map(reactCard).join('') : (cards || '<p class="muted">Nada aqui ainda.</p>')}</div>
+      ${cat === 'react' ? `<div class="row wrap tiny muted react-head"><span class="grow">Equip 1 dance, 1 tune and 1 confetti. They appear when you get everything right! 🎉 (The colourful confetti is free.)</span><button class="btn small" data-act="sound">${soundOn() ? '🔊 Sound on' : '🔇 Sound off'}</button></div>` : ''}
+      <div class="items">${cat === 'note' ? noteShopHtml() : cat === 'react' ? items.map(reactCard).join('') : (cards || '<p class="muted">Nothing here yet.</p>')}</div>
     </div></div>`;
   $$('[data-cat]', el).forEach(b => b.onclick = () => { VIEW.shopCat = b.dataset.cat; VIEW.tryOn = null; renderShop(); });
   $('[data-act=collection]', el).onclick = () => show('collection');
@@ -3760,10 +3760,10 @@ async function buy(id) {
   const it = SHOP_ITEMS.find(i => i.id === id) || vouchersAsItems().find(v => v.id === id);
   if (!it) return;
   if (it.cat === 'egg') return buyEgg(it);
-  if (S.coins < it.price) { say(`Faltam <b>${it.price - Math.max(0, S.coins)}</b> moedas para ${esc(it.name)}. Que tal uns exercícios extras? ⭐`, { mood: 'think' }); return; }
-  const ok = await confirmBox(it.cat === 'voucher' ? 'Resgatar vale?' : 'Comprar?', `${esc(it.name)} por <b>🪙 ${it.price}</b>?${it.cat === 'voucher' ? '<br><span class="muted tiny">Os pais vão confirmar a entrega do prêmio.</span>' : ''}`, it.cat === 'voucher' ? 'Resgatar' : 'Comprar');
+  if (S.coins < it.price) { say(`You need <b>${it.price - Math.max(0, S.coins)}</b> more coins for ${esc(it.name)}. How about some extra exercises? ⭐`, { mood: 'think' }); return; }
+  const ok = await confirmBox(it.cat === 'voucher' ? 'Redeem voucher?' : 'Buy it?', `${esc(it.name)} for <b>🪙 ${it.price}</b>?${it.cat === 'voucher' ? '<br><span class="muted tiny">Your parents will confirm when they give you the prize.</span>' : ''}`, it.cat === 'voucher' ? 'Redeem' : 'Buy');
   if (!ok) return;
-  addCoins(-it.price, (it.cat === 'voucher' ? 'Vale: ' : 'Lojinha: ') + it.name);
+  addCoins(-it.price, (it.cat === 'voucher' ? 'Voucher: ' : 'Shop: ') + it.name);
   questEvent('buy', { cat: it.cat, price: it.price });
   if (it.cat === 'voucher') {
     S.redemptions.unshift({ id: uid(), voucherId: it.id, name: it.name, price: it.price, date: today(), delivered: false });
@@ -3774,7 +3774,7 @@ async function buy(id) {
   }
   VIEW.tryOn = null;
   save(); applyTheme(); renderMascotMini(); renderShop();
-  say(it.cat === 'sticker' ? `${it.emoji} foi para o seu álbum!` : it.cat === 'voucher' ? 'Vale resgatado! Mostre para os seus pais. 🎟️' : 'Amei! Obrigada! 😍', { mood: 'wow' });
+  say(it.cat === 'sticker' ? `${it.emoji} went into your album!` : it.cat === 'voucher' ? 'Voucher redeemed! Show it to your parents. 🎟️' : 'I love it! Thank you! 😍', { mood: 'wow' });
 }
 
 /* ---------- ✏️ Oficina de palavras: treinar as palavras da semana e as que errou ---------- */
@@ -4040,30 +4040,30 @@ function printWorkshop(allWords, acts, L) {
 }
 
 /* ---------- Fase 4: 📜 Missões (3 do dia + 2 da semana, sorteadas com semente) ---------- */
-const QDIFF = { easy: { label: 'Fácil', min: 5, max: 10 }, medium: { label: 'Média', min: 20, max: 30 }, hard: { label: 'Difícil', min: 50, max: 80 } };
+const QDIFF = { easy: { label: 'Easy', min: 5, max: 10 }, medium: { label: 'Medium', min: 20, max: 30 }, hard: { label: 'Hard', min: 50, max: 80 } };
 // ev: evento que conta; target: quantas vezes; when: só sorteia se fizer sentido para este perfil
 const QUEST_POOL = [
   // do dia
-  { id: 'd-day', scope: 'day', diff: 'easy', icon: '📘', text: 'Conclua a tarefa de hoje', ev: 'day_ontime', target: 1, when: () => !!(S.week && S.week.days[today()] && S.week.days[today()].required && S.week.days[today()].status !== 'done') },
-  { id: 'd-lesson', scope: 'day', diff: 'easy', icon: '❓', text: 'Use o ? para aprender algo novo', ev: 'lesson', target: 1, when: () => Server.ai },
-  { id: 'd-read', scope: 'day', diff: 'easy', icon: '📖', text: 'Leia o texto do dia', ev: 'read', target: 1, when: () => !!(S.week && dayPassages(S.week.days[today()]).length) },
-  { id: 'd-hint', scope: 'day', diff: 'easy', icon: '💡', text: 'Peça uma dica 💡 numa pergunta difícil', ev: 'hint', target: 1 },
-  { id: 'd-extra1', scope: 'day', diff: 'easy', icon: '⭐', text: 'Faça 1 rodada de extras', ev: 'extra', target: 1 },
-  { id: 'd-extra2', scope: 'day', diff: 'medium', icon: '⭐', text: 'Faça 2 rodadas de extras', ev: 'extra', target: 2 },
-  { id: 'd-game2', scope: 'day', diff: 'medium', icon: '✏️', text: 'Jogue 2 jogos da Oficina de palavras', ev: 'game', target: 2 },
-  { id: 'd-practice', scope: 'day', diff: 'medium', icon: '🎓', text: 'Acerte todo o treino de uma aulinha', ev: 'practice_perfect', target: 1, when: () => Server.ai },
-  { id: 'd-book', scope: 'day', diff: 'medium', icon: '📚', text: 'Leia um capítulo do Livro extra', ev: 'book', target: 1, when: () => Server.ai },
-  { id: 'd-perfect-x', scope: 'day', diff: 'hard', icon: '💯', text: 'Acerte 100% numa rodada de extras', ev: 'perfect_extra', target: 1 },
-  { id: 'd-perfect-d', scope: 'day', diff: 'hard', icon: '🏆', text: 'Gabarite a tarefa de hoje (100%)', ev: 'perfect_day', target: 1, when: () => !!(S.week && S.week.days[today()] && S.week.days[today()].required && S.week.days[today()].status !== 'done') },
-  { id: 'd-extra3', scope: 'day', diff: 'hard', icon: '🔥', text: 'Faça 3 rodadas de extras', ev: 'extra', target: 3 },
+  { id: 'd-day', scope: 'day', diff: 'easy', icon: '📘', text: 'Finish today’s task', ev: 'day_ontime', target: 1, when: () => !!(S.week && S.week.days[today()] && S.week.days[today()].required && S.week.days[today()].status !== 'done') },
+  { id: 'd-lesson', scope: 'day', diff: 'easy', icon: '❓', text: 'Use the ? to learn something new', ev: 'lesson', target: 1, when: () => Server.ai },
+  { id: 'd-read', scope: 'day', diff: 'easy', icon: '📖', text: 'Read today’s text', ev: 'read', target: 1, when: () => !!(S.week && dayPassages(S.week.days[today()]).length) },
+  { id: 'd-hint', scope: 'day', diff: 'easy', icon: '💡', text: 'Ask for a hint 💡 on a tricky question', ev: 'hint', target: 1 },
+  { id: 'd-extra1', scope: 'day', diff: 'easy', icon: '⭐', text: 'Do 1 round of extras', ev: 'extra', target: 1 },
+  { id: 'd-extra2', scope: 'day', diff: 'medium', icon: '⭐', text: 'Do 2 rounds of extras', ev: 'extra', target: 2 },
+  { id: 'd-game2', scope: 'day', diff: 'medium', icon: '✏️', text: 'Play 2 Word workshop games', ev: 'game', target: 2 },
+  { id: 'd-practice', scope: 'day', diff: 'medium', icon: '🎓', text: 'Get all the practice right in a mini-lesson', ev: 'practice_perfect', target: 1, when: () => Server.ai },
+  { id: 'd-book', scope: 'day', diff: 'medium', icon: '📚', text: 'Read a chapter of Extra reading', ev: 'book', target: 1, when: () => Server.ai },
+  { id: 'd-perfect-x', scope: 'day', diff: 'hard', icon: '💯', text: 'Get 100% in a round of extras', ev: 'perfect_extra', target: 1 },
+  { id: 'd-perfect-d', scope: 'day', diff: 'hard', icon: '🏆', text: 'Get today’s task all right (100%)', ev: 'perfect_day', target: 1, when: () => !!(S.week && S.week.days[today()] && S.week.days[today()].required && S.week.days[today()].status !== 'done') },
+  { id: 'd-extra3', scope: 'day', diff: 'hard', icon: '🔥', text: 'Do 3 rounds of extras', ev: 'extra', target: 3 },
   // da semana
-  { id: 'w-streak', scope: 'week', diff: 'medium', icon: '🔥', text: 'Mantenha a sequência por 3 dias', ev: 'streak', target: 3 },
-  { id: 'w-lessons', scope: 'week', diff: 'medium', icon: '🎓', text: 'Faça 3 aulinhas', ev: 'lesson', target: 3, when: () => Server.ai },
-  { id: 'w-games', scope: 'week', diff: 'medium', icon: '✏️', text: 'Jogue 5 jogos da Oficina de palavras', ev: 'game', target: 5 },
-  { id: 'w-read', scope: 'week', diff: 'medium', icon: '📖', text: 'Leia 4 textos (do dia ou do Livro extra)', ev: 'read', target: 4 },
-  { id: 'w-days', scope: 'week', diff: 'hard', icon: '📅', text: 'Conclua 5 tarefas no dia certo', ev: 'day_ontime', target: 5 },
-  { id: 'w-extras', scope: 'week', diff: 'hard', icon: '⭐', text: 'Faça 6 rodadas de extras na semana', ev: 'extra', target: 6 },
-  { id: 'w-perfect', scope: 'week', diff: 'hard', icon: '💯', text: 'Gabarite 2 tarefas ou rodadas de extras', ev: 'perfect_any', target: 2 },
+  { id: 'w-streak', scope: 'week', diff: 'medium', icon: '🔥', text: 'Keep your streak going for 3 days', ev: 'streak', target: 3 },
+  { id: 'w-lessons', scope: 'week', diff: 'medium', icon: '🎓', text: 'Do 3 mini-lessons', ev: 'lesson', target: 3, when: () => Server.ai },
+  { id: 'w-games', scope: 'week', diff: 'medium', icon: '✏️', text: 'Play 5 Word workshop games', ev: 'game', target: 5 },
+  { id: 'w-read', scope: 'week', diff: 'medium', icon: '📖', text: 'Read 4 texts (today’s text or Extra reading)', ev: 'read', target: 4 },
+  { id: 'w-days', scope: 'week', diff: 'hard', icon: '📅', text: 'Finish 5 tasks on the right day', ev: 'day_ontime', target: 5 },
+  { id: 'w-extras', scope: 'week', diff: 'hard', icon: '⭐', text: 'Do 6 rounds of extras this week', ev: 'extra', target: 6 },
+  { id: 'w-perfect', scope: 'week', diff: 'hard', icon: '💯', text: 'Get 100% in 2 tasks or rounds of extras', ev: 'perfect_any', target: 2 },
 ];
 const questsOn = () => S.settings.questsOn !== false;
 function questSeed(scope) { return `${scope === 'day' ? today() : cycleStartOf(today())}|${Server.childId || S.name || 'eu'}`; }
@@ -4074,7 +4074,7 @@ function makeQuest(def, rng) {
 // Missão de compra: "Compre N ovos hoje" — recompensa = valor gasto + 50 (a criança sempre sai ganhando)
 function makeBuyQuest(rng) {
   const n = rng.int(1, 3);
-  return { id: 'd-buy', buy: true, target: n, reward: 50, progress: 0, spent: 0, claimed: false, text: `Compre ${n} ovo${n > 1 ? 's' : ''} hoje (ganha o valor de volta + 50)` };
+  return { id: 'd-buy', buy: true, target: n, reward: 50, progress: 0, spent: 0, claimed: false, text: `Buy ${n} egg${n > 1 ? 's' : ''} today (get the coins back + 50)` };
 }
 function ensureQuests() {
   if (!questsOn()) return null;
@@ -4116,17 +4116,17 @@ function questEvent(ev, data = {}) {
     if (before < q.target && questProgress(q) >= q.target) done.push(q);
   });
   save();
-  done.forEach(q => toast(`📜 Missão completa: ${questText(q)}! Resgate na tela inicial.`));
+  done.forEach(q => toast(`📜 Quest complete: ${questText(q)}! Claim it on the Home screen.`));
 }
 function claimQuest(scope, id) {
   const Q = ensureQuests(); const list = scope === 'day' ? Q.day.list : Q.week.list;
   const q = list.find(x => x.id === id); if (!q || q.claimed || questProgress(q) < q.target) return;
   const amt = questReward(q);
   q.claimed = true;
-  addCoins(amt, `Missão: ${questText(q)}`, `quest-${scope}-${scope === 'day' ? Q.day.date : Q.week.start}-${q.id}`);
+  addCoins(amt, `Quest: ${questText(q)}`, `quest-${scope}-${scope === 'day' ? Q.day.date : Q.week.start}-${q.id}`);
   save();
   if (typeof celebrateFX === 'function') celebrateFX('small');
-  showCelebrate('Missão cumprida! 📜', `+${amt}`, `${esc(questText(q))}`, 'wow');
+  showCelebrate('Quest complete! 📜', `+${amt}`, `${esc(questText(q))}`, 'wow');
   if (currentScreen === 'home') renderHome();
 }
 function questsHtml() {
@@ -4135,15 +4135,15 @@ function questsHtml() {
     return `<div class="quest ${q.claimed ? 'claimed' : ''} ${ready ? 'ready' : ''}"><span class="q-ic">${q.buy ? '🥚' : d.icon || '📜'}</span>
       <div class="q-main"><div class="q-t">${esc(questText(q))}</div><div class="q-bar"><i style="width:${Math.round(p / q.target * 100)}%"></i></div></div>
       <div class="q-side"><span class="q-rw d-${diff}">+${q.buy ? `${(q.spent || 0) + 50}` : q.reward} 🪙</span>
-      ${q.claimed ? '<span class="tiny muted">✔ resgatada</span>' : ready ? `<button class="btn small gold" data-claim="${scope}|${q.id}">Resgatar</button>` : `<span class="tiny muted">${p}/${q.target}</span>`}</div></div>`; };
-  return `<div class="card span2 quests"><div class="row"><b>📜 Missões</b><span class="tiny muted grow">fácil +5–10 · média +20–30 · difícil +50–80</span></div>
-    <div class="q-sec">Hoje</div>${Q.day.list.map(q => row(q, 'day')).join('')}
-    <div class="q-sec">Esta semana</div>${Q.week.list.map(q => row(q, 'week')).join('')}</div>`;
+      ${q.claimed ? '<span class="tiny muted">✔ claimed</span>' : ready ? `<button class="btn small gold" data-claim="${scope}|${q.id}">Claim</button>` : `<span class="tiny muted">${p}/${q.target}</span>`}</div></div>`; };
+  return `<div class="card span2 quests"><div class="row"><b>📜 Quests</b><span class="tiny muted grow">easy +5–10 · medium +20–30 · hard +50–80</span></div>
+    <div class="q-sec">Today</div>${Q.day.list.map(q => row(q, 'day')).join('')}
+    <div class="q-sec">This week</div>${Q.week.list.map(q => row(q, 'week')).join('')}</div>`;
 }
 
 /* ---------- Fase 5: 💌 Recadinhos secretos dos pais ---------- */
 // Os textos ficam no servidor, fora do estado da criança: ela só recebe um recadinho quando compra o envelope.
-SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'voucher'), 0, { id: 'note', label: '💌 Recadinho secreto' });
+SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'voucher'), 0, { id: 'note', label: '💌 Secret note' });
 const notePrice = () => Math.max(1, Number(S.settings.notePrice) || 500);
 function envelopeSVG(cls = '') {
   return `<div class="env ${cls}"><div class="env-back"></div><div class="env-letter"><span>💌</span></div><div class="env-front"></div><div class="env-flap"></div><div class="env-heart">❤</div></div>`;
@@ -4157,21 +4157,21 @@ function noteShopHtml() {
   const n = VIEW.noteAvail;
   const opened = (S.notesOpened || []).length;
   const soon = n === 0;
-  return `<div class="item note-item ${soon ? 'soon' : ''}"><div class="pic">${envelopeSVG('idle')}</div><div class="nm">Recadinho secreto</div>
-    <div class="tiny muted">${n == null ? 'Procurando recadinhos…' : soon ? 'Em breve! Seus pais ainda vão escrever.' : 'Um recadinho dos seus pais, só para você. Nunca repete.'}</div>
+  return `<div class="item note-item ${soon ? 'soon' : ''}"><div class="pic">${envelopeSVG('idle')}</div><div class="nm">Secret note</div>
+    <div class="tiny muted">${n == null ? 'Looking for notes…' : soon ? 'Coming soon! Your parents haven’t written one yet.' : 'A note from your parents, just for you. Never repeats.'}</div>
     <div class="pr">🪙 ${notePrice()}</div>
-    <div class="item-act">${soon ? '<button class="btn small" disabled>Em breve 💌</button>' : `<button class="btn small primary" data-note-buy ${n == null ? 'disabled' : ''}>Comprar envelope</button>`}</div></div>
-    <div class="item note-item mine"><div class="pic" style="font-size:42px">📬</div><div class="nm">Meus recadinhos</div><div class="tiny muted">${opened ? `${opened} aberto${opened > 1 ? 's' : ''}` : 'Ainda nenhum'}</div><div class="item-act"><button class="btn small" data-act="mynotes">Ler de novo</button></div></div>`;
+    <div class="item-act">${soon ? '<button class="btn small" disabled>Coming soon 💌</button>' : `<button class="btn small primary" data-note-buy ${n == null ? 'disabled' : ''}>Buy envelope</button>`}</div></div>
+    <div class="item note-item mine"><div class="pic" style="font-size:42px">📬</div><div class="nm">My notes</div><div class="tiny muted">${opened ? `${opened} opened` : 'None yet'}</div><div class="item-act"><button class="btn small" data-act="mynotes">Read again</button></div></div>`;
 }
 async function buyNote() {
   const price = notePrice();
-  if (S.coins < price) { say(`Faltam <b>${price - Math.max(0, S.coins)}</b> moedas para o recadinho secreto. 💌`, { mood: 'think' }); return; }
-  const ok = await confirmBox('Comprar o recadinho?', `Um envelope secreto por <b>🪙 ${price}</b>?`, 'Comprar 💌');
+  if (S.coins < price) { say(`You need <b>${price - Math.max(0, S.coins)}</b> more coins for the secret note. 💌`, { mood: 'think' }); return; }
+  const ok = await confirmBox('Buy the note?', `A secret envelope for <b>🪙 ${price}</b>?`, 'Buy 💌');
   if (!ok) return;
   let r;
   try { r = await apiCall(`/api/children/${Server.childId}/notes/open`, { method: 'POST', data: {} }); }
-  catch (e) { toast(e.status === 404 ? 'Os recadinhos acabaram por enquanto. 💌' : 'Não consegui abrir agora. Tente de novo.'); refreshNoteStatus().then(() => currentScreen === 'shop' && renderShop()); return; }
-  addCoins(-price, 'Lojinha: Recadinho secreto', 'note-' + r.note.id);
+  catch (e) { toast(e.status === 404 ? 'No more notes for now. 💌' : 'I couldn’t open it right now. Try again.'); refreshNoteStatus().then(() => currentScreen === 'shop' && renderShop()); return; }
+  addCoins(-price, 'Shop: Secret note', 'note-' + r.note.id);
   S.notesOpened = [Object.assign({}, r.note), ...(S.notesOpened || []).filter(x => x.id !== r.note.id)];
   save();
   questEvent('buy', { cat: 'note', price });
@@ -4180,12 +4180,12 @@ async function buyNote() {
   openEnvelope(r.note);
 }
 function noteCard(n) {
-  return `<div class="note-paper"><div class="note-text">${esc(n.text).replace(/\n/g, '<br>')}</div><div class="note-from">💛 ${esc(n.from || 'Seus pais')} · ${new Date(n.openedAt || Date.now()).toLocaleDateString('pt-BR')}</div></div>`;
+  return `<div class="note-paper"><div class="note-text">${esc(n.text).replace(/\n/g, '<br>')}</div><div class="note-from">💛 ${esc(n.from || 'Your parents')} · ${new Date(n.openedAt || Date.now()).toLocaleDateString('en-GB')}</div></div>`;
 }
 function openEnvelope(n) {
   const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   const m = openModal(`<div class="modal-body env-stage">${envelopeSVG('closed')}<div class="env-reveal hidden">${noteCard(n)}</div></div>
-    <div class="modal-foot" style="justify-content:center"><button class="btn" data-mine>📬 Meus recadinhos</button><button class="btn primary" data-close>💛 Guardar</button></div>`);
+    <div class="modal-foot" style="justify-content:center"><button class="btn" data-mine>📬 My notes</button><button class="btn primary" data-close>💛 Keep it</button></div>`);
   const env = $('.env', m);
   const show2 = () => { env.classList.add('gone'); $('.env-reveal', m).classList.remove('hidden'); if (typeof celebrateFX === 'function') celebrateFX('hearts'); };
   $('[data-mine]', m).onclick = () => { closeModal(); show('notes'); };
@@ -4197,57 +4197,57 @@ function openEnvelope(n) {
 function renderNotes() {
   const el = $('#scr-notes');
   const list = S.notesOpened || [];
-  el.innerHTML = `<div class="collection"><div class="card"><div class="row wrap"><h3 class="grow" style="margin:0">💌 Meus recadinhos</h3><button class="btn small" data-act="toshop">💌 Comprar envelope</button></div>
-    <p class="tiny muted" style="margin:4px 0 0">Os recadinhos que você já abriu ficam guardados aqui.</p></div>
-    ${list.length ? list.map(n => `<div class="card">${noteCard(n)}</div>`).join('') : '<div class="card"><p class="muted">Você ainda não abriu nenhum recadinho. Eles ficam na lojinha, em 💌 Recadinho secreto.</p></div>'}</div>`;
+  el.innerHTML = `<div class="collection"><div class="card"><div class="row wrap"><h3 class="grow" style="margin:0">💌 My notes</h3><button class="btn small" data-act="toshop">💌 Buy envelope</button></div>
+    <p class="tiny muted" style="margin:4px 0 0">The notes you’ve already opened are kept here.</p></div>
+    ${list.length ? list.map(n => `<div class="card">${noteCard(n)}</div>`).join('') : '<div class="card"><p class="muted">You haven’t opened any notes yet. You’ll find them in the Shop, under 💌 Secret note.</p></div>'}</div>`;
   $('[data-act=toshop]', el).onclick = () => { VIEW.shopCat = 'note'; show('shop'); };
 }
 // Aba dos pais: um recadinho por vez, cada filho com os seus
 async function pNotes(box) {
   const kids = (Server.me && Server.me.children) || [];
-  if (!kids.length) { box.innerHTML = '<p class="muted">Os recadinhos precisam do servidor (conta da família).</p>'; return; }
+  if (!kids.length) { box.innerHTML = '<p class="muted">Secret notes need the server (family account).</p>'; return; }
   if (!VIEW.noteKid || !kids.some(k => k.id === VIEW.noteKid)) VIEW.noteKid = Server.childId || kids[0].id;
-  box.innerHTML = '<p class="muted">Carregando…</p>';
+  box.innerHTML = '<p class="muted">Loading…</p>';
   let notes = [];
   try { notes = (await apiCall(`/api/children/${VIEW.noteKid}/notes`)).notes; }
-  catch (e) { box.innerHTML = `<div class="notice bad">${esc(e.message)}</div><button class="btn" id="nrel">Digitar a senha de novo</button>`; $('#nrel', box).onclick = () => { VIEW.parentsUnlocked = false; show('parents'); }; return; }
+  catch (e) { box.innerHTML = `<div class="notice bad">${esc(e.message)}</div><button class="btn" id="nrel">Enter the password again</button>`; $('#nrel', box).onclick = () => { VIEW.parentsUnlocked = false; show('parents'); }; return; }
   const kid = kids.find(k => k.id === VIEW.noteKid);
   const waiting = notes.filter(n => !n.openedAt).length;
-  box.innerHTML = `<div class="card"><b>💌 Recadinhos secretos</b>
-      <p class="tiny muted" style="margin:4px 0">Escreva recadinhos para cada filho. Eles ficam guardados em segredo: a criança só lê quando compra o envelope na lojinha (🪙 ${notePrice()}, ajustável em Ajustes). Cada compra sorteia um recadinho ainda não lido, sem repetir.</p>
+  box.innerHTML = `<div class="card"><b>💌 Secret notes</b>
+      <p class="tiny muted" style="margin:4px 0">Write notes for each child. They are kept secret: your child only reads one when they buy the envelope in the Shop (🪙 ${notePrice()}, adjustable in Settings). Each purchase draws a note not yet read, with no repeats.</p>
       ${kids.length > 1 ? `<div class="seg small">${kids.map(k => `<button data-nk="${k.id}" class="${k.id === VIEW.noteKid ? 'on' : ''}">${k.avatar || '🦉'} ${esc(k.name)}</button>`).join('')}</div>` : ''}
-      <div style="margin-top:8px"><textarea id="n-text" maxlength="1000" rows="3" placeholder="Para ${esc(kid.name)}: ex.: Tenho muito orgulho de você! Vale um sorvete comigo no sábado. 🍦" style="width:100%;padding:8px;border-radius:10px;border:1.5px solid var(--line);font:inherit"></textarea>
-      <div class="row"><span class="tiny muted grow">${waiting} guardado${waiting === 1 ? '' : 's'} · ${notes.length - waiting} já aberto${notes.length - waiting === 1 ? '' : 's'}</span><button class="btn small primary" id="n-add">Guardar recadinho</button></div></div></div>
-    <div class="card"><b>Recadinhos de ${esc(kid.name)}</b><div style="display:grid;gap:6px;margin-top:6px">
-      ${notes.length ? notes.slice().reverse().map(n => `<div class="pnote ${n.openedAt ? 'opened' : ''}"><div class="grow">${esc(n.text).replace(/\n/g, '<br>')}<div class="tiny muted">${n.openedAt ? `✅ Comprado e lido em ${new Date(n.openedAt).toLocaleDateString('pt-BR')} ${new Date(n.openedAt).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : '🔒 Guardado (ainda não comprado)'} · por ${esc(n.from || '')}</div></div>
-        ${n.openedAt ? '' : `<button class="btn small" data-ndel="${n.id}" aria-label="Apagar">✕</button>`}</div>`).join('') : '<p class="muted">Nenhum recadinho ainda.</p>'}</div></div>`;
+      <div style="margin-top:8px"><textarea id="n-text" maxlength="1000" rows="3" placeholder="For ${esc(kid.name)}: e.g. I’m so proud of you! This is worth an ice cream with me on Saturday. 🍦" style="width:100%;padding:8px;border-radius:10px;border:1.5px solid var(--line);font:inherit"></textarea>
+      <div class="row"><span class="tiny muted grow">${waiting} saved · ${notes.length - waiting} already opened</span><button class="btn small primary" id="n-add">Save note</button></div></div></div>
+    <div class="card"><b>${esc(kid.name)}’s notes</b><div style="display:grid;gap:6px;margin-top:6px">
+      ${notes.length ? notes.slice().reverse().map(n => `<div class="pnote ${n.openedAt ? 'opened' : ''}"><div class="grow">${esc(n.text).replace(/\n/g, '<br>')}<div class="tiny muted">${n.openedAt ? `✅ Bought and read on ${new Date(n.openedAt).toLocaleDateString('en-GB')} ${new Date(n.openedAt).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}` : '🔒 Saved (not bought yet)'} · by ${esc(n.from || '')}</div></div>
+        ${n.openedAt ? '' : `<button class="btn small" data-ndel="${n.id}" aria-label="Delete">✕</button>`}</div>`).join('') : '<p class="muted">No notes yet.</p>'}</div></div>`;
   $$('[data-nk]', box).forEach(b => b.onclick = () => { VIEW.noteKid = b.dataset.nk; pNotes(box); });
   $('#n-add', box).onclick = async () => { const t = $('#n-text', box).value; if (!t.trim()) return;
-    try { await apiCall(`/api/children/${VIEW.noteKid}/notes`, { method: 'POST', data: { text: t } }); toast('Recadinho guardado 💌'); pNotes(box); } catch (e) { toast(e.message); } };
-  $$('[data-ndel]', box).forEach(b => b.onclick = async () => { if (!(await confirmBox('Apagar recadinho?', 'Ele ainda não foi lido.', 'Apagar', true))) return;
+    try { await apiCall(`/api/children/${VIEW.noteKid}/notes`, { method: 'POST', data: { text: t } }); toast('Note saved 💌'); pNotes(box); } catch (e) { toast(e.message); } };
+  $$('[data-ndel]', box).forEach(b => b.onclick = async () => { if (!(await confirmBox('Delete note?', 'It hasn’t been read yet.', 'Delete', true))) return;
     try { await apiCall(`/api/children/${VIEW.noteKid}/notes/${b.dataset.ndel}`, { method: 'DELETE' }); pNotes(box); } catch (e) { toast(e.message); } });
 }
 
 /* ---------- Fase 6: confete ao gabaritar + 🎉 Reações (dancinhas, musiquinhas, confetes) ---------- */
-SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'bg'), 0, { id: 'react', label: '🎉 Reações' });
+SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'bg'), 0, { id: 'react', label: '🎉 Reactions' });
 SHOP_ITEMS.push(
   // dancinhas do mascote (só movimentos)
-  { id: 're-dance-jump', cat: 'react', sub: 'dance', name: 'Pulinhos', price: 300, emoji: '🦘' },
-  { id: 're-dance-spin', cat: 'react', sub: 'dance', name: 'Giro', price: 400, emoji: '🌀' },
-  { id: 're-dance-robot', cat: 'react', sub: 'dance', name: 'Dança do robô', price: 500, emoji: '🤖' },
-  { id: 're-dance-macarena', cat: 'react', sub: 'dance', name: 'Dancinha estilo Macarena', price: 600, emoji: '💃' },
+  { id: 're-dance-jump', cat: 'react', sub: 'dance', name: 'Little hops', price: 300, emoji: '🦘' },
+  { id: 're-dance-spin', cat: 'react', sub: 'dance', name: 'Spin', price: 400, emoji: '🌀' },
+  { id: 're-dance-robot', cat: 'react', sub: 'dance', name: 'Robot dance', price: 500, emoji: '🤖' },
+  { id: 're-dance-macarena', cat: 'react', sub: 'dance', name: 'Macarena-style dance', price: 600, emoji: '💃' },
   { id: 're-dance-moon', cat: 'react', sub: 'dance', name: 'Moonwalk', price: 800, emoji: '🕺' },
   // musiquinhas originais (Web Audio)
-  { id: 're-mus-fanfare', cat: 'react', sub: 'music', name: 'Fanfarra da vitória', price: 250, emoji: '🎺' },
-  { id: 're-mus-bells', cat: 'react', sub: 'music', name: 'Sininhos mágicos', price: 250, emoji: '🔔' },
-  { id: 're-mus-arcade', cat: 'react', sub: 'music', name: 'Fliperama', price: 300, emoji: '🕹️' },
-  { id: 're-mus-robot', cat: 'react', sub: 'music', name: 'Bip-bop do robô', price: 300, emoji: '📟' },
-  { id: 're-mus-harp', cat: 'react', sub: 'music', name: 'Harpa das estrelas', price: 400, emoji: '🪕' },
+  { id: 're-mus-fanfare', cat: 'react', sub: 'music', name: 'Victory fanfare', price: 250, emoji: '🎺' },
+  { id: 're-mus-bells', cat: 'react', sub: 'music', name: 'Magic bells', price: 250, emoji: '🔔' },
+  { id: 're-mus-arcade', cat: 'react', sub: 'music', name: 'Arcade', price: 300, emoji: '🕹️' },
+  { id: 're-mus-robot', cat: 'react', sub: 'music', name: 'Robot beep-bop', price: 300, emoji: '📟' },
+  { id: 're-mus-harp', cat: 'react', sub: 'music', name: 'Starry harp', price: 400, emoji: '🪕' },
   // confetes
-  { id: 're-conf-stars', cat: 'react', sub: 'confetti', name: 'Chuva de estrelas', price: 300, emoji: '⭐' },
-  { id: 're-conf-hearts', cat: 'react', sub: 'confetti', name: 'Corações', price: 300, emoji: '💖' },
-  { id: 're-conf-rainbow', cat: 'react', sub: 'confetti', name: 'Arco-íris', price: 400, emoji: '🌈' },
-  { id: 're-conf-fireworks', cat: 'react', sub: 'confetti', name: 'Fogos de artifício', price: 500, emoji: '🎆' },
+  { id: 're-conf-stars', cat: 'react', sub: 'confetti', name: 'Shower of stars', price: 300, emoji: '⭐' },
+  { id: 're-conf-hearts', cat: 'react', sub: 'confetti', name: 'Hearts', price: 300, emoji: '💖' },
+  { id: 're-conf-rainbow', cat: 'react', sub: 'confetti', name: 'Rainbow', price: 400, emoji: '🌈' },
+  { id: 're-conf-fireworks', cat: 'react', sub: 'confetti', name: 'Fireworks', price: 500, emoji: '🎆' },
 );
 const reducedMotion = () => !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
 const soundOn = () => S.settings.sound !== false;
@@ -4333,19 +4333,19 @@ function celebrateFX(kind = 'small', only = null) {
 }
 function reactCard(it) {
   const owned = S.owned.includes(it.id); const on = (S.equipped || {})[it.sub] === it.id;
-  const subL = { dance: 'Dancinha', music: 'Musiquinha', confetti: 'Confete' }[it.sub];
+  const subL = { dance: 'Dance', music: 'Tune', confetti: 'Confetti' }[it.sub];
   return `<div class="item react-item ${owned ? 'owned' : ''}"><div class="pic react-pic">${it.emoji}</div><div class="nm">${esc(it.name)}</div><div class="tiny muted">${subL}</div><div class="pr">🪙 ${it.price}</div>
-    <div class="item-act"><button class="btn small" data-test="${it.id}">▶ Testar</button>${!owned ? `<button class="btn small primary" data-buy="${it.id}">Comprar</button>` : on ? `<button class="btn small ok" data-runequip="${it.id}">Usando ✔</button>` : `<button class="btn small" data-requip="${it.id}">Usar</button>`}</div></div>`;
+    <div class="item-act"><button class="btn small" data-test="${it.id}">▶ Try</button>${!owned ? `<button class="btn small primary" data-buy="${it.id}">Buy</button>` : on ? `<button class="btn small ok" data-runequip="${it.id}">Using ✔</button>` : `<button class="btn small" data-requip="${it.id}">Use</button>`}</div></div>`;
 }
 
 /* ---------- Fase 7: 🪄 Varinha mágica — preencher a semana pelo currículo de referência ---------- */
 // Calendário letivo: início do ano e semanas de férias (os pais ajustam em Ajustes). Semanas de férias não contam.
 const DEFAULT_SCHOOL_START = '2026-08-03';
 const DEFAULT_HOLIDAYS = [
-  { from: '2026-10-12', to: '2026-10-16', label: 'Feriado de outubro / half-term' },
-  { from: '2026-12-14', to: '2027-01-29', label: 'Férias de verão' },
-  { from: '2027-02-08', to: '2027-02-12', label: 'Carnaval' },
-  { from: '2027-03-29', to: '2027-04-02', label: 'Semana Santa' },
+  { from: '2026-10-12', to: '2026-10-16', label: 'October holiday / half-term' },
+  { from: '2026-12-14', to: '2027-01-29', label: 'Summer holidays' },
+  { from: '2027-02-08', to: '2027-02-12', label: 'Carnival' },
+  { from: '2027-03-29', to: '2027-04-02', label: 'Easter week' },
 ];
 function mondayOf(d) { const dt = new Date(d + 'T12:00:00'); const wd = (dt.getDay() + 6) % 7; return addDays(d, -wd); }
 function isHolidayWeek(mon, hol) { const mid = addDays(mon, 2); return (hol || []).some(h => h.from && h.to && mid >= h.from && mid <= h.to); }
@@ -4385,12 +4385,12 @@ function wandText(row, sid) {
 }
 async function useWand(week) {
   const year = S.settings.year;
-  if (!year) { say('Primeiro escolha o <b>ano escolar</b>. 🎓', { mood: 'think' }); return; }
+  if (!year) { say('First choose the <b>school year</b>. 🎓', { mood: 'think' }); return; }
   const w = clamp(week || planningAcademicWeek(), 1, 37);
   const subs = mySubjects();
-  const stop = showLoading(['Agitando a varinha… 🪄', 'Procurando a semana no currículo… 📚']);
+  const stop = showLoading(['Waving the magic wand… 🪄', 'Finding the week in the curriculum… 📚']);
   let rows = [];
-  try { rows = await curriculumRows(year, w, subs); } catch (e) { stop(); say('Não consegui abrir o currículo agora. Tente de novo. 🙂', { mood: 'sad' }); return; }
+  try { rows = await curriculumRows(year, w, subs); } catch (e) { stop(); say('I couldn’t open the curriculum just now. Please try again. 🙂', { mood: 'sad' }); return; }
   stop();
   const ai = currentScreen === 'setup' && Server.ai && VIEW.setupMode !== 'subjects';
   if (!ai && $('#scr-setup textarea[data-sid]')) collectDraft();
@@ -4405,16 +4405,16 @@ async function useWand(week) {
   const r0 = rows[0];
   VIEW.wand = { week: w, rows, filled, missing: subs.filter(id => !filled.includes(id)), term: r0 && r0.term, wot: r0 && r0.week_of_term, auto: w === planningAcademicWeek() };
   if (ai) { VIEW.openSubj = {}; renderSetupAI(); } else renderSetup();
-  if (!filled.length) say('Não achei essa semana no currículo de referência para as suas matérias. 🤔', { mood: 'think' });
+  if (!filled.length) say('I couldn’t find this week in the reference curriculum for your subjects. 🤔', { mood: 'think' });
 }
 function wandBarHtml() {
   const v = VIEW.wand;
-  const btn = `<button type="button" class="btn small wand-btn" data-act="wand">🪄 Preencher pela varinha</button>`;
-  if (!v) return `<div class="wand-bar">${btn}<span class="tiny muted">Preenche cada matéria com o conteúdo da semana letiva ${S.settings.year ? planningAcademicWeek() : ''} (currículo de referência).</span></div>`;
-  return `<div class="wand-bar on"><div class="row wrap"><b>🪄 Semana letiva</b>
-      <span class="wk-nav"><button type="button" class="btn small" data-wk="-1" aria-label="Semana anterior" ${v.week <= 1 ? 'disabled' : ''}>◂</button><b>semana ${v.week}</b><button type="button" class="btn small" data-wk="1" aria-label="Próxima semana" ${v.week >= 37 ? 'disabled' : ''}>▸</button></span>
-      <span class="tiny muted">${v.term ? `term ${v.term}, semana ${v.wot}` : ''}${v.auto ? ' · pelo calendário' : ''}</span></div>
-    <div class="tiny">É um <b>currículo de referência</b>: confira e ajuste ao que a escola realmente passou. Escola adiantada ou atrasada? Use ◂ ▸.${v.missing.length ? ` <span class="muted">Sem referência para: ${v.missing.map(id => SUBJ[id].short).join(', ')}.</span>` : ''}</div></div>`;
+  const btn = `<button type="button" class="btn small wand-btn" data-act="wand">🪄 Fill in with the magic wand</button>`;
+  if (!v) return `<div class="wand-bar">${btn}<span class="tiny muted">Fills each subject with the content of school week ${S.settings.year ? planningAcademicWeek() : ''} (reference curriculum).</span></div>`;
+  return `<div class="wand-bar on"><div class="row wrap"><b>🪄 School week</b>
+      <span class="wk-nav"><button type="button" class="btn small" data-wk="-1" aria-label="Previous week" ${v.week <= 1 ? 'disabled' : ''}>◂</button><b>week ${v.week}</b><button type="button" class="btn small" data-wk="1" aria-label="Next week" ${v.week >= 37 ? 'disabled' : ''}>▸</button></span>
+      <span class="tiny muted">${v.term ? `term ${v.term}, week ${v.wot}` : ''}${v.auto ? ' · from the calendar' : ''}</span></div>
+    <div class="tiny">This is a <b>reference curriculum</b>: check it and adjust it to what the school actually taught. School ahead or behind? Use ◂ ▸.${v.missing.length ? ` <span class="muted">No reference for: ${v.missing.map(id => SUBJ[id].short).join(', ')}.</span>` : ''}</div></div>`;
 }
 function bindWand(el) {
   const b = $('[data-act=wand]', el); if (b) b.onclick = () => useWand();
@@ -4423,145 +4423,145 @@ function bindWand(el) {
 // Ajustes dos pais: calendário escolar
 function calendarSettingsHtml(st) {
   const hol = st.holidays || DEFAULT_HOLIDAYS;
-  return `<div class="card"><b>📅 Calendário escolar (para a 🪄 varinha)</b>
-    <div class="form-grid" style="margin-top:6px"><label class="field">Início do ano letivo<input type="date" id="s-sstart" value="${esc(st.schoolStart || DEFAULT_SCHOOL_START)}"></label></div>
-    <div class="tiny muted" style="margin:4px 0">Semanas de férias (não contam como semana letiva). Hoje: <b>semana letiva ${academicWeekOf(today())}</b>.</div>
-    <div id="hol-list" style="display:grid;gap:6px">${hol.map((h, i) => `<div class="row wrap hol-row"><input type="date" data-hf="${i}" value="${esc(h.from)}"><span>até</span><input type="date" data-ht="${i}" value="${esc(h.to)}"><input data-hl="${i}" value="${esc(h.label || '')}" placeholder="nome" class="grow"><button class="btn small" data-hdel="${i}" aria-label="Remover">✕</button></div>`).join('')}</div>
-    <div class="row" style="margin-top:6px"><button class="btn small" id="hol-add">+ Semana de férias</button><button class="btn small" id="hol-reset">↺ Padrão 2026–27</button></div></div>`;
+  return `<div class="card"><b>📅 School calendar (for the 🪄 magic wand)</b>
+    <div class="form-grid" style="margin-top:6px"><label class="field">First day of the school year<input type="date" id="s-sstart" value="${esc(st.schoolStart || DEFAULT_SCHOOL_START)}"></label></div>
+    <div class="tiny muted" style="margin:4px 0">Holiday weeks (they don’t count as school weeks). Today: <b>school week ${academicWeekOf(today())}</b>.</div>
+    <div id="hol-list" style="display:grid;gap:6px">${hol.map((h, i) => `<div class="row wrap hol-row"><input type="date" data-hf="${i}" value="${esc(h.from)}"><span>to</span><input type="date" data-ht="${i}" value="${esc(h.to)}"><input data-hl="${i}" value="${esc(h.label || '')}" placeholder="name" class="grow"><button class="btn small" data-hdel="${i}" aria-label="Remove">✕</button></div>`).join('')}</div>
+    <div class="row" style="margin-top:6px"><button class="btn small" id="hol-add">+ Holiday week</button><button class="btn small" id="hol-reset">↺ 2026–27 default</button></div></div>`;
 }
 function readHolidays(box) {
   return $$('.hol-row', box).map(r => ({ from: $('[data-hf]', r).value, to: $('[data-ht]', r).value, label: $('[data-hl]', r).value.trim() })).filter(h => h.from && h.to && h.from <= h.to);
 }
 function bindCalendarSettings(box, rerender) {
   $$('[data-hdel]', box).forEach(b => b.onclick = () => { S.settings.holidays = readHolidays(box).filter((_, i) => i !== Number(b.dataset.hdel)); touch('settings'); save(); rerender(); });
-  $('#hol-add', box).onclick = () => { S.settings.holidays = [...readHolidays(box), { from: today(), to: addDays(today(), 4), label: 'Férias' }]; touch('settings'); save(); rerender(); };
+  $('#hol-add', box).onclick = () => { S.settings.holidays = [...readHolidays(box), { from: today(), to: addDays(today(), 4), label: 'Holiday' }]; touch('settings'); save(); rerender(); };
   $('#hol-reset', box).onclick = () => { S.settings.holidays = DEFAULT_HOLIDAYS.map(h => Object.assign({}, h)); S.settings.schoolStart = DEFAULT_SCHOOL_START; touch('settings'); save(); rerender(); };
 }
 // Admin: currículo no SQLite (recarregar, ver e editar uma linha)
 async function adminCurriculumHtml() {
   let st = {}; try { st = await apiCall('/api/admin/curriculum'); } catch (e) { st = { error: e.message }; }
-  return `<div class="card" id="cur-admin"><b>📚 Currículo de referência (varinha)</b>
-    <div class="tiny muted" style="margin:4px 0">${st.error ? esc(st.error) : `${st.rows} semanas · ${st.files} arquivos · versão ${esc(st.version || '—')} · ${st.edited || 0} editadas no admin${st.seededAt ? ` · carregado em ${new Date(st.seededAt).toLocaleString('pt-BR')}` : ''}`}</div>
-    <div class="row wrap"><button class="btn small" id="cur-seed">🔄 Recarregar currículo</button><span class="tiny muted">(não apaga as linhas editadas aqui)</span></div>
+  return `<div class="card" id="cur-admin"><b>📚 Reference curriculum (magic wand)</b>
+    <div class="tiny muted" style="margin:4px 0">${st.error ? esc(st.error) : `${st.rows} weeks · ${st.files} files · version ${esc(st.version || '—')} · ${st.edited || 0} edited in admin${st.seededAt ? ` · loaded on ${new Date(st.seededAt).toLocaleString('en-GB')}` : ''}`}</div>
+    <div class="row wrap"><button class="btn small" id="cur-seed">🔄 Reload curriculum</button><span class="tiny muted">(doesn’t erase rows edited here)</span></div>
     <div class="row wrap" style="margin-top:8px"><select id="cur-y">${SCHOOL_YEARS.map(y => `<option value="${y[0]}" ${y[0] === (VIEW.curY || 'Y5') ? 'selected' : ''}>${y[1]}</option>`).join('')}</select>
-      <select id="cur-s"><option>…</option></select><input type="number" id="cur-w" min="1" max="37" value="${VIEW.curW || 1}" style="width:64px"><button class="btn small" id="cur-load">Ver</button></div>
+      <select id="cur-s"><option>…</option></select><input type="number" id="cur-w" min="1" max="37" value="${VIEW.curW || 1}" style="width:64px"><button class="btn small" id="cur-load">View</button></div>
     <div id="cur-row" style="margin-top:6px"></div></div>`;
 }
 // Admin: 🏦 banco de sugestões compartilhado (números, avisos, revisar por semana)
 async function adminBankHtml() {
-  let st; try { st = await apiCall('/api/admin/bank'); } catch (e) { return `<div class="card"><b>🏦 Banco de sugestões</b><p class="tiny muted">${esc(e.message)}</p></div>`; }
+  let st; try { st = await apiCall('/api/admin/bank'); } catch (e) { return `<div class="card"><b>🏦 Question bank</b><p class="tiny muted">${esc(e.message)}</p></div>`; }
   const sum = (l, f = () => true) => (l || []).filter(f).reduce((a, x) => a + x.n, 0);
   const uses = l => (l || []).reduce((a, x) => a + (x.uses || 0), 0);
   VIEW.bkReported = st.items;
-  const item = it => `<div class="review-item bank-it ${it.status !== 'ok' ? 'fb-done' : ''}" data-bid="${esc(it.id)}"><div class="meta">${esc(it.ckey || '')} · ${it.source} · ${it.status === 'hidden' ? '🙈 escondida' : '✅ ativa'} · usada ${it.uses}× · 🚩 ${it.reports}</div>
-      <div class="ans"><b>${esc(it.q.type)}</b> ${esc(it.q.q)}${it.q.options && it.q.options.length ? `<div class="tiny">opções: ${it.q.options.map(esc).join(' | ')}</div>` : ''}${it.q.text ? `<div class="tiny">${esc(it.q.text)}</div>` : ''}<div class="tiny">resposta: <b>${esc(it.q.answer || '(livre)')}</b> · dica: ${esc(it.q.hint || '')}</div></div>
-      <div class="row wrap">${it.status !== 'ok' ? `<button class="btn small" data-bst="ok">↺ Reativar</button>` : `<button class="btn small" data-bst="hidden">🙈 Esconder</button>`}<button class="btn small" data-bedit>✏️ Editar</button><button class="btn small danger" data-bst="deleted">Apagar</button></div></div>`;
-  return `<div class="card" id="bank-admin"><b>🏦 Banco de sugestões (compartilhado entre as famílias)</b>
-    <div class="tiny muted" style="margin:4px 0">${sum(st.questions, x => x.status === 'ok')} perguntas ativas (${sum(st.questions, x => x.source === 'repo' && x.status === 'ok')} do repositório · ${sum(st.questions, x => x.source === 'api' && x.status === 'ok')} criadas na hora · ${sum(st.questions, x => x.source === 'admin')} editadas) · ${sum(st.books, x => x.status === 'ok')} livros · ${st.keys} matérias-semana · usadas ${uses(st.questions)}× · ${st.repoFiles} semanas publicadas no repositório (${st.files} já carregadas)</div>
-    <div class="tiny"><b>Avisados ou escondidos (${st.items.length + st.books.length})</b></div>
+  const item = it => `<div class="review-item bank-it ${it.status !== 'ok' ? 'fb-done' : ''}" data-bid="${esc(it.id)}"><div class="meta">${esc(it.ckey || '')} · ${it.source} · ${it.status === 'hidden' ? '🙈 hidden' : '✅ active'} · used ${it.uses}× · 🚩 ${it.reports}</div>
+      <div class="ans"><b>${esc(it.q.type)}</b> ${esc(it.q.q)}${it.q.options && it.q.options.length ? `<div class="tiny">options: ${it.q.options.map(esc).join(' | ')}</div>` : ''}${it.q.text ? `<div class="tiny">${esc(it.q.text)}</div>` : ''}<div class="tiny">answer: <b>${esc(it.q.answer || '(open)')}</b> · hint: ${esc(it.q.hint || '')}</div></div>
+      <div class="row wrap">${it.status !== 'ok' ? `<button class="btn small" data-bst="ok">↺ Reactivate</button>` : `<button class="btn small" data-bst="hidden">🙈 Hide</button>`}<button class="btn small" data-bedit>✏️ Edit</button><button class="btn small danger" data-bst="deleted">Delete</button></div></div>`;
+  return `<div class="card" id="bank-admin"><b>🏦 Question bank (shared between families)</b>
+    <div class="tiny muted" style="margin:4px 0">${sum(st.questions, x => x.status === 'ok')} active questions (${sum(st.questions, x => x.source === 'repo' && x.status === 'ok')} from the repository · ${sum(st.questions, x => x.source === 'api' && x.status === 'ok')} created on the fly · ${sum(st.questions, x => x.source === 'admin')} edited) · ${sum(st.books, x => x.status === 'ok')} books · ${st.keys} subject-weeks · used ${uses(st.questions)}× · ${st.repoFiles} weeks published in the repository (${st.files} already loaded)</div>
+    <div class="tiny"><b>Reported or hidden (${st.items.length + st.books.length})</b></div>
     ${st.items.map(item).join('')}${st.books.map(bk => `<div class="review-item bank-it" data-bid="${esc(bk.ckey)}"><div class="meta">📚 ${esc(bk.ckey)} · ${bk.status} · 🚩 ${bk.reports}</div><div class="ans">${esc(bk.title)}</div>
-      <div class="row">${bk.status !== 'ok' ? '<button class="btn small" data-bst="ok">↺ Reativar</button>' : '<button class="btn small" data-bst="hidden">🙈 Esconder</button>'}</div></div>`).join('') || (st.items.length ? '' : '<p class="tiny muted">Nenhum aviso.</p>')}
+      <div class="row">${bk.status !== 'ok' ? '<button class="btn small" data-bst="ok">↺ Reactivate</button>' : '<button class="btn small" data-bst="hidden">🙈 Hide</button>'}</div></div>`).join('') || (st.items.length ? '' : '<p class="tiny muted">No reports.</p>')}
     <div class="row wrap" style="margin-top:8px"><select id="bk-y">${SCHOOL_YEARS.map(y => `<option value="${y[0]}" ${y[0] === (VIEW.bkY || 'Y5') ? 'selected' : ''}>${y[1]}</option>`).join('')}</select>
-      <input type="number" id="bk-w" min="1" max="37" value="${VIEW.bkW || planningAcademicWeek()}" style="width:64px"><button class="btn small" id="bk-load">Ver semana</button></div>
+      <input type="number" id="bk-w" min="1" max="37" value="${VIEW.bkW || planningAcademicWeek()}" style="width:64px"><button class="btn small" id="bk-load">View week</button></div>
     <div id="bk-out" style="margin-top:6px"></div></div>`;
 }
 function bindAdminBank(box) {
   const B = $('#bank-admin', box); if (!B) return;
   const bindItems = (root, again) => {
     $$('[data-bst]', root).forEach(b => b.onclick = async () => { const id = b.closest('[data-bid]').dataset.bid;
-      if (b.dataset.bst === 'deleted' && !(await confirmBox('Apagar do banco?', 'Ela não será mais sorteada para nenhuma criança.', 'Apagar', true))) return;
-      try { await apiCall('/api/admin/bank/status', { method: 'POST', data: { id, status: b.dataset.bst } }); toast('Feito'); again(); } catch (e) { toast(e.message); } });
+      if (b.dataset.bst === 'deleted' && !(await confirmBox('Delete from the bank?', 'It will no longer be picked for any child.', 'Delete', true))) return;
+      try { await apiCall('/api/admin/bank/status', { method: 'POST', data: { id, status: b.dataset.bst } }); toast('Done'); again(); } catch (e) { toast(e.message); } });
     $$('[data-bedit]', root).forEach(b => b.onclick = () => { const el = b.closest('[data-bid]'); const id = el.dataset.bid;
       const cur = (VIEW.bkItems || []).find(x => x.id === id) || {}; const q = cur.q || {};
-      el.innerHTML = `<label class="field">Enunciado<textarea data-f="q" rows="2">${esc(q.q || '')}</textarea></label>${q.type === 'mc' ? `<label class="field">Opções (uma por linha)<textarea data-f="options" rows="3">${esc((q.options || []).join('\n'))}</textarea></label>` : ''}
-        <label class="field">Resposta<input data-f="answer" value="${esc(q.answer || '')}"></label><label class="field">Dica<input data-f="hint" value="${esc(q.hint || '')}"></label>
-        <div class="row"><button class="btn small primary" data-bsave>Salvar</button></div>`;
+      el.innerHTML = `<label class="field">Question<textarea data-f="q" rows="2">${esc(q.q || '')}</textarea></label>${q.type === 'mc' ? `<label class="field">Options (one per line)<textarea data-f="options" rows="3">${esc((q.options || []).join('\n'))}</textarea></label>` : ''}
+        <label class="field">Answer<input data-f="answer" value="${esc(q.answer || '')}"></label><label class="field">Hint<input data-f="hint" value="${esc(q.hint || '')}"></label>
+        <div class="row"><button class="btn small primary" data-bsave>Save</button></div>`;
       $('[data-bsave]', el).onclick = async () => { const d = {}; $$('[data-f]', el).forEach(f => { d[f.dataset.f] = f.dataset.f === 'options' ? f.value.split('\n').map(x => x.trim()).filter(Boolean) : f.value; });
-        try { await apiCall('/api/admin/bank/item', { method: 'PUT', data: { id, q: d } }); toast('Pergunta salva ✏️'); again(); } catch (e) { toast(e.message); } };
+        try { await apiCall('/api/admin/bank/item', { method: 'PUT', data: { id, q: d } }); toast('Question saved ✏️'); again(); } catch (e) { toast(e.message); } };
     });
   };
   VIEW.bkItems = VIEW.bkReported || [];
   bindItems(B, () => pAdmin($('#pbody')));
   const load = async () => {
     VIEW.bkY = $('#bk-y', B).value; VIEW.bkW = clamp(Number($('#bk-w', B).value) || 1, 1, 37);
-    const out = $('#bk-out', B); out.innerHTML = '<p class="tiny muted">Carregando…</p>';
+    const out = $('#bk-out', B); out.innerHTML = '<p class="tiny muted">Loading…</p>';
     let r; try { r = await apiCall(`/api/admin/bank?prefix=${encodeURIComponent('uk|' + VIEW.bkY + '|')}`); } catch (e) { out.innerHTML = esc(e.message); return; }
     const keys = r.keys.filter(k => k.ckey.endsWith('|w' + VIEW.bkW));
-    out.innerHTML = keys.length ? `<div class="tiny">${keys.map(k => `<button class="btn small" data-bkey="${esc(k.ckey)}">${esc((SUBJ[k.ckey.split('|')[2]] || {}).short || k.ckey.split('|')[2])}${k.ckey.split('|')[3] ? ' ' + k.ckey.split('|')[3].toUpperCase() : ''} · ${k.n}</button>`).join(' ')}</div><div id="bk-items"></div>` : '<p class="tiny muted">Nada no banco para esta semana ainda.</p>';
+    out.innerHTML = keys.length ? `<div class="tiny">${keys.map(k => `<button class="btn small" data-bkey="${esc(k.ckey)}">${esc((SUBJ[k.ckey.split('|')[2]] || {}).short || k.ckey.split('|')[2])}${k.ckey.split('|')[3] ? ' ' + k.ckey.split('|')[3].toUpperCase() : ''} · ${k.n}</button>`).join(' ')}</div><div id="bk-items"></div>` : '<p class="tiny muted">Nothing in the bank for this week yet.</p>';
     $$('[data-bkey]', out).forEach(b => b.onclick = async () => {
       let l; try { l = await apiCall(`/api/admin/bank?ckey=${encodeURIComponent(b.dataset.bkey)}`); } catch (e) { toast(e.message); return; }
       VIEW.bkItems = l.items; const box2 = $('#bk-items', out);
-      box2.innerHTML = l.items.map(item).join('') || '<p class="tiny muted">Vazio.</p>';
+      box2.innerHTML = l.items.map(item).join('') || '<p class="tiny muted">Empty.</p>';
       bindItems(box2, () => b.click());
     });
   };
   $('#bk-load', B).onclick = load;
-  function item(it) { return `<div class="review-item bank-it ${it.status !== 'ok' ? 'fb-done' : ''}" data-bid="${esc(it.id)}"><div class="meta">${it.source} · ${it.status === 'hidden' ? '🙈 escondida' : '✅ ativa'} · usada ${it.uses}× · 🚩 ${it.reports}</div>
-      <div class="ans"><b>${esc(it.q.type)}</b> ${esc(it.q.q)}${it.q.options && it.q.options.length ? `<div class="tiny">opções: ${it.q.options.map(esc).join(' | ')}</div>` : ''}<div class="tiny">resposta: <b>${esc(it.q.answer || '(livre)')}</b> · dica: ${esc(it.q.hint || '')}</div></div>
-      <div class="row wrap">${it.status !== 'ok' ? '<button class="btn small" data-bst="ok">↺ Reativar</button>' : '<button class="btn small" data-bst="hidden">🙈 Esconder</button>'}<button class="btn small" data-bedit>✏️ Editar</button><button class="btn small danger" data-bst="deleted">Apagar</button></div></div>`; }
+  function item(it) { return `<div class="review-item bank-it ${it.status !== 'ok' ? 'fb-done' : ''}" data-bid="${esc(it.id)}"><div class="meta">${it.source} · ${it.status === 'hidden' ? '🙈 hidden' : '✅ active'} · used ${it.uses}× · 🚩 ${it.reports}</div>
+      <div class="ans"><b>${esc(it.q.type)}</b> ${esc(it.q.q)}${it.q.options && it.q.options.length ? `<div class="tiny">options: ${it.q.options.map(esc).join(' | ')}</div>` : ''}<div class="tiny">answer: <b>${esc(it.q.answer || '(open)')}</b> · hint: ${esc(it.q.hint || '')}</div></div>
+      <div class="row wrap">${it.status !== 'ok' ? '<button class="btn small" data-bst="ok">↺ Reactivate</button>' : '<button class="btn small" data-bst="hidden">🙈 Hide</button>'}<button class="btn small" data-bedit>✏️ Edit</button><button class="btn small danger" data-bst="deleted">Delete</button></div></div>`; }
 }
 function bindAdminCurriculum(box) {
   const loadSubs = async () => { VIEW.curY = $('#cur-y', box).value; let r = { subjects: [] }; try { r = await apiCall(`/api/admin/curriculum?year=${VIEW.curY}`); } catch (e) { /* ignora */ }
     $('#cur-s', box).innerHTML = r.subjects.map(s => `<option value="${s.subject}:${s.level || ''}">${SUBJ[s.subject] ? SUBJ[s.subject].name : s.subject}${s.level ? ' ' + s.level.toUpperCase() : ''}</option>`).join(''); };
   $('#cur-y', box).onchange = loadSubs; loadSubs();
-  $('#cur-seed', box).onclick = async () => { try { const r = await apiCall('/api/admin/curriculum/seed', { method: 'POST', data: {}, timeout: 120000 }); toast(`Currículo recarregado: ${r.rows} semanas`); pAdmin($('#pbody')); } catch (e) { toast(e.message); } };
+  $('#cur-seed', box).onclick = async () => { try { const r = await apiCall('/api/admin/curriculum/seed', { method: 'POST', data: {}, timeout: 120000 }); toast(`Curriculum reloaded: ${r.rows} weeks`); pAdmin($('#pbody')); } catch (e) { toast(e.message); } };
   $('#cur-load', box).onclick = async () => {
     const [subject, level] = $('#cur-s', box).value.split(':'); VIEW.curW = Number($('#cur-w', box).value) || 1;
     let r; try { r = await apiCall(`/api/admin/curriculum?year=${VIEW.curY}&subject=${subject}&level=${level || ''}&week=${VIEW.curW}`); } catch (e) { toast(e.message); return; }
     const row = r.row; const out = $('#cur-row', box);
-    if (!row) { out.innerHTML = '<p class="muted">Semana não encontrada.</p>'; return; }
-    out.innerHTML = `<div class="tiny muted">${esc(row.source || '')} · term ${row.term}, semana ${row.week_of_term} · ${row.type}${row.edited ? ' · ✏️ editada' : ''}</div>
-      <label class="field">Tópico<input id="cr-topic" value="${esc(row.topic)}"></label>
-      <label class="field">Objetivos (um por linha)<textarea id="cr-obj" rows="3">${esc(row.objectives.join('\n'))}</textarea></label>
-      <label class="field">Palavras-chave (uma por linha)<textarea id="cr-kw" rows="2">${esc(row.keywords.join('\n'))}</textarea></label>
-      <label class="field">Spelling (uma por linha)<textarea id="cr-sp" rows="2">${esc((row.spelling || []).join('\n'))}</textarea></label>
-      <button class="btn small primary" id="cr-save">Salvar linha</button>`;
+    if (!row) { out.innerHTML = '<p class="muted">Week not found.</p>'; return; }
+    out.innerHTML = `<div class="tiny muted">${esc(row.source || '')} · term ${row.term}, week ${row.week_of_term} · ${row.type}${row.edited ? ' · ✏️ edited' : ''}</div>
+      <label class="field">Topic<input id="cr-topic" value="${esc(row.topic)}"></label>
+      <label class="field">Objectives (one per line)<textarea id="cr-obj" rows="3">${esc(row.objectives.join('\n'))}</textarea></label>
+      <label class="field">Key words (one per line)<textarea id="cr-kw" rows="2">${esc(row.keywords.join('\n'))}</textarea></label>
+      <label class="field">Spelling (one per line)<textarea id="cr-sp" rows="2">${esc((row.spelling || []).join('\n'))}</textarea></label>
+      <button class="btn small primary" id="cr-save">Save row</button>`;
     $('#cr-save', box).onclick = async () => { try { await apiCall('/api/admin/curriculum', { method: 'PUT', data: { year: VIEW.curY, subject, level: level || '', week: VIEW.curW, topic: $('#cr-topic', box).value,
-      objectives: $('#cr-obj', box).value.split('\n'), keywords: $('#cr-kw', box).value.split('\n'), spelling: $('#cr-sp', box).value.split('\n') } }); toast('Linha salva ✏️'); } catch (e) { toast(e.message); } };
+      objectives: $('#cr-obj', box).value.split('\n'), keywords: $('#cr-kw', box).value.split('\n'), spelling: $('#cr-sp', box).value.split('\n') } }); toast('Row saved ✏️'); } catch (e) { toast(e.message); } };
   };
 }
 
 /* ---------- Fase 8: 💬 botão discreto de dúvida / sugestão / problema ---------- */
 const APP_VERSION = '2026.10.24';
-const FB_KINDS = [['duvida', '❓ Dúvida'], ['sugestao', '💡 Sugestão'], ['problema', '🐞 Problema']];
+const FB_KINDS = [['duvida', '❓ Question'], ['sugestao', '💡 Suggestion'], ['problema', '🐞 Problem']];
 function openFeedback() {
   if (!VIEW.fbKind) VIEW.fbKind = 'duvida';
-  const m = openModal(`<div class="modal-head"><h3>💬 Fale com a gente</h3><button class="btn small" data-close>Fechar</button></div>
+  const m = openModal(`<div class="modal-head"><h3>💬 Talk to us</h3><button class="btn small" data-close>Close</button></div>
     <div class="modal-body fb-body">
       <div class="seg fb-kinds">${FB_KINDS.map(([k, l]) => `<button type="button" data-fk="${k}" class="${VIEW.fbKind === k ? 'on' : ''}">${l}</button>`).join('')}</div>
-      <textarea id="fb-text" maxlength="2000" rows="6" placeholder="Conte o que aconteceu, a sua dúvida ou a sua ideia…"></textarea>
-      <div class="row tiny muted"><span class="grow">${Server.me ? 'A mensagem vai para o administrador do app.' : 'Sem servidor: vamos abrir o seu e-mail.'}</span><span id="fb-count">0/2000</span></div>
+      <textarea id="fb-text" maxlength="2000" rows="6" placeholder="Tell us what happened, your question or your idea…"></textarea>
+      <div class="row tiny muted"><span class="grow">${Server.me ? 'Your message goes to the app’s administrator.' : 'No server: we’ll open your email.'}</span><span id="fb-count">0/2000</span></div>
     </div>
-    <div class="modal-foot"><span class="grow"></span><button class="btn primary" id="fb-send">Enviar</button></div>`);
+    <div class="modal-foot"><span class="grow"></span><button class="btn primary" id="fb-send">Send</button></div>`);
   const ta = $('#fb-text', m); ta.focus();
   ta.oninput = () => { $('#fb-count', m).textContent = `${ta.value.length}/2000`; };
   $$('[data-fk]', m).forEach(b => b.onclick = () => { VIEW.fbKind = b.dataset.fk; $$('[data-fk]', m).forEach(x => x.classList.toggle('on', x === b)); });
   $('#fb-send', m).onclick = async () => {
     const text = ta.value.trim();
-    if (text.length < 3) { toast('Escreva a sua mensagem. 🙂'); return; }
+    if (text.length < 3) { toast('Please write your message. 🙂'); return; }
     if (!Server.me) { location.href = `mailto:carloscurioni@gmail.com?subject=${encodeURIComponent('[Lumi] ' + FB_KINDS.find(k => k[0] === VIEW.fbKind)[1])}&body=${encodeURIComponent(text)}`; closeModal(); return; }
     const btn = $('#fb-send', m); btn.disabled = true;
     try {
       await apiCall('/api/feedback', { method: 'POST', data: { kind: VIEW.fbKind, text, screen: currentScreen, version: APP_VERSION, childId: Server.childId || null } });
-      closeModal(); toast('Mensagem enviada. Obrigado! 💜');
+      closeModal(); toast('Message sent. Thank you! 💜');
     } catch (e) { btn.disabled = false; toast(e.message); }
   };
 }
 // Admin: aba 💬 Mensagens (marcar como resolvida) + e-mail de atendimento
 async function pMessages(box) {
-  box.innerHTML = '<p class="muted">Carregando…</p>';
+  box.innerHTML = '<p class="muted">Loading…</p>';
   let r, st;
   try { [r, st] = await Promise.all([apiCall(`/api/admin/feedback${VIEW.fbAll ? '?all=1' : ''}`), apiCall('/api/admin/settings')]); } catch (e) { box.innerHTML = `<p class="muted">${esc(e.message)}</p>`; return; }
   const label = Object.fromEntries(FB_KINDS);
-  box.innerHTML = `<div class="card"><b>📮 E-mail de atendimento</b>
-      <div class="row wrap" style="margin-top:6px"><input id="fb-mail" type="email" value="${esc(st.support_email)}" class="grow" style="padding:6px;border-radius:8px;border:1.5px solid var(--line)"><button class="btn small primary" id="fb-mail-save">Salvar</button></div>
-      <div class="tiny muted">${r.resend ? '✅ Envio de e-mail ligado (Resend).' : '⚠️ Sem RESEND_API_KEY: as mensagens ficam só aqui. Veja o README para ligar o e-mail.'}</div></div>
-    <div class="card"><div class="row"><b class="grow">💬 Mensagens (${r.items.length})</b><label class="tiny"><input type="checkbox" id="fb-all" ${VIEW.fbAll ? 'checked' : ''}> mostrar resolvidas</label></div>
-      ${r.items.map(f => `<div class="review-item ${f.resolved ? 'fb-done' : ''}"><div class="meta">${new Date(f.created).toLocaleString('pt-BR')} · ${label[f.kind] || f.kind} · ${esc(f.family_name || '')} · ${esc(f.who || '')} · tela ${esc(f.screen || '')} · v${esc(f.app_version || '')}${f.emailed ? ' · 📧 enviado' : ''}</div>
+  box.innerHTML = `<div class="card"><b>📮 Support email</b>
+      <div class="row wrap" style="margin-top:6px"><input id="fb-mail" type="email" value="${esc(st.support_email)}" class="grow" style="padding:6px;border-radius:8px;border:1.5px solid var(--line)"><button class="btn small primary" id="fb-mail-save">Save</button></div>
+      <div class="tiny muted">${r.resend ? '✅ Email sending is on (Resend).' : '⚠️ No RESEND_API_KEY: messages stay here only. See the README to turn on email.'}</div></div>
+    <div class="card"><div class="row"><b class="grow">💬 Messages (${r.items.length})</b><label class="tiny"><input type="checkbox" id="fb-all" ${VIEW.fbAll ? 'checked' : ''}> show resolved</label></div>
+      ${r.items.map(f => `<div class="review-item ${f.resolved ? 'fb-done' : ''}"><div class="meta">${new Date(f.created).toLocaleString('en-GB')} · ${label[f.kind] || f.kind} · ${esc(f.family_name || '')} · ${esc(f.who || '')} · screen ${esc(f.screen || '')} · v${esc(f.app_version || '')}${f.emailed ? ' · 📧 emailed' : ''}</div>
         <div class="ans" style="white-space:pre-wrap">${esc(f.text)}</div>
-        <div class="row"><button class="btn small" data-fbres="${f.id}" data-v="${f.resolved ? 0 : 1}">${f.resolved ? '↺ Reabrir' : '✔ Resolvida'}</button></div></div>`).join('') || '<p class="tiny muted">Nenhuma mensagem.</p>'}</div>`;
+        <div class="row"><button class="btn small" data-fbres="${f.id}" data-v="${f.resolved ? 0 : 1}">${f.resolved ? '↺ Reopen' : '✔ Resolved'}</button></div></div>`).join('') || '<p class="tiny muted">No messages.</p>'}</div>`;
   $('#fb-all', box).onchange = e => { VIEW.fbAll = e.target.checked; pMessages(box); };
-  $('#fb-mail-save', box).onclick = async () => { try { await apiCall('/api/admin/settings', { method: 'PUT', data: { support_email: $('#fb-mail', box).value } }); toast('E-mail salvo'); } catch (e) { toast(e.message); } };
+  $('#fb-mail-save', box).onclick = async () => { try { await apiCall('/api/admin/settings', { method: 'PUT', data: { support_email: $('#fb-mail', box).value } }); toast('Email saved'); } catch (e) { toast(e.message); } };
   $$('[data-fbres]', box).forEach(b => b.onclick = async () => { try { await apiCall(`/api/admin/feedback/${b.dataset.fbres}`, { method: 'POST', data: { resolved: b.dataset.v === '1' } }); pMessages(box); } catch (e) { toast(e.message); } });
 }
 
@@ -4569,13 +4569,13 @@ async function pMessages(box) {
 function renderParents() {
   const el = $('#scr-parents');
   if (!VIEW.parentsUnlocked && Server.me) {
-    el.innerHTML = `<div class="parents"><div class="card" style="max-width:380px;margin:20px auto;width:100%;text-align:center"><h3 style="margin:4px 0 8px">🔒 Área dos pais</h3>
-      <p class="muted tiny">Digite a senha do responsável (${esc(Server.me.parent.email)}).</p>
+    el.innerHTML = `<div class="parents"><div class="card" style="max-width:380px;margin:20px auto;width:100%;text-align:center"><h3 style="margin:4px 0 8px">🔒 Parents’ area</h3>
+      <p class="muted tiny">Enter the parent’s password (${esc(Server.me.parent.email)}).</p>
       <input class="pin-input" id="ppw" type="password" autocomplete="current-password" style="letter-spacing:normal;font-size:18px">
-      <button class="btn primary wide" style="margin-top:10px" id="ppw-go">Entrar</button></div></div>`;
+      <button class="btn primary wide" style="margin-top:10px" id="ppw-go">Enter</button></div></div>`;
     const go = async () => {
       try { const r = await apiCall('/api/auth/verify', { method: 'POST', data: { password: $('#ppw').value } });
-        if (r.ok) { VIEW.parentsUnlocked = true; renderParents(); } else { toast('Senha incorreta'); $('#ppw').value = ''; } }
+        if (r.ok) { VIEW.parentsUnlocked = true; renderParents(); } else { toast('Wrong password'); $('#ppw').value = ''; } }
       catch (e) { toast(e.message); }
     };
     $('#ppw-go').onclick = go; $('#ppw').onkeydown = e => { if (e.key === 'Enter') go(); };
@@ -4584,107 +4584,107 @@ function renderParents() {
   }
   if (!VIEW.parentsUnlocked) {
     el.innerHTML = `<div class="parents"><div class="card" style="max-width:360px;margin:20px auto;width:100%;text-align:center">
-      <h3 style="margin:4px 0 8px">🔒 Área dos pais</h3><p class="muted tiny">Digite o PIN (padrão: 1234 — troque em Ajustes).</p>
+      <h3 style="margin:4px 0 8px">🔒 Parents’ area</h3><p class="muted tiny">Enter the PIN (default: 1234 — change it in Settings).</p>
       <input class="pin-input" id="pin" type="password" inputmode="numeric" maxlength="8" autocomplete="off">
-      <button class="btn primary wide" style="margin-top:10px" id="pin-go">Entrar</button></div></div>`;
-    const go = () => { if ($('#pin').value === String(S.settings.pin)) { VIEW.parentsUnlocked = true; renderParents(); } else { toast('PIN incorreto'); $('#pin').value = ''; } };
+      <button class="btn primary wide" style="margin-top:10px" id="pin-go">Enter</button></div></div>`;
+    const go = () => { if ($('#pin').value === String(S.settings.pin)) { VIEW.parentsUnlocked = true; renderParents(); } else { toast('Wrong PIN'); $('#pin').value = ''; } };
     $('#pin-go').onclick = go; $('#pin').onkeydown = e => { if (e.key === 'Enter') go(); };
     setTimeout(() => $('#pin') && $('#pin').focus(), 50);
     return;
   }
-  const tabs = [['review', '📝 Correção'], ['coins', '🪙 Moedas'], ['vouchers', '🎟️ Vales'], ['settings', '⚙️ Ajustes'], ['data', '📥 Dados']];
-  if (Server.me) tabs.push(['notes', '💌 Recadinhos'], ['family', '👨‍👩‍👧 Família']);
-  if (Server.me && Server.me.parent.role === 'admin') tabs.push(['admin', '🛠️ Admin'], ['msgs', '💬 Mensagens']);
+  const tabs = [['review', '📝 Marking'], ['coins', '🪙 Coins'], ['vouchers', '🎟️ Vouchers'], ['settings', '⚙️ Settings'], ['data', '📥 Data']];
+  if (Server.me) tabs.push(['notes', '💌 Secret notes'], ['family', '👨‍👩‍👧 Family']);
+  if (Server.me && Server.me.parent.role === 'admin') tabs.push(['admin', '🛠️ Admin'], ['msgs', '💬 Messages']);
   if (!tabs.some(t => t[0] === VIEW.parentTab)) VIEW.parentTab = 'review';
   const kid = currentChild();
-  el.innerHTML = `<div class="parents">${kid ? `<div class="tiny muted">Perfil aberto: <b>${kid.avatar || ''} ${esc(kid.name)}</b> — Correção, Moedas, Vales, Ajustes e Dados valem para este perfil.</div>` : ''}<div class="row wrap"><div class="tabs grow">${tabs.map(([k, l]) => `<button data-ptab="${k}" class="${VIEW.parentTab === k ? 'on' : ''}">${l}</button>`).join('')}</div>
-    <button class="btn small" id="lock">Sair</button></div><div class="parents-body" id="pbody"></div></div>`;
+  el.innerHTML = `<div class="parents">${kid ? `<div class="tiny muted">Open profile: <b>${kid.avatar || ''} ${esc(kid.name)}</b> — Marking, Coins, Vouchers, Settings and Data apply to this profile.</div>` : ''}<div class="row wrap"><div class="tabs grow">${tabs.map(([k, l]) => `<button data-ptab="${k}" class="${VIEW.parentTab === k ? 'on' : ''}">${l}</button>`).join('')}</div>
+    <button class="btn small" id="lock">Exit</button></div><div class="parents-body" id="pbody"></div></div>`;
   $$('[data-ptab]', el).forEach(b => b.onclick = () => { VIEW.parentTab = b.dataset.ptab; renderParents(); });
   $('#lock').onclick = () => { VIEW.parentsUnlocked = false; show('home'); };
   ({ review: pReview, coins: pCoins, vouchers: pVouchers, settings: pSettings, data: pData, family: pFamily, admin: pAdmin, notes: pNotes, msgs: pMessages })[VIEW.parentTab]($('#pbody'));
 }
 function pReview(box) {
   const w = S.week;
-  if (!w) { box.innerHTML = '<p class="muted">Nenhuma semana planejada ainda.</p>'; return; }
+  if (!w) { box.innerHTML = '<p class="muted">No week planned yet.</p>'; return; }
   const req = requiredDays(w);
   const summary = req.map(d => {
     const r = d.result;
-    return `<div class="row"><b style="width:90px">${DOW_LABEL[d.dow]} ${fmtDM(d.date)}</b><span class="grow">${d.status === 'done' ? `${d.recovered ? '⏳ recuperada' : '✅'} ${r.correct}/${r.total} objetivas${r.open ? ` · ${r.open} livres` : ''}` : dayState(d) === 'late' ? '⏰ atrasada' : dayState(d) === 'locked' ? '🔒 ainda não abriu' : '📘 pendente'}</span></div>`;
+    return `<div class="row"><b style="width:90px">${DOW_LABEL[d.dow]} ${fmtDM(d.date)}</b><span class="grow">${d.status === 'done' ? `${d.recovered ? '⏳ caught up' : '✅'} ${r.correct}/${r.total} objective${r.open ? ` · ${r.open} open` : ''}` : dayState(d) === 'late' ? '⏰ late' : dayState(d) === 'locked' ? '🔒 not open yet' : '📘 to do'}</span></div>`;
   }).join('');
   const opens = [];
   req.forEach(d => d.questions.forEach(q => { if (q.type === 'open' && (answered(q, d.answers[q.id]) || (d.verdicts && d.verdicts[q.id] === 'open'))) opens.push({ d, q }); }));
   const list = opens.map(({ d, q }) => {
     const mk = (d.marks || {})[q.id];
     return `<div class="review-item"><div class="meta">${DOW_LABEL[d.dow]} ${fmtDM(d.date)} · ${SUBJ[q.subject].icon} ${esc(SUBJ[q.subject].name)}</div>
-      <div><b>${esc(q.q)}</b></div><div class="ans">${answered(q, d.answers[q.id]) ? esc(d.answers[q.id]) : '<i>(feita no papel — confira a folha)</i>'}${d.via === 'photo' && answered(q, d.answers[q.id]) ? ' <span class="tiny muted">(lido da foto)</span>' : ''}</div>
-      ${d.verdicts && ['ok', 'bad'].includes(d.verdicts[q.id]) ? `<div class="tiny"><b>🦉 Lumi: ${d.verdicts[q.id] === 'ok' ? '✓ certo' : '✗ precisa melhorar'}</b>${d.notes && d.notes[q.id] ? ` — ${esc(d.notes[q.id])}` : ''}</div>` : ''}
-      <div class="row"><button class="btn small ${mk === 'ok' ? 'ok' : ''}" data-mark="ok" data-d="${d.date}" data-q="${q.id}">✓ Certo</button>
-      <button class="btn small ${mk === 'no' ? 'danger' : ''}" data-mark="no" data-d="${d.date}" data-q="${q.id}">↺ Refazer/conversar</button></div></div>`;
+      <div><b>${esc(q.q)}</b></div><div class="ans">${answered(q, d.answers[q.id]) ? esc(d.answers[q.id]) : '<i>(done on paper — check the sheet)</i>'}${d.via === 'photo' && answered(q, d.answers[q.id]) ? ' <span class="tiny muted">(read from the photo)</span>' : ''}</div>
+      ${d.verdicts && ['ok', 'bad'].includes(d.verdicts[q.id]) ? `<div class="tiny"><b>🦉 Lumi: ${d.verdicts[q.id] === 'ok' ? '✓ correct' : '✗ needs work'}</b>${d.notes && d.notes[q.id] ? ` — ${esc(d.notes[q.id])}` : ''}</div>` : ''}
+      <div class="row"><button class="btn small ${mk === 'ok' ? 'ok' : ''}" data-mark="ok" data-d="${d.date}" data-q="${q.id}">✓ Correct</button>
+      <button class="btn small ${mk === 'no' ? 'danger' : ''}" data-mark="no" data-d="${d.date}" data-q="${q.id}">↺ Redo / talk it over</button></div></div>`;
   }).join('');
-  box.innerHTML = `<div class="card"><b>Semana ${fmtDM(w.start)}–${fmtDM(w.end)}</b> ${w.settled ? `· ${w.settled === 'delivered' ? 'entregue ✔' : w.settled === 'missed' ? 'não entregue ✗' : ''}` : ''}<div style="margin-top:6px;display:grid;gap:3px">${summary}</div></div>
-    <h3 style="margin:6px 0 0">Respostas livres (${opens.length}) <span class="tiny muted">— a Lumi corrige; vocês podem confirmar ou mudar</span></h3>${list || '<p class="muted">Nada para corrigir ainda.</p>'}
-    ${S.history.length ? `<div class="card"><b>Histórico</b>${S.history.slice(0, 8).map(h => `<div class="tiny">${fmtDM(h.start)}–${fmtDM(h.end)}: ${h.done}/${h.total} dias · ${h.settled === 'delivered' ? 'entregue' : h.settled === 'missed' ? 'não entregue' : '—'}${h.recovered ? ` · ${h.recovered} recuperado${h.recovered > 1 ? 's' : ''}` : ''}</div>`).join('')}</div>` : ''}`;
+  box.innerHTML = `<div class="card"><b>Week ${fmtDM(w.start)}–${fmtDM(w.end)}</b> ${w.settled ? `· ${w.settled === 'delivered' ? 'completed ✔' : w.settled === 'missed' ? 'not completed ✗' : ''}` : ''}<div style="margin-top:6px;display:grid;gap:3px">${summary}</div></div>
+    <h3 style="margin:6px 0 0">Open answers (${opens.length}) <span class="tiny muted">— Lumi marks them; you can confirm or change</span></h3>${list || '<p class="muted">Nothing to mark yet.</p>'}
+    ${S.history.length ? `<div class="card"><b>History</b>${S.history.slice(0, 8).map(h => `<div class="tiny">${fmtDM(h.start)}–${fmtDM(h.end)}: ${h.done}/${h.total} days · ${h.settled === 'delivered' ? 'completed' : h.settled === 'missed' ? 'not completed' : '—'}${h.recovered ? ` · ${h.recovered} caught up` : ''}</div>`).join('')}</div>` : ''}`;
   $$('[data-mark]', box).forEach(b => b.onclick = () => { const d = S.week.days[b.dataset.d]; d.marks = d.marks || {}; d.marks[b.dataset.q] = b.dataset.mark; save(); pReview(box); });
 }
 function pCoins(box) {
-  box.innerHTML = `<div class="card"><div class="row"><b class="grow">Saldo atual: 🪙 ${S.coins}</b></div>
-    <div class="form-grid" style="margin-top:8px"><label class="field">Quantidade (+ ou −)<input id="adj-n" type="number" step="1" value="10"></label>
-    <label class="field">Motivo<input id="adj-r" placeholder="Ex.: ajudou em casa"></label></div>
-    <button class="btn primary" id="adj-go" style="margin-top:8px">Lançar</button></div>
-    <div class="card"><b>Extrato</b><div class="ledger" style="margin-top:6px">${S.ledger.slice(0, 40).map(l => `<div><span class="tiny muted" style="min-width:82px">${new Date(l.date).toLocaleDateString('pt-BR')}</span><span class="grow">${esc(l.reason)}</span><span class="amt ${l.amount >= 0 ? 'plus' : 'minus'}">${l.amount >= 0 ? '+' : ''}${l.amount}</span></div>`).join('') || '<span class="muted">Sem lançamentos.</span>'}</div></div>`;
-  $('#adj-go').onclick = () => { const n = Math.round(Number($('#adj-n').value)); if (!n) return; addCoins(n, 'Pais: ' + ($('#adj-r').value.trim() || 'ajuste')); toast('Lançado'); pCoins(box); };
+  box.innerHTML = `<div class="card"><div class="row"><b class="grow">Current balance: 🪙 ${S.coins}</b></div>
+    <div class="form-grid" style="margin-top:8px"><label class="field">Amount (+ or −)<input id="adj-n" type="number" step="1" value="10"></label>
+    <label class="field">Reason<input id="adj-r" placeholder="E.g. helped at home"></label></div>
+    <button class="btn primary" id="adj-go" style="margin-top:8px">Add entry</button></div>
+    <div class="card"><b>Statement</b><div class="ledger" style="margin-top:6px">${S.ledger.slice(0, 40).map(l => `<div><span class="tiny muted" style="min-width:82px">${new Date(l.date).toLocaleDateString('en-GB')}</span><span class="grow">${esc(l.reason)}</span><span class="amt ${l.amount >= 0 ? 'plus' : 'minus'}">${l.amount >= 0 ? '+' : ''}${l.amount}</span></div>`).join('') || '<span class="muted">No entries yet.</span>'}</div></div>`;
+  $('#adj-go').onclick = () => { const n = Math.round(Number($('#adj-n').value)); if (!n) return; addCoins(n, 'Parents: ' + ($('#adj-r').value.trim() || 'adjustment')); toast('Added'); pCoins(box); };
 }
 function pVouchers(box) {
   const pend = S.redemptions.filter(r => !r.delivered);
-  box.innerHTML = `<div class="card"><b>Vales resgatados aguardando entrega (${pend.length})</b>${pend.map(r => `<div class="row" style="margin-top:6px"><span class="grow">${fmtDM(r.date)} · ${esc(r.name)} (🪙 ${r.price})</span><button class="btn small ok" data-deliv="${r.id}">Entregue ✔</button></div>`).join('') || '<p class="muted tiny">Nenhum.</p>'}</div>
-    <div class="card"><b>Vales da lojinha</b><p class="muted tiny" style="margin:2px 0 6px">Prêmios reais que vocês combinam. Edite nome e preço.</p>
+  box.innerHTML = `<div class="card"><b>Redeemed vouchers waiting to be given (${pend.length})</b>${pend.map(r => `<div class="row" style="margin-top:6px"><span class="grow">${fmtDM(r.date)} · ${esc(r.name)} (🪙 ${r.price})</span><button class="btn small ok" data-deliv="${r.id}">Given ✔</button></div>`).join('') || '<p class="muted tiny">None.</p>'}</div>
+    <div class="card"><b>Shop vouchers</b><p class="muted tiny" style="margin:2px 0 6px">Real rewards you agree on together. Edit the name and price.</p>
     <div id="vlist" style="display:grid;gap:6px">${S.vouchers.map((v, i) => `<div class="row"><input class="grow" data-vn="${i}" value="${esc(v.name)}" style="padding:6px;border-radius:8px;border:1.5px solid var(--line)"><input type="number" data-vp="${i}" value="${v.price}" style="width:80px;padding:6px;border-radius:8px;border:1.5px solid var(--line)"><button class="btn small" data-vdel="${i}">✕</button></div>`).join('')}</div>
-    <div class="row" style="margin-top:8px"><button class="btn small" id="vadd">+ Novo vale</button><button class="btn small primary" id="vsave">Salvar vales</button></div></div>`;
+    <div class="row" style="margin-top:8px"><button class="btn small" id="vadd">+ New voucher</button><button class="btn small primary" id="vsave">Save vouchers</button></div></div>`;
   $$('[data-deliv]', box).forEach(b => b.onclick = () => { const r = S.redemptions.find(x => x.id === b.dataset.deliv); r.delivered = true; save(); pVouchers(box); });
-  const collect = () => { $$('[data-vn]', box).forEach(inp => { S.vouchers[inp.dataset.vn].name = inp.value.trim() || 'Vale'; }); $$('[data-vp]', box).forEach(inp => { S.vouchers[inp.dataset.vp].price = Math.max(1, Math.round(Number(inp.value) || 1)); }); };
+  const collect = () => { $$('[data-vn]', box).forEach(inp => { S.vouchers[inp.dataset.vn].name = inp.value.trim() || 'Voucher'; }); $$('[data-vp]', box).forEach(inp => { S.vouchers[inp.dataset.vp].price = Math.max(1, Math.round(Number(inp.value) || 1)); }); };
   $$('[data-vdel]', box).forEach(b => b.onclick = () => { collect(); S.vouchers.splice(Number(b.dataset.vdel), 1); touch('vouchers'); save(); pVouchers(box); });
-  $('#vadd').onclick = () => { collect(); S.vouchers.push({ id: 'v-' + uid(), name: 'Novo vale', price: 200 }); touch('vouchers'); save(); pVouchers(box); };
-  $('#vsave').onclick = () => { collect(); touch('vouchers'); save(); toast('Vales salvos'); };
+  $('#vadd').onclick = () => { collect(); S.vouchers.push({ id: 'v-' + uid(), name: 'New voucher', price: 200 }); touch('vouchers'); save(); pVouchers(box); };
+  $('#vsave').onclick = () => { collect(); touch('vouchers'); save(); toast('Vouchers saved'); };
 }
 function pSettings(box) {
   const st = S.settings;
-  box.innerHTML = `<div class="card"><b>Economia de moedas</b><div class="form-grid" style="margin-top:6px">
-      <label class="field">Recompensa da semana entregue<input type="number" id="s-reward" value="${st.reward}"></label>
-      <label class="field">Penalidade (semana não entregue)<input type="number" id="s-penalty" value="${st.penalty}"></label>
-      <label class="field">Recuperação atrasada vale (% da recompensa)<input type="number" id="s-late" value="${latePct()}"></label>
-      <label class="field">Moedas por tarefa do dia (0 desliga)<input type="number" id="s-dayc" value="${st.dayCoins ?? 10}"></label>
-      <label class="field">Som das musiquinhas<select id="s-sound"><option value="1" ${st.sound !== false ? 'selected' : ''}>🔊 Ligado</option><option value="0" ${st.sound === false ? 'selected' : ''}>🔇 Desligado</option></select></label>
-      <label class="field">💌 Preço do recadinho secreto<input type="number" id="s-notep" value="${notePrice()}"></label>
-      <label class="field">📜 Missões<select id="s-quests"><option value="1" ${st.questsOn !== false ? 'selected' : ''}>Ligadas</option><option value="0" ${st.questsOn === false ? 'selected' : ''}>Desligadas</option></select></label>
-      <label class="field">Missões de compra (ganha o gasto + 50)<select id="s-bquests"><option value="1" ${st.buyQuests !== false ? 'selected' : ''}>Ligadas</option><option value="0" ${st.buyQuests === false ? 'selected' : ''}>Desligadas</option></select></label>
-      <label class="field">Moedas por acerto nos extras<input type="number" id="s-xpc" value="${st.extraPerCorrect}"></label>
-      <label class="field">Perguntas por rodada de extras<input type="number" id="s-xsize" value="${st.extraSetSize}"></label>
-      <label class="field">Rodadas de extras com moedas/dia<input type="number" id="s-xsets" value="${st.extraSetsPerDay}"></label>
-      <label class="field">Moedas por jogo da Oficina de palavras<input type="number" id="s-wkc" value="${st.workshopCoins ?? 3}"></label>
-      <label class="field">Jogos da Oficina com moedas/dia<input type="number" id="s-wkd" value="${st.workshopPerDay ?? 5}"></label></div>
-      <p class="tiny muted">Valores de uma semana completa (7 dias): se a semana começar no meio, a recompensa e a penalidade são proporcionais aos dias obrigatórios. A penalidade precisa ser maior que a recompensa. Dias não feitos podem ser recuperados até a sexta seguinte: recuperar todos vale essa % da recompensa (0 = sem recuperação).</p></div>
-    <div class="card"><b>Tarefas</b><div class="form-grid" style="margin-top:6px">
-      ${Server.me ? '' : `<label class="field">Nome<input id="s-name" value="${esc(S.name)}"></label>`}
-      <label class="field">🗂️ Perguntas por tema (cada matéria, por dia)<input type="number" id="s-ptheme" min="1" max="6" value="${perTheme()}"></label>
-      <div class="field">${rqSelect('pt', '📖 Perguntas do texto em português', 's-rqpt')}</div>
-      <div class="field">${rqSelect('en', '📖 Perguntas do texto em inglês', 's-rqen')}</div>
-      <label class="field">Leitura diária (capítulo do livro da semana)<select id="s-dread"><option value="1" ${st.dailyReading ? 'selected' : ''}>Ligada</option><option value="0" ${!st.dailyReading ? 'selected' : ''}>Desligada</option></select></label>
-      <label class="field">Nível padrão da leitura<select id="s-rlevel">${READ_LEVELS.map(([k, l]) => `<option value="${k}" ${(st.readLevel || 'at') === k ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
-      <label class="field">A Lumi lê as aulinhas em voz alta<select id="s-avoice"><option value="1" ${st.autoVoice ? 'selected' : ''}>Sim, sozinha</option><option value="0" ${!st.autoVoice ? 'selected' : ''}>Só no 🔊</option></select></label>
-      <label class="field">Gabarito<select id="s-gab"><option value="1" ${st.gabaritoAfterFinish ? 'selected' : ''}>Libera depois de concluir</option><option value="0" ${!st.gabaritoAfterFinish ? 'selected' : ''}>Sempre disponível</option></select></label>
-      <label class="field">Voz (ditado)<select id="s-voice"><option value="1" ${st.voice ? 'selected' : ''}>Ligada</option><option value="0" ${!st.voice ? 'selected' : ''}>Desligada</option></select></label>
-      <label class="field">🔊 Voz da Lumi<select id="s-nvoice"><option value="1" ${st.naturalVoice !== false ? 'selected' : ''}>Natural (servidor)${Server.tts ? '' : ' — ainda não configurada'}</option><option value="0" ${st.naturalVoice === false ? 'selected' : ''}>Do aparelho</option></select></label>
+  box.innerHTML = `<div class="card"><b>Coin economy</b><div class="form-grid" style="margin-top:6px">
+      <label class="field">Reward for a completed week<input type="number" id="s-reward" value="${st.reward}"></label>
+      <label class="field">Penalty (week not completed)<input type="number" id="s-penalty" value="${st.penalty}"></label>
+      <label class="field">Late catch-up is worth (% of the reward)<input type="number" id="s-late" value="${latePct()}"></label>
+      <label class="field">Coins per daily task (0 turns it off)<input type="number" id="s-dayc" value="${st.dayCoins ?? 10}"></label>
+      <label class="field">Tune sounds<select id="s-sound"><option value="1" ${st.sound !== false ? 'selected' : ''}>🔊 On</option><option value="0" ${st.sound === false ? 'selected' : ''}>🔇 Off</option></select></label>
+      <label class="field">💌 Secret note price<input type="number" id="s-notep" value="${notePrice()}"></label>
+      <label class="field">📜 Quests<select id="s-quests"><option value="1" ${st.questsOn !== false ? 'selected' : ''}>On</option><option value="0" ${st.questsOn === false ? 'selected' : ''}>Off</option></select></label>
+      <label class="field">Shopping quests (earns the amount spent + 50)<select id="s-bquests"><option value="1" ${st.buyQuests !== false ? 'selected' : ''}>On</option><option value="0" ${st.buyQuests === false ? 'selected' : ''}>Off</option></select></label>
+      <label class="field">Coins per correct answer in Extras<input type="number" id="s-xpc" value="${st.extraPerCorrect}"></label>
+      <label class="field">Questions per Extras round<input type="number" id="s-xsize" value="${st.extraSetSize}"></label>
+      <label class="field">Extras rounds with coins per day<input type="number" id="s-xsets" value="${st.extraSetsPerDay}"></label>
+      <label class="field">Coins per Word workshop game<input type="number" id="s-wkc" value="${st.workshopCoins ?? 3}"></label>
+      <label class="field">Workshop games with coins per day<input type="number" id="s-wkd" value="${st.workshopPerDay ?? 5}"></label></div>
+      <p class="tiny muted">Values are for a full week (7 days): if the week starts midway, the reward and penalty are proportional to the required days. The penalty must be greater than the reward. Missed days can be caught up until the following Friday: catching up all of them is worth this % of the reward (0 = no catch-up).</p></div>
+    <div class="card"><b>Tasks</b><div class="form-grid" style="margin-top:6px">
+      ${Server.me ? '' : `<label class="field">Name<input id="s-name" value="${esc(S.name)}"></label>`}
+      <label class="field">🗂️ Questions per topic (each subject, per day)<input type="number" id="s-ptheme" min="1" max="6" value="${perTheme()}"></label>
+      <div class="field">${rqSelect('pt', '📖 Questions on the Portuguese text', 's-rqpt')}</div>
+      <div class="field">${rqSelect('en', '📖 Questions on the English text', 's-rqen')}</div>
+      <label class="field">Daily reading (chapter of the week’s book)<select id="s-dread"><option value="1" ${st.dailyReading ? 'selected' : ''}>On</option><option value="0" ${!st.dailyReading ? 'selected' : ''}>Off</option></select></label>
+      <label class="field">Default reading level<select id="s-rlevel">${READ_LEVELS.map(([k, l]) => `<option value="${k}" ${(st.readLevel || 'at') === k ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
+      <label class="field">Lumi reads the mini-lessons aloud<select id="s-avoice"><option value="1" ${st.autoVoice ? 'selected' : ''}>Yes, automatically</option><option value="0" ${!st.autoVoice ? 'selected' : ''}>Only with 🔊</option></select></label>
+      <label class="field">Answer key<select id="s-gab"><option value="1" ${st.gabaritoAfterFinish ? 'selected' : ''}>Unlocks after finishing</option><option value="0" ${!st.gabaritoAfterFinish ? 'selected' : ''}>Always available</option></select></label>
+      <label class="field">Voice (dictation)<select id="s-voice"><option value="1" ${st.voice ? 'selected' : ''}>On</option><option value="0" ${!st.voice ? 'selected' : ''}>Off</option></select></label>
+      <label class="field">🔊 Lumi’s voice<select id="s-nvoice"><option value="1" ${st.naturalVoice !== false ? 'selected' : ''}>Natural (server)${Server.tts ? '' : ' — not set up yet'}</option><option value="0" ${st.naturalVoice === false ? 'selected' : ''}>Device voice</option></select></label>
       ${['pt', 'en'].map(l => { const vs = deviceVoices(l).sort((a, b) => voiceScore(b, l) - voiceScore(a, l)); const cur = (st.deviceVoice || {})[l] || '';
-        return `<label class="field">Voz do aparelho em ${l === 'pt' ? 'português' : 'inglês'}<span class="row"><select id="s-dv-${l}" class="grow"><option value="">Automática (a melhor: ${esc((vs[0] || {}).name || '—')})</option>${vs.map(v => `<option value="${esc(v.voiceURI)}" ${cur === v.voiceURI ? 'selected' : ''}>${esc(v.name)}${voiceScore(v, l) >= 60 ? ' ⭐' : ''}</option>`).join('')}</select><button type="button" class="btn small" data-vtest="${l}">▶</button></span></label>`; }).join('')}
-      ${Server.me ? '' : '<label class="field">Novo PIN dos pais<input id="s-pin" inputmode="numeric" maxlength="8" placeholder="(manter)"></label>'}</div>
-      <p class="tiny muted" style="margin:6px 0 0">Total do dia = perguntas por tema × matérias da semana + perguntas do texto do dia. Cada dia tem um texto (alternando português e inglês); o texto extra dos Extras vem no idioma que não foi o do dia. O texto tem de 5 a 8 perguntas (1 de resumo + compreensão); no automático, depende do tamanho e da complexidade do texto (ano escolar e nível de leitura).</p></div>
+        return `<label class="field">Device voice in ${l === 'pt' ? 'Portuguese' : 'English'}<span class="row"><select id="s-dv-${l}" class="grow"><option value="">Automatic (best: ${esc((vs[0] || {}).name || '—')})</option>${vs.map(v => `<option value="${esc(v.voiceURI)}" ${cur === v.voiceURI ? 'selected' : ''}>${esc(v.name)}${voiceScore(v, l) >= 60 ? ' ⭐' : ''}</option>`).join('')}</select><button type="button" class="btn small" data-vtest="${l}">▶</button></span></label>`; }).join('')}
+      ${Server.me ? '' : '<label class="field">New parents’ PIN<input id="s-pin" inputmode="numeric" maxlength="8" placeholder="(keep current)"></label>'}</div>
+      <p class="tiny muted" style="margin:6px 0 0">Daily total = questions per topic × the week’s subjects + questions on today’s text. Each day has one text (alternating Portuguese and English); the Extra reading in Extras comes in the other language. Each text has 5 to 8 questions (1 summary + comprehension); on automatic, it depends on the length and complexity of the text (school year and reading level).</p></div>
     ${calendarSettingsHtml(st)}
-    <button class="btn primary" id="s-save">Salvar ajustes</button>
-    <button class="btn" id="s-tour">Rever o tutorial da Lumi</button>`;
+    <button class="btn primary" id="s-save">Save settings</button>
+    <button class="btn" id="s-tour">Replay Lumi’s tutorial</button>`;
   $('#s-save').onclick = () => {
     const num = (id, d) => { const v = Math.round(Number($(id).value)); return Number.isFinite(v) ? v : d; };
     const reward = Math.max(0, num('#s-reward', st.reward)), penalty = num('#s-penalty', st.penalty);
-    if (penalty <= reward) { toast('A penalidade precisa ser MAIOR que a recompensa.'); return; }
+    if (penalty <= reward) { toast('The penalty must be GREATER than the reward.'); return; }
     Object.assign(st, {
       reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), questsOn: $('#s-quests').value === '1', notePrice: clamp(num('#s-notep', notePrice()), 1, 100000), sound: $('#s-sound').value === '1', buyQuests: $('#s-bquests').value === '1', extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
       extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10),
@@ -4699,7 +4699,7 @@ function pSettings(box) {
     const nm = ($('#s-name') || { value: '' }).value.trim(); if (nm) S.name = nm;
     if ($('#s-sstart').value) st.schoolStart = $('#s-sstart').value;
     st.holidays = readHolidays(box);
-    touch('settings'); save(); toast('Ajustes salvos');
+    touch('settings'); save(); toast('Settings saved');
   };
   $('#s-tour').onclick = () => { show('home'); setTimeout(runTour, 300); };
   $$('[data-vtest]', box).forEach(b => b.onclick = () => {   // testa a voz escolhida (do aparelho, ou a natural se estiver ligada)
@@ -4713,45 +4713,45 @@ function pSettings(box) {
 }
 function pData(box) {
   const topics = S.week ? S.week.topics : S.lastTopics;
-  const st = { ok: '🟢 Conectado ao servidor', offline: '🟠 Servidor fora do ar — salvando só neste aparelho', auth: '🔴 Sessão expirada', local: '⚪ Sem servidor — dados só neste aparelho' }[Server.me ? Server.status : 'local'];
-  box.innerHTML = `<div class="card"><b>Servidor</b><div style="margin:4px 0">${st}</div>
-      ${Server.me ? `<div class="tiny">Conta: ${esc(Server.me.parent.email)} · família ${esc(Server.me.family.name)} · Claude ${Server.ai ? '✅ ligado' : '❌ sem chave'}</div>
-      <div class="row wrap" style="margin-top:6px"><button class="btn small" id="sv-sync">🔄 Sincronizar agora</button><button class="btn small" id="sv-switch">👤 Trocar de perfil</button></div>` : ''}</div>
-    <div class="card"><b>1. Importar perguntas prontas (opcional)</b>
-      <p class="tiny muted" style="margin:2px 0 6px">Copie o prompt (já com os tópicos da semana), cole no Claude junto com o Study Worksheet, e cole aqui o JSON que ele devolver.
-      As perguntas importadas entram primeiro; o gerador do app completa o resto.</p>
-      <button class="btn small" id="cp-prompt">📋 Copiar prompt para o Claude</button>
-      <label class="field" style="margin-top:8px">JSON das perguntas<textarea id="imp-json" placeholder='{"questions":[ ... ]}'></textarea></label>
-      <button class="btn primary small" id="imp-go">Importar perguntas</button><div id="imp-msg" class="tiny" style="margin-top:6px"></div></div>
-    <div class="card"><b>2. Backup</b><p class="tiny muted" style="margin:2px 0 6px">${Server.me ? 'Cópia dos dados deste perfil (os dados já ficam guardados no servidor).' : 'Os dados ficam só neste navegador. Faça backup para trocar de aparelho.'}</p>
-      <div class="row wrap"><button class="btn small" id="bk-exp">⬇️ Baixar backup</button><label class="btn small">⬆️ Restaurar backup<input type="file" id="bk-imp" accept="application/json,.json" hidden></label></div></div>
-    <div class="card"><b>3. Zerar</b><div class="row wrap" style="margin-top:6px"><button class="btn small" id="rs-week">Apagar a semana atual</button><button class="btn small danger" id="rs-all">Apagar TUDO</button></div></div>`;
+  const st = { ok: '🟢 Connected to the server', offline: '🟠 Server is down — saving on this device only', auth: '🔴 Session expired', local: '⚪ No server — data on this device only' }[Server.me ? Server.status : 'local'];
+  box.innerHTML = `<div class="card"><b>Server</b><div style="margin:4px 0">${st}</div>
+      ${Server.me ? `<div class="tiny">Account: ${esc(Server.me.parent.email)} · family ${esc(Server.me.family.name)} · Claude ${Server.ai ? '✅ on' : '❌ no key'}</div>
+      <div class="row wrap" style="margin-top:6px"><button class="btn small" id="sv-sync">🔄 Sync now</button><button class="btn small" id="sv-switch">👤 Switch profile</button></div>` : ''}</div>
+    <div class="card"><b>1. Import ready-made questions (optional)</b>
+      <p class="tiny muted" style="margin:2px 0 6px">Copy the prompt (it already has the week’s topics), paste it into Claude together with the Study Worksheet, and paste here the JSON it returns.
+      Imported questions come first; the app’s generator fills in the rest.</p>
+      <button class="btn small" id="cp-prompt">📋 Copy prompt for Claude</button>
+      <label class="field" style="margin-top:8px">Questions JSON<textarea id="imp-json" placeholder='{"questions":[ ... ]}'></textarea></label>
+      <button class="btn primary small" id="imp-go">Import questions</button><div id="imp-msg" class="tiny" style="margin-top:6px"></div></div>
+    <div class="card"><b>2. Backup</b><p class="tiny muted" style="margin:2px 0 6px">${Server.me ? 'A copy of this profile’s data (the data is already stored on the server).' : 'The data is stored in this browser only. Make a backup to move to another device.'}</p>
+      <div class="row wrap"><button class="btn small" id="bk-exp">⬇️ Download backup</button><label class="btn small">⬆️ Restore backup<input type="file" id="bk-imp" accept="application/json,.json" hidden></label></div></div>
+    <div class="card"><b>3. Reset</b><div class="row wrap" style="margin-top:6px"><button class="btn small" id="rs-week">Delete the current week</button><button class="btn small danger" id="rs-all">Delete EVERYTHING</button></div></div>`;
   if (Server.me) {
-    $('#sv-sync').onclick = async () => { await pushState(); toast(Server.status === 'ok' ? 'Sincronizado ✔' : 'Não consegui sincronizar'); pData(box); };
+    $('#sv-sync').onclick = async () => { await pushState(); toast(Server.status === 'ok' ? 'Synced ✔' : 'Couldn’t sync'); pData(box); };
     $('#sv-switch').onclick = () => switchProfile();
   }
   $('#cp-prompt').onclick = async () => {
     const p = claudePrompt(topics || {});
-    try { await navigator.clipboard.writeText(p); toast('Prompt copiado!'); }
-    catch (e) { $('#imp-json').value = p; toast('Copie o texto da caixa abaixo'); }
+    try { await navigator.clipboard.writeText(p); toast('Prompt copied!'); }
+    catch (e) { $('#imp-json').value = p; toast('Copy the text from the box below'); }
   };
   $('#imp-go').onclick = () => {
     const msg = $('#imp-msg');
     let data;
     try { const raw = $('#imp-json').value.trim().replace(/^```(json)?/i, '').replace(/```$/, ''); data = JSON.parse(raw); }
-    catch (e) { msg.innerHTML = '<span style="color:var(--bad)">JSON inválido. Confira se copiou tudo, do { ao }.</span>'; return; }
+    catch (e) { msg.innerHTML = '<span style="color:var(--bad)">Invalid JSON. Check that you copied everything, from { to }.</span>'; return; }
     let res;
     try { res = validateImported(data); } catch (e) { msg.innerHTML = `<span style="color:var(--bad)">${esc(e.message)}</span>`; return; }
-    if (!res.ok.length) { msg.innerHTML = `<span style="color:var(--bad)">Nenhuma pergunta válida.</span> ${esc(res.errs.slice(0, 5).join('; '))}`; return; }
+    if (!res.ok.length) { msg.innerHTML = `<span style="color:var(--bad)">No valid questions.</span> ${esc(res.errs.slice(0, 5).join('; '))}`; return; }
     const w = S.week;
     if (w && !w.settled) {
       w.imported = (w.imported || []).concat(res.ok);
       const redo = Object.values(w.days).filter(d => d.required && d.status !== 'done' && !dayStarted(d) && d.date >= today()).map(d => d.date);
       regenerateDays(w, redo, '|' + uid());
-      msg.innerHTML = `✅ ${res.ok.length} perguntas importadas. ${redo.length} dia(s) ainda não começados foram refeitos.` + (res.errs.length ? ` <span class="muted">${res.errs.length} ignorada(s).</span>` : '');
+      msg.innerHTML = `✅ ${res.ok.length} question${res.ok.length !== 1 ? 's' : ''} imported. ${redo.length} day${redo.length !== 1 ? 's' : ''} not yet started ${redo.length !== 1 ? 'were' : 'was'} regenerated.` + (res.errs.length ? ` <span class="muted">${res.errs.length} skipped.</span>` : '');
     } else {
       S.pendingImport = (S.pendingImport || []).concat(res.ok);
-      msg.innerHTML = `✅ ${res.ok.length} perguntas guardadas. Elas entram quando a próxima semana for planejada.` + (res.errs.length ? ` <span class="muted">${res.errs.length} ignorada(s).</span>` : '');
+      msg.innerHTML = `✅ ${res.ok.length} question${res.ok.length !== 1 ? 's' : ''} saved. They will be used when the next week is planned.` + (res.errs.length ? ` <span class="muted">${res.errs.length} skipped.</span>` : '');
     }
     save();
   };
@@ -4761,17 +4761,17 @@ function pData(box) {
   };
   $('#bk-imp').onchange = async e => {
     const f = e.target.files[0]; if (!f) return;
-    try { const s = JSON.parse(await f.text()); if (typeof s !== 'object' || !('coins' in s)) throw new Error(); if (!(await confirmBox('Restaurar backup?', 'Isso substitui todos os dados atuais.', 'Restaurar', true))) return; const rev = S.rev; S = normalizeState(s); S.rev = rev; if (Server.me) { const k = currentChild(); if (k) S.name = k.name; } save(); applyTheme(); renderCoins(); toast('Backup restaurado'); renderParents(); }
-    catch (err) { toast('Arquivo de backup inválido'); }
+    try { const s = JSON.parse(await f.text()); if (typeof s !== 'object' || !('coins' in s)) throw new Error(); if (!(await confirmBox('Restore backup?', 'This replaces all the current data.', 'Restore', true))) return; const rev = S.rev; S = normalizeState(s); S.rev = rev; if (Server.me) { const k = currentChild(); if (k) S.name = k.name; } save(); applyTheme(); renderCoins(); toast('Backup restored'); renderParents(); }
+    catch (err) { toast('Invalid backup file'); }
   };
-  $('#rs-week').onclick = async () => { if (await confirmBox('Apagar a semana atual?', 'As tarefas e respostas desta semana serão perdidas. As moedas ficam.', 'Apagar', true)) { S.week = null; save(); toast('Semana apagada'); } };
+  $('#rs-week').onclick = async () => { if (await confirmBox('Delete the current week?', 'This week’s tasks and answers will be lost. The coins stay.', 'Delete', true)) { S.week = null; save(); toast('Week deleted'); } };
   $('#rs-all').onclick = async () => {
     const kid = currentChild();
-    const what = kid ? `Moedas, compras, semanas e ajustes de <b>${esc(kid.name)}</b> serão apagados (o perfil continua).` : 'Moedas, compras, semanas e ajustes serão apagados deste navegador.';
-    if (!(await confirmBox('Apagar TUDO?', `${what} Não dá para desfazer.`, 'Apagar tudo', true))) return;
+    const what = kid ? `<b>${esc(kid.name)}</b>’s coins, purchases, weeks and settings will be deleted (the profile stays).` : 'Coins, purchases, weeks and settings will be deleted from this browser.';
+    if (!(await confirmBox('Delete EVERYTHING?', `${what} This can’t be undone.`, 'Delete everything', true))) return;
     if (kid) {
       try { clearTimeout(Server.timer); Server.dirty = false; await apiCall(`/api/children/${kid.id}/state`, { method: 'DELETE' }); }
-      catch (e) { toast(`Não consegui apagar no servidor: ${e.message}`); return; }
+      catch (e) { toast(`Couldn’t delete on the server: ${e.message}`); return; }
       try { localStorage.removeItem(localKey(kid.id)); } catch (e) { /* ignora */ }
       VIEW.parentsUnlocked = false; enterChild(kid.id); return;
     }
@@ -4783,49 +4783,49 @@ function pData(box) {
 /* ---------- Área dos pais: Família (contas) e Admin ---------- */
 const usd = n => 'US$ ' + (Number(n) || 0).toFixed(2);
 async function pFamily(box) {
-  box.innerHTML = '<p class="muted">Carregando…</p>';
+  box.innerHTML = '<p class="muted">Loading…</p>';
   let fam;
-  try { await refreshMe(); fam = await apiCall('/api/family'); } catch (e) { box.innerHTML = `<p class="muted">Sem conexão com o servidor (${esc(e.message)}).</p>`; return; }
+  try { await refreshMe(); fam = await apiCall('/api/family'); } catch (e) { box.innerHTML = `<p class="muted">No connection to the server (${esc(e.message)}).</p>`; return; }
   const me = Server.me;
   const usageOf = id => fam.usage.find(u => u.id === id) || { today_usd: 0, month_usd: 0, month_calls: 0 };
   box.innerHTML = `
-    <div class="card"><b>👧 Crianças da família ${esc(me.family.name)}</b>
+    <div class="card"><b>👧 Children in the ${esc(me.family.name)} family</b>
       <div class="kid-list">${me.children.map(c => { const u = usageOf(c.id); return `<details class="kid" data-id="${c.id}">
-        <summary><span class="pf-av">${c.avatar || '🦉'}</span><b>${esc(c.name)}</b><span class="tiny muted grow">${esc((SCHOOL_YEARS.find(y => y[0] === c.year) || [])[1] || '')} · Lumi hoje ${usd(u.today_usd)} · mês ${usd(u.month_usd)}</span><span class="tiny">editar ▾</span></summary>
-        <div class="form-grid"><label class="field">Nome<input data-f="name" value="${esc(c.name)}" maxlength="30"></label>
-        <label class="field">Ano escolar<select data-f="year">${yearOptions(c.year)}</select></label>
-        <label class="field">Novo PIN <span class="tiny muted">(deixe vazio para manter)</span><input data-f="pin" inputmode="numeric" maxlength="4" autocomplete="off"></label></div>
+        <summary><span class="pf-av">${c.avatar || '🦉'}</span><b>${esc(c.name)}</b><span class="tiny muted grow">${esc((SCHOOL_YEARS.find(y => y[0] === c.year) || [])[1] || '')} · Lumi today ${usd(u.today_usd)} · month ${usd(u.month_usd)}</span><span class="tiny">edit ▾</span></summary>
+        <div class="form-grid"><label class="field">Name<input data-f="name" value="${esc(c.name)}" maxlength="30"></label>
+        <label class="field">School year<select data-f="year">${yearOptions(c.year)}</select></label>
+        <label class="field">New PIN <span class="tiny muted">(leave blank to keep)</span><input data-f="pin" inputmode="numeric" maxlength="4" autocomplete="off"></label></div>
         ${avatarPicker(c.avatar)}
-        <div class="row wrap"><button class="btn small primary" data-save>Salvar</button><button class="btn small danger" data-del>Apagar perfil e dados</button></div></details>`; }).join('')}</div>
-      <button class="btn small" id="f-add">＋ Adicionar criança</button></div>
-    <div class="card"><b>👨‍👩‍👧 Responsáveis</b>
-      ${fam.parents.map(p => `<div class="row tiny"><span class="grow"><b>${esc(p.name)}</b> · ${esc(p.email)}${p.role === 'admin' ? ' · admin' : ''}</span><span class="muted">${p.last_login ? 'último acesso ' + new Date(p.last_login).toLocaleDateString('pt-BR') : ''}</span></div>`).join('')}
-      <button class="btn small" id="f-invite" style="margin-top:6px">✉️ Convidar outro responsável</button><div id="f-invite-out"></div></div>
-    <div class="card"><b>🔑 Minha senha</b><div class="form-grid" style="margin-top:6px">
-      <label class="field">Senha atual<input id="f-old" type="password" autocomplete="current-password"></label>
-      <label class="field">Nova senha (mín. 8)<input id="f-new" type="password" autocomplete="new-password"></label></div>
-      <button class="btn small primary" id="f-pw">Trocar senha</button></div>
-    <div class="card"><b>🚩 Relatar um problema</b><p class="tiny muted" style="margin:2px 0 6px">Viu alguma resposta estranha ou inadequada da Lumi? Conte aqui: o administrador recebe o aviso.</p>
-      <textarea id="f-rep" class="report-ta" placeholder="O que aconteceu?"></textarea><button class="btn small" id="f-rep-go">Enviar aviso</button></div>
-    <div class="card"><b>🔐 Privacidade</b>
-      <p class="tiny muted" style="margin:2px 0 6px">Os dados de cada criança ficam num cofre separado no servidor. Veja o <a href="/privacidade.html" target="_blank" rel="noopener">Aviso de Privacidade</a>.</p>
-      <div class="row wrap"><button class="btn small" id="f-export">⬇️ Baixar todos os dados da família</button><button class="btn small" id="f-switch">👤 Trocar de perfil</button><button class="btn small" id="f-logout">Sair da conta</button>
-      ${me.parent.role === 'admin' ? '' : '<button class="btn small danger" id="f-delete">Apagar a conta da família</button>'}</div></div>`;
+        <div class="row wrap"><button class="btn small primary" data-save>Save</button><button class="btn small danger" data-del>Delete profile and data</button></div></details>`; }).join('')}</div>
+      <button class="btn small" id="f-add">＋ Add a child</button></div>
+    <div class="card"><b>👨‍👩‍👧 Parents</b>
+      ${fam.parents.map(p => `<div class="row tiny"><span class="grow"><b>${esc(p.name)}</b> · ${esc(p.email)}${p.role === 'admin' ? ' · admin' : ''}</span><span class="muted">${p.last_login ? 'last login ' + new Date(p.last_login).toLocaleDateString('en-GB') : ''}</span></div>`).join('')}
+      <button class="btn small" id="f-invite" style="margin-top:6px">✉️ Invite another parent</button><div id="f-invite-out"></div></div>
+    <div class="card"><b>🔑 My password</b><div class="form-grid" style="margin-top:6px">
+      <label class="field">Current password<input id="f-old" type="password" autocomplete="current-password"></label>
+      <label class="field">New password (min. 8)<input id="f-new" type="password" autocomplete="new-password"></label></div>
+      <button class="btn small primary" id="f-pw">Change password</button></div>
+    <div class="card"><b>🚩 Report a problem</b><p class="tiny muted" style="margin:2px 0 6px">Did Lumi give a strange or inappropriate answer? Tell us here: the administrator gets the report.</p>
+      <textarea id="f-rep" class="report-ta" placeholder="What happened?"></textarea><button class="btn small" id="f-rep-go">Send report</button></div>
+    <div class="card"><b>🔐 Privacy</b>
+      <p class="tiny muted" style="margin:2px 0 6px">Each child’s data is kept in a separate vault on the server. See the <a href="/privacidade.html" target="_blank" rel="noopener">Privacy Notice</a>.</p>
+      <div class="row wrap"><button class="btn small" id="f-export">⬇️ Download all the family’s data</button><button class="btn small" id="f-switch">👤 Switch profile</button><button class="btn small" id="f-logout">Log out</button>
+      ${me.parent.role === 'admin' ? '' : '<button class="btn small danger" id="f-delete">Delete the family account</button>'}</div></div>`;
   $$('details.kid', box).forEach(d => {
     const st = { avatar: (me.children.find(c => c.id === d.dataset.id) || {}).avatar };
     bindAvatar(d, st);
     $('[data-save]', d).onclick = async () => {
       const data = { name: $('[data-f=name]', d).value, year: $('[data-f=year]', d).value, avatar: st.avatar };
       const pin = $('[data-f=pin]', d).value.trim(); if (pin) data.pin = pin;
-      try { await apiCall(`/api/family/children/${d.dataset.id}`, { method: 'PATCH', data }); toast('Salvo ✔');
+      try { await apiCall(`/api/family/children/${d.dataset.id}`, { method: 'PATCH', data }); toast('Saved ✔');
         if (d.dataset.id === Server.childId) { S.name = data.name.trim() || S.name; S.settings.year = data.year; save(); }
         pFamily(box); } catch (e) { toast(e.message); }
     };
     $('[data-del]', d).onclick = async () => {
       const kid = me.children.find(c => c.id === d.dataset.id);
-      if (!(await confirmBox(`Apagar ${esc(kid.name)}?`, 'O perfil e TODOS os dados desta criança (semanas, moedas, compras) serão apagados para sempre.', 'Continuar', true))) return;
+      if (!(await confirmBox(`Delete ${esc(kid.name)}?`, 'This child’s profile and ALL their data (weeks, coins, purchases) will be deleted for ever.', 'Continue', true))) return;
       const pw = await promptPassword(); if (!pw) return;
-      try { await apiCall(`/api/family/children/${kid.id}`, { method: 'DELETE', data: { password: pw } }); toast('Perfil apagado');
+      try { await apiCall(`/api/family/children/${kid.id}`, { method: 'DELETE', data: { password: pw } }); toast('Profile deleted');
         try { localStorage.removeItem(localKey(kid.id)); } catch (e) { /* ignora */ }
         if (kid.id === Server.childId) { Server.childId = null; rememberChild(''); await refreshMe(); afterLogin(); return; }
         pFamily(box); } catch (e) { toast(e.message); }
@@ -4834,76 +4834,76 @@ async function pFamily(box) {
   $('#f-add').onclick = () => { VIEW.parentsUnlocked = false; VIEW.auth = { mode: 'addchild' }; show('login'); };
   $('#f-invite').onclick = async () => {
     try { const r = await apiCall('/api/family/invite-parent', { method: 'POST', data: {} });
-      $('#f-invite-out').innerHTML = linkBox(r.link, r.expires, `Convite para entrar na família ${me.family.name} no app Estudos com a Lumi`); bindShare(box); } catch (e) { toast(e.message); }
+      $('#f-invite-out').innerHTML = linkBox(r.link, r.expires, `Invitation to join the ${me.family.name} family on the Study with Lumi app`); bindShare(box); } catch (e) { toast(e.message); }
   };
   $('#f-pw').onclick = async () => {
-    try { await apiCall('/api/auth/password', { method: 'POST', data: { old: $('#f-old').value, new: $('#f-new').value } }); toast('Senha trocada ✔'); $('#f-old').value = $('#f-new').value = ''; }
+    try { await apiCall('/api/auth/password', { method: 'POST', data: { old: $('#f-old').value, new: $('#f-new').value } }); toast('Password changed ✔'); $('#f-old').value = $('#f-new').value = ''; }
     catch (e) { toast(e.message); }
   };
   $('#f-rep-go').onclick = async () => {
     const t = $('#f-rep').value.trim(); if (!t) return;
-    try { await apiCall('/api/report', { method: 'POST', data: { childId: Server.childId, kind: 'pais', text: t } }); $('#f-rep').value = ''; toast('Aviso enviado. Obrigado!'); } catch (e) { toast(e.message); }
+    try { await apiCall('/api/report', { method: 'POST', data: { childId: Server.childId, kind: 'pais', text: t } }); $('#f-rep').value = ''; toast('Report sent. Thank you!'); } catch (e) { toast(e.message); }
   };
   $('#f-export').onclick = async () => {
     try { const data = await apiCall('/api/family/export');
       const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `lumi-familia-${today()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `lumi-family-${today()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
     } catch (e) { toast(e.message); }
   };
   $('#f-switch').onclick = () => switchProfile();
   $('#f-logout').onclick = () => logout();
   const del = $('#f-delete');
   if (del) del.onclick = async () => {
-    if (!(await confirmBox('Apagar a conta da família?', 'Todos os responsáveis, crianças e dados serão apagados para sempre. Não dá para desfazer.', 'Continuar', true))) return;
+    if (!(await confirmBox('Delete the family account?', 'All parents, children and data will be deleted for ever. This can’t be undone.', 'Continue', true))) return;
     const pw = await promptPassword(); if (!pw) return;
     try { await apiCall('/api/family', { method: 'DELETE', data: { password: pw } });
       try { Object.keys(localStorage).filter(k => k.startsWith(STORE_KEY)).forEach(k => localStorage.removeItem(k)); } catch (e) { /* ignora */ }
-      Server.me = null; Server.childId = null; rememberChild(''); VIEW.parentsUnlocked = false; VIEW.auth = { mode: 'login' }; show('login'); toast('Conta apagada.');
+      Server.me = null; Server.childId = null; rememberChild(''); VIEW.parentsUnlocked = false; VIEW.auth = { mode: 'login' }; show('login'); toast('Account deleted.');
     } catch (e) { toast(e.message); }
   };
 }
 function promptPassword() {
   return new Promise(res => {
-    const c = openModal(`<div class="modal-head"><h3>Confirme com a sua senha</h3></div><div class="modal-body"><input class="pin-input" id="pp2" type="password" autocomplete="current-password" style="letter-spacing:normal;font-size:18px"></div>
-      <div class="modal-foot"><button class="btn" data-no>Cancelar</button><button class="btn danger" data-yes>Apagar</button></div>`, { onClose: () => res('') });
+    const c = openModal(`<div class="modal-head"><h3>Confirm with your password</h3></div><div class="modal-body"><input class="pin-input" id="pp2" type="password" autocomplete="current-password" style="letter-spacing:normal;font-size:18px"></div>
+      <div class="modal-foot"><button class="btn" data-no>Cancel</button><button class="btn danger" data-yes>Delete</button></div>`, { onClose: () => res('') });
     $('[data-no]', c).onclick = () => closeModal();
     $('[data-yes]', c).onclick = () => { const v = $('#pp2', c).value; $('#modal')._onClose = null; closeModal(); res(v); };
     setTimeout(() => $('#pp2', c) && $('#pp2', c).focus(), 50);
   });
 }
 async function pAdmin(box) {
-  box.innerHTML = '<p class="muted">Carregando…</p>';
+  box.innerHTML = '<p class="muted">Loading…</p>';
   let o;
   try { o = await apiCall('/api/admin/overview'); } catch (e) { box.innerHTML = `<p class="muted">${esc(e.message)}</p>`; return; }
   const pct = Math.min(100, (o.monthUsd / o.monthCap) * 100);
   box.innerHTML = `
-    <div class="card"><b>💳 Gasto com o Claude neste mês</b>
-      <div class="spend"><div class="spend-bar"><i style="width:${pct}%"></i></div><span><b>${usd(o.monthUsd)}</b> de ${usd(o.monthCap)}</span></div>
-      <p class="tiny muted" style="margin:4px 0 0">Limite padrão: ${usd(o.childCap)} por criança por dia. Os valores são estimativas pelos tokens usados. Para mudar os limites padrão, edite CHILD_DAILY_USD e MONTHLY_USD no wrangler.jsonc.</p></div>
-    <div class="card"><b>✉️ Convidar uma nova família</b>
-      <div class="row wrap" style="margin-top:6px"><input id="ad-note" placeholder="Para quem? (ex.: Família Silva)" class="grow input"><button class="btn small primary" id="ad-inv">Gerar convite</button></div>
+    <div class="card"><b>💳 Claude spending this month</b>
+      <div class="spend"><div class="spend-bar"><i style="width:${pct}%"></i></div><span><b>${usd(o.monthUsd)}</b> of ${usd(o.monthCap)}</span></div>
+      <p class="tiny muted" style="margin:4px 0 0">Default limit: ${usd(o.childCap)} per child per day. Values are estimates based on the tokens used. To change the default limits, edit CHILD_DAILY_USD and MONTHLY_USD in wrangler.jsonc.</p></div>
+    <div class="card"><b>✉️ Invite a new family</b>
+      <div class="row wrap" style="margin-top:6px"><input id="ad-note" placeholder="Who is it for? (e.g. the Silva family)" class="grow input"><button class="btn small primary" id="ad-inv">Create invitation</button></div>
       <div id="ad-inv-out"></div>
-      ${o.invites.length ? `<div class="tiny" style="margin-top:8px"><b>Convites</b>${o.invites.map(i => `<div class="row"><span class="grow">${esc(i.note || '(sem nome)')} · ${new Date(i.created).toLocaleDateString('pt-BR')}</span>
-        <span class="muted">${i.used_at ? '✅ usado' : i.expires < new Date().toISOString() ? 'expirado' : 'pendente'}</span>${!i.used_at && i.expires >= new Date().toISOString() ? `<button class="btn small" data-revoke="${i.id}">Cancelar</button>` : ''}</div>`).join('')}</div>` : ''}</div>
-    <div class="card"><b>👨‍👩‍👧 Famílias (${o.families.length})</b>
+      ${o.invites.length ? `<div class="tiny" style="margin-top:8px"><b>Invitations</b>${o.invites.map(i => `<div class="row"><span class="grow">${esc(i.note || '(no name)')} · ${new Date(i.created).toLocaleDateString('en-GB')}</span>
+        <span class="muted">${i.used_at ? '✅ used' : i.expires < new Date().toISOString() ? 'expired' : 'pending'}</span>${!i.used_at && i.expires >= new Date().toISOString() ? `<button class="btn small" data-revoke="${i.id}">Cancel</button>` : ''}</div>`).join('')}</div>` : ''}</div>
+    <div class="card"><b>👨‍👩‍👧 Families (${o.families.length})</b>
       ${o.families.map(f => `<div class="fam ${f.status !== 'active' ? 'paused' : ''}" data-fam="${f.id}">
-        <div class="row wrap"><b class="grow">${esc(f.name)}${f.status !== 'active' ? ' · ⏸️ pausada' : ''}</b><span class="tiny">hoje ${usd(f.today_usd)} · mês <b>${usd(f.month_usd)}</b> (${f.month_calls} chamadas)</span></div>
-        <div class="tiny">${f.children.map(c => `${c.avatar || '🦉'} ${esc(c.name)}`).join(' · ') || '<span class="muted">sem crianças</span>'}</div>
-        ${f.parents.map(p => `<div class="row tiny"><span class="grow">${esc(p.name)} · ${esc(p.email)}${p.last_login ? ' · ' + new Date(p.last_login).toLocaleDateString('pt-BR') : ''}</span><button class="btn small" data-reset="${p.id}" data-email="${esc(p.email)}">🔑 Link de nova senha</button></div>`).join('')}
-        <div class="row wrap tiny" style="margin-top:4px"><label>Limite por criança/dia (US$) <input type="number" step="0.1" min="0" data-cap value="${f.child_daily_usd ?? ''}" placeholder="${o.childCap}" style="width:70px"></label>
-          <button class="btn small" data-capsave>Salvar limite</button>
-          ${f.id !== Server.me.family.id ? `<button class="btn small" data-status="${f.status === 'active' ? 'paused' : 'active'}">${f.status === 'active' ? '⏸️ Pausar' : '▶️ Reativar'}</button><button class="btn small danger" data-famdel>Apagar</button>` : '<span class="muted">(sua família)</span>'}</div>
+        <div class="row wrap"><b class="grow">${esc(f.name)}${f.status !== 'active' ? ' · ⏸️ paused' : ''}</b><span class="tiny">today ${usd(f.today_usd)} · month <b>${usd(f.month_usd)}</b> (${f.month_calls} calls)</span></div>
+        <div class="tiny">${f.children.map(c => `${c.avatar || '🦉'} ${esc(c.name)}`).join(' · ') || '<span class="muted">no children</span>'}</div>
+        ${f.parents.map(p => `<div class="row tiny"><span class="grow">${esc(p.name)} · ${esc(p.email)}${p.last_login ? ' · ' + new Date(p.last_login).toLocaleDateString('en-GB') : ''}</span><button class="btn small" data-reset="${p.id}" data-email="${esc(p.email)}">🔑 New password link</button></div>`).join('')}
+        <div class="row wrap tiny" style="margin-top:4px"><label>Limit per child/day (US$) <input type="number" step="0.1" min="0" data-cap value="${f.child_daily_usd ?? ''}" placeholder="${o.childCap}" style="width:70px"></label>
+          <button class="btn small" data-capsave>Save limit</button>
+          ${f.id !== Server.me.family.id ? `<button class="btn small" data-status="${f.status === 'active' ? 'paused' : 'active'}">${f.status === 'active' ? '⏸️ Pause' : '▶️ Reactivate'}</button><button class="btn small danger" data-famdel>Delete</button>` : '<span class="muted">(your family)</span>'}</div>
         <div data-out></div></div>`).join('')}</div>
-    <div class="card"><b>🚩 Avisos de problema (${o.reports.length})</b>
-      ${o.reports.map(r => `<div class="review-item"><div class="meta">${new Date(r.created).toLocaleString('pt-BR')} · ${esc(r.family_name || '')}${r.child_name ? ' · ' + esc(r.child_name) : ''} · ${esc(r.kind || '')}</div><div class="ans">${esc(r.text)}</div>
-        <button class="btn small" data-resolve="${r.id}">✔ Resolvido</button></div>`).join('') || '<p class="tiny muted">Nenhum aviso.</p>'}</div>
+    <div class="card"><b>🚩 Problem reports (${o.reports.length})</b>
+      ${o.reports.map(r => `<div class="review-item"><div class="meta">${new Date(r.created).toLocaleString('en-GB')} · ${esc(r.family_name || '')}${r.child_name ? ' · ' + esc(r.child_name) : ''} · ${esc(r.kind || '')}</div><div class="ans">${esc(r.text)}</div>
+        <button class="btn small" data-resolve="${r.id}">✔ Resolved</button></div>`).join('') || '<p class="tiny muted">No reports.</p>'}</div>
     ${await adminCurriculumHtml()}
     ${await adminBankHtml()}`;
   bindAdminCurriculum(box);
   bindAdminBank(box);
   $('#ad-inv').onclick = async () => {
     try { const r = await apiCall('/api/admin/invites', { method: 'POST', data: { note: $('#ad-note').value } });
-      $('#ad-inv-out').innerHTML = linkBox(r.link, r.expires, 'Convite para o app de estudos Estudos com a Lumi'); bindShare(box); } catch (e) { toast(e.message); }
+      $('#ad-inv-out').innerHTML = linkBox(r.link, r.expires, 'Invitation to the Estudos com a Lumi study app'); bindShare(box); } catch (e) { toast(e.message); }
   };
   $$('[data-revoke]', box).forEach(b => b.onclick = async () => { await apiCall(`/api/admin/invites/${b.dataset.revoke}`, { method: 'DELETE' }); pAdmin(box); });
   $$('[data-resolve]', box).forEach(b => b.onclick = async () => { await apiCall(`/api/admin/reports/${b.dataset.resolve}`, { method: 'POST', data: {} }); pAdmin(box); });
@@ -4911,12 +4911,12 @@ async function pAdmin(box) {
     const id = f.dataset.fam;
     $$('[data-reset]', f).forEach(b => b.onclick = async () => {
       try { const r = await apiCall('/api/admin/reset-link', { method: 'POST', data: { parentId: b.dataset.reset } });
-        $('[data-out]', f).innerHTML = `<div class="tiny">Link de nova senha para <b>${esc(b.dataset.email)}</b>:</div>` + linkBox(r.link, r.expires, 'Link para criar uma nova senha no app Estudos com a Lumi'); bindShare(f); } catch (e) { toast(e.message); }
+        $('[data-out]', f).innerHTML = `<div class="tiny">New password link for <b>${esc(b.dataset.email)}</b>:</div>` + linkBox(r.link, r.expires, 'Link to create a new password on the Study with Lumi app'); bindShare(f); } catch (e) { toast(e.message); }
     });
-    $('[data-capsave]', f).onclick = async () => { const v = $('[data-cap]', f).value; await apiCall(`/api/admin/families/${id}`, { method: 'PATCH', data: { child_daily_usd: v === '' ? null : Number(v) } }); toast('Limite salvo'); };
+    $('[data-capsave]', f).onclick = async () => { const v = $('[data-cap]', f).value; await apiCall(`/api/admin/families/${id}`, { method: 'PATCH', data: { child_daily_usd: v === '' ? null : Number(v) } }); toast('Limit saved'); };
     const st = $('[data-status]', f); if (st) st.onclick = async () => { await apiCall(`/api/admin/families/${id}`, { method: 'PATCH', data: { status: st.dataset.status } }); pAdmin(box); };
     const del = $('[data-famdel]', f); if (del) del.onclick = async () => {
-      if (!(await confirmBox('Apagar esta família?', 'Todos os responsáveis, crianças e dados desta família serão apagados para sempre.', 'Apagar', true))) return;
+      if (!(await confirmBox('Delete this family?', 'All of this family’s parents, children and data will be deleted for ever.', 'Delete', true))) return;
       await apiCall(`/api/admin/families/${id}`, { method: 'DELETE' }); pAdmin(box);
     };
   });
@@ -4931,7 +4931,7 @@ function init() {
   renderCoins();
   $('#mascot-btn').onclick = mascotClick;
   $('#bubble').onclick = () => { if (!$('#bubble-actions').children.length) hideBubble(); };
-  $('#coin-pill').onclick = () => say(`Você tem <b>${S.coins}</b> moedas. ${S.coins < 0 ? 'Saldo negativo: faça extras e entregue a semana para recuperar!' : 'Gaste na 🛒 Lojinha!'}`);
+  $('#coin-pill').onclick = () => say(`You have <b>${S.coins}</b> coins. ${S.coins < 0 ? 'Negative balance: do some Extras and complete the week to get back up!' : 'Spend them in the 🛒 Shop!'}`);
   $$('.top-nav button').forEach(b => b.onclick = () => {
     if (!S.name) return;
     if (currentScreen === 'work') save();
@@ -4954,7 +4954,7 @@ async function boot() {
   try { await refreshMe(); }
   catch (e) {
     if (e.status === 401) { VIEW.auth = { mode: 'login' }; show('login'); return; }
-    toast('Sem conexão com o servidor.'); VIEW.auth = { mode: 'login' }; show('login'); return;
+    toast('No connection to the server.'); VIEW.auth = { mode: 'login' }; show('login'); return;
   }
   afterLogin();
 }
