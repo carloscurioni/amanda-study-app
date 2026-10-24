@@ -32,6 +32,7 @@ const DEFAULT_SETTINGS = {
   penalty: 150,           // penalidade: semana não entregue (sempre MAIOR que a recompensa)
   latePct: 50,
   dayCoins: 10,
+  notePrice: 500,         // 💌 preço do recadinho secreto
   questsOn: true,         // 📜 missões do dia e da semana
   buyQuests: true,        // missões de compra (recompensa = valor gasto + 50)           // moedas por tarefa do dia concluída no próprio dia (0 desliga; atrasada dentro da semana vale metade)            // recuperação: dias não feitos podem ser feitos até a sexta seguinte, valendo esta % da recompensa
   extraPerCorrect: 2,     // moedas por acerto nos exercícios extras
@@ -450,6 +451,7 @@ function mergeStates(localRaw, remoteRaw) {
   M.missed = (() => { const m = new Map(); [...(L.missed || []), ...(R.missed || [])].forEach(x => { if (x && x.q && !m.has(x.q.q)) m.set(x.q.q, x); }); return [...m.values()].slice(0, 40); })();
   M.books = Object.assign({}, R.books); Object.entries(L.books || {}).forEach(([k, b]) => { if (!M.books[k] || (b.chapters || []).length > (M.books[k].chapters || []).length) M.books[k] = b; });
   M.pendingImport = (() => { const m = new Map(); [...(L.pendingImport || []), ...(R.pendingImport || [])].forEach(q => { if (q && !m.has(q.q)) m.set(q.q, q); }); return [...m.values()]; })();
+  M.notesOpened = (() => { const m = new Map(); [...(L.notesOpened || []), ...(R.notesOpened || [])].forEach(n => { if (n && !m.has(n.id)) m.set(n.id, n); }); return [...m.values()].sort((a, b) => ((a.openedAt || '') < (b.openedAt || '') ? 1 : -1)); })();
   if (L.quests || R.quests) {
     M.quests = JSON.parse(JSON.stringify(R.quests || {}));
     ['day', 'week'].forEach(k => { const a = (L.quests || {})[k], b = M.quests[k];
@@ -2054,14 +2056,18 @@ let currentScreen = 'home';
 const VIEW = { setupTab: 'pt', setupCycle: null, setupMode: null, shopCat: 'egg', parentTab: 'review', parentsUnlocked: false, work: null, check: null, selfMarks: {} };
 
 function show(screen) {
+  if (currentScreen === 'parents' && screen !== 'parents' && VIEW.parentsUnlocked) {   // saiu da área dos pais: tranca de novo
+    VIEW.parentsUnlocked = false;
+    if (Server.me) apiCall('/api/auth/lock', { method: 'POST', data: {} }).catch(() => {});
+  }
   currentScreen = screen;
   $('#app').dataset.mode = screen === 'login' ? 'auth' : 'app';
   $$('.screen').forEach(s => s.classList.toggle('active', s.id === 'scr-' + screen));
   $$('.top-nav button').forEach(b => b.classList.toggle('active', b.dataset.nav === screen));
-  const titles = { welcome: 'Bem-vinda!', login: 'Estudos com a Lumi', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', check: '📄 Corrigir folha', selfcheck: '✍️ Corrigir', shop: '🛒 Lojinha', parents: '🔒 Área dos pais', workshop: '✏️ Oficina de palavras', collection: '📖 Minha coleção' };
+  const titles = { welcome: 'Bem-vinda!', login: 'Estudos com a Lumi', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', check: '📄 Corrigir folha', selfcheck: '✍️ Corrigir', shop: '🛒 Lojinha', parents: '🔒 Área dos pais', workshop: '✏️ Oficina de palavras', collection: '📖 Minha coleção', notes: '💌 Meus recadinhos' };
   $('#top-title').textContent = titles[screen] || 'Estudos';
   hideBubble();
-  ({ welcome: renderWelcome, login: renderLogin, home: renderHome, setup: renderSetup, work: renderWork, check: renderCheck, selfcheck: renderSelfCheck, shop: renderShop, parents: renderParents, workshop: renderWorkshop, collection: renderCollection })[screen]();
+  ({ welcome: renderWelcome, login: renderLogin, home: renderHome, setup: renderSetup, work: renderWork, check: renderCheck, selfcheck: renderSelfCheck, shop: renderShop, parents: renderParents, workshop: renderWorkshop, collection: renderCollection, notes: renderNotes })[screen]();
 }
 function renderCoins(pop) {
   $('#coin-count').textContent = S.coins;
@@ -3334,7 +3340,8 @@ function renderShop() {
   const el = $('#scr-shop');
   if (!SHOP_CATS.some(c => c.id === VIEW.shopCat)) VIEW.shopCat = 'egg';
   const cat = VIEW.shopCat;
-  const items = (cat === 'voucher' ? vouchersAsItems() : SHOP_ITEMS.filter(i => i.cat === cat)).slice().sort((a, b) => a.price - b.price);
+  const items = cat === 'note' ? [] : (cat === 'voucher' ? vouchersAsItems() : SHOP_ITEMS.filter(i => i.cat === cat)).slice().sort((a, b) => a.price - b.price);
+  if (cat === 'note' && VIEW.noteFetched !== today() + Server.childId) { VIEW.noteFetched = today() + Server.childId; VIEW.noteAvail = Server.me ? null : 0; if (Server.me) refreshNoteStatus().then(() => { if (currentScreen === 'shop' && VIEW.shopCat === 'note') renderShop(); }); }
   const tryOn = VIEW.tryOn && SHOP_ITEMS.find(i => i.id === VIEW.tryOn);
   const previewEq = Object.assign({}, S.equipped);
   if (tryOn && WEAR.includes(tryOn.cat)) previewEq[tryOn.cat] = tryOn.id === 'ms-owl' ? null : tryOn.id;
@@ -3369,10 +3376,12 @@ function renderShop() {
       ${['hat', 'glasses', 'neck', 'back', 'skin'].includes(cat) ? '<div class="tiny muted">As roupinhas servem em todos os mascotes.</div>' : ''}</div></div>
     <div class="shop-main">
       <div class="tabs">${SHOP_CATS.map(c => `<button data-cat="${c.id}" class="${c.id === cat ? 'on' : ''}">${c.label}</button>`).join('')}</div>
-      <div class="items">${cards || '<p class="muted">Nada aqui ainda.</p>'}</div>
+      <div class="items">${cat === 'note' ? noteShopHtml() : (cards || '<p class="muted">Nada aqui ainda.</p>')}</div>
     </div></div>`;
   $$('[data-cat]', el).forEach(b => b.onclick = () => { VIEW.shopCat = b.dataset.cat; VIEW.tryOn = null; renderShop(); });
   $('[data-act=collection]', el).onclick = () => show('collection');
+  const nb = $('[data-note-buy]', el); if (nb) nb.onclick = buyNote;
+  const mn = $('[data-act=mynotes]', el); if (mn) mn.onclick = () => show('notes');
   $$('[data-try]', el).forEach(b => b.onclick = () => { VIEW.tryOn = b.dataset.try; renderShop(); });
   $$('[data-buy]', el).forEach(b => b.onclick = () => buy(b.dataset.buy));
   $$('[data-equip]', el).forEach(b => b.onclick = () => { const it = SHOP_ITEMS.find(i => i.id === b.dataset.equip); S.equipped[it.cat] = it.id === 'ms-owl' ? null : it.id; save(); applyTheme(); renderMascotMini(); renderShop(); });
@@ -3762,6 +3771,93 @@ function questsHtml() {
     <div class="q-sec">Esta semana</div>${Q.week.list.map(q => row(q, 'week')).join('')}</div>`;
 }
 
+/* ---------- Fase 5: 💌 Recadinhos secretos dos pais ---------- */
+// Os textos ficam no servidor, fora do estado da criança: ela só recebe um recadinho quando compra o envelope.
+SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'voucher'), 0, { id: 'note', label: '💌 Recadinho secreto' });
+const notePrice = () => Math.max(1, Number(S.settings.notePrice) || 500);
+function envelopeSVG(cls = '') {
+  return `<div class="env ${cls}"><div class="env-back"></div><div class="env-letter"><span>💌</span></div><div class="env-front"></div><div class="env-flap"></div><div class="env-heart">❤</div></div>`;
+}
+async function refreshNoteStatus() {
+  if (!Server.me || !Server.childId) { VIEW.noteAvail = 0; return 0; }
+  try { VIEW.noteAvail = (await apiCall(`/api/children/${Server.childId}/notes/status`)).available; } catch (e) { VIEW.noteAvail = VIEW.noteAvail ?? 0; }
+  return VIEW.noteAvail;
+}
+function noteShopHtml() {
+  const n = VIEW.noteAvail;
+  const opened = (S.notesOpened || []).length;
+  const soon = n === 0;
+  return `<div class="item note-item ${soon ? 'soon' : ''}"><div class="pic">${envelopeSVG('idle')}</div><div class="nm">Recadinho secreto</div>
+    <div class="tiny muted">${n == null ? 'Procurando recadinhos…' : soon ? 'Em breve! Seus pais ainda vão escrever.' : 'Um recadinho dos seus pais, só para você. Nunca repete.'}</div>
+    <div class="pr">🪙 ${notePrice()}</div>
+    <div class="item-act">${soon ? '<button class="btn small" disabled>Em breve 💌</button>' : `<button class="btn small primary" data-note-buy ${n == null ? 'disabled' : ''}>Comprar envelope</button>`}</div></div>
+    <div class="item note-item mine"><div class="pic" style="font-size:42px">📬</div><div class="nm">Meus recadinhos</div><div class="tiny muted">${opened ? `${opened} aberto${opened > 1 ? 's' : ''}` : 'Ainda nenhum'}</div><div class="item-act"><button class="btn small" data-act="mynotes">Ler de novo</button></div></div>`;
+}
+async function buyNote() {
+  const price = notePrice();
+  if (S.coins < price) { say(`Faltam <b>${price - Math.max(0, S.coins)}</b> moedas para o recadinho secreto. 💌`, { mood: 'think' }); return; }
+  const ok = await confirmBox('Comprar o recadinho?', `Um envelope secreto por <b>🪙 ${price}</b>?`, 'Comprar 💌');
+  if (!ok) return;
+  let r;
+  try { r = await apiCall(`/api/children/${Server.childId}/notes/open`, { method: 'POST', data: {} }); }
+  catch (e) { toast(e.status === 404 ? 'Os recadinhos acabaram por enquanto. 💌' : 'Não consegui abrir agora. Tente de novo.'); refreshNoteStatus().then(() => currentScreen === 'shop' && renderShop()); return; }
+  addCoins(-price, 'Lojinha: Recadinho secreto', 'note-' + r.note.id);
+  S.notesOpened = [Object.assign({}, r.note), ...(S.notesOpened || []).filter(x => x.id !== r.note.id)];
+  save();
+  questEvent('buy', { cat: 'note', price });
+  VIEW.noteAvail = Math.max(0, (VIEW.noteAvail || 1) - 1);
+  if (currentScreen === 'shop') renderShop();
+  openEnvelope(r.note);
+}
+function noteCard(n) {
+  return `<div class="note-paper"><div class="note-text">${esc(n.text).replace(/\n/g, '<br>')}</div><div class="note-from">💛 ${esc(n.from || 'Seus pais')} · ${new Date(n.openedAt || Date.now()).toLocaleDateString('pt-BR')}</div></div>`;
+}
+function openEnvelope(n) {
+  const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const m = openModal(`<div class="modal-body env-stage">${envelopeSVG('closed')}<div class="env-reveal hidden">${noteCard(n)}</div></div>
+    <div class="modal-foot" style="justify-content:center"><button class="btn" data-mine>📬 Meus recadinhos</button><button class="btn primary" data-close>💛 Guardar</button></div>`);
+  const env = $('.env', m);
+  const show2 = () => { env.classList.add('gone'); $('.env-reveal', m).classList.remove('hidden'); if (typeof celebrateFX === 'function') celebrateFX('hearts'); };
+  $('[data-mine]', m).onclick = () => { closeModal(); show('notes'); };
+  if (reduce) { show2(); return; }
+  setTimeout(() => env.classList.add('open'), 500);
+  setTimeout(() => env.classList.add('rise'), 1200);
+  setTimeout(show2, 2000);
+}
+function renderNotes() {
+  const el = $('#scr-notes');
+  const list = S.notesOpened || [];
+  el.innerHTML = `<div class="collection"><div class="card"><div class="row wrap"><h3 class="grow" style="margin:0">💌 Meus recadinhos</h3><button class="btn small" data-act="toshop">💌 Comprar envelope</button></div>
+    <p class="tiny muted" style="margin:4px 0 0">Os recadinhos que você já abriu ficam guardados aqui.</p></div>
+    ${list.length ? list.map(n => `<div class="card">${noteCard(n)}</div>`).join('') : '<div class="card"><p class="muted">Você ainda não abriu nenhum recadinho. Eles ficam na lojinha, em 💌 Recadinho secreto.</p></div>'}</div>`;
+  $('[data-act=toshop]', el).onclick = () => { VIEW.shopCat = 'note'; show('shop'); };
+}
+// Aba dos pais: um recadinho por vez, cada filho com os seus
+async function pNotes(box) {
+  const kids = (Server.me && Server.me.children) || [];
+  if (!kids.length) { box.innerHTML = '<p class="muted">Os recadinhos precisam do servidor (conta da família).</p>'; return; }
+  if (!VIEW.noteKid || !kids.some(k => k.id === VIEW.noteKid)) VIEW.noteKid = Server.childId || kids[0].id;
+  box.innerHTML = '<p class="muted">Carregando…</p>';
+  let notes = [];
+  try { notes = (await apiCall(`/api/children/${VIEW.noteKid}/notes`)).notes; }
+  catch (e) { box.innerHTML = `<div class="notice bad">${esc(e.message)}</div><button class="btn" id="nrel">Digitar a senha de novo</button>`; $('#nrel', box).onclick = () => { VIEW.parentsUnlocked = false; show('parents'); }; return; }
+  const kid = kids.find(k => k.id === VIEW.noteKid);
+  const waiting = notes.filter(n => !n.openedAt).length;
+  box.innerHTML = `<div class="card"><b>💌 Recadinhos secretos</b>
+      <p class="tiny muted" style="margin:4px 0">Escreva recadinhos para cada filho. Eles ficam guardados em segredo: a criança só lê quando compra o envelope na lojinha (🪙 ${notePrice()}, ajustável em Ajustes). Cada compra sorteia um recadinho ainda não lido, sem repetir.</p>
+      ${kids.length > 1 ? `<div class="seg small">${kids.map(k => `<button data-nk="${k.id}" class="${k.id === VIEW.noteKid ? 'on' : ''}">${k.avatar || '🦉'} ${esc(k.name)}</button>`).join('')}</div>` : ''}
+      <div style="margin-top:8px"><textarea id="n-text" maxlength="1000" rows="3" placeholder="Para ${esc(kid.name)}: ex.: Tenho muito orgulho de você! Vale um sorvete comigo no sábado. 🍦" style="width:100%;padding:8px;border-radius:10px;border:1.5px solid var(--line);font:inherit"></textarea>
+      <div class="row"><span class="tiny muted grow">${waiting} guardado${waiting === 1 ? '' : 's'} · ${notes.length - waiting} já aberto${notes.length - waiting === 1 ? '' : 's'}</span><button class="btn small primary" id="n-add">Guardar recadinho</button></div></div></div>
+    <div class="card"><b>Recadinhos de ${esc(kid.name)}</b><div style="display:grid;gap:6px;margin-top:6px">
+      ${notes.length ? notes.slice().reverse().map(n => `<div class="pnote ${n.openedAt ? 'opened' : ''}"><div class="grow">${esc(n.text).replace(/\n/g, '<br>')}<div class="tiny muted">${n.openedAt ? `✅ Comprado e lido em ${new Date(n.openedAt).toLocaleDateString('pt-BR')} ${new Date(n.openedAt).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}` : '🔒 Guardado (ainda não comprado)'} · por ${esc(n.from || '')}</div></div>
+        ${n.openedAt ? '' : `<button class="btn small" data-ndel="${n.id}" aria-label="Apagar">✕</button>`}</div>`).join('') : '<p class="muted">Nenhum recadinho ainda.</p>'}</div></div>`;
+  $$('[data-nk]', box).forEach(b => b.onclick = () => { VIEW.noteKid = b.dataset.nk; pNotes(box); });
+  $('#n-add', box).onclick = async () => { const t = $('#n-text', box).value; if (!t.trim()) return;
+    try { await apiCall(`/api/children/${VIEW.noteKid}/notes`, { method: 'POST', data: { text: t } }); toast('Recadinho guardado 💌'); pNotes(box); } catch (e) { toast(e.message); } };
+  $$('[data-ndel]', box).forEach(b => b.onclick = async () => { if (!(await confirmBox('Apagar recadinho?', 'Ele ainda não foi lido.', 'Apagar', true))) return;
+    try { await apiCall(`/api/children/${VIEW.noteKid}/notes/${b.dataset.ndel}`, { method: 'DELETE' }); pNotes(box); } catch (e) { toast(e.message); } });
+}
+
 /* ---------- Área dos pais ---------- */
 function renderParents() {
   const el = $('#scr-parents');
@@ -3790,7 +3886,7 @@ function renderParents() {
     return;
   }
   const tabs = [['review', '📝 Correção'], ['coins', '🪙 Moedas'], ['vouchers', '🎟️ Vales'], ['settings', '⚙️ Ajustes'], ['data', '📥 Dados']];
-  if (Server.me) tabs.push(['family', '👨‍👩‍👧 Família']);
+  if (Server.me) tabs.push(['notes', '💌 Recadinhos'], ['family', '👨‍👩‍👧 Família']);
   if (Server.me && Server.me.parent.role === 'admin') tabs.push(['admin', '🛠️ Admin']);
   if (!tabs.some(t => t[0] === VIEW.parentTab)) VIEW.parentTab = 'review';
   const kid = currentChild();
@@ -3798,7 +3894,7 @@ function renderParents() {
     <button class="btn small" id="lock">Sair</button></div><div class="parents-body" id="pbody"></div></div>`;
   $$('[data-ptab]', el).forEach(b => b.onclick = () => { VIEW.parentTab = b.dataset.ptab; renderParents(); });
   $('#lock').onclick = () => { VIEW.parentsUnlocked = false; show('home'); };
-  ({ review: pReview, coins: pCoins, vouchers: pVouchers, settings: pSettings, data: pData, family: pFamily, admin: pAdmin })[VIEW.parentTab]($('#pbody'));
+  ({ review: pReview, coins: pCoins, vouchers: pVouchers, settings: pSettings, data: pData, family: pFamily, admin: pAdmin, notes: pNotes })[VIEW.parentTab]($('#pbody'));
 }
 function pReview(box) {
   const w = S.week;
@@ -3850,6 +3946,7 @@ function pSettings(box) {
       <label class="field">Penalidade (semana não entregue)<input type="number" id="s-penalty" value="${st.penalty}"></label>
       <label class="field">Recuperação atrasada vale (% da recompensa)<input type="number" id="s-late" value="${latePct()}"></label>
       <label class="field">Moedas por tarefa do dia (0 desliga)<input type="number" id="s-dayc" value="${st.dayCoins ?? 10}"></label>
+      <label class="field">💌 Preço do recadinho secreto<input type="number" id="s-notep" value="${notePrice()}"></label>
       <label class="field">📜 Missões<select id="s-quests"><option value="1" ${st.questsOn !== false ? 'selected' : ''}>Ligadas</option><option value="0" ${st.questsOn === false ? 'selected' : ''}>Desligadas</option></select></label>
       <label class="field">Missões de compra (ganha o gasto + 50)<select id="s-bquests"><option value="1" ${st.buyQuests !== false ? 'selected' : ''}>Ligadas</option><option value="0" ${st.buyQuests === false ? 'selected' : ''}>Desligadas</option></select></label>
       <label class="field">Moedas por acerto nos extras<input type="number" id="s-xpc" value="${st.extraPerCorrect}"></label>
@@ -3878,7 +3975,7 @@ function pSettings(box) {
     const reward = Math.max(0, num('#s-reward', st.reward)), penalty = num('#s-penalty', st.penalty);
     if (penalty <= reward) { toast('A penalidade precisa ser MAIOR que a recompensa.'); return; }
     Object.assign(st, {
-      reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), questsOn: $('#s-quests').value === '1', buyQuests: $('#s-bquests').value === '1', extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
+      reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), questsOn: $('#s-quests').value === '1', notePrice: clamp(num('#s-notep', notePrice()), 1, 100000), buyQuests: $('#s-bquests').value === '1', extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
       extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10), minPerDay: clamp(num('#s-min', st.minPerDay), 1, 15), maxPerDay: clamp(num('#s-max', st.maxPerDay), 3, 40),
       workshopCoins: clamp(num('#s-wkc', st.workshopCoins ?? 3), 0, 50), workshopPerDay: clamp(num('#s-wkd', st.workshopPerDay ?? 5), 0, 20),
       countMode: $('#s-cmode').value, perSubject: clamp(num('#s-per', st.perSubject || 2), 1, 4), dailyReading: $('#s-dread').value === '1',

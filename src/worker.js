@@ -104,6 +104,29 @@ export class FamilyStore extends DurableObject {
     return { ok: true, rev: next.rev, savedAt: next.savedAt };
   }
   async reset() { await this.ctx.storage.deleteAll(); return { ok: true }; }
+  // 💌 Recadinhos secretos dos pais: ficam fora do estado da criança (que vai para o aparelho dela).
+  async notes() { return (await this.ctx.storage.get('notes')) || []; }
+  async notesAdd(text, from) {
+    const l = await this.notes();
+    if (l.length >= 300) return { err: 'Limite de recadinhos atingido.' };
+    const n = { id: crypto.randomUUID().slice(0, 12), text, from, createdAt: new Date().toISOString(), openedAt: null };
+    l.push(n); await this.ctx.storage.put('notes', l); return { note: n };
+  }
+  async notesDelete(id) {
+    const l = await this.notes(); const n = l.find(x => x.id === id);
+    if (!n) return { err: 'Recadinho não encontrado.' };
+    if (n.openedAt) return { err: 'Este recadinho já foi aberto.' };
+    await this.ctx.storage.put('notes', l.filter(x => x.id !== id)); return { ok: true };
+  }
+  async notesAvailable() { return (await this.notes()).filter(n => !n.openedAt).length; }
+  async notesOpen() {
+    const l = await this.notes(); const un = l.filter(n => !n.openedAt);
+    if (!un.length) return { err: 'Sem recadinhos disponíveis.' };
+    const n = un[Math.floor(Math.random() * un.length)];
+    n.openedAt = new Date().toISOString();
+    await this.ctx.storage.put('notes', l);
+    return { note: { id: n.id, text: n.text, from: n.from, openedAt: n.openedAt } };
+  }
 }
 
 /* ---------------- Utilitários HTTP ---------------- */
@@ -556,7 +579,8 @@ async function api(req, env, url) {
 
   if (path === '/api/auth/me' && m === 'GET') return json({ parent: me.parent, family: { id: me.family.id, name: me.family.name }, children: me.children, ai: !!env.ANTHROPIC_API_KEY });
   if (path === '/api/auth/logout' && m === 'POST') { await D.logout(token); return json({ ok: true }, 200, { 'set-cookie': clearCookie() }); }
-  if (path === '/api/auth/verify' && m === 'POST') { const b = await body(req, 5_000); return json(await D.verifyPassword(me.parent.id, b.password)); }
+  if (path === '/api/auth/verify' && m === 'POST') { const b = await body(req, 5_000); return json(await D.verifyPassword(me.parent.id, b.password, token)); }
+  if (path === '/api/auth/lock' && m === 'POST') return json(await D.lockSession(token));
   if (path === '/api/auth/password' && m === 'POST') { const b = await body(req, 5_000); return json(await D.changePassword(me.parent.id, b.old, b.new)); }
 
   // Família: crianças, responsáveis, uso, convite para outro responsável, exportar e apagar
@@ -603,6 +627,24 @@ async function api(req, env, url) {
       return json(r, r.ok ? 200 : 409);
     }
     if (m === 'DELETE') return json(await S.reset());
+  }
+
+  // 💌 Recadinhos: listar/criar/apagar só com a área dos pais desbloqueada (senha); a criança só vê ao comprar
+  const ntM = path.match(/^\/api\/children\/([A-Za-z0-9_-]+)\/notes(?:\/([A-Za-z0-9_-]+))?$/);
+  if (ntM) {
+    need(me.children.some(c => c.id === ntM[1]));
+    const N = childStore(env, ntM[1]); const sub = ntM[2];
+    if (sub === 'status' && m === 'GET') return json({ available: await N.notesAvailable() });
+    if (sub === 'open' && m === 'POST') { const r = await N.notesOpen(); if (r.err) throw new HttpError(404, r.err); return json(r); }
+    if (!me.unlocked) throw new HttpError(403, 'Digite a senha da área dos pais de novo.');
+    if (!sub && m === 'GET') return json({ notes: await N.notes() });
+    if (!sub && m === 'POST') {
+      const b = await body(req, 10_000);
+      const text = String(b.text || '').replace(/\s+$/g, '').slice(0, 1000);
+      if (!text.trim()) throw new HttpError(400, 'Escreva o recadinho.');
+      const r = await N.notesAdd(text, String(me.parent.name || '').slice(0, 40)); if (r.err) throw new HttpError(400, r.err); return json(r);
+    }
+    if (sub && m === 'DELETE') { const r = await N.notesDelete(sub); if (r.err) throw new HttpError(400, r.err); return json(r); }
   }
 
   // Claude (sempre em nome de uma criança da família, com limite de gasto)

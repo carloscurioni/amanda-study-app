@@ -63,6 +63,8 @@ export class Directory extends DurableObject {
       CREATE TABLE IF NOT EXISTS reports (id INTEGER PRIMARY KEY AUTOINCREMENT, family_id TEXT, child_id TEXT, kind TEXT, text TEXT, created TEXT NOT NULL, resolved INTEGER NOT NULL DEFAULT 0);
       CREATE TABLE IF NOT EXISTS throttle (k TEXT PRIMARY KEY, n INTEGER NOT NULL, until TEXT);
     `);
+    // migração: sessão "desbloqueada" por alguns minutos depois que o responsável digita a senha (área dos pais)
+    try { this.sql.exec('ALTER TABLE sessions ADD COLUMN unlocked_until TEXT'); } catch (e) { /* já existe */ }
   }
   // Chamada única usada pelo Worker: devolve o erro com o código HTTP certo
   // (erros lançados dentro de um Durable Object perdem campos extras no caminho).
@@ -101,8 +103,9 @@ export class Directory extends DurableObject {
     if (!parent || !family) return null;
     if (family.status !== 'active' && parent.role !== 'admin') return null;
     if (!s.last_seen || s.last_seen < addMs(-3600000)) this.sql.exec('UPDATE sessions SET last_seen = ? WHERE token_hash = ?', now(), h);
-    return { parent, family, children: this.children(family.id) };
+    return { parent, family, children: this.children(family.id), unlocked: !!(s.unlocked_until && s.unlocked_until > now()) };
   }
+  async lockSession(token) { if (token) this.sql.exec('UPDATE sessions SET unlocked_until = NULL WHERE token_hash = ?', await sha256Hex(token)); return { ok: true }; }
   async logout(token) { if (token) this.sql.exec('DELETE FROM sessions WHERE token_hash = ?', await sha256Hex(token)); return { ok: true }; }
   children(familyId) { return this.all('SELECT id, name, year, avatar FROM children WHERE family_id = ? ORDER BY created', familyId); }
 
@@ -137,12 +140,13 @@ export class Directory extends DurableObject {
     this.clearFail(k);
     return { token: await this.newSession(p.id, p.family_id) };
   }
-  async verifyPassword(parentId, password) {
+  async verifyPassword(parentId, password, token) {
     const k = 'verify:' + parentId;
     if (this.throttled(k)) throw new AppError(429, 'Muitas tentativas. Espere 15 minutos.');
     const p = this.one('SELECT pass_hash, pass_salt FROM parents WHERE id = ?', parentId);
     const ok = !!p && sameString(await pbkdf2(String(password || ''), p.pass_salt, PBKDF2_ITER), p.pass_hash);
     if (!ok) this.fail(k, 5, 15); else this.clearFail(k);
+    if (ok && token) this.sql.exec('UPDATE sessions SET unlocked_until = ? WHERE token_hash = ?', addMs(15 * 60000), await sha256Hex(token));
     return { ok };
   }
   async changePassword(parentId, oldPw, newPw) {
