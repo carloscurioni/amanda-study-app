@@ -1347,7 +1347,10 @@ const speechOK = typeof window !== 'undefined' && 'speechSynthesis' in window;
 // Ditado (perguntas "listen"): mesma voz da Lumi, um pouco mais devagar
 function speak(text, lang) {
   if (!S.settings.voice) { toast('🔇 Voice is turned off in Settings'); return; }
-  lumiSpeak(esc(String(text || '')), lang === 'en' ? 'en' : 'pt', null, { rate: .85 });
+  // ditado: a palavra numa frase curta e repetida (soa mais natural do que uma palavra solta)
+  const w = String(text || '').trim();
+  const phrase = lang === 'en' ? `Your word is: ${w}. … ${w}.` : `A palavra é: ${w}. … ${w}.`;
+  lumiSpeak(esc(phrase), lang === 'en' ? 'en' : 'pt', null, { rate: .85 });
 }
 /* Voz da Lumi
    1) Voz natural (servidor, Google Cloud Text-to-Speech) quando a chave estiver configurada — padrão.
@@ -4881,6 +4884,7 @@ function pSettings(box) {
       <label class="field">Lumi reads the mini-lessons aloud<select id="s-avoice"><option value="1" ${st.autoVoice ? 'selected' : ''}>Yes, automatically</option><option value="0" ${!st.autoVoice ? 'selected' : ''}>Only with 🔊</option></select></label>
       <label class="field">Answer key<select id="s-gab"><option value="1" ${st.gabaritoAfterFinish ? 'selected' : ''}>Unlocks after finishing</option><option value="0" ${!st.gabaritoAfterFinish ? 'selected' : ''}>Always available</option></select></label>
       <label class="field">Voice (dictation)<select id="s-voice"><option value="1" ${st.voice ? 'selected' : ''}>On</option><option value="0" ${!st.voice ? 'selected' : ''}>Off</option></select></label>
+      ${Server.tts ? '' : `<div class="notice info" style="grid-column:1/-1">🔊 <b>Natural voice is not set up yet</b>, so Lumi uses this device’s voice (often robotic in Portuguese). To turn it on, add the <b>GOOGLE_TTS_API_KEY</b> secret in Cloudflare (README → Step 5).</div>`}
       <label class="field">🔊 Lumi’s voice<select id="s-nvoice"><option value="1" ${st.naturalVoice !== false ? 'selected' : ''}>Natural (server)${Server.tts ? '' : ' — not set up yet'}</option><option value="0" ${st.naturalVoice === false ? 'selected' : ''}>Device voice</option></select></label>
       ${['pt', 'en'].map(l => { const vs = deviceVoices(l).sort((a, b) => voiceScore(b, l) - voiceScore(a, l)); const cur = (st.deviceVoice || {})[l] || '';
         return `<label class="field">Device voice in ${l === 'pt' ? 'Portuguese' : 'English'}<span class="row"><select id="s-dv-${l}" class="grow"><option value="">Automatic (best: ${esc((vs[0] || {}).name || '—')})</option>${vs.map(v => `<option value="${esc(v.voiceURI)}" ${cur === v.voiceURI ? 'selected' : ''}>${esc(v.name)}${voiceScore(v, l) >= 60 ? ' ⭐' : ''}</option>`).join('')}</select><button type="button" class="btn small" data-vtest="${l}">▶</button></span></label>`; }).join('')}
