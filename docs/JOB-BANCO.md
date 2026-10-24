@@ -40,6 +40,7 @@ Anos: Y1 ≈ Infantil 5 (5–6 anos) … Y5 ≈ 4º ano (9–10) … Y9 ≈ 8º 
   - Os outros campos ficam vazios (`options: []`, `text: ""`, `errors: []`).
 - Cada pergunta funciona sozinha, na tela e impressa (sem figura, sem áudio). Fatos corretos e verificáveis — na dúvida, não use.
 - `hint`: ajuda a pensar, **nunca** contém a resposta.
+- Perguntas de completar letras (`ca_ _orro`, `fr_ _nd`): o enunciado diz SEMPRE para escrever a **palavra inteira** ("Complete e escreva a palavra inteira: …" / "Fill in the missing letters and write the whole word: …"), e `answer` é a palavra inteira.
 - IGCSE: estilo das provas Cambridge/Edexcel/AQA, com command words. IB: estilo das provas do IB, command terms, respeitando HL/SL (`level`). Add Maths (`fmath`): respostas exatas ("2√3", "x < -1 or x > 4").
 - Conteúdo compartilhado: **nenhum** nome de pessoa real, escola, link, e-mail ou telefone. Personagens com nomes inventados e variados.
 - Adequado para a idade, gentil e educativo.

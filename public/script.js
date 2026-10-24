@@ -288,11 +288,27 @@ function parseNum(s) {
 }
 function numEq(a, b) { const x = parseNum(a), y = parseNum(b); return Number.isFinite(x) && Number.isFinite(y) && Math.abs(x - y) < 1e-6; }
 
+// Perguntas de completar ("ca_ _orro"): a pergunta pede a PALAVRA INTEIRA; quem escreve só as letras que faltam também acerta.
+function gapLetters(q) {
+  if (!q || !['short', 'listen'].includes(q.type) || !/_/.test(q.q || '')) return null;
+  const tok = (String(q.q).match(/[\p{L}'’-]*_(?:[\s_]*_)?[\p{L}_'’-]*/u) || [])[0]; if (!tok) return null;
+  const pat = tok.replace(/\s+/g, '');
+  const re = new RegExp('^' + [...pat].map(ch => (ch === '_' ? '(.)' : ch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))).join('') + '$', 'iu');
+  const m = String(q.answer || '').trim().match(re);
+  return m ? m.slice(1).join('') : null;
+}
+const gapAsksWhole = q => /palavra inteira|palavra completa|whole word|full word|complete word|escreva a palavra|write the word/i.test(q.q || '');
+const gapAsksLetters = q => /(s[óo]|only|just).{0,15}(letras?|letters?)|(letras?|letters?) que faltam|missing letters? only/i.test(q.q || '') && !gapAsksWhole(q);
+function gapNote(q) {   // instrução clara quando a pergunta não diz o que escrever
+  if (!gapLetters(q) || gapAsksWhole(q) || gapAsksLetters(q)) return '';
+  return q.lang === 'pt' ? 'Escreva a palavra inteira.' : 'Write the whole word.';
+}
 function isCorrect(q, ans) {
   if (q.type === 'open') return null;
   if (q.type === 'proof') return proofScore(q, ans) === q.errors.length;
   if (ans == null || String(ans).trim() === '') return false;
-  const list = [q.answer, ...(q.accept || [])];
+  const gl = gapLetters(q);
+  const list = [q.answer, ...(q.accept || []), ...(gl ? [gl] : [])];
   if (q.type === 'num') return list.some(a => numEq(ans, a));
   // Ortografia/Spelling: acento e grafia contam sempre (vale para perguntas do Claude, da aulinha e do gerador)
   if (SUBJ[q.subject] && SUBJ[q.subject].kind === 'spelling' && q.type !== 'mc') return list.some(a => norm(a, true) === norm(ans, true));
@@ -1761,7 +1777,7 @@ function clozeQuestions(passage, subj, rng) {
     if (!cands.length) return;
     const [w, i] = rng.pick(cands);
     const shown = words.map((x, j) => j === i ? x.replace(w, '_____') : x).join(' ');
-    out.push(Q('short', pt ? `Complete com a palavra do texto: "${shown}"` : `Complete with the word from the text: "${shown}"`, w,
+    out.push(Q('short', pt ? `Complete e escreva a palavra inteira, do texto: "${shown}"` : `Fill the gaps and write the whole word from the text: "${shown}"`, w,
       { hint: pt ? `Procure essa frase no texto. A palavra começa com "${w[0]}".` : `Find this sentence in the text. The word starts with "${w[0]}".` }));
   });
   return out;
@@ -3318,7 +3334,7 @@ function questionCard(q, i, c, num = i) {
   }
   return `<div class="q ${stateCls} ${q.type === 'proof' ? 'wide' : ''}" style="--subj:${s.color}" data-qid="${q.id}">
     <div class="q-top"><span class="q-num">${num + 1}</span>
-      <div class="q-text"><span class="q-subj">${s.icon} ${esc(s.short)}</span>${esc(q.q)}</div>
+      <div class="q-text"><span class="q-subj">${s.icon} ${esc(s.short)}</span>${esc(q.q)}${gapNote(q) ? ` <span class="gap-note">✏️ ${gapNote(q)}</span>` : ''}</div>
       <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Listen">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha: não sei isso'}" aria-label="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha'}">?</button><button type="button" data-hint title="Hint">💡</button>${chalBtn(q, c)}${c.done && q.bank && Server.me ? `<button type="button" data-bankrep title="${q.lang === 'en' ? 'Report a problem with this question' : 'Avisar problema nesta pergunta'}">🚩</button>` : ''}</div>
     </div>${control}${expected}${mark ? `<span class="mark">${mark}</span>` : ''}</div>`;
 }
@@ -3689,7 +3705,7 @@ function printQuestionHtml(q, i) {
     <div class="p-fixes">${q.errors.map((e, k) => `<span>${k + 1}. ____________</span>`).join('')}</div>`;
   else if (q.type === 'listen') ans = `<div class="p-line">${q.lang === 'pt' ? 'Ditado: um adulto lê a palavra do gabarito.' : 'Dictation: an adult reads the word from the answer key.'}</div>`;
   else ans = '<div class="p-line"></div>';
-  return `<div class="p-q"><div class="p-qt"><b>${i + 1}.</b> <span class="p-subj">${s.icon} ${esc(s.short)}</span> ${esc(q.q)}</div>${ans}</div>`;
+  return `<div class="p-q"><div class="p-qt"><b>${i + 1}.</b> <span class="p-subj">${s.icon} ${esc(s.short)}</span> ${esc(q.q)}${gapNote(q) ? ` <i>(${gapNote(q)})</i>` : ''}</div>${ans}</div>`;
 }
 // Divide as perguntas do dia em folhas A4 (o texto de leitura vai numa folha própria).
 function printChunks(qs) {

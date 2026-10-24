@@ -423,7 +423,8 @@ Regras de qualidade:
   Cada palavra errada aparece uma única vez no texto; todo o resto do texto está 100% correto. Não marque os erros (nada de negrito ou aspas).
   "errors": lista {wrong, right}, em que "wrong" é a palavra exatamente como está no texto. "q": instrução curta, ex.: "Caça-erros: encontre e corrija as 5 palavras escritas errado." / "Spot the mistakes: find and fix the 5 misspelled words.". "answer": "errada → certa; …". "options" e "accept" vazios.
   Nos outros tipos, "text" fica vazio e "errors" é uma lista vazia.
-- Em Ortografia/Spelling use as palavras da semana: completar letras que faltam (ex.: "Complete: ca_ _orro"), escolher a grafia correta, desembaralhar letras, escrever uma frase com a palavra.
+- Perguntas de completar letras: o enunciado SEMPRE diz o que escrever — a PALAVRA INTEIRA (ex.: "Complete e escreva a palavra inteira: ca_ _orro" / "Fill in the missing letters and write the whole word: fr_ _nd"); "answer" = a palavra inteira.
+- Em Ortografia/Spelling use as palavras da semana: completar letras que faltam (escrevendo a palavra inteira), escolher a grafia correta, desembaralhar letras, escrever uma frase com a palavra.
 - Em leitura/literatura, se não houver o texto, faça perguntas de compreensão que funcionem para quem leu (de preferência "open" curtas) e algumas sobre vocabulário/gramática ligadas ao tema.
 - "hint" ajuda a pensar, nunca contém a resposta.
 - Não repita perguntas iguais ou quase iguais.`;
