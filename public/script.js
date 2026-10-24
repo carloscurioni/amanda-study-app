@@ -1889,9 +1889,16 @@ function confirmBox(title, text, okLabel = 'Confirmar', danger = false) {
 }
 let toastTimer = null;
 function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.remove('hidden'); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.add('hidden'), 2600); }
-function showCelebrate(title, big, text, mood = 'wow') {
-  openModal(`<div class="modal-body celebrate"><div class="owl-big">${mascotSVG(S.equipped, mood)}</div><h3 style="margin:4px 0">${title}</h3>
-    ${big ? `<div class="big-num">${big} 🪙</div>` : ''}<p>${text}</p></div><div class="modal-foot" style="justify-content:center"><button class="btn primary big" data-close>Oba!</button></div>`);
+// opts.done: mostra "🏠 Voltar ao início" (principal) e "🔑 Ver gabarito" em vez de "Oba!"
+function showCelebrate(title, big, text, mood = 'wow', opts = {}) {
+  const foot = opts.done
+    ? `<button class="btn" data-cgab>🔑 Ver gabarito</button><button class="btn primary big" data-chome>🏠 Voltar ao início</button>`
+    : `<button class="btn primary big" data-close>Oba!</button>`;
+  const m = openModal(`<div class="modal-body celebrate"><div class="owl-big">${mascotSVG(S.equipped, mood)}</div><h3 style="margin:4px 0">${title}</h3>
+    ${big ? `<div class="big-num">${big} 🪙</div>` : ''}<p>${text}</p></div><div class="modal-foot celebrate-foot" style="justify-content:center">${foot}</div>`);
+  const h = $('[data-chome]', m); if (h) h.onclick = () => { closeModal(); save(); show('home'); };
+  const g = $('[data-cgab]', m); if (g) g.onclick = () => { closeModal(); const c = workCtx(); if (c) openGabarito(c); };
+  return m;
 }
 
 /* ---------- Boas-vindas ---------- */
@@ -1993,7 +2000,7 @@ function deadlineText(w) {
   const req = requiredDays(w);
   const done = req.filter(d => d.status === 'done').length;
   return `<div class="deadline">Entrega: <b>sexta ${fmtDM(w.end)}</b> · ${left === 0 ? '<b>é hoje!</b>' : `faltam ${left} dia${left > 1 ? 's' : ''}`}</div>
-    <div class="bonus-line">🎁 <b>+${weekReward(w)}</b> na sexta ${fmtDM(w.end)} se completar todos os dias <span class="tiny">(${done} de ${req.length} feitos)</span>${Number(S.settings.dayCoins ?? 10) > 0 ? ` · cada tarefa no dia: <b>+${S.settings.dayCoins ?? 10}</b> 🪙` : ''}</div>`;
+    <div class="bonus-line">🎁 <b>+${weekReward(w)}</b> na sexta ${fmtDM(w.end)} se completar todos os dias (${done} de ${req.length} feitos)</div>`;
 }
 function openDay(date) {
   const w = S.week; if (!w) return;
@@ -2544,6 +2551,7 @@ function renderWork() {
       <button type="button" class="btn small" data-pg="1" ${last ? 'disabled' : ''} aria-label="Próxima parte">▸</button></div>` : '';
   const paper = c.kind === 'day' && !c.rec && !c.done;
   el.innerHTML = `<div class="work">
+    ${c.done ? `<div class="done-banner">✅ <b>${c.kind === 'extra' ? 'Extras concluídos!' : 'Tarefa concluída!'}</b><button type="button" class="btn small primary" data-act="home2">🏠 Voltar ao início</button></div>` : ''}
     <div class="work-head">
       <h2>${esc(c.title)}</h2>
       <div class="progress" aria-hidden="true"><i id="prog-bar"></i></div><span class="prog-txt" id="prog-txt"></span>
@@ -2553,8 +2561,8 @@ function renderWork() {
     </div>
     <div class="sheet" id="sheet">${cards}</div>${pager}
     <div class="work-foot">
-      <button class="btn" data-act="back" aria-label="Voltar">◂</button>
-      ${c.kind === 'day' && !c.rec ? '<button class="btn" data-act="print">🖨️ Imprimir</button>' : ''}
+      <button class="btn home-btn" data-act="back" aria-label="Voltar ao início">🏠 <span class="lbl">Início</span></button>
+      ${c.kind === 'day' && !c.rec ? '<button class="btn" data-act="print" aria-label="Imprimir">🖨️ <span class="lbl">Imprimir</span></button>' : ''}
       <button class="btn" data-act="key">🔑 Gabarito</button>
       ${c.done ? (last ? '' : '<button class="btn primary" data-pg="1">Próxima ▸</button>') : last ? '<button class="btn primary" data-act="finish">✔ Concluir</button>' : '<button class="btn primary" data-pg="1">Próxima parte ▸</button>'}
     </div></div>`;
@@ -2632,6 +2640,7 @@ function bindWork(el, c) {
   $$('[data-pg]', el).forEach(b => b.onclick = () => goPage(VIEW.wp.page + Number(b.dataset.pg)));
   $$('[data-pgi]', el).forEach(b => b.onclick = () => goPage(Number(b.dataset.pgi)));
   $('[data-act=back]', el).onclick = () => { save(); show('home'); };
+  const h2 = $('[data-act=home2]', el); if (h2) h2.onclick = () => { save(); show('home'); };
   $('[data-act=key]', el).onclick = () => openGabarito(c);
   const pr = $('[data-act=print]', el); if (pr) pr.onclick = () => openPrintDialog(c.obj.date);
   const ck = $('[data-act=check]', el); if (ck) ck.onclick = () => openCheck(c.obj.date);
@@ -2887,7 +2896,7 @@ function completeWork(c, via, extraMsg = '') {
     save();
     if (coins) addCoins(coins, `Extras: ${correct}/${obj.length} acertos`);
     renderWork();
-    showCelebrate('Extras concluídos! ⭐', coins ? `+${coins}` : '', `Você acertou <b>${correct} de ${obj.length}</b>.${c.obj.paid ? '' : ' (Rodada só de treino.)'} Abra o gabarito para ver as correções.`);
+    showCelebrate('Extras concluídos! ⭐', coins ? `+${coins}` : '', `Você acertou <b>${correct} de ${obj.length}</b>.${c.obj.paid ? '' : ' (Rodada só de treino.)'} Abra o gabarito para ver as correções.`, 'wow', { done: true });
     return;
   }
   if (c.rec) return completeRecovery(c, correct, obj.length, open, extraMsg);
@@ -2906,12 +2915,12 @@ function completeWork(c, via, extraMsg = '') {
   const msg = (extraMsg ? extraMsg + '<br>' : '') + streakMsg + `Você acertou <b>${correct} de ${obj.length}</b>.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais corrigirem.` : ''}`;
   const big = dayGot ? `+${dayGot}` : '';
   if (allDone && today() === w.end && !w.settled) {
-    showCelebrate('Tudo pronto! 🎉', big, msg + `<br><br>Todas as tarefas da semana estão feitas. Volte ao início e toque em <b>Entregar a semana</b> para ganhar <b>+${weekReward(w)}</b> 🪙!`);
+    showCelebrate('Tudo pronto! 🎉', big, msg + `<br><br>Todas as tarefas da semana estão feitas. Volte ao início e toque em <b>Entregar a semana</b> para ganhar <b>+${weekReward(w)}</b> 🪙!`, 'wow', { done: true });
   } else if (allDone) {
-    showCelebrate('Semana completa! 🎉', big, msg + `<br><br>Agora é só <b>entregar na sexta ${fmtDM(w.end)}</b> para ganhar <b>+${weekReward(w)}</b> 🪙.`);
+    showCelebrate('Semana completa! 🎉', big, msg + `<br><br>Agora é só <b>entregar na sexta ${fmtDM(w.end)}</b> para ganhar <b>+${weekReward(w)}</b> 🪙.`, 'wow', { done: true });
   } else {
     const bonus = !w.settled ? `<br>🎁 Bônus da semana: <b>+${weekReward(w)}</b> na sexta ${fmtDM(w.end)} se completar todos os dias (${requiredDays(w).filter(d => d.status === 'done').length} de ${requiredDays(w).length} feitos).` : '';
-    showCelebrate('Tarefa do dia concluída! ✅', big, msg + (dayGot ? ` Você ganhou <b>+${dayGot}</b> 🪙 pela tarefa${onTime ? '' : ' (atrasada vale metade)'}.` : '') + bonus, 'happy');
+    showCelebrate('Tarefa do dia concluída! ✅', big, msg + (dayGot ? ` Você ganhou <b>+${dayGot}</b> 🪙 pela tarefa${onTime ? '' : ' (atrasada vale metade)'}.` : '') + bonus, 'happy', { done: true });
   }
 }
 
@@ -2930,7 +2939,7 @@ function completeRecovery(c, correct, total, open, extraMsg) {
   const left = Object.values(r.days).filter(x => x.status !== 'done').length;
   const msg = (extraMsg ? extraMsg + '<br>' : '') + `Você acertou <b>${correct} de ${total}</b>.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais.` : ''}`
     + (left ? `<br>Falta${left > 1 ? 'm' : ''} <b>${left}</b> dia${left > 1 ? 's' : ''} para recuperar até sexta ${fmtDM(r.until)} (+${recoveryLeftCoins(r)} 🪙).` : `<br><br>Você recuperou a semana toda: <b>+${r.earned}</b> 🪙 no total. Isso é que é não desistir! 💪`);
-  showCelebrate(left ? 'Dia recuperado! ⏳' : 'Semana recuperada! 🎉', coins ? `+${coins}` : '', msg, 'happy');
+  showCelebrate(left ? 'Dia recuperado! ⏳' : 'Semana recuperada! 🎉', coins ? `+${coins}` : '', msg, 'happy', { done: true });
 }
 // Sequência de dias seguidos fazendo a tarefa no próprio dia. A cada 5 dias: +15 moedas.
 const STREAK_BONUS = 15;
