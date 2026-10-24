@@ -474,7 +474,7 @@ function mergeStates(localRaw, remoteRaw) {
    ========================================================================= */
 const CHILD_KEY = 'lumi-child';
 const Server = { on: false, ai: false, needsSetup: false, canSetup: false, me: null, childId: null, pushing: false, again: false, dirty: false, timer: null, status: 'local' };
-const AI_ROUTES = { '/api/plan-outline': 'plan-outline', '/api/plan-day': 'plan-day', '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open', '/api/lesson': 'lesson', '/api/reading': 'reading' };
+const AI_ROUTES = { '/api/plan-outline': 'plan-outline', '/api/plan-day': 'plan-day', '/api/ai/bank-fill': 'bank-fill', '/api/ai/bank-book': 'bank-book', '/api/ai/bank-chapter': 'bank-chapter', '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open', '/api/lesson': 'lesson', '/api/reading': 'reading' };
 const AVATARS = ['🦉', '🦊', '🐼', '🐱', '🐶', '🦄', '🐸', '🐧', '🐯', '🐰', '🐨', '🐙'];
 function localKey(id = Server.childId) { return id ? `${STORE_KEY}:${id}` : STORE_KEY; }
 function savedChild() { try { return localStorage.getItem(CHILD_KEY) || ''; } catch (e) { return ''; } }
@@ -1870,6 +1870,7 @@ function validateImported(data) {
     if (Array.isArray(q.accept)) item.accept = q.accept.map(String);
     if (q.strict) item.strict = true;
     if (q.day && CYCLE.includes(String(q.day))) item.day = String(q.day);
+    if (q.bank) item.bank = String(q.bank).slice(0, 60);
     ok.push(item);
   });
   return { ok, errs };
@@ -2625,11 +2626,13 @@ async function generateWithClaude(editing) {
     const v = ((VIEW.draftSubj || {})[sb.id] || '').trim(); if (v) subjTexts[sb.id] = v;
     const o = (VIEW.draftOpt || {})[sb.id]; if (o) subjOpts[sb.id] = o;
   });
-  const text = mineList.filter(sb => subjFilled(sb.id)).map(sb => {
+  const lineOf = {};
+  mineList.filter(sb => subjFilled(sb.id)).forEach(sb => {
     const o = subjOpts[sb.id] || (isSpell(sb.id) ? 'list' : '');
     const tag = isSpell(sb.id) ? ` [modo: ${SPELL_TXT[o]}]` : (isRead(sb.id) && o) ? ` [nível do texto: ${READ_TXT[o]}]` : '';
-    return `- ${sb.id} (${sb.name})${tag}: ${subjTexts[sb.id] || '(sem detalhes)'}`;
-  }).join('\n');
+    lineOf[sb.id] = `- ${sb.id} (${sb.name})${tag}: ${subjTexts[sb.id] || '(sem detalhes)'}`;
+  });
+  const text = Object.values(lineOf).join('\n');
   const images = VIEW.draftImages || [];
   if (!S.settings.year) { say('Primeiro escolha o <b>ano escolar</b> lá em cima. 🎓', { mood: 'think' }); $('#year').focus(); return; }
   if (!text && !images.length) { say('Abra pelo menos uma matéria e me conta o que você está aprendendo (ou manda uma foto do worksheet)! ✍️', { mood: 'think' }); return; }
@@ -2655,7 +2658,9 @@ async function generateWithClaude(editing) {
   const stop = showLoading(['Lendo o que você contou… 📖', 'Separando por matéria… 🗂️', 'Inventando perguntas… ✏️', 'Caprichando nas dicas… 💡', 'Organizando os dias da semana… 📅', 'Escrevendo os capítulos do livro da semana… 📚', 'Quase pronto! 🦉']);
   let res;
   try {
-    res = await planInSteps({ name: S.name, text, images, days, perSubject: S.settings.perSubject || 2, previous: S.week && S.week.summary ? S.week.summary.map(x => `${x.subject}: ${x.summary}`).join(' | ') : '' });
+    const base = { name: S.name, text, images, days, perSubject: S.settings.perSubject || 2, previous: S.week && S.week.summary ? S.week.summary.map(x => `${x.subject}: ${x.summary}`).join(' | ') : '' };
+    const info = await bankPlanInfo(subjTexts, subjOpts, images);
+    res = info && Object.keys(info.shared).length ? await planWithBank(base, info, lineOf) : await planInSteps(base);
   } catch (e) {
     stop();
     say(`Ops, não consegui falar com o Claude agora (${esc(e.message)}). Tente de novo em instantes, ou use o modo por matéria.`, { mood: 'sad', ms: 12000 });
@@ -2718,6 +2723,110 @@ async function planInSteps(base) {
     questions: ok.flatMap(x => (x.r.questions || []).map(q => Object.assign({}, q, { day: x.d.dow }))),
     passages: ok.filter(x => x.d.read && x.r.passage && x.r.passage.text).map(x => ({ subject: x.d.read.subject, day: x.d.dow, title: x.r.passage.title, text: x.r.passage.text })),
     failedDays: results.filter(x => x.err).map(x => dayLabel(x.d)),
+  };
+}
+/* ---------- 🏦 Banco de sugestões compartilhado ----------
+   Matérias que seguem o currículo de referência sem mudanças (🪄 varinha, ou texto igual ao do currículo, ou "a Lumi escolhe")
+   vêm do banco: perguntas e livros já criados para outras crianças do mesmo ano/semana letiva. O Claude só é chamado
+   para completar o que faltar (e o que ele cria volta para o banco). O resto continua personalizado. */
+const normT = t => String(t || '').toLowerCase().replace(/\s+/g, ' ').trim();
+async function bankPlanInfo(subjTexts, subjOpts, images) {
+  if (!Server.me || !Server.childId || !Server.ai || (images || []).length || !S.settings.year || S.settings.useBank === false) return null;
+  const week = VIEW.wand ? VIEW.wand.week : planningAcademicWeek();
+  let rows = VIEW.wand && VIEW.wand.week === week ? VIEW.wand.rows : null;
+  if (!rows) { try { rows = await curriculumRows(S.settings.year, week, mySubjects()); } catch (e) { return null; } }
+  const bySid = Object.fromEntries((rows || []).map(r => [r.subject, r]));
+  const shared = {};
+  mySubjects().forEach(id => {
+    const r = bySid[id]; if (!r || !subjFilled(id)) return;
+    const t = subjTexts[id] || ''; const o = subjOpts[id];
+    const auto = !t.trim() && ((isSpell(id) && o === 'auto') || isRead(id));
+    if (auto || normT(t) === normT(wandText(r, id))) shared[id] = { row: r, level: r.level || '' };
+  });
+  return { week, shared };
+}
+async function planWithBank(base, info, lineOf) {
+  const prog = t => { const m = $('#ld-msg'); if (m) m.textContent = t; };
+  prog('Procurando no banco da Lumi… 📚');
+  const daily = !!S.settings.dailyReading;
+  const mixIds = mySubjects().filter(id => subjFilled(id) && !(daily && isRead(id)));
+  // quantas perguntas de cada matéria em cada dia (a leitura do dia leva 3)
+  const alloc = {};
+  base.days.forEach((d, di) => {
+    const pool = Math.max(0, d.n - (d.read ? 3 : 0)); const k = mixIds.length || 1; const a = {};
+    mixIds.forEach((id, j) => { a[id] = Math.floor(pool / k) + (((j + di) % k) < (pool % k) ? 1 : 0); });
+    alloc[d.dow] = a;
+  });
+  const sharedMix = mixIds.filter(id => info.shared[id]);
+  const personal = mixIds.filter(id => !info.shared[id]);
+  const need = id => base.days.reduce((a, d) => a + (alloc[d.dow][id] || 0), 0);
+  const slot = id => id + (info.shared[id].level ? '-' + info.shared[id].level : '');
+  const readSubs = [...new Set(base.days.filter(d => d.read && info.shared[d.read.subject]).map(d => d.read.subject))];
+  const readLevelOf = sid => (base.days.find(d => d.read && d.read.subject === sid) || {}).read.level;
+  const exclude = S.week ? Object.values(S.week.days).flatMap(d => d.questions || []).map(q => q.bank).filter(Boolean) : [];
+  const drawn = await apiCall('/api/bank/draw', { method: 'POST', data: { childId: Server.childId, week: info.week, exclude,
+    subjects: sharedMix.map(id => ({ subject: id, level: info.shared[id].level, need: need(id) })),
+    books: readSubs.map(sid => ({ subject: sid, level: info.shared[sid].level, readLevel: readLevelOf(sid) })) } });
+  const got = {}; sharedMix.forEach(id => { got[id] = (drawn.questions[slot(id)] || []).map(q => Object.assign({}, q, { subject: id })); });
+  const books = Object.assign({}, drawn.books || {});
+  // o que falta: perguntas por matéria, livros e capítulos, e a parte personalizada — tudo em paralelo
+  const jobs = []; let done = 0, fromBank = sharedMix.reduce((a, id) => a + got[id].length, 0), created = 0;
+  const tick = () => prog(`Completando com a Lumi… ${done} de ${jobs.length} prontos ✏️`);
+  const job = fn => jobs.push(fn);
+  sharedMix.forEach(id => {
+    const miss = need(id) - got[id].length; if (miss <= 0) return;
+    job(async () => {
+      try {
+        const r = await apiCall('/api/ai/bank-fill', { method: 'POST', timeout: 150000, data: { week: info.week, subject: id, level: info.shared[id].level, n: Math.max(miss, 8) } });
+        const have = new Set(got[id].map(q => q.bank));
+        const add = (r.questions || []).filter(q => !have.has(q.bank)).slice(0, miss).map(q => Object.assign({}, q, { subject: id }));
+        got[id].push(...add); created += add.length;
+      } catch (e) { /* o gerador do próprio app completa esta matéria */ }
+    });
+  });
+  readSubs.forEach(sid => {
+    const k = base.days.filter(d => d.read && d.read.subject === sid).length;
+    job(async () => {
+      const args = { week: info.week, subject: sid, level: info.shared[sid].level, readLevel: readLevelOf(sid) };
+      try {
+        if (!books[sid]) books[sid] = (await apiCall('/api/ai/bank-book', { method: 'POST', timeout: 120000, data: args })).book;
+        const b = books[sid];
+        await Promise.all(b.chapters.slice(0, k).map(async (c, idx) => {
+          if (c.text && (c.questions || []).length) return;
+          for (let t = 0; t < 2; t++) { try { b.chapters[idx] = (await apiCall('/api/ai/bank-chapter', { method: 'POST', timeout: 150000, data: Object.assign({ idx }, args) })).chapter; created++; return; } catch (e) { if (e.status === 429) return; } }
+        }));
+      } catch (e) { books[sid] = null; }
+    });
+  });
+  let personalRes = null;
+  const pDays = base.days.map(d => ({ dow: d.dow, label: d.label, read: d.read && !info.shared[d.read.subject] ? d.read : null, n: personal.reduce((a, id) => a + (alloc[d.dow][id] || 0), 0) }))
+    .map(d => Object.assign(d, { n: d.n + (d.read ? 3 : 0) })).filter(d => d.n > 0);
+  const pIds = [...personal, ...new Set(pDays.filter(d => d.read).map(d => d.read.subject))];
+  if (pIds.length && pDays.length) job(async () => { personalRes = await planInSteps(Object.assign({}, base, { text: pIds.map(id => lineOf[id]).filter(Boolean).join('\n'), days: pDays })).catch(e => ({ error: e })); });
+  if (jobs.length) { tick(); await Promise.all(jobs.map(fn => fn().finally(() => { done++; tick(); }))); }
+  if (personalRes && personalRes.error && !fromBank && !created) throw personalRes.error;
+  // monta a semana: perguntas do banco nos dias, capítulos do livro, e a parte personalizada
+  const questions = [], passages = [];
+  base.days.forEach(d => {
+    sharedMix.forEach(id => { for (let i = 0; i < (alloc[d.dow][id] || 0) && got[id].length; i++) questions.push(Object.assign(got[id].shift(), { day: d.dow })); });
+  });
+  readSubs.forEach(sid => {
+    const b = books[sid]; if (!b) return;
+    base.days.filter(d => d.read && d.read.subject === sid).forEach((d, i) => {
+      const c = b.chapters[i]; if (!c || !c.text) return;
+      passages.push({ subject: sid, day: d.dow, title: `${b.title} — ${c.title}`, text: c.text });
+      (c.questions || []).forEach(q => questions.push(Object.assign({}, q, { subject: sid, day: d.dow, bank: b.key ? `${b.key}#${i}` : undefined })));
+    });
+  });
+  const pr = personalRes && !personalRes.error ? personalRes : null;
+  const topics = sharedMix.concat(readSubs).map(id => ({ subject: id, summary: info.shared[id].row.topic }));
+  return {
+    topics: topics.concat(pr ? pr.topics.filter(t => !info.shared[t.subject]) : []),
+    message: (pr && pr.message) || 'Sua semana está pronta! Bora aprender? 🦉',
+    questions: questions.concat(pr ? pr.questions : []),
+    passages: passages.concat(pr ? pr.passages : []),
+    failedDays: pr ? pr.failedDays : (personalRes && personalRes.error ? pDays.map(d => d.label) : []),
+    bank: { fromBank, created },
   };
 }
 function collectDraft() { $$('#scr-setup textarea[data-sid]').forEach(ta => { VIEW.draftTopics[ta.dataset.sid] = ta.value; }); }
@@ -2871,7 +2980,7 @@ function questionCard(q, i, c) {
   return `<div class="q ${stateCls} ${q.type === 'proof' ? 'wide' : ''}" style="--subj:${s.color}" data-qid="${q.id}">
     <div class="q-top"><span class="q-num">${i + 1}</span>
       <div class="q-text"><span class="q-subj">${s.icon} ${esc(s.short)}</span>${esc(q.q)}</div>
-      <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Ouvir">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha: não sei isso'}" aria-label="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha'}">?</button><button type="button" data-hint title="Dica">💡</button></div>
+      <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Ouvir">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha: não sei isso'}" aria-label="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha'}">?</button><button type="button" data-hint title="Dica">💡</button>${c.done && q.bank && Server.me ? `<button type="button" data-bankrep title="${q.lang === 'en' ? 'Report a problem with this question' : 'Avisar problema nesta pergunta'}">🚩</button>` : ''}</div>
     </div>${control}${expected}${mark ? `<span class="mark">${mark}</span>` : ''}</div>`;
 }
 function bindWork(el, c) {
@@ -2891,6 +3000,12 @@ function bindWork(el, c) {
     if (sp) sp.onclick = () => speak(q.say || q.answer, q.lang);
     const ex = $('[data-explain]', card);
     if (ex) ex.onclick = () => openLesson(q, c);
+    const br = $('[data-bankrep]', card);
+    if (br) br.onclick = async () => {
+      const pt = q.lang !== 'en';
+      if (!(await confirmBox(pt ? 'Avisar um problema?' : 'Report a problem?', pt ? 'Esta pergunta tem algum erro (resposta errada, confusa ou estranha)? Vamos avisar um adulto e revisar.' : 'Is something wrong with this question (wrong answer, confusing or odd)? An adult will review it.', pt ? 'Avisar 🚩' : 'Report 🚩'))) return;
+      try { await apiCall('/api/bank/report', { method: 'POST', data: { id: q.bank.split('#')[0], childId: Server.childId, text: `${q.q} → ${q.answer || ''}` } }); br.disabled = true; toast(pt ? 'Obrigada! Avisei um adulto. 💜' : 'Thanks! An adult was told. 💜'); } catch (e) { toast(e.message); }
+    };
     if (q.type === 'proof') bindProof(q, c, card);
   });
   $$('[data-qty]', el).forEach(b => b.onclick = () => changeQty(c, Number(b.dataset.qty)));
@@ -4083,7 +4198,7 @@ async function useWand(week) {
     filled.push(sid);
   });
   const r0 = rows[0];
-  VIEW.wand = { week: w, filled, missing: subs.filter(id => !filled.includes(id)), term: r0 && r0.term, wot: r0 && r0.week_of_term, auto: w === planningAcademicWeek() };
+  VIEW.wand = { week: w, rows, filled, missing: subs.filter(id => !filled.includes(id)), term: r0 && r0.term, wot: r0 && r0.week_of_term, auto: w === planningAcademicWeek() };
   if (ai) { VIEW.openSubj = {}; renderSetupAI(); } else renderSetup();
   if (!filled.length) say('Não achei essa semana no currículo de referência para as suas matérias. 🤔', { mood: 'think' });
 }

@@ -13,7 +13,9 @@
 import { DurableObject } from 'cloudflare:workers';
 import { Directory, AppError } from './directory.js';
 import { Curriculum } from './curriculum.js';
-export { Directory, Curriculum };
+import { Bank } from './bank.js';
+import { BANK_CURRICULUM, BANK_READ_IDS, READ_LEVELS as BANK_READ_LEVELS, qKey, bookKey, fileOf, cleanQuestion, chapterDone, BOOK_CHAPTERS } from './bank-format.js';
+export { Directory, Curriculum, Bank };
 
 // Catálogo de matérias (id — descrição — idioma). O app manda quais o estudante faz; o prompt só lista essas.
 const SUBJECT_CATALOG = [
@@ -658,8 +660,138 @@ Para cada número: "ok" se responde à pergunta de forma correta e razoável par
   });
 }
 
+/* ---------------- Banco de sugestões compartilhado ---------------- */
+// O conteúdo criado aqui é reaproveitado por outras crianças do mesmo currículo/ano/semana.
+// Por isso o prompt usa SÓ a linha do currículo de referência (nunca o texto, as fotos ou o nome da criança).
+const bankStub = env => env.BANK.get(env.BANK.idFromName('bank'));
+const bankLevel = (b, subject) => { const l = String(b.level || '').toLowerCase(); return l === 'hl' || l === 'sl' ? l : ''; };
+const subjDesc = id => (SUBJECT_CATALOG.find(x => x[0] === id) || [id, id])[1];
+const isPtSubj = id => id.startsWith('pt') || id === 'bss';
+let BANK_INDEX = null, BANK_INDEX_AT = 0;
+async function bankIndex(env, url) {
+  if (BANK_INDEX && Date.now() - BANK_INDEX_AT < 60_000) return BANK_INDEX;
+  try { const r = await env.ASSETS.fetch(new URL('/bank/index.json', url.origin)); BANK_INDEX = r.ok ? await r.json() : { files: {} }; }
+  catch { BANK_INDEX = { files: {} }; }
+  BANK_INDEX_AT = Date.now();
+  return BANK_INDEX;
+}
+// Carrega no SQLite o arquivo publicado da semana (public/bank/uk/Y5/w12.json) quando é novo ou mudou.
+async function bankEnsure(env, url, year, week) {
+  const B = bankStub(env);
+  const file = fileOf(BANK_CURRICULUM, year, week);
+  const idx = await bankIndex(env, url);
+  const h = idx.files && idx.files[file];
+  if (h && (await B.loadedHash(file)) !== h) {
+    const r = await env.ASSETS.fetch(new URL(`/bank/${file}.json`, url.origin));
+    if (r.ok) await B.importFile(file, h, await r.json());
+  }
+  return B;
+}
+async function curriculumRow(env, url, year, subject, level, week) {
+  const C = await curriculum(env, url);
+  return (await C.get(year, subject, level, week)) || (level ? (await C.get(year, subject, 'sl', week)) || (await C.get(year, subject, '', week)) : null);
+}
+const rowTxt = row => row ? `Tópico: ${row.topic}
+Tipo de semana: ${row.type === 'review' ? 'revisão' : row.type === 'exam' ? 'semana de provas (revisão para a prova)' : 'conteúdo novo'} (term ${row.term}, semana ${row.week_of_term} do term)
+Objetivos: ${(row.objectives || []).join('; ')}
+Palavras-chave: ${(row.keywords || []).join(', ')}${(row.spelling || []).length ? `\nPalavras da semana (ortografia): ${row.spelling.join(', ')}` : ''}` : '(sem linha no currículo: use o conteúdo típico desta matéria nesta altura do ano letivo)';
+const SHARED_NOTE = `ATENÇÃO — BANCO COMPARTILHADO: este conteúdo será reutilizado por vários estudantes do mesmo ano e da mesma semana letiva.
+Não use nomes de pessoas reais, nomes de escolas nem nada pessoal. Se precisar de personagens, invente nomes variados (brasileiros nas matérias em português, britânicos/internacionais nas em inglês).`;
+const BANK_Q_SCHEMA = { type: 'object', properties: { questions: { type: 'array', items: qSchema(false) } }, required: ['questions'], additionalProperties: false };
+async function handleBankFill(env, b, ctx) {
+  const subject = String(b.subject || ''); if (!SUBJECT_IDS.includes(subject)) throw new HttpError(400, 'Matéria inválida.');
+  const level = bankLevel(b, subject); const week = Math.max(1, Math.min(37, Number(b.week) || 1));
+  const row = await curriculumRow(env, ctx.url, b.yearId, subject, level, week);
+  if (!row) throw new HttpError(404, 'Semana não encontrada no currículo de referência.');
+  const ckey = qKey(BANK_CURRICULUM, b.yearId, subject, level, week);
+  const B = await bankEnsure(env, ctx.url, b.yearId, week);
+  const n = Math.max(4, Math.min(30, Number(b.n) || 10));
+  const avoid = await B.recent(ckey, 40);
+  const spell = (row.spelling || []).length > 0 || ['pt_ort', 'en_spell'].includes(subject);
+  const content = [{ type: 'text', text: `${SHARED_NOTE}
+
+Matéria: ${subject} — ${subjDesc(subject)}${level ? ` — IB ${level.toUpperCase()}` : ''}
+Semana letiva ${week} do ano escolar, pelo currículo de referência:
+${rowTxt(row)}
+
+Crie EXATAMENTE ${n} perguntas desta matéria (campo "subject" = ${subject}) sobre o conteúdo desta semana:
+- cubra todos os objetivos, das mais fáceis às mais difíceis, com tipos variados ("mc", "short", "num" quando fizer sentido; no máximo 1 em cada 4 "open");
+${spell ? `- inclua 1 "proof" (caça-erros) a cada 6–8 perguntas, com as palavras da semana;
+` : ''}- cada pergunta precisa funcionar sozinha, sem depender de outra.
+${avoid.length ? `
+Já existem no banco (não repita nem faça quase iguais):
+- ${avoid.slice(0, 40).map(x => String(x).slice(0, 110)).join('\n- ')}` : ''}` }];
+  const out = await claude(env, ctx, {
+    model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low',
+    system: studentProfile(null, YEAR_LABELS[b.yearId], [subject], yearNum(b), level ? { [subject]: level.toUpperCase() } : {}), content, schema: BANK_Q_SCHEMA, maxTokens: 16000,
+  });
+  const clean = (out.questions || []).map(q => cleanQuestion(q, subject)).filter(c => c.q).map(c => c.q);
+  const stored = await B.addQuestions(ckey, subject, clean, 'api');
+  return { questions: stored, topic: row.topic };
+}
+const BOOK_HEADER_SCHEMA = {
+  type: 'object', properties: {
+    title: { type: 'string' }, premise: { type: 'string', description: 'Personagens, cenário e tom (2–3 frases).' },
+    chapters: { type: 'array', description: 'EXATAMENTE 7 capítulos.', items: { type: 'object', properties: { title: { type: 'string', description: 'Ex.: "Capítulo 1: A porta escondida".' }, synopsis: { type: 'string', description: 'O que acontece (2–3 frases).' } }, required: ['title', 'synopsis'], additionalProperties: false } },
+  }, required: ['title', 'premise', 'chapters'], additionalProperties: false,
+};
+const CHAPTER_SCHEMA = {
+  type: 'object', properties: {
+    text: { type: 'string', description: 'O capítulo, em parágrafos separados por \n.' },
+    questions: { type: 'array', items: qSchema(false), description: 'EXATAMENTE 3: 1 "open" pedindo o resumo do capítulo em 2–3 frases e 2 de compreensão ("mc" ou "short").' },
+  }, required: ['text', 'questions'], additionalProperties: false,
+};
+function bookArgs(b) {
+  const subject = String(b.subject || ''); if (!BANK_READ_IDS.includes(subject)) throw new HttpError(400, 'Matéria de leitura inválida.');
+  const level = bankLevel(b, subject); const week = Math.max(1, Math.min(37, Number(b.week) || 1));
+  const readLevel = BANK_READ_LEVELS.includes(b.readLevel) ? b.readLevel : 'at';
+  return { subject, level, week, readLevel, ckey: bookKey(BANK_CURRICULUM, b.yearId, subject, level, week, readLevel), lang: isPtSubj(subject) ? 'pt' : 'en' };
+}
+async function handleBankBook(env, b, ctx) {
+  const a = bookArgs(b);
+  const B = await bankEnsure(env, ctx.url, b.yearId, a.week);
+  const have = await B.book(a.ckey); if (have) return { book: Object.assign({ key: a.ckey }, have) };
+  const row = await curriculumRow(env, ctx.url, b.yearId, a.subject, a.level, a.week);
+  const content = [{ type: 'text', text: `${SHARED_NOTE}
+
+Crie o ROTEIRO de um livro original em ${LANG_NAME(a.lang)} para a leitura diária (${YEAR_LABELS[b.yearId]}), com EXATAMENTE ${BOOK_CHAPTERS} capítulos.
+- É uma série: cada capítulo é um episódio com começo, meio e fim (dá para ler sozinho), e a história avança de um capítulo para o outro (personagens fixos, um fio condutor, gancho leve no fim).
+- Gênero envolvente para a idade (aventura, mistério, animais, amizade, ciência, fantasia…); nada de personagens de obras reais.
+- Nível de leitura: ${READ_LEVELS_TXT[a.readLevel]}.
+- Habilidade de leitura da semana (pelo currículo): ${row ? `${row.topic} — ${(row.objectives || []).join('; ')}` : 'compreensão e inferência'}. Planeje os capítulos para dar oportunidades de praticar essa habilidade.
+- Em literatura (pt_lit/en_lit) a partir do IGCSE, pode ser uma sequência de contos ou crônicas originais com recursos literários para analisar.` }];
+  const out = await claude(env, ctx, { model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low', system: studentProfile(null, YEAR_LABELS[b.yearId], [a.subject], yearNum(b), {}), content, schema: BOOK_HEADER_SCHEMA, maxTokens: 4000 });
+  if ((out.chapters || []).length < BOOK_CHAPTERS) throw new HttpError(502, 'O roteiro do livro veio incompleto.');
+  out.chapters = out.chapters.slice(0, BOOK_CHAPTERS);
+  const book = await B.bookHeader(a.ckey, a.subject, out);
+  if (!book) throw new HttpError(409, 'Livro indisponível.');
+  return { book: Object.assign({ key: a.ckey }, book) };
+}
+async function handleBankChapter(env, b, ctx) {
+  const a = bookArgs(b); const idx = Math.max(0, Math.min(BOOK_CHAPTERS - 1, Number(b.idx) || 0));
+  const B = await bankEnsure(env, ctx.url, b.yearId, a.week);
+  const book = await B.book(a.ckey); if (!book) throw new HttpError(404, 'Livro não encontrado.');
+  if (chapterDone(book.chapters[idx])) return { chapter: book.chapters[idx], title: book.title };
+  const row = await curriculumRow(env, ctx.url, b.yearId, a.subject, a.level, a.week);
+  const yn = yearNum(b);
+  const c = book.chapters[idx];
+  const content = [{ type: 'text', text: `${SHARED_NOTE}
+
+Livro "${book.title}" (em ${LANG_NAME(a.lang)}). Premissa: ${book.premise}
+Roteiro: ${book.chapters.map((x, i) => `${i + 1}. ${x.title} — ${x.synopsis}`).join(' | ')}
+
+Escreva o capítulo ${idx + 1}: "${c.title}" — ${c.synopsis}
+- Tamanho: ${yn <= 2 ? '120–200' : yn <= 6 ? '250–400' : '400–600'} palavras; nível de leitura ${READ_LEVELS_TXT[a.readLevel]}; parágrafos separados por \n.
+- Um episódio com começo, meio e fim, que também funcione para quem não leu os anteriores (relembre em 1 frase o que for preciso).
+- Depois, EXATAMENTE 3 perguntas (subject ${a.subject}): 1 "open" pedindo o resumo do capítulo em 2–3 frases e 2 de compreensão ("mc" ou "short", começando com "${a.lang === 'pt' ? 'No capítulo…' : 'In the chapter…'}")${row ? `, praticando a habilidade da semana: ${row.topic}` : ''}.` }];
+  const out = await claude(env, ctx, { model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low', system: studentProfile(null, YEAR_LABELS[b.yearId], [a.subject], yn, {}), content, schema: CHAPTER_SCHEMA, maxTokens: 6000 });
+  const ch = await B.bookChapter(a.ckey, a.subject, idx, out);
+  if (!ch) throw new HttpError(502, 'O capítulo veio em formato inesperado.');
+  return { chapter: ch, title: book.title };
+}
+
 /* ---------------- Roteador ---------------- */
-const AI_HANDLERS = { 'plan-outline': handlePlanOutline, 'plan-day': handlePlanDay, plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen, lesson: handleLesson, reading: handleReading };
+const AI_HANDLERS = { 'bank-fill': handleBankFill, 'bank-book': handleBankBook, 'bank-chapter': handleBankChapter, 'plan-outline': handlePlanOutline, 'plan-day': handlePlanDay, plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen, lesson: handleLesson, reading: handleReading };
 
 async function api(req, env, url) {
   const path = url.pathname, m = req.method;
@@ -800,7 +932,33 @@ async function api(req, env, url) {
     b.name = child.name; b.yearId = YEAR_LABELS[child.year] ? child.year : 'Y5'; b.year = YEAR_LABELS[b.yearId];
     b.mine = (Array.isArray(b.mine) ? b.mine : []).filter(x => SUBJECT_IDS.includes(x)).slice(0, 30);
     b.levels = Object.fromEntries(Object.entries(b.levels && typeof b.levels === 'object' ? b.levels : {}).filter(([k, v]) => SUBJECT_IDS.includes(k) && (v === 'HL' || v === 'SL')));
-    return json(await AI_HANDLERS[aiM[1]](env, b, { familyId, childId: child.id }));
+    return json(await AI_HANDLERS[aiM[1]](env, b, { familyId, childId: child.id, url }));
+  }
+
+  // 🏦 Banco de sugestões: sorteia perguntas e livros já prontos para a semana letiva (sem chamar o Claude)
+  if (path === '/api/bank/draw' && m === 'POST') {
+    const b = await body(req, 200_000);
+    const child = me.children.find(c => c.id === b.childId); need(child);
+    const year = YEAR_LABELS[child.year] ? child.year : 'Y5';
+    const week = Math.max(1, Math.min(37, Number(b.week) || 1));
+    const B = await bankEnsure(env, url, year, week);
+    const keys = (Array.isArray(b.subjects) ? b.subjects : []).slice(0, 30).filter(x => SUBJECT_IDS.includes(x.subject))
+      .map(x => ({ slot: x.subject + (bankLevel(x) ? '-' + bankLevel(x) : ''), ckey: qKey(BANK_CURRICULUM, year, x.subject, bankLevel(x), week), need: Math.max(0, Math.min(80, Number(x.need) || 0)) }));
+    const books = (Array.isArray(b.books) ? b.books : []).slice(0, 4).filter(x => BANK_READ_IDS.includes(x.subject))
+      .map(x => ({ subject: x.subject, ckey: bookKey(BANK_CURRICULUM, year, x.subject, bankLevel(x), week, x.readLevel) }));
+    const exclude = (Array.isArray(b.exclude) ? b.exclude : []).slice(0, 600).map(String);
+    const r = await B.draw(child.id + '|' + week, keys, books.map(x => x.ckey), exclude);
+    return json({ year, week,
+      questions: Object.fromEntries(keys.map(k => [k.slot, r.questions[k.ckey] || []])),
+      have: Object.fromEntries(keys.map(k => [k.slot, r.have[k.ckey] || 0])),
+      books: Object.fromEntries(books.map(x => [x.subject, r.books[x.ckey] ? Object.assign({ key: x.ckey }, r.books[x.ckey]) : null])) });
+  }
+  if (path === '/api/bank/report' && m === 'POST') {
+    const b = await body(req, 5_000);
+    const id = String(b.id || '').slice(0, 120); if (!id) throw new HttpError(400, 'Item inválido.');
+    const r = await bankStub(env).report(id, familyId, isAdmin);
+    await D.report(familyId, b.childId, 'banco', `Item do banco ${id}: ${String(b.text || '').slice(0, 800)}`).catch(() => {});
+    return json(r);
   }
 
   // 🪄 Currículo de referência (varinha mágica): a semana letiva de cada matéria
@@ -857,6 +1015,17 @@ async function api(req, env, url) {
     if (fbM && m === 'POST') { const b = await body(req, 1_000); return json(await D.feedbackResolve(fbM[1], b.resolved !== false)); }
     if (path === '/api/admin/settings' && m === 'GET') return json(await D.settings());
     if (path === '/api/admin/settings' && m === 'PUT') { const b = await body(req, 2_000); if (b.support_email !== undefined) await D.setSetting('support_email', String(b.support_email).trim()); return json(await D.settings()); }
+    // 🏦 Banco de sugestões
+    if (path === '/api/admin/bank' && m === 'GET') {
+      const B = bankStub(env);
+      if (url.searchParams.get('ckey')) return json(await B.list({ ckey: url.searchParams.get('ckey'), limit: 200 }));
+      if (url.searchParams.get('prefix') !== null) return json({ keys: await B.keys(url.searchParams.get('prefix')) });
+      const idx = await bankIndex(env, url);
+      return json({ ...(await B.stats()), repoFiles: Object.keys(idx.files || {}).length, repoVersion: idx.version || null, ...(await B.list({ limit: 50 })) });
+    }
+    if (path === '/api/admin/bank/status' && m === 'POST') { const b = await body(req, 2_000); const r = await bankStub(env).setStatus(String(b.id || ''), String(b.status || '')); if (r.err) throw new HttpError(400, r.err); return json(r); }
+    if (path === '/api/admin/bank/item' && m === 'PUT') { const b = await body(req, 20_000); const r = await bankStub(env).edit(String(b.id || ''), b.q || {}); if (r.err) throw new HttpError(400, r.err); return json(r); }
+    if (path === '/api/admin/bank/export' && m === 'GET') return json({ items: await bankStub(env).exportApi(url.searchParams.get('prefix') || '') });
     const rpM = path.match(/^\/api\/admin\/reports\/(\d+)$/);
     if (rpM && m === 'POST') return json(await D.resolveReport(rpM[1]));
   }
