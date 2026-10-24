@@ -790,3 +790,18 @@ body.theme-space .bonus-line, body.theme-moon .bonus-line, body.theme-aurora .bo
 .col-card .dup { position: absolute; top: 4px; right: 4px; }
 .col-on { font-size: 10.5px; font-weight: 800; color: var(--accent); }
 @media (prefers-reduced-motion: reduce) { .egg.idle, .egg.shake, .hatch-prize { animation: none; } }
+
+/* ---------- Missões (Fase 4) ---------- */
+.quests { display: grid; gap: 6px; }
+.q-sec { font-size: 11.5px; font-weight: 900; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-top: 2px; }
+.quest { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 12px; background: var(--card2, #f7f4ff); }
+.quest.ready { background: #fff3bf; box-shadow: inset 0 0 0 2px #fcc419; }
+.quest.claimed { opacity: .6; }
+.quest .q-ic { font-size: 22px; flex: none; }
+.quest .q-main { flex: 1; min-width: 0; }
+.quest .q-t { font-size: 13.5px; font-weight: 800; line-height: 1.2; }
+.q-bar { height: 7px; border-radius: 99px; background: rgba(0,0,0,.08); margin-top: 4px; overflow: hidden; }
+.q-bar i { display: block; height: 100%; background: linear-gradient(90deg, #51cf66, #fcc419); border-radius: 99px; }
+.quest .q-side { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; flex: none; }
+.q-rw { font-weight: 900; font-size: 13px; border-radius: 99px; padding: 1px 7px; }
+.q-rw.d-easy { background: #e6fcf5; color: #0ca678; } .q-rw.d-medium { background: #e7f5ff; color: #1c7ed6; } .q-rw.d-hard { background: #fff0f6; color: #d6336c; }

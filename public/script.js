@@ -31,7 +31,9 @@ const DEFAULT_SETTINGS = {
   reward: 100,            // recompensa base: semana completa entregue na sexta
   penalty: 150,           // penalidade: semana não entregue (sempre MAIOR que a recompensa)
   latePct: 50,
-  dayCoins: 10,           // moedas por tarefa do dia concluída no próprio dia (0 desliga; atrasada dentro da semana vale metade)            // recuperação: dias não feitos podem ser feitos até a sexta seguinte, valendo esta % da recompensa
+  dayCoins: 10,
+  questsOn: true,         // 📜 missões do dia e da semana
+  buyQuests: true,        // missões de compra (recompensa = valor gasto + 50)           // moedas por tarefa do dia concluída no próprio dia (0 desliga; atrasada dentro da semana vale metade)            // recuperação: dias não feitos podem ser feitos até a sexta seguinte, valendo esta % da recompensa
   extraPerCorrect: 2,     // moedas por acerto nos exercícios extras
   extraSetSize: 5,        // perguntas por rodada de extras
   extraSetsPerDay: 3,     // rodadas de extras com moedas por dia
@@ -448,6 +450,13 @@ function mergeStates(localRaw, remoteRaw) {
   M.missed = (() => { const m = new Map(); [...(L.missed || []), ...(R.missed || [])].forEach(x => { if (x && x.q && !m.has(x.q.q)) m.set(x.q.q, x); }); return [...m.values()].slice(0, 40); })();
   M.books = Object.assign({}, R.books); Object.entries(L.books || {}).forEach(([k, b]) => { if (!M.books[k] || (b.chapters || []).length > (M.books[k].chapters || []).length) M.books[k] = b; });
   M.pendingImport = (() => { const m = new Map(); [...(L.pendingImport || []), ...(R.pendingImport || [])].forEach(q => { if (q && !m.has(q.q)) m.set(q.q, q); }); return [...m.values()]; })();
+  if (L.quests || R.quests) {
+    M.quests = JSON.parse(JSON.stringify(R.quests || {}));
+    ['day', 'week'].forEach(k => { const a = (L.quests || {})[k], b = M.quests[k];
+      if (!a) return; if (!b || (a.date || a.start) > (b.date || b.start)) { M.quests[k] = a; return; }
+      if ((a.date || a.start) !== (b.date || b.start)) return;
+      b.list.forEach(q => { const x = a.list.find(y => y.id === q.id); if (x) { q.progress = Math.max(q.progress || 0, x.progress || 0); q.spent = Math.max(q.spent || 0, x.spent || 0); q.claimed = q.claimed || x.claimed; } }); });
+  }
   M.rev = R.rev;
   return M;
 }
@@ -2127,7 +2136,7 @@ function renderHome() {
   if (!w || (w.settled && w.end < t)) {
     body = `<div class="card span2"><h3 style="margin:0 0 6px">📝 Nova semana</h3>
       <p class="muted" style="margin:0 0 10px">Escreva o que você está aprendendo na escola e eu crio as tarefas de sábado a sexta.</p>
-      <button class="btn primary big wide" data-act="setup">Planejar minha semana ✨</button></div>${recoveryHtml()}`;
+      <button class="btn primary big wide" data-act="setup">Planejar minha semana ✨</button></div>${recoveryHtml()}${questsHtml()}`;
   } else {
     const days = CYCLE.map((_, i) => w.days[addDays(w.start, i)]);
     const strip = days.map(d => {
@@ -2154,7 +2163,7 @@ function renderHome() {
     const left = Math.max(0, S.settings.extraSetsPerDay - ex.sets);
     const sum = recoveryHtml() + ((w.summary || []).length ? `<div class="card span2 week-sum"><b>Esta semana</b>${w.summary.map(x => `<span>${SUBJ[x.subject] ? SUBJ[x.subject].icon : '•'} ${esc(x.summary)}</span>`).join('')}</div>` : '');
     body = `<div class="card span2"><div class="week-strip">${strip}</div></div>${sum}
-      <div class="card actions">${main}</div>
+      <div class="card actions">${main}</div>${questsHtml()}
       <div class="card actions">
         <button class="btn gold wide" data-act="extra">⭐ Exercícios extras ${left ? `(+${S.settings.extraPerCorrect} 🪙/acerto · ${left} hoje)` : '(sem moedas hoje)'}</button>
         <div class="actions-2"><button class="btn" data-act="setup">📝 Minha semana</button><button class="btn" data-act="shop">🛒 Lojinha</button></div>
@@ -2166,6 +2175,7 @@ function renderHome() {
   el.innerHTML = `<div class="home">${hero}${noticeHtml}${body}${shelf}</div>`;
 
   $$('[data-day]', el).forEach(b => b.onclick = () => openDay(b.dataset.day));
+  $$('[data-claim]', el).forEach(b => b.onclick = () => { const [sc, id] = b.dataset.claim.split('|'); claimQuest(sc, id); });
   $$('[data-rec]', el).forEach(b => b.onclick = () => { VIEW.work = { kind: 'day', date: b.dataset.rec, rec: true }; show('work'); });
   $$('[data-check]', el).forEach(b => b.onclick = () => openCheck(b.dataset.check));
   $$('[data-act]', el).forEach(b => b.onclick = () => {
@@ -2773,6 +2783,7 @@ function goPage(n) { if (!VIEW.wp) return; VIEW.wp.page = n; save(); renderWork(
 // Texto(s) de leitura escritos pela Lumi para o dia
 function showPassages(d) {
   const ps = dayPassages(d);
+  if (d && !d.readQ) { d.readQ = true; questEvent('read'); }
   const pt = ps[0] && SUBJ[ps[0].subject].lang === 'pt';
   const m = openModal(`<div class="modal-head"><h3>📖 ${pt ? 'Leitura do dia' : 'Today\'s reading'}</h3><button class="btn small" data-close>${pt ? 'Fechar' : 'Close'}</button></div>
     <div class="modal-body passage">${ps.map((x, k) => `<div class="pas" id="pas-${k}"><div class="pas-subj">${SUBJ[x.subject].icon} ${esc(SUBJ[x.subject].name)} ${speakBtn('#pas-' + k, SUBJ[x.subject].lang)}</div><h4>${esc(x.title)}</h4>${x.text.split(/\n+/).map(par => `<p>${esc(par)}</p>`).join('')}</div>`).join('')}</div>
@@ -2847,6 +2858,7 @@ function bindWork(el, c) {
   if (fin) fin.onclick = () => finishWork(c);
 }
 function showHint(q, c) {
+  if (!q.hintQ) { q.hintQ = true; questEvent('hint'); }
   const base = q.hint || (q.lang === 'pt' ? 'Leia a pergunta de novo, com calma. Você consegue!' : 'Read the question again slowly. You can do it!');
   const actions = Server.ai && !c.done ? [{ label: q.lang === 'en' ? '🦉 Explain more' : '🦉 Me explica mais', primary: true, onClick: () => askTutor(q, c) }] : [];
   say(`💡 ${esc(base)}`, { mood: 'think', actions, sticky: actions.length > 0 });
@@ -2990,6 +3002,7 @@ async function openLesson(q, c, opts = {}) {
   const pt = lang === 'pt';
   const done = !!(c && c.done);
   if (c && !done && !opts.noMiss) { noteMissed(q, 'nao-sei'); save(); }
+  questEvent('lesson');
   const key = opts.topic ? 'lessonTopic' : done ? 'lessonDone' : 'lesson';
   if (q[key]) { showLesson(q[key], lang, q); return; }
   if (!Server.ai) { say(pt ? 'Para dar a aulinha eu preciso estar conectada ao servidor. Por enquanto, toque no 💡 para uma dica!' : 'I need the server for the mini-lesson. Try the 💡 hint for now!', { mood: 'think' }); return; }
@@ -3029,6 +3042,7 @@ function showLesson(L, lang, q) {
   const practice = (i, score) => {
     if (i >= L.practice.length) {
       const all = score === L.practice.length;
+      if (all) questEvent('practice_perfect');
       openModal(`<div class="modal-body celebrate"><div class="owl-big">${mascotSVG(S.equipped, all ? 'wow' : 'happy')}</div>
         <h3>${all ? (pt ? 'Mandou bem! 🎉' : 'Brilliant! 🎉') : (pt ? 'Bom treino! 💪' : 'Good practice! 💪')}</h3>
         <p>${pt ? `Você acertou <b>${score} de ${L.practice.length}</b> no treino.` : `You got <b>${score} of ${L.practice.length}</b> right.`}${all ? '' : (pt ? ' Quer rever a explicação?' : ' Want to see the lesson again?')}</p></div>
@@ -3091,19 +3105,22 @@ function completeWork(c, via, extraMsg = '') {
     const coins = c.obj.paid ? correct * S.settings.extraPerCorrect : 0;
     S.extras[t] = { sets: (S.extras[t] ? S.extras[t].sets : 0) + (c.obj.paid ? 1 : 0) };
     if (c.obj.review && obj.length && correct / obj.length >= 0.6) S.missed = (S.missed || []).filter(m => !c.obj.review.includes(m.q.q));
+    questEvent('extra_done', { perfect: obj.length > 0 && correct === obj.length, book: c.obj.group === 'book' });
     save();
     if (coins) addCoins(coins, `Extras: ${correct}/${obj.length} acertos`);
     renderWork();
     showCelebrate('Extras concluídos! ⭐', coins ? `+${coins}` : '', `Você acertou <b>${correct} de ${obj.length}</b>.${c.obj.paid ? '' : ' (Rodada só de treino.)'} Abra o gabarito para ver as correções.`, 'wow', { done: true });
     return;
   }
-  if (c.rec) return completeRecovery(c, correct, obj.length, open, extraMsg);
+  const perfect = obj.length > 0 && correct === obj.length;
+  if (c.rec) { questEvent('day_done', { onTime: false, perfect }); return completeRecovery(c, correct, obj.length, open, extraMsg); }
   const streakMsg = bumpStreak(c.obj.date);
   // Moedas do dia: na hora (no próprio dia, valor cheio; atrasada dentro da semana, metade)
   const dc = Math.max(0, Number(S.settings.dayCoins ?? 10));
   const onTime = c.obj.date === today();
   const dayAmt = onTime ? dc : Math.round(dc / 2);
   let dayGot = 0;
+  questEvent('day_done', { onTime, perfect: obj.length > 0 && correct === obj.length });
   if (dayAmt > 0 && !c.obj.coinsAt && addCoins(dayAmt, `Tarefa de ${DOW_FULL[c.obj.dow].toLowerCase()} ${fmtDM(c.obj.date)}${onTime ? '' : ' (atrasada)'}`, 'day-' + c.obj.date)) { c.obj.coinsAt = today(); c.obj.coins = dayAmt; dayGot = dayAmt; }
   save();
   VIEW.work = { kind: 'day', date: c.obj.date };
@@ -3369,6 +3386,7 @@ async function buy(id) {
   const ok = await confirmBox(it.cat === 'voucher' ? 'Resgatar vale?' : 'Comprar?', `${esc(it.name)} por <b>🪙 ${it.price}</b>?${it.cat === 'voucher' ? '<br><span class="muted tiny">Os pais vão confirmar a entrega do prêmio.</span>' : ''}`, it.cat === 'voucher' ? 'Resgatar' : 'Comprar');
   if (!ok) return;
   addCoins(-it.price, (it.cat === 'voucher' ? 'Vale: ' : 'Lojinha: ') + it.name);
+  questEvent('buy', { cat: it.cat, price: it.price });
   if (it.cat === 'voucher') {
     S.redemptions.unshift({ id: uid(), voucherId: it.id, name: it.name, price: it.price, date: today(), delivered: false });
   } else {
@@ -3482,6 +3500,7 @@ function gameWords(L, n) {
   return [...rng.shuffle(hard), ...rng.shuffle(rest)].slice(0, n);
 }
 function wkReward(pt) {
+  questEvent('game');
   const t = today(); S.workshop = S.workshop || {};
   const used = S.workshop[t] || 0;
   if (used >= (S.settings.workshopPerDay ?? 5)) return 0;
@@ -3641,6 +3660,108 @@ function printWorkshop(allWords, acts, L) {
   setTimeout(() => window.print(), 60);
 }
 
+/* ---------- Fase 4: 📜 Missões (3 do dia + 2 da semana, sorteadas com semente) ---------- */
+const QDIFF = { easy: { label: 'Fácil', min: 5, max: 10 }, medium: { label: 'Média', min: 20, max: 30 }, hard: { label: 'Difícil', min: 50, max: 80 } };
+// ev: evento que conta; target: quantas vezes; when: só sorteia se fizer sentido para este perfil
+const QUEST_POOL = [
+  // do dia
+  { id: 'd-day', scope: 'day', diff: 'easy', icon: '📘', text: 'Conclua a tarefa de hoje', ev: 'day_ontime', target: 1, when: () => !!(S.week && S.week.days[today()] && S.week.days[today()].required && S.week.days[today()].status !== 'done') },
+  { id: 'd-lesson', scope: 'day', diff: 'easy', icon: '❓', text: 'Use o ? para aprender algo novo', ev: 'lesson', target: 1, when: () => Server.ai },
+  { id: 'd-read', scope: 'day', diff: 'easy', icon: '📖', text: 'Leia o texto do dia', ev: 'read', target: 1, when: () => !!(S.week && dayPassages(S.week.days[today()]).length) },
+  { id: 'd-hint', scope: 'day', diff: 'easy', icon: '💡', text: 'Peça uma dica 💡 numa pergunta difícil', ev: 'hint', target: 1 },
+  { id: 'd-extra1', scope: 'day', diff: 'easy', icon: '⭐', text: 'Faça 1 rodada de extras', ev: 'extra', target: 1 },
+  { id: 'd-extra2', scope: 'day', diff: 'medium', icon: '⭐', text: 'Faça 2 rodadas de extras', ev: 'extra', target: 2 },
+  { id: 'd-game2', scope: 'day', diff: 'medium', icon: '✏️', text: 'Jogue 2 jogos da Oficina de palavras', ev: 'game', target: 2 },
+  { id: 'd-practice', scope: 'day', diff: 'medium', icon: '🎓', text: 'Acerte todo o treino de uma aulinha', ev: 'practice_perfect', target: 1, when: () => Server.ai },
+  { id: 'd-book', scope: 'day', diff: 'medium', icon: '📚', text: 'Leia um capítulo do Livro extra', ev: 'book', target: 1, when: () => Server.ai },
+  { id: 'd-perfect-x', scope: 'day', diff: 'hard', icon: '💯', text: 'Acerte 100% numa rodada de extras', ev: 'perfect_extra', target: 1 },
+  { id: 'd-perfect-d', scope: 'day', diff: 'hard', icon: '🏆', text: 'Gabarite a tarefa de hoje (100%)', ev: 'perfect_day', target: 1, when: () => !!(S.week && S.week.days[today()] && S.week.days[today()].required && S.week.days[today()].status !== 'done') },
+  { id: 'd-extra3', scope: 'day', diff: 'hard', icon: '🔥', text: 'Faça 3 rodadas de extras', ev: 'extra', target: 3 },
+  // da semana
+  { id: 'w-streak', scope: 'week', diff: 'medium', icon: '🔥', text: 'Mantenha a sequência por 3 dias', ev: 'streak', target: 3 },
+  { id: 'w-lessons', scope: 'week', diff: 'medium', icon: '🎓', text: 'Faça 3 aulinhas', ev: 'lesson', target: 3, when: () => Server.ai },
+  { id: 'w-games', scope: 'week', diff: 'medium', icon: '✏️', text: 'Jogue 5 jogos da Oficina de palavras', ev: 'game', target: 5 },
+  { id: 'w-read', scope: 'week', diff: 'medium', icon: '📖', text: 'Leia 4 textos (do dia ou do Livro extra)', ev: 'read', target: 4 },
+  { id: 'w-days', scope: 'week', diff: 'hard', icon: '📅', text: 'Conclua 5 tarefas no dia certo', ev: 'day_ontime', target: 5 },
+  { id: 'w-extras', scope: 'week', diff: 'hard', icon: '⭐', text: 'Faça 6 rodadas de extras na semana', ev: 'extra', target: 6 },
+  { id: 'w-perfect', scope: 'week', diff: 'hard', icon: '💯', text: 'Gabarite 2 tarefas ou rodadas de extras', ev: 'perfect_any', target: 2 },
+];
+const questsOn = () => S.settings.questsOn !== false;
+function questSeed(scope) { return `${scope === 'day' ? today() : cycleStartOf(today())}|${Server.childId || S.name || 'eu'}`; }
+function makeQuest(def, rng) {
+  const d = QDIFF[def.diff];
+  return { id: def.id, target: def.target, reward: rng.int(d.min, d.max), progress: 0, claimed: false };
+}
+// Missão de compra: "Compre N ovos hoje" — recompensa = valor gasto + 50 (a criança sempre sai ganhando)
+function makeBuyQuest(rng) {
+  const n = rng.int(1, 3);
+  return { id: 'd-buy', buy: true, target: n, reward: 50, progress: 0, spent: 0, claimed: false, text: `Compre ${n} ovo${n > 1 ? 's' : ''} hoje (ganha o valor de volta + 50)` };
+}
+function ensureQuests() {
+  if (!questsOn()) return null;
+  S.quests = S.quests || {};
+  const t = today(), ws = cycleStartOf(t);
+  if (!S.quests.day || S.quests.day.date !== t) {
+    const rng = makeRng('qd|' + questSeed('day'));
+    const ok = QUEST_POOL.filter(q => q.scope === 'day' && (!q.when || q.when()));
+    const pick = diff => { const l = ok.filter(q => q.diff === diff); return l.length ? rng.pick(l) : null; };
+    const list = [pick('easy'), pick('medium'), pick('hard')].filter(Boolean).map(q => makeQuest(q, rng));
+    if (S.settings.buyQuests !== false && rng.next() < 0.35 && list.length > 1) list[1] = makeBuyQuest(rng);
+    S.quests.day = { date: t, list };
+  }
+  if (!S.quests.week || S.quests.week.start !== ws) {
+    const rng = makeRng('qw|' + questSeed('week'));
+    const ok = QUEST_POOL.filter(q => q.scope === 'week' && (!q.when || q.when()));
+    const m = ok.filter(q => q.diff === 'medium'), h = ok.filter(q => q.diff === 'hard');
+    S.quests.week = { start: ws, list: [m.length && rng.pick(m), h.length && rng.pick(h)].filter(Boolean).map(q => makeQuest(q, rng)) };
+  }
+  return S.quests;
+}
+const questDef = q => QUEST_POOL.find(x => x.id === q.id) || {};
+function questText(q) { return q.text || questDef(q).text || q.id; }
+function questProgress(q) { return questDef(q).ev === 'streak' ? Math.min(q.target, (S.streak && (S.streak.last === today() || S.streak.last === addDays(today(), -1))) ? S.streak.n : 0) : Math.min(q.target, q.progress || 0); }
+function questReward(q) { return q.buy ? (q.spent || 0) + 50 : q.reward; }
+// Chamado pelos pontos do app em que algo acontece (tarefa, extras, aulinha, leitura, jogos, compras).
+function questEvent(ev, data = {}) {
+  if (!questsOn()) return;
+  const Q = ensureQuests(); if (!Q) return;
+  const evs = [ev];
+  if (ev === 'day_done') { if (data.onTime) evs.push('day_ontime'); if (data.perfect) evs.push('perfect_day', 'perfect_any'); }
+  if (ev === 'extra_done') { evs.push('extra'); if (data.perfect) evs.push('perfect_extra', 'perfect_any'); if (data.book) evs.push('book', 'read'); }
+  const done = [];
+  [...Q.day.list, ...Q.week.list].forEach(q => {
+    if (q.claimed) return;
+    const before = questProgress(q);
+    if (q.buy) { if (ev === 'buy' && data.cat === 'egg') { q.progress = (q.progress || 0) + 1; q.spent = (q.spent || 0) + (data.price || 0); } }
+    else if (evs.includes(questDef(q).ev)) q.progress = (q.progress || 0) + 1;
+    if (before < q.target && questProgress(q) >= q.target) done.push(q);
+  });
+  save();
+  done.forEach(q => toast(`📜 Missão completa: ${questText(q)}! Resgate na tela inicial.`));
+}
+function claimQuest(scope, id) {
+  const Q = ensureQuests(); const list = scope === 'day' ? Q.day.list : Q.week.list;
+  const q = list.find(x => x.id === id); if (!q || q.claimed || questProgress(q) < q.target) return;
+  const amt = questReward(q);
+  q.claimed = true;
+  addCoins(amt, `Missão: ${questText(q)}`, `quest-${scope}-${scope === 'day' ? Q.day.date : Q.week.start}-${q.id}`);
+  save();
+  if (typeof celebrateFX === 'function') celebrateFX('small');
+  showCelebrate('Missão cumprida! 📜', `+${amt}`, `${esc(questText(q))}`, 'wow');
+  if (currentScreen === 'home') renderHome();
+}
+function questsHtml() {
+  const Q = ensureQuests(); if (!Q) return '';
+  const row = (q, scope) => { const p = questProgress(q), d = questDef(q); const ready = !q.claimed && p >= q.target; const diff = q.buy ? 'medium' : d.diff;
+    return `<div class="quest ${q.claimed ? 'claimed' : ''} ${ready ? 'ready' : ''}"><span class="q-ic">${q.buy ? '🥚' : d.icon || '📜'}</span>
+      <div class="q-main"><div class="q-t">${esc(questText(q))}</div><div class="q-bar"><i style="width:${Math.round(p / q.target * 100)}%"></i></div></div>
+      <div class="q-side"><span class="q-rw d-${diff}">+${q.buy ? `${(q.spent || 0) + 50}` : q.reward} 🪙</span>
+      ${q.claimed ? '<span class="tiny muted">✔ resgatada</span>' : ready ? `<button class="btn small gold" data-claim="${scope}|${q.id}">Resgatar</button>` : `<span class="tiny muted">${p}/${q.target}</span>`}</div></div>`; };
+  return `<div class="card span2 quests"><div class="row"><b>📜 Missões</b><span class="tiny muted grow">fácil +5–10 · média +20–30 · difícil +50–80</span></div>
+    <div class="q-sec">Hoje</div>${Q.day.list.map(q => row(q, 'day')).join('')}
+    <div class="q-sec">Esta semana</div>${Q.week.list.map(q => row(q, 'week')).join('')}</div>`;
+}
+
 /* ---------- Área dos pais ---------- */
 function renderParents() {
   const el = $('#scr-parents');
@@ -3729,6 +3850,8 @@ function pSettings(box) {
       <label class="field">Penalidade (semana não entregue)<input type="number" id="s-penalty" value="${st.penalty}"></label>
       <label class="field">Recuperação atrasada vale (% da recompensa)<input type="number" id="s-late" value="${latePct()}"></label>
       <label class="field">Moedas por tarefa do dia (0 desliga)<input type="number" id="s-dayc" value="${st.dayCoins ?? 10}"></label>
+      <label class="field">📜 Missões<select id="s-quests"><option value="1" ${st.questsOn !== false ? 'selected' : ''}>Ligadas</option><option value="0" ${st.questsOn === false ? 'selected' : ''}>Desligadas</option></select></label>
+      <label class="field">Missões de compra (ganha o gasto + 50)<select id="s-bquests"><option value="1" ${st.buyQuests !== false ? 'selected' : ''}>Ligadas</option><option value="0" ${st.buyQuests === false ? 'selected' : ''}>Desligadas</option></select></label>
       <label class="field">Moedas por acerto nos extras<input type="number" id="s-xpc" value="${st.extraPerCorrect}"></label>
       <label class="field">Perguntas por rodada de extras<input type="number" id="s-xsize" value="${st.extraSetSize}"></label>
       <label class="field">Rodadas de extras com moedas/dia<input type="number" id="s-xsets" value="${st.extraSetsPerDay}"></label>
@@ -3755,7 +3878,7 @@ function pSettings(box) {
     const reward = Math.max(0, num('#s-reward', st.reward)), penalty = num('#s-penalty', st.penalty);
     if (penalty <= reward) { toast('A penalidade precisa ser MAIOR que a recompensa.'); return; }
     Object.assign(st, {
-      reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
+      reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), questsOn: $('#s-quests').value === '1', buyQuests: $('#s-bquests').value === '1', extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
       extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10), minPerDay: clamp(num('#s-min', st.minPerDay), 1, 15), maxPerDay: clamp(num('#s-max', st.maxPerDay), 3, 40),
       workshopCoins: clamp(num('#s-wkc', st.workshopCoins ?? 3), 0, 50), workshopPerDay: clamp(num('#s-wkd', st.workshopPerDay ?? 5), 0, 20),
       countMode: $('#s-cmode').value, perSubject: clamp(num('#s-per', st.perSubject || 2), 1, 4), dailyReading: $('#s-dread').value === '1',
