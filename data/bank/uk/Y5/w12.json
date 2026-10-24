@@ -2625,5 +2625,353 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "Lupa Curiosa: o jornal de ciências da turma",
+   "premise": "Lia, Davi e Tomás criam com a turma um jornal de ciências e, a cada edição, aprendem a encontrar a ideia central, descobrir palavras pelo contexto e usar imagens e legendas.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: Um jornal de ciências",
+     "synopsis": "A turma do 4º ano decide criar um jornal de ciências, e Lia escreve o primeiro texto, sobre as abelhas.",
+     "text": "Na segunda-feira, a professora Celina entrou na sala com uma pilha de folhas coloridas. — Turma, este ano vamos ter um jornal de ciências. Ele vai se chamar Lupa Curiosa, e cada semana alguém escreve um texto explicando algo da natureza.\nLia levantou a mão primeiro. Ela adorava as abelhas que visitavam o jardim da escola. Naquela tarde, foi até o canteiro de lavanda com seu caderno e observou tudo com atenção. Viu que as abelhas pousavam numa flor, ficavam com as patinhas cheias de pozinho amarelo e voavam para outra flor.\nEm casa, Lia pesquisou num livro da biblioteca e descobriu que aquele pozinho se chama pólen. Quando as abelhas levam o pólen de uma flor para outra, ajudam as plantas a formar frutos e sementes. Esse trabalho se chama polinização.\nLia escreveu três páginas. Falou da cor das abelhas, do zumbido, da rainha da colmeia, do mel e, no meio de tudo, da polinização. Orgulhosa, entregou o texto para a professora.\nCelina leu com um sorriso. — Que texto cheio de informações! Agora me diga: se seu leitor pudesse lembrar só de uma coisa, qual seria?\nLia pensou um pouco. — Que as abelhas ajudam as plantas a formar frutos e sementes.\n— Isso é a ideia central — explicou a professora. — É a mensagem mais importante do texto. As outras informações são detalhes que ajudam a explicá-la.\nLia reorganizou o texto e colocou a ideia central logo no começo. Na sexta-feira, a primeira edição da Lupa Curiosa foi pendurada no mural, com o título: Sem abelhas, menos frutas.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Resuma o capítulo 1 em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a ideia central do texto de Lia sobre as abelhas?",
+       "options": [
+        "As abelhas fazem um zumbido alto",
+        "As abelhas ajudam as plantas a formar frutos e sementes",
+        "A rainha manda na colmeia",
+        "As abelhas gostam de lavanda"
+       ],
+       "answer": "As abelhas ajudam as plantas a formar frutos e sementes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama o pozinho amarelo que as abelhas levam de flor em flor?",
+       "options": [],
+       "answer": "pólen",
+       "accept": [
+        "polen",
+        "o pólen"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A palavra misteriosa",
+     "synopsis": "Davi encontra uma palavra difícil num texto sobre plantas e descobre o seu significado pelo contexto.",
+     "text": "Na semana seguinte, era a vez de Davi. Ele escolheu escrever sobre plantas, mas, logo no primeiro texto que leu, travou numa palavra comprida: fotossíntese.\n— Vou procurar no dicionário — disse ele, já se levantando.\nTomás, seu colega de mesa, segurou seu braço. — Espera. A professora disse que às vezes o próprio texto explica a palavra. Lê a frase de novo, devagar.\nDavi leu em voz alta: — Na fotossíntese, as plantas usam a luz do sol, a água e o gás carbônico do ar para produzir o seu próprio alimento. Nesse processo, elas liberam oxigênio.\nOs dois ficaram em silêncio. Então Davi arregalou os olhos. — Já sei! Fotossíntese é o jeito que a planta fabrica a comida dela usando a luz!\n— E olha a palavra: foto lembra luz, como na fotografia — completou Tomás.\nPara ter certeza, Davi conferiu no dicionário. A explicação era parecida com a que eles tinham descoberto. Ele ficou tão animado que decidiu fazer uma experiência: deixou um vasinho de feijão perto da janela e outro dentro do armário. Depois de alguns dias, o feijão do armário estava fraco e amarelado, enquanto o da janela continuava verde.\nTomás riu. — Viu só? A gente descobriu sozinho, só lendo com atenção. Davi concordou e anotou no caderno as pistas que tinham usado: a frase explicava o que a planta usa, o que ela produz e o que ela libera no ar.\nNo texto para a Lupa Curiosa, Davi escreveu a ideia central em uma frase: as plantas precisam de luz para produzir o seu alimento. Embaixo, colocou uma dica para os leitores: quando encontrar uma palavra difícil, procure pistas nas frases ao redor. Muitas vezes o texto já explica o que ela quer dizer.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Resuma o capítulo 2 em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que palavra difícil Davi encontrou no texto?",
+       "options": [],
+       "answer": "fotossíntese",
+       "accept": [
+        "fotossintese"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o feijão ficou fraco e amarelado?",
+       "options": [
+        "Perto da janela",
+        "Dentro do armário",
+        "No jardim",
+        "Na geladeira"
+       ],
+       "answer": "Dentro do armário",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: O segredo da legenda",
+     "synopsis": "Tomás escreve sobre o polvo e aprende que a foto e a legenda também ajudam a explicar o texto.",
+     "text": "Tomás era apaixonado pelo mar. Para a terceira edição da Lupa Curiosa, escolheu falar do polvo. Encontrou uma foto linda de um polvo escondido entre as pedras e colou no meio da página.\n— Ficou bonito — disse a professora Celina. — Mas quem olha a foto sabe o que ela mostra?\nTomás coçou a cabeça. Para ele era óbvio, mas talvez outra pessoa achasse que era só uma pedra estranha.\n— Uma foto num texto científico precisa de legenda — explicou Celina. — A legenda é aquela frase curtinha, embaixo da imagem, que diz o que estamos vendo e liga a imagem ao texto.\nTomás voltou para a mesa e releu suas anotações. O polvo tem oito braços, três corações e sangue azulado. E consegue mudar a cor da pele para se misturar com o ambiente, o que ajuda a se esconder dos predadores. Ele percebeu que a foto mostrava exatamente isso: o polvo estava com a mesma cor das pedras!\nEntão escreveu a legenda: Polvo camuflado entre as pedras. A pele dele muda de cor para enganar os predadores.\nLia leu a página e exclamou: — Nossa! Eu nem tinha visto o polvo. Agora, com a legenda, consigo achar.\nDavi também gostou. — E a legenda é curtinha, mas diz muita coisa. A professora pediu que Tomás lesse a página em voz alta para a turma, e todos procuraram o polvo na foto antes e depois de ouvir a legenda.\nTomás entendeu que texto, imagem e legenda trabalham juntos. O texto explica, a imagem mostra e a legenda ajuda o leitor a ligar as duas coisas. A ideia central da página ficou clara para todos: o polvo muda de cor para se proteger.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Resuma o capítulo 3 em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para que serve a legenda embaixo da foto?",
+       "options": [
+        "Para enfeitar a página",
+        "Para dizer o que a imagem mostra e ligá-la ao texto",
+        "Para dar o nome do autor",
+        "Para contar uma piada"
+       ],
+       "answer": "Para dizer o que a imagem mostra e ligá-la ao texto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos corações tem o polvo?",
+       "options": [],
+       "answer": "três",
+       "accept": [
+        "3",
+        "tres"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: Morcegos não são cegos",
+     "synopsis": "Lia escreve sobre morcegos e aprende a não confundir um detalhe curioso com a ideia central.",
+     "text": "Uma noite, Lia viu um morcego voando perto do poste da rua. Na manhã seguinte, decidiu: o próximo texto seria sobre esses animais tão incompreendidos.\nEla ouviu muitas vezes a expressão cego como um morcego. Mas, lendo uma revista de ciências, descobriu que isso não é verdade. Os morcegos enxergam. Além disso, muitos deles usam a ecolocalização: emitem sons muito agudos, que batem nos objetos e voltam como eco. Assim, eles sabem onde estão as coisas, mesmo no escuro.\nLia também descobriu outras curiosidades. Há morcegos que comem frutas e espalham sementes pela floresta, e outros que comem muitos insetos.\nEla escreveu o título: Morcegos têm sons esquisitos. Davi leu e franziu a testa. — Mas o seu texto não é só sobre os sons. Você explica que eles não são cegos e que conseguem se orientar no escuro.\nLia percebeu que tinha escolhido um detalhe curioso para o título, e não a ideia central. Lembrou-se da pergunta da professora: se o leitor pudesse lembrar de uma coisa só, qual seria?\n— Que os morcegos não são cegos e usam o eco para se orientar no escuro — respondeu ela.\nPara ter certeza, ela releu o texto do começo ao fim e sublinhou de verde as frases que falavam da ideia central e de amarelo as que traziam detalhes. O verde aparecia logo no primeiro parágrafo.\nEntão mudou o título para: Morcegos enxergam e ainda usam o eco. Na roda de conversa, a turma comentou como um bom título ajuda o leitor a descobrir rapidamente do que o texto trata. E muita gente parou de ter medo de morcegos depois de ler a Lupa Curiosa daquela semana.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Resuma o capítulo 4 em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que é a ecolocalização?",
+       "options": [
+        "Um tipo de fruta",
+        "Usar o eco de sons para saber onde estão as coisas",
+        "Uma doença dos morcegos",
+        "Dormir de cabeça para baixo"
+       ],
+       "answer": "Usar o eco de sons para saber onde estão as coisas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lia trocou o título do texto?",
+       "options": [
+        "Porque estava muito longo",
+        "Porque mostrava um detalhe e não a ideia central",
+        "Porque tinha erro de ortografia",
+        "Porque a professora não gostou de morcegos"
+       ],
+       "answer": "Porque mostrava um detalhe e não a ideia central",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Tempestade no pátio",
+     "synopsis": "Depois de uma chuva forte, Davi e Tomás explicam o ciclo da água com palavras novas.",
+     "text": "Na quarta-feira, caiu uma chuva tão forte que o recreio foi dentro da sala. Quando o sol voltou, o pátio estava cheio de poças. Uma hora depois, metade delas tinha desaparecido.\n— Para onde foi a água? — perguntou Tomás.\nA professora Celina aproveitou a pergunta. — Que tal vocês descobrirem e escreverem sobre isso para a Lupa Curiosa?\nDavi e Tomás leram um texto sobre o ciclo da água. Logo encontraram palavras novas, mas lembraram do truque de procurar pistas no texto. Uma frase dizia: Com o calor do sol, a água das poças, dos rios e dos mares se transforma em vapor e sobe para o céu; esse processo é a evaporação.\n— Então evaporação é quando a água vira vapor por causa do calor — disse Davi.\nA frase seguinte explicava que, lá no alto, o ar é mais frio, e o vapor volta a formar gotinhas de água, que se juntam e formam as nuvens. Isso se chama condensação. Quando as gotas ficam pesadas, caem como chuva: é a precipitação.\nPara mostrar aos leitores, Tomás desenhou um esquema com setas: das poças para o céu, do céu para as nuvens e das nuvens de volta para o chão. Em cada seta, colocou uma legenda com o nome da etapa.\nO texto deles terminou com a ideia central bem clara: a água está sempre circulando entre a terra e o céu, num ciclo que nunca para. As poças do pátio não tinham sumido; tinham apenas começado uma nova viagem.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Resuma o capítulo 5 em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama a etapa em que a água vira vapor por causa do calor?",
+       "options": [],
+       "answer": "evaporação",
+       "accept": [
+        "evaporacao"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Tomás colocou em cada seta do esquema?",
+       "options": [
+        "Um número",
+        "Uma legenda com o nome da etapa",
+        "Uma foto",
+        "O nome dele"
+       ],
+       "answer": "Uma legenda com o nome da etapa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O mistério da composteira",
+     "synopsis": "A turma descobre como restos de frutas viram adubo e aprende a separar ideia central de detalhes.",
+     "text": "A escola ganhou uma composteira, uma caixa onde os restos de frutas e verduras da cantina são guardados junto com folhas secas e terra. A professora Celina contou que, depois de algumas semanas, aquilo viraria adubo.\n— Como cascas de banana viram terra? — perguntou Lia, desconfiada.\nA turma inteira decidiu investigar. Leram um texto que explicava que minhocas e seres muito pequenos, chamados microrganismos, se alimentam dos restos e os decompõem, isto é, quebram tudo em pedacinhos cada vez menores. No final, sobra um material escuro e rico em nutrientes, ótimo para as plantas.\nO texto também tinha muitos detalhes: a composteira não deve receber carne; é bom misturar folhas secas; ela precisa ficar úmida, mas não encharcada.\nPara organizar as ideias, a professora desenhou no quadro uma árvore. — A ideia central é o tronco. Os detalhes são os galhos. Quais são os galhos e qual é o tronco?\nDavi foi ao quadro e escreveu no tronco: Na composteira, minhocas e microrganismos transformam restos de alimentos em adubo. Nos galhos, os colegas colocaram os cuidados com a composteira.\nTomás perguntou se a casca de laranja também podia ir para a composteira. Lia respondeu que sim, porque era resto de fruta, e Davi lembrou que pedaços menores se decompõem mais rápido. Cada descoberta virava um novo galho na árvore do quadro.\nSemanas depois, a caixa estava cheia de terra escura e cheirosa. A turma usou o adubo na horta da escola e plantou alface. Naquela edição, a Lupa Curiosa trouxe a árvore desenhada, com a legenda: Tronco é a ideia central; galhos são os detalhes.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Resuma o capítulo 6 em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que animais ajudam a transformar os restos em adubo, junto com os microrganismos?",
+       "options": [],
+       "answer": "minhocas",
+       "accept": [
+        "as minhocas",
+        "minhoca"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, na árvore desenhada no quadro, o que representava o tronco?",
+       "options": [
+        "Os detalhes",
+        "A ideia central",
+        "O título",
+        "A legenda"
+       ],
+       "answer": "A ideia central",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A edição especial",
+     "synopsis": "Na última edição do trimestre, a turma explica para as famílias por que a Lua brilha.",
+     "text": "O trimestre estava terminando, e a professora Celina anunciou: — A Lupa Curiosa vai ter uma edição especial, e as famílias vêm à escola para ler!\nLia, Davi e Tomás decidiram escrever juntos. O tema surgiu de uma pergunta do irmãozinho de Tomás: — Por que a Lua tem luz, se ela não é uma lâmpada?\nOs três pesquisaram e descobriram que a Lua não tem luz própria. Ela reflete a luz do Sol, como um espelho meio apagado. As fases da Lua acontecem porque, enquanto ela gira ao redor da Terra, vemos partes diferentes do seu lado iluminado.\nDesta vez, eles sabiam o que fazer. Primeiro, escreveram a ideia central numa frase só: a Lua brilha porque reflete a luz do Sol. Depois, explicaram a palavra reflete com um exemplo do dia a dia: quando a luz bate num espelho e volta para os nossos olhos.\nTomás fez um desenho do Sol, da Terra e da Lua, com setas mostrando o caminho da luz. Lia escreveu a legenda: A luz sai do Sol, bate na Lua e chega até nós. Davi escolheu o título: A Lua pega luz emprestada do Sol.\nNo dia da apresentação, o irmãozinho de Tomás leu a página com a ajuda da mãe e disse, satisfeito: — Agora entendi!\nA professora Celina juntou a turma no final. — Vocês aprenderam a encontrar a ideia central, a descobrir palavras pelo contexto e a usar imagens e legendas. Isso é ler e escrever como cientistas.\nOs três sorriram. Já estavam pensando no tema da próxima edição.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Resuma o capítulo 7 em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a Lua brilha?",
+       "options": [
+        "Porque tem luz própria",
+        "Porque reflete a luz do Sol",
+        "Porque é feita de fogo",
+        "Porque a Terra a ilumina com lâmpadas"
+       ],
+       "answer": "Porque reflete a luz do Sol",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem fez a pergunta que deu origem ao tema da edição especial?",
+       "options": [],
+       "answer": "o irmãozinho de Tomás",
+       "accept": [
+        "irmãozinho de Tomás",
+        "irmão de Tomás",
+        "o irmão de Tomás",
+        "irmãozinho"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
