@@ -34,8 +34,15 @@ const DEFAULT_SETTINGS = {
   extraPerCorrect: 2,     // moedas por acerto nos exercícios extras
   extraSetSize: 5,        // perguntas por rodada de extras
   extraSetsPerDay: 3,     // rodadas de extras com moedas por dia
-  minPerDay: 3,           // mínimo de perguntas que a aluna pode escolher por dia
-  maxPerDay: 15,
+  minPerDay: 3,           // mínimo de perguntas que o estudante pode escolher por dia
+  maxPerDay: 30,
+  countMode: 'auto',      // auto: 2 perguntas por matéria por dia (+ leitura); manual: números abaixo
+  perSubject: 2,          // perguntas de cada matéria por dia (modo automático)
+  dailyReading: true,     // todo dia tem um texto (capítulo do "livro da semana") com resumo e perguntas
+  readLevel: 'at',        // nível padrão do texto diário
+  autoVoice: true,        // a Lumi lê as aulinhas em voz alta sozinha
+  workshopCoins: 3,       // moedas por atividade concluída na Oficina de palavras
+  workshopPerDay: 5,      // atividades com moedas por dia na Oficina
   counts: { sab: 9, dom: 9, seg: 7, ter: 7, qua: 7, qui: 7, sex: 5 }, // fim de semana um pouco maior
   gabaritoAfterFinish: true, // gabarito libera depois de concluir o dia
   voice: true,
@@ -196,6 +203,28 @@ DEFAULT_VOUCHERS.push(
   { id: 'v-late', name: 'Dormir 30 min mais tarde', price: 250 },
   { id: 'v-outing', name: 'Escolher o passeio do domingo', price: 400 },
 );
+// Pacote 2: muito mais vales (prêmios reais), alguns bem caros. Os pais editam ou apagam.
+const VOUCHER_PACK2 = [
+  { id: 'v-music', name: 'Escolher as músicas do carro por 1 semana', price: 300 },
+  { id: 'v-bed', name: 'Um dia sem arrumar a cama', price: 350 },
+  { id: 'v-game1h', name: '1 hora extra de videogame', price: 450 },
+  { id: 'v-breakfast', name: 'Café da manhã na cama', price: 500 },
+  { id: 'v-pizza', name: 'Pizza no jantar', price: 600 },
+  { id: 'v-late1h', name: 'Dormir 1 hora mais tarde no fim de semana', price: 700 },
+  { id: 'v-book', name: 'Um livro novo à escolha', price: 800 },
+  { id: 'v-sleepover', name: 'Convidar um amigo para dormir em casa', price: 1000 },
+  { id: 'v-cash20', name: 'R$ 20 para gastar como quiser', price: 1200 },
+  { id: 'v-restaurant', name: 'Escolher o restaurante do fim de semana', price: 1300 },
+  { id: 'v-cinema', name: 'Cinema com pipoca', price: 1500 },
+  { id: 'v-nochores', name: 'Fim de semana sem tarefas de casa', price: 1800 },
+  { id: 'v-newgame', name: 'Um jogo novo (até R$ 60)', price: 2000 },
+  { id: 'v-trip', name: 'Passeio especial (parque, aquário, kart…)', price: 2500 },
+  { id: 'v-yesday', name: 'Dia do SIM (os pais dizem sim a pedidos combinados)', price: 3500 },
+  { id: 'v-event', name: 'Ingresso para um jogo, show ou evento', price: 5000 },
+  { id: 'v-wish', name: 'Item grande da lista de desejos', price: 7000 },
+  { id: 'v-weekend', name: 'Escolher a viagem de um fim de semana', price: 10000 },
+];
+DEFAULT_VOUCHERS.push(...VOUCHER_PACK2.map(v => Object.assign({}, v)));
 
 /* =========================================================================
    2. UTILITÁRIOS
@@ -259,6 +288,8 @@ function isCorrect(q, ans) {
   if (ans == null || String(ans).trim() === '') return false;
   const list = [q.answer, ...(q.accept || [])];
   if (q.type === 'num') return list.some(a => numEq(ans, a));
+  // Ortografia/Spelling: acento e grafia contam sempre (vale para perguntas do Claude, da aulinha e do gerador)
+  if (SUBJ[q.subject] && SUBJ[q.subject].kind === 'spelling' && q.type !== 'mc') return list.some(a => norm(a, true) === norm(ans, true));
   if (SUBJ[q.subject] && SUBJ[q.subject].kind === 'math' && list.some(a => mathCanon(a) === mathCanon(ans))) return true;
   return list.some(a => norm(a, q.strict) === norm(ans, q.strict));
 }
@@ -297,7 +328,11 @@ function defaultState() {
     extras: {},                 // { 'AAAA-MM-DD': { sets: n } }
     extra: null,                // rodada de extras em andamento
     owned: [],                  // ids de itens comprados
-    equipped: { hat: null, glasses: null, neck: null, bg: null, back: null, skin: null, pet: null, fx: null },
+    equipped: { hat: null, glasses: null, neck: null, bg: null, back: null, skin: null, pet: null, fx: null, mascot: null },
+    voucherPack: 2,             // pacotes de vales já adicionados (para levar vales novos a perfis antigos)
+    practice: { pt: [], en: [] }, // palavras para treinar na Oficina (erradas ou "não sei")
+    missed: [],                 // perguntas erradas recentes, para o reforço
+    workshop: {},               // { 'AAAA-MM-DD': n } atividades com moedas na Oficina
     redemptions: [],            // vales resgatados {id, voucherId, name, date, delivered}
     rev: 0,                     // versão no servidor
   };
@@ -309,6 +344,12 @@ function normalizeState(s) {
   merged.settings = Object.assign(structuredCloneSafe(DEFAULT_SETTINGS), (s && s.settings) || {});
   merged.settings.counts = Object.assign({}, DEFAULT_SETTINGS.counts, ((s && s.settings) || {}).counts || {});
   merged.equipped = Object.assign(base.equipped, (s && s.equipped) || {});
+  merged.practice = Object.assign({ pt: [], en: [] }, merged.practice || {});
+  if (!s || !s.voucherPack || s.voucherPack < 2) {   // perfis antigos recebem os vales novos uma vez
+    const have = new Set((merged.vouchers || []).map(v => v.id));
+    merged.vouchers = (merged.vouchers || []).concat(VOUCHER_PACK2.filter(v => !have.has(v.id)).map(v => Object.assign({}, v)));
+    merged.voucherPack = 2;
+  }
   return merged;
 }
 function load() {
@@ -342,7 +383,7 @@ function addCoins(amount, reason) {
    ========================================================================= */
 const CHILD_KEY = 'lumi-child';
 const Server = { on: false, ai: false, needsSetup: false, canSetup: false, me: null, childId: null, pushing: false, again: false, dirty: false, timer: null, status: 'local' };
-const AI_ROUTES = { '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open' };
+const AI_ROUTES = { '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open', '/api/lesson': 'lesson', '/api/reading': 'reading' };
 const AVATARS = ['🦉', '🦊', '🐼', '🐱', '🐶', '🦄', '🐸', '🐧', '🐯', '🐰', '🐨', '🐙'];
 function localKey(id = Server.childId) { return id ? `${STORE_KEY}:${id}` : STORE_KEY; }
 function savedChild() { try { return localStorage.getItem(CHILD_KEY) || ''; } catch (e) { return ''; } }
@@ -675,17 +716,20 @@ const BACK_SVG = {
 };
 /* ---------- Lojinha ampliada: mais roupinhas, cores, amiguinhos, fundos e efeitos ---------- */
 SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'bg'), 0, { id: 'fx', label: '✨ Efeitos' });
+SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'skin'), 0, { id: 'mascot', label: '🐾 Trocar de bicho' });
+// Categorias que vestem a mascote (aparecem no desenho)
+const WEAR = ['hat', 'glasses', 'neck', 'back', 'skin', 'pet', 'fx', 'mascot'];
 SHOP_ITEMS.push(
   // chapéus
   { id: 'hat-party', cat: 'hat', name: 'Chapéu de festa', price: 45 },
-  { id: 'hat-bow', cat: 'hat', name: 'Laço gigante', price: 50, emoji: '🎀', pos: [50, 20, 26] },
+  { id: 'hat-bow', cat: 'hat', name: 'Laço gigante', price: 50 },
   { id: 'hat-beret', cat: 'hat', name: 'Boina de artista', price: 60 },
   { id: 'hat-beanie', cat: 'hat', name: 'Gorro de inverno', price: 70 },
-  { id: 'hat-beach', cat: 'hat', name: 'Chapéu de praia', price: 80, emoji: '👒', pos: [50, 24, 38] },
+  { id: 'hat-beach', cat: 'hat', name: 'Chapéu de praia', price: 80 },
   { id: 'hat-cat', cat: 'hat', name: 'Orelhas de gatinho', price: 90 },
   { id: 'hat-chef', cat: 'hat', name: 'Chapéu de chef', price: 100 },
   { id: 'hat-pirate', cat: 'hat', name: 'Chapéu de pirata', price: 160 },
-  { id: 'hat-magic', cat: 'hat', name: 'Cartola mágica', price: 350, emoji: '🎩', pos: [50, 22, 36] },
+  { id: 'hat-magic', cat: 'hat', name: 'Cartola mágica', price: 350 },
   { id: 'hat-astro', cat: 'hat', name: 'Capacete de astronauta', price: 900 },
   // óculos
   { id: 'gl-nerd', cat: 'glasses', name: 'Óculos de nerd', price: 40 },
@@ -721,6 +765,11 @@ SHOP_ITEMS.push(
   { id: 'pt-koala', cat: 'pet', name: 'Coala', price: 700, emoji: '🐨' },
   { id: 'pt-dolphin', cat: 'pet', name: 'Golfinho', price: 800, emoji: '🐬' },
   { id: 'pt-unicorn', cat: 'pet', name: 'Unicórnio', price: 2000, emoji: '🦄' },
+  // trocar de bicho: a Lumi vira outro animal (desenhos originais; roupinhas continuam servindo)
+  { id: 'ms-owl', cat: 'mascot', name: 'Corujinha (original)', price: 0 },
+  { id: 'ms-dog', cat: 'mascot', name: 'Cachorrinho', price: 2000 },
+  { id: 'ms-cat', cat: 'mascot', name: 'Gatinho', price: 2000 },
+  { id: 'ms-panda', cat: 'mascot', name: 'Pandinha', price: 2500 },
   // efeitos ao redor da Lumi
   { id: 'fx-bubbles', cat: 'fx', name: 'Bolhas', price: 150, fx: '🫧' },
   { id: 'fx-sparkle', cat: 'fx', name: 'Brilhos', price: 150, fx: '✨' },
@@ -744,12 +793,16 @@ SHOP_ITEMS.push(
 );
 
 Object.assign(ACCESSORY_SVG, {
+  // laço apoiado no alto da cabeça, com as pontas caindo por cima dela
+  'hat-bow': '<g stroke="#c2255c" stroke-width="1.2" stroke-linejoin="round"><path d="M60 24 Q57 29 52.5 32 L57 33.5 Q60.5 29 62 25Z" fill="#f06595"/><path d="M64 24 Q67 29 71.5 31.5 L67 33.5 Q64.5 29 63 25Z" fill="#f06595"/><path d="M62 23 Q47 7 44 17 Q43 28 62 23Z" fill="#ff8fab"/><path d="M62 23 Q77 7 80 17 Q81 28 62 23Z" fill="#ff8fab"/></g><path d="M49 15 Q53 14 56 18 M75 15 Q71 14 68 18" stroke="#fff" stroke-opacity=".6" stroke-width="1.5" fill="none" stroke-linecap="round"/><circle cx="62" cy="22.5" r="4" fill="#e64980" stroke="#c2255c" stroke-width="1.2"/>',
+  'hat-beach': '<path d="M32 22 Q33 3 50 3 Q67 3 68 22Z" fill="#f7dc9b" stroke="#d4a53c" stroke-width="1.2"/><path d="M32.6 15 Q50 19 67.4 15 L68 21 Q50 25 32 21Z" fill="#ff6b9a"/><ellipse cx="50" cy="23" rx="37" ry="7" fill="#f4d58d" stroke="#d4a53c" stroke-width="1.2"/><path d="M20 23 Q50 28 80 23" stroke="#d4a53c" stroke-width=".8" fill="none" opacity=".6"/>' + [0, 72, 144, 216, 288].map(r => `<circle cx="64" cy="14.5" r="2.6" fill="#ffd43b" transform="rotate(${r} 64 17.5)"/>`).join('') + '<circle cx="64" cy="17.5" r="2" fill="#ff922b"/>',
+  'hat-magic': '<ellipse cx="50" cy="23" rx="27" ry="5.5" fill="#212529"/><path d="M36 22 L37.5 -5 Q50 -8 62.5 -5 L64 22Z" fill="#2b2b33"/><path d="M36.6 13 L63.4 13 L63.7 19 L36.3 19Z" fill="#e5484d"/><ellipse cx="50" cy="-5" rx="12.5" ry="3" fill="#3a3a44"/><path d="M40 -1 L41 10" stroke="#fff" stroke-opacity=".25" stroke-width="2.5" stroke-linecap="round"/><path d="M70 2 l1.4 3 l3 1.4 l-3 1.4 l-1.4 3 l-1.4 -3 l-3 -1.4 l3 -1.4Z" fill="#ffd43b"/>',
   'hat-party': '<path d="M38 22 L50 -6 L62 22 Z" fill="#74c0fc"/><path d="M41 15 L59 15 M44 8 L56 8 M47 1 L53 1" stroke="#ff6b9a" stroke-width="3"/><circle cx="50" cy="-7" r="3.5" fill="#ffd43b"/>',
   'hat-beret': '<ellipse cx="46" cy="18" rx="25" ry="9" fill="#e03131" transform="rotate(-8 46 18)"/><circle cx="44" cy="8" r="2.5" fill="#c92a2a"/>',
   'hat-beanie': '<path d="M26 24 Q28 0 50 0 Q72 0 74 24 Z" fill="#4dabf7"/><rect x="25" y="18" width="50" height="8" rx="4" fill="#1c7ed6"/><circle cx="50" cy="-2" r="6" fill="#fff"/><path d="M36 6 v12 M50 3 v15 M64 6 v12" stroke="#74c0fc" stroke-width="2"/>',
   'hat-cat': '<path d="M24 26 L26 2 L42 18 Z" fill="#ffc9de" stroke="#f783ac" stroke-width="2"/><path d="M76 26 L74 2 L58 18 Z" fill="#ffc9de" stroke="#f783ac" stroke-width="2"/><path d="M28 20 Q50 12 72 20" stroke="#f783ac" stroke-width="3.5" fill="none" stroke-linecap="round"/>',
-  'hat-chef': '<rect x="34" y="12" width="32" height="12" rx="2" fill="#fff" stroke="#dee2e6"/><circle cx="38" cy="8" r="9" fill="#fff" stroke="#dee2e6"/><circle cx="50" cy="3" r="10" fill="#fff" stroke="#dee2e6"/><circle cx="62" cy="8" r="9" fill="#fff" stroke="#dee2e6"/>',
-  'hat-pirate': '<path d="M18 22 Q50 -6 82 22 Q50 14 18 22Z" fill="#212529"/><circle cx="50" cy="10" r="4" fill="#fff"/><path d="M47 15 l6 -3 M47 12 l6 3" stroke="#fff" stroke-width="1.2"/>',
+  'hat-chef': '<circle cx="35" cy="10" r="9.5" fill="#fff" stroke="#dee2e6" stroke-width="1.2"/><circle cx="65" cy="10" r="9.5" fill="#fff" stroke="#dee2e6" stroke-width="1.2"/><circle cx="50" cy="4" r="11.5" fill="#fff" stroke="#dee2e6" stroke-width="1.2"/><path d="M29 13 h42 v11 q-21 4 -42 0Z" fill="#fff" stroke="#dee2e6" stroke-width="1.2"/><path d="M38 15 v7 M50 15 v8 M62 15 v7" stroke="#e9ecef" stroke-width="1.5"/>',
+  'hat-pirate': '<path d="M15 26 Q20 5 50 3 Q80 5 85 26 Q66 17 50 23 Q34 17 15 26Z" fill="#212529"/><path d="M15 26 Q34 17 50 23 Q66 17 85 26" stroke="#ffd43b" stroke-width="1.8" fill="none"/><circle cx="50" cy="11" r="4.2" fill="#fff"/><circle cx="48.4" cy="10.5" r="1" fill="#212529"/><circle cx="51.6" cy="10.5" r="1" fill="#212529"/><path d="M45 17 l10 -4 M45 13 l10 4" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>',
   'hat-astro': '<circle cx="50" cy="44" r="40" fill="#d0ebff" fill-opacity=".28" stroke="#adb5bd" stroke-width="3"/><path d="M24 22 Q34 12 46 10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/><circle cx="50" cy="3" r="3" fill="#fa5252"/>',
   'gl-nerd': '<g fill="none" stroke="#212529" stroke-width="3"><rect x="25" y="32" width="23" height="17" rx="3"/><rect x="52" y="32" width="23" height="17" rx="3"/><path d="M48 39 h4"/></g>',
   'gl-3d': '<rect x="24" y="32" width="25" height="15" rx="2" fill="#fa5252" fill-opacity=".75" stroke="#fff" stroke-width="2"/><rect x="51" y="32" width="25" height="15" rx="2" fill="#4dabf7" fill-opacity=".75" stroke="#fff" stroke-width="2"/>',
@@ -792,18 +845,79 @@ function emojiAcc(id) {
   return `<text x="${x}" y="${y}" font-size="${s}" text-anchor="middle" font-family="Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif">${it.emoji}</text>`;
 }
 
+// Bichos da Lumi: desenhos originais no mesmo "molde" da coruja (corpo, olhos em 37/63 e pescoço em ~58),
+// para chapéus, óculos e colares servirem em todos. Cada um tem cores próprias; as "Cores da Lumi" valem para todos.
+const ANIMAL_COLORS = {
+  'ms-dog': { body: '#d9a066', dark: '#9c6332', belly: '#fff4e2', marks: '#b97a3f', ring: '#5c3a1a' },
+  'ms-cat': { body: '#f4a259', dark: '#d9782d', belly: '#fff1df', marks: '#d9782d', ring: '#a55a1d' },
+  'ms-panda': { body: '#f8f9fa', dark: '#2b2b33', belly: '#ffffff', marks: '#dee2e6', ring: '#2b2b33' },
+};
+const INK = '#2b2350';
+function animalEyes(mood, pupilR = 5.5) {
+  const pos = mood === 'think' ? [[38, 37], [62, 37]] : [[37, 41], [63, 41]];
+  const r = mood === 'wow' ? pupilR + 1.5 : pupilR;
+  return pos.map(([x, y]) => `<ellipse cx="${x}" cy="${y}" rx="${r * .9}" ry="${r * 1.08}" fill="${INK}"/><circle cx="${x + 1.8}" cy="${y - 2.2}" r="${r * .36}" fill="#fff"/><circle cx="${x - 1.6}" cy="${y + 2}" r="${r * .16}" fill="#fff"/>`).join('');
+}
+const ANIMALS = {
+  'ms-dog': (P, mood) => ({
+    behind: `<path d="M77 76 Q97 70 93 50 Q90 46 87 50 Q89 62 75 68Z" fill="${P.dark}"/>`,
+    arms: `<ellipse cx="23" cy="68" rx="6.5" ry="11" fill="${P.dark}" transform="rotate(14 23 68)"/><ellipse cx="77" cy="68" rx="6.5" ry="11" fill="${P.dark}" transform="rotate(-14 77 68)"/>`,
+    belly: `<ellipse cx="50" cy="72" rx="17" ry="17" fill="${P.belly}"/>`,
+    face: `<ellipse cx="64" cy="39" rx="11" ry="10" fill="${P.marks}" opacity=".85"/>${animalEyes(mood)}
+      <ellipse cx="50" cy="55" rx="13" ry="9.5" fill="${P.belly}"/>
+      <path d="M44.5 50 Q50 46.5 55.5 50 Q54.5 55 50 56 Q45.5 55 44.5 50Z" fill="${INK}"/><ellipse cx="48.5" cy="49.8" rx="2" ry="1" fill="#fff" opacity=".6"/>
+      ${mood === 'sad' ? `<path d="M44 61 q6 -4 12 0" stroke="${INK}" stroke-width="1.8" fill="none" stroke-linecap="round"/>` : `<path d="M50 56 v2.5 M44 58.5 q3 3 6 0 q3 3 6 0" stroke="${INK}" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M47.5 60.5 q2.5 6 5 0Z" fill="#ff8fab"/>`}`,
+    front: `<path d="M27 23 Q11 24 12 47 Q14 59 23 55 Q27 41 35 28Z" fill="${P.dark}"/><path d="M73 23 Q89 24 88 47 Q86 59 77 55 Q73 41 65 28Z" fill="${P.dark}"/>`,
+    feet: `<ellipse cx="39" cy="90" rx="8" ry="4.5" fill="${P.dark}"/><ellipse cx="61" cy="90" rx="8" ry="4.5" fill="${P.dark}"/><path d="M37 88 v3 M41 88 v3 M59 88 v3 M63 88 v3" stroke="${P.belly}" stroke-width="1" opacity=".7"/>`,
+  }),
+  'ms-cat': (P, mood) => ({
+    behind: `<path d="M23 34 L23 5 L45 21Z" fill="${P.body}"/><path d="M27.5 27 L27.5 12 L38.5 21Z" fill="#ffb3c6"/><path d="M77 34 L77 5 L55 21Z" fill="${P.body}"/><path d="M72.5 27 L72.5 12 L61.5 21Z" fill="#ffb3c6"/>
+      <path d="M76 82 Q99 80 95 58 Q93 47 85 49 Q91 55 89 63 Q87 72 75 73Z" fill="${P.body}" stroke="${P.dark}" stroke-width="1.5"/><path d="M90 52 l4 -2 M92 60 l4 0 M90 68 l4 2" stroke="${P.marks}" stroke-width="2" stroke-linecap="round"/>`,
+    arms: `<ellipse cx="23" cy="69" rx="6" ry="10" fill="${P.body}" stroke="${P.dark}" stroke-width="1.2" transform="rotate(14 23 69)"/><ellipse cx="77" cy="69" rx="6" ry="10" fill="${P.body}" stroke="${P.dark}" stroke-width="1.2" transform="rotate(-14 77 69)"/>`,
+    belly: `<ellipse cx="50" cy="71" rx="17" ry="18" fill="${P.belly}"/>`,
+    face: `<path d="M44 23 q2 5 0 9 M50 21 v10 M56 23 q-2 5 0 9" stroke="${P.marks}" stroke-width="2.4" fill="none" stroke-linecap="round"/>${animalEyes(mood, 6)}
+      <path d="M46.5 50 L53.5 50 L50 54Z" fill="#ff8fab" stroke="#e64980" stroke-width=".8" stroke-linejoin="round"/>
+      ${mood === 'sad' ? `<path d="M45 59 q5 -3 10 0" stroke="${INK}" stroke-width="1.6" fill="none" stroke-linecap="round"/>` : `<path d="M50 54 v2.5 M45 56.5 q2.5 3 5 0 q2.5 3 5 0" stroke="${INK}" stroke-width="1.5" fill="none" stroke-linecap="round"/>`}
+      <path d="M31 51 h-13 M31 54.5 l-12 3.5 M69 51 h13 M69 54.5 l12 3.5" stroke="${INK}" stroke-width="1.1" opacity=".55" stroke-linecap="round"/>`,
+    front: '',
+    feet: `<ellipse cx="39" cy="90" rx="7.5" ry="4.5" fill="${P.body}" stroke="${P.dark}" stroke-width="1.2"/><ellipse cx="61" cy="90" rx="7.5" ry="4.5" fill="${P.body}" stroke="${P.dark}" stroke-width="1.2"/>`,
+  }),
+  'ms-panda': (P, mood) => ({
+    behind: `<circle cx="25" cy="24" r="10.5" fill="${P.dark}"/><circle cx="75" cy="24" r="10.5" fill="${P.dark}"/><circle cx="25" cy="24" r="5" fill="#495057" opacity=".5"/><circle cx="75" cy="24" r="5" fill="#495057" opacity=".5"/>`,
+    arms: `<ellipse cx="22" cy="67" rx="8" ry="13" fill="${P.dark}" transform="rotate(16 22 67)"/><ellipse cx="78" cy="67" rx="8" ry="13" fill="${P.dark}" transform="rotate(-16 78 67)"/>`,
+    belly: `<ellipse cx="50" cy="71" rx="18" ry="18" fill="${P.belly}" stroke="${P.marks}" stroke-width="1"/>`,
+    face: `<ellipse cx="36" cy="42" rx="9.5" ry="12" fill="${P.dark}" transform="rotate(28 36 42)"/><ellipse cx="64" cy="42" rx="9.5" ry="12" fill="${P.dark}" transform="rotate(-28 64 42)"/>
+      ${(mood === 'think' ? [[38, 38], [62, 38]] : [[37, 41], [63, 41]]).map(([x, y]) => `<circle cx="${x}" cy="${y}" r="${mood === 'wow' ? 5.5 : 4.6}" fill="#fff"/><circle cx="${x + .6}" cy="${y + .4}" r="${mood === 'wow' ? 3.4 : 2.8}" fill="${INK}"/><circle cx="${x + 1.6}" cy="${y - 1}" r="1" fill="#fff"/>`).join('')}
+      <ellipse cx="50" cy="52" rx="4.8" ry="3.2" fill="${P.dark}"/>
+      ${mood === 'sad' ? `<path d="M45 60 q5 -3 10 0" stroke="${P.dark}" stroke-width="1.6" fill="none" stroke-linecap="round"/>` : `<path d="M50 55 v2.5 M45.5 57.5 q2.25 2.5 4.5 0 q2.25 2.5 4.5 0" stroke="${P.dark}" stroke-width="1.5" fill="none" stroke-linecap="round"/>`}`,
+    front: '',
+    feet: `<ellipse cx="38" cy="90" rx="9" ry="5" fill="${P.dark}"/><ellipse cx="62" cy="90" rx="9" ry="5" fill="${P.dark}"/>`,
+  }),
+};
 function mascotSVG(eq = S.equipped, mood = 'happy') {
-  const P = SKINS[eq.skin] || SKINS.base;
+  const kind = ANIMALS[eq.mascot] ? eq.mascot : null;
+  const P = SKINS[eq.skin] || (kind ? ANIMAL_COLORS[kind] : SKINS.base);
   const pet = eq.pet && (SHOP_ITEMS.find(i => i.id === eq.pet) || {}).emoji;
+  const acc = id => (id && (ACCESSORY_SVG[id] || emojiAcc(id))) || '';
+  const head = `<svg class="owl" viewBox="0 -12 100 112" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <ellipse cx="50" cy="96" rx="24" ry="4" fill="rgba(0,0,0,.12)"/>
+    ${fxSVG(eq.fx)}${(eq.back && (BACK_SVG[eq.back] || emojiAcc(eq.back))) || ''}`;
+  const neck = acc(eq.neck);
+  const tail = `${kind && neck ? `<g transform="translate(0 6)">${neck}</g>` : neck}${acc(eq.glasses)}${acc(eq.hat)}
+    ${pet ? `<text x="70" y="99" font-size="24" font-family="Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif">${pet}</text>` : ''}
+  </svg>`;
+  if (kind) {
+    const A = ANIMALS[kind](P, mood);
+    const blush = '<ellipse cx="25" cy="52" rx="5" ry="3" fill="#ff8fab" opacity=".5"/><ellipse cx="75" cy="52" rx="5" ry="3" fill="#ff8fab" opacity=".5"/>';
+    return `${head}${A.behind}${A.arms}
+    <ellipse cx="50" cy="56" rx="32" ry="36" fill="${P.body}"/>${A.belly}${P.extra || ''}${blush}${A.face}${A.front}${A.feet}${tail}`;
+  }
   const pupils = mood === 'think' ? [[39, 36], [61, 36]] : mood === 'wow' ? [[37, 41], [63, 41]] : [[38, 42], [62, 42]];
   const pr = mood === 'wow' ? 7 : 5.5;
   const brows = mood === 'sad'
     ? '<path d="M27 27 L45 31 M73 27 L55 31" stroke="#3a2c7a" stroke-width="2.6" stroke-linecap="round"/>'
     : mood === 'think' ? '<path d="M28 27 Q37 23 46 27" stroke="#3a2c7a" stroke-width="2.2" fill="none" stroke-linecap="round"/>' : '';
-  const acc = id => (id && (ACCESSORY_SVG[id] || emojiAcc(id))) || '';
-  return `<svg class="owl" viewBox="0 -12 100 112" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <ellipse cx="50" cy="96" rx="24" ry="4" fill="rgba(0,0,0,.12)"/>
-    ${fxSVG(eq.fx)}${(eq.back && (BACK_SVG[eq.back] || emojiAcc(eq.back))) || ''}
+  return `${head}
     <path d="M23 28 L28 8 L41 22 Z" fill="${P.dark}"/><path d="M77 28 L72 8 L59 22 Z" fill="${P.dark}"/>
     <path d="M19 52 Q8 72 26 84 Q30 66 19 52Z" fill="${P.dark}"/><path d="M81 52 Q92 72 74 84 Q70 66 81 52Z" fill="${P.dark}"/>
     <ellipse cx="50" cy="56" rx="32" ry="36" fill="${P.body}"/>
@@ -816,13 +930,12 @@ function mascotSVG(eq = S.equipped, mood = 'happy') {
     ${brows}
     <path d="M45 50 L55 50 L50 58 Z" fill="#ffb703" stroke="#e09600" stroke-width="1" stroke-linejoin="round"/>
     <path d="M38 91 q2 -5 4 0 q2 -5 4 0 M54 91 q2 -5 4 0 q2 -5 4 0" stroke="#ffb703" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-    ${acc(eq.neck)}${acc(eq.glasses)}${acc(eq.hat)}
-    ${pet ? `<text x="70" y="99" font-size="24" font-family="Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif">${pet}</text>` : ''}
-  </svg>`;
+    ${tail}`;
 }
 function itemPreviewSVG(item) {
-  const eq = { hat: null, glasses: null, neck: null, back: null, skin: null, pet: null, fx: null };
-  eq[item.cat] = item.id;
+  const eq = { hat: null, glasses: null, neck: null, back: null, skin: null, pet: null, fx: null, mascot: null };
+  if (item.cat !== 'mascot') eq.mascot = S.equipped.mascot;   // roupinha/cor nova no bicho que ela está usando
+  eq[item.cat] = item.id === 'ms-owl' ? null : item.id;
   return mascotSVG(eq);
 }
 
@@ -840,6 +953,8 @@ function say(text, opts = {}) {
     btn.onclick = e => { e.stopPropagation(); a.onClick(); };
     actions.appendChild(btn);
   });
+  if (speechOK) { const sb = document.createElement('button'); sb.type = 'button'; sb.className = 'bubble-speak'; sb.title = 'Ouvir a Lumi'; sb.setAttribute('aria-label', 'Ouvir a Lumi'); sb.textContent = '🔊';
+    sb.onclick = e => { e.stopPropagation(); lumiSpeak(text, opts.lang || 'pt'); }; actions.prepend(sb); }
   b.classList.remove('hidden');
   renderMascotMini(opts.mood || 'happy');
   const m = $('#mascot-btn');
@@ -856,7 +971,7 @@ function tipsFor(screen) {
     home: [
       'Toque no dia de hoje para abrir sua tarefa! 📅',
       'Sábado e domingo têm um pouquinho mais de perguntas. ⭐',
-      `Sexta é dia de entregar: semana completa vale <b>+${st.reward}</b> moedas! 🪙`,
+      `Sexta é dia de entregar: semana completa vale até <b>+${st.reward}</b> moedas (proporcional aos dias da semana). 🪙`,
       `Se a semana não for entregue até sexta, a gente perde <b>${st.penalty}</b> moedas. Vamos caprichar! 💪`,
       `Perdeu algum dia? Dá para <b>recuperar</b> até a sexta seguinte, valendo metade. ⏳`,
       `Terminou? Os exercícios extras dão <b>${st.extraPerCorrect}</b> moedas por acerto.`,
@@ -928,10 +1043,59 @@ function speak(text, lang) {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = lang === 'pt' ? 'pt-BR' : 'en-GB';
+    const v = bestVoice(lang); if (v) u.voice = v;
     u.rate = .85;
     speechSynthesis.speak(u);
   } catch (e) { /* ignora */ }
 }
+// A Lumi fala: escolhe a voz mais natural disponível e lê textos longos em pedaços (frase a frase).
+function bestVoice(lang) {
+  if (!speechOK) return null;
+  const want = lang === 'en' ? ['en-GB', 'en-US', 'en'] : ['pt-BR', 'pt-PT', 'pt'];
+  const vs = speechSynthesis.getVoices();
+  for (const w of want) {
+    const list = vs.filter(v => v.lang && v.lang.replace('_', '-').toLowerCase().startsWith(w.toLowerCase()));
+    if (list.length) return list.find(v => /natural|neural|google|premium|enhanced|luciana|francisca|thalita|serena|libby|sonia/i.test(v.name)) || list[0];
+  }
+  return null;
+}
+function plainForSpeech(html) {
+  const d = document.createElement('div'); d.innerHTML = String(html || '');
+  return d.textContent.replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}\u{200D}]/gu, '').replace(/\s+/g, ' ').trim();
+}
+let talkId = 0;
+function lumiSpeak(html, lang = 'pt', onEnd) {
+  if (!speechOK) { toast('🔇 Voz indisponível neste navegador'); return; }
+  const text = plainForSpeech(html); if (!text) return;
+  const id = ++talkId;
+  speechSynthesis.cancel();
+  const parts = text.match(/[^.!?…]+[.!?…]*\s*/g) || [text];
+  const v = bestVoice(lang);
+  let i = 0;
+  const next = () => {
+    if (id !== talkId) return;
+    if (i >= parts.length) { onEnd && onEnd(); return; }
+    const u = new SpeechSynthesisUtterance(parts[i++].trim());
+    u.lang = lang === 'en' ? 'en-GB' : 'pt-BR'; if (v) u.voice = v; u.rate = .95; u.pitch = 1.1;
+    u.onend = next; u.onerror = next;
+    try { speechSynthesis.speak(u); } catch (e) { /* ignora */ }
+  };
+  next();
+}
+function lumiStop() { talkId++; if (speechOK) try { speechSynthesis.cancel(); } catch (e) { /* ignora */ } }
+// Botão 🔊 que lê/para um trecho
+function speakBtn(sel, lang) { return `<button type="button" class="btn small speak-btn" data-speak="${sel}" data-lang="${lang}" title="${lang === 'en' ? 'Listen' : 'Ouvir'}" aria-label="${lang === 'en' ? 'Listen' : 'Ouvir a Lumi'}">🔊</button>`; }
+function bindSpeak(root) {
+  $$('[data-speak]', root).forEach(b => b.onclick = e => {
+    e.stopPropagation();
+    if (b.classList.contains('on')) { lumiStop(); b.classList.remove('on'); return; }
+    $$('.speak-btn.on').forEach(x => x.classList.remove('on'));
+    const el = b.dataset.speak === '#bubble-text' ? $('#bubble-text') : $(b.dataset.speak, root) || $(b.dataset.speak);
+    b.classList.add('on');
+    lumiSpeak(el ? el.innerHTML : '', b.dataset.lang, () => b.classList.remove('on'));
+  });
+}
+if (speechOK) try { speechSynthesis.onvoiceschanged = () => {}; speechSynthesis.getVoices(); } catch (e) { /* ignora */ }
 
 function Q(type, q, answer, extra = {}) { return Object.assign({ type, q, answer: answer == null ? '' : String(answer) }, extra); }
 function mcQ(q, answer, distractors, rng, extra = {}) {
@@ -1089,7 +1253,7 @@ function proofHtml(q, ans, done) {
   const openBtn = `<button type="button" class="btn small primary proof-open">🔎 ${pt ? 'Caça-erros' : 'Spot the mistakes'} · ${done ? proofScore(q, ans) : marked}/${n} ${done ? '✓' : '▸'}</button>`;
   return `${openBtn}<div class="proof ${done ? 'done' : ''}">${html}</div>
     <div class="proof-bar"><span class="proof-dots">${dots}</span><span class="proof-count">${status}</span>
-    ${done ? '' : `<span class="proof-help">${pt ? 'Toque na palavra errada e escreva certo.' : 'Tap a wrong word and fix it.'}</span>`}</div>`;
+    ${done ? '' : `<span class="proof-help">${pt ? 'Toque na palavra errada e escreva certo.' : 'Tap a wrong word and fix it.'}</span><button type="button" class="proof-idk" data-idk>🤷 ${pt ? 'Não sei a regra' : 'I don\'t know the rule'}</button>`}</div>`;
 }
 // Edição no lugar: a palavra vira um campo já preenchido; a criança corrige e confirma.
 function proofEdit(q, c, card, t) {
@@ -1128,6 +1292,10 @@ function bindProof(q, c, card) {
   const ob = $('.proof-open', card);
   if (ob) ob.onclick = () => openProofModal(q, c);
   if (c.done) return;
+  const idk = $('[data-idk]', card);
+  if (idk) idk.onclick = e => { e.stopPropagation(); notePractice(q.lang, q.errors.map(x => x.right)); save();
+    const topic = weekTopicFor(q.subject);
+    openLesson(q, c, { topic: (q.lang === 'en' ? 'Spelling rules for: ' : 'Regras de ortografia de: ') + (topic || q.errors.map(x => x.right).join(', ')), noMiss: true }); };
   $$('.w[data-w]', card).forEach(w => {
     w.onclick = () => proofEdit(q, c, card, Number(w.dataset.w));
     w.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); proofEdit(q, c, card, Number(w.dataset.w)); } };
@@ -1483,7 +1651,7 @@ function regenerateDays(week, dates, nonce = '') {
     // perguntas importadas marcadas para este dia vêm primeiro
     (week.imported || []).filter(q => q.day === day.dow).forEach(q => { if (qs.length < N) qs.push(Object.assign({ lang: SUBJ[q.subject].lang }, q)); });
     if (act.length) {
-      const k = Math.min(act.length, N >= 9 ? 4 : 3);
+      const k = act.length;   // todas as matérias todos os dias (~2 de cada)
       const start = (cycleIdx * k) % act.length;
       let daySubj = Array.from({ length: k }, (_, j) => act[(start + j) % act.length]);
       const openCap = Math.max(2, Math.ceil(N * 0.3));
@@ -1519,6 +1687,10 @@ function dayState(day) {
   if (day.date === t) return 'today';
   return 'late';
 }
+// Recompensa e penalidade proporcionais aos dias obrigatórios: semana começada na sexta vale 1/7.
+function weekFullDays() { return CYCLE.filter(dk => (S.settings.counts[dk] || 0) > 0).length || 7; }
+function weekReward(w) { return Math.round(S.settings.reward * Math.min(1, requiredDays(w).length / weekFullDays())); }
+function weekPenalty(w) { return Math.round(S.settings.penalty * Math.min(1, requiredDays(w).length / weekFullDays())); }
 function weekAllDone(w) { return Object.values(w.days).filter(d => d.required).every(d => d.status === 'done'); }
 function requiredDays(w) { return Object.values(w.days).filter(d => d.required); }
 
@@ -1529,7 +1701,7 @@ function openRecovery(w) {
   const left = requiredDays(w).filter(d => d.status !== 'done' && d.questions.length);
   if (!left.length) return null;
   const pass = w.passages || [];
-  S.recovery = { start: w.start, end: w.end, until: addDays(w.end, 7), pot: Math.round(S.settings.reward * latePct() / 100), total: left.length, n: 0, earned: 0,
+  S.recovery = { start: w.start, end: w.end, until: addDays(w.end, 7), pot: Math.round(weekReward(w) * latePct() / 100), total: left.length, n: 0, earned: 0,
     topicsText: weekTopicsText(w),
     days: Object.fromEntries(left.map(d => [d.date, Object.assign(JSON.parse(JSON.stringify(d)), { rec: true, printed: false, recPassages: pass.filter(x => x.day === d.dow) })])) };
   return S.recovery;
@@ -1551,22 +1723,24 @@ function settleIfNeeded() {
   if (total === 0) { w.settled = 'empty'; save(); return null; }
   if (done === total) {
     w.settled = 'delivered'; w.settledAt = today();
-    addCoins(S.settings.reward, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue`);
-    return { type: 'good', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} estava completa: <b>+${S.settings.reward}</b> 🪙!` };
+    addCoins(weekReward(w), `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue (${total} dia${total > 1 ? 's' : ''})`);
+    return { type: 'good', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} estava completa: <b>+${weekReward(w)}</b> 🪙!` };
   }
   w.settled = 'missed'; w.settledAt = today();
-  addCoins(-S.settings.penalty, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} não entregue (${done}/${total} dias)`);
+  const pen = weekPenalty(w);
+  addCoins(-pen, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} não entregue (${done}/${total} dias)`);
   const r = latePct() > 0 ? openRecovery(w) : null; save();
-  return { type: 'bad', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} não foi entregue (${done} de ${total} dias). <b>−${S.settings.penalty}</b> 🪙.`
+  return { type: 'bad', msg: `A semana de ${fmtDM(w.start)} a ${fmtDM(w.end)} não foi entregue (${done} de ${total} dias). <b>−${pen}</b> 🪙.`
     + (r ? ` Mas dá para <b>recuperar</b>: faça ${r.total === 1 ? 'o dia que faltou' : `os ${r.total} dias que faltaram`} até sexta ${fmtDM(r.until)} e ganhe metade da recompensa (<b>+${r.pot}</b> 🪙). ⏳` : ' Bora recuperar nesta semana!') };
 }
 function deliverWeek() {
   const w = S.week;
   if (!w || w.settled || !weekAllDone(w) || today() !== w.end) return;
   w.settled = 'delivered'; w.settledAt = today();
-  addCoins(S.settings.reward, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue`);
+  const rw = weekReward(w);
+  addCoins(rw, `Semana ${fmtDM(w.start)}–${fmtDM(w.end)} entregue (${requiredDays(w).length} dias)`);
   save();
-  showCelebrate('Semana entregue! 🎉', `+${S.settings.reward}`, 'Você completou todas as tarefas da semana. Que orgulho!');
+  showCelebrate('Semana entregue! 🎉', `+${rw}`, 'Você completou todas as tarefas da semana. Que orgulho!');
 }
 function archiveWeek(w) {
   if (!w) return;
@@ -1586,10 +1760,10 @@ function show(screen) {
   $('#app').dataset.mode = screen === 'login' ? 'auth' : 'app';
   $$('.screen').forEach(s => s.classList.toggle('active', s.id === 'scr-' + screen));
   $$('.top-nav button').forEach(b => b.classList.toggle('active', b.dataset.nav === screen));
-  const titles = { welcome: 'Bem-vinda!', login: 'Estudos com a Lumi', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', check: '📄 Corrigir folha', selfcheck: '✍️ Corrigir', shop: '🛒 Lojinha', parents: '🔒 Área dos pais' };
+  const titles = { welcome: 'Bem-vinda!', login: 'Estudos com a Lumi', home: 'Estudos', setup: '📝 Minha semana', work: 'Tarefa', check: '📄 Corrigir folha', selfcheck: '✍️ Corrigir', shop: '🛒 Lojinha', parents: '🔒 Área dos pais', workshop: '✏️ Oficina de palavras' };
   $('#top-title').textContent = titles[screen] || 'Estudos';
   hideBubble();
-  ({ welcome: renderWelcome, login: renderLogin, home: renderHome, setup: renderSetup, work: renderWork, check: renderCheck, selfcheck: renderSelfCheck, shop: renderShop, parents: renderParents })[screen]();
+  ({ welcome: renderWelcome, login: renderLogin, home: renderHome, setup: renderSetup, work: renderWork, check: renderCheck, selfcheck: renderSelfCheck, shop: renderShop, parents: renderParents, workshop: renderWorkshop })[screen]();
 }
 function renderCoins(pop) {
   $('#coin-count').textContent = S.coins;
@@ -1675,10 +1849,10 @@ function renderHome() {
     else if (late.length) main = `<button class="btn primary big wide" data-day="${late[0].date}">⏰ Fazer tarefa atrasada (${DOW_LABEL[late[0].dow]})</button>`;
     else if (td && dayState(td) === 'today' && td.printed) main = `<button class="btn gold big wide" data-check="${t}">📄 Corrigir a folha de hoje</button><button class="btn wide" data-day="${t}">📘 Fazer na tela</button>`;
     else if (td && dayState(td) === 'today') main = `<button class="btn primary big wide" data-day="${t}">📘 Abrir a tarefa de hoje (${td.questions.length} perguntas)</button>`;
-    else if (weekAllDone(w) && t === w.end) main = `<button class="btn gold big wide" data-act="deliver">🎁 Entregar a semana (+${S.settings.reward} 🪙)</button>`;
+    else if (weekAllDone(w) && t === w.end) main = `<button class="btn gold big wide" data-act="deliver">🎁 Entregar a semana (+${weekReward(w)} 🪙)</button>`;
     else if (td && td.status === 'done') main = `<div class="notice good">✅ Tarefa de hoje feita! Que tal uns extras?</div>`;
     else main = `<div class="notice info">Nenhuma tarefa para hoje. Aproveite para fazer extras!</div>`;
-    if (weekAllDone(w) && t === w.end && !w.settled && !main.includes('deliver')) main += `<button class="btn gold big wide" data-act="deliver">🎁 Entregar a semana (+${S.settings.reward} 🪙)</button>`;
+    if (weekAllDone(w) && t === w.end && !w.settled && !main.includes('deliver')) main += `<button class="btn gold big wide" data-act="deliver">🎁 Entregar a semana (+${weekReward(w)} 🪙)</button>`;
 
     const ex = S.extras[t] || { sets: 0 };
     const left = Math.max(0, S.settings.extraSetsPerDay - ex.sets);
@@ -1773,10 +1947,60 @@ function openExtras() {
   if (S.extra && S.extra.date === t && S.extra.status !== 'done') { VIEW.work = { kind: 'extra' }; show('work'); return; }
   const ex = S.extras[t] || { sets: 0 };
   const left = Math.max(0, S.settings.extraSetsPerDay - ex.sets);
+  const langs = bookLangs();
+  const books = S.books || {};
+  const missed = (S.missed || []).length;
   const c = openModal(`<div class="modal-head"><h3>⭐ Exercícios extras</h3><button class="btn small" data-close>Fechar</button></div>
-    <div class="modal-body"><p class="tiny muted" style="margin:0 0 8px">${left ? `Valem <b>${S.settings.extraPerCorrect} 🪙 por acerto</b> · ${left} rodada${left > 1 ? 's' : ''} com moedas hoje.` : 'As rodadas com moedas de hoje acabaram: agora é só treino. 💪'}<br>Qual matéria você quer treinar?</p>
-    <div class="extra-grid">${extraGroups().map(g => `<button class="btn big" data-g="${g.id}">${g.label}</button>`).join('')}</div></div>`);
+    <div class="modal-body extras-menu"><p class="tiny muted" style="margin:0 0 6px">${left ? `Valem <b>${S.settings.extraPerCorrect} 🪙 por acerto</b> · ${left} rodada${left > 1 ? 's' : ''} com moedas hoje.` : 'As rodadas com moedas de hoje acabaram: agora é só treino. 💪'}</p>
+    ${Server.ai && langs.length ? `<div class="xm-sec"><b>📖 Livro extra</b> <span class="tiny muted">um capítulo novo + resumo + perguntas</span>
+      <div class="extra-grid">${langs.map(l => `<button class="btn big" data-book="${l}">${l === 'pt' ? '🇧🇷 Em português' : '🇬🇧 In English'}<span class="tiny muted">${books[l] && books[l].title ? `continua “${esc(books[l].title)}” · cap. ${books[l].chapters.length + 1}` : 'começa um livro novo'}</span></button>`).join('')}</div></div>` : ''}
+    ${missed ? `<div class="xm-sec"><b>🧠 Reforço</b> <span class="tiny muted">${missed} pergunta${missed > 1 ? 's' : ''} que você errou ou não sabia</span>
+      <div class="extra-grid one"><button class="btn big gold" data-review>🧠 Treinar o que eu errei</button></div></div>` : ''}
+    <div class="xm-sec"><b>🎲 Quiz extra</b> <span class="tiny muted">escolha a matéria</span>
+      <div class="extra-grid">${extraGroups().map(g => `<button class="btn big" data-g="${g.id}">${g.label}</button>`).join('')}</div></div>
+    <div class="xm-sec"><div class="extra-grid one"><button class="btn big" data-workshop>✏️ Oficina de palavras <span class="tiny muted">caça-palavras, arco-íris e mais</span></button></div></div></div>`);
   $$('[data-g]', c).forEach(btn => btn.onclick = () => { closeModal(); startExtras(extraGroups().find(g => g.id === btn.dataset.g)); });
+  $$('[data-book]', c).forEach(btn => btn.onclick = () => { closeModal(); startReading(btn.dataset.book); });
+  const rv = $('[data-review]', c); if (rv) rv.onclick = () => { closeModal(); startReview(); };
+  $('[data-workshop]', c).onclick = () => { closeModal(); show('workshop'); };
+}
+// Idiomas do livro extra: os das matérias de leitura do estudante (ou português e inglês).
+function bookLangs() {
+  const rs = mySubjects().filter(isRead).map(id => SUBJ[id].lang);
+  const l = [...new Set(rs)];
+  return l.length ? l.sort().reverse() : ['pt', 'en'];
+}
+function extraSlot() { const t = today(); const ex = S.extras[t] || { sets: 0 }; return { t, paid: ex.sets < S.settings.extraSetsPerDay }; }
+// 📖 Livro extra: o Claude escreve o próximo capítulo do livro do estudante (um livro por idioma).
+async function startReading(lang) {
+  const { t, paid } = extraSlot();
+  S.books = S.books || {};
+  const book = S.books[lang] || null;
+  const stop = showLoading(lang === 'en' ? ['Writing a new chapter… 📚', 'Inventing the characters… 🧚', 'Almost ready!'] : ['Escrevendo um capítulo novo… 📚', 'Imaginando os personagens… 🧚', 'Quase pronto!']);
+  let r;
+  try {
+    r = await apiCall('/api/reading', { method: 'POST', timeout: 150000, data: { lang, level: S.settings.readLevel || 'at',
+      bookTitle: book ? book.title : '', chapters: book ? book.chapters : [] } });
+  } catch (e) { stop(); say(`Não consegui escrever o capítulo agora (${esc(e.message)}). Tente o quiz extra!`, { mood: 'sad' }); return; }
+  stop();
+  const subject = mySubjects().find(id => isRead(id) && SUBJ[id].lang === lang) || (lang === 'en' ? 'en_read' : 'pt_leit');
+  const qs = validateImported({ questions: (r.questions || []).map(q => Object.assign({}, q, { subject })) }).ok;
+  if (!r.text || qs.length < 2) { say('O capítulo veio incompleto. Tente de novo! 🙂', { mood: 'think' }); return; }
+  const same = book && book.title === r.bookTitle;
+  S.books[lang] = { title: r.bookTitle, chapters: (same ? book.chapters : []).concat([{ title: r.title, summary: r.summary }]).slice(-12) };
+  S.extra = { date: t, paid, group: 'book', status: 'todo', passage: { subject, title: `${r.bookTitle} — ${r.title}`, text: r.text },
+    questions: qs.map((q, j) => Object.assign({ lang: SUBJ[q.subject].lang }, q, { id: `x-${j}-${uid()}` })), answers: {}, result: null };
+  save();
+  VIEW.wp = null; VIEW.work = { kind: 'extra' };
+  show('work');
+  if (!paid) setTimeout(() => say('Você já usou as rodadas com moedas de hoje. Esta é só para treinar! 💪'), 300);
+}
+// 🧠 Reforço: perguntas novas parecidas com as que errou (ou as mesmas, sem servidor).
+async function startReview() {
+  const items = (S.missed || []).slice(0, 10);
+  if (!items.length) return;
+  const subjects = [...new Set(items.map(m => m.q.subject).filter(id => SUBJ[id]))];
+  await startExtras({ id: 'review', label: '🧠 Reforço', subjects, focus: items.map(m => `${m.q.q}${m.q.answer ? ` (resposta: ${m.q.answer})` : ''}`), review: items.map(m => m.q.q) });
 }
 async function startExtras(group) {
   const t = today();
@@ -1789,16 +2013,17 @@ async function startExtras(group) {
     try {
       const r = await apiCall('/api/more', { method: 'POST', timeout: 90000, data: {
         name: S.name, n: size, objectiveOnly: true, topics: weekTopicsText(S.week),
-        subjects: group.subjects || [], exclude: recentQuestionTexts(40) } });
+        subjects: group.subjects || [], focus: group.focus || [], exclude: recentQuestionTexts(40) } });
       qs = validateImported(r).ok.filter(q => q.type !== 'open' && (!group.subjects || group.subjects.includes(q.subject)));
     } catch (e) { toast('Lumi offline: usei perguntas do próprio app.'); }
     finally { stop(); }
   }
+  if (qs.length < 2 && group.review) qs = (S.missed || []).filter(m => group.review.includes(m.q.q) && m.q.type !== 'open').map(m => Object.assign({}, m.q));
   if (qs.length < 2) qs = localExtras(size, group.subjects);
   if (!qs.length) { say('Não consegui criar extras dessa matéria agora. Tente outra! 🙂', { mood: 'think' }); return; }
-  S.extra = { date: t, paid, group: group.id, status: 'todo', questions: qs.slice(0, size).map((q, j) => Object.assign({ lang: SUBJ[q.subject].lang }, q, { id: `x-${j}-${uid()}` })), answers: {}, result: null };
+  S.extra = { date: t, paid, group: group.id, review: group.review || null, status: 'todo', questions: qs.slice(0, size).map((q, j) => Object.assign({ lang: SUBJ[q.subject].lang }, q, { id: `x-${j}-${uid()}` })), answers: {}, result: null };
   save();
-  VIEW.work = { kind: 'extra' };
+  VIEW.wp = null; VIEW.work = { kind: 'extra' };
   show('work');
   if (!paid) setTimeout(() => say('Você já usou as rodadas com moedas de hoje. Esta é só para treinar! 💪'), 300);
 }
@@ -1840,6 +2065,8 @@ function renderSetup() {
   const counts = VIEW.draftCounts || (editing ? Object.assign({}, w.counts) : Object.assign({}, S.settings.counts));
   VIEW.draftTopics = topics; VIEW.draftCounts = counts;
   const subs = SUBJECTS.filter(s => s.group === VIEW.setupTab && mySubjects().includes(s.id));
+  const nFill = mySubjects().filter(id => (topics[id] || '').trim()).length || 3;
+  VIEW.autoShown = isAuto() ? autoCounts(nFill, false) : null;
   const fields = subs.map(s => `<div class="topic" style="--subj:${s.color}"><label for="tp-${s.id}">${s.icon} ${esc(s.name)}<span class="help">${esc(s.help)}</span></label>
       <textarea id="tp-${s.id}" data-sid="${s.id}" placeholder="${esc(s.ph)}">${esc(topics[s.id] || '')}</textarea></div>`).join('');
   const pending = (S.pendingImport || []).length;
@@ -1848,7 +2075,7 @@ function renderSetup() {
     <div class="row wrap"><div class="seg"><button data-tab="pt" class="${VIEW.setupTab === 'pt' ? 'on' : ''}">🇧🇷 Em português</button><button data-tab="en" class="${VIEW.setupTab === 'en' ? 'on' : ''}">🇬🇧 In English</button></div>
       <span class="muted tiny grow">O que você aprendeu na escola esta semana?</span></div>
     <div class="topic-grid">${fields}</div>
-    ${countsAndCycleHtml(editing, counts)}
+    ${countsAndCycleHtml(editing, counts, VIEW.autoShown)}
     ${pending ? `<div class="notice info">📥 ${pending} perguntas importadas pelos pais serão incluídas.</div>` : ''}
     <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? 'Atualizar tarefas ✨' : 'Criar tarefas da semana ✨'}</button></div>
   </div>`;
@@ -1860,9 +2087,25 @@ function renderSetup() {
   $('[data-act=gen]', el).onclick = () => generateFromSetup(editing);
 }
 function cleanPassages(list) { return (list || []).filter(x => x && SUBJ[x.subject] && CYCLE.includes(x.day) && x.text).map(x => ({ subject: x.subject, day: x.day, title: String(x.title || ''), text: String(x.text) })); }
-function dayPassages(d) { if (d && d.recPassages) return d.recPassages; return S.week && d ? (S.week.passages || []).filter(x => x.day === d.dow) : []; }
+function dayPassages(d) { if (d && d.passage) return [d.passage]; if (d && d.recPassages) return d.recPassages; return S.week && d ? (S.week.passages || []).filter(x => x.day === d.dow) : []; }
 const ctxTopics = c => c.rec && S.recovery ? S.recovery.topicsText : weekTopicsText(S.week);
 function resetDraft() { VIEW.draftOpt = null; VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.draftText = null; VIEW.draftSubj = null; VIEW.draftImages = null; VIEW.openSubj = null; VIEW.setupCycle = null; }
+// Quantidade automática: ~2 perguntas de cada matéria por dia (+3 da leitura do dia). Fim de semana +2, sexta −2.
+function autoCounts(nSubj, reading) {
+  const per = clamp(Number(S.settings.perSubject) || 2, 1, 4);
+  const base = per * Math.max(1, nSubj) + (reading ? 3 : 0);
+  const out = {};
+  CYCLE.forEach(dk => { out[dk] = clamp(base + (['sab', 'dom'].includes(dk) ? 2 : dk === 'sex' ? -2 : 0), S.settings.minPerDay, S.settings.maxPerDay); });
+  return out;
+}
+// Leitura diária: qual matéria de leitura em cada dia (alterna português e inglês quando houver as duas).
+function readingPlan() {
+  if (!S.settings.dailyReading) return CYCLE.map(() => null);
+  const rs = mySubjects().filter(isRead);
+  const pt = rs.find(id => SUBJ[id].lang === 'pt'); const en = rs.find(id => SUBJ[id].lang === 'en');
+  return CYCLE.map((dk, i) => (pt && en) ? (i % 2 ? en : pt) : (pt || en || null));
+}
+const isAuto = () => S.settings.countMode !== 'manual';
 function setupCycleDefaults() {
   const t = today(); const w = S.week;
   const editing = w && !w.settled && VIEW.setupCycle !== 'next';
@@ -1871,7 +2114,7 @@ function setupCycleDefaults() {
   if (w && w.settled === 'delivered' && w.start === thisStart) VIEW.setupCycle = 'next';
   return editing;
 }
-function countsAndCycleHtml(editing, counts) {
+function countsAndCycleHtml(editing, counts, auto) {
   const t = today(); const w = S.week;
   const thisStart = cycleStartOf(t); const nextStart = addDays(thisStart, 7);
   const countBoxes = CYCLE.map(dk => {
@@ -1884,7 +2127,13 @@ function countsAndCycleHtml(editing, counts) {
     : `<div class="radio-row">
         <label><input type="radio" name="cyc" value="this" ${VIEW.setupCycle === 'this' ? 'checked' : ''} ${(w && w.start === thisStart && w.settled) ? 'disabled' : ''}> Esta semana (hoje → sex ${fmtDM(addDays(thisStart, 6))})</label>
         <label><input type="radio" name="cyc" value="next" ${VIEW.setupCycle === 'next' ? 'checked' : ''}> Próxima semana (sáb ${fmtDM(nextStart)} → sex ${fmtDM(addDays(nextStart, 6))})</label></div>`;
-  return `<div><b>Perguntas por dia</b> <span class="muted tiny">(mín. ${S.settings.minPerDay}, máx. ${S.settings.maxPerDay} · fim de semana ★ um pouco mais)</span></div>
+  if (auto) {
+    return `<div class="row wrap"><b>Perguntas por dia</b> <span class="muted tiny grow">automático: ~${S.settings.perSubject || 2} de cada matéria${Server.ai && S.settings.dailyReading && readingPlan().some(Boolean) ? ' + 3 da leitura do dia' : ''} · fim de semana ★ um pouco mais</span>
+        <button type="button" class="btn small ghost" data-act="manual">✋ Ajustar à mão</button></div>
+      <div class="counts auto">${CYCLE.map(dk => `<div class="count-box"><div class="lbl">${DOW_LABEL[dk]}${['sab', 'dom'].includes(dk) ? ' ★' : ''}</div><div class="val">${auto[dk]}</div></div>`).join('')}</div>${cycle}`;
+  }
+  return `<div class="row wrap"><b>Perguntas por dia</b> <span class="muted tiny grow">(mín. ${S.settings.minPerDay}, máx. ${S.settings.maxPerDay} · fim de semana ★ um pouco mais)</span>
+      <button type="button" class="btn small ghost" data-act="auto">↺ Automático</button></div>
     <div class="counts">${countBoxes}</div>${cycle}`;
 }
 function bindCountsAndCycle(el, counts, rerender) {
@@ -1894,6 +2143,8 @@ function bindCountsAndCycle(el, counts, rerender) {
     rerender();
   });
   $$('input[name=cyc]', el).forEach(r => r.onchange = () => { VIEW.setupCycle = r.value; });
+  const man = $('[data-act=manual]', el); if (man) man.onclick = () => { if (VIEW.autoShown) Object.assign(counts, VIEW.autoShown); S.settings.countMode = 'manual'; save(); rerender(); };
+  const au = $('[data-act=auto]', el); if (au) au.onclick = () => { S.settings.countMode = 'auto'; save(); rerender(); };
 }
 
 // Planejamento em linguagem natural: ano escolar + uma seção (que abre e fecha) por matéria + fotos opcionais.
@@ -1911,6 +2162,7 @@ function renderSetupAI() {
   const thumbs = VIEW.draftImages.map((im, i) => `<div class="thumb"><img src="data:${im.type};base64,${im.data}" alt="Foto ${i + 1}"><button data-rm="${i}" aria-label="Remover foto">✕</button></div>`).join('');
   const mine = mySubjects().map(id => SUBJ[id]);
   const filled = mine.filter(sb => subjFilled(sb.id)).length;
+  VIEW.autoShown = isAuto() ? autoCounts(mine.filter(sb => subjFilled(sb.id) && !(S.settings.dailyReading && isRead(sb.id))).length || 4, readingPlan().some(Boolean)) : null;
   const section = sb => {
     const txt = VIEW.draftSubj[sb.id] || '';
     const has = subjFilled(sb.id);
@@ -1948,7 +2200,7 @@ function renderSetupAI() {
       </div>
       ${thumbs ? `<div class="thumbs">${thumbs}</div>` : ''}
     </div>
-    ${countsAndCycleHtml(editing, counts)}
+    ${countsAndCycleHtml(editing, counts, VIEW.autoShown)}
     <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? '✨ Atualizar a semana' : '✨ Criar minha semana com a Lumi'}</button></div>
     <button class="btn ghost small" data-act="subjects">Prefiro o gerador do próprio app (sem o Claude)</button>
   </div>`;
@@ -1969,6 +2221,10 @@ function renderSetupAI() {
     ta.oninput = () => { VIEW.draftSubj[ta.dataset.subj] = ta.value; };
     ta.onblur = () => { const d = ta.closest('details'); const has = subjFilled(ta.dataset.subj);
       $('.sa-st', d).textContent = has ? '✅' : '＋';
+      if (isAuto()) {   // atualiza só os números (sem redesenhar a tela, para não perder o toque)
+        VIEW.autoShown = autoCounts(mySubjects().filter(id => subjFilled(id) && !(S.settings.dailyReading && isRead(id))).length || 4, readingPlan().some(Boolean));
+        $$('.counts.auto .val', el).forEach((v, i) => { v.textContent = VIEW.autoShown[CYCLE[i]]; });
+      }
       if (ta.value.trim()) $('.sa-prev', d).textContent = ta.value.trim().slice(0, 50) + (ta.value.trim().length > 50 ? '…' : ''); };
   });
   $('#ph', el).onchange = async e => {
@@ -2054,7 +2310,9 @@ async function generateWithClaude(editing) {
   const images = VIEW.draftImages || [];
   if (!S.settings.year) { say('Primeiro escolha o <b>ano escolar</b> lá em cima. 🎓', { mood: 'think' }); $('#year').focus(); return; }
   if (!text && !images.length) { say('Abra pelo menos uma matéria e me conta o que você está aprendendo (ou manda uma foto do worksheet)! ✍️', { mood: 'think' }); return; }
-  const counts = Object.assign({}, VIEW.draftCounts);
+  const readPlan = Server.ai ? readingPlan() : CYCLE.map(() => null);
+  const nSubj = mineList.filter(sb => subjFilled(sb.id) && !(S.settings.dailyReading && isRead(sb.id))).length || 4;
+  const counts = isAuto() ? autoCounts(nSubj, readPlan.some(Boolean)) : Object.assign({}, VIEW.draftCounts);
   const t = today();
   // Quais dias vão receber perguntas
   let start, from, redo = null;
@@ -2068,12 +2326,13 @@ async function generateWithClaude(editing) {
     from = VIEW.setupCycle === 'next' ? start : t;
   }
   const dates = CYCLE.map((_, i) => addDays(start, i)).filter(d => d >= from && (!redo || redo.includes(d)));
-  const days = dates.map(d => ({ dow: dowOf(d), label: `${DOW_FULL[dowOf(d)]} ${fmtDM(d)}`, n: counts[dowOf(d)] || 0 })).filter(d => d.n > 0);
+  const days = dates.map(d => { const dk = dowOf(d); const rs = readPlan[CYCLE.indexOf(dk)];
+    return { dow: dk, label: `${DOW_FULL[dk]} ${fmtDM(d)}`, n: counts[dk] || 0, read: rs ? { subject: rs, level: (VIEW.draftOpt || {})[rs] || S.settings.readLevel || 'at' } : null }; }).filter(d => d.n > 0);
   if (!days.length) { say('Nenhum dia com perguntas. Aumente a quantidade em algum dia. 🙂'); return; }
-  const stop = showLoading(['Lendo o que você contou… 📖', 'Separando por matéria… 🗂️', 'Inventando perguntas… ✏️', 'Caprichando nas dicas… 💡', 'Organizando os dias da semana… 📅', 'Quase pronto! 🦉']);
+  const stop = showLoading(['Lendo o que você contou… 📖', 'Separando por matéria… 🗂️', 'Inventando perguntas… ✏️', 'Caprichando nas dicas… 💡', 'Organizando os dias da semana… 📅', 'Escrevendo os capítulos do livro da semana… 📚', 'Quase pronto! 🦉']);
   let res;
   try {
-    res = await apiCall('/api/plan', { method: 'POST', timeout: 240000, data: { name: S.name, text, images, days, previous: S.week && S.week.summary ? S.week.summary.map(x => `${x.subject}: ${x.summary}`).join(' | ') : '' } });
+    res = await apiCall('/api/plan', { method: 'POST', timeout: 330000, data: { name: S.name, text, images, days, perSubject: S.settings.perSubject || 2, previous: S.week && S.week.summary ? S.week.summary.map(x => `${x.subject}: ${x.summary}`).join(' | ') : '' } });
   } catch (e) {
     stop();
     say(`Ops, não consegui falar com o Claude agora (${esc(e.message)}). Tente de novo em instantes, ou use o modo por matéria.`, { mood: 'sad', ms: 12000 });
@@ -2110,7 +2369,7 @@ function collectDraft() { $$('#scr-setup textarea[data-sid]').forEach(ta => { VI
 async function generateFromSetup(editing) {
   collectDraft();
   const topics = {}; SUBJECTS.forEach(s => { topics[s.id] = (VIEW.draftTopics[s.id] || '').trim(); });
-  const counts = Object.assign({}, VIEW.draftCounts);
+  const counts = isAuto() ? autoCounts(mySubjects().filter(id => topics[id]).length || 3, false) : Object.assign({}, VIEW.draftCounts);
   const hasAny = Object.values(topics).some(Boolean) || (S.pendingImport || []).length || (editing && (S.week.imported || []).length);
   if (!hasAny) { say('Escreva pelo menos uma matéria para eu criar as tarefas! ✍️'); return; }
   const t = today();
@@ -2144,7 +2403,7 @@ function workCtx() {
   if (!v) return null;
   if (v.kind === 'extra') {
     const x = S.extra; if (!x) return null;
-    return { kind: 'extra', title: '⭐ Exercícios extras', obj: x, questions: x.questions, answers: x.answers, done: x.status === 'done', marks: {}, verdicts: x.verdicts || {} };
+    return { kind: 'extra', title: x.group === 'book' ? '📖 Livro extra' : x.group === 'review' ? '🧠 Reforço' : '⭐ Exercícios extras', obj: x, questions: x.questions, answers: x.answers, done: x.status === 'done', marks: {}, verdicts: x.verdicts || {} };
   }
   const d = v.rec ? (S.recovery && S.recovery.days[v.date]) : (S.week && S.week.days[v.date]); if (!d) return null;
   return { kind: 'day', rec: !!v.rec, title: `${v.rec ? '⏳ Recuperação · ' : ''}${DOW_FULL[d.dow]} ${fmtDM(d.date)}`, obj: d, questions: d.questions, answers: d.answers, done: d.status === 'done', marks: d.marks || {}, verdicts: d.verdicts || {} };
@@ -2157,42 +2416,72 @@ function verdict(c, q) {
   if (v === 'open') return null;
   return isCorrect(q, c.answers[q.id]);
 }
+// A tarefa é dividida em partes que cabem na tela (sem rolagem). O tamanho de cada parte depende da tela.
+function pageSize() {
+  const w = window.innerWidth, h = window.innerHeight;
+  if (w < 600) return h < 700 ? 5 : 7;
+  if (w < 1000) return h < 800 ? 8 : 10;
+  return h < 760 ? 9 : 12;
+}
+function workPages(c) {
+  const per = pageSize(); const pages = []; let cur = [], sum = 0;
+  c.questions.forEach((q, i) => {
+    const wt = q.type === 'proof' ? 3 : q.type === 'open' ? 1.5 : 1;
+    if (cur.length && sum + wt > per) { pages.push(cur); cur = []; sum = 0; }
+    cur.push(i); sum += wt;
+  });
+  if (cur.length) pages.push(cur);
+  return pages.length ? pages : [[]];
+}
+function workKey(c) { return c.kind + '|' + (c.rec ? 'r' : '') + (c.obj.date || c.obj.started || ''); }
 function renderWork() {
   const el = $('#scr-work');
   const c = workCtx();
   if (!c) { show('home'); return; }
   $('#top-title').textContent = c.kind === 'extra' ? '⭐ Extras' : `📘 ${c.title}`;
   const canQty = c.kind === 'day' && !c.rec && !c.done && !dayStarted(c.obj) && !c.obj.printed;
-  const cards = c.questions.map((q, i) => questionCard(q, i, c)).join('');
+  const pages = workPages(c);
+  if (!VIEW.wp || VIEW.wp.key !== workKey(c)) VIEW.wp = { key: workKey(c), page: 0 };
+  const pg = VIEW.wp.page = clamp(VIEW.wp.page, 0, pages.length - 1);
+  VIEW.curPages = pages;
+  const cards = pages[pg].map(i => questionCard(c.questions[i], i, c)).join('');
+  const last = pg === pages.length - 1;
+  const pager = pages.length > 1 ? `<div class="pager"><button type="button" class="btn small" data-pg="-1" ${pg === 0 ? 'disabled' : ''} aria-label="Parte anterior">◂</button>
+      <span class="pg-dots">${pages.map((p, j) => `<button type="button" data-pgi="${j}" class="${j === pg ? 'on' : ''}" aria-label="Parte ${j + 1}">${j + 1}</button>`).join('')}</span>
+      <span class="pg-txt">Parte ${pg + 1} de ${pages.length}</span>
+      <button type="button" class="btn small" data-pg="1" ${last ? 'disabled' : ''} aria-label="Próxima parte">▸</button></div>` : '';
   const paper = c.kind === 'day' && !c.rec && !c.done;
   el.innerHTML = `<div class="work">
     <div class="work-head">
       <h2>${esc(c.title)}</h2>
       <div class="progress" aria-hidden="true"><i id="prog-bar"></i></div><span class="prog-txt" id="prog-txt"></span>
       ${canQty ? `<span class="qty" title="Quantas perguntas hoje?"><button data-qty="-1" aria-label="menos perguntas">−</button><span>${c.questions.length}</span><button data-qty="1" aria-label="mais perguntas">+</button></span>` : ''}
-      ${c.kind === 'day' && dayPassages(c.obj).length ? `<button class="btn small read-btn" data-act="passage">📖 ${dayPassages(c.obj).length > 1 ? 'Textos' : 'Texto'}</button>` : ''}
+      ${dayPassages(c.obj).length ? `<button class="btn small read-btn" data-act="passage">📖 ${dayPassages(c.obj).length > 1 ? 'Textos' : 'Leitura'}</button>` : ''}
       ${paper && c.obj.printed ? '<button class="btn small gold" data-act="check">📄 Corrigir folha</button>' : ''}
     </div>
-    <div class="sheet" id="sheet">${cards}</div>
+    <div class="sheet" id="sheet">${cards}</div>${pager}
     <div class="work-foot">
       <button class="btn" data-act="back" aria-label="Voltar">◂</button>
       ${c.kind === 'day' && !c.rec ? '<button class="btn" data-act="print">🖨️ Imprimir</button>' : ''}
       <button class="btn" data-act="key">🔑 Gabarito</button>
-      ${c.done ? '' : '<button class="btn primary" data-act="finish">✔ Concluir</button>'}
+      ${c.done ? (last ? '' : '<button class="btn primary" data-pg="1">Próxima ▸</button>') : last ? '<button class="btn primary" data-act="finish">✔ Concluir</button>' : '<button class="btn primary" data-pg="1">Próxima parte ▸</button>'}
     </div></div>`;
   bindWork(el, c);
   updateProgress(c);
   requestAnimationFrame(() => fitGrid($('#sheet')));
-  if (c.kind === 'day' && dayPassages(c.obj).length && !c.obj.passageSeen && !c.done) { c.obj.passageSeen = true; save(); setTimeout(() => showPassages(c.obj), 250); }
+  if (dayPassages(c.obj).length && !c.obj.passageSeen && !c.done) { c.obj.passageSeen = true; save(); setTimeout(() => showPassages(c.obj), 250); }
 }
+function goPage(n) { if (!VIEW.wp) return; VIEW.wp.page = n; save(); renderWork(); }
 // Texto(s) de leitura escritos pela Lumi para o dia
 function showPassages(d) {
   const ps = dayPassages(d);
   const pt = ps[0] && SUBJ[ps[0].subject].lang === 'pt';
-  const m = openModal(`<div class="modal-head"><h3>📖 ${pt ? 'Leia com atenção' : 'Read carefully'}</h3><button class="btn small" data-close>${pt ? 'Fechar' : 'Close'}</button></div>
-    <div class="modal-body passage">${ps.map(x => `<div class="pas"><div class="pas-subj">${SUBJ[x.subject].icon} ${esc(SUBJ[x.subject].name)}</div><h4>${esc(x.title)}</h4>${x.text.split(/\n+/).map(par => `<p>${esc(par)}</p>`).join('')}</div>`).join('')}</div>
-    <div class="modal-foot"><button class="btn primary" data-close>${pt ? 'Li! Vamos às perguntas' : 'Done! To the questions'}</button></div>`, { wide: true });
+  const m = openModal(`<div class="modal-head"><h3>📖 ${pt ? 'Leitura do dia' : 'Today\'s reading'}</h3><button class="btn small" data-close>${pt ? 'Fechar' : 'Close'}</button></div>
+    <div class="modal-body passage">${ps.map((x, k) => `<div class="pas" id="pas-${k}"><div class="pas-subj">${SUBJ[x.subject].icon} ${esc(SUBJ[x.subject].name)} ${speakBtn('#pas-' + k, SUBJ[x.subject].lang)}</div><h4>${esc(x.title)}</h4>${x.text.split(/\n+/).map(par => `<p>${esc(par)}</p>`).join('')}</div>`).join('')}</div>
+    <div class="modal-foot"><button class="btn" data-ptext>🖨️ ${pt ? 'Imprimir só o texto' : 'Print the text only'}</button><button class="btn primary" data-close>${pt ? 'Li! Vamos às perguntas' : 'Done! To the questions'}</button></div>`, { wide: true, onClose: lumiStop });
   m.style.maxHeight = 'calc(100dvh - 24px)';
+  bindSpeak(m);
+  $('[data-ptext]', m).onclick = () => { lumiStop(); closeModal(); printPassages(ps); };
 }
 function passageContext(q, d) {
   const ps = d ? dayPassages(d).filter(x => x.subject === q.subject) : [];
@@ -2225,7 +2514,7 @@ function questionCard(q, i, c) {
   return `<div class="q ${stateCls} ${q.type === 'proof' ? 'wide' : ''}" style="--subj:${s.color}" data-qid="${q.id}">
     <div class="q-top"><span class="q-num">${i + 1}</span>
       <div class="q-text"><span class="q-subj">${s.icon} ${esc(s.short)}</span>${esc(q.q)}</div>
-      <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Ouvir">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Explain this topic' : 'Explicar o conteúdo'}" aria-label="Explicar o conteúdo">?</button><button type="button" data-hint title="Dica">💡</button></div>
+      <div class="q-tools">${q.type === 'listen' ? `<button type="button" data-say title="Ouvir">🔊</button>` : ''}<button type="button" class="qx" data-explain title="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha: não sei isso'}" aria-label="${q.lang === 'en' ? 'Mini-lesson' : 'Aulinha'}">?</button><button type="button" data-hint title="Dica">💡</button></div>
     </div>${control}${expected}${mark ? `<span class="mark">${mark}</span>` : ''}</div>`;
 }
 function bindWork(el, c) {
@@ -2244,10 +2533,12 @@ function bindWork(el, c) {
     const sp = $('[data-say]', card);
     if (sp) sp.onclick = () => speak(q.say || q.answer, q.lang);
     const ex = $('[data-explain]', card);
-    if (ex) ex.onclick = () => explainContent(q, c);
+    if (ex) ex.onclick = () => openLesson(q, c);
     if (q.type === 'proof') bindProof(q, c, card);
   });
   $$('[data-qty]', el).forEach(b => b.onclick = () => changeQty(c, Number(b.dataset.qty)));
+  $$('[data-pg]', el).forEach(b => b.onclick = () => goPage(VIEW.wp.page + Number(b.dataset.pg)));
+  $$('[data-pgi]', el).forEach(b => b.onclick = () => goPage(Number(b.dataset.pgi)));
   $('[data-act=back]', el).onclick = () => { save(); show('home'); };
   $('[data-act=key]', el).onclick = () => openGabarito(c);
   const pr = $('[data-act=print]', el); if (pr) pr.onclick = () => openPrintDialog(c.obj.date);
@@ -2266,7 +2557,7 @@ async function askTutor(q, c) {
   try {
     const r = await apiCall('/api/tutor', { method: 'POST', timeout: 45000, data: {
       q: q.type === 'proof' ? `${q.q} Texto: "${q.text}"` : q.q, options: q.options || [], answer: q.answer, attempt: q.type === 'proof' ? `${Object.keys(proofAns(c.answers[q.id])).length} palavras marcadas` : (c.answers[q.id] || ''), lang: q.lang, subject: q.subject, subjectName: SUBJ[q.subject] && SUBJ[q.subject].name,
-      context: c.kind === 'day' ? passageContext(q, c.obj) : '' } });
+      context: passageContext(q, c.obj) } });
     say(`🦉 ${esc(r.text)}`, { mood: 'think', ms: 16000 });
   } catch (e) { say(q.lang === 'en' ? 'I could not think right now. Try the hint again later!' : 'Não consegui pensar agora. Tente de novo daqui a pouco!', { mood: 'sad' }); }
 }
@@ -2295,6 +2586,7 @@ function updateProgress(c) {
   const a = c.questions.filter(q => answered(q, c.answers[q.id])).length;
   const bar = $('#prog-bar'); if (bar) bar.style.width = (n ? a / n * 100 : 0) + '%';
   const tx = $('#prog-txt'); if (tx) tx.textContent = `${a}/${n}`;
+  (VIEW.curPages || []).forEach((p, j) => { const b = $(`.pg-dots [data-pgi="${j}"]`); if (b) b.classList.toggle('full', p.every(i => c.questions[i] && answered(c.questions[i], c.answers[c.questions[i].id]))); });
 }
 // Ajusta fonte e colunas até tudo caber (tela ou página impressa) sem rolagem.
 function fitGrid(grid, opts = {}) {
@@ -2350,6 +2642,9 @@ async function finishWork(c) {
   if (missing) {
     say(`Faltam <b>${missing}</b> pergunta${missing > 1 ? 's' : ''}. Toque no 💡 se precisar de ajuda!`, { mood: 'think' });
     const first = c.questions.find(q => !answered(q, c.answers[q.id]));
+    const fi = c.questions.indexOf(first);
+    const pi = (VIEW.curPages || []).findIndex(p => p.includes(fi));
+    if (pi >= 0 && VIEW.wp && pi !== VIEW.wp.page) { VIEW.wp.page = pi; renderWork(); }
     const card = first && $(`.q[data-qid="${first.id}"]`);
     if (card) { card.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.03)' }, { transform: 'scale(1)' }], { duration: 400 }); const i = $('[data-in]', card); if (i) i.focus(); }
     return;
@@ -2364,7 +2659,7 @@ async function gradeOpenAnswers(c) {
   const stop = showLoading(['Lendo suas respostas… 📖', 'Pensando com carinho… 🦉', 'Escrevendo comentários… ✍️']);
   try {
     const r = await apiCall('/api/check-open', { method: 'POST', timeout: 90000, data: {
-      context: ctxTopics(c) + (c.kind === 'day' ? '\n' + dayPassages(c.obj).map(x => `Texto "${x.title}": ${x.text}`).join('\n') : ''),
+      context: ctxTopics(c) + '\n' + dayPassages(c.obj).map(x => `Texto "${x.title}": ${x.text}`).join('\n'),
       items: opens.map(x => ({ q: x.q.q, answer: c.answers[x.q.id], lang: x.q.lang, subject: x.q.subject, subjectName: SUBJ[x.q.subject] && SUBJ[x.q.subject].name })) } });
     c.obj.verdicts = c.obj.verdicts || {}; c.obj.notes = c.obj.notes || {};
     (r.results || []).forEach(res => { const x = opens[res.number - 1]; if (!x) return; c.obj.verdicts[x.q.id] = res.verdict === 'ok' ? 'ok' : 'bad'; if (res.note) c.obj.notes[x.q.id] = res.note; });
@@ -2372,33 +2667,120 @@ async function gradeOpenAnswers(c) {
   } catch (e) { toast('A Lumi não conseguiu corrigir as livres agora: ficam para os pais.'); }
   finally { stop(); }
 }
-// Botão "?": a Lumi explica o conteúdo por trás da pergunta (gerado na hora e guardado).
-async function explainContent(q, c) {
-  hideBubble();
-  const pt = q.lang !== 'en';
-  const key = c.done ? 'explainDone' : 'explain';
-  const render = ex => openModal(`<div class="modal-head"><div class="owl-mini">${mascotSVG(S.equipped, 'happy')}</div><h3>${esc(ex.title)}</h3><button class="btn small" data-close>${pt ? 'Entendi!' : 'Got it!'}</button></div>
-    <div class="modal-body explain"><p>${esc(ex.explanation)}</p><div class="ex-box"><b>${pt ? 'Exemplo' : 'Example'}:</b> ${esc(ex.example)}</div></div>
-    <div class="modal-foot">${Server.me ? `<button class="btn small ghost" data-report>🚩 ${pt ? 'Algo estranho?' : 'Something wrong?'}</button>` : ''}<button class="btn primary" data-close>${pt ? 'Voltar para a pergunta' : 'Back to the question'}</button></div>`);
-  const render0 = render;
-  const renderR = ex => { const m = render0(ex); const r = $('[data-report]', m); if (r) r.onclick = async () => {
-    try { await apiCall('/api/report', { method: 'POST', data: { childId: Server.childId, kind: 'explicação', text: `${q.q}\n---\n${ex.title}: ${ex.explanation} ${ex.example}` } }); toast(pt ? 'Obrigada! Avisei um adulto. 💜' : 'Thanks! An adult was told. 💜'); closeModal(); } catch (e) { toast(e.message); } }; return m; };
-  if (q[key]) { renderR(q[key]); return; }
-  if (!Server.ai) { say(pt ? 'Para explicar o conteúdo eu preciso estar conectada ao servidor. Por enquanto, toque no 💡 para uma dica!' : 'I need the server to explain this. Try the 💡 hint for now!', { mood: 'think' }); return; }
-  const stop = showLoading(pt ? ['Preparando uma mini-aula… 🦉', 'Procurando um bom exemplo… 🔎'] : ['Preparing a mini-lesson… 🦉', 'Finding a good example… 🔎']);
-  try {
-    const r = await apiCall('/api/explain', { method: 'POST', timeout: 60000, data: {
-      q: q.type === 'proof' ? `${q.q} Texto: "${q.text}"` : q.q, options: q.options || [], answer: q.answer, done: c.done, lang: q.lang, subject: q.subject,
-      subjectName: SUBJ[q.subject] && SUBJ[q.subject].name, context: ctxTopics(c) + (c.kind === 'day' ? '\n' + passageContext(q, c.obj) : '') } });
-    stop();
-    q[key] = { title: r.title, explanation: r.explanation, example: r.example };
-    save();
-    renderR(q[key]);
-  } catch (e) { stop(); say(pt ? 'Não consegui explicar agora. Tente de novo daqui a pouco!' : 'I could not explain right now. Try again soon!', { mood: 'sad' }); }
+/* ---------- Aulinha: explicação + exemplos + macete + treino na hora ---------- */
+// Guarda perguntas erradas (ou em que pediu ajuda) para o 🧠 Reforço dos extras.
+function noteMissed(q, why) {
+  if (!q || !q.q || q.type === 'proof') return;
+  S.missed = (S.missed || []).filter(m => m.q.q !== q.q);
+  const copy = {}; ['subject', 'type', 'q', 'options', 'answer', 'accept', 'hint', 'lang', 'say', 'strict'].forEach(k => { if (q[k] != null) copy[k] = q[k]; });
+  S.missed.unshift({ q: copy, why, at: today() });
+  S.missed = S.missed.slice(0, 40);
 }
+// Palavras para a ✏️ Oficina (erros de ortografia ou "não sei").
+function notePractice(lang, words) {
+  const L = lang === 'en' ? 'en' : 'pt';
+  S.practice = S.practice || { pt: [], en: [] };
+  words.map(w => String(w || '').trim()).filter(w => w && w.length <= 24 && !/\s{2,}/.test(w)).forEach(w => {
+    S.practice[L] = [w, ...S.practice[L].filter(x => x.toLowerCase() !== w.toLowerCase())].slice(0, 30);
+  });
+}
+function weekTopicFor(subject) { const w = S.week; return (w && w.topics && w.topics[subject]) || ''; }
+async function openLesson(q, c, opts = {}) {
+  hideBubble();
+  const lang = (q.lang || (SUBJ[q.subject] || {}).lang) === 'en' ? 'en' : 'pt';
+  const pt = lang === 'pt';
+  const done = !!(c && c.done);
+  if (c && !done && !opts.noMiss) { noteMissed(q, 'nao-sei'); save(); }
+  const key = opts.topic ? 'lessonTopic' : done ? 'lessonDone' : 'lesson';
+  if (q[key]) { showLesson(q[key], lang, q); return; }
+  if (!Server.ai) { say(pt ? 'Para dar a aulinha eu preciso estar conectada ao servidor. Por enquanto, toque no 💡 para uma dica!' : 'I need the server for the mini-lesson. Try the 💡 hint for now!', { mood: 'think' }); return; }
+  const stop = showLoading(pt ? ['Preparando sua aulinha… 🦉', 'Separando bons exemplos… 🔎', 'Criando um treino rapidinho… ✏️'] : ['Preparing your mini-lesson… 🦉', 'Finding good examples… 🔎', 'Making a quick practice… ✏️']);
+  try {
+    const wrong = done && c && verdict(c, q) === false && q.type !== 'proof' ? String(c.answers[q.id] || '') : '';
+    const L = await apiCall('/api/lesson', { method: 'POST', timeout: 90000, data: {
+      q: opts.topic ? '' : (q.type === 'proof' ? `${q.q} Texto: "${q.text}"` : q.q), options: q.options || [], answer: q.answer, done, wrong, lang, subject: q.subject,
+      subjectName: SUBJ[q.subject] && SUBJ[q.subject].name, topic: opts.topic || '',
+      context: (c ? ctxTopics(c) + '\n' + passageContext(q, c.obj) : weekTopicsText(S.week)).slice(0, 2500) } });
+    stop();
+    const practice = validateImported({ questions: (L.practice || []).filter(x => ['mc', 'short', 'num'].includes(x.type)) }).ok
+      .map((x, j) => Object.assign({ lang: SUBJ[x.subject].lang }, x, { id: 'lp-' + j }));
+    q[key] = { title: L.title, explanation: L.explanation || [], examples: L.examples || [], tip: L.tip || '', practice };
+    save();
+    showLesson(q[key], lang, q);
+  } catch (e) { stop(); say(pt ? `Não consegui preparar a aulinha agora (${esc(e.message)}). Tente de novo daqui a pouco!` : 'I could not prepare the lesson right now. Try again soon!', { mood: 'sad' }); }
+}
+function showLesson(L, lang, q) {
+  const pt = lang === 'pt';
+  const learn = () => {
+    const m = openModal(`<div class="modal-head"><div class="owl-mini">${mascotSVG(S.equipped, 'happy')}</div><h3>🎓 ${esc(L.title)}</h3><button class="btn small" data-close>${pt ? 'Fechar' : 'Close'}</button></div>
+      <div class="modal-body lesson" id="lesson-body">
+        ${L.explanation.map(p => `<p>${esc(p)}</p>`).join('')}
+        ${L.examples.length ? `<div class="ex-box"><b>👀 ${pt ? 'Exemplos' : 'Examples'}</b><ul>${L.examples.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+        ${L.tip ? `<div class="tip-box"><b>💡 ${pt ? 'Macete' : 'Trick'}:</b> ${esc(L.tip)}</div>` : ''}
+      </div>
+      <div class="modal-foot">${speakBtn('#lesson-body', lang)}${Server.me ? `<button class="btn small ghost" data-report>🚩</button>` : ''}<span class="grow"></span>
+        ${L.practice.length ? `<button class="btn primary" data-practice>${pt ? 'Vamos treinar ▸' : 'Let\'s practise ▸'}</button>` : `<button class="btn primary" data-close>${pt ? 'Entendi!' : 'Got it!'}</button>`}</div>`, { wide: true, onClose: lumiStop });
+    m.style.maxHeight = 'calc(100dvh - 24px)';
+    bindSpeak(m);
+    if (S.settings.autoVoice && speechOK) { const b = $('[data-speak]', m); if (b) b.click(); }
+    const r = $('[data-report]', m); if (r) r.onclick = async () => {
+      try { await apiCall('/api/report', { method: 'POST', data: { childId: Server.childId, kind: 'aulinha', text: `${q.q || ''}\n---\n${L.title}: ${L.explanation.join(' ')}` } }); toast(pt ? 'Obrigada! Avisei um adulto. 💜' : 'Thanks! An adult was told. 💜'); } catch (e) { toast(e.message); } };
+    const pr = $('[data-practice]', m); if (pr) pr.onclick = () => { lumiStop(); practice(0, 0); };
+  };
+  const practice = (i, score) => {
+    if (i >= L.practice.length) {
+      const all = score === L.practice.length;
+      openModal(`<div class="modal-body celebrate"><div class="owl-big">${mascotSVG(S.equipped, all ? 'wow' : 'happy')}</div>
+        <h3>${all ? (pt ? 'Mandou bem! 🎉' : 'Brilliant! 🎉') : (pt ? 'Bom treino! 💪' : 'Good practice! 💪')}</h3>
+        <p>${pt ? `Você acertou <b>${score} de ${L.practice.length}</b> no treino.` : `You got <b>${score} of ${L.practice.length}</b> right.`}${all ? '' : (pt ? ' Quer rever a explicação?' : ' Want to see the lesson again?')}</p></div>
+        <div class="modal-foot" style="justify-content:center">${all ? '' : `<button class="btn" data-again>${pt ? '↺ Rever a aulinha' : '↺ See the lesson'}</button>`}<button class="btn primary" data-close>${pt ? 'Voltar' : 'Back'}</button></div>`);
+      const ag = $('[data-again]'); if (ag) ag.onclick = learn;
+      return;
+    }
+    const x = L.practice[i];
+    const m = openModal(`<div class="modal-head"><h3>✏️ ${pt ? 'Treino' : 'Practice'} ${i + 1}/${L.practice.length}</h3><button class="btn small" data-close>${pt ? 'Fechar' : 'Close'}</button></div>
+      <div class="modal-body lesson-q"><p class="lq">${esc(x.q)}</p>
+        ${x.type === 'mc' ? `<div class="opts">${x.options.map(o => `<button type="button" class="opt" data-o="${esc(o)}">${esc(o)}</button>`).join('')}</div>`
+          : `<input type="text" id="lq-in" ${x.type === 'num' ? 'inputmode="decimal"' : ''} autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${pt ? 'Sua resposta' : 'Your answer'}">`}
+        <div id="lq-fb" class="lq-fb"></div></div>
+      <div class="modal-foot">${x.hint ? `<button class="btn small" data-h>💡</button>` : ''}<span class="grow"></span>${x.type === 'mc' ? '' : `<button class="btn primary" data-check>${pt ? 'Conferir' : 'Check'}</button>`}</div>`);
+    let answered1 = false;
+    const check = val => {
+      if (answered1) return; answered1 = true;
+      const ok = isCorrect(x, val);
+      $('#lq-fb', m).innerHTML = ok ? `<b class="okc">✓ ${pt ? 'Isso!' : 'Yes!'}</b>` : `<b class="badc">✗ ${pt ? 'Quase!' : 'Not quite!'}</b> ${pt ? 'Resposta' : 'Answer'}: <b>${esc(x.answer)}</b>`;
+      $$('.opt', m).forEach(b => { b.disabled = true; if (norm(b.dataset.o, true) === norm(x.answer, true)) b.classList.add('right'); else if (b.dataset.o === val) b.classList.add('wrong'); });
+      const foot = $('.modal-foot', m); foot.innerHTML = `<span class="grow"></span><button class="btn primary" data-next>${i + 1 < L.practice.length ? (pt ? 'Próximo ▸' : 'Next ▸') : (pt ? 'Ver resultado' : 'See result')}</button>`;
+      $('[data-next]', m).onclick = () => practice(i + 1, score + (ok ? 1 : 0));
+    };
+    $$('.opt', m).forEach(b => b.onclick = () => check(b.dataset.o));
+    const inp = $('#lq-in', m); if (inp) { inp.focus(); inp.onkeydown = e => { if (e.key === 'Enter' && inp.value.trim()) check(inp.value); }; }
+    const ck = $('[data-check]', m); if (ck) ck.onclick = () => { if (inp && inp.value.trim()) check(inp.value); };
+    const h = $('[data-h]', m); if (h) h.onclick = () => { $('#lq-fb', m).innerHTML = `💡 ${esc(x.hint)}`; };
+  };
+  learn();
+}
+// Compatibilidade: chamadas antigas do "?" abrem a aulinha
+function explainContent(q, c) { return openLesson(q, c); }
 // Marca o dia (ou extras) como concluído e comemora. via: screen | photo | self
+function trackMistakes(c) {
+  c.questions.forEach(q => {
+    const v = verdict(c, q);
+    if (q.type === 'proof') {
+      const a = proofAns(c.answers[q.id]);
+      const missedW = q.errors.filter(e => !(a[e.idx] != null && proofEq(a[e.idx], e.right))).map(e => e.right);
+      if (missedW.length) notePractice(q.lang, missedW);
+      return;
+    }
+    if (v === false) {
+      noteMissed(q, 'errou');
+      if (['pt_ort', 'en_spell'].includes(q.subject) && /^[\p{L}'’-]+$/u.test(String(q.answer || '').trim())) notePractice(q.lang, [q.answer]);
+    } else if (v === true && S.missed) S.missed = S.missed.filter(m => m.q.q !== q.q);
+  });
+}
 function completeWork(c, via, extraMsg = '') {
   c.verdicts = c.obj.verdicts || c.verdicts || {};
+  try { trackMistakes(c); } catch (e) { console.warn(e); }
   const obj = c.questions.filter(q => verdict(c, q) !== null);   // objetivas + livres já corrigidas
   const correct = obj.filter(q => verdict(c, q) === true).length;
   const open = c.questions.length - obj.length;                  // livres que ficam para os pais
@@ -2409,6 +2791,7 @@ function completeWork(c, via, extraMsg = '') {
     const t = today();
     const coins = c.obj.paid ? correct * S.settings.extraPerCorrect : 0;
     S.extras[t] = { sets: (S.extras[t] ? S.extras[t].sets : 0) + (c.obj.paid ? 1 : 0) };
+    if (c.obj.review && obj.length && correct / obj.length >= 0.6) S.missed = (S.missed || []).filter(m => !c.obj.review.includes(m.q.q));
     save();
     if (coins) addCoins(coins, `Extras: ${correct}/${obj.length} acertos`);
     renderWork();
@@ -2424,9 +2807,9 @@ function completeWork(c, via, extraMsg = '') {
   const allDone = weekAllDone(w);
   const msg = (extraMsg ? extraMsg + '<br>' : '') + streakMsg + `Você acertou <b>${correct} de ${obj.length}</b>.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais corrigirem.` : ''}`;
   if (allDone && today() === w.end && !w.settled) {
-    showCelebrate('Tudo pronto! 🎉', '', msg + `<br><br>Todas as tarefas da semana estão feitas. Volte ao início e toque em <b>Entregar a semana</b> para ganhar <b>+${S.settings.reward}</b> 🪙!`);
+    showCelebrate('Tudo pronto! 🎉', '', msg + `<br><br>Todas as tarefas da semana estão feitas. Volte ao início e toque em <b>Entregar a semana</b> para ganhar <b>+${weekReward(w)}</b> 🪙!`);
   } else if (allDone) {
-    showCelebrate('Semana completa! 🎉', '', msg + `<br><br>Agora é só <b>entregar na sexta ${fmtDM(w.end)}</b> para ganhar <b>+${S.settings.reward}</b> 🪙.`);
+    showCelebrate('Semana completa! 🎉', '', msg + `<br><br>Agora é só <b>entregar na sexta ${fmtDM(w.end)}</b> para ganhar <b>+${weekReward(w)}</b> 🪙.`);
   } else {
     showCelebrate('Tarefa do dia concluída! ✅', '', msg + ' O gabarito já está liberado.', 'happy');
   }
@@ -2468,13 +2851,15 @@ function openPrintDialog(date) {
   const printable = requiredDays(w).filter(d => d.status !== 'done' && d.questions.length);
   const c = openModal(`<div class="modal-head"><h3>🖨️ Imprimir tarefas</h3><button class="btn small" data-close>Fechar</button></div>
     <div class="modal-body"><div class="radio-col">
-      <label><input type="radio" name="pw" value="day" checked> Só ${esc(DOW_FULL[w.days[date].dow].toLowerCase())} ${fmtDM(date)} (1 página)</label>
-      <label><input type="radio" name="pw" value="week" ${printable.length > 1 ? '' : 'disabled'}> A semana toda que falta (${printable.length} página${printable.length > 1 ? 's' : ''}, uma por dia)</label>
+      <label><input type="radio" name="pw" value="day" checked> Só ${esc(DOW_FULL[w.days[date].dow].toLowerCase())} ${fmtDM(date)} (${dayPrintPages(w.days[date])} folha${dayPrintPages(w.days[date]) > 1 ? 's' : ''})</label>
+      ${dayPassages(w.days[date]).length ? `<label><input type="radio" name="pw" value="text"> Só o texto de leitura de ${esc(DOW_FULL[w.days[date].dow].toLowerCase())}</label>` : ''}
+      <label><input type="radio" name="pw" value="week" ${printable.length > 1 ? '' : 'disabled'}> A semana toda que falta (${printable.length} dias, ${printable.reduce((a, d) => a + dayPrintPages(d), 0)} folhas)</label>
       <label class="chk"><input type="checkbox" id="pkey"> Incluir gabarito em página separada (para os pais)</label></div>
       <p class="tiny muted">Depois de fazer no papel, abra o dia no app e toque em <b>📄 Corrigir folha</b>: tire uma foto e a Lumi corrige, ou corrija sozinha com o gabarito.</p></div>
     <div class="modal-foot"><button class="btn primary" id="pgo">🖨️ Imprimir</button></div>`);
   $('#pgo', c).onclick = () => {
     const which = $('input[name=pw]:checked', c).value;
+    if (which === 'text') { closeModal(); printPassages(dayPassages(w.days[date])); return; }
     const days = which === 'week' ? printable : [w.days[date]];
     const withKey = $('#pkey', c).checked;
     closeModal();
@@ -2493,17 +2878,36 @@ function printQuestionHtml(q, i) {
   else ans = '<div class="p-line"></div>';
   return `<div class="p-q"><div class="p-qt"><b>${i + 1}.</b> <span class="p-subj">${s.icon} ${esc(s.short)}</span> ${esc(q.q)}</div>${ans}</div>`;
 }
+// Divide as perguntas do dia em folhas A4 (o texto de leitura vai numa folha própria).
+function printChunks(qs) {
+  const out = []; let cur = [], sum = 0;
+  qs.forEach((q, i) => { const wt = q.type === 'proof' ? 4 : q.type === 'open' ? 2 : q.type === 'mc' ? 1.4 : 1;
+    if (cur.length && sum + wt > 15) { out.push(cur); cur = []; sum = 0; } cur.push(i); sum += wt; });
+  if (cur.length) out.push(cur);
+  return out;
+}
+function dayPrintPages(d) { return dayPassages(d).length + printChunks(d.questions).length; }
+function passagePageHtml(x, sub) {
+  return `<section class="page"><header class="p-head"><div><div class="p-brand">📖 ${SUBJ[x.subject].lang === 'en' ? 'Reading' : 'Leitura'}</div><div class="p-day">${esc(sub)}</div></div></header>
+    <div class="p-passage long"><h2>${esc(x.title)}</h2>${x.text.split(/\n+/).map(par => `<p>${esc(par)}</p>`).join('')}</div></section>`;
+}
+function printPassages(ps) {
+  const root = $('#print-root');
+  root.innerHTML = ps.map(x => passagePageHtml(x, S.name)).join('');
+  setTimeout(() => window.print(), 60);
+}
 function printDays(days, withKey) {
   const root = $('#print-root');
   const pages = [];
   days.forEach(d => {
     const obj = d.questions.filter(q => q.type !== 'open').length;
-    pages.push(`<section class="page"><header class="p-head">
-        <div><div class="p-brand">🦉 Estudos com a Lumi</div><div class="p-day">${esc(DOW_FULL[d.dow])} ${fmtDM(d.date)} · ${esc(S.name)}</div></div>
-        <div class="p-score">Acertos: ____ / ${obj}</div></header>
-      ${dayPassages(d).map(x => `<div class="p-passage"><b>📖 ${esc(x.title)}</b>${x.text.split(/\n+/).map(par => `<p>${esc(par)}</p>`).join('')}</div>`).join('')}
-      <div class="p-grid">${d.questions.map(printQuestionHtml).join('')}</div>
-      <footer class="p-foot">Terminou? No app, abra ${esc(DOW_FULL[d.dow].toLowerCase())} e toque em “📄 Corrigir folha”.</footer></section>`);
+    const chunks = printChunks(d.questions);
+    dayPassages(d).forEach(x => pages.push(passagePageHtml(x, `${DOW_FULL[d.dow]} ${fmtDM(d.date)} · ${S.name}`)));
+    chunks.forEach((ch, k) => pages.push(`<section class="page"><header class="p-head">
+        <div><div class="p-brand">🦉 Estudos com a Lumi</div><div class="p-day">${esc(DOW_FULL[d.dow])} ${fmtDM(d.date)} · ${esc(S.name)}${chunks.length > 1 ? ` · folha ${k + 1}/${chunks.length}` : ''}</div></div>
+        ${k === 0 ? `<div class="p-score">Acertos: ____ / ${obj}</div>` : ''}</header>
+      <div class="p-grid">${ch.map(i => printQuestionHtml(d.questions[i], i)).join('')}</div>
+      ${k === chunks.length - 1 ? `<footer class="p-foot">Terminou? No app, abra ${esc(DOW_FULL[d.dow].toLowerCase())} e toque em “📄 Corrigir folha”.</footer>` : ''}</section>`));
     if (withKey) {
       pages.push(`<section class="page key-page"><header class="p-head"><div><div class="p-brand">🔑 Gabarito — para os pais</div><div class="p-day">${esc(DOW_FULL[d.dow])} ${fmtDM(d.date)}</div></div></header>
         <div class="p-grid">${d.questions.map((q, i) => `<div class="p-k"><b>${i + 1}.</b> ${q.type === 'open' ? '<i>[Resposta Livre]</i>' : esc(q.answer)}</div>`).join('')}</div></section>`);
@@ -2529,7 +2933,7 @@ function renderCheck() {
   el.innerHTML = `<div class="check">
     ${Server.ai ? `<div class="card check-opt">
       <h3>📷 A Lumi corrige pela foto</h3>
-      <p class="tiny muted">Tire uma foto da folha inteira, de cima, com boa luz.</p>
+      <p class="tiny muted">Tire uma foto de cada folha (${printChunks(d.questions).length > 1 ? `são ${printChunks(d.questions).length} folhas de perguntas` : 'a folha inteira'}), de cima, com boa luz.</p>
       <div class="row wrap"><label class="btn primary">📷 Tirar foto<input type="file" id="cph" accept="image/*" capture="environment" hidden></label>
         ${imgs.length ? `<span class="tiny">✔ ${imgs.length} foto${imgs.length > 1 ? 's' : ''}</span><label class="btn small">+ outra<input type="file" id="cph2" accept="image/*" hidden></label>` : ''}</div>
       ${imgs.length ? `<div class="thumbs">${imgs.map(im => `<div class="thumb"><img src="data:${im.type};base64,${im.data}" alt="Foto da folha"></div>`).join('')}</div>
@@ -2608,12 +3012,12 @@ function renderShop() {
   const items = (cat === 'voucher' ? vouchersAsItems() : SHOP_ITEMS.filter(i => i.cat === cat)).slice().sort((a, b) => a.price - b.price);
   const tryOn = VIEW.tryOn && SHOP_ITEMS.find(i => i.id === VIEW.tryOn);
   const previewEq = Object.assign({}, S.equipped);
-  if (tryOn && ['hat', 'glasses', 'neck', 'back', 'skin', 'pet', 'fx'].includes(tryOn.cat)) previewEq[tryOn.cat] = tryOn.id;
+  if (tryOn && WEAR.includes(tryOn.cat)) previewEq[tryOn.cat] = tryOn.id === 'ms-owl' ? null : tryOn.id;
   const cards = items.map(it => {
-    const owned = S.owned.includes(it.id);
-    const equipped = S.equipped[it.cat] === it.id;
+    const owned = S.owned.includes(it.id) || it.id === 'ms-owl';
+    const equipped = it.id === 'ms-owl' ? !S.equipped.mascot : S.equipped[it.cat] === it.id;
     let pic = '';
-    if (['hat', 'glasses', 'neck', 'back', 'skin', 'pet', 'fx'].includes(it.cat)) pic = itemPreviewSVG(it);
+    if (WEAR.includes(it.cat)) pic = itemPreviewSVG(it);
     else if (it.cat === 'bg') pic = `<div class="swatch" style="background:${it.sw}"></div>`;
     else if (it.cat === 'sticker') pic = it.emoji;
     else pic = '🎟️';
@@ -2621,7 +3025,7 @@ function renderShop() {
     if (it.cat === 'voucher') btn = `<button class="btn small primary" data-buy="${it.id}">Resgatar</button>`;
     else if (it.cat === 'sticker') btn = owned ? '<span class="tiny muted">No álbum ✔</span>' : `<button class="btn small primary" data-buy="${it.id}">Comprar</button>`;
     else if (!owned) btn = `<button class="btn small" data-try="${it.id}">Provar</button><button class="btn small primary" data-buy="${it.id}">Comprar</button>`;
-    else btn = equipped ? `<button class="btn small ok" data-unequip="${it.id}">Usando ✔</button>` : `<button class="btn small" data-equip="${it.id}">Usar</button>`;
+    else btn = equipped ? (it.cat === 'mascot' ? '<span class="btn small ok">Usando ✔</span>' : `<button class="btn small ok" data-unequip="${it.id}">Usando ✔</button>`) : `<button class="btn small" data-equip="${it.id}">Usar</button>`;
     btn = `<div class="item-act">${btn}</div>`;
     return `<div class="item ${owned && it.cat !== 'voucher' ? 'owned' : ''} ${it.price >= 1000 ? 'dream' : ''}">${it.price >= 1000 ? '<span class="dream-tag">✨ SONHO</span>' : ''}<div class="pic">${pic}</div><div class="nm">${esc(it.name)}</div><div class="pr">🪙 ${it.price}</div>${btn}</div>`;
   }).join('');
@@ -2638,7 +3042,7 @@ function renderShop() {
   $$('[data-cat]', el).forEach(b => b.onclick = () => { VIEW.shopCat = b.dataset.cat; VIEW.tryOn = null; renderShop(); });
   $$('[data-try]', el).forEach(b => b.onclick = () => { VIEW.tryOn = b.dataset.try; renderShop(); });
   $$('[data-buy]', el).forEach(b => b.onclick = () => buy(b.dataset.buy));
-  $$('[data-equip]', el).forEach(b => b.onclick = () => { const it = SHOP_ITEMS.find(i => i.id === b.dataset.equip); S.equipped[it.cat] = it.id; save(); applyTheme(); renderMascotMini(); renderShop(); });
+  $$('[data-equip]', el).forEach(b => b.onclick = () => { const it = SHOP_ITEMS.find(i => i.id === b.dataset.equip); S.equipped[it.cat] = it.id === 'ms-owl' ? null : it.id; save(); applyTheme(); renderMascotMini(); renderShop(); });
   $$('[data-unequip]', el).forEach(b => b.onclick = () => { const it = SHOP_ITEMS.find(i => i.id === b.dataset.unequip); S.equipped[it.cat] = null; save(); applyTheme(); renderMascotMini(); renderShop(); });
 }
 async function buy(id) {
@@ -2652,11 +3056,272 @@ async function buy(id) {
     S.redemptions.unshift({ id: uid(), voucherId: it.id, name: it.name, price: it.price, date: today(), delivered: false });
   } else {
     S.owned.push(it.id);
-    if (['hat', 'glasses', 'neck', 'bg', 'back', 'skin', 'pet', 'fx'].includes(it.cat)) S.equipped[it.cat] = it.id;
+    if (WEAR.includes(it.cat) || it.cat === 'bg') S.equipped[it.cat] = it.id;
   }
   VIEW.tryOn = null;
   save(); applyTheme(); renderMascotMini(); renderShop();
-  say(it.cat === 'sticker' ? `${it.emoji} foi para o seu álbum!` : it.cat === 'voucher' ? 'Vale resgatado! Mostre para os seus pais. 🎟️' : 'Amei! Obrigada! 😍', { mood: 'wow' });
+  say(it.cat === 'sticker' ? `${it.emoji} foi para o seu álbum!` : it.cat === 'voucher' ? 'Vale resgatado! Mostre para os seus pais. 🎟️' : (it.cat === 'mascot' ? `Olha eu de ${esc(it.name.toLowerCase())}! Continuo sendo a Lumi. 😍` : 'Amei! Obrigada! 😍'), { mood: 'wow' });
+}
+
+/* ---------- ✏️ Oficina de palavras: treinar as palavras da semana e as que errou ---------- */
+// Palavras da semana (Ortografia/Spelling) + caça-erros + as que o estudante errou ou marcou "não sei".
+const WORD_OK = w => /^[\p{L}][\p{L}'’-]{1,22}$/u.test(w);
+function weekWords(lang) {
+  const sid = lang === 'en' ? 'en_spell' : 'pt_ort';
+  const out = [];
+  const w = S.week;
+  if (w) {
+    [w.topics && w.topics[sid], ...(w.summary || []).filter(x => x.subject === sid).map(x => x.summary), w.subjectTexts && w.subjectTexts[sid]]
+      .filter(Boolean).forEach(t => String(t).replace(/^[^:]{0,40}:/, '').split(/[,;\n/]+/).map(x => x.trim().replace(/[.!?"“”()]/g, '')).filter(WORD_OK).forEach(x => out.push(x)));
+    Object.values(w.days || {}).forEach(d => d.questions.forEach(q => { if (q.type === 'proof' && q.lang === lang) q.errors.forEach(e => out.push(e.right)); }));
+  }
+  return out;
+}
+function workshopWords(lang) {
+  const seen = new Set(); const list = [];
+  [...((S.practice || {})[lang] || []), ...weekWords(lang)].forEach(x => { const k = x.toLowerCase(); if (!seen.has(k) && WORD_OK(x)) { seen.add(k); list.push(x); } });
+  return list.slice(0, 24);
+}
+const isPractice = (lang, w) => ((S.practice || {})[lang] || []).some(x => x.toLowerCase() === w.toLowerCase());
+const WK_GAMES = [
+  { id: 'search', icon: '🔍', pt: 'Caça-palavras', en: 'Word search', dpt: 'ache as palavras escondidas', den: 'find the hidden words' },
+  { id: 'dict', icon: '🎧', pt: 'Ditado da Lumi', en: 'Lumi\'s dictation', dpt: 'ouça e escreva', den: 'listen and write', voice: true },
+  { id: 'flash', icon: '⚡', pt: 'Pisca-pisca', en: 'Flash!', dpt: 'a palavra some: escreva de memória', den: 'the word disappears: write it from memory' },
+  { id: 'scramble', icon: '🧩', pt: 'Embaralhadas', en: 'Scrambled', dpt: 'desembaralhe as letras', den: 'unscramble the letters' },
+  { id: 'vowels', icon: '🕳️', pt: 'Vogais sumidas', en: 'Missing vowels', dpt: 'complete as letras que faltam', den: 'fill in the missing letters' },
+];
+// Atividades para imprimir (divertidas, para fixar a grafia). Cada uma vira um bloco numa folha A4.
+const WK_PRINT = [
+  { id: 'rainbow', icon: '🌈', pt: 'Palavras arco-íris', en: 'Rainbow words', dpt: 'escreva cada palavra 3 vezes, cada vez com uma cor', den: 'write each word 3 times in 3 colours' },
+  { id: 'lscwc', icon: '👀', pt: 'Olhe, cubra, escreva, confira', en: 'Look, cover, write, check', dpt: 'o método das escolas inglesas', den: 'the classic spelling routine' },
+  { id: 'trace', icon: '✍️', pt: 'Caligrafia', en: 'Handwriting', dpt: 'cubra o pontilhado e copie', den: 'trace the dotted word and copy it' },
+  { id: 'search', icon: '🔍', pt: 'Caça-palavras', en: 'Word search', dpt: 'ache e pinte as palavras', den: 'find and colour the words' },
+  { id: 'pyramid', icon: '🔺', pt: 'Pirâmide de letras', en: 'Word pyramid', dpt: 'monte a palavra letra por letra', den: 'build the word letter by letter' },
+  { id: 'bubble', icon: '🫧', pt: 'Letras-bolha', en: 'Bubble letters', dpt: 'desenhe a palavra com letras gordinhas e pinte', den: 'draw the word in bubble letters and colour it' },
+  { id: 'vowelcol', icon: '🎨', pt: 'Vogais coloridas', en: 'Colourful vowels', dpt: 'vogais de uma cor, consoantes de outra', den: 'vowels in one colour, consonants in another' },
+  { id: 'code', icon: '🕵️', pt: 'Código secreto', en: 'Secret code', dpt: 'decifre as palavras com a chave', den: 'crack the words with the key' },
+  { id: 'scramble', icon: '🧩', pt: 'Letras embaralhadas', en: 'Scrambled letters', dpt: 'desembaralhe e escreva certo', den: 'unscramble and write correctly' },
+  { id: 'abc', icon: '🔤', pt: 'Ordem alfabética', en: 'ABC order', dpt: 'coloque as palavras em ordem', den: 'put the words in order' },
+  { id: 'silly', icon: '🤪', pt: 'Frase maluca', en: 'Silly sentences', dpt: 'invente uma frase engraçada com duas palavras', den: 'make a funny sentence with two words' },
+  { id: 'draw', icon: '🖍️', pt: 'Palavra-desenho', en: 'Picture words', dpt: 'desenhe a palavra e escreva embaixo', den: 'draw the word and write it underneath' },
+];
+function renderWorkshop() {
+  const el = $('#scr-workshop');
+  const langs = ['pt', 'en'].filter(l => mySubjects().some(id => SUBJ[id].lang === l));
+  if (!VIEW.wkLang || !langs.includes(VIEW.wkLang)) VIEW.wkLang = langs.includes('pt') && (workshopWords('pt').length || !workshopWords('en').length) ? 'pt' : (langs[0] || 'pt');
+  const L = VIEW.wkLang, pt = L === 'pt';
+  const words = workshopWords(L);
+  const t = today(); const used = (S.workshop || {})[t] || 0; const left = Math.max(0, (S.settings.workshopPerDay ?? 5) - used);
+  const coin = S.settings.workshopCoins ?? 3;
+  const pick = VIEW.wkPrint || (VIEW.wkPrint = ['rainbow', 'lscwc', 'search', 'code']);
+  el.innerHTML = `<div class="workshop">
+    <div class="card wk-words">
+      <div class="row wrap"><b>✏️ ${pt ? 'Minhas palavras' : 'My words'}</b>
+        ${langs.length > 1 ? `<div class="seg small"><button data-wl="pt" class="${pt ? 'on' : ''}">🇧🇷 PT</button><button data-wl="en" class="${!pt ? 'on' : ''}">🇬🇧 EN</button></div>` : ''}
+        </div><div class="tiny muted">${pt ? 'Toque numa palavra para ouvir ou pedir uma aulinha.' : 'Tap a word to hear it or get a mini-lesson.'}</div>
+      <div class="wk-chips">${words.length ? words.map(w => `<button type="button" class="wk-chip ${isPractice(L, w) ? 'hard' : ''}" data-word="${esc(w)}">${isPractice(L, w) ? '🔥 ' : ''}${esc(w)}</button>`).join('')
+        : `<span class="tiny muted">${pt ? 'Ainda não tem palavras. Elas aparecem quando a semana tem Ortografia, ou escreva abaixo.' : 'No words yet. They appear when the week has Spelling, or add some below.'}</span>`}</div>
+      <form class="row wk-add" autocomplete="off"><input id="wk-new" placeholder="${pt ? '+ escrever palavras (separe por vírgula)' : '+ add words (comma separated)'}" autocapitalize="off" spellcheck="false"><button class="btn small">${pt ? 'Adicionar' : 'Add'}</button></form>
+      <div class="tiny muted">🔥 = ${pt ? 'palavras que você errou ou disse que não sabia' : 'words you got wrong or did not know'}</div>
+    </div>
+    <div class="card"><div class="row wrap"><b>🎮 ${pt ? 'Jogos' : 'Games'}</b><span class="tiny muted grow">${left ? (pt ? `+${coin} 🪙 por jogo terminado · ${left} hoje` : `+${coin} 🪙 per finished game · ${left} left today`) : (pt ? 'moedas de hoje já foram: agora é só treino 💪' : 'no more coins today: just practice 💪')}</span></div>
+      <div class="wk-games">${WK_GAMES.filter(g => !g.voice || speechOK).map(g => `<button type="button" class="btn wk-game" data-game="${g.id}" ${words.length < 3 ? 'disabled' : ''}><span class="wg-ic">${g.icon}</span><b>${pt ? g.pt : g.en}</b><span class="tiny muted">${pt ? g.dpt : g.den}</span></button>`).join('')}</div>
+      ${words.length < 3 ? `<div class="tiny muted">${pt ? 'Precisa de pelo menos 3 palavras.' : 'You need at least 3 words.'}</div>` : ''}</div>
+    <div class="card"><div class="row wrap"><b>🖨️ ${pt ? 'Folhas para imprimir' : 'Printable sheets'}</b><span class="tiny muted grow">${pt ? 'marque as atividades' : 'pick the activities'}</span></div>
+      <div class="wk-print">${WK_PRINT.map(a => `<label class="wk-pa ${pick.includes(a.id) ? 'on' : ''}"><input type="checkbox" value="${a.id}" ${pick.includes(a.id) ? 'checked' : ''}><span class="wg-ic">${a.icon}</span><span><b>${pt ? a.pt : a.en}</b><span class="tiny muted"> ${pt ? a.dpt : a.den}</span></span></label>`).join('')}</div>
+      <div class="row"><button class="btn primary grow" data-act="wkprint" ${words.length < 3 ? 'disabled' : ''}>🖨️ ${pt ? 'Imprimir' : 'Print'} (${Math.min(10, words.length)} ${pt ? 'palavras' : 'words'})</button></div></div>
+  </div>`;
+  $$('[data-wl]', el).forEach(b => b.onclick = () => { VIEW.wkLang = b.dataset.wl; renderWorkshop(); });
+  $$('[data-word]', el).forEach(b => b.onclick = () => wordMenu(b.dataset.word, L));
+  $('.wk-add', el).onsubmit = e => { e.preventDefault(); const v = $('#wk-new', el).value.split(/[,;\n]+/).map(x => x.trim()).filter(WORD_OK); if (!v.length) return; notePractice(L, v); save(); renderWorkshop(); };
+  $$('[data-game]', el).forEach(b => b.onclick = () => startWordGame(b.dataset.game, L));
+  $$('.wk-pa input', el).forEach(ch => ch.onchange = () => { ch.closest('label').classList.toggle('on', ch.checked); VIEW.wkPrint = $$('.wk-pa input', el).filter(x => x.checked).map(x => x.value); });
+  $('[data-act=wkprint]', el).onclick = () => { const acts = VIEW.wkPrint || []; if (!acts.length) { toast(pt ? 'Marque pelo menos uma atividade.' : 'Pick at least one activity.'); return; } printWorkshop(words, acts, L); };
+}
+function wordMenu(word, L) {
+  const pt = L === 'pt';
+  const hard = isPractice(L, word);
+  const m = openModal(`<div class="modal-head"><h3 class="wk-big">${esc(word)}</h3><button class="btn small" data-close>${pt ? 'Fechar' : 'Close'}</button></div>
+    <div class="modal-body"><div class="radio-col">
+      ${speechOK ? `<button class="btn" data-hear>🔊 ${pt ? 'Ouvir' : 'Listen'}</button>` : ''}
+      <button class="btn gold" data-idk>🤷 ${pt ? 'Não sei esse! Me ensina' : 'I don\'t know this one! Teach me'}</button>
+      ${hard ? `<button class="btn ghost" data-ok>✅ ${pt ? 'Já aprendi (tirar do 🔥)' : 'I\'ve got it (remove 🔥)'}</button>` : ''}</div></div>`);
+  const h = $('[data-hear]', m); if (h) h.onclick = () => speak(word, L);
+  $('[data-idk]', m).onclick = () => {
+    notePractice(L, [word]); save(); closeModal();
+    const sid = L === 'en' ? 'en_spell' : 'pt_ort';
+    openLesson({ subject: sid, lang: L, type: 'short', q: pt ? `Como se escreve "${word}"?` : `How do you spell "${word}"?`, answer: word },
+      null, { topic: pt ? `A grafia da palavra "${word}": a regra de ortografia que ela segue (acento, letras, sílaba tônica…), outras palavras com a mesma regra e um jeito de lembrar.${weekTopicFor(sid) ? ` Tema da semana: ${weekTopicFor(sid)}.` : ''}`
+        : `How to spell "${word}": the spelling rule or pattern it follows, other words with the same pattern and a trick to remember it.${weekTopicFor(sid) ? ` This week's topic: ${weekTopicFor(sid)}.` : ''}` });
+    if (currentScreen === 'workshop') renderWorkshop();
+  };
+  const ok = $('[data-ok]', m); if (ok) ok.onclick = () => { S.practice[L] = S.practice[L].filter(x => x.toLowerCase() !== word.toLowerCase()); save(); closeModal(); renderWorkshop(); };
+}
+// Escolhe até n palavras, priorizando as 🔥
+function gameWords(L, n) {
+  const all = workshopWords(L);
+  const hard = all.filter(w => isPractice(L, w)), rest = all.filter(w => !isPractice(L, w));
+  const rng = makeRng('wk' + uid());
+  return [...rng.shuffle(hard), ...rng.shuffle(rest)].slice(0, n);
+}
+function wkReward(pt) {
+  const t = today(); S.workshop = S.workshop || {};
+  const used = S.workshop[t] || 0;
+  if (used >= (S.settings.workshopPerDay ?? 5)) return 0;
+  S.workshop[t] = used + 1;
+  const c = S.settings.workshopCoins ?? 3;
+  if (c) addCoins(c, pt ? 'Oficina de palavras' : 'Word workshop');
+  return c;
+}
+/* Jogos na tela */
+function startWordGame(id, L) {
+  if (id === 'search') return wordSearchGame(L);
+  const pt = L === 'pt';
+  const words = gameWords(L, 6);
+  const g = WK_GAMES.find(x => x.id === id);
+  const rng = makeRng('g' + uid());
+  let i = 0, score = 0;
+  const vowels = /[aeiouáéíóúâêôãõàAEIOUÁÉÍÓÚÂÊÔÃÕÀ]/;
+  const step = () => {
+    if (i >= words.length) {
+      const coins = score >= Math.ceil(words.length / 2) ? wkReward(pt) : 0;
+      showCelebrate(score === words.length ? (pt ? 'Perfeito! 🎉' : 'Perfect! 🎉') : (pt ? 'Bom treino! 💪' : 'Good practice! 💪'), coins ? `+${coins}` : '',
+        pt ? `Você acertou <b>${score} de ${words.length}</b>. As que você errou ficaram com 🔥 para treinar mais.` : `You got <b>${score} of ${words.length}</b>. The ones you missed got a 🔥 so you can practise again.`, score === words.length ? 'wow' : 'happy');
+      if (currentScreen === 'workshop') renderWorkshop();
+      return;
+    }
+    const w = words[i];
+    let prompt = '';
+    if (id === 'dict') prompt = `<button class="btn big" data-hear>🔊 ${pt ? 'Ouvir de novo' : 'Listen again'}</button>`;
+    else if (id === 'flash') prompt = `<div class="wk-flash" id="wk-flash">${esc(w)}</div>`;
+    else if (id === 'scramble') { let s = w; for (let k = 0; k < 6 && s.toLowerCase() === w.toLowerCase(); k++) s = rng.shuffle([...w.toLowerCase()]).join(''); prompt = `<div class="wk-tiles">${[...s].map(ch => `<span>${esc(ch)}</span>`).join('')}</div>`; }
+    else if (id === 'vowels') prompt = `<div class="wk-gap">${[...w].map(ch => vowels.test(ch) ? '<span class="gap">_</span>' : `<span>${esc(ch)}</span>`).join('')}</div>`;
+    const m = openModal(`<div class="modal-head"><h3>${g.icon} ${pt ? g.pt : g.en} · ${i + 1}/${words.length}</h3><button class="btn small" data-close>${pt ? 'Sair' : 'Exit'}</button></div>
+      <div class="modal-body wk-play">${prompt}
+        <input id="wk-in" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="${pt ? 'escreva a palavra' : 'type the word'}" ${id === 'flash' ? 'disabled' : ''}>
+        <div class="lq-fb" id="wk-fb"></div></div>
+      <div class="modal-foot"><span class="grow"></span><button class="btn primary" data-check ${id === 'flash' ? 'disabled' : ''}>${pt ? 'Conferir' : 'Check'}</button></div>`);
+    const inp = $('#wk-in', m);
+    if (id === 'dict') { setTimeout(() => speak(w, L), 250); $('[data-hear]', m).onclick = () => speak(w, L); }
+    if (id === 'flash') setTimeout(() => { const f = $('#wk-flash', m); if (!f) return; f.classList.add('gone'); f.textContent = '❓'; inp.disabled = false; $('[data-check]', m).disabled = false; inp.focus(); }, Math.max(1800, 450 * w.length));
+    else inp.focus();
+    let done = false;
+    const check = () => {
+      if (done || !inp.value.trim()) return; done = true;
+      const ok = proofEq(inp.value.trim(), w);
+      if (ok) score++; else notePractice(L, [w]);
+      save();
+      $('#wk-fb', m).innerHTML = ok ? `<b class="okc">✓ ${pt ? 'Isso!' : 'Yes!'}</b> ${esc(w)}` : `<b class="badc">✗</b> ${pt ? 'Era' : 'It was'} <b class="wk-right">${esc(w)}</b>`;
+      if (id === 'flash' || id === 'dict') { const f = $('#wk-flash', m); if (f) { f.textContent = w; f.classList.remove('gone'); } }
+      $('.modal-foot', m).innerHTML = `<span class="grow"></span><button class="btn primary" data-next>${i + 1 < words.length ? (pt ? 'Próxima ▸' : 'Next ▸') : (pt ? 'Ver resultado' : 'See result')}</button>`;
+      $('[data-next]', m).onclick = () => { i++; step(); }; $('[data-next]', m).focus();
+    };
+    inp.onkeydown = e => { if (e.key === 'Enter') { e.preventDefault(); check(); } };
+    $('[data-check]', m).onclick = check;
+  };
+  step();
+}
+// Caça-palavras: grade gerada na hora. Toque na primeira e na última letra da palavra.
+function makeWordSearch(words, rng, big, lang) {
+  const W = words.map(w => w.toUpperCase().replace(/[^\p{L}]/gu, ''));
+  const size = clamp(Math.max(...W.map(w => w.length)) + 2, big ? 10 : 8, 13);
+  const g = Array.from({ length: size }, () => Array(size).fill(''));
+  const dirs = big ? [[0, 1], [1, 0], [1, 1], [-1, 1], [0, -1]] : [[0, 1], [1, 0], [1, 1]];
+  const placed = [];
+  W.forEach((w, wi) => {
+    for (let tries = 0; tries < 200; tries++) {
+      const [dr, dc] = rng.pick(dirs);
+      const r0 = rng.int(0, size - 1), c0 = rng.int(0, size - 1);
+      const r1 = r0 + dr * (w.length - 1), c1 = c0 + dc * (w.length - 1);
+      if (r1 < 0 || r1 >= size || c1 < 0 || c1 >= size) continue;
+      let ok = true;
+      for (let k = 0; k < w.length; k++) { const ch = g[r0 + dr * k][c0 + dc * k]; if (ch && ch !== w[k]) { ok = false; break; } }
+      if (!ok) continue;
+      for (let k = 0; k < w.length; k++) g[r0 + dr * k][c0 + dc * k] = w[k];
+      placed.push({ word: words[wi], up: w, r0, c0, r1, c1 }); return;
+    }
+  });
+  // letras de enchimento: em português também entram letras com acento (senão o acento entrega onde está a palavra)
+  const used = [...new Set(W.join(''))].filter(ch => /[^A-Z]/.test(ch));
+  const abc = 'ABCDEFGHIJLMNOPRSTUVZ'.repeat(3) + (lang === 'pt' ? 'ÁÉÊÍÓÔÃÕÇ' + used.join('') : used.join(''));
+  for (let r = 0; r < size; r++) for (let c = 0; c < size; c++) if (!g[r][c]) g[r][c] = abc[rng.int(0, abc.length - 1)];
+  return { size, g, placed };
+}
+function wordSearchGame(L) {
+  const pt = L === 'pt';
+  const words = gameWords(L, 7).filter(w => w.length <= 11);
+  const rng = makeRng('ws' + uid());
+  const P = makeWordSearch(words, rng, false, L);
+  const found = new Set(); let start = null;
+  const m = openModal(`<div class="modal-head"><h3>🔍 ${pt ? 'Caça-palavras' : 'Word search'}</h3><button class="btn small" data-close>${pt ? 'Sair' : 'Exit'}</button></div>
+    <div class="modal-body ws-body"><p class="tiny muted" style="margin:0">${pt ? 'Toque na <b>primeira</b> e na <b>última</b> letra de cada palavra.' : 'Tap the <b>first</b> and the <b>last</b> letter of each word.'}</p>
+      <div class="ws-grid" style="--n:${P.size}">${P.g.map((row, r) => row.map((ch, c) => `<button type="button" class="ws-c" data-r="${r}" data-c="${c}">${ch}</button>`).join('')).join('')}</div>
+      <div class="ws-list">${P.placed.map((p, k) => `<span data-k="${k}">${esc(p.word)}</span>`).join('')}</div></div>`, { wide: true });
+  const cell = (r, c) => $(`.ws-c[data-r="${r}"][data-c="${c}"]`, m);
+  const line = (a, b) => {
+    const dr = Math.sign(b.r - a.r), dc = Math.sign(b.c - a.c);
+    const len = Math.max(Math.abs(b.r - a.r), Math.abs(b.c - a.c));
+    if (!(a.r === b.r || a.c === b.c || Math.abs(b.r - a.r) === Math.abs(b.c - a.c))) return null;
+    return Array.from({ length: len + 1 }, (_, k) => [a.r + dr * k, a.c + dc * k]);
+  };
+  $$('.ws-c', m).forEach(b => b.onclick = () => {
+    const p = { r: Number(b.dataset.r), c: Number(b.dataset.c) };
+    if (!start) { start = p; b.classList.add('sel'); return; }
+    const cells = line(start, p); cell(start.r, start.c).classList.remove('sel');
+    const s0 = start; start = null;
+    if (!cells) { b.classList.add('sel'); start = p; return; }
+    const k = P.placed.findIndex((x, j) => !found.has(j) && ((x.r0 === s0.r && x.c0 === s0.c && x.r1 === p.r && x.c1 === p.c) || (x.r1 === s0.r && x.c1 === s0.c && x.r0 === p.r && x.c0 === p.c)));
+    if (k < 0) { cells.forEach(([r, c]) => { const e = cell(r, c); e.classList.add('miss'); setTimeout(() => e.classList.remove('miss'), 350); }); return; }
+    found.add(k);
+    cells.forEach(([r, c]) => cell(r, c).classList.add('found', 'f' + (k % 6)));
+    $(`.ws-list [data-k="${k}"]`, m).classList.add('done');
+    if (speechOK) speak(P.placed[k].word, L);
+    if (found.size === P.placed.length) setTimeout(() => {
+      const coins = wkReward(pt);
+      showCelebrate(pt ? 'Achou todas! 🔍🎉' : 'You found them all! 🔍🎉', coins ? `+${coins}` : '', pt ? 'Agora tente escrever cada uma sem olhar. ✍️' : 'Now try writing each one without looking. ✍️', 'wow');
+      if (currentScreen === 'workshop') renderWorkshop();
+    }, 500);
+  });
+}
+/* Folhas para imprimir */
+function printWorkshop(allWords, acts, L) {
+  const pt = L === 'pt';
+  const words = allWords.slice(0, 10);
+  const rng = makeRng('pw' + uid());
+  const T = id => { const a = WK_PRINT.find(x => x.id === id); return `<h3 class="wk-h">${a.icon} ${pt ? a.pt : a.en} <span>— ${pt ? a.dpt : a.den}</span></h3>`; };
+  const blocks = {
+    rainbow: () => `${T('rainbow')}<div class="wk-tbl rainbow">${words.map(w => `<div class="wr"><b>${esc(w)}</b>${['#e03131', '#f08c00', '#2f9e44'].map(c => `<i style="border-color:${c}"><em style="background:${c}"></em></i>`).join('')}</div>`).join('')}</div>`,
+    lscwc: () => `${T('lscwc')}<div class="wk-tbl lscwc"><div class="wr hd"><span>${pt ? 'Olhe 👀' : 'Look 👀'}</span><span>${pt ? 'Escreva ✍️' : 'Write ✍️'}</span><span>${pt ? 'Confira ✔' : 'Check ✔'}</span><span>${pt ? 'De novo ✍️' : 'Again ✍️'}</span><span>✔</span></div>${words.map(w => `<div class="wr"><b>${esc(w)}</b><i></i><i class="sm"></i><i></i><i class="sm"></i></div>`).join('')}</div>`,
+    trace: () => `${T('trace')}<div class="wk-trace">${words.slice(0, 6).map(w => `<div class="tr"><span class="dot">${esc(w)}</span><span class="dot">${esc(w)}</span><i></i></div>`).join('')}</div>`,
+    search: () => { const P = makeWordSearch(words.filter(w => w.length <= 12).slice(0, 8), rng, true, L);
+      return `${T('search')}<div class="wk-ws"><div class="g" style="--n:${P.size}">${P.g.flat().map(ch => `<span>${ch}</span>`).join('')}</div><div class="l">${P.placed.map(p => `<span>☐ ${esc(p.word)}</span>`).join('')}</div></div>`; },
+    pyramid: () => `${T('pyramid')}<div class="wk-pyr">${words.slice(0, 4).map(w => `<div class="py"><b>${esc(w)}</b>${[...w].map((_, k) => `<i style="width:${(k + 1) * 1.15 + 1}em"></i>`).join('')}</div>`).join('')}</div>`,
+    bubble: () => `${T('bubble')}<div class="wk-bub">${words.slice(0, 3).map(w => `<div class="bb"><span class="ex">${esc(w)}</span><i></i></div>`).join('')}</div>`,
+    vowelcol: () => `${T('vowelcol')}<div class="wk-tbl vowelcol"><div class="leg">${pt ? 'Vogais' : 'Vowels'}: 🟥 · ${pt ? 'Consoantes' : 'Consonants'}: 🟦</div>${words.map(w => `<div class="wr"><b>${esc(w)}</b><i></i></div>`).join('')}</div>`,
+    code: () => { const syms = rng.shuffle(['★', '♥', '◆', '●', '▲', '■', '☀', '☾', '♣', '♠', '✿', '⚡', '☂', '♪', '✚', '⬟', '❄', '✈', '⚑', '☯', '⌘', '✦', '♞', '☘', '⚓', '♛', '✪', '☎', '✂', '⌛', '⚙', '✉', '☕', '⚘', '♻', '⚖']);
+      const letters = [...new Set(words.slice(0, 6).join('').toUpperCase().replace(/[^\p{L}]/gu, ''))].sort();
+      const key = Object.fromEntries(letters.map((ch, k) => [ch, syms[k % syms.length] + (k >= syms.length ? "'" : '')]));
+      return `${T('code')}<div class="wk-key">${letters.map(ch => `<span><b>${key[ch]}</b>=${ch}</span>`).join('')}</div><div class="wk-codes">${words.slice(0, 6).map(w => `<div class="cd"><span class="sy">${[...w.toUpperCase()].map(ch => key[ch] || ch).join(' ')}</span><i></i></div>`).join('')}</div>`; },
+    scramble: () => `${T('scramble')}<div class="wk-tbl scr">${words.map(w => { let s = w.toLowerCase(); for (let k = 0; k < 6 && s === w.toLowerCase(); k++) s = rng.shuffle([...w.toLowerCase()]).join(''); return `<div class="wr"><b class="mono">${esc(s.split('').join(' '))}</b><i></i></div>`; }).join('')}</div>`,
+    abc: () => `${T('abc')}<div class="wk-abc"><div class="ws">${rng.shuffle(words).map(w => `<span>${esc(w)}</span>`).join('')}</div><ol>${words.map(() => '<li><i></i></li>').join('')}</ol></div>`,
+    silly: () => { const sh = rng.shuffle(words); const pairs = []; for (let k = 0; k + 1 < sh.length && pairs.length < 3; k += 2) pairs.push([sh[k], sh[k + 1]]);
+      return `${T('silly')}<div class="wk-silly">${pairs.map(([a, b]) => `<div class="sl"><b>${esc(a)} + ${esc(b)}</b><i></i><i></i></div>`).join('')}</div>`; },
+    draw: () => `${T('draw')}<div class="wk-draw">${words.slice(0, 4).map(w => `<div class="dw"><div class="box"></div><b>${esc(w)}</b><i></i></div>`).join('')}</div>`,
+  };
+  // monta as folhas medindo de verdade: cada atividade entra na folha atual se couber; senão abre outra
+  const root = $('#print-root'); root.innerHTML = '';
+  const head = k => `<header class="p-head"><div><div class="p-brand">✏️ ${pt ? 'Oficina de palavras' : 'Word workshop'}</div><div class="p-day">${esc(S.name)} · ${fmtDM(today())}<span class="pg-n"></span></div></div><div class="p-score">${pt ? 'Lápis de cor 🖍️' : 'Colour pencils 🖍️'}</div></header>`;
+  let page = null;
+  const newPage = () => { page = document.createElement('section'); page.className = 'page wk-page'; page.innerHTML = head(); root.appendChild(page); };
+  acts.filter(a => blocks[a]).forEach(a => {
+    if (!page) newPage();
+    const blk = document.createElement('div'); blk.className = 'wk-blk'; blk.innerHTML = blocks[a]();
+    page.appendChild(blk);
+    if (page.scrollHeight > page.clientHeight + 1 && page.querySelectorAll('.wk-blk').length > 1) { page.removeChild(blk); newPage(); page.appendChild(blk); }
+  });
+  const all = $$('.wk-page', root);
+  if (all.length > 1) all.forEach((pg, k) => { $('.pg-n', pg).textContent = ` · ${k + 1}/${all.length}`; });
+  setTimeout(() => window.print(), 60);
 }
 
 /* ---------- Área dos pais ---------- */
@@ -2748,10 +3413,17 @@ function pSettings(box) {
       <label class="field">Recuperação atrasada vale (% da recompensa)<input type="number" id="s-late" value="${latePct()}"></label>
       <label class="field">Moedas por acerto nos extras<input type="number" id="s-xpc" value="${st.extraPerCorrect}"></label>
       <label class="field">Perguntas por rodada de extras<input type="number" id="s-xsize" value="${st.extraSetSize}"></label>
-      <label class="field">Rodadas de extras com moedas/dia<input type="number" id="s-xsets" value="${st.extraSetsPerDay}"></label></div>
-      <p class="tiny muted">A penalidade precisa ser maior que a recompensa. Dias não feitos podem ser recuperados até a sexta seguinte: recuperar todos vale essa % da recompensa (0 = sem recuperação).</p></div>
+      <label class="field">Rodadas de extras com moedas/dia<input type="number" id="s-xsets" value="${st.extraSetsPerDay}"></label>
+      <label class="field">Moedas por jogo da Oficina de palavras<input type="number" id="s-wkc" value="${st.workshopCoins ?? 3}"></label>
+      <label class="field">Jogos da Oficina com moedas/dia<input type="number" id="s-wkd" value="${st.workshopPerDay ?? 5}"></label></div>
+      <p class="tiny muted">Valores de uma semana completa (7 dias): se a semana começar no meio, a recompensa e a penalidade são proporcionais aos dias obrigatórios. A penalidade precisa ser maior que a recompensa. Dias não feitos podem ser recuperados até a sexta seguinte: recuperar todos vale essa % da recompensa (0 = sem recuperação).</p></div>
     <div class="card"><b>Tarefas</b><div class="form-grid" style="margin-top:6px">
       ${Server.me ? '' : `<label class="field">Nome<input id="s-name" value="${esc(S.name)}"></label>`}
+      <label class="field">Quantidade por dia<select id="s-cmode"><option value="auto" ${st.countMode !== 'manual' ? 'selected' : ''}>Automática (por matéria)</option><option value="manual" ${st.countMode === 'manual' ? 'selected' : ''}>Manual (números abaixo)</option></select></label>
+      <label class="field">Perguntas de cada matéria por dia (automático)<input type="number" id="s-per" value="${st.perSubject || 2}"></label>
+      <label class="field">Leitura diária (capítulo do livro da semana)<select id="s-dread"><option value="1" ${st.dailyReading ? 'selected' : ''}>Ligada</option><option value="0" ${!st.dailyReading ? 'selected' : ''}>Desligada</option></select></label>
+      <label class="field">Nível padrão da leitura<select id="s-rlevel">${READ_LEVELS.map(([k, l]) => `<option value="${k}" ${(st.readLevel || 'at') === k ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
+      <label class="field">A Lumi lê as aulinhas em voz alta<select id="s-avoice"><option value="1" ${st.autoVoice ? 'selected' : ''}>Sim, sozinha</option><option value="0" ${!st.autoVoice ? 'selected' : ''}>Só no 🔊</option></select></label>
       <label class="field">Mínimo de perguntas/dia<input type="number" id="s-min" value="${st.minPerDay}"></label>
       <label class="field">Máximo de perguntas/dia<input type="number" id="s-max" value="${st.maxPerDay}"></label>
       <label class="field">Gabarito<select id="s-gab"><option value="1" ${st.gabaritoAfterFinish ? 'selected' : ''}>Libera depois de concluir</option><option value="0" ${!st.gabaritoAfterFinish ? 'selected' : ''}>Sempre disponível</option></select></label>
@@ -2766,7 +3438,10 @@ function pSettings(box) {
     if (penalty <= reward) { toast('A penalidade precisa ser MAIOR que a recompensa.'); return; }
     Object.assign(st, {
       reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
-      extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10), minPerDay: clamp(num('#s-min', st.minPerDay), 1, 15), maxPerDay: clamp(num('#s-max', st.maxPerDay), 3, 25),
+      extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10), minPerDay: clamp(num('#s-min', st.minPerDay), 1, 15), maxPerDay: clamp(num('#s-max', st.maxPerDay), 3, 40),
+      workshopCoins: clamp(num('#s-wkc', st.workshopCoins ?? 3), 0, 50), workshopPerDay: clamp(num('#s-wkd', st.workshopPerDay ?? 5), 0, 20),
+      countMode: $('#s-cmode').value, perSubject: clamp(num('#s-per', st.perSubject || 2), 1, 4), dailyReading: $('#s-dread').value === '1',
+      readLevel: $('#s-rlevel').value, autoVoice: $('#s-avoice').value === '1',
       gabaritoAfterFinish: $('#s-gab').value === '1', voice: $('#s-voice').value === '1',
     });
     if (st.maxPerDay < st.minPerDay) st.maxPerDay = st.minPerDay;

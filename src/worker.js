@@ -211,14 +211,14 @@ const PLAN_SCHEMA = {
     message: { type: 'string', description: 'Mensagem curta e animada da mascote Lumi para o estudante, em português.' },
     passages: {
       type: 'array',
-      description: 'Textos de leitura escritos para o estudante (só para matérias de leitura com nível escolhido). Pode ser vazia.',
+      description: 'Leitura diária: um capítulo do "livro da semana" para cada dia marcado com leitura. Pode ser vazia se nenhum dia tiver leitura.',
       items: {
         type: 'object',
         properties: {
           subject: { type: 'string', enum: READ_IDS },
           day: { type: 'string', enum: DOWS },
           title: { type: 'string' },
-          text: { type: 'string', description: 'Texto original, 120–200 palavras, no idioma da matéria, em parágrafos separados por \n.' },
+          text: { type: 'string', description: 'Capítulo original no idioma da matéria (tamanho indicado na tarefa), em parágrafos separados por \n.' },
         },
         required: ['subject', 'day', 'title', 'text'],
         additionalProperties: false,
@@ -238,6 +238,31 @@ const EXPLAIN_SCHEMA = {
     example: { type: 'string', description: 'Um exemplo concreto ou analogia do dia a dia (1–2 frases).' },
   },
   required: ['title', 'explanation', 'example'],
+  additionalProperties: false,
+};
+const OBJ_TYPES_NOTE = 'Só "mc", "short" ou "num" (correção automática).';
+const LESSON_SCHEMA = {
+  type: 'object',
+  properties: {
+    title: { type: 'string', description: 'Título curto da aulinha (ex.: "Acentuação: as oxítonas").' },
+    explanation: { type: 'array', items: { type: 'string' }, description: '2 a 4 parágrafos curtos (2–3 frases cada), do mais simples ao mais completo.' },
+    examples: { type: 'array', items: { type: 'string' }, description: '2 ou 3 exemplos concretos, cada um em 1 frase (pode usar "→").' },
+    tip: { type: 'string', description: 'Um truque para lembrar (macete), 1 frase.' },
+    practice: { type: 'array', items: qSchema(false), description: '3 ou 4 exercícios de prática sobre o MESMO conteúdo, do mais fácil ao mais difícil. ' + OBJ_TYPES_NOTE },
+  },
+  required: ['title', 'explanation', 'examples', 'tip', 'practice'],
+  additionalProperties: false,
+};
+const READING_SCHEMA = {
+  type: 'object',
+  properties: {
+    bookTitle: { type: 'string', description: 'Título do livro (o mesmo do capítulo anterior, se for continuação).' },
+    title: { type: 'string', description: 'Título do capítulo, ex.: "Capítulo 3: A porta escondida".' },
+    text: { type: 'string', description: 'O capítulo, em parágrafos separados por \n.' },
+    summary: { type: 'string', description: 'Resumo do capítulo em 1–2 frases (para continuar a história depois).' },
+    questions: { type: 'array', items: qSchema(false), description: 'Exatamente 4: 1 "open" pedindo um resumo do capítulo em 2–3 frases, e 3 de compreensão ("mc" ou "short").' },
+  },
+  required: ['bookTitle', 'title', 'text', 'summary', 'questions'],
   additionalProperties: false,
 };
 const OPEN_SCHEMA = {
@@ -312,12 +337,16 @@ Regras de qualidade:
 
 async function handlePlan(env, b, ctx) {
   const days = (b.days || []).filter(d => DOWS.includes(d.dow) && d.n > 0);
+  const LEVELS = { below: 'mais fácil (cerca de 1 ano abaixo)', at: 'no nível do ano', above: 'acima (cerca de 1 ano acima)', way: 'bem acima (cerca de 2 anos acima)' };
+  days.forEach(d => { d.read = d.read && READ_IDS.includes(d.read.subject) ? { subject: d.read.subject, level: LEVELS[d.read.level] || LEVELS.at } : null; });
+  const reading = days.some(d => d.read);
   if (!days.length) throw new HttpError(400, 'Nenhum dia com perguntas.');
   const total = days.reduce((a, d) => a + d.n, 0);
   const images = (b.images || []).slice(0, 4);
   const text = String(b.text || '').slice(0, 6000);
   if (!text.trim() && !images.length) throw new HttpError(400, 'Conte o que você está aprendendo (ou mande uma foto).');
-  const dayList = days.map(d => `- ${d.dow} (${d.label || d.dow}): ${d.n} perguntas`).join('\n');
+  const dayList = days.map(d => `- ${d.dow} (${d.label || d.dow}): ${d.n} perguntas${d.read ? ` · leitura do dia: ${d.read.subject} (nível: ${d.read.level}) — 3 dessas perguntas são sobre o capítulo` : ''}`).join('\n');
+  const n = yearNum(b);
   const content = [
     ...images.flatMap((img, i) => [{ type: 'text', text: `Foto ${i + 1} (material da escola):` }, { type: 'image', source: { type: 'base64', media_type: img.type || 'image/jpeg', data: img.data } }]),
     { type: 'text', text: `O que o estudante (ou os pais) escreveu sobre a semana na escola, por matéria:
@@ -330,7 +359,7 @@ Tarefa:
 1. Identifique os assuntos de cada matéria mencionados (texto e fotos). Em "topics", resuma em 1 linha cada matéria encontrada (no idioma da matéria).
 2. Crie EXATAMENTE ${total} perguntas, distribuídas nestes dias (campo "day"):
 ${dayList}
-3. Em cada dia, misture 2 a 4 matérias; ao longo da semana, cubra todas as matérias citadas, com mais peso nas que tiverem mais conteúdo.
+3. Distribuição: TODO DIA tem cerca de ${Math.max(1, Math.min(4, Number(b.perSubject) || 2))} perguntas de CADA matéria citada (fora as 3 da leitura do dia). Se a conta do dia não fechar, use 1 a 3 por matéria, mas não deixe nenhuma matéria citada de fora num dia. Ao longo da semana, varie os subtemas de cada matéria (não repita a mesma ideia em dias diferentes).
 4. Use apenas as matérias citadas. Se algo não se encaixar claramente, escolha a matéria mais próxima.
    Corrija erros de digitação óbvios nos tópicos escritos pelo estudante (ex.: em matemática, "surfs" = surds; "simutanious" = simultaneous) e use o nome certo em "topics".
 5. Ortografia/Spelling — respeite o [modo] indicado:
@@ -339,10 +368,12 @@ ${dayList}
    - "a Lumi escolhe": escolha 8–10 palavras adequadas ao ano (UK spelling lists / dificuldades ortográficas do português nessa série).
    Em "topics", liste as palavras escolhidas.
    Em cada dia que tiver Ortografia ou Spelling, inclua UMA pergunta "proof" (caça-erros) dessa matéria.
-6. Leitura/Reading/Guided Reading/Literatura com [nível do texto]: ESCREVA textos originais em "passages" (120–200 palavras no primário, até 350 a partir do Year 7; interessantes para a idade; histórias ou textos informativos; se ela citou um livro ou tema, inspire-se nele sem copiar trechos).
-   Níveis em relação ao ano do estudante: "mais fácil" = cerca de 1 ano abaixo; "no meu nível" = o ano dele(a); "acima" = cerca de 1 ano acima; "bem acima" = cerca de 2 anos acima.
-   Crie um texto para cada dia em que essa matéria tiver perguntas (no máximo 3 textos por matéria na semana). Nesses dias, TODAS as perguntas dessa matéria devem ser sobre o texto do dia (comece com "No texto…"/"In the text…").
-   Se a matéria de leitura NÃO tiver [nível do texto], deixe sem texto e siga a regra normal de leitura.
+6. ${reading ? `LEITURA DIÁRIA — "livro da semana": para cada dia marcado com "leitura do dia", escreva em "passages" um capítulo de um livro original (campo "subject" = a matéria indicada; "day" = o dia).
+   - Um livro em português para os dias de matérias em português e outro em inglês para as de inglês. Cada capítulo continua a história do capítulo anterior do mesmo idioma (personagens fixos, gancho no fim para dar vontade de ler o próximo).
+   - "title": "Nome do livro — Capítulo N: título do capítulo".
+   - Tamanho: ${n <= 2 ? '120–200' : n <= 6 ? '250–400' : '400–600'} palavras. Nível de leitura conforme indicado para o dia, em relação ao ano do estudante. Em literatura (pt_lit/en_lit) a partir do IGCSE, pode ser um conto ou crônica original com recursos literários para analisar.
+   - Se o estudante citou um livro, autor ou tema nessas matérias, inspire-se (sem copiar trechos de obras reais).
+   - Nesse dia, EXATAMENTE 3 perguntas dessa matéria são sobre o capítulo: 1 "open" pedindo o resumo do capítulo em 2–3 frases ("Resuma o capítulo de hoje…"/"Summarise today's chapter…") e 2 de compreensão ("mc" ou "short"; comece com "No capítulo…"/"In the chapter…"). Essas 3 contam no total do dia.` : 'Sem leitura diária nesta semana: "passages" vazia. Em leitura, se não houver texto, siga a regra normal de leitura.'}
 7. "message": 1–2 frases da Lumi (corujinha) animando o estudante, em português.` },
   ];
   const out = await claude(env, ctx, {
@@ -353,18 +384,52 @@ ${dayList}
 }
 
 async function handleMore(env, b, ctx) {
-  const n = Math.max(1, Math.min(15, Number(b.n) || 5));
+  const n = Math.max(1, Math.min(15, Number(b.n) || 5));  // (reforço também usa este limite)
   const subjects = (b.subjects || []).filter(s => SUBJECT_IDS.includes(s));
   const content = [{ type: 'text', text: `Assuntos da semana:
 ${String(b.topics || '').slice(0, 3000) || '(revisão geral do conteúdo do ano escolar)'}
 ${subjects.length ? `\nUse só estas matérias: ${subjects.join(', ')}. Se alguma delas não tiver assunto listado acima, faça uma revisão do conteúdo típico dessa matéria para o ano escolar.` : '\nMisture as matérias da semana (inclua Math e English se fizerem parte das matérias do estudante).'}
 ${b.objectiveOnly ? '\nNÃO use o tipo "open" — só mc, short, num e proof (correção automática). Se houver Spelling/Ortografia, inclua 1 "proof".' : ''}
+${Array.isArray(b.focus) && b.focus.length ? `\nREFORÇO: o estudante errou ou disse que não sabia estas perguntas. Crie perguntas NOVAS e parecidas (mesmo conteúdo, outros números/palavras/exemplos), começando pelas mais fáceis, para ele aprender de verdade:\n- ${b.focus.slice(0, 15).map(x => String(x).slice(0, 200)).join('\n- ')}` : ''}
 ${b.exclude?.length ? `\nNão repita estas perguntas:\n- ${b.exclude.slice(0, 60).map(x => String(x).slice(0, 120)).join('\n- ')}` : ''}
 
 Crie exatamente ${n} perguntas novas, curtas e variadas.` }];
   return claude(env, ctx, {
     model: env.MODEL_FAST || 'claude-haiku-5-5', effort: env.EFFORT_FAST || 'low',
     system: studentProfile(b.name, b.year, b.mine, yearNum(b), b.levels), content, schema: MORE_SCHEMA, maxTokens: 8000,
+  });
+}
+
+// Aulinha: explicação em partes + exemplos + macete + exercícios de prática.
+async function handleLesson(env, b, ctx) {
+  const lang = b.lang === 'en' ? 'en' : 'pt';
+  const content = [{ type: 'text', text: `Matéria: ${b.subjectName || b.subject}
+${b.topic ? `Assunto pedido: ${String(b.topic).slice(0, 300)}\n` : ''}${b.q ? `Pergunta em que o estudante travou: ${String(b.q).slice(0, 600)}\n` : ''}${b.options?.length ? `Opções: ${b.options.join(' | ')}\n` : ''}${b.wrong ? `O que ele respondeu (errado): ${String(b.wrong).slice(0, 200)}\n` : ''}${b.context ? `Contexto (assuntos da semana / texto lido): ${String(b.context).slice(0, 2500)}\n` : ''}
+Escreva, em ${LANG_NAME(lang)}, uma AULINHA da Lumi sobre o conteúdo por trás disso, para um estudante (${level(b)}) que disse que não sabe o assunto:
+- comece do zero, com linguagem simples e animada (sem infantilizar), frases curtas, como uma boa professora particular;
+- explique a regra ou o conceito passo a passo, mostre exemplos concretos e dê um macete para lembrar;
+- se for ortografia/acentuação, explique a regra (ex.: quando se usa acento agudo, por que "você" tem acento) e mostre palavras que seguem e que não seguem a regra;
+- ${b.done ? `ele já respondeu; pode usar a pergunta como exemplo e explicar a resposta certa (${b.answer || 'resposta livre'})` : 'NÃO dê a resposta da pergunta em que ele travou: explique com outros exemplos'};
+- em "practice", 3 ou 4 exercícios curtos do MESMO conteúdo, do mais fácil ao mais difícil, para ele treinar na hora (${OBJ_TYPES_NOTE} "text" vazio, "errors" vazia, "accept" com variações aceitáveis).
+Fatos sempre corretos.` }];
+  return claude(env, ctx, {
+    model: env.MODEL_LESSON || env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low',
+    system: studentProfile(b.name, b.year, b.mine, yearNum(b), b.levels) + '\nAgora você é a Lumi, professora particular paciente e muito clara.', content, schema: LESSON_SCHEMA, maxTokens: 6000,
+  });
+}
+// Livro extra: um capítulo novo (continua o livro do estudante) + resumo + perguntas.
+async function handleReading(env, b, ctx) {
+  const lang = b.lang === 'en' ? 'en' : 'pt';
+  const n = yearNum(b);
+  const LEVELS = { below: 'mais fácil (cerca de 1 ano abaixo do ano dele)', at: 'no nível do ano dele', above: 'acima (cerca de 1 ano acima)', way: 'bem acima (cerca de 2 anos acima)' };
+  const prev = (Array.isArray(b.chapters) ? b.chapters : []).slice(-6).map((c, i) => `- ${String(c.title || '').slice(0, 120)}: ${String(c.summary || '').slice(0, 300)}`).join('\n');
+  const content = [{ type: 'text', text: `Escreva o próximo capítulo de um livro original em ${LANG_NAME(lang)} para o estudante ler (${level(b)}).
+${b.bookTitle && prev ? `É a continuação do livro "${String(b.bookTitle).slice(0, 120)}". Capítulos anteriores:\n${prev}\nMantenha personagens e mundo; avance a história e termine com um gancho.` : `Comece um livro novo${b.theme ? ` sobre: ${String(b.theme).slice(0, 200)}` : ''} (aventura, mistério, animais, amizade ou ciência — escolha algo envolvente para a idade). Este é o Capítulo 1.`}
+Nível de leitura: ${LEVELS[b.level] || LEVELS.at}. Tamanho: ${n <= 2 ? '150–250' : n <= 6 ? '300–450' : '450–650'} palavras.
+Depois, 4 perguntas: 1 "open" pedindo o resumo do capítulo em 2–3 frases e 3 de compreensão ("mc" ou "short") sobre o capítulo (subject: ${lang === 'en' ? 'en_read' : 'pt_leit'}).` }];
+  return claude(env, ctx, {
+    model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low',
+    system: studentProfile(b.name, b.year, b.mine, yearNum(b), b.levels), content, schema: READING_SCHEMA, maxTokens: 8000,
   });
 }
 
@@ -385,9 +450,9 @@ Se ela já respondeu errado, diga com carinho onde pensar de novo.` }];
 }
 
 async function handleGrade(env, b, ctx) {
-  const images = (b.images || []).slice(0, 3);
+  const images = (b.images || []).slice(0, 6);
   if (!images.length) throw new HttpError(400, 'Mande a foto da folha.');
-  const qs = (b.questions || []).slice(0, 30);
+  const qs = (b.questions || []).slice(0, 45);
   const list = qs.map((q, i) => `${i + 1}. [${q.type}] ${q.q}${q.options?.length ? ` (opções: ${q.options.join(' | ')})` : ''} → resposta esperada: ${q.type === 'open' ? '(resposta livre)' : q.answer}${q.accept?.length ? ` (também aceitar: ${q.accept.join(', ')})` : ''}`).join('\n');
   const content = [
     ...images.flatMap((img, i) => [{ type: 'text', text: `Foto ${i + 1} da folha respondida:` }, { type: 'image', source: { type: 'base64', media_type: img.type || 'image/jpeg', data: img.data } }]),
@@ -443,7 +508,7 @@ Para cada número: "ok" se responde à pergunta de forma correta e razoável par
 }
 
 /* ---------------- Roteador ---------------- */
-const AI_HANDLERS = { plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen };
+const AI_HANDLERS = { plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen, lesson: handleLesson, reading: handleReading };
 
 async function api(req, env, url) {
   const path = url.pathname, m = req.method;

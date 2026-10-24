@@ -64,35 +64,54 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
    - **Leitura/Reading/Guided Reading:** ela escolhe o nível do texto (⬇️ mais fácil, 🎯 no nível dela, ⬆️ acima ou 🚀 bem acima). A Lumi **escreve o texto** e as perguntas são sobre ele. O texto abre antes das perguntas e sai impresso no topo da folha.
    - Também pode mandar **foto do worksheet ou da agenda**. O Claude cria as perguntas de sábado a sexta no nível do ano escolhido.
 2. **Todo dia** ela abre a tarefa:
-   - **na tela:** cartões curtos, tudo visível sem rolar;
-   - **🖨️ Imprimir:** uma página A4 por dia, com gabarito opcional para os pais em página separada.
+   - **Quantidade:** automática, cerca de **2 perguntas de cada matéria** todo dia (sábado e domingo +2, sexta −2). Os pais podem mudar para manual.
+   - **📖 Leitura diária:** cada dia começa com um capítulo do **livro da semana**, escrito pela Lumi.
+     - Os capítulos alternam entre um livro em português e outro em inglês, e a história continua de um dia para o outro.
+     - Depois do capítulo: um **resumo** e 2 perguntas de compreensão.
+     - O botão **🔊** lê o capítulo em voz alta, e **🖨️ Imprimir só o texto** imprime só a leitura.
+   - **Na tela:** a tarefa é dividida em **partes** (1, 2, 3…) que cabem na tela sem rolar; as bolinhas ficam verdes quando a parte está completa.
+   - **🖨️ Imprimir:** o texto numa folha própria e as perguntas em quantas folhas A4 forem precisas, com gabarito opcional para os pais.
 3. **Ajuda em cada pergunta:**
    - **💡** dá uma dica. Com **"Me explica mais"**, o Claude dá uma explicação nova, sem entregar a resposta.
-   - **?** abre uma mini-aula sobre o conteúdo da pergunta: conceito + exemplo. Depois de concluir, explica também por que a resposta certa é a certa.
+   - **? Aulinha:** explicação em partes, exemplos e um macete, lida em voz alta pela Lumi. Depois, **"Vamos treinar"**: 3–4 exercícios na hora, com correção.
+   - **🧠 Reforço:** perguntas erradas (ou em que ela pediu a aulinha) vão para o Reforço, nos Extras. A Lumi cria perguntas novas parecidas, e quando ela acerta, a pergunta sai da lista.
+   - **🤷 Não sei a regra** (no Caça-erros) abre uma aulinha sobre a regra de ortografia, por exemplo acentuação.
+   - **🔊 A Lumi fala:** todo balão da Lumi tem um botão para ouvir.
 4. **Correção:**
    - **Na tela:** as objetivas são corrigidas na hora, e as **livres são corrigidas pela Lumi** com um comentário.
    - **No papel:** em **📄 Corrigir folha**, ela tira uma foto e o Claude lê a letra dela e corrige tudo (livres inclusive). Ou ela corrige sozinha com o gabarito, marcando ✓/✗.
    - Os pais veem todas as livres com o comentário da Lumi e podem confirmar ou mudar.
-5. **Sexta** é o dia de entregar a semana. **⭐ Extras** dão moedas a mais. A matéria é escolhida entre as do próprio estudante (ou misturado). Sem assunto na semana, viram revisão do ano. As moedas compram itens na **🛒 Lojinha**.
+5. **Sexta** é o dia de entregar a semana. **⭐ Extras** dão moedas a mais:
+   - **📖 Livro extra:** o próximo capítulo do livro dela (em português ou inglês), com resumo e perguntas;
+   - **🧠 Reforço:** treinar o que errou;
+   - **🎲 Quiz extra:** por matéria, ou misturado;
+   - **✏️ Oficina de palavras:** as palavras de Ortografia/Spelling da semana e as que ela errou (🔥).
+     - Tocar numa palavra: ouvir, ou **"Não sei esse! Me ensina"**, que abre uma aulinha sobre a regra.
+     - **Jogos na tela** (+3 🪙 por jogo, até 5 por dia): 🔍 Caça-palavras, 🎧 Ditado da Lumi, ⚡ Pisca-pisca (a palavra some e ela escreve de memória), 🧩 Embaralhadas, 🕳️ Vogais sumidas.
+     - **Folhas para imprimir:** 🌈 Palavras arco-íris, 👀 Olhe-cubra-escreva-confira, ✍️ Caligrafia, 🔍 Caça-palavras, 🔺 Pirâmide de letras, 🫧 Letras-bolha, 🎨 Vogais coloridas, 🕵️ Código secreto, 🧩 Letras embaralhadas, 🔤 Ordem alfabética, 🤪 Frase maluca, 🖍️ Palavra-desenho.
+
+   As moedas compram itens na **🛒 Lojinha**.
 
 ## 2. Moedas e lojinha
 
 | Evento | Moedas |
 |---|---|
-| Semana entregue (todos os dias feitos, até sexta) | **+100** |
-| Semana não entregue | **−150** (maior que a recompensa) |
+| Semana entregue (todos os dias feitos, até sexta) | **+100** numa semana completa; proporcional aos dias se a semana começou no meio (planejada na sexta = só 1 dia = +14) |
+| Semana não entregue | **−150** (maior que a recompensa; também proporcional) |
 | ⏳ Recuperação: dias que faltaram, feitos até a sexta seguinte | **metade da recompensa** (+50 se recuperar todos, dividido entre os dias) |
 | Exercícios extras | **+2 por acerto** (rodadas de 5, até 3 rodadas pagas por dia) |
+| Jogos da Oficina de palavras | **+3 por jogo** (até 5 por dia) |
 
-Lojinha (**135 itens**, do mais barato ao mais caro em cada categoria):
+Lojinha (do mais barato ao mais caro em cada categoria):
+- 🐾 **Trocar de bicho:** a Lumi pode virar 🐶 **Cachorrinho** (2.000), 🐱 **Gatinho** (2.000) ou 🐼 **Pandinha** (2.500). São desenhos originais, e chapéus, óculos, colares e cores servem em todos. Mais bichos virão aos poucos.
 - 🎩 18 chapéus, 👓 9 óculos e 🎀 9 acessórios.
 - 🦋 7 asas e capas, incluindo a mochila a jato.
 - 🎨 10 cores da Lumi, incluindo a **Arco-íris** e a **Galáxia**.
 - 🐾 15 amiguinhos, do pintinho ao **dragãozinho**.
 - ✨ 9 efeitos ao redor da Lumi: corações, notas musicais, neve, arco-íris, **aura dourada**.
 - 🖼️ 13 fundos para o app e ⭐ 45 adesivos para o álbum.
-- 🎟️ Vales de prêmios reais, editáveis pelos pais.
-- Os itens a partir de 1.000 moedas aparecem como **✨ SONHO** (até 3.000).
+- 🎟️ **24 vales de prêmios reais**, de 150 a 10.000 moedas: escolher as músicas do carro, pizza, livro novo, dormir mais tarde, cinema, R$ 20, jogo novo, Dia do SIM, ingresso para show/jogo, escolher a viagem do fim de semana… Os pais editam, apagam e criam vales.
+- Os itens a partir de 1.000 moedas aparecem como **✨ SONHO**.
 
 **⏳ Recuperação:** quando a semana fecha sem entrega, a penalidade é aplicada. Os dias que faltaram continuam abertos, num cartão na tela inicial, até a sexta seguinte.
 - Cada dia recuperado vale uma parte de **metade da recompensa**. Exemplo: faltaram 6 dias → cerca de +8 por dia, +50 ao recuperar todos.
