@@ -18,7 +18,10 @@ Os dados ficam salvos num servidor, então funcionam em qualquer aparelho.
 
 ## 1. Como a Amanda usa
 
-1. **📝 Minha semana:** ela escreve em linguagem natural (ou fala, pelo microfone do teclado). Por exemplo: *"Em BSS estamos aprendendo sobre as bacias hidrográficas. Em Math, frações. Spelling: because, friend, believe."* Também pode mandar **foto do worksheet ou da agenda**. A Lumi entende as matérias e cria as perguntas de sábado a sexta.
+1. **📝 Minha semana:** ela escolhe o **ano escolar** (Year 1–9, com o equivalente brasileiro). Depois abre a seção de cada matéria e escreve do jeito dela, ou fala pelo microfone do teclado. Por exemplo, em BSS: *"estamos aprendendo sobre as bacias hidrográficas"*.
+   - **Ortografia/Spelling:** 📝 lista de palavras, 🎯 tema (ex.: *silent letters*) ou 🎲 a Lumi escolhe as palavras.
+   - **Leitura/Reading/Guided Reading:** ela escolhe o nível do texto (⬇️ mais fácil, 🎯 no nível dela, ⬆️ acima ou 🚀 bem acima). A Lumi **escreve o texto** e as perguntas são sobre ele. O texto abre antes das perguntas e sai impresso no topo da folha.
+   - Também pode mandar **foto do worksheet ou da agenda**. O Claude cria as perguntas de sábado a sexta no nível do ano escolhido.
 2. **Todo dia** ela abre a tarefa:
    - **na tela:** cartões curtos, tudo visível sem rolar;
    - **🖨️ Imprimir:** uma página A4 por dia, com gabarito opcional para os pais em página separada.
@@ -40,10 +43,14 @@ Os dados ficam salvos num servidor, então funcionam em qualquer aparelho.
 | Exercícios extras | **+2 por acerto** (rodadas de 5, até 3 rodadas pagas por dia) |
 
 Lojinha:
-- Roupinhas da Lumi: chapéus, óculos e acessórios (30–200).
-- Fundos do app (60–140).
-- Adesivos para o álbum (15–40).
-- Vales de prêmios reais, como tempo de tela, escolher o jantar ou escolher o filme (150–300). Os vales são editáveis pelos pais.
+- 🎩 Chapéus, inclusive capacete de hipismo, tiara de unicórnio e coroa de diamante.
+- 👓 Óculos e 🎀 acessórios.
+- 🦋 Asas e capas, 🎨 cores da Lumi (rosa, azul, menta, **dourada**, **galáxia**) e 🐾 amiguinhos (pintinho, gatinho, pônei, **pandinha**, **dragãozinho**).
+- 🖼️ Fundos e ⭐ 25 adesivos.
+- 🎟️ Vales de prêmios reais, editáveis pelos pais.
+- Os itens a partir de 1.000 moedas aparecem como **✨ SONHO** (até 3.000).
+
+**🔥 Sequência:** fazer a tarefa no próprio dia, vários dias seguidos, mostra a chama na tela inicial. A cada 5 dias seguidos, ganha **+15 moedas**.
 
 Tudo é ajustável em **🔒 Área dos pais → Ajustes** (PIN padrão **1234** — troquem).
 

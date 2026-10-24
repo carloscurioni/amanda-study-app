@@ -122,9 +122,24 @@ const PLAN_SCHEMA = {
       items: { type: 'object', properties: { subject: { type: 'string', enum: SUBJECT_IDS }, summary: { type: 'string' } }, required: ['subject', 'summary'], additionalProperties: false },
     },
     message: { type: 'string', description: 'Mensagem curta e animada da mascote Lumi para a aluna, em português.' },
+    passages: {
+      type: 'array',
+      description: 'Textos de leitura escritos para a aluna (só para matérias de leitura com nível escolhido). Pode ser vazia.',
+      items: {
+        type: 'object',
+        properties: {
+          subject: { type: 'string', enum: ['pt_leit', 'en_read', 'en_guided'] },
+          day: { type: 'string', enum: DOWS },
+          title: { type: 'string' },
+          text: { type: 'string', description: 'Texto original, 120–200 palavras, no idioma da matéria, em parágrafos separados por \n.' },
+        },
+        required: ['subject', 'day', 'title', 'text'],
+        additionalProperties: false,
+      },
+    },
     questions: { type: 'array', items: qSchema(true) },
   },
-  required: ['topics', 'message', 'questions'],
+  required: ['topics', 'message', 'passages', 'questions'],
   additionalProperties: false,
 };
 const MORE_SCHEMA = { type: 'object', properties: { questions: { type: 'array', items: qSchema(false) } }, required: ['questions'], additionalProperties: false };
@@ -132,7 +147,7 @@ const EXPLAIN_SCHEMA = {
   type: 'object',
   properties: {
     title: { type: 'string', description: 'Título curto do conteúdo (ex.: "O que é uma bacia hidrográfica?").' },
-    explanation: { type: 'string', description: 'Explicação clara para uma criança de 10 anos, 3 a 6 frases curtas.' },
+    explanation: { type: 'string', description: 'Explicação clara para a idade da aluna, 3 a 6 frases curtas.' },
     example: { type: 'string', description: 'Um exemplo concreto ou analogia do dia a dia (1–2 frases).' },
   },
   required: ['title', 'explanation', 'example'],
@@ -184,12 +199,13 @@ const GRADE_SCHEMA = {
 };
 
 /* ---------------- Prompts ---------------- */
-function studentProfile(name) {
-  return `Você cria exercícios para ${name || 'uma aluna'}, de cerca de 10 anos, aluna de uma escola internacional bilíngue em São Paulo (currículo britânico/IPC em inglês + matérias brasileiras em português).
+const level = b => (b && b.year ? String(b.year).slice(0, 80) : 'cerca de 10 anos');
+function studentProfile(name, year) {
+  return `Você cria exercícios para ${name || 'uma aluna'} (${year || 'cerca de 10 anos'}), aluna de uma escola internacional bilíngue em São Paulo (currículo britânico/IPC em inglês + matérias brasileiras em português).
 Matérias (id — idioma):${SUBJECTS_TXT}
 
 Regras de qualidade:
-- Prefira MUITAS perguntas curtas e simples a poucas difíceis. Nível adequado a ~10 anos.
+- Prefira MUITAS perguntas curtas e simples a poucas difíceis. Nível e conteúdo adequados exatamente ao ano escolar dela (${year || 'cerca de 10 anos'}), seguindo o currículo britânico e a BNCC brasileira desse ano.
 - Cada pergunta precisa funcionar sozinha, na tela E impressa em papel (sem imagens, sem áudio, sem "veja a figura").
 - Fatos sempre corretos e verificáveis; se não tiver certeza de um fato, não use.
 - Perguntas das matérias em português: português do Brasil. Das matérias em inglês: inglês britânico.
@@ -211,7 +227,7 @@ async function handlePlan(env, b) {
   const dayList = days.map(d => `- ${d.dow} (${d.label || d.dow}): ${d.n} perguntas`).join('\n');
   const content = [
     ...images.flatMap((img, i) => [{ type: 'text', text: `Foto ${i + 1} (material da escola):` }, { type: 'image', source: { type: 'base64', media_type: img.type || 'image/jpeg', data: img.data } }]),
-    { type: 'text', text: `O que a aluna (ou os pais) escreveu sobre a semana na escola:
+    { type: 'text', text: `O que a aluna (ou os pais) escreveu sobre a semana na escola, por matéria:
 """
 ${text || '(sem texto — use as fotos)'}
 """
@@ -223,11 +239,20 @@ Tarefa:
 ${dayList}
 3. Em cada dia, misture 2 a 4 matérias; ao longo da semana, cubra todas as matérias citadas, com mais peso nas que tiverem mais conteúdo.
 4. Use apenas as matérias citadas. Se algo não se encaixar claramente, escolha a matéria mais próxima.
-5. "message": 1–2 frases da Lumi (corujinha) animando a aluna, em português.` },
+5. Ortografia/Spelling — respeite o [modo] indicado:
+   - "lista de palavras": use exatamente as palavras dadas;
+   - "tema": escolha 8–10 palavras desse padrão ortográfico (ex.: silent letters → knight, island, wrap…), adequadas ao ano dela;
+   - "a Lumi escolhe": escolha 8–10 palavras adequadas ao ano dela (UK spelling lists / dificuldades ortográficas do português nessa série).
+   Em "topics", liste as palavras escolhidas.
+6. Leitura/Reading/Guided Reading com [nível do texto]: ESCREVA textos originais em "passages" (120–200 palavras, interessantes para a idade; histórias ou textos informativos; se ela citou um livro ou tema, inspire-se nele sem copiar trechos).
+   Níveis em relação ao ano dela: "mais fácil" = cerca de 1 ano abaixo; "no meu nível" = o ano dela; "acima" = cerca de 1 ano acima; "bem acima" = cerca de 2 anos acima.
+   Crie um texto para cada dia em que essa matéria tiver perguntas (no máximo 3 textos por matéria na semana). Nesses dias, TODAS as perguntas dessa matéria devem ser sobre o texto do dia (comece com "No texto…"/"In the text…").
+   Se a matéria de leitura NÃO tiver [nível do texto], deixe sem texto e siga a regra normal de leitura.
+7. "message": 1–2 frases da Lumi (corujinha) animando a aluna, em português.` },
   ];
   const out = await claude(env, {
     model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: env.EFFORT_PLAN || 'medium',
-    system: studentProfile(b.name), content, schema: PLAN_SCHEMA, maxTokens: 32000,
+    system: studentProfile(b.name, b.year), content, schema: PLAN_SCHEMA, maxTokens: 32000,
   });
   return out;
 }
@@ -237,14 +262,14 @@ async function handleMore(env, b) {
   const subjects = (b.subjects || []).filter(s => SUBJECT_IDS.includes(s));
   const content = [{ type: 'text', text: `Assuntos da semana:
 ${String(b.topics || '').slice(0, 3000) || '(revisão geral do 5º ano)'}
-${subjects.length ? `\nUse só estas matérias: ${subjects.join(', ')}. Se alguma delas não tiver assunto listado acima, faça uma revisão do conteúdo típico dessa matéria para ~10 anos (5º ano no Brasil / Year 5–6 no currículo britânico).` : '\nMisture as matérias da semana e inclua sempre Math e English.'}
+${subjects.length ? `\nUse só estas matérias: ${subjects.join(', ')}. Se alguma delas não tiver assunto listado acima, faça uma revisão do conteúdo típico dessa matéria para o ano escolar dela.` : '\nMisture as matérias da semana e inclua sempre Math e English.'}
 ${b.objectiveOnly ? '\nNÃO use o tipo "open" — só mc, short e num (correção automática).' : ''}
 ${b.exclude?.length ? `\nNão repita estas perguntas:\n- ${b.exclude.slice(0, 60).map(x => String(x).slice(0, 120)).join('\n- ')}` : ''}
 
 Crie exatamente ${n} perguntas novas, curtas e variadas.` }];
   return claude(env, {
     model: env.MODEL_FAST || 'claude-haiku-5-5', effort: env.EFFORT_FAST || 'low',
-    system: studentProfile(b.name), content, schema: MORE_SCHEMA, maxTokens: 8000,
+    system: studentProfile(b.name, b.year), content, schema: MORE_SCHEMA, maxTokens: 8000,
   });
 }
 
@@ -253,9 +278,9 @@ async function handleTutor(env, b) {
   const content = [{ type: 'text', text: `Pergunta (${b.subjectName || b.subject}): ${String(b.q || '').slice(0, 600)}
 ${b.options?.length ? `Opções: ${b.options.join(' | ')}` : ''}
 ${b.answer ? `Resposta correta (NÃO revele): ${b.answer}` : ''}
-${b.attempt ? `O que a aluna respondeu até agora: ${String(b.attempt).slice(0, 300)}` : 'A aluna ainda não respondeu.'}
+${b.context ? `Contexto (texto que ela leu / assuntos): ${String(b.context).slice(0, 2000)}\n` : ''}${b.attempt ? `O que a aluna respondeu até agora: ${String(b.attempt).slice(0, 300)}` : 'A aluna ainda não respondeu.'}
 
-Você é a Lumi, uma corujinha tutora gentil. Escreva em ${lang === 'en' ? 'English' : 'português'} de 1 a 3 frases curtas para uma criança de 10 anos:
+Você é a Lumi, uma corujinha tutora gentil. Escreva em ${lang === 'en' ? 'English' : 'português'} de 1 a 3 frases curtas para uma criança (${level(b)}):
 explique a ideia por trás da pergunta ou dê um exemplo parecido, SEM dizer a resposta e sem eliminar opções diretamente.
 Se ela já respondeu errado, diga com carinho onde pensar de novo.` }];
   return claude(env, {
@@ -271,13 +296,13 @@ async function handleGrade(env, b) {
   const list = qs.map((q, i) => `${i + 1}. [${q.type}] ${q.q}${q.options?.length ? ` (opções: ${q.options.join(' | ')})` : ''} → resposta esperada: ${q.type === 'open' ? '(resposta livre)' : q.answer}${q.accept?.length ? ` (também aceitar: ${q.accept.join(', ')})` : ''}`).join('\n');
   const content = [
     ...images.flatMap((img, i) => [{ type: 'text', text: `Foto ${i + 1} da folha respondida:` }, { type: 'image', source: { type: 'base64', media_type: img.type || 'image/jpeg', data: img.data } }]),
-    { type: 'text', text: `Esta é a folha impressa "${b.title || ''}" respondida à mão por uma criança de 10 anos. As perguntas, na ordem impressa:
+    { type: 'text', text: `Esta é a folha impressa "${b.title || ''}" respondida à mão por uma criança (${level(b)}). As perguntas, na ordem impressa:
 ${list}
 
 Para cada número, transcreva em "read" o que ela escreveu ou marcou e dê o veredito:
 - "ok": correta (aceite pequenas variações de letra de mão e maiúsculas; em Ortografia/Spelling a grafia precisa estar certa, inclusive acentos);
 - "bad": errada; - "blank": em branco ou ilegível.
-- Perguntas de resposta livre também recebem "ok" ou "bad": "ok" se a resposta responde à pergunta de forma correta e razoável para 10 anos (não exija perfeição); "bad" se está errada, fora do assunto ou incompleta demais.
+- Perguntas de resposta livre também recebem "ok" ou "bad": "ok" se a resposta responde à pergunta de forma correta e razoável para a idade (não exija perfeição); "bad" se está errada, fora do assunto ou incompleta demais.
 Em "note", um comentário curto e gentil: quando errada, diga a forma certa; nas livres, diga o que ficou bom e o que poderia melhorar. Se a foto não for desta folha ou estiver ilegível, legible=false.` },
   ];
   return claude(env, {
@@ -292,9 +317,9 @@ async function handleExplain(env, b) {
   const content = [{ type: 'text', text: `Matéria: ${b.subjectName || b.subject}
 Pergunta que a aluna está estudando: ${String(b.q || '').slice(0, 600)}
 ${b.options?.length ? `Opções: ${b.options.join(' | ')}` : ''}
-${b.context ? `Assuntos da semana: ${String(b.context).slice(0, 1500)}` : ''}
+${b.context ? `Contexto (assuntos da semana e texto lido): ${String(b.context).slice(0, 2500)}` : ''}
 
-Explique, em ${LANG_NAME(lang)}, o CONTEÚDO por trás desta pergunta para uma criança de 10 anos, como uma mini-aula:
+Explique, em ${LANG_NAME(lang)}, o CONTEÚDO por trás desta pergunta para uma criança (${level(b)}), como uma mini-aula:
 o conceito, por que ele importa e um exemplo do dia a dia.
 ${b.done ? `Ela já respondeu. A resposta correta é: ${b.answer || '(resposta livre)'}. Pode explicar por que essa resposta está certa.` : 'Ela ainda NÃO respondeu: explique o conceito sem dar a resposta desta pergunta (use outro exemplo).'}
 Fatos sempre corretos. Linguagem simples e animada, sem infantilizar.` }];
@@ -309,8 +334,8 @@ async function handleCheckOpen(env, b) {
   const list = items.map((x, i) => `${i + 1}. (${x.subjectName || x.subject}; responder em ${LANG_NAME(x.lang)})
 Pergunta: ${String(x.q).slice(0, 500)}
 Resposta da aluna: ${String(x.answer || '').slice(0, 1200) || '(em branco)'}`).join('\n\n');
-  const content = [{ type: 'text', text: `Corrija estas respostas livres de uma aluna de 10 anos.
-${b.context ? `Assuntos da semana: ${String(b.context).slice(0, 1500)}\n` : ''}
+  const content = [{ type: 'text', text: `Corrija estas respostas livres de uma aluna (${level(b)}).
+${b.context ? `Contexto (assuntos da semana e texto lido): ${String(b.context).slice(0, 2500)}\n` : ''}
 ${list}
 
 Para cada número: "ok" se responde à pergunta de forma correta e razoável para a idade (não exija perfeição nem ortografia impecável, a menos que a pergunta seja de ortografia/escrita); "bad" se está errada, fora do assunto, em branco ou incompleta demais.

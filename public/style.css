@@ -444,3 +444,43 @@ button { cursor: pointer; }
 .ex-box { background: var(--accent-soft); border-radius: 12px; padding: 10px 12px; }
 .q .expected.lumi { color: var(--ink); font-weight: 700; }
 .extra-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; padding-bottom: 6px; }
+
+/* ---------- Planejamento por matéria ---------- */
+.year-sel { width: 100%; padding: 10px 12px; border-radius: 12px; border: 2px solid var(--line); font-size: 16px; font-weight: 800; background: var(--card2); }
+.acc-group { display: grid; gap: 6px; }
+.acc-title { font-weight: 900; font-size: 13px; color: var(--muted); margin-top: 4px; }
+.subj-acc { border-radius: 12px; background: var(--card2); border-left: 5px solid var(--subj); overflow: hidden; }
+.subj-acc summary { list-style: none; display: flex; align-items: center; gap: 8px; padding: 10px 12px; cursor: pointer; font-weight: 800; }
+.subj-acc summary::-webkit-details-marker { display: none; }
+.subj-acc summary::after { content: "▾"; color: var(--muted); transition: transform .2s; }
+.subj-acc[open] summary::after { transform: rotate(180deg); }
+.sa-name { white-space: nowrap; }
+.sa-prev { flex: 1; min-width: 0; font-size: 12.5px; font-weight: 700; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.subj-acc textarea { display: block; width: calc(100% - 20px); margin: 0 10px 10px; min-height: 64px; resize: vertical; border: 1.5px solid var(--line); border-radius: 10px; padding: 8px 10px; font-size: 15px; font-weight: 700; background: #fff; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 10px 8px; }
+.chips-lbl { margin: 0 10px 4px; }
+.chip { border: none; border-radius: 999px; padding: 6px 11px; font-weight: 800; font-size: 13px; background: #fff; box-shadow: inset 0 0 0 1.5px var(--line); }
+.chip.on { background: var(--subj, var(--accent)); color: #fff; box-shadow: none; }
+
+/* ---------- Texto de leitura ---------- */
+.read-btn { background: #fff4d1; box-shadow: inset 0 0 0 1.5px #ffd66b; }
+.modal-body.passage { font-size: 16.5px; line-height: 1.55; }
+.pas + .pas { margin-top: 14px; padding-top: 10px; border-top: 1px dashed var(--line); }
+.pas-subj { font-size: 12px; font-weight: 900; color: var(--muted); text-transform: uppercase; }
+.pas h4 { margin: 2px 0 6px; font-size: 19px; }
+.pas p { margin: 0 0 8px; }
+.p-passage { border: 1.5px solid #111; border-radius: 6px; padding: 2mm 3mm; font-size: 11.5px; line-height: 1.4; }
+.p-passage b { font-size: 12.5px; }
+.p-passage p { margin: 1mm 0 0; }
+
+/* ---------- Lojinha: itens sonho, novos fundos, sequência ---------- */
+.item { position: relative; }
+.item.dream { box-shadow: 0 0 0 2px #ffd43b, 0 6px 18px rgba(240, 160, 0, .25); background: linear-gradient(180deg, #fffbe6, #fff); }
+.dream-tag { position: absolute; top: 6px; left: 6px; font-size: 10px; font-weight: 900; color: #8a5a00; background: #ffe066; border-radius: 99px; padding: 2px 7px; }
+.streak { display: inline-block; font-size: 15px; background: #fff1e0; color: #d9480f; border-radius: 99px; padding: 2px 9px; vertical-align: middle; }
+body.theme-rainbow { --bg1: #ffe3e3; --bg2: #e3f0ff; --accent: #e8590c; --accent-soft: #fff0e0; --line: #f2dccc; }
+body.theme-rainbow { background: linear-gradient(120deg, #ffd6d6, #fff1c1, #d6ffd9, #d6eaff, #ead6ff) fixed; }
+body.theme-castle { --bg1: #c9b6ff; --bg2: #ffd1f0; --accent: #9c36b5; --accent-soft: #f3d9fa; --line: #e5cdf2; }
+body.theme-gold { --bg1: #ffe28a; --bg2: #fff6d6; --accent: #e67700; --accent-soft: #fff3bf; --line: #f5e2a8; }
+.sa-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; flex: 0 1 auto; max-width: 62%; }
+.sa-ic, .sa-st { flex: 0 0 auto; }

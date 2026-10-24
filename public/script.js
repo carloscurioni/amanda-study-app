@@ -38,6 +38,7 @@ const DEFAULT_SETTINGS = {
   counts: { sab: 9, dom: 9, seg: 7, ter: 7, qua: 7, qui: 7, sex: 5 }, // fim de semana um pouco maior
   gabaritoAfterFinish: true, // gabarito libera depois de concluir o dia
   voice: true,
+  year: '',               // ano escolar (ex.: 'Y5'), escolhido na tela Minha semana
 };
 
 const SUBJECTS = [
@@ -63,12 +64,25 @@ const SUBJECTS = [
     ph: 'e.g. fractions, times tables, place value, perimeter, rounding', help: 'topics' },
 ];
 const SUBJ = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
+// Anos escolares (currículo britânico) com equivalente brasileiro e idade.
+const SCHOOL_YEARS = [
+  ['Y1', 'Year 1', 'Infantil 5', '5–6'], ['Y2', 'Year 2', '1º ano', '6–7'], ['Y3', 'Year 3', '2º ano', '7–8'],
+  ['Y4', 'Year 4', '3º ano', '8–9'], ['Y5', 'Year 5', '4º ano', '9–10'], ['Y6', 'Year 6', '5º ano', '10–11'],
+  ['Y7', 'Year 7', '6º ano', '11–12'], ['Y8', 'Year 8', '7º ano', '12–13'], ['Y9', 'Year 9', '8º ano', '13–14'],
+];
+function yearLabel(id) {
+  const y = SCHOOL_YEARS.find(x => x[0] === id);
+  return y ? `${y[1]} do currículo britânico (≈ ${y[2]} no Brasil, ${y[3]} anos)` : '';
+}
 
 // Lojinha: itens permanentes (roupinhas, fundos, adesivos) e vales (prêmios reais, repetíveis).
 const SHOP_CATS = [
   { id: 'hat', label: '🎩 Chapéus' },
   { id: 'glasses', label: '👓 Óculos' },
   { id: 'neck', label: '🎀 Acessórios' },
+  { id: 'back', label: '🦋 Asas e capas' },
+  { id: 'skin', label: '🎨 Cores da Lumi' },
+  { id: 'pet', label: '🐾 Amiguinhos' },
   { id: 'bg', label: '🖼️ Fundos' },
   { id: 'sticker', label: '⭐ Adesivos' },
   { id: 'voucher', label: '🎟️ Vales' },
@@ -79,19 +93,41 @@ const SHOP_ITEMS = [
   { id: 'hat-witch',   cat: 'hat', name: 'Chapéu de bruxinha', price: 90 },
   { id: 'hat-crown',   cat: 'hat', name: 'Coroa dourada', price: 150 },
   { id: 'hat-grad',    cat: 'hat', name: 'Capelo de formatura', price: 200 },
+  { id: 'hat-riding',  cat: 'hat', name: 'Capacete de hipismo', price: 180 },
+  { id: 'hat-unicorn', cat: 'hat', name: 'Tiara de unicórnio', price: 300 },
+  { id: 'hat-diamond', cat: 'hat', name: 'Coroa de diamante', price: 1200 },
   { id: 'gl-round',    cat: 'glasses', name: 'Óculos redondos', price: 35 },
   { id: 'gl-heart',    cat: 'glasses', name: 'Óculos de coração', price: 60 },
   { id: 'gl-sun',      cat: 'glasses', name: 'Óculos escuros', price: 80 },
+  { id: 'gl-star',     cat: 'glasses', name: 'Óculos de estrela', price: 110 },
   { id: 'nk-bow',      cat: 'neck', name: 'Gravata-borboleta', price: 30 },
   { id: 'nk-scarf',    cat: 'neck', name: 'Cachecol', price: 50 },
   { id: 'nk-medal',    cat: 'neck', name: 'Medalha de campeã', price: 120 },
+  { id: 'nk-pearls',   cat: 'neck', name: 'Colar de pérolas', price: 140 },
+  { id: 'bk-bag',      cat: 'back', name: 'Mochila escolar', price: 90 },
+  { id: 'bk-cape',     cat: 'back', name: 'Capa de super-heroína', price: 400 },
+  { id: 'bk-wings',    cat: 'back', name: 'Asas de fada', price: 600 },
+  { id: 'sk-pink',     cat: 'skin', name: 'Lumi Rosa', price: 120 },
+  { id: 'sk-sky',      cat: 'skin', name: 'Lumi Azul-céu', price: 120 },
+  { id: 'sk-mint',     cat: 'skin', name: 'Lumi Menta', price: 150 },
+  { id: 'sk-gold',     cat: 'skin', name: 'Lumi Dourada', price: 1500 },
+  { id: 'sk-galaxy',   cat: 'skin', name: 'Lumi Galáxia', price: 2500 },
+  { id: 'pt-chick',    cat: 'pet', name: 'Pintinho', price: 250, emoji: '🐣' },
+  { id: 'pt-cat',      cat: 'pet', name: 'Gatinho', price: 450, emoji: '🐱' },
+  { id: 'pt-pony',     cat: 'pet', name: 'Pônei', price: 900, emoji: '🐴' },
+  { id: 'pt-panda',    cat: 'pet', name: 'Pandinha', price: 1100, emoji: '🐼' },
+  { id: 'pt-dragon',   cat: 'pet', name: 'Dragãozinho', price: 3000, emoji: '🐉' },
   { id: 'bg-ocean',    cat: 'bg', name: 'Oceano', price: 60, theme: 'theme-ocean', sw: 'linear-gradient(160deg,#c9ecff,#e0fbff)' },
   { id: 'bg-forest',   cat: 'bg', name: 'Floresta', price: 60, theme: 'theme-forest', sw: 'linear-gradient(160deg,#d8f3dc,#f1fbe7)' },
   { id: 'bg-sunset',   cat: 'bg', name: 'Pôr do sol', price: 90, theme: 'theme-sunset', sw: 'linear-gradient(160deg,#ffd6a5,#ffc6d9)' },
   { id: 'bg-candy',    cat: 'bg', name: 'Doceria', price: 90, theme: 'theme-candy', sw: 'linear-gradient(160deg,#ffd6ec,#d6f5ff)' },
   { id: 'bg-space',    cat: 'bg', name: 'Galáxia', price: 140, theme: 'theme-space', sw: 'linear-gradient(160deg,#1b1446,#3b2a85)' },
+  { id: 'bg-rainbow',  cat: 'bg', name: 'Arco-íris', price: 200, theme: 'theme-rainbow', sw: 'linear-gradient(120deg,#ffd6d6,#fff1c1,#d6ffd9,#d6eaff,#ead6ff)' },
+  { id: 'bg-castle',   cat: 'bg', name: 'Castelo encantado', price: 700, theme: 'theme-castle', sw: 'linear-gradient(160deg,#c9b6ff,#ffd1f0)' },
+  { id: 'bg-gold',     cat: 'bg', name: 'Tesouro dourado', price: 1000, theme: 'theme-gold', sw: 'linear-gradient(160deg,#ffe28a,#fff6d6)' },
   ...[['🌈', 15], ['⭐', 15], ['🍉', 15], ['🌸', 15], ['🍩', 15], ['🎀', 15], ['🐬', 20], ['🦋', 20], ['🐱', 20], ['🎨', 20],
-      ['🦄', 25], ['🐼', 25], ['🚀', 25], ['🐴', 30], ['🏆', 40]]
+      ['🦄', 25], ['🐼', 25], ['🚀', 25], ['🐴', 30], ['🏆', 40],
+      ['🍦', 20], ['🧁', 20], ['🛼', 30], ['🦖', 40], ['🎡', 50], ['🌋', 50], ['🎠', 60], ['🐉', 120], ['👑', 150], ['💎', 300]]
     .map(([e, p], i) => ({ id: 'st-' + i, cat: 'sticker', name: 'Adesivo', emoji: e, price: p })),
 ];
 const DEFAULT_VOUCHERS = [
@@ -179,12 +215,14 @@ function defaultState() {
     vouchers: structuredCloneSafe(DEFAULT_VOUCHERS),
     week: null,                 // semana atual (ver createWeek)
     lastTopics: {},             // tópicos da última semana (para reaproveitar)
+    lastOpts: {},               // modos de spelling/nível de leitura da última semana
+    streak: { n: 0, last: '', best: 0 }, // sequência de dias seguidos
     pendingImport: [],          // perguntas importadas antes de planejar a semana
     history: [],                // resumo das semanas anteriores
     extras: {},                 // { 'AAAA-MM-DD': { sets: n } }
     extra: null,                // rodada de extras em andamento
     owned: [],                  // ids de itens comprados
-    equipped: { hat: null, glasses: null, neck: null, bg: null },
+    equipped: { hat: null, glasses: null, neck: null, bg: null, back: null, skin: null, pet: null },
     redemptions: [],            // vales resgatados {id, voucherId, name, date, delivered}
     rev: 0,                     // versão no servidor
   };
@@ -236,6 +274,7 @@ async function apiCall(path, { method = 'GET', data, timeout = 30000 } = {}) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeout);
   try {
+    if (data && typeof data === 'object' && path !== '/api/state' && data.year === undefined && S.settings.year) data = Object.assign({ year: yearLabel(S.settings.year) }, data);
     const r = await fetch(path, { method, signal: ctrl.signal, cache: 'no-store',
       headers: { 'content-type': 'application/json', 'x-family-code': Server.code },
       body: data === undefined ? undefined : JSON.stringify(data) });
@@ -346,6 +385,11 @@ const ACCESSORY_SVG = {
   'hat-grad': '<path d="M50 3 L84 13 L50 23 L16 13 Z" fill="#222"/><path d="M33 17 L33 26 Q50 33 67 26 L67 17 L50 23Z" fill="#383838"/><path d="M50 13 L77 17 L77 29" stroke="#ffb703" stroke-width="1.6" fill="none"/><circle cx="77" cy="30" r="2.3" fill="#ffb703"/>',
   'hat-flowers': [[27, 22, '#ff8fab'], [36, 17, '#ffd43b'], [45, 15, '#74c0fc'], [55, 15, '#ff8fab'], [64, 17, '#ffd43b'], [73, 22, '#74c0fc']]
     .map(([x, y, c]) => `<g transform="translate(${x} ${y})">${[0, 72, 144, 216, 288].map(r => `<circle cx="0" cy="-3.2" r="2.6" fill="${c}" transform="rotate(${r})"/>`).join('')}<circle r="2" fill="#fff3bf"/></g>`).join(''),
+  'hat-riding': '<path d="M26 24 Q50 -4 74 24 Z" fill="#1d1d2b"/><path d="M68 23 Q82 22 86 27 Q75 29 64 26Z" fill="#11111a"/><path d="M27 24 Q50 30 73 24" stroke="#3a3a55" stroke-width="2" fill="none"/><circle cx="50" cy="6" r="2.2" fill="#3a3a55"/>',
+  'hat-unicorn': '<path d="M45 18 L50 -8 L55 18 Z" fill="#ffd166" stroke="#e0a800" stroke-width="1"/><path d="M46 12 L54 9 M47 5 L53 2" stroke="#e0a800" stroke-width="1.2"/><path d="M28 22 Q50 14 72 22" stroke="#ff8fab" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="34" cy="19" r="3" fill="#ff8fab"/><circle cx="66" cy="19" r="3" fill="#74c0fc"/>',
+  'hat-diamond': '<path d="M30 23 L32 6 L41 14 L50 0 L59 14 L68 6 L70 23 Z" fill="#d0ebff" stroke="#74c0fc" stroke-width="1.5" stroke-linejoin="round"/><path d="M50 8 L54 14 L50 20 L46 14Z" fill="#4dabf7"/><path d="M37 14 L40 18 L37 22 L34 18Z M63 14 L66 18 L63 22 L60 18Z" fill="#a5d8ff"/><path d="M36 9 l1 2 M60 4 l2 1" stroke="#fff" stroke-width="1.5"/>',
+  'gl-star': ['37', '63'].map(x => `<path transform="translate(${x} 40) scale(1.15)" d="M0 -11 L3 -3.5 L11 -3.5 L4.5 1.5 L7 9.5 L0 4.5 L-7 9.5 L-4.5 1.5 L-11 -3.5 L-3 -3.5Z" fill="#ffd43b" fill-opacity=".85" stroke="#f08c00" stroke-width="1"/>`).join(''),
+  'nk-pearls': [32, 38, 44, 50, 56, 62, 68].map((x, i) => `<circle cx="${x}" cy="${58 + Math.abs(3 - i) * -1 + 3}" r="2.6" fill="#fffaf0" stroke="#e6dccf" stroke-width=".8"/>`).join(''),
   'gl-round': '<g fill="none" stroke="#3a2c7a" stroke-width="2.4"><circle cx="37" cy="40" r="12"/><circle cx="63" cy="40" r="12"/><path d="M49 40 Q50 37 51 40"/></g>',
   'gl-heart': ['37', '63'].map(x => `<path transform="translate(${x} 41) scale(1.25)" d="M0 -3 C-5 -10 -14 -3 0 8 C14 -3 5 -10 0 -3Z" fill="#ff6b9a" fill-opacity=".82" stroke="#d6336c" stroke-width="1"/>`).join('') + '<path d="M47 39 h6" stroke="#d6336c" stroke-width="2"/>',
   'gl-sun': '<rect x="24" y="33" width="25" height="15" rx="6" fill="#1b1b2f"/><rect x="51" y="33" width="25" height="15" rx="6" fill="#1b1b2f"/><path d="M48 38 h4" stroke="#1b1b2f" stroke-width="3"/><path d="M28 37 h6 M55 37 h6" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>',
@@ -353,7 +397,22 @@ const ACCESSORY_SVG = {
   'nk-scarf': '<path d="M22 57 Q50 71 78 57 L78 64 Q50 78 22 64Z" fill="#2a9d8f"/><path d="M60 66 L64 86 L71 84 L68 64Z" fill="#2a9d8f"/><path d="M33 63 l2 5 M45 66 l1 5 M57 66 l-1 5 M68 62 l-2 5 M63 74 l7 -1 M64 80 l7 -1" stroke="#ffd43b" stroke-width="2"/>',
   'nk-medal': '<path d="M38 55 L50 73 L62 55" stroke="#3fa7ff" stroke-width="3.2" fill="none"/><circle cx="50" cy="77" r="7" fill="#ffc83d" stroke="#e0a800" stroke-width="1.5"/><text x="50" y="80.5" font-size="8.5" font-weight="900" text-anchor="middle" fill="#9c6c00" font-family="Nunito,sans-serif">1</text>',
 };
+const SKINS = {
+  base: { body: '#7b5cf0', dark: '#6a4fd8', belly: '#ffe6b3', marks: '#e8c98a', ring: '#5b43c4' },
+  'sk-pink': { body: '#f06292', dark: '#d81b60', belly: '#ffe4ec', marks: '#f8bbd0', ring: '#c2185b' },
+  'sk-sky': { body: '#4fc3f7', dark: '#0288d1', belly: '#e1f5fe', marks: '#b3e5fc', ring: '#0277bd' },
+  'sk-mint': { body: '#4db6ac', dark: '#00897b', belly: '#e0f2f1', marks: '#b2dfdb', ring: '#00796b' },
+  'sk-gold': { body: '#ffc83d', dark: '#e0a800', belly: '#fff6d6', marks: '#f3d98a', ring: '#b8860b', extra: '<path d="M14 30 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 l5 -2Z M86 62 l1.5 4 l4 1.5 l-4 1.5 l-1.5 4 l-1.5 -4 l-4 -1.5 l4 -1.5Z" fill="#fff3b0"/>' },
+  'sk-galaxy': { body: '#2b2363', dark: '#1b1446', belly: '#c9b8ff', marks: '#a68cff', ring: '#8f6bff', extra: '<g fill="#fff"><circle cx="30" cy="70" r="1.2"/><circle cx="72" cy="76" r="1"/><circle cx="26" cy="30" r="1"/><circle cx="74" cy="28" r="1.3"/><circle cx="64" cy="86" r="0.9"/><circle cx="34" cy="86" r="1.1"/></g>' },
+};
+const BACK_SVG = {
+  'bk-wings': '<g opacity=".85"><ellipse cx="10" cy="42" rx="14" ry="22" fill="#b3e5fc" stroke="#81d4fa" stroke-width="1.5" transform="rotate(-20 10 42)"/><ellipse cx="90" cy="42" rx="14" ry="22" fill="#f8bbd0" stroke="#f48fb1" stroke-width="1.5" transform="rotate(20 90 42)"/><ellipse cx="12" cy="70" rx="9" ry="13" fill="#e1bee7" transform="rotate(20 12 70)"/><ellipse cx="88" cy="70" rx="9" ry="13" fill="#e1bee7" transform="rotate(-20 88 70)"/></g>',
+  'bk-cape': '<path d="M26 40 Q50 50 74 40 L90 96 Q50 104 10 96 Z" fill="#e5484d"/><path d="M26 40 Q50 50 74 40 L78 48 Q50 58 22 48Z" fill="#c43a3f"/>',
+  'bk-bag': '<rect x="74" y="44" width="20" height="26" rx="5" fill="#ffb703" stroke="#e09600" stroke-width="1.5"/><rect x="77" y="56" width="14" height="8" rx="2" fill="#ffd166"/>',
+};
 function mascotSVG(eq = S.equipped, mood = 'happy') {
+  const P = SKINS[eq.skin] || SKINS.base;
+  const pet = eq.pet && (SHOP_ITEMS.find(i => i.id === eq.pet) || {}).emoji;
   const pupils = mood === 'think' ? [[39, 36], [61, 36]] : mood === 'wow' ? [[37, 41], [63, 41]] : [[38, 42], [62, 42]];
   const pr = mood === 'wow' ? 7 : 5.5;
   const brows = mood === 'sad'
@@ -362,23 +421,25 @@ function mascotSVG(eq = S.equipped, mood = 'happy') {
   const acc = id => (id && ACCESSORY_SVG[id]) || '';
   return `<svg class="owl" viewBox="0 -12 100 112" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <ellipse cx="50" cy="96" rx="24" ry="4" fill="rgba(0,0,0,.12)"/>
-    <path d="M23 28 L28 8 L41 22 Z" fill="#6a4fd8"/><path d="M77 28 L72 8 L59 22 Z" fill="#6a4fd8"/>
-    <path d="M19 52 Q8 72 26 84 Q30 66 19 52Z" fill="#6a4fd8"/><path d="M81 52 Q92 72 74 84 Q70 66 81 52Z" fill="#6a4fd8"/>
-    <ellipse cx="50" cy="56" rx="32" ry="36" fill="#7b5cf0"/>
-    <ellipse cx="50" cy="67" rx="20" ry="22" fill="#ffe6b3"/>
-    <path d="M41 64 q3 3 6 0 M53 64 q3 3 6 0 M47 72 q3 3 6 0 M41 80 q3 3 6 0 M53 80 q3 3 6 0" stroke="#e8c98a" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    ${(eq.back && BACK_SVG[eq.back]) || ''}
+    <path d="M23 28 L28 8 L41 22 Z" fill="${P.dark}"/><path d="M77 28 L72 8 L59 22 Z" fill="${P.dark}"/>
+    <path d="M19 52 Q8 72 26 84 Q30 66 19 52Z" fill="${P.dark}"/><path d="M81 52 Q92 72 74 84 Q70 66 81 52Z" fill="${P.dark}"/>
+    <ellipse cx="50" cy="56" rx="32" ry="36" fill="${P.body}"/>
+    <ellipse cx="50" cy="67" rx="20" ry="22" fill="${P.belly}"/>
+    <path d="M41 64 q3 3 6 0 M53 64 q3 3 6 0 M47 72 q3 3 6 0 M41 80 q3 3 6 0 M53 80 q3 3 6 0" stroke="${P.marks}" stroke-width="1.6" fill="none" stroke-linecap="round"/>${P.extra || ''}
     <ellipse cx="26" cy="53" rx="5" ry="3" fill="#ff8fab" opacity=".55"/><ellipse cx="74" cy="53" rx="5" ry="3" fill="#ff8fab" opacity=".55"/>
-    <circle cx="37" cy="40" r="12" fill="#fff" stroke="#5b43c4" stroke-width="2"/><circle cx="63" cy="40" r="12" fill="#fff" stroke="#5b43c4" stroke-width="2"/>
+    <circle cx="37" cy="40" r="12" fill="#fff" stroke="${P.ring}" stroke-width="2"/><circle cx="63" cy="40" r="12" fill="#fff" stroke="${P.ring}" stroke-width="2"/>
     <circle cx="${pupils[0][0]}" cy="${pupils[0][1]}" r="${pr}" fill="#2b2350"/><circle cx="${pupils[1][0]}" cy="${pupils[1][1]}" r="${pr}" fill="#2b2350"/>
     <circle cx="${pupils[0][0] + 2}" cy="${pupils[0][1] - 2}" r="1.8" fill="#fff"/><circle cx="${pupils[1][0] + 2}" cy="${pupils[1][1] - 2}" r="1.8" fill="#fff"/>
     ${brows}
     <path d="M45 50 L55 50 L50 58 Z" fill="#ffb703" stroke="#e09600" stroke-width="1" stroke-linejoin="round"/>
     <path d="M38 91 q2 -5 4 0 q2 -5 4 0 M54 91 q2 -5 4 0 q2 -5 4 0" stroke="#ffb703" stroke-width="2.4" fill="none" stroke-linecap="round"/>
     ${acc(eq.neck)}${acc(eq.glasses)}${acc(eq.hat)}
+    ${pet ? `<text x="70" y="99" font-size="24" font-family="Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif">${pet}</text>` : ''}
   </svg>`;
 }
 function itemPreviewSVG(item) {
-  const eq = { hat: null, glasses: null, neck: null };
+  const eq = { hat: null, glasses: null, neck: null, back: null, skin: null, pet: null };
   eq[item.cat] = item.id;
   return mascotSVG(eq);
 }
@@ -1046,7 +1107,7 @@ function renderHome() {
   const notice = VIEW.homeNotice; VIEW.homeNotice = null;
   let body = '';
   const hero = `<div class="card home-hero span2"><div class="owl-big">${mascotSVG(S.equipped)}</div>
-    <div class="grow"><p class="home-hello">Oi, ${esc(S.name)}! 👋</p>${w ? deadlineText(w) : '<div class="deadline">Vamos planejar a sua semana?</div>'}</div></div>`;
+    <div class="grow"><p class="home-hello">Oi, ${esc(S.name)}! 👋 ${S.streak && S.streak.n > 0 && (S.streak.last === today() || S.streak.last === addDays(today(), -1)) ? `<span class="streak" title="Dias seguidos">🔥 ${S.streak.n}</span>` : ''}</p>${w ? deadlineText(w) : '<div class="deadline">Vamos planejar a sua semana?</div>'}</div></div>`;
   const noticeHtml = notice ? `<div class="notice ${notice.type} span2">${notice.msg}</div>` : '';
 
   if (!w || (w.settled && w.end < t)) {
@@ -1225,7 +1286,9 @@ function renderSetup() {
   $('[data-act=cancel]', el).onclick = () => { resetDraft(); show('home'); };
   $('[data-act=gen]', el).onclick = () => generateFromSetup(editing);
 }
-function resetDraft() { VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.draftText = null; VIEW.draftImages = null; VIEW.setupCycle = null; }
+function cleanPassages(list) { return (list || []).filter(x => x && SUBJ[x.subject] && CYCLE.includes(x.day) && x.text).map(x => ({ subject: x.subject, day: x.day, title: String(x.title || ''), text: String(x.text) })); }
+function dayPassages(d) { return S.week && d ? (S.week.passages || []).filter(x => x.day === d.dow) : []; }
+function resetDraft() { VIEW.draftOpt = null; VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.draftText = null; VIEW.draftSubj = null; VIEW.draftImages = null; VIEW.openSubj = null; VIEW.setupCycle = null; }
 function setupCycleDefaults() {
   const t = today(); const w = S.week;
   const editing = w && !w.settled && VIEW.setupCycle !== 'next';
@@ -1259,21 +1322,50 @@ function bindCountsAndCycle(el, counts, rerender) {
   $$('input[name=cyc]', el).forEach(r => r.onchange = () => { VIEW.setupCycle = r.value; });
 }
 
-// Planejamento em linguagem natural: um texto livre (e fotos opcionais) → Claude cria a semana.
+// Planejamento em linguagem natural: ano escolar + uma seção (que abre e fecha) por matéria + fotos opcionais.
 function renderSetupAI() {
   const el = $('#scr-setup');
   const w = S.week;
   const editing = setupCycleDefaults();
-  if (VIEW.draftText == null) VIEW.draftText = editing ? (w.brief || '') : '';
+  if (!VIEW.draftSubj) VIEW.draftSubj = Object.assign({}, editing ? (w.subjectTexts || {}) : {});
+  if (!VIEW.draftOpt) VIEW.draftOpt = Object.assign({}, editing ? (w.subjectOpts || {}) : (S.lastOpts || {}));
+  if (!S.settings.year) { S.settings.year = 'Y5'; save(); }
   if (!VIEW.draftImages) VIEW.draftImages = [];
+  if (!VIEW.openSubj) VIEW.openSubj = {};
   const counts = VIEW.draftCounts || (editing ? Object.assign({}, w.counts) : Object.assign({}, S.settings.counts));
   VIEW.draftCounts = counts;
   const thumbs = VIEW.draftImages.map((im, i) => `<div class="thumb"><img src="data:${im.type};base64,${im.data}" alt="Foto ${i + 1}"><button data-rm="${i}" aria-label="Remover foto">✕</button></div>`).join('');
+  const filled = SUBJECTS.filter(sb => subjFilled(sb.id)).length;
+  const section = sb => {
+    const txt = VIEW.draftSubj[sb.id] || '';
+    const has = subjFilled(sb.id);
+    const opt = VIEW.draftOpt[sb.id] || (isSpell(sb.id) ? 'list' : '');
+    const chips = isSpell(sb.id)
+      ? `<div class="chips">${SPELL_MODES.map(([k, l]) => `<button type="button" class="chip ${opt === k ? 'on' : ''}" data-opt="${sb.id}" data-v="${k}">${l}</button>`).join('')}</div>`
+      : isRead(sb.id)
+        ? `<div class="chips-lbl tiny muted">${sb.lang === 'pt' ? 'Nível do texto que a Lumi vai escrever:' : 'Level of the text Lumi will write:'}</div><div class="chips">${READ_LEVELS.map(([k, l]) => `<button type="button" class="chip ${opt === k ? 'on' : ''}" data-opt="${sb.id}" data-v="${k}">${l}</button>`).join('')}</div>`
+        : '';
+    const ph = isSpell(sb.id) ? SPELL_PH[sb.id][opt] : isRead(sb.id) ? (sb.lang === 'pt' ? 'Opcional: livro que está lendo, tema que você gosta (ex.: cavalos, espaço)…' : 'Optional: book you are reading, a topic you like (e.g. horses, space)…') : AI_PH[sb.id];
+    const preview = txt.trim() ? txt.trim().slice(0, 50) + (txt.trim().length > 50 ? '…' : '') : (isSpell(sb.id) && opt === 'auto') ? '🎲 a Lumi escolhe' : (isRead(sb.id) && opt) ? READ_LEVELS.find(x => x[0] === opt)[1] : (sb.lang === 'pt' ? 'toque para escrever' : 'tap to write');
+    return `<details class="subj-acc" style="--subj:${sb.color}" data-sid="${sb.id}" ${VIEW.openSubj[sb.id] ? 'open' : ''}>
+      <summary><span class="sa-ic">${sb.icon}</span><span class="sa-name">${esc(sb.name)}</span>
+        <span class="sa-prev">${esc(preview)}</span>
+        <span class="sa-st">${has ? '✅' : '＋'}</span></summary>
+      ${chips}<textarea data-subj="${sb.id}" placeholder="${esc(ph)}">${esc(txt)}</textarea></details>`;
+  };
   el.innerHTML = `<div class="setup">
     <div class="ai-box">
-      <label for="brief" class="ai-label">🏫 Conte para a Lumi o que você está aprendendo na escola</label>
-      <textarea id="brief" class="brief" placeholder="Ex.: Em BSS estamos aprendendo sobre as bacias hidrográficas. Em Math, frações e perímetro. Spelling: because, friend, believe, island. Em Português, substantivos e adjetivos. Estamos lendo O Pequeno Príncipe, capítulos 3 e 4. No IPC, o Sistema Solar.">${esc(VIEW.draftText)}</textarea>
-      <div class="row wrap tiny muted"><span>🎤 Dica: toque no microfone do teclado para falar em vez de escrever.</span></div>
+      <label class="ai-label" for="year">🎓 Ano escolar</label>
+      <select id="year" class="year-sel">
+        <option value="">Selecione o ano…</option>
+        ${SCHOOL_YEARS.map(([id, uk, br, age]) => `<option value="${id}" ${S.settings.year === id ? 'selected' : ''}>${uk} · ${br} · ${age} anos</option>`).join('')}
+      </select>
+    </div>
+    <div class="ai-box">
+      <div class="ai-label">🏫 O que você está aprendendo em cada matéria? <span class="tiny muted">(${filled} de ${SUBJECTS.length} preenchidas · pode escrever do seu jeito)</span></div>
+      <div class="acc-group"><div class="acc-title">🇧🇷 Em português</div>${SUBJECTS.filter(x => x.group === 'pt').map(section).join('')}</div>
+      <div class="acc-group"><div class="acc-title">🇬🇧 In English</div>${SUBJECTS.filter(x => x.group === 'en').map(section).join('')}</div>
+      <div class="row wrap tiny muted"><span>🎤 Dica: toque no microfone do teclado para falar em vez de escrever. Matéria em branco não entra na semana.</span></div>
       <div class="row wrap">
         <label class="btn small">📷 Foto do worksheet ou da agenda<input type="file" id="ph" accept="image/*" multiple hidden></label>
         <span class="tiny muted">opcional · até 4 fotos</span>
@@ -1282,25 +1374,75 @@ function renderSetupAI() {
     </div>
     ${countsAndCycleHtml(editing, counts)}
     <div class="row"><button class="btn" data-act="cancel">Voltar</button><button class="btn primary grow big" data-act="gen">${editing ? '✨ Atualizar a semana' : '✨ Criar minha semana com a Lumi'}</button></div>
-    <button class="btn ghost small" data-act="subjects">Prefiro escrever por matéria (sem o Claude)</button>
+    <button class="btn ghost small" data-act="subjects">Prefiro o gerador do próprio app (sem o Claude)</button>
   </div>`;
-  const ta = $('#brief', el);
-  ta.oninput = () => { VIEW.draftText = ta.value; };
+  $('#year', el).onchange = e => { S.settings.year = e.target.value; save(); };
+  $$('details.subj-acc', el).forEach(d => d.addEventListener('toggle', () => {
+    VIEW.openSubj[d.dataset.sid] = d.open;
+  }));
+  $$('[data-opt]', el).forEach(btn => btn.onclick = () => {
+    const id = btn.dataset.opt; const v = btn.dataset.v;
+    VIEW.draftOpt[id] = (isRead(id) && VIEW.draftOpt[id] === v) ? '' : v;   // toque de novo desmarca o nível
+    VIEW.openSubj[id] = true; renderSetupAI();
+  });
+  $$('textarea[data-subj]', el).forEach(ta => {
+    ta.oninput = () => { VIEW.draftSubj[ta.dataset.subj] = ta.value; };
+    ta.onblur = () => { const d = ta.closest('details'); const has = subjFilled(ta.dataset.subj);
+      $('.sa-st', d).textContent = has ? '✅' : '＋';
+      if (ta.value.trim()) $('.sa-prev', d).textContent = ta.value.trim().slice(0, 50) + (ta.value.trim().length > 50 ? '…' : ''); };
+  });
   $('#ph', el).onchange = async e => {
     const files = [...e.target.files].slice(0, 4 - VIEW.draftImages.length);
     for (const f of files) { try { VIEW.draftImages.push(await fileToJpeg(f, 1600)); } catch (err) { toast('Não consegui ler essa foto.'); } }
     renderSetupAI();
   };
-  $$('[data-rm]', el).forEach(b => b.onclick = () => { VIEW.draftImages.splice(Number(b.dataset.rm), 1); renderSetupAI(); });
+  $$('[data-rm]', el).forEach(btn => btn.onclick = () => { VIEW.draftImages.splice(Number(btn.dataset.rm), 1); renderSetupAI(); });
   bindCountsAndCycle(el, counts, () => renderSetupAI());
   $('[data-act=cancel]', el).onclick = () => { resetDraft(); show('home'); };
   $('[data-act=subjects]', el).onclick = () => { VIEW.setupMode = 'subjects'; renderSetup(); };
   $('[data-act=gen]', el).onclick = () => generateWithClaude(editing);
 }
+// Ortografia/Spelling: como escolher as palavras. Leitura: nível do texto que a Lumi escreve.
+const SPELL_MODES = [['list', '📝 Lista'], ['theme', '🎯 Tema'], ['auto', '🎲 A Lumi escolhe']];
+const READ_LEVELS = [['below', '⬇️ Mais fácil'], ['at', '🎯 No meu nível'], ['above', '⬆️ Acima'], ['way', '🚀 Bem acima']];
+const SPELL_TXT = { list: 'lista de palavras', theme: 'tema', auto: 'a Lumi escolhe as palavras' };
+const READ_TXT = { below: 'mais fácil (abaixo do ano dela)', at: 'no meu nível', above: 'acima do nível', way: 'bem acima do nível' };
+const SPELL_PH = {
+  pt_ort: { list: 'Ex.: exceção, cachorro, passeio, chuveiro', theme: 'Ex.: palavras com SS e Ç; palavras com X e CH', auto: '(opcional) algum detalhe? Ex.: palavras com acento' },
+  en_spell: { list: 'e.g. because, friend, believe, island', theme: 'e.g. silent letters; words ending in -tion', auto: '(optional) anything specific? e.g. tricky words' },
+};
+const isSpell = id => id === 'pt_ort' || id === 'en_spell';
+const isRead = id => id === 'pt_leit' || id === 'en_read' || id === 'en_guided';
+function subjFilled(id) {
+  const t = ((VIEW.draftSubj || {})[id] || '').trim(); const o = (VIEW.draftOpt || {})[id];
+  return !!t || (isSpell(id) && o === 'auto') || (isRead(id) && !!o);
+}
+const AI_PH = {
+  pt: 'Ex.: estamos estudando substantivos e adjetivos, e sinônimos.',
+  pt_ort: 'Ex.: as palavras da semana são exceção, cachorro, passeio, chuveiro.',
+  pt_leit: 'Ex.: estamos lendo O Pequeno Príncipe, capítulos 3 e 4.',
+  bss: 'Ex.: estamos aprendendo sobre as bacias hidrográficas do Brasil.',
+  en: 'e.g. we are learning about past tense and adjectives.',
+  en_read: 'e.g. we are reading Charlotte\'s Web, chapters 5 and 6.',
+  en_spell: 'e.g. this week\'s words: because, friend, believe, island.',
+  en_guided: 'e.g. our guided reading book is The Iron Man, chapter 2.',
+  ipc: 'e.g. our unit is The Solar System.',
+  math: 'e.g. fractions and perimeter.',
+};
 async function generateWithClaude(editing) {
-  const text = (VIEW.draftText || '').trim();
+  const subjTexts = {}; const subjOpts = {};
+  SUBJECTS.forEach(sb => {
+    const v = ((VIEW.draftSubj || {})[sb.id] || '').trim(); if (v) subjTexts[sb.id] = v;
+    const o = (VIEW.draftOpt || {})[sb.id]; if (o) subjOpts[sb.id] = o;
+  });
+  const text = SUBJECTS.filter(sb => subjFilled(sb.id)).map(sb => {
+    const o = subjOpts[sb.id] || (isSpell(sb.id) ? 'list' : '');
+    const tag = isSpell(sb.id) ? ` [modo: ${SPELL_TXT[o]}]` : (isRead(sb.id) && o) ? ` [nível do texto: ${READ_TXT[o]}]` : '';
+    return `- ${sb.id} (${sb.name})${tag}: ${subjTexts[sb.id] || '(sem detalhes)'}`;
+  }).join('\n');
   const images = VIEW.draftImages || [];
-  if (!text && !images.length) { say('Me conta o que você está aprendendo (ou manda uma foto do worksheet)! ✍️', { mood: 'think' }); $('#brief').focus(); return; }
+  if (!S.settings.year) { say('Primeiro escolha o <b>ano escolar</b> lá em cima. 🎓', { mood: 'think' }); $('#year').focus(); return; }
+  if (!text && !images.length) { say('Abra pelo menos uma matéria e me conta o que você está aprendendo (ou manda uma foto do worksheet)! ✍️', { mood: 'think' }); return; }
   const counts = Object.assign({}, VIEW.draftCounts);
   const t = today();
   // Quais dias vão receber perguntas
@@ -1333,18 +1475,20 @@ async function generateWithClaude(editing) {
   if (editing) {
     const w = S.week;
     const redoDows = redo.map(dowOf);
-    w.brief = text; w.summary = res.topics || []; w.topics = topics;
+    w.brief = text; w.subjectTexts = subjTexts; w.subjectOpts = subjOpts; w.summary = res.topics || []; w.topics = topics;
+    w.passages = (w.passages || []).filter(x => !redoDows.includes(x.day)).concat(cleanPassages(res.passages));
     w.imported = (w.imported || []).filter(q => !q.day || !redoDows.includes(q.day)).concat(valid);
-    redo.forEach(date => { const d = w.days[date]; d.n = counts[d.dow]; d.required = (d.n || 0) > 0 && date >= from; d.printed = false; });
+    redo.forEach(date => { const d = w.days[date]; d.n = counts[d.dow]; d.required = (d.n || 0) > 0 && date >= from; d.printed = false; d.passageSeen = false; });
     w.counts = counts;
     regenerateDays(w, redo, '|' + uid());
   } else {
     if (S.week) archiveWeek(S.week);
     S.week = createWeek(start, from, topics, counts, valid.concat(S.pendingImport || []));
-    S.week.brief = text; S.week.summary = res.topics || []; S.week.ai = true;
+    S.week.brief = text; S.week.subjectTexts = subjTexts; S.week.subjectOpts = subjOpts; S.week.summary = res.topics || []; S.week.ai = true;
+    S.week.passages = cleanPassages(res.passages);
     S.pendingImport = [];
   }
-  S.lastTopics = topics;
+  S.lastTopics = topics; S.lastOpts = subjOpts;
   resetDraft();
   save();
   const total = requiredDays(S.week).reduce((a, d) => a + d.questions.length, 0);
@@ -1415,6 +1559,7 @@ function renderWork() {
       <h2>${esc(c.title)}</h2>
       <div class="progress" aria-hidden="true"><i id="prog-bar"></i></div><span class="prog-txt" id="prog-txt"></span>
       ${canQty ? `<span class="qty" title="Quantas perguntas hoje?"><button data-qty="-1" aria-label="menos perguntas">−</button><span>${c.questions.length}</span><button data-qty="1" aria-label="mais perguntas">+</button></span>` : ''}
+      ${c.kind === 'day' && dayPassages(c.obj).length ? `<button class="btn small read-btn" data-act="passage">📖 ${dayPassages(c.obj).length > 1 ? 'Textos' : 'Texto'}</button>` : ''}
       ${paper && c.obj.printed ? '<button class="btn small gold" data-act="check">📄 Corrigir folha</button>' : ''}
     </div>
     <div class="sheet" id="sheet">${cards}</div>
@@ -1427,6 +1572,20 @@ function renderWork() {
   bindWork(el, c);
   updateProgress(c);
   requestAnimationFrame(() => fitGrid($('#sheet')));
+  if (c.kind === 'day' && dayPassages(c.obj).length && !c.obj.passageSeen && !c.done) { c.obj.passageSeen = true; save(); setTimeout(() => showPassages(c.obj), 250); }
+}
+// Texto(s) de leitura escritos pela Lumi para o dia
+function showPassages(d) {
+  const ps = dayPassages(d);
+  const pt = ps[0] && SUBJ[ps[0].subject].lang === 'pt';
+  const m = openModal(`<div class="modal-head"><h3>📖 ${pt ? 'Leia com atenção' : 'Read carefully'}</h3><button class="btn small" data-close>${pt ? 'Fechar' : 'Close'}</button></div>
+    <div class="modal-body passage">${ps.map(x => `<div class="pas"><div class="pas-subj">${SUBJ[x.subject].icon} ${esc(SUBJ[x.subject].name)}</div><h4>${esc(x.title)}</h4>${x.text.split(/\n+/).map(par => `<p>${esc(par)}</p>`).join('')}</div>`).join('')}</div>
+    <div class="modal-foot"><button class="btn primary" data-close>${pt ? 'Li! Vamos às perguntas' : 'Done! To the questions'}</button></div>`, { wide: true });
+  m.style.maxHeight = 'calc(100dvh - 24px)';
+}
+function passageContext(q, d) {
+  const ps = d ? dayPassages(d).filter(x => x.subject === q.subject) : [];
+  return ps.map(x => `Texto "${x.title}": ${x.text}`).join('\n');
 }
 function questionCard(q, i, c) {
   const s = SUBJ[q.subject] || { color: '#7b5cf0', icon: '❓', short: '' };
@@ -1480,6 +1639,7 @@ function bindWork(el, c) {
   $('[data-act=key]', el).onclick = () => openGabarito(c);
   const pr = $('[data-act=print]', el); if (pr) pr.onclick = () => openPrintDialog(c.obj.date);
   const ck = $('[data-act=check]', el); if (ck) ck.onclick = () => openCheck(c.obj.date);
+  const ps = $('[data-act=passage]', el); if (ps) ps.onclick = () => showPassages(c.obj);
   const fin = $('[data-act=finish]', el);
   if (fin) fin.onclick = () => finishWork(c);
 }
@@ -1492,7 +1652,8 @@ async function askTutor(q, c) {
   say(q.lang === 'en' ? 'Thinking… 🤔' : 'Pensando… 🤔', { mood: 'think', sticky: true });
   try {
     const r = await apiCall('/api/tutor', { method: 'POST', timeout: 45000, data: {
-      q: q.q, options: q.options || [], answer: q.answer, attempt: c.answers[q.id] || '', lang: q.lang, subject: q.subject, subjectName: SUBJ[q.subject] && SUBJ[q.subject].name } });
+      q: q.q, options: q.options || [], answer: q.answer, attempt: c.answers[q.id] || '', lang: q.lang, subject: q.subject, subjectName: SUBJ[q.subject] && SUBJ[q.subject].name,
+      context: c.kind === 'day' ? passageContext(q, c.obj) : '' } });
     say(`🦉 ${esc(r.text)}`, { mood: 'think', ms: 16000 });
   } catch (e) { say(q.lang === 'en' ? 'I could not think right now. Try the hint again later!' : 'Não consegui pensar agora. Tente de novo daqui a pouco!', { mood: 'sad' }); }
 }
@@ -1587,7 +1748,7 @@ async function gradeOpenAnswers(c) {
   const stop = showLoading(['Lendo suas respostas… 📖', 'Pensando com carinho… 🦉', 'Escrevendo comentários… ✍️']);
   try {
     const r = await apiCall('/api/check-open', { method: 'POST', timeout: 90000, data: {
-      context: weekTopicsText(S.week),
+      context: weekTopicsText(S.week) + (c.kind === 'day' ? '\n' + dayPassages(c.obj).map(x => `Texto "${x.title}": ${x.text}`).join('\n') : ''),
       items: opens.map(x => ({ q: x.q.q, answer: c.answers[x.q.id], lang: x.q.lang, subject: x.q.subject, subjectName: SUBJ[x.q.subject] && SUBJ[x.q.subject].name })) } });
     c.obj.verdicts = c.obj.verdicts || {}; c.obj.notes = c.obj.notes || {};
     (r.results || []).forEach(res => { const x = opens[res.number - 1]; if (!x) return; c.obj.verdicts[x.q.id] = res.verdict === 'ok' ? 'ok' : 'bad'; if (res.note) c.obj.notes[x.q.id] = res.note; });
@@ -1609,7 +1770,7 @@ async function explainContent(q, c) {
   try {
     const r = await apiCall('/api/explain', { method: 'POST', timeout: 60000, data: {
       q: q.q, options: q.options || [], answer: q.answer, done: c.done, lang: q.lang, subject: q.subject,
-      subjectName: SUBJ[q.subject] && SUBJ[q.subject].name, context: weekTopicsText(S.week) } });
+      subjectName: SUBJ[q.subject] && SUBJ[q.subject].name, context: weekTopicsText(S.week) + (c.kind === 'day' ? '\n' + passageContext(q, c.obj) : '') } });
     stop();
     q[key] = { title: r.title, explanation: r.explanation, example: r.example };
     save();
@@ -1635,12 +1796,13 @@ function completeWork(c, via, extraMsg = '') {
     showCelebrate('Extras concluídos! ⭐', coins ? `+${coins}` : '', `Você acertou <b>${correct} de ${obj.length}</b>.${c.obj.paid ? '' : ' (Rodada só de treino.)'} Abra o gabarito para ver as correções.`);
     return;
   }
+  const streakMsg = bumpStreak(c.obj.date);
   save();
   VIEW.work = { kind: 'day', date: c.obj.date };
   show('work');
   const w = S.week;
   const allDone = weekAllDone(w);
-  const msg = (extraMsg ? extraMsg + '<br>' : '') + `Você acertou <b>${correct} de ${obj.length}</b>.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais corrigirem.` : ''}`;
+  const msg = (extraMsg ? extraMsg + '<br>' : '') + streakMsg + `Você acertou <b>${correct} de ${obj.length}</b>.${open ? ` ${open} resposta${open > 1 ? 's' : ''} livre${open > 1 ? 's' : ''} vai${open > 1 ? 'o' : ''} para os pais corrigirem.` : ''}`;
   if (allDone && today() === w.end && !w.settled) {
     showCelebrate('Tudo pronto! 🎉', '', msg + `<br><br>Todas as tarefas da semana estão feitas. Volte ao início e toque em <b>Entregar a semana</b> para ganhar <b>+${S.settings.reward}</b> 🪙!`);
   } else if (allDone) {
@@ -1648,6 +1810,19 @@ function completeWork(c, via, extraMsg = '') {
   } else {
     showCelebrate('Tarefa do dia concluída! ✅', '', msg + ' O gabarito já está liberado.', 'happy');
   }
+}
+
+// Sequência de dias seguidos fazendo a tarefa no próprio dia. A cada 5 dias: +15 moedas.
+const STREAK_BONUS = 15;
+function bumpStreak(date) {
+  const t = today();
+  if (date !== t) return '';
+  const st = S.streak || (S.streak = { n: 0, last: '', best: 0 });
+  if (st.last === t) return '';
+  st.n = st.last === addDays(t, -1) ? st.n + 1 : 1;
+  st.last = t; st.best = Math.max(st.best || 0, st.n);
+  if (st.n % 5 === 0) { addCoins(STREAK_BONUS, `Sequência de ${st.n} dias 🔥`); return `🔥 <b>${st.n} dias seguidos!</b> Bônus de <b>+${STREAK_BONUS}</b> 🪙<br>`; }
+  return `🔥 Sequência: <b>${st.n} dia${st.n > 1 ? 's' : ''}</b> (a cada 5 dias: +${STREAK_BONUS} 🪙)<br>`;
 }
 
 /* ---------- Impressão: uma página A4 por dia ---------- */
@@ -1686,6 +1861,7 @@ function printDays(days, withKey) {
     pages.push(`<section class="page"><header class="p-head">
         <div><div class="p-brand">🦉 Estudos com a Lumi</div><div class="p-day">${esc(DOW_FULL[d.dow])} ${fmtDM(d.date)} · ${esc(S.name)}</div></div>
         <div class="p-score">Acertos: ____ / ${obj}</div></header>
+      ${dayPassages(d).map(x => `<div class="p-passage"><b>📖 ${esc(x.title)}</b>${x.text.split(/\n+/).map(par => `<p>${esc(par)}</p>`).join('')}</div>`).join('')}
       <div class="p-grid">${d.questions.map(printQuestionHtml).join('')}</div>
       <footer class="p-foot">Terminou? No app, abra ${esc(DOW_FULL[d.dow].toLowerCase())} e toque em “📄 Corrigir folha”.</footer></section>`);
     if (withKey) {
@@ -1792,12 +1968,12 @@ function renderShop() {
   const items = cat === 'voucher' ? vouchersAsItems() : SHOP_ITEMS.filter(i => i.cat === cat);
   const tryOn = VIEW.tryOn && SHOP_ITEMS.find(i => i.id === VIEW.tryOn);
   const previewEq = Object.assign({}, S.equipped);
-  if (tryOn && ['hat', 'glasses', 'neck'].includes(tryOn.cat)) previewEq[tryOn.cat] = tryOn.id;
+  if (tryOn && ['hat', 'glasses', 'neck', 'back', 'skin', 'pet'].includes(tryOn.cat)) previewEq[tryOn.cat] = tryOn.id;
   const cards = items.map(it => {
     const owned = S.owned.includes(it.id);
     const equipped = S.equipped[it.cat] === it.id;
     let pic = '';
-    if (['hat', 'glasses', 'neck'].includes(it.cat)) pic = itemPreviewSVG(it);
+    if (['hat', 'glasses', 'neck', 'back', 'skin', 'pet'].includes(it.cat)) pic = itemPreviewSVG(it);
     else if (it.cat === 'bg') pic = `<div class="swatch" style="background:${it.sw}"></div>`;
     else if (it.cat === 'sticker') pic = it.emoji;
     else pic = '🎟️';
@@ -1806,7 +1982,7 @@ function renderShop() {
     else if (it.cat === 'sticker') btn = owned ? '<span class="tiny muted">No álbum ✔</span>' : `<button class="btn small primary" data-buy="${it.id}">Comprar</button>`;
     else if (!owned) btn = `<div class="row"><button class="btn small" data-try="${it.id}">Provar</button><button class="btn small primary" data-buy="${it.id}">Comprar</button></div>`;
     else btn = equipped ? `<button class="btn small ok" data-unequip="${it.id}">Usando ✔</button>` : `<button class="btn small" data-equip="${it.id}">Usar</button>`;
-    return `<div class="item ${owned && it.cat !== 'voucher' ? 'owned' : ''}"><div class="pic">${pic}</div><div class="nm">${esc(it.name)}</div><div class="pr">🪙 ${it.price}</div>${btn}</div>`;
+    return `<div class="item ${owned && it.cat !== 'voucher' ? 'owned' : ''} ${it.price >= 1000 ? 'dream' : ''}">${it.price >= 1000 ? '<span class="dream-tag">✨ SONHO</span>' : ''}<div class="pic">${pic}</div><div class="nm">${esc(it.name)}</div><div class="pr">🪙 ${it.price}</div>${btn}</div>`;
   }).join('');
   const pend = (S.redemptions || []).filter(r => !r.delivered);
   el.innerHTML = `<div class="shop">
@@ -1835,7 +2011,7 @@ async function buy(id) {
     S.redemptions.unshift({ id: uid(), voucherId: it.id, name: it.name, price: it.price, date: today(), delivered: false });
   } else {
     S.owned.push(it.id);
-    if (['hat', 'glasses', 'neck', 'bg'].includes(it.cat)) S.equipped[it.cat] = it.id;
+    if (['hat', 'glasses', 'neck', 'bg', 'back', 'skin', 'pet'].includes(it.cat)) S.equipped[it.cat] = it.id;
   }
   VIEW.tryOn = null;
   save(); applyTheme(); renderMascotMini(); renderShop();
