@@ -587,7 +587,8 @@ ${days.map(d => `- ${d.dow} (${d.label || d.dow}): EXATAMENTE ${per} pergunta${p
 Regras:
 - NENHUMA pergunta pode repetir outra, nem perguntar o mesmo fato com outras palavras (em dias diferentes ou no "spare"). Cada dia fica no seu subtema; varie os fatos cobrados.
 - Comece a semana pelo mais fácil e vá aprofundando. Tipos variados ("mc", "short"${['math', 'fmath', 'phys', 'chem', 'sci'].some(x => subject.startsWith(x)) ? ', "num"' : ''}; no máximo 1 em cada 4 "open").
-${spell ? '- Ortografia/Spelling: 1 "proof" (caça-erros) por dia, com as palavras da semana.\n' : ''}- Em "subject" use sempre "${subject}".` }];
+${spell ? '- Ortografia/Spelling: 1 "proof" (caça-erros) por dia, com as palavras da semana.\n' : ''}- Em "subject" use sempre "${subject}".
+${b.repeatTopic ? '- ATENÇÃO: este assunto já foi estudado nas semanas anteriores. Aprofunde e traga fatos, exemplos e formatos NOVOS.\n' : ''}${Array.isArray(b.avoid) && b.avoid.length ? `- Já usadas nas semanas anteriores (não repita nem faça quase iguais):\n  - ${b.avoid.slice(0, 40).map(x => String(x).slice(0, 120)).join('\n  - ')}` : ''}` }];
   return claude(env, ctx, {
     model: await genModel(env, b), effort: 'low',
     system: studentProfile(b.name, b.year, b.mine, yearNum(b), b.levels), content, schema: POOL_SCHEMA, maxTokens: 16000,
@@ -827,7 +828,7 @@ async function handleBankFill(env, b, ctx) {
   const ckey = qKey(BANK_CURRICULUM, b.yearId, subject, level, week);
   const B = await bankEnsure(env, ctx.url, b.yearId, week);
   const n = Math.max(4, Math.min(30, Number(b.n) || 10));
-  const avoid = await B.recent(ckey, 80);
+  const avoid = (await B.recent(ckey, 80)).concat((Array.isArray(b.avoid) ? b.avoid : []).slice(0, 40).map(x => String(x).slice(0, 120)));
   const spell = (row.spelling || []).length > 0 || ['pt_ort', 'en_spell'].includes(subject);
   const content = [{ type: 'text', text: `${SHARED_NOTE}
 
@@ -841,7 +842,7 @@ ${spell ? `- inclua 1 "proof" (caça-erros) a cada 6–8 perguntas, com as palav
 ` : ''}- cada pergunta precisa funcionar sozinha, sem depender de outra.
 ${avoid.length ? `
 Já existem no banco (não repita nem faça quase iguais):
-- ${avoid.slice(0, 80).map(x => String(x).slice(0, 90)).join('\n- ')}` : ''}` }];
+- ${avoid.slice(0, 120).map(x => String(x).slice(0, 90)).join('\n- ')}` : ''}` }];
   const out = await claude(env, ctx, {
     model: await genModel(env, b), effort: 'low',
     system: studentProfile(null, YEAR_LABELS[b.yearId], [subject], yearNum(b), level ? { [subject]: level.toUpperCase() } : {}), content, schema: BANK_Q_SCHEMA, maxTokens: 16000,

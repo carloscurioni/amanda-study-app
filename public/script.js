@@ -477,6 +477,7 @@ function mergeStates(localRaw, remoteRaw) {
   M.extras = Object.assign({}, R.extras); Object.entries(L.extras || {}).forEach(([d, v]) => { M.extras[d] = { sets: Math.max(v.sets || 0, (M.extras[d] || {}).sets || 0) }; });
   M.workshop = Object.assign({}, R.workshop); Object.entries(L.workshop || {}).forEach(([d, v]) => { M.workshop[d] = Math.max(v || 0, M.workshop[d] || 0); });
   if (L.extra && (!R.extra || (L.extra.date || '') >= (R.extra.date || ''))) M.extra = L.extra;
+  if (L.qHist || R.qHist) { const m = new Map(); [...(L.qHist || []), ...(R.qHist || [])].forEach(h => { if (h && h.start && !m.has(h.start)) m.set(h.start, h); }); M.qHist = [...m.values()].sort((a, b) => (a.start < b.start ? 1 : -1)).slice(0, QHIST_WEEKS); }
   if (L.extraHist || R.extraHist) { const m = new Map(); [...(R.extraHist || []), ...(L.extraHist || [])].forEach(h => { if (h && h.k && !m.has(h.k)) m.set(h.k, h); }); M.extraHist = [...m.values()].sort((a, b) => (a.d < b.d ? -1 : a.d > b.d ? 1 : 0)).slice(-400); }
   ['pt', 'en'].forEach(k => { M.practice[k] = [...new Set([...(L.practice[k] || []), ...(R.practice[k] || [])])].slice(0, 30); });
   M.missed = (() => { const m = new Map(); [...(L.missed || []), ...(R.missed || [])].forEach(x => { if (x && x.q && !m.has(x.q.q)) m.set(x.q.q, x); }); return [...m.values()].slice(0, 40); })();
@@ -2024,11 +2025,13 @@ function activeSubjects(week) {
 // (Re)gera as perguntas dos dias indicados que ainda não foram começados.
 function regenerateDays(week, dates, nonce = '') {
   const act = activeSubjects(week);
+  const past = new Set([...pastKeys(), ...(S.extraHist || []).map(h => h.k)]);
   const usedElsewhere = new Set();
   Object.values(week.days).forEach(d => { if (!dates.includes(d.date)) d.questions.forEach(q => usedElsewhere.add(q.type + '|' + q.q)); });
   const pools = {};
   act.forEach(id => {
-    pools[id] = buildPool(id, week.topics[id] || '', week.id + nonce, (week.imported || []).filter(q => !q.day)).filter(q => !usedElsewhere.has(q.type + '|' + q.q));
+    const all = buildPool(id, week.topics[id] || '', week.id + nonce, (week.imported || []).filter(q => !q.day)).filter(q => !usedElsewhere.has(q.type + '|' + q.q));
+    pools[id] = [...all.filter(q => !past.has(qk(q))), ...all.filter(q => past.has(qk(q)))];   // as das semanas anteriores só se faltar
   });
   const order = CYCLE.map((_, i) => addDays(week.start, i)).filter(d => dates.includes(d));
   order.forEach(date => {
@@ -2153,8 +2156,31 @@ function deliverWeek() {
   save();
   showCelebrate('Week handed in! 🎉', `+${rw}`, 'You finished every task this week. So proud of you!');
 }
+/* ---------- 🗃️ Histórico de perguntas das semanas anteriores (para não repetir quando o tema volta) ----------
+   S.qHist: [{ start, topics: { matéria: tópico }, items: { matéria: [{ k, q, b }] } }] — as 6 últimas semanas. */
+const QHIST_WEEKS = 6;
+function noteWeekHist(w) {
+  if (!w || !w.days) return;
+  const items = {};
+  Object.values(w.days).forEach(d => (d.questions || []).forEach(q => { if (!q.subject || !q.q) return;
+    (items[q.subject] = items[q.subject] || []).push({ k: qk(q), q: String(q.q).slice(0, 140) + (q.text ? ` [${String(q.text).slice(0, 50)}…]` : q.say ? ` (${q.say})` : (q.options || []).length ? ` (${q.options.slice(0, 4).join(' / ')})` : ''), b: q.bank || undefined }); }));
+  (w.imported || []).filter(q => !q.day && q.subject && (w.spareUsed || []).includes(qk(q))).forEach(q => (items[q.subject] = items[q.subject] || []).push({ k: qk(q), q: String(q.q).slice(0, 140) }));
+  S.qHist = [{ start: w.start, topics: Object.assign({}, w.topics || {}), items }].concat((S.qHist || []).filter(h => h.start !== w.start)).slice(0, QHIST_WEEKS);
+}
+// semanas anteriores (sem a atual): chaves, ids do banco e textos por matéria
+const pastWeeks = () => S.qHist || [];   // inclui a semana atual (gravada antes de planejar/refazer), para a nova não repetir nada dela
+function pastKeys() { const s = new Set(); pastWeeks().forEach(h => Object.values(h.items || {}).forEach(l => l.forEach(x => s.add(x.k)))); return s; }
+function pastBankIds() { return pastWeeks().flatMap(h => Object.values(h.items || {}).flatMap(l => l.map(x => x.b).filter(Boolean))); }
+function pastTexts(sid, n = 40) { return pastWeeks().slice(0, 3).flatMap(h => ((h.items || {})[sid] || []).map(x => x.q)).slice(0, n); }
+// o tema desta matéria já apareceu nas últimas semanas? (palavras em comum)
+function topicRepeats(sid, topic) {
+  const words = t => new Set(normQ(t).split(' ').filter(w => w.length > 3));
+  const a = words(topic); if (!a.size) return false;
+  return pastWeeks().slice(0, 3).some(h => { const b = words((h.topics || {})[sid]); if (!b.size) return false; let n = 0; a.forEach(w => { if (b.has(w)) n++; }); return n / Math.min(a.size, b.size) >= 0.5; });
+}
 function archiveWeek(w) {
   if (!w) return;
+  noteWeekHist(w);
   const req = requiredDays(w);
   S.history.unshift({ start: w.start, end: w.end, settled: w.settled, done: req.filter(d => d.status === 'done').length, total: req.length });
   S.history = S.history.slice(0, 52);
@@ -2356,7 +2382,7 @@ function weekSubjects() {
   return ids.length ? ids : null;
 }
 function extraGroups() {
-  const mine = weekSubjects() || mySubjects();
+  const mine = mySubjects();   // todas as matérias da criança (as sem tema na semana fazem revisão do ano)
   const has = id => mine.includes(id);
   const g = [{ id: 'mix', label: '🎲 Mixed', subjects: weekSubjects() }];
   const used = new Set();
@@ -2464,8 +2490,17 @@ async function startExtras(group) {
   if (!qs.length && Server.ai) {
     const stop = showLoading(['Inventing new questions…', 'Sharpening my pencil… ✏️', 'Almost there!']);
     try {
+      // matérias sem tema nesta semana: usa o tópico do currículo da semana letiva atual (todas as etapas, Year 1–13)
+      let topics = weekTopicsText(S.week);
+      const tp = (S.week ? S.week.topics : S.lastTopics) || {};
+      const noTopic = (group.subjects && group.subjects.length ? group.subjects : mySubjects()).filter(id => !String(tp[id] || '').trim());
+      if (noTopic.length && S.settings.year) {
+        try { const rows = await curriculumRows(S.settings.year, academicWeekOf(t), noTopic);
+          rows.forEach(r => { topics += `\n${SUBJ[r.subject] ? SUBJ[r.subject].name : r.subject}: ${r.topic}${(r.objectives || []).length ? ' — ' + r.objectives.join('; ') : ''}${(r.spelling || []).length ? ' — words: ' + r.spelling.join(', ') : ''}`; });
+        } catch (e) { /* sem currículo: a Lumi faz revisão do ano */ }
+      }
       const r = await apiCall('/api/more', { method: 'POST', timeout: 90000, data: {
-        name: S.name, n: size, objectiveOnly: true, topics: weekTopicsText(S.week),
+        name: S.name, n: size, objectiveOnly: true, topics,
         subjects: group.subjects || [], focus: group.focus || [], exclude: recentQuestionTexts(60) } });
       const seen = seenQuestionKeys();
       qs = validateImported(r).ok.filter(q => q.type !== 'open' && (!group.subjects || group.subjects.includes(q.subject)) && !seen.has(qk(q)));
@@ -2524,6 +2559,7 @@ function seenQuestionKeys() {
   if (S.week) Object.values(S.week.days).forEach(d => (d.questions || []).forEach(q => s.add(qk(q))));
   if (S.extra) (S.extra.questions || []).forEach(q => s.add(qk(q)));
   (S.extraHist || []).forEach(h => s.add(h.k));
+  pastKeys().forEach(k => s.add(k));
   return s;
 }
 function noteExtraHist(qs) {
@@ -2819,6 +2855,7 @@ async function generateWithClaude(editing) {
   const stop = showLoading(['Reading what you told me… 📖', 'Sorting by subject… 🗂️', 'Inventing questions… ✏️', 'Polishing the hints… 💡', 'Organising the days of the week… 📅', 'Writing the chapters of this week’s book… 📚', 'Almost ready! 🦉']);
   let res;
   try {
+    if (S.week) noteWeekHist(S.week);   // a semana atual/anterior entra no histórico antes de criar as novas perguntas
     const base = { name: S.name, text, images, days, perSubject: perTheme(), previous: S.week && S.week.summary ? S.week.summary.map(x => `${x.subject}: ${x.summary}`).join(' | ') : '' };
     const info = await bankPlanInfo(subjTexts, subjOpts, images);
     res = info && Object.keys(info.shared).length ? await planWithBank(base, info, lineOf) : await planInSteps(base);
@@ -2876,15 +2913,16 @@ async function planInSteps(base) {
   const bookFor = d => { if (!d.read) return null; const b = (outline.books || []).find(x => x.subject === d.read.subject); if (!b) return null;
     const i = b.chapters.findIndex(c => c.day === d.dow); return { title: b.title, premise: b.premise, chapter: b.chapters[i] || { title: '', synopsis: '' }, before: i > 0 ? b.chapters.slice(0, i) : [] }; };
   const retry = async fn => { let last; for (let a = 0; a < 2; a++) { try { return await fn(); } catch (e) { last = e; if (e.status === 429) break; } } throw last; };
+  const sumOf = id => ((outline.topics || []).find(t => t.subject === id) || {}).summary || '';
   const poolJob = id => retry(() => apiCall('/api/plan-pool', { method: 'POST', timeout: 180000, data: { name: base.name, subject: id, perDay: per, spare,
-      summary: ((outline.topics || []).find(t => t.subject === id) || {}).summary || '', modes: String(base.text || '').slice(0, 400),
+      summary: sumOf(id), modes: String(base.text || '').slice(0, 400), avoid: pastTexts(id, 40), repeatTopic: topicRepeats(id, sumOf(id)),
       days: base.days.map(d => ({ dow: d.dow, label: dayLabel(d), focus: focusFor(d.dow, id) })) } }))
     .then(r => ({ id, r }), err => ({ id, err })).finally(() => { done++; tick(); });
   const readJob = d => retry(() => apiCall('/api/plan-day', { method: 'POST', timeout: 180000, data: { name: base.name, readingOnly: true, perSubject: per, day: Object.assign({}, d, { n: d.read.n || 6 }), topics: [], focus: [], book: bookFor(d) } }))
     .then(r => ({ d, r }), err => ({ d, err })).finally(() => { done++; tick(); });
   const [pools, reads] = await Promise.all([Promise.all(subs.map(poolJob)), Promise.all(readDays.map(readJob))]);
   // monta sem repetir: a mesma pergunta (ou quase igual) não entra duas vezes na semana
-  const seen = new Set(); const questions = [];
+  const seen = new Set([...pastKeys(), ...(S.extraHist || []).map(h => h.k)]); const questions = [];
   const add = (q, extra) => { const k = qk(q); if (!q.q || seen.has(k)) return; seen.add(k); questions.push(Object.assign({}, q, extra)); };
   pools.filter(x => x.r).forEach(({ id, r }) => {
     (r.days || []).forEach(x => (x.questions || []).forEach(q => add(q, { subject: id, day: x.day })));
@@ -2934,12 +2972,12 @@ async function planWithBank(base, info, lineOf) {
   const slot = id => id + (info.shared[id].level ? '-' + info.shared[id].level : '');
   const readSubs = [...new Set(base.days.filter(d => d.read && info.shared[d.read.subject]).map(d => d.read.subject))];
   const readLevelOf = sid => (base.days.find(d => d.read && d.read.subject === sid) || {}).read.level;
-  const exclude = S.week ? Object.values(S.week.days).flatMap(d => d.questions || []).map(q => q.bank).filter(Boolean) : [];
+  const exclude = (S.week ? Object.values(S.week.days).flatMap(d => d.questions || []).map(q => q.bank).filter(Boolean) : []).concat(pastBankIds()).slice(0, 600);
   const drawn = await apiCall('/api/bank/draw', { method: 'POST', data: { childId: Server.childId, week: info.week, exclude,
     subjects: sharedMix.map(id => ({ subject: id, level: info.shared[id].level, need: need(id) })),
     books: readSubs.map(sid => ({ subject: sid, level: info.shared[sid].level, readLevel: readLevelOf(sid) })) } });
   // sem repetir na semana: nada que já esteja nos dias da semana, e nada de quase-iguais entre si
-  const seenQ = new Set(S.week ? Object.values(S.week.days).flatMap(d => (d.questions || []).map(q => qk(q))) : []);
+  const seenQ = new Set([...(S.week ? Object.values(S.week.days).flatMap(d => (d.questions || []).map(q => qk(q))) : []), ...pastKeys(), ...(S.extraHist || []).map(h => h.k)]);
   const fresh = q => { const k = qk(q); if (seenQ.has(k)) return false; seenQ.add(k); return true; };
   const got = {}; sharedMix.forEach(id => { got[id] = (drawn.questions[slot(id)] || []).filter(fresh).map(q => Object.assign({}, q, { subject: id })); });
   const books = Object.assign({}, drawn.books || {});
@@ -2951,7 +2989,7 @@ async function planWithBank(base, info, lineOf) {
     const miss = need(id) - got[id].length; if (miss <= 0) return;
     job(async () => {
       try {
-        const r = await apiCall('/api/ai/bank-fill', { method: 'POST', timeout: 150000, data: { week: info.week, subject: id, level: info.shared[id].level, n: Math.max(miss, 8) } });
+        const r = await apiCall('/api/ai/bank-fill', { method: 'POST', timeout: 150000, data: { week: info.week, subject: id, level: info.shared[id].level, n: Math.max(miss, 8), avoid: pastTexts(id, 40) } });
         const have = new Set(got[id].map(q => q.bank));
         const add = (r.questions || []).filter(q => !have.has(q.bank) && fresh(q)).slice(0, miss).map(q => Object.assign({}, q, { subject: id }));
         got[id].push(...add); created += add.length;
@@ -5330,7 +5368,8 @@ async function applyCountsToWeek() {
       for (let left = total; left > 0 && got.length < total;) {
         const n = Math.min(15, left); left -= n;
         const r = await apiCall('/api/more', { method: 'POST', timeout: 120000, data: { name: S.name, n, subjects: [id], topics: `${id}: ${w.topics[id] || ''}`, exclude: exclude.concat(got.map(q => q.q)) } });
-        got.push(...validateImported(r).ok.filter(q => q.subject === id));
+        const seenK = seenQuestionKeys(); keep.forEach(q => seenK.add(qk(q))); got.forEach(q => seenK.add(qk(q)));
+        got.push(...validateImported(r).ok.filter(q => q.subject === id && !seenK.has(qk(q))));
       }
       gs.forEach(g => got.splice(0, g.need).forEach(q => { keep.push(Object.assign(q, { day: g.dow })); added++; }));
     }));
@@ -5338,7 +5377,8 @@ async function applyCountsToWeek() {
       const x = g.passage, en = SUBJ[g.subject].lang === 'en';
       const r = await apiCall('/api/more', { method: 'POST', timeout: 120000, data: { name: S.name, n: g.need, subjects: [g.subject], exclude: keep.filter(q => q.day === g.dow && q.subject === g.subject).map(q => q.q),
         topics: `${g.subject}: perguntas de compreensão sobre o texto do dia abaixo ("mc" ou "short", começando com "${en ? 'In the chapter…' : 'No capítulo…'}"; nunca peça resumo).\nTexto "${x.title}":\n${String(x.text).slice(0, 2600)}` } });
-      validateImported(r).ok.filter(q => q.subject === g.subject).slice(0, g.need).forEach(q => { keep.push(Object.assign(q, { day: g.dow })); added++; });
+      const seenK = seenQuestionKeys(); keep.forEach(q => seenK.add(qk(q)));
+      validateImported(r).ok.filter(q => q.subject === g.subject && !seenK.has(qk(q))).slice(0, g.need).forEach(q => { keep.push(Object.assign(q, { day: g.dow })); added++; });
     }));
     await Promise.all(jobs.map(fn => fn().catch(e => console.warn('applyCounts', e))));
   }
