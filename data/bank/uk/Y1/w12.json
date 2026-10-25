@@ -3180,6 +3180,876 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "Pip's Guessing Garden",
+   "premise": "Pip the mouse and her garden friends meet a new mystery each day and use clues like covers, titles, labels and footprints to predict what will happen, then check if they were right.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Big Red Boot",
+     "synopsis": "Pip the mouse finds a big red boot in the garden and guesses what it could be. Inside, she finds a cosy surprise.",
+     "text": "Pip was a small grey mouse. She lived under the garden shed.\nOne morning, Pip saw something new on the grass. It was big. It was red. It had a long lace.\n\"What can it be?\" said Pip. \"Is it a red boat? Is it a red house?\"\nPip looked at it from the front. She looked at it from the back. It was a boot! A big red boot.\n\"I think a giant lost it,\" said Pip.\nHer friend Tob the frog hopped over. \"I think it is a boot for a farmer,\" said Tob.\nPip climbed inside the boot. It was dark and soft and warm.\n\"Oh!\" said Pip. \"This boot is not for a giant. And it is not for a farmer. This boot is for me!\"\nPip brought a leaf for a bed and a nut for a snack.\nThat night, Pip slept in the big red boot. It was the cosiest house in the whole garden.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kind of animal is Pip?",
+       "options": [
+        "A mouse",
+        "A frog",
+        "A bird"
+       ],
+       "answer": "A mouse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour was the boot?",
+       "options": [
+        "Red",
+        "Blue",
+        "Green"
+       ],
+       "answer": "Red",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Pip live at the start?",
+       "options": [
+        "Under the garden shed",
+        "In a tree",
+        "In a pond"
+       ],
+       "answer": "Under the garden shed",
+       "accept": [],
+       "hint": "Look at the first lines.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Pip's first guess?",
+       "options": [
+        "A red boat",
+        "A red ball",
+        "A red hat"
+       ],
+       "answer": "A red boat",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who did Tob think the boot was for?",
+       "options": [
+        "A farmer",
+        "A giant",
+        "A baby"
+       ],
+       "answer": "A farmer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Pip bring for a bed?",
+       "options": [
+        "A leaf",
+        "A sock",
+        "A feather"
+       ],
+       "answer": "A leaf",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Pip feel about her new house?",
+       "options": [
+        "Happy",
+        "Scared",
+        "Angry"
+       ],
+       "answer": "Happy",
+       "accept": [],
+       "hint": "Think about the word cosiest.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Pip changed her guess about the boot?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "What did she find out when she went inside?",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Hole in the Hedge",
+     "synopsis": "Pip and Tob guess what lives behind a hole in the hedge. It turns out to be a friendly hedgehog.",
+     "text": "Next to the garden there was a tall green hedge. At the bottom of the hedge was a round hole.\n\"Look, Tob,\" said Pip. \"Who lives in there?\"\nTob looked at the hole. \"It is a big hole. I think a fox lives there!\"\nPip was not so sure. She saw some leaves by the hole. She saw small footprints in the mud.\n\"The footprints are small,\" said Pip. \"I think a small animal lives there.\"\nThey heard a sniff, sniff, sniff.\nOut came a nose. Then two little eyes. Then lots and lots of spikes!\n\"Hello,\" said a sleepy voice. \"I am Hettie the hedgehog. Who are you?\"\n\"I am Pip, and this is Tob,\" said Pip. \"We were guessing who lived here.\"\nHettie smiled. \"Did you guess right?\"\n\"I did!\" said Pip. \"The small footprints told me.\"\nHettie gave them a crunchy apple to share. Now they had three friends in the garden.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour was the hedge?",
+       "options": [
+        "Green",
+        "Brown",
+        "Red"
+       ],
+       "answer": "Green",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what shape was the hole?",
+       "options": [
+        "Round",
+        "Square",
+        "Long"
+       ],
+       "answer": "Round",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Tob guess lived in the hole?",
+       "options": [
+        "A fox",
+        "A cat",
+        "A dog"
+       ],
+       "answer": "A fox",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what clue did Pip find in the mud?",
+       "options": [
+        "Small footprints",
+        "A feather",
+        "A bone"
+       ],
+       "answer": "Small footprints",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what sound did they hear?",
+       "options": [
+        "Sniff, sniff, sniff",
+        "Woof, woof",
+        "Tweet, tweet"
+       ],
+       "answer": "Sniff, sniff, sniff",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who lived in the hole?",
+       "options": [
+        "Hettie the hedgehog",
+        "A fox",
+        "A rabbit"
+       ],
+       "answer": "Hettie the hedgehog",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Pip make a good guess?",
+       "options": [
+        "She used the clues",
+        "She asked Hettie first",
+        "She read a sign"
+       ],
+       "answer": "She used the clues",
+       "accept": [],
+       "hint": "What did she look at by the hole?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Tob guessed a fox?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about the size of the hole.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Book with the Moon",
+     "synopsis": "Pip finds a picture book with a moon on the cover and guesses what the story is about. She checks her guess as Hettie reads it.",
+     "text": "One day, Pip found a little book under the bench. On the cover there was a big yellow moon and a small brown owl.\nThe title said: The Owl Who Could Not Sleep.\n\"I can guess this story,\" said Pip. \"The owl is awake all night and it cannot sleep in the day.\"\n\"Let us find out,\" said Hettie. She opened the book and began to read.\nIn the story, the owl was called Olu. In the day, the sun was too bright. The birds sang too loudly. Olu could not sleep at all!\n\"My guess was right!\" said Pip.\nThen Olu found a dark, quiet hole in an old tree. He closed his eyes. At last, he was asleep.\n\"I did not guess that part,\" said Pip. \"But I like it.\"\nTob yawned. \"Now I want to sleep too,\" he said.\nAnd all three friends had a little nap in the shade.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Pip find the book?",
+       "options": [
+        "Under the bench",
+        "In the boot",
+        "In the pond"
+       ],
+       "answer": "Under the bench",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was on the cover with the owl?",
+       "options": [
+        "A big yellow moon",
+        "A red boot",
+        "A green hedge"
+       ],
+       "answer": "A big yellow moon",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the title of the book?",
+       "options": [
+        "The Owl Who Could Not Sleep",
+        "The Sleepy Frog",
+        "The Moon Book"
+       ],
+       "answer": "The Owl Who Could Not Sleep",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the owl called?",
+       "options": [
+        "Olu",
+        "Tob",
+        "Pip"
+       ],
+       "answer": "Olu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why could the owl not sleep in the day?",
+       "options": [
+        "The sun was bright and birds were loud",
+        "He was hungry",
+        "He was cold"
+       ],
+       "answer": "The sun was bright and birds were loud",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did the owl sleep at the end?",
+       "options": [
+        "In a hole in an old tree",
+        "On the moon",
+        "In a nest on the ground"
+       ],
+       "answer": "In a hole in an old tree",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what helped Pip guess the story?",
+       "options": [
+        "The cover and the title",
+        "The last page",
+        "A friend told her"
+       ],
+       "answer": "The cover and the title",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Tob wanted to sleep after the story?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what the story was about.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Splash in the Pond",
+     "synopsis": "Pip hears a big splash and guesses what made it. The answer is a surprise from the sky.",
+     "text": "Pip and Tob were sitting by the pond. The water was still and shiny.\nSPLASH! Big drops of water flew everywhere.\n\"What was that?\" cried Pip. \"I think a big fish jumped!\"\n\"I think a stone fell in,\" said Tob.\nThey looked at the water. Little rings went round and round.\nThen something white popped up. It had a long neck and an orange beak.\n\"It is not a fish,\" said Pip. \"And it is not a stone.\"\n\"Hello!\" said the white bird. \"I am Dot the duck. Sorry for the big splash. I landed too fast!\"\nPip laughed. \"We had two guesses, and both were wrong!\"\n\"That is fine,\" said Dot. \"Guessing is fun, and now you know.\"\nDot gave Pip and Tob a ride across the pond on her back.\n\"Next time I hear a splash,\" said Pip, \"I will look up at the sky too!\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where were Pip and Tob sitting?",
+       "options": [
+        "By the pond",
+        "Under the shed",
+        "In the boot"
+       ],
+       "answer": "By the pond",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Pip guess made the splash?",
+       "options": [
+        "A big fish",
+        "A stone",
+        "A frog"
+       ],
+       "answer": "A big fish",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Tob guess?",
+       "options": [
+        "A stone fell in",
+        "A fish jumped",
+        "It was raining"
+       ],
+       "answer": "A stone fell in",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour was the bird?",
+       "options": [
+        "White",
+        "Black",
+        "Blue"
+       ],
+       "answer": "White",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the duck called?",
+       "options": [
+        "Dot",
+        "Olu",
+        "Hettie"
+       ],
+       "answer": "Dot",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was there a big splash?",
+       "options": [
+        "Dot landed too fast",
+        "Tob jumped in",
+        "A fish jumped"
+       ],
+       "answer": "Dot landed too fast",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Pip learn about guessing?",
+       "options": [
+        "It is fine to be wrong",
+        "You must always be right",
+        "Guessing is boring"
+       ],
+       "answer": "It is fine to be wrong",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Pip said she will look up at the sky next time?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Where did Dot come from?",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Box with Holes",
+     "synopsis": "Pip finds a box with holes and a label. She uses the clues to guess what is inside before she opens it.",
+     "text": "On the garden path there was a brown box. The box had small holes on the top.\nOn the side was a label. It said: Seeds. Plant me!\n\"What is inside?\" asked Tob. \"Is it a toy?\"\nPip looked at the label. \"The label says seeds,\" she said. \"I think there are seeds inside.\"\n\"Why are there holes?\" asked Hettie.\n\"Hmm,\" said Pip. \"Maybe the seeds need air.\"\nThey opened the box. Inside were lots of little black seeds and a picture of a tall yellow flower.\n\"Sunflowers!\" said Dot. \"They grow very tall.\"\nThe friends dug a row of small holes in the soil. They put one seed in each hole. Tob gave them some water from the pond.\n\"Now we wait,\" said Pip.\n\"How long?\" asked Tob.\n\"Many days,\" said Dot.\nTob sighed. Waiting is the hardest part!",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour was the box?",
+       "options": [
+        "Brown",
+        "Red",
+        "Yellow"
+       ],
+       "answer": "Brown",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the label say?",
+       "options": [
+        "Seeds. Plant me!",
+        "Toys inside",
+        "Do not open"
+       ],
+       "answer": "Seeds. Plant me!",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Tob guess was inside?",
+       "options": [
+        "A toy",
+        "Seeds",
+        "A snack"
+       ],
+       "answer": "A toy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what helped Pip guess right?",
+       "options": [
+        "The label",
+        "The colour",
+        "The size"
+       ],
+       "answer": "The label",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour were the seeds?",
+       "options": [
+        "Black",
+        "White",
+        "Green"
+       ],
+       "answer": "Black",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what flowers will grow?",
+       "options": [
+        "Sunflowers",
+        "Roses",
+        "Daisies"
+       ],
+       "answer": "Sunflowers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Tob get the water?",
+       "options": [
+        "From the pond",
+        "From a tap",
+        "From the rain"
+       ],
+       "answer": "From the pond",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think waiting is hard for Tob?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "How does it feel to wait for something you want?",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Shadow on the Wall",
+     "synopsis": "Pip sees a scary shadow on the shed wall and guesses it is a monster. It turns out to be something small and friendly.",
+     "text": "It was evening. The sun was low and orange.\nPip saw a huge shadow on the wall of the shed. It had long legs and big round ears.\n\"Help!\" squeaked Pip. \"It is a monster!\"\nTob hid behind a flowerpot. Hettie rolled into a spiky ball.\nBut Dot did not hide. \"Look at the shadow carefully,\" she said. \"What makes shadows?\"\n\"The sun,\" said Pip. \"When something is in front of the light.\"\nPip turned round. There, on a stone, sat a tiny brown rabbit. The low sun made its shadow very, very big!\n\"Hello,\" said the rabbit. \"I am Bina. Why is everyone hiding?\"\nEveryone laughed, even Hettie.\n\"We thought you were a monster,\" said Pip. \"But you are only small.\"\n\"Small, but brave,\" said Bina, and she hopped over to say hello.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what time of day was it?",
+       "options": [
+        "Evening",
+        "Morning",
+        "Lunchtime"
+       ],
+       "answer": "Evening",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where was the shadow?",
+       "options": [
+        "On the wall of the shed",
+        "On the pond",
+        "On the grass"
+       ],
+       "answer": "On the wall of the shed",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Pip think the shadow was?",
+       "options": [
+        "A monster",
+        "A tree",
+        "A cat"
+       ],
+       "answer": "A monster",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Hettie do?",
+       "options": [
+        "Rolled into a spiky ball",
+        "Hid in the boot",
+        "Jumped in the pond"
+       ],
+       "answer": "Rolled into a spiky ball",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who did not hide?",
+       "options": [
+        "Dot",
+        "Tob",
+        "Pip"
+       ],
+       "answer": "Dot",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what really made the shadow?",
+       "options": [
+        "A tiny rabbit",
+        "A big bear",
+        "A tall tree"
+       ],
+       "answer": "A tiny rabbit",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was the shadow so big?",
+       "options": [
+        "The sun was low",
+        "The rabbit was huge",
+        "It was raining"
+       ],
+       "answer": "The sun was low",
+       "accept": [],
+       "hint": "Think about where the sun was.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think everyone laughed at the end?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "How did they feel when they saw Bina?",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Tall Yellow Surprise",
+     "synopsis": "After many days, the friends guess what the green shoots will become. They throw a party under the tall sunflowers.",
+     "text": "Many days went by. Little green shoots came up out of the soil.\n\"What will they be?\" asked Bina. She was new, so she did not know.\n\"Remember the picture on the box?\" said Pip. \"I predict they will be tall and yellow.\"\nEvery day, the shoots grew a bit taller. They grew taller than Pip. They grew taller than Tob. They grew taller than Dot!\nOne sunny morning, the friends woke up and gasped. Big yellow flowers looked down at them like happy faces.\n\"Sunflowers!\" shouted Bina. \"Pip, your prediction was right!\"\n\"The clues helped me,\" said Pip. \"The picture, the label and the seeds.\"\nThe friends had a party under the sunflowers. Hettie brought apples. Dot brought pond water. Bina brought a carrot.\nPip brought her big red boot, full of seeds to share.\n\"What a garden,\" said Tob. \"I wonder what we will find tomorrow!\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what came up out of the soil first?",
+       "options": [
+        "Little green shoots",
+        "Big flowers",
+        "Red boots"
+       ],
+       "answer": "Little green shoots",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Bina not know what the plants would be?",
+       "options": [
+        "She was new",
+        "She was asleep",
+        "She was hiding"
+       ],
+       "answer": "She was new",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Pip predict?",
+       "options": [
+        "They will be tall and yellow",
+        "They will be small and red",
+        "They will be trees"
+       ],
+       "answer": "They will be tall and yellow",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the flowers look like?",
+       "options": [
+        "Happy faces",
+        "Stars",
+        "Boots"
+       ],
+       "answer": "Happy faces",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Hettie bring to the party?",
+       "options": [
+        "Apples",
+        "A carrot",
+        "Pond water"
+       ],
+       "answer": "Apples",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Pip bring?",
+       "options": [
+        "Her red boot full of seeds",
+        "A cake",
+        "A book"
+       ],
+       "answer": "Her red boot full of seeds",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which clue helped Pip predict?",
+       "options": [
+        "The picture on the box",
+        "The colour of the soil",
+        "The weather"
+       ],
+       "answer": "The picture on the box",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "What do you think the friends will find tomorrow? Why?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about the garden and their past adventures.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
