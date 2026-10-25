@@ -5044,7 +5044,7 @@ function bindAdminCurriculum(box) {
 }
 
 /* ---------- Fase 8: 💬 botão discreto de dúvida / sugestão / problema ---------- */
-const APP_VERSION = '2026.10.24';
+const APP_VERSION = '2026.10.25';   // atualizar a cada publicação (aparece no e-mail do 💬)
 const FB_KINDS = [['duvida', '❓ Question'], ['sugestao', '💡 Suggestion'], ['problema', '🐞 Problem']];
 function openFeedback() {
   if (!VIEW.fbKind) VIEW.fbKind = 'duvida';
