@@ -2388,7 +2388,7 @@ function openExtras() {
   const missed = (S.missed || []).length;
   const c = openModal(`<div class="modal-head"><h3>⭐ Extra exercises</h3><button class="btn small" data-close>Close</button></div>
     <div class="modal-body extras-menu"><p class="tiny muted" style="margin:0 0 6px">${left ? `Worth <b>${S.settings.extraPerCorrect} 🪙 per correct answer</b> · ${left} coin round${left > 1 ? 's' : ''} left today.` : 'Today’s coin rounds are used up: now it’s just practice. 💪'}</p>
-    ${Server.ai && langs.length ? `<div class="xm-sec"><b>📖 Extra reading</b> <span class="tiny muted">a new chapter + summary + questions — choose English or Portuguese${suggest ? ` (today’s text was in ${todayLangs[0] === 'pt' ? 'Portuguese' : 'English'}, so ⭐ ${suggest === 'pt' ? 'Portuguese' : 'English'} is suggested)` : ''}</span>
+    ${Server.ai && langs.length ? `<div class="xm-sec"><b>📖 Extra reading</b> <span class="tiny muted">a new chapter + questions — choose English or Portuguese${suggest ? ` (today’s text was in ${todayLangs[0] === 'pt' ? 'Portuguese' : 'English'}, so ⭐ ${suggest === 'pt' ? 'Portuguese' : 'English'} is suggested)` : ''}</span>
       <div class="extra-grid">${langs.map(l => `<button class="btn big ${l === suggest ? 'suggested' : ''}" data-book="${l}">${l === suggest ? '⭐ ' : ''}${l === 'pt' ? '🇧🇷 Em português' : '🇬🇧 In English'}<span class="tiny muted">${books[l] && books[l].title ? `continues “${esc(books[l].title)}” · ch. ${books[l].chapters.length + 1}` : 'starts a new book'}</span></button>`).join('')}</div></div>` : ''}
     ${missed ? `<div class="xm-sec"><b>🧠 Practise my mistakes</b> <span class="tiny muted">${missed} question${missed > 1 ? 's' : ''} you got wrong or didn’t know</span>
       <div class="extra-grid one"><button class="btn big gold" data-review>🧠 Practise what I got wrong</button></div></div>` : ''}
@@ -2852,6 +2852,7 @@ async function planInSteps(base) {
    vêm do banco: perguntas e livros já criados para outras crianças do mesmo ano/semana letiva. O Claude só é chamado
    para completar o que faltar (e o que ele cria volta para o banco). O resto continua personalizado. */
 const normT = t => String(t || '').toLowerCase().replace(/\s+/g, ' ').trim();
+const isSummaryQ = q => q && q.type === 'open' && /\b(resum[ao]|resuma|summari[sz]e|summary)\b/i.test(q.q || '');
 async function bankPlanInfo(subjTexts, subjOpts, images) {
   if (!Server.me || !Server.childId || !Server.ai || (images || []).length || !S.settings.year || S.settings.useBank === false) return null;
   const week = VIEW.wand ? VIEW.wand.week : planningAcademicWeek();
@@ -2934,7 +2935,8 @@ async function planWithBank(base, info, lineOf) {
       const c = b.chapters[i]; if (!c || !c.text) return;
       passages.push({ subject: sid, day: d.dow, title: `${b.title} — ${c.title}`, text: c.text });
       const cq = c.questions || []; const rn = (d.read && d.read.n) || 3;
-      [...cq.filter(q => q.type === 'open'), ...cq.filter(q => q.type !== 'open')].slice(0, rn)   // resumo primeiro, depois compreensão
+      const noSum = cq.filter(q => !isSummaryQ(q));   // livros antigos do banco ainda trazem "Resuma…": fica de fora
+      [...noSum.filter(q => q.type !== 'open'), ...noSum.filter(q => q.type === 'open')].slice(0, rn)   // compreensão primeiro, livre por último
         .forEach(q => questions.push(Object.assign({}, q, { subject: sid, day: d.dow, bank: b.key ? `${b.key}#${i}` : undefined })));
     });
   });
@@ -3465,9 +3467,10 @@ function openGabarito(c, th = null) {
     const ok = c.done ? verdict(c, q) : isCorrect(q, ans);
     const cls = ok === true ? 'ok' : ok === false && (answered(q, ans) || c.verdicts[q.id]) ? 'bad' : '';
     const note = c.obj.notes && c.obj.notes[q.id];
-    const answerTxt = q.type === 'open' ? `<span class="free">[Free answer]</span>${c.done && ok !== null ? ` <span class="yours">· 🦉 ${ok ? '✓' : '✗'} ${esc(note || '')}</span>` : ''}` : `<span class="ans">${esc(q.answer)}</span>`;
+    const answerTxt = q.type === 'open' ? `<span class="free">[Free answer]</span>${c.done && ok !== null ? ` <span class="yours">· 🦉 ${ok ? '✓' : '✗'} ${esc(note || '')}</span>` : ''}` : `<span class="ans">${esc(q.answer)}</span>`
+    const lumiNote = q.type !== 'open' && c.done && note ? ` <span class="yours">· 🦉 ${esc(note)}</span>` : '';
     const yours = !answered(q, ans) || q.type === 'open' ? '' : q.type === 'proof' ? `<span class="yours">· ${q.lang === 'en' ? 'you fixed' : 'você corrigiu'} ${proofScore(q, ans)} ${q.lang === 'en' ? 'of' : 'de'} ${q.errors.length}</span>` : `<span class="yours">· you: ${esc(ans)}</span>`;
-    return `<div class="key ${cls}"><b>${i + 1}.</b><div>${answerTxt} ${yours}</div></div>`;
+    return `<div class="key ${cls}"><b>${i + 1}.</b><div>${answerTxt} ${yours}${lumiNote}</div></div>`;
   }).join('');
   const m = openModal(`<div class="modal-head"><h3>🔑 Answer key${th && th.idxs ? ` · ${esc((SUBJ[th.id] || {}).short || th.id)}` : ''}</h3><button class="btn small" data-close>Close</button></div>
     <div class="modal-body fit"><div class="key-grid" id="key-grid">${items}</div></div>
@@ -3495,13 +3498,15 @@ async function finishWork(c) {
 }
 // A Lumi (Claude) corrige as respostas livres; sem servidor, ficam para os pais.
 async function gradeOpenAnswers(c) {
-  const opens = c.questions.map((q, i) => ({ q, i })).filter(x => x.q.type === 'open' && answered(x.q, c.answers[x.q.id]));
+  // livres + respostas curtas que não bateram com o gabarito (a Lumi aceita outra resposta válida, ex.: "brave as a knight")
+  const lenient = q => q.type === 'short' && !gapLetters(q) && !(SUBJ[q.subject] && ['spelling', 'math'].includes(SUBJ[q.subject].kind)) && answered(q, c.answers[q.id]) && isCorrect(q, c.answers[q.id]) === false && !(c.obj.verdicts && c.obj.verdicts[q.id]);
+  const opens = c.questions.map((q, i) => ({ q, i })).filter(x => (x.q.type === 'open' && answered(x.q, c.answers[x.q.id])) || lenient(x.q));
   if (!opens.length || !Server.ai) return;
   const stop = showLoading(['Reading your answers… 📖', 'Thinking carefully… 🦉', 'Writing comments… ✍️']);
   try {
     const r = await apiCall('/api/check-open', { method: 'POST', timeout: 90000, data: {
       context: ctxTopics(c) + '\n' + dayPassages(c.obj).map(x => `Texto "${x.title}": ${x.text}`).join('\n'),
-      items: opens.map(x => ({ q: x.q.q, answer: c.answers[x.q.id], lang: x.q.lang, subject: x.q.subject, subjectName: SUBJ[x.q.subject] && SUBJ[x.q.subject].name })) } });
+      items: opens.map(x => ({ q: x.q.q, answer: c.answers[x.q.id], expected: x.q.type === 'short' ? [x.q.answer, ...(x.q.accept || [])].filter(Boolean).join(' / ') : undefined, lang: x.q.lang, subject: x.q.subject, subjectName: SUBJ[x.q.subject] && SUBJ[x.q.subject].name })) } });
     c.obj.verdicts = c.obj.verdicts || {}; c.obj.notes = c.obj.notes || {};
     (r.results || []).forEach(res => { const x = opens[res.number - 1]; if (!x) return; c.obj.verdicts[x.q.id] = res.verdict === 'ok' ? 'ok' : 'bad'; if (res.note) c.obj.notes[x.q.id] = res.note; });
     c.verdicts = c.obj.verdicts;

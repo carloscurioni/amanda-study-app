@@ -34,6 +34,8 @@ Anos: Y1 ≈ Infantil 5 (5–6 anos) … Y5 ≈ 4º ano (9–10) … Y9 ≈ 8º 
 - Mistura de tipos: maioria `mc` e `short`; `num` em matemática/ciências; no máximo 1 em cada 4 `open`. Em ortografia/spelling (`pt_ort`, `en_spell`): use as palavras de `spelling` e inclua 2 `proof` (caça-erros) por unidade.
   - `mc`: 3–4 opções curtas do mesmo tipo, só uma correta, `answer` idêntico a uma opção.
   - `short`: resposta de 1–3 palavras sem ambiguidade; variações aceitáveis em `accept`.
+    Lacunas com várias respostas possíveis (ex.: "brave as a ___", sinônimos, "dê um exemplo") não podem ser `short`: use `mc` com uma única opção certa.
+  - Nunca peça para resumir ("Resuma…", "Summarise…").
   - `num`: `answer` só o número (ou fração "3/4"); arredondamento pedido no enunciado.
   - `open`: `answer` vazio; respondível em 1–3 frases (IGCSE/IB: 3–5 frases com argumento).
   - `proof`: `text` com parágrafo natural de 35–60 palavras com 4 ou 5 palavras erradas; cada `wrong` aparece exatamente 1 vez no texto; o resto 100% correto; `q` = "Caça-erros: encontre e corrija as 5 palavras escritas errado." / "Spot the mistakes: find and fix the 5 misspelled words.".
@@ -49,5 +51,5 @@ Anos: Y1 ≈ Infantil 5 (5–6 anos) … Y5 ≈ 4º ano (9–10) … Y9 ≈ 8º 
 - Série de episódios: cada capítulo tem começo, meio e fim e dá para ler sozinho; a história avança (personagens fixos, gancho leve).
 - Tamanho de cada capítulo: Y1–Y2 120–200 palavras; Y3–Y6 250–400; Y7+ 400–600. Parágrafos separados por `\n`.
 - Planeje os capítulos para praticar a habilidade de leitura da semana (`topic`/`objectives`). Em `pt_lit`/`en_lit` (IGCSE/IB) podem ser contos/crônicas originais com recursos literários.
-- Cada capítulo: `title` ("Capítulo 1: …" / "Chapter 1: …"), `synopsis` (1–2 frases), `text`, e `questions` com 8 itens: 1 `open` pedindo o resumo em 2–3 frases e 7 de compreensão (das mais literais às de inferência) (`mc` ou `short`, começando com "No capítulo…" / "In the chapter…").
+- Cada capítulo: `title` ("Capítulo 1: …" / "Chapter 1: …"), `synopsis` (1–2 frases), `text`, e `questions` com 8 itens, **sem pedir resumo**: 7 de compreensão (das mais literais às de inferência) (`mc` ou `short`, começando com "No capítulo…" / "In the chapter…") e, por último, 1 `open` curta de inferência ou opinião ("Por que você acha que…?" / "Why do you think…?").
 - Sem personagens ou trechos de obras reais.

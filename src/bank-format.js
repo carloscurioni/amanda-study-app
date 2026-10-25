@@ -64,7 +64,7 @@ export function cleanQuestion(raw, subject) {
   return { q };
 }
 
-// Capítulo de livro: { title, text, questions[8] } (1 resumo + 7 compreensão; o app usa as primeiras N, de 5 a 8)
+// Capítulo de livro: { title, text, questions[8] } (7 compreensão + 1 livre de inferência, sem resumo; o app usa as primeiras N, de 5 a 8)
 export function cleanChapter(raw, subject) {
   const r = raw || {};
   const ch = { title: s(r.title, 160), synopsis: s(r.synopsis, 600), text: s(r.text, 6000), questions: [] };

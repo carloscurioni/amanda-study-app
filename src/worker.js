@@ -368,7 +368,7 @@ const READING_SCHEMA = {
     title: { type: 'string', description: 'Título do capítulo, ex.: "Capítulo 3: A porta escondida".' },
     text: { type: 'string', description: 'O capítulo, em parágrafos separados por \n.' },
     summary: { type: 'string', description: 'Resumo do capítulo em 1–2 frases (para continuar a história depois).' },
-    questions: { type: 'array', items: qSchema(false), description: 'Na quantidade pedida: 1 "open" pedindo um resumo do capítulo em 2–3 frases e as demais de compreensão ("mc" ou "short").' },
+    questions: { type: 'array', items: qSchema(false), description: 'Na quantidade pedida: nunca peça resumo do capítulo; no máximo 1 "open" curta de inferência ou opinião ("Por que…?", "Como você acha que…?" / "Why…?", "How do you think…?"), as demais de compreensão ("mc" ou "short"), das mais literais às de inferência.' },
   },
   required: ['bookTitle', 'title', 'text', 'summary', 'questions'],
   additionalProperties: false,
@@ -431,7 +431,8 @@ Regras de qualidade:
 - Fatos sempre corretos e verificáveis; se não tiver certeza de um fato, não use.
 - Perguntas das matérias em português: português do Brasil. Das matérias em inglês: inglês britânico.
 - Tipos: "mc" (3–4 opções, só uma correta, opções do mesmo tipo e tamanho parecido), "short" (resposta de 1–3 palavras, sem ambiguidade), "num" (resposta numérica exata; em "answer" só o número ou fração como "3/4"), "open" (resposta livre de 1–3 frases; answer vazio).
-- No máximo 1 em cada 4 perguntas pode ser "open".
+- No máximo 1 em cada 4 perguntas pode ser "open". Nunca peça para resumir ("Resuma…", "Summarise…").
+- "short" só quando existe UMA resposta certa clara (ou poucas, todas listadas em "accept"). Completar lacunas com várias respostas possíveis (comparações como "brave as a ___", sinônimos, adjetivos, "dê um exemplo de…") vira "mc" com uma única opção certa, ou "open".
 - "proof" (caça-erros, só em Ortografia/Spelling): em "text", um parágrafo curto e natural (35–60 palavras), adequado ao ano e no idioma da matéria, com EXATAMENTE 4 ou 5 palavras escritas errado.
   De preferência use as palavras da semana, com erros típicos (letras trocadas, faltando ou dobradas, acento errado; em inglês, erros comuns como ie/ei, letra muda, -tion/-sion).
   Cada palavra errada aparece uma única vez no texto; todo o resto do texto está 100% correto. Não marque os erros (nada de negrito ou aspas).
@@ -482,7 +483,7 @@ ${dayList}
    - "title": "Nome do livro — Capítulo N: título do capítulo".
    - Tamanho: ${n <= 2 ? '120–200' : n <= 6 ? '250–400' : '400–600'} palavras. Nível de leitura conforme indicado para o dia, em relação ao ano do estudante. Em literatura (pt_lit/en_lit) a partir do IGCSE, pode ser um conto ou crônica original com recursos literários para analisar.
    - Se o estudante citou um livro, autor ou tema nessas matérias, inspire-se (sem copiar trechos de obras reais).
-   - Nesse dia, EXATAMENTE 3 perguntas dessa matéria são sobre o capítulo: 1 "open" pedindo o resumo do capítulo em 2–3 frases ("Resuma o capítulo de hoje…"/"Summarise today's chapter…") e 2 de compreensão ("mc" ou "short"; comece com "No capítulo…"/"In the chapter…"). Essas 3 contam no total do dia.` : 'Sem leitura diária nesta semana: "passages" vazia. Em leitura, se não houver texto, siga a regra normal de leitura.'}
+   - Nesse dia, EXATAMENTE 3 perguntas dessa matéria são sobre o capítulo ("mc" ou "short", começando com "No capítulo…"/"In the chapter…"; nunca peça resumo). Essas 3 contam no total do dia.` : 'Sem leitura diária nesta semana: "passages" vazia. Em leitura, se não houver texto, siga a regra normal de leitura.'}
 7. "message": 1–2 frases da Lumi (corujinha) animando o estudante, in British English.` },
   ];
   const out = await claude(env, ctx, {
@@ -548,7 +549,7 @@ ${spell ? '- Se houver Ortografia ou Spelling, inclua UMA pergunta "proof" (caç
   ${b.book && b.book.before && b.book.before.length ? `Capítulos anteriores: ${b.book.before.slice(-6).map(c => `${c.title}: ${c.synopsis}`).join(' | ').slice(0, 1500)}` : 'É o primeiro capítulo.'}
   Capítulo de hoje: "${String(b.book && b.book.chapter && b.book.chapter.title || '').slice(0, 120)}" — ${String(b.book && b.book.chapter && b.book.chapter.synopsis || '').slice(0, 500)}
   "title": "Nome do livro — Capítulo N: título". Tamanho: ${yn <= 2 ? '120–200' : yn <= 6 ? '250–400' : '400–600'} palavras, no idioma da matéria, parágrafos separados por \n.
-  EXATAMENTE ${rn} das perguntas são sobre o capítulo (subject ${read.subject}): 1 "open" pedindo o resumo em 2–3 frases${rn > 1 ? ` e ${rn - 1} de compreensão ("mc" ou "short", começando com "No capítulo…"/"In the chapter…")` : ''}.` : '- Sem leitura hoje: "passage" com título e texto vazios.'}` }];
+  EXATAMENTE ${rn} das perguntas são sobre o capítulo (subject ${read.subject}), começando com "No capítulo…"/"In the chapter…": nunca peça resumo do capítulo; no máximo 1 "open" curta de inferência ou opinião ("Por que…?", "Como você acha que…?" / "Why…?", "How do you think…?"), as demais de compreensão ("mc" ou "short"), das mais literais às de inferência.` : '- Sem leitura hoje: "passage" com título e texto vazios.'}` }];
   return claude(env, ctx, {
     model: await genModel(env, b), effort: 'low',
     system: studentProfile(b.name, b.year, b.mine, yn, b.levels), content, schema: DAY_SCHEMA, maxTokens: 14000,
@@ -590,7 +591,7 @@ Fatos sempre corretos.` }];
     system: studentProfile(b.name, b.year, b.mine, yearNum(b), b.levels) + '\nAgora você é a Lumi, professora particular paciente e muito clara.', content, schema: LESSON_SCHEMA, maxTokens: 6000,
   });
 }
-// Livro extra: um capítulo novo (continua o livro do estudante) + resumo + perguntas.
+// Livro extra: um capítulo novo (continua o livro do estudante) + perguntas (sem pedir resumo à criança).
 async function handleReading(env, b, ctx) {
   const lang = b.lang === 'en' ? 'en' : 'pt';
   const n = yearNum(b);
@@ -600,7 +601,7 @@ async function handleReading(env, b, ctx) {
   const content = [{ type: 'text', text: `Escreva o próximo capítulo de um livro original em ${LANG_NAME(lang)} para o estudante ler (${level(b)}).
 ${b.bookTitle && prev ? `É a continuação do livro "${String(b.bookTitle).slice(0, 120)}". Capítulos anteriores:\n${prev}\nMantenha personagens e mundo; avance a história e termine com um gancho.` : `Comece um livro novo${b.theme ? ` sobre: ${String(b.theme).slice(0, 200)}` : ''} (aventura, mistério, animais, amizade ou ciência — escolha algo envolvente para a idade). Este é o Capítulo 1.`}
 Nível de leitura: ${LEVELS[b.level] || LEVELS.at}. Tamanho: ${n <= 2 ? '150–250' : n <= 6 ? '300–450' : '450–650'} palavras.
-Depois, EXATAMENTE ${rn} pergunta${rn > 1 ? 's' : ''} (subject: ${lang === 'en' ? 'en_read' : 'pt_leit'}): 1 "open" pedindo o resumo do capítulo em 2–3 frases${rn > 1 ? ` e ${rn - 1} de compreensão ("mc" ou "short") sobre o capítulo` : ''}.` }];
+Depois, EXATAMENTE ${rn} pergunta${rn > 1 ? 's' : ''} (subject: ${lang === 'en' ? 'en_read' : 'pt_leit'}): nunca peça resumo do capítulo; no máximo 1 "open" curta de inferência ou opinião ("Por que…?", "Como você acha que…?" / "Why…?", "How do you think…?"), as demais de compreensão ("mc" ou "short"), das mais literais às de inferência.` }];
   return claude(env, ctx, {
     model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low',
     system: studentProfile(b.name, b.year, b.mine, yearNum(b), b.levels), content, schema: READING_SCHEMA, maxTokens: 8000,
@@ -669,12 +670,13 @@ async function handleCheckOpen(env, b, ctx) {
   if (!items.length) return { results: [] };
   const list = items.map((x, i) => `${i + 1}. (${x.subjectName || x.subject}; responder em ${LANG_NAME(x.lang)})
 Pergunta: ${String(x.q).slice(0, 500)}
-Resposta do estudante: ${String(x.answer || '').slice(0, 1200) || '(em branco)'}`).join('\n\n');
+${x.expected ? `Resposta esperada pelo gabarito: ${String(x.expected).slice(0, 200)}\n` : ''}Resposta do estudante: ${String(x.answer || '').slice(0, 1200) || '(em branco)'}`).join('\n\n');
   const content = [{ type: 'text', text: `Corrija estas respostas livres de um estudante (${level(b)}).
 ${b.context ? `Contexto (assuntos da semana e texto lido): ${String(b.context).slice(0, 2500)}\n` : ''}
 ${list}
 
 Para cada número: "ok" se responde à pergunta de forma correta e razoável para a idade (não exija perfeição nem ortografia impecável, a menos que a pergunta seja de ortografia/escrita); "bad" se está errada, fora do assunto, em branco ou incompleta demais.
+Quando houver "resposta esperada", a do estudante não bateu com o gabarito: dê "ok" se ela também responde corretamente à pergunta (sinônimo, outra resposta válida quando a pergunta não restringe, forma equivalente, pequeno erro de digitação fora de ortografia); "bad" só se estiver errada.
 "note": 1–2 frases gentis no idioma da pergunta, dizendo o que ficou bom e, se for o caso, o que faltou ou qual seria a ideia certa.` }];
   return claude(env, ctx, {
     model: env.MODEL_FAST || 'claude-haiku-5-5', effort: 'medium',
@@ -820,7 +822,7 @@ const BOOK_HEADER_SCHEMA = {
 const CHAPTER_SCHEMA = {
   type: 'object', properties: {
     text: { type: 'string', description: 'O capítulo, em parágrafos separados por \n.' },
-    questions: { type: 'array', items: qSchema(false), description: 'EXATAMENTE 8: 1 "open" pedindo o resumo do capítulo em 2–3 frases e 7 de compreensão ("mc" ou "short"), das mais literais às de inferência.' },
+    questions: { type: 'array', items: qSchema(false), description: 'EXATAMENTE 8, sem pedir resumo: 1 "open" curta de inferência ou opinião e 7 de compreensão ("mc" ou "short"), das mais literais às de inferência.' },
   }, required: ['text', 'questions'], additionalProperties: false,
 };
 function bookArgs(b) {
@@ -865,7 +867,7 @@ Roteiro: ${book.chapters.map((x, i) => `${i + 1}. ${x.title} — ${x.synopsis}`)
 Escreva o capítulo ${idx + 1}: "${c.title}" — ${c.synopsis}
 - Tamanho: ${yn <= 2 ? '120–200' : yn <= 6 ? '250–400' : '400–600'} palavras; nível de leitura ${READ_LEVELS_TXT[a.readLevel]}; parágrafos separados por \n.
 - Um episódio com começo, meio e fim, que também funcione para quem não leu os anteriores (relembre em 1 frase o que for preciso).
-- Depois, EXATAMENTE 8 perguntas (subject ${a.subject}): 1 "open" pedindo o resumo do capítulo em 2–3 frases e 7 de compreensão (das mais literais às de inferência) ("mc" ou "short", começando com "${a.lang === 'pt' ? 'No capítulo…' : 'In the chapter…'}")${row ? `, praticando a habilidade da semana: ${row.topic}` : ''}.` }];
+- Depois, EXATAMENTE 8 perguntas (subject ${a.subject}), sem pedir resumo: 7 de compreensão (das mais literais às de inferência) e, por último, 1 "open" curta de inferência ou opinião ("mc" ou "short", começando com "${a.lang === 'pt' ? 'No capítulo…' : 'In the chapter…'}")${row ? `, praticando a habilidade da semana: ${row.topic}` : ''}.` }];
   const out = await claude(env, ctx, { model: await genModel(env, b), effort: 'low', system: studentProfile(null, YEAR_LABELS[b.yearId], [a.subject], yn, {}), content, schema: CHAPTER_SCHEMA, maxTokens: 6000 });
   const ch = await B.bookChapter(a.ckey, a.subject, idx, out);
   if (!ch) throw new HttpError(502, 'The chapter came back in an unexpected format.');
