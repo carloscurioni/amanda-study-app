@@ -959,3 +959,21 @@ body[data-screen=shop] .fb-btn, body[data-screen=setup] .fb-btn { opacity: .4; }
 
 .tt-pad button, .tt-ans input { touch-action: manipulation; -webkit-user-select: none; user-select: none; }
 .tt-ans input { caret-color: transparent; }
+
+/* ---------- 🎡 Daily spin ---------- */
+.spin-btn { float: right; margin-left: 6px; font-weight: 900; }
+.spin-btn.has { background: linear-gradient(135deg, #ffe066, #ffa94d); box-shadow: 0 0 0 2px #f59f00; animation: spinPulse 2s ease-in-out infinite; }
+.spin-badge { display: inline-block; min-width: 18px; padding: 0 5px; border-radius: 99px; background: #e03131; color: #fff; font-size: 12px; line-height: 18px; text-align: center; }
+@keyframes spinPulse { 50% { transform: scale(1.06); } }
+@media (prefers-reduced-motion: reduce) { .spin-btn.has { animation: none; } }
+.spin-body { display: grid; gap: 8px; justify-items: center; }
+.wheel-wrap { position: relative; width: min(78vw, 300px); aspect-ratio: 1; }
+.wheel-pointer { position: absolute; top: -6px; left: 50%; transform: translateX(-50%); z-index: 2; font-size: 30px; color: #e03131; text-shadow: 0 2px 0 #fff; line-height: 1; }
+.wheel { width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 6px 20px rgba(60, 30, 140, .25), 0 0 0 6px #5f3dc4; will-change: transform; }
+.wheel-svg { width: 100%; height: 100%; display: block; }
+.spin-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 12px; font-weight: 800; font-size: 13.5px; }
+.spin-legend i { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 4px; vertical-align: -1px; }
+.spin-prize { font-size: 64px; line-height: 1.1; }
+table.odds { width: 100%; border-collapse: collapse; } table.odds td, table.odds th { padding: 6px 4px; border-bottom: 1px solid var(--line); text-align: left; }
+.q-rw.spin { background: #fff3bf; color: #8a5a00; }
+.spin-chk { white-space: nowrap; display: inline-flex; align-items: center; gap: 3px; }

@@ -41,6 +41,8 @@ const DEFAULT_SETTINGS = {
   extraPerCorrect: 2,     // moedas por acerto nos exercícios extras
   extraSetSize: 5,        // perguntas por rodada de extras
   extraSetsPerDay: 3,     // rodadas de extras com moedas por dia
+  spinOn: true,           // 🎡 roleta diária
+  spinCoins: { small: 15, big: 50 }, // valores das fatias de moedas da roleta
   perTheme: 2,            // perguntas de cada tema (matéria) por dia
   readQ: { pt: 'auto', en: 'auto' }, // perguntas do texto do dia, por idioma: 'auto' (5–8 pelo tamanho/complexidade) ou 5–8
   minPerDay: 3, maxPerDay: 30, countMode: 'auto', perSubject: 2,   // (antigos: não são mais usados)
@@ -371,6 +373,8 @@ function normalizeState(s) {
   const ss = (s && s.settings) || {};
   if (ss.perTheme == null && ss.perSubject) merged.settings.perTheme = ss.perSubject;   // quem já tinha "por matéria" herda
   merged.settings.readQ = Object.assign({ pt: 'auto', en: 'auto' }, ss.readQ || {});
+  merged.settings.spinCoins = Object.assign({ small: 15, big: 50 }, ss.spinCoins || {});
+  merged.spin = Object.assign({ days: {}, log: [], pending: null }, merged.spin || {});
   if (!ss.autoVoiceV2) { merged.settings.autoVoice = false; merged.settings.autoVoiceV2 = true; }   // desliga o áudio automático de quem já tinha
   merged.equipped = Object.assign(base.equipped, (s && s.equipped) || {});
   merged.practice = Object.assign({ pt: [], en: [] }, merged.practice || {});
@@ -481,6 +485,10 @@ function mergeStates(localRaw, remoteRaw) {
       if ((a.date || a.start) !== (b.date || b.start)) return;
       b.list.forEach(q => { const x = a.list.find(y => y.id === q.id); if (x) { q.progress = Math.max(q.progress || 0, x.progress || 0); q.spent = Math.max(q.spent || 0, x.spent || 0); q.claimed = q.claimed || x.claimed; } }); });
   }
+  // 🎡 roleta: giros usados/ganhos por dia = o maior dos dois; histórico unido por id; prêmio pendente de mostrar fica
+  M.spin = { days: Object.assign({}, R.spin.days), log: byId(L.spin.log, R.spin.log).sort((a, b) => (a.at < b.at ? 1 : -1)).slice(0, 40), pending: L.spin.pending || R.spin.pending || null };
+  Object.entries(L.spin.days || {}).forEach(([d, v]) => { const r = M.spin.days[d] || {}; M.spin.days[d] = { used: Math.max(v.used || 0, r.used || 0), earned: Math.max(v.earned || 0, r.earned || 0) }; });
+  if (M.spin.pending && M.spin.log.some(x => x.id === M.spin.pending.id && x.shown)) M.spin.pending = null;
   M.rev = R.rev;
   return M;
 }
@@ -2227,7 +2235,7 @@ function renderHome() {
   const notice = VIEW.homeNotice; VIEW.homeNotice = null;
   let body = '';
   const hero = `<div class="card home-hero span2"><div class="owl-big">${mascotSVG(S.equipped)}</div>
-    <div class="grow">${Server.me && Server.me.children.length > 1 ? '<button class="btn small ghost switch-btn" data-act="switch">👤 Switch</button>' : ''}<p class="home-hello">Hi, ${esc(S.name)}! 👋 ${S.streak && S.streak.n > 0 && (S.streak.last === today() || S.streak.last === addDays(today(), -1)) ? `<span class="streak" title="Day streak">🔥 ${S.streak.n}</span>` : ''}</p>${w ? deadlineText(w) : '<div class="deadline">Shall we plan your week?</div>'}</div></div>`;
+    <div class="grow">${Server.me && Server.me.children.length > 1 ? '<button class="btn small ghost switch-btn" data-act="switch">👤 Switch</button>' : ''}${spinOn() ? `<button class="btn small spin-btn ${spinsLeft() ? 'has' : ''}" data-act="spin" aria-label="Daily spin">🎡 Spin${spinsLeft() ? ` <span class="spin-badge">${spinsLeft()}</span>` : ''}</button>` : ''}<p class="home-hello">Hi, ${esc(S.name)}! 👋 ${S.streak && S.streak.n > 0 && (S.streak.last === today() || S.streak.last === addDays(today(), -1)) ? `<span class="streak" title="Day streak">🔥 ${S.streak.n}</span>` : ''}</p>${w ? deadlineText(w) : '<div class="deadline">Shall we plan your week?</div>'}</div></div>`;
   const noticeHtml = notice ? `<div class="notice ${notice.type} span2">${notice.msg}</div>` : '';
 
   if (!w || (w.settled && w.end < t)) {
@@ -2271,6 +2279,8 @@ function renderHome() {
   const shelf = `<div class="card span2"><div class="row"><b>My album</b><span class="muted tiny grow">stickers from the shop</span></div>
     <div class="sticker-shelf">${stickers.length ? stickers.map(s => `<span title="Sticker">${s.emoji}</span>`).join('') : '<span class="empty">Still empty — buy stickers in the shop! ⭐</span>'}</div></div>`;
   el.innerHTML = `<div class="home">${hero}${noticeHtml}${body}${shelf}</div>`;
+  const sp = S.spin && S.spin.pending;   // o app fechou no meio do giro: mostra o prêmio já sorteado
+  if (sp && !sp.shown && !VIEW.spinResumed) { VIEW.spinResumed = true; setTimeout(() => { if ($('#modal').classList.contains('hidden')) openSpin(); }, 600); }
 
   $$('[data-day]', el).forEach(b => b.onclick = () => openDay(b.dataset.day));
   $$('[data-claim]', el).forEach(b => b.onclick = () => { const [sc, id] = b.dataset.claim.split('|'); claimQuest(sc, id); });
@@ -2282,6 +2292,7 @@ function renderHome() {
     else if (a === 'setup-next') { VIEW.setupCycle = 'next'; show('setup'); }
     else if (a === 'extra') openExtras();
     else if (a === 'tt') openTimesTables();
+    else if (a === 'spin') openSpin();
     else if (a === 'shop') show('shop');
     else if (a === 'deliver') deliverWeek();
     else if (a === 'switch') switchProfile();
@@ -4296,18 +4307,31 @@ function ensureQuests() {
     if (S.settings.buyQuests !== false && rng.next() < 0.35 && list.length > 1) list[1] = makeBuyQuest(rng);
     S.quests.day = { date: t, list };
   }
+  spinQuests(S.quests.day, 'day');
   if (!S.quests.week || S.quests.week.start !== ws) {
     const rng = makeRng('qw|' + questSeed('week'));
     const ok = QUEST_POOL.filter(q => q.scope === 'week' && (!q.when || q.when()));
     const m = ok.filter(q => q.diff === 'medium'), h = ok.filter(q => q.diff === 'hard');
     S.quests.week = { start: ws, list: [m.length && rng.pick(m), h.length && rng.pick(h)].filter(Boolean).map(q => makeQuest(q, rng)) };
   }
+  spinQuests(S.quests.week, 'week');
   return S.quests;
 }
 const questDef = q => QUEST_POOL.find(x => x.id === q.id) || {};
 function questText(q) { return q.text || questDef(q).text || q.id; }
 function questProgress(q) { return questDef(q).ev === 'streak' ? Math.min(q.target, (S.streak && (S.streak.last === today() || S.streak.last === addDays(today(), -1))) ? S.streak.n : 0) : Math.min(q.target, q.progress || 0); }
 function questReward(q) { return q.buy ? (q.spent || 0) + 50 : q.reward; }
+// 🎡 No máximo 1 missão do dia (de preferência a mais difícil) e 1 da semana dão "+1 spin" em vez de moedas (mesma semente das missões).
+function spinQuests(box, scope) {
+  if (!box || box.spinSet) return;
+  box.spinSet = true;
+  if (S.settings.spinOn === false) return;
+  const rng = makeRng('qs|' + questSeed(scope));
+  const list = box.list.filter(q => !q.buy && !q.claimed);
+  const order = ['hard', 'medium', 'easy'];
+  const target = list.slice().sort((a, b) => order.indexOf(questDef(a).diff) - order.indexOf(questDef(b).diff))[0];
+  if (target && rng.next() < (scope === 'day' ? 0.6 : 0.7)) target.spin = true;
+}
 // Chamado pelos pontos do app em que algo acontece (tarefa, extras, aulinha, leitura, jogos, compras).
 function questEvent(ev, data = {}) {
   if (!questsOn()) return;
@@ -4329,8 +4353,15 @@ function questEvent(ev, data = {}) {
 function claimQuest(scope, id) {
   const Q = ensureQuests(); const list = scope === 'day' ? Q.day.list : Q.week.list;
   const q = list.find(x => x.id === id); if (!q || q.claimed || questProgress(q) < q.target) return;
-  const amt = questReward(q);
   q.claimed = true;
+  if (q.spin && spinOn()) {   // missão de giro: +1 giro hoje (no lugar das moedas)
+    spinGrant(`quest-${scope}-${scope === 'day' ? Q.day.date : Q.week.start}-${q.id}`);
+    save(); celebrateFX('small');
+    showCelebrate('Quest complete! 📜', '', `${esc(questText(q))}<br><br>You won <b>+1 spin 🎡</b>! Go to Home and tap <b>🎡 Spin</b>.`, 'wow');
+    if (currentScreen === 'home') renderHome();
+    return;
+  }
+  const amt = questReward(q);
   addCoins(amt, `Quest: ${questText(q)}`, `quest-${scope}-${scope === 'day' ? Q.day.date : Q.week.start}-${q.id}`);
   save();
   if (typeof celebrateFX === 'function') celebrateFX('small');
@@ -4342,11 +4373,137 @@ function questsHtml() {
   const row = (q, scope) => { const p = questProgress(q), d = questDef(q); const ready = !q.claimed && p >= q.target; const diff = q.buy ? 'medium' : d.diff;
     return `<div class="quest ${q.claimed ? 'claimed' : ''} ${ready ? 'ready' : ''}"><span class="q-ic">${q.buy ? '🥚' : d.icon || '📜'}</span>
       <div class="q-main"><div class="q-t">${esc(questText(q))}</div><div class="q-bar"><i style="width:${Math.round(p / q.target * 100)}%"></i></div></div>
-      <div class="q-side"><span class="q-rw d-${diff}">+${q.buy ? `${(q.spent || 0) + 50}` : q.reward} 🪙</span>
+      <div class="q-side"><span class="q-rw d-${diff} ${q.spin && spinOn() ? 'spin' : ''}">${q.spin && spinOn() ? '+1 spin 🎡' : `+${q.buy ? `${(q.spent || 0) + 50}` : q.reward} 🪙`}</span>
       ${q.claimed ? '<span class="tiny muted">✔ claimed</span>' : ready ? `<button class="btn small gold" data-claim="${scope}|${q.id}">Claim</button>` : `<span class="tiny muted">${p}/${q.target}</span>`}</div></div>`; };
   return `<div class="card span2 quests"><div class="row"><b>📜 Quests</b><span class="tiny muted grow">easy +5–10 · medium +20–30 · hard +50–80</span></div>
     <div class="q-sec">Today</div>${Q.day.list.map(q => row(q, 'day')).join('')}
     <div class="q-sec">This week</div>${Q.week.list.map(q => row(q, 'week')).join('')}</div>`;
+}
+
+/* ---------- 🎡 Daily spin (roleta) ----------
+   1 giro grátis por dia (não acumula) + giros de missões; no máximo 3 giros por dia.
+   O prêmio é sorteado com crypto.getRandomValues, aplicado e salvo ANTES da animação (recarregar não muda nada);
+   se o app fechar no meio, o prêmio já sorteado é mostrado ao reabrir. */
+const SPIN_MAX = 3;
+const SPIN_ODDS = [   // % — soma 100. A Amanda ainda vai aprovar (ver README)
+  { id: 'coins-s', pct: 40, icon: '🪙', color: '#ffe066' },
+  { id: 'coins-b', pct: 22, icon: '💰', color: '#ffa94d' },
+  { id: 'acc', pct: 16, icon: '🎩', color: '#b197fc', label: 'Lumi accessory' },
+  { id: 'shop', pct: 16, icon: '🎁', color: '#74c0fc', label: 'Shop surprise' },
+  { id: 'egg', pct: 6, icon: '🥚', color: '#ff8fab' },
+];
+const SPIN_ACC_CATS = ['hat', 'glasses', 'neck', 'back'];
+const SPIN_SHOP_CATS = ['skin', 'bg', 'fx', 'sticker'];
+const spinOn = () => S.settings.spinOn !== false;
+const spinCoins = k => clamp(Math.round(Number((S.settings.spinCoins || {})[k === 'big' ? 'big' : 'small']) || (k === 'big' ? 50 : 15)), 1, 1000);
+function spinState() { S.spin = Object.assign({ days: {}, log: [], pending: null }, S.spin || {}); return S.spin; }
+function spinDay(d = today()) { const st = spinState(); st.days[d] = Object.assign({ used: 0, earned: 0 }, st.days[d] || {}); return st.days[d]; }
+function spinsLeft() { if (!spinOn()) return 0; const d = (spinState().days[today()]) || { used: 0, earned: 0 }; return Math.max(0, Math.min(SPIN_MAX, 1 + (d.earned || 0)) - (d.used || 0)); }
+function spinGrant(key) { const st = spinState(); st.granted = st.granted || []; if (key && st.granted.includes(key)) return; if (key) st.granted = st.granted.concat(key).slice(-60); spinDay().earned += 1; save(); }
+// ovo do dia: alterna por dia (pet num dia, mascote no outro)
+function eggOfDay(d = today()) { return Math.round(Date.parse(d + 'T12:00:00Z') / 86400000) % 2 === 0 ? 'pet' : 'mascot'; }
+function spinLabel(sl) {
+  if (sl.id === 'coins-s') return `${spinCoins('small')} coins`;
+  if (sl.id === 'coins-b') return `${spinCoins('big')} coins`;
+  if (sl.id === 'egg') return eggOfDay() === 'pet' ? 'Pet egg' : 'Mascot egg';
+  return sl.label;
+}
+function rand01() { try { const a = new Uint32Array(1); crypto.getRandomValues(a); return a[0] / 4294967296; } catch (e) { return Math.random(); } }
+function spinItems(cats) { return SHOP_ITEMS.filter(i => cats.includes(i.cat) && i.price > 0 && !S.owned.includes(i.id)); }
+function pickWeighted(list, w) { let r = rand01() * list.reduce((a, x) => a + w(x), 0); return list.find(x => (r -= w(x)) <= 0) || list[list.length - 1]; }
+// Sorteia e APLICA o prêmio (moedas, item, vale, ovo). Devolve o registro do giro.
+function spinDraw() {
+  let r = rand01() * 100; const sl = SPIN_ODDS.find(x => (r -= x.pct) < 0) || SPIN_ODDS[0];
+  const id = 'sp-' + today() + '-' + uid();
+  const rec = { id, at: new Date().toISOString(), date: today(), slice: sl.id, shown: false };
+  if (sl.id === 'coins-s' || sl.id === 'coins-b') { rec.coins = spinCoins(sl.id === 'coins-b' ? 'big' : 'small'); }
+  else if (sl.id === 'egg') {
+    rec.egg = eggOfDay(); rec.prize = rec.egg === 'mascot' ? rollMascot() : rollPet();
+    S.collection = S.collection || {}; rec.n = (S.collection[rec.prize] || 0) + 1; S.collection[rec.prize] = rec.n;
+    if (!S.owned.includes(rec.prize)) S.owned.push(rec.prize);
+  } else {
+    const cats = sl.id === 'acc' ? SPIN_ACC_CATS : SPIN_SHOP_CATS;
+    const items = spinItems(cats);
+    const vouchers = sl.id === 'shop' ? (S.vouchers || []).filter(v => v.spin) : [];
+    const pool = [...items.map(i => ({ kind: 'item', it: i, w: 1 / Math.sqrt(i.price) })), ...vouchers.map(v => ({ kind: 'voucher', it: v, w: 1 / Math.sqrt(Math.max(50, v.price)) }))];
+    if (!pool.length) {   // já tem tudo: vira moedas (o valor do item mais barato da categoria)
+      const all = SHOP_ITEMS.filter(i => cats.includes(i.cat) && i.price > 0);
+      rec.coins = all.length ? Math.min(...all.map(i => i.price)) : spinCoins('big'); rec.allOwned = true;
+    } else {
+      const pk = pickWeighted(pool, x => x.w);   // itens mais baratos saem com mais frequência
+      if (pk.kind === 'item') { rec.item = pk.it.id; S.owned.push(pk.it.id); }
+      else { rec.voucher = pk.it.id; rec.voucherName = pk.it.name; S.redemptions.unshift({ id: uid(), voucherId: pk.it.id, name: pk.it.name, price: 0, date: today(), delivered: false, spin: true }); }
+    }
+  }
+  if (rec.coins) addCoins(rec.coins, `Daily spin: ${rec.coins} coins${rec.allOwned ? ' (you already had every item)' : ''}`, 'spin-' + id);
+  else addCoins(0, `Daily spin: ${spinPrizeText(rec)}`, 'spin-' + id);
+  spinDay().used += 1;
+  const st = spinState(); st.pending = rec; st.log = [rec, ...st.log].slice(0, 40);
+  save();   // salva o resultado antes de começar a animação
+  return rec;
+}
+function spinPrizeText(rec) {
+  if (rec.coins) return `${rec.coins} coins 🪙`;
+  if (rec.egg) { const info = prizeInfo(rec.prize); return `${rec.egg === 'mascot' ? 'Mascot' : 'Pet'} egg → ${info.name}`; }
+  if (rec.item) { const it = SHOP_ITEMS.find(i => i.id === rec.item) || {}; return `${it.name || rec.item}`; }
+  if (rec.voucher) return `Voucher: ${rec.voucherName}`;
+  return '';
+}
+function spinWheelSVG() {
+  let a0 = -90; const R = 100;
+  const pt = a => [Math.cos(a * Math.PI / 180) * R, Math.sin(a * Math.PI / 180) * R];
+  return `<svg viewBox="-104 -104 208 208" class="wheel-svg" aria-hidden="true">${SPIN_ODDS.map(sl => {
+    const a1 = a0 + sl.pct * 3.6; const [x0, y0] = pt(a0), [x1, y1] = pt(a1); const mid = (a0 + a1) / 2; const [tx, ty] = [Math.cos(mid * Math.PI / 180) * 66, Math.sin(mid * Math.PI / 180) * 66];
+    const big = sl.pct * 3.6 > 180 ? 1 : 0;
+    const out = `<path d="M0 0 L${x0.toFixed(2)} ${y0.toFixed(2)} A${R} ${R} 0 ${big} 1 ${x1.toFixed(2)} ${y1.toFixed(2)}Z" fill="${sl.color}" stroke="#fff" stroke-width="2"/>
+      <text x="${tx.toFixed(1)}" y="${ty.toFixed(1)}" transform="rotate(${(mid + 90).toFixed(1)} ${tx.toFixed(1)} ${ty.toFixed(1)})" text-anchor="middle" dominant-baseline="middle" font-size="${sl.pct < 10 ? 15 : 19}">${sl.icon}</text>`;
+    a0 = a1; return out; }).join('')}<circle r="16" fill="#fff" stroke="#5f3dc4" stroke-width="3"/><text y="1" text-anchor="middle" dominant-baseline="middle" font-size="16">🦉</text></svg>`;
+}
+function sliceAngle(id) { let a = 0; for (const sl of SPIN_ODDS) { if (sl.id === id) return { from: a, to: a + sl.pct * 3.6 }; a += sl.pct * 3.6; } return { from: 0, to: 0 }; }
+function openSpin() {
+  const st = spinState();
+  if (st.pending && !st.pending.shown) { spinReveal(st.pending, true); return; }   // reabriu no meio: mostra o prêmio já sorteado
+  const left = spinsLeft(); const d = spinDay();
+  const m = openModal(`<div class="modal-head"><h3>🎡 Daily spin</h3><button class="btn small" data-odds>Odds</button><button class="btn small" data-close>Close</button></div>
+    <div class="modal-body spin-body"><div class="wheel-wrap"><div class="wheel-pointer">▼</div><div class="wheel" id="wheel">${spinWheelSVG()}</div></div>
+      <div class="spin-legend">${SPIN_ODDS.map(sl => `<span><i style="background:${sl.color}"></i>${sl.icon} ${esc(spinLabel(sl))}</span>`).join('')}</div>
+      <p class="tiny muted" style="margin:6px 0 0;text-align:center">🥚 Egg of the day: <b>${eggOfDay() === 'pet' ? 'Pet egg' : 'Mascot egg'}</b> (tomorrow: ${eggOfDay(addDays(today(), 1)) === 'pet' ? 'Pet egg' : 'Mascot egg'}) · ${left ? `<b>${left}</b> spin${left > 1 ? 's' : ''} left today` : 'no spins left today'} · free spin every day, extra spins from quests (max ${SPIN_MAX}/day)</p></div>
+    <div class="modal-foot" style="justify-content:center"><button class="btn primary big" id="spin-go" ${left ? '' : 'disabled'}>${left ? '🎡 Spin!' : 'Come back tomorrow 🌙'}</button></div>`);
+  $('[data-odds]', m).onclick = () => spinOddsModal();
+  $('#spin-go', m).onclick = () => {
+    if (!spinsLeft()) return;
+    $('#spin-go', m).disabled = true; $('[data-close]', m).disabled = true;
+    const rec = spinDraw();
+    const w = $('#wheel', m); const { from, to } = sliceAngle(rec.slice);
+    const target = from + (to - from) * (0.2 + rand01() * 0.6);   // um ponto dentro da fatia
+    const turns = reducedMotion() ? 0 : 5;
+    const finalDeg = turns * 360 + (360 - target);
+    if (soundOn() && !reducedMotion()) playMelody('re-mus-arcade');
+    w.style.transition = reducedMotion() ? 'none' : 'transform 4.2s cubic-bezier(.12,.72,.12,1)';
+    requestAnimationFrame(() => { w.style.transform = `rotate(${finalDeg}deg)`; });
+    setTimeout(() => spinReveal(rec), reducedMotion() ? 200 : 4400);
+  };
+  void d;
+}
+function spinReveal(rec, resumed = false) {
+  const st = spinState();
+  const fin = () => { rec.shown = true; const l = st.log.find(x => x.id === rec.id); if (l) l.shown = true; st.pending = null; save(); if (currentScreen === 'home') renderHome(); };
+  if (rec.egg) { fin(); closeModal(); hatchModal(rec.egg, rec.prize, rec.n); return; }
+  const it = rec.item && SHOP_ITEMS.find(i => i.id === rec.item);
+  const pic = rec.coins ? `<div class="spin-prize">🪙</div>` : it ? `<div class="spin-prize">${it.emoji || it.fx || { hat: '🎩', glasses: '👓', neck: '🎀', back: '🦋', skin: '🎨', bg: '🖼️', fx: '✨', sticker: '⭐' }[it.cat] || '🎁'}</div>` : `<div class="spin-prize">🎟️</div>`;
+  const wearable = it && ['hat', 'glasses', 'neck', 'back', 'skin', 'bg', 'fx'].includes(it.cat);
+  const m = openModal(`<div class="modal-body celebrate">${pic}<h3 style="margin:4px 0">${resumed ? 'Your spin prize! 🎡' : 'You won! 🎉'}</h3>
+    <p>${rec.coins ? `<b>+${rec.coins} coins</b>${rec.allOwned ? '<br><span class="tiny muted">You already have every item of that slice, so it turned into coins.</span>' : ''}` : it ? `<b>${esc(it.name)}</b> — it’s yours now!` : `Voucher: <b>${esc(rec.voucherName)}</b><br><span class="tiny muted">A grown-up will give it to you. 💛</span>`}</p></div>
+    <div class="modal-foot" style="justify-content:center">${wearable ? '<button class="btn" data-wear>Use it now ✨</button>' : ''}<button class="btn primary" data-ok>Yay!</button></div>`);
+  celebrateFX(rec.coins && rec.coins < 40 ? 'small' : 'big');
+  fin();
+  $('[data-ok]', m).onclick = () => closeModal();
+  const wb = $('[data-wear]', m); if (wb) wb.onclick = () => { S.equipped[it.cat] = it.id; save(); renderMascotMini(); closeModal(); say('Looking great! ✨', { mood: 'wow' }); };
+}
+function spinOddsModal() {
+  openModal(`<div class="modal-head"><h3>🎡 Spin odds</h3><button class="btn small" data-close>Close</button></div>
+    <div class="modal-body"><table class="odds"><tr><th>Slice</th><th>Chance</th></tr>${SPIN_ODDS.map(sl => `<tr><td>${sl.icon} ${esc(spinLabel(sl))}</td><td><b>${sl.pct}%</b></td></tr>`).join('')}</table>
+      <p class="tiny muted">🎁 Prizes are items you don’t have yet (cheaper ones come up more often). If you already have everything in a slice, it turns into coins. 🥚 The egg alternates every day (pet egg / mascot egg) and hatches straight away. Pet egg chances: ${Object.values(RARITY).map(r => `${r.label} ${r.pct}%`).join(', ')}.</p></div>`);
 }
 
 /* ---------- Fase 5: 💌 Recadinhos secretos dos pais ---------- */
@@ -4851,12 +5008,12 @@ function pCoins(box) {
 }
 function pVouchers(box) {
   const pend = S.redemptions.filter(r => !r.delivered);
-  box.innerHTML = `<div class="card"><b>Redeemed vouchers waiting to be given (${pend.length})</b>${pend.map(r => `<div class="row" style="margin-top:6px"><span class="grow">${fmtDM(r.date)} · ${esc(r.name)} (🪙 ${r.price})</span><button class="btn small ok" data-deliv="${r.id}">Given ✔</button></div>`).join('') || '<p class="muted tiny">None.</p>'}</div>
+  box.innerHTML = `<div class="card"><b>Redeemed vouchers waiting to be given (${pend.length})</b>${pend.map(r => `<div class="row" style="margin-top:6px"><span class="grow">${fmtDM(r.date)} · ${esc(r.name)} ${r.spin ? '(🎡 won in the spin)' : `(🪙 ${r.price})`}</span><button class="btn small ok" data-deliv="${r.id}">Given ✔</button></div>`).join('') || '<p class="muted tiny">None.</p>'}</div>
     <div class="card"><b>Shop vouchers</b><p class="muted tiny" style="margin:2px 0 6px">Real rewards you agree on together. Edit the name and price.</p>
-    <div id="vlist" style="display:grid;gap:6px">${S.vouchers.map((v, i) => `<div class="row"><input class="grow" data-vn="${i}" value="${esc(v.name)}" style="padding:6px;border-radius:8px;border:1.5px solid var(--line)"><input type="number" data-vp="${i}" value="${v.price}" style="width:80px;padding:6px;border-radius:8px;border:1.5px solid var(--line)"><button class="btn small" data-vdel="${i}">✕</button></div>`).join('')}</div>
+    <div id="vlist" style="display:grid;gap:6px">${S.vouchers.map((v, i) => `<div class="row"><input class="grow" data-vn="${i}" value="${esc(v.name)}" style="padding:6px;border-radius:8px;border:1.5px solid var(--line)"><input type="number" data-vp="${i}" value="${v.price}" style="width:80px;padding:6px;border-radius:8px;border:1.5px solid var(--line)"><label class="tiny spin-chk" title="This voucher can be won in the 🎡 Daily spin"><input type="checkbox" data-vs="${i}" ${v.spin ? 'checked' : ''}> 🎡 can come from the spin</label><button class="btn small" data-vdel="${i}">✕</button></div>`).join('')}</div>
     <div class="row" style="margin-top:8px"><button class="btn small" id="vadd">+ New voucher</button><button class="btn small primary" id="vsave">Save vouchers</button></div></div>`;
   $$('[data-deliv]', box).forEach(b => b.onclick = () => { const r = S.redemptions.find(x => x.id === b.dataset.deliv); r.delivered = true; save(); pVouchers(box); });
-  const collect = () => { $$('[data-vn]', box).forEach(inp => { S.vouchers[inp.dataset.vn].name = inp.value.trim() || 'Voucher'; }); $$('[data-vp]', box).forEach(inp => { S.vouchers[inp.dataset.vp].price = Math.max(1, Math.round(Number(inp.value) || 1)); }); };
+  const collect = () => { $$('[data-vs]', box).forEach(inp => { S.vouchers[inp.dataset.vs].spin = inp.checked; }); $$('[data-vn]', box).forEach(inp => { S.vouchers[inp.dataset.vn].name = inp.value.trim() || 'Voucher'; }); $$('[data-vp]', box).forEach(inp => { S.vouchers[inp.dataset.vp].price = Math.max(1, Math.round(Number(inp.value) || 1)); }); };
   $$('[data-vdel]', box).forEach(b => b.onclick = () => { collect(); S.vouchers.splice(Number(b.dataset.vdel), 1); touch('vouchers'); save(); pVouchers(box); });
   $('#vadd').onclick = () => { collect(); S.vouchers.push({ id: 'v-' + uid(), name: 'New voucher', price: 200 }); touch('vouchers'); save(); pVouchers(box); };
   $('#vsave').onclick = () => { collect(); touch('vouchers'); save(); toast('Vouchers saved'); };
@@ -4881,6 +5038,9 @@ function pSettings(box) {
     <div class="card"><b>Tasks</b><div class="form-grid" style="margin-top:6px">
       ${Server.me ? '' : `<label class="field">Name<input id="s-name" value="${esc(S.name)}"></label>`}
       ${['Y4', 'Y5'].includes(st.year) ? `<label class="field">⏱️ Times tables: seconds per question<input type="number" id="s-tts" min="3" max="15" value="${ttSeconds()}"></label>` : ''}
+      <label class="field">🎡 Daily spin<select id="s-spin"><option value="1" ${st.spinOn !== false ? 'selected' : ''}>On</option><option value="0" ${st.spinOn === false ? 'selected' : ''}>Off</option></select></label>
+      <label class="field">🎡 Spin: small coins slice<input type="number" id="s-spins" min="1" max="1000" value="${spinCoins('small')}"></label>
+      <label class="field">🎡 Spin: big coins slice<input type="number" id="s-spinb" min="1" max="1000" value="${spinCoins('big')}"></label>
       <label class="field">🗂️ Questions per topic (each subject, per day)<input type="number" id="s-ptheme" min="1" max="6" value="${perTheme()}"></label>
       <div class="field">${rqSelect('pt', '📖 Questions on the Portuguese text', 's-rqpt')}</div>
       <div class="field">${rqSelect('en', '📖 Questions on the English text', 's-rqen')}</div>
@@ -4906,6 +5066,7 @@ function pSettings(box) {
       reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), questsOn: $('#s-quests').value === '1', notePrice: clamp(num('#s-notep', notePrice()), 1, 100000), sound: $('#s-sound').value === '1', buyQuests: $('#s-bquests').value === '1', extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
       extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10),
       ttSeconds: $('#s-tts') ? clamp(num('#s-tts', ttSeconds()), 3, 15) : st.ttSeconds,
+      spinOn: $('#s-spin').value === '1', spinCoins: { small: clamp(num('#s-spins', spinCoins('small')), 1, 1000), big: clamp(num('#s-spinb', spinCoins('big')), 1, 1000) },
       perTheme: clamp(num('#s-ptheme', perTheme()), 1, 6), readQ: { pt: $('#s-rqpt').value === 'auto' ? 'auto' : Number($('#s-rqpt').value), en: $('#s-rqen').value === 'auto' ? 'auto' : Number($('#s-rqen').value) },
       workshopCoins: clamp(num('#s-wkc', st.workshopCoins ?? 3), 0, 50), workshopPerDay: clamp(num('#s-wkd', st.workshopPerDay ?? 5), 0, 20),
       dailyReading: $('#s-dread').value === '1',
