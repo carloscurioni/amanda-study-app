@@ -487,7 +487,11 @@ function mergeStates(localRaw, remoteRaw) {
     ['day', 'week'].forEach(k => { const a = (L.quests || {})[k], b = M.quests[k];
       if (!a) return; if (!b || (a.date || a.start) > (b.date || b.start)) { M.quests[k] = a; return; }
       if ((a.date || a.start) !== (b.date || b.start)) return;
-      b.list.forEach(q => { const x = a.list.find(y => y.id === q.id); if (x) { q.progress = Math.max(q.progress || 0, x.progress || 0); q.spent = Math.max(q.spent || 0, x.spent || 0); q.claimed = q.claimed || x.claimed; } }); });
+      b.list.forEach(q => { const x = a.list.find(y => y.id === q.id); if (x) { q.progress = Math.max(q.progress || 0, x.progress || 0); q.spent = Math.max(q.spent || 0, x.spent || 0); q.claimed = q.claimed || x.claimed; } });
+      a.list.forEach(x => { if (!b.list.some(q => q.id === x.id)) b.list.push(x); });   // missões novas (reposição) criadas no outro aparelho
+      b.refills = Math.max(b.refills || 0, a.refills || 0); });
+    const hl = (L.quests || {}).hist || {}; M.quests.hist = Object.assign({}, M.quests.hist || {});
+    Object.entries(hl).forEach(([d, ids]) => { M.quests.hist[d] = [...new Set([...(M.quests.hist[d] || []), ...ids])]; });
   }
   // 🎡 roleta: giros usados/ganhos por dia = o maior dos dois; histórico unido por id; prêmio pendente de mostrar fica
   M.spin = { days: Object.assign({}, R.spin.days), log: byId(L.spin.log, R.spin.log).sort((a, b) => (a.at < b.at ? 1 : -1)).slice(0, 40), pending: L.spin.pending || R.spin.pending || null };
@@ -3036,7 +3040,7 @@ function runTimesTables(mode, table, missed) {
     const paid = (st.days[t] || 0) < 3; let coins = 0;
     if (paid && res.length) { st.days[t] = (st.days[t] || 0) + 1; coins = score + (mode === 'check' && score === res.length ? 5 : 0); }
     if (coins) addCoins(coins, `Times tables: ${score}/${res.length}`, 'tt-' + Date.now());
-    questEvent('extra_done', { perfect: score === res.length });
+    questEvent('extra_done', { perfect: score === res.length && res.length > 0, tt: true });
     save();
     const wrong = res.filter(r => !r.ok);
     if (score === res.length) setTimeout(() => celebrateFX('perfect'), 300);
@@ -4289,6 +4293,15 @@ const QUEST_POOL = [
   { id: 'd-perfect-x', scope: 'day', diff: 'hard', icon: '💯', text: 'Get 100% in a round of extras', ev: 'perfect_extra', target: 1 },
   { id: 'd-perfect-d', scope: 'day', diff: 'hard', icon: '🏆', text: 'Get today’s task all right (100%)', ev: 'perfect_day', target: 1, when: () => !!(S.week && S.week.days[today()] && S.week.days[today()].required && S.week.days[today()].status !== 'done') },
   { id: 'd-extra3', scope: 'day', diff: 'hard', icon: '🔥', text: 'Do 3 rounds of extras', ev: 'extra', target: 3 },
+  { id: 'd-game1', scope: 'day', diff: 'easy', icon: '✏️', text: 'Play a Word workshop game', ev: 'game', target: 1 },
+  { id: 'd-tt', scope: 'day', diff: 'easy', icon: '⏱️', text: 'Do a round of Times tables', ev: 'tt', target: 1, when: () => ttOn() },
+  { id: 'd-dare', scope: 'day', diff: 'easy', icon: '⚡', text: 'Answer a Lumi’s challenge', ev: 'dare', target: 1, when: () => dareOn() },
+  { id: 'd-lesson2', scope: 'day', diff: 'medium', icon: '🎓', text: 'Do 2 mini-lessons', ev: 'lesson', target: 2, when: () => Server.ai },
+  { id: 'd-tt2', scope: 'day', diff: 'medium', icon: '⏱️', text: 'Do 2 rounds of Times tables', ev: 'tt', target: 2, when: () => ttOn() },
+  { id: 'd-dare2', scope: 'day', diff: 'medium', icon: '⚡', text: 'Get 2 Lumi’s challenges right', ev: 'dare_right', target: 2, when: () => dareOn() },
+  { id: 'd-game4', scope: 'day', diff: 'hard', icon: '✏️', text: 'Play 4 Word workshop games', ev: 'game', target: 4 },
+  { id: 'd-book2', scope: 'day', diff: 'hard', icon: '📚', text: 'Read 2 chapters of Extra reading', ev: 'book', target: 2, when: () => Server.ai },
+  { id: 'd-tt-perfect', scope: 'day', diff: 'hard', icon: '🎯', text: 'Get every answer right in a Times tables round', ev: 'tt_perfect', target: 1, when: () => ttOn() },
   // da semana
   { id: 'w-streak', scope: 'week', diff: 'medium', icon: '🔥', text: 'Keep your streak going for 3 days', ev: 'streak', target: 3 },
   { id: 'w-lessons', scope: 'week', diff: 'medium', icon: '🎓', text: 'Do 3 mini-lessons', ev: 'lesson', target: 3, when: () => Server.ai },
@@ -4297,6 +4310,10 @@ const QUEST_POOL = [
   { id: 'w-days', scope: 'week', diff: 'hard', icon: '📅', text: 'Finish 5 tasks on the right day', ev: 'day_ontime', target: 5 },
   { id: 'w-extras', scope: 'week', diff: 'hard', icon: '⭐', text: 'Do 6 rounds of extras this week', ev: 'extra', target: 6 },
   { id: 'w-perfect', scope: 'week', diff: 'hard', icon: '💯', text: 'Get 100% in 2 tasks or rounds of extras', ev: 'perfect_any', target: 2 },
+  { id: 'w-tt', scope: 'week', diff: 'medium', icon: '⏱️', text: 'Do 5 rounds of Times tables', ev: 'tt', target: 5, when: () => ttOn() },
+  { id: 'w-hints', scope: 'week', diff: 'medium', icon: '💡', text: 'Use 4 hints on tricky questions', ev: 'hint', target: 4 },
+  { id: 'w-dare', scope: 'week', diff: 'hard', icon: '⚡', text: 'Get 5 Lumi’s challenges right', ev: 'dare_right', target: 5, when: () => dareOn() },
+  { id: 'w-books', scope: 'week', diff: 'hard', icon: '📚', text: 'Read 3 chapters of Extra reading', ev: 'book', target: 3, when: () => Server.ai },
 ];
 const questsOn = () => S.settings.questsOn !== false;
 function questSeed(scope) { return `${scope === 'day' ? today() : cycleStartOf(today())}|${Server.childId || S.name || 'eu'}`; }
@@ -4309,27 +4326,60 @@ function makeBuyQuest(rng) {
   const n = rng.int(1, 3);
   return { id: 'd-buy', buy: true, target: n, reward: 50, progress: 0, spent: 0, claimed: false, text: `Buy ${n} egg${n > 1 ? 's' : ''} today (get the coins back + 50)` };
 }
+// Sem repetir: as missões de hoje evitam as de ontem e anteontem; as da semana evitam as da semana passada.
+// Ao resgatar uma missão do dia, entra outra nova da mesma dificuldade (até QUEST_REFILLS por dia), nunca repetida no mesmo dia.
+const QUEST_REFILLS = 3;
+function pickQuest(scope, diff, rng, avoidHard, lastUsed) {   // lastUsed: id → data em que apareceu por último
+  const ok = QUEST_POOL.filter(q => q.scope === scope && q.diff === diff && (!q.when || q.when()) && !avoidHard.has(q.id));
+  if (!ok.length) return null;
+  const age = q => lastUsed[q.id] || '';   // '' = não apareceu nos últimos dias (melhor)
+  const best = ok.map(age).sort()[0];
+  return rng.pick(ok.filter(q => age(q) === best));   // sempre a que está há mais tempo sem aparecer
+}
+const questLastUsed = (hist, before) => { const m = {}; Object.keys(hist).sort().forEach(d => { if (d < before) (hist[d] || []).forEach(id => { m[id] = d; }); }); return m; };
+function questHist(t) {
+  const Q = S.quests; Q.hist = Q.hist || {};
+  Object.keys(Q.hist).forEach(d => { if (d < addDays(t, -3)) delete Q.hist[d]; });
+  return Q.hist;
+}
 function ensureQuests() {
   if (!questsOn()) return null;
   S.quests = S.quests || {};
   const t = today(), ws = cycleStartOf(t);
   if (!S.quests.day || S.quests.day.date !== t) {
+    const hist = questHist(t);
+    if (S.quests.day && S.quests.day.date) hist[S.quests.day.date] = [...new Set([...(hist[S.quests.day.date] || []), ...S.quests.day.list.map(q => q.id)])];
+    const last = questLastUsed(hist, t);
     const rng = makeRng('qd|' + questSeed('day'));
-    const ok = QUEST_POOL.filter(q => q.scope === 'day' && (!q.when || q.when()));
-    const pick = diff => { const l = ok.filter(q => q.diff === diff); return l.length ? rng.pick(l) : null; };
-    const list = [pick('easy'), pick('medium'), pick('hard')].filter(Boolean).map(q => makeQuest(q, rng));
-    if (S.settings.buyQuests !== false && rng.next() < 0.35 && list.length > 1) list[1] = makeBuyQuest(rng);
-    S.quests.day = { date: t, list };
+    const used = new Set();
+    const list = ['easy', 'medium', 'hard'].map(diff => { const q = pickQuest('day', diff, rng, used, last); if (q) used.add(q.id); return q; }).filter(Boolean).map(q => makeQuest(q, rng));
+    if (S.settings.buyQuests !== false && last['d-buy'] !== addDays(t, -1) && rng.next() < 0.35 && list.length > 1) list[1] = makeBuyQuest(rng);
+    S.quests.day = { date: t, list, refills: 0 };
+    hist[t] = list.map(q => q.id);
   }
   spinQuests(S.quests.day, 'day');
   if (!S.quests.week || S.quests.week.start !== ws) {
+    const prev = {}; (S.quests.week ? S.quests.week.list : []).forEach(q => { prev[q.id] = 'last-week'; });
     const rng = makeRng('qw|' + questSeed('week'));
-    const ok = QUEST_POOL.filter(q => q.scope === 'week' && (!q.when || q.when()));
-    const m = ok.filter(q => q.diff === 'medium'), h = ok.filter(q => q.diff === 'hard');
-    S.quests.week = { start: ws, list: [m.length && rng.pick(m), h.length && rng.pick(h)].filter(Boolean).map(q => makeQuest(q, rng)) };
+    const used = new Set();
+    S.quests.week = { start: ws, list: ['medium', 'hard'].map(diff => { const q = pickQuest('week', diff, rng, used, prev); if (q) used.add(q.id); return q; }).filter(Boolean).map(q => makeQuest(q, rng)) };
   }
   spinQuests(S.quests.week, 'week');
   return S.quests;
+}
+// Depois de resgatar uma missão do dia: uma nova da mesma dificuldade (sem repetir hoje; de preferência nem ontem).
+function refillDayQuest(old) {
+  const Q = S.quests; const D = Q.day; const t = D.date;
+  if ((D.refills || 0) >= QUEST_REFILLS) return null;
+  const hist = questHist(t);
+  const today_ = new Set([...(hist[t] || []), ...D.list.map(q => q.id)]);
+  const diff = old.buy ? 'medium' : (questDef(old).diff || 'easy');
+  const rng = makeRng(`qr|${questSeed('day')}|${D.refills || 0}`);
+  const def = pickQuest('day', diff, rng, today_, questLastUsed(hist, t)); if (!def) return null;
+  const q = makeQuest(def, rng);
+  D.list.push(q); D.refills = (D.refills || 0) + 1;
+  hist[t] = [...today_, q.id];
+  return q;
 }
 const questDef = q => QUEST_POOL.find(x => x.id === q.id) || {};
 function questText(q) { return q.text || questDef(q).text || q.id; }
@@ -4352,7 +4402,8 @@ function questEvent(ev, data = {}) {
   const Q = ensureQuests(); if (!Q) return;
   const evs = [ev];
   if (ev === 'day_done') { if (data.onTime) evs.push('day_ontime'); if (data.perfect) evs.push('perfect_day', 'perfect_any'); }
-  if (ev === 'extra_done') { evs.push('extra'); if (data.perfect) evs.push('perfect_extra', 'perfect_any'); if (data.book) evs.push('book', 'read'); }
+  if (ev === 'extra_done') { evs.push('extra'); if (data.perfect) evs.push('perfect_extra', 'perfect_any'); if (data.book) evs.push('book', 'read'); if (data.tt) evs.push('tt'); if (data.tt && data.perfect) evs.push('tt_perfect'); }
+  if (ev === 'dare' && data.right) evs.push('dare_right');
   const done = [];
   [...Q.day.list, ...Q.week.list].forEach(q => {
     if (q.claimed) return;
@@ -4368,6 +4419,8 @@ function claimQuest(scope, id) {
   const Q = ensureQuests(); const list = scope === 'day' ? Q.day.list : Q.week.list;
   const q = list.find(x => x.id === id); if (!q || q.claimed || questProgress(q) < q.target) return;
   q.claimed = true;
+  const fresh = scope === 'day' ? refillDayQuest(q) : null;
+  if (fresh) setTimeout(() => toast(`📜 New quest: ${questText(fresh)}`), 1800);
   if (q.spin && spinOn()) {   // missão de giro: +1 giro hoje (no lugar das moedas)
     spinGrant(`quest-${scope}-${scope === 'day' ? Q.day.date : Q.week.start}-${q.id}`);
     save(); celebrateFX('small');
@@ -4390,7 +4443,8 @@ function questsHtml() {
       <div class="q-side"><span class="q-rw d-${diff} ${q.spin && spinOn() ? 'spin' : ''}">${q.spin && spinOn() ? '+1 spin 🎡' : `+${q.buy ? `${(q.spent || 0) + 50}` : q.reward} 🪙`}</span>
       ${q.claimed ? '<span class="tiny muted">✔ claimed</span>' : ready ? `<button class="btn small gold" data-claim="${scope}|${q.id}">Claim</button>` : `<span class="tiny muted">${p}/${q.target}</span>`}</div></div>`; };
   return `<div class="card span2 quests"><div class="row"><b>📜 Quests</b><span class="tiny muted grow">easy +5–10 · medium +20–30 · hard +50–80</span></div>
-    <div class="q-sec">Today</div>${Q.day.list.map(q => row(q, 'day')).join('')}
+    <div class="q-sec">Today</div>${Q.day.list.filter(q => !q.claimed).map(q => row(q, 'day')).join('')}${(() => { const n = Q.day.list.filter(q => q.claimed).length; const more = QUEST_REFILLS - (Q.day.refills || 0);
+      return n ? `<div class="tiny muted" style="margin:4px 0">✔ ${n} quest${n > 1 ? 's' : ''} done today${Q.day.list.every(q => q.claimed) ? ' — great job! New quests tomorrow. 🌙' : more > 0 ? ' · claim one to unlock a new quest' : ''}</div>` : ''; })()}
     <div class="q-sec">This week</div>${Q.week.list.map(q => row(q, 'week')).join('')}</div>`;
 }
 
@@ -4590,6 +4644,7 @@ function dareRecord(rec) {
   st.lastAt = new Date().toISOString(); st.snoozeUntil = null;
   const label = rec.result === 'right' ? `right (+${rec.coins})` : rec.result === 'wrong' ? 'missed' : 'skipped';
   addCoins(rec.coins || 0, `Lumi’s challenge ⚡${rec.reading ? ' 📖' : ''}: ${label}`, 'dare-' + rec.id);
+  if (rec.result !== 'skipped') questEvent('dare', { right: rec.result === 'right' });
   save();
   if (currentScreen === 'home') renderHome();
 }

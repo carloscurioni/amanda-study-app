@@ -120,13 +120,13 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
 | ⏳ Recuperação: dias que faltaram, feitos até a sexta seguinte | **metade da recompensa** (+50 se recuperar todos, dividido entre os dias) |
 | Exercícios extras | **+2 por acerto** (rodadas de 5, até 3 rodadas pagas por dia) |
 | Jogos da Oficina de palavras | **+3 por jogo** (até 5 por dia) |
-| 📜 Missões (3 do dia + 2 da semana) | fácil **+5–10**, média **+20–30**, difícil **+50–80**; missão de compra = valor gasto **+50** |
+| 📜 Missões (3 do dia, +3 novas ao resgatar, + 2 da semana) | fácil **+5–10**, média **+20–30**, difícil **+50–80**; missão de compra = valor gasto **+50** |
 | 🎡 Roleta diária | 1 giro grátis por dia (+1 de uma missão do dia e +1 de uma da semana; máx. 3/dia) — prêmios na tabela abaixo |
 | ⚡ Desafio da Lumi (a cada 2 h, máx. 5/dia) | **+10** por acerto; desafio de leitura (1 por dia) **+20**; errar não tira moedas |
 
 A tela inicial mostra o bônus pendente: *"🎁 +100 na sexta 30/10 se completar todos os dias (2 de 7 feitos)"*.
 
-**📜 Missões:** sorteadas por dia e por semana, para cada criança, e não mudam ao recarregar. Exemplos: "Conclua a tarefa de hoje", "Acerte 100% nos extras", "Use o ? para aprender algo novo", "Mantenha a sequência por 3 dias". Às vezes aparece "Compre 2 ovos hoje", que devolve o valor gasto + 50. Toque em **Resgatar** para receber. Os pais ligam ou desligam as missões (e as de compra) em Ajustes.
+**📜 Missões:** sorteadas por dia e por semana, para cada criança, e não mudam ao recarregar. Exemplos: "Conclua a tarefa de hoje", "Acerte 100% nos extras", "Use o ? para aprender algo novo", "Mantenha a sequência por 3 dias". Às vezes aparece "Compre 2 ovos hoje", que devolve o valor gasto + 50. Toque em **Resgatar** para receber. Não repetem: as de hoje são as que estão há mais tempo sem aparecer (nada de ontem), e as da semana evitam as da semana passada. Ao resgatar uma missão do dia, entra outra nova da mesma dificuldade (até 3 por dia, sem repetir no mesmo dia). Os pais ligam ou desligam as missões (e as de compra) em Ajustes.
 
 **🎡 Roleta diária (Daily spin):** botão **🎡 Spin** na tela inicial, com selo quando há giro.
 - 1 giro grátis por dia (não acumula). Uma missão do dia (a mais difícil) e uma da semana podem dar **+1 spin 🎡** em vez de moedas. Máximo de 3 giros por dia.
