@@ -71,6 +71,11 @@ const YEAR_LABELS = {
   Y13: 'Year 13, 2º ano do IB Diploma Programme (DP2, ano das provas finais do IB) (≈ 3ª série do Ensino Médio no Brasil, 17–18 anos)',
 };
 const yearNum = b => Number((String((b && b.yearId) || '').match(/\d+/) || [5])[0]);
+// Modelo por etapa: anos até EASY_MAX_YEAR (padrão Y6) usam o modelo barato (MODEL_EASY, Haiku) para gerar perguntas e livros;
+// do Y7 em diante (KS3, IGCSE, IB) continua o MODEL_PLAN (Sonnet). EASY_MAX_YEAR = 0 desliga.
+const genModel = (env, b) => yearNum(b) <= Number(env.EASY_MAX_YEAR ?? 6)
+  ? (env.MODEL_EASY || env.MODEL_FAST || 'claude-haiku-5-5')
+  : (env.MODEL_PLAN || 'claude-sonnet-5-5');
 // Orientação extra para o fundamental II e o médio (Key Stage 3, IGCSE e IB Diploma).
 function stageRules(n) {
   if (n <= 6) return '';
@@ -536,7 +541,7 @@ ${spell ? '- Se houver Ortografia ou Spelling, inclua UMA pergunta "proof" (caç
   "title": "Nome do livro — Capítulo N: título". Tamanho: ${yn <= 2 ? '120–200' : yn <= 6 ? '250–400' : '400–600'} palavras, no idioma da matéria, parágrafos separados por \n.
   EXATAMENTE ${rn} das perguntas são sobre o capítulo (subject ${read.subject}): 1 "open" pedindo o resumo em 2–3 frases${rn > 1 ? ` e ${rn - 1} de compreensão ("mc" ou "short", começando com "No capítulo…"/"In the chapter…")` : ''}.` : '- Sem leitura hoje: "passage" com título e texto vazios.'}` }];
   return claude(env, ctx, {
-    model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low',
+    model: genModel(env, b), effort: 'low',
     system: studentProfile(b.name, b.year, b.mine, yn, b.levels), content, schema: DAY_SCHEMA, maxTokens: 14000,
   });
 }
@@ -790,7 +795,7 @@ ${avoid.length ? `
 Já existem no banco (não repita nem faça quase iguais):
 - ${avoid.slice(0, 40).map(x => String(x).slice(0, 110)).join('\n- ')}` : ''}` }];
   const out = await claude(env, ctx, {
-    model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low',
+    model: genModel(env, b), effort: 'low',
     system: studentProfile(null, YEAR_LABELS[b.yearId], [subject], yearNum(b), level ? { [subject]: level.toUpperCase() } : {}), content, schema: BANK_Q_SCHEMA, maxTokens: 16000,
   });
   const clean = (out.questions || []).map(q => cleanQuestion(q, subject)).filter(c => c.q).map(c => c.q);
@@ -828,7 +833,7 @@ Crie o ROTEIRO de um livro original em ${LANG_NAME(a.lang)} para a leitura diár
 - Nível de leitura: ${READ_LEVELS_TXT[a.readLevel]}.
 - Habilidade de leitura da semana (pelo currículo): ${row ? `${row.topic} — ${(row.objectives || []).join('; ')}` : 'compreensão e inferência'}. Planeje os capítulos para dar oportunidades de praticar essa habilidade.
 - Em literatura (pt_lit/en_lit) a partir do IGCSE, pode ser uma sequência de contos ou crônicas originais com recursos literários para analisar.` }];
-  const out = await claude(env, ctx, { model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low', system: studentProfile(null, YEAR_LABELS[b.yearId], [a.subject], yearNum(b), {}), content, schema: BOOK_HEADER_SCHEMA, maxTokens: 4000 });
+  const out = await claude(env, ctx, { model: genModel(env, b), effort: 'low', system: studentProfile(null, YEAR_LABELS[b.yearId], [a.subject], yearNum(b), {}), content, schema: BOOK_HEADER_SCHEMA, maxTokens: 4000 });
   if ((out.chapters || []).length < BOOK_CHAPTERS) throw new HttpError(502, 'The book outline came back incomplete.');
   out.chapters = out.chapters.slice(0, BOOK_CHAPTERS);
   const book = await B.bookHeader(a.ckey, a.subject, out);
@@ -852,7 +857,7 @@ Escreva o capítulo ${idx + 1}: "${c.title}" — ${c.synopsis}
 - Tamanho: ${yn <= 2 ? '120–200' : yn <= 6 ? '250–400' : '400–600'} palavras; nível de leitura ${READ_LEVELS_TXT[a.readLevel]}; parágrafos separados por \n.
 - Um episódio com começo, meio e fim, que também funcione para quem não leu os anteriores (relembre em 1 frase o que for preciso).
 - Depois, EXATAMENTE 8 perguntas (subject ${a.subject}): 1 "open" pedindo o resumo do capítulo em 2–3 frases e 7 de compreensão (das mais literais às de inferência) ("mc" ou "short", começando com "${a.lang === 'pt' ? 'No capítulo…' : 'In the chapter…'}")${row ? `, praticando a habilidade da semana: ${row.topic}` : ''}.` }];
-  const out = await claude(env, ctx, { model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low', system: studentProfile(null, YEAR_LABELS[b.yearId], [a.subject], yn, {}), content, schema: CHAPTER_SCHEMA, maxTokens: 6000 });
+  const out = await claude(env, ctx, { model: genModel(env, b), effort: 'low', system: studentProfile(null, YEAR_LABELS[b.yearId], [a.subject], yn, {}), content, schema: CHAPTER_SCHEMA, maxTokens: 6000 });
   const ch = await B.bookChapter(a.ckey, a.subject, idx, out);
   if (!ch) throw new HttpError(502, 'The chapter came back in an unexpected format.');
   return { chapter: ch, title: book.title };

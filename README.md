@@ -246,6 +246,7 @@ O link antigo (`carloscurioni.github.io/amanda-study-app`) continua funcionando 
 - **total do app por mês:** `MONTHLY_USD`, padrão US$ 40.
 
 Os modelos e os limites ficam em `wrangler.jsonc` (`MODEL_PLAN`, `MODEL_FAST`, `CHILD_DAILY_USD`, `MONTHLY_USD`).
+Modelo por etapa: do Year 1 ao `EASY_MAX_YEAR` (padrão 6), as perguntas da semana (`plan-day`), o banco (`bank-fill`) e os livros do banco usam `MODEL_EASY` (Haiku, bem mais barato); do Year 7 em diante, `MODEL_PLAN` (Sonnet). Para voltar tudo ao Sonnet, ponha `EASY_MAX_YEAR` em `"0"`.
 
 ### 🏦 Banco de sugestões (menos custo, semana pronta na hora)
 
