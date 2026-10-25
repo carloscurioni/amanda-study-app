@@ -41,6 +41,9 @@ const DEFAULT_SETTINGS = {
   extraPerCorrect: 2,     // moedas por acerto nos exercícios extras
   extraSetSize: 5,        // perguntas por rodada de extras
   extraSetsPerDay: 3,     // rodadas de extras com moedas por dia
+  dareOn: true,           // ⚡ desafio da Lumi (pergunta-surpresa)
+  dareEveryH: 2,          // intervalo entre desafios (horas, contando o app fechado)
+  dareCoins: 10, dareReadCoins: 20, dareMax: 5,
   spinOn: true,           // 🎡 roleta diária
   spinCoins: { small: 15, big: 50 }, // valores das fatias de moedas da roleta
   perTheme: 2,            // perguntas de cada tema (matéria) por dia
@@ -375,6 +378,7 @@ function normalizeState(s) {
   merged.settings.readQ = Object.assign({ pt: 'auto', en: 'auto' }, ss.readQ || {});
   merged.settings.spinCoins = Object.assign({ small: 15, big: 50 }, ss.spinCoins || {});
   merged.spin = Object.assign({ days: {}, log: [], pending: null }, merged.spin || {});
+  merged.dare = Object.assign({ lastAt: null, snoozeUntil: null, days: {} }, merged.dare || {});
   if (!ss.autoVoiceV2) { merged.settings.autoVoice = false; merged.settings.autoVoiceV2 = true; }   // desliga o áudio automático de quem já tinha
   merged.equipped = Object.assign(base.equipped, (s && s.equipped) || {});
   merged.practice = Object.assign({ pt: [], en: [] }, merged.practice || {});
@@ -489,6 +493,11 @@ function mergeStates(localRaw, remoteRaw) {
   M.spin = { days: Object.assign({}, R.spin.days), log: byId(L.spin.log, R.spin.log).sort((a, b) => (a.at < b.at ? 1 : -1)).slice(0, 40), pending: L.spin.pending || R.spin.pending || null };
   Object.entries(L.spin.days || {}).forEach(([d, v]) => { const r = M.spin.days[d] || {}; M.spin.days[d] = { used: Math.max(v.used || 0, r.used || 0), earned: Math.max(v.earned || 0, r.earned || 0) }; });
   if (M.spin.pending && M.spin.log.some(x => x.id === M.spin.pending.id && x.shown)) M.spin.pending = null;
+  // ⚡ desafio da Lumi: último horário = o mais recente; por dia: contagem maior, leitura feita em qualquer aparelho, lista unida por id
+  const mx = (a, b) => ((a || '') > (b || '') ? a : b) || null;
+  M.dare = { lastAt: mx(L.dare.lastAt, R.dare.lastAt), snoozeUntil: mx(L.dare.snoozeUntil, R.dare.snoozeUntil), days: Object.assign({}, R.dare.days) };
+  Object.entries(L.dare.days || {}).forEach(([d, v]) => { const r = M.dare.days[d] || {}; const list = byId(v.list, r.list);
+    M.dare.days[d] = { count: Math.max(v.count || 0, r.count || 0, list.length), readingDone: !!(v.readingDone || r.readingDone), list }; });
   M.rev = R.rev;
   return M;
 }
@@ -502,7 +511,7 @@ function mergeStates(localRaw, remoteRaw) {
 const CHILD_KEY = 'lumi-child';
 const Server = { on: false, ai: false, needsSetup: false, canSetup: false, me: null, childId: null, pushing: false, again: false, dirty: false, timer: null, status: 'local' };
 
-const AI_ROUTES = { '/api/ai/challenge': 'challenge', '/api/plan-outline': 'plan-outline', '/api/plan-day': 'plan-day', '/api/ai/bank-fill': 'bank-fill', '/api/ai/bank-book': 'bank-book', '/api/ai/bank-chapter': 'bank-chapter', '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open', '/api/lesson': 'lesson', '/api/reading': 'reading' };
+const AI_ROUTES = { '/api/ai/dare': 'dare', '/api/ai/challenge': 'challenge', '/api/plan-outline': 'plan-outline', '/api/plan-day': 'plan-day', '/api/ai/bank-fill': 'bank-fill', '/api/ai/bank-book': 'bank-book', '/api/ai/bank-chapter': 'bank-chapter', '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open', '/api/lesson': 'lesson', '/api/reading': 'reading' };
 const AVATARS = ['🦉', '🦊', '🐼', '🐱', '🐶', '🦄', '🐸', '🐧', '🐯', '🐰', '🐨', '🐙'];
 function localKey(id = Server.childId) { return id ? `${STORE_KEY}:${id}` : STORE_KEY; }
 function savedChild() { try { return localStorage.getItem(CHILD_KEY) || ''; } catch (e) { return ''; } }
@@ -4506,6 +4515,154 @@ function spinOddsModal() {
       <p class="tiny muted">🎁 Prizes are items you don’t have yet (cheaper ones come up more often). If you already have everything in a slice, it turns into coins. 🥚 The egg alternates every day (pet egg / mascot egg) and hatches straight away. Pet egg chances: ${Object.values(RARITY).map(r => `${r.label} ${r.pct}%`).join(', ')}.</p></div>`);
 }
 
+/* ---------- ⚡ Lumi’s challenge (dare*) — pergunta-surpresa a cada 2 h ----------
+   (Diferente do "🙋 I think I’m right" das funções chal*, que contesta a correção.)
+   Com o app aberto e visível, a cada minuto: se já passaram 2 h desde o último desafio (contando o app fechado), sem modal
+   aberto, sem times tables nem correção por foto, e com menos de 5 desafios hoje, a Lumi oferece 1 pergunta difícil da
+   semana. "Later" adia 30 min; ignorar 2 min conta como pulado. 1 por dia pode ser de leitura (trecho do texto do dia, vale 20).
+   Teste: ?dare=now faz o desafio aparecer em poucos segundos. */
+const dareOn = () => S.settings.dareOn !== false;
+const dareEveryH = () => clamp(Number(S.settings.dareEveryH) || 2, 0.5, 24);
+const dareCoins = reading => clamp(Math.round(Number(reading ? S.settings.dareReadCoins : S.settings.dareCoins) || (reading ? 20 : 10)), 0, 500);
+const dareMax = () => clamp(Math.round(Number(S.settings.dareMax) || 5), 1, 12);
+function dareState() { S.dare = Object.assign({ lastAt: null, snoozeUntil: null, days: {} }, S.dare || {}); return S.dare; }
+function dareDay(d = today()) { const st = dareState(); st.days[d] = Object.assign({ count: 0, readingDone: false, list: [] }, st.days[d] || {}); return st.days[d]; }
+let dareTimer = null;
+const DARE_NOW = new URLSearchParams(location.search).get('dare') === 'now';   // lido antes do login limpar a URL
+function dareInit() {
+  if (dareTimer) return;
+  VIEW.dareVisibleAt = Date.now();
+  const st = dareState(); if (!st.lastAt) { st.lastAt = new Date().toISOString(); save(); }   // o primeiro desafio vem 2 h depois de começar a usar
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') VIEW.dareVisibleAt = Date.now(); });
+  dareTimer = setInterval(dareTick, 60000);
+  if (DARE_NOW) { VIEW.dareForce = true; setTimeout(dareTick, 3000); }
+}
+function dareBusy() {
+  if (!$('#modal').classList.contains('hidden')) return true;                       // modal aberto (inclui times tables)
+  if (['check', 'selfcheck', 'login', 'welcome', 'parents', 'setup'].includes(currentScreen)) return true;   // correção por foto, login, área dos pais, planejamento
+  if (!$('#bubble').classList.contains('hidden') && !VIEW.dareOffer) return true;   // a Lumi já está falando outra coisa
+  return false;
+}
+function dareTick() {
+  if (!dareOn() || !S.name || VIEW.dareOffer || VIEW.dareActive) return;
+  if (document.visibilityState !== 'visible') return;
+  const force = VIEW.dareForce;
+  if (!force && Date.now() - (VIEW.dareVisibleAt || 0) < 55000) return;            // ~1 minuto depois de voltar ao app
+  const st = dareState(); const d = dareDay();
+  if (!force && d.count >= dareMax()) return;
+  if (!force && st.snoozeUntil && Date.now() < Date.parse(st.snoozeUntil)) return;
+  if (!force && st.lastAt && Date.now() - Date.parse(st.lastAt) < dareEveryH() * 3600000) return;
+  if (dareBusy()) { if (force) setTimeout(dareTick, 3000); return; }
+  VIEW.dareForce = false;
+  dareOffer();
+}
+function dareReadingPassage() {
+  const d = S.week && S.week.days[today()];
+  const ps = d ? dayPassages(d) : [];
+  return ps.length && Server.ai ? ps[0] : null;
+}
+function dareOffer() {
+  const d = dareDay();
+  const reading = !d.readingDone && d.count >= 1 && !!dareReadingPassage();   // 1 por dia, a partir do 2º desafio
+  const coins = dareCoins(reading);
+  VIEW.dareOffer = { reading, at: Date.now() };
+  say(reading ? `Hey! Want to earn <b>${coins} coins</b>? A reading challenge about today’s text — no mini-lesson allowed. ⚡📖`
+    : `Hey! Want to earn <b>${coins} coins</b>? Answer this one without the mini-lesson. It’s a hard one! ⚡`, { sticky: true, mood: 'wow', actions: [
+    { label: 'Let’s go! ⚡', primary: true, onClick: () => { const o = VIEW.dareOffer; VIEW.dareOffer = null; clearTimeout(VIEW.dareIgnore); hideBubble(); dareStart(o.reading); } },
+    { label: 'Later', onClick: () => { VIEW.dareOffer = null; clearTimeout(VIEW.dareIgnore); dareState().snoozeUntil = new Date(Date.now() + 30 * 60000).toISOString(); save(); hideBubble(); toast('OK! I’ll ask again in 30 minutes. ⏰'); } },
+  ] });
+  clearTimeout(VIEW.dareIgnore);
+  VIEW.dareIgnore = setTimeout(() => {   // ignorou 2 minutos: o balão some e conta como pulado (o relógio recomeça)
+    if (!VIEW.dareOffer) return;
+    VIEW.dareOffer = null; hideBubble();
+    dareRecord({ id: 'd-' + uid(), at: new Date().toISOString(), result: 'skipped', reading: false, coins: 0 });
+  }, 120000);
+}
+function dareRecord(rec) {
+  const st = dareState(); const d = dareDay();
+  d.list = d.list.concat(rec); d.count = Math.max(d.count + 1, d.list.length);
+  if (rec.reading && rec.result !== 'skipped') d.readingDone = true;
+  st.lastAt = new Date().toISOString(); st.snoozeUntil = null;
+  const label = rec.result === 'right' ? `right (+${rec.coins})` : rec.result === 'wrong' ? 'missed' : 'skipped';
+  addCoins(rec.coins || 0, `Lumi’s challenge ⚡${rec.reading ? ' 📖' : ''}: ${label}`, 'dare-' + rec.id);
+  save();
+  if (currentScreen === 'home') renderHome();
+}
+const dareLevel = id => (stageOf(S.settings.year) === 'ib' && id !== 'tok' ? ((S.settings.ibLevels || {})[id] || 'sl').toLowerCase() : '');
+const dareObjective = q => q && ['mc', 'short', 'num'].includes(q.type) && q.q && (q.type !== 'mc' || (q.options || []).length >= 2);
+// Escolhe a pergunta: 1) banco (sem gastar API), 2) Claude, 3) gerador do próprio app
+async function dareQuestion(reading) {
+  const seen = new Set([...recentQuestionTexts(300), ...Object.values(dareState().days).flatMap(x => (x.list || []).map(r => r.q)).filter(Boolean)]);
+  if (reading) {
+    const p = dareReadingPassage(); const paras = p.text.split(/\n+/).filter(Boolean);
+    let ex = ''; for (const x of paras) { if ((ex + ' ' + x).length > 700 && ex) break; ex = (ex ? ex + '\n' : '') + x; }
+    const r = await apiCall('/api/ai/dare', { method: 'POST', timeout: 60000, data: { mode: 'reading', excerpt: ex, title: p.title, subject: p.subject, lang: SUBJ[p.subject].lang } });
+    return Object.assign({ subject: p.subject, lang: SUBJ[p.subject].lang, excerpt: ex, title: p.title }, r);
+  }
+  const subs = weekSubjects() || mySubjects();
+  const fromBank = S.week && Object.values(S.week.days).some(d => (d.questions || []).some(q => q.bank));   // semana feita com o currículo: o banco tem os mesmos temas
+  if (fromBank && Server.me && Server.childId) {
+    try {
+      const wk = academicWeekOf(addDays(S.week.start, 2));
+      const order = makeRng('dare|' + Date.now()).shuffle(subs.filter(id => !isRead(id)).slice());
+      const r = await apiCall('/api/bank/draw', { method: 'POST', data: { childId: Server.childId, week: wk, exclude: Object.values(S.week.days).flatMap(d => d.questions || []).map(q => q.bank).filter(Boolean), subjects: order.slice(0, 4).map(id => ({ subject: id, level: dareLevel(id), need: 15 })), books: [] } });
+      const pool = Object.entries(r.questions || {}).flatMap(([slot, qs]) => qs.map(q => Object.assign({ subject: slot.split('-')[0] }, q))).filter(q => dareObjective(q) && !seen.has(q.q));
+      if (pool.length) { const hard = pool.sort((a, b) => (b.q.length + (b.type === 'mc' ? 0 : 30)) - (a.q.length + (a.type === 'mc' ? 0 : 30))).slice(0, 6); const q = hard[Math.floor(rand01() * hard.length)]; return Object.assign({ lang: SUBJ[q.subject].lang }, q); }
+    } catch (e) { /* tenta o Claude */ }
+  }
+  if (Server.ai) {
+    try { const r = await apiCall('/api/ai/dare', { method: 'POST', timeout: 60000, data: { mode: 'normal', topics: weekTopicsText(S.week), subjects: subs, exclude: [...seen].slice(-40) } });
+      if (dareObjective(r) && SUBJ[r.subject]) return Object.assign({ lang: SUBJ[r.subject].lang }, r); } catch (e) { /* gerador local */ }
+  }
+  const qs = localExtras(12, subs.filter(id => !isRead(id))).filter(q => dareObjective(q) && !seen.has(q.q));
+  return qs.length ? Object.assign({ lang: SUBJ[qs[qs.length - 1].subject].lang }, qs[qs.length - 1]) : null;
+}
+async function dareStart(reading) {
+  VIEW.dareActive = true;
+  const stop = showLoading(['Lumi is picking a hard one… ⚡', 'Almost ready!']);
+  let q = null;
+  try { q = await dareQuestion(reading); } catch (e) { q = null; }
+  stop();
+  if (!q && reading) { try { q = await dareQuestion(false); reading = false; } catch (e) { q = null; } }
+  if (!q) { VIEW.dareActive = false; say('I couldn’t find a challenge right now. Next time! ⚡', { mood: 'think' }); dareState().snoozeUntil = new Date(Date.now() + 30 * 60000).toISOString(); save(); return; }
+  VIEW.dareQ = q;   // (para testes)
+  const coins = dareCoins(reading); const id = 'd-' + uid(); const pt = q.lang === 'pt';
+  const sb = SUBJ[q.subject] || { icon: '❓', short: '' };
+  const m = openModal(`<div class="modal-head"><h3>⚡ Lumi’s challenge <span class="dare-coins">+${coins} 🪙</span></h3></div>
+    <div class="modal-body dare-body">
+      ${q.excerpt ? `<div class="dare-excerpt"><div class="tiny muted">📖 ${esc(q.title || '')}</div>${q.excerpt.split(/\n+/).map(x => `<p>${esc(x)}</p>`).join('')}</div>` : ''}
+      <div class="dare-q"><span class="q-subj">${sb.icon} ${esc(sb.short || '')}</span> ${esc(q.q)}${gapNote(q) ? ` <span class="gap-note">✏️ ${gapNote(q)}</span>` : ''}</div>
+      ${q.type === 'mc' ? `<div class="opts">${q.options.map(o => `<button type="button" class="opt" data-dopt="${esc(o)}">${esc(o)}</button>`).join('')}</div>`
+        : `<input type="text" id="dare-in" ${q.type === 'num' ? 'inputmode="decimal"' : ''} autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${pt ? 'Sua resposta' : 'Your answer'}">`}
+      <p class="tiny muted" style="margin:6px 0 0">One try · no hints or mini-lesson · you never lose coins.</p>
+      <div id="dare-out"></div></div>
+    <div class="modal-foot"><button class="btn" id="dare-skip">Skip</button><span class="grow"></span><button class="btn primary" id="dare-go">Answer ⚡</button></div>`);
+  let pick = null;
+  $$('[data-dopt]', m).forEach(b => b.onclick = () => { pick = b.dataset.dopt; $$('[data-dopt]', m).forEach(x => x.classList.toggle('sel', x === b)); });
+  const inp = $('#dare-in', m); if (inp) { inp.focus(); inp.onkeydown = e => { if (e.key === 'Enter') $('#dare-go', m).click(); }; }
+  const end = () => { VIEW.dareActive = false; };
+  $('#dare-skip', m).onclick = () => { dareRecord({ id, at: new Date().toISOString(), subject: q.subject, q: q.q, answer: q.answer, result: 'skipped', reading, coins: 0 }); closeModal(); end(); };
+  $('#dare-go', m).onclick = () => {
+    const given = q.type === 'mc' ? pick : (inp ? inp.value.trim() : '');
+    if (!given) { toast(pt ? 'Escolha ou escreva uma resposta. 🙂' : 'Pick or write an answer. 🙂'); return; }
+    const ok = isCorrect(q, given) === true;
+    dareRecord({ id, at: new Date().toISOString(), subject: q.subject, q: q.q, answer: q.answer, given, result: ok ? 'right' : 'wrong', reading, coins: ok ? coins : 0 });
+    $$('[data-dopt]', m).forEach(b => { b.disabled = true; if (norm(b.dataset.dopt) === norm(q.answer)) b.classList.add('ok'); else if (b.dataset.dopt === pick && !ok) b.classList.add('bad'); });
+    if (inp) inp.disabled = true;
+    const expl = q.explanation || q.hint || '';
+    $('#dare-out', m).innerHTML = ok ? `<div class="notice ok">🎉 <b>${pt ? 'Acertou!' : 'You got it!'}</b> +${coins} 🪙</div>`
+      : `<div class="notice info">💪 ${pt ? 'Quase! A resposta é' : 'Nice try! The answer is'} <b>${esc(q.answer)}</b>.${expl ? ` ${esc(expl)}` : ''}<br><span class="tiny">${pt ? 'Você não perdeu moedas.' : 'You didn’t lose any coins.'}</span></div>`;
+    $('.modal-foot', m).innerHTML = '<span class="grow"></span><button class="btn primary" data-close>OK</button>';
+    $('[data-close]', $('.modal-foot', m)).onclick = () => { closeModal(); end(); };
+    if (ok) { celebrateFX('small'); renderMascotMini('wow'); } else renderMascotMini('think');
+  };
+}
+function dareHistoryHtml() {
+  const d = (dareState().days || {})[today()]; const list = (d && d.list) || [];
+  if (!list.length) return '';
+  return `<div class="card"><b>⚡ Lumi’s challenges today (${list.length})</b><div style="display:grid;gap:4px;margin-top:6px">${list.map(r => `<div class="tiny">${new Date(r.at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })} · ${r.reading ? '📖 ' : ''}${r.result === 'right' ? `✅ right (+${r.coins})` : r.result === 'wrong' ? '❌ missed' : '⏭️ skipped'}${r.q ? ` — ${esc(r.q.slice(0, 90))}${r.given ? ` · answer: <b>${esc(r.given)}</b> (key: ${esc(r.answer || '')})` : ''}` : ''}</div>`).join('')}</div></div>`;
+}
+
 /* ---------- Fase 5: 💌 Recadinhos secretos dos pais ---------- */
 // Os textos ficam no servidor, fora do estado da criança: ela só recebe um recadinho quando compra o envelope.
 SHOP_CATS.splice(SHOP_CATS.findIndex(c => c.id === 'voucher'), 0, { id: 'note', label: '💌 Secret note' });
@@ -4991,6 +5148,7 @@ function pReview(box) {
       ${pc.map((x, k) => `<div class="review-item"><div class="meta">${esc(x.label)} · ${SUBJ[x.q.subject] ? SUBJ[x.q.subject].icon + ' ' + esc(SUBJ[x.q.subject].name) : ''}</div><div><b>${esc(x.q.q)}</b></div>
         <div class="tiny">Answer key: <b>${esc(x.q.answer || '(free answer)')}</b> · Child: <b>${esc(x.ch.given || '—')}</b>${x.ch.why ? ` · Why: “${esc(x.ch.why)}”` : ''}</div>${x.ch.lumi ? `<div class="tiny">🦉 Lumi: ${esc(x.ch.lumi)}</div>` : ''}
         <div class="row"><button class="btn small ok" data-chok="${k}">✓ Child is right</button><button class="btn small" data-chno="${k}">✗ Keep it wrong</button></div></div>`).join('')}</div>` : ''; })()}
+    ${dareHistoryHtml()}
     <h3 style="margin:6px 0 0">Open answers (${opens.length}) <span class="tiny muted">— Lumi marks them; you can confirm or change</span></h3>${list || '<p class="muted">Nothing to mark yet.</p>'}
     ${S.history.length ? `<div class="card"><b>History</b>${S.history.slice(0, 8).map(h => `<div class="tiny">${fmtDM(h.start)}–${fmtDM(h.end)}: ${h.done}/${h.total} days · ${h.settled === 'delivered' ? 'completed' : h.settled === 'missed' ? 'not completed' : '—'}${h.recovered ? ` · ${h.recovered} caught up` : ''}</div>`).join('')}</div>` : ''}`;
   $$('[data-mark]', box).forEach(b => b.onclick = () => { const d = S.week.days[b.dataset.d]; d.marks = d.marks || {}; d.marks[b.dataset.q] = b.dataset.mark; save(); pReview(box); });
@@ -5038,6 +5196,10 @@ function pSettings(box) {
     <div class="card"><b>Tasks</b><div class="form-grid" style="margin-top:6px">
       ${Server.me ? '' : `<label class="field">Name<input id="s-name" value="${esc(S.name)}"></label>`}
       ${['Y4', 'Y5'].includes(st.year) ? `<label class="field">⏱️ Times tables: seconds per question<input type="number" id="s-tts" min="3" max="15" value="${ttSeconds()}"></label>` : ''}
+      <label class="field">⚡ Lumi’s challenge<select id="s-dare"><option value="1" ${st.dareOn !== false ? 'selected' : ''}>On</option><option value="0" ${st.dareOn === false ? 'selected' : ''}>Off</option></select></label>
+      <label class="field">⚡ Challenge every (hours)<input type="number" id="s-dareh" min="0.5" max="24" step="0.5" value="${dareEveryH()}"></label>
+      <label class="field">⚡ Coins (normal / reading)<span class="row"><input type="number" id="s-darec" min="0" max="500" value="${dareCoins(false)}" style="width:70px"><input type="number" id="s-darer" min="0" max="500" value="${dareCoins(true)}" style="width:70px"></span></label>
+      <label class="field">⚡ Max challenges per day<input type="number" id="s-darem" min="1" max="12" value="${dareMax()}"></label>
       <label class="field">🎡 Daily spin<select id="s-spin"><option value="1" ${st.spinOn !== false ? 'selected' : ''}>On</option><option value="0" ${st.spinOn === false ? 'selected' : ''}>Off</option></select></label>
       <label class="field">🎡 Spin: small coins slice<input type="number" id="s-spins" min="1" max="1000" value="${spinCoins('small')}"></label>
       <label class="field">🎡 Spin: big coins slice<input type="number" id="s-spinb" min="1" max="1000" value="${spinCoins('big')}"></label>
@@ -5066,6 +5228,7 @@ function pSettings(box) {
       reward, penalty, latePct: clamp(num('#s-late', latePct()), 0, 100), dayCoins: clamp(num('#s-dayc', st.dayCoins ?? 10), 0, 100), questsOn: $('#s-quests').value === '1', notePrice: clamp(num('#s-notep', notePrice()), 1, 100000), sound: $('#s-sound').value === '1', buyQuests: $('#s-bquests').value === '1', extraPerCorrect: Math.max(0, num('#s-xpc', st.extraPerCorrect)), extraSetSize: clamp(num('#s-xsize', st.extraSetSize), 3, 12),
       extraSetsPerDay: clamp(num('#s-xsets', st.extraSetsPerDay), 0, 10),
       ttSeconds: $('#s-tts') ? clamp(num('#s-tts', ttSeconds()), 3, 15) : st.ttSeconds,
+      dareOn: $('#s-dare').value === '1', dareEveryH: clamp(Number($('#s-dareh').value) || 2, 0.5, 24), dareCoins: clamp(num('#s-darec', dareCoins(false)), 0, 500), dareReadCoins: clamp(num('#s-darer', dareCoins(true)), 0, 500), dareMax: clamp(num('#s-darem', dareMax()), 1, 12),
       spinOn: $('#s-spin').value === '1', spinCoins: { small: clamp(num('#s-spins', spinCoins('small')), 1, 1000), big: clamp(num('#s-spinb', spinCoins('big')), 1, 1000) },
       perTheme: clamp(num('#s-ptheme', perTheme()), 1, 6), readQ: { pt: $('#s-rqpt').value === 'auto' ? 'auto' : Number($('#s-rqpt').value), en: $('#s-rqen').value === 'auto' ? 'auto' : Number($('#s-rqen').value) },
       workshopCoins: clamp(num('#s-wkc', st.workshopCoins ?? 3), 0, 50), workshopPerDay: clamp(num('#s-wkd', st.workshopPerDay ?? 5), 0, 20),
@@ -5338,7 +5501,7 @@ async function boot() {
   afterLogin();
 }
 function startApp() {
-  applyTheme(); renderMascotMini(); renderCoins();
+  applyTheme(); renderMascotMini(); renderCoins(); dareInit();
   if (!S.name) { show('welcome'); return; }
   show('home');
   if (!S.tourDone) setTimeout(runTour, 400);

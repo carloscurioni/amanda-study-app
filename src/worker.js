@@ -692,6 +692,42 @@ Rules:
   return claude(env, ctx, { model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low', system: 'You are Lumi, a fair and kind tutor who double-checks marking for school students.', content, schema: CHALLENGE_SCHEMA, maxTokens: 1500 });
 }
 
+/* ---------------- ⚡ Lumi's challenge: 1 pergunta difícil e objetiva (só quando o banco não tem nada) ---------------- */
+const DARE_SCHEMA = {
+  type: 'object', properties: {
+    subject: { type: 'string', description: 'id da matéria (um dos ids pedidos)' },
+    type: { type: 'string', enum: ['mc', 'short', 'num'] },
+    q: { type: 'string', description: 'enunciado, autossuficiente, no idioma da matéria' },
+    options: { type: 'array', items: { type: 'string' }, description: 'mc: 3–4 opções; outros tipos: []' },
+    answer: { type: 'string', description: 'mc: idêntico a uma opção; short: 1–3 palavras; num: só o número' },
+    accept: { type: 'array', items: { type: 'string' }, description: 'variações aceitas da resposta' },
+    explanation: { type: 'string', description: '1–2 frases curtas explicando a resposta certa, no idioma da matéria' },
+  }, required: ['subject', 'type', 'q', 'options', 'answer', 'accept', 'explanation'], additionalProperties: false,
+};
+async function handleDare(env, b, ctx) {
+  const reading = b.mode === 'reading';
+  const subs = (Array.isArray(b.subjects) ? b.subjects : b.mine).filter(x => SUBJECT_IDS.includes(x) && !BANK_READ_IDS.includes(x)).slice(0, 20);
+  const lang = b.lang === 'pt' ? 'Brazilian Portuguese' : 'British English';
+  const text = reading
+    ? `Write ONE challenging comprehension question for a student (${level(b)}) about this short excerpt of today's reading text. It must be answerable from the excerpt alone (inference or vocabulary in context is great), objective (multiple choice "mc" or a 1–3 word "short" answer), and harder than a literal recall question.
+Text: ${String(b.title || '').slice(0, 160)}
+Excerpt:
+${String(b.excerpt || '').slice(0, 1500)}
+Use subject "${SUBJECT_IDS.includes(b.subject) ? b.subject : 'en_read'}". Write everything in ${lang}.`
+    : `Write ONE hard but fair "challenge" question for a student (${level(b)}) on this week's school topics. Pick any one of these subjects: ${subs.map(id => `${id} = ${subjDesc(id)}`).join('; ')}.
+This week's topics:
+${String(b.topics || '').slice(0, 3000)}
+Rules:
+- Objective only: multiple choice ("mc", 3–4 short options, exactly one correct, "answer" identical to an option), a 1–3 word "short" answer, or "num" (number only) for maths/science.
+- At the top of the student's year level ("stretch" difficulty), solvable in under 2 minutes without a text, picture or audio. Facts must be correct and verifiable.
+- Write in the subject's language (Portuguese subjects in Brazilian Portuguese, the rest in British English).
+- Do not repeat any of these recent questions: ${(Array.isArray(b.exclude) ? b.exclude : []).slice(-40).map(x => String(x).slice(0, 120)).join(' | ') || '(none)'}`;
+  const r = await claude(env, ctx, { model: env.MODEL_PLAN || 'claude-sonnet-5-5', effort: 'low', system: 'You are Lumi, a playful tutor who writes short, accurate quiz questions for school students.', content: [{ type: 'text', text }], schema: DARE_SCHEMA, maxTokens: 1500 });
+  const c = cleanQuestion(r, SUBJECT_IDS.includes(r.subject) ? r.subject : (subs[0] || 'math'));
+  if (c.err || c.q.type === 'open' || c.q.type === 'proof') throw new HttpError(502, 'Lumi could not write a challenge right now.');
+  return Object.assign(c.q, { explanation: String(r.explanation || '').slice(0, 400) });
+}
+
 /* ---------------- Banco de sugestões compartilhado ---------------- */
 // O conteúdo criado aqui é reaproveitado por outras crianças do mesmo currículo/ano/semana.
 // Por isso o prompt usa SÓ a linha do currículo de referência (nunca o texto, as fotos ou o nome da criança).
@@ -823,7 +859,7 @@ Escreva o capítulo ${idx + 1}: "${c.title}" — ${c.synopsis}
 }
 
 /* ---------------- Roteador ---------------- */
-const AI_HANDLERS = { challenge: handleChallenge, 'bank-fill': handleBankFill, 'bank-book': handleBankBook, 'bank-chapter': handleBankChapter, 'plan-outline': handlePlanOutline, 'plan-day': handlePlanDay, plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen, lesson: handleLesson, reading: handleReading };
+const AI_HANDLERS = { dare: handleDare, challenge: handleChallenge, 'bank-fill': handleBankFill, 'bank-book': handleBankBook, 'bank-chapter': handleBankChapter, 'plan-outline': handlePlanOutline, 'plan-day': handlePlanDay, plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen, lesson: handleLesson, reading: handleReading };
 
 async function api(req, env, url) {
   const path = url.pathname, m = req.method;
