@@ -351,9 +351,10 @@ export class Directory extends DurableObject {
   getSetting(key, def = null) { const r = this.one('SELECT value FROM app_settings WHERE key = ?', key); return r ? r.value : def; }
   setSetting(key, value) {
     if (key === 'support_email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value))) throw new AppError(400, 'Invalid e-mail address.');
+    if (key === 'easy_max_year' && !(Number.isInteger(Number(value)) && Number(value) >= 0 && Number(value) <= 13)) throw new AppError(400, 'Invalid year.');
     this.sql.exec('INSERT INTO app_settings (key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value', key, String(value).slice(0, 200)); return { ok: true };
   }
-  settings() { return { support_email: this.getSetting('support_email', 'carloscurioni@gmail.com') }; }
+  settings() { return { support_email: this.getSetting('support_email', 'carloscurioni@gmail.com'), easy_max_year: this.getSetting('easy_max_year', null) }; }
   resolveReport(id) { this.sql.exec('UPDATE reports SET resolved = 1 WHERE id = ?', Number(id)); return { ok: true }; }
   parentById(id) { return this.one('SELECT id, family_id, name, email FROM parents WHERE id = ?', String(id || '')); }
 }

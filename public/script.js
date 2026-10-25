@@ -5422,12 +5422,18 @@ function promptPassword() {
 async function pAdmin(box) {
   box.innerHTML = '<p class="muted">Loading…</p>';
   let o;
-  try { o = await apiCall('/api/admin/overview'); } catch (e) { box.innerHTML = `<p class="muted">${esc(e.message)}</p>`; return; }
+  let st = {};
+  try { [o, st] = await Promise.all([apiCall('/api/admin/overview'), apiCall('/api/admin/settings').catch(() => ({}))]); } catch (e) { box.innerHTML = `<p class="muted">${esc(e.message)}</p>`; return; }
+  const easyCur = st.easy_max_year !== null && st.easy_max_year !== undefined && st.easy_max_year !== '' ? Number(st.easy_max_year) : Number(st.easy_default || 0);
+  const EASY_OPTS = [[0, 'Sonnet for every year'], [2, 'Haiku for Year 1–2 · Sonnet from Year 3'], [4, 'Haiku for Year 1–4 · Sonnet from Year 5'], [6, 'Haiku for Year 1–6 · Sonnet from Year 7'], [9, 'Haiku for Year 1–9 · Sonnet for IGCSE and IB'], [13, 'Haiku for every year']];
   const pct = Math.min(100, (o.monthUsd / o.monthCap) * 100);
   box.innerHTML = `
     <div class="card"><b>💳 Claude spending this month</b>
       <div class="spend"><div class="spend-bar"><i style="width:${pct}%"></i></div><span><b>${usd(o.monthUsd)}</b> of ${usd(o.monthCap)}</span></div>
-      <p class="tiny muted" style="margin:4px 0 0">Default limit: ${usd(o.childCap)} per child per day. Values are estimates based on the tokens used. To change the default limits, edit CHILD_DAILY_USD and MONTHLY_USD in wrangler.jsonc.</p></div>
+      <p class="tiny muted" style="margin:4px 0 0">Default limit: ${usd(o.childCap)} per child per day. Values are estimates based on the tokens used. To change the default limits, edit CHILD_DAILY_USD and MONTHLY_USD in wrangler.jsonc.</p>
+      <div class="row wrap" style="margin-top:8px"><label class="tiny grow">🤖 Model for the week’s questions and the bank’s books
+        <select id="ad-easy" style="display:block;margin-top:4px;max-width:100%">${EASY_OPTS.map(([v, l]) => `<option value="${v}" ${v === easyCur ? 'selected' : ''}>${l}</option>`).join('')}${EASY_OPTS.some(([v]) => v === easyCur) ? '' : `<option value="${easyCur}" selected>Haiku up to Year ${easyCur}</option>`}</select></label></div>
+      <p class="tiny muted" style="margin:4px 0 0">Haiku is much cheaper; Sonnet writes better. Applies to new questions and books (plan-day, bank-fill, bank books). Other features (week outline, mini-lessons, marking, tutor) keep their own models.</p></div>
     <div class="card"><b>✉️ Invite a new family</b>
       <div class="row wrap" style="margin-top:6px"><input id="ad-note" placeholder="Who is it for? (e.g. the Silva family)" class="grow input"><button class="btn small primary" id="ad-inv">Create invitation</button></div>
       <div id="ad-inv-out"></div>
@@ -5449,6 +5455,7 @@ async function pAdmin(box) {
     ${await adminBankHtml()}`;
   bindAdminCurriculum(box);
   bindAdminBank(box);
+  $('#ad-easy', box).onchange = async e => { try { await apiCall('/api/admin/settings', { method: 'PUT', data: { easy_max_year: Number(e.target.value) } }); toast('Model saved 🤖'); } catch (err) { toast(err.message); } };
   $('#ad-inv').onclick = async () => {
     try { const r = await apiCall('/api/admin/invites', { method: 'POST', data: { note: $('#ad-note').value } });
       $('#ad-inv-out').innerHTML = linkBox(r.link, r.expires, 'Invitation to the Estudos com a Lumi study app'); bindShare(box); } catch (e) { toast(e.message); }
