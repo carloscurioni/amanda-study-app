@@ -540,7 +540,7 @@ async function detectServer() {
     const r = await fetch('/api/health', { cache: 'no-store' });
     if (!r.ok) return false;
     const j = await r.json();
-    Server.on = !!j.ok; Server.ai = !!j.ai; Server.tts = !!j.tts; Server.needsSetup = !!j.setup; Server.canSetup = !!j.canSetup;
+    Server.on = !!j.ok; Server.version = j.version || ''; Server.ai = !!j.ai; Server.tts = !!j.tts; Server.needsSetup = !!j.setup; Server.canSetup = !!j.canSetup;
     return Server.on;
   } catch (e) { return false; }
 }
@@ -5044,7 +5044,6 @@ function bindAdminCurriculum(box) {
 }
 
 /* ---------- Fase 8: 💬 botão discreto de dúvida / sugestão / problema ---------- */
-const APP_VERSION = '2026.10.25';   // atualizar a cada publicação (aparece no e-mail do 💬)
 const FB_KINDS = [['duvida', '❓ Question'], ['sugestao', '💡 Suggestion'], ['problema', '🐞 Problem']];
 function openFeedback() {
   if (!VIEW.fbKind) VIEW.fbKind = 'duvida';
@@ -5064,7 +5063,7 @@ function openFeedback() {
     if (!Server.me) { location.href = `mailto:carloscurioni@gmail.com?subject=${encodeURIComponent('[Lumi] ' + FB_KINDS.find(k => k[0] === VIEW.fbKind)[1])}&body=${encodeURIComponent(text)}`; closeModal(); return; }
     const btn = $('#fb-send', m); btn.disabled = true;
     try {
-      await apiCall('/api/feedback', { method: 'POST', data: { kind: VIEW.fbKind, text, screen: currentScreen, version: APP_VERSION, childId: Server.childId || null } });
+      await apiCall('/api/feedback', { method: 'POST', data: { kind: VIEW.fbKind, text, screen: currentScreen, version: Server.version || 'offline', childId: Server.childId || null } });
       closeModal(); toast('Message sent. Thank you! 💜');
     } catch (e) { btn.disabled = false; toast(e.message); }
   };
@@ -5219,7 +5218,8 @@ function pSettings(box) {
       <p class="tiny muted" style="margin:6px 0 0">Daily total = questions per topic × the week’s subjects + questions on today’s text. Each day has one text (alternating Portuguese and English); the Extra reading in Extras comes in the other language. Each text has 5 to 8 questions (1 summary + comprehension); on automatic, it depends on the length and complexity of the text (school year and reading level).</p></div>
     ${calendarSettingsHtml(st)}
     <button class="btn primary" id="s-save">Save settings</button>
-    <button class="btn" id="s-tour">Replay Lumi’s tutorial</button>`;
+    <button class="btn" id="s-tour">Replay Lumi’s tutorial</button>
+    <p class="tiny muted" style="margin:8px 0 0">App version: ${esc(Server.version || 'offline')}</p>`;
   $('#s-save').onclick = () => {
     const num = (id, d) => { const v = Math.round(Number($(id).value)); return Number.isFinite(v) ? v : d; };
     const reward = Math.max(0, num('#s-reward', st.reward)), penalty = num('#s-penalty', st.penalty);

@@ -869,7 +869,7 @@ async function api(req, env, url) {
 
   if (path === '/api/health') {
     const st = await D.status();
-    return json({ ok: true, ai: !!env.ANTHROPIC_API_KEY, tts: !!env.GOOGLE_TTS_API_KEY, setup: st.accounts === 0, canSetup: !!env.FAMILY_CODE });
+    return json({ ok: true, version: appVersion(env), ai: !!env.ANTHROPIC_API_KEY, tts: !!env.GOOGLE_TTS_API_KEY, setup: st.accounts === 0, canSetup: !!env.FAMILY_CODE });
   }
   // Primeiro acesso: cria a conta do administrador e leva os dados antigos para o 1º perfil.
   if (path === '/api/setup' && m === 'POST') {
@@ -957,7 +957,7 @@ async function api(req, env, url) {
     const r = await D.feedbackAdd({ familyId, parentId: me.parent.id, childId: child ? child.id : null, who, kind, text, screen: b.screen, version: b.version, userAgent: req.headers.get('user-agent') });
     let emailed = false;
     if (env.RESEND_API_KEY && r.canEmail) {
-      try { emailed = await sendFeedbackEmail(env, r, { kind, text, who, family: r.familyName, email: me.parent.email, screen: b.screen, version: b.version }); if (emailed) await D.feedbackEmailed(r.id); }
+      try { emailed = await sendFeedbackEmail(env, r, { kind, text, who, family: r.familyName, email: me.parent.email, screen: b.screen, version: b.version, server: appVersion(env) }); if (emailed) await D.feedbackEmailed(r.id); }
       catch (e) { console.error('feedback email', e); }
     }
     return json({ ok: true, id: r.id, emailed });
@@ -1156,6 +1156,14 @@ async function sha256hex(s) {
   return [...new Uint8Array(d)].map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
+// Versão automática de cada deploy: data (horário de São Paulo) + começo do id da versão na Cloudflare. Ex.: 2026.10.25-1a2b3c4d
+function appVersion(env) {
+  const v = env.CF_VERSION_METADATA;
+  if (!v || !v.id) return 'dev';
+  let day = '';
+  try { day = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(v.timestamp)).replace(/-/g, '.'); } catch (e) { /* sem data */ }
+  return (day ? day + '-' : '') + String(v.id).slice(0, 8);
+}
 /* E-mail do feedback pela API do Resend (o workers.dev não tem domínio próprio para o Email Routing) */
 const escHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 async function sendFeedbackEmail(env, r, d) {
@@ -1163,7 +1171,7 @@ async function sendFeedbackEmail(env, r, d) {
   const html = `<div style="font-family:Arial,sans-serif;font-size:14px;color:#222">
     <h2 style="margin:0 0 8px">💬 ${escHtml(label)} — Study with Lumi</h2>
     <p style="white-space:pre-wrap;background:#f7f4ff;border-radius:8px;padding:12px">${escHtml(d.text)}</p>
-    <p style="color:#555;font-size:12px">Family: ${escHtml(d.family)} · From: ${escHtml(d.who)} · Parent: ${escHtml(d.email)}<br>Screen: ${escHtml(d.screen)} · Version: ${escHtml(d.version)} · Message #${escHtml(r.id)}</p></div>`;
+    <p style="color:#555;font-size:12px">Family: ${escHtml(d.family)} · From: ${escHtml(d.who)} · Parent: ${escHtml(d.email)}<br>Screen: ${escHtml(d.screen)} · Version: ${escHtml(d.version)}${d.server && d.server !== d.version ? ` (server: ${escHtml(d.server)} — the app was opened before the last update)` : ''} · Message #${escHtml(r.id)}</p></div>`;
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST', headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
     body: JSON.stringify({ from: env.RESEND_FROM || 'Study with Lumi <onboarding@resend.dev>', to: [r.supportEmail], reply_to: d.email || undefined,

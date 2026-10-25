@@ -8,6 +8,8 @@
   "workers_dev": true,
   "preview_urls": false,
   "assets": { "directory": "./public", "binding": "ASSETS" },
+  // Versão do app: a Cloudflare informa o id e a data de cada deploy (usado no /api/health e no e-mail do 💬).
+  "version_metadata": { "binding": "CF_VERSION_METADATA" },
   "durable_objects": {
     "bindings": [
       { "name": "STORE", "class_name": "FamilyStore" },
