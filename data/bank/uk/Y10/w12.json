@@ -4428,7 +4428,1383 @@
      "errors": []
     }
    ]
+  },
+  "sci": {
+   "topic": "Physics: effects of forces and load–extension graphs",
+   "questions": [
+    {
+     "id": "rp4exq29f74nz",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is the SI unit of force?",
+     "options": [
+      "newton",
+      "joule",
+      "watt",
+      "pascal"
+     ],
+     "answer": "newton",
+     "accept": [],
+     "hint": "It is named after a famous scientist and has the symbol N.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roc46nj1vfs8z4",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which of these is a contact force?",
+     "options": [
+      "friction",
+      "gravitational force",
+      "magnetic force",
+      "electrostatic force"
+     ],
+     "answer": "friction",
+     "accept": [],
+     "hint": "Contact forces only act when objects touch.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8li5x613jtymu",
+     "subject": "sci",
+     "type": "short",
+     "q": "State the name of the single force that has the same effect as all the forces acting on an object.",
+     "options": [],
+     "answer": "resultant force",
+     "accept": [
+      "resultant",
+      "net force"
+     ],
+     "hint": "It is the overall force left after combining all the forces.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qdweidkts4t2",
+     "subject": "sci",
+     "type": "mc",
+     "q": "A force can change an object's speed and direction. What else can a force change?",
+     "options": [
+      "its shape",
+      "its mass",
+      "its density",
+      "its temperature only"
+     ],
+     "answer": "its shape",
+     "accept": [],
+     "hint": "Think about squashing a ball or stretching a spring.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhsjlk25sgnp8",
+     "subject": "sci",
+     "type": "num",
+     "q": "Two forces act on a box in the same direction: 12 N and 8 N. Calculate the resultant force in newtons.",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Forces in the same direction add together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx3724g5v3o41",
+     "subject": "sci",
+     "type": "num",
+     "q": "A trolley is pushed to the right with 30 N while friction acts to the left with 18 N. Calculate the size of the resultant force in newtons.",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "Forces in opposite directions: subtract the smaller from the larger.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruisgf1a4bprp",
+     "subject": "sci",
+     "type": "mc",
+     "q": "A car moves at constant speed in a straight line. What is the resultant force on the car?",
+     "options": [
+      "zero",
+      "equal to its weight",
+      "equal to the driving force",
+      "greater than friction"
+     ],
+     "answer": "zero",
+     "accept": [],
+     "hint": "Balanced forces do not change motion.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruksji4xky4zh",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What happens to a stationary object when the resultant force on it is zero?",
+     "options": [
+      "It stays at rest",
+      "It starts to move slowly",
+      "It accelerates",
+      "It changes direction"
+     ],
+     "answer": "It stays at rest",
+     "accept": [],
+     "hint": "Balanced forces do not change the state of motion.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhyjbt914dxgft",
+     "subject": "sci",
+     "type": "num",
+     "q": "A spring is 10.0 cm long with no load. With a load it is 13.5 cm long. Calculate the extension in cm.",
+     "options": [],
+     "answer": "3.5",
+     "accept": [],
+     "hint": "Extension = stretched length − original length.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roi4xtoigw13t",
+     "subject": "sci",
+     "type": "short",
+     "q": "State the name of the point beyond which a stretched spring no longer returns to its original length when the load is removed.",
+     "options": [],
+     "answer": "elastic limit",
+     "accept": [
+      "the elastic limit"
+     ],
+     "hint": "Beyond this point the spring is permanently stretched.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mbsmjbf4zqb",
+     "subject": "sci",
+     "type": "mc",
+     "q": "For a spring obeying Hooke's law, the load–extension graph is…",
+     "options": [
+      "a straight line through the origin",
+      "a curve through the origin",
+      "a horizontal line",
+      "a straight line that does not pass through the origin"
+     ],
+     "answer": "a straight line through the origin",
+     "accept": [],
+     "hint": "Extension is directly proportional to load.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbevez21c2ecyk",
+     "subject": "sci",
+     "type": "num",
+     "q": "A spring stretches 2 cm for each 1 N of load and obeys Hooke's law. Calculate the extension, in cm, for a 4 N load.",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "If the load doubles, the extension doubles.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpszh5y1jd1gu9",
+     "subject": "sci",
+     "type": "num",
+     "q": "A spring has a spring constant of 40 N/m. Calculate the force, in N, needed to stretch it by 0.05 m.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Use F = k × x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw7o9yi1b1cpu4",
+     "subject": "sci",
+     "type": "num",
+     "q": "A force of 6 N stretches a spring by 0.12 m. Calculate the spring constant in N/m.",
+     "options": [],
+     "answer": "50",
+     "accept": [],
+     "hint": "Rearrange F = k × x to find k.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19d30n92zd81c",
+     "subject": "sci",
+     "type": "open",
+     "q": "Explain why a cyclist riding at a steady speed still needs to keep pedalling.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about which forces act against the motion and what balanced forces mean.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r768p96wc2wfq",
+     "subject": "sci",
+     "type": "open",
+     "q": "A student's load–extension graph is a straight line up to 5 N and then curves. Describe what this tells you about the spring above 5 N.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider whether the extension is still directly proportional to the load.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa": {
+   "topic": "Sport: what I did last weekend (preterite of regular verbs)",
+   "questions": [
+    {
+     "id": "rgxvqeq16xwuvd",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct Spanish word: 'the match'",
+     "options": [
+      "el partido",
+      "el equipo",
+      "el deporte",
+      "el fin"
+     ],
+     "answer": "el partido",
+     "accept": [],
+     "hint": "It is the game played between two teams.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5ipy5q7gmfcu",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct Spanish word: 'the team'",
+     "options": [
+      "el equipo",
+      "el partido",
+      "la pelota",
+      "el campo"
+     ],
+     "answer": "el equipo",
+     "accept": [],
+     "hint": "A group of players.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw58gmz1n7ex9n",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'last weekend'",
+     "options": [],
+     "answer": "el fin de semana pasado",
+     "accept": [
+      "fin de semana pasado"
+     ],
+     "hint": "'Pasado' means 'last' and comes after the noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1evfu9zrd4glb",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete with the preterite of 'jugar' (yo): 'El sábado ___ al fútbol.'",
+     "options": [
+      "jugué",
+      "jugó",
+      "juego",
+      "jugaba"
+     ],
+     "answer": "jugué",
+     "accept": [],
+     "hint": "With 'yo', -ar verbs end in -é; watch the spelling change before é.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12x8z401iri7yw",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete with the preterite of 'salir' (yo): 'Anoche ___ con mis amigos.'",
+     "options": [
+      "salí",
+      "salió",
+      "salgo",
+      "salimos"
+     ],
+     "answer": "salí",
+     "accept": [],
+     "hint": "Regular -ir verbs take -í for 'yo'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmszov81cd3l47",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite of 'nadar' for 'yo'.",
+     "options": [],
+     "answer": "nadé",
+     "accept": [
+      "nade"
+     ],
+     "hint": "Remove -ar and add the 'yo' ending with an accent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxcljtge2c7nw",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite of 'comer' for 'él'.",
+     "options": [],
+     "answer": "comió",
+     "accept": [
+      "comio"
+     ],
+     "hint": "-er verbs take -ió for 'él/ella'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1egqccw1h1sbvz",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: 'Mi hermana ___ (correr) cinco kilómetros.'",
+     "options": [
+      "corrió",
+      "corrí",
+      "corre",
+      "corrieron"
+     ],
+     "answer": "corrió",
+     "accept": [],
+     "hint": "The subject is 'mi hermana' (ella).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s660vm10zwejo",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite of 'ganar' for 'nosotros'.",
+     "options": [],
+     "answer": "ganamos",
+     "accept": [],
+     "hint": "For -ar verbs, the 'nosotros' form looks the same in present and preterite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl3fbjqgpq9h0",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: 'Ellos ___ (escribir) un mensaje al entrenador.'",
+     "options": [
+      "escribieron",
+      "escribió",
+      "escribimos",
+      "escriben"
+     ],
+     "answer": "escribieron",
+     "accept": [],
+     "hint": "'Ellos' needs the -ieron ending for -ir verbs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ovlxln1cyywzc",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: '¿___ (tú, ver) el partido ayer?'",
+     "options": [
+      "Viste",
+      "Vio",
+      "Vi",
+      "Veo"
+     ],
+     "answer": "Viste",
+     "accept": [],
+     "hint": "The 'tú' preterite ending for -er verbs is -iste.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbev8c0wm0b8g",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence is in the preterite?",
+     "options": [
+      "Ayer montamos en bici.",
+      "Hoy montamos en bici mañana.",
+      "Siempre monto en bici.",
+      "Voy a montar en bici."
+     ],
+     "answer": "Ayer montamos en bici.",
+     "accept": [],
+     "hint": "Look for a time word that refers to a finished past moment.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rzyjcbqoz78u",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'I played tennis.'",
+     "options": [],
+     "answer": "jugué al tenis",
+     "accept": [
+      "jugué tenis",
+      "yo jugué al tenis"
+     ],
+     "hint": "Remember the -gué spelling for 'yo'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ds6wqo1gauyl3",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct spelling of the 'yo' preterite of 'practicar'.",
+     "options": [
+      "practiqué",
+      "practicé",
+      "practicó",
+      "practico"
+     ],
+     "answer": "practiqué",
+     "accept": [],
+     "hint": "Verbs ending in -car change c to qu before é.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12sqnee163q882",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 2–3 sentences in Spanish about what you did last weekend. Use at least two different regular verbs in the preterite.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Try verbs like jugar, salir, nadar or comer, and a time phrase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k1rdyr1htueku",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 2–3 sentences in Spanish describing a match your team played. Say who won and how you felt.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use 'el partido', 'el equipo' and preterite forms like 'ganamos' or 'perdimos'.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Caderno Verde",
+   "premise": "Tobias, um adolescente que se sente sempre deslocado, passa as férias na cidadezinha da avó e, num caderno verde herdado do avô, transforma em poemas uma pedra no caminho, uma festa que acaba no escuro e uma viagem de trem, descobrindo que ser torto também é um jeito de ser inteiro.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O torto",
+     "synopsis": "Tobias, um adolescente que se sente sempre fora do lugar, chega à cidade da avó e encontra um caderno verde onde começa a escrever sobre si mesmo.",
+     "text": "Tobias tinha dezesseis anos e uma certeza: tinha nascido meio de lado. Não era tristeza, era só um jeito de estar no mundo. Quando todos riam de uma piada, ele entendia três segundos depois. Quando a turma ia para a direita, ele já tinha virado à esquerda. Até as fotos de família o denunciavam: lá estava ele, sempre na ponta, metade fora do enquadramento, como quem chegou atrasado ao próprio retrato.\nNaquelas férias, os pais o mandaram passar um mês com a avó Dita, numa cidadezinha de ruas de pedra, igreja branca e um relógio na praça que marcava a hora errada desde antes de ele nascer. Ninguém consertava. Diziam que o relógio já fazia parte da paisagem, e que uma cidade inteira acertada ficaria sem graça.\nTobias gostou do relógio na hora. Os dois eram parecidos: funcionavam, mas no ritmo deles.\nA casa da avó cheirava a café e a madeira antiga. No quarto onde ele ia dormir havia uma escrivaninha com uma gaveta emperrada. Depois de muito puxar, a gaveta abriu de uma vez, e Tobias caiu sentado no chão, com a gaveta no colo. Riu sozinho. Era a cara dele.\nDentro havia um caderno de capa verde, sem nenhuma palavra escrita. As folhas estavam amareladas nas pontas, mas limpas por dentro, como se esperassem alguém com paciência.\n— Era do seu avô — disse a avó Dita, da porta. — Ele comprou para escrever versos e nunca teve coragem. Dizia que as palavras dele saíam tortas.\n— As minhas também — respondeu Tobias.\n— Então o caderno é seu. Coisa torta combina com coisa torta.\nNaquela noite, com o barulho dos grilos entrando pela janela, Tobias abriu o caderno na primeira página. Pensou em escrever algo bonito, cheio de rimas, como os poemas que a professora lia na escola. Mas nada vinha. As palavras bonitas pareciam roupa emprestada: ficavam largas demais.\nEntão ele escreveu o que sentia, do jeito que vinha:\n“Quando eu nasci, alguém distraído\nme pôs no mundo um pouco de lado.\nDesde então eu ando assim:\ncerto por dentro, torto por fora.”\nLeu e releu. Não era perfeito. Talvez nem fosse poesia. Mas era a primeira vez que alguma coisa dele cabia direitinho numa folha de papel.\nAntes de apagar a luz, ouviu o relógio da praça bater onze vezes. Conferiu o celular: era meia-noite e dez. Tobias sorriu. Pela primeira vez, estar fora do horário não parecia um defeito. Parecia uma maneira diferente de contar o tempo.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Resuma o capítulo em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Tobias diz que nasceu “meio de lado”?",
+       "options": [
+        "Porque sempre se sente fora do ritmo dos outros",
+        "Porque tem um problema na coluna",
+        "Porque mora numa rua torta",
+        "Porque não gosta da família"
+       ],
+       "answer": "Porque sempre se sente fora do ritmo dos outros",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, com quem Tobias vai passar as férias?",
+       "options": [],
+       "answer": "a avó Dita",
+       "accept": [
+        "avó Dita",
+        "a avó",
+        "avó",
+        "Dita"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que há de estranho no relógio da praça?",
+       "options": [
+        "Marca a hora errada",
+        "Não tem ponteiros",
+        "Toca música",
+        "Fica dentro da igreja"
+       ],
+       "answer": "Marca a hora errada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, de que cor é a capa do caderno encontrado na gaveta?",
+       "options": [],
+       "answer": "verde",
+       "accept": [
+        "é verde"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o avô nunca escreveu no caderno?",
+       "options": [
+        "Achava que suas palavras saíam tortas",
+        "Não sabia ler",
+        "Perdeu a chave da gaveta",
+        "Preferia desenhar"
+       ],
+       "answer": "Achava que suas palavras saíam tortas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a comparação das palavras bonitas com “roupa emprestada” sugere?",
+       "options": [
+        "Que elas não combinavam com o jeito de Tobias",
+        "Que Tobias gosta de moda",
+        "Que as palavras eram do avô",
+        "Que o caderno estava rasgado"
+       ],
+       "answer": "Que elas não combinavam com o jeito de Tobias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que muda na forma como Tobias vê o seu jeito no final?",
+       "options": [
+        "Ele passa a ver a diferença como algo que não é defeito",
+        "Ele decide ser igual a todos",
+        "Ele joga o caderno fora",
+        "Ele conserta o relógio"
+       ],
+       "answer": "Ele passa a ver a diferença como algo que não é defeito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A pedra do caminho",
+     "synopsis": "No caminho até a padaria, Tobias repara numa pedra enorme que todos contornam sem olhar e decide transformá-la em poema.",
+     "text": "Todas as manhãs, a avó Dita mandava Tobias buscar pão. A padaria ficava no fim de uma ladeira de terra, e no meio dessa ladeira, sem pedir licença a ninguém, havia uma pedra.\nNão era uma pedrinha. Era uma pedra séria, cinzenta, do tamanho de uma mala de viagem. Os carros desviavam dela. As bicicletas desviavam dela. As senhoras com sacolas desviavam dela conversando, sem nem perceber que desviavam. A pedra estava ali havia tanto tempo que tinha virado invisível.\nNo primeiro dia, Tobias tropeçou nela. Claro. No segundo, desviou, mas olhou para trás. No terceiro, parou.\n— Perdeu alguma coisa? — perguntou seu Orlando, o padeiro, que varria a calçada lá embaixo.\n— Não. Só estou olhando a pedra.\n— Que pedra?\nTobias apontou. Seu Orlando apertou os olhos, como quem procura um conhecido na multidão.\n— Ah, essa. Está aí desde sempre. Ninguém tira porque dá trabalho, e ninguém liga porque é só uma pedra.\nFoi essa frase que ficou na cabeça dele o dia inteiro: “é só uma pedra”. Tobias achou injusto. A pedra mudava o caminho de todo mundo, todo santo dia, e mesmo assim ninguém a via. Era como certas tristezas, pensou: a gente se acostuma a desviar delas e esquece que estão lá.\nÀ tarde, sentado na varanda, ele abriu o caderno verde. Tentou escrever sobre a pedra de várias maneiras. Primeiro, fez uma descrição longa, cheia de adjetivos: cinzenta, áspera, antiga, teimosa. Ficou chato. Depois tentou uma rima com “estrada”, mas tudo soava falso.\nEntão lembrou do jeito como tinha passado pela pedra: tropeçando, desviando, voltando, olhando de novo. A pedra não era uma coisa que acontecia uma vez. Ela se repetia, todo dia. E se o poema também se repetisse?\nEle escreveu:\n“Na ladeira da padaria tinha uma pedra.\nTinha uma pedra na ladeira da padaria.\nTodo mundo desvia da pedra,\nninguém vê a pedra que todo dia\nmuda o caminho de todo mundo.”\nMostrou para a avó, meio sem jeito.\n— Você repetiu a pedra um monte de vezes — disse ela.\n— É de propósito. Para ficar pesado. Para o leitor tropeçar nela também.\nA avó ficou um tempo calada, mexendo o café.\n— Seu avô ia gostar disso — disse, por fim. — Ele também achava que o que se repete é o que mais pesa.\nNo dia seguinte, Tobias passou pela pedra e, em vez de desviar, deu um tapinha nela, como quem cumprimenta um velho conhecido. Seu Orlando, lá de baixo, riu e balançou a cabeça. Mas, pela primeira vez em muitos anos, também olhou para a pedra.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Resuma o capítulo em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, o que Tobias vai buscar todas as manhãs?",
+       "options": [],
+       "answer": "pão",
+       "accept": [
+        "o pão"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde fica a pedra?",
+       "options": [
+        "No meio da ladeira da padaria",
+        "Dentro da casa da avó",
+        "Na praça do relógio",
+        "Na porta da igreja"
+       ],
+       "answer": "No meio da ladeira da padaria",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que todos fazem quando passam pela pedra?",
+       "options": [
+        "Desviam sem perceber",
+        "Sentam nela",
+        "Tiram fotos",
+        "Tentam empurrá-la"
+       ],
+       "answer": "Desviam sem perceber",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do padeiro?",
+       "options": [],
+       "answer": "seu Orlando",
+       "accept": [
+        "Orlando"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Tobias repete a palavra “pedra” no poema?",
+       "options": [
+        "Para o poema ficar pesado, como a pedra no caminho",
+        "Porque esqueceu outras palavras",
+        "Porque a avó pediu",
+        "Para rimar com padaria"
+       ],
+       "answer": "Para o poema ficar pesado, como a pedra no caminho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, com o que Tobias compara a pedra que ninguém vê?",
+       "options": [
+        "Com tristezas de que a gente se acostuma a desviar",
+        "Com um tesouro escondido",
+        "Com um amigo de infância",
+        "Com o relógio da praça"
+       ],
+       "answer": "Com tristezas de que a gente se acostuma a desviar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que o final sugere sobre o efeito do poema de Tobias?",
+       "options": [
+        "Ele ajudou outra pessoa a enxergar a pedra",
+        "Ele fez a pedra desaparecer",
+        "Ele deixou o padeiro bravo",
+        "Ele foi publicado num jornal"
+       ],
+       "answer": "Ele ajudou outra pessoa a enxergar a pedra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A festa que apagou",
+     "synopsis": "Tobias vai a uma festa junina na praça, a luz acaba, todos vão embora e ele fica sozinho perguntando a si mesmo o que fazer agora.",
+     "text": "No sábado, a cidade inteira foi para a festa na praça. Havia bandeirinhas coloridas, fogueira, barraca de pamonha e uma quadrilha ensaiada havia semanas. A avó Dita insistiu para que Tobias fosse.\n— Vai conhecer gente da sua idade. Ficar só com velha e caderno não faz bem a ninguém.\nEle foi. Vestiu uma camisa xadrez que a avó tinha guardado do avô, dois números maior, e um chapéu de palha que ficava caindo sobre os olhos. Chegou exatamente na hora em que a quadrilha começava, e alguém o puxou pelo braço para completar um par.\nFoi um desastre bonito. Tobias pisou no pé da parceira, uma menina chamada Marina, virou para o lado errado no “caminho da roça” e quase derrubou a fileira inteira no “olha a chuva”. Mas Marina ria tanto que ele acabou rindo também. Por alguns minutos, Tobias esqueceu que era torto. Estava no meio de todo mundo, girando.\nEntão a luz acabou.\nPrimeiro, um estalo. Depois, o escuro completo, só a fogueira brilhando no meio da praça. O sanfoneiro parou. Alguém gritou que era o transformador da rua de baixo. Logo começou a garoar, e as pessoas foram se espalhando: cada família pegou suas cadeiras, seus pratos, suas crianças, e foi embora. Marina sumiu no meio do grupo dela, sem tempo de dizer tchau.\nEm dez minutos, a praça estava vazia. Restavam a fogueira quase apagada, as bandeirinhas molhadas e Tobias, com o chapéu grande e a camisa larga do avô.\nA festa tinha acabado. A luz tinha acabado. A conversa tinha acabado. E agora?\nEle se sentou no banco, debaixo do relógio errado, e se fez a pergunta em voz alta, só para ouvir como soava:\n— E agora, Tobias?\nNão havia ônibus para pegar, porque a casa da avó ficava a três quarteirões. Não havia ninguém para ligar, porque ele não tinha anotado o número de Marina. Não havia para onde fugir, porque não estava exatamente fugindo de nada. Ele só estava ali, sozinho, depois que tudo acabou.\nChegando em casa, encharcado, abriu o caderno verde. Escreveu uma lista do que tinha terminado naquela noite, uma coisa por linha: a música, a luz, a quadrilha, a festa, o riso. Embaixo de cada linha, repetiu a mesma pergunta, como um refrão: “E agora?”.\nQuando terminou, percebeu que a última linha não tinha pergunta. Sem pensar, tinha escrito: “Agora eu volto para casa”. Era pouco. Mas, às vezes, quando tudo acaba, voltar para casa já é uma resposta.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Resuma o capítulo em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que tipo de festa acontece na praça?",
+       "options": [
+        "Uma festa junina",
+        "Uma festa de aniversário",
+        "Um casamento",
+        "Um show de rock"
+       ],
+       "answer": "Uma festa junina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da parceira de Tobias na quadrilha?",
+       "options": [],
+       "answer": "Marina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, de quem era a camisa xadrez que Tobias usa?",
+       "options": [
+        "Do avô",
+        "Do pai",
+        "Do padeiro",
+        "De Marina"
+       ],
+       "answer": "Do avô",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que interrompe a festa?",
+       "options": [
+        "A falta de luz",
+        "Uma briga",
+        "A chegada da polícia",
+        "Um incêndio na fogueira"
+       ],
+       "answer": "A falta de luz",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que pergunta Tobias repete no caderno como um refrão?",
+       "options": [
+        "E agora?",
+        "Onde estou?",
+        "Quem sou eu?",
+        "Por que choveu?"
+       ],
+       "answer": "E agora?",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a dança é chamada de “um desastre bonito”?",
+       "options": [
+        "Tobias erra os passos, mas se diverte e se sente parte do grupo",
+        "A quadrilha foi cancelada",
+        "Todos caíram no chão",
+        "A música era muito triste"
+       ],
+       "answer": "Tobias erra os passos, mas se diverte e se sente parte do grupo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a última linha do poema mostra sobre Tobias?",
+       "options": [
+        "Que ele encontra uma resposta simples depois da solidão",
+        "Que ele desiste de escrever",
+        "Que ele vai procurar Marina",
+        "Que ele está com raiva da avó"
+       ],
+       "answer": "Que ele encontra uma resposta simples depois da solidão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A janela do trem",
+     "synopsis": "Tobias viaja de trem com a avó até a cidade vizinha e, olhando pela janela, escreve um poema com ironia sobre a pressa e a calma.",
+     "text": "Na quarta-feira, a avó Dita precisou ir à cidade vizinha resolver papéis no cartório, e Tobias foi junto. Iam de trem, um trem velho e lento que fazia o trajeto duas vezes por dia, parando em estações tão pequenas que mais pareciam varandas.\nTobias escolheu a janela. Do lado de fora, a paisagem passava devagar: pasto, curral, um rio barrento, uma igrejinha no alto do morro. As vacas olhavam o trem com aquela calma de quem já viu de tudo e não se impressiona com mais nada.\nDo lado de dentro, o vagão era outro mundo. Um homem de terno falava alto ao telefone, dizendo “urgente” a cada frase. Uma moça digitava tão rápido no notebook que parecia brigar com ele. Um rapaz checava o relógio de cinco em cinco minutos, bufando, como se pudesse empurrar o trem com os olhos.\n— Esse trem é a coisa mais lenta do mundo — reclamou o homem de terno, desligando o telefone.\n— É, sim — concordou a avó, com um sorriso tranquilo. — Por isso eu gosto dele.\nTobias tirou o caderno verde da mochila. Achou graça na cena: todos ali tinham pressa, e o trem não tinha nenhuma. A pressa não fazia o trem andar mais rápido; só deixava as pessoas mais cansadas. Lá fora, as vacas, sem relógio, sem telefone e sem notebook, pareciam as únicas que tinham entendido alguma coisa.\nEle resolveu escrever um poema sério de propósito, como se fosse um anúncio importante:\n“Atenção, passageiros apressados:\no trem informa que não tem pressa.\nAs vacas informam que não têm pressa.\nO rio informa que vai chegar ao mar\nquando chegar.\nPedimos que os senhores, muito ocupados,\naproveitem a viagem\npara não chegar mais cedo a lugar nenhum.”\nLeu baixinho para a avó. Ela riu tanto que precisou tirar os óculos.\n— Você está dizendo o contrário do que quer dizer — comentou. — Isso tem nome.\n— Ironia — disse Tobias. — A professora explicou. A gente fala uma coisa, mas o leitor entende outra.\n— Pois é. E é mais esperto do que dar bronca nos outros.\nNa volta, já no fim da tarde, o homem de terno estava no mesmo vagão. Não falava ao telefone. Olhava pela janela, com o rosto meio iluminado pelo sol baixo. Tobias não sabia se era cansaço ou descoberta. Preferiu acreditar na segunda opção e anotou, no canto da página, uma única linha: “Até os apressados, às vezes, chegam à janela.”",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Resuma o capítulo em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Tobias e a avó vão à cidade vizinha?",
+       "options": [
+        "Para resolver papéis no cartório",
+        "Para visitar um primo",
+        "Para ir ao médico",
+        "Para comprar um caderno"
+       ],
+       "answer": "Para resolver papéis no cartório",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual meio de transporte eles usam?",
+       "options": [],
+       "answer": "trem",
+       "accept": [
+        "o trem",
+        "de trem"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como os animais lá fora são descritos?",
+       "options": [
+        "Calmos, sem se impressionar",
+        "Assustados com o barulho",
+        "Correndo atrás do trem",
+        "Dormindo no rio"
+       ],
+       "answer": "Calmos, sem se impressionar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual palavra o homem de terno repete ao telefone?",
+       "options": [
+        "urgente",
+        "obrigado",
+        "talvez",
+        "amanhã"
+       ],
+       "answer": "urgente",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que nome Tobias dá ao recurso de dizer o contrário do que se quer dizer?",
+       "options": [],
+       "answer": "ironia",
+       "accept": [
+        "a ironia"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a crítica escondida no poema de Tobias?",
+       "options": [
+        "A pressa não adianta e só cansa as pessoas",
+        "Os trens deveriam ser mais rápidos",
+        "As vacas atrapalham a viagem",
+        "Ninguém deveria trabalhar"
+       ],
+       "answer": "A pressa não adianta e só cansa as pessoas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a última linha sugere sobre o homem de terno na volta?",
+       "options": [
+        "Que ele talvez tenha aprendido a olhar com calma",
+        "Que ele perdeu o emprego",
+        "Que ele estava dormindo",
+        "Que ele ficou com raiva de Tobias"
+       ],
+       "answer": "Que ele talvez tenha aprendido a olhar com calma",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O caderno aberto",
+     "synopsis": "Marina reaparece, encontra o caderno verde esquecido num banco e lê os poemas de Tobias, que precisa lidar com a vergonha de ser lido.",
+     "text": "Tobias tinha um hábito perigoso: esquecer coisas. Guarda-chuva, troco, a hora de voltar. Naquela sexta, esqueceu o caderno verde no banco da praça, debaixo do relógio errado.\nSó percebeu à noite, quando foi escrever. Revirou a mochila, a cama, a cozinha. Nada. Sentiu um frio na barriga que nunca tinha sentido nem em prova de matemática. Ali dentro estavam a pedra, a festa apagada, o trem, o poema torto da primeira noite. Estava ele inteiro, sem casca.\nSaiu correndo para a praça. O banco estava vazio.\nNa manhã seguinte, foi buscar o pão de cabeça baixa. Quando voltou, havia alguém sentado no degrau da casa da avó. Era Marina, com o caderno verde no colo.\n— Você deixou isso na praça — disse ela, estendendo o caderno. — Eu sabia que era seu, porque tem um poema sobre um menino que pisou no pé de alguém na quadrilha.\nTobias ficou vermelho do pescoço até as orelhas.\n— Você leu?\n— Li. Desculpa. Abri para ver de quem era e... continuei.\nEle pegou o caderno com as duas mãos, como quem recebe de volta um bicho machucado. Queria sumir. Queria que a ladeira inteira se abrisse e engolisse a casa da avó, a praça e o relógio junto.\n— É tudo bobagem — murmurou. — Não é poesia de verdade. Não rima, não é bonito.\nMarina franziu a testa, como se ele tivesse dito que o céu era verde.\n— Bobagem? O da pedra eu li umas quatro vezes. Eu passo por aquela pedra desde pequena e nunca tinha pensado nela. Hoje de manhã, desviei e lembrei de você.\nTobias não soube o que responder. Ninguém nunca tinha lembrado dele por causa de uma coisa que ele fez de propósito.\n— E o do trem me fez rir — continuou ela. — Meu pai é igualzinho ao homem do terno. Mas o de que eu mais gostei foi o primeiro. “Certo por dentro, torto por fora.” Eu também me sinto assim às vezes. Achei que só eu.\nOs dois ficaram em silêncio, sentados no degrau. A avó Dita apareceu na janela, viu a cena, fingiu que não viu e voltou para a cozinha cantarolando.\n— A escola daqui vai fazer um sarau no domingo que vem — disse Marina, levantando-se. — Qualquer pessoa pode ler. Você devia ir.\n— Ler na frente de todo mundo? Nem pensar.\n— Pensa — respondeu ela, já na rua. — Não precisa decidir agora.\nÀ noite, Tobias abriu o caderno e encontrou, na última página, uma frase com outra letra, redonda e caprichada: “Torto também é um jeito de ser inteiro. — M.”\nEle ficou olhando aquilo por muito tempo. Depois, embaixo, escreveu: “Vou pensar.”",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Resuma o capítulo em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde Tobias esquece o caderno?",
+       "options": [
+        "No banco da praça",
+        "No trem",
+        "Na padaria",
+        "Na igreja"
+       ],
+       "answer": "No banco da praça",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quem devolve o caderno a Tobias?",
+       "options": [],
+       "answer": "Marina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como Marina soube que o caderno era de Tobias?",
+       "options": [
+        "Por um poema sobre um menino que pisou no pé de alguém na quadrilha",
+        "Pelo nome escrito na capa",
+        "Porque a avó contou",
+        "Porque viu Tobias deixando o caderno"
+       ],
+       "answer": "Por um poema sobre um menino que pisou no pé de alguém na quadrilha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual poema Marina diz que leu umas quatro vezes?",
+       "options": [
+        "O da pedra",
+        "O do trem",
+        "O da festa",
+        "O do relógio"
+       ],
+       "answer": "O da pedra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que evento Marina convida Tobias a participar?",
+       "options": [
+        "Um sarau na escola",
+        "Uma nova festa junina",
+        "Um campeonato de futebol",
+        "Uma viagem de trem"
+       ],
+       "answer": "Um sarau na escola",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a comparação do caderno com “um bicho machucado” mostra?",
+       "options": [
+        "Que Tobias se sente frágil e exposto",
+        "Que o caderno estava rasgado",
+        "Que Tobias tem um animal de estimação",
+        "Que Marina estragou o caderno"
+       ],
+       "answer": "Que Tobias se sente frágil e exposto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a avó finge que não viu a cena?",
+       "options": [
+        "Para deixar os dois conversarem à vontade",
+        "Porque estava brava",
+        "Porque não enxerga bem",
+        "Porque não conhece Marina"
+       ],
+       "answer": "Para deixar os dois conversarem à vontade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O sarau",
+     "synopsis": "No sarau da escola, Tobias trava diante do público, mas encontra um jeito próprio de ler seus poemas.",
+     "text": "O domingo chegou rápido demais, como sempre chegam os dias de que a gente tem medo. O sarau acontecia no pátio da escola da cidade, com cadeiras de plástico, um microfone que chiava e um varal de poemas pendurados com pregadores de roupa.\nTobias passou a semana inteira dizendo que não ia. Na sexta, disse que talvez fosse só para assistir. No sábado, copiou três poemas a limpo numa folha separada, “só por garantia”. No domingo, a avó Dita apareceu na sala com a bolsa no braço.\n— Vamos, que eu quero lugar na frente.\nHavia umas quarenta pessoas. Uma menina leu um poema sobre o cachorro dela que fez metade do pátio chorar. Um senhor declamou versos longos, com rimas perfeitas, e foi muito aplaudido. Tobias afundava cada vez mais na cadeira. Os poemas dele não rimavam. Não eram longos. Eram sobre uma pedra, um trem e uma festa que deu errado.\n— Agora, o Tobias — anunciou a professora que organizava o sarau, lendo a lista. Marina tinha inscrito o nome dele.\nEle subiu os dois degraus do palco improvisado e, claro, tropeçou no fio do microfone. Algumas pessoas riram. O microfone chiou. Tobias abriu a folha e as letras pareceram dançar. A boca secou. Por alguns segundos, que pareceram uma hora, ele não disse nada.\nLá do fundo, alguém tossiu. Na primeira fila, a avó segurava a bolsa com força. Ao lado dela, Marina fazia um sinal com a mão, como quem diz “devagar”.\nEntão Tobias fez a única coisa que sabia fazer: foi sincero.\n— Eu ia ler um poema bonito — disse, e a voz saiu tremida no microfone. — Mas eu não sei escrever poema bonito. Eu escrevo poema torto. Então vou ler esse mesmo.\nE leu o poema da pedra. Leu devagar, repetindo a pedra como no caderno, sem pressa nenhuma, como o trem da quarta-feira. No meio, a voz parou de tremer. No final, o pátio ficou em silêncio. Era um silêncio diferente do de antes: não de constrangimento, mas de gente pensando.\nSeu Orlando, o padeiro, estava no fundo. Foi o primeiro a bater palmas. Depois vieram os outros.\nQuando desceu, Tobias tropeçou de novo, agora no degrau. Dessa vez, ninguém riu dele. Riram com ele, porque ele mesmo estava rindo.\n— Viu? — disse Marina. — Torto e inteiro.\nNa volta, a avó andava devagar, de braço dado com o neto.\n— Seu avô passou a vida inteira achando que precisava falar bonito para falar alguma coisa — disse ela. — Você acabou de mostrar que não precisa.\nTobias não respondeu. Mas, chegando em casa, escreveu no caderno uma linha só, com letras grandes: “Hoje eu cheguei na hora.”",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Resuma o capítulo em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, onde acontece o sarau?",
+       "options": [],
+       "answer": "no pátio da escola",
+       "accept": [
+        "pátio da escola",
+        "na escola",
+        "escola"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como os poemas estão expostos no sarau?",
+       "options": [
+        "Num varal, presos com pregadores de roupa",
+        "Numa parede de vidro",
+        "Num telão",
+        "Dentro de envelopes"
+       ],
+       "answer": "Num varal, presos com pregadores de roupa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem inscreveu o nome de Tobias no sarau?",
+       "options": [
+        "Marina",
+        "A avó Dita",
+        "Seu Orlando",
+        "A professora"
+       ],
+       "answer": "Marina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual poema Tobias decide ler?",
+       "options": [
+        "O poema da pedra",
+        "O poema do trem",
+        "O poema da festa",
+        "Um poema do avô"
+       ],
+       "answer": "O poema da pedra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quem é o primeiro a aplaudir Tobias?",
+       "options": [],
+       "answer": "seu Orlando",
+       "accept": [
+        "Orlando",
+        "o padeiro",
+        "padeiro"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a diferença entre o silêncio do começo e o do final da leitura?",
+       "options": [
+        "O primeiro é de constrangimento; o segundo é de gente pensando",
+        "Os dois são de tédio",
+        "O primeiro é de alegria; o segundo é de raiva",
+        "Não há diferença"
+       ],
+       "answer": "O primeiro é de constrangimento; o segundo é de gente pensando",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase “Hoje eu cheguei na hora” significa para Tobias?",
+       "options": [
+        "Que ele finalmente se sentiu no lugar certo, do seu jeito",
+        "Que ele comprou um relógio novo",
+        "Que ele não se atrasou para o ônibus",
+        "Que o relógio da praça foi consertado"
+       ],
+       "answer": "Que ele finalmente se sentiu no lugar certo, do seu jeito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O caminho de volta",
+     "synopsis": "No último dia de férias, Tobias descobre que a pedra foi retirada da ladeira e percebe o que ela deixou nele antes de voltar para casa.",
+     "text": "O último dia de férias amanheceu nublado. A mala de Tobias estava pronta desde a véspera, com o caderno verde guardado por cima de tudo, onde não podia ser esquecido. A avó Dita insistiu numa última tarefa:\n— Vai buscar o pão. Pela última vez neste ano.\nEle desceu a ladeira devagar, querendo guardar cada coisa: o muro com musgo, o cachorro que latia sem vontade, o cheiro de fermento vindo lá de baixo. Mas, no meio do caminho, parou de repente.\nA pedra não estava lá.\nNo lugar dela havia só um buraco raso na terra, com marcas de pneu de trator ao redor. Tobias ficou olhando aquele vazio como quem olha a cadeira de alguém que foi embora.\n— A prefeitura veio ontem à tarde — explicou seu Orlando, na porta da padaria. — Vão asfaltar a ladeira. Tiraram a pedra com uma máquina. Demorou mais de uma hora.\n— E levaram para onde?\n— Para a beira do rio, eu acho. Por quê? Você queria a pedra?\nTobias não sabia explicar. Durante um mês, tinha reclamado dela, tropeçado nela, escrito sobre ela, lido sobre ela em voz alta na frente de quarenta pessoas. Agora o caminho estava livre, e ele sentia falta do obstáculo.\nVoltou para casa com o pão debaixo do braço e um aperto estranho no peito. Contou à avó, que ouviu tudo mexendo o café, como sempre.\n— Pedra não some, Tobias — disse ela. — Só muda de lugar. Aquela agora mora no seu caderno. E no ouvido de muita gente que te ouviu no domingo.\nAntes de ir para a rodoviária, ele passou na praça. Marina estava lá, sentada no banco de sempre, debaixo do relógio errado. Ela entregou a ele um papel dobrado.\n— Meu número. Para você não perder de novo, como na festa.\n— Eu perco tudo — disse ele.\n— Eu sei. Por isso eu escrevi em três papéis. Os outros dois estão no seu bolso e na sua mala.\nTobias riu. Não perguntou como ela tinha colocado um papel na mala dele. Algumas coisas era melhor não entender.\nNo ônibus, com a cidade ficando pequena na janela, abriu o caderno verde numa página em branco. Pensou em tudo o que tinha mudado: a pedra tinha saído do caminho, mas tinha ficado nele; o menino torto continuava torto, mas agora sabia que isso também era uma forma de ser inteiro.\nEscreveu devagar:\n“Tiraram a pedra da ladeira.\nA ladeira ficou lisa, sem história.\nMas eu, que tropecei nela tantas vezes,\naprendi a andar de outro jeito.\nAgora eu levo a pedra comigo.\nEla não pesa. Ela me lembra.”\nLá longe, o relógio da praça bateu uma hora que não era a certa. Tobias nem conferiu o celular. Já não precisava.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Resuma o capítulo em 2 ou 3 frases.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a última tarefa que a avó pede a Tobias?",
+       "options": [
+        "Buscar o pão",
+        "Arrumar a mala",
+        "Consertar a gaveta",
+        "Ir à igreja"
+       ],
+       "answer": "Buscar o pão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Tobias encontra no lugar da pedra?",
+       "options": [
+        "Um buraco raso na terra",
+        "Uma pedra ainda maior",
+        "Um banco novo",
+        "Um bilhete de Marina"
+       ],
+       "answer": "Um buraco raso na terra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, para onde seu Orlando acha que levaram a pedra?",
+       "options": [],
+       "answer": "para a beira do rio",
+       "accept": [
+        "beira do rio",
+        "o rio",
+        "para o rio"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a prefeitura tirou a pedra?",
+       "options": [
+        "Porque vai asfaltar a ladeira",
+        "Porque Tobias pediu",
+        "Porque a pedra rachou",
+        "Para fazer uma estátua"
+       ],
+       "answer": "Porque vai asfaltar a ladeira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Marina entrega a Tobias?",
+       "options": [
+        "O número dela num papel",
+        "Um caderno novo",
+        "Um pedaço da pedra",
+        "Uma foto da festa"
+       ],
+       "answer": "O número dela num papel",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a avó quer dizer com “Pedra não some, só muda de lugar”?",
+       "options": [
+        "Que a pedra continua viva na memória e nos poemas de Tobias",
+        "Que a prefeitura vai devolver a pedra",
+        "Que há outras pedras na cidade",
+        "Que Tobias deve procurar a pedra no rio"
+       ],
+       "answer": "Que a pedra continua viva na memória e nos poemas de Tobias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Tobias não confere mais a hora no celular no final?",
+       "options": [
+        "Porque aceitou viver no próprio ritmo",
+        "Porque o celular quebrou",
+        "Porque estava dormindo",
+        "Porque o relógio foi consertado"
+       ],
+       "answer": "Porque aceitou viver no próprio ritmo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
