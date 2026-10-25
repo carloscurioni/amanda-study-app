@@ -121,10 +121,36 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
 | Exercícios extras | **+2 por acerto** (rodadas de 5, até 3 rodadas pagas por dia) |
 | Jogos da Oficina de palavras | **+3 por jogo** (até 5 por dia) |
 | 📜 Missões (3 do dia + 2 da semana) | fácil **+5–10**, média **+20–30**, difícil **+50–80**; missão de compra = valor gasto **+50** |
+| 🎡 Roleta diária | 1 giro grátis por dia (+1 de uma missão do dia e +1 de uma da semana; máx. 3/dia) — prêmios na tabela abaixo |
+| ⚡ Desafio da Lumi (a cada 2 h, máx. 5/dia) | **+10** por acerto; desafio de leitura (1 por dia) **+20**; errar não tira moedas |
 
 A tela inicial mostra o bônus pendente: *"🎁 +100 na sexta 30/10 se completar todos os dias (2 de 7 feitos)"*.
 
 **📜 Missões:** sorteadas por dia e por semana, para cada criança, e não mudam ao recarregar. Exemplos: "Conclua a tarefa de hoje", "Acerte 100% nos extras", "Use o ? para aprender algo novo", "Mantenha a sequência por 3 dias". Às vezes aparece "Compre 2 ovos hoje", que devolve o valor gasto + 50. Toque em **Resgatar** para receber. Os pais ligam ou desligam as missões (e as de compra) em Ajustes.
+
+**🎡 Roleta diária (Daily spin):** botão **🎡 Spin** na tela inicial, com selo quando há giro.
+- 1 giro grátis por dia (não acumula). Uma missão do dia (a mais difícil) e uma da semana podem dar **+1 spin 🎡** em vez de moedas. Máximo de 3 giros por dia.
+- Chances (constante `SPIN_ODDS` no código; o botão **Odds** mostra na própria roleta):
+
+| Fatia | Chance | Prêmio |
+|---|---|---|
+| 🪙 Moedas | 40% | 15 moedas (ajustável) |
+| 💰 Moedas | 22% | 50 moedas (ajustável) |
+| 🎩 Acessório da Lumi | 16% | chapéu, óculos, acessório ou asas/capa ainda não comprado |
+| 🎁 Surpresa da lojinha | 16% | cor, fundo, efeito ou adesivo ainda não comprado; vales só se os pais marcarem "can come from the spin" |
+| 🥚 Ovo do dia | 6% | alterna por dia entre ovo de amiguinho e ovo de mascote; choca na hora |
+
+- Se a criança já tem tudo de uma fatia de item, ganha moedas no valor do item mais barato dessa categoria.
+- O sorteio usa `crypto.getRandomValues` e é salvo antes da animação: recarregar a página mostra o mesmo prêmio, sem girar de novo.
+- Respeita "reduzir movimento" do aparelho e o 🔇. Pais: Ajustes → ligar/desligar e valores das fatias de moedas.
+
+**⚡ Desafio da Lumi (Lumi's challenge):** com o app aberto, a Lumi aparece a cada 2 horas (contando o tempo com o app fechado, cerca de 1 minuto depois de voltar): *"Hey! Want to earn 10 coins?…"*.
+- **Let's go! ⚡** abre 1 pergunta difícil e objetiva da semana (primeiro do banco de sugestões; o Claude só se o banco não tiver). Sem ? e sem 💡, uma tentativa. Acertou: +10. Errou: mostra a resposta com uma explicação curta, sem perder moedas.
+- **Later** adia 30 minutos. Ignorado por 2 minutos: some e conta como pulado.
+- Nunca interrompe o times tables, a correção por foto ou uma janela aberta. Máximo de 5 por dia.
+- Uma vez por dia, um desafio pode ser de **leitura**, com um trecho curto do texto do dia, valendo +20.
+- Pais: Ajustes → ligar/desligar, intervalo, valores e máximo por dia. Os desafios do dia (acertos, erros e pulados) aparecem em **Marking**.
+- É diferente do **🙋 I think I'm right**, que serve para contestar a correção.
 
 Lojinha (do mais barato ao mais caro em cada categoria):
 - 🥚 **Ovos:**
@@ -250,7 +276,7 @@ printf 'FAMILY_CODE=teste\nANTHROPIC_API_KEY=sk-ant-...\n' > .dev.vars   # não 
 npm run dev            # http://localhost:8787
 ```
 
-Para testar outra data, acrescente `?hoje=2026-10-30` ao endereço (simula uma sexta). Roteiros de teste manual: `docs/TESTES-MANUAIS.md`.
+Para testar outra data, acrescente `?hoje=2026-10-30` ao endereço (simula uma sexta). Para ver o ⚡ desafio da Lumi sem esperar 2 horas, acrescente `?dare=now` (ex.: `?hoje=2026-10-26&dare=now`); ele aparece em poucos segundos na tela inicial. Roteiros de teste manual: `docs/TESTES-MANUAIS.md`.
 
 **Banco de sugestões:** formato em `data/bank/FORMAT.md`; `npm run bank:todo` (o que falta), `bank:add lote.json`, `bank:check`, `bank:build` (publica em `public/bank`). Instruções do job: `docs/JOB-BANCO.md`.
 
