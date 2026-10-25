@@ -2382,15 +2382,10 @@ function weekSubjects() {
   return ids.length ? ids : null;
 }
 function extraGroups() {
-  const mine = mySubjects();   // todas as matérias da criança (as sem tema na semana fazem revisão do ano)
-  const has = id => mine.includes(id);
+  // um botão por tema (matéria) da criança, como nos temas da tarefa do dia — Year 1 a 13
+  const tp = (S.week ? S.week.topics : S.lastTopics) || {};
   const g = [{ id: 'mix', label: '🎲 Mixed', subjects: weekSubjects() }];
-  const used = new Set();
-  const add = (id, label, list) => { const subs = list.filter(has); if (subs.length) { g.push({ id, label, subjects: subs }); subs.forEach(x => used.add(x)); } };
-  add('math', '➗ Math', ['math', 'fmath']);
-  add('en', '🔤 English', ['en', 'en_spell', 'en_read', 'en_guided', 'en_lit']);
-  add('pt', '📝 Português', ['pt', 'pt_ort', 'pt_leit', 'pt_lit', 'pt_red']);
-  mine.filter(id => !used.has(id)).forEach(id => g.push({ id, label: `${SUBJ[id].icon} ${SUBJ[id].short}`, subjects: [id] }));
+  mySubjects().forEach(id => g.push({ id, label: `${SUBJ[id].icon} ${SUBJ[id].short}`, subjects: [id], topic: String(tp[id] || '').split(/\n/)[0].trim() }));
   return g;
 }
 // Assuntos de revisão quando a matéria não tem tópico na semana (gerador interno).
@@ -2425,7 +2420,7 @@ function openExtras() {
       <div class="extra-grid one"><button class="btn big gold" data-review>🧠 Practise what I got wrong</button></div></div>` : ''}
     ${ttOn() ? `<div class="xm-sec"><div class="extra-grid one"><button class="btn big" data-tt>⏱️ Times tables <span class="tiny muted">against the clock · ${ttSeconds()} s per question</span></button></div></div>` : ''}
     <div class="xm-sec"><b>🎲 Extra quiz</b> <span class="tiny muted">${weekSubjects() ? 'about this week’s topics — choose a subject' : 'choose a subject'}</span>
-      <div class="extra-grid">${extraGroups().map(g => `<button class="btn big" data-g="${g.id}">${g.label}</button>`).join('')}</div></div>
+      <div class="extra-grid">${extraGroups().map(g => `<button class="btn big" data-g="${g.id}">${g.label}${g.topic ? `<span class="tiny muted">${esc(g.topic.length > 48 ? g.topic.slice(0, 46) + '…' : g.topic)}</span>` : g.id !== 'mix' ? '<span class="tiny muted">this week’s school topic</span>' : ''}</button>`).join('')}</div></div>
     <div class="xm-sec"><div class="extra-grid one"><button class="btn big" data-workshop>✏️ Word workshop <span class="tiny muted">word search, rainbow words and more</span></button></div></div></div>`);
   $$('[data-g]', c).forEach(btn => btn.onclick = () => { closeModal(); startExtras(extraGroups().find(g => g.id === btn.dataset.g)); });
   $$('[data-book]', c).forEach(btn => btn.onclick = () => { closeModal(); startReading(btn.dataset.book); });

@@ -998,3 +998,7 @@ table.odds { width: 100%; border-collapse: collapse; } table.odds td, table.odds
 .form-grid .field .qstep { flex-direction: column; align-items: stretch; justify-content: space-between; gap: 4px; font-size: 13.5px; height: 100%; }
 .form-grid .field .qstep .qs-sel { width: 100%; min-height: 38px; padding: 7px 9px; font-size: 14px; }
 .form-grid > .notice { margin: 0; }
+
+/* ⭐ Extras: nome do tema em cima, assunto da semana embaixo */
+.extras-menu .extra-grid .btn.big { flex-direction: column; justify-content: center; gap: 2px; text-align: center; line-height: 1.2; }
+.extras-menu .extra-grid .btn.big .tiny { font-size: 11.5px; }
