@@ -539,7 +539,7 @@ async function handlePlanDay(env, b, ctx) {
   const n = Math.max(1, Math.min(40, Number(d.n)));
   const yn = yearNum(b);
   const read = d.read && READ_IDS.includes(d.read.subject) ? d.read : null;
-  const rn = read ? Math.max(1, Math.min(8, Number(read.n) || 6)) : 0;   // perguntas sobre o texto do dia
+  const rn = read ? Math.max(6, Math.min(8, Number(read.n) || 7)) : 0;   // perguntas sobre o texto do dia
   const per = Math.max(1, Math.min(6, Number(b.perSubject) || 2));          // perguntas por tema
   const readingOnly = !!(b.readingOnly && read);   // as matérias vêm do banco da semana (plan-pool); aqui só o capítulo
   const topics = (b.topics || []).slice(0, 30).map(t => `- ${t.subject}: ${String(t.summary || '').slice(0, 600)}`).join('\n');
@@ -634,7 +634,7 @@ async function handleReading(env, b, ctx) {
   const lang = b.lang === 'en' ? 'en' : 'pt';
   const n = yearNum(b);
   const LEVELS = { below: 'mais fácil (cerca de 1 ano abaixo do ano dele)', at: 'no nível do ano dele', above: 'acima (cerca de 1 ano acima)', way: 'bem acima (cerca de 2 anos acima)' };
-  const rn = Math.max(1, Math.min(8, Number(b.n) || 6));
+  const rn = Math.max(6, Math.min(8, Number(b.n) || 7));
   const prev = (Array.isArray(b.chapters) ? b.chapters : []).slice(-6).map((c, i) => `- ${String(c.title || '').slice(0, 120)}: ${String(c.summary || '').slice(0, 300)}`).join('\n');
   const content = [{ type: 'text', text: `Escreva o próximo capítulo de um livro original em ${LANG_NAME(lang)} para o estudante ler (${level(b)}).
 ${b.bookTitle && prev ? `É a continuação do livro "${String(b.bookTitle).slice(0, 120)}". Capítulos anteriores:\n${prev}\nMantenha personagens e mundo; avance a história e termine com um gancho.` : `Comece um livro novo${b.theme ? ` sobre: ${String(b.theme).slice(0, 200)}` : ''} (aventura, mistério, animais, amizade ou ciência — escolha algo envolvente para a idade). Este é o Capítulo 1.`}

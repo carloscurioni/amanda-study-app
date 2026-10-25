@@ -47,7 +47,7 @@ const DEFAULT_SETTINGS = {
   spinOn: true,           // 🎡 roleta diária
   spinCoins: { small: 15, big: 50 }, // valores das fatias de moedas da roleta
   perTheme: 2,            // perguntas de cada tema (matéria) por dia
-  readQ: { pt: 'auto', en: 'auto' }, // perguntas do texto do dia, por idioma: 'auto' (5–8 pelo tamanho/complexidade) ou 5–8
+  readQ: { pt: 'auto', en: 'auto' }, // perguntas do texto do dia, por idioma: 'auto' (6–8 pelo ano e nível de leitura) ou 6–8
   minPerDay: 3, maxPerDay: 30, countMode: 'auto', perSubject: 2,   // (antigos: não são mais usados)
   dailyReading: true,     // todo dia tem um texto (capítulo do "livro da semana") com resumo e perguntas
   readLevel: 'at',        // nível padrão do texto diário
@@ -376,6 +376,7 @@ function normalizeState(s) {
   const ss = (s && s.settings) || {};
   if (ss.perTheme == null && ss.perSubject) merged.settings.perTheme = ss.perSubject;   // quem já tinha "por matéria" herda
   merged.settings.readQ = Object.assign({ pt: 'auto', en: 'auto' }, ss.readQ || {});
+  ['pt', 'en'].forEach(l => { const v = merged.settings.readQ[l]; if (v !== 'auto' && Number(v) < 6) merged.settings.readQ[l] = 6; });   // mínimo agora é 6
   merged.settings.spinCoins = Object.assign({ small: 15, big: 50 }, ss.spinCoins || {});
   merged.spin = Object.assign({ days: {}, log: [], pending: null }, merged.spin || {});
   merged.dare = Object.assign({ lastAt: null, snoozeUntil: null, days: {} }, merged.dare || {});
@@ -2376,16 +2377,17 @@ function openDay(date) {
 }
 // Extras: o estudante escolhe a matéria, entre as que ele faz. Math e English sempre aparecem se fizerem parte.
 // Matérias com assunto nesta semana (os extras ficam nelas)
+const weekSkip = () => (S.week && S.week.skip) || [];   // 🚫 matérias sem aula nesta semana
 function weekSubjects() {
   const tp = (S.week ? S.week.topics : S.lastTopics) || {};
-  const ids = mySubjects().filter(id => String(tp[id] || '').trim());
+  const ids = mySubjects().filter(id => String(tp[id] || '').trim() && !weekSkip().includes(id));
   return ids.length ? ids : null;
 }
 function extraGroups() {
   // um botão por tema (matéria) da criança, como nos temas da tarefa do dia — Year 1 a 13
   const tp = (S.week ? S.week.topics : S.lastTopics) || {};
   const g = [{ id: 'mix', label: '🎲 Mixed', subjects: weekSubjects() }];
-  mySubjects().forEach(id => g.push({ id, label: `${SUBJ[id].icon} ${SUBJ[id].short}`, subjects: [id], topic: String(tp[id] || '').split(/\n/)[0].trim() }));
+  mySubjects().forEach(id => g.push({ id, label: `${SUBJ[id].icon} ${SUBJ[id].short}`, subjects: [id], topic: weekSkip().includes(id) ? '🚫 no class this week' : String(tp[id] || '').split(/\n/)[0].trim() }));
   return g;
 }
 // Assuntos de revisão quando a matéria não tem tópico na semana (gerador interno).
@@ -2597,17 +2599,17 @@ function renderSetup() {
 function cleanPassages(list) { return (list || []).filter(x => x && SUBJ[x.subject] && CYCLE.includes(x.day) && x.text).map(x => ({ subject: x.subject, day: x.day, title: String(x.title || ''), text: String(x.text) })); }
 function dayPassages(d) { if (d && d.passage) return [d.passage]; if (d && d.recPassages) return d.recPassages; return S.week && d ? (S.week.passages || []).filter(x => x.day === d.dow) : []; }
 const ctxTopics = c => c.rec && S.recovery ? S.recovery.topicsText : weekTopicsText(S.week);
-function resetDraft() { VIEW.wand = null; VIEW.draftOpt = null; VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.draftText = null; VIEW.draftSubj = null; VIEW.draftImages = null; VIEW.openSubj = null; VIEW.setupCycle = null; }
+function resetDraft() { VIEW.wand = null; VIEW.draftOpt = null; VIEW.draftSkip = null; VIEW.draftTopics = null; VIEW.draftCounts = null; VIEW.draftText = null; VIEW.draftSubj = null; VIEW.draftImages = null; VIEW.openSubj = null; VIEW.setupCycle = null; }
 // Quantidade de perguntas: só 3 variáveis — perguntas por tema, e perguntas do texto em português / em inglês.
 // Total do dia = por tema × temas + perguntas do texto do dia (pelo idioma do texto). Sem mínimo/máximo.
 const perTheme = () => clamp(Math.round(Number(S.settings.perTheme) || 2), 1, 6);
 // Perguntas do texto: 5 a 8, pelo tamanho e complexidade do texto (ano escolar e nível de leitura), ou fixo pelos pais.
 function readQAuto(level) {
   const n = Number(String(S.settings.year || 'Y5').slice(1)) || 5;
-  const base = n <= 2 ? 5 : n <= 6 ? 6 : n <= 9 ? 7 : 8;
-  return clamp(base + (['above', 'way'].includes(level || S.settings.readLevel) ? 1 : 0), 5, 8);
+  const base = n <= 2 ? 6 : n <= 6 ? 7 : 8;   // texto do dia: de 6 a 8 perguntas (pedido da Amanda, 25/10)
+  return clamp(base + (['above', 'way'].includes(level || S.settings.readLevel) ? 1 : 0), 6, 8);
 }
-const readQSet = lang => { const v = (S.settings.readQ || {})[lang === 'en' ? 'en' : 'pt']; return v === 'auto' || v == null ? 'auto' : clamp(Math.round(Number(v)) || 6, 5, 8); };
+const readQSet = lang => { const v = (S.settings.readQ || {})[lang === 'en' ? 'en' : 'pt']; return v === 'auto' || v == null ? 'auto' : clamp(Math.round(Number(v)) || 7, 6, 8); };
 const readQ = (lang, level) => { const v = readQSet(lang); return v === 'auto' ? readQAuto(level) : v; };
 function dayCounts(nThemes, readPlan) {
   const out = {};
@@ -2635,7 +2637,7 @@ function qTotText(nThemes, rp) {
 }
 function rqSelect(l, label, id = '') {
   const v = readQSet(l);
-  return `<label class="qstep"><span class="qs-lbl">${label}</span><select ${id ? `id="${id}"` : `data-rq="${l}"`} class="qs-sel"><option value="auto" ${v === 'auto' ? 'selected' : ''}>Automatic (${readQAuto()})</option>${[5, 6, 7, 8].map(n => `<option value="${n}" ${v === n ? 'selected' : ''}>${n} questions</option>`).join('')}</select></label>`;
+  return `<label class="qstep"><span class="qs-lbl">${label}</span><select ${id ? `id="${id}"` : `data-rq="${l}"`} class="qs-sel"><option value="auto" ${v === 'auto' ? 'selected' : ''}>Automatic (${readQAuto()})</option>${[6, 7, 8].map(n => `<option value="${n}" ${v === n ? 'selected' : ''}>${n} questions</option>`).join('')}</select></label>`;
 }
 function countsAndCycleHtml(editing, nThemes, withReading) {
   const t = today(); const w = S.week;
@@ -2645,7 +2647,7 @@ function countsAndCycleHtml(editing, nThemes, withReading) {
   const step = (k, label, val) => `<div class="qstep"><span class="qs-lbl">${label}</span><span class="qs-pm"><button type="button" data-qs="${k}" data-d="-1" aria-label="less">−</button><b>${val}</b><button type="button" data-qs="${k}" data-d="1" aria-label="more">+</button></span></div>`;
   const qbox = `<div class="qcount"><div class="row wrap"><b>Questions</b><span class="muted tiny grow" id="qtot">${qTotText(nThemes, rp)}</span></div>
     <div class="qsteps">${step('theme', '🗂️ Per topic', perTheme())}${langs.map(l => rqSelect(l, l === 'pt' ? '📖 Portuguese text' : '📖 English text')).join('')}</div>
-    ${langs.length ? `<div class="tiny muted">${langs.length > 1 ? 'Each day has a text, alternating Portuguese and English.' : `Each day has a text in ${langs[0] === 'pt' ? 'Portuguese' : 'English'}.`} 5 to 8 questions (1 summary + comprehension); on Automatic, the longer and harder the text, the more questions.</div>` : ''}</div>`;
+    ${langs.length ? `<div class="tiny muted">${langs.length > 1 ? 'Each day has a text, alternating Portuguese and English.' : `Each day has a text in ${langs[0] === 'pt' ? 'Portuguese' : 'English'}.`} 6 to 8 comprehension questions; on Automatic, the higher the school year and reading level, the more questions.</div>` : ''}</div>`;
   const cycle = editing
     ? `<div class="notice info">Editing the week ${fmtDM(w.start)}–${fmtDM(w.end)}. Only the days <b>not started yet</b> will be redone.</div>`
     : `<div class="radio-row">
@@ -2673,6 +2675,7 @@ function renderSetupAI() {
   const editing = setupCycleDefaults();
   if (!VIEW.draftSubj) VIEW.draftSubj = Object.assign({}, editing ? (w.subjectTexts || {}) : {});
   if (!VIEW.draftOpt) VIEW.draftOpt = Object.assign({}, editing ? (w.subjectOpts || {}) : (S.lastOpts || {}));
+  if (!VIEW.draftSkip) VIEW.draftSkip = Object.fromEntries((editing ? (w.skip || []) : []).map(id => [id, true]));
   if (!S.settings.year) { S.settings.year = 'Y5'; save(); }
   if (!VIEW.draftImages) VIEW.draftImages = [];
   if (!VIEW.openSubj) VIEW.openSubj = {};
@@ -2690,12 +2693,14 @@ function renderSetupAI() {
         ? `<div class="chips-lbl tiny muted">${sb.lang === 'pt' ? 'Nível do texto que a Lumi vai escrever:' : 'Level of the text Lumi will write:'}</div><div class="chips">${READ_LEVELS.map(([k, l]) => `<button type="button" class="chip ${opt === k ? 'on' : ''}" data-opt="${sb.id}" data-v="${k}">${l}</button>`).join('')}</div>`
         : '';
     const ph = isSpell(sb.id) ? SPELL_PH[sb.id][opt] : isRead(sb.id) ? (sb.lang === 'pt' ? `Opcional: ${sb.id === 'pt_lit' ? 'obra ou escola literária' : 'livro que está lendo'}, tema que você gosta…` : `Optional: ${sb.id === 'en_lit' ? 'set text, poem or play' : 'book you are reading'}, a topic you like…`) : (AI_PH[sb.id] || sb.ph);
-    const preview = txt.trim() ? txt.trim().slice(0, 50) + (txt.trim().length > 50 ? '…' : '') : (isSpell(sb.id) && opt === 'auto') ? '🎲 Lumi chooses' : (isRead(sb.id) && opt) ? READ_LEVELS.find(x => x[0] === opt)[1] : (sb.lang === 'pt' ? 'toque para escrever' : 'tap to write');
+    const skip = !!VIEW.draftSkip[sb.id];
+    const skipBtn = `<div class="chips"><button type="button" class="chip ${skip ? 'on' : ''}" data-skip="${sb.id}">🚫 ${sb.lang === 'pt' ? 'Sem aula nesta semana' : 'No class this week'}</button></div>`;
+    const preview = skip ? (sb.lang === 'pt' ? '🚫 sem aula nesta semana' : '🚫 no class this week') : txt.trim() ? txt.trim().slice(0, 50) + (txt.trim().length > 50 ? '…' : '') : (isSpell(sb.id) && opt === 'auto') ? '🎲 Lumi chooses' : (isRead(sb.id) && opt) ? READ_LEVELS.find(x => x[0] === opt)[1] : (sb.lang === 'pt' ? 'toque para escrever' : 'tap to write');
     return `<details class="subj-acc" style="--subj:${sb.color}" data-sid="${sb.id}" ${VIEW.openSubj[sb.id] ? 'open' : ''}>
       <summary><span class="sa-ic">${sb.icon}</span><span class="sa-name">${esc(sb.name)}</span>
         <span class="sa-prev">${esc(preview)}</span>
-        <span class="sa-st">${has ? '✅' : '＋'}</span></summary>
-      ${chips}<textarea data-subj="${sb.id}" placeholder="${esc(ph)}">${esc(txt)}</textarea></details>`;
+        <span class="sa-st">${skip ? '🚫' : has ? '✅' : '＋'}</span></summary>
+      ${skipBtn}${skip ? '' : `${chips}<textarea data-subj="${sb.id}" placeholder="${esc(ph)}">${esc(txt)}</textarea>`}</details>`;
   };
   el.innerHTML = `<div class="setup">
     <div class="ai-box">
@@ -2735,6 +2740,7 @@ function renderSetupAI() {
     VIEW.draftOpt[id] = (isRead(id) && VIEW.draftOpt[id] === v) ? '' : v;   // toque de novo desmarca o nível
     VIEW.openSubj[id] = true; renderSetupAI();
   });
+  $$('[data-skip]', el).forEach(btn => btn.onclick = () => { const id = btn.dataset.skip; VIEW.draftSkip[id] = !VIEW.draftSkip[id]; VIEW.openSubj[id] = true; renderSetupAI(); });
   $$('textarea[data-subj]', el).forEach(ta => {
     ta.oninput = () => { VIEW.draftSubj[ta.dataset.subj] = ta.value; };
     ta.onblur = () => { const d = ta.closest('details'); const has = subjFilled(ta.dataset.subj);
@@ -2766,6 +2772,7 @@ const SPELL_PH = {
 const isSpell = id => id === 'pt_ort' || id === 'en_spell';
 const isRead = id => ['pt_leit', 'en_read', 'en_guided', 'pt_lit', 'en_lit'].includes(id);
 function subjFilled(id) {
+  if ((VIEW.draftSkip || {})[id]) return false;   // 🚫 sem aula nesta semana
   const t = ((VIEW.draftSubj || {})[id] || '').trim(); const o = (VIEW.draftOpt || {})[id];
   return !!t || (isSpell(id) && o === 'auto') || (isRead(id) && !!o);
 }
@@ -2813,9 +2820,10 @@ const AI_PH = {
 };
 async function generateWithClaude(editing) {
   const subjTexts = {}; const subjOpts = {};
+  const skipList = Object.keys(VIEW.draftSkip || {}).filter(id => VIEW.draftSkip[id]);
   const mineList = mySubjects().map(id => SUBJ[id]);
   mineList.forEach(sb => {
-    const v = ((VIEW.draftSubj || {})[sb.id] || '').trim(); if (v) subjTexts[sb.id] = v;
+    const v = ((VIEW.draftSubj || {})[sb.id] || '').trim(); if (v && !(VIEW.draftSkip || {})[sb.id]) subjTexts[sb.id] = v;
     const o = (VIEW.draftOpt || {})[sb.id]; if (o) subjOpts[sb.id] = o;
   });
   const lineOf = {};
@@ -2867,7 +2875,7 @@ async function generateWithClaude(editing) {
   if (editing) {
     const w = S.week;
     const redoDows = redo.map(dowOf);
-    w.brief = text; w.subjectTexts = subjTexts; w.subjectOpts = subjOpts; w.summary = res.topics || []; w.topics = topics;
+    w.brief = text; w.subjectTexts = subjTexts; w.subjectOpts = subjOpts; w.summary = res.topics || []; w.topics = topics; w.skip = skipList;
     w.passages = (w.passages || []).filter(x => !redoDows.includes(x.day)).concat(cleanPassages(res.passages));
     w.imported = (w.imported || []).filter(q => !q.day || !redoDows.includes(q.day)).concat(valid);
     redo.forEach(date => { const d = w.days[date]; d.n = counts[d.dow]; d.required = (d.n || 0) > 0 && date >= from; d.printed = false; d.passageSeen = false; });
@@ -2876,7 +2884,7 @@ async function generateWithClaude(editing) {
   } else {
     if (S.week) archiveWeek(S.week);
     S.week = createWeek(start, from, topics, counts, valid.concat(S.pendingImport || []));
-    S.week.brief = text; S.week.subjectTexts = subjTexts; S.week.subjectOpts = subjOpts; S.week.summary = res.topics || []; S.week.ai = true;
+    S.week.brief = text; S.week.subjectTexts = subjTexts; S.week.subjectOpts = subjOpts; S.week.summary = res.topics || []; S.week.ai = true; S.week.skip = skipList;
     S.week.passages = cleanPassages(res.passages);
     S.pendingImport = [];
   }
@@ -3017,17 +3025,29 @@ async function planWithBank(base, info, lineOf) {
   base.days.forEach(d => {
     sharedMix.forEach(id => { for (let i = 0; i < (alloc[d.dow][id] || 0) && got[id].length; i++) questions.push(Object.assign(got[id].shift(), { day: d.dow })); });
   });
+  const shortReads = [];
   readSubs.forEach(sid => {
     const b = books[sid]; if (!b) return;
     base.days.filter(d => d.read && d.read.subject === sid).forEach((d, i) => {
       const c = b.chapters[i]; if (!c || !c.text) return;
       passages.push({ subject: sid, day: d.dow, title: `${b.title} — ${c.title}`, text: c.text });
-      const cq = c.questions || []; const rn = (d.read && d.read.n) || 3;
+      const cq = c.questions || []; const rn = (d.read && d.read.n) || readQ(SUBJ[sid].lang);
       const noSum = cq.filter(q => !isSummaryQ(q));   // livros antigos do banco ainda trazem "Resuma…": fica de fora
-      [...noSum.filter(q => q.type !== 'open'), ...noSum.filter(q => q.type === 'open')].slice(0, rn)   // compreensão primeiro, livre por último
-        .forEach(q => questions.push(Object.assign({}, q, { subject: sid, day: d.dow, bank: b.key ? `${b.key}#${i}` : undefined })));
+      const picked = [...noSum.filter(q => q.type !== 'open'), ...noSum.filter(q => q.type === 'open')].slice(0, rn);   // compreensão primeiro, livre por último
+      picked.forEach(q => questions.push(Object.assign({}, q, { subject: sid, day: d.dow, bank: b.key ? `${b.key}#${i}` : undefined })));
+      if (picked.length < rn) shortReads.push({ sid, day: d.dow, need: rn - picked.length, title: c.title, text: c.text, have: picked.map(q => q.q) });
     });
   });
+  // capítulo do banco com menos perguntas que o pedido (6 a 8): a Lumi completa sobre o próprio texto
+  if (shortReads.length && Server.ai) {
+    prog('Adding a few more questions about today’s text… 📖');
+    await Promise.all(shortReads.map(async g => { try {
+      const en = SUBJ[g.sid].lang === 'en';
+      const r = await apiCall('/api/more', { method: 'POST', timeout: 120000, data: { name: S.name, n: g.need, subjects: [g.sid], exclude: g.have,
+        topics: `${g.sid}: perguntas de compreensão sobre o texto abaixo ("mc" ou "short", começando com "${en ? 'In the chapter…' : 'No capítulo…'}"; nunca peça resumo).\nTexto "${g.title}":\n${String(g.text).slice(0, 2600)}` } });
+      validateImported(r).ok.filter(q => q.subject === g.sid).slice(0, g.need).forEach(q => questions.push(Object.assign(q, { day: g.day })));
+    } catch (e) { /* fica com as do livro */ } }));
+  }
   const pr = personalRes && !personalRes.error ? personalRes : null;
   const topics = sharedMix.concat(readSubs).map(id => ({ subject: id, summary: info.shared[id].row.topic }));
   return {
@@ -4745,7 +4765,7 @@ async function dareQuestion(reading) {
     const r = await apiCall('/api/ai/dare', { method: 'POST', timeout: 60000, data: { mode: 'reading', excerpt: ex, title: p.title, subject: p.subject, lang: SUBJ[p.subject].lang } });
     return Object.assign({ subject: p.subject, lang: SUBJ[p.subject].lang, excerpt: ex, title: p.title }, r);
   }
-  const subs = weekSubjects() || mySubjects();
+  const subs = weekSubjects() || mySubjects().filter(id => !weekSkip().includes(id));
   const fromBank = S.week && Object.values(S.week.days).some(d => (d.questions || []).some(q => q.bank));   // semana feita com o currículo: o banco tem os mesmos temas
   if (fromBank && Server.me && Server.childId) {
     try {
@@ -5055,7 +5075,7 @@ async function useWand(week) {
   const year = S.settings.year;
   if (!year) { say('First choose the <b>school year</b>. 🎓', { mood: 'think' }); return; }
   const w = clamp(week || planningAcademicWeek(), 1, 37);
-  const subs = mySubjects();
+  const subs = mySubjects().filter(id => !(VIEW.draftSkip || {})[id]);   // 🚫 sem aula nesta semana: a varinha não preenche
   const stop = showLoading(['Waving the magic wand… 🪄', 'Finding the week in the curriculum… 📚']);
   let rows = [];
   try { rows = await curriculumRows(year, w, subs); } catch (e) { stop(); say('I couldn’t open the curriculum just now. Please try again. 🙂', { mood: 'sad' }); return; }
@@ -5424,7 +5444,7 @@ function pSettings(box) {
       ${['pt', 'en'].map(l => { const vs = deviceVoices(l).sort((a, b) => voiceScore(b, l) - voiceScore(a, l)); const cur = (st.deviceVoice || {})[l] || '';
         return `<label class="field">Device voice in ${l === 'pt' ? 'Portuguese' : 'English'}<span class="row"><select id="s-dv-${l}" class="grow"><option value="">Automatic (best: ${esc((vs[0] || {}).name || '—')})</option>${vs.map(v => `<option value="${esc(v.voiceURI)}" ${cur === v.voiceURI ? 'selected' : ''}>${esc(v.name)}${voiceScore(v, l) >= 60 ? ' ⭐' : ''}</option>`).join('')}</select><button type="button" class="btn small" data-vtest="${l}">▶</button></span></label>`; }).join('')}
       ${Server.me ? '' : '<label class="field">New parents’ PIN<input id="s-pin" inputmode="numeric" maxlength="8" placeholder="(keep current)"></label>'}</div>
-      <p class="tiny muted" style="margin:6px 0 0">Daily total = questions per topic × the week’s subjects + questions on today’s text. Each day has one text (alternating Portuguese and English); the Extra reading in Extras comes in the other language. Each text has 5 to 8 comprehension questions; on automatic, it depends on the length and complexity of the text (school year and reading level).</p></div>
+      <p class="tiny muted" style="margin:6px 0 0">Daily total = questions per topic × the week’s subjects + questions on today’s text. Each day has one text (alternating Portuguese and English); the Extra reading in Extras comes in the other language. Each text has 6 to 8 comprehension questions; on automatic, it depends on the length and complexity of the text (school year and reading level).</p></div>
     ${calendarSettingsHtml(st)}
     <button class="btn primary" id="s-save">Save settings</button>
     <button class="btn" id="s-tour">Replay Lumi’s tutorial</button>
@@ -5729,8 +5749,19 @@ async function boot() {
   }
   afterLogin();
 }
+// Uma vez: a semana em andamento passa a ter de 6 a 8 perguntas no texto do dia (antes podia ter 3 a 5).
+async function migrateReadQ6() {
+  if (S.migReadQ6 || !S.week || !Server.ai) return;
+  const t = today();
+  const short = Object.values(S.week.days).some(d => d.required && d.date >= t && d.status !== 'done' && !dayStarted(d) &&
+    dayPassages(d).some(x => (d.questions || []).filter(q => q.subject === x.subject).length < 6));
+  S.migReadQ6 = true; save();
+  if (!short) return;
+  try { const r = await applyCountsToWeek(); if (r && r.days) toast('📖 Today’s text now has 6 to 8 questions in the days not started yet.'); } catch (e) { console.warn(e); }
+}
 function startApp() {
   applyTheme(); renderMascotMini(); renderCoins(); dareInit();
+  setTimeout(migrateReadQ6, 4000);
   if (!S.name) { show('welcome'); return; }
   show('home');
   if (!S.tourDone) setTimeout(runTour, 400);

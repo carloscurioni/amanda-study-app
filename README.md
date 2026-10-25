@@ -72,11 +72,12 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
    - **Leitura/Reading:** ela escolhe o nível do texto (⬇️ mais fácil, 🎯 no nível dela, ⬆️ acima ou 🚀 bem acima). A Lumi **escreve o texto** e as perguntas são sobre ele. O texto abre antes das perguntas e sai impresso no topo da folha.
    - Também pode mandar **foto do worksheet ou da agenda**. O Claude cria as perguntas de sábado a sexta no nível do ano escolhido.
 2. **Todo dia** ela abre a tarefa:
-   - **Quantidade — só 3 ajustes** (Minha semana e Ajustes dos pais): **perguntas por tema** (padrão 2, de 1 a 6), **perguntas do texto em português** e **do texto em inglês** (5 a 8, ou automático). Total do dia = por tema × matérias + perguntas do texto do dia. Todo dia tem tarefa; não há mais mínimo/máximo por dia.
+   - **Quantidade — só 3 ajustes** (Minha semana e Ajustes dos pais): **perguntas por tema** (padrão 2, de 1 a 6), **perguntas do texto em português** e **do texto em inglês** (6 a 8, ou automático: 6 no Y1–Y2, 7 no Y3–Y6, 8 do Y7 em diante; +1 se o nível de leitura for acima). Total do dia = por tema × matérias + perguntas do texto do dia. Todo dia tem tarefa; não há mais mínimo/máximo por dia.
      - **Automático do texto:** Y1–Y2 5, Y3–Y6 6, Y7–Y9 7, IGCSE/IB 8 perguntas; +1 com nível "acima"/"bem acima" (até 8).
    - **📖 Leitura diária:** cada dia começa com um capítulo do **livro da semana**, escrito pela Lumi.
      - **Cada dia tem um texto**, em português ou em inglês: com as duas línguas, os dias alternam (sábado português, domingo inglês…), e a história continua de um dia para o outro.
-     - Depois do capítulo: 1 **resumo** e as perguntas de compreensão (5 a 8 no total).
+     - Depois do capítulo: de 6 a 8 perguntas de compreensão (sem resumo).
+   - **🚫 Sem aula nesta semana:** em Minha semana, cada matéria tem esse botão; a matéria fica fora das perguntas da semana, do "Mixed" dos extras e do ⚡ desafio, e volta na semana seguinte.
      - **📖 Texto extra** (nos Extras): vem no idioma que não foi o do texto do dia.
      - O botão **🔊** lê o capítulo em voz alta, e **🖨️ Imprimir** (no topo do texto) imprime só a leitura em A4.
    - **🗂️ Temas do dia:** ao abrir o dia aparece um cartão por tema (📖 leitura primeiro, depois cada matéria), com o assunto da semana, quantas perguntas tem e o progresso (✅ quando termina).
@@ -100,7 +101,7 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
    - **No papel:** em **📄 Corrigir folha**, ela tira uma foto e o Claude lê a letra dela e corrige tudo (livres inclusive). Ou ela corrige sozinha com o gabarito, marcando ✓/✗.
    - Os pais veem todas as livres com o comentário da Lumi e podem confirmar ou mudar.
 5. **Sexta** é o dia de entregar a semana. **⭐ Extras** dão moedas a mais:
-   - **📖 Livro extra:** o próximo capítulo do livro dela (em português ou inglês), com resumo e perguntas;
+   - **📖 Livro extra:** o próximo capítulo do livro dela (em português ou inglês), com perguntas de compreensão;
    - **🧠 Reforço:** treinar o que errou;
    - **🎲 Quiz extra:** por matéria, ou misturado;
    - **✏️ Oficina de palavras:** as palavras de Ortografia/Spelling da semana e as que ela errou (🔥).
