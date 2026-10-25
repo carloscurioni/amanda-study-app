@@ -266,6 +266,17 @@ export class Directory extends DurableObject {
     this.sql.exec('DELETE FROM families WHERE id = ?', familyId);
     return { childIds: kids };
   }
+  // Tira um responsável da família (ex.: entrou pelo link de convite por engano). Não remove a si mesmo nem o administrador.
+  removeParent(familyId, parentId, byId) {
+    const p = this.one('SELECT id, role FROM parents WHERE id = ? AND family_id = ?', String(parentId), familyId);
+    if (!p) throw new AppError(404, 'Parent not found in this family.');
+    if (p.id === byId) throw new AppError(400, 'You can’t remove yourself. Ask another parent to do it.');
+    if (p.role === 'admin') throw new AppError(400, 'The administrator can’t be removed.');
+    this.sql.exec('DELETE FROM sessions WHERE parent_id = ?', p.id);
+    this.sql.exec("DELETE FROM invites WHERE parent_id = ? AND kind = 'reset'", p.id);
+    this.sql.exec('DELETE FROM parents WHERE id = ?', p.id);
+    return { ok: true };
+  }
   familyParents(familyId) { return this.all('SELECT id, name, email, role, last_login FROM parents WHERE family_id = ? ORDER BY created', familyId); }
 
   /* ---------- uso do Claude (controle de custo) ---------- */

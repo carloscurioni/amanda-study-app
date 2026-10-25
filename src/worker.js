@@ -924,6 +924,12 @@ async function api(req, env, url) {
     await childStore(env, chM[1]).reset();
     return json({ ok: true });
   }
+  const paM = path.match(/^\/api\/family\/parents\/([A-Za-z0-9_-]+)$/);
+  if (paM && m === 'DELETE') {
+    const b = await body(req, 5_000);
+    if (!(await D.verifyPassword(me.parent.id, b.password)).ok) throw new HttpError(401, 'Incorrect password.');
+    return json(await D.removeParent(familyId, paM[1], me.parent.id));
+  }
   if (path === '/api/family/invite-parent' && m === 'POST') {
     const r = await D.createInvite(me.parent.id, { kind: 'join', familyId });
     return json({ link: `${url.origin}/?convite=${r.token}`, expires: r.expires });

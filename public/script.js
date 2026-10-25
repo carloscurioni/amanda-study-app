@@ -5341,7 +5341,7 @@ async function pFamily(box) {
         <div class="row wrap"><button class="btn small primary" data-save>Save</button><button class="btn small danger" data-del>Delete profile and data</button></div></details>`; }).join('')}</div>
       <button class="btn small" id="f-add">＋ Add a child</button></div>
     <div class="card"><b>👨‍👩‍👧 Parents</b>
-      ${fam.parents.map(p => `<div class="row tiny"><span class="grow"><b>${esc(p.name)}</b> · ${esc(p.email)}${p.role === 'admin' ? ' · admin' : ''}</span><span class="muted">${p.last_login ? 'last login ' + new Date(p.last_login).toLocaleDateString('en-GB') : ''}</span></div>`).join('')}
+      ${fam.parents.map(p => `<div class="row tiny"><span class="grow"><b>${esc(p.name)}</b> · ${esc(p.email)}${p.role === 'admin' ? ' · admin' : ''}${p.id === me.parent.id ? ' · you' : ''}</span><span class="muted">${p.last_login ? 'last login ' + new Date(p.last_login).toLocaleDateString('en-GB') : ''}</span>${p.id !== me.parent.id && p.role !== 'admin' ? `<button class="btn small danger" data-rmp="${esc(p.id)}">Remove</button>` : ''}</div>`).join('')}
       <button class="btn small" id="f-invite" style="margin-top:6px">✉️ Invite another parent</button><div id="f-invite-out"></div></div>
     <div class="card"><b>🔑 My password</b><div class="form-grid" style="margin-top:6px">
       <label class="field">Current password<input id="f-old" type="password" autocomplete="current-password"></label>
@@ -5372,6 +5372,12 @@ async function pFamily(box) {
         if (kid.id === Server.childId) { Server.childId = null; rememberChild(''); await refreshMe(); afterLogin(); return; }
         pFamily(box); } catch (e) { toast(e.message); }
     };
+  });
+  $$('[data-rmp]', box).forEach(b => b.onclick = async () => {
+    const p = fam.parents.find(x => x.id === b.dataset.rmp); if (!p) return;
+    if (!(await confirmBox(`Remove ${esc(p.name)}?`, `${esc(p.email)} will no longer be able to log in to the ${esc(me.family.name)} family. The children and their data are not affected.`, 'Continue', true))) return;
+    const pw = await promptPassword(); if (!pw) return;
+    try { await apiCall(`/api/family/parents/${p.id}`, { method: 'DELETE', data: { password: pw } }); toast('Parent removed ✔'); pFamily(box); } catch (e) { toast(e.message); }
   });
   $('#f-add').onclick = () => { VIEW.parentsUnlocked = false; VIEW.auth = { mode: 'addchild' }; show('login'); };
   $('#f-invite').onclick = async () => {
