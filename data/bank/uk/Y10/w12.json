@@ -948,6 +948,1034 @@
      "errors": []
     }
    ]
+  },
+  "comp": {
+   "topic": "Encryption: symmetric and asymmetric",
+   "questions": [
+    {
+     "id": "r13g878n1um770d",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is the main purpose of encryption?",
+     "options": [
+      "To make data unreadable to anyone without the key",
+      "To make files smaller",
+      "To speed up a network",
+      "To delete viruses"
+     ],
+     "answer": "To make data unreadable to anyone without the key",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1humd466eciji",
+     "subject": "comp",
+     "type": "short",
+     "q": "What is the name for data before it has been encrypted?",
+     "options": [],
+     "answer": "plaintext",
+     "accept": [
+      "plain text"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1voxpgk1rniips",
+     "subject": "comp",
+     "type": "short",
+     "q": "What is the name for data after it has been encrypted?",
+     "options": [],
+     "answer": "ciphertext",
+     "accept": [
+      "cipher text"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbu5q5tico52r",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In symmetric encryption, how many keys are used to encrypt and decrypt a message?",
+     "options": [
+      "One shared key",
+      "Two different keys",
+      "No keys",
+      "One key per letter"
+     ],
+     "answer": "One shared key",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1us32661r7wt3x",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In asymmetric encryption, which key is used to encrypt a message sent to Priya?",
+     "options": [
+      "Priya's public key",
+      "Priya's private key",
+      "The sender's private key",
+      "A shared secret key"
+     ],
+     "answer": "Priya's public key",
+     "accept": [],
+     "hint": "Think about which key anyone is allowed to know.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gbzqc51iiqxh9",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In asymmetric encryption, which key must be kept secret by its owner?",
+     "options": [
+      "The private key",
+      "The public key",
+      "Both keys",
+      "Neither key"
+     ],
+     "answer": "The private key",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkpevlw1h0w3th",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which statement about encryption is true?",
+     "options": [
+      "It does not stop data being intercepted, but makes it meaningless",
+      "It stops data from ever being intercepted",
+      "It only works on wired networks",
+      "It removes the need for passwords"
+     ],
+     "answer": "It does not stop data being intercepted, but makes it meaningless",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk097gi5xpsmb",
+     "subject": "comp",
+     "type": "num",
+     "q": "A Caesar cipher shifts each letter 3 places forward in the alphabet. A becomes D. Which position in the alphabet (1–26) does the letter W move to?",
+     "options": [],
+     "answer": "26",
+     "accept": [],
+     "hint": "W is the 23rd letter.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x09hj61hwz3bb",
+     "subject": "comp",
+     "type": "short",
+     "q": "Using a Caesar cipher with a shift of 1 (A becomes B), encrypt the word CAT.",
+     "options": [],
+     "answer": "DBU",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xbuf6hvqhor",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is a key disadvantage of symmetric encryption?",
+     "options": [
+      "The key must be shared securely with the receiver",
+      "It is too slow to use at all",
+      "It needs two keys",
+      "It cannot encrypt text"
+     ],
+     "answer": "The key must be shared securely with the receiver",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6hkx3v1cq5ogz",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Why is asymmetric encryption useful for communicating with a website you have never visited before?",
+     "options": [
+      "You can use its public key without first sharing a secret",
+      "It does not need any keys",
+      "It is always faster than symmetric",
+      "It hides the website's address"
+     ],
+     "answer": "You can use its public key without first sharing a secret",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rja15pw1q5qvex",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which of these is a common reason that symmetric encryption is still widely used?",
+     "options": [
+      "It is faster for encrypting large amounts of data",
+      "It uses a public key",
+      "It needs no key at all",
+      "It cannot be broken by any method"
+     ],
+     "answer": "It is faster for encrypting large amounts of data",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15htxcj1u371q6",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which process turns ciphertext back into plaintext?",
+     "options": [
+      "Decryption",
+      "Compression",
+      "Validation",
+      "Encryption"
+     ],
+     "answer": "Decryption",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv6qc9ytowlvy",
+     "subject": "comp",
+     "type": "short",
+     "q": "A Caesar cipher with a shift of 2 gives the ciphertext JGNNQ. What is the plaintext?",
+     "options": [],
+     "answer": "HELLO",
+     "accept": [
+      "hello"
+     ],
+     "hint": "Move each letter 2 places back.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rda4t7tj8g9j1",
+     "subject": "comp",
+     "type": "open",
+     "q": "State two differences between symmetric and asymmetric encryption.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the number of keys and how they are shared.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1invhg91rtmyga",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain why a message encrypted with someone's public key can be safely sent over the internet.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Who holds the key needed to decrypt it?",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "econ": {
+   "topic": "The market economic system: advantages and disadvantages",
+   "questions": [
+    {
+     "id": "r15vua5x1s8si5p",
+     "subject": "econ",
+     "type": "mc",
+     "q": "In a market economic system, who mainly decides what is produced?",
+     "options": [
+      "Consumers and private firms",
+      "The government",
+      "Trade unions",
+      "Banks only"
+     ],
+     "answer": "Consumers and private firms",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rifjf1ts1f9h",
+     "subject": "econ",
+     "type": "mc",
+     "q": "In a market economy, resources are allocated mainly through…",
+     "options": [
+      "the price mechanism",
+      "government planning",
+      "rationing",
+      "tradition"
+     ],
+     "answer": "the price mechanism",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19vn89jhrsksb",
+     "subject": "econ",
+     "type": "short",
+     "q": "What term describes the idea that consumers' spending decisions determine what firms produce?",
+     "options": [],
+     "answer": "consumer sovereignty",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5lueoz1nh9wo3",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What motivates private firms in a market economy to produce goods and services?",
+     "options": [
+      "The profit motive",
+      "Government orders",
+      "Fixed quotas",
+      "Free resources"
+     ],
+     "answer": "The profit motive",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p4h4tga85jrt",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Who owns most resources in a market economy?",
+     "options": [
+      "Private individuals and firms",
+      "The state",
+      "Charities",
+      "Foreign governments"
+     ],
+     "answer": "Private individuals and firms",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru9e95ymtb58c",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which is an advantage of competition in a market economy?",
+     "options": [
+      "Lower prices and better quality",
+      "Guaranteed jobs for everyone",
+      "Equal incomes",
+      "No advertising"
+     ],
+     "answer": "Lower prices and better quality",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12a3z5l12ta7rj",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which is a disadvantage of a market economy?",
+     "options": [
+      "Merit goods such as education may be under-provided",
+      "There is no choice for consumers",
+      "Firms have no incentive to innovate",
+      "Prices never change"
+     ],
+     "answer": "Merit goods such as education may be under-provided",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd63a1y179efd0",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Why might public goods such as street lighting not be provided in a pure market economy?",
+     "options": [
+      "People can benefit without paying, so firms cannot make a profit",
+      "They are too cheap to make",
+      "Consumers do not want them",
+      "They are illegal to sell"
+     ],
+     "answer": "People can benefit without paying, so firms cannot make a profit",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rga2eh3autfto",
+     "subject": "econ",
+     "type": "mc",
+     "q": "If demand for a product rises in a market economy, what usually happens?",
+     "options": [
+      "Its price rises and firms produce more",
+      "Its price falls",
+      "The government bans it",
+      "Firms stop producing it"
+     ],
+     "answer": "Its price rises and firms produce more",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdcu0ulmjf1jk",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which problem may occur when one firm controls the whole market?",
+     "options": [
+      "Higher prices and less choice",
+      "More competition",
+      "Lower profits",
+      "Better quality for all"
+     ],
+     "answer": "Higher prices and less choice",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rim6b3e1cgpooj",
+     "subject": "econ",
+     "type": "short",
+     "q": "What word describes the large gap between rich and poor that can develop in a market economy?",
+     "options": [],
+     "answer": "inequality",
+     "accept": [
+      "income inequality",
+      "inequality of income"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18cf5sk12l8uoq",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of these is an example of a negative externality that a market economy may ignore?",
+     "options": [
+      "Pollution from a factory",
+      "A firm's profit",
+      "Wages paid to workers",
+      "A new shop opening"
+     ],
+     "answer": "Pollution from a factory",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t5c40yqg7z3o",
+     "subject": "econ",
+     "type": "mc",
+     "q": "How does the profit motive encourage efficiency?",
+     "options": [
+      "Firms cut waste to lower costs and raise profit",
+      "Firms receive subsidies",
+      "Prices are fixed by law",
+      "Firms must hire more staff"
+     ],
+     "answer": "Firms cut waste to lower costs and raise profit",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wssmwhnihiie",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which type of economic system combines a market sector with a significant public sector?",
+     "options": [
+      "Mixed economy",
+      "Planned economy",
+      "Traditional economy",
+      "Barter economy"
+     ],
+     "answer": "Mixed economy",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp98jaoa0hrb4",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain two advantages of the market economic system.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about choice, efficiency and innovation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5v594q9ly6yz",
+     "subject": "econ",
+     "type": "open",
+     "q": "Discuss whether a market economic system is the best way to allocate resources.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh benefits such as efficiency against problems such as inequality and market failure, then conclude.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Vocabulary range: precise and ambitious word choice",
+   "questions": [
+    {
+     "id": "r13wfjapyoqnd9",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is the most precise replacement for 'walked' in: 'The exhausted hiker walked up the final hill'?",
+     "options": [
+      "trudged",
+      "went",
+      "moved",
+      "did"
+     ],
+     "answer": "trudged",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g32jsg1ksk4zn",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word best replaces 'nice' to describe a view from a mountain top?",
+     "options": [
+      "breathtaking",
+      "good",
+      "okay",
+      "fine"
+     ],
+     "answer": "breathtaking",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3mtqgw1qqiixb",
+     "subject": "en",
+     "type": "short",
+     "q": "What term describes an overused phrase that has lost its impact, such as 'as cold as ice'?",
+     "options": [],
+     "answer": "cliché",
+     "accept": [
+      "cliche",
+      "a cliché",
+      "a cliche"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17wdbkf68qmc",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which of these is a cliché?",
+     "options": [
+      "at the end of the day",
+      "the rain needled the windows",
+      "a brittle silence",
+      "the city exhaled"
+     ],
+     "answer": "at the end of the day",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx9ffndd9ksx4",
+     "subject": "en",
+     "type": "short",
+     "q": "What term describes the level of formality in a piece of writing?",
+     "options": [],
+     "answer": "register",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r50vzqkzvn97e",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word suits a formal letter to a head teacher best?",
+     "options": [
+      "concerned",
+      "gutted",
+      "fed up",
+      "miffed"
+     ],
+     "answer": "concerned",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn7wn801fa91wi",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence uses the most precise vocabulary?",
+     "options": [
+      "The kettle shrieked as steam billowed across the kitchen.",
+      "The kettle made a noise and there was steam.",
+      "The kettle was loud and stuff happened.",
+      "The kettle did a thing in the kitchen."
+     ],
+     "answer": "The kettle shrieked as steam billowed across the kitchen.",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cnzvcl1dtxjg6",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is the most precise replacement for 'said' when someone speaks very quietly?",
+     "options": [
+      "murmured",
+      "bellowed",
+      "stated",
+      "announced"
+     ],
+     "answer": "murmured",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10xj3hu1o39gng",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which option avoids repetition best? 'The storm was big. The big waves crashed onto the big rocks.'",
+     "options": [
+      "The storm was ferocious. Towering waves crashed onto the jagged rocks.",
+      "The storm was big. Big waves crashed onto big rocks.",
+      "The storm was very big. The waves were big too.",
+      "It was a big storm with big waves and rocks."
+     ],
+     "answer": "The storm was ferocious. Towering waves crashed onto the jagged rocks.",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhbbf3tx3pu4",
+     "subject": "en",
+     "type": "mc",
+     "q": "'The wind howled.' What makes 'howled' an effective verb choice?",
+     "options": [
+      "It suggests the wind is wild, like an animal",
+      "It is a long word",
+      "It is formal",
+      "It avoids using adjectives entirely"
+     ],
+     "answer": "It suggests the wind is wild, like an animal",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwzb542hjwyzm",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is the most ambitious yet accurate word for a very happy crowd?",
+     "options": [
+      "jubilant",
+      "happy",
+      "glad",
+      "pleased"
+     ],
+     "answer": "jubilant",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hr0xaf1xb5yxo",
+     "subject": "en",
+     "type": "mc",
+     "q": "Why can using too many ambitious words in one sentence weaken writing?",
+     "options": [
+      "It can sound forced and confuse the reader",
+      "Ambitious words are always wrong",
+      "Examiners dislike long words",
+      "It makes the sentence too short"
+     ],
+     "answer": "It can sound forced and confuse the reader",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru976jdpqxeyn",
+     "subject": "en",
+     "type": "short",
+     "q": "Give one precise synonym for 'scared' that suggests extreme fear.",
+     "options": [],
+     "answer": "terrified",
+     "accept": [
+      "petrified",
+      "horrified",
+      "panic-stricken",
+      "terror-stricken"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra1qtm5vrgui3",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word fits an informal text message to a friend best?",
+     "options": [
+      "awesome",
+      "commendable",
+      "exemplary",
+      "satisfactory"
+     ],
+     "answer": "awesome",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmd10771jqmhnn",
+     "subject": "en",
+     "type": "open",
+     "q": "Rewrite this sentence using more precise and ambitious vocabulary: 'The old house was really scary and the door made a weird noise.'",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Replace vague words like 'really', 'scary' and 'weird' with precise choices.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxu1oi0tk1ypu",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain why a writer might choose 'crept' rather than 'walked' in a tense scene.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what the word suggests about movement and mood.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_lit": {
+   "topic": "Short stories: structure and endings — 'The Man Who Wouldn't Get Up' (Lodge)",
+   "questions": [
+    {
+     "id": "r1a1p1a7flop83",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is the climax of a short story?",
+     "options": [
+      "The point of greatest tension or turning point",
+      "The opening description",
+      "The list of characters",
+      "The title"
+     ],
+     "answer": "The point of greatest tension or turning point",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcdd2xo5v186k",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is satire?",
+     "options": [
+      "Writing that uses humour or exaggeration to criticise people or society",
+      "A true account of the writer's life",
+      "A poem with a fixed rhyme scheme",
+      "A story set in the future"
+     ],
+     "answer": "Writing that uses humour or exaggeration to criticise people or society",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1codvw4rzmxmp",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "What term describes an ending that is left unresolved, letting the reader decide what happens?",
+     "options": [],
+     "answer": "open ending",
+     "accept": [
+      "an open ending",
+      "ambiguous ending",
+      "open-ended"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzzsaxd1cbutwm",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is a 'twist' ending?",
+     "options": [
+      "An unexpected ending that changes how we see the story",
+      "An ending that repeats the opening",
+      "An ending with a moral",
+      "An ending told in the future tense"
+     ],
+     "answer": "An unexpected ending that changes how we see the story",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1exsr3n1y0mmo1",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "What term describes a story that begins and ends in the same place or situation?",
+     "options": [],
+     "answer": "cyclical structure",
+     "accept": [
+      "cyclical",
+      "circular structure",
+      "circular"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ravmwi99ynnn2",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Why do short stories often focus on a single situation or moment?",
+     "options": [
+      "Their length means they must be concise and focused",
+      "They are written for children",
+      "They cannot have dialogue",
+      "They always use one character"
+     ],
+     "answer": "Their length means they must be concise and focused",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r37wwn01unfobe",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Where is the 'exposition' usually found in a short story?",
+     "options": [
+      "At the beginning, introducing characters and setting",
+      "At the climax",
+      "In the final line",
+      "Only in the title"
+     ],
+     "answer": "At the beginning, introducing characters and setting",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ropk7fp11ozl9t",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In satire, what is usually exaggerated?",
+     "options": [
+      "Human foolishness or the habits of society",
+      "The setting's weather",
+      "The number of chapters",
+      "The author's biography"
+     ],
+     "answer": "Human foolishness or the habits of society",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1utdjc8d48zy3",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "What term describes a story's structure of exposition, rising action, climax, falling action and resolution?",
+     "options": [],
+     "answer": "narrative arc",
+     "accept": [
+      "dramatic arc",
+      "story arc",
+      "a narrative arc"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lhgpwfka1r0m",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What does 'foreshadowing' mean?",
+     "options": [
+      "Hints early in the story about what will happen later",
+      "A flashback to the past",
+      "A description of shadows",
+      "The final line of a story"
+     ],
+     "answer": "Hints early in the story about what will happen later",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlz5fuq9sc4um",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is the effect of an absurd premise in a satirical short story?",
+     "options": [
+      "It makes ordinary attitudes look ridiculous so we question them",
+      "It makes the story realistic",
+      "It removes all humour",
+      "It confuses the plot on purpose"
+     ],
+     "answer": "It makes ordinary attitudes look ridiculous so we question them",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxl2k6g1l54pov",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is 'situational irony'?",
+     "options": [
+      "When the outcome is the opposite of what is expected",
+      "When a character speaks sarcastically",
+      "When the reader knows more than a character",
+      "When the weather matches the mood"
+     ],
+     "answer": "When the outcome is the opposite of what is expected",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1en1kg32x47w5",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which phrase best describes 'denouement'?",
+     "options": [
+      "The final resolution where loose ends are tied up",
+      "The opening scene",
+      "The main conflict",
+      "A minor character"
+     ],
+     "answer": "The final resolution where loose ends are tied up",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ohq5i12e0df6",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Explain how a writer might use the structure of a short story to build tension.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider pace, withholding information and the placement of the climax.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tfgrqb1j550dc",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Evaluate the effect of an ironic ending in a satirical short story. Refer to the writer's purpose.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about how the ending makes the reader reflect on the target of the satire.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rooadvbd63ai2",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Analyse how the ending of 'The Man Who Wouldn't Get Up' shapes its overall meaning. Support your ideas with reference to the text.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Link the ending to the story's satirical message and to its opening.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
