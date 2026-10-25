@@ -337,6 +337,15 @@ const DAY_SCHEMA = {
   required: ['questions', 'passage'],
   additionalProperties: false,
 };
+const POOL_SCHEMA = {
+  type: 'object',
+  properties: {
+    days: { type: 'array', description: 'Uma entrada por dia pedido, com as perguntas desse dia.',
+      items: { type: 'object', properties: { day: { type: 'string', enum: DOWS }, questions: { type: 'array', items: qSchema(false) } }, required: ['day', 'questions'], additionalProperties: false } },
+    spare: { type: 'array', items: qSchema(false), description: 'Perguntas extras da semana (outros ângulos do assunto), para extras, revisão e desafios.' },
+  },
+  required: ['days', 'spare'], additionalProperties: false,
+};
 const MORE_SCHEMA = { type: 'object', properties: { questions: { type: 'array', items: qSchema(false) } }, required: ['questions'], additionalProperties: false };
 const EXPLAIN_SCHEMA = {
   type: 'object',
@@ -532,10 +541,18 @@ async function handlePlanDay(env, b, ctx) {
   const read = d.read && READ_IDS.includes(d.read.subject) ? d.read : null;
   const rn = read ? Math.max(1, Math.min(8, Number(read.n) || 6)) : 0;   // perguntas sobre o texto do dia
   const per = Math.max(1, Math.min(6, Number(b.perSubject) || 2));          // perguntas por tema
+  const readingOnly = !!(b.readingOnly && read);   // as matérias vêm do banco da semana (plan-pool); aqui só o capítulo
   const topics = (b.topics || []).slice(0, 30).map(t => `- ${t.subject}: ${String(t.summary || '').slice(0, 600)}`).join('\n');
   const focus = (b.focus || []).slice(0, 30).map(f => `- ${f.subject}: ${String(f.focus || '').slice(0, 200)}`).join('\n');
   const spell = (b.topics || []).some(t => ['pt_ort', 'en_spell'].includes(t.subject));
-  const content = [{ type: 'text', text: `Assuntos da semana (por matéria):
+  const readBlock = read ? `- LEITURA DO DIA (${read.subject}, nível: ${READ_LEVELS_TXT[read.level] || READ_LEVELS_TXT.at}): escreva em "passage" o capítulo de hoje do livro "${String(b.book && b.book.title || '').slice(0, 120)}".
+  Premissa: ${String(b.book && b.book.premise || '').slice(0, 600)}
+  ${b.book && b.book.before && b.book.before.length ? `Capítulos anteriores: ${b.book.before.slice(-6).map(c => `${c.title}: ${c.synopsis}`).join(' | ').slice(0, 1500)}` : 'É o primeiro capítulo.'}
+  Capítulo de hoje: "${String(b.book && b.book.chapter && b.book.chapter.title || '').slice(0, 120)}" — ${String(b.book && b.book.chapter && b.book.chapter.synopsis || '').slice(0, 500)}
+  "title": "Nome do livro — Capítulo N: título". Tamanho: ${yn <= 2 ? '120–200' : yn <= 6 ? '250–400' : '400–600'} palavras, no idioma da matéria, parágrafos separados por \n.
+  EXATAMENTE ${rn} das perguntas são sobre o capítulo (subject ${read.subject}), começando com "No capítulo…"/"In the chapter…": nunca peça resumo do capítulo; no máximo 1 "open" curta de inferência ou opinião ("Por que…?", "Como você acha que…?" / "Why…?", "How do you think…?"), as demais de compreensão ("mc" ou "short"), das mais literais às de inferência.` : '- Sem leitura hoje: "passage" com título e texto vazios.';
+  const content = [{ type: 'text', text: readingOnly ? `Hoje é ${d.label || d.dow}. Crie EXATAMENTE ${rn} perguntas, TODAS sobre o capítulo de hoje (as outras matérias já estão prontas).
+${readBlock}` : `Assuntos da semana (por matéria):
 ${topics || '(sem assuntos)'}
 ${b.modes ? `\nModos escolhidos: ${String(b.modes).slice(0, 600)}` : ''}
 
@@ -544,18 +561,38 @@ ${focus || '(escolha um subtema de cada matéria)'}
 
 Crie EXATAMENTE ${n} perguntas para hoje:
 - EXATAMENTE ${per} pergunta${per > 1 ? 's' : ''} de CADA matéria listada acima${read ? `, mais as ${rn} do texto do dia` : ''}.
-${spell ? '- Se houver Ortografia ou Spelling, inclua UMA pergunta "proof" (caça-erros) dessa matéria.\n' : ''}${read ? `- LEITURA DO DIA (${read.subject}, nível: ${READ_LEVELS_TXT[read.level] || READ_LEVELS_TXT.at}): escreva em "passage" o capítulo de hoje do livro "${String(b.book && b.book.title || '').slice(0, 120)}".
-  Premissa: ${String(b.book && b.book.premise || '').slice(0, 600)}
-  ${b.book && b.book.before && b.book.before.length ? `Capítulos anteriores: ${b.book.before.slice(-6).map(c => `${c.title}: ${c.synopsis}`).join(' | ').slice(0, 1500)}` : 'É o primeiro capítulo.'}
-  Capítulo de hoje: "${String(b.book && b.book.chapter && b.book.chapter.title || '').slice(0, 120)}" — ${String(b.book && b.book.chapter && b.book.chapter.synopsis || '').slice(0, 500)}
-  "title": "Nome do livro — Capítulo N: título". Tamanho: ${yn <= 2 ? '120–200' : yn <= 6 ? '250–400' : '400–600'} palavras, no idioma da matéria, parágrafos separados por \n.
-  EXATAMENTE ${rn} das perguntas são sobre o capítulo (subject ${read.subject}), começando com "No capítulo…"/"In the chapter…": nunca peça resumo do capítulo; no máximo 1 "open" curta de inferência ou opinião ("Por que…?", "Como você acha que…?" / "Why…?", "How do you think…?"), as demais de compreensão ("mc" ou "short"), das mais literais às de inferência.` : '- Sem leitura hoje: "passage" com título e texto vazios.'}` }];
+${spell ? '- Se houver Ortografia ou Spelling, inclua UMA pergunta "proof" (caça-erros) dessa matéria.\n' : ''}${readBlock}` }];
   return claude(env, ctx, {
     model: await genModel(env, b), effort: 'low',
     system: studentProfile(b.name, b.year, b.mine, yn, b.levels), content, schema: DAY_SCHEMA, maxTokens: 14000,
   });
 }
 
+// Banco da semana de UMA matéria personalizada: todas as perguntas dos dias numa chamada só (sem repetir entre dias)
+// + perguntas extras para os extras, a revisão e os desafios da semana.
+async function handlePlanPool(env, b, ctx) {
+  const subject = String(b.subject || ''); if (!SUBJECT_IDS.includes(subject)) throw new HttpError(400, 'Invalid subject.');
+  const days = (b.days || []).filter(d => DOWS.includes(d.dow)).slice(0, 7);
+  if (!days.length) throw new HttpError(400, 'No days.');
+  const per = Math.max(1, Math.min(6, Number(b.perDay) || 2));
+  const spare = Math.max(0, Math.min(24, Number(b.spare) || 0));
+  const spell = ['pt_ort', 'en_spell'].includes(subject);
+  const content = [{ type: 'text', text: `Matéria: ${subject} — ${subjDesc(subject)}
+Assunto da semana (do estudante/pais): ${String(b.summary || '').slice(0, 1500) || '(conteúdo típico do ano)'}
+${b.modes ? `Modos escolhidos: ${String(b.modes).slice(0, 400)}\n` : ''}
+Crie o BANCO DE PERGUNTAS DA SEMANA desta matéria, de uma vez, para explorar o assunto por inteiro ao longo da semana:
+${days.map(d => `- ${d.dow} (${d.label || d.dow}): EXATAMENTE ${per} pergunta${per > 1 ? 's' : ''} — subtema do dia: ${String(d.focus || '(escolha um subtema diferente dos outros dias)').slice(0, 200)}`).join('\n')}
+- "spare": EXATAMENTE ${spare} perguntas extras sobre outros ângulos do mesmo assunto (fatos, causas e consequências, vocabulário, comparações, datas e lugares, aplicação), para revisão e desafios.
+
+Regras:
+- NENHUMA pergunta pode repetir outra, nem perguntar o mesmo fato com outras palavras (em dias diferentes ou no "spare"). Cada dia fica no seu subtema; varie os fatos cobrados.
+- Comece a semana pelo mais fácil e vá aprofundando. Tipos variados ("mc", "short"${['math', 'fmath', 'phys', 'chem', 'sci'].some(x => subject.startsWith(x)) ? ', "num"' : ''}; no máximo 1 em cada 4 "open").
+${spell ? '- Ortografia/Spelling: 1 "proof" (caça-erros) por dia, com as palavras da semana.\n' : ''}- Em "subject" use sempre "${subject}".` }];
+  return claude(env, ctx, {
+    model: await genModel(env, b), effort: 'low',
+    system: studentProfile(b.name, b.year, b.mine, yearNum(b), b.levels), content, schema: POOL_SCHEMA, maxTokens: 16000,
+  });
+}
 async function handleMore(env, b, ctx) {
   const n = Math.max(1, Math.min(15, Number(b.n) || 5));  // (reforço também usa este limite)
   const subjects = (b.subjects || []).filter(s => SUBJECT_IDS.includes(s));
@@ -790,7 +827,7 @@ async function handleBankFill(env, b, ctx) {
   const ckey = qKey(BANK_CURRICULUM, b.yearId, subject, level, week);
   const B = await bankEnsure(env, ctx.url, b.yearId, week);
   const n = Math.max(4, Math.min(30, Number(b.n) || 10));
-  const avoid = await B.recent(ckey, 40);
+  const avoid = await B.recent(ckey, 80);
   const spell = (row.spelling || []).length > 0 || ['pt_ort', 'en_spell'].includes(subject);
   const content = [{ type: 'text', text: `${SHARED_NOTE}
 
@@ -804,7 +841,7 @@ ${spell ? `- inclua 1 "proof" (caça-erros) a cada 6–8 perguntas, com as palav
 ` : ''}- cada pergunta precisa funcionar sozinha, sem depender de outra.
 ${avoid.length ? `
 Já existem no banco (não repita nem faça quase iguais):
-- ${avoid.slice(0, 40).map(x => String(x).slice(0, 110)).join('\n- ')}` : ''}` }];
+- ${avoid.slice(0, 80).map(x => String(x).slice(0, 90)).join('\n- ')}` : ''}` }];
   const out = await claude(env, ctx, {
     model: await genModel(env, b), effort: 'low',
     system: studentProfile(null, YEAR_LABELS[b.yearId], [subject], yearNum(b), level ? { [subject]: level.toUpperCase() } : {}), content, schema: BANK_Q_SCHEMA, maxTokens: 16000,
@@ -875,7 +912,7 @@ Escreva o capítulo ${idx + 1}: "${c.title}" — ${c.synopsis}
 }
 
 /* ---------------- Roteador ---------------- */
-const AI_HANDLERS = { dare: handleDare, challenge: handleChallenge, 'bank-fill': handleBankFill, 'bank-book': handleBankBook, 'bank-chapter': handleBankChapter, 'plan-outline': handlePlanOutline, 'plan-day': handlePlanDay, plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen, lesson: handleLesson, reading: handleReading };
+const AI_HANDLERS = { dare: handleDare, challenge: handleChallenge, 'bank-fill': handleBankFill, 'bank-book': handleBankBook, 'bank-chapter': handleBankChapter, 'plan-outline': handlePlanOutline, 'plan-day': handlePlanDay, 'plan-pool': handlePlanPool, plan: handlePlan, more: handleMore, tutor: handleTutor, grade: handleGrade, explain: handleExplain, 'check-open': handleCheckOpen, lesson: handleLesson, reading: handleReading };
 
 async function api(req, env, url) {
   const path = url.pathname, m = req.method;

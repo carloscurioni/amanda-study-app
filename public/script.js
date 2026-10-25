@@ -515,7 +515,7 @@ function mergeStates(localRaw, remoteRaw) {
 const CHILD_KEY = 'lumi-child';
 const Server = { on: false, ai: false, needsSetup: false, canSetup: false, me: null, childId: null, pushing: false, again: false, dirty: false, timer: null, status: 'local' };
 
-const AI_ROUTES = { '/api/ai/dare': 'dare', '/api/ai/challenge': 'challenge', '/api/plan-outline': 'plan-outline', '/api/plan-day': 'plan-day', '/api/ai/bank-fill': 'bank-fill', '/api/ai/bank-book': 'bank-book', '/api/ai/bank-chapter': 'bank-chapter', '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open', '/api/lesson': 'lesson', '/api/reading': 'reading' };
+const AI_ROUTES = { '/api/plan-pool': 'plan-pool', '/api/ai/dare': 'dare', '/api/ai/challenge': 'challenge', '/api/plan-outline': 'plan-outline', '/api/plan-day': 'plan-day', '/api/ai/bank-fill': 'bank-fill', '/api/ai/bank-book': 'bank-book', '/api/ai/bank-chapter': 'bank-chapter', '/api/plan': 'plan', '/api/more': 'more', '/api/tutor': 'tutor', '/api/grade': 'grade', '/api/explain': 'explain', '/api/check-open': 'check-open', '/api/lesson': 'lesson', '/api/reading': 'reading' };
 const AVATARS = ['🦉', '🦊', '🐼', '🐱', '🐶', '🦄', '🐸', '🐧', '🐯', '🐰', '🐨', '🐙'];
 function localKey(id = Server.childId) { return id ? `${STORE_KEY}:${id}` : STORE_KEY; }
 function savedChild() { try { return localStorage.getItem(CHILD_KEY) || ''; } catch (e) { return ''; } }
@@ -2450,7 +2450,16 @@ async function startExtras(group) {
   const paid = ex.sets < S.settings.extraSetsPerDay;
   const size = S.settings.extraSetSize;
   let qs = [];
-  if (Server.ai) {
+  // 🗃️ primeiro o banco da semana (perguntas extras criadas junto com a semana), sem repetir o que já apareceu
+  if (S.week && !(group.focus || []).length) {
+    const used = new Set([...Object.values(S.week.days).flatMap(d => (d.questions || []).map(q => normQ(q.q))), ...(S.week.spareUsed || []), ...recentQuestionTexts(80).map(normQ)]);
+    const spare = (S.week.imported || []).filter(q => !q.day && q.type !== 'open' && (!(group.subjects || []).length || group.subjects.includes(q.subject)) && !used.has(normQ(q.q)));
+    if (spare.length >= Math.min(size, 4)) {
+      qs = makeRng('sp|' + uid()).shuffle(spare.slice()).slice(0, size).map(q => Object.assign({}, q));
+      S.week.spareUsed = (S.week.spareUsed || []).concat(qs.map(q => normQ(q.q))).slice(-300);
+    }
+  }
+  if (!qs.length && Server.ai) {
     const stop = showLoading(['Inventing new questions…', 'Sharpening my pencil… ✏️', 'Almost there!']);
     try {
       const r = await apiCall('/api/more', { method: 'POST', timeout: 90000, data: {
@@ -2793,7 +2802,7 @@ async function generateWithClaude(editing) {
     return;
   }
   stop();
-  if (res.failedDays && res.failedDays.length) setTimeout(() => say(`${res.failedDays.length === 1 ? 'One day was created' : `${res.failedDays.length} days were created`} by the app’s own generator (Claude took too long). You can redo it later in My week. 🙂`, { mood: 'think', ms: 9000 }), 9500);
+  if (res.failedDays && res.failedDays.length) setTimeout(() => say(`Part of the week (${esc(res.failedDays.join(', '))}) was created by the app’s own generator (Claude took too long). You can redo it later in My week. 🙂`, { mood: 'think', ms: 9000 }), 9500);
   const valid = validateImported({ questions: (res.questions || []).map(q => Object.assign({}, q, { options: q.type === 'mc' ? q.options : undefined, accept: (q.accept || []).filter(Boolean) })) }).ok;
   const topics = {};
   (res.topics || []).forEach(x => { if (SUBJ[x.subject]) topics[x.subject] = (topics[x.subject] ? topics[x.subject] + '; ' : '') + x.summary; });
@@ -2820,35 +2829,47 @@ async function generateWithClaude(editing) {
   show('home');
   say(`${esc(res.message || 'All done!')} I created <b>${total}</b> questions. ${S.week.start > t ? `They start on Saturday ${fmtDM(S.week.start)}.` : ''}`, { mood: 'wow', ms: 9000 });
 }
-// Planejamento em etapas: 1) roteiro da semana (assuntos, subtemas por dia, sinopse dos capítulos); 2) cada dia em paralelo.
-// Assim cada chamada ao Claude é curta (sem tempo esgotado) e a criança vê o progresso.
+// Planejamento em etapas: 1) roteiro da semana (assuntos, subtemas por dia, sinopse dos capítulos);
+// 2) em paralelo: o BANCO DA SEMANA de cada matéria (todas as perguntas dos dias numa chamada só, sem repetir entre dias,
+//    + perguntas extras para os extras e a revisão) e o capítulo de cada dia com leitura.
+const normQ = t => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 async function planInSteps(base) {
   const prog = t => { const m = $('#ld-msg'); if (m) m.textContent = t; };
   const outline = await apiCall('/api/plan-outline', { method: 'POST', timeout: 150000, data: base });
   const dayLabel = d => d.label || d.dow;
-  let done = 0; const total = base.days.length;
-  const tick = () => prog(`Creating the days with Lumi… ${done} of ${total} ready ✏️`);
+  const readDays = base.days.filter(d => d.read);
+  const readSubs = new Set(readDays.map(d => d.read.subject));
+  const subs = [...new Set((outline.topics || []).map(t => t.subject))].filter(id => SUBJ[id] && !readSubs.has(id) && !(S.settings.dailyReading && isRead(id)));
+  const per = Math.max(1, Math.min(6, Number(base.perSubject) || 2));
+  const spare = Math.max(4, Math.min(20, Math.ceil(per * base.days.length * 0.75)));
+  const focusFor = (dow, id) => { const f = (outline.focus || []).find(x => x.day === dow); const it = f && (f.items || []).find(x => x.subject === id); return it ? it.focus : ''; };
+  let done = 0; const total = subs.length + readDays.length;
+  const tick = () => prog(`Building this week’s questions with Lumi… ${done} of ${total} ready ✏️`);
   tick();
   const bookFor = d => { if (!d.read) return null; const b = (outline.books || []).find(x => x.subject === d.read.subject); if (!b) return null;
     const i = b.chapters.findIndex(c => c.day === d.dow); return { title: b.title, premise: b.premise, chapter: b.chapters[i] || { title: '', synopsis: '' }, before: i > 0 ? b.chapters.slice(0, i) : [] }; };
-  const runDay = async d => {
-    const data = { name: base.name, day: d, perSubject: base.perSubject, topics: outline.topics || [], modes: String(base.text || '').slice(0, 1500),
-      focus: ((outline.focus || []).find(f => f.day === d.dow) || {}).items || [], book: bookFor(d) };
-    let last;
-    for (let attempt = 0; attempt < 2; attempt++) {
-      try { const r = await apiCall('/api/plan-day', { method: 'POST', timeout: 180000, data }); done++; tick(); return { d, r }; }
-      catch (e) { last = e; if (e.status === 429) break; }
-    }
-    done++; tick(); return { d, err: last };
-  };
-  const results = await Promise.all(base.days.map(runDay));
-  const ok = results.filter(x => x.r);
-  if (!ok.length) throw results[0].err || new Error('Claude did not respond');
+  const retry = async fn => { let last; for (let a = 0; a < 2; a++) { try { return await fn(); } catch (e) { last = e; if (e.status === 429) break; } } throw last; };
+  const poolJob = id => retry(() => apiCall('/api/plan-pool', { method: 'POST', timeout: 180000, data: { name: base.name, subject: id, perDay: per, spare,
+      summary: ((outline.topics || []).find(t => t.subject === id) || {}).summary || '', modes: String(base.text || '').slice(0, 400),
+      days: base.days.map(d => ({ dow: d.dow, label: dayLabel(d), focus: focusFor(d.dow, id) })) } }))
+    .then(r => ({ id, r }), err => ({ id, err })).finally(() => { done++; tick(); });
+  const readJob = d => retry(() => apiCall('/api/plan-day', { method: 'POST', timeout: 180000, data: { name: base.name, readingOnly: true, perSubject: per, day: Object.assign({}, d, { n: d.read.n || 6 }), topics: [], focus: [], book: bookFor(d) } }))
+    .then(r => ({ d, r }), err => ({ d, err })).finally(() => { done++; tick(); });
+  const [pools, reads] = await Promise.all([Promise.all(subs.map(poolJob)), Promise.all(readDays.map(readJob))]);
+  // monta sem repetir: a mesma pergunta (ou quase igual) não entra duas vezes na semana
+  const seen = new Set(); const questions = [];
+  const add = (q, extra) => { const k = normQ(q.q) + '|' + normQ(q.text || ''); if (!q.q || seen.has(k)) return; seen.add(k); questions.push(Object.assign({}, q, extra)); };
+  pools.filter(x => x.r).forEach(({ id, r }) => {
+    (r.days || []).forEach(x => (x.questions || []).forEach(q => add(q, { subject: id, day: x.day })));
+    (r.spare || []).forEach(q => add(q, { subject: id, day: undefined, spare: true }));
+  });
+  reads.filter(x => x.r).forEach(({ d, r }) => (r.questions || []).forEach(q => add(q, { subject: q.subject || d.read.subject, day: d.dow })));
+  if (!questions.length && (pools.length || reads.length)) throw (pools.concat(reads).find(x => x.err) || {}).err || new Error('Claude did not respond');
   return {
     topics: outline.topics || [], message: outline.message || '',
-    questions: ok.flatMap(x => (x.r.questions || []).map(q => Object.assign({}, q, { day: x.d.dow }))),
-    passages: ok.filter(x => x.d.read && x.r.passage && x.r.passage.text).map(x => ({ subject: x.d.read.subject, day: x.d.dow, title: x.r.passage.title, text: x.r.passage.text })),
-    failedDays: results.filter(x => x.err).map(x => dayLabel(x.d)),
+    questions,
+    passages: reads.filter(x => x.r && x.r.passage && x.r.passage.text).map(x => ({ subject: x.d.read.subject, day: x.d.dow, title: x.r.passage.title, text: x.r.passage.text })),
+    failedDays: reads.filter(x => x.err).map(x => dayLabel(x.d)).concat(pools.filter(x => x.err).map(x => (SUBJ[x.id] || {}).name || x.id)),
   };
 }
 /* ---------- 🏦 Banco de sugestões compartilhado ----------
@@ -2890,7 +2911,10 @@ async function planWithBank(base, info, lineOf) {
   const drawn = await apiCall('/api/bank/draw', { method: 'POST', data: { childId: Server.childId, week: info.week, exclude,
     subjects: sharedMix.map(id => ({ subject: id, level: info.shared[id].level, need: need(id) })),
     books: readSubs.map(sid => ({ subject: sid, level: info.shared[sid].level, readLevel: readLevelOf(sid) })) } });
-  const got = {}; sharedMix.forEach(id => { got[id] = (drawn.questions[slot(id)] || []).map(q => Object.assign({}, q, { subject: id })); });
+  // sem repetir na semana: nada que já esteja nos dias da semana, e nada de quase-iguais entre si
+  const seenQ = new Set(S.week ? Object.values(S.week.days).flatMap(d => (d.questions || []).map(q => normQ(q.q) + '|' + normQ(q.text || ''))) : []);
+  const fresh = q => { const k = normQ(q.q) + '|' + normQ(q.text || ''); if (seenQ.has(k)) return false; seenQ.add(k); return true; };
+  const got = {}; sharedMix.forEach(id => { got[id] = (drawn.questions[slot(id)] || []).filter(fresh).map(q => Object.assign({}, q, { subject: id })); });
   const books = Object.assign({}, drawn.books || {});
   // o que falta: perguntas por matéria, livros e capítulos, e a parte personalizada — tudo em paralelo
   const jobs = []; let done = 0, fromBank = sharedMix.reduce((a, id) => a + got[id].length, 0), created = 0;
@@ -2902,7 +2926,7 @@ async function planWithBank(base, info, lineOf) {
       try {
         const r = await apiCall('/api/ai/bank-fill', { method: 'POST', timeout: 150000, data: { week: info.week, subject: id, level: info.shared[id].level, n: Math.max(miss, 8) } });
         const have = new Set(got[id].map(q => q.bank));
-        const add = (r.questions || []).filter(q => !have.has(q.bank)).slice(0, miss).map(q => Object.assign({}, q, { subject: id }));
+        const add = (r.questions || []).filter(q => !have.has(q.bank) && fresh(q)).slice(0, miss).map(q => Object.assign({}, q, { subject: id }));
         got[id].push(...add); created += add.length;
       } catch (e) { /* o gerador do próprio app completa esta matéria */ }
     });
@@ -5261,6 +5285,13 @@ async function applyCountsToWeek() {
   // aumentar: o que falta, por matéria (todos os dias juntos) e por texto do dia
   const missing = Object.entries(want).map(([k, g]) => Object.assign({ k, need: g.n - (groups[k] || []).length }, g)).filter(g => g.need > 0);
   let added = 0;
+  // primeiro o banco da semana (perguntas extras da mesma matéria que ainda não apareceram)
+  const inDays = new Set(keep.filter(q => q.day).map(q => normQ(q.q)));
+  missing.filter(g => !g.passage).forEach(g => {
+    const sp = keep.filter(q => !q.day && q.subject === g.subject && q.type !== 'open' && !inDays.has(normQ(q.q)) && !(w.spareUsed || []).includes(normQ(q.q)));
+    sp.slice(0, g.need).forEach(q => { q.day = g.dow; inDays.add(normQ(q.q)); g.need--; });
+  });
+  missing.splice(0, missing.length, ...missing.filter(g => g.need > 0));
   if (missing.length && Server.ai) {
     const exclude = keep.map(q => q.q).concat(recentQuestionTexts(40)).slice(0, 60);
     const bySubj = {}; missing.filter(g => !g.passage).forEach(g => { (bySubj[g.subject] = bySubj[g.subject] || []).push(g); });
@@ -5287,7 +5318,7 @@ async function applyCountsToWeek() {
   w.counts = Object.assign({}, w.counts || {}, Object.fromEntries(dates.map(date => [w.days[date].dow, w.days[date].n])));
   regenerateDays(w, dates, '|' + uid());
   save();
-  return { days: dates.length, added, short: missing.reduce((a, g) => a + g.need, 0) - added };
+  return { days: dates.length, added, short: Math.max(0, missing.reduce((a, g) => a + g.need, 0) - added) };
 }
 function pSettings(box) {
   const st = S.settings;

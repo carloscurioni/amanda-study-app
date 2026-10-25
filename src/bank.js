@@ -92,8 +92,12 @@ export class Bank extends DurableObject {
     const now = new Date().toISOString();
     const have = await this.count(ckey);
     const out = [];
+    // sem quase-repetidas: a mesma pergunta com outra pontuação/acentuação não entra de novo
+    const nq = t => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+    const seen = new Set([...this.sql.exec(`SELECT payload FROM bank_q WHERE ckey = ? AND status != 'deleted'`, ckey)].map(r => { const q = JSON.parse(r.payload); return nq(q.q) + '|' + nq(q.text); }));
     for (const raw of items || []) {
       const c = cleanQuestion(raw, subject); if (c.err) continue;
+      const k = nq(c.q.q) + '|' + nq(c.q.text); if (seen.has(k)) continue; seen.add(k);
       const id = contentId('a', ckey, c.q.type, c.q.q, c.q.answer);
       if (have + out.length < MAX_PER_KEY) this.sql.exec(`INSERT OR IGNORE INTO bank_q (id, ckey, subject, payload, source, created, updated) VALUES (?, ?, ?, ?, ?, ?, ?)`, id, ckey, subject, JSON.stringify(c.q), source, now, now);
       out.push(Object.assign({}, c.q, { bank: id }));
