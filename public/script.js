@@ -5235,6 +5235,60 @@ function pVouchers(box) {
   $('#vadd').onclick = () => { collect(); S.vouchers.push({ id: 'v-' + uid(), name: 'New voucher', price: 200 }); touch('vouchers'); save(); pVouchers(box); };
   $('#vsave').onclick = () => { collect(); touch('vouchers'); save(); toast('Vouchers saved'); };
 }
+/* ---------- ⚙️ Mudou a quantidade de perguntas: aplica nos dias da semana que ainda não começaram ----------
+   Diminuiu: tira as perguntas a mais. Aumentou: a Lumi cria as que faltam (por matéria, e do texto do dia);
+   sem servidor (ou se falhar), o gerador do próprio app completa. Dias feitos ou começados não mudam. */
+async function applyCountsToWeek() {
+  const w = S.week; if (!w || !w.days) return null;
+  const t = today();
+  const dates = Object.values(w.days).filter(d => d.required && d.date >= t && d.status !== 'done' && !dayStarted(d)).map(d => d.date);
+  if (!dates.length) return { days: 0 };
+  w.imported = w.imported || [];
+  const daily = (w.passages || []).length > 0;
+  const themes = activeSubjects(w).filter(id => !(daily && isRead(id)));
+  const want = {};   // `${dow}|${subject}` → { n, day, subject, passage }
+  dates.forEach(date => { const d = w.days[date];
+    themes.forEach(id => { want[`${d.dow}|${id}`] = { n: perTheme(), dow: d.dow, subject: id }; });
+    (w.passages || []).filter(x => x.day === d.dow).forEach(x => { want[`${d.dow}|${x.subject}`] = { n: readQ(SUBJ[x.subject].lang), dow: d.dow, subject: x.subject, passage: x }; });
+  });
+  // diminuir: guarda as primeiras (no texto do dia, as de compreensão antes das livres)
+  const keep = [];
+  const groups = {};
+  w.imported.forEach(q => { const k = q.day ? `${q.day}|${q.subject}` : null; if (k && want[k]) (groups[k] = groups[k] || []).push(q); else keep.push(q); });
+  Object.entries(groups).forEach(([k, l]) => { const g = want[k];
+    const ord = g.passage ? [...l.filter(q => q.type !== 'open'), ...l.filter(q => q.type === 'open')] : l;
+    keep.push(...ord.slice(0, g.n)); });
+  // aumentar: o que falta, por matéria (todos os dias juntos) e por texto do dia
+  const missing = Object.entries(want).map(([k, g]) => Object.assign({ k, need: g.n - (groups[k] || []).length }, g)).filter(g => g.need > 0);
+  let added = 0;
+  if (missing.length && Server.ai) {
+    const exclude = keep.map(q => q.q).concat(recentQuestionTexts(40)).slice(0, 60);
+    const bySubj = {}; missing.filter(g => !g.passage).forEach(g => { (bySubj[g.subject] = bySubj[g.subject] || []).push(g); });
+    const jobs = [];
+    Object.entries(bySubj).forEach(([id, gs]) => jobs.push(async () => {
+      const total = gs.reduce((a, g) => a + g.need, 0); const got = [];
+      for (let left = total; left > 0 && got.length < total;) {
+        const n = Math.min(15, left); left -= n;
+        const r = await apiCall('/api/more', { method: 'POST', timeout: 120000, data: { name: S.name, n, subjects: [id], topics: `${id}: ${w.topics[id] || ''}`, exclude: exclude.concat(got.map(q => q.q)) } });
+        got.push(...validateImported(r).ok.filter(q => q.subject === id));
+      }
+      gs.forEach(g => got.splice(0, g.need).forEach(q => { keep.push(Object.assign(q, { day: g.dow })); added++; }));
+    }));
+    missing.filter(g => g.passage).forEach(g => jobs.push(async () => {
+      const x = g.passage, en = SUBJ[g.subject].lang === 'en';
+      const r = await apiCall('/api/more', { method: 'POST', timeout: 120000, data: { name: S.name, n: g.need, subjects: [g.subject], exclude: keep.filter(q => q.day === g.dow && q.subject === g.subject).map(q => q.q),
+        topics: `${g.subject}: perguntas de compreensão sobre o texto do dia abaixo ("mc" ou "short", começando com "${en ? 'In the chapter…' : 'No capítulo…'}"; nunca peça resumo).\nTexto "${x.title}":\n${String(x.text).slice(0, 2600)}` } });
+      validateImported(r).ok.filter(q => q.subject === g.subject).slice(0, g.need).forEach(q => { keep.push(Object.assign(q, { day: g.dow })); added++; });
+    }));
+    await Promise.all(jobs.map(fn => fn().catch(e => console.warn('applyCounts', e))));
+  }
+  w.imported = keep;
+  dates.forEach(date => { const d = w.days[date]; d.n = Object.values(want).filter(g => g.dow === d.dow).reduce((a, g) => a + g.n, 0); d.printed = false; });
+  w.counts = Object.assign({}, w.counts || {}, Object.fromEntries(dates.map(date => [w.days[date].dow, w.days[date].n])));
+  regenerateDays(w, dates, '|' + uid());
+  save();
+  return { days: dates.length, added, short: missing.reduce((a, g) => a + g.need, 0) - added };
+}
 function pSettings(box) {
   const st = S.settings;
   box.innerHTML = `<div class="card"><b>Coin economy</b><div class="form-grid" style="margin-top:6px">
@@ -5275,13 +5329,14 @@ function pSettings(box) {
       ${['pt', 'en'].map(l => { const vs = deviceVoices(l).sort((a, b) => voiceScore(b, l) - voiceScore(a, l)); const cur = (st.deviceVoice || {})[l] || '';
         return `<label class="field">Device voice in ${l === 'pt' ? 'Portuguese' : 'English'}<span class="row"><select id="s-dv-${l}" class="grow"><option value="">Automatic (best: ${esc((vs[0] || {}).name || '—')})</option>${vs.map(v => `<option value="${esc(v.voiceURI)}" ${cur === v.voiceURI ? 'selected' : ''}>${esc(v.name)}${voiceScore(v, l) >= 60 ? ' ⭐' : ''}</option>`).join('')}</select><button type="button" class="btn small" data-vtest="${l}">▶</button></span></label>`; }).join('')}
       ${Server.me ? '' : '<label class="field">New parents’ PIN<input id="s-pin" inputmode="numeric" maxlength="8" placeholder="(keep current)"></label>'}</div>
-      <p class="tiny muted" style="margin:6px 0 0">Daily total = questions per topic × the week’s subjects + questions on today’s text. Each day has one text (alternating Portuguese and English); the Extra reading in Extras comes in the other language. Each text has 5 to 8 questions (1 summary + comprehension); on automatic, it depends on the length and complexity of the text (school year and reading level).</p></div>
+      <p class="tiny muted" style="margin:6px 0 0">Daily total = questions per topic × the week’s subjects + questions on today’s text. Each day has one text (alternating Portuguese and English); the Extra reading in Extras comes in the other language. Each text has 5 to 8 comprehension questions; on automatic, it depends on the length and complexity of the text (school year and reading level).</p></div>
     ${calendarSettingsHtml(st)}
     <button class="btn primary" id="s-save">Save settings</button>
     <button class="btn" id="s-tour">Replay Lumi’s tutorial</button>
     <p class="tiny muted" style="margin:8px 0 0">App version: ${esc(Server.version || 'offline')}</p>`;
-  $('#s-save').onclick = () => {
+  $('#s-save').onclick = async () => {
     const num = (id, d) => { const v = Math.round(Number($(id).value)); return Number.isFinite(v) ? v : d; };
+    const countsBefore = JSON.stringify([perTheme(), readQ('pt'), readQ('en')]);
     const reward = Math.max(0, num('#s-reward', st.reward)), penalty = num('#s-penalty', st.penalty);
     if (penalty <= reward) { toast('The penalty must be GREATER than the reward.'); return; }
     Object.assign(st, {
@@ -5302,6 +5357,12 @@ function pSettings(box) {
     if ($('#s-sstart').value) st.schoolStart = $('#s-sstart').value;
     st.holidays = readHolidays(box);
     touch('settings'); save(); toast('Settings saved');
+    if (JSON.stringify([perTheme(), readQ('pt'), readQ('en')]) !== countsBefore && S.week) {
+      const stop = showLoading(['Updating this week’s remaining days… 📅', 'Creating the extra questions… ✏️', 'Almost there! 🦉']);
+      let r = null; try { r = await applyCountsToWeek(); } catch (e) { console.warn(e); } finally { stop(); }
+      if (r && r.days) toast(`📅 Applied to ${r.days} day${r.days > 1 ? 's' : ''} of this week not started yet${r.short > 0 ? ' (the app’s own questions filled the rest)' : ''}.`);
+      else if (r) toast('Saved. All of this week’s days are done or started: it applies from the next week.');
+    }
   };
   $('#s-tour').onclick = () => { show('home'); setTimeout(runTour, 300); };
   $$('[data-vtest]', box).forEach(b => b.onclick = () => {   // testa a voz escolhida (do aparelho, ou a natural se estiver ligada)

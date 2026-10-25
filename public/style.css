@@ -988,3 +988,13 @@ table.odds { width: 100%; border-collapse: collapse; } table.odds td, table.odds
 .dare-body input { font-size: 18px; padding: 8px 10px; border-radius: 10px; border: 2px solid var(--line); }
 .dare-excerpt { background: #fff9db; border-radius: 10px; padding: 8px 10px; font-size: 14.5px; line-height: 1.45; max-height: 38vh; overflow: auto; }
 .dare-excerpt p { margin: 0 0 6px; }
+
+/* ⚙️ Ajustes: campos alinhados e sem transbordar a coluna */
+.form-grid > .field, .form-grid > label.field { min-width: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 4px; }
+.form-grid .field input:not([type=checkbox]):not([type=radio]), .form-grid .field select { width: 100%; min-width: 0; box-sizing: border-box; min-height: 38px; }
+.form-grid .field .row { display: flex; gap: 6px; min-width: 0; }
+.form-grid .field .row > input, .form-grid .field .row > select { flex: 1 1 0; width: auto !important; }
+.form-grid .field .row > .btn { flex: 0 0 auto; min-height: 38px; }
+.form-grid .field .qstep { flex-direction: column; align-items: stretch; justify-content: space-between; gap: 4px; font-size: 13.5px; height: 100%; }
+.form-grid .field .qstep .qs-sel { width: 100%; min-height: 38px; padding: 7px 9px; font-size: 14px; }
+.form-grid > .notice { margin: 0; }
