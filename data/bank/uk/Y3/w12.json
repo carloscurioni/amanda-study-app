@@ -2254,5 +2254,863 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "A Enciclopédia de Bia e Téo",
+   "premise": "Bia e o primo Téo descobrem a velha enciclopédia de animais da avó e decidem criar a sua própria para a feira de ciências. A cada capítulo eles vivem uma aventura com um animal brasileiro e escrevem um verbete, aprendendo a diferença entre contar uma história e informar.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A enciclopédia da vó Nena",
+     "synopsis": "Num sábado de chuva, Bia e o primo Téo descobrem a velha enciclopédia de animais da avó e aprendem o que é um verbete. Eles decidem criar a própria enciclopédia para a feira de ciências.",
+     "text": "Num sábado de chuva, Bia e o primo Téo estavam entediados na casa da vó Nena. A cachorrinha Pipoca dormia no tapete, e a chuva batia na janela como se quisesse entrar.\n— Na segunda-feira a professora vai pedir ideias para a feira de ciências — lembrou Bia. — E eu ainda não tenho nenhuma.\nA vó Nena sorriu, subiu num banquinho e tirou da estante um livro grosso, de capa verde e cantos gastos.\n— Esta é a minha enciclopédia de animais. Eu lia quando tinha a idade de vocês.\nTéo abriu numa página qualquer e leu em voz alta:\n“CAPIVARA. Mamífero roedor. É o maior roedor do mundo. Onde vive: perto de rios, lagos e áreas alagadas da América do Sul. O que come: capim e plantas aquáticas. Comportamento: vive em grupos e é ótima nadadora. Consegue ficar alguns minutos debaixo d’água.”\n— Que texto sem graça! — reclamou Téo. — Não tem personagem, não tem aventura.\n— Não é para ter — explicou a vó. — Isso é um verbete. Ele existe para informar. Cada parte tem um título pequeno, e você encontra a informação rapidinho.\n— Vó, me pergunta alguma coisa — pediu Bia.\n— O que a capivara come?\nBia correu o dedo até “O que come” e respondeu na hora:\n— Capim e plantas aquáticas!\nTéo ficou pensativo. Então pegou um caderno e escreveu: “Era uma vez uma capivara chamada Dona Lama, que mergulhava no lago para fugir do calor e das fofocas dos patos.”\n— Agora sim! — disse ele. — Isso é uma história.\n— As duas coisas são boas — respondeu a vó. — Uma conta uma aventura inventada. A outra ensina fatos verdadeiros.\nBia deu um pulo do sofá.\n— Já sei a nossa ideia para a feira! Vamos fazer a nossa própria enciclopédia de animais brasileiros. Um verbete por semana!\n— E cada verbete vem com uma aventura de verdade — completou Téo. — Nós vamos procurar os animais.\nPipoca latiu, como quem diz que também queria ir.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Bia e Téo estavam no sábado de chuva?",
+       "options": [
+        "No parque",
+        "Na casa da vó Nena",
+        "Na escola"
+       ],
+       "answer": "Na casa da vó Nena",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da cachorrinha?",
+       "options": [],
+       "answer": "Pipoca",
+       "accept": [],
+       "hint": "Ela dormia no tapete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, o que a capivara come?",
+       "options": [
+        "Frutas e sementes",
+        "Capim e plantas aquáticas",
+        "Peixes e insetos"
+       ],
+       "answer": "Capim e plantas aquáticas",
+       "accept": [],
+       "hint": "Releia o verbete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, onde a capivara vive?",
+       "options": [
+        "No alto das montanhas",
+        "Em desertos de areia",
+        "Perto de rios, lagos e áreas alagadas"
+       ],
+       "answer": "Perto de rios, lagos e áreas alagadas",
+       "accept": [],
+       "hint": "Releia o verbete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Téo achou o verbete sem graça?",
+       "options": [
+        "Porque estava escrito em inglês",
+        "Porque não tinha personagem nem aventura",
+        "Porque era comprido demais"
+       ],
+       "answer": "Porque não tinha personagem nem aventura",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, a frase “Era uma vez uma capivara chamada Dona Lama…” faz parte de que tipo de texto?",
+       "options": [
+        "Texto informativo, um verbete",
+        "Texto literário, uma história inventada",
+        "Uma lista de compras"
+       ],
+       "answer": "Texto literário, uma história inventada",
+       "accept": [],
+       "hint": "Pense: é um fato verdadeiro ou uma aventura inventada?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia conseguiu responder tão rápido o que a capivara come?",
+       "options": [
+        "Porque ela já tinha decorado o livro inteiro",
+        "Porque Téo cochichou a resposta",
+        "Porque o verbete tem títulos pequenos que separam cada informação"
+       ],
+       "answer": "Porque o verbete tem títulos pequenos que separam cada informação",
+       "accept": [],
+       "hint": "O que a vó disse sobre os títulos pequenos?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a vó Nena disse que as duas coisas, a história e o verbete, são boas?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense para que serve cada tipo de texto.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O visitante apressado",
+     "synopsis": "Um beija-flor visita o jardim da vó e Téo não consegue fotografá-lo. Na hora de escrever o verbete, as crianças descobrem que exagero combina com história, não com texto informativo.",
+     "text": "Na semana seguinte, Bia e Téo montaram guarda no jardim da vó Nena, ao lado do pé de hibisco. As flores vermelhas balançavam com a brisa.\n— Psiu! Lá está ele! — sussurrou Bia.\nUm beija-flor verde e brilhante apareceu do nada. Ele parou no ar diante de uma flor, enfiou o bico fino lá dentro e, num piscar de olhos, voou para trás e sumiu.\nTéo apertou o botão da câmera tarde demais. A foto mostrava só um borrão verde.\n— Ele é rápido demais! — reclamou. — Já sei o que vou escrever no verbete: “O beija-flor é o pássaro mais rápido do universo.”\n— Não pode — disse Bia. — No verbete só entra o que é verdade e o que dá para conferir. Vamos pesquisar.\nOs dois abriram a enciclopédia verde e um livro da biblioteca. Depois de ler bastante, escreveram com as próprias palavras:\n“BEIJA-FLOR. Ave. É uma das menores aves do mundo. Onde vive: só existe nas Américas; o Brasil tem muitas espécies. O que come: néctar das flores e pequenos insetos. Comportamento: bate as asas muito depressa, consegue parar no ar e até voar para trás. Importância: ao visitar as flores, leva pólen de uma flor para outra e ajuda as plantas a formar frutos e sementes.”\n— Ficou certinho — elogiou a vó. — E a frase do universo?\nTéo deu um sorriso maroto e virou a página do caderno.\n— Guardei para a minha história: “Zuzu, o beija-flor que apostava corrida com o vento”. Na história, eu posso exagerar quanto quiser!\nBia riu e desenhou Zuzu de óculos escuros, cruzando a linha de chegada na frente de uma nuvem bem brava.\nNo fim da tarde, o beija-flor voltou ao hibisco. Desta vez, Téo nem tentou tirar foto. Ficou só olhando, quietinho, enquanto as asinhas zumbiam como um motor minúsculo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que planta o beija-flor apareceu?",
+       "options": [
+        "No pé de hibisco de flores vermelhas",
+        "Num pé de alface",
+        "Numa roseira amarela"
+       ],
+       "answer": "No pé de hibisco de flores vermelhas",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a foto de Téo saiu borrada?",
+       "options": [
+        "Porque estava chovendo",
+        "Porque a câmera caiu no chão",
+        "Porque o beija-flor se mexia rápido demais"
+       ],
+       "answer": "Porque o beija-flor se mexia rápido demais",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, o que o beija-flor come?",
+       "options": [
+        "Peixinhos de lagoa",
+        "Sementes e minhocas",
+        "Néctar das flores e pequenos insetos"
+       ],
+       "answer": "Néctar das flores e pequenos insetos",
+       "accept": [],
+       "hint": "Releia o verbete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, onde existem beija-flores?",
+       "options": [
+        "Só na Europa",
+        "Só na África",
+        "Só nas Américas"
+       ],
+       "answer": "Só nas Américas",
+       "accept": [],
+       "hint": "Procure a parte “Onde vive”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de acordo com o verbete, como o beija-flor ajuda as plantas?",
+       "options": [
+        "Comendo as folhas secas",
+        "Cavando a terra em volta delas",
+        "Levando pólen de uma flor para outra"
+       ],
+       "answer": "Levando pólen de uma flor para outra",
+       "accept": [],
+       "hint": "Procure a parte “Importância”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia não deixou Téo escrever no verbete que o beija-flor é “o pássaro mais rápido do universo”?",
+       "options": [
+        "Porque no verbete só entra o que é verdade e pode ser conferido",
+        "Porque a frase era curta demais",
+        "Porque beija-flor não sabe voar"
+       ],
+       "answer": "Porque no verbete só entra o que é verdade e pode ser conferido",
+       "accept": [],
+       "hint": "O que Bia disse sobre o que entra num verbete?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Téo usou a frase exagerada no final?",
+       "options": [
+        "No verbete do beija-flor",
+        "No bilhete para a professora",
+        "Na história do Zuzu"
+       ],
+       "answer": "Na história do Zuzu",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que exagerar combina mais com uma história do que com um verbete?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que o leitor espera de cada texto.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A cauda que parecia bandeira",
+     "synopsis": "Num parque de animais, as crianças conhecem um tamanduá-bandeira com a ajuda da tratadora Marli. Elas descobrem por que as enciclopédias usam ordem alfabética.",
+     "text": "No sábado, a vó Nena levou as crianças a um parque de animais. Pipoca ficou em casa, emburrada, porque cachorro não podia entrar.\nPerto do cercado do tamanduá, uma moça de chapéu de abas largas acenou.\n— Eu sou a Marli, cuido dos animais daqui. Vocês querem ver o Bandeirinha? Falem baixinho, por favor. Barulho deixa ele assustado.\nUm bicho comprido saiu devagar de trás de um tronco. Tinha o focinho fino como um canudo e uma cauda enorme e peluda.\n— Parece uma vassoura! — cochichou Téo.\n— É por causa dessa cauda grande, parecida com uma bandeira, que ele se chama tamanduá-bandeira — explicou Marli.\nO animal enfiou o focinho num cupinzeiro de mentira, cheio de comida, e uma língua comprida apareceu e sumiu várias vezes.\nBia anotava tudo. Em casa, os dois escreveram:\n“TAMANDUÁ-BANDEIRA. Mamífero. Onde vive: campos e cerrados da América do Sul, incluindo o Cerrado e o Pantanal brasileiros. O que come: formigas e cupins. Corpo: não tem dentes; tem uma língua comprida e pegajosa, que pode passar de meio metro. Tem garras fortes nas patas da frente, usadas para abrir cupinzeiros, e uma cauda grande e peluda. Comportamento: anda apoiado nos nós dos dedos das patas da frente para proteger as garras.”\nQuando terminaram, Téo espalhou as folhas na mesa: capivara, beija-flor, tamanduá-bandeira.\n— Em que ordem a gente coloca? — perguntou.\nA vó Nena abriu a enciclopédia verde no começo e depois no fim.\n— Reparem: aqui começa com “abelha” e lá no fim está “zebra”.\n— Ordem alfabética! — exclamou Bia. — Assim qualquer pessoa acha o animal que procura, sem folhear o livro inteiro.\nEntão Bia colocou “beija-flor” primeiro, depois “capivara” e por último “tamanduá-bandeira”. Téo, satisfeito, desenhou uma bandeirinha no canto da página.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para onde a vó Nena levou as crianças?",
+       "options": [
+        "Para a praia",
+        "Para o cinema",
+        "Para um parque de animais"
+       ],
+       "answer": "Para um parque de animais",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da moça que cuida dos animais?",
+       "options": [],
+       "answer": "Marli",
+       "accept": [],
+       "hint": "Ela usava um chapéu de abas largas.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, o que o tamanduá-bandeira come?",
+       "options": [
+        "Formigas e cupins",
+        "Peixes e caranguejos",
+        "Frutas e folhas"
+       ],
+       "answer": "Formigas e cupins",
+       "accept": [],
+       "hint": "Releia o verbete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, quantos dentes tem o tamanduá-bandeira?",
+       "options": [
+        "Doze",
+        "Trinta",
+        "Nenhum"
+       ],
+       "answer": "Nenhum",
+       "accept": [],
+       "hint": "Procure a parte “Corpo”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, para que servem as garras fortes das patas da frente?",
+       "options": [
+        "Para abrir cupinzeiros",
+        "Para subir em postes",
+        "Para nadar mais rápido"
+       ],
+       "answer": "Para abrir cupinzeiros",
+       "accept": [],
+       "hint": "Releia o verbete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o animal tem “bandeira” no nome?",
+       "options": [
+        "Porque mora perto de um mastro",
+        "Por causa da cauda grande e peluda, parecida com uma bandeira",
+        "Porque é o animal da bandeira do Brasil"
+       ],
+       "answer": "Por causa da cauda grande e peluda, parecida com uma bandeira",
+       "accept": [],
+       "hint": "O que a Marli explicou?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia e Téo decidiram colocar os verbetes em ordem alfabética?",
+       "options": [
+        "Porque a professora mandou",
+        "Porque assim o caderno ficava mais pesado",
+        "Para que qualquer pessoa ache o animal sem folhear o livro inteiro"
+       ],
+       "answer": "Para que qualquer pessoa ache o animal sem folhear o livro inteiro",
+       "accept": [],
+       "hint": "O que Bia disse ao descobrir a ordem?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a Marli pediu para as crianças falarem baixinho perto do tamanduá?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em como o animal se sente com barulho.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: Quem tem pressa não vê a preguiça",
+     "synopsis": "No sítio do tio Juca, Téo perde a paciência esperando uma preguiça se mexer. Desta vez é Bia quem escreve a história e Téo quem escreve o verbete.",
+     "text": "No feriado, a família foi ao sítio do tio Juca. Logo na chegada, ele apontou para uma árvore alta de folhas grandes, uma embaúba.\n— Olhem lá no alto. Estão vendo aquela bola de pelo?\nEra uma preguiça, pendurada num galho, de pelo marrom meio esverdeado. Ela estava parada.\nBia e Téo sentaram na grama para esperar. Esperaram cinco minutos. Dez minutos. Meia hora.\n— Ela não vai fazer nada? — bufou Téo, arrancando um tufo de grama.\nBem nessa hora, a preguiça esticou um braço, bem devagarinho, e puxou uma folha até a boca. Mastigou com toda a calma do mundo.\n— Viu? — riu o tio Juca. — Quem tem pressa não vê a preguiça.\nÀ noite, os primos trocaram de tarefa. Téo, que sempre preferia as histórias, ficou com o verbete. Ele pesquisou com atenção e escreveu, separando cada parte com um título:\n“PREGUIÇA. Mamífero. Onde vive: no alto das árvores de florestas da América Central e da América do Sul. O que come: principalmente folhas. Comportamento: move-se muito devagar e passa a maior parte da vida pendurada nos galhos. Desce da árvore mais ou menos uma vez por semana para fazer cocô. Apesar de lenta em terra, é boa nadadora. Curiosidade: algas podem crescer no seu pelo e deixá-lo esverdeado, o que ajuda o animal a se esconder entre as folhas.”\n— Até que verbete é legal — admitiu Téo. — É como um mapa de informações.\nBia, por sua vez, escreveu a história. Começava assim: “Seu Lento chegou atrasado ao próprio aniversário. Quando apagou as velas, os convidados já estavam voltando para o almoço do dia seguinte.”\nTéo gargalhou tanto que acordou Pipoca, que dormia no colo da vó.\nAntes de dormir, Bia olhou pela janela, para o escuro onde estava a embaúba.\n— Boa noite, preguiça — sussurrou. — Amanhã a gente espera você de novo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que árvore estava a preguiça?",
+       "options": [
+        "Num pé de manga",
+        "Numa embaúba",
+        "Num coqueiro"
+       ],
+       "answer": "Numa embaúba",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Téo ficou impaciente?",
+       "options": [
+        "Porque estava com muita fome",
+        "Porque a preguiça demorou muito para se mexer",
+        "Porque perdeu o caderno"
+       ],
+       "answer": "Porque a preguiça demorou muito para se mexer",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, o que a preguiça come?",
+       "options": [
+        "Principalmente insetos",
+        "Principalmente folhas",
+        "Principalmente peixes"
+       ],
+       "answer": "Principalmente folhas",
+       "accept": [],
+       "hint": "Procure a parte “O que come”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, com que frequência a preguiça desce da árvore?",
+       "options": [
+        "Várias vezes por dia",
+        "Mais ou menos uma vez por semana",
+        "Uma vez por ano"
+       ],
+       "answer": "Mais ou menos uma vez por semana",
+       "accept": [],
+       "hint": "Releia o verbete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, por que o pelo da preguiça pode ficar esverdeado?",
+       "options": [
+        "Porque algas crescem nele",
+        "Porque ela rola na grama",
+        "Porque ela come folhas demais"
+       ],
+       "answer": "Porque algas crescem nele",
+       "accept": [],
+       "hint": "Procure a parte “Curiosidade”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem escreveu o verbete desta vez?",
+       "options": [
+        "Téo",
+        "O tio Juca",
+        "Bia"
+       ],
+       "answer": "Téo",
+       "accept": [],
+       "hint": "Os primos trocaram de tarefa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual destas frases é do verbete, e não da história?",
+       "options": [
+        "Apesar de lenta em terra, é boa nadadora.",
+        "Seu Lento chegou atrasado ao próprio aniversário.",
+        "Os convidados já estavam voltando para o almoço do dia seguinte."
+       ],
+       "answer": "Apesar de lenta em terra, é boa nadadora.",
+       "accept": [],
+       "hint": "Qual frase traz um fato verdadeiro sobre o animal?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que ser lenta e ter o pelo esverdeado pode ajudar a preguiça a se proteger?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em quem poderia querer encontrá-la.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Pegadas na areia",
+     "synopsis": "Na praia, a bióloga Dalva mostra às crianças os ninhos de tartaruga-marinha. Ao entardecer, elas veem os filhotes correndo para o mar.",
+     "text": "Nas férias, Bia, Téo e a vó Nena viajaram para a praia. Numa manhã, encontraram um pedaço de areia cercado por estacas e fitas.\n— Não pisem aí, por favor! — avisou uma mulher de boné. — Eu sou a Dalva, bióloga. Aqui embaixo tem um ninho de tartaruga-marinha.\n— Tartaruga no meio da areia? — estranhou Téo. — Ela não mora no mar?\n— Mora — respondeu Dalva. — Mas a mãe sai da água para cavar o ninho e pôr os ovos na praia. Depois volta para o mar. Os filhotes nascem sozinhos.\nDalva contou que os filhotes daquele ninho deviam nascer em breve e convidou as crianças para voltar no fim da tarde.\nQuando o sol começou a se pôr, a areia do ninho se mexeu. Uma cabecinha apareceu, depois outra, e mais outra. Dezenas de tartaruguinhas escuras saíram e começaram a correr, atrapalhadas, em direção às ondas.\n— Apaguem as lanternas, por favor — pediu Dalva. — Luzes fortes confundem os filhotes, e eles podem ir para o lado errado.\nTodos ficaram em silêncio. Bia sentiu os olhos molharem quando a última tartaruguinha foi levada por uma onda.\nNo hotel, os primos escreveram o verbete à luz de um abajur:\n“TARTARUGA-MARINHA. Réptil. Onde vive: nos oceanos; as fêmeas saem do mar para pôr os ovos na areia da praia. O que come: depende da espécie: algumas comem algas, outras comem águas-vivas, caranguejos ou esponjas. Comportamento: respira ar e precisa subir à superfície da água para respirar. Os filhotes nascem na areia e caminham sozinhos até o mar. Curiosidade: a temperatura da areia ajuda a decidir se os filhotes serão machos ou fêmeas; areia mais quente costuma produzir mais fêmeas.”\n— Esta parte da temperatura eu nunca ia imaginar — disse Téo.\n— Nem inventando história! — riu Bia.\nAntes de ir embora, as crianças desenharam um cartaz: “Cuidado: ninho de tartaruga. Não pise e não acenda luzes à noite.” Dalva gostou tanto que pendurou o cartaz perto das estacas.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para onde Bia, Téo e a vó viajaram?",
+       "options": [
+        "Para a praia",
+        "Para o sítio do tio Juca",
+        "Para a montanha"
+       ],
+       "answer": "Para a praia",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da bióloga?",
+       "options": [],
+       "answer": "Dalva",
+       "accept": [],
+       "hint": "Ela usava boné.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Dalva pediu para apagar as lanternas?",
+       "options": [
+        "Porque a bateria ia acabar",
+        "Porque já era hora de dormir",
+        "Porque luzes fortes confundem os filhotes"
+       ],
+       "answer": "Porque luzes fortes confundem os filhotes",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, a tartaruga-marinha é que tipo de animal?",
+       "options": [
+        "Peixe",
+        "Réptil",
+        "Mamífero"
+       ],
+       "answer": "Réptil",
+       "accept": [],
+       "hint": "Veja a primeira informação do verbete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, onde as fêmeas põem os ovos?",
+       "options": [
+        "Em cima das pedras",
+        "No fundo do mar",
+        "Na areia da praia"
+       ],
+       "answer": "Na areia da praia",
+       "accept": [],
+       "hint": "Releia o verbete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, o que ajuda a decidir se os filhotes serão machos ou fêmeas?",
+       "options": [
+        "A temperatura da areia",
+        "A cor da casca do ovo",
+        "O tamanho das ondas"
+       ],
+       "answer": "A temperatura da areia",
+       "accept": [],
+       "hint": "Procure a parte “Curiosidade”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Bia se sentiu ao ver a última tartaruguinha ir embora com a onda?",
+       "options": [
+        "Emocionada",
+        "Entediada",
+        "Com raiva"
+       ],
+       "answer": "Emocionada",
+       "accept": [],
+       "hint": "O que aconteceu com os olhos dela?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que as crianças fizeram o cartaz para colocar perto do ninho?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que pode atrapalhar os filhotes.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O bico que engana",
+     "synopsis": "Um tucano aparece no mamoeiro da vizinha e Téo acha que o bico deve ser pesadíssimo. As crianças conferem a informação em dois livros e escrevem o verbete com as próprias palavras.",
+     "text": "De volta para casa, Bia acordou com um barulho estranho, meio rouco. No mamoeiro da vizinha, dona Cotinha, havia um pássaro preto com o peito amarelo e um bico laranja enorme.\n— Um tucano! — gritou ela, puxando Téo pela manga do pijama.\nO tucano bicou um mamão maduro, jogou um pedaço para cima e engoliu de uma vez.\n— Coitado — disse Téo. — Com um bico desse tamanho, ele deve ter dor no pescoço. Deve pesar mais que uma pedra.\nBia não tinha tanta certeza.\n— Vamos ver na enciclopédia.\nA enciclopédia verde dizia que o bico do tucano é leve. Téo desconfiou.\n— Esse livro é velho. E se estiver errado?\n— Então vamos conferir em outro — sugeriu a vó Nena. — Quem faz verbete precisa ter certeza das informações.\nEles foram à biblioteca do bairro e encontraram um livro novo sobre aves. Ele dizia a mesma coisa: o bico é grande, mas leve, porque por dentro é cheio de espaços com ar.\nTéo ia copiar a frase inteira do livro, mas a vó balançou a cabeça.\n— Leiam, entendam e escrevam com as palavras de vocês.\nDepois de muito apagar e reescrever, ficou assim:\n“TUCANO. Ave. Onde vive: florestas e matas da América Central e da América do Sul. O que come: principalmente frutas, mas também insetos, ovos e pequenos animais. Corpo: tem um bico enorme e colorido, mas leve, porque por dentro é cheio de espaços com ar. Importância: ao comer frutas, espalha as sementes pela mata e ajuda novas árvores a nascer. Curiosidade: o bico também ajuda o tucano a perder calor nos dias quentes.”\n— Então ele não tem dor no pescoço — concluiu Téo, aliviado.\nNo dia seguinte, dona Cotinha recebeu um bilhete na caixa de correio: “Obrigado por emprestar o seu mamoeiro ao tucano. Ele ajuda a plantar árvores novas!” Estava assinado: Bia, Téo e Pipoca.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o tucano apareceu?",
+       "options": [
+        "Na areia da praia",
+        "No mamoeiro da dona Cotinha",
+        "No telhado da escola"
+       ],
+       "answer": "No mamoeiro da dona Cotinha",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Téo pensava sobre o bico do tucano antes de pesquisar?",
+       "options": [
+        "Que era pequeno demais",
+        "Que era feito de plástico",
+        "Que era muito pesado"
+       ],
+       "answer": "Que era muito pesado",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, por que o bico do tucano é leve?",
+       "options": [
+        "Porque o tucano o lixa todos os dias",
+        "Porque é feito de penas",
+        "Porque por dentro é cheio de espaços com ar"
+       ],
+       "answer": "Porque por dentro é cheio de espaços com ar",
+       "accept": [],
+       "hint": "Procure a parte “Corpo”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, o que o tucano come principalmente?",
+       "options": [
+        "Peixes",
+        "Folhas",
+        "Frutas"
+       ],
+       "answer": "Frutas",
+       "accept": [],
+       "hint": "Releia o verbete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, como o tucano ajuda a mata?",
+       "options": [
+        "Comendo as folhas secas",
+        "Espalhando sementes",
+        "Cavando tocas"
+       ],
+       "answer": "Espalhando sementes",
+       "accept": [],
+       "hint": "Procure a parte “Importância”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que as crianças conferiram a informação em dois livros?",
+       "options": [
+        "Porque tinham perdido a enciclopédia",
+        "Para ter certeza de que a informação estava correta",
+        "Para copiar mais depressa"
+       ],
+       "answer": "Para ter certeza de que a informação estava correta",
+       "accept": [],
+       "hint": "O que a vó disse sobre quem faz verbete?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a vó Nena pediu quando Téo ia copiar a frase do livro?",
+       "options": [
+        "Que eles escrevessem com as próprias palavras",
+        "Que copiassem tudo igualzinho",
+        "Que escrevessem só o título"
+       ],
+       "answer": "Que eles escrevessem com as próprias palavras",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que as crianças escreveram que o tucano “ajuda a plantar árvores novas” no bilhete para a vizinha?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Releia a parte “Importância” do verbete.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O dia da feira",
+     "synopsis": "Na feira de ciências, Bia e Téo apresentam a enciclopédia com o último verbete, sobre a onça-pintada. Um menino pequeno faz uma pergunta que mostra o que eles aprenderam.",
+     "text": "Finalmente chegou o dia da feira de ciências. Na mesa de Bia e Téo, havia um caderno grosso com uma capa colorida: “Enciclopédia dos Animais Brasileiros — Volume 1”.\nO último verbete tinha ficado pronto na noite anterior:\n“ONÇA-PINTADA. Mamífero carnívoro. É o maior felino das Américas. Onde vive: florestas, cerrados e áreas alagadas, como a Amazônia e o Pantanal. O que come: outros animais, como capivaras, jacarés e queixadas. Corpo: pelo amarelado com manchas escuras em forma de rosa, chamadas rosetas. Comportamento: gosta de água e é ótima nadadora, diferente de muitos gatos.”\nTéo leu o verbete em voz alta para os visitantes e fez uma careta engraçada.\n— Come capivaras… Dona Lama que se cuide!\nAs pessoas riram. Ao lado do verbete, estava a história que Téo tinha escrito: “A onça que tinha medo do escuro”.\nUm menino pequeno, de mochila de dinossauro, puxou a manga de Bia.\n— Essa onça falou mesmo que tinha medo do escuro?\nBia olhou para Téo, e ele respondeu:\n— Não. Essa parte é uma história. A gente inventou para ficar divertida. Mas aqui do lado — e apontou o verbete — tudo é verdade. A gente pesquisou em livros e conferiu.\n— E como eu sei qual é qual? — perguntou o menino.\n— O verbete tem esses títulos pequenos: “Onde vive”, “O que come”… — explicou Bia. — E não tem “era uma vez”.\nO menino procurou a palavra “rosetas”, leu baixinho e sorriu, orgulhoso de ter encontrado sozinho.\nNo fim da tarde, a vó Nena chegou com Pipoca no colo, que só pôde ficar no portão. Ela trazia um pacote embrulhado em papel pardo. Dentro, havia um caderno novo, em branco, com uma etiqueta: “Volume 2”.\n— O Brasil tem muito mais bicho do que cabe num caderno só — disse ela.\nBia e Téo se olharam e sorriram ao mesmo tempo.\n— Próxima aventura: o boto-cor-de-rosa!",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde aconteceu a apresentação da enciclopédia?",
+       "options": [
+        "Na feira de ciências",
+        "No parque de animais",
+        "Na casa da vó Nena"
+       ],
+       "answer": "Na feira de ciências",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, a onça-pintada é o maior felino de onde?",
+       "options": [
+        "Das Américas",
+        "Da Europa",
+        "Da Ásia"
+       ],
+       "answer": "Das Américas",
+       "accept": [],
+       "hint": "Veja o começo do verbete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, segundo o verbete, como se chamam as manchas da onça-pintada?",
+       "options": [],
+       "answer": "rosetas",
+       "accept": [
+        "roseta",
+        "as rosetas"
+       ],
+       "hint": "Procure a parte “Corpo”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o verbete, o que a onça-pintada come?",
+       "options": [
+        "Outros animais, como capivaras e jacarés",
+        "Frutas e folhas",
+        "Néctar das flores"
+       ],
+       "answer": "Outros animais, como capivaras e jacarés",
+       "accept": [],
+       "hint": "Releia o verbete.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o menino de mochila de dinossauro quis saber?",
+       "options": [
+        "Onde ficava o banheiro",
+        "Quanto custava o caderno",
+        "Se a onça da história falou mesmo que tinha medo do escuro"
+       ],
+       "answer": "Se a onça da história falou mesmo que tinha medo do escuro",
+       "accept": [],
+       "hint": "Releia o trecho da história.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Bia explicou a diferença entre o verbete e a história?",
+       "options": [
+        "O verbete tem títulos pequenos com informações e não tem “era uma vez”",
+        "A história é sempre escrita a lápis",
+        "O verbete é sempre mais comprido"
+       ],
+       "answer": "O verbete tem títulos pequenos com informações e não tem “era uma vez”",
+       "accept": [],
+       "hint": "Releia a resposta de Bia ao menino.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Téo disse “Dona Lama que se cuide”?",
+       "options": [
+        "Porque Dona Lama era a professora",
+        "Porque a onça come capivaras, e Dona Lama é uma capivara",
+        "Porque Dona Lama tinha medo do escuro"
+       ],
+       "answer": "Porque a onça come capivaras, e Dona Lama é uma capivara",
+       "accept": [],
+       "hint": "Lembre quem é Dona Lama, do capítulo 1.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a vó Nena deu um caderno em branco escrito “Volume 2” para as crianças?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que ela disse sobre os bichos do Brasil.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
