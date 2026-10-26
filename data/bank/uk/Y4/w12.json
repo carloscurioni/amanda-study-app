@@ -2316,5 +2316,868 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Clube das Duas Versões",
+   "premise": "Lia e o primo Davi fundam, com o bibliotecário seu Otávio, um clube que compara fábulas contadas de jeitos diferentes: uma versão antiga, curtinha, e uma recontagem de uma autora brasileira. A cada semana eles discutem o que mudou — final, cenário, narrador, moral — até escreverem a própria fábula em duas versões.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A cigarra e a formiga, duas vezes",
+     "synopsis": "Lia e o primo Davi descobrem, na biblioteca do bairro, duas versões da mesma fábula. Eles discordam sobre qual é a melhor e fundam o Clube das Duas Versões.",
+     "text": "Toda quarta-feira, Lia e o primo Davi passavam a tarde na biblioteca do bairro. Naquele dia, o bibliotecário, seu Otávio, colocou dois livros sobre a mesa.\n— Hoje tenho um desafio. Os dois livros contam a mesma fábula, mas de jeitos diferentes.\nO primeiro livro era velho, de páginas amareladas. Trazia fábulas curtinhas, contadas há muitos séculos por um contador de histórias da Grécia antiga. Davi leu em voz alta:\n“No verão, a cigarra cantava enquanto a formiga carregava comida. Quando o inverno chegou, a cigarra, com fome, bateu à porta da formiga. ‘O que você fez no verão?’, perguntou a formiga. ‘Eu cantei.’ ‘Pois agora dance!’ E fechou a porta.”\nNo fim da página havia uma frase em letras grossas: “Moral: quem não trabalha hoje pode passar necessidade amanhã.”\nO segundo livro era novo e colorido, escrito por uma autora brasileira chamada Celeste Prado. Lia leu a versão dela. Nessa história, a formiga abria a porta, oferecia sopa quente e convidava a cigarra para ficar. Em troca, a cigarra cantava todas as noites, e o formigueiro inteiro esquecia o frio.\n— Prefiro a segunda! — disse Lia. — A formiga é generosa.\n— Eu prefiro a primeira — respondeu Davi. — É mais justa. A cigarra devia ter trabalhado.\nSeu Otávio sorriu.\n— Vocês dois têm razão de pensar diferente. Comparar versões é perceber o que cada autor mudou e por quê. A primeira ensina sobre trabalho. A segunda diz que a arte também é um tipo de trabalho.\nLia abriu o caderno e desenhou uma tabela com três colunas: personagens, o que acontece e moral.\n— E se a gente comparasse uma fábula por semana? — sugeriu ela.\n— Um clube! — gritou Davi, esquecendo que estava numa biblioteca.\nSeu Otávio fez “psiu”, mas também riu. Assim nasceu o Clube das Duas Versões.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que dia da semana Lia e Davi iam à biblioteca?",
+       "options": [
+        "Segunda-feira",
+        "Quarta-feira",
+        "Sábado"
+       ],
+       "answer": "Quarta-feira",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do bibliotecário?",
+       "options": [],
+       "answer": "seu Otávio",
+       "accept": [
+        "Otávio",
+        "Seu Otavio",
+        "Otavio"
+       ],
+       "hint": "Ele colocou dois livros sobre a mesa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a formiga faz na versão do livro velho?",
+       "options": [
+        "Fecha a porta para a cigarra",
+        "Oferece sopa à cigarra",
+        "Pede para a cigarra cantar"
+       ],
+       "answer": "Fecha a porta para a cigarra",
+       "accept": [],
+       "hint": "Releia o trecho que Davi leu em voz alta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a cigarra faz em troca na versão de Celeste Prado?",
+       "options": [
+        "Varre o formigueiro",
+        "Canta todas as noites",
+        "Busca comida"
+       ],
+       "answer": "Canta todas as noites",
+       "accept": [],
+       "hint": "Pense no talento da cigarra.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual versão Davi prefere?",
+       "options": [
+        "A do livro velho",
+        "A do livro novo",
+        "Nenhuma das duas"
+       ],
+       "answer": "A do livro velho",
+       "accept": [],
+       "hint": "Ele fala que uma delas é mais justa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais são as três colunas da tabela de Lia?",
+       "options": [
+        "Personagens, o que acontece e moral",
+        "Título, autor e data",
+        "Começo, meio e fim"
+       ],
+       "answer": "Personagens, o que acontece e moral",
+       "accept": [],
+       "hint": "Ela desenhou a tabela no caderno.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo seu Otávio, o que a segunda versão quer mostrar?",
+       "options": [
+        "Que a arte também é um tipo de trabalho",
+        "Que é melhor não trabalhar",
+        "Que o inverno é perigoso"
+       ],
+       "answer": "Que a arte também é um tipo de trabalho",
+       "accept": [],
+       "hint": "Releia a explicação do bibliotecário.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a autora brasileira mudou o final da fábula?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que ela queria ensinar de diferente.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Uma corrida com dois finais",
+     "synopsis": "O clube compara duas versões da corrida entre a lebre e a tartaruga. Davi percebe que o começo é igual, mas o final muda tudo.",
+     "text": "Na quarta-feira seguinte, seu Otávio trouxe a fábula da lebre e da tartaruga. Lia leu a versão antiga, bem curta:\n“A lebre zombava da tartaruga por ser lenta. A tartaruga a desafiou para uma corrida. A lebre saiu na frente e, tão confiante, deitou-se para dormir debaixo de uma árvore. A tartaruga seguiu sem parar e cruzou a linha de chegada primeiro.”\nMoral: devagar e sempre se chega longe.\nDepois, Davi leu a versão de Celeste Prado. O começo era quase igual: a lebre zombava, a corrida começava e a lebre cochilava na sombra. Mas, quando a tartaruga passou pela árvore, parou.\n— Acorde, amiga — disse ela. — Se você continuar dormindo, nem vai ver o fim da corrida.\nA lebre acordou assustada e envergonhada. As duas seguiram lado a lado, conversando, e cruzaram a linha juntas. Os bichos da floresta aplaudiram as duas.\nDavi coçou a cabeça.\n— Espera aí. O começo é igualzinho, mas o final mudou tudo!\n— É isso que o clube precisa anotar — disse Lia, puxando o caderno. — O que ficou igual e o que ficou diferente.\nNa tabela, ela escreveu: personagens iguais, corrida igual, cochilo igual. Na linha de baixo: final diferente, moral diferente.\n— Qual é a moral da segunda? — perguntou seu Otávio.\nDavi pensou um pouco.\n— Acho que é: ganhar sozinho não é tão bom quanto chegar junto.\n— Ou: a persistência pode andar ao lado da gentileza — completou Lia.\nSeu Otávio anotou as duas frases num cartaz e pendurou na parede da biblioteca. Embaixo, escreveu com letra caprichada: “Clube das Duas Versões — fábula nº 2”.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual fábula seu Otávio trouxe?",
+       "options": [
+        "A lebre e a tartaruga",
+        "A raposa e as uvas",
+        "O leão e o ratinho"
+       ],
+       "answer": "A lebre e a tartaruga",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a lebre dorme?",
+       "options": [
+        "Debaixo de uma árvore",
+        "Dentro de uma toca",
+        "Perto do rio"
+       ],
+       "answer": "Debaixo de uma árvore",
+       "accept": [],
+       "hint": "Procure onde ela cochilou.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem vence a corrida na versão antiga?",
+       "options": [
+        "A tartaruga",
+        "A lebre",
+        "As duas juntas"
+       ],
+       "answer": "A tartaruga",
+       "accept": [],
+       "hint": "Lembre-se da moral “devagar e sempre”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a tartaruga faz na versão de Celeste Prado?",
+       "options": [
+        "Acorda a lebre",
+        "Passa sem fazer barulho",
+        "Desiste da corrida"
+       ],
+       "answer": "Acorda a lebre",
+       "accept": [],
+       "hint": "Ela parou ao passar pela árvore.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como as duas terminam a corrida na versão nova?",
+       "options": [
+        "Cruzam a linha juntas",
+        "A lebre chega primeiro",
+        "Ninguém termina"
+       ],
+       "answer": "Cruzam a linha juntas",
+       "accept": [],
+       "hint": "Releia o que os bichos aplaudiram.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Davi, o que muda entre as duas versões?",
+       "options": [
+        "O final",
+        "Os personagens",
+        "O começo"
+       ],
+       "answer": "O final",
+       "accept": [],
+       "hint": "Ele diz que o começo é igualzinho.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a lebre se sente ao ser acordada?",
+       "options": [
+        "Assustada e envergonhada",
+        "Brava e orgulhosa",
+        "Feliz e tranquila"
+       ],
+       "answer": "Assustada e envergonhada",
+       "accept": [],
+       "hint": "Veja as palavras que descrevem a lebre ao acordar.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a lebre ficou envergonhada quando a tartaruga a acordou?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre como a lebre tratava a tartaruga no começo.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: As uvas do sítio",
+     "synopsis": "O clube lê duas versões da raposa e as uvas. Lia descobre que a autora nova mudou o cenário e a forma como a raposa resolve o problema.",
+     "text": "Naquela semana, choveu tanto que só Lia e Davi apareceram na biblioteca. Seu Otávio entregou a eles a fábula da raposa e as uvas.\nA versão antiga dizia: “Uma raposa faminta viu cachos de uvas pendurados numa parreira alta. Pulou uma vez, duas, três, mas não alcançou. Então foi embora dizendo: ‘Estão verdes. Nem queria mesmo.’”\nMoral: é fácil desprezar aquilo que não se consegue alcançar.\nDavi riu.\n— Eu já fiz isso! Quando não consegui andar de skate, falei que skate era chato.\nNa versão de Celeste Prado, a história se passava no quintal de um sítio no interior, com galinhas, um pé de jabuticaba e uma parreira que subia pelo telhado. A raposa pulava e não alcançava as uvas, igual à outra. Mas, em vez de ir embora resmungando, ela olhou para cima e viu um macaco no galho da jabuticabeira.\n— Amigo, você me ajuda? Eu divido as uvas com você.\nO macaco pulou para o telhado, soltou um cacho e os dois comeram juntos, sentados na varanda.\nMoral: pedir ajuda não é vergonha.\n— A autora mudou o lugar — notou Lia. — A primeira não diz onde fica a parreira. A segunda tem sítio, varanda, jabuticaba… Parece o sítio da minha avó.\n— E a raposa ficou mais esperta — disse Davi. — Ou mais humilde?\n— Talvez as duas coisas — respondeu seu Otávio. — Quando um autor reconta uma fábula, ele pode trazer a história para perto dos seus leitores.\nLia acrescentou uma coluna nova na tabela: cenário. E Davi prometeu que ia pedir ajuda para aprender a andar de skate.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que só Lia e Davi foram à biblioteca?",
+       "options": [
+        "Porque choveu muito",
+        "Porque era feriado",
+        "Porque a biblioteca estava fechando"
+       ],
+       "answer": "Porque choveu muito",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a raposa diz das uvas na versão antiga?",
+       "options": [
+        "Que estão verdes",
+        "Que estão podres",
+        "Que são do macaco"
+       ],
+       "answer": "Que estão verdes",
+       "accept": [],
+       "hint": "Ela foi embora resmungando.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que esporte Davi não conseguiu aprender?",
+       "options": [],
+       "answer": "skate",
+       "accept": [
+        "andar de skate",
+        "o skate"
+       ],
+       "hint": "Ele achou o esporte chato.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde se passa a versão de Celeste Prado?",
+       "options": [
+        "No quintal de um sítio",
+        "Numa floresta escura",
+        "Numa cidade grande"
+       ],
+       "answer": "No quintal de um sítio",
+       "accept": [],
+       "hint": "Lia compara o lugar com a casa da avó.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que animal ajuda a raposa na versão nova?",
+       "options": [],
+       "answer": "o macaco",
+       "accept": [
+        "macaco",
+        "um macaco"
+       ],
+       "hint": "Ele estava num galho da jabuticabeira.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a moral da versão nova?",
+       "options": [
+        "Pedir ajuda não é vergonha",
+        "Devagar e sempre se chega longe",
+        "Cuidado com bajuladores"
+       ],
+       "answer": "Pedir ajuda não é vergonha",
+       "accept": [],
+       "hint": "Pense no que a raposa fez de diferente.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que coluna nova Lia acrescenta na tabela?",
+       "options": [
+        "Cenário",
+        "Narrador",
+        "Autor"
+       ],
+       "answer": "Cenário",
+       "accept": [],
+       "hint": "Ela percebeu que o lugar mudou.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Davi se identificou com a raposa da versão antiga?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre o que ele contou sobre o skate.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: Quem conta a história?",
+     "synopsis": "Na fábula do leão e do ratinho, a moral das duas versões é a mesma. Mesmo assim, Davi descobre uma diferença importante: quem narra a história.",
+     "text": "— Hoje vai ser fácil — anunciou Davi. — Eu já conheço a fábula do leão e do ratinho.\nSeu Otávio piscou.\n— Conhece as duas versões?\nA versão antiga contava: “Um leão pegou um ratinho que corria sobre ele. O ratinho implorou: ‘Solte-me, e um dia eu ajudo você.’ O leão riu, mas soltou. Dias depois, o leão caiu numa rede de caçadores. O ratinho ouviu seus rugidos, roeu as cordas e o libertou.”\nMoral: até os pequenos podem ajudar os grandes.\nLia abriu o livro de Celeste Prado e leu:\n“Eu sou pequeno, eu sei. Meu bigode é fino e meu coração bate rápido como um tambor. Naquela manhã, tropecei na juba do leão e achei que era o meu fim. Mas ele me soltou, rindo de mim. Eu fiquei com a promessa guardada no peito. Quando ouvi o rugido preso na rede, nem pensei: corri, roí, roí, até meus dentes doerem.”\nDavi arregalou os olhos.\n— Quem está falando é o ratinho!\n— Exato — disse seu Otávio. — Na primeira versão, há um narrador de fora, que só observa. Na segunda, o próprio ratinho conta, usando “eu”. Chamamos isso de narrador em primeira pessoa.\n— A moral é a mesma — observou Lia —, mas parece outra história. Na segunda, a gente sente o medo do ratinho.\nDavi ficou quieto um instante, depois sorriu.\n— Então eu não conhecia as duas versões.\nNa tabela do clube, Lia criou mais uma coluna: narrador. Na versão antiga escreveu “de fora”. Na nova, “o ratinho (eu)”.\nAntes de irem embora, Davi pegou emprestado o livro de Celeste Prado. Queria ler as outras fábulas contadas pelos bichos.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi acha que o encontro vai ser fácil?",
+       "options": [
+        "Porque já conhece a fábula",
+        "Porque a fábula é curta",
+        "Porque Lia vai ler tudo"
+       ],
+       "answer": "Porque já conhece a fábula",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o leão fica preso?",
+       "options": [
+        "Numa rede de caçadores",
+        "Numa jaula",
+        "Num buraco"
+       ],
+       "answer": "Numa rede de caçadores",
+       "accept": [],
+       "hint": "Releia a versão antiga.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como o ratinho liberta o leão?",
+       "options": [
+        "Roendo as cordas",
+        "Chamando outros bichos",
+        "Desatando um nó com as patas"
+       ],
+       "answer": "Roendo as cordas",
+       "accept": [],
+       "hint": "Pense nos dentes do ratinho.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem narra a versão de Celeste Prado?",
+       "options": [
+        "O ratinho",
+        "O leão",
+        "Um caçador"
+       ],
+       "answer": "O ratinho",
+       "accept": [],
+       "hint": "Repare em quem diz “eu”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama o narrador que usa “eu” e participa da história?",
+       "options": [],
+       "answer": "primeira pessoa",
+       "accept": [
+        "narrador em primeira pessoa",
+        "em primeira pessoa",
+        "1ª pessoa"
+       ],
+       "hint": "Seu Otávio explica esse nome.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que fica igual nas duas versões?",
+       "options": [
+        "A moral",
+        "O narrador",
+        "As palavras"
+       ],
+       "answer": "A moral",
+       "accept": [],
+       "hint": "Lia comenta isso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia diz que a gente sente na segunda versão?",
+       "options": [
+        "O medo do ratinho",
+        "A raiva do leão",
+        "A alegria dos caçadores"
+       ],
+       "answer": "O medo do ratinho",
+       "accept": [],
+       "hint": "Lembre como o coração do ratinho batia.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que contar a história pela voz do ratinho deixa a fábula mais emocionante?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que o leitor fica sabendo quando o personagem fala de si mesmo.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O corvo que aprendeu a lição",
+     "synopsis": "O clube compara duas versões do corvo e da raposa. Na versão nova, o corvo parece já conhecer a fábula antiga e não cai no truque.",
+     "text": "Naquela quarta, a sala de leitura estava cheia: dois colegas da escola, Nina e Caio, quiseram entrar no clube. Seu Otávio escolheu a fábula do corvo e da raposa.\nNina leu a versão antiga: “Um corvo pousou num galho com um pedaço de queijo no bico. A raposa, querendo o queijo, disse: ‘Que penas lindas! Se sua voz for tão bonita, você é o rei das aves.’ O corvo, vaidoso, abriu o bico para cantar. O queijo caiu, e a raposa o pegou e fugiu.”\nMoral: cuidado com quem elogia demais querendo algo em troca.\nDepois, Caio leu a versão de Celeste Prado. A raposa fazia os mesmos elogios, até exagerava: dizia que o corvo cantava melhor que o sabiá. O corvo ouviu tudo com calma. Então, antes de abrir o bico, prendeu o queijo no galho com a pata.\n— Obrigado, dona raposa! — grasnou ele, bem alto e desafinado. — Minha avó me contou uma história parecida com esta. Eu prestei atenção.\nA raposa foi embora de barriga vazia, e o corvo comeu o queijo em paz.\nA sala inteira caiu na risada.\n— O corvo leu a primeira fábula! — disse Davi.\n— É como se a autora estivesse conversando com a versão antiga — explicou Lia. — Ela sabe que a gente já conhece o final e brinca com isso.\n— E qual é a moral? — quis saber Nina.\nCaio respondeu:\n— Quem aprende com as histórias não cai no mesmo truque.\nSeu Otávio concordou.\n— Muitas recontagens fazem isso: usam o que o leitor já sabe para criar uma surpresa.\nAgora o clube tinha quatro membros, e a tabela de Lia precisou de uma folha nova.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem entrou no clube?",
+       "options": [
+        "Nina e Caio",
+        "Bia e Téo",
+        "Ana e Leo"
+       ],
+       "answer": "Nina e Caio",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que o corvo tinha no bico?",
+       "options": [],
+       "answer": "queijo",
+       "accept": [
+        "um pedaço de queijo",
+        "o queijo"
+       ],
+       "hint": "A raposa queria muito esse alimento.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o corvo abre o bico na versão antiga?",
+       "options": [
+        "Para cantar, por vaidade",
+        "Para comer o queijo",
+        "Para chamar a avó"
+       ],
+       "answer": "Para cantar, por vaidade",
+       "accept": [],
+       "hint": "Pense no efeito dos elogios.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o corvo faz antes de cantar na versão nova?",
+       "options": [
+        "Prende o queijo no galho com a pata",
+        "Esconde o queijo num ninho",
+        "Joga o queijo para a raposa"
+       ],
+       "answer": "Prende o queijo no galho com a pata",
+       "accept": [],
+       "hint": "Releia o que ele fez com calma.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como o corvo aprendeu a não cair no truque?",
+       "options": [
+        "A avó contou uma história parecida",
+        "Leu um aviso na floresta",
+        "Outro corvo o avisou"
+       ],
+       "answer": "A avó contou uma história parecida",
+       "accept": [],
+       "hint": "Veja o que ele grasnou para a raposa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a turma reage à versão nova?",
+       "options": [
+        "Cai na risada",
+        "Fica triste",
+        "Fica com medo"
+       ],
+       "answer": "Cai na risada",
+       "accept": [],
+       "hint": "Releia o que acontece na sala.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia quer dizer com “a autora estivesse conversando com a versão antiga”?",
+       "options": [
+        "Ela brinca com o final que o leitor já conhece",
+        "Ela copiou a versão antiga",
+        "Ela escreveu uma carta ao autor antigo"
+       ],
+       "answer": "Ela brinca com o final que o leitor já conhece",
+       "accept": [],
+       "hint": "Pense na surpresa do final.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a raposa exagerou nos elogios ao corvo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que ela queria conseguir.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O sino da aldeia",
+     "synopsis": "O clube discute a fábula da criança pastora que mentia sobre o lobo. Lia e Davi brigam por causa da moral e fazem as pazes de um jeito inesperado.",
+     "text": "A fábula da semana era a do pastorzinho que gritava “Lobo!”. Davi leu a versão antiga:\n“Um menino que cuidava de ovelhas gritou ‘Lobo! Lobo!’ só para ver os aldeões correrem. Riu muito. Fez isso outra vez. No dia em que o lobo apareceu de verdade, ele gritou, mas ninguém acreditou. O lobo levou as ovelhas.”\nMoral: quem mente perde a confiança, mesmo quando diz a verdade.\nNa versão de Celeste Prado, quem cuidava das ovelhas era uma menina. Depois da segunda mentira, ela viu o rosto cansado dos aldeões e sentiu um aperto no peito. Foi de casa em casa pedir desculpas. Para recuperar a confiança, prometeu tocar um pequeno sino só quando houvesse perigo de verdade. Quando o lobo apareceu, o sino tocou, e os aldeões vieram, desconfiados, mas vieram. As ovelhas foram salvas.\nMoral: a confiança se perde rápido, mas pode ser reconstruída com honestidade.\n— Essa versão é fraca — disse Davi. — Mentiu, tem que sofrer a consequência.\n— Não é fraca! — rebateu Lia. — Todo mundo erra. O importante é consertar.\nOs dois ficaram emburrados. Nina e Caio se olharam sem saber o que fazer.\nSeu Otávio puxou uma cadeira.\n— Sabem que vocês acabaram de fazer o que as duas versões fazem? Uma mostra a consequência. A outra mostra o conserto. As duas falam de confiança.\nDavi ficou em silêncio. Depois estendeu a mão para a prima.\n— Desculpa por ter falado alto.\n— Desculpa também — disse Lia. — Acho que precisamos de um sino.\nTodos riram. Na tabela, Lia escreveu na coluna “moral” as duas frases, uma embaixo da outra, e desenhou um sininho no canto da página.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o menino da versão antiga gritava “Lobo!”?",
+       "options": [
+        "Para ver os aldeões correrem",
+        "Porque tinha medo",
+        "Para chamar o pai"
+       ],
+       "answer": "Para ver os aldeões correrem",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que acontece quando o lobo aparece de verdade na versão antiga?",
+       "options": [
+        "Ninguém acredita no menino",
+        "Os aldeões salvam as ovelhas",
+        "O menino espanta o lobo"
+       ],
+       "answer": "Ninguém acredita no menino",
+       "accept": [],
+       "hint": "Pense no resultado das mentiras.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem cuida das ovelhas na versão de Celeste Prado?",
+       "options": [
+        "Uma menina",
+        "Um velho pastor",
+        "Um cachorro"
+       ],
+       "answer": "Uma menina",
+       "accept": [],
+       "hint": "Releia o começo da versão nova.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que objeto a menina promete tocar só quando houver perigo?",
+       "options": [],
+       "answer": "sino",
+       "accept": [
+        "um sino",
+        "o sino",
+        "um pequeno sino"
+       ],
+       "hint": "O título do capítulo dá uma pista.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a menina faz depois da segunda mentira?",
+       "options": [
+        "Pede desculpas de casa em casa",
+        "Foge da aldeia",
+        "Mente outra vez"
+       ],
+       "answer": "Pede desculpas de casa em casa",
+       "accept": [],
+       "hint": "Ela sentiu um aperto no peito.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi acha a versão nova fraca?",
+       "options": [
+        "Porque a mentira não tem consequência forte",
+        "Porque é muito longa",
+        "Porque não tem lobo"
+       ],
+       "answer": "Porque a mentira não tem consequência forte",
+       "accept": [],
+       "hint": "Releia a fala de Davi.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, sobre o que as duas versões falam, segundo seu Otávio?",
+       "options": [
+        "Confiança",
+        "Coragem",
+        "Amizade entre animais"
+       ],
+       "answer": "Confiança",
+       "accept": [],
+       "hint": "Ele explica isso depois da briga.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia disse “Acho que precisamos de um sino”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que o sino significa na versão nova.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A nossa fábula em duas versões",
+     "synopsis": "Para encerrar o semestre, Lia e Davi escrevem duas versões de uma fábula inventada por eles e apresentam na biblioteca. O público descobre que as duas podem estar certas.",
+     "text": "No último encontro do semestre, seu Otávio fez um convite:\n— Que tal vocês escreverem a sua própria fábula? Em duas versões, claro.\nLia e Davi inventaram juntos a história de um papagaio que repetia tudo o que ouvia. Depois, cada um escreveu do seu jeito.\nNo sábado, a biblioteca se encheu de famílias. Davi leu primeiro. A versão dele era curta, como as fábulas antigas:\n“Um papagaio repetia os segredos que ouvia na floresta. Contou o segredo do tatu para a capivara e o da capivara para a onça. Logo, nenhum bicho queria conversar perto dele. O papagaio ficou sozinho no galho.”\nMoral: quem espalha segredos perde os amigos.\nDepois foi a vez de Lia. A versão dela tinha diálogos, um rio de águas verdes e um papagaio chamado Juca. Juca também espalhava segredos e também ficava sozinho. Mas uma tarde, a coruja sentou ao lado dele:\n— Você tem um dom, Juca. Repete tudo com perfeição. Por que não repetir só coisas boas?\nJuca passou a levar recados de aniversário, avisos de chuva e elogios de um bicho para outro. Virou o mensageiro mais querido da floresta.\nMoral: um talento pode ferir ou ajudar; depende de como se usa.\nQuando terminaram, seu Otávio perguntou ao público:\n— Qual versão é a certa?\nUma senhora levantou a mão.\n— As duas. Uma avisa do perigo. A outra mostra o caminho.\nDavi e Lia se olharam e sorriram. Era exatamente o que o clube tinha aprendido o semestre inteiro.\nSeu Otávio entregou aos quatro membros um diploma do Clube das Duas Versões. Lia guardou o dela dentro do caderno, ao lado da tabela que agora ocupava seis páginas.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que desafio seu Otávio propõe?",
+       "options": [
+        "Escrever uma fábula em duas versões",
+        "Ler dez fábulas",
+        "Desenhar os personagens"
+       ],
+       "answer": "Escrever uma fábula em duas versões",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que animal é o personagem principal da fábula inventada?",
+       "options": [],
+       "answer": "papagaio",
+       "accept": [
+        "o papagaio",
+        "um papagaio"
+       ],
+       "hint": "Ele repetia tudo o que ouvia.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como é a versão de Davi?",
+       "options": [
+        "Curta, como as fábulas antigas",
+        "Longa, com muitos diálogos",
+        "Em forma de poema"
+       ],
+       "answer": "Curta, como as fábulas antigas",
+       "accept": [],
+       "hint": "Releia como ela é descrita.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do papagaio na versão de Lia?",
+       "options": [],
+       "answer": "Juca",
+       "accept": [],
+       "hint": "Só uma das versões dá nome a ele.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem dá um conselho ao papagaio na versão de Lia?",
+       "options": [
+        "A coruja",
+        "A onça",
+        "O tatu"
+       ],
+       "answer": "A coruja",
+       "accept": [],
+       "hint": "Ela sentou ao lado dele numa tarde.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o papagaio passa a fazer na versão de Lia?",
+       "options": [
+        "Levar recados e elogios",
+        "Guardar segredos num ninho",
+        "Morar longe da floresta"
+       ],
+       "answer": "Levar recados e elogios",
+       "accept": [],
+       "hint": "Pense em como ele virou mensageiro.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a senhora do público quer dizer com “Uma avisa do perigo. A outra mostra o caminho”?",
+       "options": [
+        "As duas versões ensinam algo útil",
+        "Só a versão de Lia é boa",
+        "As versões são iguais"
+       ],
+       "answer": "As duas versões ensinam algo útil",
+       "accept": [],
+       "hint": "Ela respondeu que as duas eram certas.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o clube aprendeu que duas versões diferentes podem estar certas?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre das discussões entre Lia e Davi nos outros capítulos.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
