@@ -1,0 +1,750 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y3",
+ "academic_week": 12,
+ "subjects": {
+  "bss": {
+   "topic": "Meios de transporte: ontem e hoje",
+   "questions": [
+    {
+     "id": "r1rfnqzsnp9p81",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes é um meio de transporte aéreo?",
+     "options": [
+      "Avião",
+      "Barco",
+      "Ônibus"
+     ],
+     "answer": "Avião",
+     "accept": [],
+     "hint": "Aéreo tem a ver com o ar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpq3hgdal469d",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes é um meio de transporte aquático?",
+     "options": [
+      "Canoa",
+      "Bicicleta",
+      "Helicóptero"
+     ],
+     "answer": "Canoa",
+     "accept": [],
+     "hint": "Aquático tem a ver com a água.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ranicrkkg5lz6",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes é um meio de transporte terrestre?",
+     "options": [
+      "Trem",
+      "Navio",
+      "Balão"
+     ],
+     "answer": "Trem",
+     "accept": [],
+     "hint": "Terrestre anda sobre a terra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17n4jbt50y8d2",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chamam os transportes que andam sobre a terra, como o carro e o ônibus?",
+     "options": [],
+     "answer": "terrestres",
+     "accept": [
+      "terrestre",
+      "transportes terrestres"
+     ],
+     "hint": "A palavra vem de \"terra\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g7icrgg5fc3l",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chamam os transportes que se movem na água, como o barco e o navio?",
+     "options": [],
+     "answer": "aquáticos",
+     "accept": [
+      "aquático",
+      "transportes aquáticos"
+     ],
+     "hint": "A palavra vem de \"água\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvgwmto10iawjj",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O helicóptero é um transporte:",
+     "options": [
+      "aéreo",
+      "aquático",
+      "terrestre"
+     ],
+     "answer": "aéreo",
+     "accept": [],
+     "hint": "Onde o helicóptero se movimenta?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r163t45a1ljce82",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Antigamente, antes dos carros, muitas pessoas viajavam em:",
+     "options": [
+      "carroças puxadas por cavalos",
+      "aviões a jato",
+      "metrôs"
+     ],
+     "answer": "carroças puxadas por cavalos",
+     "accept": [],
+     "hint": "Pense em transportes que usavam a força dos animais.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r165grnempeoar",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes transportes é mais moderno?",
+     "options": [
+      "Metrô",
+      "Carro de boi",
+      "Charrete"
+     ],
+     "answer": "Metrô",
+     "accept": [],
+     "hint": "Qual deles usa trilhos e eletricidade nas grandes cidades?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r66gvnbw7jx2",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Antes dos navios a motor, os barcos grandes eram movidos principalmente:",
+     "options": [
+      "pelo vento nas velas",
+      "por energia solar",
+      "por gasolina"
+     ],
+     "answer": "pelo vento nas velas",
+     "accept": [],
+     "hint": "Pense no pano grande que fica no mastro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v0vtmnvi1813",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que puxava o bonde antes de ele ser elétrico?",
+     "options": [
+      "Animais, como burros e cavalos",
+      "Aviões",
+      "Navios"
+     ],
+     "answer": "Animais, como burros e cavalos",
+     "accept": [],
+     "hint": "Os primeiros bondes usavam a força de animais.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kvd97x1p0rnbs",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual transporte NÃO precisa de combustível nem de eletricidade para andar?",
+     "options": [
+      "Bicicleta",
+      "Ônibus",
+      "Avião"
+     ],
+     "answer": "Bicicleta",
+     "accept": [],
+     "hint": "Qual deles anda com a força das pernas?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x0k47tv8v5fy",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual grupo tem só transportes aquáticos?",
+     "options": [
+      "Jangada, navio e lancha",
+      "Trem, barco e moto",
+      "Avião, canoa e carro"
+     ],
+     "answer": "Jangada, navio e lancha",
+     "accept": [],
+     "hint": "Todos precisam estar na água.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwfdvjy11zssl",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Uma viagem que hoje leva poucas horas de avião levava, no passado, muitos dias de navio. Isso mostra que os transportes ficaram:",
+     "options": [
+      "mais rápidos",
+      "mais lentos",
+      "iguais"
+     ],
+     "answer": "mais rápidos",
+     "accept": [],
+     "hint": "Compare o tempo da viagem antes e agora.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9fse8v19ei7di",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes é um transporte coletivo, que leva muitas pessoas ao mesmo tempo?",
+     "options": [
+      "Ônibus",
+      "Patinete",
+      "Bicicleta"
+     ],
+     "answer": "Ônibus",
+     "accept": [],
+     "hint": "Coletivo quer dizer para muita gente junta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v3hkwu1darjv7",
+     "subject": "bss",
+     "type": "open",
+     "q": "Cite uma vantagem e uma desvantagem dos carros em relação às carroças de antigamente.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na velocidade e também na poluição ou no trânsito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14jce6u1m8kwps",
+     "subject": "bss",
+     "type": "open",
+     "q": "Qual meio de transporte você usa para ir à escola? Ele é terrestre, aquático ou aéreo? Explique.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no caminho que ele faz: na terra, na água ou no ar.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Inverted commas for direct speech",
+   "questions": [
+    {
+     "id": "rx32pot1d4zuty",
+     "subject": "en",
+     "type": "mc",
+     "q": "What are inverted commas used for?",
+     "options": [
+      "To show the words someone says",
+      "To show a question",
+      "To end a sentence"
+     ],
+     "answer": "To show the words someone says",
+     "accept": [],
+     "hint": "They are also called speech marks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rewd1m653e9rf",
+     "subject": "en",
+     "type": "short",
+     "q": "What is another name for inverted commas?",
+     "options": [],
+     "answer": "speech marks",
+     "accept": [
+      "speech mark",
+      "quotation marks",
+      "quote marks"
+     ],
+     "hint": "They mark speech.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h4rdlh14uumbz",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence uses inverted commas correctly?",
+     "options": [
+      "\"Let's go to the park,\" said Mia.",
+      "\"Let's go to the park, said Mia.\"",
+      "Let's go \"to the park,\" said Mia."
+     ],
+     "answer": "\"Let's go to the park,\" said Mia.",
+     "accept": [],
+     "hint": "Only the spoken words go inside.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n74vi8874xk4",
+     "subject": "en",
+     "type": "mc",
+     "q": "In the sentence: \"I love pizza,\" said Leo. Which words are spoken?",
+     "options": [
+      "I love pizza",
+      "said Leo",
+      "Leo"
+     ],
+     "answer": "I love pizza",
+     "accept": [],
+     "hint": "Look inside the inverted commas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn3edcwze00p",
+     "subject": "en",
+     "type": "mc",
+     "q": "In the sentence: \"Where is my hat?\" asked Grandpa. Who is the speaker?",
+     "options": [
+      "Grandpa",
+      "the hat",
+      "nobody"
+     ],
+     "answer": "Grandpa",
+     "accept": [],
+     "hint": "Look at the words outside the inverted commas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w7ivon1isz7b3",
+     "subject": "en",
+     "type": "mc",
+     "q": "Where does the comma go? \"It is raining___\" said Ruby.",
+     "options": [
+      "Inside the inverted commas, after raining",
+      "After said",
+      "Before It"
+     ],
+     "answer": "Inside the inverted commas, after raining",
+     "accept": [],
+     "hint": "The punctuation stays with the spoken words.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6j3cw11d8uiud",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence is punctuated correctly?",
+     "options": [
+      "\"Can I help?\" asked Tom.",
+      "\"Can I help\" asked Tom?",
+      "\"Can I help,\" asked Tom?"
+     ],
+     "answer": "\"Can I help?\" asked Tom.",
+     "accept": [],
+     "hint": "Tom is asking a question. Where should the question mark go?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kt16iqzk79q9",
+     "subject": "en",
+     "type": "mc",
+     "q": "What should you do when a new person starts speaking in a story?",
+     "options": [
+      "Start a new line",
+      "Use a full stop only",
+      "Write in capital letters"
+     ],
+     "answer": "Start a new line",
+     "accept": [],
+     "hint": "This helps the reader see who is talking.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iyf1md1lzg8ul",
+     "subject": "en",
+     "type": "mc",
+     "q": "The spoken words always start with a:",
+     "options": [
+      "capital letter",
+      "comma",
+      "question mark"
+     ],
+     "answer": "capital letter",
+     "accept": [],
+     "hint": "Look at the first letter after the opening inverted commas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c3tr9n1g7v32h",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word could replace 'said' to show someone is speaking very quietly?",
+     "options": [
+      "whispered",
+      "shouted",
+      "yelled"
+     ],
+     "answer": "whispered",
+     "accept": [],
+     "hint": "Think of a soft, quiet voice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14f94e3hyzumi",
+     "subject": "en",
+     "type": "mc",
+     "q": "How many people are speaking? \"Hello,\" said Zara. \"Hi!\" replied Omar.",
+     "options": [
+      "Two",
+      "One",
+      "Three"
+     ],
+     "answer": "Two",
+     "accept": [],
+     "hint": "Count the speakers' names.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tn9dp5g809ec",
+     "subject": "en",
+     "type": "short",
+     "q": "Which punctuation mark is missing at the end of the spoken words? \"Is it lunchtime___\" asked Ben.",
+     "options": [],
+     "answer": "?",
+     "accept": [
+      "question mark",
+      "a question mark"
+     ],
+     "hint": "Ben wants to know something.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9pm2kv3atvi3",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence has the inverted commas in the wrong place?",
+     "options": [
+      "\"My dog\" is called Rex, said Ana.",
+      "\"My dog is called Rex,\" said Ana.",
+      "Ana said, \"My dog is called Rex.\""
+     ],
+     "answer": "\"My dog\" is called Rex, said Ana.",
+     "accept": [],
+     "hint": "Check that all the spoken words are inside.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re9tza61lmyevn",
+     "subject": "en",
+     "type": "open",
+     "q": "Rewrite this with the correct punctuation: we are late said Mum",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Find the spoken words first, then add inverted commas, a capital letter and a comma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reyc4sprrupm3",
+     "subject": "en",
+     "type": "open",
+     "q": "Write two lines of dialogue between two friends at the beach. Use inverted commas and start a new line for each speaker.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Each friend gets their own line.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_read": {
+   "topic": "Inference with evidence — 'The Iron Man'",
+   "questions": [
+    {
+     "id": "r3gc6l45yohn7",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What does it mean to infer?",
+     "options": [
+      "To work something out from clues in the text",
+      "To copy words from the text",
+      "To read very fast"
+     ],
+     "answer": "To work something out from clues in the text",
+     "accept": [],
+     "hint": "Think about being a reading detective.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs7ixc9qtddou",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is a quotation?",
+     "options": [
+      "The exact words copied from the text",
+      "A picture in the book",
+      "The title of the book"
+     ],
+     "answer": "The exact words copied from the text",
+     "accept": [],
+     "hint": "You use inverted commas around it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x367ch9lw4lr",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Why do we use a quotation when we answer a question?",
+     "options": [
+      "To prove our answer with evidence",
+      "To make the answer longer",
+      "To show the page number"
+     ],
+     "answer": "To prove our answer with evidence",
+     "accept": [],
+     "hint": "Think about how a detective proves an idea.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r181zgta1sqwe9t",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'Kai slammed the door and stomped up the stairs.' How does Kai feel?",
+     "options": [
+      "Angry",
+      "Sleepy",
+      "Proud"
+     ],
+     "answer": "Angry",
+     "accept": [],
+     "hint": "Look at the verbs 'slammed' and 'stomped'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn7rx3c1haxms9",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'Lily's hands shook as she stepped onto the stage.' How does Lily feel?",
+     "options": [
+      "Nervous",
+      "Bored",
+      "Hungry"
+     ],
+     "answer": "Nervous",
+     "accept": [],
+     "hint": "What makes hands shake before a show?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15qut5ufy42m4",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'The giant robot stared at the empty plate and its eyes dimmed.' What does the robot probably want?",
+     "options": [
+      "More food",
+      "To sleep on the plate",
+      "To go swimming"
+     ],
+     "answer": "More food",
+     "accept": [],
+     "hint": "The plate is empty.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19two7y13fpswo",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'Rosa hid the broken vase behind the sofa.' Why did Rosa hide the vase?",
+     "options": [
+      "She did not want anyone to know she broke it",
+      "She wanted to fix it later in the garden",
+      "She thought it was a present"
+     ],
+     "answer": "She did not want anyone to know she broke it",
+     "accept": [],
+     "hint": "Why do people hide things?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jsromjy7ik0r",
+     "subject": "en_read",
+     "type": "short",
+     "q": "Read: 'Sam wrapped his scarf tighter and watched his breath make clouds.' What is the weather like? (one word)",
+     "options": [],
+     "answer": "cold",
+     "accept": [
+      "freezing",
+      "very cold",
+      "chilly"
+     ],
+     "hint": "When can you see your breath?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n6tba2zastet",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'The farmer looked at the giant footprints in his field and ran to the village.' Which quotation shows the farmer was worried?",
+     "options": [
+      "'ran to the village'",
+      "'looked at'",
+      "'in his field'"
+     ],
+     "answer": "'ran to the village'",
+     "accept": [],
+     "hint": "Which action shows he wanted help quickly?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruik0cp1n143ep",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "A motive is:",
+     "options": [
+      "the reason why a character does something",
+      "the place where a story happens",
+      "the last part of a story"
+     ],
+     "answer": "the reason why a character does something",
+     "accept": [],
+     "hint": "Think about 'why' questions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14vnvaq5g1lja",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'Ben gave his last biscuit to the little boy who was crying.' What can we infer about Ben?",
+     "options": [
+      "He is kind",
+      "He is greedy",
+      "He is lazy"
+     ],
+     "answer": "He is kind",
+     "accept": [],
+     "hint": "What does his action show?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yu61dx1snukvm",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'The metal man sat alone on the cliff, looking at the town lights below.' How might the metal man feel?",
+     "options": [
+      "Lonely",
+      "Excited",
+      "Silly"
+     ],
+     "answer": "Lonely",
+     "accept": [],
+     "hint": "Look at the word 'alone'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rati3mb1ofifh1",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which is the best way to start an answer that uses evidence?",
+     "options": [
+      "I think this because the text says...",
+      "The end.",
+      "Once upon a time..."
+     ],
+     "answer": "I think this because the text says...",
+     "accept": [],
+     "hint": "You need your idea and your proof.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yeh5g31jws176",
+     "subject": "en_read",
+     "type": "short",
+     "q": "Read: 'Mo's mouth watered when he smelled the bread from the bakery.' What does Mo want? (one or two words)",
+     "options": [],
+     "answer": "bread",
+     "accept": [
+      "some bread",
+      "the bread",
+      "to eat",
+      "food"
+     ],
+     "hint": "What did he smell?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cipdnc1y35hix",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Read: 'Ella kept looking at the clock and tapping her foot.' How does Ella feel? Use a quotation to prove it.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pick the words that give you a clue, and put them in inverted commas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxk1m7113fwiae",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Read: 'The robot lifted the trapped sheep gently out of the hole.' What does this tell us about the robot? Explain with evidence.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the word 'gently'.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}

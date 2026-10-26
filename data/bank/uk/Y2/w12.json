@@ -1702,6 +1702,34 @@
      "hint": "Três delas são nomes de lugares específicos, com maiúscula.",
      "text": "",
      "errors": []
+    },
+    {
+     "id": "r1xov1d5cdqxyn",
+     "subject": "pt",
+     "type": "short",
+     "q": "Escreva corretamente o nome do país: \"brasil\"",
+     "options": [],
+     "answer": "Brasil",
+     "accept": [],
+     "hint": "Nome de país é nome próprio.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m9msm5qv5xko",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"A menina Luísa mora em Curitiba.\", quais são os nomes próprios?",
+     "options": [
+      "Luísa e Curitiba",
+      "menina e Luísa",
+      "menina e Curitiba"
+     ],
+     "answer": "Luísa e Curitiba",
+     "accept": [],
+     "hint": "Procure as palavras com letra maiúscula no meio da frase.",
+     "text": "",
+     "errors": []
     }
    ]
   },
@@ -3103,6 +3131,862 @@
        "subject": "pt_leit",
        "type": "open",
        "q": "Qual aventura de Tuca e Lino você mais gostou? Por quê?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "Bia and the Star of the River",
+   "premise": "Bia visits her grandpa on a river in the Amazon. Each day he tells her part of the Brazilian legend of the Vitória-régia, the giant water lily, and Bia finds out what the legend explains.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Big Green Plates",
+     "synopsis": "Bia arrives at Grandpa's river house and sees giant round leaves floating on the water.",
+     "text": "Bia went to stay with Grandpa Tito.\nGrandpa lives in a little wooden house by a big river in the Amazon.\nThey went down to the river in a small boat. Grandpa paddled slowly.\n\"Look, Bia!\" said Grandpa.\nBia looked. On the water there were lots of round green leaves. They were huge! Each one was bigger than a table. The edges turned up, like a big plate.\n\"Are they plates for giants?\" asked Bia.\nGrandpa laughed. \"No. They are the leaves of a water lily. People call it the Vitória-régia.\"\nA little bird hopped across one leaf. Hop, hop, hop!\n\"There is a story about this plant,\" said Grandpa. \"It is a very old legend.\"\n\"Tell me now!\" said Bia.\n\"Not now,\" said Grandpa with a smile. \"I will tell you a little bit every day.\"\nThat night, Bia fell asleep thinking about the giant green plates on the river.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who did Bia go to stay with?",
+       "options": [
+        "Grandpa Tito",
+        "Her teacher",
+        "Her aunt"
+       ],
+       "answer": "Grandpa Tito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Grandpa live?",
+       "options": [
+        "By a big river",
+        "In a big city",
+        "On a snowy mountain"
+       ],
+       "answer": "By a big river",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did they go down the river?",
+       "options": [
+        "In a small boat",
+        "On a bus",
+        "On a bike"
+       ],
+       "answer": "In a small boat",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what shape were the leaves?",
+       "options": [
+        "Round",
+        "Square",
+        "Long and thin"
+       ],
+       "answer": "Round",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the water lily?",
+       "options": [],
+       "answer": "Vitória-régia",
+       "accept": [
+        "Vitoria-regia",
+        "Vitória régia",
+        "Vitoria regia"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what hopped across a leaf?",
+       "options": [
+        "A little bird",
+        "A frog",
+        "A cat"
+       ],
+       "answer": "A little bird",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Bia feel about the story?",
+       "options": [
+        "She wanted to hear it now",
+        "She did not care",
+        "She was scared of it"
+       ],
+       "answer": "She wanted to hear it now",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Grandpa tells the story a little bit every day?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: Naiá Loves the Moon",
+     "synopsis": "Grandpa begins the legend about a girl called Naiá who loved the Moon.",
+     "text": "The next day, Bia and Grandpa sat on the steps by the river.\n\"Long ago,\" said Grandpa, \"a girl called Naiá lived in a village by this river.\"\n\"Every night, Naiá looked up at the Moon. The people of the village called the Moon Jaci.\"\n\"Naiá thought Jaci was the most beautiful thing in the sky. She sang songs to the Moon. She danced in the silver light.\"\n\"One night, an old woman told the children a story. She said that Jaci sometimes came down and turned girls into stars, so they could shine in the sky.\"\n\"Naiá's eyes went wide. 'I want to be a star!' she said. 'Then I can live next to Jaci.'\"\nGrandpa stopped.\n\"Is that the end?\" asked Bia.\n\"No,\" said Grandpa. \"But that is enough for today.\"\nThat night, Bia looked out of her window. The Moon was big and round and white.\n\"Hello, Jaci,\" Bia whispered, and she smiled.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the girl in the legend called?",
+       "options": [
+        "Naiá",
+        "Bia",
+        "Jaci"
+       ],
+       "answer": "Naiá",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Naiá look at every night?",
+       "options": [
+        "The Moon",
+        "The river fish",
+        "The trees"
+       ],
+       "answer": "The Moon",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what name did the village people give the Moon?",
+       "options": [],
+       "answer": "Jaci",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Naiá do in the silver light?",
+       "options": [
+        "She danced",
+        "She slept",
+        "She swam"
+       ],
+       "answer": "She danced",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who told the children a story about stars?",
+       "options": [
+        "An old woman",
+        "Grandpa",
+        "A bird"
+       ],
+       "answer": "An old woman",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Naiá want to be?",
+       "options": [
+        "A star",
+        "A fish",
+        "A tree"
+       ],
+       "answer": "A star",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Bia whisper \"Hello, Jaci\"?",
+       "options": [
+        "She was thinking about the legend",
+        "She saw a girl outside",
+        "She was talking to Grandpa"
+       ],
+       "answer": "She was thinking about the legend",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Naiá wanted to live next to the Moon?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Up the Tall Hill",
+     "synopsis": "In the legend, Naiá climbs a tall hill to try to touch the Moon.",
+     "text": "On the third day, it rained. Bia and Grandpa stayed inside and drank warm cocoa.\n\"Now, where was I?\" said Grandpa.\n\"Naiá wanted to be a star!\" said Bia.\n\"Yes,\" said Grandpa. \"So one night, Naiá had an idea. She climbed the tallest hill near the village. She climbed and climbed. Her legs were tired, but she did not stop.\"\n\"At the top, she stood on her toes. She stretched her arms up high. 'Jaci! Here I am!' she called.\"\n\"But the Moon was still very, very far away. Naiá could not touch it.\"\n\"The next night she tried again. And the next night. But the Moon was always too far.\"\n\"Poor Naiá,\" said Bia.\n\"She was sad,\" said Grandpa, \"but she did not give up. She kept looking at the Moon every night.\"\nBia looked at the rain on the window. \"I hope the Moon sees her,\" she said.\n\"We will find out tomorrow,\" said Grandpa.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the weather like?",
+       "options": [
+        "Rainy",
+        "Sunny",
+        "Snowy"
+       ],
+       "answer": "Rainy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Bia and Grandpa drink?",
+       "options": [
+        "Warm cocoa",
+        "Cold juice",
+        "Milk"
+       ],
+       "answer": "Warm cocoa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Naiá climb?",
+       "options": [
+        "The tallest hill",
+        "A big boat",
+        "A house roof"
+       ],
+       "answer": "The tallest hill",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Naiá do at the top?",
+       "options": [
+        "She stretched her arms up high",
+        "She went to sleep",
+        "She sang to the fish"
+       ],
+       "answer": "She stretched her arms up high",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, could Naiá touch the Moon?",
+       "options": [
+        "No, it was too far",
+        "Yes, easily",
+        "Yes, with a stick"
+       ],
+       "answer": "No, it was too far",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many times did Naiá try?",
+       "options": [
+        "Many nights",
+        "Only once",
+        "Never"
+       ],
+       "answer": "Many nights",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which word best describes Naiá?",
+       "options": [
+        "Determined",
+        "Lazy",
+        "Grumpy"
+       ],
+       "answer": "Determined",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Naiá did not give up?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Moon in the Lake",
+     "synopsis": "In the legend, Naiá sees the Moon in the lake, and the Moon turns her into a special flower.",
+     "text": "On the fourth day, the sky was clear again. Bia and Grandpa sat by the river at sunset.\n\"One night,\" said Grandpa, \"Naiá walked to a quiet lake. The water was very still, like a mirror.\"\n\"Naiá looked down. There, in the water, was Jaci! The Moon was shining right there in the lake.\"\n\"'Jaci came down to me!' said Naiá. She was so happy. She reached into the water to touch the Moon, and she fell into the lake.\"\nBia held Grandpa's arm. \"Oh no!\"\n\"Jaci saw everything from the sky,\" said Grandpa softly. \"The Moon loved Naiá very much. So Jaci did not make her a star in the sky. Jaci made her a star of the water instead.\"\n\"Jaci turned Naiá into a beautiful flower with big white petals and giant round leaves. The flower floats on the water and opens under the moonlight.\"\n\"The Vitória-régia!\" said Bia.\n\"Yes,\" said Grandpa. \"People call it the star of the waters.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the lake water like?",
+       "options": [
+        "Very still, like a mirror",
+        "Full of big waves",
+        "Frozen"
+       ],
+       "answer": "Very still, like a mirror",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Naiá see in the water?",
+       "options": [
+        "The Moon",
+        "A fish",
+        "A boat"
+       ],
+       "answer": "The Moon",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Naiá reach into the water?",
+       "options": [
+        "To touch the Moon",
+        "To catch a fish",
+        "To wash her hands"
+       ],
+       "answer": "To touch the Moon",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who saw everything from the sky?",
+       "options": [
+        "Jaci, the Moon",
+        "The old woman",
+        "A bird"
+       ],
+       "answer": "Jaci, the Moon",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Jaci turn Naiá into?",
+       "options": [
+        "A flower",
+        "A star in the sky",
+        "A fish"
+       ],
+       "answer": "A flower",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour were the petals?",
+       "options": [
+        "White",
+        "Blue",
+        "Orange"
+       ],
+       "answer": "White",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what do people call the flower? 'The star of the ___'",
+       "options": [],
+       "answer": "waters",
+       "accept": [
+        "water"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Bia held Grandpa's arm?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: A Flower at Night",
+     "synopsis": "Bia and Grandpa go out at night and watch a water lily flower open.",
+     "text": "\"Can we see the flower?\" asked Bia.\n\"Yes,\" said Grandpa. \"But we must go at night. The Vitória-régia flower opens when it gets dark.\"\nSo that night, they took a torch and got into the boat. The river was quiet. Frogs sang. Croak, croak!\nGrandpa turned off the torch. The Moon lit up the water.\nNext to a big leaf, there was a fat flower bud. Slowly, slowly, it began to open. One white petal. Then another. Then lots more!\n\"It is like a star!\" whispered Bia.\nThe flower smelled sweet. A beetle flew inside it.\n\"Look at it again tomorrow night,\" said Grandpa. \"The flower will be pink.\"\n\"Pink? How?\" asked Bia.\n\"The flower is white on the first night and turns pink on the second night,\" said Grandpa.\nBia looked up at the Moon and down at the flower. She smiled.\n\"Naiá and Jaci can see each other every night,\" she said.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, when does the flower open?",
+       "options": [
+        "At night",
+        "In the morning",
+        "At lunchtime"
+       ],
+       "answer": "At night",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did they take in the boat?",
+       "options": [
+        "A torch",
+        "A kite",
+        "A ball"
+       ],
+       "answer": "A torch",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what animals sang?",
+       "options": [
+        "Frogs",
+        "Dogs",
+        "Cows"
+       ],
+       "answer": "Frogs",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour was the flower on the first night?",
+       "options": [
+        "White",
+        "Pink",
+        "Yellow"
+       ],
+       "answer": "White",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what colour will the flower be on the second night?",
+       "options": [],
+       "answer": "pink",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what flew inside the flower?",
+       "options": [
+        "A beetle",
+        "A bat",
+        "A butterfly"
+       ],
+       "answer": "A beetle",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Grandpa turn off the torch?",
+       "options": [
+        "So the Moon could light the water",
+        "Because the torch was broken",
+        "Because Bia was scared"
+       ],
+       "answer": "So the Moon could light the water",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Bia said Naiá and Jaci can see each other every night?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: What Does the Legend Explain?",
+     "synopsis": "Bia and Grandpa talk about why people told the legend long ago.",
+     "text": "The next morning, Bia drew the flower in her notebook.\n\"Grandpa, is the legend true?\" she asked.\n\"A legend is a very old story,\" said Grandpa. \"People told it long ago to explain things they saw in nature.\"\n\"What does this legend explain?\" asked Bia.\n\"Think about it,\" said Grandpa. \"Why does the flower open at night?\"\nBia thought hard. \"Because Naiá loves the Moon! She opens to see Jaci!\"\n\"Yes. And why is it white and shaped like a star?\"\n\"Because Jaci made her a star of the water!\" said Bia.\n\"And why does it live on the lake?\"\n\"Because that is where Naiá saw the Moon!\"\nGrandpa clapped. \"You are a good thinker, Bia.\"\nBia wrote under her drawing: The legend explains why the flower opens at night.\nThen she coloured the flower white on one side and pink on the other.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Bia do in the morning?",
+       "options": [
+        "She drew the flower",
+        "She went swimming",
+        "She went to school"
+       ],
+       "answer": "She drew the flower",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is a legend?",
+       "options": [
+        "A very old story",
+        "A shopping list",
+        "A song about cars"
+       ],
+       "answer": "A very old story",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did people tell legends long ago?",
+       "options": [
+        "To explain things in nature",
+        "To sell boats",
+        "To learn to count"
+       ],
+       "answer": "To explain things in nature",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the flower open at night, says Bia?",
+       "options": [
+        "To see Jaci, the Moon",
+        "Because it is cold",
+        "To catch fish"
+       ],
+       "answer": "To see Jaci, the Moon",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the flower live on the lake, says Bia?",
+       "options": [
+        "That is where Naiá saw the Moon",
+        "The lake is warm",
+        "There is no room on land"
+       ],
+       "answer": "That is where Naiá saw the Moon",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Grandpa do when Bia answered?",
+       "options": [
+        "He clapped",
+        "He went to sleep",
+        "He laughed at her"
+       ],
+       "answer": "He clapped",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Bia colour the flower white and pink?",
+       "options": [
+        "It changes colour on the second night",
+        "She had no other colours",
+        "Grandpa told her to"
+       ],
+       "answer": "It changes colour on the second night",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think people long ago made up stories to explain nature?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Bia Tells the Legend",
+     "synopsis": "Back at home, Bia tells the legend to her class and shows her drawing.",
+     "text": "At the end of the holiday, Bia hugged Grandpa goodbye.\n\"Thank you for the story, Grandpa,\" she said.\n\"Now it is your story too,\" said Grandpa. \"Tell it to your friends.\"\nOn Monday, Bia's teacher asked, \"Did anyone learn something new in the holidays?\"\nBia put up her hand. She stood at the front of the class with her drawing.\n\"This is a Brazilian legend,\" she said. \"A girl called Naiá loved the Moon. The Moon was called Jaci. Naiá wanted to be a star.\"\nBia told the whole story: the tall hill, the lake like a mirror, and the white flower.\n\"That is why the Vitória-régia opens at night,\" Bia said. \"It is the star of the waters.\"\nHer friend Noah put up his hand. \"Are the leaves really as big as a table?\"\n\"Yes!\" said Bia. \"Even bigger!\"\nEverybody clapped.\nThat night, Bia looked at the Moon. \"Goodnight, Jaci,\" she said. \"Say hello to Naiá for me.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who did Bia hug goodbye?",
+       "options": [
+        "Grandpa",
+        "Her teacher",
+        "Noah"
+       ],
+       "answer": "Grandpa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Grandpa want Bia to do with the story?",
+       "options": [
+        "Tell it to her friends",
+        "Forget it",
+        "Write it on the boat"
+       ],
+       "answer": "Tell it to her friends",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, on which day did Bia tell the story at school?",
+       "options": [
+        "Monday",
+        "Friday",
+        "Sunday"
+       ],
+       "answer": "Monday",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Bia take to the front of the class?",
+       "options": [
+        "Her drawing",
+        "A flower",
+        "A torch"
+       ],
+       "answer": "Her drawing",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of Bia's friend who asked a question?",
+       "options": [],
+       "answer": "Noah",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did everybody do at the end of Bia's story?",
+       "options": [
+        "They clapped",
+        "They went home",
+        "They laughed at Bia"
+       ],
+       "answer": "They clapped",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Bia feel when she told the story?",
+       "options": [
+        "Proud",
+        "Angry",
+        "Bored"
+       ],
+       "answer": "Proud",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Grandpa said, \"Now it is your story too\"?",
        "options": [],
        "answer": "",
        "accept": [],
