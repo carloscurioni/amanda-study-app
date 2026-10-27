@@ -3955,6 +3955,909 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Tiny Notebook",
+   "premise": "On her first journey with Uncle Ravi, a travel writer, twelve-year-old Juno keeps a journal from a harbour at dawn to a glacier lake, learning in each place a new secret of travel writing, until she discovers she can use them all on her own street.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Harbour at Five O'Clock",
+     "synopsis": "Juno begins her first trip with Uncle Ravi, a travel writer, and learns that good travel writing uses all five senses.",
+     "text": "Uncle Ravi woke me at half past four. \"The best way to meet a town,\" he whispered, \"is before it has brushed its hair.\" I did not understand what he meant until we were standing on the harbour wall, wrapped in jumpers, watching the fishing boats come home.\nI had promised Mum I would keep a travel journal. Uncle Ravi writes travel articles for a living, so I thought it would be easy. My first sentence was: The harbour was nice. He read it over my shoulder and laughed kindly. \"Nice is a word that has given up,\" he said. \"Tell me what you can see, hear, smell, taste and touch. Use all five senses, and the reader will be standing next to you.\"\nSo I tried again. I looked properly this time. The boats were painted in faded reds and blues, like old sweets left in a pocket. Gulls circled above them, screaming as if they were arguing over the bill. The air smelled of salt, diesel and something sharp and green that Uncle Ravi said was seaweed drying on the rocks. The stone wall under my hands was cold and wet, and rough enough to scratch my palms.\nAt the fish market, men in yellow boots were sliding crates across the floor. The ice hissed and crackled as they poured it over silver fish that still looked surprised. A woman with a loud, cheerful voice was selling cups of sweet tea from a trolley. I bought one and it burned my tongue, but it tasted of sugar and steam and early mornings.\nUncle Ravi wrote in a tiny notebook while he walked. He told me that travel writers notice details that other people walk past: a cat asleep on a pile of nets, a chalkboard with the day's prices, a child counting the boats aloud. \"Details are what make a place different from every other place,\" he said. \"Anyone can write 'there was a harbour'. Only you can write about this one, today.\"\nBy six o'clock, the sun had climbed over the lighthouse and turned the water the colour of apricot jam. The town was waking up. Shutters rattled open. A baker carried out trays of bread, and the smell drifted along the street like an invitation.\nI sat on a bollard and wrote a whole page. When I read it back, I could hear the gulls again. Uncle Ravi read it too. He did not say it was nice. He said, \"Now you are a travel writer.\" Then he folded his map and told me to pack, because the night train was leaving that evening.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what time does Uncle Ravi wake Juno?",
+       "options": [
+        "Half past four",
+        "Six o'clock",
+        "Half past six",
+        "Midnight"
+       ],
+       "answer": "Half past four",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is Uncle Ravi's job?",
+       "options": [],
+       "answer": "travel writer",
+       "accept": [
+        "travel writer",
+        "a travel writer",
+        "writes travel articles"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was wrong with Juno's first sentence, according to Uncle Ravi?",
+       "options": [
+        "It used a vague word like 'nice' instead of details",
+        "It was too long",
+        "It had a spelling mistake",
+        "It was written in the present tense"
+       ],
+       "answer": "It used a vague word like 'nice' instead of details",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which sense does Juno use when she describes 'salt, diesel and seaweed'?",
+       "options": [
+        "Smell",
+        "Touch",
+        "Hearing",
+        "Taste"
+       ],
+       "answer": "Smell",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the simile 'like old sweets left in a pocket' suggest about the boats?",
+       "options": [
+        "Their colours are faded and a bit worn",
+        "They are brand new",
+        "They are very small",
+        "They are made of sugar"
+       ],
+       "answer": "Their colours are faded and a bit worn",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Uncle Ravi say details are important in travel writing?",
+       "options": [
+        "They make one place different from every other place",
+        "They make the article shorter",
+        "They help the writer sell more fish",
+        "They are easier to write than opinions"
+       ],
+       "answer": "They make one place different from every other place",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what can we infer from Uncle Ravi saying 'Now you are a travel writer'?",
+       "options": [
+        "He thinks Juno's second piece of writing brings the place to life",
+        "He wants Juno to stop writing",
+        "He is joking because the writing is poor",
+        "He has finished his own article"
+       ],
+       "answer": "He thinks Juno's second piece of writing brings the place to life",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Uncle Ravi says the best way to meet a town is 'before it has brushed its hair'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what a town looks like before it is busy and tidy for visitors.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Night Train",
+     "synopsis": "On a fourteen-hour night train, Juno learns to mix facts with feelings and meets a fellow traveller with a story of her own.",
+     "text": "The night train left at twenty to ten, exactly on time. Uncle Ravi said this was a small miracle and wrote it down. Our compartment had two narrow bunks, a fold-down table and a window that rattled whenever we went round a bend. The journey would take fourteen hours. I had never slept on a train before, and I was not sure I would sleep at all.\n\"A good travel piece mixes facts and feelings,\" Uncle Ravi said, unpacking a bag of oranges. \"Facts tell the reader where they are. Feelings tell them why it matters.\" He showed me one of his old articles. Next to a sentence about the length of a bridge, there was a sentence about how his stomach flipped when he looked down. I noticed that the facts made me trust him, and the feelings made me want to keep reading.\nSo I wrote: Our train is 312 metres long, which is about as long as three football pitches. Then I added: When I walked to the dining car, the corridor swayed under my feet, and I felt like a sailor on a ship made of metal.\nIn the dining car, we shared a table with an elderly woman who was knitting a scarf so long that it hung over the edge of the seat. Her name was Mrs Varga, and she had taken this train every winter for forty years to visit her sister in the mountains. \"I have seen this valley in every kind of weather,\" she told us, \"but I never get tired of the moment we come out of the long tunnel.\"\nI asked her what happens in the tunnel. She smiled and said I would have to wait and see. Uncle Ravi winked at me. \"That,\" he whispered, \"is what we call a hook.\"\nBack in our bunks, I lay listening to the train. The wheels made a steady rhythm, clackety-clack, clackety-clack, like a heart that never got tired. Lights from small stations flashed past the window, each one gone before I could read its name. I thought I would stay awake all night, but the rocking was gentle, and the next thing I knew, grey light was creeping under the blind.\nI climbed down and pushed the blind up just as we burst out of a tunnel. I gasped. The whole valley was white. Snow covered the roofs, the fences and the pine trees, and the sky was so clear it looked freshly washed. Further down the carriage, I heard Mrs Varga laugh softly.\nI understood then. Some moments cannot be explained in advance; they have to be arrived at. I wrote that sentence in my journal and underlined it twice.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long does the train journey take?",
+       "options": [
+        "Fourteen hours",
+        "Four hours",
+        "Forty hours",
+        "Ten hours"
+       ],
+       "answer": "Fourteen hours",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is Mrs Varga knitting?",
+       "options": [],
+       "answer": "a scarf",
+       "accept": [
+        "scarf",
+        "a scarf",
+        "a long scarf"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, according to Uncle Ravi, what do facts do in a travel piece?",
+       "options": [
+        "Tell the reader where they are",
+        "Tell the reader why it matters",
+        "Make the piece funny",
+        "Replace the need for description"
+       ],
+       "answer": "Tell the reader where they are",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which sentence from Juno's journal is mainly a fact?",
+       "options": [
+        "Our train is 312 metres long",
+        "I felt like a sailor on a ship made of metal",
+        "The corridor swayed under my feet",
+        "The sky looked freshly washed"
+       ],
+       "answer": "Our train is 312 metres long",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why has Mrs Varga taken this train every winter?",
+       "options": [
+        "To visit her sister in the mountains",
+        "To sell her knitting",
+        "Because she works on the train",
+        "To write a travel article"
+       ],
+       "answer": "To visit her sister in the mountains",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Uncle Ravi mean when he calls Mrs Varga's answer 'a hook'?",
+       "options": [
+        "It makes the listener want to find out what happens next",
+        "It is a tool for fishing",
+        "It is a mistake in her story",
+        "It tells the whole ending at once"
+       ],
+       "answer": "It makes the listener want to find out what happens next",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what can we infer about why Mrs Varga laughs softly at the end?",
+       "options": [
+        "She hears Juno gasp and knows Juno has seen the snowy valley",
+        "She has finished her scarf",
+        "She is laughing at Uncle Ravi",
+        "The train has broken down"
+       ],
+       "answer": "She hears Juno gasp and knows Juno has seen the snowy valley",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Juno underlines her last sentence twice?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what she has learnt about travelling and writing.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Village Above the Clouds",
+     "synopsis": "In a mountain village on market day, Juno practises comparing new things to familiar ones and loses something important.",
+     "text": "The village sat so high on the mountain that, from the edge of the square, we looked down on the clouds instead of up at them. They lay in the valley like spilled milk, soft and white and very still. Uncle Ravi said this was called a temperature inversion, when cold air gets trapped below warmer air. I wrote the fact down, and then I wrote that it felt like standing on the deck of a ship sailing across a sea of cotton wool.\n\"That is your job,\" Uncle Ravi said, reading over my shoulder. \"Your reader has never been here. Compare what is new to something they already know, and you give them a bridge to walk across.\"\nIt was market day. Stalls with striped awnings filled the square, and everybody seemed to know everybody. One stall sold wheels of cheese as big as car tyres. The stallholder cut me a thin slice; it was nutty and salty and so strong that my eyes watered. Another stall sold woollen hats in colours I had no names for, somewhere between plum and storm cloud. An old man played an accordion beside the fountain, and the music wheezed and swooped like a tired bird that still wanted to dance.\nI tried to describe everything. The church bell sounded like a spoon tapped on a giant saucepan. The steep cobbled lanes were as twisty as the inside of a seashell. The goats tied up behind the bakery looked at us with the bored expression of teachers on a Friday afternoon. Uncle Ravi laughed at that one and said I should keep it.\nAt lunchtime we sat on a bench to eat bread and soup. That was when I realised my left glove was missing. It was not just any glove. Mum had knitted it, with a little star on the back, and I had promised to bring both of them home. I felt my face go hot. We walked back through the whole market, but there was no sign of it.\nJust as we were giving up, a boy of about my age ran across the square, waving something red. It was my glove. His name was Teo, and he had found it next to the cheese stall. He did not speak much English, and I did not speak much of his language, but we managed with smiles, pointing and a lot of nodding. He showed me how to say thank you properly, and I said it three times to be sure.\nThat evening, I wrote about the market. I realised that the glove was the most important part of the story. Places are not only made of buildings and views. They are made of the people who are kind to you when you are lost.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why can Juno look down on the clouds?",
+       "options": [
+        "The village is very high on the mountain",
+        "She is in an aeroplane",
+        "She is standing on a tall tower",
+        "The clouds are on a lake"
+       ],
+       "answer": "The village is very high on the mountain",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the boy who finds Juno's glove?",
+       "options": [],
+       "answer": "Teo",
+       "accept": [
+        "Teo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Uncle Ravi say comparisons give the reader?",
+       "options": [
+        "A bridge to walk across",
+        "A list of facts",
+        "A reason to stop reading",
+        "A map of the village"
+       ],
+       "answer": "A bridge to walk across",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which of these is a simile?",
+       "options": [
+        "The cheese wheels were as big as car tyres",
+        "It was market day",
+        "We ate bread and soup",
+        "Teo found the glove"
+       ],
+       "answer": "The cheese wheels were as big as car tyres",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what makes the glove special to Juno?",
+       "options": [
+        "Her mum knitted it",
+        "She bought it at the market",
+        "Uncle Ravi gave it to her",
+        "It is very expensive"
+       ],
+       "answer": "Her mum knitted it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how do Juno and Teo manage to communicate?",
+       "options": [
+        "With smiles, pointing and nodding",
+        "By writing letters",
+        "With a translation app",
+        "Through Uncle Ravi"
+       ],
+       "answer": "With smiles, pointing and nodding",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Juno learn about what makes a place?",
+       "options": [
+        "People and their kindness are part of a place",
+        "Only buildings and views matter",
+        "Markets are all the same",
+        "Travel writers should not write about themselves"
+       ],
+       "answer": "People and their kindness are part of a place",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Uncle Ravi tells Juno to keep the comparison about the goats and the teachers?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how humour and familiar images help a reader.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: A Bad Day in the Rain",
+     "synopsis": "When their bus breaks down in the rain, Juno learns that honest travel writing includes the bad days too.",
+     "text": "Not every day of a journey is a postcard. Our fourth day was more like a postcard that had been dropped in a puddle and stepped on.\nIt began with rain. Not gentle rain, but the heavy, sideways kind that finds its way down the back of your neck however tightly you zip your coat. We were taking a local bus to the lake, two hours along a narrow road. Forty minutes after we set off, there was a loud bang, a smell of burning rubber, and the bus wheezed to a stop beside a field of very wet sheep.\nThe driver climbed out, looked at the engine, and said something that made the other passengers groan. Uncle Ravi translated: we would have to wait for another bus, which might come in one hour or in three. Nobody knew.\nI was cold, hungry and cross. My shoes were soaked. I opened my journal and wrote: This is the worst day of the trip. Nothing is happening. There is nothing to write about.\nUncle Ravi read it and, annoyingly, smiled. \"Readers love a bad day,\" he said. \"It makes them trust you. If you only write about sunsets and perfect meals, they will think you are selling something. Tell the truth, and if you can, find the funny side.\"\nI did not feel like finding the funny side. But then the passengers started to get organised. A woman in a yellow raincoat led us across the road to a tiny café with steamed-up windows. The owner pushed three tables together, and soon everyone from the bus was squeezed in, drinking hot chocolate so thick you could almost stand a spoon in it. A student played cards with two small children. The driver dried his hat on the radiator, and steam rose from it like a little cloud.\nOne of the sheep wandered right up to the café window and stared in at us. It looked so offended by the weather that the whole café burst out laughing, me included.\nThe new bus arrived two and a half hours later. By then I had learnt four card games, two words in the local language, and the name of the woman in the yellow raincoat, who was called Senna. She worked as a nurse in the town by the lake and took this bus every week. \"It breaks down every month,\" she said cheerfully. \"That is how I have made most of my friends.\"\nThat night I rewrote my journal entry. I kept the first line, because it was honest. But I added the café, the steaming hat and the offended sheep. When I read it back, it was the best thing I had written so far.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where were Juno and Uncle Ravi travelling to by bus?",
+       "options": [
+        "The lake",
+        "The harbour",
+        "The mountain village",
+        "The airport"
+       ],
+       "answer": "The lake",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happened to the bus?",
+       "options": [
+        "It broke down",
+        "It ran out of seats",
+        "It took a wrong turn",
+        "It left without them"
+       ],
+       "answer": "It broke down",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what did the passengers drink in the café?",
+       "options": [],
+       "answer": "hot chocolate",
+       "accept": [
+        "hot chocolate",
+        "hot chocolates"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Uncle Ravi say readers love a bad day?",
+       "options": [
+        "It makes them trust the writer",
+        "It is shorter to write about",
+        "It makes the place sound dangerous",
+        "It sells more bus tickets"
+       ],
+       "answer": "It makes them trust the writer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the 'postcard dropped in a puddle' an example of?",
+       "options": [
+        "A metaphor showing the day went badly",
+        "A fact about the weather",
+        "A real postcard Juno sent",
+        "An instruction from Uncle Ravi"
+       ],
+       "answer": "A metaphor showing the day went badly",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Senna say the breakdowns have helped her?",
+       "options": [
+        "She has made most of her friends while waiting",
+        "She gets free tickets",
+        "She can sleep longer",
+        "She likes walking in the rain"
+       ],
+       "answer": "She has made most of her friends while waiting",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Juno keep her first line when she rewrites her entry?",
+       "options": [
+        "Because it was honest about how she felt",
+        "Because she had no time to change it",
+        "Because Uncle Ravi wrote it",
+        "Because it was the funniest line"
+       ],
+       "answer": "Because it was honest about how she felt",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the sheep at the window changes Juno's mood?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what happens when a whole group laughs together.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Lake That Changes Colour",
+     "synopsis": "At a glacier lake, Juno learns why researched facts matter and how to fit them into a story without making it boring.",
+     "text": "The lake was the colour of a swimming pool in an advertisement, a bright milky turquoise that looked almost too perfect to be real. I stood on the shore and tried to think of a word for it, but every word felt too small.\nOur guide that morning was a young woman called Marta, who worked for the park. She carried a walking pole and a flask of tea, and she knew the answer to every question I asked. I wanted to know why the water was that colour. Marta explained that the lake is fed by a glacier higher up the mountain. As the ice moves, it grinds the rock beneath it into dust as fine as flour. Streams carry this dust into the lake, where it floats in the water and reflects the light, giving the lake its turquoise colour. People call it glacial flour.\n\"So the colour changes,\" Marta said. \"In early summer, when more ice is melting, there is more rock dust and the water is brighter. On a grey day it looks darker and greener.\"\nI wrote it all down, every word, and then I panicked. My page looked like a science textbook. Uncle Ravi agreed. \"Facts are like salt,\" he said. \"You need them, but a whole spoonful ruins the soup. Choose the most surprising one and put it where it helps the story.\"\nSo I chose the glacier grinding rocks into flour, because that was the part that made me say wow. I put it right after the moment I first saw the lake, so the reader would be asking the same question I was. Uncle Ravi also showed me a trick: some travel articles have a small fact box at the side, with useful information like opening times or the best season to visit. That way, the main story can stay a story.\nWe walked for three hours around the shore. The path climbed through pine forest, then opened onto a ledge where we could see the glacier itself, a grey-white tongue of ice pushing between two peaks. It did not look like it was moving at all. Marta told us it moves a little every day, slower than a snail, but it never stops.\nOn the way back, the sun went behind a cloud, and the lake changed from turquoise to a deep jade green, just as Marta had said. It felt like the lake was proving her right.\nThat night I made my first fact box. It said: Best time to visit: early summer. Bring: warm layers, even in July. Remember: glaciers move every day, slower than a snail. Then I wrote my story, and I only used one spoonful of salt.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour is the lake when Juno first sees it?",
+       "options": [
+        "Milky turquoise",
+        "Dark brown",
+        "Bright red",
+        "Clear and colourless"
+       ],
+       "answer": "Milky turquoise",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the fine rock dust from the glacier called?",
+       "options": [],
+       "answer": "glacial flour",
+       "accept": [
+        "glacial flour"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what makes the rock dust that colours the lake?",
+       "options": [
+        "The glacier grinding the rock as it moves",
+        "Wind blowing sand from a desert",
+        "Paint from the town",
+        "Fish living in the lake"
+       ],
+       "answer": "The glacier grinding the rock as it moves",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Uncle Ravi compare facts to?",
+       "options": [
+        "Salt",
+        "Sugar",
+        "Bricks",
+        "Stars"
+       ],
+       "answer": "Salt",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the purpose of a fact box in a travel article?",
+       "options": [
+        "To give useful information so the main story can stay a story",
+        "To replace the whole article",
+        "To list the writer's feelings",
+        "To tell a joke"
+       ],
+       "answer": "To give useful information so the main story can stay a story",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Juno put the glacier fact right after she first sees the lake?",
+       "options": [
+        "So the reader is asking the same question she was",
+        "Because it was the last fact Marta said",
+        "Because the fact box was full",
+        "So the article would be longer"
+       ],
+       "answer": "So the reader is asking the same question she was",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what can we infer from the lake turning green when the sun goes in?",
+       "options": [
+        "Light affects how the colour of the lake looks",
+        "The glacier has stopped moving",
+        "Someone has added dye to the water",
+        "The lake has become shallower"
+       ],
+       "answer": "Light affects how the colour of the lake looks",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Juno chose the most surprising fact rather than all of the facts?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how a reader feels when there are too many facts at once.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Lost in the Old Town",
+     "synopsis": "Separated from Uncle Ravi in a maze of old streets, Juno finds her way back and discovers that people bring a place to life.",
+     "text": "The old town was a maze of narrow streets, so narrow in places that I could touch the walls on both sides at once. Washing hung between the balconies like bunting, and every corner seemed to lead to a smaller corner. Uncle Ravi loved it. I loved it too, right up until the moment I turned round and he was not there.\nI had stopped to watch a man painting a sign above a shop, letter by letter, with a brush as thin as a pencil. When I looked up again, the crowd had moved on, and Uncle Ravi's green hat had vanished. My heart started thumping. All the streets looked the same: stone, shutters, flowerpots, more stone.\nThen I remembered what Uncle Ravi had told me on the first day. \"If we ever lose each other, go back to the last place we agreed on and wait.\" That morning we had agreed on the bell tower in the main square. The problem was finding it.\nI stood still and took a breath. I listened. Somewhere above the rooftops, a bell was ringing the quarter hour. I followed the sound, uphill, past a cat asleep on a step and a grandmother shelling peas on her doorstep. When I lost the sound, I asked a baker who was carrying a tray of rolls. I did not know the words, so I pointed upwards and said \"tower?\" He understood at once. He walked me to the end of his street, pointed left, and gave me a warm roll for the journey, waving away my money.\nTwo more turns, and the street opened suddenly into the square. The bell tower stood in the middle, tall and golden in the afternoon light. Uncle Ravi was sitting on its steps, looking very relieved and pretending not to be. He had gone straight there as soon as he realised I was missing, exactly as we had planned.\n\"You followed the rules,\" he said, giving me a hug. \"And you have brought me a roll.\" I gave him half.\nThat evening I wrote about the old town, and I noticed something. The best parts of my writing were not the descriptions of buildings. They were the people: the sign painter with his tiny brush, the grandmother with her peas, the baker who refused my money. Uncle Ravi said this is the secret of the best travel writers. \"A place without people is a photograph,\" he said. \"People make it a story.\"\nI added one more line at the end of my entry: Getting lost was scary, but it showed me the old town in a way that a map never could.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Juno watching when she lost Uncle Ravi?",
+       "options": [
+        "A man painting a shop sign",
+        "A cat asleep on a step",
+        "A grandmother shelling peas",
+        "A street musician"
+       ],
+       "answer": "A man painting a shop sign",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where had Juno and Uncle Ravi agreed to meet if they got lost?",
+       "options": [
+        "At the bell tower in the main square",
+        "At the bakery",
+        "At the hotel",
+        "At the train station"
+       ],
+       "answer": "At the bell tower in the main square",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what colour was Uncle Ravi's hat?",
+       "options": [],
+       "answer": "green",
+       "accept": [
+        "green"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which sound helps Juno find her way?",
+       "options": [
+        "A bell ringing the quarter hour",
+        "A train whistle",
+        "Music from an accordion",
+        "Gulls screaming"
+       ],
+       "answer": "A bell ringing the quarter hour",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the baker give Juno?",
+       "options": [
+        "A warm roll",
+        "A map",
+        "A coin",
+        "A postcard"
+       ],
+       "answer": "A warm roll",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does 'looking very relieved and pretending not to be' suggest about Uncle Ravi?",
+       "options": [
+        "He was worried but tried to stay calm in front of Juno",
+        "He had not noticed Juno was missing",
+        "He was angry with Juno",
+        "He was tired of waiting"
+       ],
+       "answer": "He was worried but tried to stay calm in front of Juno",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Uncle Ravi mean by 'A place without people is a photograph'?",
+       "options": [
+        "People bring a place to life in writing",
+        "Travel writers should take more photos",
+        "Old towns are usually empty",
+        "Photographs are better than stories"
+       ],
+       "answer": "People bring a place to life in writing",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Juno says getting lost showed her the old town 'in a way that a map never could'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about who and what she met only because she was lost.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Home, Seen New",
+     "synopsis": "Back home, Juno uses everything she has learnt to write about her own street, and discovers that travel writing can begin at the front door.",
+     "text": "Coming home felt strange. Our street looked smaller than I remembered, and very ordinary. The same red postbox, the same lamp post with the wonky sticker, the same dog barking behind the same gate. After snowy valleys and turquoise lakes, I could not imagine anything here worth writing about.\nUncle Ravi was staying with us for one night before his next trip. At breakfast I told him my journal was finished, because the journey was over. He put down his toast. \"Travel writing is not about how far you go,\" he said. \"It is about how carefully you look. Write about this street as if you had just stepped off the night train.\"\nI thought he was joking, but he gave me a challenge: one hour, one street, all five senses, at least one fact, at least one person, and the truth even if it was boring.\nSo I went outside with my journal. At first I saw nothing. Then I started to notice. The postbox was not just red; its paint had faded to the colour of a strawberry left in the sun, and someone had polished the little brass plate until it shone. The barking dog, I discovered, was called Biscuit, and he only barked because he wanted people to stop and say hello. His owner, Mr Okoye, told me he had lived on the street for thirty-one years and had planted the cherry tree on the corner himself. That was my fact, and it came with a person attached.\nI listened. A bus sighed at the stop. Somebody was practising the piano badly and bravely, playing the same five notes again and again. The air smelled of cut grass and toast. The pavement was warm under my hand where the sun had been on it, and cold where it had not.\nI even wrote the boring part honestly: On Tuesday mornings, nothing much happens on our street, and that is part of what makes it home.\nWhen the hour was up, I read my piece to Uncle Ravi and Mum. Mum went quiet, and then she said she had never thought of our street like that. Uncle Ravi said it was the best thing I had written all trip, and I believed him, because by now I knew he did not hand out compliments like sweets.\nThat evening, while he was packing, he left a small parcel on my bed. Inside was a new notebook, exactly like his tiny one, and a note: For the next journey. It might be across the world, or across the road. Look carefully either way.\nI opened it to the first page and wrote the date. Then I went to the window to see what was happening outside.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Juno feel about her street when she first gets home?",
+       "options": [
+        "It seems small and ordinary",
+        "It seems exciting and new",
+        "It seems dangerous",
+        "It seems noisy and crowded"
+       ],
+       "answer": "It seems small and ordinary",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, according to Uncle Ravi, what is travel writing really about?",
+       "options": [
+        "How carefully you look",
+        "How far you go",
+        "How much money you spend",
+        "How many photos you take"
+       ],
+       "answer": "How carefully you look",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the barking dog?",
+       "options": [],
+       "answer": "Biscuit",
+       "accept": [
+        "Biscuit"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long has Mr Okoye lived on the street?",
+       "options": [
+        "Thirty-one years",
+        "Thirteen years",
+        "Three years",
+        "Fifty years"
+       ],
+       "answer": "Thirty-one years",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which detail does Juno notice using her sense of hearing?",
+       "options": [
+        "Someone practising the piano",
+        "The smell of cut grass",
+        "The faded red paint",
+        "The warm pavement"
+       ],
+       "answer": "Someone practising the piano",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Juno believe Uncle Ravi's compliment?",
+       "options": [
+        "She knows he does not give compliments easily",
+        "He gives her a present at the same time",
+        "Mum tells her to believe him",
+        "He says it in front of Mr Okoye"
+       ],
+       "answer": "She knows he does not give compliments easily",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the message of the note 'It might be across the world, or across the road'?",
+       "options": [
+        "Interesting places to write about can be near or far",
+        "Juno should move house",
+        "Uncle Ravi is going to live across the road",
+        "Juno must travel abroad to write well"
+       ],
+       "answer": "Interesting places to write about can be near or far",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mum goes quiet after hearing Juno's piece about the street?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how it feels to see something familiar in a new way.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }

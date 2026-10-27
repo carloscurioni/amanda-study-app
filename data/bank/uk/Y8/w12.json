@@ -1776,6 +1776,1027 @@
      "errors": []
     }
    ]
+  },
+  "math": {
+   "topic": "Linear inequalities and the number line",
+   "questions": [
+    {
+     "id": "r1rh9byd6pqplj",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which symbol means 'less than or equal to'?",
+     "options": [
+      "≤",
+      "<",
+      "≥",
+      ">"
+     ],
+     "answer": "≤",
+     "accept": [],
+     "hint": "Look for the symbol that has a line underneath and opens to the right.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9mgy3lq2ne70",
+     "subject": "math",
+     "type": "mc",
+     "q": "Is x = 3 a solution of the inequality x > 3?",
+     "options": [
+      "Yes",
+      "No"
+     ],
+     "answer": "No",
+     "accept": [],
+     "hint": "Check whether 3 is strictly greater than 3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yvvysfl8p8v4",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve x + 5 < 12. What is the largest integer value of x?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "First subtract 5 from both sides.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9b1nbk14n8pqk",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve the inequality 3x > 18.",
+     "options": [],
+     "answer": "x > 6",
+     "accept": [
+      "x>6",
+      "6 < x",
+      "6<x"
+     ],
+     "hint": "Divide both sides by the number in front of x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7pzbhyximqke",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve the inequality 2x − 7 ≤ 9.",
+     "options": [],
+     "answer": "x ≤ 8",
+     "accept": [
+      "x<=8",
+      "x≤8",
+      "x =< 8"
+     ],
+     "hint": "Add 7 to both sides first, then divide.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq9nwho1s00p9k",
+     "subject": "math",
+     "type": "mc",
+     "q": "On a number line, there is an open (empty) circle at 2 and an arrow pointing to the right. Which inequality does this show?",
+     "options": [
+      "x > 2",
+      "x ≥ 2",
+      "x < 2",
+      "x ≤ 2"
+     ],
+     "answer": "x > 2",
+     "accept": [],
+     "hint": "An open circle means the number itself is not included.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n8wfd2smuwex",
+     "subject": "math",
+     "type": "mc",
+     "q": "On a number line, there is a closed (filled) circle at −1 and an arrow pointing to the left. Which inequality does this show?",
+     "options": [
+      "x ≤ −1",
+      "x < −1",
+      "x ≥ −1",
+      "x > −1"
+     ],
+     "answer": "x ≤ −1",
+     "accept": [],
+     "hint": "A filled circle means the number is included.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lfjt01jhisyc",
+     "subject": "math",
+     "type": "mc",
+     "q": "When you multiply or divide both sides of an inequality by a negative number, what must you do?",
+     "options": [
+      "Reverse the inequality sign",
+      "Keep the sign the same",
+      "Change it to an equals sign",
+      "Add 1 to both sides"
+     ],
+     "answer": "Reverse the inequality sign",
+     "accept": [],
+     "hint": "Test it with −1 × (2 < 3).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryz3m7i1xlx1zj",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve the inequality −2x < 10.",
+     "options": [],
+     "answer": "x > −5",
+     "accept": [
+      "x>-5",
+      "x > -5",
+      "-5 < x",
+      "−5 < x"
+     ],
+     "hint": "Dividing by a negative number changes something about the sign.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oi4goryhb4s2",
+     "subject": "math",
+     "type": "num",
+     "q": "How many integers satisfy −2 < x ≤ 3?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "List them: −2 is not included, but 3 is.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fxr8tx1aounx",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which list shows all the integers that satisfy 1 ≤ x < 4?",
+     "options": [
+      "1, 2, 3",
+      "1, 2, 3, 4",
+      "2, 3",
+      "2, 3, 4"
+     ],
+     "answer": "1, 2, 3",
+     "accept": [],
+     "hint": "Check each end: is 1 included? Is 4 included?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ny5sqwa6uo7n",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve the inequality 5x + 3 ≥ 2x + 15.",
+     "options": [],
+     "answer": "x ≥ 4",
+     "accept": [
+      "x>=4",
+      "x≥4",
+      "x => 4"
+     ],
+     "hint": "Collect the x terms on one side and the numbers on the other.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs44mdllzs95m",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the smallest integer n such that 4n − 1 > 20?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Solve for n first, then think about which whole number comes just after.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvhw2vncspgez",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve the inequality x/3 + 2 ≤ 5.",
+     "options": [],
+     "answer": "x ≤ 9",
+     "accept": [
+      "x<=9",
+      "x≤9",
+      "x =< 9"
+     ],
+     "hint": "Subtract 2, then multiply both sides by 3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cj7o80176qrfj",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve the inequality 3(x − 2) > x + 4.",
+     "options": [],
+     "answer": "x > 5",
+     "accept": [
+      "x>5",
+      "5 < x",
+      "5<x"
+     ],
+     "hint": "Expand the brackets first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qu6ri6ya5vzo",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain why x = 4 is not a solution of 2x + 1 < 9.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Substitute x = 4 and compare the result with 9.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Predicado verbal: verbos transitivos e intransitivos",
+   "questions": [
+    {
+     "id": "r1wsgk3k1yrxgsx",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"O bebê dormiu.\", o verbo dormir é:",
+     "options": [
+      "intransitivo",
+      "transitivo direto",
+      "transitivo indireto",
+      "de ligação"
+     ],
+     "answer": "intransitivo",
+     "accept": [],
+     "hint": "Veja se o verbo precisa de um complemento para ter sentido completo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1djbg20vcrizp",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"Ana comprou um livro.\", o verbo comprar é:",
+     "options": [
+      "transitivo direto",
+      "transitivo indireto",
+      "intransitivo",
+      "de ligação"
+     ],
+     "answer": "transitivo direto",
+     "accept": [],
+     "hint": "Quem compra, compra algo. O complemento vem com preposição?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwuzc8k1fyd1pt",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"Eu gosto de música.\", o verbo gostar é:",
+     "options": [
+      "transitivo indireto",
+      "transitivo direto",
+      "intransitivo",
+      "de ligação"
+     ],
+     "answer": "transitivo indireto",
+     "accept": [],
+     "hint": "Repare na palavrinha que liga o verbo ao complemento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gqbd5fqdvf85",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"Entreguei o presente à professora.\", o verbo entregar é:",
+     "options": [
+      "transitivo direto e indireto",
+      "só transitivo direto",
+      "só transitivo indireto",
+      "intransitivo"
+     ],
+     "answer": "transitivo direto e indireto",
+     "accept": [],
+     "hint": "Quem entrega, entrega algo a alguém. Conte os complementos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kiq4jdeu8r86",
+     "subject": "pt",
+     "type": "short",
+     "q": "Na frase \"Os alunos precisam de silêncio.\", qual preposição o verbo precisar exige?",
+     "options": [],
+     "answer": "de",
+     "accept": [
+      "de"
+     ],
+     "hint": "Procure a palavra entre o verbo e o complemento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5r8ji915t4x60",
+     "subject": "pt",
+     "type": "short",
+     "q": "Na frase \"Lucas escreveu uma carta.\", qual é o objeto direto?",
+     "options": [],
+     "answer": "uma carta",
+     "accept": [
+      "carta",
+      "uma carta"
+     ],
+     "hint": "Pergunte ao verbo: Lucas escreveu o quê?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12n60z11yc5fl5",
+     "subject": "pt",
+     "type": "short",
+     "q": "Na frase \"Ela obedece aos pais.\", qual é o objeto indireto?",
+     "options": [],
+     "answer": "aos pais",
+     "accept": [
+      "aos pais",
+      "pais"
+     ],
+     "hint": "Pergunte ao verbo: ela obedece a quem?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rporbuwjjol7d",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que caracteriza o predicado verbal?",
+     "options": [
+      "Seu núcleo é um verbo significativo, que indica ação ou processo",
+      "Seu núcleo é um verbo de ligação",
+      "Ele não tem verbo",
+      "Ele indica sempre uma característica do sujeito"
+     ],
+     "answer": "Seu núcleo é um verbo significativo, que indica ação ou processo",
+     "accept": [],
+     "hint": "Pense no que é o elemento mais importante desse predicado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcxf73yi6s1qn",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual das frases tem predicado verbal?",
+     "options": [
+      "As crianças correram no parque.",
+      "A menina está feliz.",
+      "O céu parece cinza.",
+      "Meu irmão é alto."
+     ],
+     "answer": "As crianças correram no parque.",
+     "accept": [],
+     "hint": "Três frases usam verbos de ligação; uma usa verbo de ação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re9hp3c1xr1a8w",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual é o núcleo do predicado em \"Os pássaros cantaram alegremente pela manhã.\"?",
+     "options": [],
+     "answer": "cantaram",
+     "accept": [
+      "cantaram"
+     ],
+     "hint": "O núcleo do predicado verbal é o verbo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlk51opyi1p",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"Chegamos cedo à escola.\", o verbo chegar é classificado como:",
+     "options": [
+      "intransitivo",
+      "transitivo direto",
+      "transitivo indireto",
+      "de ligação"
+     ],
+     "answer": "intransitivo",
+     "accept": [],
+     "hint": "\"À escola\" indica lugar, e não um complemento do verbo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wevombfozy4s",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Como se chama o complemento que se liga ao verbo sem preposição obrigatória?",
+     "options": [
+      "objeto direto",
+      "objeto indireto",
+      "adjunto adverbial",
+      "predicativo"
+     ],
+     "answer": "objeto direto",
+     "accept": [],
+     "hint": "O nome indica que a ligação é sem intermediário.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riey51y1vt9ai6",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"Nós assistimos ao filme.\" (no sentido de ver), o verbo assistir é:",
+     "options": [
+      "transitivo indireto",
+      "transitivo direto",
+      "intransitivo",
+      "de ligação"
+     ],
+     "answer": "transitivo indireto",
+     "accept": [],
+     "hint": "Observe a preposição que aparece em \"ao\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4fob4asps11a",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Compare: \"Maria come.\" e \"Maria come frutas.\". Na primeira frase, o verbo comer está sendo usado como:",
+     "options": [
+      "intransitivo",
+      "transitivo direto",
+      "transitivo indireto",
+      "de ligação"
+     ],
+     "answer": "intransitivo",
+     "accept": [],
+     "hint": "Na primeira frase, há algum complemento depois do verbo?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13uvym81iif2ja",
+     "subject": "pt",
+     "type": "short",
+     "q": "Na frase \"Pedi ajuda ao vizinho.\", qual é o objeto direto?",
+     "options": [],
+     "answer": "ajuda",
+     "accept": [
+      "ajuda"
+     ],
+     "hint": "Pergunte: pedi o quê?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hxmubv646pye",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique a diferença entre verbo transitivo direto e verbo transitivo indireto e dê um exemplo de cada.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na presença ou ausência de preposição entre o verbo e o complemento.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Publicidade: leitura crítica",
+   "questions": [
+    {
+     "id": "rlv69yu13w2s7u",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é o principal objetivo de um anúncio publicitário?",
+     "options": [
+      "Convencer o público a comprar um produto ou aderir a uma ideia",
+      "Contar uma história de ficção",
+      "Ensinar regras de gramática",
+      "Informar a previsão do tempo"
+     ],
+     "answer": "Convencer o público a comprar um produto ou aderir a uma ideia",
+     "accept": [],
+     "hint": "Pense no que a empresa espera que você faça depois de ver o anúncio.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4gdw1x19781m4",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é um slogan?",
+     "options": [
+      "Uma frase curta e fácil de lembrar ligada a uma marca",
+      "O preço do produto",
+      "A lista de ingredientes",
+      "O nome da empresa que fabrica o produto"
+     ],
+     "answer": "Uma frase curta e fácil de lembrar ligada a uma marca",
+     "accept": [],
+     "hint": "É a parte do anúncio que fica \"grudada\" na memória.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rof9jwbrqfk8b",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que significa público-alvo?",
+     "options": [
+      "O grupo de pessoas a quem o anúncio se dirige",
+      "Todas as pessoas do mundo",
+      "Os funcionários da empresa",
+      "As pessoas que criaram o anúncio"
+     ],
+     "answer": "O grupo de pessoas a quem o anúncio se dirige",
+     "accept": [],
+     "hint": "Pense em \"alvo\": para quem o anúncio está mirando?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wybx5q17lkfw2",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o anúncio: \"Tênis Voa Alto: quem usa, chega sempre primeiro!\". Qual estratégia persuasiva ele usa?",
+     "options": [
+      "Promessa exagerada de resultado",
+      "Dados científicos comprovados",
+      "Comparação de preços",
+      "Informação sobre a fabricação"
+     ],
+     "answer": "Promessa exagerada de resultado",
+     "accept": [],
+     "hint": "Será que um tênis garante vencer sempre?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qyqf5fasg12h",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "No anúncio \"Compre agora e ganhe outro!\", em que modo estão os verbos \"compre\" e \"ganhe\"?",
+     "options": [],
+     "answer": "imperativo",
+     "accept": [
+      "imperativo",
+      "modo imperativo"
+     ],
+     "hint": "É o modo usado para dar ordens, pedidos e conselhos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq7m80p1rd54cq",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"9 em cada 10 dentistas recomendam a pasta Sorriso Forte.\". Qual estratégia o anúncio usa?",
+     "options": [
+      "Apelo à opinião de especialistas",
+      "Apelo ao humor",
+      "Apelo à urgência",
+      "Apelo à tradição"
+     ],
+     "answer": "Apelo à opinião de especialistas",
+     "accept": [],
+     "hint": "Quem são as pessoas citadas e por que o leitor confiaria nelas?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqurgnuvmim96",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Todo mundo já tem. Só falta você!\". Qual sentimento o anúncio tenta despertar?",
+     "options": [
+      "Vontade de pertencer ao grupo",
+      "Medo de altura",
+      "Saudade",
+      "Curiosidade científica"
+     ],
+     "answer": "Vontade de pertencer ao grupo",
+     "accept": [],
+     "hint": "Ninguém gosta de se sentir de fora...",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wlr4e8nbjnug",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Um anúncio de cereal mostra desenhos animados coloridos e promete um brinquedo na caixa. Qual é o público-alvo mais provável?",
+     "options": [
+      "Crianças",
+      "Idosos",
+      "Empresários",
+      "Atletas profissionais"
+     ],
+     "answer": "Crianças",
+     "accept": [],
+     "hint": "Observe os elementos visuais e o brinde.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5ttvky1veh0e",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Só hoje! Últimas unidades!\". Que estratégia esse anúncio usa?",
+     "options": [
+      "Criar urgência e sensação de escassez",
+      "Mostrar a opinião de especialistas",
+      "Comparar com a concorrência",
+      "Apresentar dados de pesquisa"
+     ],
+     "answer": "Criar urgência e sensação de escassez",
+     "accept": [],
+     "hint": "O que a pessoa sente quando acha que o tempo está acabando?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kyvpyc1otzmzl",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que significa consumo consciente?",
+     "options": [
+      "Comprar pensando na real necessidade e nos impactos da compra",
+      "Comprar tudo que está em promoção",
+      "Nunca comprar nada",
+      "Comprar só produtos caros"
+     ],
+     "answer": "Comprar pensando na real necessidade e nos impactos da compra",
+     "accept": [],
+     "hint": "Pense em quem reflete antes de gastar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryt1uuq1rd5el7",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual pergunta ajuda mais a praticar o consumo consciente antes de uma compra?",
+     "options": [
+      "Eu realmente preciso disso?",
+      "Meus amigos já têm?",
+      "O anúncio era bonito?",
+      "Tem uma cor nova?"
+     ],
+     "answer": "Eu realmente preciso disso?",
+     "accept": [],
+     "hint": "Qual pergunta foca na necessidade, e não na vontade do momento?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwg3n789mko9",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama a frase curta e marcante que acompanha uma marca nos anúncios?",
+     "options": [],
+     "answer": "slogan",
+     "accept": [
+      "slogan",
+      "o slogan"
+     ],
+     "hint": "É uma palavra de origem inglesa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mbo04710rd0rn",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que muitos anúncios usam imagens bonitas, música e palavras emotivas?",
+     "options": [
+      "Para despertar emoções e influenciar a decisão de compra",
+      "Para explicar como o produto é fabricado",
+      "Para deixar o anúncio mais longo",
+      "Para mostrar os defeitos do produto"
+     ],
+     "answer": "Para despertar emoções e influenciar a decisão de compra",
+     "accept": [],
+     "hint": "Pense se o anúncio fala mais com a razão ou com o coração.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r90mwtl80l1s1",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Suco Natural Pomar: sem adição de açúcar\", escrito em letras pequenas abaixo de uma imagem enorme de frutas. Qual atitude é a de um leitor crítico?",
+     "options": [
+      "Ler o rótulo completo antes de concluir que o produto é saudável",
+      "Acreditar só na imagem das frutas",
+      "Comprar porque a embalagem é bonita",
+      "Ignorar todas as informações escritas"
+     ],
+     "answer": "Ler o rótulo completo antes de concluir que o produto é saudável",
+     "accept": [],
+     "hint": "Imagens chamam atenção, mas o que diz a informação completa?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13dl1pyc80l35",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Leia o anúncio: \"Com o refrigerante Brilho, sua festa nunca mais será chata!\". Que promessa ele faz e por que é importante ler esse anúncio de forma crítica?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense se um produto pode mesmo garantir que uma festa seja divertida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr6sso9ti0o3y",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Você vê um anúncio de um celular novo que diz \"Quem não tem, fica para trás\". Que pergunta um consumidor consciente deveria fazer antes de comprar? Explique.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na necessidade real, no celular que você já tem e no impacto da compra.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "sci": {
+   "topic": "Chemical reactions and word equations",
+   "questions": [
+    {
+     "id": "r8l7jekrt1eyk",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In a chemical reaction, what are the substances at the start called?",
+     "options": [
+      "Reactants",
+      "Products",
+      "Solutions",
+      "Mixtures"
+     ],
+     "answer": "Reactants",
+     "accept": [],
+     "hint": "They are the substances that react.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr4cm8p1vms2wu",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In a chemical reaction, what are the new substances that are formed called?",
+     "options": [
+      "Products",
+      "Reactants",
+      "Elements",
+      "Solvents"
+     ],
+     "answer": "Products",
+     "accept": [],
+     "hint": "They are what the reaction produces.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bgskcz13amexw",
+     "subject": "sci",
+     "type": "short",
+     "q": "Complete the word equation: magnesium + oxygen → ?",
+     "options": [],
+     "answer": "magnesium oxide",
+     "accept": [
+      "magnesium oxide"
+     ],
+     "hint": "When a metal reacts with oxygen, its name stays and 'oxygen' changes ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrxw2zo1w443xn",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which of these is a sign that a chemical reaction has taken place?",
+     "options": [
+      "A new gas is given off and the mixture fizzes",
+      "Ice melts into water",
+      "Sugar dissolves in tea",
+      "Water boils in a kettle"
+     ],
+     "answer": "A new gas is given off and the mixture fizzes",
+     "accept": [],
+     "hint": "Three of these are physical changes that can be reversed easily.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re7qpe0167yu9l",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In the word equation 'iron + sulfur → iron sulfide', which substance is the product?",
+     "options": [
+      "iron sulfide",
+      "iron",
+      "sulfur",
+      "iron and sulfur"
+     ],
+     "answer": "iron sulfide",
+     "accept": [],
+     "hint": "The product is on the right-hand side of the arrow.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh1jsuc1lccl3n",
+     "subject": "sci",
+     "type": "short",
+     "q": "Complete the word equation: carbon + oxygen → ?",
+     "options": [],
+     "answer": "carbon dioxide",
+     "accept": [
+      "carbon dioxide",
+      "CO2"
+     ],
+     "hint": "The product is a gas we breathe out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roabicnwv9a9x",
+     "subject": "sci",
+     "type": "num",
+     "q": "24 g of magnesium reacts completely with 16 g of oxygen to make magnesium oxide. What is the mass of magnesium oxide formed, in grams?",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "Mass is conserved in a chemical reaction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1di5e551m9t1xd",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What does the law of conservation of mass state?",
+     "options": [
+      "The total mass of the reactants equals the total mass of the products",
+      "Mass always increases in a reaction",
+      "Mass always decreases in a reaction",
+      "Gases have no mass"
+     ],
+     "answer": "The total mass of the reactants equals the total mass of the products",
+     "accept": [],
+     "hint": "Think about whether anything is created or destroyed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mzz81b17dlaq",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why is mass conserved in a chemical reaction?",
+     "options": [
+      "Atoms are rearranged, not created or destroyed",
+      "New atoms are made during the reaction",
+      "Some atoms disappear as heat",
+      "Atoms change into different elements"
+     ],
+     "answer": "Atoms are rearranged, not created or destroyed",
+     "accept": [],
+     "hint": "Think about what happens to the bonds between atoms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqy2lmdf824ii",
+     "subject": "sci",
+     "type": "num",
+     "q": "10 g of calcium carbonate is heated and breaks down into 5.6 g of calcium oxide and some carbon dioxide. What mass of carbon dioxide is made, in grams?",
+     "options": [],
+     "answer": "4.4",
+     "accept": [],
+     "hint": "Total mass of products = mass of reactant.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xe86271azulgc",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Marble chips react with acid in an open flask on a balance. Why does the reading on the balance go down?",
+     "options": [
+      "Carbon dioxide gas escapes into the air",
+      "Mass is destroyed in the reaction",
+      "The acid evaporates instantly",
+      "The marble chips become lighter atoms"
+     ],
+     "answer": "Carbon dioxide gas escapes into the air",
+     "accept": [],
+     "hint": "Is the flask sealed? Where can a gas go?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19ht0dacys6y5",
+     "subject": "sci",
+     "type": "short",
+     "q": "Complete the word equation: zinc + hydrochloric acid → zinc chloride + ?",
+     "options": [],
+     "answer": "hydrogen",
+     "accept": [
+      "hydrogen",
+      "hydrogen gas"
+     ],
+     "hint": "Metals reacting with acids give off a gas that makes a squeaky pop.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11hw30tx8y93e",
+     "subject": "sci",
+     "type": "mc",
+     "q": "When magnesium ribbon burns in air, the mass of the solid increases. Why?",
+     "options": [
+      "Oxygen from the air combines with the magnesium",
+      "The flame adds mass to the magnesium",
+      "The magnesium absorbs light",
+      "New magnesium atoms are made"
+     ],
+     "answer": "Oxygen from the air combines with the magnesium",
+     "accept": [],
+     "hint": "Look at the word equation for burning magnesium.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r143rjxxn7x1vt",
+     "subject": "sci",
+     "type": "short",
+     "q": "Complete the word equation for burning methane: methane + oxygen → carbon dioxide + ?",
+     "options": [],
+     "answer": "water",
+     "accept": [
+      "water",
+      "water vapour",
+      "steam"
+     ],
+     "hint": "Methane contains hydrogen. Where does the hydrogen go?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k224dm1wbowd",
+     "subject": "sci",
+     "type": "num",
+     "q": "In a sealed container, 5.0 g of reactants react completely. What is the total mass of the products, in grams?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Nothing can enter or leave a sealed container.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y22xlx1fgxk6a",
+     "subject": "sci",
+     "type": "open",
+     "q": "Explain, using ideas about particles, why the total mass stays the same when a reaction happens in a sealed container.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what happens to the atoms during the reaction and whether any can escape.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
