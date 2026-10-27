@@ -1804,6 +1804,1251 @@
      "errors": []
     }
    ]
+  },
+  "math": {
+   "topic": "Linear sequences and the nth term",
+   "questions": [
+    {
+     "id": "r1q832ad1oo8knx",
+     "subject": "math",
+     "type": "num",
+     "q": "The first term of a sequence is 5 and the term-to-term rule is 'add 4'. What is the 4th term?",
+     "options": [],
+     "answer": "17",
+     "accept": [],
+     "hint": "Write out the terms one at a time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru2s6hk1d6waz8",
+     "subject": "math",
+     "type": "short",
+     "q": "What is the term-to-term rule for the sequence 3, 10, 17, 24, …?",
+     "options": [],
+     "answer": "add 7",
+     "accept": [
+      "+7",
+      "add seven",
+      "plus 7",
+      "add 7 each time"
+     ],
+     "hint": "Look at the gap between neighbouring terms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r159uccn1j0e8oo",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the next term of the sequence 50, 44, 38, 32, …?",
+     "options": [],
+     "answer": "26",
+     "accept": [],
+     "hint": "Is the sequence going up or down, and by how much?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgki3561yqg5us",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which of these sequences is linear?",
+     "options": [
+      "2, 4, 8, 16",
+      "1, 4, 9, 16",
+      "7, 11, 15, 19",
+      "1, 1, 2, 3"
+     ],
+     "answer": "7, 11, 15, 19",
+     "accept": [],
+     "hint": "A linear sequence has the same difference every time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvxq5l518zqcnj",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the common difference of the sequence 6, 13, 20, 27, …?",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Subtract one term from the next.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nb5en11hlh3df",
+     "subject": "math",
+     "type": "num",
+     "q": "The nth term of a sequence is 3n + 2. What is the 1st term?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Substitute n = 1.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9veoea1o4pknt",
+     "subject": "math",
+     "type": "num",
+     "q": "The nth term of a sequence is 5n − 1. What is the 10th term?",
+     "options": [],
+     "answer": "49",
+     "accept": [],
+     "hint": "Replace n with 10.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hz82snitpwct",
+     "subject": "math",
+     "type": "num",
+     "q": "The nth term of a sequence is 4n + 7. Find the 20th term.",
+     "options": [],
+     "answer": "87",
+     "accept": [],
+     "hint": "Multiply first, then add.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz8kj6k1j31223",
+     "subject": "math",
+     "type": "mc",
+     "q": "What is the nth term of the sequence 4, 7, 10, 13, …?",
+     "options": [
+      "3n + 1",
+      "n + 3",
+      "3n + 4",
+      "4n + 3"
+     ],
+     "answer": "3n + 1",
+     "accept": [],
+     "hint": "The common difference tells you the number in front of n.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5r3is26lx16j",
+     "subject": "math",
+     "type": "short",
+     "q": "Find the nth term of the sequence 2, 7, 12, 17, …",
+     "options": [],
+     "answer": "5n - 3",
+     "accept": [
+      "5n-3",
+      "5n − 3",
+      "5n−3",
+      "-3 + 5n"
+     ],
+     "hint": "Compare the sequence with the 5 times table.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10a7c4z19iuvjj",
+     "subject": "math",
+     "type": "short",
+     "q": "Find the nth term of the sequence 20, 17, 14, 11, …",
+     "options": [],
+     "answer": "23 - 3n",
+     "accept": [
+      "23-3n",
+      "23 − 3n",
+      "23−3n",
+      "-3n + 23",
+      "-3n+23"
+     ],
+     "hint": "The difference is negative. What would the 0th term be?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvgw015fwnife",
+     "subject": "math",
+     "type": "mc",
+     "q": "Is 50 a term of the sequence with nth term 4n + 2?",
+     "options": [
+      "Yes, it is the 12th term",
+      "Yes, it is the 13th term",
+      "No, 50 is not a term"
+     ],
+     "answer": "Yes, it is the 12th term",
+     "accept": [],
+     "hint": "Solve 4n + 2 = 50.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnfixji1klfzyc",
+     "subject": "math",
+     "type": "num",
+     "q": "The nth term of a sequence is 6n − 4. Which term (value of n) is equal to 104?",
+     "options": [],
+     "answer": "18",
+     "accept": [],
+     "hint": "Set 6n − 4 equal to 104 and solve.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vx0xn11m3y00m",
+     "subject": "math",
+     "type": "mc",
+     "q": "Is 75 a term of the sequence with nth term 3n + 1?",
+     "options": [
+      "Yes, it is the 25th term",
+      "Yes, it is the 24th term",
+      "No, because n would not be a whole number"
+     ],
+     "answer": "No, because n would not be a whole number",
+     "accept": [],
+     "hint": "Solve 3n + 1 = 75 and check whether n is a whole number.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgd4n346rey8j",
+     "subject": "math",
+     "type": "num",
+     "q": "The nth term of a sequence is 7n − 3. What is the first term that is greater than 100?",
+     "options": [],
+     "answer": "102",
+     "accept": [],
+     "hint": "Find the smallest whole number n that makes 7n − 3 bigger than 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtihk0r1788d4",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain why the sequence with nth term 2n + 1 contains only odd numbers.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what kind of number 2n always is.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Pronomes pessoais e de tratamento",
+   "questions": [
+    {
+     "id": "r9xteej1vg6hql",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas palavras é um pronome pessoal do caso reto?",
+     "options": [
+      "nós",
+      "me",
+      "lhe",
+      "conosco"
+     ],
+     "answer": "nós",
+     "accept": [],
+     "hint": "Os retos costumam ser o sujeito da frase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wkzkih1c3l0ly",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas palavras é um pronome pessoal do caso oblíquo?",
+     "options": [
+      "eles",
+      "te",
+      "vós",
+      "ela"
+     ],
+     "answer": "te",
+     "accept": [],
+     "hint": "Os oblíquos costumam ser complemento do verbo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqmwypo1c4vaxl",
+     "subject": "pt",
+     "type": "short",
+     "q": "Que pronome reto substitui 'Marta e eu' na frase 'Marta e eu fomos ao parque'?",
+     "options": [],
+     "answer": "nós",
+     "accept": [
+      "Nós"
+     ],
+     "hint": "Pense em mais de uma pessoa, incluindo quem fala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv41byu1i5xck6",
+     "subject": "pt",
+     "type": "short",
+     "q": "Que pronome reto substitui 'Os meninos' na frase 'Os meninos jogaram bola'?",
+     "options": [],
+     "answer": "eles",
+     "accept": [
+      "Eles"
+     ],
+     "hint": "3ª pessoa do plural, masculino.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gd2p5tsi30z5",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase 'Ela me deu um presente', qual é o pronome oblíquo?",
+     "options": [
+      "me",
+      "ela",
+      "um"
+     ],
+     "answer": "me",
+     "accept": [],
+     "hint": "Qual palavra indica a quem foi dado o presente?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s6kbeh9co4h6",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase 'O livro? Eu o comprei ontem.', a palavra 'o' destacada depois de 'Eu' é:",
+     "options": [
+      "pronome oblíquo",
+      "artigo definido",
+      "pronome de tratamento",
+      "pronome reto"
+     ],
+     "answer": "pronome oblíquo",
+     "accept": [],
+     "hint": "Ela está substituindo um substantivo já citado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x1bdmpbd7erv",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual reescrita de 'Encontrei a professora na rua' segue a norma-padrão?",
+     "options": [
+      "Encontrei-a na rua.",
+      "Encontrei ela na rua.",
+      "Encontrei-lhe na rua.",
+      "Encontrei-la na rua."
+     ],
+     "answer": "Encontrei-a na rua.",
+     "accept": [],
+     "hint": "Na norma-padrão, o objeto direto usa o pronome oblíquo, não o reto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ahnv88w91oih",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase segue a norma-padrão?",
+     "options": [
+      "Isto é para mim fazer.",
+      "Isto é para eu fazer.",
+      "Entre eu e você não há segredos."
+     ],
+     "answer": "Isto é para eu fazer.",
+     "accept": [],
+     "hint": "Quando o pronome é sujeito de um verbo no infinitivo, usa-se o reto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15ubetaqlxozx",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete conforme a norma-padrão: 'Entre ___ e você não há segredos.'",
+     "options": [
+      "eu",
+      "mim",
+      "me"
+     ],
+     "answer": "mim",
+     "accept": [],
+     "hint": "Depois de preposição, sem verbo em seguida, usa-se o oblíquo tônico.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k0yhkk56tp5t",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual pronome de tratamento se usa ao falar diretamente com um ministro ou um governador?",
+     "options": [
+      "Vossa Excelência",
+      "Vossa Santidade",
+      "Vossa Majestade",
+      "Vossa Alteza"
+     ],
+     "answer": "Vossa Excelência",
+     "accept": [],
+     "hint": "É o mesmo usado para altas autoridades do governo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13cn0xi1n5zxiw",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Que pronome de tratamento se usa para falar com o Papa?",
+     "options": [
+      "Vossa Santidade",
+      "Vossa Excelência",
+      "Vossa Senhoria"
+     ],
+     "answer": "Vossa Santidade",
+     "accept": [],
+     "hint": "Lembre-se do caráter religioso do cargo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19c88uhvg9yrl",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual pronome de tratamento é usado para reis e rainhas?",
+     "options": [
+      "Vossa Majestade",
+      "Vossa Alteza",
+      "Vossa Eminência"
+     ],
+     "answer": "Vossa Majestade",
+     "accept": [],
+     "hint": "Pense na palavra ligada à realeza no trono.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r126t0xjhe0m39",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Ao falar SOBRE o presidente (e não com ele), usa-se:",
+     "options": [
+      "Sua Excelência",
+      "Vossa Excelência",
+      "Vossa Senhoria"
+     ],
+     "answer": "Sua Excelência",
+     "accept": [],
+     "hint": "'Vossa' é para quem ouve; para quem é assunto, muda o possessivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re3u1frpqxars",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: 'Vossa Excelência ___ convidado para a cerimônia.'",
+     "options": [
+      "está",
+      "estais",
+      "estás"
+     ],
+     "answer": "está",
+     "accept": [],
+     "hint": "Os pronomes de tratamento levam o verbo para a 3ª pessoa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr066qc1nq99c3",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual pronome de tratamento é o mais usado no dia a dia, no Brasil, para conversar com amigos?",
+     "options": [],
+     "answer": "você",
+     "accept": [
+      "Você"
+     ],
+     "hint": "Ele veio de 'Vossa Mercê'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry8c9501ib73l",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique por que, num e-mail para a diretora da escola, é mais adequado usar 'a senhora' do que 'você'.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no grau de formalidade e respeito da situação.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Relato de memória: Por parte de pai (Bartolomeu Campos de Queirós)",
+   "questions": [
+    {
+     "id": "r8cch3g19zdsec",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Um relato de memória costuma ser narrado em qual pessoa do discurso?",
+     "options": [
+      "1ª pessoa",
+      "2ª pessoa",
+      "3ª pessoa"
+     ],
+     "answer": "1ª pessoa",
+     "accept": [],
+     "hint": "Quem conta é quem viveu a história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w0q4yf13gnsud",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual tempo verbal predomina num relato de memória?",
+     "options": [
+      "pretérito (passado)",
+      "futuro",
+      "imperativo"
+     ],
+     "answer": "pretérito (passado)",
+     "accept": [],
+     "hint": "O narrador lembra fatos que já aconteceram.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryy8w4luoi957",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destas frases tem marcas de relato de memória?",
+     "options": [
+      "Lembro que, quando eu tinha sete anos, a casa cheirava a café.",
+      "Amanhã vou viajar para a praia.",
+      "Misture a farinha com os ovos.",
+      "O sapo é um anfíbio."
+     ],
+     "answer": "Lembro que, quando eu tinha sete anos, a casa cheirava a café.",
+     "accept": [],
+     "hint": "Procure lembrança + passado + 1ª pessoa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kc4tkkilndho",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "No trecho 'Naquele tempo, meu avô acordava antes do sol', que expressão situa a lembrança no passado?",
+     "options": [],
+     "answer": "Naquele tempo",
+     "accept": [
+      "naquele tempo"
+     ],
+     "hint": "Está no começo da frase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1unuc3pdj3ta1",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Complete o nome do gênero que conta lembranças reais de quem escreve: relato de ___.",
+     "options": [],
+     "answer": "memória",
+     "accept": [
+      "memórias",
+      "memoria"
+     ],
+     "hint": "É aquilo que guardamos na lembrança.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u5c0zrg725ds",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destas palavras é uma marca típica de memória num texto?",
+     "options": [
+      "lembro",
+      "calcule",
+      "compre"
+     ],
+     "answer": "lembro",
+     "accept": [],
+     "hint": "Qual verbo tem a ver com recordar?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbwf1iz9uy5ek",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Além dos fatos vividos, um relato de memória costuma trazer:",
+     "options": [
+      "sentimentos e impressões do narrador",
+      "instruções passo a passo",
+      "dados estatísticos"
+     ],
+     "answer": "sentimentos e impressões do narrador",
+     "accept": [],
+     "hint": "Pense em como a pessoa se sentia naquela época.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vgopyo15gwmk5",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quem conta um relato de memória geralmente é:",
+     "options": [
+      "um adulto lembrando a própria infância ou juventude",
+      "um personagem inventado do futuro",
+      "um cientista explicando um experimento"
+     ],
+     "answer": "um adulto lembrando a própria infância ou juventude",
+     "accept": [],
+     "hint": "Há uma distância de tempo entre o vivido e o contado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro5s1j213xe55h",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No livro 'Por parte de pai', o narrador conta lembranças da convivência com:",
+     "options": [
+      "os avós paternos",
+      "os colegas da escola",
+      "um tio marinheiro"
+     ],
+     "answer": "os avós paternos",
+     "accept": [],
+     "hint": "O próprio título dá uma pista.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m909hd1m8jtpd",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No livro 'Por parte de pai', onde o avô registrava os acontecimentos da cidade?",
+     "options": [
+      "nas paredes da casa",
+      "num diário trancado",
+      "no jornal da cidade",
+      "em cartas para o neto"
+     ],
+     "answer": "nas paredes da casa",
+     "accept": [],
+     "hint": "Era um lugar que todos da casa podiam ver.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqk82jd16scykr",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em 'Hoje, olhando para trás, entendo o silêncio do meu avô', o narrador:",
+     "options": [
+      "compara o que entende agora com o que viveu antes",
+      "descreve um sonho",
+      "dá uma ordem ao leitor"
+     ],
+     "answer": "compara o que entende agora com o que viveu antes",
+     "accept": [],
+     "hint": "Repare nas palavras 'Hoje' e 'olhando para trás'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq8x7v71gljzx3",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: 'Minha avó guardava botões numa lata de biscoitos, e até hoje, quando vejo uma lata assim, sinto o cheiro daquela cozinha.' O final da frase mostra que:",
+     "options": [
+      "a lembrança ainda desperta sensações no narrador adulto",
+      "a avó vendia biscoitos",
+      "o narrador não gostava da avó"
+     ],
+     "answer": "a lembrança ainda desperta sensações no narrador adulto",
+     "accept": [],
+     "hint": "Repare na expressão 'até hoje'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13zfxm741pzf3",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em 'quando vejo uma lata assim, sinto o cheiro daquela cozinha', qual sentido traz a lembrança de volta?",
+     "options": [
+      "olfato",
+      "audição",
+      "paladar"
+     ],
+     "answer": "olfato",
+     "accept": [],
+     "hint": "Que sentido usamos para perceber cheiros?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bje70d1231czk",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que relatos de memória costumam ter descrições detalhadas de objetos e lugares?",
+     "options": [
+      "para recriar o ambiente do passado para o leitor",
+      "para ensinar a fabricar objetos",
+      "para listar preços"
+     ],
+     "answer": "para recriar o ambiente do passado para o leitor",
+     "accept": [],
+     "hint": "O leitor não estava lá.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxso0tu1y7h8p3",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Por que você acha que um neto pode guardar lembranças tão fortes de um avô? Responda em 1 a 3 frases.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em convivência, histórias e afeto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro6c8yd3bo1g2",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Escreva uma ou duas frases de relato de memória sobre uma pessoa mais velha da sua família, usando uma marca de tempo passado.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Comece com 'Lembro que…' ou 'Quando eu era pequeno(a)…'.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "sci": {
+   "topic": "Separation techniques",
+   "questions": [
+    {
+     "id": "ryurwqaw67nwy",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which method is best for separating sand from water?",
+     "options": [
+      "filtration",
+      "distillation",
+      "chromatography",
+      "magnetism"
+     ],
+     "answer": "filtration",
+     "accept": [],
+     "hint": "Sand does not dissolve, so its grains can be trapped.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iwi8ox17r22q1",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which method is best for getting solid salt back from salty water?",
+     "options": [
+      "evaporation",
+      "filtration",
+      "chromatography"
+     ],
+     "answer": "evaporation",
+     "accept": [],
+     "hint": "The water needs to leave as a gas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19mduh0dwbv40",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which method separates the different coloured dyes in black ink?",
+     "options": [
+      "chromatography",
+      "filtration",
+      "evaporation",
+      "distillation"
+     ],
+     "answer": "chromatography",
+     "accept": [],
+     "hint": "It uses paper and a solvent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2cmj0u1syi2ej",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which method produces pure water from sea water?",
+     "options": [
+      "distillation",
+      "filtration",
+      "chromatography"
+     ],
+     "answer": "distillation",
+     "accept": [],
+     "hint": "You need to collect the water, not just remove it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wfemto1psp0u4",
+     "subject": "sci",
+     "type": "short",
+     "q": "In filtration, what is the liquid that passes through the filter paper called?",
+     "options": [],
+     "answer": "filtrate",
+     "accept": [
+      "the filtrate"
+     ],
+     "hint": "Its name comes from the word 'filter'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt9ovvybgdd4m",
+     "subject": "sci",
+     "type": "short",
+     "q": "In filtration, what is the solid left behind on the filter paper called?",
+     "options": [],
+     "answer": "residue",
+     "accept": [
+      "the residue"
+     ],
+     "hint": "It is what 'resides' or stays behind.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g4u7jpjavdzr",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Distillation works because the substances in the mixture have different:",
+     "options": [
+      "boiling points",
+      "colours",
+      "shapes"
+     ],
+     "answer": "boiling points",
+     "accept": [],
+     "hint": "One substance turns into a gas before the other.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r839k6l1gygvzv",
+     "subject": "sci",
+     "type": "short",
+     "q": "In distillation, which piece of apparatus cools the vapour back into a liquid?",
+     "options": [],
+     "answer": "condenser",
+     "accept": [
+      "the condenser",
+      "Liebig condenser",
+      "a condenser"
+     ],
+     "hint": "It has cold water flowing around it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbztfs1irzp61",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In paper chromatography, why is the start line drawn in pencil and not in pen?",
+     "options": [
+      "Pencil does not dissolve in the solvent",
+      "Pencil is easier to see",
+      "Pen is too expensive"
+     ],
+     "answer": "Pencil does not dissolve in the solvent",
+     "accept": [],
+     "hint": "Think about what would happen to ink on the line.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkoo1v5158o4vq",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In a chromatogram, the dye that travels furthest up the paper is the one that is:",
+     "options": [
+      "most soluble in the solvent",
+      "the heaviest dye",
+      "insoluble in the solvent"
+     ],
+     "answer": "most soluble in the solvent",
+     "accept": [],
+     "hint": "Which dye stays dissolved and moves with the solvent longest?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qiwsvmtujy18",
+     "subject": "sci",
+     "type": "num",
+     "q": "In a chromatography experiment, a spot moves 3 cm and the solvent front moves 6 cm. What is the Rf value?",
+     "options": [],
+     "answer": "0.5",
+     "accept": [],
+     "hint": "Rf = distance moved by the spot ÷ distance moved by the solvent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6usj0y13xo9ci",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which mixture could be separated by filtration?",
+     "options": [
+      "chalk and water",
+      "salt and water",
+      "sugar and water",
+      "two dyes in ink"
+     ],
+     "answer": "chalk and water",
+     "accept": [],
+     "hint": "Filtration only works if one part is insoluble.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13s0216194pp1o",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is the best way to separate iron filings from sulfur powder?",
+     "options": [
+      "use a magnet",
+      "filtration",
+      "distillation"
+     ],
+     "answer": "use a magnet",
+     "accept": [],
+     "hint": "One of these substances is magnetic.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r107uy5q5g65c0",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why is crystallisation sometimes chosen instead of evaporating a solution to dryness?",
+     "options": [
+      "It forms larger, purer crystals and avoids damaging the solid",
+      "It is always faster",
+      "It removes the solute from the crystals"
+     ],
+     "answer": "It forms larger, purer crystals and avoids damaging the solid",
+     "accept": [],
+     "hint": "Think about what strong heating could do to some solids.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvhl4aw38p27h",
+     "subject": "sci",
+     "type": "open",
+     "q": "Describe how you would get pure, dry salt from a mixture of sand and salt.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "You will need more than one method, in the right order.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmaz4z2ap5jd",
+     "subject": "sci",
+     "type": "open",
+     "q": "Explain why filtration cannot separate salt from salt water.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the size of the salt particles once dissolved.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa": {
+   "topic": "Telling the time and the school timetable",
+   "questions": [
+    {
+     "id": "rwote5jqewv2y",
+     "subject": "spa",
+     "type": "mc",
+     "q": "How do you say 'It's one o'clock' in Spanish?",
+     "options": [
+      "Es la una.",
+      "Son la una.",
+      "Es las una."
+     ],
+     "answer": "Es la una.",
+     "accept": [],
+     "hint": "One o'clock is singular.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rtpbdc13ay04l",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'Son las tres' mean?",
+     "options": [
+      "It's three o'clock",
+      "It's half past three",
+      "It's quarter to three"
+     ],
+     "answer": "It's three o'clock",
+     "accept": [],
+     "hint": "There is no extra word for minutes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjjtyv21tncgj4",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'What time is it?'",
+     "options": [],
+     "answer": "¿Qué hora es?",
+     "accept": [
+      "Qué hora es",
+      "¿Que hora es?",
+      "Que hora es",
+      "¿Qué hora es"
+     ],
+     "hint": "'Hora' means hour/time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ad2klwjhl36r",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'Son las cuatro y media' mean?",
+     "options": [
+      "It's half past four",
+      "It's quarter past four",
+      "It's half past three"
+     ],
+     "answer": "It's half past four",
+     "accept": [],
+     "hint": "'Media' means half.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riyzkg53vvrjn",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'Son las ocho y cuarto' mean?",
+     "options": [
+      "It's quarter past eight",
+      "It's quarter to eight",
+      "It's eight forty-five"
+     ],
+     "answer": "It's quarter past eight",
+     "accept": [],
+     "hint": "'Y' adds minutes after the hour.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ahihjarfdxq6",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'Son las diez menos cuarto' mean?",
+     "options": [
+      "It's quarter to ten",
+      "It's quarter past ten",
+      "It's ten past four"
+     ],
+     "answer": "It's quarter to ten",
+     "accept": [],
+     "hint": "'Menos' takes minutes away from the hour.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17uyzpp3n9jqt",
+     "subject": "spa",
+     "type": "mc",
+     "q": "How do you say 'It's 7:20' in Spanish?",
+     "options": [
+      "Son las siete y veinte.",
+      "Son las veinte y siete.",
+      "Es la siete y veinte."
+     ],
+     "answer": "Son las siete y veinte.",
+     "accept": [],
+     "hint": "Hour first, then minutes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6lkdj4ks35hl",
+     "subject": "spa",
+     "type": "mc",
+     "q": "How do you say 'It's twenty-five to six' in Spanish?",
+     "options": [
+      "Son las seis menos veinticinco.",
+      "Son las cinco menos veinticinco.",
+      "Son las seis y veinticinco."
+     ],
+     "answer": "Son las seis menos veinticinco.",
+     "accept": [],
+     "hint": "Say the next hour, then take minutes away.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y4urvs6svydq",
+     "subject": "spa",
+     "type": "short",
+     "q": "What does 'el recreo' mean in English?",
+     "options": [],
+     "answer": "break",
+     "accept": [
+      "break time",
+      "breaktime",
+      "recess",
+      "playtime",
+      "the break"
+     ],
+     "hint": "It happens between lessons.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yy1zwe18tn6ex",
+     "subject": "spa",
+     "type": "short",
+     "q": "What does 'el horario' mean in English?",
+     "options": [],
+     "answer": "timetable",
+     "accept": [
+      "the timetable",
+      "schedule",
+      "the schedule"
+     ],
+     "hint": "It shows your lessons for each day.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12tsxbrz4z8og",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct word: 'Tengo matemáticas ___ las nueve.'",
+     "options": [
+      "a",
+      "en",
+      "de"
+     ],
+     "answer": "a",
+     "accept": [],
+     "hint": "'At' a time uses a short preposition.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbjb04j1qg8tnf",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'a mediodía' mean?",
+     "options": [
+      "at midday",
+      "at midnight",
+      "in the morning"
+     ],
+     "answer": "at midday",
+     "accept": [],
+     "hint": "'Día' means day.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rethjhwx1cfay",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'Los lunes tengo inglés' mean?",
+     "options": [
+      "On Mondays I have English",
+      "On Tuesdays I have English",
+      "On Mondays I teach English"
+     ],
+     "answer": "On Mondays I have English",
+     "accept": [],
+     "hint": "'Tengo' comes from 'tener'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzwd08o1gbn935",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'at two o'clock'",
+     "options": [],
+     "answer": "a las dos",
+     "accept": [
+      "A las dos"
+     ],
+     "hint": "Use 'a' + 'las' + the number.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xt03cx1ytzv0v",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence means 'Break is at eleven'?",
+     "options": [
+      "El recreo es a las once.",
+      "El recreo son las once.",
+      "El recreo es en las once."
+     ],
+     "answer": "El recreo es a las once.",
+     "accept": [],
+     "hint": "Use 'es a las' for when something happens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u5bz5aa0wmp",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two sentences in Spanish about your school day, saying which subject you have and at what time.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use 'Tengo…' and 'a las…'.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
