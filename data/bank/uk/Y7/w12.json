@@ -3051,5 +3051,910 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "As Mãos do Avô Joaquim",
+   "premise": "Já adulto, Tomás relembra as férias que passou, aos nove e dez anos, na casa do avô Joaquim, um marceneiro calado do interior. Em cada episódio, um objeto ou acontecimento revela um pouco mais desse avô e do que ele deixou no neto.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A casa do cheiro de madeira",
+     "synopsis": "O narrador, já adulto, lembra a primeira vez que passou as férias na casa do avô Joaquim, um marceneiro calado da cidade de Vila do Ingá.",
+     "text": "Eu tinha nove anos quando meu pai me deixou, pela primeira vez, na casa do avô Joaquim. Hoje, passados tantos anos, ainda consigo sentir o cheiro daquela casa: madeira recém-cortada, café passado no coador de pano e um pouco de chuva guardada nas paredes. Dizem que a memória mora no nariz. Comigo, pelo menos, é assim.\nA casa ficava no fim da Rua do Ingá, numa cidade tão pequena que o ônibus só passava duas vezes por dia. Na frente havia um pé de jabuticaba e, nos fundos, a oficina. Era lá que o avô passava as manhãs, curvado sobre a bancada, transformando tábuas em cadeiras, mesas e caixas.\nLembro bem do primeiro encontro. Meu pai desceu do carro, abraçou o avô e falou depressa, como quem tem medo de perder a hora. O avô só respondeu com a cabeça. Depois olhou para mim, de cima a baixo, e disse uma única frase: — Você tem as mãos do seu pai. Eu não entendi se aquilo era um elogio ou uma reclamação.\nNaquela noite, sozinho no quarto que tinha sido do meu pai quando menino, chorei um pouco. O colchão afundava no meio, o guarda-roupa rangia e lá fora os grilos não paravam de cantar. Eu achava que as férias seriam longas demais ao lado de um homem que quase não falava.\nDo meu pai, eu sabia pouco sobre o avô. Sabia que ele tinha feito sozinho os móveis da casa inteira, que nunca tinha saído da cidade e que, quando meu pai anunciou que ia estudar na capital, os dois ficaram meses sem conversar. Meu pai contava isso rindo, mas eu percebia que a risada dele ficava mais curta nessa parte. Por isso, naquela primeira noite, eu imaginava o avô como um homem bravo, de poucos amigos, que não gostava de visitas e muito menos de netos curiosos.\nNa manhã seguinte, porém, encontrei sobre a mesa da cozinha um passarinho de madeira, do tamanho da minha mão. Tinha as asas abertas e um bico fino, lixado com tanto cuidado que parecia macio. Ao lado, um bilhete com letra tremida: \"Para o Tomás\". Ninguém comentou nada no café da manhã. O avô mastigava o pão em silêncio, olhando pela janela.\nGuardei o passarinho no bolso e, à tarde, fui até a porta da oficina. Fiquei ali parado, sem coragem de entrar. O avô não levantou os olhos da bancada, mas empurrou um banquinho na minha direção com o pé. Sentei. Ficamos horas sem falar, ele lixando, eu olhando.\nHoje entendo que foi assim que começamos a conversar. Ainda tenho aquele passarinho. Está em cima da minha escrivaninha enquanto escrevo estas linhas.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantos anos o narrador tinha quando passou as férias com o avô pela primeira vez?",
+       "options": [
+        "Sete",
+        "Nove",
+        "Onze",
+        "Treze"
+       ],
+       "answer": "Nove",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era a profissão do avô Joaquim?",
+       "options": [],
+       "answer": "marceneiro",
+       "accept": [
+        "marceneiro",
+        "carpinteiro"
+       ],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que árvore ficava na frente da casa do avô?",
+       "options": [
+        "Mangueira",
+        "Jabuticabeira",
+        "Goiabeira",
+        "Ipê"
+       ],
+       "answer": "Jabuticabeira",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o narrador encontrou na mesa da cozinha na manhã seguinte?",
+       "options": [
+        "Uma carta do pai",
+        "Um passarinho de madeira",
+        "Uma caixa de ferramentas",
+        "Um livro antigo"
+       ],
+       "answer": "Um passarinho de madeira",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual frase mostra que o narrador está lembrando o passado já adulto?",
+       "options": [
+        "\"Os grilos não paravam de cantar.\"",
+        "\"Hoje, passados tantos anos, ainda consigo sentir o cheiro daquela casa.\"",
+        "\"O colchão afundava no meio.\"",
+        "\"Sentei.\""
+       ],
+       "answer": "\"Hoje, passados tantos anos, ainda consigo sentir o cheiro daquela casa.\"",
+       "accept": [],
+       "hint": "Procure palavras que indiquem o tempo presente de quem escreve.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual sentido o narrador diz que guarda mais a memória?",
+       "options": [
+        "A visão",
+        "O olfato",
+        "O tato",
+        "A audição"
+       ],
+       "answer": "O olfato",
+       "accept": [],
+       "hint": "Releia a frase sobre onde \"a memória mora\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o gesto de empurrar o banquinho com o pé revela sobre o avô?",
+       "options": [
+        "Que ele queria que o neto fosse embora",
+        "Que ele aceitava a companhia do neto, mesmo sem palavras",
+        "Que ele estava bravo com o neto",
+        "Que ele precisava de ajuda na oficina"
+       ],
+       "answer": "Que ele aceitava a companhia do neto, mesmo sem palavras",
+       "accept": [],
+       "hint": "Pense no que o avô fez em vez de falar.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô deu um presente ao neto em vez de dizer que estava feliz com a visita?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que o narrador sente e no que ele aprendeu.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O relógio da sala",
+     "synopsis": "Tomás descobre o ritual de domingo do avô, que dá corda num velho relógio de parede, e aprende algo sobre paciência.",
+     "text": "Na sala da casa do avô havia um relógio de parede maior do que eu. Tinha um pêndulo dourado que ia e vinha, ia e vinha, e um som tão firme que, à noite, parecia o coração da casa batendo. Até hoje, quando ouço um relógio antigo, volto a ter nove anos.\nTodo domingo, depois do almoço, o avô abria a portinha de vidro, pegava uma chave de ferro e dava corda no relógio. Fazia isso devagar, contando baixinho. Eram sempre catorze voltas, nem uma a mais, nem uma a menos.\nA avó Celeste dizia que aquele relógio tinha vindo de longe, no tempo do bisavô, e que já tinha sobrevivido a duas mudanças, uma enchente e um gato muito curioso. Ninguém mais na casa tinha permissão para tocar nele. Eu ficava sentado no sofá, de longe, acompanhando cada volta da chave com os olhos, e sentia que estava assistindo a uma espécie de cerimônia. Durante aqueles minutos, até o rádio da cozinha era desligado.\nNo meu segundo domingo ali, pedi para ajudar. O avô me olhou por um bom tempo, como se estivesse medindo uma tábua. Depois me entregou a chave. Eu estava tão animado que girei rápido demais, e a chave escapou da minha mão e caiu no chão com um barulho que ecoou pela sala inteira.\nFiquei vermelho. Esperei a bronca. Meu pai, eu tinha certeza, teria levantado a voz. Mas o avô apenas se abaixou, pegou a chave, limpou-a na camisa e colocou de novo na minha mão. Depois segurou meus dedos com os dele, ásperos como lixa, e girou comigo, devagar. — Relógio não gosta de pressa — disse. — Quem tem pressa estraga o tempo.\nNa hora achei a frase estranha. Como alguém pode estragar o tempo? Só muitos anos depois, numa semana em que tudo deu errado no trabalho, eu me lembrei daquela tarde e ri sozinho. O avô tinha razão. A pressa estraga tudo, até o tempo.\nContamos juntos até catorze. Quando terminamos, ele fechou a portinha e ficou olhando o pêndulo. Eu fiquei olhando para ele. Notei, pela primeira vez, que o avô também tinha um jeito de sorrir sem mexer a boca: era só um brilho rápido nos olhos.\nDaquele dia em diante, a tarefa de domingo passou a ser nossa. Ele segurava a portinha, eu girava a chave. Nunca mais deixei cair. E, mesmo hoje, conto as coisas em voz baixa quando preciso de calma: um, dois, três... até catorze.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que dia da semana o avô dava corda no relógio?",
+       "options": [],
+       "answer": "domingo",
+       "accept": [
+        "no domingo",
+        "aos domingos",
+        "domingos"
+       ],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantas voltas de corda o avô dava no relógio?",
+       "options": [
+        "Dez",
+        "Doze",
+        "Catorze",
+        "Vinte"
+       ],
+       "answer": "Catorze",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu quando Tomás girou a chave rápido demais?",
+       "options": [
+        "O relógio parou",
+        "A chave caiu no chão",
+        "O vidro quebrou",
+        "O pêndulo soltou"
+       ],
+       "answer": "A chave caiu no chão",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com o que o narrador compara o som do relógio à noite?",
+       "options": [
+        "Com chuva no telhado",
+        "Com o coração da casa batendo",
+        "Com passos no corredor",
+        "Com um trem distante"
+       ],
+       "answer": "Com o coração da casa batendo",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase \"Quem tem pressa estraga o tempo\" ensina?",
+       "options": [
+        "Que relógios são frágeis",
+        "Que é importante fazer as coisas com calma",
+        "Que o tempo passa rápido demais",
+        "Que ninguém deve mexer no relógio"
+       ],
+       "answer": "Que é importante fazer as coisas com calma",
+       "accept": [],
+       "hint": "Pense no que o avô fez logo depois de dizer isso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tomás esperava uma bronca?",
+       "options": [
+        "Porque o avô era famoso por gritar",
+        "Porque achava que o pai teria reagido assim",
+        "Porque tinha quebrado o relógio",
+        "Porque a avó tinha avisado"
+       ],
+       "answer": "Porque achava que o pai teria reagido assim",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual trecho mostra que a lembrança ainda influencia a vida do narrador adulto?",
+       "options": [
+        "\"Eram sempre catorze voltas.\"",
+        "\"Fiquei vermelho.\"",
+        "\"Mesmo hoje, conto as coisas em voz baixa quando preciso de calma.\"",
+        "\"Eu fiquei olhando para ele.\""
+       ],
+       "answer": "\"Mesmo hoje, conto as coisas em voz baixa quando preciso de calma.\"",
+       "accept": [],
+       "hint": "Procure uma frase no presente que fala do narrador hoje.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô segurou os dedos do neto e girou a chave junto com ele?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que o narrador sente e no que ele aprendeu.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A pescaria sem peixe",
+     "synopsis": "Avô e neto vão pescar no rio ao amanhecer. Não pegam nenhum peixe, mas Tomás ouve, pela primeira vez, uma história da juventude do avô.",
+     "text": "Numa madrugada de janeiro, o avô bateu duas vezes na porta do meu quarto. Ainda estava escuro. — Rio — foi tudo o que ele disse. Pulei da cama tão depressa que vesti a camiseta do avesso.\nAndamos meia hora por uma estrada de terra, ele na frente com as varas no ombro, eu atrás carregando a lata de minhocas. O céu foi clareando aos poucos, primeiro cinza, depois cor-de-rosa. Lembro do barulho das nossas botas na terra úmida e de um cheiro de mato molhado que nunca mais senti igual.\nO Rio Claro era largo e calmo naquele trecho. Sentamos numa pedra lisa e jogamos as linhas. Esperamos. Esperamos mais. O sol subiu, os mosquitos acordaram, e nenhum peixe quis saber das nossas minhocas.\nTentei de tudo. Troquei a minhoca, mudei de lugar na pedra, joguei a linha mais longe, puxei devagar, puxei depressa. O avô não fazia nada disso. Ficava parado, com a vara apoiada no joelho, como se tivesse todo o tempo do mundo. De vez em quando, uma garça branca pousava na outra margem, olhava para nós com desprezo e ia embora. Lembro de pensar que até a garça pescava melhor do que a gente.\nEu estava quase reclamando quando o avô, sem tirar os olhos da água, começou a falar. Contou que, quando tinha a minha idade, vinha àquele mesmo rio com o pai dele. Que naquele tempo não havia ponte, e as pessoas atravessavam de canoa. Que um dia a canoa virou e ele, que ainda não sabia nadar, foi puxado pela gola da camisa por um desconhecido que nunca mais viu.\n— Por isso aprendi a nadar naquele mesmo verão — completou. — E por isso ensinei seu pai antes de ele fazer seis anos.\nFiquei de boca aberta, com a vara esquecida na mão e o coração batendo forte. Era a frase mais longa que eu tinha ouvido dele. Era também a primeira vez que eu imaginava o avô como um menino, com medo, molhado, salvo por um estranho. Até então, para mim, ele tinha nascido velho.\nVoltamos para casa com o balde vazio. A avó Celeste riu da nossa cara e fritou ovos para o almoço. Quando ela perguntou como tinha sido a pescaria, respondi sem pensar: — A melhor da minha vida.\nHoje sei que a memória é assim mesmo: não guarda os peixes que não pegamos, guarda as histórias que ouvimos enquanto esperávamos.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do rio onde avô e neto foram pescar?",
+       "options": [],
+       "answer": "Rio Claro",
+       "accept": [
+        "Claro",
+        "o Rio Claro"
+       ],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantos peixes eles pegaram?",
+       "options": [
+        "Nenhum",
+        "Um",
+        "Três",
+        "Muitos"
+       ],
+       "answer": "Nenhum",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu com o avô quando ele era menino?",
+       "options": [
+        "Perdeu-se na mata",
+        "A canoa virou e ele foi salvo por um desconhecido",
+        "Pescou um peixe enorme",
+        "Caiu de uma ponte"
+       ],
+       "answer": "A canoa virou e ele foi salvo por um desconhecido",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da avó de Tomás?",
+       "options": [],
+       "answer": "Celeste",
+       "accept": [
+        "avó Celeste",
+        "Dona Celeste"
+       ],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que detalhe mostra a pressa e a animação de Tomás ao acordar?",
+       "options": [
+        "Ele esqueceu as botas",
+        "Ele vestiu a camiseta do avesso",
+        "Ele levou o café",
+        "Ele acordou a avó"
+       ],
+       "answer": "Ele vestiu a camiseta do avesso",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que significa a frase \"para mim, ele tinha nascido velho\"?",
+       "options": [
+        "Que o avô era muito doente",
+        "Que Tomás nunca tinha imaginado o avô criança",
+        "Que o avô mentia sobre a idade",
+        "Que o avô não gostava de crianças"
+       ],
+       "answer": "Que Tomás nunca tinha imaginado o avô criança",
+       "accept": [],
+       "hint": "Pense no que a história do rio mudou na forma como Tomás via o avô.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tomás diz que foi \"a melhor pescaria da sua vida\"?",
+       "options": [
+        "Porque pegou um peixe raro",
+        "Porque o avô finalmente compartilhou uma história pessoal com ele",
+        "Porque não precisou acordar cedo",
+        "Porque a avó fez um bolo"
+       ],
+       "answer": "Porque o avô finalmente compartilhou uma história pessoal com ele",
+       "accept": [],
+       "hint": "Releia a última frase do capítulo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô contou essa história justamente naquele momento de espera?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que o narrador sente e no que ele aprendeu.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O caderno de capa azul",
+     "synopsis": "Tomás encontra um caderno em que o avô anota dívidas de vizinhos e descobre por que ele nunca as cobra.",
+     "text": "Na gaveta da bancada da oficina havia um caderno de capa azul, gasto nas pontas. Eu já tinha visto o avô escrever nele algumas vezes, sempre com um lápis tão curto que mal cabia entre os dedos. Um dia, procurando uma régua, abri a gaveta e o caderno estava ali. Confesso que li.\nEram listas de nomes e números. \"Seu Bento, cadeira de balanço.\" \"Dona Fátima, conserto da porta.\" \"Escola Rural, seis carteiras.\" Ao lado de alguns nomes havia um risco; ao lado de outros, nada. Fiz as contas de cabeça e achei uma quantia enorme. Eram trabalhos que ninguém tinha pagado.\nFiquei indignado. À noite, no jantar, não aguentei: — Vô, tem um monte de gente que deve dinheiro pro senhor! Por que o senhor não vai cobrar? A avó Celeste parou de servir o feijão. O avô continuou cortando o pão, sem pressa. Eu achei que ele fosse ficar bravo por eu ter mexido nas coisas dele.\n— O Bento perdeu a plantação na enchente — disse, por fim. — A Fátima ficou viúva no ano passado. E a escola... a escola é das crianças. Depois de um tempo, acrescentou: — Eu anoto para lembrar quem precisa. Não para lembrar quem deve.\nNão respondi. Fiquei olhando para o prato, com uma vergonha que ia crescendo devagar, como água subindo. Eu tinha pensado em dinheiro; ele tinha pensado em pessoas.\nDepois do jantar, a avó Celeste me chamou na varanda. Contou, baixinho, que muita gente na cidade tinha a casa mobiliada pelo avô e que, nos anos difíceis, era ele quem consertava de graça as carteiras da escola. — Ele não gosta que falem disso — avisou. — Diz que bondade anunciada perde o gosto. Fiquei pensando nessa frase até pegar no sono, olhando para o teto de madeira que, claro, também tinha sido feito por ele.\nNo dia seguinte, o avô me levou à casa de Seu Bento para entregar um banquinho de ordenhar. Seu Bento nos recebeu com um cesto de ovos e uma garrafa de leite fresco. Os dois conversaram sobre chuva, sobre o preço do milho, sobre um time de futebol que nunca ganhava. Ninguém falou em dinheiro. Na volta, o avô disse, só para si mesmo: — Pronto, está pago.\nMuitos anos depois, quando arrumamos as coisas da oficina, encontrei o caderno de novo. Na última página, com a mesma letra tremida, havia uma linha que eu não tinha visto naquele verão: \"Tomás, nove anos, companhia na oficina\". Ao lado, um risco firme, como quem dá uma conta por encerrada.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde ficava o caderno de capa azul?",
+       "options": [
+        "Na estante da sala",
+        "Na gaveta da bancada da oficina",
+        "Debaixo do colchão",
+        "Na cozinha"
+       ],
+       "answer": "Na gaveta da bancada da oficina",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que estava anotado no caderno?",
+       "options": [
+        "Receitas da avó",
+        "Trabalhos que as pessoas não tinham pagado",
+        "Datas de aniversário",
+        "Medidas de móveis"
+       ],
+       "answer": "Trabalhos que as pessoas não tinham pagado",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas carteiras o avô fez para a Escola Rural?",
+       "options": [],
+       "answer": "seis",
+       "accept": [
+        "6"
+       ],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Seu Bento deu ao avô e ao neto?",
+       "options": [
+        "Dinheiro",
+        "Um cesto de ovos e uma garrafa de leite",
+        "Uma galinha",
+        "Um saco de milho"
+       ],
+       "answer": "Um cesto de ovos e uma garrafa de leite",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Seu Bento não tinha pagado o avô?",
+       "options": [
+        "Porque esqueceu",
+        "Porque perdeu a plantação na enchente",
+        "Porque não gostou da cadeira",
+        "Porque se mudou"
+       ],
+       "answer": "Porque perdeu a plantação na enchente",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase \"Eu anoto para lembrar quem precisa. Não para lembrar quem deve\" revela sobre o avô?",
+       "options": [
+        "Que ele tinha má memória",
+        "Que ele era generoso e se preocupava com os vizinhos",
+        "Que ele queria ficar rico",
+        "Que ele desconfiava das pessoas"
+       ],
+       "answer": "Que ele era generoso e se preocupava com os vizinhos",
+       "accept": [],
+       "hint": "Pense na diferença entre \"precisar\" e \"dever\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a anotação final sobre Tomás sugere?",
+       "options": [
+        "Que o avô cobrou o neto pelas férias",
+        "Que o avô considerou a companhia do neto um presente que valia muito",
+        "Que o avô estava zangado com o neto",
+        "Que o caderno era da avó"
+       ],
+       "answer": "Que o avô considerou a companhia do neto um presente que valia muito",
+       "accept": [],
+       "hint": "Pense no que o risco ao lado de um nome significava no caderno.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o narrador sentiu vergonha durante o jantar?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que o narrador sente e no que ele aprendeu.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A noite da tempestade",
+     "synopsis": "Uma tempestade derruba a luz da cidade, e o avô acende um lampião e conta histórias para acalmar o neto assustado.",
+     "text": "Em fevereiro veio a chuva grossa. Lembro que a tarde escureceu de repente, como se alguém tivesse puxado uma cortina sobre a Rua do Ingá. O vento sacudia o pé de jabuticaba e as primeiras gotas batiam no telhado como pedrinhas.\nQuando o primeiro trovão estourou, a luz da casa piscou duas vezes e apagou. A cidade inteira ficou no escuro. Eu tinha dez anos recém-feitos e queria parecer corajoso, mas minhas pernas tremiam embaixo da mesa.\nO avô não disse nada. Levantou-se, foi até o armário e voltou com um lampião de querosene. Acendeu o pavio com um fósforo, regulou a chama e colocou o lampião no meio da mesa. A luz amarela fez as nossas sombras crescerem nas paredes, enormes e tortas. A avó Celeste trouxe uma panela de pipoca, feita no fogão a lenha, que não precisava de energia.\n— Sabe por que o trovão faz barulho? — perguntou o avô. Eu sacudi a cabeça. Ele então contou que, quando era pequeno, a mãe dele dizia que eram os santos arrastando os móveis no céu. — Mas depois aprendi na escola que é o ar se esticando muito depressa, por causa do calor do raio — completou. — As duas histórias são bonitas. Só uma é verdade.\nRi, apesar do medo, e o avô pareceu satisfeito. Então ele começou a fazer sombras com as mãos na parede: um cachorro, um coelho, um pássaro que batia as asas. O pássaro era igual ao de madeira que ele tinha me dado no primeiro dia. Entendi que ele lembrava.\nA avó entrou na brincadeira e fez uma tartaruga, que ficou parecendo uma batata. Rimos tanto que, por alguns minutos, esqueci completamente o barulho lá fora. Lembro do gosto salgado da pipoca, do cheiro de querosene queimando e da chuva escorrendo pela vidraça como se a casa estivesse dentro de uma cachoeira. Quando um trovão mais forte estourava, o avô fazia o cachorro da parede latir, e o medo diminuía um pouco.\nA tempestade durou quase três horas. Em algum momento, deitei a cabeça no braço do avô e parei de contar os trovões. Acordei de manhã na minha cama, sem saber como tinha chegado ali. O céu estava limpo e o quintal, cheio de jabuticabas caídas.\nAté hoje não gosto de tempestades. Mas, quando falta luz, acendo uma vela e faço um pássaro com as mãos na parede. Ninguém mais entende por quê. Eu entendo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que mês veio a chuva forte?",
+       "options": [
+        "Janeiro",
+        "Fevereiro",
+        "Março",
+        "Dezembro"
+       ],
+       "answer": "Fevereiro",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que o avô acendeu quando a luz acabou?",
+       "options": [],
+       "answer": "um lampião",
+       "accept": [
+        "lampião",
+        "lampião de querosene",
+        "o lampião"
+       ],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quanto tempo durou a tempestade?",
+       "options": [
+        "Meia hora",
+        "Quase três horas",
+        "A noite inteira e o dia seguinte",
+        "Dez minutos"
+       ],
+       "answer": "Quase três horas",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o que o avô aprendeu na escola, o que causa o barulho do trovão?",
+       "options": [
+        "Santos arrastando móveis",
+        "Nuvens batendo umas nas outras",
+        "O ar se expandindo muito depressa por causa do calor do raio",
+        "A chuva caindo no telhado"
+       ],
+       "answer": "O ar se expandindo muito depressa por causa do calor do raio",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que as pernas tremendo de Tomás mostram?",
+       "options": [
+        "Que ele estava com frio",
+        "Que ele estava com medo, apesar de querer parecer corajoso",
+        "Que ele estava cansado",
+        "Que ele estava com fome"
+       ],
+       "answer": "Que ele estava com medo, apesar de querer parecer corajoso",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a sombra de pássaro foi importante para Tomás?",
+       "options": [
+        "Porque era a mais difícil de fazer",
+        "Porque mostrava que o avô se lembrava do presente do primeiro dia",
+        "Porque assustou a avó",
+        "Porque parecia um avião"
+       ],
+       "answer": "Porque mostrava que o avô se lembrava do presente do primeiro dia",
+       "accept": [],
+       "hint": "Volte ao Capítulo 1 em pensamento: o que o avô deu ao neto?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Tomás provavelmente chegou à cama?",
+       "options": [
+        "Foi andando sozinho, acordado",
+        "O avô o carregou enquanto ele dormia",
+        "A avó o acordou",
+        "Ele dormiu na mesa a noite toda"
+       ],
+       "answer": "O avô o carregou enquanto ele dormia",
+       "accept": [],
+       "hint": "Ele adormeceu no braço de quem?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o narrador adulto ainda faz um pássaro com as mãos na parede quando falta luz?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que o narrador sente e no que ele aprendeu.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O banco de duas mãos",
+     "synopsis": "No fim das férias, avô e neto constroem juntos um banco de madeira. Tomás se machuca, erra e aprende que um trabalho bem feito leva tempo.",
+     "text": "Na última semana de férias, o avô colocou duas tábuas de cedro na minha frente e disse: — Hoje você trabalha. Eu nunca tinha segurado um serrote. Ele também nunca tinha me deixado chegar perto da bancada sem olhar cada movimento meu. Senti um orgulho enorme, misturado com um pouco de medo de decepcioná-lo.\nO plano era fazer um banco pequeno, de quatro pés, para ficar embaixo da jabuticabeira. O avô desenhou as medidas na madeira com o lápis curto e me mostrou como serrar: o corpo firme, o braço solto, deixando a ferramenta fazer o esforço. — Quem força a serra entorta o corte — explicou.\nEu forcei, claro. O primeiro corte saiu torto como uma escada caída. O segundo, um pouco menos. No terceiro, o avô ficou em silêncio, e eu soube que estava bom.\nNa hora de lixar, fiquei impaciente e passei a mão depressa demais pela tábua. Uma farpa entrou fundo no meu polegar. Doeu tanto que larguei tudo e quase chorei. O avô pegou uma agulha, esquentou a ponta no fósforo e tirou a farpa com uma calma que me irritou. Depois mostrou as próprias mãos, cheias de pequenas cicatrizes brancas. — Cada uma é uma lição — disse. — Esta aqui foi do primeiro banco que eu fiz.\nNaquela tarde não quis mais voltar à oficina. Fiquei emburrado na varanda, com o polegar enrolado num pano. O avô não insistiu. Mas, quando escureceu, ouvi o barulho da lixa vindo dos fundos e percebi que ele tinha guardado as minhas tábuas sem mexer nelas. Estavam esperando por mim. No dia seguinte, voltei sem que ninguém precisasse chamar.\nLevamos quatro dias. Pregamos os pés, encaixamos o assento, lixamos tudo até a madeira ficar lisa como pedra de rio. No último dia, o avô me entregou um formão pequeno e pediu que eu gravasse alguma coisa embaixo do assento. Pensei muito e escrevi, com letras desajeitadas: \"T e J\".\nColocamos o banco embaixo da jabuticabeira. Ele balançava um pouquinho, porque um dos pés tinha ficado meio centímetro mais curto. Fiquei triste. O avô sentou nele, balançou de propósito e riu alto, um riso de verdade, com a boca aberta. Foi a única vez que o ouvi rir assim.\n— Banco perfeito ninguém lembra — disse ele. — Este aqui, você nunca vai esquecer. E não esqueci. Ainda hoje, quando faço algo com pressa e sai torto, ouço aquela risada e me perdoo um pouco.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que madeira eram as tábuas usadas no banco?",
+       "options": [],
+       "answer": "cedro",
+       "accept": [
+        "de cedro"
+       ],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantos dias avô e neto levaram para fazer o banco?",
+       "options": [
+        "Um",
+        "Dois",
+        "Quatro",
+        "Sete"
+       ],
+       "answer": "Quatro",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Tomás gravou embaixo do assento?",
+       "options": [
+        "O próprio nome completo",
+        "\"T e J\"",
+        "A data do dia",
+        "Um desenho de pássaro"
+       ],
+       "answer": "\"T e J\"",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o banco balançava?",
+       "options": [
+        "Porque o chão era torto",
+        "Porque um dos pés ficou mais curto",
+        "Porque faltou um prego",
+        "Porque a madeira estava molhada"
+       ],
+       "answer": "Porque um dos pés ficou mais curto",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que as cicatrizes nas mãos do avô representam para ele?",
+       "options": [
+        "Acidentes que ele quer esquecer",
+        "Lições aprendidas no trabalho",
+        "Marcas de doença",
+        "Brigas da juventude"
+       ],
+       "answer": "Lições aprendidas no trabalho",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o avô quis dizer com \"Banco perfeito ninguém lembra\"?",
+       "options": [
+        "Que móveis perfeitos são feios",
+        "Que os defeitos tornam as coisas únicas e memoráveis",
+        "Que o neto deveria refazer o banco",
+        "Que ninguém usa bancos"
+       ],
+       "answer": "Que os defeitos tornam as coisas únicas e memoráveis",
+       "accept": [],
+       "hint": "Pense no que torna um objeto especial para quem o fez.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a risada do avô foi marcante para o narrador?",
+       "options": [
+        "Porque ele ria o tempo todo",
+        "Porque foi a única vez que o ouviu rir de boca aberta",
+        "Porque a risada assustou a avó",
+        "Porque o avô estava zombando dele"
+       ],
+       "answer": "Porque foi a única vez que o ouviu rir de boca aberta",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô balançou o banco de propósito e riu?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que o narrador sente e no que ele aprendeu.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O que ficou",
+     "synopsis": "Anos depois, o narrador adulto volta à casa vazia da Rua do Ingá e percebe tudo o que o avô deixou nele.",
+     "text": "Voltei à Rua do Ingá vinte e cinco anos depois daquele primeiro verão. O avô Joaquim já tinha partido havia alguns meses, e a avó Celeste fora morar com minha tia na capital. Meu pai e eu viemos para esvaziar a casa antes que ela fosse vendida.\nA primeira coisa que senti, ao abrir a porta, foi o cheiro. Madeira, café, chuva guardada. Por um segundo, tive nove anos de novo. Esperei ouvir o pêndulo, mas o relógio da sala estava parado. Ninguém tinha dado corda.\nMeu pai ficou de pé no meio da sala, sem saber por onde começar. Foi a primeira vez que o vi tão parecido com o avô: calado, com as mãos nos bolsos, olhando para as paredes como se elas fossem falar. Então peguei a chave de ferro em cima do relógio, abri a portinha e comecei a girar. Devagar. Um, dois, três... até catorze.\nO pêndulo voltou a andar. Meu pai olhou para mim com os olhos molhados. — Ele te ensinou isso? — perguntou. Fiz que sim. — Comigo ele nunca teve paciência — disse meu pai, quase rindo. — Acho que guardou toda para você.\nPassamos a tarde arrumando a oficina. Encontrei o caderno de capa azul, o lápis curto, uma caixa cheia de passarinhos de madeira inacabados. Lá fora, embaixo da jabuticabeira, o banco ainda estava lá, cinza de sol e chuva, balançando o mesmo meio centímetro de sempre. Virei o assento: \"T e J\" continuava ali.\nSentei no banco e fiquei um tempo ali, olhando a rua. Passou um menino de bicicleta, depois uma senhora carregando sacolas, depois ninguém. A cidade continuava pequena e lenta, como se o relógio dela também precisasse de corda. Pensei em todas as coisas que eu não tinha perguntado ao avô e que agora ninguém mais saberia responder. Pensei também em todas as que ele tinha me ensinado sem nunca explicar.\nMeu pai quis deixar o banco para os novos donos. Eu não deixei. Hoje ele está na varanda do meu apartamento, e meus filhos sentam nele para comer jabuticaba quando vamos à feira. Eles acham graça no balanço. Eu conto a história de cada coisa: do relógio, da pescaria sem peixe, da noite da tempestade.\nÀs vezes penso que a memória é uma espécie de marcenaria. A gente pega pedaços soltos do passado, lixa, encaixa, e no fim fica uma coisa que dá para usar. Não fica perfeita. Sempre balança um pouco. Mas é justamente por isso que a gente lembra.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantos anos depois do primeiro verão o narrador voltou à casa?",
+       "options": [
+        "Dez",
+        "Quinze",
+        "Vinte e cinco",
+        "Quarenta"
+       ],
+       "answer": "Vinte e cinco",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o narrador e o pai foram à casa?",
+       "options": [
+        "Para passar as férias",
+        "Para esvaziar a casa antes da venda",
+        "Para visitar a avó",
+        "Para consertar o telhado"
+       ],
+       "answer": "Para esvaziar a casa antes da venda",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o narrador fez com o relógio parado?",
+       "options": [
+        "Levou-o para consertar",
+        "Deu corda, contando até catorze",
+        "Vendeu-o",
+        "Deixou-o parado de propósito"
+       ],
+       "answer": "Deu corda, contando até catorze",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, onde está o banco hoje?",
+       "options": [],
+       "answer": "na varanda",
+       "accept": [
+        "na varanda do apartamento",
+        "varanda",
+        "na varanda do apartamento dele"
+       ],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que havia na caixa encontrada na oficina?",
+       "options": [
+        "Ferramentas novas",
+        "Passarinhos de madeira inacabados",
+        "Cartas antigas",
+        "Fotografias"
+       ],
+       "answer": "Passarinhos de madeira inacabados",
+       "accept": [],
+       "hint": "Volte ao trecho do capítulo que fala disso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a fala do pai \"Comigo ele nunca teve paciência\" revela?",
+       "options": [
+        "Que o pai não gostava do avô",
+        "Que o avô foi diferente com o neto do que tinha sido com o filho",
+        "Que o pai nunca visitava a casa",
+        "Que o avô era impaciente com todos"
+       ],
+       "answer": "Que o avô foi diferente com o neto do que tinha sido com o filho",
+       "accept": [],
+       "hint": "Compare como o avô tratava Tomás com o que o pai conta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o narrador compara a memória à marcenaria?",
+       "options": [
+        "Porque o avô escrevia memórias",
+        "Porque, como na marcenaria, juntamos pedaços do passado e formamos algo útil, ainda que imperfeito",
+        "Porque ele virou marceneiro",
+        "Porque lembrar dá trabalho físico"
+       ],
+       "answer": "Porque, como na marcenaria, juntamos pedaços do passado e formamos algo útil, ainda que imperfeito",
+       "accept": [],
+       "hint": "Releia o último parágrafo com atenção.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o narrador não deixou o banco para os novos donos da casa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que o narrador sente e no que ele aprendeu.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
