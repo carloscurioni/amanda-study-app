@@ -3226,6 +3226,911 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Lantern on Ashby Lane",
+   "premise": "A young poet notices a lantern glowing in the window of an empty house and, with her friends at poetry club, explores atmosphere, sound, rhythm and the open questions that make poems and mysteries memorable.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The House in the Fog",
+     "synopsis": "Walking home through thick fog, Wren notices a lantern glowing in the window of the empty house on Ashby Lane.",
+     "text": "The fog came in on Tuesday afternoon, soft and grey, the way milk spreads through tea. By the time Wren left the library, the end of Ashby Lane had disappeared completely.\nShe walked slowly. Her footsteps sounded strange, as if the fog were swallowing them. Tap, tap, hush. Tap, tap, hush. Somewhere a gate creaked, then stopped. A blackbird gave one sharp note and fell silent.\nHalfway down the lane stood the old Ashby house. Nobody had lived there for years. Ivy covered the porch, the paint on the door had faded to the colour of dry leaves, and the garden was a tangle of brambles. Wren usually walked past it quickly.\nToday she stopped. In the upstairs window, a small yellow light was glowing.\nIt did not flicker like a candle. It burned steadily, patient and warm, like a lantern waiting for someone to come home.\nWren stood very still. The fog pressed close around her. She thought about knocking on the door, but her hand stayed in her pocket. What would she even say? Who would answer?\nShe waited for a shadow to cross the window, or for a curtain to move. Nothing happened. The light simply shone, and the house kept its secret.\nAt home, Wren could not stop thinking about it. She opened her notebook and wrote:\nA light in the window,\na house with no one home,\nthe fog is full of footsteps,\nbut I am walking alone.\nShe read it three times. It was not finished, she decided. But it was a beginning.\nBefore she turned off her lamp, she looked out towards Ashby Lane. The fog had thickened, and she could not see the house at all. Still, she was almost sure that somewhere in the grey, the little light was burning.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the weather like when Wren left the library?",
+       "options": [
+        "Thick fog",
+        "Heavy snow",
+        "Bright sunshine",
+        "A thunderstorm"
+       ],
+       "answer": "Thick fog",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Wren see the light?",
+       "options": [
+        "In an upstairs window of the old house",
+        "On the garden gate",
+        "At the library door",
+        "In a car on the lane"
+       ],
+       "answer": "In an upstairs window of the old house",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which bird gave one sharp note and fell silent?",
+       "options": [],
+       "answer": "a blackbird",
+       "accept": [
+        "blackbird",
+        "the blackbird"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how was the light described?",
+       "options": [
+        "It burned steadily, like a lantern",
+        "It flashed red and blue",
+        "It flickered like a candle",
+        "It went on and off quickly"
+       ],
+       "answer": "It burned steadily, like a lantern",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the words \"Tap, tap, hush. Tap, tap, hush\" help the reader to…",
+       "options": [
+        "hear the rhythm of her muffled footsteps",
+        "know what time it is",
+        "see the colour of the house",
+        "understand why she is late"
+       ],
+       "answer": "hear the rhythm of her muffled footsteps",
+       "accept": [],
+       "hint": "Read the words aloud and listen to their pattern.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do you think Wren did not knock on the door?",
+       "options": [
+        "She felt unsure and a little nervous",
+        "She was in a hurry to watch TV",
+        "She knew the owner was asleep",
+        "The door had no knocker"
+       ],
+       "answer": "She felt unsure and a little nervous",
+       "accept": [],
+       "hint": "Look at the questions she asks herself.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Wren mean when she decides her poem \"was a beginning\"?",
+       "options": [
+        "She wants to keep working on it",
+        "She thinks it is perfect",
+        "She wants to throw it away",
+        "She has copied it from a book"
+       ],
+       "answer": "She wants to keep working on it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the writer never tells us who lit the light in this chapter?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how it makes you feel as a reader.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: Counting the Beat",
+     "synopsis": "At poetry club, Ms Fairweather teaches the children about rhythm, and Wren's poem makes the group argue about the mysterious light.",
+     "text": "Poetry club met every Thursday in the room at the end of the corridor, where the radiator clanked like a tired drum. Ms Fairweather, the teacher in charge, always started the same way.\n\"Hands on the tables,\" she said. \"Today, we listen with our fingers.\"\nShe read a line aloud and tapped the strong beats as she spoke. DUM-da, DUM-da, DUM-da, DUM. The children copied her, and soon the whole table was drumming softly.\n\"A poem has a heartbeat,\" Ms Fairweather said. \"Sometimes it gallops. Sometimes it creeps. Notice how the rhythm changes the mood.\"\nWren's best friend, Joss, raised his hand. \"So a fast beat is exciting, and a slow beat is spooky?\"\n\"Often,\" said Ms Fairweather, smiling. \"But not always. That is what makes it interesting.\"\nWhen it was time to share, Wren took a deep breath and read her poem about the light in the window. Her voice shook on the first line, then steadied. When she finished, the room was quiet for a moment.\n\"Who lit the light?\" asked Priya at once.\n\"A burglar,\" said Joss.\n\"A ghost,\" said Leon, wiggling his fingers.\n\"Maybe somebody just moved in,\" said Priya.\nWren shook her head. \"I don't know. I really don't.\"\nMs Fairweather tapped the table twice. \"Then your poem has done something clever. It has left a question open. Writers call that ambiguity. Readers can bring their own ideas, as long as they can point to the words that made them think so.\"\nJoss was already counting the syllables in Wren's lines on his fingers. \"Your last line is slower,\" he said. \"But I am walking alone. It sounds lonely.\"\nWren had not noticed that before. She wrote slow ending = lonely in the margin of her notebook.\nOn the way home, Joss nudged her. \"We should go and look at the house again. Properly. For research.\"\nWren looked down Ashby Lane. The fog had gone, but the upstairs window was dark.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, on which day does poetry club meet?",
+       "options": [
+        "Thursday",
+        "Monday",
+        "Saturday",
+        "Tuesday"
+       ],
+       "answer": "Thursday",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Fairweather ask the children to do with their hands?",
+       "options": [
+        "Tap the strong beats on the table",
+        "Clap above their heads",
+        "Write the poem out neatly",
+        "Draw the house"
+       ],
+       "answer": "Tap the strong beats on the table",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the radiator sound like?",
+       "options": [
+        "A tired drum",
+        "A singing bird",
+        "A ringing phone",
+        "A rushing river"
+       ],
+       "answer": "A tired drum",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what word does Ms Fairweather use for a question that is left open?",
+       "options": [],
+       "answer": "ambiguity",
+       "accept": [
+        "ambiguous"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which of these is NOT an idea the children suggest about the light?",
+       "options": [
+        "A lighthouse keeper",
+        "A burglar",
+        "A ghost",
+        "Someone who just moved in"
+       ],
+       "answer": "A lighthouse keeper",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Joss think Wren's last line sounds lonely?",
+       "options": [
+        "Because it is slower",
+        "Because it rhymes with home",
+        "Because it is very loud",
+        "Because it is in capital letters"
+       ],
+       "answer": "Because it is slower",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what can we infer about Wren when her \"voice shook on the first line\"?",
+       "options": [
+        "She was nervous about sharing her poem",
+        "She had a bad cold",
+        "She was angry with Joss",
+        "She had forgotten the words"
+       ],
+       "answer": "She was nervous about sharing her poem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Ms Fairweather says readers can have different ideas \"as long as they can point to the words\". Why do you think that rule is important?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what makes an idea about a poem convincing.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Sound Collectors",
+     "synopsis": "Wren and Joss collect the sounds of Ashby Lane to use in their poems and spot the lantern again at dusk.",
+     "text": "On Saturday, Joss arrived with his grandmother's old voice recorder and a list titled SOUND COLLECTING.\n\"Ms Fairweather says poems should be heard, not just read,\" he explained. \"So we need real sounds.\"\nThey began at the top of Ashby Lane. Wren wrote every sound in her notebook, trying to spell it exactly as it sounded.\nThe drain at the corner went drip, drip, plink. The wind in the tall hedge went shhhhh, like someone asking a room to be quiet. A loose sign on the bus shelter rattled and clattered. Further down, a dog behind a fence gave a low, rolling growl.\n\"Those are onomatopoeia,\" said Wren proudly. \"Words that sound like what they mean.\"\n\"And listen to this,\" said Joss. He read from his list in a whisper: \"Silent stones and sleepy shadows.\"\n\"Lots of s sounds,\" said Wren. \"That's alliteration. It makes it sound hushed. Like the fog.\"\nBy the time they reached the Ashby house, the sun was sinking and the sky had turned the colour of a bruise. The brambles in the garden scratched against the fence. Somewhere inside the house, something creaked, long and slow, like a door being opened by someone in no hurry.\nJoss held out the recorder with a shaking hand. Neither of them breathed.\nThen, upstairs, the lantern came on.\nIt did not flash. It just appeared, a calm yellow square in the dark front of the house.\n\"Did you see a person?\" Joss whispered.\n\"No,\" said Wren. \"Did you?\"\n\"No.\"\nThey walked home faster than they had walked all day. That night Wren played back the recording. Under the wind and the brambles there was the creak, long and slow. And then, so quiet she almost missed it, a sound like a single footstep on a wooden floor.\nShe wrote it down, then crossed it out, then wrote it again with a question mark.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Joss bring with him?",
+       "options": [
+        "An old voice recorder",
+        "A camera",
+        "A torch",
+        "A map of the lane"
+       ],
+       "answer": "An old voice recorder",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which sound did the drain make?",
+       "options": [
+        "drip, drip, plink",
+        "shhhhh",
+        "creak",
+        "rattle and clatter"
+       ],
+       "answer": "drip, drip, plink",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what word does Wren use for words that sound like what they mean?",
+       "options": [],
+       "answer": "onomatopoeia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, \"Silent stones and sleepy shadows\" is an example of…",
+       "options": [
+        "alliteration",
+        "a question",
+        "a rhyme at the end of lines",
+        "a speech"
+       ],
+       "answer": "alliteration",
+       "accept": [],
+       "hint": "Look at the first letters of the words.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour did the sky turn as the sun sank?",
+       "options": [
+        "The colour of a bruise",
+        "Bright orange",
+        "Pale pink",
+        "Pure white"
+       ],
+       "answer": "The colour of a bruise",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Wren hear on the recording that she almost missed?",
+       "options": [
+        "A single footstep on a wooden floor",
+        "A woman singing",
+        "A phone ringing",
+        "A cat meowing"
+       ],
+       "answer": "A single footstep on a wooden floor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do you think Wren adds a question mark after the footstep?",
+       "options": [
+        "She is not sure what the sound really was",
+        "She wants to make a joke",
+        "She has forgotten how to spell it",
+        "Joss told her to"
+       ],
+       "answer": "She is not sure what the sound really was",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the children \"walked home faster than they had walked all day\"? Use a detail from the chapter.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what they had just seen and heard.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: A Note on the Step",
+     "synopsis": "Wren and Joss leave a polite note at the Ashby house, and the next morning they find a strange reply.",
+     "text": "\"We could just ask,\" said Priya at lunch on Monday. \"Write a note. Leave it on the step.\"\nJoss looked horrified. Wren looked thoughtful.\nSo that afternoon, the three of them stood at the gate of the Ashby house holding a folded piece of paper. Wren had written it in her neatest handwriting:\nDear whoever lights the lantern,\nWe are writing poems about your house. We hope you don't mind. Who are you? Why do you light the lamp?\nFrom three poets (friendly)\nPriya added a small drawing of a lantern. Joss added \"(very friendly)\" underneath.\nThe gate groaned as they pushed it open. The path was cracked and green with moss. Up close, the house seemed taller and sadder, its windows like tired eyes. Wren tucked the note under a smooth grey stone on the top step, and they hurried back to the lane.\nThat evening the lantern glowed as usual. Wren watched it from her bedroom until her eyes grew heavy.\nOn Tuesday morning, before school, Joss knocked on Wren's door, out of breath. \"Come and look!\"\nTheir note had gone. In its place, under the same grey stone, lay a long white feather.\nThat was all. No letter. No name. Just a feather, clean and perfect, its edges moving slightly in the breeze.\n\"What does it mean?\" asked Joss.\n\"Maybe it means yes,\" said Priya, who had come running too. \"Yes, you can write poems.\"\n\"Or maybe it's a warning,\" said Joss.\n\"Or maybe a bird just dropped it,\" said Wren slowly. But she did not really believe that. The feather had been placed exactly where the note had been, lined up neatly with the edge of the stone.\nShe carried it to school carefully between the pages of her notebook. In maths she could not concentrate. In science she drew feathers in the margin. The note had asked two questions. The answer, it seemed, was a third question.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, whose idea was it to write a note?",
+       "options": [
+        "Priya's",
+        "Joss's",
+        "Ms Fairweather's",
+        "Wren's mother's"
+       ],
+       "answer": "Priya's",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Wren leave the note?",
+       "options": [
+        "Under a grey stone on the top step",
+        "In the letterbox",
+        "Tied to the gate",
+        "Under the doormat"
+       ],
+       "answer": "Under a grey stone on the top step",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what did Priya draw on the note?",
+       "options": [],
+       "answer": "a lantern",
+       "accept": [
+        "lantern",
+        "a small lantern"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the children find the next morning?",
+       "options": [
+        "A long white feather",
+        "A letter with a name",
+        "A key",
+        "A pressed flower"
+       ],
+       "answer": "A long white feather",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the windows are described as being \"like tired eyes\". This is an example of…",
+       "options": [
+        "a simile",
+        "onomatopoeia",
+        "a rhyme",
+        "a question"
+       ],
+       "answer": "a simile",
+       "accept": [],
+       "hint": "Look for the word \"like\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Wren not really believe a bird just dropped the feather?",
+       "options": [
+        "It was placed neatly exactly where the note had been",
+        "It was painted blue",
+        "It was much too big for a bird",
+        "It was stuck to the door"
+       ],
+       "answer": "It was placed neatly exactly where the note had been",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the last sentence suggest?",
+       "options": [
+        "The reply made the mystery deeper instead of solving it",
+        "The children were given a maths problem",
+        "The mystery was completely solved",
+        "Wren lost the feather"
+       ],
+       "answer": "The reply made the mystery deeper instead of solving it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "What do you think the feather means? Give a reason from the chapter.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "There is no single right answer. Use the details about where and how it was left.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Moonlight on the Lane",
+     "synopsis": "On a bright moonlit night, Wren and her father walk down Ashby Lane and notice how light and silence change the mood.",
+     "text": "The fog never returned that week. Instead, on Friday, the moon rose full and white over the rooftops, and Wren's father suggested a walk.\n\"Just to the post box,\" he said. \"Moonlight is good for poets.\"\nAshby Lane looked completely different in the moonlight. Every hedge had a silver edge. The puddles held tiny copies of the moon. The shadows of the trees lay across the road in long black stripes, so that walking felt like stepping over the bars of a gate.\n\"It's so quiet,\" whispered Wren.\n\"Listen harder,\" said her father.\nShe did. She heard a car far away, a soft hum like a bee in another room. She heard the leaves turning over in the breeze. She heard her own breath.\n\"Quiet isn't empty,\" her father said. \"It's full of small things.\"\nWhen they reached the Ashby house, Wren slowed down. The upstairs window was lit, as always. But tonight, in the moonlight, she could see something new: a shape on the windowsill beside the lantern. It was small and round, perhaps a bowl or a pot.\nThen, as they watched, the lantern went out.\nNot suddenly. It dimmed, slowly, the way a sunset fades, until the window was just a dark square reflecting the moon.\n\"Someone turned it down,\" said her father calmly. \"Someone who lives there, I expect.\"\n\"Or someone who knew we were watching,\" said Wren.\nHer father laughed gently. \"Both can be true.\"\nAt home, Wren wrote a new verse. She tried to make it sound like the evening: slow, silver and calm.\nThe moon on the lane,\nthe leaves whispering low,\nthe lantern grows dimmer,\nthen gently lets go.\nShe tapped the rhythm on her desk the way Ms Fairweather had taught them. It rocked like a boat. She liked that. It made the ending feel peaceful instead of frightening, even though the light had gone out.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Wren's father suggest?",
+       "options": [
+        "A walk to the post box",
+        "A trip to the library",
+        "Knocking on the Ashby door",
+        "Watching a film"
+       ],
+       "answer": "A walk to the post box",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the puddles hold?",
+       "options": [
+        "Tiny copies of the moon",
+        "Fallen leaves only",
+        "Frogs",
+        "Ice"
+       ],
+       "answer": "Tiny copies of the moon",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the shadows of the trees are compared to…",
+       "options": [
+        "the bars of a gate",
+        "black snakes",
+        "a river",
+        "a ladder"
+       ],
+       "answer": "the bars of a gate",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what new shape did Wren see on the windowsill?",
+       "options": [],
+       "answer": "a bowl or a pot",
+       "accept": [
+        "bowl",
+        "pot",
+        "a bowl",
+        "a pot",
+        "bowl or pot"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the lantern go out?",
+       "options": [
+        "It dimmed slowly",
+        "It flashed and went black",
+        "It exploded",
+        "Someone smashed it"
+       ],
+       "answer": "It dimmed slowly",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Wren's father mean by \"Quiet isn't empty\"?",
+       "options": [
+        "Even silence is full of small sounds",
+        "The house is full of people",
+        "Wren talks too much",
+        "The lane is busy at night"
+       ],
+       "answer": "Even silence is full of small sounds",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Wren want her verse to rock \"like a boat\"?",
+       "options": [
+        "So the ending feels peaceful rather than frightening",
+        "So it sounds like a storm",
+        "So it is easier to spell",
+        "So it is longer"
+       ],
+       "answer": "So the ending feels peaceful rather than frightening",
+       "accept": [],
+       "hint": "Look at the last two sentences.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Compare the mood of Ashby Lane in this chapter with the mood in Chapter 1. Why do you think the writer changed it?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about fog and moonlight, and how each makes you feel.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Three Ways of Reading",
+     "synopsis": "At poetry club, the children read Wren's finished poem in very different ways, and Ms Fairweather shows them that more than one reading can be right.",
+     "text": "Wren put all her verses together and gave the poem a title: The Lantern on Ashby Lane. On Thursday she read it to the club, and this time her voice did not shake.\nWhen she finished, Ms Fairweather wrote three words on the board: WHO? WHY? HOW DO YOU KNOW?\n\"Let's hear your readings,\" she said.\nLeon went first. \"It's a ghost story. The house is empty, the light is too steady, and there's that footstep. Ghosts don't need candles that flicker.\"\n\"Good,\" said Ms Fairweather. \"You've used evidence.\"\nPriya disagreed. \"I think it's about someone lonely. They light the lantern every night because they're waiting for someone. That's why it's described as warm and patient. And the feather was a kind of hello, because they're shy.\"\n\"Also good,\" said Ms Fairweather.\nThen Joss spoke, more quietly than usual. \"I think the poem is really about Wren. She's the one walking alone. The lantern is like hope. Even when it goes out, the ending is calm, so she isn't scared any more.\"\nWren stared at him. She had not thought of that at all, but when she looked at her lines again, she could see it there, like a picture hidden in a puzzle.\n\"So who's right?\" asked Leon.\nMs Fairweather put down her pen. \"Each reading is supported by the words of the poem. A strong poem often leaves room for more than one meaning. That's not a mistake. It's an invitation.\"\n\"But Wren knows the real answer,\" said Leon.\n\"I don't,\" said Wren. \"I only know what I saw.\"\nAfter the club, Ms Fairweather stopped her at the door. \"Good poets often find out what their poem means by listening to readers,\" she said. \"You might be one of them.\"\nWren walked home slowly, holding her notebook against her chest. As she passed the Ashby house, she noticed that the gate was open, and fresh footprints led up the mossy path.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what title did Wren give her poem?",
+       "options": [
+        "The Lantern on Ashby Lane",
+        "The Ghost in the Window",
+        "Fog and Feathers",
+        "The Empty House"
+       ],
+       "answer": "The Lantern on Ashby Lane",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how was Wren's voice different this time?",
+       "options": [
+        "It did not shake",
+        "It was a whisper",
+        "It was very loud",
+        "It kept stopping"
+       ],
+       "answer": "It did not shake",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Leon think the poem is about?",
+       "options": [
+        "A ghost",
+        "A lonely person",
+        "Wren herself",
+        "A burglar"
+       ],
+       "answer": "A ghost",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, according to Joss, what does the lantern stand for?",
+       "options": [
+        "Hope",
+        "Danger",
+        "Money",
+        "Winter"
+       ],
+       "answer": "Hope",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many words did Ms Fairweather write on the board?",
+       "options": [],
+       "answer": "three",
+       "accept": [
+        "3"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Fairweather call a poem that leaves room for more than one meaning?",
+       "options": [
+        "An invitation",
+        "A mistake",
+        "A puzzle with no answer",
+        "A riddle"
+       ],
+       "answer": "An invitation",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what new clue does Wren notice at the end?",
+       "options": [
+        "The gate was open and there were fresh footprints",
+        "The lantern had been removed",
+        "A second feather on the step",
+        "A sign saying FOR SALE"
+       ],
+       "answer": "The gate was open and there were fresh footprints",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Which of the three readings of the poem do you find most convincing, and why?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pick one and point to a detail that supports it.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Keeper of the Lantern",
+     "synopsis": "Wren finally meets the person who lights the lantern, learns part of the story, and discovers that some questions are worth keeping.",
+     "text": "On Saturday morning, Wren and Joss stood at the open gate of the Ashby house. This time the front door was open too. On the step, a small woman with silver hair was pulling brambles out of a flowerbed.\nShe looked up and smiled. \"Ah,\" she said. \"The friendly poets. Very friendly, I believe.\"\nJoss went pink.\nHer name was Mrs Hollin. She was the new caretaker, she explained, looking after the house while its owners, who lived far away, decided what to do with it.\n\"But why do you light the lantern?\" asked Wren.\nMrs Hollin brushed soil from her gloves. \"When I was a girl, my grandmother kept a lantern in her window on foggy nights, so anyone lost on the road could find their way. I promised her I would keep the habit wherever I lived. So I do.\"\n\"And the bowl on the windowsill?\" asked Joss.\n\"Seeds for the birds. The pigeons on the roof are very greedy.\"\n\"Is that where the feather came from?\" asked Wren.\nMrs Hollin's eyes twinkled. \"Perhaps,\" she said.\n\"And the footstep?\" said Joss. \"We recorded a footstep, the night it first came on.\"\nMrs Hollin tilted her head. \"I'm usually downstairs in the evening,\" she said thoughtfully. \"The lantern is on a timer now. My knees don't like those stairs.\"\nWren and Joss looked at each other. Neither said a word.\nBefore they left, Wren read Mrs Hollin her poem. The old woman listened with her eyes closed, nodding at the slow last line.\n\"You've caught it,\" she said. \"The feeling of a house waiting.\"\nThat night, the fog came back, soft and grey, the way it had begun. Wren looked out of her window. Far down the lane, the little light shone steadily, patient and warm.\nShe opened her notebook and added one final line to her poem:\nand some doors stay half-open, so questions can come home.\nShe did not know exactly what it meant. She only knew it was true.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who is Mrs Hollin?",
+       "options": [
+        "The new caretaker of the house",
+        "The owner's daughter",
+        "A teacher at the school",
+        "Wren's grandmother"
+       ],
+       "answer": "The new caretaker of the house",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Mrs Hollin's grandmother keep a lantern in her window?",
+       "options": [
+        "So people lost on foggy nights could find their way",
+        "To scare away foxes",
+        "To read at night",
+        "To signal to ships"
+       ],
+       "answer": "So people lost on foggy nights could find their way",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was in the bowl on the windowsill?",
+       "options": [],
+       "answer": "seeds for the birds",
+       "accept": [
+        "seeds",
+        "bird seed",
+        "birdseed",
+        "seeds for birds"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Mrs Hollin answer when asked about the feather?",
+       "options": [
+        "She says \"Perhaps\"",
+        "She says she bought it",
+        "She says it was a mistake",
+        "She says a cat brought it"
+       ],
+       "answer": "She says \"Perhaps\"",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the lantern now come on without anyone climbing the stairs?",
+       "options": [
+        "It is on a timer",
+        "It is controlled by a phone",
+        "The pigeons switch it on",
+        "It is powered by the sun"
+       ],
+       "answer": "It is on a timer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do Wren and Joss look at each other without speaking?",
+       "options": [
+        "The footstep they recorded is still unexplained",
+        "They are bored",
+        "They want to go home for lunch",
+        "They have forgotten the poem"
+       ],
+       "answer": "The footstep they recorded is still unexplained",
+       "accept": [],
+       "hint": "Think about what Mrs Hollin says about the stairs.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do you think the story ends with fog, just as it began?",
+       "options": [
+        "To bring the story full circle",
+        "Because it always rains in winter",
+        "To show that time went backwards",
+        "Because Wren is lost"
+       ],
+       "answer": "To bring the story full circle",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Wren's final line is \"some doors stay half-open, so questions can come home\". What do you think she means?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about the mysteries that were solved and the one that was not.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
