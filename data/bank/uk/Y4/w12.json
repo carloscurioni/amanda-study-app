@@ -3178,6 +3178,892 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Lantern Lane Players",
+   "premise": "Four friends join a new after-school drama club and learn, week by week, how to turn their own stories into playscripts, ending with a show for their families.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Hat That Flew Away",
+     "synopsis": "On the first day of the Lantern Lane Players, Mrs Pennyworth reads a short story and then shows the class the same story written as a playscript.",
+     "text": "Every Thursday after school, the old hall on Lantern Lane smelled of dust and orange squash. This term it was also the home of a brand-new drama club: the Lantern Lane Players.\nMrs Pennyworth, who ran the club, clapped her hands. \"Before we act anything, I want you to spot the difference between a story and a play,\" she said. She read from a sheet of paper:\n\"The wind was wild that morning. Grandpa Ted held on to his hat, but a sudden gust snatched it away. 'Come back!' he shouted crossly, chasing it down the path. The hat landed in a puddle, and Grandpa Ted laughed in spite of himself.\"\nThen she turned the sheet over. On the back was the same scene, written another way:\nGRANDPA TED: (holding his hat with both hands) What a wind!\n(A loud whoosh. The hat flies off.)\nGRANDPA TED: (crossly, running) Come back!\n(The hat lands in a puddle. GRANDPA TED stops and laughs.)\nNell put her hand up first. \"The play doesn't say 'he shouted'. It just puts his name and then what he says.\"\n\"And there are no speech marks,\" added Tomasz.\n\"What about the bits in brackets?\" asked Mrs Pennyworth.\nRuby frowned. \"They tell the actor what to do. Like 'running' and 'crossly'.\"\n\"Exactly. Those are stage directions,\" said Mrs Pennyworth. \"In a story, the narrator tells you how the wind feels. In a play, the audience has to see it and hear it.\"\nFemi, who had been quiet all afternoon, pointed at the paper. \"So in the play, somebody has to make the whoosh.\"\nEveryone looked at him. Mrs Pennyworth smiled and handed him a large piece of card. \"Then you are our first wind, Femi.\"\nFemi waved the card so hard that Tomasz's worksheet flew across the hall and landed in a bucket of paintbrushes. Everyone laughed, even Tomasz. The Lantern Lane Players had begun.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, on which day does the drama club meet?",
+       "options": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Saturday"
+       ],
+       "answer": "Thursday",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the new drama club?",
+       "options": [],
+       "answer": "the Lantern Lane Players",
+       "accept": [
+        "Lantern Lane Players",
+        "The Lantern Lane Players"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens to Grandpa Ted's hat at the end of the story?",
+       "options": [
+        "It lands in a puddle",
+        "It gets stuck in a tree",
+        "A dog runs off with it",
+        "It flies over the sea"
+       ],
+       "answer": "It lands in a puddle",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Nell notice about the playscript?",
+       "options": [
+        "It puts the character's name before what he says",
+        "It uses lots of speech marks",
+        "It has no characters",
+        "It is much longer than the story"
+       ],
+       "answer": "It puts the character's name before what he says",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does Mrs Pennyworth call the words in brackets?",
+       "options": [],
+       "answer": "stage directions",
+       "accept": [
+        "stage direction",
+        "Stage directions"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Femi say somebody has to make the whoosh?",
+       "options": [
+        "Because in a play the audience must hear the wind, not read about it",
+        "Because Mrs Pennyworth forgot the sound",
+        "Because the hall is too quiet",
+        "Because he wants to be the main character"
+       ],
+       "answer": "Because in a play the audience must hear the wind, not read about it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how do the children feel when the worksheet flies into the bucket?",
+       "options": [
+        "Amused",
+        "Angry",
+        "Frightened",
+        "Bored"
+       ],
+       "answer": "Amused",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mrs Pennyworth showed the story before the playscript?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: Ruby's Cat on the Roof",
+     "synopsis": "Ruby brings in a true story about her cat getting stuck on a shed roof, and the club learns how to show feelings in a play without a narrator explaining them.",
+     "text": "The next Thursday, Ruby arrived waving a notebook. \"I've written a story about Pickles,\" she announced. Pickles was her ginger cat, famous on her street for getting into trouble.\nShe read it aloud: \"Pickles climbed onto the shed roof to chase a butterfly. When the butterfly flew away, he looked down and realised how high he was. His tail puffed up like a bottle brush. He felt very small and very scared. Ruby fetched a ladder and spoke to him softly until he crept into her arms.\"\n\"Lovely,\" said Mrs Pennyworth. \"Now, how do we turn that into a play? Remember, there is no narrator to tell the audience that Pickles felt scared.\"\nTomasz scratched his head. \"Then how will they know?\"\n\"We show them,\" said Nell. \"Pickles can shake, and he can make a tiny meow.\"\nTogether, they wrote a new version on the whiteboard:\n(The garden. A shed stands at the back. PICKLES is on the roof, looking up.)\nPICKLES: (batting the air) Meow! Meow!\n(PICKLES looks down. He freezes and starts to tremble.)\nPICKLES: (very small) Mew...\nRUBY: (running in) Pickles! Don't move. I'm coming.\n(RUBY climbs the ladder slowly.)\nRUBY: (gently) It's all right. You're safe with me.\nFemi read it twice. \"The butterfly has disappeared.\"\n\"We can't bring a real butterfly onstage,\" Ruby admitted. \"So Pickles just looks at the air, and the audience imagines it.\"\n\"And Ruby got lines she didn't have in the story,\" said Tomasz. \"In the story, it only said she spoke softly. In the play, we have to know what she says.\"\nMrs Pennyworth nodded happily. \"That is one of the biggest changes. A story can tell us someone spoke kindly. A play needs the actual words.\"\nRuby volunteered to play herself, and Femi agreed to be Pickles. He trembled so well on top of a chair that Ruby forgot her line and giggled instead. They tried again, and this time it worked perfectly.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of Ruby's cat?",
+       "options": [],
+       "answer": "Pickles",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the cat climb onto the shed roof?",
+       "options": [
+        "To chase a butterfly",
+        "To escape a dog",
+        "To sleep in the sun",
+        "To catch a bird"
+       ],
+       "answer": "To chase a butterfly",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ruby use to reach the cat in her story?",
+       "options": [
+        "A ladder",
+        "A rope",
+        "A chair",
+        "A trampoline"
+       ],
+       "answer": "A ladder",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does the playscript show that the cat is scared?",
+       "options": [
+        "The stage directions say he freezes and trembles",
+        "A narrator explains his feelings",
+        "The cat says 'I am scared'",
+        "The audience is told before the play starts"
+       ],
+       "answer": "The stage directions say he freezes and trembles",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is left out of the play version?",
+       "options": [
+        "The butterfly",
+        "The shed",
+        "The ladder",
+        "Ruby"
+       ],
+       "answer": "The butterfly",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tomasz notice about Ruby's part in the play?",
+       "options": [
+        "She has real words to say instead of just 'spoke softly'",
+        "She has no lines at all",
+        "She is played by Mrs Pennyworth",
+        "She only appears at the end"
+       ],
+       "answer": "She has real words to say instead of just 'spoke softly'",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Ruby giggle during the first try?",
+       "options": [
+        "Femi's trembling as Pickles is so funny",
+        "She forgot to bring her notebook",
+        "Tomasz fell off the chair",
+        "The real Pickles walked in"
+       ],
+       "answer": "Femi's trembling as Pickles is so funny",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think a play needs the actual words a character says, while a story can just say 'she spoke softly'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Too Many Brackets",
+     "synopsis": "Tomasz writes a playscript with so many stage directions that the actors cannot find their lines, and the club learns about scene headings and settings.",
+     "text": "Tomasz had spent the whole weekend writing. On Thursday he proudly handed out copies of his play, The Great Sandwich Mystery.\nIt began like this:\n(Somebody's kitchen, which is quite big, with yellow walls and a fridge that hums, and a clock that says four o'clock, and a cat bowl that is empty, and a window with blue curtains that are a bit dusty.)\nNell turned the page. Then she turned another page. \"Tomasz, where does anyone actually speak?\"\nTomasz went pink. \"Page three.\"\nMrs Pennyworth laughed kindly. \"You have written it like a story, Tomasz. In a story, long descriptions help the reader picture everything. In a play, the set designer and the actors do a lot of that work. Stage directions should be short and useful.\"\nShe showed them how to start with a scene heading instead:\nSCENE 1: A kitchen. Four o'clock in the afternoon.\n(MUM is making sandwiches. JOSH is hiding behind the fridge.)\n\"Short,\" said Ruby. \"But I can still picture it.\"\n\"And actors can find their lines fast,\" added Femi.\nTomasz crossed out most of his brackets. Then he looked worried. \"But I liked the dusty curtains.\"\n\"Keep them if they matter to the mystery,\" said Mrs Pennyworth. \"Do they?\"\nTomasz thought hard. \"Actually, yes! The thief wipes his hands on them. That's the clue.\"\n\"Then the curtains stay,\" she said. \"Everything else can go.\"\nBy the end of the afternoon, Tomasz's play had shrunk from five pages to two. The first line of speech was now on page one:\nMUM: (looking at the empty plate) Who has eaten all my sandwiches?\nThe club read it through, and everyone wanted to know who the sandwich thief was. Tomasz refused to tell them. \"You'll find out in Scene 2,\" he said, grinning like a real playwright.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the title of Tomasz's play?",
+       "options": [],
+       "answer": "The Great Sandwich Mystery",
+       "accept": [
+        "Great Sandwich Mystery",
+        "the great sandwich mystery"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, on which page did the first speech appear in Tomasz's first version?",
+       "options": [
+        "Page one",
+        "Page two",
+        "Page three",
+        "Page five"
+       ],
+       "answer": "Page three",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was wrong with Tomasz's first stage directions?",
+       "options": [
+        "They were far too long",
+        "They were in the wrong language",
+        "They had no brackets",
+        "They were all about the cat"
+       ],
+       "answer": "They were far too long",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mrs Pennyworth suggest starting the play with instead?",
+       "options": [
+        "A scene heading",
+        "A poem",
+        "A long description",
+        "A list of costumes"
+       ],
+       "answer": "A scene heading",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why are the dusty curtains allowed to stay?",
+       "options": [
+        "They are an important clue in the mystery",
+        "Tomasz's mum asked for them",
+        "They are the only prop the club owns",
+        "Mrs Pennyworth likes the colour blue"
+       ],
+       "answer": "They are an important clue in the mystery",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long is Tomasz's play after he edits it?",
+       "options": [
+        "Two pages",
+        "Three pages",
+        "Five pages",
+        "Ten pages"
+       ],
+       "answer": "Two pages",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does 'grinning like a real playwright' suggest about Tomasz at the end?",
+       "options": [
+        "He feels proud and enjoys keeping the audience curious",
+        "He is embarrassed about his play",
+        "He has forgotten who the thief is",
+        "He wants to give up writing"
+       ],
+       "answer": "He feels proud and enjoys keeping the audience curious",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think a story can have long descriptions but a playscript should keep them short?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Voice in the Corner",
+     "synopsis": "Femi adapts a story about a lonely lighthouse keeper and discovers that a narrator can help a play share thoughts that nobody says aloud.",
+     "text": "Femi did not like speaking in front of people, but he loved writing. When it was his turn to bring a story, he read it in a quiet voice.\n\"Old Marigold lived alone in a lighthouse. Every night she lit the great lamp. Nobody ever thanked her, and she sometimes wondered if anyone noticed the light at all. One stormy night, a little boat found its way safely into the harbour. In the morning, a note was pushed under her door. It said: Thank you for the light.\"\nThe hall went very still. \"That's beautiful,\" whispered Ruby.\n\"But how do we show what Marigold wondered?\" asked Nell. \"She's alone. She can't tell anyone.\"\nThey tried making Marigold talk to herself, but it sounded strange. Then Mrs Pennyworth had an idea. \"Some plays use a narrator: a character who speaks straight to the audience and tells them what can't easily be shown.\"\nSo Femi rewrote the beginning:\n(A lighthouse at night. MARIGOLD climbs the stairs slowly with a lantern. The NARRATOR stands in the corner of the stage.)\nNARRATOR: (softly, to the audience) Every night, Marigold lit the lamp. And every night, she wondered if anyone was watching.\nMARIGOLD: (lighting the lamp, sighing) There we are, old friend.\n(Thunder. Wind. A small boat's horn sounds far away.)\n\"The narrator is like the voice of the story,\" said Tomasz. \"But the actors still do the rest.\"\n\"Who should be the narrator?\" asked Mrs Pennyworth.\nEveryone turned to Femi. He shook his head. Then he looked at the script he had written and took a deep breath. \"Okay. But I'll stand in the corner.\"\n\"That's exactly where the narrator stands,\" said Nell, and Femi laughed.\nWhen he read his lines, his voice was soft but clear, and nobody in the hall made a sound.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, where does Marigold live?",
+       "options": [],
+       "answer": "in a lighthouse",
+       "accept": [
+        "a lighthouse",
+        "lighthouse"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Marigold do every night?",
+       "options": [
+        "She lights the great lamp",
+        "She goes fishing",
+        "She writes letters",
+        "She rings a bell"
+       ],
+       "answer": "She lights the great lamp",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is pushed under Marigold's door?",
+       "options": [
+        "A thank-you note",
+        "A map",
+        "A newspaper",
+        "A key"
+       ],
+       "answer": "A thank-you note",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what problem do the children have when they turn the story into a play?",
+       "options": [
+        "They cannot easily show what Marigold is wondering",
+        "They have no lighthouse costume",
+        "The story has too many characters",
+        "Nobody wants to play Marigold"
+       ],
+       "answer": "They cannot easily show what Marigold is wondering",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who does the narrator speak to?",
+       "options": [
+        "The audience",
+        "Marigold",
+        "The boat crew",
+        "Mrs Pennyworth"
+       ],
+       "answer": "The audience",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how is the storm shown in the playscript?",
+       "options": [
+        "With sound effects in the stage directions",
+        "With a long description by Marigold",
+        "With a picture on a poster",
+        "It is not shown at all"
+       ],
+       "answer": "With sound effects in the stage directions",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Femi first shake his head when asked to be the narrator?",
+       "options": [
+        "He feels shy about speaking in front of people",
+        "He thinks the narrator is boring",
+        "He wants to play the boat",
+        "He has lost his script"
+       ],
+       "answer": "He feels shy about speaking in front of people",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Femi finally agrees to be the narrator?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Storm in a Biscuit Tin",
+     "synopsis": "Nell turns her grandad's storm story into a play and the club discovers how sound effects and cutting characters change a story onstage.",
+     "text": "Nell's grandad had been a fisherman, and he told one story more than any other: the night the storm hit the harbour. Nell had written it down, and it was full of people: Grandad, his three brothers, the harbour master, a dog called Biscuit, and half the village.\n\"Fourteen characters,\" counted Tomasz. \"There are only five of us.\"\n\"Then we'll have to choose,\" said Mrs Pennyworth. \"When a story becomes a play, writers often cut characters or join two characters into one.\"\nNell chewed her pencil. \"The brothers all do the same thing. They pull the ropes. Maybe one brother is enough.\"\n\"And the village can just be noises offstage,\" suggested Ruby.\nThey kept Grandad, one brother called Sid, the harbour master and Biscuit the dog. Then they worked on the storm. In Nell's story, the storm was described in a whole page of exciting words: howling, crashing, roaring. In the play, it had to be heard.\nFemi filled a biscuit tin with dried peas and shook it. It sounded exactly like rain. Ruby flapped a sheet of thin metal for thunder. Tomasz blew across the top of a bottle to make the wind moan.\nThe script now read:\nSCENE 2: The harbour at night.\n(Rain rattles. Thunder crashes. GRANDAD and SID pull hard on a rope.)\nSID: (shouting) It's too strong!\nGRANDAD: (shouting back) Hold on, Sid! One more pull!\n(BISCUIT barks wildly. A huge crash of thunder. Silence.)\n\"I like the silence,\" said Nell quietly. \"In Grandad's story, that's when they knew the boat was safe.\"\n\"Sometimes a play can say more with nothing at all,\" said Mrs Pennyworth.\nThat evening, Nell showed her grandad the script. He read it twice, then wiped his eyes. \"You've cut my other brothers,\" he said. Then he smiled. \"But you've kept the bit that mattered.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what job did Nell's grandad use to have?",
+       "options": [
+        "Fisherman",
+        "Teacher",
+        "Baker",
+        "Pilot"
+       ],
+       "answer": "Fisherman",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many characters were in Nell's written story?",
+       "options": [],
+       "answer": "14",
+       "accept": [],
+       "hint": "Tomasz counts them.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the dog?",
+       "options": [],
+       "answer": "Biscuit",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Femi use to make the sound of rain?",
+       "options": [
+        "A biscuit tin with dried peas",
+        "A sheet of thin metal",
+        "A bottle",
+        "A bucket of water"
+       ],
+       "answer": "A biscuit tin with dried peas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do the children cut some characters from the play?",
+       "options": [
+        "There are only five of them to act",
+        "The characters were rude",
+        "Grandad asked them to",
+        "The hall is too small for a dog"
+       ],
+       "answer": "There are only five of them to act",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how is the storm different in the story and in the play?",
+       "options": [
+        "The story describes it with words; the play uses sounds",
+        "The story leaves it out; the play describes it",
+        "Both use exactly the same words",
+        "The play makes the storm much shorter"
+       ],
+       "answer": "The story describes it with words; the play uses sounds",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the silence at the end of the scene show?",
+       "options": [
+        "That the boat is safe",
+        "That the actors forgot their lines",
+        "That the dog has run away",
+        "That the play is over"
+       ],
+       "answer": "That the boat is safe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Grandad wipes his eyes when he reads the script?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Say It Like You Mean It",
+     "synopsis": "At the first full rehearsal, the club practises reading their lines aloud with expression and learns that stage directions can describe how to speak.",
+     "text": "Two weeks before the show, the Lantern Lane Players held their first full rehearsal. They would perform three short plays: Pickles on the Roof, The Great Sandwich Mystery and The Lighthouse.\nIt did not start well. Tomasz read his lines as if he were reading a shopping list. \"Who. Has. Eaten. All. My. Sandwiches.\"\n\"Stop there,\" said Mrs Pennyworth. \"Look at the stage direction.\"\nTomasz looked. It said: (looking at the empty plate, shocked).\n\"Shocked,\" he muttered. \"Right.\" He tried again, his eyes wide, his voice rising: \"Who has eaten ALL my sandwiches?\"\nEveryone laughed. \"Much better,\" said Mrs Pennyworth. \"In a story, the narrator tells the reader how a character feels. In a play, the actor has to show it with their voice, face and body.\"\nNext, Ruby practised her lines to Pickles. The stage direction said (gently), but she was so nervous that she shouted them. Femi, as Pickles, fell off his chair in surprise.\n\"Try whispering,\" suggested Nell. \"Pretend Pickles might jump.\"\nRuby took a breath and spoke softly. This time, the whole hall seemed to lean in to listen.\nMrs Pennyworth wrote some words on the whiteboard: volume, speed, pause, emphasis. \"These are your tools,\" she said. \"Loud or quiet. Fast or slow. A pause before something important. A strong word to show what matters.\"\nFemi practised the narrator's lines in the corner. He added a pause before \"And every night, she wondered\" and the room went still.\nAt the end, they sat in a circle, tired but pleased. \"I didn't know a play could change so much just by how you say it,\" said Tomasz.\n\"Same words,\" said Ruby, \"but a different story.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many short plays will the club perform?",
+       "options": [],
+       "answer": "3",
+       "accept": [],
+       "hint": "Count the play titles.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Tomasz read his line the first time?",
+       "options": [
+        "Flat, like a shopping list",
+        "Loud and excited",
+        "In a whisper",
+        "Singing"
+       ],
+       "answer": "Flat, like a shopping list",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which word in the stage direction helps Tomasz improve his line?",
+       "options": [],
+       "answer": "shocked",
+       "accept": [
+        "Shocked"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens when Ruby shouts her lines?",
+       "options": [
+        "Femi falls off his chair in surprise",
+        "Mrs Pennyworth leaves the hall",
+        "Pickles runs away",
+        "Nell starts to cry"
+       ],
+       "answer": "Femi falls off his chair in surprise",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which of these is one of the tools written on the whiteboard?",
+       "options": [
+        "Pause",
+        "Costume",
+        "Lighting",
+        "Scenery"
+       ],
+       "answer": "Pause",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does an actor show a character's feelings instead of a narrator?",
+       "options": [
+        "With their voice, face and body",
+        "By reading the stage directions aloud",
+        "By holding up a sign",
+        "By explaining to the audience after the scene"
+       ],
+       "answer": "With their voice, face and body",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ruby mean by 'Same words, but a different story'?",
+       "options": [
+        "The way lines are spoken can change their meaning",
+        "They rewrote all the plays",
+        "The words were translated",
+        "Each actor uses different words"
+       ],
+       "answer": "The way lines are spoken can change their meaning",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the hall 'seemed to lean in' when Ruby whispered?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Curtain Up",
+     "synopsis": "On the night of the show, the Lantern Lane Players perform for their families, and afterwards they compare what the audience got from the plays with what readers get from the stories.",
+     "text": "On the night of the show, the old hall was full. Parents squeezed onto plastic chairs, little brothers sat on laps, and Nell's grandad had a seat right at the front.\nBehind the curtain, Femi held the biscuit tin of peas so tightly his knuckles were pale. \"What if I forget everything?\" he whispered.\n\"You've got the script,\" said Ruby. \"And you've got us.\"\nThe curtain opened. Pickles on the Roof went first. When Femi trembled on top of the chair and gave a tiny \"Mew\", a small child in the audience shouted, \"Save him!\" Everyone laughed, and Ruby's gentle voice brought the cat safely down.\nThe Great Sandwich Mystery came next. When Tomasz cried, \"Who has eaten ALL my sandwiches?\" the audience roared. Nobody guessed the thief until he pointed at the dusty curtains.\nLast was The Lighthouse, followed by the storm. Femi stood in the corner and spoke the narrator's lines. Rain rattled, thunder crashed, and then there was silence. In the front row, Nell's grandad held his breath.\nWhen the lights came up, the clapping was so loud that Mrs Pennyworth had to cover her ears.\nAfterwards, the club sat on the edge of the stage eating crisps. \"In the stories, we had lots of description,\" said Nell. \"But in the plays, the audience saw it and heard it.\"\n\"And they joined in,\" said Ruby. \"Nobody shouts 'Save him!' at a book.\"\nTomasz nodded. \"The stories let you know what people are thinking. The plays let you feel like you're there.\"\nFemi was quiet for a moment. Then he said, \"I think I like both. The story is where it starts. The play is where everyone shares it.\"\nMrs Pennyworth smiled. \"Next term,\" she said, \"you'll write a play first and turn it into a story.\"\nThe Lantern Lane Players looked at each other, and groaned and cheered at the same time.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Nell's grandad sit?",
+       "options": [
+        "Right at the front",
+        "At the very back",
+        "Backstage",
+        "On the stage"
+       ],
+       "answer": "Right at the front",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Femi holding behind the curtain?",
+       "options": [
+        "The biscuit tin of peas",
+        "A lantern",
+        "His notebook",
+        "A sandwich"
+       ],
+       "answer": "The biscuit tin of peas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which play is performed first?",
+       "options": [
+        "Pickles on the Roof",
+        "The Great Sandwich Mystery",
+        "The Lighthouse",
+        "The storm play"
+       ],
+       "answer": "Pickles on the Roof",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does a small child shout during the first play?",
+       "options": [],
+       "answer": "Save him!",
+       "accept": [
+        "Save him",
+        "save him"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tomasz say stories can do better than plays?",
+       "options": [
+        "Let you know what people are thinking",
+        "Make loud sound effects",
+        "Let the audience join in",
+        "Show real actors"
+       ],
+       "answer": "Let you know what people are thinking",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ruby notice about the audience?",
+       "options": [
+        "They joined in with the play",
+        "They fell asleep",
+        "They read the scripts",
+        "They left early"
+       ],
+       "answer": "They joined in with the play",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what will the club do next term?",
+       "options": [
+        "Write a play first and turn it into a story",
+        "Perform the same plays again",
+        "Stop doing drama",
+        "Visit a real theatre"
+       ],
+       "answer": "Write a play first and turn it into a story",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Do you prefer reading a story or watching a play? Why?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
