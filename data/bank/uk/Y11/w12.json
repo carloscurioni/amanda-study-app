@@ -1,0 +1,758 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y11",
+ "academic_week": 12,
+ "subjects": {
+  "bio": {
+   "topic": "Fetal development and the placenta",
+   "questions": [
+    {
+     "id": "r1maigyvm6rzb3",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which structure connects the fetus to the placenta?",
+     "options": [
+      "amniotic sac",
+      "umbilical cord",
+      "oviduct",
+      "cervix"
+     ],
+     "answer": "umbilical cord",
+     "accept": [],
+     "hint": "It contains an artery and a vein.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh7qajkifv342",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the fluid that surrounds and cushions the fetus in the uterus.",
+     "options": [],
+     "answer": "amniotic fluid",
+     "accept": [
+      "amniotic"
+     ],
+     "hint": "It is held inside the amniotic sac.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tnic8019mqhig",
+     "subject": "bio",
+     "type": "mc",
+     "q": "State one function of the amniotic fluid.",
+     "options": [
+      "It supplies oxygen to the fetus",
+      "It protects the fetus from mechanical shock",
+      "It produces antibodies",
+      "It digests food for the fetus"
+     ],
+     "answer": "It protects the fetus from mechanical shock",
+     "accept": [],
+     "hint": "Think of how a liquid absorbs bumps.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12t94yn1ovrvlw",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which substance passes from the mother's blood to the fetus across the placenta?",
+     "options": [
+      "urea",
+      "carbon dioxide",
+      "glucose",
+      "red blood cells"
+     ],
+     "answer": "glucose",
+     "accept": [],
+     "hint": "The fetus needs it for respiration.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ebnbaob15qgg",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which substance passes from the fetus to the mother across the placenta?",
+     "options": [
+      "oxygen",
+      "amino acids",
+      "urea",
+      "glucose"
+     ],
+     "answer": "urea",
+     "accept": [],
+     "hint": "It is a waste product made in the liver.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzv5bmba2g31e",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Why are the blood of the mother and fetus kept separate in the placenta?",
+     "options": [
+      "To allow red blood cells to cross",
+      "To prevent high maternal blood pressure damaging the fetus and to avoid mixing of blood groups",
+      "To stop all antibodies crossing",
+      "To keep the fetus cold"
+     ],
+     "answer": "To prevent high maternal blood pressure damaging the fetus and to avoid mixing of blood groups",
+     "accept": [],
+     "hint": "Consider pressure and blood groups.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1718et1r2fvyu",
+     "subject": "bio",
+     "type": "short",
+     "q": "By what process does oxygen move from maternal blood into fetal blood in the placenta?",
+     "options": [],
+     "answer": "diffusion",
+     "accept": [],
+     "hint": "Movement down a concentration gradient.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vw79pr17sh0ae",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which feature increases the surface area of the placenta for exchange?",
+     "options": [
+      "villi",
+      "cilia",
+      "alveoli",
+      "microvilli of the gut"
+     ],
+     "answer": "villi",
+     "accept": [],
+     "hint": "Finger-like projections into the uterus wall.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfahf8e1w5bu5o",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which of these can cross the placenta and harm the fetus?",
+     "options": [
+      "nicotine",
+      "red blood cells",
+      "large proteins only",
+      "white blood cells"
+     ],
+     "answer": "nicotine",
+     "accept": [],
+     "hint": "It comes from smoking.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg5f50s5eevt7",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the virus that can cross the placenta during pregnancy and damage the developing eyes, ears and heart of the fetus.",
+     "options": [],
+     "answer": "rubella",
+     "accept": [
+      "rubella virus",
+      "German measles"
+     ],
+     "hint": "Girls are often vaccinated against it before adulthood.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdaksmbg45cu",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What is antenatal care?",
+     "options": [
+      "Care of a baby after birth",
+      "Medical care given to a pregnant woman before birth",
+      "Treatment of infertility",
+      "Care given during labour only"
+     ],
+     "answer": "Medical care given to a pregnant woman before birth",
+     "accept": [],
+     "hint": "'Ante' means before.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mk215ftp1hgs",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which vessel in the umbilical cord carries oxygenated blood to the fetus?",
+     "options": [
+      "umbilical artery",
+      "umbilical vein",
+      "aorta",
+      "pulmonary artery"
+     ],
+     "answer": "umbilical vein",
+     "accept": [],
+     "hint": "In the cord, the vessel taking blood towards the fetus is named the opposite way to the adult pattern.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c2n09t14ry0xg",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Antibodies crossing the placenta from the mother give the baby which type of immunity?",
+     "options": [
+      "active immunity",
+      "natural passive immunity",
+      "artificial active immunity",
+      "no immunity"
+     ],
+     "answer": "natural passive immunity",
+     "accept": [],
+     "hint": "The baby did not make the antibodies itself.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13y3xqp6knama",
+     "subject": "bio",
+     "type": "open",
+     "q": "Explain why a pregnant woman is advised not to smoke.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about carbon monoxide, nicotine and what crosses the placenta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19atl2ewrl3i8",
+     "subject": "bio",
+     "type": "open",
+     "q": "Describe how the structure of the placenta is adapted for efficient exchange of substances.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Mention surface area, distance and blood supply.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12q7gjo1mw5x48",
+     "subject": "bio",
+     "type": "open",
+     "q": "Explain why alcohol drunk by a pregnant woman can affect the fetus.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider molecule size and how it crosses the placenta.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bss": {
+   "topic": "Estrutura geológica e recursos minerais do Brasil",
+   "questions": [
+    {
+     "id": "rwe81xvljzkrq",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é a estrutura geológica mais antiga, formada por rochas cristalinas (magmáticas e metamórficas)?",
+     "options": [
+      "bacia sedimentar",
+      "escudo cristalino",
+      "dobramento moderno",
+      "planície aluvial"
+     ],
+     "answer": "escudo cristalino",
+     "accept": [],
+     "hint": "É associada a minerais metálicos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1415bdiexpdgn",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chama a estrutura formada pelo acúmulo de sedimentos em áreas rebaixadas da crosta?",
+     "options": [],
+     "answer": "bacia sedimentar",
+     "accept": [
+      "bacias sedimentares"
+     ],
+     "hint": "Os sedimentos se depositam em camadas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrbjw8ki8x6dl",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Que tipo de recurso está mais associado às bacias sedimentares?",
+     "options": [
+      "minério de ferro",
+      "ouro",
+      "petróleo",
+      "manganês"
+     ],
+     "answer": "petróleo",
+     "accept": [],
+     "hint": "Forma-se a partir de matéria orgânica soterrada.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18pleoo1olypjm",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Que tipo de recurso está mais associado aos escudos cristalinos?",
+     "options": [
+      "carvão mineral",
+      "petróleo",
+      "gás natural",
+      "minério de ferro"
+     ],
+     "answer": "minério de ferro",
+     "accept": [],
+     "hint": "É um minério metálico.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18ndr05kzhmv2",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que o Brasil não possui dobramentos modernos (como os Andes)?",
+     "options": [
+      "Porque não tem rochas antigas",
+      "Porque está no centro da Placa Sul-Americana, longe dos limites de placas convergentes",
+      "Porque é coberto por florestas",
+      "Porque está no hemisfério sul"
+     ],
+     "answer": "Porque está no centro da Placa Sul-Americana, longe dos limites de placas convergentes",
+     "accept": [],
+     "hint": "Pense na posição do Brasil em relação às placas tectônicas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iyt043bd1erv",
+     "subject": "bss",
+     "type": "short",
+     "q": "Qual estado brasileiro dá nome ao Quadrilátero Ferrífero?",
+     "options": [],
+     "answer": "Minas Gerais",
+     "accept": [
+      "MG"
+     ],
+     "hint": "Fica na região Sudeste.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8mmui9o8759j",
+     "subject": "bss",
+     "type": "mc",
+     "q": "A Serra dos Carajás é uma grande área de extração de minério de ferro em qual estado?",
+     "options": [
+      "Amazonas",
+      "Pará",
+      "Bahia",
+      "Goiás"
+     ],
+     "answer": "Pará",
+     "accept": [],
+     "hint": "Fica na região Norte.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpaxgd5urtibz",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Onde está a maior parte do petróleo extraído no Brasil hoje?",
+     "options": [
+      "no Quadrilátero Ferrífero",
+      "na camada pré-sal, no litoral do Sudeste",
+      "no Planalto Central",
+      "na Serra dos Carajás"
+     ],
+     "answer": "na camada pré-sal, no litoral do Sudeste",
+     "accept": [],
+     "hint": "É uma exploração marítima em grande profundidade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "relclj21yjii5w",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destas é uma grande bacia sedimentar brasileira?",
+     "options": [
+      "Bacia do Paraná",
+      "Escudo das Guianas",
+      "Quadrilátero Ferrífero",
+      "Serra do Mar"
+     ],
+     "answer": "Bacia do Paraná",
+     "accept": [],
+     "hint": "Tem o nome de um grande rio do Sul e Sudeste.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kq848g1q6rkm7",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O Maciço do Urucum, em Mato Grosso do Sul, é conhecido pela extração de quais minérios?",
+     "options": [
+      "petróleo e gás",
+      "ferro e manganês",
+      "carvão e sal",
+      "bauxita e ouro"
+     ],
+     "answer": "ferro e manganês",
+     "accept": [],
+     "hint": "Dois minérios metálicos usados na siderurgia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o3os5c1ci2vyu",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual minério é a principal matéria-prima do alumínio?",
+     "options": [
+      "cassiterita",
+      "bauxita",
+      "hematita",
+      "calcário"
+     ],
+     "answer": "bauxita",
+     "accept": [],
+     "hint": "O Pará tem grandes jazidas dele.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m27yyn8o3t4z",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que o carvão mineral brasileiro é considerado de baixa qualidade?",
+     "options": [
+      "É muito raro no mundo",
+      "Tem baixo poder calorífico e muitas impurezas, como cinzas e enxofre",
+      "É formado em rochas cristalinas",
+      "Só existe no fundo do mar"
+     ],
+     "answer": "Tem baixo poder calorífico e muitas impurezas, como cinzas e enxofre",
+     "accept": [],
+     "hint": "Pense em quanto calor ele gera ao queimar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqci441j74e6c",
+     "subject": "bss",
+     "type": "open",
+     "q": "Explique a relação entre a estrutura geológica e os recursos minerais encontrados no Brasil.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare escudos cristalinos com bacias sedimentares.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w782qv1t9qxce",
+     "subject": "bss",
+     "type": "open",
+     "q": "Cite um impacto ambiental da mineração e uma forma de reduzi-lo.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em barragens de rejeitos, desmatamento ou água.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r644sc51uzg6hl",
+     "subject": "bss",
+     "type": "open",
+     "q": "Por que a descoberta do pré-sal foi importante para a economia brasileira? Apresente um argumento a favor e um desafio.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Considere produção, exportação, custos e meio ambiente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a0u3pm1770qq0",
+     "subject": "bss",
+     "type": "short",
+     "q": "Em que região brasileira fica a maior parte das reservas de carvão mineral do país?",
+     "options": [],
+     "answer": "Sul",
+     "accept": [
+      "região Sul"
+     ],
+     "hint": "É a região de clima mais frio do Brasil, onde ficam as bacias sedimentares mais antigas com carvão.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bus": {
+   "topic": "Working capital and improving cash flow",
+   "questions": [
+    {
+     "id": "r13fdn3ylmgllc",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Working capital is calculated as:",
+     "options": [
+      "current assets minus current liabilities",
+      "total assets minus total liabilities",
+      "revenue minus costs",
+      "cash inflows minus cash outflows"
+     ],
+     "answer": "current assets minus current liabilities",
+     "accept": [],
+     "hint": "It is about short-term items only.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17c4tfo11ggkss",
+     "subject": "bus",
+     "type": "num",
+     "q": "A business has current assets of $45,000 and current liabilities of $30,000. Calculate its working capital in dollars.",
+     "options": [],
+     "answer": "15000",
+     "accept": [],
+     "hint": "Subtract the liabilities from the assets.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nw98sdf5d65e",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which of these is a current asset?",
+     "options": [
+      "machinery",
+      "inventory",
+      "bank loan",
+      "overdraft"
+     ],
+     "answer": "inventory",
+     "accept": [],
+     "hint": "It will be turned into cash within a year.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcguqgx1c9rxn9",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which of these is a current liability?",
+     "options": [
+      "trade receivables",
+      "cash",
+      "trade payables",
+      "buildings"
+     ],
+     "answer": "trade payables",
+     "accept": [],
+     "hint": "Money owed to suppliers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xp2gki1l29m7r",
+     "subject": "bus",
+     "type": "short",
+     "q": "What term describes buying goods from a supplier now and paying for them later?",
+     "options": [],
+     "answer": "trade credit",
+     "accept": [],
+     "hint": "Suppliers give the business time to pay.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ndkna2hdsp5r",
+     "subject": "bus",
+     "type": "mc",
+     "q": "What is debt factoring?",
+     "options": [
+      "Taking out a long-term loan",
+      "Selling trade receivables to a specialist company for immediate cash",
+      "Paying suppliers early",
+      "Issuing new shares"
+     ],
+     "answer": "Selling trade receivables to a specialist company for immediate cash",
+     "accept": [],
+     "hint": "The business gets less than the full amount but gets it now.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ivfhgf1chtg1k",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Why is working capital important for a business?",
+     "options": [
+      "It shows total profit for the year",
+      "It allows the business to pay its day-to-day costs",
+      "It measures market share",
+      "It is the value of the business's buildings"
+     ],
+     "answer": "It allows the business to pay its day-to-day costs",
+     "accept": [],
+     "hint": "Think about paying wages and suppliers this month.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcne4uk135w9mb",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which action would improve a business's cash flow?",
+     "options": [
+      "Giving customers longer to pay",
+      "Asking customers to pay more quickly",
+      "Paying suppliers earlier",
+      "Buying more inventory with cash"
+     ],
+     "answer": "Asking customers to pay more quickly",
+     "accept": [],
+     "hint": "Bring cash in sooner.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk4gebo13iwp6b",
+     "subject": "bus",
+     "type": "mc",
+     "q": "What is a likely problem of having too much working capital?",
+     "options": [
+      "The business cannot pay its bills",
+      "Money is tied up and not used productively",
+      "Suppliers refuse to deliver",
+      "The business must close"
+     ],
+     "answer": "Money is tied up and not used productively",
+     "accept": [],
+     "hint": "Idle cash or inventory could be invested elsewhere.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r38v4uk1waqkgd",
+     "subject": "bus",
+     "type": "num",
+     "q": "Current assets are $80,000 and working capital is $25,000. Calculate current liabilities in dollars.",
+     "options": [],
+     "answer": "55000",
+     "accept": [],
+     "hint": "Rearrange the working capital formula.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9yrgs5kstz12",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which is a disadvantage of debt factoring?",
+     "options": [
+      "It takes many months to receive cash",
+      "The business receives less than the full value of what customers owe",
+      "It increases inventory",
+      "It must be repaid with interest over ten years"
+     ],
+     "answer": "The business receives less than the full value of what customers owe",
+     "accept": [],
+     "hint": "The factoring company charges a fee.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ig8mwiusmtv1",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which of these improves cash flow by reducing cash outflows?",
+     "options": [
+      "Leasing equipment instead of buying it",
+      "Increasing the credit period for customers",
+      "Buying raw materials in bulk with cash",
+      "Paying suppliers early to get a discount"
+     ],
+     "answer": "Leasing equipment instead of buying it",
+     "accept": [],
+     "hint": "Spread the payments out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roxixwcwbuf7h",
+     "subject": "bus",
+     "type": "short",
+     "q": "What is the name of a short-term facility that lets a business spend more than it has in its bank account?",
+     "options": [],
+     "answer": "overdraft",
+     "accept": [
+      "bank overdraft"
+     ],
+     "hint": "It is flexible but interest can be high.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvc96551e3dssu",
+     "subject": "bus",
+     "type": "open",
+     "q": "Explain one advantage and one disadvantage of a business reducing its inventory levels to improve cash flow.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about cash tied up versus risk of running out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcrftpr1filz9a",
+     "subject": "bus",
+     "type": "open",
+     "q": "A small bakery is struggling to pay its suppliers. Suggest two ways it could improve its cash flow and explain each.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider cash inflows and cash outflows separately.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlrfpetjreomh",
+     "subject": "bus",
+     "type": "open",
+     "q": "Discuss whether a profitable business can still fail because of poor cash flow.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Profit and cash are not the same; think about timing.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
