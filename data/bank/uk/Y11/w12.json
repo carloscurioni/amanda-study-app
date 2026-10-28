@@ -3206,6 +3206,1789 @@
      "errors": []
     }
    ]
+  },
+  "phys": {
+   "topic": "The a.c. generator",
+   "questions": [
+    {
+     "id": "r15yrkc9zk47xl",
+     "subject": "phys",
+     "type": "mc",
+     "q": "In a simple a.c. generator, which part rotates between the poles of the magnet?",
+     "options": [
+      "The coil",
+      "The brushes",
+      "The slip rings' carbon contacts",
+      "The external circuit"
+     ],
+     "answer": "The coil",
+     "accept": [],
+     "hint": "Think about which part has to cut the magnetic field lines.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs2ov4snqhbaw",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What is the function of the slip rings in an a.c. generator?",
+     "options": [
+      "To keep the rotating coil connected to the external circuit",
+      "To reverse the current every half turn",
+      "To create the magnetic field",
+      "To increase the speed of the coil"
+     ],
+     "answer": "To keep the rotating coil connected to the external circuit",
+     "accept": [],
+     "hint": "Without them, the wires from a spinning coil would twist.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13vcnno1i1fimx",
+     "subject": "phys",
+     "type": "short",
+     "q": "Name the carbon contacts that press against the slip rings.",
+     "options": [],
+     "answer": "brushes",
+     "accept": [
+      "brush",
+      "carbon brushes"
+     ],
+     "hint": "They 'brush' against the rotating rings.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d0nd15xx2erv",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which component is used in a d.c. dynamo but NOT in an a.c. generator?",
+     "options": [
+      "Split-ring commutator",
+      "Slip rings",
+      "Coil",
+      "Magnet"
+     ],
+     "answer": "Split-ring commutator",
+     "accept": [],
+     "hint": "This part reverses the connections every half turn.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rprix1e15npkb3",
+     "subject": "phys",
+     "type": "short",
+     "q": "Name the physical effect by which a generator produces a voltage.",
+     "options": [],
+     "answer": "electromagnetic induction",
+     "accept": [
+      "induction",
+      "electromagnetic induction effect"
+     ],
+     "hint": "A conductor moving through a magnetic field…",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ux80gc1aqbqr0",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What shape is the output voltage–time graph of a simple a.c. generator?",
+     "options": [
+      "Sine wave",
+      "Horizontal straight line",
+      "Square wave",
+      "Steady rising line"
+     ],
+     "answer": "Sine wave",
+     "accept": [],
+     "hint": "The voltage rises, falls and reverses smoothly.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x4d4kaz3bus6",
+     "subject": "phys",
+     "type": "mc",
+     "q": "In which position of the coil is the induced e.m.f. at its maximum?",
+     "options": [
+      "When the plane of the coil is parallel to the field lines",
+      "When the plane of the coil is perpendicular to the field lines",
+      "When the coil is stationary",
+      "When the brushes lose contact"
+     ],
+     "answer": "When the plane of the coil is parallel to the field lines",
+     "accept": [],
+     "hint": "The e.m.f. is largest when the sides of the coil cut field lines fastest.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16s8hq818zmgkz",
+     "subject": "phys",
+     "type": "mc",
+     "q": "When the plane of the coil is perpendicular to the magnetic field, the induced e.m.f. is:",
+     "options": [
+      "zero",
+      "at its positive maximum",
+      "at its negative maximum",
+      "half of its maximum"
+     ],
+     "answer": "zero",
+     "accept": [],
+     "hint": "At this instant the coil sides move along the field lines, not across them.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b4mtfd82789d",
+     "subject": "phys",
+     "type": "num",
+     "q": "How many times does the output voltage pass through zero during one complete rotation of the coil?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Picture one full cycle of a sine wave starting from a peak.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bwyzewmezomm",
+     "subject": "phys",
+     "type": "num",
+     "q": "A generator coil makes 50 complete rotations per second. What is the frequency of the a.c. output, in Hz?",
+     "options": [],
+     "answer": "50",
+     "accept": [],
+     "hint": "One rotation produces one complete cycle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t78r4h1u5687z",
+     "subject": "phys",
+     "type": "num",
+     "q": "An a.c. output has a period of 0.02 s. Calculate its frequency in Hz.",
+     "options": [],
+     "answer": "50",
+     "accept": [],
+     "hint": "Frequency = 1 ÷ period.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh24petxzfgcc",
+     "subject": "phys",
+     "type": "num",
+     "q": "On a voltage–time graph, one complete cycle takes 4 ms. Calculate the frequency in Hz.",
+     "options": [],
+     "answer": "250",
+     "accept": [],
+     "hint": "Convert ms to seconds first, then use f = 1/T.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v9ppxd1b6p6nm",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which change would increase the peak output voltage of a generator?",
+     "options": [
+      "Increasing the number of turns on the coil",
+      "Using a weaker magnet",
+      "Rotating the coil more slowly",
+      "Using fewer turns on the coil"
+     ],
+     "answer": "Increasing the number of turns on the coil",
+     "accept": [],
+     "hint": "More wire cutting the field means more induced e.m.f.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v92koj1dn0fyt",
+     "subject": "phys",
+     "type": "mc",
+     "q": "The coil is made to rotate twice as fast. How does the voltage–time graph change?",
+     "options": [
+      "The peaks are higher and there are twice as many cycles per second",
+      "The peaks stay the same but the frequency doubles",
+      "The peaks double but the frequency stays the same",
+      "The graph does not change"
+     ],
+     "answer": "The peaks are higher and there are twice as many cycles per second",
+     "accept": [],
+     "hint": "Speed affects both how fast field lines are cut and how often the cycle repeats.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k2ssz9194mith",
+     "subject": "phys",
+     "type": "open",
+     "q": "Explain why an e.m.f. is induced in the coil of an a.c. generator as it rotates, and why the e.m.f. changes direction every half turn.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the coil sides cutting field lines and which way each side moves.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o6oogyqgo5m6",
+     "subject": "phys",
+     "type": "open",
+     "q": "Describe how the output of a d.c. dynamo with a split-ring commutator differs from the output of an a.c. generator. Refer to the shape of the voltage–time graphs.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "What does reversing the connections every half turn do to the negative half of the wave?",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych": {
+   "topic": "Hull's drive reduction theory of motivation",
+   "questions": [
+    {
+     "id": "r35tm281ojiagb",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which term describes the body's tendency to keep a stable internal state?",
+     "options": [
+      "Homeostasis",
+      "Reinforcement",
+      "Conditioning",
+      "Arousal"
+     ],
+     "answer": "Homeostasis",
+     "accept": [],
+     "hint": "'Homeo' means 'same'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rje27eovyw4hj",
+     "subject": "psych",
+     "type": "mc",
+     "q": "According to Hull, what is a drive?",
+     "options": [
+      "An unpleasant state of tension caused by an unmet need",
+      "A learned habit with no biological basis",
+      "A reward given after a behaviour",
+      "A fixed personality trait"
+     ],
+     "answer": "An unpleasant state of tension caused by an unmet need",
+     "accept": [],
+     "hint": "It is the feeling that pushes us to act.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3esgrbvu1at5",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which is the correct sequence in drive reduction theory?",
+     "options": [
+      "Need → drive → behaviour → drive reduction",
+      "Drive → behaviour → need → reward",
+      "Behaviour → need → drive → reduction",
+      "Reward → need → behaviour → drive"
+     ],
+     "answer": "Need → drive → behaviour → drive reduction",
+     "accept": [],
+     "hint": "Start with what the body is lacking.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rldekzckhm1d5",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Hunger and thirst are examples of which type of drive?",
+     "options": [
+      "Primary drives",
+      "Secondary drives",
+      "Social drives",
+      "Learned drives"
+     ],
+     "answer": "Primary drives",
+     "accept": [],
+     "hint": "These are based directly on biological needs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o6qw5edne4bd",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which of these is an example of a secondary (acquired) drive?",
+     "options": [
+      "The desire for money",
+      "Thirst",
+      "The need for warmth",
+      "Tiredness"
+     ],
+     "answer": "The desire for money",
+     "accept": [],
+     "hint": "Secondary drives are learned because they are linked to satisfying primary needs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra79grjgo21ce",
+     "subject": "psych",
+     "type": "short",
+     "q": "What term does Hull use for the strengthening of a behaviour because it reduces a drive?",
+     "options": [],
+     "answer": "reinforcement",
+     "accept": [
+      "negative reinforcement"
+     ],
+     "hint": "It is the same idea used in operant conditioning.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16b3dnf1rgygbr",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Hull's theory developed from which approach in psychology?",
+     "options": [
+      "Behaviourist",
+      "Psychodynamic",
+      "Humanistic",
+      "Biological rhythms"
+     ],
+     "answer": "Behaviourist",
+     "accept": [],
+     "hint": "The approach focuses on learning through reinforcement.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r47clx4fc66i2",
+     "subject": "psych",
+     "type": "short",
+     "q": "Which part of the brain plays a key role in regulating hunger, thirst and body temperature?",
+     "options": [],
+     "answer": "hypothalamus",
+     "accept": [
+      "the hypothalamus"
+     ],
+     "hint": "It sits just below the thalamus.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru2geb8acj7ny",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Shivering when body temperature drops is an example of:",
+     "options": [
+      "Homeostasis",
+      "A secondary drive",
+      "Social learning",
+      "Extrinsic reward"
+     ],
+     "answer": "Homeostasis",
+     "accept": [],
+     "hint": "The body is trying to return to a set point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l6c05q19japoc",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A student is thirsty, drinks water and feels satisfied. In Hull's terms, why is drinking likely to be repeated next time?",
+     "options": [
+      "Because reducing the drive was reinforcing",
+      "Because drinking was punished",
+      "Because the drive increased",
+      "Because of a personality trait"
+     ],
+     "answer": "Because reducing the drive was reinforcing",
+     "accept": [],
+     "hint": "What happened to the unpleasant tension after drinking?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reyz25p1tfq1v5",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which behaviour is hardest for drive reduction theory to explain?",
+     "options": [
+      "Going on a frightening roller coaster for fun",
+      "Eating when hungry",
+      "Drinking when thirsty",
+      "Sleeping when tired"
+     ],
+     "answer": "Going on a frightening roller coaster for fun",
+     "accept": [],
+     "hint": "Does this behaviour reduce tension or increase it?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp4hodf1emf8k9",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which is a strength of drive reduction theory?",
+     "options": [
+      "It explains biologically based motives such as hunger and thirst",
+      "It explains every human behaviour",
+      "It shows that biology has no role in motivation",
+      "It is based only on case studies"
+     ],
+     "answer": "It explains biologically based motives such as hunger and thirst",
+     "accept": [],
+     "hint": "Think of the behaviours it was originally designed for.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rljgt7mzel64r",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Someone keeps eating dessert after a big meal although they are no longer hungry. Which criticism of Hull does this support?",
+     "options": [
+      "People sometimes act without any biological need",
+      "Homeostasis always controls eating",
+      "Secondary drives do not exist",
+      "Drives are never learned"
+     ],
+     "answer": "People sometimes act without any biological need",
+     "accept": [],
+     "hint": "Is there an unmet need here?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ta8yq01tri0z7",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Much of Hull's original evidence came from experiments on animals such as rats. Why is this a weakness?",
+     "options": [
+      "Results may not generalise to complex human motivation",
+      "Animals cannot learn",
+      "Animal studies are always unethical",
+      "Rats have no biological needs"
+     ],
+     "answer": "Results may not generalise to complex human motivation",
+     "accept": [],
+     "hint": "Think about whether humans are motivated only by basic needs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rewiz01iv8v7f",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain how drive reduction theory accounts for a person drinking water after exercise. Use the terms homeostasis and reinforcement.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start with the need created by sweating.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxwh07tsfjty7",
+     "subject": "psych",
+     "type": "open",
+     "q": "Evaluate Hull's drive reduction theory of motivation.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Give at least one strength and one weakness, with an example for each, and a conclusion.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Verbo: modos, tempos e formas nominais",
+   "questions": [
+    {
+     "id": "r1hn1neh1m3pwsm",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Se eu tivesse tempo, viajaria.\", o verbo \"tivesse\" está em qual modo?",
+     "options": [
+      "subjuntivo",
+      "indicativo",
+      "imperativo"
+     ],
+     "answer": "subjuntivo",
+     "accept": [],
+     "hint": "Ele expressa uma hipótese, algo que não é um fato.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r144ajvtqz60tq",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual modo verbal expressa, em geral, um fato visto como certo e real?",
+     "options": [
+      "indicativo",
+      "subjuntivo",
+      "imperativo"
+     ],
+     "answer": "indicativo",
+     "accept": [],
+     "hint": "Pense em frases como \"Hoje chove\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmv6k431s69j40",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Feche a porta, por favor.\", o verbo está em qual modo?",
+     "options": [
+      "imperativo",
+      "indicativo",
+      "subjuntivo"
+     ],
+     "answer": "imperativo",
+     "accept": [],
+     "hint": "A frase dá uma ordem ou faz um pedido.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ag1yk11ydspv4",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual forma nominal é \"cantando\"?",
+     "options": [],
+     "answer": "gerúndio",
+     "accept": [
+      "gerundio"
+     ],
+     "hint": "Observe a terminação -ndo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "recpopu2ngn8",
+     "subject": "pt",
+     "type": "short",
+     "q": "Em \"Ele tinha partido cedo\", qual forma nominal é \"partido\"?",
+     "options": [],
+     "answer": "particípio",
+     "accept": [
+      "participio"
+     ],
+     "hint": "Ela aparece nos tempos compostos com \"ter\" ou \"haver\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yndpsdgprfj",
+     "subject": "pt",
+     "type": "short",
+     "q": "Conjugue o verbo \"fazer\" na 1ª pessoa do singular do pretérito perfeito do indicativo (eu…).",
+     "options": [],
+     "answer": "fiz",
+     "accept": [
+      "eu fiz"
+     ],
+     "hint": "É um verbo irregular: não termina em -i como \"vendi\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r109i3wtdsysbj",
+     "subject": "pt",
+     "type": "short",
+     "q": "Conjugue o verbo \"caber\" na 1ª pessoa do singular do presente do indicativo (eu…).",
+     "options": [],
+     "answer": "caibo",
+     "accept": [
+      "eu caibo"
+     ],
+     "hint": "É irregular, com um \"i\" a mais.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w7cblb4xzqhm",
+     "subject": "pt",
+     "type": "short",
+     "q": "Conjugue o verbo \"pôr\" na 3ª pessoa do plural do pretérito perfeito do indicativo (eles…).",
+     "options": [],
+     "answer": "puseram",
+     "accept": [
+      "eles puseram"
+     ],
+     "hint": "Lembre-se de \"eu pus\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pk8pzr1a76vpz",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Espero que você ___ à festa.\"",
+     "options": [
+      "venha",
+      "vem",
+      "virá",
+      "vinha"
+     ],
+     "answer": "venha",
+     "accept": [],
+     "hint": "\"Espero que\" pede o presente do subjuntivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17z4s9xcpuwvv",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete com o verbo \"ver\": \"Quando ele ___ o resultado, ficará feliz.\"",
+     "options": [
+      "vir",
+      "ver",
+      "verá",
+      "visse"
+     ],
+     "answer": "vir",
+     "accept": [],
+     "hint": "É o futuro do subjuntivo de \"ver\", que se confunde com o infinitivo de outro verbo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mzcqv9u76y39",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em que tempo está \"cantávamos\"?",
+     "options": [
+      "pretérito imperfeito do indicativo",
+      "pretérito perfeito do indicativo",
+      "pretérito mais-que-perfeito do indicativo",
+      "futuro do pretérito"
+     ],
+     "answer": "pretérito imperfeito do indicativo",
+     "accept": [],
+     "hint": "Indica uma ação habitual ou contínua no passado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d3azihox19oy",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Ele saíra antes da chuva.\", em que tempo está o verbo?",
+     "options": [
+      "pretérito mais-que-perfeito do indicativo",
+      "pretérito imperfeito do indicativo",
+      "futuro do presente",
+      "presente do subjuntivo"
+     ],
+     "answer": "pretérito mais-que-perfeito do indicativo",
+     "accept": [],
+     "hint": "É uma ação passada anterior a outra também passada.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lsgb2p153pkey",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é o imperativo negativo de \"fazer\" na 2ª pessoa do singular (tu)?",
+     "options": [
+      "não faças",
+      "não faz",
+      "não fazes",
+      "não fizeste"
+     ],
+     "answer": "não faças",
+     "accept": [],
+     "hint": "O imperativo negativo usa as formas do presente do subjuntivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gm363u1ilx4e5",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Eu compraria o livro, mas não tenho dinheiro.\", o futuro do pretérito \"compraria\" expressa:",
+     "options": [
+      "uma ação hipotética, que depende de uma condição",
+      "uma ação concluída no passado",
+      "uma ordem",
+      "um fato habitual no presente"
+     ],
+     "answer": "uma ação hipotética, que depende de uma condição",
+     "accept": [],
+     "hint": "A compra aconteceu ou não?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ngb40esgko64",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique a diferença de sentido entre \"Talvez ele venha\" e \"Ele vem\", relacionando-a aos modos verbais.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Qual frase expressa certeza e qual expressa possibilidade?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlfjnsy1n4j4ss",
+     "subject": "pt",
+     "type": "short",
+     "q": "Conjugue o verbo \"vir\" no futuro do subjuntivo, 1ª pessoa do singular (quando eu…).",
+     "options": [],
+     "answer": "vier",
+     "accept": [
+      "quando eu vier"
+     ],
+     "hint": "O futuro do subjuntivo se forma a partir do pretérito perfeito, 3ª pessoa do plural, tirando o -ram.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_lit": {
+   "topic": "Literatura de catequese: José de Anchieta",
+   "questions": [
+    {
+     "id": "rhkdovkwh13fi",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "A que período literário brasileiro pertence a literatura de catequese?",
+     "options": [
+      "Quinhentismo",
+      "Barroco",
+      "Arcadismo",
+      "Romantismo"
+     ],
+     "answer": "Quinhentismo",
+     "accept": [],
+     "hint": "Pense no século em que os primeiros jesuítas chegaram.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1binbt81cwpp46",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual era o principal objetivo da literatura de catequese?",
+     "options": [
+      "Converter os indígenas à fé católica",
+      "Informar o rei sobre as riquezas da terra",
+      "Criticar a colonização portuguesa",
+      "Entreter a corte em Lisboa"
+     ],
+     "answer": "Converter os indígenas à fé católica",
+     "accept": [],
+     "hint": "O próprio nome \"catequese\" dá a pista.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt2p8tx82jipn",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Os textos escritos para descrever a terra e os nativos e informar a Coroa portuguesa formam a chamada:",
+     "options": [
+      "literatura de informação",
+      "literatura de catequese",
+      "poesia lírica",
+      "literatura de cordel"
+     ],
+     "answer": "literatura de informação",
+     "accept": [],
+     "hint": "É a outra vertente do Quinhentismo, ao lado da catequese.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15yx69u1m68nk8",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "A qual ordem religiosa pertencia José de Anchieta?",
+     "options": [],
+     "answer": "jesuítas",
+     "accept": [
+      "jesuíta",
+      "Companhia de Jesus",
+      "jesuitas"
+     ],
+     "hint": "É a ordem que chegou ao Brasil em 1549.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ds03m1yiquom",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em que ano Anchieta chegou ao Brasil?",
+     "options": [
+      "1553",
+      "1500",
+      "1630",
+      "1808"
+     ],
+     "answer": "1553",
+     "accept": [],
+     "hint": "Foi poucos anos depois da chegada dos primeiros jesuítas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgn5asu15kd86k",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Anchieta participou da fundação de qual cidade, em 1554?",
+     "options": [
+      "São Paulo",
+      "Salvador",
+      "Recife",
+      "Belém"
+     ],
+     "answer": "São Paulo",
+     "accept": [],
+     "hint": "Pense no colégio jesuíta do planalto de Piratininga.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1utx58ds02po0",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em quais línguas Anchieta escreveu suas obras?",
+     "options": [
+      "Português, espanhol, latim e tupi",
+      "Apenas português",
+      "Português e francês",
+      "Apenas latim"
+     ],
+     "answer": "Português, espanhol, latim e tupi",
+     "accept": [],
+     "hint": "Ele queria alcançar públicos diferentes, incluindo os indígenas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wvcc3c15t6b0h",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Anchieta escreveu uma gramática de qual língua indígena?",
+     "options": [],
+     "answer": "tupi",
+     "accept": [
+      "tupi antigo",
+      "língua geral",
+      "o tupi"
+     ],
+     "hint": "Era a língua mais falada na costa do Brasil.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vo1p2vipu9yr",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Em que língua clássica Anchieta escreveu seu longo poema dedicado à Virgem Maria?",
+     "options": [],
+     "answer": "latim",
+     "accept": [
+      "o latim"
+     ],
+     "hint": "Era a língua da Igreja na época.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtovvkc4e7oio",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Que gênero teatral curto, de origem medieval, Anchieta usava na catequese?",
+     "options": [
+      "auto",
+      "tragédia",
+      "ópera",
+      "romance"
+     ],
+     "answer": "auto",
+     "accept": [],
+     "hint": "É o mesmo gênero de muitas peças religiosas da Península Ibérica.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdxosrm13jyr52",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual métrica predomina na poesia de Anchieta?",
+     "options": [
+      "redondilha (medida velha)",
+      "soneto decassílabo",
+      "verso livre",
+      "verso alexandrino"
+     ],
+     "answer": "redondilha (medida velha)",
+     "accept": [],
+     "hint": "É uma métrica popular, fácil de cantar e memorizar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uru07i43q7on",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual característica marca o teatro de Anchieta?",
+     "options": [
+      "Visão maniqueísta: a luta entre o bem e o mal",
+      "Crítica à Igreja",
+      "Personagens psicologicamente complexos",
+      "Final trágico sem lição moral"
+     ],
+     "answer": "Visão maniqueísta: a luta entre o bem e o mal",
+     "accept": [],
+     "hint": "Pense em anjos e demônios em cena.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1indvnt5qckye",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "No auto \"Na Festa de São Lourenço\", os demônios recebem nomes de quem?",
+     "options": [
+      "Chefes indígenas inimigos dos portugueses",
+      "Santos católicos",
+      "Reis de Portugal",
+      "Animais da floresta"
+     ],
+     "answer": "Chefes indígenas inimigos dos portugueses",
+     "accept": [],
+     "hint": "Quem era visto como adversário pelos colonizadores?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yvnydy1lg8ct4",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Por que o teatro foi um instrumento eficaz de catequese?",
+     "options": [
+      "Porque comunicava com música, imagens e encenação a um público que não lia",
+      "Porque era encenado só para a nobreza",
+      "Porque usava apenas o latim",
+      "Porque não tinha conteúdo religioso"
+     ],
+     "answer": "Porque comunicava com música, imagens e encenação a um público que não lia",
+     "accept": [],
+     "hint": "A maioria dos indígenas não conhecia a escrita europeia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4uii1d1p0jxik",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Explique por que Anchieta misturava elementos da cultura indígena com a doutrina cristã em seus autos.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em como tornar uma mensagem nova compreensível para outro povo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r137e1cnxa4q00",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Analise o caráter alegórico e didático do teatro de Anchieta, dando exemplos de personagens ou situações.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Personagens como virtudes, anjos e demônios representam ideias.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_red": {
+   "topic": "Competência 5: proposta de intervenção e seus cinco elementos",
+   "questions": [
+    {
+     "id": "r1g6t9qp9oma9j",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "O que a Competência 5 da redação do ENEM avalia?",
+     "options": [
+      "A elaboração de uma proposta de intervenção para o problema abordado, respeitando os direitos humanos",
+      "O domínio da norma culta",
+      "A coesão entre os parágrafos",
+      "A compreensão da proposta de redação"
+     ],
+     "answer": "A elaboração de uma proposta de intervenção para o problema abordado, respeitando os direitos humanos",
+     "accept": [],
+     "hint": "Pense no que se espera da conclusão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcs9xyg1dfg05e",
+     "subject": "pt_red",
+     "type": "num",
+     "q": "Quantos elementos deve ter uma proposta de intervenção completa?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Agente, ação, …",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k0y7vp1xcyuq0",
+     "subject": "pt_red",
+     "type": "num",
+     "q": "Qual é a pontuação máxima da Competência 5?",
+     "options": [],
+     "answer": "200",
+     "accept": [],
+     "hint": "São cinco competências e a nota máxima da redação é 1000.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rph0ebv17gou2j",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Em \"O Ministério da Educação deve criar campanhas educativas\", o trecho \"O Ministério da Educação\" é o:",
+     "options": [
+      "agente",
+      "modo/meio",
+      "finalidade",
+      "detalhamento"
+     ],
+     "answer": "agente",
+     "accept": [],
+     "hint": "Quem vai executar a ação?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1plfr7h1pheseb",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Em \"O Ministério da Educação deve criar campanhas educativas\", o trecho \"criar campanhas educativas\" é a:",
+     "options": [
+      "ação",
+      "finalidade",
+      "agente",
+      "detalhamento"
+     ],
+     "answer": "ação",
+     "accept": [],
+     "hint": "O que deve ser feito?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4u263c1et6c10",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Em \"…por meio das redes sociais e da televisão…\", o trecho representa qual elemento?",
+     "options": [
+      "modo/meio",
+      "agente",
+      "finalidade",
+      "ação"
+     ],
+     "answer": "modo/meio",
+     "accept": [],
+     "hint": "Responde à pergunta \"como?\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ohu2v5otf3i",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Em \"…a fim de conscientizar a população sobre o problema.\", o trecho representa qual elemento?",
+     "options": [
+      "finalidade",
+      "agente",
+      "modo/meio",
+      "ação"
+     ],
+     "answer": "finalidade",
+     "accept": [],
+     "hint": "Responde à pergunta \"para quê?\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r38vkfzisseyd",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Em \"O governo deve criar campanhas educativas, que tragam depoimentos de especialistas, por meio da televisão\", o trecho \"que tragam depoimentos de especialistas\" é:",
+     "options": [
+      "detalhamento",
+      "agente",
+      "finalidade",
+      "modo/meio"
+     ],
+     "answer": "detalhamento",
+     "accept": [],
+     "hint": "Ele acrescenta uma informação sobre outro elemento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn971hrm9iopv",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual conectivo introduz a finalidade de uma proposta?",
+     "options": [
+      "a fim de que",
+      "embora",
+      "portanto",
+      "porque"
+     ],
+     "answer": "a fim de que",
+     "accept": [],
+     "hint": "Procure o que indica objetivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1at29clrdaxo7",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual expressão introduz o modo/meio de uma proposta?",
+     "options": [
+      "por intermédio de",
+      "apesar de",
+      "contudo",
+      "logo"
+     ],
+     "answer": "por intermédio de",
+     "accept": [],
+     "hint": "Procure o que indica \"como\" a ação será feita.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdju4px1pooqzu",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Em que parte da redação a proposta de intervenção costuma aparecer?",
+     "options": [
+      "conclusão",
+      "título",
+      "primeira frase da introdução",
+      "citação inicial"
+     ],
+     "answer": "conclusão",
+     "accept": [],
+     "hint": "É o fechamento do texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ukufaz5gr3nt",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual destas propostas é vaga demais?",
+     "options": [
+      "É preciso que algo seja feito.",
+      "O Ministério da Saúde deve ampliar campanhas de vacinação nas escolas.",
+      "As prefeituras devem instalar pontos de coleta seletiva nos bairros.",
+      "As escolas devem oferecer oficinas de educação financeira."
+     ],
+     "answer": "É preciso que algo seja feito.",
+     "accept": [],
+     "hint": "Qual delas não diz quem faz nem o quê?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jzxhxt1oi0sve",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "O que significa articular a proposta à discussão do texto?",
+     "options": [
+      "A proposta deve responder aos problemas discutidos no desenvolvimento",
+      "A proposta deve trazer um tema novo",
+      "A proposta deve repetir a introdução",
+      "A proposta deve ser uma pergunta"
+     ],
+     "answer": "A proposta deve responder aos problemas discutidos no desenvolvimento",
+     "accept": [],
+     "hint": "Pense na coerência entre problema e solução.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1feuh5d9x1bhm",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Para \"aumentar a fiscalização contra o desmatamento\", qual agente é mais adequado?",
+     "options": [
+      "O Poder Executivo, por meio dos órgãos ambientais",
+      "Cada estudante individualmente",
+      "Os personagens de uma novela",
+      "O próprio leitor da redação"
+     ],
+     "answer": "O Poder Executivo, por meio dos órgãos ambientais",
+     "accept": [],
+     "hint": "Quem tem poder e responsabilidade para fiscalizar?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riclyww1eunk7b",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Reescreva a proposta \"A escola deve ensinar sobre o lixo.\" de modo que ela tenha os cinco elementos (agente, ação, modo/meio, finalidade e detalhamento).",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pergunte-se: quem? o quê? como? para quê? e acrescente um detalhe.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rent4yc17din5t",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Tema: \"Desafios para reduzir o desperdício de alimentos no Brasil\". Elabore uma proposta de intervenção completa, com os cinco elementos.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Escolha um agente com poder real de agir sobre o problema.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "sci": {
+   "topic": "Biology: sexual reproduction in plants",
+   "questions": [
+    {
+     "id": "r1a6axqlwgb1a5",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which part of a flower produces pollen?",
+     "options": [
+      "Anther",
+      "Stigma",
+      "Ovary",
+      "Sepal"
+     ],
+     "answer": "Anther",
+     "accept": [],
+     "hint": "It is at the top of the stamen.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtr5w0a1j0fxh0",
+     "subject": "sci",
+     "type": "short",
+     "q": "Name the sticky top part of the carpel that receives pollen.",
+     "options": [],
+     "answer": "stigma",
+     "accept": [
+      "the stigma"
+     ],
+     "hint": "It is at the tip of the style.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cia35k6jf4s0",
+     "subject": "sci",
+     "type": "mc",
+     "q": "The stamen is made up of:",
+     "options": [
+      "the anther and filament",
+      "the stigma, style and ovary",
+      "the petals and sepals",
+      "the ovule and ovary"
+     ],
+     "answer": "the anther and filament",
+     "accept": [],
+     "hint": "It is the male part of the flower.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m1k08gpy2m2l",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Where are the ovules found?",
+     "options": [
+      "In the ovary",
+      "In the anther",
+      "In the filament",
+      "In the petals"
+     ],
+     "answer": "In the ovary",
+     "accept": [],
+     "hint": "They are at the base of the carpel.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qq4f6z1pud3cj",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is pollination?",
+     "options": [
+      "The transfer of pollen from an anther to a stigma",
+      "The fusion of male and female gamete nuclei",
+      "The growth of a seed into a seedling",
+      "The release of seeds from a fruit"
+     ],
+     "answer": "The transfer of pollen from an anther to a stigma",
+     "accept": [],
+     "hint": "It happens before fertilisation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c4aiu91k2dcdi",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is fertilisation in flowering plants?",
+     "options": [
+      "The fusion of a male gamete nucleus with a female gamete nucleus",
+      "The transfer of pollen by insects",
+      "The opening of petals",
+      "The growth of a pollen grain on a petal"
+     ],
+     "answer": "The fusion of a male gamete nucleus with a female gamete nucleus",
+     "accept": [],
+     "hint": "It takes place inside the ovule.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r584se7lgki4s",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which feature is typical of an insect-pollinated flower?",
+     "options": [
+      "Brightly coloured petals and nectar",
+      "Feathery stigmas hanging outside the flower",
+      "Very small, dull petals",
+      "Huge amounts of light, smooth pollen"
+     ],
+     "answer": "Brightly coloured petals and nectar",
+     "accept": [],
+     "hint": "The flower needs to attract animals.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sdcudb13t8kt4",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which feature is typical of a wind-pollinated flower?",
+     "options": [
+      "Large amounts of light, smooth pollen",
+      "Sticky, spiky pollen",
+      "Strong scent",
+      "Large nectaries"
+     ],
+     "answer": "Large amounts of light, smooth pollen",
+     "accept": [],
+     "hint": "The pollen must be carried by air.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvkzmedkyrxr1",
+     "subject": "sci",
+     "type": "short",
+     "q": "Transfer of pollen from the anther of one plant to the stigma of a different plant of the same species is called ___ pollination.",
+     "options": [],
+     "answer": "cross",
+     "accept": [
+      "cross-pollination",
+      "cross pollination"
+     ],
+     "hint": "It is the opposite of self-pollination.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbn3kd8wc8pl9",
+     "subject": "sci",
+     "type": "short",
+     "q": "What grows from a pollen grain down through the style to reach the ovule?",
+     "options": [],
+     "answer": "pollen tube",
+     "accept": [
+      "a pollen tube",
+      "the pollen tube"
+     ],
+     "hint": "It carries the male gamete.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r67tkdj1azhtrt",
+     "subject": "sci",
+     "type": "mc",
+     "q": "After fertilisation, the ovule develops into the:",
+     "options": [
+      "seed",
+      "fruit",
+      "petal",
+      "anther"
+     ],
+     "answer": "seed",
+     "accept": [],
+     "hint": "It contains the embryo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13mu2yxatmiiv",
+     "subject": "sci",
+     "type": "short",
+     "q": "After fertilisation, the ovary develops into the ___.",
+     "options": [],
+     "answer": "fruit",
+     "accept": [
+      "the fruit"
+     ],
+     "hint": "It surrounds and protects the seeds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqj9ye210u4r5j",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which conditions does a seed need to germinate?",
+     "options": [
+      "Water, oxygen and a suitable temperature",
+      "Light, soil and carbon dioxide",
+      "Light, fertiliser and wind",
+      "Carbon dioxide only"
+     ],
+     "answer": "Water, oxygen and a suitable temperature",
+     "accept": [],
+     "hint": "Think about what enzymes and respiration need.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rblm3h2grlaiy",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why do most seeds not need light to germinate?",
+     "options": [
+      "They use stored food until their leaves can photosynthesise",
+      "They photosynthesise in the dark",
+      "They take food from the soil",
+      "They do not need energy"
+     ],
+     "answer": "They use stored food until their leaves can photosynthesise",
+     "accept": [],
+     "hint": "What is inside a seed besides the embryo?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2yj76l167m2hx",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why does a germinating seed need oxygen?",
+     "options": [
+      "For aerobic respiration to release energy",
+      "To make chlorophyll",
+      "To soften the seed coat",
+      "To absorb water"
+     ],
+     "answer": "For aerobic respiration to release energy",
+     "accept": [],
+     "hint": "Growth requires energy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1399tdg6k20qz",
+     "subject": "sci",
+     "type": "open",
+     "q": "Describe the events that happen from the moment a pollen grain lands on a stigma until fertilisation takes place.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Mention the pollen tube, the style, the ovule and the nuclei.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa": {
+   "topic": "Global issues: poverty, volunteering and charities (para que + subjunctive)",
+   "questions": [
+    {
+     "id": "r11tjwcngmtjpo",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"la pobreza\" mean?",
+     "options": [
+      "poverty",
+      "wealth",
+      "the poor neighbourhood",
+      "hunger"
+     ],
+     "answer": "poverty",
+     "accept": [],
+     "hint": "Think of the adjective \"pobre\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j71pgh1ocdupv",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"el voluntariado\" mean?",
+     "options": [
+      "volunteering",
+      "the government",
+      "a donation",
+      "the volunteer centre"
+     ],
+     "answer": "volunteering",
+     "accept": [],
+     "hint": "It looks similar to the English word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpmiyxhzqfzog",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: \"to help\".",
+     "options": [],
+     "answer": "ayudar",
+     "accept": [],
+     "hint": "It is an -ar verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1114i091415y07",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What is an \"ONG\"?",
+     "options": [
+      "a charity / NGO",
+      "a government ministry",
+      "a bank",
+      "a hospital"
+     ],
+     "answer": "a charity / NGO",
+     "accept": [],
+     "hint": "The letters stand for \"organización no gubernamental\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yvid1v12pc3t8",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"las personas sin hogar\" mean?",
+     "options": [
+      "homeless people",
+      "elderly people",
+      "unemployed people",
+      "refugees"
+     ],
+     "answer": "homeless people",
+     "accept": [],
+     "hint": "\"Hogar\" means home.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9qomi117udwmm",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"recaudar fondos\" mean?",
+     "options": [
+      "to raise funds",
+      "to spend money",
+      "to save energy",
+      "to collect rubbish"
+     ],
+     "answer": "to raise funds",
+     "accept": [],
+     "hint": "Charities often do this with events.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjkdw1iu39ahn",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which verb form follows \"para que\" in a sentence about the present?",
+     "options": [
+      "present subjunctive",
+      "present indicative",
+      "infinitive",
+      "future"
+     ],
+     "answer": "present subjunctive",
+     "accept": [],
+     "hint": "\"Para que\" expresses a purpose that is not yet a fact.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12h04fi1ex5jff",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct word: \"Voy a la ONG ___ ayudar.\"",
+     "options": [
+      "para",
+      "para que",
+      "porque",
+      "aunque"
+     ],
+     "answer": "para",
+     "accept": [],
+     "hint": "When there is no change of subject, use the infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn8rsig709o5e",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete with \"tener\": \"Trabajo como voluntario para que los niños ___ comida.\"",
+     "options": [
+      "tengan",
+      "tienen",
+      "tener",
+      "tendrán"
+     ],
+     "answer": "tengan",
+     "accept": [],
+     "hint": "Use the present subjunctive for \"ellos\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xp5ayf1175z0k",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete with \"poder\": \"Donamos dinero para que la ONG ___ construir una escuela.\"",
+     "options": [
+      "pueda",
+      "puede",
+      "poder",
+      "podrá"
+     ],
+     "answer": "pueda",
+     "accept": [],
+     "hint": "The subject changes after \"para que\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kukwhw49pyti",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the present subjunctive of \"ayudar\" for \"nosotros\".",
+     "options": [],
+     "answer": "ayudemos",
+     "accept": [],
+     "hint": "-ar verbs take -e endings in the subjunctive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry0gi4v7xaszp",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the present subjunctive of \"hacer\" for \"ellos\".",
+     "options": [],
+     "answer": "hagan",
+     "accept": [],
+     "hint": "Start from the \"yo\" form of the present: hago.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dcrnbs1yebcfz",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the present subjunctive of \"ir\" for \"yo\".",
+     "options": [],
+     "answer": "vaya",
+     "accept": [],
+     "hint": "This verb is irregular in the subjunctive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mu0cf12mblb4",
+     "subject": "spa",
+     "type": "short",
+     "q": "Complete with the present subjunctive of \"vivir\": \"Luchamos para que todos ___ mejor.\"",
+     "options": [],
+     "answer": "vivan",
+     "accept": [],
+     "hint": "-ir verbs take -a endings in the subjunctive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nr3z6n1u6htxu",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence is correct?",
+     "options": [
+      "Recaudamos fondos para que las familias puedan comprar ropa.",
+      "Recaudamos fondos para que las familias pueden comprar ropa.",
+      "Recaudamos fondos para que las familias poder comprar ropa.",
+      "Recaudamos fondos para las familias que puedan poder ropa."
+     ],
+     "answer": "Recaudamos fondos para que las familias puedan comprar ropa.",
+     "accept": [],
+     "hint": "Look at the verb straight after \"para que\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13zu3txq03pb8",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 2–3 sentences in Spanish about a charity or volunteering project, using \"para que\" + present subjunctive at least once.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Say what you do, who you help and why (para que…).",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []

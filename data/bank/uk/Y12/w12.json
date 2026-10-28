@@ -1,0 +1,259 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y12",
+ "academic_week": 12,
+ "subjects": {
+  "bio-hl": {
+   "topic": "D2.1 Cell and nuclear division",
+   "questions": [
+    {
+     "id": "r137fa7c151r6gn",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which statement describes the products of mitosis?",
+     "options": [
+      "Two genetically identical nuclei with the same chromosome number as the parent",
+      "Four genetically different haploid nuclei",
+      "Two haploid nuclei that differ genetically",
+      "Four identical diploid nuclei"
+     ],
+     "answer": "Two genetically identical nuclei with the same chromosome number as the parent",
+     "accept": [],
+     "hint": "Mitosis is used for growth and repair.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpyol2c2bfs6y",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which statement describes the typical products of meiosis?",
+     "options": [
+      "Four genetically different haploid cells",
+      "Two genetically identical diploid cells",
+      "Four identical diploid cells",
+      "Two haploid cells identical to the parent"
+     ],
+     "answer": "Four genetically different haploid cells",
+     "accept": [],
+     "hint": "Meiosis involves two divisions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzd3qvxu69nud",
+     "subject": "bio",
+     "type": "mc",
+     "q": "In which stage of mitosis do chromosomes condense and the nuclear membrane break down?",
+     "options": [
+      "Prophase",
+      "Metaphase",
+      "Anaphase",
+      "Telophase"
+     ],
+     "answer": "Prophase",
+     "accept": [],
+     "hint": "It is the first stage.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj39ffs11ju3k1",
+     "subject": "bio",
+     "type": "mc",
+     "q": "In a micrograph, chromosomes are lined up across the equator of the cell. Which stage is shown?",
+     "options": [
+      "Metaphase",
+      "Prophase",
+      "Anaphase",
+      "Telophase"
+     ],
+     "answer": "Metaphase",
+     "accept": [],
+     "hint": "Spindle fibres are attached to the centromeres.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bobuu8slftrk",
+     "subject": "bio",
+     "type": "short",
+     "q": "In which stage of mitosis do sister chromatids separate and move to opposite poles?",
+     "options": [],
+     "answer": "anaphase",
+     "accept": [],
+     "hint": "The chromatids look V-shaped as they are pulled.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a6dq0u4pmdnd",
+     "subject": "bio",
+     "type": "mc",
+     "q": "In a micrograph, two groups of chromosomes are at opposite poles and nuclear membranes are re-forming. Which stage is shown?",
+     "options": [
+      "Telophase",
+      "Metaphase",
+      "Prophase",
+      "Interphase"
+     ],
+     "answer": "Telophase",
+     "accept": [],
+     "hint": "It is the last stage of mitosis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxxlpcd10w3hxt",
+     "subject": "bio",
+     "type": "mc",
+     "q": "How does cytokinesis differ in plant cells compared with animal cells?",
+     "options": [
+      "A cell plate forms between the two nuclei",
+      "A cleavage furrow pinches the cell in two",
+      "The nuclear membrane does not re-form",
+      "No new cell wall is made"
+     ],
+     "answer": "A cell plate forms between the two nuclei",
+     "accept": [],
+     "hint": "Plant cells have a rigid wall.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4qxvtw1y35k4u",
+     "subject": "bio",
+     "type": "num",
+     "q": "In a root tip sample, 30 cells are in mitosis out of 240 cells counted. Calculate the mitotic index as a decimal.",
+     "options": [],
+     "answer": "0.125",
+     "accept": [],
+     "hint": "Mitotic index = cells in mitosis ÷ total cells.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ikaa1q1vrekg0",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the process in prophase I in which non-sister chromatids exchange segments of DNA.",
+     "options": [],
+     "answer": "crossing over",
+     "accept": [
+      "crossing-over",
+      "crossover"
+     ],
+     "hint": "It happens at chiasmata.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2plard1qivb72",
+     "subject": "bio",
+     "type": "mc",
+     "q": "In which stage of meiosis does random orientation of bivalents occur?",
+     "options": [
+      "Metaphase I",
+      "Metaphase II",
+      "Anaphase II",
+      "Telophase I"
+     ],
+     "answer": "Metaphase I",
+     "accept": [],
+     "hint": "Homologous pairs line up together in this stage.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg3tx5z15sii6a",
+     "subject": "bio",
+     "type": "num",
+     "q": "An organism has a haploid number (n) of 3. How many different combinations of chromosomes are possible in its gametes due to random orientation alone?",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "Use 2ⁿ.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd5pqg41p16k1p",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What can non-disjunction during meiosis cause?",
+     "options": [
+      "Gametes with an abnormal number of chromosomes",
+      "Gametes that are genetically identical to the parent",
+      "Faster cell division",
+      "Crossing over between sister chromatids"
+     ],
+     "answer": "Gametes with an abnormal number of chromosomes",
+     "accept": [],
+     "hint": "Chromosomes fail to separate correctly.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yz9iyuy4oqr8",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What is the role of cyclins in the cell cycle?",
+     "options": [
+      "They bind to and activate cyclin-dependent kinases, controlling progression through the cycle",
+      "They form the spindle fibres",
+      "They copy DNA during S phase",
+      "They digest the nuclear membrane"
+     ],
+     "answer": "They bind to and activate cyclin-dependent kinases, controlling progression through the cycle",
+     "accept": [],
+     "hint": "Their concentration rises and falls during the cycle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g7rmi02s9hsi",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What is an oncogene?",
+     "options": [
+      "A gene that, when mutated, can contribute to the development of cancer",
+      "A gene that only acts during meiosis",
+      "A protein that stops crossing over",
+      "A gene found only in plant cells"
+     ],
+     "answer": "A gene that, when mutated, can contribute to the development of cancer",
+     "accept": [],
+     "hint": "Think about uncontrolled cell division.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hl79ui1c9az00",
+     "subject": "bio",
+     "type": "open",
+     "q": "Compare and contrast mitosis and meiosis.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Include number of divisions, chromosome number of products, genetic variation and function.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h4zqq4tp8atv",
+     "subject": "bio",
+     "type": "open",
+     "q": "Explain how meiosis generates genetic variation among gametes.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider events in prophase I and metaphase I.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
