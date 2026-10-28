@@ -1839,7 +1839,1945 @@
      "errors": []
     }
    ]
+  },
+  "math": {
+   "topic": "Solving quadratic equations by factorising",
+   "questions": [
+    {
+     "id": "r14s0dy14bkcyo",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which of these is a quadratic equation?",
+     "options": [
+      "x³ − 8 = 0",
+      "x² + 3x − 10 = 0",
+      "2x + 5 = 9",
+      "3x − 10 = 0"
+     ],
+     "answer": "x² + 3x − 10 = 0",
+     "accept": [],
+     "hint": "Look for the equation where the highest power of x is 2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jgmzvpxrjco1",
+     "subject": "math",
+     "type": "short",
+     "q": "If (x − 4)(x + 3) = 0, what are the two solutions?",
+     "options": [],
+     "answer": "x = 4 or x = -3",
+     "accept": [
+      "x = -3 or x = 4",
+      "4 and -3",
+      "-3 and 4",
+      "4, -3",
+      "-3, 4",
+      "x=4, x=-3",
+      "x=-3, x=4",
+      "4 or -3"
+     ],
+     "hint": "If two things multiply to make zero, one of them must be zero.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1utswu715bsr5h",
+     "subject": "math",
+     "type": "mc",
+     "q": "Factorise x² + 7x + 12.",
+     "options": [
+      "(x − 3)(x − 4)",
+      "(x + 1)(x + 12)",
+      "(x + 2)(x + 6)",
+      "(x + 3)(x + 4)"
+     ],
+     "answer": "(x + 3)(x + 4)",
+     "accept": [],
+     "hint": "Find two numbers that multiply to 12 and add to 7.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sml2h71difcox",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve x² + 7x + 12 = 0. Give the larger of the two solutions.",
+     "options": [],
+     "answer": "-3",
+     "accept": [],
+     "hint": "Factorise first, then set each bracket equal to zero. Careful with the signs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oyv16gmib4b1",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve x² − 5x + 6 = 0.",
+     "options": [],
+     "answer": "x = 2 or x = 3",
+     "accept": [
+      "x = 3 or x = 2",
+      "2 and 3",
+      "3 and 2",
+      "2, 3",
+      "3, 2",
+      "x=2, x=3",
+      "x=3, x=2",
+      "2 or 3"
+     ],
+     "hint": "Two numbers that multiply to +6 and add to −5 are both negative.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mse4cpxrmcdz",
+     "subject": "math",
+     "type": "mc",
+     "q": "Solve x² − 9x = 0.",
+     "options": [
+      "x = 0 or x = −9",
+      "x = 9 only",
+      "x = 3 or x = −3",
+      "x = 0 or x = 9"
+     ],
+     "answer": "x = 0 or x = 9",
+     "accept": [],
+     "hint": "Take out a common factor of x first. Do not divide by x!",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w4fccg15cayty",
+     "subject": "math",
+     "type": "mc",
+     "q": "Solve x² − 25 = 0.",
+     "options": [
+      "x = 25 or x = −25",
+      "x = 12.5",
+      "x = 5 or x = −5",
+      "x = 5 only"
+     ],
+     "answer": "x = 5 or x = −5",
+     "accept": [],
+     "hint": "This is a difference of two squares.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ysoj464v3o2b",
+     "subject": "math",
+     "type": "num",
+     "q": "The equation x² + 2x − 15 = 0 has one positive solution. What is it?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Find two numbers that multiply to −15 and add to +2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u5iv0w1k0n8xb",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which equation has the solutions x = −2 and x = 6?",
+     "options": [
+      "x² + 4x − 12 = 0",
+      "x² + 4x + 12 = 0",
+      "x² − 4x − 12 = 0",
+      "x² − 8x + 12 = 0"
+     ],
+     "answer": "x² − 4x − 12 = 0",
+     "accept": [],
+     "hint": "Work backwards: write the brackets that give these roots, then expand.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwqu1gg1exi5yc",
+     "subject": "math",
+     "type": "short",
+     "q": "Rearrange x² + 3x = 10 so that one side equals zero, then solve it.",
+     "options": [],
+     "answer": "x = 2 or x = -5",
+     "accept": [
+      "x = -5 or x = 2",
+      "2 and -5",
+      "-5 and 2",
+      "2, -5",
+      "-5, 2",
+      "x=2, x=-5",
+      "x=-5, x=2",
+      "2 or -5"
+     ],
+     "hint": "Subtract 10 from both sides before you factorise.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4elgta1n41b05",
+     "subject": "math",
+     "type": "mc",
+     "q": "Factorise 2x² + 7x + 3.",
+     "options": [
+      "(2x + 3)(x + 1)",
+      "(x + 1)(x + 3)",
+      "(2x + 1)(x + 1)",
+      "(2x + 1)(x + 3)"
+     ],
+     "answer": "(2x + 1)(x + 3)",
+     "accept": [],
+     "hint": "Expand each option to check which gives +7x in the middle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1weocza7tirv2",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve 2x² + 7x + 3 = 0. Give the solution that is not a whole number, as a decimal.",
+     "options": [],
+     "answer": "-0.5",
+     "accept": [],
+     "hint": "Factorise into (2x + a)(x + b), then solve 2x + a = 0.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx2ytxrvgfgul",
+     "subject": "math",
+     "type": "num",
+     "q": "A rectangle has length (x + 3) cm and width x cm. Its area is 28 cm². Form a quadratic equation and solve it to find x.",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Area = length × width. A length cannot be negative.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzdt06d1oxrgk5",
+     "subject": "math",
+     "type": "num",
+     "q": "Two consecutive positive whole numbers multiply to give 132. Call the smaller number n, form a quadratic equation and solve it. What is n?",
+     "options": [],
+     "answer": "11",
+     "accept": [],
+     "hint": "The next number is n + 1, so n(n + 1) = 132.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ipnqf09720z9",
+     "subject": "math",
+     "type": "num",
+     "q": "The square of a number minus 6 times the number equals 16. The number is negative. Find the number.",
+     "options": [],
+     "answer": "-2",
+     "accept": [],
+     "hint": "Write x² − 6x = 16, then make one side zero.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r187dswe12xbpio",
+     "subject": "math",
+     "type": "open",
+     "q": "Sam says: \"x² = 4x, so dividing both sides by x gives x = 4. That is the only solution.\" Explain Sam's mistake and give all the solutions.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "What happens to the equation if x = 0?",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Período composto por subordinação",
+   "questions": [
+    {
+     "id": "rj6aelf2zsfl4",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a principal diferença entre coordenação e subordinação?",
+     "options": [
+      "Na coordenação, sempre há uma conjunção integrante",
+      "Na subordinação, uma oração depende sintaticamente da outra",
+      "Na subordinação, as orações são sempre separadas por vírgula",
+      "Na coordenação, uma oração exerce função sintática na outra"
+     ],
+     "answer": "Na subordinação, uma oração depende sintaticamente da outra",
+     "accept": [],
+     "hint": "Pense em qual tipo de período tem orações independentes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rekhypuo16qx4",
+     "subject": "pt",
+     "type": "mc",
+     "q": "No período \"Percebi que estava atrasado\", qual é a oração principal?",
+     "options": [
+      "atrasado",
+      "que estava atrasado",
+      "estava atrasado",
+      "Percebi"
+     ],
+     "answer": "Percebi",
+     "accept": [],
+     "hint": "É a oração que tem o sentido completado pela outra e não começa com conjunção.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18uodjm4md7l5",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual período é composto por subordinação?",
+     "options": [
+      "Corri, pulei e gritei.",
+      "Estudei bastante, mas não passei.",
+      "Choveu muito e o rio encheu.",
+      "Quando a chuva parou, saímos para o quintal."
+     ],
+     "answer": "Quando a chuva parou, saímos para o quintal.",
+     "accept": [],
+     "hint": "Procure uma oração que indique uma circunstância (como tempo) da outra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13qfjpq1ijg0v6",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual período é composto por coordenação?",
+     "options": [
+      "Embora estivesse cansada, terminou o trabalho.",
+      "Saí porque estava com fome.",
+      "É importante que todos participem.",
+      "Ele chegou cedo, mas a loja estava fechada."
+     ],
+     "answer": "Ele chegou cedo, mas a loja estava fechada.",
+     "accept": [],
+     "hint": "Procure orações independentes ligadas por uma conjunção de oposição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4uml709iuczs",
+     "subject": "pt",
+     "type": "short",
+     "q": "Além de \"que\", qual é a outra conjunção integrante? Complete: \"Não sei ___ ela virá.\"",
+     "options": [],
+     "answer": "se",
+     "accept": [],
+     "hint": "É uma palavra de duas letras que introduz uma dúvida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h7qzrm13ewqyh",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Saímos cedo porque havia trânsito\", a oração subordinada indica:",
+     "options": [
+      "tempo",
+      "concessão",
+      "causa",
+      "condição"
+     ],
+     "answer": "causa",
+     "accept": [],
+     "hint": "Pergunte: por que saímos cedo?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uia0ufown16x",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Se você estudar, vai entender a matéria\", a oração subordinada indica:",
+     "options": [
+      "finalidade",
+      "condição",
+      "causa",
+      "comparação"
+     ],
+     "answer": "condição",
+     "accept": [],
+     "hint": "O entendimento depende de algo acontecer antes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roez41r1oqzmiz",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Embora estivesse chovendo, o jogo continuou\", a oração subordinada indica:",
+     "options": [
+      "causa",
+      "tempo",
+      "concessão",
+      "consequência"
+     ],
+     "answer": "concessão",
+     "accept": [],
+     "hint": "Há um obstáculo que não impediu o fato principal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1enii4o18sqoyq",
+     "subject": "pt",
+     "type": "mc",
+     "q": "No período \"O livro que comprei é ótimo\", a oração \"que comprei\" é:",
+     "options": [
+      "coordenada sindética",
+      "subordinada adjetiva",
+      "subordinada substantiva",
+      "oração principal"
+     ],
+     "answer": "subordinada adjetiva",
+     "accept": [],
+     "hint": "Ela caracteriza um substantivo, como faria um adjetivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11z976z1jwhqtj",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"É necessário que todos colaborem\", a oração \"que todos colaborem\" funciona como:",
+     "options": [
+      "objeto direto",
+      "aposto",
+      "adjunto adverbial",
+      "sujeito da oração principal"
+     ],
+     "answer": "sujeito da oração principal",
+     "accept": [],
+     "hint": "Pergunte ao verbo: o que é necessário?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tpn6983nbpvz",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Eu quero que você entenda\", a oração \"que você entenda\" funciona como:",
+     "options": [
+      "adjunto adverbial de causa",
+      "objeto direto do verbo \"querer\"",
+      "sujeito da oração principal",
+      "predicativo do sujeito"
+     ],
+     "answer": "objeto direto do verbo \"querer\"",
+     "accept": [],
+     "hint": "Quem quer, quer alguma coisa. Qual é essa coisa?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwctk0d76w2cq",
+     "subject": "pt",
+     "type": "num",
+     "q": "Quantas orações há no período \"Quando cheguei, percebi que todos já tinham saído\"?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Conte os verbos e as locuções verbais.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrrciwq1j6igw",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual conjunção completa o período com ideia de finalidade? \"Falei baixo ___ o bebê não acordasse.\"",
+     "options": [
+      "para que",
+      "se",
+      "porque",
+      "embora"
+     ],
+     "answer": "para que",
+     "accept": [],
+     "hint": "Pergunte: com que objetivo falei baixo?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsh60o51w3rhc2",
+     "subject": "pt",
+     "type": "open",
+     "q": "Crie um período composto por subordinação usando a conjunção \"embora\" e indique qual é a oração principal.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "A oração com \"embora\" apresenta um obstáculo; a principal traz o fato que aconteceu mesmo assim.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp4rf8xo5b3gi",
+     "subject": "pt",
+     "type": "open",
+     "q": "Compare os períodos \"Choveu, por isso ficamos em casa\" e \"Ficamos em casa porque choveu\". Qual é composto por coordenação e qual é composto por subordinação? Explique.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Observe se a oração introduzida pela conjunção depende da outra para ter sentido.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11zyo3ucll2kf",
+     "subject": "pt",
+     "type": "short",
+     "q": "No período \"Espero que você venha à festa\", qual palavra é a conjunção integrante?",
+     "options": [],
+     "answer": "que",
+     "accept": [],
+     "hint": "Procure a palavra entre o verbo da oração principal e a oração subordinada.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Artigo de opinião: leitura crítica de estratégias argumentativas",
+   "questions": [
+    {
+     "id": "ro0m3zzdsow6x",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é o principal objetivo de um artigo de opinião?",
+     "options": [
+      "Narrar uma história com personagens",
+      "Ensinar a fazer algo passo a passo",
+      "Defender um ponto de vista com argumentos",
+      "Informar um fato sem se posicionar"
+     ],
+     "answer": "Defender um ponto de vista com argumentos",
+     "accept": [],
+     "hint": "Pense no que o autor quer provocar no leitor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17gkpr8lw0764",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em um artigo de opinião, como se chama a ideia principal que o autor defende?",
+     "options": [
+      "legenda",
+      "manchete",
+      "tese",
+      "enredo"
+     ],
+     "answer": "tese",
+     "accept": [],
+     "hint": "É a posição que os argumentos procuram sustentar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw1y7vvfbh3mc",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quando o autor cita um especialista no assunto para dar força à tese, ele usa o argumento de:",
+     "options": [
+      "autoridade",
+      "causa e consequência",
+      "analogia",
+      "exemplificação"
+     ],
+     "answer": "autoridade",
+     "accept": [],
+     "hint": "Pense em quem tem conhecimento reconhecido sobre o tema.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rujr799tlo1nc",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Em uma pesquisa com 2.000 estudantes, 68% disseram dormir menos de 8 horas.\" Que estratégia argumentativa aparece?",
+     "options": [
+      "argumento de autoridade",
+      "contra-argumento",
+      "dados estatísticos",
+      "analogia"
+     ],
+     "answer": "dados estatísticos",
+     "accept": [],
+     "hint": "Observe os números e a porcentagem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s7901w69b85b",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Alguns dizem que o uniforme limita a expressão pessoal. No entanto, ele reduz a competição por roupas de marca.\" O que o autor faz nesse trecho?",
+     "options": [
+      "Apresenta um contra-argumento e o refuta",
+      "Narra um acontecimento",
+      "Faz uma pergunta sem resposta",
+      "Apresenta apenas dados"
+     ],
+     "answer": "Apresenta um contra-argumento e o refuta",
+     "accept": [],
+     "hint": "Repare no que vem antes e depois de \"No entanto\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1butlj81m0p21h",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Como se chama a estratégia em que o autor reconhece parte da razão do outro lado antes de defender sua tese (ex.: \"É verdade que…, mas…\")?",
+     "options": [
+      "exemplificação",
+      "concessão",
+      "ironia",
+      "generalização"
+     ],
+     "answer": "concessão",
+     "accept": [],
+     "hint": "O autor \"cede\" um pouco antes de argumentar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd2txbgpsuslp",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destes trechos apresenta uma generalização apressada?",
+     "options": [
+      "Uma pesquisa nacional mostrou queda na leitura entre jovens.",
+      "A biblioteca do bairro registrou menos empréstimos este ano.",
+      "Alguns jovens leem menos do que seus pais liam.",
+      "Meu primo não gosta de ler, então os jovens de hoje não leem."
+     ],
+     "answer": "Meu primo não gosta de ler, então os jovens de hoje não leem.",
+     "accept": [],
+     "hint": "Procure uma conclusão sobre muitas pessoas tirada de um único caso.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1byesnpawvqvp",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Um artigo defende que todos devem andar de bicicleta e cita como autoridade um cantor famoso. Por que esse argumento é fraco?",
+     "options": [
+      "Porque o cantor não é especialista no assunto",
+      "Porque o artigo usa a primeira pessoa",
+      "Porque o texto é muito curto",
+      "Porque cantores não podem opinar"
+     ],
+     "answer": "Porque o cantor não é especialista no assunto",
+     "accept": [],
+     "hint": "Fama e conhecimento sobre o tema são a mesma coisa?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnq6q551564jgm",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Assim como uma planta precisa de água para crescer, a mente precisa de leitura.\" Qual estratégia é essa?",
+     "options": [
+      "analogia",
+      "dados estatísticos",
+      "argumento de autoridade",
+      "contra-argumento"
+     ],
+     "answer": "analogia",
+     "accept": [],
+     "hint": "Duas coisas diferentes são aproximadas para explicar uma ideia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1avl2sz1ggm66m",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Se a cidade não investir em ciclovias, o trânsito vai piorar e a poluição vai aumentar.\" Qual estratégia é essa?",
+     "options": [
+      "causa e consequência",
+      "concessão",
+      "exemplificação",
+      "autoridade"
+     ],
+     "answer": "causa e consequência",
+     "accept": [],
+     "hint": "Uma coisa leva a outra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1egzqr31x6e9ie",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual expressão costuma introduzir a conclusão de um artigo de opinião?",
+     "options": [
+      "Por exemplo,",
+      "Embora",
+      "Segundo especialistas,",
+      "Portanto,"
+     ],
+     "answer": "Portanto,",
+     "accept": [],
+     "hint": "Procure a palavra que indica um fechamento do raciocínio.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2j96c87lh9pp",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Um artigo diz: \"A merenda é ótima, pois 9 de cada 10 alunos aprovam\", mas a pesquisa ouviu apenas 10 alunos. O que isso mostra?",
+     "options": [
+      "O texto não tem tese",
+      "O autor usou uma analogia",
+      "O argumento é muito forte",
+      "O dado é pouco consistente, pois a amostra é pequena"
+     ],
+     "answer": "O dado é pouco consistente, pois a amostra é pequena",
+     "accept": [],
+     "hint": "Pense em quantas pessoas foram ouvidas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2su87h7y4cqx",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destas é uma pergunta útil para avaliar a consistência de um argumento?",
+     "options": [
+      "O texto é longo?",
+      "O título do texto é bonito?",
+      "A fonte dos dados é confiável?",
+      "O autor usa palavras difíceis?"
+     ],
+     "answer": "A fonte dos dados é confiável?",
+     "accept": [],
+     "hint": "Consistência tem a ver com a qualidade das provas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rthfcza1poqx1q",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é um apelo emocional em um artigo de opinião?",
+     "options": [
+      "Comparar duas situações diferentes",
+      "Mostrar o outro lado da discussão",
+      "Citar uma pesquisa com números",
+      "Usar sentimentos do leitor, como medo ou compaixão, para convencer"
+     ],
+     "answer": "Usar sentimentos do leitor, como medo ou compaixão, para convencer",
+     "accept": [],
+     "hint": "O foco está no que o leitor sente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv7guzyfvgeho",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Leia a tese: \"A escola deveria ter mais aulas ao ar livre.\" Escreva um argumento de exemplificação que apoie essa tese.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Conte um caso concreto que mostre a vantagem de uma aula fora da sala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqkmhrj618smb",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Leia: \"Videogames fazem mal, porque todo mundo sabe disso.\" Explique por que esse argumento é inconsistente.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "A expressão \"todo mundo sabe\" apresenta alguma prova?",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "sci": {
+   "topic": "Materials: ceramics, polymers and composites",
+   "questions": [
+    {
+     "id": "rg8xuwrofjerg",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which of these materials is a ceramic?",
+     "options": [
+      "nylon",
+      "steel",
+      "porcelain",
+      "polythene"
+     ],
+     "answer": "porcelain",
+     "accept": [],
+     "hint": "Ceramics are usually made by heating clay or similar minerals.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvo2o2m13r1zdi",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which property is typical of ceramics?",
+     "options": [
+      "hard but brittle",
+      "low melting point",
+      "good electrical conductor",
+      "flexible and stretchy"
+     ],
+     "answer": "hard but brittle",
+     "accept": [],
+     "hint": "Think about what happens when you drop a china plate.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re284kscp9hbk",
+     "subject": "sci",
+     "type": "short",
+     "q": "What name is given to a material made from two or more different materials combined to give better properties?",
+     "options": [],
+     "answer": "composite",
+     "accept": [
+      "a composite",
+      "composite material",
+      "composites"
+     ],
+     "hint": "The word comes from \"composed of\" several parts.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t0169cgi0ozm",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Polymers are made of very long chain molecules. What are the small repeating units called?",
+     "options": [
+      "crystals",
+      "ions",
+      "monomers",
+      "alloys"
+     ],
+     "answer": "monomers",
+     "accept": [],
+     "hint": "\"Poly\" means many; the small units have the prefix meaning \"one\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mqowp8cxkjz",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why are the coverings of electrical cables made from polymers?",
+     "options": [
+      "They conduct electricity well",
+      "They are very heavy",
+      "They are electrical insulators",
+      "They are brittle"
+     ],
+     "answer": "They are electrical insulators",
+     "accept": [],
+     "hint": "The covering must stop current from reaching your hand.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qwdim21jpspix",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why are ceramic bricks used to line kilns and furnaces?",
+     "options": [
+      "They conduct electricity",
+      "They bend easily",
+      "They melt at low temperatures",
+      "They withstand very high temperatures"
+     ],
+     "answer": "They withstand very high temperatures",
+     "accept": [],
+     "hint": "A furnace gets extremely hot.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7xkf0u1gbd3u7",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Reinforced concrete is a composite. What is usually used to reinforce it?",
+     "options": [
+      "rubber strips",
+      "steel rods",
+      "paper sheets",
+      "glass beads"
+     ],
+     "answer": "steel rods",
+     "accept": [],
+     "hint": "It is a strong metal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qfdjhe53nf38",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Concrete is strong when squashed but weak when stretched. What does the steel in reinforced concrete improve?",
+     "options": [
+      "its colour",
+      "its transparency",
+      "its strength in tension (when stretched)",
+      "its electrical conductivity"
+     ],
+     "answer": "its strength in tension (when stretched)",
+     "accept": [],
+     "hint": "The steel helps where concrete is weak.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17wsxgb3p9d2d",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which of these is a natural composite?",
+     "options": [
+      "polythene",
+      "glass",
+      "copper",
+      "wood"
+     ],
+     "answer": "wood",
+     "accept": [],
+     "hint": "It is made of strong fibres held together in another substance, and it grows.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15cjkk79n0b7c",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why is carbon-fibre-reinforced polymer used for racing bicycle frames?",
+     "options": [
+      "It is cheap and heavy",
+      "It is strong and has a low density",
+      "It is very brittle",
+      "It conducts electricity well"
+     ],
+     "answer": "It is strong and has a low density",
+     "accept": [],
+     "hint": "A racing bike must be tough but light.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cjhqqs1u6ry11",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What happens when a thermosoftening polymer is heated?",
+     "options": [
+      "It becomes magnetic",
+      "It turns into a ceramic",
+      "It softens and can be reshaped",
+      "It sets permanently and cannot be reshaped"
+     ],
+     "answer": "It softens and can be reshaped",
+     "accept": [],
+     "hint": "The name tells you what heat does to it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sybz961782qgn",
+     "subject": "sci",
+     "type": "short",
+     "q": "Which type of polymer does NOT soften when heated, because it has cross-links between its chains: thermosetting or thermosoftening?",
+     "options": [],
+     "answer": "thermosetting",
+     "accept": [
+      "thermosetting polymer",
+      "thermosets",
+      "a thermosetting polymer"
+     ],
+     "hint": "Cross-links lock the chains so they cannot slide past each other.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7mvk8x1u2q581",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Glass is a ceramic. Which property makes it suitable for windows?",
+     "options": [
+      "It is magnetic",
+      "It is a good electrical conductor",
+      "It is transparent",
+      "It is flexible"
+     ],
+     "answer": "It is transparent",
+     "accept": [],
+     "hint": "Think about why we can see through a window.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr29w9167vobu",
+     "subject": "sci",
+     "type": "num",
+     "q": "A piece of composite material has a mass of 30 g and a volume of 20 cm³. Calculate its density in g/cm³.",
+     "options": [],
+     "answer": "1.5",
+     "accept": [],
+     "hint": "Density = mass ÷ volume.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14dqczkxpxjts",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Fibreglass is made of glass fibres set in a polymer resin. Why is it better than plain glass for a boat hull?",
+     "options": [
+      "It is much heavier",
+      "It is transparent",
+      "It dissolves in water",
+      "It is less brittle, so it does not shatter easily"
+     ],
+     "answer": "It is less brittle, so it does not shatter easily",
+     "accept": [],
+     "hint": "Combining materials can reduce the weakness of one of them.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vf08rlt1miea",
+     "subject": "sci",
+     "type": "open",
+     "q": "A company needs a material for the handle of a frying pan. Should it choose a metal or a thermosetting polymer? Explain using the properties of the material.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about heat conduction and what happens to the material near a hot pan.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "Tribuna do Recreio: a arte de convencer",
+   "premise": "Bia entra para a seção de opinião do jornal escolar e, com o colega Caio e a professora Helena, aprende a cada semana a reconhecer e avaliar uma estratégia argumentativa diferente, até escrever o próprio artigo.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A tese escondida",
+     "synopsis": "Bia entra para a seção de opinião do jornal escolar e aprende a encontrar a tese e os argumentos de um artigo sobre o celular no recreio.",
+     "text": "Na primeira reunião da seção Ponto de Vista, do jornal escolar Tribuna do Recreio, Bia chegou com um caderno novo e muita vontade de escrever. A professora Helena, que orientava o jornal, colocou uma folha sobre a mesa.\n— Antes de escrever artigos, vocês vão aprender a ler artigos — disse ela. — Este foi enviado por um aluno do 9º B. Quero saber qual é a tese.\nBia leu depressa. O texto falava de celulares, de olhos grudados na tela, de conversas que não aconteciam. Ela levantou a mão, confiante.\n— A tese é que celular faz mal.\nCaio, que estava na equipe havia um ano, sorriu sem deboche.\n— Lê de novo o primeiro parágrafo. Devagar.\nBia obedeceu. Lá estava, logo na segunda frase: \"O recreio deveria ser um tempo sem celular\". O autor não dizia que o aparelho fazia mal em qualquer situação. Ele defendia uma mudança específica, num momento específico do dia.\n— A tese é uma posição sobre o que deveria acontecer — explicou a professora. — \"Celular faz mal\" é amplo demais. O autor quer convencer a escola a mudar uma regra.\nDepois, Helena pediu que eles procurassem os argumentos, isto é, as razões que o autor oferecia para o leitor concordar. Caio sublinhou um trecho com caneta verde. O autor contava que, numa quinta-feira de setembro, a internet da escola caiu durante o intervalo. Em cinco minutos, a quadra se encheu: uns jogavam queimada, outros conversavam na escada, e dois alunos do 6º ano ensinavam um jogo de cartas para quem quisesse aprender.\n— Isso é um exemplo — disse Caio. — Ele mostra um caso concreto para provar que, sem o celular, o recreio fica mais animado.\n— Mas é um dia só — observou Bia.\nA professora ergueu as sobrancelhas, satisfeita.\n— Ótima observação. Um exemplo dá vida ao argumento, mas um único caso nem sempre basta. Um bom leitor pergunta: esse exemplo representa o que acontece normalmente?\nBia anotou tudo. Achou curioso que o artigo tivesse ainda outro detalhe: o próprio autor contava que tinha feito um amigo novo naquela quinta-feira, alguém que via todos os dias e com quem nunca tinha conversado. Era um detalhe pequeno, mas tocava o leitor.\nNo fim da reunião, Helena entregou a cada um uma ficha em branco. Bia escreveu duas linhas, que depois copiou no quadro da sala do jornal:\n\"Tese: aquilo que o autor quer que eu acredite ou faça. Argumento: o motivo que ele me dá para acreditar.\"\nCaio leu e acrescentou embaixo, com a letra torta de sempre: \"Leitor crítico: aquele que pergunta se o motivo é bom\".\nQuando saíram, a quadra estava cheia de alunos sentados, cada um olhando para a própria tela. Bia sorriu. Agora, pelo menos, ela sabia ler aquela cena de outro jeito.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como se chama a seção do jornal escolar em que Bia começa a trabalhar?",
+       "options": [
+        "Tribuna do Recreio",
+        "Cartas do Leitor",
+        "Quadra Aberta",
+        "Ponto de Vista"
+       ],
+       "answer": "Ponto de Vista",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da professora que orienta o jornal?",
+       "options": [],
+       "answer": "Helena",
+       "accept": [
+        "professora Helena"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi a primeira resposta de Bia sobre a tese do artigo?",
+       "options": [
+        "Que o recreio deveria ser mais longo",
+        "Que a quadra precisa de reforma",
+        "Que celular faz mal",
+        "Que a internet da escola é lenta"
+       ],
+       "answer": "Que celular faz mal",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a tese do artigo do aluno do 9º B?",
+       "options": [
+        "A escola deveria melhorar a internet",
+        "Os alunos do 6º ano deveriam ensinar jogos",
+        "Celulares devem ser proibidos em todo lugar",
+        "O recreio deveria ser um tempo sem celular"
+       ],
+       "answer": "O recreio deveria ser um tempo sem celular",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu na quinta-feira de setembro citada no artigo?",
+       "options": [
+        "O recreio foi cancelado",
+        "A quadra foi fechada para obras",
+        "Os celulares foram recolhidos",
+        "A internet da escola caiu durante o intervalo"
+       ],
+       "answer": "A internet da escola caiu durante o intervalo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia acha que o exemplo da quinta-feira pode não bastar?",
+       "options": [
+        "Porque é o caso de um dia só",
+        "Porque fala de alunos do 6º ano",
+        "Porque o autor inventou a história",
+        "Porque não aparece no primeiro parágrafo"
+       ],
+       "answer": "Porque é o caso de um dia só",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase que Caio acrescenta no quadro sugere sobre um leitor crítico?",
+       "options": [
+        "Ele só escreve e não lê",
+        "Ele avalia se os argumentos são bons",
+        "Ele concorda com todo artigo que lê",
+        "Ele lê apenas o primeiro parágrafo"
+       ],
+       "answer": "Ele avalia se os argumentos são bons",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o autor do artigo contou que fez um amigo novo naquela quinta-feira?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A especialista certa",
+     "synopsis": "A equipe compara dois artigos sobre começar as aulas mais tarde e descobre a diferença entre uma autoridade famosa e uma autoridade no assunto.",
+     "text": "Na semana seguinte, a professora Helena trouxe dois artigos sobre o mesmo assunto: a ideia de as aulas começarem mais tarde, às oito e meia em vez de sete e meia.\n— Os dois defendem a mesma tese — avisou ela. — Mas usam estratégias diferentes. Quero saber qual convence melhor e por quê.\nO primeiro texto, escrito por um pai de aluno, terminava assim: \"Até o goleiro Tavinho Brasa, campeão estadual, já disse numa entrevista que adora dormir até tarde. Se um campeão dorme mais, nossos filhos também deveriam.\"\nCaio riu alto.\n— O goleiro é ótimo debaixo das traves, mas o que ele sabe sobre o sono de adolescentes?\n— Pois é — disse Bia. — Ele é famoso, mas não é especialista no assunto. O artigo usa o nome dele só porque as pessoas o admiram.\nHelena explicou que aquilo era um argumento de autoridade mal usado. Citar alguém só faz sentido quando a pessoa entende do tema discutido. Fama não é o mesmo que conhecimento.\nO segundo texto tinha sido escrito por uma ex-aluna que agora estudava enfermagem. Ela citava uma médica especialista em sono que trabalhava num hospital universitário. Segundo a médica, durante a adolescência o relógio biológico muda, e o corpo tende a sentir sono mais tarde à noite. Por isso, acordar muito cedo faria muitos jovens chegarem cansados à primeira aula.\n— Esse é um argumento de autoridade bem usado — disse Bia. — A médica estuda exatamente esse assunto.\n— Mas espera — interrompeu Caio, relendo a página. — Ela não diz que todo mundo tem que entrar às oito e meia. Ela fala do sono. Quem escolheu o horário foi a autora do artigo.\nA professora bateu palmas de leve.\n— Excelente. A autoridade apoia uma parte do raciocínio, não necessariamente a conclusão inteira. Um leitor crítico separa o que o especialista disse do que o autor concluiu a partir disso.\nBia ficou pensando. Ela também chegava sonolenta às segundas e nunca tinha imaginado que isso tivesse uma explicação científica. Ao mesmo tempo, lembrou que muitos pais saíam cedo para trabalhar e deixavam os filhos na escola no caminho.\n— Um bom artigo teria que responder a isso também — disse ela. — E quem trabalha cedo?\n— Anote essa pergunta — disse Helena. — Vamos voltar a ela quando estudarmos contra-argumentos.\nAntes de ir embora, a equipe montou uma pequena lista para pendurar ao lado do quadro. Para avaliar uma autoridade, três perguntas: a pessoa é especialista no tema? A fonte é identificada e confiável? O que ela disse de fato apoia a tese do autor?\nCaio desenhou uma luva de goleiro ao lado da primeira pergunta.\n— Pra gente nunca esquecer — disse ele.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o tema dos dois artigos que a professora traz?",
+       "options": [
+        "Mudar o cardápio da cantina",
+        "Criar um time de futebol",
+        "Começar as aulas mais tarde",
+        "Proibir o celular no recreio"
+       ],
+       "answer": "Começar as aulas mais tarde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, a que horas os artigos propõem que as aulas comecem?",
+       "options": [],
+       "answer": "às oito e meia",
+       "accept": [
+        "oito e meia",
+        "8h30",
+        "8:30",
+        "às 8h30",
+        "8 e meia"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem é a pessoa famosa citada no primeiro artigo?",
+       "options": [
+        "Uma médica especialista em sono",
+        "Uma estudante de enfermagem",
+        "Um diretor de escola",
+        "Um goleiro campeão estadual"
+       ],
+       "answer": "Um goleiro campeão estadual",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a citação do goleiro é um argumento de autoridade mal usado?",
+       "options": [
+        "Porque o artigo é curto",
+        "Porque ele nunca deu entrevistas",
+        "Porque ele não é especialista em sono de adolescentes",
+        "Porque ele perdeu o campeonato"
+       ],
+       "answer": "Porque ele não é especialista em sono de adolescentes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a médica, o que acontece com o relógio biológico na adolescência?",
+       "options": [
+        "O corpo tende a sentir sono mais tarde à noite",
+        "O sono passa a vir mais cedo",
+        "O relógio biológico para de funcionar",
+        "O corpo passa a precisar de menos sono"
+       ],
+       "answer": "O corpo tende a sentir sono mais tarde à noite",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Caio percebe sobre a citação da médica?",
+       "options": [
+        "Ela é a autora do artigo",
+        "Ela fala do sono, mas não escolheu o horário proposto",
+        "Ela não é especialista em sono",
+        "Ela é contra mudar o horário"
+       ],
+       "answer": "Ela fala do sono, mas não escolheu o horário proposto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que pergunta de Bia mostra que ela está pensando no outro lado da questão?",
+       "options": [
+        "Quantas aulas temos por dia?",
+        "Quem é o goleiro?",
+        "Onde fica o hospital?",
+        "E quem trabalha cedo?"
+       ],
+       "answer": "E quem trabalha cedo?",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que algumas pessoas citam famosos em textos de opinião, mesmo quando eles não são especialistas no assunto?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Nove em cada dez",
+     "synopsis": "Um artigo garante que a cantina é perfeita com base numa pesquisa, e a equipe descobre que os números precisam ser examinados com cuidado.",
+     "text": "O artigo daquela semana tinha um título que chamava atenção: \"A cantina já é perfeita: 90% dos alunos aprovam\". O autor, um aluno do 8º ano, defendia que o cardápio não precisava mudar. Para provar, apresentava uma pesquisa feita por ele mesmo: nove de cada dez entrevistados disseram que a comida estava ótima.\n— Números convencem muito — comentou a professora Helena. — Parecem objetivos, exatos, indiscutíveis. Por isso mesmo, precisamos olhar para eles com cuidado.\nBia leu o artigo duas vezes e não encontrou nada de errado. Caio, porém, foi direto ao rodapé, onde o autor explicava como tinha feito a pesquisa.\n— Achei! — disse ele, apontando com o lápis. — \"Entrevistei dez colegas na fila da cantina, na sexta-feira, dia de pastel.\"\nBia arregalou os olhos.\n— Dez pessoas? A escola tem quase oitocentos alunos!\n— E não é só isso — completou Caio. — Ele perguntou para quem estava na fila. Quem está na fila já escolheu comprar. Quem não gosta da cantina traz lanche de casa e nem passou por ali.\n— E sexta é dia de pastel — riu Bia. — Até eu aprovaria.\nA professora escreveu no quadro três palavras: quantidade, escolha, momento.\n— Quando um argumento usa dados, vale perguntar: quantas pessoas foram ouvidas? Como elas foram escolhidas? Quando a pesquisa foi feita? Se as respostas forem fracas, a porcentagem perde força, por mais bonita que pareça.\nBia pensou um pouco e levantou outra questão.\n— E se o autor não fez por mal? Talvez ele só não soubesse fazer uma pesquisa melhor.\n— Pode ser — respondeu Helena. — Avaliar a consistência de um argumento não é acusar o autor de mentir. É verificar se as provas sustentam a conclusão. Aqui, a conclusão é enorme, \"a cantina já é perfeita\", e a prova é pequena.\nCaio sugeriu que o jornal fizesse sua própria pesquisa. Durante uma semana, a equipe distribuiu um formulário curto em todas as turmas, em dias diferentes, com perguntas sobre preço, variedade e opções saudáveis. Responderam trezentos e doze alunos.\nO resultado foi bem mais variado. Muitos elogiavam o pastel e o atendimento, mas mais da metade gostaria de ver mais frutas no cardápio. A cantina não era ruim, mas também não era perfeita.\nNa edição seguinte, a Tribuna do Recreio publicou a nova pesquisa ao lado do artigo original, com um pequeno quadro explicando como cada uma tinha sido feita. O autor do 8º ano procurou a equipe no corredor. Bia ficou nervosa, achando que ele estaria bravo.\n— Eu não tinha pensado na fila — disse ele, coçando a cabeça. — Da próxima vez, posso pesquisar com vocês?\nCaio abriu um sorriso e já foi procurando uma prancheta.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o título do artigo analisado?",
+       "options": [
+        "A cantina já é perfeita: 90% dos alunos aprovam",
+        "Mais frutas na escola",
+        "Pastel todos os dias",
+        "A cantina precisa mudar"
+       ],
+       "answer": "A cantina já é perfeita: 90% dos alunos aprovam",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos colegas o autor do artigo entrevistou?",
+       "options": [],
+       "answer": "dez",
+       "accept": [
+        "10"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o autor fez sua pesquisa?",
+       "options": [
+        "Na fila da cantina",
+        "Na quadra",
+        "Na biblioteca",
+        "Na sala de aula"
+       ],
+       "answer": "Na fila da cantina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que entrevistar apenas quem estava na fila deixa a pesquisa fraca?",
+       "options": [
+        "Quem não gosta da cantina provavelmente não estava ali",
+        "Os alunos estavam com pressa",
+        "O pastel tinha acabado",
+        "A fila era muito longa"
+       ],
+       "answer": "Quem não gosta da cantina provavelmente não estava ali",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais são as três palavras que a professora escreve no quadro?",
+       "options": [
+        "quantidade, escolha, momento",
+        "tese, argumento, conclusão",
+        "preço, variedade, saúde",
+        "fonte, autor, data"
+       ],
+       "answer": "quantidade, escolha, momento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos alunos responderam à pesquisa feita pelo jornal?",
+       "options": [],
+       "answer": "trezentos e doze",
+       "accept": [
+        "312"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, avaliar a consistência de um argumento significa:",
+       "options": [
+        "Verificar se as provas sustentam a conclusão",
+        "Concordar com os números",
+        "Acusar o autor de mentir",
+        "Contar as palavras do texto"
+       ],
+       "answer": "Verificar se as provas sustentam a conclusão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o autor do 8º ano quis pesquisar junto com a equipe depois de ver a nova pesquisa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: Todo mundo sabe",
+     "synopsis": "Uma carta afirma que os jovens não leem mais, e Bia vai atrás de dados para responder sem cometer o mesmo erro do autor.",
+     "text": "— \"Os jovens de hoje não leem mais. Todo mundo sabe disso\" — leu Caio em voz alta, imitando a voz de um apresentador de telejornal.\nO artigo tinha sido enviado por um morador do bairro para a seção de cartas da comunidade. Defendia que a escola deveria trocar parte do horário da biblioteca por aulas extras de reforço, já que, segundo ele, os livros ficavam parados nas estantes.\n— \"Todo mundo sabe\" é uma prova? — perguntou a professora Helena.\n— Não — disse Bia. — É como se ele dissesse: acredite porque é óbvio. Mas não mostra nada.\nHelena explicou que expressões como \"todo mundo sabe\", \"é claro que\" e \"ninguém duvida\" muitas vezes tentam fazer o leitor aceitar uma ideia sem pensar. Elas apelam para o senso comum, aquilo que muita gente repete, mas que nem sempre foi verificado.\nO artigo tinha mais um argumento. O autor contava que seu sobrinho, de quinze anos, passava as tardes jogando e nunca tinha terminado um livro. Daí ele concluía que toda a geração era igual.\n— Isso é generalização apressada — disse Caio. — Ele pega um caso e transforma em regra para milhões de pessoas.\n— Meu irmão também não lê muito — admitiu Bia. — Mas minha melhor amiga lê um livro por semana. Se eu usasse só ela como exemplo, ia dizer que os jovens leem demais.\n— Exatamente — disse a professora. — Um caso pode ilustrar, mas não prova uma regra geral.\nBia teve uma ideia. No intervalo, foi até a biblioteca e conversou com o bibliotecário, seu Ernesto, que guardava tudo em planilhas organizadas. Ele mostrou os registros de empréstimos. No primeiro semestre do ano anterior, foram setecentos e oitenta livros emprestados. No primeiro semestre deste ano, novecentos e cinquenta.\n— Aumentou! — exclamou Bia.\n— Desde que criamos o clube de leitura das quartas — explicou seu Ernesto. — E as histórias em quadrinhos também saem muito.\nDe volta à sala do jornal, a equipe discutiu como responder. Caio queria escrever \"o autor está errado\" em letras enormes. Bia achou melhor outro caminho.\n— Se a gente só disser que ele está errado, vamos fazer igual a ele: afirmar sem provar. Vamos mostrar os números e dizer de onde vieram.\nA resposta publicada era curta e educada. Reconhecia que a preocupação com a leitura era importante, apresentava os dados da biblioteca, explicava que eles valiam para aquela escola e terminava com um convite: que o autor visitasse o clube de leitura numa quarta-feira.\nDuas semanas depois, seu Ernesto apareceu na sala do jornal com um recado. Um senhor tinha ido ao clube, sentado no fundo e ouvido tudo em silêncio. Na saída, levou emprestado um livro de contos.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem enviou o artigo analisado?",
+       "options": [
+        "A professora Helena",
+        "O bibliotecário",
+        "Um morador do bairro",
+        "Um aluno do 8º ano"
+       ],
+       "answer": "Um morador do bairro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o autor do artigo propõe?",
+       "options": [
+        "Fechar a escola às quartas",
+        "Trocar parte do horário da biblioteca por aulas de reforço",
+        "Comprar mais livros para a biblioteca",
+        "Criar um clube de leitura"
+       ],
+       "answer": "Trocar parte do horário da biblioteca por aulas de reforço",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, expressões como \"todo mundo sabe\" tentam:",
+       "options": [
+        "Fazer o leitor aceitar uma ideia sem pensar",
+        "Apresentar dados de pesquisa",
+        "Citar um especialista",
+        "Mostrar o outro lado da discussão"
+       ],
+       "answer": "Fazer o leitor aceitar uma ideia sem pensar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que caso o autor usa para concluir que os jovens não leem?",
+       "options": [
+        "O do seu sobrinho de quinze anos",
+        "O do seu próprio filho",
+        "O de um aluno do 9º ano",
+        "O da sua vizinha"
+       ],
+       "answer": "O do seu sobrinho de quinze anos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como Caio chama o erro de transformar um único caso em regra geral?",
+       "options": [],
+       "answer": "generalização apressada",
+       "accept": [
+        "generalizacao apressada",
+        "uma generalização apressada"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que os registros da biblioteca mostraram?",
+       "options": [
+        "Ninguém pegou livros",
+        "Só professores pegaram livros",
+        "Os empréstimos diminuíram",
+        "Os empréstimos aumentaram"
+       ],
+       "answer": "Os empréstimos aumentaram",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia não quis escrever apenas \"o autor está errado\"?",
+       "options": [
+        "Porque a professora proibiu",
+        "Porque seria afirmar sem provar, como o autor fez",
+        "Porque tinha medo do autor",
+        "Porque não havia espaço no jornal"
+       ],
+       "answer": "Porque seria afirmar sem provar, como o autor fez",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o senhor levou um livro emprestado depois de visitar o clube de leitura?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O outro lado da quadra",
+     "synopsis": "Dois artigos opostos sobre o uniforme ensinam à equipe como a concessão e a refutação tornam um texto mais justo e convincente.",
+     "text": "O assunto do mês era o uniforme. A direção estudava deixar os alunos do 9º ano usarem roupa livre às sextas-feiras, e a Tribuna do Recreio recebeu dois artigos com posições opostas.\nO primeiro, a favor da roupa livre, tinha frases fortes: \"O uniforme é uma prisão de tecido. Só quem não liga para a liberdade pode defendê-lo.\" Bia achou o texto empolgante na primeira leitura. Na segunda, percebeu um problema.\n— Ele não fala de nenhum motivo de quem defende o uniforme — disse ela. — Só diz que essas pessoas não ligam para a liberdade.\n— E isso é verdade? — perguntou a professora Helena.\n— Claro que não. Muita gente defende o uniforme por outros motivos. Ele desenhou o outro lado de um jeito ruim, só para ficar fácil de derrubar.\nHelena explicou que, quando um autor ignora ou distorce o pensamento de quem discorda, o texto fica mais fraco, não mais forte. O leitor que pensa diferente sente que não foi ouvido e para de ler.\nO segundo artigo, a favor de manter o uniforme todos os dias, era de uma aluna do 9º A chamada Marina. O tom era bem diferente. Logo no segundo parágrafo, ela escrevia: \"É verdade que o uniforme limita a forma como cada um se expressa pelas roupas, e entendo quem sente falta disso.\"\n— Olha só — disse Caio. — Ela concorda com o outro lado?\n— Em parte — respondeu a professora. — Isso se chama concessão. Ela reconhece o que há de razoável na posição contrária. Agora leia a frase seguinte.\nCaio leu: \"No entanto, o uniforme evita a competição por roupas de marca, que pode deixar alguns colegas constrangidos, e facilita a identificação dos alunos em passeios fora da escola.\"\n— Aí está a refutação — disse Helena. — Primeiro ela apresenta o contra-argumento, depois mostra por que, na opinião dela, a sua tese ainda é melhor. Palavras como \"no entanto\", \"mas\", \"porém\" e \"embora\" costumam marcar esse movimento.\nBia comparou os dois textos lado a lado. O primeiro tinha mais energia, mas o segundo parecia mais justo e, por isso, mais convincente, mesmo para quem pensava diferente.\n— Mas isso não quer dizer que a tese da Marina esteja certa — ponderou ela. — Só quer dizer que ela argumentou melhor.\nA professora sorriu.\n— Essa talvez seja a lição mais difícil de todas: separar o quanto gostamos de uma opinião do quanto ela foi bem defendida.\nA equipe decidiu publicar os dois artigos, mas pediu ao primeiro autor que reescrevesse o texto, respondendo a pelo menos um argumento real de quem defendia o uniforme. Ele aceitou o desafio. A nova versão perdeu a frase da \"prisão de tecido\", mas ganhou um parágrafo sobre um meio-termo: roupa livre às sextas, com regras simples combinadas pela turma.\nNa semana da publicação, Bia ouviu dois colegas discutindo o assunto na quadra. Discordavam, mas cada um repetia, antes de responder, o argumento do outro. Ela anotou a cena no caderno.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o assunto dos dois artigos?",
+       "options": [
+        "O horário das aulas",
+        "A biblioteca",
+        "O uso de uniforme",
+        "O cardápio da cantina"
+       ],
+       "answer": "O uso de uniforme",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o primeiro artigo diz sobre quem defende o uniforme?",
+       "options": [
+        "Que essas pessoas têm bons motivos",
+        "Que essas pessoas querem roupa livre",
+        "Que essas pessoas não ligam para a liberdade",
+        "Que essas pessoas são especialistas"
+       ],
+       "answer": "Que essas pessoas não ligam para a liberdade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da aluna do 9º A que escreveu o segundo artigo?",
+       "options": [],
+       "answer": "Marina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como se chama a estratégia em que Marina reconhece o que há de razoável na posição contrária?",
+       "options": [
+        "analogia",
+        "concessão",
+        "generalização",
+        "apelo emocional"
+       ],
+       "answer": "concessão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que motivos Marina dá para manter o uniforme?",
+       "options": [
+        "Os professores preferem e é uma tradição",
+        "Protege do frio e da chuva",
+        "Evita a competição por roupas de marca e facilita a identificação em passeios",
+        "É mais barato e mais bonito"
+       ],
+       "answer": "Evita a competição por roupas de marca e facilita a identificação em passeios",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, por que distorcer a opinião contrária enfraquece um texto?",
+       "options": [
+        "O texto fica curto demais",
+        "O título perde a força",
+        "Os dados ficam errados",
+        "O leitor que pensa diferente sente que não foi ouvido"
+       ],
+       "answer": "O leitor que pensa diferente sente que não foi ouvido",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Bia quer dizer quando afirma que Marina argumentou melhor, mas isso não prova que ela esteja certa?",
+       "options": [
+        "O primeiro artigo estava certo",
+        "Um texto bem argumentado não garante que a tese seja verdadeira",
+        "Marina mentiu no artigo",
+        "Os dois textos eram iguais"
+       ],
+       "answer": "Um texto bem argumentado não garante que a tese seja verdadeira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Bia anotou a cena dos dois colegas discutindo na quadra?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Escola sem horta",
+     "synopsis": "Um artigo do 7º ano propõe uma horta na escola, e a equipe analisa sua analogia, sua cadeia de causas e consequências e uma foto emocionante.",
+     "text": "O artigo começava com uma frase que todos acharam bonita: \"Uma escola sem horta é como uma cozinha sem tempero.\" Ele tinha sido escrito por um grupo do 7º ano que queria transformar um canto abandonado do pátio em uma horta.\n— Que estratégia é essa logo no começo? — perguntou a professora Helena.\n— Uma comparação — respondeu Bia. — Ou melhor, uma analogia. Ela aproxima duas coisas diferentes para mostrar uma ideia.\n— E ela prova alguma coisa?\nBia hesitou. Caio respondeu por ela.\n— Não prova, mas ajuda a imaginar. A cozinha funciona sem tempero, só fica sem graça. Então a analogia diz que a escola funciona sem horta, mas perde alguma coisa.\nHelena explicou que analogias são ótimas para tornar uma ideia clara e fácil de lembrar, mas precisam ser acompanhadas de razões. Uma comparação bonita, sozinha, não sustenta uma tese.\nO artigo, felizmente, tinha mais coisas. No terceiro parágrafo, os autores montavam uma sequência: se a escola tivesse uma horta, os alunos poderiam acompanhar o crescimento das plantas nas aulas de Ciências; com isso, entenderiam melhor conceitos como a fotossíntese; e, ao colher o que plantaram, talvez tivessem mais vontade de experimentar verduras na merenda.\n— Isso é causa e consequência — disse Caio. — Uma coisa leva a outra, que leva a outra.\n— E é consistente? — perguntou a professora.\nOs dois pensaram juntos. A primeira ligação parecia bem forte: com uma horta, haveria plantas para observar. A segunda também fazia sentido. A terceira era mais incerta.\n— O \"talvez\" mostra que eles sabem disso — notou Bia. — Eles não prometem que todo mundo vai começar a comer alface. Isso deixa o argumento mais honesto.\nHavia ainda uma foto na página: um vaso seco com uma plantinha caída e a legenda \"É assim que tratamos a natureza?\".\n— Isso aqui mexe com a gente — disse Caio. — É um apelo emocional.\n— Não é proibido emocionar o leitor — explicou Helena. — O problema é quando a emoção substitui as razões. Neste artigo, ela aparece junto com outros argumentos. Mas vale perguntar: a foto tem relação com a proposta? O vaso estava na escola?\nNinguém sabia. Bia foi perguntar ao grupo do 7º ano. A foto era de um vaso da casa de um dos autores. A equipe sugeriu trocá-la por uma imagem do canto abandonado do pátio, que era de fato o lugar da futura horta.\n— Fica até mais forte — admitiu uma das autoras. — Todo mundo vai reconhecer o lugar.\nO artigo foi publicado com a nova foto. Um mês depois, a direção liberou o canto do pátio e duas famílias doaram mudas. Quando as primeiras folhas de manjericão apareceram, Caio tirou uma foto e colou no mural do jornal, ao lado da frase sobre a cozinha sem tempero.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem escreveu o artigo sobre a horta?",
+       "options": [
+        "A professora Helena",
+        "Um morador do bairro",
+        "Um grupo do 7º ano",
+        "Caio e Bia"
+       ],
+       "answer": "Um grupo do 7º ano",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com o que o artigo compara uma escola sem horta?",
+       "options": [
+        "Uma cozinha sem tempero",
+        "Um campo sem bola",
+        "Uma sala sem livros",
+        "Um jardim sem flores"
+       ],
+       "answer": "Uma cozinha sem tempero",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, para que as analogias são ótimas?",
+       "options": [
+        "Para provar uma tese sozinhas",
+        "Para apresentar números",
+        "Para citar especialistas",
+        "Para tornar uma ideia clara e fácil de lembrar"
+       ],
+       "answer": "Para tornar uma ideia clara e fácil de lembrar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a primeira consequência de ter uma horta, na sequência apresentada pelo artigo?",
+       "options": [
+        "Os alunos poderiam acompanhar o crescimento das plantas nas aulas de Ciências",
+        "A merenda ficaria mais barata",
+        "O pátio ficaria maior",
+        "Os alunos comeriam mais verduras"
+       ],
+       "answer": "Os alunos poderiam acompanhar o crescimento das plantas nas aulas de Ciências",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que palavra do artigo mostra que os autores não prometem que todos vão comer mais verduras?",
+       "options": [],
+       "answer": "talvez",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual problema a equipe descobre sobre a foto do vaso seco?",
+       "options": [
+        "A foto era de outra horta",
+        "O vaso era da professora",
+        "A foto não era da escola",
+        "A foto estava desfocada"
+       ],
+       "answer": "A foto não era da escola",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, quando o apelo emocional se torna um problema?",
+       "options": [
+        "Quando a emoção substitui as razões",
+        "Quando o leitor concorda",
+        "Sempre que aparece uma foto",
+        "Quando o texto tem título"
+       ],
+       "answer": "Quando a emoção substitui as razões",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a foto do canto abandonado do pátio deixou o artigo mais convincente?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O ponto de vista de Bia",
+     "synopsis": "Bia escreve seu próprio artigo de opinião, usando tudo o que aprendeu, para defender que a biblioteca abra no recreio.",
+     "text": "No último encontro do bimestre, a professora Helena fez um anúncio.\n— Vocês passaram semanas lendo os artigos dos outros. Agora é a vez de vocês. Cada um vai escrever um artigo de opinião para a próxima edição.\nBia já sabia o tema. Desde a visita à biblioteca, não parava de pensar numa coisa: a biblioteca ficava fechada durante o recreio, exatamente quando muitos alunos teriam tempo livre para ir até lá. Sua tese seria simples e clara: a biblioteca deveria abrir no recreio.\nEla começou pelo quadro da sala do jornal, onde estavam todas as anotações do bimestre, e leu cada uma como se fosse uma lista de conferência.\nPrimeiro, a tese logo no início, sem rodeios. Depois, os argumentos. Para não depender de um único caso, Bia combinou estratégias. Usou os números do seu Ernesto, dizendo de onde vinham e de que período eram. Contou um exemplo: no dia em que a biblioteca abriu excepcionalmente no recreio, durante a feira de livros, a sala ficou cheia. Mas, lembrando da quinta-feira sem internet, acrescentou que aquele tinha sido um dia especial e que um teste de um mês ajudaria a saber se o interesse continuaria.\nPara o argumento de autoridade, entrevistou a coordenadora pedagógica da escola, que acompanhava o clube de leitura e conhecia bem o assunto. Citou apenas o que ela tinha dito de verdade, sem exagerar.\nDepois veio a parte mais difícil. Bia chamou Caio.\n— Preciso que você seja contra a minha ideia.\nCaio estalou os dedos, animado.\n— Quem vai cuidar da biblioteca no recreio? O seu Ernesto também precisa de intervalo. E se ficar barulhento lá dentro?\nBia anotou as duas objeções. Eram boas, e ela não podia fingir que não existiam. No quarto parágrafo, escreveu: \"É verdade que o bibliotecário também precisa descansar e que a biblioteca deve continuar sendo um lugar de silêncio. No entanto, alunos voluntários do clube de leitura poderiam se revezar como monitores, e o espaço poderia abrir em dias alternados, com regras combinadas.\"\nPor fim, a conclusão. Bia escreveu uma frase de efeito e depois apagou. Parecia mais um slogan do que uma conclusão. Preferiu retomar a tese e fazer uma proposta concreta: um teste de um mês, com avaliação no final.\nEla entregou o texto à professora com as mãos um pouco frias. Helena leu em silêncio, fez duas marcas na margem e devolveu.\n— Uma marca é para uma vírgula — disse ela. — A outra é para esta frase: \"Todos os alunos querem a biblioteca aberta.\" Todos?\nBia riu de si mesma e trocou \"todos os alunos\" por \"muitos alunos com quem conversei\".\nO artigo saiu na edição de novembro, na seção Ponto de Vista. Na semana seguinte, a direção anunciou um teste: a biblioteca abriria no recreio às terças e quintas, com monitores voluntários.\nNa primeira terça-feira, Bia passou pela porta e viu Caio lá dentro, com um crachá de monitor e um livro aberto. Ele levantou os olhos e apontou para uma placa recém-pendurada: \"Silêncio. Aqui se lê — e se pensa.\"",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a tese do artigo de Bia?",
+       "options": [
+        "O recreio deveria ser mais longo",
+        "A biblioteca precisa de mais livros",
+        "A biblioteca deveria abrir no recreio",
+        "O clube de leitura deveria acabar"
+       ],
+       "answer": "A biblioteca deveria abrir no recreio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Bia usou como lista de conferência para escrever?",
+       "options": [
+        "As provas do bimestre",
+        "Um artigo de outro jornal",
+        "Um livro de gramática",
+        "As anotações do quadro da sala do jornal"
+       ],
+       "answer": "As anotações do quadro da sala do jornal",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem Bia entrevistou para o argumento de autoridade?",
+       "options": [
+        "Um aluno do 7º ano",
+        "Um goleiro famoso",
+        "O diretor de outra escola",
+        "A coordenadora pedagógica da escola"
+       ],
+       "answer": "A coordenadora pedagógica da escola",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia pediu a Caio que fosse contra a ideia dela?",
+       "options": [
+        "Para que ele escrevesse no lugar dela",
+        "Para ganhar uma aposta",
+        "Para desistir do artigo",
+        "Para conhecer as objeções e respondê-las no texto"
+       ],
+       "answer": "Para conhecer as objeções e respondê-las no texto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que solução Bia propõe para que o bibliotecário possa descansar?",
+       "options": [
+        "Contratar um segurança",
+        "Abrir só nas férias",
+        "Alunos voluntários se revezando como monitores",
+        "Fechar a biblioteca à tarde"
+       ],
+       "answer": "Alunos voluntários se revezando como monitores",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia apagou a frase de efeito da conclusão?",
+       "options": [
+        "Era longa demais",
+        "A professora mandou",
+        "Parecia mais um slogan do que uma conclusão",
+        "Tinha erros de ortografia"
+       ],
+       "answer": "Parecia mais um slogan do que uma conclusão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a professora marcou a frase \"Todos os alunos querem a biblioteca aberta\"?",
+       "options": [
+        "Porque tinha uma vírgula errada",
+        "Porque era uma generalização sem prova",
+        "Porque era uma analogia",
+        "Porque citava uma autoridade"
+       ],
+       "answer": "Porque era uma generalização sem prova",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a direção decidiu fazer um teste, em vez de abrir a biblioteca todos os dias no recreio?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
