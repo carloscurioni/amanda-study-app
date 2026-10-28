@@ -1,0 +1,801 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y9",
+ "academic_week": 12,
+ "subjects": {
+  "bss": {
+   "topic": "Segundo Reinado: café e economia",
+   "questions": [
+    {
+     "id": "rhrjb6h1rg0vhg",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quem governou o Brasil durante o Segundo Reinado?",
+     "options": [
+      "D. Pedro II",
+      "D. Pedro I",
+      "D. João VI",
+      "Deodoro da Fonseca"
+     ],
+     "answer": "D. Pedro II",
+     "accept": [],
+     "hint": "Foi o último imperador do Brasil.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcp6e551ibgwa5",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual produto foi o principal item de exportação do Brasil no Segundo Reinado?",
+     "options": [
+      "Café",
+      "Açúcar",
+      "Ouro",
+      "Borracha"
+     ],
+     "answer": "Café",
+     "accept": [],
+     "hint": "É uma bebida muito consumida até hoje.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz99ypx2ytpwa",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em que região o café se expandiu primeiro, no início do Segundo Reinado?",
+     "options": [
+      "Vale do Paraíba",
+      "Oeste Paulista",
+      "Amazônia",
+      "Sertão nordestino"
+     ],
+     "answer": "Vale do Paraíba",
+     "accept": [],
+     "hint": "Fica entre o Rio de Janeiro e São Paulo, ao longo de um rio.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr53wx61ved6g3",
+     "subject": "bss",
+     "type": "short",
+     "q": "Qual era a principal mão de obra nas fazendas de café do Vale do Paraíba?",
+     "options": [],
+     "answer": "escravizada",
+     "accept": [
+      "mão de obra escravizada",
+      "escravos",
+      "pessoas escravizadas",
+      "trabalho escravo"
+     ],
+     "hint": "Pense em quem trabalhava à força nas fazendas antes de 1888.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qohv0p906nzy",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que a produção de café no Vale do Paraíba entrou em declínio?",
+     "options": [
+      "Esgotamento do solo e falta de novas terras",
+      "Proibição do café pelo imperador",
+      "Excesso de chuvas na Europa",
+      "Fim do comércio com outros países"
+     ],
+     "answer": "Esgotamento do solo e falta de novas terras",
+     "accept": [],
+     "hint": "Pense no que acontece com a terra depois de muitos anos de cultivo sem cuidado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12zqt011xv0yci",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Como eram chamados os grandes fazendeiros de café do Vale do Paraíba, que recebiam títulos de nobreza?",
+     "options": [
+      "Barões do café",
+      "Bandeirantes",
+      "Senhores de engenho",
+      "Coronéis da borracha"
+     ],
+     "answer": "Barões do café",
+     "accept": [],
+     "hint": "O título de nobreza aparece no próprio nome.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o0nvv8uf32tg",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Que tipo de solo favoreceu o café no Oeste Paulista?",
+     "options": [
+      "Terra roxa",
+      "Solo arenoso",
+      "Massapê",
+      "Solo congelado"
+     ],
+     "answer": "Terra roxa",
+     "accept": [],
+     "hint": "O nome lembra uma cor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vl5oc51owdwbz",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Que mão de obra os cafeicultores do Oeste Paulista passaram a usar cada vez mais no fim do século XIX?",
+     "options": [
+      "Imigrantes europeus assalariados",
+      "Apenas indígenas",
+      "Soldados do exército",
+      "Trabalhadores chineses escravizados"
+     ],
+     "answer": "Imigrantes europeus assalariados",
+     "accept": [],
+     "hint": "Muitos vieram da Itália.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1024dnu6riwzq",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual lei de 1850 proibiu o tráfico de africanos escravizados para o Brasil?",
+     "options": [
+      "Lei Eusébio de Queirós",
+      "Lei Áurea",
+      "Lei do Ventre Livre",
+      "Lei dos Sexagenários"
+     ],
+     "answer": "Lei Eusébio de Queirós",
+     "accept": [],
+     "hint": "Leva o nome de um ministro da época.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzpuslsgseyee",
+     "subject": "bss",
+     "type": "short",
+     "q": "Qual meio de transporte foi construído para levar o café do interior até o porto de Santos?",
+     "options": [],
+     "answer": "ferrovia",
+     "accept": [
+      "ferrovias",
+      "trem",
+      "estrada de ferro",
+      "trens"
+     ],
+     "hint": "Usava locomotivas a vapor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcz828a1mc8zqo",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual foi o principal porto de exportação do café do Oeste Paulista?",
+     "options": [
+      "Santos",
+      "Recife",
+      "Salvador",
+      "Belém"
+     ],
+     "answer": "Santos",
+     "accept": [],
+     "hint": "Fica no litoral de São Paulo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14kskbtll64gr",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual afirmação compara corretamente as duas regiões cafeeiras?",
+     "options": [
+      "O Oeste Paulista usou mais imigrantes e técnicas modernas; o Vale do Paraíba dependeu da escravidão.",
+      "O Vale do Paraíba usou só imigrantes; o Oeste Paulista usou só escravizados.",
+      "As duas regiões não usaram ferrovias.",
+      "O Vale do Paraíba cresceu depois do Oeste Paulista."
+     ],
+     "answer": "O Oeste Paulista usou mais imigrantes e técnicas modernas; o Vale do Paraíba dependeu da escravidão.",
+     "accept": [],
+     "hint": "Pense em qual região era mais antiga e em qual era mais nova.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm1tsn0p8kftm",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Que efeito o dinheiro do café teve na cidade de São Paulo?",
+     "options": [
+      "Crescimento urbano, bancos e indústrias",
+      "Abandono da cidade",
+      "Fim do comércio",
+      "Diminuição da população"
+     ],
+     "answer": "Crescimento urbano, bancos e indústrias",
+     "accept": [],
+     "hint": "Os lucros precisavam ser investidos em algum lugar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7entqma782g4",
+     "subject": "bss",
+     "type": "short",
+     "q": "Em que ano terminou o Segundo Reinado, com a Proclamação da República?",
+     "options": [],
+     "answer": "1889",
+     "accept": [],
+     "hint": "Foi um ano depois da Lei Áurea.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhjaa37t0cclb",
+     "subject": "bss",
+     "type": "open",
+     "q": "Explique por que a cafeicultura do Oeste Paulista foi considerada mais moderna que a do Vale do Paraíba.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em mão de obra, transporte e técnicas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r89b5yahlqbzt",
+     "subject": "bss",
+     "type": "open",
+     "q": "Analise como o fim do tráfico de escravizados, em 1850, afetou os fazendeiros de café.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "O que acontece quando falta trabalhador e o café continua crescendo?",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "comp": {
+   "topic": "Object-oriented programming: an introduction",
+   "questions": [
+    {
+     "id": "r110zs331pfqx8l",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In object-oriented programming, what is a class?",
+     "options": [
+      "A blueprint for creating objects",
+      "A single variable",
+      "A type of loop",
+      "An error message"
+     ],
+     "answer": "A blueprint for creating objects",
+     "accept": [],
+     "hint": "Think of a plan or template.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tkwqwl1e8pfey",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is an object?",
+     "options": [
+      "An instance created from a class",
+      "A Python keyword for loops",
+      "A list of numbers only",
+      "A comment in the code"
+     ],
+     "answer": "An instance created from a class",
+     "accept": [],
+     "hint": "It is made using the class as a template.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmy9a4t6ybvzo",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which keyword is used to define a class in Python?",
+     "options": [
+      "class",
+      "def",
+      "object",
+      "new"
+     ],
+     "answer": "class",
+     "accept": [],
+     "hint": "It is the same as the name of the concept.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r148ybc4nz0iva",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In a class called Dog, which of these would be an attribute?",
+     "options": [
+      "name",
+      "bark()",
+      "print",
+      "for"
+     ],
+     "answer": "name",
+     "accept": [],
+     "hint": "Attributes store data; methods do actions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rblynkx1135bao",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In a class called Dog, which of these would be a method?",
+     "options": [
+      "bark()",
+      "colour",
+      "age",
+      "breed"
+     ],
+     "answer": "bark()",
+     "accept": [],
+     "hint": "Methods are actions, written like functions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqkah6c1f2qzm9",
+     "subject": "comp",
+     "type": "short",
+     "q": "What is the name of the special Python method that runs automatically when a new object is created?",
+     "options": [],
+     "answer": "__init__",
+     "accept": [
+      "init",
+      "__init__()",
+      "the constructor"
+     ],
+     "hint": "It has two underscores on each side.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i4816o8fdvpi",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What does 'self' refer to inside a method?",
+     "options": [
+      "The object the method is called on",
+      "The class name",
+      "The whole program",
+      "The last variable created"
+     ],
+     "answer": "The object the method is called on",
+     "accept": [],
+     "hint": "It means 'this particular one'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5yhz013swmrg",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Given class Cat with __init__(self, name), which line correctly creates an object?",
+     "options": [
+      "my_cat = Cat(\"Mimi\")",
+      "my_cat = class Cat(\"Mimi\")",
+      "Cat = my_cat(\"Mimi\")",
+      "my_cat = Cat.name"
+     ],
+     "answer": "my_cat = Cat(\"Mimi\")",
+     "accept": [],
+     "hint": "Call the class like a function.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkih1n9lk24z1",
+     "subject": "comp",
+     "type": "mc",
+     "q": "How do you access the attribute 'name' of an object called my_cat?",
+     "options": [
+      "my_cat.name",
+      "my_cat[name]",
+      "name.my_cat",
+      "my_cat->name"
+     ],
+     "answer": "my_cat.name",
+     "accept": [],
+     "hint": "Python uses dot notation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14q5eqi1twpnj3",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Inside __init__, which line stores the parameter 'speed' as an attribute?",
+     "options": [
+      "self.speed = speed",
+      "speed = self",
+      "self = speed",
+      "speed.self = speed"
+     ],
+     "answer": "self.speed = speed",
+     "accept": [],
+     "hint": "The attribute belongs to self.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r188kmiq8hntb8",
+     "subject": "comp",
+     "type": "short",
+     "q": "A class Car is used to create three objects: car1, car2 and car3. How many classes are there?",
+     "options": [],
+     "answer": "1",
+     "accept": [
+      "one",
+      "One"
+     ],
+     "hint": "One blueprint can make many objects.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i0y1khbkjqt8",
+     "subject": "comp",
+     "type": "mc",
+     "q": "class Counter:\n    def __init__(self):\n        self.total = 0\n    def add(self):\n        self.total = self.total + 1\nc = Counter(); c.add(); c.add()\nWhat is c.total?",
+     "options": [
+      "2",
+      "0",
+      "1",
+      "3"
+     ],
+     "answer": "2",
+     "accept": [],
+     "hint": "Start at 0 and count how many times add() runs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcrib8zzuv4z5",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Why is the first parameter of every method in a Python class usually 'self'?",
+     "options": [
+      "So the method can access the object's own attributes",
+      "Because Python needs it to print text",
+      "To make the method run faster",
+      "To delete the object"
+     ],
+     "answer": "So the method can access the object's own attributes",
+     "accept": [],
+     "hint": "Each object has its own data.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj25h9qfhwwhm",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Two objects, a = Box(5) and b = Box(9), are created from the same class. Which statement is true?",
+     "options": [
+      "They can have different attribute values",
+      "They must have the same attribute values",
+      "b replaces a",
+      "Only the last object exists"
+     ],
+     "answer": "They can have different attribute values",
+     "accept": [],
+     "hint": "Each instance stores its own data.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fx5afak0dxz9",
+     "subject": "comp",
+     "type": "open",
+     "q": "Write a Python class called Student with attributes name and year, and a method greet() that prints a greeting using the student's name.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start with class Student: and define __init__(self, name, year).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryipxpnvonm8y",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain one advantage of using classes and objects when writing a game with many characters.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about reusing the same blueprint many times.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Formal reports and proposals",
+   "questions": [
+    {
+     "id": "r15r2r081sprscc",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the main purpose of a formal report?",
+     "options": [
+      "To present information and findings clearly to a specific audience",
+      "To tell an exciting story",
+      "To describe a holiday to a friend",
+      "To persuade using jokes"
+     ],
+     "answer": "To present information and findings clearly to a specific audience",
+     "accept": [],
+     "hint": "Reports inform before they recommend.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3bhgjhims6u8",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is a proposal?",
+     "options": [
+      "A document that suggests a plan and argues for it",
+      "A diary entry",
+      "A poem about the future",
+      "A list of spelling words"
+     ],
+     "answer": "A document that suggests a plan and argues for it",
+     "accept": [],
+     "hint": "It proposes something new.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xwxxihro7xsq",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which feature is typical of a formal report?",
+     "options": [
+      "Headings and subheadings",
+      "Slang and abbreviations",
+      "Rhyming lines",
+      "Lots of exclamation marks"
+     ],
+     "answer": "Headings and subheadings",
+     "accept": [],
+     "hint": "Think of how a report is divided into sections.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtcrapb1qf0tc8",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence is most suitable for a formal report?",
+     "options": [
+      "The survey indicates that most students prefer a longer lunch break.",
+      "Loads of kids want a longer lunch, obviously!",
+      "Lunch is way too short, to be honest.",
+      "Everyone hates the canteen lol."
+     ],
+     "answer": "The survey indicates that most students prefer a longer lunch break.",
+     "accept": [],
+     "hint": "Look for impersonal, precise language.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reachu71kvxnfi",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which section usually comes first in a formal report?",
+     "options": [
+      "Introduction",
+      "Recommendations",
+      "Conclusion",
+      "Appendix"
+     ],
+     "answer": "Introduction",
+     "accept": [],
+     "hint": "It explains the purpose of the report.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18vkq6x1iozden",
+     "subject": "en",
+     "type": "short",
+     "q": "What is the name of the section where a report suggests what should be done next?",
+     "options": [],
+     "answer": "Recommendations",
+     "accept": [
+      "recommendation",
+      "recommendations",
+      "Recommendation"
+     ],
+     "hint": "It comes from the verb 'recommend'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1erkkfdemkvvi",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which phrase is best for making a formal recommendation?",
+     "options": [
+      "It is recommended that the library opens earlier.",
+      "The library should totally open earlier!",
+      "Why don't they just open the library earlier?",
+      "I reckon the library is rubbish."
+     ],
+     "answer": "It is recommended that the library opens earlier.",
+     "accept": [],
+     "hint": "Formal writing often uses the passive voice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a28kglevvxqe",
+     "subject": "en",
+     "type": "mc",
+     "q": "Why do formal reports often use the passive voice, e.g. 'Data was collected'?",
+     "options": [
+      "To sound impersonal and focus on the action",
+      "To make the text shorter",
+      "To add humour",
+      "To show the writer's feelings"
+     ],
+     "answer": "To sound impersonal and focus on the action",
+     "accept": [],
+     "hint": "Who did it matters less than what was done.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16c0la8pevpfq",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is the most formal replacement for 'a lot of'?",
+     "options": [
+      "a significant number of",
+      "loads of",
+      "tons of",
+      "heaps of"
+     ],
+     "answer": "a significant number of",
+     "accept": [],
+     "hint": "Avoid informal words.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ue70k4q66oiu",
+     "subject": "en",
+     "type": "mc",
+     "q": "In a report on the school canteen, which section would contain the survey results?",
+     "options": [
+      "Findings",
+      "Title",
+      "Recommendations",
+      "Introduction"
+     ],
+     "answer": "Findings",
+     "accept": [],
+     "hint": "This section says what was found out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvufjtm1vkgg3g",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which connective is best for adding a further point in a formal report?",
+     "options": [
+      "Furthermore",
+      "Anyway",
+      "Plus",
+      "And also too"
+     ],
+     "answer": "Furthermore",
+     "accept": [],
+     "hint": "Choose the most formal option.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r767niq10bodht",
+     "subject": "en",
+     "type": "mc",
+     "q": "A proposal for a new school garden should mainly…",
+     "options": [
+      "explain the plan, its benefits and its costs",
+      "describe the writer's favourite flower",
+      "tell a story about a garden",
+      "list every plant in the world"
+     ],
+     "answer": "explain the plan, its benefits and its costs",
+     "accept": [],
+     "hint": "The reader needs to decide whether to approve it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r194zbadcrmrj",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which recommendation is the most specific and useful?",
+     "options": [
+      "Two extra water fountains should be installed near the sports hall by next term.",
+      "Things should be better.",
+      "Someone should do something about water.",
+      "Water is important."
+     ],
+     "answer": "Two extra water fountains should be installed near the sports hall by next term.",
+     "accept": [],
+     "hint": "Good recommendations say what, where and when.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1behi3reiliiq",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence would make a strong conclusion to a formal report?",
+     "options": [
+      "In conclusion, the evidence suggests that a longer break would improve students' concentration.",
+      "That's all I have to say, bye!",
+      "Reports are boring to write.",
+      "Also, I forgot to mention the canteen."
+     ],
+     "answer": "In conclusion, the evidence suggests that a longer break would improve students' concentration.",
+     "accept": [],
+     "hint": "A conclusion draws the findings together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjpws7fpwcqik",
+     "subject": "en",
+     "type": "open",
+     "q": "Rewrite this informal sentence in a formal style suitable for a report: 'Loads of students reckon the buses are always late and it's really annoying.'",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Replace slang and remove personal feelings.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riihuazhofv5q",
+     "subject": "en",
+     "type": "open",
+     "q": "You are writing a proposal to the head teacher for a new after-school club. Write two recommendations, each with a reason.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use 'It is recommended that…' and 'This would…'.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}

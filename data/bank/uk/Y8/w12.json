@@ -2797,7 +2797,1120 @@
      "errors": []
     }
    ]
+  },
+  "spa": {
+   "topic": "Making arrangements: invitations",
+   "questions": [
+    {
+     "id": "rsc9va61fzuiq2",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does '¿Quieres ir al cine?' mean?",
+     "options": [
+      "Do you want to go to the cinema?",
+      "Can you go to the cinema?",
+      "Where is the cinema?",
+      "Did you go to the cinema?"
+     ],
+     "answer": "Do you want to go to the cinema?",
+     "accept": [],
+     "hint": "'Quieres' comes from the verb querer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rojffaj1qr2mcr",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which phrase means 'Where shall we meet?'",
+     "options": [
+      "¿Dónde quedamos?",
+      "¿Cuándo vamos?",
+      "¿Qué hora es?",
+      "¿Con quién vas?"
+     ],
+     "answer": "¿Dónde quedamos?",
+     "accept": [],
+     "hint": "Look for the question word for 'where'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ssl7av17u00wj",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Your friend invites you to the park and you want to accept. Which reply is best?",
+     "options": [
+      "Vale, ¡qué buena idea!",
+      "No puedo, lo siento.",
+      "No me gusta nada.",
+      "Estoy enfermo."
+     ],
+     "answer": "Vale, ¡qué buena idea!",
+     "accept": [],
+     "hint": "Choose the positive answer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhmyt2f1bn1mzd",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'I can't.'",
+     "options": [],
+     "answer": "No puedo",
+     "accept": [
+      "no puedo",
+      "No puedo."
+     ],
+     "hint": "Use the 'yo' form of poder, made negative.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn1qrrgwlkp77",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete: '¿___ venir a mi fiesta el sábado?' (Can you…?)",
+     "options": [
+      "Puedes",
+      "Puedo",
+      "Pueden",
+      "Podemos"
+     ],
+     "answer": "Puedes",
+     "accept": [],
+     "hint": "You are speaking to one friend (tú).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q3xa711k4zrts",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete: 'Yo ___ ir a la playa.' (I want to go…)",
+     "options": [
+      "quiero",
+      "quieres",
+      "quiere",
+      "queremos"
+     ],
+     "answer": "quiero",
+     "accept": [],
+     "hint": "Querer is a stem-changing verb: e → ie.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkudbgvh7ohgn",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the 'nosotros' form of poder (present tense).",
+     "options": [],
+     "answer": "podemos",
+     "accept": [
+      "Podemos"
+     ],
+     "hint": "The stem does not change in the nosotros form.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6v792o1m9vke1",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the 'él/ella' form of querer (present tense).",
+     "options": [],
+     "answer": "quiere",
+     "accept": [
+      "Quiere"
+     ],
+     "hint": "Remember the stem change e → ie.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kt8egs1hr3w8n",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'quedar' mean in '¿A qué hora quedamos?'",
+     "options": [
+      "to arrange to meet",
+      "to stay at home",
+      "to finish",
+      "to buy"
+     ],
+     "answer": "to arrange to meet",
+     "accept": [],
+     "hint": "Think about making plans with friends.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17p9u6p1pm4ax7",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which is a polite way to decline an invitation?",
+     "options": [
+      "Lo siento, no puedo porque tengo que estudiar.",
+      "Sí, claro, voy.",
+      "Vale, quedamos a las cinco.",
+      "¡Me encanta la idea!"
+     ],
+     "answer": "Lo siento, no puedo porque tengo que estudiar.",
+     "accept": [],
+     "hint": "Look for an apology and a reason.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11j9rid65xgkq",
+     "subject": "spa",
+     "type": "mc",
+     "q": "'Quedamos delante del cine a las seis.' What is being arranged?",
+     "options": [
+      "Meeting in front of the cinema at six",
+      "Meeting inside the cinema at seven",
+      "Going home at six",
+      "Buying tickets at the cinema"
+     ],
+     "answer": "Meeting in front of the cinema at six",
+     "accept": [],
+     "hint": "'Delante de' is a preposition of place.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnqf3g31t7kjri",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'Do you want to play football?' (to one friend)",
+     "options": [],
+     "answer": "¿Quieres jugar al fútbol?",
+     "accept": [
+      "Quieres jugar al fútbol",
+      "¿Quieres jugar al futbol?",
+      "¿Quieres jugar fútbol?"
+     ],
+     "hint": "Querer + infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roahche11s3w2l",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete: 'Mis amigos no ___ salir porque tienen deberes.'",
+     "options": [
+      "pueden",
+      "puede",
+      "podéis",
+      "puedo"
+     ],
+     "answer": "pueden",
+     "accept": [],
+     "hint": "The subject is 'mis amigos' (ellos).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r140mvfjtogucd",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence correctly uses 'tener que' to give a reason?",
+     "options": [
+      "No puedo, tengo que ayudar a mi madre.",
+      "No puedo, tengo ayudar a mi madre.",
+      "No puedo, tengo que ayudo a mi madre.",
+      "No puedo, tiene que ayudar mi madre."
+     ],
+     "answer": "No puedo, tengo que ayudar a mi madre.",
+     "accept": [],
+     "hint": "Tener que is followed by an infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgg7t0p1lb3vse",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write a short text message in Spanish inviting a friend to an activity. Include the day, the time and where you will meet.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use ¿Quieres…?, el + day, a las… and quedamos en…",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10kxcym7201ep",
+     "subject": "spa",
+     "type": "open",
+     "q": "Your friend invites you to the cinema on Friday, but you are busy. Write a reply in Spanish: decline politely, give a reason and suggest another day.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Lo siento, no puedo porque… ¿Qué tal el…?",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "Megafone: a verdade por trás do anúncio",
+   "premise": "Lívia e Tomás, da equipe do jornal escolar Megafone, investigam a cada semana uma estratégia de publicidade diferente e aprendem a ler anúncios com olhar crítico e a consumir com consciência.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O tênis que voava",
+     "synopsis": "Lívia entra para o jornal da escola e recebe a primeira pauta: descobrir por que um anúncio de tênis deixou a turma inteira querendo o mesmo par.",
+     "text": "Na segunda-feira, a sala do jornal escolar cheirava a papel novo e café da professora Iara. Lívia tinha acabado de entrar para a equipe e ainda não sabia onde sentar. Tomás, que cuidava das fotos, empurrou uma cadeira para ela com o pé.\n— Bem-vinda ao Megafone — disse ele. — Aqui ninguém escreve só o que todo mundo já sabe.\nA professora Iara colocou um tablet no centro da mesa. Na tela, um vídeo de trinta segundos mostrava um garoto correndo por uma cidade ao pôr do sol. A música crescia, o garoto pulava entre dois prédios e, por um instante, parecia flutuar. No final, aparecia o tênis Aerus e uma frase em letras brancas: \"Voe alto. Seja você.\"\n— Esse anúncio passou na internet a semana toda — explicou a professora. — Na quinta-feira, metade do oitavo ano já falava em comprar esse tênis. A pauta de vocês é descobrir por quê.\nLívia assistiu ao vídeo três vezes. Na primeira, sentiu vontade de correr. Na segunda, reparou que o garoto quase não aparecia de perto; ele era só uma silhueta contra o céu laranja. Na terceira, percebeu uma coisa estranha.\n— Ninguém fala do tênis — disse ela. — Não dizem se é confortável, se dura, quanto custa. Só mostram o garoto voando.\nTomás coçou a cabeça.\n— Mas é isso que dá vontade, não é? Ninguém quer comprar uma sola de borracha. A gente quer se sentir daquele jeito.\nA professora sorriu, como se esperasse essa conversa.\n— Isso tem nome: apelo emocional. O anúncio não vende o produto, vende uma sensação. Liberdade, coragem, ser especial. E o slogan ajuda a grudar a ideia na cabeça.\nLívia anotou no caderno: \"Voe alto. Seja você.\" Duas frases curtas, fáceis de lembrar, que pareciam conselho de amigo. Mas que relação havia entre ser você mesmo e usar um tênis que todo mundo estava comprando igual?\nNo intervalo, ela e Tomás fizeram uma pequena enquete no pátio. Perguntaram a vinte colegas o que lembravam do anúncio. Dezoito citaram o pulo entre os prédios. Quinze repetiram o slogan sem errar uma palavra. Só dois sabiam dizer alguma coisa sobre o tênis em si, e nenhum sabia o preço.\n— Pesquisei no site — disse Tomás, mostrando o celular. — Custa quase o dobro do tênis que eu uso para jogar bola.\nDe volta à sala, Lívia escreveu o primeiro parágrafo da matéria: \"Um anúncio de trinta segundos fez muita gente querer um tênis sem saber nada sobre ele. O segredo não está na sola, mas na emoção.\" Leu em voz alta e a professora fez sinal de aprovação.\n— Bom começo. Mas lembrem: perceber a estratégia não significa que o produto é ruim. Significa que vocês escolhem com mais informação.\nQuando o sinal tocou, Lívia guardou o caderno e olhou para os próprios pés. Seu tênis velho tinha um rasgo pequeno do lado. Ainda dava para usar. Ela não sabia se aquilo era uma decisão ou só uma descoberta, mas sentiu, pela primeira vez, que tinha visto o truque por trás do voo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o nome do jornal escolar?",
+       "options": [
+        "Megafone",
+        "Voe Alto",
+        "Aerus",
+        "Pátio"
+       ],
+       "answer": "Megafone",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o slogan do anúncio do tênis?",
+       "options": [],
+       "answer": "Voe alto. Seja você.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o garoto do vídeo faz que parece flutuar?",
+       "options": [
+        "Pula entre dois prédios",
+        "Anda de skate",
+        "Nada no mar",
+        "Sobe uma montanha"
+       ],
+       "answer": "Pula entre dois prédios",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lívia percebe ao ver o vídeo pela terceira vez?",
+       "options": [
+        "Que ninguém fala das qualidades do tênis",
+        "Que o garoto é famoso",
+        "Que o vídeo é muito longo",
+        "Que a música é triste"
+       ],
+       "answer": "Que ninguém fala das qualidades do tênis",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como a professora Iara chama a estratégia de vender uma sensação?",
+       "options": [],
+       "answer": "apelo emocional",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a enquete no pátio mostrou?",
+       "options": [
+        "Quase todos lembravam do pulo, mas quase ninguém sabia algo sobre o tênis",
+        "Todos sabiam o preço do tênis",
+        "Ninguém tinha visto o anúncio",
+        "Todos odiaram o anúncio"
+       ],
+       "answer": "Quase todos lembravam do pulo, mas quase ninguém sabia algo sobre o tênis",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que se pode inferir quando Lívia olha para o próprio tênis no final?",
+       "options": [
+        "Ela começa a pensar se precisa mesmo de um tênis novo",
+        "Ela decide jogar o tênis fora",
+        "Ela quer comprar dois tênis Aerus",
+        "Ela esqueceu o tênis na escola"
+       ],
+       "answer": "Ela começa a pensar se precisa mesmo de um tênis novo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o anúncio mostra o garoto como uma silhueta, sem o rosto aparecer de perto?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A garrafa da influenciadora",
+     "synopsis": "A equipe investiga por que uma garrafa de água comum esgotou depois de aparecer no vídeo de uma influenciadora inventada da internet, a Bia Brilho.",
+     "text": "Na semana seguinte, a pauta chegou pelas mãos de Rafa, irmã mais nova de Tomás, que estava no sexto ano.\n— Todo mundo na minha sala tem a garrafa rosa da Bia Brilho — reclamou ela. — Menos eu.\nBia Brilho era uma influenciadora que postava vídeos de rotina: acordar, arrumar o quarto, ir para a escola, treinar. Em todos os vídeos, sempre ao lado dela, aparecia uma garrafa de água rosa com tampa dourada. Em um deles, Bia dizia, sorrindo: \"Gente, eu não vivo sem ela. Sério, é a melhor garrafa do mundo.\"\nLívia abriu o vídeo no tablet do jornal e pausou em vários momentos.\n— Olha aqui embaixo — apontou. — Em letra bem pequena: \"publi\".\n— O que é isso? — perguntou Rafa.\n— Quer dizer publicidade — explicou a professora Iara, que passava com uma pilha de provas. — A marca pagou para a garrafa aparecer. Pela lei, ela precisa avisar. Mas repara no tamanho do aviso e no tamanho do sorriso.\nTomás riu, mas logo ficou sério.\n— Então ela mentiu?\n— Não necessariamente — respondeu a professora. — Ela pode até gostar da garrafa. O ponto é outro: a gente confia nela como confia numa amiga. Quando uma pessoa admirada recomenda um produto, a recomendação parece conselho, não propaganda. Chama-se testemunho, ou endosso.\nLívia pensou nas vezes em que tinha comprado alguma coisa porque alguém que ela seguia tinha usado. Um caderno com capa de estrelas. Um batom de brilho que nunca usou. Ficou com as bochechas quentes, mas anotou mesmo assim.\nPara a matéria, decidiram fazer um teste. Tomás comprou, com a mesada, uma garrafa simples de uma loja do bairro. Rafa emprestou a garrafa rosa de uma amiga por um dia. Encheram as duas com água gelada às sete da manhã e deixaram na mesa do jornal.\nAo meio-dia, mediram com um termômetro do laboratório de ciências. A garrafa simples estava com a água a doze graus. A garrafa rosa, a catorze.\n— A mais barata gelou melhor — disse Tomás, anotando. — E custa um terço do preço.\nRafa cruzou os braços.\n— Mas a rosa é mais bonita.\n— E tudo bem gostar dela por isso — disse Lívia. — Só que aí você sabe que está pagando pela cor e pela Bia, não porque é \"a melhor do mundo\".\nNa reunião de pauta, a equipe escreveu uma pergunta para os leitores no fim da matéria: \"Você compraria esse produto se ninguém famoso tivesse mostrado?\" A professora gostou.\n— Uma boa leitura crítica não termina com uma ordem. Termina com uma pergunta que faz o leitor pensar sozinho.\nÀ tarde, Rafa voltou à sala do jornal. Tinha decidido usar a garrafa velha do irmão e enfeitá-la com adesivos que ela mesma desenhou: uma lua, um gato, o próprio nome em letras grandes.\n— Agora é a única do mundo — disse, orgulhosa.\nLívia tirou uma foto para a matéria. Pela primeira vez, uma garrafa fazia sentido de verdade.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor é a garrafa da Bia Brilho?",
+       "options": [
+        "Rosa",
+        "Azul",
+        "Verde",
+        "Preta"
+       ],
+       "answer": "Rosa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que palavra aparece em letra pequena no vídeo da influenciadora?",
+       "options": [],
+       "answer": "publi",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que significa o aviso em letra pequena?",
+       "options": [
+        "Que o vídeo é publicidade paga",
+        "Que a garrafa está em promoção",
+        "Que o vídeo é antigo",
+        "Que a garrafa é importada"
+       ],
+       "answer": "Que o vídeo é publicidade paga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a professora chama a estratégia de usar uma pessoa admirada para recomendar um produto?",
+       "options": [
+        "Testemunho ou endosso",
+        "Apelo ao medo",
+        "Letra miúda",
+        "Escassez"
+       ],
+       "answer": "Testemunho ou endosso",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o resultado do teste das garrafas?",
+       "options": [
+        "A garrafa simples manteve a água mais gelada",
+        "A garrafa rosa manteve a água mais gelada",
+        "As duas esquentaram igual",
+        "A garrafa rosa vazou"
+       ],
+       "answer": "A garrafa simples manteve a água mais gelada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lívia fica com as bochechas quentes?",
+       "options": [
+        "Ela lembra que também comprou coisas por influência de quem seguia",
+        "Ela estava com febre",
+        "Ela brigou com Rafa",
+        "A sala estava muito quente"
+       ],
+       "answer": "Ela lembra que também comprou coisas por influência de quem seguia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a atitude final de Rafa com a garrafa velha mostra?",
+       "options": [
+        "Que ela encontrou um jeito próprio de ter algo especial sem comprar",
+        "Que ela desistiu de beber água",
+        "Que ela vai vender a garrafa",
+        "Que ela ainda quer muito a garrafa rosa"
+       ],
+       "answer": "Que ela encontrou um jeito próprio de ter algo especial sem comprar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a recomendação de uma influenciadora parece mais confiável do que um anúncio comum?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Só hoje, só para você",
+     "synopsis": "Um aplicativo de jogos manda mensagens dizendo que uma oferta acaba em minutos, e Tomás quase gasta toda a mesada antes de a equipe investigar.",
+     "text": "Tomás chegou à sala do jornal com o celular na mão e cara de quem tinha corrido.\n— Gente, preciso de ajuda. O pacote de moedas do meu jogo está com setenta por cento de desconto. Acaba em vinte minutos!\nNa tela, um relógio vermelho contava os segundos: 19:42, 19:41, 19:40. Embaixo, letras piscando: \"ÚLTIMA CHANCE! Só hoje, só para você!\"\nLívia olhou por cima do ombro dele.\n— Quanto custa?\n— Com o desconto, quarenta reais. Sem desconto, seria cento e trinta.\n— E você precisa dessas moedas para quê?\nTomás abriu a boca e fechou de novo. Não tinha resposta pronta. As moedas serviam para comprar roupas para o personagem, mas o personagem dele já estava ótimo.\nA professora Iara se aproximou e pediu licença para ver a tela.\n— Clássico — disse. — Isso se chama escassez e urgência. Quando o tempo é curto ou o produto parece raro, o cérebro entra em modo de alarme. A gente decide rápido, com medo de perder, e para de comparar.\n— Mas e se for verdade? — insistiu Tomás. — E se nunca mais tiver esse desconto?\n— Ótima pergunta para a pauta. Vamos descobrir.\nEles combinaram uma regra: Tomás não compraria nada naquele dia. Em vez disso, durante duas semanas, ele tiraria um print toda vez que o jogo mostrasse uma oferta. Lívia criou uma tabela no computador do jornal com três colunas: data, preço e o que a mensagem dizia.\nO relógio vermelho chegou a zero e a oferta sumiu. Tomás suspirou alto, como se tivesse perdido um ônibus.\nDois dias depois, a oferta voltou. Mesmo pacote, mesmo preço, nova contagem regressiva. Na semana seguinte, apareceu de novo, desta vez com a frase \"Oferta exclusiva de aniversário\", embora não fosse aniversário de ninguém da equipe. Ao final das duas semanas, a tabela tinha nove linhas. O pacote \"de última chance\" tinha aparecido nove vezes.\n— Então nunca foi a última chance — disse Tomás, meio bravo, meio aliviado.\n— E o preço \"sem desconto\" de cento e trinta? — perguntou Lívia. — Alguém já pagou esse valor?\nEles procuraram e não encontraram nenhum dia em que o pacote tivesse sido vendido por cento e trinta. O preço alto parecia existir só para o desconto parecer enorme.\nA matéria ganhou o título \"O relógio que nunca para\". Lívia escreveu um quadro com dicas para os leitores: esperar um dia antes de comprar qualquer coisa com contagem regressiva; perguntar \"eu queria isso antes de ver a oferta?\"; e lembrar que pressa é ótima para quem vende, não para quem compra.\nNo dia em que o jornal foi impresso, Tomás mostrou a Lívia sua carteira.\n— Os quarenta reais continuam aqui. Vou juntar para uma lente nova da câmera.\n— Essa sim é uma compra planejada — disse ela.\nEle sorriu e, de propósito, desativou as notificações do jogo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quanto tempo faltava para acabar a oferta quando Tomás chegou?",
+       "options": [
+        "Vinte minutos",
+        "Duas horas",
+        "Um dia",
+        "Cinco minutos"
+       ],
+       "answer": "Vinte minutos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Tomás queria comprar?",
+       "options": [
+        "Um pacote de moedas de um jogo",
+        "Uma câmera",
+        "Um tênis",
+        "Uma garrafa"
+       ],
+       "answer": "Um pacote de moedas de um jogo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, por quantos reais o pacote estava com desconto?",
+       "options": [],
+       "answer": "quarenta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a professora chama a estratégia do relógio vermelho?",
+       "options": [
+        "Escassez e urgência",
+        "Testemunho",
+        "Apelo emocional",
+        "Comparação"
+       ],
+       "answer": "Escassez e urgência",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas vezes a oferta de 'última chance' apareceu em duas semanas?",
+       "options": [],
+       "answer": "nove",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a equipe concluiu sobre o preço de cento e trinta reais?",
+       "options": [
+        "Parecia existir só para o desconto parecer maior",
+        "Era o preço justo",
+        "Era um erro do aplicativo",
+        "Era o preço em outro país"
+       ],
+       "answer": "Parecia existir só para o desconto parecer maior",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tomás desativa as notificações no final?",
+       "options": [
+        "Para não ser pressionado por novas ofertas",
+        "Porque o celular quebrou",
+        "Porque o jogo acabou",
+        "Para economizar bateria"
+       ],
+       "answer": "Para não ser pressionado por novas ofertas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que esperar um dia antes de comprar ajuda a fazer escolhas melhores?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: Nove em cada dez",
+     "synopsis": "Um comercial de creme dental afirma que nove em cada dez dentistas recomendam a marca, e Lívia decide ler as letras miúdas.",
+     "text": "A pauta da semana surgiu durante o jantar. Lívia estava na sala quando passou um comercial na televisão: um dentista de jaleco branco segurava um tubo de creme dental Sorrix e dizia, com voz séria, \"Nove em cada dez dentistas recomendam\". Atrás dele, um gráfico de barras subia até o teto.\nLívia pausou a televisão. No canto inferior, por menos de dois segundos, apareceu um texto minúsculo. Ela teve que voltar o vídeo quatro vezes para conseguir ler: \"Pesquisa realizada com 10 profissionais. Os entrevistados podiam indicar mais de uma marca.\"\nNo dia seguinte, levou a anotação para a reunião.\n— Dez dentistas — disse. — No país inteiro, só dez.\n— E podiam escolher mais de uma marca — completou Tomás. — Então talvez eles tenham recomendado todas.\nA professora Iara escreveu no quadro: \"dados e autoridade\". Explicou que números e especialistas dão ao anúncio uma aparência de ciência. Ninguém discute com um gráfico, e um jaleco branco inspira confiança.\n— Às vezes os dados são verdadeiros e bem feitos — disse ela. — Às vezes são verdadeiros, mas pequenos demais ou mal explicados. A leitura crítica pergunta: quem foi pesquisado, quantos, e qual era a pergunta?\nPara a matéria, a equipe montou sua própria pesquisa, com regras claras. Escolheram uma pergunta simples: \"Qual é o seu lanche preferido da cantina?\" Perguntaram primeiro a só cinco pessoas, todas do time de vôlei. Quatro responderam \"pão de queijo\".\n— Oitenta por cento dos alunos preferem pão de queijo! — anunciou Tomás, imitando a voz do comercial.\nTodos riram, mas Lívia aproveitou a ideia.\n— Isso é exatamente o problema. Se a gente publicar assim, parece verdade, mas só ouvimos o time de vôlei.\nEntão repetiram a pesquisa com cem alunos de todas as turmas. O resultado mudou: pão de queijo ficou com trinta e cinco por cento, a salada de frutas com vinte e oito e o sanduíche natural com vinte e dois. O resto se dividiu entre outras opções.\n— Com cinco pessoas era quase unanimidade — disse Lívia. — Com cem, virou uma disputa.\nA matéria saiu em duas colunas lado a lado: \"Pesquisa ruim\" e \"Pesquisa boa\". Na primeira, explicaram a enquete do time de vôlei. Na segunda, a pesquisa com cem alunos. Embaixo, colocaram três perguntas para o leitor fazer sempre que visse um número num anúncio: \"Quantas pessoas? Quem eram? O que exatamente foi perguntado?\"\nO gráfico da cantina ficou pendurado no mural do corredor. Durante a semana, Lívia viu alunos do sexto ano parados na frente dele, discutindo se trinta e cinco por cento era muito ou pouco.\nA professora passou por ela e comentou:\n— Sabe o que eu mais gostei? Vocês não disseram que o creme dental é ruim. Mostraram como ler o número.\nNaquela noite, quando o comercial do Sorrix voltou a passar, Lívia não pausou. Já sabia o que estava escrito no canto da tela. E o pequeno texto, que antes parecia escondido, agora era a primeira coisa que ela via.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é a marca do creme dental do comercial?",
+       "options": [],
+       "answer": "Sorrix",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que diz o dentista no comercial?",
+       "options": [
+        "Nove em cada dez dentistas recomendam",
+        "Todos os dentistas usam",
+        "É o creme mais barato",
+        "Deixa os dentes brancos em um dia"
+       ],
+       "answer": "Nove em cada dez dentistas recomendam",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos profissionais foram pesquisados, segundo o texto minúsculo?",
+       "options": [],
+       "answer": "10",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a primeira pesquisa da equipe não era confiável?",
+       "options": [
+        "Só ouviu cinco pessoas do time de vôlei",
+        "A pergunta era difícil",
+        "Ninguém respondeu",
+        "Foi feita no fim de semana"
+       ],
+       "answer": "Só ouviu cinco pessoas do time de vôlei",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual lanche ficou em primeiro lugar na pesquisa com cem alunos?",
+       "options": [
+        "Pão de queijo",
+        "Salada de frutas",
+        "Sanduíche natural",
+        "Bolo de cenoura"
+       ],
+       "answer": "Pão de queijo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que um jaleco branco e um gráfico tornam o anúncio convincente?",
+       "options": [
+        "Dão aparência de ciência e autoridade",
+        "São coloridos e divertidos",
+        "Mostram o preço do produto",
+        "Fazem o comercial ser mais curto"
+       ],
+       "answer": "Dão aparência de ciência e autoridade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que Lívia mudou ao rever o comercial no final?",
+       "options": [
+        "Ela passa a notar primeiro as letras miúdas",
+        "Ela decide nunca mais assistir televisão",
+        "Ela compra o creme dental",
+        "Ela fica com medo de dentistas"
+       ],
+       "answer": "Ela passa a notar primeiro as letras miúdas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que os anunciantes colocam informações importantes em letras pequenas e por pouco tempo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O mascote do cereal",
+     "synopsis": "Lívia leva o primo pequeno ao supermercado e percebe como as embalagens são pensadas para chamar a atenção das crianças.",
+     "text": "No sábado, Lívia foi ao supermercado com a tia e o primo Davi, de seis anos. Mal entraram no corredor dos cereais, Davi parou como se tivesse encontrado um tesouro.\n— O Capitão Crocante! — gritou, apontando para uma caixa amarela.\nNa embalagem, um leão de desenho animado usava capa e piscava um olho. Ao lado dele, letras enormes anunciavam: \"Brinde surpresa dentro!\" A caixa estava na prateleira de baixo, exatamente na altura dos olhos de Davi.\nLívia olhou para cima. Nas prateleiras mais altas, ficavam os cereais sem desenhos, com embalagens marrons e brancas. Para enxergá-los, Davi teria que esticar o pescoço.\n— Tia, você já reparou onde eles colocam essas caixas? — perguntou.\nA tia riu.\n— Todo sábado é a mesma batalha.\nLívia tirou algumas fotos para o jornal, pedindo licença a um funcionário, e virou a caixa do Capitão Crocante para ler o rótulo. Na tabela nutricional, o açúcar aparecia logo no começo da lista de ingredientes. Na frente da caixa, porém, a frase em destaque era outra: \"Com vitaminas e minerais!\"\nNa segunda-feira, mostrou tudo à equipe. A professora Iara explicou que o Brasil tem regras que limitam a publicidade dirigida às crianças, justamente porque elas ainda estão aprendendo a separar diversão de propaganda.\n— Uma criança pequena não pensa \"isso é um anúncio\" — disse. — Ela pensa \"o leão é meu amigo\". Por isso mascotes, cores fortes, brindes e prateleiras baixas funcionam tão bem.\nTomás lembrou que, quando era pequeno, colecionava os bonequinhos de um iogurte. Comia o iogurte só para ganhar o boneco.\n— Eu nem gostava do sabor — confessou.\n— E a frase das vitaminas? — perguntou Lívia. — É mentira?\n— Provavelmente não — respondeu a professora. — O cereal pode ter vitaminas mesmo. Mas destacar só a parte boa e deixar a outra no verso é uma escolha. Chama-se ênfase seletiva.\nPara a matéria, a equipe decidiu não escrever só para os colegas de oitavo ano. Eles fizeram também uma página para os alunos menores, com desenhos de Tomás. Na página, um detetive de lupa ensinava três passos: \"Olhe a prateleira de cima. Vire a caixa. Pergunte: eu quero o cereal ou o brinde?\"\nA página foi entregue às turmas do primeiro ano. Dias depois, a tia de Lívia mandou uma mensagem: Davi tinha pegado uma caixa no supermercado, virado ao contrário e anunciado, muito sério, \"Primeiro vou investigar\".\nLívia leu a mensagem em voz alta na sala do jornal. Todos aplaudiram.\n— O detetive funcionou — disse Tomás.\n— Funcionou porque a gente não proibiu nada — respondeu Lívia. — Só deu uma lupa para ele.\nNaquela semana, a caixa que Davi levou para casa não tinha leão nenhum. Mas, no fim de semana seguinte, ele pediu à mãe para desenhar um mascote só dele numa caixa velha de papelão, e passou a tarde inteira inventando o \"Capitão Investigador\".",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do mascote do cereal?",
+       "options": [],
+       "answer": "Capitão Crocante",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que animal é o mascote?",
+       "options": [
+        "Um leão",
+        "Um tigre",
+        "Um macaco",
+        "Um urso"
+       ],
+       "answer": "Um leão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que prateleira estava a caixa do cereal com mascote?",
+       "options": [
+        "Na prateleira de baixo",
+        "Na prateleira mais alta",
+        "No caixa do supermercado",
+        "No depósito"
+       ],
+       "answer": "Na prateleira de baixo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual frase aparecia em destaque na frente da caixa?",
+       "options": [
+        "Com vitaminas e minerais!",
+        "Sem açúcar!",
+        "O mais barato do Brasil!",
+        "Feito em casa!"
+       ],
+       "answer": "Com vitaminas e minerais!",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como a professora chama a estratégia de destacar só a parte boa do produto?",
+       "options": [],
+       "answer": "ênfase seletiva",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que as estratégias com mascotes funcionam bem com crianças pequenas?",
+       "options": [
+        "Elas ainda não separam bem diversão de propaganda",
+        "Elas sempre têm dinheiro",
+        "Elas leem todos os rótulos",
+        "Elas não gostam de cores"
+       ],
+       "answer": "Elas ainda não separam bem diversão de propaganda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a atitude de Davi ao virar a caixa mostra?",
+       "options": [
+        "Que ele aprendeu a investigar antes de escolher",
+        "Que ele estava brincando de esconder",
+        "Que ele queria derrubar a caixa",
+        "Que ele não gosta de cereal"
+       ],
+       "answer": "Que ele aprendeu a investigar antes de escolher",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a equipe preferiu ensinar a investigar em vez de dizer às crianças para não comprar o cereal?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Verde por fora",
+     "synopsis": "Uma marca de mochilas diz ser 'amiga do planeta', e a equipe descobre que nem toda embalagem verde conta a história inteira.",
+     "text": "O cartaz apareceu no shopping perto da escola: uma mochila azul pendurada num galho de árvore, cercada de folhas e borboletas. Em letras grandes, a frase: \"Mochila Terra: amiga do planeta.\" O logotipo era uma folha verde em forma de coração.\n— Essa eu compraria sem pensar — admitiu Lívia. — Parece que você está ajudando a natureza só de usar.\nTomás tirou uma foto do cartaz para a reunião de pauta. Na sala do jornal, a professora Iara pediu que eles listassem tudo o que o anúncio realmente dizia sobre a mochila. A lista ficou curtíssima: era azul, tinha uma folha no logotipo e era \"amiga do planeta\".\n— Amiga do planeta como? — perguntou a professora. — Feita de quê? Dura quanto tempo? O que acontece com ela quando estraga?\nNinguém sabia. Lívia decidiu ir atrás das respostas. No site da marca, depois de muitos cliques, encontrou uma página com a composição: a mochila era feita de plástico comum, e só a etiqueta era de papel reciclado.\n— A etiqueta! — Tomás quase derrubou a cadeira. — A parte verde da mochila é a etiqueta.\nA professora explicou que isso tem nome em inglês, greenwashing, algo como \"lavagem verde\". É quando uma empresa usa cores, folhas e palavras vagas para parecer mais sustentável do que realmente é.\n— Palavras como \"natural\", \"consciente\" ou \"amigo do planeta\" soam bem, mas sozinhas não provam nada — disse ela. — Um selo de verdade, emitido por uma organização independente, ou informações claras sobre o material valem mais do que uma folha desenhada.\nA equipe resolveu ser justa. Lívia escreveu um e-mail para o atendimento da marca, perguntando o que tornava a mochila amiga do planeta. A resposta chegou três dias depois: a empresa tinha um projeto de plantar árvores e, por isso, usava aquela frase em todos os produtos.\n— Então não é mentira total — disse Tomás. — Mas também não tem nada a ver com a mochila em si.\nPara a matéria, eles criaram um teste chamado \"Verde de verdade?\", com quatro perguntas: \"De que é feito? Quanto dura? Pode ser consertado ou reciclado? Tem selo ou prova?\" Aplicaram o teste à Mochila Terra e a uma mochila de lona que Lívia herdou da prima, com quase dez anos de uso e dois remendos.\nA mochila velha da prima ganhou de longe.\n— A mochila mais sustentável — escreveu Lívia no final da matéria — muitas vezes é a que você já tem.\nA frase foi parar no mural da escola e, depois, na porta da sala dos professores. Um aluno do nono ano perguntou se podia usar a ideia no projeto de ciências sobre reciclagem.\nNa sexta-feira, Lívia passou de novo pelo shopping. O cartaz continuava lá, com as borboletas e o coração de folha. Ela parou na frente dele por um momento. Ainda achava bonito. Mas agora enxergava duas coisas ao mesmo tempo: o desenho que convencia e as perguntas que ele não respondia.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da mochila do cartaz?",
+       "options": [],
+       "answer": "Mochila Terra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era a forma do logotipo da marca?",
+       "options": [
+        "Uma folha em forma de coração",
+        "Uma árvore",
+        "Uma borboleta",
+        "Um planeta"
+       ],
+       "answer": "Uma folha em forma de coração",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que material era feita a mochila?",
+       "options": [
+        "Plástico comum",
+        "Lona reciclada",
+        "Couro",
+        "Algodão orgânico"
+       ],
+       "answer": "Plástico comum",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual parte da mochila era de papel reciclado?",
+       "options": [
+        "A etiqueta",
+        "As alças",
+        "O zíper",
+        "O bolso"
+       ],
+       "answer": "A etiqueta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual palavra em inglês a professora usa para essa estratégia?",
+       "options": [],
+       "answer": "greenwashing",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a mochila da prima ganhou o teste 'Verde de verdade?'?",
+       "options": [
+        "Já durava quase dez anos e podia ser consertada",
+        "Era mais bonita",
+        "Era nova",
+        "Tinha uma folha desenhada"
+       ],
+       "answer": "Já durava quase dez anos e podia ser consertada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que significa Lívia enxergar 'duas coisas ao mesmo tempo' no cartaz?",
+       "options": [
+        "Ela ainda acha bonito, mas percebe o que ele não explica",
+        "Ela está com problema de visão",
+        "Ela vê duas mochilas no cartaz",
+        "Ela quer comprar duas mochilas"
+       ],
+       "answer": "Ela ainda acha bonito, mas percebe o que ele não explica",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a equipe decidiu escrever para a empresa antes de publicar a matéria?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O anúncio honesto",
+     "synopsis": "Para a feira de trocas da escola, a equipe do Megafone aceita o desafio de criar uma campanha que convença sem enganar.",
+     "text": "No fim do semestre, a diretora pediu ajuda ao jornal. A escola ia fazer a primeira Feira de Trocas: os alunos trariam livros, jogos e roupas que não usavam mais e trocariam por outros. Mas pouca gente tinha se inscrito.\n— Vocês passaram meses mostrando como os anúncios convencem — disse a professora Iara. — Agora é a vez de vocês. Façam uma campanha para a feira. Só tem uma regra: nada de truque.\nA equipe espalhou pela mesa todas as matérias do semestre: o tênis que voava, a garrafa da influenciadora, o relógio que nunca para, os nove dentistas, o leão do cereal, a mochila verde por fora.\n— Então não podemos usar emoção? — perguntou Tomás.\n— Podemos — respondeu Lívia, pensando. — O problema não é a emoção. É usar a emoção para esconder informação. A gente pode emocionar e contar tudo.\nEles fizeram uma lista do que era honesto e do que não era. Contagem regressiva falsa: proibida. Mas informar a data real da feira era justo. Inventar que \"todo mundo vai\": proibido. Mas mostrar quantas pessoas já tinham se inscrito, com o número verdadeiro, era permitido. Usar alguém famoso: não tinham ninguém famoso mesmo, então resolveram usar os próprios alunos.\nTomás fotografou cinco colegas segurando um objeto que queriam trocar. Embaixo de cada foto, uma frase curta e verdadeira. Rafa segurava um quebra-cabeça de mil peças: \"Montei duas vezes. Agora quero que outra pessoa monte.\" Um menino do sétimo ano mostrava um livro de aventuras: \"Chorei no final. Quero saber se você também chora.\"\nLívia escreveu o slogan. Testou vários e descartou os que prometiam demais. No fim, ficou: \"Seu objeto parado pode ser a aventura de alguém.\" E, logo abaixo, em letra do mesmo tamanho, as informações completas: data, horário, local, o que podia ser trocado e o que não podia.\n— Letra miúda? — brincou Tomás.\n— Nenhuma — disse ela. — Tudo grande.\nOs cartazes foram colados nos corredores, e o jornal publicou uma edição especial explicando como a campanha tinha sido feita, passo a passo, com as escolhas e os cuidados. A professora disse que era a primeira vez que via um anúncio acompanhado do próprio manual de instruções.\nNa semana seguinte, as inscrições triplicaram. No dia da feira, a quadra ficou cheia de mesas com livros, jogos de tabuleiro, camisetas de times, patins e até um violão. Lívia trocou o tênis velho com rasgo por um par usado, mas inteiro, que alguém do nono ano já não usava. Não era um Aerus. Era confortável, e isso bastava.\nNo fim da tarde, Tomás tirou a última foto do semestre: a quadra quase vazia, as mesas sem nada, e a equipe do Megafone sentada no chão, cansada e feliz.\n— Sabe o que é engraçado? — disse ele. — A gente passou o semestre aprendendo a desconfiar de anúncios, e no final fez um.\n— A gente aprendeu a ler anúncios — corrigiu Lívia. — Quem sabe ler também sabe escrever.\nA professora Iara, ao lado deles, já pensava na pauta do próximo semestre.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que evento a escola vai organizar?",
+       "options": [
+        "Uma Feira de Trocas",
+        "Um campeonato de vôlei",
+        "Uma festa de aniversário",
+        "Uma excursão ao shopping"
+       ],
+       "answer": "Uma Feira de Trocas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a única regra que a professora dá para a campanha?",
+       "options": [
+        "Nada de truque",
+        "Usar uma pessoa famosa",
+        "Fazer um vídeo de trinta segundos",
+        "Gastar pouco papel"
+       ],
+       "answer": "Nada de truque",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que Rafa segura na foto da campanha?",
+       "options": [],
+       "answer": "um quebra-cabeça",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o slogan criado por Lívia?",
+       "options": [],
+       "answer": "Seu objeto parado pode ser a aventura de alguém.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como as informações da feira aparecem no cartaz?",
+       "options": [
+        "Em letra do mesmo tamanho, sem letra miúda",
+        "Em letra miúda no canto",
+        "Só no site da escola",
+        "Escondidas atrás do cartaz"
+       ],
+       "answer": "Em letra do mesmo tamanho, sem letra miúda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lívia quer dizer com 'O problema não é a emoção'?",
+       "options": [
+        "Emocionar é aceitável se não esconder informação",
+        "Anúncios nunca devem emocionar",
+        "Só a emoção importa num anúncio",
+        "Ela não gosta de anúncios tristes"
+       ],
+       "answer": "Emocionar é aceitável se não esconder informação",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a troca do tênis de Lívia é importante para a história?",
+       "options": [
+        "Mostra que ela escolheu pelo conforto e não pela marca",
+        "Mostra que ela finalmente comprou um Aerus",
+        "Mostra que ela perdeu o tênis",
+        "Mostra que ela não gosta de tênis"
+       ],
+       "answer": "Mostra que ela escolheu pelo conforto e não pela marca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Você acha que uma propaganda pode ser convincente e honesta ao mesmo tempo? Por quê?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
