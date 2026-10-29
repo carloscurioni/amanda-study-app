@@ -4991,5 +4991,906 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Auto do Pátio",
+   "premise": "Uma turma do primeiro ano monta um auto inspirado no teatro jesuítico do século XVI e descobre, ensaio após ensaio, como a literatura de catequese funcionava: alegoria, plurilinguismo, redondilha e poesia devocional — e também o que ela deixava de dizer.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O baú de papéis",
+     "synopsis": "A professora Helena propõe que a turma monte um auto inspirado no teatro jesuítico do século XVI, e Bia, desconfiada, acaba aceitando ser a narradora.",
+     "text": "Quando a professora Helena entrou na sala carregando uma caixa de papelão pintada para parecer um baú antigo, Bia soube que vinha trabalho. A professora pousou a caixa sobre a mesa como quem deposita um tesouro e anunciou, sem rodeios, que o primeiro ano ia montar um auto.\n— Um auto? Tipo um carro? — perguntou Tomás, e a turma riu.\nHelena esperou o riso morrer. Explicou que “auto” era o nome de uma peça curta de teatro, quase sempre religiosa, muito comum na Península Ibérica e trazida para cá pelos padres da Companhia de Jesus, que chegaram ao Brasil em 1549. Abriu o baú e tirou de lá folhas fotocopiadas, mapas, desenhos de aldeias e de igrejas de taipa.\n— Os jesuítas escreveram dois tipos de texto — continuou. — Uns eram cartas e relatos enviados à Europa, contando como era a terra, os povos, as plantas. Isso a gente chama de literatura informativa. Outros eram feitos para ensinar a fé cristã aos povos indígenas e aos colonos: peças de teatro, poemas, cantigas, até uma gramática da língua tupi. Essa é a literatura de catequese.\nBia cruzou os braços. Para ela, aquilo cheirava a poeira. Um texto escrito para convencer alguém de alguma coisa não podia ser arte de verdade, pensou. Arte era outra coisa: liberdade, surpresa, um susto bom.\nComo se tivesse lido seus pensamentos, Helena ergueu uma das folhas.\n— Vocês vão notar que essa literatura tinha um objetivo muito claro: ensinar e converter. Por isso ela é didática, simples, cheia de repetições. Mas não se enganem. Para prender um público que muitas vezes nem falava português, os autores precisavam de música, de dança, de humor e de personagens fortes. A pergunta que eu quero que vocês respondam até o fim do bimestre é esta: dá para ler um texto feito para catequizar como literatura?\nA sala ficou em silêncio. Iara, que sentava perto da janela, foi a primeira a falar.\n— E dá para ler sem esquecer quem estava do outro lado do palco?\nHelena sorriu, e Bia percebeu que a professora tinha gostado da pergunta mais do que de qualquer resposta.\nNa distribuição das tarefas, Davi ficou com a música, Tomás exigiu um papel “com chifres” e Iara pediu para cuidar da pesquisa. Sobrou para Bia a narração, justamente o papel que ela menos queria: a voz que explica, que costura as cenas, que fala direto com a plateia.\n— A narradora é a ponte — disse Helena, entregando-lhe um caderno de capa dura. — No teatro dos jesuítas, muitas vezes alguém abria a peça explicando o que ia acontecer e terminava tirando a lição. Você vai ser essa voz, mas uma voz do nosso tempo.\nNo ônibus de volta para casa, Bia abriu o caderno. Na primeira página, escreveu: “Uma ponte entre o quê e o quê?”. Ficou olhando a frase por três pontos de ônibus. Depois, sem perceber, acrescentou embaixo: “Talvez entre 1549 e agora.”\nFechou o caderno com a sensação estranha de que o baú de papelão tinha deixado alguma coisa aberta dentro dela.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a professora Helena trouxe para a sala?",
+       "options": [
+        "Uma caixa pintada como um baú antigo",
+        "Um figurino de anjo",
+        "Um livro de gramática tupi",
+        "Um aparelho de som"
+       ],
+       "answer": "Uma caixa pintada como um baú antigo",
+       "accept": [],
+       "hint": "Releia a primeira frase do capítulo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, em que ano os padres da Companhia de Jesus chegaram ao Brasil?",
+       "options": [
+        "1500",
+        "1549",
+        "1595",
+        "1630"
+       ],
+       "answer": "1549",
+       "accept": [],
+       "hint": "A data aparece quando ela explica o que é um auto.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como a professora chama as cartas e relatos que os jesuítas enviavam à Europa?",
+       "options": [
+        "Literatura informativa",
+        "Literatura de catequese",
+        "Poesia lírica",
+        "Auto pastoril"
+       ],
+       "answer": "Literatura informativa",
+       "accept": [],
+       "hint": "Pense no objetivo desses textos: descrever a terra e os povos.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual era o objetivo principal da literatura de catequese, segundo Helena?",
+       "options": [
+        "Ensinar a fé cristã e converter",
+        "Descrever plantas e animais",
+        "Divertir a corte portuguesa",
+        "Registrar leis da colônia"
+       ],
+       "answer": "Ensinar a fé cristã e converter",
+       "accept": [],
+       "hint": "Observe a palavra “catequese”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que papel na peça fica com Bia?",
+       "options": [],
+       "answer": "narradora",
+       "accept": [
+        "a narradora",
+        "narração",
+        "a narração"
+       ],
+       "hint": "É o papel que ela menos queria.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia inicialmente desconfia do projeto?",
+       "options": [
+        "Acha que um texto feito para convencer não pode ser arte",
+        "Tem medo de falar em público",
+        "Não gosta de música",
+        "Prefere fazer a pesquisa"
+       ],
+       "answer": "Acha que um texto feito para convencer não pode ser arte",
+       "accept": [],
+       "hint": "Veja o que ela pensa logo depois de cruzar os braços.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a pergunta de Iara (“quem estava do outro lado do palco?”) sugere?",
+       "options": [
+        "Que é preciso considerar o ponto de vista dos povos indígenas",
+        "Que o palco era pequeno demais",
+        "Que a plateia não gostava de teatro",
+        "Que os atores eram todos padres"
+       ],
+       "answer": "Que é preciso considerar o ponto de vista dos povos indígenas",
+       "accept": [],
+       "hint": "Pense em quem era o público da catequese.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Bia escreve “Talvez entre 1549 e agora” no caderno? Explique o que essa frase revela sobre a mudança dela no capítulo.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Relacione a frase com a ideia de “ponte” dita pela professora.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Anjos e diabos",
+     "synopsis": "No primeiro ensaio, a turma descobre a alegoria e a força cômica dos diabos nos autos jesuíticos, e Tomás finalmente ganha seu papel com chifres.",
+     "text": "O primeiro ensaio aconteceu no auditório, que cheirava a cortina velha e a cera de chão. Iara chegou com uma pilha de anotações e leu em voz alta o que tinha descoberto: nos autos jesuíticos, os personagens raramente eram pessoas comuns. Eram anjos, diabos, santos, a Alma, o Temor de Deus, o Amor. Ideias vestidas de gente.\n— Isso tem nome — disse a professora Helena. — Alegoria. Quando um personagem representa um conceito, como a virtude ou o pecado, o público entende a mensagem sem precisar de explicação longa.\nTomás levantou a mão com a urgência de quem vai pedir um favor.\n— Eu quero ser o diabo. O chefe dos diabos.\n— Por quê? — perguntou Bia, já anotando no caderno.\n— Porque o anjo só fala bonito. O diabo é que faz a festa.\nPara surpresa de Bia, a professora concordou. Explicou que, nos autos daquele tempo, os diabos costumavam ser os personagens mais divertidos: gabavam-se, mentiam, tropeçavam nas próprias armadilhas e, no fim, eram derrotados e expulsos de cena. O riso servia à lição. A plateia ria do mal e, rindo, aprendia a desprezá-lo.\nIara folheou as anotações e acrescentou um detalhe que fez a sala ficar quieta: em algumas peças, os diabos recebiam nomes de chefes indígenas inimigos dos portugueses e de seus aliados. O conflito do palco espelhava os conflitos da colônia.\n— Então o teatro também era propaganda — disse Davi, que até ali só batucava na cadeira.\n— Era uma forma de persuasão — respondeu Helena, escolhendo as palavras. — O bem e o mal aparecem bem separados, sem meio-termo. Os estudiosos chamam essa visão de maniqueísta. É simples, clara, eficiente para ensinar. E é justamente por isso que precisamos ler com atenção.\nO ensaio seguiu entre risadas. Tomás improvisou uma entrada triunfal, rodopiando a capa preta emprestada do figurino da peça do ano anterior. Gabava-se de ter enganado meio mundo e prometia levar todos para o seu reino de fumaça. O anjo, interpretado por uma menina do outro primeiro ano, só precisava erguer a mão e dizer uma frase para que ele saísse correndo, aos tropeços, pela coxia.\nA plateia improvisada, feita de colegas que deveriam estar estudando, explodiu em gargalhadas. Bia riu também, e depois se irritou consigo mesma por ter rido.\nNo fim do ensaio, ela escreveu no caderno: “O diabo é o personagem mais vivo da peça, mas existe só para perder. Será que o público daquela época torcia por ele, mesmo sabendo o final?”\nMostrou a frase para Tomás, que leu, pensou e devolveu o caderno com a seriedade de um ator premiado.\n— Torcia, claro. Ninguém lembra do anjo na saída.\nBia ficou com aquela resposta na cabeça a noite inteira. Talvez o teatro catequético fosse mais esperto do que ela imaginava: oferecia o prazer de olhar o mal de perto, e depois o tirava de cena com aplauso.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde acontece o primeiro ensaio?",
+       "options": [
+        "No auditório",
+        "Na sala de aula",
+        "No pátio",
+        "Na biblioteca"
+       ],
+       "answer": "No auditório",
+       "accept": [],
+       "hint": "Releia a primeira frase.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como se chama o recurso em que um personagem representa uma ideia, como a virtude ou o pecado?",
+       "options": [],
+       "answer": "alegoria",
+       "accept": [
+        "a alegoria"
+       ],
+       "hint": "A professora dá o nome logo no começo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Tomás quer ser o diabo?",
+       "options": [
+        "Acha o diabo mais divertido que o anjo",
+        "Quer ganhar uma nota maior",
+        "Não decorou as falas do anjo",
+        "A professora mandou"
+       ],
+       "answer": "Acha o diabo mais divertido que o anjo",
+       "accept": [],
+       "hint": "Veja a resposta dele à pergunta de Bia.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como os diabos costumavam terminar nos autos jesuíticos?",
+       "options": [
+        "Derrotados e expulsos de cena",
+        "Perdoados e transformados em anjos",
+        "Vitoriosos sobre os santos",
+        "Esquecidos no meio da peça"
+       ],
+       "answer": "Derrotados e expulsos de cena",
+       "accept": [],
+       "hint": "Pense na lição que a peça queria ensinar.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que detalhe Iara descobre sobre os nomes dos diabos em algumas peças?",
+       "options": [
+        "Eram nomes de chefes indígenas inimigos dos portugueses",
+        "Eram nomes de cidades europeias",
+        "Eram nomes de planetas",
+        "Eram nomes inventados pelos atores"
+       ],
+       "answer": "Eram nomes de chefes indígenas inimigos dos portugueses",
+       "accept": [],
+       "hint": "O detalhe deixa a sala em silêncio.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que palavra a professora usa para a visão em que o bem e o mal aparecem totalmente separados, sem meio-termo?",
+       "options": [],
+       "answer": "maniqueísta",
+       "accept": [
+        "maniqueista",
+        "maniqueísmo",
+        "maniqueismo"
+       ],
+       "hint": "É um adjetivo que os estudiosos usam.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, qual era a função do riso nos autos?",
+       "options": [
+        "Ajudar a ensinar a lição, fazendo o público desprezar o mal",
+        "Apenas preencher o tempo entre as cenas",
+        "Criticar os padres",
+        "Distrair o público da mensagem religiosa"
+       ],
+       "answer": "Ajudar a ensinar a lição, fazendo o público desprezar o mal",
+       "accept": [],
+       "hint": "A resposta está na frase “O riso servia à lição”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Bia “se irritou consigo mesma por ter rido”? O que isso mostra sobre a força do teatro catequético?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre-se do que Bia pensava sobre textos feitos para convencer.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Três línguas no palco",
+     "synopsis": "Iara apresenta o plurilinguismo dos autos jesuíticos e conta uma história da avó, levando a turma a pensar no que significa usar a língua do outro para mudar suas crenças.",
+     "text": "Na terceira semana, Iara pediu dez minutos do ensaio e projetou na parede do auditório uma única frase: “Em que língua se reza para quem não fala a sua?”.\nEla explicou que muitos autos e poemas da catequese não foram escritos só em português. Misturavam tupi, português e espanhol, e alguns poemas eram em latim, a língua da Igreja. Cada língua tinha seu lugar: o tupi para o público indígena, o português e o espanhol para os colonos e soldados, o latim para os assuntos mais solenes. Uma mesma peça podia mudar de idioma de uma cena para outra.\n— Os missionários aprenderam o tupi falado no litoral — continuou Iara. — Um deles escreveu uma gramática dessa língua, publicada no fim do século XVI. A língua que os portugueses usavam para conversar com os povos da costa ficou conhecida como língua geral.\nDavi ergueu as sobrancelhas.\n— Então eles fizeram o esforço de aprender a língua dos indígenas. Isso é respeito, não é?\nIara demorou a responder. Bia percebeu que ela apertava a ponta da folha entre os dedos.\n— Minha avó fala guarani — disse, por fim. — Ela cresceu em Mato Grosso do Sul. Quando eu era pequena, ela me contava que, na escola dela, as crianças levavam bronca se falassem a língua de casa. Ela aprendeu a rezar em português antes de aprender a ler.\nO auditório ficou em silêncio. Até Tomás, que estava pendurado de cabeça para baixo numa cadeira, sentou-se direito.\n— Aprender a língua do outro pode ser uma ponte — Iara continuou, olhando para Bia como se devolvesse a palavra do caderno. — Mas a ponte também serve para atravessar e mudar o que existe do outro lado. Os padres usavam o tupi para levar a fé cristã. Algumas palavras indígenas ganharam sentidos novos. Uma explicação muito conhecida diz que Anhangá, um espírito temido em crenças tupis, passou a ser associado ao diabo cristão. Vocês sabem de onde vem o nome Anhangabaú, aqui no centro?\nNinguém sabia. Iara contou que uma tradução comum é “rio do espírito mau”. A turma inteira já tinha passado pelo vale, muitos de skate, sem imaginar que o nome guardava uma história de traduções e disputas.\nA professora Helena, que ouvia encostada na parede, falou baixo:\n— Por isso o plurilinguismo é uma das marcas mais interessantes desse teatro. Ele mostra a adaptação dos missionários ao público, e também mostra que a catequese era uma forma de transformar culturas. As duas coisas são verdade ao mesmo tempo.\nBia escreveu no caderno, tentando acompanhar: “Três línguas no palco. Uma ponte que vai e não volta igual.”\nAntes do fim do ensaio, a turma decidiu uma regra para a montagem: não iriam inventar frases em tupi que não conheciam. Usariam palavras de origem tupi que todos já falavam sem perceber, como pitanga, mandioca, capim e Ibirapuera, e Iara faria uma fala explicando de onde elas vinham.\n— Para mostrar que a língua ficou — disse ela —, mesmo quando quiseram que ela fosse embora.\nBia sublinhou essa frase duas vezes.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual frase Iara projeta na parede do auditório?",
+       "options": [
+        "“Em que língua se reza para quem não fala a sua?”",
+        "“Quem tem medo do diabo?”",
+        "“Toda arte é propaganda.”",
+        "“A língua é uma ponte.”"
+       ],
+       "answer": "“Em que língua se reza para quem não fala a sua?”",
+       "accept": [],
+       "hint": "Releia o primeiro parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quais línguas aparecem misturadas nos autos e poemas da catequese?",
+       "options": [
+        "Tupi, português, espanhol e latim",
+        "Francês, tupi e inglês",
+        "Guarani, italiano e grego",
+        "Apenas português e latim"
+       ],
+       "answer": "Tupi, português, espanhol e latim",
+       "accept": [],
+       "hint": "Iara cita quatro idiomas.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como ficou conhecida a língua que os portugueses usavam para conversar com os povos da costa?",
+       "options": [],
+       "answer": "língua geral",
+       "accept": [
+        "lingua geral",
+        "a língua geral"
+       ],
+       "hint": "São duas palavras.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que língua fala a avó de Iara?",
+       "options": [
+        "Guarani",
+        "Tupi",
+        "Espanhol",
+        "Latim"
+       ],
+       "answer": "Guarani",
+       "accept": [],
+       "hint": "Ela cresceu em Mato Grosso do Sul.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo uma explicação comum citada por Iara, a que Anhangá passou a ser associado?",
+       "options": [
+        "Ao diabo cristão",
+        "A um anjo",
+        "A um rio sagrado",
+        "A um santo português"
+       ],
+       "answer": "Ao diabo cristão",
+       "accept": [],
+       "hint": "Pense no nome Anhangabaú.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que regra a turma decide para a montagem?",
+       "options": [
+        "Não inventar frases em tupi e usar palavras de origem tupi já conhecidas",
+        "Fazer a peça inteira em latim",
+        "Traduzir tudo para o inglês",
+        "Cortar as falas em espanhol"
+       ],
+       "answer": "Não inventar frases em tupi e usar palavras de origem tupi já conhecidas",
+       "accept": [],
+       "hint": "Veja o penúltimo bloco do capítulo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Iara quer dizer com “a ponte também serve para atravessar e mudar o que existe do outro lado”?",
+       "options": [
+        "Que aprender a língua do outro também foi usado para transformar a cultura dele",
+        "Que as pontes de São Paulo estão em mau estado",
+        "Que os padres não aprenderam bem o tupi",
+        "Que o teatro precisava de cenário"
+       ],
+       "answer": "Que aprender a língua do outro também foi usado para transformar a cultura dele",
+       "accept": [],
+       "hint": "Relacione a frase com a resposta que ela dá a Davi.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Bia sublinha duas vezes a frase “mesmo quando quiseram que ela fosse embora”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense na história da avó de Iara e nas palavras de origem tupi do português.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: Sete sílabas",
+     "synopsis": "Davi descobre a redondilha maior, o verso de sete sílabas poéticas da medida velha, e a turma reescreve as falas para que possam ser cantadas e decoradas.",
+     "text": "Davi passou uma semana inteira tentando musicar as falas da peça, e nada encaixava. As frases eram longas demais, ou curtas demais, e a melodia tropeçava nelas como Tomás tropeçava na capa.\nFoi Iara quem trouxe a resposta, numa fotocópia cheia de setas a lápis. Os poemas e muitas falas dos autos jesuíticos eram escritos em versos curtos, quase sempre em redondilha maior: versos de sete sílabas poéticas. Às vezes apareciam também versos de cinco sílabas, a redondilha menor. Esse era o ritmo da chamada medida velha, herdada da poesia medieval da Península Ibérica, a mesma das cantigas que o povo sabia de cor.\n— Sete sílabas? — Davi riu. — Moleza. É só contar.\nNão era moleza. A professora Helena foi até o quadro e explicou que sílaba poética não é igual a sílaba gramatical. Na escansão, a gente conta só até a última sílaba tônica do verso, e vogais de palavras vizinhas podem se juntar numa só sílaba quando lidas em voz alta.\nEscreveu um verso inventado: “Quem na mata quer cantar”.\n— Quem, na, ma, ta, quer, can, tar. Sete. A última tônica é o “tar”, e paramos ali.\nDepois escreveu outro: “A noite vem devagar”. A turma contou junto, batendo na mesa: a, noi, te, vem, de, va, gar. Sete outra vez. E, para mostrar a redondilha menor, escreveu: “O vento passou”. O, ven, to, pas, sou. Cinco.\nDavi pegou o violão e cantou os dois primeiros versos em sequência. A melodia, de repente, deslizou. Tinha balanço, tinha volta, tinha rima: cantar e devagar.\n— É por isso — disse Helena — que esse verso funcionava tão bem na catequese. Verso curto, ritmo regular e rima ajudam a memorizar. Muita gente na colônia não sabia ler. A doutrina precisava caber no ouvido e na boca, ser cantada em procissão, repetida em coro. A forma estava a serviço da mensagem.\nBia, que até então só anotava, sentiu um incômodo conhecido. Lá estava de novo: arte usada para convencer. Mas, ao mesmo tempo, não conseguia negar que a melodia de Davi era bonita. Talvez as duas coisas pudessem existir juntas, pensou, como Iara tinha dito sobre a ponte.\nA tarefa daquele dia foi reescrever as falas mais importantes em versos de sete sílabas. Tomás reclamou que diabo nenhum fala contando nos dedos, mas acabou produzindo, depois de muito apagar, uma quadra que fez todo mundo rir. Iara escreveu as falas do coro. E Bia, para sua própria surpresa, criou a abertura da narradora inteira em redondilha maior, com rimas alternadas.\nQuando leu em voz alta, a sala bateu o ritmo na mesa sem que ninguém pedisse.\nNo caminho de casa, ela ainda contava sílabas em tudo: placas, anúncios, o nome das estações. “Próxima estação”, disse a voz do metrô, e Bia contou nos dedos, rindo sozinha. A medida velha tinha entrado nela como uma música que não sai da cabeça.\nEscreveu no caderno: “Uma forma simples não quer dizer um texto simples. Quer dizer um texto feito para ser lembrado.”",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual problema Davi enfrenta no início?",
+       "options": [
+        "As falas não encaixavam na melodia",
+        "O violão estava quebrado",
+        "Ele esqueceu as falas",
+        "A turma não queria música"
+       ],
+       "answer": "As falas não encaixavam na melodia",
+       "accept": [],
+       "hint": "Releia o primeiro parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como se chama o verso de sete sílabas poéticas?",
+       "options": [],
+       "answer": "redondilha maior",
+       "accept": [
+        "a redondilha maior"
+       ],
+       "hint": "São duas palavras; há também uma versão “menor”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quantas sílabas poéticas tem a redondilha menor?",
+       "options": [],
+       "answer": "cinco",
+       "accept": [
+        "5",
+        "cinco sílabas"
+       ],
+       "hint": "Veja o exemplo “O vento passou”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como é chamado o ritmo herdado da poesia medieval da Península Ibérica?",
+       "options": [
+        "Medida velha",
+        "Medida nova",
+        "Verso livre",
+        "Soneto"
+       ],
+       "answer": "Medida velha",
+       "accept": [],
+       "hint": "Iara cita esse nome na fotocópia.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, até onde se contam as sílabas de um verso na escansão?",
+       "options": [
+        "Até a última sílaba tônica",
+        "Até a última letra",
+        "Até a primeira vírgula",
+        "Até a última vogal átona"
+       ],
+       "answer": "Até a última sílaba tônica",
+       "accept": [],
+       "hint": "A professora explica isso com o verso “Quem na mata quer cantar”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo Helena, por que o verso curto e rimado funcionava bem na catequese?",
+       "options": [
+        "Ajudava a memorizar e a cantar a doutrina",
+        "Era mais fácil de imprimir",
+        "Agradava apenas aos padres",
+        "Evitava o uso do tupi"
+       ],
+       "answer": "Ajudava a memorizar e a cantar a doutrina",
+       "accept": [],
+       "hint": "Pense em quem não sabia ler.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que a abertura escrita por Bia deu certo?",
+       "options": [
+        "A sala bateu o ritmo na mesa sem que ninguém pedisse",
+        "A professora deu nota dez",
+        "Tomás pediu para trocar de papel",
+        "Davi apagou a melodia"
+       ],
+       "answer": "A sala bateu o ritmo na mesa sem que ninguém pedisse",
+       "accept": [],
+       "hint": "Veja a reação da turma quando ela lê em voz alta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Bia conclui que “uma forma simples não quer dizer um texto simples”? Você concorda?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense na relação entre forma e mensagem discutida no capítulo.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O poema na areia",
+     "synopsis": "Ao estudar a poesia devocional da catequese, a turma ouve uma lenda sobre versos escritos na areia e discute a diferença entre lenda e documento.",
+     "text": "Choveu a semana toda, e o ensaio de quinta-feira virou aula na biblioteca. A professora Helena espalhou sobre a mesa cópias de poemas devocionais do período colonial: versos dedicados a Maria, a santos, à Eucaristia. Eram poemas líricos, explicou, diferentes do teatro. Não tinham diabos tropeçando nem plateia rindo. Tinham um eu que falava de amor, de fé e de entrega.\n— Reparem como as imagens são simples — disse ela. — Flor, luz, fonte, mar, pastor. O poeta usa elementos que qualquer pessoa reconhece para falar de coisas que não se veem. E muitos desses poemas têm um tom terno, quase de cantiga de ninar.\nTomás, sem o figurino, parecia menor. Leu um dos poemas em silêncio e comentou, meio sem jeito, que era bonito. Ninguém riu.\nFoi então que Helena contou uma história. Nos anos 1560, durante negociações de paz entre portugueses e povos tamoios no litoral norte de São Paulo, um missionário teria ficado meses como refém numa aldeia, garantindo o acordo. Conta-se que, nesse tempo, ele compôs um longo poema em latim dedicado à Virgem e, sem papel, escrevia os versos na areia da praia para decorá-los, transcrevendo-os depois.\nDavi soltou um assobio.\n— Um poema inteiro na areia? E a maré?\n— Essa é a pergunta certa — disse Helena. — A história é contada há séculos e virou quase um símbolo. Mas o que a gente sabe com segurança é que o poema existe. A cena da areia, com a maré apagando os versos, é tradição. Literatura também é saber separar o documento da lenda.\nIara anotou tudo, e depois perguntou baixinho por que uma lenda como aquela sobrevivia tanto tempo.\n— Porque ela conta uma história que muita gente quer ouvir — respondeu a professora. — A do missionário paciente, quase santo, que escreve a fé na areia. Lendas também têm autor e intenção. Também convencem.\nBia passou o resto da tarde olhando pela janela molhada da biblioteca. Pensava na areia, na maré, no esforço de decorar centenas de versos. E pensava em como o mesmo episódio, contado de outro lado, seria diferente. Para a aldeia, o refém era um estrangeiro, um garantidor de trégua, talvez uma curiosidade. O que os tamoios pensavam daquele homem que riscava o chão da praia? Nenhuma cópia em cima da mesa respondia.\nAntes de ir embora, ela pegou o caderno e tentou escrever um poema seu, em redondilha maior, sobre a cena. Não sobre a fé do missionário, mas sobre a areia: o que ela guardava e o que ela apagava. Escreveu, riscou, reescreveu. No fim, ficaram quatro versos que ela não mostrou a ninguém.\nSó copiou, embaixo, uma frase para lembrar: “Toda história que sobrevive tem alguém que quis que ela sobrevivesse.”\nQuando saiu da escola, a chuva tinha parado. Na calçada, alguém tinha desenhado uma amarelinha com giz, já meio desmanchada pela água. Bia pulou as casas uma por uma, sem pressa, e pensou que a maré da cidade também apagava coisas todos os dias.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o ensaio de quinta-feira vira aula na biblioteca?",
+       "options": [
+        "Por causa da chuva",
+        "Porque o auditório estava em reforma",
+        "Porque a professora estava doente",
+        "Porque havia prova"
+       ],
+       "answer": "Por causa da chuva",
+       "accept": [],
+       "hint": "Releia a primeira frase.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, a quem eram dedicados os poemas devocionais que a professora mostra?",
+       "options": [
+        "A Maria, a santos e à Eucaristia",
+        "A reis e rainhas de Portugal",
+        "A heróis indígenas",
+        "Aos alunos da turma"
+       ],
+       "answer": "A Maria, a santos e à Eucaristia",
+       "accept": [],
+       "hint": "A lista aparece no primeiro parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que tipo de imagens a professora destaca nesses poemas?",
+       "options": [
+        "Imagens simples, como flor, luz, fonte e mar",
+        "Imagens de máquinas e cidades",
+        "Imagens de batalhas sangrentas",
+        "Imagens de festas da corte"
+       ],
+       "answer": "Imagens simples, como flor, luz, fonte e mar",
+       "accept": [],
+       "hint": "Ela diz que qualquer pessoa reconhece esses elementos.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, em que língua teria sido composto o longo poema dedicado à Virgem?",
+       "options": [],
+       "answer": "latim",
+       "accept": [
+        "em latim",
+        "o latim"
+       ],
+       "hint": "É a língua da Igreja citada em capítulos anteriores.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, o que se sabe com segurança sobre a história da areia?",
+       "options": [
+        "Que o poema existe; a cena da areia é tradição",
+        "Que a maré apagou o poema inteiro",
+        "Que a história foi inventada na escola",
+        "Que o poema foi escrito em tupi"
+       ],
+       "answer": "Que o poema existe; a cena da areia é tradição",
+       "accept": [],
+       "hint": "Pense na diferença entre documento e lenda.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que pergunta Bia faz a si mesma olhando pela janela?",
+       "options": [
+        "O que os tamoios pensavam do homem que riscava a praia",
+        "Quando a chuva ia parar",
+        "Quem tinha desenhado a amarelinha",
+        "Por que Tomás estava sem figurino"
+       ],
+       "answer": "O que os tamoios pensavam do homem que riscava a praia",
+       "accept": [],
+       "hint": "Ela imagina o episódio contado de outro lado.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase “Toda história que sobrevive tem alguém que quis que ela sobrevivesse” sugere?",
+       "options": [
+        "Que as histórias são preservadas por pessoas com intenções",
+        "Que só as histórias verdadeiras sobrevivem",
+        "Que as lendas não têm valor",
+        "Que a areia guarda tudo"
+       ],
+       "answer": "Que as histórias são preservadas por pessoas com intenções",
+       "accept": [],
+       "hint": "Relacione com a fala da professora: “Lendas também têm autor e intenção.”",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o capítulo termina com a amarelinha desmanchada pela chuva? Que relação ela tem com o poema na areia?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Compare o giz e a água com a areia e a maré.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Quem não tem fala",
+     "synopsis": "Ao revisar o roteiro, Iara percebe que os personagens indígenas quase não falam por si, e a turma debate se pode criar uma cena nova sem trair o estudo do texto original.",
+     "text": "A duas semanas da estreia, a turma se reuniu para ler o roteiro inteiro em voz alta. Foi uma leitura boa, cheia de risadas nas cenas de Tomás e de silêncio nas canções de Davi. Mas, quando terminou, Iara não fechou a pasta.\n— Vocês repararam quantas falas os personagens indígenas têm?\nNinguém tinha reparado. Bia contou: duas. Uma era de uma alma arrependida que pedia perdão. A outra era de um velho que dizia ter deixado os antigos costumes. Nas cenas restantes, os indígenas eram a plateia a ser salva ou os diabos a serem expulsos.\n— É fiel ao modelo dos autos — disse Davi, na defensiva. — A gente pesquisou.\n— É fiel — concordou Iara. — E é exatamente isso que me incomoda. Nos textos da catequese, as crenças indígenas aparecem como erro, como coisa do diabo. Quase nunca como um jeito próprio de entender o mundo. A gente vai repetir isso no palco e pronto?\nTomás tirou os chifres da cabeça e os segurou no colo. Pela primeira vez, o diabo da turma parecia não ter o que dizer.\nA professora Helena puxou uma cadeira e se sentou no meio da roda.\n— Vocês estão diante de uma questão que os estudiosos discutem muito — disse. — Existe o perigo do anacronismo, que é julgar um texto do século XVI só com valores de hoje, como se os autores pudessem pensar como nós. E existe o perigo oposto, que é ler sem nenhuma crítica, como se o texto fosse neutro. Ler bem é segurar as duas coisas: entender o contexto e perceber o que o texto cala.\n— Então o que a gente faz? — perguntou Bia.\nIara já tinha a resposta pronta, escrita numa folha dobrada em quatro. Propôs que a peça mantivesse a estrutura do auto, com seus anjos, diabos e coro, para que o público conhecesse a forma original. Mas, no fim, a narradora sairia de cena e daria lugar a um epílogo novo. Nele, uma personagem indígena falaria por si, em versos de sete sílabas, sobre o que tinha sido perdido e o que tinha resistido.\n— Não é para corrigir o texto antigo — explicou. — É para conversar com ele. Uma releitura. Deixando claro para a plateia o que é de lá e o que é de agora.\nDavi coçou a cabeça e admitiu que gostava da ideia. Tomás disse que, se o diabo podia ter a melhor entrada, alguém merecia a melhor saída. Helena aprovou com uma condição: o epílogo teria que ser apresentado como criação da turma, e não como parte do teatro jesuítico.\nBia ficou com uma sensação esquisita. Ela era a narradora, a ponte. Agora a ponte ia ceder a palavra.\nNaquela noite, escreveu no caderno: “Narrar também é decidir quem fala. Durante quatro séculos, o roteiro foi o mesmo. Em dois minutos de epílogo, não dá para mudar a história. Mas dá para mostrar que ela tinha mais de um lado.”\nDepois mandou uma mensagem para Iara: “Quer ajuda com as rimas?”\nA resposta veio rápida: “Quero. Mas a última estrofe eu escrevo sozinha.”\nBia achou justo.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quantas falas os personagens indígenas têm no roteiro, segundo a contagem de Bia?",
+       "options": [
+        "Duas",
+        "Nenhuma",
+        "Cinco",
+        "Dez"
+       ],
+       "answer": "Duas",
+       "accept": [],
+       "hint": "Bia conta logo depois da pergunta de Iara.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como as crenças indígenas aparecem nos textos da catequese, segundo Iara?",
+       "options": [
+        "Como erro ou coisa do diabo",
+        "Como sabedoria a ser preservada",
+        "Como tema de comédia",
+        "Como tradição europeia"
+       ],
+       "answer": "Como erro ou coisa do diabo",
+       "accept": [],
+       "hint": "Veja a resposta dela a Davi.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como se chama o erro de julgar um texto antigo apenas com os valores de hoje?",
+       "options": [],
+       "answer": "anacronismo",
+       "accept": [
+        "o anacronismo"
+       ],
+       "hint": "A professora explica esse perigo na roda.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Iara propõe para o final da peça?",
+       "options": [
+        "Um epílogo em que uma personagem indígena fala por si",
+        "Cortar todas as cenas de diabos",
+        "Trocar o português pelo latim",
+        "Encerrar com a narradora tirando a lição"
+       ],
+       "answer": "Um epílogo em que uma personagem indígena fala por si",
+       "accept": [],
+       "hint": "Ela traz a proposta numa folha dobrada.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que condição a professora impõe para aprovar o epílogo?",
+       "options": [
+        "Ele deve ser apresentado como criação da turma",
+        "Ele deve ser escrito em latim",
+        "Ele deve ter só uma fala",
+        "Ele deve ser cantado por Tomás"
+       ],
+       "answer": "Ele deve ser apresentado como criação da turma",
+       "accept": [],
+       "hint": "Pense na diferença entre o que é “de lá” e “de agora”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que o gesto de Tomás tirar os chifres e segurá-los no colo sugere?",
+       "options": [
+        "Que ele ficou pensativo e sem resposta",
+        "Que ele desistiu da peça",
+        "Que os chifres estavam quebrados",
+        "Que ele queria trocar de papel com Iara"
+       ],
+       "answer": "Que ele ficou pensativo e sem resposta",
+       "accept": [],
+       "hint": "Leia a frase que vem logo depois do gesto.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Bia quer dizer com “agora a ponte ia ceder a palavra”?",
+       "options": [
+        "Que a narradora daria espaço para outra voz contar a história",
+        "Que o cenário da ponte seria retirado",
+        "Que ela ia desistir de narrar",
+        "Que a peça seria cancelada"
+       ],
+       "answer": "Que a narradora daria espaço para outra voz contar a história",
+       "accept": [],
+       "hint": "Lembre-se de que Bia é chamada de “ponte” desde o primeiro capítulo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Iara quer escrever sozinha a última estrofe? Você acha que Bia faz bem em achar isso justo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em quem tem o direito de falar por si no epílogo.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A noite da estreia",
+     "synopsis": "A turma apresenta o auto com procissão, música e humor, e o epílogo de Iara transforma o fim da peça; Bia encontra sua resposta para a pergunta do primeiro dia.",
+     "text": "Na noite da estreia, o pátio da escola virou praça. Davi teve a ideia de começar a peça fora do auditório, como se fazia nos autos coloniais, que muitas vezes eram encenados ao ar livre, em dias de festa, com procissão, música e dança. O público, formado por famílias, professores e alunos de outras turmas, foi chamado a seguir o coro com velas de LED até as portas do auditório.\nBia abriu o espetáculo no alto da escada, segurando o caderno de capa dura como se fosse um livro antigo. Recitou a abertura em redondilha maior, e na terceira estrofe sentiu que a plateia já balançava a cabeça no ritmo. Explicou o que iam ver: um auto inspirado no teatro jesuítico do século XVI, com anjos, diabos e almas, cantado em mais de uma língua, feito para ensinar.\nDentro do auditório, Tomás roubou a cena, como todos esperavam. Entrou rodopiando a capa, gabou-se de suas artimanhas, enganou dois personagens e, ao ser enfrentado pelo anjo, fugiu tropeçando de um jeito tão bem ensaiado que um menino da primeira fila caiu na gargalhada e não parou mais. As canções de Davi, com seus versos de sete sílabas, fizeram metade da plateia cantar o refrão na segunda vez em que ele apareceu.\nEntão, como estava no roteiro, a narradora tirou a lição da peça e, em vez de encerrar, desceu do palco e se sentou na escada lateral. As luzes baixaram. Um cartaz simples foi erguido por dois colegas: “Epílogo: criação da turma”.\nIara entrou sozinha, sem figurino especial, só com uma blusa da cor da terra. Falou em versos de sete sílabas, como os outros. Mas a voz dela não ensinava nem condenava. Lembrava. Falou de palavras que tinham ficado na boca da cidade, pitanga, capim, Ibirapuera; de uma avó que rezava em português e sonhava em guarani; de uma língua que quiseram calar e que continuava a ser falada. A última estrofe, a que escreveu sozinha, terminava com um verso que Bia nunca tinha ouvido:\n“A areia apaga o caminho, mas não apaga quem passou.”\nPor um instante, ninguém se mexeu. Depois veio o aplauso, longo, desigual, com gente de pé.\nNa saída, a professora Helena encontrou Bia ainda sentada na escada.\n— E então? — perguntou. — Dá para ler um texto feito para catequizar como literatura?\nBia abriu o caderno na última página, onde tinha escrito a resposta na véspera, depois de muitas tentativas.\n— Dá — leu. — Ele tem forma, ritmo, personagens, humor, e foi pensado para tocar quem ouvia. Mas também é um documento de uma época em que uma cultura tentou mudar a outra. A gente lê bem quando enxerga as duas coisas: a arte e o que a arte calava.\nHelena não disse nada. Apenas tocou o ombro dela e foi cumprimentar as famílias.\nTomás apareceu de chifres tortos, pedindo uma foto. Davi guardava o violão. Iara, rodeada de gente, procurou Bia com os olhos e levantou o polegar.\nBia fechou o caderno. Lembrou-se da primeira página, onde tinha perguntado “uma ponte entre o quê e o quê?”. Agora sabia que a resposta não cabia numa linha. Uma ponte entre 1549 e agora, sim. Mas também entre quem falava e quem tinha sido calado. E, naquela noite, entre um palco e uma plateia que saiu cantando em sete sílabas pelo pátio escuro.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde começa a apresentação da peça?",
+       "options": [
+        "No pátio da escola",
+        "No palco do auditório",
+        "Na biblioteca",
+        "Na rua em frente à escola"
+       ],
+       "answer": "No pátio da escola",
+       "accept": [],
+       "hint": "Davi quis imitar os autos coloniais.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi decide começar a peça ao ar livre, com procissão?",
+       "options": [
+        "Porque os autos coloniais muitas vezes eram encenados assim, em dias de festa",
+        "Porque o auditório estava fechado",
+        "Porque chovia lá dentro",
+        "Porque a plateia era grande demais"
+       ],
+       "answer": "Porque os autos coloniais muitas vezes eram encenados assim, em dias de festa",
+       "accept": [],
+       "hint": "Releia o primeiro parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como Tomás sai de cena ao ser enfrentado pelo anjo?",
+       "options": [
+        "Foge tropeçando",
+        "Pede perdão e vira anjo",
+        "Canta uma canção",
+        "Fica em silêncio no palco"
+       ],
+       "answer": "Foge tropeçando",
+       "accept": [],
+       "hint": "Igual ao que se ensaiou no capítulo 2.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que diz o cartaz erguido antes do epílogo?",
+       "options": [
+        "“Epílogo: criação da turma”",
+        "“Fim”",
+        "“Auto do século XVI”",
+        "“Intervalo”"
+       ],
+       "answer": "“Epílogo: criação da turma”",
+       "accept": [],
+       "hint": "Lembre-se da condição imposta pela professora.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como é a voz de Iara no epílogo, comparada às outras falas da peça?",
+       "options": [
+        "Ela não ensina nem condena; lembra",
+        "Ela é cômica, como a do diabo",
+        "Ela tira a lição moral da peça",
+        "Ela é falada em latim"
+       ],
+       "answer": "Ela não ensina nem condena; lembra",
+       "accept": [],
+       "hint": "Procure a frase curta que define a voz dela.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, em versos de quantas sílabas Iara fala no epílogo?",
+       "options": [],
+       "answer": "sete",
+       "accept": [
+        "7",
+        "sete sílabas"
+       ],
+       "hint": "É a mesma medida dos outros personagens.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a resposta final de Bia, o que significa ler bem um texto de catequese?",
+       "options": [
+        "Enxergar ao mesmo tempo a arte e o que ela calava",
+        "Ler apenas como documento histórico",
+        "Ler apenas pela beleza dos versos",
+        "Ignorar o contexto da época"
+       ],
+       "answer": "Enxergar ao mesmo tempo a arte e o que ela calava",
+       "accept": [],
+       "hint": "Releia a fala dela para a professora.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o verso “A areia apaga o caminho, mas não apaga quem passou” emociona tanto a plateia? Relacione-o com o capítulo 5.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense na lenda do poema na areia e na história da avó de Iara.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
