@@ -1548,6 +1548,2584 @@
      "errors": []
     }
    ]
+  },
+  "comp-hl": {
+   "topic": "IA: final submission and academic integrity",
+   "questions": [
+    {
+     "id": "r1uzbj1f1k5nowh",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A checklist before final submission should mainly confirm that:",
+     "options": [
+      "all required components are present and consistent with each other",
+      "the program has as many lines as possible",
+      "every function uses recursion",
+      "the write-up avoids any diagrams"
+     ],
+     "answer": "all required components are present and consistent with each other",
+     "accept": [],
+     "hint": "Documentation, product and video must tell the same story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ncllmt1m3k516",
+     "subject": "comp",
+     "type": "short",
+     "q": "Which term names the IB principle of producing honest, properly acknowledged work? (two words)",
+     "options": [],
+     "answer": "academic integrity",
+     "accept": [
+      "academic honesty"
+     ],
+     "hint": "There is an IB policy with this name.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tdzrh21vyl4q3",
+     "subject": "comp",
+     "type": "mc",
+     "q": "You used an open-source library for encryption. Which acknowledgement is most complete?",
+     "options": [
+      "Name the library, state its source and licence, and explain what it does in your solution",
+      "Write 'some code from the internet'",
+      "Only mention it if the moderator asks",
+      "List it in the file name"
+     ],
+     "answer": "Name the library, state its source and licence, and explain what it does in your solution",
+     "accept": [],
+     "hint": "A good citation lets a reader find and understand the source.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp9ecc51fuain0",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Why is it important to show clearly which parts of the code you wrote and which come from libraries?",
+     "options": [
+      "Credit for complexity and ingenuity can only be given for your own work",
+      "Libraries always contain errors",
+      "Moderators do not read code",
+      "It makes the program run faster"
+     ],
+     "answer": "Credit for complexity and ingenuity can only be given for your own work",
+     "accept": [],
+     "hint": "What exactly is being assessed?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18si01l1chzkzm",
+     "subject": "comp",
+     "type": "short",
+     "q": "What one-word term describes presenting another person's ideas or code as your own?",
+     "options": [],
+     "answer": "plagiarism",
+     "accept": [],
+     "hint": "It is the most common breach of integrity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11w1w011ms6612",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which situation is collusion rather than collaboration?",
+     "options": [
+      "Two students submit nearly identical class structures they wrote together",
+      "A student asks the teacher to explain a concept",
+      "Students discuss what a client interview is",
+      "A student reads the official documentation of a language"
+     ],
+     "answer": "Two students submit nearly identical class structures they wrote together",
+     "accept": [],
+     "hint": "Collaboration is allowed; submitting shared work as individual work is not.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16h3zwx1haobrt",
+     "subject": "comp",
+     "type": "mc",
+     "q": "You adapted an algorithm from a textbook. The best practice is to:",
+     "options": [
+      "cite the textbook in the documentation and comment the adapted code",
+      "rewrite it in another language to hide the source",
+      "say you invented it",
+      "leave it out of the documentation"
+     ],
+     "answer": "cite the textbook in the documentation and comment the adapted code",
+     "accept": [],
+     "hint": "Adapting is acceptable when it is transparent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v0kap61vgxg6l",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which statement about using an AI assistant during the IA is best aligned with IB expectations?",
+     "options": [
+      "Any use must be acknowledged, and the work submitted must reflect the student's own understanding",
+      "AI use never needs to be mentioned",
+      "AI may write the entire product if it is cited",
+      "Only the teacher may use AI"
+     ],
+     "answer": "Any use must be acknowledged, and the work submitted must reflect the student's own understanding",
+     "accept": [],
+     "hint": "Treat AI output like any other source.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r4x7v61xk0x8l",
+     "subject": "comp",
+     "type": "short",
+     "q": "A comment placed above imported code to credit its origin is usually called what kind of statement? (one word)",
+     "options": [],
+     "answer": "attribution",
+     "accept": [
+      "acknowledgement",
+      "acknowledgment",
+      "citation",
+      "reference"
+     ],
+     "hint": "It 'attributes' the code to its author.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mb5l888tev75",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Why should you test your final files on a different computer before uploading?",
+     "options": [
+      "To catch missing dependencies or paths that only exist on your machine",
+      "To make the files smaller",
+      "To change the authorship",
+      "To increase the word count"
+     ],
+     "answer": "To catch missing dependencies or paths that only exist on your machine",
+     "accept": [],
+     "hint": "Think about absolute file paths and installed libraries.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b25q55b9y2q",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which of these does the teacher do when signing off the IA?",
+     "options": [
+      "Confirms that, to the best of their knowledge, the work is the student's own",
+      "Corrects all remaining errors",
+      "Adds missing features",
+      "Awards the final IB grade"
+     ],
+     "answer": "Confirms that, to the best of their knowledge, the work is the student's own",
+     "accept": [],
+     "hint": "This is called authentication.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jwoqir25n4ps",
+     "subject": "comp",
+     "type": "mc",
+     "q": "The teacher's feedback on a draft is useful because:",
+     "options": [
+      "it helps you improve, but you must make the changes yourself",
+      "the teacher will then rewrite the weak sections",
+      "it guarantees full marks",
+      "it can be given on unlimited drafts"
+     ],
+     "answer": "it helps you improve, but you must make the changes yourself",
+     "accept": [],
+     "hint": "Who is responsible for the final work?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf7qkvk168993",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A library performs most of the difficult processing in your product. What is the likely effect on assessment of complexity?",
+     "options": [
+      "Less credit, because the complexity is not the student's own",
+      "More credit, because the product is more powerful",
+      "No effect at all",
+      "Automatic full marks"
+     ],
+     "answer": "Less credit, because the complexity is not the student's own",
+     "accept": [],
+     "hint": "Credit follows authorship.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkqluieq088yg",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Your documentation describes a search feature, but the video does not show it working. What should you do before submitting?",
+     "options": [
+      "Make sure the video demonstrates the feature or correct the documentation",
+      "Leave it; the moderator will assume it works",
+      "Remove the documentation entirely",
+      "Add a screenshot from another project"
+     ],
+     "answer": "Make sure the video demonstrates the feature or correct the documentation",
+     "accept": [],
+     "hint": "Evidence must match claims.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1inl7ojzrap8y",
+     "subject": "comp",
+     "type": "open",
+     "q": "Evaluate the use of third-party libraries in a Computer Science IA, considering both the benefits for the product and the consequences for assessment.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh time saved and reliability against how much complexity remains your own.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r144bnp5bdy9re",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain how you would document your use of online sources and AI tools so that your IA meets academic integrity expectations.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Mention where, how and in how much detail you would acknowledge them.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "comp-sl": {
+   "topic": "IA: final submission and academic integrity",
+   "questions": [
+    {
+     "id": "rabdmkt1ettcqw",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Before submitting your IA, which of these should you check first?",
+     "options": [
+      "That every required component is complete and included",
+      "That the code uses the newest language",
+      "That the video is as long as possible",
+      "That the report has a coloured cover page"
+     ],
+     "answer": "That every required component is complete and included",
+     "accept": [],
+     "hint": "Think about what the moderator needs to see.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18l0h87gp7lo8",
+     "subject": "comp",
+     "type": "short",
+     "q": "What term describes being honest about which work is yours and which comes from others? (two words)",
+     "options": [],
+     "answer": "academic integrity",
+     "accept": [
+      "academic honesty"
+     ],
+     "hint": "The IB has a whole policy about this.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10dhp4k18hk5eq",
+     "subject": "comp",
+     "type": "mc",
+     "q": "You used a free charting library in your product. What should you do?",
+     "options": [
+      "Acknowledge it and explain what it does in your solution",
+      "Hide it so the code looks original",
+      "Delete it before submission",
+      "Rename its functions so they look like yours"
+     ],
+     "answer": "Acknowledge it and explain what it does in your solution",
+     "accept": [],
+     "hint": "Using other people's code is allowed if you are open about it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn4mxgarvwz4t",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which of these is an example of plagiarism in a Computer Science IA?",
+     "options": [
+      "Copying a sorting function from a website without saying where it came from",
+      "Using a built-in language function",
+      "Asking your teacher a general question",
+      "Testing your code with sample data"
+     ],
+     "answer": "Copying a sorting function from a website without saying where it came from",
+     "accept": [],
+     "hint": "Focus on the missing acknowledgement.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a60bjcsgexvc",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Where is the best place to credit a library you used?",
+     "options": [
+      "In the documentation and with a comment in the code where it is used",
+      "Only in a message to a friend",
+      "Nowhere, because libraries are public",
+      "Only in the file name"
+     ],
+     "answer": "In the documentation and with a comment in the code where it is used",
+     "accept": [],
+     "hint": "A moderator reads both the write-up and the code.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17ila69jxuut7",
+     "subject": "comp",
+     "type": "short",
+     "q": "What is the general name for code written by someone else that you import to add features, such as a database connector? (one word)",
+     "options": [],
+     "answer": "library",
+     "accept": [
+      "libraries",
+      "module",
+      "package"
+     ],
+     "hint": "You 'import' it at the top of a file.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3owarlmoes30",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A classmate offers to send you their working login system to paste into your project. What is the right choice?",
+     "options": [
+      "Politely refuse and build or properly source your own",
+      "Accept and change the variable names",
+      "Accept but only use half of it",
+      "Accept and say nothing"
+     ],
+     "answer": "Politely refuse and build or properly source your own",
+     "accept": [],
+     "hint": "Submitting another student's work as your own is collusion.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbfezxb176ssry",
+     "subject": "comp",
+     "type": "short",
+     "q": "What word describes two students working together on work that should be individual, and then submitting it as their own? (one word)",
+     "options": [],
+     "answer": "collusion",
+     "accept": [],
+     "hint": "It starts with 'coll-'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru49t75148i88p",
+     "subject": "comp",
+     "type": "mc",
+     "q": "You followed an online tutorial to learn how to connect to a database. How should you handle this?",
+     "options": [
+      "Cite the tutorial and make clear which parts you adapted",
+      "Copy it exactly and say nothing",
+      "Ignore it because tutorials don't count",
+      "Mention it only in the video"
+     ],
+     "answer": "Cite the tutorial and make clear which parts you adapted",
+     "accept": [],
+     "hint": "Adapting is fine; hiding the source is not.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rq8mdx5nfb3k",
+     "subject": "comp",
+     "type": "mc",
+     "q": "If you used an AI tool to help explain an error message, what should you do?",
+     "options": [
+      "Acknowledge the tool and how you used it",
+      "Pretend you solved it alone",
+      "Delete your code and start again",
+      "Nothing, because AI tools are not sources"
+     ],
+     "answer": "Acknowledge the tool and how you used it",
+     "accept": [],
+     "hint": "Treat it like any other source of help.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq0emaa1ijaoj1",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which file check helps make sure the moderator can open your work?",
+     "options": [
+      "Testing that every file opens on another computer",
+      "Making files read-only",
+      "Zipping each line of code separately",
+      "Renaming files with random letters"
+     ],
+     "answer": "Testing that every file opens on another computer",
+     "accept": [],
+     "hint": "What works on your laptop may not work elsewhere.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9ggujt1ckijps",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Why does the IB ask your teacher to confirm the work is yours?",
+     "options": [
+      "To authenticate that the IA is the student's own work",
+      "To give extra marks for effort",
+      "To fix any bugs in the code",
+      "To choose the client for you"
+     ],
+     "answer": "To authenticate that the IA is the student's own work",
+     "accept": [],
+     "hint": "Think about the word 'authentic'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1td0ehn14og36z",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which statement about submitting the final IA is correct?",
+     "options": [
+      "Once the final version is submitted it should not be changed",
+      "You can keep editing after the deadline",
+      "The teacher rewrites weak sections",
+      "You may swap in a friend's video"
+     ],
+     "answer": "Once the final version is submitted it should not be changed",
+     "accept": [],
+     "hint": "'Final' is the key word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r107tgd7vceiae",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Your video shows a feature that is not in the submitted code. What is the problem?",
+     "options": [
+      "The evidence does not match the product, so it cannot be credited",
+      "The video will earn extra marks",
+      "Nothing, videos are optional decoration",
+      "The moderator will add the code for you"
+     ],
+     "answer": "The evidence does not match the product, so it cannot be credited",
+     "accept": [],
+     "hint": "Moderators check that everything is consistent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ot7uw1z1uo6d",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain why acknowledging libraries and sources helps both your integrity and the moderator's understanding of your IA.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about honesty and about showing which complex parts you built yourself.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhqo5gm1hp4mix",
+     "subject": "comp",
+     "type": "open",
+     "q": "Describe two checks you would carry out in the last week before submitting your IA, and why each one matters.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider completeness, file formats, word count and citations.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "econ-hl": {
+   "topic": "Sustainable development and measuring development",
+   "questions": [
+    {
+     "id": "rim3tmz1o1ipyr",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which statement best distinguishes economic growth from economic development?",
+     "options": [
+      "Growth is an increase in real output; development is a broader improvement in living standards and well-being",
+      "Growth and development mean exactly the same thing",
+      "Development is only an increase in exports",
+      "Growth includes education and health, development does not"
+     ],
+     "answer": "Growth is an increase in real output; development is a broader improvement in living standards and well-being",
+     "accept": [],
+     "hint": "One is narrower and easier to measure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rksoz2cmpso43",
+     "subject": "econ",
+     "type": "num",
+     "q": "How many Sustainable Development Goals are there?",
+     "options": [],
+     "answer": "17",
+     "accept": [],
+     "hint": "Adopted by the UN in 2015.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp6sml16bj1qf",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Sustainable development requires balancing which three pillars?",
+     "options": [
+      "Economic, social and environmental",
+      "Monetary, fiscal and supply-side",
+      "Primary, secondary and tertiary",
+      "Imports, exports and tariffs"
+     ],
+     "answer": "Economic, social and environmental",
+     "accept": [],
+     "hint": "Think beyond income alone.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5e5j8pzrovkj",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of these is NOT one of the HDI indicators?",
+     "options": [
+      "Unemployment rate",
+      "Life expectancy at birth",
+      "Expected years of schooling",
+      "GNI per capita (PPP)"
+     ],
+     "answer": "Unemployment rate",
+     "accept": [],
+     "hint": "Recall the three dimensions: health, education, income.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rention1peiagm",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Why is GNI per capita measured at purchasing power parity (PPP) in the HDI?",
+     "options": [
+      "To adjust for differences in the cost of living between countries",
+      "To include inflation in the index",
+      "To measure only exported goods",
+      "To remove the effect of population size"
+     ],
+     "answer": "To adjust for differences in the cost of living between countries",
+     "accept": [],
+     "hint": "The same income buys different amounts in different countries.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a8ic5v1cojgni",
+     "subject": "econ",
+     "type": "num",
+     "q": "A country has HDI 0.750 and IHDI 0.600. Calculate the overall loss due to inequality as a percentage.",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "(HDI − IHDI) ÷ HDI × 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpjnoss1yqp1f9",
+     "subject": "econ",
+     "type": "mc",
+     "q": "If income, health and education were distributed perfectly equally in a country, its IHDI would be:",
+     "options": [
+      "equal to its HDI",
+      "zero",
+      "double its HDI",
+      "impossible to calculate"
+     ],
+     "answer": "equal to its HDI",
+     "accept": [],
+     "hint": "The adjustment only lowers the HDI when there is inequality.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1793rm7dylq4k",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which dimension is included in the Gender Inequality Index (GII)?",
+     "options": [
+      "Empowerment, such as share of parliamentary seats held by women",
+      "Inflation rate for women",
+      "Number of female-owned cars",
+      "Exports by women-led firms"
+     ],
+     "answer": "Empowerment, such as share of parliamentary seats held by women",
+     "accept": [],
+     "hint": "GII has reproductive health, empowerment and labour market dimensions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdgp9o557he6e",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which pair of indicators measures reproductive health in the GII?",
+     "options": [
+      "Maternal mortality ratio and adolescent birth rate",
+      "Infant vaccination and doctors per person",
+      "Life expectancy and literacy",
+      "Hospital beds and health spending"
+     ],
+     "answer": "Maternal mortality ratio and adolescent birth rate",
+     "accept": [],
+     "hint": "Both focus on women's health outcomes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bhmdbak6agcy",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Country X has GII 0.05 and Country Y has GII 0.55. Which is correct?",
+     "options": [
+      "Country X has greater gender equality",
+      "Country Y has greater gender equality",
+      "Both are equally unequal",
+      "GII cannot be compared between countries"
+     ],
+     "answer": "Country X has greater gender equality",
+     "accept": [],
+     "hint": "For the GII, lower is better.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt574qqqviin",
+     "subject": "econ",
+     "type": "num",
+     "q": "How many indicators make up the global Multidimensional Poverty Index (MPI)?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "They are grouped into three dimensions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r471nir13piu0r",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Under the MPI, a household is identified as multidimensionally poor if it is deprived in at least:",
+     "options": [
+      "one third of the weighted indicators",
+      "one indicator",
+      "all ten indicators",
+      "half of its income"
+     ],
+     "answer": "one third of the weighted indicators",
+     "accept": [],
+     "hint": "The threshold is a fraction of the weighted indicators.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl7gz3n2ih7mx",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A strength of the MPI compared with an income-only poverty line is that it:",
+     "options": [
+      "shows which deprivations people face, helping to target policy",
+      "is based only on household income",
+      "requires no survey data",
+      "measures national output"
+     ],
+     "answer": "shows which deprivations people face, helping to target policy",
+     "accept": [],
+     "hint": "Think about what policymakers need to know.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bi52pu1v4nr1a",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Two countries have a similar GNI per capita, but Country P has a much higher HDI rank. The most likely explanation is:",
+     "options": [
+      "Country P converts income into better health and education outcomes",
+      "Country P has more exports",
+      "Country P has a larger population",
+      "Country P has higher inflation"
+     ],
+     "answer": "Country P converts income into better health and education outcomes",
+     "accept": [],
+     "hint": "Compare GNI rank with HDI rank.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ralafxo1ynslqt",
+     "subject": "econ",
+     "type": "open",
+     "q": "Compare and contrast the HDI and the IHDI as measures of economic development.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Discuss what they share, how they differ, and what extra information the IHDI gives.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r197xytm1y4vid1",
+     "subject": "econ",
+     "type": "open",
+     "q": "Using data from a composite indicator, evaluate the view that a single index can accurately measure a country's level of development.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider what composite indices capture and what they miss, such as environment or political freedom.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "econ-sl": {
+   "topic": "Sustainable development and measuring development",
+   "questions": [
+    {
+     "id": "r1dr75bd10e04wx",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which definition best describes sustainable development?",
+     "options": [
+      "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs",
+      "Growth in real GDP of at least 3% per year",
+      "Development funded only by foreign aid",
+      "Increasing exports faster than imports"
+     ],
+     "answer": "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs",
+     "accept": [],
+     "hint": "Think about present and future generations.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11qwwqn2mi0am",
+     "subject": "econ",
+     "type": "num",
+     "q": "How many Sustainable Development Goals (SDGs) were adopted by the United Nations in 2015?",
+     "options": [],
+     "answer": "17",
+     "accept": [],
+     "hint": "It is a number between 15 and 20.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdegw1umzm879",
+     "subject": "econ",
+     "type": "num",
+     "q": "By which year are the SDGs intended to be achieved?",
+     "options": [],
+     "answer": "2030",
+     "accept": [],
+     "hint": "They were set for a 15-year period starting in 2015.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o48hy4f6iwv4",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which three dimensions does the Human Development Index (HDI) measure?",
+     "options": [
+      "Health, education and standard of living",
+      "Inflation, unemployment and growth",
+      "Exports, imports and investment",
+      "Gender, poverty and inequality"
+     ],
+     "answer": "Health, education and standard of living",
+     "accept": [],
+     "hint": "One indicator is life expectancy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryx6vutd3tr14",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which indicator is used for the standard of living dimension of the HDI?",
+     "options": [
+      "GNI per capita (PPP)",
+      "Inflation rate",
+      "Number of cars per household",
+      "Government spending"
+     ],
+     "answer": "GNI per capita (PPP)",
+     "accept": [],
+     "hint": "It is an income measure adjusted for purchasing power.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16fu65s94c8ie",
+     "subject": "econ",
+     "type": "mc",
+     "q": "HDI values lie between:",
+     "options": [
+      "0 and 1",
+      "0 and 100",
+      "1 and 10",
+      "-1 and 1"
+     ],
+     "answer": "0 and 1",
+     "accept": [],
+     "hint": "A value closer to the top means higher development.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iw53cpdsx0tq",
+     "subject": "econ",
+     "type": "short",
+     "q": "What does the 'I' at the start of IHDI stand for? (two words)",
+     "options": [],
+     "answer": "inequality-adjusted",
+     "accept": [
+      "inequality adjusted",
+      "inequality"
+     ],
+     "hint": "It adjusts the HDI for how unevenly development is shared.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r190z6uy1gygrdy",
+     "subject": "econ",
+     "type": "mc",
+     "q": "If a country's IHDI is much lower than its HDI, this suggests:",
+     "options": [
+      "high inequality in health, education and income",
+      "very low inflation",
+      "high gender equality",
+      "fast economic growth"
+     ],
+     "answer": "high inequality in health, education and income",
+     "accept": [],
+     "hint": "The gap is the 'loss' due to inequality.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xjhvy01a2dgc8",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What does the Gender Inequality Index (GII) measure?",
+     "options": [
+      "Disadvantage faced by women in reproductive health, empowerment and the labour market",
+      "The number of women in a country",
+      "The average income of men",
+      "The literacy rate of children"
+     ],
+     "answer": "Disadvantage faced by women in reproductive health, empowerment and the labour market",
+     "accept": [],
+     "hint": "It has three dimensions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cssaql8x24a9",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A GII value of 0 means:",
+     "options": [
+      "women and men fare equally",
+      "women face complete disadvantage",
+      "there is no data",
+      "the country has a low HDI"
+     ],
+     "answer": "women and men fare equally",
+     "accept": [],
+     "hint": "For GII, a lower value is better.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yycw851bmng0i",
+     "subject": "econ",
+     "type": "short",
+     "q": "What does MPI stand for? (three words)",
+     "options": [],
+     "answer": "Multidimensional Poverty Index",
+     "accept": [
+      "multidimensional poverty index"
+     ],
+     "hint": "It looks at poverty in more than one dimension.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvsw1t1nd9l9s",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Why is the MPI considered more detailed than income-based poverty measures?",
+     "options": [
+      "It measures deprivations in health, education and living standards at household level",
+      "It only uses GDP per capita",
+      "It ignores education",
+      "It is measured once every 50 years"
+     ],
+     "answer": "It measures deprivations in health, education and living standards at household level",
+     "accept": [],
+     "hint": "Poverty is more than a lack of money.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1djue8l1v2q4in",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Country A: HDI 0.92. Country B: HDI 0.55. Which statement is correct?",
+     "options": [
+      "Country A has a higher level of human development than Country B",
+      "Country B is richer than Country A",
+      "Country B has more gender equality",
+      "Both have the same development level"
+     ],
+     "answer": "Country A has a higher level of human development than Country B",
+     "accept": [],
+     "hint": "Compare the values directly.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xrllsi123hber",
+     "subject": "econ",
+     "type": "num",
+     "q": "A country's HDI is 0.800 and its IHDI is 0.680. Calculate the percentage loss due to inequality.",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Loss = (HDI − IHDI) ÷ HDI × 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru8in777rk6t6",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain one limitation of using GDP per capita alone to measure economic development.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what GDP does not show, such as distribution or health.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg14mk0s2zha1",
+     "subject": "econ",
+     "type": "open",
+     "q": "Using the HDI and one other composite indicator, explain why economists use more than one measure of development.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider what each indicator includes and what it leaves out.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en-hl": {
+   "topic": "Learner portfolio: synthesis across areas of exploration",
+   "questions": [
+    {
+     "id": "rdjaay013h4xjl",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which of the following is NOT one of the three areas of exploration?",
+     "options": [
+      "Language and power",
+      "Readers, writers and texts",
+      "Time and space",
+      "Intertextuality: connecting texts"
+     ],
+     "answer": "Language and power",
+     "accept": [],
+     "hint": "Two of these names also appear in the course structure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b7h7mi1hk06ra",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which guiding question best fits 'Intertextuality: connecting texts'?",
+     "options": [
+      "How do conventions and genres change across texts?",
+      "How is a text shaped by its historical context?",
+      "How do readers approach a text?",
+      "How was the text printed?"
+     ],
+     "answer": "How do conventions and genres change across texts?",
+     "accept": [],
+     "hint": "Think about links between texts.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x7229611wzfmn",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which assessment is completed only by HL students?",
+     "options": [
+      "The HL essay",
+      "The Individual Oral",
+      "Paper 1",
+      "Paper 2"
+     ],
+     "answer": "The HL essay",
+     "accept": [],
+     "hint": "HL students produce one extra piece of written coursework.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz1wfyn12cmdp5",
+     "subject": "en",
+     "type": "short",
+     "q": "How many fields of inquiry does the IB suggest for global issues? (number in words or digits)",
+     "options": [],
+     "answer": "five",
+     "accept": [
+      "5"
+     ],
+     "hint": "Culture, identity and community is one of them.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r71106pero3xd",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which global issue is phrased most effectively for an Individual Oral?",
+     "options": [
+      "The ways in which economic inequality limits individuals' choices",
+      "Money",
+      "A novel about a family",
+      "Animals"
+     ],
+     "answer": "The ways in which economic inequality limits individuals' choices",
+     "accept": [],
+     "hint": "A good global issue is specific yet wide-ranging.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ekh4b7nd9qdm",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which statement about the learner portfolio is accurate?",
+     "options": [
+      "It is not directly marked but supports the assessments and may be requested by the IB",
+      "It is worth half of the final grade",
+      "It must be written as one long essay",
+      "It is only completed in the final week"
+     ],
+     "answer": "It is not directly marked but supports the assessments and may be requested by the IB",
+     "accept": [],
+     "hint": "Think of it as a working record.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kymft8lftbxt",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which portfolio entry demonstrates the highest level of synthesis?",
+     "options": [
+      "An analysis of how a novel and a set of advertisements both construct ideals of masculinity",
+      "A plot outline of the novel",
+      "A glossary of literary terms",
+      "A note on the author's birthplace"
+     ],
+     "answer": "An analysis of how a novel and a set of advertisements both construct ideals of masculinity",
+     "accept": [],
+     "hint": "Synthesis connects texts through a shared idea.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r552i28ple13q",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which area of exploration would most directly guide a discussion of how a text's meaning changes when read in a different century?",
+     "options": [
+      "Time and space",
+      "Readers, writers and texts",
+      "Intertextuality: connecting texts",
+      "None of them"
+     ],
+     "answer": "Time and space",
+     "accept": [],
+     "hint": "Context of reception changes over time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ip5ur7pfsz0f",
+     "subject": "en",
+     "type": "mc",
+     "q": "When synthesising across the course, why should you include non-literary texts as well as literary works?",
+     "options": [
+      "The course and its assessments require engagement with both",
+      "Non-literary texts are always easier",
+      "Literary works are not assessed",
+      "It reduces the reading load"
+     ],
+     "answer": "The course and its assessments require engagement with both",
+     "accept": [],
+     "hint": "Look at the course title.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r167zt1wkht94f",
+     "subject": "en",
+     "type": "mc",
+     "q": "For the HL essay, a strong line of inquiry is:",
+     "options": [
+      "focused on one text and a specific aspect of language or literary technique",
+      "a broad survey of all texts studied",
+      "a biography of the author",
+      "a list of themes"
+     ],
+     "answer": "focused on one text and a specific aspect of language or literary technique",
+     "accept": [],
+     "hint": "Depth is better than breadth here.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vb2bj5zsqkqw",
+     "subject": "en",
+     "type": "short",
+     "q": "What term describes the circumstances in which a text was written? (three words, starting 'context of …')",
+     "options": [],
+     "answer": "context of production",
+     "accept": [
+      "the context of production"
+     ],
+     "hint": "It is paired with 'context of reception'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r155ap0w1xzpmop",
+     "subject": "en",
+     "type": "mc",
+     "q": "A recurring global issue across your portfolio is surveillance. Which pairing would best support an Individual Oral on it?",
+     "options": [
+      "A dystopian novel and a series of government public-information posters",
+      "Two love poems",
+      "A recipe book and a sonnet",
+      "A travel blog and a fairy tale with no link to surveillance"
+     ],
+     "answer": "A dystopian novel and a series of government public-information posters",
+     "accept": [],
+     "hint": "Both works must present the issue.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r175wex31py6cux",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which reflection best shows 'Readers, writers and texts' thinking?",
+     "options": [
+      "How the writer's choice of first-person narration affects my trust in the speaker",
+      "When the novel was banned",
+      "How the poem echoes a myth",
+      "Which film adapted the novel"
+     ],
+     "answer": "How the writer's choice of first-person narration affects my trust in the speaker",
+     "accept": [],
+     "hint": "This area focuses on the reader–writer relationship.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13w5s14ts20p",
+     "subject": "en",
+     "type": "mc",
+     "q": "Why might you revisit early portfolio entries in the second year?",
+     "options": [
+      "To see how your interpretations have developed and spot new connections",
+      "To delete them before the exam",
+      "To copy them into Paper 1",
+      "To shorten the portfolio"
+     ],
+     "answer": "To see how your interpretations have developed and spot new connections",
+     "accept": [],
+     "hint": "Learning changes over time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11g8orm17h7mxz",
+     "subject": "en",
+     "type": "open",
+     "q": "Discuss how two texts from different areas of exploration present the same global issue in contrasting ways.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Identify the issue, then compare techniques and contexts, using specific details.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqlzx7c10rew88",
+     "subject": "en",
+     "type": "open",
+     "q": "Evaluate the usefulness of the learner portfolio as preparation for both the HL essay and Paper 2.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider how it helps you choose a line of inquiry and plan comparisons.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en-sl": {
+   "topic": "Learner portfolio: synthesis across areas of exploration",
+   "questions": [
+    {
+     "id": "rhmy3cw92ymy",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which of these is one of the three areas of exploration in IB English A: Language and Literature?",
+     "options": [
+      "Time and space",
+      "Grammar and spelling",
+      "Poetry and drama",
+      "Media and politics"
+     ],
+     "answer": "Time and space",
+     "accept": [],
+     "hint": "Each area asks a different kind of question about texts.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1079e5d16vde5d",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which area of exploration focuses on how a text connects with other texts?",
+     "options": [
+      "Intertextuality: connecting texts",
+      "Readers, writers and texts",
+      "Time and space",
+      "Culture and identity"
+     ],
+     "answer": "Intertextuality: connecting texts",
+     "accept": [],
+     "hint": "'Inter' means between.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fmclaojdqiv0",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which area of exploration asks how context of production and reception shapes meaning?",
+     "options": [
+      "Time and space",
+      "Readers, writers and texts",
+      "Intertextuality: connecting texts",
+      "Art and imagination"
+     ],
+     "answer": "Time and space",
+     "accept": [],
+     "hint": "Think about when and where a text was made and read.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jp5817av79jo",
+     "subject": "en",
+     "type": "short",
+     "q": "What is the name of the collection of reflections and notes you build over the course? (two words)",
+     "options": [],
+     "answer": "learner portfolio",
+     "accept": [
+      "the learner portfolio",
+      "portfolio"
+     ],
+     "hint": "It is a record of your learning.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f6dox15ng04t",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which of these is one of the IB fields of inquiry for global issues?",
+     "options": [
+      "Culture, identity and community",
+      "Sport and leisure",
+      "Grammar and vocabulary",
+      "Travel and tourism"
+     ],
+     "answer": "Culture, identity and community",
+     "accept": [],
+     "hint": "There are five fields of inquiry.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t8dxieose90f",
+     "subject": "en",
+     "type": "mc",
+     "q": "A global issue for the Individual Oral must be:",
+     "options": [
+      "significant, wide-ranging and present in both texts you choose",
+      "a local event that only one text mentions",
+      "a single word, such as 'love'",
+      "unrelated to the texts"
+     ],
+     "answer": "significant, wide-ranging and present in both texts you choose",
+     "accept": [],
+     "hint": "It needs to connect the two works.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19uiz6aee6mws",
+     "subject": "en",
+     "type": "mc",
+     "q": "In the Individual Oral, you must discuss:",
+     "options": [
+      "one literary work and one non-literary body of work",
+      "two poems by the same author",
+      "two advertisements",
+      "only the texts you liked most"
+     ],
+     "answer": "one literary work and one non-literary body of work",
+     "accept": [],
+     "hint": "The course combines literature and language.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rez7f7yuee51t",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does 'synthesis' mean when reviewing your portfolio?",
+     "options": [
+      "Combining insights from several texts into a connected understanding",
+      "Copying your notes again",
+      "Listing every text you studied",
+      "Rewriting a text in your own words"
+     ],
+     "answer": "Combining insights from several texts into a connected understanding",
+     "accept": [],
+     "hint": "It is the opposite of treating each text separately.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fz3qn1opa35o",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which portfolio entry shows the strongest synthesis?",
+     "options": [
+      "A note comparing how two texts from different eras represent power",
+      "A list of character names",
+      "A summary of chapter one",
+      "A copy of the teacher's slides"
+     ],
+     "answer": "A note comparing how two texts from different eras represent power",
+     "accept": [],
+     "hint": "Look for connection and comparison.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7s7i6ghfxc7e",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which global issue would best fit the field of inquiry 'Politics, power and justice'?",
+     "options": [
+      "How propaganda shapes what citizens believe",
+      "How painters use colour",
+      "How recipes are passed down",
+      "How athletes prepare for races"
+     ],
+     "answer": "How propaganda shapes what citizens believe",
+     "accept": [],
+     "hint": "Look for an issue about power.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rav60xrg9zxx1",
+     "subject": "en",
+     "type": "mc",
+     "q": "Why is it useful to tag portfolio entries by area of exploration?",
+     "options": [
+      "It makes it easier to find connections and choose texts for assessments",
+      "It increases your word count",
+      "It is required for every sentence",
+      "It replaces the need to read the texts"
+     ],
+     "answer": "It makes it easier to find connections and choose texts for assessments",
+     "accept": [],
+     "hint": "Think ahead to the Individual Oral and Paper 2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11dkot5v17mgy",
+     "subject": "en",
+     "type": "mc",
+     "q": "For Paper 2, the learner portfolio helps you most by:",
+     "options": [
+      "preparing comparisons between literary works",
+      "memorising unseen texts",
+      "practising multiple-choice questions",
+      "listing vocabulary"
+     ],
+     "answer": "preparing comparisons between literary works",
+     "accept": [],
+     "hint": "Paper 2 is a comparative essay.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "refmc2otls40n",
+     "subject": "en",
+     "type": "short",
+     "q": "In the phrase 'context of reception', what does 'reception' refer to? (one word)",
+     "options": [],
+     "answer": "readers",
+     "accept": [
+      "reader",
+      "audience",
+      "the reader",
+      "the audience"
+     ],
+     "hint": "Who receives the text?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdxtfobdcrrni",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which question belongs to 'Readers, writers and texts'?",
+     "options": [
+      "How do language choices shape meaning?",
+      "How did a war affect the text's publication?",
+      "How does this poem echo an earlier myth?",
+      "How was the text translated over centuries?"
+     ],
+     "answer": "How do language choices shape meaning?",
+     "accept": [],
+     "hint": "This area looks closely at the text itself.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1td8bgy4nk0r",
+     "subject": "en",
+     "type": "open",
+     "q": "Choose one global issue and explain how it appears in two different texts you have studied.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Name the issue, then link each text to it with one specific detail.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14nllapwr8h86",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain how keeping a learner portfolio throughout the course helps you prepare for the Individual Oral.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about choosing texts, extracts and a global issue.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_lit-hl": {
+   "topic": "Revisiting Heaney and Purple Hibiscus",
+   "questions": [
+    {
+     "id": "r1cyxvpn77k12u",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Purple Hibiscus begins with a line that echoes the title of an earlier Nigerian novel. Which phrase is it?",
+     "options": [
+      "Things started to fall apart",
+      "Once upon a time",
+      "It was a dark and stormy night",
+      "Call me Kambili"
+     ],
+     "answer": "Things started to fall apart",
+     "accept": [],
+     "hint": "The opening refers to Jaja and Papa on Palm Sunday.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqjopgeqvw7ij",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "How is Purple Hibiscus structured?",
+     "options": [
+      "Mostly as a long flashback framed by the present",
+      "As letters between cousins",
+      "As a diary written by Papa",
+      "In strict chronological order with no flashbacks"
+     ],
+     "answer": "Mostly as a long flashback framed by the present",
+     "accept": [],
+     "hint": "Notice the section titles that mention Palm Sunday.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hfn9nl1rhkcaq",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Kambili's frequent silence and stammering in the first part of the novel mainly suggest:",
+     "options": [
+      "fear and the suppression of her voice under Papa's control",
+      "that she does not understand English",
+      "that she is bored at home",
+      "that she is ill"
+     ],
+     "answer": "fear and the suppression of her voice under Papa's control",
+     "accept": [],
+     "hint": "Compare how she speaks later in Nsukka.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ros09ef1m2upvq",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Papa is a complex character because he is:",
+     "options": [
+      "generous and respected in public but violent and controlling at home",
+      "entirely kind and gentle",
+      "uninterested in religion",
+      "poor and uneducated"
+     ],
+     "answer": "generous and respected in public but violent and controlling at home",
+     "accept": [],
+     "hint": "Look at how the community sees him.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n528hw14opnhb",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "What is the name of the young priest who encourages Kambili to find her voice?",
+     "options": [],
+     "answer": "Father Amadi",
+     "accept": [
+      "Amadi"
+     ],
+     "hint": "He coaches children at football in Nsukka.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x7371c1jimu0b",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Papa-Nnukwu is important to the theme of identity because he represents:",
+     "options": [
+      "traditional Igbo beliefs that Papa rejects",
+      "Western business success",
+      "the military government",
+      "the Catholic Church"
+     ],
+     "answer": "traditional Igbo beliefs that Papa rejects",
+     "accept": [],
+     "hint": "Kambili watches his morning ritual.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzq1wn917cukoo",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In Heaney's 'Digging', the line 'The squat pen rests; snug as a gun' creates a sense of:",
+     "options": [
+      "tension and potential force in the act of writing",
+      "comfort and sleep",
+      "childish play",
+      "nostalgia for war"
+     ],
+     "answer": "tension and potential force in the act of writing",
+     "accept": [],
+     "hint": "Consider why a weapon is chosen.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d7zrvx17a7feo",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which sound technique is most prominent in 'Digging' when describing the spade?",
+     "options": [
+      "Onomatopoeia, such as 'rasping' and 'gravelly'",
+      "Internal rhyme in every line",
+      "Total silence",
+      "Rhymed couplets throughout"
+     ],
+     "answer": "Onomatopoeia, such as 'rasping' and 'gravelly'",
+     "accept": [],
+     "hint": "Listen to the sounds of the earth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrvlfma1ed2tvx",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What does the final line of 'Follower', 'and will not go away', suggest about the speaker's feelings?",
+     "options": [
+      "A mix of guilt, burden and enduring love",
+      "Pure anger at the father",
+      "Indifference",
+      "Joy at leaving home"
+     ],
+     "answer": "A mix of guilt, burden and enduring love",
+     "accept": [],
+     "hint": "Think about how roles have reversed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rij0dgq1fsnxvl",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In 'Death of a Naturalist', the frogs described as 'great slime kings' mark a shift from:",
+     "options": [
+      "childhood wonder to fear and disgust",
+      "fear to calm acceptance",
+      "city life to farm life",
+      "winter to spring"
+     ],
+     "answer": "childhood wonder to fear and disgust",
+     "accept": [],
+     "hint": "Compare the tone of the two stanzas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr0c44dx0wacb",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In 'Personal Helicon', the speaker says he rhymes 'to see myself'. This links poetry to:",
+     "options": [
+      "self-discovery and identity",
+      "earning money",
+      "forgetting childhood",
+      "pleasing his teachers"
+     ],
+     "answer": "self-discovery and identity",
+     "accept": [],
+     "hint": "Wells act like mirrors in the poem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11abdpgot18dp",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which comparison of identity in the two works is most convincing?",
+     "options": [
+      "Both show a young person defining themselves in relation to a powerful father",
+      "Both are set in large modern cities",
+      "Both celebrate obedience above all",
+      "Both reject family entirely"
+     ],
+     "answer": "Both show a young person defining themselves in relation to a powerful father",
+     "accept": [],
+     "hint": "Think about Kambili and Heaney's speakers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pnau251ubsmy7",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In Purple Hibiscus, the figurines broken at the start most strongly symbolise:",
+     "options": [
+      "the breaking of the family's fragile silence and order",
+      "Papa's love of art",
+      "the family's wealth",
+      "Kambili's school success"
+     ],
+     "answer": "the breaking of the family's fragile silence and order",
+     "accept": [],
+     "hint": "Mama used to polish them after violent episodes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvgftag7m2zfw",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "Which literary term describes a story narrated by a character looking back on events from later? (one word)",
+     "options": [],
+     "answer": "retrospective",
+     "accept": [
+      "retrospective narration",
+      "retrospection",
+      "retrospect"
+     ],
+     "hint": "From the Latin for 'looking back'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d85ze3nwbr3i",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Compare how Adichie and Heaney use images of the natural world to explore growth and change.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider the hibiscus and Heaney's farm or nature imagery; analyse effects.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nrx95y15eh3ha",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "To what extent do both Purple Hibiscus and Heaney's poems suggest that identity is shaped by breaking away from family traditions?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh moments of rejection against moments of continuity in both works.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_lit-sl": {
+   "topic": "Revisiting Heaney and Purple Hibiscus",
+   "questions": [
+    {
+     "id": "rr1izhx8zrost",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Who narrates Purple Hibiscus?",
+     "options": [
+      "Kambili",
+      "Jaja",
+      "Aunty Ifeoma",
+      "Amaka"
+     ],
+     "answer": "Kambili",
+     "accept": [],
+     "hint": "The narrator is a quiet teenage girl.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz1ootf18dh6a7",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In which country is Purple Hibiscus set?",
+     "options": [
+      "Nigeria",
+      "Ghana",
+      "Kenya",
+      "South Africa"
+     ],
+     "answer": "Nigeria",
+     "accept": [],
+     "hint": "The family lives in Enugu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f3kisn171751n",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "In Purple Hibiscus, what is the name of Kambili's older brother?",
+     "options": [],
+     "answer": "Jaja",
+     "accept": [],
+     "hint": "His act of defiance opens the novel.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "res4150mzu35c",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What does Jaja refuse to do at the start of the novel, angering Papa?",
+     "options": [
+      "Go to communion",
+      "Go to school",
+      "Eat breakfast",
+      "Visit Nsukka"
+     ],
+     "answer": "Go to communion",
+     "accept": [],
+     "hint": "It happens on Palm Sunday.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j2vkew1582qnn",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "In which university town does Aunty Ifeoma live?",
+     "options": [],
+     "answer": "Nsukka",
+     "accept": [],
+     "hint": "Its name begins with 'N'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjo75un1h5o77q",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What does the purple hibiscus mainly symbolise in the novel?",
+     "options": [
+      "Freedom and the possibility of change",
+      "Wealth and power",
+      "Strict religious rules",
+      "Sadness and death"
+     ],
+     "answer": "Freedom and the possibility of change",
+     "accept": [],
+     "hint": "It grows in Aunty Ifeoma's garden.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4fnjf1ech8os",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "How is Aunty Ifeoma's home different from Papa's house?",
+     "options": [
+      "It is full of laughter, debate and open expression",
+      "It is silent and strictly scheduled",
+      "It is larger and more luxurious",
+      "It is empty most of the time"
+     ],
+     "answer": "It is full of laughter, debate and open expression",
+     "accept": [],
+     "hint": "Notice how the cousins talk at meals.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp37k8dqyl2po",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In Seamus Heaney's 'Digging', what does the speaker decide to dig with?",
+     "options": [
+      "His pen",
+      "A spade",
+      "His hands",
+      "A plough"
+     ],
+     "answer": "His pen",
+     "accept": [],
+     "hint": "Look at the final lines.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8ug7sq1479la6",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which relatives does the speaker of 'Digging' watch or remember working the land?",
+     "options": [
+      "His father and grandfather",
+      "His brother and sister",
+      "His teacher and classmates",
+      "His uncle and cousin"
+     ],
+     "answer": "His father and grandfather",
+     "accept": [],
+     "hint": "Two generations of men who dig.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs74byiy53la6",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "In 'Digging', the pen is compared to which weapon? (one word)",
+     "options": [],
+     "answer": "gun",
+     "accept": [
+      "a gun"
+     ],
+     "hint": "'snug as a …'",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzr2t0s1gcjdhk",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In 'Follower', what is the speaker's father doing?",
+     "options": [
+      "Ploughing a field with horses",
+      "Fishing at sea",
+      "Building a wall",
+      "Reading a book"
+     ],
+     "answer": "Ploughing a field with horses",
+     "accept": [],
+     "hint": "The poem is full of farming images.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ui0pmz168uuq6",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "How are the roles reversed at the end of 'Follower'?",
+     "options": [
+      "The father now stumbles behind the son",
+      "The son leaves the farm forever",
+      "The horses lead the father",
+      "The son becomes a teacher"
+     ],
+     "answer": "The father now stumbles behind the son",
+     "accept": [],
+     "hint": "Who is following whom in the last stanza?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfed3cg1f5mvwe",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which theme links 'Digging' and Purple Hibiscus most clearly?",
+     "options": [
+      "Identity shaped by family and the father figure",
+      "Life in a big city",
+      "Space exploration",
+      "Sport and competition"
+     ],
+     "answer": "Identity shaped by family and the father figure",
+     "accept": [],
+     "hint": "Think about fathers in both works.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx0ehl51j62ec4",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In 'Blackberry-Picking', what happens to the berries the children collect?",
+     "options": [
+      "They rot and grow mould",
+      "They are sold at a market",
+      "They are made into jam",
+      "They are given to the teacher"
+     ],
+     "answer": "They rot and grow mould",
+     "accept": [],
+     "hint": "The final stanza shows disappointment.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t5i1ok17ryck8",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Compare how a father figure influences the identity of a child in Purple Hibiscus and in one Heaney poem.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Choose one detail from each work and explain its effect.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2f4sjd1lb4d6x",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Explain how the setting of Nsukka helps Kambili change in Purple Hibiscus.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what she sees, hears and feels there for the first time.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "fre-hl": {
+   "topic": "Advanced grammar: connectors, cohesion and register",
+   "questions": [
+    {
+     "id": "r1oiixslwbg8pu",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which connector has the closest meaning to 'néanmoins'?",
+     "options": [
+      "toutefois",
+      "ainsi",
+      "de plus",
+      "car"
+     ],
+     "answer": "toutefois",
+     "accept": [],
+     "hint": "Both introduce a concession.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ckqh621w49fje",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: «Il a beaucoup révisé ; ___, il a échoué à l'examen.»",
+     "options": [
+      "pourtant",
+      "donc",
+      "par conséquent",
+      "ainsi"
+     ],
+     "answer": "pourtant",
+     "accept": [],
+     "hint": "The result is unexpected.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn9za7712yo80d",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: «Je vous écris ___ vous informer de ma décision.»",
+     "options": [
+      "afin de",
+      "afin que",
+      "bien que",
+      "malgré"
+     ],
+     "answer": "afin de",
+     "accept": [],
+     "hint": "Followed by an infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqu58591y0uncv",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: «Je parle lentement ___ tout le monde me comprenne.»",
+     "options": [
+      "afin que",
+      "afin de",
+      "parce que",
+      "puisque"
+     ],
+     "answer": "afin que",
+     "accept": [],
+     "hint": "Followed by a subjunctive clause.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxplo1210v69eg",
+     "subject": "fre",
+     "type": "short",
+     "q": "Give the correct subjunctive form: «Bien qu'il ___ (faire) froid, nous sommes sortis.»",
+     "options": [],
+     "answer": "fasse",
+     "accept": [],
+     "hint": "Irregular subjunctive of 'faire'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwt58iw11235pp",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which connector introduces a cause that is already known or obvious to the reader?",
+     "options": [
+      "puisque",
+      "bien que",
+      "pourtant",
+      "en revanche"
+     ],
+     "answer": "puisque",
+     "accept": [],
+     "hint": "It means 'since' in a sense of 'given that'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r99sy90uhc24j",
+     "subject": "fre",
+     "type": "mc",
+     "q": "«Or» used as a connector in an argument means:",
+     "options": [
+      "now / yet (introducing a decisive fact)",
+      "or (a choice)",
+      "gold",
+      "therefore"
+     ],
+     "answer": "now / yet (introducing a decisive fact)",
+     "accept": [],
+     "hint": "It is common in formal reasoning.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nnq0dz1k5ix7g",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which connector expresses simultaneous contrast, 'whereas'?",
+     "options": [
+      "tandis que",
+      "dès que",
+      "afin que",
+      "pour que"
+     ],
+     "answer": "tandis que",
+     "accept": [],
+     "hint": "It compares two situations at the same time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkoj06qmq6w20",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which sentence uses inversion, typical of a formal register?",
+     "options": [
+      "Peut-être viendra-t-il demain.",
+      "Il vient demain, peut-être.",
+      "Peut-être qu'il vient demain.",
+      "Il va venir demain, je crois."
+     ],
+     "answer": "Peut-être viendra-t-il demain.",
+     "accept": [],
+     "hint": "Look for verb–subject inversion after 'peut-être'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbmm0rsixcr5b",
+     "subject": "fre",
+     "type": "mc",
+     "q": "In informal spoken French, which part of the negation is often dropped?",
+     "options": [
+      "ne",
+      "pas",
+      "rien",
+      "jamais"
+     ],
+     "answer": "ne",
+     "accept": [],
+     "hint": "«Je sais pas.»",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh542ks1saxl8w",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which pair moves from familier to soutenu correctly?",
+     "options": [
+      "bouffer → se restaurer",
+      "manger → bouffer",
+      "travail → boulot",
+      "argent → fric"
+     ],
+     "answer": "bouffer → se restaurer",
+     "accept": [],
+     "hint": "The arrow should point to the more formal word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryih3z61wkxkl6",
+     "subject": "fre",
+     "type": "short",
+     "q": "Replace the slang word with a neutral one: «J'ai plus de fric.» (one word)",
+     "options": [],
+     "answer": "argent",
+     "accept": [
+      "d'argent",
+      "l'argent"
+     ],
+     "hint": "Think of what you keep in a bank.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yv3aznqve7q3",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which connector would best introduce an additional, stronger argument in a formal essay?",
+     "options": [
+      "De surcroît",
+      "Bref",
+      "Du coup",
+      "Genre"
+     ],
+     "answer": "De surcroît",
+     "accept": [],
+     "hint": "Avoid spoken fillers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hrts7f1k8o3s0",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Why is 'du coup' usually avoided in a formal essay?",
+     "options": [
+      "It is a spoken, informal connector",
+      "It is grammatically wrong",
+      "It expresses opposition",
+      "It is archaic"
+     ],
+     "answer": "It is a spoken, informal connector",
+     "accept": [],
+     "hint": "Consider register.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dg8r96e8akv4",
+     "subject": "fre",
+     "type": "open",
+     "q": "Write a short formal paragraph (3–4 sentences) arguing for or against social media for teenagers, using at least three different logical connectors.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Include a concession (e.g. 'certes… néanmoins') and a conclusion.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r105u4gevxgxd1",
+     "subject": "fre",
+     "type": "open",
+     "q": "Explain, with examples, how register changes between a text message to a friend and a letter to a mayor in French.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare vocabulary, greetings, negation and sentence structure.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "fre-sl": {
+   "topic": "Advanced grammar: connectors, cohesion and register",
+   "questions": [
+    {
+     "id": "r1azh3l9t4ktrd",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'néanmoins' mean in English?",
+     "options": [
+      "nevertheless",
+      "therefore",
+      "because",
+      "moreover"
+     ],
+     "answer": "nevertheless",
+     "accept": [],
+     "hint": "It introduces a contrast.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c0weyw1p7m59o",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the connector that expresses consequence: «Il pleuvait, ___ le match a été annulé.»",
+     "options": [
+      "donc",
+      "pourtant",
+      "bien que",
+      "tandis que"
+     ],
+     "answer": "donc",
+     "accept": [],
+     "hint": "The second part is the result of the first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1re7pcw8wcav5",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which connector means 'on the other hand'?",
+     "options": [
+      "en revanche",
+      "de plus",
+      "ainsi",
+      "car"
+     ],
+     "answer": "en revanche",
+     "accept": [],
+     "hint": "It contrasts two ideas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmpjshkexza2s",
+     "subject": "fre",
+     "type": "short",
+     "q": "Give the French connector meaning 'moreover / in addition' that starts with 'de'. (two words)",
+     "options": [],
+     "answer": "de plus",
+     "accept": [],
+     "hint": "It adds another argument.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c5zsvpsdp7gp",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: «___ il soit fatigué, il continue à travailler.»",
+     "options": [
+      "Bien qu'",
+      "Parce qu'",
+      "Donc",
+      "Puisqu'"
+     ],
+     "answer": "Bien qu'",
+     "accept": [],
+     "hint": "This connector is followed by the subjunctive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17xactj16qafno",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which form follows 'bien que'?",
+     "options": [
+      "The subjunctive",
+      "The future tense",
+      "The imperative",
+      "The infinitive only"
+     ],
+     "answer": "The subjunctive",
+     "accept": [],
+     "hint": "Think of «bien qu'il soit…».",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1llb3ay1e7rj2w",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: «___ la pluie, nous sommes sortis.»",
+     "options": [
+      "Malgré",
+      "Bien que",
+      "Parce que",
+      "Quand"
+     ],
+     "answer": "Malgré",
+     "accept": [],
+     "hint": "This connector is followed by a noun, not a verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17l96uandsj3u",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which word is the most informal (familier) way to say 'car'?",
+     "options": [
+      "bagnole",
+      "voiture",
+      "automobile",
+      "véhicule"
+     ],
+     "answer": "bagnole",
+     "accept": [],
+     "hint": "You would hear it among friends, not in a formal essay.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t0ls3luek6zg",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which sentence is in a formal (soutenu) register?",
+     "options": [
+      "Pourriez-vous m'indiquer la gare, s'il vous plaît ?",
+      "Tu sais où c'est, la gare ?",
+      "C'est où, la gare ?",
+      "La gare, c'est par là ?"
+     ],
+     "answer": "Pourriez-vous m'indiquer la gare, s'il vous plaît ?",
+     "accept": [],
+     "hint": "Look for 'vous', the conditional and inversion.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a3z53z109vb9m",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate the connector 'because' into French. (two words, starting with 'p')",
+     "options": [],
+     "answer": "parce que",
+     "accept": [
+      "parce qu'"
+     ],
+     "hint": "It answers the question «Pourquoi ?»",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbiw5ai12ui65",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which connector is best to conclude an argument?",
+     "options": [
+      "En conclusion",
+      "Tout d'abord",
+      "Ensuite",
+      "Par exemple"
+     ],
+     "answer": "En conclusion",
+     "accept": [],
+     "hint": "It signals the end of the text.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqybhgv11lg8zw",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Order these connectors for a three-part argument:",
+     "options": [
+      "Tout d'abord, ensuite, enfin",
+      "Enfin, ensuite, tout d'abord",
+      "Ensuite, enfin, tout d'abord",
+      "Enfin, tout d'abord, ensuite"
+     ],
+     "answer": "Tout d'abord, ensuite, enfin",
+     "accept": [],
+     "hint": "Start with 'first'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k25i90kwcym0",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'cohésion' in a text refer to?",
+     "options": [
+      "How sentences and ideas are linked smoothly",
+      "How long the text is",
+      "How many difficult words it uses",
+      "How neat the handwriting is"
+     ],
+     "answer": "How sentences and ideas are linked smoothly",
+     "accept": [],
+     "hint": "Connectors and pronouns help with this.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjy4vpcbi7f0p",
+     "subject": "fre",
+     "type": "mc",
+     "q": "In a formal letter, which greeting is most appropriate?",
+     "options": [
+      "Madame, Monsieur,",
+      "Salut !",
+      "Coucou,",
+      "Hé !"
+     ],
+     "answer": "Madame, Monsieur,",
+     "accept": [],
+     "hint": "Think of writing to an organisation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hvwfen1llbbs4",
+     "subject": "fre",
+     "type": "open",
+     "q": "Write two sentences in French about school uniforms, linking them with 'cependant'.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Give one opinion, then a contrasting idea after the connector.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry4254wvrc7co",
+     "subject": "fre",
+     "type": "open",
+     "q": "Rewrite this informal sentence in a formal register: «Le boulot, c'est trop crevant.»",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Replace slang words and use a complete, neutral structure.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
