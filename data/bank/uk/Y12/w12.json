@@ -1263,6 +1263,1036 @@
      "errors": []
     }
    ]
+  },
+  "chem-sl": {
+   "topic": "S2.3–S2.4 Metallic bonding and from models to materials",
+   "questions": [
+    {
+     "id": "r10sqpyq181lii7",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Which statement best describes metallic bonding?",
+     "options": [
+      "Electrostatic attraction between a lattice of cations and delocalised electrons",
+      "Sharing of electron pairs between atoms",
+      "Attraction between oppositely charged ions formed by electron transfer",
+      "Attraction between permanent dipoles"
+     ],
+     "answer": "Electrostatic attraction between a lattice of cations and delocalised electrons",
+     "accept": [],
+     "hint": "Think of a 'sea' of electrons.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vepxk11nndlkz",
+     "subject": "chem",
+     "type": "short",
+     "q": "State the name given to the electrons in a metal that are not associated with any single atom.",
+     "options": [],
+     "answer": "Delocalised electrons",
+     "accept": [
+      "delocalised",
+      "delocalized electrons",
+      "delocalized",
+      "sea of electrons"
+     ],
+     "hint": "They are free to move through the whole lattice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqmjdji1mjcxqx",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Why are metals malleable?",
+     "options": [
+      "Layers of cations can slide over each other without breaking the metallic bond",
+      "The electrons are held in fixed positions",
+      "Metals have low melting points",
+      "Metal atoms form strong covalent bonds in one direction only"
+     ],
+     "answer": "Layers of cations can slide over each other without breaking the metallic bond",
+     "accept": [],
+     "hint": "The bonding is non-directional.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v6eaxrwtot7z",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Which metal has the strongest metallic bonding?",
+     "options": [
+      "Mg",
+      "Na",
+      "K",
+      "Rb"
+     ],
+     "answer": "Mg",
+     "accept": [],
+     "hint": "Consider ionic charge and ionic radius.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryvcwkfsu1phy",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Explain why the melting point of the Group 1 metals decreases down the group. The main reason is that:",
+     "options": [
+      "Ionic radius increases, so attraction between cations and delocalised electrons decreases",
+      "The number of delocalised electrons per atom increases",
+      "The nuclear charge decreases",
+      "Intermolecular forces weaken"
+     ],
+     "answer": "Ionic radius increases, so attraction between cations and delocalised electrons decreases",
+     "accept": [],
+     "hint": "Each atom still gives one electron to the sea.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g7dlcknjkkuy",
+     "subject": "chem",
+     "type": "short",
+     "q": "State the term for a mixture of a metal with one or more other elements, usually other metals.",
+     "options": [],
+     "answer": "Alloy",
+     "accept": [
+      "an alloy",
+      "alloys"
+     ],
+     "hint": "Steel and brass are examples.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l3292j1yvvk1d",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Why are alloys usually harder than the pure metal?",
+     "options": [
+      "Different-sized atoms disrupt the regular layers so they cannot slide easily",
+      "Alloys contain ionic bonds",
+      "Alloys have no delocalised electrons",
+      "The atoms in alloys are all the same size"
+     ],
+     "answer": "Different-sized atoms disrupt the regular layers so they cannot slide easily",
+     "accept": [],
+     "hint": "Picture the layers of a pure metal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13c0gap637ue",
+     "subject": "chem",
+     "type": "mc",
+     "q": "On the bonding triangle, which two axes are used to place a binary compound?",
+     "options": [
+      "Average electronegativity and difference in electronegativity",
+      "Atomic radius and ionisation energy",
+      "Melting point and boiling point",
+      "Number of electrons and mass"
+     ],
+     "answer": "Average electronegativity and difference in electronegativity",
+     "accept": [],
+     "hint": "The triangle is based on one property of atoms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rykten81qd533b",
+     "subject": "chem",
+     "type": "mc",
+     "q": "A binary compound has a large electronegativity difference. In which region of the bonding triangle is it most likely to be found?",
+     "options": [
+      "Ionic",
+      "Metallic",
+      "Covalent",
+      "Polar metallic"
+     ],
+     "answer": "Ionic",
+     "accept": [],
+     "hint": "A large difference means electrons are transferred.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fp202n1safyud",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Two elements both have low electronegativity and a small electronegativity difference. Their compound is most likely:",
+     "options": [
+      "Metallic",
+      "Ionic",
+      "Covalent",
+      "Polar covalent"
+     ],
+     "answer": "Metallic",
+     "accept": [],
+     "hint": "Low electronegativity is typical of metals.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xkm0j4r5dih7",
+     "subject": "chem",
+     "type": "num",
+     "q": "Element X has an electronegativity of 3.0 and element Y has 1.0. Calculate the average electronegativity used on the bonding triangle.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Add the values and divide by the number of elements.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4szrbt18chmym",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Which monomer can undergo addition polymerisation?",
+     "options": [
+      "Ethene",
+      "Ethane",
+      "Ethanol",
+      "Ethanoic acid"
+     ],
+     "answer": "Ethene",
+     "accept": [],
+     "hint": "A C=C double bond is needed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16qkn7nd85v1n",
+     "subject": "chem",
+     "type": "short",
+     "q": "State the name of the polymer formed from propene.",
+     "options": [],
+     "answer": "Poly(propene)",
+     "accept": [
+      "polypropene",
+      "polypropylene",
+      "poly(propene)"
+     ],
+     "hint": "Add the prefix used for addition polymers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r58wgr11yw8e96",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What feature of the monomer is broken during addition polymerisation?",
+     "options": [
+      "The pi bond of the C=C double bond",
+      "A C–H sigma bond",
+      "A C–O bond",
+      "An O–H bond"
+     ],
+     "answer": "The pi bond of the C=C double bond",
+     "accept": [],
+     "hint": "Only one of the two bonds in a double bond breaks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzxk80fqdpyww",
+     "subject": "chem",
+     "type": "open",
+     "q": "Explain why solid metals conduct electricity but solid ionic compounds do not.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare which charged particles are free to move in each solid.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r182z88vj00t4l",
+     "subject": "chem",
+     "type": "open",
+     "q": "Suggest why a material scientist might choose an alloy rather than a pure metal for a bicycle frame.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about strength, mass and corrosion.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "comp-hl": {
+   "topic": "A1.3 Operating systems and control systems",
+   "questions": [
+    {
+     "id": "rao3ngm1b8a8dv",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which of these is a role of an operating system?",
+     "options": [
+      "Managing memory allocation for running processes",
+      "Compiling source code into machine code",
+      "Designing the user's web pages",
+      "Increasing the clock speed of the CPU"
+     ],
+     "answer": "Managing memory allocation for running processes",
+     "accept": [],
+     "hint": "Think of what the OS controls between hardware and software.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13z9e3yiur4ha",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the term for a signal sent to the processor to indicate that an event needs immediate attention.",
+     "options": [],
+     "answer": "Interrupt",
+     "accept": [
+      "an interrupt",
+      "interrupts"
+     ],
+     "hint": "A key press or a printer error can cause one.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz1oco6hp87cs",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What does the processor do first when it receives an interrupt of higher priority than the current task?",
+     "options": [
+      "Saves the contents of its registers so it can resume later",
+      "Deletes the current process",
+      "Restarts the computer",
+      "Ignores the interrupt until the task ends"
+     ],
+     "answer": "Saves the contents of its registers so it can resume later",
+     "accept": [],
+     "hint": "The current task must not be lost.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryj0fck1hvredz",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which scheduling algorithm gives each process a fixed time slice in turn?",
+     "options": [
+      "Round robin",
+      "First come first served",
+      "Shortest job first",
+      "Priority queue only"
+     ],
+     "answer": "Round robin",
+     "accept": [],
+     "hint": "Its name suggests going around a circle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwq2v40b1303a",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A disadvantage of first come first served scheduling is that:",
+     "options": [
+      "A long process can make short processes wait a long time",
+      "Every process gets exactly the same time slice",
+      "It requires knowing the length of each job in advance",
+      "It cannot be implemented with a queue"
+     ],
+     "answer": "A long process can make short processes wait a long time",
+     "accept": [],
+     "hint": "Think about who arrives first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1reidr83tt00s",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which algorithm requires an estimate of how long each process will take?",
+     "options": [
+      "Shortest job first",
+      "Round robin",
+      "First come first served",
+      "Multilevel feedback without priorities"
+     ],
+     "answer": "Shortest job first",
+     "accept": [],
+     "hint": "The name refers to job length.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nlbzclt1ovyc",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the name of the component in a control system that measures a physical quantity, such as temperature.",
+     "options": [],
+     "answer": "Sensor",
+     "accept": [
+      "a sensor",
+      "sensors"
+     ],
+     "hint": "It provides input to the system.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ylm6fjmoi56",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the name of the component in a control system that produces movement or an action, such as opening a valve.",
+     "options": [],
+     "answer": "Actuator",
+     "accept": [
+      "an actuator",
+      "actuators"
+     ],
+     "hint": "It turns signals into physical output.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwq10kbt2t1vl",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In a greenhouse control system, what is the role of feedback?",
+     "options": [
+      "The output affects the next input so the system can keep conditions near a set value",
+      "It records the data for later printing",
+      "It removes the need for a processor",
+      "It allows the user to switch the system off"
+     ],
+     "answer": "The output affects the next input so the system can keep conditions near a set value",
+     "accept": [],
+     "hint": "Think about a heater turning on and off.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzgfpop1mwpg63",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which is an example of an embedded control system?",
+     "options": [
+      "A washing machine controller",
+      "A spreadsheet program",
+      "A web browser",
+      "A word processor"
+     ],
+     "answer": "A washing machine controller",
+     "accept": [],
+     "hint": "It is built into a device with one main job.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc39atcm2pn3u",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is meant by virtual memory?",
+     "options": [
+      "Using part of secondary storage as an extension of RAM",
+      "Memory that is stored in the cloud",
+      "RAM that is never used",
+      "Cache memory inside the CPU"
+     ],
+     "answer": "Using part of secondary storage as an extension of RAM",
+     "accept": [],
+     "hint": "It is used when RAM is full.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yjbqoemxyent",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In paging, memory is divided into:",
+     "options": [
+      "Fixed-size blocks",
+      "Variable-size logical blocks",
+      "Blocks the size of each function",
+      "Single bytes"
+     ],
+     "answer": "Fixed-size blocks",
+     "accept": [],
+     "hint": "Pages and frames are the same size.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1htdke1thq419",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which statement about segmentation is correct?",
+     "options": [
+      "Segments are variable in size and match logical divisions of a program",
+      "Segments are always the same size as pages",
+      "Segmentation removes the need for memory management",
+      "Segmentation cannot cause fragmentation"
+     ],
+     "answer": "Segments are variable in size and match logical divisions of a program",
+     "accept": [],
+     "hint": "Compare with how paging divides memory.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wojs6j1u6dg50",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which type of fragmentation can occur with paging?",
+     "options": [
+      "Internal fragmentation",
+      "External fragmentation only",
+      "No fragmentation at all",
+      "Disk fragmentation only"
+     ],
+     "answer": "Internal fragmentation",
+     "accept": [],
+     "hint": "The last page of a process may not be full.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wkuhxivlskel",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain how an operating system makes it appear that several programs are running at the same time on a single-core processor.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use the terms multitasking, time slice and context switch.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1owj2wz1nr4x83",
+     "subject": "comp",
+     "type": "open",
+     "q": "Describe how a thermostat-controlled heating system uses a sensor, a processor and an actuator.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Follow the data from the measurement to the action.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "comp-sl": {
+   "topic": "A1.3 Operating systems and control systems",
+   "questions": [
+    {
+     "id": "rn6raort5e3bm",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which of these is a role of an operating system?",
+     "options": [
+      "Managing memory allocation for running processes",
+      "Compiling source code into machine code",
+      "Designing the user's web pages",
+      "Increasing the clock speed of the CPU"
+     ],
+     "answer": "Managing memory allocation for running processes",
+     "accept": [],
+     "hint": "Think of what the OS controls between hardware and software.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkr8m9n5jplun",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the term for a signal sent to the processor to indicate that an event needs immediate attention.",
+     "options": [],
+     "answer": "Interrupt",
+     "accept": [
+      "an interrupt",
+      "interrupts"
+     ],
+     "hint": "A key press or a printer error can cause one.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbr63lf15k1p2t",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What does the processor do first when it receives an interrupt of higher priority than the current task?",
+     "options": [
+      "Saves the contents of its registers so it can resume later",
+      "Deletes the current process",
+      "Restarts the computer",
+      "Ignores the interrupt until the task ends"
+     ],
+     "answer": "Saves the contents of its registers so it can resume later",
+     "accept": [],
+     "hint": "The current task must not be lost.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgxhkm9hjeeey",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which scheduling algorithm gives each process a fixed time slice in turn?",
+     "options": [
+      "Round robin",
+      "First come first served",
+      "Shortest job first",
+      "Priority queue only"
+     ],
+     "answer": "Round robin",
+     "accept": [],
+     "hint": "Its name suggests going around a circle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vn1upz9mty3l",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A disadvantage of first come first served scheduling is that:",
+     "options": [
+      "A long process can make short processes wait a long time",
+      "Every process gets exactly the same time slice",
+      "It requires knowing the length of each job in advance",
+      "It cannot be implemented with a queue"
+     ],
+     "answer": "A long process can make short processes wait a long time",
+     "accept": [],
+     "hint": "Think about who arrives first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bocqd11mw9tl",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which algorithm requires an estimate of how long each process will take?",
+     "options": [
+      "Shortest job first",
+      "Round robin",
+      "First come first served",
+      "Multilevel feedback without priorities"
+     ],
+     "answer": "Shortest job first",
+     "accept": [],
+     "hint": "The name refers to job length.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7m5g5s1oh8xtl",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the name of the component in a control system that measures a physical quantity, such as temperature.",
+     "options": [],
+     "answer": "Sensor",
+     "accept": [
+      "a sensor",
+      "sensors"
+     ],
+     "hint": "It provides input to the system.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bkgm2q12kmelz",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the name of the component in a control system that produces movement or an action, such as opening a valve.",
+     "options": [],
+     "answer": "Actuator",
+     "accept": [
+      "an actuator",
+      "actuators"
+     ],
+     "hint": "It turns signals into physical output.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwrtoe0nzoskm",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In a greenhouse control system, what is the role of feedback?",
+     "options": [
+      "The output affects the next input so the system can keep conditions near a set value",
+      "It records the data for later printing",
+      "It removes the need for a processor",
+      "It allows the user to switch the system off"
+     ],
+     "answer": "The output affects the next input so the system can keep conditions near a set value",
+     "accept": [],
+     "hint": "Think about a heater turning on and off.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpx7tmgbp5o9e",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which is an example of an embedded control system?",
+     "options": [
+      "A washing machine controller",
+      "A spreadsheet program",
+      "A web browser",
+      "A word processor"
+     ],
+     "answer": "A washing machine controller",
+     "accept": [],
+     "hint": "It is built into a device with one main job.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hq0pr965rchr",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is meant by virtual memory?",
+     "options": [
+      "Using part of secondary storage as an extension of RAM",
+      "Memory that is stored in the cloud",
+      "RAM that is never used",
+      "Cache memory inside the CPU"
+     ],
+     "answer": "Using part of secondary storage as an extension of RAM",
+     "accept": [],
+     "hint": "It is used when RAM is full.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rle3as9187ui67",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which is an advantage of the round robin algorithm?",
+     "options": [
+      "Every process receives processor time regularly",
+      "Long jobs always finish first",
+      "It needs no queue",
+      "It never needs a context switch"
+     ],
+     "answer": "Every process receives processor time regularly",
+     "accept": [],
+     "hint": "Think about fairness.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r72ikfr1yhb6u6",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which device is most likely to be used as a sensor in an automatic door?",
+     "options": [
+      "A motion sensor",
+      "A motor",
+      "A loudspeaker",
+      "A light bulb"
+     ],
+     "answer": "A motion sensor",
+     "accept": [],
+     "hint": "The door needs to detect people.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ugxmmx18ikjc2",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What can happen if too much virtual memory is used?",
+     "options": [
+      "Thrashing, where the system spends more time swapping than processing",
+      "The CPU overheats immediately",
+      "The hard disk becomes RAM permanently",
+      "Programs run faster"
+     ],
+     "answer": "Thrashing, where the system spends more time swapping than processing",
+     "accept": [],
+     "hint": "Secondary storage is much slower than RAM.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19fsaajz4jcfa",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain why interrupts are given different priorities.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare a power failure with a key press.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpej124dlsjsk",
+     "subject": "comp",
+     "type": "open",
+     "q": "Describe how a thermostat-controlled heating system uses a sensor, a processor and an actuator.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Follow the data from the measurement to the action.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "econ-hl": {
+   "topic": "Market failure: negative externalities",
+   "questions": [
+    {
+     "id": "r11rlo341pd9cq9",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Market failure occurs when:",
+     "options": [
+      "The free market fails to allocate resources to achieve allocative efficiency",
+      "A firm makes a loss",
+      "Prices rise because of inflation",
+      "The government sets a price ceiling"
+     ],
+     "answer": "The free market fails to allocate resources to achieve allocative efficiency",
+     "accept": [],
+     "hint": "Think of where MSB equals MSC.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kzydml39masw",
+     "subject": "econ",
+     "type": "short",
+     "q": "State the term for a cost imposed on a third party that is not reflected in the market price.",
+     "options": [],
+     "answer": "Negative externality",
+     "accept": [
+      "external cost",
+      "negative externalities",
+      "an external cost"
+     ],
+     "hint": "It is the opposite of a positive spillover.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wlsaug111pj09",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What does MSC stand for?",
+     "options": [
+      "Marginal social cost",
+      "Market supply curve",
+      "Minimum social charge",
+      "Marginal supply cost"
+     ],
+     "answer": "Marginal social cost",
+     "accept": [],
+     "hint": "It includes private and external costs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vhipw61uijhru",
+     "subject": "econ",
+     "type": "mc",
+     "q": "For a negative externality of production, which relationship is true?",
+     "options": [
+      "MSC > MPC",
+      "MSC < MPC",
+      "MSB > MPB",
+      "MSC = MPC"
+     ],
+     "answer": "MSC > MPC",
+     "accept": [],
+     "hint": "The external cost is added to the private cost.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rk8fcy118x11j",
+     "subject": "econ",
+     "type": "mc",
+     "q": "In a negative production externality diagram, the free market output is:",
+     "options": [
+      "Greater than the socially optimal output",
+      "Less than the socially optimal output",
+      "Equal to the socially optimal output",
+      "Zero"
+     ],
+     "answer": "Greater than the socially optimal output",
+     "accept": [],
+     "hint": "Producers ignore part of the cost.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11hgf1wh3ud62",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which is the best example of a negative externality of production?",
+     "options": [
+      "A factory releasing pollutants into a river",
+      "A student buying textbooks",
+      "A homeowner planting a garden",
+      "A consumer getting vaccinated"
+     ],
+     "answer": "A factory releasing pollutants into a river",
+     "accept": [],
+     "hint": "Look for a third party harmed by output.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8fwhvi1h0htph",
+     "subject": "econ",
+     "type": "mc",
+     "q": "For a negative externality of consumption, which relationship is true?",
+     "options": [
+      "MSB < MPB",
+      "MSB > MPB",
+      "MSC > MPC",
+      "MSB = MPB"
+     ],
+     "answer": "MSB < MPB",
+     "accept": [],
+     "hint": "Consumption harms others, lowering benefit to society.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vf1siux1c7cl",
+     "subject": "econ",
+     "type": "short",
+     "q": "State the term for a good that is overconsumed and harmful, such as tobacco.",
+     "options": [],
+     "answer": "Demerit good",
+     "accept": [
+      "demerit goods",
+      "a demerit good"
+     ],
+     "hint": "It is the opposite of a merit good.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryj4kt59rwlru",
+     "subject": "econ",
+     "type": "mc",
+     "q": "On an externality diagram, the welfare loss triangle lies between:",
+     "options": [
+      "The free market quantity and the socially optimal quantity",
+      "The origin and the free market quantity",
+      "The price axis and the supply curve",
+      "The demand curve and the price axis"
+     ],
+     "answer": "The free market quantity and the socially optimal quantity",
+     "accept": [],
+     "hint": "It shows the units where MSC exceeds MSB.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y77vs6guvkxs",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which government policy directly aims to make producers pay the external cost of pollution?",
+     "options": [
+      "A Pigouvian tax",
+      "A production subsidy",
+      "A price ceiling",
+      "A minimum wage"
+     ],
+     "answer": "A Pigouvian tax",
+     "accept": [],
+     "hint": "It shifts MPC towards MSC.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1onit9d1c1vnc4",
+     "subject": "econ",
+     "type": "num",
+     "q": "At the free market output, MPC = $40 and the external cost per unit is $15. Calculate MSC in dollars.",
+     "options": [],
+     "answer": "55",
+     "accept": [],
+     "hint": "MSC equals private cost plus external cost.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r162vwrjabk75e",
+     "subject": "econ",
+     "type": "num",
+     "q": "The free market output is 500 units and the socially optimal output is 380 units. Calculate the overproduction in units.",
+     "options": [],
+     "answer": "120",
+     "accept": [],
+     "hint": "Subtract the optimum from the market output.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15qq4yxnz0zhi",
+     "subject": "econ",
+     "type": "num",
+     "q": "A welfare loss triangle has a base of 120 units and a height of $15. Calculate the welfare loss in dollars.",
+     "options": [],
+     "answer": "900",
+     "accept": [],
+     "hint": "Use one half times base times height.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rry2hef1q0uvlc",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A limitation of a tax on alcohol to reduce consumption is that:",
+     "options": [
+      "Demand is price inelastic, so quantity may fall only a little",
+      "It always eliminates consumption",
+      "It increases the external cost",
+      "It lowers government revenue to zero"
+     ],
+     "answer": "Demand is price inelastic, so quantity may fall only a little",
+     "accept": [],
+     "hint": "Think of habit-forming goods.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sitcwgpaigjr",
+     "subject": "econ",
+     "type": "open",
+     "q": "Using a diagram, explain why the free market leads to overconsumption of tobacco.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Show MPB, MSB and MPC = MSC, then identify the welfare loss.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t4xlhb9g3wz9",
+     "subject": "econ",
+     "type": "open",
+     "q": "Evaluate the use of tradable permits to reduce carbon emissions from firms.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider setting the cap, monitoring and incentives to innovate.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
