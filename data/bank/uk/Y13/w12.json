@@ -6581,6 +6581,1817 @@
      "errors": []
     }
    ]
+  },
+  "pt": {
+   "topic": "ENEM Linguagens: estratégias e gestão do tempo",
+   "questions": [
+    {
+     "id": "rrfguct142sapt",
+     "subject": "pt",
+     "type": "mc",
+     "q": "No ENEM, quantas alternativas tem cada questão objetiva?",
+     "options": [
+      "3",
+      "4",
+      "6",
+      "5"
+     ],
+     "answer": "5",
+     "accept": [],
+     "hint": "Pense nas letras de A até E.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bniq7z54vrza",
+     "subject": "pt",
+     "type": "mc",
+     "q": "No ENEM, o que acontece quando o candidato marca uma alternativa errada?",
+     "options": [
+      "A questão é anulada para todos",
+      "Perde um ponto inteiro",
+      "Não perde pontos, apenas deixa de ganhar",
+      "Perde metade de um ponto"
+     ],
+     "answer": "Não perde pontos, apenas deixa de ganhar",
+     "accept": [],
+     "hint": "Lembre se existe desconto por erro nessa prova.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3uc1py1j1am5n",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Por que é uma boa estratégia não deixar nenhuma questão do ENEM em branco?",
+     "options": [
+      "Porque questões em branco valem pontos negativos",
+      "Porque o gabarito só é lido se estiver completo",
+      "Porque a prova é anulada se houver respostas em branco",
+      "Porque não há penalidade por erro e o chute ainda pode acertar"
+     ],
+     "answer": "Porque não há penalidade por erro e o chute ainda pode acertar",
+     "accept": [],
+     "hint": "Compare o que se ganha e o que se perde ao marcar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk8yqel4oqzu4",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual é a sigla do método estatístico usado para calcular a nota das provas objetivas do ENEM?",
+     "options": [],
+     "answer": "TRI",
+     "accept": [
+      "Teoria de Resposta ao Item"
+     ],
+     "hint": "São três letras; a última significa \"Item\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6zyrqa1ek9wns",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na correção pela TRI, o que acontece com um candidato que acerta muitas questões difíceis, mas erra várias fáceis?",
+     "options": [
+      "Ele sempre recebe a nota máxima",
+      "As fáceis não contam para nada",
+      "A coerência baixa pode reduzir o peso desses acertos",
+      "Os erros nas fáceis são ignorados"
+     ],
+     "answer": "A coerência baixa pode reduzir o peso desses acertos",
+     "accept": [],
+     "hint": "A TRI avalia se o padrão de respostas faz sentido.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y82ezn3u86q9",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual estratégia de leitura ajuda a resolver uma questão longa de Linguagens com mais rapidez?",
+     "options": [
+      "Ler o texto três vezes antes de olhar o comando",
+      "Começar pela alternativa mais longa",
+      "Marcar sempre a alternativa C",
+      "Ler primeiro o comando e as alternativas, depois o texto com foco no que se pede"
+     ],
+     "answer": "Ler primeiro o comando e as alternativas, depois o texto com foco no que se pede",
+     "accept": [],
+     "hint": "Saber o que procurar antes de ler economiza tempo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r110pmbr1chxeru",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que significa a técnica de \"leitura em duas passadas\" numa prova longa?",
+     "options": [
+      "Ler cada texto duas vezes em voz baixa",
+      "Responder só as questões pares e depois as ímpares",
+      "Fazer a prova duas vezes do início ao fim",
+      "Resolver primeiro as questões rápidas e voltar depois às mais demoradas"
+     ],
+     "answer": "Resolver primeiro as questões rápidas e voltar depois às mais demoradas",
+     "accept": [],
+     "hint": "Pense em garantir pontos fáceis antes de gastar tempo nas difíceis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r123xbqr1jaozyf",
+     "subject": "pt",
+     "type": "num",
+     "q": "No primeiro dia do ENEM, o candidato tem 330 minutos para 90 questões e a redação. Se reservar 80 minutos para a redação, quantos minutos sobram para as questões?",
+     "options": [],
+     "answer": "250",
+     "accept": [],
+     "hint": "Subtraia o tempo da redação do total.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18jnq6yk7l219",
+     "subject": "pt",
+     "type": "num",
+     "q": "Com 250 minutos para 90 questões, quanto tempo médio sobra por questão? Responda em minutos, arredondando para uma casa decimal.",
+     "options": [],
+     "answer": "2.8",
+     "accept": [],
+     "hint": "Divida o tempo pelo número de questões.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj7kmtza9q24u",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a melhor atitude ao travar numa questão de Linguagens durante o simulado?",
+     "options": [
+      "Deixar em branco e nunca mais voltar",
+      "Ficar nela até resolver, custe o tempo que for",
+      "Marcar um palpite provisório, sinalizar e seguir adiante",
+      "Recomeçar a prova do início"
+     ],
+     "answer": "Marcar um palpite provisório, sinalizar e seguir adiante",
+     "accept": [],
+     "hint": "O relógio continua correndo enquanto você trava.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10ggskq1wxlmkt",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em questões com gráficos, tirinhas e anúncios, o que o ENEM costuma avaliar em Linguagens?",
+     "options": [
+      "A memorização de datas de publicação",
+      "Regras de ortografia isoladas do texto",
+      "A relação entre linguagem verbal e não verbal na construção de sentido",
+      "A biografia completa dos autores"
+     ],
+     "answer": "A relação entre linguagem verbal e não verbal na construção de sentido",
+     "accept": [],
+     "hint": "Pense em como imagem e palavra trabalham juntas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqo3a031cvy4b7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em uma questão de Linguagens, uma alternativa que traz uma afirmação verdadeira, mas que não responde ao comando, deve ser:",
+     "options": [
+      "Descartada, porque não atende ao que foi perguntado",
+      "Escolhida em caso de dúvida",
+      "Marcada, porque está correta",
+      "Considerada a resposta mais segura"
+     ],
+     "answer": "Descartada, porque não atende ao que foi perguntado",
+     "accept": [],
+     "hint": "Releia o comando: a pergunta é sobre o texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1etwoml1jne9ou",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Para que serve fazer um simulado comentado depois de cronometrado?",
+     "options": [
+      "Decorar o gabarito daquele simulado",
+      "Comparar a letra com a dos colegas",
+      "Entender o motivo de cada erro e ajustar a estratégia",
+      "Apenas descobrir a nota final"
+     ],
+     "answer": "Entender o motivo de cada erro e ajustar a estratégia",
+     "accept": [],
+     "hint": "O objetivo é aprender com os erros, não só contá-los.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcjypj5eg5875",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas alternativas é um sinal de \"pegadinha\" comum em Linguagens?",
+     "options": [
+      "Presença de vírgulas",
+      "Uso de vocabulário formal",
+      "Alternativas com verbos no presente",
+      "Termos absolutos como \"sempre\", \"nunca\" e \"apenas\""
+     ],
+     "answer": "Termos absolutos como \"sempre\", \"nunca\" e \"apenas\"",
+     "accept": [],
+     "hint": "Generalizações costumam ser fáceis de contradizer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r196mjri1xvcqnb",
+     "subject": "pt",
+     "type": "open",
+     "q": "Descreva um plano de distribuição do tempo para o primeiro dia do ENEM (Linguagens, Ciências Humanas e redação) e justifique a ordem que você escolheria.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em quando você escreve melhor e em quanto tempo precisa para passar a redação a limpo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t939t83bxaff",
+     "subject": "pt",
+     "type": "open",
+     "q": "Depois de um simulado, você percebeu que errou mais questões no fim da prova do que no começo. Explique duas possíveis causas e uma mudança de estratégia para o próximo simulado.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Considere cansaço, tempo e ordem de resolução.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_lit-hl": {
+   "topic": "Revisitando Drummond e Terra Sonâmbula",
+   "questions": [
+    {
+     "id": "r1s56f8f1ybzaz0",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em \"Terra Sonâmbula\", qual é o contexto histórico principal?",
+     "options": [
+      "A Revolução Francesa",
+      "A Segunda Guerra Mundial na Europa",
+      "A guerra civil em Moçambique após a independência",
+      "A colonização portuguesa do Brasil"
+     ],
+     "answer": "A guerra civil em Moçambique após a independência",
+     "accept": [],
+     "hint": "O romance se passa em um país africano de língua portuguesa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6u3zoq15mvrp6",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Quem são as duas personagens que caminham pela estrada no início de \"Terra Sonâmbula\"?",
+     "options": [
+      "Gaspar e Tuahir",
+      "Muidinga e Farida",
+      "Kindzu e Farida",
+      "Tuahir e Muidinga"
+     ],
+     "answer": "Tuahir e Muidinga",
+     "accept": [],
+     "hint": "Um é um velho; o outro, um menino.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4jxtyrob3n70",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O que Muidinga encontra junto ao ônibus queimado e passa a ler para o velho?",
+     "options": [
+      "Os cadernos de Kindzu",
+      "Cartas de soldados",
+      "Jornais antigos",
+      "Um diário de viagem português"
+     ],
+     "answer": "Os cadernos de Kindzu",
+     "accept": [],
+     "hint": "São escritos de um narrador que também viaja.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb262vz17rd1r8",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Que nome se dá em Moçambique ao ônibus incendiado onde as personagens se abrigam (palavra usada no romance)?",
+     "options": [],
+     "answer": "machimbombo",
+     "accept": [
+      "o machimbombo"
+     ],
+     "hint": "É uma palavra de uso moçambicano para ônibus.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnn7ok21nz0hk6",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual recurso estrutural organiza \"Terra Sonâmbula\"?",
+     "options": [
+      "Cartas trocadas entre dois irmãos",
+      "A alternância entre a viagem de Muidinga e os cadernos de Kindzu",
+      "Capítulos em forma de poemas",
+      "Um único narrador em primeira pessoa do começo ao fim"
+     ],
+     "answer": "A alternância entre a viagem de Muidinga e os cadernos de Kindzu",
+     "accept": [],
+     "hint": "Há duas linhas narrativas que se espelham.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r122rn310ffst",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "No romance, a ideia de que \"a estrada anda\" e a paisagem muda sozinha é um exemplo de:",
+     "options": [
+      "Descrição científica da geografia",
+      "Linguagem jornalística",
+      "Ironia sobre o turismo",
+      "Elementos do fantástico ligados à tradição oral e à guerra"
+     ],
+     "answer": "Elementos do fantástico ligados à tradição oral e à guerra",
+     "accept": [],
+     "hint": "O sonho e o real se misturam no título do livro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wyig04jyrlle",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual poema de Drummond traz os versos \"Vai, Carlos! ser gauche na vida\"?",
+     "options": [
+      "No meio do caminho",
+      "Mãos dadas",
+      "Poema de Sete Faces",
+      "José"
+     ],
+     "answer": "Poema de Sete Faces",
+     "accept": [],
+     "hint": "É o poema de abertura de seu primeiro livro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxi29drwp1f0i",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em \"Mãos dadas\", o eu lírico afirma que \"o tempo é a minha matéria\". De que tempo se trata?",
+     "options": [
+      "O tempo da infância",
+      "O futuro utópico",
+      "O passado mítico dos heróis",
+      "O tempo presente, dos homens presentes"
+     ],
+     "answer": "O tempo presente, dos homens presentes",
+     "accept": [],
+     "hint": "O poeta recusa fugir para outras épocas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rku8upy1vt26a1",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Qual livro de Drummond, de 1945, reúne poemas marcados pela Segunda Guerra Mundial, como \"A flor e a náusea\"?",
+     "options": [],
+     "answer": "A Rosa do Povo",
+     "accept": [
+      "Rosa do Povo"
+     ],
+     "hint": "O título une uma flor e a coletividade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nnp0bfpzob92",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em \"A flor e a náusea\", o que simboliza a flor que nasce no asfalto?",
+     "options": [
+      "Uma esperança frágil que rompe a opressão do cotidiano",
+      "A riqueza da cidade",
+      "O fim definitivo da poesia",
+      "A natureza vencida pelo progresso"
+     ],
+     "answer": "Uma esperança frágil que rompe a opressão do cotidiano",
+     "accept": [],
+     "hint": "Repare que ela é feia, mas \"é uma flor\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrh8okg12lip5g",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O que aproxima Drummond de \"A Rosa do Povo\" e \"Terra Sonâmbula\" no tema do tempo histórico?",
+     "options": [
+      "Ambos respondem a guerras e tentam dar sentido a um presente violento",
+      "Ambos narram viagens marítimas",
+      "Ambos negam qualquer relação com a história",
+      "Ambos celebram a vida rural tranquila"
+     ],
+     "answer": "Ambos respondem a guerras e tentam dar sentido a um presente violento",
+     "accept": [],
+     "hint": "Pense no que acontecia no mundo quando cada obra foi escrita.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5jd0i28yetz6",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Uma diferença central entre as duas obras na representação da guerra é que:",
+     "options": [
+      "Drummond observa uma guerra distante a partir da cidade; Mia Couto narra a guerra vivida dentro do próprio território",
+      "Nenhuma das obras trata de guerra",
+      "Os dois tratam da mesma guerra",
+      "Drummond fala de uma guerra futura; Mia Couto, de uma guerra antiga"
+     ],
+     "answer": "Drummond observa uma guerra distante a partir da cidade; Mia Couto narra a guerra vivida dentro do próprio território",
+     "accept": [],
+     "hint": "Compare a distância do eu lírico e das personagens em relação ao conflito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8awa2mnbkwn9",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual termo descreve melhor a mistura de realidade, sonho e crenças tradicionais em \"Terra Sonâmbula\"?",
+     "options": [
+      "Classicismo",
+      "Parnasianismo",
+      "Naturalismo científico",
+      "Realismo animista"
+     ],
+     "answer": "Realismo animista",
+     "accept": [],
+     "hint": "O próprio Mia Couto prefere um termo ligado às crenças africanas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsbyzpt1h0f4ti",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Compare como o \"eu\" deslocado de Drummond e a busca de identidade de Muidinga respondem a um mundo em crise. Use pelo menos uma referência a cada obra.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no \"gauche\" e no menino que não sabe de onde veio.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r80b1yfxs97q8",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Avalie a afirmação: \"Em ambas as obras, escrever e ler são formas de resistir à destruição\". Construa um argumento com uma contra-argumentação.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Os cadernos de Kindzu e a poesia como \"flor\" podem servir de evidência.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra5bt3r1c4zeci",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Explique como a estrutura em duas linhas narrativas de \"Terra Sonâmbula\" pode ser comparada à tensão entre o individual e o coletivo na poesia de Drummond.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em como Kindzu e Muidinga se refletem, e em \"Sentimento do Mundo\".",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_lit-sl": {
+   "topic": "Revisitando Drummond e Terra Sonâmbula",
+   "questions": [
+    {
+     "id": "r7uxv28kjyz27",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em \"Terra Sonâmbula\", qual é o contexto histórico principal?",
+     "options": [
+      "A colonização portuguesa do Brasil",
+      "A Revolução Francesa",
+      "A guerra civil em Moçambique após a independência",
+      "A Segunda Guerra Mundial na Europa"
+     ],
+     "answer": "A guerra civil em Moçambique após a independência",
+     "accept": [],
+     "hint": "O romance se passa em um país africano de língua portuguesa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1egpll11uleodp",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Quem são as duas personagens que caminham pela estrada no início de \"Terra Sonâmbula\"?",
+     "options": [
+      "Gaspar e Tuahir",
+      "Tuahir e Muidinga",
+      "Kindzu e Farida",
+      "Muidinga e Farida"
+     ],
+     "answer": "Tuahir e Muidinga",
+     "accept": [],
+     "hint": "Um é um velho; o outro, um menino.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkggvqc1b0t74r",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O que Muidinga encontra junto ao ônibus queimado e passa a ler para o velho?",
+     "options": [
+      "Cartas de soldados",
+      "Jornais antigos",
+      "Os cadernos de Kindzu",
+      "Um diário de viagem português"
+     ],
+     "answer": "Os cadernos de Kindzu",
+     "accept": [],
+     "hint": "São escritos de um narrador que também viaja.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8btupu1hons0p",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Que nome se dá em Moçambique ao ônibus incendiado onde as personagens se abrigam (palavra usada no romance)?",
+     "options": [],
+     "answer": "machimbombo",
+     "accept": [
+      "o machimbombo"
+     ],
+     "hint": "É uma palavra de uso moçambicano para ônibus.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmzntv51fe81x5",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual recurso estrutural organiza \"Terra Sonâmbula\"?",
+     "options": [
+      "Cartas trocadas entre dois irmãos",
+      "Capítulos em forma de poemas",
+      "Um único narrador em primeira pessoa do começo ao fim",
+      "A alternância entre a viagem de Muidinga e os cadernos de Kindzu"
+     ],
+     "answer": "A alternância entre a viagem de Muidinga e os cadernos de Kindzu",
+     "accept": [],
+     "hint": "Há duas linhas narrativas que se espelham.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8ki6iu1tmubfc",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "No romance, a ideia de que \"a estrada anda\" e a paisagem muda sozinha é um exemplo de:",
+     "options": [
+      "Descrição científica da geografia",
+      "Linguagem jornalística",
+      "Elementos do fantástico ligados à tradição oral e à guerra",
+      "Ironia sobre o turismo"
+     ],
+     "answer": "Elementos do fantástico ligados à tradição oral e à guerra",
+     "accept": [],
+     "hint": "O sonho e o real se misturam no título do livro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru70nqfhw0jf5",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual poema de Drummond traz os versos \"Vai, Carlos! ser gauche na vida\"?",
+     "options": [
+      "Mãos dadas",
+      "No meio do caminho",
+      "Poema de Sete Faces",
+      "José"
+     ],
+     "answer": "Poema de Sete Faces",
+     "accept": [],
+     "hint": "É o poema de abertura de seu primeiro livro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wnr2v01th3fi5",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em \"Mãos dadas\", o eu lírico afirma que \"o tempo é a minha matéria\". De que tempo se trata?",
+     "options": [
+      "O tempo presente, dos homens presentes",
+      "O passado mítico dos heróis",
+      "O futuro utópico",
+      "O tempo da infância"
+     ],
+     "answer": "O tempo presente, dos homens presentes",
+     "accept": [],
+     "hint": "O poeta recusa fugir para outras épocas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra7oj6nw58me4",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Qual livro de Drummond, de 1945, reúne poemas marcados pela Segunda Guerra Mundial, como \"A flor e a náusea\"?",
+     "options": [],
+     "answer": "A Rosa do Povo",
+     "accept": [
+      "Rosa do Povo"
+     ],
+     "hint": "O título une uma flor e a coletividade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f61abaj6557",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em \"A flor e a náusea\", o que simboliza a flor que nasce no asfalto?",
+     "options": [
+      "O fim definitivo da poesia",
+      "Uma esperança frágil que rompe a opressão do cotidiano",
+      "A natureza vencida pelo progresso",
+      "A riqueza da cidade"
+     ],
+     "answer": "Uma esperança frágil que rompe a opressão do cotidiano",
+     "accept": [],
+     "hint": "Repare que ela é feia, mas \"é uma flor\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1my1ac51l4hpwl",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O que aproxima Drummond de \"A Rosa do Povo\" e \"Terra Sonâmbula\" no tema do tempo histórico?",
+     "options": [
+      "Ambos respondem a guerras e tentam dar sentido a um presente violento",
+      "Ambos negam qualquer relação com a história",
+      "Ambos narram viagens marítimas",
+      "Ambos celebram a vida rural tranquila"
+     ],
+     "answer": "Ambos respondem a guerras e tentam dar sentido a um presente violento",
+     "accept": [],
+     "hint": "Pense no que acontecia no mundo quando cada obra foi escrita.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsg0n531f8vhrn",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Uma diferença central entre as duas obras na representação da guerra é que:",
+     "options": [
+      "Drummond observa uma guerra distante a partir da cidade; Mia Couto narra a guerra vivida dentro do próprio território",
+      "Drummond fala de uma guerra futura; Mia Couto, de uma guerra antiga",
+      "Os dois tratam da mesma guerra",
+      "Nenhuma das obras trata de guerra"
+     ],
+     "answer": "Drummond observa uma guerra distante a partir da cidade; Mia Couto narra a guerra vivida dentro do próprio território",
+     "accept": [],
+     "hint": "Compare a distância do eu lírico e das personagens em relação ao conflito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4423o31mcwuqi",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em \"No meio do caminho\", o que a repetição do verso sobre a pedra produz?",
+     "options": [
+      "Um ritmo de canção alegre",
+      "A ideia de que o caminho está livre",
+      "Uma descrição geológica precisa",
+      "A sensação de obstáculo insistente que não sai da memória"
+     ],
+     "answer": "A sensação de obstáculo insistente que não sai da memória",
+     "accept": [],
+     "hint": "Leia em voz alta e repare no efeito da insistência.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lphp7b1t8kba",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Em \"José\", qual pergunta se repete ao longo do poema?",
+     "options": [],
+     "answer": "E agora, José?",
+     "accept": [
+      "E agora José",
+      "e agora, José"
+     ],
+     "hint": "É uma pergunta curta que expressa falta de saída.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h0s9k11qe8rn7",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Escolha um poema de Drummond e explique em 3 a 5 frases como ele dialoga com o tempo histórico em que foi escrito.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Lembre que a obra dos anos 1940 é marcada pela guerra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pko7tdgny9f",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Prepare uma comparação: aponte uma semelhança e uma diferença entre a forma como Drummond e Mia Couto representam a esperança.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na flor no asfalto e no menino que continua a ler.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_red": {
+   "topic": "Simulado ENEM II: gestão do tempo",
+   "questions": [
+    {
+     "id": "r1myjfgx1l8r7ae",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual é o tipo de texto exigido na redação do ENEM?",
+     "options": [
+      "Narrativo",
+      "Carta pessoal",
+      "Dissertativo-argumentativo",
+      "Descritivo"
+     ],
+     "answer": "Dissertativo-argumentativo",
+     "accept": [],
+     "hint": "É um texto que defende um ponto de vista.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqcjtlldbfnsu",
+     "subject": "pt_red",
+     "type": "num",
+     "q": "Quantas competências são avaliadas na redação do ENEM?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Cada uma vale até 200 pontos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1azpffx1lp4qan",
+     "subject": "pt_red",
+     "type": "num",
+     "q": "Qual é a nota máxima da redação do ENEM?",
+     "options": [],
+     "answer": "1000",
+     "accept": [],
+     "hint": "Multiplique o número de competências por 200.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18ejb6vecwmeo",
+     "subject": "pt_red",
+     "type": "num",
+     "q": "Qual é o número máximo de linhas da folha de redação do ENEM?",
+     "options": [],
+     "answer": "30",
+     "accept": [],
+     "hint": "É a mesma quantidade de dias de vários meses.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10ayyq9tu8pry",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "O que acontece com uma redação do ENEM que tem até 7 linhas escritas?",
+     "options": [
+      "Perde 100 pontos",
+      "É corrigida normalmente",
+      "Recebe nota zero por texto insuficiente",
+      "Ganha nota proporcional"
+     ],
+     "answer": "Recebe nota zero por texto insuficiente",
+     "accept": [],
+     "hint": "Existe um mínimo de extensão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq1mdup1xfqac5",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Quais elementos devem estar presentes numa proposta de intervenção completa?",
+     "options": [
+      "Título, data e assinatura",
+      "Introdução, clímax e desfecho",
+      "Pergunta, resposta e conclusão",
+      "Agente, ação, meio/modo, finalidade e detalhamento"
+     ],
+     "answer": "Agente, ação, meio/modo, finalidade e detalhamento",
+     "accept": [],
+     "hint": "São cinco elementos ligados a quem, o quê, como, para quê.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12wxwgs1axnyk4",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Num simulado de 5h30, qual é uma divisão de tempo razoável para a redação?",
+     "options": [
+      "Apenas 15 minutos no final",
+      "Cerca de 1h a 1h20, incluindo rascunho e passar a limpo",
+      "Metade da prova inteira",
+      "Nenhum tempo reservado"
+     ],
+     "answer": "Cerca de 1h a 1h20, incluindo rascunho e passar a limpo",
+     "accept": [],
+     "hint": "Pense em planejar, escrever e revisar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryekv9q17qegc3",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Por que muitos candidatos fazem a redação no início ou no meio da prova, e não no fim?",
+     "options": [
+      "Para escrevê-la com a mente descansada e garantir tempo de revisão",
+      "Porque a redação vale menos",
+      "Porque os fiscais exigem",
+      "Para terminar a prova mais cedo"
+     ],
+     "answer": "Para escrevê-la com a mente descansada e garantir tempo de revisão",
+     "accept": [],
+     "hint": "O cansaço aumenta com o passar das horas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r30xpml1nvajw2",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual etapa ajuda a não fugir do tema durante a redação cronometrada?",
+     "options": [
+      "Começar direto pela conclusão",
+      "Fazer um rápido planejamento com tese e argumentos antes de escrever",
+      "Escrever sem rascunho",
+      "Copiar trechos dos textos motivadores"
+     ],
+     "answer": "Fazer um rápido planejamento com tese e argumentos antes de escrever",
+     "accept": [],
+     "hint": "Um roteiro curto evita desvios.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkhs9xf1l3ho86",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "O que avaliam principalmente as competências 1 e 4?",
+     "options": [
+      "Letra bonita e margem",
+      "Proposta de intervenção e tema",
+      "Criatividade e humor",
+      "Norma-padrão e coesão textual"
+     ],
+     "answer": "Norma-padrão e coesão textual",
+     "accept": [],
+     "hint": "Uma é sobre gramática; a outra, sobre conectivos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rorvsd91m2p2jr",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Ao revisar o texto final, qual erro é mais importante procurar primeiro?",
+     "options": [
+      "O número de parágrafos dos colegas",
+      "A cor da caneta",
+      "Problemas que mudam o sentido, como frases incompletas",
+      "O tamanho da margem esquerda"
+     ],
+     "answer": "Problemas que mudam o sentido, como frases incompletas",
+     "accept": [],
+     "hint": "Priorize o que afeta a compreensão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3pvcaxbeb8jl",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Na revisão, a repetição excessiva da mesma palavra pode ser corrigida com:",
+     "options": [
+      "Letras maiúsculas",
+      "Mais vírgulas",
+      "Sinônimos, pronomes e expressões retomadoras",
+      "Parênteses em todo parágrafo"
+     ],
+     "answer": "Sinônimos, pronomes e expressões retomadoras",
+     "accept": [],
+     "hint": "Pense nos recursos de coesão referencial.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1943sy1tk5e50",
+     "subject": "pt_red",
+     "type": "short",
+     "q": "Qual competência da redação do ENEM avalia a proposta de intervenção? Responda com o número por extenso.",
+     "options": [],
+     "answer": "quinta",
+     "accept": [
+      "5",
+      "competência 5",
+      "a quinta",
+      "cinco"
+     ],
+     "hint": "É a última da lista.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16sb8o810hdcn8",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Para equilibrar redação e questões objetivas, qual atitude é mais eficiente?",
+     "options": [
+      "Fazer a redação duas vezes",
+      "Resolver todas as questões e escrever a redação só se sobrar tempo",
+      "Deixar Ciências Humanas para o dia seguinte",
+      "Definir horários-limite para cada bloco e respeitá-los"
+     ],
+     "answer": "Definir horários-limite para cada bloco e respeitá-los",
+     "accept": [],
+     "hint": "Um cronograma evita que um bloco engula o outro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdxybxm1vsdn2",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Você terminou o rascunho com 20 minutos restantes e precisa passar a limpo. Explique como usaria esse tempo para revisar sem correr o risco de não terminar.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que corrigir no rascunho e no que deixar para trás.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmas1fo1ugsz7b",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Depois de um simulado, você recebeu nota baixa na competência 3 (argumentação). Proponha duas mudanças concretas para o próximo texto.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "A competência 3 trata da seleção e organização de argumentos.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa-hl": {
+   "topic": "Advanced grammar: connectors, cohesion and register",
+   "questions": [
+    {
+     "id": "r1h0qy2k29sosk",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the Spanish connector that means \"therefore\": \"Llovió mucho; ___, el partido se suspendió.\"",
+     "options": [
+      "aunque",
+      "por lo tanto",
+      "además",
+      "sin embargo"
+     ],
+     "answer": "por lo tanto",
+     "accept": [],
+     "hint": "You need a connector of consequence.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx6px301487j7w",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the connector that expresses contrast: \"Estudió mucho; ___, no aprobó el examen.\"",
+     "options": [
+      "es decir",
+      "por consiguiente",
+      "así que",
+      "sin embargo"
+     ],
+     "answer": "sin embargo",
+     "accept": [],
+     "hint": "The second idea goes against what we expected.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reerv9z11rqomj",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which connector adds information? \"El proyecto es barato y, ___, muy eficaz.\"",
+     "options": [
+      "no obstante",
+      "por lo tanto",
+      "además",
+      "a pesar de"
+     ],
+     "answer": "además",
+     "accept": [],
+     "hint": "You are adding a second positive point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rav1puynctvw8",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish the connector \"that is to say\" (used to reformulate an idea).",
+     "options": [],
+     "answer": "es decir",
+     "accept": [
+      "o sea",
+      "esto es"
+     ],
+     "hint": "It is a two-word phrase starting with a verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4l98dkivj4sw",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which connector must be followed by the subjunctive when it refers to the future? \"Te llamaré ___ llegue a casa.\"",
+     "options": [
+      "puesto que",
+      "cuando",
+      "porque",
+      "ya que"
+     ],
+     "answer": "cuando",
+     "accept": [],
+     "hint": "Think of a time connector.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcvnfkb18trk1g",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: \"Aunque ___ (llover) mañana, iremos a la playa.\" (= even if it rains)",
+     "options": [
+      "llueve",
+      "llovió",
+      "lloverá",
+      "llueva"
+     ],
+     "answer": "llueva",
+     "accept": [],
+     "hint": "Hypothetical concession uses the subjunctive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cr6jxe132qshl",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which connector introduces a cause? \"No salimos ___ hacía mucho frío.\"",
+     "options": [
+      "en cambio",
+      "sin embargo",
+      "por lo tanto",
+      "porque"
+     ],
+     "answer": "porque",
+     "accept": [],
+     "hint": "Answer the question \"why?\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fn5mii1vbt99z",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which option is the most formal way to say \"so\" in an academic essay?",
+     "options": [
+      "entonces",
+      "bueno",
+      "pues nada",
+      "por consiguiente"
+     ],
+     "answer": "por consiguiente",
+     "accept": [],
+     "hint": "Choose the one you would find in a written report.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5ge2yq1slkwlw",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the connector used to conclude an essay: \"___, la tecnología tiene ventajas e inconvenientes.\"",
+     "options": [
+      "En conclusión",
+      "A pesar de",
+      "En cambio",
+      "Por ejemplo"
+     ],
+     "answer": "En conclusión",
+     "accept": [],
+     "hint": "It signals the final paragraph.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rejajdv1sbaj0x",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"a pesar de\" mean?",
+     "options": [
+      "despite",
+      "in order to",
+      "as soon as",
+      "because of"
+     ],
+     "answer": "despite",
+     "accept": [],
+     "hint": "It introduces an obstacle that does not stop the action.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6vei781iqe9a7",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence uses a more formal register?",
+     "options": [
+      "Venga, envíalo ya.",
+      "Le agradecería que me enviara la información.",
+      "Oye, ¿me pasas eso?",
+      "Mándame la info, porfa."
+     ],
+     "answer": "Le agradecería que me enviara la información.",
+     "accept": [],
+     "hint": "Look for usted forms and the conditional.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r597q4xgmn2pn",
+     "subject": "spa",
+     "type": "mc",
+     "q": "In \"María compró un libro. Lo leyó en dos días.\", what does \"Lo\" do for cohesion?",
+     "options": [
+      "It refers back to \"un libro\" and avoids repetition",
+      "It is a connector of contrast",
+      "It introduces a new character",
+      "It marks the past tense"
+     ],
+     "answer": "It refers back to \"un libro\" and avoids repetition",
+     "accept": [],
+     "hint": "It is an object pronoun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryz19tm30nzr2",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the connector that best completes: \"___ las dificultades económicas, la empresa siguió creciendo.\"",
+     "options": [
+      "Así pues",
+      "Pese a",
+      "Con tal de que",
+      "Dado que"
+     ],
+     "answer": "Pese a",
+     "accept": [],
+     "hint": "The difficulties did not stop the growth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r140tdaj1wmtfm",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which connector requires the subjunctive? \"Te presto el coche ___ me lo devuelvas mañana.\"",
+     "options": [
+      "ya que",
+      "con tal de que",
+      "dado que",
+      "puesto que"
+     ],
+     "answer": "con tal de que",
+     "accept": [],
+     "hint": "It expresses a condition.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11ghib6geczdc",
+     "subject": "spa",
+     "type": "open",
+     "q": "Rewrite in Spanish, with formal register and at least two connectors, this informal message: \"Oye, no puedo ir a la reunión, estoy malo. Te mando lo que hice luego.\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use usted, the conditional and connectors like \"por lo tanto\" or \"no obstante\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11dh3l31hpf269",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 3–5 sentences in Spanish arguing for or against school uniforms, using at least three different connectors (addition, contrast and conclusion).",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Plan: idea, contrary idea, conclusion.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa-sl": {
+   "topic": "Advanced grammar: connectors, cohesion and register",
+   "questions": [
+    {
+     "id": "r9hhixl16buro3",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the Spanish connector that means \"therefore\": \"Llovió mucho; ___, el partido se suspendió.\"",
+     "options": [
+      "aunque",
+      "además",
+      "sin embargo",
+      "por lo tanto"
+     ],
+     "answer": "por lo tanto",
+     "accept": [],
+     "hint": "You need a connector of consequence.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uw1m6z5vnhtl",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the connector that expresses contrast: \"Estudió mucho; ___, no aprobó el examen.\"",
+     "options": [
+      "es decir",
+      "sin embargo",
+      "así que",
+      "por consiguiente"
+     ],
+     "answer": "sin embargo",
+     "accept": [],
+     "hint": "The second idea goes against what we expected.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcmjpvw1as12fy",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which connector adds information? \"El proyecto es barato y, ___, muy eficaz.\"",
+     "options": [
+      "no obstante",
+      "por lo tanto",
+      "a pesar de",
+      "además"
+     ],
+     "answer": "además",
+     "accept": [],
+     "hint": "You are adding a second positive point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbx3jat19bgp11",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish the connector \"that is to say\" (used to reformulate an idea).",
+     "options": [],
+     "answer": "es decir",
+     "accept": [
+      "o sea",
+      "esto es"
+     ],
+     "hint": "It is a two-word phrase starting with a verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlto0yz1bm7fn1",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which connector must be followed by the subjunctive when it refers to the future? \"Te llamaré ___ llegue a casa.\"",
+     "options": [
+      "puesto que",
+      "ya que",
+      "cuando",
+      "porque"
+     ],
+     "answer": "cuando",
+     "accept": [],
+     "hint": "Think of a time connector.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r1xrf612xut23",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: \"Aunque ___ (llover) mañana, iremos a la playa.\" (= even if it rains)",
+     "options": [
+      "llueve",
+      "lloverá",
+      "llueva",
+      "llovió"
+     ],
+     "answer": "llueva",
+     "accept": [],
+     "hint": "Hypothetical concession uses the subjunctive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruq2ayrwxemie",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which connector introduces a cause? \"No salimos ___ hacía mucho frío.\"",
+     "options": [
+      "porque",
+      "sin embargo",
+      "en cambio",
+      "por lo tanto"
+     ],
+     "answer": "porque",
+     "accept": [],
+     "hint": "Answer the question \"why?\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8l02kx10jdo4m",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which option is the most formal way to say \"so\" in an academic essay?",
+     "options": [
+      "bueno",
+      "por consiguiente",
+      "pues nada",
+      "entonces"
+     ],
+     "answer": "por consiguiente",
+     "accept": [],
+     "hint": "Choose the one you would find in a written report.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdl7bxz1a4ih3z",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the connector used to conclude an essay: \"___, la tecnología tiene ventajas e inconvenientes.\"",
+     "options": [
+      "En cambio",
+      "Por ejemplo",
+      "En conclusión",
+      "A pesar de"
+     ],
+     "answer": "En conclusión",
+     "accept": [],
+     "hint": "It signals the final paragraph.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14vpb8ce9lv6k",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"a pesar de\" mean?",
+     "options": [
+      "because of",
+      "in order to",
+      "despite",
+      "as soon as"
+     ],
+     "answer": "despite",
+     "accept": [],
+     "hint": "It introduces an obstacle that does not stop the action.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2ssa111cenjcc",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence uses a more formal register?",
+     "options": [
+      "Venga, envíalo ya.",
+      "Mándame la info, porfa.",
+      "Oye, ¿me pasas eso?",
+      "Le agradecería que me enviara la información."
+     ],
+     "answer": "Le agradecería que me enviara la información.",
+     "accept": [],
+     "hint": "Look for usted forms and the conditional.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqrhv5m1ipx1ii",
+     "subject": "spa",
+     "type": "mc",
+     "q": "In \"María compró un libro. Lo leyó en dos días.\", what does \"Lo\" do for cohesion?",
+     "options": [
+      "It refers back to \"un libro\" and avoids repetition",
+      "It is a connector of contrast",
+      "It introduces a new character",
+      "It marks the past tense"
+     ],
+     "answer": "It refers back to \"un libro\" and avoids repetition",
+     "accept": [],
+     "hint": "It is an object pronoun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qha29z1xo3to0",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the connector: \"No tengo hambre; ___, voy a comer algo ligero.\"",
+     "options": [
+      "aun así",
+      "porque",
+      "por ejemplo",
+      "primero"
+     ],
+     "answer": "aun así",
+     "accept": [],
+     "hint": "You do something despite the first idea.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15mm8he7luvob",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which connector orders ideas at the start of an argument?",
+     "options": [
+      "Por último",
+      "Sin embargo",
+      "Es decir",
+      "En primer lugar"
+     ],
+     "answer": "En primer lugar",
+     "accept": [],
+     "hint": "Think of \"firstly\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnm8erdixncyn",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 3–4 sentences in Spanish about the advantages of learning languages, using \"además\", \"sin embargo\" and \"por lo tanto\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Each connector should link two ideas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b1wvyx1d2xkl0",
+     "subject": "spa",
+     "type": "open",
+     "q": "Rewrite in a formal register: \"¡Hola! ¿Me dices a qué hora abre la biblioteca?\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use usted and a polite form such as \"podría\".",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "tok": {
+   "topic": "TOK essay: responding to feedback and revising",
+   "questions": [
+    {
+     "id": "r1uh7qtxgh5we",
+     "subject": "tok",
+     "type": "mc",
+     "q": "In a TOK essay, what is a counterclaim?",
+     "options": [
+      "A summary of the prescribed title",
+      "An argument that challenges or qualifies your main claim",
+      "A list of sources",
+      "A personal anecdote"
+     ],
+     "answer": "An argument that challenges or qualifies your main claim",
+     "accept": [],
+     "hint": "It looks at the other side.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17l38ei8mpjh8",
+     "subject": "tok",
+     "type": "mc",
+     "q": "What makes a counterclaim \"weak\" in a TOK essay?",
+     "options": [
+      "It uses an example",
+      "It disagrees with the claim",
+      "It is in the middle of the essay",
+      "It is a straw man that is easily dismissed without real evidence"
+     ],
+     "answer": "It is a straw man that is easily dismissed without real evidence",
+     "accept": [],
+     "hint": "A good counterclaim should be taken seriously.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iyym80mnch5",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Which revision best strengthens a weak counterclaim?",
+     "options": [
+      "Make it shorter",
+      "Remove all examples",
+      "Support it with a specific real-life situation and explain its implications",
+      "Move it to the conclusion"
+     ],
+     "answer": "Support it with a specific real-life situation and explain its implications",
+     "accept": [],
+     "hint": "Treat it with the same care as your claim.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iyxf5t1ripgg0",
+     "subject": "tok",
+     "type": "mc",
+     "q": "What does \"coherence\" mean in a TOK essay?",
+     "options": [
+      "It uses many technical words",
+      "It has a long introduction",
+      "Each section connects logically to the prescribed title and to the others",
+      "Every paragraph has the same length"
+     ],
+     "answer": "Each section connects logically to the prescribed title and to the others",
+     "accept": [],
+     "hint": "Think of a clear thread running through the essay.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10s70p014abe09",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Which phrase best links a section back to the prescribed title?",
+     "options": [
+      "\"Another interesting fact is…\"",
+      "\"This suggests that, in the natural sciences, the claim holds only partly because…\"",
+      "\"In my opinion, it is good.\"",
+      "\"Moving on to something else…\""
+     ],
+     "answer": "\"This suggests that, in the natural sciences, the claim holds only partly because…\"",
+     "accept": [],
+     "hint": "Look for an explicit evaluation linked to the question.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rabacyilsan9",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Your teacher writes \"descriptive, not analytical\". Which change responds best?",
+     "options": [
+      "Add more examples without comment",
+      "Explain why the example matters for knowledge, not only what happened",
+      "Add more historical dates",
+      "Use longer quotations"
+     ],
+     "answer": "Explain why the example matters for knowledge, not only what happened",
+     "accept": [],
+     "hint": "Analysis asks \"so what?\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15u7af3tex4v7",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Feedback says \"the title's key terms are not defined\". What should you revise?",
+     "options": [
+      "Remove the key terms",
+      "Change the prescribed title",
+      "Add a dictionary definition in the conclusion only",
+      "Clarify how you interpret the key terms early in the essay"
+     ],
+     "answer": "Clarify how you interpret the key terms early in the essay",
+     "accept": [],
+     "hint": "Your interpretation shapes the whole essay.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ipqkgqrxw5kv",
+     "subject": "tok",
+     "type": "mc",
+     "q": "What is the main purpose of the conclusion in a TOK essay?",
+     "options": [
+      "Introduce a new area of knowledge",
+      "List all the examples again",
+      "Repeat the introduction word for word",
+      "Give a reasoned answer to the title, acknowledging implications and perspectives"
+     ],
+     "answer": "Give a reasoned answer to the title, acknowledging implications and perspectives",
+     "accept": [],
+     "hint": "It should answer the question, not restart the essay.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrw1lfzqd6z5s",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Which is an appropriate way to use teacher feedback on a TOK essay draft?",
+     "options": [
+      "Ask the teacher to rewrite the paragraph",
+      "Ignore the comments that seem difficult",
+      "Copy an essay from a classmate",
+      "Use the comments to rethink and rewrite the argument yourself"
+     ],
+     "answer": "Use the comments to rethink and rewrite the argument yourself",
+     "accept": [],
+     "hint": "The essay must remain your own work.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12wu7lnkntv17",
+     "subject": "tok",
+     "type": "short",
+     "q": "In TOK, what two-word term describes the areas such as history, the arts and the natural sciences? (singular)",
+     "options": [],
+     "answer": "area of knowledge",
+     "accept": [
+      "areas of knowledge",
+      "AOK"
+     ],
+     "hint": "Abbreviated as AOK.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n8bolfrz8urh",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Which revision improves the transition between two areas of knowledge?",
+     "options": [
+      "Compare how each area answers the question differently",
+      "Use the word \"Also\" at the start",
+      "Start the new section with a random fact",
+      "Delete the last sentence of each section"
+     ],
+     "answer": "Compare how each area answers the question differently",
+     "accept": [],
+     "hint": "Comparison creates a bridge.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt7jzu214tyz1",
+     "subject": "tok",
+     "type": "mc",
+     "q": "An example that is too common (used by many students) can be improved by:",
+     "options": [
+      "Removing the source",
+      "Choosing a specific, less obvious case and analysing it carefully",
+      "Repeating it twice",
+      "Making it more general"
+     ],
+     "answer": "Choosing a specific, less obvious case and analysing it carefully",
+     "accept": [],
+     "hint": "Specific examples are more convincing.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y1lzkm1vlq3bk",
+     "subject": "tok",
+     "type": "mc",
+     "q": "What should you check when revising a TOK essay for the word limit?",
+     "options": [
+      "That every example is deleted",
+      "That arguments are kept and only repetition or description is cut",
+      "That the conclusion is removed",
+      "That the essay is as short as possible"
+     ],
+     "answer": "That arguments are kept and only repetition or description is cut",
+     "accept": [],
+     "hint": "Cut what adds the least to the argument.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raq59ze1hl17ie",
+     "subject": "tok",
+     "type": "open",
+     "q": "Explain how you would revise a paragraph whose counterclaim is answered in one sentence. Describe two specific changes.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think of evidence and evaluation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg1jpk91lshtup",
+     "subject": "tok",
+     "type": "open",
+     "q": "Your feedback says the essay \"lacks a clear line of argument\". Explain two ways to improve coherence between sections.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider the thesis, the topic sentences and the links.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkvub8e1wh0gpc",
+     "subject": "tok",
+     "type": "open",
+     "q": "Why is it valuable to revise a knowledge claim after reading a strong counterclaim, rather than simply rejecting the counterclaim? Answer in 3–5 sentences.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what a more nuanced claim shows about knowledge.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []

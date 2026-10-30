@@ -1,0 +1,793 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y5",
+ "academic_week": 13,
+ "subjects": {
+  "bss": {
+   "topic": "Capitanias hereditárias e Governo-Geral",
+   "questions": [
+    {
+     "id": "r1wbxa0q114i0wx",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quem dividiu o território do Brasil em capitanias hereditárias?",
+     "options": [
+      "O rei de Portugal",
+      "Os holandeses",
+      "Os povos indígenas",
+      "Os jesuítas"
+     ],
+     "answer": "O rei de Portugal",
+     "accept": [],
+     "hint": "O Brasil era colônia de qual país?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o86vh5mvc88m",
+     "subject": "bss",
+     "type": "num",
+     "q": "Em que ano começou o sistema de capitanias hereditárias no Brasil?",
+     "options": [],
+     "answer": "1534",
+     "accept": [],
+     "hint": "Foi algumas décadas depois de 1500.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13wvoes42at6c",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que era uma capitania hereditária?",
+     "options": [
+      "Uma grande faixa de terra entregue a um donatário",
+      "Uma aldeia indígena",
+      "Uma cidade murada",
+      "Um navio português"
+     ],
+     "answer": "Uma grande faixa de terra entregue a um donatário",
+     "accept": [],
+     "hint": "Pense em terra dividida em pedaços.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnd45g51y0yzos",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chamava a pessoa que recebia uma capitania?",
+     "options": [],
+     "answer": "donatário",
+     "accept": [
+      "o donatário",
+      "donatario"
+     ],
+     "hint": "A palavra vem de \"doação\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r44sf2vj8bquw",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que as capitanias eram chamadas de \"hereditárias\"?",
+     "options": [
+      "Porque pertenciam aos indígenas",
+      "Porque duravam só um ano",
+      "Porque passavam de pai para filho",
+      "Porque eram vendidas em leilão"
+     ],
+     "answer": "Porque passavam de pai para filho",
+     "accept": [],
+     "hint": "Lembre da palavra \"herança\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1csqyx1cu34ke",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual era um dos objetivos de Portugal ao criar as capitanias?",
+     "options": [
+      "Construir escolas para todos",
+      "Abandonar o Brasil",
+      "Ocupar e proteger o território sem gastar muito",
+      "Devolver as terras aos indígenas"
+     ],
+     "answer": "Ocupar e proteger o território sem gastar muito",
+     "accept": [],
+     "hint": "Portugal tinha pouco dinheiro e medo de invasores.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10cqbza1tczte2",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quem pagava os gastos para colonizar uma capitania?",
+     "options": [
+      "O rei, sozinho",
+      "Os jesuítas",
+      "O próprio donatário",
+      "Os outros países da Europa"
+     ],
+     "answer": "O próprio donatário",
+     "accept": [],
+     "hint": "O rei queria economizar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry6q3m31y37by1",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual foi um motivo de muitas capitanias não terem dado certo?",
+     "options": [
+      "Excesso de moradores",
+      "Falta de dinheiro e grande distância de Portugal",
+      "Clima frio demais",
+      "Proibição de plantar"
+     ],
+     "answer": "Falta de dinheiro e grande distância de Portugal",
+     "accept": [],
+     "hint": "Pense nos custos e na viagem longa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reks2xhr896sj",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quais capitanias tiveram mais sucesso?",
+     "options": [
+      "Todas as capitanias",
+      "Só as capitanias do Sul",
+      "Nenhuma capitania",
+      "Pernambuco e São Vicente"
+     ],
+     "answer": "Pernambuco e São Vicente",
+     "accept": [],
+     "hint": "Uma ficava no Nordeste, a outra no litoral de São Paulo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6ln9ar22tjl8",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que produzia a capitania de Pernambuco que a fez prosperar?",
+     "options": [
+      "Soja",
+      "Ouro",
+      "Açúcar",
+      "Café"
+     ],
+     "answer": "Açúcar",
+     "accept": [],
+     "hint": "Pense nos engenhos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv111hz1rhrwef",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que Portugal criou o Governo-Geral?",
+     "options": [
+      "Para dar o Brasil à Espanha",
+      "Para centralizar a administração e ajudar as capitanias",
+      "Para proibir a chegada de colonos",
+      "Para acabar com a colônia"
+     ],
+     "answer": "Para centralizar a administração e ajudar as capitanias",
+     "accept": [],
+     "hint": "As capitanias precisavam de um comando unido.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rny5y7mivkhuo",
+     "subject": "bss",
+     "type": "num",
+     "q": "Em que ano foi criado o Governo-Geral no Brasil?",
+     "options": [],
+     "answer": "1548",
+     "accept": [],
+     "hint": "Foi 14 anos depois das capitanias.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl5251318d66ax",
+     "subject": "bss",
+     "type": "short",
+     "q": "Qual cidade foi fundada em 1549 para ser a primeira capital do Brasil?",
+     "options": [],
+     "answer": "Salvador",
+     "accept": [
+      "Salvador da Bahia",
+      "São Salvador"
+     ],
+     "hint": "Fica na Bahia, na Baía de Todos os Santos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqcr4uirasvev",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em qual estado atual fica Salvador?",
+     "options": [
+      "Pernambuco",
+      "Bahia",
+      "São Paulo",
+      "Rio de Janeiro"
+     ],
+     "answer": "Bahia",
+     "accept": [],
+     "hint": "A cidade fica junto à Baía de Todos os Santos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jt4s7xv8hlk",
+     "subject": "bss",
+     "type": "mc",
+     "q": "As capitanias acabaram quando o Governo-Geral foi criado?",
+     "options": [
+      "Não existiam mais capitanias antes",
+      "Sim, todas foram destruídas",
+      "Sim, acabaram no mesmo dia",
+      "Não, as duas formas de organização existiram juntas por muito tempo"
+     ],
+     "answer": "Não, as duas formas de organização existiram juntas por muito tempo",
+     "accept": [],
+     "hint": "O Governo-Geral veio para ajudar, não para substituir de uma vez.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vnjs48lh43cf",
+     "subject": "bss",
+     "type": "open",
+     "q": "Imagine que você é um donatário recém-chegado. Escreva duas dificuldades que enfrentaria e por que o Governo-Geral poderia ajudar.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em dinheiro, defesa e distância.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Newspaper reports",
+   "questions": [
+    {
+     "id": "rnpg49mum9d6k",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the headline of a newspaper report?",
+     "options": [
+      "A photo caption",
+      "The last paragraph",
+      "The short title in large letters at the top",
+      "The name of the reporter"
+     ],
+     "answer": "The short title in large letters at the top",
+     "accept": [],
+     "hint": "It is the first thing you notice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ao5tx1ozw0jj",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is the best headline for a report about a lost dog found in a school library?",
+     "options": [
+      "Lost Dog Turns Up in School Library",
+      "My favourite animal is a dog",
+      "How to look after a pet dog",
+      "Once upon a time there was a dog"
+     ],
+     "answer": "Lost Dog Turns Up in School Library",
+     "accept": [],
+     "hint": "Headlines are short and grab attention.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp0syhi19i8opq",
+     "subject": "en",
+     "type": "mc",
+     "q": "What should the lead (opening) paragraph tell the reader?",
+     "options": [
+      "Who, what, when, where (and often why)",
+      "The end of the story",
+      "A list of rhyming words",
+      "Only the reporter's opinion"
+     ],
+     "answer": "Who, what, when, where (and often why)",
+     "accept": [],
+     "hint": "Think of the five W questions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nw9mxs1ha76ue",
+     "subject": "en",
+     "type": "mc",
+     "q": "In which tense are newspaper reports mostly written?",
+     "options": [
+      "Imperative",
+      "Past tense",
+      "Future tense",
+      "Present continuous only"
+     ],
+     "answer": "Past tense",
+     "accept": [],
+     "hint": "The events have already happened.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7pc44345va3e",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence is in the past tense?",
+     "options": [
+      "The firefighters will rescue the cat.",
+      "Rescue the cat now!",
+      "The firefighters rescue the cat.",
+      "The firefighters rescued the cat on Tuesday."
+     ],
+     "answer": "The firefighters rescued the cat on Tuesday.",
+     "accept": [],
+     "hint": "Look for a verb ending in -ed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnj9shlpcde15",
+     "subject": "en",
+     "type": "short",
+     "q": "What word do we use for the exact words a person says, written inside inverted commas in a report?",
+     "options": [],
+     "answer": "quote",
+     "accept": [
+      "quotation",
+      "a quote"
+     ],
+     "hint": "Reporters collect these from witnesses.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14osjty1flvp52",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence uses inverted commas correctly?",
+     "options": [
+      "\"It was amazing, said Ellie.",
+      "\"It was amazing\" said, Ellie.",
+      "It was \"amazing, said\" Ellie.",
+      "\"It was amazing,\" said Ellie."
+     ],
+     "answer": "\"It was amazing,\" said Ellie.",
+     "accept": [],
+     "hint": "Inverted commas go around only the spoken words.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ptix0o0egeg",
+     "subject": "en",
+     "type": "mc",
+     "q": "Change to reported speech: \"I am very proud,\" said the coach.",
+     "options": [
+      "\"The coach was proud,\" he said.",
+      "The coach said that I am very proud.",
+      "The coach said that he was very proud.",
+      "The coach says I was proud."
+     ],
+     "answer": "The coach said that he was very proud.",
+     "accept": [],
+     "hint": "In reported speech, \"I am\" usually becomes \"he was\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1msy08w10psj7d",
+     "subject": "en",
+     "type": "mc",
+     "q": "Change to reported speech: \"We won the match,\" said Priya.",
+     "options": [
+      "Priya says, \"We won the match.\"",
+      "Priya said that we win the match.",
+      "Priya said that they will win the match.",
+      "Priya said that they had won the match."
+     ],
+     "answer": "Priya said that they had won the match.",
+     "accept": [],
+     "hint": "\"We\" becomes \"they\" and the tense moves back.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gxj73j187mt7z",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which of these is NOT usually a feature of a newspaper report?",
+     "options": [
+      "Facts about time and place",
+      "A headline",
+      "A \"happily ever after\" ending",
+      "Quotes from witnesses"
+     ],
+     "answer": "A \"happily ever after\" ending",
+     "accept": [],
+     "hint": "Think about stories versus reports.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15ctvv91p6rhk4",
+     "subject": "en",
+     "type": "mc",
+     "q": "Why do reporters include quotes from witnesses?",
+     "options": [
+      "To make the report longer",
+      "To show what people saw and make the report believable",
+      "To give instructions",
+      "To tell a joke"
+     ],
+     "answer": "To show what people saw and make the report believable",
+     "accept": [],
+     "hint": "Quotes add real voices.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mkker29dw8bf",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence is a fact rather than an opinion?",
+     "options": [
+      "The bridge is the most beautiful in the world.",
+      "The bridge opened on 3rd May.",
+      "The bridge is boring.",
+      "Everyone loves the new bridge."
+     ],
+     "answer": "The bridge opened on 3rd May.",
+     "accept": [],
+     "hint": "A fact can be checked.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u8ekkdyjru1",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is a caption in a newspaper?",
+     "options": [
+      "The reporter's address",
+      "A short sentence under a photo explaining it",
+      "The final paragraph",
+      "The main headline"
+     ],
+     "answer": "A short sentence under a photo explaining it",
+     "accept": [],
+     "hint": "Look below the picture.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwjl1n412ruu1v",
+     "subject": "en",
+     "type": "short",
+     "q": "Rewrite in the past tense: \"The mayor opens the new park.\" Write only the verb.",
+     "options": [],
+     "answer": "opened",
+     "accept": [
+      "opened."
+     ],
+     "hint": "Add the past tense ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs2c0cr1cu89v0",
+     "subject": "en",
+     "type": "open",
+     "q": "Write a lead paragraph (2–3 sentences) for a report about a school sports day that was stopped by a sudden hailstorm. Answer who, what, when and where.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start with the most important information.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn0iv721511dbp",
+     "subject": "en",
+     "type": "open",
+     "q": "Write a headline and one quote from a witness for a report about a giant pumpkin winning a village competition.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Keep the headline short; put the spoken words in inverted commas.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_read": {
+   "topic": "Playscripts: reading aloud and conventions",
+   "questions": [
+    {
+     "id": "rndije49r7x1c",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is a playscript?",
+     "options": [
+      "A poem with rhymes",
+      "A set of instructions for a recipe",
+      "A letter to a friend",
+      "A text written to be performed by actors"
+     ],
+     "answer": "A text written to be performed by actors",
+     "accept": [],
+     "hint": "Think of the theatre.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lbaqmkkahafy",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "In a playscript, where is the character's name usually written?",
+     "options": [
+      "Inside inverted commas",
+      "On the left, before the words they say",
+      "At the bottom of the page",
+      "Only on the cover"
+     ],
+     "answer": "On the left, before the words they say",
+     "accept": [],
+     "hint": "Playscripts do not use speech marks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vatobeqlkf28",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Does a playscript use inverted commas (speech marks) for the characters' lines?",
+     "options": [
+      "Only for questions",
+      "Yes, always",
+      "No, the name and a colon or a new line show who speaks",
+      "Only for the narrator"
+     ],
+     "answer": "No, the name and a colon or a new line show who speaks",
+     "accept": [],
+     "hint": "Look at how lines are laid out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf1y0cdevnokj",
+     "subject": "en_read",
+     "type": "short",
+     "q": "What do we call the instructions in a playscript that tell actors how to move or speak?",
+     "options": [],
+     "answer": "stage directions",
+     "accept": [
+      "stage direction"
+     ],
+     "hint": "They are often in brackets or italics.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mfkxhlergdle",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which of these is a stage direction?",
+     "options": [
+      "Scene 2",
+      "(Tom tiptoes towards the door.)",
+      "TOM: Is anyone there?",
+      "THE END"
+     ],
+     "answer": "(Tom tiptoes towards the door.)",
+     "accept": [],
+     "hint": "It tells the actor what to do, not what to say.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16ong99123u66j",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "In which tense are stage directions usually written?",
+     "options": [
+      "They have no verbs",
+      "Past tense",
+      "Future tense",
+      "Present tense"
+     ],
+     "answer": "Present tense",
+     "accept": [],
+     "hint": "They describe what is happening now on stage.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsz6ynxtl0i3z",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is the purpose of a cast list at the start of a playscript?",
+     "options": [
+      "To give the answers to questions",
+      "To list the stage directions",
+      "To list the characters in the play",
+      "To show the price of tickets"
+     ],
+     "answer": "To list the characters in the play",
+     "accept": [],
+     "hint": "It tells you who is in the play.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uro4m81yrq46q",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What does \"Scene 1\" show in a playscript?",
+     "options": [
+      "A sound effect",
+      "The name of the author",
+      "The start of a part of the play in one place or time",
+      "The end of the play"
+     ],
+     "answer": "The start of a part of the play in one place or time",
+     "accept": [],
+     "hint": "Plays are divided into sections.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roy8w4f1oui2h5",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "A stage direction says \"(angrily)\". How should the actor read the line?",
+     "options": [
+      "In a loud, cross voice",
+      "Without any expression",
+      "With a happy laugh",
+      "In a sleepy whisper"
+     ],
+     "answer": "In a loud, cross voice",
+     "accept": [],
+     "hint": "The word describes a feeling.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd8ifum1s5m78y",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What does \"intonation\" mean when reading aloud?",
+     "options": [
+      "How fast you turn the page",
+      "The rise and fall of your voice",
+      "The number of characters",
+      "The size of the letters"
+     ],
+     "answer": "The rise and fall of your voice",
+     "accept": [],
+     "hint": "Think about how your voice goes up and down.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r2p1paf1t8eu",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "How should your voice usually change at the end of a question like \"Are you coming?\"",
+     "options": [
+      "It always goes silent",
+      "It becomes a shout",
+      "It stays completely flat",
+      "It often rises"
+     ],
+     "answer": "It often rises",
+     "accept": [],
+     "hint": "Listen to yourself asking a question.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qt8usy1qoz2ch",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "MAYA: (whispering) Shh! The dragon is asleep. How should Maya say this line?",
+     "options": [
+      "Singing",
+      "Very slowly and bored",
+      "Loudly and cheerfully",
+      "Quietly, as if she is afraid to wake it"
+     ],
+     "answer": "Quietly, as if she is afraid to wake it",
+     "accept": [],
+     "hint": "Look at the stage direction and the situation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5hpl0xmdofpx",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Why do playscripts include stage directions?",
+     "options": [
+      "To make the script longer",
+      "To replace the dialogue",
+      "To help actors and directors know how to perform the scene",
+      "To give the reader homework"
+     ],
+     "answer": "To help actors and directors know how to perform the scene",
+     "accept": [],
+     "hint": "Actors need to know more than just the words.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cq6kkctnyo5h",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which sentence is written in playscript layout?",
+     "options": [
+      "Leo found the map, which was old.",
+      "LEO: I found the map!",
+      "\"I found the map!\" said Leo.",
+      "Leo said that he had found the map."
+     ],
+     "answer": "LEO: I found the map!",
+     "accept": [],
+     "hint": "Look for a name followed by a colon.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j65p591v2def7",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Turn this sentence from a story into two lines of playscript, with one stage direction: \"Sara shouted at her brother to give back her bike.\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Write the character name, a colon and what they say.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r56b7je7nklh1",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Choose one line of dialogue and explain how you would use your voice and body to show a character is nervous.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about volume, speed, pauses and movement.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
