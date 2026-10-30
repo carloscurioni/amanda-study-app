@@ -4126,6 +4126,2461 @@
      "errors": []
     }
    ]
+  },
+  "geog-hl": {
+   "topic": "Core revisited: population with updated data",
+   "questions": [
+    {
+     "id": "rlxgl2ukm770j",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which stage of the demographic transition model has high birth rates but rapidly falling death rates?",
+     "options": [
+      "Stage 1",
+      "Stage 2",
+      "Stage 4",
+      "Stage 5"
+     ],
+     "answer": "Stage 2",
+     "accept": [],
+     "hint": "Think about where population growth is fastest.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gdm0qswb4cwx",
+     "subject": "geog",
+     "type": "num",
+     "q": "A country has a crude birth rate of 32 per 1,000 and a crude death rate of 9 per 1,000. Calculate its rate of natural increase as a percentage.",
+     "options": [],
+     "answer": "2.3",
+     "accept": [],
+     "hint": "Subtract, then convert from per thousand to per hundred.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqjx258wdj44n",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which term describes the number of children an average woman is expected to have during her reproductive years?",
+     "options": [
+      "Crude birth rate",
+      "Total fertility rate",
+      "Replacement rate",
+      "Fecundity index"
+     ],
+     "answer": "Total fertility rate",
+     "accept": [],
+     "hint": "It is measured per woman, not per 1,000 people.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2kh0ougmki0c",
+     "subject": "geog",
+     "type": "short",
+     "q": "What total fertility rate is generally taken as replacement level in high-income countries?",
+     "options": [],
+     "answer": "2.1",
+     "accept": [
+      "2.1 children per woman"
+     ],
+     "hint": "It is slightly above two to allow for deaths before adulthood.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kp19gctzzf87",
+     "subject": "geog",
+     "type": "num",
+     "q": "A town has 12,000 people aged 0–14, 50,000 aged 15–64 and 8,000 aged 65+. Calculate its dependency ratio.",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "Add the dependants, divide by the working-age group and multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1zm8c813snm3u",
+     "subject": "geog",
+     "type": "mc",
+     "q": "A population pyramid with a narrow base and a wide top most likely shows:",
+     "options": [
+      "a youthful population",
+      "an ageing population",
+      "a high birth rate",
+      "a recent baby boom"
+     ],
+     "answer": "an ageing population",
+     "accept": [],
+     "hint": "Look at which age groups are largest.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryn3nsb4m5czm",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which is a 'push' factor in migration?",
+     "options": [
+      "Higher wages abroad",
+      "Family already living abroad",
+      "Drought destroying local crops",
+      "Better schools in the city"
+     ],
+     "answer": "Drought destroying local crops",
+     "accept": [],
+     "hint": "Push factors operate in the place of origin.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11vap5fd3ygeg",
+     "subject": "geog",
+     "type": "short",
+     "q": "What term describes money sent home by migrants to family in their country of origin?",
+     "options": [],
+     "answer": "remittances",
+     "accept": [
+      "remittance"
+     ],
+     "hint": "These financial flows can exceed foreign aid in some countries.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gjj35lti0st3",
+     "subject": "geog",
+     "type": "open",
+     "q": "Explain why it is important to use the most recent data when describing a country's population trends in an exam answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider how fast indicators like fertility and migration can change, and what examiners reward.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx2n76d1ko91wd",
+     "subject": "geog",
+     "type": "open",
+     "q": "Using a named case study, explain one strategy a government has used to respond to an ageing population.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about pension age, immigration, pro-natalist incentives or automation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bdfgjq2xz6jp",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which data source is most reliable for a country's total population at a single point in time?",
+     "options": [
+      "A national census",
+      "A tourist survey",
+      "A newspaper estimate",
+      "A social media poll"
+     ],
+     "answer": "A national census",
+     "accept": [],
+     "hint": "Think about which method aims to count everyone.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfancng7v1tpz",
+     "subject": "geog",
+     "type": "num",
+     "q": "A city grew from 2.4 million to 3.0 million people over 10 years. Calculate the percentage increase.",
+     "options": [],
+     "answer": "25",
+     "accept": [],
+     "hint": "Change divided by original, multiplied by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9maptw17vl9yb",
+     "subject": "geog",
+     "type": "mc",
+     "q": "The theory that a declining labour force and rising pension costs can slow economic growth is linked to:",
+     "options": [
+      "the demographic dividend",
+      "the demographic burden of ageing",
+      "the Malthusian ceiling",
+      "the Boserup effect"
+     ],
+     "answer": "the demographic burden of ageing",
+     "accept": [],
+     "hint": "Think about the cost of supporting many older people.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6j5l3m1gq22i5",
+     "subject": "geog",
+     "type": "short",
+     "q": "What term describes a temporary period of faster economic growth when the working-age share of the population is unusually large?",
+     "options": [],
+     "answer": "demographic dividend",
+     "accept": [
+      "the demographic dividend"
+     ],
+     "hint": "It often follows a fall in fertility.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnccbs41avikwu",
+     "subject": "geog",
+     "type": "open",
+     "q": "Evaluate the usefulness of a population pyramid for predicting a country's future needs for schools and healthcare.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider what the shape shows clearly, and what it cannot show (migration, policy changes).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6b3rge16xfw9s",
+     "subject": "geog",
+     "type": "open",
+     "q": "Discuss the view that international migration brings more benefits than costs to host countries. Refer to evidence.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh economic, social and demographic effects, and reach a judgement.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "geog-sl": {
+   "topic": "Core revisited: population with updated data",
+   "questions": [
+    {
+     "id": "r6uzclz1y2h57q",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which stage of the demographic transition model has high birth rates but rapidly falling death rates?",
+     "options": [
+      "Stage 1",
+      "Stage 2",
+      "Stage 4",
+      "Stage 5"
+     ],
+     "answer": "Stage 2",
+     "accept": [],
+     "hint": "Think about where population growth is fastest.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "redi0yz155xvk6",
+     "subject": "geog",
+     "type": "num",
+     "q": "A country has a crude birth rate of 32 per 1,000 and a crude death rate of 9 per 1,000. Calculate its rate of natural increase as a percentage.",
+     "options": [],
+     "answer": "2.3",
+     "accept": [],
+     "hint": "Subtract, then convert from per thousand to per hundred.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rw637ftbk8ss",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which term describes the number of children an average woman is expected to have during her reproductive years?",
+     "options": [
+      "Crude birth rate",
+      "Total fertility rate",
+      "Replacement rate",
+      "Fecundity index"
+     ],
+     "answer": "Total fertility rate",
+     "accept": [],
+     "hint": "It is measured per woman, not per 1,000 people.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tvqjcpkbbhv7",
+     "subject": "geog",
+     "type": "short",
+     "q": "What total fertility rate is generally taken as replacement level in high-income countries?",
+     "options": [],
+     "answer": "2.1",
+     "accept": [
+      "2.1 children per woman"
+     ],
+     "hint": "It is slightly above two to allow for deaths before adulthood.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ref0c6xb3dnzy",
+     "subject": "geog",
+     "type": "num",
+     "q": "A town has 12,000 people aged 0–14, 50,000 aged 15–64 and 8,000 aged 65+. Calculate its dependency ratio.",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "Add the dependants, divide by the working-age group and multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r97hujr1n5mvsp",
+     "subject": "geog",
+     "type": "mc",
+     "q": "A population pyramid with a narrow base and a wide top most likely shows:",
+     "options": [
+      "a youthful population",
+      "an ageing population",
+      "a high birth rate",
+      "a recent baby boom"
+     ],
+     "answer": "an ageing population",
+     "accept": [],
+     "hint": "Look at which age groups are largest.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r36tjg610zfnij",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which is a 'push' factor in migration?",
+     "options": [
+      "Higher wages abroad",
+      "Family already living abroad",
+      "Drought destroying local crops",
+      "Better schools in the city"
+     ],
+     "answer": "Drought destroying local crops",
+     "accept": [],
+     "hint": "Push factors operate in the place of origin.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkq3w1c1nx6olz",
+     "subject": "geog",
+     "type": "short",
+     "q": "What term describes money sent home by migrants to family in their country of origin?",
+     "options": [],
+     "answer": "remittances",
+     "accept": [
+      "remittance"
+     ],
+     "hint": "These financial flows can exceed foreign aid in some countries.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sqluck1fnmxwy",
+     "subject": "geog",
+     "type": "open",
+     "q": "Explain why it is important to use the most recent data when describing a country's population trends in an exam answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider how fast indicators like fertility and migration can change, and what examiners reward.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkrg5hge1ycc",
+     "subject": "geog",
+     "type": "open",
+     "q": "Using a named case study, explain one strategy a government has used to respond to an ageing population.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about pension age, immigration, pro-natalist incentives or automation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rinxi2e3i30tt",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which of these is an example of forced migration?",
+     "options": [
+      "Moving for a better-paid job",
+      "Retiring to the coast",
+      "Fleeing armed conflict",
+      "Studying at a university abroad"
+     ],
+     "answer": "Fleeing armed conflict",
+     "accept": [],
+     "hint": "Forced migrants have little or no choice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro93vwr1kfrqkx",
+     "subject": "geog",
+     "type": "num",
+     "q": "A country has 6 million people aged 65+ and 30 million aged 15–64. Calculate the elderly dependency ratio.",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Divide the older group by the working-age group and multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raopmk5k49v6f",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which pair of data would best show the impact of a country's pro-natalist policy?",
+     "options": [
+      "Death rate and GDP",
+      "Total fertility rate before and after the policy",
+      "Number of tourists and exports",
+      "Life expectancy and literacy"
+     ],
+     "answer": "Total fertility rate before and after the policy",
+     "accept": [],
+     "hint": "A pro-natalist policy aims to change births.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1us8jiv116d80s",
+     "subject": "geog",
+     "type": "short",
+     "q": "What is the term for people moving from rural areas to towns and cities?",
+     "options": [],
+     "answer": "rural-urban migration",
+     "accept": [
+      "rural to urban migration",
+      "urbanisation"
+     ],
+     "hint": "It is a major cause of urbanisation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lefx60ou63e3",
+     "subject": "geog",
+     "type": "open",
+     "q": "Describe two ways that out-migration can affect the population structure of a rural area.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about which age groups usually leave first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cd83p9z0uy1r",
+     "subject": "geog",
+     "type": "open",
+     "q": "Suggest why official migration statistics may underestimate the true number of migrants.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider irregular migration and how data are collected.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "hist-hl": {
+   "topic": "Authoritarian states compared across regions — HL: Nixon, Carter and Latin America",
+   "questions": [
+    {
+     "id": "r12rqccz53ov4b",
+     "subject": "hist",
+     "type": "mc",
+     "q": "In which year was Hitler appointed Chancellor of Germany?",
+     "options": [
+      "1923",
+      "1929",
+      "1933",
+      "1936"
+     ],
+     "answer": "1933",
+     "accept": [],
+     "hint": "It was at the very start of that year, in January.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r6y0hxtid62j",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which 1933 law allowed Hitler's government to pass laws without the Reichstag?",
+     "options": [
+      "The Nuremberg Laws",
+      "The Enabling Act",
+      "The Law for the Protection of the Republic",
+      "The Reich Citizenship Law"
+     ],
+     "answer": "The Enabling Act",
+     "accept": [],
+     "hint": "Its name describes what it made possible.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm2acwsw635vn",
+     "subject": "hist",
+     "type": "short",
+     "q": "What name is given to the purge of SA leaders ordered by Hitler in June 1934?",
+     "options": [],
+     "answer": "Night of the Long Knives",
+     "accept": [
+      "The Night of the Long Knives"
+     ],
+     "hint": "The name refers to a single violent night.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzg4bxa1o28qti",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Whose death in 1924 opened the power struggle that Stalin eventually won?",
+     "options": [
+      "Trotsky",
+      "Lenin",
+      "Bukharin",
+      "Kirov"
+     ],
+     "answer": "Lenin",
+     "accept": [],
+     "hint": "He led the Bolshevik Revolution of 1917.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnwmmw11wizgjq",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Stalin's First Five-Year Plan began in:",
+     "options": [
+      "1918",
+      "1924",
+      "1928",
+      "1941"
+     ],
+     "answer": "1928",
+     "accept": [],
+     "hint": "It began shortly after he defeated his rivals in the party.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rq28gkaecdzc",
+     "subject": "hist",
+     "type": "short",
+     "q": "What term describes Stalin's policy of merging peasant farms into large state-controlled farms?",
+     "options": [],
+     "answer": "collectivisation",
+     "accept": [
+      "collectivization"
+     ],
+     "hint": "The farms were known as kolkhozy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdqj6n3jxi1mu",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which period is most closely associated with Stalin's show trials and mass purges?",
+     "options": [
+      "1921–1924",
+      "1928–1932",
+      "1936–1938",
+      "1945–1948"
+     ],
+     "answer": "1936–1938",
+     "accept": [],
+     "hint": "It is often called the Great Terror.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1un75791sbhp58",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which leader did Castro's movement overthrow in January 1959?",
+     "options": [
+      "Batista",
+      "Trujillo",
+      "Somoza",
+      "Perón"
+     ],
+     "answer": "Batista",
+     "accept": [],
+     "hint": "He had ruled Cuba after a 1952 coup.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16159kc58u1sw",
+     "subject": "hist",
+     "type": "short",
+     "q": "What was the name of Castro's revolutionary organisation, taken from the date of the 1953 Moncada attack?",
+     "options": [],
+     "answer": "26th of July Movement",
+     "accept": [
+      "26 July Movement",
+      "M-26-7",
+      "July 26 Movement"
+     ],
+     "hint": "The name is a date.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v4bokx8mby3l",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which 1961 Cuban domestic policy sent young volunteers into the countryside to teach reading and writing?",
+     "options": [
+      "The Agrarian Reform",
+      "The Literacy Campaign",
+      "The Rectification Process",
+      "The Special Period"
+     ],
+     "answer": "The Literacy Campaign",
+     "accept": [],
+     "hint": "It focused on education.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x4gi7m1epkinv",
+     "subject": "hist",
+     "type": "open",
+     "q": "Compare the role of legal methods in the emergence of Hitler and Castro to power.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "One gained office through the constitution; the other through armed struggle. Consider similarities as well.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18lvehmf41guv",
+     "subject": "hist",
+     "type": "open",
+     "q": "To what extent was the use of force the most important factor in the consolidation of power by Stalin and Hitler?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh force against propaganda, legal measures and popular support.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r38l76j1wls48d",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which US president made human rights a central theme of US foreign policy in the late 1970s?",
+     "options": [
+      "Nixon",
+      "Ford",
+      "Carter",
+      "Reagan"
+     ],
+     "answer": "Carter",
+     "accept": [],
+     "hint": "He was in office from 1977 to 1981.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruvcv5hbxfspu",
+     "subject": "hist",
+     "type": "mc",
+     "q": "The 1977 treaties signed by the USA and Panama agreed to:",
+     "options": [
+      "build a second canal",
+      "transfer control of the Panama Canal to Panama by 1999",
+      "station more US troops in Panama",
+      "end Panama's independence"
+     ],
+     "answer": "transfer control of the Panama Canal to Panama by 1999",
+     "accept": [],
+     "hint": "Think about sovereignty over the canal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d1pgwr16r88l0",
+     "subject": "hist",
+     "type": "mc",
+     "q": "In which Latin American country did a military coup in September 1973 overthrow the elected president Salvador Allende?",
+     "options": [
+      "Argentina",
+      "Chile",
+      "Brazil",
+      "Uruguay"
+     ],
+     "answer": "Chile",
+     "accept": [],
+     "hint": "Its capital is Santiago.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrhf325he0x4p",
+     "subject": "hist",
+     "type": "open",
+     "q": "Compare and contrast the policies of Nixon and Carter towards Latin America.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider anti-communism, intervention, human rights and the Panama Canal.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "hist-sl": {
+   "topic": "Authoritarian states compared across regions",
+   "questions": [
+    {
+     "id": "ruzex1kbahztw",
+     "subject": "hist",
+     "type": "mc",
+     "q": "In which year was Hitler appointed Chancellor of Germany?",
+     "options": [
+      "1923",
+      "1929",
+      "1933",
+      "1936"
+     ],
+     "answer": "1933",
+     "accept": [],
+     "hint": "It was at the very start of that year, in January.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsg6n7gzft9g2",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which 1933 law allowed Hitler's government to pass laws without the Reichstag?",
+     "options": [
+      "The Nuremberg Laws",
+      "The Enabling Act",
+      "The Law for the Protection of the Republic",
+      "The Reich Citizenship Law"
+     ],
+     "answer": "The Enabling Act",
+     "accept": [],
+     "hint": "Its name describes what it made possible.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcwqoxt1pnov5e",
+     "subject": "hist",
+     "type": "short",
+     "q": "What name is given to the purge of SA leaders ordered by Hitler in June 1934?",
+     "options": [],
+     "answer": "Night of the Long Knives",
+     "accept": [
+      "The Night of the Long Knives"
+     ],
+     "hint": "The name refers to a single violent night.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7qavi37x8lrn",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Whose death in 1924 opened the power struggle that Stalin eventually won?",
+     "options": [
+      "Trotsky",
+      "Lenin",
+      "Bukharin",
+      "Kirov"
+     ],
+     "answer": "Lenin",
+     "accept": [],
+     "hint": "He led the Bolshevik Revolution of 1917.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10lcnv61wltr1p",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Stalin's First Five-Year Plan began in:",
+     "options": [
+      "1918",
+      "1924",
+      "1928",
+      "1941"
+     ],
+     "answer": "1928",
+     "accept": [],
+     "hint": "It began shortly after he defeated his rivals in the party.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12ib6jl1kv0mah",
+     "subject": "hist",
+     "type": "short",
+     "q": "What term describes Stalin's policy of merging peasant farms into large state-controlled farms?",
+     "options": [],
+     "answer": "collectivisation",
+     "accept": [
+      "collectivization"
+     ],
+     "hint": "The farms were known as kolkhozy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4ytfwgejdq5",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which period is most closely associated with Stalin's show trials and mass purges?",
+     "options": [
+      "1921–1924",
+      "1928–1932",
+      "1936–1938",
+      "1945–1948"
+     ],
+     "answer": "1936–1938",
+     "accept": [],
+     "hint": "It is often called the Great Terror.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8ruiu08ux61l",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which leader did Castro's movement overthrow in January 1959?",
+     "options": [
+      "Batista",
+      "Trujillo",
+      "Somoza",
+      "Perón"
+     ],
+     "answer": "Batista",
+     "accept": [],
+     "hint": "He had ruled Cuba after a 1952 coup.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdhqi7f1i3fn3b",
+     "subject": "hist",
+     "type": "short",
+     "q": "What was the name of Castro's revolutionary organisation, taken from the date of the 1953 Moncada attack?",
+     "options": [],
+     "answer": "26th of July Movement",
+     "accept": [
+      "26 July Movement",
+      "M-26-7",
+      "July 26 Movement"
+     ],
+     "hint": "The name is a date.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d5i644sjjqq4",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which 1961 Cuban domestic policy sent young volunteers into the countryside to teach reading and writing?",
+     "options": [
+      "The Agrarian Reform",
+      "The Literacy Campaign",
+      "The Rectification Process",
+      "The Special Period"
+     ],
+     "answer": "The Literacy Campaign",
+     "accept": [],
+     "hint": "It focused on education.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnyjpk91ygavo4",
+     "subject": "hist",
+     "type": "open",
+     "q": "Compare the role of legal methods in the emergence of Hitler and Castro to power.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "One gained office through the constitution; the other through armed struggle. Consider similarities as well.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10yiedp1wjxb8s",
+     "subject": "hist",
+     "type": "open",
+     "q": "To what extent was the use of force the most important factor in the consolidation of power by Stalin and Hitler?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh force against propaganda, legal measures and popular support.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdpldm6kf2esq",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which event in February 1933 did the Nazis use to justify emergency decrees against communists?",
+     "options": [
+      "The Munich Putsch",
+      "The Reichstag Fire",
+      "Kristallnacht",
+      "The Anschluss"
+     ],
+     "answer": "The Reichstag Fire",
+     "accept": [],
+     "hint": "A parliament building was damaged.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r48kqab83nrfi",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Who was Stalin's main rival, expelled from the USSR in 1929?",
+     "options": [
+      "Trotsky",
+      "Zinoviev",
+      "Molotov",
+      "Beria"
+     ],
+     "answer": "Trotsky",
+     "accept": [],
+     "hint": "He had led the Red Army in the Civil War.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8germy1p6rzok",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which 1961 event, a failed US-backed invasion, helped Castro strengthen his position?",
+     "options": [
+      "The Cuban Missile Crisis",
+      "The Bay of Pigs invasion",
+      "The Moncada attack",
+      "The Granma landing"
+     ],
+     "answer": "The Bay of Pigs invasion",
+     "accept": [],
+     "hint": "It took place in April 1961.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtuje131w611pe",
+     "subject": "hist",
+     "type": "open",
+     "q": "Evaluate the success of the economic policies of two authoritarian leaders, each from a different region.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Set aims against results, and consider the human cost.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math-hl": {
+   "topic": "IA exploration: final version and academic integrity",
+   "questions": [
+    {
+     "id": "r1plbc361e58k6h",
+     "subject": "math",
+     "type": "mc",
+     "q": "How many marks in total is the IB Mathematics internal assessment (exploration) marked out of?",
+     "options": [
+      "16",
+      "20",
+      "24",
+      "30"
+     ],
+     "answer": "20",
+     "accept": [],
+     "hint": "Add the five criteria together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19uikq2ymnjnb",
+     "subject": "math",
+     "type": "mc",
+     "q": "What percentage of the final IB Mathematics grade does the exploration count for, at both SL and HL?",
+     "options": [
+      "10%",
+      "20%",
+      "25%",
+      "30%"
+     ],
+     "answer": "20%",
+     "accept": [],
+     "hint": "It is the same share at both levels.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sify70jyx4gj",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which criterion of the exploration carries the most marks?",
+     "options": [
+      "Presentation",
+      "Personal engagement",
+      "Reflection",
+      "Use of mathematics"
+     ],
+     "answer": "Use of mathematics",
+     "accept": [],
+     "hint": "It is worth 6 marks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17pmjy317i5uym",
+     "subject": "math",
+     "type": "mc",
+     "q": "What is the recommended length of a mathematics exploration?",
+     "options": [
+      "5–8 pages",
+      "12–20 pages",
+      "25–35 pages",
+      "There is no guidance"
+     ],
+     "answer": "12–20 pages",
+     "accept": [],
+     "hint": "It is shorter than an extended essay.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rph1glcxonfix",
+     "subject": "math",
+     "type": "short",
+     "q": "Which criterion assesses whether the exploration is well organised, coherent and concise?",
+     "options": [],
+     "answer": "Presentation",
+     "accept": [
+      "Criterion A",
+      "A"
+     ],
+     "hint": "It is Criterion A.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11r2u6072wf2w",
+     "subject": "math",
+     "type": "short",
+     "q": "Which criterion rewards critical thinking about results, limitations and possible extensions?",
+     "options": [],
+     "answer": "Reflection",
+     "accept": [
+      "Criterion D",
+      "D"
+     ],
+     "hint": "It is Criterion D.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsz7ofc16xvcmk",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which of these is good mathematical communication in a final draft?",
+     "options": [
+      "Writing x^2 and * instead of proper notation",
+      "Defining every variable before using it",
+      "Pasting calculator screenshots without comment",
+      "Using = for rounded values"
+     ],
+     "answer": "Defining every variable before using it",
+     "accept": [],
+     "hint": "The reader should never have to guess what a symbol means.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sxbhv51km9ett",
+     "subject": "math",
+     "type": "mc",
+     "q": "A value computed as 3.14159… is rounded to 3.14 in the exploration. Which symbol should connect them?",
+     "options": [
+      "=",
+      "≈",
+      "≡",
+      "∝"
+     ],
+     "answer": "≈",
+     "accept": [],
+     "hint": "The values are close but not equal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryo0ydt14rf26i",
+     "subject": "math",
+     "type": "mc",
+     "q": "A student used graphing software to fit a regression model. What should the final exploration do?",
+     "options": [
+      "Hide this to look more impressive",
+      "Acknowledge the software and explain the result",
+      "Remove the graph",
+      "Copy the software's help page"
+     ],
+     "answer": "Acknowledge the software and explain the result",
+     "accept": [],
+     "hint": "Technology use is allowed when it is credited.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fkfc8b19cq6ht",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which of these is an example of academic misconduct?",
+     "options": [
+      "Citing a textbook formula with a reference",
+      "Submitting another student's work as your own",
+      "Discussing the topic with your teacher",
+      "Using a spreadsheet to organise data"
+     ],
+     "answer": "Submitting another student's work as your own",
+     "accept": [],
+     "hint": "Think about whose work is being presented.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7wvkb31ixd6px",
+     "subject": "math",
+     "type": "short",
+     "q": "What is the list of all sources used, placed at the end of the exploration, usually called?",
+     "options": [],
+     "answer": "bibliography",
+     "accept": [
+      "reference list",
+      "references",
+      "works cited"
+     ],
+     "hint": "It may also be called a reference list.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uh7vyo1nvexco",
+     "subject": "math",
+     "type": "mc",
+     "q": "When is it necessary to cite a source in the exploration?",
+     "options": [
+      "Only for direct quotations",
+      "Only for websites",
+      "Whenever you use someone else's ideas, data, images or words",
+      "Never, if you paraphrase"
+     ],
+     "answer": "Whenever you use someone else's ideas, data, images or words",
+     "accept": [],
+     "hint": "Paraphrasing still uses another person's idea.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ug8nj01vredvl",
+     "subject": "math",
+     "type": "mc",
+     "q": "After the teacher gives feedback on a draft, what is the best next step?",
+     "options": [
+      "Submit the draft unchanged",
+      "Act on the feedback and revise the exploration yourself",
+      "Ask the teacher to rewrite sections",
+      "Start a completely new topic the night before"
+     ],
+     "answer": "Act on the feedback and revise the exploration yourself",
+     "accept": [],
+     "hint": "The final version must be the student's own work.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnpz0vu1a4llys",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain how a student can show strong personal engagement in a mathematics exploration.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about choice of topic, own questions, independent thinking and creativity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5a1k3j1pcdtpd",
+     "subject": "math",
+     "type": "mc",
+     "q": "At HL, for top marks in Use of mathematics, the mathematics must be:",
+     "options": [
+      "only at SL level",
+      "commensurate with the HL course, rigorous and fully understood",
+      "copied from a university textbook",
+      "entirely computed by software"
+     ],
+     "answer": "commensurate with the HL course, rigorous and fully understood",
+     "accept": [],
+     "hint": "HL work is judged against the higher course.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x5vkr180z0wa",
+     "subject": "math",
+     "type": "open",
+     "q": "Evaluate the use of AI tools when writing a mathematics exploration, explaining what a student must do to maintain academic integrity.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider what is allowed, how it should be acknowledged and why the thinking must be the student's.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math-sl": {
+   "topic": "IA exploration: final version and academic integrity",
+   "questions": [
+    {
+     "id": "r1ttdg0n12fuoj4",
+     "subject": "math",
+     "type": "mc",
+     "q": "How many marks in total is the IB Mathematics internal assessment (exploration) marked out of?",
+     "options": [
+      "16",
+      "20",
+      "24",
+      "30"
+     ],
+     "answer": "20",
+     "accept": [],
+     "hint": "Add the five criteria together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qu0q5hvrthhs",
+     "subject": "math",
+     "type": "mc",
+     "q": "What percentage of the final IB Mathematics grade does the exploration count for, at both SL and HL?",
+     "options": [
+      "10%",
+      "20%",
+      "25%",
+      "30%"
+     ],
+     "answer": "20%",
+     "accept": [],
+     "hint": "It is the same share at both levels.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzdbl7lndfjvq",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which criterion of the exploration carries the most marks?",
+     "options": [
+      "Presentation",
+      "Personal engagement",
+      "Reflection",
+      "Use of mathematics"
+     ],
+     "answer": "Use of mathematics",
+     "accept": [],
+     "hint": "It is worth 6 marks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxwio7g11m04jt",
+     "subject": "math",
+     "type": "mc",
+     "q": "What is the recommended length of a mathematics exploration?",
+     "options": [
+      "5–8 pages",
+      "12–20 pages",
+      "25–35 pages",
+      "There is no guidance"
+     ],
+     "answer": "12–20 pages",
+     "accept": [],
+     "hint": "It is shorter than an extended essay.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qmhuhhezjmp4",
+     "subject": "math",
+     "type": "short",
+     "q": "Which criterion assesses whether the exploration is well organised, coherent and concise?",
+     "options": [],
+     "answer": "Presentation",
+     "accept": [
+      "Criterion A",
+      "A"
+     ],
+     "hint": "It is Criterion A.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dfx6xpztcpip",
+     "subject": "math",
+     "type": "short",
+     "q": "Which criterion rewards critical thinking about results, limitations and possible extensions?",
+     "options": [],
+     "answer": "Reflection",
+     "accept": [
+      "Criterion D",
+      "D"
+     ],
+     "hint": "It is Criterion D.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxr274l14s9jhx",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which of these is good mathematical communication in a final draft?",
+     "options": [
+      "Writing x^2 and * instead of proper notation",
+      "Defining every variable before using it",
+      "Pasting calculator screenshots without comment",
+      "Using = for rounded values"
+     ],
+     "answer": "Defining every variable before using it",
+     "accept": [],
+     "hint": "The reader should never have to guess what a symbol means.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11hyr30did204",
+     "subject": "math",
+     "type": "mc",
+     "q": "A value computed as 3.14159… is rounded to 3.14 in the exploration. Which symbol should connect them?",
+     "options": [
+      "=",
+      "≈",
+      "≡",
+      "∝"
+     ],
+     "answer": "≈",
+     "accept": [],
+     "hint": "The values are close but not equal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15rmuq41enfvwz",
+     "subject": "math",
+     "type": "mc",
+     "q": "A student used graphing software to fit a regression model. What should the final exploration do?",
+     "options": [
+      "Hide this to look more impressive",
+      "Acknowledge the software and explain the result",
+      "Remove the graph",
+      "Copy the software's help page"
+     ],
+     "answer": "Acknowledge the software and explain the result",
+     "accept": [],
+     "hint": "Technology use is allowed when it is credited.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1beqhfs16poj9y",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which of these is an example of academic misconduct?",
+     "options": [
+      "Citing a textbook formula with a reference",
+      "Submitting another student's work as your own",
+      "Discussing the topic with your teacher",
+      "Using a spreadsheet to organise data"
+     ],
+     "answer": "Submitting another student's work as your own",
+     "accept": [],
+     "hint": "Think about whose work is being presented.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11cp9nqti17mo",
+     "subject": "math",
+     "type": "short",
+     "q": "What is the list of all sources used, placed at the end of the exploration, usually called?",
+     "options": [],
+     "answer": "bibliography",
+     "accept": [
+      "reference list",
+      "references",
+      "works cited"
+     ],
+     "hint": "It may also be called a reference list.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqk7zv71pmel4v",
+     "subject": "math",
+     "type": "mc",
+     "q": "When is it necessary to cite a source in the exploration?",
+     "options": [
+      "Only for direct quotations",
+      "Only for websites",
+      "Whenever you use someone else's ideas, data, images or words",
+      "Never, if you paraphrase"
+     ],
+     "answer": "Whenever you use someone else's ideas, data, images or words",
+     "accept": [],
+     "hint": "Paraphrasing still uses another person's idea.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdsbnbrzu6uoa",
+     "subject": "math",
+     "type": "mc",
+     "q": "After the teacher gives feedback on a draft, what is the best next step?",
+     "options": [
+      "Submit the draft unchanged",
+      "Act on the feedback and revise the exploration yourself",
+      "Ask the teacher to rewrite sections",
+      "Start a completely new topic the night before"
+     ],
+     "answer": "Act on the feedback and revise the exploration yourself",
+     "accept": [],
+     "hint": "The final version must be the student's own work.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs60ykx1oqsa9v",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain how a student can show strong personal engagement in a mathematics exploration.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about choice of topic, own questions, independent thinking and creativity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roiahn8aox5un",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which of these statements belongs in the reflection rather than the introduction?",
+     "options": [
+      "The aim of this exploration is…",
+      "I chose this topic because…",
+      "A limitation of my model is that it ignores air resistance.",
+      "In this exploration I will use calculus to…"
+     ],
+     "answer": "A limitation of my model is that it ignores air resistance.",
+     "accept": [],
+     "hint": "Reflection looks back at results and their weaknesses.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri3gs3a1afvyqp",
+     "subject": "math",
+     "type": "open",
+     "q": "Describe two checks a student should make before submitting the final version of the exploration.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about referencing, notation, accuracy and the criteria.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "phys-hl": {
+   "topic": "Data analysis and uncertainty in exam contexts",
+   "questions": [
+    {
+     "id": "rl0uzbo4afwfo",
+     "subject": "phys",
+     "type": "num",
+     "q": "A length is measured as 25.0 ± 0.5 cm. Calculate the percentage uncertainty.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Divide the absolute uncertainty by the measured value and multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4069ds1jjbrnh",
+     "subject": "phys",
+     "type": "num",
+     "q": "A time is measured as 4.00 ± 0.08 s. Calculate the percentage uncertainty.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Divide the absolute uncertainty by the measured value and multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re74fna1yz8i7l",
+     "subject": "phys",
+     "type": "num",
+     "q": "Two masses, 120 ± 2 g and 80 ± 3 g, are added. What is the absolute uncertainty, in g, of the total mass?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "When adding quantities, add absolute uncertainties.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpvq4f9caurkk",
+     "subject": "phys",
+     "type": "num",
+     "q": "Speed is found from v = d/t, where d has a 3% uncertainty and t has a 2% uncertainty. What is the percentage uncertainty in v?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "When multiplying or dividing, add percentage uncertainties.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v3xv6rhwqmsf",
+     "subject": "phys",
+     "type": "num",
+     "q": "The radius of a sphere has a percentage uncertainty of 2%. What is the percentage uncertainty in its volume?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "The volume depends on r cubed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdwelckenu5h3",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which type of error can be reduced by repeating measurements and averaging?",
+     "options": [
+      "Systematic error",
+      "Random error",
+      "Zero error",
+      "Calibration error"
+     ],
+     "answer": "Random error",
+     "accept": [],
+     "hint": "Think about which error scatters readings both ways.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpqkvv2177x06y",
+     "subject": "phys",
+     "type": "mc",
+     "q": "A balance reads 0.3 g with nothing on it. This is an example of:",
+     "options": [
+      "random error",
+      "a zero (systematic) error",
+      "parallax",
+      "a precise measurement"
+     ],
+     "answer": "a zero (systematic) error",
+     "accept": [],
+     "hint": "Every reading would be shifted by the same amount.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d0gckb1g9gr9w",
+     "subject": "phys",
+     "type": "mc",
+     "q": "On a graph of y against x, a straight line through the origin shows that:",
+     "options": [
+      "y is inversely proportional to x",
+      "y is directly proportional to x",
+      "y is independent of x",
+      "y is proportional to x squared"
+     ],
+     "answer": "y is directly proportional to x",
+     "accept": [],
+     "hint": "Doubling x doubles y.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r64s0v9sp11kq",
+     "subject": "phys",
+     "type": "num",
+     "q": "A ruler has smallest divisions of 1 mm. Using half the smallest division, what is the uncertainty in mm of a single reading?",
+     "options": [],
+     "answer": "0.5",
+     "accept": [],
+     "hint": "Halve the smallest scale division.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18s8hflscvizm",
+     "subject": "phys",
+     "type": "short",
+     "q": "What term describes how close a measurement is to the true value?",
+     "options": [],
+     "answer": "accuracy",
+     "accept": [
+      "accurate"
+     ],
+     "hint": "Compare with precision, which describes spread.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cj01pjqyx102",
+     "subject": "phys",
+     "type": "mc",
+     "q": "To find the gradient uncertainty on a graph with error bars, a student should:",
+     "options": [
+      "draw only the best-fit line",
+      "draw maximum and minimum gradient lines through the error bars",
+      "ignore the error bars",
+      "use only the first and last points"
+     ],
+     "answer": "draw maximum and minimum gradient lines through the error bars",
+     "accept": [],
+     "hint": "Compare the steepest and shallowest lines that still fit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qrgxyou1880",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Plotting T² against L for a pendulum gives a straight line. What is the reason for plotting T² instead of T?",
+     "options": [
+      "T² is easier to measure",
+      "It linearises the relationship",
+      "It removes random error",
+      "It makes the gradient zero"
+     ],
+     "answer": "It linearises the relationship",
+     "accept": [],
+     "hint": "T is proportional to the square root of L.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p6xh2p3462gd",
+     "subject": "phys",
+     "type": "open",
+     "q": "A student measures the period of a pendulum by timing one swing with a stopwatch. Suggest two improvements to the experimental design and explain each.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider reaction time, number of oscillations and repeats.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk2wynqiqri0m",
+     "subject": "phys",
+     "type": "num",
+     "q": "A quantity is calculated as Q = a²b/c. a, b and c have percentage uncertainties of 1%, 3% and 2%. Calculate the percentage uncertainty in Q.",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Multiply the power by each percentage uncertainty, then add.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ydl9yv1kk1o51",
+     "subject": "phys",
+     "type": "num",
+     "q": "A resistance is calculated as 12.0 Ω with a percentage uncertainty of 5%. Calculate the absolute uncertainty in Ω.",
+     "options": [],
+     "answer": "0.6",
+     "accept": [],
+     "hint": "Find 5% of the value.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcyj4xu1gzcg9f",
+     "subject": "phys",
+     "type": "open",
+     "q": "A data set of current against voltage for a lamp shows a curve rather than a straight line. Evaluate whether the lamp obeys Ohm's law, and suggest how the analysis could be improved.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what a constant resistance would look like on the graph, and about temperature.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "phys-sl": {
+   "topic": "Data analysis and uncertainty in exam contexts",
+   "questions": [
+    {
+     "id": "rom9fix1tfih1l",
+     "subject": "phys",
+     "type": "num",
+     "q": "A length is measured as 25.0 ± 0.5 cm. Calculate the percentage uncertainty.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Divide the absolute uncertainty by the measured value and multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsouar1jz8e1c",
+     "subject": "phys",
+     "type": "num",
+     "q": "A time is measured as 4.00 ± 0.08 s. Calculate the percentage uncertainty.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Divide the absolute uncertainty by the measured value and multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wyene91kem6um",
+     "subject": "phys",
+     "type": "num",
+     "q": "Two masses, 120 ± 2 g and 80 ± 3 g, are added. What is the absolute uncertainty, in g, of the total mass?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "When adding quantities, add absolute uncertainties.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2gmuvk1uhovkd",
+     "subject": "phys",
+     "type": "num",
+     "q": "Speed is found from v = d/t, where d has a 3% uncertainty and t has a 2% uncertainty. What is the percentage uncertainty in v?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "When multiplying or dividing, add percentage uncertainties.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15c946inugpwm",
+     "subject": "phys",
+     "type": "num",
+     "q": "The radius of a sphere has a percentage uncertainty of 2%. What is the percentage uncertainty in its volume?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "The volume depends on r cubed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10x6umr1nyn7ms",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which type of error can be reduced by repeating measurements and averaging?",
+     "options": [
+      "Systematic error",
+      "Random error",
+      "Zero error",
+      "Calibration error"
+     ],
+     "answer": "Random error",
+     "accept": [],
+     "hint": "Think about which error scatters readings both ways.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryca0gxogdsfh",
+     "subject": "phys",
+     "type": "mc",
+     "q": "A balance reads 0.3 g with nothing on it. This is an example of:",
+     "options": [
+      "random error",
+      "a zero (systematic) error",
+      "parallax",
+      "a precise measurement"
+     ],
+     "answer": "a zero (systematic) error",
+     "accept": [],
+     "hint": "Every reading would be shifted by the same amount.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12r9gzi1emj2th",
+     "subject": "phys",
+     "type": "mc",
+     "q": "On a graph of y against x, a straight line through the origin shows that:",
+     "options": [
+      "y is inversely proportional to x",
+      "y is directly proportional to x",
+      "y is independent of x",
+      "y is proportional to x squared"
+     ],
+     "answer": "y is directly proportional to x",
+     "accept": [],
+     "hint": "Doubling x doubles y.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r64ykod39rzv",
+     "subject": "phys",
+     "type": "num",
+     "q": "A ruler has smallest divisions of 1 mm. Using half the smallest division, what is the uncertainty in mm of a single reading?",
+     "options": [],
+     "answer": "0.5",
+     "accept": [],
+     "hint": "Halve the smallest scale division.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3gcwc1xzsp8v",
+     "subject": "phys",
+     "type": "short",
+     "q": "What term describes how close a measurement is to the true value?",
+     "options": [],
+     "answer": "accuracy",
+     "accept": [
+      "accurate"
+     ],
+     "hint": "Compare with precision, which describes spread.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xyyj4q1mrdai7",
+     "subject": "phys",
+     "type": "mc",
+     "q": "To find the gradient uncertainty on a graph with error bars, a student should:",
+     "options": [
+      "draw only the best-fit line",
+      "draw maximum and minimum gradient lines through the error bars",
+      "ignore the error bars",
+      "use only the first and last points"
+     ],
+     "answer": "draw maximum and minimum gradient lines through the error bars",
+     "accept": [],
+     "hint": "Compare the steepest and shallowest lines that still fit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rygst5b788mk5",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Plotting T² against L for a pendulum gives a straight line. What is the reason for plotting T² instead of T?",
+     "options": [
+      "T² is easier to measure",
+      "It linearises the relationship",
+      "It removes random error",
+      "It makes the gradient zero"
+     ],
+     "answer": "It linearises the relationship",
+     "accept": [],
+     "hint": "T is proportional to the square root of L.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tt3nb61o8t11i",
+     "subject": "phys",
+     "type": "open",
+     "q": "A student measures the period of a pendulum by timing one swing with a stopwatch. Suggest two improvements to the experimental design and explain each.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider reaction time, number of oscillations and repeats.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11wy0b1ncemzq",
+     "subject": "phys",
+     "type": "num",
+     "q": "A current is measured as 2.50 ± 0.05 A. Calculate the percentage uncertainty.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Divide the absolute uncertainty by the value and multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfbnjcpxkm1dw",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which of these increases the precision of a measured time?",
+     "options": [
+      "Using a stopwatch with larger divisions",
+      "Taking many repeat readings and averaging",
+      "Measuring only once",
+      "Starting the timer late"
+     ],
+     "answer": "Taking many repeat readings and averaging",
+     "accept": [],
+     "hint": "Precision is about how close repeat readings are.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hz8xvh1tu2uzg",
+     "subject": "phys",
+     "type": "open",
+     "q": "Explain the difference between a random error and a systematic error, giving one example of each from a school experiment.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about whether the error changes from reading to reading.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych-hl": {
+   "topic": "Paper 2 Section A: questions on class practicals",
+   "questions": [
+    {
+     "id": "r1015swu1ugr5z3",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In an experiment, the variable that the researcher manipulates is the:",
+     "options": [
+      "dependent variable",
+      "independent variable",
+      "confounding variable",
+      "control variable"
+     ],
+     "answer": "independent variable",
+     "accept": [],
+     "hint": "It is the one the researcher changes on purpose.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r144eap1ni9zkn",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which design uses the same participants in every condition?",
+     "options": [
+      "Independent samples",
+      "Repeated measures",
+      "Matched pairs",
+      "Case study"
+     ],
+     "answer": "Repeated measures",
+     "accept": [],
+     "hint": "Each participant is measured more than once.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbpox6d1fd2cvc",
+     "subject": "psych",
+     "type": "short",
+     "q": "What technique, such as ABBA ordering, reduces order effects in a repeated measures design?",
+     "options": [],
+     "answer": "counterbalancing",
+     "accept": [
+      "counter-balancing"
+     ],
+     "hint": "Half do one condition first, half the other.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5bwsu1h71k0e",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which sampling method selects people who happen to be available at the time?",
+     "options": [
+      "Random sampling",
+      "Opportunity sampling",
+      "Stratified sampling",
+      "Snowball sampling"
+     ],
+     "answer": "Opportunity sampling",
+     "accept": [],
+     "hint": "It is quick and convenient.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsik2nf1ascvwc",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A main disadvantage of an independent samples design is:",
+     "options": [
+      "order effects",
+      "participant variability between groups",
+      "fatigue",
+      "practice effects"
+     ],
+     "answer": "participant variability between groups",
+     "accept": [],
+     "hint": "Different people are in each condition.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf8lsv6avbyfo",
+     "subject": "psych",
+     "type": "short",
+     "q": "What term describes cues that lead participants to guess the aim of a study and change their behaviour?",
+     "options": [],
+     "answer": "demand characteristics",
+     "accept": [
+      "demand characteristic"
+     ],
+     "hint": "They are a threat to validity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rniuafjhphuux",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Defining 'memory' as 'number of words recalled out of 20 after 2 minutes' is an example of:",
+     "options": [
+      "operationalisation",
+      "generalisation",
+      "triangulation",
+      "debriefing"
+     ],
+     "answer": "operationalisation",
+     "accept": [],
+     "hint": "It makes a variable measurable.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsp9cb4rcrtkt",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which ethical guideline means participants are told the true aim of the study after taking part?",
+     "options": [
+      "Informed consent",
+      "Debriefing",
+      "Anonymity",
+      "Right to withdraw"
+     ],
+     "answer": "Debriefing",
+     "accept": [],
+     "hint": "It happens at the end of the study.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i7z5hn1ahsuft",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A single-blind design means that:",
+     "options": [
+      "the researcher does not know the conditions",
+      "the participants do not know which condition they are in",
+      "nobody knows the aim",
+      "there is no control group"
+     ],
+     "answer": "the participants do not know which condition they are in",
+     "accept": [],
+     "hint": "It reduces participant expectations.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7wx85b3urrxf",
+     "subject": "psych",
+     "type": "short",
+     "q": "Which sampling method asks existing participants to recruit others they know?",
+     "options": [],
+     "answer": "snowball sampling",
+     "accept": [
+      "snowball"
+     ],
+     "hint": "Useful for hard-to-reach groups.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cv8d0i11okt7k",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which method collects detailed qualitative data through a flexible, guided conversation?",
+     "options": [
+      "Laboratory experiment",
+      "Semi-structured interview",
+      "Correlational study",
+      "Questionnaire with closed questions"
+     ],
+     "answer": "Semi-structured interview",
+     "accept": [],
+     "hint": "Some questions are planned; others follow the answers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1may6d91kme6cp",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain why a matched pairs design might have been chosen for your class practical.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the problems of the other two designs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbzqzpu1on2u58",
+     "subject": "psych",
+     "type": "open",
+     "q": "Describe one strength and one limitation of the sampling method used in a class practical you carried out.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider generalisability and practicality.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jfwwu41d1khrq",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A researcher compares memory scores of the same group in two noise conditions. Which inferential test is most suitable for ordinal data?",
+     "options": [
+      "Mann–Whitney U",
+      "Wilcoxon signed-rank",
+      "Chi-squared",
+      "Pearson's r"
+     ],
+     "answer": "Wilcoxon signed-rank",
+     "accept": [],
+     "hint": "Same participants, so the data are related.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t7ilakyv8av8",
+     "subject": "psych",
+     "type": "open",
+     "q": "Evaluate the design of a class practical you carried out, referring to validity and ethics.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about controls, demand characteristics and how participants were treated.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1klp3x31izw9o5",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain how the choice of research method in your class practical affected the conclusions that could be drawn.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider cause and effect versus description or correlation.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych-sl": {
+   "topic": "Paper 2 Section A: questions on class practicals",
+   "questions": [
+    {
+     "id": "r1xedfsj1igrt7o",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In an experiment, the variable that the researcher manipulates is the:",
+     "options": [
+      "dependent variable",
+      "independent variable",
+      "confounding variable",
+      "control variable"
+     ],
+     "answer": "independent variable",
+     "accept": [],
+     "hint": "It is the one the researcher changes on purpose.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r733gck3jk374",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which design uses the same participants in every condition?",
+     "options": [
+      "Independent samples",
+      "Repeated measures",
+      "Matched pairs",
+      "Case study"
+     ],
+     "answer": "Repeated measures",
+     "accept": [],
+     "hint": "Each participant is measured more than once.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sk2qyg19jzkxz",
+     "subject": "psych",
+     "type": "short",
+     "q": "What technique, such as ABBA ordering, reduces order effects in a repeated measures design?",
+     "options": [],
+     "answer": "counterbalancing",
+     "accept": [
+      "counter-balancing"
+     ],
+     "hint": "Half do one condition first, half the other.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lj0j3bghmuld",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which sampling method selects people who happen to be available at the time?",
+     "options": [
+      "Random sampling",
+      "Opportunity sampling",
+      "Stratified sampling",
+      "Snowball sampling"
+     ],
+     "answer": "Opportunity sampling",
+     "accept": [],
+     "hint": "It is quick and convenient.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jnd01mfpg67b",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A main disadvantage of an independent samples design is:",
+     "options": [
+      "order effects",
+      "participant variability between groups",
+      "fatigue",
+      "practice effects"
+     ],
+     "answer": "participant variability between groups",
+     "accept": [],
+     "hint": "Different people are in each condition.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pc9tez1qe0rcb",
+     "subject": "psych",
+     "type": "short",
+     "q": "What term describes cues that lead participants to guess the aim of a study and change their behaviour?",
+     "options": [],
+     "answer": "demand characteristics",
+     "accept": [
+      "demand characteristic"
+     ],
+     "hint": "They are a threat to validity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry7ad982di63w",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Defining 'memory' as 'number of words recalled out of 20 after 2 minutes' is an example of:",
+     "options": [
+      "operationalisation",
+      "generalisation",
+      "triangulation",
+      "debriefing"
+     ],
+     "answer": "operationalisation",
+     "accept": [],
+     "hint": "It makes a variable measurable.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzxws7h1egdse6",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which ethical guideline means participants are told the true aim of the study after taking part?",
+     "options": [
+      "Informed consent",
+      "Debriefing",
+      "Anonymity",
+      "Right to withdraw"
+     ],
+     "answer": "Debriefing",
+     "accept": [],
+     "hint": "It happens at the end of the study.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm6esf81xfkegc",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A single-blind design means that:",
+     "options": [
+      "the researcher does not know the conditions",
+      "the participants do not know which condition they are in",
+      "nobody knows the aim",
+      "there is no control group"
+     ],
+     "answer": "the participants do not know which condition they are in",
+     "accept": [],
+     "hint": "It reduces participant expectations.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsyh40fxwmp6",
+     "subject": "psych",
+     "type": "short",
+     "q": "Which sampling method asks existing participants to recruit others they know?",
+     "options": [],
+     "answer": "snowball sampling",
+     "accept": [
+      "snowball"
+     ],
+     "hint": "Useful for hard-to-reach groups.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vqwnptaik1vx",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which method collects detailed qualitative data through a flexible, guided conversation?",
+     "options": [
+      "Laboratory experiment",
+      "Semi-structured interview",
+      "Correlational study",
+      "Questionnaire with closed questions"
+     ],
+     "answer": "Semi-structured interview",
+     "accept": [],
+     "hint": "Some questions are planned; others follow the answers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxcjhe21kl6ar8",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain why a matched pairs design might have been chosen for your class practical.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the problems of the other two designs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o8wmubm9567j",
+     "subject": "psych",
+     "type": "open",
+     "q": "Describe one strength and one limitation of the sampling method used in a class practical you carried out.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider generalisability and practicality.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pbt6s41wks9dk",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A researcher compares memory scores of two different groups of participants. Which inferential test is most suitable for ordinal data?",
+     "options": [
+      "Wilcoxon signed-rank",
+      "Mann–Whitney U",
+      "Pearson's r",
+      "Paired t-test"
+     ],
+     "answer": "Mann–Whitney U",
+     "accept": [],
+     "hint": "Different participants, so the data are unrelated.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m1ozrf8bp3st",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which is an example of a controlled variable in a memory experiment?",
+     "options": [
+      "The number of words recalled",
+      "The noise condition",
+      "The time given to learn the list",
+      "The participants' scores"
+     ],
+     "answer": "The time given to learn the list",
+     "accept": [],
+     "hint": "It is kept the same for everyone.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdivdp716bf4xk",
+     "subject": "psych",
+     "type": "open",
+     "q": "Suggest one way to improve the validity of a class practical you carried out, and explain why it would help.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about controls, standardised instructions or the sample.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
