@@ -2312,5 +2312,903 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "Cartas de Vila Serena",
+   "premise": "Lia se muda para uma cidadezinha à beira-mar sem internet e começa a trocar cartas com o melhor amigo, a avó, um primo e uma vizinha misteriosa, descobrindo que cada carta tem quem escreve, para quem e por quê.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A primeira carta",
+     "synopsis": "Lia se muda para Vila Serena, uma cidadezinha à beira-mar, e escreve sua primeira carta ao melhor amigo, Bento, para contar a novidade.",
+     "text": "Na primeira noite em Vila Serena, Lia não conseguia dormir. O quarto novo tinha cheiro de tinta fresca, e da janela dava para ouvir o mar batendo nas pedras. Tudo era bonito, mas faltava alguém: Bento, o melhor amigo dela, que tinha ficado na cidade grande.\nA casa nova ainda não tinha internet. O pai prometeu que o técnico viria “em breve”, o que, em Vila Serena, podia significar duas semanas. Então a mãe de Lia teve uma ideia antiga:\n— Por que você não escreve uma carta?\nLia achou graça. Carta? Igual às da caixa de lembranças da avó? Mesmo assim, pegou uma folha de papel, sentou-se à mesa da cozinha e começou:\n“Vila Serena, 3 de março.\nQuerido Bento,\nTudo bem com você? Eu cheguei! A casa fica pertinho da praia e o meu quarto tem uma janela redonda, igual à de um navio. Ainda não conheço ninguém e a internet não funciona, por isso estou escrevendo à mão (repare na letra caprichada!).\nEscrevo para contar como é tudo aqui e para pedir uma coisa: me responde? Quero saber se o time de queimada ganhou e se a professora Vera ainda dá aquele ditado enorme.\nEstou com saudade das nossas tardes de bicicleta.\nUm abraço apertado da sua amiga,\nLia”\nEla dobrou a folha em três partes, colocou no envelope e escreveu com cuidado o nome e o endereço de Bento na frente. No verso, escreveu o próprio nome e o endereço novo, para que a resposta soubesse o caminho.\nNa manhã seguinte, a mãe a levou até a agência dos Correios, uma casinha amarela na praça. O funcionário colou o selo e sorriu:\n— Daqui a uns cinco dias ela chega.\nCinco dias! Lia achou uma eternidade. Mas, ao sair da agência, sentiu algo curioso: a saudade tinha ficado um pouco mais leve, como se parte dela tivesse ido junto dentro do envelope.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, para qual cidade Lia se muda?",
+       "options": [],
+       "answer": "Vila Serena",
+       "accept": [
+        "Vila Serena."
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem é o destinatário da carta de Lia?",
+       "options": [],
+       "answer": "Bento",
+       "accept": [
+        "o Bento"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lia escreve uma carta em vez de mandar mensagem?",
+       "options": [
+        "Porque a casa nova ainda não tinha internet",
+        "Porque o celular dela quebrou",
+        "Porque a professora pediu",
+        "Porque Bento não tem celular"
+       ],
+       "answer": "Porque a casa nova ainda não tinha internet",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual destes é um propósito da carta de Lia?",
+       "options": [
+        "Contar as novidades e pedir uma resposta",
+        "Pedir desculpas por um erro",
+        "Convidar Bento para uma festa",
+        "Agradecer um presente"
+       ],
+       "answer": "Contar as novidades e pedir uma resposta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia escreve no verso do envelope?",
+       "options": [
+        "O próprio nome e o endereço novo",
+        "O nome da professora Vera",
+        "Um desenho do mar",
+        "A data da carta"
+       ],
+       "answer": "O próprio nome e o endereço novo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual expressão da carta mostra que Lia e Bento são próximos?",
+       "options": [
+        "“Um abraço apertado da sua amiga”",
+        "“Vila Serena, 3 de março”",
+        "“Ainda não conheço ninguém”",
+        "“A casa fica pertinho da praia”"
+       ],
+       "answer": "“Um abraço apertado da sua amiga”",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia sente ao sair da agência dos Correios?",
+       "options": [
+        "Que a saudade ficou um pouco mais leve",
+        "Que nunca mais vai escrever cartas",
+        "Que está com raiva da mãe",
+        "Que vai voltar para a cidade grande"
+       ],
+       "answer": "Que a saudade ficou um pouco mais leve",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a saudade de Lia ficou mais leve depois de enviar a carta?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A resposta de Bento",
+     "synopsis": "Depois de dias de espera, chega a resposta de Bento, cheia de apelidos, piadas e uma notícia que deixa Lia curiosa.",
+     "text": "Todo dia, quando o carteiro passava de bicicleta, Lia corria até o portão. No primeiro dia, nada. No segundo, só uma conta de luz. No sétimo dia, finalmente, um envelope azul com uma letra torta que ela conhecia muito bem.\nEla nem esperou entrar em casa. Sentou-se no degrau da varanda e abriu:\n“São Paulo, 10 de março.\nLili!!!\nQue susto bom receber uma carta de verdade! Minha mãe disse que eu tinha que responder com letra bonita, mas você sabe que minha letra parece um caranguejo andando. Desculpa aí.\nNovidades: o time de queimada PERDEU, mas foi por um ponto só. E a professora Vera continua com o ditado gigante. Ontem ela ditou a palavra “paralelepípedo” e metade da turma errou. Eu acertei! (Tá, eu acertei na segunda tentativa.)\nAgora a notícia grande: meus pais disseram que, se eu tirar boas notas, posso passar uns dias aí nas férias de julho. Já estou estudando igual um maluco.\nFala da praia. Tem caranguejo de verdade? Tem gente legal na escola nova?\nBeijo, abraço e um aperto de mão de pirata,\nBentão\nP.S.: Mande uma concha pra mim no próximo envelope!”\nLia riu alto. Só Bento chamava ela de Lili, e só ele assinava “Bentão”, como se fosse um gigante. A carta tinha cheiro de casa: as piadas, os pontos de exclamação, o jeito de falar igualzinho ao dele.\nEla leu tudo três vezes. Depois guardou a carta numa caixa de sapato que decorou com fitas e escreveu na tampa: “Correspondência importante”.\nÀ tarde, foi até a praia procurar a concha perfeita. Encontrou uma cor-de-rosa, pequena e lisa. Já sabia que iria no próximo envelope.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos dias Lia espera até a carta de Bento chegar?",
+       "options": [],
+       "answer": "sete",
+       "accept": [
+        "7",
+        "sete dias",
+        "7 dias"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual apelido Bento usa para chamar Lia?",
+       "options": [],
+       "answer": "Lili",
+       "accept": [
+        "Lili."
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem é o remetente da carta azul?",
+       "options": [
+        "Bento",
+        "Lia",
+        "A professora Vera",
+        "O carteiro"
+       ],
+       "answer": "Bento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a “notícia grande” da carta de Bento?",
+       "options": [
+        "Ele pode visitar Lia nas férias de julho",
+        "O time de queimada ganhou o campeonato",
+        "Ele mudou de escola",
+        "A professora Vera foi embora"
+       ],
+       "answer": "Ele pode visitar Lia nas férias de julho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que é o “P.S.” no final da carta?",
+       "options": [
+        "Um recado acrescentado depois da assinatura",
+        "O nome da cidade de Bento",
+        "O endereço do remetente",
+        "A data da carta"
+       ],
+       "answer": "Um recado acrescentado depois da assinatura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual destes trechos é uma marca de proximidade na linguagem de Bento?",
+       "options": [
+        "“Desculpa aí.”",
+        "“São Paulo, 10 de março.”",
+        "“Ontem ela ditou a palavra…”",
+        "“meus pais disseram que…”"
+       ],
+       "answer": "“Desculpa aí.”",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lia diz que a carta “tinha cheiro de casa”?",
+       "options": [
+        "Porque o jeito de escrever lembrava muito o amigo",
+        "Porque o envelope tinha perfume",
+        "Porque foi escrita na casa dela",
+        "Porque falava sobre a casa nova"
+       ],
+       "answer": "Porque o jeito de escrever lembrava muito o amigo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia guardou a carta numa caixa com o nome “Correspondência importante”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Obrigada, vó",
+     "synopsis": "A avó Zuleide manda um presente pelo correio, e Lia descobre que uma carta para a avó precisa de um jeito diferente de escrever.",
+     "text": "Numa quinta-feira chegou um pacote para Lia. Dentro, embrulhado em papel de seda, havia um caderno de capa de tecido com flores bordadas e um bilhete: “Para você escrever suas aventuras no mar. Com amor, vó Zuleide.”\n— Você precisa agradecer — disse a mãe.\n— Vou mandar um áudio! — respondeu Lia, mas lembrou que a internet continuava sem funcionar.\nEntão pegou papel e caneta. Começou a escrever do jeito que escrevia para Bento: “Vóóó!!! Que caderno irado, valeu!!!” Parou. Leu de novo. Alguma coisa não combinava.\nA avó Zuleide era carinhosa, mas também muito caprichosa. Guardava todas as cartas que recebia, passava as roupas com cuidado e sempre dizia “por favor” e “obrigada”. Lia amassou a folha e recomeçou:\n“Vila Serena, 18 de março.\nQuerida vovó Zuleide,\nRecebi hoje o seu presente e fiquei muito feliz. O caderno é lindo, e as flores bordadas parecem as do seu jardim. Prometo usá-lo para contar tudo o que eu descobrir aqui no mar.\nJá escrevi a primeira página: falei das gaivotas que acordam a gente às seis da manhã e da concha cor-de-rosa que enviei ao Bento.\nMuito obrigada por lembrar de mim. Sinto falta do seu bolo de fubá e das nossas conversas no sofá.\nCom muito carinho, um beijo da sua neta,\nLia”\nEla mostrou à mãe, que sorriu:\n— Ficou muito bonita. E continua sendo você.\nLia entendeu. A carta para a avó também era carinhosa, mas o carinho aparecia de outro jeito: nas palavras “querida”, “obrigada” e “com muito carinho”, e não em pontos de exclamação e gírias.\nDuas semanas depois, chegou a resposta: uma carta curtinha e uma receita de bolo de fubá, copiada à mão. No final, a avó tinha escrito: “Sua carta está guardada na minha gaveta especial.”",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual presente a avó Zuleide manda para Lia?",
+       "options": [],
+       "answer": "um caderno",
+       "accept": [
+        "caderno",
+        "um caderno de capa de tecido",
+        "caderno de capa de tecido"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o principal propósito da carta de Lia para a avó?",
+       "options": [
+        "Agradecer o presente",
+        "Pedir dinheiro",
+        "Contar um segredo",
+        "Convidar a avó para a praia"
+       ],
+       "answer": "Agradecer o presente",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lia amassa a primeira folha?",
+       "options": [
+        "Porque o jeito de escrever não combinava com a avó",
+        "Porque a caneta falhou",
+        "Porque escreveu o endereço errado",
+        "Porque a mãe rasgou a folha"
+       ],
+       "answer": "Porque o jeito de escrever não combinava com a avó",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o vocativo da carta para a avó?",
+       "options": [
+        "Querida vovó Zuleide,",
+        "Vila Serena, 18 de março.",
+        "Com muito carinho,",
+        "Lia"
+       ],
+       "answer": "Querida vovó Zuleide,",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que é o bolo de que Lia sente falta?",
+       "options": [],
+       "answer": "fubá",
+       "accept": [
+        "de fubá",
+        "bolo de fubá"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a avó manda junto com a resposta?",
+       "options": [
+        "Uma receita de bolo de fubá",
+        "Outro caderno",
+        "Uma concha",
+        "Uma foto do jardim"
+       ],
+       "answer": "Uma receita de bolo de fubá",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia percebe sobre o carinho nas cartas?",
+       "options": [
+        "Ele pode aparecer de jeitos diferentes, dependendo de para quem se escreve",
+        "Só existe em cartas para amigos",
+        "Precisa de muitos pontos de exclamação",
+        "Não deve aparecer em cartas"
+       ],
+       "answer": "Ele pode aparecer de jeitos diferentes, dependendo de para quem se escreve",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a avó guardou a carta de Lia numa “gaveta especial”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O e-mail do primo Teo",
+     "synopsis": "A internet finalmente chega, e um e-mail do primo Teo faz Lia comparar mensagens rápidas com cartas escritas à mão.",
+     "text": "Num sábado de manhã, o técnico apareceu. Em meia hora, a casa tinha internet. Lia comemorou dando voltas pela sala, e a primeira coisa que encontrou ao ligar o computador foi um e-mail do primo Teo.\n“De: Teo\nPara: Lia\nAssunto: festa!!\nOi, prima! Meu aniversário é dia 12. Vai ser na pizzaria. Vem? Responde logo. Abs, Teo”\nLia leu em cinco segundos. Respondeu em dez: “Oi, Teo! Não vou conseguir ir porque estou longe, mas parabéns adiantado! Bjs, Lia.” Clicou em “enviar” e, um minuto depois, a resposta já estava lá: “Que pena! Valeu!”\nEla ficou olhando a tela. Tinha sido rapidíssimo. Na carta para Bento, ela tinha esperado sete dias por uma resposta. Com Teo, um minuto.\nÀ noite, comentou com o pai:\n— O e-mail é muito mais rápido. Será que as cartas não servem mais para nada?\nO pai pensou um pouco e foi buscar a caixa de sapato de Lia.\n— Compare as duas coisas — sugeriu.\nLia espalhou as cartas na mesa e abriu o e-mail ao lado. Foi anotando no caderno da avó:\n“Carta: tem data e lugar no alto, vocativo, despedida e assinatura. Vai num envelope com selo e endereço. Demora dias. Dá para guardar e pegar na mão. A letra mostra quem escreveu.\nE-mail: tem campos de ‘De’, ‘Para’ e ‘Assunto’. A data aparece sozinha. Chega na hora. Costuma ser mais curto e mais apressado.”\nDepois escreveu uma última linha: “Os dois servem para conversar com quem está longe. O e-mail é bom para recados rápidos. A carta é boa quando a gente quer caprichar.”\nO pai leu por cima do ombro dela.\n— Belo resumo, cientista.\nLia fechou o caderno satisfeita. Naquela noite, mandou um e-mail para a avó contando que a internet tinha chegado. Mas também começou, no papel, uma nova carta para Bento.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem envia o e-mail para Lia?",
+       "options": [],
+       "answer": "Teo",
+       "accept": [
+        "o primo Teo",
+        "primo Teo",
+        "o Teo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o assunto do e-mail de Teo?",
+       "options": [
+        "festa!!",
+        "saudade",
+        "praia",
+        "internet"
+       ],
+       "answer": "festa!!",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o propósito do e-mail de Teo?",
+       "options": [
+        "Convidar Lia para o aniversário dele",
+        "Agradecer um presente",
+        "Pedir desculpas",
+        "Contar sobre a escola nova"
+       ],
+       "answer": "Convidar Lia para o aniversário dele",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quanto tempo demorou a resposta de Teo?",
+       "options": [],
+       "answer": "um minuto",
+       "accept": [
+        "1 minuto",
+        "1 min"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo as anotações de Lia, qual destes itens aparece no e-mail, mas não na carta?",
+       "options": [
+        "O campo “Assunto”",
+        "A assinatura",
+        "A despedida",
+        "O vocativo"
+       ],
+       "answer": "O campo “Assunto”",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Lia, para que a carta é boa?",
+       "options": [
+        "Para quando a gente quer caprichar",
+        "Para recados muito rápidos",
+        "Para convidar para festas no dia seguinte",
+        "Para mandar fotos"
+       ],
+       "answer": "Para quando a gente quer caprichar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o pai traz a caixa de sapato de Lia?",
+       "options": [
+        "Para ela comparar as cartas com o e-mail",
+        "Para guardar o computador",
+        "Para jogar as cartas fora",
+        "Para ela embrulhar um presente"
+       ],
+       "answer": "Para ela comparar as cartas com o e-mail",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia continuou escrevendo cartas para Bento mesmo depois de ter internet?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A carta sem nome",
+     "synopsis": "Lia encontra na caixa de correio uma carta misteriosa, sem remetente, e precisa usar pistas para descobrir quem a escreveu.",
+     "text": "Na segunda-feira, havia um envelope estranho na caixa de correio. Não tinha selo nem carimbo, e na frente estava escrito apenas: “Para a menina da janela redonda”. No verso, nada.\nLia abriu, curiosa:\n“Vila Serena, segunda-feira.\nOi, vizinha!\nEu sempre vejo você na janela olhando o mar. Eu também gosto de olhar o mar, principalmente quando os barcos voltam no fim da tarde.\nEstou escrevendo porque no sábado vai ter a Festa das Lanternas na praia, e eu queria saber se você quer ir comigo. A gente pode fazer as lanternas juntas antes.\nSe quiser, deixe um bilhete debaixo do vaso de samambaia.\nAté logo,\nUma amiga que você ainda não conhece”\nLia leu duas vezes. Quem seria? A carta não tinha assinatura de verdade, mas tinha pistas. Ela pegou o caderno da avó e anotou:\n“1. A pessoa mora perto, porque me vê na janela e entregou a carta sem selo.\n2. É uma menina (‘uma amiga’).\n3. Ela gosta de ver os barcos voltando.\n4. Existe um vaso de samambaia em algum lugar.”\nLia saiu pela rua procurando. Na casa da esquerda, havia um vaso de cactos. Na da frente, nenhum vaso. Mas na casa azul da direita, ao lado do portão, estava um enorme vaso de samambaia.\nEla voltou para casa, escreveu um bilhete — “Eu quero ir! Ass.: a menina da janela redonda” — e o colocou debaixo do vaso.\nNo fim da tarde, quando os barcos voltavam, alguém bateu na porta. Era uma menina de tranças, com as mãos sujas de tinta.\n— Eu sou a Maíra — disse ela, sorrindo. — Como você descobriu que era eu?\n— A samambaia te entregou — respondeu Lia.\nAs duas riram. No sábado, foram juntas à Festa das Lanternas, cada uma com uma lanterna feita à mão.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que estava escrito na frente do envelope misterioso?",
+       "options": [
+        "“Para a menina da janela redonda”",
+        "“Para Lia, com carinho”",
+        "“Urgente”",
+        "O endereço completo de Lia"
+       ],
+       "answer": "“Para a menina da janela redonda”",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que falta na carta misteriosa?",
+       "options": [
+        "O nome de quem escreveu",
+        "O vocativo",
+        "A despedida",
+        "O convite"
+       ],
+       "answer": "O nome de quem escreveu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o propósito da carta misteriosa?",
+       "options": [
+        "Convidar Lia para a Festa das Lanternas",
+        "Agradecer um presente",
+        "Reclamar do barulho",
+        "Pedir uma concha"
+       ],
+       "answer": "Convidar Lia para a Festa das Lanternas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lia conclui que a pessoa mora perto?",
+       "options": [
+        "Porque a carta não tinha selo e a pessoa a via na janela",
+        "Porque a letra era de criança",
+        "Porque a carta falava de barcos",
+        "Porque tinha cheiro de tinta"
+       ],
+       "answer": "Porque a carta não tinha selo e a pessoa a via na janela",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual planta ajudou Lia a descobrir a remetente?",
+       "options": [],
+       "answer": "samambaia",
+       "accept": [
+        "a samambaia",
+        "vaso de samambaia",
+        "o vaso de samambaia"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da menina que escreveu a carta?",
+       "options": [],
+       "answer": "Maíra",
+       "accept": [
+        "Maira",
+        "a Maíra"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que as mãos de Maíra estavam sujas de tinta?",
+       "options": [
+        "Provavelmente porque ela estava pintando ou fazendo lanternas",
+        "Porque ela caiu na rua",
+        "Porque escreveu a carta com tinta",
+        "Porque estava consertando um barco"
+       ],
+       "answer": "Provavelmente porque ela estava pintando ou fazendo lanternas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Maíra decidiu não assinar a carta com o próprio nome?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Um pedido de desculpas",
+     "synopsis": "Envolvida com a nova amiga e a escola, Lia esquece o aniversário de Bento e precisa encontrar as palavras certas para pedir desculpas.",
+     "text": "Os dias em Vila Serena ficaram cheios. Lia ia à escola de manhã, fazia lição à tarde e, no fim do dia, encontrava Maíra para ver os barcos voltando. Foi tão bom que ela nem percebeu o calendário passar.\nAté que chegou uma carta de Bento, mais curta que as outras:\n“São Paulo, 22 de abril.\nOi, Lia.\nOntem foi meu aniversário. Fiz um bolo de chocolate e guardei um pedaço imaginário pra você. Tudo bem por aqui.\nAbraço,\nBento”\nLia sentiu o rosto esquentar. O aniversário de Bento! Ela tinha esquecido completamente. E a carta não tinha “Lili”, nem “Bentão”, nem P.S., nem piadas. Era educada, mas fria como um picolé.\n— Ele ficou chateado — disse ela para a mãe.\n— E o que você pode fazer?\nLia pensou em mandar só um “desculpa” rápido pelo celular. Mas lembrou do que tinha anotado: a carta é boa quando a gente quer caprichar. E aquele era um momento de caprichar.\n“Vila Serena, 24 de abril.\nQuerido Bentão,\nDesculpa, desculpa, desculpa. Eu esqueci o seu aniversário, e isso não foi nada legal. Não foi porque você deixou de ser importante. Foi porque eu me distraí com a escola nova e não olhei o calendário. Isso não vai acontecer de novo: já marquei 21 de abril com caneta vermelha.\nPara compensar, mando junto um desenho que fiz de nós dois andando de bicicleta na praia, que é o que a gente vai fazer em julho.\nFeliz aniversário atrasado! Você é o melhor amigo do mundo.\nUm abraço do tamanho do mar,\nLili”\nEla colocou o desenho no envelope e correu até a agência amarela.\nUma semana depois, a resposta chegou. Começava assim: “LILI!!! Desculpas aceitas.” E terminava com: “P.S.: O pedaço de bolo imaginário continua guardado.”\nLia soltou o ar, aliviada. Bentão estava de volta.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia esqueceu?",
+       "options": [
+        "O aniversário de Bento",
+        "O endereço de Bento",
+        "A Festa das Lanternas",
+        "A lição de casa"
+       ],
+       "answer": "O aniversário de Bento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Lia percebe que Bento estava chateado?",
+       "options": [
+        "A carta dele era curta e sem os apelidos e piadas de sempre",
+        "Ele escreveu que estava muito bravo",
+        "Ele não mandou carta nenhuma",
+        "A mãe de Bento telefonou"
+       ],
+       "answer": "A carta dele era curta e sem os apelidos e piadas de sempre",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o propósito principal da carta de Lia?",
+       "options": [
+        "Pedir desculpas",
+        "Contar sobre a escola",
+        "Convidar Bento para uma festa",
+        "Agradecer um presente"
+       ],
+       "answer": "Pedir desculpas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Lia assina a carta de desculpas?",
+       "options": [
+        "Lili",
+        "Lia",
+        "Sua amiga",
+        "Maíra"
+       ],
+       "answer": "Lili",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia manda junto com a carta?",
+       "options": [
+        "Um desenho dos dois de bicicleta",
+        "Uma concha",
+        "Um pedaço de bolo",
+        "Uma lanterna"
+       ],
+       "answer": "Um desenho dos dois de bicicleta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que dia é o aniversário de Bento?",
+       "options": [],
+       "answer": "21 de abril",
+       "accept": [
+        "21/04",
+        "dia 21 de abril",
+        "21"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Lia percebe que Bento a perdoou?",
+       "options": [
+        "A resposta volta a ter apelido, pontos de exclamação e P.S.",
+        "Ele manda um presente caro",
+        "Ele telefona chorando",
+        "A mãe de Lia conta para ela"
+       ],
+       "answer": "A resposta volta a ter apelido, pontos de exclamação e P.S.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia preferiu escrever uma carta em vez de mandar só um “desculpa” rápido?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A caixa de correspondência",
+     "synopsis": "Nas férias de julho, Bento finalmente visita Vila Serena, e os amigos, junto com Maíra, abrem a caixa de cartas e têm uma ideia nova.",
+     "text": "Em julho, Bento desceu do ônibus com uma mochila maior que ele e um sorriso maior ainda. Lia correu e os dois quase caíram no chão de tanto se abraçar.\n— Lili!\n— Bentão!\nMaíra, que estava junto, riu:\n— Então é verdade. Vocês falam igualzinho às cartas.\nNaquela tarde, os três sentaram na varanda e Lia trouxe a caixa de sapato com fitas. Abriram as cartas uma por uma. Bento leu em voz alta a carta da concha cor-de-rosa. Lia leu a do bolo imaginário. Maíra mostrou o bilhete da samambaia, que Lia tinha guardado também.\n— Engraçado — disse Bento. — Dá para saber quem escreveu cada carta só pelo jeito, mesmo sem olhar a assinatura.\n— E dá para saber para quem foi escrita — completou Maíra. — A da sua avó é toda caprichada. As do Bento são cheias de piadas.\nFoi então que Lia teve uma ideia.\n— E se a gente escrevesse uma carta para nós mesmos? Para abrir daqui a um ano?\nOs outros dois toparam na hora. Cada um escreveu a sua, em silêncio, na mesa da cozinha. Lia começou assim:\n“Vila Serena, 15 de julho.\nQuerida Lia do ano que vem,\nHoje você tem dois melhores amigos: um que mora longe e uma que mora do lado. Você descobriu que uma carta leva dias para chegar, mas fica para sempre…”\nQuando terminaram, colocaram as três cartas num envelope grande. Na frente, escreveram: “Para nós três. Só abrir em julho do ano que vem.” No verso, como remetentes, assinaram juntos.\nGuardaram o envelope no fundo da caixa de correspondência. Depois foram para a praia andar de bicicleta, exatamente como no desenho que Lia tinha mandado em abril.\nO sol se pôs, os barcos voltaram, e Lia pensou que algumas coisas valem a pena esperar.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que mês Bento visita Vila Serena?",
+       "options": [],
+       "answer": "julho",
+       "accept": [
+        "em julho",
+        "Julho"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Bento e Lia se cumprimentam?",
+       "options": [
+        "Com os apelidos “Lili” e “Bentão”",
+        "Com um aperto de mão formal",
+        "Com uma carta",
+        "Sem dizer nada"
+       ],
+       "answer": "Com os apelidos “Lili” e “Bentão”",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que os três fazem com a caixa de sapato?",
+       "options": [
+        "Leem as cartas guardadas",
+        "Usam para guardar conchas",
+        "Jogam fora as cartas velhas",
+        "Pintam a caixa de novo"
+       ],
+       "answer": "Leem as cartas guardadas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Bento percebe ao ler as cartas?",
+       "options": [
+        "Dá para saber quem escreveu só pelo jeito de escrever",
+        "Todas as cartas são iguais",
+        "As cartas da avó são as mais engraçadas",
+        "As cartas não têm data"
+       ],
+       "answer": "Dá para saber quem escreveu só pelo jeito de escrever",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a ideia de Lia?",
+       "options": [
+        "Escrever uma carta para eles mesmos abrirem daqui a um ano",
+        "Mandar um e-mail para a avó",
+        "Fazer uma festa de lanternas",
+        "Vender as cartas na praça"
+       ],
+       "answer": "Escrever uma carta para eles mesmos abrirem daqui a um ano",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem é o destinatário da carta que Lia começa a escrever?",
+       "options": [
+        "Ela mesma no ano seguinte",
+        "Bento",
+        "Maíra",
+        "A avó Zuleide"
+       ],
+       "answer": "Ela mesma no ano seguinte",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia quer dizer com “uma carta leva dias para chegar, mas fica para sempre”?",
+       "options": [
+        "Que a carta demora, mas pode ser guardada e relida",
+        "Que as cartas sempre se perdem",
+        "Que as cartas são mais rápidas que o e-mail",
+        "Que ninguém lê cartas antigas"
+       ],
+       "answer": "Que a carta demora, mas pode ser guardada e relida",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia pensa que “algumas coisas valem a pena esperar”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
