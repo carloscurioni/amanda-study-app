@@ -3209,6 +3209,906 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Last Light",
+   "premise": "Three friends put on a play in their village hall and learn how scripts, stage directions and voices bring a story to life.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Poster",
+     "synopsis": "Mira, Joss and Kit find a poster asking for young actors and decide to put on a play in the old village hall.",
+     "text": "CHARACTERS: MIRA, a bossy but kind girl; JOSS, her best friend, who loves jokes; KIT, Joss's shy younger cousin; MRS ADEBAYO, who looks after the village hall.\nSCENE 1. Outside the village hall on a windy Saturday morning. A crumpled poster flaps on the noticeboard.\nMIRA: (reading the poster aloud, slowly) \"Young actors wanted. Spring show. Three weeks to go.\" (She spins round.) Joss! This is it! This is our big chance!\nJOSS: (yawning and stretching) Our big chance to do what? Stand in the cold?\nMIRA: (impatiently) To put on a play, of course. A real play, with a stage and lights and an audience.\nKIT: (quietly, hiding behind Joss) I don't like audiences. They look at you.\nJOSS: (grinning) That's the whole point of an audience, Kit. If they looked at the ceiling, it would be very strange.\n(Kit giggles, then covers his mouth. The hall door creaks open. MRS ADEBAYO steps out, holding a broom.)\nMRS ADEBAYO: (cheerfully) Ah, I see you've found my poster. Nobody else has stopped to read it all week.\nMIRA: (stepping forward eagerly) We want to do the show. All three of us.\nKIT: (alarmed) All three?\nMRS ADEBAYO: (leaning on her broom and smiling) Then you'll need a script. Do you have one?\n(Silence. The three children look at one another.)\nJOSS: (slowly) We have... a very good imagination.\nMRS ADEBAYO: (laughing warmly) That's the best place to start. Come back on Monday with an idea, and the stage is yours.\n(She goes back inside. The door closes with a bang. MIRA punches the air.)\nMIRA: (triumphantly) We're actors!\nKIT: (in a tiny voice) We're in trouble.\n(Lights fade.)\nEND OF SCENE",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does the scene take place?",
+       "options": [
+        "Outside the village hall",
+        "Inside a school classroom",
+        "In Mira's kitchen",
+        "On a beach"
+       ],
+       "answer": "Outside the village hall",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the poster asking for?",
+       "options": [
+        "Young actors",
+        "Painters",
+        "Football players",
+        "Cooks"
+       ],
+       "answer": "Young actors",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many weeks are there until the show?",
+       "options": [],
+       "answer": "three",
+       "accept": [
+        "3",
+        "three weeks",
+        "3 weeks"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the words in brackets, such as (yawning and stretching), are called what?",
+       "options": [
+        "Stage directions",
+        "Speech marks",
+        "Chapter titles",
+        "Footnotes"
+       ],
+       "answer": "Stage directions",
+       "accept": [],
+       "hint": "They are not spoken aloud. They tell the actors something.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mrs Adebayo say the children need?",
+       "options": [
+        "A script",
+        "A costume",
+        "A ticket",
+        "A microphone"
+       ],
+       "answer": "A script",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the direction (in a tiny voice) tells the actor playing Kit to speak how?",
+       "options": [
+        "Very quietly, sounding worried",
+        "Loudly and proudly",
+        "In a silly accent",
+        "Very fast and angrily"
+       ],
+       "answer": "Very quietly, sounding worried",
+       "accept": [],
+       "hint": "Think about how Kit feels about audiences.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is the list of CHARACTERS placed at the very beginning?",
+       "options": [
+        "So readers and actors know who is in the play before it starts",
+        "Because it is the end of the story",
+        "To tell us what time it is",
+        "To show where the speech marks go"
+       ],
+       "answer": "So readers and actors know who is in the play before it starts",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Kit says \"We're in trouble\" at the end, when Mira says \"We're actors\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Compare how the two characters feel about performing.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Big Idea",
+     "synopsis": "The friends argue about what their play should be about until Kit, very quietly, suggests the winning idea.",
+     "text": "SCENE 2. Mira's bedroom, Sunday afternoon. Paper is scattered across the floor. MIRA sits on the bed with a notebook. JOSS lies upside down on a beanbag. KIT sits in the corner, drawing.\nMIRA: (tapping her pencil) Right. Ideas. We need a story that everyone will love.\nJOSS: (excitedly, kicking his legs) A play about a talking sandwich who wants to be a pirate!\nMIRA: (flatly) No.\nJOSS: (sitting up) A play about a pirate who wants to be a sandwich?\nMIRA: (louder) Joss! We need something serious. Something with a castle, a queen and a terrible storm.\nJOSS: (pulling a face) That sounds like homework.\n(They glare at each other. Pause. KIT holds up his drawing, but nobody notices. He clears his throat.)\nKIT: (very softly) Um...\nMIRA and JOSS: (together, still arguing) Sandwich! Castle! Sandwich! Castle!\nKIT: (standing up and speaking clearly for the first time) What about a lighthouse?\n(The others stop and turn to look at him.)\nKIT: (nervously, showing the picture) A lighthouse keeper whose light goes out. And a ship is lost at sea. And the keeper has to find a way to guide it home.\n(Long pause. JOSS slowly gets up and looks at the drawing.)\nJOSS: (thoughtfully) It could have a storm.\nMIRA: (catching on) And a brave keeper.\nJOSS: (with a sly smile) And maybe a seagull who tells bad jokes?\nMIRA: (sighing, but smiling) Fine. One seagull. One.\n(KIT sits down, looking pleased. MIRA writes \"THE LAST LIGHT\" across the top of her notebook in big letters.)\nMIRA: (proudly) Kit, you're a genius.\nKIT: (going pink) I just like lighthouses.\n(Lights fade.)\nEND OF SCENE",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does this scene take place?",
+       "options": [
+        "Mira's bedroom",
+        "The village hall",
+        "A lighthouse",
+        "A park"
+       ],
+       "answer": "Mira's bedroom",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Joss's first idea for the play?",
+       "options": [
+        "A talking sandwich who wants to be a pirate",
+        "A queen in a castle",
+        "A lost dog",
+        "A haunted school"
+       ],
+       "answer": "A talking sandwich who wants to be a pirate",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mira want the play to include?",
+       "options": [
+        "A castle, a queen and a storm",
+        "A sandwich and a pirate",
+        "A football match",
+        "A spaceship"
+       ],
+       "answer": "A castle, a queen and a storm",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what building is in Kit's idea?",
+       "options": [],
+       "answer": "a lighthouse",
+       "accept": [
+        "lighthouse",
+        "the lighthouse"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what title does Mira write in her notebook?",
+       "options": [],
+       "answer": "The Last Light",
+       "accept": [
+        "THE LAST LIGHT",
+        "Last Light"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is the stage direction (together, still arguing) important?",
+       "options": [
+        "It shows two characters speak at the same time",
+        "It tells us the scene has ended",
+        "It describes the bedroom",
+        "It shows Kit is asleep"
+       ],
+       "answer": "It shows two characters speak at the same time",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does (going pink) suggest about Kit?",
+       "options": [
+        "He is embarrassed but pleased",
+        "He is angry",
+        "He feels ill",
+        "He is cold"
+       ],
+       "answer": "He is embarrassed but pleased",
+       "accept": [],
+       "hint": "How might you feel if someone called you a genius?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the others finally listen to Kit when he speaks clearly?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about the stage direction before his line.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Reading It Aloud",
+     "synopsis": "At the first read-through, Mrs Adebayo shows the children how stage directions and tone of voice bring a script to life.",
+     "text": "SCENE 3. The village hall, Monday after school. Chairs are arranged in a circle. Each child holds a few pages of script. MRS ADEBAYO sits with them, a cup of tea in her hand.\nMRS ADEBAYO: (encouragingly) A first read-through. No acting yet. Just read the words and listen to each other.\nMIRA: (reading in a flat, bored voice) \"The storm is coming. I must light the lamp.\"\nMRS ADEBAYO: (gently) Mira, what does the stage direction say just before that line?\nMIRA: (looking down at her page) It says... (urgently, looking out to sea).\nMRS ADEBAYO: So how might the keeper sound?\nMIRA: (trying again, faster and worried) \"The storm is coming! I must light the lamp!\"\nJOSS: (impressed) Whoa. That gave me goosebumps.\nMRS ADEBAYO: (nodding) The words are the same, but your voice changed their meaning. That's called intonation. Now, Joss, you're the seagull.\nJOSS: (in a squawky voice, flapping his elbows) \"Why did the crab never share? Because he was shellfish!\"\n(MIRA groans. KIT laughs so hard he nearly falls off his chair.)\nMRS ADEBAYO: (laughing) Perfect. And Kit? You're the captain of the lost ship.\nKIT: (whispering) \"Where... where is the light?\"\nMRS ADEBAYO: (kindly) Good feeling, Kit. But the people at the back must hear you. The direction says (shouting into the wind). Try imagining the wind is very loud and you must beat it.\n(KIT takes a deep breath. He closes his eyes.)\nKIT: (loudly, surprising everyone) \"WHERE IS THE LIGHT?\"\n(Silence. Then JOSS and MIRA burst into applause.)\nKIT: (shocked at himself) Was that me?\nMRS ADEBAYO: (smiling) That was the captain. Tomorrow, we start moving.\n(Lights fade.)\nEND OF SCENE",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kind of practice are the children doing?",
+       "options": [
+        "A first read-through",
+        "A final dress rehearsal",
+        "A dance class",
+        "A singing contest"
+       ],
+       "answer": "A first read-through",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what character does Mira play?",
+       "options": [
+        "The lighthouse keeper",
+        "The seagull",
+        "The ship's captain",
+        "The queen"
+       ],
+       "answer": "The lighthouse keeper",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Mira read her line the first time?",
+       "options": [
+        "In a flat, bored voice",
+        "In a squawky voice",
+        "In a whisper",
+        "In a song"
+       ],
+       "answer": "In a flat, bored voice",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what word does Mrs Adebayo use for how a voice rises and falls to change meaning?",
+       "options": [],
+       "answer": "intonation",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which character does Joss play?",
+       "options": [
+        "The seagull",
+        "The captain",
+        "The keeper",
+        "The storm"
+       ],
+       "answer": "The seagull",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what tip helps Kit speak loudly?",
+       "options": [
+        "Imagining the wind is loud and he must beat it",
+        "Standing on a chair",
+        "Drinking some tea",
+        "Reading faster"
+       ],
+       "answer": "Imagining the wind is loud and he must beat it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Kit say \"Was that me?\"",
+       "options": [
+        "He is surprised at how loud and confident he was",
+        "He forgot his name",
+        "Someone else read his line",
+        "He did not hear anything"
+       ],
+       "answer": "He is surprised at how loud and confident he was",
+       "accept": [],
+       "hint": "Remember how quiet Kit usually is.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think reading a line with the right intonation can change how an audience feels?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about Mira's line read two ways.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: Stage Left, Stage Right",
+     "synopsis": "The friends learn how to follow stage directions about movement, but Joss keeps going the wrong way.",
+     "text": "SCENE 4. The village hall stage, Wednesday. Masking tape marks show where things will go: a big cross for the lighthouse, a square for the ship. MRS ADEBAYO stands in front of the stage holding the script.\nMRS ADEBAYO: (calling up to them) Today we follow the movement directions. Remember, \"stage left\" means the actor's left when facing the audience.\nJOSS: (confidently) Easy.\nMRS ADEBAYO: (reading) \"The seagull enters from stage left.\"\n(JOSS marches on proudly... from the right. MIRA puts her head in her hands.)\nMIRA: (exasperated) Your OTHER left, Joss!\nJOSS: (looking at his hands, puzzled) I have two lefts now?\n(KIT laughs, then quickly helps by drawing a large L on Joss's left trainer with chalk.)\nKIT: (helpfully) There. Now your shoe knows the way.\nJOSS: (pretending to be amazed) Genius again!\nMRS ADEBAYO: (reading on) \"The keeper crosses to the lamp, centre stage, and kneels.\"\n(MIRA walks to the big cross and kneels carefully.)\nMRS ADEBAYO: (pleased) Good. Now Kit: \"The captain stands on the ship, downstage right, holding the wheel.\"\nKIT: (uncertainly) Downstage... is that down the stairs?\nMRS ADEBAYO: (patiently) Downstage means closer to the audience. Upstage is further away, at the back.\n(KIT steps to the front right corner and pretends to hold a ship's wheel. He sways as if on rough waves.)\nMIRA: (impressed) You look really seasick, Kit!\nKIT: (still swaying, smiling) I am a very good captain.\n(JOSS enters again, this time from the correct side, and does a little bow.)\nJOSS: (grandly) The seagull has arrived. From the correct direction. Hold your applause.\nMRS ADEBAYO: (laughing) Wonderful. Same time tomorrow, everyone.\n(Lights fade.)\nEND OF SCENE",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what has been used to mark where things go on the stage?",
+       "options": [
+        "Masking tape",
+        "Paint",
+        "Chairs",
+        "Flowers"
+       ],
+       "answer": "Masking tape",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does \"stage left\" mean?",
+       "options": [
+        "The actor's left when facing the audience",
+        "The audience's left",
+        "The back of the stage",
+        "The middle of the stage"
+       ],
+       "answer": "The actor's left when facing the audience",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which side does Joss first enter from?",
+       "options": [
+        "The right",
+        "The left",
+        "The back",
+        "The audience"
+       ],
+       "answer": "The right",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Kit help Joss remember his left?",
+       "options": [
+        "He draws an L on Joss's left trainer",
+        "He gives him a map",
+        "He holds his hand",
+        "He writes it on the floor"
+       ],
+       "answer": "He draws an L on Joss's left trainer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what word means closer to the audience?",
+       "options": [],
+       "answer": "downstage",
+       "accept": [
+        "down stage"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Kit sway while holding the wheel?",
+       "options": [
+        "To show the ship is on rough waves",
+        "Because he is dizzy",
+        "Because the stage is moving",
+        "Because he is dancing"
+       ],
+       "answer": "To show the ship is on rough waves",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mira's line \"Your OTHER left, Joss!\" written in capitals suggest?",
+       "options": [
+        "She stresses that word loudly",
+        "She whispers it",
+        "She is reading a sign",
+        "She is singing"
+       ],
+       "answer": "She stresses that word loudly",
+       "accept": [],
+       "hint": "Capital letters in a script can show emphasis.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think plays need movement directions like stage left and downstage?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about many actors sharing one stage.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Missing Pages",
+     "synopsis": "Two days before the show, the final pages of the script disappear, and the friends must solve the mystery.",
+     "text": "SCENE 5. The village hall, Thursday evening. The stage now has a cardboard lighthouse with a lamp made from a torch. MIRA flips frantically through a folder.\nMIRA: (panicking) They're gone! The last three pages! The whole ending!\nJOSS: (rushing over) Gone? Pages don't just walk away.\nKIT: (worried, looking under chairs) Maybe the wind took them?\nMIRA: (pacing) We've got two days. Without an ending, the ship just stays lost forever. That's the saddest play in history.\nJOSS: (dramatically, falling to his knees) \"Lost forever!\" Actually, that's quite a good line.\nMIRA: (sharply) Joss, this is serious.\n(A cupboard door at the back creaks. Everyone freezes.)\nKIT: (whispering, pointing) Did you hear that?\n(JOSS tiptoes towards the cupboard in an exaggerated way, like a cartoon detective. He flings the door open. MRS ADEBAYO's small dog, PEBBLE, sits inside on a nest of torn paper.)\nMIRA: (gasping) Pebble! Our ending!\nJOSS: (crouching down, sternly) Pebble, did you eat the script?\n(PEBBLE wags his tail and burps. KIT laughs.)\nKIT: (picking up a scrap of paper) Look, this bit still says \"the light shines again.\"\nMIRA: (sitting down slowly, defeated) We can't remember every word.\nKIT: (thoughtfully) Maybe we don't need to. We know what happens. We could write it again, together.\nJOSS: (standing up) Kit's right. And this time, maybe Pebble could be in it.\nMIRA: (managing a small smile) A dog in a lighthouse?\nJOSS: (shrugging) Better than a sandwich pirate.\n(They sit in a circle with a fresh sheet of paper. PEBBLE curls up beside them.)\n(Lights fade.)\nEND OF SCENE",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is missing from the folder?",
+       "options": [
+        "The last three pages of the script",
+        "The costumes",
+        "The tickets",
+        "The torch"
+       ],
+       "answer": "The last three pages of the script",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the lighthouse lamp made from?",
+       "options": [
+        "A torch",
+        "A candle",
+        "A real lamp",
+        "A mirror"
+       ],
+       "answer": "A torch",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of Mrs Adebayo's dog?",
+       "options": [],
+       "answer": "Pebble",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where do they find the dog?",
+       "options": [
+        "Inside a cupboard",
+        "On the stage",
+        "Under Mira's chair",
+        "Outside the door"
+       ],
+       "answer": "Inside a cupboard",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Joss move towards the cupboard?",
+       "options": [
+        "Tiptoeing like a cartoon detective",
+        "Running and shouting",
+        "Crawling backwards",
+        "Dancing"
+       ],
+       "answer": "Tiptoeing like a cartoon detective",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what solution does Kit suggest?",
+       "options": [
+        "Rewriting the ending together",
+        "Cancelling the show",
+        "Buying a new script",
+        "Asking Pebble to act alone"
+       ],
+       "answer": "Rewriting the ending together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the stage direction (sitting down slowly, defeated) show about Mira?",
+       "options": [
+        "She feels like giving up",
+        "She is excited",
+        "She is very tired from running",
+        "She is angry with Kit"
+       ],
+       "answer": "She feels like giving up",
+       "accept": [],
+       "hint": "Think about the meaning of 'defeated'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Kit, rather than Mira, comes up with the solution in this scene?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how Kit has changed so far.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Dress Rehearsal",
+     "synopsis": "At the dress rehearsal everything seems to go wrong, but the friends learn to keep going.",
+     "text": "SCENE 6. The village hall, Friday evening. The cardboard lighthouse stands proudly. Blue sheets on the floor look like the sea. MIRA wears a big yellow raincoat. JOSS wears a hat covered in white feathers. KIT wears a captain's jacket that is far too big. PEBBLE wears a tiny sailor's collar.\nMRS ADEBAYO: (from the back of the hall) Dress rehearsal! We run the whole play without stopping, no matter what happens.\nMIRA: (as the keeper, urgently) \"The storm is coming! I must light the lamp!\"\n(She presses the torch. Nothing happens. She presses it again. Still nothing.)\nMIRA: (whispering to the others, out of character) The batteries are dead!\nMRS ADEBAYO: (calling) Keep going!\n(MIRA thinks quickly, then turns to the audience.)\nMIRA: (in character, desperately) \"The lamp has failed! Only courage can guide the ship now!\"\n(JOSS flaps on, but his feathered hat slips over his eyes. He walks straight into the lighthouse, which wobbles dangerously.)\nJOSS: (still in character, squawking) \"Squawk! Even seagulls get lost in a storm!\"\n(KIT steps onto the ship. His huge sleeves flop over his hands, so he cannot hold the wheel.)\nKIT: (calmly, flapping his sleeves like sails) \"Raise the sails! The wind will carry us!\"\n(PEBBLE runs across the stage, barking at the blue sheets. Everyone carries on.)\nMRS ADEBAYO: (at the end, clapping slowly) Well. That was... unexpected.\nMIRA: (flopping onto the floor) It was a disaster.\nMRS ADEBAYO: (warmly) No. That was brave. Every time something went wrong, you made it part of the story. That's what real actors do.\nJOSS: (lifting his hat) Can we keep the lighthouse wobble? It was funny.\nKIT: (determined) And we need new batteries.\n(Lights fade.)\nEND OF SCENE",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the blue sheets on the floor represent?",
+       "options": [
+        "The sea",
+        "The sky",
+        "A river",
+        "A carpet"
+       ],
+       "answer": "The sea",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mira wear?",
+       "options": [
+        "A big yellow raincoat",
+        "A feathered hat",
+        "A captain's jacket",
+        "A sailor's collar"
+       ],
+       "answer": "A big yellow raincoat",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the rule for a dress rehearsal?",
+       "options": [
+        "Run the whole play without stopping",
+        "Stop after every mistake",
+        "Only practise the ending",
+        "Read sitting down"
+       ],
+       "answer": "Run the whole play without stopping",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, why does the torch not work?",
+       "options": [],
+       "answer": "the batteries are dead",
+       "accept": [
+        "dead batteries",
+        "flat batteries",
+        "the batteries are flat",
+        "batteries"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does \"out of character\" mean when Mira whispers?",
+       "options": [
+        "She speaks as herself, not as the keeper",
+        "She forgets her name",
+        "She speaks to the dog",
+        "She sings her line"
+       ],
+       "answer": "She speaks as herself, not as the keeper",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Kit cope with his too-big sleeves?",
+       "options": [
+        "He flaps them like sails",
+        "He takes off the jacket",
+        "He stops the play",
+        "He cries"
+       ],
+       "answer": "He flaps them like sails",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Mrs Adebayo call their performance brave?",
+       "options": [
+        "They made every mistake part of the story",
+        "They remembered every word perfectly",
+        "The lights worked well",
+        "The audience was very large"
+       ],
+       "answer": "They made every mistake part of the story",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mira calls it a disaster but Mrs Adebayo disagrees?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what each of them is paying attention to.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Last Light",
+     "synopsis": "On opening night, Kit faces the audience and the friends' play ends with the light shining again.",
+     "text": "SCENE 7. The village hall, Saturday night. Every chair is full. Families whisper. Behind the curtain, MIRA, JOSS and KIT stand in costume. PEBBLE sits in a basket.\nKIT: (shaking, peeking through the curtain) There are so many people. They're all... looking.\nJOSS: (putting an arm round him) That's the point of an audience, remember? If they looked at the ceiling, it would be very strange.\n(KIT laughs a little. MIRA takes a deep breath.)\nMIRA: (seriously, to both) Whatever happens, we keep going. Together.\n(The curtain opens. The play begins. MIRA lights the torch, which now works. The audience gasps as it glows.)\nMIRA: (as the keeper, urgently) \"The storm is coming! I must light the lamp!\"\n(JOSS flaps on from stage left, the correct side, and taps his chalk L proudly. The audience giggles at his seagull jokes. Then the lamp flickers out, exactly as the new ending says. KIT steps downstage right onto the ship. He opens his mouth. Nothing comes out. Silence.)\nMIRA: (whispering from the lighthouse, encouraging) Beat the wind, Kit.\n(KIT closes his eyes. He breathes in.)\nKIT: (loudly and clearly, filling the hall) \"WHERE IS THE LIGHT?\"\n(PEBBLE, on cue, trots across the stage carrying a small lantern in his mouth. He drops it at the keeper's feet.)\nMIRA: (joyfully, holding the lantern high) \"Here! The light shines again!\"\nKIT: (steering with all his strength) \"I see it! We're coming home!\"\n(The ship reaches the shore. The audience cheers. The three actors bow. PEBBLE barks.)\nMRS ADEBAYO: (from the wings, wiping her eyes) Bravo!\nKIT: (beaming, turning to the others) They were looking at me. And I didn't mind.\nJOSS: (grinning) Same time next year? I've got a script about a sandwich.\nMIRA: (laughing) No!\n(Lights fade.)\nTHE END",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, when does this scene take place?",
+       "options": [
+        "Saturday night, the opening night",
+        "Monday after school",
+        "Sunday afternoon",
+        "Friday morning"
+       ],
+       "answer": "Saturday night, the opening night",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who does Joss comfort behind the curtain?",
+       "options": [
+        "Kit",
+        "Mira",
+        "Mrs Adebayo",
+        "Pebble"
+       ],
+       "answer": "Kit",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Joss tap to show he entered from the correct side?",
+       "options": [
+        "His chalk L",
+        "His feathered hat",
+        "The lighthouse",
+        "His script"
+       ],
+       "answer": "His chalk L",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens when Kit first opens his mouth on stage?",
+       "options": [
+        "Nothing comes out",
+        "He sings",
+        "He laughs",
+        "He falls over"
+       ],
+       "answer": "Nothing comes out",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does Pebble carry across the stage?",
+       "options": [],
+       "answer": "a lantern",
+       "accept": [
+        "lantern",
+        "a small lantern",
+        "small lantern"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the stage direction \"on cue\" mean for Pebble?",
+       "options": [
+        "At exactly the right moment",
+        "By accident",
+        "Very slowly",
+        "Before the play starts"
+       ],
+       "answer": "At exactly the right moment",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Joss repeat the line about the audience looking at the ceiling?",
+       "options": [
+        "To remind Kit of a joke and calm him",
+        "Because he forgot his lines",
+        "To tell Kit to look up",
+        "To make Mira cross"
+       ],
+       "answer": "To remind Kit of a joke and calm him",
+       "accept": [],
+       "hint": "Where did we first hear this line?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Kit says \"I didn't mind\" at the end? How has he changed since Chapter 1?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Compare his first and last lines in the story.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
