@@ -5015,5 +5015,912 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "Soneto para Duas Vozes",
+   "premise": "Helena, que escreve poemas curtos e musicais, e Caio, que só escreve sonetos, descobrem com a vizinha Dona Ivone, professora de piano aposentada, que a musicalidade leve e o rigor da forma fixa podem se encontrar num mesmo poema, a tempo do sarau da escola.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A chuva tem compasso",
+     "synopsis": "Numa tarde de chuva, Helena descobre com a vizinha, Dona Ivone, professora de piano aposentada, que um poema também tem ritmo e música.",
+     "text": "Helena tinha dezesseis anos e achava que poesia era coisa de livro velho. Até a tarde em que a chuva começou a bater no telhado de zinco da varanda, sempre no mesmo passo: tam, tam-tam, tam, tam-tam.\n— Está ouvindo? — perguntou Dona Ivone, a vizinha do andar de baixo, que tinha sido professora de piano durante quarenta anos. — A chuva está tocando em compasso.\nHelena riu, mas ficou escutando. Era verdade. Havia um desenho naquele barulho, uma repetição que voltava sempre, como o refrão de uma música.\nDona Ivone puxou uma cadeira e abriu um caderno de capa dura, cheio de poemas copiados à mão.\n— Muita gente pensa que o poema é feito só de ideias. Mas ele é feito de som também. Escute este verso: “a chuva chama a chuva no chão”. O que você percebe?\n— Tem muito “ch” — disse Helena. — Parece o barulho da água.\n— Isso tem nome: aliteração. É quando um som de consoante se repete para criar música. E quando é o som da vogal que volta, chamamos de assonância.\nHelena pegou o caderno e leu em voz alta outros versos. Alguns eram curtos, leves, quase cantados. Dona Ivone explicou que muitos poemas de língua portuguesa usam a redondilha maior, um verso de sete sílabas poéticas, o mesmo das cantigas de roda e de muitas canções populares.\n— Por isso alguns poemas grudam no ouvido — disse ela. — Eles já nasceram com melodia.\n— E como a gente conta as sílabas poéticas?\n— Conta-se até a última sílaba forte do verso, e as vogais que se encontram entre palavras podem se juntar numa só. É como contar os passos de uma dança, não as letras de uma palavra.\nHelena tentou. Errou, contou de novo, riu de si mesma. Dona Ivone batia o ritmo na mesa com os dedos, como se marcasse o tempo para um aluno ao piano.\nQuando a chuva diminuiu, Helena voltou para casa com uma ideia na cabeça. Não queria escrever um poema difícil. Queria escrever um poema que soasse como aquela tarde.\nSentou-se perto da janela e escreveu:\n“Chove leve na varanda,\nchove manso no quintal.\nQuem escuta a chuva anda\nnum compasso musical.”\nLeu baixinho e depois mais alto. As palavras subiam e desciam como notas. Havia rima entre “varanda” e “anda”, entre “quintal” e “musical”, e a repetição de “chove” no começo dos versos dava ao poema um balanço de canção.\nNo dia seguinte, levou a folha para Dona Ivone. A vizinha leu com os olhos fechados, mexendo a cabeça devagar.\n— Você ouviu a chuva de verdade — disse. — Isso é o começo de tudo.\nHelena guardou a folha no bolso e, pela primeira vez, ficou torcendo para chover de novo.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual era a profissão de Dona Ivone antes de se aposentar?",
+       "options": [
+        "Professora de piano",
+        "Bibliotecária",
+        "Cantora de rádio",
+        "Professora de matemática"
+       ],
+       "answer": "Professora de piano",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Helena percebe no barulho da chuva no telhado?",
+       "options": [
+        "Uma repetição, como um compasso",
+        "Um silêncio estranho",
+        "Uma voz chamando",
+        "Um barulho sem nenhum padrão"
+       ],
+       "answer": "Uma repetição, como um compasso",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do recurso em que um som de consoante se repete para criar música?",
+       "options": [],
+       "answer": "aliteração",
+       "accept": [
+        "aliteracao",
+        "a aliteração"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, Dona Ivone diz que a redondilha maior tem quantas sílabas poéticas?",
+       "options": [
+        "Sete",
+        "Cinco",
+        "Dez",
+        "Doze"
+       ],
+       "answer": "Sete",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como Dona Ivone explica a contagem das sílabas poéticas?",
+       "options": [
+        "Conta-se até a última sílaba forte do verso",
+        "Conta-se cada letra do verso",
+        "Conta-se só as palavras grandes",
+        "Conta-se apenas as vogais"
+       ],
+       "answer": "Conta-se até a última sílaba forte do verso",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que recurso dá ao poema de Helena “um balanço de canção”, além das rimas?",
+       "options": [
+        "A repetição de “chove” no começo dos versos",
+        "O uso de palavras estrangeiras",
+        "Versos muito longos e sem rima",
+        "A falta de pontuação"
+       ],
+       "answer": "A repetição de “chove” no começo dos versos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Dona Ivone quer dizer com “Você ouviu a chuva de verdade”?",
+       "options": [
+        "Que Helena prestou atenção ao som e o levou para o poema",
+        "Que Helena tem uma ótima audição",
+        "Que a chuva estava muito forte",
+        "Que Helena precisa estudar piano"
+       ],
+       "answer": "Que Helena prestou atenção ao som e o levou para o poema",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Helena fica “torcendo para chover de novo” no final do capítulo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Catorze degraus",
+     "synopsis": "Caio, colega de Helena, mostra um soneto que escreveu, e os dois descobrem juntos como essa forma fixa é construída.",
+     "text": "Na escola, o professor anunciou que haveria um sarau no fim do mês. Cada aluno poderia apresentar um poema próprio. Helena pensou na folha da chuva, ainda dobrada no bolso da mochila.\nNo intervalo, Caio sentou-se ao lado dela. Era o colega mais calado da turma, sempre com um caderno de capa preta debaixo do braço.\n— Ouvi dizer que você escreve — disse ele, meio sem jeito.\n— Escrevi um poema. Um só.\n— Eu escrevo sonetos — confessou Caio, abrindo o caderno. — Quer ver?\nHelena olhou a página. O poema parecia uma pequena construção: dois blocos de quatro versos, depois dois blocos de três.\n— Isso é o soneto — explicou Caio. — Catorze versos. Os dois primeiros blocos se chamam quartetos; os dois últimos, tercetos. No soneto clássico, os versos são decassílabos, com dez sílabas poéticas.\n— Parece uma escada — disse Helena. — Catorze degraus.\nCaio sorriu pela primeira vez.\n— É bem isso. E cada degrau leva a algum lugar. Nos quartetos, você apresenta uma ideia. Nos tercetos, ela vira, se aprofunda. E o último verso tem que fechar tudo com força. Chamam de chave de ouro.\nEle leu o primeiro quarteto em voz baixa:\n“Eu quis guardar o mar numa gaveta,\nfechar a luz da tarde num papel;\nmas tudo o que é azul escapa ao céu,\ne a mão que escreve sempre fica incompleta.”\nHelena prestou atenção às rimas. “Gaveta” rimava com “incompleta”, e “papel” com “céu”.\n— A rima do primeiro com o quarto, e do segundo com o terceiro — disse ela. — Como se uma abraçasse a outra.\n— Rima interpolada, ou rima abraçada — confirmou Caio. — Você aprende rápido.\n— E a chave de ouro?\nCaio virou a página e leu o último terceto:\n“Por isso escrevo, mesmo sem saber:\nquem tenta prender o que vai embora\naprende, ao menos, a deixar morrer.”\nHelena ficou em silêncio. O poema dele não balançava como o dela. Era mais firme, mais pensado, como uma ponte de pedra. Mas tinha música também, uma música lenta, de órgão de igreja.\n— O meu é diferente — disse ela, tirando a folha da mochila. — É curto. Quase uma cantiga.\nCaio leu e balançou a cabeça no ritmo, sem perceber.\n— O seu dá vontade de cantar. O meu dá vontade de pensar.\n— Então qual é melhor?\n— Acho que não é uma pergunta boa — respondeu ele. — É como perguntar se é melhor um violão ou um piano.\nNaquela tarde, Helena voltou para casa contando os versos do soneto de Caio nos dedos. Catorze degraus. Dois quartetos, dois tercetos. Uma chave no final.\nPela primeira vez, a ideia de uma forma fixa não pareceu uma prisão. Pareceu um desafio.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual evento o professor anuncia para o fim do mês?",
+       "options": [
+        "Um sarau",
+        "Uma prova de gramática",
+        "Uma excursão",
+        "Uma feira de ciências"
+       ],
+       "answer": "Um sarau",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quantos versos tem um soneto?",
+       "options": [],
+       "answer": "14",
+       "accept": [
+        "catorze",
+        "quatorze"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como se chamam os dois blocos de três versos do soneto?",
+       "options": [
+        "Tercetos",
+        "Quartetos",
+        "Dísticos",
+        "Refrões"
+       ],
+       "answer": "Tercetos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quantas sílabas poéticas tem o verso decassílabo?",
+       "options": [
+        "Dez",
+        "Sete",
+        "Doze",
+        "Catorze"
+       ],
+       "answer": "Dez",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como se chama o último verso de um soneto, que fecha a ideia com força?",
+       "options": [],
+       "answer": "chave de ouro",
+       "accept": [
+        "a chave de ouro"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, no quarteto de Caio, que palavra rima com “gaveta”?",
+       "options": [
+        "incompleta",
+        "papel",
+        "céu",
+        "tarde"
+       ],
+       "answer": "incompleta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Caio quer dizer ao comparar os poemas a um violão e um piano?",
+       "options": [
+        "Que as duas formas são diferentes e cada uma tem seu valor",
+        "Que o piano é sempre melhor",
+        "Que poesia não tem relação com música",
+        "Que os dois poemas são iguais"
+       ],
+       "answer": "Que as duas formas são diferentes e cada uma tem seu valor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que, no final, a forma fixa deixa de parecer uma prisão para Helena?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: O que passa",
+     "synopsis": "Ao ver as fotografias antigas de Dona Ivone, Helena escreve um poema delicado sobre o tempo que passa e as coisas que não voltam.",
+     "text": "No sábado, Dona Ivone pediu ajuda para arrumar um armário. Lá dentro havia caixas de partituras, um metrônomo de madeira e um álbum de fotografias com as pontas gastas.\nHelena folheou o álbum com cuidado. Numa foto, uma jovem de vestido claro sorria ao lado de um piano.\n— É a senhora?\n— Fui eu — corrigiu Dona Ivone, com um sorriso. — Aquela moça não existe mais. Sobrou só a música que ela tocava.\nHelena achou a frase triste, mas Dona Ivone não parecia triste. Falava do passado como quem fala de uma estação do ano: ela vem, fica um pouco e vai embora, e isso é o natural das coisas.\n— A senhora não sente falta?\n— Sinto. Mas aprendi uma coisa com a música. Uma nota só é bonita porque acaba. Se ela durasse para sempre, ninguém conseguiria ouvir a próxima.\nÀ noite, Helena pensou muito nisso. Lembrou de poemas que Dona Ivone tinha lido para ela, poemas sobre o vento, o mar, as nuvens, as coisas que passam sem pedir licença. Eram poemas de um lirismo suave, quase sussurrados, em que a tristeza não gritava: flutuava.\nEla percebeu que esses poemas não contavam uma história. Eles mostravam um estado da alma. O eu lírico, a voz que fala no poema, olhava para o mundo e via nele o reflexo do que sentia por dentro.\nHelena pegou o caderno e tentou fazer o mesmo. Não quis falar diretamente de Dona Ivone. Quis falar da sensação que a foto tinha deixado nela.\n“Passa o vento pela janela,\npassa a nuvem, passa o rio.\nTudo passa e deixa nela\num retrato e um fio.\nEu não prendo o que se vai:\ndeixo a porta sem trinco.\nQuem é leve, quando cai,\ncai cantando, cai sorrindo.”\nEla releu. A palavra “passa” se repetia como um eco, igual à chuva no telhado. Os versos eram curtos, de sete sílabas, e a rima ia e voltava como uma onda.\nMas havia algo novo: o poema não era só musical. Ele tinha uma ideia por baixo, uma aceitação calma de que as coisas acabam. Helena notou que não tinha usado a palavra “tristeza” nenhuma vez. A tristeza estava nas imagens: o vento, a nuvem, o rio, a porta sem trinco.\nNo domingo, mostrou o poema a Dona Ivone. A vizinha leu duas vezes e ficou olhando para a janela.\n— Você escreveu sobre mim sem escrever sobre mim — disse, por fim.\n— Isso é ruim?\n— Isso é poesia, minha filha. Quando a gente fala do vento, todo mundo sente o próprio vento.\nHelena voltou para casa com a impressão de ter aprendido algo que não estava em nenhum livro: a música de um poema podia carregar até as coisas mais difíceis de dizer.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Helena encontra no armário de Dona Ivone, além das partituras?",
+       "options": [
+        "Um metrônomo e um álbum de fotografias",
+        "Um violino e cartas",
+        "Um rádio e discos",
+        "Uma máquina de escrever"
+       ],
+       "answer": "Um metrônomo e um álbum de fotografias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo Dona Ivone, por que uma nota musical é bonita?",
+       "options": [
+        "Porque ela acaba",
+        "Porque é muito alta",
+        "Porque dura para sempre",
+        "Porque é difícil de tocar"
+       ],
+       "answer": "Porque ela acaba",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como se chama a voz que fala no poema?",
+       "options": [],
+       "answer": "eu lírico",
+       "accept": [
+        "o eu lírico",
+        "eu-lírico"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual palavra se repete como um eco no poema de Helena?",
+       "options": [
+        "passa",
+        "vento",
+        "porta",
+        "rio"
+       ],
+       "answer": "passa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como a tristeza aparece no poema de Helena?",
+       "options": [
+        "Nas imagens, como o vento, a nuvem e o rio",
+        "Na palavra “tristeza”, repetida várias vezes",
+        "Em uma lista de lamentos",
+        "Em uma carta no final"
+       ],
+       "answer": "Nas imagens, como o vento, a nuvem e o rio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que atitude diante do tempo o poema de Helena expressa?",
+       "options": [
+        "Uma aceitação calma de que as coisas acabam",
+        "Raiva contra o passado",
+        "Medo do futuro",
+        "Vontade de esquecer tudo"
+       ],
+       "answer": "Uma aceitação calma de que as coisas acabam",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Dona Ivone quer dizer com “Quando a gente fala do vento, todo mundo sente o próprio vento”?",
+       "options": [
+        "Que uma imagem poética permite que cada leitor reconheça os próprios sentimentos",
+        "Que o vento é o melhor tema para poemas",
+        "Que todos sentem frio do mesmo jeito",
+        "Que o poema fala só sobre o clima"
+       ],
+       "answer": "Que uma imagem poética permite que cada leitor reconheça os próprios sentimentos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Helena preferiu não falar diretamente de Dona Ivone no poema?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A chama e o fim",
+     "synopsis": "Caio escreve um soneto de amor cheio de contradições, e Helena descobre como as antíteses podem dar força a um poema.",
+     "text": "Caio apareceu na biblioteca com olheiras e o caderno preto apertado contra o peito.\n— Não dormi — disse. — Passei a noite tentando terminar um soneto.\n— Sobre o quê?\nEle hesitou, olhou para os lados e baixou a voz.\n— Sobre gostar de alguém. Mas não quero que fique meloso. Quero que fique verdadeiro.\nHelena puxou a cadeira para perto. Caio abriu o caderno e leu o primeiro quarteto:\n“É fogo que se acende e não se apaga,\né frio que se instala no calor;\né paz que tem o som de um tambor,\né ferida que cura e que não sara.”\n— Nossa — disse Helena. — Tudo aqui é o contrário de alguma coisa.\n— É de propósito. Isso se chama antítese: juntar ideias opostas, como fogo e frio, paz e tambor. O amor é assim, não é? Uma coisa e o seu contrário ao mesmo tempo.\nHelena pensou um pouco.\n— Mas a rima do último verso não fecha. “Apaga” e “sara” não rimam perfeitamente.\nCaio suspirou.\n— Eu sei. É aí que eu travei. Ou mudo a palavra e perco o sentido, ou mantenho o sentido e perco a rima.\nHelena lembrou de Dona Ivone batendo o ritmo na mesa. Fechou os olhos e repetiu os versos em voz baixa, procurando a música. Depois de um tempo, disse:\n— E se, em vez de “ferida que cura e que não sara”, for “é ferida que dói e não se estraga”? Assim rima com “apaga”.\nCaio leu de novo, testando o som.\n— Fica estranho. Ferida que não se estraga?\nOs dois riram. Tentaram outras palavras: “traga”, “vaga”, “afaga”. Até que Caio escreveu: “é ferida que dói, mas que afaga”.\n— Agora tem rima e tem sentido — disse Helena. — Dói e afaga ao mesmo tempo. Mais uma antítese.\nCaio leu os tercetos, que já estavam prontos. Falavam do medo de que aquele sentimento acabasse, e terminavam com um verso que ele tinha reescrito dez vezes:\n“e se acabar, que acabe como chama:\ninteira enquanto arde e enquanto chama.”\nHelena reparou no jogo de palavras. A primeira “chama” era o fogo; a segunda era o verbo chamar.\n— Você usou a mesma palavra com dois sentidos.\n— É a minha chave de ouro — disse Caio, um pouco orgulhoso. — O amor que é fogo e também é chamado.\nEla ficou pensando como o soneto de Caio era diferente dos seus poemas. Os dela flutuavam, deixavam as coisas passarem. O dele lutava: pegava um sentimento confuso e o organizava em catorze versos, com rimas e argumentos, como quem arruma um quarto bagunçado.\n— Você vai ler isso no sarau? — perguntou ela.\nCaio ficou vermelho.\n— Só se você ler o seu primeiro.\n— Combinado.\nOs dois apertaram as mãos, sérios, como quem fecha um negócio importante. Do lado de fora, começava a chover.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, sobre o que é o soneto que Caio tenta terminar?",
+       "options": [
+        "Sobre gostar de alguém",
+        "Sobre uma viagem",
+        "Sobre a escola",
+        "Sobre um animal de estimação"
+       ],
+       "answer": "Sobre gostar de alguém",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como se chama o recurso de juntar ideias opostas, como fogo e frio?",
+       "options": [],
+       "answer": "antítese",
+       "accept": [
+        "antitese",
+        "a antítese"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual problema Helena aponta no primeiro quarteto de Caio?",
+       "options": [
+        "Duas palavras que deviam rimar não rimam perfeitamente",
+        "O poema está curto demais",
+        "O poema não tem título",
+        "Os versos estão fora de ordem"
+       ],
+       "answer": "Duas palavras que deviam rimar não rimam perfeitamente",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual verso Caio escolhe para resolver a rima com “apaga”?",
+       "options": [
+        "“é ferida que dói, mas que afaga”",
+        "“é ferida que dói e não se estraga”",
+        "“é ferida que cura e que não sara”",
+        "“é ferida que vaga pela estrada”"
+       ],
+       "answer": "“é ferida que dói, mas que afaga”",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quais são os dois sentidos da palavra “chama” na chave de ouro de Caio?",
+       "options": [
+        "Fogo e o verbo chamar",
+        "Luz e escuridão",
+        "Calor e frio",
+        "Nome e apelido"
+       ],
+       "answer": "Fogo e o verbo chamar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como Helena compara o soneto de Caio aos poemas dela?",
+       "options": [
+        "O dele organiza um sentimento confuso; os dela deixam as coisas passarem",
+        "O dele é mais curto e leve",
+        "Os dela são mais rígidos",
+        "Os dois são iguais"
+       ],
+       "answer": "O dele organiza um sentimento confuso; os dela deixam as coisas passarem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que Caio está nervoso com a ideia de ler o soneto no sarau?",
+       "options": [
+        "Ele fica vermelho e pede que Helena leia primeiro",
+        "Ele rasga o poema",
+        "Ele desiste do sarau",
+        "Ele pede ao professor para ler por ele"
+       ],
+       "answer": "Ele fica vermelho e pede que Helena leia primeiro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Caio queria que o soneto ficasse “verdadeiro” e não “meloso”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Duas gavetas",
+     "synopsis": "Helena e Caio discutem qual forma de poesia é melhor, e Dona Ivone os ajuda a comparar a musicalidade leve com o rigor do soneto.",
+     "text": "Faltava uma semana para o sarau quando Helena e Caio tiveram a primeira briga.\nComeçou com uma frase à toa. Caio disse que os poemas de Helena eram “bonitinhos”. Ela ouviu “bobinhos”.\n— Bonitinhos? — repetiu, de braços cruzados. — Só porque não têm catorze versos?\n— Não foi isso que eu quis dizer. É que soneto dá mais trabalho. Tem regra, tem métrica, tem argumento.\n— E música, não dá trabalho? Fazer um verso curto soar como chuva é fácil?\nOs dois ficaram em silêncio, cada um olhando para um lado. No fim, Helena teve uma ideia.\n— Vamos perguntar para quem entende de música.\nNaquela tarde, os dois bateram na porta de Dona Ivone. A vizinha ouviu a discussão inteira, servindo chá em xícaras de flores, e depois foi até o piano.\n— Vou tocar duas coisas — disse. — Prestem atenção.\nPrimeiro tocou uma melodia simples, como uma cantiga de ninar. As notas iam e voltavam, repetidas, fáceis de acompanhar. Helena reconheceu o balanço dos seus próprios versos.\nDepois tocou uma peça mais longa, com uma introdução, uma parte que crescia, uma virada e um final forte, que parecia fechar uma porta. Caio reconheceu ali o caminho do seu soneto.\n— Qual das duas é melhor? — perguntou Dona Ivone.\nNenhum dos dois respondeu.\n— Pois é. A primeira é feita para ser lembrada, para ficar no ouvido. A segunda é feita para ser percorrida, como uma estrada. Uma não é menor que a outra. Elas só pedem coisas diferentes de quem escuta.\nEla se sentou entre os dois.\n— Os poemas de Helena têm musicalidade: repetição, versos curtos, rimas que voltam. A emoção neles é leve, como algo que passa. É um lirismo que sussurra. Já o soneto de Caio tem uma arquitetura: apresenta, desenvolve, vira e conclui. A emoção é intensa, e a forma serve para segurá-la.\n— Mas o soneto também tem música — disse Helena, devagar.\n— Claro. O decassílabo tem um ritmo próprio, com sílabas fortes em lugares certos. E a sua cantiga também tem pensamento. Não é só som.\nCaio olhou para Helena.\n— Desculpa pelo “bonitinhos”.\n— Desculpa por ter ouvido “bobinhos”.\nDona Ivone riu alto, como Helena nunca tinha visto.\n— Sabem o que eu faria no lugar de vocês? Em vez de brigar sobre qual gaveta é melhor, abriria as duas ao mesmo tempo.\n— Como assim? — perguntou Caio.\n— Escrevam juntos. Um soneto que cante. Com a forma de um e a música do outro.\nOs dois se entreolharam. Parecia impossível. E, justamente por isso, irresistível.\nNaquela noite, Helena escreveu no alto de uma página em branco: “Soneto para duas vozes”. Depois mandou uma mensagem para Caio: “Você faz a estrutura. Eu cuido da melodia.”\nA resposta veio em segundos: “Fechado. Amanhã, na biblioteca.”",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual palavra de Caio provoca a briga com Helena?",
+       "options": [
+        "Bonitinhos",
+        "Difíceis",
+        "Compridos",
+        "Antigos"
+       ],
+       "answer": "Bonitinhos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Helena e Caio vão até Dona Ivone?",
+       "options": [
+        "Para perguntar a alguém que entende de música",
+        "Para pedir um livro emprestado",
+        "Para ensaiar piano",
+        "Para tomar café da manhã"
+       ],
+       "answer": "Para perguntar a alguém que entende de música",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual peça tocada por Dona Ivone lembra o soneto de Caio?",
+       "options": [
+        "Uma peça longa, com introdução, virada e final forte",
+        "Uma cantiga de ninar repetida",
+        "Um único acorde longo",
+        "Uma música sem final"
+       ],
+       "answer": "Uma peça longa, com introdução, virada e final forte",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo Dona Ivone, a melodia simples é feita para quê?",
+       "options": [
+        "Para ser lembrada e ficar no ouvido",
+        "Para ser percorrida como uma estrada",
+        "Para assustar quem ouve",
+        "Para ser tocada só uma vez"
+       ],
+       "answer": "Para ser lembrada e ficar no ouvido",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que palavra Dona Ivone usa para descrever o modo como o soneto apresenta, desenvolve, vira e conclui?",
+       "options": [
+        "Arquitetura",
+        "Bagunça",
+        "Improviso",
+        "Silêncio"
+       ],
+       "answer": "Arquitetura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a conclusão de Dona Ivone sobre as duas formas?",
+       "options": [
+        "Uma não é menor que a outra; elas pedem coisas diferentes",
+        "O soneto é sempre superior",
+        "A cantiga é mais difícil",
+        "Nenhuma das duas tem música"
+       ],
+       "answer": "Uma não é menor que a outra; elas pedem coisas diferentes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que significa “abrir as duas gavetas ao mesmo tempo”?",
+       "options": [
+        "Juntar a forma do soneto com a musicalidade da cantiga",
+        "Guardar os poemas em lugares diferentes",
+        "Escolher só um tipo de poema",
+        "Desistir do sarau"
+       ],
+       "answer": "Juntar a forma do soneto com a musicalidade da cantiga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que a ideia de escrever juntos parecia “impossível” e, por isso, “irresistível”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O soneto que cantava",
+     "synopsis": "Na biblioteca, Helena e Caio escrevem juntos um soneto que une rigor e musicalidade, enfrentando dúvidas sobre rima, métrica e repetição.",
+     "text": "A biblioteca estava quase vazia. Helena e Caio ocuparam a mesa do canto, perto da janela, com dois cadernos abertos e um lápis cada um.\n— Primeiro o tema — disse Caio. — Todo soneto precisa de um centro.\nHelena pensou na chuva, nas fotos de Dona Ivone, na nota que só é bonita porque acaba.\n— Que tal o tempo? Aquilo que passa e, mesmo assim, deixa música.\nCaio gostou. Desenhou na margem um esquema: dois quartetos para apresentar a ideia, dois tercetos para virar e concluir. Ao lado, escreveu as rimas: ABBA, ABBA, CDC, DCD.\n— Essa é a estrutura. Agora é com você: onde entra a música?\nHelena explicou que queria repetir uma palavra no começo de alguns versos, como em seus poemas curtos. Isso tem nome, lembrou Caio: anáfora. Ela também queria sons que imitassem o que o poema dizia, como a aliteração da chuva.\nEscreveram, apagaram, discutiram. Uma rima ficava boa, mas o verso perdia o ritmo. Um verso cantava bonito, mas tinha onze sílabas em vez de dez. Caio contava nos dedos; Helena lia em voz alta para ver se a frase respirava.\nDepois de duas horas, o primeiro quarteto estava pronto:\n“O tempo passa, e passa sem ruído,\no tempo leva a tarde e traz o vento;\no tempo é como um rio em movimento\nque deixa, ao ir embora, o seu sentido.”\n— A anáfora está aí — disse Helena, apontando o “o tempo” no começo dos versos.\n— E a rima abraçada também — completou Caio. — “Ruído” com “sentido”, “vento” com “movimento”.\nO segundo quarteto foi mais difícil. Os tercetos, então, quase os fizeram desistir. Caio queria uma virada forte; Helena queria que o poema não perdesse a leveza. A solução veio quando ela lembrou das palavras de Dona Ivone sobre a nota musical.\n— A virada pode ser esta: o tempo não é ladrão. Ele é músico. Tudo o que ele leva vira canção.\nCaio parou de escrever e olhou para ela.\n— Essa é a chave de ouro.\nOs dois trabalharam no último terceto até o bibliotecário apagar metade das luzes, avisando que a biblioteca ia fechar. Então leram o verso final juntos, baixinho:\n“o que passa não morre: vira canção.”\nHelena sentiu um arrepio. Caio fingiu que era só o ar-condicionado.\nNo caminho para casa, ela percebeu que o soneto tinha as duas coisas que eles amavam. A arquitetura firme que Caio defendia, com catorze versos e uma conclusão. E a música que ela tinha descoberto na chuva: repetição, aliteração, versos que pedem para ser ditos em voz alta.\nNão era só um poema dele, nem só dela. Era uma terceira coisa, que nenhum dos dois teria escrito sozinho.\nFaltavam três dias para o sarau.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual tema Helena e Caio escolhem para o soneto?",
+       "options": [
+        "O tempo",
+        "A escola",
+        "O mar",
+        "A amizade"
+       ],
+       "answer": "O tempo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual esquema de rimas Caio escreve na margem?",
+       "options": [
+        "ABBA, ABBA, CDC, DCD",
+        "AABB, AABB, CCD, EED",
+        "ABAB, CDCD, EFEF, GG",
+        "AAAA, BBBB, CCC, DDD"
+       ],
+       "answer": "ABBA, ABBA, CDC, DCD",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como se chama a repetição de uma palavra no começo de vários versos?",
+       "options": [],
+       "answer": "anáfora",
+       "accept": [
+        "anafora",
+        "a anáfora"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que expressão se repete no começo dos versos do primeiro quarteto?",
+       "options": [
+        "o tempo",
+        "o vento",
+        "a tarde",
+        "o rio"
+       ],
+       "answer": "o tempo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual problema aparece quando um verso “cantava bonito”?",
+       "options": [
+        "Tinha onze sílabas em vez de dez",
+        "Não tinha nenhuma palavra",
+        "Estava escrito em outra língua",
+        "Não cabia na folha"
+       ],
+       "answer": "Tinha onze sílabas em vez de dez",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a virada que Helena propõe para os tercetos?",
+       "options": [
+        "O tempo não é ladrão, é músico",
+        "O tempo é um inimigo cruel",
+        "O tempo não existe",
+        "O tempo é igual para todos"
+       ],
+       "answer": "O tempo não é ladrão, é músico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Helena quer dizer ao pensar que o soneto é “uma terceira coisa”?",
+       "options": [
+        "Que a parceria criou algo novo, diferente do que cada um faria sozinho",
+        "Que o soneto tem três autores",
+        "Que o poema tem três partes",
+        "Que eles vão escrever um terceiro poema"
+       ],
+       "answer": "Que a parceria criou algo novo, diferente do que cada um faria sozinho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Caio “fingiu que era só o ar-condicionado” quando Helena sentiu um arrepio?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: Sarau",
+     "synopsis": "No sarau da escola, Helena e Caio leem seus poemas e o soneto escrito a quatro mãos, com uma surpresa de Dona Ivone no final.",
+     "text": "O auditório da escola nunca tinha parecido tão grande. Havia cadeiras enfileiradas, um microfone um pouco torto e, no canto do palco, um piano velho que quase ninguém usava.\nHelena procurou Dona Ivone na plateia e a encontrou na terceira fila, de vestido claro, com as mãos no colo. A vizinha acenou de leve.\nOs alunos se revezaram. Houve poemas engraçados, poemas sobre futebol, um rap sobre o bairro que fez a plateia bater palmas no ritmo. Então o professor chamou o nome de Helena.\nEla subiu com as pernas tremendo. Lembrou do combinado com Caio: ela leria primeiro. Respirou fundo e leu o poema da chuva. Na segunda estrofe, a voz parou de tremer. As palavras encontraram o próprio compasso, e Helena percebeu que algumas pessoas balançavam a cabeça sem perceber, como Caio tinha feito no primeiro dia.\nDepois leu o poema do vento e da porta sem trinco. Desta vez o auditório ficou em silêncio absoluto. Na terceira fila, Dona Ivone fechou os olhos.\nQuando Helena desceu, Caio já estava de pé, pálido, com o caderno preto nas mãos.\n— Agora é você — sussurrou ela. — Combinado é combinado.\nCaio leu o soneto da chama. Começou rápido demais, atropelando as sílabas, mas no segundo quarteto diminuiu o ritmo. As antíteses ganharam peso. Quando chegou à chave de ouro, com as duas chamas, alguém na plateia soltou um “uau” baixinho, e Caio quase sorriu.\nPor fim, o professor anunciou algo que não estava no programa:\n— Agora, um soneto escrito a quatro mãos.\nHelena e Caio subiram juntos. Decidiram ler alternando os versos: ele lia um, ela lia o seguinte. As duas vozes, uma grave e outra mais leve, iam e voltavam como as rimas abraçadas do poema. O tempo passa, e passa sem ruído…\nFoi então que se ouviu um som vindo do canto do palco. Dona Ivone tinha se levantado e sentado ao piano velho. Ninguém tinha combinado nada. Ela começou a tocar uma melodia suave, bem baixinho, acompanhando o ritmo dos versos.\nHelena quase perdeu a fala. Caio segurou o caderno com mais força. E os dois continuaram, agora com música de verdade por baixo das palavras.\nNo último verso, falaram juntos:\n— O que passa não morre: vira canção.\nA última nota do piano ficou no ar por um instante e depois sumiu. Helena lembrou do que Dona Ivone tinha dito: uma nota só é bonita porque acaba.\nOs aplausos vieram como uma chuva forte no telhado de zinco.\nNa saída, Dona Ivone abraçou os dois.\n— Vocês descobriram o que muita gente leva a vida inteira para entender — disse. — Forma e música não são inimigas. São parceiras de dança.\nCaio olhou para Helena e, pela primeira vez, falou sem nenhuma timidez:\n— Vamos escrever outro?\nHelena sorriu. Lá fora, como se tivesse ouvido, começou a chover.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde Dona Ivone está sentada no começo do sarau?",
+       "options": [
+        "Na terceira fila",
+        "No palco",
+        "Na última fila",
+        "Ao lado do professor"
+       ],
+       "answer": "Na terceira fila",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem lê primeiro, Helena ou Caio, e por quê?",
+       "options": [
+        "Helena, por causa do combinado entre os dois",
+        "Caio, porque era mais velho",
+        "Helena, porque o professor sorteou",
+        "Caio, porque estava menos nervoso"
+       ],
+       "answer": "Helena, por causa do combinado entre os dois",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como Caio começa a leitura do soneto da chama?",
+       "options": [
+        "Rápido demais, atropelando as sílabas",
+        "Cantando o poema",
+        "Em silêncio",
+        "Com o piano ao fundo"
+       ],
+       "answer": "Rápido demais, atropelando as sílabas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como Helena e Caio leem o soneto escrito a quatro mãos?",
+       "options": [
+        "Alternando os versos",
+        "Cada um lê o poema inteiro",
+        "Só Caio lê",
+        "Eles cantam com a plateia"
+       ],
+       "answer": "Alternando os versos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a surpresa durante a leitura do soneto a quatro mãos?",
+       "options": [
+        "Dona Ivone toca piano acompanhando os versos",
+        "A luz do auditório se apaga",
+        "O professor interrompe a leitura",
+        "Começa a chover dentro do auditório"
+       ],
+       "answer": "Dona Ivone toca piano acompanhando os versos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, a comparação dos aplausos com “uma chuva forte no telhado de zinco” retoma qual momento da história?",
+       "options": [
+        "A tarde de chuva em que Helena descobriu a música dos poemas",
+        "A briga entre Helena e Caio",
+        "A noite na biblioteca",
+        "As fotos do álbum"
+       ],
+       "answer": "A tarde de chuva em que Helena descobriu a música dos poemas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Dona Ivone quer dizer ao chamar forma e música de “parceiras de dança”?",
+       "options": [
+        "Que a estrutura e o som de um poema funcionam melhor juntos",
+        "Que poemas devem ser dançados",
+        "Que o soneto é melhor que a cantiga",
+        "Que a música atrapalha a poesia"
+       ],
+       "answer": "Que a estrutura e o som de um poema funcionam melhor juntos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Dona Ivone decidiu tocar piano sem ter combinado nada?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
