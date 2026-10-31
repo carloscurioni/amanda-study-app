@@ -3124,6 +3124,855 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "Zawadi's Village",
+   "premise": "Zawadi, a little girl who lives in a village in Kenya, has small adventures with her friends Baraka and Neema and Baraka's goat Kiki — and one day her class gets a letter from children in Brazil.",
+   "chapters": [
+    {
+     "title": "Chapter 1: Jambo, Zawadi!",
+     "synopsis": "Zawadi lives in a village in Kenya and greets her friends on a hot, sunny morning.",
+     "text": "Zawadi lives in a small village in Kenya. Her house has a round roof made of dry grass.\nEvery morning the sun is hot and bright. The sky is big and blue.\nZawadi puts on her yellow dress. She runs outside.\n\"Jambo!\" she says to her friend Baraka. Jambo means hello.\n\"Jambo, Zawadi!\" says Baraka. He is feeding his goat. The goat is called Kiki.\nKiki says, \"Meh-eh-eh!\"\nZawadi laughs. \"Jambo, Kiki!\"\nFar away, Zawadi can see a tall tree with a flat top. It is an acacia tree. A giraffe is eating the leaves.\n\"Look, Baraka! A giraffe!\" says Zawadi.\nThe giraffe has a long neck and brown spots. It eats and eats.\n\"It is having breakfast, like us!\" says Baraka.\nThen Mama calls, \"Zawadi! Come and eat!\"\nZawadi waves goodbye and runs home for her breakfast.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Zawadi live?",
+       "options": [
+        "In a village in Kenya",
+        "In a big city",
+        "On a boat"
+       ],
+       "answer": "In a village in Kenya",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the roof of Zawadi's house made of?",
+       "options": [
+        "Dry grass",
+        "Red bricks",
+        "Glass"
+       ],
+       "answer": "Dry grass",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does \"Jambo\" mean?",
+       "options": [],
+       "answer": "hello",
+       "accept": [
+        "Hello"
+       ],
+       "hint": "It is what you say when you meet someone.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the name of Baraka's goat?",
+       "options": [
+        "Kiki",
+        "Zawadi",
+        "Mama"
+       ],
+       "answer": "Kiki",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what animal is eating leaves from the tree?",
+       "options": [
+        "A giraffe",
+        "An elephant",
+        "A zebra"
+       ],
+       "answer": "A giraffe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the weather like?",
+       "options": [
+        "Hot and sunny",
+        "Cold and snowy",
+        "Rainy and windy"
+       ],
+       "answer": "Hot and sunny",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Baraka say the giraffe is \"having breakfast, like us\"?",
+       "options": [
+        "Because it is morning and the giraffe is eating",
+        "Because the giraffe is in the kitchen",
+        "Because the giraffe is drinking milk"
+       ],
+       "answer": "Because it is morning and the giraffe is eating",
+       "accept": [],
+       "hint": "Think about what time of day it is.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Zawadi is so happy to see the giraffe?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how often you see a giraffe near your home.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: Market Day",
+     "synopsis": "Zawadi goes to the busy market with Mama and chooses fruit to take home.",
+     "text": "Today is market day. Zawadi walks with Mama along the dusty red road.\nMama carries a big basket. Zawadi carries a small one.\nThe market is busy and noisy. People sing and talk and laugh.\nThere are colourful cloths, pots and lots of fruit.\n\"What shall we buy?\" asks Mama.\nZawadi looks at the fruit. There are green avocados, yellow bananas and orange mangoes.\n\"Mangoes, please!\" says Zawadi. \"They are sweet and juicy.\"\nThe lady at the stall smiles. She puts three mangoes in Zawadi's basket.\n\"Asante!\" says Zawadi. Asante means thank you.\nMama buys some maize too. Maize is like big corn.\n\"We can make ugali tonight,\" says Mama. Ugali is a soft, white food made from maize flour.\nOn the way home, Zawadi holds her basket very carefully.\nShe does not want to drop her mangoes!",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour is the road?",
+       "options": [
+        "Red",
+        "Green",
+        "Black"
+       ],
+       "answer": "Red",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who carries the big basket?",
+       "options": [
+        "Mama",
+        "Zawadi",
+        "Baraka"
+       ],
+       "answer": "Mama",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which fruit does Zawadi choose?",
+       "options": [
+        "Mangoes",
+        "Apples",
+        "Grapes"
+       ],
+       "answer": "Mangoes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many mangoes does the lady put in the basket?",
+       "options": [],
+       "answer": "3",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does \"Asante\" mean?",
+       "options": [],
+       "answer": "thank you",
+       "accept": [
+        "Thank you",
+        "thanks"
+       ],
+       "hint": "Zawadi says it after the lady gives her something.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is ugali made from?",
+       "options": [
+        "Maize flour",
+        "Bananas",
+        "Rice"
+       ],
+       "answer": "Maize flour",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Zawadi hold her basket very carefully?",
+       "options": [
+        "She does not want to drop her mangoes",
+        "The basket is very hot",
+        "She is very tired"
+       ],
+       "answer": "She does not want to drop her mangoes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the market is so noisy?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how many people are there.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Water from the River",
+     "synopsis": "Zawadi and Baraka help bring water from the river and learn that water is precious.",
+     "text": "In Zawadi's village, there are no taps in the houses.\nEvery day, someone must bring water from the river.\nToday, Zawadi and Baraka go with Grandpa. Each child carries a small yellow can.\nThe path goes past tall grass and thorny bushes.\nAt the river, the water is cool. Zawadi splashes her face. \"Ahh, that is nice!\"\nOn the other side of the river, a family of zebras is drinking. They have black and white stripes.\n\"Shh,\" says Grandpa. \"Let them drink in peace.\"\nThe children fill their cans. The cans are heavy now!\nThey walk home slowly. Zawadi's arms feel tired.\n\"Water is precious,\" says Grandpa. \"We must not waste it.\"\nAt home, Mama uses the water to cook and wash.\nZawadi drinks a big cup. \"Thank you, river,\" she whispers.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where do they get water from?",
+       "options": [
+        "The river",
+        "A tap",
+        "A shop"
+       ],
+       "answer": "The river",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who goes with Zawadi and Baraka?",
+       "options": [
+        "Grandpa",
+        "Mama",
+        "The teacher"
+       ],
+       "answer": "Grandpa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour are the children's cans?",
+       "options": [
+        "Yellow",
+        "Blue",
+        "Red"
+       ],
+       "answer": "Yellow",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which animals are drinking at the river?",
+       "options": [
+        "Zebras",
+        "Lions",
+        "Monkeys"
+       ],
+       "answer": "Zebras",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how do the cans feel when they are full?",
+       "options": [
+        "Heavy",
+        "Light",
+        "Hot"
+       ],
+       "answer": "Heavy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, Grandpa says water is ___.",
+       "options": [],
+       "answer": "precious",
+       "accept": [],
+       "hint": "It is a word that means very special and important.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Grandpa say \"Shh\"?",
+       "options": [
+        "So the zebras can drink without being scared",
+        "Because the baby is sleeping",
+        "Because it is night"
+       ],
+       "answer": "So the zebras can drink without being scared",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "How is getting water in Zawadi's village different from getting water in your home?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about where water comes from in your house.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Big Baobab",
+     "synopsis": "The children have a picnic under a huge old baobab tree and play a game.",
+     "text": "Near the village there is a very big tree. It is a baobab tree.\nIts trunk is fat and wide. Its branches look like roots pointing at the sky!\n\"This tree is very, very old,\" says Baraka.\nZawadi, Baraka and their friend Neema have a picnic in its shade.\nThey eat bananas and drink water.\n\"Let's see how big the trunk is,\" says Neema.\nThe three children hold hands. They stretch their arms around the trunk.\nBut they cannot reach all the way round!\n\"We need more friends!\" laughs Zawadi.\nThey call two more children. Now five children hold hands.\nStill they cannot reach!\n\"This tree is a giant,\" says Neema.\nA little bird sings at the top of the tree. It has a nest up there.\n\"The baobab is a home for birds,\" says Zawadi. \"And a shady house for us!\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kind of tree is it?",
+       "options": [
+        "A baobab tree",
+        "An apple tree",
+        "A palm tree"
+       ],
+       "answer": "A baobab tree",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the branches look like?",
+       "options": [
+        "Roots pointing at the sky",
+        "Long green snakes",
+        "Big hands"
+       ],
+       "answer": "Roots pointing at the sky",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the new friend?",
+       "options": [],
+       "answer": "Neema",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the children eat at the picnic?",
+       "options": [
+        "Bananas",
+        "Mangoes",
+        "Bread"
+       ],
+       "answer": "Bananas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many children hold hands at the end?",
+       "options": [],
+       "answer": "5",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what lives at the top of the tree?",
+       "options": [
+        "A little bird",
+        "A giraffe",
+        "A goat"
+       ],
+       "answer": "A little bird",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Neema call the tree \"a giant\"?",
+       "options": [
+        "Because it is so big",
+        "Because it can talk",
+        "Because it is scary"
+       ],
+       "answer": "Because it is so big",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the children like to have their picnic under the baobab?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Remember that the sun is very hot.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Where is Kiki?",
+     "synopsis": "Baraka's goat Kiki goes missing, and Zawadi helps to find her.",
+     "text": "One morning, Baraka runs to Zawadi's house. He looks worried.\n\"Kiki is gone!\" he says. \"I can't find my goat!\"\n\"Don't worry. We will find her,\" says Zawadi.\nThe two friends look behind the house. No Kiki.\nThey look in the maize field. No Kiki.\nThey look near the big baobab. No Kiki.\nThen Zawadi hears something. \"Meh-eh-eh!\"\n\"Listen!\" she says. \"That is Kiki!\"\nThe sound comes from Mama's garden.\nThere is Kiki, eating Mama's green vegetables!\n\"Oh no, Kiki!\" says Baraka.\nMama comes out. She puts her hands on her hips. Then she starts to laugh.\n\"That goat is very hungry,\" she says.\nBaraka says sorry to Mama. He takes Kiki home and gives her lots of grass.\n\"Now stay at home, Kiki,\" he says.\n\"Meh-eh-eh!\" says Kiki.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Baraka feel at the start?",
+       "options": [
+        "Worried",
+        "Sleepy",
+        "Angry"
+       ],
+       "answer": "Worried",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is missing?",
+       "options": [
+        "Baraka's goat",
+        "Zawadi's basket",
+        "Mama's mango"
+       ],
+       "answer": "Baraka's goat",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where do they look first?",
+       "options": [
+        "Behind the house",
+        "In the river",
+        "At the market"
+       ],
+       "answer": "Behind the house",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Zawadi know where Kiki is?",
+       "options": [
+        "She hears Kiki",
+        "She sees Kiki's footprints",
+        "Mama tells her"
+       ],
+       "answer": "She hears Kiki",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where do they find Kiki?",
+       "options": [
+        "In Mama's garden",
+        "Under the bed",
+        "On the roof"
+       ],
+       "answer": "In Mama's garden",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Baraka give Kiki at home?",
+       "options": [
+        "Lots of grass",
+        "A mango",
+        "Some ugali"
+       ],
+       "answer": "Lots of grass",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Baraka say sorry to Mama?",
+       "options": [
+        "Because Kiki ate Mama's vegetables",
+        "Because he broke a pot",
+        "Because he was late"
+       ],
+       "answer": "Because Kiki ate Mama's vegetables",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mama laughs instead of getting cross?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how Mama feels about Kiki.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Rain Comes",
+     "synopsis": "After many dry days, the rain finally comes and everyone celebrates.",
+     "text": "For many weeks, there is no rain. The grass is dry and brown. The river is small.\n\"We need rain,\" says Grandpa, looking at the sky.\nOne afternoon, the wind starts to blow. Big grey clouds come.\nBoom! Thunder!\nThen the rain starts. Plip, plop, plip, plop. Then it pours!\nZawadi runs outside. Baraka and Neema run outside too.\nThey dance in the rain. They jump in the puddles. Splash!\nEven Kiki the goat jumps up and down.\nThe grown-ups put out buckets and pots to catch the water.\n\"Now the maize will grow,\" says Mama, smiling.\nThe next morning, the air smells fresh and clean.\nZawadi sees tiny green shoots in the field.\n\"Look! The rain is making everything grow!\" she says.\nGrandpa nods. \"Rain is a gift,\" he says.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour is the grass before the rain?",
+       "options": [
+        "Brown",
+        "Green",
+        "Purple"
+       ],
+       "answer": "Brown",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour are the clouds?",
+       "options": [
+        "Grey",
+        "White",
+        "Pink"
+       ],
+       "answer": "Grey",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what sound does the thunder make?",
+       "options": [],
+       "answer": "Boom",
+       "accept": [
+        "boom!"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the children do in the rain?",
+       "options": [
+        "They dance and jump in puddles",
+        "They hide under the bed",
+        "They go to sleep"
+       ],
+       "answer": "They dance and jump in puddles",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do the grown-ups put out buckets and pots?",
+       "options": [
+        "To catch the water",
+        "To cook dinner",
+        "To play music"
+       ],
+       "answer": "To catch the water",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Zawadi see in the field the next morning?",
+       "options": [
+        "Tiny green shoots",
+        "A big lion",
+        "Lots of snow"
+       ],
+       "answer": "Tiny green shoots",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is everyone so happy when the rain comes?",
+       "options": [
+        "Because the plants need water to grow",
+        "Because school is closed",
+        "Because it is a birthday"
+       ],
+       "answer": "Because the plants need water to grow",
+       "accept": [],
+       "hint": "Think about the maize and the dry grass.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Grandpa says \"Rain is a gift\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what the rain gives the village.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: A Letter from Brazil",
+     "synopsis": "Zawadi's class gets a letter from children in Brazil, and Zawadi compares her home with theirs.",
+     "text": "At school, Teacher Wanjiru has a surprise. \"We have a letter from children in Brazil!\" she says.\nThe children sit down to listen.\nThe letter says: \"Hello from São Paulo! Our city is very big. There are tall buildings and lots of cars. We eat rice and beans. We love mangoes too!\"\n\"They love mangoes, like me!\" says Zawadi.\n\"But their city is very different from our village,\" says Baraka.\n\"We have round houses with grass roofs. They have tall buildings,\" says Neema.\n\"We see giraffes and zebras. They see lots of cars!\" laughs Zawadi.\nTeacher Wanjiru smiles. \"Let's write back,\" she says.\nZawadi draws a picture. She draws the baobab tree, Kiki the goat and the rain.\nShe writes: \"Jambo, friends! Come and visit us one day!\"\nThat night, Zawadi dreams about a big city far away, full of mango trees and new friends.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does the letter come from?",
+       "options": [
+        "Brazil",
+        "Kenya",
+        "The moon"
+       ],
+       "answer": "Brazil",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the name of the city in the letter?",
+       "options": [
+        "São Paulo",
+        "Nairobi",
+        "London"
+       ],
+       "answer": "São Paulo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what food do the children in Brazil eat?",
+       "options": [
+        "Rice and beans",
+        "Ugali",
+        "Fish and chips"
+       ],
+       "answer": "Rice and beans",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which fruit do both groups of children love?",
+       "options": [
+        "Mangoes",
+        "Bananas",
+        "Avocados"
+       ],
+       "answer": "Mangoes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the city in Brazil have?",
+       "options": [
+        "Tall buildings and lots of cars",
+        "Round houses with grass roofs",
+        "Zebras and giraffes"
+       ],
+       "answer": "Tall buildings and lots of cars",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Zawadi draw?",
+       "options": [
+        "The baobab tree, Kiki and the rain",
+        "A car and a building",
+        "A big city"
+       ],
+       "answer": "The baobab tree, Kiki and the rain",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Zawadi draw the baobab, Kiki and the rain?",
+       "options": [
+        "To show the children in Brazil what her home is like",
+        "Because she cannot write",
+        "Because the teacher is cross"
+       ],
+       "answer": "To show the children in Brazil what her home is like",
+       "accept": [],
+       "hint": "Think about who will get the picture.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "What is one way your home is the same as Zawadi's village, and one way it is different?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about food, animals, houses and weather.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }

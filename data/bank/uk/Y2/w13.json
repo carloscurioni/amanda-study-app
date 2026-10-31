@@ -750,6 +750,958 @@
      "errors": []
     }
    ]
+  },
+  "en_spell": {
+   "topic": "Adding -ing to words ending in -y",
+   "questions": [
+    {
+     "id": "rvb83111r3l5oe",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "To add -ing to \"cry\", what do you do with the y?",
+     "options": [
+      "Keep the y",
+      "Change the y to i",
+      "Take the y away"
+     ],
+     "answer": "Keep the y",
+     "accept": [],
+     "hint": "Say \"crying\" slowly and listen to the end.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt62yq5zysku9",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word is spelt correctly?",
+     "options": [
+      "crying",
+      "criing",
+      "crieing"
+     ],
+     "answer": "crying",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj5vcey148ybd2",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Add -ing to \"fly\". Write the whole word.",
+     "options": [],
+     "answer": "flying",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13qif8e8d3x3u",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Add -ing to \"try\". Write the whole word.",
+     "options": [],
+     "answer": "trying",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkun4701ju4a69",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Add -ing to \"copy\". Write the whole word.",
+     "options": [],
+     "answer": "copying",
+     "accept": [],
+     "hint": "Keep the last letter.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hmqpiu1jg6hbr",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: hurr_ _ng",
+     "options": [],
+     "answer": "hurrying",
+     "accept": [],
+     "hint": "Keep the y, then add -ing.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re1fw6y1lqzypf",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: fr_ _ng",
+     "options": [],
+     "answer": "frying",
+     "accept": [],
+     "hint": "This is what you do to eggs in a pan.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14jhlnkvt2vop",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "\"The baby cried.\" \"The baby is ___.\" Which word fits?",
+     "options": [
+      "crying",
+      "cried",
+      "cries"
+     ],
+     "answer": "crying",
+     "accept": [],
+     "hint": "The baby is doing it right now.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "res2tmd8chme7",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which pair is spelt correctly?",
+     "options": [
+      "cried / crying",
+      "cryed / crying",
+      "cried / criing"
+     ],
+     "answer": "cried / crying",
+     "accept": [],
+     "hint": "With -ed the y changes; with -ing it stays.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb050iu1n42prm",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Add -ing to \"reply\". Write the whole word.",
+     "options": [],
+     "answer": "replying",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f1h2fmrludjy",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Add -ing to \"study\". Write the whole word.",
+     "options": [],
+     "answer": "studying",
+     "accept": [],
+     "hint": "Do not take away any letters.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rheaiqqhqmzgs",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Why do we keep the y in \"trying\"?",
+     "options": [
+      "Because \"triing\" would have two i's together",
+      "Because y is a vowel",
+      "Because the word is short"
+     ],
+     "answer": "Because \"triing\" would have two i's together",
+     "accept": [],
+     "hint": "Look at what happens if you change y to i and add -ing.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wmkiga1mf5psb",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 4 misspelled words.",
+     "options": [],
+     "answer": "frieing → frying; crieing → crying; hurriing → hurrying; carriing → carrying",
+     "accept": [],
+     "hint": "Look at words ending in -ing.",
+     "text": "Mum was frieing pancakes in the kitchen. My little brother was crieing because he was hungry. I was hurriing to set the table and carriing the plates. Dad was copying a funny joke to tell us. Soon we were all eating and laughing together.",
+     "errors": [
+      {
+       "wrong": "frieing",
+       "right": "frying"
+      },
+      {
+       "wrong": "crieing",
+       "right": "crying"
+      },
+      {
+       "wrong": "hurriing",
+       "right": "hurrying"
+      },
+      {
+       "wrong": "carriing",
+       "right": "carrying"
+      }
+     ]
+    },
+    {
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Pick the correct spelling of \"carry\" + -ing.",
+     "options": [
+      "carrying",
+      "carriing",
+      "carying"
+     ],
+     "answer": "carrying",
+     "accept": [],
+     "hint": "Keep the y from \"carry\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rom2poveq4gyr",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Pick the correct spelling of \"worry\" + -ing.",
+     "options": [
+      "worrying",
+      "worriing",
+      "woring"
+     ],
+     "answer": "worrying",
+     "accept": [],
+     "hint": "Do not change the y.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Pick the correct spelling of \"study\" + -ing.",
+     "options": [
+      "studying",
+      "studing",
+      "studiing"
+     ],
+     "answer": "studying",
+     "accept": [],
+     "hint": "Keep every letter of \"study\".",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "ipc": {
+   "topic": "From A to B: the first flights — Santos-Dumont and the Wright brothers",
+   "questions": [
+    {
+     "id": "r5qra1xejgoz0",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What was the name of Santos-Dumont's famous aeroplane?",
+     "options": [
+      "14-bis",
+      "Flyer",
+      "Concorde"
+     ],
+     "answer": "14-bis",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nlc5o7c4vwc2",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which country was Santos-Dumont from?",
+     "options": [
+      "Brazil",
+      "France",
+      "England"
+     ],
+     "answer": "Brazil",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roulsmqbzkc75",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What were the Wright brothers' first aeroplane called?",
+     "options": [
+      "Flyer",
+      "14-bis",
+      "Rocket"
+     ],
+     "answer": "Flyer",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9f52iawos260",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which country were the Wright brothers from?",
+     "options": [
+      "The United States",
+      "Brazil",
+      "Japan"
+     ],
+     "answer": "The United States",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rirnqh118jdhgp",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "In which city did the 14-bis fly in 1906?",
+     "options": [
+      "Paris",
+      "Rio de Janeiro",
+      "London"
+     ],
+     "answer": "Paris",
+     "accept": [],
+     "hint": "It is the capital of France.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbjnf6v1a4u9t3",
+     "subject": "ipc",
+     "type": "num",
+     "q": "The Wright brothers' first flight was in 1903. The 14-bis flew in 1906. How many years apart were they?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd3g62p1agx52i",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "How long was the Wright brothers' very first flight?",
+     "options": [
+      "About 12 seconds",
+      "About 1 hour",
+      "About a whole day"
+     ],
+     "answer": "About 12 seconds",
+     "accept": [],
+     "hint": "It was very, very short!",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qfnq64urcr0w",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What did the 14-bis use to leave the ground?",
+     "options": [
+      "Its own wheels",
+      "A big balloon",
+      "A boat"
+     ],
+     "answer": "Its own wheels",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o0gmi01ydhzwh",
+     "subject": "ipc",
+     "type": "short",
+     "q": "A machine with wings and an engine that flies through the air is called an ___.",
+     "options": [],
+     "answer": "aeroplane",
+     "accept": [
+      "airplane",
+      "plane"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s0bialwbk4cz",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Before aeroplanes, Santos-Dumont flew in airships. What kept an airship up in the air?",
+     "options": [
+      "Gas lighter than air",
+      "Big wings",
+      "A long rope"
+     ],
+     "answer": "Gas lighter than air",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5sevbvsydoa3",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which is true about the first aeroplanes?",
+     "options": [
+      "They were made of wood and cloth",
+      "They were made of plastic",
+      "They could carry hundreds of people"
+     ],
+     "answer": "They were made of wood and cloth",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhojmk71vkmmck",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which is true about aeroplanes today?",
+     "options": [
+      "They can fly across oceans",
+      "They only fly for a few seconds",
+      "They have no engines"
+     ],
+     "answer": "They can fly across oceans",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4xery83y60ad",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Who flew the first aeroplanes?",
+     "options": [
+      "Just one pilot, with no passengers",
+      "Hundreds of passengers",
+      "A robot"
+     ],
+     "answer": "Just one pilot, with no passengers",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7ut28b1kglfzt",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which of these goes from A to B through the air?",
+     "options": [
+      "Aeroplane",
+      "Train",
+      "Ship"
+     ],
+     "answer": "Aeroplane",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbaa05b3byhe0",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Give one way early aeroplanes are different from aeroplanes today.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about size, speed or how many people they carry.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p6dba74zkonx",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Why do you think people wanted to build flying machines?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about travelling and seeing the world from above.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Money: totals and change",
+   "questions": [
+    {
+     "id": "r1gpkxhy116mhnu",
+     "subject": "math",
+     "type": "num",
+     "q": "A pencil costs 10p and a rubber costs 5p. What is the total in pence?",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13pwu451kyd1fk",
+     "subject": "math",
+     "type": "num",
+     "q": "A sticker costs 20p. You buy 2 stickers. How much do you spend in pence?",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r123wutb140bq16",
+     "subject": "math",
+     "type": "num",
+     "q": "An apple costs 30p and a banana costs 25p. What is the total cost in pence?",
+     "options": [],
+     "answer": "55",
+     "accept": [],
+     "hint": "Add the tens, then add the ones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w87jsiu63ktg",
+     "subject": "math",
+     "type": "num",
+     "q": "You have 50p. You spend 20p. How much change do you get in pence?",
+     "options": [],
+     "answer": "30",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19hwr29jx4u67",
+     "subject": "math",
+     "type": "num",
+     "q": "A toy car costs 45p. You pay with a 50p coin. How much change do you get in pence?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp5fxlp1trkoha",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which coins make 25p?",
+     "options": [
+      "20p and 5p",
+      "10p and 10p",
+      "20p and 2p"
+     ],
+     "answer": "20p and 5p",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iak1cx1vyjen0",
+     "subject": "math",
+     "type": "num",
+     "q": "A book costs £6 and a pen costs £3. What is the total in pounds?",
+     "options": [],
+     "answer": "9",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xfw7er1v4vh4l",
+     "subject": "math",
+     "type": "num",
+     "q": "A ball costs £7. You pay with a £10 note. How much change do you get in pounds?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Count on from 7 to 10.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13xqqjwjwzgmv",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which is worth the most?",
+     "options": [
+      "£1",
+      "50p",
+      "20p"
+     ],
+     "answer": "£1",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjm2nsz18a6j21",
+     "subject": "math",
+     "type": "num",
+     "q": "How many pence are in £1?",
+     "options": [],
+     "answer": "100",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvbkbcu5bme85",
+     "subject": "math",
+     "type": "num",
+     "q": "A juice costs 35p and a biscuit costs 15p. You pay with £1. How much change do you get in pence?",
+     "options": [],
+     "answer": "50",
+     "accept": [],
+     "hint": "First find the total, then take it away from 100p.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u40t9k10ijjja",
+     "subject": "math",
+     "type": "mc",
+     "q": "Mia has 60p. A comic costs 75p. Does she have enough money?",
+     "options": [
+      "No, she needs 15p more",
+      "Yes, she has 15p left",
+      "Yes, exactly enough"
+     ],
+     "answer": "No, she needs 15p more",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10j41sr1w3shsk",
+     "subject": "math",
+     "type": "num",
+     "q": "Three sweets cost 10p each. What is the total in pence?",
+     "options": [],
+     "answer": "30",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12t2n57d2akdb",
+     "subject": "math",
+     "type": "short",
+     "q": "When you pay more than the price, the money you get back is called your ___.",
+     "options": [],
+     "answer": "change",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbkcy4vky8c7l",
+     "subject": "math",
+     "type": "num",
+     "q": "Leo buys a drink for 40p and a cake for 38p. What is the total cost in pence?",
+     "options": [],
+     "answer": "78",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlng1sr1lenha",
+     "subject": "math",
+     "type": "open",
+     "q": "You have £1. Choose two things from this list to buy and work out your change: crayons 40p, glue 35p, ruler 20p.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Add the two prices, then count on to 100p.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Convite: data, horário, local e destinatário",
+   "questions": [
+    {
+     "id": "rq067m715gw351",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Para que serve um convite?",
+     "options": [
+      "Para chamar alguém para um evento",
+      "Para contar uma história de fadas",
+      "Para ensinar uma receita"
+     ],
+     "answer": "Para chamar alguém para um evento",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xjr3x5147wd84",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual informação diz QUANDO vai ser a festa?",
+     "options": [
+      "A data",
+      "O local",
+      "O destinatário"
+     ],
+     "answer": "A data",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xeqw3s1yqrxxd",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual informação diz ONDE vai ser a festa?",
+     "options": [
+      "O local",
+      "O horário",
+      "A data"
+     ],
+     "answer": "O local",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10mpdn91vm9c4y",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Quem é o destinatário de um convite?",
+     "options": [
+      "A pessoa que recebe o convite",
+      "A pessoa que faz a festa",
+      "O dono do salão"
+     ],
+     "answer": "A pessoa que recebe o convite",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkf1sdy3i63lr",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas frases mostra um horário?",
+     "options": [
+      "Às 15 horas",
+      "No dia 12 de novembro",
+      "Na Rua das Flores, 20"
+     ],
+     "answer": "Às 15 horas",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6prnacnjaqsk",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas frases mostra um local?",
+     "options": [
+      "No parque da escola",
+      "Às 10 horas",
+      "Sábado, dia 8"
+     ],
+     "answer": "No parque da escola",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz7ymsf7xquw7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Leia: \"Querida Bia, venha à minha festa de aniversário no sábado, dia 14, às 16h, no salão do prédio. Beijos, Davi.\" Quem é o destinatário?",
+     "options": [
+      "Bia",
+      "Davi",
+      "O prédio"
+     ],
+     "answer": "Bia",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwaqab46lv14e",
+     "subject": "pt",
+     "type": "short",
+     "q": "Leia: \"Querida Bia, venha à minha festa de aniversário no sábado, dia 14, às 16h, no salão do prédio. Beijos, Davi.\" Quem fez o convite?",
+     "options": [],
+     "answer": "Davi",
+     "accept": [],
+     "hint": "Veja quem assina no final.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd8e4fx1h35r4v",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Leia: \"Querida Bia, venha à minha festa de aniversário no sábado, dia 14, às 16h, no salão do prédio. Beijos, Davi.\" Qual é o local da festa?",
+     "options": [
+      "O salão do prédio",
+      "A escola",
+      "A praia"
+     ],
+     "answer": "O salão do prédio",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3orxgk1aw0v2t",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Leia: \"Querida Bia, venha à minha festa de aniversário no sábado, dia 14, às 16h, no salão do prédio. Beijos, Davi.\" Que horas começa a festa?",
+     "options": [
+      "Às 16h",
+      "Às 14h",
+      "Ao meio-dia"
+     ],
+     "answer": "Às 16h",
+     "accept": [],
+     "hint": "Procure o número com \"h\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fiwrll14dvct7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Um convite sem a data tem um problema. Qual?",
+     "options": [
+      "Ninguém sabe o dia da festa",
+      "Ninguém sabe o nome da festa",
+      "Ninguém sabe a cor do bolo"
+     ],
+     "answer": "Ninguém sabe o dia da festa",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reizm8r9r1a34",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é o melhor jeito de começar um convite para a turma?",
+     "options": [
+      "Querida turma do 1º ano,",
+      "Era uma vez uma turma,",
+      "Ingredientes:"
+     ],
+     "answer": "Querida turma do 1º ano,",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13yqou9okk7lu",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete a palavra que falta: \"Você é meu ________ para a festa junina!\" (palavra que começa com \"conv\")",
+     "options": [],
+     "answer": "convidado",
+     "accept": [
+      "convidada"
+     ],
+     "hint": "É quem recebe o convite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrfmbi911iff8w",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase de um convite está mais completa?",
+     "options": [
+      "Festa da turma: sexta, dia 20, às 10h, na quadra.",
+      "Festa da turma na sexta.",
+      "Venha para a festa!"
+     ],
+     "answer": "Festa da turma: sexta, dia 20, às 10h, na quadra.",
+     "accept": [],
+     "hint": "Procure data, horário e local.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru81fclodf0ze",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que pode aparecer no final de um convite?",
+     "options": [
+      "O nome de quem convida",
+      "Uma lista de compras",
+      "O título de um livro"
+     ],
+     "answer": "O nome de quem convida",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rph43te1omtztv",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva um convite curto para uma festa da turma. Não esqueça a data, o horário, o local e o destinatário.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Comece com \"Querida turma\" e termine com seu nome.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
