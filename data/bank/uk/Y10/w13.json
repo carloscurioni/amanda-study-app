@@ -5921,6 +5921,913 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "The Tailor's Window",
+   "premise": "Fifteen-year-old Anaya's family has run a tailoring shop on a changing city street for forty years. When a developer offers to buy the building, each episode shows how money, migration, tradition and ambition shape the choices of three generations.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Letter in the Button Tin",
+     "synopsis": "Fifteen-year-old Anaya notices her father hiding a letter in the family tailoring shop and discovers that a developer wants to buy the building.",
+     "text": "The shop had one window, and in the window sat Nani. Every morning she unrolled the same faded blue cloth across the counter, threaded her needle in a single try, and began to sew as if the street outside were an audience. People slowed as they passed. Some waved. A few, mostly old men who remembered the shop from their own weddings, stopped to tap the glass and point at their chests, meaning: you made my coat, forty years ago, and it still fits.\nAnaya liked to do her homework at the cutting table at the back, where the light was poor but the smell of chalk and steam made her feel safe. That was where she was sitting on Tuesday when the post arrived and her father read the top envelope standing up. She watched his face change. It did not fall exactly; it closed, the way a shutter closes at night.\n'Bills?' she asked.\n'Bills,' he said, and slid the envelope into his pocket.\nLater, when he went upstairs to argue with the kettle, Anaya noticed his jacket hanging on the hook. She was not a sneak. She told herself this several times as she checked the pocket and found it empty. Then she remembered where her father put anything he did not want to think about: the button tin.\nThe tin was older than she was. It had once held biscuits and now held thousands of buttons, horn and shell and plastic, sorted by no system anyone could explain. Under the top layer, folded twice, was the letter. The paper was thick and expensive. A company that built apartment towers wished to make 'a generous offer' for the whole building. The street, the letter said, was 'entering an exciting new chapter'.\nAnaya read it twice. She thought about the new glass towers at the end of the road, the café that sold coffee for the price of a school lunch, the family who used to run the shoe-repair stall and had simply, one week, not been there any more. Nobody had made a fuss. Nobody had seemed to notice.\nShe folded the letter along its old creases and pushed it back beneath the buttons. When her father came down with two cups of tea, she was bent over her maths as if nothing had happened.\nIn the window, Nani bit off a thread and held up a finished sleeve to the light. A woman outside clapped. Nani gave a small, royal nod.\nAnaya looked from her grandmother to the tin and back again. For the first time she understood that the shop was not only a place. It was a question, and someone was going to have to answer it.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, where does Nani sit to sew?",
+       "options": [
+        "In the shop window",
+        "At the back table",
+        "Upstairs in the kitchen",
+        "Outside on the street"
+       ],
+       "answer": "In the shop window",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why do some old men tap on the glass?",
+       "options": [
+        "Nani made their coats years ago",
+        "They want to buy cloth",
+        "They are complaining about noise",
+        "They are looking for Anaya"
+       ],
+       "answer": "Nani made their coats years ago",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, where does Anaya find the hidden letter?",
+       "options": [],
+       "answer": "the button tin",
+       "accept": [
+        "button tin",
+        "in the button tin",
+        "the tin",
+        "a button tin"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the company in the letter want?",
+       "options": [
+        "To buy the whole building",
+        "To order a suit",
+        "To rent the window",
+        "To repair the shop"
+       ],
+       "answer": "To buy the whole building",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the simile 'the way a shutter closes at night' suggest about the father?",
+       "options": [
+        "He hides his feelings",
+        "He is falling asleep",
+        "He is angry with Anaya",
+        "He is happy with the news"
+       ],
+       "answer": "He hides his feelings",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the memory of the shoe-repair stall suggest about the street?",
+       "options": [
+        "Small businesses are disappearing quietly",
+        "The street is becoming quieter and emptier of buildings",
+        "Shoes are no longer needed",
+        "The family is moving away"
+       ],
+       "answer": "Small businesses are disappearing quietly",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Anaya realise at the end?",
+       "options": [
+        "The shop's future is a decision someone must make",
+        "Her grandmother wants to retire",
+        "Her father has lied about the bills before",
+        "The letter is a fake"
+       ],
+       "answer": "The shop's future is a decision someone must make",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Anaya's father hides the letter instead of telling the family?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Wedding Order",
+     "synopsis": "A last-minute wedding order forces the family to work through the night, and Nani and Anaya's mother clash over tradition and fashion.",
+     "text": "The bride's aunt arrived at five o'clock on Thursday with a suitcase of silk and a problem. The tailor they had booked had vanished; the wedding was on Sunday; there were eleven outfits to finish. She said all of this in one breath and then sat down heavily on the customer's stool, as though the stool were the last solid thing in the city.\nAnaya's father looked at the suitcase the way a doctor looks at an X-ray. 'Three days,' he said. 'Eleven pieces.' Then he looked at Nani.\nNani was already measuring the aunt's shoulders.\nThe trouble began at midnight. Anaya's mother, Priya, had sketched the bride's jacket with a short, sharp collar and narrow sleeves, the kind of shape she had seen on the young women outside the glass towers. Nani took one look at the drawing and pushed it gently aside. 'A wedding is not a magazine,' she said. 'Her grandmother will be there. Her grandmother will expect a wedding.'\n'Her grandmother is not wearing it,' said Priya.\nThe sewing machines stopped. Anaya, who had been pinning hems with her mouth full of pins, stayed perfectly still. She had heard this argument before, in different words, about her own clothes, her own hair, the university brochures on the kitchen table. It was never really about a collar.\nIt was the bride herself who ended it. She had come in quietly to try on the half-finished jacket, and she stood between the two women in the mirror light. 'Could it be both?' she asked. 'The old embroidery, but the new shape? I want my grandmother to recognise it. I also want to recognise myself.'\nNani and Priya looked at each other. Then, without a word, Nani took a pencil and drew a thin vine of gold thread climbing up the new, narrow sleeve. Priya added a line to the collar so the vine could curl around it. Their hands moved over the paper together like people who had always known how.\nBy Sunday morning the eleven outfits hung in a row, wrapped in plastic like sleeping guests. Anaya's fingers were sore and her eyes felt full of sand. Her father counted the payment twice at the counter, and for the first time all week he smiled.\n'This,' he said, tapping the notes, 'is one weekend. The letter is every weekend for the rest of my life.'\nNobody answered him. Nani was asleep in her chair, still holding a needle, the gold thread trailing from it like a promise.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does the bride's aunt come to the shop in a hurry?",
+       "options": [
+        "Their original tailor disappeared",
+        "She wants to sell silk",
+        "She needs a dress repaired",
+        "She is looking for work"
+       ],
+       "answer": "Their original tailor disappeared",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, how many outfits must the family finish?",
+       "options": [],
+       "answer": "eleven",
+       "accept": [
+        "11",
+        "Eleven"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what kind of jacket does Priya sketch?",
+       "options": [
+        "A modern one with a short collar and narrow sleeves",
+        "A traditional jacket with a lot of embroidery",
+        "A plain black jacket",
+        "A jacket for a man"
+       ],
+       "answer": "A modern one with a short collar and narrow sleeves",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Nani mean by 'A wedding is not a magazine'?",
+       "options": [
+        "Weddings should follow tradition, not fashion",
+        "Magazines are too expensive",
+        "The bride should not read",
+        "Weddings should be photographed"
+       ],
+       "answer": "Weddings should follow tradition, not fashion",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, who solves the argument?",
+       "options": [
+        "The bride",
+        "Anaya",
+        "Anaya's father",
+        "The aunt"
+       ],
+       "answer": "The bride",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Anaya mean when she thinks the argument 'was never really about a collar'?",
+       "options": [
+        "It is about old and new ways of life in the family",
+        "It is about money",
+        "It is about who is the best tailor",
+        "It is about Anaya's homework"
+       ],
+       "answer": "It is about old and new ways of life in the family",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the father's final comment show?",
+       "options": [
+        "One good order cannot solve the family's money worries",
+        "He wants to stop sewing",
+        "He is angry with Nani",
+        "He has already sold the building"
+       ],
+       "answer": "One good order cannot solve the family's money worries",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the writer ends the chapter with the gold thread described 'like a promise'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: A Call from Far Away",
+     "synopsis": "Anaya's older brother Samir calls from abroad, where he works to send money home, and Anaya glimpses the loneliness behind his cheerful voice.",
+     "text": "Samir called on the first Sunday of every month, at nine in the morning for them and some impossible hour for him. The whole family gathered around the phone propped against the sugar jar, and for twenty minutes the kitchen was loud with questions nobody waited to have answered.\n'Are you eating?' asked Priya.\n'Is it cold?' asked Nani.\n'Did the money arrive?' asked Samir, and Anaya's father said yes, yes, of course, as if money were the least interesting subject in the world.\nSamir had left two years ago, when Anaya was thirteen. A cousin of a cousin had found him work in a city where the winters lasted half the year and the buildings, he said, were so tall that the pigeons got tired. Every month he sent money home. Every month her father put some of it in the bank and some of it into the shop and none of it, as far as Anaya could see, into anything for himself.\nThis Sunday, the call was different. Samir laughed at all the right moments, but there was a gap after each laugh, like a step missing on a staircase. When the adults drifted away to argue about lunch, Anaya picked up the phone and carried it to the cutting table.\n'You look tired,' she said.\n'It's the camera,' said Samir. Then, after a while: 'It's quiet here. Nobody knows my name at the shop where I buy bread. At home, Mr Okafor would know what I wanted before I opened my mouth.'\n'You could come back.'\nHe smiled, but only with half his face. 'And do what? Sew buttons until the tower people knock the shop down?' He stopped. 'Sorry. Dad told me about the letter.'\nSo her father had told Samir, but not her. Anaya felt something hot rise in her throat. Then she looked at her brother's tired face on the screen, the grey wall behind him, the single mug on the table, and the heat cooled into something heavier.\n'Do you want them to sell?' she asked.\nSamir was silent for a long time. 'I want there to be something to come back to,' he said finally. 'Even if I never come back.'\nWhen the call ended, Anaya sat with the dark phone in her hands. She thought about how the money arrived every month like clockwork, and how no one ever asked what it cost. Not the price in numbers. The other price.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, on which day of the month does Samir call?",
+       "options": [],
+       "answer": "the first Sunday",
+       "accept": [
+        "first Sunday",
+        "Sunday",
+        "the first Sunday of every month"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why did Samir go abroad?",
+       "options": [
+        "To work and send money home",
+        "To study at university",
+        "To get married",
+        "To learn tailoring"
+       ],
+       "answer": "To work and send money home",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the father do with the money Samir sends?",
+       "options": [
+        "Saves some and puts some into the shop",
+        "Spends it on himself",
+        "Gives it all to Nani",
+        "Sends it back"
+       ],
+       "answer": "Saves some and puts some into the shop",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the simile 'like a step missing on a staircase' suggest?",
+       "options": [
+        "Samir's cheerfulness is hiding something",
+        "Samir has hurt his leg",
+        "The phone signal is bad",
+        "Samir is joking"
+       ],
+       "answer": "Samir's cheerfulness is hiding something",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Samir miss about home?",
+       "options": [
+        "Being known by people in the neighbourhood",
+        "The warm weather only",
+        "His old school",
+        "The food from the café"
+       ],
+       "answer": "Being known by people in the neighbourhood",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Anaya feel angry for a moment?",
+       "options": [
+        "Her father told Samir about the letter but not her",
+        "Samir laughs at her",
+        "Samir refuses to talk",
+        "Her mother takes the phone away"
+       ],
+       "answer": "Her father told Samir about the letter but not her",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is 'the other price' that Anaya thinks about?",
+       "options": [
+        "The loneliness Samir pays for working far away",
+        "The cost of the phone call",
+        "The rent of the shop",
+        "The price of bread"
+       ],
+       "answer": "The loneliness Samir pays for working far away",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "What do you think Samir means when he says, 'I want there to be something to come back to, even if I never come back'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Flood",
+     "synopsis": "A storm floods the street, the neighbours shelter in the shop, and the developer's agent turns up looking for help.",
+     "text": "The rain began on Wednesday afternoon as a polite tapping and by evening had become a roar. The drains at the end of the street, which had been dug long before the towers, gave up first. Water crept over the kerb, then over the doorstep of the bakery, then into the shop, curling around the legs of the cutting table like a curious animal.\nAnaya's father moved fast. The bolts of cloth went up onto the highest shelves; the sewing machines were lifted onto chairs; Nani was installed on the counter with a blanket and a flask of tea, from which position she directed everyone like a ship's captain.\nThen the knocking started. First Mr Okafor from the bakery, soaked to the knees, carrying trays of bread wrapped in plastic. Then the two sisters from the phone-repair stall, then a mother with a baby, then three students whose bus had been cancelled. The shop was on a slight rise, the highest point on the street, and everyone seemed to know it.\nBy nine o'clock there were fourteen people inside, sitting on boxes and stools and the stairs. Priya handed out towels made from offcuts of cotton. Mr Okafor's bread was passed around. Somebody's radio played music that nobody had chosen and everybody knew.\nThe last person to knock was a young man in a good suit ruined by rain. He held a folder over his head as though it could protect him. Anaya recognised the logo on it before he spoke; she had seen it on the thick, expensive letter in the button tin.\n'I'm sorry,' he said. 'My car is stuck at the corner. I just need somewhere to wait.'\nAnaya's father stood in the doorway for a long moment. The water was rising behind the young man. Fourteen faces watched to see what would happen.\nIt was Nani who spoke. 'Come in,' she called from the counter. 'You are getting wet, and wet people cannot discuss business.' She poured him a cup of tea and gave him the only remaining dry towel.\nLater, when the lights flickered and the room grew quiet, Anaya noticed the young man looking around: at the students asleep on the cloth, at Mr Okafor telling jokes to the baby, at the photographs on the wall of forty years of brides and grooms. He looked, she thought, like someone seeing the inside of a house he had only ever measured from the outside.\nAt dawn the water went down. The young man thanked them, shook her father's hand, and left without mentioning the letter. On the counter, beside his empty cup, he had left the folder. He had not forgotten it, Anaya decided. He had simply chosen not to carry it.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does the street flood?",
+       "options": [
+        "The old drains cannot cope with the rain",
+        "A water pipe bursts",
+        "The river overflows",
+        "The towers block the water"
+       ],
+       "answer": "The old drains cannot cope with the rain",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why do the neighbours come to the shop?",
+       "options": [
+        "It is on the highest point of the street",
+        "It has free food",
+        "It has a generator",
+        "It is the biggest building"
+       ],
+       "answer": "It is on the highest point of the street",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, how many people are sheltering in the shop by nine o'clock?",
+       "options": [],
+       "answer": "fourteen",
+       "accept": [
+        "14",
+        "Fourteen"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Mr Okafor bring with him?",
+       "options": [
+        "Trays of bread",
+        "A radio",
+        "Towels",
+        "A baby"
+       ],
+       "answer": "Trays of bread",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Anaya recognise the young man's job?",
+       "options": [
+        "The logo on his folder matches the letter",
+        "He tells her his name",
+        "He is wearing a badge",
+        "Her father introduces him"
+       ],
+       "answer": "The logo on his folder matches the letter",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does the father hesitate at the door?",
+       "options": [
+        "The man works for the company that wants to buy the building",
+        "He does not have space",
+        "He thinks the man is a thief",
+        "He is afraid of the water"
+       ],
+       "answer": "The man works for the company that wants to buy the building",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Anaya believe the young man's choice to leave the folder shows?",
+       "options": [
+        "He has started to see the shop differently",
+        "He is careless with his papers",
+        "He wants the family to sign quickly",
+        "He was too tired to carry it"
+       ],
+       "answer": "He has started to see the shop differently",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Nani welcomes the young man inside, even though his company wants to buy the shop?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Two Places at Once",
+     "synopsis": "Anaya's scholarship exam falls on the same day as the street fair, where the family badly needs her help, and her mother makes a surprising decision.",
+     "text": "The street fair happened once a year, on the last Saturday of the dry season. Stalls filled the road from the bakery to the bus stop, and for one day the shop sold more ready-made shirts than in the whole of the previous month. Every pair of hands mattered. Anaya had worked the fair since she was tall enough to see over the counter.\nThis year, the fair was on the same day as the scholarship exam.\nThe exam was for a school across the city, a school with laboratories and a library bigger than their whole building. Her teacher had put her name forward without asking, and when the letter arrived, her mother had read it at the kitchen table and then put it in a drawer. Not the button tin, Anaya noticed. A drawer was where you put things you intended to find again.\nFor a week nobody mentioned it. Then, on Thursday evening, her father did the sums out loud. Without Anaya at the fair they would need to pay someone, and paying someone would eat most of the profit, and the profit was meant for the electricity bill, and the electricity bill was already late.\n'It's one exam,' he said. 'There will be others.'\nAnaya said nothing. She had told herself the same thing every night that week. It had not become more true with practice.\nPriya put down her spoon. 'When I was fifteen,' she said, 'I won a place at a design college. My father needed me in his shop, so I didn't go. Everyone said there would be other chances.' She turned her wedding ring once around her finger. 'There were not.'\nNobody had ever told Anaya this. She looked at her mother's sketches pinned above the sewing machine, the sharp collars and clever sleeves, and suddenly they looked different, like letters written to someone who had never replied.\n'She is going to the exam,' Priya said. 'I will work her hours and mine.'\nHer father opened his mouth, then closed it. Nani, who had been listening from her chair, simply reached over and patted Priya's hand twice, which in Nani's language was a whole speech.\nOn Saturday Anaya sat in a cold exam hall across the city, and every time she turned a page she imagined the noise of the fair and her mother moving between the rails of shirts, doing the work of two people so that her daughter would not have to be only one thing. Anaya answered every question. When she walked out into the sunlight, she was not sure how she had done. She was only sure that she owed it to someone to find out.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, on which day is the street fair?",
+       "options": [],
+       "answer": "Saturday",
+       "accept": [
+        "the last Saturday",
+        "the last Saturday of the dry season",
+        "saturday"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, who put Anaya's name forward for the scholarship?",
+       "options": [
+        "Her teacher",
+        "Her mother",
+        "Nani",
+        "Samir"
+       ],
+       "answer": "Her teacher",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does the father want Anaya to work at the fair?",
+       "options": [
+        "Paying a helper would use up the money for the electricity bill",
+        "He thinks the exam is too hard",
+        "He does not like the new school",
+        "Nani asked him to"
+       ],
+       "answer": "Paying a helper would use up the money for the electricity bill",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why is it important that the mother put the letter in a drawer rather than the button tin?",
+       "options": [
+        "It shows she meant to come back to it",
+        "The tin was full",
+        "The drawer was locked",
+        "She wanted to hide it from Anaya"
+       ],
+       "answer": "It shows she meant to come back to it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what happened to Priya when she was fifteen?",
+       "options": [
+        "She gave up a place at design college to work in her father's shop",
+        "She won a sewing competition",
+        "She moved to another country",
+        "She met Anaya's father"
+       ],
+       "answer": "She gave up a place at design college to work in her father's shop",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the simile about the sketches being 'like letters written to someone who had never replied' suggest?",
+       "options": [
+        "Priya's dreams were never fulfilled",
+        "Priya writes letters",
+        "The sketches are badly drawn",
+        "Priya's father ignored her letters"
+       ],
+       "answer": "Priya's dreams were never fulfilled",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Nani's gesture of patting Priya's hand show?",
+       "options": [
+        "She supports Priya's decision",
+        "She disagrees strongly",
+        "She is falling asleep",
+        "She wants more tea"
+       ],
+       "answer": "She supports Priya's decision",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "How does Priya's own past shape the choice she makes for Anaya?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Story of the First Machine",
+     "synopsis": "At a family meeting about selling the building, everyone gives their reasons, and Nani tells the story of how the shop began.",
+     "text": "The meeting was held on a Monday night, after the shutters were down, around the cutting table. Her father had laid out three sheets of paper: the letter from the company, the bank statement, and a list in his own small handwriting headed simply What We Owe.\nSamir joined on the phone, propped against the chalk box. Anaya was allowed to stay, which she understood was its own kind of announcement.\nHer father spoke first. He talked about the towers and the rents and the shoe-repair stall that had disappeared. He talked about Samir in the cold city and Anaya's exam and the electricity bill. 'If we sell,' he said, 'my children stop paying for my shop.' He said it plainly, without self-pity, and Anaya realised he had been saying it to himself for a long time.\nPriya spoke next. She was not against selling. She was against selling everything. 'The street is changing,' she said. 'Fine. People in the towers will still need clothes that fit. Maybe they need us more than they know.'\nSamir, crackling across the ocean, said he would support whatever they decided. Then he added, 'But don't do it because of me.'\nFinally, everyone looked at Nani.\nShe did not answer at once. Instead, she reached under the counter and took out something Anaya had never seen: a small, black, hand-turned sewing machine, its gold lettering almost rubbed away. She set it on the table between the letter and the list.\n'I came to this city with this,' she said, 'and one suitcase, and your grandfather, who could not sew at all. We rented a corner of a stairway. I made school uniforms for people who paid me in rice when they had no money. After five years we rented this room. After twenty years we bought it.' She turned the little handle, and the needle went up and down, up and down, with a sound like a small heart. 'I am not telling you this so you will feel guilty. I am telling you so you know what it is that you are selling. Then you can decide.'\nNobody spoke. Outside a bus went past, its lights sweeping across the photographs of brides and grooms.\nAnaya looked at the three sheets of paper and then at the machine. The papers told her what the shop was worth. The machine told her what it meant. She had always thought those were the same thing. Now she saw that the whole argument, every argument they had ever had, lived in the space between them.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, when is the family meeting held?",
+       "options": [
+        "On Monday night after closing",
+        "On Sunday morning",
+        "During the street fair",
+        "At the bank"
+       ],
+       "answer": "On Monday night after closing",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what heading is written on the father's list?",
+       "options": [],
+       "answer": "What We Owe",
+       "accept": [
+        "what we owe"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is the father's main reason for selling?",
+       "options": [
+        "So his children stop paying for the shop",
+        "He wants to retire to the countryside",
+        "He dislikes sewing",
+        "The building is falling down"
+       ],
+       "answer": "So his children stop paying for the shop",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is Priya's position?",
+       "options": [
+        "She does not want to sell everything",
+        "She wants to sell immediately",
+        "She wants to move abroad",
+        "She refuses to speak"
+       ],
+       "answer": "She does not want to sell everything",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what object does Nani bring out?",
+       "options": [
+        "A small hand-turned sewing machine",
+        "An old photograph",
+        "A wedding ring",
+        "A bank statement"
+       ],
+       "answer": "A small hand-turned sewing machine",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how did Nani's customers sometimes pay her in the early years?",
+       "options": [
+        "With rice",
+        "With buttons",
+        "With cloth",
+        "With nothing at all"
+       ],
+       "answer": "With rice",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is the difference Anaya notices between the papers and the machine?",
+       "options": [
+        "The papers show the shop's worth; the machine shows its meaning",
+        "The papers are new; the machine is old",
+        "The papers are true; the machine is false",
+        "The papers belong to her father; the machine belongs to Samir"
+       ],
+       "answer": "The papers show the shop's worth; the machine shows its meaning",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Nani says she is not trying to make the family feel guilty?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The New Sign",
+     "synopsis": "The family reaches a compromise with the developer, and Anaya paints a new sign for the shop that joins the past and the future.",
+     "text": "The agreement took three weeks and more cups of tea than anyone could count. In the end, the young man from the flood came back with a different folder. The company would buy the two floors above the shop, where nobody had lived since Samir left. The shop itself, the window and the cutting table and forty years of photographs, would stay with the family. The tower that rose behind it would have a gap at its feet, shaped exactly like a tailor's.\nIt was not what anyone had wanted at the beginning. Her father had wanted the worry to end; it was smaller now, but it had not ended. Priya had wanted to keep everything; she had kept the part that mattered most. Nani had said nothing at all about the agreement, but on the day it was signed she sewed in the window wearing her best earrings.\nThe money paid the debts. Some of it went into the bank for Samir, in case he ever wanted to come home and needed a place to start. And some of it, at Priya's insistence, bought a second-hand computer and a pattern-cutting program, so she could finally make the sharp collars and clever sleeves that lived on the paper above her machine.\nAnaya's job was the sign.\nThe old one had hung above the door since before she was born. It said only the family name, in red letters that the sun had turned the colour of weak tea. Her father wanted a new sign in the same style. Priya wanted something modern. They looked at Anaya.\nShe took a week. She painted the family name exactly as it had been, in the same red, in the same old-fashioned letters. Underneath, in a smaller, cleaner style, she added two lines. The first said: Est. by Kamala, with one machine. The second said: Made to fit, for the next forty years.\nWhen they hung it, Mr Okafor came out of the bakery to look and declared it the finest sign on the street, which was easy, as most of the new signs were just glowing numbers. The two sisters from the phone-repair stall took a photograph. Samir, watching on a video call, went very quiet and then pretended he had something in his eye.\nThat evening the scholarship letter came. Anaya opened it at the cutting table, under the poor light, with the smell of chalk and steam around her. She had been offered a place.\nShe did not know yet what she would choose, or what it would cost, or who would pay it. But she knew now that the shop was not a question with one answer. It was a conversation, and she was part of it.\nIn the window, Nani held up a finished sleeve to the light. Outside, someone clapped.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the company finally buy?",
+       "options": [
+        "The two floors above the shop",
+        "The whole building",
+        "The shop window only",
+        "Nothing at all"
+       ],
+       "answer": "The two floors above the shop",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Nani show her feelings on the day the agreement is signed?",
+       "options": [
+        "She wears her best earrings",
+        "She makes a speech",
+        "She refuses to sew",
+        "She leaves the shop"
+       ],
+       "answer": "She wears her best earrings",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Priya buy with some of the money?",
+       "options": [
+        "A second-hand computer and pattern-cutting program",
+        "A new sewing machine",
+        "A car",
+        "A ticket to visit Samir"
+       ],
+       "answer": "A second-hand computer and pattern-cutting program",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what colour are the letters of the family name on the sign?",
+       "options": [],
+       "answer": "red",
+       "accept": [
+        "Red"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Anaya's sign combine her parents' wishes?",
+       "options": [
+        "It keeps the old style and adds new lines in a modern style",
+        "It is completely modern",
+        "It copies the old sign exactly",
+        "It uses only numbers"
+       ],
+       "answer": "It keeps the old style and adds new lines in a modern style",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Samir pretend he has something in his eye?",
+       "options": [
+        "He is moved and trying to hide his tears",
+        "He has an infection",
+        "The camera is blurry",
+        "He is joking with Mr Okafor"
+       ],
+       "answer": "He is moved and trying to hide his tears",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does the final image echo the beginning of the first chapter?",
+       "options": [
+        "It shows that some things in the family's life continue",
+        "It shows nothing has changed at all",
+        "It shows Nani is leaving",
+        "It shows the shop has closed"
+       ],
+       "answer": "It shows that some things in the family's life continue",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Anaya decides the shop is 'a conversation' rather than 'a question with one answer'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }

@@ -1039,6 +1039,966 @@
      "errors": []
     }
    ]
+  },
+  "ipc": {
+   "topic": "Seasons: how plants and trees change through the year",
+   "questions": [
+    {
+     "id": "r11rq2nn6zcnji",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which part of a tree changes colour in autumn?",
+     "options": [
+      "The leaves",
+      "The roots",
+      "The trunk"
+     ],
+     "answer": "The leaves",
+     "accept": [],
+     "hint": "Look up at the branches.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rirzj811cudtkn",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "In which season do many trees lose their leaves?",
+     "options": [
+      "Autumn",
+      "Summer",
+      "Spring"
+     ],
+     "answer": "Autumn",
+     "accept": [],
+     "hint": "It comes after summer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri4ux6j2bxfzl",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "A tree that loses all its leaves in autumn is called…",
+     "options": [
+      "deciduous",
+      "evergreen",
+      "a flower"
+     ],
+     "answer": "deciduous",
+     "accept": [],
+     "hint": "It is the longer word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v6ef88emccu9",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "A tree that keeps green leaves all year is called…",
+     "options": [
+      "evergreen",
+      "deciduous",
+      "bare"
+     ],
+     "answer": "evergreen",
+     "accept": [],
+     "hint": "Its name tells you it is always green.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kczksd6vh5oq",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which tree is evergreen?",
+     "options": [
+      "A pine tree",
+      "An oak tree",
+      "An apple tree"
+     ],
+     "answer": "A pine tree",
+     "accept": [],
+     "hint": "Think of a tree with green needles in winter.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h190ky1htt3re",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "In spring, what grows on many trees?",
+     "options": [
+      "New leaves and flowers",
+      "Snow",
+      "Dry brown leaves"
+     ],
+     "answer": "New leaves and flowers",
+     "accept": [],
+     "hint": "Spring is a time when things start to grow.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18srufqhtoq49",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What colour are most leaves in summer?",
+     "options": [
+      "Green",
+      "Orange",
+      "White"
+     ],
+     "answer": "Green",
+     "accept": [],
+     "hint": "Think of a park on a hot day.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ykxtxdsbrnir",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What do bare trees look like in winter?",
+     "options": [
+      "They have no leaves",
+      "They are full of flowers",
+      "They have green leaves"
+     ],
+     "answer": "They have no leaves",
+     "accept": [],
+     "hint": "Bare means nothing is covering it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o3ms5xuuv0yz",
+     "subject": "ipc",
+     "type": "short",
+     "q": "Which season comes after winter?",
+     "options": [],
+     "answer": "spring",
+     "accept": [
+      "Spring"
+     ],
+     "hint": "Flowers start to open in this season.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xeia3mzd4icm",
+     "subject": "ipc",
+     "type": "short",
+     "q": "Which season comes after summer?",
+     "options": [],
+     "answer": "autumn",
+     "accept": [
+      "Autumn",
+      "fall",
+      "Fall"
+     ],
+     "hint": "Leaves begin to fall in this season.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3ykny6cuxbve",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "When you observe a tree, you…",
+     "options": [
+      "look at it carefully",
+      "cut it down",
+      "paint it"
+     ],
+     "answer": "look at it carefully",
+     "accept": [],
+     "hint": "Use your eyes like a scientist.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rt03b7o5kuo2",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which of these is a change you might see on a tree in autumn?",
+     "options": [
+      "Leaves turn yellow and red",
+      "Leaves turn blue",
+      "The tree grows a new trunk"
+     ],
+     "answer": "Leaves turn yellow and red",
+     "accept": [],
+     "hint": "Think of warm colours.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rukczxk1a4aebc",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which part of a tree holds it in the ground?",
+     "options": [
+      "The roots",
+      "The leaves",
+      "The flowers"
+     ],
+     "answer": "The roots",
+     "accept": [],
+     "hint": "This part is hidden under the soil.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16j4iyw1w6pmoi",
+     "subject": "ipc",
+     "type": "short",
+     "q": "How many seasons are there in a year?",
+     "options": [],
+     "answer": "4",
+     "accept": [
+      "four",
+      "Four"
+     ],
+     "hint": "Spring, summer… keep counting!",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6crr1ss9m7m4",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Choose a tree near you. Say one thing you notice about its leaves today.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the colour, size or how many leaves there are.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3nlrkhfbvjyi",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Why do you think we see fallen leaves on the ground in autumn?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what deciduous trees do in autumn.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Addition within 20",
+   "questions": [
+    {
+     "id": "rken3pgptx4dy",
+     "subject": "math",
+     "type": "num",
+     "q": "10 + 3 = ?",
+     "options": [],
+     "answer": "13",
+     "accept": [],
+     "hint": "Ten and three more.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5nfb3sspo2ol",
+     "subject": "math",
+     "type": "num",
+     "q": "5 + 4 = ?",
+     "options": [],
+     "answer": "9",
+     "accept": [],
+     "hint": "Start at 5 and count on 4.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr92ebedyd0om",
+     "subject": "math",
+     "type": "num",
+     "q": "Count on from the larger number: 2 + 8 = ?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Start at 8, not 2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1puneokdcogou",
+     "subject": "math",
+     "type": "num",
+     "q": "12 + 3 = ?",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Start at 12 and count on 3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rup26pcny5xuu",
+     "subject": "math",
+     "type": "num",
+     "q": "14 + 5 = ?",
+     "options": [],
+     "answer": "19",
+     "accept": [],
+     "hint": "4 + 5 = 9, so 14 + 5 = 1…",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dwsjwcm9ied2",
+     "subject": "math",
+     "type": "num",
+     "q": "11 + 6 = ?",
+     "options": [],
+     "answer": "17",
+     "accept": [],
+     "hint": "1 + 6 = 7.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs3397oq10d10",
+     "subject": "math",
+     "type": "num",
+     "q": "3 + 13 = ?",
+     "options": [],
+     "answer": "16",
+     "accept": [],
+     "hint": "Start at the larger number, 13.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwhvd45a3pj0n",
+     "subject": "math",
+     "type": "num",
+     "q": "9 + 1 = ?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "This is a number bond to 10.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "runsuqx8pa8cr",
+     "subject": "math",
+     "type": "num",
+     "q": "7 + 3 = ?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Number bonds to 10 can help.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1axnisi18h4on0",
+     "subject": "math",
+     "type": "mc",
+     "q": "To work out 9 + 4, Lila makes ten first. Which is right?",
+     "options": [
+      "9 + 1 + 3",
+      "9 + 4 + 1",
+      "9 + 2 + 4"
+     ],
+     "answer": "9 + 1 + 3",
+     "accept": [],
+     "hint": "9 needs 1 more to make 10.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ak946l1y7kyt5",
+     "subject": "math",
+     "type": "num",
+     "q": "8 + 5 = ?",
+     "options": [],
+     "answer": "13",
+     "accept": [],
+     "hint": "8 + 2 makes 10. Then add the rest.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjjtzzdthcmxl",
+     "subject": "math",
+     "type": "num",
+     "q": "7 + 6 = ?",
+     "options": [],
+     "answer": "13",
+     "accept": [],
+     "hint": "7 + 3 = 10, then 3 more.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv4rio51dp7tkn",
+     "subject": "math",
+     "type": "num",
+     "q": "9 + 9 = ?",
+     "options": [],
+     "answer": "18",
+     "accept": [],
+     "hint": "9 + 1 = 10, then 8 more.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bup8sos1xs5h",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which is the best number to start counting on from in 4 + 15?",
+     "options": [
+      "15",
+      "4",
+      "10"
+     ],
+     "answer": "15",
+     "accept": [],
+     "hint": "Start from the larger number.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt750htnkq2m3",
+     "subject": "math",
+     "type": "num",
+     "q": "Omar has 6 red cars and 7 blue cars. How many cars does he have in total?",
+     "options": [],
+     "answer": "13",
+     "accept": [],
+     "hint": "Make 10 first: 7 + 3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9k53creal7wd",
+     "subject": "math",
+     "type": "num",
+     "q": "There are 15 apples in a box. Mum adds 4 more. What is the total?",
+     "options": [],
+     "answer": "19",
+     "accept": [],
+     "hint": "Start at 15 and count on 4.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Convite de aniversário: para que serve",
+   "questions": [
+    {
+     "id": "r1ntps684voia1",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Para que serve um convite de aniversário?",
+     "options": [
+      "Para chamar as pessoas para a festa",
+      "Para ensinar uma receita",
+      "Para contar uma história de dragão"
+     ],
+     "answer": "Para chamar as pessoas para a festa",
+     "accept": [],
+     "hint": "Pense em quem recebe o convite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xn4pvnfihw5m",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em um convite, o que é a data?",
+     "options": [
+      "O dia da festa",
+      "O lugar da festa",
+      "O nome do bolo"
+     ],
+     "answer": "O dia da festa",
+     "accept": [],
+     "hint": "Olhe no calendário.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y2r9xxcjvqz7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em um convite, o que é o local?",
+     "options": [
+      "O lugar onde vai ser a festa",
+      "A hora da festa",
+      "A idade do aniversariante"
+     ],
+     "answer": "O lugar onde vai ser a festa",
+     "accept": [],
+     "hint": "Responde à pergunta: onde?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8czwt4tz13u1",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas informações é uma hora?",
+     "options": [
+      "Às 15h",
+      "Rua das Flores, 20",
+      "Sábado, 10 de maio"
+     ],
+     "answer": "Às 15h",
+     "accept": [],
+     "hint": "Procure o número com h.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rancb1u1xboubl",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas informações é um local?",
+     "options": [
+      "Salão de festas do prédio",
+      "Às 16h",
+      "Domingo"
+     ],
+     "answer": "Salão de festas do prédio",
+     "accept": [],
+     "hint": "É um lugar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtu4uib1uldodb",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas informações é uma data?",
+     "options": [
+      "Sábado, 12 de junho",
+      "Às 10h",
+      "Na casa da vovó"
+     ],
+     "answer": "Sábado, 12 de junho",
+     "accept": [],
+     "hint": "Tem dia e mês.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt7zym51blj23r",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Leia: \"Venha comemorar os 6 anos da Bia! Sábado, às 15h, na Rua do Sol, 8.\" Quantos anos a Bia vai fazer?",
+     "options": [
+      "6",
+      "8",
+      "15"
+     ],
+     "answer": "6",
+     "accept": [],
+     "hint": "Procure a palavra anos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrr375kd1xcbb",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Leia: \"Venha comemorar os 6 anos da Bia! Sábado, às 15h, na Rua do Sol, 8.\" Em que dia da semana é a festa?",
+     "options": [
+      "Sábado",
+      "Domingo",
+      "Segunda-feira"
+     ],
+     "answer": "Sábado",
+     "accept": [],
+     "hint": "É um dia do fim de semana.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r131h3so1xt89x3",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Leia: \"Venha comemorar os 6 anos da Bia! Sábado, às 15h, na Rua do Sol, 8.\" Qual é a hora da festa?",
+     "options": [
+      "Às 15h",
+      "Às 8h",
+      "Às 6h"
+     ],
+     "answer": "Às 15h",
+     "accept": [],
+     "hint": "Procure o número com h.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r148w3ambfyen8",
+     "subject": "pt",
+     "type": "short",
+     "q": "Leia: \"Festa do Téo! Domingo, às 10h, no Parque Verde.\" Qual é o local da festa?",
+     "options": [],
+     "answer": "Parque Verde",
+     "accept": [
+      "parque verde",
+      "no Parque Verde",
+      "o Parque Verde",
+      "parque"
+     ],
+     "hint": "Onde as crianças vão brincar?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd5bcvoiwy939",
+     "subject": "pt",
+     "type": "short",
+     "q": "Leia: \"Festa do Téo! Domingo, às 10h, no Parque Verde.\" De quem é a festa?",
+     "options": [],
+     "answer": "Téo",
+     "accept": [
+      "teo",
+      "Teo",
+      "do Téo"
+     ],
+     "hint": "Procure um nome.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f2r7nqd2daci",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que NÃO precisa estar em um convite?",
+     "options": [
+      "A cor da sua mochila",
+      "A data",
+      "O local"
+     ],
+     "answer": "A cor da sua mochila",
+     "accept": [],
+     "hint": "Pense no que os convidados precisam saber.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri5sbwez20wu7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Se o convite não tiver a hora, o que pode acontecer?",
+     "options": [
+      "Os convidados não sabem quando chegar",
+      "A festa fica mais bonita",
+      "O bolo fica maior"
+     ],
+     "answer": "Os convidados não sabem quando chegar",
+     "accept": [],
+     "hint": "A hora diz quando a festa começa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16o326ld3bldt",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase é boa para começar um convite?",
+     "options": [
+      "Venha para a minha festa!",
+      "Era uma vez um lobo.",
+      "Lave as mãos antes de comer."
+     ],
+     "answer": "Venha para a minha festa!",
+     "accept": [],
+     "hint": "Um convite chama a pessoa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f0kpfe39yct5",
+     "subject": "pt",
+     "type": "open",
+     "q": "Imagine sua festa de aniversário. Diga para o professor escrever: o dia, a hora e o lugar.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Lembre: quando? que horas? onde?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhujyq0e46cjc",
+     "subject": "pt",
+     "type": "open",
+     "q": "Por que é importante colocar o local no convite?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense nos convidados indo para a festa.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Diversidade e identidade: \"Menina Bonita do Laço de Fita\" (Ana Maria Machado)",
+   "questions": [
+    {
+     "id": "rhp3s2chv08qs",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na história \"Menina Bonita do Laço de Fita\", qual animal queria ficar pretinho como a menina?",
+     "options": [
+      "Um coelho",
+      "Um gato",
+      "Um cachorro"
+     ],
+     "answer": "Um coelho",
+     "accept": [],
+     "hint": "É um bichinho branco de orelhas compridas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8g61qm1vg3ql",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "De que cor era o coelho no começo da história?",
+     "options": [
+      "Branco",
+      "Preto",
+      "Marrom"
+     ],
+     "answer": "Branco",
+     "accept": [],
+     "hint": "Ele queria ter uma cor diferente da dele.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c2d9pj1vl0kqj",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que a menina usava no cabelo?",
+     "options": [
+      "Um laço de fita",
+      "Um chapéu",
+      "Uma coroa"
+     ],
+     "answer": "Um laço de fita",
+     "accept": [],
+     "hint": "Está no nome da história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19a3hq5puthjz",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O coelho achava a menina…",
+     "options": [
+      "muito bonita",
+      "muito chata",
+      "muito brava"
+     ],
+     "answer": "muito bonita",
+     "accept": [],
+     "hint": "Também está no nome da história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pa08hs1fvhrs1",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No final, a mãe da menina explica que ela parecia com…",
+     "options": [
+      "a avó",
+      "o coelho",
+      "a vizinha"
+     ],
+     "answer": "a avó",
+     "accept": [],
+     "hint": "Pense em quem é da família.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1urcveu16lxtvr",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que nos parecemos com pessoas da nossa família?",
+     "options": [
+      "Porque herdamos características delas",
+      "Porque comemos a mesma comida",
+      "Porque usamos a mesma roupa"
+     ],
+     "answer": "Porque herdamos características delas",
+     "accept": [],
+     "hint": "Pense no cabelo e nos olhos dos seus parentes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rexa6tx1xaizj0",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No final, os filhotes do coelho eram…",
+     "options": [
+      "de muitas cores",
+      "todos brancos",
+      "todos iguais"
+     ],
+     "answer": "de muitas cores",
+     "accept": [],
+     "hint": "Pense em diversidade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15a39c2dqo836",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que quer dizer diversidade?",
+     "options": [
+      "As pessoas são diferentes umas das outras",
+      "Todo mundo é igual",
+      "Só uma cor é bonita"
+     ],
+     "answer": "As pessoas são diferentes umas das outras",
+     "accept": [],
+     "hint": "Olhe para os colegas da sua sala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1plx6dgeb71my",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual atitude mostra respeito?",
+     "options": [
+      "Brincar com todos os colegas",
+      "Rir do cabelo de um colega",
+      "Deixar um colega de fora"
+     ],
+     "answer": "Brincar com todos os colegas",
+     "accept": [],
+     "hint": "Pense em como você gosta de ser tratado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1adwacm8cbp7o",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Ana tem cabelo cacheado e Léo tem cabelo liso. O que é verdade?",
+     "options": [
+      "Os dois cabelos são bonitos",
+      "Só o cabelo liso é bonito",
+      "Só o cabelo cacheado é bonito"
+     ],
+     "answer": "Os dois cabelos são bonitos",
+     "accept": [],
+     "hint": "Cada um é de um jeito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbr846zq76iq",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Identidade é…",
+     "options": [
+      "o jeito de ser de cada pessoa",
+      "o nome de um animal",
+      "um tipo de bolo"
+     ],
+     "answer": "o jeito de ser de cada pessoa",
+     "accept": [],
+     "hint": "Pense no que faz você ser você.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzf7lyjo5nie5",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual frase é gentil?",
+     "options": [
+      "Que legal o seu jeito!",
+      "Você é esquisito.",
+      "Não quero você aqui."
+     ],
+     "answer": "Que legal o seu jeito!",
+     "accept": [],
+     "hint": "Escolha a frase que deixa o colega feliz.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1aaz3uc1iexlkb",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "As famílias são…",
+     "options": [
+      "de muitos jeitos diferentes",
+      "todas iguais",
+      "sempre com quatro pessoas"
+     ],
+     "answer": "de muitos jeitos diferentes",
+     "accept": [],
+     "hint": "Pense nas famílias dos seus amigos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rykcwztdrfemw",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Complete: O mundo fica mais bonito com a ___ (pessoas diferentes juntas).",
+     "options": [],
+     "answer": "diversidade",
+     "accept": [
+      "Diversidade"
+     ],
+     "hint": "Começa com d e foi falada nesta semana.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gzww06f3j8bk",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Diga uma coisa sua que é parecida com alguém da sua família.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense nos olhos, no cabelo, no sorriso ou no jeito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2jz7vf1ex32ks",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Por que você acha que o coelho queria ficar parecido com a menina?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que ele achava dela.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
