@@ -948,6 +948,7 @@
      ]
     },
     {
+     "id": "rj7tayv1u4azzr",
      "subject": "en_spell",
      "type": "mc",
      "q": "Pick the correct spelling of \"carry\" + -ing.",
@@ -979,6 +980,7 @@
      "errors": []
     },
     {
+     "id": "r1fgajsvcw80xb",
      "subject": "en_spell",
      "type": "mc",
      "q": "Pick the correct spelling of \"study\" + -ing.",
@@ -1702,7 +1704,1446 @@
      "errors": []
     }
    ]
+  },
+  "pt_leit": {
+   "topic": "Lendas indígenas brasileiras: a lenda da mandioca",
+   "questions": [
+    {
+     "id": "r1r9ks9rr3scyy",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é uma lenda?",
+     "options": [
+      "Uma história antiga contada de geração em geração",
+      "Uma notícia de jornal",
+      "Uma receita de bolo",
+      "Uma lista de compras"
+     ],
+     "answer": "Uma história antiga contada de geração em geração",
+     "accept": [],
+     "hint": "Pense em histórias que os avós contam.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxm4okrpym9d4",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na lenda da mandioca, qual era o nome da menina?",
+     "options": [
+      "Mani",
+      "Iara",
+      "Ceci",
+      "Jaci"
+     ],
+     "answer": "Mani",
+     "accept": [],
+     "hint": "O nome dela aparece dentro da palavra mandioca.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wmn6wh19kj7d9",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "A lenda da mandioca explica a origem de quê?",
+     "options": [
+      "De uma planta",
+      "De um rio",
+      "Do sol",
+      "De um animal"
+     ],
+     "answer": "De uma planta",
+     "accept": [],
+     "hint": "A mandioca nasce da terra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cvhn6uft8k6j",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama a casa indígena onde Mani foi enterrada?",
+     "options": [],
+     "answer": "oca",
+     "accept": [
+      "a oca"
+     ],
+     "hint": "É uma palavra de três letras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzu1jgq1pcgate",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Como era a pele de Mani na lenda?",
+     "options": [
+      "Bem clarinha",
+      "Verde",
+      "Azul",
+      "Cheia de pintas"
+     ],
+     "answer": "Bem clarinha",
+     "accept": [],
+     "hint": "Pense na cor da raiz da mandioca por dentro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o5q0xx1clnh3i",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que nasceu no lugar onde Mani foi enterrada?",
+     "options": [
+      "Uma planta",
+      "Uma pedra",
+      "Um rio",
+      "Uma árvore de maçã"
+     ],
+     "answer": "Uma planta",
+     "accept": [],
+     "hint": "A lenda explica de onde veio um alimento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r128d6yb780w0n",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "De que cor é a raiz da mandioca por dentro?",
+     "options": [
+      "Branca",
+      "Vermelha",
+      "Roxa",
+      "Preta"
+     ],
+     "answer": "Branca",
+     "accept": [],
+     "hint": "Lembre da cor da pele de Mani.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r118qge5dygb1t",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Segundo a lenda, o nome mandioca vem de \"Mani\" + \"oca\". O que isso quer dizer?",
+     "options": [
+      "Casa de Mani",
+      "Flor de Mani",
+      "Rio de Mani",
+      "Pé de Mani"
+     ],
+     "answer": "Casa de Mani",
+     "accept": [],
+     "hint": "Oca é um tipo de moradia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzohu271gna159",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Como as pessoas da aldeia se sentiam em relação a Mani?",
+     "options": [
+      "Gostavam muito dela",
+      "Tinham medo dela",
+      "Não a conheciam",
+      "Ficavam bravas com ela"
+     ],
+     "answer": "Gostavam muito dela",
+     "accept": [],
+     "hint": "Ela era uma menina muito querida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdxi7o21dm6f4m",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na lenda, o que as pessoas faziam no lugar onde Mani foi enterrada?",
+     "options": [
+      "Regavam a terra",
+      "Construíam uma ponte",
+      "Jogavam bola",
+      "Faziam uma estrada"
+     ],
+     "answer": "Regavam a terra",
+     "accept": [],
+     "hint": "Plantas precisam de água.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8me70e1qq3pfi",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quem contava as lendas indígenas antigamente?",
+     "options": [
+      "Os mais velhos, contando de boca em boca",
+      "Os computadores",
+      "Os jornais",
+      "Os rádios"
+     ],
+     "answer": "Os mais velhos, contando de boca em boca",
+     "accept": [],
+     "hint": "As lendas eram ouvidas, não lidas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj1dn2qt20gsk",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destes alimentos é feito de mandioca?",
+     "options": [
+      "Farinha de mandioca",
+      "Pão de trigo",
+      "Arroz",
+      "Queijo"
+     ],
+     "answer": "Farinha de mandioca",
+     "accept": [],
+     "hint": "O nome do alimento já conta a resposta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v1xv7a14f9sbt",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual palavra quer dizer \"o jeito de viver, as festas e as histórias de um povo\"?",
+     "options": [
+      "Cultura",
+      "Lenda",
+      "Raiz",
+      "Oca"
+     ],
+     "answer": "Cultura",
+     "accept": [],
+     "hint": "É uma das palavras-chave da semana.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4v8r2le2d5p",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que os povos indígenas contavam a lenda da mandioca?",
+     "options": [
+      "Para explicar de onde veio a mandioca",
+      "Para ensinar a nadar",
+      "Para contar uma piada",
+      "Para dar uma notícia"
+     ],
+     "answer": "Para explicar de onde veio a mandioca",
+     "accept": [],
+     "hint": "Muitas lendas explicam a origem das coisas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12dn0jp1t65uzz",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Por que você acha que a mandioca era tão importante para os povos indígenas?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em como ela alimentava as pessoas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r597zm21osew9w",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Qual parte da lenda da mandioca você achou mais bonita? Por quê?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Lembre do começo, do meio e do fim da lenda.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_ort": {
+   "topic": "Encontros consonantais com L: pl, bl, cl, fl, gl",
+   "questions": [
+    {
+     "id": "rhp2ac3skk1f2",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra começa com BL?",
+     "options": [
+      "blusa",
+      "pluma",
+      "flor",
+      "clube"
+     ],
+     "answer": "blusa",
+     "accept": [],
+     "hint": "Leia só as duas primeiras letras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hyndydolsdv6",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra tem o encontro FL?",
+     "options": [
+      "flauta",
+      "placa",
+      "globo",
+      "claro"
+     ],
+     "answer": "flauta",
+     "accept": [],
+     "hint": "Procure o F junto do L.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11b2tkbc7l1g4",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual destas palavras tem o encontro GL?",
+     "options": [
+      "globo",
+      "bloco",
+      "pluma",
+      "atleta"
+     ],
+     "answer": "globo",
+     "accept": [],
+     "hint": "Procure o G junto do L.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlpuof2an9v2o",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: _ _aca (placa de rua)",
+     "options": [],
+     "answer": "placa",
+     "accept": [],
+     "hint": "Os lábios se fecham no começo da palavra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwk7z4iqx9t09",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: _ _ube (lugar para nadar e brincar)",
+     "options": [],
+     "answer": "clube",
+     "accept": [],
+     "hint": "Começa com o som de C.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qpnhd6tr6a2g",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: _ _or (o jardim tem uma linda ___)",
+     "options": [],
+     "answer": "flor",
+     "accept": [],
+     "hint": "Começa com F.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rppcvsx1jkm7ak",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: a_ _eta (pessoa que corre e pratica esportes)",
+     "options": [],
+     "answer": "atleta",
+     "accept": [],
+     "hint": "As letras que faltam são T e L.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb8ewksuz2i6v",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: _ _oco (de montar ou de anotar)",
+     "options": [],
+     "answer": "bloco",
+     "accept": [],
+     "hint": "Começa com B.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19sdcee11kcjgy",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a separação correta das sílabas de PLUMA?",
+     "options": [
+      "plu-ma",
+      "p-lu-ma",
+      "pl-uma",
+      "pluma"
+     ],
+     "answer": "plu-ma",
+     "accept": [],
+     "hint": "O P e o L ficam juntos na mesma sílaba.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqbopdy3po8bh",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a separação correta das sílabas de FLAUTA?",
+     "options": [
+      "flau-ta",
+      "f-lau-ta",
+      "fla-u-ta",
+      "fl-au-ta"
+     ],
+     "answer": "flau-ta",
+     "accept": [],
+     "hint": "AU fica junto na mesma sílaba.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra3ayc61nr4eo4",
+     "subject": "pt_ort",
+     "type": "num",
+     "q": "Quantas sílabas tem a palavra GLOBO?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Bata palmas para cada pedaço da palavra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rirbm0p1glcso7",
+     "subject": "pt_ort",
+     "type": "num",
+     "q": "Quantas sílabas tem a palavra ATLETA?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Bata palmas para cada pedaço da palavra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "regbztfb02klq",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está escrita corretamente?",
+     "options": [
+      "claro",
+      "calro",
+      "clalo",
+      "caro"
+     ],
+     "answer": "claro",
+     "accept": [],
+     "hint": "O C e o L ficam juntos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5ge9un19yxqxv",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado.",
+     "options": [],
+     "answer": "bulsa → blusa; cube → clube; fror → flor; fauta → flauta; gobo → globo",
+     "accept": [],
+     "hint": "Procure palavras em que falta o L ou em que trocaram o L.",
+     "text": "No sábado, Lia vestiu sua bulsa nova e foi ao cube com a família. Lá, ela viu uma fror amarela perto da piscina. O irmão dela tocou fauta na festa, e o pai mostrou um gobo com todos os países do mundo. Foi um dia muito alegre e divertido.",
+     "errors": [
+      {
+       "wrong": "bulsa",
+       "right": "blusa"
+      },
+      {
+       "wrong": "cube",
+       "right": "clube"
+      },
+      {
+       "wrong": "fror",
+       "right": "flor"
+      },
+      {
+       "wrong": "fauta",
+       "right": "flauta"
+      },
+      {
+       "wrong": "gobo",
+       "right": "globo"
+      }
+     ]
+    },
+    {
+     "id": "r12g43rbvmmu6",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 4 palavras escritas errado.",
+     "options": [],
+     "answer": "atreta → atleta; prluma → pluma; calro → claro; boco → bloco",
+     "accept": [],
+     "hint": "Leia devagar e veja onde o L sumiu ou virou R.",
+     "text": "O atreta corria muito rápido na pista. Na chegada, havia uma placa com o nome dele. Ele ganhou uma medalha leve como uma prluma. O céu estava calro e azul. Depois, ele anotou tudo num boco para lembrar daquele dia feliz.",
+     "errors": [
+      {
+       "wrong": "atreta",
+       "right": "atleta"
+      },
+      {
+       "wrong": "prluma",
+       "right": "pluma"
+      },
+      {
+       "wrong": "calro",
+       "right": "claro"
+      },
+      {
+       "wrong": "boco",
+       "right": "bloco"
+      }
+     ]
+    },
+    {
+     "id": "rmk3a9o1vy30dq",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a separação correta das sílabas de CLUBE?",
+     "options": [
+      "clu-be",
+      "c-lu-be",
+      "cl-ube",
+      "club-e"
+     ],
+     "answer": "clu-be",
+     "accept": [],
+     "hint": "O C e o L ficam juntos na mesma sílaba.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "Tainá e a Casa de Mani",
+   "premise": "Nas férias com a vovó Jaci, Tainá ouve a lenda indígena da mandioca e, episódio a episódio, planta, colhe e transforma a raiz, até ela mesma passar a lenda adiante.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A história na rede",
+     "synopsis": "Nas férias, Tainá visita a vovó Jaci, que conta na rede a lenda da menina Mani e da mandioca.",
+     "text": "Nas férias, Tainá foi visitar a vovó Jaci. A casa da vovó ficava perto de um rio, no meio de muitas árvores.\nÀ noite, as duas deitaram juntas na rede. Os grilos cantavam lá fora.\n— Vovó, conta uma história? — pediu Tainá.\n— Vou contar uma lenda que eu ouvi da minha avó — disse a vovó.\nE contou: há muito tempo, numa aldeia, nasceu uma menina de pele bem clarinha. O nome dela era Mani. Todos gostavam muito dela. Um dia, Mani dormiu e não acordou mais. A aldeia ficou triste e a enterrou dentro da oca, a casa onde ela morava. Todos os dias, as pessoas regavam a terra com carinho.\nAté que ali nasceu uma planta. Quando cavaram, acharam uma raiz branquinha como a pele de Mani. Chamaram a planta de mani-oca, a casa de Mani.\nTainá ficou pensando.\n— Vovó, eu quero ver uma mandioca de verdade!\n— Amanhã cedo, vamos à roça — sorriu a vovó.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem Tainá foi visitar nas férias?",
+       "options": [
+        "A vovó Jaci",
+        "A tia Lia",
+        "O primo Caio",
+        "A professora"
+       ],
+       "answer": "A vovó Jaci",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Tainá e a vovó deitaram para contar a história?",
+       "options": [
+        "Na rede",
+        "Na cama",
+        "No chão da sala",
+        "No barco"
+       ],
+       "answer": "Na rede",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de quem a vovó ouviu essa lenda?",
+       "options": [
+        "Da avó dela",
+        "De um livro",
+        "Da televisão",
+        "De um vizinho"
+       ],
+       "answer": "Da avó dela",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o nome da menina da lenda?",
+       "options": [],
+       "answer": "Mani",
+       "accept": [
+        "mani"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como era a pele de Mani?",
+       "options": [
+        "Bem clarinha",
+        "Bem escura",
+        "Cheia de pintas",
+        "Verde"
+       ],
+       "answer": "Bem clarinha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que as pessoas faziam todos os dias no lugar onde Mani foi enterrada?",
+       "options": [
+        "Regavam a terra",
+        "Faziam uma festa",
+        "Pescavam",
+        "Dormiam ali"
+       ],
+       "answer": "Regavam a terra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a planta recebeu o nome de mani-oca?",
+       "options": [
+        "Porque nasceu na casa de Mani",
+        "Porque era muito grande",
+        "Porque dava flores",
+        "Porque nasceu no rio"
+       ],
+       "answer": "Porque nasceu na casa de Mani",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a avó da vovó contava essa lenda para as crianças?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A raiz branquinha",
+     "synopsis": "Na roça, Tainá ajuda a vovó a arrancar um pé de mandioca e descobre como a raiz é por dentro.",
+     "text": "De manhã, Tainá e a vovó Jaci foram à roça. Havia muitas plantas altas, com folhas que pareciam mãos abertas.\n— Isso é mandioca? — perguntou Tainá.\n— É sim. Mas a parte que a gente come fica escondida debaixo da terra.\nA vovó segurou o caule com força e puxou. Tainá ajudou. As duas puxaram, puxaram… e plof! Caíram sentadas no chão, rindo. Na ponta do caule, saíram raízes compridas e marrons, sujas de terra.\nA vovó cortou uma raiz com a faca. Por dentro, ela era branquinha.\n— Igual à pele de Mani! — gritou Tainá.\n— Isso mesmo. Por isso a lenda diz que a raiz é branca.\nTainá quis morder um pedaço, mas a vovó segurou a mão dela.\n— Mandioca não se come crua. Ela precisa ser bem cozida antes.\nNa volta, Tainá levou a raiz no colo, como um tesouro.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com o que as folhas da mandioca pareciam?",
+       "options": [
+        "Mãos abertas",
+        "Corações",
+        "Estrelas",
+        "Penas"
+       ],
+       "answer": "Mãos abertas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde fica a parte da mandioca que a gente come?",
+       "options": [
+        "Debaixo da terra",
+        "No alto da planta",
+        "Nas flores",
+        "Nas folhas"
+       ],
+       "answer": "Debaixo da terra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu quando as duas puxaram o pé de mandioca?",
+       "options": [
+        "Caíram sentadas no chão, rindo",
+        "O caule quebrou",
+        "Começou a chover",
+        "A vovó se machucou"
+       ],
+       "answer": "Caíram sentadas no chão, rindo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor eram as raízes por fora?",
+       "options": [
+        "Marrons",
+        "Brancas",
+        "Amarelas",
+        "Vermelhas"
+       ],
+       "answer": "Marrons",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que cor era a raiz por dentro?",
+       "options": [],
+       "answer": "branca",
+       "accept": [
+        "branquinha"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a vovó segurou a mão de Tainá?",
+       "options": [
+        "Porque mandioca não se come crua",
+        "Porque a raiz estava suja de tinta",
+        "Porque era hora de dormir",
+        "Porque a raiz era dela"
+       ],
+       "answer": "Porque mandioca não se come crua",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tainá levou a raiz \"como um tesouro\"?",
+       "options": [
+        "Porque a raiz era muito especial para ela",
+        "Porque a raiz era de ouro",
+        "Porque a vovó mandou esconder",
+        "Porque estava muito pesada"
+       ],
+       "answer": "Porque a raiz era muito especial para ela",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Tainá lembrou de Mani quando viu a raiz?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Um pedaço de caule",
+     "synopsis": "Tainá aprende que a mandioca nasce de um pedaço do caule e planta a sua própria muda.",
+     "text": "Depois do almoço, a vovó deu a Tainá um pedaço de caule de mandioca, do tamanho de um palmo.\n— Isto se chama maniva. Vamos plantar?\n— Um pedaço de pau vira planta? — Tainá riu, sem acreditar.\n— Vira, sim. A mandioca não precisa de semente. Basta enterrar a maniva.\nAs duas cavaram um buraco na terra fofa. Tainá colocou a maniva, cobriu com terra e bateu de leve com as mãos. Depois, regou com um regador azul.\n— Agora é preciso esperar — disse a vovó. — A mandioca demora muitos meses para dar raízes grandes.\n— Muitos meses? — Tainá suspirou.\nEla lembrou da lenda. Na aldeia, as pessoas também regavam a terra todos os dias e esperavam com paciência.\nTainá fez uma plaquinha de madeira e escreveu: \"Planta da Tainá\". Fincou a placa ao lado da maniva e prometeu voltar para ver a planta crescer.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a vovó deu a Tainá depois do almoço?",
+       "options": [
+        "Um pedaço de caule de mandioca",
+        "Um saco de sementes",
+        "Uma flor",
+        "Um livro de lendas"
+       ],
+       "answer": "Um pedaço de caule de mandioca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do pedaço de caule usado para plantar mandioca?",
+       "options": [],
+       "answer": "maniva",
+       "accept": [
+        "a maniva"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tainá riu?",
+       "options": [
+        "Ela não acreditava que um pedaço de pau virasse planta",
+        "A vovó contou uma piada",
+        "Ela caiu na terra",
+        "Um cachorro pulou nela"
+       ],
+       "answer": "Ela não acreditava que um pedaço de pau virasse planta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor era o regador?",
+       "options": [
+        "Azul",
+        "Vermelho",
+        "Verde",
+        "Amarelo"
+       ],
+       "answer": "Azul",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quanto tempo a mandioca demora para dar raízes grandes?",
+       "options": [
+        "Muitos meses",
+        "Um dia",
+        "Uma hora",
+        "Uma semana"
+       ],
+       "answer": "Muitos meses",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Tainá escreveu na plaquinha?",
+       "options": [
+        "Planta da Tainá",
+        "Casa de Mani",
+        "Não pise",
+        "Mandioca da vovó"
+       ],
+       "answer": "Planta da Tainá",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tainá lembrou da lenda?",
+       "options": [
+        "Porque a aldeia também regava a terra e esperava",
+        "Porque viu uma oca",
+        "Porque a vovó cantou",
+        "Porque achou uma raiz"
+       ],
+       "answer": "Porque a aldeia também regava a terra e esperava",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Tainá fez uma placa para a planta?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O cesto que espreme",
+     "synopsis": "Com o primo Caio, Tainá ajuda a fazer farinha de mandioca e conhece o tipiti.",
+     "text": "No dia seguinte, o primo Caio chegou para ajudar a fazer farinha. A vovó colocou um monte de mandiocas numa bacia.\nPrimeiro, todos descascaram as raízes. Depois, a vovó ralou a mandioca, que virou uma massa branca e molhada.\n— E agora? — perguntou Caio.\nA vovó mostrou um cesto comprido, trançado de palha.\n— Este é o tipiti. Ele serve para espremer a massa e tirar o caldo.\nEles encheram o tipiti com a massa. A vovó pendurou o cesto num galho e Tainá e Caio puxaram a ponta de baixo. O cesto ficou fino e comprido, e o caldo pingou numa bacia.\n— Parece uma cobra se esticando! — disse Caio.\nDepois, a massa seca foi para um forno grande e quente. A vovó mexeu, mexeu, até a farinha ficar sequinha e cheirosa.\nNo jantar, todos comeram feijão com farinha. Tainá achou que era a farinha mais gostosa do mundo, porque ela tinha ajudado a fazer.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem chegou para ajudar a fazer farinha?",
+       "options": [
+        "O primo Caio",
+        "A mãe de Tainá",
+        "Um vizinho",
+        "A professora"
+       ],
+       "answer": "O primo Caio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o primeiro passo para fazer a farinha?",
+       "options": [
+        "Descascar as raízes",
+        "Torrar no forno",
+        "Espremer no cesto",
+        "Comer com feijão"
+       ],
+       "answer": "Descascar as raízes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como ficou a mandioca depois de ralada?",
+       "options": [
+        "Uma massa branca e molhada",
+        "Um pó marrom",
+        "Um suco verde",
+        "Pedaços duros"
+       ],
+       "answer": "Uma massa branca e molhada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do cesto trançado que espreme a massa?",
+       "options": [],
+       "answer": "tipiti",
+       "accept": [
+        "o tipiti"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com o que Caio comparou o tipiti esticado?",
+       "options": [
+        "Uma cobra",
+        "Uma escada",
+        "Um rio",
+        "Uma corda de pular"
+       ],
+       "answer": "Uma cobra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para onde a massa seca foi depois?",
+       "options": [
+        "Para um forno grande e quente",
+        "Para a geladeira",
+        "Para o rio",
+        "Para a rede"
+       ],
+       "answer": "Para um forno grande e quente",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tainá achou a farinha a mais gostosa do mundo?",
+       "options": [
+        "Porque ela tinha ajudado a fazer",
+        "Porque tinha açúcar",
+        "Porque era comprada",
+        "Porque era colorida"
+       ],
+       "answer": "Porque ela tinha ajudado a fazer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que é preciso trabalhar em equipe para fazer farinha?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Beiju para todos",
+     "synopsis": "Com a goma branca da mandioca, a vovó ensina Tainá e Caio a fazer beiju para dividir com os vizinhos.",
+     "text": "Na bacia onde o caldo do tipiti pingou, apareceu no fundo um pó branco e pesado.\n— Isso é a goma — explicou a vovó. — Com ela a gente faz beiju.\nA vovó esquentou uma chapa. Tainá espalhou a goma com uma colher, bem fininha. Aos poucos, o pó grudou e virou um disco branco e macio.\n— Que mágica! — disse Caio.\n— Não é mágica, é o calor — riu a vovó.\nEles dobraram o beiju ao meio e colocaram coco ralado dentro. Fizeram um, dois, dez beijus! Era demais para três pessoas.\n— Vamos levar para os vizinhos? — sugeriu Tainá.\nOs três foram de casa em casa com uma cesta cheia. Dona Moema ganhou dois. Seu Ubiratã ganhou três e contou uma história de pescaria.\nNa volta, a cesta estava vazia, mas Tainá estava feliz.\n— A vovó da lenda também dividia a comida? — perguntou ela.\n— Dividir é um jeito de cuidar — respondeu a vovó.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que apareceu no fundo da bacia?",
+       "options": [
+        "Um pó branco e pesado",
+        "Uma pedra",
+        "Um peixe",
+        "Água azul"
+       ],
+       "answer": "Um pó branco e pesado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama o pó branco usado para fazer beiju?",
+       "options": [],
+       "answer": "goma",
+       "accept": [
+        "a goma"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a goma foi espalhada?",
+       "options": [
+        "Numa chapa quente",
+        "Numa folha de papel",
+        "No chão",
+        "Na rede"
+       ],
+       "answer": "Numa chapa quente",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a vovó, o que fez a goma virar beiju?",
+       "options": [
+        "O calor",
+        "Uma mágica",
+        "O vento",
+        "A chuva"
+       ],
+       "answer": "O calor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que colocaram dentro do beiju?",
+       "options": [
+        "Coco ralado",
+        "Chocolate",
+        "Queijo",
+        "Banana"
+       ],
+       "answer": "Coco ralado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantos beijus Seu Ubiratã ganhou?",
+       "options": [
+        "Três",
+        "Dois",
+        "Um",
+        "Dez"
+       ],
+       "answer": "Três",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tainá estava feliz mesmo com a cesta vazia?",
+       "options": [
+        "Porque tinha dividido os beijus com os vizinhos",
+        "Porque ganhou um presente",
+        "Porque comeu todos os beijus",
+        "Porque perdeu a cesta"
+       ],
+       "answer": "Porque tinha dividido os beijus com os vizinhos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "O que você acha que a vovó quis dizer com \"dividir é um jeito de cuidar\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Tainá conta a lenda",
+     "synopsis": "De volta à escola, Tainá conta a lenda de Mani para a turma e explica o que a lenda quer dizer.",
+     "text": "As férias acabaram e Tainá voltou para a escola na cidade. A professora Celina pediu:\n— Quem quer contar uma história das férias?\nTainá levantou a mão bem alto. Ela contou a lenda de Mani, igualzinho à vovó: a menina querida, a oca, a terra regada e a raiz branca.\n— Mani-oca quer dizer casa de Mani — terminou Tainá.\nO colega Davi franziu a testa.\n— Mas isso aconteceu de verdade?\nTainá pensou um pouco.\n— A vovó diz que lenda é uma história antiga, que os povos indígenas contam para explicar como as coisas surgiram. Esta explica de onde veio a mandioca.\n— E por que a mandioca era tão importante? — perguntou a colega Bia.\n— Porque dela se faz farinha, beiju e muitas comidas. Ela alimenta muita gente até hoje!\nA professora sorriu.\n— As lendas fazem parte da cultura de um povo. Quando a gente conta, a história continua viva.\nTainá sentiu o peito quentinho de orgulho.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a professora Celina pediu à turma?",
+       "options": [
+        "Que alguém contasse uma história das férias",
+        "Que todos desenhassem uma flor",
+        "Que fizessem uma prova",
+        "Que lessem em silêncio"
+       ],
+       "answer": "Que alguém contasse uma história das férias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Tainá contou a lenda?",
+       "options": [
+        "Igualzinho à vovó",
+        "Lendo um livro",
+        "Cantando uma música",
+        "Com um vídeo"
+       ],
+       "answer": "Igualzinho à vovó",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o colega Davi quis saber?",
+       "options": [
+        "Se a lenda tinha acontecido de verdade",
+        "Onde a vovó morava",
+        "Como se faz beiju",
+        "Qual era a cor da oca"
+       ],
+       "answer": "Se a lenda tinha acontecido de verdade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Tainá, para que os povos indígenas contam lendas?",
+       "options": [
+        "Para explicar como as coisas surgiram",
+        "Para dar notícias",
+        "Para vender comida",
+        "Para ensinar matemática"
+       ],
+       "answer": "Para explicar como as coisas surgiram",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem perguntou por que a mandioca era tão importante?",
+       "options": [
+        "Bia",
+        "Davi",
+        "Caio",
+        "A vovó"
+       ],
+       "answer": "Bia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, as lendas fazem parte de quê?",
+       "options": [
+        "Da cultura de um povo",
+        "De uma receita",
+        "Do jornal",
+        "Das regras da escola"
+       ],
+       "answer": "Da cultura de um povo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Tainá se sentiu no final?",
+       "options": [
+        "Orgulhosa",
+        "Com medo",
+        "Com sono",
+        "Brava"
+       ],
+       "answer": "Orgulhosa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que contar uma lenda faz a história \"continuar viva\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A planta da Tainá",
+     "synopsis": "Meses depois, Tainá volta à casa da vovó e encontra a sua maniva transformada numa planta alta.",
+     "text": "Muitos meses depois, chegaram as férias de novo. Tainá correu pela trilha até a roça da vovó Jaci.\n— Cadê a minha planta?\nAo lado da plaquinha \"Planta da Tainá\", havia um pé de mandioca mais alto que ela! As folhas, que pareciam mãos abertas, balançavam com o vento.\n— A maniva virou planta mesmo! — gritou Tainá.\n— Você plantou com carinho e a chuva ajudou a regar — disse a vovó.\nCaio também veio. Os três seguraram o caule e puxaram juntos. Desta vez, ninguém caiu. Debaixo da terra, havia raízes grossas e compridas.\nTainá cortou uma com cuidado. Era branquinha por dentro.\n— Oi, Mani — sussurrou ela, sorrindo.\nNaquela noite, na rede, foi Tainá quem contou a lenda para Caio. A vovó escutou de olhos fechados.\n— Agora a lenda é sua também — disse a vovó.\nTainá guardou um pedaço de caule. No ano seguinte, ela ia plantar outra maniva.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quanto tempo depois Tainá voltou à casa da vovó?",
+       "options": [
+        "Muitos meses depois",
+        "No dia seguinte",
+        "Uma hora depois",
+        "Dez anos depois"
+       ],
+       "answer": "Muitos meses depois",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde estava a planta de Tainá?",
+       "options": [
+        "Ao lado da plaquinha",
+        "Dentro da casa",
+        "Perto do rio",
+        "Na escola"
+       ],
+       "answer": "Ao lado da plaquinha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o tamanho do pé de mandioca?",
+       "options": [
+        "Mais alto que Tainá",
+        "Do tamanho de um dedo",
+        "Menor que uma formiga",
+        "Do tamanho de uma colher"
+       ],
+       "answer": "Mais alto que Tainá",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que foi diferente desta vez quando puxaram o caule?",
+       "options": [
+        "Ninguém caiu",
+        "A planta não saiu",
+        "Choveu muito",
+        "A vovó puxou sozinha"
+       ],
+       "answer": "Ninguém caiu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como eram as raízes debaixo da terra?",
+       "options": [
+        "Grossas e compridas",
+        "Finas e curtas",
+        "Azuis",
+        "Redondas como bolas"
+       ],
+       "answer": "Grossas e compridas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem contou a lenda na rede naquela noite?",
+       "options": [
+        "Tainá",
+        "A vovó",
+        "Caio",
+        "A professora"
+       ],
+       "answer": "Tainá",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tainá disse \"Oi, Mani\"?",
+       "options": [
+        "Porque a raiz branca a lembrou da menina da lenda",
+        "Porque uma menina chamada Mani chegou",
+        "Porque viu um passarinho",
+        "Porque estava com sono"
+       ],
+       "answer": "Porque a raiz branca a lembrou da menina da lenda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "O que você acha que a vovó quis dizer com \"agora a lenda é sua também\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
