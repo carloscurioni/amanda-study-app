@@ -3144,6 +3144,904 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "Zuri and the Long Wait for Rain",
+   "premise": "Tomás from São Paulo visits his cousin Zuri in a dry Kenyan village, and together they compare their two countries while everyone waits for the rain.",
+   "chapters": [
+    {
+     "title": "Chapter 1: A Visitor from Brazil",
+     "synopsis": "Zuri's cousin Tomás arrives in Kenya from Brazil and finds the land very dry.",
+     "text": "Zuri lived in a small village in Kenya. Her house had a tin roof and a big acacia tree outside.\nOne hot morning, a car stopped by the gate. Out jumped her cousin Tomás. He lived far away in Brazil, in the busy city of São Paulo.\n\"Jambo!\" said Zuri. \"That means hello.\"\n\"Olá!\" said Tomás. \"That means hello too!\"\nTomás looked around. The grass was yellow and the ground was dusty. \"Where is all the green?\" he asked.\n\"The rain is late this year,\" said Shosho, their grandmother. \"The plants are thirsty. The animals are thirsty. We are all waiting.\"\n\"In São Paulo, it rains a lot in summer,\" said Tomás. \"Sometimes the streets turn into little rivers!\"\nZuri laughed. \"Maybe you brought the rain with you in your suitcase.\"\nThat night, Tomás looked up at the sky. There were hundreds of stars, but not one cloud.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which country does Zuri live in?",
+       "options": [
+        "Kenya",
+        "Brazil",
+        "Spain",
+        "India"
+       ],
+       "answer": "Kenya",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Tomás live?",
+       "options": [
+        "São Paulo",
+        "Nairobi",
+        "London",
+        "Lima"
+       ],
+       "answer": "São Paulo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what word does Zuri use to say hello?",
+       "options": [],
+       "answer": "Jambo",
+       "accept": [
+        "jambo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour is the grass?",
+       "options": [
+        "Yellow",
+        "Green",
+        "Blue",
+        "Red"
+       ],
+       "answer": "Yellow",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who is Shosho?",
+       "options": [
+        "Their grandmother",
+        "Their teacher",
+        "Their aunt",
+        "Their neighbour"
+       ],
+       "answer": "Their grandmother",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens to the streets in São Paulo when it rains a lot?",
+       "options": [
+        "They turn into little rivers",
+        "They turn yellow",
+        "They get dusty",
+        "They close for a week"
+       ],
+       "answer": "They turn into little rivers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why are the plants and animals thirsty?",
+       "options": [
+        "The rain is late",
+        "The river is too cold",
+        "It is winter",
+        "Tomás drank all the water"
+       ],
+       "answer": "The rain is late",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Tomás looks for clouds at night?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Walk to the River",
+     "synopsis": "Zuri and Tomás carry water containers to the river and find it very low.",
+     "text": "Early the next morning, Zuri gave Tomás a yellow plastic container. \"We need water for cooking,\" she said. \"Let's go to the river.\"\nThey walked along a red dirt path. The sun was already hot. Tomás's feet were soon covered in dust.\n\"How far is it?\" he asked.\n\"Not far. Only half an hour,\" said Zuri.\nTomás was surprised. At home, he just turned on a tap.\nWhen they reached the river, it was very low. There were only a few small pools of water between the stones. Zuri filled the containers slowly with a cup.\n\"In Brazil, we have the Amazon River,\" said Tomás. \"It is so wide that you can't see the other side.\"\n\"I would love to see that,\" said Zuri. \"Our river is wide too, but only when the rain comes.\"\nThey carried the heavy water home together. Tomás did not spill a single drop.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Zuri give Tomás?",
+       "options": [
+        "A yellow plastic container",
+        "A red hat",
+        "A cup of tea",
+        "A map"
+       ],
+       "answer": "A yellow plastic container",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do they need water?",
+       "options": [
+        "For cooking",
+        "For swimming",
+        "For painting",
+        "For the car"
+       ],
+       "answer": "For cooking",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour is the dirt path?",
+       "options": [
+        "Red",
+        "Black",
+        "White",
+        "Green"
+       ],
+       "answer": "Red",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long does it take to walk to the river?",
+       "options": [
+        "Half an hour",
+        "Two hours",
+        "Five minutes",
+        "A whole day"
+       ],
+       "answer": "Half an hour",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Tomás get water at home?",
+       "options": [
+        "He turns on a tap",
+        "He walks to a river",
+        "He collects rain",
+        "He buys it at the market"
+       ],
+       "answer": "He turns on a tap",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which big river in Brazil does Tomás talk about?",
+       "options": [],
+       "answer": "The Amazon",
+       "accept": [
+        "Amazon",
+        "the Amazon River",
+        "Amazon River"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is Tomás surprised?",
+       "options": [
+        "Getting water takes a long walk",
+        "The river is very deep",
+        "Zuri can swim",
+        "The water is pink"
+       ],
+       "answer": "Getting water takes a long walk",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Tomás tries hard not to spill any water?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Market Day",
+     "synopsis": "At the busy market, Tomás finds fruit he knows from Brazil and learns a new word.",
+     "text": "On Saturday, Shosho took the children to the market. It was busy and noisy. People sold tomatoes, beans, bananas and bright cloth.\n\"Look!\" shouted Tomás. \"Mangoes! We have mangoes in Brazil too!\"\nA smiling lady gave him a mango to taste. It was sweet and juicy.\n\"Say asante,\" whispered Zuri. \"It means thank you.\"\n\"Asante!\" said Tomás, and the lady clapped.\nShosho bought a bag of white maize flour. \"Tonight we will eat ugali,\" she said.\n\"What is ugali?\" asked Tomás.\n\"It is a soft, thick food made from maize flour and water,\" said Zuri. \"We eat it with our hands, with vegetables or stew.\"\n\"In Brazil, we eat rice and beans almost every day,\" said Tomás.\nAt dinner, Tomás tried ugali. He rolled a little ball with his fingers. \"It is good!\" he said. \"Asante, Shosho!\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, on which day do they go to the market?",
+       "options": [
+        "Saturday",
+        "Monday",
+        "Wednesday",
+        "Sunday"
+       ],
+       "answer": "Saturday",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which fruit does Tomás know from Brazil?",
+       "options": [
+        "Mango",
+        "Apple",
+        "Cherry",
+        "Pear"
+       ],
+       "answer": "Mango",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the word for thank you?",
+       "options": [],
+       "answer": "asante",
+       "accept": [
+        "Asante"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Shosho buy?",
+       "options": [
+        "Maize flour",
+        "Rice",
+        "A new dress",
+        "Fish"
+       ],
+       "answer": "Maize flour",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how do they eat ugali?",
+       "options": [
+        "With their hands",
+        "With chopsticks",
+        "With a straw",
+        "With a big spoon"
+       ],
+       "answer": "With their hands",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tomás eat almost every day in Brazil?",
+       "options": [
+        "Rice and beans",
+        "Ugali",
+        "Pizza",
+        "Soup"
+       ],
+       "answer": "Rice and beans",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does the lady feel when Tomás says asante?",
+       "options": [
+        "Happy",
+        "Angry",
+        "Bored",
+        "Scared"
+       ],
+       "answer": "Happy",
+       "accept": [],
+       "hint": "Think about why she clapped.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think it is good to learn a few words in another language when you visit a new place?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: Shosho's Story",
+     "synopsis": "Under the acacia tree, Shosho tells a story about a little bird who called the clouds.",
+     "text": "In the evening, everyone sat under the acacia tree. It was still very hot.\n\"Tell us a story, Shosho,\" said Zuri.\nShosho smiled. \"Long ago, there was a dry year, just like this one. A little grey bird flew to the top of the tallest tree. Every morning she sang to the sky. The bigger animals laughed. 'Your song is too small,' they said.\nBut the bird did not stop. Then the elephant began to stamp. The frogs began to croak. The children began to drum. Soon the whole land was singing together.\nFar away, the clouds heard the music. They came closer and closer, and at last the rain fell.\"\nTomás was quiet. Then he said, \"So the bird could not do it alone. Everybody had to help.\"\n\"Yes,\" said Shosho. \"Small voices are important too.\"\nZuri looked at Tomás. She had an idea.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does everyone sit?",
+       "options": [
+        "Under the acacia tree",
+        "By the river",
+        "In the market",
+        "In the car"
+       ],
+       "answer": "Under the acacia tree",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In Shosho's story, what colour is the little bird?",
+       "options": [
+        "Grey",
+        "Blue",
+        "Yellow",
+        "Green"
+       ],
+       "answer": "Grey",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In Shosho's story, where does the bird sing?",
+       "options": [
+        "At the top of the tallest tree",
+        "Inside a cave",
+        "In the river",
+        "On a roof"
+       ],
+       "answer": "At the top of the tallest tree",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In Shosho's story, what do the bigger animals do at first?",
+       "options": [
+        "They laugh at the bird",
+        "They sing with the bird",
+        "They run away",
+        "They fall asleep"
+       ],
+       "answer": "They laugh at the bird",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In Shosho's story, which animal begins to stamp?",
+       "options": [
+        "The elephant",
+        "The lion",
+        "The giraffe",
+        "The frog"
+       ],
+       "answer": "The elephant",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In Shosho's story, what makes the clouds come?",
+       "options": [
+        "The whole land singing together",
+        "The wind",
+        "A big fire",
+        "The elephant crying"
+       ],
+       "answer": "The whole land singing together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what lesson does the story teach?",
+       "options": [
+        "Small voices are important too",
+        "Birds are better than elephants",
+        "It never rains in Kenya",
+        "Stories are boring"
+       ],
+       "answer": "Small voices are important too",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "What do you think Zuri's idea might be?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Giraffes at the Waterhole",
+     "synopsis": "Uncle Baraka drives the children to see wild animals gathered at a shrinking waterhole.",
+     "text": "Uncle Baraka had an old green truck. \"Who wants to see some animals?\" he asked.\n\"Me!\" shouted Zuri and Tomás together.\nThey drove out onto the savannah. The land was flat and wide, with only a few trees. Then Tomás saw a long neck above an acacia. \"A giraffe!\" he whispered.\nThere were five giraffes. They walked slowly to a small waterhole. To drink, they had to spread their front legs wide and bend down low. Zebras and antelopes waited nearby.\n\"The waterhole is getting smaller every day,\" said Uncle Baraka. \"The animals need the rain too.\"\n\"In Brazil, we have capybaras,\" said Tomás. \"They are like giant guinea pigs, and they love water. But we don't have giraffes!\"\nZuri laughed. \"And we don't have capybaras!\"\nOn the way home, a cool wind blew. Uncle Baraka looked at the sky and smiled.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour is Uncle Baraka's truck?",
+       "options": [
+        "Green",
+        "Red",
+        "White",
+        "Blue"
+       ],
+       "answer": "Green",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the flat, wide land with few trees called?",
+       "options": [],
+       "answer": "savannah",
+       "accept": [
+        "the savannah",
+        "savanna"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many giraffes are there?",
+       "options": [],
+       "answer": "5",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do giraffes do to drink?",
+       "options": [
+        "Spread their front legs and bend down",
+        "Lie on their backs",
+        "Jump into the water",
+        "Drink with their tails"
+       ],
+       "answer": "Spread their front legs and bend down",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which animals wait near the waterhole?",
+       "options": [
+        "Zebras and antelopes",
+        "Lions and tigers",
+        "Monkeys and parrots",
+        "Cows and sheep"
+       ],
+       "answer": "Zebras and antelopes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which Brazilian animal does Tomás describe?",
+       "options": [],
+       "answer": "capybara",
+       "accept": [
+        "capybaras",
+        "the capybara"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do you think Uncle Baraka smiles at the end?",
+       "options": [
+        "The cool wind might mean rain is coming",
+        "He is hungry",
+        "The truck is broken",
+        "He saw a lion"
+       ],
+       "answer": "The cool wind might mean rain is coming",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the animals all come to the same waterhole?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Getting Ready",
+     "synopsis": "The children help the village prepare the fields, and Tomás shares a song from Brazil.",
+     "text": "Zuri told everyone her idea. \"Let's be like the little bird. Let's get ready for the rain together!\"\nSo the next day, the children helped Shosho in the field. They dug small holes in rows. Tomás dropped two maize seeds into each hole. Zuri covered them with soil.\nOther children came to help. Some cleaned the old water tanks. Some fixed the pipes on the roofs, so the rain could run into the tanks.\nIt was hard work in the sun. \"Let's sing!\" said Tomás. He taught them a happy song from Brazil, and he clapped the beat. The children did not know the words, but they hummed and clapped too.\nThen Zuri taught Tomás a Swahili song about rain. Their voices floated across the field.\nThat evening, big grey clouds piled up over the hills. The air smelled different.\n\"Is it coming?\" asked Tomás.\n\"Maybe,\" said Shosho. \"Let's wait and see.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Zuri's idea?",
+       "options": [
+        "To get ready for the rain together",
+        "To go back to Brazil",
+        "To buy more water",
+        "To build a swimming pool"
+       ],
+       "answer": "To get ready for the rain together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many maize seeds does Tomás put in each hole?",
+       "options": [],
+       "answer": "2",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Zuri do after Tomás drops the seeds?",
+       "options": [
+        "Covers them with soil",
+        "Eats them",
+        "Gives them to the birds",
+        "Puts them in a bag"
+       ],
+       "answer": "Covers them with soil",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do the children fix the pipes on the roofs?",
+       "options": [
+        "So rain can run into the tanks",
+        "To make music",
+        "To stop the wind",
+        "To paint them"
+       ],
+       "answer": "So rain can run into the tanks",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tomás teach the children?",
+       "options": [
+        "A song from Brazil",
+        "A football game",
+        "How to swim",
+        "How to cook rice"
+       ],
+       "answer": "A song from Brazil",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what appears over the hills in the evening?",
+       "options": [
+        "Big grey clouds",
+        "A rainbow",
+        "A flock of birds",
+        "The moon"
+       ],
+       "answer": "Big grey clouds",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how is the village like the story of the little bird?",
+       "options": [
+        "Everyone works together",
+        "Everyone laughs at Zuri",
+        "An elephant helps",
+        "Nobody sings"
+       ],
+       "answer": "Everyone works together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think singing made the hard work easier?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Rain Comes",
+     "synopsis": "At last the rain arrives, and the cousins dance and compare the rain in Kenya and Brazil.",
+     "text": "In the middle of the night, Tomás woke up. Something was tapping on the tin roof. Tap, tap, tap. Then louder: drum, drum, drum!\n\"Zuri! It's raining!\" he shouted.\nEveryone ran outside. The rain was warm and heavy. Shosho laughed and lifted her face to the sky. The children danced and splashed in the red mud.\nIn the morning, the river was full and wide. The water tanks were full too. Tiny green shoots were already pushing up in the field.\n\"Now I can see the green!\" said Tomás.\nSoon it was time for him to go home. He hugged Zuri. \"Do you know something?\" he said. \"Kenya and Brazil are very different. But the rain smells the same in both places.\"\nZuri smiled. \"Next time, I will visit you in Brazil.\"\n\"Asante for everything,\" said Tomás. And this time, he said it without any help.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what wakes Tomás up?",
+       "options": [
+        "Rain tapping on the tin roof",
+        "A barking dog",
+        "Zuri singing",
+        "A truck horn"
+       ],
+       "answer": "Rain tapping on the tin roof",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Shosho do in the rain?",
+       "options": [
+        "She lifts her face to the sky",
+        "She runs inside",
+        "She goes to sleep",
+        "She opens an umbrella"
+       ],
+       "answer": "She lifts her face to the sky",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the river like in the morning?",
+       "options": [
+        "Full and wide",
+        "Dry",
+        "Frozen",
+        "Tiny"
+       ],
+       "answer": "Full and wide",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is growing in the field?",
+       "options": [
+        "Tiny green shoots",
+        "Big trees",
+        "Flowers",
+        "Mushrooms"
+       ],
+       "answer": "Tiny green shoots",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tomás say is the same in Kenya and Brazil?",
+       "options": [
+        "The smell of the rain",
+        "The food",
+        "The animals",
+        "The language"
+       ],
+       "answer": "The smell of the rain",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where will Zuri go next time?",
+       "options": [
+        "To Brazil",
+        "To the market",
+        "To the river",
+        "To school"
+       ],
+       "answer": "To Brazil",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does it show when Tomás says asante without help?",
+       "options": [
+        "He has learned new words",
+        "He forgot Portuguese",
+        "He is upset",
+        "He is tired"
+       ],
+       "answer": "He has learned new words",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Would you like to visit Kenya? Why or why not?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
