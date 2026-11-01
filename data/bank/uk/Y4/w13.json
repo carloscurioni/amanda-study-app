@@ -3255,6 +3255,895 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Riddle Chest",
+   "premise": "During a rainy half-term at Great-Aunt Hild's house, cousins Saffi and Milo open an old chest of riddle cards and use kennings and Anglo-Saxon-style riddles to collect seven hidden letters.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Chest in the Attic",
+     "synopsis": "Saffi and Milo find an old oak chest at Great-Aunt Hild's house and learn what a kenning is before they can open it.",
+     "text": "It rained for the whole first morning of half-term. Saffi and her younger cousin Milo had come to stay with Great-Aunt Hild in her tall, crooked house at the end of Mill Lane, and they had already played every board game in the cupboard.\n\"Go and explore the attic,\" said Great-Aunt Hild, without looking up from her knitting. \"But mind the third step. It squeaks like a goose.\"\nThe attic smelled of dust and old paper. Under the round window sat a wooden chest with iron corners. Carved into the lid were these words: Find my iron-tooth and wake the oak-sleeper.\n\"Iron-tooth?\" said Milo. \"Does the chest bite?\"\nThey hurried downstairs and showed Great-Aunt Hild the words they had copied onto a scrap of paper. Her eyes twinkled.\n\"That is a kenning,\" she said. \"Long ago, more than a thousand years ago, the Anglo-Saxons loved them. A kenning joins two words to describe something without saying its name. They called the sea the whale-road, because whales travel across it like carts on a road.\"\nSaffi thought hard. \"So an oak-sleeper is something made of oak that never moves. The chest!\"\n\"And iron-tooth,\" said Milo slowly, \"is made of iron and has teeth... a key has little teeth!\"\nGreat-Aunt Hild reached into her apron pocket and held up a heavy black key. \"Well solved, word-warriors.\"\nBack in the attic, the key turned with a satisfying clunk. Inside the chest lay seven folded cards tied with red string, and a wooden letter L. On top was a note in curly handwriting: One riddle a day. Collect the letters. Tell no one the answers.\nMilo grinned. \"Half-term just got interesting.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the children go up to the attic?",
+       "options": [
+        "It was raining and they had played every game",
+        "They were looking for a lost cat",
+        "Great-Aunt Hild needed her knitting",
+        "They wanted to sleep there"
+       ],
+       "answer": "It was raining and they had played every game",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which step on the attic stairs squeaks?",
+       "options": [],
+       "answer": "the third step",
+       "accept": [
+        "third",
+        "third step",
+        "the third"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was carved into the lid of the chest?",
+       "options": [
+        "A map of the village",
+        "A riddle using kennings",
+        "A list of names",
+        "A picture of a whale"
+       ],
+       "answer": "A riddle using kennings",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kenning did the Anglo-Saxons use for the sea?",
+       "options": [
+        "sky-road",
+        "whale-road",
+        "fish-house",
+        "wave-cart"
+       ],
+       "answer": "whale-road",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does the kenning 'oak-sleeper' describe?",
+       "options": [],
+       "answer": "the chest",
+       "accept": [
+        "chest",
+        "the wooden chest",
+        "a chest"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Milo work out that 'iron-tooth' meant a key?",
+       "options": [
+        "He saw a key in the chest",
+        "A key is made of iron and has little teeth",
+        "Great-Aunt Hild told him straight away",
+        "The word was written under a picture"
+       ],
+       "answer": "A key is made of iron and has little teeth",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Great-Aunt Hild's twinkling eyes and ready key suggest?",
+       "options": [
+        "She had planned the riddle game herself",
+        "She was angry with the children",
+        "She had never seen the chest before",
+        "She wanted the children to stop playing"
+       ],
+       "answer": "She had planned the riddle game herself",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Great-Aunt Hild calls the children 'word-warriors'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how they solved the puzzle.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Sky-Candle",
+     "synopsis": "The first card sends the children into the garden, where the sun and a sundial help them find the letter A.",
+     "text": "The next morning, Saffi untied the first card. Milo read it aloud in his most dramatic voice.\nI am the sky-candle, the day-bringer. I climb the blue hill every morning and go to bed behind the trees. Where my shadow-finger points at noon, look below.\n\"A candle in the sky,\" said Saffi. \"It brings the day. It must be the sun!\"\n\"But the sun doesn't have a finger,\" said Milo.\nSaffi looked out of the kitchen window. The rain had stopped at last and the wet garden glittered. In the middle of the lawn stood a stone post with a flat metal top. Great-Aunt Hild had told them it was a sundial, an old kind of clock that uses a shadow to show the time.\n\"The shadow-finger!\" Saffi said. \"The sundial has a pointy metal piece. When the sun shines on it, it makes a shadow that points to the time.\"\nThey had to wait until noon. Milo checked the kitchen clock about fifty times. Great-Aunt Hild made them cheese sandwiches and pretended not to notice.\nAt twelve o'clock exactly, the clouds drifted away. A thin dark shadow stretched across the sundial and pointed towards the vegetable patch, straight at a flowerpot turned upside down.\nMilo lifted the pot. Underneath, in a little tin, was a wooden letter A.\n\"Two letters,\" said Saffi, putting it next to the L on the windowsill. \"L and A. That could be the start of lots of words.\"\nThat evening, Milo made up his own kenning for the moon: night-lamp. Saffi said it was rather good. Milo pretended he didn't care, but he smiled all through dinner.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the 'sky-candle'?",
+       "options": [],
+       "answer": "the sun",
+       "accept": [
+        "sun"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is a sundial?",
+       "options": [
+        "A garden fountain",
+        "An old kind of clock that uses a shadow",
+        "A bird table",
+        "A stone seat"
+       ],
+       "answer": "An old kind of clock that uses a shadow",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the children have to wait until noon?",
+       "options": [
+        "The card said to look where the shadow pointed at noon",
+        "Great-Aunt Hild was busy until then",
+        "It was too cold before noon",
+        "The shop opened at noon"
+       ],
+       "answer": "The card said to look where the shadow pointed at noon",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the 'shadow-finger' point at?",
+       "options": [
+        "A bird box",
+        "An upside-down flowerpot",
+        "The back door",
+        "An apple tree"
+       ],
+       "answer": "An upside-down flowerpot",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which letter was hidden in the tin?",
+       "options": [],
+       "answer": "A",
+       "accept": [
+        "the letter A",
+        "a"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kenning did Milo invent for the moon?",
+       "options": [
+        "star-bringer",
+        "night-lamp",
+        "dark-candle",
+        "sky-ball"
+       ],
+       "answer": "night-lamp",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Milo checking the clock 'about fifty times' tell us?",
+       "options": [
+        "He was very impatient and excited",
+        "He wanted to learn to tell the time",
+        "The clock was broken",
+        "He was bored of the riddle"
+       ],
+       "answer": "He was very impatient and excited",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Milo pretended he didn't care about Saffi's praise?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how people sometimes hide their feelings.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Word-Hoard",
+     "synopsis": "A riddle about something that 'speaks without a mouth' leads Saffi and Milo to the bookshelves.",
+     "text": "Card number two was longer, and it was written the way Anglo-Saxon riddles often were, as if the mystery object were talking.\nI have many leaves, but no tree grew me today. I hold a thousand voices, yet I never speak. Open my word-hoard and travellers from far lands will walk into your mind. Say what I am called.\n\"Word-hoard,\" Milo repeated. \"A hoard is treasure, like a dragon's pile of gold.\"\n\"So a word-hoard is a treasure of words,\" said Saffi. \"And leaves can mean pages.\"\n\"A book!\" they shouted together, so loudly that Great-Aunt Hild's cat jumped off the sofa.\nBut there was a problem. Great-Aunt Hild's living room had more books than Saffi had ever seen in a house. Shelves ran from the floor to the ceiling, and some books were stacked on the floor like little towers.\n\"We'll be here until Christmas,\" groaned Milo.\nSaffi turned the card over. On the back, in tiny writing, it said: Look for the riddle-singers.\n\"Riddle-singers must be poets,\" Saffi said. \"People who wrote the riddles, maybe. We need a poetry book.\"\nThey searched shelf after shelf. Milo found a cookbook, three atlases and a very dusty book about beetles. At last Saffi pulled out a thin blue book called Old Songs and Riddles. Pressed between two pages, like a flower, was a wooden letter N.\n\"L, A, N,\" said Milo. \"Lan... land? Lane? Lantern?\"\n\"Don't guess yet,\" said Saffi. \"We still have four cards.\"\nThat night Milo read the riddles in the blue book by torchlight. He fell asleep with it open on his chest, still muttering, \"Say what I am called.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how is the riddle on card two written?",
+       "options": [
+        "As if the mystery object were talking",
+        "As a list of clues",
+        "As a song with a chorus",
+        "As a letter to Great-Aunt Hild"
+       ],
+       "answer": "As if the mystery object were talking",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Milo say a hoard is?",
+       "options": [
+        "A kind of tree",
+        "A treasure, like a dragon's pile of gold",
+        "A long journey",
+        "A type of poem"
+       ],
+       "answer": "A treasure, like a dragon's pile of gold",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the 'leaves' in the riddle really mean?",
+       "options": [
+        "Pages",
+        "Feathers",
+        "Plants",
+        "Letters"
+       ],
+       "answer": "Pages",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the answer to riddle two?",
+       "options": [],
+       "answer": "a book",
+       "accept": [
+        "book",
+        "the book"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was finding the right book a problem?",
+       "options": [
+        "The house had so many books",
+        "The bookshelves were locked",
+        "The books were all in another language",
+        "The cat was sitting on them"
+       ],
+       "answer": "The house had so many books",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the title of the book where the letter N was hidden?",
+       "options": [],
+       "answer": "Old Songs and Riddles",
+       "accept": [
+        "Old Songs & Riddles"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Saffi work out 'riddle-singers' means?",
+       "options": [
+        "Birds",
+        "Poets",
+        "Teachers",
+        "Dragons"
+       ],
+       "answer": "Poets",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Saffi tells Milo not to guess the word yet?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how many letters they still need.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Steam-Singer",
+     "synopsis": "Milo has a go at writing kennings, and the third riddle leads to the kitchen.",
+     "text": "On Wednesday, Milo decided he would become an expert on kennings before opening the next card.\n\"Here's how it works,\" he told Great-Aunt Hild at breakfast, pointing his spoon at her. \"You take two words. Usually two nouns, like whale and road. Or a noun and a doing word with -er on the end, like day-bringer. Then you join them with a little line.\"\n\"A hyphen,\" said Saffi.\n\"A hyphen,\" Milo agreed. \"And you have to describe the thing by what it looks like or what it does.\"\nHe wrote a list on a napkin: mouse-chaser for the cat, crumb-catcher for the kitchen table, and sock-eater for the washing machine. Great-Aunt Hild laughed so much she had to put her cup down.\nThen Saffi untied card three.\nMy belly holds the rain from the sky. When fire warms my feet, I begin to sing. I have one arm and one spout, and I pour out comfort in the afternoon.\n\"Rain in its belly means water,\" said Saffi. \"It sings when it gets hot...\"\nMilo was already pointing at the stove, where Great-Aunt Hild's old silver kettle sat, humming quietly.\n\"Steam-singer!\" he cried. \"That's my kenning for it.\"\nThe kettle's handle was its one arm, and the spout was its spout. Saffi waited until it had cooled down, then carefully lifted it. Stuck underneath with a blob of wax was a wooden letter T.\nThey lined up the letters on the windowsill: L, A, N, T.\nMilo opened his mouth.\n\"Don't,\" said Saffi.\nHe closed it again, but he wrote something on his napkin, folded it very small and hid it in his pocket.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Milo say you usually join together to make a kenning?",
+       "options": [
+        "Two nouns, or a noun and a doing word with -er",
+        "Two adjectives",
+        "A number and a colour",
+        "Two names"
+       ],
+       "answer": "Two nouns, or a noun and a doing word with -er",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the small line that joins the two words in a kenning called?",
+       "options": [],
+       "answer": "a hyphen",
+       "accept": [
+        "hyphen"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Milo's kenning 'sock-eater' describing?",
+       "options": [
+        "The cat",
+        "The washing machine",
+        "The kitchen table",
+        "The dog"
+       ],
+       "answer": "The washing machine",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does 'rain from the sky' in the kettle's belly mean?",
+       "options": [
+        "Water",
+        "Tea leaves",
+        "Milk",
+        "Ice"
+       ],
+       "answer": "Water",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which kenning does Milo invent for the kettle?",
+       "options": [],
+       "answer": "steam-singer",
+       "accept": [
+        "steam singer"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Saffi wait before lifting the kettle?",
+       "options": [
+        "It was hot and she needed it to cool down",
+        "She was scared of Great-Aunt Hild",
+        "The kettle was too heavy",
+        "She wanted Milo to do it"
+       ],
+       "answer": "It was hot and she needed it to cool down",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what has Milo probably written on the folded napkin?",
+       "options": [
+        "His guess for the secret word",
+        "A shopping list",
+        "A new riddle for Great-Aunt Hild",
+        "His kenning for the cat"
+       ],
+       "answer": "His guess for the secret word",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Great-Aunt Hild laughed so much at Milo's list of kennings?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about the things he described.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Wrong Answer, Right Answer",
+     "synopsis": "Milo is sure the fourth riddle is about a dog, but the clues tell a different story.",
+     "text": "Card four looked easy. At least, Milo thought so.\nI howl at the door, yet I have no throat. I push the tall trees, yet I have no hands. I herd the cloud-sheep across the sky. You cannot see me, but you can hear me sing.\n\"It's a dog!\" said Milo at once. \"Dogs howl at the door when they want to go out.\"\n\"Read it again,\" said Saffi gently. \"Do dogs have throats?\"\nMilo frowned. \"Yes.\"\n\"And hands?\"\n\"No. But they don't push trees either.\" He scratched his head. \"And you can definitely see a dog.\"\nSaffi explained what her teacher had told her: a good riddle-solver checks every clue, not just the first one. An answer has to fit them all.\nThey went through the riddle line by line. Something that howls but has no throat. Something that pushes trees. Something that herds the clouds, which the riddle called cloud-sheep, because clouds are white and fluffy and drift along together. Something invisible that you can still hear.\nJust then, a gust rattled the back door and made a long, low whoooo.\n\"The wind!\" said Milo. \"It howls at the door!\"\n\"Exactly,\" said Saffi.\nBy the back door hung a wind chime made of shells and little copper tubes. It was tinkling wildly. Tied to the bottom with a ribbon was a wooden letter E.\nThat evening, Milo made a kenning for the wind: tree-shaker. Then he made one for himself: wrong-guesser.\n\"No,\" said Great-Aunt Hild firmly. \"Try clue-checker. You learned something today, and that is far better than being right the first time.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Milo's first guess for riddle four?",
+       "options": [
+        "A dog",
+        "A wolf",
+        "A ghost",
+        "A bird"
+       ],
+       "answer": "A dog",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what advice does Saffi give about solving riddles?",
+       "options": [
+        "Guess quickly before anyone else",
+        "Check every clue, not just the first one",
+        "Only read the last line",
+        "Ask an adult for the answer"
+       ],
+       "answer": "Check every clue, not just the first one",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what are the 'cloud-sheep'?",
+       "options": [],
+       "answer": "clouds",
+       "accept": [
+        "the clouds",
+        "cloud"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why are clouds compared to sheep?",
+       "options": [
+        "They are white and fluffy and drift along together",
+        "They make a baa sound",
+        "They eat grass",
+        "They live on farms"
+       ],
+       "answer": "They are white and fluffy and drift along together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the real answer to riddle four?",
+       "options": [],
+       "answer": "the wind",
+       "accept": [
+        "wind"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where was the letter E hidden?",
+       "options": [
+        "On the wind chime by the back door",
+        "Under the doormat",
+        "In the dog's bed",
+        "Behind the curtains"
+       ],
+       "answer": "On the wind chime by the back door",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Great-Aunt Hild suggest the name 'clue-checker' for Milo?",
+       "options": [
+        "She wants him to feel proud of learning to check clues",
+        "She thinks he is very bad at riddles",
+        "It is the answer to the next riddle",
+        "It is his real name"
+       ],
+       "answer": "She wants him to feel proud of learning to check clues",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the dog answer did not work for the riddle?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Look back at the clues about hands and seeing.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Swapping Riddles",
+     "synopsis": "Saffi and Milo set riddles for each other and then solve card five, which leads to the letter R.",
+     "text": "On Friday it rained again, so Great-Aunt Hild suggested a riddle contest before they opened card five.\n\"Each of you writes a riddle in the old style,\" she said. \"Make the thing speak. Use at least one kenning. Don't say its name.\"\nMilo chewed his pencil for ten minutes. Then he read:\nI am a road-runner with four round feet. I drink black juice and roar when I eat the miles. Say what I am called.\n\"A car!\" said Saffi. \"The round feet are wheels. The black juice is fuel.\" She clapped. \"That was clever.\"\nSaffi's riddle was harder:\nI am a snow-field that never melts. Ink-birds land on me and leave their tracks, and every track is a word.\nMilo thought for a long time. \"Snow is white. The ink-birds are... pens? And the tracks are writing. You're paper!\"\nThen they opened card five.\nI wear a coat of glass and keep the time-teller company. Every hour I watch the little hands dance, but I never move from the wall above the fire. Look behind me.\n\"A coat of glass,\" said Saffi. \"Something with glass on the front.\"\n\"Time-teller is a clock,\" said Milo. \"So it's next to the clock, on the wall, above the fireplace...\"\nThey both turned. Above the fireplace, beside the old clock, hung a mirror in a gold frame.\nSaffi held the frame while Milo peeped behind it. A wooden letter R was tucked into the corner.\n\"L, A, N, T, E, R,\" Milo whispered. \"I knew it. I knew it on Wednesday!\" He pulled the folded napkin from his pocket.\n\"Wait for the last card,\" said Saffi, but she was smiling too.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Great-Aunt Hild suggest a riddle contest?",
+       "options": [
+        "It was raining again",
+        "The children were arguing",
+        "She wanted to win a prize",
+        "There were no more cards"
+       ],
+       "answer": "It was raining again",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which rule did Great-Aunt Hild give for writing the riddles?",
+       "options": [
+        "Use at least one kenning and don't say the thing's name",
+        "Make it rhyme",
+        "Write it in French",
+        "Use exactly ten words"
+       ],
+       "answer": "Use at least one kenning and don't say the thing's name",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the answer to Milo's riddle?",
+       "options": [],
+       "answer": "a car",
+       "accept": [
+        "car",
+        "the car"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what are the 'four round feet' in Milo's riddle?",
+       "options": [
+        "Wheels",
+        "Shoes",
+        "Lights",
+        "Doors"
+       ],
+       "answer": "Wheels",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what are the 'ink-birds' in Saffi's riddle?",
+       "options": [
+        "Pens",
+        "Crows",
+        "Books",
+        "Snowflakes"
+       ],
+       "answer": "Pens",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the 'time-teller'?",
+       "options": [
+        "A clock",
+        "A calendar",
+        "A teacher",
+        "A sundial"
+       ],
+       "answer": "A clock",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Milo's reaction to the letter R show?",
+       "options": [
+        "He thinks his guess from Wednesday was right",
+        "He is disappointed",
+        "He has forgotten the earlier letters",
+        "He wants to give up"
+       ],
+       "answer": "He thinks his guess from Wednesday was right",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Which riddle in the chapter do you think was the cleverest, and why?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how well the clues hide the answer.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Dark-Chaser",
+     "synopsis": "The last riddle brings the children back to the attic, where the letters spell a word and Great-Aunt Hild shares her secret.",
+     "text": "On the last morning, Saffi and Milo sat on the attic floor next to the oak-sleeper, the chest where it had all begun. Saffi untied the final card.\nI am a glass-house for a small sun. When the night-cloak falls, I am the dark-chaser. Long ago I lit the way to the barn. Now I wait where you found the first letter. I am also the word you have been building.\n\"A glass-house for a small sun,\" said Saffi. \"Something with glass round a light.\"\n\"The dark-chaser chases away the dark,\" said Milo. \"And the night-cloak is night, because it covers everything like a cloak!\"\n\"Where we found the first letter,\" Saffi said. \"That was here, inside the chest.\"\nThey lifted out a thick woollen blanket from the bottom of the chest. Underneath it was an old metal lantern with glass sides and a wooden letter N tied to its handle.\nMilo laid all the letters in a row on the floorboards: L, A, N, T, E, R, N. Then, at last, he unfolded his napkin. On it, in wobbly capitals, he had written LANTERN.\n\"Since Wednesday!\" he said. \"I kept it secret, like the note said.\"\nGreat-Aunt Hild was standing in the doorway. She must have come up the stairs very quietly, even past the goose-step.\n\"When I was your age,\" she said, \"my own grandmother made this riddle hunt for me, in this very house. The lantern was hers. Now it is yours, to share.\"\nSaffi looked at the lantern, then at Milo. \"Next half-term,\" she said, \"we should make a riddle hunt for you.\"\nGreat-Aunt Hild smiled. \"I would like that very much, word-warriors.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where were the children when they opened the final card?",
+       "options": [
+        "In the attic next to the chest",
+        "In the garden",
+        "In the kitchen",
+        "In the car"
+       ],
+       "answer": "In the attic next to the chest",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does the kenning 'night-cloak' mean?",
+       "options": [],
+       "answer": "night",
+       "accept": [
+        "the night",
+        "night-time"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is the lantern called a 'dark-chaser'?",
+       "options": [
+        "Its light chases away the dark",
+        "It runs very fast",
+        "It is painted black",
+        "It frightens animals"
+       ],
+       "answer": "Its light chases away the dark",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was on top of the lantern in the chest?",
+       "options": [
+        "A woollen blanket",
+        "A pile of books",
+        "A box of candles",
+        "A map"
+       ],
+       "answer": "A woollen blanket",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what word do the seven letters spell?",
+       "options": [],
+       "answer": "LANTERN",
+       "accept": [
+        "lantern"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who first made a riddle hunt in the house?",
+       "options": [
+        "Great-Aunt Hild's grandmother",
+        "Saffi's teacher",
+        "Milo's father",
+        "A neighbour"
+       ],
+       "answer": "Great-Aunt Hild's grandmother",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does 'the goose-step' refer to?",
+       "options": [
+        "The squeaky third step on the attic stairs",
+        "A dance",
+        "A path in the garden",
+        "The cat"
+       ],
+       "answer": "The squeaky third step on the attic stairs",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Saffi wants to make a riddle hunt for Great-Aunt Hild?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what Great-Aunt Hild did for them.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
