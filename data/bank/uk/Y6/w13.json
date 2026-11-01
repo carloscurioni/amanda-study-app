@@ -2322,5 +2322,903 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "Rádio Curiosa",
+   "premise": "Os primos Tainá e Benício criam um podcast de ciências para a feira da escola. A cada episódio, eles enfrentam uma palavra difícil e aprendem a explicá-la com exemplos e comparações.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A fábrica verde",
+     "synopsis": "Tainá e o primo Benício decidem criar um podcast de ciências para a feira da escola. No primeiro episódio, descobrem como explicar a palavra fotossíntese.",
+     "text": "Faltavam sete semanas para a feira de ciências quando Tainá teve a ideia: em vez de um cartaz, ela e o primo Benício gravariam um podcast. O nome surgiu na hora do lanche: Rádio Curiosa.\n— Cada semana, um episódio explicando uma palavra difícil da ciência — disse Tainá, animada.\nBenício, que adorava microfones e odiava palavras compridas, fez careta.\n— Tipo qual?\n— Fotossíntese.\nA professora Odete, que passava pelo pátio, ouviu a conversa e deu uma dica:\n— Toda palavra difícil precisa de dois amigos: um exemplo e uma comparação. Com eles, qualquer ouvinte entende.\nNaquela tarde, os primos pesquisaram na biblioteca. Descobriram que fotossíntese é o processo em que as plantas produzem o próprio alimento. Para isso, elas usam a luz do Sol, a água que as raízes puxam do solo e o gás carbônico que entra pelas folhas. O resultado é um açúcar chamado glicose, que serve de energia para a planta, e o oxigênio, que é liberado no ar.\n— E por que as folhas são verdes? — perguntou Benício.\n— Por causa da clorofila — leu Tainá. — É um pigmento, ou seja, uma substância que dá cor. A clorofila captura a luz do Sol.\nBenício pensou um pouco e sorriu.\n— Então a folha é como uma pequena fábrica. A luz é a energia que liga as máquinas, a água e o gás carbônico são a matéria-prima, e a glicose é o produto que sai no fim.\n— Essa é a nossa comparação! — comemorou Tainá.\nEles gravaram o episódio no quarto de Benício, com um cobertor pendurado para abafar o barulho. No fim, Tainá leu a frase que virou a marca do programa:\n— Na Rádio Curiosa, palavra difícil não assusta: a gente explica.\nAo desligar o gravador, Benício já perguntava qual seria o próximo tema.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o nome do podcast criado pelos primos?",
+       "options": [
+        "Rádio Curiosa",
+        "Rádio Ciência",
+        "Voz da Feira",
+        "Podcast Verde"
+       ],
+       "answer": "Rádio Curiosa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora Odete, quais são os dois \"amigos\" de uma palavra difícil?",
+       "options": [
+        "Um desenho e uma música",
+        "Um exemplo e uma comparação",
+        "Um dicionário e um mapa",
+        "Uma pergunta e uma resposta"
+       ],
+       "answer": "Um exemplo e uma comparação",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que as plantas usam para fazer a fotossíntese?",
+       "options": [
+        "Luz do Sol, água e gás carbônico",
+        "Só água e terra",
+        "Oxigênio e açúcar",
+        "Vento e chuva"
+       ],
+       "answer": "Luz do Sol, água e gás carbônico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do açúcar produzido na fotossíntese?",
+       "options": [],
+       "answer": "glicose",
+       "accept": [
+        "a glicose"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que significa a palavra \"pigmento\", de acordo com a explicação do texto?",
+       "options": [
+        "Uma substância que dá cor",
+        "Um tipo de raiz",
+        "Um gás do ar",
+        "Uma parte da flor"
+       ],
+       "answer": "Uma substância que dá cor",
+       "accept": [],
+       "hint": "Procure a expressão \"ou seja\" logo depois da palavra.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com o que Benício compara a folha?",
+       "options": [
+        "Uma pequena fábrica",
+        "Um guarda-chuva",
+        "Uma bateria de celular",
+        "Uma caixa de correio"
+       ],
+       "answer": "Uma pequena fábrica",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que os primos penduraram um cobertor no quarto?",
+       "options": [
+        "Para abafar o barulho na gravação",
+        "Para deixar o quarto escuro",
+        "Porque estava frio",
+        "Para esconder o microfone"
+       ],
+       "answer": "Para abafar o barulho na gravação",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que uma comparação, como a da fábrica, ajuda os ouvintes a entender uma palavra difícil?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O bicho que some",
+     "synopsis": "No sítio da avó, os primos procuram um bicho-pau e quase não o encontram. O episódio explica camuflagem e mimetismo.",
+     "text": "No sábado, a família foi ao sítio da avó Zezé. Benício levou o gravador no bolso, e Tainá, o caderno de anotações.\n— Vovó, hoje o tema é camuflagem — anunciou Tainá.\nA avó riu e apontou para um galho seco perto da janela.\n— Então olhem ali.\nOs dois olharam, olharam e não viram nada. Só depois de um minuto inteiro Benício deu um pulo: o \"galho\" tinha pernas! Era um bicho-pau, um inseto comprido, marrom e fininho, idêntico a um graveto.\n— Isso é camuflagem — explicou a avó. — É quando um animal tem cor ou forma parecida com o lugar onde vive. Assim, ele se esconde dos predadores.\n— Predadores são os animais que caçam outros para comer, né? — conferiu Benício, já gravando.\n— Isso mesmo. Para um passarinho com fome, o bicho-pau parece só mais um pedaço de árvore.\nTainá anotou uma comparação: a camuflagem é como brincar de esconde-esconde vestindo uma roupa da mesma cor da parede.\nÀ tarde, o caseiro do sítio, seu Ademir, mostrou outra curiosidade numa foto do livro dele: uma cobra com anéis vermelhos, pretos e brancos.\n— Essa é a falsa-coral. Ela não é tão perigosa quanto a coral-verdadeira, mas tem cores parecidas. Muitos predadores ficam com medo e vão embora.\n— Então ela não se esconde. Ela imita! — disse Tainá.\n— Exato. Os cientistas chamam isso de mimetismo: quando um ser vivo se parece com outro para levar vantagem.\nBenício coçou a cabeça.\n— Camuflagem é se parecer com o ambiente. Mimetismo é se parecer com outro bicho. Acho que entendi a diferença.\n— E nunca se deve chegar perto de cobra nenhuma — completou seu Ademir. — Só quem é especialista sabe diferenciar.\nNa volta para casa, os primos gravaram o episódio no banco de trás do carro. Benício terminou com um desafio aos ouvintes: procurar, no jardim da escola, algum bicho escondido à vista de todos.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde os primos passaram o sábado?",
+       "options": [
+        "No sítio da avó Zezé",
+        "Na praia",
+        "No zoológico",
+        "Na escola"
+       ],
+       "answer": "No sítio da avó Zezé",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com o que o bicho-pau se parecia?",
+       "options": [
+        "Um graveto",
+        "Uma folha verde",
+        "Uma pedra",
+        "Uma flor"
+       ],
+       "answer": "Um graveto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a avó explica a camuflagem?",
+       "options": [
+        "Ter cor ou forma parecida com o lugar onde vive",
+        "Mudar de lugar todos os dias",
+        "Fazer barulho para assustar",
+        "Viver dentro da terra"
+       ],
+       "answer": "Ter cor ou forma parecida com o lugar onde vive",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chamam os animais que caçam outros para comer?",
+       "options": [],
+       "answer": "predadores",
+       "accept": [
+        "predador",
+        "os predadores"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual comparação Tainá anota sobre a camuflagem?",
+       "options": [
+        "Brincar de esconde-esconde com roupa da cor da parede",
+        "Usar um guarda-chuva na chuva",
+        "Trocar de roupa para uma festa",
+        "Pintar um quadro"
+       ],
+       "answer": "Brincar de esconde-esconde com roupa da cor da parede",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da cobra que imita a coral-verdadeira?",
+       "options": [],
+       "answer": "falsa-coral",
+       "accept": [
+        "falsa coral",
+        "a falsa-coral"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a diferença entre camuflagem e mimetismo, segundo Benício?",
+       "options": [
+        "Camuflagem é parecer com o ambiente; mimetismo é parecer com outro ser vivo",
+        "São a mesma coisa",
+        "Camuflagem é de cobras; mimetismo é de insetos",
+        "Mimetismo é se esconder no escuro"
+       ],
+       "answer": "Camuflagem é parecer com o ambiente; mimetismo é parecer com outro ser vivo",
+       "accept": [],
+       "hint": "Releia a fala de Benício no fim da tarde.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que seu Ademir fez questão de dizer que ninguém deve chegar perto de cobras?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Quando o dia escureceu",
+     "synopsis": "Benício encontra um vídeo antigo de um eclipse e os primos querem entender o fenômeno. Com uma lanterna e uma bola, eles montam um modelo.",
+     "text": "Na segunda-feira, Benício chegou à escola com uma pergunta engasgada.\n— Vi um vídeo de um eclipse solar. O céu ficou escuro no meio do dia! Como pode?\nTainá adorou: estava decidido o tema do terceiro episódio.\nNa aula, a professora Odete explicou que a Terra gira em volta do Sol e que a Lua gira em volta da Terra. Esse caminho que um astro faz ao redor de outro se chama órbita.\n— Às vezes — continuou ela —, a Lua passa exatamente entre o Sol e a Terra. Ela bloqueia a luz do Sol, e a sua sombra cai sobre uma parte do nosso planeta. Isso é um eclipse solar.\n— Mas a Lua não é bem menor que o Sol? — perguntou uma colega, a Iara.\n— É muito menor. Só que o Sol está muito mais longe. Por isso, vista daqui, a Lua pode parecer do mesmo tamanho e cobri-lo.\nPara mostrar, a professora fez um teste: pediu que Iara fechasse um olho e colocasse o polegar na frente da lâmpada da sala. O dedo pequeno, perto do olho, escondeu a lâmpada inteira.\nEm casa, os primos montaram um modelo. A lanterna do celular fez o papel do Sol, uma bola de futebol foi a Terra, e uma bolinha de pingue-pongue, a Lua. Quando Benício passou a bolinha na frente da lanterna, uma sombra redonda apareceu na bola de futebol.\n— Quem estiver dentro dessa sombra vê o eclipse — explicou Tainá ao microfone.\nAntes de encerrar, ela leu um aviso com voz séria:\n— Nunca olhe diretamente para o Sol, nem durante um eclipse. A luz pode machucar os olhos. Cientistas usam óculos especiais, e o mais seguro é acompanhar pela transmissão de um observatório.\nBenício ainda acrescentou uma curiosidade da pesquisa: também existe o eclipse lunar, quando é a Terra que fica entre o Sol e a Lua, e a sombra cai sobre a Lua.\nNo intervalo do dia seguinte, três colegas pediram para ouvir o episódio. A Rádio Curiosa estava ganhando fãs.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que deixou Benício curioso?",
+       "options": [
+        "Um vídeo de um eclipse solar",
+        "Um livro sobre planetas",
+        "Uma chuva de granizo",
+        "Um filme sobre foguetes"
+       ],
+       "answer": "Um vídeo de um eclipse solar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama o caminho que um astro faz ao redor de outro?",
+       "options": [],
+       "answer": "órbita",
+       "accept": [
+        "orbita",
+        "a órbita"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que acontece num eclipse solar?",
+       "options": [
+        "A Lua passa entre o Sol e a Terra",
+        "A Terra passa entre o Sol e a Lua",
+        "O Sol se apaga por um tempo",
+        "Nuvens cobrem o céu"
+       ],
+       "answer": "A Lua passa entre o Sol e a Terra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a Lua consegue cobrir o Sol, mesmo sendo muito menor?",
+       "options": [
+        "Porque o Sol está muito mais longe",
+        "Porque a Lua brilha mais",
+        "Porque o Sol diminui de tamanho",
+        "Porque a Lua está maior naquele dia"
+       ],
+       "answer": "Porque o Sol está muito mais longe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, no modelo dos primos, o que representava o Sol?",
+       "options": [
+        "A lanterna do celular",
+        "A bola de futebol",
+        "A bolinha de pingue-pongue",
+        "A lâmpada da sala"
+       ],
+       "answer": "A lanterna do celular",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o objetivo do teste com o polegar?",
+       "options": [
+        "Mostrar que algo pequeno e perto pode esconder algo grande e longe",
+        "Medir o tamanho da lâmpada",
+        "Testar a visão de Iara",
+        "Mostrar como a luz esquenta"
+       ],
+       "answer": "Mostrar que algo pequeno e perto pode esconder algo grande e longe",
+       "accept": [],
+       "hint": "Pense no que o polegar e a lâmpada representam.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que é um eclipse lunar?",
+       "options": [
+        "Quando a Terra fica entre o Sol e a Lua",
+        "Quando a Lua fica entre o Sol e a Terra",
+        "Quando a Lua some para sempre",
+        "Quando o Sol nasce à noite"
+       ],
+       "answer": "Quando a Terra fica entre o Sol e a Lua",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Tainá leu o aviso de segurança \"com voz séria\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A chuva que mora no ar",
+     "synopsis": "Um copo de suco gelado \"suando\" vira o ponto de partida para explicar o ciclo da água. Os primos aprendem evaporação, condensação e precipitação.",
+     "text": "Era um dia quente, e Benício serviu dois copos de suco bem gelado. Minutos depois, o copo estava todo molhado por fora.\n— O copo está vazando! — reclamou ele, secando a mesa.\nTainá examinou o vidro.\n— Não está vazando. Se estivesse, o suco ia diminuir. Essa água veio do ar!\nA frase parecia mágica, mas tinha explicação. Na biblioteca, os primos encontraram um livro sobre o ciclo da água, que é o caminho que a água faz sem parar entre a terra, o mar e o céu.\nO primeiro passo é a evaporação: o calor do Sol aquece a água de rios, mares e até das poças, e ela vira vapor, um gás invisível que sobe para o ar. Um exemplo do dia a dia é a roupa no varal, que seca porque a água dela evapora.\nO segundo passo é a condensação: quando o vapor encontra algo frio, ele volta a ser líquido, em gotinhas. Foi isso que aconteceu no copo gelado. Lá no alto, o ar é frio, e as gotinhas formadas se juntam e formam as nuvens.\n— É igual ao espelho do banheiro depois do banho quente — lembrou Benício. — Ele fica embaçado.\n— Isso! O vapor do chuveiro bate no espelho frio e condensa.\nO terceiro passo é a precipitação: quando as gotas das nuvens ficam pesadas demais, elas caem como chuva, neve ou granizo. A água volta para os rios, para o mar e para o solo, e tudo recomeça.\nPara o episódio, Tainá criou uma comparação: o ciclo da água é como uma roda-gigante, que gira, gira e as cadeiras sempre voltam ao mesmo lugar.\nBenício gravou o som de uma chaleira apitando para começar o programa. No final, propôs um experimento: colocar gelo num copo seco e esperar dez minutos.\n— Se aparecerem gotinhas por fora — disse ele —, você acabou de ver a condensação acontecer na sua mesa.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Benício achou que o copo estava vazando?",
+       "options": [
+        "Porque o copo ficou molhado por fora",
+        "Porque o suco acabou",
+        "Porque o copo rachou",
+        "Porque a mesa estava molhada antes"
+       ],
+       "answer": "Porque o copo ficou molhado por fora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual pista mostra que o copo não estava vazando?",
+       "options": [
+        "O suco não diminuía",
+        "O copo era de plástico",
+        "A água era salgada",
+        "O copo estava quente"
+       ],
+       "answer": "O suco não diminuía",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama o passo em que a água vira vapor por causa do calor?",
+       "options": [],
+       "answer": "evaporação",
+       "accept": [
+        "evaporacao",
+        "a evaporação"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual exemplo do dia a dia mostra a evaporação?",
+       "options": [
+        "A roupa secando no varal",
+        "O espelho embaçado",
+        "A chuva caindo",
+        "O gelo no copo"
+       ],
+       "answer": "A roupa secando no varal",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que acontece na condensação?",
+       "options": [
+        "O vapor encontra algo frio e vira gotinhas",
+        "A água congela e vira gelo",
+        "As nuvens somem",
+        "A água entra no solo"
+       ],
+       "answer": "O vapor encontra algo frio e vira gotinhas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do passo em que a água cai das nuvens como chuva, neve ou granizo?",
+       "options": [],
+       "answer": "precipitação",
+       "accept": [
+        "precipitacao",
+        "a precipitação"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tainá compara o ciclo da água a uma roda-gigante?",
+       "options": [
+        "Porque a água sempre volta ao começo e o ciclo recomeça",
+        "Porque a água sobe muito alto",
+        "Porque a chuva é divertida",
+        "Porque as nuvens giram"
+       ],
+       "answer": "Porque a água sempre volta ao começo e o ciclo recomeça",
+       "accept": [],
+       "hint": "Pense no que acontece com as cadeiras de uma roda-gigante.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Benício terminou o episódio propondo um experimento para os ouvintes?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Os faxineiros do chão",
+     "synopsis": "Na horta da escola, os primos descobrem para onde vão as folhas caídas. O episódio explica decompositores e compostagem.",
+     "text": "Na quarta-feira, a turma de Tainá ajudou a cuidar da horta da escola. O jardineiro, seu Valdemar, levou os alunos até uma caixa de madeira cheia de cascas de frutas, folhas secas e borra de café.\n— Esta é a nossa composteira — disse ele. — Aqui, restos de comida viram adubo.\nBenício torceu o nariz.\n— Mas quem transforma lixo em adubo?\n— Os decompositores — respondeu seu Valdemar. — São seres vivos, como fungos e bactérias, que se alimentam de restos de plantas e de animais mortos. Ao fazer isso, eles quebram esses restos em pedacinhos tão pequenos que viram nutrientes para o solo.\nTainá anotou depressa. Nutrientes, ela já sabia, são as substâncias que os seres vivos precisam para crescer, como as vitaminas na nossa comida.\nSeu Valdemar mexeu a terra escura com uma pá e apareceram várias minhocas.\n— Elas também ajudam. Comem restos, cavam túneis e deixam o solo fofo, para a água e o ar entrarem.\n— Então os decompositores são os faxineiros da natureza! — disse Benício.\n— Que boa comparação — elogiou o jardineiro. — Sem eles, a floresta estaria coberta de folhas velhas até o teto.\nEle mostrou ainda um pão esquecido num pote, coberto de manchas esverdeadas.\n— Esse bolor é um fungo trabalhando. Não se come, claro, mas é a decomposição acontecendo.\nNa volta para a sala, Tainá teve a ideia de explicar o processo como uma receita: primeiro, os restos caem no chão; depois, os decompositores se alimentam deles; por último, os nutrientes voltam para a terra e alimentam novas plantas.\n— E as novas plantas viram comida, que vira resto, que vira adubo... — continuou Benício.\n— É um ciclo, igual ao da água!\nNo episódio, os primos entrevistaram seu Valdemar. Ele terminou com um pedido aos ouvintes: separar as cascas de frutas do lixo comum e trazer para a composteira da escola.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que havia dentro da caixa de madeira da horta?",
+       "options": [
+        "Cascas de frutas, folhas secas e borra de café",
+        "Sementes e ferramentas",
+        "Pedras e areia",
+        "Brinquedos velhos"
+       ],
+       "answer": "Cascas de frutas, folhas secas e borra de café",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama a caixa onde restos de comida viram adubo?",
+       "options": [],
+       "answer": "composteira",
+       "accept": [
+        "a composteira"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais exemplos de decompositores seu Valdemar cita?",
+       "options": [
+        "Fungos e bactérias",
+        "Abelhas e borboletas",
+        "Peixes e sapos",
+        "Pássaros e morcegos"
+       ],
+       "answer": "Fungos e bactérias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que são nutrientes, segundo o texto?",
+       "options": [
+        "Substâncias de que os seres vivos precisam para crescer",
+        "Um tipo de fungo",
+        "Restos de comida estragada",
+        "Túneis feitos pelas minhocas"
+       ],
+       "answer": "Substâncias de que os seres vivos precisam para crescer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como as minhocas ajudam o solo?",
+       "options": [
+        "Cavam túneis e deixam o solo fofo",
+        "Produzem luz",
+        "Espantam as plantas",
+        "Secam a terra"
+       ],
+       "answer": "Cavam túneis e deixam o solo fofo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual comparação Benício faz para os decompositores?",
+       "options": [
+        "Faxineiros da natureza",
+        "Cozinheiros da floresta",
+        "Guardas do jardim",
+        "Carteiros do solo"
+       ],
+       "answer": "Faxineiros da natureza",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o jardineiro quer dizer com \"a floresta estaria coberta de folhas velhas até o teto\"?",
+       "options": [
+        "Que, sem decompositores, os restos se acumulariam",
+        "Que a floresta tem um teto",
+        "Que as folhas crescem para cima",
+        "Que as árvores perdem todas as folhas no inverno"
+       ],
+       "answer": "Que, sem decompositores, os restos se acumulariam",
+       "accept": [],
+       "hint": "É um exagero para mostrar uma consequência.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Tainá escolheu explicar a decomposição como se fosse uma receita?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Abelhas carteiras",
+     "synopsis": "Um pé de maracujá sem frutos leva os primos a investigar a polinização. Eles descobrem o trabalho das abelhas.",
+     "text": "Na varanda do apartamento de Benício, o pé de maracujá estava cheio de flores lindas, roxas e brancas. Mas não aparecia nenhum fruto.\n— Será que está doente? — perguntou Benício.\nTainá, que já pensava como uma repórter, transformou a dúvida em pauta: o sexto episódio seria sobre polinização.\nNa pesquisa, descobriram que dentro das flores existe um pozinho chamado pólen. Para que muitas plantas formem frutos e sementes, o pólen precisa ser levado de uma flor para outra. Esse transporte se chama polinização.\n— E quem leva o pólen? — perguntou Benício.\n— Os polinizadores: abelhas, borboletas, beija-flores e até morcegos. O vento e a água também ajudam algumas plantas.\nOs primos ligaram para a tia Rosângela, que é bióloga. Ela explicou ao telefone:\n— Quando a abelha pousa na flor para beber o néctar, um líquido doce, o pólen gruda no corpo peludo dela. Na próxima flor, parte desse pólen fica lá. A abelha nem percebe que está ajudando.\n— Então a abelha é como um carteiro — disse Tainá. — Ela leva as \"cartas\" de pólen de uma casa para outra.\n— Gostei! — riu a tia. — E o maracujá depende muito de abelhas grandes, como a mamangava. Num prédio alto, talvez elas não estejam chegando até a varanda.\n— E o que a gente pode fazer? — quis saber Benício.\n— Em plantações, às vezes as pessoas fazem a polinização com a mão, passando o pólen de flor em flor com cuidado.\nBenício tentou. Com um pincel macio, levou o pólen de uma flor para outra, bem devagar. Duas semanas depois, uma bolinha verde apareceu no galho.\n— Um maracujá! — gritou ele, tão alto que o vizinho bateu na parede.\nNo episódio, Tainá lembrou aos ouvintes que muitas frutas e verduras que comemos dependem dos polinizadores. Por isso, proteger as abelhas é proteger também a nossa comida.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o problema do pé de maracujá?",
+       "options": [
+        "Tinha flores, mas nenhum fruto",
+        "Estava sem folhas",
+        "Tinha frutos podres",
+        "Não tinha flores"
+       ],
+       "answer": "Tinha flores, mas nenhum fruto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama o pozinho que fica dentro das flores?",
+       "options": [],
+       "answer": "pólen",
+       "accept": [
+        "polen",
+        "o pólen"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que é a polinização?",
+       "options": [
+        "O transporte do pólen de uma flor para outra",
+        "A rega das plantas",
+        "O nascimento das folhas",
+        "A colheita dos frutos"
+       ],
+       "answer": "O transporte do pólen de uma flor para outra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual destes NÃO é citado como polinizador?",
+       "options": [
+        "Minhoca",
+        "Abelha",
+        "Beija-flor",
+        "Morcego"
+       ],
+       "answer": "Minhoca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é a profissão da tia Rosângela?",
+       "options": [],
+       "answer": "bióloga",
+       "accept": [
+        "biologa",
+        "bióloga",
+        "bióloga."
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Benício conseguiu que o maracujá desse fruto?",
+       "options": [
+        "Passou o pólen de flor em flor com um pincel",
+        "Colocou mais adubo",
+        "Mudou o vaso de lugar",
+        "Regou três vezes por dia"
+       ],
+       "answer": "Passou o pólen de flor em flor com um pincel",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a tia acha que as abelhas não chegavam à varanda?",
+       "options": [
+        "Porque o apartamento ficava num prédio alto",
+        "Porque as flores eram roxas",
+        "Porque era inverno",
+        "Porque havia muito vento"
+       ],
+       "answer": "Porque o apartamento ficava num prédio alto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Tainá diz que proteger as abelhas é proteger também a nossa comida?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: No ar!",
+     "synopsis": "No dia da feira, a Rádio Curiosa grava um episódio ao vivo sobre atrito. Um ouvinte pequeno mostra que as explicações funcionaram.",
+     "text": "Enfim chegou o dia da feira de ciências. A mesa da Rádio Curiosa tinha dois microfones, fones de ouvido e um cartaz com a frase do programa. Os primos gravariam o último episódio ao vivo, na frente do público.\nO tema era atrito. Benício começou com uma demonstração: ficou só de meias e tentou correr no piso liso do ginásio. Escorregou e quase caiu, arrancando risadas. Depois, calçou o tênis e correu sem problema.\n— Atrito é uma força que aparece quando duas superfícies se esfregam — explicou Tainá. — Ele dificulta o movimento. O piso liso e a meia têm pouco atrito; a sola de borracha do tênis tem muito.\n— E isso é ruim? — perguntou Benício, fingindo não saber.\n— Às vezes atrapalha, mas muitas vezes ajuda. Sem atrito, a gente não conseguiria andar, e o freio da bicicleta não pararia a roda.\nPara a comparação, Tainá pediu que uma voluntária esfregasse as mãos com força.\n— Sentiu esquentar? Isso também é atrito. É por isso que esfregamos as mãos num dia frio.\nAo final, a professora Odete pegou o microfone para fazer uma pergunta surpresa ao público:\n— Alguém sabe dizer o que é fotossíntese?\nUm menino pequeno, de uns sete anos, levantou a mão.\n— É quando a planta faz comida com a luz do Sol. A folha é tipo uma fábrica!\nTainá e Benício se olharam. Aquele menino tinha ouvido o primeiro episódio e lembrado da comparação.\n— Acho que a dica funcionou — cochichou Tainá. — Exemplo e comparação.\nOs primos não ganharam o primeiro lugar; ficaram em segundo, atrás de um robô que separava lixo. Mas, na saída, a diretora pediu que a Rádio Curiosa tocasse no intervalo, toda sexta-feira.\nBenício já fazia uma lista de novos temas no caderno: magnetismo, vulcões, arco-íris.\n— Palavra difícil não assusta — disse ele, desligando o microfone.\n— A gente explica! — completou Tainá.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde e como foi gravado o último episódio?",
+       "options": [
+        "Ao vivo, na feira de ciências",
+        "No quarto de Benício",
+        "No carro da família",
+        "Na biblioteca, em silêncio"
+       ],
+       "answer": "Ao vivo, na feira de ciências",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o tema do último episódio?",
+       "options": [],
+       "answer": "atrito",
+       "accept": [
+        "o atrito"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Benício escorregou?",
+       "options": [
+        "Porque estava de meias num piso liso, com pouco atrito",
+        "Porque o tênis era novo",
+        "Porque o chão estava molhado",
+        "Porque tropeçou num fio"
+       ],
+       "answer": "Porque estava de meias num piso liso, com pouco atrito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Tainá, o que é atrito?",
+       "options": [
+        "Uma força que aparece quando superfícies se esfregam",
+        "Um tipo de energia da luz",
+        "O peso de um objeto",
+        "A velocidade de uma corrida"
+       ],
+       "answer": "Uma força que aparece quando superfícies se esfregam",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual exemplo mostra que o atrito também ajuda?",
+       "options": [
+        "O freio da bicicleta",
+        "A lâmpada acesa",
+        "O gelo derretendo",
+        "A planta crescendo"
+       ],
+       "answer": "O freio da bicicleta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que lugar os primos ficaram na feira?",
+       "options": [
+        "Em segundo lugar",
+        "Em primeiro lugar",
+        "Em terceiro lugar",
+        "Não foram classificados"
+       ],
+       "answer": "Em segundo lugar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a resposta do menino pequeno mostrou aos primos?",
+       "options": [
+        "Que a comparação da fábrica ajudou alguém a lembrar da explicação",
+        "Que o menino era cientista",
+        "Que a pergunta era fácil demais",
+        "Que ninguém tinha ouvido o podcast"
+       ],
+       "answer": "Que a comparação da fábrica ajudou alguém a lembrar da explicação",
+       "accept": [],
+       "hint": "Lembre-se da dica da professora no capítulo 1.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a diretora quis que a Rádio Curiosa tocasse no intervalo, mesmo sem o primeiro lugar?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
