@@ -3941,6 +3941,894 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Small Print",
+   "premise": "Tavi and Noor write a school newspaper column that takes one advert apart each week, while a mysterious campaign of silver question marks spreads across their town.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Hamster on the Box",
+     "synopsis": "Tavi and Noor start a newspaper column about adverts and discover that a cereal box speaks to two audiences at once.",
+     "text": "Tavi Okafor had one rule at breakfast: never read the cereal box. On Monday he broke it, because Ms Penhale, who ran the school newspaper, had given him and Noor Haddad a new column called The Small Print. Each week they had to choose one advert and explain to readers how it worked.\n\"Packaging counts as advertising,\" said Noor, dropping a box of Crunch Comets onto the table in the newsroom, which was really a cupboard with a window. \"So let's begin here. First question: who is this for?\"\nTavi looked. An astronaut hamster called Captain Crumb winked from the front of the box, one paw raised in a salute. The background was bright orange and purple. The words \"Blast Off to Breakfast!\" bounced across the top in fat bubble letters, and a yellow star promised a free glow-in-the-dark sticker inside.\n\"Little kids,\" said Tavi. \"Definitely. No adult wants a sticker.\"\n\"Keep going,\" said Noor, and she turned the box to the side. There, in calm blue letters on a white panel, were the words \"Packed with 12 vitamins. A great start to the school day.\"\nTavi frowned. \"That doesn't sound like the hamster at all.\"\n\"Because the hamster isn't talking to the same person,\" said Noor. \"Who actually pays for the cereal?\"\nHe thought of his little sister tugging at their dad's sleeve in the supermarket. The front of the box made her want it. The side of the box gave their dad a reason to say yes. One box was doing two jobs, for two different audiences.\nAfter school they went to the supermarket on Mill Lane to test their idea. Crunch Comets sat on a low shelf, exactly level with the eyes of a six-year-old, who was already pointing at it. The plain oat cereal, with its small grey lettering, was up near the top, where only adults would notice it.\n\"The shelf is part of the advert too,\" Tavi whispered, writing that down.\nThat evening they finished their first column. \"Next time you see a cartoon on a box,\" it ended, \"ask yourself who is meant to look at the front, and who is meant to read the side.\" Ms Penhale gave it a tick and a single word: \"Sharp.\"\nWalking to the bus stop, Tavi felt rather pleased with himself. Then Noor grabbed his arm. On the shelter was a new poster, completely black except for a huge silver question mark. Underneath, in small white letters, it said: \"Something is coming to Harrowmere. Are you ready?\"\nThere was no logo, no product and no price.\n\"What's it selling?\" asked Tavi.\nNoor took a photo. \"That,\" she said, \"is exactly what they want us to ask.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the newspaper column Tavi and Noor are given?",
+       "options": [],
+       "answer": "The Small Print",
+       "accept": [
+        "Small Print"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kind of character appears on the Crunch Comets box?",
+       "options": [
+        "A pirate rabbit",
+        "A superhero cat",
+        "A robot dog",
+        "An astronaut hamster"
+       ],
+       "answer": "An astronaut hamster",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what free gift does the front of the box promise?",
+       "options": [
+        "A toy hamster",
+        "A plastic spaceship",
+        "A comic book",
+        "A glow-in-the-dark sticker"
+       ],
+       "answer": "A glow-in-the-dark sticker",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which words on the box are aimed mainly at adults?",
+       "options": [
+        "Packed with 12 vitamins",
+        "Captain Crumb salutes you",
+        "Free sticker inside",
+        "Blast Off to Breakfast!"
+       ],
+       "answer": "Packed with 12 vitamins",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is it important that Crunch Comets sits on a low shelf?",
+       "options": [
+        "Young children can see it at eye level",
+        "It is heavier than other cereals",
+        "Adults prefer to bend down",
+        "It is cheaper than other cereals"
+       ],
+       "answer": "Young children can see it at eye level",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the two sides of the box show about its target audience?",
+       "options": [
+        "It is meant only for astronauts",
+        "It is meant only for teachers",
+        "It tries to persuade both the child and the paying adult",
+        "It has no particular audience"
+       ],
+       "answer": "It tries to persuade both the child and the paying adult",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what makes the poster on the bus shelter unusual?",
+       "options": [
+        "It is written in another language",
+        "It does not say what is being advertised",
+        "It shows a famous hamster",
+        "It gives a very low price"
+       ],
+       "answer": "It does not say what is being advertised",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think an advert might deliberately avoid saying what it is selling?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: Two Words on a Wall",
+     "synopsis": "A trainer advert with almost no text teaches Tavi and Noor how much an image can say by itself.",
+     "text": "By Wednesday, three more silver question marks had appeared around Harrowmere, and everybody at school had a theory. Some said a theme park was coming. Others swore it was a new phone shop. Tavi and Noor agreed to leave the mystery alone until they had more evidence, and to choose another advert for the column.\nThey found it on the side of the sports centre. It was a giant photograph of a young runner on an empty road at dawn. Her face was shining with sweat and her eyes were fixed on something far ahead of her. The picture had been taken from low down, so that she seemed to tower over the street. At the bottom right were a small lightning-bolt logo and just two words: \"Never Stop.\"\n\"Where's the rest of it?\" asked Tavi. \"It doesn't even say they're selling trainers. It doesn't tell you the price, or why they're any good.\"\n\"So what does it tell you?\" said Noor.\nTavi sat on the wall with his notebook and looked properly. The empty road suggested the runner was alone and determined. The early light told him she had got up while everyone else was asleep. The low camera angle made her look powerful, almost like a statue. Nothing in the picture said a word about shoes, yet her trainers were the brightest thing in the whole image, a sharp electric blue against the grey road.\n\"It's not selling shoes,\" he said slowly. \"It's selling being her.\"\nNoor grinned. \"Now you sound like a columnist.\"\nThey asked some people walking past what they thought the advert meant. A woman with a shopping trolley shrugged and said she had not noticed it. A man waiting for his son thought it was about the sports centre. But three Year 10 boys coming out of football practice knew at once. \"That's Volt,\" one of them said. \"Those trainers cost a fortune. My cousin's got them.\"\nThat gave Noor the idea for the column's main point. Volt had not tried to speak to everybody. It had spoken to teenagers who wanted to feel strong, serious and a little bit special, and it had trusted them to recognise the logo without being told. Anyone outside that group simply walked past.\nThey also noticed what the slogan did. \"Never Stop\" was an instruction, short enough to remember and vague enough to mean almost anything: keep running, keep training, keep trying.\n\"And what happens if you stop?\" Tavi asked.\n\"Then I suppose you need new trainers,\" said Noor.\nThat made him laugh, and it went in the column as the last line. As they packed up, he noticed a silver question mark on the sports centre door. This one had an extra line: \"You've walked past it a thousand times.\"\n\"Past what?\" said Noor, frowning. Neither of them had an answer.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what two-word slogan appears on the trainer advert?",
+       "options": [],
+       "answer": "Never Stop",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the photograph on the sports centre show?",
+       "options": [
+        "A young runner on an empty road at dawn",
+        "A crowd of cheering parents",
+        "A football team celebrating a goal",
+        "A shop full of shoes"
+       ],
+       "answer": "A young runner on an empty road at dawn",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the brightest thing in the image?",
+       "options": [
+        "The lightning-bolt logo",
+        "The rising sun",
+        "The runner's trainers",
+        "The road signs"
+       ],
+       "answer": "The runner's trainers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what effect does the low camera angle have?",
+       "options": [
+        "It makes the runner look powerful",
+        "It makes the runner look tired",
+        "It makes the road look busy",
+        "It hides the runner's face"
+       ],
+       "answer": "It makes the runner look powerful",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who recognises the advert straight away?",
+       "options": [
+        "Three Year 10 boys",
+        "A woman with a shopping trolley",
+        "Ms Penhale",
+        "A man waiting for his son"
+       ],
+       "answer": "Three Year 10 boys",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tavi mean when he says the advert is \"selling being her\"?",
+       "options": [
+        "Buyers are offered a feeling of being strong and determined",
+        "The shoes are made only for professional athletes",
+        "The company wants to sell photographs",
+        "The runner is looking for a new job"
+       ],
+       "answer": "Buyers are offered a feeling of being strong and determined",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the advert not need to explain the product?",
+       "options": [
+        "The advert is aimed at people who dislike sport",
+        "The law does not allow prices on walls",
+        "Its target audience already recognises the logo",
+        "The company ran out of space on the wall"
+       ],
+       "answer": "Its target audience already recognises the logo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think some adverts use very few words instead of explaining a product in detail?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: One Yoghurt, Two Stories",
+     "synopsis": "The same yoghurt is advertised very differently in two magazines, showing how adverts are shaped for their readers.",
+     "text": "Noor's aunt worked at the dentist's, and the waiting room was full of old magazines. On Saturday Noor turned up at the newsroom with two of them and an enormous smile. She opened the first, a magazine for parents, and laid it on the table. Then she opened the second, a teen magazine, and put it beside the first.\n\"Same product,\" she said. \"Spot the difference.\"\nTavi leaned in. Both adverts were for Meadowmix yoghurt, and both showed the same little pot. That was where the similarity ended.\nThe parents' advert was pale green and cream. A mother and her young son sat at a sunny kitchen table, sharing a spoon. The writing was neat and gentle: \"Real fruit. No artificial colours. Because you only want the best for them.\" There was a long paragraph about farms and calcium, and a small picture of a cow in a field.\nThe teen advert looked as if it had been shouted. The same pot was flying through the air against a bright pink background, surrounded by splashes of mango. Three friends were laughing on a skateboard ramp, and the writing ran diagonally across the page: \"Grab it. Gulp it. Go!\" Nothing was said about calcium or farms. In the corner was a line about a competition to win festival tickets.\n\"You'd never guess they were the same yoghurt,\" said Tavi.\n\"That's the point. So let's work it out properly,\" said Noor, and she drew a table in her notebook with three columns: colours, images and language.\nColours were easy. Soft green and cream suggested nature, safety and calm, while hot pink suggested energy and fun. Images came next. The parents' advert showed a caring family moment, because that was how parents might like to see themselves. The teen advert showed friends and freedom, with no adults anywhere.\nLanguage took longer. Tavi noticed that \"them\" in the first advert meant the reader's children, even though nobody had mentioned any children in the words. \"It assumes you're a parent,\" he said. \"And it makes you feel a bit guilty, doesn't it? If you only want the best for them, you'd better buy this.\" The teen advert used short commands and repeated the letter \"g\" to make its slogan catchy.\n\"So the question for readers,\" Noor said, \"isn't only what the advert says. It's who the advert thinks you are.\"\nTavi wrote that down at once. It was the best sentence they'd had so far.\nThey were still working when Ms Penhale put her head round the door and pointed through the window. Across the car park a van was pulling away. A fresh silver poster had been stuck to the old town hall noticeboard, and from where they stood they could just read its new line: \"It has been waiting for you, and it is older than you think.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the brand name of the yoghurt?",
+       "options": [],
+       "answer": "Meadowmix",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where do the two magazines come from?",
+       "options": [
+        "A train station",
+        "Tavi's bedroom",
+        "A dentist's waiting room",
+        "The school library"
+       ],
+       "answer": "A dentist's waiting room",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which slogan appears in the teen advert?",
+       "options": [
+        "Grab it. Gulp it. Go!",
+        "Real fruit. No artificial colours.",
+        "Blast Off to Breakfast!",
+        "Never Stop."
+       ],
+       "answer": "Grab it. Gulp it. Go!",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what prize is offered in the teen advert?",
+       "options": [
+        "A year of free yoghurt",
+        "A skateboard",
+        "A trip to a farm",
+        "Festival tickets"
+       ],
+       "answer": "Festival tickets",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the pale green and cream colours suggest?",
+       "options": [
+        "Luxury and wealth",
+        "Nature, safety and calm",
+        "Danger and excitement",
+        "Speed and sport"
+       ],
+       "answer": "Nature, safety and calm",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the teen advert show friends with no adults?",
+       "options": [
+        "Because adults cannot eat yoghurt",
+        "Because the photographer had no adult models",
+        "To appeal to teenagers' wish for freedom",
+        "To show that parents disapprove of yoghurt"
+       ],
+       "answer": "To appeal to teenagers' wish for freedom",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tavi suggest the word \"them\" does in the parents' advert?",
+       "options": [
+        "It assumes the reader is a parent and plays on their feelings",
+        "It refers to the people who made the yoghurt",
+        "It makes the sentence harder to read",
+        "It refers to the cows on the farm"
+       ],
+       "answer": "It assumes the reader is a parent and plays on their feelings",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think companies make different adverts for the same product instead of using one advert for everyone?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Slippery Words",
+     "synopsis": "A bold shampoo advert sends Tavi and Noor hunting for words that promise less than they seem to.",
+     "text": "The advert that started the argument was on the back of Tavi's bus ticket wallet. It showed a woman tossing shining hair above the words: \"SilkaShine. Up to 80% less frizz. Helps hair look visibly healthier. Scientifically formulated.\"\n\"Well, that sounds impressive,\" said Tavi. \"Eighty per cent, and science. Who could argue with that?\"\nNoor took a red pen from behind her ear. \"Read it again, slowly. What does 'up to' mean?\"\nTavi opened his mouth, then closed it. \"It could be eighty,\" he said. \"Or it could be anything under eighty.\"\n\"Including two,\" said Noor, circling the words. \"Next one.\"\n\"'Helps',\" he read. \"So it doesn't actually do it. It only helps.\"\n\"Helps what?\"\n\"Helps hair look... oh.\" Tavi began to smile. \"It doesn't even say your hair is healthier. It says it might look healthier. And what does 'visibly' add? If something looks different, of course you can see it.\"\nThey spent the afternoon collecting what Noor called slippery words, the kind that sound like solid promises until you try to pick them up. A toothpaste promised to fight stains, but did not say whether it won. A fruit drink was \"made with real fruit\", and the label on the back showed that only a tiny part of it was juice. A mattress was \"the most comfortable you could ever imagine\", which was impossible to measure. A vitamin spray \"may support\" your energy levels.\nTavi wrote the words on the whiteboard: up to, helps, may, could, fights, made with, looks.\n\"So are these adverts lying?\" he asked.\nNoor shook her head. \"No, and that's the clever bit. Each sentence can be perfectly true, because nothing definite has been claimed. It's our brains that fill in the rest. We read 'up to 80%' and remember '80%'.\"\n\"What about 'scientifically formulated'?\"\nNoor shrugged. \"Someone worked out a recipe, I suppose. It doesn't tell you there was a test, or what the test found. If they had strong evidence, they'd probably show it.\"\nTo test the idea, they rewrote the advert honestly for the column: \"SilkaShine. A shampoo. Some people may find their hair a little less frizzy. We can't promise how much.\" It was the funniest thing they had ever written, and also, they realised, the least likely to sell a single bottle.\nThe column ended with a challenge: bring in the slipperiest advert you can find. By Friday the box outside the newsroom was stuffed with entries. Near the bottom Tavi found an envelope with no name on it. Inside was one small card, printed in silver: \"Good work on the words. Keep looking. Clue: we never use the word 'free' lightly, but we mean it.\"\nTavi turned the card over twice. \"Whoever's behind those posters,\" he said, \"is reading our column.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the shampoo in the advert?",
+       "options": [],
+       "answer": "SilkaShine",
+       "accept": [
+        "Silka Shine"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what percentage does the shampoo advert mention?",
+       "options": [
+        "Exactly 50%",
+        "Up to 25%",
+        "Up to 80%",
+        "Over 90%"
+       ],
+       "answer": "Up to 80%",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Noor call words that sound like promises but are not?",
+       "options": [
+        "Hidden words",
+        "Slippery words",
+        "Sticky words",
+        "Silver words"
+       ],
+       "answer": "Slippery words",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the problem with \"up to 80% less frizz\"?",
+       "options": [
+        "The real result could be far below 80%",
+        "The number has been printed wrongly",
+        "It is against the law to use percentages",
+        "Shampoo cannot change hair at all"
+       ],
+       "answer": "The real result could be far below 80%",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the label on the fruit drink reveal?",
+       "options": [
+        "It contains no sugar at all",
+        "It has gone out of date",
+        "It was made in a laboratory",
+        "Only a tiny part of it is juice"
+       ],
+       "answer": "Only a tiny part of it is juice",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Noor say these adverts are not lying?",
+       "options": [
+        "Their sentences avoid making any definite claim",
+        "Adverts are not allowed to be checked",
+        "All the products have been fully tested",
+        "The companies do not know what is in the products"
+       ],
+       "answer": "Their sentences avoid making any definite claim",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do Tavi and Noor show by rewriting the advert honestly?",
+       "options": [
+        "Vague language makes a product sound more appealing",
+        "Readers prefer long adverts",
+        "Shampoo adverts are always funny",
+        "SilkaShine is a dangerous product"
+       ],
+       "answer": "Vague language makes a product sound more appealing",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think people often remember the number in an advert but not the small words in front of it?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Just My Honest Opinion",
+     "synopsis": "When a favourite online creator raves about a smoothie, Noor and Tavi learn how to spot advertising that does not look like advertising.",
+     "text": "Everyone in Year 7 watched Zippy Zara. She was a cheerful online creator who built ridiculous obstacle courses in her garden. On Tuesday, Noor's friend Bea came into the newsroom holding up her phone. \"You two should do Zara next. She doesn't do adverts. She just tells you what she actually likes.\"\nOn the screen, Zara was holding a bottle of something pink and bright. \"Okay, guys, I've been obsessed with these Zing smoothies all week,\" she said, laughing. \"Not even joking, they've changed my mornings. Use my code ZARA10 to get ten per cent off!\"\nTavi and Noor looked at each other.\n\"Bea,\" said Noor carefully, \"why would she have a discount code if it was just her opinion?\"\nBea frowned. \"Because she's nice?\"\nThey watched the video four times and made a list. The bottle was turned so that the label faced the camera, every time. Zara's kitchen was tidy for once, with three more bottles arranged beside the sink. And right down at the bottom of the description, under a long list of links, were two tiny symbols: \"#ad\".\n\"She did say it,\" Tavi admitted. \"Sort of. If you scroll down.\"\n\"So she's following the rules,\" said Noor. \"I'm not saying Zara's a bad person. Maybe she really does love them. But Zing paid for this, and that changes how we should watch it.\"\nMs Penhale, passing with a mug of tea, added something useful. \"Ask why it works,\" she said. \"What does Zara have that a billboard doesn't?\"\nTavi thought about it. A billboard was a stranger shouting at you. Zara felt like a friend. She spoke directly to the camera and called her viewers \"guys\". She told them about her mornings. Because they trusted her and felt they knew her, her recommendation didn't feel like selling at all. It felt like a tip from someone on your side.\n\"And her viewers are the target audience,\" said Noor. \"Zing doesn't need to guess who to reach. Zara has already gathered them together.\"\nThe column they wrote was the most careful yet, because they knew how many readers loved Zara. They gave three questions to ask of any recommendation: Is there a code, a link or a tag? Is the product placed where you can't miss it? Did the person get paid or get it for free? \"None of this means you can't enjoy the video,\" they finished. \"It just means you know what you're watching.\"\nBea read it twice and said, a little grumpily, that she now saw \"ad\" everywhere. Noor took that as a compliment.\nOn her way out, Bea dropped something on the desk. \"This was on the school gate. It's got your names on.\" It was another silver card, and on it were the words: \"No code. No influencer. No payment. Saturday, 10 o'clock. Corner of Mill Lane and Church Street.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what discount code does Zara give to viewers?",
+       "options": [],
+       "answer": "ZARA10",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what product does Zara talk about?",
+       "options": [
+        "Zing smoothies",
+        "SilkaShine shampoo",
+        "Volt trainers",
+        "Crunch Comets"
+       ],
+       "answer": "Zing smoothies",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where do Tavi and Noor find the \"#ad\" symbols?",
+       "options": [
+        "In the title of the video",
+        "At the bottom of the video description",
+        "On Zara's kitchen wall",
+        "On the smoothie bottle"
+       ],
+       "answer": "At the bottom of the video description",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tavi notice about the bottle?",
+       "options": [
+        "The label always faces the camera",
+        "It is hidden behind the sink",
+        "It has no label at all",
+        "It is always empty"
+       ],
+       "answer": "The label always faces the camera",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how is Zara different from a billboard, according to Tavi?",
+       "options": [
+        "She is much harder to find",
+        "She is cheaper to look at",
+        "She feels like a friend, not a stranger",
+        "She never talks about products"
+       ],
+       "answer": "She feels like a friend, not a stranger",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Noor suggest Zing chose to work with Zara?",
+       "options": [
+        "Zara is the only creator who likes fruit",
+        "Zing could not afford any other kind of advert",
+        "Zara owns the smoothie company",
+        "Zara has already gathered its target audience"
+       ],
+       "answer": "Zara has already gathered its target audience",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do you think Tavi and Noor write this column more carefully?",
+       "options": [
+        "They are afraid of Zing's lawyers",
+        "They want Zara to pay them",
+        "Ms Penhale has told them to stop writing",
+        "Many of their readers love Zara"
+       ],
+       "answer": "Many of their readers love Zara",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think an advert may work better when it does not feel like an advert?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Empty Bowl",
+     "synopsis": "A charity poster makes Tavi cry a little, and the friends debate whether persuasion can be used for good.",
+     "text": "The next advert did not need any searching for. It was on the wall of the bus station, and Tavi stopped dead when he saw it.\nThe poster was almost entirely white. In the centre was a black-and-white photograph of a thin brown dog, sitting beside an empty metal bowl and looking straight at the camera. Above it were the words: \"He's still waiting. Will you walk past too?\" At the bottom, in small type, was the name of an animal rescue charity, Paws Harbour, and a message explaining that a monthly gift of three pounds could feed a rescued dog.\nTavi didn't say anything for a while. Then he reached for his notebook, a bit embarrassed that his eyes were stinging.\n\"You're allowed to feel it,\" said Noor. \"But we can still ask how it works.\"\nSo they did. The dog looked directly at the viewer, which made it feel as though he were asking you personally. All the colour had been removed, making the picture feel serious and sad. The white space around him made him look alone in the world. The empty bowl told a whole story without a word of explanation.\nThen there was the language. \"He\" made the dog a person, not an animal. \"Still waiting\" suggested that time was passing while you stood there. Best of all, or worst of all, was the question. \"Will you walk past too?\" used direct address, and that little word \"too\" hinted that lots of other people already had. There was no good way to answer it, except by doing something.\n\"It's making me feel guilty,\" said Tavi. \"Just like the yoghurt did. So is it the same trick?\"\nThat started the longest argument of the term. Noor said that the techniques were exactly the same, so readers should be just as alert. Tavi said that it mattered what they were being persuaded to do. A shampoo wanted your money for itself. Paws Harbour wanted to feed dogs. \"Then you should check that too,\" said Noor, and she looked up the charity on the official register, where they could see how the money was spent. It seemed to be genuine.\nIn the end, they decided they were both right. Emotive language and powerful images were tools, like a hammer, which could build a house or break a window. The reader's job was to notice when the tools were being used, and then make up their own mind. Knowing how the poster worked didn't make it less moving. It just meant that when Tavi set up a monthly gift from his pocket money with his mum's help, he knew why, and he had chosen it himself.\nThat Saturday morning, with their notebooks ready, they set out for the corner of Mill Lane and Church Street. The silver posters had changed overnight. They now said only: \"Today.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the animal charity?",
+       "options": [],
+       "answer": "Paws Harbour",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where is the charity poster displayed?",
+       "options": [
+        "On the school gate",
+        "On the sports centre",
+        "At the bus station",
+        "In a dentist's waiting room"
+       ],
+       "answer": "At the bus station",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is beside the dog in the photograph?",
+       "options": [
+        "A child's shoe",
+        "A broken lead",
+        "An empty metal bowl",
+        "A pile of toys"
+       ],
+       "answer": "An empty metal bowl",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what effect does removing all the colour have?",
+       "options": [
+        "It makes the picture feel serious and sad",
+        "It makes the dog look cheerful",
+        "It makes the poster cheaper to read",
+        "It makes the words harder to notice"
+       ],
+       "answer": "It makes the picture feel serious and sad",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which technique does \"Will you walk past too?\" use?",
+       "options": [
+        "A list of statistics",
+        "Direct address to the reader",
+        "A funny rhyme",
+        "An expert's opinion"
+       ],
+       "answer": "Direct address to the reader",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Noor check the official register?",
+       "options": [
+        "To find the dog's real name",
+        "To find out who took the photograph",
+        "To complain about the poster",
+        "To see whether the charity is genuine and how it spends money"
+       ],
+       "answer": "To see whether the charity is genuine and how it spends money",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the friends mean by comparing persuasive techniques to a hammer?",
+       "options": [
+        "Persuasion is always harmful",
+        "Posters are hard to put up",
+        "Adverts should be hit hard",
+        "The tools can be used for good or for harm"
+       ],
+       "answer": "The tools can be used for good or for harm",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Tavi still feels moved by the poster after working out how it was made?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Something Is Coming",
+     "synopsis": "The mystery of the silver posters is finally solved, and Tavi and Noor have to decide how to write about it.",
+     "text": "There was already a small crowd at the corner of Mill Lane and Church Street when they arrived. Everyone was staring up at a building Tavi had passed every day of his life and had never once really looked at: the old Harrowmere Library. Its red bricks had been cleaned, its dusty windows were sparkling, and a huge silver question mark hung over the door.\nAt ten o'clock exactly, the question mark dropped away to reveal a sign in clean, modern letters: \"The Loft. Harrowmere Library, for ages 11 to 16. Free. Yours.\"\nNobody quite knew what to do, until a small woman with white hair and silver glasses stepped out and opened the doors. Inside, the top floor had been turned into a bright room with beanbags, comics, games tables and shelves of new books.\n\"You must be the columnists,\" said the woman, finding them by the graphic novels. \"I'm Mrs Adeyemi, the librarian. I also stuck up rather a lot of posters, with my nephew and his van.\"\nNoor actually gasped. \"That was you?\"\n\"Do you know what happened the last time I put up a notice saying 'Come to the library'?\" asked Mrs Adeyemi. \"Two people came. One was lost.\" She smiled. \"Nobody your age thinks they need a library. So I couldn't begin by telling you what it was, could I? You'd already made up your minds. I had to make you curious first.\"\nTavi was scribbling furiously. \"So all that mystery was the advert.\"\n\"It's called a teaser campaign,\" she said. \"I read about it in a book. Here, naturally. It cost me less than a school trip, because almost all of it was done by people talking. Thank you for that, by the way.\"\nThey sat on the beanbags and went through it together. The target audience was teenagers, so the black and silver design had looked more like a film trailer than a library notice. Each clue had been true: they had walked past it a thousand times, it was older than they thought, it had been waiting for them. Even \"free\" had been used carefully. There was no code, no small print and no \"up to\".\n\"But you did persuade us,\" said Noor. \"You used all the same tricks.\"\n\"I certainly did,\" said Mrs Adeyemi. \"So check my claims. Come and see whether it's any good. Then write what you really think.\"\nThat was why the last column of term took so long. Tavi and Noor spent a week in The Loft before they wrote it. They said the comics section was excellent, the wifi was slow and the beanbags were dangerously comfortable. They explained how the campaign had worked, step by step, and who it had been aimed at. Then they ended with the sentence they'd been building towards for seven weeks.\n\"An advert is a question disguised as an answer,\" they wrote. \"Our advice is to ask it back.\"\nOn the newsroom wall, Ms Penhale pinned up the column, with one word in red pen: \"Sharper.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the new space at the library called?",
+       "options": [],
+       "answer": "The Loft",
+       "accept": [
+        "Loft"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is finally revealed behind the silver posters?",
+       "options": [
+        "A new space at the old library",
+        "A sports centre",
+        "A theme park",
+        "A phone shop"
+       ],
+       "answer": "A new space at the old library",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who was behind the campaign?",
+       "options": [
+        "Ms Penhale, the teacher",
+        "The owner of Volt",
+        "Zippy Zara, the creator",
+        "Mrs Adeyemi, the librarian"
+       ],
+       "answer": "Mrs Adeyemi, the librarian",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does Mrs Adeyemi call this kind of mystery advertising?",
+       "options": [],
+       "answer": "A teaser campaign",
+       "accept": [
+        "teaser campaign",
+        "teaser"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the design use black and silver?",
+       "options": [
+        "To make the posters harder to read",
+        "To look more like a film trailer than a library notice",
+        "Because the librarian had no other paint",
+        "Because those are the colours of the school"
+       ],
+       "answer": "To look more like a film trailer than a library notice",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Mrs Adeyemi avoid saying \"library\" at first?",
+       "options": [
+        "She wanted to keep adults out",
+        "The word was not allowed on posters",
+        "Young people might have ignored it before getting curious",
+        "She was not sure the library would open"
+       ],
+       "answer": "Young people might have ignored it before getting curious",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the honest review show about Tavi and Noor?",
+       "options": [
+        "They have been paid by the library",
+        "They judge the place for themselves despite liking the campaign",
+        "They think every advert is dishonest",
+        "They have stopped caring about adverts"
+       ],
+       "answer": "They judge the place for themselves despite liking the campaign",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mrs Adeyemi tells the columnists to check her claims and write what they really think?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
