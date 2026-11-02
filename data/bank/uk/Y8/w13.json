@@ -1,0 +1,725 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y8",
+ "academic_week": 13,
+ "subjects": {
+  "bss": {
+   "topic": "Transportes e redes de comunicação",
+   "questions": [
+    {
+     "id": "r1uvs4lqlwtg6j",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual modal de transporte predomina no transporte de cargas no Brasil?",
+     "options": [
+      "Dutoviário",
+      "Rodoviário",
+      "Aéreo",
+      "Ferroviário"
+     ],
+     "answer": "Rodoviário",
+     "accept": [],
+     "hint": "Pense no que mais se vê levando mercadorias pelas estradas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w5ilw61o5eqh7",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chama o modal de transporte feito por trens sobre trilhos?",
+     "options": [],
+     "answer": "ferroviário",
+     "accept": [
+      "modal ferroviário",
+      "transporte ferroviário"
+     ],
+     "hint": "A palavra vem de \"ferro\" e \"via\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1snavuqqa0uey",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que é uma hidrovia?",
+     "options": [
+      "Uma ponte sobre um rio",
+      "Uma rota de navegação em rios e lagos",
+      "Um cano que leva água às cidades",
+      "Uma estrada à beira de um rio"
+     ],
+     "answer": "Uma rota de navegação em rios e lagos",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j9ai9b14cmbif",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Oleodutos e gasodutos fazem parte de qual modal?",
+     "options": [
+      "Aéreo",
+      "Dutoviário",
+      "Rodoviário",
+      "Hidroviário"
+     ],
+     "answer": "Dutoviário",
+     "accept": [],
+     "hint": "Observe a segunda parte das palavras do enunciado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "row8rrftljcwu",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual modal costuma ser o mais rápido em longas distâncias?",
+     "options": [
+      "Rodoviário",
+      "Ferroviário",
+      "Hidroviário",
+      "Aéreo"
+     ],
+     "answer": "Aéreo",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f0a4aluesdd",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chama a área que planeja o transporte, o armazenamento e a entrega de mercadorias?",
+     "options": [],
+     "answer": "logística",
+     "accept": [
+      "a logística"
+     ],
+     "hint": "Essa área busca fazer o produto chegar na hora certa com o menor custo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvig2z81bbm9o7",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é um exemplo de rede de comunicação?",
+     "options": [
+      "Uma rodovia federal",
+      "A internet por fibra óptica",
+      "Um porto marítimo",
+      "Uma hidrovia"
+     ],
+     "answer": "A internet por fibra óptica",
+     "accept": [],
+     "hint": "Ela transporta informações, não mercadorias.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d2vy0x1ap1oi6",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é a principal vantagem do transporte rodoviário?",
+     "options": [
+      "Não emitir poluentes",
+      "Transportar os maiores volumes de uma só vez",
+      "Ter o menor custo em longas distâncias",
+      "Levar a carga de porta a porta"
+     ],
+     "answer": "Levar a carga de porta a porta",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r181hai41crww63",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Uma mineradora precisa levar milhões de toneladas de minério por centenas de quilômetros em terra. Qual modal é o mais adequado?",
+     "options": [
+      "Dutoviário",
+      "Rodoviário",
+      "Aéreo",
+      "Ferroviário"
+     ],
+     "answer": "Ferroviário",
+     "accept": [],
+     "hint": "Pense em grande volume, longa distância e custo baixo por tonelada.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfxjz721v9chlh",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em comparação com o trem, qual é uma desvantagem do caminhão em longas distâncias?",
+     "options": [
+      "Não chegar a cidades pequenas",
+      "Maior custo por tonelada transportada",
+      "Depender de trilhos",
+      "Menor flexibilidade de rotas"
+     ],
+     "answer": "Maior custo por tonelada transportada",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ftlup1rlfs3l",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em qual região do Brasil o transporte de pessoas por rios é mais importante no dia a dia?",
+     "options": [
+      "Sul",
+      "Norte",
+      "Sudeste",
+      "Centro-Oeste"
+     ],
+     "answer": "Norte",
+     "accept": [],
+     "hint": "Pense na região de grandes rios e com poucas estradas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3xzppbs3zfz5",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quando uma carga vai de caminhão até a ferrovia e depois segue de navio, como se chama esse transporte?",
+     "options": [
+      "Intermodal",
+      "Urbano",
+      "Informal",
+      "Dutoviário"
+     ],
+     "answer": "Intermodal",
+     "accept": [],
+     "hint": "Mais de um modal é usado no mesmo trajeto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15k9u2s1r4z4bc",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Para que servem os cabos submarinos de fibra óptica?",
+     "options": [
+      "Para levar petróleo entre os portos",
+      "Para gerar energia no oceano",
+      "Para ligar países e continentes à internet",
+      "Para guiar os navios à noite"
+     ],
+     "answer": "Para ligar países e continentes à internet",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fnnozp1mxrftx",
+     "subject": "bss",
+     "type": "open",
+     "q": "Explique por que o transporte de cargas no Brasil passou a depender tanto das rodovias a partir de meados do século XX.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense nas escolhas de investimento e na chegada da indústria de automóveis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cf4dkoxd1pvt",
+     "subject": "bss",
+     "type": "open",
+     "q": "Dê um problema causado pela predominância rodoviária no Brasil e explique como ele afeta o preço dos produtos.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Considere o combustível, o estado das estradas e as longas distâncias.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp2ic41mfebaj",
+     "subject": "bss",
+     "type": "open",
+     "q": "Escolha uma região do Brasil e sugira um modal que deveria receber mais investimento. Justifique em 2 ou 3 frases.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Considere o relevo, os rios e o tipo de carga da região.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "comp": {
+   "topic": "Hexadecimal",
+   "questions": [
+    {
+     "id": "r1ja475117cs0y4",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What base is the hexadecimal number system?",
+     "options": [
+      "Base 10",
+      "Base 16",
+      "Base 8",
+      "Base 2"
+     ],
+     "answer": "Base 16",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jkvc39172qo52",
+     "subject": "comp",
+     "type": "num",
+     "q": "How many different digits and letters does hexadecimal use in total?",
+     "options": [],
+     "answer": "16",
+     "accept": [],
+     "hint": "Count 0 to 9, then A to F.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rklizrgeuldi",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is the denary value of the hex digit A?",
+     "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+     ],
+     "answer": "10",
+     "accept": [],
+     "hint": "It comes straight after 9.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgay36z1ydrmh6",
+     "subject": "comp",
+     "type": "num",
+     "q": "What is the denary value of the hex digit F?",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "It is the largest single hex digit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1smcuiy11vh9lo",
+     "subject": "comp",
+     "type": "short",
+     "q": "What is the name for a group of 4 bits?",
+     "options": [],
+     "answer": "nibble",
+     "accept": [
+      "a nibble"
+     ],
+     "hint": "It sounds like a small bite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xhrrcj1ihjswh",
+     "subject": "comp",
+     "type": "short",
+     "q": "Convert the binary nibble 1011 to a single hex digit.",
+     "options": [],
+     "answer": "B",
+     "accept": [],
+     "hint": "Work out the denary value first using 8, 4, 2, 1.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14ap6zz1jlodn1",
+     "subject": "comp",
+     "type": "num",
+     "q": "Convert hex 1A to denary.",
+     "options": [],
+     "answer": "26",
+     "accept": [],
+     "hint": "The left digit is worth 16 times its value.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rha1u9018gu68e",
+     "subject": "comp",
+     "type": "num",
+     "q": "Convert hex 2F to denary.",
+     "options": [],
+     "answer": "47",
+     "accept": [],
+     "hint": "Work out 2 × 16, then add the value of F.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10e6tbfav8u1x",
+     "subject": "comp",
+     "type": "num",
+     "q": "Convert hex A5 to denary.",
+     "options": [],
+     "answer": "165",
+     "accept": [],
+     "hint": "A is 10, so start with 10 × 16.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqfwg9i1ums5cb",
+     "subject": "comp",
+     "type": "short",
+     "q": "Convert denary 30 to hexadecimal.",
+     "options": [],
+     "answer": "1E",
+     "accept": [],
+     "hint": "Divide by 16 and write the remainder as a hex digit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vzof2s1r6vcg9",
+     "subject": "comp",
+     "type": "short",
+     "q": "Convert denary 200 to hexadecimal.",
+     "options": [],
+     "answer": "C8",
+     "accept": [],
+     "hint": "How many 16s fit into 200, and what is left?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12m245x101m5ya",
+     "subject": "comp",
+     "type": "short",
+     "q": "Convert hex 3C to 8-bit binary.",
+     "options": [],
+     "answer": "00111100",
+     "accept": [
+      "0011 1100"
+     ],
+     "hint": "Turn each hex digit into its own 4 bits.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11tye73dw85ce",
+     "subject": "comp",
+     "type": "num",
+     "q": "What is the largest denary value that two hex digits can represent?",
+     "options": [],
+     "answer": "255",
+     "accept": [],
+     "hint": "Think about hex FF.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzryb2mda97ab",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A web colour code is written with three pairs of hex digits for red, green and blue. Which colour does the code FF0000 show?",
+     "options": [
+      "Red",
+      "Green",
+      "Blue",
+      "White"
+     ],
+     "answer": "Red",
+     "accept": [],
+     "hint": "Only the first pair is at its maximum.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t351hv16dlyuz",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain why programmers often use hexadecimal instead of long binary numbers. Give two reasons.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about length and the chance of copying mistakes.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Spoken English: dramatic monologue",
+   "questions": [
+    {
+     "id": "r1vg2yvz1igb9f9",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is a monologue?",
+     "options": [
+      "A long speech by one character",
+      "A conversation between two characters",
+      "A song sung by a group",
+      "A list of the actors in a play"
+     ],
+     "answer": "A long speech by one character",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ron8f9fpaphcj",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word describes how a performer speaks a line, including pace and clarity?",
+     "options": [
+      "Script",
+      "Plot",
+      "Setting",
+      "Delivery"
+     ],
+     "answer": "Delivery",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iosfizsprigv",
+     "subject": "en",
+     "type": "short",
+     "q": "A monologue is usually written in which person: first, second or third?",
+     "options": [],
+     "answer": "first",
+     "accept": [
+      "first person",
+      "the first person",
+      "1st person"
+     ],
+     "hint": "Think about which pronoun a character uses to talk about themselves.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hnt7dm19rb2hs",
+     "subject": "en",
+     "type": "short",
+     "q": "What word names the attitude or feeling expressed by a speaker's voice?",
+     "options": [],
+     "answer": "tone",
+     "accept": [
+      "the tone"
+     ],
+     "hint": "It can be sarcastic, gentle or angry.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10dzsqtgxodso",
+     "subject": "en",
+     "type": "short",
+     "q": "What do we call a short silence used on purpose during a speech?",
+     "options": [],
+     "answer": "pause",
+     "accept": [
+      "a pause"
+     ],
+     "hint": "It can create tension before an important line.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14z5vcspji9vh",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does \"pace\" mean in spoken performance?",
+     "options": [
+      "How loudly someone speaks",
+      "How high or low the voice is",
+      "Where the actor stands",
+      "How fast or slowly someone speaks"
+     ],
+     "answer": "How fast or slowly someone speaks",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nv3ds5y73ddu",
+     "subject": "en",
+     "type": "mc",
+     "q": "How is a dramatic monologue different from a dialogue?",
+     "options": [
+      "It must always rhyme",
+      "It has no character in it",
+      "One character does the speaking, often to a silent listener",
+      "Two characters take turns equally"
+     ],
+     "answer": "One character does the speaking, often to a silent listener",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riuexk9xjaxvu",
+     "subject": "en",
+     "type": "mc",
+     "q": "A character says: \"So that's it, then. You're leaving.\" Which delivery best shows quiet heartbreak?",
+     "options": [
+      "Sing-song and cheerful",
+      "Very loud on every word",
+      "Slow, soft, with a pause after \"then\"",
+      "Fast and shouted"
+     ],
+     "answer": "Slow, soft, with a pause after \"then\"",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx20bv9y0yg3g",
+     "subject": "en",
+     "type": "mc",
+     "q": "A character says: \"Oh, wonderful. Another brilliant idea from you.\" Which tone fits this line best?",
+     "options": [
+      "Sarcastic",
+      "Joyful",
+      "Frightened",
+      "Sleepy"
+     ],
+     "answer": "Sarcastic",
+     "accept": [],
+     "hint": "Consider whether the speaker truly means the praise.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rly6umevmc1ih",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which technique would best show a character becoming more and more angry?",
+     "options": [
+      "Gradually raising volume and speeding up",
+      "Keeping one flat, steady voice",
+      "Reading the lines from a page",
+      "Turning away and whispering every word"
+     ],
+     "answer": "Gradually raising volume and speeding up",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16n2fah1s7heg9",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which opening would hook an audience most strongly in a monologue?",
+     "options": [
+      "\"My name is Tom and I am twelve.\"",
+      "\"Today was a normal day with normal things.\"",
+      "\"This is my speech about my week.\"",
+      "\"I never meant to open that door. But I did.\""
+     ],
+     "answer": "\"I never meant to open that door. But I did.\"",
+     "accept": [],
+     "hint": "Look for the line that makes you want to know more.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15bm0mc12sihyb",
+     "subject": "en",
+     "type": "mc",
+     "q": "In a monologue, what does a character's repetition of \"It's fine. It's fine.\" most likely suggest?",
+     "options": [
+      "The character is talking to a crowd",
+      "The character is trying to convince themselves",
+      "The character is very happy",
+      "The character has forgotten the script"
+     ],
+     "answer": "The character is trying to convince themselves",
+     "accept": [],
+     "hint": "Think about what lies beneath the words.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d6zdpi10k0sko",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the most useful reason to use body language during a monologue?",
+     "options": [
+      "It adds meaning that supports the words",
+      "It hides the words from the audience",
+      "It makes the speech shorter",
+      "It replaces the need for a character"
+     ],
+     "answer": "It adds meaning that supports the words",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnksf1c1peeppm",
+     "subject": "en",
+     "type": "open",
+     "q": "Write the first two sentences of a monologue spoken by a lighthouse keeper who has just seen a strange light at sea. Show their emotion through word choice.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use \"I\" and hint at their feelings instead of naming them.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsdypjw18m5bz1",
+     "subject": "en",
+     "type": "open",
+     "q": "Choose one emotion. Explain how you would use your voice to show it in a monologue, mentioning at least two of: tone, pace, volume, pause.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Describe what the audience would actually hear.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1abxz3o58sw55",
+     "subject": "en",
+     "type": "open",
+     "q": "Why do you think performers rehearse a monologue aloud many times, instead of only reading it silently?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider what can only be discovered by hearing the voice.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}

@@ -2789,7 +2789,1158 @@
      "errors": []
     }
    ]
+  },
+  "spa": {
+   "topic": "School facilities with hay",
+   "questions": [
+    {
+     "id": "rfrgqpa1y71jrl",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"hay\" mean in English?",
+     "options": [
+      "we go",
+      "I have",
+      "he is",
+      "there is / there are"
+     ],
+     "answer": "there is / there are",
+     "accept": [],
+     "hint": "It is used to say that something exists in a place.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17vhp6g1tbnajr",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which word means \"library\" in Spanish?",
+     "options": [
+      "el comedor",
+      "el gimnasio",
+      "el patio",
+      "la biblioteca"
+     ],
+     "answer": "la biblioteca",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i4bwyi1irb3bq",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What is \"el patio\" in a Spanish school?",
+     "options": [
+      "the classroom",
+      "the library",
+      "the playground",
+      "the gym"
+     ],
+     "answer": "the playground",
+     "accept": [],
+     "hint": "Think of where pupils go at break time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ria7da1f60lcf",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct article: Hay ___ gimnasio.",
+     "options": [
+      "una",
+      "un"
+     ],
+     "answer": "un",
+     "accept": [],
+     "hint": "Check whether \"gimnasio\" is masculine or feminine.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh809k01ahdhq8",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct article: Hay ___ biblioteca.",
+     "options": [
+      "una",
+      "un"
+     ],
+     "answer": "una",
+     "accept": [],
+     "hint": "Words that take \"la\" are feminine.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1np0cinmy3s51",
+     "subject": "spa",
+     "type": "short",
+     "q": "What is the Spanish word for \"school\"? Write only the noun, without the article.",
+     "options": [],
+     "answer": "colegio",
+     "accept": [
+      "escuela"
+     ],
+     "hint": "It is the noun you use to say \"my school\" in this unit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rax3h11143u2tx",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: \"There is a library.\"",
+     "options": [],
+     "answer": "Hay una biblioteca",
+     "accept": [
+      "hay una biblioteca."
+     ],
+     "hint": "Start with the word for \"there is\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r194q32j1wpsjlc",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: \"There is a gym.\"",
+     "options": [],
+     "answer": "Hay un gimnasio",
+     "accept": [
+      "hay un gimnasio."
+     ],
+     "hint": "\"Gimnasio\" is masculine.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14acbwtiavwvs",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: \"There is a playground.\"",
+     "options": [],
+     "answer": "Hay un patio",
+     "accept": [
+      "hay un patio."
+     ],
+     "hint": "\"Patio\" takes \"el\", so which indefinite article does it take?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18wz4511tt1pmv",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does this sentence mean? \"En mi colegio hay una biblioteca.\"",
+     "options": [
+      "My school is a library.",
+      "In my library there is a school.",
+      "In my school there is a library.",
+      "I have a library at home."
+     ],
+     "answer": "In my school there is a library.",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e4ez571ey59hw",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct sentence.",
+     "options": [
+      "En mi colegio hay una patio.",
+      "En mi colegio es un patio.",
+      "En mi colegio hay un patio.",
+      "En mi colegio hay patio un."
+     ],
+     "answer": "En mi colegio hay un patio.",
+     "accept": [],
+     "hint": "Check the gender of the noun and the word order.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9o3jy01ow8ysb",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence means \"There are two gyms\"?",
+     "options": [
+      "Son dos gimnasio.",
+      "Hay un gimnasio.",
+      "Hay dos gimnasio.",
+      "Hay dos gimnasios."
+     ],
+     "answer": "Hay dos gimnasios.",
+     "accept": [],
+     "hint": "\"Hay\" does not change, but the noun does.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "runcq9wxy0lx6",
+     "subject": "spa",
+     "type": "mc",
+     "q": "A pupil says: \"No hay piscina en mi colegio.\" What does this tell you?",
+     "options": [
+      "The school has no swimming pool.",
+      "The pupil likes swimming.",
+      "The school has one swimming pool.",
+      "The pool is next to the school."
+     ],
+     "answer": "The school has no swimming pool.",
+     "accept": [],
+     "hint": "Focus on the first word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r80uww814rkzvj",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does this question mean? \"¿Qué hay en tu colegio?\"",
+     "options": [
+      "How is your school?",
+      "What is there in your school?",
+      "Where is your school?",
+      "Who is at your school?"
+     ],
+     "answer": "What is there in your school?",
+     "accept": [],
+     "hint": "\"Tu\" means \"your\" and \"qué\" means \"what\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b8sh4mry7q0z",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two sentences in Spanish describing your school. Use \"hay\" in both, and use \"un\" in one and \"una\" in the other.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pick one masculine place and one feminine place from your vocabulary.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sr8ixrf05ow6",
+     "subject": "spa",
+     "type": "open",
+     "q": "Explain in English how you decide whether to use \"un\" or \"una\" before a noun in Spanish. Give one example of each.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about \"el\" and \"la\".",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "A Oficina de Consertar Contos",
+   "premise": "Lila, de doze anos, é aprendiz numa oficina onde personagens de contos de fadas vão reclamar das suas histórias. A cada episódio, ela escreve uma releitura ou paródia e compara com o conto tradicional, até que os finais felizes começam a desaparecer dos livros.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O outro lado do lobo",
+     "synopsis": "Lila começa a trabalhar numa oficina que conserta contos e recebe seu primeiro cliente: um lobo cansado da má fama.",
+     "text": "Lila tinha doze anos e uma mania que irritava os adultos: não conseguia terminar uma história sem perguntar \"e o outro lado?\". Por isso, quando a Oficina de Consertar Contos, na Vila do Capítulo Final, pendurou uma placa procurando aprendiz, ela foi a primeira da fila.\nO dono era Seu Anselmo, um encadernador de óculos tortos que falava baixo e costurava livros rasgados com linha dourada. Nas prateleiras havia contos de todo tipo, alguns com páginas soltas, outros com finais amassados. Ao lado da caixa registradora, uma pena de escrever muito falante, chamada Dona Pluma, corrigia a gramática de todo mundo que entrava.\n— Aqui vêm os personagens que cansaram de suas histórias — explicou Seu Anselmo. — Nós ouvimos a reclamação e escrevemos uma releitura.\n— Uma releitura muda tudo? — perguntou Lila.\n— Muda o que precisa. A releitura conserva o conto antigo como um esqueleto e veste nele uma roupa nova. Quando a roupa é engraçada e faz a gente rir do próprio conto, chamamos de paródia.\nNem bem ele terminou, o sino da porta tocou. Entrou um lobo enorme, de cachecol xadrez e olhar triste. Sentou-se num banquinho pequeno demais e suspirou.\n— Sou o Lobo da floresta — disse. — Aquele da menina de capuz vermelho e da vovó. Há séculos me chamam de mau. As crianças fogem de mim, e ninguém me convida para nada. Só queria contar a minha versão.\n— E qual é a sua versão? — perguntou Lila, já molhando Dona Pluma na tinta.\nO Lobo contou que era vegetariano desde filhote e adorava sopa de abóbora. Naquele famoso dia, tinha ido até a casa da vovó para pedir uma receita. A velhinha, que era muito esperta, achou graça e o convidou para experimentar a touca dela, só de brincadeira. Quando a menina chegou e começou a perguntar sobre as orelhas, os olhos e os dentes, ele ficou tão envergonhado que saiu correndo pela janela.\nLila escreveu tudo. No conto tradicional, o Lobo era o vilão, e a história ensinava a menina a não falar com estranhos. Na releitura, o Lobo era um tímido cheio de boa vontade, e a história ensinava a escutar antes de julgar.\n— Viu a diferença? — disse Seu Anselmo. — Os acontecimentos quase não mudaram. Mudou quem conta.\nO Lobo leu a nova versão, enxugou uma lágrima e pagou com um pote de sopa. Quando ele saiu, Lila notou um bilhete no chão, escrito em letra caprichada: \"Cuidado com o último ponto final\". Ninguém sabia quem o tinha deixado, mas ela o guardou no bolso do avental e voltou a varrer a oficina.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a \"mania\" de Lila?",
+       "options": [
+        "Corrigir a gramática das pessoas",
+        "Rasgar as últimas páginas dos livros",
+        "Perguntar sobre o outro lado das histórias",
+        "Colecionar penas de escrever"
+       ],
+       "answer": "Perguntar sobre o outro lado das histórias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama a pena falante da oficina?",
+       "options": [],
+       "answer": "Dona Pluma",
+       "accept": [
+        "pluma"
+       ],
+       "hint": "Procure no trecho em que a oficina é descrita.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com o que Seu Anselmo costura os livros rasgados?",
+       "options": [
+        "Linha dourada",
+        "Fio de lã",
+        "Barbante xadrez",
+        "Cola de abóbora"
+       ],
+       "answer": "Linha dourada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como o Lobo paga pelo trabalho da oficina?",
+       "options": [
+        "Com uma receita da vovó",
+        "Com moedas de ouro",
+        "Com um cachecol xadrez",
+        "Com um pote de sopa"
+       ],
+       "answer": "Com um pote de sopa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Seu Anselmo, quando uma releitura se chama paródia?",
+       "options": [
+        "Quando é escrita à mão",
+        "Quando é engraçada e faz rir do próprio conto",
+        "Quando é mais curta que o original",
+        "Quando troca todos os personagens"
+       ],
+       "answer": "Quando é engraçada e faz rir do próprio conto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que muda principalmente do conto tradicional para a releitura do Lobo?",
+       "options": [
+        "A cor do capuz",
+        "O nome da vovó",
+        "Quem conta a história e como ele é visto",
+        "O lugar onde tudo acontece"
+       ],
+       "answer": "Quem conta a história e como ele é visto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o bilhete encontrado sugere sobre o que vem pela frente?",
+       "options": [
+        "Que Dona Pluma perdeu a tinta",
+        "Que o Lobo vai voltar para pedir troco",
+        "Que alguém sabe de um problema com os finais das histórias",
+        "Que Lila será demitida"
+       ],
+       "answer": "Que alguém sabe de um problema com os finais das histórias",
+       "accept": [],
+       "hint": "Pense no que é um \"último ponto final\" em um livro.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que ouvir a versão do Lobo pode mudar a opinião de quem conhecia só o conto tradicional?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A princesa que não conseguia dormir",
+     "synopsis": "Uma princesa famosa por dormir cem anos chega à oficina com insônia e o desejo de resolver sozinha a própria história.",
+     "text": "Numa manhã de chuva, a porta da oficina se abriu devagar e entrou uma moça de vestido bordado, com olheiras tão fundas que pareciam desenhadas a carvão. Ela bocejou, pediu desculpas e bocejou de novo.\n— Sou a princesa que dormiu cem anos — disse. — Depois de tanto tempo na cama, agora não consigo pregar o olho. Já contei todas as ovelhas do reino, e as ovelhas já me pediram para parar.\nDona Pluma riu tão alto que espirrou tinta no balcão. Seu Anselmo trouxe chá de camomila e pediu que a princesa contasse a história desde o começo.\nEla contou o que todos conheciam: uma fada ofendida lança um feitiço na festa de batizado; a menina fura o dedo numa roca e dorme junto com o castelo inteiro; cem anos depois, um príncipe atravessa os espinhos e a acorda com um beijo. Fim. Felizes para sempre.\n— E o que incomoda a senhora nessa história? — perguntou Lila.\n— Eu não faço nada! — reclamou a princesa. — O conto tem o meu nome, mas passo a maior parte dele deitada. O príncipe faz tudo. Ninguém me perguntou se eu queria casar com alguém que eu nunca tinha visto. E tem mais: quando acordei, a moda já era outra, e ninguém mais entendia as minhas piadas.\nLila apontou Dona Pluma e propôs um novo começo. Na releitura, a princesa desconfiava da profecia e, aos quinze anos, pedia para aprender a fiar justamente para não ter medo da roca. Quando o feitiço a pegou mesmo assim, ela já tinha preparado tudo: deixou um despertador de corda ao lado da cama, programado para tocar dali a cem anos, e um caderno com instruções para os criados que também acordariam.\nQuando o despertador tocou, foi ela quem abriu os olhos sozinha. Ela encontrou um príncipe preso nos espinhos, gritando por socorro, pegou a tesoura de jardim, cortou os galhos e o ajudou a descer. Os dois tomaram chá, conversaram e decidiram que, por enquanto, seriam apenas bons amigos.\n— Gostei! — disse a princesa, já com os olhos pesados. — Agora a história é minha.\nSeu Anselmo fez um comentário enquanto colava a capa nova: — Repare, Lila. A releitura pegou os mesmos objetos do conto antigo, a roca, os espinhos, o castelo, mas inverteu os papéis. É assim que a gente percebe o que o conto tradicional dava como certo: que a moça devia esperar.\nEnquanto ele falava, a princesa adormeceu no banquinho e roncou feliz. Eles a cobriram com uma manta e a deixaram descansar até a hora do almoço. Ao arrumar o balcão, Lila encontrou mais um bilhete, com a mesma letra caprichada: \"Três já sumiram\". Ela não fazia ideia do que aquilo queria dizer.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o problema da princesa quando chega à oficina?",
+       "options": [
+        "Ela não sabe ler",
+        "Ela não consegue dormir",
+        "Ela perdeu a sua coroa",
+        "Ela tem medo de espinhos"
+       ],
+       "answer": "Ela não consegue dormir",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, Dona Pluma reage à reclamação da princesa com:",
+       "options": [
+        "Raiva",
+        "Uma risada",
+        "Choro",
+        "Silêncio"
+       ],
+       "answer": "Uma risada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em qual objeto a princesa fura o dedo no conto tradicional?",
+       "options": [],
+       "answer": "roca",
+       "accept": [
+        "uma roca",
+        "na roca",
+        "numa roca"
+       ],
+       "hint": "É um instrumento antigo usado para fiar.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a princesa deixa ao lado da cama na releitura?",
+       "options": [
+        "Uma tesoura de ouro",
+        "Um espelho mágico",
+        "Uma xícara de chá",
+        "Um despertador de corda"
+       ],
+       "answer": "Um despertador de corda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como termina a relação da princesa com o príncipe na releitura?",
+       "options": [
+        "Eles decidem ser apenas bons amigos",
+        "Eles se casam no mesmo dia",
+        "Eles viram inimigos",
+        "Ele volta a dormir nos espinhos"
+       ],
+       "answer": "Eles decidem ser apenas bons amigos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que a princesa mais reclama no conto tradicional?",
+       "options": [
+        "De não fazer nada na própria história",
+        "Das roupas pesadas",
+        "De ter muitos irmãos",
+        "Do chá sem açúcar"
+       ],
+       "answer": "De não fazer nada na própria história",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Seu Anselmo, o que a releitura revela sobre o conto antigo?",
+       "options": [
+        "Que ele era muito curto",
+        "Que ele foi escrito por um príncipe",
+        "Que ele não tinha nenhum castelo",
+        "Que ele dava como certo que a moça devia esperar"
+       ],
+       "answer": "Que ele dava como certo que a moça devia esperar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que inverter os papéis de um conto pode nos fazer pensar sobre as ideias da época em que ele surgiu?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Os três irmãos e a papelada",
+     "synopsis": "Três porquinhos chegam brigando pela autoria da casa de tijolos, e Lila transforma o conto em uma paródia cheia de regulamentos.",
+     "text": "A oficina nunca tinha sido tão barulhenta. Três porquinhos entraram discutindo ao mesmo tempo, cada um com um rolo de papel debaixo do braço.\n— Calma, um de cada vez! — pediu Seu Anselmo. — Dona Pluma, anote.\nO mais velho, de capacete amarelo, falou primeiro. Era o porquinho da casa de tijolos e estava farto de ser chamado de \"o certinho\".\n— Fui o único que pensou em segurança, e todo mundo me acha chato! Essa história me pinta como um estraga-prazeres.\nO do meio, que tinha construído a casa de madeira, defendeu-se: dizia que a madeira era renovável e ninguém reconhecia isso. O caçula, da casa de palha, jurou que sua construção era a mais fresca para o verão.\n— Só caiu porque o Lobo soprou — resmungou. — Nenhuma casa de palha do mundo foi feita para resistir a um Lobo com tanto fôlego.\nLila tentou se lembrar do conto: três irmãos, três casas, um lobo que sopra duas delas, e a moral de que quem trabalha com cuidado se salva. Era uma fábula clara, com lição no final. Só que os três clientes pareciam querer outra coisa.\n— E se a gente contasse a história como um processo na prefeitura? — sugeriu ela, com um brilho nos olhos.\nDona Pluma tossiu, animada, e começou a imitar a linguagem de um documento oficial. Na nova versão, a Prefeitura da Floresta enviava um fiscal para vistoriar as casas. A de palha recebia uma multa por \"falta de resistência ao vento forte\". A de madeira, um aviso por \"ausência de extintor\". A de tijolos era aprovada, mas o porquinho mais velho precisava preencher dezessete formulários, em três vias, para colocar a própria chaminé.\nO Lobo, por sua vez, aparecia como testemunha, explicando que sofria de um resfriado e que tinha espirrado, nunca soprado. Ao final, o fiscal concluía: \"Fica decidido que os três irmãos morarão juntos na casa de tijolos, com varanda de madeira e telhado de palha para os dias quentes\".\nOs porquinhos leram e caíram na gargalhada, e até o mais velho riu dos seus dezessete formulários.\n— Percebeu o que você fez? — disse Seu Anselmo a Lila. — O humor da paródia vem do choque: uma história simples de floresta, contada na língua complicada dos documentos. Quem não conhece o conto antigo perde metade da piada.\n— Então a paródia precisa do original — concluiu Lila.\n— Sempre. Sem o conto antigo, é só uma história esquisita sobre fiscais.\nOs três irmãos saíram abraçados, pela primeira vez em muitos anos. Lila foi fechar a janela e viu, preso no trinco, um terceiro bilhete: \"Mais um final se foi. Procure no fim dos livros\". Ela abriu um volume qualquer na última página, mas estava tudo em ordem. Pelo menos naquele.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que é feita a casa do porquinho mais velho?",
+       "options": [
+        "Pedra",
+        "Tijolos",
+        "Madeira",
+        "Palha"
+       ],
+       "answer": "Tijolos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos formulários o porquinho mais velho precisa preencher para colocar a chaminé?",
+       "options": [],
+       "answer": "dezessete",
+       "accept": [
+        "17"
+       ],
+       "hint": "Procure o número na parte sobre a vistoria.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem Lila imagina como responsável por vistoriar as casas?",
+       "options": [
+        "A vovó da floresta",
+        "Um fiscal da Prefeitura da Floresta",
+        "O próprio Lobo",
+        "Um juiz do reino"
+       ],
+       "answer": "Um fiscal da Prefeitura da Floresta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o Lobo da nova versão, o que derrubou as casas?",
+       "options": [
+        "Uma enchente",
+        "Um terremoto",
+        "Um espirro causado por um resfriado",
+        "Um trator"
+       ],
+       "answer": "Um espirro causado por um resfriado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde os três irmãos passam a morar no final da releitura?",
+       "options": [
+        "Cada um em sua própria casa",
+        "Na casa da vovó",
+        "Juntos na casa de tijolos",
+        "Na prefeitura da floresta"
+       ],
+       "answer": "Juntos na casa de tijolos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de onde vem o humor da paródia, segundo Seu Anselmo?",
+       "options": [
+        "Das rimas em cada frase",
+        "Das muitas lutas entre os personagens",
+        "Do choque entre a história simples e a linguagem de documentos",
+        "Dos desenhos feitos por Dona Pluma"
+       ],
+       "answer": "Do choque entre a história simples e a linguagem de documentos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lila conclui que a paródia precisa do original?",
+       "options": [
+        "Porque a lei obriga a copiar as frases",
+        "Porque os personagens exigem pagamento",
+        "Porque quem não conhece o conto antigo perde parte da piada",
+        "Porque o original é sempre mais curto"
+       ],
+       "answer": "Porque quem não conhece o conto antigo perde parte da piada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que usar a linguagem de um documento oficial em um conto da floresta faz as pessoas rirem?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O sapato impossível",
+     "synopsis": "Um sapateiro e uma moça famosa aparecem para reclamar de um sapato de cristal, e Lila descobre como o anacronismo faz rir.",
+     "text": "Naquela tarde, o sino tocou duas vezes. Primeiro entrou um velho sapateiro carregando uma caixa com muito cuidado. Depois, uma moça de avental, mancando um pouco, que se sentou e tirou o sapato com um suspiro de alívio.\n— Sapato de cristal! — exclamou o sapateiro, indignado, abrindo a caixa. — Quarenta anos de profissão, e nunca vi uma ideia tão ruim. Não dobra, não respira, escorrega e, se cair numa escada, quebra na hora. Como é que esse sapato não quebrou no baile?\n— Foi o que eu sempre me perguntei — disse a moça, massageando o calcanhar. — Eu sou a moça da abóbora, a da madrinha mágica e do príncipe que procurou o pé certo no reino inteiro. Dancei até meia-noite com isso aí. Fiquei três dias sem conseguir andar.\nLila achou aquilo a coisa mais engraçada que tinha ouvido na semana, e Dona Pluma pediu silêncio para escrever. A moça explicou o que queria: um conto em que ela pudesse fugir do baile correndo de verdade.\n— Pode trocar por outro calçado? — perguntou Lila.\n— Pode trocar por tudo — respondeu Seu Anselmo. — Mas guarde o que faz o conto ser reconhecível.\nLila teve uma ideia atrevida: levar a história para os dias de hoje. Na releitura, a madrinha mágica era uma senhora muito prática que trabalhava com entregas por aplicativo. A abóbora virava uma bicicleta elétrica, com a bateria acabando exatamente à meia-noite. Os sapatos de cristal eram trocados por tênis prateados, com amortecimento nos calcanhares. Quando a moça saiu correndo do baile da escola, um dos tênis caiu na escadaria, mas não era o príncipe que o procurava: era o sapateiro, ansioso para saber onde tinham comprado um calçado tão bom.\n— Vocês puseram um celular em um conto de fadas! — riu a moça, ao ver a madrinha conferindo a tela no meio do jardim.\n— Isso tem um nome: anacronismo — explicou Seu Anselmo. — É colocar uma coisa fora do seu tempo. Em um livro de história, é erro. Em uma paródia, é um truque de comédia.\nLila olhou para o conto novo e depois para o antigo. No original, a mágica vinha de fora e transformava a vida da moça de uma só vez. Na versão dela, a moça acabava consertando a própria bicicleta e abrindo uma loja de tênis com o sapateiro.\nOs dois saíram discutindo modelos de solado. Lila foi guardar a caixa com o sapato de cristal e notou que a última página do livro antigo, que estava embaixo dela, tinha um espaço em branco. Onde sempre estivera escrito \"felizes para sempre\", não havia mais nada. Ao lado, um novo bilhete, na mesma letra: \"Agora você viu\".",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a profissão do velho que chega à oficina?",
+       "options": [
+        "Costureiro",
+        "Encadernador",
+        "Carpinteiro",
+        "Sapateiro"
+       ],
+       "answer": "Sapateiro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o velho acha o sapato de cristal uma ideia ruim?",
+       "options": [
+        "Porque não dobra, escorrega e quebra",
+        "Porque é pesado",
+        "Porque é caro demais",
+        "Porque é feio"
+       ],
+       "answer": "Porque não dobra, escorrega e quebra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que a abóbora se transforma na releitura de Lila?",
+       "options": [
+        "Em uma bicicleta elétrica",
+        "Em um carro antigo",
+        "Em uma nave",
+        "Em um trem"
+       ],
+       "answer": "Em uma bicicleta elétrica",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama o recurso de colocar algo fora do seu tempo?",
+       "options": [],
+       "answer": "anacronismo",
+       "accept": [
+        "o anacronismo"
+       ],
+       "hint": "Seu Anselmo diz o nome e explica que é um truque de comédia.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem procura o dono do tênis que caiu na escadaria?",
+       "options": [
+        "O príncipe",
+        "O sapateiro",
+        "O Lobo",
+        "A madrinha"
+       ],
+       "answer": "O sapateiro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual diferença Lila nota entre o conto antigo e a sua versão?",
+       "options": [
+        "No antigo a mágica vinha de fora; na nova a moça resolve a própria vida",
+        "No antigo não há baile; na nova há dois",
+        "No antigo há tênis; na nova há cristal",
+        "No antigo a moça é rica; na nova é rainha"
+       ],
+       "answer": "No antigo a mágica vinha de fora; na nova a moça resolve a própria vida",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o espaço em branco no livro antigo indica?",
+       "options": [
+        "Que Lila esqueceu de escrever",
+        "Que o sapateiro apagou a página de propósito",
+        "Que o final de uma história desapareceu de verdade",
+        "Que a tinta da oficina acabou"
+       ],
+       "answer": "Que o final de uma história desapareceu de verdade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que um objeto moderno, como o celular, pode deixar um conto antigo mais engraçado?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O gigante tem razão",
+     "synopsis": "Um gigante pede justiça pelo que perdeu no conto do pé de feijão, e Lila aprende que o ponto de vista pode mudar quem é o herói.",
+     "text": "Ninguém ouviu o sino, porque o gigante não coube pela porta. Ele se abaixou na calçada e encostou um olho imenso na janela da oficina, e o vidro tremeu com sua voz, que ele fazia força para deixar bem baixinha.\n— Boa tarde. Desculpem o incômodo. Sou o gigante do conto do pé de feijão. Vim fazer uma pergunta: alguém já percebeu que eu fui roubado?\nLila parou com a vassoura na mão. Conhecia aquela história desde pequena: um menino pobre troca a vaca por feijões, a planta cresce até as nuvens, ele sobe, encontra o castelo de um gigante e foge com ouro, uma galinha que bota ovos de ouro e uma harpa mágica. Quando o gigante desce atrás dele, o menino corta o pé de feijão, e a família vive feliz. Lila sempre torcera pelo menino.\n— Um estranho entrou na minha casa sem bater — continuou o gigante, com a voz triste. — Levou as minhas economias e a minha galinha, que se chamava Margarida. Levou a minha harpa, que era presente de família. Quando fui atrás, cortaram a planta e eu caí. Na escola deles, ensinam que isso é um final feliz.\nDona Pluma, pela primeira vez, ficou sem palavras. Lila sentou-se no degrau da porta, olhou para aquele olho enorme e sentiu um desconforto que nunca tinha sentido com um conto de fadas.\n— Mas o senhor comia pessoas! — lembrou ela. — O conto diz isso. \"Sinto cheiro de carne humana.\"\n— Era um verso de que eu gostava — respondeu o gigante, um tanto envergonhado. — Coisa de gigante, para assustar. Sempre comi repolho, principalmente.\nSeu Anselmo, com calma, sugeriu que escrevessem o conto em forma de diário do gigante. Assim, tudo ganharia a voz dele. Lila escreveu as entradas uma a uma: o dia em que apareceu uma planta estranha no jardim das nuvens, a noite em que Margarida sumiu, a tristeza na casa em silêncio sem a harpa. O menino continuava lá, mas agora parecia um ladrão esperto. E, para ser justa, Lila acrescentou uma última página: o gigante percebia que, lá embaixo, a família do menino passava fome, e mandava uma cesta de repolhos pelas nuvens.\n— Você está mudando de lado? — perguntou Dona Pluma.\n— Não sei se tenho lado — respondeu Lila. — O conto antigo me fez torcer pelo menino porque só me deixou ouvir o menino.\nO gigante leu o diário com uma lupa, agradeceu e foi embora com passos cuidadosos, para não sacudir os telhados.\nQuando a noite caiu, Lila folheou os livros da prateleira. Em cinco deles, a última frase havia desaparecido: não restava nenhum \"viveram felizes para sempre\". Seu Anselmo parou de costurar e, pela primeira vez, pareceu preocupado.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o gigante não entra pela porta da oficina?",
+       "options": [
+        "Porque a oficina está fechada",
+        "Porque não cabe",
+        "Porque está com pressa",
+        "Porque tem medo de Dona Pluma"
+       ],
+       "answer": "Porque não cabe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da galinha do gigante?",
+       "options": [],
+       "answer": "Margarida",
+       "accept": [],
+       "hint": "Ela aparece quando o gigante conta o que perdeu.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que formato Lila escreve a nova versão?",
+       "options": [
+        "Um processo na prefeitura",
+        "Uma peça de teatro",
+        "Uma canção",
+        "Um diário do gigante"
+       ],
+       "answer": "Um diário do gigante",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o próprio gigante, o que ele comia de verdade?",
+       "options": [
+        "Pessoas",
+        "Peixe",
+        "Principalmente repolho",
+        "Pão com feijão"
+       ],
+       "answer": "Principalmente repolho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o gigante envia para a família do menino no final da releitura?",
+       "options": [
+        "Uma carta de ameaça",
+        "Um pé de feijão novo",
+        "A harpa de volta",
+        "Uma cesta de repolhos"
+       ],
+       "answer": "Uma cesta de repolhos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lila diz que sempre tinha torcido pelo menino?",
+       "options": [
+        "Porque ele era seu primo",
+        "Porque a harpa era dela",
+        "Porque o gigante era feio",
+        "Porque o conto só deixava ouvir a versão dele"
+       ],
+       "answer": "Porque o conto só deixava ouvir a versão dele",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a preocupação de Seu Anselmo no final faz o leitor pensar?",
+       "options": [
+        "Que o problema dos finais é mais grave do que parecia",
+        "Que a linha dourada acabou",
+        "Que ele não gosta de gigantes",
+        "Que ele vai fechar a oficina para descansar"
+       ],
+       "answer": "Que o problema dos finais é mais grave do que parecia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que escrever em forma de diário faz o leitor sentir mais simpatia pelo gigante?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: A vila sem finais",
+     "synopsis": "Os finais felizes somem de todos os livros, os personagens entram em pânico, e Lila segue as pistas dos bilhetes.",
+     "text": "Na manhã seguinte, a Vila do Capítulo Final acordou em confusão. Havia uma fila diante da oficina que dava a volta na praça. O Lobo trazia o pote de sopa nas mãos, a princesa bocejava, os três porquinhos carregavam formulários, e a moça da abóbora, agora de tênis prateados, tentava organizar a fila.\n— Eu não sei mais como a minha história termina! — gritava um rei idoso. — Fui dormir em um conto e acordei sem conclusão. Meu reino está em suspense!\n— Na minha última página só tem um ponto de interrogação! — reclamava uma sereia, dentro de um balde.\nLila abriu todos os livros da oficina. O fenômeno era o mesmo em todos: as últimas frases tinham desaparecido, como se alguém tivesse passado uma borracha com muito cuidado. Sem final, os personagens ficavam inquietos, repetindo as mesmas cenas, sem saber o que fazer depois.\nLila espalhou os bilhetes no balcão. \"Cuidado com o último ponto final.\" \"Três já sumiram.\" \"Mais um final se foi. Procure no fim dos livros.\" \"Agora você viu.\" Dona Pluma examinou a letra com ar de especialista.\n— Letra antiga, muito inclinada, e cada \"e\" tem um enfeite no alto — disse ela. — Só vi uma letra dessas em um lugar: nas primeiras páginas dos livros mais velhos. Veja este aqui. \"Era uma vez...\"\nElas compararam. Era exatamente a mesma letra.\n— É a letra do Narrador — sussurrou Seu Anselmo. — O Narrador de todos os contos. Faz muitos anos que ninguém o vê.\nLila sentiu um frio na barriga. Até aquele momento, nunca tinha pensado que os contos pudessem ter alguém contando. Conversou com a fila e percebeu que ninguém nunca tinha visto o Narrador de verdade, mas todos conheciam a sua voz: aquela que dizia \"e então\" e \"naquele mesmo instante\" nas horas certas.\n— Onde mora alguém que conta todas as histórias? — perguntou Lila em voz alta.\nFoi a princesa quem respondeu, meio dormindo: — Todo conto começa em \"um reino muito distante\". Sempre achei isso muito estranho, porque ninguém nunca diz distante de onde.\n— A Torre da Primeira Página — lembrou o Lobo, coçando a orelha. — Fica depois da última casa da vila. Eu passei por lá uma vez, fugindo de uma vovó.\nLila tirou o avental, guardou os bilhetes no bolso e pegou Dona Pluma, que protestou, mas foi. Seu Anselmo entregou a ela um carretel de linha dourada e não disse para quê.\n— Vai sozinha? — perguntou um dos porquinhos.\n— Não sei como essa história termina — respondeu Lila, sorrindo de nervoso. — Parece que ninguém sabe. É melhor eu ir ver.\nE saiu pela estrada, seguida pelo olhar de toda a vila, enquanto o sino da oficina balançava sozinho ao vento.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a sereia está quando reclama?",
+       "options": [
+        "Em um lago",
+        "No balcão",
+        "Em um barco",
+        "Em um balde"
+       ],
+       "answer": "Em um balde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aparece na última página da sereia?",
+       "options": [
+        "Um ponto de interrogação",
+        "Um desenho do mar",
+        "Um mapa",
+        "Um bilhete"
+       ],
+       "answer": "Um ponto de interrogação",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que acontece com os personagens que ficam sem final?",
+       "options": [
+        "Ficam inquietos e repetem as mesmas cenas",
+        "Saem do livro para sempre",
+        "Mudam de nome",
+        "Dormem por cem anos"
+       ],
+       "answer": "Ficam inquietos e repetem as mesmas cenas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Dona Pluma descobre quem escreveu os bilhetes?",
+       "options": [
+        "Pergunta para o Lobo",
+        "Segue pegadas de tinta",
+        "Compara a letra com as primeiras páginas dos livros antigos",
+        "Lê uma confissão"
+       ],
+       "answer": "Compara a letra com as primeiras páginas dos livros antigos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama a torre para onde Lila decide ir?",
+       "options": [],
+       "answer": "Torre da Primeira Página",
+       "accept": [
+        "a torre da primeira página",
+        "primeira página"
+       ],
+       "hint": "O Lobo diz o nome, que tem a ver com o início dos livros.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Seu Anselmo entrega a Lila antes de ela partir?",
+       "options": [
+        "Uma chave",
+        "Um carretel de linha dourada",
+        "Uma lanterna",
+        "Um mapa da vila"
+       ],
+       "answer": "Um carretel de linha dourada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a pergunta \"distante de onde?\" da princesa é engraçada e também útil?",
+       "options": [
+        "Ela faz o Lobo ficar com raiva",
+        "Ela brinca com uma fórmula dos contos e leva a uma pista",
+        "Ela prova que a princesa inventou o mapa",
+        "Ela revela que a princesa conhece o Narrador"
+       ],
+       "answer": "Ela brinca com uma fórmula dos contos e leva a uma pista",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que os personagens ficam tão aflitos quando perdem o final das suas histórias?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O último ponto final",
+     "synopsis": "Na torre, Lila encontra o Narrador, descobre por que ele apagou os finais e escreve, com todos, um jeito novo de terminar histórias.",
+     "text": "A Torre da Primeira Página era bem mais baixa do que Lila imaginava, e tinha uma porta sem fechadura. Lá dentro, em meio a pilhas de papel, um velho de barba branca escrevia à luz de uma vela. Tinha uma borracha do tamanho de um pão ao lado do tinteiro.\n— Até que enfim — disse ele, sem levantar os olhos. — Eu já estava ficando sem bilhetes.\n— Foi o senhor que apagou os finais? — perguntou Lila, segurando Dona Pluma com firmeza.\n— Fui eu. — O Narrador pousou a caneta e olhou para ela. Tinha a voz que todo mundo conhecia. — Há séculos escrevo a mesma frase: \"viveram felizes para sempre\". Escrevo e não acredito. A princesa não dorme. O Lobo é triste. O gigante tem saudades de uma galinha. Quando vi que uma aprendiz perguntava o que ninguém perguntou, resolvi fazer uma coisa. Tirei os finais para ver se alguém viria perguntar por eles.\n— O senhor assustou a vila inteira — disse Lila, sem saber se ficava brava.\n— Assustei — admitiu ele. — Mas quem veio foi você. Antes de você, um conto era um conto, e pronto. Agora, cada um deles tem outro lado. O que eu queria saber é: e agora? Como é que se termina?\nLila pensou nos clientes da oficina. Lembrou que uma paródia só faz sentido porque o conto antigo continua existindo. Lembrou que Seu Anselmo nunca jogava fora um livro rasgado, apenas costurava.\n— O senhor não precisa apagar nada — respondeu devagar. — O conto antigo continua sendo o esqueleto. As releituras não tomam o lugar dele; elas conversam com ele. Se a gente deixar os dois juntos na prateleira, um faz o outro ficar mais interessante.\nEla tirou do bolso o carretel de linha dourada e entendeu para que servia. Com a ajuda do velho, Lila passou a tarde costurando cada conto antigo a uma releitura, e o Narrador devolveu a cada livro a sua última frase. Dona Pluma, com uma dignidade enorme, escreveu embaixo de todas elas um pequeno acréscimo, sugerido por Lila: \"...ou, pelo menos, foi assim que nos contaram. Quer ouvir o outro lado?\".\nQuando Lila voltou à vila, já era noite. Os personagens abriam os livros, liam o final antigo e a frase nova, e respiravam aliviados. O Lobo serviu sopa para todo mundo. A princesa dormiu um sono perfeito de oito horas. Até o gigante recebeu, pelas nuvens, um bilhete e um convite para passar um domingo na praça.\nNo dia seguinte, Seu Anselmo trocou a placa da porta: \"Oficina de Consertar Contos. Atendemos também os dois lados\". E, em um canto do balcão, Lila encontrou o último bilhete, na letra inclinada de sempre: \"Era uma vez uma aprendiz. O resto, conte você\".",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como é a porta da torre?",
+       "options": [
+        "De ouro",
+        "Muito alta",
+        "Trancada por dentro",
+        "Sem fechadura"
+       ],
+       "answer": "Sem fechadura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o Narrador tem ao lado do tinteiro?",
+       "options": [
+        "Um carretel de linha",
+        "Uma galinha",
+        "Um espelho",
+        "Uma borracha do tamanho de um pão"
+       ],
+       "answer": "Uma borracha do tamanho de um pão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o Narrador apagou os finais?",
+       "options": [
+        "Porque a tinta dele estava acabando",
+        "Para ver se alguém viria perguntar por eles",
+        "Porque queria vender livros novos",
+        "Porque perdeu os livros originais"
+       ],
+       "answer": "Para ver se alguém viria perguntar por eles",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para que serve o carretel de linha dourada?",
+       "options": [
+        "Para amarrar o Narrador",
+        "Para consertar o avental de Lila",
+        "Para escalar a torre",
+        "Para costurar cada conto antigo a uma releitura"
+       ],
+       "answer": "Para costurar cada conto antigo a uma releitura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do personagem que escreve \"Era uma vez...\" em todos os contos?",
+       "options": [],
+       "answer": "Narrador",
+       "accept": [
+        "o narrador"
+       ],
+       "hint": "É o velho que Lila encontra na torre.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Lila, qual é a relação entre o conto antigo e as releituras?",
+       "options": [
+        "Eles conversam entre si e um enriquece o outro",
+        "As releituras substituem o conto antigo",
+        "Eles nunca devem estar na mesma prateleira",
+        "O conto antigo deve ser apagado"
+       ],
+       "answer": "Eles conversam entre si e um enriquece o outro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase final \"O resto, conte você\" sugere ao leitor?",
+       "options": [
+        "Que os livros serão queimados",
+        "Que o leitor também pode recontar as histórias",
+        "Que a Lila vai embora da vila",
+        "Que o Narrador esqueceu como terminar"
+       ],
+       "answer": "Que o leitor também pode recontar as histórias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a frase \"Quer ouvir o outro lado?\" muda a forma de ler um conto tradicional?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
