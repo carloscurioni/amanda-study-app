@@ -2726,6 +2726,257 @@
      "errors": []
     }
    ]
+  },
+  "spa": {
+   "topic": "Excuses and stem-changing verbs",
+   "questions": [
+    {
+     "id": "r1tlf5ps1iayn25",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"no puedo\" mean in English?",
+     "options": [
+      "I can't",
+      "I prefer",
+      "I must",
+      "I don't want"
+     ],
+     "answer": "I can't",
+     "accept": [],
+     "hint": "Think of the verb poder.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hx8ypy2unu6j",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"tengo que\" mean in English?",
+     "options": [
+      "I am going to",
+      "I would like to",
+      "I am able to",
+      "I have to"
+     ],
+     "answer": "I have to",
+     "accept": [],
+     "hint": "It expresses an obligation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rml7zld1jq9w0t",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"prefiero\" mean in English?",
+     "options": [
+      "I think",
+      "I prefer",
+      "I want",
+      "I return"
+     ],
+     "answer": "I prefer",
+     "accept": [],
+     "hint": "It looks like an English word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ybt22o1lzhu00",
+     "subject": "spa",
+     "type": "mc",
+     "q": "In a stem-changing verb, which part of the verb changes?",
+     "options": [
+      "Only the ending",
+      "The vowel in the stem",
+      "The subject pronoun",
+      "The first consonant"
+     ],
+     "answer": "The vowel in the stem",
+     "accept": [],
+     "hint": "Look at querer and quiero.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re9lxy3tbyau7",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: \"Yo ___ ir al cine, pero no puedo.\"",
+     "options": [
+      "quieres",
+      "quiere",
+      "quiero",
+      "queremos"
+     ],
+     "answer": "quiero",
+     "accept": [],
+     "hint": "The subject is \"yo\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxicd3ia8i947",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which forms of a stem-changing verb in the present tense keep the original stem, with no vowel change?",
+     "options": [
+      "tú and él",
+      "yo and tú",
+      "ellos and ellas",
+      "nosotros and vosotros"
+     ],
+     "answer": "nosotros and vosotros",
+     "accept": [],
+     "hint": "Compare \"quiero\" with \"queremos\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd96lvma6dke2",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the \"yo\" form of the verb \"poder\" in the present tense.",
+     "options": [],
+     "answer": "puedo",
+     "accept": [
+      "yo puedo"
+     ],
+     "hint": "The o changes to ue.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r77nf4r1b3m0p4",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the \"tú\" form of the verb \"querer\" in the present tense.",
+     "options": [],
+     "answer": "quieres",
+     "accept": [
+      "tú quieres",
+      "tu quieres"
+     ],
+     "hint": "The e changes to ie.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19e4p477nc5gr",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the \"nosotros\" form of the verb \"poder\" in the present tense.",
+     "options": [],
+     "answer": "podemos",
+     "accept": [
+      "nosotros podemos"
+     ],
+     "hint": "Does the stem change in this form?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r319nd610wvcq0",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the \"ella\" form of the verb \"preferir\" in the present tense.",
+     "options": [],
+     "answer": "prefiere",
+     "accept": [
+      "ella prefiere"
+     ],
+     "hint": "Only the second e of the stem changes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx16v921wx3cy4",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the best excuse: \"¿Quieres salir esta noche?\" \"Lo siento, ___.\"",
+     "options": [
+      "tengo que hacer mis deberes",
+      "quiero salir",
+      "me gusta salir",
+      "voy contigo"
+     ],
+     "answer": "tengo que hacer mis deberes",
+     "accept": [],
+     "hint": "You are saying no politely.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b4epet1xgq7dd",
+     "subject": "spa",
+     "type": "short",
+     "q": "Complete with the correct form of \"tener\": \"Mis padres ___ que trabajar.\"",
+     "options": [],
+     "answer": "tienen",
+     "accept": [],
+     "hint": "Mis padres = ellos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk9upf91k51zcn",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence with \"tener que\" is correct?",
+     "options": [
+      "Tengo estudiar.",
+      "Tengo que estudiar.",
+      "Tengo que estudio.",
+      "Tengo a estudiar."
+     ],
+     "answer": "Tengo que estudiar.",
+     "accept": [],
+     "hint": "After \"tener que\" the next verb stays in one form.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4cfk3of1nt23",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence with \"querer\" is correct?",
+     "options": [
+      "Nosotros quieremos jugar.",
+      "Nosotros queremos jugar.",
+      "Nosotros queres jugar.",
+      "Nosotros quiere jugar."
+     ],
+     "answer": "Nosotros queremos jugar.",
+     "accept": [],
+     "hint": "Think about which forms keep the original stem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqpchwc1mktgdo",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two Spanish sentences turning down an invitation to go to the park. Use \"no puedo\" and \"tengo que\" and give a reason.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start with \"Lo siento\" to sound polite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6xiwwi1wwyz24",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two Spanish sentences saying what you want to do this weekend and what you prefer not to do. Use \"quiero\" and \"prefiero\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Follow each verb with an infinitive.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": [
@@ -3610,6 +3861,899 @@
        "answer": "",
        "accept": [],
        "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Ashdown Papers",
+   "premise": "An invented bundle of diaries and letters from 1851. Fifteen-year-old Edith Ashdown leaves Yorkshire to help at her aunt's small school in London and writes to her brother Thomas, a ship's clerk. In each episode the older language hides feelings the reader must work out.",
+   "chapters": [
+    {
+     "title": "Chapter 1: A Departure by Railway",
+     "synopsis": "Edith leaves Halifax for London by train. Her diary and her mother's letter show how differently the two of them feel about it.",
+     "text": "From the diary of Edith Ashdown, aged fifteen. Halifax, 3rd March 1851.\nI am to leave home tomorrow, and I have been instructed to feel grateful. My aunt Sarah, who keeps a small school in Islington, has written that she requires an assistant, and that I am \"sufficiently advanced in arithmetic to be of some slight use.\" Mother read this sentence aloud at supper as though it were a great compliment. I did not remark upon it. I have packed my two dresses, my Bible, and this diary, which I shall keep faithfully, for I suspect that nobody in London will wish to hear my opinions.\nRailway carriage, 4th March.\nI write this with a very unsteady hand. I had been told that a person might lose her breath at such a speed, and I confess I rather hoped for it, so as to have something to report. I lost nothing but my hat, which a kind old farmer rescued from beneath the seat. The fields go by like pages turned by an impatient reader. A lady opposite declared that railways would be the ruin of England, and then ate a large pork pie with every sign of contentment.\nI did not weep at the station. Mother did, a little, and pretended it was the smoke. Thomas would have made me laugh, but Thomas is at sea, and has been these seven months.\nIslington, late that night.\nI have arrived. My aunt inspected me in the hall as one inspects a parcel that may have been damaged upon the road. \"You are taller than I was led to expect,\" she said, and this appeared to be a fault. My room is at the top of the house, and it is exceedingly small and exceedingly clean. There is a window, from which I can see a great many chimneys and one thin tree.\nA letter from Mrs Ashdown to her daughter, received 7th March.\nMy dear Edith, You will think me foolish to write when you have been gone but three days. The house is quiet, and I find I have laid your place at table twice without thinking. Your aunt is a just woman, though she has never been a soft one, and you must not mistake the one thing for the other. Mind your chest in the London fog, and write every Sunday. A penny is a small price for a mother's peace, and I shall put by the money for it myself if need be.\nI do not say I am sorry you are gone, for it is a good place and a fine chance, and there was little enough for you here. I say only that the kitchen is very large with one person in it.\nYour loving Mother.\nI read this letter twice, and then I put it inside my Bible, where I shall not be obliged to look at it too often.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Edith's aunt keep her school?",
+       "options": [
+        "Bristol",
+        "Islington",
+        "Halifax",
+        "York"
+       ],
+       "answer": "Islington",
+       "accept": [],
+       "hint": "Check the start of the diary.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which item does Edith lose on the train and get back?",
+       "options": [],
+       "answer": "hat",
+       "accept": [
+        "her hat",
+        "a hat"
+       ],
+       "hint": "A farmer finds it under the seat.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who rescues Edith's lost belonging?",
+       "options": [
+        "A kind old farmer",
+        "Her mother",
+        "Her aunt",
+        "A lady with a pie"
+       ],
+       "answer": "A kind old farmer",
+       "accept": [],
+       "hint": "Look at the railway carriage entry.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is Thomas not at the station?",
+       "options": [
+        "He is at sea",
+        "He is ill",
+        "He is in Islington",
+        "He is at school"
+       ],
+       "answer": "He is at sea",
+       "accept": [],
+       "hint": "Edith mentions how long he has been gone.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Edith's phrase \"of some slight use\" suggest about her aunt's attitude?",
+       "options": [
+        "She thinks Edith is a genius",
+        "She has low expectations of Edith",
+        "She is afraid of Edith",
+        "She is warmly excited about Edith"
+       ],
+       "answer": "She has low expectations of Edith",
+       "accept": [],
+       "hint": "Consider the word \"slight\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what makes the lady on the train seem funny?",
+       "options": [
+        "She reads a book upside down",
+        "She complains about railways while calmly enjoying her food",
+        "She falls asleep on a farmer",
+        "She loses her hat out of the window"
+       ],
+       "answer": "She complains about railways while calmly enjoying her food",
+       "accept": [],
+       "hint": "Compare what she says with what she does.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does \"the kitchen is very large with one person in it\" tell us about Mrs Ashdown?",
+       "options": [
+        "She misses Edith and feels lonely",
+        "She is proud of her kitchen",
+        "She dislikes cooking",
+        "She wishes to buy a smaller house"
+       ],
+       "answer": "She misses Edith and feels lonely",
+       "accept": [],
+       "hint": "She does not state her feeling directly.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Edith puts the letter where she will not have to look at it too often?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how the letter might make her feel.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: My Aunt's Rules",
+     "synopsis": "Edith writes a mocking letter to Thomas about her aunt's strict rules, until an event in the schoolroom makes her doubt her own joke.",
+     "text": "Edith Ashdown to Mr Thomas Ashdown, ship's clerk, to await arrival at Rio de Janeiro. Islington, 23rd March 1851.\nMy dear Thomas, You ask for news, and I shall give you the most important news in London, which is the Rules. They hang in a frame beside the schoolroom door, and I have copied them for your improvement.\nRule the First: No girl shall run upon the stairs. Rule the Second: No girl shall speak until she has considered what she means to say. (If this rule were applied to Parliament, I believe the nation would enjoy a long silence.) Rule the Third: Every sum shall be shown in full, that an error may be found and not hidden. There are eleven rules in all. Aunt Sarah recites them each Monday as a clergyman recites the Commandments, and I am convinced she composed them herself on a mountain.\nWe have nineteen girls, the daughters of shopkeepers and clerks. I teach the youngest their tables and their letters, and I am to be paid in board, lodging, and improvement. So far the improvement has chiefly concerned my posture. My aunt says I stoop like a question mark. I said that a question mark was at least a useful thing, whereupon she gave me a look that could have cooled soup, and I have not attempted wit again before dinner.\nYou will laugh, I know. Pray laugh for both of us, since nobody laughs here, except the sparrows.\nYour affectionate and upright sister, Edith.\nFrom the diary, 2nd April.\nI did not send that letter on the day I wrote it, and I am somewhat glad, for I have something to add, though I do not know how to add it without spoiling the joke.\nToday little Martha Pell, who is eight years old, came to school with her sums all correct and her face as white as paper. My aunt looked at the slate for some time. Then she asked Martha to work the last sum again before the class. The child could not. It was soon clear that her elder brother had done the work, for her father has told her that she shall be taken from school if she cannot keep up, and the family has need of her at the shop.\nI waited for the cane, or at the least for a recitation of Rule the Third. Instead my aunt said, quite without expression, \"An error shown can be mended. An error hidden goes on costing money.\" She then told Martha that she should stay a half hour after lessons every day, without charge, until the sums were her own.\nWhen the girl had gone, my aunt turned to me. \"You find my rules amusing,\" she said. \"You may continue to do so. I find that a girl who can show her working cannot easily be cheated by anybody.\"\nI posted the letter this evening, jokes and all. But I added nothing. I find I do not know yet what I think.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many rules hang beside the schoolroom door?",
+       "options": [
+        "Seven",
+        "Three",
+        "Eleven",
+        "Nine"
+       ],
+       "answer": "Eleven",
+       "accept": [],
+       "hint": "Look at the end of the paragraph listing them.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many girls attend the school?",
+       "options": [],
+       "answer": "nineteen",
+       "accept": [
+        "19"
+       ],
+       "hint": "It is stated just after the rules.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Edith's aunt say Edith looks like when she stoops?",
+       "options": [
+        "A sparrow",
+        "A question mark",
+        "A clergyman",
+        "A mountain"
+       ],
+       "answer": "A question mark",
+       "accept": [],
+       "hint": "Edith makes a joke about it.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the child with the correct sums?",
+       "options": [],
+       "answer": "Martha Pell",
+       "accept": [
+        "Martha"
+       ],
+       "hint": "She is eight years old.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why had Martha pretended the sums were her own?",
+       "options": [
+        "She feared being taken from school",
+        "She wanted to win a prize",
+        "Her aunt told her to",
+        "She had lost her slate"
+       ],
+       "answer": "She feared being taken from school",
+       "accept": [],
+       "hint": "Think about what her father said.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Edith imply by saying the aunt composed the rules \"on a mountain\"?",
+       "options": [
+        "The rules were carved on a rock",
+        "Her aunt treats her rules like sacred commandments",
+        "The rules are about climbing",
+        "Her aunt once lived in the mountains"
+       ],
+       "answer": "Her aunt treats her rules like sacred commandments",
+       "accept": [],
+       "hint": "Think about the comparison with a clergyman.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the aunt's treatment of Martha reveal?",
+       "options": [
+        "She wants to expel Martha",
+        "She has forgotten her own rules",
+        "She enjoys punishing children",
+        "She is stern but cares about her pupils learning"
+       ],
+       "answer": "She is stern but cares about her pupils learning",
+       "accept": [],
+       "hint": "Consider the half hour without charge.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Edith says she does not yet know what she thinks?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Compare her letter with what happens with Martha.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Crystal Palace",
+     "synopsis": "On a shilling day, Edith and her aunt visit the Great Exhibition, and the crowd causes an argument in the newspapers.",
+     "text": "From the diary of Edith Ashdown. Tuesday, 10th June 1851.\nI have been to the Great Exhibition! My aunt took the elder girls and me, on one of the days when the entrance is but a shilling, and I shall attempt to describe it, though I expect to fail.\nImagine, if you can, a glass building so immense that full-grown elm trees stand inside it, and sparrows fly among their branches. It was built of iron and panes in a matter of months, in Hyde Park, and they call it the Crystal Palace. Inside, the nations of the world have set out their goods: silks from India, furs from Russia, a great steam hammer from our own country, and machines that fold envelopes as neatly as a governess folds her hands. The noise was tremendous. We passed a printing press that threw out sheets faster than I could count, and I own that I stood before it with my mouth open, until my aunt reminded me that flies are also on exhibition in London.\nWhat struck me most was not the machines but the people. There were farmers in smock frocks, and mill hands from the north, come up by excursion train, and country women carrying their dinners in baskets. They walked through the palace looking at everything with great seriousness, and I saw not one pushing or one act of rudeness. An old man from Lancashire stood beside me at a loom and explained its workings to his grandson with such pride that one might have supposed he had built it.\nA letter printed in a London newspaper, which my aunt cut out and kept. To the Editor. Sir, I attended the Exhibition on Wednesday, having unwisely chosen a shilling day. I was pressed on every side by persons of the humblest sort, eating bread and cheese among the marbles. Such visitors can draw no benefit from works of art which they cannot understand. May I urge the Commissioners to consider the comfort of those who have paid for it in education and taste? I am, Sir, your obedient servant, A Lover of Order.\nMy aunt read this aloud in the parlour. She read it in a perfectly level voice, the way she reads out a sum that has gone wrong.\n\"Well, Edith,\" she said, \"what is your answer?\"\nI said that the old man from Lancashire had seemed to understand the loom a great deal better than I did, and that I supposed the writer had never been obliged to take his dinner in a basket.\nMy aunt looked at me for a moment. \"You stoop less when you are angry,\" she said.\nThen she took up her pen and wrote out the Lover of Order's sentence upon the board, for the elder girls to correct in the morning. I believe this was the nearest she has come to a joke since I came to her house.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the nickname of the huge glass building?",
+       "options": [],
+       "answer": "Crystal Palace",
+       "accept": [
+        "the Crystal Palace"
+       ],
+       "hint": "It is mentioned in the second paragraph.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how much did it cost to enter on the day Edith visited?",
+       "options": [
+        "A guinea",
+        "A penny",
+        "A shilling",
+        "Five pounds"
+       ],
+       "answer": "A shilling",
+       "accept": [],
+       "hint": "Look at the first paragraph of the entry.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what grows inside the building?",
+       "options": [
+        "Vines",
+        "Elm trees",
+        "Palm trees",
+        "Roses"
+       ],
+       "answer": "Elm trees",
+       "accept": [],
+       "hint": "Sparrows fly among them.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who explains a loom to his grandson?",
+       "options": [
+        "A clerk from Halifax",
+        "A printer from London",
+        "A farmer from Kent",
+        "An old man from Lancashire"
+       ],
+       "answer": "An old man from Lancashire",
+       "accept": [],
+       "hint": "Check the paragraph about the people.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the attitude of \"A Lover of Order\" towards poorer visitors?",
+       "options": [
+        "He admires their curiosity",
+        "He is afraid of them",
+        "He wants to help them",
+        "He looks down on them"
+       ],
+       "answer": "He looks down on them",
+       "accept": [],
+       "hint": "Consider the phrase \"persons of the humblest sort\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the aunt mention flies \"on exhibition\" in London?",
+       "options": [
+        "To tell Edith to close her mouth",
+        "To point out a display of insects",
+        "To show she is frightened of insects",
+        "To complain about the building"
+       ],
+       "answer": "To tell Edith to close her mouth",
+       "accept": [],
+       "hint": "Edith was standing with her mouth open.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the aunt ask the elder girls to correct the sentence from the newspaper?",
+       "options": [
+        "It was written by a pupil",
+        "She wants to send it back to the writer",
+        "She is mocking its snobbish opinion",
+        "It contains spelling mistakes only"
+       ],
+       "answer": "She is mocking its snobbish opinion",
+       "accept": [],
+       "hint": "Edith thinks it is close to a joke.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Do you think the writer of the newspaper letter was fair to the visitors? Why or why not?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what Edith saw there.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: A Letter from Rio",
+     "synopsis": "A letter from Thomas arrives after many weeks. His excitement gives way to something that troubles him, and Edith must decide how to answer.",
+     "text": "Mr Thomas Ashdown to Miss Edith Ashdown. Rio de Janeiro, 2nd June 1851. Received at Islington, 21st July.\nMy dear Edie, Your letter of the Rules was waiting at the agent's office, and I laughed so loud that the agent, who is a solemn man, asked me if I was unwell. Do tell your aunt, should she ever forgive you, that Rule the Third would have saved our captain a great deal of trouble, for we have been arguing over the accounts of the cargo since Madeira, and it is I who must show the working.\nThe voyage has been long but not terrible. We were becalmed for nine days near the Line, and the sails hung like washing, and the men grew as sour as the water. Then one morning the wind came, and three weeks later I saw such a harbour as I cannot describe to you. Green mountains stand straight up from the sea, and one great bare rock, shaped like a loaf of sugar, keeps watch at the entrance. The air smells of coffee and rotten fruit and rain. I am burnt as brown as a boot, and I eat oranges by the dozen.\nI had meant to fill this page with oranges, Edie, but I find that I cannot.\nOur cargo here is coffee, and you will have drunk it at your aunt's table without thought, as I always did. The sacks are carried down to the quay by enslaved men. They go at a kind of run, in lines, singing, with the sacks upon their heads, and a man with a whip stands at the end of the line. I am told by the merchants here that they are well enough treated, and that I shall soon cease to notice. Mr Dorrell, our first mate, says that I am young. I have written the sacks into my ledger, so many hundred, so many pounds' weight, and my figures are very neat.\nI do not know what to say about it, so I have told you, and you are not to tell Mother.\nYour brother, Thomas.\nFrom the diary of Edith Ashdown, 21st July.\nHis letter is seven weeks old. Whatever he felt on the 2nd of June, he has had seven weeks to feel otherwise, and he may now be anywhere upon the sea. It is a strange thing, to answer a person who no longer exists.\nI went down to breakfast. My aunt poured the coffee, as she always does, and passed me my cup. I looked at it for rather a long time.\n\"Is something the matter with it?\" she asked.\n\"No, Aunt,\" I said, and I drank it. I do not know whether that was right. I shall write to Thomas tonight. I shall tell him that I do not think he should cease to notice.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what cargo is Thomas's ship loading in Rio?",
+       "options": [],
+       "answer": "coffee",
+       "accept": [
+        "sacks of coffee"
+       ],
+       "hint": "Edith drinks it at breakfast.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many days was the ship becalmed?",
+       "options": [],
+       "answer": "9",
+       "accept": [],
+       "hint": "Thomas gives the figure when he describes the calm.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what shape is the great rock at the harbour entrance?",
+       "options": [
+        "A boot",
+        "A sail",
+        "A loaf of sugar",
+        "An orange"
+       ],
+       "answer": "A loaf of sugar",
+       "accept": [],
+       "hint": "Thomas uses a food comparison.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who carries the sacks to the quay?",
+       "options": [
+        "The merchants",
+        "The ship's sailors",
+        "Enslaved men",
+        "The first mate"
+       ],
+       "answer": "Enslaved men",
+       "accept": [],
+       "hint": "Look at the part after the oranges.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Thomas say he cannot fill the page with oranges?",
+       "options": [
+        "He has eaten too many",
+        "The agent told him not to",
+        "He has run out of oranges",
+        "He is troubled by what he has seen"
+       ],
+       "answer": "He is troubled by what he has seen",
+       "accept": [],
+       "hint": "Read what comes straight afterwards.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is suggested by Thomas's remark that his figures are \"very neat\"?",
+       "options": [
+        "He is proud of his handwriting",
+        "He is bored of mathematics",
+        "He feels uneasy that his work treats this so coldly",
+        "He wants a promotion"
+       ],
+       "answer": "He feels uneasy that his work treats this so coldly",
+       "accept": [],
+       "hint": "Think about what the neat figures record.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Edith look at her coffee cup for a long time?",
+       "options": [
+        "It is cracked",
+        "She is thinking about where the coffee comes from",
+        "She dislikes the taste",
+        "She is waiting for it to cool"
+       ],
+       "answer": "She is thinking about where the coffee comes from",
+       "accept": [],
+       "hint": "Connect it to Thomas's letter.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Thomas asks Edith not to tell their mother?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how a mother might react and how he feels himself.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Girl Who Could Not Read",
+     "synopsis": "Nan, the young maid in the house, asks Edith to teach her to read in secret. A letter from home is the reason.",
+     "text": "From the diary of Edith Ashdown. 14th September 1851.\nI must set down an event which I ought not to have encouraged, and which I intend to continue.\nThere is a maid in this house, called Nan, who carries the coals and scrubs the steps, and who I had believed to be about twenty. She is, it turns out, only fourteen, a year younger than I. I had never asked. I do not think I had said twenty words to her in six months, and most of those were \"thank you\", which I had thought rather handsome of me.\nLast night, when I went up, I found her at my door with a folded paper held out before her, as one holds out something that may bite.\n\"If you please, miss,\" she said, \"it's come from my father, and Cook says it's about my sister, only she can't read it neither, and I don't like to trouble the mistress.\"\nI took the paper and read it to her. The hand was poor, and the spelling worse, and I believe it had been written for him by a neighbour. Her sister was mending after a fever. The hop picking had been good. There was a shilling coming at Michaelmas. Nan listened with her eyes shut. When I had finished she asked me to read it again, and then she took it back and looked at it, up and down, as if the words might be persuaded.\n\"Which one's her name?\" she said.\nI pointed to it. \"Bess\". She put her finger on it and stayed so for some time.\n\"I could learn that,\" she said, not to me.\n19th September.\nWe have begun. Nan comes up after the house is locked, a quarter of an hour by my candle, and we have got as far as the letter G. She is quick, and she is furious at herself, and she will not sit down in my presence, though I have asked her. I have told no one. I am not sure of my aunt's opinion. I once heard a visitor tell her that to educate servants is merely to make them dissatisfied, and I do not recall that she disagreed.\nWhat vexes me is this. I have spent half a year complaining to Thomas of my aunt's severity, and of being paid only in improvement, and I have considered myself very ill-used. All that time, a girl younger than myself was carrying coals up four flights of stairs to warm my room, and I could not have told you the colour of her eyes. They are grey.\n3rd October.\nToday Nan wrote her own name upon my slate, and then \"Bess\". She looked at them for a long moment, then wiped the slate clean with her apron before I could admire it.\n\"That's not for leaving about,\" she said. And she went down to see to the fires.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how old is Nan?",
+       "options": [
+        "Fifteen",
+        "Fourteen",
+        "Twenty",
+        "Twelve"
+       ],
+       "answer": "Fourteen",
+       "accept": [],
+       "hint": "Edith had guessed wrongly at first.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of Nan's sister?",
+       "options": [],
+       "answer": "Bess",
+       "accept": [],
+       "hint": "Nan asks Edith to point to it.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what had happened to Nan's sister?",
+       "options": [
+        "She had been ill with a fever",
+        "She had got married",
+        "She had started a job in London",
+        "She had gone to sea"
+       ],
+       "answer": "She had been ill with a fever",
+       "accept": [],
+       "hint": "Read the letter from Nan's father.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long does each lesson with Nan last?",
+       "options": [
+        "Half a day",
+        "Two hours",
+        "An hour",
+        "A quarter of an hour"
+       ],
+       "answer": "A quarter of an hour",
+       "accept": [],
+       "hint": "It is measured by Edith's candle.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Edith's comment that \"thank you\" was \"rather handsome of me\" show?",
+       "options": [
+        "She is trying to impress her aunt",
+        "She is criticising her own past attitude",
+        "She thinks Nan is rude",
+        "She is sincerely proud of her manners"
+       ],
+       "answer": "She is criticising her own past attitude",
+       "accept": [],
+       "hint": "Edith is being ironic about herself.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Edith mention that Nan's eyes are grey?",
+       "options": [
+        "She wants to describe Nan for the police",
+        "It shows she has finally begun to notice Nan as a person",
+        "Grey eyes were fashionable",
+        "Nan had asked her to write it down"
+       ],
+       "answer": "It shows she has finally begun to notice Nan as a person",
+       "accept": [],
+       "hint": "Compare it to what she says earlier in the same paragraph.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Nan wipe the slate clean?",
+       "options": [
+        "She fears someone may discover the lessons",
+        "She needs the slate for sums",
+        "She is unhappy with her handwriting",
+        "Edith tells her to"
+       ],
+       "answer": "She fears someone may discover the lessons",
+       "accept": [],
+       "hint": "Think about what she says.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Nan will not sit down in Edith's presence?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about their positions in the household.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Ledger",
+     "synopsis": "The secret lessons are discovered. Edith and her aunt quarrel in a pair of notes, but a ledger shows Edith that she has misjudged someone.",
+     "text": "A note left upon Edith Ashdown's table, 6th November 1851.\nEdith. A candle a week has been burned in your room beyond the allowance. I have also found chalk upon Nan's apron. I shall be obliged if you will explain yourself in writing, as you appear to express yourself more freely on paper. S. Ashdown.\nEdith Ashdown to Miss Ashdown, the same day.\nDear Aunt, I have been teaching Nan her letters. I began it without your permission, because I believed you would refuse it. I shall pay for the candles out of the two shillings Mother sent me. I do not believe that I have done wrong, though I own I have done it in a hidden way, and you have told me often enough what comes of errors hidden. If you must dismiss me, I ask that Nan should not suffer for what I began. I remain, your respectful niece, Edith.\nFrom the diary, 6th November, night.\nI have never spent so long upon so short a letter. I left it upon the hall table. She has made no answer. At supper she remarked that the mutton was tough.\n8th November.\nMy aunt called me into her study this morning, a room I had never been asked into. She did not mention my letter at all. She placed a ledger in front of me and said that her eyes were tired, and that I should be so good as to check the accounts for the quarter, since I was \"sufficiently advanced in arithmetic.\"\nI sat down with some bitterness and began. Fees received. Coals. Slates. Mutton. Then, about halfway down the page, I found an entry I could not understand: \"M.P., fees remitted.\" The same again for the quarter before. And below it, \"A.D., fees remitted,\" and \"J.W., fees remitted,\" and a sum for boots. I turned back. I went back three years, and five. There were always two or three such sets of letters, and when one set stopped another began. M.P. could only be Martha Pell. I knew then that Martha Pell's father paid nothing at all, and that Aunt Sarah had paid for her boots.\nAgainst these, on the other side of the book, was my aunt's own income, which is far smaller than I had supposed. She has worn the same black dress for as long as I have known her. I had put that down to severity.\nI said nothing for some minutes. Then I said that the sums were correct.\n\"I know they are correct,\" said my aunt. She took back the book and closed it. \"Nan may come to the schoolroom on Saturday afternoons, when the girls are gone, and she may sit down there, because I shall tell her to. You will not burn my candles. Do not stand there with your mouth open, Edith. And you need not write to your brother about this. It is not a thing for amusement.\"\nI did not stoop going up the stairs. I did not run, either.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what first made the aunt suspicious?",
+       "options": [
+        "A letter from Thomas",
+        "Extra candles and chalk on an apron",
+        "A pupil's report",
+        "A complaint from Cook"
+       ],
+       "answer": "Extra candles and chalk on an apron",
+       "accept": [],
+       "hint": "Look at her note.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does the aunt ask Edith to check?",
+       "options": [],
+       "answer": "ledger",
+       "accept": [
+        "the ledger",
+        "the accounts",
+        "accounts"
+       ],
+       "hint": "She says her eyes are tired.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who does Edith understand \"M.P.\" to be?",
+       "options": [
+        "Martha Pell",
+        "The aunt herself",
+        "A mill porter",
+        "Mrs Pell"
+       ],
+       "answer": "Martha Pell",
+       "accept": [],
+       "hint": "The child from earlier chapters.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, when may Nan come to the schoolroom?",
+       "options": [
+        "Monday mornings",
+        "Every evening",
+        "Only at Christmas",
+        "Saturday afternoons"
+       ],
+       "answer": "Saturday afternoons",
+       "accept": [],
+       "hint": "The aunt gives the time when the girls are gone.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the aunt make no direct reply to Edith's letter?",
+       "options": [
+        "She answers in her own way by showing Edith the ledger",
+        "She never saw it",
+        "She has already dismissed Edith",
+        "She is too ill to speak"
+       ],
+       "answer": "She answers in her own way by showing Edith the ledger",
+       "accept": [],
+       "hint": "Think about what she has Edith read.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Edith realise about the black dress?",
+       "options": [
+        "It was part of a school uniform",
+        "It was worn because her aunt could not afford to spend on herself",
+        "It was the aunt's way of showing she was in mourning",
+        "It was a recent gift"
+       ],
+       "answer": "It was worn because her aunt could not afford to spend on herself",
+       "accept": [],
+       "hint": "Look at the sentences about her aunt's income.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is suggested by \"It is not a thing for amusement\"?",
+       "options": [
+        "The aunt thinks accounts are boring",
+        "The aunt is angry with Thomas",
+        "The aunt dislikes all jokes about mutton",
+        "The aunt wants her kindness kept private"
+       ],
+       "answer": "The aunt wants her kindness kept private",
+       "accept": [],
+       "hint": "Think about why she does not want Thomas told.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Aunt Sarah repeats the words \"sufficiently advanced in arithmetic\" from her earlier letter?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what her tone might be now.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Last Entry",
+     "synopsis": "As the year ends, Thomas comes home and Edith is offered a way back to Yorkshire. A note by a later reader closes the papers.",
+     "text": "Mr Thomas Ashdown to Miss Edith Ashdown. Liverpool, 4th December 1851.\nMy dear Edie, We are in. I have been ashore an hour, and the ground still rolls. Your letter reached me at Rio on the very day we sailed. You said that I should not cease to notice. I have not. I have been offered a better berth on the same run, with a larger salary, and I find that I shall not take it. There is a place on a Liverpool ship carrying iron goods to the Baltic, which pays less. Mr Dorrell says I am still young. I shall be at Halifax by Christmas, and I hear you are coming too. Your brother, burnt, thin, and not a whit improved, Thomas.\nFrom the diary of Edith Ashdown. Halifax, 27th December 1851.\nIt is a very odd thing to come home and find that the house has grown smaller. Thomas has a beard, which suits him poorly, and Mother cried, and did not blame the smoke. He told me about Rio in the kitchen one night when she had gone up, and I told him about Nan. We did not say a great deal, but we did not make any jokes, and that, for us, is saying a great deal.\nMr Hartley of the Halifax mill offered me a place as clerk in his counting house, thanks to Mother's good word. The money is three times what I have at present, which is nothing, and I should live at home. Mother has said I must do as I think fit, in a voice that told me exactly what she thinks fit. I do not know whether I can make her understand.\nI went out alone along the canal this morning, in the cold. I have tried to think what Aunt Sarah would advise, and I find I know precisely, for she would decline to advise me, and would ask to see my working.\nSo here it is, shown in full. On one side: Mother, who laid my place twice; money; my own country. On the other side: nineteen girls, a thin tree, a set of rules that I once found very comical; a person who wrote \"Bess\" upon a slate, and has got as far as a whole page of Scripture. And a ledger that will need someone with good eyes, sooner than either of us will mention.\nIslington, 5th January 1852.\nAunt Sarah opened the door herself. She looked at my box, and then at me.\n\"You are late,\" she said. \"The Pell child has a cold, and I have the little ones' tables to hear.\"\nI hung up my bonnet. I went in.\nA note on the papers. These letters and diaries were found in a tin box, tied with a bootlace. Nothing in them says what became of the school. But the last pages of the ledger, which is in the same box, are written in a new hand, very upright, and every sum is shown in full.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where has Thomas's ship arrived?",
+       "options": [
+        "Halifax",
+        "London",
+        "Liverpool",
+        "Rio de Janeiro"
+       ],
+       "answer": "Liverpool",
+       "accept": [],
+       "hint": "Look at the top of his letter.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what job does Mr Hartley offer Edith?",
+       "options": [
+        "Maid in his home",
+        "Clerk in a counting house",
+        "Mill worker",
+        "Teacher at a village school"
+       ],
+       "answer": "Clerk in a counting house",
+       "accept": [],
+       "hint": "Check the diary entry from Halifax.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who opens the door in Islington?",
+       "options": [],
+       "answer": "Aunt Sarah",
+       "accept": [
+        "her aunt",
+        "Edith's aunt",
+        "the aunt"
+       ],
+       "hint": "Think about who Edith goes back to.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what job does Thomas take after returning?",
+       "options": [
+        "A teaching post in London",
+        "A place on a ship carrying iron goods to the Baltic",
+        "A clerk's job at a Halifax mill",
+        "A better-paid place on the same run"
+       ],
+       "answer": "A place on a ship carrying iron goods to the Baltic",
+       "accept": [],
+       "hint": "He turned down the bigger salary.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Thomas refuse the better-paid berth?",
+       "options": [
+        "He wants to stay in Halifax",
+        "He gets seasick on long voyages",
+        "The captain dismisses him",
+        "He does not want to work near coffee and enslaved labour again"
+       ],
+       "answer": "He does not want to work near coffee and enslaved labour again",
+       "accept": [],
+       "hint": "Connect it to what Edith wrote to him.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Edith mean by \"a ledger that will need someone with good eyes\"?",
+       "options": [
+        "Mr Hartley needs a good clerk",
+        "Her aunt is ageing and will need someone to carry on the school",
+        "The ledger has been damaged by damp",
+        "The ledger has very small print"
+       ],
+       "answer": "Her aunt is ageing and will need someone to carry on the school",
+       "accept": [],
+       "hint": "Think about what the aunt said earlier about her eyes.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the new \"very upright\" handwriting in the ledger suggest?",
+       "options": [
+        "Edith probably took over the school later",
+        "Thomas became a teacher",
+        "Martha Pell moved away",
+        "A stranger stole the school"
+       ],
+       "answer": "Edith probably took over the school later",
+       "accept": [],
+       "hint": "Think about the aunt's remarks on how Edith stooped.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the aunt says only \"You are late\" when Edith returns?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Consider how she usually shows her feelings.",
        "text": "",
        "errors": []
       }
