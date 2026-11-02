@@ -1718,7 +1718,1904 @@
      "errors": []
     }
    ]
+  },
+  "math": {
+   "topic": "Rearranging formulae",
+   "questions": [
+    {
+     "id": "r1983oa7tapagv",
+     "subject": "math",
+     "type": "mc",
+     "q": "In the formula A = lw, which letter is the subject?",
+     "options": [
+      "A",
+      "l",
+      "w",
+      "lw"
+     ],
+     "answer": "A",
+     "accept": [],
+     "hint": "The subject stands alone on one side of the equals sign.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f7pg151w40xwq",
+     "subject": "math",
+     "type": "short",
+     "q": "What is the inverse operation of multiplication?",
+     "options": [],
+     "answer": "division",
+     "accept": [
+      "divide",
+      "dividing"
+     ],
+     "hint": "Think about which operation undoes \"times 5\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrhm9k8nx3z1g",
+     "subject": "math",
+     "type": "mc",
+     "q": "Make x the subject of y = x + 7.",
+     "options": [
+      "x = y + 7",
+      "x = 7y",
+      "x = 7 - y",
+      "x = y - 7"
+     ],
+     "answer": "x = y - 7",
+     "accept": [],
+     "hint": "Undo the \"+ 7\" on both sides.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpnmour1hznzyl",
+     "subject": "math",
+     "type": "mc",
+     "q": "Make x the subject of y = 5x.",
+     "options": [
+      "x = y - 5",
+      "x = 5/y",
+      "x = y/5",
+      "x = 5y"
+     ],
+     "answer": "x = y/5",
+     "accept": [],
+     "hint": "x is being multiplied by 5.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9ei78v1qji1aj",
+     "subject": "math",
+     "type": "num",
+     "q": "Use v = u + at to find v when u = 4, a = 3 and t = 5.",
+     "options": [],
+     "answer": "19",
+     "accept": [],
+     "hint": "Multiply a by t first, then add u.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpvflvarcy923",
+     "subject": "math",
+     "type": "mc",
+     "q": "In science, speed is s = d/t. Make d the subject.",
+     "options": [
+      "d = s + t",
+      "d = st",
+      "d = s/t",
+      "d = t/s"
+     ],
+     "answer": "d = st",
+     "accept": [],
+     "hint": "d is being divided by t, so use the inverse on both sides.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tixuuh16rgksn",
+     "subject": "math",
+     "type": "mc",
+     "q": "Using s = d/t, make t the subject.",
+     "options": [
+      "t = d/s",
+      "t = ds",
+      "t = s/d",
+      "t = d - s"
+     ],
+     "answer": "t = d/s",
+     "accept": [],
+     "hint": "First get d alone, then deal with s.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf2wg7117i7k3d",
+     "subject": "math",
+     "type": "num",
+     "q": "Force is F = ma. A force of 24 N acts on a mass of 6 kg. Rearrange the formula and find the acceleration a in m/s².",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "a is multiplied by m, so divide both sides.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r1brvw17nkhv2",
+     "subject": "math",
+     "type": "num",
+     "q": "A taxi fare in reais is C = 5 + 2d, where d is the distance in km. A journey costs 19 reais. Rearrange the formula and find d.",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Undo the fixed charge before you undo the \"times 2\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz77y4mpjdakh",
+     "subject": "math",
+     "type": "mc",
+     "q": "Make t the subject of v = u + at.",
+     "options": [
+      "t = (v + u)/a",
+      "t = v - u - a",
+      "t = a(v - u)",
+      "t = (v - u)/a"
+     ],
+     "answer": "t = (v - u)/a",
+     "accept": [],
+     "hint": "Remove u first, then remove a.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1svi3eemtd2rp",
+     "subject": "math",
+     "type": "mc",
+     "q": "The perimeter of a rectangle is P = 2l + 2w. Make l the subject.",
+     "options": [
+      "l = (P + 2w)/2",
+      "l = P/2 - 2w",
+      "l = (P - 2w)/2",
+      "l = P - 2w"
+     ],
+     "answer": "l = (P - 2w)/2",
+     "accept": [],
+     "hint": "Subtract the width part first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3owqge1gz22fp",
+     "subject": "math",
+     "type": "mc",
+     "q": "Make x the subject of y = (x + 3)/2.",
+     "options": [
+      "x = (y - 3)/2",
+      "x = 2y - 3",
+      "x = 2y + 3",
+      "x = y/2 - 3"
+     ],
+     "answer": "x = 2y - 3",
+     "accept": [],
+     "hint": "Deal with the division by 2 first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh3a63c1ctvmlc",
+     "subject": "math",
+     "type": "num",
+     "q": "Density is D = m/V. A block has density 2.5 g/cm³ and volume 8 cm³. Rearrange the formula and find its mass in grams.",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Multiply both sides by V to get m alone.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xqa4oa1tskt3l",
+     "subject": "math",
+     "type": "num",
+     "q": "A temperature formula is F = 1.8C + 32. Rearrange it to find C when F = 68.",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Subtract 32 first, then divide.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a4wqkp12ubcyi",
+     "subject": "math",
+     "type": "mc",
+     "q": "The area of a circle is A = πr². Make r the subject (r is positive).",
+     "options": [
+      "r = √(A/π)",
+      "r = A/(2π)",
+      "r = √A/π",
+      "r = (A/π)²"
+     ],
+     "answer": "r = √(A/π)",
+     "accept": [],
+     "hint": "Get r² alone first, then use the inverse of squaring.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r62iq99apyv7q",
+     "subject": "math",
+     "type": "open",
+     "q": "To make x the subject of y = 3x - 6, a student divides by 3 first and gets x = y/3 - 6. Explain the mistake and give the correct formula.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Check what happens to the 6 when you divide the whole side by 3.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Objeto direto e objeto indireto",
+   "questions": [
+    {
+     "id": "r8lbiui14weudo",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Helena comprou um caderno novo\", qual é o objeto direto?",
+     "options": [
+      "Helena",
+      "comprou",
+      "novo",
+      "um caderno novo"
+     ],
+     "answer": "um caderno novo",
+     "accept": [],
+     "hint": "Pergunte ao verbo: comprou o quê?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10rofciwzmotr",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Entreguei o convite a Rafael\", qual é o objeto indireto?",
+     "options": [
+      "entreguei",
+      "convite",
+      "a Rafael",
+      "o convite"
+     ],
+     "answer": "a Rafael",
+     "accept": [],
+     "hint": "Procure o complemento que vem com preposição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1byns4epnmacu",
+     "subject": "pt",
+     "type": "short",
+     "q": "Como se chama o complemento verbal ligado ao verbo sem preposição obrigatória?",
+     "options": [],
+     "answer": "objeto direto",
+     "accept": [],
+     "hint": "É o complemento que responde a \"o quê?\" ou \"quem?\" sem preposição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rijxk2b25utvo",
+     "subject": "pt",
+     "type": "short",
+     "q": "Como se chama o complemento verbal ligado ao verbo por preposição obrigatória?",
+     "options": [],
+     "answer": "objeto indireto",
+     "accept": [],
+     "hint": "Pense no tipo de objeto que exige \"a\", \"de\", \"em\"...",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rol003i21l41s",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Os alunos obedecem ao regulamento\", o termo \"ao regulamento\" é:",
+     "options": [
+      "adjunto adverbial",
+      "objeto indireto",
+      "objeto direto",
+      "sujeito"
+     ],
+     "answer": "objeto indireto",
+     "accept": [],
+     "hint": "Quem obedece, obedece a alguma coisa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbcyrhgxv4664",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Bruna gosta de música\", qual é o complemento do verbo?",
+     "options": [
+      "de música",
+      "Bruna",
+      "gosta",
+      "gosta de"
+     ],
+     "answer": "de música",
+     "accept": [],
+     "hint": "O verbo \"gostar\" exige uma preposição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkf424s10xyx18",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Ofereci flores à professora\", os termos \"flores\" e \"à professora\" são, nessa ordem:",
+     "options": [
+      "objeto indireto e objeto direto",
+      "dois objetos diretos",
+      "sujeito e objeto direto",
+      "objeto direto e objeto indireto"
+     ],
+     "answer": "objeto direto e objeto indireto",
+     "accept": [],
+     "hint": "Veja qual dos dois vem com preposição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrc3kmc1bz16n8",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em qual frase o verbo tem apenas objeto indireto?",
+     "options": [
+      "Comprei pão e leite.",
+      "Vi o espetáculo.",
+      "Confiamos nos amigos.",
+      "Li três capítulos."
+     ],
+     "answer": "Confiamos nos amigos.",
+     "accept": [],
+     "hint": "Procure o único verbo que pede preposição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra0tosp1qhf84q",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a substituição correta de \"Vi o filme ontem\" pelo pronome oblíquo?",
+     "options": [
+      "Vi-la ontem.",
+      "Vi-o ontem.",
+      "Vi-lhe ontem.",
+      "Vi ele ontem."
+     ],
+     "answer": "Vi-o ontem.",
+     "accept": [],
+     "hint": "\"Filme\" é masculino e objeto direto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r63eud315ub9te",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a substituição correta de \"Comprei as flores\" pelo pronome oblíquo?",
+     "options": [
+      "Comprei-as.",
+      "Comprei-lhes.",
+      "Comprei-os.",
+      "Comprei elas."
+     ],
+     "answer": "Comprei-as.",
+     "accept": [],
+     "hint": "\"Flores\" é feminino plural e objeto direto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fznq1d1a8pk8e",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a substituição correta de \"Entreguei a carta a ele\"?",
+     "options": [
+      "Entreguei-o a carta.",
+      "Entreguei-a a carta.",
+      "Entreguei-lhes a carta.",
+      "Entreguei-lhe a carta."
+     ],
+     "answer": "Entreguei-lhe a carta.",
+     "accept": [],
+     "hint": "\"A ele\" é objeto indireto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbo0p5s12ldmh2",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Reescreva \"Fizeram os deveres\" com pronome oblíquo. A forma correta é:",
+     "options": [
+      "Fizeram-lhes.",
+      "Fizeram-los.",
+      "Fizeram-nos.",
+      "Fizeram-os."
+     ],
+     "answer": "Fizeram-nos.",
+     "accept": [],
+     "hint": "Verbos terminados em som nasal pedem uma forma especial.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2ecz8f7in64t",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Reescreva \"Vendemos a casa\" com pronome oblíquo. A forma correta é:",
+     "options": [
+      "Vendemo-a.",
+      "Vendemo-la.",
+      "Vendemos-a.",
+      "Vendemos-lhe."
+     ],
+     "answer": "Vendemo-la.",
+     "accept": [],
+     "hint": "Verbos terminados em \"-s\" perdem essa letra antes do pronome.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1elq30igp6lux",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique a diferença entre objeto direto e objeto indireto e dê um exemplo de cada, em frases suas.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare um verbo que pede preposição com um que não pede.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r110zf3s1x9opcj",
+     "subject": "pt",
+     "type": "open",
+     "q": "Segundo a norma-padrão, por que a frase \"Eu lhe vi na praça\" não é adequada? Reescreva-a corretamente.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na regência do verbo \"ver\" e na função do pronome.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pocrzl1uod26a",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual pronome oblíquo átono da terceira pessoa do singular substitui um objeto indireto como \"a ele\" ou \"a ela\"?",
+     "options": [],
+     "answer": "lhe",
+     "accept": [],
+     "hint": "É o pronome que completaria a frase: \"Escrevi-___ uma mensagem\".",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Meu pé de laranja lima (José Mauro de Vasconcelos): infância e afeto",
+   "questions": [
+    {
+     "id": "rm9xvpy1aaktv8",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em que pessoa é narrada a história de \"Meu pé de laranja lima\"?",
+     "options": [
+      "primeira pessoa",
+      "segunda pessoa",
+      "terceira pessoa",
+      "pessoa indefinida"
+     ],
+     "answer": "primeira pessoa",
+     "accept": [],
+     "hint": "Repare em quem conta os acontecimentos e como.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12hx0sracbqs2",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Em \"Meu pé de laranja lima\", como se chama o menino que narra a história?",
+     "options": [],
+     "answer": "Zezé",
+     "accept": [
+      "Zeze"
+     ],
+     "hint": "O apelido dele tem quatro letras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gbaswj1hrzhdj",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em \"Meu pé de laranja lima\", qual é a idade aproximada de Zezé durante a história?",
+     "options": [
+      "cerca de doze anos",
+      "cerca de quinze anos",
+      "cerca de dezoito anos",
+      "cerca de cinco anos"
+     ],
+     "answer": "cerca de cinco anos",
+     "accept": [],
+     "hint": "Ele ainda é bem pequeno e está entrando na escola.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc6vwookib6kl",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em \"Meu pé de laranja lima\", com quem Zezé conversa em segredo no quintal da casa nova?",
+     "options": [
+      "com um boneco de pano",
+      "com um papagaio falante",
+      "com um pequeno pé de laranja lima",
+      "com um gato de rua"
+     ],
+     "answer": "com um pequeno pé de laranja lima",
+     "accept": [],
+     "hint": "O título do livro já dá uma pista.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjtpunx18r4oul",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Em \"Meu pé de laranja lima\", qual é o apelido do adulto português que se torna grande amigo de Zezé?",
+     "options": [],
+     "answer": "Portuga",
+     "accept": [
+      "o Portuga"
+     ],
+     "hint": "O apelido vem da nacionalidade dele.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzdnqiadkgb43",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é o tema central de \"Meu pé de laranja lima\"?",
+     "options": [
+      "uma disputa entre duas escolas",
+      "a descoberta do afeto e da dor na infância",
+      "as aventuras de um pirata",
+      "uma viagem ao espaço"
+     ],
+     "answer": "a descoberta do afeto e da dor na infância",
+     "accept": [],
+     "hint": "Pense na vida interior do menino e no que ele aprende a sentir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryh1iqqy2jiye",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em \"Meu pé de laranja lima\", como é o lar de Zezé no início do livro?",
+     "options": [
+      "uma família pobre, com o pai desempregado",
+      "uma família rica que vive viajando",
+      "um castelo cheio de empregados",
+      "um barco em alto-mar"
+     ],
+     "answer": "uma família pobre, com o pai desempregado",
+     "accept": [],
+     "hint": "As dificuldades do dia a dia aparecem bastante nessa história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yz6jll14vsowi",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em \"Meu pé de laranja lima\", como muitos adultos da família e da vizinhança veem Zezé?",
+     "options": [
+      "como um menino doente e quieto",
+      "como um herói da cidade",
+      "como um adulto em miniatura",
+      "como um menino muito travesso"
+     ],
+     "answer": "como um menino muito travesso",
+     "accept": [],
+     "hint": "Lembre-se das broncas e da fama que ele tem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8w10v3lyqhi0",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em \"Meu pé de laranja lima\", como o afeto de Portuga muda a vida de Zezé?",
+     "options": [
+      "Zezé deixa de ir à escola para sempre",
+      "Zezé fica rico de repente",
+      "Zezé passa a se sentir amado e compreendido",
+      "Zezé decide ir embora para Portugal"
+     ],
+     "answer": "Zezé passa a se sentir amado e compreendido",
+     "accept": [],
+     "hint": "Pense no que faltava ao menino na vida em casa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxjxj0810zb4sz",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em que região do Brasil se passa \"Meu pé de laranja lima\"?",
+     "options": [
+      "no litoral de Santa Catarina",
+      "no subúrbio do Rio de Janeiro",
+      "no sertão do Ceará",
+      "na floresta amazônica"
+     ],
+     "answer": "no subúrbio do Rio de Janeiro",
+     "accept": [],
+     "hint": "O bairro é Bangu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lcglj11kzdm7t",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Que recurso dá a \"Meu pé de laranja lima\" um tom de memória?",
+     "options": [
+      "um adulto relembra a própria infância",
+      "um detetive investiga um crime",
+      "um cientista descreve experiências",
+      "um jornalista entrevista políticos"
+     ],
+     "answer": "um adulto relembra a própria infância",
+     "accept": [],
+     "hint": "Pense em quem, no fim, está relembrando tudo aquilo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u50znjvy03pq",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No livro \"Meu pé de laranja lima\", o que a árvore representa para Zezé?",
+     "options": [
+      "um objeto para vender na feira",
+      "um castigo imposto pelos pais",
+      "uma lembrança do pai quando jovem",
+      "um amigo imaginário e um refúgio"
+     ],
+     "answer": "um amigo imaginário e um refúgio",
+     "accept": [],
+     "hint": "Pense no que ele faz quando está sozinho e triste.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y0z2ci1pyu9hn",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Em \"Meu pé de laranja lima\", que sentimento é a base da relação entre Zezé e Portuga? Responda com uma palavra iniciada por \"a\".",
+     "options": [],
+     "answer": "afeto",
+     "accept": [
+      "amor",
+      "amizade",
+      "carinho"
+     ],
+     "hint": "Está entre as palavras-chave do livro: é o que falta ao menino.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qrijbg1svbmn3",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Em \"Meu pé de laranja lima\", por que a voz de Zezé como narrador, com seu jeito de criança, emociona o leitor? Responda em 2 ou 3 frases.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na inocência do olhar dele diante de situações difíceis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r24pkem7d3qd3",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Em \"Meu pé de laranja lima\", por que você acha que Zezé procura um amigo imaginário e, depois, a amizade de um adulto? Justifique.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Considere o que ele recebe e o que não recebe em casa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ya9t5z1da376v",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "De que forma o final de \"Meu pé de laranja lima\" mostra que Zezé cresceu por dentro? Responda em 2 ou 3 frases.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que ele descobre sobre a dor e sobre o amor.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "sci": {
+   "topic": "Combustion and oxidation",
+   "questions": [
+    {
+     "id": "r4ydxlh1esi3sk",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is combustion?",
+     "options": [
+      "A solid dissolving in water",
+      "A metal cooling down",
+      "A fuel reacting with oxygen, releasing energy",
+      "A liquid turning into a gas"
+     ],
+     "answer": "A fuel reacting with oxygen, releasing energy",
+     "accept": [],
+     "hint": "Think about what happens when a fuel burns.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvxbar469lztj",
+     "subject": "sci",
+     "type": "short",
+     "q": "Which gas from the air is needed for fuels to burn?",
+     "options": [],
+     "answer": "oxygen",
+     "accept": [
+      "O2"
+     ],
+     "hint": "It makes up about one fifth of the air.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sfhkjq894nkl",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What are the three sides of the fire triangle?",
+     "options": [
+      "oxygen, carbon and water",
+      "fuel, heat and oxygen",
+      "fuel, water and air",
+      "heat, light and sound"
+     ],
+     "answer": "fuel, heat and oxygen",
+     "accept": [],
+     "hint": "A fire goes out if any one of them is removed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1etlit51iiyyx3",
+     "subject": "sci",
+     "type": "short",
+     "q": "A reaction that transfers energy to the surroundings is called what type of reaction?",
+     "options": [],
+     "answer": "exothermic",
+     "accept": [
+      "exothermic reaction"
+     ],
+     "hint": "Combustion warms its surroundings.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pzcgpg1kjlid1",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What are the products when a hydrocarbon fuel burns completely?",
+     "options": [
+      "carbon dioxide and water",
+      "carbon monoxide and hydrogen",
+      "soot and oxygen",
+      "nitrogen and water"
+     ],
+     "answer": "carbon dioxide and water",
+     "accept": [],
+     "hint": "Think about what carbon and hydrogen each join with.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "runsvd1muh5vd",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which word equation shows the complete combustion of methane?",
+     "options": [
+      "methane + water → carbon + oxygen",
+      "methane → carbon + hydrogen",
+      "methane + carbon dioxide → oxygen + water",
+      "methane + oxygen → carbon dioxide + water"
+     ],
+     "answer": "methane + oxygen → carbon dioxide + water",
+     "accept": [],
+     "hint": "Oxygen is a reactant.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gwjzee1op1m2v",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which toxic gas can be produced by incomplete combustion?",
+     "options": [
+      "nitrogen",
+      "helium",
+      "carbon monoxide",
+      "oxygen"
+     ],
+     "answer": "carbon monoxide",
+     "accept": [],
+     "hint": "It forms when there is not enough oxygen, and it has no smell.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1444ms51y13vcp",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why is carbon monoxide dangerous?",
+     "options": [
+      "It makes the flame blue",
+      "It stops red blood cells carrying oxygen",
+      "It makes the air too cold",
+      "It turns water to acid"
+     ],
+     "answer": "It stops red blood cells carrying oxygen",
+     "accept": [],
+     "hint": "Think about what your blood normally transports.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nyp591mojmvb",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is soot made of?",
+     "options": [
+      "carbon particles",
+      "iron particles",
+      "salt crystals",
+      "water droplets"
+     ],
+     "answer": "carbon particles",
+     "accept": [],
+     "hint": "It is the black solid seen in smoky flames.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17z0d4414wme7u",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is oxidation?",
+     "options": [
+      "A reaction in which a substance loses water",
+      "The melting of a substance",
+      "The mixing of two gases",
+      "A reaction in which a substance gains oxygen"
+     ],
+     "answer": "A reaction in which a substance gains oxygen",
+     "accept": [],
+     "hint": "The clue is in the name.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15psoc7hrwpux",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is formed when magnesium burns in oxygen?",
+     "options": [
+      "magnesium chloride",
+      "carbon dioxide",
+      "magnesium oxide",
+      "magnesium carbonate"
+     ],
+     "answer": "magnesium oxide",
+     "accept": [],
+     "hint": "Use the name of the metal and the word for the gas that joined it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rco0msb1kw12qi",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which of these is a slow oxidation reaction?",
+     "options": [
+      "Water evaporating",
+      "Iron rusting",
+      "Ice melting",
+      "Salt dissolving"
+     ],
+     "answer": "Iron rusting",
+     "accept": [],
+     "hint": "It happens to a metal, slowly, in air and water.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r131nmgc3zlsg6",
+     "subject": "sci",
+     "type": "num",
+     "q": "12 g of carbon reacts completely with 32 g of oxygen. What is the mass, in grams, of carbon dioxide formed?",
+     "options": [],
+     "answer": "44",
+     "accept": [],
+     "hint": "Mass is conserved in a chemical reaction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p25w4jfhlukr",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which side of the fire triangle does a fire blanket remove?",
+     "options": [
+      "oxygen",
+      "fuel",
+      "heat",
+      "carbon"
+     ],
+     "answer": "oxygen",
+     "accept": [],
+     "hint": "It stops air from reaching the flame.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbd2otu15cl3zd",
+     "subject": "sci",
+     "type": "open",
+     "q": "Explain why rooms with gas heaters must have good ventilation.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what is produced when there is not enough oxygen.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvxif6e9mrj2x",
+     "subject": "sci",
+     "type": "open",
+     "q": "Explain how pouring water on a wood fire puts it out, using the fire triangle.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Which side of the triangle does water take away?",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Relojoeiro da Rua dos Ipês",
+   "premise": "Já adulto, Nico recorda o ano em que, aos onze anos, quebrou a vidraça de um relojoeiro rabugento e foi trabalhar para ele aos sábados. Em cada episódio, o menino que todos chamavam de encrenqueiro descobre o que é ser ouvido, querido e, um dia, ter de dizer adeus.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A bola e a vidraça",
+     "synopsis": "Nico quebra a vidraça da relojoaria de Seu Anselmo e, sem dinheiro para pagar, precisa trabalhar para ele aos sábados.",
+     "text": "Quando alguém me pergunta como aprendi meu ofício, eu respondo que foi por causa de um chute torto. Tenho hoje quase cinquenta anos, mas ainda ouço o barulho daquela vidraça.\nEu tinha onze anos e fama de encrenqueiro. Na Rua dos Ipês, qualquer coisa que sumia ou quebrava era culpa minha. Às vezes era mesmo; às vezes, não. Minha mãe costurava para fora e vivia com a boca cheia de alfinetes, de modo que suas broncas saíam curtas. Meu pai procurava emprego desde o Carnaval e voltava para casa cada dia mais calado. Eu achava que, se fizesse barulho suficiente, alguém ia reparar que eu existia.\nNaquela tarde, joguei futebol com a bola de meia do meu vizinho, Dudu. Mirei o poste e acertei a vitrine da relojoaria de Seu Anselmo. O vidro caiu em pedacinhos sobre os relógios. Dudu sumiu tão depressa que, juro, nem levantou poeira. Eu fiquei. Não por coragem: minhas pernas simplesmente não obedeceram.\nSeu Anselmo saiu lá de dentro devagar. Era magro, alto, de óculos na ponta do nariz, e as crianças diziam que ele não falava com ninguém desde antes de nascermos. Olhou o estrago, olhou para mim e perguntou:\n— Quanto você tem no bolso?\n— Um botão — respondi. Era verdade.\nEle não riu. Pegou um caderninho, fez umas contas e disse que aquela vidraça valia quarenta sábados de trabalho. Quarenta! Corri para casa certo de que minha mãe me defenderia. Ela tirou os alfinetes da boca, algo raro, e falou:\n— Quem quebra conserta, Nico.\nNo sábado seguinte, às oito horas, lá estava eu, de cara amarrada, com uma vassoura na mão. O lugar cheirava a óleo e madeira velha, e dezenas de relógios batiam ao mesmo tempo, cada um num compasso. Eu tinha decidido odiar tudo aquilo. Varri com raiva, espirrei três vezes e deixei cair uma lata de parafusos, de propósito. Seu Anselmo nem levantou os olhos da lente.\nAo meio-dia, me deu um pão com manteiga e disse apenas:\n— Sábado que vem, os parafusos estarão onde você os deixou.\nSó anos depois entendi o que havia naquela frase. Ele não ia me bater, não ia me chamar de peste, não ia contar para a rua inteira. Ia só esperar. Naquele dia, voltando para casa, contei para mim mesmo que tinha vencido o velho. Hoje sei que foi o contrário, e que perder daquele jeito foi a melhor coisa que me aconteceu.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem conta a história?",
+       "options": [
+        "Dudu, o vizinho de Nico",
+        "Seu Anselmo, em seu diário",
+        "A mãe de Nico, numa carta",
+        "Nico, já adulto, relembrando a infância"
+       ],
+       "answer": "Nico, já adulto, relembrando a infância",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que objeto Nico quebrou com o chute?",
+       "options": [],
+       "answer": "vidraça",
+       "accept": [
+        "a vidraça",
+        "vitrine",
+        "a vitrine"
+       ],
+       "hint": "Procure o que caiu em pedacinhos sobre os relógios.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nico tinha no bolso quando Seu Anselmo perguntou?",
+       "options": [
+        "um parafuso",
+        "um bilhete",
+        "um botão",
+        "algumas moedas"
+       ],
+       "answer": "um botão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos sábados de trabalho a vidraça valia?",
+       "options": [],
+       "answer": "quarenta",
+       "accept": [
+        "40"
+       ],
+       "hint": "O número aparece nas contas do caderninho.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a mãe de Nico disse quando ele pediu ajuda?",
+       "options": [
+        "Que ele nunca mais jogaria bola",
+        "Que quem quebra conserta",
+        "Que iria pagar a vidraça",
+        "Que Seu Anselmo era injusto"
+       ],
+       "answer": "Que quem quebra conserta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nico fez de propósito na relojoaria?",
+       "options": [
+        "Deixou cair uma lata de parafusos",
+        "Quebrou um relógio de parede",
+        "Escondeu a lente do relojoeiro",
+        "Saiu antes do meio-dia"
+       ],
+       "answer": "Deixou cair uma lata de parafusos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o comentário sobre os parafusos revela sobre Seu Anselmo?",
+       "options": [
+        "Ele ficou com medo de Nico",
+        "Ele não percebeu o que Nico fez",
+        "Ele queria demitir o menino",
+        "Ele é paciente e não reage à provocação"
+       ],
+       "answer": "Ele é paciente e não reage à provocação",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Nico diz, já adulto, que perder daquele jeito foi a melhor coisa que lhe aconteceu?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Os relógios da parede",
+     "synopsis": "Nico começa a aprender o ofício e nota um relógio parado que Seu Anselmo nunca conserta.",
+     "text": "Do segundo sábado em diante, parei de derrubar parafusos. Não foi por bondade. Descobri que, se eu mesmo juntasse tudo, sobrava mais tempo para bisbilhotar.\nNa parede dos fundos havia relógios de todo tipo: de cuco, de pêndulo, de bolso pendurados em pregos. Havia até um despertador azul que tocava com um ronco de velho. Comecei a perguntar. Seu Anselmo respondia pouco, mas sempre respondia, e foi ele o primeiro adulto a responder às minhas perguntas sem dizer \"porque sim\".\n— Por que aquele atrasa?\n— Porque está com a mola cansada.\n— Relógio se cansa?\n— Tudo que trabalha se cansa. Passe-me a pinça.\nUm dia ele colocou diante de mim um relógio de bolso desmontado, com as peças numa flanela, e mandou que eu lhe entregasse as engrenagens na ordem certa. Errei tudo. Quis jogar a flanela no chão, mas ele ficou ali, sem pressa, recomeçando. Disse que um relógio não se conserta com força, e sim com atenção. Ouvi aquilo como uma frase de calendário, dessas que a gente esquece. Curioso: nunca esqueci.\nPor volta do décimo sábado, eu já sabia limpar uma engrenagem com pincel fino e colocar o mecanismo de volta na caixa. Quando o despertador azul voltou a tocar depois de horas de trabalho, dei um pulo e gritei. Seu Anselmo pôs a mão no meu ombro por um segundo, só um, e foi como se me tivessem dado uma medalha.\nEm casa, tentei contar a novidade. Meu pai olhava o jornal, marcando anúncios de emprego com um toco de lápis. Minha mãe media a barra de uma calça. Minha irmã, Lia, de dezesseis anos, disse:\n— Olha só, o encrenqueiro virou professor.\nFiquei quieto. Mas à noite percebi uma coisa estranha: eu estava contando os dias até o sábado, justamente eu, que tinha jurado odiar aquele lugar.\nFoi nesse tempo que reparei no relógio de madeira escura, grande, pendurado acima da bancada. Todos os outros andavam. Aquele estava parado às quatro e dez. Seu Anselmo consertava relógios da cidade inteira, mas nunca tirava aquele da parede.\n— Esse está quebrado — avisei, muito esperto.\n— Eu sei.\n— Quer que eu ajude?\nEle ajeitou os óculos, olhou para o relógio e depois para mim. Pela primeira vez, vi que os olhos dele podiam ficar mais velhos de um instante para o outro.\n— Limpe a sua bancada, Nico.\nFoi a única pergunta que ele não respondeu naquele ano inteiro. Limpei a bancada e fui embora, cheio de perguntas no bolso, onde antes só cabia um botão.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Nico parou de derrubar parafusos?",
+       "options": [
+        "Porque a mãe pediu",
+        "Porque os parafusos acabaram",
+        "Para sobrar tempo de bisbilhotar",
+        "Porque foi castigado"
+       ],
+       "answer": "Para sobrar tempo de bisbilhotar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que cor é o despertador que Nico ajuda a consertar?",
+       "options": [],
+       "answer": "azul",
+       "accept": [],
+       "hint": "A cor é citada na descrição do despertador que roncava.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Seu Anselmo, como se conserta um relógio?",
+       "options": [
+        "Com peças sempre novas",
+        "Com atenção, e não com força",
+        "Com rapidez e força",
+        "Com muito óleo e sorte"
+       ],
+       "answer": "Com atenção, e não com força",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Seu Anselmo reage quando o despertador volta a tocar?",
+       "options": [
+        "Põe a mão no ombro de Nico por um segundo",
+        "Dá uma medalha a Nico",
+        "Dá uma grande risada",
+        "Paga Nico em dinheiro"
+       ],
+       "answer": "Põe a mão no ombro de Nico por um segundo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama a irmã de Nico?",
+       "options": [],
+       "answer": "Lia",
+       "accept": [],
+       "hint": "Ela tem dezesseis anos e faz uma piada.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que hora está parado o relógio de madeira escura?",
+       "options": [
+        "às oito horas",
+        "ao meio-dia",
+        "às dez e quinze",
+        "às quatro e dez"
+       ],
+       "answer": "às quatro e dez",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que Nico mudou em relação ao trabalho?",
+       "options": [
+        "Ele pede salário ao relojoeiro",
+        "Ele para de fazer perguntas",
+        "Ele passa a contar os dias até o sábado",
+        "Ele decide fugir de casa"
+       ],
+       "answer": "Ele passa a contar os dias até o sábado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Seu Anselmo não responde à pergunta sobre o relógio parado?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: O capitão de navio",
+     "synopsis": "Nico inventa na escola que seu pai é capitão de navio, é desmascarado e ouve de Seu Anselmo um conselho.",
+     "text": "Preciso confessar uma coisa, já que resolvi contar tudo: nem sempre fui um narrador confiável, nem da minha própria vida. Aos onze anos, eu mentia muito bem.\nNa escola, a professora pediu que escrevêssemos sobre a profissão dos nossos pais. O pai de Marcelo era dentista, o de Sônia tinha uma padaria. Quando chegou a minha vez de ler, olhei para a folha, onde estava escrito \"meu pai está procurando emprego\", e li outra coisa:\n— Meu pai é capitão de navio. Ele está em alto-mar e só volta no Natal.\nA turma inteira me olhou com respeito pela primeira vez. Durante uma semana, fui filho de capitão. Inventei tempestades, baleias e um papagaio que falava japonês. Eu sabia que era mentira, claro, mas era uma mentira tão boa que ficava mais fácil de carregar do que a verdade.\nAcabou na sexta-feira. Marcelo passou de bicicleta pela feira e viu meu pai descarregando caixas de tomate em troca de uns trocados. Na segunda, ele contou para todo mundo:\n— O capitão está navegando em tomates!\nA escola inteira riu. Dei um empurrão nele, fui parar na diretoria e voltei para casa com um bilhete. Mas a pior parte não foi essa. A pior parte foi ver meu pai chegando à noite, com as costas doendo e duas maçãs meio machucadas que comprou para nós com o dinheiro das caixas. Ele me entregou a maior. Não consegui comer.\nNo sábado, fui trabalhar com a cara no chão. Seu Anselmo não perguntou nada. Às dez horas, trouxe um relógio bonito, de caixa dourada, e me pediu que o abrisse. Dentro, as peças estavam verdes de ferrugem.\n— Por fora, parece um relógio caro — disse ele. — Por dentro, não marca nem a hora do almoço.\nDepois, pegou um relógio simples, de metal arranhado, feio de doer. Abriu. As engrenagens brilhavam, girando redondinhas.\n— Este aqui foi de um homem que carregava sacos no porto. Quarenta anos sem atrasar um minuto.\nNão disse mais nada, e eu não precisei perguntar como ele sabia da história. A rua inteira já devia saber. Passei a manhã com um nó na garganta, olhando aquelas engrenagens.\nNaquela noite, sentei ao lado do meu pai no degrau da porta. Não pedi desculpas, pois ele nem sabia de nada e eu não tive coragem de contar. Só perguntei como era carregar caixas. Ele me olhou surpreso, e depois falou por quase meia hora, sobre o feirante gritão e os tomates que vinham de longe. Era a primeira vez em meses que eu ouvia a voz dele tanto tempo.\nHoje, quando conto esta história, às vezes me dá vontade de dizer que confessei tudo. Não confessei. Pelo menos agora, aqui, estou contando a verdade.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que profissão Nico inventa para o pai?",
+       "options": [
+        "feirante",
+        "capitão de navio",
+        "dentista",
+        "padeiro"
+       ],
+       "answer": "capitão de navio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que menino descobre a mentira de Nico?",
+       "options": [],
+       "answer": "Marcelo",
+       "accept": [],
+       "hint": "O pai dele é dentista.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o pai de Nico estava fazendo na feira?",
+       "options": [
+        "Descarregando caixas de tomate",
+        "Vendendo maçãs",
+        "Comprando peixe",
+        "Consertando uma bicicleta"
+       ],
+       "answer": "Descarregando caixas de tomate",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o pai trouxe para casa à noite?",
+       "options": [
+        "Um bilhete da diretoria",
+        "Uma caixa de tomates",
+        "Um relógio de bolso",
+        "Duas maçãs meio machucadas"
+       ],
+       "answer": "Duas maçãs meio machucadas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como estava por dentro o relógio de caixa dourada?",
+       "options": [
+        "Sem nenhuma peça",
+        "Cheio de areia",
+        "Verde de ferrugem",
+        "Novo e brilhante"
+       ],
+       "answer": "Verde de ferrugem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem foi o antigo dono do relógio simples e arranhado?",
+       "options": [
+        "O pai de Seu Anselmo",
+        "Um homem que carregava sacos no porto",
+        "Um capitão de navio",
+        "Um dentista da cidade"
+       ],
+       "answer": "Um homem que carregava sacos no porto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a ideia transmitida pela comparação entre os dois relógios?",
+       "options": [
+        "O valor está no que há por dentro, não na aparência",
+        "Relógios caros são sempre melhores",
+        "É melhor comprar relógios usados",
+        "Um relógio deve ser bonito acima de tudo"
+       ],
+       "answer": "O valor está no que há por dentro, não na aparência",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o narrador, logo no início, avisa que nem sempre foi confiável? Que efeito isso causa em quem lê?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A encomenda das cortinas",
+     "synopsis": "Com a família em aperto, Seu Anselmo encomenda cortinas à mãe de Nico, e o menino entende que nem toda ajuda precisa parecer ajuda.",
+     "text": "Em agosto, o frio chegou junto com a falta de dinheiro. O trabalho de costura da minha mãe diminuiu, porque as pessoas conseguem usar a calça rasgada por mais um mês, mas não conseguem deixar de comer. Meu pai fazia bicos cada vez mais raros. Passamos a jantar sopa, depois sopa mais rala, e Lia dizia que a nossa sopa era tão transparente que dava para ler jornal através dela.\nEu tentava não falar disso na relojoaria. Mas um sábado, enquanto limpava um pêndulo, meu estômago roncou tão alto que o despertador azul pareceu responder. Seu Anselmo levantou a cabeça. Olhou para mim. Depois olhou, por um bom tempo, para as janelas dos fundos, que nunca haviam tido cortina nenhuma.\n— Sua mãe faz cortinas?\n— Faz tudo.\n— Diga a ela que vou precisar de seis. Tecido grosso. Pago a metade adiantado.\nFiquei tão feliz que corri para casa antes do fim do turno. Minha mãe já ia recusar, porque ela era orgulhosa e tinha faro para esmola. Foi até a relojoaria, com o metro no pescoço, disposta a dizer umas verdades. Eu fui atrás. Seu Anselmo a recebeu muito sério e reclamou da luz que estragava os mostradores. Falou em desbotamento, em poeira, em clientes exigentes. Falou mais naquela manhã do que em todo o semestre. Minha mãe mediu as janelas de boca fechada, fez o preço, ele pediu desconto, ela não deu. Saíram os dois satisfeitos.\nNaquela semana, comemos carne. Minha mãe costurou cantando, algo que eu não ouvia fazia tempo, e meu pai ajudou a passar o pano com um ferro quase maior que ele.\nAs cortinas ficaram prontas no sábado seguinte. Pendurei-as eu mesmo, trepado numa escada. E foi lá de cima que percebi: as janelas dos fundos davam para um muro alto. Nenhum sol batia ali, nem de manhã, nem de tarde. Nunca tinha batido. Não havia mostrador desbotado nenhum.\nQuase caí da escada. Olhei para baixo. Seu Anselmo estava na bancada, com a lente no olho, fingindo não ver que eu tinha descoberto.\n— Ficou boa a cortina? — perguntou, sem me olhar.\nAbri a boca para dizer tudo. Queria agradecer, queria perguntar por quê. Mas lembrei da minha mãe medindo as janelas, com o queixo erguido, cobrando o preço justo.\n— Ficou boa — respondi.\n— Então desça daí, que tem trabalho.\nNunca contei para ela. Hoje, quando sei de alguém em aperto, penso duas vezes antes de ajudar de um jeito que obrigue a pessoa a agradecer. Foi um relojoeiro de poucas palavras que me ensinou que se pode cuidar de alguém sem encostar na dignidade dele.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o trabalho de costura da mãe de Nico diminuiu?",
+       "options": [
+        "Ela machucou a mão",
+        "Ela mudou de bairro",
+        "Ela preferiu trabalhar na relojoaria",
+        "As pessoas tinham pouco dinheiro"
+       ],
+       "answer": "As pessoas tinham pouco dinheiro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas cortinas Seu Anselmo encomendou?",
+       "options": [],
+       "answer": "seis",
+       "accept": [
+        "6"
+       ],
+       "hint": "O número aparece logo no pedido dele.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que motivo Seu Anselmo dá para querer cortinas?",
+       "options": [
+        "Os clientes pediram mais conforto",
+        "O frio entrava pelas janelas",
+        "A luz estragava os mostradores",
+        "A rua era barulhenta demais"
+       ],
+       "answer": "A luz estragava os mostradores",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu quando Seu Anselmo pediu desconto?",
+       "options": [
+        "Lia negociou por ela",
+        "A mãe de Nico não deu",
+        "A mãe de Nico deu metade",
+        "A mãe de Nico desistiu do serviço"
+       ],
+       "answer": "A mãe de Nico não deu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nico descobre de cima da escada?",
+       "options": [
+        "As janelas davam para um muro e não recebiam sol",
+        "As janelas estavam quebradas",
+        "As cortinas estavam curtas",
+        "Havia um relógio escondido atrás da cortina"
+       ],
+       "answer": "As janelas davam para um muro e não recebiam sol",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mudou em casa depois da encomenda?",
+       "options": [
+        "O pai conseguiu um emprego fixo",
+        "Nico deixou de ir à relojoaria",
+        "Lia foi trabalhar com a mãe",
+        "A família comeu carne e a mãe costurou cantando"
+       ],
+       "answer": "A família comeu carne e a mãe costurou cantando",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Nico decide não contar a verdade à mãe?",
+       "options": [
+        "Porque esqueceu do assunto",
+        "Porque Seu Anselmo o proibiu",
+        "Para preservar o orgulho e a dignidade dela",
+        "Porque teve medo de apanhar"
+       ],
+       "answer": "Para preservar o orgulho e a dignidade dela",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Seu Anselmo inventou um motivo em vez de simplesmente oferecer dinheiro?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Quatro e dez",
+     "synopsis": "Nico finalmente descobre o segredo do relógio parado e decide escrever uma carta que ninguém pediu.",
+     "text": "Eu já tinha pago dezesseis sábados quando Seu Anselmo adoeceu. Foi uma gripe forte, nada mais grave, mas ele ficou três dias sem abrir a loja. Minha mãe mandou sopa, agora um pouco mais grossa, e fui levar.\nEle morava nos fundos da relojoaria, num quarto pequeno e limpíssimo. Estava sentado na cama, com um cobertor nos ombros, mais magro do que nunca. Pediu que eu deixasse a sopa na mesa e fosse embora. Fiz o contrário. Puxei a cadeira e sentei.\nNa mesa havia uma caixa de sapatos aberta, cheia de cartas. Em cima, a foto de um rapaz de orelhas grandes, rindo, ao lado de uma mala.\n— Quem é? — perguntei, porque eu não sabia ficar quieto nem diante de doentes.\nAchei que ele fosse me mandar limpar alguma coisa. Em vez disso, ficou olhando a foto muito tempo. Depois disse:\n— Meu filho, Tomé. Foi para o Sul faz doze anos. Queria estudar engenharia, e eu queria que ele ficasse na loja. Discutimos, à tarde, nesta sala. Eu disse coisas. Ele pegou a mala e saiu. O trem dele era às quatro e dez.\nA chuva começou a bater no telhado. Eu entendi de repente aquele relógio escuro, e senti um frio nos braços que não tinha nada a ver com o tempo.\n— Ele nunca escreveu?\n— Escreveu. — Ele tocou a caixa. — Muitas vezes. Respondi às primeiras, de um jeito duro. Depois parei. Quando se perde a hora de uma coisa, Nico, fica cada vez mais difícil acertar o relógio.\nFoi o máximo de palavras que ouvi dele numa só vez. Em seguida, tossiu e me mandou embora.\nAndei até em casa debaixo da chuva, sem correr. Eu sabia o que era ter um pai calado, sentado num degrau, e um filho sem coragem de dizer o que precisava ser dito. Era estranho pensar que um homem velho, alto e sabido pudesse ter o mesmo medo que eu.\nNaquela noite, peguei uma folha do caderno. Tinha visto o endereço no envelope de cima da caixa, com a letra arredondada de Tomé. Eu sabia que aquilo não era da minha conta. Todo mundo sempre me disse o que não era da minha conta. Escrevi assim mesmo:\n\"Senhor Tomé. O senhor não me conhece. Trabalho aos sábados na loja do seu pai porque quebrei a vidraça. Ele tem um relógio parado na hora do seu trem. Ele conserta todos os relógios da cidade, menos esse. Eu acho que o senhor deveria saber. Ass.: Nico.\"\nComprei o selo com o dinheiro da merenda e pus a carta no correio antes que eu mudasse de ideia. Depois passei três dias com a sensação de ter feito a maior besteira da minha vida. Talvez tivesse feito mesmo; isso, naquela altura, ninguém podia saber.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a loja de Seu Anselmo ficou fechada três dias?",
+       "options": [
+        "Era feriado na cidade",
+        "Ele estava com uma gripe forte",
+        "Ele viajou para o Sul",
+        "A vidraça quebrou de novo"
+       ],
+       "answer": "Ele estava com uma gripe forte",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama o filho de Seu Anselmo?",
+       "options": [],
+       "answer": "Tomé",
+       "accept": [
+        "Tome"
+       ],
+       "hint": "O nome aparece quando ele comenta a foto.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que havia na caixa de sapatos?",
+       "options": [
+        "Cartas e a foto de um rapaz",
+        "Peças de relógio",
+        "Dinheiro guardado",
+        "Sapatos antigos"
+       ],
+       "answer": "Cartas e a foto de um rapaz",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o filho foi embora?",
+       "options": [
+        "Foi trabalhar num navio",
+        "Ficou doente e precisou se tratar no Sul",
+        "Comprou outra relojoaria",
+        "Queria estudar engenharia, e o pai queria que ele ficasse na loja"
+       ],
+       "answer": "Queria estudar engenharia, e o pai queria que ele ficasse na loja",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que significa a hora marcada no relógio parado?",
+       "options": [
+        "A hora em que a gripe começou",
+        "A hora do almoço de Seu Anselmo",
+        "A hora do trem em que o filho partiu",
+        "A hora em que a loja abre"
+       ],
+       "answer": "A hora do trem em que o filho partiu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nico compra com o dinheiro da merenda?",
+       "options": [
+        "um remédio",
+        "um selo",
+        "uma folha de caderno",
+        "um relógio"
+       ],
+       "answer": "um selo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com o que Nico compara o medo de Seu Anselmo?",
+       "options": [
+        "Com o seu próprio medo de falar com o pai",
+        "Com o medo que tem de chuva",
+        "Com o medo de Marcelo na escola",
+        "Com o medo de perder o emprego"
+       ],
+       "answer": "Com o seu próprio medo de falar com o pai",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Nico escreveu a carta, mesmo sabendo que aquilo \"não era da sua conta\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: A visita",
+     "synopsis": "Tomé responde e vem visitar o pai. Nico, em vez de feliz, sente um ciúme que tem vergonha de admitir.",
+     "text": "A resposta chegou em outubro, dirigida a mim, aos cuidados da padaria da Sônia, porque foi o único endereço que eu tinha coragem de dar quando escrevi de novo. Era um envelope fino. Dentro, uma linha só:\n\"Chego no dia 14, no trem da manhã. Obrigado, Nico. T.\"\nPassei o dia 13 sem conseguir comer. E, no sábado, dia 14, fui para a loja às oito, como sempre, sem contar nada a ninguém. Às nove e meia, o sininho da porta tocou.\nEra um homem de óculos, com as mesmas orelhas grandes da fotografia, um pouco calvo e carregando uma pasta. Seu Anselmo levantou os olhos da lente. A pinça ficou parada no ar. Ninguém disse nada por tanto tempo que escutei cada relógio da parede, um por um.\n— Pai — disse o homem.\n— Você engordou — disse Seu Anselmo.\nE então aconteceu uma coisa que nunca pensei que veria: o velho que nunca tinha pressa atravessou a loja quase tropeçando e abraçou o filho, com a pinça ainda na mão. Eu fingi que varria. Varri o mesmo lugar por dez minutos.\nTomé ficou uma semana. Trouxe fotos da mulher e de duas meninas que Seu Anselmo nunca tinha visto. Os dois almoçaram juntos, discutiram sobre engrenagens, riram alto no quarto dos fundos. No domingo, a rua inteira comentava que o relojoeiro tinha sorrido em público.\nDeveria ter sido o dia mais feliz da minha vida. Fui eu que escrevi a carta, afinal. Mas aqui vai outra confissão: eu odiei aquela semana.\nOdiei porque Tomé sentava no meu banco. Odiei porque, quando um relógio emperrou, Seu Anselmo disse \"passe-me a pinça\" e foi Tomé quem passou. Odiei quando ele chamou o filho de \"meu menino\" e, no mesmo instante, me mandou buscar pão. Fui buscar pão com os olhos ardendo, chutando pedras. Pensei que eu era só o garoto da vidraça, que faltavam vinte sábados e que depois disso ninguém mais precisaria de mim.\nNo último dia da visita, Tomé me encontrou no fundo da loja.\n— Ele me falou de você — disse. — Sabe como foi? Falou por uma hora. Nunca falou uma hora de nada na vida. Contou da mola, do despertador azul, das cortinas. Disse: \"O menino tem mão boa e pergunta demais\". Meu pai nunca me disse isso.\nFiquei olhando para as minhas mãos sujas de óleo. Compreendi, de repente, que ele também tinha ciúme de mim. Nós dois nos olhamos e, sem saber por que, começamos a rir.\nQuando Tomé foi embora, Seu Anselmo voltou para a bancada e ficou olhando o relógio escuro na parede. Eu prendi a respiração. Mas ele só disse:\n— Ainda não. Passe-me a pinça.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que dia Tomé chega?",
+       "options": [
+        "no dia 13",
+        "no dia 4",
+        "no dia 10",
+        "no dia 14"
+       ],
+       "answer": "no dia 14",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a primeira coisa que Seu Anselmo diz ao filho?",
+       "options": [
+        "\"Sente-se aqui\"",
+        "\"Você demorou\"",
+        "\"Você engordou\"",
+        "\"Eu perdoo você\""
+       ],
+       "answer": "\"Você engordou\"",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Seu Anselmo tinha na mão quando abraçou o filho?",
+       "options": [
+        "uma vassoura",
+        "uma pinça",
+        "um relógio de bolso",
+        "uma lente"
+       ],
+       "answer": "uma pinça",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas filhas Tomé tem?",
+       "options": [],
+       "answer": "duas",
+       "accept": [
+        "2"
+       ],
+       "hint": "A informação vem junto com as fotos que ele trouxe.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Nico se sentiu durante a visita?",
+       "options": [
+        "Com ciúme de Tomé",
+        "Tranquilo e despreocupado",
+        "Com medo de ser preso",
+        "Aliviado por não trabalhar"
+       ],
+       "answer": "Com ciúme de Tomé",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Seu Anselmo disse de Nico a Tomé?",
+       "options": [
+        "Que era preguiçoso e mentiroso",
+        "Que devia ir para outra cidade",
+        "Que já havia pago a vidraça",
+        "Que tinha mão boa e perguntava demais"
+       ],
+       "answer": "Que tinha mão boa e perguntava demais",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Nico compreende que Tomé também sentia ciúme?",
+       "options": [
+        "Porque Tomé brigou com Nico na rua",
+        "Porque Seu Anselmo tirou Tomé da loja",
+        "Porque o pai nunca dissera a Tomé palavras como as que dissera sobre Nico",
+        "Porque Tomé queria o banco de volta"
+       ],
+       "answer": "Porque o pai nunca dissera a Tomé palavras como as que dissera sobre Nico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o narrador adulto faz questão de confessar o ciúme, em vez de dizer só que ficou feliz?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A hora certa",
+     "synopsis": "No último dos quarenta sábados, Nico faz a descoberta final, e o narrador adulto revela o que veio depois.",
+     "text": "O quadragésimo sábado caiu em março. Acordei antes do despertador e demorei a me vestir. A dívida da vidraça estava paga; eu podia nunca mais pôr os pés ali. Meu pai, que agora trabalhava num armazém perto da estação, me viu de cara comprida e perguntou o que era. Eu disse:\n— Hoje acaba.\nEle sorriu de um jeito que me deixou desconfiado, e me entregou um pacote embrulhado em jornal.\n— Leve para ele. Sua mãe e eu fizemos questão.\nEra um pão doce enorme. Na loja, Seu Anselmo trabalhou como em qualquer outro dia, e mandou-me limpar o mesmo pêndulo de sempre. Ao meio-dia, comemos o pão em silêncio. Depois ele abriu o caderninho, procurou a página, riscou uma linha e virou-o para mim.\n— Quarenta. Estamos quites.\nNinguém fala de um aperto no peito quando se tem onze anos, então fiquei olhando para o caderno. Eu tinha ensaiado uma frase bonita a semana inteira, mas ela sumiu.\n— Então é isso — foi o que consegui dizer.\nEle tirou os óculos e limpou-os demoradamente na camisa. Em seguida, levantou-se, puxou a escada e me mandou subir.\n— Tire aquele da parede.\nEra o relógio escuro. Pesava mais do que parecia. Pusemos o relógio sobre a bancada, e ele me entregou as ferramentas sem dizer nada. Fiquei parado, sem acreditar. Passei a tarde inteira com aquele mecanismo. Não tinha defeito nenhum, nunca teve: só faltava dar corda. Ele esperou, com as mãos atrás das costas, até que eu mesmo descobrisse. Quando encaixei a chave e girei, o pêndulo oscilou. Tic. Tac. A sala ganhou mais um compasso.\n— Que horas são? — perguntou ele.\nOlhei o relógio de bolso. Passava das cinco. Ajustei os ponteiros, um pouco trêmulo. Foi assim que as quatro e dez deixaram de existir naquela parede.\n— Sábado que vem — disse ele, voltando para a bancada —, pago por hora. Mas você ainda pergunta demais.\nTrabalhei com Seu Anselmo por mais nove anos. No fim daquele ano, ele foi passar o Natal com o filho e as netas, e voltou a ir todos os anos. Quando ficou velho demais para subir na escada, foi morar com eles e me deixou a loja. Morreu lá no Sul, longe, em paz, segundo Tomé me escreveu, com o despertador azul tocando ao lado da cama.\nHoje a loja é minha. O relógio escuro continua na parede dos fundos, e dou corda nele todo domingo. Às vezes aparece aqui um menino com cara de encrenca, querendo saber por que aquele atrasa. Eu não digo \"porque sim\". Puxo o banco e, antes de responder, pergunto a ele o que tem no bolso.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que mês caiu o último sábado da dívida?",
+       "options": [
+        "dezembro",
+        "março",
+        "setembro",
+        "julho"
+       ],
+       "answer": "março",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que os pais de Nico mandaram para Seu Anselmo?",
+       "options": [
+        "um pão doce enorme",
+        "um relógio novo",
+        "uma cortina",
+        "um livro"
+       ],
+       "answer": "um pão doce enorme",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o pai de Nico estava trabalhando agora?",
+       "options": [
+        "num navio",
+        "numa padaria",
+        "numa relojoaria",
+        "num armazém perto da estação"
+       ],
+       "answer": "num armazém perto da estação",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o problema do relógio escuro?",
+       "options": [
+        "O pêndulo havia sumido",
+        "A mola estava enferrujada",
+        "Só faltava dar corda",
+        "Uma engrenagem estava quebrada"
+       ],
+       "answer": "Só faltava dar corda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos anos Nico ainda trabalhou com Seu Anselmo depois dos quarenta sábados?",
+       "options": [],
+       "answer": "nove",
+       "accept": [
+        "9"
+       ],
+       "hint": "O número aparece depois da conversa sobre o pagamento por hora.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que significa Nico ajustar os ponteiros do relógio escuro?",
+       "options": [
+        "Que o relógio seria vendido",
+        "Que Seu Anselmo aceitou seguir em frente",
+        "Que a loja ia fechar",
+        "Que Nico iria embora"
+       ],
+       "answer": "Que Seu Anselmo aceitou seguir em frente",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que o narrador herdou o modo de Seu Anselmo de tratar as crianças?",
+       "options": [
+        "Ele responde às perguntas e pergunta o que o menino tem no bolso",
+        "Ele cobra quarenta sábados de todos",
+        "Ele proíbe perguntas na loja",
+        "Ele fecha a loja aos domingos"
+       ],
+       "answer": "Ele responde às perguntas e pergunta o que o menino tem no bolso",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Seu Anselmo escolheu o último sábado da dívida para pedir que Nico tirasse o relógio da parede?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
