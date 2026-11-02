@@ -1812,6 +1812,983 @@
      "errors": []
     }
    ]
+  },
+  "math": {
+   "topic": "Solving one-step and two-step linear equations",
+   "questions": [
+    {
+     "id": "r14juesxp6sf10",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve x + 7 = 15.",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "What can you subtract from both sides?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8jgw3c1t71v4r",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve x − 9 = 4.",
+     "options": [],
+     "answer": "13",
+     "accept": [],
+     "hint": "The inverse of subtracting 9 is adding 9.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r76rb05exr4y",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve 6x = 42.",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "6x means 6 multiplied by x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mo6bzwbke3qn",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve x ÷ 5 = 3.",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Undo dividing by multiplying.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rvgdlz30h344",
+     "subject": "math",
+     "type": "mc",
+     "q": "What is the inverse operation of multiplying by 4?",
+     "options": [
+      "dividing by 4",
+      "adding 4",
+      "subtracting 4",
+      "squaring"
+     ],
+     "answer": "dividing by 4",
+     "accept": [],
+     "hint": "Which operation undoes the multiplication?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12e2a3h6npa7r",
+     "subject": "math",
+     "type": "mc",
+     "q": "In the equation 3n + 2 = 14, what do we call the letter n?",
+     "options": [
+      "the unknown",
+      "the constant",
+      "the inverse",
+      "the balance"
+     ],
+     "answer": "the unknown",
+     "accept": [],
+     "hint": "It stands for the value we are trying to find.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jywqvh13n5u3j",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve 2x + 3 = 11.",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Undo the + 3 first, then the × 2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wj2cz7w4uyr5",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve 3x − 5 = 16.",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Add 5 to both sides first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17p9rgso0wufz",
+     "subject": "math",
+     "type": "mc",
+     "q": "To solve 3x + 4 = 19 by undoing the operations in reverse order, what is the first step?",
+     "options": [
+      "Subtract 4 from both sides",
+      "Add 4 to both sides",
+      "Multiply both sides by 3",
+      "Add 3 to both sides"
+     ],
+     "answer": "Subtract 4 from both sides",
+     "accept": [],
+     "hint": "Which operation was done to x last?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb69mqx1mgm2wf",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve 4x − 7 = 13.",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Keep the equation balanced: do the same to both sides.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r184amw4me2c9q",
+     "subject": "math",
+     "type": "mc",
+     "q": "Is x = 6 a solution of 2x − 5 = 7?",
+     "options": [
+      "Yes",
+      "No"
+     ],
+     "answer": "Yes",
+     "accept": [],
+     "hint": "Substitute 6 for x and work out the left-hand side.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdd0g8m11ka6lh",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve x ÷ 4 + 2 = 6.",
+     "options": [],
+     "answer": "16",
+     "accept": [],
+     "hint": "Deal with the + 2 before the ÷ 4.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq4u69417c4eu8",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve 5x + 8 = 3.",
+     "options": [],
+     "answer": "-1",
+     "accept": [],
+     "hint": "The answer can be negative.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1asspnitdu5eo",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve 7 + 2x = 1.",
+     "options": [],
+     "answer": "-3",
+     "accept": [],
+     "hint": "Subtract 7 from both sides first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cr0kq51167bt4",
+     "subject": "math",
+     "type": "num",
+     "q": "I think of a number, multiply it by 3 and then add 10. The answer is 31. What was my number?",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Write an equation with n for the number.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w1tp88107hak4",
+     "subject": "math",
+     "type": "open",
+     "q": "Ravi says the solution to 2x + 6 = 20 is x = 13. Explain his mistake and find the correct solution.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Check by substituting 13 back into the equation.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Pronomes possessivos e demonstrativos",
+   "questions": [
+    {
+     "id": "r1aefw5i1qg6ekf",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"Meu caderno está na mochila\", qual palavra é pronome possessivo?",
+     "options": [
+      "Meu",
+      "caderno",
+      "está",
+      "na"
+     ],
+     "answer": "Meu",
+     "accept": [],
+     "hint": "Procure a palavra que indica a quem o caderno pertence.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lyc6jhp35e0w",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual pronome possessivo completa a frase: \"Nós trouxemos ___ lanches.\"",
+     "options": [
+      "nossos",
+      "minhas",
+      "tuas",
+      "vossa"
+     ],
+     "answer": "nossos",
+     "accept": [],
+     "hint": "Observe a pessoa do verbo e o gênero e número de \"lanches\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzfn4141krdg1o",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual é o pronome possessivo da 1ª pessoa do plural, no masculino singular?",
+     "options": [],
+     "answer": "nosso",
+     "accept": [],
+     "hint": "Pense em \"nós\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kbibhb1s7pnxi",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Que tipo de pronome é \"aquele\"?",
+     "options": [
+      "demonstrativo",
+      "possessivo",
+      "pessoal",
+      "interrogativo"
+     ],
+     "answer": "demonstrativo",
+     "accept": [],
+     "hint": "Ele indica a posição de algo em relação às pessoas do discurso.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v96y1cd4tprf",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual é o feminino plural do pronome possessivo \"teu\"?",
+     "options": [],
+     "answer": "tuas",
+     "accept": [],
+     "hint": "Pense em \"teu livro\" e \"___ canetas\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgbvte2whdytw",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Escolha o demonstrativo correto para algo que está perto de quem fala: \"___ livro que estou segurando é novo.\"",
+     "options": [
+      "Este",
+      "Esse",
+      "Aquele",
+      "Aquilo"
+     ],
+     "answer": "Este",
+     "accept": [],
+     "hint": "O livro está nas mãos da pessoa que fala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c160721sdq2qs",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Escolha o demonstrativo correto para algo que está perto de quem ouve: \"___ casaco que você está usando é bonito.\"",
+     "options": [
+      "Esse",
+      "Este",
+      "Aquele",
+      "Aquilo"
+     ],
+     "answer": "Esse",
+     "accept": [],
+     "hint": "O casaco está com a pessoa com quem se fala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6ehy1eoq3cjq",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Está vendo ___ montanha lá no horizonte?\"",
+     "options": [
+      "aquela",
+      "esta",
+      "essa",
+      "minha"
+     ],
+     "answer": "aquela",
+     "accept": [],
+     "hint": "A montanha está longe de quem fala e de quem ouve.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqbay8n6cjaok",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"Isto aqui é meu\", a palavra \"isto\" é:",
+     "options": [
+      "pronome demonstrativo",
+      "pronome possessivo",
+      "artigo",
+      "verbo"
+     ],
+     "answer": "pronome demonstrativo",
+     "accept": [],
+     "hint": "Ela aponta para algo próximo de quem fala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnh1def4meawo",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com a junção de \"em + este\": \"___ ano, vou ler mais livros.\"",
+     "options": [],
+     "answer": "Neste",
+     "accept": [
+      "neste"
+     ],
+     "hint": "A preposição \"em\" se junta ao demonstrativo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rajtppi1uqjsxt",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase usa o demonstrativo corretamente para o tempo presente?",
+     "options": [
+      "Neste momento, estou lendo.",
+      "Naquele momento, estou lendo.",
+      "Aquele momento estou lendo."
+     ],
+     "answer": "Neste momento, estou lendo.",
+     "accept": [],
+     "hint": "Para o tempo atual usamos o demonstrativo de proximidade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j6b59f1s0nb7e",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Comprei bananas e maçãs; estas estavam mais baratas\", a palavra \"estas\" se refere a:",
+     "options": [
+      "maçãs",
+      "bananas",
+      "às duas frutas"
+     ],
+     "answer": "maçãs",
+     "accept": [],
+     "hint": "\"Este\" retoma o termo mencionado por último.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7ibup0y8aqds",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Entreguei o bilhete ___ menina de boné.\" (a + aquela)",
+     "options": [
+      "àquela",
+      "aquela",
+      "há aquela",
+      "a aquela"
+     ],
+     "answer": "àquela",
+     "accept": [],
+     "hint": "A preposição \"a\" se junta ao \"a\" inicial do demonstrativo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1283y41j61xaz",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase fica ambígua por causa do pronome possessivo?",
+     "options": [
+      "Lia disse a Rui que achou seu celular.",
+      "Achei meu celular na sala.",
+      "Nossos celulares estão carregando.",
+      "Tuas chaves estão na mesa."
+     ],
+     "answer": "Lia disse a Rui que achou seu celular.",
+     "accept": [],
+     "hint": "Em qual frase não dá para saber de quem é o objeto?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wmfv1b96m98s",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique a diferença entre \"este\" e \"esse\" quando falamos da posição de objetos no espaço.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em quem está mais perto do objeto: quem fala ou quem ouve.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h2k5kdlg2omh",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva uma frase usando \"este\", \"esse\" e \"aquele\", mostrando a distância de cada objeto.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Imagine três objetos: um com você, um com o colega e um longe dos dois.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Contos de fadas e releituras: O fantástico mistério de Feiurinha",
+   "questions": [
+    {
+     "id": "r1569xy61ymzs73",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Como os contos de fadas tradicionais costumam começar?",
+     "options": [
+      "Era uma vez...",
+      "Querido diário...",
+      "Prezado senhor...",
+      "Atenciosamente..."
+     ],
+     "answer": "Era uma vez...",
+     "accept": [],
+     "hint": "Pense na abertura das histórias que você ouvia quando era pequeno.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "runubm018de5a9",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é o final típico dos contos de fadas tradicionais?",
+     "options": [
+      "E foram felizes para sempre.",
+      "Continua no próximo episódio.",
+      "Fim do primeiro tempo.",
+      "Até amanhã."
+     ],
+     "answer": "E foram felizes para sempre.",
+     "accept": [],
+     "hint": "Pense em como terminam as histórias de princesas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r30agtt1bmxxlc",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama o tipo de narrativa curta com elementos mágicos, como \"Cinderela\" e \"Branca de Neve\"?",
+     "options": [],
+     "answer": "conto de fadas",
+     "accept": [
+      "contos de fadas",
+      "conto de fada"
+     ],
+     "hint": "Fadas, bruxas e encantamentos aparecem nesse tipo de história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb76zlfdu0p1k",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual elemento é comum nos contos de fadas tradicionais?",
+     "options": [
+      "seres mágicos e encantamentos",
+      "notícias do jornal de hoje",
+      "gráficos e tabelas",
+      "instruções de montagem"
+     ],
+     "answer": "seres mágicos e encantamentos",
+     "accept": [],
+     "hint": "Pense em varinhas, feitiços e castelos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jnfp4l8yptwn",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama a obra nova que reconta uma história já conhecida de um jeito diferente?",
+     "options": [],
+     "answer": "releitura",
+     "accept": [
+      "uma releitura"
+     ],
+     "hint": "A palavra lembra \"ler de novo\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvd1euv5kw7nf",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é uma paródia?",
+     "options": [
+      "uma imitação de outra obra com tom de humor ou crítica",
+      "uma cópia exata de outro texto",
+      "um texto científico",
+      "uma lista de personagens"
+     ],
+     "answer": "uma imitação de outra obra com tom de humor ou crítica",
+     "accept": [],
+     "hint": "Pense em versões engraçadas de histórias famosas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u5on481hnsuga",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama a relação entre textos, quando um texto faz referência a outro?",
+     "options": [],
+     "answer": "intertextualidade",
+     "accept": [],
+     "hint": "A palavra junta \"entre\" e \"texto\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9lits81l9w9ti",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em \"O fantástico mistério de Feiurinha\", quem são as principais personagens que se reúnem?",
+     "options": [
+      "princesas de contos de fadas conhecidos",
+      "astronautas",
+      "jogadores de futebol",
+      "cientistas"
+     ],
+     "answer": "princesas de contos de fadas conhecidos",
+     "accept": [],
+     "hint": "A obra é uma releitura de contos de fadas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbnirt619j0hfb",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é o mistério central de \"O fantástico mistério de Feiurinha\"?",
+     "options": [
+      "o sumiço de Feiurinha",
+      "o roubo de uma coroa",
+      "um dragão no castelo",
+      "um tesouro enterrado"
+     ],
+     "answer": "o sumiço de Feiurinha",
+     "accept": [],
+     "hint": "O título já dá uma pista: alguém precisa ser encontrado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sgrf1c1lqv34x",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O nome \"Feiurinha\" brinca com qual característica, oposta à das princesas tradicionais?",
+     "options": [
+      "ser feia",
+      "ser alta",
+      "ser rica",
+      "ser rápida"
+     ],
+     "answer": "ser feia",
+     "accept": [],
+     "hint": "Observe a palavra que está dentro do nome.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14wgw8p4ckwuw",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Uma releitura que mostra as princesas já adultas, depois do casamento, explora principalmente:",
+     "options": [
+      "o que acontece depois do \"felizes para sempre\"",
+      "o nascimento das princesas",
+      "uma história sem relação com contos de fadas",
+      "a biografia de uma pessoa real"
+     ],
+     "answer": "o que acontece depois do \"felizes para sempre\"",
+     "accept": [],
+     "hint": "Os contos tradicionais costumam terminar no casamento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19j3s381m0o5vr",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destes é um recurso típico da paródia?",
+     "options": [
+      "exagerar características conhecidas para criar humor",
+      "usar apenas dados numéricos",
+      "evitar qualquer referência a outra obra",
+      "contar fatos reais de forma neutra"
+     ],
+     "answer": "exagerar características conhecidas para criar humor",
+     "accept": [],
+     "hint": "Pense em como a paródia faz o leitor rir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkyblep1jwzc8x",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Uma princesa de conto de fadas reclamando das tarefas domésticas é um exemplo de:",
+     "options": [
+      "humor que quebra a expectativa do leitor",
+      "linguagem científica",
+      "texto instrucional",
+      "biografia"
+     ],
+     "answer": "humor que quebra a expectativa do leitor",
+     "accept": [],
+     "hint": "Normalmente não imaginamos princesas fazendo isso.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12epd8o7tedrt",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Para entender bem uma paródia, o leitor precisa:",
+     "options": [
+      "conhecer a obra original que está sendo imitada",
+      "nunca ter lido contos de fadas",
+      "ler apenas o final",
+      "decorar o nome do autor"
+     ],
+     "answer": "conhecer a obra original que está sendo imitada",
+     "accept": [],
+     "hint": "Como perceber a brincadeira sem saber o que está sendo imitado?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rty33plta1mp3",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Que diferença você percebe entre uma princesa de um conto tradicional e uma princesa de uma releitura bem-humorada?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no comportamento, na fala e nos problemas de cada uma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqs8dg8ybiikb",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Por que um autor faria uma paródia de contos de fadas tão conhecidos?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no efeito que a surpresa e o humor causam no leitor.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "sci": {
+   "topic": "Forces: contact and non-contact",
+   "questions": [
+    {
+     "id": "r1h7prt91wgj6uk",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is the unit of force?",
+     "options": [
+      "newton",
+      "kilogram",
+      "metre",
+      "joule"
+     ],
+     "answer": "newton",
+     "accept": [],
+     "hint": "It is named after a famous scientist.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxszdib1d6p8gn",
+     "subject": "sci",
+     "type": "short",
+     "q": "What is the symbol for the newton?",
+     "options": [],
+     "answer": "N",
+     "accept": [
+      "n"
+     ],
+     "hint": "It is a single capital letter.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16mu9icvu7orm",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which instrument is used to measure force?",
+     "options": [
+      "newtonmeter",
+      "thermometer",
+      "ruler",
+      "measuring cylinder"
+     ],
+     "answer": "newtonmeter",
+     "accept": [],
+     "hint": "It contains a spring that stretches.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yd48kk1wo983i",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which of these is a non-contact force?",
+     "options": [
+      "gravity",
+      "friction",
+      "air resistance",
+      "upthrust"
+     ],
+     "answer": "gravity",
+     "accept": [],
+     "hint": "Which force acts even when objects are not touching?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdoxoaayfdjbo",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which of these is a contact force?",
+     "options": [
+      "friction",
+      "magnetic force",
+      "gravity",
+      "electrostatic force"
+     ],
+     "answer": "friction",
+     "accept": [],
+     "hint": "Which force needs two surfaces touching?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13z3gzpe18476",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which situation involves a non-contact force?",
+     "options": [
+      "two magnets pulling towards each other",
+      "a hand pushing a door",
+      "a shoe gripping the floor",
+      "water pushing up on a boat"
+     ],
+     "answer": "two magnets pulling towards each other",
+     "accept": [],
+     "hint": "In which example are the objects not touching?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxjym6ltofjay",
+     "subject": "sci",
+     "type": "short",
+     "q": "What is the name of the upward force from water that helps a boat float?",
+     "options": [],
+     "answer": "upthrust",
+     "accept": [
+      "buoyancy"
+     ],
+     "hint": "It pushes up from underneath the boat.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i6worhr4d5nq",
+     "subject": "sci",
+     "type": "mc",
+     "q": "On a force diagram, what does the length of a force arrow show?",
+     "options": [
+      "the size of the force",
+      "the type of object",
+      "the speed of the object",
+      "the time the force acts"
+     ],
+     "answer": "the size of the force",
+     "accept": [],
+     "hint": "A bigger force is drawn with a longer arrow.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhnz6fxk9p0yl",
+     "subject": "sci",
+     "type": "mc",
+     "q": "A book rests on a table. Its weight is 5 N downwards. What is the support force from the table?",
+     "options": [
+      "5 N upwards",
+      "5 N downwards",
+      "10 N upwards",
+      "0 N"
+     ],
+     "answer": "5 N upwards",
+     "accept": [],
+     "hint": "The book is not moving, so the forces are balanced.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkrsv3n14qwogg",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Forces of 20 N to the left and 20 N to the right act on a trolley. These forces are:",
+     "options": [
+      "balanced",
+      "unbalanced"
+     ],
+     "answer": "balanced",
+     "accept": [],
+     "hint": "Compare the sizes of the two forces.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gkjlav1vdypn4",
+     "subject": "sci",
+     "type": "mc",
+     "q": "A stationary object has balanced forces acting on it. What happens to it?",
+     "options": [
+      "It stays still",
+      "It speeds up",
+      "It slows down",
+      "It changes direction"
+     ],
+     "answer": "It stays still",
+     "accept": [],
+     "hint": "Balanced forces do not change the motion.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzeoqtc6uzacb",
+     "subject": "sci",
+     "type": "num",
+     "q": "A box is pushed with a force of 30 N to the right. Friction is 12 N to the left. What is the resultant force, in newtons?",
+     "options": [],
+     "answer": "18",
+     "accept": [],
+     "hint": "The forces act in opposite directions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18spkj314whvbs",
+     "subject": "sci",
+     "type": "num",
+     "q": "A skydiver's weight is 700 N and the air resistance is 700 N. What is the resultant force, in newtons?",
+     "options": [],
+     "answer": "0",
+     "accept": [],
+     "hint": "Compare the two forces.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tphaei16mjwzz",
+     "subject": "sci",
+     "type": "mc",
+     "q": "A car's driving force is 2000 N and the total resistive force is 1500 N. What happens to its speed?",
+     "options": [
+      "It increases",
+      "It decreases",
+      "It stays the same"
+     ],
+     "answer": "It increases",
+     "accept": [],
+     "hint": "Which force is bigger?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qm77zrkgf5f1",
+     "subject": "sci",
+     "type": "mc",
+     "q": "A ball rolling along grass slows down and stops. Which force causes this?",
+     "options": [
+      "friction",
+      "gravity",
+      "upthrust",
+      "magnetic force"
+     ],
+     "answer": "friction",
+     "accept": [],
+     "hint": "Think about the ball rubbing against the grass.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14gd1kh1nekpwh",
+     "subject": "sci",
+     "type": "open",
+     "q": "A cyclist moving at a steady speed stops pedalling. Using the idea of unbalanced forces, explain what happens to her speed.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Which forces are still acting once the forward force is gone?",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
