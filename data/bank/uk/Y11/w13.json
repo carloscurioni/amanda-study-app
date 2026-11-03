@@ -1,0 +1,987 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y11",
+ "academic_week": 13,
+ "subjects": {
+  "bio": {
+   "topic": "Sex hormones, the menstrual cycle and sexually transmitted infections",
+   "questions": [
+    {
+     "id": "r1j8rxb9ocaozm",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which gland releases FSH and LH?",
+     "options": [
+      "Pituitary gland",
+      "Thyroid gland",
+      "Pancreas",
+      "Adrenal gland"
+     ],
+     "answer": "Pituitary gland",
+     "accept": [],
+     "hint": "It is a small gland at the base of the brain.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1prddlo1kzgrqz",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the hormone that causes secondary sexual characteristics in males, such as a deeper voice.",
+     "options": [],
+     "answer": "testosterone",
+     "accept": [],
+     "hint": "It is made in the testes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4vxnyq90y4u1",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which change at puberty is caused by oestrogen?",
+     "options": [
+      "Breast development and widening of the hips",
+      "Growth of facial hair",
+      "Deepening of the voice",
+      "Increase in the size of the testes"
+     ],
+     "answer": "Breast development and widening of the hips",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvif3436i2zie",
+     "subject": "bio",
+     "type": "short",
+     "q": "Which organ produces oestrogen in females?",
+     "options": [],
+     "answer": "ovary",
+     "accept": [
+      "ovaries",
+      "the ovary",
+      "the ovaries"
+     ],
+     "hint": "This organ also releases the eggs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yvqjuwj0digk",
+     "subject": "bio",
+     "type": "mc",
+     "q": "State the main role of FSH in the menstrual cycle.",
+     "options": [
+      "Causes a follicle containing an egg to develop in the ovary",
+      "Causes the uterus lining to break down",
+      "Prevents the release of any eggs",
+      "Maintains the uterus lining during pregnancy"
+     ],
+     "answer": "Causes a follicle containing an egg to develop in the ovary",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sajfao1vf4zwh",
+     "subject": "bio",
+     "type": "short",
+     "q": "Which hormone triggers ovulation?",
+     "options": [],
+     "answer": "LH",
+     "accept": [
+      "luteinising hormone",
+      "luteinizing hormone"
+     ],
+     "hint": "Its level surges around the middle of the cycle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmfmmb81xd6rdd",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What is the effect of rising oestrogen on the uterus lining?",
+     "options": [
+      "It thickens and repairs the lining",
+      "It breaks down the lining",
+      "It removes the blood supply",
+      "It has no effect"
+     ],
+     "answer": "It thickens and repairs the lining",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jejgvx1zut3a",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which structure secretes progesterone after ovulation?",
+     "options": [
+      "Corpus luteum",
+      "Pituitary gland",
+      "Fallopian tube",
+      "Cervix"
+     ],
+     "answer": "Corpus luteum",
+     "accept": [],
+     "hint": "It forms from what remains of the follicle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nt55d91thyu7y",
+     "subject": "bio",
+     "type": "num",
+     "q": "In a typical 28-day cycle with menstruation starting on day 1, on approximately which day does ovulation take place?",
+     "options": [],
+     "answer": "14",
+     "accept": [],
+     "hint": "It happens near the middle of the cycle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp273o21o6mooc",
+     "subject": "bio",
+     "type": "num",
+     "q": "A person has a 30-day cycle. The time from ovulation to the start of the next period is 14 days. On which day of the cycle does ovulation take place?",
+     "options": [],
+     "answer": "16",
+     "accept": [],
+     "hint": "Subtract the time after ovulation from the cycle length.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p98f1g1vm1uau",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What causes the uterus lining to break down at the end of a cycle when no fertilisation has occurred?",
+     "options": [
+      "A fall in progesterone concentration",
+      "A rise in FSH concentration",
+      "A rise in progesterone concentration",
+      "A fall in testosterone concentration"
+     ],
+     "answer": "A fall in progesterone concentration",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhtuzeq1oczgx6",
+     "subject": "bio",
+     "type": "short",
+     "q": "What type of pathogen is HIV?",
+     "options": [],
+     "answer": "virus",
+     "accept": [
+      "a virus",
+      "retrovirus"
+     ],
+     "hint": "Think about why antibiotics do not cure it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rk28ewrmzuq8",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which type of cell does HIV mainly attack?",
+     "options": [
+      "Lymphocytes",
+      "Red blood cells",
+      "Nerve cells",
+      "Platelets"
+     ],
+     "answer": "Lymphocytes",
+     "accept": [],
+     "hint": "These white blood cells are part of the immune response.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19hgcwach7zky",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which of these is a way in which HIV can be transmitted?",
+     "options": [
+      "Sharing unsterilised needles",
+      "Shaking hands",
+      "Sharing a drinking glass",
+      "Breathing the same air"
+     ],
+     "answer": "Sharing unsterilised needles",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u04dhzlk6ggn",
+     "subject": "bio",
+     "type": "open",
+     "q": "Explain why a person infected with HIV may become more likely to develop other infections.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Link the cells attacked by the virus to the immune response.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw4frdc12vn9e6",
+     "subject": "bio",
+     "type": "open",
+     "q": "Describe two ways of controlling the spread of HIV and explain how each one works.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about barriers and about blood or needles.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bss": {
+   "topic": "Relevo brasileiro: classificações de Aziz Ab'Sáber e Jurandyr Ross",
+   "questions": [
+    {
+     "id": "r1eeqr83q97yz",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual forma de relevo se caracteriza pelo predomínio da sedimentação sobre a erosão?",
+     "options": [
+      "Planície",
+      "Planalto",
+      "Depressão",
+      "Serra"
+     ],
+     "answer": "Planície",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oeew9917bnoc4",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Numa classificação geomorfológica, o planalto é uma área em que predomina",
+     "options": [
+      "a erosão sobre a sedimentação",
+      "a sedimentação sobre a erosão",
+      "o vulcanismo ativo",
+      "a formação de dobramentos modernos"
+     ],
+     "answer": "a erosão sobre a sedimentação",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rqbddj1k0rp4a",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chama a área rebaixada em relação às formas de relevo ao seu redor, formada por erosão?",
+     "options": [],
+     "answer": "depressão",
+     "accept": [
+      "depressao",
+      "uma depressão",
+      "depressão relativa"
+     ],
+     "hint": "Ela fica mais baixa que os terrenos vizinhos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gzzyt61r0c9",
+     "subject": "bss",
+     "type": "mc",
+     "q": "A classificação clássica do relevo brasileiro, baseada no critério erosão × sedimentação, usava quais grandes categorias?",
+     "options": [
+      "Planaltos e planícies",
+      "Planaltos, planícies e depressões",
+      "Só planaltos",
+      "Montanhas e vales"
+     ],
+     "answer": "Planaltos e planícies",
+     "accept": [],
+     "hint": "Observe qual categoria só seria destacada depois.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhlrhbehayfut",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual categoria a classificação mais recente, de 28 unidades, destacou em relação à clássica?",
+     "options": [
+      "Depressões",
+      "Vulcões",
+      "Dobramentos modernos",
+      "Fiordes"
+     ],
+     "answer": "Depressões",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mt69bb1okjlwf",
+     "subject": "bss",
+     "type": "num",
+     "q": "A classificação mais recente do relevo brasileiro reúne 28 unidades, sendo 11 planaltos e 11 depressões. Quantas são as planícies?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Some as duas categorias conhecidas e compare com o total.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3ixr69112ehtu",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Que fonte de dados, obtida por radar, foi a principal base para a classificação mais recente do relevo?",
+     "options": [
+      "Projeto RADAMBRASIL",
+      "Censo demográfico",
+      "Registros de navegação coloniais",
+      "Mapas climáticos do século XIX"
+     ],
+     "answer": "Projeto RADAMBRASIL",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r292ve2bu2o6o",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destas é uma planície brasileira de alagamento sazonal?",
+     "options": [
+      "Pantanal",
+      "Serra da Mantiqueira",
+      "Chapada Diamantina",
+      "Planalto Central"
+     ],
+     "answer": "Pantanal",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ejzto8gkq7ai",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Na comparação entre as classificações, o que ocorreu com a área de planície na Amazônia?",
+     "options": [
+      "Foi reduzida, com áreas reclassificadas como depressão e planalto",
+      "Foi ampliada até o Sul do país",
+      "Foi eliminada totalmente",
+      "Não sofreu nenhuma alteração"
+     ],
+     "answer": "Foi reduzida, com áreas reclassificadas como depressão e planalto",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ibt11fb8tls5",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que o Brasil não tem cadeias montanhosas muito altas como os Andes?",
+     "options": [
+      "Porque seu território não tem dobramentos modernos",
+      "Porque está sempre sob neve",
+      "Porque só possui planícies",
+      "Porque fica sobre o limite ativo entre placas"
+     ],
+     "answer": "Porque seu território não tem dobramentos modernos",
+     "accept": [],
+     "hint": "Pense na posição do Brasil em relação às bordas das placas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cg30j81cfp6xz",
+     "subject": "bss",
+     "type": "short",
+     "q": "Qual tipo de estrutura geológica antiga, formada por rochas cristalinas, sustenta grande parte dos planaltos brasileiros?",
+     "options": [],
+     "answer": "escudos cristalinos",
+     "accept": [
+      "escudo cristalino",
+      "escudos",
+      "crátons"
+     ],
+     "hint": "São áreas muito antigas e geologicamente estáveis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r198lvx6ny7keb",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O Planalto Meridional é conhecido por qual rocha vulcânica, que deu origem à terra roxa?",
+     "options": [
+      "Basalto",
+      "Calcário",
+      "Arenito de praia",
+      "Mármore"
+     ],
+     "answer": "Basalto",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj00u275gw2e9",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Que critério ajudou a classificação mais recente a distinguir as unidades de relevo?",
+     "options": [
+      "Estrutura geológica, processos erosivos e forma do relevo",
+      "Apenas a altitude",
+      "Apenas o tipo de clima",
+      "Apenas a divisão entre estados"
+     ],
+     "answer": "Estrutura geológica, processos erosivos e forma do relevo",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjma08517wb727",
+     "subject": "bss",
+     "type": "mc",
+     "q": "A depressão brasileira é, em geral, do tipo relativa porque",
+     "options": [
+      "fica acima do nível do mar, mas abaixo das áreas vizinhas",
+      "fica abaixo do nível do mar",
+      "fica sob a água do oceano",
+      "é sempre coberta por gelo"
+     ],
+     "answer": "fica acima do nível do mar, mas abaixo das áreas vizinhas",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rub3k8erazv46",
+     "subject": "bss",
+     "type": "open",
+     "q": "Compare a classificação clássica do relevo brasileiro (erosão × sedimentação) com a mais recente, de 28 unidades, indicando uma diferença de critério e uma diferença de resultado.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense nas categorias e na tecnologia disponível.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ag22jdrcfmez",
+     "subject": "bss",
+     "type": "open",
+     "q": "Analise por que uma classificação de relevo pode mudar ao longo do tempo, mesmo que o relevo quase não mude numa escala humana.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Considere novas técnicas de levantamento de dados.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bus": {
+   "topic": "Income statements",
+   "questions": [
+    {
+     "id": "r1gbutnx4upw5u",
+     "subject": "bus",
+     "type": "mc",
+     "q": "What is revenue?",
+     "options": [
+      "Value of sales made in a period",
+      "Profit after tax",
+      "Money paid to shareholders",
+      "Cost of buying materials"
+     ],
+     "answer": "Value of sales made in a period",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19jjziczp3ybn",
+     "subject": "bus",
+     "type": "short",
+     "q": "Name the financial statement that shows revenue, costs and profit over a period of time.",
+     "options": [],
+     "answer": "income statement",
+     "accept": [
+      "profit and loss account",
+      "the income statement"
+     ],
+     "hint": "It covers a trading period, not a single moment.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xzmvkr65tw1r",
+     "subject": "bus",
+     "type": "num",
+     "q": "A shop sells 500 shirts at $12 each. Calculate its revenue, in dollars.",
+     "options": [],
+     "answer": "6000",
+     "accept": [],
+     "hint": "Multiply price by quantity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh3qu401mmvskz",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Cost of sales is",
+     "options": [
+      "the cost of producing or buying the goods sold",
+      "the wages of all managers",
+      "the money paid in tax",
+      "the money spent on advertising only"
+     ],
+     "answer": "the cost of producing or buying the goods sold",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4u8u8g1cu0jys",
+     "subject": "bus",
+     "type": "num",
+     "q": "A business has revenue of $80,000 and cost of sales of $50,000. Calculate its gross profit, in dollars.",
+     "options": [],
+     "answer": "30000",
+     "accept": [],
+     "hint": "Take the direct cost of the goods away from sales.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp8ah7f1ym5pn9",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which formula calculates gross profit?",
+     "options": [
+      "Revenue − cost of sales",
+      "Revenue + cost of sales",
+      "Profit − expenses",
+      "Revenue − tax"
+     ],
+     "answer": "Revenue − cost of sales",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fwgkfg5cjl6w",
+     "subject": "bus",
+     "type": "num",
+     "q": "Gross profit is $30,000 and expenses are $18,000. Calculate the profit, in dollars.",
+     "options": [],
+     "answer": "12000",
+     "accept": [],
+     "hint": "Remove the expenses from gross profit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dv083iy4z0g5",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which of these is an expense, not a cost of sales, for a clothing shop?",
+     "options": [
+      "Rent on the shop",
+      "Clothes bought to resell",
+      "Fabric for clothes sold",
+      "Delivery cost of stock bought for resale"
+     ],
+     "answer": "Rent on the shop",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u969re1gj14jv",
+     "subject": "bus",
+     "type": "short",
+     "q": "What is the name for profit kept in the business after tax and dividends have been paid?",
+     "options": [],
+     "answer": "retained profit",
+     "accept": [
+      "retained earnings"
+     ],
+     "hint": "It stays inside the business to be used later.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15tinz830t22h",
+     "subject": "bus",
+     "type": "num",
+     "q": "Profit after tax is $20,000 and dividends paid are $8,000. Calculate the retained profit, in dollars.",
+     "options": [],
+     "answer": "12000",
+     "accept": [],
+     "hint": "Shareholders get their share first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru5cyqdrqqzjs",
+     "subject": "bus",
+     "type": "mc",
+     "q": "A business's revenue stays the same, but its cost of sales rises. What happens to gross profit?",
+     "options": [
+      "It falls",
+      "It rises",
+      "It stays the same",
+      "It becomes equal to revenue"
+     ],
+     "answer": "It falls",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpr3e141hkte2i",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Gross profit rose this year but profit fell. Which is the most likely reason?",
+     "options": [
+      "Expenses increased by more than the increase in gross profit",
+      "Revenue increased",
+      "Cost of sales decreased",
+      "Dividends were cut"
+     ],
+     "answer": "Expenses increased by more than the increase in gross profit",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9rwltudsjl71",
+     "subject": "bus",
+     "type": "num",
+     "q": "A cafe has revenue of $100,000 and cost of sales of $40,000. Calculate its gross profit as a percentage of revenue.",
+     "options": [],
+     "answer": "60",
+     "accept": [],
+     "hint": "Find the gross profit first, then divide by revenue and multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xrdv2vc6o3u0",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Who is most likely to use an income statement to decide whether to invest in a business?",
+     "options": [
+      "Potential shareholders",
+      "Customers of a rival",
+      "Local schoolchildren",
+      "Delivery drivers of a supplier"
+     ],
+     "answer": "Potential shareholders",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11m6osb139ctov",
+     "subject": "bus",
+     "type": "open",
+     "q": "Explain one reason why a business might choose to keep retained profit rather than pay it all out as dividends.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider sources of finance for growth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16wj55q1hwx3vm",
+     "subject": "bus",
+     "type": "open",
+     "q": "A small company's income statement shows rising revenue but falling profit. Analyse two possible causes and recommend one action the owner should take.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Look at each line of the statement.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "chem": {
+   "topic": "Alkanes: combustion and substitution with chlorine",
+   "questions": [
+    {
+     "id": "r13qkk0c1m0jg5u",
+     "subject": "chem",
+     "type": "short",
+     "q": "State the general formula of the alkanes.",
+     "options": [],
+     "answer": "CnH2n+2",
+     "accept": [
+      "C_nH_2n+2",
+      "CnH(2n+2)",
+      "CₙH₂ₙ₊₂"
+     ],
+     "hint": "Count hydrogens per carbon in methane and ethane.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq0xta9147bvj9",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What does \"saturated\" mean when describing an alkane?",
+     "options": [
+      "It contains only single bonds between carbon atoms",
+      "It contains a carbon-carbon double bond",
+      "It has dissolved completely in water",
+      "It contains oxygen atoms"
+     ],
+     "answer": "It contains only single bonds between carbon atoms",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnszuznnialyt",
+     "subject": "chem",
+     "type": "short",
+     "q": "Name the alkane with the formula CH₄.",
+     "options": [],
+     "answer": "methane",
+     "accept": [],
+     "hint": "It is the main gas in natural gas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhmduvo1caxsgv",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Alkanes are hydrocarbons. This means they contain",
+     "options": [
+      "hydrogen and carbon only",
+      "hydrogen, carbon and oxygen",
+      "carbon and oxygen only",
+      "hydrogen and water"
+     ],
+     "answer": "hydrogen and carbon only",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvq8wiy1ufc6uy",
+     "subject": "chem",
+     "type": "num",
+     "q": "How many hydrogen atoms are there in a molecule of butane, which has 4 carbon atoms?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Use the general formula of the homologous series.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rde4gqizgdcjx",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What are the products of the complete combustion of an alkane?",
+     "options": [
+      "Carbon dioxide and water",
+      "Carbon monoxide and water",
+      "Carbon and hydrogen",
+      "Hydrogen and oxygen"
+     ],
+     "answer": "Carbon dioxide and water",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwq2fxs98zymw",
+     "subject": "chem",
+     "type": "short",
+     "q": "Name the toxic gas produced by the incomplete combustion of an alkane.",
+     "options": [],
+     "answer": "carbon monoxide",
+     "accept": [
+      "CO"
+     ],
+     "hint": "It contains fewer oxygen atoms than the product of complete combustion.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s9x3jlb61y6p",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Why is carbon monoxide dangerous?",
+     "options": [
+      "It binds to haemoglobin, reducing oxygen transport in the blood",
+      "It is a strongly coloured gas that blocks vision",
+      "It is highly acidic and burns skin",
+      "It causes water to freeze in the lungs"
+     ],
+     "answer": "It binds to haemoglobin, reducing oxygen transport in the blood",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reaues31k3hnc",
+     "subject": "chem",
+     "type": "num",
+     "q": "Balance the equation: CH₄ + xO₂ → CO₂ + 2H₂O. State the value of x.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Count the oxygen atoms on the right-hand side.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq3raum432ov1",
+     "subject": "chem",
+     "type": "num",
+     "q": "How many moles of O₂ are needed for the complete combustion of 1 mole of propane, C₃H₈?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Find the moles of CO₂ and H₂O formed, then count the oxygen atoms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rajj9anp0sk2h",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What condition is needed for the reaction between methane and chlorine?",
+     "options": [
+      "Ultraviolet light",
+      "A nickel catalyst",
+      "High pressure only",
+      "Dissolving in water"
+     ],
+     "answer": "Ultraviolet light",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3aaj2i13h3vl0",
+     "subject": "chem",
+     "type": "short",
+     "q": "Name the type of reaction between an alkane and chlorine.",
+     "options": [],
+     "answer": "substitution",
+     "accept": [
+      "photochemical substitution",
+      "free radical substitution"
+     ],
+     "hint": "One atom takes the place of another.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8j77uxxt39gp",
+     "subject": "chem",
+     "type": "short",
+     "q": "Name the organic product when one hydrogen atom in methane is replaced by chlorine.",
+     "options": [],
+     "answer": "chloromethane",
+     "accept": [
+      "CH3Cl",
+      "monochloromethane"
+     ],
+     "hint": "Use the name of the original alkane with a prefix.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcxjm6opd1s3a",
+     "subject": "chem",
+     "type": "num",
+     "q": "Calculate the relative molecular mass of CH₃Cl. (Ar: C = 12, H = 1, Cl = 35.5)",
+     "options": [],
+     "answer": "50.5",
+     "accept": [],
+     "hint": "Add one carbon, three hydrogens and one chlorine.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p396u01jveb0",
+     "subject": "chem",
+     "type": "open",
+     "q": "Write a balanced equation for the reaction of methane with chlorine and explain the role of ultraviolet light.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the two products and the energy needed to start the reaction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bx9spe1kv79eb",
+     "subject": "chem",
+     "type": "open",
+     "q": "Alkanes are described as generally unreactive. Explain this and give one reaction which shows that they do still react.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Look at the strength and type of their bonds.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
