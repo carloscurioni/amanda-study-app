@@ -981,6 +981,976 @@
      "errors": []
     }
    ]
+  },
+  "comp": {
+   "topic": "Identifying and correcting errors in algorithms",
+   "questions": [
+    {
+     "id": "r1vba3c41ssay31",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is a syntax error?",
+     "options": [
+      "An error that breaks the grammar rules of the programming language",
+      "An error that makes the program give the wrong answer",
+      "An error caused by faulty hardware",
+      "An error in the user's input"
+     ],
+     "answer": "An error that breaks the grammar rules of the programming language",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11xxpara0lsjl",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A program runs without crashing but gives incorrect results. What type of error is this?",
+     "options": [
+      "Logic error",
+      "Syntax error",
+      "Hardware error",
+      "Keyword error"
+     ],
+     "answer": "Logic error",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rditt0w774b3e",
+     "subject": "comp",
+     "type": "short",
+     "q": "Name the type of error in this line of code: PRNT \"Hello\"",
+     "options": [],
+     "answer": "syntax error",
+     "accept": [
+      "syntax"
+     ],
+     "hint": "Look at the spelling of the keyword.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn1hzke8igef9",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the term for the process of finding and correcting errors in a program.",
+     "options": [],
+     "answer": "debugging",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5pkvgz1qazu6d",
+     "subject": "comp",
+     "type": "short",
+     "q": "What is the name of the table used to record the values of variables step by step while testing an algorithm?",
+     "options": [],
+     "answer": "trace table",
+     "accept": [
+      "a trace table"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r176i6mbagjlnf",
+     "subject": "comp",
+     "type": "num",
+     "q": "Trace this algorithm and give the output.\nTotal ← 0\nFOR i ← 1 TO 4\n  Total ← Total + i\nNEXT i\nOUTPUT Total",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Add the value of i on each pass.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jp5gkjm5xktg",
+     "subject": "comp",
+     "type": "mc",
+     "q": "This algorithm should output the numbers 1 to 10.\nCount ← 1\nWHILE Count < 10 DO\n  OUTPUT Count\n  Count ← Count + 1\nENDWHILE\nWhich amendment corrects it?",
+     "options": [
+      "Change < to <=",
+      "Change Count ← 1 to Count ← 0",
+      "Change Count + 1 to Count + 2",
+      "Swap the OUTPUT and increment lines"
+     ],
+     "answer": "Change < to <=",
+     "accept": [],
+     "hint": "Which number is missing from the output?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o48wymx8eg48",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is the purpose of this algorithm?\nMax ← Numbers[1]\nFOR i ← 2 TO 10\n  IF Numbers[i] > Max THEN\n    Max ← Numbers[i]\n  ENDIF\nNEXT i\nOUTPUT Max",
+     "options": [
+      "To find the largest value in the array",
+      "To find the total of the array",
+      "To sort the array",
+      "To count the values in the array"
+     ],
+     "answer": "To find the largest value in the array",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c26o18d95qyh",
+     "subject": "comp",
+     "type": "mc",
+     "q": "This algorithm should find the smallest value in an array.\nMin ← Numbers[1]\nFOR i ← 2 TO 10\n  IF Numbers[i] > Min THEN\n    Min ← Numbers[i]\n  ENDIF\nNEXT i\nWhat is the error?",
+     "options": [
+      "The > should be <",
+      "The loop should start at 3",
+      "Min should start at 0",
+      "ENDIF is in the wrong place"
+     ],
+     "answer": "The > should be <",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ldue8g1731zqc",
+     "subject": "comp",
+     "type": "num",
+     "q": "This algorithm is meant to find the mean of five inputs, but contains an error.\nSum ← 0\nFOR i ← 1 TO 5\n  INPUT Num\n  Sum ← Sum + Num\nNEXT i\nAverage ← Sum / 4\nThe inputs are 2, 4, 6, 8 and 10. What value does Average take when the algorithm runs as written?",
+     "options": [],
+     "answer": "7.5",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "retomdil2m9v2",
+     "subject": "comp",
+     "type": "num",
+     "q": "An algorithm finds the mean of five numbers, but one line reads: Average ← Sum / 4. What number should replace the 4?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w8fjmqafclpy",
+     "subject": "comp",
+     "type": "mc",
+     "q": "This algorithm should total five inputs.\nFOR i ← 1 TO 5\n  Total ← 0\n  INPUT N\n  Total ← Total + N\nNEXT i\nOUTPUT Total\nWhat is the error?",
+     "options": [
+      "Total is reset to 0 on every pass of the loop",
+      "The loop runs too many times",
+      "INPUT must come after the OUTPUT",
+      "N should be set to 0"
+     ],
+     "answer": "Total is reset to 0 on every pass of the loop",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hoh8q81jvfobp",
+     "subject": "comp",
+     "type": "num",
+     "q": "This algorithm contains a logic error.\nFOR i ← 1 TO 5\n  Total ← 0\n  INPUT N\n  Total ← Total + N\nNEXT i\nOUTPUT Total\nThe inputs are 3, 1, 4, 1 and 5. What value is output?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Trace what Total holds on the final pass.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b12wytk49lnf",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A check for invalid ages reads: IF Age < 1 AND Age > 100 THEN OUTPUT \"Invalid\". What is wrong with it?",
+     "options": [
+      "AND should be OR, because no age can meet both conditions",
+      "The < and > symbols must be swapped",
+      "THEN should be ELSE",
+      "\"Invalid\" must not be in quotation marks"
+     ],
+     "answer": "AND should be OR, because no age can meet both conditions",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4ovu4scfstki",
+     "subject": "comp",
+     "type": "open",
+     "q": "Read this algorithm.\nCount ← 0\nFOR i ← 1 TO 20\n  INPUT Mark\n  IF Mark >= 50 THEN\n    Count ← Count + 1\n  ENDIF\nNEXT i\nOUTPUT Mark\nExplain the purpose of the algorithm and identify the error in the last line.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf3ff9qobieuk",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain why a logic error is often harder to find than a syntax error.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "econ": {
+   "topic": "Evaluating the effectiveness of government policies",
+   "questions": [
+    {
+     "id": "rn6y8o6ovzunb",
+     "subject": "econ",
+     "type": "mc",
+     "q": "In economic policy, what is a time lag?",
+     "options": [
+      "The delay between a policy being introduced and its full effect",
+      "The time taken to print money",
+      "The length of a government's term",
+      "The time between two elections"
+     ],
+     "answer": "The delay between a policy being introduced and its full effect",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fb25aqiaq08s",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of these is an example of fiscal policy?",
+     "options": [
+      "Raising income tax",
+      "Cutting the interest rate",
+      "Increasing the money supply",
+      "Devaluing the currency by central bank action"
+     ],
+     "answer": "Raising income tax",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ky7wrdxotc80",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of these is an example of monetary policy?",
+     "options": [
+      "The central bank cutting the interest rate",
+      "The government building a new road",
+      "The government raising VAT",
+      "Introducing free job training"
+     ],
+     "answer": "The central bank cutting the interest rate",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpn3tdp1aeg9as",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of these is a supply-side policy?",
+     "options": [
+      "Spending on education and training",
+      "Raising the interest rate",
+      "Increasing unemployment benefit to raise demand",
+      "Printing more banknotes"
+     ],
+     "answer": "Spending on education and training",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r191s6d51i1vdep",
+     "subject": "econ",
+     "type": "short",
+     "q": "An unintended consequence of a government policy is often called a ___ effect. Give the missing word.",
+     "options": [],
+     "answer": "side",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp67bdu16nnb4o",
+     "subject": "econ",
+     "type": "num",
+     "q": "A government spends $500 billion and collects $460 billion in tax revenue. Calculate its budget deficit in $ billion.",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15qkfyf178y6o0",
+     "subject": "econ",
+     "type": "num",
+     "q": "A central bank cuts its interest rate from 5.25% to 4.75%. By how many percentage points has the rate fallen?",
+     "options": [],
+     "answer": "0.5",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq5hgf2d7muuy",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which is a likely side effect of a large cut in interest rates?",
+     "options": [
+      "Higher inflation if demand rises too quickly",
+      "Lower consumer borrowing",
+      "A stronger currency",
+      "Higher mortgage payments"
+     ],
+     "answer": "Higher inflation if demand rises too quickly",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpyi7s51xrsu2c",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Why do supply-side policies often take a long time to work?",
+     "options": [
+      "Improving skills and infrastructure can take years",
+      "They are decided only once a year",
+      "They require a new currency",
+      "They reduce demand immediately"
+     ],
+     "answer": "Improving skills and infrastructure can take years",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hzlhsjq8hi07",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A government raises income tax to reduce inflation. Which side effect is most likely?",
+     "options": [
+      "A fall in the incentive to work",
+      "A rise in consumer spending",
+      "A fall in government revenue from all sources",
+      "A sharp rise in exports"
+     ],
+     "answer": "A fall in the incentive to work",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rwdecya6hs1t",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Why might higher interest rates harm exporters?",
+     "options": [
+      "They can raise the exchange rate, making exports more expensive abroad",
+      "They reduce the price of exports abroad",
+      "They increase foreign demand for exports",
+      "They make imports more expensive"
+     ],
+     "answer": "They can raise the exchange rate, making exports more expensive abroad",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12x0vfs1fpm48w",
+     "subject": "econ",
+     "type": "short",
+     "q": "A government raises spending to reduce unemployment, but prices start to rise quickly. Unemployment falls, but which other macroeconomic aim is put at risk?",
+     "options": [],
+     "answer": "low inflation",
+     "accept": [
+      "inflation",
+      "price stability",
+      "stable prices",
+      "controlling inflation"
+     ],
+     "hint": "Think about the general price level.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qvwuf493dufn",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Why might a cut in interest rates fail to boost spending in a recession?",
+     "options": [
+      "Consumers and firms lack the confidence to borrow",
+      "Banks are forced to close",
+      "Saving becomes more attractive",
+      "Exports stop completely"
+     ],
+     "answer": "Consumers and firms lack the confidence to borrow",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r141gu5s12pndte",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain how time lags can make it difficult for a government to use fiscal policy effectively.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8pbu4ixs9vi9",
+     "subject": "econ",
+     "type": "open",
+     "q": "Analyse why a reduction in corporation tax might not lead to an increase in investment.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r00stb1ocg27s",
+     "subject": "econ",
+     "type": "open",
+     "q": "Discuss whether supply-side policies are more effective than fiscal policy in reducing unemployment.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Register and tone: matching purpose and audience",
+   "questions": [
+    {
+     "id": "rhpe1hu12c4tv7",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does \"register\" mean in English?",
+     "options": [
+      "The level of formality of language",
+      "The volume of a speaker's voice",
+      "A list of the audience",
+      "The topic of a text"
+     ],
+     "answer": "The level of formality of language",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n4ojpgwjflvs",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does \"tone\" refer to in a piece of writing?",
+     "options": [
+      "The writer's attitude conveyed through word choice",
+      "The number of paragraphs",
+      "The accuracy of the spelling",
+      "The length of the sentences only"
+     ],
+     "answer": "The writer's attitude conveyed through word choice",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ty8reu1unb9bo",
+     "subject": "en",
+     "type": "short",
+     "q": "What word describes the reason a text is written, such as to persuade or to inform?",
+     "options": [],
+     "answer": "purpose",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ady18k1uj6lif",
+     "subject": "en",
+     "type": "short",
+     "q": "What word describes the people a text is written for?",
+     "options": [],
+     "answer": "audience",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ma6yosuvbbca",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is the most suitable opening for a formal letter to a local councillor?",
+     "options": [
+      "Dear Councillor,",
+      "Hey there!",
+      "Hi mate,",
+      "What's up?"
+     ],
+     "answer": "Dear Councillor,",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rib9bgq1wmr9xj",
+     "subject": "en",
+     "type": "short",
+     "q": "Identify the one informal word in this sentence: \"The council must address this matter, as the current bins are rubbish.\"",
+     "options": [],
+     "answer": "rubbish",
+     "accept": [],
+     "hint": "Look for the word that does not suit a formal letter.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pp67zuno68mt",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is the best formal replacement for \"kids\" in a report?",
+     "options": [
+      "young people",
+      "youngsters and that",
+      "little ones",
+      "the lot of them"
+     ],
+     "answer": "young people",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7amr5s12vwo81",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is the best formal replacement for \"a lot of\" in an essay?",
+     "options": [
+      "a significant number of",
+      "loads of",
+      "tons of",
+      "heaps of"
+     ],
+     "answer": "a significant number of",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq6ahml1dem6vu",
+     "subject": "en",
+     "type": "short",
+     "q": "Write the formal, uncontracted form of \"don't\".",
+     "options": [],
+     "answer": "do not",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8b50h8jdujqq",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence contains a register slip?",
+     "options": [
+      "We request that the committee reconsider this decision because it's a total joke.",
+      "We request that the committee reconsider this decision.",
+      "The committee's decision has caused considerable concern.",
+      "Many residents have expressed their disappointment."
+     ],
+     "answer": "We request that the committee reconsider this decision because it's a total joke.",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcw814l1yhn03h",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the tone of this sentence? \"I was deeply disappointed that nobody had bothered to reply to my letter.\"",
+     "options": [
+      "Reproachful",
+      "Playful",
+      "Cheerful",
+      "Indifferent"
+     ],
+     "answer": "Reproachful",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9zpx89joovl8",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which opening best suits a magazine article for teenagers about sleep?",
+     "options": [
+      "Ever wondered why your alarm feels like a personal attack?",
+      "This report examines adolescent sleep patterns.",
+      "Dear Sir or Madam, I write regarding sleep.",
+      "Sleep is defined as a state of rest."
+     ],
+     "answer": "Ever wondered why your alarm feels like a personal attack?",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx6i6jb1hsdykg",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which choice would be most appropriate for a speech to your year group about recycling?",
+     "options": [
+      "Using \"we\" and direct questions to involve listeners",
+      "Using technical terms without explanation",
+      "Using a list of statistics with no comment",
+      "Using slang insults to grab attention"
+     ],
+     "answer": "Using \"we\" and direct questions to involve listeners",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19pq5x2hbsu2o",
+     "subject": "en",
+     "type": "open",
+     "q": "Rewrite this sentence in a formal register for a letter to the council: \"Hey guys, you really need to sort out the bins cos they stink!\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro544t2ozx6q9",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain how you would change your tone when writing about the same school trip for your head teacher and then for a close friend.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hxv14g19u63nt",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain why a writer might deliberately use some informal language in a speech to teenagers, even though the occasion is serious.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_lit": {
+   "topic": "Comparing drama texts: An Inspector Calls and The Tempest",
+   "questions": [
+    {
+     "id": "r1p56vdd1cpec82",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In which year is An Inspector Calls set?",
+     "options": [
+      "1912",
+      "1945",
+      "1900",
+      "1939"
+     ],
+     "answer": "1912",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlrlx9rplbljm",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "In The Tempest, who is the exiled Duke of Milan?",
+     "options": [],
+     "answer": "Prospero",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcti9hx4qwvah",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "In An Inspector Calls, whose death does the Inspector investigate?",
+     "options": [],
+     "answer": "Eva Smith",
+     "accept": [
+      "Eva",
+      "Daisy Renton"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13s5mkj1pj9fbz",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "In The Tempest, what is the name of Prospero's daughter?",
+     "options": [],
+     "answer": "Miranda",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r114g74i1i9c20q",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "In The Tempest, which spirit carries out Prospero's commands?",
+     "options": [],
+     "answer": "Ariel",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcjksx4zc4jx2",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is one similarity between the Inspector and Prospero?",
+     "options": [
+      "Each controls events and makes others face their wrongs",
+      "Each is a member of the family they confront",
+      "Each is a king",
+      "Each is defeated at the end"
+     ],
+     "answer": "Each controls events and makes others face their wrongs",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbyoxg6121pdkd",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is Mr Birling's attitude to social responsibility at the start of An Inspector Calls?",
+     "options": [
+      "A man should look after himself and his own family",
+      "Everyone should care for one another",
+      "The rich should give away their wealth",
+      "Workers should run the factories"
+     ],
+     "answer": "A man should look after himself and his own family",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqvd0x31q5iw9n",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Why is it dramatic irony when Mr Birling calls the Titanic unsinkable?",
+     "options": [
+      "The audience knows that it sank",
+      "He has never seen the ship",
+      "The Inspector has already told him",
+      "He is secretly joking"
+     ],
+     "answer": "The audience knows that it sank",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj432021x21j9j",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "How does the storm at the opening of The Tempest establish power?",
+     "options": [
+      "It is later revealed to be created by Prospero's magic",
+      "It shows that Caliban rules the island",
+      "It shows that the sailors control nature",
+      "It proves that Alonso is the strongest ruler"
+     ],
+     "answer": "It is later revealed to be created by Prospero's magic",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfeae17yrmh8r",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In The Tempest, which character is enslaved by Prospero and resents it?",
+     "options": [
+      "Caliban",
+      "Ferdinand",
+      "Gonzalo",
+      "Antonio"
+     ],
+     "answer": "Caliban",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4v5uu0d7b2o1",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is the dramatic effect of the final telephone call in An Inspector Calls?",
+     "options": [
+      "It creates a shock and suggests that the family must face the truth again",
+      "It brings a comic ending",
+      "It explains that nothing has happened",
+      "It introduces a love story"
+     ],
+     "answer": "It creates a shock and suggests that the family must face the truth again",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15fslaf11ps0cp",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "How do the endings of the two plays differ most clearly?",
+     "options": [
+      "Prospero forgives and gives up his power, while the Birlings face an unresolved threat",
+      "Both end with a wedding",
+      "Both end with the death of the main character",
+      "The Inspector forgives, while Prospero takes revenge"
+     ],
+     "answer": "Prospero forgives and gives up his power, while the Birlings face an unresolved threat",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg6l9z4q2wwej",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which word or phrase best signals a comparison in an essay on both plays?",
+     "options": [
+      "Similarly,",
+      "Firstly,",
+      "For example,",
+      "At the end of Act 1,"
+     ],
+     "answer": "Similarly,",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r158kjmkjxfgmi",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Compare how power is shown through the Inspector and through Prospero. Refer to both plays.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17k47unnwvlwr",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Compare how the younger generation is used to suggest hope for change in An Inspector Calls and The Tempest.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmdcrhy18gu08j",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Compare how the two playwrights explore responsibility for the suffering of others, using dramatic methods in your answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []

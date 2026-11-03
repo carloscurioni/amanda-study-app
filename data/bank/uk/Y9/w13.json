@@ -3929,6 +3929,877 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Blue Notebook",
+   "premise": "An invented story based on real history. Imani and Callum volunteer at a town archive and help to prepare the wartime diary of Hanneke, a fictional Jewish girl hiding in the Netherlands. Episode by episode, they learn to read a diary as testimony: its voice, its silences, what its writer could not know, and why it matters.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Blue Notebook",
+     "synopsis": "Imani and Callum start volunteering at a town archive and read the first entry of a wartime diary, learning what makes a diary a primary source.",
+     "text": "The notebook was smaller than Imani had expected. It lay on a grey foam cradle in the town archive, its blue cover faded to the colour of old jeans. \"You may look, but not touch,\" said Ms Okafor, the archivist. \"It is older than anyone in this building.\"\nImani and Callum, both in Year 9, had volunteered to help with a new exhibition. Their class had been reading a famous diary by a Jewish girl in hiding during the Second World War, and their teacher had told them that many other diaries existed, most of them almost unknown. This was one of those: the diary of Hanneke Polak, given to the archive last spring by her granddaughter, who lived in the town.\nMs Okafor handed them a typed English translation. \"Hanneke was thirteen and lived in Zwolle, in the Netherlands. Start with the first entry.\"\nCallum read it aloud.\n\"3 October 1942. Father gave me this notebook because I am not allowed to go to my old school any more, and he says a person should always have somewhere to put her thoughts. I have made a list of things I may not do. No cinema. No swimming baths. No tram. My bicycle had to be handed in. I must wear the yellow star on my coat, sewn on properly, and Mother checks the stitches as if a loose thread could get us arrested. Perhaps it could. Nobody explains anything to me, so I am going to write everything down and work it out myself.\"\n\"She sounds annoyed,\" said Callum, surprised.\n\"She does,\" said Ms Okafor. \"What does that tell you?\"\nImani thought about it. \"That she didn't know she was writing history. She's just writing about her week.\"\n\"Exactly. This is a primary source: written at the time, by someone living through the events. When a person gives an account of what they lived through, we call it testimony. A textbook can tell you that from 1942 Jewish people in the Netherlands were forced to wear a yellow star. Hanneke tells you about her mother checking the stitches.\"\nCallum looked at the list again. \"Each rule sounds small on its own. No swimming. No tram. But put together...\"\n\"Put together, they push a family out of ordinary life, one step at a time,\" said Ms Okafor. \"That is one thing testimony shows us. The persecution did not arrive all at once. It arrived as notices on walls.\"\nShe gave them each a pencil, because pens were not allowed near the documents. \"Your first job is simple. For every entry, note two things in two columns: what happened, and how Hanneke feels about it. Keep them apart. Later you will see why that matters.\"\nImani wrote \"Bicycle handed in\" in the first column. In the second she hesitated, then wrote: \"Angry. Trying to understand. Trusts her notebook more than the adults.\"\nOutside, someone cycled past the archive window, ringing a bell. Imani watched until the bicycle was out of sight. Then she turned the page.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where is the notebook kept?",
+       "options": [
+        "In a town archive",
+        "In a school library",
+        "In a museum in Zwolle",
+        "In Callum's house"
+       ],
+       "answer": "In a town archive",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who gave the diary to the archive?",
+       "options": [
+        "Hanneke's granddaughter",
+        "Ms Okafor",
+        "Imani's teacher",
+        "Hanneke's father"
+       ],
+       "answer": "Hanneke's granddaughter",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who gave Hanneke the notebook?",
+       "options": [],
+       "answer": "her father",
+       "accept": [
+        "father",
+        "Hanneke's father"
+       ],
+       "hint": "Read the opening of her first entry.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which of these is NOT on Hanneke's list of things she may not do?",
+       "options": [
+        "Read books",
+        "Go to the cinema",
+        "Use the tram",
+        "Go to the swimming baths"
+       ],
+       "answer": "Read books",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what term does Ms Okafor use for a source written at the time by someone living through the events?",
+       "options": [],
+       "answer": "primary source",
+       "accept": [
+        "a primary source"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the students have to record in their two columns?",
+       "options": [
+        "What happened and how Hanneke feels",
+        "Dates and places",
+        "Names and addresses",
+        "True and false statements"
+       ],
+       "answer": "What happened and how Hanneke feels",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Okafor's comment about \"notices on walls\" suggest?",
+       "options": [
+        "Persecution grew step by step through official rules",
+        "Hanneke liked reading posters",
+        "People ignored the rules",
+        "The war began suddenly in one day"
+       ],
+       "answer": "Persecution grew step by step through official rules",
+       "accept": [],
+       "hint": "Think about how the rules arrived.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the detail of Hanneke's mother checking the stitches stays in the reader's mind more than a textbook sentence might?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Room Behind the Hay",
+     "synopsis": "Hanneke goes into hiding on a farm, and the students are surprised to find that her diary is often funny.",
+     "text": "On their second Saturday, Imani and Callum reached the page where the handwriting changed. It was smaller now, squeezed tight, as if paper had become precious.\n\"17 November 1942. I am writing from behind a wall of hay. A woman I must call Aunt Riet, who is not my aunt, brought me here by train and on foot. No family can take all three of us, so Father and Mother have gone to another address that I am not allowed to know. If I do not know it, I cannot tell it. I understand the reason. I hate the reason.\"\nMs Okafor explained that thousands of Jewish people in the Netherlands went into hiding, depending on ordinary people who risked prison, or worse, to shelter them. Hanneke's helpers were a farming family called Bakker, in the province of Drenthe. By day she stayed in a narrow space that Mr Bakker had built behind the stacked hay in the barn. At night, if it seemed safe, she came into the kitchen.\nCallum turned the page and snorted. Then he looked guilty.\n\"Go on,\" said Ms Okafor. \"Read it.\"\n\"9 January 1943. Today I am fourteen. My presents: one boiled egg, and a pair of socks that the farmer's wife knitted from a wool that smells of sheep, which is at least honest. There is a cow on the other side of my wall called Duchess. She breathes all night like an old man in a tram. I have told her all my secrets. She has not reported me. This makes her the most reliable person in the Netherlands.\"\nImani laughed too, then stopped. \"Is it all right to find this funny?\"\n\"What do you think Hanneke would say?\" asked Ms Okafor.\n\"She wrote it to be funny,\" said Callum slowly. \"She's showing off a bit. To the notebook. Maybe to herself.\"\n\"Now you are listening to her voice,\" said Ms Okafor. \"Voice is the personality you hear in writing: the jokes, the sulks, the way she exaggerates. People sometimes imagine that everyone in terrible times spoke in solemn, noble sentences. Testimony shows they did not. A fourteen-year-old stayed a fourteen-year-old.\"\nImani looked at her two columns. Under \"what happened\" she had written: \"Birthday in hiding. One egg.\" Under \"how she feels\", she had started to write \"Happy\", then crossed it out.\n\"The joke is on top,\" she said, thinking aloud. \"But she's fourteen, she's living behind hay, and her only friend is a cow. She never says she's lonely. She doesn't need to.\"\n\"That is inference,\" said Ms Okafor. \"You read what the words are doing, not just what they say. Humour can be a way of staying brave, and of staying yourself. Keep that in mind, because you must also ask the opposite question: what is she choosing not to tell us?\"\nCallum read the entry once more. He was no longer smiling, though he did not think the joke had stopped being good.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the family who hide Hanneke?",
+       "options": [],
+       "answer": "Bakker",
+       "accept": [
+        "the Bakkers",
+        "Bakkers",
+        "the Bakker family"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is Hanneke not allowed to know her parents' address?",
+       "options": [
+        "So that she cannot reveal it",
+        "Because they have moved abroad",
+        "Because the Bakkers forgot it",
+        "Because her parents are angry with her"
+       ],
+       "answer": "So that she cannot reveal it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Hanneke stay during the day?",
+       "options": [
+        "In a space behind the hay in the barn",
+        "In the kitchen",
+        "In a cellar in Zwolle",
+        "In the Bakkers' attic"
+       ],
+       "answer": "In a space behind the hay in the barn",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how old does Hanneke turn in the entry of January 1943?",
+       "options": [],
+       "answer": "14",
+       "accept": [
+        "fourteen"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what kind of animal is Duchess?",
+       "options": [],
+       "answer": "cow",
+       "accept": [
+        "a cow"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Ms Okafor define voice?",
+       "options": [
+        "The personality you hear in writing",
+        "The volume of a person's speech",
+        "The dates in a diary",
+        "The language a text is translated into"
+       ],
+       "answer": "The personality you hear in writing",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Imani infer from the birthday entry?",
+       "options": [
+        "That Hanneke is lonely, even though she does not say so",
+        "That Hanneke is completely happy",
+        "That Hanneke dislikes the Bakkers",
+        "That the entry was written by someone else"
+       ],
+       "answer": "That Hanneke is lonely, even though she does not say so",
+       "accept": [],
+       "hint": "Look at what is under the joke.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think a person living through something frightening might choose to write jokes about it?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Torn Pages",
+     "synopsis": "A gap in the diary and some missing pages teach the students to read silences and to separate what they know from what they guess.",
+     "text": "Imani noticed it first. \"This entry is 2 February 1943,\" she said. \"The next one is 25 February. Twenty-three days with nothing. And look at the original.\"\nMs Okafor lifted the notebook with care and opened it on its cradle. Between the two entries, thin strips of paper stuck up from the binding, like the stubs of a ticket book. Several pages had been torn out.\n\"What happened?\" asked Callum.\n\"What do you know, and what are you guessing?\" said Ms Okafor. \"Say them separately.\"\nCallum frowned. \"We know there's a gap, and we know pages are missing. I'm guessing something bad happened.\"\n\"I'm guessing she tore them out herself,\" said Imani. \"The tears are neat, and she'd never let anyone else touch it.\"\n\"Both reasonable. Both still guesses. Now read on.\"\n\"25 February 1943. I have burned what I wrote. Mrs B. made me, and she was right. Men came to the farm looking for boys who have refused to go to work in Germany. They pushed long rods into the hay. I lay flat against the back wall and one rod came through as near as my elbow. Duchess complained very loudly, and I think they did not like the smell. After they had gone, Mrs B. sat down on the barn floor, which I have never seen her do. She said: paper can kill. So I will write no more names of people or places. From now on the family is B. and my helper is R. If this book is found, it must not be able to tell anyone anything.\"\nNobody spoke for a moment.\n\"So the silence is part of the story,\" said Imani.\n\"Yes,\" said Ms Okafor. \"A gap in a source is also evidence, if you handle it carefully. For twenty-three days, she was too frightened or too watched to write. And notice what comes next. Turn the pages.\"\nCallum flicked through the translation. \"It's all initials now. B. and R. and 'the town'. And she doesn't mention where the barn is any more.\"\n\"So her fear changed the way she wrote,\" Imani said. \"We're reading a diary she was censoring herself. Which means there are things she knew and wouldn't put down.\"\n\"That is one of the hardest and most important points about testimony,\" said Ms Okafor. \"A diary feels private and complete, as if nothing stood between the writer and the page. But every writer chooses. Hanneke was choosing to protect people, and that choice is why we have to read with care. We cannot fill those missing pages. What we can do is say honestly: here is something lost, and here is the reason it was lost.\"\nImani added a third column to her sheet. At the top she wrote: \"What she leaves out.\" Under it, she wrote only the date range and the words: \"Pages burned to protect others.\"\n\"Good,\" said Ms Okafor. \"That might be the most useful line you write all term.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many days pass between the entries of 2 February and 25 February 1943?",
+       "options": [],
+       "answer": "23",
+       "accept": [
+        "twenty-three"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what question does Ms Okafor ask when the students wonder what happened?",
+       "options": [
+        "What do you know, and what are you guessing?",
+        "Who told you that?",
+        "Why are you asking me?",
+        "Can you find a textbook?"
+       ],
+       "answer": "What do you know, and what are you guessing?",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does Hanneke say she did with the pages she had written?",
+       "options": [],
+       "answer": "burned them",
+       "accept": [
+        "burned",
+        "burnt them",
+        "burnt"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the men come to the farm?",
+       "options": [
+        "To look for boys refusing to work in Germany",
+        "To buy the Bakkers' cow",
+        "To collect ration cards",
+        "To check the farm's harvest"
+       ],
+       "answer": "To look for boys refusing to work in Germany",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the men push into the hay?",
+       "options": [
+        "Long rods",
+        "Pitchforks",
+        "Lit torches",
+        "Spades"
+       ],
+       "answer": "Long rods",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Hanneke's writing change after the search?",
+       "options": [
+        "She uses initials instead of names",
+        "She writes only in German",
+        "She stops using dates",
+        "She writes only about Duchess"
+       ],
+       "answer": "She uses initials instead of names",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the best meaning of \"paper can kill\"?",
+       "options": [
+        "A written record could reveal people and put them in deadly danger",
+        "Paper is poisonous",
+        "Newspapers are dangerous to read",
+        "People might fight over paper"
+       ],
+       "answer": "A written record could reveal people and put them in deadly danger",
+       "accept": [],
+       "hint": "Think about who could read the notebook.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mrs Bakker sitting down on the barn floor is such a powerful detail?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: Mad Tuesday",
+     "synopsis": "A joyful entry from September 1944 shows the students how a reader's hindsight differs from what the diarist could possibly know.",
+     "text": "It was the happiest page in the notebook. The handwriting leapt across the lines, and Hanneke had drawn a small flag in the margin.\n\"5 September 1944. It is over! Or nearly. B. has the radio working in the loft, the one that everyone was supposed to hand in, and the news from London and from people on the road is that the Allies are almost here. They say that Breda has fallen. People are standing in the road with orange ribbons. Some of the men who worked for the occupiers are running away with their suitcases, and B. laughed so hard he had to hold on to the door. I am going to wash my hair. I am going to walk in the sun in the middle of the street. By the end of the week I shall be home, and I shall tell Father about Duchess, and he will pretend he doesn't believe me.\"\nImani smiled at the page, then turned to Ms Okafor. \"So that's nearly the end?\"\n\"Check your timeline,\" said Ms Okafor.\nCallum found it on the wall chart. \"Oh,\" he said. \"The fifth of September 1944. It's got a name. Mad Tuesday.\" He read on. \"There were rumours everywhere that liberation was hours away, and people celebrated in the streets. But it wasn't true yet. The south of the Netherlands was freed over the following months. The north wasn't freed until April 1945.\"\n\"Seven more months,\" said Imani. She looked at the words \"by the end of the week\" and felt something drop inside her. \"She's so sure. I want to warn her.\"\n\"That feeling has a name too,\" said Ms Okafor. \"Hindsight. You know how this ends, or you know more of it than she did. Hanneke did not. That is the strange power of reading a diary: the writer walks forward into a future that, for you, has already happened.\"\n\"Like dramatic irony in a play,\" said Callum, \"when the audience knows something the character doesn't.\"\n\"Very like that, except that this was somebody's real life, not a plot. So be careful. It would be easy to read this entry and think she was foolish. Was she?\"\nImani shook her head. \"She had the radio and the people in the road. Everybody around her believed it. It was reasonable, given what she could know.\"\n\"Then here is your rule,\" said Ms Okafor. \"Always ask two questions. What did she know on this day? And what do we know now? Do not mix them up.\"\nCallum wrote both questions on the top of his sheet. Then he read the entry again, more slowly.\n\"The last bit,\" he said. \"'I shall tell Father.' She hasn't heard from her parents for over a year, has she? There was that note in June 1943, and then nothing.\"\n\"No,\" said Ms Okafor quietly. \"She hasn't.\"\nNobody asked the next question out loud. Imani turned back to the flag in the margin, drawn so carefully, by someone who was about to wash her hair.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what has Hanneke drawn in the margin of her entry?",
+       "options": [
+        "A small flag",
+        "A cow",
+        "A train",
+        "A house"
+       ],
+       "answer": "A small flag",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name given to 5 September 1944?",
+       "options": [],
+       "answer": "Mad Tuesday",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Hanneke hear news from?",
+       "options": [
+        "A hidden radio and people on the road",
+        "A letter from her father",
+        "A newspaper from Zwolle",
+        "Her teacher"
+       ],
+       "answer": "A hidden radio and people on the road",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, when was the north of the Netherlands actually freed, according to the wall chart?",
+       "options": [
+        "April 1945",
+        "October 1944",
+        "December 1944",
+        "June 1945"
+       ],
+       "answer": "April 1945",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what word does Ms Okafor use for knowing how events turned out after they happened?",
+       "options": [],
+       "answer": "hindsight",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which two questions does Ms Okafor tell the students to always ask?",
+       "options": [
+        "What did she know on this day, and what do we know now?",
+        "Who wrote this, and who paid for it?",
+        "Is it true, and is it interesting?",
+        "Where was it written, and in what language?"
+       ],
+       "answer": "What did she know on this day, and what do we know now?",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Imani decide Hanneke was not foolish to believe the war was nearly over?",
+       "options": [
+        "Her belief was reasonable given what she could know",
+        "She had read the wall chart",
+        "Her father had told her so",
+        "She knew it was only a rumour"
+       ],
+       "answer": "Her belief was reasonable given what she could know",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the line about telling Father feels different to a reader than it did to Hanneke?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: How Do You Know?",
+     "synopsis": "When a visitor challenges the diary, the students learn how historians test a source and find the record of what happened to Hanneke's parents.",
+     "text": "A man from the local history society came to see the exhibition plans. He looked at the notebook for a long time and then said, not unkindly, \"Of course, a clever person could have forged this. How do you actually know it's real?\"\nCallum felt himself go red. Imani started to say something, but Ms Okafor raised a hand. \"It's a fair question,\" she said. \"Would you two like to answer it?\"\nNeither of them knew how. So, once the man had gone, Ms Okafor showed them.\nShe began with a thick folder of test results. The paper in the notebook had been examined, and its type was consistent with paper sold in the Netherlands before the war. The ink was consistent with the period too. A specialist had compared the handwriting with school reports from Zwolle and found that it changed in the way a growing girl's handwriting usually does.\n\"That tells us about the object,\" said Ms Okafor. \"Now the contents. Historians look for corroboration: other independent evidence that agrees with what a source says.\"\nShe laid out copies of several documents. A list drawn up after the war named the Bakker family among people who had sheltered those in hiding. A police note from the province recorded searches for young men on farms that February. Each small detail in the diary matched something outside it.\n\"Does anyone deny all this?\" asked Imani. \"That it happened?\"\n\"Some people do,\" said Ms Okafor. \"They claim that diaries and testimonies are invented. That is why this work matters. The Holocaust is among the most thoroughly documented events in history: there are the perpetrators' own records, photographs, trial evidence and thousands of survivors' accounts. No single diary has to carry it all. But each one that is checked honestly is another piece of evidence that holds.\"\nShe paused, then took out one more sheet. \"There is something else in the corroboration file. You don't have to read it today.\"\n\"We'll read it,\" said Callum.\nIt was a copy of a typed list from Westerbork, the transit camp in the Netherlands from which trains left for the east. Two names were underlined in pencil: Polak, Jacob. Polak, Esther. Next to them was a date in August 1943, when they had arrived, and then a date in September 1943, when they had been put on a train to Auschwitz. There was no later record of either of them.\nImani did the arithmetic without wanting to. \"September 1943. That's a year before Mad Tuesday. When she wrote 'I shall tell Father', he had already been...\"\nShe did not finish.\nCallum looked at the notebook in its grey cradle. He had been ready to defend it from the man with the question. He had not expected that the proof would be this.\n\"That's what it means,\" he said at last, \"isn't it? When we say we've checked it.\"\n\"Yes,\" said Ms Okafor. \"That is what it means.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who asks how they know the diary is real?",
+       "options": [
+        "A man from the local history society",
+        "Hanneke's granddaughter",
+        "Callum's teacher",
+        "A journalist"
+       ],
+       "answer": "A man from the local history society",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the handwriting compared with?",
+       "options": [
+        "School reports from Zwolle",
+        "Letters from the Bakkers",
+        "A government form",
+        "Ms Okafor's notes"
+       ],
+       "answer": "School reports from Zwolle",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what word means other independent evidence that agrees with what a source says?",
+       "options": [],
+       "answer": "corroboration",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which of these is used to check the contents of the diary?",
+       "options": [
+        "A post-war list naming the Bakker family",
+        "A photograph of Duchess",
+        "A radio recording of Hanneke",
+        "A newspaper interview with Mr Bakker"
+       ],
+       "answer": "A post-war list naming the Bakker family",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the transit camp on the typed list?",
+       "options": [],
+       "answer": "Westerbork",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long before Mad Tuesday were Hanneke's parents put on the train?",
+       "options": [
+        "About a year",
+        "About a week",
+        "About a month",
+        "About five years"
+       ],
+       "answer": "About a year",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Ms Okafor say the checking work matters?",
+       "options": [
+        "Because some people deny the Holocaust and claim testimonies are invented",
+        "Because the notebook is valuable to sell",
+        "Because the exhibition needs to be longer",
+        "Because the translation contains mistakes"
+       ],
+       "answer": "Because some people deny the Holocaust and claim testimonies are invented",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Ms Okafor calls the visitor's question \"fair\" instead of being offended by it?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Two Inks",
+     "synopsis": "The last entries of the diary, and a note added years later, show the difference between writing at the time and remembering afterwards.",
+     "text": "The last entries were short. Imani and Callum read them slowly, as if that might change them.\n\"13 April 1945. Canadian soldiers came up the road this morning. I walked out of the barn in daylight. I had imagined this for two and a half years and in my imagination I was running. In fact I stood by the gate and could not think where to go. One soldier gave me a piece of chocolate and I was sick behind the wall, because I am not used to it. Mrs B. cried. Her name is Mrs Bakker. I can write it now. Mrs Bakker. Mrs Bakker.\"\nThen came a few lines written back in Zwolle, in the summer.\n\"Our house has other people in it. I go every week to the office where they keep the lists. Each week I ask. Each week they are kind.\"\nAfter that, the pages were blank, except the very last one. Here the ink was a brighter blue and the handwriting grown up, quick and sloping.\n\"London, 1962. I found this in a box today. I had forgotten almost everything in it. I remembered being brave and I remembered being sad, but I did not remember that I was so rude, nor that I loved a cow. In my memory, we always knew how bad things were. The girl in this book did not know. She thought she would be home by Friday. I would like to tell her something and I cannot think what.\"\n\"So she survived,\" said Callum. \"She moved to England.\"\n\"She became a teacher,\" said Ms Okafor. \"And she had children, and then a granddaughter, who brought us this book. Her parents never came back. Hanneke found that out in time, at that office with the lists.\"\nImani was looking at the two inks. \"This is really interesting, though. Is that awful to say? It's like two different witnesses. The girl and the woman.\"\n\"Not awful. That is exactly the point. A diary is written without knowing the ending. A memoir or an interview is written with it. Memory shapes the past. It tidies it, it adds meaning, and it forgets the details: the rude remarks, the cow. Hanneke says so herself. In 1962 she thinks she always knew how bad things were. Her own diary shows she did not.\"\n\"So the diary's more reliable?\" asked Callum.\n\"For some things. For what she thought and felt on a particular day, yes. But memoirs can give you what a diary cannot: what happened in the places a diarist could not write, the meaning of a life, and the courage it takes to look back. Most survivors never kept a diary. Their later testimony is precious, and it deserves respect. You just need to know what kind of evidence you're holding.\"\nImani went back to the summer entry and read it once more. \"Each week they are kind,\" she read. She added nothing to her columns that day. She had started to understand that some lines did not need her notes beside them, only a reader who would stop.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which country's soldiers come up the road in April 1945?",
+       "options": [],
+       "answer": "Canada",
+       "accept": [
+        "Canadian",
+        "Canadian soldiers"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens when Hanneke eats the chocolate?",
+       "options": [
+        "She is sick",
+        "She shares it with Mrs Bakker",
+        "She saves half for her father",
+        "She drops it"
+       ],
+       "answer": "She is sick",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Hanneke write \"Mrs Bakker\" over and over?",
+       "options": [
+        "Because it is finally safe to write names again",
+        "Because she is practising her handwriting",
+        "Because she has forgotten her name",
+        "Because Mrs Bakker asked her to"
+       ],
+       "answer": "Because it is finally safe to write names again",
+       "accept": [],
+       "hint": "Remember what she decided about names earlier.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Hanneke do each week in Zwolle?",
+       "options": [
+        "Asks for news at the office with the lists",
+        "Visits the Bakkers",
+        "Goes back to her old school",
+        "Sees a doctor"
+       ],
+       "answer": "Asks for news at the office with the lists",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, in what year does the adult Hanneke write her final note?",
+       "options": [],
+       "answer": "1962",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did adult Hanneke not remember about her younger self?",
+       "options": [
+        "That she was rude and loved a cow",
+        "That she was in hiding",
+        "That she lived in Zwolle",
+        "That she had parents"
+       ],
+       "answer": "That she was rude and loved a cow",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the main difference Ms Okafor explains between a diary and a memoir?",
+       "options": [
+        "A diary is written without knowing the ending; a memoir is written knowing it",
+        "A diary is always true; a memoir is always false",
+        "A diary is longer than a memoir",
+        "A memoir has no dates"
+       ],
+       "answer": "A diary is written without knowing the ending; a memoir is written knowing it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "What do you think Hanneke means when she writes that she would like to tell her younger self something but cannot think what?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: What Goes on the Wall",
+     "synopsis": "Preparing the exhibition, the students must decide how to present Hanneke's story honestly and why one voice matters beside enormous numbers.",
+     "text": "Two weeks before the opening, the exhibition room smelled of paint. Imani and Callum had one job left: to write the main panel, the words every visitor would read first.\nCallum's draft began with the numbers. He had checked them twice. More than 100,000 Jews were deported from the Netherlands, and about three in every four Jews who had been living there were murdered. Across Europe, around six million Jews were killed in the Holocaust.\nImani's draft began: \"Hanneke Polak loved a cow called Duchess and was never allowed to keep a bicycle.\" She looked at it uncertainly. \"It's maybe too small.\"\n\"Mine's too big,\" said Callum. \"Nobody can picture six million. I can't.\"\nHanneke's granddaughter, Ruth, came in that afternoon to see the room. She read both drafts, standing very still.\n\"Can I tell you what my grandmother hated?\" she said. \"When people came to her school to hear her speak, they would say how inspiring it was. As if the point of it all was that somebody had learned a lesson. She used to say: my parents did not die to teach anyone anything.\"\nImani looked down. Her draft had ended with the words \"a story of hope\".\n\"Don't make her a saint, either,\" Ruth added, smiling a little. \"She was difficult. She argued with everybody. She told a head teacher once that his Latin was bad. Keep the rudeness. It's the best proof she was there.\"\nWhen she had gone, the two of them sat on the floor with the panels between them. They tried the numbers first and the cow second. Then the cow first and the numbers second. Neither worked until Callum said, \"What if we don't choose? What if the numbers tell you how much, and she tells you what it means? You need both. If you only have the numbers, there's no one there. If you only have Hanneke, it sounds as if she's the whole story, and she's not. She's one of the ones who lived to tell it.\"\n\"And most of them never got a notebook, or got to keep one,\" said Imani. \"So we should say that too. That all the missing voices are part of it.\"\nMs Okafor read their final version the next day. It was short. It gave the numbers, in plain words. It gave one line from the diary. It said what had happened to Jacob and Esther Polak, and it said that the people who hid Hanneke had risked their lives. It used neither \"inspiring\" nor \"hope\". The last sentence read: \"Read her as she wrote: not knowing the ending.\"\n\"Who is this for?\" Ms Okafor asked. \"If you had to say.\"\nImani thought of the man with his question, of Ruth, of a child who might come in out of the rain and stop in front of a faded blue notebook.\n\"Anyone who'll read carefully,\" she said. \"That's all she wanted. Somewhere to put her thoughts, and someone to work it out.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of Hanneke's granddaughter?",
+       "options": [],
+       "answer": "Ruth",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Callum's first draft begin?",
+       "options": [
+        "With the numbers",
+        "With a quotation from the diary",
+        "With a map",
+        "With a story about Duchess"
+       ],
+       "answer": "With the numbers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Imani's first draft begin?",
+       "options": [
+        "With a detail about Hanneke and a cow",
+        "With the date of the war",
+        "With a list of rules",
+        "With a description of the camp"
+       ],
+       "answer": "With a detail about Hanneke and a cow",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Hanneke dislike people saying her talks were inspiring?",
+       "options": [
+        "She felt it treated her parents' deaths as a lesson",
+        "She wanted to be paid",
+        "She found speaking boring",
+        "She did not believe her diary was true"
+       ],
+       "answer": "She felt it treated her parents' deaths as a lesson",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ruth say is the best proof that Hanneke was there?",
+       "options": [
+        "Her rudeness",
+        "Her photographs",
+        "Her school reports",
+        "Her Latin"
+       ],
+       "answer": "Her rudeness",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how do the students solve the problem of numbers versus one person's story?",
+       "options": [
+        "They use both together",
+        "They leave out the numbers",
+        "They leave out Hanneke",
+        "They ask Ruth to write it"
+       ],
+       "answer": "They use both together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the panel's last sentence ask readers to do?",
+       "options": [
+        "Read Hanneke as someone who did not know how things would end",
+        "Remember the Bakkers' farm",
+        "Visit Zwolle",
+        "Keep a diary of their own"
+       ],
+       "answer": "Read Hanneke as someone who did not know how things would end",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the students decide not to use the word \"hope\" on the panel? Do you agree with their choice?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
