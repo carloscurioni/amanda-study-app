@@ -4404,7 +4404,1402 @@
      "errors": []
     }
    ]
+  },
+  "sci": {
+   "topic": "Chemistry: reactivity series, corrosion and extraction of metals",
+   "questions": [
+    {
+     "id": "r1a74fxh7b5j87",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which of these metals is the most reactive?",
+     "options": [
+      "Copper",
+      "Iron",
+      "Potassium",
+      "Gold"
+     ],
+     "answer": "Potassium",
+     "accept": [],
+     "hint": "Think about which of these reacts violently with cold water.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2w1kk91m8yq1y",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which pair of substances must both be present for iron to rust?",
+     "options": [
+      "Oxygen and water",
+      "Carbon dioxide and water",
+      "Oxygen and nitrogen",
+      "Salt and carbon dioxide"
+     ],
+     "answer": "Oxygen and water",
+     "accept": [],
+     "hint": "Consider a nail kept in dry air or in boiled water under oil.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o1mn3u5f1gw8",
+     "subject": "sci",
+     "type": "short",
+     "q": "Name the metal used to coat steel in galvanising.",
+     "options": [],
+     "answer": "zinc",
+     "accept": [],
+     "hint": "It is more reactive than iron.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cfpuzf1ahfi1q",
+     "subject": "sci",
+     "type": "short",
+     "q": "State the chemical name of rust.",
+     "options": [],
+     "answer": "hydrated iron(III) oxide",
+     "accept": [
+      "hydrated iron oxide",
+      "iron(III) oxide",
+      "hydrated iron (III) oxide"
+     ],
+     "hint": "Think about which two substances are needed for rusting.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6aluk0197fovt",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which mixture will produce a displacement reaction?",
+     "options": [
+      "Copper and zinc sulfate solution",
+      "Zinc and copper(II) sulfate solution",
+      "Silver and copper(II) sulfate solution",
+      "Copper and magnesium sulfate solution"
+     ],
+     "answer": "Zinc and copper(II) sulfate solution",
+     "accept": [],
+     "hint": "A more reactive metal displaces a less reactive one from its compound.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4bvkk1phge8m",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Metal P displaces metal Q from a solution of a salt of Q. Metal Q displaces metal R from a solution of a salt of R. What is the order of reactivity, most reactive first?",
+     "options": [
+      "R, Q, P",
+      "Q, P, R",
+      "P, R, Q",
+      "P, Q, R"
+     ],
+     "answer": "P, Q, R",
+     "accept": [],
+     "hint": "The metal that does the displacing is the more reactive one.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b38hbfobx4zd",
+     "subject": "sci",
+     "type": "short",
+     "q": "In the equation Zn + Cu²⁺ → Zn²⁺ + Cu, name the species that is oxidised.",
+     "options": [],
+     "answer": "zinc",
+     "accept": [
+      "zn",
+      "zinc atoms",
+      "zinc atom"
+     ],
+     "hint": "Oxidation is loss of electrons.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gvm2yw1hu4g6m",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why is gold found in the ground as the uncombined metal?",
+     "options": [
+      "It is very dense",
+      "It is very unreactive",
+      "It has a high melting point",
+      "It is a good conductor"
+     ],
+     "answer": "It is very unreactive",
+     "accept": [],
+     "hint": "Think about its position in the reactivity series.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rngls4ugzjr1z",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which method is used to extract aluminium from its ore?",
+     "options": [
+      "Reduction with carbon",
+      "Heating in air",
+      "Electrolysis",
+      "Displacement with copper"
+     ],
+     "answer": "Electrolysis",
+     "accept": [],
+     "hint": "Aluminium is above carbon in the reactivity series.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pugfwt1hn4in1",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Explain why iron can be extracted using carbon but aluminium cannot.",
+     "options": [
+      "Iron is less reactive than carbon, but aluminium is more reactive than carbon",
+      "Iron has a lower density than aluminium",
+      "Aluminium ore contains no oxygen",
+      "Carbon reacts with aluminium to form an alloy"
+     ],
+     "answer": "Iron is less reactive than carbon, but aluminium is more reactive than carbon",
+     "accept": [],
+     "hint": "Carbon can only remove oxygen from oxides of metals below it in the series.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11807gopn2xt4",
+     "subject": "sci",
+     "type": "short",
+     "q": "Name the gas that acts as the main reducing agent in the blast furnace.",
+     "options": [],
+     "answer": "carbon monoxide",
+     "accept": [
+      "co"
+     ],
+     "hint": "It forms when carbon dioxide reacts with coke.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxd7k381j5z0o8",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is the purpose of limestone in the blast furnace?",
+     "options": [
+      "To supply the oxygen for burning",
+      "To reduce the iron ore",
+      "To remove acidic impurities as slag",
+      "To harden the molten iron"
+     ],
+     "answer": "To remove acidic impurities as slag",
+     "accept": [],
+     "hint": "Think about the sand in the ore.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lsv7mc1diwzxt",
+     "subject": "sci",
+     "type": "short",
+     "q": "Name the main compound in slag, formed in the blast furnace.",
+     "options": [],
+     "answer": "calcium silicate",
+     "accept": [
+      "casio3"
+     ],
+     "hint": "It forms from calcium oxide and silicon dioxide.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ggz2xi1r4qr7s",
+     "subject": "sci",
+     "type": "num",
+     "q": "In the reaction Fe₂O₃ + 3CO → 2Fe + 3CO₂, calculate the mass of iron, in tonnes, that can be obtained from 320 tonnes of Fe₂O₃. (Relative atomic masses: Fe = 56, O = 16)",
+     "options": [],
+     "answer": "224",
+     "accept": [],
+     "hint": "Find the fraction of the mass of Fe₂O₃ that is iron.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4daey9cnnh2i",
+     "subject": "sci",
+     "type": "open",
+     "q": "A steel can coated with tin rusts quickly once scratched, but a galvanised steel bucket does not. Explain this difference, using ideas about reactivity.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare tin and zinc with iron in the reactivity series.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rueyn2g3to4kn",
+     "subject": "sci",
+     "type": "open",
+     "q": "Blocks of magnesium or zinc are attached to the steel hulls of ships. Explain how they protect the hull and why they must be replaced from time to time.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about which metal loses electrons first.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa": {
+   "topic": "Town versus country: where I would like to live (si + present, future)",
+   "questions": [
+    {
+     "id": "rfwu9szl3mvj7",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct English meaning of 'el campo'.",
+     "options": [
+      "the town centre",
+      "the countryside",
+      "the beach",
+      "the suburbs"
+     ],
+     "answer": "the countryside",
+     "accept": [],
+     "hint": "It is the opposite of 'la ciudad'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a4b92pe1w288",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'the city'.",
+     "options": [],
+     "answer": "la ciudad",
+     "accept": [
+      "ciudad"
+     ],
+     "hint": "It is a feminine noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1afzeeu1uhfx5b",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the Spanish word that is the opposite of 'tranquilo'.",
+     "options": [
+      "ruidoso",
+      "bonito",
+      "barato",
+      "pequeño"
+     ],
+     "answer": "ruidoso",
+     "accept": [],
+     "hint": "Think of traffic and crowds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsddnv5c9gx3m",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish, masculine singular: 'noisy'.",
+     "options": [],
+     "answer": "ruidoso",
+     "accept": [],
+     "hint": "Think of traffic and crowds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xe0hvg1ts7hzu",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence gives a disadvantage of living in the country?",
+     "options": [
+      "Hay mucho aire puro.",
+      "Hay pocos autobuses.",
+      "Es muy tranquilo.",
+      "Los vecinos son simpáticos."
+     ],
+     "answer": "Hay pocos autobuses.",
+     "accept": [],
+     "hint": "Think about getting around without a car.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vdkwfmysgsv6",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete the comparison: 'El campo es ___ tranquilo ___ la ciudad.'",
+     "options": [
+      "más … que",
+      "tan … que",
+      "muy … de",
+      "más … como"
+     ],
+     "answer": "más … que",
+     "accept": [],
+     "hint": "This is the standard comparative structure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4sevwi4ou2ba",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the 'yo' form of the future tense of 'vivir'.",
+     "options": [],
+     "answer": "viviré",
+     "accept": [
+      "vivire"
+     ],
+     "hint": "Add the ending to the whole infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12vpg9213kat93",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the 'yo' form of the future tense of the irregular verb 'tener'.",
+     "options": [],
+     "answer": "tendré",
+     "accept": [
+      "tendre"
+     ],
+     "hint": "The stem changes before the future ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12j652e1v52qaa",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the 'ellos' form of the future tense of the irregular verb 'hacer'.",
+     "options": [],
+     "answer": "harán",
+     "accept": [
+      "haran"
+     ],
+     "hint": "The stem is shortened.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bvobnln6xmel",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete the sentence: 'Si tengo dinero, ___ en el campo.'",
+     "options": [
+      "viví",
+      "vivía",
+      "viviré",
+      "vivo"
+     ],
+     "answer": "viviré",
+     "accept": [],
+     "hint": "A si clause in the present is followed by a result in the future.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqwcn715j65hv",
+     "subject": "spa",
+     "type": "short",
+     "q": "Fill the gap with the 'nosotros' future of 'comprar': 'Si ganamos la lotería, ___ una casa grande.'",
+     "options": [],
+     "answer": "compraremos",
+     "accept": [],
+     "hint": "Add the future ending to the infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13z5buh1d7uybp",
+     "subject": "spa",
+     "type": "short",
+     "q": "Fill the gap with the 'yo' present of 'tener': 'Si no ___ coche, iré en autobús.'",
+     "options": [],
+     "answer": "tengo",
+     "accept": [],
+     "hint": "The verb after 'si' here is not in the future.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2n6di8zt56nr",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence is correct?",
+     "options": [
+      "Si hará buen tiempo, iremos al campo.",
+      "Si hace buen tiempo, iremos al campo.",
+      "Si hizo buen tiempo, iremos al campo.",
+      "Si hace buen tiempo, fuimos al campo."
+     ],
+     "answer": "Si hace buen tiempo, iremos al campo.",
+     "accept": [],
+     "hint": "Check which tense follows 'si'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fee7p51r0b94s",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Read: 'Vivo en la ciudad. Hay muchas tiendas y cines, pero hay demasiado tráfico. Si encuentro trabajo en un pueblo, me mudaré.' What will the writer do if he finds a job in a village?",
+     "options": [
+      "Open a shop",
+      "Stay in the city",
+      "Buy a car",
+      "Move house"
+     ],
+     "answer": "Move house",
+     "accept": [],
+     "hint": "Look at the meaning of 'me mudaré'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13jinatvu7z2t",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 3–5 sentences in Spanish comparing life in the town and in the country, and say which you prefer and why.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use 'más … que' and opinion phrases such as 'prefiero'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jkf6atzft1yt",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 3–5 sentences in Spanish about where you would like to live in the future. Include at least two 'si' clauses with the present and the future.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "For example, start with 'Si tengo…' or 'Si encuentro…'.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "A Carta e a Tesoura",
+   "premise": "Às vésperas de um sarau, quatro colegas leem a carta que o escrivão da frota enviou ao rei em 1500 e os poemas modernistas que a recortaram. Episódio a episódio, descobrem o que é colagem, paródia e crítica, e quem ficou de fora de toda essa conversa.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A certidão de nascimento",
+     "synopsis": "A professora Odete propõe um sarau sobre a carta escrita em 1500, e Iara descobre que o texto mais antigo do Brasil tem um olhar interessado.",
+     "text": "A professora Odete entrou na sala com uma pilha de fotocópias e um anúncio que ninguém comemorou: em um mês, o 1º ano faria um sarau sobre os primeiros textos escritos a respeito do Brasil. O primeiro deles era a carta que o escrivão da frota portuguesa enviou ao rei, em maio de 1500, depois de passar alguns dias no litoral da atual Bahia.\nIara olhou para a folha como quem olha para um prato de legumes frios. Davi, ao lado dela, já desenhava um foguete na margem. Nina perguntou o que todos pensavam:\n— Professora, por que a gente precisa ler um relatório de quinhentos anos?\n— Porque muita gente chama essa carta de certidão de nascimento do Brasil — respondeu Odete. — E toda certidão merece uma pergunta: quem assinou, e para quem?\nEla propôs um jogo. Cada grupo deveria listar tudo aquilo em que o escrivão reparava. Iara começou por obrigação e, aos poucos, ficou intrigada. O homem elogiava as águas sem fim, as árvores altas, a terra boa, na qual tudo cresceria se alguém quisesse aproveitá-la. Descrevia os corpos e os enfeites dos moradores da praia com uma curiosidade quase infantil. E, quando um deles apontou para um colar de ouro e depois para a terra, o escrivão concluiu que ali devia haver mais ouro, embora admitisse que era isso que os portugueses queriam entender.\n— Olhem isto — disse Iara, levantando a lista. — Ele parece encantado, mas é um encantamento com etiqueta de preço. Tudo que ele vê serve para alguma coisa.\nA professora sorriu, e Iara percebeu que tinha acabado de fazer exatamente o que a tarefa pedia.\n— Então o narrador não é neutro — completou Odete. — Ele escreve a um rei, e o rei quer saber o que ganhou. Uma crônica de viagem como essa parece uma janela, mas também é um pedido e uma propaganda.\nDavi, que tinha ido até a última folha, levantou o foguete e a mão ao mesmo tempo.\n— E tem mais. No fim, depois de falar da terra inteira, ele pede um favor ao rei: que perdoe e chame de volta o genro dele, que estava longe, cumprindo pena numa ilha.\nA sala riu pela primeira vez naquele dia. O documento solene terminava com um pedido de família, e de repente o escrivão virou uma pessoa de verdade, com interesses, medos e parentes complicados.\nIara guardou a folha sem amassar, o que já era um progresso. Quando o sinal tocou, Odete tirou da bolsa um livrinho fino, de capa gasta, e o deixou sobre a mesa do grupo.\n— Mais de quatrocentos anos depois, um poeta leu essa mesma carta com uma tesoura na mão — disse ela. — Tragam a curiosidade na semana que vem.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, em que ano foi escrita a carta do escrivão da frota?",
+       "options": [
+        "1422",
+        "1500",
+        "1822",
+        "1922"
+       ],
+       "answer": "1500",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, a quem o escrivão enviou a carta?",
+       "options": [],
+       "answer": "ao rei",
+       "accept": [
+        "rei",
+        "o rei",
+        "para o rei",
+        "o rei de portugal",
+        "ao rei de portugal"
+       ],
+       "hint": "Pense em quem governava Portugal e financiava a viagem.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por qual expressão muita gente chama a carta, segundo a professora?",
+       "options": [
+        "Diário de bordo",
+        "Certidão de nascimento do Brasil",
+        "Mapa do tesouro",
+        "Hino da viagem"
+       ],
+       "answer": "Certidão de nascimento do Brasil",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que o escrivão concluiu quando um morador apontou para o colar e para a terra?",
+       "options": [
+        "Que queriam trocar o colar por comida",
+        "Que o colar tinha sido roubado",
+        "Que devia haver mais ouro na terra",
+        "Que a praia era sagrada"
+       ],
+       "answer": "Que devia haver mais ouro na terra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Davi encontra na última folha da carta?",
+       "options": [
+        "Um desenho de foguete",
+        "Um mapa do litoral",
+        "A assinatura do rei",
+        "Um pedido de favor para o genro do escrivão"
+       ],
+       "answer": "Um pedido de favor para o genro do escrivão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Iara quer dizer com “encantamento com etiqueta de preço”?",
+       "options": [
+        "O escrivão admira a terra pensando no que ela pode render",
+        "O escrivão quer comprar um colar para a família",
+        "A carta foi vendida por um preço alto",
+        "A terra era cara demais para o rei"
+       ],
+       "answer": "O escrivão admira a terra pensando no que ela pode render",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a professora diz que o narrador não é neutro?",
+       "options": [
+        "Porque ele mente sobre todos os fatos",
+        "Porque ele escreve interessado em agradar e informar o rei",
+        "Porque ele não sabia escrever bem",
+        "Porque ele copiou a carta de outra pessoa"
+       ],
+       "answer": "Porque ele escreve interessado em agradar e informar o rei",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o pedido final do escrivão faz a turma olhar a carta de outro jeito?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A tesoura",
+     "synopsis": "A turma descobre os poemas que recortam a carta e testa o recurso em um aviso da cantina.",
+     "text": "O livrinho de capa gasta passou de mão em mão até chegar a Davi, que o abriu com a desconfiança de quem espera rimas difíceis. O que encontrou foram poemas curtíssimos, com títulos brincalhões, publicados em 1925 por um poeta modernista de São Paulo.\n— Isto é trapaça — anunciou ele. — Professora, ele copiou a carta!\n— Copiou? Leia em voz alta as duas versões.\nDavi leu primeiro o trecho do escrivão, na prosa comprida de sempre. Depois leu o poema: quase as mesmas palavras, mas cortadas em versos, cercadas de silêncio e sob um título cheio de malícia. A turma ficou quieta um segundo, depois alguém riu. A frase que antes soava como relatório agora parecia uma piada contada com a cara séria.\n— As palavras são quase iguais — disse Nina devagar. — Mas o sentido mudou de lugar.\n— Essa é a tesoura — explicou Odete. — O poeta faz uma colagem: arranca a frase de seu contexto e a coloca em outro. Quando o texto vira poema, passamos a ler de outro modo. Desconfiamos. Vemos a ingenuidade, o interesse, o exagero. E o título funciona como uma piscadela para o leitor.\nEla contou que esses modernistas queriam sacudir uma poesia que consideravam engomada demais. Depois da Semana de Arte Moderna de 1922, muitos deles defendiam o verso livre, a fala cotidiana, o humor e o poema-piada, que cabe em poucas linhas e deixa o leitor concluindo o resto.\n— Então agora é a vez de vocês. Não com a carta. Com qualquer texto que ninguém leia.\nIara correu ao mural do corredor e voltou com o aviso da cantina, uma folha amarelada que todos conheciam e ninguém tinha lido até o fim. Dizia que os alunos deveriam formar fila única, que a direção agradecia a compreensão e que o pão de queijo estava sujeito à disponibilidade.\nCom uma tesoura de verdade, o grupo foi cortando. Depois de muita discussão, a colagem ficou assim:\nO pão de queijo\nestá sujeito\nà disponibilidade.\nA direção\nagradece\na compreensão.\nA sala explodiu em gargalhadas, e até a professora precisou tirar os óculos. Nenhuma palavra fora inventada, mas agora o aviso parecia o lamento de um povo faminto diante de um governo educado demais.\n— Reparem no que fizeram — disse Odete, quando conseguiu falar. — Vocês não escreveram contra a cantina. Só mostraram algo que já estava lá: o tom burocrático, que trata um salgado como se fosse assunto de Estado. A crítica nasceu do recorte.\nDavi pegou o livrinho de novo, agora com outro respeito.\n— Então não é trapaça — admitiu. — É ler com tesoura.\nNo caminho para a saída, Iara colou a folha recortada no mural. No dia seguinte, havia cinco pessoas lendo o aviso. Foi a maior audiência de sua história.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, em que ano foram publicados os poemas do livrinho, segundo o texto?",
+       "options": [
+        "1500",
+        "1822",
+        "1925",
+        "1972"
+       ],
+       "answer": "1925",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a primeira reação de Davi ao comparar o poema com a carta?",
+       "options": [
+        "Acha que o poeta trapaceou ao copiar",
+        "Fica emocionado e chora",
+        "Diz que o poema é mais longo",
+        "Acredita que a carta é falsa"
+       ],
+       "answer": "Acha que o poeta trapaceou ao copiar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como a professora chama o recurso de arrancar uma frase do contexto e colocá-la em outro?",
+       "options": [],
+       "answer": "colagem",
+       "accept": [
+        "a colagem",
+        "uma colagem"
+       ],
+       "hint": "Pense em recortar e juntar pedaços.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual destas características os modernistas defendiam?",
+       "options": [
+        "A rima obrigatória",
+        "O verso livre e a fala cotidiana",
+        "A linguagem do século XVI",
+        "Poemas sempre muito longos"
+       ],
+       "answer": "O verso livre e a fala cotidiana",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que tipo de texto Iara traz do mural para recortar?",
+       "options": [],
+       "answer": "aviso da cantina",
+       "accept": [
+        "o aviso da cantina",
+        "aviso",
+        "um aviso",
+        "aviso da cantina da escola"
+       ],
+       "hint": "Lembre-se da folha amarelada no corredor.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a colagem do aviso faz a turma rir?",
+       "options": [
+        "Porque tem palavras inventadas",
+        "Porque critica um colega pelo nome",
+        "Porque o tom burocrático fica ridículo ao ser destacado",
+        "Porque está cheia de erros de ortografia"
+       ],
+       "answer": "Porque o tom burocrático fica ridículo ao ser destacado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Davi quer dizer com “ler com tesoura”?",
+       "options": [
+        "Destacar partes do texto para revelar o que ele esconde",
+        "Cortar páginas de livros antigos",
+        "Ler apenas os títulos dos poemas",
+        "Ler rapidamente, pulando parágrafos"
+       ],
+       "answer": "Destacar partes do texto para revelar o que ele esconde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o mesmo conjunto de palavras pode mudar de sentido quando passa a ser lido como poema?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: O achamento do terreno",
+     "synopsis": "Nina escreve sua primeira paródia, descobre que imitar não basta e encontra um alvo em um anúncio de condomínio.",
+     "text": "Nina era a mais rápida da turma e apareceu na aula seguinte com três páginas. Chamava-se “Carta do achamento do shopping” e imitava o escrivão com perfeição: um visitante chegava ao shopping da cidade, admirava as escadas rolantes, espantava-se com os moradores que carregavam sacolas coloridas e informava tudo a Sua Majestade.\nEla leu para o grupo, e todos riram bastante. A professora Odete riu também, mas devolveu as folhas com um único comentário a lápis: “Muito bem imitado. Do que você está rindo?”\nNina ficou ofendida durante quinze minutos, o que para ela era um recorde.\n— Eu ri do shopping, ué.\n— Rir do shopping é fácil — disse Odete, sentando-se com o grupo. — Veja bem: você imitou o estilo. Isso se chama pastiche, e é um ótimo exercício. A paródia dá um passo a mais. Ela retoma um texto conhecido para virá-lo do avesso e, com isso, dizer algo sobre ele ou sobre o mundo. Toda paródia tem um alvo. Qual é a sua?\nNina não respondeu. À tarde, no ônibus, ficou olhando pela janela, irritada, até que um homem lhe entregou um folheto no semáforo. Era o anúncio de um condomínio novo, numa região onde antes havia mata. Ela começou a ler distraída e, de repente, endireitou-se no banco.\n“Águas abundantes”, dizia o folheto. “Natureza exuberante. Terra generosa, pronta para receber o seu sonho.” Havia uma foto de árvores altas, muito parecidas com as que tinham sido derrubadas para abrir o terreno.\nNo dia seguinte, Nina escreveu em menos de uma hora. A nova versão tinha apenas uma página. Quem falava agora era um corretor, que se dirigia ao “Excelentíssimo Comprador” com a mesma reverência que o escrivão reservava ao rei. Ele louvava as águas, elogiava a mansidão dos vizinhos e garantia que, bem aproveitado, aquele lote renderia de tudo, inclusive vaga dupla na garagem. No último parágrafo, como quem não quer nada, pedia ao comprador que indicasse o genro para uma vaga na administradora.\nDessa vez, quando leu, o grupo riu um pouco menos e pensou um pouco mais. Davi foi o primeiro a falar:\n— Peraí. Você não está brincando só com a carta. Está dizendo que o anúncio é a carta. Que a gente ainda fala da terra do mesmo jeito.\n— Quinhentos anos de folheto — murmurou Iara.\nOdete pegou as folhas e, desta vez, não escreveu nada. Apenas desenhou um pequeno alvo no canto e, no centro dele, uma flecha. Depois explicou que a paródia precisa de dois movimentos: a semelhança, para que o leitor reconheça a origem, e a diferença, para que ele sinta a crítica.\n— Sem a semelhança, ninguém entende a brincadeira — disse. — Sem a diferença, é só uma cópia.\nNina guardou as três páginas do shopping numa pasta. Eram engraçadas, e ela gostava delas. Mas foi a página do corretor que ela levou para casa e leu para a mãe, que trabalhava numa imobiliária e não achou graça nenhuma, o que Nina considerou uma prova de sucesso.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é o título da primeira versão escrita por Nina?",
+       "options": [
+        "Carta do achamento do shopping",
+        "Quinhentos anos de folheto",
+        "O corretor e o rei",
+        "Carta da praia"
+       ],
+       "answer": "Carta do achamento do shopping",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como a professora chama a imitação de um estilo, sem um alvo crítico?",
+       "options": [],
+       "answer": "pastiche",
+       "accept": [
+        "o pastiche",
+        "um pastiche"
+       ],
+       "hint": "É o termo que Odete usa antes de explicar a paródia.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde Nina recebe o folheto do condomínio?",
+       "options": [
+        "No shopping",
+        "No ônibus, em um semáforo",
+        "Na porta da escola",
+        "Na imobiliária da mãe"
+       ],
+       "answer": "No ônibus, em um semáforo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem fala na nova versão do texto de Nina?",
+       "options": [
+        "O rei",
+        "Um morador da mata",
+        "Um corretor",
+        "Uma professora"
+       ],
+       "answer": "Um corretor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual detalhe da carta original reaparece no último parágrafo da paródia?",
+       "options": [
+        "O colar de ouro",
+        "O pedido de um favor para o genro",
+        "A descrição das árvores do Brasil",
+        "A data da assinatura"
+       ],
+       "answer": "O pedido de um favor para o genro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quais são os dois movimentos da paródia, segundo Odete?",
+       "options": [
+        "Rima e métrica",
+        "Elogio e agradecimento",
+        "Citação e tradução",
+        "Semelhança e diferença"
+       ],
+       "answer": "Semelhança e diferença",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Davi conclui ao ouvir a nova versão?",
+       "options": [
+        "Que o anúncio repete o modo de falar da terra usado na carta",
+        "Que Nina deveria trabalhar em uma imobiliária",
+        "Que o texto do shopping era melhor",
+        "Que a carta foi escrita por um corretor"
+       ],
+       "answer": "Que o anúncio repete o modo de falar da terra usado na carta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que a mãe de Nina não achou graça no texto, e por que Nina considerou isso um sucesso?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: Quem já estava na praia",
+     "synopsis": "Jaci aponta o que a carta e as paródias deixam de fora, e o grupo descobre os limites da própria crítica.",
+     "text": "Jaci falava pouco na aula de literatura, por isso a sala parou quando ela levantou a mão durante a leitura da paródia do corretor.\n— Está engraçado. Mas tenho uma pergunta. Na carta, quem fala é o escrivão. No poema recortado, quem fala é o poeta. Na paródia, é o corretor. E os que já estavam na praia? Eles falam quando?\nNinguém tinha resposta pronta. Nina abriu a boca e fechou de novo, o que quase nunca acontecia.\nJaci morava com a avó, que nascera em uma aldeia no sul do país e viera para São Paulo ainda moça. Em casa, ela tinha ouvido muitas vezes que os povos indígenas eram sempre apresentados nos livros no passado, como se tivessem terminado junto com a carta. Por isso, enquanto os colegas achavam graça nos recortes, ela vinha fazendo uma lista diferente: a de tudo o que o escrivão não sabia.\n— Ele diz que eles não têm isso nem aquilo — explicou ela. — Só que está contando a partir do que ele mesmo conhece. Ele não fala a língua deles. Passou poucos dias ali. Mesmo assim, conclui o que eles pensam.\nA professora Odete apoiou-se na mesa, atenta.\n— E o poeta de 1925? — perguntou. — Ele critica o escrivão. Isso resolve o problema?\nDavi coçou a cabeça.\n— Em parte. Ele ironiza o olhar do colonizador. Mas continua sendo um homem da cidade, brincando com um texto de europeu. Os moradores da praia ficam ainda como personagens, não como autores.\n— Então a nossa paródia também tem um ponto cego — disse Iara, um pouco decepcionada.\n— Toda leitura tem — respondeu Odete. — A diferença é saber onde ele está. Criticar um texto não significa estar fora dele. Essa é uma boa pergunta para fazer a qualquer obra: quem fala aqui, e quem é apenas descrito?\nA turma combinou que Jaci escreveria uma resposta para o sarau, se quisesse. Ela demorou a aceitar. Não pretendia falar em nome de ninguém, muito menos de povos inteiros, com histórias e línguas tão diferentes. Conversou então com a avó na cozinha, enquanto as duas preparavam o jantar. A avó ouviu tudo, mexeu a panela e fez um único comentário: “Escreve só o que é teu. Do resto, deixa que falem os que têm direito de falar”.\nO texto de Jaci ficou curto. Em vez de imitar a carta, ela escreveu para a própria avó, contando que tinha lido um documento antigo sobre uma praia, e que o documento era muito bem escrito e muito seguro de si. Terminava assim:\nEle contou as árvores,\ncontou os homens,\ncontou os dias.\nFaltou contar\nquem contava\nantes dele.\nQuando ela leu, ninguém riu. Iara reparou que aquele era outro tipo de resposta à carta, sem disfarce de brincadeira, e que a sala ficou em silêncio de um modo que ela ainda não sabia nomear.\n— Isso entra no sarau — disse Nina, com a voz baixa, e por uma vez não acrescentou mais nada.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual personagem faz a pergunta sobre quem já estava na praia?",
+       "options": [],
+       "answer": "Jaci",
+       "accept": [],
+       "hint": "Ela falava pouco nas aulas de literatura.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, com quem Jaci mora?",
+       "options": [
+        "Com a professora",
+        "Com a tia",
+        "Com a avó",
+        "Com uma colega"
+       ],
+       "answer": "Com a avó",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que limitação do escrivão Jaci aponta?",
+       "options": [
+        "Ele não sabia ler",
+        "Ele não falava a língua dos moradores e passou poucos dias ali",
+        "Ele nunca desembarcou",
+        "Ele escreveu a carta anos depois"
+       ],
+       "answer": "Ele não falava a língua dos moradores e passou poucos dias ali",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que pergunta Odete recomenda fazer a qualquer obra?",
+       "options": [
+        "Quantas páginas ela tem?",
+        "Quem fala aqui, e quem é apenas descrito?",
+        "Ela ganhou algum prêmio?",
+        "Em que cidade foi impressa?"
+       ],
+       "answer": "Quem fala aqui, e quem é apenas descrito?",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Jaci demora a aceitar escrever a resposta?",
+       "options": [
+        "Porque não gosta de sarau",
+        "Porque a avó a proibiu",
+        "Porque não entendeu a carta",
+        "Porque não quer falar em nome de povos inteiros"
+       ],
+       "answer": "Porque não quer falar em nome de povos inteiros",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual recurso se destaca no poema final de Jaci?",
+       "options": [
+        "A repetição do verbo “contar”",
+        "A rima em todos os versos",
+        "A imitação da linguagem do corretor",
+        "A citação de um provérbio"
+       ],
+       "answer": "A repetição do verbo “contar”",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que os versos finais sugerem sobre a história?",
+       "options": [
+        "Que a praia não tinha moradores",
+        "Que o escrivão errou nas contas das árvores",
+        "Que já havia uma história antes da chegada do escrivão",
+        "Que a avó de Jaci trabalhava como contadora"
+       ],
+       "answer": "Que já havia uma história antes da chegada do escrivão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o texto de Jaci deixa a sala em silêncio, enquanto as paródias provocam riso?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Poesia de exportação",
+     "synopsis": "Davi descobre o manifesto do movimento Pau-Brasil e levanta uma contradição: como descobrir o Brasil olhando de Paris?",
+     "text": "Davi tinha sido sorteado para apresentar o contexto no sarau e, para sua surpresa, estava gostando da pesquisa. Na biblioteca, encontrou o manifesto de 1924 que anunciava a chamada poesia Pau-Brasil. A ideia, à primeira vista, parecia estranha: uma poesia “de exportação”.\n— Exportação? — estranhou Iara. — Como se poema fosse soja?\nDavi explicou como tinha entendido. O pau-brasil, a madeira cuja tinta vermelha interessava aos europeus, foi o primeiro grande produto retirado daqui, e por isso acabou dando nome ao país. Durante séculos, em troca, a cultura brasileira vivera de importar: modelos de poesia, modas, formas de pensar. O manifesto queria inverter essa balança. Em vez de copiar a Europa, o poeta devia olhar para o que havia aqui, as favelas, a culinária, a fala das ruas, a mistura de tudo, e transformar isso em uma arte nova, capaz de interessar lá fora.\n— Então o título é uma metáfora — concluiu Nina. — Pegar a mercadoria que simboliza a exploração e dar a ela outro sentido.\n— Isso. E é também uma ironia, porque ele não fala da extração com orgulho inocente. Quem conhece a história da madeira sabe que ela acabou quase extinta.\nAté ali, tudo bem. Mas Davi havia encontrado outra coisa, e colocou um papel na mesa com ar de detetive.\n— Agora, o problema. Esse poeta era de família rica. Ele viajou à Europa várias vezes. Dizem que foi em Paris, olhando de longe, que ele enxergou o Brasil com novos olhos. Então: quem está descobrindo o Brasil, afinal? Não é um novo escrivão, chegando de fora, deslumbrado com as cores?\nFez-se um pequeno silêncio. Iara, que até então defendia o poeta, sentiu a irritação de quem foi pega de surpresa.\nLevaram a questão à professora Odete, que pareceu muito satisfeita, o que costumava ser mau sinal.\n— Não vou resolver isso para vocês — disse. — Mas vou dar duas perguntas. Primeira: a distância atrapalha o olhar crítico, ou às vezes é ela que o permite? Segunda: comparem o tom. O escrivão olhava para a terra e calculava o que ela podia render ao rei. Com que intenção o poeta olha?\nO grupo montou uma tabela no caderno. De um lado, o escrivão: narrador estrangeiro, destinatário poderoso, prosa respeitosa, encanto interessado. Do outro, o modernista: narrador da elite local, leitor desconfiado, verso curto, encanto irônico. Havia diferenças importantes, mas também um traço comum, que Jaci escreveu no pé da página: “os dois chegam de fora da praia”.\nDavi decidiu não esconder a contradição na apresentação. Abriria sua fala elogiando a ousadia do manifesto e fecharia com a pergunta que o tinha incomodado.\n— Mas e se o público achar que você está atacando o poeta? — perguntou Iara.\n— Ele passou a vida provocando as pessoas — respondeu Davi. — Acho que ele aguenta.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, em que ano foi lançado o manifesto encontrado por Davi?",
+       "options": [
+        "1500",
+        "1889",
+        "1924",
+        "1964"
+       ],
+       "answer": "1924",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que madeira dá nome ao país e ao movimento poético?",
+       "options": [],
+       "answer": "pau-brasil",
+       "accept": [
+        "pau brasil",
+        "o pau-brasil"
+       ],
+       "hint": "Pense na tinta vermelha que interessava aos europeus.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que significa a ideia de poesia “de exportação”?",
+       "options": [
+        "Vender livros somente na Europa",
+        "Criar arte nova a partir do Brasil, em vez de copiar modelos europeus",
+        "Traduzir toda a poesia para o francês",
+        "Enviar madeira junto com os poemas"
+       ],
+       "answer": "Criar arte nova a partir do Brasil, em vez de copiar modelos europeus",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual contradição Davi aponta?",
+       "options": [
+        "O poeta nunca leu a carta",
+        "O poeta odiava o verso livre",
+        "O poeta nasceu em Portugal",
+        "O poeta de elite viu o Brasil a partir de longe, como um novo escrivão"
+       ],
+       "answer": "O poeta de elite viu o Brasil a partir de longe, como um novo escrivão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual das características a tabela do grupo atribui ao modernista?",
+       "options": [
+        "Encanto irônico",
+        "Destinatário real",
+        "Prosa respeitosa",
+        "Narrador estrangeiro"
+       ],
+       "answer": "Encanto irônico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é o traço comum que Jaci escreve no pé da página?",
+       "options": [
+        "Os dois escreviam para o rei",
+        "Os dois chegam de fora da praia",
+        "Os dois usam verso livre",
+        "Os dois eram pobres"
+       ],
+       "answer": "Os dois chegam de fora da praia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o título Pau-Brasil tem um lado irônico?",
+       "options": [
+        "Porque a madeira nunca existiu",
+        "Porque o poeta não sabia o que era a madeira",
+        "Porque a planta simboliza também a exploração que quase a extinguiu",
+        "Porque os europeus detestavam a tinta vermelha"
+       ],
+       "answer": "Porque a planta simboliza também a exploração que quase a extinguiu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Davi decide manter a contradição na apresentação em vez de escondê-la?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Ensaio em duas vozes",
+     "synopsis": "No ensaio geral, a paródia não funciona para quem não conhece a carta, e o grupo inventa uma solução.",
+     "text": "Faltando três dias para o sarau, o grupo fez um ensaio geral para uma plateia de teste: os alunos do 9º ano, que tinham sido obrigados a comparecer e não escondiam isso. Nina subiu ao pequeno palco do auditório, ajeitou as folhas e leu a carta do corretor com todo o seu talento.\nSilêncio. Uma tosse. Um menino da primeira fila abriu um pacote de biscoitos com grande cuidado. Quando Nina chegou à vaga para o genro, a parte que sempre fazia a turma rir, ninguém reagiu.\nEla desceu do palco com o rosto vermelho.\n— Eles não entenderam nada.\n— Claro que não — disse Jaci, sem maldade. — Eles nunca leram a carta. Para eles, é só o anúncio mais esquisito do mundo.\nA professora Odete, sentada no fundo com o caderno no colo, aproveitou o momento.\n— Vocês acabaram de descobrir por conta própria uma coisa importante. A paródia depende do leitor. Chamamos de intertextualidade essa conversa entre textos, mas uma conversa só acontece se o outro souber do que se está falando. Quando alguém não reconhece o original, a graça e a crítica desaparecem. E agora, o que fazem?\nA primeira ideia foi colocar uma explicação antes. Davi escreveu duas páginas sobre a carta e o movimento modernista, que leu no ensaio seguinte. No meio da segunda página, o menino dos biscoitos estava dormindo de verdade.\n— Explicar a piada mata a piada — sentenciou Nina, sombria.\nFoi Iara quem teve a ideia, quase sem querer, enquanto arrumava as folhas espalhadas no chão. Por acaso, um trecho da carta tinha ficado ao lado de um trecho da paródia, e ela começou a ler um depois do outro, primeiro em tom solene, depois em tom de vendedor.\n— Esperem. E se não tiver explicação nenhuma? E se as duas vozes dividirem o palco? O escrivão diz a frase dele, o corretor responde com a sua. Como um jogo de pingue-pongue.\nPassaram a tarde remontando o texto. Davi ficou com o escrivão, de pé e muito formal, com uma folha enrolada na mão. Nina fez o corretor, de crachá e sorriso enorme. Uma frase sobre as águas era seguida de outra sobre a piscina aquecida. Uma frase sobre as árvores era seguida da promessa de “paisagismo incluso”. Para terminar, os dois se voltavam para a plateia e, em coro, pediam o favor para o genro.\nNo terceiro ensaio, o 9º ano voltou, com a mesma cara de obrigação. Na segunda rodada de frases, alguém deu uma risadinha. Na quarta, as risadas já se espalhavam. Quando o coro final chegou, o menino dos biscoitos gargalhou com a boca cheia e precisou ser socorrido com um copo de água.\nOdete fechou o caderno.\n— Vocês fizeram o público aprender o original enquanto ria da cópia. Isso é mais difícil do que parece.\nSó faltava decidir uma coisa: quem teria coragem de ler o poema de Jaci logo depois de tanta risada. Jaci olhou para os colegas e levantou a mão.\n— Eu leio. Depois do riso é que as pessoas estão escutando.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem é a plateia de teste do ensaio geral?",
+       "options": [
+        "Os pais dos alunos",
+        "Os professores",
+        "Os alunos do 9º ano",
+        "Os alunos do 1º ano"
+       ],
+       "answer": "Os alunos do 9º ano",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que nome a professora dá à conversa entre textos?",
+       "options": [],
+       "answer": "intertextualidade",
+       "accept": [
+        "a intertextualidade"
+       ],
+       "hint": "A palavra contém a ideia de “entre textos”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a paródia não funciona na primeira leitura?",
+       "options": [
+        "Nina leu baixo demais",
+        "A plateia não conhecia a carta original",
+        "O texto tinha muitos erros",
+        "O microfone não funcionou"
+       ],
+       "answer": "A plateia não conhecia a carta original",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que acontece quando Davi lê uma explicação antes da paródia?",
+       "options": [
+        "A plateia ri muito",
+        "A plateia aplaude de pé",
+        "O menino dos biscoitos dorme",
+        "A professora interrompe a leitura"
+       ],
+       "answer": "O menino dos biscoitos dorme",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a solução de Iara?",
+       "options": [
+        "Dividir o palco entre as vozes do escrivão e do corretor",
+        "Cancelar a paródia",
+        "Ler apenas a carta",
+        "Distribuir uma cópia para a plateia"
+       ],
+       "answer": "Dividir o palco entre as vozes do escrivão e do corretor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, com que frase do corretor é respondida a frase sobre as árvores?",
+       "options": [
+        "Vaga dupla na garagem",
+        "Piscina aquecida",
+        "Terra generosa",
+        "Paisagismo incluso"
+       ],
+       "answer": "Paisagismo incluso",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a nova montagem funciona melhor que a explicação?",
+       "options": [
+        "Ela é muito mais longa",
+        "O público conhece o original ao mesmo tempo em que ri da paródia",
+        "Ela elimina o texto da carta",
+        "Ela usa só a voz do corretor"
+       ],
+       "answer": "O público conhece o original ao mesmo tempo em que ri da paródia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Jaci diz que “depois do riso é que as pessoas estão escutando”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A carta seguinte",
+     "synopsis": "O sarau acontece, um pai protesta e Iara encontra sua resposta. No fim, a turma escreve uma carta para quem vier depois.",
+     "text": "Na noite do sarau, o auditório estava cheio de famílias, cadeiras emprestadas e cheiro de bolo. Davi abriu com o contexto e, como tinha prometido, terminou com sua pergunta incômoda: quem está descobrindo o Brasil, afinal? Em seguida, ele e Nina subiram para o jogo das duas vozes. As risadas vieram mais cedo do que no ensaio, porque os adultos reconheciam muito bem os folhetos de imóveis.\nDepois das risadas, Jaci foi até o microfone. Não fez introdução alguma. Leu os versos sobre quem contava antes, olhando para a avó, sentada na terceira fila, e voltou para o seu lugar. A sala levou um instante para aplaudir, e foi um aplauso diferente, mais demorado.\nNa hora do bolo, um senhor de bigode, pai de um aluno do outro grupo, aproximou-se de Iara com o copo de suco na mão.\n— Muito criativos — disse, em um tom que não era bem um elogio. — Mas não acho certo. Essa carta é um documento histórico, nosso primeiro texto. Vocês ridicularizam tudo e os jovens saem achando que nada merece respeito.\nUm mês antes, Iara teria sorrido e procurado uma saída. Agora, sentia as ideias se organizando sozinhas.\n— O senhor tem razão de que é um documento importante — disse ela. — Foi justamente por isso que lemos a carta inteira, até a parte do genro. Ninguém faz paródia daquilo que não leu com atenção. Rir não apaga o texto. Pelo contrário: o público de hoje saiu daqui sabendo do que ele fala. E muita gente nunca tinha ouvido uma frase dele.\nO senhor mastigou o bolo, pensativo.\n— E aquele poema da menina, o último? Esse não era piada.\n— Não era — concordou Iara. — Acho que é por isso que a carta precisava dos dois.\nEle não disse que ela o tinha convencido. Mas, antes de ir embora, pediu uma cópia dos textos, e Iara achou que aquilo contava.\nNa segunda-feira, a professora Odete apareceu com um último pedido. Queria que o grupo deixasse algo para a turma do ano seguinte, que também teria de encarar aquelas fotocópias. Eles se sentaram no pátio e discutiram muito, como sempre. Davi queria incluir um gráfico. Nina queria três páginas. Jaci queria que dissesse a verdade. Iara ficou com a caneta, e o resultado foi curto, escrito no tom do escrivão, mas virado para a frente:\n“Senhores do próximo ano: dou-vos notícia desta carta, achada numa pilha de fotocópias. Parece árida, mas, a quem souber lavrá-la, muito há de render. Levai tesoura. Perguntai quem fala e quem falta. E, se vos pedirem algum favor para um genro, desconfiai.”\nGrampearam o bilhete à primeira fotocópia e o entregaram à professora. Ela leu, levantou uma sobrancelha e guardou o papel na pasta sem comentar.\nIara foi embora pensando que, de todos os textos daquele mês, aquele era o único que ela escrevera sem precisar de nota. Na porta, olhou para trás. Sobre a mesa, a pilha esperava o ano seguinte, certa de si, com suas águas sem fim. Ela riu sozinha. Agora, já sabia lê-la.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem encerra sua fala com a pergunta “quem está descobrindo o Brasil, afinal?”",
+       "options": [
+        "Iara",
+        "Davi",
+        "Jaci",
+        "Nina"
+       ],
+       "answer": "Davi",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que os adultos riem mais cedo do que a plateia do ensaio?",
+       "options": [
+        "Conhecem bem os folhetos de imóveis",
+        "Tinham lido o livrinho do poeta",
+        "Estavam na fila do bolo",
+        "Foram avisados pela professora"
+       ],
+       "answer": "Conhecem bem os folhetos de imóveis",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, para quem Jaci olha enquanto lê seus versos?",
+       "options": [],
+       "answer": "a avó",
+       "accept": [
+        "avó",
+        "para a avó",
+        "sua avó"
+       ],
+       "hint": "Ela estava sentada na terceira fila.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a crítica do senhor de bigode?",
+       "options": [
+        "O sarau era muito longo",
+        "Faltava bolo para todos",
+        "Os alunos ridicularizavam um documento histórico",
+        "A carta não era autêntica"
+       ],
+       "answer": "Os alunos ridicularizavam um documento histórico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual argumento Iara usa para responder?",
+       "options": [
+        "A carta é muito chata e pode ser ignorada",
+        "Ninguém faz paródia daquilo que não leu com atenção",
+        "A professora mandou fazer a paródia",
+        "Só os jovens entendem de literatura"
+       ],
+       "answer": "Ninguém faz paródia daquilo que não leu com atenção",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é o pedido final da professora ao grupo?",
+       "options": [
+        "Publicar um livro de poemas",
+        "Repetir o sarau no ano seguinte",
+        "Escrever uma resenha do sarau",
+        "Deixar algo para a turma do ano seguinte"
+       ],
+       "answer": "Deixar algo para a turma do ano seguinte",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que indica a frase final, “agora, já sabia lê-la”?",
+       "options": [
+        "Iara aprendeu a ler uma letra antiga",
+        "Iara ganhou uma leitura crítica da carta e de outros textos",
+        "Iara decorou a carta inteira",
+        "Iara corrigiu os erros das fotocópias"
+       ],
+       "answer": "Iara ganhou uma leitura crítica da carta e de outros textos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Iara escolheu escrever o bilhete no tom do escrivão, e não no seu próprio?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }

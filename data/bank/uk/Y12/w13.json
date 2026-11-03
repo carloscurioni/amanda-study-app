@@ -1,0 +1,497 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y12",
+ "academic_week": 13,
+ "subjects": {
+  "bio-hl": {
+   "topic": "D2.3 Water potential",
+   "questions": [
+    {
+     "id": "rqtp4uv5zm02z",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What is the water potential of pure water at 298 K and 101.3 kPa?",
+     "options": [
+      "0 kPa",
+      "100 kPa",
+      "−100 kPa",
+      "101.3 kPa"
+     ],
+     "answer": "0 kPa",
+     "accept": [],
+     "hint": "It is the reference value.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7jctxy1stma0r",
+     "subject": "bio",
+     "type": "short",
+     "q": "State a unit used for water potential.",
+     "options": [],
+     "answer": "kPa",
+     "accept": [
+      "kilopascal",
+      "kilopascals",
+      "MPa",
+      "megapascal",
+      "megapascals"
+     ],
+     "hint": "It is a unit of pressure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ky31rgqkkis2",
+     "subject": "bio",
+     "type": "mc",
+     "q": "In which direction does water move by osmosis?",
+     "options": [
+      "From lower to higher water potential",
+      "From higher to lower water potential",
+      "Always into the cell",
+      "Always from lower to higher pressure potential"
+     ],
+     "answer": "From higher to lower water potential",
+     "accept": [],
+     "hint": "Compare this to a gradient that runs downhill.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8olggx14klcrf",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What effect does adding solutes have on the solute potential of water?",
+     "options": [
+      "It makes it more negative",
+      "It makes it more positive",
+      "It makes it zero",
+      "It has no effect"
+     ],
+     "answer": "It makes it more negative",
+     "accept": [],
+     "hint": "Solutes reduce the tendency of water to move.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ad02tw2oyahx",
+     "subject": "bio",
+     "type": "short",
+     "q": "State the term for a solution with a higher solute concentration than the cell.",
+     "options": [],
+     "answer": "hypertonic",
+     "accept": [
+      "a hypertonic solution"
+     ],
+     "hint": "The prefix means 'above'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg0q0edjotdv2",
+     "subject": "bio",
+     "type": "num",
+     "q": "A plant cell has a solute potential of −800 kPa and a pressure potential of +300 kPa. Calculate its water potential in kPa.",
+     "options": [],
+     "answer": "-500",
+     "accept": [],
+     "hint": "Add the two components, keeping their signs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8l4vvs1mu27e2",
+     "subject": "bio",
+     "type": "num",
+     "q": "A plant cell has a water potential of −450 kPa and a solute potential of −700 kPa. Calculate its pressure potential in kPa.",
+     "options": [],
+     "answer": "250",
+     "accept": [],
+     "hint": "Rearrange the water potential equation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryf6kxig1g834",
+     "subject": "bio",
+     "type": "num",
+     "q": "A plant cell with a solute potential of −600 kPa is placed in pure water and reaches equilibrium. Calculate its pressure potential in kPa.",
+     "options": [],
+     "answer": "600",
+     "accept": [],
+     "hint": "At equilibrium, the cell's water potential equals that of pure water.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raumb1z1vydhco",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Cell A has a water potential of −400 kPa and adjacent cell B has −700 kPa. What is the net movement of water?",
+     "options": [
+      "From A to B",
+      "From B to A",
+      "No net movement",
+      "Equal in both directions, with solutes moving to A"
+     ],
+     "answer": "From A to B",
+     "accept": [],
+     "hint": "Identify the higher water potential. Remember that −400 is greater than −700.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15ay10yw3qb2m",
+     "subject": "bio",
+     "type": "mc",
+     "q": "A plant cell with a water potential of −300 kPa is placed in a solution of −500 kPa. What happens?",
+     "options": [
+      "Water enters and pressure potential rises",
+      "Water leaves and pressure potential falls",
+      "Solutes enter by osmosis",
+      "There is no net movement of water"
+     ],
+     "answer": "Water leaves and pressure potential falls",
+     "accept": [],
+     "hint": "Compare the two values, then think about the wall.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf4j7iu642pk0",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What is the approximate pressure potential of a fully plasmolysed plant cell?",
+     "options": [
+      "Equal to its solute potential",
+      "Strongly positive",
+      "0 kPa",
+      "Equal to atmospheric pressure"
+     ],
+     "answer": "0 kPa",
+     "accept": [],
+     "hint": "The membrane is no longer pressing against the wall.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqcqy9z1azcek3",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Where in a plant is a negative pressure potential commonly found?",
+     "options": [
+      "In a turgid leaf cell",
+      "In the sap under tension in xylem",
+      "In the vacuole of a turgid root cell",
+      "In phloem near the source"
+     ],
+     "answer": "In the sap under tension in xylem",
+     "accept": [],
+     "hint": "Think about transpiration pull.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12qkcss1gwimn3",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Why does an animal cell in a hypotonic solution burst rather than reach a high pressure potential?",
+     "options": [
+      "It has no cell wall to resist expansion",
+      "Its membrane has no aquaporins",
+      "It has a very high solute potential",
+      "Its water potential is always zero"
+     ],
+     "answer": "It has no cell wall to resist expansion",
+     "accept": [],
+     "hint": "What in a plant cell allows pressure potential to build up?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq0woc1yp5avu",
+     "subject": "bio",
+     "type": "num",
+     "q": "Plant tissue has a mass of 12.5 g before and 11.0 g after being placed in a solution. Calculate the percentage change in mass. Use a minus sign for a loss.",
+     "options": [],
+     "answer": "-12",
+     "accept": [],
+     "hint": "Divide the change in mass by the initial mass.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwd9a6yf1326f",
+     "subject": "bio",
+     "type": "open",
+     "q": "A plant cell has been placed in a hypotonic solution. Explain, using solute potential and pressure potential, how its water potential changes as it takes in water.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider how each component changes as water enters.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ilv3mw1hplll",
+     "subject": "bio",
+     "type": "open",
+     "q": "Design an experiment to determine the water potential of potato tissue. Include the variables, how the results would be processed, and how the value would be obtained.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think of a range of solutions with known water potentials, and the point of no mass change.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bio-sl": {
+   "topic": "D2.3 Water potential",
+   "questions": [
+    {
+     "id": "r6e4n581hetlp3",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which statement defines osmosis?",
+     "options": [
+      "Net movement of water across a partially permeable membrane to a higher solute concentration",
+      "Movement of solutes across a membrane to a lower solute concentration",
+      "Active movement of water using ATP",
+      "Movement of water through xylem to the leaves"
+     ],
+     "answer": "Net movement of water across a partially permeable membrane to a higher solute concentration",
+     "accept": [],
+     "hint": "Focus on what moves and through what.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r162jf73fc5zo9",
+     "subject": "bio",
+     "type": "short",
+     "q": "State the term for a solution with a lower solute concentration than the cell's cytoplasm.",
+     "options": [],
+     "answer": "hypotonic",
+     "accept": [
+      "a hypotonic solution"
+     ],
+     "hint": "The prefix means 'below'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14okz1g1k0sbcp",
+     "subject": "bio",
+     "type": "short",
+     "q": "State the term for a solution with the same solute concentration as the cell's cytoplasm.",
+     "options": [],
+     "answer": "isotonic",
+     "accept": [
+      "an isotonic solution"
+     ],
+     "hint": "The prefix means 'equal'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs9qm10z7zhvl",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What happens to an animal cell placed in distilled water?",
+     "options": [
+      "It shrinks",
+      "It stays the same size",
+      "It takes in water and may burst",
+      "It forms a cell wall"
+     ],
+     "answer": "It takes in water and may burst",
+     "accept": [],
+     "hint": "The cytoplasm has more solutes than distilled water.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra0e0vrehlf6j",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What happens to a plant cell placed in a hypertonic solution?",
+     "options": [
+      "It bursts",
+      "The membrane pulls away from the cell wall",
+      "The cell wall dissolves",
+      "It gains water and becomes turgid"
+     ],
+     "answer": "The membrane pulls away from the cell wall",
+     "accept": [],
+     "hint": "Water leaves the cell.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbulzd415b7mn4",
+     "subject": "bio",
+     "type": "short",
+     "q": "State the name of the process in which a plant cell's membrane pulls away from its wall as water is lost.",
+     "options": [],
+     "answer": "plasmolysis",
+     "accept": [],
+     "hint": "Think about what happens to the cytoplasm as it shrinks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bkbvcdw2kb95",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Why does a plant cell not burst in a hypotonic solution?",
+     "options": [
+      "Its cell wall resists further expansion",
+      "Its membrane is impermeable to water",
+      "It pumps all water out using ATP",
+      "Its vacuole contains no solutes"
+     ],
+     "answer": "Its cell wall resists further expansion",
+     "accept": [],
+     "hint": "Which structure do plant cells have that animal cells lack?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtg242jgyvzi",
+     "subject": "bio",
+     "type": "short",
+     "q": "State the term for the pressure of cell contents against a plant cell wall.",
+     "options": [],
+     "answer": "turgor pressure",
+     "accept": [
+      "turgor"
+     ],
+     "hint": "Think about a firm plant cell that is not wilting.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bhaqkzu3qha0",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Why are organs for transplant kept in a cold isotonic solution?",
+     "options": [
+      "To prevent net water gain or loss by the cells",
+      "To provide the cells with oxygen",
+      "To stop bacteria from reproducing by osmosis",
+      "To dissolve the blood in the vessels"
+     ],
+     "answer": "To prevent net water gain or loss by the cells",
+     "accept": [],
+     "hint": "Consider what hypotonic and hypertonic solutions would do to tissue.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1igh7lwxcwzav",
+     "subject": "bio",
+     "type": "num",
+     "q": "A potato cylinder has a mass of 5.0 g before and 5.6 g after being placed in a sucrose solution. Calculate the percentage change in mass.",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "Divide the change in mass by the initial mass.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r149b110xskfq4",
+     "subject": "bio",
+     "type": "num",
+     "q": "A potato cylinder has a mass of 8.0 g before and 6.8 g after being placed in a sucrose solution. Calculate the percentage change in mass. Use a minus sign for a loss.",
+     "options": [],
+     "answer": "-15",
+     "accept": [],
+     "hint": "Divide the change in mass by the initial mass.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1naaq9hrv5o76",
+     "subject": "bio",
+     "type": "mc",
+     "q": "In an osmosis practical, why is percentage change in mass used rather than change in mass?",
+     "options": [
+      "The cylinders may have different initial masses",
+      "It removes the need for a balance",
+      "Mass cannot be measured accurately in grams",
+      "It increases the rate of osmosis"
+     ],
+     "answer": "The cylinders may have different initial masses",
+     "accept": [],
+     "hint": "Think about making fair comparisons.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v3zfck1cll85q",
+     "subject": "bio",
+     "type": "mc",
+     "q": "In a practical testing tissue in a range of sucrose solutions, which is the independent variable?",
+     "options": [
+      "Final mass of tissue",
+      "Sucrose concentration",
+      "Temperature of the solution",
+      "Volume of solution"
+     ],
+     "answer": "Sucrose concentration",
+     "accept": [],
+     "hint": "It is the factor deliberately changed by the investigator.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rai8w0wkhnxn0",
+     "subject": "bio",
+     "type": "mc",
+     "q": "A graph shows no change in mass of tissue at 0.3 mol dm⁻³ sucrose. What does this suggest?",
+     "options": [
+      "The tissue contains no water",
+      "The tissue has died",
+      "The solution is isotonic with the tissue",
+      "Sucrose has entered every cell"
+     ],
+     "answer": "The solution is isotonic with the tissue",
+     "accept": [],
+     "hint": "What does no net water movement imply?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "redci1mho9fgk",
+     "subject": "bio",
+     "type": "open",
+     "q": "Outline a method to estimate the solute concentration of potato tissue using a range of sucrose solutions. Include how you would control variables and process your results.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the range of solutions, controlled variables, measurements and the graph.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wdxmynw4gpcw",
+     "subject": "bio",
+     "type": "open",
+     "q": "Explain why intravenous fluids given to patients must be isotonic with blood plasma, referring to the effects of hypotonic and hypertonic solutions on red blood cells.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider both possible errors separately.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
