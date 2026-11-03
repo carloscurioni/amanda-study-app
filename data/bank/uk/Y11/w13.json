@@ -1951,6 +1951,2459 @@
      "errors": []
     }
    ]
+  },
+  "fmath": {
+   "topic": "Small increments and approximations",
+   "questions": [
+    {
+     "id": "rrpvmp615wsa5",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "For a small change δx in x, which statement is correct when y = f(x)?",
+     "options": [
+      "δy ≈ (dy/dx) δx",
+      "δy ≈ (dx/dy) δx",
+      "δy ≈ (dy/dx) + δx",
+      "δy ≈ δx ÷ y"
+     ],
+     "answer": "δy ≈ (dy/dx) δx",
+     "accept": [],
+     "hint": "Think of the gradient as \"change in y per unit change in x\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1inwugm1irsx5f",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "The approximation δy ≈ (dy/dx) δx is most accurate when:",
+     "options": [
+      "δx is very small",
+      "δx is very large",
+      "y is very large",
+      "dy/dx is zero"
+     ],
+     "answer": "δx is very small",
+     "accept": [],
+     "hint": "The curve looks almost like its tangent over a tiny interval.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16r8bic1mfm5ay",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Given y = x², use calculus to find an approximate value of δy when x = 5 and δx = 0.01.",
+     "options": [],
+     "answer": "0.1",
+     "accept": [],
+     "hint": "Differentiate first, then substitute x = 5.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14ox6m21dzcec0",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Given y = x³, find the approximate increase in y when x increases from 2 to 2.01.",
+     "options": [],
+     "answer": "0.12",
+     "accept": [],
+     "hint": "δx is the difference between the two x values.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7k1wsp1079xlk",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Given y = 2x³ − x, find the approximate change in y when x increases from 1 to 1.02.",
+     "options": [],
+     "answer": "0.1",
+     "accept": [],
+     "hint": "Differentiate, evaluate at x = 1, then multiply by δx.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rep2xb71ph5ih5",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Given y = 1/x, find the approximate change in y when x increases from 2 to 2.02. Give your answer as a decimal.",
+     "options": [],
+     "answer": "-0.005",
+     "accept": [],
+     "hint": "Write y = x⁻¹. The change should be negative.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11ljptb1721n4e",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Given y = √x, use δy ≈ (dy/dx) δx with x = 25 to estimate √25.1.",
+     "options": [],
+     "answer": "5.01",
+     "accept": [],
+     "hint": "Add your δy to √25.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1so0m4h1k3vq86",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Use small increments, starting from x = 16, to estimate √16.08.",
+     "options": [],
+     "answer": "4.01",
+     "accept": [],
+     "hint": "dy/dx = 1/(2√x) for y = √x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xhrhzy67czi2",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Given y = ln x, find the approximate change in y when x increases from 4 to 4.02.",
+     "options": [],
+     "answer": "0.005",
+     "accept": [],
+     "hint": "The derivative of ln x is 1/x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjvmtkct0xcik",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Given y = sin x, with x in radians, find the approximate change in y when x increases from 0 to 0.05.",
+     "options": [],
+     "answer": "0.05",
+     "accept": [],
+     "hint": "Evaluate the derivative of sin x at x = 0.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjb7o2h5tqjq",
+     "subject": "fmath",
+     "type": "short",
+     "q": "The radius of a circle increases from 10 cm to 10.1 cm. Find, in terms of π, the approximate increase in its area in cm².",
+     "options": [],
+     "answer": "2π",
+     "accept": [
+      "2 π",
+      "2pi"
+     ],
+     "hint": "A = πr², so find dA/dr at r = 10.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tl6dstt6r36f",
+     "subject": "fmath",
+     "type": "short",
+     "q": "The radius of a sphere increases from 3 cm to 3.02 cm. Given V = (4/3)πr³, find, in terms of π, the approximate increase in volume in cm³.",
+     "options": [],
+     "answer": "0.72π",
+     "accept": [
+      "0.72 π",
+      "0.72pi"
+     ],
+     "hint": "dV/dr = 4πr².",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wn1yb2rjji20",
+     "subject": "fmath",
+     "type": "num",
+     "q": "The sides of a cube increase from 5 cm to 5.01 cm. Given S = 6x², find the approximate increase in the surface area in cm².",
+     "options": [],
+     "answer": "0.6",
+     "accept": [],
+     "hint": "Differentiate S with respect to x and use x = 5.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxfy31f4yxb08",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Given y = x², when x = 4 a small change in x causes y to increase by 0.4. Find the approximate value of δx.",
+     "options": [],
+     "answer": "0.05",
+     "accept": [],
+     "hint": "Rearrange δy ≈ (dy/dx) δx to make δx the subject.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxa8gu67z4ier",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "Given y = x³, x decreases by 2%. Find the approximate percentage change in y.",
+     "options": [
+      "A decrease of 6%",
+      "A decrease of 2%",
+      "A decrease of 8%",
+      "An increase of 6%"
+     ],
+     "answer": "A decrease of 6%",
+     "accept": [],
+     "hint": "Divide δy ≈ 3x² δx by y = x³.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fe795c10q22if",
+     "subject": "fmath",
+     "type": "open",
+     "q": "Explain why the approximation δy ≈ (dy/dx) δx becomes less accurate as δx gets larger. Refer to the tangent and the curve.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare the rise along the tangent with the rise along the curve.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "fre": {
+   "topic": "Town versus country: where I would like to live (si + present, future)",
+   "questions": [
+    {
+     "id": "rrcqxmr1n0xorl",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does \"la campagne\" mean?",
+     "options": [
+      "the countryside",
+      "the town",
+      "the mountain",
+      "the seaside"
+     ],
+     "answer": "the countryside",
+     "accept": [],
+     "hint": "It is the opposite of \"la ville\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rixk51o10wuprw",
+     "subject": "fre",
+     "type": "short",
+     "q": "Give the French adjective (masculine form) for \"noisy\".",
+     "options": [],
+     "answer": "bruyant",
+     "accept": [],
+     "hint": "It comes from a word meaning noise, \"le bruit\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk48zdf1axc0pt",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which word is the opposite of \"bruyant\"?",
+     "options": [
+      "calme",
+      "grand",
+      "sale",
+      "cher"
+     ],
+     "answer": "calme",
+     "accept": [],
+     "hint": "Think of a peaceful village.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6nn4x6swmzfn",
+     "subject": "fre",
+     "type": "mc",
+     "q": "In a French \"si\" sentence about a likely future event, which tense follows \"si\"?",
+     "options": [
+      "the present",
+      "the future",
+      "the imperfect",
+      "the conditional"
+     ],
+     "answer": "the present",
+     "accept": [],
+     "hint": "It is the same rule as English: \"If I have money…\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4bajxm10zuwoy",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct sentence.",
+     "options": [
+      "Si j'ai le temps, je visiterai le musée.",
+      "Si j'aurai le temps, je visiterai le musée.",
+      "Si j'ai le temps, je visiter le musée.",
+      "Si j'aurai le temps, je visite le musée."
+     ],
+     "answer": "Si j'ai le temps, je visiterai le musée.",
+     "accept": [],
+     "hint": "Check the tense straight after \"si\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxwscpg15clp5g",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: Si j'ai de l'argent, j'___ à la campagne.",
+     "options": [
+      "habiterai",
+      "habite",
+      "habitais",
+      "habiter"
+     ],
+     "answer": "habiterai",
+     "accept": [],
+     "hint": "The main clause talks about the future.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18tm3ku1e275xg",
+     "subject": "fre",
+     "type": "short",
+     "q": "Complete with the future of aller: Si je gagne au loto, j'___ à Paris.",
+     "options": [],
+     "answer": "irai",
+     "accept": [],
+     "hint": "This irregular future stem is a single letter.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vcgg5s1st9a1p",
+     "subject": "fre",
+     "type": "short",
+     "q": "Complete with the future of avoir: Si je travaille bien, j'___ de bonnes notes.",
+     "options": [],
+     "answer": "aurai",
+     "accept": [],
+     "hint": "The future stem of avoir is \"aur-\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjhyvfmwo30s3",
+     "subject": "fre",
+     "type": "short",
+     "q": "Complete with the future of être: Si nous habitons en ville, nous ___ près du collège.",
+     "options": [],
+     "answer": "serons",
+     "accept": [],
+     "hint": "The future stem of être is \"ser-\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r135zrksupnlia",
+     "subject": "fre",
+     "type": "short",
+     "q": "Complete with the future of sortir: S'il fait beau, nous ___ ce soir.",
+     "options": [],
+     "answer": "sortirons",
+     "accept": [],
+     "hint": "Add the \"nous\" future ending to the infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pnkv6lkh8i92",
+     "subject": "fre",
+     "type": "short",
+     "q": "Complete with the present of venir: Si tu ___ à la campagne, tu verras les vaches.",
+     "options": [],
+     "answer": "viens",
+     "accept": [],
+     "hint": "Use the \"tu\" form of the present tense.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxyxynqy32ap4",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which sentence gives an advantage of living in town?",
+     "options": [
+      "Il y a beaucoup de magasins et de transports.",
+      "Il n'y a pas assez de bus.",
+      "L'air est très pollué.",
+      "Il y a trop de circulation."
+     ],
+     "answer": "Il y a beaucoup de magasins et de transports.",
+     "accept": [],
+     "hint": "Look for something positive about services.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r98p1rvslvie",
+     "subject": "fre",
+     "type": "mc",
+     "q": "\"La ville est bruyante, mais la campagne est calme. Donc, la campagne est ___ bruyante que la ville.\" Choose the missing word.",
+     "options": [
+      "moins",
+      "plus",
+      "aussi",
+      "très"
+     ],
+     "answer": "moins",
+     "accept": [],
+     "hint": "Which place has less noise?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13cd5lu1jpd44n",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does \"Si j'habite à la campagne, je m'ennuierai\" mean?",
+     "options": [
+      "If I live in the countryside, I will get bored.",
+      "If I lived in the countryside, I would be happy.",
+      "When I lived in the countryside, I was bored.",
+      "If I live in the countryside, I will be calm."
+     ],
+     "answer": "If I live in the countryside, I will get bored.",
+     "accept": [],
+     "hint": "\"S'ennuyer\" is about having nothing to do.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4l5p4a98j5al",
+     "subject": "fre",
+     "type": "open",
+     "q": "In French, write 3–4 sentences comparing life in town and in the countryside. Give your own opinion and a reason.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use \"plus… que\" or \"moins… que\", and \"à mon avis\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17l7y6rmr6pdq",
+     "subject": "fre",
+     "type": "open",
+     "q": "In French, write 3–4 sentences saying where you would like to live in the future. Include at least two \"si\" clauses with the present and the future.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start with \"Si j'ai…\" or \"Si je gagne…\".",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "geog": {
+   "topic": "Changing employment structures: the Clark–Fisher model",
+   "questions": [
+    {
+     "id": "rjkl59q5vsrew",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which sector of employment involves extracting raw materials?",
+     "options": [
+      "Primary",
+      "Secondary",
+      "Tertiary",
+      "Quaternary"
+     ],
+     "answer": "Primary",
+     "accept": [],
+     "hint": "Think of farming, fishing and mining.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r186i1zlt5mwhx",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which job is in the secondary sector?",
+     "options": [
+      "Car factory worker",
+      "Coal miner",
+      "Nurse",
+      "Software researcher"
+     ],
+     "answer": "Car factory worker",
+     "accept": [],
+     "hint": "This sector makes finished goods.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u21vsx1mto64o",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which job is in the tertiary sector?",
+     "options": [
+      "Shop assistant",
+      "Fisher",
+      "Steelworker",
+      "Forestry worker"
+     ],
+     "answer": "Shop assistant",
+     "accept": [],
+     "hint": "This sector provides services.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rksj2mr1ikqf9v",
+     "subject": "geog",
+     "type": "short",
+     "q": "Name the employment sector that includes research, development and information-based services.",
+     "options": [],
+     "answer": "quaternary",
+     "accept": [
+      "quaternary sector"
+     ],
+     "hint": "It is the fourth sector.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11ftz0kpbxi5u",
+     "subject": "geog",
+     "type": "mc",
+     "q": "The Clark–Fisher model shows how:",
+     "options": [
+      "employment structure changes as a country develops",
+      "population changes over time",
+      "cities grow outward from the centre",
+      "rivers change downstream"
+     ],
+     "answer": "employment structure changes as a country develops",
+     "accept": [],
+     "hint": "It is about the proportion of workers in each sector.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7j2dk3k8ihbi",
+     "subject": "geog",
+     "type": "mc",
+     "q": "According to the model, which sector employs the largest share of workers in a pre-industrial society?",
+     "options": [
+      "Primary",
+      "Secondary",
+      "Tertiary",
+      "Quaternary"
+     ],
+     "answer": "Primary",
+     "accept": [],
+     "hint": "Most people grow their own food in this stage.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g1slsj1gojsgb",
+     "subject": "geog",
+     "type": "mc",
+     "q": "According to the model, which sector usually employs the largest share in a high-income country?",
+     "options": [
+      "Tertiary",
+      "Primary",
+      "Secondary",
+      "All are equal"
+     ],
+     "answer": "Tertiary",
+     "accept": [],
+     "hint": "Think of banks, shops, healthcare and tourism.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n659fp1cr8kyv",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What happens to secondary employment over the full course of the model?",
+     "options": [
+      "It rises, then falls",
+      "It only rises",
+      "It only falls",
+      "It stays constant"
+     ],
+     "answer": "It rises, then falls",
+     "accept": [],
+     "hint": "Consider industrialisation and what follows it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rawrggay46otf",
+     "subject": "geog",
+     "type": "short",
+     "q": "What term describes the decline of manufacturing industry in a country?",
+     "options": [],
+     "answer": "deindustrialisation",
+     "accept": [
+      "deindustrialization",
+      "de-industrialisation",
+      "de-industrialization"
+     ],
+     "hint": "It begins with the prefix \"de-\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19at2fi1nveta0",
+     "subject": "geog",
+     "type": "mc",
+     "q": "A main reason primary employment falls as a country develops is:",
+     "options": [
+      "mechanisation of farming and mining",
+      "a fall in demand for all food",
+      "a ban on exports",
+      "a fall in population"
+     ],
+     "answer": "mechanisation of farming and mining",
+     "accept": [],
+     "hint": "Think about what machines do to labour needs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riz6fdxilrmhg",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Why has manufacturing moved from many high-income countries to newly emerging economies?",
+     "options": [
+      "Lower labour costs",
+      "Higher wages",
+      "Stricter rules on factories",
+      "Fewer workers available"
+     ],
+     "answer": "Lower labour costs",
+     "accept": [],
+     "hint": "Consider what companies try to reduce.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtc52g719wcox7",
+     "subject": "geog",
+     "type": "num",
+     "q": "In a country, 10% of workers are in the primary sector and 25% in the secondary sector. The rest are in the tertiary and quaternary sectors. What percentage is that?",
+     "options": [],
+     "answer": "65",
+     "accept": [],
+     "hint": "All the sectors must add up to 100%.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1optuyhlxi7vw",
+     "subject": "geog",
+     "type": "mc",
+     "q": "A country has 60% primary, 15% secondary and 25% tertiary employment. It is most likely to be:",
+     "options": [
+      "a low-income country",
+      "a post-industrial country",
+      "a high-income country",
+      "a country with no farming"
+     ],
+     "answer": "a low-income country",
+     "accept": [],
+     "hint": "Look at which sector dominates.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1frezxg9jpymj",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which is a limitation of the Clark–Fisher model?",
+     "options": [
+      "Not all countries follow the same path",
+      "It ignores employment altogether",
+      "It only applies to one city",
+      "It cannot be shown on a graph"
+     ],
+     "answer": "Not all countries follow the same path",
+     "accept": [],
+     "hint": "Some countries develop services without a big factory stage.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfxsqn2y33nly",
+     "subject": "geog",
+     "type": "open",
+     "q": "Describe how the employment structure of a newly emerging economy is likely to change over the next few decades. Use the sector names in your answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start with which sector is falling and which are rising, then give reasons.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1csjpyu3agnom",
+     "subject": "geog",
+     "type": "open",
+     "q": "Explain two reasons why tertiary employment grows as a country becomes wealthier.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider people's disposable income and the services governments provide.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "hist": {
+   "topic": "The Berlin Wall, 1961",
+   "questions": [
+    {
+     "id": "rsyo43m1htar3r",
+     "subject": "hist",
+     "type": "mc",
+     "q": "In which month and year did construction of the Berlin Wall begin?",
+     "options": [
+      "August 1961",
+      "June 1953",
+      "October 1948",
+      "November 1989"
+     ],
+     "answer": "August 1961",
+     "accept": [],
+     "hint": "It happened in the summer, early in the 1960s.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4fkbcd13bnkgm",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Who was the leader of East Germany when the Wall was built?",
+     "options": [
+      "Walter Ulbricht",
+      "Konrad Adenauer",
+      "Willy Brandt",
+      "Erich Honecker"
+     ],
+     "answer": "Walter Ulbricht",
+     "accept": [],
+     "hint": "He pressed Moscow to stop the flow of refugees.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15di5y8uqk0si",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which Soviet leader approved the building of the Wall?",
+     "options": [
+      "Khrushchev",
+      "Stalin",
+      "Brezhnev",
+      "Gorbachev"
+     ],
+     "answer": "Khrushchev",
+     "accept": [],
+     "hint": "He met the US President in Vienna in June 1961.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r472937lynwq1",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Roughly how many East Germans had left for the West between 1949 and 1961?",
+     "options": [
+      "Between 2.5 and 3 million",
+      "About 30,000",
+      "About 300,000",
+      "About 30 million"
+     ],
+     "answer": "Between 2.5 and 3 million",
+     "accept": [],
+     "hint": "It was a large share of a population of about 17–18 million.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wedloqwa1jvz",
+     "subject": "hist",
+     "type": "short",
+     "q": "What two-word term describes the loss of skilled and educated workers from East Germany?",
+     "options": [],
+     "answer": "brain drain",
+     "accept": [],
+     "hint": "It suggests talent flowing away.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1alhmow1sq5sj7",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Why was West Berlin an escape route for East Germans?",
+     "options": [
+      "It was a Western-controlled area inside East Germany",
+      "It had no police",
+      "It was part of the USSR",
+      "It had a border with France"
+     ],
+     "answer": "It was a Western-controlled area inside East Germany",
+     "accept": [],
+     "hint": "Consider where Berlin was on the map of divided Germany.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rap47ue8k59a",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which was a main reason for building the Wall?",
+     "options": [
+      "To stop refugees leaving East Germany",
+      "To protect West Berlin from flooding",
+      "To mark the end of the Cold War",
+      "To reunite Germany"
+     ],
+     "answer": "To stop refugees leaving East Germany",
+     "accept": [],
+     "hint": "Look at who could no longer cross.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq1mm881h64ovp",
+     "subject": "hist",
+     "type": "mc",
+     "q": "How did East Germany officially justify the Wall?",
+     "options": [
+      "As protection against Western and \"fascist\" influence",
+      "As a way to reduce traffic",
+      "As a temporary repair project",
+      "As a gift to West Berlin"
+     ],
+     "answer": "As protection against Western and \"fascist\" influence",
+     "accept": [],
+     "hint": "The official name described it as a defensive barrier.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8xhlb5ymr7kr",
+     "subject": "hist",
+     "type": "short",
+     "q": "Name the famous crossing point in Berlin where Soviet and American tanks faced each other in October 1961.",
+     "options": [],
+     "answer": "Checkpoint Charlie",
+     "accept": [],
+     "hint": "Its name uses a letter from the phonetic alphabet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rca8flj5zh8o",
+     "subject": "hist",
+     "type": "mc",
+     "q": "How did the USA respond when the Wall went up?",
+     "options": [
+      "It protested and reinforced West Berlin but did not remove the Wall by force",
+      "It invaded East Berlin",
+      "It withdrew all troops from Germany",
+      "It helped build the Wall"
+     ],
+     "answer": "It protested and reinforced West Berlin but did not remove the Wall by force",
+     "accept": [],
+     "hint": "Remember that war with the USSR risked nuclear conflict.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ypclenwsc6gn",
+     "subject": "hist",
+     "type": "num",
+     "q": "In which year did President Kennedy visit West Berlin and give his famous speech there?",
+     "options": [],
+     "answer": "1963",
+     "accept": [],
+     "hint": "It was two years after the Wall was built.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ty7nlu7exjqt",
+     "subject": "hist",
+     "type": "mc",
+     "q": "What was the main purpose of Kennedy's speech in West Berlin?",
+     "options": [
+      "To show US solidarity with West Berliners",
+      "To announce the end of NATO",
+      "To demand that West Berlin join East Germany",
+      "To begin peace talks about Korea"
+     ],
+     "answer": "To show US solidarity with West Berliners",
+     "accept": [],
+     "hint": "Think about the message his visit sent to people living beside the Wall.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yhrilr1v5mfqk",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which statement best describes one effect of the Wall on the Cold War in Berlin?",
+     "options": [
+      "It reduced the immediate Berlin crisis while becoming a symbol of division",
+      "It ended the Cold War immediately",
+      "It reunited German families",
+      "It removed all US forces from Europe"
+     ],
+     "answer": "It reduced the immediate Berlin crisis while becoming a symbol of division",
+     "accept": [],
+     "hint": "Consider both the short-term and the symbolic effect.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2gu03k1xdnb60",
+     "subject": "hist",
+     "type": "num",
+     "q": "In which year did the Berlin Wall fall?",
+     "options": [],
+     "answer": "1989",
+     "accept": [],
+     "hint": "It was 28 years after it was built.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wqwtcc189zhm7",
+     "subject": "hist",
+     "type": "open",
+     "q": "Explain why the Soviet Union and East Germany decided to build the Berlin Wall in 1961.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider the refugees, the economy and the wider Cold War tension.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jikjk9ygt4re",
+     "subject": "hist",
+     "type": "open",
+     "q": "How significant was the Berlin Wall for the Cold War? Explain your answer with at least two points.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh the easing of the crisis against the propaganda damage to the USSR.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Parallel and perpendicular lines; perpendicular bisectors",
+   "questions": [
+    {
+     "id": "rats5001t3bkqk",
+     "subject": "math",
+     "type": "num",
+     "q": "Write down the gradient of a line parallel to y = 3x + 1.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Parallel lines share the same gradient.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlw8ayf1gv8qih",
+     "subject": "math",
+     "type": "num",
+     "q": "Write down the gradient of a line perpendicular to y = 2x − 5.",
+     "options": [],
+     "answer": "-1/2",
+     "accept": [],
+     "hint": "Use the negative reciprocal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s2kik45spn2v",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the product of the gradients of two perpendicular lines (neither vertical)?",
+     "options": [],
+     "answer": "-1",
+     "accept": [],
+     "hint": "Try it with gradients 2 and −1/2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n4ctsm1o0b10t",
+     "subject": "math",
+     "type": "mc",
+     "q": "Find the equation of the line parallel to y = 4x − 1 that passes through (0, 7).",
+     "options": [
+      "y = 4x + 7",
+      "y = 7x + 4",
+      "y = −4x + 7",
+      "y = (−1/4)x + 7"
+     ],
+     "answer": "y = 4x + 7",
+     "accept": [],
+     "hint": "The point given is the y-intercept.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rem8xkw123wqxx",
+     "subject": "math",
+     "type": "mc",
+     "q": "Find the equation of the line parallel to y = 2x + 3 that passes through (1, 7).",
+     "options": [
+      "y = 2x + 5",
+      "y = 2x + 7",
+      "y = 7x + 2",
+      "y = 2x + 3"
+     ],
+     "answer": "y = 2x + 5",
+     "accept": [],
+     "hint": "Substitute the point into y = 2x + c.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r142c38u5y3dye",
+     "subject": "math",
+     "type": "mc",
+     "q": "Find the equation of the line perpendicular to y = 3x + 2 that passes through (3, 1).",
+     "options": [
+      "y = (−1/3)x + 2",
+      "y = 3x − 8",
+      "y = (1/3)x",
+      "y = −3x + 10"
+     ],
+     "answer": "y = (−1/3)x + 2",
+     "accept": [],
+     "hint": "Find the new gradient first, then substitute the point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13qzg3pq4kjte",
+     "subject": "math",
+     "type": "mc",
+     "q": "The lines y = 2x + 1 and 2y = 4x − 3 are:",
+     "options": [
+      "parallel",
+      "perpendicular",
+      "the same line",
+      "neither parallel nor perpendicular"
+     ],
+     "answer": "parallel",
+     "accept": [],
+     "hint": "Rearrange the second equation into y = mx + c.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryugh95u9wfj8",
+     "subject": "math",
+     "type": "mc",
+     "q": "The lines y = 3x − 1 and x + 3y = 6 are:",
+     "options": [
+      "perpendicular",
+      "parallel",
+      "the same line",
+      "neither parallel nor perpendicular"
+     ],
+     "answer": "perpendicular",
+     "accept": [],
+     "hint": "Rearrange the second equation and multiply the gradients.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17wqb175nt5r7",
+     "subject": "math",
+     "type": "num",
+     "q": "The line 2x + 5y = 10 has a perpendicular line L. Find the gradient of L as a fraction.",
+     "options": [],
+     "answer": "5/2",
+     "accept": [],
+     "hint": "First find the gradient of the given line by making y the subject.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12xigfr1c02ifg",
+     "subject": "math",
+     "type": "num",
+     "q": "A is (1, 2) and B is (3, 8). Find the gradient of a line perpendicular to AB, as a fraction.",
+     "options": [],
+     "answer": "-1/3",
+     "accept": [],
+     "hint": "Find the gradient of AB first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a6h2fm14o3fa7",
+     "subject": "math",
+     "type": "num",
+     "q": "The line y = kx + 1 is perpendicular to y = 4x − 3. Find k as a fraction.",
+     "options": [],
+     "answer": "-1/4",
+     "accept": [],
+     "hint": "Their gradients multiply to give a fixed value.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlw8vwf997dpt",
+     "subject": "math",
+     "type": "num",
+     "q": "A line is perpendicular to y = 2x + 1 and passes through (4, 5). Find the y-coordinate of its y-intercept.",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Use y = (−1/2)x + c and substitute the point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrh1vv7ukrko2",
+     "subject": "math",
+     "type": "mc",
+     "q": "A is (2, 4) and B is (6, 8). What is the midpoint of AB?",
+     "options": [
+      "(4, 6)",
+      "(8, 12)",
+      "(2, 2)",
+      "(3, 4)"
+     ],
+     "answer": "(4, 6)",
+     "accept": [],
+     "hint": "Average the x-coordinates and the y-coordinates.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7mxay5rcntf",
+     "subject": "math",
+     "type": "mc",
+     "q": "Find the equation of the perpendicular bisector of the segment joining (2, 4) and (6, 8).",
+     "options": [
+      "y = −x + 10",
+      "y = x + 2",
+      "y = −x + 6",
+      "y = x + 10"
+     ],
+     "answer": "y = −x + 10",
+     "accept": [],
+     "hint": "You need the midpoint and the negative reciprocal of the gradient.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raj77mn18g4j3g",
+     "subject": "math",
+     "type": "mc",
+     "q": "Find, in the form ax + by + c = 0, the line perpendicular to y = 2x + 1 that passes through (2, 3).",
+     "options": [
+      "x + 2y − 8 = 0",
+      "2x − y − 1 = 0",
+      "x − 2y + 4 = 0",
+      "2x + y − 7 = 0"
+     ],
+     "answer": "x + 2y − 8 = 0",
+     "accept": [],
+     "hint": "Use y − 3 = m(x − 2), then clear the fraction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17u1cpje6fh39",
+     "subject": "math",
+     "type": "open",
+     "q": "The points are P(1, 1), Q(3, 5) and R(5, 4). Show that angle PQR is a right angle. Show your working.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Find the gradients of PQ and QR, then multiply them.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "phys": {
+   "topic": "Magnetic effect of a current; electromagnets and relays",
+   "questions": [
+    {
+     "id": "r80javn1rs8i4j",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What surrounds a wire carrying an electric current?",
+     "options": [
+      "A magnetic field",
+      "A gravitational field only",
+      "A sound wave",
+      "An electrostatic charge only"
+     ],
+     "answer": "A magnetic field",
+     "accept": [],
+     "hint": "A compass near the wire will deflect.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lbb48fzk90zk",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What is the shape of the magnetic field around a long straight wire?",
+     "options": [
+      "Concentric circles",
+      "Straight parallel lines",
+      "A single spiral",
+      "Radial lines"
+     ],
+     "answer": "Concentric circles",
+     "accept": [],
+     "hint": "The field wraps around the wire.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fcgl8b1q2ry5c",
+     "subject": "phys",
+     "type": "short",
+     "q": "Which rule is used to find the direction of the magnetic field around a current-carrying wire?",
+     "options": [],
+     "answer": "right-hand grip rule",
+     "accept": [
+      "right hand grip rule",
+      "right-hand grip",
+      "right hand grip"
+     ],
+     "hint": "Your thumb points along the conventional current.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14og9jo1j9zpw7",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What happens to the magnetic field around a wire if the current is reversed?",
+     "options": [
+      "Its direction reverses",
+      "It disappears permanently",
+      "It doubles in strength",
+      "It does not change"
+     ],
+     "answer": "Its direction reverses",
+     "accept": [],
+     "hint": "Use the grip rule with the thumb pointing the other way.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8hzpbxcu7odk",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What happens to the field around a wire when the current increases?",
+     "options": [
+      "It becomes stronger",
+      "It becomes weaker",
+      "It reverses direction",
+      "It becomes straight"
+     ],
+     "answer": "It becomes stronger",
+     "accept": [],
+     "hint": "Field lines would be drawn closer together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1aeji2u2iw9gq",
+     "subject": "phys",
+     "type": "short",
+     "q": "What is the name for a long coil of wire carrying a current?",
+     "options": [],
+     "answer": "solenoid",
+     "accept": [
+      "a solenoid"
+     ],
+     "hint": "Its field looks like that of a bar magnet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlh8ec61thgipn",
+     "subject": "phys",
+     "type": "mc",
+     "q": "The magnetic field outside a solenoid is similar to the field of:",
+     "options": [
+      "a bar magnet",
+      "a straight wire",
+      "a horseshoe magnet with no poles",
+      "the Earth's core only"
+     ],
+     "answer": "a bar magnet",
+     "accept": [],
+     "hint": "It has a north end and a south end.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14s4kaeb5rvm",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Inside a long solenoid, the magnetic field is:",
+     "options": [
+      "strong and nearly uniform",
+      "zero",
+      "weak and circular",
+      "random"
+     ],
+     "answer": "strong and nearly uniform",
+     "accept": [],
+     "hint": "Field lines there are parallel and close together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uby1ns12p4et2",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which change would NOT make an electromagnet stronger?",
+     "options": [
+      "Reversing the current",
+      "Adding more turns",
+      "Increasing the current",
+      "Adding a soft iron core"
+     ],
+     "answer": "Reversing the current",
+     "accept": [],
+     "hint": "Ask whether the change alters the size or just the direction of the field.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "resvpsk1lgnt3b",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Why is soft iron used as the core of an electromagnet rather than steel?",
+     "options": [
+      "It magnetises and demagnetises easily",
+      "It keeps its magnetism for a long time",
+      "It is a better electrical conductor",
+      "It is not attracted to magnets"
+     ],
+     "answer": "It magnetises and demagnetises easily",
+     "accept": [],
+     "hint": "The magnet needs to switch off quickly.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cutpnh1hiscjm",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What is the main purpose of a relay?",
+     "options": [
+      "To let a small current switch a larger current on and off",
+      "To increase the voltage of a supply",
+      "To store electrical energy",
+      "To convert a.c. to d.c."
+     ],
+     "answer": "To let a small current switch a larger current on and off",
+     "accept": [],
+     "hint": "Think of a car starter motor switch.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rudx39y1k4nzej",
+     "subject": "phys",
+     "type": "mc",
+     "q": "In a relay, what happens first when current flows through the coil?",
+     "options": [
+      "The coil becomes an electromagnet and attracts an iron armature",
+      "The contacts melt",
+      "The battery reverses polarity",
+      "The second circuit stores charge"
+     ],
+     "answer": "The coil becomes an electromagnet and attracts an iron armature",
+     "accept": [],
+     "hint": "The moving part closes the second circuit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnhk6t91x836ws",
+     "subject": "phys",
+     "type": "num",
+     "q": "A solenoid has 400 turns over a length of 20 cm. How many turns per centimetre is this?",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Divide the number of turns by the length.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4bl3c816cr184",
+     "subject": "phys",
+     "type": "num",
+     "q": "A relay coil is on a 12 V circuit and carries a current of 0.1 A. Calculate its power in watts.",
+     "options": [],
+     "answer": "1.2",
+     "accept": [],
+     "hint": "Use P = IV.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrbib54j29x6n",
+     "subject": "phys",
+     "type": "num",
+     "q": "A relay switches a motor on a 230 V supply that draws 5 A. Calculate the power of the motor in watts.",
+     "options": [],
+     "answer": "1150",
+     "accept": [],
+     "hint": "Use P = IV.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryjqdrh7nzieh",
+     "subject": "phys",
+     "type": "open",
+     "q": "Describe how a relay allows a small current to control a large current. Refer to the coil, the armature and the contacts.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Go step by step from the moment the small circuit is switched on.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych": {
+   "topic": "Positive reinforcement in education",
+   "questions": [
+    {
+     "id": "rsdj5u7tfbeif",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Operant conditioning is learning through:",
+     "options": [
+      "the consequences of behaviour",
+      "copying a model",
+      "associating two stimuli",
+      "genetic inheritance"
+     ],
+     "answer": "the consequences of behaviour",
+     "accept": [],
+     "hint": "Consider what happens after an action is carried out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj2dvi0or2x2i",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Positive reinforcement involves:",
+     "options": [
+      "adding something pleasant after a behaviour",
+      "removing something pleasant after a behaviour",
+      "adding something unpleasant after a behaviour",
+      "ignoring a behaviour"
+     ],
+     "answer": "adding something pleasant after a behaviour",
+     "accept": [],
+     "hint": "\"Positive\" here means something is given.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1774086jc767g",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A teacher praises a student for answering a question, and the student answers more often. This is an example of:",
+     "options": [
+      "positive reinforcement",
+      "negative reinforcement",
+      "punishment",
+      "extinction"
+     ],
+     "answer": "positive reinforcement",
+     "accept": [],
+     "hint": "The behaviour increased after something was given.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vjew2p1fnhmh6",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Removing an unpleasant task after good behaviour is an example of:",
+     "options": [
+      "negative reinforcement",
+      "positive reinforcement",
+      "punishment",
+      "a token economy"
+     ],
+     "answer": "negative reinforcement",
+     "accept": [],
+     "hint": "Something is taken away, yet the behaviour increases.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rddkl9xrblt18",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is the overall effect of reinforcement on a behaviour?",
+     "options": [
+      "It makes the behaviour more likely to be repeated",
+      "It makes the behaviour less likely",
+      "It has no effect",
+      "It always stops the behaviour"
+     ],
+     "answer": "It makes the behaviour more likely to be repeated",
+     "accept": [],
+     "hint": "This is the opposite of punishment.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfer6uu1mbieq1",
+     "subject": "psych",
+     "type": "short",
+     "q": "What term describes a system where students earn items that can be exchanged for rewards?",
+     "options": [],
+     "answer": "token economy",
+     "accept": [
+      "a token economy"
+     ],
+     "hint": "The items act like a form of money.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mm5izj1vf16mt",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In a token economy, the token itself is a:",
+     "options": [
+      "secondary reinforcer",
+      "primary reinforcer",
+      "punishment",
+      "neutral stimulus only"
+     ],
+     "answer": "secondary reinforcer",
+     "accept": [],
+     "hint": "It has value only because of what it can buy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru65mr51tukodb",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which of these is a primary reinforcer?",
+     "options": [
+      "Food",
+      "A sticker",
+      "A merit point",
+      "A certificate"
+     ],
+     "answer": "Food",
+     "accept": [],
+     "hint": "It meets a biological need.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hyj6p11j03ueb",
+     "subject": "psych",
+     "type": "mc",
+     "q": "When should a reinforcer be given to be most effective?",
+     "options": [
+      "Immediately after the behaviour",
+      "A month after the behaviour",
+      "Before the behaviour",
+      "Only at the end of the year"
+     ],
+     "answer": "Immediately after the behaviour",
+     "accept": [],
+     "hint": "The link between action and consequence must be clear.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19wwk3o11bmljn",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A key criticism of token economies in education is that:",
+     "options": [
+      "behaviour may not continue when rewards stop",
+      "they are impossible to use in a classroom",
+      "they always punish students",
+      "they rely only on genetics"
+     ],
+     "answer": "behaviour may not continue when rewards stop",
+     "accept": [],
+     "hint": "Consider what happens outside the system.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvh6fm61wolhpo",
+     "subject": "psych",
+     "type": "short",
+     "q": "Reinforcement can reduce a student's enjoyment of learning for its own sake. What type of motivation is reduced?",
+     "options": [],
+     "answer": "intrinsic motivation",
+     "accept": [
+      "intrinsic"
+     ],
+     "hint": "It is the opposite of working for external rewards.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hzg94511scdfv",
+     "subject": "psych",
+     "type": "mc",
+     "q": "If a previously reinforced behaviour stops being reinforced and gradually fades, this is called:",
+     "options": [
+      "extinction",
+      "generalisation",
+      "modelling",
+      "habituation"
+     ],
+     "answer": "extinction",
+     "accept": [],
+     "hint": "The behaviour dies out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d1dmvxq97xcv",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which is a reinforcement practice most useful for shaping behaviour?",
+     "options": [
+      "Rewarding small steps towards the target behaviour",
+      "Waiting until the behaviour is perfect",
+      "Punishing every error",
+      "Giving rewards at random for no reason"
+     ],
+     "answer": "Rewarding small steps towards the target behaviour",
+     "accept": [],
+     "hint": "Build gradually towards the final goal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3jlm4gigmtnm",
+     "subject": "psych",
+     "type": "num",
+     "q": "A student earns 1 token per completed homework. A reward costs 8 tokens. How many rewards can the student buy after completing 24 homeworks?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Divide the tokens by the cost.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r181jvatca9r33",
+     "subject": "psych",
+     "type": "open",
+     "q": "Describe how a token economy could be used to improve homework completion in a classroom.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Explain what earns tokens and what they can be exchanged for.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9uv2ed2uoes2",
+     "subject": "psych",
+     "type": "open",
+     "q": "Evaluate the use of positive reinforcement in schools. Include one strength and one limitation.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about motivation and about what happens over the long term.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Verbo: tempos compostos, locuções verbais e correlação verbal",
+   "questions": [
+    {
+     "id": "rldsnhvt5384l",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Os tempos compostos são formados, em geral, por:",
+     "options": [
+      "ter ou haver + particípio",
+      "ser + infinitivo",
+      "ir + gerúndio",
+      "estar + adjetivo"
+     ],
+     "answer": "ter ou haver + particípio",
+     "accept": [],
+     "hint": "Observe \"tenho feito\" e \"havia chegado\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jgoppf1b16fpl",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Tenho estudado muito\", o tempo verbal é:",
+     "options": [
+      "pretérito perfeito composto do indicativo",
+      "futuro do presente composto",
+      "pretérito mais-que-perfeito composto",
+      "presente simples"
+     ],
+     "answer": "pretérito perfeito composto do indicativo",
+     "accept": [],
+     "hint": "O auxiliar está no presente do indicativo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oo8j1cm7add",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Quando cheguei, ele já tinha saído\", a forma \"tinha saído\" está no:",
+     "options": [
+      "pretérito mais-que-perfeito composto",
+      "pretérito perfeito simples",
+      "futuro do pretérito composto",
+      "presente do subjuntivo"
+     ],
+     "answer": "pretérito mais-que-perfeito composto",
+     "accept": [],
+     "hint": "A ação é anterior a outra ação já passada.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r38xk6rymybam",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Às dez horas, terei terminado a prova\", o tempo verbal é:",
+     "options": [
+      "futuro do presente composto",
+      "futuro do pretérito composto",
+      "pretérito perfeito composto",
+      "presente do indicativo"
+     ],
+     "answer": "futuro do presente composto",
+     "accept": [],
+     "hint": "A ação estará concluída antes de um momento futuro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq0dqnroc4ltl",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com o particípio de \"chegar\": \"Ele tinha ___ cedo.\"",
+     "options": [],
+     "answer": "chegado",
+     "accept": [],
+     "hint": "É um verbo regular da 1ª conjugação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rouev471p9gf2n",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com o particípio de \"abrir\": \"A diretora tinha ___ a sala.\"",
+     "options": [],
+     "answer": "aberto",
+     "accept": [],
+     "hint": "O particípio deste verbo é irregular.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6xeb14vngl5r",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual é o verbo principal da locução em \"Estamos lendo o livro\"?",
+     "options": [],
+     "answer": "lendo",
+     "accept": [
+      "ler"
+     ],
+     "hint": "Em uma locução, o auxiliar traz as flexões; o principal traz o sentido.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rawfv211j91qk9",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase contém uma locução verbal?",
+     "options": [
+      "Vou estudar para a prova.",
+      "Estudei para a prova.",
+      "Ela é estudiosa.",
+      "O estudo é útil."
+     ],
+     "answer": "Vou estudar para a prova.",
+     "accept": [],
+     "hint": "Procure dois verbos que formam uma só ideia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgmenrr17wl290",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete com a correlação correta: \"Se eu ___ tempo, iria ao cinema.\"",
+     "options": [
+      "tivesse",
+      "tenho",
+      "terei",
+      "tiver"
+     ],
+     "answer": "tivesse",
+     "accept": [],
+     "hint": "O verbo \"iria\" está no futuro do pretérito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q0ozb264a3cm",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete com a correlação correta: \"Se eu tiver tempo, ___ ao cinema.\"",
+     "options": [
+      "irei",
+      "iria",
+      "fui",
+      "iria ter"
+     ],
+     "answer": "irei",
+     "accept": [],
+     "hint": "\"Tiver\" é futuro do subjuntivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1edk3zk1wy4cb2",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Quando você chegar, eu já ___ saído.\"",
+     "options": [
+      "terei",
+      "tinha",
+      "tivesse",
+      "tenho"
+     ],
+     "answer": "terei",
+     "accept": [],
+     "hint": "Uma ação futura está concluída antes de outra, também futura.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfi1v5w1k6su77",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Espero que ele ___ chegado a tempo.\"",
+     "options": [
+      "tenha",
+      "tinha",
+      "terá",
+      "teria"
+     ],
+     "answer": "tenha",
+     "accept": [],
+     "hint": "Depois de \"espero que\" usa-se o subjuntivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c1241yews5sj",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Assinale a frase com correlação verbal correta.",
+     "options": [
+      "Se tivesse estudado, teria sido aprovado.",
+      "Se tivesse estudado, será aprovado.",
+      "Se estudar, teria sido aprovado.",
+      "Se estudou, teria ido aprovar."
+     ],
+     "answer": "Se tivesse estudado, teria sido aprovado.",
+     "accept": [],
+     "hint": "Uma hipótese no passado pede um resultado também hipotético.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rob51ed1q803qx",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Ela acabou de sair\", a locução indica:",
+     "options": [
+      "ação concluída há pouco",
+      "ação que ainda vai começar",
+      "ação repetida há anos",
+      "ordem ou pedido"
+     ],
+     "answer": "ação concluída há pouco",
+     "accept": [],
+     "hint": "Observe o sentido de \"acabar de\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf1farjj6htir",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique a diferença de sentido entre \"Estudei português\" e \"Tenho estudado português\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense se a ação terminou ou se continua a acontecer até agora.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs6od4s1iz7ch9",
+     "subject": "pt",
+     "type": "open",
+     "q": "Reescreva a frase, corrigindo a correlação verbal, e justifique: \"Se eu soubesse da reunião, eu irei.\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Observe o tempo verbal da condição e o que ele pede no outro verbo.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_lit": {
+   "topic": "Releituras do Quinhentismo: Oswald de Andrade e Pau-Brasil",
+   "questions": [
+    {
+     "id": "rz5xmvf13cihnz",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "A Carta que serve de referência às releituras de Oswald de Andrade foi escrita por:",
+     "options": [
+      "Pero Vaz de Caminha",
+      "José de Anchieta",
+      "Gregório de Matos",
+      "Padre Antônio Vieira"
+     ],
+     "answer": "Pero Vaz de Caminha",
+     "accept": [],
+     "hint": "Ele era o escrivão da frota de Cabral.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ray7wq61ibifgv",
+     "subject": "pt_lit",
+     "type": "num",
+     "q": "Em que ano foi escrita a Carta do Achamento do Brasil?",
+     "options": [],
+     "answer": "1500",
+     "accept": [],
+     "hint": "É o mesmo ano da chegada da frota portuguesa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ok6feum5q4xn",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "A Carta é considerada um exemplo de:",
+     "options": [
+      "literatura de informação",
+      "poesia concreta",
+      "romance realista",
+      "crônica modernista"
+     ],
+     "answer": "literatura de informação",
+     "accept": [],
+     "hint": "Ela descreve a terra e o povo para o rei.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1voimv61x2dsy5",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O livro Pau-Brasil, de Oswald de Andrade, foi publicado em:",
+     "options": [
+      "1925",
+      "1500",
+      "1888",
+      "1964"
+     ],
+     "answer": "1925",
+     "accept": [],
+     "hint": "Saiu poucos anos depois da Semana de Arte Moderna.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rju5h1z12frxf1",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "A que movimento literário brasileiro pertence Oswald de Andrade?",
+     "options": [],
+     "answer": "Modernismo",
+     "accept": [
+      "modernismo",
+      "Modernismo brasileiro"
+     ],
+     "hint": "Esse movimento ganhou força com a Semana de 1922.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h76usc19b1pd9",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O que propõe a \"poesia de exportação\" do Manifesto da Poesia Pau-Brasil?",
+     "options": [
+      "Criar uma poesia brasileira original, que não só imite a Europa",
+      "Copiar os modelos clássicos europeus",
+      "Escrever somente em latim",
+      "Abandonar qualquer tema nacional"
+     ],
+     "answer": "Criar uma poesia brasileira original, que não só imite a Europa",
+     "accept": [],
+     "hint": "O próprio nome lembra o primeiro produto exportado da colônia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2i3us7sx8swv",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Por que o título Pau-Brasil é simbólico?",
+     "options": [
+      "Evoca a primeira riqueza explorada e a ideia de valorizar o que é nacional",
+      "Homenageia uma cidade europeia",
+      "Refere-se a um poeta português",
+      "Nomeia um tipo de soneto"
+     ],
+     "answer": "Evoca a primeira riqueza explorada e a ideia de valorizar o que é nacional",
+     "accept": [],
+     "hint": "Pense na história econômica da colônia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgbrfyc1vkjboy",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Como se chama a imitação de um texto com intenção crítica ou cômica?",
+     "options": [],
+     "answer": "paródia",
+     "accept": [
+      "parodia"
+     ],
+     "hint": "A palavra aparece nos objetivos deste estudo sobre releituras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra2ir91y5b4nc",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Oswald recorta trechos da Carta e os dispõe em versos. Esse procedimento:",
+     "options": [
+      "transforma um documento histórico em poesia e muda seu sentido",
+      "apaga completamente o texto de origem",
+      "reproduz o texto sem nenhuma intenção",
+      "traduz a Carta para o latim"
+     ],
+     "answer": "transforma um documento histórico em poesia e muda seu sentido",
+     "accept": [],
+     "hint": "Um mesmo trecho pode ganhar nova leitura em novo contexto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8tl2hdrge82e",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O olhar de Oswald sobre o discurso do colonizador é principalmente:",
+     "options": [
+      "irônico e crítico",
+      "submisso e elogioso",
+      "indiferente",
+      "religioso e devoto"
+     ],
+     "answer": "irônico e crítico",
+     "accept": [],
+     "hint": "Lembre-se da função da paródia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g8hw841lpvdex",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual é a característica formal típica dos poemas de Pau-Brasil?",
+     "options": [
+      "Versos livres, síntese e linguagem coloquial",
+      "Sonetos rígidos e vocabulário rebuscado",
+      "Epopeias em dez cantos",
+      "Rimas obrigatórias em todo verso"
+     ],
+     "answer": "Versos livres, síntese e linguagem coloquial",
+     "accept": [],
+     "hint": "Os modernistas combatiam as regras parnasianas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ds1fjemcmztv",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O poema \"Erro de português\", de Oswald, imagina um encontro em que a situação entre o português e o indígena se inverte. O que isso sugere?",
+     "options": [
+      "Que a colonização poderia ter tido outro desfecho e impôs uma cultura à outra",
+      "Que os indígenas não existiam em 1500",
+      "Que o clima não influencia a história",
+      "Que os portugueses falavam mal a língua"
+     ],
+     "answer": "Que a colonização poderia ter tido outro desfecho e impôs uma cultura à outra",
+     "accept": [],
+     "hint": "Observe o duplo sentido da palavra \"erro\" no título.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf1oxf0ah5h95",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Qual manifesto de Oswald, de 1928, propõe \"devorar\" a cultura estrangeira para criar algo novo?",
+     "options": [],
+     "answer": "Manifesto Antropófago",
+     "accept": [
+      "Antropófago",
+      "Manifesto Antropofágico",
+      "Antropofágico"
+     ],
+     "hint": "O nome vem de um ritual ligado a comer o outro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsgvehw1f8v9h7",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Compare a visão da terra brasileira na Carta com a de uma releitura modernista. Aponte uma semelhança e uma diferença.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no assunto em comum e em quem fala, para quê e com qual tom.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14lc194jgq1ij",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Explique como a paródia modernista pode ser uma forma de crítica ao passado colonial.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que acontece quando um texto oficial é repetido com outro olhar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dx7sdx1xlt7zz",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Por que você acha que os modernistas voltaram aos textos do período colonial para pensar o Brasil do século XX?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Relacione a busca de identidade nacional com a origem da nossa história escrita.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_red": {
+   "topic": "Direitos humanos e a proposta de intervenção",
+   "questions": [
+    {
+     "id": "r1w3tuaj1t70jf8",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Na redação do ENEM, qual competência avalia a proposta de intervenção?",
+     "options": [
+      "Competência 5",
+      "Competência 1",
+      "Competência 2",
+      "Competência 3"
+     ],
+     "answer": "Competência 5",
+     "accept": [],
+     "hint": "É a última das competências.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc1qpw4wroahv",
+     "subject": "pt_red",
+     "type": "num",
+     "q": "Quantos elementos a banca do ENEM espera em uma proposta de intervenção completa?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Lembre: agente, ação, meio, finalidade e mais um.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs8v05a13if095",
+     "subject": "pt_red",
+     "type": "num",
+     "q": "Qual é a nota máxima de cada competência da redação do ENEM?",
+     "options": [],
+     "answer": "200",
+     "accept": [],
+     "hint": "A redação inteira vale 1.000 pontos em cinco competências.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rws33si1wc69k9",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual documento, de 1948, é uma referência internacional sobre direitos humanos?",
+     "options": [
+      "Declaração Universal dos Direitos Humanos",
+      "Constituição Federal do Brasil",
+      "Código de Defesa do Consumidor",
+      "Estatuto da Criança e do Adolescente"
+     ],
+     "answer": "Declaração Universal dos Direitos Humanos",
+     "accept": [],
+     "hint": "Foi adotado pela ONU depois da Segunda Guerra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19tbgei17pts4l",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Em \"O Ministério da Educação deve ampliar as bibliotecas escolares, por meio de verbas públicas, a fim de estimular a leitura\", qual é o agente?",
+     "options": [
+      "O Ministério da Educação",
+      "As bibliotecas escolares",
+      "As verbas públicas",
+      "A leitura"
+     ],
+     "answer": "O Ministério da Educação",
+     "accept": [],
+     "hint": "O agente é quem deve executar a ação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q1ks2siclzl9",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Na mesma estrutura, \"por meio de verbas públicas\" corresponde a qual elemento?",
+     "options": [
+      "Meio/modo",
+      "Agente",
+      "Finalidade",
+      "Ação"
+     ],
+     "answer": "Meio/modo",
+     "accept": [],
+     "hint": "Responde a \"como?\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r978wl8w6rw1e",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Em \"a fim de estimular a leitura\", qual elemento da proposta aparece?",
+     "options": [
+      "Finalidade/efeito",
+      "Agente",
+      "Meio",
+      "Detalhamento"
+     ],
+     "answer": "Finalidade/efeito",
+     "accept": [],
+     "hint": "Responde a \"para quê?\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pqi6tx1eu3ea3",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual proposta é genérica demais?",
+     "options": [
+      "A sociedade precisa se conscientizar.",
+      "As prefeituras devem criar centros de apoio nos bairros, com equipes de assistência social.",
+      "O governo estadual deve oferecer cursos técnicos noturnos em escolas públicas.",
+      "As emissoras devem veicular campanhas educativas em horário nobre."
+     ],
+     "answer": "A sociedade precisa se conscientizar.",
+     "accept": [],
+     "hint": "Falta dizer quem, como e para quê.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oj64v11wyx0yb",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual proposta desrespeita os direitos humanos?",
+     "options": [
+      "Punir agressores com violência física nas ruas.",
+      "Criar delegacias especializadas e atendimento às vítimas.",
+      "Oferecer campanhas de prevenção nas escolas.",
+      "Ampliar a oferta de defensores públicos."
+     ],
+     "answer": "Punir agressores com violência física nas ruas.",
+     "accept": [],
+     "hint": "Observe qual delas defende agressão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrw3ejy1r33y1v",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Uma proposta viável é aquela que:",
+     "options": [
+      "pode ser realizada com recursos e instituições existentes ou possíveis",
+      "resolve tudo em um dia",
+      "depende de mudar toda a humanidade",
+      "não indica quem a executa"
+     ],
+     "answer": "pode ser realizada com recursos e instituições existentes ou possíveis",
+     "accept": [],
+     "hint": "Pense na realidade do país.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1koch3y08ykw",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual das opções é um exemplo de detalhamento?",
+     "options": [
+      "\"Campanhas, como palestras mensais em escolas públicas, com psicólogos\"",
+      "\"Deve-se fazer alguma coisa\"",
+      "\"O problema é grave\"",
+      "\"Portanto, é preciso mudar\""
+     ],
+     "answer": "\"Campanhas, como palestras mensais em escolas públicas, com psicólogos\"",
+     "accept": [],
+     "hint": "Traz uma informação extra sobre um dos elementos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4jsq661n54nxt",
+     "subject": "pt_red",
+     "type": "short",
+     "q": "Qual é o termo para a qualidade de quem exerce direitos e deveres em sociedade?",
+     "options": [],
+     "answer": "cidadania",
+     "accept": [],
+     "hint": "É uma das palavras-chave deste tema.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rts9j0kpwsf3k",
+     "subject": "pt_red",
+     "type": "short",
+     "q": "Em uma proposta de intervenção, qual é a palavra para \"a possibilidade real de executá-la\"?",
+     "options": [],
+     "answer": "viabilidade",
+     "accept": [],
+     "hint": "Deriva do adjetivo \"viável\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmrg9w5ygnlz0",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Reescreva a proposta \"O governo tem que resolver a evasão escolar\" de modo que tenha agente, ação, meio e finalidade.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Diga qual órgão, fará o quê, como e para quê.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ks1h2m9z2sf7",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Explique por que uma proposta que defende a exclusão de um grupo social é inadequada em uma redação argumentativa.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em igualdade, dignidade e na Constituição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhsb7fniknd4p",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Escreva um parágrafo de conclusão sobre o tema \"o acesso de pessoas idosas à tecnologia\", com proposta de intervenção completa e detalhada.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Inclua agente, ação, meio, finalidade e um detalhe.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
