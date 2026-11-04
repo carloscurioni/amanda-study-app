@@ -5800,6 +5800,883 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "The Double Bill",
+   "premise": "A Year 11 drama group must stage two invented plays on one evening: a tense drawing-room inquiry and an island fable about a ruler who commands the tide. As they rehearse, they learn to compare dramatic methods and discover that power and responsibility are not only subjects for the stage.",
+   "chapters": [
+    {
+     "title": "Chapter 1: Two Titles on a Whiteboard",
+     "synopsis": "Ms Adeyemi announces a double bill of two very different plays, and Imani is certain they have nothing in common.",
+     "text": "Ms Adeyemi wrote two titles on the whiteboard and underlined each of them twice. \"The Passenger List. The Bell-Keeper. One evening, one stage, one cast. In seven weeks, Year 11 will perform both.\"\nImani looked up from her notebook and frowned. She had read both scripts over the weekend, and she could not imagine two plays less alike. The Passenger List took place in a single dining room, on a single evening, in a wealthy harbour town. A shipping owner called Mr Hallam was celebrating his daughter's engagement when a quiet clerk arrived at the door. The clerk carried a list of the forty people who had drowned when one of Hallam's overloaded ferries went down. Nobody on stage ever left the room for long, and nobody ever raised a sword.\nThe Bell-Keeper was something else entirely. It was a fable, written in rhythmic verse, about Oriane, a ruler exiled to a nameless island. She owned a silver bell, and when she rang it the tide obeyed her. She used it to feed her people, to drown her enemies and to keep a young boatman named Tam in her service.\n\"Miss,\" said Imani, \"one is a police drama without police, and the other has a magic bell. What are we supposed to do with them together?\"\n\"Compare them,\" said Ms Adeyemi. She tapped the board. \"That is your coursework question as well as your rehearsal question. Both playwrights ask what people owe to those beneath them. They simply ask it with different tools. Your job is to notice the tools.\"\nRafael, who had already been cast as Mr Hallam, leaned back in his chair. \"So Hallam and Oriane are basically the same person?\"\n\"I did not say that,\" said Ms Adeyemi. \"Similar question, different method. A list of similarities is not a comparison. Tell me how each play makes an audience feel the weight of power, and why the difference matters.\"\nWen, who would play Oriane, was already flicking through her script. Jonah, the stage manager, had started drawing a grid in his folder, one column for each play. At the top he wrote: \"Setting. Language. Who knows what, and when.\"\nAt the end of the lesson, Imani stayed behind to collect her copy of the rehearsal schedule. She had been given the smallest part in The Passenger List: Clara, Hallam's younger daughter, who hardly spoke until the final scene.\n\"It is only twelve lines,\" Imani said, trying not to sound disappointed.\nMs Adeyemi smiled. \"Count them again after you have read who gets the last word.\"\nImani turned to the last page. Standing in the empty classroom, she read Clara's final speech twice. Then she took out a pen and, beneath the two underlined titles still on the board, she drew a small question mark.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how many weeks does the group have until the performance?",
+       "options": [
+        "Five",
+        "Seven",
+        "Nine",
+        "Twelve"
+       ],
+       "answer": "Seven",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what is the name of the character who owns the ferries?",
+       "options": [],
+       "answer": "Mr Hallam",
+       "accept": [
+        "Hallam"
+       ],
+       "hint": "Rafael has been cast in this role.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the clerk carry to the dining room?",
+       "options": [
+        "A silver bell",
+        "A list of drowned people",
+        "A letter of engagement",
+        "A ship's map"
+       ],
+       "answer": "A list of drowned people",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what form is The Bell-Keeper written in?",
+       "options": [
+        "Rhythmic verse",
+        "Everyday prose",
+        "Song lyrics only",
+        "Letters"
+       ],
+       "answer": "Rhythmic verse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, which part has Imani been given?",
+       "options": [],
+       "answer": "Clara",
+       "accept": [
+        "Clara Hallam"
+       ],
+       "hint": "She is the younger daughter in one of the plays.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Adeyemi say a comparison must do beyond listing similarities?",
+       "options": [
+        "Name the playwrights' birthplaces",
+        "Explain how each play creates its effect and why the difference matters",
+        "Choose which play is better",
+        "Retell each plot in order"
+       ],
+       "answer": "Explain how each play creates its effect and why the difference matters",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Adeyemi's remark about counting the lines again imply?",
+       "options": [
+        "Imani has miscounted",
+        "The part matters more than its length suggests",
+        "The script will be rewritten",
+        "Imani will be given another role"
+       ],
+       "answer": "The part matters more than its length suggests",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the writer ends the chapter with Imani drawing a question mark on the board?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: One Room, One Island",
+     "synopsis": "While building the set, the group discovers how each play's setting shapes the audience's sense of power.",
+     "text": "By the second week, the school hall smelled of sawdust and paint. Jonah had taped the outline of a dining room onto the stage floor, and everyone kept stepping over walls that did not exist.\n\"Stay inside the lines,\" he called, as Rafael wandered across with a chair. \"The Passenger List is a box. That is the point. The stage directions say that the room should feel solid, comfortable and shut.\"\nImani opened her script at the first page. The playwright had described everything: the heavy curtains, the polished silver, the portrait of Hallam's father above the fireplace. The lighting at the beginning, the directions said, was to be \"warm and flattering, the light of people who have never needed to squint\". As the clerk's questions went on, it was to grow cooler and harder, until by the final scene no one on stage could hide a single expression.\n\"So the room looks like their wealth,\" Imani said slowly. \"Everything is there to say how safe they are.\"\n\"And then it traps them,\" said Wen, climbing the ladder with a roll of gaffer tape. \"Nobody can get away from the conversation. Their safe room becomes a kind of cage.\"\nJonah turned over a page in his folder. \"Now look at The Bell-Keeper. Almost no directions at all. One rock, one rope, and a bell hanging from a frame. The rest of the island is made entirely of sound and of the actors' words.\"\nThey tried it after lunch. With the dining-room furniture pushed aside, the stage looked enormous and rather frightening. Wen stood on the rock block, raised her arm and spoke Oriane's opening lines. \"This shore is mine; the water knows my name.\" Behind the curtain, two Year 10 students shook sheets of metal and rolled dried peas in a tray to create the sound of the sea.\nIt was odd, Imani thought. There was nothing to look at, and yet it worked. When Wen rang the bell, the sound stopped dead, and the silence told the audience exactly who was in charge. Oriane's power did not need portraits or silver. It was in the fact that the sea itself seemed to wait for her.\n\"Write that down,\" said Ms Adeyemi, who had appeared at the back of the hall. \"What do the two settings have in common?\"\nImani thought about it. \"They are both closed,\" she said. \"Hallam's family cannot leave the room, and Oriane's people cannot leave the island.\"\n\"And how do they differ?\"\n\"One shows power through objects the audience can see. In the other, you have to imagine it, because the ruler creates it by speaking.\" She hesitated. \"Hallam's power is something he has inherited. Oriane's is something she has to keep performing.\"\nMs Adeyemi nodded, picked up a stray tin of paint and walked away without another word, which Imani had learned was the highest praise available.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what has Jonah taped to the stage floor?",
+       "options": [
+        "The outline of a dining room",
+        "A map of the island",
+        "Lines for the actors",
+        "The lighting cues"
+       ],
+       "answer": "The outline of a dining room",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, whose portrait hangs above the fireplace?",
+       "options": [],
+       "answer": "Hallam's father",
+       "accept": [
+        "Mr Hallam's father",
+        "his father",
+        "Hallams father"
+       ],
+       "hint": "Think about how the family's wealth was passed on.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how should the lighting in The Passenger List change during the play?",
+       "options": [
+        "From warm to cooler and harder",
+        "From dark to bright and cheerful",
+        "From red to blue",
+        "It should stay the same"
+       ],
+       "answer": "From warm to cooler and harder",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is the set for The Bell-Keeper made of?",
+       "options": [
+        "Heavy curtains and silver",
+        "A rock, a rope and a bell on a frame",
+        "A full painted ship",
+        "A painted beach scene"
+       ],
+       "answer": "A rock, a rope and a bell on a frame",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, which material is rolled in a tray to imitate the sea?",
+       "options": [],
+       "answer": "Dried peas",
+       "accept": [
+        "peas"
+       ],
+       "hint": "It is something you might find in a kitchen cupboard.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Wen mean when she calls the room \"a kind of cage\"?",
+       "options": [
+        "The set is badly built",
+        "The comfortable room stops the family escaping the questions",
+        "The actors dislike the room",
+        "The room has bars on the windows"
+       ],
+       "answer": "The comfortable room stops the family escaping the questions",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what similarity between the settings does Imani identify?",
+       "options": [
+        "Both are closed places",
+        "Both are outdoors",
+        "Both are at sea",
+        "Both are based on real towns"
+       ],
+       "answer": "Both are closed places",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Imani says that Oriane has to keep \"performing\" her power?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Clerk's Questions",
+     "synopsis": "Rehearsing the interrogation scenes, Rafael learns how entrances, exits and dramatic irony put a powerful man under pressure.",
+     "text": "The clerk in The Passenger List was called Mr Fenn, and he hardly did anything at all. That was what made him so difficult to play. Tariq, who had the role, kept trying to be menacing, pacing around the table and leaning over people.\n\"Sit down,\" said Ms Adeyemi. \"Fenn does not need to threaten anyone. He has a list and he has time. Let them come to him.\"\nSo Tariq sat. He placed the list on the table, smoothed it flat with one finger and asked Rafael a simple question. \"How many passengers was the ferry licensed to carry, Mr Hallam?\"\nRafael gave Hallam's line with a confident laugh. \"You would have to ask my captain about that sort of thing.\"\nThe rehearsal paused. Imani, waiting for her cue, noticed what the audience would notice. Two scenes earlier, Hallam had boasted to his future son-in-law that nothing happened on his boats without his signature. The audience knew it, Fenn appeared to know it and Hallam had clearly forgotten it.\n\"That is dramatic irony,\" said Ms Adeyemi. \"We know more than the character does, or at least we can see what he refuses to see. Every time Hallam says something grand, it comes back to bite him. What effect does that have on the audience?\"\n\"You start waiting for him to get caught,\" said Imani. \"You almost enjoy it.\"\n\"And then?\"\nImani considered the next scene, in which Hallam's elder daughter learned that a former family servant had been on the ferry. \"Then it stops being enjoyable,\" she said.\nThey worked through the structure of the act. It was built like a machine. Each family member came in, thought they had nothing to do with the sinking, and was shown by Fenn's patient questions exactly how they did. The son had pocketed the money meant for new lifeboats. The fiancé had signed the safety papers without reading them. The mother had dismissed the servant who had then needed the cheap ferry ticket. As each person left, the others said something foolish about them, and the next entrance proved them wrong.\nBy Thursday, Rafael had stopped laughing during the line about the captain. He tried it with a tiny pause first, as if the question had reminded him of something and he had decided not to think about it.\n\"Better,\" said Ms Adeyemi. \"Why better?\"\n\"Because he knows,\" said Rafael, surprised. \"Hallam isn't stupid. He has always known he was responsible. He has just arranged his whole life so that someone else has to answer the question.\"\nTariq looked down at the prop list. It was only a sheet of paper with forty invented names, typed out by Jonah. Yet when he smoothed it flat again, the whole cast went quiet. Imani noticed that the most powerful man on the stage had started looking at it rather than at anyone's face.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is the clerk's name?",
+       "options": [
+        "Mr Fenn",
+        "Mr Hallam",
+        "Mr Tariq",
+        "Mr Clark"
+       ],
+       "answer": "Mr Fenn",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, which student plays the clerk?",
+       "options": [],
+       "answer": "Tariq",
+       "accept": [],
+       "hint": "He kept pacing around the table at first.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Adeyemi tell the actor playing the clerk to do first?",
+       "options": [
+        "Shout his lines",
+        "Sit down",
+        "Walk around the table",
+        "Stand on a chair"
+       ],
+       "answer": "Sit down",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what question does the clerk ask Mr Hallam?",
+       "options": [
+        "How much the ferry cost",
+        "How many passengers the ferry was licensed to carry",
+        "Who was on the ferry",
+        "Why his daughter is engaged"
+       ],
+       "answer": "How many passengers the ferry was licensed to carry",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what did the son do with the money for new lifeboats?",
+       "options": [
+        "He donated it",
+        "He pocketed it",
+        "He lost it at sea",
+        "He gave it to the captain"
+       ],
+       "answer": "He pocketed it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Hallam's line about the captain create dramatic irony?",
+       "options": [
+        "The captain is secretly on stage",
+        "The audience has heard Hallam boast that nothing happens without his signature",
+        "Hallam is actually the clerk",
+        "The audience has not met the captain"
+       ],
+       "answer": "The audience has heard Hallam boast that nothing happens without his signature",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the structure of family members' entrances suggest?",
+       "options": [
+        "Each person is more innocent than the last",
+        "Everyone shares some of the responsibility",
+        "Only Hallam is to blame",
+        "The clerk is lying about all of them"
+       ],
+       "answer": "Everyone shares some of the responsibility",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Rafael's small pause makes his performance of Hallam more effective?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Bell",
+     "synopsis": "Wen struggles with Oriane's soliloquy, and the group explores how sharing a character's thoughts changes how we judge them.",
+     "text": "Wen could not make Oriane likeable, and it was driving her up the wall.\n\"She's horrible,\" Wen said, dropping onto the edge of the stage with her script. \"She drowns a whole fleet in Act One. She tells Tam she'll free him next year, every year, for nine years. And then she stands here and talks to the audience as though we were old friends.\"\nThat was the soliloquy at the centre of the play. Oriane stood alone on the rock, the bell silent above her, and spoke her thoughts aloud: \"Who holds the tide must hold it every hour. / I have not slept since first I loved this power.\" Nobody else on stage could hear her. Only the audience was let in.\n\"Try it again,\" said Ms Adeyemi, \"but not to convince us she's right. Just tell us the truth.\"\nWen stood and began again, more quietly. Imani, painting a chair at the side of the hall, stopped with her brush in the air. Spoken softly, the lines sounded less like a boast and more like a confession. Oriane was exhausted. She was afraid that if she laid the bell down for one night, the sea would take everything she had built, and her people with it. She was also, in the same breath, entirely unwilling to ask whether they wanted to be protected in this way.\n\"That's the difference,\" Imani said suddenly. Everyone turned to look at her, and she felt her ears grow warm. \"Hallam never gets a soliloquy. Nobody in The Passenger List does. We only ever see what they say to each other, so we have to judge them from the outside, like Fenn does. But Oriane lets us inside her head. So we understand her, even when we disapprove.\"\n\"Does understanding her mean forgiving her?\" asked Ms Adeyemi.\n\"I don't think so,\" said Imani. \"But it makes it harder to feel superior.\"\nThen they rehearsed the scene that followed, in which Tam, the boatman, came to ask for his freedom. His speech was short and written in plain, broken lines, unlike the smooth rhythm of Oriane's verse. Devon, who played him, had almost nothing to do except stand with his head lowered and hold out his hands.\n\"Listen to how the language works,\" said Ms Adeyemi. \"She speaks in perfect, even lines, because she controls even the rhythm of the play. He never gets to finish one. What does that tell us?\"\n\"That he has no power over his own words,\" said Devon.\n\"Watch for the moment when that changes,\" said Ms Adeyemi. \"It will be important.\"\nWen went back up onto the rock. This time, when she reached the line about never sleeping, she let her hand drift towards the bell rope and stop just short of it. Imani went back to her painting, but she did not look at the chair again for quite some time.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, for how many years has Oriane promised Tam his freedom?",
+       "options": [
+        "Three",
+        "Seven",
+        "Nine",
+        "Twelve"
+       ],
+       "answer": "Nine",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Oriane destroy in Act One?",
+       "options": [
+        "A whole fleet",
+        "A village",
+        "The bell",
+        "Tam's boat"
+       ],
+       "answer": "A whole fleet",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what is the dramatic term for the speech Oriane gives alone to the audience?",
+       "options": [],
+       "answer": "soliloquy",
+       "accept": [
+        "a soliloquy"
+       ],
+       "hint": "It comes from Latin words meaning \"speaking alone\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, which student plays Tam?",
+       "options": [],
+       "answer": "Devon",
+       "accept": [],
+       "hint": "He has almost nothing to do except stand with his head lowered.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Tam's language differ from Oriane's?",
+       "options": [
+        "His is plain and broken; hers is smooth and even",
+        "His rhymes; hers does not",
+        "His is in another language",
+        "They are identical"
+       ],
+       "answer": "His is plain and broken; hers is smooth and even",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Imani notice about The Passenger List compared with The Bell-Keeper?",
+       "options": [
+        "It has more songs",
+        "No character in it has a soliloquy",
+        "It has a larger cast",
+        "It uses more verse"
+       ],
+       "answer": "No character in it has a soliloquy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Wen's hand stopping just short of the bell rope suggest?",
+       "options": [
+        "She has forgotten her line",
+        "Oriane is tempted but also troubled by her power",
+        "The rope is too short",
+        "Oriane plans to free Tam at once"
+       ],
+       "answer": "Oriane is tempted but also troubled by her power",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Imani says that understanding Oriane makes it \"harder to feel superior\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Who Speaks Last",
+     "synopsis": "Studying the endings, the group sees that one play hands the judgement to a young character and the other hands it to the audience.",
+     "text": "They reached the endings in week five, and Imani finally had something to do.\nAt the close of The Passenger List, Mr Fenn stood up, collected his hat and left. He did not arrest anyone. He did not even say goodbye. He simply left the list on the table. For a moment, nobody moved. Then the family began to talk. Hallam asked who had let the man in. The son said that the clerk had no authority anyway. The mother wondered whether the list was even genuine, and within a few minutes they were all talking more loudly and starting to laugh with relief. Hallam poured himself a drink and proposed they get back to the celebration.\nThrough all of this, Clara had not spoken. Now she walked to the table and picked up the list.\n\"Sit down, Clara,\" said Rafael, in Hallam's most comfortable voice.\nImani did not sit down. She began to read. \"Ada Morrow. Tobias Morrow. Lena Quill.\" She read the names slowly, one after another, and as she read, the lights tightened until only her face and the sheet of paper could be seen. The stage directions said that she should reach the bottom of the page in the dark.\n\"There is no speech about what it means,\" said Ms Adeyemi. \"Why not?\"\n\"Because the playwright doesn't want to tell us,\" said Imani. \"He makes us keep listening. If Clara explained it, we could agree with her and go home feeling good about ourselves. But nobody has said what she will do tomorrow.\"\nThe ending of The Bell-Keeper worked quite differently. In the last scene, Tam finally finished a line. Devon lifted his head and spoke one full, even line of verse in Oriane's own rhythm: \"The tide will come, with you or not, my queen.\" Then he walked away. Oriane was left alone. Slowly, she untied the rope, lowered the bell to the ground, and came down to the very front of the stage. Wen looked straight out into the empty seats and asked the audience to decide whether she should be remembered as a protector or as a jailer. The lights stayed up. There was no answer.\n\"So in one play the audience watches someone take responsibility,\" said Jonah, writing in his grid, \"and in the other it's the audience who gets asked.\"\n\"Good. Now, are they doing the same thing?\" asked Ms Adeyemi.\nImani thought of Clara, still reading in the dark, and of Oriane, standing in the light with nothing left in her hands. \"Not quite,\" she said. \"Clara's ending is about the next generation refusing to look away. Oriane's is about somebody powerful giving up control and waiting to be judged. One is a beginning. The other is an ending. But both leave the final decision outside the play.\"\nJonah underlined something twice, in imitation of Ms Adeyemi, and the whole cast laughed.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Mr Fenn leave behind?",
+       "options": [
+        "His hat",
+        "The list",
+        "The bell",
+        "A letter"
+       ],
+       "answer": "The list",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Hallam suggest after the clerk has gone?",
+       "options": [
+        "Calling the police",
+        "Getting back to the celebration",
+        "Selling the ferries",
+        "Writing to the families"
+       ],
+       "answer": "Getting back to the celebration",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, who picks up the list and reads the names?",
+       "options": [],
+       "answer": "Clara",
+       "accept": [
+        "Imani"
+       ],
+       "hint": "She has stayed silent until this moment.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what happens to the lights while the names are read?",
+       "options": [
+        "They become brighter",
+        "They tighten until only her face and the paper can be seen",
+        "They turn red",
+        "They go out at once"
+       ],
+       "answer": "They tighten until only her face and the paper can be seen",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is significant about Tam's last line?",
+       "options": [
+        "He finishes a full, even line in Oriane's rhythm",
+        "He says it in a whisper",
+        "It is the first line he has ever spoken",
+        "He sings it"
+       ],
+       "answer": "He finishes a full, even line in Oriane's rhythm",
+       "accept": [],
+       "hint": "Think about what Ms Adeyemi told the group to look out for.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what does Oriane lower to the ground?",
+       "options": [],
+       "answer": "the bell",
+       "accept": [
+        "bell",
+        "her bell",
+        "silver bell",
+        "the silver bell"
+       ],
+       "hint": "It is the source of her control over the tide.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Imani think Clara gives no speech explaining the list?",
+       "options": [
+        "The actor could not learn it",
+        "The playwright wants the audience to keep listening instead of feeling comfortable",
+        "The play was unfinished",
+        "Clara does not understand the list"
+       ],
+       "answer": "The playwright wants the audience to keep listening instead of feeling comfortable",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Ms Adeyemi asks whether the two endings are \"doing the same thing\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Missed Cue",
+     "synopsis": "A technical failure and a coursework draft force Jonah and Imani to think about what comparing, and taking responsibility, really require.",
+     "text": "The first full run-through was a disaster, and it was mostly because of one switch.\nIn the middle of the final scene of The Passenger List, the lights did not tighten. They simply stayed as they were, and Imani finished reading the forty names in the full, cheerful glare of the opening scene. Nobody knew whether to clap. When it was over, Ms Adeyemi asked what had happened.\nJonah looked at his folder. \"The lighting desk was set wrong,\" he said. \"Someone must have changed it during the break.\"\nThere was a pause. Tariq, still holding his hat, raised his eyebrows. Rafael suddenly became very interested in his shoes. Jonah heard what he had just said, and his face changed. He turned back a page, then another, and then closed the folder.\n\"No,\" he said. \"I told the Year 10s they could leave the desk. I didn't check it, because I was doing the sound. It's my job to check it. It was me.\"\nNobody laughed. Ms Adeyemi nodded once and asked him to reset. It took only four minutes, but Imani thought about it for the rest of the day.\nThat evening she sat down with her coursework draft. It was two pages long and, she now realised, completely wrong. Paragraph one described The Passenger List. Paragraph two described The Bell-Keeper. Every point about the two plays sat neatly on its own side, and nothing touched anything else. It was a list of features, like Jonah's grid before he had started thinking about it.\nShe started again with a single line at the top of the page: \"Both playwrights are concerned with how the powerful avoid responsibility, but whereas Hallam hides behind other people, Oriane hides behind her own good intentions.\"\nThat felt better. She could now build each paragraph around one idea and move between the plays inside it. Setting: the dining room shows power as inherited comfort, while the bare island shows it as something endlessly performed. Language: Hallam's easy, everyday speech lets him slip away from every question, whereas Oriane's formal verse shows her controlling even the rhythm around her. Audience: Fenn's questions keep us outside the family and make us judges, while Oriane's soliloquy pulls us inside and makes that judgement uncomfortable.\nThen she came to the point she liked best. Both plays, she wrote, ended by giving the decision to someone who had not held power before: a silent daughter, a servant, an audience in the dark.\nOn the following morning she found Jonah in the hall, checking every cue on the desk, one by one, with a pencil behind his ear.\n\"You know you could have let it go yesterday,\" she said. \"Nobody would have proved anything.\"\n\"I know,\" he said, without looking up. \"That's exactly what Hallam would have said.\"",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what goes wrong in the run-through?",
+       "options": [
+        "The lights do not tighten in the final scene",
+        "The bell falls down",
+        "An actor forgets all her lines",
+        "The curtain falls too early"
+       ],
+       "answer": "The lights do not tighten in the final scene",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, who is responsible for checking the lighting desk?",
+       "options": [],
+       "answer": "Jonah",
+       "accept": [],
+       "hint": "He is the stage manager.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is Jonah's first explanation of the problem?",
+       "options": [
+        "He forgot his folder",
+        "Someone must have changed the desk during the break",
+        "A bulb broke",
+        "Ms Adeyemi had changed the plan"
+       ],
+       "answer": "Someone must have changed the desk during the break",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is wrong with Imani's first coursework draft?",
+       "options": [
+        "It is too long",
+        "It treats each play separately, without connecting them",
+        "It is about the wrong plays",
+        "It has no quotations at all"
+       ],
+       "answer": "It treats each play separately, without connecting them",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, which word does Imani use in her opening sentence to contrast the two characters?",
+       "options": [],
+       "answer": "whereas",
+       "accept": [],
+       "hint": "It is a comparative connective in the middle of her sentence.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, according to Imani, what does Oriane hide behind?",
+       "options": [
+        "Her servants",
+        "Her own good intentions",
+        "The clerk",
+        "Her daughter"
+       ],
+       "answer": "Her own good intentions",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Jonah's final comment show?",
+       "options": [
+        "He regrets taking the blame",
+        "He has connected his own behaviour with the themes of the play",
+        "He wants to play Hallam",
+        "He dislikes the play"
+       ],
+       "answer": "He has connected his own behaviour with the themes of the play",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the writer includes Jonah's mistake in a story about two plays?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Double Bill",
+     "synopsis": "On performance night, the two plays meet at last, and Imani discovers what the audience takes away with them.",
+     "text": "On the night of the performance the hall was full, and it was raining hard enough for the sound to reach the stage. Jonah said it was the best sound effect they had never paid for.\nMs Adeyemi had made one last decision about the running order. The Bell-Keeper would come first, with the interval after it, and The Passenger List would close the evening. \"Fable, then reality,\" she told them. \"We let them enjoy the magic, and then we take it away.\"\nThe fable went better than anyone had dared to hope. When Wen rang the bell for the first time, a small child in the third row gasped aloud. When Devon spoke his one perfect line at the end, Imani, watching from the wings, felt the hair rise on her arms. Then Wen untied the bell and walked to the front of the stage. She asked her question, and the lights stayed up, and for several long seconds three hundred people sat looking at her and at one another. Then someone began to clap, uncertainly, and the applause grew.\nDuring the interval the cast shifted the furniture in near silence. The carpet went down, then the table, then the silver. Rafael straightened his tie. Tariq set his hat on the chair by the door. Imani stood in the wings with the sheet of forty names and discovered that her hands were cold.\nThe second play moved quickly. The audience laughed at Hallam's jokes at the beginning, and then, little by little, laughed less. By the time the mother was shown her part in the disaster, the hall was so quiet that the rain seemed very loud. Fenn stood up, took his hat and left. The family began their relieved chatter. Imani waited, as she had waited in rehearsal for seven weeks, and then walked to the table.\n\"Sit down, Clara,\" said Rafael.\nShe picked up the list and began. \"Ada Morrow. Tobias Morrow. Lena Quill.\" The lights began to close in, exactly on cue. She did not hurry. She reached the fortieth name in the dark, and for a moment there was nothing in the hall but the rain.\nAfterwards, in the crowded corridor, an elderly man stopped her. He had a slight stoop, and his coat was wet. \"My father worked on boats,\" he said. \"I don't know what made me think of him. But I wanted to ask you something. What does she do the next morning, your Clara?\"\nImani opened her mouth and found that she had no answer. \"I don't know,\" she said. \"The play doesn't say.\"\n\"No,\" he said, looking pleased. \"I thought it wouldn't.\" He patted her arm and went out into the rain.\nShe found Ms Adeyemi stacking chairs and told her what he had said. Ms Adeyemi did not stop stacking. \"Then both plays worked,\" she said. \"Now, how are you going to end your essay?\"\nImani smiled, and went to look for a pen.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which play is performed first?",
+       "options": [
+        "The Bell-Keeper",
+        "The Passenger List",
+        "Neither; they are performed on different nights",
+        "Both at the same time"
+       ],
+       "answer": "The Bell-Keeper",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is the weather on the night of the performance?",
+       "options": [
+        "Snowy",
+        "Windy and dry",
+        "Heavy rain",
+        "Hot and clear"
+       ],
+       "answer": "Heavy rain",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, about how many people are in the audience?",
+       "options": [],
+       "answer": "three hundred",
+       "accept": [
+        "300"
+       ],
+       "hint": "The figure is given when the audience sits in silence after the question.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how do the audience react to Hallam's jokes as the play goes on?",
+       "options": [
+        "They laugh more",
+        "They laugh less and less",
+        "They leave the hall",
+        "They boo"
+       ],
+       "answer": "They laugh less and less",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what is the name of the first person on the list that Clara reads?",
+       "options": [],
+       "answer": "Ada Morrow",
+       "accept": [
+        "Ada"
+       ],
+       "hint": "It is the first name she reads in the last scene.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is Ms Adeyemi's reason for the running order?",
+       "options": [
+        "To finish early",
+        "To move from enjoyable fable to uncomfortable reality",
+        "Because the set for the fable was unfinished",
+        "Because Wen asked her to"
+       ],
+       "answer": "To move from enjoyable fable to uncomfortable reality",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does the elderly man look pleased when Imani cannot answer his question?",
+       "options": [
+        "He thinks she has forgotten her lines",
+        "He sees that the play has left him still thinking",
+        "He wants her to read the script again",
+        "He is happy to be proved right about boats"
+       ],
+       "answer": "He sees that the play has left him still thinking",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Ms Adeyemi says that the man's question proves that \"both plays worked\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
