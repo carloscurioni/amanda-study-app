@@ -3984,6 +3984,2448 @@
      "errors": []
     }
    ]
+  },
+  "geog-hl": {
+   "topic": "Energy security and the energy mix",
+   "questions": [
+    {
+     "id": "r1xdsbd7hp0naf",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What does the term 'energy mix' describe?",
+     "options": [
+      "The combination of energy sources a country uses",
+      "The total amount of oil a country exports",
+      "The price of electricity for households",
+      "The length of a national power grid"
+     ],
+     "answer": "The combination of energy sources a country uses",
+     "accept": [],
+     "hint": "Think about the share each source contributes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r115ogu31c846i6",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which source generates the largest share of Brazil's electricity?",
+     "options": [
+      "Hydropower",
+      "Coal",
+      "Nuclear power",
+      "Solar power"
+     ],
+     "answer": "Hydropower",
+     "accept": [],
+     "hint": "Consider Brazil's large river basins.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i74mq718se7bg",
+     "subject": "geog",
+     "type": "short",
+     "q": "Name the crop used as the main feedstock for Brazil's fuel ethanol.",
+     "options": [],
+     "answer": "sugar cane",
+     "accept": [
+      "sugarcane"
+     ],
+     "hint": "It is grown widely in São Paulo state.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxd7dboco9cc5",
+     "subject": "geog",
+     "type": "mc",
+     "q": "The Itaipu Dam, a major source of electricity for Brazil, is built on which river?",
+     "options": [
+      "Paraná",
+      "Amazon",
+      "São Francisco",
+      "Xingu"
+     ],
+     "answer": "Paraná",
+     "accept": [],
+     "hint": "It lies on Brazil's south-western border.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwymtrygi9yzy",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which Brazilian region has the greatest concentration of wind power capacity?",
+     "options": [
+      "Northeast",
+      "South-East",
+      "Centre-West",
+      "North"
+     ],
+     "answer": "Northeast",
+     "accept": [],
+     "hint": "Think of the coast and interior exposed to steady trade winds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10qgltwdri3bj",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which statement best defines energy security?",
+     "options": [
+      "Reliable access to sufficient energy at an affordable price",
+      "Producing all energy from renewable sources",
+      "Exporting more energy than is imported",
+      "Keeping all power stations under state ownership"
+     ],
+     "answer": "Reliable access to sufficient energy at an affordable price",
+     "accept": [],
+     "hint": "A country can import energy and still achieve this.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzzg8ukahnrq7",
+     "subject": "geog",
+     "type": "num",
+     "q": "A country generates 180 TWh from hydropower, 60 TWh from natural gas, 40 TWh from wind and 20 TWh from coal. Calculate the percentage generated from fossil fuels, to 1 decimal place.",
+     "options": [],
+     "answer": "26.7",
+     "accept": [
+      "26.7%"
+     ],
+     "hint": "Add the two non-renewable sources, then divide by the total.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p0tym01ant1aj",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which is the main energy-security risk of relying heavily on hydropower?",
+     "options": [
+      "Droughts can reduce reservoir levels and output",
+      "Water prices are set by international markets",
+      "Turbines stop working in cold weather",
+      "Dams produce high direct emissions of sulphur dioxide"
+     ],
+     "answer": "Droughts can reduce reservoir levels and output",
+     "accept": [],
+     "hint": "Think about what the source depends on from year to year.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r88jt4sde1pe4",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which maritime chokepoint is most important for oil exports from the Persian Gulf?",
+     "options": [
+      "Strait of Hormuz",
+      "Strait of Gibraltar",
+      "Panama Canal",
+      "Bering Strait"
+     ],
+     "answer": "Strait of Hormuz",
+     "accept": [],
+     "hint": "It connects the Gulf with the Gulf of Oman.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1su1ra018eextl",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which Brazilian programme, launched in 1975 after the oil shocks, promoted ethanol as a transport fuel?",
+     "options": [
+      "Proálcool",
+      "Petrobras Verde",
+      "Bolsa Energia",
+      "Luz Solar"
+     ],
+     "answer": "Proálcool",
+     "accept": [],
+     "hint": "Its name refers to alcohol as a fuel.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgysc06nygqan",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What is the key feature of a flex-fuel vehicle?",
+     "options": [
+      "It can run on petrol, ethanol or any blend of the two",
+      "It runs only on pure ethanol",
+      "It charges its battery from the grid",
+      "It uses diesel in winter and petrol in summer"
+     ],
+     "answer": "It can run on petrol, ethanol or any blend of the two",
+     "accept": [],
+     "hint": "Consider the choice a driver has at the pump.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7ku54o13vnknu",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which criticism is most often made of large hydroelectric dams in the Amazon basin?",
+     "options": [
+      "They flood forest and displace local and Indigenous communities",
+      "They emit more carbon dioxide per kWh than coal in all cases",
+      "They increase the salinity of the Atlantic Ocean",
+      "They can only operate during the dry season"
+     ],
+     "answer": "They flood forest and displace local and Indigenous communities",
+     "accept": [],
+     "hint": "Consider the land behind the dam wall.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r181l2l1ippgp8",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which of these countries generates the majority of its electricity from nuclear power?",
+     "options": [
+      "France",
+      "Brazil",
+      "Norway",
+      "Saudi Arabia"
+     ],
+     "answer": "France",
+     "accept": [],
+     "hint": "This European country expanded its reactors after the 1970s oil shocks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15muvze3dmudi",
+     "subject": "geog",
+     "type": "open",
+     "q": "Analyse why a diverse national energy mix may improve energy security. Refer to at least two different risks in your answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about supply disruption, weather and price changes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1354hfa1jx5ag8",
+     "subject": "geog",
+     "type": "open",
+     "q": "Evaluate the claim that sugar cane ethanol is a sustainable energy solution for Brazil.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh emissions and jobs against land use, water and labour conditions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h2vky3vc6ny6",
+     "subject": "geog",
+     "type": "open",
+     "q": "Discuss how energy resources can be used as a geopolitical tool by exporting countries. Use one example to support your argument.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider supply cuts, pricing, pipelines and alliances.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "geog-sl": {
+   "topic": "Energy security and the energy mix",
+   "questions": [
+    {
+     "id": "r97skab1jxwbk0",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which of these is a renewable energy source?",
+     "options": [
+      "Wind",
+      "Natural gas",
+      "Coal",
+      "Uranium"
+     ],
+     "answer": "Wind",
+     "accept": [],
+     "hint": "It will not run out on a human timescale.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2itpnvpid5u",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which of these is a fossil fuel?",
+     "options": [
+      "Natural gas",
+      "Bagasse",
+      "Geothermal heat",
+      "Ethanol"
+     ],
+     "answer": "Natural gas",
+     "accept": [],
+     "hint": "It formed from ancient organic matter underground.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfiedb81s62e0t",
+     "subject": "geog",
+     "type": "short",
+     "q": "Give the term for generating electricity using the movement of water through turbines.",
+     "options": [],
+     "answer": "hydropower",
+     "accept": [
+      "hydroelectric power",
+      "hydroelectricity",
+      "hydro power",
+      "hydroelectric"
+     ],
+     "hint": "The first part of the word comes from the Greek for water.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gpk9bm1leevlq",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Brazil shares the Itaipu Dam with which neighbouring country?",
+     "options": [
+      "Paraguay",
+      "Chile",
+      "Peru",
+      "Colombia"
+     ],
+     "answer": "Paraguay",
+     "accept": [],
+     "hint": "The country lies directly across the Paraná River.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riaydiy1hcgs2b",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Why is the coast of north-eastern Brazil well suited to wind farms?",
+     "options": [
+      "It has strong, steady trade winds",
+      "It has the highest mountains in Brazil",
+      "It has frequent winter snowstorms",
+      "It has very little sunlight"
+     ],
+     "answer": "It has strong, steady trade winds",
+     "accept": [],
+     "hint": "Think about reliability as well as strength.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kwy7p2gkz9wr",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which action would most directly improve energy security for a country that imports gas from one supplier?",
+     "options": [
+      "Diversifying its suppliers",
+      "Reducing its number of power lines",
+      "Banning all energy storage",
+      "Raising only its export taxes"
+     ],
+     "answer": "Diversifying its suppliers",
+     "accept": [],
+     "hint": "Consider what happens if that single supplier stops.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ujiprr1o31nge",
+     "subject": "geog",
+     "type": "num",
+     "q": "A country uses 500 TWh of electricity per year, of which 350 TWh comes from renewable sources. What percentage is renewable?",
+     "options": [],
+     "answer": "70",
+     "accept": [
+      "70%"
+     ],
+     "hint": "Divide the renewable part by the total.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b5sne1pa0z58",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What is the fibrous sugar cane residue that Brazilian mills burn to generate electricity called?",
+     "options": [
+      "Bagasse",
+      "Biochar",
+      "Peat",
+      "Lignite"
+     ],
+     "answer": "Bagasse",
+     "accept": [],
+     "hint": "It remains after the juice has been crushed out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8l27km1aoy96z",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What name is given to Brazil's deep offshore oil reserves, found beneath a thick layer of salt?",
+     "options": [
+      "Pre-salt",
+      "Shale belt",
+      "Tar sands",
+      "Sub-coal"
+     ],
+     "answer": "Pre-salt",
+     "accept": [],
+     "hint": "The name describes the age of the layer relative to the salt.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re4p6i01w8ax8w",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What is the main disadvantage of wind power for a national grid?",
+     "options": [
+      "Output is intermittent",
+      "It produces large amounts of smoke",
+      "It requires imported uranium",
+      "It cannot be built on land"
+     ],
+     "answer": "Output is intermittent",
+     "accept": [],
+     "hint": "Consider what happens on a calm day.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqj9imminysr4",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which energy source is Iceland's position on a plate boundary especially suited to?",
+     "options": [
+      "Geothermal",
+      "Tidal only",
+      "Coal",
+      "Oil shale"
+     ],
+     "answer": "Geothermal",
+     "accept": [],
+     "hint": "Think about heat rising near volcanic areas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzn32fu18csccy",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What was the main cause of Brazil's electricity rationing in 2001?",
+     "options": [
+      "Low reservoir levels after a period of low rainfall",
+      "A war with a neighbouring country",
+      "A global ban on hydropower",
+      "The closure of all wind farms"
+     ],
+     "answer": "Low reservoir levels after a period of low rainfall",
+     "accept": [],
+     "hint": "Recall which source dominated Brazil's electricity at that time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r358nfzpcewex",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What is the main purpose of OPEC?",
+     "options": [
+      "To coordinate oil production policies among member states",
+      "To build wind farms in developing countries",
+      "To regulate electricity prices in Europe",
+      "To manage all shipping through the Suez Canal"
+     ],
+     "answer": "To coordinate oil production policies among member states",
+     "accept": [],
+     "hint": "The final letter stands for exporting countries.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1thhvpg19hdwoj",
+     "subject": "geog",
+     "type": "short",
+     "q": "Which fuel does the pipeline from Bolivia to Brazil carry?",
+     "options": [],
+     "answer": "natural gas",
+     "accept": [
+      "gas"
+     ],
+     "hint": "It is a gaseous fossil fuel, burned in power stations and industry.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx9880t1f60z2l",
+     "subject": "geog",
+     "type": "open",
+     "q": "Explain two advantages for Brazil of generating much of its electricity from hydropower.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the country's physical geography and emissions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18ulsrg1vil69u",
+     "subject": "geog",
+     "type": "open",
+     "q": "Explain how conflict in a major energy-exporting region can affect the energy security of an importing country.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider both physical supply and world prices.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "hist-hl": {
+   "topic": "Paper 1 skills: source content and the inquiry question",
+   "questions": [
+    {
+     "id": "r1vb6gw0713t5k",
+     "subject": "hist",
+     "type": "mc",
+     "q": "In IB History Paper 1, what does 'source content' refer to?",
+     "options": [
+      "What the source states or shows",
+      "Who paid for the source to be published",
+      "How reliable the source is",
+      "Which historian wrote about the source"
+     ],
+     "answer": "What the source states or shows",
+     "accept": [],
+     "hint": "Separate this from judging its value.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m1jppvkwwpad",
+     "subject": "hist",
+     "type": "mc",
+     "q": "What is the function of the inquiry question at the top of a source task?",
+     "options": [
+      "It defines what you should look for in the source",
+      "It lists the facts you must memorise",
+      "It tells you the source's author",
+      "It gives you the mark scheme"
+     ],
+     "answer": "It defines what you should look for in the source",
+     "accept": [],
+     "hint": "It sets the focus of your reading.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlxq3sm3nqifm",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which is the most precise use of a source?",
+     "options": [
+      "The writer's claim that 'bread prices doubled within a month' indicates rapid inflation.",
+      "The source talks about prices.",
+      "The source is about the economy and problems.",
+      "The writer says many things about food."
+     ],
+     "answer": "The writer's claim that 'bread prices doubled within a month' indicates rapid inflation.",
+     "accept": [],
+     "hint": "Look for a brief quotation linked to a point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9hq8uz10o6lcf",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Read this invented letter from 1932: 'Since the factory closed in March, half the men on our street have no wage. We queue for soup twice a week, and my sister has sold her sewing machine.' What does it reveal about unemployment?",
+     "options": [
+      "Families lost income and sold possessions to survive",
+      "The government had solved the crisis",
+      "Factories were hiring more workers",
+      "Wages were rising in the writer's street"
+     ],
+     "answer": "Families lost income and sold possessions to survive",
+     "accept": [],
+     "hint": "Use the details about wages, soup and the sale.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12mn4yylfhmlk",
+     "subject": "hist",
+     "type": "short",
+     "q": "Read this invented letter from 1932: 'We queue for soup twice a week, and my sister has sold her sewing machine.' What item was sold?",
+     "options": [],
+     "answer": "sewing machine",
+     "accept": [
+      "a sewing machine",
+      "her sewing machine"
+     ],
+     "hint": "Look for the object in the second half of the sentence.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlgwahi1tph90l",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Read this invented report: 'The new ration cards were issued on Monday. By Thursday the northern bakeries had no flour, yet the officials' canteen served white bread.' What does it imply?",
+     "options": [
+      "Shortages were not shared equally",
+      "Rationing had ended food shortages",
+      "Bakeries were producing surplus flour",
+      "Officials had the same food as everyone else"
+     ],
+     "answer": "Shortages were not shared equally",
+     "accept": [],
+     "hint": "Compare the situation in the two places named.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlvlan01pl11in",
+     "subject": "hist",
+     "type": "mc",
+     "q": "An inquiry question asks what a source reveals about women's employment during a war. Which response stays on source content?",
+     "options": [
+      "The source states that women 'now run the tram lines', showing they took on transport jobs.",
+      "The source is limited because it was written by a journalist.",
+      "The war began after a long diplomatic crisis.",
+      "Many historians disagree about the war's causes."
+     ],
+     "answer": "The source states that women 'now run the tram lines', showing they took on transport jobs.",
+     "accept": [],
+     "hint": "Choose the answer drawn from what the source says about the question's topic.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rikl6ul1t4ldht",
+     "subject": "hist",
+     "type": "mc",
+     "q": "When a task asks what a source 'suggests', what should your answer contain?",
+     "options": [
+      "An inference supported by evidence from the source",
+      "A list of dates from your notes",
+      "An evaluation of the source's origin",
+      "A quotation with no explanation"
+     ],
+     "answer": "An inference supported by evidence from the source",
+     "accept": [],
+     "hint": "You are moving beyond the literal, but not beyond the evidence.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5s5p5k1i2f76u",
+     "subject": "hist",
+     "type": "short",
+     "q": "What term describes a conclusion drawn from evidence when a source does not state it directly?",
+     "options": [],
+     "answer": "inference",
+     "accept": [
+      "an inference"
+     ],
+     "hint": "It comes from a verb meaning to work something out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19rerq34dtbu0",
+     "subject": "hist",
+     "type": "mc",
+     "q": "An invented poster shows a giant worker lifting a factory above a broken city, with the words 'Together we rebuild'. What message does it most clearly convey?",
+     "options": [
+      "Collective labour will restore the nation",
+      "The city should be abandoned",
+      "Factories are dangerous places",
+      "Workers should stop working"
+     ],
+     "answer": "Collective labour will restore the nation",
+     "accept": [],
+     "hint": "Consider both the image and the slogan.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r387tbwalqzk5",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which feature would most weaken a source-content answer?",
+     "options": [
+      "Long copied quotations with no link to the question",
+      "Short quotations explained in the student's own words",
+      "Separate points for separate pieces of evidence",
+      "Direct reference to the inquiry question"
+     ],
+     "answer": "Long copied quotations with no link to the question",
+     "accept": [],
+     "hint": "Examiners want to see understanding, not transcription.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a90heqh3wrec",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Read this invented speech: 'We shall ask no sacrifice our farmers cannot bear; yet the grain quotas must be met by the end of harvest.' What tension does it reveal?",
+     "options": [
+      "Reassurance alongside firm demands on farmers",
+      "Complete freedom for farmers to set quotas",
+      "An end to the collection of grain",
+      "A plan to replace all farmers with soldiers"
+     ],
+     "answer": "Reassurance alongside firm demands on farmers",
+     "accept": [],
+     "hint": "Compare the clause before 'yet' with the clause after it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcqsxwouwvww1",
+     "subject": "hist",
+     "type": "num",
+     "q": "A source-content question is worth 3 marks. As a good working rule, how many distinct relevant points should you aim to make?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Link the number of points to the marks available.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcf8ppyiqqezq",
+     "subject": "hist",
+     "type": "open",
+     "q": "Read this invented diary entry from 1941: 'The sirens went at nine again. We carried the children to the cellar, and no one spoke of the school, closed now for a month.' What does it reveal about the effects of air raids on civilian life? Refer to the source.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Look at both routine and disruption, and use short references.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raus3s5fuswec",
+     "subject": "hist",
+     "type": "open",
+     "q": "Explain why short, embedded quotations usually make a source-content answer stronger than general description.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about precision and how an examiner checks understanding.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ehg52j1u58868",
+     "subject": "hist",
+     "type": "open",
+     "q": "Explain the difference between stating what a source reveals and evaluating its value and limitations for a historian.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "One concerns content; the other concerns origin and purpose.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "hist-sl": {
+   "topic": "Paper 1 skills: source content and the inquiry question",
+   "questions": [
+    {
+     "id": "r54cp0610bocrs",
+     "subject": "hist",
+     "type": "mc",
+     "q": "How many sources are normally provided in an IB History Paper 1 document set?",
+     "options": [
+      "Four",
+      "One",
+      "Two",
+      "Ten"
+     ],
+     "answer": "Four",
+     "accept": [],
+     "hint": "It is enough for comparison and synthesis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rokyt4w17hv9ad",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which skill is mainly tested when you are asked what a source reveals?",
+     "options": [
+      "Understanding its content",
+      "Identifying the publisher's budget",
+      "Criticising the historian's style",
+      "Memorising the date of the source"
+     ],
+     "answer": "Understanding its content",
+     "accept": [],
+     "hint": "Focus on what is in the source.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryrpe1x1fuuik3",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Before reading a source closely, what should you identify first?",
+     "options": [
+      "The focus of the inquiry question",
+      "The number of words in the source",
+      "The longest word in the source",
+      "Your favourite part of the topic"
+     ],
+     "answer": "The focus of the inquiry question",
+     "accept": [],
+     "hint": "Decide what you are looking for.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rom25f15vwsqy",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which sentence uses evidence most effectively?",
+     "options": [
+      "The reference to 'empty market stalls' suggests severe food shortages.",
+      "The source mentions a market.",
+      "The source is interesting and useful.",
+      "Food is discussed in the source."
+     ],
+     "answer": "The reference to 'empty market stalls' suggests severe food shortages.",
+     "accept": [],
+     "hint": "Look for a quotation joined to a point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7yh7p61rrl3e",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Read this invented newspaper extract from 1919: 'Dockers walked out on Tuesday, demanding shorter hours; by Friday, the tram crews had joined them.' What does it reveal about the strike?",
+     "options": [
+      "It spread to other groups of workers",
+      "It ended after one day",
+      "It was opposed by all tram crews",
+      "It was about lower rents only"
+     ],
+     "answer": "It spread to other groups of workers",
+     "accept": [],
+     "hint": "Compare who was involved on Tuesday and on Friday.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n9zzh4w272ws",
+     "subject": "hist",
+     "type": "short",
+     "q": "Read this invented newspaper extract from 1919: 'Dockers walked out on Tuesday, demanding shorter hours.' What did the dockers demand?",
+     "options": [],
+     "answer": "shorter hours",
+     "accept": [
+      "shorter working hours"
+     ],
+     "hint": "Find the words after 'demanding'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5tvsyz1j19rs8",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Read this invented teacher's note from 1946: 'Thirty-eight pupils share eleven books, and the roof still leaks over the back row.' What does it suggest about schools after the war?",
+     "options": [
+      "Schools lacked resources and repairs",
+      "Schools had more books than pupils",
+      "Class sizes had fallen sharply",
+      "School buildings were newly built"
+     ],
+     "answer": "Schools lacked resources and repairs",
+     "accept": [],
+     "hint": "Use both the books and the roof.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmhc4tt1dy6zao",
+     "subject": "hist",
+     "type": "mc",
+     "q": "An invented cartoon shows a tiny clerk holding back a huge wave labelled 'Prices'. What is its most likely message?",
+     "options": [
+      "The authorities cannot control inflation",
+      "Clerks enjoy working at the seaside",
+      "Prices are falling quickly",
+      "Floods caused the banking system to close"
+     ],
+     "answer": "The authorities cannot control inflation",
+     "accept": [],
+     "hint": "Think about the difference in size between the figure and the wave.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uojqd8uls2qy",
+     "subject": "hist",
+     "type": "mc",
+     "q": "A question asks what a source reveals about rural poverty. Which answer is off-focus?",
+     "options": [
+      "The source was written by a government official, so it may be biased.",
+      "The source's mention of 'barefoot children' suggests families lacked basic goods.",
+      "The phrase 'one meal a day' indicates hunger.",
+      "The reference to 'unpaid rents' shows families were in debt."
+     ],
+     "answer": "The source was written by a government official, so it may be biased.",
+     "accept": [],
+     "hint": "Which answer moves from content to evaluation?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13pd4af6rdeye",
+     "subject": "hist",
+     "type": "mc",
+     "q": "What makes a reference to a source 'precise'?",
+     "options": [
+      "It points to specific words or details",
+      "It mentions the source's overall topic",
+      "It repeats the question",
+      "It names a general historical period"
+     ],
+     "answer": "It points to specific words or details",
+     "accept": [],
+     "hint": "Could the examiner find it in the source immediately?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfe8b431r7wqng",
+     "subject": "hist",
+     "type": "short",
+     "q": "Complete the term used for what a source shows or states: source ____.",
+     "options": [],
+     "answer": "content",
+     "accept": [
+      "source content"
+     ],
+     "hint": "It is the opposite focus to origin and purpose.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r5b8zwwov73i",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Read this invented minute of a town meeting: 'The council voted to open the hall as a shelter, though three members objected to the cost.' What does it reveal?",
+     "options": [
+      "The council supported the shelter despite some disagreement",
+      "All council members rejected the shelter",
+      "The hall was closed permanently",
+      "The shelter was free from any cost debate"
+     ],
+     "answer": "The council supported the shelter despite some disagreement",
+     "accept": [],
+     "hint": "Use both the decision and the objection.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18o5owh1fxtaem",
+     "subject": "hist",
+     "type": "num",
+     "q": "A source-content question is worth 2 marks. As a good working rule, how many distinct relevant points should you aim to make?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Link the number of points to the marks available.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2eul5aembdpi",
+     "subject": "hist",
+     "type": "open",
+     "q": "Read this invented letter from 1933: 'The mill now runs three days a week. Father mends boots at night, and we have let the upstairs room to a lodger.' What does it reveal about how families responded to economic hardship? Refer to the source.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Identify more than one way the family adapted.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v8ajcp1x1nldm",
+     "subject": "hist",
+     "type": "open",
+     "q": "Explain why you should avoid adding lots of your own knowledge when answering a question about what a source reveals.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what the task is asking you to do.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdzn1953sil5t",
+     "subject": "hist",
+     "type": "open",
+     "q": "Explain how you would use the inquiry question to decide which details from a source to include.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider relevance and how to select evidence.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math-hl": {
+   "topic": "Quadratic and polynomial functions (SL 2.6, 2.7, AHL 2.12)",
+   "questions": [
+    {
+     "id": "r1r9l64r7s6b2k",
+     "subject": "math",
+     "type": "num",
+     "q": "State the x-coordinate of the vertex of y = 2(x - 3)² + 5.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Compare with the form a(x - h)² + k.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd6yotcg4vbvj",
+     "subject": "math",
+     "type": "short",
+     "q": "Write x² - 6x + 11 in the form (x - h)² + k.",
+     "options": [],
+     "answer": "(x-3)^2+2",
+     "accept": [
+      "(x-3)²+2",
+      "(x - 3)² + 2",
+      "(x - 3)^2 + 2"
+     ],
+     "hint": "Complete the square using half the coefficient of x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y6iibo1obcndv",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the discriminant of 2x² - 5x + 3.",
+     "options": [],
+     "answer": "1",
+     "accept": [],
+     "hint": "Use b² - 4ac.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10p2fba2b2pm",
+     "subject": "math",
+     "type": "mc",
+     "q": "How many real roots does x² + 4x + 7 = 0 have?",
+     "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+     ],
+     "answer": "0",
+     "accept": [],
+     "hint": "Check the sign of the discriminant.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru1709o16k5e7p",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve x² - 5x - 14 < 0.",
+     "options": [],
+     "answer": "-2 < x < 7",
+     "accept": [
+      "-2<x<7"
+     ],
+     "hint": "Factorise, then consider where the parabola is below the x-axis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jnic0zzplmwv",
+     "subject": "math",
+     "type": "short",
+     "q": "Find the set of values of k for which x² + kx + 9 = 0 has no real roots.",
+     "options": [],
+     "answer": "-6 < k < 6",
+     "accept": [
+      "-6<k<6"
+     ],
+     "hint": "Set the discriminant to be negative.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1clvoqzwu7q2q",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the remainder when x³ - 2x² + 4x - 5 is divided by x - 2.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Use the remainder theorem: evaluate at the root of the divisor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19zevz7q1ve1j",
+     "subject": "math",
+     "type": "num",
+     "q": "Given that x - 2 is a factor of x³ + ax² - 4x + 12, find a.",
+     "options": [],
+     "answer": "-3",
+     "accept": [],
+     "hint": "Set p(2) = 0.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wx5wdlvgiicn",
+     "subject": "math",
+     "type": "num",
+     "q": "When 2x³ + x² - 3x + k is divided by x + 1, the remainder is 7. Find k.",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Evaluate the polynomial at x = -1.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvzkebc1pis5uw",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the sum of the roots of 3x³ - 6x² + 5x - 9 = 0.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Use -(coefficient of x²) divided by the leading coefficient.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q9el6d1t95jaf",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the product of the roots of 2x⁴ - 3x³ + x - 8 = 0.",
+     "options": [],
+     "answer": "-4",
+     "accept": [],
+     "hint": "Use (-1)ⁿ × constant term ÷ leading coefficient.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vukgl4b0nmfj",
+     "subject": "math",
+     "type": "num",
+     "q": "The roots of 2x² - 7x + 4 = 0 are α and β. Find the exact value of α² + β².",
+     "options": [],
+     "answer": "33/4",
+     "accept": [],
+     "hint": "Use α² + β² = (α + β)² - 2αβ.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14twql116otnqj",
+     "subject": "math",
+     "type": "short",
+     "q": "Factorise x³ - 7x + 6 fully.",
+     "options": [],
+     "answer": "(x-1)(x-2)(x+3)",
+     "accept": [
+      "(x - 1)(x - 2)(x + 3)"
+     ],
+     "hint": "Try small integer values to find a first factor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nxyyk2jwe97e",
+     "subject": "math",
+     "type": "mc",
+     "q": "If a quadratic has a discriminant of zero, what does its graph do?",
+     "options": [
+      "Touches the x-axis at exactly one point",
+      "Crosses the x-axis at two points",
+      "Never meets the x-axis",
+      "Crosses the y-axis twice"
+     ],
+     "answer": "Touches the x-axis at exactly one point",
+     "accept": [],
+     "hint": "Think about equal roots.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f4t1bw1iei58g",
+     "subject": "math",
+     "type": "num",
+     "q": "The height of a ball is h(t) = -5t² + 20t + 3 metres. Find its maximum height.",
+     "options": [],
+     "answer": "23",
+     "accept": [],
+     "hint": "Find the t-value of the vertex first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk3sc6e1e7efl0",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain why a cubic polynomial with real coefficients must have at least one real root.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider the behaviour of the graph as x tends to positive and negative infinity.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math-sl": {
+   "topic": "Solving equations graphically and analytically (SL 2.10)",
+   "questions": [
+    {
+     "id": "rmb1y181u36gqq",
+     "subject": "math",
+     "type": "mc",
+     "q": "Solve x² - 7x + 10 = 0.",
+     "options": [
+      "x = 2 or x = 5",
+      "x = -2 or x = -5",
+      "x = 1 or x = 10",
+      "x = 3 or x = 4"
+     ],
+     "answer": "x = 2 or x = 5",
+     "accept": [],
+     "hint": "Find two numbers with product 10 and sum 7.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrg7915pzrlmy",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve 3ˣ = 81.",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Write 81 as a power of 3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pg15qu2f3cqj",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve log₂ x = 5.",
+     "options": [],
+     "answer": "32",
+     "accept": [],
+     "hint": "Rewrite in exponential form.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkc7c611yi6b6d",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve ln x = 0.",
+     "options": [],
+     "answer": "1",
+     "accept": [],
+     "hint": "What power of e gives this value?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri7y0mb1kj6vhn",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which substitution is most useful for solving x⁴ - 5x² + 4 = 0?",
+     "options": [
+      "u = x²",
+      "u = x³",
+      "u = 5x",
+      "u = x + 4"
+     ],
+     "answer": "u = x²",
+     "accept": [],
+     "hint": "Notice that x⁴ is the square of another power of x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkm3a5maznzkk",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the sum of the two positive solutions of x⁴ - 5x² + 4 = 0.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Let u = x², solve for u and take positive square roots.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzytagvxwcr9q",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the sum of the solutions of 2²ˣ - 6 × 2ˣ + 8 = 0.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Let u = 2ˣ, then solve the quadratic in u.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c323hnk7f5vc",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve 5ˣ = 12, giving your answer exactly as a logarithm.",
+     "options": [],
+     "answer": "x = log₅ 12",
+     "accept": [
+      "log₅ 12",
+      "log5(12)",
+      "x=log5(12)",
+      "ln12/ln5",
+      "x=ln12/ln5",
+      "x = ln 12 / ln 5"
+     ],
+     "hint": "Take a logarithm with a convenient base.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mikwgu1taahzc",
+     "subject": "math",
+     "type": "num",
+     "q": "Use a graphical method or GDC to find the positive solution of eˣ = x + 2. Give your answer to 3 significant figures.",
+     "options": [],
+     "answer": "1.15",
+     "accept": [],
+     "hint": "Find where the two curves intersect for x > 0.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ut7zs81664lxr",
+     "subject": "math",
+     "type": "mc",
+     "q": "Solving f(x) = g(x) is equivalent to finding which of these?",
+     "options": [
+      "The roots of f(x) - g(x) = 0",
+      "The vertex of f(x)",
+      "The y-intercept of g(x)",
+      "The maximum of f(x) + g(x)"
+     ],
+     "answer": "The roots of f(x) - g(x) = 0",
+     "accept": [],
+     "hint": "Move all terms to one side.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rre3bvaf0bjp8",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which equation is best solved using a graphical method on a GDC?",
+     "options": [
+      "eˣ = x + 2",
+      "2x + 3 = 11",
+      "x² = 49",
+      "10ˣ = 1000"
+     ],
+     "answer": "eˣ = x + 2",
+     "accept": [],
+     "hint": "Which equation combines different types of function?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r112x8z8u4hh8x",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve log₁₀ x + log₁₀(x - 3) = 1.",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Combine the logs, then check any solution in the original equation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbqev51arqdfb",
+     "subject": "math",
+     "type": "mc",
+     "q": "When solving log₁₀ x + log₁₀(x - 3) = 1, why is x = -2 rejected?",
+     "options": [
+      "The logarithm of a negative number is not defined",
+      "It is not an integer",
+      "It makes the equation quadratic",
+      "It is smaller than the base"
+     ],
+     "answer": "The logarithm of a negative number is not defined",
+     "accept": [],
+     "hint": "Substitute the value into the first log.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rza3nutlfmnrm",
+     "subject": "math",
+     "type": "num",
+     "q": "The line y = 2x + 3 meets the curve y = x² at two points. Find the y-coordinate of the point with positive x.",
+     "options": [],
+     "answer": "9",
+     "accept": [],
+     "hint": "Solve x² = 2x + 3 first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16z452014lsczv",
+     "subject": "math",
+     "type": "num",
+     "q": "How many real solutions does x³ = x have?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Rearrange and factorise fully.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wazfp31h0qcdi",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain when an analytic method is more appropriate than a graphical method for solving an equation, and give one reason a GDC might still be useful.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about exact answers and checking.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "phys-hl": {
+   "topic": "B.5 Current and circuits: charge, potential difference and resistance",
+   "questions": [
+    {
+     "id": "r12rle401949uiq",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which is the definition of electric current?",
+     "options": [
+      "Rate of flow of charge",
+      "Energy transferred per unit charge",
+      "Force per unit charge",
+      "Charge stored per unit volt"
+     ],
+     "answer": "Rate of flow of charge",
+     "accept": [],
+     "hint": "Think of charge passing a point per second.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8i82pi138go5v",
+     "subject": "phys",
+     "type": "num",
+     "q": "A charge of 12 C passes a point in 4.0 s. Calculate the current in A.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Use I = Q / t.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpbqrkm3thy1n",
+     "subject": "phys",
+     "type": "num",
+     "q": "A current of 2.0 A flows for 30 s. Calculate the charge transferred in C.",
+     "options": [],
+     "answer": "60",
+     "accept": [],
+     "hint": "Rearrange I = Q / t.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rke2qh5xx5cno",
+     "subject": "phys",
+     "type": "num",
+     "q": "24 J of energy is transferred when 3.0 C of charge moves between two points. Calculate the potential difference in V.",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "Potential difference is energy per unit charge.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r4vtqp1uuz01g",
+     "subject": "phys",
+     "type": "num",
+     "q": "A resistor has a current of 0.50 A with a potential difference of 6.0 V across it. Calculate its resistance in Ω.",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "Use the definition R = V / I.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3twhkp18pk1bj",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What does the I–V graph of an ohmic conductor look like at constant temperature?",
+     "options": [
+      "A straight line through the origin",
+      "A horizontal line",
+      "A curve that flattens at high voltage",
+      "A vertical line at V = 0"
+     ],
+     "answer": "A straight line through the origin",
+     "accept": [],
+     "hint": "Current is directly proportional to potential difference.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6kpos81rq4hst",
+     "subject": "phys",
+     "type": "mc",
+     "q": "How does the resistance of a filament lamp change as the current increases?",
+     "options": [
+      "It increases",
+      "It decreases",
+      "It stays constant",
+      "It becomes zero"
+     ],
+     "answer": "It increases",
+     "accept": [],
+     "hint": "Consider the temperature of the filament.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vi9rqr18oqlkp",
+     "subject": "phys",
+     "type": "mc",
+     "q": "A uniform wire's length is doubled while its cross-sectional area is unchanged. What happens to its resistance?",
+     "options": [
+      "It doubles",
+      "It halves",
+      "It stays the same",
+      "It quadruples"
+     ],
+     "answer": "It doubles",
+     "accept": [],
+     "hint": "Use R = ρL / A.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1237lbn10tkclt",
+     "subject": "phys",
+     "type": "num",
+     "q": "A copper wire has resistivity 1.7 × 10⁻⁸ Ω m, length 10 m and cross-sectional area 1.0 × 10⁻⁶ m². Calculate its resistance in Ω.",
+     "options": [],
+     "answer": "0.17",
+     "accept": [],
+     "hint": "Use R = ρL / A.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18bqac4iyfhpz",
+     "subject": "phys",
+     "type": "num",
+     "q": "The diameter of a uniform wire is doubled, with no change in length or material. By what factor does its resistance change? Give a decimal.",
+     "options": [],
+     "answer": "0.25",
+     "accept": [
+      "1/4"
+     ],
+     "hint": "Area depends on the square of the diameter.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kp3t9yarm4bq",
+     "subject": "phys",
+     "type": "short",
+     "q": "State the SI unit of resistivity.",
+     "options": [],
+     "answer": "ohm metre",
+     "accept": [
+      "Ω m",
+      "ohm-metre",
+      "Ωm",
+      "ohm meter"
+     ],
+     "hint": "Rearrange R = ρL / A to find the unit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17ajlsng57a1e",
+     "subject": "phys",
+     "type": "num",
+     "q": "A metal wire has charge carrier density 8.5 × 10²⁸ m⁻³ and cross-sectional area 1.0 × 10⁻⁶ m². It carries a current of 2.0 A, and each carrier has charge 1.6 × 10⁻¹⁹ C. Calculate the drift speed in mm s⁻¹, to 2 significant figures.",
+     "options": [],
+     "answer": "0.15",
+     "accept": [],
+     "hint": "Use I = nAvq, then convert from m s⁻¹.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3z767j1ciy762",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Why does the resistance of a metal wire usually increase with temperature?",
+     "options": [
+      "Lattice ions vibrate more, so electrons collide more often",
+      "More free electrons are released per atom",
+      "The wire's charge carriers become positive",
+      "The electrons stop drifting at higher temperatures"
+     ],
+     "answer": "Lattice ions vibrate more, so electrons collide more often",
+     "accept": [],
+     "hint": "Think about what happens to the atoms in the lattice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13ej4zz10id9ys",
+     "subject": "phys",
+     "type": "num",
+     "q": "A cell of emf 12 V and internal resistance 1.0 Ω is connected to a 5.0 Ω resistor. Calculate the terminal potential difference in V.",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Find the current first, then subtract the voltage lost inside the cell.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf9xoce4mn70w",
+     "subject": "phys",
+     "type": "open",
+     "q": "A student finds the gradient of the tangent to a non-ohmic I–V curve and says this gives the resistance at that point. Explain why this is incorrect and describe how to find the resistance correctly.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use the definition of resistance at a single point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqa6f7p1f88591",
+     "subject": "phys",
+     "type": "open",
+     "q": "Explain, in terms of charge carriers and energy, how a resistor transfers energy from a circuit to its surroundings.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider collisions of electrons with the lattice.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "phys-sl": {
+   "topic": "B.5 Current and circuits: charge, potential difference and resistance",
+   "questions": [
+    {
+     "id": "rj8k33fl99frp",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What is the SI unit of electric charge?",
+     "options": [
+      "Coulomb",
+      "Ampere",
+      "Volt",
+      "Ohm"
+     ],
+     "answer": "Coulomb",
+     "accept": [],
+     "hint": "One ampere for one second transfers one of these units.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4m6zkfynylot",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which is the definition of potential difference?",
+     "options": [
+      "Energy transferred per unit charge",
+      "Charge per unit time",
+      "Resistance per unit length",
+      "Power per unit current"
+     ],
+     "answer": "Energy transferred per unit charge",
+     "accept": [],
+     "hint": "Consider what a volt is equal to.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yy2c47m593j0",
+     "subject": "phys",
+     "type": "num",
+     "q": "A current of 0.80 A flows for 10 s. Calculate the charge transferred in C.",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "Use Q = It.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsezytc1lmxbhc",
+     "subject": "phys",
+     "type": "num",
+     "q": "A current of 5.0 A flows for 60 s. Calculate the charge transferred in C.",
+     "options": [],
+     "answer": "300",
+     "accept": [],
+     "hint": "Multiply current by time in seconds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra0zdw2vfe9i4",
+     "subject": "phys",
+     "type": "num",
+     "q": "A 9.0 V potential difference is applied across a 3.0 Ω resistor. Calculate the current in A.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Use V = IR.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4mj7a8su16eq",
+     "subject": "phys",
+     "type": "num",
+     "q": "A current of 0.25 A passes through a 40 Ω resistor. Calculate the potential difference across it in V.",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Use V = IR.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oxf8kw18fohy7",
+     "subject": "phys",
+     "type": "num",
+     "q": "18 J of energy is transferred when 2.0 C of charge moves through a component that carries a current of 3.0 A. Calculate the resistance of the component in Ω.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Find the potential difference first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rudb3zs1uikvpf",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Under which condition does a metal conductor obey Ohm's law?",
+     "options": [
+      "When its temperature stays constant",
+      "When it is carrying alternating current only",
+      "When its length is changing",
+      "When its resistance is zero"
+     ],
+     "answer": "When its temperature stays constant",
+     "accept": [],
+     "hint": "Think about what can alter resistance during a test.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qzbwfe11zzibu",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What feature does the I–V graph of an ideal diode show?",
+     "options": [
+      "It conducts significantly in only one direction",
+      "It conducts equally in both directions",
+      "Its current is always zero",
+      "It has constant resistance for all voltages"
+     ],
+     "answer": "It conducts significantly in only one direction",
+     "accept": [],
+     "hint": "Compare the positive and negative parts of the graph.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5lf9wpf2uwn5",
+     "subject": "phys",
+     "type": "mc",
+     "q": "On an I–V graph (I on the y-axis) for an ohmic conductor, what does the gradient represent?",
+     "options": [
+      "1/R",
+      "R",
+      "V",
+      "IR"
+     ],
+     "answer": "1/R",
+     "accept": [],
+     "hint": "Rearrange V = IR into the form y = mx.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzfpl131mrpge0",
+     "subject": "phys",
+     "type": "num",
+     "q": "A wire has resistivity 5.0 × 10⁻⁷ Ω m, length 2.0 m and cross-sectional area 1.0 × 10⁻⁶ m². Calculate its resistance in Ω.",
+     "options": [],
+     "answer": "1",
+     "accept": [],
+     "hint": "Use R = ρL / A.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbjt10t8j25o6",
+     "subject": "phys",
+     "type": "mc",
+     "q": "A wire's cross-sectional area is increased, with length and material unchanged. What happens to its resistance?",
+     "options": [
+      "It decreases",
+      "It increases",
+      "It stays the same",
+      "It falls to zero"
+     ],
+     "answer": "It decreases",
+     "accept": [],
+     "hint": "Think about how much room there is for charge to flow.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnq5bi41hwuyvc",
+     "subject": "phys",
+     "type": "mc",
+     "q": "How many electrons, each of charge 1.6 × 10⁻¹⁹ C, carry a total charge of 1.6 C?",
+     "options": [
+      "1.0 × 10¹⁹",
+      "1.6 × 10¹⁹",
+      "1.0 × 10¹⁸",
+      "2.6 × 10¹⁹"
+     ],
+     "answer": "1.0 × 10¹⁹",
+     "accept": [],
+     "hint": "Divide total charge by the charge of one electron.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r118nkoe1tdwxi2",
+     "subject": "phys",
+     "type": "num",
+     "q": "A component carries 0.20 A with a potential difference of 3.0 V across it. Calculate its resistance at this point in Ω.",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Use R = V / I, using the values at that point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb00n7u1kpiagx",
+     "subject": "phys",
+     "type": "open",
+     "q": "Explain why a filament lamp is a non-ohmic component.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Link the current to temperature and then to resistance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwdy6yje8kzov",
+     "subject": "phys",
+     "type": "open",
+     "q": "Describe how you would determine the resistivity of a metal wire in the laboratory.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what to measure and which graph to plot.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych-hl": {
+   "topic": "Thinking and decision-making: heuristics and cognitive biases",
+   "questions": [
+    {
+     "id": "rzx9ff01bcx4nk",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is a heuristic?",
+     "options": [
+      "A mental shortcut used to make judgements",
+      "A long calculation of probabilities",
+      "A brain region involved in memory",
+      "A research method used in experiments"
+     ],
+     "answer": "A mental shortcut used to make judgements",
+     "accept": [],
+     "hint": "Think about making decisions quickly.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qqm5y2wwrjp6",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which description fits System 1 in dual-process models?",
+     "options": [
+      "Fast, automatic and intuitive",
+      "Slow, effortful and logical",
+      "Conscious and always rule-based",
+      "Available only to trained experts"
+     ],
+     "answer": "Fast, automatic and intuitive",
+     "accept": [],
+     "hint": "Think of responses that occur without deliberate effort.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c2djagrdd7yc",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which description fits System 2 in dual-process models?",
+     "options": [
+      "Slow, deliberate and effortful",
+      "Fast and emotional",
+      "Fully unconscious",
+      "Impossible to control"
+     ],
+     "answer": "Slow, deliberate and effortful",
+     "accept": [],
+     "hint": "Think about solving a hard problem step by step.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15yfnxiiyi8z4",
+     "subject": "psych",
+     "type": "short",
+     "q": "Which bias occurs when an initial number influences a later estimate?",
+     "options": [],
+     "answer": "anchoring",
+     "accept": [
+      "anchoring bias",
+      "anchoring effect"
+     ],
+     "hint": "The term comes from something that holds a boat in place.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj95kl7164hm3r",
+     "subject": "psych",
+     "type": "mc",
+     "q": "After seeing much news coverage of plane crashes, someone overestimates their frequency. Which heuristic best explains this?",
+     "options": [
+      "Availability",
+      "Representativeness",
+      "Anchoring",
+      "Hindsight"
+     ],
+     "answer": "Availability",
+     "accept": [],
+     "hint": "Which examples come to mind most easily?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkqsushnz89u1",
+     "subject": "psych",
+     "type": "short",
+     "q": "What is the name of the effect in which the wording of equivalent information changes decisions?",
+     "options": [],
+     "answer": "framing effect",
+     "accept": [
+      "framing"
+     ],
+     "hint": "The term relates to how something is presented, as with a picture.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjz051r1j1oout",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In classic framing research, what do people tend to prefer when options are described in terms of lives saved?",
+     "options": [
+      "The certain option",
+      "The risky option",
+      "Neither option",
+      "Whichever option is listed last"
+     ],
+     "answer": "The certain option",
+     "accept": [],
+     "hint": "Think about attitudes to risk when gains are in focus.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cek5xp1jozalh",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which error is shown by judging 'a bank clerk who is also an activist' as more likely than 'a bank clerk'?",
+     "options": [
+      "Conjunction fallacy",
+      "Sunk cost fallacy",
+      "Hindsight bias",
+      "Availability bias"
+     ],
+     "answer": "Conjunction fallacy",
+     "accept": [],
+     "hint": "Can two events together be more probable than one of them alone?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5v9ca6z6iu7z",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is confirmation bias?",
+     "options": [
+      "Favouring information that supports existing beliefs",
+      "Remembering the last item on a list",
+      "Believing an outcome was inevitable after it happens",
+      "Overestimating others' agreement with us"
+     ],
+     "answer": "Favouring information that supports existing beliefs",
+     "accept": [],
+     "hint": "Consider what evidence a person chooses to notice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsfj2kimds1a8",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In prospect theory, what does loss aversion mean?",
+     "options": [
+      "Losses feel larger than equivalent gains",
+      "Gains feel larger than equivalent losses",
+      "People always avoid all risk",
+      "People ignore probability entirely"
+     ],
+     "answer": "Losses feel larger than equivalent gains",
+     "accept": [],
+     "hint": "Compare losing a sum with winning that same sum.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6bxp5vfbvucm",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In a classic anchoring study, participants saw a rigged wheel stop on a high or low number before estimating a quantity. What was the main result?",
+     "options": [
+      "High-number groups gave higher estimates",
+      "Low-number groups gave higher estimates",
+      "Estimates were unaffected by the wheel",
+      "All participants gave the correct answer"
+     ],
+     "answer": "High-number groups gave higher estimates",
+     "accept": [],
+     "hint": "The number was irrelevant, but did it still matter?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v4azbq1bo3chv",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which is a common limitation of laboratory research on decision-making?",
+     "options": [
+      "Low ecological validity",
+      "No control over variables",
+      "No possibility of replication",
+      "No use of quantitative data"
+     ],
+     "answer": "Low ecological validity",
+     "accept": [],
+     "hint": "Consider how artificial the tasks can be.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rat2syr1yplhcc",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Research in which legal experts were still influenced by irrelevant numbers when suggesting sentences best supports which conclusion?",
+     "options": [
+      "Expertise does not fully remove anchoring",
+      "Only students are subject to anchoring",
+      "Anchoring never occurs in real settings",
+      "Legal training eliminates all bias"
+     ],
+     "answer": "Expertise does not fully remove anchoring",
+     "accept": [],
+     "hint": "Consider what this means for experienced decision-makers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrpyaa2o3f9td",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain how a dual-process model can account for errors in everyday decision-making.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider what happens when intuitive responses are not checked.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcnmg8ymw54qo",
+     "subject": "psych",
+     "type": "open",
+     "q": "Evaluate the use of laboratory experiments to investigate heuristics and cognitive biases.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh control and causation against realism and generalisability.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gcfk8r1kbl71v",
+     "subject": "psych",
+     "type": "open",
+     "q": "Discuss the extent to which heuristics should be regarded as errors rather than useful strategies.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about speed and accuracy in different environments.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych-sl": {
+   "topic": "Thinking and decision-making: heuristics and cognitive biases",
+   "questions": [
+    {
+     "id": "r1yfejl1vcffq8",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which task is an example of System 1 thinking?",
+     "options": [
+      "Recognising an angry face",
+      "Calculating 17 × 24 mentally",
+      "Comparing two loan contracts",
+      "Planning a long essay"
+     ],
+     "answer": "Recognising an angry face",
+     "accept": [],
+     "hint": "Which response happens quickly and without effort?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5i42fa172z3jf",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which task most clearly requires System 2 thinking?",
+     "options": [
+      "Calculating 17 × 24 mentally",
+      "Reading a large road sign in your first language",
+      "Noticing a sudden loud sound",
+      "Completing '2 + 2 ='"
+     ],
+     "answer": "Calculating 17 × 24 mentally",
+     "accept": [],
+     "hint": "Which task demands focused mental effort?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq1muyib5hjvl",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is a cognitive bias?",
+     "options": [
+      "A systematic error in thinking",
+      "A random memory failure",
+      "A mental illness",
+      "A type of personality trait"
+     ],
+     "answer": "A systematic error in thinking",
+     "accept": [],
+     "hint": "The key idea is that the error follows a pattern.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr1pdau6nnz9b",
+     "subject": "psych",
+     "type": "short",
+     "q": "Which heuristic involves judging likelihood by how easily examples come to mind?",
+     "options": [],
+     "answer": "availability",
+     "accept": [
+      "availability heuristic"
+     ],
+     "hint": "Think about information that is readily accessible.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp0qswq2g1t71",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A shop displays a high 'original price' next to a sale price. Which bias is it using?",
+     "options": [
+      "Anchoring",
+      "Confirmation bias",
+      "Hindsight bias",
+      "Self-serving bias"
+     ],
+     "answer": "Anchoring",
+     "accept": [],
+     "hint": "The first number becomes a reference point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzjnif25q1fhc",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Describing a treatment as having '90% survival' rather than '10% mortality' is an example of what?",
+     "options": [
+      "Framing",
+      "Availability",
+      "Conformity",
+      "Schema reversal"
+     ],
+     "answer": "Framing",
+     "accept": [],
+     "hint": "The facts are the same; the presentation differs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bstjed8wsuaq",
+     "subject": "psych",
+     "type": "num",
+     "q": "A bat and a ball cost £1.10 in total. The bat costs £1.00 more than the ball. How many pence does the ball cost?",
+     "options": [],
+     "answer": "5",
+     "accept": [
+      "5p"
+     ],
+     "hint": "Write an equation rather than trusting your first impression.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q91nxt1cigz88",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Tomás is quiet and loves books, so someone assumes he is a librarian rather than a salesperson, ignoring how many people do each job. Which heuristic is being used?",
+     "options": [
+      "Representativeness",
+      "Availability",
+      "Anchoring",
+      "Affect only"
+     ],
+     "answer": "Representativeness",
+     "accept": [],
+     "hint": "He seems to match a stereotype.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp44t51tpyxpo",
+     "subject": "psych",
+     "type": "short",
+     "q": "What is the bias of seeking information that supports what you already believe?",
+     "options": [],
+     "answer": "confirmation bias",
+     "accept": [
+      "confirmation"
+     ],
+     "hint": "It concerns evidence that agrees with a prior view.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjx148p1fglxog",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Why are heuristics useful in everyday life?",
+     "options": [
+      "They save time and mental effort",
+      "They guarantee correct decisions",
+      "They remove emotion from thinking",
+      "They replace the need for memory"
+     ],
+     "answer": "They save time and mental effort",
+     "accept": [],
+     "hint": "Think about having limited time and information.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ah0f9u3t8cwn",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Under which conditions are people most likely to rely on System 1?",
+     "options": [
+      "Under time pressure or when tired",
+      "When given unlimited time and clear instructions",
+      "When checking calculations carefully",
+      "When a decision has been written out in full"
+     ],
+     "answer": "Under time pressure or when tired",
+     "accept": [],
+     "hint": "Consider when effortful thinking is harder.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kthm2rjc1vk",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A framing study does not tell participants its exact aim in advance. Which ethical step is most important afterwards?",
+     "options": [
+      "Debriefing participants",
+      "Publishing their names",
+      "Repeating the study without consent",
+      "Paying them only if they answer correctly"
+     ],
+     "answer": "Debriefing participants",
+     "accept": [],
+     "hint": "Think about what participants should learn after taking part.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2dctbb2sihin",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In an experiment testing the framing effect, what is the independent variable?",
+     "options": [
+      "The wording of the options",
+      "The participants' final choice",
+      "The participants' age only",
+      "The number of correct answers"
+     ],
+     "answer": "The wording of the options",
+     "accept": [],
+     "hint": "What does the researcher deliberately change?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rglevrgsvz75h",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which is a common limitation of using only university students in decision-making research?",
+     "options": [
+      "Findings may not generalise to other populations",
+      "Students cannot give informed consent",
+      "Data cannot be analysed statistically",
+      "Heuristics do not occur in students"
+     ],
+     "answer": "Findings may not generalise to other populations",
+     "accept": [],
+     "hint": "Think about who the sample represents.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r160cydz3bokkc",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain one heuristic, using an original example from everyday life.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Say what the shortcut is and how it influenced the decision.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r25wf8f1b020ih",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain one strength and one limitation of using experiments to study decision-making.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about control and realism.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
