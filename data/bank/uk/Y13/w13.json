@@ -1,0 +1,804 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y13",
+ "academic_week": 13,
+ "subjects": {
+  "bio-hl": {
+   "topic": "D4.3 Climate change",
+   "questions": [
+    {
+     "id": "rkg7tp2gpf9st",
+     "subject": "bio",
+     "type": "mc",
+     "q": "The enhanced greenhouse effect is caused mainly by:",
+     "options": [
+      "increased concentrations of greenhouse gases from human activities",
+      "a thinning of the ozone layer",
+      "more sunlight reaching Earth",
+      "volcanic ash blocking radiation"
+     ],
+     "answer": "increased concentrations of greenhouse gases from human activities",
+     "accept": [],
+     "hint": "Think of combustion and land use.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1eisvkx18dujbi",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Greenhouse gases warm the atmosphere because they:",
+     "options": [
+      "absorb and re-emit longer-wave (infrared) radiation",
+      "reflect visible light back to space",
+      "absorb ultraviolet radiation only",
+      "block short-wave radiation from the Sun"
+     ],
+     "answer": "absorb and re-emit longer-wave (infrared) radiation",
+     "accept": [],
+     "hint": "The Earth's surface emits heat as infrared.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnwxm2519egt9z",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which of these is a greenhouse gas?",
+     "options": [
+      "methane",
+      "nitrogen",
+      "oxygen",
+      "argon"
+     ],
+     "answer": "methane",
+     "accept": [],
+     "hint": "It is released by cattle and wetlands.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13fofw311lsvav",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the main human activity that has increased atmospheric carbon dioxide since the Industrial Revolution.",
+     "options": [],
+     "answer": "burning fossil fuels",
+     "accept": [
+      "combustion of fossil fuels",
+      "fossil fuel combustion"
+     ],
+     "hint": "Think of coal, oil and gas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "recglkt1qbidzs",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Melting of Arctic sea ice affects polar bears mainly by:",
+     "options": [
+      "reducing the platform they use to hunt seals",
+      "increasing their food supply",
+      "lowering water temperature",
+      "increasing snowfall"
+     ],
+     "answer": "reducing the platform they use to hunt seals",
+     "accept": [],
+     "hint": "Where do they catch prey?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfauvxu1ddfhbc",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Many species are shifting their ranges in response to warming. The typical direction of shift is:",
+     "options": [
+      "towards the poles and to higher altitudes",
+      "towards the equator",
+      "to lower altitudes",
+      "no change in direction"
+     ],
+     "answer": "towards the poles and to higher altitudes",
+     "accept": [],
+     "hint": "They are tracking cooler conditions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10ewbmc10po4jf",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Coral bleaching occurs when corals under heat stress expel:",
+     "options": [
+      "their symbiotic zooxanthellae",
+      "their calcium carbonate skeleton",
+      "their tentacles",
+      "their gametes"
+     ],
+     "answer": "their symbiotic zooxanthellae",
+     "accept": [],
+     "hint": "The colour of coral comes from photosynthetic partners.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k1jbjihh6rm",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Ocean acidification is caused by:",
+     "options": [
+      "CO₂ dissolving in seawater to form carbonic acid",
+      "methane reacting with salt",
+      "sulfur from volcanoes only",
+      "warmer water holding more oxygen"
+     ],
+     "answer": "CO₂ dissolving in seawater to form carbonic acid",
+     "accept": [],
+     "hint": "Write the reaction of CO₂ with water.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r180v0x9f63t34",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which is an example of carbon sequestration?",
+     "options": [
+      "afforestation",
+      "burning peat",
+      "draining wetlands",
+      "deforestation"
+     ],
+     "answer": "afforestation",
+     "accept": [],
+     "hint": "Which process stores carbon in biomass?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19r9zqv17aku2m",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Peatlands store large amounts of carbon because:",
+     "options": [
+      "waterlogged, acidic conditions slow decomposition",
+      "they have very high rates of respiration",
+      "they contain no plants",
+      "they release methane quickly"
+     ],
+     "answer": "waterlogged, acidic conditions slow decomposition",
+     "accept": [],
+     "hint": "Saprotrophs need oxygen.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j9vdhg14e6qie",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Phenology is the study of:",
+     "options": [
+      "the timing of seasonal biological events",
+      "the genetics of populations",
+      "the classification of species",
+      "nutrient cycling"
+     ],
+     "answer": "the timing of seasonal biological events",
+     "accept": [],
+     "hint": "Think of flowering dates and migration.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r154b8e1cxi9ob",
+     "subject": "bio",
+     "type": "mc",
+     "q": "If leaf emergence occurs earlier due to warming but birds' egg-laying does not, the result can be:",
+     "options": [
+      "a mismatch between chick hatching and peak caterpillar abundance",
+      "more food for chicks",
+      "no ecological effect",
+      "faster bird migration"
+     ],
+     "answer": "a mismatch between chick hatching and peak caterpillar abundance",
+     "accept": [],
+     "hint": "Consider food availability when chicks need it most.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gq4xv3178ep97",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Earlier spring warming triggers earlier plant growth because the timing is often controlled by:",
+     "options": [
+      "temperature cues",
+      "only day length",
+      "moon phase",
+      "soil pH"
+     ],
+     "answer": "temperature cues",
+     "accept": [],
+     "hint": "Which environmental factor is changing with climate?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc4m4x0w5mmso",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which is the best example of evolution in response to climate change?",
+     "options": [
+      "selection for lighter-coloured morphs of a moth in years with less snow cover",
+      "an individual bird growing more feathers in winter",
+      "a tree losing leaves in autumn",
+      "an animal moving into shade"
+     ],
+     "answer": "selection for lighter-coloured morphs of a moth in years with less snow cover",
+     "accept": [],
+     "hint": "Evolution involves changes in allele frequency in a population.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r153pr9u1n0hp9r",
+     "subject": "bio",
+     "type": "open",
+     "q": "Evaluate the claim that correlation between rising CO₂ concentrations and rising global temperatures proves causation.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider mechanism, other variables and supporting evidence.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13ebnpi1kac99e",
+     "subject": "bio",
+     "type": "open",
+     "q": "Explain how a change in phenology could lead to natural selection in a population of insectivorous birds.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Link timing mismatch to survival and heritable variation.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bio-sl": {
+   "topic": "IA: conclusion, evaluation and final report",
+   "questions": [
+    {
+     "id": "r1q36t851aoz1lt",
+     "subject": "bio",
+     "type": "mc",
+     "q": "A good conclusion in a Biology IA should:",
+     "options": [
+      "answer the research question using the processed data",
+      "describe the method again",
+      "list all the equipment",
+      "repeat the background information"
+     ],
+     "answer": "answer the research question using the processed data",
+     "accept": [],
+     "hint": "The conclusion links back to what you asked.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18sn6sz1j9au7y",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What should a conclusion include to show the strength of the relationship found?",
+     "options": [
+      "reference to the trend and its statistical or uncertainty support",
+      "only personal opinion",
+      "a new hypothesis unrelated to the data",
+      "the cost of the equipment"
+     ],
+     "answer": "reference to the trend and its statistical or uncertainty support",
+     "accept": [],
+     "hint": "How confident can you be in the pattern?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r96ufsx1sf5juj",
+     "subject": "bio",
+     "type": "mc",
+     "q": "If error bars of two means overlap substantially, the difference between them is:",
+     "options": [
+      "unlikely to be significant",
+      "definitely significant",
+      "proven",
+      "impossible to interpret"
+     ],
+     "answer": "unlikely to be significant",
+     "accept": [],
+     "hint": "Overlap suggests the data could come from the same range.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rpccjq19fucrh",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Comparing your results with published scientific literature in the conclusion helps to:",
+     "options": [
+      "place the findings in a scientific context",
+      "make the report longer",
+      "replace your own data",
+      "avoid analysing results"
+     ],
+     "answer": "place the findings in a scientific context",
+     "accept": [],
+     "hint": "Do your results agree with what is known?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmab889pag92k",
+     "subject": "bio",
+     "type": "mc",
+     "q": "A systematic error is one that:",
+     "options": [
+      "shifts all measurements in the same direction",
+      "varies randomly between trials",
+      "is caused by the student's opinion",
+      "can be removed by more repeats"
+     ],
+     "answer": "shifts all measurements in the same direction",
+     "accept": [],
+     "hint": "Think of an incorrectly calibrated balance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sarjxbnta5fg",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Random errors can be reduced by:",
+     "options": [
+      "increasing the number of repeats",
+      "using a less precise instrument",
+      "changing the independent variable",
+      "ignoring outliers without reason"
+     ],
+     "answer": "increasing the number of repeats",
+     "accept": [],
+     "hint": "Averages smooth out random variation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzlzx9qfq8fs",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which is a methodological weakness rather than a random error?",
+     "options": [
+      "the temperature of the room was not controlled",
+      "small variation in stopwatch timing",
+      "slight differences between readings",
+      "rounding in the last digit"
+     ],
+     "answer": "the temperature of the room was not controlled",
+     "accept": [],
+     "hint": "It concerns how the investigation was designed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rqpa6w1id8b8u",
+     "subject": "bio",
+     "type": "mc",
+     "q": "A realistic improvement to an investigation should be:",
+     "options": [
+      "specific and linked to a weakness identified",
+      "vague, like \"be more careful\"",
+      "unrelated to the method",
+      "more expensive than any school can afford"
+     ],
+     "answer": "specific and linked to a weakness identified",
+     "accept": [],
+     "hint": "Say exactly what to change and why.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r93lc01wfsuv5",
+     "subject": "bio",
+     "type": "mc",
+     "q": "An extension to the investigation would:",
+     "options": [
+      "explore a new related question",
+      "repeat the same trials",
+      "shorten the report",
+      "change the conclusion"
+     ],
+     "answer": "explore a new related question",
+     "accept": [],
+     "hint": "Think of the next step in the research.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgfrkwe1sfk3dc",
+     "subject": "bio",
+     "type": "short",
+     "q": "In a Biology IA, data that lies far outside the pattern of the rest is called an ___.",
+     "options": [],
+     "answer": "outlier",
+     "accept": [
+      "anomaly",
+      "anomalous result"
+     ],
+     "hint": "It \"lies outside\" the others.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzitoc81mamqgo",
+     "subject": "bio",
+     "type": "mc",
+     "q": "When evaluating, discussing the limitations of the data means considering:",
+     "options": [
+      "how far the data can support generalised conclusions",
+      "how neat the tables look",
+      "the font used in graphs",
+      "the number of pages"
+     ],
+     "answer": "how far the data can support generalised conclusions",
+     "accept": [],
+     "hint": "Range, sample size and replication matter.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14dnsbj1kedk5h",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Before submitting, a student should check that the report:",
+     "options": [
+      "stays within the word limit and cites sources",
+      "includes the raw data of every other student",
+      "has no graphs",
+      "has no references"
+     ],
+     "answer": "stays within the word limit and cites sources",
+     "accept": [],
+     "hint": "Academic honesty and length both count.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14qnmil7680mf",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which statement is an appropriate conclusion?",
+     "options": [
+      "As temperature increased from 20 °C to 40 °C, mean rate of reaction increased, supporting the hypothesis within the uncertainties.",
+      "The experiment was fun and worked well.",
+      "Enzymes are proteins.",
+      "More research is always needed."
+     ],
+     "answer": "As temperature increased from 20 °C to 40 °C, mean rate of reaction increased, supporting the hypothesis within the uncertainties.",
+     "accept": [],
+     "hint": "Look for the one tied to data and range.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjca2wu1n7x41l",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Why should a conclusion only refer to the range of the independent variable tested?",
+     "options": [
+      "Extrapolating beyond the tested range is not supported by evidence",
+      "Because the range is always too small",
+      "Because graphs cannot show other values",
+      "Because the examiner prefers short conclusions"
+     ],
+     "answer": "Extrapolating beyond the tested range is not supported by evidence",
+     "accept": [],
+     "hint": "What happens outside your data is unknown.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dhs5m811vmkvg",
+     "subject": "bio",
+     "type": "open",
+     "q": "Identify one weakness of an investigation measuring photosynthesis rate by counting bubbles, and suggest a realistic improvement.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about how bubbles vary in size.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16iter995uibp",
+     "subject": "bio",
+     "type": "open",
+     "q": "Explain how a student could show in the evaluation that uncertainties affect the confidence in their conclusion.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Link the size of uncertainties to the size of the trend.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bus-hl": {
+   "topic": "IA final submission — HL: crisis management and contingency planning",
+   "questions": [
+    {
+     "id": "r1mkhqmx18w0mv2",
+     "subject": "bus",
+     "type": "mc",
+     "q": "The conclusion of a Business Management IA should:",
+     "options": [
+      "answer the research question using the analysis",
+      "introduce new data for the first time",
+      "describe the company's history",
+      "list the sources"
+     ],
+     "answer": "answer the research question using the analysis",
+     "accept": [],
+     "hint": "Link back to the question you asked.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2fozrk1v0e3uf",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Why is referencing important in the IA?",
+     "options": [
+      "to show the sources used and maintain academic honesty",
+      "to increase the word count",
+      "to replace analysis",
+      "to impress the reader with long lists"
+     ],
+     "answer": "to show the sources used and maintain academic honesty",
+     "accept": [],
+     "hint": "Think of plagiarism.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ldjon4193m533",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Footnotes and the bibliography are usually:",
+     "options": [
+      "not included in the word count",
+      "counted twice",
+      "forbidden",
+      "only for the conclusion"
+     ],
+     "answer": "not included in the word count",
+     "accept": [],
+     "hint": "Check what counts towards the limit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjp7yuy1suv7zl",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Checking the assessment criteria before submission helps the student to:",
+     "options": [
+      "make sure each required element is clearly addressed",
+      "write fewer words",
+      "avoid using business tools",
+      "skip the conclusion"
+     ],
+     "answer": "make sure each required element is clearly addressed",
+     "accept": [],
+     "hint": "Criteria describe what examiners look for.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfcqs1eyy1v61",
+     "subject": "bus",
+     "type": "mc",
+     "q": "A strong IA conclusion acknowledges:",
+     "options": [
+      "the limitations of the evidence used",
+      "only the strengths of the company",
+      "nothing beyond the final answer",
+      "the student's grade goal"
+     ],
+     "answer": "the limitations of the evidence used",
+     "accept": [],
+     "hint": "Is the evidence complete and reliable?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nzd84u1l1xej2",
+     "subject": "bus",
+     "type": "short",
+     "q": "What term describes a plan prepared in advance for how a business will respond to a possible unexpected event? (contingency ___)",
+     "options": [],
+     "answer": "planning",
+     "accept": [
+      "plan",
+      "contingency planning"
+     ],
+     "hint": "It is prepared before the crisis happens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxwfx0q5jme5a",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Crisis management refers to:",
+     "options": [
+      "the response of a business to an unexpected, threatening event",
+      "routine stock control",
+      "long-term marketing planning",
+      "hiring seasonal workers"
+     ],
+     "answer": "the response of a business to an unexpected, threatening event",
+     "accept": [],
+     "hint": "It happens when something goes wrong.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19pxrp91u5kqzd",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which is an important factor in effective crisis management?",
+     "options": [
+      "transparency with stakeholders",
+      "hiding information from the media",
+      "delaying any response",
+      "blaming customers"
+     ],
+     "answer": "transparency with stakeholders",
+     "accept": [],
+     "hint": "Trust depends on honesty.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsqofbfml3nh0",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which is another factor in effective crisis management?",
+     "options": [
+      "speed of response",
+      "waiting until the crisis ends",
+      "avoiding communication",
+      "ignoring employees"
+     ],
+     "answer": "speed of response",
+     "accept": [],
+     "hint": "Delay can make damage worse.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16lwakv1fymb3b",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which is a benefit of contingency planning?",
+     "options": [
+      "reduces the impact and response time of a crisis",
+      "eliminates all risk",
+      "costs nothing",
+      "guarantees profit"
+     ],
+     "answer": "reduces the impact and response time of a crisis",
+     "accept": [],
+     "hint": "Being prepared helps act faster.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1utbisd1h783je",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which is a cost or limitation of contingency planning?",
+     "options": [
+      "it takes time and money to prepare plans that may never be used",
+      "it always makes crises worse",
+      "it is illegal for small businesses",
+      "it removes the need for managers"
+     ],
+     "answer": "it takes time and money to prepare plans that may never be used",
+     "accept": [],
+     "hint": "Think about opportunity cost.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kpqask13rlqx1",
+     "subject": "bus",
+     "type": "mc",
+     "q": "A food company discovers contamination in one product batch. The most appropriate first step is:",
+     "options": [
+      "recall the affected products and inform customers",
+      "continue selling while investigating",
+      "reduce prices",
+      "increase advertising"
+     ],
+     "answer": "recall the affected products and inform customers",
+     "accept": [],
+     "hint": "Safety of customers comes first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r90xcq13050yt",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Why might contingency plans need regular updating?",
+     "options": [
+      "the external environment and risks change over time",
+      "plans become more expensive every month",
+      "laws forbid using old plans",
+      "employees never change"
+     ],
+     "answer": "the external environment and risks change over time",
+     "accept": [],
+     "hint": "Think of new technologies and threats.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vv8j8p1w0hym4",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which stakeholder is usually most directly affected by a data breach at an online retailer?",
+     "options": [
+      "customers",
+      "competitors",
+      "the government only",
+      "suppliers of raw materials"
+     ],
+     "answer": "customers",
+     "accept": [],
+     "hint": "Whose personal information is at risk?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r705s7814s2n5o",
+     "subject": "bus",
+     "type": "open",
+     "q": "Evaluate the importance of contingency planning for a small airline.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh the costs of preparation against possible crises.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18rp4dm1e6l75d",
+     "subject": "bus",
+     "type": "open",
+     "q": "Discuss how effective communication can reduce the long-term damage of a crisis to a firm's brand.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider trust, reputation and stakeholders.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
