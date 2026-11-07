@@ -973,6 +973,1037 @@
      "errors": []
     }
    ]
+  },
+  "comp": {
+   "topic": "Representing algorithms: flowcharts and pseudocode",
+   "questions": [
+    {
+     "id": "ra2qqis1gxtayh",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which flowchart symbol is used to show the start or end of an algorithm?",
+     "options": [
+      "Rounded rectangle (terminator)",
+      "Diamond",
+      "Parallelogram",
+      "Rectangle"
+     ],
+     "answer": "Rounded rectangle (terminator)",
+     "accept": [],
+     "hint": "Think of the shape that looks like a pill or oval.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpptju91yqj66b",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which flowchart symbol represents a decision?",
+     "options": [
+      "Diamond",
+      "Rectangle",
+      "Parallelogram",
+      "Circle"
+     ],
+     "answer": "Diamond",
+     "accept": [],
+     "hint": "A decision has two exits: Yes and No.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xfy2qh1lfk6qn",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which flowchart symbol represents input or output, such as INPUT name or OUTPUT total?",
+     "options": [
+      "Parallelogram",
+      "Diamond",
+      "Rectangle",
+      "Rounded rectangle"
+     ],
+     "answer": "Parallelogram",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rx4o9y18zxahu",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which flowchart symbol represents a process, such as total ← total + 1?",
+     "options": [
+      "Rectangle",
+      "Diamond",
+      "Parallelogram",
+      "Oval"
+     ],
+     "answer": "Rectangle",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1stllc01jg79b2",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the term for writing an algorithm in structured English-like statements that are not tied to a specific programming language.",
+     "options": [],
+     "answer": "pseudocode",
+     "accept": [
+      "pseudo-code",
+      "pseudo code"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s5m0cs1agj04z",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which of the three basic programming constructs means instructions are carried out one after another in order?",
+     "options": [
+      "Sequence",
+      "Selection",
+      "Iteration",
+      "Recursion"
+     ],
+     "answer": "Sequence",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlvcfcurvalsn",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A diamond in a flowchart with one exit looping back to an earlier step most likely shows which construct?",
+     "options": [
+      "Iteration",
+      "Sequence",
+      "Input",
+      "Termination"
+     ],
+     "answer": "Iteration",
+     "accept": [],
+     "hint": "Going back to repeat steps is called…",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c5gpwn8lapzy",
+     "subject": "comp",
+     "type": "num",
+     "q": "Consider the pseudocode:\nx ← 4\ny ← x * 3\nx ← y - 5\nOUTPUT x\nWhat is output?",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Work line by line and keep track of each variable.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13fl44s1dq8w3d",
+     "subject": "comp",
+     "type": "num",
+     "q": "Consider the pseudocode:\ntotal ← 0\nFOR i ← 1 TO 4\n  total ← total + i\nNEXT i\nOUTPUT total\nWhat is output?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Add each value of i from 1 to 4.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r0g3zvv2k0yu",
+     "subject": "comp",
+     "type": "num",
+     "q": "Consider the pseudocode:\ncount ← 0\nn ← 20\nWHILE n > 1\n  n ← n DIV 2\n  count ← count + 1\nENDWHILE\nOUTPUT count\nWhat is output? (DIV is integer division.)",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Trace n: 20, 10, … and count how many times the loop body runs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtb3bd67r4znk",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Consider the pseudocode:\nINPUT mark\nIF mark >= 50 THEN\n  OUTPUT \"Pass\"\nELSE\n  OUTPUT \"Fail\"\nENDIF\nWhat is output if mark is 50?",
+     "options": [
+      "Pass",
+      "Fail",
+      "Nothing",
+      "An error"
+     ],
+     "answer": "Pass",
+     "accept": [],
+     "hint": "Check carefully what >= means.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rse8v7zx7ga39",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which construct is used in the pseudocode IF temperature > 30 THEN OUTPUT \"Hot\" ENDIF?",
+     "options": [
+      "Selection",
+      "Iteration",
+      "Sequence",
+      "Assignment only"
+     ],
+     "answer": "Selection",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fqopbx1d6jidz",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which pseudocode loop is most suitable when the number of repetitions is known in advance?",
+     "options": [
+      "FOR … NEXT",
+      "WHILE … ENDWHILE",
+      "REPEAT … UNTIL",
+      "IF … ENDIF"
+     ],
+     "answer": "FOR … NEXT",
+     "accept": [],
+     "hint": "Which loop uses a counter from a start value to an end value?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqwcuav26bv5e",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is a key difference between a WHILE loop and a REPEAT … UNTIL loop?",
+     "options": [
+      "REPEAT … UNTIL always runs its body at least once",
+      "WHILE always runs at least once",
+      "REPEAT … UNTIL cannot use conditions",
+      "WHILE can only count upwards"
+     ],
+     "answer": "REPEAT … UNTIL always runs its body at least once",
+     "accept": [],
+     "hint": "Where is the condition checked in each loop?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7bh8xa1xx0ucd",
+     "subject": "comp",
+     "type": "open",
+     "q": "Write pseudocode for an algorithm that asks the user to input 5 numbers and outputs the largest number.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Store the first number as the largest, then compare each new number with it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r166nt5e15zmcj9",
+     "subject": "comp",
+     "type": "open",
+     "q": "Describe two advantages of representing an algorithm as a flowchart rather than pseudocode.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "econ": {
+   "topic": "Market failure: externalities, private and social costs and benefits",
+   "questions": [
+    {
+     "id": "rb59nvfwukbss",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What is an externality?",
+     "options": [
+      "A cost or benefit to a third party not involved in the transaction",
+      "A tax paid by firms to the government",
+      "The price a consumer pays for a good",
+      "A cost paid only by the producer"
+     ],
+     "answer": "A cost or benefit to a third party not involved in the transaction",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rduu6gf1wn80c3",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A factory pays for its raw materials, wages and electricity. These are examples of…",
+     "options": [
+      "Private costs",
+      "External costs",
+      "Social benefits",
+      "External benefits"
+     ],
+     "answer": "Private costs",
+     "accept": [],
+     "hint": "Who pays these costs?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvatyb91oamjpr",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which formula correctly defines social cost?",
+     "options": [
+      "Private cost + external cost",
+      "Private cost − external cost",
+      "Private benefit + external cost",
+      "External benefit − private cost"
+     ],
+     "answer": "Private cost + external cost",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "romrvwn1xhm972",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which formula correctly defines social benefit?",
+     "options": [
+      "Private benefit + external benefit",
+      "Private benefit − external cost",
+      "Private cost + external benefit",
+      "External cost − private benefit"
+     ],
+     "answer": "Private benefit + external benefit",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xycmuz1y4e7rq",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Noise from a nightclub that keeps nearby residents awake is an example of…",
+     "options": [
+      "An external cost",
+      "A private benefit",
+      "An external benefit",
+      "A private cost"
+     ],
+     "answer": "An external cost",
+     "accept": [],
+     "hint": "The residents are not part of the nightclub's transactions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzbctbt1dgtrfb",
+     "subject": "econ",
+     "type": "mc",
+     "q": "When a person is vaccinated, others are less likely to catch the disease. This is an example of…",
+     "options": [
+      "An external benefit",
+      "An external cost",
+      "A private cost",
+      "A merit cost"
+     ],
+     "answer": "An external benefit",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqrbu0gfjvfol",
+     "subject": "econ",
+     "type": "short",
+     "q": "State the term for goods, such as education, that create positive externalities and tend to be under-consumed in a free market.",
+     "options": [],
+     "answer": "merit goods",
+     "accept": [
+      "merit good"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r136gzvu1plg3ey",
+     "subject": "econ",
+     "type": "short",
+     "q": "State the term for goods, such as cigarettes, that create negative externalities and tend to be over-consumed in a free market.",
+     "options": [],
+     "answer": "demerit goods",
+     "accept": [
+      "demerit good"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14jy6nz1he9jeo",
+     "subject": "econ",
+     "type": "num",
+     "q": "A firm's private cost of producing a batch of goods is $500. The pollution it creates causes $200 of damage to local residents. Calculate the social cost.",
+     "options": [],
+     "answer": "700",
+     "accept": [],
+     "hint": "Social cost = private cost + external cost.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1aweqgw1avgp8r",
+     "subject": "econ",
+     "type": "num",
+     "q": "A student's private benefit from a university course is valued at $40,000. The external benefit to society is $15,000. Calculate the social benefit, in dollars.",
+     "options": [],
+     "answer": "55000",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra3e7ksj4xh0k",
+     "subject": "econ",
+     "type": "num",
+     "q": "The social cost of driving a car one kilometre is $0.90. The private cost to the driver is $0.60. Calculate the external cost per kilometre, in dollars.",
+     "options": [],
+     "answer": "0.3",
+     "accept": [],
+     "hint": "External cost = social cost − private cost.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dfhnob169ogbe",
+     "subject": "econ",
+     "type": "mc",
+     "q": "In a free market with negative externalities in production, the good is likely to be…",
+     "options": [
+      "Over-produced compared to the socially optimal level",
+      "Under-produced compared to the socially optimal level",
+      "Produced at exactly the social optimum",
+      "Not produced at all"
+     ],
+     "answer": "Over-produced compared to the socially optimal level",
+     "accept": [],
+     "hint": "Producers ignore costs they do not pay themselves.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15qv9dtfimck",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Externalities are a type of market failure because…",
+     "options": [
+      "Resources are not allocated in the best way for society",
+      "Prices are always too high",
+      "Firms make losses",
+      "The government sets all prices"
+     ],
+     "answer": "Resources are not allocated in the best way for society",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h3brcs7kusp8",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which government policy would most directly reduce a negative production externality such as pollution?",
+     "options": [
+      "A tax on the polluting output",
+      "A subsidy to the polluting firm",
+      "Lowering interest rates",
+      "Removing all regulations"
+     ],
+     "answer": "A tax on the polluting output",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5v7i08zsls35",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain why the free market tends to under-provide education. Refer to private and external benefits in your answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r198scv9dtsud2",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain two consequences for third parties of a new airport being built near a town.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about both costs and benefits for people living nearby.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Accuracy: spelling, punctuation and grammar",
+   "questions": [
+    {
+     "id": "rgjb6yc4n6ga1",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence is punctuated correctly?",
+     "options": [
+      "The students' books were left on the bus.",
+      "The student's books' were left on the bus.",
+      "The students books' were left on the bus.",
+      "The students's books were left on the bus."
+     ],
+     "answer": "The students' books were left on the bus.",
+     "accept": [],
+     "hint": "For a plural noun ending in -s, where does the apostrophe go?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbkixehwvu2qu",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the correct word: \"___ going to be late if we don't hurry.\"",
+     "options": [
+      "We're",
+      "Were",
+      "Where",
+      "Wear"
+     ],
+     "answer": "We're",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rza1pqw1gf1t3m",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the correct word: \"The storm had a huge ___ on the village.\"",
+     "options": [
+      "effect",
+      "affect",
+      "effekt",
+      "affection"
+     ],
+     "answer": "effect",
+     "accept": [],
+     "hint": "One is usually a noun, the other usually a verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7chixrzwf6qo",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence contains a comma splice?",
+     "options": [
+      "It was raining, we stayed inside.",
+      "It was raining, so we stayed inside.",
+      "Because it was raining, we stayed inside.",
+      "It was raining; we stayed inside."
+     ],
+     "answer": "It was raining, we stayed inside.",
+     "accept": [],
+     "hint": "Look for two main clauses joined only by a comma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb4p5211ui6c5c",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is spelt correctly?",
+     "options": [
+      "necessary",
+      "neccessary",
+      "necesary",
+      "neccesary"
+     ],
+     "answer": "necessary",
+     "accept": [],
+     "hint": "One collar, two sleeves.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10a2pdj60j637",
+     "subject": "en",
+     "type": "short",
+     "q": "Correct the spelling of this word: \"definately\".",
+     "options": [],
+     "answer": "definitely",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tmj78fi0glpg",
+     "subject": "en",
+     "type": "short",
+     "q": "Correct the spelling of this word: \"recieve\".",
+     "options": [],
+     "answer": "receive",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1frobcaor11jg",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence shows correct subject–verb agreement?",
+     "options": [
+      "Neither of the answers is correct.",
+      "Neither of the answers are correct.",
+      "Neither of the answer are correct.",
+      "Neither of the answers be correct."
+     ],
+     "answer": "Neither of the answers is correct.",
+     "accept": [],
+     "hint": "What is the actual subject of the sentence?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd3ggfp1gqwy9w",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the correct option: \"She ___ the report before the meeting started.\"",
+     "options": [
+      "had finished",
+      "has finish",
+      "had finish",
+      "have finished"
+     ],
+     "answer": "had finished",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9hkj55yh0dor",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence uses a semicolon correctly?",
+     "options": [
+      "The museum was closed; we visited the park instead.",
+      "The museum was; closed we visited the park.",
+      "The museum was closed; and we visited the park.",
+      "The; museum was closed."
+     ],
+     "answer": "The museum was closed; we visited the park instead.",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r94omdj1y0yxhe",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the correct word: \"I would ___ gone if I had known.\"",
+     "options": [
+      "have",
+      "of",
+      "off",
+      "has"
+     ],
+     "answer": "have",
+     "accept": [],
+     "hint": "Say it slowly: it sounds like one word but is spelt as another.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2jgice1liuxb2",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence is correct?",
+     "options": [
+      "The dog wagged its tail.",
+      "The dog wagged it's tail.",
+      "The dog wagged its' tail.",
+      "The dog wagged it is tail."
+     ],
+     "answer": "The dog wagged its tail.",
+     "accept": [],
+     "hint": "Does the sentence mean \"it is\"?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnxegz3lyobgl",
+     "subject": "en",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words.",
+     "options": [],
+     "answer": "suprised → surprised; beleived → believed; definately → definitely; peacefull → peaceful; untill → until",
+     "accept": [],
+     "hint": "Read slowly, one word at a time, as if proofreading an exam answer.",
+     "text": "When I first arrived at the coastal town, I was suprised by how quiet it was. The harbour was almost empty, and the only sound was the wind against the boats. I had beleived it would be busy, but the season had finished. It was definately the most peacefull place I had ever visited, and I wanted to stay untill spring.",
+     "errors": [
+      {
+       "wrong": "suprised",
+       "right": "surprised"
+      },
+      {
+       "wrong": "beleived",
+       "right": "believed"
+      },
+      {
+       "wrong": "definately",
+       "right": "definitely"
+      },
+      {
+       "wrong": "peacefull",
+       "right": "peaceful"
+      },
+      {
+       "wrong": "untill",
+       "right": "until"
+      }
+     ]
+    },
+    {
+     "id": "r1d5d0ddnigefz",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain a systematic method for proofreading a piece of extended writing in an exam.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about reading for different types of error at different times.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uwti181k1sfsd",
+     "subject": "en",
+     "type": "open",
+     "q": "Identify and correct the errors in this sentence, then explain each correction: \"Their was alot of people at the concert, and everyone enjoyed themself.\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fi0n8p1cegy1c",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which spelling of this word is correct?",
+     "options": [
+      "separate",
+      "seperate",
+      "separete",
+      "seprate"
+     ],
+     "answer": "separate",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_lit": {
+   "topic": "Short stories: comparing themes across Stories of Ourselves Vol. 3",
+   "questions": [
+    {
+     "id": "r1rygq5h13oz1n9",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "When comparing themes across two short stories, what should a strong paragraph do?",
+     "options": [
+      "Discuss both stories and link them with comparative connectives",
+      "Retell the plot of each story in turn",
+      "Focus only on the story you prefer",
+      "List every theme without evidence"
+     ],
+     "answer": "Discuss both stories and link them with comparative connectives",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18n95fc1oelx5x",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which connective best introduces a similarity between two stories?",
+     "options": [
+      "Similarly",
+      "However",
+      "In contrast",
+      "On the other hand"
+     ],
+     "answer": "Similarly",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri4bya9djmk6b",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which connective best introduces a difference between two stories?",
+     "options": [
+      "Whereas",
+      "Likewise",
+      "Equally",
+      "In the same way"
+     ],
+     "answer": "Whereas",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i10za2e3xey2",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "State the literary term for the central idea or message that a writer explores in a text.",
+     "options": [],
+     "answer": "theme",
+     "accept": [
+      "themes"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rml5kapmwc4rw",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which of the following is a theme rather than a plot event?",
+     "options": [
+      "Isolation",
+      "A character boards a train",
+      "A letter arrives",
+      "A storm breaks out"
+     ],
+     "answer": "Isolation",
+     "accept": [],
+     "hint": "A theme is an idea, not something that happens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6zi0d71vux1m9",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What makes a quotation \"apt\" evidence in a comparison essay?",
+     "options": [
+      "It is short and directly supports the point being made",
+      "It is the longest quotation available",
+      "It comes from the first page",
+      "It includes the name of the author"
+     ],
+     "answer": "It is short and directly supports the point being made",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j3nuus1m9hm1y",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which is the most effective way to embed a quotation?",
+     "options": [
+      "The narrator feels \"trapped\" by the city around her.",
+      "The narrator feels this: \"trapped\".",
+      "Quote: \"trapped\" — the narrator.",
+      "\"Trapped.\" This shows the narrator."
+     ],
+     "answer": "The narrator feels \"trapped\" by the city around her.",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9bqa5u4gf58j",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Two stories both explore the theme of childhood, but one is nostalgic and the other is fearful. What is being compared here?",
+     "options": [
+      "The writers' attitudes to the same theme",
+      "The settings",
+      "The lengths of the stories",
+      "The narrative voices only"
+     ],
+     "answer": "The writers' attitudes to the same theme",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ozn6ph1688pju",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which of these sentences shows the best comparative analysis?",
+     "options": [
+      "While both writers present loss, the first uses silence to show grief, whereas the second uses violent imagery.",
+      "Both stories are about loss.",
+      "The first story is sad. The second story is also sad.",
+      "I liked the second story more than the first."
+     ],
+     "answer": "While both writers present loss, the first uses silence to show grief, whereas the second uses violent imagery.",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13sjkte1c8r7em",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In an exam answer comparing short stories, what does \"AO2\"-style analysis usually focus on?",
+     "options": [
+      "How language, structure and form create meaning",
+      "The historical facts of the author's life",
+      "Spelling and punctuation",
+      "The reader's personal experiences"
+     ],
+     "answer": "How language, structure and form create meaning",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhdpdmy1qmfb3p",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "State the term for a story's ending that leaves the outcome uncertain for the reader.",
+     "options": [],
+     "answer": "open ending",
+     "accept": [
+      "ambiguous ending",
+      "an open ending"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11bmy6420omp",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Why might two writers set stories in very different places but explore the same theme?",
+     "options": [
+      "To show the theme is universal across different lives",
+      "Because they were not allowed to use the same setting",
+      "To make the stories shorter",
+      "Because settings never matter"
+     ],
+     "answer": "To show the theme is universal across different lives",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ibv37x1ewhdpl",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which is the best way to structure a comparison essay on two stories?",
+     "options": [
+      "Point-by-point, comparing both stories within each paragraph",
+      "All of story A, then all of story B, with no links",
+      "Only the introduction compares the stories",
+      "One paragraph per character"
+     ],
+     "answer": "Point-by-point, comparing both stories within each paragraph",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1anpv1q17hd1v7",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "A writer ends a story with a symbol, such as a closed door. What is the best way to write about this in a comparison?",
+     "options": [
+      "Explain what the symbol suggests about the theme and contrast it with the other story's ending",
+      "Describe what the door looks like",
+      "Say that the story ends",
+      "Ignore it, as endings are not important"
+     ],
+     "answer": "Explain what the symbol suggests about the theme and contrast it with the other story's ending",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b5u2s19y2etk",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Choose two short stories you have studied. Compare how each writer presents a theme they share, using a short embedded quotation from each.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r192jlwogskhf8",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Explain why selecting a small number of short, precise quotations is often more effective than using long quotations in a comparison essay.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []

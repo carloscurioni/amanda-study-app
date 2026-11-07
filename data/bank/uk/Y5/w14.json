@@ -3291,6 +3291,905 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Glasshouse at Gull Point",
+   "premise": "In an old house on the windswept Cornish cliffs, a sulky boy from London discovers a locked, forgotten glasshouse and slowly brings it, and himself, back to life.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The House on Gull Point",
+     "synopsis": "Ten-year-old Arthur is sent from London to live with his great-aunt in a lonely house on the Cornish cliffs, and he is not at all pleased.",
+     "text": "Arthur Penhallow had never seen the sea, and when at last he saw it, he decided at once that he did not care for it.\nThe carriage rattled along the cliff road in the grey afternoon light. Rain spat against the window. Below, the waves threw themselves at the rocks as though they were cross about something, and Arthur thought that he understood exactly how they felt.\nIn London, there had been gas lamps and omnibuses and a muffin man who rang his bell on Thursdays. There had been his governess, who read to him whilst he ate his supper. But his father had been sent abroad on business for a twelvemonth, and so Arthur had been sent, like a parcel, to Great-Aunt Winifred at Gull Point.\nThe house stood alone on the headland, tall and narrow, with a crooked chimney. A stout woman in a starched white apron opened the door before the carriage had even stopped.\n\"You'll be Master Arthur,\" she said. \"I'm Mrs Tregarth, the housekeeper. Wipe your boots, if you please.\"\nArthur did not wipe his boots. He marched into the hall and dripped upon the rug.\nGreat-Aunt Winifred was waiting in the parlour beside a meagre fire. She was very small and very old, and she peered at him through spectacles on a silver chain.\n\"Hmm,\" she said. \"Rather a sour face for one so young.\"\n\"I didn't ask to come here,\" said Arthur.\n\"No,\" agreed his aunt calmly. \"And I didn't ask to have you. So we are quite even.\"\nThat night, in a bedroom that smelled of salt and old wood, Arthur lay listening to the wind moaning around the chimney. He was certain he would be wretched here forever.\nThen, just before he fell asleep, he heard something strange: a faint tapping, like fingers on glass, coming from somewhere below the house.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where has Arthur come from?",
+       "options": [
+        "London",
+        "Bristol",
+        "Edinburgh",
+        "Paris"
+       ],
+       "answer": "London",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why has Arthur been sent to Gull Point?",
+       "options": [
+        "His father has gone abroad on business for a year",
+        "He was in trouble at school",
+        "His governess fell ill",
+        "He asked to see the sea"
+       ],
+       "answer": "His father has gone abroad on business for a year",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the housekeeper?",
+       "options": [],
+       "answer": "Mrs Tregarth",
+       "accept": [
+        "Tregarth"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the word \"twelvemonth\" is an old-fashioned word. What does it mean?",
+       "options": [
+        "A year",
+        "A fortnight",
+        "A month",
+        "Twelve days"
+       ],
+       "answer": "A year",
+       "accept": [],
+       "hint": "Think about how many months make it up.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the fire is described as \"meagre\". What does this suggest?",
+       "options": [
+        "It is small and gives little heat",
+        "It is roaring and very hot",
+        "It is smoky and smelly",
+        "It has just been lit"
+       ],
+       "answer": "It is small and gives little heat",
+       "accept": [],
+       "hint": "Would a cosy, generous fire be described this way?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Arthur do when asked to wipe his boots?",
+       "options": [
+        "He walks in and drips on the rug",
+        "He wipes them carefully",
+        "He takes them off",
+        "He asks for a cloth"
+       ],
+       "answer": "He walks in and drips on the rug",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the writer say Arthur was sent \"like a parcel\"?",
+       "options": [
+        "To show he felt he had no choice and nobody asked him",
+        "Because he travelled by post",
+        "Because he was wrapped up warmly",
+        "Because he arrived late"
+       ],
+       "answer": "To show he felt he had no choice and nobody asked him",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the writer describes the waves as \"cross about something\" at the start of the story?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Locked Door in the Scullery",
+     "synopsis": "Exploring the house on a rainy morning, Arthur discovers a mysterious locked door and a grumpy jackdaw.",
+     "text": "The next morning it was raining again, so Arthur was told he might amuse himself indoors, provided he did not touch anything.\nHe touched a great many things. He touched the brass telescope in the hall, the stuffed owl on the landing, and the dusty piano that nobody played. Nothing was the least bit amusing.\nAt last he wandered down a stone passage to the scullery, where Mrs Tregarth was scrubbing pots in a deep sink. Beyond the sink, half hidden behind a heap of old sacks, was a small green door with an iron ring for a handle.\n\"Where does that go?\" Arthur asked.\nMrs Tregarth's scrubbing brush paused. \"Nowhere that concerns you, Master Arthur. It's been locked these ten years, since the old master died.\"\n\"Which old master?\"\n\"Your great-uncle Edmund. Now off with you, before you're under my feet.\"\nArthur went, but slowly. He was sure the tapping he had heard in the night had come from behind that very door.\nIn the kitchen garden, sheltered by a high wall, he found a large black bird with pale grey eyes sitting on an upturned bucket. It looked at Arthur with great contempt.\n\"Shoo,\" said Arthur.\n\"Chack,\" said the bird, and did not shoo.\n\"That's Jasper,\" said a voice. A girl about his own age was leaning on the gate, her shawl wet with rain and a basket of fish on her arm. \"He's a jackdaw. He belonged to your great-uncle, and he's ever so clever. He steals spoons.\"\n\"I don't care about birds,\" said Arthur.\n\"Suit yourself,\" said the girl, and went whistling down to the kitchen door.\nJasper hopped off the bucket, flew up to the top of the wall, and disappeared over the far side, where the house cast its long, grey shadow. Arthur stood for a long time, wondering what lay on the other side.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Arthur told he may do indoors?",
+       "options": [
+        "Amuse himself, as long as he does not touch anything",
+        "Practise the piano",
+        "Help Mrs Tregarth",
+        "Read in the library"
+       ],
+       "answer": "Amuse himself, as long as he does not touch anything",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Arthur find the small green door?",
+       "options": [
+        "In the scullery, behind a heap of old sacks",
+        "At the top of the stairs",
+        "In the parlour",
+        "Under the kitchen table"
+       ],
+       "answer": "In the scullery, behind a heap of old sacks",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many years has the green door been locked?",
+       "options": [],
+       "answer": "ten",
+       "accept": [
+        "10",
+        "ten years",
+        "10 years"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the jackdaw?",
+       "options": [],
+       "answer": "Jasper",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the jackdaw looks at Arthur \"with great contempt\". What does \"contempt\" mean here?",
+       "options": [
+        "A feeling that someone is not worth respecting",
+        "Great fear",
+        "Warm friendship",
+        "Sleepy boredom"
+       ],
+       "answer": "A feeling that someone is not worth respecting",
+       "accept": [],
+       "hint": "How would a proud creature look at a rude boy?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the girl say Jasper likes to steal?",
+       "options": [
+        "Spoons",
+        "Buttons",
+        "Fish",
+        "Coins"
+       ],
+       "answer": "Spoons",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Arthur walk away from the scullery \"slowly\"?",
+       "options": [
+        "He is still curious about the door",
+        "He has hurt his foot",
+        "He is tired from the journey",
+        "He is afraid of the dark"
+       ],
+       "answer": "He is still curious about the door",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mrs Tregarth does not want to talk about the green door?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Nell Knows a Thing or Two",
+     "synopsis": "Arthur grudgingly makes friends with Nell, the fisherman's daughter, who tells him the story of his great-uncle's glasshouse.",
+     "text": "For three days Arthur sulked. On the fourth day the rain stopped, the sky turned a washed-out blue, and he was so bored that he went looking for the fisher girl.\nHe found her on the beach below the cliff path, mending a net with quick brown fingers.\n\"I'm Nell,\" she said, without looking up. \"And you're the boy from London who doesn't care about anything.\"\n\"I care about some things,\" said Arthur, rather stung.\n\"Like what?\"\nArthur opened his mouth and found, to his surprise, that he could not think of a single thing. So instead he asked, \"What's behind the wall where the jackdaw goes?\"\nNell put down her net. \"The glasshouse,\" she said in a low voice. \"My gran told me about it. Your great-uncle built it himself, all of glass and iron, like a little palace. He grew oranges in it, and lemons, and grapes as big as plums. In winter, folk came from the village just to stand inside and feel warm.\"\n\"Oranges? Here?\" Arthur looked at the cold sea and the bent, windblown trees. It did not seem possible.\n\"That's what Gran says. But when he died, your aunt couldn't bear to go in. She had the door bricked up on the garden side and the scullery door locked, and she gave the key to nobody.\"\n\"Then the plants must all be dead,\" said Arthur.\nNell shrugged. \"Maybe. But Jasper goes in somewhere. There's a gap, I reckon, where a pane is broken.\"\nArthur felt something flicker inside him, small and bright, like a match being struck in a dark room. It was a feeling he had almost forgotten. It was curiosity.\n\"Nell,\" he said, \"will you help me find the gap?\"\nNell grinned for the first time. \"Thought you'd never ask.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Nell doing when Arthur finds her?",
+       "options": [
+        "Mending a net",
+        "Gutting fish",
+        "Collecting shells",
+        "Feeding Jasper"
+       ],
+       "answer": "Mending a net",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Nell say about Arthur when they meet?",
+       "options": [
+        "He is the boy who doesn't care about anything",
+        "He is the bravest boy in Cornwall",
+        "He looks like his great-uncle",
+        "He is lost"
+       ],
+       "answer": "He is the boy who doesn't care about anything",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is behind the wall where the jackdaw goes?",
+       "options": [],
+       "answer": "the glasshouse",
+       "accept": [
+        "glasshouse",
+        "a glasshouse"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which fruit is NOT mentioned as growing in the glasshouse?",
+       "options": [
+        "Apples",
+        "Oranges",
+        "Lemons",
+        "Grapes"
+       ],
+       "answer": "Apples",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Nell know about the glasshouse?",
+       "options": [
+        "Her gran told her",
+        "She has been inside",
+        "Mrs Tregarth told her",
+        "She read about it"
+       ],
+       "answer": "Her gran told her",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Arthur find it hard to believe oranges grew there?",
+       "options": [
+        "The place is cold, windy and by the sea",
+        "Oranges are too expensive",
+        "He has never tasted one",
+        "Nell often tells lies"
+       ],
+       "answer": "The place is cold, windy and by the sea",
+       "accept": [],
+       "hint": "Look at what he sees around him when he says it.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the writer compares Arthur's curiosity to \"a match being struck in a dark room\". What does this suggest?",
+       "options": [
+        "Something hopeful is starting after a gloomy time",
+        "Arthur is afraid of fire",
+        "The house is very dark",
+        "Arthur wants to cause trouble"
+       ],
+       "answer": "Something hopeful is starting after a gloomy time",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Nell grins \"for the first time\" at the end of the chapter?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: Through the Broken Pane",
+     "synopsis": "Arthur and Nell follow Jasper and squeeze inside the forgotten glasshouse, where they find a surprise among the dead leaves.",
+     "text": "It took them two whole afternoons to find the gap. On the third, they followed Jasper as he flapped along the top of the wall, and there, behind a thick curtain of ivy, they saw a gleam of glass.\nOne low pane was cracked and fallen in. The hole was just wide enough for a thin boy, or a thin girl, to wriggle through.\nArthur went first. He tore his stockings and scraped his elbow, and he did not complain once, which surprised Nell very much.\nInside, the air was still and strangely warm. Long, dusty sunbeams slanted through the grimy glass. Everywhere there were pots and troughs full of brown, crackling stems. A great vine had climbed right up into the roof and then died there, its leaves hanging like old paper.\n\"It's all dead,\" whispered Nell. \"Just like you said.\"\nArthur did not answer. He was walking slowly along the central path, peering into every corner. In the far corner, where the morning sun fell first, stood a large wooden tub with a little tree in it. Most of its branches were bare and grey. But near the bottom, half hidden, there were six glossy green leaves.\nArthur knelt down. He touched one leaf gently, the way you might touch a sleeping kitten.\n\"Nell,\" he breathed. \"It's alive. This one's still alive.\"\nNell crouched beside him and sniffed the leaves. \"Orange tree,\" she said. \"Smells of it, a little.\"\nOn the windowsill nearby lay a heap of shiny things: three teaspoons, a thimble, a button, and a small, rusty key.\n\"Jasper's treasure,\" laughed Nell.\nBut Arthur picked up the key and turned it over in his hand. On its handle, very faintly, someone had scratched the letter E.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many afternoons did it take to find the gap?",
+       "options": [
+        "Two",
+        "One",
+        "Three",
+        "Five"
+       ],
+       "answer": "Two",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was hiding the broken pane?",
+       "options": [
+        "A thick curtain of ivy",
+        "A pile of bricks",
+        "A wooden shed",
+        "An old cart"
+       ],
+       "answer": "A thick curtain of ivy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is Nell surprised when Arthur goes through the gap?",
+       "options": [
+        "He gets hurt but does not complain",
+        "He goes first",
+        "He is very quick",
+        "He knows the way"
+       ],
+       "answer": "He gets hurt but does not complain",
+       "accept": [],
+       "hint": "Think about how Arthur behaved earlier in the story.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how are the dead vine's leaves described?",
+       "options": [
+        "Like old paper",
+        "Like green flags",
+        "Like wet rags",
+        "Like feathers"
+       ],
+       "answer": "Like old paper",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many green leaves are on the little tree?",
+       "options": [],
+       "answer": "six",
+       "accept": [
+        "6"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which item is found in Jasper's heap of treasure?",
+       "options": [
+        "A small, rusty key",
+        "A silver ring",
+        "A pocket watch",
+        "A coin"
+       ],
+       "answer": "A small, rusty key",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the letter E on the key most likely stands for…",
+       "options": [
+        "Edmund, the great-uncle",
+        "Edith, the governess",
+        "England",
+        "Evening"
+       ],
+       "answer": "Edmund, the great-uncle",
+       "accept": [],
+       "hint": "Whose glasshouse was it?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Arthur touches the leaf \"the way you might touch a sleeping kitten\"? What does this show about how he is changing?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Secrets and Watering Cans",
+     "synopsis": "Arthur and Nell secretly begin caring for the glasshouse, and the hard work changes Arthur in ways he does not notice.",
+     "text": "The key fitted the green door in the scullery. Arthur discovered this one evening when Mrs Tregarth had gone to fetch eggs, and his heart thumped so loudly he was sure she would hear it from the henhouse.\nFrom then on, the glasshouse became their secret. Every afternoon, Arthur slipped through the scullery door and Nell climbed in through the broken pane.\nThey carried out armfuls of dead stems and swept the paths. They scrubbed the green slime from the glass until the sunlight poured in. They found a cracked old watering can and carried water from the pump, slopping half of it on their boots.\nArthur's hands grew rough and his cheeks grew brown. He ate everything on his plate at supper, and then asked for more.\n\"The sea air agrees with him,\" said Mrs Tregarth, astonished.\n\"Hmm,\" said Great-Aunt Winifred, looking at him over her spectacles. But she said nothing else.\nNell taught Arthur how to tell a dead branch from a sleeping one. \"Scratch it with your nail,\" she said. \"If it's green underneath, it's still got hope in it.\"\nArthur scratched every branch in the glasshouse. Most were brown. But some were green, and each green one felt like a small victory.\nOne afternoon, as they sat on an upturned pot sharing a pasty, Arthur said, \"In London I never did anything. I just sat and was bored.\"\n\"And now?\" asked Nell.\nArthur thought about it. \"Now I'm too busy to be bored,\" he said, and laughed.\nJasper, perched on the vine, said \"Chack!\" as if he agreed.\nBut that evening, when Arthur crept back through the green door, he found someone standing in the dim scullery, waiting for him. It was Great-Aunt Winifred.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the key open?",
+       "options": [
+        "The green door in the scullery",
+        "A chest in the attic",
+        "The front door",
+        "Aunt Winifred's desk"
+       ],
+       "answer": "The green door in the scullery",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where is Mrs Tregarth when Arthur first tries the key?",
+       "options": [
+        "Fetching eggs from the henhouse",
+        "Asleep in her chair",
+        "In the village",
+        "Talking to Aunt Winifred"
+       ],
+       "answer": "Fetching eggs from the henhouse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Nell get into the glasshouse?",
+       "options": [
+        "Through the broken pane",
+        "Through the scullery door",
+        "Over the roof",
+        "Through a tunnel"
+       ],
+       "answer": "Through the broken pane",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, Mrs Tregarth says \"The sea air agrees with him\". What does she mean?",
+       "options": [
+        "Living by the sea is making him healthier",
+        "He likes talking about the sea",
+        "The air smells of fish",
+        "He wants to become a sailor"
+       ],
+       "answer": "Living by the sea is making him healthier",
+       "accept": [],
+       "hint": "What changes has she noticed about him?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how can you tell if a branch is still alive, according to Nell?",
+       "options": [
+        "Scratch it and see if it is green underneath",
+        "Shake it and listen",
+        "Smell the bark",
+        "Count the leaves"
+       ],
+       "answer": "Scratch it and see if it is green underneath",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which of these is a sign that Arthur is changing?",
+       "options": [
+        "He eats everything and asks for more",
+        "He refuses to go outside",
+        "He writes to his governess",
+        "He breaks the piano"
+       ],
+       "answer": "He eats everything and asks for more",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Arthur feel about his life now compared to London?",
+       "options": [
+        "He is too busy to be bored",
+        "He misses London badly",
+        "He is lonelier than before",
+        "He is frightened all the time"
+       ],
+       "answer": "He is too busy to be bored",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "How do you think Great-Aunt Winifred feels when she finds Arthur at the green door? Give a reason.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Aunt Winifred Remembers",
+     "synopsis": "Caught by his great-aunt, Arthur tells her the truth, and she shares her memories of the glasshouse for the first time in ten years.",
+     "text": "Arthur had expected a terrible scolding. Instead, Great-Aunt Winifred held out her hand.\n\"The key, if you please.\"\nHe gave it to her. She turned it over and touched the scratched letter E with her thumb. For a long moment she did not speak.\n\"Edmund scratched that himself,\" she said at last, very quietly. \"He was always losing keys. Where did you find it?\"\nSo Arthur told her everything: the tapping in the night, Jasper and his treasures, the broken pane, the six green leaves. He told it all in a rush, and then he waited.\nHis aunt sat down heavily on the scullery stool.\n\"I could not go in after he died,\" she said. \"Everything in there was his. Every pot, every seed. I thought that if I locked it away, it would hurt less. But it only made the whole house cold.\" She looked up at him, and her eyes behind the spectacles were wet. \"You went in. You weren't afraid.\"\n\"I was a bit afraid,\" Arthur admitted. \"But mostly I was curious.\"\nTo his amazement, his aunt laughed, a small, creaky laugh as if it had not been used for a long time.\n\"Edmund used to say the same thing. 'Curiosity is braver than courage, Winnie.'\" She stood up and straightened her shawl. \"Well. I suppose I had better see what you have been doing.\"\nShe took a candle and walked through the green door. Arthur followed, his heart pounding.\nIn the glasshouse, his aunt held the candle up high. She looked at the swept paths, the clean glass, the neat rows of pots. Then she saw the little orange tree in its tub, its new leaves shining in the candlelight.\nShe put her hand over her mouth.\n\"Oh, Edmund,\" she whispered. \"It's still here.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Arthur expect when he sees his aunt?",
+       "options": [
+        "A terrible scolding",
+        "A hug",
+        "A present",
+        "To be sent home"
+       ],
+       "answer": "A terrible scolding",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who scratched the letter E on the key?",
+       "options": [],
+       "answer": "Edmund",
+       "accept": [
+        "Great-Uncle Edmund",
+        "his great-uncle",
+        "great-uncle Edmund"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Aunt Winifred lock the glasshouse?",
+       "options": [
+        "She thought it would hurt less after Edmund died",
+        "She was afraid of thieves",
+        "The glass was dangerous",
+        "She wanted to keep Arthur out"
+       ],
+       "answer": "She thought it would hurt less after Edmund died",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Aunt Winifred say locking it away actually did?",
+       "options": [
+        "It made the whole house cold",
+        "It kept the plants safe",
+        "It made her happier",
+        "It saved money"
+       ],
+       "answer": "It made the whole house cold",
+       "accept": [],
+       "hint": "Is she speaking only about temperature?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, her laugh is described as \"creaky\". What does this suggest?",
+       "options": [
+        "She has not laughed for a long time",
+        "She has a cold",
+        "She is laughing at Arthur",
+        "The stool is creaking"
+       ],
+       "answer": "She has not laughed for a long time",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Edmund use to say?",
+       "options": [
+        "Curiosity is braver than courage",
+        "Never trust a jackdaw",
+        "Oranges need sunshine",
+        "Always wipe your boots"
+       ],
+       "answer": "Curiosity is braver than courage",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Aunt Winifred put her hand over her mouth?",
+       "options": [
+        "She is overcome with emotion at seeing the tree alive",
+        "She is cross about the mess",
+        "The candle smoke makes her cough",
+        "She is about to sneeze"
+       ],
+       "answer": "She is overcome with emotion at seeing the tree alive",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the writer shows both Arthur and his aunt changing because of the glasshouse?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Oranges in Winter",
+     "synopsis": "With the whole household helping, the glasshouse comes back to life, and by winter Gull Point no longer feels like a lonely place to Arthur.",
+     "text": "After that night, the glasshouse was a secret no longer.\nMrs Tregarth sent for a glazier from the village to mend the broken panes. Nell's father brought cartloads of seaweed for the soil. Great-Aunt Winifred unlocked a cupboard in the parlour and brought out Edmund's notebooks, full of tiny, careful handwriting about seeds and soil and the best time to water lemons.\n\"You read them to me,\" she told Arthur. \"My eyes are not what they were.\"\nSo every evening, by the fire, which was no longer meagre, Arthur read aloud. Some of the words were old-fashioned and puzzling, but he worked them out from the sentences around them, and when he could not, Aunt Winifred explained.\nAutumn came, with gales that rattled the windows. Inside the glasshouse it stayed snug and green. New shoots sprang up in the pots. The old vine, which they had thought was dead, pushed out one brave tendril.\nAnd in December, on the little orange tree, Arthur found a single round fruit, small and hard and green, slowly turning gold.\nOn Christmas morning, they picked it together, Arthur and Nell and Aunt Winifred, with Jasper watching suspiciously from the vine in case anyone had brought spoons. Aunt Winifred cut the orange into three careful pieces.\nIt was very small and rather sour. Arthur thought it was the best thing he had ever tasted.\nThat evening a letter arrived from his father. He would be home in the spring, and Arthur could return to London.\nArthur read the letter twice. Then he folded it carefully and looked out at the dark sea, which no longer seemed cross at all.\n\"Aunt Winifred,\" he said slowly, \"do you think Father might come here instead, just for the summer? There's ever so much to show him.\"\nHis aunt smiled. \"I think,\" she said, \"that could be arranged.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who mends the broken panes?",
+       "options": [
+        "A glazier from the village",
+        "Nell's father",
+        "Arthur",
+        "Mrs Tregarth"
+       ],
+       "answer": "A glazier from the village",
+       "accept": [],
+       "hint": "A glazier is a person whose job is fitting glass.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Nell's father bring for the soil?",
+       "options": [
+        "Seaweed",
+        "Sand",
+        "Ashes",
+        "Fish bones"
+       ],
+       "answer": "Seaweed",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Arthur read Edmund's notebooks aloud?",
+       "options": [
+        "Aunt Winifred's eyes are not what they were",
+        "Nell cannot read",
+        "He is practising for school",
+        "Mrs Tregarth asks him to"
+       ],
+       "answer": "Aunt Winifred's eyes are not what they were",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Arthur work out old-fashioned words?",
+       "options": [
+        "From the sentences around them",
+        "By looking in a dictionary",
+        "By asking Nell",
+        "He skips them"
+       ],
+       "answer": "From the sentences around them",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, in which month does Arthur find the fruit on the orange tree?",
+       "options": [],
+       "answer": "December",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the fire is \"no longer meagre\". What does this tell us about the house?",
+       "options": [
+        "It has become warmer and more welcoming",
+        "It is running out of wood",
+        "Nobody sits by the fire any more",
+        "It is summer"
+       ],
+       "answer": "It has become warmer and more welcoming",
+       "accept": [],
+       "hint": "Compare it to the fire in Chapter 1.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the sea \"no longer seem cross at all\" to Arthur?",
+       "options": [
+        "Arthur himself is happier, so he sees the place differently",
+        "The weather is perfectly calm",
+        "He cannot see it in the dark",
+        "He is leaving tomorrow"
+       ],
+       "answer": "Arthur himself is happier, so he sees the place differently",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Arthur says the small, sour orange is the best thing he has ever tasted?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
