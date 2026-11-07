@@ -2004,6 +2004,2514 @@
      "errors": []
     }
    ]
+  },
+  "fmath": {
+   "topic": "Sketching cubic graphs and their modulus graphs",
+   "questions": [
+    {
+     "id": "r1tqttzr1bneioi",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "State the roots of y = (x − 1)(x + 2)(x − 3).",
+     "options": [
+      "x = 1, x = −2, x = 3",
+      "x = −1, x = 2, x = −3",
+      "x = 1, x = 2, x = 3",
+      "x = −1, x = −2, x = −3"
+     ],
+     "answer": "x = 1, x = −2, x = 3",
+     "accept": [],
+     "hint": "Set each bracket equal to zero.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2x4e091229z3g",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Find the y-intercept of y = (x − 1)(x + 2)(x − 3).",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Substitute x = 0 into each bracket and multiply.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt5e2lyb6o6vt",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Find the y-intercept of y = (x + 4)(x − 1)(x − 2).",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "Put x = 0: multiply 4, −1 and −2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u79bro13oyl2y",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Find the y-intercept of y = (2x − 1)(x + 3)(x − 4).",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "Put x = 0 and take care with the signs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12aycaq1ayryud",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "For y = (x + 1)(x − 2)(x − 5), what happens to y as x becomes very large and positive?",
+     "options": [
+      "y → +∞",
+      "y → −∞",
+      "y → 0",
+      "y → 1"
+     ],
+     "answer": "y → +∞",
+     "accept": [],
+     "hint": "Think about the sign of the x³ term after expanding.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r183qjt31dc1cev",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "For y = −x(x − 2)(x + 3), what happens to y as x becomes very large and positive?",
+     "options": [
+      "y → −∞",
+      "y → +∞",
+      "y → 0",
+      "y → −3"
+     ],
+     "answer": "y → −∞",
+     "accept": [],
+     "hint": "The coefficient of x³ is negative.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgtq1f71ufr7h6",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "How does the graph of y = (x − 2)²(x + 1) behave at x = 2?",
+     "options": [
+      "It touches the x-axis and turns",
+      "It crosses the x-axis",
+      "It has a vertical asymptote",
+      "It crosses the y-axis"
+     ],
+     "answer": "It touches the x-axis and turns",
+     "accept": [],
+     "hint": "A squared factor gives a repeated root.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s3xees350c8n",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "Factorise completely: x³ − 4x.",
+     "options": [
+      "x(x − 2)(x + 2)",
+      "x(x − 4)(x + 1)",
+      "(x − 2)²(x + 2)",
+      "x²(x − 4)"
+     ],
+     "answer": "x(x − 2)(x + 2)",
+     "accept": [],
+     "hint": "Take out the common factor first, then use the difference of two squares.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ilonk12rh2n2",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "How is the graph of y = |f(x)| obtained from the graph of y = f(x)?",
+     "options": [
+      "Parts below the x-axis are reflected in the x-axis",
+      "Parts above the x-axis are reflected in the x-axis",
+      "The whole graph is reflected in the y-axis",
+      "The whole graph is moved up by 1"
+     ],
+     "answer": "Parts below the x-axis are reflected in the x-axis",
+     "accept": [],
+     "hint": "A modulus value can never be negative.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1in7rx7slxtxz",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Find the y-intercept of y = |(x + 1)(x − 2)(x − 3)|.",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Work out f(0) first, then take the modulus.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1faja162arhyh",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Find the value of y = |x(x − 2)(x + 1)| when x = 1.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Calculate the product first, then make it positive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19snr9x189yorc",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "Using a sketch of y = x(x − 2)(x + 1), solve x(x − 2)(x + 1) > 0.",
+     "options": [
+      "−1 < x < 0 or x > 2",
+      "x < −1 or 0 < x < 2",
+      "x > 2 only",
+      "−1 < x < 2"
+     ],
+     "answer": "−1 < x < 0 or x > 2",
+     "accept": [],
+     "hint": "Mark the roots −1, 0 and 2 and decide where the curve is above the x-axis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wxcm1ha0ljkb",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "Using a sketch of y = (x − 1)(x − 3)(x − 5), solve (x − 1)(x − 3)(x − 5) < 0.",
+     "options": [
+      "x < 1 or 3 < x < 5",
+      "1 < x < 3 or x > 5",
+      "x < 5",
+      "1 < x < 5"
+     ],
+     "answer": "x < 1 or 3 < x < 5",
+     "accept": [],
+     "hint": "The curve starts below the x-axis on the left for a positive cubic.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1prio4fzt008m",
+     "subject": "fmath",
+     "type": "num",
+     "q": "How many solutions does |x(x − 2)(x + 1)| = 0 have?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Where does the modulus graph meet the x-axis?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gvfh2r1qpafrl",
+     "subject": "fmath",
+     "type": "num",
+     "q": "How many solutions does |x(x − 2)(x + 1)| = 100 have?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Both ends of the modulus graph rise without limit, but the bumps between the roots are small.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rz11p11d8evft",
+     "subject": "fmath",
+     "type": "open",
+     "q": "Explain how a sketch of y = |(x + 1)(x − 2)(x − 4)| can be used to find the number of solutions of |(x + 1)(x − 2)(x − 4)| = k for a positive constant k.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about drawing the horizontal line y = k and counting intersections.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "fre": {
+   "topic": "Going out: making arrangements (futur proche: aller + infinitive)",
+   "questions": [
+    {
+     "id": "r1melina1a7wnha",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct French for: 'Do you want to come to the cinema?'",
+     "options": [
+      "Tu veux venir au cinéma ?",
+      "Tu vas au cinéma hier ?",
+      "Tu es venu au cinéma ?",
+      "Tu veux aller la cinéma ?"
+     ],
+     "answer": "Tu veux venir au cinéma ?",
+     "accept": [],
+     "hint": "Look for 'vouloir' + infinitive and 'au' before a masculine noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jeccwh1szz58r",
+     "subject": "fre",
+     "type": "short",
+     "q": "Complete with the correct form of 'aller': Je ___ voir un film samedi.",
+     "options": [],
+     "answer": "vais",
+     "accept": [],
+     "hint": "Use the present tense of 'aller' for 'je'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roleoc51z08xgq",
+     "subject": "fre",
+     "type": "short",
+     "q": "Complete with the correct form of 'aller': Nous ___ manger au restaurant ce soir.",
+     "options": [],
+     "answer": "allons",
+     "accept": [],
+     "hint": "This form ends in -ons.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra0szzeg6uu1a",
+     "subject": "fre",
+     "type": "short",
+     "q": "Complete with the correct form of 'aller': Mes amis ___ jouer au foot demain.",
+     "options": [],
+     "answer": "vont",
+     "accept": [],
+     "hint": "Third person plural, it is irregular.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i35xa59liowb",
+     "subject": "fre",
+     "type": "short",
+     "q": "Complete with the correct form of 'aller': Tu ___ venir à la fête ?",
+     "options": [],
+     "answer": "vas",
+     "accept": [],
+     "hint": "Second person singular, it ends in -s.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmkny8h1q2xxpd",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which phrase politely declines an invitation?",
+     "options": [
+      "Désolé, je ne peux pas.",
+      "D'accord, avec plaisir !",
+      "Oui, bonne idée !",
+      "Super, j'arrive !"
+     ],
+     "answer": "Désolé, je ne peux pas.",
+     "accept": [],
+     "hint": "Look for the phrase that says sorry.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fu2yc4m1u9jo",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which phrase accepts an invitation?",
+     "options": [
+      "D'accord, bonne idée !",
+      "Non, merci.",
+      "Je suis désolée, je suis occupée.",
+      "Pas ce soir."
+     ],
+     "answer": "D'accord, bonne idée !",
+     "accept": [],
+     "hint": "Which one sounds positive?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbqi9kl1ql2u65",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'On se retrouve où ?' mean?",
+     "options": [
+      "Where shall we meet?",
+      "What time shall we meet?",
+      "Who is coming?",
+      "Why are we going?"
+     ],
+     "answer": "Where shall we meet?",
+     "accept": [],
+     "hint": "'Où' is a question word about place.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11z92tf1ufgvlc",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'Rendez-vous devant le cinéma' mean?",
+     "options": [
+      "Let's meet in front of the cinema",
+      "Let's meet behind the cinema",
+      "Let's meet inside the cinema",
+      "Let's go home after the cinema"
+     ],
+     "answer": "Let's meet in front of the cinema",
+     "accept": [],
+     "hint": "'Devant' is a preposition of place.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1taghxha8k46q",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'at eight o'clock'.",
+     "options": [],
+     "answer": "à huit heures",
+     "accept": [
+      "a huit heures",
+      "à 8 heures",
+      "a 8 heures",
+      "à 8h",
+      "à 20 heures"
+     ],
+     "hint": "Use 'à' with the time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rllarop41tunl",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'the swimming pool'.",
+     "options": [],
+     "answer": "la piscine",
+     "accept": [
+      "piscine"
+     ],
+     "hint": "It is a feminine noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r22inxj5txhpy",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which sentence is correct in the futur proche?",
+     "options": [
+      "Elle va regarder un film.",
+      "Elle va regardé un film.",
+      "Elle vais regarder un film.",
+      "Elle va regarde un film."
+     ],
+     "answer": "Elle va regarder un film.",
+     "accept": [],
+     "hint": "After 'aller' the second verb stays in the infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r184itqyhev0dn",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which is the futur proche of 'nous partons'?",
+     "options": [
+      "nous allons partir",
+      "nous allons partons",
+      "nous partirons allons",
+      "nous vont partir"
+     ],
+     "answer": "nous allons partir",
+     "accept": [],
+     "hint": "Use 'aller' in the present + infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "razjdaz1f4tjxx",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which is the negative of 'Je vais sortir ce soir'?",
+     "options": [
+      "Je ne vais pas sortir ce soir.",
+      "Je vais ne pas sortir ce soir.",
+      "Je ne vais sortir pas ce soir.",
+      "Je pas vais sortir ce soir."
+     ],
+     "answer": "Je ne vais pas sortir ce soir.",
+     "accept": [],
+     "hint": "'Ne … pas' goes around the conjugated verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14jpqdibozgf2",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Your friend asks 'Tu es libre samedi ?'. Which reply declines and gives a reason?",
+     "options": [
+      "Non, désolé, je vais rendre visite à ma grand-mère.",
+      "Oui, je suis libre.",
+      "D'accord, à samedi !",
+      "Samedi, c'est le week-end."
+     ],
+     "answer": "Non, désolé, je vais rendre visite à ma grand-mère.",
+     "accept": [],
+     "hint": "Look for 'désolé' plus an explanation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raazcog1hp17ab",
+     "subject": "fre",
+     "type": "open",
+     "q": "Write two or three sentences in French inviting a friend to the cinema on Saturday and saying where and when to meet. Use the futur proche at least once.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use 'Tu veux venir…?', a time with 'à' and 'on va…'.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "geog": {
+   "topic": "Tropical storms: formation, impacts and responses",
+   "questions": [
+    {
+     "id": "r15sgyzq8phmqs",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What is the minimum sea surface temperature usually needed for a tropical storm to form?",
+     "options": [
+      "27°C",
+      "17°C",
+      "7°C",
+      "37°C"
+     ],
+     "answer": "27°C",
+     "accept": [],
+     "hint": "The ocean must be very warm to supply energy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5o03qf135v0dr",
+     "subject": "geog",
+     "type": "short",
+     "q": "What are tropical storms called in the North Atlantic and the Caribbean?",
+     "options": [],
+     "answer": "hurricane",
+     "accept": [
+      "hurricanes"
+     ],
+     "hint": "This name is used near the Americas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jvjpf0p6046g",
+     "subject": "geog",
+     "type": "short",
+     "q": "What are tropical storms called in the Indian Ocean and around Australia?",
+     "options": [],
+     "answer": "cyclone",
+     "accept": [
+      "cyclones",
+      "tropical cyclone"
+     ],
+     "hint": "Same root as the word for spinning.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtjdsn34k63b3",
+     "subject": "geog",
+     "type": "short",
+     "q": "What are tropical storms called in the North West Pacific, near East Asia?",
+     "options": [],
+     "answer": "typhoon",
+     "accept": [
+      "typhoons"
+     ],
+     "hint": "Used near the Philippines and Japan.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rzix0w10ohmm9",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What type of air pressure is found at the centre of a tropical storm?",
+     "options": [
+      "Very low pressure",
+      "Very high pressure",
+      "Average pressure",
+      "Changing high and low pressure"
+     ],
+     "answer": "Very low pressure",
+     "accept": [],
+     "hint": "Air is rising rapidly at the centre.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3792f31ox0d83",
+     "subject": "geog",
+     "type": "short",
+     "q": "What is the calm, clear area at the centre of a tropical storm called?",
+     "options": [],
+     "answer": "eye",
+     "accept": [
+      "the eye"
+     ],
+     "hint": "It is a body part.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs44wat1mehugg",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which part of a tropical storm has the strongest winds and heaviest rain?",
+     "options": [
+      "The eye wall",
+      "The eye",
+      "The outer edge",
+      "The area behind the storm"
+     ],
+     "answer": "The eye wall",
+     "accept": [],
+     "hint": "It surrounds the calm centre.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfjyh0038d4uj",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Between which latitudes do most tropical storms form?",
+     "options": [
+      "Between 5° and 30° north and south of the equator",
+      "Exactly on the equator",
+      "Between 40° and 60° north",
+      "Near the poles"
+     ],
+     "answer": "Between 5° and 30° north and south of the equator",
+     "accept": [],
+     "hint": "They need warm water but cannot form right at 0°.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r136glfq148992h",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Why do tropical storms not form directly on the equator?",
+     "options": [
+      "The Coriolis effect is too weak there to make the air spin",
+      "The sea is too cold there",
+      "There is no wind there",
+      "The air pressure is too low"
+     ],
+     "answer": "The Coriolis effect is too weak there to make the air spin",
+     "accept": [],
+     "hint": "Think about what makes a storm rotate.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rafsayxp0l5b9",
+     "subject": "geog",
+     "type": "mc",
+     "q": "In which direction do tropical storms spin in the Northern Hemisphere?",
+     "options": [
+      "Anticlockwise",
+      "Clockwise",
+      "They do not spin",
+      "It changes every day"
+     ],
+     "answer": "Anticlockwise",
+     "accept": [],
+     "hint": "It is the opposite of the Southern Hemisphere.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryo268wyjme8x",
+     "subject": "geog",
+     "type": "mc",
+     "q": "As warm, moist air rises in a tropical storm, what releases the energy that powers it?",
+     "options": [
+      "Condensation of water vapour releasing heat",
+      "Evaporation of clouds",
+      "Melting of ice in the clouds",
+      "Friction with the land"
+     ],
+     "answer": "Condensation of water vapour releasing heat",
+     "accept": [],
+     "hint": "Clouds form as the air cools.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10t3j91bzhq5t",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Why do tropical storms weaken when they move over land?",
+     "options": [
+      "They lose their supply of warm, moist air",
+      "The land pushes them back out to sea",
+      "Land air pressure is lower",
+      "Trees absorb the wind completely"
+     ],
+     "answer": "They lose their supply of warm, moist air",
+     "accept": [],
+     "hint": "Where does their energy come from?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16ztzfy13e76fn",
+     "subject": "geog",
+     "type": "short",
+     "q": "What is the name for the rise in sea level caused by strong winds and low pressure during a tropical storm?",
+     "options": [],
+     "answer": "storm surge",
+     "accept": [
+      "a storm surge"
+     ],
+     "hint": "Two words: the first is 'storm'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9tyw0ug77t2y",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which of these is a secondary impact of a tropical storm?",
+     "options": [
+      "Disease spreading because of contaminated water",
+      "Buildings destroyed by strong winds",
+      "Trees blown over",
+      "Flooding from heavy rain"
+     ],
+     "answer": "Disease spreading because of contaminated water",
+     "accept": [],
+     "hint": "Secondary impacts happen as a result of the primary ones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmzhcotaefac",
+     "subject": "geog",
+     "type": "open",
+     "q": "Explain why storm surges can cause severe damage in low-lying coastal areas.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about sea level, wind direction and how flat land floods.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmlzxuh1a7u9f4",
+     "subject": "geog",
+     "type": "open",
+     "q": "Explain two ways that monitoring and prediction can reduce the impacts of a tropical storm.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about warnings, evacuation and preparing buildings.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "hist": {
+   "topic": "The Anschluss and the Sudeten crisis: the Munich Agreement",
+   "questions": [
+    {
+     "id": "rb65f8t1bhllko",
+     "subject": "hist",
+     "type": "short",
+     "q": "Which country did Germany unite with in the Anschluss of March 1938?",
+     "options": [],
+     "answer": "Austria",
+     "accept": [],
+     "hint": "It was Hitler's country of birth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruqjen11wmuaod",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which treaty had forbidden Germany and Austria from uniting?",
+     "options": [
+      "The Treaty of Versailles",
+      "The Treaty of Locarno",
+      "The Munich Agreement",
+      "The Nazi-Soviet Pact"
+     ],
+     "answer": "The Treaty of Versailles",
+     "accept": [],
+     "hint": "It was signed after the First World War.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdskah1vb1qup",
+     "subject": "hist",
+     "type": "mc",
+     "q": "In which year did the Anschluss take place?",
+     "options": [
+      "1938",
+      "1933",
+      "1936",
+      "1939"
+     ],
+     "answer": "1938",
+     "accept": [],
+     "hint": "It was the same year as the Munich Agreement.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17nxizr2ero3c",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Roughly what percentage of voters approved the Anschluss in the plebiscite of April 1938?",
+     "options": [
+      "About 99%",
+      "About 50%",
+      "About 25%",
+      "About 75%"
+     ],
+     "answer": "About 99%",
+     "accept": [],
+     "hint": "The vote was held after German troops had already arrived.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rczagf2d1h5iy",
+     "subject": "hist",
+     "type": "short",
+     "q": "Which border region of Czechoslovakia had about three million German-speaking inhabitants?",
+     "options": [],
+     "answer": "Sudetenland",
+     "accept": [
+      "the Sudetenland",
+      "Sudetenland region"
+     ],
+     "hint": "It surrounded Czechoslovakia's border with Germany.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jzz6ti143oqnm",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Why was the Sudetenland important to Czechoslovakia?",
+     "options": [
+      "It had its border defences, factories and resources",
+      "It was its only coastline",
+      "It was where the capital city was",
+      "It had no strategic value"
+     ],
+     "answer": "It had its border defences, factories and resources",
+     "accept": [],
+     "hint": "Think about military defence and industry.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r36ud13kx9c82",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which British Prime Minister flew to Germany to negotiate over the Sudetenland in 1938?",
+     "options": [
+      "Neville Chamberlain",
+      "Winston Churchill",
+      "David Lloyd George",
+      "Clement Attlee"
+     ],
+     "answer": "Neville Chamberlain",
+     "accept": [],
+     "hint": "He returned claiming 'peace for our time'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l3oy5lkfk6j4",
+     "subject": "hist",
+     "type": "short",
+     "q": "What name is given to the policy of giving in to Hitler's demands to avoid war?",
+     "options": [],
+     "answer": "appeasement",
+     "accept": [
+      "the policy of appeasement"
+     ],
+     "hint": "It comes from the verb 'to appease'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hn4eybw0jg8p",
+     "subject": "hist",
+     "type": "mc",
+     "q": "When was the Munich Agreement signed?",
+     "options": [
+      "September 1938",
+      "March 1938",
+      "September 1939",
+      "March 1939"
+     ],
+     "answer": "September 1938",
+     "accept": [],
+     "hint": "It came six months after the Anschluss.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lpkl2u2od4n6",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which four countries signed the Munich Agreement?",
+     "options": [
+      "Britain, France, Germany and Italy",
+      "Britain, France, Germany and Czechoslovakia",
+      "Germany, Italy, Austria and the USSR",
+      "Britain, the USA, Germany and France"
+     ],
+     "answer": "Britain, France, Germany and Italy",
+     "accept": [],
+     "hint": "The country losing land was not one of them.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7fkuj71ehpm83",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which of these countries was NOT invited to the Munich conference?",
+     "options": [
+      "Czechoslovakia",
+      "Italy",
+      "France",
+      "Britain"
+     ],
+     "answer": "Czechoslovakia",
+     "accept": [],
+     "hint": "Its land was decided without it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nkwh8u1n66osz",
+     "subject": "hist",
+     "type": "mc",
+     "q": "What did Germany do in March 1939?",
+     "options": [
+      "Occupied the rest of Czechoslovakia",
+      "Invaded Poland",
+      "Signed a pact with Britain",
+      "Left the Rhineland"
+     ],
+     "answer": "Occupied the rest of Czechoslovakia",
+     "accept": [],
+     "hint": "It broke the promise made at Munich.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17ie2xoj3d85n",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which was a reason Britain followed appeasement in 1938?",
+     "options": [
+      "Britain's armed forces were not ready for war",
+      "Britain wanted to join Germany",
+      "Britain had already defeated Germany",
+      "Britain had a treaty with Austria"
+     ],
+     "answer": "Britain's armed forces were not ready for war",
+     "accept": [],
+     "hint": "Think about rearmament and public memories of 1914–18.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14fdeps9gkvmb",
+     "subject": "hist",
+     "type": "mc",
+     "q": "How did the USSR react to the Munich Agreement?",
+     "options": [
+      "It became suspicious of Britain and France",
+      "It sent troops to defend the Sudetenland",
+      "It signed the agreement too",
+      "It joined the League of Nations for the first time"
+     ],
+     "answer": "It became suspicious of Britain and France",
+     "accept": [],
+     "hint": "The USSR had not been invited either.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reyi58d3ixads",
+     "subject": "hist",
+     "type": "open",
+     "q": "Explain why the Munich Agreement was a success for Germany.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about land, defences, industry and Hitler's confidence.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1emljpry0nv2r",
+     "subject": "hist",
+     "type": "open",
+     "q": "'Appeasement at Munich was a sensible policy in 1938.' How far do you agree? Give an argument for and an argument against.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider time to rearm against the long-term effect on Hitler.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Angle properties: parallel lines, triangles and polygons",
+   "questions": [
+    {
+     "id": "r19eshcly8anmr",
+     "subject": "math",
+     "type": "num",
+     "q": "Two parallel lines are crossed by a transversal. One of a pair of alternate angles is 65°. What is the other, in degrees?",
+     "options": [],
+     "answer": "65",
+     "accept": [],
+     "hint": "Alternate angles form a Z shape.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4dv83l14ze3qq",
+     "subject": "math",
+     "type": "num",
+     "q": "One of a pair of co-interior angles between parallel lines is 110°. What is the other, in degrees?",
+     "options": [],
+     "answer": "70",
+     "accept": [],
+     "hint": "Co-interior angles form a C shape.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rlw2v2n8e7nv",
+     "subject": "math",
+     "type": "num",
+     "q": "One of a pair of corresponding angles is 128°. What is the other, in degrees?",
+     "options": [],
+     "answer": "128",
+     "accept": [],
+     "hint": "Corresponding angles form an F shape.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvuxilj1dxliby",
+     "subject": "math",
+     "type": "short",
+     "q": "What name is given to the pair of equal angles that form a Z shape between parallel lines?",
+     "options": [],
+     "answer": "alternate angles",
+     "accept": [
+      "alternate",
+      "alternate angle"
+     ],
+     "hint": "Think of letters: Z, F or C.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ovz9gvihlnxo",
+     "subject": "math",
+     "type": "num",
+     "q": "Two angles of a triangle are 47° and 68°. Find the third angle, in degrees.",
+     "options": [],
+     "answer": "65",
+     "accept": [],
+     "hint": "Angles in a triangle add up to 180°.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqvpy391caz7dz",
+     "subject": "math",
+     "type": "num",
+     "q": "An isosceles triangle has an apex angle of 40°. Find one of the base angles, in degrees.",
+     "options": [],
+     "answer": "70",
+     "accept": [],
+     "hint": "The two base angles are equal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r141p7mfj13j57",
+     "subject": "math",
+     "type": "num",
+     "q": "Three angles of a quadrilateral are 85°, 95° and 110°. Find the fourth angle, in degrees.",
+     "options": [],
+     "answer": "70",
+     "accept": [],
+     "hint": "Angles in a quadrilateral add up to 360°.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x3ecxmuv6yhj",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the sum of the interior angles of a hexagon, in degrees.",
+     "options": [],
+     "answer": "720",
+     "accept": [],
+     "hint": "Use (n − 2) × 180°.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt0bivj1tmss0v",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the sum of the interior angles of a 12-sided polygon, in degrees.",
+     "options": [],
+     "answer": "1800",
+     "accept": [],
+     "hint": "Use (n − 2) × 180°.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19kx4enl9zxua",
+     "subject": "math",
+     "type": "num",
+     "q": "Four angles of a pentagon are 100°, 110°, 120° and 90°. Find the fifth angle, in degrees.",
+     "options": [],
+     "answer": "120",
+     "accept": [],
+     "hint": "First find the total of the interior angles of a pentagon.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qd67786z52jd",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the size of each exterior angle of a regular octagon, in degrees.",
+     "options": [],
+     "answer": "45",
+     "accept": [],
+     "hint": "Exterior angles of any polygon add up to 360°.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbtrboy11gfjgd",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the size of each interior angle of a regular decagon, in degrees.",
+     "options": [],
+     "answer": "144",
+     "accept": [],
+     "hint": "Find the exterior angle first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rixl14ktsvs6",
+     "subject": "math",
+     "type": "num",
+     "q": "Each exterior angle of a regular polygon is 24°. How many sides does it have?",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Divide 360 by the exterior angle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ff42ioab383b",
+     "subject": "math",
+     "type": "num",
+     "q": "Each interior angle of a regular polygon is 160°. How many sides does it have?",
+     "options": [],
+     "answer": "18",
+     "accept": [],
+     "hint": "Interior and exterior angles add up to 180°.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ser0lw1n8hbct",
+     "subject": "math",
+     "type": "mc",
+     "q": "Can a regular polygon have an exterior angle of 50°?",
+     "options": [
+      "No, because 360 ÷ 50 is not a whole number",
+      "Yes, it has 7 sides",
+      "Yes, it has 5 sides",
+      "No, because exterior angles must be under 45°"
+     ],
+     "answer": "No, because 360 ÷ 50 is not a whole number",
+     "accept": [],
+     "hint": "The number of sides must be a whole number.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1diinm01b2j50w",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain why the exterior angles of any convex polygon add up to 360°.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Imagine walking around the polygon and turning at every corner.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "phys": {
+   "topic": "Energy resources: renewable and non-renewable",
+   "questions": [
+    {
+     "id": "r14janijvtviui",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which of these is a non-renewable energy resource?",
+     "options": [
+      "Coal",
+      "Wind",
+      "Solar",
+      "Hydroelectric"
+     ],
+     "answer": "Coal",
+     "accept": [],
+     "hint": "Non-renewable resources will run out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dofhdgiheapb",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which of these is a renewable energy resource?",
+     "options": [
+      "Wind",
+      "Natural gas",
+      "Oil",
+      "Uranium"
+     ],
+     "answer": "Wind",
+     "accept": [],
+     "hint": "It is replaced naturally and will not run out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc8bkyn1rt7l8k",
+     "subject": "phys",
+     "type": "short",
+     "q": "Which nuclear process releases energy in the Sun?",
+     "options": [],
+     "answer": "nuclear fusion",
+     "accept": [
+      "fusion"
+     ],
+     "hint": "Light nuclei join together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wla7n1dkmbsr",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which nuclear process is used to release energy in nuclear power stations today?",
+     "options": [
+      "Fission",
+      "Fusion",
+      "Combustion",
+      "Radiation"
+     ],
+     "answer": "Fission",
+     "accept": [],
+     "hint": "Large nuclei such as uranium split.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roy9cmodxha0z",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which energy transfer sequence happens in a coal-fired power station?",
+     "options": [
+      "Chemical → thermal → kinetic → electrical",
+      "Kinetic → chemical → thermal → electrical",
+      "Electrical → thermal → chemical → kinetic",
+      "Thermal → electrical → chemical → kinetic"
+     ],
+     "answer": "Chemical → thermal → kinetic → electrical",
+     "accept": [],
+     "hint": "The fuel is burned to boil water, which turns a turbine.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4g3mxwudpogu",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What does a geothermal power station use to generate electricity?",
+     "options": [
+      "Heat from hot rocks underground",
+      "Moving air",
+      "Sunlight on panels",
+      "Tides in the sea"
+     ],
+     "answer": "Heat from hot rocks underground",
+     "accept": [],
+     "hint": "'Geo' means earth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6q1rieheskrb",
+     "subject": "phys",
+     "type": "mc",
+     "q": "In a hydroelectric power station, what energy store does water in a high reservoir have?",
+     "options": [
+      "Gravitational potential energy",
+      "Chemical energy",
+      "Nuclear energy",
+      "Elastic potential energy"
+     ],
+     "answer": "Gravitational potential energy",
+     "accept": [],
+     "hint": "The water is stored high up.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rh5o3g118mvi6",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which of these energy resources does NOT get its energy from the Sun?",
+     "options": [
+      "Geothermal",
+      "Wind",
+      "Waves",
+      "Fossil fuels"
+     ],
+     "answer": "Geothermal",
+     "accept": [],
+     "hint": "Which one depends on heat inside the Earth?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2kin2a3u3lbz",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Why are fossil fuels said to store energy that originally came from the Sun?",
+     "options": [
+      "They formed from plants and animals that got their energy from sunlight millions of years ago",
+      "They absorb sunlight while underground",
+      "They are warmed by the Sun today",
+      "They are made in the Sun and fall to Earth"
+     ],
+     "answer": "They formed from plants and animals that got their energy from sunlight millions of years ago",
+     "accept": [],
+     "hint": "Think about photosynthesis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18kv9i1w1zf9q",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What is the main disadvantage of wind turbines?",
+     "options": [
+      "Their output depends on the weather",
+      "They produce carbon dioxide while running",
+      "They produce radioactive waste",
+      "They need fuel to be delivered"
+     ],
+     "answer": "Their output depends on the weather",
+     "accept": [],
+     "hint": "What happens on a calm day?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc8yh629qdd3m",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What is one advantage of gas-fired power stations?",
+     "options": [
+      "They can be started quickly to meet demand",
+      "They produce no carbon dioxide",
+      "They use a renewable resource",
+      "They never need maintenance"
+     ],
+     "answer": "They can be started quickly to meet demand",
+     "accept": [],
+     "hint": "Think about reliability and speed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rothwq69mylzn",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which greenhouse gas is mainly produced by burning fossil fuels?",
+     "options": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Helium"
+     ],
+     "answer": "Carbon dioxide",
+     "accept": [],
+     "hint": "It contains carbon from the fuel.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14lw3f11jy3tp9",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What is a major disadvantage of nuclear power stations?",
+     "options": [
+      "They produce radioactive waste that must be stored safely for a long time",
+      "They produce large amounts of carbon dioxide",
+      "They only work when the Sun shines",
+      "They use up a renewable resource"
+     ],
+     "answer": "They produce radioactive waste that must be stored safely for a long time",
+     "accept": [],
+     "hint": "Think about what is left after the fuel is used.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h7ggfguw9e3r",
+     "subject": "phys",
+     "type": "short",
+     "q": "Solar cells transfer light energy directly into which form of energy?",
+     "options": [],
+     "answer": "electrical energy",
+     "accept": [
+      "electrical",
+      "electricity"
+     ],
+     "hint": "It is what flows in wires.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4u6f1noa5qc8",
+     "subject": "phys",
+     "type": "num",
+     "q": "A power station has an input power of 500 MW and a useful output power of 200 MW. Calculate its efficiency as a percentage.",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "Efficiency = useful output ÷ total input × 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk4hs2616cu9i8",
+     "subject": "phys",
+     "type": "open",
+     "q": "Discuss one advantage and one disadvantage of a hydroelectric power station compared with a coal-fired power station.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider pollution, reliability, cost and the effect of building a dam.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych": {
+   "topic": "Ethical guidelines",
+   "questions": [
+    {
+     "id": "r1sehf8vsgdj10",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is informed consent?",
+     "options": [
+      "Participants agree to take part after being told what the study involves",
+      "Participants are told the true aim only at the end",
+      "Participants' names are kept secret",
+      "Participants can leave whenever they want"
+     ],
+     "answer": "Participants agree to take part after being told what the study involves",
+     "accept": [],
+     "hint": "They know enough to make a decision.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpr6a051l53p8c",
+     "subject": "psych",
+     "type": "short",
+     "q": "What is it called when participants are told the true aims of a study after it has finished?",
+     "options": [],
+     "answer": "debriefing",
+     "accept": [
+      "debrief",
+      "a debrief"
+     ],
+     "hint": "It happens at the end of the study.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r986tk0121oxlt",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What does the right to withdraw mean?",
+     "options": [
+      "Participants can leave the study at any time, and remove their data",
+      "Participants must stay until the end",
+      "Researchers can remove participants they do not like",
+      "Participants can choose the hypothesis"
+     ],
+     "answer": "Participants can leave the study at any time, and remove their data",
+     "accept": [],
+     "hint": "Think about the participant's freedom.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wsnelj1083tfo",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What does confidentiality mean in psychological research?",
+     "options": [
+      "Participants' personal information is kept private and they cannot be identified",
+      "Participants are not told the aim",
+      "Participants are paid for their time",
+      "Participants see the results first"
+     ],
+     "answer": "Participants' personal information is kept private and they cannot be identified",
+     "accept": [],
+     "hint": "Think about names and personal data.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q846c918r8g18",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is deception in research?",
+     "options": [
+      "Misleading participants or withholding information about the study",
+      "Paying participants",
+      "Using a large sample",
+      "Asking participants to fill in a questionnaire"
+     ],
+     "answer": "Misleading participants or withholding information about the study",
+     "accept": [],
+     "hint": "It is about honesty.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rupdomo1rbt7kv",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What does protection from harm mean?",
+     "options": [
+      "Participants should leave the study in the same state as they entered it",
+      "Participants must be protected from boredom",
+      "Researchers must be protected from participants",
+      "Participants must be under 18"
+     ],
+     "answer": "Participants should leave the study in the same state as they entered it",
+     "accept": [],
+     "hint": "It covers physical and psychological harm.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzrcrz424hbk5",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Who usually gives consent for a participant under 16 to take part in a study?",
+     "options": [
+      "A parent or guardian",
+      "The researcher",
+      "A teacher alone",
+      "Nobody; consent is not needed"
+     ],
+     "answer": "A parent or guardian",
+     "accept": [],
+     "hint": "Young people may not fully understand the risks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m5qiwf15l16xq",
+     "subject": "psych",
+     "type": "short",
+     "q": "A researcher publishes the full names of participants in a report. Which ethical guideline has been broken?",
+     "options": [],
+     "answer": "confidentiality",
+     "accept": [
+      "confidentiality guideline"
+     ],
+     "hint": "Think about privacy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iojdd31ehdmbx",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A participant asks to stop, but the researcher tells her she must continue. Which guideline is broken?",
+     "options": [
+      "Right to withdraw",
+      "Debriefing",
+      "Confidentiality",
+      "Informed consent only"
+     ],
+     "answer": "Right to withdraw",
+     "accept": [],
+     "hint": "Can participants leave whenever they want?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lbpbf0rumzsz",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Participants are told a study is about memory, but it is really about obedience. Which guideline is broken?",
+     "options": [
+      "Deception",
+      "Confidentiality",
+      "Right to withdraw",
+      "Protection from harm only"
+     ],
+     "answer": "Deception",
+     "accept": [],
+     "hint": "They were misled about the aim.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tu3da1ek4j83",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Why do researchers sometimes use deception?",
+     "options": [
+      "To avoid participants changing their behaviour because they know the aim",
+      "To make the study shorter",
+      "To save money on equipment",
+      "To make the results easier to calculate"
+     ],
+     "answer": "To avoid participants changing their behaviour because they know the aim",
+     "accept": [],
+     "hint": "Think about demand characteristics.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jb447319sc5hk",
+     "subject": "psych",
+     "type": "mc",
+     "q": "How can researchers deal with deception once a study has finished?",
+     "options": [
+      "Debrief participants fully and offer them the right to withdraw their data",
+      "Keep the true aim secret forever",
+      "Ask them to sign a new consent form for the next study",
+      "Publish their names"
+     ],
+     "answer": "Debrief participants fully and offer them the right to withdraw their data",
+     "accept": [],
+     "hint": "What happens at the end of a study?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r109ivat1t2ocso",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Asking a similar group of people whether they would agree to a study, instead of the real participants, is called…",
+     "options": [
+      "Presumptive consent",
+      "Prior general consent",
+      "Retrospective consent",
+      "Debriefing"
+     ],
+     "answer": "Presumptive consent",
+     "accept": [],
+     "hint": "The researcher presumes the real participants would agree.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xhas58k44t7h",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which organisation publishes the code of ethics for psychologists in the UK?",
+     "options": [
+      "The British Psychological Society",
+      "The World Health Organisation",
+      "The Royal Society of Chemistry",
+      "The National Trust"
+     ],
+     "answer": "The British Psychological Society",
+     "accept": [],
+     "hint": "Its initials are BPS.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vld2ypmsprjf",
+     "subject": "psych",
+     "type": "open",
+     "q": "A researcher wants to secretly film students in a school canteen to study eating behaviour. Identify two ethical issues and explain how each could be dealt with.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about consent, confidentiality and debriefing.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ecea63zv0bo5",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain why protection from harm is considered one of the most important ethical guidelines.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider physical and psychological effects on participants.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Pontuação no período composto: emprego da vírgula",
+   "questions": [
+    {
+     "id": "rn679r8b55x7y",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase está pontuada corretamente?",
+     "options": [
+      "Quando cheguei em casa, o jantar estava pronto.",
+      "Quando cheguei, em casa o jantar, estava pronto.",
+      "Quando, cheguei em casa o jantar estava pronto.",
+      "Quando cheguei em casa o jantar, estava pronto."
+     ],
+     "answer": "Quando cheguei em casa, o jantar estava pronto.",
+     "accept": [],
+     "hint": "Observe onde termina a oração que vem antes da principal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqfd1ay1u8tgp0",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase apresenta um erro de vírgula?",
+     "options": [
+      "Os alunos do primeiro ano, chegaram cedo.",
+      "Os alunos do primeiro ano chegaram cedo.",
+      "Hoje, os alunos chegaram cedo.",
+      "Os alunos chegaram cedo, mas a professora atrasou."
+     ],
+     "answer": "Os alunos do primeiro ano, chegaram cedo.",
+     "accept": [],
+     "hint": "Não se separa o sujeito do verbo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cgj35hai8sky",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Meu irmão, que mora em Recife, chegou ontem\", a oração entre vírgulas é:",
+     "options": [
+      "adjetiva explicativa",
+      "adjetiva restritiva",
+      "substantiva objetiva",
+      "coordenada aditiva"
+     ],
+     "answer": "adjetiva explicativa",
+     "accept": [],
+     "hint": "Ela acrescenta uma informação sobre o irmão, sem restringir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x9jl5le7b18o",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Os alunos que estudaram passaram na prova\", entende-se que:",
+     "options": [
+      "só uma parte dos alunos estudou e passou",
+      "todos os alunos estudaram",
+      "nenhum aluno estudou",
+      "os alunos passaram sem estudar"
+     ],
+     "answer": "só uma parte dos alunos estudou e passou",
+     "accept": [],
+     "hint": "Sem vírgulas, a oração adjetiva restringe o grupo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bk0e101d4gaa0",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Os alunos, que estudaram, passaram na prova\", entende-se que:",
+     "options": [
+      "todos os alunos estudaram",
+      "só alguns alunos estudaram",
+      "nenhum aluno passou",
+      "só os que estudaram muito passaram"
+     ],
+     "answer": "todos os alunos estudaram",
+     "accept": [],
+     "hint": "Entre vírgulas, a oração explica algo sobre todo o grupo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yw46e6sev92j",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Estudei muito, mas não fui bem na prova\", a oração \"mas não fui bem na prova\" é:",
+     "options": [
+      "coordenada sindética adversativa",
+      "coordenada sindética aditiva",
+      "subordinada adverbial causal",
+      "subordinada adjetiva restritiva"
+     ],
+     "answer": "coordenada sindética adversativa",
+     "accept": [],
+     "hint": "A conjunção indica oposição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jwwfx31l8rfxj",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em qual caso a vírgula antes de \"e\" é aceita?",
+     "options": [
+      "Quando as orações coordenadas têm sujeitos diferentes",
+      "Sempre que aparece a palavra \"e\"",
+      "Entre sujeito e verbo",
+      "Entre o verbo e seu complemento"
+     ],
+     "answer": "Quando as orações coordenadas têm sujeitos diferentes",
+     "accept": [],
+     "hint": "Pense em \"O pai lavou a louça, e a filha secou\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzv341t124hdn8",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"O projeto, segundo a diretora, será aprovado\", as vírgulas servem para:",
+     "options": [
+      "isolar uma expressão intercalada",
+      "separar sujeito e verbo",
+      "indicar uma enumeração",
+      "marcar um vocativo"
+     ],
+     "answer": "isolar uma expressão intercalada",
+     "accept": [],
+     "hint": "Retire o trecho entre vírgulas e veja se a frase continua completa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sd07ei2qo72",
+     "subject": "pt",
+     "type": "short",
+     "q": "Em \"Pedro, venha cá!\", como se chama o termo isolado pela vírgula?",
+     "options": [],
+     "answer": "vocativo",
+     "accept": [
+      "o vocativo"
+     ],
+     "hint": "É o termo usado para chamar alguém.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10pu8i88hft1x",
+     "subject": "pt",
+     "type": "short",
+     "q": "Em \"Ana, a professora de música, ganhou um prêmio\", como se chama o termo \"a professora de música\"?",
+     "options": [],
+     "answer": "aposto",
+     "accept": [
+      "aposto explicativo",
+      "o aposto"
+     ],
+     "hint": "É um termo que explica outro, entre vírgulas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2hxgu51fazgfu",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase com oração reduzida de gerúndio está pontuada corretamente?",
+     "options": [
+      "Terminando a prova, saia em silêncio.",
+      "Terminando, a prova saia em silêncio.",
+      "Terminando a prova saia, em silêncio.",
+      "Terminando a, prova saia em silêncio."
+     ],
+     "answer": "Terminando a prova, saia em silêncio.",
+     "accept": [],
+     "hint": "A oração reduzida anteposta termina depois de \"prova\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry9ra4msf2kg5",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase expressa que a pessoa QUER sair?",
+     "options": [
+      "Não, quero sair.",
+      "Não quero sair.",
+      "Não quero, sair.",
+      "Quero não sair."
+     ],
+     "answer": "Não, quero sair.",
+     "accept": [],
+     "hint": "A vírgula separa a resposta negativa do restante.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwmb5dzpliywm",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase separa corretamente os elementos de uma enumeração?",
+     "options": [
+      "Comprei pão, leite, ovos e queijo.",
+      "Comprei, pão leite ovos e queijo.",
+      "Comprei pão leite, ovos, e queijo.",
+      "Comprei pão, leite ovos, e queijo."
+     ],
+     "answer": "Comprei pão, leite, ovos e queijo.",
+     "accept": [],
+     "hint": "A vírgula separa os itens, e o último vem ligado por \"e\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryn1injpxn1ks",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Ontem à noite, choveu muito\", a vírgula é:",
+     "options": [
+      "opcional, porque o adjunto adverbial é curto e está deslocado",
+      "obrigatória, porque separa sujeito e verbo",
+      "proibida em qualquer caso",
+      "obrigatória, porque há um vocativo"
+     ],
+     "answer": "opcional, porque o adjunto adverbial é curto e está deslocado",
+     "accept": [],
+     "hint": "Pense no tamanho e na posição do adjunto adverbial.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cdwh741d9a20k",
+     "subject": "pt",
+     "type": "open",
+     "q": "Reescreva a frase com as vírgulas necessárias e explique o motivo de uma delas: \"Embora estivesse cansado o atleta que treinava desde cedo continuou correndo.\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Identifique a oração adverbial deslocada e a oração adjetiva.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o9091d1mwprv1",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique a diferença de sentido entre \"Os jogadores que estavam machucados ficaram no banco\" e \"Os jogadores, que estavam machucados, ficaram no banco\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em quantos jogadores estavam machucados em cada frase.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_lit": {
+   "topic": "Poesia contemporânea, spoken word e slam",
+   "questions": [
+    {
+     "id": "r1wtmsmaewkbrk",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O que é um slam de poesia?",
+     "options": [
+      "Uma competição de poesia falada, com apresentação para o público",
+      "Um livro de poemas antigos",
+      "Um tipo de soneto com rimas fixas",
+      "Um concurso de redação escrita"
+     ],
+     "answer": "Uma competição de poesia falada, com apresentação para o público",
+     "accept": [],
+     "hint": "Pense em voz, palco e disputa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvp6i4fa7r1io",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em que país surgiram os primeiros slams de poesia, nos anos 1980?",
+     "options": [
+      "Estados Unidos",
+      "Brasil",
+      "Portugal",
+      "Japão"
+     ],
+     "answer": "Estados Unidos",
+     "accept": [],
+     "hint": "Começou em uma grande cidade norte-americana.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r189bn57cbmol6",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Qual expressão em inglês nomeia a poesia criada para ser falada e performada?",
+     "options": [],
+     "answer": "spoken word",
+     "accept": [
+      "spoken-word"
+     ],
+     "hint": "Duas palavras: \"palavra falada\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g3esc416j7bah",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Nos slams, qual é o tempo máximo mais comum para cada apresentação?",
+     "options": [
+      "3 minutos",
+      "30 segundos",
+      "15 minutos",
+      "1 hora"
+     ],
+     "answer": "3 minutos",
+     "accept": [],
+     "hint": "É um tempo curto, que exige intensidade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbv0c3x1pihv6r",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O que geralmente NÃO é permitido em uma apresentação de slam?",
+     "options": [
+      "Figurinos, objetos de cena ou acompanhamento musical",
+      "Usar a própria voz",
+      "Falar sobre temas sociais",
+      "Apresentar um poema autoral"
+     ],
+     "answer": "Figurinos, objetos de cena ou acompanhamento musical",
+     "accept": [],
+     "hint": "O foco deve ficar na palavra e no corpo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9ekdpncxoumq",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Quem costuma atuar como jurado em um slam?",
+     "options": [
+      "Pessoas da plateia escolhidas na hora",
+      "Apenas professores de literatura",
+      "Os próprios poetas competidores",
+      "Uma banca de editores de livros"
+     ],
+     "answer": "Pessoas da plateia escolhidas na hora",
+     "accept": [],
+     "hint": "O slam valoriza a participação do público.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hacdqgvcgxzy",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Que tipo de poema geralmente se apresenta em um slam?",
+     "options": [
+      "Poema autoral, escrito pelo próprio poeta",
+      "Poema famoso de outro autor",
+      "Letra de música conhecida",
+      "Tradução de um poema clássico"
+     ],
+     "answer": "Poema autoral, escrito pelo próprio poeta",
+     "accept": [],
+     "hint": "Pense em quem escreve o texto apresentado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r558t0jtzfpkm",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Quais temas aparecem com frequência na poesia slam?",
+     "options": [
+      "Questões sociais, como desigualdade, preconceito e identidade",
+      "Apenas paisagens e estações do ano",
+      "Somente amores impossíveis da Idade Média",
+      "Regras de gramática"
+     ],
+     "answer": "Questões sociais, como desigualdade, preconceito e identidade",
+     "accept": [],
+     "hint": "O slam costuma dar voz a vivências de quem é pouco ouvido.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10jk8s51a2oqoz",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Como se chama a repetição de uma mesma palavra no início de vários versos, muito usada no slam?",
+     "options": [],
+     "answer": "anáfora",
+     "accept": [
+      "anafora"
+     ],
+     "hint": "Recurso de repetição no começo dos versos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz26hatgj3gtm",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "No verso inventado \"Minha voz é rua, é praça, é grito\", qual figura de linguagem predomina?",
+     "options": [
+      "Metáfora",
+      "Hipérbole",
+      "Eufemismo",
+      "Onomatopeia"
+     ],
+     "answer": "Metáfora",
+     "accept": [],
+     "hint": "A voz é identificada com outras coisas, sem \"como\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryioxoblq70wr",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "No verso inventado \"rua, ruído, raiva, resistência\", a repetição do som /r/ é um exemplo de:",
+     "options": [
+      "aliteração",
+      "assonância",
+      "rima interna perfeita",
+      "antítese"
+     ],
+     "answer": "aliteração",
+     "accept": [],
+     "hint": "É a repetição de sons consonantais.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rful0dnbcydbl",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Com qual movimento cultural o slam tem forte proximidade?",
+     "options": [
+      "O hip-hop e a cultura das periferias",
+      "O Barroco europeu",
+      "A ópera clássica",
+      "O Arcadismo"
+     ],
+     "answer": "O hip-hop e a cultura das periferias",
+     "accept": [],
+     "hint": "Pense em rimas, ritmo e batalhas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rprifikrfqud6",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual é uma diferença importante entre um poema impresso e uma apresentação de slam?",
+     "options": [
+      "No slam, voz, corpo e reação do público fazem parte do sentido",
+      "O slam não pode ter rimas",
+      "O poema impresso sempre é mais curto",
+      "No slam o poeta lê sem olhar para o público"
+     ],
+     "answer": "No slam, voz, corpo e reação do público fazem parte do sentido",
+     "accept": [],
+     "hint": "Pense no que só existe ao vivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w3nhz11tod43f",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em um slam, a pausa longa e o silêncio antes de um verso servem principalmente para:",
+     "options": [
+      "criar tensão e destacar o que vem a seguir",
+      "indicar que o poeta esqueceu o texto",
+      "marcar o fim da competição",
+      "pedir aplausos"
+     ],
+     "answer": "criar tensão e destacar o que vem a seguir",
+     "accept": [],
+     "hint": "Pense no efeito sobre a plateia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e1ov4n1clurz2",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Leia os versos inventados: \"Me disseram pra falar baixo, / mas eu nasci com o volume no máximo.\" Que tema social eles sugerem e que recurso reforça esse tema?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em quem é silenciado e na imagem do volume.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rro4lef1yp3a2s",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Por que o slam pode ser visto como uma forma de ocupar o espaço público com a palavra?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em onde os slams acontecem e em quem fala neles.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_red": {
+   "topic": "Revisão e reescrita: autocorreção com roteiro de critérios",
+   "questions": [
+    {
+     "id": "rpl4kw41l95qti",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Ao revisar uma redação, qual deve ser o primeiro passo?",
+     "options": [
+      "Reler o texto inteiro verificando se ele atende à proposta",
+      "Corrigir apenas os acentos",
+      "Trocar o título",
+      "Contar o número de palavras de cada frase"
+     ],
+     "answer": "Reler o texto inteiro verificando se ele atende à proposta",
+     "accept": [],
+     "hint": "Comece pela visão geral antes dos detalhes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v307dg19b4n4g",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Para que serve um roteiro de critérios na autocorreção?",
+     "options": [
+      "Para avaliar o texto de forma organizada e objetiva",
+      "Para copiar ideias de outros textos",
+      "Para deixar o texto mais longo",
+      "Para escolher o título"
+     ],
+     "answer": "Para avaliar o texto de forma organizada e objetiva",
+     "accept": [],
+     "hint": "Pense em uma lista de verificação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh135zc1tvf0l6",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual é a diferença entre revisar e reescrever?",
+     "options": [
+      "Reescrever envolve reformular trechos, não apenas corrigir erros",
+      "Reescrever é só passar o texto a limpo",
+      "Revisar significa apagar o texto todo",
+      "Não há diferença"
+     ],
+     "answer": "Reescrever envolve reformular trechos, não apenas corrigir erros",
+     "accept": [],
+     "hint": "Uma muda mais o texto do que a outra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8gw3vz16j378d",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual problema aparece em \"A cidade é bonita. A cidade tem parques. A cidade é limpa.\"?",
+     "options": [
+      "Repetição excessiva de palavras",
+      "Erro de concordância",
+      "Falta de acentuação",
+      "Uso de gíria"
+     ],
+     "answer": "Repetição excessiva de palavras",
+     "accept": [],
+     "hint": "Observe a palavra que se repete.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r141em1afir721",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual reescrita resolve melhor a repetição em \"A cidade é bonita. A cidade tem parques.\"?",
+     "options": [
+      "A cidade é bonita e tem parques.",
+      "A cidade é bonita. A cidade, ela tem parques.",
+      "A cidade é bonita. Cidade tem parques.",
+      "A cidade é bonita. A cidade, a cidade tem parques."
+     ],
+     "answer": "A cidade é bonita e tem parques.",
+     "accept": [],
+     "hint": "Una as ideias e evite repetir o sujeito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11e08k3159jw21",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual conectivo indica conclusão em \"Estudei todos os dias; ___, estou preparado\"?",
+     "options": [
+      "portanto",
+      "porém",
+      "embora",
+      "enquanto"
+     ],
+     "answer": "portanto",
+     "accept": [],
+     "hint": "Procure o conectivo que introduz uma consequência.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1em853hqmaza5",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual frase está de acordo com a norma-padrão?",
+     "options": [
+      "Faltaram dois alunos.",
+      "Faltou dois alunos.",
+      "Faltou os dois alunos.",
+      "Faltaram dois aluno."
+     ],
+     "answer": "Faltaram dois alunos.",
+     "accept": [],
+     "hint": "O verbo concorda com o sujeito \"dois alunos\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnvmywpf2af4a",
+     "subject": "pt_red",
+     "type": "short",
+     "q": "Reescreva na norma-padrão: \"Haviam muitas pessoas na fila.\" Escreva só as duas primeiras palavras corrigidas.",
+     "options": [],
+     "answer": "Havia muitas",
+     "accept": [
+      "havia muitas"
+     ],
+     "hint": "\"Haver\" no sentido de existir é impessoal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hn41fs1rf9tke",
+     "subject": "pt_red",
+     "type": "short",
+     "q": "Complete com \"mal\" ou \"mau\": \"Ele se comportou ___ na reunião.\"",
+     "options": [],
+     "answer": "mal",
+     "accept": [],
+     "hint": "Teste o oposto: \"bem\" ou \"bom\"?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dsceop6uqya4",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual frase está com a crase correta?",
+     "options": [
+      "Vou à escola amanhã.",
+      "Vou à pé para a escola.",
+      "Comecei à estudar cedo.",
+      "Entreguei o livro à ele."
+     ],
+     "answer": "Vou à escola amanhã.",
+     "accept": [],
+     "hint": "Só há crase antes de palavra feminina que aceita o artigo \"a\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rybdtwr11yhucu",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual frase é ambígua e precisa ser reescrita?",
+     "options": [
+      "O policial prendeu o suspeito em sua casa.",
+      "O policial prendeu o suspeito na casa do suspeito.",
+      "O suspeito foi preso em casa pelo policial, que morava longe.",
+      "O policial prendeu o suspeito ontem."
+     ],
+     "answer": "O policial prendeu o suspeito em sua casa.",
+     "accept": [],
+     "hint": "De quem é a casa?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11u4t7n1kt1vpc",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual versão é mais concisa e clara?",
+     "options": [
+      "Os alunos chegaram atrasados por causa da chuva.",
+      "Os alunos, que eram alunos da escola, chegaram atrasados devido ao fato de que estava chovendo chuva.",
+      "Por causa de que choveu, os alunos chegaram de forma atrasada à escola deles.",
+      "Chegaram os alunos atrasados porque a chuva que chovia atrasou."
+     ],
+     "answer": "Os alunos chegaram atrasados por causa da chuva.",
+     "accept": [],
+     "hint": "Elimine repetições e palavras desnecessárias.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfcwtnegxq708",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Um parágrafo diz apenas \"Ler é importante. Todos devem ler.\" O que falta para ele ser argumentativo?",
+     "options": [
+      "Argumentos e exemplos que justifiquem a ideia",
+      "Mais pontos de exclamação",
+      "Um título maior",
+      "Palavras em outra língua"
+     ],
+     "answer": "Argumentos e exemplos que justifiquem a ideia",
+     "accept": [],
+     "hint": "Uma opinião precisa ser sustentada.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrfg3jd10xwwlh",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual item de um roteiro de revisão avalia a coesão do texto?",
+     "options": [
+      "Os parágrafos estão ligados por conectivos adequados?",
+      "O texto tem título?",
+      "A letra está bonita?",
+      "O texto tem mais de uma página?"
+     ],
+     "answer": "Os parágrafos estão ligados por conectivos adequados?",
+     "accept": [],
+     "hint": "Coesão é a ligação entre as partes do texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqt154p14pl3s0",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Reescreva o trecho de forma mais clara e de acordo com a norma-padrão: \"A gente acha que tipo os jovens tem que ler mais porque é importante.\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Retire marcas de oralidade, corrija a concordância e explique por que é importante.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk9pmacigwbj7",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Cite dois critérios que você usaria para revisar o próprio texto dissertativo e explique por que cada um é importante.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em proposta, argumentação, coesão e norma-padrão.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
