@@ -1,0 +1,2393 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y5",
+ "academic_week": 14,
+ "subjects": {
+  "bss": {
+   "topic": "O ciclo do açúcar: engenho e sociedade colonial",
+   "questions": [
+    {
+     "id": "r175e6h01o6o1kc",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual produto era a principal riqueza do Brasil colonial nos séculos XVI e XVII?",
+     "options": [
+      "Açúcar",
+      "Café",
+      "Borracha",
+      "Soja"
+     ],
+     "answer": "Açúcar",
+     "accept": [],
+     "hint": "Pense no produto feito da cana.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o0yd6ehx6rq",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chamava a propriedade onde a cana era plantada e transformada em açúcar?",
+     "options": [],
+     "answer": "engenho",
+     "accept": [
+      "o engenho"
+     ],
+     "hint": "Começa com a letra E.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mk5r7i1y2sfw9",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em que região do Brasil ficavam os principais engenhos de açúcar?",
+     "options": [
+      "Litoral do Nordeste",
+      "Amazônia",
+      "Sul do Brasil",
+      "Pantanal"
+     ],
+     "answer": "Litoral do Nordeste",
+     "accept": [],
+     "hint": "Pense em Pernambuco e Bahia, perto do mar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqr1qt71ufghuu",
+     "subject": "bss",
+     "type": "short",
+     "q": "Qual era o nome da moradia do senhor de engenho e de sua família?",
+     "options": [],
+     "answer": "casa-grande",
+     "accept": [
+      "casa grande",
+      "a casa-grande"
+     ],
+     "hint": "Era a maior construção do engenho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n0pg9ugiaob",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chamava o lugar onde viviam as pessoas escravizadas no engenho?",
+     "options": [],
+     "answer": "senzala",
+     "accept": [
+      "a senzala"
+     ],
+     "hint": "Era uma construção simples, longe do conforto da casa principal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16cl5md1pxxlvi",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual era a função da moenda no engenho?",
+     "options": [
+      "Esmagar a cana para tirar o caldo",
+      "Guardar o açúcar pronto",
+      "Rezar as missas",
+      "Abrigar os animais"
+     ],
+     "answer": "Esmagar a cana para tirar o caldo",
+     "accept": [],
+     "hint": "Pense no primeiro passo depois da colheita da cana.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r110evd41kvhama",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em qual parte do engenho o caldo da cana era fervido até engrossar?",
+     "options": [
+      "Casa das caldeiras",
+      "Capela",
+      "Senzala",
+      "Casa-grande"
+     ],
+     "answer": "Casa das caldeiras",
+     "accept": [],
+     "hint": "O nome lembra grandes panelas de ferro aquecidas no fogo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz7ujhl30wr7k",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quem era a pessoa mais poderosa da sociedade açucareira?",
+     "options": [
+      "O senhor de engenho",
+      "O feitor",
+      "O lavrador",
+      "O mestre de açúcar"
+     ],
+     "answer": "O senhor de engenho",
+     "accept": [],
+     "hint": "Era o dono das terras, da casa-grande e do engenho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r26itq213v2peu",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual trabalhador livre vigiava e controlava o trabalho das pessoas escravizadas?",
+     "options": [
+      "Feitor",
+      "Padre",
+      "Comerciante",
+      "Senhor de engenho"
+     ],
+     "answer": "Feitor",
+     "accept": [],
+     "hint": "Era um empregado do senhor de engenho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ccnpey2kzmob",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quem fazia a maior parte do trabalho pesado nos engenhos?",
+     "options": [
+      "Africanos escravizados",
+      "Comerciantes portugueses",
+      "Padres",
+      "Senhores de engenho"
+     ],
+     "answer": "Africanos escravizados",
+     "accept": [],
+     "hint": "Eles foram trazidos à força de outro continente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ier0u5ydomqa",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Para onde a maior parte do açúcar produzido no Brasil era enviada?",
+     "options": [
+      "Europa",
+      "Ásia",
+      "Oceania",
+      "Ficava toda no Brasil"
+     ],
+     "answer": "Europa",
+     "accept": [],
+     "hint": "O açúcar era vendido do outro lado do Oceano Atlântico.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rza57tfdjb3bk",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual frase descreve bem a produção de açúcar na colônia?",
+     "options": [
+      "Grandes fazendas com um só produto para exportar",
+      "Pequenas hortas para a família comer",
+      "Fábricas modernas com máquinas elétricas",
+      "Plantações variadas vendidas só na vila"
+     ],
+     "answer": "Grandes fazendas com um só produto para exportar",
+     "accept": [],
+     "hint": "Pense em latifúndio e monocultura.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcd8bd4pmx4p9",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Como se chamavam as comunidades formadas por pessoas que fugiam da escravidão?",
+     "options": [
+      "Quilombos",
+      "Senzalas",
+      "Capitanias",
+      "Engenhos"
+     ],
+     "answer": "Quilombos",
+     "accept": [],
+     "hint": "Palmares foi a mais famosa dessas comunidades.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdkwgphfycsaw",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que se diz que a sociedade açucareira era muito desigual?",
+     "options": [
+      "Poucos tinham terras e riqueza, e muitos eram escravizados",
+      "Todos tinham os mesmos direitos",
+      "Todos moravam na casa-grande",
+      "Os trabalhadores ganhavam mais que o senhor"
+     ],
+     "answer": "Poucos tinham terras e riqueza, e muitos eram escravizados",
+     "accept": [],
+     "hint": "Compare a vida na casa-grande com a vida na senzala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19kd5kz1inc3az",
+     "subject": "bss",
+     "type": "open",
+     "q": "Explique por que o trabalho escravizado foi tão ligado à produção de açúcar no Brasil colonial.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no tamanho das plantações e em quem lucrava com o açúcar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwfd8dv1kzjyf2",
+     "subject": "bss",
+     "type": "open",
+     "q": "Imagine que você está visitando um engenho do século XVII. Descreva duas partes que você veria e para que serviam.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Lembre da moenda, da casa das caldeiras, da capela, da casa-grande e da senzala.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Editing and proof-reading drafts",
+   "questions": [
+    {
+     "id": "r1na5c4kb49dj4",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word means checking writing carefully for spelling and punctuation mistakes?",
+     "options": [
+      "Proof-reading",
+      "Planning",
+      "Illustrating",
+      "Publishing"
+     ],
+     "answer": "Proof-reading",
+     "accept": [],
+     "hint": "It is usually one of the last steps before a final copy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnhboix18tdkul",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is a draft?",
+     "options": [
+      "An early version of a piece of writing",
+      "The title of a story",
+      "A list of spelling words",
+      "The final printed book"
+     ],
+     "answer": "An early version of a piece of writing",
+     "accept": [],
+     "hint": "Writers usually change it before it is finished.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r50u6xn11swfn3",
+     "subject": "en",
+     "type": "short",
+     "q": "Find the spelling mistake and write the word correctly: 'We went to the libary after school.'",
+     "options": [],
+     "answer": "library",
+     "accept": [
+      "Library"
+     ],
+     "hint": "Say the word slowly and listen for every sound.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xl40ch6xk2oa",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is a stronger, more interesting choice in this sentence? 'The dog ___ across the field.'",
+     "options": [
+      "raced",
+      "went",
+      "got",
+      "did"
+     ],
+     "answer": "raced",
+     "accept": [],
+     "hint": "Choose the verb that shows how fast it moved.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r111us52xzwobh",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence uses the apostrophe correctly?",
+     "options": [
+      "The girl's bag was red.",
+      "The girls' bag was red's.",
+      "The girl,s bag was red.",
+      "The girls bag's was red."
+     ],
+     "answer": "The girl's bag was red.",
+     "accept": [],
+     "hint": "One girl owns the bag.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxuobmnhjbirr",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which version fixes the verb so the sentence agrees? 'The children was playing outside.'",
+     "options": [
+      "The children were playing outside.",
+      "The children is playing outside.",
+      "The children be playing outside.",
+      "The children am playing outside."
+     ],
+     "answer": "The children were playing outside.",
+     "accept": [],
+     "hint": "'Children' means more than one person.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpk0w90wn0m58",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence keeps the same tense all the way through?",
+     "options": [
+      "She opened the door and walked in.",
+      "She opened the door and walks in.",
+      "She opens the door and walked in.",
+      "She open the door and walked in."
+     ],
+     "answer": "She opened the door and walked in.",
+     "accept": [],
+     "hint": "Both actions happened in the past.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10cmmizznzilm",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is the best way to fix this run-on sentence? 'It was raining we stayed inside.'",
+     "options": [
+      "It was raining, so we stayed inside.",
+      "It was raining we, stayed inside.",
+      "It was, raining we stayed inside.",
+      "it was raining we stayed inside."
+     ],
+     "answer": "It was raining, so we stayed inside.",
+     "accept": [],
+     "hint": "Join the two ideas with a conjunction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yu1dju1z60e7",
+     "subject": "en",
+     "type": "mc",
+     "q": "Where should the comma go? 'After lunch we played football.'",
+     "options": [
+      "After lunch, we played football.",
+      "After, lunch we played football.",
+      "After lunch we, played football.",
+      "After lunch we played, football."
+     ],
+     "answer": "After lunch, we played football.",
+     "accept": [],
+     "hint": "Put it after the opening phrase that tells you when.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rytv5jct15867",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word could replace 'nice' to make the description more precise? 'We had a nice meal.'",
+     "options": [
+      "delicious",
+      "good",
+      "okay",
+      "fine"
+     ],
+     "answer": "delicious",
+     "accept": [],
+     "hint": "Think about how food tastes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx8wc5t1u9enka",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence has correct inverted commas?",
+     "options": [
+      "\"Come here,\" said Mum.",
+      "\"Come here, said Mum.\"",
+      "Come here,\" said Mum.",
+      "\"Come here\" said, Mum."
+     ],
+     "answer": "\"Come here,\" said Mum.",
+     "accept": [],
+     "hint": "Only the spoken words go inside the inverted commas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9bjg06lx906i",
+     "subject": "en",
+     "type": "mc",
+     "q": "A sentence repeats the same word: 'The cat was big. The cat was black. The cat sat down.' What is the best edit?",
+     "options": [
+      "The big black cat sat down.",
+      "The cat cat sat down.",
+      "Cat big black sat down.",
+      "The cat was. Big black."
+     ],
+     "answer": "The big black cat sat down.",
+     "accept": [],
+     "hint": "Combine the ideas into one sentence.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbuz9sc1spzjcx",
+     "subject": "en",
+     "type": "mc",
+     "q": "When you evaluate a friend's writing, what is the most helpful thing to do?",
+     "options": [
+      "Say what works well and suggest one clear improvement",
+      "Only point out the mistakes",
+      "Rewrite the whole story for them",
+      "Say it is perfect without reading it"
+     ],
+     "answer": "Say what works well and suggest one clear improvement",
+     "accept": [],
+     "hint": "Good feedback is kind and specific.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rksu0uddr743",
+     "subject": "en",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words.",
+     "options": [],
+     "answer": "becuase → because; arived → arrived; castel → castle; beautifull → beautiful; realy → really",
+     "accept": [],
+     "hint": "Look closely at the words with double letters.",
+     "text": "Last weekend my family went to the beach. We left very early becuase the journey was long. When we arived, the sand was warm and the sea was calm. My brother made a huge castel and I collected shells. It was a beautifull day and I was realy tired afterwards.",
+     "errors": [
+      {
+       "wrong": "becuase",
+       "right": "because"
+      },
+      {
+       "wrong": "arived",
+       "right": "arrived"
+      },
+      {
+       "wrong": "castel",
+       "right": "castle"
+      },
+      {
+       "wrong": "beautifull",
+       "right": "beautiful"
+      },
+      {
+       "wrong": "realy",
+       "right": "really"
+      }
+     ]
+    },
+    {
+     "id": "ri2ytpsmt8w84",
+     "subject": "en",
+     "type": "open",
+     "q": "Rewrite this sentence to make it more exciting for the reader, then explain one change you made: 'The man walked into the old house.'",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Try a powerful verb, an adjective or an adverb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq75nk3ya9csx",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence is punctuated correctly?",
+     "options": [
+      "Where are you going?",
+      "Where are you going.",
+      "Where, are you going?",
+      "Where are you going"
+     ],
+     "answer": "Where are you going?",
+     "accept": [],
+     "hint": "Check the capital letter and the end mark.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_read": {
+   "topic": "Classic fiction: The Secret Garden",
+   "questions": [
+    {
+     "id": "r1h93s5d5d3w04",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "In 'The Secret Garden', where does Mary Lennox live at the very start of the story?",
+     "options": [
+      "India",
+      "Yorkshire",
+      "London",
+      "Scotland"
+     ],
+     "answer": "India",
+     "accept": [],
+     "hint": "It is a hot country far from England.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruq88ep1gtqc3f",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Where is Mary sent to live after she loses her parents?",
+     "options": [
+      "Her uncle's house in Yorkshire",
+      "A school in London",
+      "A farm in Wales",
+      "A ship at sea"
+     ],
+     "answer": "Her uncle's house in Yorkshire",
+     "accept": [],
+     "hint": "It is a huge, old manor on the moor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h5j4yc1wrxtrn",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is Mary like when she first arrives at the manor?",
+     "options": [
+      "Rude and sour",
+      "Cheerful and kind",
+      "Brave and friendly",
+      "Shy and polite"
+     ],
+     "answer": "Rude and sour",
+     "accept": [],
+     "hint": "Other characters call her 'contrary'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r36o13b1cu3b2h",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which creature helps Mary find the buried key?",
+     "options": [
+      "A robin",
+      "A cat",
+      "A fox",
+      "A dog"
+     ],
+     "answer": "A robin",
+     "accept": [],
+     "hint": "It is a small bird with a red breast.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18ikfnhgq4gse",
+     "subject": "en_read",
+     "type": "short",
+     "q": "How many years had the secret garden been locked before Mary found it?",
+     "options": [],
+     "answer": "ten",
+     "accept": [
+      "10",
+      "ten years",
+      "10 years"
+     ],
+     "hint": "It is the same number as fingers on two hands.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1eld2zyu5zco6",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which boy can talk to animals and helps Mary bring the garden back to life?",
+     "options": [
+      "Dickon",
+      "Colin",
+      "Ben",
+      "Archie"
+     ],
+     "answer": "Dickon",
+     "accept": [],
+     "hint": "He is Martha's brother.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x7tptl1a1tlb9",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Who is Colin?",
+     "options": [
+      "Mary's cousin who believes he is very ill",
+      "The gardener",
+      "Mary's father",
+      "A boy from the village"
+     ],
+     "answer": "Mary's cousin who believes he is very ill",
+     "accept": [],
+     "hint": "He lives hidden away in a room of the manor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f3k5lv1dd875w",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "A moor is…",
+     "options": [
+      "a wide, open area of wild land with grass and heather",
+      "a busy city street",
+      "a deep forest",
+      "a sandy beach"
+     ],
+     "answer": "a wide, open area of wild land with grass and heather",
+     "accept": [],
+     "hint": "Think of the windy land around the manor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj2k6tdavcftx",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'She was the most contrary child; whatever anyone suggested, she wanted the opposite.' What does 'contrary' mean here?",
+     "options": [
+      "Always wanting to disagree",
+      "Very generous",
+      "Easily frightened",
+      "Extremely clever"
+     ],
+     "answer": "Always wanting to disagree",
+     "accept": [],
+     "hint": "The second half of the sentence explains the word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pokemf75ac9t",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'The housemaid was sent to fetch the child some porridge.' What does 'fetch' mean?",
+     "options": [
+      "Go and get",
+      "Throw away",
+      "Cook slowly",
+      "Eat quickly"
+     ],
+     "answer": "Go and get",
+     "accept": [],
+     "hint": "Think about what the maid has to do with the porridge.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15wr64bty3jis",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'The wind went wuthering round the house all night.' What is the wind doing?",
+     "options": [
+      "Blowing with a loud, roaring sound",
+      "Stopping completely",
+      "Blowing gently and warmly",
+      "Carrying snow quietly"
+     ],
+     "answer": "Blowing with a loud, roaring sound",
+     "accept": [],
+     "hint": "It kept people awake all night.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raqzccx1ekc0ym",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Why do some characters speak words like 'tha'' and 'nowt'?",
+     "options": [
+      "They speak in a Yorkshire dialect",
+      "They are making spelling mistakes",
+      "They are speaking French",
+      "They are reading from a letter"
+     ],
+     "answer": "They speak in a Yorkshire dialect",
+     "accept": [],
+     "hint": "It shows how people from that area talk.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rympp2y10r83xp",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "How does working in the garden change Mary?",
+     "options": [
+      "She becomes healthier, kinder and happier",
+      "She becomes lazier",
+      "She becomes more selfish",
+      "She stops talking to anyone"
+     ],
+     "answer": "She becomes healthier, kinder and happier",
+     "accept": [],
+     "hint": "Think about fresh air, friends and something to care for.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r155ic6t12lxh7a",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which word best describes the mood of the manor at the start of the story?",
+     "options": [
+      "Gloomy",
+      "Joyful",
+      "Noisy",
+      "Sunny"
+     ],
+     "answer": "Gloomy",
+     "accept": [],
+     "hint": "Think of a huge, dark house with many closed doors.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpkxlpe1n8wfdh",
+     "subject": "en_read",
+     "type": "open",
+     "q": "How does the setting of the secret garden help Mary and Colin to change? Use one example.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what the garden is like before and after they look after it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nz4r26e21ibn",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Why do you think the author chose a locked garden as the centre of the story?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about secrets, hiding and things that come back to life.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_spell": {
+   "topic": "Homophones: -ce nouns and -se verbs",
+   "questions": [
+    {
+     "id": "rqm9mu915w8umv",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which ending is usually used for the NOUN in these pairs?",
+     "options": [
+      "-ce",
+      "-se",
+      "-sy",
+      "-ze"
+     ],
+     "answer": "-ce",
+     "accept": [],
+     "hint": "Think of 'a piece of advice'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wqp618fse7wl",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: 'Can you give me some ___ ?'",
+     "options": [
+      "advice",
+      "advise"
+     ],
+     "answer": "advice",
+     "accept": [],
+     "hint": "Here the word is a thing you can be given.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvzvxqm1cef2gq",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: 'I ___ you to wear a coat today.'",
+     "options": [
+      "advise",
+      "advice"
+     ],
+     "answer": "advise",
+     "accept": [],
+     "hint": "Here the word is an action — something I do.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g2vg986q0n2y",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: 'We have football ___ on Tuesdays.'",
+     "options": [
+      "practice",
+      "practise"
+     ],
+     "answer": "practice",
+     "accept": [],
+     "hint": "It is a thing — an event in the week.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr8rajf18ix4d8",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: 'You need to ___ the piano every day.'",
+     "options": [
+      "practise",
+      "practice"
+     ],
+     "answer": "practise",
+     "accept": [],
+     "hint": "It follows 'to', so it is a verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cutquf1gce5a3",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: 'This clever ___ can measure the temperature.'",
+     "options": [
+      "device",
+      "devise"
+     ],
+     "answer": "device",
+     "accept": [],
+     "hint": "It is an object, a thing.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lwv35m1h9y2xj",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: 'The team will ___ a plan to win the match.'",
+     "options": [
+      "devise",
+      "device"
+     ],
+     "answer": "devise",
+     "accept": [],
+     "hint": "It means to invent or think up — an action.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12jhdxo6gmdgo",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: 'My mum needs a driving ___ to drive a car.'",
+     "options": [
+      "licence",
+      "license"
+     ],
+     "answer": "licence",
+     "accept": [],
+     "hint": "It is a document — a noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmz5npq7580wi",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: 'The council will ___ the shop to sell food.'",
+     "options": [
+      "license",
+      "licence"
+     ],
+     "answer": "license",
+     "accept": [],
+     "hint": "It means to give permission — a verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwoysvu1bkzjsb",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: 'The wizard made a ___ about the future.'",
+     "options": [
+      "prophecy",
+      "prophesy"
+     ],
+     "answer": "prophecy",
+     "accept": [],
+     "hint": "It is a thing the wizard made.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u8y8t018leeix",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: 'The old woman began to ___ that the king would fall.'",
+     "options": [
+      "prophesy",
+      "prophecy"
+     ],
+     "answer": "prophesy",
+     "accept": [],
+     "hint": "It comes after 'to', so it is an action.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1saeq3d1qp0x5j",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which sentence is spelled correctly?",
+     "options": [
+      "I need to practise my spellings.",
+      "I need to practice my spellings.",
+      "I need to practis my spellings.",
+      "I need to practiss my spellings."
+     ],
+     "answer": "I need to practise my spellings.",
+     "accept": [],
+     "hint": "After 'to' we need the verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxkvvod1m9u11z",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Write the noun that goes with the verb 'devise'.",
+     "options": [],
+     "answer": "device",
+     "accept": [],
+     "hint": "Change one letter so it ends like 'advice'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kgmrb11xx5fkz",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Write the verb that goes with the noun 'advice'.",
+     "options": [],
+     "answer": "advise",
+     "accept": [],
+     "hint": "Change one letter so it ends in -se.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bqvb4gmwscej",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words.",
+     "options": [],
+     "answer": "advise → advice; practice → practise; devise → device; license → licence; prophesy → prophecy",
+     "accept": [],
+     "hint": "Ask yourself: is each word a noun or a verb in this sentence?",
+     "text": "My coach gave me some good advise before the match. She said I must practice my shooting every evening. My dad bought a small devise that counts my kicks. He needs a fishing license too, but that is another story. Coach made a prophesy that our team would win, and she was right!",
+     "errors": [
+      {
+       "wrong": "advise",
+       "right": "advice"
+      },
+      {
+       "wrong": "practice",
+       "right": "practise"
+      },
+      {
+       "wrong": "devise",
+       "right": "device"
+      },
+      {
+       "wrong": "license",
+       "right": "licence"
+      },
+      {
+       "wrong": "prophesy",
+       "right": "prophecy"
+      }
+     ]
+    },
+    {
+     "id": "r1nyafwwulzutn",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words in this museum story.",
+     "options": [],
+     "answer": "musuem → museum; usefull → useful; agian → again; Evrybody → Everybody; brillant → brilliant",
+     "accept": [],
+     "hint": "Read each word slowly, sound by sound.",
+     "text": "Our class visited a science musuem. The guide gave us usefull advice about the old machines. One inventor tried to devise a way to wash clothes quickly. His first device broke, so he had to start agian. Evrybody thought the idea was brillant, and we could not wait to practise using the machine ourselves.",
+     "errors": [
+      {
+       "wrong": "musuem",
+       "right": "museum"
+      },
+      {
+       "wrong": "usefull",
+       "right": "useful"
+      },
+      {
+       "wrong": "agian",
+       "right": "again"
+      },
+      {
+       "wrong": "Evrybody",
+       "right": "Everybody"
+      },
+      {
+       "wrong": "brillant",
+       "right": "brilliant"
+      }
+     ]
+    }
+   ]
+  },
+  "ipc": {
+   "topic": "Active Planet — Geography: volcanoes",
+   "questions": [
+    {
+     "id": "r1ixaetr4csk1z",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What is magma?",
+     "options": [
+      "Hot melted rock under the ground",
+      "Cold rock on a mountain",
+      "Ash in the sky",
+      "Water inside a volcano"
+     ],
+     "answer": "Hot melted rock under the ground",
+     "accept": [],
+     "hint": "It has not come out of the volcano yet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru5nsa6e5rjy7",
+     "subject": "ipc",
+     "type": "short",
+     "q": "What do we call magma once it flows out onto the Earth's surface?",
+     "options": [],
+     "answer": "lava",
+     "accept": [
+      "Lava"
+     ],
+     "hint": "It is a four-letter word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtc5dgv94lzw5",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What is the bowl-shaped opening at the top of a volcano called?",
+     "options": [
+      "Crater",
+      "Vent",
+      "Chamber",
+      "Plate"
+     ],
+     "answer": "Crater",
+     "accept": [],
+     "hint": "The Moon also has many of these.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro55h39qz67iz",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Where is magma stored deep beneath a volcano?",
+     "options": [
+      "Magma chamber",
+      "Crater",
+      "Ash cloud",
+      "Side vent"
+     ],
+     "answer": "Magma chamber",
+     "accept": [],
+     "hint": "Think of a big underground room.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwbf51uwv0ilb",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What is the main vent of a volcano?",
+     "options": [
+      "The pipe that carries magma up to the surface",
+      "The cloud of ash in the sky",
+      "The rock on the slopes",
+      "The snow at the top"
+     ],
+     "answer": "The pipe that carries magma up to the surface",
+     "accept": [],
+     "hint": "It connects the chamber to the crater.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd16gz813zqirr",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Why do volcanoes erupt?",
+     "options": [
+      "Pressure from magma and gases builds up and pushes upward",
+      "The wind blows the top off",
+      "Rain fills them with water",
+      "The Sun heats the mountain"
+     ],
+     "answer": "Pressure from magma and gases builds up and pushes upward",
+     "accept": [],
+     "hint": "Think of shaking a fizzy drink and opening it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8ut6231biweko",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "The Earth's crust is broken into huge pieces that move slowly. What are they called?",
+     "options": [
+      "Tectonic plates",
+      "Magma chambers",
+      "Ash layers",
+      "Lava flows"
+     ],
+     "answer": "Tectonic plates",
+     "accept": [],
+     "hint": "Many volcanoes form where these pieces meet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r82tu3a1w0qqal",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "A volcano that has not erupted for a long time but could erupt again is…",
+     "options": [
+      "dormant",
+      "extinct",
+      "active",
+      "frozen"
+     ],
+     "answer": "dormant",
+     "accept": [],
+     "hint": "It is like a volcano that is 'sleeping'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r28yhz7181qnq2",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "A volcano that will never erupt again is…",
+     "options": [
+      "extinct",
+      "dormant",
+      "active",
+      "young"
+     ],
+     "answer": "extinct",
+     "accept": [],
+     "hint": "Dinosaurs are described with the same word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjx5bax81e0ll",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "The Ring of Fire is a chain of volcanoes around which ocean?",
+     "options": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+     ],
+     "answer": "Pacific Ocean",
+     "accept": [],
+     "hint": "It is the largest ocean on Earth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rekg6bl1yo5rw6",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Mount Etna, one of Europe's most active volcanoes, is in which country?",
+     "options": [
+      "Italy",
+      "Spain",
+      "Norway",
+      "France"
+     ],
+     "answer": "Italy",
+     "accept": [],
+     "hint": "It is on the island of Sicily.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18xtp8o5zj00",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which ancient Roman town was buried by the eruption of Mount Vesuvius in AD 79?",
+     "options": [
+      "Pompeii",
+      "Athens",
+      "Cairo",
+      "Lisbon"
+     ],
+     "answer": "Pompeii",
+     "accept": [],
+     "hint": "Its ruins can still be visited near Naples.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1whs67mc586f4",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Mount Fuji is a famous volcano in which country?",
+     "options": [
+      "Japan",
+      "Brazil",
+      "Egypt",
+      "Canada"
+     ],
+     "answer": "Japan",
+     "accept": [],
+     "hint": "This country is part of the Ring of Fire.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y2zjbsgx21jf",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What do we call a scientist who studies volcanoes?",
+     "options": [
+      "Volcanologist",
+      "Astronomer",
+      "Botanist",
+      "Historian"
+     ],
+     "answer": "Volcanologist",
+     "accept": [],
+     "hint": "The job name starts like the word 'volcano'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l502gj1aoukdj",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Explain why so many volcanoes are found around the Ring of Fire.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what happens where tectonic plates meet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j1b79h1xsmgyq",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Give one danger and one benefit of living near a volcano.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about lava and ash, and also about soil and hot springs.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Multiplication and division problems: scaling and rates",
+   "questions": [
+    {
+     "id": "r12w91mg1cezyja",
+     "subject": "math",
+     "type": "num",
+     "q": "A pencil costs 30p. How much do 4 pencils cost, in pence?",
+     "options": [],
+     "answer": "120",
+     "accept": [],
+     "hint": "Multiply the cost of one by the number of pencils.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16ybdjh10y8s5t",
+     "subject": "math",
+     "type": "num",
+     "q": "Sam has 5 stickers. Lia has 3 times as many. How many stickers does Lia have?",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "'Times as many' means multiply.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vk04b3j60gap",
+     "subject": "math",
+     "type": "num",
+     "q": "A recipe uses 200 g of flour for 1 cake. How many grams are needed for 6 cakes?",
+     "options": [],
+     "answer": "1200",
+     "accept": [],
+     "hint": "Scale up: multiply by 6.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3aynbx1y1hvjm",
+     "subject": "math",
+     "type": "num",
+     "q": "A tower is 48 cm tall. A model is 4 times smaller. How tall is the model in cm?",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "'Times smaller' means divide.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "romyr77p508kw",
+     "subject": "math",
+     "type": "num",
+     "q": "A rope is 60 m long. Cut it into 5 equal pieces. How long is each piece, in metres?",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "Share it equally.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqayr5qx1neug",
+     "subject": "math",
+     "type": "num",
+     "q": "What is 1/4 of 36?",
+     "options": [],
+     "answer": "9",
+     "accept": [],
+     "hint": "Divide by the denominator.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvfi055jlru7",
+     "subject": "math",
+     "type": "num",
+     "q": "Scale 20 cm by 1/2. What is the new length in cm?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Multiplying by a half is the same as halving.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc8kbvkx590c3",
+     "subject": "math",
+     "type": "num",
+     "q": "A plant grows 3 cm every week. How many centimetres does it grow in 8 weeks?",
+     "options": [],
+     "answer": "24",
+     "accept": [],
+     "hint": "This is a rate: the same amount each week.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o3xecq1ceowf8",
+     "subject": "math",
+     "type": "num",
+     "q": "A car travels 60 km every hour. How far does it travel in 3 hours, in km?",
+     "options": [],
+     "answer": "180",
+     "accept": [],
+     "hint": "Distance per hour × number of hours.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18e3omz1mjk4d2",
+     "subject": "math",
+     "type": "num",
+     "q": "A machine fills 120 bottles in 4 minutes. How many bottles does it fill in 1 minute?",
+     "options": [],
+     "answer": "30",
+     "accept": [],
+     "hint": "Find the amount for one minute first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w8qa4l1aao79t",
+     "subject": "math",
+     "type": "num",
+     "q": "Pens are sold in packs of 6. How many packs are needed for 45 pens?",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "7 packs are not enough — round up.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r888pvs1bzic5z",
+     "subject": "math",
+     "type": "num",
+     "q": "A box holds 25 apples. How many apples are in 14 boxes?",
+     "options": [],
+     "answer": "350",
+     "accept": [],
+     "hint": "You could do 25 × 10 and 25 × 4.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1axdrf01w1vr3z",
+     "subject": "math",
+     "type": "mc",
+     "q": "Ten friends share £150 equally. Which calculation finds how much each person gets?",
+     "options": [
+      "150 ÷ 10",
+      "150 × 10",
+      "150 − 10",
+      "150 + 10"
+     ],
+     "answer": "150 ÷ 10",
+     "accept": [],
+     "hint": "Sharing equally means…",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruwoh7l1m70l2f",
+     "subject": "math",
+     "type": "num",
+     "q": "A recipe for 4 people uses 3 eggs. How many eggs are needed for 12 people?",
+     "options": [],
+     "answer": "9",
+     "accept": [],
+     "hint": "How many times bigger is 12 than 4?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4dqqxl14a8sm6",
+     "subject": "math",
+     "type": "open",
+     "q": "Mia says 'a quarter of 80 is bigger than a third of 60'. Is she right? Show your working.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Work out each amount separately, then compare.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwh7c9x1b7hepk",
+     "subject": "math",
+     "type": "num",
+     "q": "A shop sells 3 apples for 75p. How much does 1 apple cost, in pence?",
+     "options": [],
+     "answer": "25",
+     "accept": [],
+     "hint": "Divide the total cost by the number of apples.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Sinônimos, antônimos e uso do dicionário",
+   "questions": [
+    {
+     "id": "r1cojixo1b8qv9l",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra é sinônimo de 'alegre'?",
+     "options": [
+      "feliz",
+      "triste",
+      "cansado",
+      "bravo"
+     ],
+     "answer": "feliz",
+     "accept": [],
+     "hint": "Sinônimo tem o mesmo sentido, ou um sentido parecido.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wsf4euvb8y7q",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra é antônimo de 'alto'?",
+     "options": [
+      "baixo",
+      "grande",
+      "comprido",
+      "forte"
+     ],
+     "answer": "baixo",
+     "accept": [],
+     "hint": "Antônimo tem o sentido contrário.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e33w3q8etc6m",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual par de palavras é formado por sinônimos?",
+     "options": [
+      "bonito / belo",
+      "cheio / vazio",
+      "claro / escuro",
+      "rápido / lento"
+     ],
+     "answer": "bonito / belo",
+     "accept": [],
+     "hint": "Procure duas palavras que querem dizer quase a mesma coisa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc0028b1m2m0r3",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual par de palavras é formado por antônimos?",
+     "options": [
+      "cheio / vazio",
+      "morar / residir",
+      "começar / iniciar",
+      "falar / dizer"
+     ],
+     "answer": "cheio / vazio",
+     "accept": [],
+     "hint": "Procure duas palavras de sentidos opostos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1by9hg5fi8e80",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra NÃO é sinônimo de 'rápido'?",
+     "options": [
+      "lento",
+      "veloz",
+      "ligeiro",
+      "ágil"
+     ],
+     "answer": "lento",
+     "accept": [],
+     "hint": "Uma delas tem o sentido oposto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11rhrvfag90hl",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é o antônimo de 'possível', formado com um prefixo?",
+     "options": [
+      "impossível",
+      "despossível",
+      "antepossível",
+      "repossível"
+     ],
+     "answer": "impossível",
+     "accept": [],
+     "hint": "O prefixo indica negação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b48jx585t344",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas palavras aparece primeiro no dicionário?",
+     "options": [
+      "barco",
+      "bico",
+      "bola",
+      "burro"
+     ],
+     "answer": "barco",
+     "accept": [],
+     "hint": "Todas começam com B: olhe a segunda letra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq5olga1a3nbek",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual lista está em ordem alfabética?",
+     "options": [
+      "casa, cebola, cidade, cobra",
+      "cobra, casa, cidade, cebola",
+      "cidade, cebola, casa, cobra",
+      "casa, cidade, cebola, cobra"
+     ],
+     "answer": "casa, cebola, cidade, cobra",
+     "accept": [],
+     "hint": "Compare a segunda letra de cada palavra: a, e, i, o.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1locvcr1huaj4k",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Para descobrir o significado de 'correndo', qual palavra você deve procurar no dicionário?",
+     "options": [
+      "correr",
+      "corrida",
+      "corredor",
+      "correndo"
+     ],
+     "answer": "correr",
+     "accept": [],
+     "hint": "Os verbos aparecem no dicionário no infinitivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r47mi1lr6a2wa",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Para encontrar 'gatas' no dicionário, você deve procurar…",
+     "options": [
+      "gato",
+      "gatas",
+      "gatinha",
+      "gatos"
+     ],
+     "answer": "gato",
+     "accept": [],
+     "hint": "Os substantivos aparecem no masculino e no singular.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o6v5c08rda71",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que é um verbete?",
+     "options": [
+      "O conjunto de informações sobre uma palavra no dicionário",
+      "A capa do dicionário",
+      "Uma palavra sem significado",
+      "O índice de um livro"
+     ],
+     "answer": "O conjunto de informações sobre uma palavra no dicionário",
+     "accept": [],
+     "hint": "Ele traz a palavra, os significados e exemplos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d8e65d16yhc88",
+     "subject": "pt",
+     "type": "mc",
+     "q": "No alto das páginas do dicionário há duas palavras em destaque. Para que elas servem?",
+     "options": [
+      "Mostram a primeira e a última palavra da página",
+      "Mostram as palavras mais difíceis",
+      "Mostram o nome do autor",
+      "Mostram palavras estrangeiras"
+     ],
+     "answer": "Mostram a primeira e a última palavra da página",
+     "accept": [],
+     "hint": "Elas ajudam a achar a página certa mais depressa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13ydov2u9x64a",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase 'Sentei no banco da praça para descansar', o que significa 'banco'?",
+     "options": [
+      "Assento",
+      "Lugar onde se guarda dinheiro",
+      "Monte de areia no rio",
+      "Cardume de peixes"
+     ],
+     "answer": "Assento",
+     "accept": [],
+     "hint": "O contexto da frase mostra o sentido certo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1etk8lw1y1z6s5",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Escolha o sinônimo que mantém o sentido da frase: 'O menino ficou assustado com o trovão.'",
+     "options": [
+      "amedrontado",
+      "animado",
+      "aliviado",
+      "atrasado"
+     ],
+     "answer": "amedrontado",
+     "accept": [],
+     "hint": "Pense em como alguém se sente ao ouvir um barulho forte de repente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgcpkkl6zaypg",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva uma frase usando um par de antônimos e sublinhe-os mentalmente: diga quais são.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em pares como dia e noite, subir e descer, abrir e fechar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2vw6zf7b3ggo",
+     "subject": "pt",
+     "type": "open",
+     "q": "Por que é importante ler a frase inteira antes de escolher o significado de uma palavra no dicionário?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Lembre que uma palavra pode ter vários significados.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Contos de fadas recontados — Chapeuzinho Amarelo (Chico Buarque)",
+   "questions": [
+    {
+     "id": "r5xsbr2u5sghz",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em 'Chapeuzinho Amarelo', por que a menina tem esse nome?",
+     "options": [
+      "Porque vivia amarelada de medo",
+      "Porque gostava de girassóis",
+      "Porque morava numa casa amarela",
+      "Porque usava sapatos amarelos"
+     ],
+     "answer": "Porque vivia amarelada de medo",
+     "accept": [],
+     "hint": "A cor está ligada ao sentimento dela.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fjf2r11bj1ntf",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Do que Chapeuzinho Amarelo tinha mais medo?",
+     "options": [
+      "Do lobo",
+      "Da avó",
+      "Do caçador",
+      "Da floresta"
+     ],
+     "answer": "Do lobo",
+     "accept": [],
+     "hint": "É o mesmo personagem perigoso do conto tradicional.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbld17n7io78s",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por causa do medo, como era a vida de Chapeuzinho Amarelo no começo da história?",
+     "options": [
+      "Ela deixava de fazer muitas coisas, como brincar e sair",
+      "Ela viajava pelo mundo todo",
+      "Ela era a líder das brincadeiras",
+      "Ela cuidava de vários animais"
+     ],
+     "answer": "Ela deixava de fazer muitas coisas, como brincar e sair",
+     "accept": [],
+     "hint": "O medo atrapalhava o dia a dia dela.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rri9glv1c15i72",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No conto tradicional, qual é a cor do chapéu da menina?",
+     "options": [
+      "Vermelho",
+      "Azul",
+      "Verde",
+      "Amarelo"
+     ],
+     "answer": "Vermelho",
+     "accept": [],
+     "hint": "Pense no nome mais conhecido da personagem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1763g8n1tpkbk7",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No conto tradicional, quem a menina vai visitar na floresta?",
+     "options": [
+      "A avó",
+      "A tia",
+      "O professor",
+      "A vizinha"
+     ],
+     "answer": "A avó",
+     "accept": [],
+     "hint": "Ela leva uma cesta com doces.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxtgngruz9mr0",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No conto tradicional, quem salva a menina do lobo?",
+     "options": [
+      "O caçador",
+      "A avó",
+      "Um príncipe",
+      "Uma fada"
+     ],
+     "answer": "O caçador",
+     "accept": [],
+     "hint": "É alguém que passava pela floresta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xuyvbatf22n5",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na versão recontada, o que acontece com o medo quando a menina finalmente encontra o lobo?",
+     "options": [
+      "O medo vai embora",
+      "O medo fica ainda maior",
+      "Ela foge para sempre",
+      "Ela se esconde na casa da avó"
+     ],
+     "answer": "O medo vai embora",
+     "accept": [],
+     "hint": "Pense no que muda quando enfrentamos o que nos assusta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tcd6r31srzlhb",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Que brincadeira a menina faz com a palavra LOBO?",
+     "options": [
+      "Repete até ela virar BOLO",
+      "Escreve de trás para a frente até virar LAGO",
+      "Troca por LOUCO",
+      "Canta uma música sobre ela"
+     ],
+     "answer": "Repete até ela virar BOLO",
+     "accept": [],
+     "hint": "Diga LO-BO-LO-BO bem depressa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r165yxx11l35k8g",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Como fica o lobo depois que a menina perde o medo?",
+     "options": [
+      "Sem graça e sem poder",
+      "Mais forte e mais bravo",
+      "Amigo do caçador",
+      "Escondido na casa da avó"
+     ],
+     "answer": "Sem graça e sem poder",
+     "accept": [],
+     "hint": "Um lobo que não assusta ninguém perde sua força.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l2cf591fuob6j",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na versão recontada, quem ajuda a menina a vencer o medo?",
+     "options": [
+      "Ela mesma",
+      "O caçador",
+      "A avó",
+      "O lenhador"
+     ],
+     "answer": "Ela mesma",
+     "accept": [],
+     "hint": "Compare com o final do conto tradicional.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhw2w4r6w7676",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é o tema principal de 'Chapeuzinho Amarelo'?",
+     "options": [
+      "O medo e como vencê-lo",
+      "A comida da avó",
+      "Uma viagem de navio",
+      "A vida na cidade grande"
+     ],
+     "answer": "O medo e como vencê-lo",
+     "accept": [],
+     "hint": "Pense no que muda na personagem do começo ao fim.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ifzdee49iyy7",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é um reconto?",
+     "options": [
+      "Uma nova versão de uma história já conhecida",
+      "Uma história totalmente sem personagens",
+      "Uma lista de palavras difíceis",
+      "Um texto que só tem números"
+     ],
+     "answer": "Uma nova versão de uma história já conhecida",
+     "accept": [],
+     "hint": "O prefixo re- significa 'de novo'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjc8nuj1gglzh1",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quando um texto conversa com outro texto conhecido, como 'Chapeuzinho Amarelo' faz com 'Chapeuzinho Vermelho', chamamos isso de…",
+     "options": [
+      "intertextualidade",
+      "rima",
+      "pontuação",
+      "acentuação"
+     ],
+     "answer": "intertextualidade",
+     "accept": [],
+     "hint": "A palavra tem 'texto' dentro dela.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pwnxd1sxbcrk",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na linguagem do dia a dia, o que quer dizer 'amarelar'?",
+     "options": [
+      "Ficar com medo e desistir",
+      "Ficar muito feliz",
+      "Pintar algo de amarelo",
+      "Ficar com fome"
+     ],
+     "answer": "Ficar com medo e desistir",
+     "accept": [],
+     "hint": "Pense em por que a menina recebeu esse nome.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17sw6gmwepgif",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Por que você acha que o autor trocou a cor do chapéu de vermelho para amarelo?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que a cor amarela representa nesta história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uamt3z1wuhhhx",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Como a brincadeira de trocar as sílabas das palavras ajuda alguém a ter menos medo? Explique com suas palavras.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que acontece com o lobo quando ele vira bolo.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_ort": {
+   "topic": "Acentuação: paroxítonas terminadas em -i(s), -l, -r, -ão(s)",
+   "questions": [
+    {
+     "id": "rdr41uzw10l2x",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "O que é uma palavra paroxítona?",
+     "options": [
+      "Palavra cuja sílaba mais forte é a penúltima",
+      "Palavra cuja sílaba mais forte é a última",
+      "Palavra cuja sílaba mais forte é a antepenúltima",
+      "Palavra com só uma sílaba"
+     ],
+     "answer": "Palavra cuja sílaba mais forte é a penúltima",
+     "accept": [],
+     "hint": "Paro- lembra 'perto' do fim.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4rjg5ul93g8d",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a sílaba tônica de 'lápis'?",
+     "options": [
+      "lá",
+      "pis",
+      "as duas",
+      "nenhuma"
+     ],
+     "answer": "lá",
+     "accept": [],
+     "hint": "Fale a palavra em voz alta e perceba qual parte soa mais forte.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdud1rh5maizp",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual destas palavras é paroxítona?",
+     "options": [
+      "fácil",
+      "café",
+      "sofá",
+      "jacaré"
+     ],
+     "answer": "fácil",
+     "accept": [],
+     "hint": "Três delas têm a última sílaba mais forte.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18zoi3u1qrt6of",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está escrita corretamente?",
+     "options": [
+      "amável",
+      "amavel",
+      "âmavel",
+      "amáveĺ"
+     ],
+     "answer": "amável",
+     "accept": [],
+     "hint": "A sílaba forte é a do meio.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqimtnahlnmq",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Escreva a palavra com o acento correto: dificil",
+     "options": [],
+     "answer": "difícil",
+     "accept": [
+      "Difícil"
+     ],
+     "hint": "A sílaba tônica é a penúltima: fi.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpumys11bt1lxl",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Escreva a palavra com o acento correto: taxi",
+     "options": [],
+     "answer": "táxi",
+     "accept": [
+      "Táxi"
+     ],
+     "hint": "A sílaba forte é a primeira.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4d706q1hkqs8p",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Escreva a palavra com os acentos corretos: orfao",
+     "options": [],
+     "answer": "órfão",
+     "accept": [
+      "Órfão"
+     ],
+     "hint": "Ela tem acento agudo e também til.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y269cktq2941",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Por que 'lápis' tem acento e 'casa' não tem?",
+     "options": [
+      "Porque 'lápis' é paroxítona terminada em -is",
+      "Porque 'lápis' é uma palavra maior",
+      "Porque 'casa' é oxítona",
+      "Porque 'casa' termina em -s"
+     ],
+     "answer": "Porque 'lápis' é paroxítona terminada em -is",
+     "accept": [],
+     "hint": "As duas são paroxítonas; olhe o final de cada uma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e1u3kedgkawt",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual destas paroxítonas NÃO leva acento?",
+     "options": [
+      "mesa",
+      "útil",
+      "júri",
+      "caráter"
+     ],
+     "answer": "mesa",
+     "accept": [],
+     "hint": "Paroxítonas terminadas em -a não são acentuadas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbl06w41cp8ec7",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Por que 'abacaxi' não tem acento, mas 'táxi' tem?",
+     "options": [
+      "Porque 'abacaxi' é oxítona e 'táxi' é paroxítona",
+      "Porque 'abacaxi' é uma fruta",
+      "Porque 'táxi' é uma palavra estrangeira",
+      "Porque 'abacaxi' tem mais letras"
+     ],
+     "answer": "Porque 'abacaxi' é oxítona e 'táxi' é paroxítona",
+     "accept": [],
+     "hint": "Descubra a sílaba mais forte de cada uma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ln10qq56cinw",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a terminação que faz 'caráter' receber acento?",
+     "options": [
+      "-r",
+      "-er",
+      "-a",
+      "-te"
+     ],
+     "answer": "-r",
+     "accept": [],
+     "hint": "Olhe a última letra da palavra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl3kryi1l42u53",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Complete corretamente: 'O ___ escolheu o melhor desenho do concurso.'",
+     "options": [
+      "júri",
+      "juri",
+      "jurí",
+      "júrí"
+     ],
+     "answer": "júri",
+     "accept": [],
+     "hint": "Ela é paroxítona terminada em -i.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rumxnih1d7jui5",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual frase está com todas as palavras acentuadas corretamente?",
+     "options": [
+      "O exercício foi fácil e útil.",
+      "O exercicio foi facil e util.",
+      "O exercício foi facil e útil.",
+      "O exercicio foi fácil e util."
+     ],
+     "answer": "O exercício foi fácil e útil.",
+     "accept": [],
+     "hint": "Confira cada palavra separadamente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10hibjn18rmfoj",
+     "subject": "pt_ort",
+     "type": "open",
+     "q": "Explique, com suas palavras, a regra que faz 'fácil', 'táxi' e 'órfão' receberem acento.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na posição da sílaba tônica e na terminação das palavras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b254bd1ycybq0",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado.",
+     "options": [],
+     "answer": "lapis → lápis; facil → fácil; dificil → difícil; taxi → táxi; amavel → amável",
+     "accept": [],
+     "hint": "Procure as paroxítonas terminadas em -is, -l e -i.",
+     "text": "Na aula de hoje, a professora pediu um lapis para cada aluno. A tarefa parecia facil, mas o exercício era dificil para alguns. Depois, pegamos um taxi até o museu. O guia foi muito amavel e explicou tudo com calma.",
+     "errors": [
+      {
+       "wrong": "lapis",
+       "right": "lápis"
+      },
+      {
+       "wrong": "facil",
+       "right": "fácil"
+      },
+      {
+       "wrong": "dificil",
+       "right": "difícil"
+      },
+      {
+       "wrong": "taxi",
+       "right": "táxi"
+      },
+      {
+       "wrong": "amavel",
+       "right": "amável"
+      }
+     ]
+    },
+    {
+     "id": "r14ze0nlyctint",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado neste texto sobre o menino.",
+     "options": [],
+     "answer": "orfao → órfão; carater → caráter; util → útil; juri → júri; bencao → bênção",
+     "accept": [],
+     "hint": "Procure as paroxítonas terminadas em -ão, -r, -l e -i.",
+     "text": "O menino orfao morava com a avó numa casa simples. Ele tinha um carater muito bom e sempre ajudava os vizinhos. Um dia, encontrou uma ferramenta util no quintal e a devolveu ao dono. O juri do concurso do bairro deu a ele um prêmio, e a avó pediu uma bencao especial para o neto.",
+     "errors": [
+      {
+       "wrong": "orfao",
+       "right": "órfão"
+      },
+      {
+       "wrong": "carater",
+       "right": "caráter"
+      },
+      {
+       "wrong": "util",
+       "right": "útil"
+      },
+      {
+       "wrong": "juri",
+       "right": "júri"
+      },
+      {
+       "wrong": "bencao",
+       "right": "bênção"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "books": []
+}
