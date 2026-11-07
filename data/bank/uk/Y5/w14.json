@@ -2389,5 +2389,908 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "Histórias ao Contrário",
+   "premise": "Numa semana de tempestade, Vovó Zélia reconta contos de fadas tradicionais “ao contrário” para a neta Nina, que tem medo de trovão; comparando as versões, Nina descobre que o medo pode ser um aviso e aprende a recontar histórias do seu jeito.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O lobo que tinha medo de trovão",
+     "synopsis": "Durante uma semana de tempestade, Vovó Zélia promete contar histórias “ao contrário” e reconta Chapeuzinho Vermelho com um lobo medroso.",
+     "text": "Na semana em que a chuva não parou, a Vovó Zélia veio dormir na casa de Nina. Ela chegou com uma mala pequena, um guarda-chuva verde e uma promessa:\n— Enquanto durar a tempestade, vou contar uma história por noite. Mas aviso: as minhas histórias são contadas ao contrário.\nNina, que tinha dez anos e um medo enorme de trovão, puxou o cobertor até o nariz.\n— Ao contrário como, vó?\n— Você vai ver. Hoje é Chapeuzinho Vermelho.\nNina conhecia essa de cor: a menina de capa vermelha atravessa a floresta, o lobo engana todo mundo, devora a avó e, no fim, o caçador salva as duas. Era uma história que dava um friozinho na barriga.\nMas a Vovó Zélia começou diferente. Na versão dela, era noite de tempestade na floresta. Um raio caiu perto de uma árvore e o lobo, que todos achavam tão valente, saiu correndo e se escondeu embaixo da cama da vovozinha. Quando Chapeuzinho chegou com a cesta de bolinhos, ouviu um barulho estranho e perguntou:\n— Vovozinha, que barulho é esse?\n— São os meus dentes batendo de medo! — respondeu uma voz tremida debaixo da cama.\nChapeuzinho espiou e encontrou o lobo encolhido, com as orelhas tampadas. Em vez de gritar, ela fez o que a mãe fazia quando ela tinha medo: sentou ao lado dele e contou os segundos entre o clarão e o trovão.\n— Um, dois, três, quatro... Viu? A tempestade está indo embora.\nQuando a chuva passou, o lobo agradeceu, comeu três bolinhos e foi para casa sem incomodar ninguém.\nNina riu tanto que esqueceu de tampar os ouvidos no trovão seguinte.\n— Vó, você mudou tudo! No conto de verdade o lobo é o perigo, e no seu ele é o medroso.\n— Toda história pode ser recontada — disse a avó, apagando o abajur. — Amanhã tem mais.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem veio dormir na casa de Nina durante a semana de chuva?",
+       "options": [],
+       "answer": "Vovó Zélia",
+       "accept": [
+        "a Vovó Zélia",
+        "Zélia",
+        "a avó",
+        "avó",
+        "a avó Zélia"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que Nina tinha um medo enorme?",
+       "options": [
+        "De trovão",
+        "De cachorro",
+        "De altura",
+        "De aranha"
+       ],
+       "answer": "De trovão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual conto de fadas a avó escolheu para a primeira noite?",
+       "options": [],
+       "answer": "Chapeuzinho Vermelho",
+       "accept": [
+        "Chapeuzinho"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o lobo se escondeu durante a tempestade?",
+       "options": [
+        "Embaixo da cama da vovozinha",
+        "Dentro do armário",
+        "Atrás de uma árvore",
+        "No telhado"
+       ],
+       "answer": "Embaixo da cama da vovozinha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Chapeuzinho fez para acalmar o lobo?",
+       "options": [
+        "Contou os segundos entre o clarão e o trovão",
+        "Cantou uma música",
+        "Chamou o caçador",
+        "Deu um cobertor a ele"
+       ],
+       "answer": "Contou os segundos entre o clarão e o trovão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a principal diferença entre o conto tradicional e a versão da avó?",
+       "options": [
+        "No tradicional o lobo é o perigo; na versão da avó, ele é o medroso",
+        "Na versão da avó, Chapeuzinho não leva cesta",
+        "No tradicional não existe floresta",
+        "Na versão da avó, o caçador é o vilão"
+       ],
+       "answer": "No tradicional o lobo é o perigo; na versão da avó, ele é o medroso",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Nina esqueceu de tampar os ouvidos no trovão seguinte?",
+       "options": [
+        "Porque estava rindo, distraída com a história",
+        "Porque já estava dormindo",
+        "Porque o trovão foi muito fraco",
+        "Porque a avó tampou os ouvidos dela"
+       ],
+       "answer": "Porque estava rindo, distraída com a história",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a avó escolheu contar uma história em que o lobo tem medo de trovão?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no medo que a própria Nina sentia naquela noite.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O porquinho que planejava com medo",
+     "synopsis": "Vovó Zélia reconta Os Três Porquinhos: o caçula admite que tem medo e, por isso, se prepara melhor que os irmãos.",
+     "text": "Na segunda noite, faltou luz por alguns minutos e Nina correu para a cama da avó.\n— Hoje quero uma história sem lobo — pediu.\n— Impossível — respondeu Vovó Zélia, sorrindo. — Hoje é a dos Três Porquinhos. Mas o lobo quase não aparece.\nNina se lembrava da versão tradicional: um porquinho faz a casa de palha, outro de madeira e o terceiro, de tijolos. O lobo sopra e derruba as duas primeiras casas, mas não consegue derrubar a terceira.\nNa versão da avó, os três irmãos eram muito diferentes. Pedrinho dizia que não tinha medo de nada e construiu a casa de palha em uma tarde, cantando. Juca fingia que não tinha medo e fez a casa de madeira sem olhar para a floresta. Já o caçula, Fifo, admitia: tinha muito medo do lobo.\nPor isso, Fifo pensava em tudo. Fez a casa de tijolos, colocou uma janela larga para ver quem chegava, uma tranca forte na porta e uma panela de sopa sempre quente, caso os irmãos precisassem de abrigo. Os outros riam dele:\n— Tanto trabalho por causa de um medo!\nNuma noite de vento, porém, as casas de palha e de madeira não aguentaram e voaram longe. Nem foi o lobo: foi a ventania. Pedrinho e Juca correram, molhados, para a casa de Fifo, que abriu a porta e serviu sopa.\n— O seu medo salvou a gente — disse Juca, envergonhado.\n— Não foi o medo sozinho — respondeu Fifo. — Foi o que eu fiz com ele.\nNina ficou pensativa.\n— Então o medo pode ser útil, vó?\n— Às vezes ele é um aviso. O importante é ouvir o aviso sem deixar que ele mande em tudo.\nQuando a luz voltou, Nina percebeu que nem tinha reparado no escuro.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que material Fifo construiu a casa?",
+       "options": [],
+       "answer": "tijolos",
+       "accept": [
+        "de tijolos",
+        "tijolo",
+        "tijolos."
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual dos irmãos dizia que não tinha medo de nada?",
+       "options": [],
+       "answer": "Pedrinho",
+       "accept": [
+        "o Pedrinho"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que derrubou as casas de palha e de madeira na versão da avó?",
+       "options": [
+        "A ventania",
+        "O lobo",
+        "Uma enchente",
+        "Os próprios irmãos"
+       ],
+       "answer": "A ventania",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual destas coisas Fifo NÃO colocou na casa?",
+       "options": [
+        "Uma chaminé secreta",
+        "Uma janela larga",
+        "Uma tranca forte",
+        "Uma panela de sopa quente"
+       ],
+       "answer": "Uma chaminé secreta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que acontece igual no conto tradicional e na versão da avó?",
+       "options": [
+        "A casa de tijolos é a única que resiste",
+        "O lobo derruba as três casas",
+        "Os porquinhos fogem para outra cidade",
+        "O lobo vira amigo dos porquinhos"
+       ],
+       "answer": "A casa de tijolos é a única que resiste",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Fifo quis dizer com “Foi o que eu fiz com ele”?",
+       "options": [
+        "Que o medo ajudou porque ele se preparou",
+        "Que ele nunca sentiu medo",
+        "Que os irmãos foram corajosos",
+        "Que o lobo desistiu sozinho"
+       ],
+       "answer": "Que o medo ajudou porque ele se preparou",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Nina nem tinha reparado no escuro?",
+       "options": [
+        "Porque estava concentrada na história",
+        "Porque já tinha dormido",
+        "Porque acendeu uma vela",
+        "Porque a luz voltou na mesma hora"
+       ],
+       "answer": "Porque estava concentrada na história",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a avó trocou o lobo pela ventania nesta versão?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que a avó queria ensinar sobre o medo e a preparação.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: As pedrinhas que brilhavam",
+     "synopsis": "A avó reconta João e Maria sem bruxa e sem forno assustador, e Nina descobre que pode discordar das mudanças.",
+     "text": "Na terceira noite, a chuva batia forte na janela, e Nina perguntou se a avó já tinha sentido medo de verdade.\n— Muitas vezes. Quando eu era pequena, tinha medo da floresta atrás do sítio. Por isso, hoje vou contar João e Maria.\nNo conto tradicional, dois irmãos são deixados na floresta, encontram uma casa de doces e são presos por uma bruxa. Maria engana a bruxa, empurra-a para dentro do forno, e os dois fogem com um tesouro.\n— Essa parte do forno sempre me assustou — confessou Nina.\n— Por isso eu mudei — disse a avó.\nNa versão dela, João e Maria se perdiam porque tinham seguido uma borboleta azul longe demais. Quando escureceu, Maria tremia. João não tinha migalhas de pão, mas tinha pedrinhas brancas no bolso, que ele gostava de colecionar e tinha deixado cair pelo caminho. A lua saiu de trás das nuvens e as pedrinhas começaram a brilhar como pequenas estrelas no chão.\nNo meio da trilha, encontraram uma casinha feita de biscoito. Lá dentro morava uma senhora de cabelos brancos, meio mal-humorada. Ela não era bruxa: estava sozinha havia tanto tempo que tinha esquecido como conversar com visitas.\n— Vocês vão comer a minha parede? — resmungou.\nMaria, ainda com medo, respirou fundo e ofereceu ajuda para consertar a parede mordida. Os três passaram a noite fazendo biscoitos novos. De manhã, a senhora acompanhou os irmãos pela trilha de pedrinhas até a casa deles.\n— E o forno? — perguntou Nina.\n— No meu conto, ele só serve para assar biscoito.\nNina achou a mudança boa, mas sentiu falta de uma coisa.\n— Vó, sem bruxa a história fica menos emocionante.\n— Pode ser — admitiu Vovó Zélia. — Quem reconta escolhe o que tirar e o que deixar. E quem ouve pode discordar.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que lugar a avó tinha medo quando era pequena?",
+       "options": [
+        "Da floresta atrás do sítio",
+        "Do porão da casa",
+        "Do mar",
+        "Da escola"
+       ],
+       "answer": "Da floresta atrás do sítio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que animal os irmãos seguiram até se perderem?",
+       "options": [],
+       "answer": "borboleta",
+       "accept": [
+        "uma borboleta",
+        "borboleta azul",
+        "uma borboleta azul"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que João tinha no bolso?",
+       "options": [
+        "Pedrinhas brancas",
+        "Migalhas de pão",
+        "Uma lanterna",
+        "Biscoitos"
+       ],
+       "answer": "Pedrinhas brancas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que era feita a casinha da senhora?",
+       "options": [
+        "De biscoito",
+        "De chocolate",
+        "De pedra",
+        "De palha"
+       ],
+       "answer": "De biscoito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual parte do conto tradicional sempre assustou Nina?",
+       "options": [
+        "A parte do forno",
+        "A parte da casa de doces",
+        "A parte das pedrinhas",
+        "A volta para casa"
+       ],
+       "answer": "A parte do forno",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a senhora da casinha é diferente da bruxa do conto tradicional?",
+       "options": [
+        "Ela é só uma senhora solitária, não uma vilã",
+        "Ela é ainda mais malvada",
+        "Ela é uma fada mágica",
+        "Ela prende apenas o João"
+       ],
+       "answer": "Ela é só uma senhora solitária, não uma vilã",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nina achou da mudança feita pela avó?",
+       "options": [
+        "Achou boa, mas a história ficou menos emocionante",
+        "Detestou tudo",
+        "Achou mais assustadora",
+        "Não percebeu nenhuma mudança"
+       ],
+       "answer": "Achou boa, mas a história ficou menos emocionante",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a avó tirou a bruxa da história? Você concorda com essa mudança?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre do que a avó sentia pela floresta e do que Nina disse no final.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A vez de Nina",
+     "synopsis": "Com a avó rouca, Nina reconta Cachinhos Dourados do ponto de vista do Ursinho e mostra que o medo depende de onde se está.",
+     "text": "Na quarta noite, Vovó Zélia estava com a voz rouca de tanto contar histórias.\n— Hoje quem conta é você — disse, entregando a Nina uma lanterna.\nNina ficou nervosa. Contar uma história em voz alta dava quase tanto medo quanto trovão. Mas lembrou do porquinho Fifo e pensou: “Vou usar o medo para me preparar.” Pediu cinco minutos, rabiscou um plano no caderno e começou.\n— A minha é Cachinhos Dourados. Só que contada pelos ursos.\nNo conto tradicional, uma menina entra na casa de três ursos enquanto eles passeiam. Ela prova os mingaus, senta nas cadeiras e quebra a menor, deita nas camas e adormece na cama do ursinho. Quando os ursos voltam, ela acorda assustada e foge pela janela.\nNa versão de Nina, quem narrava era o Ursinho.\n— Voltamos do passeio e a porta estava aberta. Meu mingau tinha sumido e minha cadeira estava em pedaços. Papai Urso, que é enorme, começou a tremer. Mamãe Ursa pegou uma vassoura. E, no meu quarto, havia uma criatura estranha, de cabelo amarelo, roncando na minha cama!\nA avó riu alto.\n— Para os ursos, a menina era o monstro! — continuou Nina. — Quando ela acordou e gritou, os três gritaram junto, e ninguém sabia quem estava com mais medo.\nNo final da versão de Nina, a menina não fugia. Pedia desculpas, ajudava a consertar a cadeira e, no dia seguinte, levava mingau para os ursos.\n— Mudei quem conta a história — explicou Nina. — Assim dá para ver que o medo depende de onde você está.\nVovó Zélia bateu palmas.\n— Isso que você fez tem nome: mudar o ponto de vista. Muitos escritores fazem isso.\nNina dormiu orgulhosa, com a lanterna ainda acesa debaixo do travesseiro.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a avó pediu para Nina contar a história?",
+       "options": [
+        "Porque estava com a voz rouca",
+        "Porque estava com sono",
+        "Porque tinha esquecido as histórias",
+        "Porque queria ver televisão"
+       ],
+       "answer": "Porque estava com a voz rouca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual conto Nina escolheu recontar?",
+       "options": [],
+       "answer": "Cachinhos Dourados",
+       "accept": [
+        "Cachinhos Dourados e os Três Ursos"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem narra a versão de Nina?",
+       "options": [],
+       "answer": "o Ursinho",
+       "accept": [
+        "Ursinho",
+        "o ursinho",
+        "o filhote de urso"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Mamãe Ursa pegou ao chegar em casa?",
+       "options": [
+        "Uma vassoura",
+        "Uma panela",
+        "Uma lanterna",
+        "Um cobertor"
+       ],
+       "answer": "Uma vassoura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nina fez antes de começar, lembrando do porquinho Fifo?",
+       "options": [
+        "Rabiscou um plano no caderno",
+        "Tomou um copo de água",
+        "Apagou todas as luzes",
+        "Pediu para a avó começar"
+       ],
+       "answer": "Rabiscou um plano no caderno",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como termina a versão de Nina?",
+       "options": [
+        "A menina pede desculpas e ajuda a consertar a cadeira",
+        "A menina foge pela janela",
+        "Os ursos expulsam a menina",
+        "A menina passa a morar com os ursos"
+       ],
+       "answer": "A menina pede desculpas e ajuda a consertar a cadeira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nina quis mostrar ao mudar quem conta a história?",
+       "options": [
+        "Que o medo depende de onde você está",
+        "Que os ursos são perigosos",
+        "Que mingau é gostoso",
+        "Que meninas nunca sentem medo"
+       ],
+       "answer": "Que o medo depende de onde você está",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que, para os ursos, a menina parecia um monstro?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Imagine chegar em casa e encontrar tudo bagunçado por alguém desconhecido.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O patinho que não virou cisne",
+     "synopsis": "Depois de um dia difícil na escola, Nina ouve uma versão de O Patinho Feio em que o patinho é aceito sem precisar mudar.",
+     "text": "Na quinta noite, Nina chegou da escola quieta. Na hora do recreio, uma colega tinha rido do seu tênis remendado, e ela ficou com medo de que todos rissem também.\nA avó percebeu e escolheu a história certa: O Patinho Feio.\nNo conto tradicional, um filhote nasce diferente dos irmãos. Todos zombam dele, e ele passa um inverno inteiro sozinho e triste. Na primavera, descobre que virou um lindo cisne e, finalmente, é aceito.\n— Sempre gostei do final — disse Nina.\n— Eu também. Mas uma coisa me incomodava: o patinho só foi aceito quando ficou bonito. Então, no meu conto, ele não vira cisne.\nNa versão da avó, o patinho cinzento tinha medo de ser diferente. Tentava nadar igual aos irmãos e grasnar igual a eles, mas nada dava certo. Um dia, uma raposa apareceu na beira do lago. Os outros patos ficaram paralisados de susto. O patinho cinzento, que tinha pés grandes e desajeitados, era o que nadava mais rápido. Ele espalhou água, fez barulho e levou todos para o meio do lago, onde a raposa não alcançava.\nDepois disso, ninguém mais riu dos pés dele. E ele continuou cinzento, desajeitado e diferente, só que sem vergonha nenhuma.\n— Gostei — disse Nina. — No seu final, ele não precisa mudar para ser aceito.\n— Exatamente. O medo de ser diferente às vezes é maior do que a própria diferença.\nNina olhou para o tênis remendado no canto do quarto. No dia seguinte, desenhou estrelas com caneta no remendo. Na escola, três colegas perguntaram onde ela tinha comprado “um tênis tão legal”.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Nina chegou quieta da escola?",
+       "options": [
+        "Uma colega riu do seu tênis remendado",
+        "Tirou nota baixa",
+        "Perdeu a mochila",
+        "Brigou com a professora"
+       ],
+       "answer": "Uma colega riu do seu tênis remendado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual conto a avó escolheu nesta noite?",
+       "options": [],
+       "answer": "O Patinho Feio",
+       "accept": [
+        "Patinho Feio",
+        "o patinho feio"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como termina o conto tradicional do patinho?",
+       "options": [
+        "Ele descobre que virou um cisne",
+        "Ele vira um pato comum",
+        "Ele vai embora para sempre",
+        "Ele é adotado por galinhas"
+       ],
+       "answer": "Ele descobre que virou um cisne",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que animal ameaçou os patos na versão da avó?",
+       "options": [
+        "Uma raposa",
+        "Um lobo",
+        "Um gavião",
+        "Um gato"
+       ],
+       "answer": "Uma raposa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como o patinho cinzento salvou os outros?",
+       "options": [
+        "Nadou rápido e levou todos para o meio do lago",
+        "Lutou com a raposa",
+        "Chamou o fazendeiro",
+        "Escondeu todos no ninho"
+       ],
+       "answer": "Nadou rápido e levou todos para o meio do lago",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que incomodava a avó no final tradicional?",
+       "options": [
+        "O patinho só é aceito quando fica bonito",
+        "O inverno é longo demais",
+        "Os irmãos não aparecem",
+        "O cisne é malvado"
+       ],
+       "answer": "O patinho só é aceito quando fica bonito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nina fez com o tênis remendado?",
+       "options": [
+        "Desenhou estrelas no remendo",
+        "Jogou o tênis fora",
+        "Escondeu no armário",
+        "Pediu um tênis novo"
+       ],
+       "answer": "Desenhou estrelas no remendo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que os colegas passaram a achar o tênis de Nina legal?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em como Nina mudou o jeito de olhar para a diferença.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: A noite sem luz",
+     "synopsis": "Num apagão, Vovó Zélia inventa um conto sobre a própria Noite, e Nina enfrenta o escuro.",
+     "text": "Na sexta noite, o maior trovão da semana fez a casa inteira estremecer, e a luz apagou. Dessa vez, ela não voltou em poucos minutos.\nNina sentiu o coração disparar. O escuro, o barulho da chuva, as sombras na parede: tudo parecia maior.\n— Vó? — chamou baixinho.\n— Estou aqui. — A mão da avó encontrou a dela. — Que tal uma história no escuro?\n— Sem lanterna?\n— Sem lanterna. Hoje a história vai ser sobre o próprio escuro.\nVovó Zélia contou de um reino onde a Noite era uma moça tímida. Todos fugiam dela, acendiam fogueiras e trancavam as portas quando ela chegava. A Noite ficava triste, porque só queria trazer descanso. Um dia, um menino do reino, que tinha medo dela como todo mundo, resolveu ficar acordado para conhecê-la. Descobriu que a Noite trazia os grilos cantando, o perfume das flores que só abrem no escuro e um céu cheio de estrelas que de dia ninguém via.\n— Esse conto não é de nenhum livro, vó — percebeu Nina.\n— Não. Esse eu inventei agora, com pedacinhos de outros. Toda história nova é feita de histórias velhas.\nEnquanto a avó falava, os olhos de Nina foram se acostumando. Ela começou a ver o contorno do armário, da cortina, da avó sorrindo. A sombra que parecia um monstro era só a cadeira com a roupa pendurada.\n— O escuro é só a noite sem luz — disse Nina, testando a frase.\n— E o medo é só um visitante — completou a avó. — Ele pode entrar, mas não precisa ficar morando aqui.\nQuando a energia voltou, já de madrugada, Nina dormia tranquila, sem lanterna e sem cobertor no nariz.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu com a luz na sexta noite?",
+       "options": [
+        "Apagou e demorou muito para voltar",
+        "Piscou só uma vez",
+        "Ficou mais forte",
+        "Não apagou"
+       ],
+       "answer": "Apagou e demorou muito para voltar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a Noite é descrita no conto da avó?",
+       "options": [
+        "Uma moça tímida",
+        "Uma bruxa malvada",
+        "Um gigante",
+        "Um dragão"
+       ],
+       "answer": "Uma moça tímida",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o menino descobriu ao ficar acordado?",
+       "options": [
+        "Grilos, perfume de flores e um céu cheio de estrelas",
+        "Um tesouro escondido",
+        "Que a Noite era perigosa",
+        "Um monstro na floresta"
+       ],
+       "answer": "Grilos, perfume de flores e um céu cheio de estrelas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que era a sombra que parecia um monstro?",
+       "options": [
+        "Uma cadeira com roupa pendurada",
+        "Um gato",
+        "O armário aberto",
+        "A cortina rasgada"
+       ],
+       "answer": "Uma cadeira com roupa pendurada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o conto da Noite “não é de nenhum livro”?",
+       "options": [
+        "Porque a avó o inventou na hora",
+        "Porque era um conto muito antigo",
+        "Porque Nina o leu na escola",
+        "Porque o livro tinha se perdido"
+       ],
+       "answer": "Porque a avó o inventou na hora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que ajudou Nina a enxergar no escuro?",
+       "options": [
+        "Os olhos dela foram se acostumando",
+        "Uma vela acesa",
+        "A lanterna",
+        "Os relâmpagos"
+       ],
+       "answer": "Os olhos dela foram se acostumando",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a avó quis dizer com “o medo é só um visitante”?",
+       "options": [
+        "Que o medo pode aparecer, mas depois vai embora",
+        "Que o medo é uma pessoa de verdade",
+        "Que é preciso trancar a porta à noite",
+        "Que o medo nunca vai embora"
+       ],
+       "answer": "Que o medo pode aparecer, mas depois vai embora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a avó preferiu contar a história sem lanterna?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que aconteceu com os olhos e com o medo de Nina enquanto ouvia.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O caderno das histórias ao contrário",
+     "synopsis": "A avó vai embora, e Nina usa tudo o que aprendeu para acalmar o irmão menor com uma história recontada por ela.",
+     "text": "No sétimo dia, o sol finalmente apareceu, e Vovó Zélia arrumou a mala pequena e o guarda-chuva verde. Nina ficou triste.\n— Quem vai contar histórias agora?\n— Você, ora.\nÀ noite, o céu fechou de novo, só um pouquinho, e veio um trovão distante. Do quarto ao lado, ouviu-se um choro. Era Téo, o irmão de quatro anos de Nina, escondido debaixo do lençol.\nNina sentou na cama dele. Antes, ela também teria chorado. Agora, sabia o que fazer.\n— Quer ouvir uma história ao contrário, Téo?\nEle espiou, desconfiado.\nNina misturou tudo o que tinha ouvido na semana. Contou de um lobo que tinha medo de trovão e foi pedir abrigo na casa de tijolos de um porquinho cuidadoso. Lá também chegaram um patinho de pés grandes e uma menina que tinha pedido desculpas aos ursos. Todos contaram os segundos entre o clarão e o trovão: um, dois, três, quatro, cinco... A tempestade foi ficando longe, e eles comeram biscoitos assados num forno que só servia para isso.\nTéo riu na parte do lobo tremendo. No terceiro trovão, ele mesmo contou os segundos, em voz alta.\nQuando ele dormiu, Nina pegou um caderno novo e escreveu na capa: “Histórias ao Contrário”. Na primeira página, anotou o que tinha aprendido:\n“1. Toda história pode ser recontada.\n2. Quem reconta escolhe o que mudar, e quem ouve pode discordar.\n3. O medo é um aviso, não um chefe.”\nNo dia seguinte, mandou uma foto da página para a avó. A resposta chegou em minutos:\n“Agora a contadora de histórias da família é você. Com amor, Vó Zélia.”",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Vovó Zélia fez quando o sol apareceu?",
+       "options": [
+        "Arrumou a mala para ir embora",
+        "Foi passear na praça",
+        "Plantou flores no quintal",
+        "Dormiu o dia todo"
+       ],
+       "answer": "Arrumou a mala para ir embora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do irmão de Nina?",
+       "options": [],
+       "answer": "Téo",
+       "accept": [
+        "Teo",
+        "o Téo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Téo estava chorando?",
+       "options": [
+        "Ouviu um trovão",
+        "Perdeu um brinquedo",
+        "Estava com fome",
+        "Sonhou com ursos"
+       ],
+       "answer": "Ouviu um trovão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais personagens Nina misturou na história para Téo?",
+       "options": [
+        "O lobo, o porquinho, o patinho e a menina dos ursos",
+        "Apenas o lobo",
+        "Só personagens novos",
+        "Uma princesa e um dragão"
+       ],
+       "answer": "O lobo, o porquinho, o patinho e a menina dos ursos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que título Nina escreveu na capa do caderno novo?",
+       "options": [],
+       "answer": "Histórias ao Contrário",
+       "accept": [
+        "Historias ao Contrario",
+        "Histórias ao contrário"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que Téo começou a perder o medo?",
+       "options": [
+        "Ele mesmo contou os segundos em voz alta",
+        "Ele foi dormir com a avó",
+        "Ele saiu correndo do quarto",
+        "Ele acendeu todas as luzes"
+       ],
+       "answer": "Ele mesmo contou os segundos em voz alta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase “O medo é um aviso, não um chefe” significa?",
+       "options": [
+        "Devemos ouvir o medo, mas não deixar que ele mande em nós",
+        "Devemos obedecer sempre ao medo",
+        "O medo não serve para nada",
+        "Só os chefes sentem medo"
+       ],
+       "answer": "Devemos ouvir o medo, mas não deixar que ele mande em nós",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a avó disse que agora Nina é a contadora de histórias da família?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre do que Nina fez com o irmão naquela noite.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
