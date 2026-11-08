@@ -1331,7 +1331,1847 @@
      "errors": []
     }
    ]
+  },
+  "math": {
+   "topic": "Two-step addition and subtraction problems",
+   "questions": [
+    {
+     "id": "r1oup85pegk4we",
+     "subject": "math",
+     "type": "num",
+     "q": "Sam has 12 marbles. He gets 5 more. How many marbles does Sam have now?",
+     "options": [],
+     "answer": "17",
+     "accept": [],
+     "hint": "Add the marbles he gets to the ones he had.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g8osj1c4wz6e",
+     "subject": "math",
+     "type": "num",
+     "q": "There are 20 birds on a fence. 8 fly away. How many birds are left?",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "Flying away means taking away.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ync3qgqkd5w7",
+     "subject": "math",
+     "type": "mc",
+     "q": "Mia has 15 stickers and gives 6 to her friend. Which number sentence matches the problem?",
+     "options": [
+      "15 + 6 = ?",
+      "15 − 6 = ?",
+      "6 − 15 = ?"
+     ],
+     "answer": "15 − 6 = ?",
+     "accept": [],
+     "hint": "Giving away makes the number smaller.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rumltcljcnxma",
+     "subject": "math",
+     "type": "mc",
+     "q": "What does 'two-step' mean in a word problem?",
+     "options": [
+      "You need to do two calculations",
+      "You need to read it twice",
+      "The answer is always 2"
+     ],
+     "answer": "You need to do two calculations",
+     "accept": [],
+     "hint": "Think about how many sums you must do.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reakmj5qga1qw",
+     "subject": "math",
+     "type": "num",
+     "q": "Leo has 10 sweets. He buys 7 more and then eats 4. How many sweets does he have now?",
+     "options": [],
+     "answer": "13",
+     "accept": [],
+     "hint": "First add, then take away.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xkn41b185m8by",
+     "subject": "math",
+     "type": "num",
+     "q": "A bus has 25 people. At the first stop 6 get off. At the next stop 9 get on. How many people are on the bus now?",
+     "options": [],
+     "answer": "28",
+     "accept": [],
+     "hint": "Do one stop at a time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rza9syf16twro6",
+     "subject": "math",
+     "type": "num",
+     "q": "Ana had 40p. She spent 15p on a pencil and 10p on a rubber. How much money does she have left in pence?",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Take away both amounts she spent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vzftld1lyhdwa",
+     "subject": "math",
+     "type": "mc",
+     "q": "In a bar model, the whole bar is 30. One part is 18. How do you find the other part?",
+     "options": [
+      "30 + 18",
+      "30 − 18",
+      "18 − 30"
+     ],
+     "answer": "30 − 18",
+     "accept": [],
+     "hint": "The whole is split into two parts.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl4ieon1wshwrx",
+     "subject": "math",
+     "type": "num",
+     "q": "In a bar model, the whole is 30 and one part is 18. What is the missing part?",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "Whole take away the part you know.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru82n6s1mpbbbh",
+     "subject": "math",
+     "type": "num",
+     "q": "A bar model has two parts: 14 and 23. What is the whole?",
+     "options": [],
+     "answer": "37",
+     "accept": [],
+     "hint": "Put the two parts together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hlsc071bthv31",
+     "subject": "math",
+     "type": "num",
+     "q": "There are 34 children in the hall. 12 go out to play, then 5 come back in. How many children are in the hall now?",
+     "options": [],
+     "answer": "27",
+     "accept": [],
+     "hint": "Take away first, then add.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8yaxwpv69o4z",
+     "subject": "math",
+     "type": "num",
+     "q": "Zara reads 16 pages on Monday and 21 pages on Tuesday. Her book has 50 pages. How many pages does she still have to read?",
+     "options": [],
+     "answer": "13",
+     "accept": [],
+     "hint": "Find how many she has read, then take that from 50.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iqoke6rvbsp6",
+     "subject": "math",
+     "type": "num",
+     "q": "A ribbon is 60 cm long. Tom cuts off 25 cm and then 15 cm. How long is the ribbon now, in cm?",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Take away both pieces.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pyrm3o1pu3wyz",
+     "subject": "math",
+     "type": "mc",
+     "q": "Kai has 18 cars. Ben has 9 more cars than Kai. How many cars do they have altogether?",
+     "options": [
+      "27",
+      "45",
+      "36"
+     ],
+     "answer": "45",
+     "accept": [],
+     "hint": "First find how many cars Ben has.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1coh10s2dyyi0",
+     "subject": "math",
+     "type": "open",
+     "q": "Write your own two-step word problem using the numbers 10, 5 and 3.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use one addition and one subtraction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qh0vab18f6evt",
+     "subject": "math",
+     "type": "open",
+     "q": "Rosa says: 'I had 20 apples, ate 2 and picked 6 more, so I have 12.' Is she right? Explain.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Work it out step by step: 20 − 2, then add 6.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Instruções: as regras de um jogo",
+   "questions": [
+    {
+     "id": "rr3x36o13hr6w2",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Para que servem as regras de um jogo?",
+     "options": [
+      "Para todos saberem como jogar",
+      "Para contar uma história",
+      "Para fazer uma lista de compras"
+     ],
+     "answer": "Para todos saberem como jogar",
+     "accept": [],
+     "hint": "Pense no que acontece se ninguém souber como jogar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbo89dx1bsd9az",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em que ordem as regras costumam aparecer?",
+     "options": [
+      "Em passos, um depois do outro",
+      "Todas misturadas",
+      "Só no final do jogo"
+     ],
+     "answer": "Em passos, um depois do outro",
+     "accept": [],
+     "hint": "Pense em como seguimos uma receita.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpyzx2s1v37vmv",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas frases parece uma regra de jogo?",
+     "options": [
+      "Jogue o dado e ande as casas.",
+      "Era uma vez um dado mágico.",
+      "O dado é muito bonito."
+     ],
+     "answer": "Jogue o dado e ande as casas.",
+     "accept": [],
+     "hint": "Uma regra diz o que fazer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r177upaokxizpv",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Que palavra mostra que vem o primeiro passo?",
+     "options": [
+      "Primeiro",
+      "Depois",
+      "Por fim"
+     ],
+     "answer": "Primeiro",
+     "accept": [],
+     "hint": "Qual palavra fala do começo?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17t98gn17dp6d8",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Que palavra mostra o último passo?",
+     "options": [
+      "Primeiro",
+      "Depois",
+      "Por fim"
+     ],
+     "answer": "Por fim",
+     "accept": [],
+     "hint": "Qual palavra fala do fim?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1knqt6rmitvg6",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Num jogo de esconde-esconde, o que vem primeiro?",
+     "options": [
+      "Uma criança conta até 20",
+      "Todos são encontrados",
+      "O jogo acaba"
+     ],
+     "answer": "Uma criança conta até 20",
+     "accept": [],
+     "hint": "O que acontece antes de procurar?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9eg4u81hucwhh",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que um jogo precisa dizer logo no começo das regras?",
+     "options": [
+      "Do que você precisa para jogar",
+      "Quem ganhou ontem",
+      "A cor preferida de cada jogador"
+     ],
+     "answer": "Do que você precisa para jogar",
+     "accept": [],
+     "hint": "Antes de começar, o que você deve separar?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rio52kb1fe1ayv",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete a regra: \"Espere a sua ___ para jogar.\"",
+     "options": [],
+     "answer": "vez",
+     "accept": [],
+     "hint": "Cada jogador joga um de cada…",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcy5dbpaslylj",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas frases é uma ordem para o jogador?",
+     "options": [
+      "Pegue uma carta.",
+      "Eu gosto de cartas.",
+      "As cartas são azuis."
+     ],
+     "answer": "Pegue uma carta.",
+     "accept": [],
+     "hint": "Procure a frase que manda fazer algo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkfknc91m4vkv4",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Leia: \"1. Fique em roda. 2. Passe a bola. 3. Quem deixar cair sai.\" O que fazer logo depois de ficar em roda?",
+     "options": [
+      "Passe a bola",
+      "Quem deixar cair sai",
+      "Ficar em roda de novo"
+     ],
+     "answer": "Passe a bola",
+     "accept": [],
+     "hint": "Olhe o número 2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1orqoqv1k9sd1g",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Leia: \"1. Fique em roda. 2. Passe a bola. 3. Quem deixar cair sai.\" Quem sai do jogo?",
+     "options": [
+      "Quem passar a bola",
+      "Quem deixar a bola cair",
+      "Quem ficar em roda"
+     ],
+     "answer": "Quem deixar a bola cair",
+     "accept": [],
+     "hint": "Olhe o passo 3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra86wg31p60s8y",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Por que os números (1, 2, 3) ajudam nas regras?",
+     "options": [
+      "Mostram a ordem dos passos",
+      "Mostram quem ganhou",
+      "Deixam o texto colorido"
+     ],
+     "answer": "Mostram a ordem dos passos",
+     "accept": [],
+     "hint": "Pense em seguir uma coisa de cada vez.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1erbrtt1ms0ctk",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual regra está mais clara?",
+     "options": [
+      "Jogue o dado uma vez.",
+      "Faça alguma coisa com o dado.",
+      "O dado é legal."
+     ],
+     "answer": "Jogue o dado uma vez.",
+     "accept": [],
+     "hint": "Qual diz exatamente o que fazer?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhav9yur1rz99",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que diz como alguém ganha o jogo?",
+     "options": [
+      "A regra de vitória",
+      "O título do jogo",
+      "A lista de materiais"
+     ],
+     "answer": "A regra de vitória",
+     "accept": [],
+     "hint": "Pense em como o jogo termina.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfbklpc1mzxl7s",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva o primeiro passo das regras de um jogo de que você gosta.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Comece com uma palavra que manda fazer, como \"Pegue\" ou \"Fique\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2n92up1so81yi",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva duas regras para um jogo de pega-pega, uma depois da outra.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use \"Primeiro\" e \"Depois\".",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Contos acumulativos: \"A Velha a Fiar\"",
+   "questions": [
+    {
+     "id": "r1ky3i6u1tkiaxn",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é um conto acumulativo?",
+     "options": [
+      "Uma história que repete e vai juntando coisas novas",
+      "Uma notícia de jornal",
+      "Uma receita de bolo"
+     ],
+     "answer": "Uma história que repete e vai juntando coisas novas",
+     "accept": [],
+     "hint": "Pense em uma história que vai crescendo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rql6s6urc8i76",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "\"A Velha a Fiar\" é uma…",
+     "options": [
+      "cantiga popular",
+      "notícia",
+      "carta"
+     ],
+     "answer": "cantiga popular",
+     "accept": [],
+     "hint": "É uma música que muita gente canta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19n1v4k11zlegs",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que quer dizer \"fiar\"?",
+     "options": [
+      "Fazer fio",
+      "Fazer comida",
+      "Fazer uma pergunta"
+     ],
+     "answer": "Fazer fio",
+     "accept": [],
+     "hint": "Pense em linha para costurar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j7eooa6cm5ma",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em um texto acumulativo, o que acontece a cada parte nova?",
+     "options": [
+      "Tudo o que veio antes é repetido",
+      "A história começa outra vez do zero",
+      "O texto fica mais curto"
+     ],
+     "answer": "Tudo o que veio antes é repetido",
+     "accept": [],
+     "hint": "A história vai crescendo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9odh8ruffmcc",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Tinha um gato. Veio um cão e assustou o gato.\" O que vem na próxima parte?",
+     "options": [
+      "Veio um boi e assustou o cão, que assustou o gato.",
+      "Fim.",
+      "O gato foi dormir."
+     ],
+     "answer": "Veio um boi e assustou o cão, que assustou o gato.",
+     "accept": [],
+     "hint": "Junte algo novo e repita o que veio antes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1koqwbav37urv",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que é fácil decorar um texto acumulativo?",
+     "options": [
+      "Porque as partes se repetem",
+      "Porque ele não tem palavras",
+      "Porque ele é sempre triste"
+     ],
+     "answer": "Porque as partes se repetem",
+     "accept": [],
+     "hint": "O que acontece muitas vezes no texto?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qlizwsp29xjd",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Ler com fluência é ler…",
+     "options": [
+      "bem rápido, sem respirar",
+      "sem pressa, sem tropeçar e com expressão",
+      "só as palavras grandes"
+     ],
+     "answer": "sem pressa, sem tropeçar e com expressão",
+     "accept": [],
+     "hint": "Pense em como um contador de histórias lê.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcvrt3qyfzc95",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que ajuda a ler um texto longo com fluência?",
+     "options": [
+      "Fazer pausas nas vírgulas e nos pontos",
+      "Pular as linhas difíceis",
+      "Ler sem olhar para o texto"
+     ],
+     "answer": "Fazer pausas nas vírgulas e nos pontos",
+     "accept": [],
+     "hint": "Os sinais de pontuação mostram onde respirar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vneqsdt0vnrl",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Leia: \"Uma mosca, uma aranha e um rato.\" Quantos bichos aparecem?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Conte cada bicho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11e2y0o18iuktd",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O rato pegou o queijo. O gato pegou o rato, que pegou o queijo.\" Quem pegou o rato?",
+     "options": [
+      "O queijo",
+      "O gato",
+      "O rato"
+     ],
+     "answer": "O gato",
+     "accept": [],
+     "hint": "Leia a segunda frase com calma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p97zr0bo7tuc",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"A chuva molhou a flor. O vento levou a chuva, que molhou a flor.\" O que é novo na segunda frase?",
+     "options": [
+      "A flor",
+      "A chuva",
+      "O vento"
+     ],
+     "answer": "O vento",
+     "accept": [],
+     "hint": "Qual palavra não estava na primeira frase?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryqm8e9zcy8z1",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em um conto acumulativo, a parte do final costuma ser…",
+     "options": [
+      "a mais curta",
+      "a mais longa",
+      "igual à primeira"
+     ],
+     "answer": "a mais longa",
+     "accept": [],
+     "hint": "Cada parte junta tudo o que veio antes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ljmelkt52q0x",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que muitas cantigas acumulativas são divertidas de cantar em grupo?",
+     "options": [
+      "Todos aprendem a parte que se repete",
+      "Não têm melodia",
+      "Cada pessoa canta uma letra diferente"
+     ],
+     "answer": "Todos aprendem a parte que se repete",
+     "accept": [],
+     "hint": "Pense no que todos já sabem de cor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11ndg7t19o2u60",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Complete a repetição: \"O pato quer pão. O sapo quer o pato, que quer ___.\"",
+     "options": [],
+     "answer": "pão",
+     "accept": [],
+     "hint": "Olhe o que o pato queria.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlwa5911rvgmc0",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Invente a próxima parte: \"Tinha uma formiga. Veio um sapo e pegou a formiga.\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Traga um bicho novo e repita o que já aconteceu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmo3wuv1k7ykya",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Você gosta de histórias que se repetem? Diga por quê.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense se elas são fáceis ou divertidas de ler.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_ort": {
+   "topic": "S e R no fim da sílaba",
+   "questions": [
+    {
+     "id": "r5l8hxqc9ngw9",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Em \"porta\", qual letra fecha a primeira sílaba?",
+     "options": [
+      "R",
+      "S",
+      "T"
+     ],
+     "answer": "R",
+     "accept": [],
+     "hint": "Separe: por-ta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mx6e5u4vnoph",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Em \"festa\", qual letra fecha a primeira sílaba?",
+     "options": [
+      "R",
+      "S",
+      "A"
+     ],
+     "answer": "S",
+     "accept": [],
+     "hint": "Separe: fes-ta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oo2h4k18tnv8i",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra tem R no fim da primeira sílaba?",
+     "options": [
+      "carta",
+      "pasta",
+      "mosca"
+     ],
+     "answer": "carta",
+     "accept": [],
+     "hint": "Leia devagar a primeira sílaba de cada uma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdu2o0mi7t69w",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra tem S no fim da primeira sílaba?",
+     "options": [
+      "verde",
+      "lesma",
+      "circo"
+     ],
+     "answer": "lesma",
+     "accept": [],
+     "hint": "Procure o S antes de outra consoante.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1on4ginhmtjo5",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: ga_fo",
+     "options": [],
+     "answer": "garfo",
+     "accept": [],
+     "hint": "É o talher com dentes. Que letra falta antes do F?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11k7wjwub5drm",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: mo_ca",
+     "options": [],
+     "answer": "mosca",
+     "accept": [],
+     "hint": "É um inseto que voa. Que letra falta antes do C?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r72jklj3ug9rh",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: ve_de",
+     "options": [],
+     "answer": "verde",
+     "accept": [],
+     "hint": "É a cor das folhas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12jrw8s176faqu",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: pa_ta",
+     "options": [],
+     "answer": "pasta",
+     "accept": [],
+     "hint": "Guardamos papéis nela.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r884vmk1lb5ft7",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Como se separa \"circo\" em sílabas?",
+     "options": [
+      "ci-rco",
+      "cir-co",
+      "c-irco"
+     ],
+     "answer": "cir-co",
+     "accept": [],
+     "hint": "O R fica com a primeira sílaba.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rif1ks1lhlqw8",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está escrita certo?",
+     "options": [
+      "árvore",
+      "ávrore",
+      "árvori"
+     ],
+     "answer": "árvore",
+     "accept": [],
+     "hint": "Separe: ár-vo-re.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11eyrau4ksps1",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Escreva a palavra: é um papel que mandamos pelo correio.",
+     "options": [],
+     "answer": "carta",
+     "accept": [],
+     "hint": "Começa com CAR.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq3w3v11qsuc2h",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Junte as sílabas e escreva a palavra: fes + ta",
+     "options": [],
+     "answer": "festa",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd0ixz61q6b2p5",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual grupo tem só palavras com R no fim de uma sílaba?",
+     "options": [
+      "porta, circo, verde",
+      "festa, porta, lesma",
+      "mosca, pasta, garfo"
+     ],
+     "answer": "porta, circo, verde",
+     "accept": [],
+     "hint": "Procure o R antes de outra consoante.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1eh9gh01g0i0q",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Quantas sílabas tem \"árvore\"?",
+     "options": [
+      "2",
+      "3",
+      "4"
+     ],
+     "answer": "3",
+     "accept": [],
+     "hint": "Bata palmas: ár-vo-re.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnd9hyf1wdst8p",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado.",
+     "options": [],
+     "answer": "fessta → festa; porrta → porta; pazta → pasta; cirso → circo; moca → mosca",
+     "accept": [],
+     "hint": "Procure o S e o R no fim das sílabas: estão faltando, sobrando ou trocados?",
+     "text": "Hoje teve fessta na escola. Abri a porrta da sala e vi uma árvore de papel bem verde. Peguei minha pazta e um lápis. Escrevi uma carta para a professora. Depois, fomos ver um cirso de brinquedo, e uma moca pousou no meu caderno.",
+     "errors": [
+      {
+       "wrong": "fessta",
+       "right": "festa"
+      },
+      {
+       "wrong": "porrta",
+       "right": "porta"
+      },
+      {
+       "wrong": "pazta",
+       "right": "pasta"
+      },
+      {
+       "wrong": "cirso",
+       "right": "circo"
+      },
+      {
+       "wrong": "moca",
+       "right": "mosca"
+      }
+     ]
+    },
+    {
+     "id": "rpduq83nh1cqc",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 4 palavras escritas errado.",
+     "options": [],
+     "answer": "ávore → árvore; lezma → lesma; gafo → garfo; pota → porta",
+     "accept": [],
+     "hint": "Leia cada palavra devagar e veja se falta o S ou o R.",
+     "text": "No jardim tem uma ávore muito alta. Embaixo dela, uma lezma verde passeia devagar. O vovô deixou o gafo da sobremesa na mesa e saiu pela pota da cozinha. A folha verde caiu bem em cima da minha carta.",
+     "errors": [
+      {
+       "wrong": "ávore",
+       "right": "árvore"
+      },
+      {
+       "wrong": "lezma",
+       "right": "lesma"
+      },
+      {
+       "wrong": "gafo",
+       "right": "garfo"
+      },
+      {
+       "wrong": "pota",
+       "right": "porta"
+      }
+     ]
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "Tita, o Avô Bento e as Histórias que Crescem",
+   "premise": "No sítio da casa amarela, a menina Tita e o Avô Bento vivem pequenas aventuras em que tudo vai se juntando e crescendo, como nas cantigas acumulativas.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O novelo que rolou",
+     "synopsis": "O novelo de lã do Avô Bento rola pela casa, e cada um que corre atrás dele chama mais alguém para ajudar.",
+     "text": "Na casa amarela do sítio moravam a menina Tita e o Avô Bento. O avô gostava de tricotar cachecóis coloridos.\nNuma manhã de vento, o novelo vermelho caiu do colo do avô e saiu rolando.\nA gata Pipoca correu atrás do novelo.\nO cachorro Bolacha correu atrás da gata, que corria atrás do novelo.\nA Tita correu atrás do cachorro, que corria atrás da gata, que corria atrás do novelo.\nO Avô Bento riu e correu atrás da Tita, que corria atrás do cachorro, que corria atrás da gata, que corria atrás do novelo.\nO novelo rolou pela varanda, desceu a escada e parou bem no meio do canteiro de couves.\nQuando todos chegaram, a lã estava enrolada nas couves, nas patas da gata e no rabo do cachorro.\n— Agora é que o cachecol vai ficar comprido! — disse o avô.\nOs dois passaram a tarde desenrolando a lã, rindo da bagunça.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o Avô Bento gostava de fazer?",
+       "options": [
+        "Tricotar cachecóis",
+        "Plantar flores",
+        "Cozinhar bolo"
+       ],
+       "answer": "Tricotar cachecóis",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor era o novelo?",
+       "options": [
+        "Azul",
+        "Vermelho",
+        "Amarelo"
+       ],
+       "answer": "Vermelho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da gata?",
+       "options": [],
+       "answer": "Pipoca",
+       "accept": [
+        "a Pipoca"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem correu atrás da gata?",
+       "options": [
+        "A Tita",
+        "O cachorro Bolacha",
+        "O Avô Bento"
+       ],
+       "answer": "O cachorro Bolacha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o novelo parou?",
+       "options": [
+        "Na cozinha",
+        "No canteiro de couves",
+        "Embaixo da cama"
+       ],
+       "answer": "No canteiro de couves",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que cada frase fica maior que a anterior?",
+       "options": [
+        "Porque repete quem já estava correndo",
+        "Porque muda de história",
+        "Porque o avô fala mais alto"
+       ],
+       "answer": "Porque repete quem já estava correndo",
+       "accept": [],
+       "hint": "Leia as frases do meio de novo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como o avô se sentiu com a bagunça?",
+       "options": [
+        "Ficou muito bravo",
+        "Achou engraçado",
+        "Ficou com medo"
+       ],
+       "answer": "Achou engraçado",
+       "accept": [],
+       "hint": "Ele riu e fez uma piada.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô disse que o cachecol ia ficar comprido?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em onde a lã foi parar.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A sopa de todo mundo",
+     "synopsis": "Tita quer fazer sopa e cada visita do sítio traz um ingrediente, até a panela ficar cheia.",
+     "text": "Era um dia frio, e a Tita quis fazer sopa. Mas na cozinha só havia água e uma panela grande.\n— Coloque a água para ferver — disse o Avô Bento.\nDona Lurdes, a vizinha, chegou com uma cenoura.\nNa panela tinha água e uma cenoura.\nSeu Zico, o carteiro, trouxe uma batata.\nNa panela tinha água, uma cenoura e uma batata.\nA pequena Bia trouxe um tomate.\nNa panela tinha água, uma cenoura, uma batata e um tomate.\nO moço da padaria trouxe um pão.\nNa panela tinha água, uma cenoura, uma batata, um tomate... e o pão ficou ao lado, para molhar na sopa.\nA cozinha ficou cheirosa. Todos sentaram juntos na mesa comprida.\n— A sopa ficou gostosa porque cada um trouxe um pouco — disse a Tita.\n— E porque comemos juntos — completou o avô, servindo mais uma concha.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a Tita quis fazer sopa?",
+       "options": [
+        "Porque estava frio",
+        "Porque era aniversário",
+        "Porque o avô pediu"
+       ],
+       "answer": "Porque estava frio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que havia na cozinha no começo?",
+       "options": [
+        "Água e uma panela",
+        "Muitos legumes",
+        "Só um pão"
+       ],
+       "answer": "Água e uma panela",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Dona Lurdes trouxe?",
+       "options": [
+        "Uma batata",
+        "Uma cenoura",
+        "Um tomate"
+       ],
+       "answer": "Uma cenoura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o trabalho do Seu Zico?",
+       "options": [],
+       "answer": "carteiro",
+       "accept": [
+        "é carteiro",
+        "o carteiro"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem trouxe o tomate?",
+       "options": [
+        "A pequena Bia",
+        "O moço da padaria",
+        "Dona Lurdes"
+       ],
+       "answer": "A pequena Bia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que ficou fora da panela?",
+       "options": [
+        "A batata",
+        "O pão",
+        "A cenoura"
+       ],
+       "answer": "O pão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual frase se repete e vai crescendo?",
+       "options": [
+        "Na panela tinha água…",
+        "Era um dia frio…",
+        "Todos sentaram juntos…"
+       ],
+       "answer": "Na panela tinha água…",
+       "accept": [],
+       "hint": "Procure a frase que aparece várias vezes.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a sopa ficou especial para a Tita?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em quem ajudou.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Quem acordou o galo?",
+     "synopsis": "Um barulhinho de manhã acorda um bicho depois do outro, até chegar ao Avô Bento.",
+     "text": "Ainda estava escuro no sítio. Uma gota de orvalho caiu de uma folha e fez plic no balde.\nO plic acordou o grilo.\nO grilo cantou cri-cri, e o cri-cri acordou o pato.\nO pato fez quá-quá, que veio depois do cri-cri, que veio depois do plic.\nO quá-quá acordou o galo, que gritou có-có-ri-có!\nO có-có-ri-có acordou o Bolacha, que latiu au-au.\nO au-au acordou a Tita, que bocejou bem alto.\nE o bocejo da Tita acordou o Avô Bento, que abriu a janela.\n— Que barulheira é essa? — perguntou ele.\nA Tita contou tudo de trás para frente: o bocejo, o au-au, o có-có-ri-có, o quá-quá, o cri-cri e o plic.\nO avô olhou para o balde e sorriu.\n— Então foi tudo culpa de uma gotinha!\nE o sol nasceu bem nessa hora, pintando o céu de laranja.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que fez o primeiro barulho?",
+       "options": [
+        "O galo",
+        "Uma gota de orvalho",
+        "O cachorro"
+       ],
+       "answer": "Uma gota de orvalho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual bicho acordou primeiro?",
+       "options": [
+        "O pato",
+        "O grilo",
+        "O galo"
+       ],
+       "answer": "O grilo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que som o pato fez?",
+       "options": [],
+       "answer": "quá-quá",
+       "accept": [
+        "quá quá",
+        "quaquá"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem acordou o Bolacha?",
+       "options": [
+        "O galo",
+        "A Tita",
+        "O grilo"
+       ],
+       "answer": "O galo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem foi o último a acordar?",
+       "options": [
+        "A Tita",
+        "O Avô Bento",
+        "O pato"
+       ],
+       "answer": "O Avô Bento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a Tita contou a história ao avô?",
+       "options": [
+        "De trás para frente",
+        "Só o começo",
+        "Cantando"
+       ],
+       "answer": "De trás para frente",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o avô disse que foi culpa de uma gotinha?",
+       "options": [
+        "Porque a gota fez o primeiro barulho",
+        "Porque choveu muito",
+        "Porque o balde quebrou"
+       ],
+       "answer": "Porque a gota fez o primeiro barulho",
+       "accept": [],
+       "hint": "Volte ao começo do capítulo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o capítulo termina com o sol nascendo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense na hora em que tudo aconteceu.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A pipa presa na árvore",
+     "synopsis": "A pipa da Tita fica presa num galho alto, e cada ajudante sobe nos ombros do outro.",
+     "text": "A Tita ganhou uma pipa azul do avô. Ela correu pelo campo, e a pipa subiu bem alto. Mas um vento forte levou a pipa para o galho mais alto da mangueira.\n— Eu ajudo! — disse o Avô Bento. Mas ele não alcançou.\nO Bolacha subiu nas costas do avô. Também não alcançou.\nA Pipoca subiu nas costas do Bolacha, que estava nas costas do avô. Quase!\nUm passarinho pousou na cabeça da Pipoca, que estava nas costas do Bolacha, que estava nas costas do avô.\nO passarinho puxou a linha com o bico, e a pipa se soltou.\nMas aí a torre balançou! O passarinho voou, a Pipoca pulou, o Bolacha escorregou, e o avô caiu sentado na grama macia.\nA pipa desceu devagar e pousou no colo da Tita.\nTodos riram, e o avô disse:\n— Ainda bem que a grama estava fofa!",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor era a pipa?",
+       "options": [
+        "Vermelha",
+        "Azul",
+        "Verde"
+       ],
+       "answer": "Azul",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a pipa ficou presa?",
+       "options": [
+        "No telhado",
+        "Na mangueira",
+        "No poste"
+       ],
+       "answer": "Na mangueira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem tentou ajudar primeiro?",
+       "options": [
+        "O passarinho",
+        "O Avô Bento",
+        "A Pipoca"
+       ],
+       "answer": "O Avô Bento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem subiu nas costas do Bolacha?",
+       "options": [
+        "A Tita",
+        "A Pipoca",
+        "O passarinho"
+       ],
+       "answer": "A Pipoca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como o passarinho soltou a pipa?",
+       "options": [
+        "Puxou a linha com o bico",
+        "Bateu as asas no galho",
+        "Cantou bem alto"
+       ],
+       "answer": "Puxou a linha com o bico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a pipa pousou no final?",
+       "options": [
+        "Na grama",
+        "No colo da Tita",
+        "Na cabeça do avô"
+       ],
+       "answer": "No colo da Tita",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o avô não se machucou?",
+       "options": [
+        "A grama era macia",
+        "Ele caiu na água",
+        "Ele não caiu"
+       ],
+       "answer": "A grama era macia",
+       "accept": [],
+       "hint": "Leia a fala do avô no fim.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que sozinho ninguém conseguiu pegar a pipa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense na altura do galho.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O bolo de aniversário",
+     "synopsis": "Tita prepara um bolo surpresa para o avô e vai juntando os ingredientes um por um.",
+     "text": "Era aniversário do Avô Bento, e a Tita quis fazer um bolo surpresa. A vizinha Dona Lurdes veio ajudar.\nPrimeiro, a Tita colocou a farinha na tigela.\nDepois, juntou o açúcar com a farinha.\nDepois, quebrou os ovos em cima do açúcar com a farinha.\nDepois, despejou o leite nos ovos, no açúcar e na farinha.\nPor fim, mexeu tudo: o leite, os ovos, o açúcar e a farinha.\nDona Lurdes colocou a forma no forno. A casa ficou com cheiro de bolo quente.\nMas o cheiro chegou até a varanda, onde o avô cochilava.\n— Hum... que cheirinho é esse? — perguntou ele, entrando na cozinha.\nA Tita escondeu a tigela atrás das costas, mas tinha farinha no nariz dela!\nO avô fingiu que não viu e voltou para a varanda, assobiando.\nNa hora do lanche, todos cantaram parabéns, e o avô disse que foi o melhor bolo da vida dele.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a Tita fez um bolo?",
+       "options": [
+        "Era aniversário do avô",
+        "Era Natal",
+        "Era dia de festa na escola"
+       ],
+       "answer": "Era aniversário do avô",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem ajudou a Tita?",
+       "options": [
+        "Seu Zico",
+        "Dona Lurdes",
+        "A Bia"
+       ],
+       "answer": "Dona Lurdes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o primeiro ingrediente?",
+       "options": [
+        "O leite",
+        "Os ovos",
+        "A farinha"
+       ],
+       "answer": "A farinha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o último ingrediente colocado?",
+       "options": [
+        "O açúcar",
+        "O leite",
+        "A farinha"
+       ],
+       "answer": "O leite",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que palavras mostram a ordem dos passos?",
+       "options": [
+        "Primeiro, Depois, Por fim",
+        "Era uma vez",
+        "Hum, que cheirinho"
+       ],
+       "answer": "Primeiro, Depois, Por fim",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o avô estava cochilando?",
+       "options": [
+        "No quarto",
+        "Na varanda",
+        "No jardim"
+       ],
+       "answer": "Na varanda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostrou que a Tita estava cozinhando?",
+       "options": [
+        "Farinha no nariz dela",
+        "Um bolo na mesa",
+        "O avental do avô"
+       ],
+       "answer": "Farinha no nariz dela",
+       "accept": [],
+       "hint": "Olhe o que tinha no rosto da Tita.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô fingiu que não viu nada?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense na surpresa.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: A casa da formiga",
+     "synopsis": "Numa tarde de chuva, uma folha vira abrigo e cada bichinho que chega cabe embaixo dela.",
+     "text": "Começou a chover no sítio. A Tita e o avô olhavam pela janela.\nLá fora, uma formiga se escondeu embaixo de uma folha grande de taioba.\nVeio uma joaninha e pediu:\n— Posso ficar? — E ficou a joaninha com a formiga.\nVeio um besouro e pediu para ficar. E ficou o besouro com a joaninha e a formiga.\nVeio uma lagarta. E ficou a lagarta com o besouro, com a joaninha e com a formiga.\nVeio um caracol, bem devagar. E ficou o caracol com a lagarta, com o besouro, com a joaninha e com a formiga.\nEntão veio um sapo enorme e perguntou:\n— Tem lugar para mim?\nTodos se apertaram, e o sapo também coube, encostado no caracol.\n— Que folha mágica! — disse a Tita.\n— Não é mágica — disse o avô. — Quando todos se apertam um pouquinho, sempre cabe mais um.\nLogo a chuva parou, e os bichinhos saíram um por um.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como estava o tempo?",
+       "options": [
+        "Ensolarado",
+        "Chovendo",
+        "Nevando"
+       ],
+       "answer": "Chovendo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem se escondeu primeiro embaixo da folha?",
+       "options": [
+        "Um sapo",
+        "Uma formiga",
+        "Um caracol"
+       ],
+       "answer": "Uma formiga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem chegou depois da joaninha?",
+       "options": [
+        "Um besouro",
+        "Uma lagarta",
+        "Um sapo"
+       ],
+       "answer": "Um besouro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que bicho chegou bem devagar?",
+       "options": [],
+       "answer": "caracol",
+       "accept": [
+        "o caracol",
+        "um caracol"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem foi o último a chegar?",
+       "options": [
+        "Uma lagarta",
+        "Um sapo",
+        "Uma joaninha"
+       ],
+       "answer": "Um sapo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que todos fizeram para o sapo caber?",
+       "options": [
+        "Saíram da folha",
+        "Se apertaram",
+        "Procuraram outra folha"
+       ],
+       "answer": "Se apertaram",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o avô quis ensinar?",
+       "options": [
+        "Sempre dá para dividir o espaço",
+        "Sapos são perigosos",
+        "Chuva é ruim"
+       ],
+       "answer": "Sempre dá para dividir o espaço",
+       "accept": [],
+       "hint": "Leia a última fala do avô.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que os bichinhos deixaram o sapo entrar?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em como eles se sentiriam na chuva.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O cachecol de todos",
+     "synopsis": "O avô termina o cachecol vermelho, e Tita descobre que ele tem um pedacinho de cada aventura.",
+     "text": "O inverno chegou, e o Avô Bento terminou o cachecol com a lã vermelha do novelo que tinha rolado.\n— Ficou tão comprido! — disse a Tita.\nO avô enrolou o cachecol no pescoço da Tita.\nSobrou cachecol, e ele enrolou no pescoço do Bolacha, que estava ao lado da Tita.\nAinda sobrou, e ele enrolou no pescoço da Pipoca, que estava ao lado do Bolacha, que estava ao lado da Tita.\nE ainda sobrou! O avô enrolou a ponta no próprio pescoço, ao lado da Pipoca, que estava ao lado do Bolacha, que estava ao lado da Tita.\nOs quatro ficaram juntinhos no sofá, presos pelo mesmo cachecol.\nA Tita olhou para a lã e lembrou de tudo: o novelo, a sopa, o galo, a pipa, o bolo e a folha na chuva.\n— Vô, esse cachecol tem um pedaço de cada história nossa.\n— Então é o cachecol mais quentinho do mundo — respondeu ele.\nE ali ficaram, contando tudo de novo, do começo ao fim.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que época do ano a história acontece?",
+       "options": [
+        "No verão",
+        "No inverno",
+        "Na primavera"
+       ],
+       "answer": "No inverno",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor era o cachecol?",
+       "options": [
+        "Vermelho",
+        "Azul",
+        "Verde"
+       ],
+       "answer": "Vermelho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem ganhou o cachecol primeiro?",
+       "options": [
+        "A Pipoca",
+        "O Bolacha",
+        "A Tita"
+       ],
+       "answer": "A Tita",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem ficou ao lado da Pipoca no fim?",
+       "options": [
+        "A Tita",
+        "O Avô Bento",
+        "O galo"
+       ],
+       "answer": "O Avô Bento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde os quatro ficaram juntinhos?",
+       "options": [
+        "No sofá",
+        "Na varanda",
+        "Na cama"
+       ],
+       "answer": "No sofá",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de onde veio a lã do cachecol?",
+       "options": [
+        "Do novelo que rolou",
+        "De uma loja",
+        "Da vizinha"
+       ],
+       "answer": "Do novelo que rolou",
+       "accept": [],
+       "hint": "Lembre do primeiro capítulo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a Tita diz que o cachecol tem um pedaço de cada história?",
+       "options": [
+        "Porque ela lembrou das aventuras com o avô",
+        "Porque ele tem desenhos",
+        "Porque ele é de várias cores"
+       ],
+       "answer": "Porque ela lembrou das aventuras com o avô",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô chamou o cachecol de \"o mais quentinho do mundo\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que deixa a gente quentinho além da lã.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
