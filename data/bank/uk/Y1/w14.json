@@ -3193,6 +3193,862 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "Lila and the Festival Box",
+   "premise": "Every day Lila opens Grandpa Teo's old festival box and hears a new story about a celebration from around the world — until she plans a festival of her own.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Festival Box",
+     "synopsis": "Lila finds a big box under Grandpa Teo's bed. He tells her it is full of things from festivals around the world.",
+     "text": "Lila is visiting Grandpa Teo. It is a rainy day.\n\"I am bored,\" says Lila.\nGrandpa Teo smiles. \"Can you help me find my old box? It is under my bed.\"\nLila crawls under the bed. She pulls out a big blue box. It has stars on the lid.\n\"What is inside?\" asks Lila.\n\"Festivals!\" says Grandpa Teo.\nLila laughs. \"You can't put a festival in a box!\"\n\"Open it and see,\" says Grandpa Teo.\nLila opens the lid. She sees a little clay lamp, a red paper lantern, a straw hat, a bright scarf and lots of photos.\n\"When I was young, I travelled to many places,\" says Grandpa Teo. \"People everywhere love to celebrate. Every thing in this box has a story.\"\nLila picks up the little clay lamp.\n\"Tell me this story first,\" she says.\n\"Tomorrow,\" says Grandpa Teo. \"One story every day.\"\nLila cannot wait.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who is Lila visiting?",
+       "options": [
+        "Grandpa Teo",
+        "Her teacher",
+        "Her friend"
+       ],
+       "answer": "Grandpa Teo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the weather like?",
+       "options": [
+        "Rainy",
+        "Sunny",
+        "Snowy"
+       ],
+       "answer": "Rainy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where is the box?",
+       "options": [
+        "Under the bed",
+        "In the garden",
+        "On the roof"
+       ],
+       "answer": "Under the bed",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what colour is the box?",
+       "options": [],
+       "answer": "blue",
+       "accept": [
+        "Blue"
+       ],
+       "hint": "Look at what Lila pulls out.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Grandpa Teo say is inside the box?",
+       "options": [
+        "Festivals",
+        "Toys",
+        "Food"
+       ],
+       "answer": "Festivals",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which thing does Lila pick up first?",
+       "options": [
+        "A little clay lamp",
+        "A straw hat",
+        "A red lantern"
+       ],
+       "answer": "A little clay lamp",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many stories will Grandpa Teo tell each day?",
+       "options": [
+        "One",
+        "Two",
+        "Ten"
+       ],
+       "answer": "One",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Lila cannot wait for tomorrow?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Little Clay Lamp",
+     "synopsis": "Grandpa Teo tells Lila about Diwali, the festival of lights, and they light a lamp together.",
+     "text": "The next day, Lila holds the little clay lamp.\n\"This is a diya,\" says Grandpa Teo. \"I got it at Diwali in India.\"\n\"What is Diwali?\" asks Lila.\n\"It is the festival of lights,\" says Grandpa Teo. \"Families put lots of little lamps in their homes and by their doors. The lamps shine in the dark night.\"\n\"Why do they light lamps?\" asks Lila.\n\"The light is a sign that good wins and the dark goes away,\" says Grandpa Teo. \"People wear new clothes. They share sweets with friends. Some families make pretty patterns on the floor with coloured powder.\"\nLila looks at the lamp. \"Can we light it?\"\nGrandpa Teo puts a small candle in the lamp. He lights it carefully. Lila must not touch it.\nThe little flame glows orange and gold.\n\"It is so pretty,\" says Lila.\nThat night, Lila tells Mum all about Diwali. First she tells her about the lamps. Then she tells her about the sweets.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the little clay lamp called?",
+       "options": [
+        "A diya",
+        "A lantern",
+        "A star"
+       ],
+       "answer": "A diya",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, Diwali is the festival of…",
+       "options": [
+        "lights",
+        "snow",
+        "kites"
+       ],
+       "answer": "lights",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, in which country did Grandpa Teo get the lamp?",
+       "options": [],
+       "answer": "India",
+       "accept": [
+        "india"
+       ],
+       "hint": "Read what Grandpa Teo says first.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do people share with friends at Diwali?",
+       "options": [
+        "Sweets",
+        "Books",
+        "Shoes"
+       ],
+       "answer": "Sweets",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do some families use to make patterns on the floor?",
+       "options": [
+        "Coloured powder",
+        "Sand",
+        "Leaves"
+       ],
+       "answer": "Coloured powder",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who lights the candle?",
+       "options": [
+        "Grandpa Teo",
+        "Lila",
+        "Mum"
+       ],
+       "answer": "Grandpa Teo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Lila tell Mum about first?",
+       "options": [
+        "The lamps",
+        "The sweets",
+        "The new clothes"
+       ],
+       "answer": "The lamps",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Lila must not touch the lamp when it is lit?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Red Lantern",
+     "synopsis": "Grandpa Teo tells Lila about Chinese New Year, with red lanterns, a dragon dance and red envelopes.",
+     "text": "On the third day, Lila picks up the red paper lantern.\n\"I got this at Chinese New Year,\" says Grandpa Teo.\n\"Is it a party?\" asks Lila.\n\"A very big party!\" says Grandpa Teo. \"Families clean their homes to get ready. They hang red lanterns everywhere. Red is a lucky colour.\"\n\"What else happens?\" asks Lila.\n\"Families eat a big dinner together. Children get red envelopes with money inside. And there is a dragon dance in the street!\"\n\"A real dragon?\" asks Lila. Her eyes are wide.\nGrandpa Teo laughs. \"No. The dragon is long and made of cloth. Lots of people hold it up on sticks. They make it jump and wiggle. Drums go BOOM, BOOM, BOOM!\"\nLila holds the lantern up high. She wiggles around the room like a dragon.\n\"BOOM, BOOM!\" she shouts.\nGrandpa Teo claps. \"You are the best dragon I have ever seen!\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour is the paper lantern?",
+       "options": [
+        "Red",
+        "Green",
+        "Yellow"
+       ],
+       "answer": "Red",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do families do to get ready for Chinese New Year?",
+       "options": [
+        "Clean their homes",
+        "Go to the beach",
+        "Plant trees"
+       ],
+       "answer": "Clean their homes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which colour is called lucky?",
+       "options": [
+        "Red",
+        "Blue",
+        "Black"
+       ],
+       "answer": "Red",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what do children get inside red envelopes?",
+       "options": [],
+       "answer": "money",
+       "accept": [
+        "Money",
+        "some money"
+       ],
+       "hint": "It is something you can use at a shop.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the dragon made of?",
+       "options": [
+        "Cloth",
+        "Stone",
+        "Wood"
+       ],
+       "answer": "Cloth",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what sound do the drums make?",
+       "options": [
+        "BOOM",
+        "TING",
+        "SQUEAK"
+       ],
+       "answer": "BOOM",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Grandpa Teo feel when Lila dances?",
+       "options": [
+        "Happy",
+        "Angry",
+        "Sleepy"
+       ],
+       "answer": "Happy",
+       "accept": [],
+       "hint": "He claps for her.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Lila's eyes are wide when she hears about the dragon?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Straw Hat",
+     "synopsis": "Grandpa Teo tells Lila about Festa Junina in Brazil, with a bonfire, corn treats and a square dance.",
+     "text": "On the fourth day, Lila puts on the straw hat. It is too big for her!\n\"This is from Festa Junina in Brazil,\" says Grandpa Teo.\n\"Junina sounds like June,\" says Lila.\n\"Clever girl! It happens in June,\" says Grandpa Teo. \"People dress up like farmers. They wear straw hats and checked shirts.\"\n\"What do they eat?\" asks Lila.\n\"Lots of corn! Corn cake, popcorn and sweet corn pudding. And there is a big bonfire to keep everyone warm.\"\n\"Is there dancing?\" asks Lila.\n\"Yes! It is called the quadrilha. People dance in two long lines. They hold hands and swap partners.\"\nGrandpa Teo holds out his hand. Lila takes it. They dance in a line across the kitchen. The hat falls over Lila's eyes.\n\"I can't see!\" she giggles.\nGrandpa Teo puts the hat back on her head. \"Now you are a real Festa Junina dancer!\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is wrong with the straw hat?",
+       "options": [
+        "It is too big",
+        "It is broken",
+        "It is wet"
+       ],
+       "answer": "It is too big",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, in which country is Festa Junina?",
+       "options": [],
+       "answer": "Brazil",
+       "accept": [
+        "brazil"
+       ],
+       "hint": "Look at what Grandpa Teo says first.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, in which month is Festa Junina?",
+       "options": [],
+       "answer": "June",
+       "accept": [
+        "june"
+       ],
+       "hint": "Lila thinks the name sounds like a month.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, people dress up like…",
+       "options": [
+        "farmers",
+        "pirates",
+        "kings"
+       ],
+       "answer": "farmers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which food do people eat a lot of?",
+       "options": [
+        "Corn",
+        "Fish",
+        "Cheese"
+       ],
+       "answer": "Corn",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the dance called?",
+       "options": [
+        "The quadrilha",
+        "The dragon dance",
+        "The diya"
+       ],
+       "answer": "The quadrilha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where do Lila and Grandpa Teo dance?",
+       "options": [
+        "In the kitchen",
+        "In the garden",
+        "At school"
+       ],
+       "answer": "In the kitchen",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Lila giggles when the hat falls over her eyes?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Bright Scarf",
+     "synopsis": "Grandpa Teo tells Lila about Eid, when families share food, wear new clothes and give gifts.",
+     "text": "On the fifth day, Lila finds the bright scarf. It is green and gold.\n\"A kind family gave me this at Eid,\" says Grandpa Teo.\n\"What is Eid?\" asks Lila.\n\"Eid al-Fitr comes after a month called Ramadan,\" says Grandpa Teo. \"In Ramadan, many Muslim people do not eat or drink in the daytime. Then they celebrate Eid with a big happy meal.\"\n\"What do they do at Eid?\" asks Lila.\n\"People wear their best clothes. They visit family and friends. They say Eid Mubarak, which means blessed Eid. Children often get gifts. And everyone shares food, like dates and sweet treats.\"\n\"Why did the family give you a scarf?\" asks Lila.\n\"I was far from home,\" says Grandpa Teo. \"They did not want me to be alone. So they invited me to their meal.\"\nLila wraps the scarf around her neck. It feels soft.\n\"That was kind,\" she says.\n\"Yes,\" says Grandpa Teo. \"Sharing is a big part of Eid.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colours is the scarf?",
+       "options": [
+        "Green and gold",
+        "Red and blue",
+        "Pink and white"
+       ],
+       "answer": "Green and gold",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which month comes before Eid al-Fitr?",
+       "options": [
+        "Ramadan",
+        "June",
+        "December"
+       ],
+       "answer": "Ramadan",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do people wear at Eid?",
+       "options": [
+        "Their best clothes",
+        "Straw hats",
+        "Costumes"
+       ],
+       "answer": "Their best clothes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what do people say to each other at Eid?",
+       "options": [],
+       "answer": "Eid Mubarak",
+       "accept": [
+        "eid mubarak"
+       ],
+       "hint": "It is two words and it starts with Eid.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which food is shared at Eid?",
+       "options": [
+        "Dates",
+        "Popcorn",
+        "Pizza"
+       ],
+       "answer": "Dates",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the family invite Grandpa Teo?",
+       "options": [
+        "They did not want him to be alone",
+        "He was hungry",
+        "He was lost"
+       ],
+       "answer": "They did not want him to be alone",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does the scarf feel?",
+       "options": [
+        "Soft",
+        "Scratchy",
+        "Cold"
+       ],
+       "answer": "Soft",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think sharing is a big part of a celebration?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Last Photo",
+     "synopsis": "Lila finds a photo of Grandpa Teo at a winter festival and they decide to make their own festival.",
+     "text": "On the sixth day, the box is almost empty. At the bottom, Lila finds one last photo.\nIn the photo, Grandpa Teo is young. He is in the snow. Behind him is a tall tree with tiny lights.\n\"Where is this?\" asks Lila.\n\"This was a winter festival in a cold country,\" says Grandpa Teo. \"People sang songs in the street. We drank warm drinks. The lights made the dark streets shine.\"\nLila looks at all the things on the floor. The lamp. The lantern. The hat. The scarf. The photos.\n\"Grandpa, every festival has lights or food or music,\" she says.\n\"And people together,\" says Grandpa Teo. \"That is the best part.\"\nLila has an idea. She jumps up.\n\"Let's have our own festival! Tomorrow! We can invite Mum and Dad and Aunt Rosa.\"\nGrandpa Teo laughs. \"What will we call it?\"\nLila thinks hard. \"The Festival Box Party!\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where is the last photo?",
+       "options": [
+        "At the bottom of the box",
+        "On the wall",
+        "In Lila's bag"
+       ],
+       "answer": "At the bottom of the box",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is behind Grandpa Teo in the photo?",
+       "options": [
+        "A tall tree with tiny lights",
+        "A big boat",
+        "A red dragon"
+       ],
+       "answer": "A tall tree with tiny lights",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the weather like in the photo?",
+       "options": [
+        "Snowy",
+        "Hot",
+        "Windy"
+       ],
+       "answer": "Snowy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did people do in the street?",
+       "options": [
+        "Sang songs",
+        "Flew kites",
+        "Played football"
+       ],
+       "answer": "Sang songs",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Grandpa Teo say is the best part of a festival?",
+       "options": [
+        "People together",
+        "The presents",
+        "The food"
+       ],
+       "answer": "People together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does Lila want to call their festival?",
+       "options": [],
+       "answer": "The Festival Box Party",
+       "accept": [
+        "Festival Box Party",
+        "the festival box party"
+       ],
+       "hint": "It uses the name of the box.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Lila feel when she has her idea?",
+       "options": [
+        "Excited",
+        "Sad",
+        "Scared"
+       ],
+       "answer": "Excited",
+       "accept": [],
+       "hint": "Think about why she jumps up.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Grandpa Teo says people together is the best part?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Festival Box Party",
+     "synopsis": "Lila holds her own festival for the family and retells her favourite festival story.",
+     "text": "The next day, Lila and Grandpa Teo get ready. First, they hang the red lantern by the door. Next, they put the little lamp on the table. Then, they make corn cake.\nMum, Dad and Aunt Rosa arrive.\n\"Welcome to the Festival Box Party!\" says Lila. She is wearing the straw hat and the bright scarf.\nThey eat corn cake and dates. They sing songs. Lila does her dragon dance, and everyone shouts \"BOOM!\"\nThen Aunt Rosa asks, \"Lila, which festival is your favourite?\"\nLila thinks. \"Diwali,\" she says. \"I will tell you the story.\"\nShe stands up tall. \"At Diwali, families light little lamps called diyas. The lamps shine in the dark. It means good wins. People share sweets. At the end, everyone is happy and bright.\"\nEveryone claps.\n\"You tell stories just like me,\" says Grandpa Teo.\nLila smiles. \"Can we open the box again next time?\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do Lila and Grandpa Teo do first?",
+       "options": [
+        "Hang the red lantern",
+        "Make corn cake",
+        "Sing songs"
+       ],
+       "answer": "Hang the red lantern",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do they make to eat?",
+       "options": [
+        "Corn cake",
+        "Pizza",
+        "Soup"
+       ],
+       "answer": "Corn cake",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which two things is Lila wearing?",
+       "options": [
+        "The straw hat and the bright scarf",
+        "A crown and a cape",
+        "A coat and boots"
+       ],
+       "answer": "The straw hat and the bright scarf",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does everyone shout during the dragon dance?",
+       "options": [
+        "BOOM!",
+        "Hello!",
+        "Stop!"
+       ],
+       "answer": "BOOM!",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who asks Lila about her favourite festival?",
+       "options": [
+        "Aunt Rosa",
+        "Dad",
+        "Grandpa Teo"
+       ],
+       "answer": "Aunt Rosa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which festival is Lila's favourite?",
+       "options": [],
+       "answer": "Diwali",
+       "accept": [
+        "diwali"
+       ],
+       "hint": "It is the festival of lights.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Grandpa Teo mean when he says Lila tells stories just like him?",
+       "options": [
+        "She tells stories well",
+        "She talks too fast",
+        "She forgets the story"
+       ],
+       "answer": "She tells stories well",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Which festival in the story would you like to go to, and why?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
