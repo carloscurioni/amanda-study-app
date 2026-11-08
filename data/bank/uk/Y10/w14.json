@@ -5911,6 +5911,898 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "Harbour Row",
+   "premise": "Seven linked stories set in a salt-stained block of flats by the sea, where a newcomer, a boy and his grandfather, two rival dancers and an elderly neighbour each wrestle with belonging, memory, ambition, regret and change.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Spare Key",
+     "synopsis": "Fifteen-year-old Ines moves into Harbour Row and feels like a stranger, until an elderly neighbour asks her to look after a key that nobody else has wanted.",
+     "text": "The removal van left a rectangle of dry tarmac when it drove away, and Ines stood on it as if it were the last piece of her old life. Harbour Row was a tall, salt-stained building facing the grey sea, and every window seemed to belong to someone who already knew where they fitted.\nInside, the flat smelled of fresh paint and somebody else's cooking drifting up the stairwell. Her mother unpacked mugs with determined cheerfulness. \"Give it a month,\" she said. \"Places are like shoes. They hurt before they fit.\" Ines did not answer. She was thinking of her friends three hundred miles away, laughing at a joke she would never hear.\nOn the third evening, carrying rubbish down to the bins, she met the man from Flat 2. Mr Adebayo was small and very upright, with a cardigan buttoned to the throat and a watering can in one hand. He was tending a row of tomato plants in pots along the courtyard wall, the only green thing for a hundred metres.\n\"You are the new one,\" he said. It was not unkind; it was simply a fact, the way you might say \"it is raining\".\n\"Apparently,\" said Ines.\nHe studied her for a moment, then reached into his pocket and held out a brass key on a faded red ribbon. \"I go to my daughter's for two weeks on Friday. Somebody must water these. Everyone in this building is too busy.\" He paused. \"You do not look busy.\"\nShe almost laughed. \"You don't even know me.\"\n\"That is true,\" he agreed. \"But the tomatoes do not know you either, and they will not mind.\"\nFor two weeks Ines went down every evening. At first it was a chore, then a habit, then something closer to a ritual. She learned which pots dried out fastest, and that the woman from Flat 7 always smoked by the back door at eight o'clock and nodded at her now. A boy called Ravi, who lived on the fourth floor, stopped to ask whether the plants were hers. \"Sort of,\" she said, and was surprised by how much she meant it.\nWhen Mr Adebayo returned, the first tomatoes were turning red. He inspected each plant as carefully as a doctor. Then he picked the ripest one and pressed it into her palm.\n\"Keep the key,\" he said. \"Next summer I will be older, and the stairs will not get shorter.\"\nThat night Ines hung the red ribbon on the hook beside her bed. It was a small thing, a key to a courtyard and a row of pots. But it was the first thing in Harbour Row that was hers because someone had chosen to give it to her.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, where is Harbour Row?",
+       "options": [
+        "Facing the sea",
+        "Next to a motorway",
+        "In the middle of a forest",
+        "Above a shopping centre"
+       ],
+       "answer": "Facing the sea",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Mr Adebayo ask Ines to look after?",
+       "options": [
+        "His tomato plants",
+        "His cat",
+        "His car",
+        "His post"
+       ],
+       "answer": "His tomato plants",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what colour is the ribbon on the key?",
+       "options": [],
+       "answer": "red",
+       "accept": [
+        "Red"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Ines's mother compare new places?",
+       "options": [
+        "To shoes that hurt before they fit",
+        "To books you must reread",
+        "To gardens that need rain",
+        "To songs you learn slowly"
+       ],
+       "answer": "To shoes that hurt before they fit",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Mr Adebayo choose Ines for the job?",
+       "options": [
+        "She does not look busy",
+        "She is his granddaughter",
+        "She asked to help",
+        "She studies plants at school"
+       ],
+       "answer": "She does not look busy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how do Ines's feelings about watering the plants change?",
+       "options": [
+        "From chore to habit to ritual",
+        "From joy to boredom",
+        "From fear to anger",
+        "They do not change at all"
+       ],
+       "answer": "From chore to habit to ritual",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the key mainly symbolise by the end?",
+       "options": [
+        "Being trusted and beginning to belong",
+        "Losing her old friends",
+        "Her fear of the sea",
+        "Her mother's strict rules"
+       ],
+       "answer": "Being trusted and beginning to belong",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the writer ends the chapter with the ribbon hanging beside Ines's bed?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: Low Tide",
+     "synopsis": "Ravi takes his grandfather crabbing on the harbour wall and realises that his grandfather's memory is slipping, but that some things are remembered in the hands rather than the head.",
+     "text": "Every Saturday since he was six, Ravi had gone crabbing with his grandfather on the harbour wall. They had a red bucket, two orange lines, and a rule that every crab went back into the sea before they went home. \"We are visitors,\" his grandfather would say. \"We borrow, we do not keep.\"\nThis Saturday, his grandfather called him by his father's name twice before they reached the steps.\nRavi said nothing. He carried the bucket and the bait and watched the old man lower himself onto the cold stone with exaggerated care. The tide was out. Boats lay tilted on the mud like tired animals, and gulls argued over something shiny near the slipway.\n\"Remind me,\" his grandfather said, frowning at the line in his hands. \"Which way does the knot go?\"\nIt was the first thing he had ever taught Ravi. Over, under, through, pull. Ravi had learned it with small, clumsy fingers while his grandfather's big brown hands guided his. Now he reached across and tied it himself, slowly, so that his grandfather could watch.\n\"Over, under, through, pull,\" his grandfather murmured, and something in his face relaxed, as if a door had opened in a corridor he had been wandering along.\nThey caught nothing for half an hour. Ravi talked about school, about the new girl from the second floor who was looking after Mr Adebayo's tomatoes, about a maths test he thought he had failed. His grandfather listened, nodding, though Ravi could not tell how much he was really hearing.\nThen the line twitched. With a speed that surprised them both, his grandfather drew it up, hand over hand, steady and unhurried, and swung a large green crab neatly into the bucket. He did not hesitate once. His hands knew exactly what to do.\n\"There,\" he said. \"Still got it.\"\nRavi laughed, but his throat felt tight. He understood suddenly that his grandfather was not disappearing all at once. He was disappearing in patches, like the sea pulling back from the shore, and some places would stay wet the longest.\nAt four o'clock they tipped the bucket over the edge. The crab paused on the mud, then scuttled sideways into a pool.\n\"We borrow,\" said Ravi.\n\"We do not keep,\" his grandfather finished, and smiled at him, and for that moment he knew exactly who Ravi was.\nWalking home, Ravi carried the bucket in one hand and held his grandfather's elbow with the other. Neither of them mentioned the wrong name. Some things, Ravi decided, could be left on the harbour wall.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is the rule about the crabs?",
+       "options": [
+        "They all go back into the sea",
+        "They are sold at the market",
+        "They are cooked for dinner",
+        "They are kept in a tank"
+       ],
+       "answer": "They all go back into the sea",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what mistake does the grandfather make on the way?",
+       "options": [
+        "He calls Ravi by his father's name",
+        "He forgets the bucket",
+        "He walks to the wrong harbour",
+        "He drops the bait in the sea"
+       ],
+       "answer": "He calls Ravi by his father's name",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what four words describe how to tie the knot?",
+       "options": [],
+       "answer": "over, under, through, pull",
+       "accept": [
+        "over under through pull",
+        "Over, under, through, pull"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is the state of the tide?",
+       "options": [
+        "Out",
+        "In",
+        "Rising fast",
+        "Stormy"
+       ],
+       "answer": "Out",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what surprises Ravi when the crab bites?",
+       "options": [
+        "His grandfather pulls it up skilfully",
+        "The crab is blue",
+        "The line breaks",
+        "A gull steals the crab"
+       ],
+       "answer": "His grandfather pulls it up skilfully",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the comparison with the sea pulling back from the shore suggest?",
+       "options": [
+        "Memory is being lost gradually and unevenly",
+        "The family is moving away",
+        "The weather is getting worse",
+        "Ravi wants to become a fisherman"
+       ],
+       "answer": "Memory is being lost gradually and unevenly",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which theme is most important?",
+       "options": [
+        "Memory and family love",
+        "Ambition and success",
+        "Danger and adventure",
+        "Money and power"
+       ],
+       "answer": "Memory and family love",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Ravi decides that the wrong name 'could be left on the harbour wall'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Second Place",
+     "synopsis": "Lila wants a place at a summer dance academy so badly that she hides the audition from her best friend, and has to decide what winning is worth.",
+     "text": "Lila had practised the routine in the corridor of Harbour Row so many times that the woman from Flat 7 had started to applaud through her door. Ninety seconds. Three turns, a fall to the floor, a slow rise. The summer academy took only two dancers from the whole county.\nWhat Lila had not done was tell Kemi.\nKemi was her best friend and, annoyingly, the better dancer. She had loose, fearless shoulders and never counted under her breath. If Kemi knew about the audition, she would apply. If she applied, she would get in. Lila had done this sum in her head until it made her feel slightly sick.\nOn the morning of the audition she lied. \"Dentist,\" she texted, and caught the early bus alone.\nThe studio was enormous and echoing, full of girls who looked as if they had been born stretching. Lila danced well. Not perfectly, but well; the fall was clean and the rise was slow enough to make the panel lean forward. As she walked off, a woman with a clipboard smiled and wrote something down.\nThen she saw Kemi in the queue by the door.\nThey stared at each other. Kemi was wearing the green leotard they had bought together in the January sales. \"Dentist,\" Kemi said flatly. It was not a question.\n\"You didn't tell me either,\" Lila said, and immediately hated how small her voice sounded.\n\"I found out last night. I was going to tell you this morning.\" Kemi looked at the floor. \"I thought you'd be pleased.\"\nLila waited outside for forty minutes, sitting on a low wall in the drizzle, rehearsing excuses that all collapsed when she imagined saying them aloud. When Kemi came out, her face was unreadable.\n\"How was it?\" Lila asked.\n\"I slipped on the second turn.\" Kemi shrugged. \"It happens.\"\nAnd Lila, who had wanted to win more than anything, felt not relief but shame, heavy and hot, as if she had wished the slip into being.\nThe letter came a week later. Lila had a place. Kemi did not. Lila read it on the stairs, then read it again, waiting for the joy she had imagined for months. It arrived, but thinner than she had expected, like a cake with something missing from the recipe.\nThat evening she knocked on Kemi's door with the letter in one hand and a bag of the cheap sour sweets they both liked in the other.\n\"I should have told you,\" she said. \"I was scared you'd beat me.\"\nKemi took the sweets. After a long moment she took the letter too, read it, and grinned. \"Of course I would have beaten you,\" she said. \"Congratulations, idiot.\"\nIt was not forgiveness yet. But it was the door being held open.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how many dancers does the summer academy take?",
+       "options": [
+        "Two",
+        "Ten",
+        "One",
+        "Twenty"
+       ],
+       "answer": "Two",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what excuse does Lila give for missing the morning?",
+       "options": [],
+       "answer": "dentist",
+       "accept": [
+        "the dentist",
+        "Dentist"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Lila not tell Kemi about the audition?",
+       "options": [
+        "She is afraid Kemi will beat her",
+        "Kemi hates dancing",
+        "Kemi is away on holiday",
+        "Her mother tells her not to"
+       ],
+       "answer": "She is afraid Kemi will beat her",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what goes wrong for Kemi in the audition?",
+       "options": [
+        "She slips on the second turn",
+        "She arrives too late",
+        "She forgets the music",
+        "She hurts her ankle on the bus"
+       ],
+       "answer": "She slips on the second turn",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Lila feel when Kemi says she slipped?",
+       "options": [
+        "Ashamed",
+        "Delighted",
+        "Bored",
+        "Confused about the rules"
+       ],
+       "answer": "Ashamed",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the simile 'like a cake with something missing from the recipe' suggest about Lila's joy?",
+       "options": [
+        "It is incomplete because of what she did",
+        "It is sweeter than she expected",
+        "It disappears completely",
+        "It makes her hungry"
+       ],
+       "answer": "It is incomplete because of what she did",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the final line 'the door being held open' suggest?",
+       "options": [
+        "The friendship may be repaired",
+        "Kemi wants Lila to leave",
+        "Lila has moved flats",
+        "The academy is closing"
+       ],
+       "answer": "The friendship may be repaired",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the writer gives Lila the place at the academy instead of Kemi?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: Power Cut",
+     "synopsis": "A storm knocks out the electricity in Harbour Row, and the neighbours who usually ignore each other end up sharing candles, soup and stories in the stairwell.",
+     "text": "The lights went out at seven minutes past six, in the middle of a sentence. Ines was telling her mother about a history essay when the fridge stopped humming, the screens went black and the whole of Harbour Row gave a single, collective groan.\nOutside, the wind was throwing rain against the windows in fistfuls. Down the coast, a substation had flooded. A message on her mother's phone, before the battery died, said the power might not be back until morning.\nAt first everybody stayed behind their own doors. Ines could hear them: someone swearing at a torch, a baby crying on the third floor, a radio crackling. Then, at about half past seven, there was a knock. It was Ravi, holding a camping lantern and looking embarrassed.\n\"My nan says if anyone's got a gas hob, we've got a pot of soup and nothing to cook it on.\"\nInes's mother had a gas hob. Within twenty minutes the soup was bubbling, and within forty, the stairwell outside their flat had become a kind of party. Mr Adebayo arrived carrying a folding chair and a tin of biscuits older than some of the children. The woman from Flat 7, whose name turned out to be Marguerite, brought candles in jam jars. Lila and Kemi came down with a pack of cards and a portable speaker that still had some charge.\nPeople who had nodded at each other for years were now passing bowls and finding out each other's names. A man from the top floor confessed he had lived in the building for eleven years and never once taken the stairs. Ravi's grandfather sat on the bottom step and told a long story about a storm in 1987 that had blown a fishing boat onto the roof of a pub. Nobody could tell if it was true. Nobody cared.\nInes found herself sitting between Marguerite and the baby's exhausted father, holding the baby so he could eat. The baby gripped her finger and stared at the candle flame as if it were the most important thing in the universe.\n\"Funny,\" said Marguerite, looking round at the crowded stairs. \"It takes the lights going off for us to see each other.\"\nAt ten past eleven the power came back with a clunk. Every light in the stairwell flared at once, harsh and white. People blinked, suddenly shy, and began to gather up bowls and chairs. Within ten minutes the doors had closed again.\nBut the next morning, there was a note taped to the noticeboard in the lobby, in Mr Adebayo's careful handwriting: Soup night. Last Friday of every month. Bring a bowl.\nUnderneath, by lunchtime, nine people had signed their names.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what causes the power cut?",
+       "options": [
+        "A flooded substation",
+        "A fire in the building",
+        "Workers cutting a cable",
+        "An unpaid bill"
+       ],
+       "answer": "A flooded substation",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Ravi knock on Ines's door?",
+       "options": [
+        "He needs a gas hob to heat soup",
+        "He wants to borrow a torch",
+        "He is looking for his grandfather",
+        "He wants to charge his phone"
+       ],
+       "answer": "He needs a gas hob to heat soup",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what is the name of the woman from Flat 7?",
+       "options": [],
+       "answer": "Marguerite",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Marguerite bring?",
+       "options": [
+        "Candles in jam jars",
+        "A tin of biscuits",
+        "A pack of cards",
+        "A folding chair"
+       ],
+       "answer": "Candles in jam jars",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what happens when the lights come back on?",
+       "options": [
+        "People become shy and return to their flats",
+        "Everyone keeps celebrating until dawn",
+        "The baby starts crying again",
+        "Mr Adebayo falls asleep"
+       ],
+       "answer": "People become shy and return to their flats",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Marguerite's comment 'It takes the lights going off for us to see each other' show?",
+       "options": [
+        "The darkness brought the neighbours together",
+        "She cannot see well at night",
+        "She prefers candles to electricity",
+        "She wants to move out"
+       ],
+       "answer": "The darkness brought the neighbours together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "num",
+       "q": "In the chapter, how many people have signed the soup night note by lunchtime?",
+       "options": [],
+       "answer": "9",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the writer ends the chapter with the note on the noticeboard rather than with the lights coming back?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Letter",
+     "synopsis": "Mr Adebayo asks Ines to help him read an old letter he never answered, and she learns that some regrets are carried quietly for a very long time.",
+     "text": "Mr Adebayo's flat was exactly as tidy as Ines had imagined: a clock that ticked loudly, a shelf of books with cracked spines, a single photograph of a young woman laughing on a beach. He made tea in a pot, not with bags, and served it in cups with saucers.\n\"My eyes are tired,\" he said, and slid an envelope across the table. \"Will you read this to me?\"\nThe paper was thin and yellow, and the stamp showed a ship. The handwriting sloped forward as if it were in a hurry.\nDear Samuel, Ines read aloud. I am leaving on Thursday. If you want me to stay, come to the station. If you do not come, I will understand, and I will not write again.\nIt was signed simply: Grace.\nInes looked up. Mr Adebayo was gazing at the photograph.\n\"I did not go,\" he said. \"I was twenty-two. I had a job, a plan, my mother's opinions in my ear. I told myself I would write later, when I was sure. By the time I was sure, I had no address.\" He turned his cup in its saucer. \"That was fifty-one years ago.\"\n\"Did you ever find her?\" Ines asked.\n\"I did not look. I was afraid of finding out that she had been happy without me, and more afraid of finding out that she had not.\" He smiled a little. \"Fear is very good at making excuses look like wisdom.\"\nThey sat in silence. The clock filled it. Ines thought about Lila hiding the audition from Kemi, about all the small things people did not say because saying them was frightening. She thought about her friends three hundred miles away, and the messages she kept drafting and deleting.\n\"Why are you showing me this now?\" she said at last.\n\"Because you are young,\" he said. \"And because I have noticed you look at your phone the way I used to look at that envelope.\"\nInes felt her face grow hot. He was right. There was a message to her oldest friend that she had rewritten eight times. It said, roughly, I miss you, and I'm scared you've already forgotten me.\n\"It is not a lesson,\" Mr Adebayo added gently. \"I am too old for lessons. It is only a letter.\"\nWhen she got home, Ines sat on her bed beneath the key on its red ribbon and read her message one last time. Then, before fear could find another excuse, she pressed send.\nThe reply came in four minutes. It was mostly capital letters and it said: FINALLY. I THOUGHT YOU'D FORGOTTEN ME.\nInes laughed out loud, alone in her room. Downstairs, she imagined, Mr Adebayo was putting the yellow envelope carefully back into its drawer.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Mr Adebayo ask Ines to do?",
+       "options": [
+        "Read a letter aloud to him",
+        "Post a letter for him",
+        "Write a letter for him",
+        "Find a lost letter"
+       ],
+       "answer": "Read a letter aloud to him",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, who wrote the letter?",
+       "options": [],
+       "answer": "Grace",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what did the letter ask Mr Adebayo to do?",
+       "options": [
+        "Come to the station",
+        "Send money",
+        "Visit her family",
+        "Write back by Thursday"
+       ],
+       "answer": "Come to the station",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "num",
+       "q": "In the chapter, how many years ago was the letter written?",
+       "options": [],
+       "answer": "51",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Mr Adebayo mean by 'Fear is very good at making excuses look like wisdom'?",
+       "options": [
+        "Fear can disguise itself as sensible reasons",
+        "Being afraid always makes people wiser",
+        "Wise people are never afraid",
+        "Excuses are always honest"
+       ],
+       "answer": "Fear can disguise itself as sensible reasons",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what has Ines been avoiding?",
+       "options": [
+        "Sending a message to her oldest friend",
+        "Doing her homework",
+        "Talking to her mother",
+        "Watering the tomatoes"
+       ],
+       "answer": "Sending a message to her oldest friend",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does this story connect to Lila's story in Chapter 3?",
+       "options": [
+        "Both show the cost of not saying something honestly",
+        "Both are about winning a competition",
+        "Both take place during a storm",
+        "Both end with someone moving away"
+       ],
+       "answer": "Both show the cost of not saying something honestly",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Mr Adebayo says 'It is not a lesson' after telling Ines his story?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Storm Season",
+     "synopsis": "During a winter storm, Ines and Ravi go down to the harbour to check on the old boats and see how the sea is slowly changing the town.",
+     "text": "By February, the storms had names. The newest one arrived on a Sunday, and by mid-afternoon the sea had swallowed the beach completely and was hurling itself against the harbour wall in great white explosions.\nRavi turned up at Ines's door in a coat two sizes too big. \"Grandad's worried about the Margaret,\" he said. \"He keeps asking if she's tied up properly. I said I'd go and look.\"\nThe Margaret was a small blue fishing boat that his grandfather had owned for forty years and had not sailed for five. She was moored in the inner harbour, behind the lock gates, where the water was supposed to be calm.\nThey walked bent over against the wind. Salt stung their faces. The promenade railings were draped with seaweed, and a section of the path had simply gone, leaving a raw edge of broken concrete and sand.\n\"That was there last year,\" Ravi said, pointing. \"There was a bench. People used to eat chips on it.\"\nInes looked at the gap. It seemed impossible that something so solid could be taken so quickly.\nThe inner harbour was choppy but sheltered. The Margaret was rocking hard against her fenders, paint peeling, ropes straining. Ravi checked every knot, his hands moving the way his grandfather's had: over, under, through, pull. One rope had worked loose. He retied it, then stood back, dripping.\n\"She's fine,\" he said, but his voice was uncertain. \"For now.\"\nThey sat for a while in the shelter of the harbour master's hut. The rain eased into a fine mist. Out past the wall, the waves were still enormous, grey and shining.\n\"The council wants to build a new sea wall,\" Ravi said. \"Higher. But they'd have to take out the old harbour to do it. Grandad says the town has always moved back from the sea, a little bit every hundred years. He says there used to be a whole street out there.\" He pointed into the water.\n\"Does that scare you?\" Ines asked.\nRavi thought about it. \"Sometimes. But it's also sort of... honest? The sea doesn't pretend. Things change whether we want them to or not.\"\nInes thought of her old bedroom, of Mr Adebayo's letter, of the empty space where the bench had been. Some changes were storms. Some were tides. You could not stop either, but you could check the ropes.\nWhen they got back, Ravi's grandfather was waiting by the window. \"Is she tied up?\" he asked.\n\"She's tied up, Grandad.\"\nThe old man nodded, satisfied. Ten minutes later, he asked again. Ravi answered exactly the same way, just as patiently, and Ines, watching from the doorway, understood that this too was a kind of knot.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is the Margaret?",
+       "options": [
+        "A small blue fishing boat",
+        "Ravi's grandmother",
+        "A café on the promenade",
+        "The name of the storm"
+       ],
+       "answer": "A small blue fishing boat",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what has disappeared from the promenade?",
+       "options": [
+        "A section of path and a bench",
+        "The harbour master's hut",
+        "The lock gates",
+        "The lighthouse"
+       ],
+       "answer": "A section of path and a bench",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Ravi do to the loose rope?",
+       "options": [
+        "He reties it",
+        "He cuts it",
+        "He leaves it",
+        "He replaces it with chain"
+       ],
+       "answer": "He reties it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the council want to build?",
+       "options": [
+        "A higher sea wall",
+        "A new marina",
+        "A car park",
+        "A fish market"
+       ],
+       "answer": "A higher sea wall",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Ravi's grandfather say the town has always done?",
+       "options": [
+        "Moved back from the sea",
+        "Built further into the sea",
+        "Stayed exactly the same",
+        "Moved up into the hills overnight"
+       ],
+       "answer": "Moved back from the sea",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Ines mean when she thinks 'you could check the ropes'?",
+       "options": [
+        "You can care for what matters even when you cannot stop change",
+        "You should never go near the sea",
+        "Boats are more important than people",
+        "Storms can be controlled"
+       ],
+       "answer": "You can care for what matters even when you cannot stop change",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the final sentence suggest about Ravi answering the same question twice?",
+       "options": [
+        "His patience holds his grandfather safe, like a knot",
+        "He is bored of his grandfather",
+        "He did not hear the question",
+        "He is lying about the boat"
+       ],
+       "answer": "His patience holds his grandfather safe, like a knot",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the writer links the theme of change in the town to the grandfather's memory?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Rooftop",
+     "synopsis": "On the first warm evening of summer, the residents of Harbour Row gather on the roof, and Ines realises how much has changed since she arrived.",
+     "text": "Nobody was supposed to go on the roof of Harbour Row. There was a sign on the door that said so, in faded red capitals. But Marguerite had a key, and on the first warm evening of June she announced at soup night that the rules were going to take a holiday.\nSo they climbed: Ines and her mother, Ravi and his grandfather, who took the stairs one at a time with Ravi's arm under his, Lila and Kemi with the portable speaker, the baby from the third floor in a sling on his father's chest. Mr Adebayo came last, carrying a bowl of tomatoes from the courtyard, the first of the season.\nThe roof was flat and gritty and covered in pigeon feathers. But from up there you could see everything: the curve of the bay, the harbour with the Margaret bobbing among the boats, the gap in the promenade where the bench had been, now fenced off with orange barriers. The sea was calm and gold. It looked as if it had never thrown anything at anyone.\nLila was leaving for the dance academy in two weeks. She and Kemi were arguing cheerfully about which songs she should take. Kemi had auditioned for a youth theatre company instead and got in. \"Better costumes,\" she said. \"Less counting.\"\nRavi's grandfather sat on an upturned crate and told the story about the boat on the pub roof again. It was different this time; the boat was bigger and the pub had become a church. Nobody corrected him. Ravi caught Ines's eye and smiled.\nInes found Mr Adebayo by the railing, looking out at the water.\n\"You have changed,\" he said.\n\"Have I?\"\n\"When you came, you stood in the courtyard as if the ground might move. Now you stand as if it belongs to you a little.\" He offered her a tomato. \"That is all belonging is. A little, then a little more.\"\nShe thought of the spare key, still on its red ribbon by her bed; of the stairwell full of candles; of her friend's message in capital letters; of the knot Ravi tied over and over. Each of the people on this roof had been holding on to something: a dream, a memory, a fear, a boat. And each of them, in some small way, had had to let something go.\nHer mother came over and put an arm round her. \"One month, I said. It took nearly a year.\"\n\"Shoes,\" said Ines. \"They hurt before they fit.\"\nThe sun slipped into the sea. Lila turned up the music, and the baby, who had learned to clap that week, clapped at nothing in particular. Ines laughed and, for the first time since the removal van had driven away, did not feel like the new one.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, who has a key to the roof?",
+       "options": [
+        "Marguerite",
+        "Ravi",
+        "Mr Adebayo",
+        "Ines's mother"
+       ],
+       "answer": "Marguerite",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Mr Adebayo carry up to the roof?",
+       "options": [
+        "A bowl of tomatoes",
+        "A pot of soup",
+        "A folding chair",
+        "A photograph"
+       ],
+       "answer": "A bowl of tomatoes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what has Kemi got into?",
+       "options": [
+        "A youth theatre company",
+        "The dance academy",
+        "A swimming team",
+        "A music college"
+       ],
+       "answer": "A youth theatre company",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how is the grandfather's story different this time?",
+       "options": [
+        "The boat is bigger and the pub is now a church",
+        "It is about a different storm",
+        "Ravi tells it instead",
+        "It has a sad ending"
+       ],
+       "answer": "The boat is bigger and the pub is now a church",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Mr Adebayo describe belonging?",
+       "options": [
+        "A little, then a little more",
+        "Something you are born with",
+        "Something you can buy",
+        "A feeling that comes all at once"
+       ],
+       "answer": "A little, then a little more",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Ines repeat 'They hurt before they fit'?",
+       "options": [
+        "To show she now understands her mother's words from Chapter 1",
+        "To complain about her new shoes",
+        "To tease her mother for being wrong",
+        "To change the subject"
+       ],
+       "answer": "To show she now understands her mother's words from Chapter 1",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which theme links almost all the characters on the roof?",
+       "options": [
+        "Holding on and letting go",
+        "Getting rich",
+        "Winning against rivals",
+        "Escaping from danger"
+       ],
+       "answer": "Holding on and letting go",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the writer chooses the roof, a place where people are not supposed to go, for the final chapter?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
