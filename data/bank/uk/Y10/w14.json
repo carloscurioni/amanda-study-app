@@ -4512,7 +4512,1405 @@
      "errors": []
     }
    ]
+  },
+  "sci": {
+   "topic": "Chemistry: simple molecules and covalent bonds",
+   "questions": [
+    {
+     "id": "r76agboerg116",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is a covalent bond?",
+     "options": [
+      "A shared pair of electrons between two atoms",
+      "The attraction between oppositely charged ions",
+      "A sea of delocalised electrons around positive ions",
+      "The transfer of electrons from a metal to a non-metal"
+     ],
+     "answer": "A shared pair of electrons between two atoms",
+     "accept": [],
+     "hint": "Think about what happens to the electrons: are they given away or shared?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xfikhs1ar5277",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which pair of elements is most likely to form a covalent bond?",
+     "options": [
+      "Hydrogen and chlorine",
+      "Sodium and chlorine",
+      "Magnesium and oxygen",
+      "Potassium and bromine"
+     ],
+     "answer": "Hydrogen and chlorine",
+     "accept": [],
+     "hint": "Covalent bonds usually form between two non-metals.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pe8pqlnyymr5",
+     "subject": "sci",
+     "type": "num",
+     "q": "How many electrons are shared in one single covalent bond?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "A single bond is one shared pair.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb3bpra1slskfv",
+     "subject": "sci",
+     "type": "num",
+     "q": "A hydrogen atom has one electron. How many electrons are in the outer shell of each hydrogen atom in a hydrogen molecule, H₂?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Count the electron it owns plus the one it shares from the other atom.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rck9nrv1mnq18e",
+     "subject": "sci",
+     "type": "num",
+     "q": "How many covalent bonds does the carbon atom form in a molecule of methane, CH₄?",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Carbon has four outer electrons and needs eight.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rquixrhdljhl9",
+     "subject": "sci",
+     "type": "num",
+     "q": "How many shared pairs of electrons are there in one molecule of water, H₂O?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Oxygen bonds to two hydrogen atoms with single bonds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15j2nss8iwje5",
+     "subject": "sci",
+     "type": "num",
+     "q": "How many lone (non-bonding) pairs of electrons are on the nitrogen atom in ammonia, NH₃?",
+     "options": [],
+     "answer": "1",
+     "accept": [],
+     "hint": "Nitrogen has five outer electrons; three are used in bonds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10z2qp9armkzm",
+     "subject": "sci",
+     "type": "short",
+     "q": "State the type of covalent bond between the two atoms in an oxygen molecule, O₂.",
+     "options": [],
+     "answer": "double bond",
+     "accept": [
+      "double",
+      "double covalent bond",
+      "a double bond",
+      "double covalent"
+     ],
+     "hint": "Each oxygen atom needs two more electrons to fill its outer shell.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12u9zdp1wuyd07",
+     "subject": "sci",
+     "type": "num",
+     "q": "How many shared pairs of electrons are there between the two atoms in a nitrogen molecule, N₂?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Nitrogen is in Group 5 and needs three more electrons.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmqlvwic9bfhy",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In a dot-and-cross diagram of carbon dioxide, CO₂, how many pairs of electrons does each oxygen atom share with the carbon atom?",
+     "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+     ],
+     "answer": "2",
+     "accept": [],
+     "hint": "Draw O=C=O and count the lines between each pair of atoms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jzs8a01w5iboq",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In a dot-and-cross diagram, what do the dots and the crosses show?",
+     "options": [
+      "Electrons from different atoms",
+      "Protons and neutrons",
+      "Positive and negative ions",
+      "Lone pairs and bonding pairs only"
+     ],
+     "answer": "Electrons from different atoms",
+     "accept": [],
+     "hint": "The two symbols help you see where each electron came from.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4tm4wtep088l",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which of these substances has a simple molecular structure?",
+     "options": [
+      "Carbon dioxide",
+      "Sodium chloride",
+      "Diamond",
+      "Magnesium"
+     ],
+     "answer": "Carbon dioxide",
+     "accept": [],
+     "hint": "Look for a substance made of small separate molecules of non-metal atoms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra4j6zeij1ejn",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why do simple molecular substances have low melting and boiling points?",
+     "options": [
+      "Only weak intermolecular forces need to be overcome",
+      "The covalent bonds inside the molecules are weak",
+      "They contain free electrons",
+      "Their ions are only weakly attracted"
+     ],
+     "answer": "Only weak intermolecular forces need to be overcome",
+     "accept": [],
+     "hint": "When water boils, do the H–O bonds break, or do the molecules just move apart?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqhr3y8135n8sh",
+     "subject": "sci",
+     "type": "short",
+     "q": "Name the forces between molecules that are overcome when methane boils.",
+     "options": [],
+     "answer": "intermolecular forces",
+     "accept": [
+      "intermolecular force",
+      "intermolecular forces of attraction",
+      "weak intermolecular forces",
+      "forces between molecules"
+     ],
+     "hint": "They act between separate molecules, not inside them.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkf64f516kxe1h",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which statement explains why simple molecular substances do not conduct electricity?",
+     "options": [
+      "The molecules have no overall charge and there are no free electrons",
+      "The covalent bonds are too strong",
+      "The molecules are too large to move",
+      "Their ions are held in a fixed lattice"
+     ],
+     "answer": "The molecules have no overall charge and there are no free electrons",
+     "accept": [],
+     "hint": "To conduct, a substance needs charged particles that can move.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6vjcjhnzh465",
+     "subject": "sci",
+     "type": "open",
+     "q": "Explain why chlorine, Cl₂, is a gas at room temperature. Refer to its bonding and structure in your answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Mention the covalent bond inside the molecule and the forces between molecules.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa": {
+   "topic": "Going out: invitations and arrangements (ir a + infinitive)",
+   "questions": [
+    {
+     "id": "rx22sed1f6d9jy",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the Spanish for: 'Do you want to go to the cinema?'",
+     "options": [
+      "¿Quieres ir al cine?",
+      "¿Vas al cine ayer?",
+      "¿Fuiste al cine?",
+      "¿Te gusta el cine?"
+     ],
+     "answer": "¿Quieres ir al cine?",
+     "accept": [],
+     "hint": "Look for the verb querer followed by ir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qnuyajry80q0",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which reply accepts an invitation?",
+     "options": [
+      "¡Vale, me encantaría!",
+      "Lo siento, no puedo.",
+      "No me apetece.",
+      "Tengo que estudiar."
+     ],
+     "answer": "¡Vale, me encantaría!",
+     "accept": [],
+     "hint": "Find the answer that says yes with enthusiasm.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14pjk22g6svtk",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which reply declines an invitation politely?",
+     "options": [
+      "Lo siento, no puedo.",
+      "¡Genial, de acuerdo!",
+      "Sí, claro.",
+      "¡Qué buena idea!"
+     ],
+     "answer": "Lo siento, no puedo.",
+     "accept": [],
+     "hint": "Which one starts with an apology?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbk614ej3rwnn",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'de acuerdo' mean?",
+     "options": [
+      "OK / agreed",
+      "I'm sorry",
+      "See you later",
+      "Of course not"
+     ],
+     "answer": "OK / agreed",
+     "accept": [],
+     "hint": "You say it when you agree to a plan.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lys1o176tczw",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does '¿Dónde quedamos?' mean?",
+     "options": [
+      "Where shall we meet?",
+      "Where do you live?",
+      "When shall we meet?",
+      "Where are you going?"
+     ],
+     "answer": "Where shall we meet?",
+     "accept": [],
+     "hint": "Dónde asks about a place; quedar is about arranging to meet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx7vh41ud56i5",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does '¿A qué hora quedamos?' ask about?",
+     "options": [
+      "The time to meet",
+      "The place to meet",
+      "Who is coming",
+      "How to get there"
+     ],
+     "answer": "The time to meet",
+     "accept": [],
+     "hint": "Hora means hour.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cbzpdx1wk7c8k",
+     "subject": "spa",
+     "type": "short",
+     "q": "Fill in the gap with the correct form of ir: 'Mañana yo ___ a ver una película.'",
+     "options": [],
+     "answer": "voy",
+     "accept": [],
+     "hint": "Use the yo form of ir in the present tense.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3j5l15ouevk0",
+     "subject": "spa",
+     "type": "short",
+     "q": "Fill in the gap with the correct form of ir: '¿Qué ___ a hacer tú el sábado?'",
+     "options": [],
+     "answer": "vas",
+     "accept": [],
+     "hint": "Use the tú form of ir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h45poh1dnxcyz",
+     "subject": "spa",
+     "type": "short",
+     "q": "Fill in the gap with the correct form of ir: 'Nosotros ___ a quedar en la plaza.'",
+     "options": [],
+     "answer": "vamos",
+     "accept": [],
+     "hint": "Use the nosotros form of ir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rurxuqvyjxftu",
+     "subject": "spa",
+     "type": "short",
+     "q": "Fill in the gap with the correct form of ir: 'Mis amigos ___ a jugar al fútbol.'",
+     "options": [],
+     "answer": "van",
+     "accept": [],
+     "hint": "The subject is plural: they.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdy550o1vbsvzy",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct word: 'Voy a ___ al parque con mi hermana.'",
+     "options": [
+      "ir",
+      "voy",
+      "vas",
+      "fui"
+     ],
+     "answer": "ir",
+     "accept": [],
+     "hint": "After 'voy a' you always need the infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfl286uv0d34p",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence is in the immediate future (ir a + infinitive)?",
+     "options": [
+      "Vamos a cenar en un restaurante.",
+      "Cenamos en un restaurante ayer.",
+      "Cené en un restaurante.",
+      "Ceno en un restaurante cada día."
+     ],
+     "answer": "Vamos a cenar en un restaurante.",
+     "accept": [],
+     "hint": "Look for a form of ir, then a, then an infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i1oxmm1c7ubb5",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'at eight o'clock'",
+     "options": [],
+     "answer": "a las ocho",
+     "accept": [
+      "a las 8"
+     ],
+     "hint": "Use 'a las' before the hour.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rph7igqistoex",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence declines an invitation and gives a reason?",
+     "options": [
+      "Lo siento, no puedo porque tengo que estudiar.",
+      "Sí, vamos a las siete.",
+      "¿Quedamos en la plaza?",
+      "Me encanta el cine."
+     ],
+     "answer": "Lo siento, no puedo porque tengo que estudiar.",
+     "accept": [],
+     "hint": "Look for 'porque', which introduces a reason.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ku4r84dveozs",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 2–3 sentences in Spanish inviting a friend to go out this weekend. Say where you are going and when and where you will meet. Use 'ir a + infinitive'.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start with ¿Quieres…? and use quedar for the meeting point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rthwkje2vv9ki",
+     "subject": "spa",
+     "type": "open",
+     "q": "Your friend has invited you to the cinema on Friday. Write 2–3 sentences in Spanish declining politely, giving a reason and suggesting another day.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use lo siento, porque and a form of ir a for your new plan.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "Três Minutos no Viaduto",
+   "premise": "Iara, de quinze anos, descobre o slam numa batalha de poesia debaixo de um viaduto de São Paulo e, entre a história da avó migrante, uma rua sem luz e uma nota que a frustra, aprende que a poesia falada pode guardar memórias, denunciar injustiças e reunir um bairro inteiro.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: Três minutos",
+     "synopsis": "Iara vai pela primeira vez a um slam debaixo de um viaduto, aprende as regras da batalha de poesia e descobre que tem vontade de escrever.",
+     "text": "Iara tinha quinze anos e achava que poesia morava só nos livros didáticos, entre um exercício de gramática e outro. Foi o primo Davi quem a arrastou, numa sexta-feira à noite, até o Viaduto Azul, a três pontos de ônibus de casa.\n— Hoje tem slam — ele disse, como se fosse óbvio.\nDebaixo do concreto, perto de um muro coberto de grafite, umas sessenta pessoas se espremiam em volta de um microfone ligado a uma caixa de som pequena. Não havia palco. Havia um varal de luzinhas, um banco de madeira e uma moça de boné segurando uma prancheta.\n— Boa noite, Viaduto! — gritou a moça. — Para quem chegou agora, as regras: cada poeta tem três minutos. O poema tem que ser autoral. Nada de música, nada de figurino, nada de objeto. Só a voz e o corpo.\nEla escolheu cinco pessoas da plateia para serem juradas e entregou a cada uma um bloquinho de papel.\n— As notas vão de zero a dez. A maior e a menor são descartadas. E lembrem: a nota é para o poema daquela noite, não para a pessoa.\nIara cruzou os braços. Parecia um campeonato esquisito. Como dar nota para um sentimento?\nO primeiro poeta era um menino magro, de mochila nas costas, chamado Tomás. Ele chegou perto do microfone, fechou os olhos por um segundo e começou:\n— Às seis e dez o ônibus não vem. / Às seis e vinte o ônibus não vem. / Às seis e meia minha mãe já foi, / e eu ainda espero o ônibus que não vem.\nA plateia estalou os dedos. Alguém gritou “Fala, poeta!”. Tomás continuou falando do motorista cansado, da janela embaçada, da cidade que acordava antes do sol. A voz dele subia e descia como a rua cheia de lombadas. Quando terminou, ficou um silêncio curto, e então todo mundo aplaudiu.\nIara percebeu que estava com a boca aberta. Aquele poema era sobre a linha de ônibus que ela pegava todos os dias. Era sobre a vida dela, e ela nunca tinha pensado que aquilo pudesse virar verso.\n— Gostou? — perguntou Davi, rindo da cara dela.\n— Ele só falou do ônibus — ela respondeu, tentando parecer indiferente. — Mas… parecia música.\n— É a repetição — explicou o primo. — No slam a gente escreve para ser ouvido. O ouvido precisa de pontos onde se segurar.\nNaquela noite passaram mais nove poetas. Uma senhora falou da horta que plantava na laje. Uma menina falou do cabelo crespo que tinha aprendido a amar. Um rapaz falou do irmão que trabalhava entregando comida de bicicleta. Cada poema era diferente, mas todos pareciam dizer a mesma coisa: “eu existo, e a minha história importa”.\nNo ônibus de volta, Iara tirou da mochila um caderno de capa verde, que usava para anotações de biologia. Arrancou uma folha do meio e escreveu, com a letra tremendo por causa dos buracos da rua: “Três minutos é pouco para quem nunca falou”.\nLeu a frase duas vezes. Não sabia se era um poema. Mas guardou a folha no bolso como quem guarda um bilhete de ida.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem leva Iara ao slam pela primeira vez?",
+       "options": [
+        "O primo Davi",
+        "A avó",
+        "Uma professora",
+        "O menino Tomás"
+       ],
+       "answer": "O primo Davi",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde acontece o slam?",
+       "options": [
+        "Debaixo do Viaduto Azul",
+        "Na biblioteca da escola",
+        "Num teatro do centro",
+        "Dentro de um ônibus"
+       ],
+       "answer": "Debaixo do Viaduto Azul",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quantos minutos cada poeta tem para apresentar o poema?",
+       "options": [],
+       "answer": "três",
+       "accept": [
+        "3",
+        "três minutos",
+        "3 minutos",
+        "tres"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual destas coisas é proibida no slam?",
+       "options": [
+        "Usar música ou figurino",
+        "Falar alto",
+        "Recitar um poema autoral",
+        "Olhar para a plateia"
+       ],
+       "answer": "Usar música ou figurino",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como as notas dos jurados são calculadas?",
+       "options": [
+        "A maior e a menor são descartadas",
+        "Só vale a nota mais alta",
+        "A plateia vota levantando a mão",
+        "O poeta escolhe a nota preferida"
+       ],
+       "answer": "A maior e a menor são descartadas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o poema de Tomás impressiona tanto Iara?",
+       "options": [
+        "Fala de uma situação da vida dela que ela nunca imaginou virar poesia",
+        "Ela já conhecia o poema de cor",
+        "Tomás era o seu melhor amigo",
+        "O poema tinha muitas palavras difíceis"
+       ],
+       "answer": "Fala de uma situação da vida dela que ela nunca imaginou virar poesia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase final, guardar a folha “como quem guarda um bilhete de ida”, sugere?",
+       "options": [
+        "Que Iara está começando uma nova jornada na poesia",
+        "Que Iara vai viajar para outra cidade",
+        "Que Iara perdeu o ônibus",
+        "Que Iara quer esquecer o slam"
+       ],
+       "answer": "Que Iara está começando uma nova jornada na poesia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o slam tem a regra de usar só a voz e o corpo, sem música nem objetos?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O caderno de capa verde",
+     "synopsis": "Iara tenta escrever seu primeiro poema e encontra o tema nas histórias da avó, que chegou a São Paulo ainda jovem.",
+     "text": "Durante uma semana inteira, o caderno de capa verde virou um cemitério de versos. Iara escrevia sobre o amor, e parecia letra de música ruim. Escrevia sobre a escola, e parecia redação. Escrevia sobre a cidade, e parecia uma lista de reclamações.\n— Está faltando alguma coisa — disse ela para o teto do quarto, às onze da noite.\nNa cozinha, a avó Zuleide ainda estava acordada, debulhando feijão para o almoço de domingo. Fazia isso desde que Iara se lembrava: as mãos rápidas, os grãos caindo na bacia de alumínio com um barulhinho de chuva.\n— Perdeu o sono, menina?\n— Perdi o poema — respondeu Iara, sentando-se à mesa.\nA avó riu e empurrou metade das vagens para ela.\n— Então ajuda aqui, que as mãos ocupadas soltam a cabeça.\nFicaram um tempo em silêncio. Depois, sem que ninguém pedisse, a avó começou a contar. Contou do dia em que chegou a São Paulo com dezessete anos, depois de três dias de viagem de ônibus, trazendo uma mala de papelão amarrada com barbante. Contou do primeiro emprego, numa fábrica de tecidos, e do frio que sentiu na primeira manhã de junho, um frio que ela nem sabia que existia. Contou da saudade do cheiro de terra molhada e do canto dos pássaros da roça.\n— Aqui eu troquei passarinho por buzina — disse, rindo. — Mas aprendi a gostar da buzina também.\nIara parou de debulhar. Aquela frase tinha ficado vibrando no ar.\n— Vó, posso escrever sobre a senhora?\n— Sobre mim? E eu lá sou assunto de poesia?\n— É, sim. A senhora é o assunto.\nNaquela madrugada, Iara voltou para o quarto e não escreveu sobre o amor, nem sobre a escola, nem sobre a cidade inteira. Escreveu sobre uma mala de papelão, sobre um frio desconhecido, sobre uma mulher que trocou passarinho por buzina. Percebeu que, quando falava de uma coisa pequena e concreta, o poema ficava maior.\nOs primeiros versos saíram assim:\n“Minha avó chegou com uma mala de papelão / e um barbante segurando o mundo inteiro. / Minha avó chegou sem conhecer o frio / e aprendeu o inverno numa fila de fábrica.”\nEla leu em voz baixa e sentiu um arrepio. Lembrou do que Davi tinha dito: no slam, a gente escreve para ser ouvido. Então leu de novo, mais alto, e percebeu onde a voz tropeçava. Cortou uma palavra aqui, trocou outra ali. A palavra “mundo” ficou mais forte quando ela fez uma pequena pausa antes dela.\nÀs duas da manhã, o caderno tinha uma página inteira riscada e reescrita. Não estava pronto. Mas, pela primeira vez, parecia vivo.\nAntes de dormir, Iara escreveu no canto da folha, com letra miúda: “Poesia não é falar bonito. É falar verdadeiro”. Depois apagou a luz, ouvindo, lá longe, a buzina de um carro que passava na avenida, e sorriu.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Iara não consegue terminar os primeiros poemas?",
+       "options": [
+        "Os textos parecem falsos ou sem vida",
+        "Ela não tem caderno",
+        "A avó não deixa ela escrever",
+        "Ela não sabe ler bem"
+       ],
+       "answer": "Os textos parecem falsos ou sem vida",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a avó Zuleide está fazendo na cozinha?",
+       "options": [
+        "Debulhando feijão",
+        "Costurando uma roupa",
+        "Lavando louça",
+        "Fazendo um bolo"
+       ],
+       "answer": "Debulhando feijão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, com quantos anos a avó chegou a São Paulo?",
+       "options": [],
+       "answer": "dezessete",
+       "accept": [
+        "17",
+        "dezessete anos",
+        "17 anos"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, em que tipo de mala a avó trouxe suas coisas?",
+       "options": [
+        "Uma mala de papelão amarrada com barbante",
+        "Uma mochila de couro",
+        "Uma mala de rodinhas",
+        "Uma caixa de madeira"
+       ],
+       "answer": "Uma mala de papelão amarrada com barbante",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a avó quer dizer com “troquei passarinho por buzina”?",
+       "options": [
+        "Ela trocou a vida no campo pela vida na cidade",
+        "Ela vendeu seus passarinhos",
+        "Ela começou a trabalhar dirigindo",
+        "Ela não gosta de animais"
+       ],
+       "answer": "Ela trocou a vida no campo pela vida na cidade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Iara descobre sobre escrever poesia?",
+       "options": [
+        "Falar de coisas pequenas e concretas deixa o poema maior",
+        "É preciso usar palavras difíceis",
+        "Poemas bons sempre falam de amor",
+        "Só se escreve poesia de dia"
+       ],
+       "answer": "Falar de coisas pequenas e concretas deixa o poema maior",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Iara lê o poema em voz alta?",
+       "options": [
+        "Para perceber como ele soa para quem vai ouvir",
+        "Para acordar a avó",
+        "Para decorar para uma prova",
+        "Porque esqueceu os óculos"
+       ],
+       "answer": "Para perceber como ele soa para quem vai ouvir",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Iara escreveu que poesia “é falar verdadeiro”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Microfone aberto",
+     "synopsis": "Iara se inscreve no microfone aberto, esquece o poema no meio da apresentação e descobre como a plateia do slam reage.",
+     "text": "Na sexta seguinte, Iara chegou ao Viaduto Azul com a folha dobrada no bolso e as mãos geladas. Antes da batalha principal, havia o microfone aberto: quem quisesse podia apresentar um poema, sem nota e sem jurados, só para treinar.\n— Vai lá — disse Davi. — É o lugar certo para errar.\nIara escreveu o nome numa lista presa com fita crepe na pilastra. Era a sexta inscrita. Enquanto os outros falavam, ela repetia os versos baixinho, mexendo os lábios como quem reza. Minha avó chegou com uma mala de papelão… Minha avó chegou com uma mala de papelão…\n— Agora, com a gente, Iara! — anunciou a moça de boné.\nO microfone parecia mais alto do que da última vez. As luzinhas do varal piscavam. Sessenta rostos olhavam para ela. Iara respirou fundo e começou:\n— Minha avó chegou com uma mala de papelão / e um barbante segurando o mundo inteiro. / Minha avó chegou sem conhecer o frio…\nE então, nada. A frase seguinte simplesmente sumiu. Era como se alguém tivesse apagado a página dentro da cabeça dela. Iara ficou parada, com a boca entreaberta, sentindo o rosto queimar. Pensou em sair correndo. Pensou em tirar a folha do bolso. Pensou que todo mundo estava rindo por dentro.\nMas o que veio da plateia foi outra coisa.\n— Vai, poeta! — gritou uma voz.\n— Respira! — gritou outra.\nE começaram a estalar os dedos, devagar, num ritmo calmo, como um coração batendo. Tec. Tec. Tec. Iara olhou para a primeira fila e viu Tomás, o menino do poema do ônibus, fazendo um sinal com a mão: volta do começo.\nEla fechou os olhos e voltou.\n— Minha avó chegou com uma mala de papelão…\nDessa vez, as palavras vieram em fila, uma puxando a outra, como vagens soltando os grãos. Ela falou do frio da fábrica, da saudade da terra molhada, do passarinho trocado por buzina. A voz ainda tremia, mas agora o tremor parecia parte do poema. Quando terminou, a plateia explodiu em palmas, e alguém gritou: “Respeita a avó!”.\nIara desceu do lugar do microfone sem sentir as pernas. Davi a abraçou pelos ombros.\n— Viu? Ninguém aqui quer que você caia. Todo mundo já esqueceu um verso um dia.\nTomás se aproximou, meio sem jeito, com a mochila de sempre.\n— Teu poema é bom — disse ele. — Mas você fala muito rápido quando fica nervosa. O poema precisa de ar. Se quiser, no sábado tem oficina na biblioteca do bairro. Eu ajudo a organizar.\n— Oficina de quê?\n— De escrever e de falar. Que no slam é quase a mesma coisa.\nNo caminho para casa, Iara pensou no momento em que tinha esquecido o verso. Tinha sido o pior segundo da vida dela. E também, de um jeito estranho, o mais importante: foi ali que ela entendeu que a plateia do slam não era um tribunal. Era uma roda.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a diferença entre o microfone aberto e a batalha principal?",
+       "options": [
+        "No microfone aberto não há notas nem jurados",
+        "No microfone aberto só a organizadora fala",
+        "No microfone aberto os poemas são cantados",
+        "No microfone aberto cada poeta tem dez minutos"
+       ],
+       "answer": "No microfone aberto não há notas nem jurados",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, em que posição da lista Iara se inscreveu?",
+       "options": [],
+       "answer": "sexta",
+       "accept": [
+        "6",
+        "sexto",
+        "6ª",
+        "a sexta",
+        "sexta inscrita"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que acontece com Iara no meio do poema?",
+       "options": [
+        "Ela esquece o verso seguinte",
+        "O microfone para de funcionar",
+        "Começa a chover",
+        "A avó aparece de surpresa"
+       ],
+       "answer": "Ela esquece o verso seguinte",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como a plateia reage quando Iara trava?",
+       "options": [
+        "Incentiva com gritos e estalando os dedos devagar",
+        "Vaia e pede o próximo poeta",
+        "Fica em silêncio total",
+        "Vai embora"
+       ],
+       "answer": "Incentiva com gritos e estalando os dedos devagar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que conselho Tomás dá sobre a forma como Iara recita?",
+       "options": [
+        "Ela fala rápido demais quando fica nervosa",
+        "Ela deveria usar figurino",
+        "Ela deveria ler da folha",
+        "Ela fala baixo demais"
+       ],
+       "answer": "Ela fala rápido demais quando fica nervosa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, onde vai acontecer a oficina que Tomás organiza?",
+       "options": [],
+       "answer": "na biblioteca",
+       "accept": [
+        "biblioteca",
+        "biblioteca do bairro",
+        "na biblioteca do bairro"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Iara quer dizer ao pensar que a plateia “não era um tribunal. Era uma roda”?",
+       "options": [
+        "Que o público estava ali para apoiar, não para julgar",
+        "Que as pessoas dançavam em círculo",
+        "Que havia um juiz de verdade",
+        "Que ela nunca mais voltaria ao slam"
+       ],
+       "answer": "Que o público estava ali para apoiar, não para julgar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que esquecer o verso acabou sendo um momento importante para Iara?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A oficina da repetição",
+     "synopsis": "Na biblioteca do bairro, Iara aprende com Tomás e outros poetas a usar a repetição, as pausas e o corpo para dar força ao poema.",
+     "text": "A biblioteca do bairro ficava no segundo andar de um centro comunitário, em cima de uma quadra onde crianças jogavam futsal. No sábado, havia doze pessoas sentadas em roda, entre estantes de livros doados e um ventilador que rangia a cada volta.\nTomás escreveu na lousa, com letra torta: ANÁFORA.\n— Alguém sabe o que é?\nUma menina de óculos, chamada Marina, levantou a mão.\n— É repetir a mesma palavra ou expressão no começo de vários versos.\n— Isso. E por que a gente faz isso no slam?\nNinguém respondeu. Tomás então recitou o começo do seu poema do ônibus: “Às seis e dez o ônibus não vem. / Às seis e vinte o ônibus não vem.”\n— Quem está ouvindo não pode voltar a página — explicou. — A repetição é um corrimão. A pessoa se segura nela e sabe onde está. E, cada vez que a frase volta, ela pesa mais. Na terceira vez, o ônibus que não vem já não é só um ônibus. É a cidade que não chega para todo mundo.\nIara anotou tudo no caderno verde. Percebeu que já tinha feito isso sem saber: “Minha avó chegou…” aparecia duas vezes no poema dela.\nDepois vieram os exercícios. Primeiro, cada um tinha que escrever cinco versos começando com a mesma expressão. Iara escreveu: “Minha avó sabe… / Minha avó sabe o nome de cada tempero. / Minha avó sabe a hora da chuva pelo cheiro. / Minha avó sabe o preço do pão desde mil novecentos e pouco. / Minha avó sabe esperar.” Quando leu em voz alta, o último verso, mais curto, caiu como uma pedra no silêncio. Alguém soltou um “uau” baixinho.\n— Percebeu? — disse Tomás. — Você quebrou o padrão no final. Repetição cria expectativa; a quebra cria surpresa.\nO segundo exercício era sobre pausa. Cada um lia um verso e, antes da palavra mais importante, contava até dois em silêncio. Iara leu: “e um barbante segurando… o mundo inteiro.” O silêncio antes de “mundo” deixou a palavra enorme.\n— A pausa é a vírgula da voz — disse Marina, e todo mundo riu, porque era verdade.\nO terceiro exercício foi o mais difícil: falar o poema olhando nos olhos de uma única pessoa da roda. Iara escolheu uma senhora de cabelos brancos que tinha passado a manhã fazendo crochê enquanto ouvia. Recitou para ela, devagar, com as mãos soltas. No verso sobre o frio da fábrica, a senhora parou a agulha. No verso do passarinho trocado por buzina, ela sorriu e balançou a cabeça, como quem diz: eu sei como é.\nAo final, a senhora chamou Iara de lado.\n— Eu também vim de longe, minha filha. Faz cinquenta anos. Seu poema falou de mim.\nIara voltou para casa com o caderno cheio de setas, palavras sublinhadas e pausas marcadas com barrinhas. Tinha aprendido que um poema de slam não termina quando a gente acaba de escrever. Ele termina quando encontra alguém que escuta.\nNaquela noite, ela acrescentou um verso novo ao final do poema, depois de uma pausa bem longa: “Minha avó sabe esperar. / Eu estou aprendendo.”",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde fica a biblioteca do bairro?",
+       "options": [
+        "No segundo andar de um centro comunitário",
+        "Dentro da escola de Iara",
+        "Debaixo do viaduto",
+        "Num shopping"
+       ],
+       "answer": "No segundo andar de um centro comunitário",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do recurso que Tomás escreve na lousa?",
+       "options": [],
+       "answer": "anáfora",
+       "accept": [
+        "anafora",
+        "a anáfora"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como Marina define a anáfora?",
+       "options": [
+        "Repetir a mesma palavra ou expressão no começo de vários versos",
+        "Rimar o fim de todos os versos",
+        "Usar palavras de som parecido",
+        "Falar o poema muito rápido"
+       ],
+       "answer": "Repetir a mesma palavra ou expressão no começo de vários versos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, Tomás compara a repetição a quê?",
+       "options": [
+        "Um corrimão",
+        "Uma escada",
+        "Uma janela",
+        "Um relógio"
+       ],
+       "answer": "Um corrimão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o último verso “Minha avó sabe esperar” causa impacto?",
+       "options": [
+        "Por ser mais curto, quebra o padrão e cria surpresa",
+        "Porque rima com todos os outros",
+        "Porque Iara grita ao falar",
+        "Porque é o primeiro verso do poema"
+       ],
+       "answer": "Por ser mais curto, quebra o padrão e cria surpresa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que acontece quando Iara faz uma pausa antes da palavra “mundo”?",
+       "options": [
+        "A palavra fica mais forte",
+        "Ela esquece o resto",
+        "A plateia vai embora",
+        "O ventilador para"
+       ],
+       "answer": "A palavra fica mais forte",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a reação da senhora do crochê mostra sobre o poema de Iara?",
+       "options": [
+        "Que a história da avó representa a experiência de muitas outras pessoas",
+        "Que o poema estava muito longo",
+        "Que a senhora não gostou do tema",
+        "Que a senhora era parente de Iara"
+       ],
+       "answer": "Que a história da avó representa a experiência de muitas outras pessoas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Iara acrescentou o verso “Eu estou aprendendo” ao final do poema?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A rua também escreve",
+     "synopsis": "Marina apresenta um poema sobre a rua escura do caminho da escola, e Iara descobre como a poesia slam pode denunciar problemas e mobilizar o bairro.",
+     "text": "A rua da Pedreira era o caminho mais curto entre o conjunto de prédios e a escola estadual. Era também a rua mais escura do bairro: dos seis postes, só um funcionava, e ainda piscava como se estivesse cansado. As meninas evitavam passar por ali depois das seis. Os meninos faziam piada, mas também apressavam o passo.\nFoi sobre essa rua que Marina escreveu o poema que apresentou na sexta-feira, no Viaduto Azul.\nEla subiu ao microfone sem pressa, ajeitou os óculos e disse:\n— Este poema se chama “Seis postes”.\nE começou: “Um poste aceso, cinco apagados. / Um poste aceso, cinco promessas. / Um poste aceso, e cinco vezes eu olho para trás / antes de virar a esquina da minha própria casa.”\nO Viaduto ficou em silêncio. Ninguém estalou os dedos. Era um silêncio de quem conhecia aquela esquina. Marina falou da mãe que esperava na janela, do celular apertado na mão, da lanterna que tinha virado material escolar. No final, a voz dela endureceu: “Não peço poesia para a minha rua. / Peço luz. / A poesia eu mesma trago.”\nA plateia levantou de uma vez. Os jurados deram notas altas, mas, naquela noite, as notas pareciam o de menos. Iara sentiu um aperto no peito. O poema dela falava de memória, de afeto, de uma mulher. O de Marina falava de uma coisa que estava errada e precisava mudar.\nDepois da batalha, um grupo ficou conversando perto da pilastra.\n— E se a gente fizesse alguma coisa? — perguntou Davi. — Além do poema, digo.\nEm dois dias, eles escreveram um abaixo-assinado. Na escola, Marina pediu à professora de Língua Portuguesa para recitar “Seis postes” no intervalo, e, depois, Iara e Tomás passaram de sala em sala recolhendo assinaturas. Os alunos assinavam. Os pais assinavam. A dona da padaria colou uma cópia do poema no balcão, ao lado do pote de balas.\nEm uma semana, havia quatrocentas assinaturas. Um grupo de moradores levou o documento à subprefeitura, junto com fotos da rua à noite e uma cópia do poema impressa em papel colorido.\n— Será que alguém lá vai ler um poema? — perguntou Iara, desconfiada.\n— Talvez não — respondeu Marina. — Mas as quatrocentas pessoas que assinaram leram. E foi o poema que fez elas pararem para assinar.\nIara ficou pensando nisso a semana inteira. Tinha começado a escrever achando que poesia era sobre sentimentos. Agora via que também podia ser sobre a rua, sobre o poste, sobre o direito de voltar para casa sem medo. Um poema de slam podia ser um espelho, mostrando o que todo mundo via e ninguém dizia.\nTrês semanas depois, numa terça-feira à tarde, um caminhão com uma escada enorme parou na rua da Pedreira. Iara voltava da escola quando viu os técnicos trocando as lâmpadas. Pegou o celular e mandou uma mensagem para o grupo: “Cinco postes acesos”.\nMarina respondeu com uma única palavra: “Seis”.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual era o problema da rua da Pedreira?",
+       "options": [
+        "Só um dos seis postes funcionava",
+        "Ela estava cheia de buracos",
+        "Não tinha calçada",
+        "Era muito barulhenta"
+       ],
+       "answer": "Só um dos seis postes funcionava",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o título do poema de Marina?",
+       "options": [],
+       "answer": "Seis postes",
+       "accept": [
+        "seis postes",
+        "“Seis postes”"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como a plateia reage durante o poema de Marina?",
+       "options": [
+        "Fica em silêncio, porque conhece aquela situação",
+        "Ri das piadas do poema",
+        "Estala os dedos sem parar",
+        "Conversa e não presta atenção"
+       ],
+       "answer": "Fica em silêncio, porque conhece aquela situação",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que o grupo organiza depois da batalha?",
+       "options": [
+        "Um abaixo-assinado",
+        "Uma festa na rua",
+        "Um novo slam na escola",
+        "Uma campanha de doação de livros"
+       ],
+       "answer": "Um abaixo-assinado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quantas assinaturas o grupo consegue em uma semana?",
+       "options": [],
+       "answer": "quatrocentas",
+       "accept": [
+        "400",
+        "quatrocentas assinaturas",
+        "400 assinaturas"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Iara percebe ao comparar o seu poema com o de Marina?",
+       "options": [
+        "A poesia também pode denunciar problemas sociais e pedir mudanças",
+        "Que o poema dela é melhor",
+        "Que poemas sobre família não valem nada",
+        "Que ela deveria parar de escrever"
+       ],
+       "answer": "A poesia também pode denunciar problemas sociais e pedir mudanças",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Marina quer dizer ao responder “Seis” no final?",
+       "options": [
+        "Que agora o poste que já funcionava também conta, e a rua está toda iluminada",
+        "Que faltam seis postes",
+        "Que ela tem seis poemas novos",
+        "Que vai haver seis batalhas de slam"
+       ],
+       "answer": "Que agora o poste que já funcionava também conta, e a rua está toda iluminada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que um poema conseguiu fazer tantas pessoas assinarem o abaixo-assinado?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Nota sete vírgula dois",
+     "synopsis": "Na primeira batalha valendo vaga na final, Iara recebe uma nota mais baixa do que esperava e precisa lidar com a frustração.",
+     "text": "Faltava um mês para a final do ano no Viaduto Azul, e cada sexta-feira agora valia pontos. Os três poetas com as melhores médias da temporada iriam disputar o título. Iara nunca tinha pensado em ganhar nada; queria só falar. Mas, depois do microfone aberto, da oficina e da rua iluminada, ela começou a querer mais.\nNaquela sexta, estava em quarto lugar na lista de apresentações. Recitou o poema da avó do jeito que tinha treinado: com as pausas marcadas, os olhos na plateia, o verso final curto como uma pedra. Não esqueceu nada. Não falou rápido. Saiu do microfone com a certeza de que tinha sido a melhor apresentação da vida dela.\nEntão a moça de boné leu as notas em voz alta.\n— Jurado um: oito. Jurado dois: seis e meio. Jurado três: sete. Jurado quatro: nove. Jurado cinco: seis e seis. Descartando a maior e a menor… nota final: sete vírgula dois!\nA plateia aplaudiu, mas Iara não ouviu direito. Sete vírgula dois. Na mesma noite, um rapaz que tinha feito um poema engraçado sobre a fila do posto de saúde tirou nove e meio. Marina tirou nove. Tomás tirou oito e quatro.\nIara saiu de perto do grupo e foi sentar no meio-fio, do outro lado do viaduto. Sentia raiva e vergonha ao mesmo tempo. Raiva dos jurados, que nem eram especialistas, eram só gente da plateia escolhida na hora. Vergonha de sentir raiva.\nDavi apareceu com dois copos de caldo de cana.\n— Sete vírgula dois não é nota ruim, prima.\n— É ruim para quem achou que tinha arrasado.\nEle sentou do lado dela e ficou um tempo calado.\n— Sabe o que a organizadora sempre diz? A nota é para o poema daquela noite, não para a pessoa. E tem outra coisa que ela diz menos, mas que eu acho mais importante: no slam, o ponto é a poesia, não os pontos.\n— Que frase de calendário — resmungou Iara. Mas riu um pouco.\n— O jurado que deu seis e meio — continuou Davi — é um senhor que chegou hoje pela primeira vez. Talvez ele tenha uma avó também. Talvez não. Talvez estivesse com fome. Você não controla isso. Você controla o que escreve e como fala.\nTomás chegou logo depois, com a mochila de sempre.\n— Ouvi o “sete vírgula dois” daqui. Quer saber o que eu acho? Teu poema está pronto há duas semanas. Você está apresentando o mesmo poema perfeito toda vez. O público do slam gosta de risco. Gosta de sentir que o poema está acontecendo agora.\nIara ficou em silêncio. Lembrou da noite em que tinha esquecido o verso e da plateia estalando os dedos. Aquela tinha sido a noite com menos técnica e mais verdade.\nNo ônibus de volta, ela abriu o caderno verde numa página em branco. Não para corrigir o poema da avó. Para escrever outro, que ainda não sabia qual seria. Escreveu no alto da folha: “Sete vírgula dois”. Depois, embaixo, a primeira linha: “Me deram nota por três minutos da minha vida…”\nEla olhou pela janela e percebeu que a raiva tinha virado outra coisa. Tinha virado assunto.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quantos poetas vão disputar a final do ano?",
+       "options": [
+        "Os três com as melhores médias",
+        "Todos os inscritos",
+        "Só o primeiro colocado",
+        "Os dez mais votados pela plateia"
+       ],
+       "answer": "Os três com as melhores médias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual foi a nota final de Iara?",
+       "options": [],
+       "answer": "sete vírgula dois",
+       "accept": [
+        "7,2",
+        "7.2",
+        "sete virgula dois"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem tirou a nota mais alta da noite?",
+       "options": [
+        "Um rapaz com um poema engraçado sobre a fila do posto de saúde",
+        "Marina",
+        "Tomás",
+        "Iara"
+       ],
+       "answer": "Um rapaz com um poema engraçado sobre a fila do posto de saúde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Iara sente depois de ouvir a nota?",
+       "options": [
+        "Raiva e vergonha ao mesmo tempo",
+        "Alegria e alívio",
+        "Sono e cansaço",
+        "Indiferença total"
+       ],
+       "answer": "Raiva e vergonha ao mesmo tempo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Davi leva para Iara?",
+       "options": [
+        "Dois copos de caldo de cana",
+        "Um caderno novo",
+        "Um troféu",
+        "Um lanche da padaria"
+       ],
+       "answer": "Dois copos de caldo de cana",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a crítica de Tomás ao jeito como Iara apresenta?",
+       "options": [
+        "Ela repete o mesmo poema perfeito e falta risco",
+        "Ela esquece os versos",
+        "Ela fala baixo demais",
+        "O poema dela é longo demais"
+       ],
+       "answer": "Ela repete o mesmo poema perfeito e falta risco",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que significa a frase final “Tinha virado assunto”?",
+       "options": [
+        "Iara transformou a frustração em tema para um novo poema",
+        "Iara vai reclamar com a organizadora",
+        "Todos no ônibus falavam dela",
+        "Iara decidiu desistir do slam"
+       ],
+       "answer": "Iara transformou a frustração em tema para um novo poema",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o slam usa jurados escolhidos na hora, entre o público, e não especialistas?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A final no viaduto",
+     "synopsis": "Na grande final, Iara arrisca um poema novo com a avó na plateia e descobre que ganhar não era o mais importante.",
+     "text": "Na noite da final, o Viaduto Azul nunca tinha estado tão cheio. Havia gente sentada no muro, gente em pé no canteiro, crianças nos ombros dos pais. Alguém tinha pendurado um segundo varal de luzinhas. Iara tinha conseguido a terceira vaga na última sexta, por uma diferença de dois décimos.\nE, na primeira fila, num banquinho de plástico que Davi trouxe de casa, estava a avó Zuleide, de vestido florido e casaco, porque ainda não tinha se acostumado com o frio da noite paulistana, mesmo depois de tantos anos.\n— A senhora tem certeza de que quer ficar até o fim? — Iara perguntou.\n— Menina, eu atravessei o país num ônibus. Aguento três poetas.\nA ordem foi sorteada: Marina primeiro, depois um rapaz chamado Benício, e Iara por último. Marina recitou um poema novo sobre a biblioteca do centro comunitário, que corria o risco de fechar por falta de verba. Benício fez a plateia rir e depois chorar com um poema sobre o pai que consertava geladeiras. Os dois receberam notas acima de nove.\nQuando chamaram o nome dela, Iara caminhou até o microfone e, por um segundo, pensou em fazer o poema da avó, o seguro, o treinado, o perfeito. Mas olhou para a primeira fila e decidiu arriscar.\n— Este poema é novo — disse. — Ele se chama “Sete vírgula dois”.\nE começou: “Me deram nota por três minutos da minha vida. / Três minutos de uma mala de papelão. / Três minutos de um frio que não era meu. / Três minutos de uma avó que trocou passarinho por buzina.”\nEla falou da raiva de não ser entendida, da vontade de ser perfeita, da descoberta de que a voz dela tremia, e de que o tremor também era dela. Repetiu “três minutos” como um corrimão, e no final quebrou o padrão:\n“Vocês podem dar a nota que quiserem. / Ela vai valer por uma noite. / A minha avó está sentada na primeira fila. / Isso vale para sempre.”\nA avó Zuleide levou a mão à boca. O Viaduto estalou os dedos, depois aplaudiu, depois gritou. Alguém começou a puxar: “Respeita a avó! Respeita a avó!”.\nAs notas vieram: oito e nove, nove, oito e meio, nove e meio, nove e dois. Nota final: nove vírgula zero três. Benício ficou em segundo. Marina, com nove vírgula três, foi a campeã do ano.\nIara foi a primeira a abraçá-la.\n— A biblioteca merecia — disse, e era verdade.\nMais tarde, quando o som já estava sendo desmontado, a professora de Língua Portuguesa da escola, que tinha ido assistir, se aproximou.\n— Iara, no ano que vem eu quero começar um slam na escola. Você topa ajudar a organizar a primeira oficina?\nIara olhou para Tomás, que fez o mesmo sinal da noite do microfone aberto: volta do começo. Ela entendeu. Tudo ia recomeçar, agora para outras pessoas.\nNo ônibus de volta, a avó dormiu com a cabeça encostada no ombro dela. Iara abriu o caderno de capa verde, já quase sem páginas em branco, e escreveu na última folha: “Três minutos é pouco para quem nunca falou. / É muito para quem aprendeu a escutar.”",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como Iara conseguiu a vaga na final?",
+       "options": [
+        "Ficou em terceiro lugar por dois décimos",
+        "Foi convidada pela organizadora",
+        "Ganhou um sorteio",
+        "Outro poeta desistiu"
+       ],
+       "answer": "Ficou em terceiro lugar por dois décimos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde a avó Zuleide assiste à final?",
+       "options": [
+        "Na primeira fila, num banquinho de plástico",
+        "Em casa, pelo celular",
+        "Em pé no muro",
+        "Ao lado dos jurados"
+       ],
+       "answer": "Na primeira fila, num banquinho de plástico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, sobre o que é o poema de Marina na final?",
+       "options": [
+        "A biblioteca do centro comunitário que podia fechar",
+        "A rua da Pedreira",
+        "O ônibus que não vem",
+        "O pai que consertava geladeiras"
+       ],
+       "answer": "A biblioteca do centro comunitário que podia fechar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o título do poema novo que Iara apresenta?",
+       "options": [],
+       "answer": "Sete vírgula dois",
+       "accept": [
+        "sete vírgula dois",
+        "sete virgula dois",
+        "7,2"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem é a campeã do ano?",
+       "options": [
+        "Marina",
+        "Iara",
+        "A avó Zuleide",
+        "A professora"
+       ],
+       "answer": "Marina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que recurso Iara usa ao repetir “três minutos” no começo dos versos?",
+       "options": [
+        "Anáfora",
+        "Rima rica",
+        "Onomatopeia",
+        "Metonímia"
+       ],
+       "answer": "Anáfora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Iara decide apresentar o poema novo em vez do poema da avó?",
+       "options": [
+        "Porque quer arriscar e mostrar algo que está acontecendo agora",
+        "Porque esqueceu o poema da avó",
+        "Porque a avó pediu",
+        "Porque o poema antigo foi proibido"
+       ],
+       "answer": "Porque quer arriscar e mostrar algo que está acontecendo agora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Iara escreveu, no final, que três minutos “é muito para quem aprendeu a escutar”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
