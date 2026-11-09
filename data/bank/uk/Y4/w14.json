@@ -802,7 +802,1886 @@
      "errors": []
     }
    ]
+  },
+  "en_spell": {
+   "topic": "Word endings -le, -el, -al and -il",
+   "questions": [
+    {
+     "id": "r6w03p7mzgsyf",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which spelling is correct?",
+     "options": [
+      "bottle",
+      "bottel",
+      "bottal"
+     ],
+     "answer": "bottle",
+     "accept": [],
+     "hint": "This word uses the most common ending for the /əl/ sound.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlm6giou4v2qv",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: midd_ _",
+     "options": [],
+     "answer": "middle",
+     "accept": [],
+     "hint": "Think of the most common /əl/ ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rry0vyb1vxt4j1",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which ending is the most common way to spell the /əl/ sound at the end of a word?",
+     "options": [
+      "-le",
+      "-el",
+      "-il"
+     ],
+     "answer": "-le",
+     "accept": [],
+     "hint": "Think of words like table, little and apple.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r177o3l6wjyp2b",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: tunn_ _",
+     "options": [],
+     "answer": "tunnel",
+     "accept": [],
+     "hint": "After a double n, this word uses -el.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4eiyis1higdrt",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word completes the sentence? 'We love to ___ by train.'",
+     "options": [
+      "travel",
+      "travle",
+      "traval"
+     ],
+     "answer": "travel",
+     "accept": [],
+     "hint": "After the letter v, the ending is often -el.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1us0zz01xs909r",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which of these words ends in -al?",
+     "options": [
+      "metal",
+      "pencil",
+      "camel"
+     ],
+     "answer": "metal",
+     "accept": [],
+     "hint": "Look carefully at the last two letters.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ojjo0610ogozj",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: anim_ _",
+     "options": [],
+     "answer": "animal",
+     "accept": [],
+     "hint": "This ending is often found in adjectives and nouns like 'normal'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8urb5ydd3mwz",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word completes the sentence? 'The doctor works in a big ___.'",
+     "options": [
+      "hospital",
+      "hospitle",
+      "hospitel"
+     ],
+     "answer": "hospital",
+     "accept": [],
+     "hint": "It has the same ending as 'animal'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ibxz7usi6087",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: foss_ _",
+     "options": [],
+     "answer": "fossil",
+     "accept": [],
+     "hint": "It has the same ending as 'pencil'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14x0igxdowz13",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which group of words all end in -el?",
+     "options": [
+      "camel, tunnel, travel",
+      "bottle, middle, metal",
+      "pencil, fossil, animal"
+     ],
+     "answer": "camel, tunnel, travel",
+     "accept": [],
+     "hint": "Check the ending of every word in the group.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5lsw6xoqkl5l",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word does NOT end in -le?",
+     "options": [
+      "fossil",
+      "bottle",
+      "middle"
+     ],
+     "answer": "fossil",
+     "accept": [],
+     "hint": "Two of the words share the most common ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19g8nnult7e8x",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "After letters like m, n, v and w, which ending is often used for the /əl/ sound?",
+     "options": [
+      "-el",
+      "-le",
+      "-al"
+     ],
+     "answer": "-el",
+     "accept": [],
+     "hint": "Think of camel, tunnel and travel.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1whc977kgjhdp",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words.",
+     "options": [],
+     "answer": "fossel → fossil; midle → middle; camal → camel; metle → metal; animle → animal",
+     "accept": [],
+     "hint": "",
+     "text": "On Saturday we went to the museum to see an old fossel. In the midle of the hall stood a big camal made of shiny metle. Each animle had a label written in neat pencil. I hope we travel back there soon.",
+     "errors": [
+      {
+       "wrong": "fossel",
+       "right": "fossil"
+      },
+      {
+       "wrong": "midle",
+       "right": "middle"
+      },
+      {
+       "wrong": "camal",
+       "right": "camel"
+      },
+      {
+       "wrong": "metle",
+       "right": "metal"
+      },
+      {
+       "wrong": "animle",
+       "right": "animal"
+      }
+     ]
+    },
+    {
+     "id": "r1043ztffhj8i1",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 4 misspelled words.",
+     "options": [],
+     "answer": "tunnle → tunnel; hospitle → hospital; bottel → bottle; pencel → pencil",
+     "accept": [],
+     "hint": "",
+     "text": "My uncle drove us through a long, dark tunnle on the way to visit Gran at the hospitle. I took a bottel of water and a pencel so I could draw while we waited. It was a short journey, but I enjoyed it.",
+     "errors": [
+      {
+       "wrong": "tunnle",
+       "right": "tunnel"
+      },
+      {
+       "wrong": "hospitle",
+       "right": "hospital"
+      },
+      {
+       "wrong": "bottel",
+       "right": "bottle"
+      },
+      {
+       "wrong": "pencel",
+       "right": "pencil"
+      }
+     ]
+    },
+    {
+     "id": "r336rnz1eud7tg",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which is the correct spelling of the desert animal with one or two humps?",
+     "options": [
+      "camel",
+      "camle",
+      "camal"
+     ],
+     "answer": "camel",
+     "accept": [],
+     "hint": "After the letter m, the ending is often -el.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l4kzrgewf6a4",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which is the correct spelling of the thing you use to write and draw with lead?",
+     "options": [
+      "pencil",
+      "pencle",
+      "pencel"
+     ],
+     "answer": "pencil",
+     "accept": [],
+     "hint": "This is one of the few words that ends in -il.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "ipc": {
+   "topic": "How Humans Work: the senses and the nervous system",
+   "questions": [
+    {
+     "id": "r11pbyk31jxothh",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "How many main senses do humans have?",
+     "options": [
+      "5",
+      "3",
+      "7",
+      "10"
+     ],
+     "answer": "5",
+     "accept": [],
+     "hint": "Think of seeing, hearing and the others.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l4oclh1idld1r",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which sense organ do we use to smell?",
+     "options": [
+      "nose",
+      "ear",
+      "skin",
+      "tongue"
+     ],
+     "answer": "nose",
+     "accept": [],
+     "hint": "It is in the middle of your face.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbsg6ui1eurng6",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which organ helps us with the sense of touch?",
+     "options": [
+      "skin",
+      "eyes",
+      "nose",
+      "ears"
+     ],
+     "answer": "skin",
+     "accept": [],
+     "hint": "It covers your whole body.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry2ct30bbnjqv",
+     "subject": "ipc",
+     "type": "short",
+     "q": "Which organ receives the messages sent by the senses and decides what to do?",
+     "options": [],
+     "answer": "brain",
+     "accept": [
+      "the brain"
+     ],
+     "hint": "It is inside your head.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14a8w5v1nfahpq",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What carries messages from the sense organs to the brain?",
+     "options": [
+      "nerves",
+      "bones",
+      "muscles",
+      "blood"
+     ],
+     "answer": "nerves",
+     "accept": [],
+     "hint": "They are like tiny wires all over the body.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kguxy41ccfwl7",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Where are most of our taste buds found?",
+     "options": [
+      "on the tongue",
+      "in the nose",
+      "in the ears",
+      "on the lips"
+     ],
+     "answer": "on the tongue",
+     "accept": [],
+     "hint": "Think about where food touches first in your mouth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a5lhze1w2fk57",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which bones protect the brain?",
+     "options": [
+      "the skull",
+      "the ribs",
+      "the spine",
+      "the pelvis"
+     ],
+     "answer": "the skull",
+     "accept": [],
+     "hint": "They form the hard case of your head.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlg3o2dbbem2i",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "The spinal cord is a bundle of nerves. Where is it found?",
+     "options": [
+      "inside the backbone",
+      "inside the skull",
+      "inside the stomach",
+      "inside the arm"
+     ],
+     "answer": "inside the backbone",
+     "accept": [],
+     "hint": "It runs down the middle of your back.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sbuqnazkxxgf",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Messages travel along nerves as…",
+     "options": [
+      "tiny electrical signals",
+      "drops of water",
+      "sound waves",
+      "air bubbles"
+     ],
+     "answer": "tiny electrical signals",
+     "accept": [],
+     "hint": "They move very fast, a bit like electricity in a wire.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry88f5c115fmav",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What is reaction time?",
+     "options": [
+      "the time it takes to respond to something",
+      "the time it takes to fall asleep",
+      "the time it takes to eat lunch",
+      "the time it takes to grow"
+     ],
+     "answer": "the time it takes to respond to something",
+     "accept": [],
+     "hint": "Think about how quickly you act after you notice something.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17xii3k1ookbxt",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "In a ruler-drop test, a friend drops a ruler and you catch it. What does a smaller catching distance show?",
+     "options": [
+      "a faster reaction",
+      "a slower reaction",
+      "a heavier ruler",
+      "a longer ruler"
+     ],
+     "answer": "a faster reaction",
+     "accept": [],
+     "hint": "If you catch it sooner, it has not fallen very far.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7z90cd796rqu",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "To make the ruler-drop test fair, what should stay the same each time?",
+     "options": [
+      "the ruler and where your fingers start",
+      "the person catching and the time of day only",
+      "nothing needs to stay the same",
+      "the colour of your clothes"
+     ],
+     "answer": "the ruler and where your fingers start",
+     "accept": [],
+     "hint": "Only one thing should change in a fair test.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d2qxk819klp0m",
+     "subject": "ipc",
+     "type": "num",
+     "q": "In a ruler-drop test, Tomas caught the ruler at 18 cm on his first try and at 12 cm on his second try. How many centimetres less did the ruler fall the second time?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Subtract the smaller distance from the larger one.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrrr5clz9stwe",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which of these is most likely to make your reaction time slower?",
+     "options": [
+      "being very tired",
+      "having a good night's sleep",
+      "paying close attention",
+      "practising"
+     ],
+     "answer": "being very tired",
+     "accept": [],
+     "hint": "Think about how you feel early in the morning when you have not slept well.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdbckecott293",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which of these is a reflex, an action your body does without you thinking?",
+     "options": [
+      "pulling your hand away from a hot pan",
+      "choosing a book to read",
+      "writing your name",
+      "deciding what to eat"
+     ],
+     "answer": "pulling your hand away from a hot pan",
+     "accept": [],
+     "hint": "A reflex happens very fast to keep you safe.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp9f9pc1a5j3ww",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Why is a quick reaction time useful when you are crossing a road? Explain in 1–2 sentences.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about which senses warn you that a car is coming.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Short multiplication: 2- and 3-digit by 1-digit",
+   "questions": [
+    {
+     "id": "r1bjog9s6eamuf",
+     "subject": "math",
+     "type": "num",
+     "q": "Use short multiplication: 23 × 3 = ?",
+     "options": [],
+     "answer": "69",
+     "accept": [],
+     "hint": "Multiply the ones first, then the tens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r121s1vg1sqv2we",
+     "subject": "math",
+     "type": "num",
+     "q": "Use short multiplication: 46 × 4 = ?",
+     "options": [],
+     "answer": "184",
+     "accept": [],
+     "hint": "6 × 4 makes more than 10, so you need to exchange.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj365l91f3zil9",
+     "subject": "math",
+     "type": "num",
+     "q": "In the calculation 47 × 5, the ones give 7 × 5 = 35. How many tens are exchanged into the tens column?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Look at the tens digit of 35.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ebyc7a1ow2sve",
+     "subject": "math",
+     "type": "num",
+     "q": "Use short multiplication: 132 × 3 = ?",
+     "options": [],
+     "answer": "396",
+     "accept": [],
+     "hint": "Multiply ones, then tens, then hundreds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf2xjivyjlsop",
+     "subject": "math",
+     "type": "mc",
+     "q": "What is the product of 213 and 3?",
+     "options": [
+      "639",
+      "216",
+      "609",
+      "693"
+     ],
+     "answer": "639",
+     "accept": [],
+     "hint": "Product means the answer to a multiplication.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk9v91t1111x2d",
+     "subject": "math",
+     "type": "num",
+     "q": "Use short multiplication: 245 × 4 = ?",
+     "options": [],
+     "answer": "980",
+     "accept": [],
+     "hint": "Remember to add the exchanged digits each time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd78wyw131681s",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which is the best estimate for 298 × 5?",
+     "options": [
+      "1,500",
+      "150",
+      "15,000",
+      "1,000"
+     ],
+     "answer": "1,500",
+     "accept": [],
+     "hint": "Round 298 to the nearest hundred first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9ew6d61nfehi",
+     "subject": "math",
+     "type": "num",
+     "q": "Use short multiplication: 78 × 6 = ?",
+     "options": [],
+     "answer": "468",
+     "accept": [],
+     "hint": "8 × 6 = 48: write 8 and exchange 4 tens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d1zhrz1wmr7dy",
+     "subject": "math",
+     "type": "num",
+     "q": "Use short multiplication: 368 × 7 = ?",
+     "options": [],
+     "answer": "2576",
+     "accept": [],
+     "hint": "Start with 8 × 7 and remember your exchanges.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r2r92y10rnod3",
+     "subject": "math",
+     "type": "mc",
+     "q": "Rafa worked out 84 × 6 = 504. Which calculation can she use to check her answer?",
+     "options": [
+      "504 ÷ 6",
+      "504 + 6",
+      "504 − 84",
+      "84 + 6"
+     ],
+     "answer": "504 ÷ 6",
+     "accept": [],
+     "hint": "Use the inverse operation of multiplication.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f8bz0a1u2q6ap",
+     "subject": "math",
+     "type": "num",
+     "q": "A box holds 144 pencils. How many pencils are there in 6 boxes?",
+     "options": [],
+     "answer": "864",
+     "accept": [],
+     "hint": "Multiply 144 by 6.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v3w80m1ewknn6",
+     "subject": "math",
+     "type": "num",
+     "q": "A bus has 52 seats. How many seats are there on 7 buses?",
+     "options": [],
+     "answer": "364",
+     "accept": [],
+     "hint": "Multiply the number of seats by the number of buses.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "revxsxa7e8gkc",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the missing digit: 3_6 × 4 = 1,304",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Try dividing 1,304 by 4.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3thu5z17erhlu",
+     "subject": "math",
+     "type": "mc",
+     "q": "Leo says 157 × 3 = 351. What mistake did he make?",
+     "options": [
+      "He forgot to add the exchanged digits",
+      "He multiplied by 4 instead of 3",
+      "He forgot to multiply the hundreds",
+      "He added instead of multiplying"
+     ],
+     "answer": "He forgot to add the exchanged digits",
+     "accept": [],
+     "hint": "Work it out yourself and compare each column.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r84pg491qt204o",
+     "subject": "math",
+     "type": "num",
+     "q": "Use short multiplication: 674 × 9 = ?",
+     "options": [],
+     "answer": "6066",
+     "accept": [],
+     "hint": "Estimate first: 674 is close to 700.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j2e8m7byhrf",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain how you know that 199 × 4 is close to 800 without working it out exactly.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about rounding 199.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Revisão e edição: coesão e ortografia",
+   "questions": [
+    {
+     "id": "r1ljah1pmbba2b",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que significa revisar um texto?",
+     "options": [
+      "Reler o texto para encontrar e corrigir problemas",
+      "Copiar o texto de outra pessoa",
+      "Escrever um texto novo sobre outro assunto",
+      "Ler só o título"
+     ],
+     "answer": "Reler o texto para encontrar e corrigir problemas",
+     "accept": [],
+     "hint": "Pense no que você faz depois de terminar de escrever.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a07get1enaxkn",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra pode substituir \"o cachorro\" para evitar repetição? \"O cachorro latiu muito. ___ estava com fome.\"",
+     "options": [
+      "Ele",
+      "Ela",
+      "Eles",
+      "Nós"
+     ],
+     "answer": "Ele",
+     "accept": [],
+     "hint": "Use um pronome que combine com \"o cachorro\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3g6fkp18f47kz",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual conectivo completa melhor a frase? \"Choveu muito, ___ o jogo foi adiado.\"",
+     "options": [
+      "por isso",
+      "mas",
+      "embora",
+      "enquanto"
+     ],
+     "answer": "por isso",
+     "accept": [],
+     "hint": "A segunda parte é uma consequência da primeira.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3bna4vk2g9z",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual conectivo completa melhor a frase? \"Eu queria brincar, ___ estava muito cansado.\"",
+     "options": [
+      "mas",
+      "por isso",
+      "porque",
+      "então"
+     ],
+     "answer": "mas",
+     "accept": [],
+     "hint": "As duas ideias se opõem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6ee5p4k4ycw0",
+     "subject": "pt",
+     "type": "short",
+     "q": "Escreva corretamente a palavra que está errada: \"Vamos ao parque amanha.\"",
+     "options": [],
+     "answer": "amanhã",
+     "accept": [
+      "amanhã"
+     ],
+     "hint": "Falta um sinal gráfico em cima de uma vogal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxgbzkcl2ynre",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Mariana e Lucas foram à praia. ___ levaram baldes e pás. Qual pronome completa a frase?",
+     "options": [
+      "Eles",
+      "Ela",
+      "Ele",
+      "Nós"
+     ],
+     "answer": "Eles",
+     "accept": [],
+     "hint": "São duas pessoas, e uma delas é menino.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r111km981tvdzl7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual conectivo indica a ordem dos fatos? \"Primeiro arrumei a mochila; ___, tomei o café da manhã.\"",
+     "options": [
+      "depois",
+      "mas",
+      "porque",
+      "embora"
+     ],
+     "answer": "depois",
+     "accept": [],
+     "hint": "Ele mostra o que aconteceu em seguida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r60372z19neg4t",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra está escrita corretamente?",
+     "options": [
+      "gostoso",
+      "gostozo",
+      "gosotso"
+     ],
+     "answer": "gostoso",
+     "accept": [],
+     "hint": "Na terminação -oso, o som de z é escrito com s.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17zhrq11jp8swe",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase está com a pontuação correta?",
+     "options": [
+      "Você vem à festa amanhã?",
+      "Você vem à festa amanhã.",
+      "Você, vem à festa amanhã",
+      "Você vem, à festa, amanhã!"
+     ],
+     "answer": "Você vem à festa amanhã?",
+     "accept": [],
+     "hint": "É uma pergunta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rchlr4w11sdz7",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual sinal de pontuação falta no fim desta pergunta? \"Onde você guardou o livro\"",
+     "options": [],
+     "answer": "ponto de interrogação",
+     "accept": [
+      "?",
+      "interrogação"
+     ],
+     "hint": "É o sinal usado em perguntas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qrai3y1naaj68",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual versão evita melhor a repetição? \"A menina pegou a bola. A menina chutou a bola.\"",
+     "options": [
+      "A menina pegou a bola e a chutou.",
+      "A menina pegou a bola. A menina chutou a bola com força.",
+      "A menina pegou a bola, a menina chutou a bola.",
+      "A menina, a menina chutou a bola."
+     ],
+     "answer": "A menina pegou a bola e a chutou.",
+     "accept": [],
+     "hint": "Procure a frase que usa um pronome no lugar da palavra repetida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b0wyjw174tcv4",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em um diálogo, qual sinal costuma aparecer antes da fala de um personagem?",
+     "options": [
+      "travessão",
+      "vírgula",
+      "ponto final",
+      "ponto de interrogação"
+     ],
+     "answer": "travessão",
+     "accept": [],
+     "hint": "É um tracinho comprido no começo da linha.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a2vwpuhy64px",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas atitudes NÃO faz parte da revisão de um texto?",
+     "options": [
+      "Apagar tudo sem ler",
+      "Conferir a ortografia",
+      "Verificar a pontuação",
+      "Trocar palavras repetidas"
+     ],
+     "answer": "Apagar tudo sem ler",
+     "accept": [],
+     "hint": "Revisar é melhorar o que já foi escrito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xw8zbo17xdwev",
+     "subject": "pt",
+     "type": "short",
+     "q": "Escreva corretamente a palavra que está errada: \"Meu irmão gosta de jogar futebou.\"",
+     "options": [],
+     "answer": "futebol",
+     "accept": [
+      "futebol"
+     ],
+     "hint": "No fim da palavra, o som de u é escrito com l.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r577g3b1rq3sic",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique por que é importante reler e revisar um texto antes de entregá-lo.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no leitor que vai ler o seu texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13ag3eo16dj41k",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em qual frase há uma palavra que deveria começar com letra maiúscula?",
+     "options": [
+      "Ontem a bia viajou de ônibus.",
+      "Ontem a menina viajou de ônibus.",
+      "Hoje o menino foi à escola.",
+      "Amanhã vamos ao parque."
+     ],
+     "answer": "Ontem a bia viajou de ônibus.",
+     "accept": [],
+     "hint": "Procure um nome próprio.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Clube das Pistas",
+   "premise": "Os primos Nina e Davi e a nova vizinha Flora formam um clube de detetives no prédio onde moram e, a cada episódio, aprendem a criar hipóteses, procurar pistas e mudar de ideia quando as pistas mostram outra coisa.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: As alfaces mordidas",
+     "synopsis": "Alguém anda mordendo as alfaces da horta do prédio, e Nina ensina o primo Davi a trocar palpites apressados por hipóteses conferidas com pistas.",
+     "text": "No prédio de Nina havia uma horta no quintal dos fundos. Cada morador cuidava de um canteiro, e o de Dona Celeste era o mais bonito: alfaces verdinhas, em fila, como soldados.\nNuma segunda-feira, Dona Celeste apareceu aflita.\n— Alguém comeu as minhas alfaces! Três delas estão cheias de mordidas!\nNina, que tinha nove anos e adorava livros de mistério, puxou o primo Davi pelo braço.\n— Temos um caso — cochichou.\nDavi, que era um ano mais novo, já tinha uma resposta pronta.\n— Foi o Seu Olavo, do terceiro andar. Ele vive dizendo que adora salada.\nNina balançou a cabeça.\n— Isso é uma hipótese, Davi. Hipótese é um palpite que a gente ainda precisa conferir. Vamos procurar pistas.\nOs dois se agacharam perto do canteiro. As mordidas eram pequenininhas, em forma de meia-lua, e estavam bem rentes ao chão.\n— Uma pessoa não morderia assim, deitada no chão — disse Nina. — E olhe aqui: bolinhas escuras, do tamanho de ervilhas.\nDavi franziu o nariz.\n— Isso é cocô?\n— Acho que sim. De um bicho pequeno.\nPerto da cerca, encontraram um buraco novo, cavado na terra fofa, e alguns pelos brancos presos no arame.\n— Então o Seu Olavo está livre — riu Davi. — A não ser que ele tenha pelos brancos e caiba nesse buraco!\nNina mudou de hipótese em voz alta:\n— Um bicho branco, pequeno, que cava e come folhas… Só pode ser um coelho.\nOs dois ficaram escondidos atrás do regador, em silêncio. Depois de muitos minutos, um focinho rosado apareceu no buraco. Era um coelho branco, com uma mancha preta no nariz que parecia um bigode. Ele mordeu uma folha de alface, bem tranquilo.\nDavi segurou o riso. Nina anotou tudo no caderno.\nDona Celeste, quando soube, achou graça e até separou uma alface só para o visitante.\nMas uma pergunta ficou no ar: de quem era aquele coelho de bigode?",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que havia no quintal dos fundos do prédio?",
+       "options": [
+        "Uma horta",
+        "Uma piscina",
+        "Um parquinho"
+       ],
+       "answer": "Uma horta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem era a dona das alfaces mordidas?",
+       "options": [
+        "Dona Celeste",
+        "Nina",
+        "Seu Olavo"
+       ],
+       "answer": "Dona Celeste",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi a primeira hipótese de Davi?",
+       "options": [
+        "Que o Seu Olavo tinha comido as alfaces",
+        "Que um passarinho tinha bicado as alfaces",
+        "Que a chuva tinha estragado as alfaces"
+       ],
+       "answer": "Que o Seu Olavo tinha comido as alfaces",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nina explicou que é uma hipótese?",
+       "options": [
+        "Um palpite que ainda precisa ser conferido",
+        "Uma certeza absoluta",
+        "Uma história inventada"
+       ],
+       "answer": "Um palpite que ainda precisa ser conferido",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que pistas os primos encontraram perto da cerca?",
+       "options": [
+        "Um buraco novo e pelos brancos",
+        "Pegadas de sapato e um chapéu",
+        "Uma faca e um prato"
+       ],
+       "answer": "Um buraco novo e pelos brancos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Nina achou que uma pessoa não tinha mordido as alfaces?",
+       "options": [
+        "As mordidas eram pequenas e bem rentes ao chão",
+        "As alfaces estavam muito longe",
+        "A horta tinha um cadeado"
+       ],
+       "answer": "As mordidas eram pequenas e bem rentes ao chão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Nina confirmou a hipótese do coelho?",
+       "options": [
+        "Ela viu o coelho comendo a alface",
+        "Dona Celeste contou a ela",
+        "Ela encontrou uma foto do coelho"
+       ],
+       "answer": "Ela viu o coelho comendo a alface",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que é importante procurar pistas antes de acusar alguém?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Um coelho sem endereço",
+     "synopsis": "Os primos tentam descobrir quem é o dono do coelho, descartam uma hipótese e encontram uma pista nova que leva até uma vizinha recém-chegada.",
+     "text": "Na manhã seguinte, Nina e Davi chamaram o coelho de Bigode, por causa da mancha preta no nariz. Mas um coelho tão manso devia ter dono, e eles queriam descobrir quem era.\n— Hipótese número um — anunciou Davi. — Ele fugiu da loja de animais da esquina.\n— Pode ser — disse Nina. — Vamos conferir.\nNa loja, o vendedor olhou o coelho com atenção.\n— Não é nosso. Os nossos coelhos são todos marrons, e nenhum fugiu.\nHipótese descartada. Os primos voltaram para o prédio, pensativos. Foi aí que Nina reparou numa coisa que não tinha visto antes: preso no pescoço do Bigode havia um lacinho de fita azul, com a letra F bordada.\n— Uma pista nova! — disse ela. — O dono deve ter um nome que começa com F.\nDavi começou a contar nos dedos:\n— Fernando, do quinto andar? Não, ele tem medo até de gato… Fabíola, da portaria? Ela tem alergia a pelo.\nNina pensou mais um pouco. O lacinho estava limpinho e cheirava a feno. Quem cuidava tão bem de um coelho?\nNesse momento, um caminhão de mudança parou na frente do prédio. Dele desceram um senhor de chapéu e uma menina de tranças, mais ou menos da idade de Davi. A menina olhava para todos os lados e chamava, quase chorando:\n— Floco! Floco! Cadê você?\nNina e Davi se entreolharam. Floco começava com F! E o coelho era branco como um floco de neve…\nOs primos se aproximaram com o coelho no colo. A menina abriu um sorriso enorme.\n— Floco! Ele fugiu da caixa ontem, quando a gente veio trazer as primeiras coisas!\nEla se chamava Flora e estava se mudando para o segundo andar com o avô.\nDavi coçou a cabeça.\n— Então ele não se chama Bigode?\n— Pode ter dois nomes — disse Flora, rindo. — Floco Bigode. Gostei.\nNaquela tarde, os primos ganharam uma nova amiga, e o trio ganhou um nome: Clube das Pistas.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que nome os primos deram ao coelho?",
+       "options": [
+        "Bigode",
+        "Floco",
+        "Pistache"
+       ],
+       "answer": "Bigode",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi a primeira hipótese de Davi sobre o dono do coelho?",
+       "options": [
+        "Que ele tinha fugido da loja de animais",
+        "Que ele era do Seu Olavo",
+        "Que ele vivia no mato"
+       ],
+       "answer": "Que ele tinha fugido da loja de animais",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o vendedor disse que o coelho não era da loja?",
+       "options": [
+        "Os coelhos da loja eram todos marrons",
+        "A loja não vendia coelhos",
+        "A loja estava fechada"
+       ],
+       "answer": "Os coelhos da loja eram todos marrons",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que letra estava bordada no lacinho do coelho?",
+       "options": [],
+       "answer": "F",
+       "accept": [
+        "a letra F",
+        "letra F"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi achou que a Fabíola não era a dona?",
+       "options": [
+        "Ela tem alergia a pelo",
+        "Ela tem medo de gato",
+        "Ela mora longe"
+       ],
+       "answer": "Ela tem alergia a pelo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o nome verdadeiro do coelho?",
+       "options": [],
+       "answer": "Floco",
+       "accept": [
+        "Floco Bigode"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que pista mostrava que o dono cuidava bem do coelho?",
+       "options": [
+        "O lacinho estava limpo e cheirava a feno",
+        "O coelho estava muito magro",
+        "O coelho tinha uma coleira de ouro"
+       ],
+       "answer": "O lacinho estava limpo e cheirava a feno",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Nina não desistiu quando a primeira hipótese foi descartada?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: O barulho no forro",
+     "synopsis": "Um barulho estranho no forro do banheiro de Flora assusta Davi, mas o clube faz uma lista de hipóteses e descobre um segredo cheio de penas.",
+     "text": "Flora morava no prédio havia uma semana quando começou a ouvir um barulho estranho. Toda manhã, bem cedinho, ele vinha do forro do banheiro: tec-tec-tec, scrich-scrich.\nEla reuniu o Clube das Pistas no seu quarto, que ainda estava cheio de caixas.\n— Acho que é um fantasma — sussurrou Davi, arregalando os olhos.\n— Fantasmas não fazem scrich-scrich — disse Flora.\n— Vamos anotar todas as hipóteses — propôs Nina, abrindo o caderno. — Depois a gente vê qual combina com as pistas.\nNa lista ficaram: fantasma (ideia do Davi), rato, cano velho e algum bicho fazendo casa.\nNo dia seguinte, os três acordaram bem cedo e ficaram em silêncio no banheiro. O barulho começou junto com o sol. Tec-tec-tec. E, no meio dele, um som fininho: piu, piu.\n— Rato não faz piu — disse Flora, riscando uma palavra da lista.\n— Cano também não — completou Nina, riscando outra.\nDavi, meio sem graça, riscou o fantasma sozinho.\nEles saíram para o quintal e olharam a parede do lado de fora. Lá no alto, numa abertura de ventilação, havia gravetos saindo e um pedaço de barbante pendurado. No chão, logo embaixo, encontraram duas penas marrons.\n— Um ninho! — exclamou Flora.\nEnquanto olhavam, um passarinho de peito alaranjado chegou com uma minhoca no bico e entrou na abertura. O piu-piu ficou mais alto.\n— Filhotes — disse Nina. — E o tec-tec deve ser a mãe se mexendo lá dentro.\nO avô de Flora prometeu não mexer no ninho até os filhotes aprenderem a voar. Depois, ele colocaria uma casinha de madeira no jardim, para os passarinhos terem um lugar seguro no ano seguinte.\nDavi suspirou.\n— Pena. Um fantasma seria mais emocionante.\n— Um ninho com filhotes também é emocionante — respondeu Flora. — E é de verdade.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de onde vinha o barulho estranho?",
+       "options": [
+        "Do forro do banheiro",
+        "Da cozinha",
+        "Do elevador"
+       ],
+       "answer": "Do forro do banheiro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi a hipótese de Davi?",
+       "options": [
+        "Que era um fantasma",
+        "Que era um rato",
+        "Que era um cano velho"
+       ],
+       "answer": "Que era um fantasma",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nina propôs fazer com as hipóteses?",
+       "options": [
+        "Anotar todas numa lista",
+        "Escolher a mais divertida",
+        "Esquecer todas"
+       ],
+       "answer": "Anotar todas numa lista",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que som fez o clube descartar a hipótese do rato?",
+       "options": [
+        "Um som fininho de piu-piu",
+        "Um latido",
+        "Um assobio de vento"
+       ],
+       "answer": "Um som fininho de piu-piu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que os amigos encontraram no chão, embaixo da abertura?",
+       "options": [
+        "Duas penas marrons",
+        "Um pedaço de queijo",
+        "Uma chave velha"
+       ],
+       "answer": "Duas penas marrons",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que o passarinho trazia no bico?",
+       "options": [],
+       "answer": "uma minhoca",
+       "accept": [
+        "minhoca"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que provavelmente causava o tec-tec no forro?",
+       "options": [
+        "A mãe passarinho se mexendo no ninho",
+        "Um cano quebrado",
+        "O vento batendo na janela"
+       ],
+       "answer": "A mãe passarinho se mexendo no ninho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô de Flora decidiu não mexer no ninho?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O mapa sem assinatura",
+     "synopsis": "Um mapa misterioso aparece por baixo da porta, e Nina usa pistas de letra e de cor para descobrir quem o enviou antes de seguir o X vermelho.",
+     "text": "Numa sexta-feira, Davi encontrou um envelope enfiado por baixo da porta do apartamento de Nina. Não tinha o nome de quem mandou. Dentro, havia um mapa desenhado com caneta de glitter: o prédio, o quintal, a horta e um X vermelho bem ao lado da jabuticabeira. Embaixo, uma frase: \"Sábado, às 4 horas. Venham sozinhos.\"\n— Um tesouro! — gritou Davi. — Aposto que é um tesouro de pirata enterrado!\n— Num quintal de prédio? — duvidou Nina. — Vamos pensar nas pistas.\nEla colocou o mapa na mesa, como uma detetive de verdade.\n— Pista um: quem desenhou conhece bem o prédio. Pista dois: a caneta tem glitter roxo. Pista três: a letra é redondinha, com bolinhas no lugar dos pingos do i.\nDavi pensou.\n— Quem usa caneta de glitter roxo?\nNina lembrou de uma coisa. No dia da mudança de Flora, eles tinham ajudado a carregar as caixas. Cada caixa tinha uma etiqueta escrita à mão. E as etiquetas tinham bolinhas em cima do i!\n— Nova hipótese — disse Nina. — Foi a Flora.\n— Mas por que ela mandaria um mapa misterioso? — perguntou Davi.\n— Isso a gente vai descobrir amanhã.\nNo sábado, às quatro em ponto, os primos foram até a jabuticabeira. Não havia baú nem moedas de ouro. Havia uma toalha xadrez no chão, um bolo de fubá, suco de laranja e Flora, sorrindo, com Floco no colo.\n— Surpresa! Hoje faz um mês que o Clube das Pistas existe!\nAo lado do bolo, estava uma caixa com três crachás de papelão: \"Detetive Nina\", \"Detetive Davi\" e \"Detetive Flora\". E, num cantinho do mapa, Nina finalmente reparou numa coisa que não tinha visto: um pequeno F escondido no meio das folhas da árvore desenhada.\n— A pista estava aí o tempo todo — disse ela, rindo.\nDavi mordeu um pedaço de bolo.\n— Eu ainda acho que isso é um tesouro.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde estava o X vermelho do mapa?",
+       "options": [
+        "Ao lado da jabuticabeira",
+        "Dentro do elevador",
+        "Na porta da padaria"
+       ],
+       "answer": "Ao lado da jabuticabeira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi a hipótese de Davi sobre o mapa?",
+       "options": [
+        "Que levava a um tesouro de pirata",
+        "Que era um convite de aniversário",
+        "Que era uma brincadeira de Nina"
+       ],
+       "answer": "Que levava a um tesouro de pirata",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que cor era o glitter da caneta?",
+       "options": [],
+       "answer": "roxo",
+       "accept": [
+        "roxa"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a letra do mapa tinha de especial?",
+       "options": [
+        "Bolinhas no lugar dos pingos do i",
+        "Letras todas maiúsculas",
+        "Letras escritas de trás para a frente"
+       ],
+       "answer": "Bolinhas no lugar dos pingos do i",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que fez Nina pensar que Flora tinha desenhado o mapa?",
+       "options": [
+        "As etiquetas das caixas de Flora tinham a mesma letra",
+        "Flora contou o segredo",
+        "Davi viu Flora desenhando"
+       ],
+       "answer": "As etiquetas das caixas de Flora tinham a mesma letra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que os primos encontraram ao lado da jabuticabeira?",
+       "options": [
+        "Um lanche e uma surpresa preparados por Flora",
+        "Um baú com moedas de ouro",
+        "Um buraco vazio"
+       ],
+       "answer": "Um lanche e uma surpresa preparados por Flora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que pista escondida Nina só percebeu no final?",
+       "options": [
+        "Um pequeno F nas folhas da árvore desenhada",
+        "Uma assinatura no verso do envelope",
+        "Um bilhete dentro do bolo"
+       ],
+       "answer": "Um pequeno F nas folhas da árvore desenhada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Flora escreveu \"Venham sozinhos\" no mapa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O coelho que abria portas",
+     "synopsis": "A casinha do Floco aparece aberta todas as manhãs, e o clube testa uma hipótese de cada vez até descobrir quem é o fujão.",
+     "text": "Floco tinha uma casinha de madeira na varanda de Flora, com uma portinha de trinco. Mas, três dias seguidos, Flora acordou e encontrou a portinha aberta e Floco passeando pela sala.\n— Alguém está abrindo a casinha à noite — disse ela, preocupada.\nO Clube das Pistas se reuniu. Davi tinha certeza:\n— É o gato da vizinha. Gatos são espertos.\nFlora tinha outra ideia:\n— Talvez meu avô abra para dar comida e esqueça de fechar.\nNina escreveu as duas hipóteses no caderno.\n— Vamos testar uma de cada vez.\nPrimeiro, conversaram com o avô. Ele contou que dava comida ao Floco só de manhã, depois do café, e sempre fechava o trinco. Além disso, naquela manhã a porta já estava aberta antes de ele acordar. Hipótese do avô riscada.\nDepois, espalharam um pouquinho de talco no chão da varanda, em volta da casinha. Se um gato entrasse, deixaria pegadas. Na manhã seguinte, a portinha estava aberta de novo… mas no talco só havia marquinhas compridas de pata de coelho. Nenhuma pegada de gato. Hipótese do gato riscada também.\n— Então quem abriu? — perguntou Davi.\nNina olhou o trinco de perto. Estava frouxo e balançava quando ela encostava o dedo.\n— Tenho uma hipótese nova. E é meio maluca.\nNaquela noite, os três ficaram acordados até mais tarde na sala de Flora, com a luz apagada, espiando pela porta de vidro. Lá pelas dez horas, Floco se levantou, encostou o focinho na portinha e empurrou. Empurrou de novo. Na terceira vez, o trinco frouxo pulou, e a porta abriu.\n— Foi ele mesmo! — cochichou Flora, segurando o riso.\nNo dia seguinte, o avô trocou o trinco por um mais firme. Floco ficou olhando a porta nova com cara de quem já planejava outra fuga.\n— Esse coelho devia entrar para o clube — disse Davi.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde ficava a casinha do Floco?",
+       "options": [
+        "Na varanda de Flora",
+        "No quintal dos fundos",
+        "Na padaria"
+       ],
+       "answer": "Na varanda de Flora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era a hipótese de Davi?",
+       "options": [
+        "Que o gato da vizinha abria a porta",
+        "Que o avô esquecia a porta aberta",
+        "Que o vento abria a porta"
+       ],
+       "answer": "Que o gato da vizinha abria a porta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quando o avô dava comida ao Floco?",
+       "options": [
+        "De manhã, depois do café",
+        "À noite, antes de dormir",
+        "Na hora do almoço"
+       ],
+       "answer": "De manhã, depois do café",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que os amigos espalharam no chão da varanda?",
+       "options": [],
+       "answer": "talco",
+       "accept": [
+        "um pouco de talco"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a hipótese do gato foi descartada?",
+       "options": [
+        "No talco só havia marcas de pata de coelho",
+        "O gato estava viajando",
+        "O avô viu o gato dormindo"
+       ],
+       "answer": "No talco só havia marcas de pata de coelho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nina percebeu ao olhar o trinco de perto?",
+       "options": [
+        "Que ele estava frouxo",
+        "Que ele estava quebrado ao meio",
+        "Que ele era novo"
+       ],
+       "answer": "Que ele estava frouxo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como os amigos confirmaram a nova hipótese?",
+       "options": [
+        "Espiaram à noite e viram Floco empurrar a porta",
+        "Perguntaram para a vizinha",
+        "Encontraram uma chave escondida"
+       ],
+       "answer": "Espiaram à noite e viram Floco empurrar a porta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que testar uma hipótese de cada vez ajudou o clube?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Pegadas na farinha",
+     "synopsis": "Alguém invade a cozinha da padaria de madrugada, e as pegadas na farinha fazem Davi mudar de hipótese até o clube encontrar o culpado.",
+     "text": "No térreo do prédio funcionava a padaria do Seu Benedito. Numa manhã de domingo, ele bateu na porta de Nina, com o avental branco de farinha.\n— Vocês são o Clube das Pistas, não são? Preciso de ajuda. Alguém entrou na cozinha da padaria de madrugada, derrubou um saco de farinha e comeu um pedaço de queijo!\nDavi nem pensou duas vezes:\n— Foi o Floco! Ele vive fugindo!\nNina lembrou que Floco agora tinha um trinco novo, mas não quis descartar a ideia sem conferir. Os três desceram até a padaria.\nO chão da cozinha estava todo branco de farinha, e no meio havia uma trilha de pegadas.\n— Pegadas! — disse Flora. — A melhor pista que existe.\nEles se agacharam para olhar. As marquinhas eram redondas, com quatro dedinhos em volta de uma almofadinha. Não tinham o formato comprido das patas de coelho que eles tinham visto no talco.\n— Não é o Floco — disse Flora, aliviada.\n— E coelho não come queijo — completou Nina. — Coelho come folhas.\nDavi cruzou os braços.\n— Tá bom, tá bom. Mudo minha hipótese. Um bicho de patas redondas que gosta de queijo… Um rato?\n— As pegadas são grandes demais para um rato — respondeu Nina. — Parecem de gato.\nEles seguiram a trilha. Ela ia até a janelinha dos fundos, que estava entreaberta. No parapeito, havia um tufo de pelo laranja.\nFlora arregalou os olhos.\n— Pelo laranja… O Pistache! O gato da Dona Celeste!\nForam até o apartamento de Dona Celeste. Pistache dormia no sofá, com os bigodes ainda brancos de farinha.\nDona Celeste ficou envergonhada e quis pagar o queijo. Seu Benedito riu e disse que o pagamento seria outro: o clube ganharia pão de queijo quentinho no domingo seguinte.\n— E a janelinha? — lembrou Nina.\n— Vou fechar todas as noites a partir de hoje — prometeu o padeiro.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde ficava a padaria do Seu Benedito?",
+       "options": [
+        "No térreo do prédio",
+        "Na esquina de outra rua",
+        "No último andar"
+       ],
+       "answer": "No térreo do prédio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o visitante da madrugada comeu?",
+       "options": [
+        "Um pedaço de queijo",
+        "Um bolo de fubá",
+        "Um pão doce"
+       ],
+       "answer": "Um pedaço de queijo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi a primeira hipótese de Davi?",
+       "options": [
+        "Que tinha sido o Floco",
+        "Que tinha sido um rato",
+        "Que tinha sido o Seu Olavo"
+       ],
+       "answer": "Que tinha sido o Floco",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como eram as pegadas na farinha?",
+       "options": [
+        "Redondas, com quatro dedinhos",
+        "Compridas, como patas de coelho",
+        "Grandes, como sapatos"
+       ],
+       "answer": "Redondas, com quatro dedinhos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Nina achou que não tinha sido um rato?",
+       "options": [
+        "As pegadas eram grandes demais",
+        "Ratos não gostam de queijo",
+        "A janela estava fechada"
+       ],
+       "answer": "As pegadas eram grandes demais",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que cor era o tufo de pelo no parapeito?",
+       "options": [],
+       "answer": "laranja",
+       "accept": [
+        "alaranjado"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que pista mostrou que Pistache tinha estado na padaria?",
+       "options": [
+        "Os bigodes dele estavam brancos de farinha",
+        "Ele estava com fome",
+        "Ele estava miando na porta"
+       ],
+       "answer": "Os bigodes dele estavam brancos de farinha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Davi aceitou mudar de hipótese?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: Onde está o Floco?",
+     "synopsis": "Na festa do clube, Floco desaparece, e Nina, Davi e Flora usam tudo o que aprenderam para segui-lo até um esconderijo inesperado.",
+     "text": "No domingo seguinte, o Clube das Pistas organizou uma festa no quintal para comemorar os casos resolvidos. Seu Benedito levou pão de queijo, Dona Celeste levou suco, e até Pistache apareceu, de banho tomado. Floco ficou numa cerquinha perto da horta, mastigando uma folha de alface.\nNo meio da festa, Flora deu um grito:\n— O Floco sumiu!\nA cerquinha estava vazia. Todo mundo começou a falar ao mesmo tempo. Nina subiu num banquinho e pediu silêncio.\n— Calma. Vamos fazer como sempre: hipóteses e pistas.\nDavi levantou a mão.\n— Hipótese um: ele voltou para a horta, como no primeiro dia.\nEles correram até a horta. Nada de Floco, e as alfaces estavam inteiras. Hipótese descartada.\n— Hipótese dois: o Pistache assustou o Floco e ele fugiu — disse Flora.\nMas Pistache estava dormindo no colo de Dona Celeste desde o começo da festa. Ninguém tinha visto o gato perto da cerquinha.\nNina olhou para o chão. Ali perto havia pedacinhos de alface mordidos, um atrás do outro, formando um caminho.\n— Ele levou o lanche junto — disse ela. — Vamos seguir as folhas.\nA trilha passava pela jabuticabeira e terminava numa caixa grande de papelão, aquela em que Seu Benedito tinha trazido os pães de queijo. A caixa estava deitada de lado, quentinha por dentro e com cheiro de comida.\nFlora espiou devagar. Lá dentro, Floco dormia enroladinho, com uma folha de alface entre as patas.\nTodo mundo riu e bateu palmas bem baixinho, para não acordar o coelho.\nNaquela noite, Nina abriu o caderno e escreveu, em letras grandes, o lema do clube:\n\"Toda pista merece uma segunda olhada.\"\nDavi leu por cima do ombro dela.\n— Falta uma coisa — disse ele, e escreveu embaixo: \"E todo coelho merece uma caixa de papelão.\"\nFlora riu tanto que Floco acordou. Mas isso já é o começo de outro mistério.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o clube organizou uma festa?",
+       "options": [
+        "Para comemorar os casos resolvidos",
+        "Para o aniversário de Davi",
+        "Para receber um vizinho novo"
+       ],
+       "answer": "Para comemorar os casos resolvidos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Floco estava antes de sumir?",
+       "options": [
+        "Numa cerquinha perto da horta",
+        "Na casinha da varanda",
+        "No colo de Dona Celeste"
+       ],
+       "answer": "Numa cerquinha perto da horta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a primeira hipótese foi descartada?",
+       "options": [
+        "Floco não estava na horta e as alfaces estavam inteiras",
+        "A horta estava trancada",
+        "Davi mudou de ideia sem olhar"
+       ],
+       "answer": "Floco não estava na horta e as alfaces estavam inteiras",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o Pistache não podia ter assustado o Floco?",
+       "options": [
+        "Ele estava dormindo no colo de Dona Celeste",
+        "Ele estava na padaria",
+        "Ele tinha medo de coelhos"
+       ],
+       "answer": "Ele estava dormindo no colo de Dona Celeste",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que pista Nina encontrou no chão?",
+       "options": [
+        "Pedacinhos de alface formando um caminho",
+        "Pegadas na farinha",
+        "Penas marrons"
+       ],
+       "answer": "Pedacinhos de alface formando um caminho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, onde o Floco estava dormindo?",
+       "options": [],
+       "answer": "numa caixa de papelão",
+       "accept": [
+        "caixa de papelão",
+        "na caixa de papelão",
+        "caixa"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que provavelmente atraiu o Floco para a caixa?",
+       "options": [
+        "Ela era quentinha e tinha cheiro de comida",
+        "Ela era colorida",
+        "Ela tinha uma porta com trinco"
+       ],
+       "answer": "Ela era quentinha e tinha cheiro de comida",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o lema do clube é \"Toda pista merece uma segunda olhada\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
