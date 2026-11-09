@@ -1,0 +1,1070 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y3",
+ "academic_week": 14,
+ "subjects": {
+  "bss": {
+   "topic": "Pontos de referência e trajetos: de casa à escola",
+   "questions": [
+    {
+     "id": "rz1ehtd1526chm",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que é um ponto de referência?",
+     "options": [
+      "Um lugar fácil de reconhecer que ajuda a se localizar",
+      "Um tipo de mapa",
+      "Uma rua sem saída"
+     ],
+     "answer": "Um lugar fácil de reconhecer que ajuda a se localizar",
+     "accept": [],
+     "hint": "Pense em algo que você vê e reconhece no caminho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2kx9tk1u8diih",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como chamamos o caminho que fazemos de um lugar até outro?",
+     "options": [],
+     "answer": "trajeto",
+     "accept": [
+      "o trajeto",
+      "percurso",
+      "o percurso"
+     ],
+     "hint": "Começa com a letra T.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7j2zy5p5p522",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes é um bom ponto de referência no caminho para a escola?",
+     "options": [
+      "Uma padaria na esquina",
+      "Uma nuvem no céu",
+      "Um carro estacionado"
+     ],
+     "answer": "Uma padaria na esquina",
+     "accept": [],
+     "hint": "Um bom ponto de referência fica sempre no mesmo lugar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17isuv0144ud97",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que um carro estacionado NÃO é um bom ponto de referência?",
+     "options": [
+      "Porque ele pode sair do lugar",
+      "Porque é muito grande",
+      "Porque é colorido"
+     ],
+     "answer": "Porque ele pode sair do lugar",
+     "accept": [],
+     "hint": "Ele vai estar lá amanhã?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1681o951b85mvs",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Lia diz: 'Minha casa fica ao lado da farmácia.' Qual é o ponto de referência?",
+     "options": [
+      "A farmácia",
+      "A casa",
+      "Lia"
+     ],
+     "answer": "A farmácia",
+     "accept": [],
+     "hint": "O que ajuda a achar a casa?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o1y2explli3e",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual palavra completa a frase? 'A escola fica ___ da praça, do outro lado da rua.'",
+     "options": [
+      "em frente",
+      "dentro",
+      "embaixo"
+     ],
+     "answer": "em frente",
+     "accept": [],
+     "hint": "Do outro lado da rua, olhando para ela.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfqgp1x1v4me0b",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Tomás sai de casa, vira à direita e anda até a igreja. Para que lado ele virou?",
+     "options": [
+      "direita",
+      "esquerda",
+      "para trás"
+     ],
+     "answer": "direita",
+     "accept": [],
+     "hint": "Leia de novo a frase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv1yzkhyuwtxx",
+     "subject": "bss",
+     "type": "short",
+     "q": "Complete: para descrever um trajeto, usamos palavras como 'vire à direita' e 'vire à ___'.",
+     "options": [],
+     "answer": "esquerda",
+     "accept": [
+      "a esquerda"
+     ],
+     "hint": "É o contrário de direita.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r107vw9r40zr9g",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destas frases descreve melhor um trajeto?",
+     "options": [
+      "Saio de casa, passo pelo mercado e viro na esquina da escola.",
+      "Eu gosto muito da minha escola.",
+      "A escola tem um pátio grande."
+     ],
+     "answer": "Saio de casa, passo pelo mercado e viro na esquina da escola.",
+     "accept": [],
+     "hint": "Procure a frase que mostra o caminho passo a passo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19dzwcisbfsh1",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Bia passa pela padaria e depois pelo parque. O que ela vê primeiro?",
+     "options": [
+      "A padaria",
+      "O parque",
+      "A escola"
+     ],
+     "answer": "A padaria",
+     "accept": [],
+     "hint": "Preste atenção na palavra 'depois'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15mi8lin99pdz",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes pontos de referência é mais fácil de ver de longe?",
+     "options": [
+      "Uma torre alta",
+      "Uma pedrinha",
+      "Um banco pequeno"
+     ],
+     "answer": "Uma torre alta",
+     "accept": [],
+     "hint": "Pense no tamanho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvg30fx1phkvnk",
+     "subject": "bss",
+     "type": "mc",
+     "q": "No mapa de um bairro, a escola está ao norte da casa de Davi. Para chegar lá, Davi anda para o:",
+     "options": [
+      "norte",
+      "sul",
+      "leste"
+     ],
+     "answer": "norte",
+     "accept": [],
+     "hint": "A escola está em qual direção?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g3z4yi1u978ch",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Para que serve um mapa do caminho até a escola?",
+     "options": [
+      "Para mostrar o trajeto e os pontos de referência",
+      "Para contar quantos alunos há",
+      "Para mostrar as horas"
+     ],
+     "answer": "Para mostrar o trajeto e os pontos de referência",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cwe09m1di8ge3",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Rafa diz: 'Moro perto do mercado.' Por que é melhor dizer 'Moro na rua do mercado, na casa amarela'?",
+     "options": [
+      "Porque dá mais pistas para achar a casa",
+      "Porque é mais curto",
+      "Porque o mercado é amarelo"
+     ],
+     "answer": "Porque dá mais pistas para achar a casa",
+     "accept": [],
+     "hint": "Mais detalhes ajudam ou atrapalham?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rep8mby1fmx8p7",
+     "subject": "bss",
+     "type": "open",
+     "q": "Descreva o trajeto de casa até a escola usando dois pontos de referência.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Diga por onde você passa e para que lado vira.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrhgel118mr9s",
+     "subject": "bss",
+     "type": "open",
+     "q": "Por que é importante conhecer o caminho de casa até a escola?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em segurança e em não se perder.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Editing and proof-reading",
+   "questions": [
+    {
+     "id": "r1pcl9f8bj4w55",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does it mean to proof-read your writing?",
+     "options": [
+      "Check it carefully for mistakes",
+      "Copy it out again",
+      "Read it aloud to a friend only"
+     ],
+     "answer": "Check it carefully for mistakes",
+     "accept": [],
+     "hint": "Think about looking for errors.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6rszu417yci77",
+     "subject": "en",
+     "type": "short",
+     "q": "What do we call the first, rough copy of a piece of writing?",
+     "options": [],
+     "answer": "draft",
+     "accept": [
+      "a draft",
+      "rough draft",
+      "first draft"
+     ],
+     "hint": "It begins with 'd'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqbgxn21nszb07",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is spelt correctly?",
+     "options": [
+      "because",
+      "becos",
+      "becaus"
+     ],
+     "answer": "because",
+     "accept": [],
+     "hint": "Say it slowly: be-cause.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1byoo0bd10nbf",
+     "subject": "en",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: fr_ _nd",
+     "options": [],
+     "answer": "friend",
+     "accept": [],
+     "hint": "There is a sneaky 'i' before 'e' in this word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17b48dz1o3oa1x",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is missing from this sentence? 'where is my coat'",
+     "options": [
+      "a capital letter and a question mark",
+      "only a full stop",
+      "only a comma"
+     ],
+     "answer": "a capital letter and a question mark",
+     "accept": [],
+     "hint": "Is it asking something?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1faencq1kzu2h7",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is a better choice than 'nice' in: 'We had a nice day at the beach.'?",
+     "options": [
+      "wonderful",
+      "small",
+      "quick"
+     ],
+     "answer": "wonderful",
+     "accept": [],
+     "hint": "Choose a word that shows how good it was.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ckcy9mvxv8v",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence uses commas in a list correctly?",
+     "options": [
+      "I packed a hat, a coat and some gloves.",
+      "I packed a hat a coat, and, some gloves.",
+      "I packed, a hat a coat and some gloves."
+     ],
+     "answer": "I packed a hat, a coat and some gloves.",
+     "accept": [],
+     "hint": "Commas go between the items in the list.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1un1b9w1c8uui7",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word could replace 'said' to show someone was very loud?",
+     "options": [
+      "shouted",
+      "whispered",
+      "mumbled"
+     ],
+     "answer": "shouted",
+     "accept": [],
+     "hint": "Think of a loud voice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnkwyh5ld1qp8",
+     "subject": "en",
+     "type": "mc",
+     "q": "How can you improve this sentence? 'The cat sat.'",
+     "options": [
+      "The fluffy cat sat on the warm rug.",
+      "The cat sat sat.",
+      "Cat sat the."
+     ],
+     "answer": "The fluffy cat sat on the warm rug.",
+     "accept": [],
+     "hint": "Adding adjectives and 'where' gives more detail.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgoqx045c7f5b",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word joins these two ideas best? 'I was cold ___ I put on my jumper.'",
+     "options": [
+      "so",
+      "but",
+      "or"
+     ],
+     "answer": "so",
+     "accept": [],
+     "hint": "One thing happened because of the other.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tj917wpqss39",
+     "subject": "en",
+     "type": "mc",
+     "q": "A draft says: 'Then we ate lunch. Then we went home. Then we slept.' What is the best way to improve it?",
+     "options": [
+      "Use different time words like 'After that' and 'Finally'",
+      "Add more 'then's",
+      "Remove all the full stops"
+     ],
+     "answer": "Use different time words like 'After that' and 'Finally'",
+     "accept": [],
+     "hint": "Too many repeated words can sound boring.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y4i6xa1co1637",
+     "subject": "en",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words.",
+     "options": [],
+     "answer": "Saterday → Saturday; bilt → built; towr → tower; strawbery → strawberry; hom → home",
+     "accept": [],
+     "hint": "",
+     "text": "On Saterday, my family went to the seaside. The sun was shining and the water was warm. My little sister bilt a huge sandcastle with a tall towr. Then we had ice cream, and mine was strawbery. It was the best day ever and I did not want to go hom.",
+     "errors": [
+      {
+       "wrong": "Saterday",
+       "right": "Saturday"
+      },
+      {
+       "wrong": "bilt",
+       "right": "built"
+      },
+      {
+       "wrong": "towr",
+       "right": "tower"
+      },
+      {
+       "wrong": "strawbery",
+       "right": "strawberry"
+      },
+      {
+       "wrong": "hom",
+       "right": "home"
+      }
+     ]
+    },
+    {
+     "id": "r11ab8jquee6ny",
+     "subject": "en",
+     "type": "open",
+     "q": "Write one sentence about your weekend, then improve it by adding an adjective and a joining word.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Try words like 'because', 'and' or 'so'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iezf5m1fwjn3m",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence is punctuated correctly?",
+     "options": [
+      "We went to the zoo.",
+      "we went to the zoo",
+      "We went to the zoo,"
+     ],
+     "answer": "We went to the zoo.",
+     "accept": [],
+     "hint": "Look at the first letter and the last mark.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gcr1hn12hcf47",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word in this sentence needs a capital letter? 'on friday we went swimming.'",
+     "options": [
+      "on and friday",
+      "we",
+      "swimming"
+     ],
+     "answer": "on and friday",
+     "accept": [],
+     "hint": "Days of the week and the first word need capitals.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgi5fgm4s1g9t",
+     "subject": "en",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 4 misspelled words.",
+     "options": [],
+     "answer": "droped → dropped; mornin → morning; apeared → appeared; sunlite → sunlight",
+     "accept": [],
+     "hint": "",
+     "text": "Last week our class planted seeds in the school garden. We dug small holes and droped one seed in each. Every mornin we gave them some water. After a few days, tiny green shoots apeared. Our teacher said they need sunlite to grow. I can't wait to see the flowers.",
+     "errors": [
+      {
+       "wrong": "droped",
+       "right": "dropped"
+      },
+      {
+       "wrong": "mornin",
+       "right": "morning"
+      },
+      {
+       "wrong": "apeared",
+       "right": "appeared"
+      },
+      {
+       "wrong": "sunlite",
+       "right": "sunlight"
+      }
+     ]
+    }
+   ]
+  },
+  "en_read": {
+   "topic": "Mystery stories: asking questions to understand",
+   "questions": [
+    {
+     "id": "ruxt0fmcm30tl",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is a mystery story?",
+     "options": [
+      "A story with a puzzle or secret to solve",
+      "A story about animals only",
+      "A story that rhymes"
+     ],
+     "answer": "A story with a puzzle or secret to solve",
+     "accept": [],
+     "hint": "Think about detectives.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cewmlq1f2yybr",
+     "subject": "en_read",
+     "type": "short",
+     "q": "What do we call a small piece of information that helps solve a mystery?",
+     "options": [],
+     "answer": "clue",
+     "accept": [
+      "a clue",
+      "clues"
+     ],
+     "hint": "Detectives look for these.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb47hkz1a5egsd",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which question is good to ask BEFORE you start reading a mystery?",
+     "options": [
+      "What do I think the mystery will be?",
+      "What happened at the end?",
+      "Who solved it?"
+     ],
+     "answer": "What do I think the mystery will be?",
+     "accept": [],
+     "hint": "You have not read it yet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhpk31gy6be0a",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which question is good to ask DURING reading?",
+     "options": [
+      "Which clue have I just found?",
+      "What is the title of the next book?",
+      "How many pages did I read last week?"
+     ],
+     "answer": "Which clue have I just found?",
+     "accept": [],
+     "hint": "Think about what is happening now in the story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1asgfcp1h58nd5",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which question is good to ask AFTER reading?",
+     "options": [
+      "Was my guess about the mystery right?",
+      "What might the cover show?",
+      "Who wrote the first page?"
+     ],
+     "answer": "Was my guess about the mystery right?",
+     "accept": [],
+     "hint": "The story is finished.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r55rcwrndm78g",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Muddy paw prints lead from the kitchen to the garden. The cake is missing. Who probably took the cake?",
+     "options": [
+      "an animal",
+      "a fish",
+      "a bird in a cage"
+     ],
+     "answer": "an animal",
+     "accept": [],
+     "hint": "Look at the prints.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1axqpx11czvc1z",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "A detective finds sand in a boot. What might the clue tell her?",
+     "options": [
+      "The owner went to the beach",
+      "The owner likes cake",
+      "The owner is asleep"
+     ],
+     "answer": "The owner went to the beach",
+     "accept": [],
+     "hint": "Where do you usually find sand?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rju8pl51qf7bee",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Why should you keep track of clues as you read?",
+     "options": [
+      "To help you solve the mystery",
+      "To make the story longer",
+      "To count the pages"
+     ],
+     "answer": "To help you solve the mystery",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnty1qazygf4l",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "In a mystery, what is a 'suspect'?",
+     "options": [
+      "Someone who might have done it",
+      "The person who wrote the story",
+      "A type of clue"
+     ],
+     "answer": "Someone who might have done it",
+     "accept": [],
+     "hint": "The detective is not sure about them yet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsff6vclehhfo",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Zara's pencil is missing. Her friend Leo has blue ink on his fingers, and Zara's pencil is blue. Is that enough to be sure Leo took it?",
+     "options": [
+      "No, we need more clues",
+      "Yes, definitely",
+      "Yes, because Leo is her friend"
+     ],
+     "answer": "No, we need more clues",
+     "accept": [],
+     "hint": "One clue can have more than one explanation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8p6amvh2qwa1",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which word means to find the answer to a mystery?",
+     "options": [
+      "solve",
+      "hide",
+      "forget"
+     ],
+     "answer": "solve",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3dak9k1fylolg",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "A window is open and the curtains are wet. What has probably happened?",
+     "options": [
+      "Rain came in through the window",
+      "Someone washed the curtains",
+      "The cat drank water"
+     ],
+     "answer": "Rain came in through the window",
+     "accept": [],
+     "hint": "Put the two clues together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ta842i1ezlk8i",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is a 'red herring' in a mystery story?",
+     "options": [
+      "A clue that leads you the wrong way",
+      "A fish in the story",
+      "The answer to the mystery"
+     ],
+     "answer": "A clue that leads you the wrong way",
+     "accept": [],
+     "hint": "It tricks the reader.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1us3ja8rawvw1",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Footprints in the snow are small and go to the shed. Who is most likely in the shed?",
+     "options": [
+      "a child",
+      "a giant",
+      "nobody"
+     ],
+     "answer": "a child",
+     "accept": [],
+     "hint": "Small footprints belong to small feet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxkr28iofsy1y",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Why do you think authors hide clues in mystery stories?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about how it feels to solve it yourself.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n10o833xtazc",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Write one question you could ask while reading a mystery story, and explain why it helps.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start your question with 'Who', 'Why' or 'What'.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_spell": {
+   "topic": "The /eɪ/ sound spelt ei, eigh and ey",
+   "questions": [
+    {
+     "id": "rrbmc5c15uvsaj",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which spelling is correct?",
+     "options": [
+      "weigh",
+      "way",
+      "wiegh"
+     ],
+     "answer": "weigh",
+     "accept": [],
+     "hint": "It means to find out how heavy something is.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jxanbs1iq1l79",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: sl_ _gh",
+     "options": [],
+     "answer": "sleigh",
+     "accept": [],
+     "hint": "It uses the 'eigh' pattern.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r176avfq1644e6h",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: gr_ _",
+     "options": [],
+     "answer": "grey",
+     "accept": [],
+     "hint": "It ends with the 'ey' pattern.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rrcwk3vszd2f",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word has the long 'a' sound spelt 'ei'?",
+     "options": [
+      "vein",
+      "grey",
+      "weigh"
+     ],
+     "answer": "vein",
+     "accept": [],
+     "hint": "Look for 'ei' with no 'gh'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cre2eusvt56w",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word has the long 'a' sound spelt 'ey'?",
+     "options": [
+      "obey",
+      "eighteen",
+      "freight"
+     ],
+     "answer": "obey",
+     "accept": [],
+     "hint": "Look at the end of the word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhu87eb3a6t9x",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "How do you spell the number 18 in words?",
+     "options": [
+      "eighteen",
+      "aiteen",
+      "eighteeen"
+     ],
+     "answer": "eighteen",
+     "accept": [],
+     "hint": "It starts with 'eigh'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sxexx41eawtdq",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: n_ _ghbour",
+     "options": [],
+     "answer": "neighbour",
+     "accept": [],
+     "hint": "It uses 'eigh' and ends in 'our'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2hp0pai3ua71",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word means 'goods carried by a lorry, ship or train'?",
+     "options": [
+      "freight",
+      "fright",
+      "frait"
+     ],
+     "answer": "freight",
+     "accept": [],
+     "hint": "It has the 'eigh' pattern.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gip7ec6jjo47",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word completes the sentence? 'Dogs should ___ their owners.'",
+     "options": [
+      "obey",
+      "obay",
+      "obei"
+     ],
+     "answer": "obey",
+     "accept": [],
+     "hint": "It ends in 'ey'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1307i9h16q9aef",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word completes the sentence? 'The owl hunted its ___ at night.'",
+     "options": [
+      "prey",
+      "pray",
+      "prei"
+     ],
+     "answer": "prey",
+     "accept": [],
+     "hint": "It means an animal that is hunted.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jclkd9j8fmhs",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which group of words all use 'eigh'?",
+     "options": [
+      "weigh, sleigh, eighteen",
+      "grey, they, obey",
+      "vein, prey, weigh"
+     ],
+     "answer": "weigh, sleigh, eighteen",
+     "accept": [],
+     "hint": "Check every word in the group.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4k8bgp19nvswy",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word does NOT belong with the others: they, grey, sleigh, obey?",
+     "options": [
+      "sleigh",
+      "they",
+      "grey"
+     ],
+     "answer": "sleigh",
+     "accept": [],
+     "hint": "Three of them share the same ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5lssvih1x4a1",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words.",
+     "options": [],
+     "answer": "naybour → neighbour; grai → grey; obay → obey; aiteen → eighteen; thay → they",
+     "accept": [],
+     "hint": "",
+     "text": "On a cold winter night, our naybour took us for a ride in her sleigh. The sky was grai and the snow was deep. The horse had to obay every command. We counted aiteen stars before thay all hid behind the clouds. It was magical.",
+     "errors": [
+      {
+       "wrong": "naybour",
+       "right": "neighbour"
+      },
+      {
+       "wrong": "grai",
+       "right": "grey"
+      },
+      {
+       "wrong": "obay",
+       "right": "obey"
+      },
+      {
+       "wrong": "aiteen",
+       "right": "eighteen"
+      },
+      {
+       "wrong": "thay",
+       "right": "they"
+      }
+     ]
+    },
+    {
+     "id": "r151sb1klmty0o",
+     "subject": "en_spell",
+     "type": "open",
+     "q": "Write a sentence that uses two words from this list: sleigh, grey, they, weigh.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Check which spelling pattern each word uses.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4rno4eoo5rzk",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which is the correct spelling of the word that means 'those people'?",
+     "options": [
+      "they",
+      "thay",
+      "thei"
+     ],
+     "answer": "they",
+     "accept": [],
+     "hint": "It ends with the 'ey' pattern.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdfd1ew1ojl5nm",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 4 misspelled words.",
+     "options": [],
+     "answer": "way → weigh; frait → freight; prai → prey; vain → vein",
+     "accept": [],
+     "hint": "",
+     "text": "At the market, the farmer had to way the apples on big scales. A lorry full of frait arrived at noon. A hawk circled above, looking for prai. I saw a blue vain on the farmer's strong hand. He said they would sell everything before lunch.",
+     "errors": [
+      {
+       "wrong": "way",
+       "right": "weigh"
+      },
+      {
+       "wrong": "frait",
+       "right": "freight"
+      },
+      {
+       "wrong": "prai",
+       "right": "prey"
+      },
+      {
+       "wrong": "vain",
+       "right": "vein"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "books": []
+}

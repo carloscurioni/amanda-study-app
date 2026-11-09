@@ -3172,6 +3172,864 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "Two Ways to Tell It",
+   "premise": "Nell and Pip spend a snowy winter hearing festive stories told in different ways by their family, comparing each version and deciding which they prefer.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Snowman Story",
+     "synopsis": "Nell and Pip hear the same snowman story from Gran and from Grandad. Gran's version is gentle, but Grandad's is silly.",
+     "text": "It was the first snowy night of winter. Nell and Pip sat by the fire with Gran and Grandad.\n\"Tell us a story!\" said Pip.\nGran told the story of a snowman who wanted to see the summer. In her version, the snowman sat very still and dreamed of flowers. In the morning, he found a tiny daisy by his feet. He smiled a snowy smile.\n\"Now my turn,\" said Grandad. In his version, the snowman sneezed so hard that his carrot nose flew off! A rabbit ran away with it, and the snowman chased the rabbit all round the garden.\nNell laughed. \"Both stories have a snowman and a garden,\" she said. \"But Gran's story is calm, and Grandad's story is funny.\"\n\"Which one do you like best?\" asked Gran.\n\"I like Grandad's,\" said Pip, \"because the chase made me giggle.\"\n\"I like Gran's,\" said Nell, \"because the daisy was a happy surprise.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the weather like?",
+       "options": [
+        "snowy",
+        "sunny",
+        "rainy"
+       ],
+       "answer": "snowy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who told the first story?",
+       "options": [
+        "Gran",
+        "Grandad",
+        "Pip"
+       ],
+       "answer": "Gran",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Gran's snowman find by his feet?",
+       "options": [
+        "a daisy",
+        "a rabbit",
+        "a hat"
+       ],
+       "answer": "a daisy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what flew off the snowman in Grandad's story?",
+       "options": [
+        "his carrot nose",
+        "his hat",
+        "his scarf"
+       ],
+       "answer": "his carrot nose",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which animal ran away with the carrot?",
+       "options": [],
+       "answer": "rabbit",
+       "accept": [
+        "a rabbit",
+        "the rabbit"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the same in both stories?",
+       "options": [
+        "a snowman and a garden",
+        "a rabbit and a daisy",
+        "a sneeze and a chase"
+       ],
+       "answer": "a snowman and a garden",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how was Grandad's story different from Gran's?",
+       "options": [
+        "It was funny.",
+        "It was sad.",
+        "It was shorter."
+       ],
+       "answer": "It was funny.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Which version would you choose, Gran's or Grandad's? Why?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Lost Star",
+     "synopsis": "Two versions of a story about a star that falls from the sky. In one, a child finds it; in the other, a fox does.",
+     "text": "The next evening, Pip found an old book called The Lost Star.\n\"Gran, read it to us!\" he begged.\nIn the book, a little star fell from the sky into a snowy wood. A girl called Ivy found it glowing under a tree. She carried it up a tall hill, and the wind lifted it back into the sky.\nThen Grandad said, \"When I was a boy, I heard a different version.\" In his version, a sleepy fox found the star. The fox used it as a lamp to find his way home, then let it go with a big yawn.\n\"Both stories have a falling star and a snowy wood,\" said Nell.\n\"But a different hero finds it,\" said Pip.\nNell thought hard. \"I prefer the fox,\" she said. \"He was kind, and he still let the star go.\"\nPip yawned just like the fox, and everyone laughed.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the name of the old book?",
+       "options": [
+        "The Lost Star",
+        "The Snowy Wood",
+        "The Sleepy Fox"
+       ],
+       "answer": "The Lost Star",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did the star fall?",
+       "options": [
+        "into a snowy wood",
+        "into a pond",
+        "onto a roof"
+       ],
+       "answer": "into a snowy wood",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the name of the girl in the book?",
+       "options": [],
+       "answer": "Ivy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the star get back into the sky in the book?",
+       "options": [
+        "the wind lifted it",
+        "a bird carried it",
+        "it jumped"
+       ],
+       "answer": "the wind lifted it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who found the star in Grandad's version?",
+       "options": [
+        "a sleepy fox",
+        "a girl",
+        "an owl"
+       ],
+       "answer": "a sleepy fox",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the fox use the star for?",
+       "options": [
+        "as a lamp",
+        "as a toy",
+        "as a hat"
+       ],
+       "answer": "as a lamp",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Nell prefer the fox?",
+       "options": [
+        "He was kind and let the star go.",
+        "He was fast.",
+        "He was funny."
+       ],
+       "answer": "He was kind and let the star go.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Pip yawned at the end of the chapter?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Gingerbread Run",
+     "synopsis": "Mum and Nell each tell a gingerbread story. One ends with a chase, the other with a party.",
+     "text": "On Saturday, the family baked gingerbread biscuits. Mum told a story while they waited for the oven.\nIn Mum's version, a gingerbread girl jumped off the tray and ran out of the door. She ran past a cat, a dog and a horse. At last, she hid inside a warm mitten, safe from everyone.\n\"I can tell it a new way,\" said Nell. In Nell's version, the gingerbread girl did not run away. She stayed on the table and invited all the animals to a party. They ate cake and danced.\nPip clapped. \"Mum's story is exciting because of the chase. Nell's story is friendly because there is a party.\"\n\"Which do you like better?\" asked Mum.\n\"Nell's!\" said Pip. \"Nobody gets scared.\"\nJust then, the oven went ding. The real biscuits were ready, and nobody ran away.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the family bake?",
+       "options": [
+        "gingerbread biscuits",
+        "bread",
+        "a pie"
+       ],
+       "answer": "gingerbread biscuits",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who told the first gingerbread story?",
+       "options": [
+        "Mum",
+        "Gran",
+        "Pip"
+       ],
+       "answer": "Mum",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which animals did the gingerbread girl run past in Mum's story?",
+       "options": [
+        "a cat, a dog and a horse",
+        "a fox, an owl and a rabbit",
+        "a cow, a pig and a duck"
+       ],
+       "answer": "a cat, a dog and a horse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, where did the gingerbread girl hide in Mum's story?",
+       "options": [],
+       "answer": "in a mitten",
+       "accept": [
+        "mitten",
+        "a mitten",
+        "inside a mitten",
+        "in a warm mitten"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the gingerbread girl do in Nell's version?",
+       "options": [
+        "held a party",
+        "ran away",
+        "fell asleep"
+       ],
+       "answer": "held a party",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Pip say Mum's story was exciting?",
+       "options": [
+        "because of the chase",
+        "because of the party",
+        "because of the snow"
+       ],
+       "answer": "because of the chase",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Pip like Nell's version better?",
+       "options": [
+        "Nobody gets scared.",
+        "It was longer.",
+        "It had a fox."
+       ],
+       "answer": "Nobody gets scared.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the chapter says that the real biscuits did not run away?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Two Reindeer",
+     "synopsis": "Pip and Nell watch a play and then read a book of the same reindeer story. They compare the two.",
+     "text": "On Monday, the class went to see a play called The Little Reindeer. A small reindeer named Bramble could not fly. He practised every day. On the last night, he jumped from a hill and flew over the town.\nAt home, Nell found a book of the same story. But in the book, Bramble never learned to fly. Instead, he pulled the sleigh along the snowy road, and he was the fastest runner of all.\n\"The play and the book both have Bramble,\" said Nell. \"And he tries very hard in both.\"\n\"But the endings are different,\" said Pip. \"In the play he flies. In the book he runs.\"\nNell liked the book best. \"Bramble was good at something of his own,\" she said.\nPip liked the play. \"The flying part had real music!\" he said, and he hummed the song all the way to bed.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the name of the play?",
+       "options": [
+        "The Little Reindeer",
+        "The Fast Sleigh",
+        "The Snowy Road"
+       ],
+       "answer": "The Little Reindeer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the reindeer called?",
+       "options": [],
+       "answer": "Bramble",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what could Bramble not do at first?",
+       "options": [
+        "fly",
+        "run",
+        "jump"
+       ],
+       "answer": "fly",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the play end?",
+       "options": [
+        "Bramble flew over the town.",
+        "Bramble fell asleep.",
+        "Bramble ran home."
+       ],
+       "answer": "Bramble flew over the town.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Bramble do in the book?",
+       "options": [
+        "pulled the sleigh along the road",
+        "flew over the town",
+        "hid in a barn"
+       ],
+       "answer": "pulled the sleigh along the road",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the same in the play and the book?",
+       "options": [
+        "Bramble tries very hard.",
+        "Bramble flies.",
+        "Bramble is sad."
+       ],
+       "answer": "Bramble tries very hard.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Pip like the play?",
+       "options": [
+        "It had real music.",
+        "It was shorter.",
+        "It had a fox."
+       ],
+       "answer": "It had real music.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Nell liked Bramble being good at something of his own?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Grandad's Muddle",
+     "synopsis": "Grandad mixes up two festive stories. The children help him put them back together.",
+     "text": "One snowy afternoon, Grandad began a story. \"Once upon a time, a snowman pulled a sleigh and gave everyone gingerbread!\"\nNell giggled. \"Grandad, you've muddled the stories!\"\n\"Have I?\" he said, scratching his head.\nPip helped him. \"The snowman is from the first story. He sneezed his nose off. The reindeer pulls the sleigh. That's Bramble.\"\n\"And the gingerbread girl is from Mum's story,\" said Nell.\nGrandad smiled. \"So my muddled story is a new version. Is it a good one?\"\nThe children thought about it. It was very silly, and it had all their favourite characters in one place.\n\"I like it,\" said Pip. \"It's like a big party of stories.\"\n\"I like the old ones better,\" said Nell. \"Each one has its own ending.\"\nGrandad laughed. \"Then we can keep them all,\" he said.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what pulled the sleigh in Grandad's muddled story?",
+       "options": [
+        "a snowman",
+        "a reindeer",
+        "a fox"
+       ],
+       "answer": "a snowman",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who first said that Grandad had muddled the stories?",
+       "options": [
+        "Nell",
+        "Pip",
+        "Gran"
+       ],
+       "answer": "Nell",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Grandad do when Nell said he had muddled the stories?",
+       "options": [
+        "scratched his head",
+        "fell asleep",
+        "ran away"
+       ],
+       "answer": "scratched his head",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which reindeer really pulls the sleigh, according to Pip?",
+       "options": [],
+       "answer": "Bramble",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which story is the gingerbread girl from?",
+       "options": [
+        "Mum's story",
+        "Gran's story",
+        "the play"
+       ],
+       "answer": "Mum's story",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Pip like the muddled story?",
+       "options": [
+        "It was like a big party of stories.",
+        "It was very short.",
+        "It was scary."
+       ],
+       "answer": "It was like a big party of stories.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Nell like the old stories better?",
+       "options": [
+        "Each one has its own ending.",
+        "They were funnier.",
+        "They had music."
+       ],
+       "answer": "Each one has its own ending.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Do you think Grandad muddled the stories on purpose? Why?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Story in Pictures",
+     "synopsis": "Nell tells the lost star story with only pictures. Pip compares it with the words in the book.",
+     "text": "Pip had a cold, so he stayed in bed. To cheer him up, Nell made a picture book of The Lost Star. It had no words at all.\nOn the first page, she drew a star falling into a wood. On the next page, a fox and a girl found it together. On the last page, they waved goodbye as it floated home.\nPip looked at every page slowly. \"In the old book, Gran read the words,\" he said. \"In your book, I tell the story myself!\"\n\"And I put the fox and Ivy together,\" said Nell. \"So both versions are inside one.\"\nPip turned back to the start. \"I like the words because Gran does funny voices,\" he said. \"But I like your pictures because the fox has a stripy scarf.\"\nNell smiled. She had drawn the scarf just for him.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Pip stay in bed?",
+       "options": [
+        "He had a cold.",
+        "He was tired.",
+        "It was night."
+       ],
+       "answer": "He had a cold.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was special about Nell's book?",
+       "options": [
+        "It had no words.",
+        "It had no pictures.",
+        "It was very big."
+       ],
+       "answer": "It had no words.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who found the star in Nell's picture book?",
+       "options": [
+        "a fox and a girl together",
+        "only the fox",
+        "only the girl"
+       ],
+       "answer": "a fox and a girl together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happened on the last page?",
+       "options": [
+        "They waved goodbye to the star.",
+        "The star fell down.",
+        "The fox fell asleep."
+       ],
+       "answer": "They waved goodbye to the star.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the fox wearing in Nell's pictures?",
+       "options": [],
+       "answer": "a stripy scarf",
+       "accept": [
+        "stripy scarf",
+        "a scarf",
+        "scarf"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Pip like the book with words?",
+       "options": [
+        "Gran does funny voices.",
+        "It had a scarf.",
+        "It was short."
+       ],
+       "answer": "Gran does funny voices.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Nell put both versions into one?",
+       "options": [
+        "She put the fox and Ivy together.",
+        "She wrote two endings.",
+        "She left out the star."
+       ],
+       "answer": "She put the fox and Ivy together.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Nell drew the scarf just for Pip?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Our Own Version",
+     "synopsis": "On the last night before the holiday, Nell and Pip write their own festive story and compare it with everyone else's.",
+     "text": "On the last night before the holiday, Nell and Pip had an idea. \"Let's write our own version!\" said Pip.\nTheir story had a snowman, a little reindeer and a gingerbread girl. The snowman lost his nose, the reindeer found it, and the gingerbread girl held a party to say thank you. Everyone danced under a bright star.\nThey read it to the whole family. Gran clapped. Grandad cheered. Mum wiped a happy tear.\n\"Your story has a bit of every version,\" said Gran. \"The silly part, the kind part and the party.\"\n\"Which version do you like best now?\" asked Mum.\nPip thought. \"I still like Grandad's sneeze the best.\"\nNell thought too. \"I like ours, because we made it together.\"\nOutside, the snow kept falling, and the fire crackled. It was the perfect night for one more story.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, when did Nell and Pip write their story?",
+       "options": [
+        "the last night before the holiday",
+        "on Monday",
+        "in the summer"
+       ],
+       "answer": "the last night before the holiday",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who found the snowman's nose?",
+       "options": [
+        "the little reindeer",
+        "the gingerbread girl",
+        "a rabbit"
+       ],
+       "answer": "the little reindeer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the gingerbread girl hold a party?",
+       "options": [
+        "to say thank you",
+        "because it was her birthday",
+        "because it snowed"
+       ],
+       "answer": "to say thank you",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, where did everyone dance?",
+       "options": [],
+       "answer": "under a bright star",
+       "accept": [
+        "under a star",
+        "under the star",
+        "under the bright star"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Mum do when she heard the story?",
+       "options": [
+        "wiped a happy tear",
+        "fell asleep",
+        "laughed loudly"
+       ],
+       "answer": "wiped a happy tear",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which part does Pip still like best?",
+       "options": [
+        "Grandad's sneeze",
+        "the party",
+        "the star"
+       ],
+       "answer": "Grandad's sneeze",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Nell like their own version best?",
+       "options": [
+        "They made it together.",
+        "It is the shortest.",
+        "It has no snow."
+       ],
+       "answer": "They made it together.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Gran said their story had a bit of every version?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
