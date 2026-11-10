@@ -3192,6 +3192,905 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Lighthouse on Screen",
+   "premise": "When a film of their favourite book is made in their seaside town, two friends join as extras and keep a notebook of every change, deciding which version tells the story best.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The News",
+     "synopsis": "Ines and Theo learn that a film of their favourite book is being made in their seaside town, and they wonder how a film could show a story that happens inside a character's head.",
+     "text": "Ines burst through the library door so fast that the bell above it rang twice.\n\"Theo! They're making a film of The Clockwork Lighthouse. Here. In Harrowcombe!\"\nTheo looked up from his comic. The Clockwork Lighthouse was their favourite book in the whole world. They had each read it four times, and Theo's copy was held together with sticky tape.\n\"Who told you?\" he asked.\n\"There's a poster outside the harbour office. They need extras for the crowd scenes. Children aged nine to twelve. The sign-up is on Saturday.\"\nTheo closed his comic slowly. \"But how will they do it? Half the book happens inside Mabel's head.\"\nHe had a point. The book opened with Mabel sitting alone at the top of the broken lighthouse, thinking about her grandfather. For two whole pages nothing happened except her thoughts: how the gears smelled of oil and salt, how she missed the sound of his whistling, how she was sure the lighthouse was waiting for someone to fix it.\n\"A camera can't film thoughts,\" Theo said.\n\"Maybe it doesn't need to,\" said Ines. \"Maybe it shows her face, or the gears, or the sea. Films have music too. Books don't.\"\n\"Books have imagination,\" said Theo. \"When I read about the lighthouse, I see my own one. In a film, everyone sees the same one.\"\nInes grinned. \"Then we should find out which way works better. We'll be extras, watch everything, and decide for ourselves.\"\nTheo pretended to think about it, but he was already reaching for a pen.\nThat night, Ines opened her own copy of the book and read the first chapter again. This time she tried to imagine it as a film. Where would the camera be? What would the audience hear? She fell asleep with the book on her chest and a hundred questions in her head.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Ines find Theo?",
+       "options": [
+        "In the library",
+        "At the harbour",
+        "In the classroom",
+        "At his house"
+       ],
+       "answer": "In the library",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the town where the film will be made?",
+       "options": [],
+       "answer": "Harrowcombe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the film need children?",
+       "options": [
+        "To be extras in the crowd scenes",
+        "To write the script",
+        "To play Mabel",
+        "To sell tickets"
+       ],
+       "answer": "To be extras in the crowd scenes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does the book The Clockwork Lighthouse begin?",
+       "options": [
+        "With Mabel alone at the top of the lighthouse, thinking about her grandfather",
+        "With a huge storm at sea",
+        "With a chase along the pier",
+        "With Mabel arriving at a new school"
+       ],
+       "answer": "With Mabel alone at the top of the lighthouse, thinking about her grandfather",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Theo worry a film cannot do?",
+       "options": [
+        "Show a character's thoughts",
+        "Show the sea",
+        "Use music",
+        "Find good actors"
+       ],
+       "answer": "Show a character's thoughts",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ines say films have that books do not?",
+       "options": [
+        "Music",
+        "Chapters",
+        "Characters",
+        "Words"
+       ],
+       "answer": "Music",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Theo mean when he says, \"In a film, everyone sees the same one\"?",
+       "options": [
+        "Readers imagine their own lighthouse, but a film shows everyone one version",
+        "The town only has one lighthouse",
+        "Everyone watches films at the same time",
+        "Films are always the same as books"
+       ],
+       "answer": "Readers imagine their own lighthouse, but a film shows everyone one version",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Theo pretended to think about it, even though he was already reaching for a pen?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Missing Twin",
+     "synopsis": "On their first day as extras, Theo discovers that one of the book's main characters has been cut from the film, and the director explains why.",
+     "text": "On Saturday, the harbour was full of cables, lights and people wearing headphones. Ines and Theo were given woolly hats and told to stand near the fish market and look excited.\nDuring a break, Theo picked up a copy of the script that someone had left on a chair. He flicked through it, frowning, and then flicked through it again.\n\"Felix isn't in it,\" he whispered.\nInes stared at him. In the book, Mabel had a twin brother called Felix who was clever with tools but scared of heights. Felix was the one who worked out how to read the lighthouse's secret map.\nA woman with a clipboard overheard them. She was the director, Ms Adeyemi, and she did not seem cross at all.\n\"You've spotted our biggest change,\" she said, sitting down on a crate. \"The book is three hundred pages long. Our film is one hour and forty minutes. If we kept every character, the audience would get lost. So Mabel does what Felix did in the book. She reads the map herself.\"\n\"But Felix is the best part,\" said Theo.\n\"Is he?\" asked Ms Adeyemi. \"Or is the best part what Felix does? The map, the puzzle, the bravery?\"\nTheo opened his mouth and then closed it again.\nInes thought about it. In the book, Mabel and Felix often argued, and some of those arguments went on for pages. They were funny, but they did slow the story down.\n\"I think it might work,\" she said carefully. \"Mabel will have more to do. But we'll lose the jokes between them.\"\n\"That's exactly the kind of thing I worry about,\" said the director. \"Every change costs something. My job is to decide whether it's worth it.\"\nWhen she had gone, Theo wrote in his notebook: Change 1 - Felix left out. Lost: the twins' jokes. Gained: a shorter, clearer story. Then he added, in small letters: Still not happy.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what were Ines and Theo given to wear?",
+       "options": [],
+       "answer": "woolly hats",
+       "accept": [
+        "woolly hat",
+        "hats",
+        "wooly hats",
+        "woollen hats"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which character from the book is missing from the script?",
+       "options": [
+        "Felix",
+        "Mabel",
+        "The grandfather",
+        "Ms Adeyemi"
+       ],
+       "answer": "Felix",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Ms Adeyemi's job?",
+       "options": [
+        "Director",
+        "Actor",
+        "Author",
+        "Sound editor"
+       ],
+       "answer": "Director",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long is the film?",
+       "options": [
+        "One hour and forty minutes",
+        "Three hours",
+        "Thirty minutes",
+        "Two and a half hours"
+       ],
+       "answer": "One hour and forty minutes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who reads the secret map in the film?",
+       "options": [
+        "Mabel",
+        "Felix",
+        "Theo",
+        "The harbourmaster"
+       ],
+       "answer": "Mabel",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ines think will be lost by leaving Felix out?",
+       "options": [
+        "The jokes between the twins",
+        "The secret map",
+        "The storm scene",
+        "The lighthouse"
+       ],
+       "answer": "The jokes between the twins",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Adeyemi mean when she says, \"Every change costs something\"?",
+       "options": [
+        "Each change helps the film but loses something from the book",
+        "Changing the script is very expensive",
+        "Every actor must be paid more",
+        "Films cost more than books"
+       ],
+       "answer": "Each change helps the film but loses something from the book",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Theo wrote \"Still not happy\" in small letters?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Storm",
+     "synopsis": "Ines and Theo watch the famous storm scene being filmed with machines and music, and they disagree about whether the film or the book does it better.",
+     "text": "The storm was the most famous part of the book. For three whole pages, Mabel climbed the lighthouse stairs while the wind screamed and the sea threw itself against the rocks. The writer never said exactly how big the waves were. Instead, she described how Mabel's hands shook, how the stairs seemed to go on forever, and how her heart beat \"like a drum in an empty room\".\nOn the film set, the storm was made by machines. Huge fans blew wind across the rocks. A truck sprayed water into the air, and a man on a ladder shook a metal sheet to make thunder. Lights flashed on and off like lightning.\nInes and Theo watched from behind a barrier, soaked to the skin and delighted.\n\"It's brilliant,\" Ines shouted over the noise. \"You can actually feel it!\"\nLater, in a little room full of screens, the sound editor showed them the scene with music added. Low drums began quietly and grew louder as Mabel climbed. Ines noticed something clever. \"The drums are her heartbeat,\" she said. \"Like in the book!\"\nThe sound editor smiled. \"Books use words to make you feel something. We use pictures and sound. Same job, different tools.\"\nWalking home, Theo was quiet.\n\"Didn't you like it?\" Ines asked.\n\"I did,\" he said. \"But when I read the storm, I'm scared because I don't know what's out there. I imagine the worst waves in the world. In the film, I can see the waves, so they're only as big as the fans can make them.\"\nInes thought that was a strange thing to say, and also exactly right. The film was more exciting, but the book was scarier.\nShe wrote in her notebook: Storm - film better for excitement, book better for fear. Then she underlined it twice.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many pages does the storm last in the book?",
+       "options": [
+        "Three",
+        "One",
+        "Ten",
+        "Twenty"
+       ],
+       "answer": "Three",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what made the wind on the film set?",
+       "options": [
+        "Huge fans",
+        "A real storm",
+        "A helicopter",
+        "Open windows"
+       ],
+       "answer": "Huge fans",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how was the sound of thunder made?",
+       "options": [
+        "A man shook a metal sheet",
+        "A drum was hit",
+        "A truck drove past",
+        "Someone shouted"
+       ],
+       "answer": "A man shook a metal sheet",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does Ines realise the drums in the music stand for?",
+       "options": [],
+       "answer": "Mabel's heartbeat",
+       "accept": [
+        "her heartbeat",
+        "heartbeat",
+        "a heartbeat",
+        "mabels heartbeat"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the sound editor says books use words. What does he say films use?",
+       "options": [
+        "Pictures and sound",
+        "Chapters and pages",
+        "Maps and puzzles",
+        "Actors and costumes"
+       ],
+       "answer": "Pictures and sound",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Theo find the storm scarier in the book?",
+       "options": [
+        "He imagines the worst waves because he cannot see them",
+        "The book has scary pictures",
+        "The book's storm is longer than the film's",
+        "He read the book at night"
+       ],
+       "answer": "He imagines the worst waves because he cannot see them",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ines decide about the storm?",
+       "options": [
+        "The film is better for excitement and the book is better for fear",
+        "The book is better in every way",
+        "The film is better in every way",
+        "Neither version has a good storm"
+       ],
+       "answer": "The film is better for excitement and the book is better for fear",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Ines underlined her note twice?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Pier Chase",
+     "synopsis": "The film adds an exciting chase that is not in the book, and Ines and Theo argue about whether new scenes can still be true to a story.",
+     "text": "On Tuesday, the extras were called to the old pier for a scene that Ines did not recognise at all.\n\"There's no chase in the book,\" she said, reading the list of scenes. \"Mabel never even goes on the pier.\"\nThe screenwriter, a tall man named Mr Lindqvist who wore three scarves at once, overheard. \"Correct,\" he said. \"I added it.\"\nTheo folded his arms. \"Why? The book is perfect.\"\n\"The book is wonderful,\" Mr Lindqvist agreed. \"But in the middle there are four chapters where Mabel studies the map in her bedroom. Readers love that, because they're puzzling it out with her. On a cinema screen, it would be a girl sitting still for twenty minutes.\"\n\"So you made something up,\" said Theo.\n\"I made something that fits,\" said the screenwriter. \"In the book, the mean harbourmaster wants the map so he can sell the lighthouse. Here, he tries to grab it, and Mabel runs. It shows what the book already tells you: he's dangerous, and she's braver than she thinks.\"\nThey watched the scene being filmed. The actor playing Mabel raced along the wooden boards, clutching a rolled-up map, while the harbourmaster chased her. Seagulls flapped out of the way, right on cue.\nIt was thrilling. Even Theo leaned forward.\nAfterwards, they sat on the sea wall and argued.\n\"It changes the story,\" said Theo.\n\"It changes what happens,\" said Ines. \"But does it change what the story is about? Mabel is still brave. The harbourmaster is still the villain. It's like a new scene that could have been in the book.\"\nTheo was quiet for a long time. Then he said, \"I'll allow it. But if they add a dragon, I'm leaving.\"\nInes laughed so hard she nearly fell off the wall.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, where is the new scene filmed?",
+       "options": [],
+       "answer": "the old pier",
+       "accept": [
+        "pier",
+        "old pier",
+        "the pier",
+        "on the pier"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who added the chase scene?",
+       "options": [
+        "The screenwriter",
+        "The director",
+        "Theo",
+        "The author"
+       ],
+       "answer": "The screenwriter",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens in the four middle chapters of the book?",
+       "options": [
+        "Mabel studies the map in her bedroom",
+        "Mabel is chased along the pier",
+        "Mabel fixes the lighthouse",
+        "Mabel visits her grandfather"
+       ],
+       "answer": "Mabel studies the map in her bedroom",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Mr Lindqvist think the map chapters would not work on screen?",
+       "options": [
+        "Watching a girl sit still for twenty minutes would be dull",
+        "The map is too small to film",
+        "The actor could not read",
+        "Audiences do not like maps"
+       ],
+       "answer": "Watching a girl sit still for twenty minutes would be dull",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the harbourmaster want the map?",
+       "options": [
+        "So he can sell the lighthouse",
+        "So he can find treasure",
+        "So he can fix the lighthouse",
+        "So he can give it to Felix"
+       ],
+       "answer": "So he can sell the lighthouse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the chase show about the characters?",
+       "options": [
+        "The harbourmaster is dangerous and Mabel is braver than she thinks",
+        "Mabel is a fast runner and nothing else",
+        "The harbourmaster is kind",
+        "Mabel is afraid of seagulls"
+       ],
+       "answer": "The harbourmaster is dangerous and Mabel is braver than she thinks",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Ines's main argument about the new scene?",
+       "options": [
+        "It changes what happens but not what the story is about",
+        "It ruins the whole story",
+        "It should be added to the book",
+        "It is too short"
+       ],
+       "answer": "It changes what happens but not what the story is about",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Theo joked about a dragon at the end of the chapter?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Inside Mabel's Head",
+     "synopsis": "The young actor who plays Mabel shows Ines and Theo how a film can show a character's thoughts without words.",
+     "text": "Theo still had one big worry. \"How will they show what Mabel is thinking?\" he asked anyone who would listen. \"That's what the whole book is.\"\nOn Thursday, he got his answer. The actor who played Mabel, a thirteen-year-old girl called Rosa, was eating a sandwich between scenes, and she invited them to sit with her.\n\"It's the hardest part of the job,\" Rosa admitted. \"In the book, Mabel thinks, 'I'm terrified, but I can't let Grandad down.' I can't just say that out loud. It would sound silly.\"\n\"So what do you do?\" asked Ines.\n\"I use my face,\" said Rosa. \"Watch.\" She stared at an imaginary lighthouse. Her chin lifted, but her hands twisted together in her lap. Without a single word, she looked frightened and determined at the same time.\n\"Whoa,\" said Theo.\n\"The camera helps too,\" Rosa went on. \"When they film very close to my face, the audience notices tiny things, like my eyes filling with tears. And sometimes the director uses a voice-over. That's when you hear my voice saying Mabel's thoughts, but my mouth doesn't move. We only use it three times, for the most important moments.\"\n\"Why only three?\" asked Ines.\n\"Because if a film tells you everything, you stop watching closely,\" said Rosa. \"It's the same as a book that explains every feeling. Sometimes it's better to let the audience work it out.\"\nThat evening, Ines tried an experiment. She read a page of the book where Mabel felt lonely, and then she tried to act it in the mirror without words. It was much harder than it looked.\nIn her notebook she wrote: Thoughts - the book tells you directly. The film shows them with faces, close-ups and a little voice-over. Both make you guess sometimes.\nTheo, reading over her shoulder, added: Rosa is very good.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how old is Rosa?",
+       "options": [],
+       "answer": "13",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Rosa say is the hardest part of her job?",
+       "options": [
+        "Showing what Mabel is thinking",
+        "Learning her lines",
+        "Running on the pier",
+        "Getting wet in the storm"
+       ],
+       "answer": "Showing what Mabel is thinking",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Rosa use first to show Mabel's feelings?",
+       "options": [
+        "Her face",
+        "A song",
+        "A letter",
+        "A sign"
+       ],
+       "answer": "Her face",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is it called when you hear a character's voice saying their thoughts but their mouth does not move?",
+       "options": [],
+       "answer": "voice-over",
+       "accept": [
+        "voiceover",
+        "voice over",
+        "a voice-over",
+        "a voiceover"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many times is the voice-over used in the film?",
+       "options": [],
+       "answer": "3",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Rosa say the voice-over is only used a few times?",
+       "options": [
+        "If a film tells you everything, you stop watching closely",
+        "The microphone was broken",
+        "Rosa forgot her lines",
+        "Voice-overs are too expensive"
+       ],
+       "answer": "If a film tells you everything, you stop watching closely",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ines discover from her experiment in the mirror?",
+       "options": [
+        "Showing feelings without words is harder than it looks",
+        "She wants to be an actor",
+        "The book is boring",
+        "Mabel is never lonely"
+       ],
+       "answer": "Showing feelings without words is harder than it looks",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Theo added \"Rosa is very good\" to Ines's notebook?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The New Ending",
+     "synopsis": "Ines and Theo discover that the film has a completely different ending from the book, and they must think about what the change gains and loses.",
+     "text": "In the last week of filming, the crew gathered at the lighthouse at sunset. Ines checked the script, then checked it again, and felt her stomach drop.\n\"Theo,\" she said. \"Read this.\"\nIn the book, the ending was quiet and a little sad. Mabel finally reached the lamp room, but the great clockwork machine was too old to repair. Instead of fixing it, she sat beside it and understood that her grandfather's memory did not live in the gears. It lived in her. She walked down the stairs and left the lighthouse dark, and many readers cried at that page.\nIn the script, Mabel turned a final key, the gears groaned, and the lighthouse blazed with light across the bay while the whole town cheered.\n\"They've ruined it,\" said Theo, and his voice wobbled.\nMs Adeyemi found them sitting on the steps. She listened while Theo explained, very fast, why the ending was wrong.\n\"I understand,\" she said gently. \"We argued about it for months. Lots of people thought a film audience would leave feeling sad and confused. A bright light at the end is a picture everyone can understand.\"\n\"But the book isn't about fixing the lighthouse,\" said Ines slowly. \"It's about Mabel learning to let go.\"\nThe director nodded. \"Then maybe we've lost something. Maybe we've gained something else. You'll have to decide when you see it.\"\nThat night, Ines couldn't sleep. She wanted the film to be good, and she wanted the town to cheer. But she kept thinking about the dark lighthouse in the book and how it had made her feel older and wiser when she first read it.\nIn her notebook she wrote: Ending - the film is happier and easier to watch. The book has a deeper message. Then she wrote one more line: Not sure a happy ending is always a better one.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, at what time of day does the crew gather at the lighthouse?",
+       "options": [
+        "At sunset",
+        "At dawn",
+        "At midnight",
+        "At lunchtime"
+       ],
+       "answer": "At sunset",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens to the clockwork machine at the end of the book?",
+       "options": [
+        "It is too old to repair",
+        "Mabel fixes it",
+        "The harbourmaster breaks it",
+        "Felix takes it home"
+       ],
+       "answer": "It is too old to repair",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the book's ending, where does Mabel realise her grandfather's memory lives?",
+       "options": [
+        "Inside her",
+        "In the gears",
+        "In the map",
+        "In the sea"
+       ],
+       "answer": "Inside her",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does the film script end?",
+       "options": [
+        "The lighthouse lights up and the town cheers",
+        "The lighthouse stays dark",
+        "Mabel leaves Harrowcombe",
+        "The harbourmaster sells the lighthouse"
+       ],
+       "answer": "The lighthouse lights up and the town cheers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the filmmakers change the ending?",
+       "options": [
+        "They thought a film audience might leave sad and confused",
+        "The actor refused to film the old ending",
+        "The lighthouse was too dark to film",
+        "The book's ending was too long"
+       ],
+       "answer": "They thought a film audience might leave sad and confused",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ines say the book is really about?",
+       "options": [
+        "Mabel learning to let go",
+        "Fixing the lighthouse",
+        "Beating the harbourmaster",
+        "Reading a secret map"
+       ],
+       "answer": "Mabel learning to let go",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ines's last note, \"Not sure a happy ending is always a better one\", suggest?",
+       "options": [
+        "She thinks a sadder ending can sometimes mean more",
+        "She wants every story to be sad",
+        "She has decided the film is perfect",
+        "She did not read the book's ending"
+       ],
+       "answer": "She thinks a sadder ending can sometimes mean more",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Theo's voice wobbled when he said, \"They've ruined it\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Opening Night",
+     "synopsis": "Ines and Theo watch the finished film and write a review comparing it with the book, which leads to a surprising letter.",
+     "text": "Six months later, the little cinema in Harrowcombe had a red carpet for the very first time. Ines and Theo sat in the third row, holding their breath every time the harbour appeared on screen.\nThere they were: two tiny figures in woolly hats near the fish market, waving for exactly two seconds. The whole row clapped.\nThe storm made the audience gasp. During the pier chase, a small boy behind them shouted, \"Run, Mabel!\" And when Rosa's face filled the screen in close-up, her eyes shining, Ines could see every thought from the book.\nThen came the ending. The lighthouse blazed, the music swelled, and the audience cheered. Ines felt happy and a little bit empty at the same time.\nTheir teacher had asked them to write a review for the school newsletter, comparing the book and the film. They sat in Theo's kitchen the next day with their notebooks open.\n\"The film is better at excitement,\" Ines said. \"The storm and the chase were amazing.\"\n\"And Rosa showed Mabel's feelings without words,\" Theo admitted. \"That surprised me.\"\n\"But the book is better at fear,\" said Ines, \"because you imagine it yourself.\"\n\"And the book's ending means more,\" said Theo firmly. \"The film makes it about a lamp. The book makes it about Mabel.\"\nIn the end, they wrote that neither version was simply better. The book and the film were like two people telling the same story in different languages. The best thing, they decided, was to enjoy both and to notice what each one did well.\nAt the bottom of the review, Theo added: P.S. Read the book first.\nA week later, a letter arrived at the school. It was from the author of The Clockwork Lighthouse. She had read their review, and she had a question for them: would they like to help with her next book?",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which row do Ines and Theo sit in?",
+       "options": [
+        "The third row",
+        "The front row",
+        "The back row",
+        "The tenth row"
+       ],
+       "answer": "The third row",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, for how many seconds do Ines and Theo appear waving on screen?",
+       "options": [],
+       "answer": "2",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does a small boy shout during the pier chase?",
+       "options": [
+        "Run, Mabel!",
+        "Watch out!",
+        "Go, Felix!",
+        "Stop him!"
+       ],
+       "answer": "Run, Mabel!",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who asked Ines and Theo to write a review?",
+       "options": [
+        "Their teacher",
+        "The director",
+        "Rosa",
+        "The author"
+       ],
+       "answer": "Their teacher",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do Ines and Theo finally decide in their review?",
+       "options": [
+        "Neither version is simply better",
+        "The film is better",
+        "The book is better",
+        "Nobody should watch the film"
+       ],
+       "answer": "Neither version is simply better",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Theo add at the bottom of the review?",
+       "options": [
+        "P.S. Read the book first.",
+        "P.S. Watch the film twice.",
+        "P.S. Rosa is the best.",
+        "P.S. Bring back Felix."
+       ],
+       "answer": "P.S. Read the book first.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do they mean by saying the book and film are \"like two people telling the same story in different languages\"?",
+       "options": [
+        "They tell one story in different ways, each with its own strengths",
+        "The film was made in another country",
+        "The book has been translated",
+        "The actors speak two languages"
+       ],
+       "answer": "They tell one story in different ways, each with its own strengths",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Ines felt \"happy and a little bit empty at the same time\" at the end of the film?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
