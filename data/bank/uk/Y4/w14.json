@@ -1821,6 +1821,551 @@
      "errors": []
     }
    ]
+  },
+  "pt_leit": {
+   "topic": "Antecipar e confirmar hipóteses — 'O mistério do coelho pensante' (Clarice Lispector)",
+   "questions": [
+    {
+     "id": "rcytg6nbx1zzm",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é uma hipótese na leitura?",
+     "options": [
+      "Um palpite sobre o que pode acontecer, que ainda vamos conferir",
+      "Uma certeza que nunca muda",
+      "O nome do autor do livro",
+      "A última frase da história"
+     ],
+     "answer": "Um palpite sobre o que pode acontecer, que ainda vamos conferir",
+     "accept": [],
+     "hint": "Pense no que fazemos antes de saber o final.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kfqiq7xaw3j",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Antes de começar a ler, o que pode nos ajudar a fazer uma hipótese sobre a história?",
+     "options": [
+      "O título e as imagens da capa",
+      "O número de páginas",
+      "A cor da letra",
+      "O preço do livro"
+     ],
+     "answer": "O título e as imagens da capa",
+     "accept": [],
+     "hint": "O que vemos primeiro quando pegamos um livro?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8phj9el69ybp",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é uma pista em uma história?",
+     "options": [
+      "Uma informação do texto que ajuda a descobrir algo",
+      "Um personagem que sempre mente",
+      "Um desenho sem importância",
+      "Uma palavra difícil"
+     ],
+     "answer": "Uma informação do texto que ajuda a descobrir algo",
+     "accept": [],
+     "hint": "Detetives procuram pistas para resolver casos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dokwf21awehiw",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Um livro tem no título a palavra \"mistério\". Qual hipótese combina melhor com esse título?",
+     "options": [
+      "A história vai ter algo escondido para descobrir",
+      "A história vai ensinar a fazer bolo",
+      "A história vai ser uma lista de compras",
+      "A história não terá personagens"
+     ],
+     "answer": "A história vai ter algo escondido para descobrir",
+     "accept": [],
+     "hint": "O que é um mistério?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruiykrp1kcga3i",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Complete: quando fazemos uma hipótese antes de ler, estamos fazendo uma ___ (palavra que significa \"adiantar-se\").",
+     "options": [],
+     "answer": "antecipação",
+     "accept": [
+      "antecipacao"
+     ],
+     "hint": "A palavra está nas palavras-chave da semana: começa com \"ante\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r82690ytq73uf",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O coelho fugiu da gaiola, mas a porta estava fechada.\" Qual pergunta essa frase faz o leitor pensar?",
+     "options": [
+      "Como o coelho conseguiu sair?",
+      "Qual é a cor da gaiola?",
+      "Quantos anos tem o coelho?",
+      "Onde fica a padaria?"
+     ],
+     "answer": "Como o coelho conseguiu sair?",
+     "accept": [],
+     "hint": "O que parece impossível nessa frase?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhjzf93cg2seg",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Havia pegadinhas de terra no tapete e a porta da horta estava aberta.\" Qual hipótese combina com essas pistas?",
+     "options": [
+      "Algum animal entrou vindo da horta",
+      "Choveu dentro da sala",
+      "O tapete foi lavado",
+      "Ninguém passou por ali"
+     ],
+     "answer": "Algum animal entrou vindo da horta",
+     "accept": [],
+     "hint": "De onde pode ter vindo a terra?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rea29ev1iwtrab",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Durante a leitura, você descobre uma pista que mostra que sua hipótese estava errada. O que um bom leitor faz?",
+     "options": [
+      "Revê a hipótese e cria uma nova",
+      "Para de ler o livro",
+      "Finge que não viu a pista",
+      "Pula para outra história"
+     ],
+     "answer": "Revê a hipótese e cria uma nova",
+     "accept": [],
+     "hint": "Hipóteses podem mudar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12gdlik1qxe0is",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quando uma pista do texto mostra que nosso palpite estava certo, dizemos que a hipótese foi:",
+     "options": [
+      "confirmada",
+      "esquecida",
+      "apagada",
+      "inventada"
+     ],
+     "answer": "confirmada",
+     "accept": [],
+     "hint": "É o contrário de \"rejeitada\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nvgps5v9i9e0",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Toda noite, a cenoura sumia do prato. De manhã, o coelho estava com o focinho alaranjado.\" Qual é a pista mais importante?",
+     "options": [
+      "O focinho alaranjado do coelho",
+      "O prato",
+      "A noite",
+      "A manhã"
+     ],
+     "answer": "O focinho alaranjado do coelho",
+     "accept": [],
+     "hint": "Qual detalhe liga o coelho à cenoura?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16w2gvw42ksn0",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Lia achou que o barulho no sótão era um fantasma. Depois, viu um gato saindo de lá com um novelo.\" O que aconteceu com a hipótese de Lia?",
+     "options": [
+      "Ela foi revista, pois a pista mostrou um gato",
+      "Ela foi confirmada",
+      "Ela ficou igual",
+      "Ela virou o título do livro"
+     ],
+     "answer": "Ela foi revista, pois a pista mostrou um gato",
+     "accept": [],
+     "hint": "A nova pista combina com fantasma ou com gato?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x3qfut16yxc9x",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Qual palavra completa a frase? \"Para resolver o mistério, a detetive procurou uma ___ no chão do quarto.\"",
+     "options": [],
+     "answer": "pista",
+     "accept": [
+      "uma pista"
+     ],
+     "hint": "É algo que ajuda a descobrir a verdade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1unhdk418h4m4r",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que é bom fazer hipóteses durante a leitura?",
+     "options": [
+      "Porque deixa a leitura mais atenta e curiosa",
+      "Porque assim não precisamos ler até o fim",
+      "Porque o texto fica mais curto",
+      "Porque as hipóteses estão sempre certas"
+     ],
+     "answer": "Porque deixa a leitura mais atenta e curiosa",
+     "accept": [],
+     "hint": "Pense em como você lê quando quer descobrir algo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjss8up1qmquzz",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O coelho Tobias olhava para a janela, mexia o nariz e parecia pensar em um plano.\" Que hipótese o leitor pode fazer?",
+     "options": [
+      "Tobias está planejando fugir ou fazer algo",
+      "Tobias está dormindo",
+      "Tobias não gosta de janelas",
+      "Tobias é um cachorro"
+     ],
+     "answer": "Tobias está planejando fugir ou fazer algo",
+     "accept": [],
+     "hint": "O que significa \"pensar em um plano\"?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19ti05q99fmvr",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Escolha um livro que você conhece. Pelo título, que hipótese você faria sobre a história antes de ler?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que as palavras do título fazem você imaginar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b9x5x2imj19",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Conte uma vez em que você mudou de ideia sobre o que ia acontecer em uma história. Que pista fez você mudar?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Lembre de uma surpresa em um livro ou filme.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_ort": {
+   "topic": "Acentuação das oxítonas terminadas em A, E e O",
+   "questions": [
+    {
+     "id": "r6zodwzwdmuja",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "O que é uma palavra oxítona?",
+     "options": [
+      "Palavra cuja sílaba tônica é a última",
+      "Palavra cuja sílaba tônica é a primeira",
+      "Palavra que não tem sílaba tônica",
+      "Palavra com uma só letra"
+     ],
+     "answer": "Palavra cuja sílaba tônica é a última",
+     "accept": [],
+     "hint": "Pense em \"café\": onde está a sílaba mais forte?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbj2akyf099l1",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual destas palavras é oxítona?",
+     "options": [
+      "jacaré",
+      "mesa",
+      "lâmpada",
+      "bola"
+     ],
+     "answer": "jacaré",
+     "accept": [],
+     "hint": "Fale as palavras em voz alta e veja onde fica a sílaba mais forte.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oyqiv61cwvn70",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Qual é a sílaba tônica de \"maracujá\"?",
+     "options": [],
+     "answer": "já",
+     "accept": [
+      "ja"
+     ],
+     "hint": "Fale devagar: ma-ra-cu-já.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h8654l4z4qtf",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a regra das oxítonas estudada nesta semana?",
+     "options": [
+      "Acentuam-se as oxítonas terminadas em A, E e O, seguidas ou não de S",
+      "Todas as oxítonas levam acento",
+      "Nenhuma oxítona leva acento",
+      "Só levam acento as oxítonas terminadas em U"
+     ],
+     "answer": "Acentuam-se as oxítonas terminadas em A, E e O, seguidas ou não de S",
+     "accept": [],
+     "hint": "Olhe a última letra de sofá, café e avô.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1peqrbm1ckg03w",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está escrita corretamente?",
+     "options": [
+      "sofá",
+      "sofa",
+      "sófa"
+     ],
+     "answer": "sofá",
+     "accept": [],
+     "hint": "É oxítona terminada em A.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwtneij1sbv0ur",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Escreva a palavra com o acento correto: robo",
+     "options": [],
+     "answer": "robô",
+     "accept": [],
+     "hint": "É oxítona terminada em O, com som fechado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qs97yx1k0vesj",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Escreva a palavra com o acento correto: ingles",
+     "options": [],
+     "answer": "inglês",
+     "accept": [],
+     "hint": "Termina em E seguido de S.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18gk4cea01vky",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Escreva a palavra com o acento correto: ananas",
+     "options": [],
+     "answer": "ananás",
+     "accept": [],
+     "hint": "Termina em A seguido de S.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz7iqfo9wm1d4",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a diferença entre \"avô\" e \"avó\"?",
+     "options": [
+      "avô (som fechado) é o homem; avó (som aberto) é a mulher",
+      "São a mesma palavra",
+      "avô é a mulher; avó é o homem",
+      "Nenhuma das duas leva acento"
+     ],
+     "answer": "avô (som fechado) é o homem; avó (som aberto) é a mulher",
+     "accept": [],
+     "hint": "O acento circunflexo indica som fechado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nlh1ru1y7s84i",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual destas oxítonas NÃO leva acento, porque termina em U?",
+     "options": [
+      "caju",
+      "café",
+      "sofá",
+      "vovó"
+     ],
+     "answer": "caju",
+     "accept": [],
+     "hint": "A regra fala só de A, E e O.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjhdtif163j02y",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Em qual frase todas as palavras estão acentuadas corretamente?",
+     "options": [
+      "A vovó tomou café no sofá.",
+      "A vovo tomou café no sofá.",
+      "A vovó tomou cafe no sofá.",
+      "A vovó tomou café no sofa."
+     ],
+     "answer": "A vovó tomou café no sofá.",
+     "accept": [],
+     "hint": "Confira as três oxítonas de cada frase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ogfrt64sp65m",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: jaca_ _ (o animal com muitos dentes)",
+     "options": [],
+     "answer": "jacaré",
+     "accept": [],
+     "hint": "É oxítona terminada em E.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1adjpt61hoxd7e",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual destas palavras NÃO é oxítona?",
+     "options": [
+      "casa",
+      "café",
+      "robô",
+      "maracujá"
+     ],
+     "answer": "casa",
+     "accept": [],
+     "hint": "Em qual delas a sílaba mais forte é a primeira?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s5qvm0edentn",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado.",
+     "options": [],
+     "answer": "maracuja → maracujá; avo → avô; sofa → sofá; cafe → café; robo → robô",
+     "accept": [],
+     "hint": "Procure oxítonas terminadas em A, E ou O sem acento.",
+     "text": "No domingo, o vovô fez suco de maracuja e chamou o meu avo para o lanche. Eles sentaram no sofa da varanda e tomaram cafe com bolo. De repente, um robo de brinquedo passou andando pelo chão. Todos riram muito, e a tarde terminou feliz para a família inteira.",
+     "errors": [
+      {
+       "wrong": "maracuja",
+       "right": "maracujá"
+      },
+      {
+       "wrong": "avo",
+       "right": "avô"
+      },
+      {
+       "wrong": "sofa",
+       "right": "sofá"
+      },
+      {
+       "wrong": "cafe",
+       "right": "café"
+      },
+      {
+       "wrong": "robo",
+       "right": "robô"
+      }
+     ]
+    },
+    {
+     "id": "ra2rtyz1e21tqc",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a forma correta do pronome de tratamento?",
+     "options": [
+      "você",
+      "voce",
+      "vôce"
+     ],
+     "answer": "você",
+     "accept": [],
+     "hint": "A sílaba forte é a última, e ela termina em E.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8cn8ms7edv3e",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado no texto sobre a aula de inglês.",
+     "options": [],
+     "answer": "ingles → inglês; Voce → Você; jacare → jacaré; vovo → vovó; ananas → ananás",
+     "accept": [],
+     "hint": "Procure palavras com a última sílaba forte terminando em A, E ou O.",
+     "text": "Na aula de ingles, a professora perguntou: \"Voce já viu um jacare de verdade?\" Ninguém tinha visto. Então ela mostrou fotos de um passeio com a vovo, que adora animais. No fim, todos comeram ananas, uma fruta parecida com o abacaxi, e voltaram contentes para casa.",
+     "errors": [
+      {
+       "wrong": "ingles",
+       "right": "inglês"
+      },
+      {
+       "wrong": "Voce",
+       "right": "Você"
+      },
+      {
+       "wrong": "jacare",
+       "right": "jacaré"
+      },
+      {
+       "wrong": "vovo",
+       "right": "vovó"
+      },
+      {
+       "wrong": "ananas",
+       "right": "ananás"
+      }
+     ]
+    }
+   ]
   }
  },
  "books": [
@@ -2672,6 +3217,867 @@
        "subject": "pt_leit",
        "type": "open",
        "q": "Por que você acha que o lema do clube é \"Toda pista merece uma segunda olhada\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Hilltop Herald",
+   "premise": "Best friends Priya and Tomás join their school's new newspaper club and, in each episode, learn to separate facts from opinions, check rumours, write fair headlines and spot bias.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Best Climbing Frame Ever",
+     "synopsis": "Priya and Tomás join the new school newspaper and learn that a news report must keep facts and opinions apart.",
+     "text": "On Monday, a poster appeared outside the library: JOIN THE HILLTOP HERALD! REPORTERS WANTED. Priya ripped off a paper strip with the meeting time before anyone else could.\nAt lunchtime, she and her best friend Tomás sat in Room 4 with six other children. Mrs Barlow, the teacher in charge, wrote two words on the board: FACT and OPINION.\n\"A fact is something that can be checked and proved,\" she said. \"An opinion is what someone thinks or feels. Good reporters know the difference.\"\nThen she gave out the first jobs. Priya and Tomás would write about the new climbing frame in the playground.\nThat afternoon, they measured it with a tape measure. It was four metres tall. It had two slides, one rope bridge and a red tunnel. Workers had built it in three days.\nPriya wrote her report that evening. It began: \"The new climbing frame is the best climbing frame ever built. Everyone thinks it is amazing, and the red tunnel is the most exciting part.\"\nThe next day, Mrs Barlow read it with a small smile. She took a green pen and underlined three phrases: best ever, everyone thinks and most exciting.\n\"Can we prove these?\" she asked.\nPriya frowned. \"Well… I think it's the best.\"\n\"Exactly. You think. That's an opinion,\" said Mrs Barlow. \"And did you ask everyone?\"\nTomás laughed. \"There are four hundred children in this school.\"\nPriya rewrote the report using only the facts they had checked: the height, the slides, the bridge, the tunnel and the three days of building. At the end, she added a quotation from a Year 2 boy: \"I like the tunnel because it's dark inside.\" Mrs Barlow explained that reporting what someone said was fine, as long as you showed it was their opinion.\nOn Friday, the first Hilltop Herald was pinned to the noticeboard. Priya stood in front of it, smiling.\n\"Not bad,\" said Tomás. \"But I think it's the best newspaper ever.\"\n\"Opinion!\" said Priya, and they both laughed.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did the poster about the newspaper appear?",
+       "options": [
+        "Outside the library",
+        "In the dining hall",
+        "On the school gate"
+       ],
+       "answer": "Outside the library",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the school newspaper?",
+       "options": [],
+       "answer": "The Hilltop Herald",
+       "accept": [
+        "Hilltop Herald"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Mrs Barlow say a fact is?",
+       "options": [
+        "Something that can be checked and proved",
+        "What someone thinks or feels",
+        "A story that is made up"
+       ],
+       "answer": "Something that can be checked and proved",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how tall was the climbing frame?",
+       "options": [
+        "Four metres",
+        "Two metres",
+        "Ten metres"
+       ],
+       "answer": "Four metres",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which phrase did Mrs Barlow underline as an opinion?",
+       "options": [
+        "best ever",
+        "four metres tall",
+        "three days"
+       ],
+       "answer": "best ever",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was \"everyone thinks it is amazing\" a problem?",
+       "options": [
+        "Priya had not asked everyone, so she could not prove it",
+        "It was too short",
+        "It was about the wrong playground"
+       ],
+       "answer": "Priya had not asked everyone, so she could not prove it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was it fine to include the Year 2 boy's words?",
+       "options": [
+        "The report showed that it was his opinion",
+        "It was a fact about the slides",
+        "Mrs Barlow had written it"
+       ],
+       "answer": "The report showed that it was his opinion",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think readers trust a news report more when it sticks to the facts?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: Two Headlines",
+     "synopsis": "When the lunch menu changes, two reporters write very different headlines about the same fact, and the club learns how headlines can push readers' feelings.",
+     "text": "The big news that week was the lunch menu. From now on, Friday would be Vegetable Day, and pizza would move to Wednesday.\nTwo reporters wanted the story: Tomás and a Year 5 girl called Ruby. Mrs Barlow had an idea. \"Each of you write a headline. Then we'll compare.\"\nTomás loved pizza more than anything. His headline said: PIZZA FRIDAY CANCELLED! PUPILS FURIOUS.\nRuby grew tomatoes at home and liked vegetables. Her headline said: HOORAY! HEALTHY FRIDAYS ARE HERE AT LAST.\nMrs Barlow pinned both headlines to the board. \"Are they about the same news?\" she asked.\n\"Yes,\" said Priya slowly. \"But they make me feel completely different things.\"\n\"That's the power of a headline,\" said Mrs Barlow. \"Lots of people only read the headline. If it's unfair, they get the wrong idea.\"\nShe pointed at Tomás's headline. \"Was pizza cancelled?\"\nTomás went red. \"Well, no. It moved to Wednesday.\"\n\"And were pupils furious? All of them?\"\n\"I was a bit furious,\" Tomás admitted.\nThen she pointed at Ruby's headline. \"Hooray and at last tell readers how to feel. That's your opinion, Ruby, not news.\"\nRuby nodded. \"So we should say what changed without telling people whether to be happy or cross?\"\n\"Exactly. When a writer only shows one side, or chooses words to make readers think one way, we call it bias.\"\nThe club worked together on a new headline. They crossed out words, argued a little and laughed a lot. In the end, they wrote: LUNCH MENU CHANGES: PIZZA MOVES TO WEDNESDAY, FRIDAY BECOMES VEGETABLE DAY.\n\"It's longer,\" said Tomás.\n\"But it's fair,\" said Ruby.\nUnderneath, they printed two short quotations, one from a pupil who was sad about the change and one from a pupil who was pleased. Readers could make up their own minds.\nOn Wednesday, Tomás ate three slices of pizza. \"Fact,\" he said with a full mouth.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the big news that week?",
+       "options": [
+        "The lunch menu was changing",
+        "The school was closing",
+        "A new teacher had arrived"
+       ],
+       "answer": "The lunch menu was changing",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which day would become Vegetable Day?",
+       "options": [],
+       "answer": "Friday",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Tomás write an angry headline?",
+       "options": [
+        "He loved pizza",
+        "He had not been told about the change",
+        "Ruby had asked him to"
+       ],
+       "answer": "He loved pizza",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Mrs Barlow say lots of people only read?",
+       "options": [
+        "The headline",
+        "The last line",
+        "The quotations"
+       ],
+       "answer": "The headline",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which word in Tomás's headline was not true?",
+       "options": [
+        "CANCELLED",
+        "PIZZA",
+        "FRIDAY"
+       ],
+       "answer": "CANCELLED",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mrs Barlow call it when a writer only shows one side?",
+       "options": [
+        "Bias",
+        "A fact",
+        "A caption"
+       ],
+       "answer": "Bias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the club print two quotations under the headline?",
+       "options": [
+        "So readers could hear both sides and decide for themselves",
+        "To make the page look full",
+        "Because Mrs Barlow liked pizza"
+       ],
+       "answer": "So readers could hear both sides and decide for themselves",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Tomás and Ruby both found it hard to write a fair headline at first?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Missing Football",
+     "synopsis": "A rumour blames Year 6 for a missing football, and the reporters must check the facts before printing anything.",
+     "text": "On Tuesday, the class football disappeared. By break time, a rumour was flying round the playground: \"Year 6 stole it!\"\n\"That's our front page!\" said Tomás, grabbing his notebook. \"YEAR 6 FOOTBALL THIEVES!\"\nPriya held up her hand like a traffic warden. \"Wait. Who saw them take it?\"\nTomás thought. \"Jake said that Mia said that someone saw them.\"\n\"So nobody actually saw anything,\" said Priya. \"That's not a fact. That's a rumour.\"\nThey told Mrs Barlow. \"A good reporter never prints a rumour as if it were true,\" she said. \"Find evidence. Ask people who were really there.\"\nSo the two reporters began to investigate. First, they asked Mr Hale, the caretaker, when he had last seen the ball. \"Monday afternoon,\" he said. \"Your class was playing a very wild game.\"\nNext, they spoke to Ana, who had been the goalkeeper. \"Someone kicked it really high,\" she said. \"Then the bell rang and we all went in.\"\nPriya looked up. Above the playground was the flat roof of the music room.\n\"Mr Hale,\" she asked, \"could you check the roof?\"\nTen minutes later, Mr Hale climbed down the ladder holding a muddy football. Year 6 had not taken it at all.\n\"Imagine if we'd printed that headline,\" whispered Tomás. \"Year 6 would have been really upset, and it wasn't even true.\"\nThat Friday, the Herald printed a short report: CLASS FOOTBALL FOUND ON MUSIC ROOM ROOF. It explained what had happened, using only the facts the reporters had checked. At the bottom was a small box: Reporters' note: Before you believe a rumour, ask, \"How do they know?\"\nA Year 6 boy stopped Priya in the corridor. \"Thanks for not blaming us,\" he said.\nPriya smiled. \"We just followed the evidence.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what disappeared from the class?",
+       "options": [
+        "The football",
+        "The newspaper",
+        "The ladder"
+       ],
+       "answer": "The football",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who did the rumour blame?",
+       "options": [
+        "Year 6",
+        "Mr Hale",
+        "Mrs Barlow"
+       ],
+       "answer": "Year 6",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Priya say the story was a rumour and not a fact?",
+       "options": [
+        "Nobody had actually seen anything",
+        "It was written in pencil",
+        "It happened on a Tuesday"
+       ],
+       "answer": "Nobody had actually seen anything",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who was the goalkeeper?",
+       "options": [],
+       "answer": "Ana",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where was the football found?",
+       "options": [
+        "On the music room roof",
+        "In the Year 6 classroom",
+        "Under the climbing frame"
+       ],
+       "answer": "On the music room roof",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what clue made Priya look at the roof?",
+       "options": [
+        "Ana said someone kicked the ball really high",
+        "Mr Hale was holding a ladder",
+        "She heard a noise on the roof"
+       ],
+       "answer": "Ana said someone kicked the ball really high",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the Year 6 boy thank Priya?",
+       "options": [
+        "The reporters had not blamed Year 6 without evidence",
+        "She had given him the football",
+        "She had written about his football team"
+       ],
+       "answer": "The reporters had not blamed Year 6 without evidence",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think rumours can spread so quickly in a school?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Pond Interview",
+     "synopsis": "Priya interviews the caretaker about the school pond and learns how to report someone's opinion fairly.",
+     "text": "For the next issue, Priya wanted to write about the school pond. It was half hidden behind the science room, full of tall reeds, and nobody seemed to visit it any more.\n\"I'll interview Mr Hale,\" she decided. \"He looks after the whole school, so he must know about the pond.\"\nShe wrote her questions in her notebook. Tomás lent her his best pen. Mrs Barlow gave her one tip: \"Ask open questions, and write down exactly what he says.\"\nMr Hale was mending a bench when Priya arrived. \"How old is the pond?\" she asked.\n\"It was dug twelve years ago,\" he said. \"The children planted the reeds themselves.\"\n\"What lives in it?\"\n\"Frogs, snails and dragonflies in summer. I counted eleven frogs last spring.\"\nPriya wrote everything down carefully. Then she asked her last question. \"What do you think about the pond now?\"\nMr Hale put down his hammer. \"Honestly? I think it's the most special place in the school, and it's a shame it's forgotten. It needs a new fence and a bit of love.\"\nBack in Room 4, Priya stared at her notes. \"Mrs Barlow, he said it's the most special place in the school. That's an opinion. Can I still use it?\"\n\"Yes,\" said Mrs Barlow. \"It's a fact that Mr Hale said it. You just need to show the reader whose opinion it is. Use speech marks and his name.\"\nSo Priya's report gave the facts first: the pond was twelve years old, children had planted the reeds, and eleven frogs had been counted. Then she wrote: Mr Hale, the caretaker, said, \"I think it's the most special place in the school.\"\nThe report was printed on page two. The next week, a group of parents offered to build a new fence. Two classes went pond dipping, and someone counted fourteen frogs.\n\"Your words changed something,\" said Tomás.\n\"Not my words,\" said Priya. \"Facts, and one honest opinion with a name on it.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where was the school pond?",
+       "options": [
+        "Behind the science room",
+        "Next to the library",
+        "Inside the hall"
+       ],
+       "answer": "Behind the science room",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who did Priya interview?",
+       "options": [
+        "Mr Hale, the caretaker",
+        "Mrs Barlow",
+        "Tomás"
+       ],
+       "answer": "Mr Hale, the caretaker",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many years ago was the pond dug?",
+       "options": [],
+       "answer": "twelve",
+       "accept": [
+        "12",
+        "twelve years",
+        "12 years"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Mrs Barlow's tip for the interview?",
+       "options": [
+        "Ask open questions and write down exactly what he says",
+        "Ask only yes or no questions",
+        "Make up the answers later"
+       ],
+       "answer": "Ask open questions and write down exactly what he says",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which sentence is Mr Hale's opinion?",
+       "options": [
+        "It's the most special place in the school.",
+        "It was dug twelve years ago.",
+        "I counted eleven frogs last spring."
+       ],
+       "answer": "It's the most special place in the school.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Priya show readers whose opinion it was?",
+       "options": [
+        "She used speech marks and Mr Hale's name",
+        "She wrote it in capital letters",
+        "She put it in the headline"
+       ],
+       "answer": "She used speech marks and Mr Hale's name",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happened after the report was printed?",
+       "options": [
+        "Parents offered to build a new fence",
+        "The pond was filled in",
+        "Mr Hale left the school"
+       ],
+       "answer": "Parents offered to build a new fence",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the report helped people care about the pond again?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The One-Sided Report",
+     "synopsis": "Tomás writes about the class trip vote but only asks people who agree with him, and the club helps him find the missing side.",
+     "text": "Year 4 had voted on their summer trip. The choices were the zoo or the science museum. The zoo won, sixteen votes to twelve.\nTomás had voted for the zoo, and he was delighted. He wrote the report in one evening and handed it to Mrs Barlow the next morning.\nZOO WINS! it said. Everybody is excited about seeing the lions. \"The zoo is a brilliant choice,\" said Leo. \"The museum would have been boring,\" said Ana. \"I can't wait,\" said Sam.\nMrs Barlow read it twice. \"How many people did you interview, Tomás?\"\n\"Three.\"\n\"And how did they vote?\"\nTomás paused. \"Zoo. All of them.\"\n\"How many children voted for the museum?\"\n\"Twelve,\" he said quietly.\n\"So twelve children's views are missing,\" said Mrs Barlow. \"When a report only shows one side, it's biased, even if every sentence in it is true.\"\nPriya looked at the report. \"And 'everybody is excited' isn't a fact either. Some people wanted the museum.\"\nTomás groaned, but he knew they were right. At break, he went to find people who had voted for the museum. A girl called Esme told him, \"I wanted to see the space exhibition. I'm a bit disappointed, but the zoo will still be fun.\" A boy named Kofi said, \"The museum is closer, so we'd have had more time there.\"\nTomás rewrote the report. The new headline said: CLASS VOTES FOR ZOO TRIP, 16 TO 12. He gave the numbers first, then one quotation from each side, and he finished with the date of the trip.\nWhen the Herald came out, Esme found Tomás in the corridor. \"Thanks for putting my words in,\" she said. \"It felt like my vote counted too.\"\nTomás grinned. That was a better feeling than any headline.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what were the two choices for the trip?",
+       "options": [
+        "The zoo or the science museum",
+        "The beach or the park",
+        "The farm or the castle"
+       ],
+       "answer": "The zoo or the science museum",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many votes did the zoo get?",
+       "options": [],
+       "answer": "sixteen",
+       "accept": [
+        "16"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how had all three people Tomás interviewed voted?",
+       "options": [
+        "For the zoo",
+        "For the museum",
+        "They did not vote"
+       ],
+       "answer": "For the zoo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Mrs Barlow say about a report that only shows one side?",
+       "options": [
+        "It is biased, even if every sentence is true",
+        "It is always false",
+        "It is a good report"
+       ],
+       "answer": "It is biased, even if every sentence is true",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was \"everybody is excited\" not a fact?",
+       "options": [
+        "Some people had wanted the museum",
+        "Nobody liked lions",
+        "The trip was cancelled"
+       ],
+       "answer": "Some people had wanted the museum",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Esme want to see at the museum?",
+       "options": [
+        "The space exhibition",
+        "The dinosaur bones",
+        "The robots"
+       ],
+       "answer": "The space exhibition",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Tomás make his new report fair?",
+       "options": [
+        "He gave the numbers and a quotation from each side",
+        "He removed all the quotations",
+        "He changed the result of the vote"
+       ],
+       "answer": "He gave the numbers and a quotation from each side",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Esme felt that her vote counted after reading the new report?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Advert in Disguise",
+     "synopsis": "A local shop owner asks the Herald to print a glowing article about his sweets, and the reporters must decide whether it is news or an advert.",
+     "text": "One afternoon, a man in a striped apron knocked on the door of Room 4. He was Mr Pellow, who owned the sweet shop across the road.\n\"I hear you have a newspaper,\" he said cheerfully. \"I've written an article for you. Free sweets for every reporter if you print it!\"\nHe handed Priya a sheet of paper. The title said: PELLOW'S SWEETS: THE TASTIEST IN THE WORLD. It said that his chocolate was \"better than any other chocolate\", that \"all children agree\" his lollies were the best, and that \"every clever family\" shopped there.\nTomás's eyes lit up at the words free sweets. But Priya was frowning.\n\"Is any of this a fact?\" she asked.\nThey read it again together. The shop really did open at eight o'clock. It really did sell forty kinds of sweets. Everything else was opinion, and very one-sided opinion.\n\"This isn't news,\" said Priya. \"It's an advert. Its job is to make people buy something.\"\nMrs Barlow nodded. \"Newspapers do print adverts. That's fine. But they must be honest about it, so readers don't mistake an advert for a news report.\"\nThe club talked it over. They did not want to be rude to Mr Pellow, and he was a kind neighbour. In the end, Priya and Tomás went back to the shop together.\n\"We can print it,\" Priya explained, \"but it has to go in a box that says ADVERTISEMENT, so readers know who wrote it and why.\"\nMr Pellow scratched his head, then laughed. \"Fair enough. You lot are proper journalists.\"\nThe advert appeared on the back page, inside a neat box with the word ADVERTISEMENT at the top. On the front page was a real news story about the pond's new fence.\nAnd the free sweets? The club shared them out at the end of the meeting. \"Fact,\" said Tomás, unwrapping a toffee. \"These are toffees. Opinion: they're delicious.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kind of shop did Mr Pellow own?",
+       "options": [
+        "A sweet shop",
+        "A bookshop",
+        "A bakery"
+       ],
+       "answer": "A sweet shop",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Mr Pellow offer the reporters?",
+       "options": [
+        "Free sweets",
+        "A new camera",
+        "A trip to the zoo"
+       ],
+       "answer": "Free sweets",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which part of Mr Pellow's article was a fact?",
+       "options": [
+        "The shop sold forty kinds of sweets",
+        "His chocolate was better than any other",
+        "All children agree his lollies are the best"
+       ],
+       "answer": "The shop sold forty kinds of sweets",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, at what time did the shop open?",
+       "options": [],
+       "answer": "eight o'clock",
+       "accept": [
+        "8 o'clock",
+        "eight",
+        "8",
+        "8:00"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Priya say the article was an advert?",
+       "options": [
+        "Its job was to make people buy something",
+        "It was too long",
+        "It had no title"
+       ],
+       "answer": "Its job was to make people buy something",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the Herald show readers it was an advert?",
+       "options": [
+        "They printed it in a box with the word ADVERTISEMENT",
+        "They put it on the front page",
+        "They removed Mr Pellow's name"
+       ],
+       "answer": "They printed it in a box with the word ADVERTISEMENT",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Priya and Tomás go back to the shop instead of just refusing?",
+       "options": [
+        "They wanted to be fair and kind to their neighbour",
+        "They wanted more sweets",
+        "Mrs Barlow had sent them to buy chocolate"
+       ],
+       "answer": "They wanted to be fair and kind to their neighbour",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think it matters that readers can tell an advert from a news report?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Night of the Storm",
+     "synopsis": "A storm knocks down a tree in the playground, and the reporters put together everything they have learned to write a fair front page.",
+     "text": "On Thursday night, a huge storm swept over the town. Rain hammered on the windows and the wind howled until morning.\nWhen the children arrived at school on Friday, the playground was taped off. The old chestnut tree beside the gate had fallen. Its branches lay across the path like giant arms.\nWithin minutes, stories were everywhere. \"It fell on the climbing frame!\" said one child. \"A teacher was nearly squashed!\" said another. \"School's closing for a month!\" shouted a third.\nPriya and Tomás looked at each other. \"Herald team,\" said Priya. \"Facts first.\"\nThey split up. Tomás went to see the climbing frame for himself. It was fine; the tree had missed it by several metres. Priya found Mr Hale, who was talking to two workers with chainsaws.\n\"Was anyone hurt?\" she asked.\n\"No one,\" he said. \"It came down at about three in the morning. The school was empty.\"\n\"Will the school close?\"\n\"Only the playground, until Monday, while we clear it.\"\nBack in Room 4, the whole club gathered round. They had one hour before the special edition went up on the noticeboard.\n\"Headline?\" asked Mrs Barlow.\nTomás grinned. \"DISASTER! TERROR IN THE PLAYGROUND!\"\nEveryone groaned, and he laughed. \"Only joking.\"\nTogether they wrote: STORM BRINGS DOWN CHESTNUT TREE: NO ONE HURT, PLAYGROUND CLOSED UNTIL MONDAY.\nUnder it, they gave the facts: the time the tree fell, what it missed, and what would happen next. They added a quotation from Mr Hale, clearly marked as his words: \"That tree was older than the school. I'll miss it.\" At the bottom, a reporters' note said: Some rumours today were not true. Always check before you share.\nBy lunchtime, crowds of children stood reading the noticeboard. Parents read it at the gate. Even the head teacher stopped to look.\n\"People trust the Herald now,\" said Mrs Barlow.\nPriya felt proud. Then Tomás nudged her and pointed. A small envelope was pinned beside the newspaper. On it, in neat handwriting, were three words: A STORY FOR YOU.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what fell down during the storm?",
+       "options": [
+        "The old chestnut tree",
+        "The climbing frame",
+        "The music room roof"
+       ],
+       "answer": "The old chestnut tree",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which of these was a rumour that turned out to be false?",
+       "options": [
+        "The tree fell on the climbing frame",
+        "The tree fell during the night",
+        "The playground was taped off"
+       ],
+       "answer": "The tree fell on the climbing frame",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, at about what time did the tree fall?",
+       "options": [],
+       "answer": "three in the morning",
+       "accept": [
+        "3 in the morning",
+        "3 a.m.",
+        "3am",
+        "three",
+        "3"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Tomás do to check the facts?",
+       "options": [
+        "He went to see the climbing frame for himself",
+        "He asked the children in the playground",
+        "He guessed what had happened"
+       ],
+       "answer": "He went to see the climbing frame for himself",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long would the playground be closed?",
+       "options": [
+        "Until Monday",
+        "For a month",
+        "For one hour"
+       ],
+       "answer": "Until Monday",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did everyone groan at Tomás's first headline?",
+       "options": [
+        "It was exaggerated and would scare readers",
+        "It was too long",
+        "It was about the wrong story"
+       ],
+       "answer": "It was exaggerated and would scare readers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was pinned beside the newspaper at the end?",
+       "options": [
+        "A small envelope",
+        "A muddy football",
+        "A sweet wrapper"
+       ],
+       "answer": "A small envelope",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think people had started to trust the Hilltop Herald by the end of the chapter?",
        "options": [],
        "answer": "",
        "accept": [],
