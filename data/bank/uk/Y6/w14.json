@@ -2296,5 +2296,902 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Jornal do Recreio",
+   "premise": "A turma do 6º ano cria um jornal escolar e, a cada edição, aprende a ler tabelas, gráficos e infográficos com cuidado para não enganar os leitores.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A pesquisa da cantina",
+     "synopsis": "A turma do 6º ano cria um jornal e faz sua primeira pesquisa sobre a comida da cantina. Teo aprende que o título precisa combinar com os números.",
+     "text": "Na segunda-feira, a sala do 6º ano virou redação de jornal. O professor Anselmo anunciou que a turma ia publicar o Jornal do Recreio, com uma reportagem nova a cada semana.\nBia foi escolhida editora-chefe. Teo ficou com as fotos e Marcela, que adorava números, com os gráficos.\n— Toda boa reportagem precisa de dados — disse o professor. — Mas dados sozinhos não contam nada. É preciso saber lê-los.\nA primeira pauta era a cantina. Muitos alunos reclamavam do cardápio, e a turma decidiu perguntar a 80 colegas qual era o seu prato preferido. Marcela organizou as respostas numa tabela: macarrão, 32 votos; arroz, feijão e frango, 24 votos; lasanha de berinjela, 16 votos; sopa de legumes, 8 votos.\nTeo leu a tabela e logo escreveu um título no caderno: \"Ninguém gosta da comida da cantina!\".\nBia franziu a testa.\n— Espera aí, Teo. A tabela mostra que todo mundo escolheu um prato preferido. Se ninguém gostasse da comida, como teriam escolhido?\nMarcela apontou para a primeira linha.\n— O macarrão ganhou com 32 votos. É quatro vezes mais do que a sopa. E a lasanha teve o dobro de votos da sopa.\n— Então a sopa é o prato menos querido — concluiu Teo, apagando o título.\nO professor sorriu.\n— Percebem? O texto da reportagem precisa dizer a mesma coisa que os números. Se o título promete uma coisa e a tabela mostra outra, o leitor fica confuso e deixa de confiar no jornal.\nNo fim da aula, o novo título estava no quadro: \"Macarrão é o campeão da cantina; sopa fica em último lugar\".\nA reportagem fez sucesso. A cozinheira, dona Lurdes, até prometeu uma semana com mais macarrão.\nTeo, porém, ainda olhava para a tabela.\n— Na semana que vem, quero fazer um gráfico de verdade, com barras bem coloridas!\nMarcela riu. Mal sabia ela que aquelas barras iam dar o que falar.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual tarefa ficou com Marcela no jornal?",
+       "options": [
+        "As fotos",
+        "Os gráficos",
+        "A edição",
+        "As entrevistas"
+       ],
+       "answer": "Os gráficos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos colegas responderam à pesquisa da cantina?",
+       "options": [],
+       "answer": "80",
+       "accept": [
+        "oitenta"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual prato recebeu mais votos?",
+       "options": [],
+       "answer": "macarrão",
+       "accept": [
+        "o macarrão"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantos votos teve a lasanha de berinjela?",
+       "options": [
+        "8",
+        "16",
+        "24",
+        "32"
+       ],
+       "answer": "16",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia discordou do primeiro título de Teo?",
+       "options": [
+        "Porque o título era muito longo",
+        "Porque a tabela mostrava que todos escolheram um prato preferido",
+        "Porque Teo esqueceu de pôr números",
+        "Porque a pesquisa ainda não tinha terminado"
+       ],
+       "answer": "Porque a tabela mostrava que todos escolheram um prato preferido",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual conclusão os dados da tabela permitem tirar?",
+       "options": [
+        "A sopa é o prato menos votado",
+        "Ninguém gosta da cantina",
+        "A cantina deve fechar",
+        "Todos preferem lasanha"
+       ],
+       "answer": "A sopa é o prato menos votado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o professor quis ensinar ao dizer que o texto precisa dizer a mesma coisa que os números?",
+       "options": [
+        "Que o título deve combinar com os dados",
+        "Que os gráficos devem ser coloridos",
+        "Que tabelas não são necessárias",
+        "Que os títulos devem ser engraçados"
+       ],
+       "answer": "Que o título deve combinar com os dados",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que é importante perguntar a muitos colegas, e não a apenas dois ou três, numa pesquisa como essa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: As barras que mentiam",
+     "synopsis": "Teo desenha um gráfico de barras que exagera as diferenças entre os esportes preferidos. A turma descobre que o eixo precisa começar no zero.",
+     "text": "A segunda reportagem do Jornal do Recreio era sobre o novo clube de esportes. A escola só tinha verba para um esporte, e a turma perguntou aos alunos qual deveria ser escolhido.\nOs resultados chegaram na terça: futebol, 30 votos; vôlei, 27 votos; handebol, 26 votos.\nTeo, animado, desenhou o gráfico de barras que tinha prometido. Usou cores fortes e caprichou nos detalhes. Quando terminou, mostrou para a turma.\nA barra do futebol era enorme. A do vôlei era baixinha, e a do handebol quase não aparecia.\n— Uau! O futebol ganhou de lavada! — exclamou um colega.\nMarcela chegou mais perto e passou o dedo pelo eixo vertical, aquela linha com os números ao lado das barras.\n— Teo, por que o seu eixo começa no 25?\n— Porque assim as barras ficam mais diferentes. Fica mais emocionante!\nBia fez as contas no quadro.\n— O futebol teve 30 votos e o handebol, 26. A diferença é de apenas 4 votos. Mas, no seu desenho, a barra do futebol parece cinco vezes maior que a do handebol.\nTeo ficou vermelho.\n— Eu não queria enganar ninguém...\n— A gente sabe — disse o professor Anselmo. — Mas um gráfico pode enganar mesmo sem querer. Quando o eixo não começa no zero, pequenas diferenças parecem gigantes. Por isso, o leitor sempre deve olhar os números do eixo antes de tirar conclusões.\nTeo apagou tudo e desenhou de novo, agora com o eixo começando no zero. As três barras ficaram quase da mesma altura.\n— Agora dá para ver a verdade — disse Marcela. — O futebol ganhou, mas por pouco. A escola está bem dividida.\nBia escreveu o título: \"Futebol vence por pouco; vôlei e handebol ficam logo atrás\".\nNa saída, Teo encontrou o diretor lendo o jornal pendurado no mural.\n— Gostei do gráfico — disse o diretor. — Talvez dê para fazer um rodízio de esportes no ano que vem.\nTeo sorriu. Um gráfico honesto tinha dado uma ideia melhor do que um gráfico emocionante.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o assunto da segunda reportagem?",
+       "options": [
+        "O novo clube de esportes",
+        "A comida da cantina",
+        "A biblioteca",
+        "O recreio"
+       ],
+       "answer": "O novo clube de esportes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantos votos o vôlei recebeu?",
+       "options": [
+        "26",
+        "27",
+        "30",
+        "25"
+       ],
+       "answer": "27",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em qual número começava o eixo do primeiro gráfico de Teo?",
+       "options": [],
+       "answer": "25",
+       "accept": [
+        "vinte e cinco"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era a diferença real de votos entre o futebol e o handebol?",
+       "options": [],
+       "answer": "4",
+       "accept": [
+        "quatro",
+        "4 votos",
+        "quatro votos"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que acontecia no primeiro gráfico de Teo?",
+       "options": [
+        "A diferença entre os esportes parecia muito maior do que era",
+        "Todas as barras tinham a mesma altura",
+        "Faltava o futebol",
+        "Os números estavam errados"
+       ],
+       "answer": "A diferença entre os esportes parecia muito maior do que era",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mudou quando Teo fez o eixo começar no zero?",
+       "options": [
+        "As barras ficaram quase da mesma altura",
+        "O handebol passou a ganhar",
+        "As barras sumiram",
+        "O vôlei ficou em primeiro"
+       ],
+       "answer": "As barras ficaram quase da mesma altura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que conclusão os dados permitem sobre a opinião dos alunos?",
+       "options": [
+        "A escola está bem dividida entre os três esportes",
+        "Quase ninguém gosta de handebol",
+        "Todos querem futebol",
+        "O vôlei não teve votos"
+       ],
+       "answer": "A escola está bem dividida entre os três esportes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que um jornal deve evitar gráficos que exageram diferenças, mesmo que fiquem mais emocionantes?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A pizza que precisava fechar",
+     "synopsis": "A turma usa um gráfico de setores para mostrar como os alunos chegam à escola. Marcela confere se as porcentagens somam 100% e a turma relaciona os dados à falta de bicicletário.",
+     "text": "Na terceira semana, chegou uma carta à redação. Uma aluna do 8º ano pedia um bicicletário maior, porque as bicicletas ficavam amontoadas no portão.\n— Antes de escrever, precisamos saber quantos alunos vêm de bicicleta — disse Bia.\nA turma perguntou a 200 alunos como eles chegavam à escola. Marcela resolveu mostrar os resultados num gráfico de setores, aquele em forma de pizza, em que cada fatia é uma parte do total.\nEla escreveu as porcentagens: a pé, 40%; de carro, 35%; de ônibus escolar, 20%; de bicicleta, 15%.\nAntes de desenhar, somou tudo e franziu a testa.\n— Deu 110%. Uma pizza não pode ter mais do que uma pizza inteira!\nEla conferiu as fichas da pesquisa, uma por uma. Descobriu que tinha copiado errado: a bicicleta era 5%, e não 15%. Agora a soma dava exatamente 100%.\n— Num gráfico de setores, as fatias sempre somam 100% — explicou o professor Anselmo. — Se não somam, tem erro em algum lugar.\nTeo pegou a calculadora.\n— Cinco por cento de 200 alunos são 10 alunos. Só 10 vêm de bicicleta.\n— E o bicicletário tem 12 vagas — lembrou Bia. — Então, pelos dados, ele dá conta.\nMas Teo coçou a cabeça.\n— E se mais gente quisesse vir de bicicleta, mas não vem porque o bicicletário é ruim?\nBia achou a pergunta ótima. O gráfico mostrava como os alunos chegavam hoje, mas não mostrava o que eles gostariam de fazer. Para saber isso, seria preciso fazer outra pergunta.\nA reportagem saiu com o título: \"Só 5% vêm de bicicleta — mas será que mais alunos viriam?\". Embaixo do gráfico, a turma publicou um aviso convidando os leitores a responder uma nova pesquisa.\nEm dois dias, a caixa de respostas estava cheia. Marcela olhou para os papéis e suspirou, feliz.\n— Acho que vou precisar de outra pizza.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a aluna do 8º ano pedia na carta?",
+       "options": [
+        "Um bicicletário maior",
+        "Mais macarrão",
+        "Um novo esporte",
+        "Um recreio mais longo"
+       ],
+       "answer": "Um bicicletário maior",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos alunos responderam à pesquisa sobre o transporte?",
+       "options": [],
+       "answer": "200",
+       "accept": [
+        "duzentos"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a maioria dos alunos chegava à escola?",
+       "options": [
+        "A pé",
+        "De carro",
+        "De ônibus escolar",
+        "De bicicleta"
+       ],
+       "answer": "A pé",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quanto deu a primeira soma das porcentagens feita por Marcela?",
+       "options": [],
+       "answer": "110%",
+       "accept": [
+        "110",
+        "cento e dez por cento"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Marcela percebeu que havia um erro?",
+       "options": [
+        "As porcentagens não somavam 100%",
+        "O gráfico ficou feio",
+        "Teo avisou que faltava uma fatia",
+        "O professor contou para ela"
+       ],
+       "answer": "As porcentagens não somavam 100%",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantos alunos vinham de bicicleta?",
+       "options": [
+        "5",
+        "10",
+        "12",
+        "15"
+       ],
+       "answer": "10",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o gráfico NÃO conseguia mostrar, segundo Teo e Bia?",
+       "options": [
+        "Se mais alunos gostariam de vir de bicicleta",
+        "Quantos alunos vinham a pé",
+        "Quantos alunos vinham de carro",
+        "O total de alunos pesquisados"
+       ],
+       "answer": "Se mais alunos gostariam de vir de bicicleta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a turma decidiu fazer uma nova pesquisa em vez de concluir que o bicicletário já era suficiente?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A linha do girassol",
+     "synopsis": "Teo acompanha o crescimento de um girassol na horta e faz um gráfico de linhas. A turma relaciona a mudança na linha a um fato contado na reportagem.",
+     "text": "A horta da escola tinha um girassol famoso. Todo mundo dizia que ele ia ficar mais alto que o muro. Teo resolveu acompanhar o crescimento da planta para uma reportagem.\nToda sexta-feira, ele media o girassol com uma fita métrica e anotava no caderno: semana 1, 10 centímetros; semana 2, 18 centímetros; semana 3, 30 centímetros; semana 4, 31 centímetros; semana 5, 32 centímetros.\nMarcela transformou os números num gráfico de linhas. No eixo horizontal, ficaram as semanas; no vertical, a altura.\n— Um gráfico de linhas é bom para mostrar como algo muda com o tempo — explicou ela. — Quando a linha sobe muito, a mudança foi rápida. Quando fica quase reta, quase nada mudou.\nA turma olhou o desenho. A linha subia depressa até a semana 3 e depois ficava quase deitada.\n— O girassol parou de crescer! — disse Teo, preocupado.\n— Quase parou — corrigiu Bia. — Cresceu só um centímetro por semana depois da semana 3. O que aconteceu?\nTeo folheou o caderno. Ao lado da semana 3, havia uma anotação: \"A mangueira da horta quebrou. Ninguém está regando\".\nOs três se olharam.\n— Os dados e o texto se encaixam — disse Marcela. — A linha muda justamente quando a planta ficou sem água.\nO professor Anselmo concordou, mas fez um alerta:\n— É uma boa pista, mas pode haver outros motivos, como o frio ou o tipo de solo. Na reportagem, digam que a falta de água é uma explicação provável, não uma certeza.\nA reportagem saiu com o gráfico e uma frase cuidadosa: \"O crescimento desacelerou depois que a mangueira quebrou; a falta de rega é a explicação mais provável\".\nNo dia seguinte, o zelador consertou a mangueira. Na semana 6, Teo mediu de novo: 38 centímetros.\n— A linha voltou a subir! — comemorou.\nBia anotou o número e sorriu. A história do girassol ainda ia render outra edição.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Teo media toda sexta-feira?",
+       "options": [
+        "A altura do girassol",
+        "A temperatura da horta",
+        "A quantidade de água",
+        "O tamanho do muro"
+       ],
+       "answer": "A altura do girassol",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era a altura do girassol na semana 3?",
+       "options": [],
+       "answer": "30 centímetros",
+       "accept": [
+        "30",
+        "30 cm",
+        "trinta centímetros"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que ficava no eixo horizontal do gráfico?",
+       "options": [
+        "As semanas",
+        "A altura",
+        "Os nomes dos alunos",
+        "As cores"
+       ],
+       "answer": "As semanas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Marcela, para que serve um gráfico de linhas?",
+       "options": [
+        "Mostrar como algo muda com o tempo",
+        "Mostrar partes de um todo",
+        "Comparar fotos",
+        "Listar nomes"
+       ],
+       "answer": "Mostrar como algo muda com o tempo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos centímetros por semana o girassol cresceu depois da semana 3, até a semana 5?",
+       "options": [],
+       "answer": "1",
+       "accept": [
+        "um",
+        "1 centímetro",
+        "um centímetro",
+        "1 cm"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que anotação do caderno ajudou a explicar a mudança na linha?",
+       "options": [
+        "A mangueira da horta quebrou",
+        "Choveu muito",
+        "O girassol foi cortado",
+        "Teo perdeu a fita métrica"
+       ],
+       "answer": "A mangueira da horta quebrou",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o professor pediu para usar a palavra \"provável\" na reportagem?",
+       "options": [
+        "Porque podia haver outros motivos para o crescimento lento",
+        "Porque os números estavam errados",
+        "Porque o girassol não existia",
+        "Porque a palavra era bonita"
+       ],
+       "answer": "Porque podia haver outros motivos para o crescimento lento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que é importante um jornal não apresentar uma explicação provável como se fosse uma certeza?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: As gotas do infográfico",
+     "synopsis": "A turma cria um infográfico sobre o consumo de água da escola. Teo erra ao ler os ícones, e a legenda resolve o mistério.",
+     "text": "Depois da história da mangueira, a turma ficou curiosa sobre a água da escola. A secretaria mostrou as contas: em agosto, a escola gastou 50 mil litros; em setembro, depois de uma campanha para fechar torneiras, gastou 40 mil litros.\n— Vamos fazer um infográfico! — propôs Marcela. — É um jeito de juntar números, desenhos e pouco texto para explicar algo rapidinho.\nEla desenhou uma gota azul para cada 10 mil litros. Agosto ficou com cinco gotas; setembro, com quatro. Ao lado, colocou a legenda: \"Cada gota = 10 mil litros\".\nTeo, que tinha chegado atrasado, olhou o desenho sem ler a legenda.\n— Setembro tem quatro gotas? Então a escola economizou só uma gotinha de água? Isso não é nada!\nBia apontou para o canto do cartaz.\n— Leia a legenda, Teo. Cada gota vale 10 mil litros. Uma gota a menos são 10 mil litros economizados.\nTeo arregalou os olhos.\n— Isso dá para encher muitas caixas-d'água!\nEle então quis escrever: \"Consumo de água cai pela metade\". Marcela balançou a cabeça.\n— Metade de 50 mil seria 25 mil. A escola gastou 40 mil. A queda foi de 10 mil em 50 mil, ou seja, 20%.\n— Ah... é menos do que metade, mas ainda é muito — admitiu Teo.\nO professor Anselmo elogiou o trabalho.\n— Um infográfico só funciona se o leitor entender os símbolos. Por isso, a legenda é tão importante quanto o desenho. E o texto precisa usar os números certos, sem aumentar nem diminuir.\nO título final foi: \"Campanha funciona: escola gasta 20% menos água em setembro\". Embaixo das gotas, a turma escreveu três dicas que os próprios alunos tinham sugerido, como fechar a torneira ao escovar os dentes.\nO cartaz foi pendurado ao lado dos banheiros. Na semana seguinte, alguém desenhou, com caneta, uma gotinha sorridente ao lado do título.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos litros a escola gastou em agosto?",
+       "options": [],
+       "answer": "50 mil litros",
+       "accept": [
+        "50 mil",
+        "50.000",
+        "50000",
+        "cinquenta mil litros",
+        "cinquenta mil"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu antes de setembro para o consumo diminuir?",
+       "options": [
+        "Uma campanha para fechar torneiras",
+        "A escola fechou por um mês",
+        "Choveu muito",
+        "A conta foi perdida"
+       ],
+       "answer": "Uma campanha para fechar torneiras",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Marcela, o que é um infográfico?",
+       "options": [
+        "Um jeito de juntar números, desenhos e pouco texto para explicar algo",
+        "Uma tabela só com números",
+        "Um texto longo sem imagens",
+        "Uma foto da escola"
+       ],
+       "answer": "Um jeito de juntar números, desenhos e pouco texto para explicar algo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quanto valia cada gota do infográfico?",
+       "options": [
+        "1 litro",
+        "100 litros",
+        "10 mil litros",
+        "50 mil litros"
+       ],
+       "answer": "10 mil litros",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Teo achou, no começo, que a economia não era nada?",
+       "options": [
+        "Porque não leu a legenda",
+        "Porque fez a conta errada de propósito",
+        "Porque o desenho estava apagado",
+        "Porque não havia gotas em setembro"
+       ],
+       "answer": "Porque não leu a legenda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de quanto por cento foi a queda real do consumo de água?",
+       "options": [],
+       "answer": "20%",
+       "accept": [
+        "20",
+        "20 por cento",
+        "vinte por cento"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o título \"Consumo de água cai pela metade\" estaria errado?",
+       "options": [
+        "Porque a queda foi de 20%, menos que a metade",
+        "Porque o consumo aumentou",
+        "Porque agosto gastou menos",
+        "Porque não houve campanha"
+       ],
+       "answer": "Porque a queda foi de 20%, menos que a metade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a turma colocou o cartaz ao lado dos banheiros?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Os guarda-chuvas culpados",
+     "synopsis": "Teo acha que os guarda-chuvas causam atrasos ao ler uma tabela. Bia mostra que a chuva explica os dois números.",
+     "text": "Numa manhã cinzenta, Teo entrou na redação com uma ideia que parecia genial.\n— Descobri por que tantos alunos chegam atrasados! A culpa é dos guarda-chuvas!\nEle mostrou uma tabela que tinha feito na portaria durante cinco dias. Segunda: 4 guarda-chuvas, 3 atrasos. Terça: 50 guarda-chuvas, 21 atrasos. Quarta: 6 guarda-chuvas, 2 atrasos. Quinta: 45 guarda-chuvas, 18 atrasos. Sexta: 5 guarda-chuvas, 3 atrasos.\n— Vejam! Nos dias com muitos guarda-chuvas, há muitos atrasos. Os guarda-chuvas atrapalham as pessoas!\nMarcela olhou a tabela com atenção.\n— É verdade que os dois números sobem e descem juntos. Mas isso não quer dizer que um causa o outro.\nBia abriu a janela e olhou para o céu.\n— Teo, por que as pessoas trazem guarda-chuva?\n— Porque está chovendo, ué.\n— E o que acontece com o trânsito quando chove?\nTeo parou para pensar.\n— Fica tudo mais lento... Ah! Então a chuva causa as duas coisas: mais guarda-chuvas e mais atrasos.\nO professor Anselmo bateu palmas.\n— Exatamente. Quando dois dados mudam juntos, pode existir um terceiro fator por trás. Uma boa reportagem procura esse fator antes de apontar um culpado.\nPara conferir, Marcela pediu à secretaria a lista dos dias de chuva da semana. Os dias chuvosos tinham sido terça e quinta, justamente os dias com mais guarda-chuvas e mais atrasos.\n— Os dados agora fazem sentido — disse Bia.\nA reportagem ganhou o título: \"Chuva aumenta os atrasos; escola estuda abrir o portão mais cedo nos dias chuvosos\". Teo ficou um pouco decepcionado por perder a sua \"descoberta\", mas ganhou um apelido carinhoso na turma: Detetive Guarda-Chuva.\n— Pelo menos agora eu sei fazer a pergunta certa — disse ele. — Antes de culpar alguém, procure a chuva!\nTodos riram. A frase virou o lema da redação.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Teo coletou os dados da tabela?",
+       "options": [
+        "Na portaria",
+        "Na cantina",
+        "Na biblioteca",
+        "Na horta"
+       ],
+       "answer": "Na portaria",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos atrasos houve na terça-feira?",
+       "options": [],
+       "answer": "21",
+       "accept": [
+        "vinte e um"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi a primeira conclusão de Teo?",
+       "options": [
+        "Os guarda-chuvas causavam os atrasos",
+        "A chuva causava os atrasos",
+        "O portão abria tarde",
+        "Os alunos dormiam demais"
+       ],
+       "answer": "Os guarda-chuvas causavam os atrasos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Marcela observou na tabela?",
+       "options": [
+        "Os dois números sobem e descem juntos",
+        "Os números não tinham relação",
+        "Faltava um dia",
+        "Havia mais atrasos na segunda"
+       ],
+       "answer": "Os dois números sobem e descem juntos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em quais dias choveu?",
+       "options": [
+        "Terça e quinta",
+        "Segunda e sexta",
+        "Quarta e sexta",
+        "Todos os dias"
+       ],
+       "answer": "Terça e quinta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o \"terceiro fator\" que explicava os dois números?",
+       "options": [
+        "A chuva",
+        "O sol",
+        "As férias",
+        "A cantina"
+       ],
+       "answer": "A chuva",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual lição sobre dados a turma aprendeu?",
+       "options": [
+        "Quando dois dados mudam juntos, um não causa necessariamente o outro",
+        "Tabelas sempre mostram a causa das coisas",
+        "Guarda-chuvas devem ser proibidos",
+        "Só é preciso olhar um dia da semana"
+       ],
+       "answer": "Quando dois dados mudam juntos, um não causa necessariamente o outro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Teo, mesmo decepcionado, gostou de aprender a \"procurar a chuva\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A grande edição",
+     "synopsis": "Um panfleto afirma que 90% dos alunos querem um recreio maior. A turma descobre que só 10 pessoas foram ouvidas e faz uma pesquisa mais ampla para a edição final.",
+     "text": "Era a última semana do semestre, e o Jornal do Recreio preparava a sua grande edição. Mas, na segunda-feira, um panfleto apareceu em todos os corredores: \"90% dos alunos querem um recreio maior!\".\nO assunto virou a conversa da escola. Todo mundo queria saber se o recreio ia mudar.\n— Vamos publicar isso na capa! — disse Teo.\nBia levantou a mão.\n— Calma, detetive. Quem fez essa pesquisa? Quantas pessoas responderam?\nMarcela foi atrás da resposta. Descobriu que o panfleto tinha sido feito por um grupo do 7º ano, que perguntou a apenas 10 amigos durante o futebol. Nove disseram que sim.\n— Nove em dez dá mesmo 90% — explicou Marcela. — A conta está certa. O problema é que 10 pessoas são muito poucas, e todas estavam jogando bola. Quem joga futebol no recreio provavelmente quer mais tempo para jogar.\n— Então a pesquisa não representa a escola toda — completou Bia.\nO professor Anselmo concordou.\n— Sempre perguntem: quem fez, quando fez e com quantas pessoas. Os números só valem tanto quanto a forma como foram coletados.\nA turma decidiu fazer a sua própria pesquisa. Durante três dias, perguntou a 150 alunos, de todas as turmas, sorteados na lista de chamada. O resultado: 105 queriam um recreio maior e 45 preferiam sair mais cedo.\n— 105 em 150 são 70% — calculou Teo, orgulhoso de ter feito a conta sozinho.\n— Ainda é a maioria — disse Bia —, mas não é quase todo mundo, como dizia o panfleto.\nPara a capa, Marcela fez um infográfico com dois círculos lado a lado: \"Panfleto: 10 entrevistados, 90%\" e \"Jornal: 150 entrevistados, 70%\". Embaixo, o título: \"Maioria quer recreio maior, mas não 90%: entenda a diferença\".\nA edição esgotou em uma manhã. O grupo do 7º ano até pediu para entrar na redação no semestre seguinte.\nNa última reunião, Bia olhou para os colegas.\n— Aprendemos que dados não falam sozinhos. Alguém precisa lê-los com cuidado.\n— E procurar a chuva — acrescentou Teo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que dizia o panfleto que apareceu nos corredores?",
+       "options": [
+        "90% dos alunos querem um recreio maior",
+        "A cantina vai fechar",
+        "O jornal vai acabar",
+        "Todos querem futebol"
+       ],
+       "answer": "90% dos alunos querem um recreio maior",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas pessoas o grupo do 7º ano entrevistou?",
+       "options": [],
+       "answer": "10",
+       "accept": [
+        "dez",
+        "10 pessoas",
+        "dez pessoas"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde estavam as pessoas entrevistadas pelo grupo do 7º ano?",
+       "options": [
+        "Jogando futebol",
+        "Na biblioteca",
+        "Na cantina",
+        "Na sala de aula"
+       ],
+       "answer": "Jogando futebol",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais perguntas o professor disse que sempre devem ser feitas sobre uma pesquisa?",
+       "options": [
+        "Quem fez, quando fez e com quantas pessoas",
+        "Qual a cor do gráfico",
+        "Quantas páginas tem o jornal",
+        "Quem desenhou o panfleto mais bonito"
+       ],
+       "answer": "Quem fez, quando fez e com quantas pessoas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos alunos a turma do jornal entrevistou?",
+       "options": [],
+       "answer": "150",
+       "accept": [
+        "cento e cinquenta"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o resultado da pesquisa da turma?",
+       "options": [
+        "70% queriam um recreio maior",
+        "90% queriam um recreio maior",
+        "50% queriam um recreio maior",
+        "Ninguém queria mudar o recreio"
+       ],
+       "answer": "70% queriam um recreio maior",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a pesquisa do panfleto não representava a escola toda?",
+       "options": [
+        "Porque ouviu poucas pessoas, todas de um mesmo grupo",
+        "Porque a conta estava errada",
+        "Porque ninguém respondeu",
+        "Porque foi feita no ano anterior"
+       ],
+       "answer": "Porque ouviu poucas pessoas, todas de um mesmo grupo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o grupo do 7º ano quis entrar na redação depois de ler a grande edição?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
