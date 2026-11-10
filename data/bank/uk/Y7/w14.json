@@ -2081,7 +2081,1946 @@
      "errors": []
     }
    ]
+  },
+  "pt": {
+   "topic": "Discurso direto e indireto",
+   "questions": [
+    {
+     "id": "ryldqv3fccfcz",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual sinal de pontuação costuma introduzir a fala de um personagem no discurso direto?",
+     "options": [
+      "Travessão",
+      "Ponto final",
+      "Vírgula",
+      "Parênteses"
+     ],
+     "answer": "Travessão",
+     "accept": [],
+     "hint": "Pense no tracinho que aparece no começo das falas nos diálogos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6ap7nt1qay88x",
+     "subject": "pt",
+     "type": "mc",
+     "q": "“— Estou com fome — disse Pedro.” Que tipo de discurso aparece nessa frase?",
+     "options": [
+      "Discurso direto",
+      "Discurso indireto"
+     ],
+     "answer": "Discurso direto",
+     "accept": [],
+     "hint": "As palavras do personagem aparecem exatamente como ele falou?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iqz3hb10i93al",
+     "subject": "pt",
+     "type": "mc",
+     "q": "“Mariana disse que estava cansada.” Que tipo de discurso aparece nessa frase?",
+     "options": [
+      "Discurso direto",
+      "Discurso indireto"
+     ],
+     "answer": "Discurso indireto",
+     "accept": [],
+     "hint": "Quem está contando o que Mariana falou: ela mesma ou o narrador?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qcl2ye16sghee",
+     "subject": "pt",
+     "type": "short",
+     "q": "Na frase “— Vamos sair cedo — avisou o pai.”, qual é o verbo de elocução?",
+     "options": [],
+     "answer": "avisou",
+     "accept": [],
+     "hint": "Procure o verbo que indica a ação de falar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlizali1xo9pmx",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destes verbos NÃO é um verbo de elocução?",
+     "options": [
+      "perguntou",
+      "respondeu",
+      "correu",
+      "exclamou"
+     ],
+     "answer": "correu",
+     "accept": [],
+     "hint": "Verbos de elocução indicam que alguém falou algo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bwz2kw11gutl7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "No discurso indireto, que palavra costuma aparecer logo depois do verbo de elocução para introduzir uma afirmação?",
+     "options": [
+      "que",
+      "mas",
+      "porém",
+      "logo"
+     ],
+     "answer": "que",
+     "accept": [],
+     "hint": "Veja: “Ele disse ___ ia chegar tarde.”",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ai9i1c13ea6si",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a forma correta em discurso indireto de “— Eu estou feliz — disse Ana.”?",
+     "options": [
+      "Ana disse que estava feliz.",
+      "Ana disse que eu estou feliz.",
+      "Ana disse que estarei feliz.",
+      "Ana diz que estou feliz."
+     ],
+     "answer": "Ana disse que estava feliz.",
+     "accept": [],
+     "hint": "Repare na pessoa (eu → ela) e no tempo do verbo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wn99owsvpewt",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a forma correta em discurso indireto de “— Amanhã vou à praia — contou Rui.”?",
+     "options": [
+      "Rui contou que no dia seguinte iria à praia.",
+      "Rui contou que amanhã vou à praia.",
+      "Rui contou que ontem foi à praia.",
+      "Rui conta: amanhã vou à praia."
+     ],
+     "answer": "Rui contou que no dia seguinte iria à praia.",
+     "accept": [],
+     "hint": "As palavras de tempo também mudam quando o narrador conta a fala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5qmpzx1j64gn9",
+     "subject": "pt",
+     "type": "short",
+     "q": "Ao passar uma fala para o discurso indireto, a palavra “hoje” costuma ser trocada por qual expressão?",
+     "options": [],
+     "answer": "naquele dia",
+     "accept": [
+      "aquele dia",
+      "nesse dia",
+      "naquele mesmo dia"
+     ],
+     "hint": "O narrador conta o fato depois, então não é mais o dia de hoje.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk6ob4ugl30ht",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Ao passar uma fala para o discurso indireto, a palavra “aqui” costuma ser trocada por:",
+     "options": [
+      "ali",
+      "aqui mesmo",
+      "agora",
+      "ontem"
+     ],
+     "answer": "ali",
+     "accept": [],
+     "hint": "Quem conta a história não está mais no mesmo lugar do personagem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn8oyxg1e8040z",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a forma correta em discurso indireto de “— Você vem à festa? — perguntou Lia a Davi.”?",
+     "options": [
+      "Lia perguntou a Davi se ele ia à festa.",
+      "Lia perguntou a Davi que você vem à festa.",
+      "Lia perguntou a Davi: ele ia à festa.",
+      "Lia perguntou a Davi se você vem à festa?"
+     ],
+     "answer": "Lia perguntou a Davi se ele ia à festa.",
+     "accept": [],
+     "hint": "Perguntas no discurso indireto costumam usar a palavra “se”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19glj6b17p707q",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase passa “O técnico mandou que os jogadores corressem.” para o discurso direto?",
+     "options": [
+      "— Corram! — mandou o técnico.",
+      "O técnico mandou correr.",
+      "— Eles correram — disse o técnico.",
+      "O técnico disse que correriam."
+     ],
+     "answer": "— Corram! — mandou o técnico.",
+     "accept": [],
+     "hint": "No discurso direto, a ordem aparece com as palavras exatas do técnico.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnjb0yi11oftao",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Além do travessão, que sinal também pode marcar a fala no discurso direto?",
+     "options": [
+      "Aspas",
+      "Ponto e vírgula",
+      "Hífen",
+      "Asterisco"
+     ],
+     "answer": "Aspas",
+     "accept": [],
+     "hint": "É um sinal que aparece no começo e no fim da fala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvt3dbpwu454q",
+     "subject": "pt",
+     "type": "mc",
+     "q": "No discurso indireto, quem reproduz a fala do personagem?",
+     "options": [
+      "O narrador, com as próprias palavras",
+      "O próprio personagem, com as palavras exatas",
+      "O leitor, em voz alta",
+      "O título do texto"
+     ],
+     "answer": "O narrador, com as próprias palavras",
+     "accept": [],
+     "hint": "No discurso indireto, a fala é contada, não reproduzida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7ikt101ltcyn",
+     "subject": "pt",
+     "type": "open",
+     "q": "Reescreva em discurso indireto: “— Nós terminamos o trabalho — disseram os alunos.”",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Troque “nós” pela pessoa certa e ajuste o tempo do verbo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqry0coajh4c2",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique uma vantagem de usar o discurso direto ao escrever uma história.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no efeito de “ouvir” o personagem falando.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Leitura expressiva e sarau",
+   "questions": [
+    {
+     "id": "r3w9zczgjjchs",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é um sarau?",
+     "options": [
+      "Um encontro em que pessoas leem ou apresentam poemas, contos e músicas",
+      "Uma prova de leitura silenciosa",
+      "Uma competição esportiva entre turmas",
+      "Uma aula de ortografia"
+     ],
+     "answer": "Um encontro em que pessoas leem ou apresentam poemas, contos e músicas",
+     "accept": [],
+     "hint": "Pense num evento cultural com apresentações.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdd38b1gybbln",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é entonação na leitura em voz alta?",
+     "options": [
+      "A variação da melodia e da altura da voz",
+      "O número de palavras do texto",
+      "O título do poema",
+      "O tamanho da letra"
+     ],
+     "answer": "A variação da melodia e da altura da voz",
+     "accept": [],
+     "hint": "Tem a ver com a “música” da fala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1853zwyif82fy",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Ao ler em voz alta uma frase que termina com ponto de interrogação, a voz geralmente:",
+     "options": [
+      "sobe no final",
+      "desce até sumir",
+      "fica igual do começo ao fim",
+      "vira um grito"
+     ],
+     "answer": "sobe no final",
+     "accept": [],
+     "hint": "Faça uma pergunta em voz alta e repare no que acontece.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvpy6i89w9asn",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Numa leitura em voz alta, a vírgula geralmente indica:",
+     "options": [
+      "uma pequena pausa",
+      "o fim do texto",
+      "que é preciso gritar",
+      "a troca de leitor"
+     ],
+     "answer": "uma pequena pausa",
+     "accept": [],
+     "hint": "É uma pausa menor do que a do ponto final.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ukdkblbpeu9c",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual atitude ajuda o público a ouvir bem num sarau?",
+     "options": [
+      "Falar com volume adequado e olhar para a plateia de vez em quando",
+      "Segurar o papel na frente do rosto",
+      "Ler o mais rápido possível",
+      "Falar baixinho para não incomodar"
+     ],
+     "answer": "Falar com volume adequado e olhar para a plateia de vez em quando",
+     "accept": [],
+     "hint": "Pense no que faz você prestar atenção em quem lê.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18nc7dg1cm6sio",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama o conjunto de pessoas que assiste a uma apresentação?",
+     "options": [],
+     "answer": "público",
+     "accept": [
+      "plateia",
+      "a plateia",
+      "o público",
+      "audiência"
+     ],
+     "hint": "São as pessoas sentadas que escutam e aplaudem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gigg651e1f5yq",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Para ler com expressividade um trecho triste, o mais adequado é usar uma voz:",
+     "options": [
+      "mais lenta e suave",
+      "alegre e acelerada",
+      "muito alta e gritada",
+      "sem nenhuma pausa"
+     ],
+     "answer": "mais lenta e suave",
+     "accept": [],
+     "hint": "A voz deve combinar com o sentimento do texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcweyh5z6sssb",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na leitura em voz alta, o ponto de exclamação costuma indicar:",
+     "options": [
+      "emoção, como surpresa, alegria ou susto",
+      "uma pergunta",
+      "o começo de um parágrafo",
+      "uma palavra estrangeira"
+     ],
+     "answer": "emoção, como surpresa, alegria ou susto",
+     "accept": [],
+     "hint": "Pense em “Que lindo!” ou “Cuidado!”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5wjziab2wmin",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "As reticências (…) numa leitura em voz alta costumam indicar:",
+     "options": [
+      "hesitação ou suspense, com uma pausa mais longa",
+      "que o texto acabou",
+      "que se deve ler mais rápido",
+      "uma pergunta"
+     ],
+     "answer": "hesitação ou suspense, com uma pausa mais longa",
+     "accept": [],
+     "hint": "É como se a frase ficasse “no ar”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f459psmvdql",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que é importante ensaiar antes de ler num sarau?",
+     "options": [
+      "Para ganhar segurança e conhecer o ritmo do texto",
+      "Para decorar o nome de todo o público",
+      "Para ler mais rápido que os colegas",
+      "Para não precisar de pontuação"
+     ],
+     "answer": "Para ganhar segurança e conhecer o ritmo do texto",
+     "accept": [],
+     "hint": "O que muda quando você já conhece bem o texto?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvqwe3nxfa65p",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Ao ler em voz alta um poema com rimas, o leitor deve:",
+     "options": [
+      "respeitar o ritmo dos versos, sem exagerar nas rimas",
+      "parar depois de cada palavra",
+      "ler todos os versos sem respirar",
+      "pular os versos mais difíceis"
+     ],
+     "answer": "respeitar o ritmo dos versos, sem exagerar nas rimas",
+     "accept": [],
+     "hint": "O poema tem uma “batida” que ajuda a leitura.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pw4dv01imbvtw",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Ao ler um diálogo em voz alta, uma boa estratégia é:",
+     "options": [
+      "mudar um pouco a voz para cada personagem",
+      "ler todas as falas com a mesma voz",
+      "pular as falas curtas",
+      "ler só as falas do narrador"
+     ],
+     "answer": "mudar um pouco a voz para cada personagem",
+     "accept": [],
+     "hint": "Como o público vai saber quem está falando?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r29o815e7trtp",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Qual sinal de pontuação indica que a frase é uma pergunta?",
+     "options": [],
+     "answer": "ponto de interrogação",
+     "accept": [
+      "interrogação",
+      "o ponto de interrogação"
+     ],
+     "hint": "Ele tem a forma de um gancho com um ponto embaixo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rln55yjro1bzn",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é o melhor momento para respirar ao ler um texto longo em voz alta?",
+     "options": [
+      "Nas pausas marcadas pela pontuação",
+      "No meio de uma palavra",
+      "Só no fim do texto",
+      "A cada três palavras"
+     ],
+     "answer": "Nas pausas marcadas pela pontuação",
+     "accept": [],
+     "hint": "A pontuação ajuda a organizar a leitura.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a52j7z47nbju",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Escolha um sentimento (alegria, medo ou tristeza) e explique como você mudaria sua voz para expressá-lo numa leitura em voz alta.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em velocidade, volume e pausas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dt68f8nlqzbw",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Por que você acha que participar de um sarau pode fazer uma turma gostar mais de literatura?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em como é ouvir e compartilhar textos com outras pessoas.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "sci": {
+   "topic": "Mass, weight and gravity",
+   "questions": [
+    {
+     "id": "ruz8b9meglvqj",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is the SI unit of mass?",
+     "options": [
+      "kilogram",
+      "newton",
+      "metre",
+      "joule"
+     ],
+     "answer": "kilogram",
+     "accept": [],
+     "hint": "It is the unit shown on kitchen scales.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f2spmx1nalzc3",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is the unit of weight?",
+     "options": [
+      "newton",
+      "kilogram",
+      "litre",
+      "watt"
+     ],
+     "answer": "newton",
+     "accept": [],
+     "hint": "Weight is a force.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p4l6xc6u9kmm",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which statement is correct?",
+     "options": [
+      "Mass is the amount of matter in an object; weight is the force of gravity on it",
+      "Mass and weight are exactly the same thing",
+      "Weight is the amount of matter in an object; mass is a force",
+      "Mass is measured in newtons"
+     ],
+     "answer": "Mass is the amount of matter in an object; weight is the force of gravity on it",
+     "accept": [],
+     "hint": "One of them is a force, the other is not.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r83qsw21yt4y65",
+     "subject": "sci",
+     "type": "mc",
+     "q": "An astronaut travels from the Earth to the Moon. What happens to her mass?",
+     "options": [
+      "It stays the same",
+      "It increases",
+      "It decreases",
+      "It becomes zero"
+     ],
+     "answer": "It stays the same",
+     "accept": [],
+     "hint": "Does the amount of matter in her body change?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19ajph04wlfz7",
+     "subject": "sci",
+     "type": "mc",
+     "q": "An astronaut travels from the Earth to the Moon. What happens to her weight?",
+     "options": [
+      "It decreases",
+      "It increases",
+      "It stays the same",
+      "It doubles"
+     ],
+     "answer": "It decreases",
+     "accept": [],
+     "hint": "Gravity on the Moon is weaker.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6cfxbs159u7wb",
+     "subject": "sci",
+     "type": "num",
+     "q": "An object has a mass of 5 kg. Calculate its weight on Earth in newtons. (g = 10 N/kg)",
+     "options": [],
+     "answer": "50",
+     "accept": [],
+     "hint": "Use W = m × g.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12mlxpmwrv5fb",
+     "subject": "sci",
+     "type": "num",
+     "q": "A student has a mass of 60 kg. Calculate the student's weight on Earth in newtons. (g = 10 N/kg)",
+     "options": [],
+     "answer": "600",
+     "accept": [],
+     "hint": "Multiply the mass by the gravitational field strength.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm1v48o1j71mym",
+     "subject": "sci",
+     "type": "num",
+     "q": "A box weighs 200 N on Earth. What is its mass in kg? (g = 10 N/kg)",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Rearrange W = m × g to find m.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkpa1tc1unblxn",
+     "subject": "sci",
+     "type": "num",
+     "q": "On the Moon, g = 1.6 N/kg. Calculate the weight in newtons of a 50 kg rover on the Moon.",
+     "options": [],
+     "answer": "80",
+     "accept": [],
+     "hint": "W = m × g, using the Moon's value of g.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwtnmez7dsx9p",
+     "subject": "sci",
+     "type": "short",
+     "q": "What instrument is used in the lab to measure weight in newtons?",
+     "options": [],
+     "answer": "newtonmeter",
+     "accept": [
+      "newton meter",
+      "newton-meter",
+      "forcemeter",
+      "force meter",
+      "spring balance",
+      "a newtonmeter"
+     ],
+     "hint": "It contains a spring that stretches.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rezha4j11y736r",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In the equation W = mg, what does g stand for?",
+     "options": [
+      "gravitational field strength",
+      "grams",
+      "gas pressure",
+      "gradient"
+     ],
+     "answer": "gravitational field strength",
+     "accept": [],
+     "hint": "It tells you how strong gravity is in a place.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6ovpst1rooxxv",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is the unit of gravitational field strength?",
+     "options": [
+      "N/kg",
+      "kg/N",
+      "m/s",
+      "J"
+     ],
+     "answer": "N/kg",
+     "accept": [],
+     "hint": "It is newtons for every kilogram.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1aeuir41s1viqf",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why is the gravitational field strength on the Moon smaller than on Earth?",
+     "options": [
+      "The Moon has much less mass than the Earth",
+      "The Moon has no air",
+      "The Moon is colder than the Earth",
+      "The Moon reflects sunlight"
+     ],
+     "answer": "The Moon has much less mass than the Earth",
+     "accept": [],
+     "hint": "Gravity depends on how much mass a body has.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bae2yc1vl0855",
+     "subject": "sci",
+     "type": "num",
+     "q": "On Jupiter, g is about 25 N/kg. Calculate the weight in newtons of a 2 kg bag on Jupiter.",
+     "options": [],
+     "answer": "50",
+     "accept": [],
+     "hint": "Use W = m × g with Jupiter's value of g.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrauiug17deg8n",
+     "subject": "sci",
+     "type": "mc",
+     "q": "On Earth, what is the approximate weight of a 1 kg mass?",
+     "options": [
+      "10 N",
+      "1 N",
+      "100 N",
+      "0.1 N"
+     ],
+     "answer": "10 N",
+     "accept": [],
+     "hint": "Think about the value of g on Earth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16anfg6o99ce8",
+     "subject": "sci",
+     "type": "open",
+     "q": "A pupil says, “My weight is 45 kg.” Explain why this statement is scientifically incorrect.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the units of mass and weight.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa": {
+   "topic": "Regular -ar verbs in the present tense",
+   "questions": [
+    {
+     "id": "r1mgvm389sfcst",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb form: Yo ___ español. (hablar)",
+     "options": [
+      "hablo",
+      "hablas",
+      "habla",
+      "hablamos"
+     ],
+     "answer": "hablo",
+     "accept": [],
+     "hint": "Which ending goes with “yo”?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uh77tm15gbmu1",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb form: Tú ___ música en casa. (escuchar)",
+     "options": [
+      "escuchas",
+      "escucho",
+      "escucha",
+      "escuchan"
+     ],
+     "answer": "escuchas",
+     "accept": [],
+     "hint": "The “tú” form usually ends in -s.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5bsvio1lqgj82",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb form: Ella ___ matemáticas. (estudiar)",
+     "options": [
+      "estudia",
+      "estudio",
+      "estudias",
+      "estudian"
+     ],
+     "answer": "estudia",
+     "accept": [],
+     "hint": "Think of the ending for he/she.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8vzdqx1nha9ir",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb form: Nosotros ___ en la biblioteca. (estudiar)",
+     "options": [
+      "estudiamos",
+      "estudian",
+      "estudio",
+      "estudiáis"
+     ],
+     "answer": "estudiamos",
+     "accept": [],
+     "hint": "“We” forms end in -amos for -ar verbs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r102plb71ahkfu6",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb form: Ellos ___ inglés en clase. (hablar)",
+     "options": [
+      "hablan",
+      "hablamos",
+      "habla",
+      "hablas"
+     ],
+     "answer": "hablan",
+     "accept": [],
+     "hint": "The “they” form ends in -n.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jwsojnnws2qh",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the “yo” form of the verb “escuchar”.",
+     "options": [],
+     "answer": "escucho",
+     "accept": [
+      "yo escucho"
+     ],
+     "hint": "Remove -ar and add the “I” ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p6keg11cyz5nl",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the “nosotros” form of the verb “hablar”.",
+     "options": [],
+     "answer": "hablamos",
+     "accept": [
+      "nosotros hablamos"
+     ],
+     "hint": "Remove -ar and add the “we” ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc6n9nv1qpwy4t",
+     "subject": "spa",
+     "type": "mc",
+     "q": "For regular -ar verbs in the present tense, which ending goes with “él / ella”?",
+     "options": [
+      "-a",
+      "-o",
+      "-as",
+      "-an"
+     ],
+     "answer": "-a",
+     "accept": [],
+     "hint": "Look at “ella estudia”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pitjw6yuz0im",
+     "subject": "spa",
+     "type": "mc",
+     "q": "For regular -ar verbs in the present tense, which ending goes with “vosotros”?",
+     "options": [
+      "-áis",
+      "-amos",
+      "-an",
+      "-as"
+     ],
+     "answer": "-áis",
+     "accept": [],
+     "hint": "It has an accent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hrnteyi26heh",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: “I study.”",
+     "options": [],
+     "answer": "estudio",
+     "accept": [
+      "yo estudio"
+     ],
+     "hint": "Use the verb “estudiar”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvs0rzxpuqclp",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: “We listen.”",
+     "options": [],
+     "answer": "escuchamos",
+     "accept": [
+      "nosotros escuchamos",
+      "nosotras escuchamos"
+     ],
+     "hint": "Use the verb “escuchar”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14yqset16hg0vh",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does “Marta dibuja en la clase de arte” mean?",
+     "options": [
+      "Marta draws in art class",
+      "Marta dances in art class",
+      "Marta talks in art class",
+      "Marta works in maths class"
+     ],
+     "answer": "Marta draws in art class",
+     "accept": [],
+     "hint": "“Dibujar” is linked to the English word “drawing”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rub499a11o13f",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence is correct?",
+     "options": [
+      "Mis amigos estudian ciencias.",
+      "Mis amigos estudia ciencias.",
+      "Mis amigos estudiamos ciencias.",
+      "Mis amigos estudio ciencias."
+     ],
+     "answer": "Mis amigos estudian ciencias.",
+     "accept": [],
+     "hint": "“Mis amigos” means “they”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fckcydeb1ga1",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the correct form of “usar” to complete the sentence: Vosotros ___ el ordenador.",
+     "options": [],
+     "answer": "usáis",
+     "accept": [
+      "usais"
+     ],
+     "hint": "Use the “vosotros” ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lmfk4q1k31b6k",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What is the infinitive of the verb in: “Pablo y yo trabajamos mucho”?",
+     "options": [
+      "trabajar",
+      "trabajo",
+      "trabajamos",
+      "trabajan"
+     ],
+     "answer": "trabajar",
+     "accept": [],
+     "hint": "The infinitive is the dictionary form ending in -ar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k2slfd1xano6a",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two sentences in Spanish about what you do at school, using two different regular -ar verbs.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Try verbs such as estudiar, hablar, escuchar or dibujar.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "Quintal de Chuva",
+   "premise": "Bia, de 12 anos, adora ler, mas tem pavor de falar em público. Quando a turma do 7º ano organiza um sarau, ela decide ler um poema escrito pela avó e, episódio a episódio, aprende a usar pausas, entonação e postura para dar vida às palavras.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O cartaz amarelo",
+     "synopsis": "A professora Celina anuncia o primeiro sarau da turma, e Bia, que detesta falar em público, recebe da avó um desafio inesperado.",
+     "text": "Na segunda-feira, um cartaz amarelo apareceu na porta da sala do 7º ano. Em letras grandes, alguém tinha escrito: “Sarau da Primavera — poemas, contos e música. Venha ler, venha ouvir!”.\nA professora Celina entrou sorrindo, com a bolsa cheia de livros, e explicou que, dali a três semanas, a turma faria um sarau no pátio, à noite, com as famílias na plateia.\n— Cada um vai escolher um texto e ler em voz alta — disse ela. — Pode ser um poema, um conto curto ou até uma carta. O importante é ler com o coração.\nA sala virou uma festa. Tomás, que sentava ao lado de Bia, já batia na mesa como se fosse um tambor.\n— Eu vou ler uma história de dragão! Com rugido e tudo!\nBia não disse nada. Sentiu as orelhas esquentarem e as mãos ficarem geladas ao mesmo tempo. Ela adorava ler. Lia no ônibus, na fila do mercado, debaixo do cobertor com lanterna. Mas ler sozinha era uma coisa. Ler em voz alta, com dezenas de olhos olhando para ela, era outra completamente diferente.\nNo ano anterior, quando precisou apresentar um trabalho sobre rios, a voz dela saiu tão baixinha que a professora pediu três vezes para ela repetir. Alguém lá do fundo riu. Bia nunca esqueceu aquele riso.\nNa saída, ela foi até a mesa da professora.\n— E se alguém não quiser ler? — perguntou, olhando para os próprios tênis.\nA professora Celina pensou um pouco antes de responder.\n— Ninguém vai ser obrigado, Bia. Mas eu acho que você tem uma voz que vale a pena ouvir. Pense com calma, está bem?\nEm casa, Bia contou tudo para a avó Zuleica, que estava regando as samambaias da varanda. A avó morava com elas desde o ano anterior e tinha mania de conversar com as plantas.\n— Um sarau! — exclamou a avó, largando o regador. — Sabia que, quando eu era moça, eu lia poemas num programa de rádio da cidade?\nBia arregalou os olhos. Nunca tinha ouvido aquela história.\n— E você não ficava com medo?\n— Morria de medo! — riu a avó. — Na primeira vez, minha voz tremeu tanto que parecia um carro velho subindo a ladeira. Mas eu tinha um truque.\n— Que truque?\nA avó apontou para as samambaias, para o vaso de violetas e para o pé de manjericão.\n— Eu treinava lendo para as plantas. Planta não ri, não cochicha e ainda fica mais bonita. Faça isso uma vez por dia. Depois a gente conversa.\nBia achou a ideia meio esquisita. Mas, antes de dormir, abriu a gaveta da cômoda da avó, que ela tinha permissão para mexer, e encontrou um caderno velho de capa azul. Na primeira página, com letra caprichada, havia um poema chamado “Quintal de Chuva”, escrito pela própria avó.\nBia leu baixinho, só com os lábios. Era um poema lindo, cheio de barulho de água e cheiro de terra molhada.\nEla fechou o caderno, respirou fundo e decidiu: se fosse ler alguma coisa no sarau, seria aquele poema.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde foi colado o cartaz amarelo?",
+       "options": [
+        "Na porta da sala do 7º ano",
+        "No portão de casa",
+        "Na biblioteca da cidade",
+        "No ônibus escolar"
+       ],
+       "answer": "Na porta da sala do 7º ano",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quanto tempo faltava para o sarau?",
+       "options": [
+        "Três semanas",
+        "Dois dias",
+        "Um mês e meio",
+        "Uma semana"
+       ],
+       "answer": "Três semanas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que tipo de história Tomás disse que ia ler?",
+       "options": [
+        "Uma história de dragão",
+        "Um poema de amor",
+        "Uma carta antiga",
+        "Uma notícia de jornal"
+       ],
+       "answer": "Uma história de dragão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu com Bia no ano anterior, durante a apresentação sobre rios?",
+       "options": [
+        "A voz dela saiu muito baixa e alguém riu",
+        "Ela esqueceu o cartaz em casa",
+        "Ela tirou a melhor nota da turma",
+        "Ela chegou atrasada"
+       ],
+       "answer": "A voz dela saiu muito baixa e alguém riu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, onde a avó Zuleica lia poemas quando era moça?",
+       "options": [],
+       "answer": "num programa de rádio",
+       "accept": [
+        "no rádio",
+        "em um programa de rádio",
+        "programa de rádio",
+        "na rádio"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o truque que a avó ensinou para perder o medo?",
+       "options": [
+        "Treinar lendo para as plantas",
+        "Ler de olhos fechados",
+        "Cantar antes de ler",
+        "Ler bem rápido"
+       ],
+       "answer": "Treinar lendo para as plantas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a avó diz que ler para as plantas é um bom treino?",
+       "options": [
+        "Porque as plantas não riem nem cochicham",
+        "Porque as plantas ouvem melhor que pessoas",
+        "Porque assim não é preciso ensaiar",
+        "Porque as plantas aplaudem"
+       ],
+       "answer": "Porque as plantas não riem nem cochicham",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Bia escolheu justamente o poema da avó para ler no sarau?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Plateia de samambaias",
+     "synopsis": "Bia começa a treinar em voz alta para as plantas da varanda e descobre que ler rápido demais esconde a beleza do poema.",
+     "text": "No dia seguinte, depois do almoço, Bia levou o caderno azul para a varanda. Olhou para os lados para ter certeza de que ninguém estava vendo, posicionou-se diante das samambaias e começou:\n— Quintal de chuva, chão de barro, a gota cai, o mundo para…\nAs palavras saíram correndo, uma atropelando a outra, como crianças descendo um escorregador ao mesmo tempo. Em menos de vinte segundos, ela chegou ao último verso, sem fôlego.\nDa cozinha, a avó Zuleica bateu palmas devagar.\n— Muito bem. Agora me conte: do que fala o poema?\nBia abriu a boca e fechou de novo. Ela sabia do que o poema falava, claro. Mas, na hora de ler, nem tinha prestado atenção.\n— Fala de… chuva?\n— Fala de chuva — concordou a avó, sentando-se no banquinho. — Mas, do jeito que você leu, parecia que a chuva estava atrasada para pegar o ônibus.\nBia riu, mesmo sem querer.\nA avó pegou o caderno e mostrou um verso.\n— Está vendo esta vírgula aqui, depois de “chão de barro”? Ela é uma pequena pausa. É como um passo mais curto. E este ponto final? É uma pausa maior, um lugar para respirar. A pontuação é o mapa da leitura, Bia. Quem segue o mapa não se perde.\n— E as reticências? — perguntou Bia, apontando para os três pontinhos no fim do primeiro verso.\n— Ah, essas são as minhas preferidas. Elas deixam a frase pendurada no ar, como uma gota que ainda não caiu. Você faz uma pausa um pouquinho mais longa e deixa o público imaginar.\nBia tentou de novo. Dessa vez, leu mais devagar. Parou na vírgula. Respirou no ponto final. Nas reticências, esperou um instante, olhando para a samambaia como se ela fosse uma pessoa curiosa.\n— A gota cai… o mundo para.\nAlgo estranho aconteceu: ela conseguiu ouvir a chuva dentro do poema. O barulho da água, o cheiro do barro, o silêncio do quintal. Era como se as palavras tivessem ganhado cor.\n— Percebeu? — perguntou a avó, com os olhos brilhando.\n— Percebi — respondeu Bia, surpresa. — Parece outro poema.\n— É o mesmo poema. Só que agora ele está respirando.\nDurante a semana, Bia leu para as plantas todos os dias. Na terça, leu para as violetas. Na quarta, para o manjericão, que tinha um cheiro tão bom que ela quase esqueceu o texto. Na quinta, resolveu ler um pouco mais alto, porque a avó tinha dito que a voz precisava “chegar até o fundo do quintal”.\nFoi aí que aconteceu uma coisa inesperada. Quando terminou o último verso, ouviu palmas vindo do prédio ao lado. Bia levantou os olhos, assustada. Numa janela do segundo andar, dona Graça, a vizinha que fazia bolos para fora, aplaudia com as mãos sujas de farinha.\n— Lindo, menina! Lê de novo amanhã, que eu deixo a janela aberta!\nBia ficou vermelha como um tomate. Mas, pela primeira vez, a vermelhidão não veio do medo. Veio de uma alegria quentinha que ela não sabia explicar.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Bia leu o poema na primeira tentativa?",
+       "options": [
+        "Rápido demais, sem pausas",
+        "Devagar e com emoção",
+        "Cantando",
+        "Em silêncio"
+       ],
+       "answer": "Rápido demais, sem pausas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, a avó compara a pontuação a quê?",
+       "options": [
+        "Ao mapa da leitura",
+        "A um semáforo quebrado",
+        "A uma escada",
+        "A um relógio"
+       ],
+       "answer": "Ao mapa da leitura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a avó, o que a vírgula indica na leitura?",
+       "options": [
+        "Uma pequena pausa",
+        "O fim do poema",
+        "Que é preciso gritar",
+        "Uma pergunta"
+       ],
+       "answer": "Uma pequena pausa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a avó descreve as reticências?",
+       "options": [
+        "Como uma gota que ainda não caiu, deixando a frase no ar",
+        "Como um ponto final mais forte",
+        "Como um sinal de pergunta",
+        "Como algo que deve ser ignorado"
+       ],
+       "answer": "Como uma gota que ainda não caiu, deixando a frase no ar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para qual planta Bia leu na quarta-feira?",
+       "options": [
+        "Para o manjericão",
+        "Para as violetas",
+        "Para as samambaias",
+        "Para uma roseira"
+       ],
+       "answer": "Para o manjericão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da vizinha que aplaudiu Bia da janela?",
+       "options": [],
+       "answer": "dona Graça",
+       "accept": [
+        "Graça",
+        "Dona Graça"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a avó quis dizer com “agora ele está respirando”?",
+       "options": [
+        "Que o poema ganhou vida com as pausas certas",
+        "Que Bia precisava respirar mais fundo",
+        "Que o caderno estava úmido",
+        "Que o poema tinha ficado mais curto"
+       ],
+       "answer": "Que o poema ganhou vida com as pausas certas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que, no final, a vermelhidão de Bia “não veio do medo”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: O dragão e a formiga",
+     "synopsis": "Tomás está com problemas: no conto dele, todos os personagens falam com a mesma voz. Bia o ajuda a dar uma voz a cada um.",
+     "text": "Na semana seguinte, a professora Celina dividiu a turma em duplas para ensaiar. Bia ficou com Tomás, que chegou com uma folha amassada e uma cara desanimada.\n— O que aconteceu com o rugido? — perguntou Bia.\n— Sumiu — suspirou ele. — Li meu conto para minha irmã ontem e ela dormiu no meio. Disse que estava tudo igual.\nO conto se chamava “O Dragão que Tinha Medo de Formiga”. Era sobre um dragão enorme que vivia numa caverna e entrava em pânico sempre que via uma formiguinha. A história era engraçada, mas, quando Tomás leu em voz alta, Bia entendeu o problema. O narrador, o dragão e a formiga falavam exatamente com a mesma voz: reta, rápida e sem nenhuma surpresa.\n— Tomás, quem está falando agora? — perguntou ela, apontando para uma fala no meio da página.\n— A formiga.\n— E agora?\n— O dragão.\n— Pois é. Mas, se eu fechar os olhos, não dá para saber. Os dois têm a mesma voz.\nTomás coçou a cabeça.\n— E como eu faço? Não sou ator.\nBia lembrou da avó e da conversa sobre o mapa da leitura.\n— Olha os travessões — disse ela. — Cada travessão é uma pessoa diferente começando a falar. É ali que você muda a voz. O dragão é enorme, mas medroso, não é? Então talvez a voz dele seja grossa, mas tremida.\nTomás experimentou:\n— Socorro… tem uma formiga no meu tapete!\nA voz saiu grave e trêmula ao mesmo tempo, como um trovão com soluço. Bia caiu na risada.\n— Isso! Agora a formiga. Ela é pequena, mas muito corajosa.\nTomás afinou a voz e falou bem rápido, com firmeza:\n— Com licença, senhor dragão, eu só estou passando!\nOs colegas das outras duplas pararam para escutar. Alguém do fundo pediu que ele lesse de novo.\n— E o narrador? — perguntou Tomás, empolgado.\n— O narrador é quem conta a história. Ele pode ter uma voz mais calma, um pouco mais lenta, como quem está sentado numa roda contando um caso. Assim o público descansa entre uma fala e outra.\nEles passaram o resto da aula ajustando cada parte. Bia sugeriu uma pausa antes da grande revelação do final, quando o dragão descobre que a formiga também tinha medo dele. Tomás sugeriu que, nessa hora, ele abaixasse a voz quase até um sussurro, para todos se inclinarem para a frente.\nQuando ele leu a versão nova para a professora Celina, ela tirou os óculos e enxugou uma lágrima de tanto rir.\n— Tomás, isso foi leitura expressiva de verdade — disse ela. — Você deu vida a cada personagem.\nNo caminho para o portão, Tomás deu uma cotovelada leve em Bia.\n— Você entende disso, hein? Por que não falou nada na aula?\nBia encolheu os ombros.\n— Ajudar os outros é mais fácil do que ler na frente de todo mundo.\n— Então eu vou te ajudar também — disse Tomás. — Amanhã é o ensaio geral. Você vai ler, e eu vou ficar bem na primeira fila, fazendo cara de formiga corajosa.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o título do conto de Tomás?",
+       "options": [
+        "O Dragão que Tinha Medo de Formiga",
+        "A Formiga e o Rei",
+        "O Dragão do Quintal",
+        "A Caverna Encantada"
+       ],
+       "answer": "O Dragão que Tinha Medo de Formiga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu quando Tomás leu o conto para a irmã?",
+       "options": [
+        "Ela dormiu no meio",
+        "Ela chorou de rir",
+        "Ela pediu para ler também",
+        "Ela gravou um vídeo"
+       ],
+       "answer": "Ela dormiu no meio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o problema da leitura de Tomás?",
+       "options": [
+        "Todos os personagens tinham a mesma voz",
+        "Ele lia baixo demais",
+        "Ele pulava páginas",
+        "Ele não sabia as palavras"
+       ],
+       "answer": "Todos os personagens tinham a mesma voz",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, segundo Bia, que sinal de pontuação mostra que um personagem diferente começa a falar?",
+       "options": [],
+       "answer": "travessão",
+       "accept": [
+        "o travessão",
+        "travessões",
+        "os travessões"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Tomás fez a voz do dragão?",
+       "options": [
+        "Grossa, mas tremida",
+        "Fina e rápida",
+        "Calma e lenta",
+        "Cantada"
+       ],
+       "answer": "Grossa, mas tremida",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Tomás decidiu ler a grande revelação do final?",
+       "options": [
+        "Abaixando a voz quase até um sussurro",
+        "Gritando o mais alto possível",
+        "Lendo bem rápido",
+        "Pedindo a Bia para ler"
+       ],
+       "answer": "Abaixando a voz quase até um sussurro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia diz que não falou nada na aula?",
+       "options": [
+        "Porque ajudar os outros é mais fácil do que ler na frente de todos",
+        "Porque estava doente",
+        "Porque não sabia a resposta",
+        "Porque a professora não deixou"
+       ],
+       "answer": "Porque ajudar os outros é mais fácil do que ler na frente de todos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que os colegas pararam para escutar Tomás quando ele mudou as vozes?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O papel na frente do rosto",
+     "synopsis": "No ensaio geral, Bia se esconde atrás da folha e ninguém a ouve. Com algumas dicas da professora, ela tenta outra vez.",
+     "text": "O ensaio geral aconteceu no pátio, numa tarde nublada. A professora Celina arrumou as cadeiras em semicírculo e marcou com fita crepe o lugar onde cada leitor deveria ficar. Um por um, os alunos foram até a marca e leram seus textos.\nLuana leu um poema sobre o mar, balançando o corpo como uma onda. Rafael leu uma carta que tinha escrito para o avô, e a voz dele embargou no final. Tomás leu o conto do dragão e arrancou gargalhadas de todo mundo, inclusive do porteiro, que observava da entrada.\nEntão chegou a vez de Bia.\nEla caminhou até a marca de fita crepe com as pernas bambas. Segurou o caderno azul com as duas mãos e, sem perceber, levantou o papel até a altura dos olhos, como um escudo. Começou a ler.\n— Quintal de chuva, chão de barro…\n— Não estou ouvindo! — gritou alguém lá de trás.\nBia sentiu o rosto pegar fogo. Ela continuou, mas a voz foi ficando cada vez menor, até virar um fio. Terminou o poema e voltou correndo para a cadeira, sem olhar para ninguém.\nNo intervalo, a professora Celina sentou-se ao lado dela.\n— Sabe o que eu vi? — perguntou, com calma. — Eu vi uma leitora que sabe exatamente onde fazer cada pausa. Isso é a parte mais difícil, e você já tem. O que falta é só deixar a voz sair do caderno.\n— Como assim?\n— Quando você coloca o papel na frente do rosto, a sua voz bate na folha e cai no chão. Ela não chega até a plateia. Experimente segurar o caderno na altura do peito. Assim seu rosto fica livre, e o som vai para a frente.\nBia ficou pensando.\n— E para onde eu olho? Se eu olhar para as pessoas, vou esquecer tudo.\n— Você não precisa olhar o tempo todo. Leia um verso e, nas pausas maiores, levante os olhos por um instante. Escolha um ponto lá no fundo, como aquela árvore, e imagine que precisa que a voz chegue até ela.\n— E se eu tremer?\n— Então você treme — sorriu a professora. — Plante os dois pés no chão, um pouco afastados, e respire fundo antes de começar. O corpo firme ajuda a voz a ficar firme.\nDepois do intervalo, a professora perguntou se alguém queria ler de novo. Bia hesitou. Olhou para Tomás, que fazia uma careta de formiga corajosa na primeira fila. Ela se levantou.\nVoltou à marca de fita crepe. Plantou os pés. Segurou o caderno na altura do peito. Respirou fundo, tão fundo que sentiu a barriga encher.\n— Quintal de chuva, chão de barro, a gota cai… o mundo para.\nNas reticências, levantou os olhos e mirou a árvore do fundo. A voz saiu inteira, ainda um pouco trêmula, mas clara. Ninguém gritou que não estava ouvindo. Pelo contrário: o pátio ficou tão silencioso que dava para escutar um passarinho no muro.\nQuando terminou, a turma aplaudiu. Não foi o aplauso barulhento que Tomás recebeu, mas um aplauso diferente, mais demorado.\n— Agora sim — sussurrou a professora Celina. — Agora a sua voz saiu do caderno.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde aconteceu o ensaio geral?",
+       "options": [
+        "No pátio",
+        "Na biblioteca",
+        "Na casa de Bia",
+        "No auditório da cidade"
+       ],
+       "answer": "No pátio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a professora marcou o lugar de cada leitor?",
+       "options": [
+        "Com fita crepe no chão",
+        "Com giz colorido",
+        "Com uma cadeira azul",
+        "Com um tapete"
+       ],
+       "answer": "Com fita crepe no chão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, sobre o que era o poema que Luana leu?",
+       "options": [
+        "Sobre o mar",
+        "Sobre a chuva",
+        "Sobre um dragão",
+        "Sobre o avô"
+       ],
+       "answer": "Sobre o mar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Bia fez com o caderno na primeira tentativa?",
+       "options": [
+        "Levantou até a altura dos olhos, como um escudo",
+        "Deixou no chão",
+        "Entregou para Tomás",
+        "Esqueceu em casa"
+       ],
+       "answer": "Levantou até a altura dos olhos, como um escudo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a professora sugeriu segurar o caderno?",
+       "options": [
+        "Na altura do peito",
+        "Acima da cabeça",
+        "Na altura dos joelhos",
+        "Atrás das costas"
+       ],
+       "answer": "Na altura do peito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, para que ponto do fundo do pátio a professora sugeriu que Bia mirasse a voz?",
+       "options": [],
+       "answer": "uma árvore",
+       "accept": [
+        "a árvore",
+        "árvore",
+        "aquela árvore"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que a segunda leitura de Bia deu certo?",
+       "options": [
+        "O pátio ficou em silêncio e a turma aplaudiu demoradamente",
+        "A professora pediu para ela parar",
+        "Alguém gritou que não estava ouvindo",
+        "Tomás leu no lugar dela"
+       ],
+       "answer": "O pátio ficou em silêncio e a turma aplaudiu demoradamente",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Bia decidiu ler de novo, mesmo depois de ter passado vergonha?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A frase que mudava de sentido",
+     "synopsis": "Durante um jogo em sala, a turma descobre como a pontuação e a entonação podem mudar completamente o sentido de uma frase.",
+     "text": "Na segunda-feira, a professora Celina chegou com uma caixa de sapatos cheia de tiras de papel.\n— Hoje é dia de jogo — anunciou. — Cada dupla vai sortear uma frase e ler de jeitos diferentes. O resto da turma tem que adivinhar o sentimento.\nA primeira tira ficou com Bia e Tomás. Dizia apenas: “Choveu de novo”.\n— Fácil — disse Tomás. — É só ler.\n— Será? — perguntou a professora, piscando um olho.\nBia leu primeiro, com voz cansada e arrastada, deixando os ombros caírem:\n— Choveu de novo…\n— Ela está triste! — gritou Luana. — Ou entediada!\nEntão Tomás leu, pulando da cadeira com os braços para o alto:\n— Choveu de novo!\n— Ele está feliz! — disse Rafael. — Deve ser fazendeiro!\nA turma riu. Depois, Bia teve uma ideia. Leu a frase devagar, subindo a voz no final, com cara de quem não acredita:\n— Choveu de novo?\n— Agora é uma pergunta — disse a professora. — Vejam só: as mesmas duas palavras, e três sentidos diferentes. O que mudou?\n— A pontuação — respondeu Bia.\n— E o jeito de falar — completou Tomás.\n— Exatamente. Na escrita, a pontuação mostra a entonação. Na leitura em voz alta, a nossa voz transforma a pontuação em música.\nO jogo continuou. Rafael e Luana sortearam a frase “Que surpresa”. Leram uma vez com alegria e outra com desconfiança, e todos perceberam a diferença na hora. Outra dupla pegou “Eu vou”, que podia soar como coragem, como preguiça ou como dúvida, dependendo do tom.\nA tira mais divertida foi a última: “Vamos comer, crianças”. A professora escreveu duas versões no quadro, uma com vírgula e outra sem.\n— “Vamos comer, crianças”, com vírgula, é um convite para as crianças virem jantar — explicou ela. — Sem a vírgula, parece que alguém vai comer as crianças!\nA sala explodiu em gargalhadas. Tomás fingiu ser um ogro faminto e correu atrás dos colegas entre as carteiras até a professora pedir calma.\nNo fim da aula, Bia abriu o caderno azul e olhou para o poema da avó com outros olhos. Pegou um lápis bem apontado e começou a fazer pequenas marcas. Uma barra para as pausas curtas. Duas barras para as pausas longas. Uma setinha para cima onde a voz deveria subir. Uma setinha para baixo onde deveria descer. Ao lado do verso mais bonito, desenhou um pequeno coração, para lembrar de ler aquele trecho com carinho.\nTomás espiou por cima do ombro dela.\n— Parece uma partitura de música.\n— É mais ou menos isso — disse Bia. — A avó diz que um poema também é uma canção. Só que sem instrumento.\n— Então você é a cantora — brincou ele.\nBia não respondeu, mas guardou o lápis sorrindo. Pela primeira vez, ela estava ansiosa para chegar em casa e ensaiar.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a professora levou para a aula?",
+       "options": [
+        "Uma caixa de sapatos com tiras de papel",
+        "Um violão",
+        "Um livro de receitas",
+        "Um microfone novo"
+       ],
+       "answer": "Uma caixa de sapatos com tiras de papel",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era a frase da primeira tira sorteada por Bia e Tomás?",
+       "options": [],
+       "answer": "Choveu de novo",
+       "accept": [
+        "choveu de novo",
+        "“Choveu de novo”"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Tomás leu a frase “Choveu de novo”?",
+       "options": [
+        "Pulando com os braços para o alto, feliz",
+        "Com voz cansada e triste",
+        "Como uma pergunta",
+        "Sussurrando"
+       ],
+       "answer": "Pulando com os braços para o alto, feliz",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que acontece com a voz quando Bia lê a frase como pergunta?",
+       "options": [
+        "Ela sobe no final",
+        "Ela desce no final",
+        "Ela fica muito baixa",
+        "Ela some"
+       ],
+       "answer": "Ela sobe no final",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, o que a voz faz com a pontuação na leitura em voz alta?",
+       "options": [
+        "Transforma a pontuação em música",
+        "Ignora a pontuação",
+        "Apaga a pontuação",
+        "Troca a pontuação de lugar"
+       ],
+       "answer": "Transforma a pontuação em música",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que muda na frase “Vamos comer, crianças” quando se tira a vírgula?",
+       "options": [
+        "Parece que alguém vai comer as crianças",
+        "Vira uma pergunta",
+        "Fica mais educada",
+        "Não muda nada"
+       ],
+       "answer": "Parece que alguém vai comer as crianças",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tomás diz que o caderno de Bia parece uma partitura?",
+       "options": [
+        "Porque ela marcou pausas e subidas e descidas da voz",
+        "Porque ela desenhou notas musicais",
+        "Porque o poema virou uma música famosa",
+        "Porque o caderno tinha pauta"
+       ],
+       "answer": "Porque ela marcou pausas e subidas e descidas da voz",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que, no fim do capítulo, Bia estava ansiosa para chegar em casa e ensaiar?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Ensaio no escuro",
+     "synopsis": "Na véspera do sarau, uma tempestade derruba a luz durante o último ensaio, e a turma precisa ler sem microfone e à luz de lanternas.",
+     "text": "Na véspera do sarau, a professora Celina marcou um último ensaio no fim da tarde, para todos se acostumarem com o pátio já iluminado pelas lâmpadas penduradas entre as árvores. Os pais de Luana tinham emprestado uma caixa de som e um microfone, e Tomás estava encantado com o eco da própria voz.\n— Testando, testando! Um dragão na escuta!\nO céu, porém, estava pesado. Nuvens escuras se juntavam por cima do muro, e um vento frio começou a balançar as lâmpadas.\nRafael tinha acabado de ler a carta para o avô quando um trovão enorme fez todo mundo pular. Logo depois, a chuva desabou. A turma correu para debaixo da cobertura do pátio, carregando cadeiras e folhas. E então, de repente, tudo se apagou. As lâmpadas, a caixa de som, a luz das salas. Ficou um escuro completo, só com o barulho da água no telhado.\nAlguém gritou. Outro alguém riu de nervoso.\n— Calma, gente — disse a voz firme da professora. — Ninguém se mexe. Quem tem celular ou lanterna, acende.\nPequenos pontos de luz foram surgindo, um aqui, outro ali. A professora contou os alunos, um por um, e todos estavam lá.\n— E agora? — perguntou Luana. — Acabou o ensaio?\nA professora olhou para a chuva e depois para a turma.\n— Não precisa acabar. Durante muitos séculos, as pessoas contaram histórias à luz de fogueiras, sem microfone nenhum. Que tal tentarmos?\nNinguém respondeu de imediato. Aí Tomás levantou a mão.\n— Eu leio. Mas preciso de alguém para segurar a lanterna.\nBia segurou a lanterna sobre a folha dele. Sem a caixa de som, a voz de Tomás precisou crescer. Ele respirou fundo e falou de barriga, como tinha aprendido, e o rugido do dragão misturou-se aos trovões de um jeito tão perfeito que parecia combinado. Todos aplaudiram.\nDepois, foi a vez de Bia. Ela entregou a lanterna a Tomás e abriu o caderno azul, com as marquinhas de lápis que agora conhecia de cor. A chuva fazia um barulho enorme. Se lesse baixinho, ninguém ouviria nada.\nEla plantou os pés no chão. Segurou o caderno na altura do peito. Olhou para o escuro, onde estavam os colegas, e imaginou que a árvore do fundo do pátio era o alvo.\n— Quintal de chuva, chão de barro…\nA voz saiu forte. Não era um grito. Era uma voz que ocupava o espaço, como a da avó Zuleica quando chamava para o almoço. E o mais curioso: o poema falava justamente de chuva. Cada verso parecia responder ao barulho do telhado.\n— A gota cai… o mundo para.\nNa pausa das reticências, um relâmpago iluminou o pátio por um segundo, e Bia viu os rostos dos colegas, todos olhando para ela, atentos. Ela não perdeu o fio. Continuou até o último verso.\nQuando terminou, ninguém aplaudiu de imediato. Houve um silêncio respeitoso, cheio de chuva. Então Luana começou a bater palmas, e logo a turma toda se juntou.\nPouco depois, a luz voltou, piscando. A professora Celina estava sorrindo.\n— Se vocês conseguiram ler no meio de uma tempestade — disse ela —, amanhã vai ser fácil.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quando aconteceu o último ensaio?",
+       "options": [
+        "Na véspera do sarau, no fim da tarde",
+        "Na manhã do sarau",
+        "Uma semana antes, de manhã",
+        "Depois do sarau"
+       ],
+       "answer": "Na véspera do sarau, no fim da tarde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem emprestou a caixa de som e o microfone?",
+       "options": [
+        "Os pais de Luana",
+        "A avó de Bia",
+        "O porteiro",
+        "Os pais de Tomás"
+       ],
+       "answer": "Os pais de Luana",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu logo depois do trovão e da chuva forte?",
+       "options": [
+        "A luz acabou",
+        "O sarau foi cancelado",
+        "Tomás foi para casa",
+        "O microfone quebrou sozinho"
+       ],
+       "answer": "A luz acabou",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que exemplo a professora usou para mostrar que é possível ler sem microfone?",
+       "options": [
+        "Pessoas contando histórias à luz de fogueiras",
+        "Cantores de ópera famosos",
+        "Professores em salas grandes",
+        "Narradores de futebol"
+       ],
+       "answer": "Pessoas contando histórias à luz de fogueiras",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem foi o primeiro a se oferecer para ler no escuro?",
+       "options": [],
+       "answer": "Tomás",
+       "accept": [
+        "tomas",
+        "o Tomás"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia não podia ler baixinho?",
+       "options": [
+        "Porque a chuva fazia muito barulho",
+        "Porque a professora mandou gritar",
+        "Porque o microfone estava ligado",
+        "Porque estava sozinha"
+       ],
+       "answer": "Porque a chuva fazia muito barulho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a leitura do poema combinou tanto com aquele momento?",
+       "options": [
+        "Porque o poema falava justamente de chuva",
+        "Porque o poema era sobre lanternas",
+        "Porque Bia leu cantando",
+        "Porque Tomás fez efeitos de som"
+       ],
+       "answer": "Porque o poema falava justamente de chuva",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a turma ficou em silêncio por um momento antes de aplaudir Bia?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: Quintal de chuva",
+     "synopsis": "Chega a noite do sarau. Bia lê o poema da avó diante das famílias e descobre o que a avó sentia quando lia no rádio.",
+     "text": "A noite do sarau amanheceu limpa. Quer dizer, anoiteceu limpa: depois da tempestade da véspera, o céu estava cheio de estrelas, e o pátio cheirava a terra molhada.\nAs lâmpadas penduradas entre as árvores brilhavam de novo. As cadeiras estavam arrumadas em semicírculo, e as famílias foram chegando aos poucos, com casacos, câmeras e muita conversa. Dona Graça, a vizinha dos bolos, apareceu com uma travessa de bolo de fubá para dividir com todos.\nA avó Zuleica sentou-se na segunda fila, de vestido florido e com um lenço amarelo no pescoço. Bia acenou para ela de longe e sentiu o estômago dar uma cambalhota.\n— Nervosa? — perguntou Tomás, ajeitando uma coroa de papelão na cabeça. Ele tinha decidido que o narrador do conto precisava de um figurino.\n— Muito — confessou Bia.\n— Eu também. Mas lembra: cara de formiga corajosa.\nO sarau começou. Luana leu o poema do mar e balançou como onda, e a plateia balançou junto. Rafael leu a carta para o avô, que estava sentado na primeira fila e chorou sem disfarçar. Tomás leu o conto do dragão, e as gargalhadas foram tão altas que o cachorro do vizinho latiu do outro lado do muro.\nEntão a professora Celina chamou:\n— Agora, Bia, com um poema muito especial.\nBia caminhou até a marca de fita crepe. As pernas ainda tremiam um pouco, mas ela já sabia o que fazer. Plantou os pés. Segurou o caderno azul na altura do peito. Respirou fundo, até sentir a barriga encher.\n— Este poema se chama “Quintal de Chuva” — disse ela. — Quem escreveu foi a minha avó.\nUm murmúrio de surpresa percorreu a plateia. Na segunda fila, a avó Zuleica levou a mão à boca.\nBia começou a ler. Respeitou as vírgulas, as pausas curtas. Respirou nos pontos finais. Nas reticências, deixou a frase pendurada no ar e levantou os olhos para o público. No verso marcado com o coraçãozinho de lápis, deixou a voz ficar mais suave, quase um carinho. Ela já não pensava em errar. Pensava apenas na chuva, no barro, no quintal da infância da avó, que ela nunca tinha visto, mas que agora conseguia enxergar inteirinho.\nQuando o último verso terminou, o pátio inteiro ficou em silêncio por um segundo. Depois, os aplausos vieram, fortes e demorados. Algumas pessoas ficaram de pé. Tomás assobiou tão alto que a coroa de papelão caiu.\nDepois do sarau, entre pedaços de bolo de fubá, a avó Zuleica abraçou Bia com força.\n— Sabe o que eu sentia quando lia no rádio? — perguntou ela, com os olhos molhados. — Sentia que as palavras saíam de mim e iam morar um pouquinho na casa de cada pessoa que estava ouvindo.\nBia pensou por um momento.\n— Acho que hoje eu senti isso também.\nNa saída, a professora Celina distribuiu uma folha com a pergunta: “Quem quer participar do próximo sarau?”. Ao lado do nome de Tomás, havia um desenho de dragão. Bia pegou a caneta, escreveu o próprio nome com letra caprichada e, ao lado, desenhou uma pequena gota de chuva.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como estava o céu na noite do sarau?",
+       "options": [
+        "Limpo e cheio de estrelas",
+        "Coberto de nuvens escuras",
+        "Com uma chuva fina",
+        "Com neblina"
+       ],
+       "answer": "Limpo e cheio de estrelas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que bolo dona Graça levou para o sarau?",
+       "options": [],
+       "answer": "bolo de fubá",
+       "accept": [
+        "fubá",
+        "de fubá"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que figurino Tomás usou para ler o conto?",
+       "options": [
+        "Uma coroa de papelão",
+        "Uma capa de dragão",
+        "Um chapéu de formiga",
+        "Uma máscara"
+       ],
+       "answer": "Uma coroa de papelão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Bia contou ao público antes de ler o poema?",
+       "options": [
+        "Que o poema tinha sido escrito pela avó dela",
+        "Que ela tinha escrito o poema na véspera",
+        "Que o poema era de um livro famoso",
+        "Que ia ler outro texto"
+       ],
+       "answer": "Que o poema tinha sido escrito pela avó dela",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Bia leu o verso marcado com o coraçãozinho?",
+       "options": [
+        "Com a voz mais suave, quase um carinho",
+        "Gritando bem alto",
+        "Bem rápido",
+        "Pulando esse verso"
+       ],
+       "answer": "Com a voz mais suave, quase um carinho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a avó, o que ela sentia quando lia no rádio?",
+       "options": [
+        "Que as palavras iam morar um pouco na casa de cada ouvinte",
+        "Que ninguém estava ouvindo",
+        "Que precisava ler mais rápido",
+        "Que queria parar de ler"
+       ],
+       "answer": "Que as palavras iam morar um pouco na casa de cada ouvinte",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que Bia mudou ao longo da história?",
+       "options": [
+        "Ela se inscreveu para o próximo sarau",
+        "Ela decidiu nunca mais ler em voz alta",
+        "Ela trocou de escola",
+        "Ela deu o caderno para Tomás"
+       ],
+       "answer": "Ela se inscreveu para o próximo sarau",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Bia desenhou uma gota de chuva ao lado do próprio nome?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
