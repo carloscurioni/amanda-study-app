@@ -2037,7 +2037,1900 @@
      "errors": []
     }
    ]
+  },
+  "pt": {
+   "topic": "Gênero textual: resenha crítica",
+   "questions": [
+    {
+     "id": "rh8axr8koe4m7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que é uma resenha crítica?",
+     "options": [
+      "Um texto que apresenta e avalia uma obra",
+      "Um texto que só conta o final de uma história",
+      "Uma lista de personagens de um livro",
+      "Uma propaganda paga pela editora"
+     ],
+     "answer": "Um texto que apresenta e avalia uma obra",
+     "accept": [],
+     "hint": "Pense na palavra “crítica”: além de apresentar, o autor faz o quê?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9pi7fc1fddwno",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual parte da resenha apresenta o enredo de forma breve, sem contar o final?",
+     "options": [
+      "Sinopse",
+      "Recomendação",
+      "Ficha técnica",
+      "Conclusão"
+     ],
+     "answer": "Sinopse",
+     "accept": [],
+     "hint": "É a parte que situa o leitor na história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vyrz2ysxj9l8",
+     "subject": "pt",
+     "type": "short",
+     "q": "Como se chama a parte da resenha em que o autor diz se indica ou não a obra e para quem?",
+     "options": [],
+     "answer": "recomendação",
+     "accept": [
+      "recomendacao",
+      "indicação",
+      "indicacao"
+     ],
+     "hint": "Geralmente aparece no final do texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k0crnr13inp57",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destes dados costuma aparecer na apresentação da obra em uma resenha de livro?",
+     "options": [
+      "Título, autor, editora e ano",
+      "A opinião dos vizinhos do autor",
+      "O preço do papel usado",
+      "O número de telefone da livraria"
+     ],
+     "answer": "Título, autor, editora e ano",
+     "accept": [],
+     "hint": "São informações que identificam a obra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fsy6yv1c5jodw",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual trecho é uma APRECIAÇÃO (opinião) e não apenas uma informação?",
+     "options": [
+      "A trilha sonora deixa as cenas de suspense ainda mais envolventes.",
+      "O filme tem 1 hora e 50 minutos de duração.",
+      "A história se passa em uma cidade do litoral.",
+      "O livro tem doze capítulos."
+     ],
+     "answer": "A trilha sonora deixa as cenas de suspense ainda mais envolventes.",
+     "accept": [],
+     "hint": "Procure a frase que mostra um julgamento de valor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n37r19k29qwk",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra é um adjetivo avaliativo, típico de resenhas?",
+     "options": [
+      "previsível",
+      "capítulo",
+      "editora",
+      "página"
+     ],
+     "answer": "previsível",
+     "accept": [],
+     "hint": "Qual delas expressa uma opinião sobre a obra?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh4h4fcb3ofpw",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a principal diferença entre um resumo e uma resenha crítica?",
+     "options": [
+      "A resenha inclui a avaliação de quem escreve",
+      "O resumo é sempre mais longo",
+      "A resenha nunca fala do enredo",
+      "O resumo traz a opinião do autor do texto"
+     ],
+     "answer": "A resenha inclui a avaliação de quem escreve",
+     "accept": [],
+     "hint": "Um dos dois textos é neutro; o outro, não.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryksqu91bys7wl",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a ordem mais comum das partes de uma resenha?",
+     "options": [
+      "Apresentação da obra, sinopse, avaliação, recomendação",
+      "Recomendação, avaliação, sinopse, apresentação",
+      "Avaliação, recomendação, apresentação, sinopse",
+      "Sinopse, recomendação, apresentação, avaliação"
+     ],
+     "answer": "Apresentação da obra, sinopse, avaliação, recomendação",
+     "accept": [],
+     "hint": "O leitor precisa conhecer a obra antes de ler a opinião sobre ela.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlufzym114yi1l",
+     "subject": "pt",
+     "type": "short",
+     "q": "Uma boa resenha evita revelar qual parte da história, para não estragar a surpresa do leitor?",
+     "options": [],
+     "answer": "final",
+     "accept": [
+      "o final",
+      "desfecho",
+      "o desfecho"
+     ],
+     "hint": "Pense no famoso “spoiler”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ozmq4cbt4aw",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que torna a avaliação de uma resenha mais convincente?",
+     "options": [
+      "Justificar as opiniões com exemplos da obra",
+      "Usar só pontos de exclamação",
+      "Repetir “é bom” várias vezes",
+      "Falar mal do autor como pessoa"
+     ],
+     "answer": "Justificar as opiniões com exemplos da obra",
+     "accept": [],
+     "hint": "Opinião forte precisa de argumentos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhrotik18ywhay",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em “O cenário é bonito; no entanto, o ritmo é lento”, a expressão “no entanto” indica:",
+     "options": [
+      "oposição",
+      "causa",
+      "tempo",
+      "adição"
+     ],
+     "answer": "oposição",
+     "accept": [],
+     "hint": "O que acontece entre a primeira e a segunda ideia?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c7qjj3136895r",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Onde as resenhas críticas costumam ser publicadas?",
+     "options": [
+      "Em jornais, revistas e sites",
+      "Em bulas de remédio",
+      "Em certidões",
+      "Em manuais de instrução"
+     ],
+     "answer": "Em jornais, revistas e sites",
+     "accept": [],
+     "hint": "Pense em lugares onde se fala de livros, filmes e séries.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxq1vxk1qxyd6g",
+     "subject": "pt",
+     "type": "short",
+     "q": "Como se chama o grupo de leitores a quem a resenha se dirige ou para quem a obra é recomendada?",
+     "options": [],
+     "answer": "público-alvo",
+     "accept": [
+      "publico-alvo",
+      "público alvo",
+      "publico alvo"
+     ],
+     "hint": "É uma expressão composta com hífen.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rprhsrsglpcqf",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase de recomendação está mais completa?",
+     "options": [
+      "Indico o livro para quem gosta de mistério, pois as pistas prendem o leitor até o fim.",
+      "Leiam.",
+      "É legal.",
+      "Não sei se indico."
+     ],
+     "answer": "Indico o livro para quem gosta de mistério, pois as pistas prendem o leitor até o fim.",
+     "accept": [],
+     "hint": "Uma boa recomendação diz para quem e por quê.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y4gky9w2vek1",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva uma frase de apreciação NEGATIVA sobre um filme imaginário, justificando sua opinião com um exemplo.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use um adjetivo avaliativo e um conectivo como “porque” ou “pois”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yxng0r1ms613b",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva um pequeno parágrafo de recomendação de um livro ou filme de que você gostou, dizendo para que público ele é indicado e por quê.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Lembre: para quem e por quê, sem contar o final.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "O menino no espelho (Fernando Sabino): memória e imaginação",
+   "questions": [
+    {
+     "id": "r1f0prmo2kul8b",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quem é o autor de “O menino no espelho”?",
+     "options": [
+      "Fernando Sabino",
+      "Monteiro Lobato",
+      "Ziraldo",
+      "Machado de Assis"
+     ],
+     "answer": "Fernando Sabino",
+     "accept": [],
+     "hint": "É um escritor mineiro, conhecido também por suas crônicas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bcpzzg19bqbjr",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em uma narrativa de memória, quem geralmente conta a história?",
+     "options": [
+      "Um narrador adulto que relembra a própria infância",
+      "Um narrador que nunca participou dos fatos",
+      "Um animal falante",
+      "Vários personagens em forma de diálogo teatral"
+     ],
+     "answer": "Um narrador adulto que relembra a própria infância",
+     "accept": [],
+     "hint": "Memória é lembrança de algo vivido por quem conta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlhxr9ctz849",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em que pessoa é narrado “O menino no espelho”?",
+     "options": [
+      "Primeira pessoa",
+      "Segunda pessoa",
+      "Terceira pessoa observadora",
+      "Não há narrador"
+     ],
+     "answer": "Primeira pessoa",
+     "accept": [],
+     "hint": "O narrador usa “eu” ao contar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qxngt81ofshgs",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Qual é o nome do duplo que aparece no espelho em “O menino no espelho”?",
+     "options": [],
+     "answer": "Odnanref",
+     "accept": [
+      "o Odnanref"
+     ],
+     "hint": "Pense no que o espelho faz com as imagens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrgvzo11lkt1c",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O nome do duplo, Odnanref, é formado como?",
+     "options": [
+      "É o nome Fernando escrito de trás para frente",
+      "É o nome de um amigo da escola",
+      "É uma palavra em inglês",
+      "É o sobrenome do pai do menino"
+     ],
+     "answer": "É o nome Fernando escrito de trás para frente",
+     "accept": [],
+     "hint": "Pense no que um espelho faz com a imagem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pyntv4t16aqw",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em que cidade se passa a infância narrada no livro?",
+     "options": [
+      "Belo Horizonte",
+      "Recife",
+      "Porto Alegre",
+      "Manaus"
+     ],
+     "answer": "Belo Horizonte",
+     "accept": [],
+     "hint": "É a capital do estado onde o autor nasceu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqgz03m1ulqznk",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Fernando Sabino nasceu em qual estado brasileiro?",
+     "options": [
+      "Minas Gerais",
+      "Bahia",
+      "Paraná",
+      "Pará"
+     ],
+     "answer": "Minas Gerais",
+     "accept": [],
+     "hint": "O estado cuja capital é Belo Horizonte.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rnp73ifkg8vl",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na literatura, o que é um “duplo”?",
+     "options": [
+      "Uma figura que é cópia ou reflexo de um personagem",
+      "Um capítulo repetido",
+      "Um narrador que mente",
+      "Um final com duas versões"
+     ],
+     "answer": "Uma figura que é cópia ou reflexo de um personagem",
+     "accept": [],
+     "hint": "Pense em “gêmeo”, “sósia”, “reflexo”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru3qet5z9urpj",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que o espelho é um bom símbolo para falar de identidade?",
+     "options": [
+      "Porque nos mostra a nós mesmos, mas de forma invertida",
+      "Porque é feito de vidro caro",
+      "Porque só aparece à noite",
+      "Porque esconde o rosto de quem olha"
+     ],
+     "answer": "Porque nos mostra a nós mesmos, mas de forma invertida",
+     "accept": [],
+     "hint": "O reflexo é igual a você... mas não totalmente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qcvo7vld6i8w",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual tempo verbal predomina em narrativas de memória?",
+     "options": [
+      "Pretérito (passado)",
+      "Futuro",
+      "Imperativo",
+      "Presente do subjuntivo"
+     ],
+     "answer": "Pretérito (passado)",
+     "accept": [],
+     "hint": "O narrador conta algo que já aconteceu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rehbgn41pyvfp6",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual frase tem uma marca típica de narrativa de memória?",
+     "options": [
+      "Lembro-me de que, naquele tempo, a rua ainda era de terra.",
+      "Amanhã vou comprar pão.",
+      "Feche a porta, por favor.",
+      "A água ferve a 100 °C ao nível do mar."
+     ],
+     "answer": "Lembro-me de que, naquele tempo, a rua ainda era de terra.",
+     "accept": [],
+     "hint": "Procure verbos e expressões que voltam ao passado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5924p6zv4bir",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que a presença de um narrador adulto acrescenta à narrativa de memória?",
+     "options": [
+      "Reflexões do presente sobre o que viveu quando criança",
+      "Apenas descrições científicas",
+      "Uma linguagem só de bebê",
+      "Instruções para o leitor"
+     ],
+     "answer": "Reflexões do presente sobre o que viveu quando criança",
+     "accept": [],
+     "hint": "Ele vê o passado com olhos de hoje.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwp36dz1va3puf",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que, em narrativas de memória, alguns episódios podem parecer fantásticos?",
+     "options": [
+      "Porque o adulto recria a infância misturando lembrança e imaginação",
+      "Porque o autor copiou contos de fadas",
+      "Porque são notícias de jornal",
+      "Porque o leitor deve acreditar que tudo é real"
+     ],
+     "answer": "Porque o adulto recria a infância misturando lembrança e imaginação",
+     "accept": [],
+     "hint": "Pense no tema da semana: memória e imaginação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1smby1t1r8scpq",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quando o duplo assume tarefas que o menino não quer fazer, o que isso pode simbolizar?",
+     "options": [
+      "O desejo de fugir das obrigações e de ser outra pessoa",
+      "Que o menino tinha um irmão gêmeo real",
+      "Que os espelhos são perigosos",
+      "Que o menino estava doente"
+     ],
+     "answer": "O desejo de fugir das obrigações e de ser outra pessoa",
+     "accept": [],
+     "hint": "O duplo pode representar algo que está dentro do próprio menino.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dm6lqj1vk7ib4",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Por que você acha que o autor escolheu inverter o nome do protagonista para criar o duplo?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Relacione o nome invertido ao que o espelho faz.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pno3vc1bbwnt8",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Se você tivesse um duplo por um dia, o que ele faria no seu lugar? Explique como isso se relaciona com o tema da imaginação.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em desejos e medos que um duplo poderia revelar.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "sci": {
+   "topic": "Energy efficiency and domestic fuel bills",
+   "questions": [
+    {
+     "id": "r1ehp3on1rezi6e",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which equation is correct for efficiency?",
+     "options": [
+      "efficiency = useful energy output ÷ total energy input",
+      "efficiency = total energy input ÷ useful energy output",
+      "efficiency = wasted energy × useful energy",
+      "efficiency = power × time"
+     ],
+     "answer": "efficiency = useful energy output ÷ total energy input",
+     "accept": [],
+     "hint": "Efficiency compares what you get out that is useful with what you put in.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r133vnvy59qr7v",
+     "subject": "sci",
+     "type": "num",
+     "q": "A lamp is supplied with 100 J of energy and gives out 20 J as light. What is its efficiency as a percentage?",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Divide useful output by total input, then multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gce9rdg7le83",
+     "subject": "sci",
+     "type": "num",
+     "q": "A kettle takes in 2000 J and transfers 1800 J to the water. What is its efficiency as a percentage?",
+     "options": [],
+     "answer": "90",
+     "accept": [],
+     "hint": "Useful ÷ total × 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r151j2w01q55gto",
+     "subject": "sci",
+     "type": "num",
+     "q": "A motor has an efficiency of 0.25. It is supplied with 400 J. How much useful energy (in J) does it transfer?",
+     "options": [],
+     "answer": "100",
+     "accept": [],
+     "hint": "Rearrange: useful = efficiency × input.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb6xjjx1t0kwdy",
+     "subject": "sci",
+     "type": "num",
+     "q": "A device is supplied with 500 J and transfers 350 J usefully. How much energy (in J) is wasted?",
+     "options": [],
+     "answer": "150",
+     "accept": [],
+     "hint": "Total input = useful + wasted.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7mxbs116vup49",
+     "subject": "sci",
+     "type": "short",
+     "q": "Into which store is most of the wasted energy from a filament lamp transferred?",
+     "options": [],
+     "answer": "thermal",
+     "accept": [
+      "thermal store",
+      "heat",
+      "thermal energy",
+      "the thermal store of the surroundings",
+      "surroundings"
+     ],
+     "hint": "Touch an old filament bulb after it has been on... carefully!",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsao2is1wchli5",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why can no device have an efficiency greater than 100%?",
+     "options": [
+      "Energy cannot be created",
+      "Devices are too small",
+      "Electricity is too expensive",
+      "Light travels too fast"
+     ],
+     "answer": "Energy cannot be created",
+     "accept": [],
+     "hint": "Think about the principle of conservation of energy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf6y2l715d3v4j",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In a Sankey diagram, what does the width of each arrow represent?",
+     "options": [
+      "The amount of energy",
+      "The time taken",
+      "The speed of the device",
+      "The cost of the device"
+     ],
+     "answer": "The amount of energy",
+     "accept": [],
+     "hint": "Wider arrows mean more of something.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wi9voncqt9xr",
+     "subject": "sci",
+     "type": "mc",
+     "q": "A kilowatt-hour (kWh) is a unit of:",
+     "options": [
+      "energy",
+      "power",
+      "current",
+      "voltage"
+     ],
+     "answer": "energy",
+     "accept": [],
+     "hint": "Power multiplied by time gives this quantity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8peiaah8tel",
+     "subject": "sci",
+     "type": "num",
+     "q": "A 2 kW heater is switched on for 3 hours. How many kWh of energy does it transfer?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Energy (kWh) = power (kW) × time (h).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w4l19m10zmpb",
+     "subject": "sci",
+     "type": "num",
+     "q": "A 100 W lamp is left on for 10 hours. How many kWh of energy does it transfer?",
+     "options": [],
+     "answer": "1",
+     "accept": [],
+     "hint": "Convert watts to kilowatts first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14h7shf1anct6h",
+     "subject": "sci",
+     "type": "num",
+     "q": "Electricity costs 30p per kWh. How much (in pence) does it cost to use 5 kWh?",
+     "options": [],
+     "answer": "150",
+     "accept": [],
+     "hint": "Cost = number of units × price per unit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xr9vj473l3lf",
+     "subject": "sci",
+     "type": "num",
+     "q": "A 1.5 kW fan heater runs for 4 hours. Electricity costs 28p per kWh. What is the cost in pence?",
+     "options": [],
+     "answer": "168",
+     "accept": [],
+     "hint": "First find the energy in kWh, then multiply by the price.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19aydye9oustr",
+     "subject": "sci",
+     "type": "num",
+     "q": "An electricity meter reads 12 450 kWh at the start of a month and 12 730 kWh at the end. How many kWh were used?",
+     "options": [],
+     "answer": "280",
+     "accept": [],
+     "hint": "Subtract the earlier reading from the later one.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y2gmcgdjejjp",
+     "subject": "sci",
+     "type": "num",
+     "q": "A family replaces a 60 W bulb with a 10 W LED. The bulb is used for 150 hours. How many kWh are saved? Give your answer to 1 decimal place.",
+     "options": [],
+     "answer": "7.5",
+     "accept": [],
+     "hint": "Find the difference in power in kW, then multiply by the time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs0txw1md1r62",
+     "subject": "sci",
+     "type": "open",
+     "q": "Suggest two ways a family could reduce its electricity bill, and explain how each one saves energy.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about more efficient appliances and how long things are switched on.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa": {
+   "topic": "Celebrations: quinceañeras and family events",
+   "questions": [
+    {
+     "id": "r14gm2o61u9e1lh",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does “la boda” mean?",
+     "options": [
+      "the wedding",
+      "the birthday",
+      "the party",
+      "the invitation"
+     ],
+     "answer": "the wedding",
+     "accept": [],
+     "hint": "It is a celebration where two people get married.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra7z9n4mopvco",
+     "subject": "spa",
+     "type": "mc",
+     "q": "A quinceañera traditionally celebrates a girl's:",
+     "options": [
+      "15th birthday",
+      "graduation",
+      "first day at school",
+      "wedding anniversary"
+     ],
+     "answer": "15th birthday",
+     "accept": [],
+     "hint": "Look at the number hidden in the word “quince”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3tiarj1w1fs7m",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: to invite",
+     "options": [],
+     "answer": "invitar",
+     "accept": [],
+     "hint": "It looks very similar to the English verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcofexgez3f5m",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: the party",
+     "options": [],
+     "answer": "la fiesta",
+     "accept": [
+      "fiesta"
+     ],
+     "hint": "Remember the article — it is a feminine noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r79c4mfmsoq4a",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct preterite form: “El sábado pasado (yo) ___ mi cumpleaños.” (celebrar)",
+     "options": [
+      "celebré",
+      "celebro",
+      "celebraré",
+      "celebraba"
+     ],
+     "answer": "celebré",
+     "accept": [],
+     "hint": "“El sábado pasado” means the action is finished — and check the accent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pv7y6w1xvfbc3",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb: “El año pasado mi prima ___ su quinceañera.” (celebrar)",
+     "options": [
+      "celebró",
+      "celebré",
+      "celebrará",
+      "celebramos"
+     ],
+     "answer": "celebró",
+     "accept": [],
+     "hint": "The subject is “mi prima” (she) and the time is in the past.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn9m7t21wcodkx",
+     "subject": "spa",
+     "type": "short",
+     "q": "Complete with the correct form of “ir” (near future) and write only the missing word: “Mañana (yo) ___ a bailar en la fiesta.”",
+     "options": [],
+     "answer": "voy",
+     "accept": [],
+     "hint": "Near future: ir + a + infinitive. Which form goes with “yo”?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru2c3uzhhhdp0",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct future form: “Para la boda, nosotros ___ a toda la familia.” (invitar)",
+     "options": [
+      "invitaremos",
+      "invitamos",
+      "invitaron",
+      "invitaré"
+     ],
+     "answer": "invitaremos",
+     "accept": [],
+     "hint": "The subject is “nosotros” and the action has not happened yet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfbjekajsi519",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which time expression refers to the PAST?",
+     "options": [
+      "el fin de semana pasado",
+      "el próximo verano",
+      "mañana",
+      "dentro de dos semanas"
+     ],
+     "answer": "el fin de semana pasado",
+     "accept": [],
+     "hint": "Look for the word that means “last”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qviv06d899s0",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does “Fuimos a la boda de mi tío” mean?",
+     "options": [
+      "We went to my uncle's wedding.",
+      "We are going to my uncle's wedding.",
+      "My uncle went to our party.",
+      "We will invite my uncle to the wedding."
+     ],
+     "answer": "We went to my uncle's wedding.",
+     "accept": [],
+     "hint": "“Fuimos” is a past form of the verb “ir”.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5zq5md3apg3j",
+     "subject": "spa",
+     "type": "mc",
+     "q": "In “Llevé un vestido azul”, which tense is used?",
+     "options": [
+      "preterite",
+      "present",
+      "future",
+      "near future"
+     ],
+     "answer": "preterite",
+     "accept": [],
+     "hint": "The ending “-é” on an -ar verb is a clue.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rypihg71c0i00q",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite form of “bailar” for “ellos”: “Ellos ___ toda la noche.”",
+     "options": [],
+     "answer": "bailaron",
+     "accept": [],
+     "hint": "Preterite -ar ending for ellos/ellas: -aron.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a19rxinml3us",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which dance is a well-known tradition at many quinceañera parties?",
+     "options": [
+      "el vals",
+      "el tango",
+      "la samba",
+      "el ballet"
+     ],
+     "answer": "el vals",
+     "accept": [],
+     "hint": "It is a classic ballroom dance in three-four time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k5nq201u8b86v",
+     "subject": "spa",
+     "type": "mc",
+     "q": "At a birthday party, what does “el pastel” mean?",
+     "options": [
+      "the cake",
+      "the candle",
+      "the present",
+      "the guest"
+     ],
+     "answer": "the cake",
+     "accept": [],
+     "hint": "It is often eaten after singing.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxicoct16e8khn",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two sentences in Spanish describing a celebration you went to in the past. Use the preterite.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Say where you went, who was there and what you did (fui, comí, bailé…).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdro1tj1qov8sc",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two sentences in Spanish about how you will celebrate your next birthday. Use the future or “ir a + infinitive”.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start with “Para mi próximo cumpleaños…”.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Verão do Outro Lado do Vidro",
+   "premise": "Já adulto, Davi relembra o verão em que, aos onze anos, passou as férias na casa da avó numa cidadezinha do interior e descobriu que seu reflexo no velho espelho do corredor tinha vontade própria. Entre memória e imaginação, cada episódio mostra como um duplo pode ajudar um menino a descobrir quem ele é.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O espelho do corredor",
+     "synopsis": "Davi, já adulto, relembra o verão em que, aos onze anos, foi passar as férias na casa da avó e viu seu reflexo piscar sozinho.",
+     "text": "Hoje, quando passo diante de qualquer espelho, ainda me lembro daquele verão. Eu tinha onze anos e meus pais me mandaram passar as férias inteiras na casa da minha avó Lurdes, em Vargem do Sino, uma cidadezinha onde o ônibus chegava só duas vezes por dia e o relógio da igreja vivia atrasado.\nA casa era comprida, cheia de portas que rangiam, e tinha um corredor escuro que ligava a sala à cozinha. No meio desse corredor ficava um espelho enorme, de moldura dourada e descascada, mais velho do que a própria avó. Ela dizia que ele tinha vindo de navio, embrulhado em cobertores, mas a avó gostava de inventar origens nobres para as coisas mais simples.\nNaquela época, eu ainda não conhecia ninguém na cidade. Meus amigos estavam longe, a televisão da avó só pegava um canal, cheio de chuviscos, e as tardes pareciam ter o dobro de horas. Eu andava pela casa abrindo gavetas, contando as tábuas do assoalho e espiando o quintal, onde as galinhas ciscavam sem pressa nenhuma. Era um tédio tão grande que eu chegava a ouvir o tique-taque do relógio da sala de qualquer cômodo.\nNa primeira noite, eu fui buscar um copo de água e parei diante do espelho. Estava cansado da viagem, com o cabelo grudado de suor e a camiseta do avesso. Fiz uma careta para mim mesmo, como qualquer menino faria. O menino do espelho fez a mesma careta. Até aí, nada de estranho.\nEntão eu me virei para ir embora e, com o canto do olho, vi: o reflexo continuou parado, olhando para mim. E piscou. Só um olho, devagar, como quem divide um segredo.\nLembro que o copo quase escorregou da minha mão. Voltei a encarar o espelho, e lá estava ele, imitando cada movimento meu, obediente como todo reflexo deve ser. Levantei o braço direito; ele levantou o esquerdo. Abri a boca; ele abriu também. Fiquei ali um tempão, esperando que errasse de novo. Ele não errou.\nHoje, já adulto, não sei dizer se aquilo aconteceu mesmo ou se foi o cansaço de um menino com saudade de casa. A memória é uma gaveta bagunçada: a gente guarda as coisas de um jeito e, anos depois, encontra de outro. Mas sei que, naquela noite, voltei para a cama com o coração disparado e fiquei ouvindo os grilos lá fora, pensando que talvez houvesse alguém do outro lado do vidro.\nNa manhã seguinte, a avó me serviu café com leite e pão de queijo. Perguntou se eu tinha dormido bem. Eu disse que sim. Pensei em contar sobre o espelho, mas imaginei a cara dela, meio rindo, meio preocupada, dizendo que menino da cidade grande tem a cabeça cheia de televisão.\nEntão decidi guardar o segredo. Afinal, se o menino do espelho tinha piscado só para mim, era porque o assunto era entre nós dois.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem conta a história?",
+       "options": [
+        "Davi, já adulto, relembrando a infância",
+        "A avó Lurdes",
+        "Um vizinho da cidade",
+        "O menino do espelho"
+       ],
+       "answer": "Davi, já adulto, relembrando a infância",
+       "accept": [],
+       "hint": "Repare em expressões como “Hoje, já adulto”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos anos Davi tinha naquele verão?",
+       "options": [],
+       "answer": "onze",
+       "accept": [
+        "11",
+        "onze anos",
+        "11 anos"
+       ],
+       "hint": "A informação está no começo do texto.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama a cidade da avó?",
+       "options": [],
+       "answer": "Vargem do Sino",
+       "accept": [
+        "Vargem do sino"
+       ],
+       "hint": "O nome aparece no primeiro parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde ficava o espelho?",
+       "options": [
+        "No corredor entre a sala e a cozinha",
+        "No quarto de Davi",
+        "No banheiro",
+        "Na varanda"
+       ],
+       "answer": "No corredor entre a sala e a cozinha",
+       "accept": [],
+       "hint": "Releia a descrição da casa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o reflexo fez de estranho?",
+       "options": [
+        "Continuou parado e piscou um olho",
+        "Saiu andando pela casa",
+        "Falou o nome de Davi",
+        "Desapareceu do espelho"
+       ],
+       "answer": "Continuou parado e piscou um olho",
+       "accept": [],
+       "hint": "Aconteceu quando Davi se virou para ir embora.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o narrador compara a memória a quê?",
+       "options": [
+        "Uma gaveta bagunçada",
+        "Um rio calmo",
+        "Uma fotografia nítida",
+        "Um livro de receitas"
+       ],
+       "answer": "Uma gaveta bagunçada",
+       "accept": [],
+       "hint": "Procure a comparação no parágrafo em que ele fala de “hoje”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o narrador adulto diz que não sabe se aquilo aconteceu mesmo?",
+       "options": [
+        "Porque lembrança e imaginação se misturam com o tempo",
+        "Porque a avó lhe disse que era mentira",
+        "Porque ele nunca esteve naquela casa",
+        "Porque o espelho foi vendido"
+       ],
+       "answer": "Porque lembrança e imaginação se misturam com o tempo",
+       "accept": [],
+       "hint": "Pense no que ele diz sobre cansaço, saudade e memória.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Davi decidiu não contar à avó o que viu no espelho?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que ele imaginou que ela diria e no “segredo entre os dois”.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O milho debulhado",
+     "synopsis": "O reflexo se oferece para fazer a tarefa de Davi enquanto ele vai ao rio, e deixa uma assinatura curiosa.",
+     "text": "Durante três dias, o menino do espelho se comportou como qualquer reflexo bem-educado. Eu passava pelo corredor dez, vinte vezes, e ele só me imitava. Comecei a achar que tinha sonhado.\nNo quarto dia, a avó me entregou uma bacia cheia de espigas e um banquinho. “Debulha esse milho todo, que amanhã é dia de fazer pamonha”, disse ela, e foi para o quintal cuidar das galinhas. Eram umas trinta espigas. Do lado de fora, os meninos da rua gritavam meu nome, chamando para nadar no rio.\nOlhei para aquela montanha de espigas e calculei que levaria a tarde inteira. Meus dedos já doíam só de imaginar. Tentei debulhar a primeira com pressa, girando a espiga entre as mãos como a avó fazia, mas os grãos espirravam para todos os lados e caíam no chão, menos na bacia. Lá fora, os gritos ficavam mais altos, e depois mais distantes, como se a turma estivesse indo embora sem mim.\nArrastei a bacia até o corredor, só para ter onde reclamar sozinho. Sentei de frente para o espelho e falei, mais para mim do que para ele: “Bem que você podia fazer isso no meu lugar.”\nO reflexo sorriu. Eu não estava sorrindo.\nDepois, sem pressa, ele estendeu a mão, como quem pede uma espiga. Fiquei paralisado. Então, com a coragem que só aparece quando a gente quer muito fugir de uma obrigação, encostei uma espiga no vidro. Ela não bateu no espelho: atravessou, macia, como se entrasse na água. Do outro lado, o menino a segurou e começou a debulhar.\nNão pensei duas vezes. Empurrei a bacia inteira para dentro do vidro, peguei meu calção e corri para o rio.\nFoi uma tarde perfeita. Pulei da pedra mais alta, apostei corrida com o Tito, filho da vizinha, e voltei com o nariz queimado de sol. Só quando avistei o portão da avó foi que senti um frio na barriga. E se o milho não estivesse pronto?\nEstava. A bacia esperava no corredor, cheia de grãos amarelos, e as espigas peladas estavam empilhadas num canto, todas iguais. A avó, que já tinha voltado do quintal, olhou o trabalho e disse que nunca tinha visto milho tão bem debulhado.\nSó à noite, sozinho, percebi um detalhe. Em cima dos grãos, alguém tinha arrumado alguns deles formando letras: IVAD. Demorei um pouco para entender. Era o meu nome, escrito ao contrário, como aparece num espelho.\nOlhei para o reflexo. Ele estava me imitando, sério, obediente. Mas eu tinha certeza de que, por dentro, estava rindo.\nHoje penso que talvez eu mesmo tenha debulhado aquele milho, morrendo de preguiça, e inventado o resto para tornar a tarde mais bonita. A memória gosta de enfeitar. Mas aquelas quatro letras eu ainda vejo, nítidas, sobre o amarelo dos grãos.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual tarefa a avó deu a Davi?",
+       "options": [
+        "Debulhar o milho",
+        "Lavar a louça",
+        "Varrer o quintal",
+        "Dar comida às galinhas"
+       ],
+       "answer": "Debulhar o milho",
+       "accept": [],
+       "hint": "Era para preparar pamonha.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, para onde Davi foi enquanto o reflexo trabalhava?",
+       "options": [],
+       "answer": "rio",
+       "accept": [
+        "o rio",
+        "ao rio",
+        "para o rio"
+       ],
+       "hint": "Os meninos da rua o chamavam para nadar.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu quando Davi encostou a espiga no espelho?",
+       "options": [
+        "A espiga atravessou o vidro como se entrasse na água",
+        "O espelho rachou",
+        "A espiga caiu no chão",
+        "O reflexo empurrou a espiga de volta"
+       ],
+       "answer": "A espiga atravessou o vidro como se entrasse na água",
+       "accept": [],
+       "hint": "Releia a parte em que ele tem “coragem”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do filho da vizinha com quem Davi apostou corrida?",
+       "options": [],
+       "answer": "Tito",
+       "accept": [],
+       "hint": "Ele aparece no trecho sobre a tarde no rio.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que palavra apareceu formada com os grãos de milho?",
+       "options": [],
+       "answer": "IVAD",
+       "accept": [
+        "Ivad"
+       ],
+       "hint": "Davi demorou para entender que era algo invertido.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que significa a palavra formada com os grãos?",
+       "options": [
+        "O nome de Davi escrito ao contrário",
+        "O nome da cidade",
+        "Uma palavra em outra língua",
+        "O nome da avó"
+       ],
+       "answer": "O nome de Davi escrito ao contrário",
+       "accept": [],
+       "hint": "Pense em como as letras aparecem num espelho.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o narrador sente “um frio na barriga” ao voltar?",
+       "options": [
+        "Tinha medo de que o milho não estivesse pronto",
+        "Estava com frio por causa do rio",
+        "Viu um animal no portão",
+        "Ouviu a avó gritar"
+       ],
+       "answer": "Tinha medo de que o milho não estivesse pronto",
+       "accept": [],
+       "hint": "Ele tinha deixado a tarefa para outra pessoa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o narrador diz que “a memória gosta de enfeitar”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense na dúvida dele sobre quem realmente debulhou o milho.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Do outro lado do vidro",
+     "synopsis": "Davi aceita trocar de lugar com o reflexo por uma tarde e descobre como é o mundo invertido do espelho.",
+     "text": "Depois do milho, o menino do espelho e eu passamos a conversar. Não com palavras: ele não tinha voz. Mas escrevia com o dedo no vidro embaçado, sempre de trás para frente, e eu aprendi a ler depressa. Ele assinava IVAD, e eu passei a chamá-lo assim.\nUm dia, Ivad escreveu: “Troca comigo?”\nEu entendi na hora. Ele queria sair. Queria sentir o sol de verdade, correr na rua de terra, comer a goiabada da avó. E, em troca, eu poderia conhecer o lado de lá.\nPassei a noite inteira virando de um lado para o outro na cama. Imaginava o que haveria do outro lado do vidro: um quintal ao contrário, uma cidade inteira de cabeça para baixo, quem sabe outro menino que, lá, fosse eu. De manhã, comi depressa, quase sem sentir o gosto do pão, e voltei ao corredor antes que a coragem fosse embora. Hesitei. E se eu ficasse preso? Mas a curiosidade, aos onze anos, pesa mais do que o medo.\nEncostei a palma da mão no vidro, ele encostou a dele do outro lado, e trocamos.\nO mundo do espelho era a casa da avó, só que ao contrário. A porta da cozinha ficava à esquerda, o relógio da parede andava para trás, e o retrato do meu avô sorria com o lado errado da boca. Pela janela, vi o rio correndo de volta para a nascente. Até o cheiro era diferente: um cheiro de coisa guardada, de roupa esquecida no armário.\nO mais estranho era o silêncio. Lá dentro não havia grilos, nem rádio, nem galinhas. Eu falava e minha voz não saía. Entendi, então, por que Ivad escrevia em vez de falar.\nFiquei a tarde inteira observando, pelo vidro, o que acontecia do lado de cá. Vi Ivad, com a minha cara e as minhas roupas, comer três fatias de goiabada. Vi a avó passar por ele e fazer um carinho na cabeça dele, achando que era eu. Senti uma pontada de ciúme que não sabia explicar.\nQuando o sol começou a baixar, Ivad voltou ao corredor, ofegante e feliz. Encostamos as mãos e trocamos de novo. O barulho do mundo voltou de uma vez, como quando a gente tira a cabeça de dentro da água.\nNo vidro embaçado, ele escreveu: “Obrigado.” E, embaixo, uma coisa que me deixou pensando a noite inteira: “Aqui fora é bom porque tem você.”\nHoje, adulto, sei que os espelhos não guardam mundos. Mas aprendi, naquela tarde, que ver a própria vida de fora é estranho: a gente percebe o carinho que recebe e nem sempre nota.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Ivad se comunicava com Davi?",
+       "options": [
+        "Escrevendo com o dedo no vidro embaçado",
+        "Falando em voz baixa",
+        "Mandando bilhetes por baixo da porta",
+        "Fazendo desenhos no chão"
+       ],
+       "answer": "Escrevendo com o dedo no vidro embaçado",
+       "accept": [],
+       "hint": "Ele não tinha voz.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Ivad pediu a Davi?",
+       "options": [
+        "Para trocarem de lugar",
+        "Para quebrar o espelho",
+        "Para contar tudo à avó",
+        "Para levá-lo ao rio"
+       ],
+       "answer": "Para trocarem de lugar",
+       "accept": [],
+       "hint": "Ele escreveu uma pergunta curta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual destas coisas era diferente no mundo do espelho?",
+       "options": [
+        "O relógio andava para trás",
+        "A casa tinha piscina",
+        "Era sempre noite",
+        "As pessoas falavam outra língua"
+       ],
+       "answer": "O relógio andava para trás",
+       "accept": [],
+       "hint": "Tudo lá era invertido.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que doce Ivad comeu do lado de cá?",
+       "options": [],
+       "answer": "goiabada",
+       "accept": [
+        "a goiabada"
+       ],
+       "hint": "Ele comeu três fatias.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Davi sentiu quando a avó fez carinho em Ivad?",
+       "options": [
+        "Ciúme",
+        "Alívio",
+        "Raiva da avó",
+        "Sono"
+       ],
+       "answer": "Ciúme",
+       "accept": [],
+       "hint": "Ele diz que não sabia explicar essa “pontada”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o mundo do espelho era silencioso?",
+       "options": [
+        "Lá não havia sons, e a voz de Davi não saía",
+        "Porque todos estavam dormindo",
+        "Porque a avó pediu silêncio",
+        "Porque o rádio estava quebrado"
+       ],
+       "answer": "Lá não havia sons, e a voz de Davi não saía",
+       "accept": [],
+       "hint": "Releia o parágrafo que começa com “O mais estranho”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Davi aprende ao ver sua vida “de fora”?",
+       "options": [
+        "Que recebe carinho e nem sempre percebe",
+        "Que a avó gosta mais de Ivad",
+        "Que é melhor viver no espelho",
+        "Que goiabada faz mal"
+       ],
+       "answer": "Que recebe carinho e nem sempre percebe",
+       "accept": [],
+       "hint": "Leia o último parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "O que você acha que Ivad quis dizer com “Aqui fora é bom porque tem você”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em quem Ivad é e de quem ele depende para existir.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A pipa e a briga",
+     "synopsis": "No festival de pipas, Davi briga com o amigo Tito, e Ivad resolve a situação de um jeito que Davi não conseguiria.",
+     "text": "No último sábado de janeiro, Vargem do Sino fazia o festival de pipas no morro do cruzeiro. Eu e o Tito passamos a semana construindo uma pipa juntos: varetas de bambu, papel de seda vermelho e uma rabiola tão comprida que dava duas voltas no quintal.\nNo dia do festival, o vento estava perfeito. A pipa subiu bonita, e foi o Tito quem segurou a linha na hora em que os jurados passaram. Ganhamos o primeiro lugar. O prêmio era um carretel novo, de madeira envernizada, e o jurado o entregou ao Tito.\nEu fiquei furioso. A ideia da rabiola tinha sido minha. As varetas, fui eu que cortei. Na volta, discutimos no meio da rua. Eu disse coisas feias. Ele disse coisas feias. Cada um foi para sua casa batendo o portão.\nPassei o resto da tarde fingindo que não me importava. Joguei bola sozinho contra o muro, dei milho às galinhas sem que ninguém pedisse, arrumei a gaveta de meias. Nada adiantava. Toda vez que eu fechava os olhos, via o carretel brilhando nas mãos do Tito e ouvia, de novo, as palavras feias que eu tinha dito. O pior é que eu sabia que algumas delas não eram verdade.\nÀ noite, sentei no chão do corredor, emburrado. No vidro, Ivad escreveu: “Você sabe que ele também trabalhou.”\nEu sabia. Mas sabia também que não conseguiria pedir desculpas. As palavras ficavam presas na garganta, duras como caroço de manga.\n“Eu vou”, escreveu Ivad.\nTrocamos de lugar mais uma vez. Do lado de dentro, vi meu reflexo atravessar o corredor e sair pela porta da frente. Não pude ouvir a conversa, mas vi, pela janela invertida, Ivad parado no portão do Tito, falando com calma e gesticulando com a mão esquerda. Vi o Tito cruzar os braços, depois descruzar, depois rir. No fim, os dois se abraçaram.\nQuando trocamos de volta, Ivad escreveu só: “Amanhã vocês vão soltar a pipa juntos. O carretel fica uma semana com cada um.”\nFiquei aliviado e, ao mesmo tempo, envergonhado. Era como se existisse uma versão de mim mais corajosa, mais gentil, que sabia fazer as coisas que eu não sabia. E essa versão morava num espelho.\nNo dia seguinte, o Tito me recebeu sorrindo. “Gostei do que você disse ontem”, falou. “Nunca pensei que você fosse falar aquilo.” Eu sorri de volta, sem saber exatamente o que eu tinha dito.\nHoje, quando lembro dessa história, desconfio que fui eu mesmo até o portão do Tito, tremendo, e que precisei imaginar outro menino para ter coragem. Às vezes, a gente inventa um duplo para fazer aquilo que ainda não acredita ser capaz de fazer.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde acontecia o festival de pipas?",
+       "options": [
+        "No morro do cruzeiro",
+        "Na beira do rio",
+        "Na praça da igreja",
+        "No quintal da avó"
+       ],
+       "answer": "No morro do cruzeiro",
+       "accept": [],
+       "hint": "Está na primeira frase.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o prêmio do primeiro lugar?",
+       "options": [
+        "Um carretel de madeira envernizada",
+        "Uma pipa nova",
+        "Uma medalha de ouro",
+        "Um saco de doces"
+       ],
+       "answer": "Um carretel de madeira envernizada",
+       "accept": [],
+       "hint": "O jurado o entregou a um dos meninos.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi ficou furioso?",
+       "options": [
+        "O prêmio foi entregue só ao Tito",
+        "A pipa caiu no rio",
+        "Perderam o concurso",
+        "A avó não deixou que ele fosse"
+       ],
+       "answer": "O prêmio foi entregue só ao Tito",
+       "accept": [],
+       "hint": "Ele achava que tinha feito boa parte do trabalho.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com que as palavras presas na garganta de Davi são comparadas?",
+       "options": [
+        "Caroço de manga",
+        "Pedra de rio",
+        "Bala de goma",
+        "Nó de corda"
+       ],
+       "answer": "Caroço de manga",
+       "accept": [],
+       "hint": "Procure a comparação no trecho sobre pedir desculpas.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Ivad combinou com o Tito?",
+       "options": [
+        "Que o carretel ficaria uma semana com cada um",
+        "Que Davi ficaria com o carretel",
+        "Que eles nunca mais soltariam pipa",
+        "Que dariam o carretel à avó"
+       ],
+       "answer": "Que o carretel ficaria uma semana com cada um",
+       "accept": [],
+       "hint": "Leia o que Ivad escreveu depois da conversa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com que mão Ivad gesticulava?",
+       "options": [
+        "Com a mão esquerda",
+        "Com a mão direita",
+        "Com as duas mãos",
+        "Não gesticulava"
+       ],
+       "answer": "Com a mão esquerda",
+       "accept": [],
+       "hint": "Lembre que ele é um reflexo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o narrador adulto desconfia sobre esse episódio?",
+       "options": [
+        "Que ele mesmo foi pedir desculpas e imaginou o duplo para ter coragem",
+        "Que o Tito nunca existiu",
+        "Que a avó resolveu a briga",
+        "Que o festival foi cancelado"
+       ],
+       "answer": "Que ele mesmo foi pedir desculpas e imaginou o duplo para ter coragem",
+       "accept": [],
+       "hint": "Releia o último parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Davi sentiu alívio e vergonha ao mesmo tempo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que deu certo e em quem fez a parte difícil.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O que a avó sabia",
+     "synopsis": "Numa noite de chuva, a avó conta uma lembrança de infância que deixa Davi desconfiado de que ela conhece o segredo do espelho.",
+     "text": "Em fevereiro, choveu por quatro dias seguidos. A luz acabava toda tarde, e a avó acendia lamparinas que faziam as sombras dançarem nas paredes. Sem rio, sem rua e sem Tito, eu passava horas no corredor, conversando com Ivad pelo vidro embaçado.\nNaqueles dias, ele me ensinou a jogar uma espécie de jogo da velha ao contrário, em que perdia quem fizesse a linha primeiro. Também desenhávamos mapas de tesouros imaginários, ele do lado de lá, eu do lado de cá, e as linhas se encontravam no meio do vidro. A avó passava, olhava os rabiscos e não dizia nada. Só uma vez comentou que eu estava gastando muito pano para limpar espelho.\nNuma dessas noites, a avó apareceu com duas canecas de chocolate quente e sentou no banquinho ao meu lado. Ficou um tempo olhando o espelho, em silêncio. Depois disse:\n“Sabe que esse espelho já foi da minha mãe? Quando eu era menina, tinha medo de passar por ele à noite.”\nPerguntei por quê. Ela riu.\n“Porque eu achava que havia uma menina lá dentro. Uma menina igualzinha a mim, só que mais corajosa. Ela fazia as coisas que eu não tinha coragem de fazer. Eu chamava ela de Sedrul.”\nSenti o chocolate esfriar na minha mão. Sedrul. Era Lurdes ao contrário.\n“E o que aconteceu com ela?”, perguntei, quase sem voz.\nA avó deu de ombros. “Eu cresci. Um dia, olhei no espelho e vi só eu mesma. Fiquei triste uns dias. Depois entendi que ela não tinha ido embora: tinha vindo morar aqui dentro.” E bateu de leve no próprio peito.\nFicamos calados um tempo, ouvindo a chuva no telhado. Eu queria perguntar se ela sabia de Ivad, mas não perguntei. Tinha medo de que, se eu falasse o nome dele em voz alta, alguma coisa se quebrasse.\nAntes de ir dormir, a avó passou a mão no meu cabelo e disse: “Espelho velho guarda muita coisa, Davi. Mas só devolve o que a gente leva até ele.”\nFiquei acordado pensando nisso. Quando finalmente olhei para o corredor, Ivad tinha escrito no vidro, com letras miúdas: “Ela sabe.”\nHoje, muitos anos depois, fico pensando se a avó realmente teve uma Sedrul ou se inventou aquela história naquela noite, só para mim. Talvez tenha percebido um neto sozinho, falando com o espelho, e tenha escolhido não rir nem ralhar, mas fazer companhia. Seja como for, foi a coisa mais bonita que alguém poderia ter me dito naquele verão.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, por quantos dias choveu sem parar?",
+       "options": [],
+       "answer": "quatro",
+       "accept": [
+        "4",
+        "quatro dias",
+        "4 dias"
+       ],
+       "hint": "Está na primeira frase.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a avó trouxe para Davi?",
+       "options": [
+        "Chocolate quente",
+        "Pão de queijo",
+        "Goiabada",
+        "Café com leite"
+       ],
+       "answer": "Chocolate quente",
+       "accept": [],
+       "hint": "Ela trouxe duas canecas.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de quem o espelho tinha sido antes?",
+       "options": [
+        "Da mãe da avó",
+        "Do avô de Davi",
+        "De um vizinho",
+        "De uma loja da cidade"
+       ],
+       "answer": "Da mãe da avó",
+       "accept": [],
+       "hint": "A avó conta isso logo que se senta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como a avó chamava a menina do espelho?",
+       "options": [],
+       "answer": "Sedrul",
+       "accept": [],
+       "hint": "É um nome que só faz sentido lido de trás para frente.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a avó, para onde a menina do espelho foi?",
+       "options": [
+        "Veio morar dentro dela",
+        "Mudou-se para outra casa",
+        "Ficou presa no vidro",
+        "Foi embora no navio"
+       ],
+       "answer": "Veio morar dentro dela",
+       "accept": [],
+       "hint": "Repare no gesto que a avó faz.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi não perguntou à avó sobre Ivad?",
+       "options": [
+        "Tinha medo de que algo se quebrasse se falasse o nome",
+        "Esqueceu de perguntar",
+        "A avó saiu da sala",
+        "Ivad o proibiu por escrito"
+       ],
+       "answer": "Tinha medo de que algo se quebrasse se falasse o nome",
+       "accept": [],
+       "hint": "Releia o parágrafo do silêncio e da chuva.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o narrador adulto pensa sobre a história da avó?",
+       "options": [
+        "Que talvez ela a tenha inventado para fazer companhia ao neto",
+        "Que ela estava mentindo para assustá-lo",
+        "Que ela nunca falou sobre espelhos",
+        "Que foi o Tito quem contou a história"
+       ],
+       "answer": "Que talvez ela a tenha inventado para fazer companhia ao neto",
+       "accept": [],
+       "hint": "Leia o último parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "O que você acha que a avó quis dizer com “só devolve o que a gente leva até ele”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que Davi “levou” ao espelho naquele verão.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O reflexo comum",
+     "synopsis": "Uma manhã, Ivad não responde mais, e Davi precisa enfrentar sozinho um dia difícil.",
+     "text": "Na última semana de férias, acordei cedo e fui direto ao corredor, como fazia todos os dias. Bati de leve no vidro. Meu reflexo bateu também, exatamente ao mesmo tempo. Soprei o espelho para embaçá-lo e esperei as letras ao contrário. Nada.\nTentei piscar um olho só. O reflexo piscou junto, com o olho certo, sem atraso. Fiz caretas, escrevi perguntas, chamei o nome dele baixinho. O menino do espelho apenas me copiava, perfeito, comum, como o reflexo de qualquer pessoa em qualquer casa.\nPassei a manhã inteira angustiado. Olhei no espelho do banheiro, na janela da sala, até no fundo da panela de alumínio. Em todos, só havia eu.\nPara piorar, era o dia que eu mais temia. A avó tinha marcado de eu ajudar a dona Cida, a vizinha da frente, a carregar caixas para a festa da igreja. Dona Cida era brava, falava alto e reclamava de tudo. Em outros tempos, eu teria pedido a Ivad para ir no meu lugar.\nVoltei ao corredor uma última vez, quase implorando. Encostei a palma da mão no vidro e esperei sentir aquela maciez de água, o caminho para o outro lado. Mas o espelho estava frio e duro, como qualquer espelho. Meu reflexo também encostou a mão, mas era só um gesto copiado, sem vontade própria. Pela primeira vez naquele verão, eu me senti realmente sozinho na casa da avó.\nFiquei parado na porta, com vontade de inventar uma dor de barriga. Então lembrei da pipa, do portão do Tito, do milho arrumado em letras. Lembrei da avó dizendo que a menina do espelho tinha vindo morar dentro dela.\nAtravessei a rua.\nCarreguei caixas a manhã inteira. Dona Cida reclamou do meu jeito de segurar, da minha pressa, do meu tênis sujo. Mas, lá pelas tantas, quando eu equilibrei sozinho uma pilha de pratos sem quebrar nenhum, ela parou e disse: “Esse menino é jeitoso.” E me deu um pedaço de bolo de fubá ainda quente.\nVoltei para casa no fim da tarde, cansado e estranhamente contente. Passei pelo corredor e, por hábito, olhei para o espelho. O reflexo me olhou de volta, sério. Depois, devagar, com o mesmo jeito daquela primeira noite, piscou um olho só.\nNão escreveu nada. Não precisava.\nHoje entendo que aquele dia foi uma despedida. Ivad tinha ficado comigo enquanto eu precisei dele, e foi embora quando percebeu que eu conseguia atravessar a rua sozinho. Ou, talvez, quem foi embora tenha sido o menino que precisava de um duplo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mudou quando Davi foi ao espelho de manhã?",
+       "options": [
+        "O reflexo só o copiava, como um reflexo comum",
+        "O espelho tinha quebrado",
+        "Ivad escreveu uma carta longa",
+        "O espelho tinha sumido"
+       ],
+       "answer": "O reflexo só o copiava, como um reflexo comum",
+       "accept": [],
+       "hint": "Davi tentou várias formas de chamar Ivad.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em qual destes lugares Davi NÃO procurou Ivad?",
+       "options": [
+        "No rio",
+        "No espelho do banheiro",
+        "Na janela da sala",
+        "No fundo de uma panela"
+       ],
+       "answer": "No rio",
+       "accept": [],
+       "hint": "Releia a lista de lugares onde ele só encontrou a si mesmo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da vizinha que Davi foi ajudar?",
+       "options": [],
+       "answer": "dona Cida",
+       "accept": [
+        "Cida",
+        "Dona Cida"
+       ],
+       "hint": "Ela morava em frente à casa da avó.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Davi teve de carregar?",
+       "options": [
+        "Caixas para a festa da igreja",
+        "Sacos de milho",
+        "Lenha para o fogão",
+        "Baldes de água"
+       ],
+       "answer": "Caixas para a festa da igreja",
+       "accept": [],
+       "hint": "Era um pedido da avó.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que desculpa Davi pensou em inventar?",
+       "options": [
+        "Uma dor de barriga",
+        "Que estava chovendo",
+        "Que tinha de estudar",
+        "Que o Tito precisava dele"
+       ],
+       "answer": "Uma dor de barriga",
+       "accept": [],
+       "hint": "Ele estava parado na porta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que dona Cida deu a Davi no fim?",
+       "options": [],
+       "answer": "bolo de fubá",
+       "accept": [
+        "um pedaço de bolo de fubá",
+        "bolo"
+       ],
+       "hint": "Estava ainda quente.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que fez Davi criar coragem para atravessar a rua?",
+       "options": [
+        "Lembrar do que viveu com Ivad e do que a avó disse",
+        "Uma ordem de dona Cida",
+        "Uma mensagem escrita no espelho",
+        "Uma promessa de dinheiro"
+       ],
+       "answer": "Lembrar do que viveu com Ivad e do que a avó disse",
+       "accept": [],
+       "hint": "Veja o que ele lembrou antes de sair.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o reflexo piscou, mas não escreveu nada, no fim do dia?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que Davi tinha acabado de conseguir fazer sozinho.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O espelho hoje",
+     "synopsis": "Já adulto, Davi recebe o espelho da avó e, diante da filha pequena, pensa no que a memória guarda e no que a imaginação cria.",
+     "text": "Muitos anos se passaram. Cresci, estudei, mudei de cidade algumas vezes. Voltei a Vargem do Sino em muitas férias, mas nunca mais vi Ivad. O espelho continuava no corredor, cada vez mais descascado, e meu reflexo me obedecia com uma disciplina quase entediante.\nQuando a avó Lurdes decidiu se mudar para um apartamento pequeno, perto da minha tia, ela me chamou para escolher alguma coisa da casa. Não precisei pensar. “O espelho”, eu disse. Ela sorriu como quem já sabia a resposta.\nTrouxemos o espelho embrulhado em cobertores, como ela dizia que ele tinha chegado ao Brasil. Hoje ele está no corredor do meu apartamento, entre a sala e a cozinha, porque não consegui imaginá-lo em outro lugar.\nNo começo, os vizinhos do prédio estranharam aquele móvel antigo, de moldura dourada e descascada, no meio de um apartamento moderno. Um deles chegou a perguntar se eu queria o telefone de alguém para restaurar a moldura. Agradeci e disse que não. As falhas no dourado, as manchas escuras nos cantos do vidro, tudo aquilo fazia parte da história. Restaurar seria como apagar um pedaço da memória.\nMinha filha tem sete anos. Outro dia, eu a vi parada diante do espelho, fazendo caretas, exatamente como eu fazia. De repente, ela correu até mim, com os olhos arregalados.\n“Pai! A menina do espelho piscou pra mim!”\nSenti o tempo dobrar, como uma folha de papel em que duas pontas distantes se encontram. Eu poderia ter dito que era impossível, que reflexos não piscam sozinhos, que ela devia estar cansada. Em vez disso, me ajoelhei e perguntei: “E você piscou de volta?”\nEla pensou um pouco e disse que não. Ficou com medo. Eu disse que, da próxima vez, ela podia tentar.\nNaquela noite, depois que ela dormiu, fiquei um tempo diante do espelho. Pensei em tudo o que contei nestas páginas: o milho, a troca de lugar, a pipa, a chuva, a dona Cida. Não sei quanto disso aconteceu do jeito que lembro. A memória não é um arquivo fiel; é mais como uma conversa entre o menino que eu fui e o homem que eu sou. Cada vez que conto essa história, um dos dois acrescenta alguma coisa.\nTalvez Ivad nunca tenha existido. Talvez tenha sido apenas o nome que dei à parte de mim que ainda não sabia ter coragem. Mas, de algum modo, ele continua existindo agora, porque eu o lembro, e porque minha filha, sem saber de nada, encontrou alguém parecido do outro lado do vidro.\nAntes de apagar a luz do corredor, olhei meu reflexo nos olhos. Por um segundo, achei que ele ia piscar. Não piscou. Eu sorri mesmo assim.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a avó chamou Davi para escolher algo da casa?",
+       "options": [
+        "Porque ia se mudar para um apartamento",
+        "Porque a casa ia pegar fogo",
+        "Porque era aniversário dele",
+        "Porque o espelho estava quebrado"
+       ],
+       "answer": "Porque ia se mudar para um apartamento",
+       "accept": [],
+       "hint": "Ela ia morar perto da tia de Davi.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como o espelho foi transportado?",
+       "options": [
+        "Embrulhado em cobertores",
+        "Dentro de um navio",
+        "Em uma caixa de madeira",
+        "Sem nenhuma proteção"
+       ],
+       "answer": "Embrulhado em cobertores",
+       "accept": [],
+       "hint": "Era assim que a avó dizia que ele tinha chegado.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o espelho fica no apartamento de Davi?",
+       "options": [
+        "No corredor entre a sala e a cozinha",
+        "No quarto da filha",
+        "Na varanda",
+        "No banheiro"
+       ],
+       "answer": "No corredor entre a sala e a cozinha",
+       "accept": [],
+       "hint": "É o mesmo lugar de antes.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos anos tem a filha de Davi?",
+       "options": [],
+       "answer": "sete",
+       "accept": [
+        "7",
+        "sete anos",
+        "7 anos"
+       ],
+       "hint": "Aparece quando ela é apresentada.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a filha conta ao pai?",
+       "options": [
+        "Que a menina do espelho piscou para ela",
+        "Que quebrou o espelho",
+        "Que viu Ivad",
+        "Que o espelho falou"
+       ],
+       "answer": "Que a menina do espelho piscou para ela",
+       "accept": [],
+       "hint": "Ela chegou correndo, de olhos arregalados.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Davi reage ao que a filha conta?",
+       "options": [
+        "Pergunta se ela piscou de volta",
+        "Diz que é impossível",
+        "Ri dela",
+        "Tira o espelho do corredor"
+       ],
+       "answer": "Pergunta se ela piscou de volta",
+       "accept": [],
+       "hint": "Ele escolhe não dizer que reflexos não piscam.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como o narrador define a memória?",
+       "options": [
+        "Uma conversa entre o menino que foi e o homem que é",
+        "Um arquivo fiel e completo",
+        "Uma fotografia que nunca muda",
+        "Uma mentira contada aos outros"
+       ],
+       "answer": "Uma conversa entre o menino que foi e o homem que é",
+       "accept": [],
+       "hint": "Releia o parágrafo da noite diante do espelho.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Davi sorriu mesmo sem o reflexo piscar no final?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que Ivad passou a representar para ele.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
