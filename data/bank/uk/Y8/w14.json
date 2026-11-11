@@ -3086,5 +3086,901 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "A Pipa do Senhor de Bigode",
+   "premise": "Já adulto, Tiago relembra o verão em que, aos oito anos, enfrentou a pobreza da família, a raiva do pai desempregado e encontrou um cachorro de rua e uma sapateira que mudaram sua vida.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A pipa de jornal",
+     "synopsis": "Num Natal sem presentes, o menino Tiago transforma folhas de jornal velho numa pipa e descobre que a alegria pode caber em pouca coisa.",
+     "text": "Eu tinha oito anos quando entendi que o Natal também podia ser magro. Hoje, já adulto, ainda sinto o cheiro daquela manhã: café ralo, pão dormido e o silêncio da minha mãe, que fingia arrumar a mesa para não ter que olhar nos meus olhos.\nMorávamos numa casa de dois cômodos no fim de uma rua de terra, numa vila do interior. Meu pai tinha perdido o emprego na olaria fazia meses. Minha irmã Lena, de treze anos, já sabia de tudo e me avisara na véspera, baixinho, antes de dormir:\n— Não espera nada amanhã, Tiaguinho. Esse ano não vai ter.\nLena falava assim, sem rodeios, porque achava que a verdade doía menos quando chegava cedo. Ela já trabalhava à tarde ajudando uma vizinha a passar roupa e sabia quanto custava um quilo de feijão. Eu, não. Eu ainda achava que o dinheiro aparecia quando a gente precisava muito, como a chuva depois de muitos dias de calor.\nEu disse que tudo bem. Mas uma parte de mim, a parte pequena e teimosa, ficou acordada esperando um milagre. De manhã, embaixo do galho seco que a gente enfeitava com tampinhas de garrafa, não havia nada. Nem um embrulho. Nem um papel colorido.\nLembro que senti um buraco no peito, como se alguém tivesse tirado de lá uma pedra que eu nem sabia que carregava. Não chorei. Achei que, se chorasse, minha mãe ia chorar também, e isso seria pior.\nSaí para o quintal e encontrei, no canto, uma pilha de jornais velhos que meu pai juntava para acender o fogão. Peguei duas folhas, duas varetas de bambu da cerca quebrada e um carretel quase vazio de linha que a Lena usava para costurar. Grudei tudo com uma massinha de farinha e água. A pipa ficou torta, com a cara de um senhor de bigode impressa bem no meio.\nQuando o vento da tarde chegou, corri pela rua de terra até perder o fôlego. A pipa subiu, desceu, rodopiou e, de repente, ficou firme lá em cima, balançando o rabo de tiras de pano. A cara do senhor de bigode olhava para a vila inteira, muito séria, e eu ria sozinho.\nNa porta de casa, vi minha mãe parada, com o pano de prato no ombro. Ela não disse nada, mas sorriu pela primeira vez naquele dia. Foi o meu presente. Eu só fui entender isso muitos anos depois.\nÀ noite, guardei a pipa embaixo da cama, com cuidado, como quem guarda um tesouro. Não sabia que ela ia me ensinar, ainda naquele verão, que algumas coisas a gente perde para poder fazer de novo, melhor.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem conta a história?",
+       "options": [
+        "Tiago, já adulto, relembrando a infância",
+        "Lena, a irmã mais velha",
+        "A mãe de Tiago, numa carta",
+        "Um vizinho que observava a família"
+       ],
+       "answer": "Tiago, já adulto, relembrando a infância",
+       "accept": [],
+       "hint": "Repare em expressões como \"Hoje, já adulto\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos anos Tiago tinha naquele Natal?",
+       "options": [],
+       "answer": "oito",
+       "accept": [
+        "8",
+        "oito anos",
+        "8 anos"
+       ],
+       "hint": "Está logo na primeira frase.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a família não tinha dinheiro para presentes?",
+       "options": [
+        "O pai tinha perdido o emprego na olaria",
+        "A casa tinha sido destruída por uma chuva",
+        "A mãe estava doente",
+        "Eles tinham acabado de se mudar"
+       ],
+       "answer": "O pai tinha perdido o emprego na olaria",
+       "accept": [],
+       "hint": "Procure o que aconteceu com o trabalho do pai.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, com que material Tiago fez o corpo da pipa?",
+       "options": [],
+       "answer": "jornal",
+       "accept": [
+        "jornais",
+        "folhas de jornal",
+        "jornal velho",
+        "jornais velhos"
+       ],
+       "hint": "Pense no que o pai juntava para acender o fogão.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tiago decidiu não chorar?",
+       "options": [
+        "Achou que a mãe choraria também",
+        "Tinha vergonha da irmã",
+        "Já tinha ganhado outro presente",
+        "Não estava triste de verdade"
+       ],
+       "answer": "Achou que a mãe choraria também",
+       "accept": [],
+       "hint": "Releia o parágrafo do \"buraco no peito\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, a imagem do \"buraco no peito\" serve principalmente para:",
+       "options": [
+        "mostrar a decepção do menino de forma concreta",
+        "descrever um machucado real",
+        "explicar como a pipa foi feita",
+        "indicar que Tiago estava com fome"
+       ],
+       "answer": "mostrar a decepção do menino de forma concreta",
+       "accept": [],
+       "hint": "É uma comparação, não um fato físico.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o narrador quer dizer com \"Foi o meu presente\"?",
+       "options": [
+        "O sorriso da mãe valeu mais que um embrulho",
+        "A mãe lhe deu a pipa de presente",
+        "Ele ganhou dinheiro vendendo a pipa",
+        "A irmã lhe deu o carretel de linha"
+       ],
+       "answer": "O sorriso da mãe valeu mais que um embrulho",
+       "accept": [],
+       "hint": "Veja o que acontece logo antes dessa frase.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o narrador diz que só entendeu o \"presente\" muitos anos depois?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que um adulto percebe que uma criança ainda não percebe.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Farofa",
+     "synopsis": "Numa noite de chuva, Tiago encontra um cachorro magro e precisa decidir entre obedecer à mãe e dividir o pouco que tem.",
+     "text": "A chuva de janeiro caía grossa, fazendo a rua de terra virar um rio de lama. Eu voltava da venda do Seu Agenor com meio quilo de fubá embrulhado no papel, apertado contra o peito para não molhar, quando ouvi um chorinho fino vindo de baixo de uma carroça abandonada.\nEra um cachorro. Pequeno, amarelado, com as costelas aparecendo como as cordas de um violão. Tremia tanto que parecia que ia se desmanchar. Quando me abaixei, ele não fugiu. Só me olhou, com aqueles olhos de quem já tinha desistido de esperar alguém.\nLevei o bicho para casa escondido embaixo da camisa. Minha mãe me viu entrar encharcado, com uma barriga estranha que se mexia, e cruzou os braços.\n— Tiago, o que é isso?\n— É um cachorro, mãe. Ele estava morrendo de frio.\nEla respirou fundo, daquele jeito cansado que eu conhecia bem.\n— Filho, a gente mal tem comida pra nós quatro. Não dá pra ter cachorro.\nEu sabia que ela tinha razão. Até hoje sei. Mas naquela hora a razão dela e o tremor do cachorro brigavam dentro de mim, e o tremor era mais alto.\n— Só esta noite — pedi. — Amanhã eu levo ele embora.\nMinha mãe olhou para o bicho, depois para mim, e não respondeu. Mas pegou um pano velho e jogou no canto da cozinha, perto do fogão. Eu entendi que aquilo era um sim disfarçado.\nNa janta, comi metade do meu angu e guardei a outra metade no bolso, embrulhada num pedaço de papel. Quando todos dormiram, levantei devagar e dei a comida ao cachorro. Ele comeu tão depressa que quase engasgou, e depois lambeu meus dedos um por um, como quem agradece.\n— Seu nome vai ser Farofa — sussurrei, porque ele era da cor de farofa e porque farofa era a comida mais gostosa que eu conhecia.\nFiquei um tempão acordado, ouvindo a chuva bater no telhado de zinco e a respiração do cachorro, cada vez mais calma. Do outro lado da parede, meu pai tossia. Pensei que, se ele descobrisse, ia mandar Farofa de volta para a lama. Abracei o bicho com força, como se meus braços fossem uma casa.\nNo dia seguinte, não levei Farofa embora. Nem no outro. Lena descobriu que eu estava dividindo a minha comida e, em vez de contar para a mãe, começou a guardar um pedacinho da dela também. Nunca falamos sobre isso. Era um segredo de irmãos.\nÀs vezes penso que aquele cachorro magro me salvou mais do que eu o salvei. Naquele verão difícil, ele era a única coisa na casa que ficava feliz sem precisar de nada.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que mês a história acontece?",
+       "options": [
+        "Janeiro",
+        "Julho",
+        "Dezembro",
+        "Março"
+       ],
+       "answer": "Janeiro",
+       "accept": [],
+       "hint": "Veja a primeira frase.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que Tiago trazia da venda?",
+       "options": [],
+       "answer": "fubá",
+       "accept": [
+        "meio quilo de fubá",
+        "fuba"
+       ],
+       "hint": "Era algo que ele protegia da chuva.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Tiago encontrou o cachorro?",
+       "options": [
+        "Embaixo de uma carroça abandonada",
+        "Dentro da venda",
+        "No quintal de casa",
+        "Na porta da igreja"
+       ],
+       "answer": "Embaixo de uma carroça abandonada",
+       "accept": [],
+       "hint": "Procure de onde vinha o chorinho.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a mãe disse que não dava para ter cachorro?",
+       "options": [
+        "A família mal tinha comida para todos",
+        "Ela tinha medo de cachorros",
+        "O pai não gostava de animais",
+        "A casa não tinha quintal"
+       ],
+       "answer": "A família mal tinha comida para todos",
+       "accept": [],
+       "hint": "Releia a fala da mãe.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que nome Tiago deu ao cachorro?",
+       "options": [],
+       "answer": "Farofa",
+       "accept": [],
+       "hint": "Tem a ver com a cor do bicho.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que significa a mãe jogar um pano no canto da cozinha?",
+       "options": [
+        "Que ela deixou o cachorro ficar, sem dizer isso",
+        "Que ela queria limpar a lama do chão",
+        "Que ela estava brava e queria encerrar a conversa",
+        "Que ela ia secar as roupas de Tiago"
+       ],
+       "answer": "Que ela deixou o cachorro ficar, sem dizer isso",
+       "accept": [],
+       "hint": "O narrador chama isso de um \"sim disfarçado\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a atitude de Lena revela sobre ela?",
+       "options": [
+        "Ela é solidária com o irmão e com o cachorro",
+        "Ela quer contar tudo para a mãe",
+        "Ela não liga para o cachorro",
+        "Ela tem ciúme de Tiago"
+       ],
+       "answer": "Ela é solidária com o irmão e com o cachorro",
+       "accept": [],
+       "hint": "Veja o que ela faz com a própria comida.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o narrador diz que Farofa o salvou mais do que ele salvou o cachorro?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em como Tiago se sentia naquele verão.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A oficina de Dona Zulmira",
+     "synopsis": "Tiago conhece uma sapateira que o trata como gente grande, ensina um ofício e paga suas primeiras moedas.",
+     "text": "No fim da rua principal havia uma porta azul descascada com uma placa torta: CONSERTA-SE SAPATOS. Eu passava ali todo dia com Farofa e sempre via, lá dentro, uma senhora pequena de óculos grossos, cercada de sapatos como uma rainha cercada de súditos cansados.\nUm dia, Farofa entrou correndo atrás de um rato. Eu fui atrás, morrendo de vergonha, já esperando uma bronca. A senhora só levantou os olhos do martelo e disse:\n— Se ele pegar o rato, ganha emprego. Você também quer um?\nAssim conheci Dona Zulmira. Ela tinha mãos cheias de calos, um rádio que só pegava uma estação e um jeito de falar comigo como se eu fosse gente grande. Perguntava o que eu achava das coisas e, o mais estranho, esperava a resposta.\nEla me ensinou a separar pregos por tamanho, a passar cola sem lambuzar e a costurar uma tira de sandália com agulha curva. No começo eu errava tudo. Furei o dedo, colei uma sola ao contrário, deixei cair uma caixa inteira de tachinhas no chão. Dona Zulmira não gritava. Só dizia:\n— Errar é o jeito que a mão tem de aprender. Faz de novo.\nNo fim da primeira semana, ela colocou três moedas na minha mão. Eu fiquei olhando para elas como se fossem de ouro. Eram as primeiras moedas que eu ganhava na vida.\n— Isso é seu — disse ela. — Não é presente. É pagamento. Tem diferença.\nEu não entendi a diferença na hora, mas senti. Presente era algo que me davam porque tinham pena ou carinho. Pagamento era algo que eu tinha merecido. Saí da oficina andando mais reto, de peito aberto, como se tivesse crescido dez centímetros.\nContei tudo a Farofa no caminho de volta, porque ele era o único que me ouvia sem interromper. Ele abanava o rabo a cada frase, como se concordasse com tudo. Parei na frente da venda do Seu Agenor e fiquei olhando os doces no vidro, mas não gastei nada. Aquelas moedas pareciam importantes demais para virar bala.\nGuardei as moedas numa lata de goiabada vazia, escondida atrás do fogão. Não contei para ninguém. Queria juntar bastante para, um dia, comprar alguma coisa importante, embora ainda não soubesse o quê.\nNaquela noite, enquanto meu pai fumava no portão, calado como andava nos últimos tempos, pensei que talvez ele também precisasse de alguém que lhe dissesse: errar é o jeito que a mão tem de aprender. Mas eu era pequeno demais para dizer isso a um pai.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que estava escrito na placa da porta azul?",
+       "options": [],
+       "answer": "CONSERTA-SE SAPATOS",
+       "accept": [
+        "conserta-se sapatos",
+        "conserta se sapatos"
+       ],
+       "hint": "Era a placa torta da oficina.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Tiago entrou na oficina pela primeira vez?",
+       "options": [
+        "Correndo atrás de Farofa, que perseguia um rato",
+        "Levando um sapato do pai para consertar",
+        "Fugindo da chuva",
+        "A pedido da mãe"
+       ],
+       "answer": "Correndo atrás de Farofa, que perseguia um rato",
+       "accept": [],
+       "hint": "Quem entrou primeiro foi o cachorro.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Tiago achava estranho no jeito de Dona Zulmira?",
+       "options": [
+        "Ela esperava a resposta dele",
+        "Ela falava muito alto",
+        "Ela não gostava de cachorros",
+        "Ela trabalhava de olhos fechados"
+       ],
+       "answer": "Ela esperava a resposta dele",
+       "accept": [],
+       "hint": "Pense em como ela o tratava.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas moedas Tiago recebeu no fim da primeira semana?",
+       "options": [],
+       "answer": "três",
+       "accept": [
+        "3",
+        "tres",
+        "três moedas"
+       ],
+       "hint": "Procure o momento do pagamento.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Tiago guardou as moedas?",
+       "options": [
+        "Numa lata de goiabada atrás do fogão",
+        "Embaixo do travesseiro",
+        "No bolso da Lena",
+        "Na oficina de Dona Zulmira"
+       ],
+       "answer": "Numa lata de goiabada atrás do fogão",
+       "accept": [],
+       "hint": "Ele as escondeu em casa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a diferença entre presente e pagamento para Tiago?",
+       "options": [
+        "Pagamento é algo que ele mereceu com trabalho",
+        "Presente vale mais dinheiro",
+        "Pagamento só se recebe de adultos",
+        "Não há diferença nenhuma"
+       ],
+       "answer": "Pagamento é algo que ele mereceu com trabalho",
+       "accept": [],
+       "hint": "Veja o que ele sente ao sair da oficina.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, a expressão \"como se tivesse crescido dez centímetros\" sugere que Tiago:",
+       "options": [
+        "sentiu orgulho de si mesmo",
+        "ficou de fato mais alto",
+        "machucou as costas",
+        "ficou com medo da sapateira"
+       ],
+       "answer": "sentiu orgulho de si mesmo",
+       "accept": [],
+       "hint": "É uma comparação sobre um sentimento.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Tiago pensa que o pai também precisava ouvir a frase de Dona Zulmira?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em como o pai andava nos últimos tempos.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O dia do grito",
+     "synopsis": "Depois de mais uma recusa de emprego, o pai perde a paciência e rasga a pipa de Tiago, que precisa lidar com o medo e a mágoa.",
+     "text": "Naquela tarde, meu pai voltou da cidade mais cedo do que devia. Tinha saído de manhã com a camisa passada e o sapato engraxado com cuspe e pano, dizendo que ia tentar vaga numa serraria. Voltou com a camisa amassada e o rosto fechado como uma janela em dia de tempestade.\nEu estava no quintal, consertando o rabo da pipa de jornal, que tinha se rasgado num galho. Farofa dormia ao meu lado. Ouvi a porta bater com tanta força que o vidro da janela tremeu.\n— De novo? — perguntou minha mãe, baixinho.\n— Disseram que eu sou velho demais. Quarenta e dois anos, e velho demais! — A voz dele foi crescendo até virar um trovão. — Ninguém quer um homem que só sabe fazer tijolo!\nEu me encolhi. Não era a primeira vez que ele gritava naqueles meses, mas nunca tinha sido daquele jeito. Então ele saiu para o quintal, viu a pipa no chão e, sem dizer nada, pisou nela. Depois pegou o que sobrou e rasgou em pedaços, que o vento espalhou pelo terreiro como folhas mortas.\n— Chega de brincadeira nesta casa! — gritou. — Aqui ninguém tem tempo pra brincar!\nFiquei parado, sem respirar. Farofa rosnou baixinho e eu o segurei pela coleira de barbante. Lena apareceu na porta e me puxou pela mão até o quarto. Ficamos os dois sentados na cama, ouvindo a voz do pai ir diminuindo, diminuindo, até virar só um choro abafado na cozinha.\nEu nunca tinha ouvido meu pai chorar. Aquilo me assustou mais do que os gritos. Grito eu conhecia: era barulho, passava. Mas o choro de um homem grande, escondido na cozinha, parecia um pedaço da casa desabando devagar, sem ninguém poder segurar.\n— Ele não está bravo com você — disse Lena, apertando minha mão. — Ele está bravo com o mundo. Você só estava no caminho.\nNaquela noite eu odiei meu pai. Odiei com toda a força dos meus oito anos. Prometi a mim mesmo que nunca mais ia falar com ele. Mas, quando ele passou pela porta do quarto, devagar, com os ombros caídos, achei que ele parecia menor do que antes, como um sapato gasto que perdeu a forma.\nHoje entendo que a pobreza não machuca só a barriga. Ela também aperta o peito dos adultos até que alguma coisa estoura, e quase sempre estoura em cima de quem está mais perto. Isso não torna certo o que ele fez. Mas ajuda a entender.\nAntes de dormir, recolhi do quintal os pedaços da pipa. Guardei tudo na lata de goiabada, junto com as moedas.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o pai tinha ido tentar emprego?",
+       "options": [
+        "Numa serraria",
+        "Na olaria",
+        "Na sapataria",
+        "Numa padaria"
+       ],
+       "answer": "Numa serraria",
+       "accept": [],
+       "hint": "Está no primeiro parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos anos o pai tinha?",
+       "options": [],
+       "answer": "quarenta e dois",
+       "accept": [
+        "42",
+        "42 anos",
+        "quarenta e dois anos"
+       ],
+       "hint": "Ele mesmo diz a idade ao gritar.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que motivo deram para recusar o pai?",
+       "options": [
+        "Disseram que ele era velho demais",
+        "Disseram que ele chegou atrasado",
+        "Disseram que a vaga já estava ocupada",
+        "Disseram que ele não sabia ler"
+       ],
+       "answer": "Disseram que ele era velho demais",
+       "accept": [],
+       "hint": "Releia a fala do pai.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o pai faz com a pipa?",
+       "options": [
+        "Pisa nela e a rasga em pedaços",
+        "Joga no fogão",
+        "Dá para a Lena",
+        "Pendura na parede"
+       ],
+       "answer": "Pisa nela e a rasga em pedaços",
+       "accept": [],
+       "hint": "Veja o que acontece no quintal.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem leva Tiago para o quarto?",
+       "options": [],
+       "answer": "Lena",
+       "accept": [
+        "a Lena",
+        "a irmã",
+        "sua irmã"
+       ],
+       "hint": "É alguém da família que aparece na porta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, a comparação do pai com \"um sapato gasto que perdeu a forma\" sugere que ele estava:",
+       "options": [
+        "derrotado e sem forças",
+        "muito elegante",
+        "com raiva de Tiago",
+        "pronto para trabalhar"
+       ],
+       "answer": "derrotado e sem forças",
+       "accept": [],
+       "hint": "Pense em como fica um sapato muito usado.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a opinião do narrador adulto sobre o que o pai fez?",
+       "options": [
+        "Não foi certo, mas dá para entender o motivo",
+        "Foi totalmente correto",
+        "Foi imperdoável e sem explicação",
+        "Foi culpa de Tiago"
+       ],
+       "answer": "Não foi certo, mas dá para entender o motivo",
+       "accept": [],
+       "hint": "Leia o penúltimo parágrafo com atenção.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Tiago guardou os pedaços da pipa junto com as moedas?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que a pipa e as moedas significam para ele.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O sapato do pai",
+     "synopsis": "Tiago descobre um jeito de ajudar o pai e, com Dona Zulmira, prepara em segredo uma surpresa para a próxima entrevista.",
+     "text": "Durante três dias, eu e meu pai não trocamos uma palavra. Ele saía cedo, voltava tarde e jantava olhando para o prato. Eu fazia o mesmo. A casa ficou tão silenciosa que dava para ouvir o relógio da cozinha brigando com o tempo.\nNo quarto dia, enquanto ele tomava banho de caneca no quintal, vi o sapato dele largado na porta. Era o único par que ele tinha, preto, de couro rachado. A sola esquerda estava descolando na frente, abrindo uma boca de jacaré a cada passo. Lembrei de como ele tinha saído para a serraria: camisa passada, sapato engraxado com cuspe. E pensei, pela primeira vez, no que o dono da serraria tinha visto quando olhou para os pés dele.\nOuvi minha mãe dizer para a Lena que havia outra vaga, numa fábrica de móveis, dali a uma semana. Foi aí que tive a ideia.\nNa manhã seguinte, enrolei o sapato num saco de pano e corri até a oficina. Dona Zulmira examinou o par com cuidado, virando-o de um lado e de outro, como um médico examinando um paciente.\n— Está mal — disse. — Mas não está morto. Quanto você tem?\nAbri a lata de goiabada no balcão. Eram onze moedas e os pedaços de uma pipa de jornal. Ela olhou para as moedas, depois para os pedaços de papel, e não perguntou nada sobre a pipa. Só tirou os óculos e limpou com a ponta da blusa, demorando mais do que precisava.\n— Dá certinho — falou. — Mas quem vai fazer o serviço é você. Eu só vou olhar.\nTrabalhei quatro tardes. Raspei a cola velha, lixei a sola, passei cola nova e esperei secar, segurando a vontade de apertar antes da hora. Costurei a lateral com a agulha curva, ponto por ponto, os dedos doendo. Depois engraxei até o couro rachado brilhar como um besouro.\nEscondi o sapato embaixo da minha cama e coloquei no lugar dele um par de chinelos velhos. Meu pai procurou, resmungou, perguntou para todo mundo. Lena me olhou desconfiada, mas não disse nada.\nNa véspera da entrevista, quando todos já estavam deitados, levantei no escuro e coloquei o sapato na porta, exatamente onde ele sempre ficava. Dentro do pé direito, deixei um bilhete escrito com a minha letra torta: \"Errar é o jeito que a mão tem de aprender. Boa sorte, pai.\"\nVoltei para a cama com o coração batendo na garganta. Não sabia se ele ia rir, brigar ou chorar.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos dias Tiago e o pai ficaram sem conversar?",
+       "options": [],
+       "answer": "três",
+       "accept": [
+        "3",
+        "tres",
+        "três dias"
+       ],
+       "hint": "Está na primeira frase.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o problema do sapato do pai?",
+       "options": [
+        "A sola esquerda estava descolando",
+        "O cadarço tinha sumido",
+        "O sapato era pequeno demais",
+        "O salto estava quebrado"
+       ],
+       "answer": "A sola esquerda estava descolando",
+       "accept": [],
+       "hint": "Lembre da \"boca de jacaré\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para onde seria a nova vaga de emprego?",
+       "options": [
+        "Uma fábrica de móveis",
+        "Uma serraria",
+        "Uma olaria",
+        "Uma sapataria"
+       ],
+       "answer": "Uma fábrica de móveis",
+       "accept": [],
+       "hint": "A mãe conta isso para a Lena.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas moedas havia na lata?",
+       "options": [],
+       "answer": "onze",
+       "accept": [
+        "11",
+        "onze moedas"
+       ],
+       "hint": "Tiago abre a lata no balcão.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem fez o conserto do sapato?",
+       "options": [
+        "Tiago, com Dona Zulmira observando",
+        "Dona Zulmira sozinha",
+        "A mãe de Tiago",
+        "Um sapateiro da cidade"
+       ],
+       "answer": "Tiago, com Dona Zulmira observando",
+       "accept": [],
+       "hint": "Releia o que Dona Zulmira combina com ele.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Dona Zulmira provavelmente demora para limpar os óculos?",
+       "options": [
+        "Está emocionada com o gesto do menino",
+        "Os óculos estavam muito sujos",
+        "Está com raiva de Tiago",
+        "Quer ganhar tempo para cobrar mais"
+       ],
+       "answer": "Está emocionada com o gesto do menino",
+       "accept": [],
+       "hint": "Ela viu as moedas e os pedaços da pipa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tiago escreve no bilhete a frase de Dona Zulmira?",
+       "options": [
+        "Para dar coragem ao pai depois dos fracassos",
+        "Para provar que sabia escrever",
+        "Para pedir dinheiro de volta",
+        "Para reclamar da pipa rasgada"
+       ],
+       "answer": "Para dar coragem ao pai depois dos fracassos",
+       "accept": [],
+       "hint": "Lembre do que Tiago pensou no capítulo 3.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Tiago decidiu ajudar o pai, mesmo depois do que aconteceu com a pipa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que ele percebeu sobre o pai e sobre o sapato.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: A entrevista",
+     "synopsis": "No dia da entrevista, a família espera ansiosa, Farofa desaparece e o pai volta com notícias e um pedido difícil de fazer.",
+     "text": "Acordei com o barulho de alguém sentado na beira da minha cama. Era meu pai, já vestido, com o sapato nos pés e o bilhete dobrado na mão. Ele não disse nada. Só passou a mão grande e áspera no meu cabelo, duas vezes, e saiu. Eu fingi que ainda dormia, mas fiquei com aquele peso morno na cabeça por muito tempo.\nO dia demorou mais que um ano. Minha mãe lavou a mesma panela três vezes. Lena tentou ler um livro e ficou presa na mesma página. Eu fiquei sentado no portão, olhando a estrada, contando os ônibus que passavam.\nNo meio da tarde, percebi que Farofa tinha sumido. Procurei no quintal, embaixo da carroça velha, na porta da oficina. Dona Zulmira não o tinha visto. Gritei o nome dele pela vila inteira até a garganta arder. Comecei a imaginar coisas horríveis: um carro, um homem com um saco, a chuva levando ele embora.\nFoi a primeira vez que senti duas aflições ao mesmo tempo, uma em cima da outra, como dois tijolos. Lembro de pensar que, se Farofa não voltasse e meu pai não conseguisse o emprego, o mundo ia acabar ali, naquela rua de terra.\nQuando o sol já estava baixo, vi duas figuras no fim da estrada. Uma alta, andando devagar. Outra pequena e amarela, correndo em círculos ao redor da primeira. Era meu pai. E era Farofa, que tinha seguido o cheiro dele até o ponto de ônibus e esperado lá a tarde inteira.\nCorri tanto que quase caí. Farofa pulou em mim, sujo de poeira, lambendo meu rosto. Meu pai parou na minha frente e ficou um tempo calado, mexendo no chapéu.\n— Começo segunda-feira — disse, por fim. — Na fábrica de móveis.\nMinha mãe, que tinha vindo atrás de mim, cobriu a boca com as mãos. Lena deu um grito. Eu não consegui dizer nada.\nEntão meu pai se agachou até ficar da minha altura. Os olhos dele estavam vermelhos.\n— O homem da fábrica olhou para os meus pés — contou. — Disse que quem cuida assim de um sapato velho deve cuidar bem do serviço.\nRespirou fundo, como quem vai levantar um peso grande.\n— Tiago, eu não devia ter rasgado a sua pipa. Eu estava com raiva da vida e descontei em você. Me desculpa.\nEra a primeira vez que eu ouvia um adulto pedir desculpas a uma criança. Não sabia o que responder. Então fiz a única coisa que me ocorreu: abracei meu pai pela cintura, com força, e Farofa se meteu no meio, abanando o rabo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o pai faz antes de sair para a entrevista?",
+       "options": [
+        "Passa a mão no cabelo de Tiago",
+        "Acorda Tiago e agradece em voz alta",
+        "Deixa um bilhete para a mãe",
+        "Leva Farofa junto"
+       ],
+       "answer": "Passa a mão no cabelo de Tiago",
+       "accept": [],
+       "hint": "Veja o primeiro parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a mãe mostra sua ansiedade durante o dia?",
+       "options": [
+        "Lava a mesma panela três vezes",
+        "Lê a mesma página de um livro",
+        "Conta os ônibus no portão",
+        "Vai até a cidade"
+       ],
+       "answer": "Lava a mesma panela três vezes",
+       "accept": [],
+       "hint": "Cada pessoa da família reage de um jeito.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem some durante a tarde?",
+       "options": [],
+       "answer": "Farofa",
+       "accept": [
+        "o Farofa",
+        "o cachorro"
+       ],
+       "hint": "Tiago procura pela vila inteira.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Farofa passou a tarde?",
+       "options": [
+        "No ponto de ônibus, esperando o pai",
+        "Na oficina de Dona Zulmira",
+        "Embaixo da carroça velha",
+        "Na venda do Seu Agenor"
+       ],
+       "answer": "No ponto de ônibus, esperando o pai",
+       "accept": [],
+       "hint": "Ele seguiu um cheiro conhecido.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que dia o pai começa no novo emprego?",
+       "options": [],
+       "answer": "segunda-feira",
+       "accept": [
+        "segunda",
+        "na segunda-feira",
+        "na segunda"
+       ],
+       "hint": "É a primeira coisa que ele diz ao chegar.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o homem da fábrica gostou do pai?",
+       "options": [
+        "Achou que quem cuida bem de um sapato velho cuida bem do serviço",
+        "Já conhecia o pai da olaria",
+        "O pai era o mais jovem da fila",
+        "O pai trouxe uma carta de recomendação"
+       ],
+       "answer": "Achou que quem cuida bem de um sapato velho cuida bem do serviço",
+       "accept": [],
+       "hint": "Relembre a fala do pai agachado.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, a comparação das aflições com \"dois tijolos\" sugere que elas eram:",
+       "options": [
+        "pesadas e se somavam",
+        "fáceis de esquecer",
+        "bonitas e coloridas",
+        "parecidas com uma casa"
+       ],
+       "answer": "pesadas e se somavam",
+       "accept": [],
+       "hint": "Pense no peso de um tijolo em cima de outro.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o pedido de desculpas do pai foi tão marcante para Tiago?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre do que o narrador diz sobre adultos e crianças.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A pipa nova",
+     "synopsis": "Com a vida um pouco mais leve, pai e filho constroem juntos uma pipa, e Tiago aprende que algumas despedidas também são começos.",
+     "text": "No primeiro domingo depois do primeiro pagamento, meu pai chegou em casa com um rolo de papel de seda vermelho, um carretel novo de linha e varetas de bambu bem retinhas. Colocou tudo na mesa da cozinha sem dizer nada, do jeito dele, e puxou duas cadeiras.\nPassamos a tarde inteira fazendo a pipa juntos. Ele cortava o bambu com o canivete; eu media o papel com um palmo. Descobri que meu pai sabia fazer pipa melhor do que eu: tinha aprendido com o pai dele, numa outra vila, num outro tempo. Enquanto trabalhava, contou histórias da infância que eu nunca tinha ouvido. Ri tanto que Farofa começou a latir, achando que era alguma festa.\nQuando a pipa ficou pronta, ele pegou da lata de goiabada um pedaço da pipa antiga, aquele com a cara do senhor de bigode, e colou no meio da pipa nova.\n— Pra ela não esquecer de onde veio — explicou.\nSubimos o morro atrás da vila. O vento estava bom. A pipa vermelha subiu tão alto que virou um pontinho, e a cara do senhor de bigode ficou lá em cima, olhando a vila inteira de novo, agora de outro jeito. Meu pai segurava a linha comigo, a mão dele cobrindo a minha.\nNa volta, passei pela oficina para mostrar a pipa a Dona Zulmira. Encontrei a porta azul aberta e a oficina quase vazia. Havia caixas pelo chão e o rádio estava embrulhado em jornal.\n— Vou morar com a minha filha, na capital — disse ela. — As mãos já não obedecem como antes.\nSenti o buraco no peito de novo, aquele do Natal. Mas dessa vez era diferente: não era um buraco vazio, era um buraco cheio de saudade antecipada.\nEla me deu a agulha curva, enrolada num pedaço de feltro.\n— Isso é seu — falou. — Não é presente. É herança. Tem diferença também.\nEu ri, com os olhos molhados, porque dessa vez entendi a diferença na hora.\nHoje tenho uma pequena oficina de consertos numa cidade grande. Conserto sapatos, malas, cintos e, às vezes, a coragem de algum menino que aparece na porta sem jeito, com um cachorro atrás. A agulha curva fica pendurada na parede, ao lado de uma pipa vermelha desbotada com um senhor de bigode no meio.\nQuando alguém me pergunta como foi a minha infância, eu digo que foi magra. Mas digo também que foi nela que aprendi as coisas mais gordas que sei: que errar é o jeito que a mão tem de aprender, e que até um pai pode pedir desculpas.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que cor era o papel de seda da pipa nova?",
+       "options": [],
+       "answer": "vermelho",
+       "accept": [
+        "vermelha"
+       ],
+       "hint": "Está no primeiro parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com quem o pai aprendeu a fazer pipa?",
+       "options": [
+        "Com o pai dele",
+        "Com Dona Zulmira",
+        "Com Lena",
+        "Num livro"
+       ],
+       "answer": "Com o pai dele",
+       "accept": [],
+       "hint": "Ele conta histórias da infância.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o pai cola no meio da pipa nova?",
+       "options": [
+        "Um pedaço da pipa antiga, com a cara do senhor de bigode",
+        "O bilhete de Tiago",
+        "Uma moeda",
+        "Uma foto da família"
+       ],
+       "answer": "Um pedaço da pipa antiga, com a cara do senhor de bigode",
+       "accept": [],
+       "hint": "Ele tira algo da lata de goiabada.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, para onde Dona Zulmira vai se mudar?",
+       "options": [],
+       "answer": "para a capital",
+       "accept": [
+        "capital",
+        "a capital",
+        "na capital"
+       ],
+       "hint": "Ela vai morar com a filha.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que objeto Dona Zulmira dá a Tiago?",
+       "options": [],
+       "answer": "a agulha curva",
+       "accept": [
+        "agulha curva",
+        "agulha",
+        "uma agulha curva"
+       ],
+       "hint": "Vem enrolado num pedaço de feltro.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o pai cola o pedaço da pipa antiga na nova?",
+       "options": [
+        "Para lembrar a história difícil que viveram e como a superaram",
+        "Porque faltou papel de seda",
+        "Para a pipa ficar mais pesada",
+        "Porque Tiago pediu"
+       ],
+       "answer": "Para lembrar a história difícil que viveram e como a superaram",
+       "accept": [],
+       "hint": "Ele diz: \"Pra ela não esquecer de onde veio\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o narrador quer dizer ao chamar a infância de \"magra\" mas cheia de \"coisas gordas\"?",
+       "options": [
+        "Faltavam coisas materiais, mas sobraram aprendizados importantes",
+        "Ele passou fome e depois engordou",
+        "A família tinha muita comida",
+        "Ele não gosta de lembrar da infância"
+       ],
+       "answer": "Faltavam coisas materiais, mas sobraram aprendizados importantes",
+       "accept": [],
+       "hint": "É um jogo de palavras com sentidos opostos.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o narrador diz que conserta \"a coragem de algum menino\"? O que isso mostra sobre ele?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre de quem fez isso por ele quando era criança.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
