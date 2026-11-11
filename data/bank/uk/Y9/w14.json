@@ -3931,6 +3931,907 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Saltmarsh Ledger",
+   "premise": "Year 9 student Tamsin joins her school newspaper and, with Ravi and Joaquim, uses an old notebook called the Ledger to test bold claims, weighing evidence for and against before deciding to what extent each one is true.",
+   "chapters": [
+    {
+     "title": "Chapter 1: Everyone Hates the New Timetable",
+     "synopsis": "Tamsin joins the Saltmarsh Point school newspaper and is told to test a bold headline before it is printed.",
+     "text": "The newspaper room at Saltmarsh Point Academy smelled of toner and old biscuits. Tamsin Varga had walked past it for two years before she finally knocked on the door on a wet Tuesday in November.\n\"New recruit?\" asked a tall boy with ink on his fingers. \"I'm Ravi. Editor-in-chief, unpaid. That's Joaquim, he does photos and complains.\" Joaquim lifted a hand without looking up from his camera.\nTheir teacher adviser, Mr Pellow, was pinning a draft front page to the corkboard. In huge letters it said: EVERYONE HATES THE NEW TIMETABLE.\n\"Is that true?\" Tamsin asked before she could stop herself.\nMr Pellow turned round, delighted. \"Excellent question. That is exactly what this paper is for. Ravi, where did the headline come from?\"\nRavi shrugged. \"Everyone in my form was moaning about it. Lunch is twenty minutes later now and the buses leave before after-school clubs finish.\"\n\"How many people are in your form?\" said Mr Pellow.\n\"Twenty-six.\"\n\"And how many students are in the school?\"\n\"About nine hundred,\" Ravi admitted.\nMr Pellow wrote a sentence on the whiteboard: To what extent do students dislike the new timetable? \"In exams,\" he said, \"you will meet questions like this. 'To what extent' means you never answer simply yes or no. You weigh the evidence on both sides and then decide how far the statement is true. Tamsin, you asked the question, so you can test it.\"\nFor the next three days Tamsin carried a clipboard everywhere. She asked one student from every form group the same three questions, and she was careful not to say what she thought herself. Joaquim took photographs of the bus queue. Ravi, a little grumpily, interviewed the kitchen staff.\nOn Friday they spread the results across the table. Of the forty-two students Tamsin had asked, twenty-five disliked the later lunch. But eleven of them said they liked the longer morning lessons, because science practicals no longer had to be rushed. Six students had no opinion at all. The kitchen staff said the later lunch meant fewer students were hungry by the last lesson. The bus photographs, however, were hard to argue with: a long line of students leaving clubs early.\n\"So,\" said Mr Pellow, \"is the headline true?\"\nTamsin looked at the numbers. \"Partly. More than half of the people I asked dislike lunch being later, so there is real evidence for it. But 'everyone' is false. Some students like parts of the change, and the clubs problem is about buses, not really the timetable itself.\"\nRavi groaned, crossed out the headline and wrote a new one: MOST STUDENTS UNHAPPY WITH LATE LUNCH, BUT LONGER LESSONS WIN SOME FANS.\n\"It's longer,\" he said.\n\"It's truer,\" said Joaquim.\nMr Pellow smiled and handed Tamsin a key to the newspaper room. As she left, she noticed an old leather notebook on the top shelf, its spine stamped with a single word: LEDGER. She meant to ask about it, but the bell rang, and the question stayed with her all weekend.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the original headline on the draft front page?",
+       "options": [
+        "Everyone hates the new timetable",
+        "Students love the late lunch",
+        "Buses leave too early",
+        "The new timetable is a success"
+       ],
+       "answer": "Everyone hates the new timetable",
+       "accept": [],
+       "hint": "Look at the huge letters on the corkboard.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many students are in Ravi's form?",
+       "options": [],
+       "answer": "twenty-six",
+       "accept": [
+        "26"
+       ],
+       "hint": "Ravi answers Mr Pellow's first question.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many students did Tamsin ask altogether?",
+       "options": [],
+       "answer": "forty-two",
+       "accept": [
+        "42"
+       ],
+       "hint": "Look at the results spread across the table on Friday.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mr Pellow say a 'to what extent' question requires?",
+       "options": [
+        "Weighing evidence on both sides before deciding how far it is true",
+        "Answering simply yes or no",
+        "Giving only your own opinion",
+        "Listing every fact you know"
+       ],
+       "answer": "Weighing evidence on both sides before deciding how far it is true",
+       "accept": [],
+       "hint": "Reread what he says after writing on the whiteboard.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was Ravi's evidence for the headline weak?",
+       "options": [
+        "It came from only one form out of a whole school",
+        "He made up the complaints",
+        "He asked only teachers",
+        "He used old photographs"
+       ],
+       "answer": "It came from only one form out of a whole school",
+       "accept": [],
+       "hint": "Compare twenty-six with about nine hundred.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Tamsin say the clubs problem is not really about the timetable?",
+       "options": [
+        "It is caused by the bus times",
+        "Clubs were cancelled",
+        "Nobody goes to clubs",
+        "The kitchen closes early"
+       ],
+       "answer": "It is caused by the bus times",
+       "accept": [],
+       "hint": "Think about what Joaquim's photographs showed.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Joaquim's comment 'It's truer' suggest about him?",
+       "options": [
+        "He values accuracy more than a catchy headline",
+        "He dislikes Ravi",
+        "He wants to be editor",
+        "He did not read the results"
+       ],
+       "answer": "He values accuracy more than a catchy headline",
+       "accept": [],
+       "hint": "Compare the two headlines.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mr Pellow gave Tamsin a key to the newspaper room?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how she behaved during the week.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Lighthouse That Was Never Lit",
+     "synopsis": "A local legend claims the Saltmarsh lighthouse was never used, and the team tests it against the old ledger.",
+     "text": "On Monday Tamsin finally asked about the leather notebook.\n\"Ah, the Ledger,\" said Mr Pellow, lifting it down carefully. \"Every editor since this paper began has written in it. One rule: before a big claim goes into print, you write it here, with the evidence for and against, and your verdict.\"\nThe first page, in faded blue ink, was dated forty years earlier. Tamsin turned the pages slowly. Some verdicts said TRUE, some FALSE, and many said PARTLY TRUE, with careful notes underneath.\nRavi was already pacing. \"Perfect timing. The town council wants to turn the lighthouse into a café. And everyone knows the lighthouse was never actually lit. It was built and then the ships changed route. My grandad told me. It's the most famous fact in Saltmarsh.\"\n\"Then it should be easy to check,\" said Tamsin.\nIt was not easy. The library had a book of local history, but it simply repeated the story without saying where it came from. Joaquim found a postcard from long ago that showed the lighthouse with a bright beam drawn across the sky. \"That proves it was lit,\" he said.\n\"A drawing on a postcard proves someone drew a beam,\" said Tamsin. \"Artists add things.\"\nOn Thursday the three of them visited the harbour museum. A volunteer named Mrs Abara led them to a glass case containing a keeper's logbook. Each page listed the date, the weather and the words 'lamp lit at sunset'. The entries ran for just under three years and then stopped.\n\"So it was lit,\" said Ravi, sounding almost disappointed.\n\"For a while,\" said Mrs Abara. \"After three years a new lighthouse opened further down the coast, on the point where the shipping lane actually ran. This one was switched off. People forgot it ever worked, and the story grew.\"\nBack in the newspaper room, Tamsin opened the Ledger and drew two columns.\nFor the claim, she wrote: the local history book; Ravi's grandad; the fact that the lighthouse was closed quickly, which may have started the story.\nAgainst the claim, she wrote: the keeper's logbook, written at the time by someone who was there; the museum's explanation of the new lighthouse.\nThen she paused over the postcard. \"Where does this go?\"\n\"Against,\" said Joaquim.\n\"I don't think it goes anywhere,\" said Tamsin. \"It isn't reliable either way.\" She wrote it at the bottom under a third heading: Weak evidence.\nHer verdict took longer. Finally she wrote: MOSTLY FALSE. The lighthouse was lit for nearly three years. The legend is true only in that it was used for a much shorter time than planned.\nRavi read it twice. \"My grandad is going to argue with this.\"\n\"Then bring him the logbook,\" said Tamsin. \"If he has better evidence, we'll change the verdict.\"\nThat Saturday Ravi did exactly that. He came back on Monday grinning. His grandad had read every page, frowned, and then said that the logbook was better evidence than a story told on the harbour wall. He had also asked if he could write a letter to the paper about it.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the Ledger?",
+       "options": [
+        "A notebook where editors record claims, evidence and verdicts",
+        "A list of students' marks",
+        "A history of the lighthouse",
+        "A book of postcards"
+       ],
+       "answer": "A notebook where editors record claims, evidence and verdicts",
+       "accept": [],
+       "hint": "Mr Pellow explains its one rule.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the town council want to do with the lighthouse?",
+       "options": [
+        "Turn it into a café",
+        "Knock it down",
+        "Light it again",
+        "Make it a museum"
+       ],
+       "answer": "Turn it into a café",
+       "accept": [],
+       "hint": "Ravi mentions this at the start.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, for about how many years was the lighthouse lamp lit?",
+       "options": [],
+       "answer": "three",
+       "accept": [
+        "3",
+        "three years",
+        "3 years",
+        "nearly three years",
+        "just under three years"
+       ],
+       "hint": "Check the logbook entries.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Tamsin say the postcard is weak evidence?",
+       "options": [
+        "Artists can add things that were not really there",
+        "It is too old to read",
+        "It shows a different town",
+        "It was printed by the council"
+       ],
+       "answer": "Artists can add things that were not really there",
+       "accept": [],
+       "hint": "Read her reply to Joaquim.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is the keeper's logbook strong evidence?",
+       "options": [
+        "It was written at the time by someone who was there",
+        "It is the newest source",
+        "It agrees with the legend",
+        "Mrs Abara wrote it"
+       ],
+       "answer": "It was written at the time by someone who was there",
+       "accept": [],
+       "hint": "Think about who wrote it and when.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what explains how the legend probably started?",
+       "options": [
+        "The lighthouse was switched off quickly when a new one opened",
+        "Nobody ever built the lamp",
+        "The keeper lied in his logbook",
+        "The postcard was a joke"
+       ],
+       "answer": "The lighthouse was switched off quickly when a new one opened",
+       "accept": [],
+       "hint": "Mrs Abara gives the explanation.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tamsin's offer to 'change the verdict' show about her?",
+       "options": [
+        "She is open to better evidence",
+        "She is unsure of everything",
+        "She wants to please Ravi",
+        "She dislikes the Ledger"
+       ],
+       "answer": "She is open to better evidence",
+       "accept": [],
+       "hint": "Think about what would make her change her mind.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Ravi's grandad changed his mind?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Compare the kinds of evidence he had before and after.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Seagull Problem",
+     "synopsis": "A café owner says seagulls are taking over the seafront, and the team counts birds to find out.",
+     "text": "The next claim arrived by email from the owner of the Driftwood Café. Mr Henshaw wanted the paper to print a warning: SEAGULLS ARE TAKING OVER SALTMARSH. He said gulls had stolen three sandwiches from his customers in a single afternoon, and that there were 'ten times more birds than last year'.\n\"Ten times,\" Joaquim repeated. \"That's a lot of gulls.\"\n\"It's a lot of claim,\" said Tamsin.\nRavi had a plan. \"We count them. Same place, same time, every day for a week.\"\nJoaquim pointed out a problem at once. \"If we only count outside the café, we'll find loads. That's where the food is.\"\nSo they chose three spots: the café terrace, the quiet end of the beach and the harbour wall. Each lunchtime for a week they counted for ten minutes at each spot and wrote the numbers in a table. Joaquim photographed every count so that nobody could argue later.\nThe results surprised them. Outside the café there were between twenty and thirty-five gulls every day. At the harbour wall there were around fifteen. At the quiet end of the beach there were often fewer than five.\n\"So they're not taking over the whole town,\" said Ravi. \"They're taking over one café.\"\nBut Tamsin was still thinking about the 'ten times more' part. They had no count from last year, so they could not test it directly. Then Mrs Abara from the museum mentioned that a local bird club counted gulls on the harbour wall every autumn. Their records showed about twelve birds at the same spot the year before.\n\"Twelve last year, about fifteen this year,\" said Tamsin. \"That's more, but nowhere near ten times.\"\nThey went to see Mr Henshaw. He listened, arms folded, while they explained.\n\"Well, it feels like ten times more,\" he said.\n\"We believe you that it's worse at your café,\" said Tamsin carefully. \"Our counts show that too. But the evidence suggests the birds are coming to where the food is, not that the town is full of them.\"\nMr Henshaw was quiet for a moment. Then he admitted that he had started leaving the bins open behind the kitchen in the summer, because the lid was broken.\nThat evening Tamsin wrote in the Ledger. For: high counts at the café; three stolen sandwiches; the owner's experience. Against: low counts on the quiet beach; the bird club's figures, which show only a small rise; a likely local cause, the open bins.\nVerdict: LARGELY FALSE as a statement about the town. TRUE that one area has a serious gull problem, probably caused by food waste.\nThe article that Friday was headlined: GULLS FLOCK TO FOOD, NOT TO SALTMARSH. Below it was a short box with advice on keeping bins closed. A week later Mr Henshaw sent a photograph of his new bin lid and a free cake voucher for the newspaper team.\n\"Is accepting cake from someone we wrote about allowed?\" asked Joaquim.\nMr Pellow thought about it. \"Write it in the Ledger,\" he said. \"Then share the cake with the whole class.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Mr Henshaw want the paper to print?",
+       "options": [
+        "Seagulls are taking over Saltmarsh",
+        "Gulls are a protected species",
+        "The café is closing",
+        "The beach is dirty"
+       ],
+       "answer": "Seagulls are taking over Saltmarsh",
+       "accept": [],
+       "hint": "Look at his email.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many sandwiches did gulls steal in one afternoon?",
+       "options": [],
+       "answer": "three",
+       "accept": [
+        "3"
+       ],
+       "hint": "It is in Mr Henshaw's email.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, at how many different spots did the team count gulls?",
+       "options": [],
+       "answer": "three",
+       "accept": [
+        "3"
+       ],
+       "hint": "Name the places they chose.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Joaquim not want to count only outside the café?",
+       "options": [
+        "It would give an unfairly high number",
+        "The café owner refused",
+        "It was too noisy",
+        "The light was bad for photos"
+       ],
+       "answer": "It would give an unfairly high number",
+       "accept": [],
+       "hint": "Think about where the food is.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the team test the 'ten times more' part of the claim?",
+       "options": [
+        "They compared their harbour count with the bird club's count from last year",
+        "They asked customers",
+        "They guessed",
+        "They searched the internet"
+       ],
+       "answer": "They compared their harbour count with the bird club's count from last year",
+       "accept": [],
+       "hint": "Mrs Abara helped with this.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what local cause did Mr Henshaw admit to?",
+       "options": [
+        "He had left the bins open",
+        "He fed the gulls on purpose",
+        "He moved the café",
+        "He sold fish on the terrace"
+       ],
+       "answer": "He had left the bins open",
+       "accept": [],
+       "hint": "Listen to what he admits after a quiet moment.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which word best describes how Tamsin speaks to Mr Henshaw?",
+       "options": [
+        "Tactful",
+        "Rude",
+        "Nervous",
+        "Bored"
+       ],
+       "answer": "Tactful",
+       "accept": [],
+       "hint": "She agrees with part of what he says before disagreeing.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mr Pellow told Joaquim to write the cake in the Ledger?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about fairness and trust in a newspaper.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Phone Ban Made Us Happier",
+     "synopsis": "The school claims its phone ban has made students happier, and Tamsin finds the survey is less simple than it looks.",
+     "text": "In January the head teacher's newsletter made a bold announcement: SINCE THE PHONE BAN, OUR STUDENTS ARE HAPPIER. It quoted a survey in which sixty per cent of students said they were 'happier at break time' than before.\nRavi wanted to print it on the front page. \"It's the school's own survey. Surely that's reliable.\"\n\"Maybe,\" said Tamsin. \"Who wrote the questions?\"\nThat turned out to be a good place to start. The survey had been sent out by the student council. Its first question read: Do you agree that break times are more sociable now that everyone is talking instead of staring at screens?\n\"That question basically tells you the answer,\" said Joaquim.\n\"It's a leading question,\" said Tamsin. \"It makes agreeing feel like the normal thing to do.\"\nThey also discovered that only students who opened the newsletter email had replied: about one in five of the school. Tamsin wondered whether students who liked the ban were more likely to answer.\nStill, she didn't want to dismiss the claim just because the survey had problems. \"Bad evidence doesn't mean the claim is false,\" she reminded the others. \"It just means we don't know yet.\"\nSo they looked for other evidence. The school nurse, who would not discuss individual students, said that fewer students had come to her office upset about online arguments during the school day. The librarian said the library was busier at lunchtime. Joaquim photographed the playground at break and found far more groups playing games or chatting than he remembered from the autumn.\nThen Ravi interviewed a group of Year 11 students, who were far less positive. Several said they felt anxious without their phones because they could not check messages from home. One said she was happier at break but more stressed at the end of the day, when twenty notifications arrived at once.\nTamsin designed a fairer survey. The questions were neutral: How do you feel at break time compared with last term? with options from 'much worse' to 'much better'. Mr Pellow helped them send it to every tutor group to be filled in during registration, so almost everyone answered.\nThe results were mixed but clear. Just over half said they felt better at break. About a third said there was no difference. Around one in seven said they felt worse, and most of those were older students.\nIn the Ledger, Tamsin wrote: For: fairer survey shows most students feel better at break; fewer upset visits to the nurse; busier library; photographs. Against: original survey used a leading question and a small sample; a sizeable minority, mostly older students, feel worse; 'happier' at break may not mean happier overall.\nVerdict: TRUE TO A LARGE EXTENT for break times, especially for younger students. NOT PROVEN for happiness in general.\nThe head teacher was not thrilled by the article at first. Then she invited Tamsin to a meeting with the student council to discuss letting older students check phones at the end of lunch. \"Your article gave us a better question to ask,\" she said.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did the claim about the phone ban first appear?",
+       "options": [
+        "In the head teacher's newsletter",
+        "On a poster in the canteen",
+        "In a local newspaper",
+        "In a student's diary"
+       ],
+       "answer": "In the head teacher's newsletter",
+       "accept": [],
+       "hint": "Look at the first sentence.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what percentage of students in the first survey said they were happier at break time?",
+       "options": [],
+       "answer": "sixty per cent",
+       "accept": [
+        "60%",
+        "60",
+        "sixty",
+        "60 per cent",
+        "60 percent",
+        "sixty percent"
+       ],
+       "hint": "The number is quoted in the newsletter.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the problem with the first survey's question?",
+       "options": [
+        "It is a leading question",
+        "It is written in another language",
+        "It has too many options",
+        "It asks about lessons, not breaks"
+       ],
+       "answer": "It is a leading question",
+       "accept": [],
+       "hint": "Tamsin names the problem.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tamsin mean by 'Bad evidence doesn't mean the claim is false'?",
+       "options": [
+        "A weak survey leaves the question open rather than disproving it",
+        "The claim must be true",
+        "Surveys are always wrong",
+        "They should stop investigating"
+       ],
+       "answer": "A weak survey leaves the question open rather than disproving it",
+       "accept": [],
+       "hint": "Read what she says next: 'we don't know yet'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which group was most likely to feel worse because of the ban?",
+       "options": [
+        "Older students",
+        "Younger students",
+        "Teachers",
+        "Librarians"
+       ],
+       "answer": "Older students",
+       "accept": [],
+       "hint": "Look at Ravi's interviews and the final results.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was the second survey fairer than the first?",
+       "options": [
+        "Its questions were neutral and almost everyone answered",
+        "It was shorter",
+        "Only the newspaper team answered it",
+        "It was sent by email"
+       ],
+       "answer": "Its questions were neutral and almost everyone answered",
+       "accept": [],
+       "hint": "Think about both the questions and who replied.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Tamsin's verdict separate break times from 'happiness in general'?",
+       "options": [
+        "The evidence was mostly about break times, not the whole day",
+        "She ran out of space",
+        "The head teacher asked her to",
+        "Students refused to answer"
+       ],
+       "answer": "The evidence was mostly about break times, not the whole day",
+       "accept": [],
+       "hint": "Think about what the surveys actually asked.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the head teacher changed her mind about the article?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what the article helped the school to understand.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Is the Old Pier Unsafe?",
+     "synopsis": "After a photograph of a broken plank spreads online, the team weighs a rumour against an engineer's report.",
+     "text": "The photograph appeared on a local social media page on a Sunday night: a broken plank on the old pier, with the caption THIS PIER IS A DEATH TRAP. By Monday morning it had been shared hundreds of times, and parents at the school gate were talking about nothing else.\n\"We have to cover this,\" said Ravi. \"It's the biggest story in town.\"\n\"Then we have to be the most careful,\" said Tamsin.\nJoaquim studied the picture on his phone. \"Look at the shadows. The sun's coming from the left and it's quite low. And see that railing? It's painted green. I'm sure the railings were repainted blue last spring.\"\nThat evening they walked down to the pier. The railings were indeed blue. Near the end they found the plank from the photograph, or one very like it, but it had been replaced with new, pale wood. A small metal notice, half hidden by a lamppost, said: Repairs completed in October.\n\"So the photo is old,\" said Ravi.\n\"Probably old,\" Tamsin corrected. \"We can't be completely sure. But it doesn't show the pier as it is now.\"\nThe council's website listed an engineer's inspection from the summer. Mr Pellow helped them read it. The report said the structure was 'sound', but it also listed eleven planks needing replacement and recommended that the far end be inspected again after winter storms.\n\"So it isn't a death trap,\" said Joaquim.\n\"But it isn't perfect either,\" said Tamsin. \"And the report is from before the storms in November.\"\nThey decided to ask the council directly. A spokesperson replied by email that a second inspection was already booked for the following week. She also admitted that the warning signs about high waves had been blown away and not yet replaced.\nTamsin spread everything out on the table. For the claim that the pier was unsafe: the broken plank in the photograph, if it was recent; eleven planks needing work; missing warning signs; the storms since the last inspection. Against: the photograph was almost certainly taken before the repairs; the engineer had called the structure sound; a new inspection was already planned.\nRavi wanted a dramatic headline. Tamsin wanted a cautious one. They argued for twenty minutes.\n\"If we say it's safe and someone gets hurt, that's terrible,\" said Ravi.\n\"If we say it's a death trap and it isn't, we're just as bad as the post we're checking,\" said Tamsin.\nIn the end they agreed on: PIER PHOTO IS OUT OF DATE, BUT STORM CHECK STILL NEEDED. The article explained how they had worked out that the photograph was old, quoted the engineer's report, and pointed out the missing wave signs.\nThe verdict in the Ledger read: MOSTLY FALSE as stated. 'Death trap' is not supported by the evidence. However, some concern is reasonable until the post-storm inspection is complete.\nTwo days after the paper came out, new wave warning signs appeared on the pier. Nobody from the council mentioned the article, but Joaquim took a photograph of the signs anyway, and this time he wrote the date on the back.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the caption on the photograph say?",
+       "options": [
+        "This pier is a death trap",
+        "The pier is closed",
+        "Storm damage on the beach",
+        "New repairs finished"
+       ],
+       "answer": "This pier is a death trap",
+       "accept": [],
+       "hint": "Look at the first paragraph.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what detail made Joaquim think the photograph was old?",
+       "options": [
+        "The railings were green, but they had been repainted blue",
+        "The photo was black and white",
+        "There were no people",
+        "The sea was frozen"
+       ],
+       "answer": "The railings were green, but they had been repainted blue",
+       "accept": [],
+       "hint": "He looks closely at the railings.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many planks did the engineer's report say needed replacing?",
+       "options": [],
+       "answer": "eleven",
+       "accept": [
+        "11"
+       ],
+       "hint": "Check the details in the report.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the council spokesperson admit?",
+       "options": [
+        "The wave warning signs had been blown away",
+        "The pier was closing",
+        "The report was false",
+        "The photograph was new"
+       ],
+       "answer": "The wave warning signs had been blown away",
+       "accept": [],
+       "hint": "Read her email reply.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Tamsin say 'Probably old' instead of 'old'?",
+       "options": [
+        "She avoids claiming more certainty than the evidence gives",
+        "She thinks the photo is new",
+        "She wants to annoy Ravi",
+        "She did not see the new plank"
+       ],
+       "answer": "She avoids claiming more certainty than the evidence gives",
+       "accept": [],
+       "hint": "Read what she adds: 'We can't be completely sure'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Tamsin's main argument against a dramatic headline?",
+       "options": [
+        "Exaggerating would make the paper as bad as the post it was checking",
+        "Dramatic headlines are too long",
+        "The council would be angry",
+        "Nobody reads the front page"
+       ],
+       "answer": "Exaggerating would make the paper as bad as the post it was checking",
+       "accept": [],
+       "hint": "Look at the argument with Ravi.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the appearance of new signs after the article suggest?",
+       "options": [
+        "The article may have prompted the council to act",
+        "The council ignored the article",
+        "The pier was closed",
+        "Ravi put up the signs"
+       ],
+       "answer": "The article may have prompted the council to act",
+       "accept": [],
+       "hint": "Nobody says so directly, so you need to infer.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Joaquim wrote the date on the back of his photograph?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about the problem with the photograph in this chapter.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: It Was the Referee's Fault",
+     "synopsis": "After a painful football defeat, Ravi is sure the referee cost the school the cup, and he has to test his own claim.",
+     "text": "Saltmarsh Point lost the county football final 2–1, and Ravi took it personally. He had been in the crowd, shouting until his voice gave out, and on Monday he burst into the newspaper room with a headline already written: REFEREE ROBS SALTMARSH OF THE CUP.\nTamsin and Joaquim exchanged a look.\n\"Don't,\" said Ravi. \"I know what you're going to say. But I saw it. Their winning goal was offside, and he didn't give us a penalty when Kofi was pushed over. Everyone saw it.\"\n\"Everyone in our stand,\" said Joaquim quietly.\nMr Pellow leaned back in his chair. \"Ravi, you've helped test four claims this term. Do you want to test this one, or do you want someone else to?\"\nRavi hesitated. \"I'll do it,\" he said at last. \"Properly.\"\nIt was harder than he expected. The match had been filmed by a parent from the halfway line, and Joaquim had taken photographs from behind the goal. Ravi watched the winning goal again and again. From the side, the attacker looked level with the last defender. Joaquim's photograph, taken from a different angle, made it look as if he might be slightly ahead.\n\"I can't tell,\" Ravi admitted. \"It's really close.\"\nThe penalty claim was clearer. The video showed a defender's arm on Kofi's shoulder as they both chased the ball. Kofi fell. But the coach, when Ravi interviewed her, said she thought it was 'fifty-fifty' and that she had seen worse challenges go unpunished all season.\nThen Tamsin asked a question Ravi did not want to hear. \"What else happened in the match?\"\nHe looked at his notes. Saltmarsh had missed a penalty in the first half. Their goalkeeper had dropped an easy cross for the opposition's first goal. And the other team had had fourteen shots to Saltmarsh's six.\nRavi was silent for a long time. Then he picked up a pen and opened the Ledger.\nFor the claim: one goal that may have been offside, impossible to judge clearly from the footage; one possible penalty that was not given, which even the coach called fifty-fifty.\nAgainst: Saltmarsh missed their own penalty; a goalkeeping mistake gave away the first goal; the other team created far more chances; the referee's decisions were close calls rather than obvious errors.\nVerdict: LARGELY FALSE. The referee's decisions may have affected the result, but there is not enough evidence to say they caused the defeat. The match was lost for several reasons.\nHe showed it to Tamsin. \"Is that fair?\"\n\"It's fairer than I expected,\" she said honestly. \"Especially from you.\"\nThe article ran under the headline: CLOSE CALLS, BUT SALTMARSH BEATEN ON THE DAY. Ravi wrote it himself. Kofi stopped him in the corridor afterwards. Ravi braced himself for an argument, but Kofi only said, \"Thanks for mentioning that we kept going after the second goal. Nobody else noticed that.\"\nThat evening Ravi told Tamsin that testing his own claim had been the hardest thing he'd done for the paper. \"When you really want something to be true,\" he said, \"you stop looking for the bits that aren't.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the final score of the match?",
+       "options": [],
+       "answer": "2–1",
+       "accept": [
+        "2-1",
+        "two-one",
+        "2 1",
+        "2–1 to the other team"
+       ],
+       "hint": "It is in the first sentence.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what headline did Ravi first write?",
+       "options": [
+        "Referee robs Saltmarsh of the cup",
+        "Saltmarsh win the cup",
+        "Close calls, but Saltmarsh beaten",
+        "Kofi scores twice"
+       ],
+       "answer": "Referee robs Saltmarsh of the cup",
+       "accept": [],
+       "hint": "He brings it into the room on Monday.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many shots did the other team have?",
+       "options": [],
+       "answer": "fourteen",
+       "accept": [
+        "14"
+       ],
+       "hint": "Look at Ravi's notes about what else happened.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why could Ravi not decide whether the goal was offside?",
+       "options": [
+        "The footage from different angles showed different things",
+        "The video was lost",
+        "He did not watch it",
+        "The referee refused to talk"
+       ],
+       "answer": "The footage from different angles showed different things",
+       "accept": [],
+       "hint": "Compare the parent's video and Joaquim's photograph.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was Tamsin's question 'What else happened in the match?' important?",
+       "options": [
+        "It made Ravi consider other causes of the defeat",
+        "It changed the score",
+        "It proved the referee was wrong",
+        "It ended the investigation"
+       ],
+       "answer": "It made Ravi consider other causes of the defeat",
+       "accept": [],
+       "hint": "Think about what Ravi found in his notes.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Joaquim mean by 'Everyone in our stand'?",
+       "options": [
+        "People who support the same team may all see things the same way",
+        "Their stand had the best view",
+        "Only a few people came",
+        "The other stand was empty"
+       ],
+       "answer": "People who support the same team may all see things the same way",
+       "accept": [],
+       "hint": "Think about bias.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how has Ravi changed since the first chapter?",
+       "options": [
+        "He now tests claims carefully, even ones he wants to believe",
+        "He has stopped writing headlines",
+        "He has left the newspaper",
+        "He now agrees with everything Tamsin says"
+       ],
+       "answer": "He now tests claims carefully, even ones he wants to believe",
+       "accept": [],
+       "hint": "Compare him with the boy who wrote 'Everyone hates the new timetable'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think testing his own claim was the hardest thing Ravi had done for the paper?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about his last sentence in the chapter.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: To What Extent Is the Paper Fair?",
+     "synopsis": "A reader accuses the newspaper itself of being unfair, and the team turns the Ledger on its own work.",
+     "text": "The letter arrived on the last week of term, written in neat capital letters and signed only 'A Year 10 Reader'. It said: YOUR PAPER PRETENDS TO BE FAIR, BUT YOU ONLY CHECK CLAIMS YOU ALREADY DISAGREE WITH.\nRavi read it aloud and laughed. Then he stopped laughing. \"Is it true?\"\nTamsin was already reaching for the Ledger. \"There's only one way to find out.\"\nThey went through every entry from the term: the timetable, the lighthouse, the gulls, the phone ban, the pier and the football final. For each one they asked two questions. Who brought us the claim? And did we expect it to be true or false before we started?\nThe answers were uncomfortable. Ravi had expected the timetable headline to be true, and the football claim had been his own, so the reader was not entirely right. But Tamsin realised that she had doubted the gull claim and the pier claim from the very start. Joaquim pointed out that they had never once checked a claim made by the newspaper itself.\n\"And every claim came from someone we could easily disagree with,\" said Joaquim. \"A café owner. Social media. The head teacher.\"\nMr Pellow joined them at the table. \"What about the verdicts? Were they fair?\"\nThat question was easier. In every case, they had recorded the evidence on both sides. Several verdicts had partly supported the original claim. They had offered to change the lighthouse verdict if better evidence appeared, and they had listened to people who disagreed with them, such as the Year 11 students in the phone survey.\n\"So the method was fair,\" said Tamsin slowly, \"but the choice of what to check might not have been.\"\nRavi frowned. \"How do we fix that?\"\nThey spent the rest of the afternoon making three changes. First, a box would appear in every issue inviting readers to send in any claim, including claims about the paper itself. Second, each term they would check at least one statement that the newspaper team already believed. Third, before starting each investigation, they would write down in the Ledger what they expected the verdict to be, so that they could notice if they were only finding what they wanted to find.\nThen Tamsin wrote the final entry of the term.\nClaim: The paper only checks claims it already disagrees with.\nFor: most claims came from people outside the team; Tamsin doubted several claims from the start; the paper never checked its own statements.\nAgainst: Ravi expected at least two of the claims to be true; the evidence was recorded fairly on both sides; the team offered to change verdicts if better evidence appeared.\nVerdict: PARTLY TRUE. The method was fair, but the choice of claims showed some bias. Changes have been made.\nThey printed the letter in full, with the verdict underneath. Two days later another envelope arrived, again in neat capitals. It said only: FAIR ENOUGH. CAN I JOIN?\nRavi looked at Tamsin. Tamsin looked at Joaquim. Joaquim was already clearing a space at the table.\n\"Tell them to bring a claim,\" said Tamsin, \"and an open mind.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who signed the letter to the paper?",
+       "options": [
+        "A Year 10 Reader",
+        "Mr Pellow",
+        "The head teacher",
+        "Mr Henshaw"
+       ],
+       "answer": "A Year 10 Reader",
+       "accept": [],
+       "hint": "Look at how the letter is signed.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the letter accuse the paper of?",
+       "options": [
+        "Only checking claims it already disagreed with",
+        "Printing false sports results",
+        "Being too short",
+        "Taking money from advertisers"
+       ],
+       "answer": "Only checking claims it already disagreed with",
+       "accept": [],
+       "hint": "Read the capital letters.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many changes did the team decide to make?",
+       "options": [],
+       "answer": "three",
+       "accept": [
+        "3"
+       ],
+       "hint": "Count the changes they made that afternoon.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what had the paper never done before?",
+       "options": [
+        "Checked a claim made by the newspaper itself",
+        "Interviewed a teacher",
+        "Used photographs",
+        "Printed a letter"
+       ],
+       "answer": "Checked a claim made by the newspaper itself",
+       "accept": [],
+       "hint": "Joaquim points this out.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the difference Tamsin notices between the 'method' and the 'choice of what to check'?",
+       "options": [
+        "They weighed evidence fairly but picked claims in a biased way",
+        "They chose claims fairly but weighed evidence badly",
+        "Both were completely unfair",
+        "Both were completely fair"
+       ],
+       "answer": "They weighed evidence fairly but picked claims in a biased way",
+       "accept": [],
+       "hint": "Read her words after Mr Pellow's question.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do they decide to write down their expected verdict before each investigation?",
+       "options": [
+        "To notice if they are only finding what they want to find",
+        "To finish faster",
+        "To impress Mr Pellow",
+        "To guess the headline"
+       ],
+       "answer": "To notice if they are only finding what they want to find",
+       "accept": [],
+       "hint": "This is the third change.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the reader's second letter suggest?",
+       "options": [
+        "The paper's honest reply won the reader's respect",
+        "The reader is still angry",
+        "The reader wants the paper to close",
+        "The reader is Mr Pellow"
+       ],
+       "answer": "The paper's honest reply won the reader's respect",
+       "accept": [],
+       "hint": "Read 'FAIR ENOUGH. CAN I JOIN?'",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the team printed the critical letter in full instead of ignoring it?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what the paper has learned all term about fairness.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }

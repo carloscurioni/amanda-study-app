@@ -1,0 +1,1004 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y11",
+ "academic_week": 14,
+ "subjects": {
+  "bio": {
+   "topic": "Chromosomes, genes and protein synthesis",
+   "questions": [
+    {
+     "id": "r639a3b1lw8g1h",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which statement best defines a gene?",
+     "options": [
+      "A length of DNA that codes for a protein",
+      "A thread-like structure made of many chromosomes",
+      "A version of a characteristic shown in the phenotype",
+      "A type of cell found in the nucleus"
+     ],
+     "answer": "A length of DNA that codes for a protein",
+     "accept": [],
+     "hint": "Think about what a section of DNA is used to make.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rha1o3kkerxdz",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What is a chromosome?",
+     "options": [
+      "A thread-like structure of DNA carrying genes",
+      "A single base in DNA",
+      "A protein made at a ribosome",
+      "An organelle in the cytoplasm"
+     ],
+     "answer": "A thread-like structure of DNA carrying genes",
+     "accept": [],
+     "hint": "It is found in the nucleus and is much larger than a gene.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s617vqrf9jil",
+     "subject": "bio",
+     "type": "short",
+     "q": "State the term for an alternative form of a gene.",
+     "options": [],
+     "answer": "allele",
+     "accept": [
+      "alleles",
+      "an allele"
+     ],
+     "hint": "For example, the gene for eye colour can have different versions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rotzjmf6i0g6n",
+     "subject": "bio",
+     "type": "num",
+     "q": "A human body cell contains 23 pairs of chromosomes. How many chromosomes is that in total?",
+     "options": [],
+     "answer": "46",
+     "accept": [],
+     "hint": "Each pair contains two chromosomes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13ut37k16km585",
+     "subject": "bio",
+     "type": "num",
+     "q": "How many chromosomes are found in a normal human sperm cell?",
+     "options": [],
+     "answer": "23",
+     "accept": [],
+     "hint": "Gametes contain one chromosome from each pair.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pu1pnz7534rp",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Where in an animal cell are chromosomes found?",
+     "options": [
+      "Nucleus",
+      "Ribosome",
+      "Cell membrane",
+      "Cytoplasm only"
+     ],
+     "answer": "Nucleus",
+     "accept": [],
+     "hint": "It is the organelle that controls the cell.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j0bll01x6tuzq",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which of these is NOT one of the four bases in DNA?",
+     "options": [
+      "U (uracil)",
+      "A (adenine)",
+      "C (cytosine)",
+      "G (guanine)"
+     ],
+     "answer": "U (uracil)",
+     "accept": [],
+     "hint": "Three of these appear in DNA; one appears only in RNA.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15tysqc1pt77bg",
+     "subject": "bio",
+     "type": "mc",
+     "q": "How does DNA control the protein made by a cell?",
+     "options": [
+      "The sequence of bases determines the sequence of amino acids",
+      "The length of the chromosome determines the size of the cell",
+      "The number of genes determines the number of ribosomes",
+      "The shape of the nucleus determines the protein"
+     ],
+     "answer": "The sequence of bases determines the sequence of amino acids",
+     "accept": [],
+     "hint": "Think about order: bases in DNA, amino acids in a protein.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwra9nu1p3o49g",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the molecule that carries a copy of a gene from the nucleus to the cytoplasm.",
+     "options": [],
+     "answer": "mRNA",
+     "accept": [
+      "messenger RNA",
+      "m-RNA"
+     ],
+     "hint": "It is a type of RNA whose name describes its job.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rje49rd15lmu3a",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Why must a copy of the gene leave the nucleus?",
+     "options": [
+      "DNA stays in the nucleus but proteins are made at ribosomes in the cytoplasm",
+      "DNA is too small to be read in the nucleus",
+      "Ribosomes cannot enter the cytoplasm",
+      "Amino acids are made in the nucleus"
+     ],
+     "answer": "DNA stays in the nucleus but proteins are made at ribosomes in the cytoplasm",
+     "accept": [],
+     "hint": "Compare where DNA is kept with where proteins are assembled.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cy4ckml43c84",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the process in which a gene is copied into mRNA.",
+     "options": [],
+     "answer": "transcription",
+     "accept": [],
+     "hint": "The name means 'writing across' into a new copy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz8m1n4c44z80",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the process in which a ribosome uses mRNA to assemble a chain of amino acids.",
+     "options": [],
+     "answer": "translation",
+     "accept": [],
+     "hint": "The mRNA 'language' is turned into a protein 'language'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmx3cxutsysl2",
+     "subject": "bio",
+     "type": "num",
+     "q": "Three bases code for one amino acid. How many bases are needed to code for a protein of 150 amino acids?",
+     "options": [],
+     "answer": "450",
+     "accept": [],
+     "hint": "Multiply the number of amino acids by the bases per amino acid.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs0aw1613ry6u5",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which is the correct order of events in protein synthesis?",
+     "options": [
+      "Gene copied into mRNA → mRNA moves to ribosome → amino acids joined in order",
+      "mRNA moves to ribosome → gene copied → amino acids joined",
+      "Amino acids joined → mRNA made → gene copied",
+      "Ribosome copies DNA in the nucleus → protein leaves the cell"
+     ],
+     "answer": "Gene copied into mRNA → mRNA moves to ribosome → amino acids joined in order",
+     "accept": [],
+     "hint": "Start with what happens in the nucleus.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15k4qwym788fv",
+     "subject": "bio",
+     "type": "open",
+     "q": "Explain why different body cells, such as muscle cells and nerve cells, can make different proteins even though they contain the same genes.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about whether every gene is used in every cell.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19r7kuf4u9kdf",
+     "subject": "bio",
+     "type": "open",
+     "q": "Describe how the information in a gene is used to make a specific protein. Refer to mRNA and ribosomes in your answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Follow the information from the nucleus to the cytoplasm, step by step.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bss": {
+   "topic": "Solos: formação, uso e degradação",
+   "questions": [
+    {
+     "id": "rawv1nssffbqk",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é o principal processo responsável por transformar a rocha-mãe em solo?",
+     "options": [
+      "Intemperismo",
+      "Assoreamento",
+      "Vulcanismo",
+      "Sedimentação marinha"
+     ],
+     "answer": "Intemperismo",
+     "accept": [],
+     "hint": "É o conjunto de ações do clima e dos seres vivos que desgastam a rocha.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6hanympvk2v",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Como se chama a rocha que dá origem a um solo?",
+     "options": [
+      "Rocha-mãe",
+      "Rocha ígnea extrusiva",
+      "Rocha sedimentar marinha",
+      "Rocha matriz secundária"
+     ],
+     "answer": "Rocha-mãe",
+     "accept": [],
+     "hint": "Também é chamada de rocha matriz.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vzabtn5ya2js",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual tipo de intemperismo predomina em climas quentes e úmidos, como no Brasil tropical?",
+     "options": [
+      "Químico",
+      "Físico",
+      "Glacial",
+      "Eólico"
+     ],
+     "answer": "Químico",
+     "accept": [],
+     "hint": "A água e o calor favorecem reações com os minerais.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6r25qh1omt7k8",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes NÃO é um fator de formação dos solos?",
+     "options": [
+      "O fuso horário",
+      "O clima",
+      "O relevo",
+      "O tempo"
+     ],
+     "answer": "O fuso horário",
+     "accept": [],
+     "hint": "Pense nos fatores que agem sobre a rocha ao longo do tempo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtmeqeagz1c0w",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chamam as camadas sobrepostas de um solo, vistas num corte vertical?",
+     "options": [],
+     "answer": "horizontes",
+     "accept": [
+      "horizontes do solo",
+      "horizonte"
+     ],
+     "hint": "Elas recebem letras como O, A, B e C.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro7iem61hrbwem",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual horizonte do solo é mais rico em matéria orgânica?",
+     "options": [
+      "O",
+      "B",
+      "C",
+      "R"
+     ],
+     "answer": "O",
+     "accept": [],
+     "hint": "É a camada mais superficial, com folhas e restos de seres vivos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpb9xic1upz4gl",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chama a remoção de nutrientes do solo pela água da chuva que se infiltra?",
+     "options": [],
+     "answer": "lixiviação",
+     "accept": [
+      "lixiviacao"
+     ],
+     "hint": "A água 'lava' o solo de cima para baixo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jqmj23mnv4m6",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que caracteriza a laterização?",
+     "options": [
+      "Concentração de óxidos de ferro e alumínio após intensa lixiviação, podendo formar uma crosta dura",
+      "Acúmulo de sal na superfície por irrigação",
+      "Formação de dunas pelo vento",
+      "Congelamento do solo no inverno"
+     ],
+     "answer": "Concentração de óxidos de ferro e alumínio após intensa lixiviação, podendo formar uma crosta dura",
+     "accept": [],
+     "hint": "Ocorre em climas tropicais com chuvas abundantes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rncny0ysm5tme",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Que solo, de origem basáltica, é famoso pela fertilidade no Paraná e em São Paulo?",
+     "options": [
+      "Terra roxa",
+      "Massapê",
+      "Areia quartzosa",
+      "Solo glacial"
+     ],
+     "answer": "Terra roxa",
+     "accept": [],
+     "hint": "Sua cor avermelhada vem do ferro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bss4vktjrwhz",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chama a erosão profunda e de grandes dimensões que forma enormes buracos no terreno?",
+     "options": [],
+     "answer": "voçoroca",
+     "accept": [
+      "vossoroca",
+      "boçoroca",
+      "voçorocas"
+     ],
+     "hint": "É uma etapa mais grave que o sulco e a ravina.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv0ipsjt72tfy",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é a ordem correta de agravamento da erosão causada pela água que escorre?",
+     "options": [
+      "Sulco → ravina → voçoroca",
+      "Voçoroca → ravina → sulco",
+      "Ravina → voçoroca → sulco",
+      "Sulco → voçoroca → ravina"
+     ],
+     "answer": "Sulco → ravina → voçoroca",
+     "accept": [],
+     "hint": "Comece pela marca mais rasa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1336wza7uyphb",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é uma consequência da erosão para os rios?",
+     "options": [
+      "Assoreamento",
+      "Aumento da profundidade",
+      "Fim das enchentes",
+      "Formação de geleiras"
+     ],
+     "answer": "Assoreamento",
+     "accept": [],
+     "hint": "Os sedimentos do solo vão parar no leito do rio.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7ns47910k9a0t",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual técnica agrícola ajuda a reduzir a erosão em terrenos inclinados?",
+     "options": [
+      "Plantio em curvas de nível",
+      "Queimada da vegetação",
+      "Plantio a favor da declividade",
+      "Retirada da mata ciliar"
+     ],
+     "answer": "Plantio em curvas de nível",
+     "accept": [],
+     "hint": "As fileiras acompanham a mesma altitude e freiam a água.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yun4v792jsvn",
+     "subject": "bss",
+     "type": "mc",
+     "q": "A desertificação, segundo a definição usada pela ONU, ocorre principalmente em áreas:",
+     "options": [
+      "Áridas, semiáridas e subúmidas secas",
+      "Equatoriais muito úmidas",
+      "Polares",
+      "De alta montanha com neve"
+     ],
+     "answer": "Áridas, semiáridas e subúmidas secas",
+     "accept": [],
+     "hint": "No Brasil, ela preocupa sobretudo o Sertão nordestino.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10fu80qm88ois",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que o processo do sudoeste do Rio Grande do Sul é chamado de arenização, e não de desertificação?",
+     "options": [
+      "Porque ocorre em clima úmido, sem aridez",
+      "Porque não há areia na região",
+      "Porque acontece no litoral",
+      "Porque é causado por vulcões"
+     ],
+     "answer": "Porque ocorre em clima úmido, sem aridez",
+     "accept": [],
+     "hint": "Compare o clima da região com o das áreas semiáridas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l4d1i8is27xb",
+     "subject": "bss",
+     "type": "open",
+     "q": "Explique como o desmatamento e o manejo inadequado do solo podem levar à desertificação no semiárido brasileiro e indique uma medida para combatê-la.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na cobertura vegetal, na erosão e no uso do solo e da água.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bus": {
+   "topic": "Statement of financial position",
+   "questions": [
+    {
+     "id": "rlvbbpjeluxg5",
+     "subject": "bus",
+     "type": "mc",
+     "q": "What does a statement of financial position show?",
+     "options": [
+      "A business's assets, liabilities and equity at a particular date",
+      "A business's sales and costs over a year",
+      "Only the cash coming in and out of a business",
+      "The wages paid to each employee"
+     ],
+     "answer": "A business's assets, liabilities and equity at a particular date",
+     "accept": [],
+     "hint": "It is often described as a snapshot.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rby9fnm15gevp0",
+     "subject": "bus",
+     "type": "short",
+     "q": "State the term for items of value that a business owns.",
+     "options": [],
+     "answer": "assets",
+     "accept": [
+      "asset"
+     ],
+     "hint": "Machinery and inventory are examples.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfn9odvhp7kll",
+     "subject": "bus",
+     "type": "short",
+     "q": "State the term for debts that a business owes.",
+     "options": [],
+     "answer": "liabilities",
+     "accept": [
+      "liability"
+     ],
+     "hint": "Loans and money owed to suppliers are examples.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxp9ek01qcwedp",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which of these is a non-current asset?",
+     "options": [
+      "Delivery vehicles",
+      "Inventory",
+      "Trade receivables",
+      "Cash"
+     ],
+     "answer": "Delivery vehicles",
+     "accept": [],
+     "hint": "Non-current assets are kept for more than one year.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14miliz16bm8b0",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which of these is a current asset?",
+     "options": [
+      "Inventory",
+      "Buildings",
+      "Machinery",
+      "Long-term loan"
+     ],
+     "answer": "Inventory",
+     "accept": [],
+     "hint": "Current assets are likely to be turned into cash within a year.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4uiv8735eivv",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which of these is a current liability?",
+     "options": [
+      "Trade payables",
+      "Mortgage repayable in 20 years",
+      "Land",
+      "Shareholders' equity"
+     ],
+     "answer": "Trade payables",
+     "accept": [],
+     "hint": "Current liabilities must be paid within a year.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19hdgl41f04rvc",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Money owed to a business by its customers is called:",
+     "options": [
+      "Trade receivables",
+      "Trade payables",
+      "Retained profit",
+      "Overdraft"
+     ],
+     "answer": "Trade receivables",
+     "accept": [],
+     "hint": "The business will receive this money.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lg8fp11qs44t6",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which of these is a non-current liability?",
+     "options": [
+      "A bank loan repayable over ten years",
+      "An overdraft",
+      "Money owed to suppliers",
+      "Inventory"
+     ],
+     "answer": "A bank loan repayable over ten years",
+     "accept": [],
+     "hint": "Look for a debt that lasts more than one year.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruqoo399v4lc3",
+     "subject": "bus",
+     "type": "num",
+     "q": "A business has total assets of $480,000 and total liabilities of $190,000. Calculate its net assets in $.",
+     "options": [],
+     "answer": "290000",
+     "accept": [],
+     "hint": "Net assets = total assets − total liabilities.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1csfkeq11kc7jw",
+     "subject": "bus",
+     "type": "mc",
+     "q": "On a statement of financial position, net assets are equal to:",
+     "options": [
+      "Total equity (shareholders' equity)",
+      "Revenue",
+      "Gross profit",
+      "Current assets"
+     ],
+     "answer": "Total equity (shareholders' equity)",
+     "accept": [],
+     "hint": "The statement must balance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15wbtmjkcwvly",
+     "subject": "bus",
+     "type": "num",
+     "q": "A shop has current assets of $36,000 and current liabilities of $24,000. Calculate its working capital in $.",
+     "options": [],
+     "answer": "12000",
+     "accept": [],
+     "hint": "Working capital = current assets − current liabilities.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pfoa0l1rx0c1w",
+     "subject": "bus",
+     "type": "num",
+     "q": "A firm has current assets of $50,000 and current liabilities of $25,000. Calculate its current ratio.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Current ratio = current assets ÷ current liabilities.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ba79so1wbrtcv",
+     "subject": "bus",
+     "type": "mc",
+     "q": "A current ratio well below 1 most likely suggests that a business:",
+     "options": [
+      "May struggle to pay its short-term debts",
+      "Is very profitable",
+      "Has too much cash",
+      "Has no non-current assets"
+     ],
+     "answer": "May struggle to pay its short-term debts",
+     "accept": [],
+     "hint": "Compare what it owns in the short term with what it owes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19jskjt5c2wv9",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which group would be MOST interested in a statement of financial position before lending money?",
+     "options": [
+      "Banks",
+      "Customers buying a single product",
+      "Competitors' employees",
+      "Tourists"
+     ],
+     "answer": "Banks",
+     "accept": [],
+     "hint": "Think about who wants to know if a loan can be repaid.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd7bf5i1j952j",
+     "subject": "bus",
+     "type": "open",
+     "q": "Explain one limitation of using a statement of financial position to judge how well a business is performing.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what the statement does not show, and when it was drawn up.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtxo9b2157e50j",
+     "subject": "bus",
+     "type": "open",
+     "q": "A company's inventory has risen sharply while its cash has fallen. Analyse what this might mean for the business.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider liquidity and whether the inventory can be sold.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "chem": {
+   "topic": "Alkenes: cracking and addition reactions",
+   "questions": [
+    {
+     "id": "rsci52k1h2xlkt",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What does 'unsaturated' mean when describing an alkene?",
+     "options": [
+      "It contains a carbon–carbon double bond",
+      "It contains only single bonds",
+      "It contains oxygen",
+      "It cannot react"
+     ],
+     "answer": "It contains a carbon–carbon double bond",
+     "accept": [],
+     "hint": "Think about the bond that makes alkenes different from alkanes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfepbsubryh5y",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What is the general formula of the alkenes?",
+     "options": [
+      "CnH2n",
+      "CnH2n+2",
+      "CnH2n−2",
+      "CnHn"
+     ],
+     "answer": "CnH2n",
+     "accept": [],
+     "hint": "Ethene is C2H4.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h17k3i1ea29xz",
+     "subject": "chem",
+     "type": "short",
+     "q": "Give the molecular formula of propene.",
+     "options": [],
+     "answer": "C3H6",
+     "accept": [],
+     "hint": "Use the general formula with n = 3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4pjpcy1ibfne2",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Which statement best describes cracking?",
+     "options": [
+      "Breaking down large alkane molecules into smaller, more useful molecules",
+      "Joining small alkenes to make polymers",
+      "Burning alkanes in excess oxygen",
+      "Separating crude oil by boiling point"
+     ],
+     "answer": "Breaking down large alkane molecules into smaller, more useful molecules",
+     "accept": [],
+     "hint": "The word suggests molecules being split.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tz3slzd2bxar",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Which conditions are used in catalytic cracking?",
+     "options": [
+      "High temperature and a catalyst",
+      "Low temperature and high pressure only",
+      "Room temperature and water",
+      "Freezing temperature and light"
+     ],
+     "answer": "High temperature and a catalyst",
+     "accept": [],
+     "hint": "The name 'catalytic' gives one clue.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgrbvjh19ti4n1",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Which products are formed by cracking a large alkane?",
+     "options": [
+      "Smaller alkanes, alkenes and sometimes hydrogen",
+      "Only carbon dioxide and water",
+      "Only large alkenes",
+      "Alcohols and acids"
+     ],
+     "answer": "Smaller alkanes, alkenes and sometimes hydrogen",
+     "accept": [],
+     "hint": "Cracking produces a mixture.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtjbrts151i87g",
+     "subject": "chem",
+     "type": "short",
+     "q": "Decane is cracked: C10H22 → C8H18 + X. Give the formula of X.",
+     "options": [],
+     "answer": "C2H4",
+     "accept": [],
+     "hint": "Balance the carbon and hydrogen atoms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgfpfoe1syw4ss",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Give one reason why oil refineries crack long-chain alkanes.",
+     "options": [
+      "There is more demand for shorter-chain fuels like petrol than supply",
+      "Long-chain alkanes are gases",
+      "Cracking removes all pollution",
+      "Shorter alkanes are cheaper to store"
+     ],
+     "answer": "There is more demand for shorter-chain fuels like petrol than supply",
+     "accept": [],
+     "hint": "Compare supply and demand for different fractions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q61yba1tw3p7w",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What colour change is seen when an alkene is shaken with bromine water?",
+     "options": [
+      "Orange to colourless",
+      "Colourless to orange",
+      "Blue to green",
+      "No change"
+     ],
+     "answer": "Orange to colourless",
+     "accept": [],
+     "hint": "The bromine is used up in a reaction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm4buju1doat8j",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What is seen when an alkane is shaken with bromine water at room temperature in the dark?",
+     "options": [
+      "The solution stays orange",
+      "It turns colourless",
+      "It turns blue",
+      "A white precipitate forms"
+     ],
+     "answer": "The solution stays orange",
+     "accept": [],
+     "hint": "Alkanes are saturated.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hmj8zv16nzx1g",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What type of reaction occurs when bromine reacts with ethene?",
+     "options": [
+      "Addition",
+      "Substitution",
+      "Neutralisation",
+      "Thermal decomposition"
+     ],
+     "answer": "Addition",
+     "accept": [],
+     "hint": "Two molecules join to make one product.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11zmgqm18yezf8",
+     "subject": "chem",
+     "type": "short",
+     "q": "Name the product formed when ethene reacts with bromine.",
+     "options": [],
+     "answer": "1,2-dibromoethane",
+     "accept": [
+      "dibromoethane",
+      "1,2 dibromoethane"
+     ],
+     "hint": "Two bromine atoms add across the double bond of a two-carbon molecule.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3ccyjje5t5bp",
+     "subject": "chem",
+     "type": "short",
+     "q": "Name the product when ethene reacts with hydrogen.",
+     "options": [],
+     "answer": "ethane",
+     "accept": [],
+     "hint": "The alkene becomes the matching alkane.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcedoi14sd8m6",
+     "subject": "chem",
+     "type": "short",
+     "q": "Name the product made when ethene reacts with steam in the presence of an acid catalyst.",
+     "options": [],
+     "answer": "ethanol",
+     "accept": [],
+     "hint": "It is an alcohol with two carbon atoms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r740sn71og4lyv",
+     "subject": "chem",
+     "type": "num",
+     "q": "Calculate the relative formula mass (Mr) of ethene, C2H4. (Ar: C = 12, H = 1)",
+     "options": [],
+     "answer": "28",
+     "accept": [],
+     "hint": "Add the masses of all the atoms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hf86czgzn0dm",
+     "subject": "chem",
+     "type": "open",
+     "q": "Describe how bromine water can be used to distinguish between hexane and hexene, and explain the difference in terms of bonding.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Mention the observations for each and the double bond.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
