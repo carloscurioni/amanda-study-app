@@ -3981,6 +3981,910 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Kestrel Bay Files",
+   "premise": "Two Year 8 reporters on their school newspaper learn to compare non-fiction texts — leaflets, letters, diaries, blogs, interviews and news reports — as they investigate stories in their seaside town.",
+   "chapters": [
+    {
+     "title": "Chapter 1: Two Views of the Pier",
+     "synopsis": "Mia and Tobias join the school newspaper and are given two very different texts about the old pier in Kestrel Bay. They discover that the same place can be described in opposite ways.",
+     "text": "On her first Monday as a reporter for The Gull, the Year 8 newspaper at Kestrel Bay Academy, Mia Ferreira arrived ten minutes early. Tobias Lund arrived eight minutes late, holding half a sandwich and an apology. Their editor, Ms Adair, did not seem to mind. She simply slid two sheets of paper across the table.\n\"Your first job,\" she said, \"is not to write anything. It is to read. Both of these are about the old pier. Tell me how they are different.\"\nThe first text was a glossy council leaflet. It was titled 'A Bright Future for Kestrel Pier'. It explained that the pier was 140 years old, that repairs would cost £2.3 million, and that a new café and viewing deck would 'attract up to 40,000 extra visitors each summer'. The sentences were short and confident. There were bullet points, a photograph of smiling families, and the words 'investment', 'opportunity' and 'modern' appeared again and again.\nThe second text was a handwritten letter to the local paper, signed only 'A Fisherman of Forty Years'. It began: 'Every morning for forty years I have watched the sun come up from the end of that pier.' The writer described the creak of the boards, the smell of salt and diesel, and the friends he had made there. He was worried that the new café would mean higher prices and no space for fishing lines. 'They want to polish the pier until there is nothing of us left on it,' he wrote.\nTobias read the leaflet first and shrugged. \"The council one has all the facts. Numbers, costs, visitor figures. It's obviously the more reliable one.\"\nMia frowned. \"It has numbers, but it only gives the good side. It never mentions the fishermen at all. The letter has no statistics, but it tells you something the leaflet hides.\"\nMs Adair smiled. \"That,\" she said, \"is exactly the kind of argument I want. Now prove it. Find a quotation from each text that shows the writer's attitude.\"\nThey worked for twenty minutes. Mia chose 'a bright future' from the leaflet and explained that it made change sound exciting and safe. Tobias, to his own surprise, chose 'polish the pier until there is nothing of us left' from the letter, and said the word 'polish' made improvement sound like something that rubs people away.\nWhen the bell rang, Ms Adair collected their notes. \"Good start. The council is positive and uses facts to persuade. The fisherman is sad and uses personal memories. Same pier, two attitudes, two methods.\" She paused at the door. \"Next week I'm taking you somewhere dusty.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the school newspaper?",
+       "options": [],
+       "answer": "The Gull",
+       "accept": [
+        "Gull"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how much would the pier repairs cost according to the leaflet?",
+       "options": [
+        "£2.3 million",
+        "£40,000",
+        "£140,000",
+        "£23 million"
+       ],
+       "answer": "£2.3 million",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who wrote the second text?",
+       "options": [
+        "A fisherman",
+        "The council",
+        "Ms Adair",
+        "A café owner"
+       ],
+       "answer": "A fisherman",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which method does the council leaflet mainly use to persuade?",
+       "options": [
+        "Facts and statistics",
+        "Personal memories",
+        "Rhetorical questions",
+        "Humour"
+       ],
+       "answer": "Facts and statistics",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the fisherman worried about?",
+       "options": [
+        "Higher prices and no space for fishing",
+        "The pier falling into the sea",
+        "Too few visitors in summer",
+        "The café closing down"
+       ],
+       "answer": "Higher prices and no space for fishing",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Mia think the leaflet is not the whole story?",
+       "options": [
+        "It only shows the positive side",
+        "It has too many statistics",
+        "It is handwritten",
+        "It is too old"
+       ],
+       "answer": "It only shows the positive side",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the word 'polish' suggest about the fisherman's attitude to the changes?",
+       "options": [
+        "He feels improvement will remove the people who use the pier",
+        "He wants the pier to be cleaner",
+        "He is excited about the new café",
+        "He thinks the council is working too slowly"
+       ],
+       "answer": "He feels improvement will remove the people who use the pier",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Ms Adair asked them to read before writing anything?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Storm Diary",
+     "synopsis": "Ms Adair takes Mia and Tobias to the town museum to compare an old diary entry about a storm with a modern weather report. They notice how each writer makes danger feel real in a different way.",
+     "text": "The 'somewhere dusty' turned out to be the Kestrel Bay Museum, a narrow building that smelled of old paper and floor polish. In a back room, a volunteer called Mr Pellow laid a leather diary on a cushion. It had been written in 1891 by a lighthouse keeper's daughter named Edith Crane.\n\"Gloves on, please,\" said Mr Pellow. Tobias put them on as if he were about to perform surgery.\nEdith's entry for the night of the great storm was written in slanting ink. 'The wind screamed all night like a creature trapped in the chimney. Father did not come down from the lamp room until dawn. I held the candle and counted the waves that struck the rocks, and I lost count at two hundred. I prayed for every soul at sea.'\nMs Adair then handed them a printout of a modern weather report about the storm that had hit Kestrel Bay last month. It read: 'Gusts reached 78 miles per hour at 02:00. Waves of up to six metres were recorded off the headland. Residents were advised to avoid the seafront. No injuries were reported.'\n\"So,\" said Ms Adair. \"Both writers want you to understand a dangerous storm. How do they do it?\"\nTobias pointed at the report. \"This one gives exact measurements. Seventy-eight miles per hour. Six metres. It's calm, but the numbers are scary on their own.\"\nMia read Edith's words again. \"Edith uses a simile. The wind is 'like a creature trapped'. That makes it sound alive and angry. And she writes in the first person, so we feel her fear. The report doesn't tell us how anyone felt.\"\n\"Why not?\" asked Ms Adair.\nMia thought about it. \"Because its purpose is to inform and give warnings. Edith was writing for herself. Nobody was going to mark her diary.\"\nMr Pellow chuckled. \"She'd be astonished to know two students are studying it now.\"\nBefore they left, Tobias noticed something. \"Both texts end the same way, kind of. Edith prays for the people at sea, and the report says no injuries were reported. They both care about people being safe.\"\nMs Adair raised her eyebrows. \"That is a similarity, Tobias. Write it down before you forget it. Comparing isn't only about differences.\"\nAs they walked back up the hill, Tobias admitted the diary had been more interesting than he expected. Mia did not say anything, but she wrote 'two hundred waves' on the back of her hand so she would remember it.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, in which year was the diary written?",
+       "options": [],
+       "answer": "1891",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who wrote the diary?",
+       "options": [
+        "A lighthouse keeper's daughter",
+        "A fisherman",
+        "A museum volunteer",
+        "A weather forecaster"
+       ],
+       "answer": "A lighthouse keeper's daughter",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what wind speed does the weather report give?",
+       "options": [
+        "78 miles per hour",
+        "200 miles per hour",
+        "6 miles per hour",
+        "40 miles per hour"
+       ],
+       "answer": "78 miles per hour",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which language device does Mia find in the diary?",
+       "options": [
+        "A simile",
+        "A statistic",
+        "A rhetorical question",
+        "A headline"
+       ],
+       "answer": "A simile",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the main purpose of the weather report?",
+       "options": [
+        "To inform and warn",
+        "To entertain",
+        "To share private feelings",
+        "To sell something"
+       ],
+       "answer": "To inform and warn",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what similarity between the two texts does Tobias notice?",
+       "options": [
+        "Both care about people being safe",
+        "Both use the first person",
+        "Both give exact measurements",
+        "Both were written last month"
+       ],
+       "answer": "Both care about people being safe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the diary feel more emotional than the report?",
+       "options": [
+        "It is written in the first person about the writer's own fear",
+        "It contains more numbers",
+        "It was printed in a newspaper",
+        "It describes a stronger storm"
+       ],
+       "answer": "It is written in the first person about the writer's own fear",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mia wrote 'two hundred waves' on her hand?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Phones in the Classroom",
+     "synopsis": "The Gull receives two opinion articles about mobile phones in school, and Mia and Tobias disagree about which is more convincing. They learn to judge an argument by its methods, not just by whether they agree.",
+     "text": "On Thursday, The Gull's inbox contained two opinion pieces for the debate page. Both were about the same question: should students be allowed to use mobile phones in lessons?\nThe first article was written by a Year 10 student called Ravi Desai, who argued for phones. It opened with a question: 'Would you ban pencils because some people doodle?' Ravi claimed that phones let students check facts instantly, record homework and use learning apps. He described his cousin, who used a translation app to understand his science lessons when he first moved to the country. The tone was lively and a little cheeky.\nThe second article came from a parent, who signed herself 'A Worried Mum'. She argued against phones. She wrote in long, careful sentences and used phrases such as 'research suggests' and 'many teachers report'. She described notifications buzzing during tests and students hiding screens under desks. She ended with a direct appeal: 'Let us give our children one place where they can simply think.'\nTobias finished reading first. \"Ravi's is brilliant. Pencils! That's such a good point. I'm on his side.\"\n\"That's not the task,\" said Mia, who secretly agreed with the parent. \"We're not voting. We're comparing how they persuade.\"\nMs Adair, passing behind them with a mug of tea, nodded. \"Agreeing with a writer is not the same as analysing them. Try again.\"\nTobias sighed, then looked more carefully. \"All right. Ravi uses a rhetorical question at the start to make the other side look silly. He uses an anecdote about his cousin to make it personal. His tone is chatty, so it feels like a friend talking.\"\nMia added, \"The parent sounds more formal and serious. She refers to research, but she doesn't actually give any numbers, so we can't check it. Her ending is emotive. 'One place where they can simply think' makes school sound peaceful and precious.\"\n\"So who is more convincing?\" asked Ms Adair.\nThey looked at each other. Tobias said, \"Ravi is more entertaining, but his evidence is just one story about one cousin.\" Mia said, \"The parent sounds more authoritative, but 'research suggests' is a bit vague.\"\n\"Then both have strengths and weaknesses,\" said Ms Adair. \"That is a balanced comparison. Put it in your notes, with a quotation from each.\"\nTobias wrote quickly. Then he added a line at the bottom of the page: 'Still on Ravi's side.' Mia drew a small, disapproving face next to it. Ms Adair pretended not to see.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what question are both articles about?",
+       "options": [
+        "Whether phones should be allowed in lessons",
+        "Whether homework should be banned",
+        "Whether pencils are useful",
+        "Whether the school should have a café"
+       ],
+       "answer": "Whether phones should be allowed in lessons",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Ravi's article begin?",
+       "options": [
+        "With a rhetorical question",
+        "With a statistic",
+        "With a quotation from a teacher",
+        "With a headline"
+       ],
+       "answer": "With a rhetorical question",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who did Ravi write about in his anecdote?",
+       "options": [],
+       "answer": "his cousin",
+       "accept": [
+        "cousin",
+        "Ravi's cousin"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does the parent's tone differ from Ravi's?",
+       "options": [
+        "It is more formal and serious",
+        "It is more cheeky",
+        "It is more humorous",
+        "It is more chatty"
+       ],
+       "answer": "It is more formal and serious",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what weakness does Mia notice in the parent's use of research?",
+       "options": [
+        "She gives no actual figures to check",
+        "She uses too many numbers",
+        "She only talks about her cousin",
+        "She agrees with Ravi"
+       ],
+       "answer": "She gives no actual figures to check",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Adair mean when she says agreeing is not the same as analysing?",
+       "options": [
+        "You should study how a writer persuades, not just pick a side",
+        "You should always agree with the most popular writer",
+        "You should never have an opinion",
+        "You should only read formal articles"
+       ],
+       "answer": "You should study how a writer persuades, not just pick a side",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mia's drawing of a disapproving face suggest?",
+       "options": [
+        "She still disagrees with Tobias's opinion",
+        "She is angry with Ms Adair",
+        "She thinks the task was too easy",
+        "She has changed her mind"
+       ],
+       "answer": "She still disagrees with Tobias's opinion",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Which article do you think would persuade most students your age, and why?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Guidebook and the Blog",
+     "synopsis": "Mia and Tobias compare a formal guidebook entry about the Kestrel Caves with a funny travel blog about the same caves. Then they visit the caves to judge for themselves.",
+     "text": "\"Field trip,\" announced Ms Adair on Tuesday, holding up two pages. \"But first, homework.\"\nThe first page came from a guidebook called Coastal Walks of the South West. Its entry on the Kestrel Caves was neat and precise. 'The caves were formed over thousands of years as waves eroded softer rock along the cliff. Access is possible only at low tide. Visitors should wear sturdy footwear and check tide times before setting out. Allow approximately forty-five minutes for a visit.' There was a small map and a warning symbol.\nThe second page was a post from a travel blog called Granny on the Go, written by a retired teacher who signed her posts 'June'. 'Reader, I wore sandals. Do not wear sandals,' it began. June described slipping on seaweed, being scolded by a seagull and discovering 'a cave so beautiful I forgave the seagull completely'. She described the light as 'green as the inside of a grape'. She ended: 'Go. But bring proper shoes and a sense of humour.'\nTobias laughed out loud at the seagull. \"This is the best thing we've read. She's hilarious.\"\n\"She is,\" said Mia, \"but notice she gives the same advice as the guidebook. Wear proper shoes. The guidebook says 'sturdy footwear'. June says 'Do not wear sandals'. Same message, different method.\"\nTobias nodded slowly. \"The guidebook tells you directly, in formal language. June tells you through a funny story about her own mistake. You remember hers better, though.\"\n\"Why?\" asked Ms Adair.\n\"Because it's personal. And the short sentences are like punchlines.\"\nOn Saturday, Ms Adair took the newspaper team to the caves, checking the tide table twice. Everyone wore boots. Inside the largest cave, the light really did glow green where the sun came through a gap in the rock. Tobias whispered, \"Inside of a grape,\" and Mia had to admit that June's description was more accurate than anything in the guidebook.\n\"So which text is better?\" asked Ms Adair as they climbed back up the path.\nMia considered it. \"Depends on the reader. If I needed to know exactly when it's safe, I'd trust the guidebook. If I wanted to know what it feels like, I'd read June.\"\n\"And their attitudes?\"\n\"The guidebook is neutral and cautious,\" said Tobias. \"June is enthusiastic, but she's honest about the problems.\"\nA seagull landed on the railing beside them and stared at Tobias's sandwich. He moved it away very quickly. \"June warned us,\" he said.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the travel blog?",
+       "options": [],
+       "answer": "Granny on the Go",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, according to the guidebook, when can visitors reach the caves?",
+       "options": [
+        "Only at low tide",
+        "Only at high tide",
+        "Only in summer",
+        "At any time"
+       ],
+       "answer": "Only at low tide",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what mistake did June make?",
+       "options": [
+        "She wore sandals",
+        "She forgot the tide times",
+        "She went at night",
+        "She lost her map"
+       ],
+       "answer": "She wore sandals",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does June describe the light in the cave?",
+       "options": [
+        "Green as the inside of a grape",
+        "Blue as the sea",
+        "Bright as the sun",
+        "Dark as a tunnel"
+       ],
+       "answer": "Green as the inside of a grape",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what advice do both texts share?",
+       "options": [
+        "Wear proper shoes",
+        "Feed the seagulls",
+        "Visit at night",
+        "Bring a camera"
+       ],
+       "answer": "Wear proper shoes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Tobias describe the guidebook's attitude?",
+       "options": [
+        "Neutral and cautious",
+        "Enthusiastic and funny",
+        "Angry and critical",
+        "Sad and nostalgic"
+       ],
+       "answer": "Neutral and cautious",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Mia say the better text 'depends on the reader'?",
+       "options": [
+        "Each text suits a different purpose and need",
+        "Both texts are equally boring",
+        "Neither text is accurate",
+        "The guidebook is too short"
+       ],
+       "answer": "Each text suits a different purpose and need",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think personal stories, like June's, are often easier to remember than formal advice?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Keeper and the Encyclopedia",
+     "synopsis": "Mia and Tobias interview a retired lighthouse keeper and compare his memories with an encyclopedia entry about lighthouses. They discover the value of first-hand accounts.",
+     "text": "Since the storm diary, Tobias had become slightly obsessed with lighthouses. So when Ms Adair said The Gull needed a feature article, he suggested interviewing someone who had actually worked in one.\nThat was how they met Mr Abel Trewin, eighty-one years old, who had kept the Kestrel Point light for twenty-two years before it was automated. He sat in his garden with a pot of tea and a biscuit tin shaped like a lighthouse.\nBefore the interview, Mia had read a short encyclopedia entry. It said: 'Lighthouses warn ships of dangerous rocks and coastlines and help sailors to navigate. In the past, keepers lived at lighthouses to keep the lamps lit and the lenses clean. Today most lighthouses are automated and are monitored remotely.' It was clear, accurate and completely impersonal.\nMr Trewin's version was very different. \"Cleaning the lens was like polishing a giant diamond,\" he told them. \"Every morning. If you left a smear, the light wouldn't carry as far, and someone out there might not see it.\" He described winter nights when the spray hit the windows of the lamp room, and the silence of summer evenings. \"People think it was lonely. It wasn't. The sea is never quiet company.\"\nTobias recorded everything on a borrowed voice recorder. Mia took notes.\nWhen they asked how he felt about automation, Mr Trewin was quiet for a moment. \"It's sensible,\" he said finally. \"Machines don't fall asleep. But a machine doesn't love the place.\"\nBack at school, they laid out the transcript next to the encyclopedia entry.\n\"They actually agree on the facts,\" said Mia. \"Keepers cleaned the lenses. Most lighthouses are automated now. But the encyclopedia is written in the third person and the present tense. It's general. Mr Trewin talks in the first person and the past tense. It's about his life.\"\n\"And his attitude to automation is mixed,\" added Tobias. \"He says it's sensible, but he's sad. The encyclopedia doesn't have an attitude at all. It just says 'today most lighthouses are automated'.\"\nMs Adair read their notes. \"So which source would you use for your article?\"\n\"Both,\" said Mia firmly. \"The encyclopedia for the facts that readers need, and Mr Trewin for the feeling. One gives the information, and the other makes people care about it.\"\nTheir feature, 'Keeper of the Light', was printed the following week. Mr Trewin asked for three copies. He put one in the lighthouse-shaped biscuit tin.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many years did Mr Trewin keep the Kestrel Point light?",
+       "options": [],
+       "answer": "twenty-two",
+       "accept": [
+        "22",
+        "twenty two"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Mr Trewin compare cleaning the lens to?",
+       "options": [
+        "Polishing a giant diamond",
+        "Washing a car",
+        "Cleaning a window",
+        "Painting a wall"
+       ],
+       "answer": "Polishing a giant diamond",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, according to the encyclopedia, how are most lighthouses run today?",
+       "options": [
+        "They are automated",
+        "By families",
+        "By volunteers",
+        "They have all closed"
+       ],
+       "answer": "They are automated",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what person and tense does the encyclopedia use?",
+       "options": [
+        "Third person, present tense",
+        "First person, past tense",
+        "First person, present tense",
+        "Second person, future tense"
+       ],
+       "answer": "Third person, present tense",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Mr Trewin feel about automation?",
+       "options": [
+        "Mixed: he finds it sensible but feels sad",
+        "Completely happy",
+        "Furious",
+        "He has no opinion"
+       ],
+       "answer": "Mixed: he finds it sensible but feels sad",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mr Trewin mean by 'a machine doesn't love the place'?",
+       "options": [
+        "A person brings care and attachment that a machine cannot",
+        "Machines often break down",
+        "The lighthouse is not important any more",
+        "Machines are too expensive"
+       ],
+       "answer": "A person brings care and attachment that a machine cannot",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Mia decide to use both sources?",
+       "options": [
+        "One gives facts and the other makes readers care",
+        "The encyclopedia is wrong",
+        "Mr Trewin forgot the facts",
+        "Ms Adair told her to use only one"
+       ],
+       "answer": "One gives facts and the other makes readers care",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mr Trewin put a copy of the article in the biscuit tin?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Two Headlines, One Fun Run",
+     "synopsis": "Two local news reports describe the same charity fun run in very different ways. Mia and Tobias investigate how word choice and selection of facts can create bias.",
+     "text": "The Kestrel Bay Fun Run took place on a bright Sunday in early spring. Over six hundred people ran along the seafront, raising money for the town's lifeboat station. By Monday, two local news websites had published reports, and Ms Adair printed both.\nThe first headline read: 'Record Crowds Run for Lifeboat Heroes'. The report described 'a sea of colourful costumes', a family who ran dressed as a lobster, and the 'cheering crowds' lining the promenade. It quoted the organiser saying the event had raised over £12,000. The final sentence read: 'Kestrel Bay showed its big heart once again.'\nThe second headline read: 'Fun Run Chaos Leaves Shops Shut'. This report focused on the road closures. It quoted a shop owner who said she had lost a whole morning of business. It mentioned 'traffic jams stretching back to the roundabout' and 'confused drivers'. It did mention the money raised, but only in the last paragraph, and only as 'a sum thought to be around £12,000'.\nTobias laid them side by side. \"Is one of them lying?\"\nMia shook her head. \"I don't think so. They both say six hundred runners and twelve thousand pounds. They've just chosen different things to put first.\"\n\"That's called selection,\" said Ms Adair. \"Writers choose which facts to include and where to put them. What about the language?\"\nTobias underlined words. \"The first one uses 'heroes', 'big heart', 'cheering'. All positive. The second one uses 'chaos', 'jams', 'confused'. All negative. Even the headlines are opposites.\"\n\"And notice who each report quotes,\" added Mia. \"The first quotes the organiser, who is obviously happy. The second quotes a shop owner, who is obviously annoyed. Neither of them quotes both.\"\nMs Adair nodded. \"So if you were writing The Gull's report, what would you do?\"\nTobias thought about it. \"Give both sides. Say how much money was raised, but also say that some shops lost business. Quote the organiser and the shop owner.\"\n\"And use neutral words,\" said Mia. \"Not 'chaos' and not 'heroes'. Just say what happened.\"\nThey wrote a short report together. It began: 'More than six hundred runners raised around £12,000 for the lifeboat station on Sunday, although road closures caused delays for some drivers and businesses.' Ms Adair read it twice and said it was the fairest sentence anyone had written in The Gull that year.\nTobias looked pleased. Then he looked worried. \"Does this mean we're boring now?\"\n\"It means,\" said Ms Adair, \"that people can trust you. That's harder to earn than a funny headline.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the fun run raising money for?",
+       "options": [
+        "The lifeboat station",
+        "The museum",
+        "The pier repairs",
+        "The school newspaper"
+       ],
+       "answer": "The lifeboat station",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how much money was raised, according to both reports?",
+       "options": [],
+       "answer": "£12,000",
+       "accept": [
+        "12,000",
+        "12000",
+        "twelve thousand pounds",
+        "£12000",
+        "around £12,000"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the second report focus on?",
+       "options": [
+        "Road closures and lost business",
+        "Colourful costumes",
+        "The lifeboat crew",
+        "The winner of the race"
+       ],
+       "answer": "Road closures and lost business",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who does the first report quote?",
+       "options": [
+        "The organiser",
+        "A shop owner",
+        "A driver",
+        "Ms Adair"
+       ],
+       "answer": "The organiser",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Adair call choosing which facts to include and where to put them?",
+       "options": [
+        "Selection",
+        "Translation",
+        "Description",
+        "Repetition"
+       ],
+       "answer": "Selection",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Mia say neither report is lying?",
+       "options": [
+        "They share the same facts but put different ones first",
+        "They were written by the same person",
+        "Neither gives any facts",
+        "They both quote the shop owner"
+       ],
+       "answer": "They share the same facts but put different ones first",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Adair suggest is more valuable than a funny headline?",
+       "options": [
+        "Being trusted by readers",
+        "Winning prizes",
+        "Writing quickly",
+        "Using strong words"
+       ],
+       "answer": "Being trusted by readers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think a news website might choose a negative headline like 'Fun Run Chaos'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Final Edition",
+     "synopsis": "The council announces its decision about the pier, and Mia and Tobias write The Gull's front-page article. They use everything they have learned about comparing texts to give a fair picture.",
+     "text": "At the end of term, the council announced its decision about Kestrel Pier. The repairs would go ahead, and there would be a café, but part of the end of the pier would be kept free for fishing every morning until ten o'clock.\n\"That's our front page,\" said Ms Adair. \"Mia and Tobias, it's yours. You started with the pier, so you finish with it.\"\nThey gathered their sources: the original council leaflet, the fisherman's letter, a new council press release and a short interview they had done with the fisherman himself. His name turned out to be Mr Danny Hosken, and he was much cheerier in person than in his letter.\nThe new press release was even more confident than the leaflet. It used the phrase 'a pier for everyone' three times. Mr Hosken's interview was more cautious. \"Ten o'clock is better than nothing,\" he said. \"But I'll believe it when I see my rod on those boards next summer.\"\n\"So how do we compare them?\" asked Tobias. \"We've done this so many times now.\"\nMia counted on her fingers. \"Attitudes first. The council is proud and optimistic. Mr Hosken is relieved but suspicious. Then methods. The council repeats a slogan and uses formal language. Mr Hosken uses humour and a personal image, his rod on the boards. Then evidence: we need a quotation from each.\"\n\"And similarities,\" said Tobias. \"Don't forget those. They both want the pier to survive. They just disagree about who it's for.\"\nMia looked at him in surprise. \"That's actually the best line we've got. Put it in the first paragraph.\"\nTheir article was titled 'A Pier for Everyone? Both Sides Have Their Say'. It explained the decision clearly, quoted the press release and Mr Hosken, and ended with Tobias's line: 'Everyone agrees the pier should survive. The real question is who it belongs to.'\nOn the day The Gull was printed, Mia saw a copy pinned to the noticeboard of the café on the seafront. Tobias saw one in the window of the bait shop. \"Both sides put it up,\" he said, amazed. \"That means they both thought it was fair.\"\nMs Adair called them into the newspaper room one last time before the holidays. She handed each of them a small card. On Mia's she had written: 'You found the side that was hidden.' On Tobias's: 'You found what the two sides shared.'\n\"Same newspaper,\" said Tobias, reading both cards, \"two different attitudes.\"\n\"Compare and contrast,\" said Mia, and for once he was the one who laughed first.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the council decide about the pier?",
+       "options": [
+        "Repair it, add a café and keep space for fishing in the mornings",
+        "Close it completely",
+        "Ban fishing on the pier",
+        "Leave it exactly as it was"
+       ],
+       "answer": "Repair it, add a café and keep space for fishing in the mornings",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, until what time would part of the pier be kept for fishing?",
+       "options": [],
+       "answer": "ten o'clock",
+       "accept": [
+        "10 o'clock",
+        "10",
+        "ten",
+        "10:00",
+        "10 am"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which phrase does the press release repeat three times?",
+       "options": [
+        "A pier for everyone",
+        "A bright future",
+        "Big heart",
+        "Lifeboat heroes"
+       ],
+       "answer": "A pier for everyone",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Mia describe Mr Hosken's attitude?",
+       "options": [
+        "Relieved but suspicious",
+        "Proud and optimistic",
+        "Furious and rude",
+        "Bored and uninterested"
+       ],
+       "answer": "Relieved but suspicious",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what similarity between the two sides does Tobias point out?",
+       "options": [
+        "They both want the pier to survive",
+        "They both use slogans",
+        "They both want a café",
+        "They both dislike fishing"
+       ],
+       "answer": "They both want the pier to survive",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is it significant that both the café and the bait shop displayed the article?",
+       "options": [
+        "It shows both sides felt the article was fair",
+        "It shows the article was free",
+        "It shows Ms Adair delivered it",
+        "It shows nobody read it"
+       ],
+       "answer": "It shows both sides felt the article was fair",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do Ms Adair's cards suggest about Mia and Tobias?",
+       "options": [
+        "They have different strengths that work well together",
+        "Mia is a better writer than Tobias",
+        "They both need to work harder",
+        "They will leave the newspaper"
+       ],
+       "answer": "They have different strengths that work well together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "How do you think Tobias has changed since the first chapter? Give one example.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
