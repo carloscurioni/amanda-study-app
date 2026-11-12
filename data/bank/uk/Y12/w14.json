@@ -5593,6 +5593,2492 @@
      "errors": []
     }
    ]
+  },
+  "phys-hl": {
+   "topic": "B.5 Circuits: internal resistance, emf and potential dividers",
+   "questions": [
+    {
+     "id": "r1k0zk6z1omcy44",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which statement about resistors connected in parallel is correct?",
+     "options": [
+      "They all have the same potential difference across them",
+      "They all carry the same current",
+      "The total resistance is the sum of the resistances",
+      "The total resistance is larger than the largest resistor"
+     ],
+     "answer": "They all have the same potential difference across them",
+     "accept": [],
+     "hint": "Think about which two points every branch is connected between.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkbdutbxag10a",
+     "subject": "phys",
+     "type": "num",
+     "q": "Resistors of 3.0 Ω, 5.0 Ω and 7.0 Ω are connected in series. Calculate the total resistance in Ω.",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "In series, the same current passes through each resistor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xpesfq1kaj3c2",
+     "subject": "phys",
+     "type": "num",
+     "q": "Resistors of 6.0 Ω and 3.0 Ω are connected in parallel. Calculate the total resistance in Ω.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Use 1/R = 1/R₁ + 1/R₂.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r44n977wtpby6",
+     "subject": "phys",
+     "type": "num",
+     "q": "A 12 Ω resistor is connected in series with a pair of 8.0 Ω resistors that are in parallel with each other. Calculate the total resistance in Ω.",
+     "options": [],
+     "answer": "16",
+     "accept": [],
+     "hint": "Find the parallel part first, then add the series resistor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqwzz0m1vt273t",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which is the best definition of the emf of a cell?",
+     "options": [
+      "The work done per unit charge by the cell in moving charge around the complete circuit",
+      "The potential difference across the internal resistance",
+      "The force that pushes electrons through the wires",
+      "The current per unit resistance in the circuit"
+     ],
+     "answer": "The work done per unit charge by the cell in moving charge around the complete circuit",
+     "accept": [],
+     "hint": "Emf is measured in volts, i.e. joules per coulomb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17u98a31k3u99l",
+     "subject": "phys",
+     "type": "num",
+     "q": "A cell of emf 9.0 V and internal resistance 0.50 Ω is connected to a 4.0 Ω resistor. Calculate the current in A.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "The internal and external resistances are in series: ε = I(R + r).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvnaamw1yz4bz2",
+     "subject": "phys",
+     "type": "num",
+     "q": "A cell of emf 9.0 V and internal resistance 0.50 Ω drives a current of 2.0 A through an external resistor. Calculate the terminal potential difference in V.",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "Subtract the 'lost volts' Ir from the emf.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7dxbwn7prxcz",
+     "subject": "phys",
+     "type": "short",
+     "q": "What informal name is given to the potential difference Ir across the internal resistance of a cell?",
+     "options": [],
+     "answer": "lost volts",
+     "accept": [
+      "lost voltage"
+     ],
+     "hint": "It is the part of the emf that does not reach the external circuit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ud21ip117257v",
+     "subject": "phys",
+     "type": "num",
+     "q": "A battery of emf 6.0 V has a terminal potential difference of 5.6 V when it supplies 0.40 A. Calculate its internal resistance in Ω.",
+     "options": [],
+     "answer": "1",
+     "accept": [],
+     "hint": "The difference between emf and terminal pd equals Ir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pmazcdh2pv06",
+     "subject": "phys",
+     "type": "num",
+     "q": "For a cell, terminal potential difference V is plotted against current I. The graph is a straight line with gradient −1.5 V A⁻¹. State the internal resistance of the cell in Ω.",
+     "options": [],
+     "answer": "1.5",
+     "accept": [],
+     "hint": "Compare the graph with V = ε − Ir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r187hvel1wc1tly",
+     "subject": "phys",
+     "type": "mc",
+     "q": "On a graph of terminal potential difference V against current I for a cell, what does the y-intercept represent?",
+     "options": [
+      "The emf of the cell",
+      "The internal resistance",
+      "The maximum current",
+      "The external resistance"
+     ],
+     "answer": "The emf of the cell",
+     "accept": [],
+     "hint": "What is V when no current flows?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh0pv8m282qbl",
+     "subject": "phys",
+     "type": "num",
+     "q": "A 12 V supply is connected across a 4.0 kΩ resistor and an 8.0 kΩ resistor in series. Calculate the potential difference across the 8.0 kΩ resistor in V.",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "The supply pd is shared in the ratio of the resistances.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r65802a14tvt4x",
+     "subject": "phys",
+     "type": "mc",
+     "q": "An NTC thermistor and a fixed resistor form a potential divider across a constant supply. The temperature rises. What happens to the potential difference across the fixed resistor?",
+     "options": [
+      "It increases",
+      "It decreases",
+      "It stays the same",
+      "It becomes zero"
+     ],
+     "answer": "It increases",
+     "accept": [],
+     "hint": "First decide what happens to the thermistor's resistance as it warms up.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12mheyb9z8cjd",
+     "subject": "phys",
+     "type": "num",
+     "q": "A potential divider uses a 6.0 V supply, a 2.0 kΩ fixed resistor and an LDR. In the dark the LDR has a resistance of 10 kΩ. Calculate the potential difference across the LDR in the dark in V.",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Use V_out = V_in × R_LDR / (R_LDR + R_fixed).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1typvflv1d55q",
+     "subject": "phys",
+     "type": "num",
+     "q": "A cell of emf 12 V and internal resistance 2.0 Ω is connected to an external resistor of 2.0 Ω. Calculate the power dissipated in the external resistor in W.",
+     "options": [],
+     "answer": "18",
+     "accept": [],
+     "hint": "Find the current first, then use P = I²R.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdxs7oagzbrh5",
+     "subject": "phys",
+     "type": "open",
+     "q": "Explain why the terminal potential difference of a battery decreases as the current it supplies increases.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what happens to Ir when I gets bigger.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "phys-sl": {
+   "topic": "B.5 Circuits: internal resistance, emf and potential dividers",
+   "questions": [
+    {
+     "id": "rx1ni2vpened",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which statement about resistors connected in series is correct?",
+     "options": [
+      "The same current flows through each resistor",
+      "Each resistor has the same potential difference across it",
+      "The total resistance is smaller than the smallest resistor",
+      "Removing one resistor does not affect the others"
+     ],
+     "answer": "The same current flows through each resistor",
+     "accept": [],
+     "hint": "How many paths can the charge take in a series circuit?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17xi06o14s5iy1",
+     "subject": "phys",
+     "type": "num",
+     "q": "Resistors of 2.0 Ω, 4.0 Ω and 6.0 Ω are connected in series. Calculate the total resistance in Ω.",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "In series, resistances simply add.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e9if8d4oo7g4",
+     "subject": "phys",
+     "type": "num",
+     "q": "Two 10 Ω resistors are connected in parallel. Calculate the total resistance in Ω.",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Two equal resistors in parallel give a total smaller than either one.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm4k1t3uc56y3",
+     "subject": "phys",
+     "type": "num",
+     "q": "A 4.0 Ω resistor and a 12 Ω resistor are connected in parallel. Calculate the total resistance in Ω.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Use 1/R = 1/R₁ + 1/R₂.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rryv1jqbpjk",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What is the SI unit of emf?",
+     "options": [
+      "volt",
+      "ampere",
+      "ohm",
+      "watt"
+     ],
+     "answer": "volt",
+     "accept": [],
+     "hint": "Emf is energy transferred per unit charge.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1abqo6ndogryl",
+     "subject": "phys",
+     "type": "num",
+     "q": "A cell of emf 6.0 V and internal resistance 1.0 Ω is connected to a 5.0 Ω resistor. Calculate the current in A.",
+     "options": [],
+     "answer": "1",
+     "accept": [],
+     "hint": "The total resistance of the circuit is R + r.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbj73j41rm5mcq",
+     "subject": "phys",
+     "type": "num",
+     "q": "A cell of emf 6.0 V and internal resistance 1.0 Ω supplies a current of 1.0 A to an external resistor. Calculate the terminal potential difference in V.",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Terminal pd = emf − Ir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1stid25yoi7tf",
+     "subject": "phys",
+     "type": "num",
+     "q": "A cell of emf 1.5 V has a terminal potential difference of 1.2 V when the current is 0.30 A. Calculate the internal resistance in Ω.",
+     "options": [],
+     "answer": "1",
+     "accept": [],
+     "hint": "The 'lost volts' equal Ir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsutqcwd3mcpm",
+     "subject": "phys",
+     "type": "mc",
+     "q": "If the terminals of a cell are joined by a wire of almost zero resistance, what limits the current?",
+     "options": [
+      "The internal resistance of the cell",
+      "The resistance of the wire",
+      "The length of the wire",
+      "Nothing: the current becomes infinite"
+     ],
+     "answer": "The internal resistance of the cell",
+     "accept": [],
+     "hint": "Which resistance is still left in the circuit?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1075lual8bnp3",
+     "subject": "phys",
+     "type": "num",
+     "q": "A 9.0 V supply is connected across a 1.0 kΩ resistor and a 2.0 kΩ resistor in series. Calculate the potential difference across the 2.0 kΩ resistor in V.",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "The larger resistor takes the larger share of the pd.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n1l8a81bdybxb",
+     "subject": "phys",
+     "type": "num",
+     "q": "A 10 V supply is connected across a 1.0 kΩ resistor in series with a resistor R. The potential difference across the 1.0 kΩ resistor is 2.5 V. Calculate R in kΩ.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Find the pd across R first, then use the fact that the current is the same in both.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrgxqxt117y0v4",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What happens to the resistance of a light-dependent resistor (LDR) as the light intensity increases?",
+     "options": [
+      "It decreases",
+      "It increases",
+      "It stays the same",
+      "It becomes infinite"
+     ],
+     "answer": "It decreases",
+     "accept": [],
+     "hint": "LDRs are used in circuits that turn street lights on at night.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6otups8bbkex",
+     "subject": "phys",
+     "type": "short",
+     "q": "Name the component whose resistance decreases as its temperature increases (NTC type).",
+     "options": [],
+     "answer": "thermistor",
+     "accept": [
+      "an NTC thermistor",
+      "NTC thermistor"
+     ],
+     "hint": "Its name combines 'thermal' and 'resistor'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hvpybx1hynmt3",
+     "subject": "phys",
+     "type": "mc",
+     "q": "An LDR and a fixed resistor form a potential divider across a constant supply. It gets darker. What happens to the potential difference across the fixed resistor?",
+     "options": [
+      "It decreases",
+      "It increases",
+      "It stays the same",
+      "It doubles"
+     ],
+     "answer": "It decreases",
+     "accept": [],
+     "hint": "First decide whether the LDR's resistance goes up or down in the dark.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rf9t7w1ucgbdo",
+     "subject": "phys",
+     "type": "num",
+     "q": "A cell of emf 4.5 V and internal resistance 0.50 Ω is connected to a 4.0 Ω resistor. Calculate the power dissipated in the 4.0 Ω resistor in W.",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Find the current first, then use P = I²R.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r194i33q8hbylb",
+     "subject": "phys",
+     "type": "open",
+     "q": "Explain how a potential divider containing a thermistor could be used to switch on a heater when a room gets cold.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Describe how the thermistor's resistance and the output voltage change as the temperature falls.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych-hl": {
+   "topic": "Emotion and cognition: flashbulb memory",
+   "questions": [
+    {
+     "id": "r1bpb5q590ghjb",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which is the best description of a flashbulb memory?",
+     "options": [
+      "A vivid, detailed memory of the circumstances in which a person learned of a surprising, emotional event",
+      "A memory of a photograph seen in the news",
+      "A memory that is lost immediately after an emotional event",
+      "A procedural memory for a well-practised skill"
+     ],
+     "answer": "A vivid, detailed memory of the circumstances in which a person learned of a surprising, emotional event",
+     "accept": [],
+     "hint": "Focus on the circumstances of hearing the news, not the event itself.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e8icbg1ok4xv1",
+     "subject": "psych",
+     "type": "short",
+     "q": "Which almond-shaped brain structure is most associated with processing emotion and enhancing the memory of emotional events?",
+     "options": [],
+     "answer": "amygdala",
+     "accept": [
+      "the amygdala"
+     ],
+     "hint": "It is part of the limbic system, close to the hippocampus.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "redcqg71xdmsu1",
+     "subject": "psych",
+     "type": "mc",
+     "q": "The original theory of flashbulb memory proposed that these memories are formed by:",
+     "options": [
+      "A special neural mechanism triggered by high surprise and personal consequence",
+      "Repeated rehearsal alone, with no role for emotion",
+      "The same processes as any trivial everyday memory",
+      "Deliberate memorisation strategies"
+     ],
+     "answer": "A special neural mechanism triggered by high surprise and personal consequence",
+     "accept": [],
+     "hint": "The theory suggested the brain 'takes a picture' at a critical moment.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1obhzq17h0k3v",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which of these is one of the typical features people recall in a flashbulb memory?",
+     "options": [
+      "Where they were when they heard the news",
+      "The exact date of the event's anniversary",
+      "The names of all the people involved in the event",
+      "The weather forecast for the following week"
+     ],
+     "answer": "Where they were when they heard the news",
+     "accept": [],
+     "hint": "Think about the personal context of receiving the news.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tgu7aq1fed3r0",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which research design is most commonly used to study flashbulb memories after a major public event?",
+     "options": [
+      "Test–retest questionnaires comparing a person's accounts over time",
+      "Laboratory experiments that create a national tragedy",
+      "Case studies of a single brain-damaged patient",
+      "Twin studies comparing identical and fraternal twins"
+     ],
+     "answer": "Test–retest questionnaires comparing a person's accounts over time",
+     "accept": [],
+     "hint": "Researchers cannot create the event, so they survey people after it happens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgzwt81a7efp9",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Longitudinal studies of memories of a space shuttle disaster found that, years later:",
+     "options": [
+      "Many accounts had changed considerably, yet confidence remained high",
+      "Accounts were almost perfectly identical to the first reports",
+      "Participants could no longer remember the event at all",
+      "Confidence fell in line with accuracy"
+     ],
+     "answer": "Many accounts had changed considerably, yet confidence remained high",
+     "accept": [],
+     "hint": "Compare what changed (the details) with what did not (how sure people felt).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1egirxko8oq2d",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A study comparing memories of a major terrorist attack with memories of an everyday event from the same time found that:",
+     "options": [
+      "Both declined in consistency at similar rates, but vividness and confidence stayed higher for the emotional memory",
+      "The emotional memory stayed perfectly consistent while the everyday memory faded",
+      "Both memories were forgotten completely within a month",
+      "The everyday memory was rated as more vivid"
+     ],
+     "answer": "Both declined in consistency at similar rates, but vividness and confidence stayed higher for the emotional memory",
+     "accept": [],
+     "hint": "The key difference was in how the memories felt, not how accurate they were.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iw2zha38lmeq",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Why do flashbulb memory researchers often use consistency between accounts as a measure of accuracy?",
+     "options": [
+      "Because what each participant was actually doing can rarely be verified independently",
+      "Because consistency is always identical to accuracy",
+      "Because participants refuse to answer questions about accuracy",
+      "Because brain scans cannot be used in psychology"
+     ],
+     "answer": "Because what each participant was actually doing can rarely be verified independently",
+     "accept": [],
+     "hint": "Who could check where each person really was when they heard the news?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lgydoupiueh3",
+     "subject": "psych",
+     "type": "short",
+     "q": "What term describes the extent to which a measure gives the same results when it is repeated?",
+     "options": [],
+     "answer": "reliability",
+     "accept": [
+      "test-retest reliability"
+     ],
+     "hint": "This is different from validity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i7udxm1mbd9qg",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A brain-imaging study found that participants who had been physically closer to a major attack showed what when recalling it?",
+     "options": [
+      "Greater amygdala activation",
+      "No brain activity at all",
+      "Less hippocampal activity than when recalling everyday events of any kind",
+      "Activation only in the visual cortex"
+     ],
+     "answer": "Greater amygdala activation",
+     "accept": [],
+     "hint": "Closer to the event usually means more emotional arousal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvof3qt16g101",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which best describes the relationship between confidence and accuracy in flashbulb memory research?",
+     "options": [
+      "Confidence often remains high even when accuracy declines",
+      "Confidence and accuracy always rise together",
+      "Accuracy increases over time while confidence falls",
+      "Confidence cannot be measured"
+     ],
+     "answer": "Confidence often remains high even when accuracy declines",
+     "accept": [],
+     "hint": "Feeling certain is not the same as being correct.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfrdeeb1xo57jl",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which hormone, released during emotional arousal, is thought to strengthen memory consolidation through its effects on the amygdala?",
+     "options": [
+      "Adrenaline (epinephrine)",
+      "Melatonin",
+      "Insulin",
+      "Oxytocin"
+     ],
+     "answer": "Adrenaline (epinephrine)",
+     "accept": [],
+     "hint": "It is part of the 'fight or flight' response.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uagkxxbjl6dy",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Why is it difficult to establish causation in flashbulb memory research?",
+     "options": [
+      "The event cannot be manipulated, so variables such as rehearsal and media exposure are uncontrolled",
+      "Participants always lie on questionnaires",
+      "Emotional events never affect memory",
+      "Researchers are not allowed to ask about memories"
+     ],
+     "answer": "The event cannot be manipulated, so variables such as rehearsal and media exposure are uncontrolled",
+     "accept": [],
+     "hint": "Think about what a true experiment needs that these studies lack.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mevgctdlopst",
+     "subject": "psych",
+     "type": "short",
+     "q": "What term describes repeatedly retelling or thinking about an event, which may help maintain flashbulb memories?",
+     "options": [],
+     "answer": "rehearsal",
+     "accept": [
+      "rehearsing"
+     ],
+     "hint": "People talk about major news events many times with friends and family.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hxci0p1dz2roc",
+     "subject": "psych",
+     "type": "open",
+     "q": "Evaluate the use of self-report questionnaires to measure flashbulb memories.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider reliability, validity and what can or cannot be checked.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12n6uih1kb5gt6",
+     "subject": "psych",
+     "type": "open",
+     "q": "Discuss whether flashbulb memories are formed by a special mechanism or by ordinary memory processes.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh evidence about vividness and confidence against evidence about consistency over time.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych-sl": {
+   "topic": "Emotion and cognition: flashbulb memory",
+   "questions": [
+    {
+     "id": "rqi5hf7tr6nzi",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which situation is most likely to produce a flashbulb memory?",
+     "options": [
+      "Hearing about a surprising and nationally important event",
+      "Brushing your teeth on an ordinary morning",
+      "Revising a vocabulary list for a test",
+      "Walking the same route to school every day"
+     ],
+     "answer": "Hearing about a surprising and nationally important event",
+     "accept": [],
+     "hint": "Think about surprise and emotional significance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re9wglyamax2",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which two factors were originally proposed as necessary for a flashbulb memory to form?",
+     "options": [
+      "High surprise and personal consequence",
+      "Boredom and repetition",
+      "Hunger and tiredness",
+      "Low emotion and familiarity"
+     ],
+     "answer": "High surprise and personal consequence",
+     "accept": [],
+     "hint": "The event must be unexpected and matter to the person.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r340bvp1ekoffh",
+     "subject": "psych",
+     "type": "short",
+     "q": "Which almond-shaped structure in the limbic system is central to processing emotions such as fear?",
+     "options": [],
+     "answer": "amygdala",
+     "accept": [
+      "the amygdala"
+     ],
+     "hint": "It sits next to the hippocampus in the temporal lobe.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rojw0zzkvy299",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is the main role of the amygdala in emotional memory?",
+     "options": [
+      "It signals emotional significance and enhances consolidation in the hippocampus",
+      "It stores all long-term memories by itself",
+      "It controls the muscles used to speak about memories",
+      "It reduces the strength of emotional memories"
+     ],
+     "answer": "It signals emotional significance and enhances consolidation in the hippocampus",
+     "accept": [],
+     "hint": "It works together with another limbic structure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rek74bw1xg73wb",
+     "subject": "psych",
+     "type": "short",
+     "q": "Which brain structure is crucial for consolidating new long-term memories and is influenced by the amygdala?",
+     "options": [],
+     "answer": "hippocampus",
+     "accept": [
+      "the hippocampus"
+     ],
+     "hint": "Its name comes from the Greek for 'seahorse'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm0cf8yb57iii",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In flashbulb memory research, 'consistency' refers to:",
+     "options": [
+      "How similar a person's account is across repeated tests",
+      "How many people remember the same event",
+      "How emotional a person feels when remembering",
+      "How quickly a person answers"
+     ],
+     "answer": "How similar a person's account is across repeated tests",
+     "accept": [],
+     "hint": "Researchers compare a later account with an earlier one.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rloq09z11o0foj",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Why do researchers usually test participants soon after the event and again months later?",
+     "options": [
+      "To compare later accounts with an early baseline",
+      "To make participants forget the event",
+      "To find out which participants are lying",
+      "To measure participants' intelligence"
+     ],
+     "answer": "To compare later accounts with an early baseline",
+     "accept": [],
+     "hint": "The first test acts as a reference point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5b6stc1ew9ehf",
+     "subject": "psych",
+     "type": "short",
+     "q": "What term describes how well a test measures what it claims to measure?",
+     "options": [],
+     "answer": "validity",
+     "accept": [
+      "construct validity"
+     ],
+     "hint": "This is different from reliability.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sdo26s1t3tpl2",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A participant confidently describes where she heard some major news, but her account differs from what she wrote the day after. This suggests that:",
+     "options": [
+      "Flashbulb memories can be reconstructed and inaccurate",
+      "Flashbulb memories are always perfectly accurate",
+      "She did not hear the news at all",
+      "Emotion has no effect on memory"
+     ],
+     "answer": "Flashbulb memories can be reconstructed and inaccurate",
+     "accept": [],
+     "hint": "Compare her confidence with the change in details.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5b27z1fsklj0",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which factor may help explain why flashbulb memories feel so vivid?",
+     "options": [
+      "Frequent rehearsal through conversations and media coverage",
+      "Never thinking about the event again",
+      "Hearing about the event while asleep",
+      "Having no emotional reaction to the event"
+     ],
+     "answer": "Frequent rehearsal through conversations and media coverage",
+     "accept": [],
+     "hint": "Think about how often major news is repeated.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmp5jl4f4tvj",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which research method is most commonly used to collect data on flashbulb memories?",
+     "options": [
+      "Questionnaires (self-report)",
+      "Brain lesion experiments",
+      "Animal studies",
+      "Twin studies"
+     ],
+     "answer": "Questionnaires (self-report)",
+     "accept": [],
+     "hint": "Researchers ask people to describe how they heard the news.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxch6vffby3s7",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A limitation of using confidence ratings as a measure of memory is that:",
+     "options": [
+      "Confidence can stay high even when details change",
+      "Confidence is always identical to accuracy",
+      "Confidence ratings cannot be collected",
+      "People are never confident about memories"
+     ],
+     "answer": "Confidence can stay high even when details change",
+     "accept": [],
+     "hint": "Feeling sure is not proof of being right.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqugwdb1w2i78p",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Patients with damage to both amygdalae tend to show:",
+     "options": [
+      "Little or no memory advantage for emotional material",
+      "A much stronger memory for emotional material",
+      "Complete loss of all memories",
+      "Perfect flashbulb memories"
+     ],
+     "answer": "Little or no memory advantage for emotional material",
+     "accept": [],
+     "hint": "Without the amygdala, emotion may not boost memory.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r80wdu9mdeey",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Why are most flashbulb memory studies not true experiments?",
+     "options": [
+      "The researcher cannot manipulate the event or randomly assign participants to experience it",
+      "They are always done with animals",
+      "They do not collect any data",
+      "They only use one participant"
+     ],
+     "answer": "The researcher cannot manipulate the event or randomly assign participants to experience it",
+     "accept": [],
+     "hint": "What is the independent variable, and who controls it?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14i13dp1e00kht",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain one way in which emotion can influence memory.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the role of the amygdala or of rehearsal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v2e4o91fiul55",
+     "subject": "psych",
+     "type": "open",
+     "q": "To what extent can flashbulb memories be considered accurate? Refer to research in your answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare vividness and confidence with consistency over time.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Parnasianismo: Olavo Bilac e a arte pela arte",
+   "questions": [
+    {
+     "id": "rxbkuu3th43gk",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O Parnasianismo foi um movimento literário predominantemente:",
+     "options": [
+      "poético",
+      "teatral",
+      "de romances",
+      "de crônicas jornalísticas"
+     ],
+     "answer": "poético",
+     "accept": [],
+     "hint": "Pense no soneto, a forma preferida do movimento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6afl2x1culppi",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O lema \"arte pela arte\" significa que:",
+     "options": [
+      "a arte vale por si mesma, sem precisar ter finalidade social ou moral",
+      "a arte deve servir para ensinar lições de moral",
+      "a arte deve denunciar problemas sociais",
+      "a arte deve expressar o sofrimento do poeta"
+     ],
+     "answer": "a arte vale por si mesma, sem precisar ter finalidade social ou moral",
+     "accept": [],
+     "hint": "O foco está na beleza da forma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19he43l3dca95",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O nome \"Parnasianismo\" vem de:",
+     "options": [
+      "Parnaso, monte da mitologia grega consagrado a Apolo e às Musas",
+      "um bairro do Rio de Janeiro",
+      "uma revista de moda francesa",
+      "um rio da Itália"
+     ],
+     "answer": "Parnaso, monte da mitologia grega consagrado a Apolo e às Musas",
+     "accept": [],
+     "hint": "Os parnasianos admiravam a Antiguidade clássica.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17aed9j1v7bcu4",
+     "subject": "pt",
+     "type": "num",
+     "q": "Quantos versos tem um soneto?",
+     "options": [],
+     "answer": "14",
+     "accept": [],
+     "hint": "Some os versos das quatro estrofes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmypqeo1u16ehw",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a estrutura de um soneto?",
+     "options": [
+      "dois quartetos e dois tercetos",
+      "quatro quartetos",
+      "três tercetos e um dístico",
+      "uma única estrofe livre"
+     ],
+     "answer": "dois quartetos e dois tercetos",
+     "accept": [],
+     "hint": "São quatro estrofes: as duas primeiras maiores que as duas últimas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "run2vhs1mxoalz",
+     "subject": "pt",
+     "type": "short",
+     "q": "Como se chama o último verso de um soneto, que fecha o poema com uma ideia marcante?",
+     "options": [],
+     "answer": "chave de ouro",
+     "accept": [
+      "a chave de ouro"
+     ],
+     "hint": "A expressão lembra algo precioso que \"fecha\" o poema.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y927fu15vy99m",
+     "subject": "pt",
+     "type": "num",
+     "q": "Quantas sílabas poéticas tem um verso alexandrino?",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "É um verso longo, mais extenso que o decassílabo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w08e241ppzu8l",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na contagem de sílabas poéticas (escansão), conta-se até:",
+     "options": [
+      "a última sílaba tônica do verso",
+      "a última sílaba do verso, tônica ou não",
+      "a primeira vírgula do verso",
+      "a primeira sílaba tônica"
+     ],
+     "answer": "a última sílaba tônica do verso",
+     "accept": [],
+     "hint": "As sílabas átonas finais são desprezadas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri8c7o3lclvgy",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na teoria parnasiana, a rima é considerada \"rica\" quando ocorre entre palavras:",
+     "options": [
+      "de classes gramaticais diferentes",
+      "da mesma classe gramatical",
+      "que não rimam de verdade",
+      "de línguas diferentes"
+     ],
+     "answer": "de classes gramaticais diferentes",
+     "accept": [],
+     "hint": "Rimar dois verbos no infinitivo era considerado fácil demais.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16nl7js751ket",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual característica parnasiana se opõe ao sentimentalismo romântico?",
+     "options": [
+      "a objetividade e a contenção das emoções",
+      "a exaltação do eu e das paixões",
+      "o nacionalismo indianista",
+      "a idealização da mulher amada"
+     ],
+     "answer": "a objetividade e a contenção das emoções",
+     "accept": [],
+     "hint": "Os parnasianos buscavam impessoalidade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg17lbsqixfuo",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Quais temas eram preferidos pelos parnasianos?",
+     "options": [
+      "a Antiguidade greco-romana e objetos de arte, como vasos e estátuas",
+      "as gírias da vida urbana moderna",
+      "a crítica política direta",
+      "o folclore indígena idealizado"
+     ],
+     "answer": "a Antiguidade greco-romana e objetos de arte, como vasos e estátuas",
+     "accept": [],
+     "hint": "Pense na descrição de peças de museu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm6i0gj1m7om4v",
+     "subject": "pt",
+     "type": "short",
+     "q": "No poema-manifesto \"Profissão de Fé\", o poeta compara seu trabalho ao de qual artesão que trabalha com ouro e pedras preciosas?",
+     "options": [],
+     "answer": "ourives",
+     "accept": [
+      "um ourives",
+      "o ourives"
+     ],
+     "hint": "É o profissional que faz joias.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsu8nuwvmmy1a",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual movimento da prosa, contemporâneo ao Parnasianismo, também valorizava a objetividade?",
+     "options": [
+      "Realismo",
+      "Barroco",
+      "Arcadismo",
+      "Modernismo"
+     ],
+     "answer": "Realismo",
+     "accept": [],
+     "hint": "É o movimento de romances que analisam a sociedade do fim do século XIX.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q404tb1l62idj",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual verso tem características mais parnasianas?",
+     "options": [
+      "\"Ergue-se a taça de alvo mármore lavrado\"",
+      "\"Ó minha amada, choro de saudade sem fim!\"",
+      "\"Tô nem aí, vou zoar o dia inteiro\"",
+      "\"Minha terra tem palmeiras e saudades mil\""
+     ],
+     "answer": "\"Ergue-se a taça de alvo mármore lavrado\"",
+     "accept": [],
+     "hint": "Procure descrição de um objeto de arte e vocabulário erudito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uo62ys1stthz7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Os modernistas, a partir de 1922, criticaram o Parnasianismo principalmente por:",
+     "options": [
+      "excesso de formalismo e artificialidade",
+      "falta de rimas e de métrica",
+      "uso excessivo de gírias",
+      "temas indígenas demais"
+     ],
+     "answer": "excesso de formalismo e artificialidade",
+     "accept": [],
+     "hint": "Os modernistas defendiam o verso livre.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5nwkpg12b6zwf",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique, em 2 ou 3 frases, como o Parnasianismo reagiu ao Romantismo.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare a expressão das emoções e o cuidado com a forma nos dois movimentos.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_lit-hl": {
+   "topic": "Comparação: Dom Casmurro e Casa de Bonecas — NS: introdução ao ensaio do NS",
+   "questions": [
+    {
+     "id": "rlg4rdq1ow3pjt",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "A que gênero pertence Casa de Bonecas?",
+     "options": [
+      "texto dramático (peça de teatro)",
+      "romance",
+      "poema épico",
+      "crônica"
+     ],
+     "answer": "texto dramático (peça de teatro)",
+     "accept": [],
+     "hint": "A obra é feita de diálogos e indicações de cena.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro862qqki2kvq",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Quem narra Dom Casmurro?",
+     "options": [
+      "Bento Santiago, narrador-personagem em 1ª pessoa",
+      "Capitu, em 1ª pessoa",
+      "um narrador onisciente em 3ª pessoa",
+      "Escobar, em cartas"
+     ],
+     "answer": "Bento Santiago, narrador-personagem em 1ª pessoa",
+     "accept": [],
+     "hint": "O narrador conta a própria vida já na velhice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nlp5ut11qf2ry",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Em Casa de Bonecas, qual é o nome da protagonista que sai de casa no final?",
+     "options": [],
+     "answer": "Nora",
+     "accept": [
+      "Nora Helmer"
+     ],
+     "hint": "É a esposa do advogado e gerente de banco.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yfxsdd4ylexc",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Por que o narrador de Dom Casmurro é considerado não confiável?",
+     "options": [
+      "porque só temos a versão dele, marcada por ciúme e pela memória",
+      "porque ele admite que inventou toda a história",
+      "porque o romance tem vários narradores que se contradizem",
+      "porque ele narra fatos que não presenciou de forma alguma"
+     ],
+     "answer": "porque só temos a versão dele, marcada por ciúme e pela memória",
+     "accept": [],
+     "hint": "Pense em quem controla a história e com que sentimentos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17chuu8hq3tny",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual é o segredo de Nora em Casa de Bonecas?",
+     "options": [
+      "ela fez um empréstimo falsificando a assinatura do pai para salvar a saúde do marido",
+      "ela tem um caso com o Dr. Rank",
+      "ela roubou dinheiro do banco do marido",
+      "ela planeja vender a casa da família"
+     ],
+     "answer": "ela fez um empréstimo falsificando a assinatura do pai para salvar a saúde do marido",
+     "accept": [],
+     "hint": "O segredo envolve dinheiro, uma viagem e um documento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d8r46b1mncwot",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Os apelidos que Torvald dá a Nora, como \"cotovia\" e \"esquilo\", revelam principalmente:",
+     "options": [
+      "um tratamento infantilizado, que a vê como algo frágil e possuído",
+      "um profundo respeito pela inteligência dela",
+      "o desejo de que ela trabalhe fora",
+      "a admiração por sua independência"
+     ],
+     "answer": "um tratamento infantilizado, que a vê como algo frágil e possuído",
+     "accept": [],
+     "hint": "São nomes de pequenos animais de estimação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r694l0u1g63ffn",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Que expressão Bentinho usa para os olhos de Capitu, comparando-os ao mar que puxa para dentro?",
+     "options": [],
+     "answer": "olhos de ressaca",
+     "accept": [
+      "ressaca"
+     ],
+     "hint": "A imagem é a de uma onda que arrasta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10pt0pp1r2usii",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Que diferença entre as obras é central para uma comparação sobre casamento e poder?",
+     "options": [
+      "em Dom Casmurro a esposa é silenciada pela narração do marido; em Casa de Bonecas a esposa conquista a própria voz",
+      "em Dom Casmurro a esposa narra; em Casa de Bonecas o marido narra",
+      "as duas obras terminam com o casal feliz",
+      "em nenhuma das obras o marido tem poder sobre a esposa"
+     ],
+     "answer": "em Dom Casmurro a esposa é silenciada pela narração do marido; em Casa de Bonecas a esposa conquista a própria voz",
+     "accept": [],
+     "hint": "Pergunte-se: de quem é a voz que ouvimos em cada obra?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rynq5r6q9lqmw",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual recurso é próprio do texto dramático e não aparece da mesma forma no romance?",
+     "options": [
+      "rubricas (indicações cênicas)",
+      "narrador em 1ª pessoa",
+      "capítulos curtos",
+      "discurso indireto livre"
+     ],
+     "answer": "rubricas (indicações cênicas)",
+     "accept": [],
+     "hint": "Elas orientam atores e encenação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14dup0019p70gd",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O fato de o leitor de Dom Casmurro nunca ter certeza se Capitu traiu Bentinho cria:",
+     "options": [
+      "ambiguidade",
+      "um final feliz",
+      "uma rima rica",
+      "um anticlímax cômico"
+     ],
+     "answer": "ambiguidade",
+     "accept": [],
+     "hint": "O texto permite mais de uma interpretação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rysx7f1a0krf5",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Na Prova 2 de Literatura do IB, o estudante deve:",
+     "options": [
+      "escrever um ensaio comparativo sobre duas obras estudadas, respondendo a uma pergunta geral",
+      "analisar um trecho inédito de uma única obra",
+      "apresentar uma oral individual",
+      "escrever um texto criativo sobre uma obra"
+     ],
+     "answer": "escrever um ensaio comparativo sobre duas obras estudadas, respondendo a uma pergunta geral",
+     "accept": [],
+     "hint": "A palavra-chave do tópico desta semana é \"comparação\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp6ses0mcg7ei",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual estrutura costuma ser mais eficaz numa resposta comparativa?",
+     "options": [
+      "parágrafos organizados por pontos de comparação, tratando as duas obras em cada um",
+      "metade do ensaio sobre uma obra e a outra metade sobre a outra, sem ligação",
+      "uma lista de citações sem comentário",
+      "um resumo do enredo de cada obra"
+     ],
+     "answer": "parágrafos organizados por pontos de comparação, tratando as duas obras em cada um",
+     "accept": [],
+     "hint": "A comparação deve aparecer ao longo do texto, não só na conclusão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rol21e01uog2zj",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Que expressão o IB usa para a pergunta ou foco que orienta o ensaio do NS?",
+     "options": [],
+     "answer": "linha de investigação",
+     "accept": [
+      "a linha de investigação"
+     ],
+     "hint": "Ela define o caminho da análise.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11kpv1s2w4zds",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Quais são o tamanho e o foco do ensaio do NS?",
+     "options": [
+      "1.200 a 1.500 palavras, sobre uma obra estudada",
+      "500 a 800 palavras, sobre três obras",
+      "3.000 a 4.000 palavras, sobre qualquer livro",
+      "2.000 palavras, comparando duas obras obrigatoriamente"
+     ],
+     "answer": "1.200 a 1.500 palavras, sobre uma obra estudada",
+     "accept": [],
+     "hint": "É um ensaio formal de médio porte.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6n9h8u1wnko58",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Compare, em 3 a 5 frases, como o final de cada obra revela a relação entre casamento e poder.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que acontece com Nora e com Bentinho nas últimas cenas e quem tem a última palavra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rolmgol9nnd2j",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Proponha uma linha de investigação para um ensaio do NS sobre Dom Casmurro ou Casa de Bonecas e justifique-a em 3 a 5 frases.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Uma boa linha de investigação é específica e aponta para recursos do texto.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_lit-sl": {
+   "topic": "Comparação para a Prova 2: Dom Casmurro e Casa de Bonecas",
+   "questions": [
+    {
+     "id": "r1434jpa1qejdmn",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "A que gênero pertence Dom Casmurro?",
+     "options": [
+      "romance",
+      "peça de teatro",
+      "poema",
+      "conto curto"
+     ],
+     "answer": "romance",
+     "accept": [],
+     "hint": "É uma narrativa longa dividida em capítulos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc7yipormho3e",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Como se chama o marido de Nora em Casa de Bonecas?",
+     "options": [],
+     "answer": "Torvald",
+     "accept": [
+      "Torvald Helmer",
+      "Helmer"
+     ],
+     "hint": "Ele acaba de ser promovido a gerente de banco.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7okokv1vmz2pk",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Quem narra Dom Casmurro?",
+     "options": [
+      "o próprio Bento Santiago, já velho",
+      "Capitu, depois da separação",
+      "José Dias, o agregado",
+      "um narrador onisciente neutro"
+     ],
+     "answer": "o próprio Bento Santiago, já velho",
+     "accept": [],
+     "hint": "O narrador quer \"atar as duas pontas da vida\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r987utw1wcroxa",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Por que o narrador recebe o apelido \"Dom Casmurro\"?",
+     "options": [
+      "por ser calado e fechado em si mesmo",
+      "por ser um nobre muito rico",
+      "por ser muito alegre e falante",
+      "por ter sido padre"
+     ],
+     "answer": "por ser calado e fechado em si mesmo",
+     "accept": [],
+     "hint": "\"Casmurro\" descreve um temperamento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhme14812o0czi",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Por que Nora fez o empréstimo em segredo?",
+     "options": [
+      "para salvar a saúde de Torvald sem ferir o orgulho dele",
+      "para comprar presentes caros para si mesma",
+      "para fugir com outro homem",
+      "para abrir o próprio negócio"
+     ],
+     "answer": "para salvar a saúde de Torvald sem ferir o orgulho dele",
+     "accept": [],
+     "hint": "O dinheiro pagou uma viagem necessária para o marido.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvovhxe1va5vj",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Que dança Nora ensaia de forma frenética na peça?",
+     "options": [
+      "tarantela",
+      "valsa",
+      "samba",
+      "tango"
+     ],
+     "answer": "tarantela",
+     "accept": [],
+     "hint": "É uma dança folclórica do sul da Itália.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10sr4x5k02fvj",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Bentinho suspeita que Capitu o traiu com:",
+     "options": [
+      "Escobar, seu amigo do seminário",
+      "José Dias",
+      "Ezequiel",
+      "o tio Cosme"
+     ],
+     "answer": "Escobar, seu amigo do seminário",
+     "accept": [],
+     "hint": "É o melhor amigo do narrador.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc327oj1d7lf7b",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O título Casa de Bonecas sugere que Nora:",
+     "options": [
+      "vive como uma boneca, controlada primeiro pelo pai e depois pelo marido",
+      "coleciona bonecas antigas",
+      "trabalha numa fábrica de brinquedos",
+      "mora numa casa muito pequena"
+     ],
+     "answer": "vive como uma boneca, controlada primeiro pelo pai e depois pelo marido",
+     "accept": [],
+     "hint": "Pense no que ela diz sobre a própria vida no final.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r156wbyv11jdqrw",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual tema é comum às duas obras?",
+     "options": [
+      "o casamento como relação de poder desigual",
+      "a guerra entre dois países",
+      "a vida no campo",
+      "a amizade entre crianças"
+     ],
+     "answer": "o casamento como relação de poder desigual",
+     "accept": [],
+     "hint": "As duas obras mostram casais burgueses do século XIX.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ow2zz912kvk7w",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual é uma diferença de forma importante entre as duas obras?",
+     "options": [
+      "no romance temos acesso à mente do narrador; no teatro conhecemos as personagens por diálogos e ações",
+      "as duas são escritas em versos",
+      "o romance não tem personagens",
+      "a peça tem um narrador em 1ª pessoa"
+     ],
+     "answer": "no romance temos acesso à mente do narrador; no teatro conhecemos as personagens por diálogos e ações",
+     "accept": [],
+     "hint": "Pense em como o leitor ou o público recebe a história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1irrlao13t2ef1",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Como se chama o narrador cuja versão dos fatos o leitor não pode aceitar totalmente?",
+     "options": [],
+     "answer": "narrador não confiável",
+     "accept": [
+      "não confiável"
+     ],
+     "hint": "Ele pode distorcer os fatos, de propósito ou não.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmdn23k190ag9c",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Quando o público sabe do empréstimo secreto de Nora e Torvald não sabe, ocorre:",
+     "options": [
+      "ironia dramática",
+      "rima interna",
+      "metonímia",
+      "discurso direto"
+     ],
+     "answer": "ironia dramática",
+     "accept": [],
+     "hint": "O público sabe mais do que uma personagem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9rc3xa1iowlgk",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual destas é a melhor característica de uma tese para a Prova 2?",
+     "options": [
+      "faz uma afirmação comparativa que responde à pergunta e menciona as duas obras",
+      "resume o enredo da primeira obra",
+      "apresenta apenas a biografia dos autores",
+      "faz uma pergunta sem respondê-la"
+     ],
+     "answer": "faz uma afirmação comparativa que responde à pergunta e menciona as duas obras",
+     "accept": [],
+     "hint": "A tese guia todo o ensaio comparativo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwy2shq1jel2o2",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual conectivo é mais adequado para introduzir um contraste entre as duas obras?",
+     "options": [
+      "ao passo que",
+      "portanto",
+      "por exemplo",
+      "além disso"
+     ],
+     "answer": "ao passo que",
+     "accept": [],
+     "hint": "Procure o conectivo que opõe duas ideias.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jqw77q1t2kkyv",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Compare, em 3 a 5 frases, a voz da esposa em Dom Casmurro e em Casa de Bonecas.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pergunte-se quem fala por Capitu e quem fala por Nora.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1no2ifb1a9dqdn",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Escolha um recurso de cada obra (por exemplo, narração em 1ª pessoa, rubricas ou um símbolo) e explique como ele mostra o poder no casamento.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Ligue cada recurso a um efeito sobre o leitor ou o público.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_red": {
+   "topic": "Reescrita orientada pela grade de competências",
+   "questions": [
+    {
+     "id": "ryd1xs2jn1fsb",
+     "subject": "pt_red",
+     "type": "num",
+     "q": "Quantas competências são avaliadas na redação do ENEM?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Cada uma vale até 200 pontos e o total é 1.000.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yqcwa11bp0gly",
+     "subject": "pt_red",
+     "type": "num",
+     "q": "Qual é a nota máxima em cada competência da redação do ENEM?",
+     "options": [],
+     "answer": "200",
+     "accept": [],
+     "hint": "A nota total máxima é 1.000.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gfvtxa1xsn7k6",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "A Competência 1 avalia:",
+     "options": [
+      "o domínio da modalidade escrita formal da língua portuguesa",
+      "a proposta de intervenção",
+      "a coesão entre os parágrafos",
+      "a escolha do repertório"
+     ],
+     "answer": "o domínio da modalidade escrita formal da língua portuguesa",
+     "accept": [],
+     "hint": "Pense em gramática, ortografia e norma-padrão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r498pkkbyme7s",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "A Competência 4 avalia:",
+     "options": [
+      "os mecanismos linguísticos de coesão usados na argumentação",
+      "a ortografia das palavras",
+      "a proposta de intervenção",
+      "o respeito ao número de linhas"
+     ],
+     "answer": "os mecanismos linguísticos de coesão usados na argumentação",
+     "accept": [],
+     "hint": "Conectivos e retomadas entram aqui.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfnnlqyvk6ptg",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "A Competência 5 avalia:",
+     "options": [
+      "a proposta de intervenção para o problema abordado",
+      "o título da redação",
+      "a caligrafia",
+      "o uso de citações"
+     ],
+     "answer": "a proposta de intervenção para o problema abordado",
+     "accept": [],
+     "hint": "Costuma aparecer na conclusão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnm0cqw47kncg",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "O corretor anotou: \"repetição excessiva de 'isso' e falta de conectivos entre parágrafos\". Qual competência foi afetada?",
+     "options": [
+      "Competência 4",
+      "Competência 1",
+      "Competência 2",
+      "Competência 5"
+     ],
+     "answer": "Competência 4",
+     "accept": [],
+     "hint": "O problema é a ligação entre as partes do texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l9frff1jolnnw",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Um erro como \"Existe muitos problemas na saúde pública\" é penalizado principalmente na:",
+     "options": [
+      "Competência 1",
+      "Competência 3",
+      "Competência 4",
+      "Competência 5"
+     ],
+     "answer": "Competência 1",
+     "accept": [],
+     "hint": "É um desvio de concordância.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruo92w6vt8r3u",
+     "subject": "pt_red",
+     "type": "short",
+     "q": "Qual forma do verbo \"existir\" corrige a frase: \"___ muitos problemas na saúde pública\"?",
+     "options": [],
+     "answer": "Existem",
+     "accept": [
+      "existem"
+     ],
+     "hint": "O verbo concorda com o sujeito \"muitos problemas\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2u0xsq1whco5g",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual elemento está claramente ausente nesta proposta: \"O Ministério da Educação deve criar campanhas.\"?",
+     "options": [
+      "Finalidade",
+      "Agente",
+      "Ação"
+     ],
+     "answer": "Finalidade",
+     "accept": [],
+     "hint": "Pergunte-se: para quê?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsahsjydsqvio",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Na reescrita de um parágrafo com argumento apenas opinativo, o que mais ajuda a melhorar a Competência 3?",
+     "options": [
+      "acrescentar dados ou fatos e explicar sua relação com a tese",
+      "trocar palavras por sinônimos mais difíceis",
+      "aumentar o tamanho das letras",
+      "repetir a tese com outras palavras"
+     ],
+     "answer": "acrescentar dados ou fatos e explicar sua relação com a tese",
+     "accept": [],
+     "hint": "A Competência 3 avalia a seleção e a organização de argumentos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1arz14bw723wc",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Usar repertório sociocultural legitimado, pertinente ao tema e bem utilizado é critério da:",
+     "options": [
+      "Competência 2",
+      "Competência 1",
+      "Competência 4",
+      "Competência 5"
+     ],
+     "answer": "Competência 2",
+     "accept": [],
+     "hint": "É a competência que avalia a compreensão da proposta e do tema.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h3kfl3rv640j",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual é a melhor prática de autoavaliação após receber uma redação corrigida?",
+     "options": [
+      "comparar a reescrita com a grade, competência por competência, registrando o que mudou",
+      "ler apenas a nota final",
+      "reescrever o texto inteiro sem olhar a correção",
+      "decorar uma redação pronta"
+     ],
+     "answer": "comparar a reescrita com a grade, competência por competência, registrando o que mudou",
+     "accept": [],
+     "hint": "A evolução fica visível quando você registra os ajustes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18e4hb71lar01a",
+     "subject": "pt_red",
+     "type": "short",
+     "q": "Que nome se dá ao elemento da proposta de intervenção que explica como a ação será executada?",
+     "options": [],
+     "answer": "modo",
+     "accept": [
+      "meio",
+      "modo/meio",
+      "modo ou meio"
+     ],
+     "hint": "Responde à pergunta \"por meio de quê?\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm1xu6b1czuqrl",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual conectivo é mais adequado para introduzir a conclusão de uma redação?",
+     "options": [
+      "Portanto",
+      "Entretanto",
+      "Por exemplo",
+      "Embora"
+     ],
+     "answer": "Portanto",
+     "accept": [],
+     "hint": "Procure o conectivo de conclusão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1abyvnk1vyobac",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Uma redação que tangencia o tema é penalizada principalmente na:",
+     "options": [
+      "Competência 2",
+      "Competência 1",
+      "Competência 4",
+      "Competência 5"
+     ],
+     "answer": "Competência 2",
+     "accept": [],
+     "hint": "É a competência ligada à compreensão do tema.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqohrxao7n6p6",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Reescreva a frase de forma mais formal e coesa: \"A gente vê que tem muita desigualdade e isso é ruim, e isso precisa mudar.\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Troque marcas de oralidade e evite repetir \"isso\".",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa-hl": {
+   "topic": "Experiences: memorable events and narrating the past",
+   "questions": [
+    {
+     "id": "rt5647m10jzglz",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb: El sábado pasado ___ (ir, yo) al concierto de mi grupo favorito y fue increíble.",
+     "options": [
+      "fui",
+      "iba",
+      "voy",
+      "iré"
+     ],
+     "answer": "fui",
+     "accept": [],
+     "hint": "It is a single, completed action on a specific day.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sxbx1b1g0efab",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb: Mientras ___ (leer, yo), sonó el teléfono.",
+     "options": [
+      "leía",
+      "leí",
+      "leo",
+      "leeré"
+     ],
+     "answer": "leía",
+     "accept": [],
+     "hint": "One action was in progress when another interrupted it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1awnqjzz7twxj",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb: Cuando llegamos a la estación, el tren ya ___.",
+     "options": [
+      "había salido",
+      "salía",
+      "sale",
+      "saldrá"
+     ],
+     "answer": "había salido",
+     "accept": [],
+     "hint": "The train left before we arrived.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1we9q643quqaj",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite of 'tener' for 'nosotros'.",
+     "options": [],
+     "answer": "tuvimos",
+     "accept": [],
+     "hint": "It is an irregular stem: tuv-.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10uutfiz0mdy4",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite of 'hacer' for 'él'.",
+     "options": [],
+     "answer": "hizo",
+     "accept": [],
+     "hint": "Watch the spelling change from c to z.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r51ket11azpl5g",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite of 'decir' for 'ellos'.",
+     "options": [],
+     "answer": "dijeron",
+     "accept": [],
+     "hint": "The stem is dij- and the ending has no i.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r189aaqr1v5dwjx",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite of 'ponerse' for 'yo' (as in '___ nervioso').",
+     "options": [],
+     "answer": "me puse",
+     "accept": [],
+     "hint": "Remember the reflexive pronoun and the irregular stem pus-.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reyyc2ifwsuep",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which connector means 'at first'?",
+     "options": [
+      "Al principio",
+      "Al final",
+      "De repente",
+      "Mientras tanto"
+     ],
+     "answer": "Al principio",
+     "accept": [],
+     "hint": "It is used to open a story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fcj77x1sq5p1g",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'de repente' mean?",
+     "options": [
+      "suddenly",
+      "finally",
+      "meanwhile",
+      "the day before"
+     ],
+     "answer": "suddenly",
+     "accept": [],
+     "hint": "It introduces an unexpected event.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r825j36rymvgh",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the best connector: ___ llovía mucho, decidimos salir a caminar.",
+     "options": [
+      "Aunque",
+      "Porque",
+      "Entonces",
+      "Luego"
+     ],
+     "answer": "Aunque",
+     "accept": [],
+     "hint": "The two ideas contrast with each other.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xwfery18rdnl8",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'the next day'.",
+     "options": [],
+     "answer": "al día siguiente",
+     "accept": [
+      "el día siguiente"
+     ],
+     "hint": "It is a common time connector in narratives.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fhiz1jivglop",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence combines past tenses correctly?",
+     "options": [
+      "Hacía sol cuando salimos de casa.",
+      "Hace sol cuando salimos ayer de casa.",
+      "Hacía sol cuando saldremos de casa.",
+      "Hará sol cuando salimos ayer."
+     ],
+     "answer": "Hacía sol cuando salimos de casa.",
+     "accept": [],
+     "hint": "Background description plus a completed action.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhaqfmzzg3v4y",
+     "subject": "spa",
+     "type": "mc",
+     "q": "In an anecdote, which tense is mainly used for background descriptions and feelings?",
+     "options": [
+      "the imperfect",
+      "the preterite",
+      "the future",
+      "the present subjunctive"
+     ],
+     "answer": "the imperfect",
+     "accept": [],
+     "hint": "It describes how things were, not what happened next.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14yfeop1h2ycz5",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb: Mi abuela me contó que de joven ___ (trabajar) en una panadería durante diez años.",
+     "options": [
+      "había trabajado",
+      "trabajará",
+      "trabaja",
+      "trabaje"
+     ],
+     "answer": "había trabajado",
+     "accept": [],
+     "hint": "The work happened before she told the story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8s76xuectfc7",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 3–4 sentences in Spanish telling a short anecdote about a memorable trip. Use at least one preterite, one imperfect and two time connectors.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start with 'Al principio…' or 'Hace dos años…'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pc000c1upzvvz",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 4–5 sentences in Spanish about a day when something unexpected happened. Include the pluperfect (había + past participle) at least once.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use 'de repente' to introduce the surprise.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa-sl": {
+   "topic": "Experiences: memorable events and narrating the past",
+   "questions": [
+    {
+     "id": "revmj0713yyb1l",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite of 'comer' for 'yo'.",
+     "options": [],
+     "answer": "comí",
+     "accept": [
+      "comi"
+     ],
+     "hint": "Remember the accent on the final vowel.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrwoihl2qpr9h",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite of 'hablar' for 'ellos'.",
+     "options": [],
+     "answer": "hablaron",
+     "accept": [],
+     "hint": "Regular -ar verbs take -aron in this form.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r192qc9r17juvoh",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite of 'ir' for 'él'.",
+     "options": [],
+     "answer": "fue",
+     "accept": [],
+     "hint": "It is the same as the preterite of 'ser'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h69a5vrdyyn",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the imperfect of 'estar' for 'nosotros'.",
+     "options": [],
+     "answer": "estábamos",
+     "accept": [
+      "estabamos"
+     ],
+     "hint": "Regular -ar imperfect endings use -aba-.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgu14g2t9occ5",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb: Mientras mi hermano ___ (dormir), yo vi una película.",
+     "options": [
+      "dormía",
+      "durmió",
+      "duerme",
+      "dormirá"
+     ],
+     "answer": "dormía",
+     "accept": [],
+     "hint": "This action was in progress in the background.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tvwq4xv94jqy",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb: De niño, ___ (jugar, yo) al fútbol todos los días.",
+     "options": [
+      "jugaba",
+      "jugué",
+      "juego",
+      "jugaré"
+     ],
+     "answer": "jugaba",
+     "accept": [],
+     "hint": "'Todos los días' shows a habit in the past.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r7m2xdnwe63",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct verb: Ayer ___ (perder, yo) el autobús y llegué tarde.",
+     "options": [
+      "perdí",
+      "perdía",
+      "pierdo",
+      "perderé"
+     ],
+     "answer": "perdí",
+     "accept": [],
+     "hint": "It is a single, completed action.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb1rpm8mzk16e",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'luego' mean?",
+     "options": [
+      "then / later",
+      "before",
+      "never",
+      "suddenly"
+     ],
+     "answer": "then / later",
+     "accept": [],
+     "hint": "It moves the story forward in time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u1kkmanptr5k",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which connector is closest in meaning to 'finalmente'?",
+     "options": [
+      "al final",
+      "primero",
+      "de repente",
+      "mientras"
+     ],
+     "answer": "al final",
+     "accept": [],
+     "hint": "Both are used to close a story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r180fqsy8o2lkf",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which connector introduces a sudden event?",
+     "options": [
+      "de repente",
+      "primero",
+      "después de comer",
+      "todos los días"
+     ],
+     "answer": "de repente",
+     "accept": [],
+     "hint": "Think of something unexpected happening.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzqs5pixlyz83",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'last summer'.",
+     "options": [],
+     "answer": "el verano pasado",
+     "accept": [
+      "verano pasado"
+     ],
+     "hint": "The adjective comes after the noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbwioeof55m5i",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What is 'una anécdota'?",
+     "options": [
+      "a short story about something that happened",
+      "a type of poem",
+      "a list of rules",
+      "a weather forecast"
+     ],
+     "answer": "a short story about something that happened",
+     "accept": [],
+     "hint": "It is usually told for fun or interest.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x664hp1bjcer2",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which is the imperfect of 'ver' for 'yo'?",
+     "options": [
+      "veía",
+      "vi",
+      "veo",
+      "veré"
+     ],
+     "answer": "veía",
+     "accept": [],
+     "hint": "'Ver' is one of the three irregular verbs in the imperfect.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6xz4c2qlkgmn",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sequence of connectors best organises a story from beginning to end?",
+     "options": [
+      "Primero → luego → al final",
+      "Al final → primero → luego",
+      "Luego → al final → primero",
+      "De repente → primero → al final"
+     ],
+     "answer": "Primero → luego → al final",
+     "accept": [],
+     "hint": "Think about first, next and last.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqevh6f2uvu6x",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the preterite of 'tener' for 'yo'.",
+     "options": [],
+     "answer": "tuve",
+     "accept": [],
+     "hint": "The irregular stem is tuv-.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryqa3tgn8gic",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 3 sentences in Spanish about your last birthday, using the preterite and at least one time connector.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "You could start with 'El día de mi cumpleaños…'.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
