@@ -8079,6 +8079,266 @@
      "errors": []
     }
    ]
+  },
+  "tok": {
+   "topic": "Mathematics: discovered or invented? Applications and beauty",
+   "questions": [
+    {
+     "id": "r8utoiyzsx607",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Which view holds that mathematical objects exist independently of human minds?",
+     "options": [
+      "Platonism",
+      "Formalism",
+      "Relativism",
+      "Empiricism"
+     ],
+     "answer": "Platonism",
+     "accept": [],
+     "hint": "Think of a realm of perfect abstract forms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnfhpy419wi11x",
+     "subject": "tok",
+     "type": "mc",
+     "q": "According to formalism, mathematics is best described as…",
+     "options": [
+      "the manipulation of symbols according to agreed rules",
+      "the discovery of objects in an abstract realm",
+      "a record of physical measurements",
+      "a collection of personal opinions"
+     ],
+     "answer": "the manipulation of symbols according to agreed rules",
+     "accept": [],
+     "hint": "Focus on symbols and rules rather than meaning.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn21kae3msjzp",
+     "subject": "tok",
+     "type": "short",
+     "q": "In TOK, what is the name for a statement accepted without proof as a starting point for a mathematical system?",
+     "options": [],
+     "answer": "axiom",
+     "accept": [
+      "axioms",
+      "an axiom"
+     ],
+     "hint": "Every proof has to start somewhere.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2o7gkhgrstui",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Which observation is most often used to support the claim that mathematics is discovered?",
+     "options": [
+      "Mathematicians working separately often reach the same results",
+      "Different cultures use different symbols for numbers",
+      "Textbooks are written by humans",
+      "Some students find algebra difficult"
+     ],
+     "answer": "Mathematicians working separately often reach the same results",
+     "accept": [],
+     "hint": "If it were purely invented, would independent work converge?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mangy11do644d",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Which observation best supports the claim that mathematics is invented?",
+     "options": [
+      "Changing the starting axioms produces different but consistent geometries",
+      "Prime numbers appear in many contexts",
+      "Calculations give the same answer every time",
+      "Mathematics is used in physics"
+     ],
+     "answer": "Changing the starting axioms produces different but consistent geometries",
+     "accept": [],
+     "hint": "Who chooses the starting points?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dfni7e12on755",
+     "subject": "tok",
+     "type": "short",
+     "q": "Non-Euclidean geometries were developed by replacing which of Euclid's postulates?",
+     "options": [],
+     "answer": "parallel postulate",
+     "accept": [
+      "the parallel postulate",
+      "fifth postulate",
+      "the fifth postulate",
+      "fifth"
+     ],
+     "hint": "It concerns lines that never meet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w7x1s4fdll8f",
+     "subject": "tok",
+     "type": "mc",
+     "q": "The phrase 'the unreasonable effectiveness of mathematics' refers to…",
+     "options": [
+      "abstract mathematics turning out to describe the physical world very well",
+      "mathematics being too hard for most people",
+      "the speed of computers",
+      "the difficulty of proving theorems"
+     ],
+     "answer": "abstract mathematics turning out to describe the physical world very well",
+     "accept": [],
+     "hint": "Consider why ideas developed on paper fit nature.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1421agy6sb6q2",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Which is an example of 'pure' mathematics later finding a major practical application?",
+     "options": [
+      "Number theory about prime numbers used in online encryption",
+      "Counting coins in a shop",
+      "Measuring a room for carpet",
+      "Adding up a restaurant bill"
+     ],
+     "answer": "Number theory about prime numbers used in online encryption",
+     "accept": [],
+     "hint": "Look for an area once studied only for its own sake.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzieyrf17t9532",
+     "subject": "tok",
+     "type": "mc",
+     "q": "In mathematics, 'abstraction' means…",
+     "options": [
+      "removing specific details to focus on general structure",
+      "adding real-world examples to a proof",
+      "guessing an answer from a diagram",
+      "memorising formulas"
+     ],
+     "answer": "removing specific details to focus on general structure",
+     "accept": [],
+     "hint": "What happens when 3 apples become just '3'?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzzkfso1yipmon",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Mathematicians often call a proof 'elegant' when it…",
+     "options": [
+      "is short, clear and reveals why the result is true",
+      "uses as many steps as possible",
+      "relies on a computer search",
+      "is written in a foreign language"
+     ],
+     "answer": "is short, clear and reveals why the result is true",
+     "accept": [],
+     "hint": "Think of economy and insight.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u06mjt1vpuhrq",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Which proof technique assumes the opposite of what is to be proved and shows this leads to an impossibility?",
+     "options": [
+      "Proof by contradiction",
+      "Proof by induction",
+      "Direct proof",
+      "Proof by exhaustion"
+     ],
+     "answer": "Proof by contradiction",
+     "accept": [],
+     "hint": "The assumption 'breaks' the system.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13xr0qi1cxgwvu",
+     "subject": "tok",
+     "type": "mc",
+     "q": "Which is the best-formed TOK knowledge question?",
+     "options": [
+      "To what extent is mathematical knowledge discovered rather than created?",
+      "Is 2 + 2 = 4?",
+      "Who invented calculus?",
+      "What is the formula for the area of a circle?"
+     ],
+     "answer": "To what extent is mathematical knowledge discovered rather than created?",
+     "accept": [],
+     "hint": "Knowledge questions are open, contestable and about knowledge itself.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vb30lxd4loro",
+     "subject": "tok",
+     "type": "mc",
+     "q": "A formalist might respond to the question 'Does the number 7 exist?' by saying…",
+     "options": [
+      "it exists only as a symbol within a system of rules",
+      "it exists in a perfect abstract realm",
+      "it exists as seven physical objects",
+      "it is impossible to discuss"
+     ],
+     "answer": "it exists only as a symbol within a system of rules",
+     "accept": [],
+     "hint": "Recall what formalism focuses on.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15fgugeo11q6z",
+     "subject": "tok",
+     "type": "open",
+     "q": "Explain how the success of mathematics in describing the physical world could be used to support the claim that mathematics is discovered. Include one counterclaim.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Ask why invented rules would match nature so closely, then consider whether we select the mathematics that fits.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcx76al12oso3d",
+     "subject": "tok",
+     "type": "open",
+     "q": "To what extent should beauty or elegance be used to judge the value of mathematical knowledge?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider whether elegant proofs are more often true, more useful or simply more satisfying.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7n38ww12k6smg",
+     "subject": "tok",
+     "type": "open",
+     "q": "'Mathematics is a language that humans created.' Discuss this claim with reference to at least one example.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare the symbols we choose with the relationships they express.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
