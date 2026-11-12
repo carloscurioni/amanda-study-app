@@ -4525,6 +4525,507 @@
      "errors": []
     }
    ]
+  },
+  "sci": {
+   "topic": "Biology: sexual reproduction in humans",
+   "questions": [
+    {
+     "id": "rwp101m1redtvp",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which organ produces sperm cells?",
+     "options": [
+      "Testis",
+      "Ovary",
+      "Uterus",
+      "Bladder"
+     ],
+     "answer": "Testis",
+     "accept": [],
+     "hint": "Think of the male gamete-producing organ.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrws66w1it7oja",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which organ releases egg cells?",
+     "options": [
+      "Ovary",
+      "Uterus",
+      "Cervix",
+      "Vagina"
+     ],
+     "answer": "Ovary",
+     "accept": [],
+     "hint": "It is the female gamete-producing organ.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qu1wqptvx3g",
+     "subject": "sci",
+     "type": "short",
+     "q": "Name the tube that carries sperm from the testis towards the urethra.",
+     "options": [],
+     "answer": "sperm duct",
+     "accept": [
+      "vas deferens",
+      "sperm ducts"
+     ],
+     "hint": "It is a duct, named after what it carries.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19636ob1lgy188",
+     "subject": "sci",
+     "type": "short",
+     "q": "Name the organ in which a fetus develops during pregnancy.",
+     "options": [],
+     "answer": "uterus",
+     "accept": [
+      "womb"
+     ],
+     "hint": "It has a thick muscular wall that contracts at birth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cj11oe1gs2mui",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Where does fertilisation usually take place in humans?",
+     "options": [
+      "Oviduct",
+      "Uterus",
+      "Vagina",
+      "Ovary"
+     ],
+     "answer": "Oviduct",
+     "accept": [],
+     "hint": "The egg travels along this tube after leaving the ovary.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14lok25t364b3",
+     "subject": "sci",
+     "type": "short",
+     "q": "State the term for the fusion of the nuclei of a sperm cell and an egg cell.",
+     "options": [],
+     "answer": "fertilisation",
+     "accept": [
+      "fertilization"
+     ],
+     "hint": "It produces a zygote.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnva4qt1nw4yjd",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which feature helps a sperm cell swim to the egg?",
+     "options": [
+      "A flagellum",
+      "A large food store",
+      "A cell wall",
+      "Chloroplasts"
+     ],
+     "answer": "A flagellum",
+     "accept": [],
+     "hint": "Think of the tail.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnip9i8z2amvm",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which statement describes an adaptation of the egg cell?",
+     "options": [
+      "It has energy stores in its cytoplasm",
+      "It has a flagellum",
+      "It is the smallest human cell",
+      "It has no nucleus"
+     ],
+     "answer": "It has energy stores in its cytoplasm",
+     "accept": [],
+     "hint": "The early embryo needs nutrients before implantation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlh46ji1394fwv",
+     "subject": "sci",
+     "type": "num",
+     "q": "A human sperm cell contains 23 chromosomes. How many chromosomes are in the zygote formed at fertilisation?",
+     "options": [],
+     "answer": "46",
+     "accept": [],
+     "hint": "Each gamete contributes one set.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r155byorojjweb",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which hormone causes secondary sexual characteristics to develop in boys during puberty?",
+     "options": [
+      "Testosterone",
+      "Oestrogen",
+      "Insulin",
+      "Adrenaline"
+     ],
+     "answer": "Testosterone",
+     "accept": [],
+     "hint": "It is made in the testes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r62xrnafwch4w",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which is a secondary sexual characteristic that develops in girls during puberty?",
+     "options": [
+      "Breasts develop",
+      "The voice deepens greatly",
+      "Facial hair grows",
+      "Sperm production starts"
+     ],
+     "answer": "Breasts develop",
+     "accept": [],
+     "hint": "It is controlled mainly by oestrogen.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b7qmx51n94j9",
+     "subject": "sci",
+     "type": "short",
+     "q": "Name the structure that connects the fetus to the placenta.",
+     "options": [],
+     "answer": "umbilical cord",
+     "accept": [
+      "the umbilical cord",
+      "cord"
+     ],
+     "hint": "It contains blood vessels and is cut after birth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxlyxw8i7fd5p",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which substance passes from the mother's blood to the fetus across the placenta?",
+     "options": [
+      "Glucose",
+      "Urea",
+      "Carbon dioxide",
+      "Antibiotic-resistant bacteria"
+     ],
+     "answer": "Glucose",
+     "accept": [],
+     "hint": "The fetus needs it for respiration.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cp63b11kr2exy",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which waste substance passes from the fetus to the mother's blood across the placenta?",
+     "options": [
+      "Urea",
+      "Oxygen",
+      "Amino acids",
+      "Glucose"
+     ],
+     "answer": "Urea",
+     "accept": [],
+     "hint": "It is produced when excess amino acids are broken down.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tm0jomjjturm",
+     "subject": "sci",
+     "type": "open",
+     "q": "Explain two ways in which the placenta is adapted for efficient exchange of substances.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about surface area, distance and blood supply.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlzc7w4mgy7vj",
+     "subject": "sci",
+     "type": "open",
+     "q": "Describe the events from the release of an egg cell to the implantation of the embryo in the uterus.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Follow the egg along the oviduct: fertilisation, cell division, then the uterus lining.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa": {
+   "topic": "Tourism and its impact (si + imperfect subjunctive, conditional)",
+   "questions": [
+    {
+     "id": "r13vvazv1vo9xkk",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'el turismo' mean?",
+     "options": [
+      "Tourism",
+      "Tourist",
+      "Tour guide",
+      "Travel agency"
+     ],
+     "answer": "Tourism",
+     "accept": [],
+     "hint": "It is the general activity, not a person.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkiat0k1tm4bhg",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'los beneficios' mean?",
+     "options": [
+      "The benefits",
+      "The problems",
+      "The visitors",
+      "The prices"
+     ],
+     "answer": "The benefits",
+     "accept": [],
+     "hint": "It looks like an English word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4h5evf11snb7a",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'the tourist' (male).",
+     "options": [],
+     "answer": "el turista",
+     "accept": [
+      "turista"
+     ],
+     "hint": "The noun ends in -a even for a man.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ogc6wlo56j6g",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete: Si ___ dinero, viajaría a México.",
+     "options": [
+      "tuviera",
+      "tengo",
+      "tendría",
+      "tuve"
+     ],
+     "answer": "tuviera",
+     "accept": [],
+     "hint": "After 'si' in a hypothetical sentence, use the imperfect subjunctive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r24k1s5utv3pr",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete: Si tuviera tiempo, ___ a la playa.",
+     "options": [
+      "iría",
+      "voy",
+      "fuera",
+      "iba"
+     ],
+     "answer": "iría",
+     "accept": [],
+     "hint": "The result clause uses the conditional.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbs4ud1xy2a2u",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the 'yo' form of 'tener' in the imperfect subjunctive.",
+     "options": [],
+     "answer": "tuviera",
+     "accept": [
+      "tuviese"
+     ],
+     "hint": "Start from the preterite 'tuvieron'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1chkea81l2haev",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the 'yo' form of 'ir' in the conditional.",
+     "options": [],
+     "answer": "iría",
+     "accept": [
+      "iria"
+     ],
+     "hint": "Add -ía to the infinitive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4adhi216lnzyl",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the 'yo' form of 'hacer' in the conditional.",
+     "options": [],
+     "answer": "haría",
+     "accept": [
+      "haria"
+     ],
+     "hint": "This verb has an irregular stem: har-.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2p58ur1b2ucmv",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete: Si yo ___ alcalde, prohibiría los coches en el centro.",
+     "options": [
+      "fuera",
+      "soy",
+      "sería",
+      "era"
+     ],
+     "answer": "fuera",
+     "accept": [],
+     "hint": "Imperfect subjunctive of 'ser'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kd498y1j3ah93",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which of these is a problem caused by tourism?",
+     "options": [
+      "la contaminación",
+      "la creación de empleo",
+      "el intercambio cultural",
+      "más ingresos"
+     ],
+     "answer": "la contaminación",
+     "accept": [],
+     "hint": "Three of these are benefits.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nxgjko1skprh4",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does this sentence mean? 'El turismo crea empleo para la población local.'",
+     "options": [
+      "Tourism creates jobs for local people",
+      "Tourism destroys local jobs",
+      "Tourists live with local families",
+      "Local people do not like tourism"
+     ],
+     "answer": "Tourism creates jobs for local people",
+     "accept": [],
+     "hint": "'Crear' means to create; 'empleo' is work.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg3s0or1a298sr",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'if I had money'.",
+     "options": [],
+     "answer": "si tuviera dinero",
+     "accept": [
+      "si tuviese dinero"
+     ],
+     "hint": "Use 'si' plus the imperfect subjunctive of 'tener'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dpwlm6p12d8y",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete: Si los turistas ___ más respetuosos, habría menos problemas.",
+     "options": [
+      "fueran",
+      "son",
+      "serán",
+      "eran"
+     ],
+     "answer": "fueran",
+     "accept": [],
+     "hint": "Plural imperfect subjunctive of 'ser'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4t4u9vuh3cpd",
+     "subject": "spa",
+     "type": "short",
+     "q": "Write the 'nosotros' form of 'poder' in the conditional.",
+     "options": [],
+     "answer": "podríamos",
+     "accept": [
+      "podriamos"
+     ],
+     "hint": "The stem is irregular: podr-.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryrpfy9n9ffxw",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two sentences in Spanish: one about a benefit and one about a problem of tourism in your city.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "You could use 'Un beneficio es…' and 'Un problema es…'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1stv52t1dyb4di",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write a sentence in Spanish beginning 'Si tuviera…' saying what you would do to make tourism more sustainable, and give a reason.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use the conditional in the second half and 'porque' for the reason.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": [
@@ -5412,6 +5913,892 @@
        "answer": "",
        "accept": [],
        "hint": "Compare como ela se sentia no capítulo 1 e no capítulo 7.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "subject": "en_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "The River and the Harbour",
+   "premise": "Sixteen-year-old Noor must write a coursework essay comparing a play and a novella. Episode by episode, with her friend Theo and her grandmother, she learns to read stage directions, question a narrator, structure a comparison, spot dramatic irony and weave evidence into an argument.",
+   "chapters": [
+    {
+     "title": "Chapter 1: Two Texts on a Desk",
+     "synopsis": "Noor must choose two texts for her coursework comparison and, after a rainy afternoon in the library, finds an unexpected pair.",
+     "text": "The rain had been falling on the library windows since lunch, steady and grey, like someone patiently tapping a pencil. Noor Haddad sat at the long table by the radiator with two piles of books and a coursework task sheet that she had read so many times the corners had gone soft.\n\"Compare two complete texts, one of which must be a drama,\" it said. \"About one thousand five hundred words.\"\nOn the left pile were plays. On the right pile were novels and novellas. Noor had already rejected six of them. One play was too long, one novel was too sad, and one she simply did not understand.\nHer friend Theo dropped into the chair opposite, shaking water from his hood like a dog. \"Still choosing?\" he asked.\n\"Still choosing,\" Noor said. \"Ms Varga says the best comparisons are between texts that are having a conversation, even if their writers never met.\"\nTheo picked up a thin play from the left pile. It was called The Ferryman's Tide, and the cover showed a small boat on a black river. \"This one's short,\" he said hopefully.\nNoor took it and began to read the opening stage directions aloud. \"A jetty at dusk. The water is never still. EDDA, an old ferrywoman, coils a rope as if it were a sleeping animal.\" She stopped. Something about the rope and the restless water made her think of another book.\nShe reached into the right pile and pulled out Glass Harbour, a novella she had read in the summer. It told the story of a girl named Ilse who grew up in a harbour town and wanted, more than anything, to leave it.\n\"Listen,\" Noor said, opening it near the beginning. \"'The sea kept its promises to no one, and still the town waited for it every morning.'\"\nTheo frowned. \"So they both have water in them. Lots of books have water in them.\"\n\"No, it's more than that,\" Noor said slowly. \"In both of them, the sea is a kind of character. It's the thing that keeps people in place and the thing that could take them away. Edda can't leave her river. Ilse can't stop thinking about leaving her harbour.\"\nShe wrote two words at the top of a clean page: staying and leaving. Then, underneath, she drew a line down the middle and wrote a title on each side.\nBy the time the rain stopped, Noor had filled half the page with quick notes. It was not an essay yet. It was barely a plan. But when she packed her bag, she felt, for the first time that week, that the two books on her desk were talking to each other, and that she might be able to listen.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the coursework task ask Noor to do?",
+       "options": [
+        "Compare two complete texts, one of which must be a drama",
+        "Write a review of a single novel",
+        "Write her own play",
+        "Compare two poems"
+       ],
+       "answer": "Compare two complete texts, one of which must be a drama",
+       "accept": [],
+       "hint": "Look at the task sheet she has read many times.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what is the title of the play Theo picks up?",
+       "options": [],
+       "answer": "The Ferryman's Tide",
+       "accept": [
+        "Ferryman's Tide",
+        "The Ferrymans Tide"
+       ],
+       "hint": "The cover shows a small boat on a black river.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what is the name of the girl in Glass Harbour?",
+       "options": [],
+       "answer": "Ilse",
+       "accept": [],
+       "hint": "She grew up in a harbour town.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Edda do in the opening stage directions?",
+       "options": [
+        "She coils a rope",
+        "She rows across the river",
+        "She sells tickets",
+        "She mends a net"
+       ],
+       "answer": "She coils a rope",
+       "accept": [],
+       "hint": "It is compared to a sleeping animal.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is the weather like at the start?",
+       "options": [
+        "It is raining",
+        "It is snowing",
+        "It is very hot",
+        "It is windy and sunny"
+       ],
+       "answer": "It is raining",
+       "accept": [],
+       "hint": "Listen to the library windows.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which two words does Noor write at the top of her page?",
+       "options": [
+        "staying and leaving",
+        "sea and river",
+        "love and hate",
+        "old and young"
+       ],
+       "answer": "staying and leaving",
+       "accept": [],
+       "hint": "They name the link she sees between the texts.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what can we infer Ms Varga means by texts 'having a conversation'?",
+       "options": [
+        "The texts explore connected ideas that can be compared",
+        "The texts must contain lots of dialogue",
+        "The writers must have known each other",
+        "The texts must be written in the same year"
+       ],
+       "answer": "The texts explore connected ideas that can be compared",
+       "accept": [],
+       "hint": "Think about why Noor's pair works.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the sea or river works well as a link between the two texts?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what the water does to the characters in each.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: Reading Between the Stage Directions",
+     "synopsis": "In a drama lesson, Noor discovers that stage directions in a play can do some of the work that a narrator does in a novel.",
+     "text": "On Tuesday, Ms Varga pushed the desks to the walls and handed out copies of the first scene of The Ferryman's Tide. \"We are not going to read this,\" she announced. \"We are going to stand it up.\"\nNoor was given the part of Edda. Theo, who had not volunteered, was given the part of Jory, a young traveller who arrives at the jetty and asks to be taken across the river.\n\"Before anyone speaks,\" said Ms Varga, \"read the stage directions. In a novel, a narrator can tell you what a character is thinking. In a play, you only get what people say and what they do. So the stage directions matter enormously.\"\nNoor read them again. Edda coils a rope as if it were a sleeping animal. She does not look up when Jory enters. Later, when Jory offers her money, she pauses for a long time before she takes it.\n\"Why does she pause?\" asked Ms Varga.\n\"Because she doesn't want to go?\" Theo guessed.\n\"Or because she's been asked that question too many times,\" Noor said. \"She's tired of carrying people to the other side when she never goes there herself.\"\nMs Varga smiled. \"Show me.\"\nSo Noor tried it. She knelt on the classroom floor with an imaginary rope, kept her eyes down when Theo approached, and let the silence stretch before she held out her hand. The class went quiet. For a moment the classroom really did feel like a jetty at dusk.\nAfterwards, Noor opened Glass Harbour at the chapter where Ilse's father refuses to let her take the ferry to the city. The novelist does not leave anything to the reader's imagination. Ilse tells us exactly what she feels: \"I hated him for loving me so carefully.\"\nNoor wrote in her notebook: In the novella, the narrator explains the feeling directly. In the play, the silence and the pause make the audience feel it for themselves.\n\"That's a comparison,\" Ms Varga said, reading over her shoulder. \"Not a list of things that are the same, but a point about how two writers use different tools to reach a similar effect.\"\nOn the way out, Theo admitted he had quite enjoyed being Jory. \"Although,\" he added, \"I still don't know whether he ever gets across the river.\"\n\"Neither do I,\" said Noor. \"We haven't read that far yet.\"\nShe tucked the script into her bag carefully, the way Edda had held her rope, as though something inside it might wake up.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Varga ask the class to do with the first scene?",
+       "options": [
+        "Act it out",
+        "Copy it out",
+        "Translate it",
+        "Summarise it at home"
+       ],
+       "answer": "Act it out",
+       "accept": [],
+       "hint": "She says they will 'stand it up'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, which character does Theo play?",
+       "options": [],
+       "answer": "Jory",
+       "accept": [],
+       "hint": "He is a young traveller.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Jory ask Edda to do?",
+       "options": [
+        "Take him across the river",
+        "Teach him to fish",
+        "Lend him a boat",
+        "Find his luggage"
+       ],
+       "answer": "Take him across the river",
+       "accept": [],
+       "hint": "He arrives at the jetty.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Edda do before she takes Jory's money?",
+       "options": [
+        "She pauses for a long time",
+        "She counts it twice",
+        "She laughs",
+        "She refuses it"
+       ],
+       "answer": "She pauses for a long time",
+       "accept": [],
+       "hint": "Ms Varga asks the class why.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, according to Ms Varga, what can a narrator in a novel do that a play usually cannot?",
+       "options": [
+        "Tell the reader what a character is thinking",
+        "Use dialogue",
+        "Have more than one character",
+        "Have a setting"
+       ],
+       "answer": "Tell the reader what a character is thinking",
+       "accept": [],
+       "hint": "Plays rely on what people say and do.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does the novella show Ilse's feelings about her father?",
+       "options": [
+        "Ilse states them directly",
+        "Through a long silence",
+        "Through stage directions",
+        "Through a letter from her father"
+       ],
+       "answer": "Ilse states them directly",
+       "accept": [],
+       "hint": "Look at the quotation Noor finds.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what makes Noor's note a real comparison, according to Ms Varga?",
+       "options": [
+        "It shows two writers using different methods for a similar effect",
+        "It lists things that are the same",
+        "It retells both stories",
+        "It gives Noor's opinion of each book"
+       ],
+       "answer": "It shows two writers using different methods for a similar effect",
+       "accept": [],
+       "hint": "It is about how, not only what.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the silence in Noor's performance had such a strong effect on the class?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Consider what an audience does when nothing is said.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Voice in the Harbour",
+     "synopsis": "Noor rereads Glass Harbour and realises that its first-person narrator is not as reliable as she first believed.",
+     "text": "On Saturday morning, Noor's grandmother found her at the kitchen table surrounded by sticky notes of five different colours.\n\"Are you building something?\" her grandmother asked, putting down a plate of warm bread.\n\"An argument,\" Noor said. \"Or I'm trying to.\"\nShe was rereading Glass Harbour, and something was bothering her. The first time she had read it, she had trusted Ilse completely. Ilse told the story, so Noor had believed every word. Ilse said the town was cruel, so the town was cruel. Ilse said her father was a coward, so he was a coward.\nBut this time, Noor noticed small moments that did not fit. In chapter four, Ilse says nobody ever helped her family, yet two pages later a neighbour brings fish to the door every Friday. In chapter six, Ilse calls her father a coward, but the same chapter mentions, almost by accident, that he once rowed out in a storm to rescue a stranded boy.\nNoor marked these moments with orange notes. Orange was for doubt.\n\"Grandma,\" she said, \"if someone tells you their own story, can you believe them?\"\nHer grandmother laughed. \"You can believe that it's their story. That's not always the same as believing it's the whole story.\"\nNoor wrote that down, word for word, and then crossed it out because it was not her own sentence. Instead she wrote: Ilse is a first-person narrator whose anger shapes what she notices. The reader is invited to see more than she can.\nThen she picked up The Ferryman's Tide. In a play there was no narrator at all, so nobody could steer the audience in the same way. The audience saw Edda and Jory from the outside, at the same distance, and had to judge them both.\n\"That's interesting,\" Noor murmured. \"In the novella, I have to look past the narrator to find the truth. In the play, I have to look past the dialogue, because the characters don't say what they mean.\"\nShe stuck a green note, for connections, between the two books.\nHer grandmother read the note upside down. \"You know,\" she said, \"your grandfather never said 'I love you' either. He just fixed the gate every time it broke.\"\nNoor looked up. It was exactly the kind of thing that happened in both texts: love hidden inside small, practical actions. She added another green note and decided that, when the essay was finished, her grandmother would be the first person to read it.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Noor use different coloured sticky notes for?",
+       "options": [
+        "Marking ideas while she rereads",
+        "Decorating her room",
+        "Leaving messages for Theo",
+        "Counting words"
+       ],
+       "answer": "Marking ideas while she rereads",
+       "accept": [],
+       "hint": "Orange and green each have a meaning.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what colour sticky note is used for doubt?",
+       "options": [],
+       "answer": "orange",
+       "accept": [],
+       "hint": "It is mentioned with the moments that 'did not fit'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, who brings fish to Ilse's family every Friday?",
+       "options": [
+        "A neighbour",
+        "Her father",
+        "A ferryman",
+        "Her teacher"
+       ],
+       "answer": "A neighbour",
+       "accept": [],
+       "hint": "This contradicts what Ilse says.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what brave act of Ilse's father is mentioned?",
+       "options": [
+        "He rowed out in a storm to rescue a stranded boy",
+        "He fought off a thief",
+        "He saved the town from a fire",
+        "He swam across the harbour"
+       ],
+       "answer": "He rowed out in a storm to rescue a stranded boy",
+       "accept": [],
+       "hint": "It is mentioned 'almost by accident'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Noor cross out the sentence she copied from her grandmother?",
+       "options": [
+        "It was not her own sentence",
+        "It was spelled wrong",
+        "It was too long",
+        "It was about the wrong book"
+       ],
+       "answer": "It was not her own sentence",
+       "accept": [],
+       "hint": "Think about writing coursework honestly.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Noor realise about Ilse as a narrator?",
+       "options": [
+        "Her anger shapes what she notices",
+        "She always tells the whole truth",
+        "She is not part of the story",
+        "She speaks in the third person"
+       ],
+       "answer": "Her anger shapes what she notices",
+       "accept": [],
+       "hint": "The reader can see more than she can.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what can we infer from the grandmother's story about the gate?",
+       "options": [
+        "Some people show love through actions rather than words",
+        "The grandfather was bad at fixing things",
+        "The gate was very old",
+        "The grandmother wanted a new gate"
+       ],
+       "answer": "Some people show love through actions rather than words",
+       "accept": [],
+       "hint": "Noor links it to both texts.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think a writer might choose a narrator who does not tell the whole truth?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what the reader gets to discover.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Argument in the Corridor",
+     "synopsis": "Noor and Theo disagree about whether Noor's essay should go through the texts one at a time or compare them point by point.",
+     "text": "By Wednesday, Noor had a plan, and Theo did not like it.\nThey were waiting outside the science lab, and Noor had shown him the page in her notebook. It was divided into two halves. The first half said Glass Harbour. The second half said The Ferryman's Tide.\n\"So you'll write about one book,\" Theo said, \"and then the other book?\"\n\"Yes. It's tidy.\"\n\"It's two essays stapled together,\" he said. \"Ms Varga said the texts had to be having a conversation. In your plan, the first one finishes talking before the second one even arrives.\"\nNoor felt her face go warm. She hated being wrong, and she especially hated being wrong in a corridor. \"Fine,\" she said. \"Then how would you do it?\"\nTheo took her pencil, which she also hated, and drew three boxes across the page instead of two down it. In the first box he wrote place as a trap. In the second he wrote love shown through actions. In the third he wrote the ending: who leaves?\n\"Each paragraph is about one idea,\" he said, \"and both texts are in every paragraph. You say what the novella does, then what the play does, then why the difference matters.\"\nNoor stared at the boxes. They were messy, but they were also right, and she knew it.\n\"You'd need linking words,\" she said slowly. \"Similarly. In contrast. Whereas. Both writers. And the evidence has to be woven in, not dumped at the end like shopping.\"\n\"Exactly,\" Theo said, although he looked surprised that he had agreed with something so organised.\nThat evening, Noor tried writing the first paragraph. Her first attempt was clumsy: In Glass Harbour the sea is a trap. Also in The Ferryman's Tide the river is a trap. She deleted it.\nHer second attempt was better. Both writers present water as something that holds their characters in place, but whereas Ilse describes the sea as a jailer, \"keeping its promises to no one\", Edda's river is presented through her actions, as she \"coils a rope as if it were a sleeping animal\", suggesting a trap she has learned to live beside rather than one she fights.\nShe read it aloud to her bedroom wall. The quotations were short and they sat inside her own sentence instead of standing apart from it. The comparison happened in the middle of the sentence, at the word whereas.\nThe next morning she found Theo at his locker. \"You were right,\" she said. \"Don't get used to it.\"\n\"I'll try not to,\" said Theo, grinning.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how is Noor's first plan organised?",
+       "options": [
+        "One text first, then the other",
+        "Point by point, with both texts in each paragraph",
+        "By chapter of the novella",
+        "By character"
+       ],
+       "answer": "One text first, then the other",
+       "accept": [],
+       "hint": "Theo calls it two essays stapled together.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, where are Noor and Theo when they argue?",
+       "options": [
+        "Outside the science lab",
+        "In the library",
+        "At the bus stop",
+        "In the drama studio"
+       ],
+       "answer": "Outside the science lab",
+       "accept": [],
+       "hint": "Look at the second paragraph.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, how many boxes does Theo draw across the page?",
+       "options": [],
+       "answer": "three",
+       "accept": [
+        "3"
+       ],
+       "hint": "Each box is one idea.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which of these is one of Theo's ideas for a paragraph?",
+       "options": [
+        "love shown through actions",
+        "the author's life",
+        "the price of the books",
+        "the front covers"
+       ],
+       "answer": "love shown through actions",
+       "accept": [],
+       "hint": "It is written in the second box.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which word does Noor use to make the comparison in the middle of her better sentence?",
+       "options": [
+        "whereas",
+        "also",
+        "because",
+        "finally"
+       ],
+       "answer": "whereas",
+       "accept": [],
+       "hint": "It sets two ideas against each other.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is wrong with Noor's first attempt at a paragraph?",
+       "options": [
+        "It simply says the same thing about each text, joined by 'also'",
+        "It has no quotations at all from the play",
+        "It is far too long",
+        "It is about the wrong texts"
+       ],
+       "answer": "It simply says the same thing about each text, joined by 'also'",
+       "accept": [],
+       "hint": "Compare it with her second attempt.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what can we infer about Noor from her final words to Theo?",
+       "options": [
+        "She can admit she was wrong but keeps her sense of humour",
+        "She is still angry with him",
+        "She plans to copy his essay",
+        "She has given up on the coursework"
+       ],
+       "answer": "She can admit she was wrong but keeps her sense of humour",
+       "accept": [],
+       "hint": "Look at 'Don't get used to it.'",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think a point-by-point structure makes a stronger comparison than writing about one text and then the other?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about where the actual comparing happens.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Dramatic Irony at the Dress Rehearsal",
+     "synopsis": "When the drama club rehearses the final scenes, Noor notices that the audience knows something the characters do not.",
+     "text": "The drama club was staging The Ferryman's Tide for the end-of-term show, and Ms Varga had asked Noor's English class to watch the dress rehearsal. \"You will understand a play differently when it is lit,\" she promised.\nThe hall smelled of dust and fresh paint. Someone had built a jetty out of old pallets, and a blue cloth rippled across the floor of the stage, moved by two Year 8 students lying hidden underneath it. It was surprisingly convincing.\nNoor sat in the third row with her notebook open. This time she was not reading the play; she was watching it happen.\nIn the second act, there was a moment she had skimmed past on the page. Jory tells Edda that he is travelling to the far bank to find his mother, who left the village years ago. He does not know her name, only that she once worked the ferry. Edda listens with her back to him. The stage direction, which Noor knew by heart, said: She stops coiling the rope. Her hands do not move again until the end of the scene.\nIn the rehearsal, the actor playing Edda turned slightly towards the audience as she stopped, so that everyone in the hall could see her face but Jory could not.\nNoor's pencil froze. The audience understood, at that moment, that Edda might be the mother Jory was looking for. Jory did not understand. Perhaps Edda did not fully understand either.\n\"Dramatic irony,\" Theo whispered from the seat beside her.\n\"Yes,\" Noor whispered back. \"But look at what it does. It makes every line after this hurt more.\"\nShe thought about Glass Harbour. The novella did something similar, but the other way round. Because Ilse narrated the story, readers knew only what Ilse knew, and the truth about her father's bravery came out slowly, by accident, in details she did not seem to value. In the novella the irony was hidden inside the narrator's voice. In the play it was placed in the space between the stage and the seats.\nAfter the rehearsal, Noor wrote quickly while the idea was still warm: Both writers create a gap between what a character knows and what the audience or reader knows. In the play, this gap is staged and public; in the novella, it is private and discovered gradually.\nOn the way out, the two Year 8 students crawled out from under the blue cloth, red-faced and laughing.\n\"Was the river all right?\" one of them asked.\n\"The river,\" said Noor, \"was perfect.\"",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Ms Varga want the class to watch the dress rehearsal?",
+       "options": [
+        "A play is understood differently when it is performed",
+        "They need to help paint the set",
+        "She wants them to audition",
+        "The script is lost"
+       ],
+       "answer": "A play is understood differently when it is performed",
+       "accept": [],
+       "hint": "She talks about the play being 'lit'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is the jetty made from?",
+       "options": [
+        "Old pallets",
+        "Real wood from a boat",
+        "Cardboard boxes",
+        "Metal chairs"
+       ],
+       "answer": "Old pallets",
+       "accept": [],
+       "hint": "Someone built it for the stage.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how is the river created on stage?",
+       "options": [
+        "A blue cloth moved by students hidden underneath",
+        "A projection on the wall",
+        "A tank of real water",
+        "Painted waves on the floor"
+       ],
+       "answer": "A blue cloth moved by students hidden underneath",
+       "accept": [],
+       "hint": "Two Year 8 students help.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why is Jory travelling to the far bank?",
+       "options": [
+        "To find his mother",
+        "To sell his boat",
+        "To start a new job",
+        "To visit a friend"
+       ],
+       "answer": "To find his mother",
+       "accept": [],
+       "hint": "She left the village years ago.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does the actor playing Edda help the audience understand the moment?",
+       "options": [
+        "She turns so the audience can see her face but Jory cannot",
+        "She shouts her line",
+        "She leaves the stage",
+        "She speaks directly to Jory"
+       ],
+       "answer": "She turns so the audience can see her face but Jory cannot",
+       "accept": [],
+       "hint": "Think about where the audience is.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what term does Theo whisper for this effect?",
+       "options": [],
+       "answer": "dramatic irony",
+       "accept": [
+        "irony"
+       ],
+       "hint": "The audience knows more than a character.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Noor say the novella's irony differs from the play's?",
+       "options": [
+        "In the novella it is private and discovered gradually; in the play it is staged and public",
+        "In the novella there is no irony at all",
+        "In the play it is explained by a narrator",
+        "They are exactly the same"
+       ],
+       "answer": "In the novella it is private and discovered gradually; in the play it is staged and public",
+       "accept": [],
+       "hint": "Read her final note.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think dramatic irony makes 'every line after this hurt more' for the audience?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Consider what the audience is waiting for.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Paragraph That Would Not Work",
+     "synopsis": "Halfway through her draft, Noor gets stuck on a paragraph about endings, until a conversation at the bus stop helps her find a sharper argument.",
+     "text": "Noor's draft had reached one thousand and ninety words, and it had stopped there for two days.\nThe problem was the ending paragraph. Everything else had found its shape. Her paragraphs on place, on hidden love and on dramatic irony each moved between the two texts, with short quotations stitched into her sentences. But the endings refused to fit.\nAt the end of Glass Harbour, Ilse finally boards the ferry to the city. The last sentence is: \"I did not look back, because I knew that if I did, the harbour would look back at me.\" At the end of The Ferryman's Tide, Jory reaches the far bank, but Edda stays on the jetty, coiling her rope as the lights fade.\n\"One character leaves and one stays,\" Noor said to Theo at the bus stop. \"So they're just different. That's not an argument. It's a fact.\"\nTheo thought about it while a bus that was not theirs went past. \"Does Ilse really leave, though?\" he asked eventually. \"She says she doesn't look back because the harbour would look back. So the harbour's still in her head.\"\nNoor turned to look at him.\n\"And Edda stays,\" Theo went on, \"but she's the one who let Jory go. Maybe staying is her way of being brave.\"\nFor a second, Noor could not speak. Then she sat down on the cold bench, opened her notebook on her knees and began writing so fast that her handwriting slanted like rain.\nHer new paragraph did not say that one character leaves and one stays. It said that both writers question whether leaving and staying are really opposites. Ilse escapes physically, but the novella's final image suggests that the harbour has travelled with her. Edda remains physically, but by carrying Jory across, she frees someone else. The ending of the novella is spoken by a single voice looking forward; the ending of the play is silent and visual, and the audience is left watching a woman who has chosen her place.\nShe checked her evidence. Two short quotations, one stage direction, and a comment on the effect of each. She checked her linking words: both, whereas, by contrast. She checked that she had not simply retold the stories. She had not.\n\"Our bus,\" Theo said, nudging her.\nNoor stood up and nearly dropped her notebook. \"Thank you,\" she said. \"You changed my whole conclusion.\"\n\"I just asked a question,\" said Theo.\n\"That,\" said Noor, climbing the steps of the bus, \"is usually how it starts.\"",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "num",
+       "q": "In the chapter, how many words long had Noor's draft reached when she got stuck?",
+       "options": [],
+       "answer": "1090",
+       "accept": [],
+       "hint": "Look at the first sentence.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which paragraph is causing Noor problems?",
+       "options": [
+        "The ending paragraph",
+        "The introduction",
+        "The paragraph on dramatic irony",
+        "The paragraph on place"
+       ],
+       "answer": "The ending paragraph",
+       "accept": [],
+       "hint": "It is about the texts' endings.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what happens to Ilse at the end of Glass Harbour?",
+       "options": [
+        "She boards the ferry to the city",
+        "She stays in the harbour",
+        "She becomes a ferrywoman",
+        "She returns home from the city"
+       ],
+       "answer": "She boards the ferry to the city",
+       "accept": [],
+       "hint": "She does not look back.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, where is Edda at the end of The Ferryman's Tide?",
+       "options": [
+        "On the jetty, coiling her rope",
+        "On the far bank",
+        "In the city",
+        "On the ferry with Jory"
+       ],
+       "answer": "On the jetty, coiling her rope",
+       "accept": [],
+       "hint": "The lights fade around her.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, where does the conversation with Theo take place?",
+       "options": [
+        "At the bus stop",
+        "In the classroom",
+        "In the library",
+        "In the kitchen"
+       ],
+       "answer": "At the bus stop",
+       "accept": [],
+       "hint": "A bus that is not theirs goes past.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Noor think 'one leaves and one stays' is not good enough?",
+       "options": [
+        "It is a fact, not an argument",
+        "It is untrue",
+        "It is too long",
+        "Ms Varga told her not to use it"
+       ],
+       "answer": "It is a fact, not an argument",
+       "accept": [],
+       "hint": "She says so to Theo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what new idea does Noor's paragraph explore?",
+       "options": [
+        "Whether leaving and staying are really opposites",
+        "Which character is more likeable",
+        "Which text is better written",
+        "Why the play is shorter than the novella"
+       ],
+       "answer": "Whether leaving and staying are really opposites",
+       "accept": [],
+       "hint": "Theo's questions lead her there.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Noor says that asking a question 'is usually how it starts'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how her best ideas have appeared in the story.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Grandmother's Verdict",
+     "synopsis": "Noor finishes her draft, checks it against the task, and keeps a promise to let her grandmother read it first.",
+     "text": "On Sunday evening, Noor printed her draft. It was one thousand four hundred and eighty words long, and the pages were still warm from the printer when she carried them into the kitchen.\nBefore she handed it over, she sat down and checked it against the task sheet one last time, the way Ms Varga had taught the class. Two complete texts, one of them a drama: yes. A clear line of argument from the first paragraph to the last: yes, she thought. Every paragraph compared both texts, rather than dealing with them one at a time. Quotations were short and built into her own sentences. She had written about how the writers created effects, not just what happened. And she had remembered that one text was written to be performed, so she had written about the audience, the staging and the silences, not only the words on the page.\nThere was one sentence she was unsure about, so she read it aloud quietly: \"Both writers suggest that a place can live inside a person long after the person has left it.\" It sounded true. More importantly, she could point to the evidence that made it true.\nHer grandmother put on her reading glasses and read slowly, the way she read letters, with a finger resting under each line. Noor tried not to watch. She washed two cups that were already clean. She rearranged the fruit bowl.\nAt last her grandmother put the pages down.\n\"I have not read these books,\" she said. \"But now I feel as if I have met the old woman with the rope, and the girl who wanted to leave.\"\nNoor let out a breath she had not noticed she was holding.\n\"And this part,\" her grandmother continued, tapping the page about hidden love, \"about people who show love by fixing things instead of saying it. You wrote about the books, but I think you were also writing about your grandfather.\"\n\"Maybe a little,\" Noor admitted.\n\"Good essays usually are a little about the writer,\" said her grandmother. \"Just not too much.\"\nOn Monday, Noor handed the draft to Ms Varga, who flicked through it and paused at the conclusion. She did not say anything, but she underlined one sentence and drew a small tick beside it.\nAfter class, Theo asked which sentence it was.\n\"The one about whether staying and leaving are really opposites,\" Noor said.\n\"My idea,\" Theo said.\n\"Our idea,\" said Noor. \"That's what a conversation is.\"\nOutside, it had started to rain again, steady and grey, tapping on the windows like a patient pencil. This time, Noor did not mind at all.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "num",
+       "q": "In the chapter, how many words long is Noor's printed draft?",
+       "options": [],
+       "answer": "1480",
+       "accept": [],
+       "hint": "Look at the first paragraph.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Noor do before handing the draft to her grandmother?",
+       "options": [
+        "Checks it against the task sheet",
+        "Reads it to Theo on the phone",
+        "Emails it to Ms Varga",
+        "Adds another quotation"
+       ],
+       "answer": "Checks it against the task sheet",
+       "accept": [],
+       "hint": "She does it the way Ms Varga taught.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which feature of the play does Noor make sure to write about?",
+       "options": [
+        "The audience, the staging and the silences",
+        "The price of the tickets",
+        "The life of the playwright",
+        "The number of acts only"
+       ],
+       "answer": "The audience, the staging and the silences",
+       "accept": [],
+       "hint": "One text was written to be performed.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Noor do while her grandmother reads?",
+       "options": [
+        "She washes cups that are already clean",
+        "She goes for a walk",
+        "She watches television",
+        "She rewrites her introduction"
+       ],
+       "answer": "She washes cups that are already clean",
+       "accept": [],
+       "hint": "She is trying not to watch.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does the grandmother read?",
+       "options": [
+        "Slowly, with a finger under each line",
+        "Quickly, skipping pages",
+        "Aloud to the whole family",
+        "Only the conclusion"
+       ],
+       "answer": "Slowly, with a finger under each line",
+       "accept": [],
+       "hint": "It is the way she reads letters.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Ms Varga do with the conclusion?",
+       "options": [
+        "She underlines one sentence and draws a small tick",
+        "She crosses it out",
+        "She asks Noor to rewrite it",
+        "She reads it to the class"
+       ],
+       "answer": "She underlines one sentence and draws a small tick",
+       "accept": [],
+       "hint": "She does not say anything.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Noor mean when she says 'Our idea… That's what a conversation is'?",
+       "options": [
+        "Good ideas can grow from people thinking together",
+        "Theo should get the credit",
+        "She took the idea from a book",
+        "Conversations are better than essays"
+       ],
+       "answer": "Good ideas can grow from people thinking together",
+       "accept": [],
+       "hint": "Link it to the texts 'having a conversation' in Chapter 1.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the story ends with the same image of rain as Chapter 1?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Consider how Noor has changed since the beginning.",
        "text": "",
        "errors": []
       }
