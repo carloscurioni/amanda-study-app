@@ -1241,6 +1241,2493 @@
      "errors": []
     }
    ]
+  },
+  "econ": {
+   "topic": "Term 1 review: the basic economic problem and allocation of resources",
+   "questions": [
+    {
+     "id": "r1fnetjy123impg",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What is the basic economic problem?",
+     "options": [
+      "Unlimited wants but limited resources",
+      "Too much money in the economy",
+      "Too many firms in a market",
+      "Prices that never change"
+     ],
+     "answer": "Unlimited wants but limited resources",
+     "accept": [],
+     "hint": "Think about why choices must be made at all.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10lpda1y5cr7p",
+     "subject": "econ",
+     "type": "short",
+     "q": "What term describes the next best alternative given up when a choice is made?",
+     "options": [],
+     "answer": "opportunity cost",
+     "accept": [
+      "the opportunity cost"
+     ],
+     "hint": "It is a 'cost' that is not measured in money.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10271yg1ox2y5h",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of these is an example of the factor of production 'capital'?",
+     "options": [
+      "A delivery van",
+      "A farmer's field",
+      "A factory worker",
+      "A business owner"
+     ],
+     "answer": "A delivery van",
+     "accept": [],
+     "hint": "Capital is a man-made good used to produce other goods.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15croiwk2elcc",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A fall in the price of a good leads to which change on its demand curve?",
+     "options": [
+      "An extension (movement down along the curve)",
+      "A shift of the curve to the right",
+      "A shift of the curve to the left",
+      "A contraction (movement up along the curve)"
+     ],
+     "answer": "An extension (movement down along the curve)",
+     "accept": [],
+     "hint": "A change in the good's own price causes a movement, not a shift.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rubhgnfpegj6z",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of these would shift the demand curve for electric cars to the right?",
+     "options": [
+      "A rise in the price of petrol",
+      "A rise in the price of electric cars",
+      "A fall in consumers' incomes",
+      "A new tax on electric cars"
+     ],
+     "answer": "A rise in the price of petrol",
+     "accept": [],
+     "hint": "Petrol cars are a substitute for electric cars.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rreced9t6tjm6",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of these would shift the supply curve of wheat to the left?",
+     "options": [
+      "A drought",
+      "A new, cheaper fertiliser",
+      "A government subsidy to farmers",
+      "Better harvesting machines"
+     ],
+     "answer": "A drought",
+     "accept": [],
+     "hint": "Ask which event makes it harder or more costly to produce wheat.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv4f6ledsl6lk",
+     "subject": "econ",
+     "type": "mc",
+     "q": "If demand rises and supply stays the same, what happens to the equilibrium price and quantity?",
+     "options": [
+      "Both rise",
+      "Both fall",
+      "Price rises, quantity falls",
+      "Price falls, quantity rises"
+     ],
+     "answer": "Both rise",
+     "accept": [],
+     "hint": "Sketch the demand curve shifting right on a diagram.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m77ymwj7pt39",
+     "subject": "econ",
+     "type": "short",
+     "q": "What is created in a market when the price is set above the equilibrium price: a surplus or a shortage?",
+     "options": [],
+     "answer": "surplus",
+     "accept": [
+      "a surplus",
+      "excess supply"
+     ],
+     "hint": "Compare quantity supplied with quantity demanded at the higher price.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrss7ft1bn001u",
+     "subject": "econ",
+     "type": "num",
+     "q": "The price of a good rises by 10% and the quantity demanded falls by 20%. Calculate the price elasticity of demand (give the value as a positive number).",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "PED = % change in quantity demanded ÷ % change in price.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17f6d5o1w5i7k9",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A PED value of 0.4 means demand is:",
+     "options": [
+      "Price inelastic",
+      "Price elastic",
+      "Perfectly elastic",
+      "Unitary elastic"
+     ],
+     "answer": "Price inelastic",
+     "accept": [],
+     "hint": "Compare the value with 1.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sglne5xwr03w",
+     "subject": "econ",
+     "type": "mc",
+     "q": "If demand for a product is price inelastic, what happens to total revenue when the firm raises its price?",
+     "options": [
+      "It rises",
+      "It falls",
+      "It stays the same",
+      "It becomes zero"
+     ],
+     "answer": "It rises",
+     "accept": [],
+     "hint": "Quantity falls by a smaller percentage than the price rises.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rugxe3vtyw3ya",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of these is most likely to make demand for a product price elastic?",
+     "options": [
+      "It has many close substitutes",
+      "It is a necessity",
+      "It takes a tiny share of income",
+      "It is habit-forming"
+     ],
+     "answer": "It has many close substitutes",
+     "accept": [],
+     "hint": "Think about how easily buyers can switch.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reb5cmu7uh3dn",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What is market failure?",
+     "options": [
+      "When the market misallocates resources",
+      "When a firm makes a loss",
+      "When prices rise every year",
+      "When a shop runs out of stock for a day"
+     ],
+     "answer": "When the market misallocates resources",
+     "accept": [],
+     "hint": "It is about the whole allocation of resources, not one firm.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgtloea1o80xnv",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of these is the best example of a negative externality?",
+     "options": [
+      "Noise and pollution from a factory affecting local residents",
+      "A firm paying its workers wages",
+      "A consumer buying a new phone",
+      "A government building a school"
+     ],
+     "answer": "Noise and pollution from a factory affecting local residents",
+     "accept": [],
+     "hint": "An externality affects a third party outside the transaction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r199sbhk11or2iu",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain why a maximum price set below equilibrium may lead to a shortage. Use the terms demand and supply.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare quantity demanded and quantity supplied at the lower price.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrdw41khtca2k",
+     "subject": "econ",
+     "type": "open",
+     "q": "Discuss whether a government should tax sugary drinks to reduce their consumption. Consider price elasticity of demand in your answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what happens to consumption if demand is inelastic, and who pays the tax.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Term 1 review: reading skills and descriptive and narrative writing",
+   "questions": [
+    {
+     "id": "rc0juw51kitxgd",
+     "subject": "en",
+     "type": "mc",
+     "q": "In a comprehension question, what does the command word 'identify' ask you to do?",
+     "options": [
+      "Pick out a relevant word, phrase or fact",
+      "Write a full essay",
+      "Give your personal opinion",
+      "Rewrite the passage"
+     ],
+     "answer": "Pick out a relevant word, phrase or fact",
+     "accept": [],
+     "hint": "It is usually a short, precise answer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpb2b8w1r3232b",
+     "subject": "en",
+     "type": "mc",
+     "q": "A question asks you to answer 'in your own words'. What should you do?",
+     "options": [
+      "Explain the idea without copying the text's key words",
+      "Copy the sentence exactly",
+      "Quote as much as possible",
+      "Write a new story"
+     ],
+     "answer": "Explain the idea without copying the text's key words",
+     "accept": [],
+     "hint": "The examiner wants to see that you understood the meaning.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3wbzd21ustv73",
+     "subject": "en",
+     "type": "short",
+     "q": "What language technique is used here: 'The wind whispered through the trees'?",
+     "options": [],
+     "answer": "personification",
+     "accept": [
+      "Personification"
+     ],
+     "hint": "A non-human thing is given a human action.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk5vdx3ixw7ac",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which technique is used in 'Her voice was a knife cutting through the silence'?",
+     "options": [
+      "Metaphor",
+      "Simile",
+      "Alliteration",
+      "Onomatopoeia"
+     ],
+     "answer": "Metaphor",
+     "accept": [],
+     "hint": "Look for 'like' or 'as'. Are they there?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l0ml2b1ieq0sw",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the main effect of the short sentence in: 'The corridor stretched into darkness, every door shut tight, every light long dead. Then — a footstep.'?",
+     "options": [
+      "It creates sudden tension",
+      "It slows the pace down",
+      "It adds humour",
+      "It gives background facts"
+     ],
+     "answer": "It creates sudden tension",
+     "accept": [],
+     "hint": "Notice the contrast with the long sentence before it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o46jvqrc1a1f",
+     "subject": "en",
+     "type": "mc",
+     "q": "When analysing a writer's effects, which answer is strongest?",
+     "options": [
+      "Quote a word, explain its connotations and the effect on the reader",
+      "Name the technique only",
+      "Say the description is 'good'",
+      "Retell what happens"
+     ],
+     "answer": "Quote a word, explain its connotations and the effect on the reader",
+     "accept": [],
+     "hint": "Examiners reward explaining 'how' and 'why', not only 'what'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uumziwthuk16",
+     "subject": "en",
+     "type": "short",
+     "q": "What word describes the ideas and feelings a word suggests beyond its literal meaning?",
+     "options": [],
+     "answer": "connotations",
+     "accept": [
+      "connotation"
+     ],
+     "hint": "'Home' and 'house' may mean the same thing but feel different.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19fi8m3b7qahl",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence uses sensory imagery most effectively for descriptive writing?",
+     "options": [
+      "The bitter smell of burnt toast clung to the cold kitchen walls.",
+      "The kitchen was nice.",
+      "There was a kitchen in the house.",
+      "I went into the kitchen and then left."
+     ],
+     "answer": "The bitter smell of burnt toast clung to the cold kitchen walls.",
+     "accept": [],
+     "hint": "Look for the sentence that uses the senses.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a2ufj3hy42gn",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the main purpose of descriptive writing?",
+     "options": [
+      "To create a vivid picture of a place, person or moment",
+      "To persuade the reader to act",
+      "To tell a story with a clear plot",
+      "To give instructions"
+     ],
+     "answer": "To create a vivid picture of a place, person or moment",
+     "accept": [],
+     "hint": "Think about atmosphere rather than events.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uhl4gm13ecvxe",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does a narrative need that a purely descriptive piece does not?",
+     "options": [
+      "A plot with development and resolution",
+      "Adjectives",
+      "Paragraphs",
+      "Imagery"
+     ],
+     "answer": "A plot with development and resolution",
+     "accept": [],
+     "hint": "Narrative is about events that move forward.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re6iju9memzeo",
+     "subject": "en",
+     "type": "short",
+     "q": "What do we call the person or voice telling a story?",
+     "options": [],
+     "answer": "narrator",
+     "accept": [
+      "the narrator"
+     ],
+     "hint": "In 'I opened the door', this voice is first person.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v2qxcf17gdir9",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which opening hooks the reader most effectively?",
+     "options": [
+      "I had exactly four minutes to decide whether to open the box.",
+      "This story is about a box.",
+      "Once upon a time there was a girl.",
+      "I woke up and had breakfast."
+     ],
+     "answer": "I had exactly four minutes to decide whether to open the box.",
+     "accept": [],
+     "hint": "Which one creates a question in the reader's mind?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8vp8mxxclgfr",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does 'show, don't tell' mean in narrative writing?",
+     "options": [
+      "Reveal feelings through actions and details",
+      "Use only dialogue",
+      "Never describe characters",
+      "Always state the emotion directly"
+     ],
+     "answer": "Reveal feelings through actions and details",
+     "accept": [],
+     "hint": "Compare 'She was nervous' with 'She twisted her ring round and round'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkumrm818vmmtz",
+     "subject": "en",
+     "type": "mc",
+     "q": "When redrafting a piece of writing, which change most improves it?",
+     "options": [
+      "Replacing vague words with precise vocabulary",
+      "Making every sentence the same length",
+      "Removing all paragraphs",
+      "Adding more 'and then' sentences"
+     ],
+     "answer": "Replacing vague words with precise vocabulary",
+     "accept": [],
+     "hint": "Think about accuracy and variety.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j1ci9014djlaa",
+     "subject": "en",
+     "type": "open",
+     "q": "Rewrite this sentence to make it more descriptive, using at least two techniques: 'The market was busy.'",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Try adding sensory details, a simile or a strong verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwvp17irj99tz",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain how a writer could use the weather to create atmosphere at the start of a narrative. Give an example sentence.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about pathetic fallacy and the mood it suggests.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_lit": {
+   "topic": "Term 1 review: poetry and short stories",
+   "questions": [
+    {
+     "id": "rtl80ja1ddgl75",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is a stanza?",
+     "options": [
+      "A group of lines in a poem",
+      "The final line of a poem",
+      "A rhyme at the end of a line",
+      "The title of a poem"
+     ],
+     "answer": "A group of lines in a poem",
+     "accept": [],
+     "hint": "It is like a paragraph in poetry.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1spxxayjc80p9",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "What is the term for the repetition of the same consonant sound at the start of nearby words, as in 'silent, silver sea'?",
+     "options": [],
+     "answer": "alliteration",
+     "accept": [
+      "Alliteration"
+     ],
+     "hint": "Listen to the first sounds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12wammac9mcac",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is enjambment?",
+     "options": [
+      "When a sentence runs on from one line of poetry to the next",
+      "When every line ends with a full stop",
+      "When two lines rhyme",
+      "When a poem has no title"
+     ],
+     "answer": "When a sentence runs on from one line of poetry to the next",
+     "accept": [],
+     "hint": "Look at how the line ending interacts with the punctuation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18w0kwemcw769",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is a caesura?",
+     "options": [
+      "A pause in the middle of a line of poetry",
+      "A rhyme scheme",
+      "A long poem that tells a story",
+      "A comparison using 'like'"
+     ],
+     "answer": "A pause in the middle of a line of poetry",
+     "accept": [],
+     "hint": "It is often marked by punctuation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp27tnilz5g9u",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "What is the term for the voice speaking in a poem, which is not always the poet?",
+     "options": [],
+     "answer": "speaker",
+     "accept": [
+      "the speaker",
+      "persona",
+      "the persona"
+     ],
+     "hint": "We avoid saying 'the poet says' for this reason.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4rjd7r115dcce",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "A poem written in the voice of a character speaking to a silent listener is called a:",
+     "options": [
+      "Dramatic monologue",
+      "Sonnet",
+      "Haiku",
+      "Limerick"
+     ],
+     "answer": "Dramatic monologue",
+     "accept": [],
+     "hint": "Think of a speech from a play, but in poem form.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw8lq5k9gfh4z",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "How many lines does a traditional sonnet have?",
+     "options": [
+      "14",
+      "10",
+      "12",
+      "16"
+     ],
+     "answer": "14",
+     "accept": [],
+     "hint": "Shakespearean sonnets end with a rhyming couplet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxkuahp722ngr",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In a short story, what is the climax?",
+     "options": [
+      "The point of highest tension",
+      "The opening description",
+      "The list of characters",
+      "The title"
+     ],
+     "answer": "The point of highest tension",
+     "accept": [],
+     "hint": "It usually comes just before the resolution.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw1p0pzpg0s9a",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is 'foreshadowing' in a short story?",
+     "options": [
+      "Hints about what will happen later",
+      "A flashback to the past",
+      "A description of the setting",
+      "The final twist"
+     ],
+     "answer": "Hints about what will happen later",
+     "accept": [],
+     "hint": "Think of a warning sign early in the story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlabsytlqnul1",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "What do we call the central idea or message a text explores, such as loss or identity?",
+     "options": [],
+     "answer": "theme",
+     "accept": [
+      "a theme",
+      "themes"
+     ],
+     "hint": "It is bigger than the plot.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tgnwqz22pui",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is the effect of a story ending with an unresolved or 'open' ending?",
+     "options": [
+      "It leaves the reader thinking about what might happen",
+      "It explains everything clearly",
+      "It makes the story shorter",
+      "It introduces new characters"
+     ],
+     "answer": "It leaves the reader thinking about what might happen",
+     "accept": [],
+     "hint": "Consider what the reader is left with.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7w7phv1pllkkt",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which is the best topic sentence for a literature essay paragraph?",
+     "options": [
+      "The writer presents the mother as protective through the image of a closed door.",
+      "In this story there is a mother.",
+      "I liked the mother in the story.",
+      "The story was written a long time ago."
+     ],
+     "answer": "The writer presents the mother as protective through the image of a closed door.",
+     "accept": [],
+     "hint": "A strong topic sentence makes a point linked to the writer's methods.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r163j0jivqjzti",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In an essay, how should you use quotations?",
+     "options": [
+      "Short, embedded quotations followed by analysis",
+      "Long quotations with no comment",
+      "No quotations at all",
+      "Only quotations from the first page"
+     ],
+     "answer": "Short, embedded quotations followed by analysis",
+     "accept": [],
+     "hint": "Quotations support your point; they don't replace it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7iu6ilnxzvij",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In a timed essay of about 45 minutes, what is the most sensible first step?",
+     "options": [
+      "Spend a few minutes planning your argument",
+      "Start writing immediately without reading the question",
+      "Copy out the poem",
+      "Write the conclusion first"
+     ],
+     "answer": "Spend a few minutes planning your argument",
+     "accept": [],
+     "hint": "A clear plan makes paragraphs focused.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3jga2944weg",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Explain how a poet might use imagery of light and dark to present a change in the speaker's feelings. Use an invented example line.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Link the image to the emotion and its effect on the reader.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r182o2eo1p3f2g0",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Write the opening paragraph of an essay answering: 'How does the writer create tension in the final scene of a short story?' You may invent details.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Introduce your argument and mention two methods you will explore.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "fmath": {
+   "topic": "Term 1 review: functions, quadratics, polynomials and surds",
+   "questions": [
+    {
+     "id": "r7g2uyfehfhtn",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Given f(x) = 3x − 5, find f(4).",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Substitute 4 in place of x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1svg0oc65mnf8",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Given f(x) = 2x + 1, find the inverse function f⁻¹(x).",
+     "options": [],
+     "answer": "(x − 1)/2",
+     "accept": [
+      "(x-1)/2",
+      "f⁻¹(x) = (x − 1)/2",
+      "x/2 − 1/2",
+      "(x−1)/2"
+     ],
+     "hint": "Write y = 2x + 1 and make x the subject.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rspxw68jfhyp7",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Given f(x) = x² and g(x) = x + 3, find fg(x).",
+     "options": [],
+     "answer": "(x + 3)²",
+     "accept": [
+      "(x+3)²",
+      "(x+3)^2",
+      "x² + 6x + 9",
+      "x^2+6x+9"
+     ],
+     "hint": "fg(x) means apply g first, then f.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv30ck11n592c4",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Factorise x² − 7x + 12.",
+     "options": [],
+     "answer": "(x − 3)(x − 4)",
+     "accept": [
+      "(x-3)(x-4)",
+      "(x−4)(x−3)",
+      "(x-4)(x-3)"
+     ],
+     "hint": "Find two numbers that multiply to 12 and add to −7.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbftuipsl4e7u",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Solve x² − 5x − 14 = 0.",
+     "options": [],
+     "answer": "x = 7 or x = −2",
+     "accept": [
+      "x=7, x=-2",
+      "7 and −2",
+      "x = −2 or x = 7",
+      "-2, 7",
+      "7, -2"
+     ],
+     "hint": "Factorise first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1phsb80124xb5g",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Write x² + 6x + 2 in the form (x + a)² + b.",
+     "options": [],
+     "answer": "(x + 3)² − 7",
+     "accept": [
+      "(x+3)²-7",
+      "(x+3)^2-7",
+      "(x + 3)^2 − 7"
+     ],
+     "hint": "Halve the coefficient of x, then adjust the constant.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r68dbl8gsweul",
+     "subject": "fmath",
+     "type": "short",
+     "q": "State the coordinates of the minimum point of y = (x − 2)² + 5.",
+     "options": [],
+     "answer": "(2, 5)",
+     "accept": [
+      "(2,5)"
+     ],
+     "hint": "The squared term is smallest when it equals zero.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1syigmz14xd0js",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Find the discriminant of 2x² + 3x − 4 = 0.",
+     "options": [],
+     "answer": "41",
+     "accept": [],
+     "hint": "Use b² − 4ac.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16b4evhfjxace",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "The equation x² + 4x + k = 0 has two equal roots. What is k?",
+     "options": [
+      "4",
+      "−4",
+      "16",
+      "2"
+     ],
+     "answer": "4",
+     "accept": [],
+     "hint": "Equal roots means the discriminant is zero.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmi5wtct1fsl7",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Solve the inequality x² − 3x − 10 > 0.",
+     "options": [],
+     "answer": "x < −2 or x > 5",
+     "accept": [
+      "x<-2 or x>5",
+      "x < -2 or x > 5",
+      "x > 5 or x < −2"
+     ],
+     "hint": "Find the roots, sketch the parabola, and choose where it is above the x-axis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kliz0h2pjwni",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Find the remainder when x³ − 2x² + 3 is divided by (x − 2).",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Use the remainder theorem: evaluate at x = 2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjnqgja11uwoqs",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "Which of these is a factor of x³ − x² − 4x + 4?",
+     "options": [
+      "(x − 1)",
+      "(x + 1)",
+      "(x − 3)",
+      "(x + 4)"
+     ],
+     "answer": "(x − 1)",
+     "accept": [],
+     "hint": "Use the factor theorem: try p(1).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yqbkt4tuveay",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Simplify √50.",
+     "options": [],
+     "answer": "5√2",
+     "accept": [
+      "5 √2",
+      "5root2"
+     ],
+     "hint": "Find the largest square factor of 50.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkaaf1da9ltng",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Simplify √12 + √27.",
+     "options": [],
+     "answer": "5√3",
+     "accept": [
+      "5 √3"
+     ],
+     "hint": "Write both surds as multiples of √3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsou7vy1dzgfzu",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Rationalise the denominator of 6/√3, giving your answer in its simplest form.",
+     "options": [],
+     "answer": "2√3",
+     "accept": [
+      "2 √3"
+     ],
+     "hint": "Multiply the top and bottom by √3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rubkf3v1irkgeu",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Expand and simplify (3 + √2)(3 − √2).",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "This is a difference of two squares.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "fre": {
+   "topic": "Review: self, family, home, food, health and leisure (présent and passé composé)",
+   "questions": [
+    {
+     "id": "rcaa3ow84xqbl",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct present tense form: 'Nous ___ (habiter) à Lyon.'",
+     "options": [
+      "habitons",
+      "habitez",
+      "habitent",
+      "habite"
+     ],
+     "answer": "habitons",
+     "accept": [],
+     "hint": "The 'nous' ending of -er verbs is -ons.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jdbp3f1rmwdc3",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'I have two brothers.'",
+     "options": [],
+     "answer": "J'ai deux frères",
+     "accept": [
+      "j'ai deux frères",
+      "J'ai deux freres"
+     ],
+     "hint": "Use the verb avoir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1eg2wu01g5we99",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which word means 'kitchen' in French?",
+     "options": [
+      "la cuisine",
+      "la chambre",
+      "le salon",
+      "le jardin"
+     ],
+     "answer": "la cuisine",
+     "accept": [],
+     "hint": "It is also the word for 'cooking'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtz844516ftiy",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct form: 'Ma sœur ___ (être) très sportive.'",
+     "options": [
+      "est",
+      "es",
+      "suis",
+      "sont"
+     ],
+     "answer": "est",
+     "accept": [],
+     "hint": "Use the il/elle form of être.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "refbk0iiyx80h",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete with the correct form of 'aimer': 'Mes parents ___ le poisson.'",
+     "options": [
+      "aiment",
+      "aimons",
+      "aimes",
+      "aimez"
+     ],
+     "answer": "aiment",
+     "accept": [],
+     "hint": "Use the ils/elles form.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r100wsiy1nkyjb5",
+     "subject": "fre",
+     "type": "mc",
+     "q": "After 'aimer', the following verb is in the:",
+     "options": [
+      "infinitive",
+      "past participle",
+      "present tense",
+      "future tense"
+     ],
+     "answer": "infinitive",
+     "accept": [],
+     "hint": "Example: J'aime ___ (jouer).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtd3oou1azapen",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which sentence correctly says 'I don't like vegetables'?",
+     "options": [
+      "Je n'aime pas les légumes.",
+      "Je n'aime pas des légumes.",
+      "Je ne pas aime les légumes.",
+      "J'aime pas de légumes."
+     ],
+     "answer": "Je n'aime pas les légumes.",
+     "accept": [],
+     "hint": "After verbs of liking, keep the definite article.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kvzlwvwvk7vk",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'I play football.'",
+     "options": [],
+     "answer": "Je joue au football",
+     "accept": [
+      "je joue au foot",
+      "Je joue au foot",
+      "je joue au football"
+     ],
+     "hint": "Use jouer + à + le, which contracts.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d8se0c1d5ez5u",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which auxiliary verb does 'manger' use in the passé composé?",
+     "options": [
+      "avoir",
+      "être",
+      "aller",
+      "faire"
+     ],
+     "answer": "avoir",
+     "accept": [],
+     "hint": "Most verbs use the same auxiliary.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y14ohoqozqsb",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct passé composé: 'Hier, j' ___ une pizza.'",
+     "options": [
+      "ai mangé",
+      "suis mangé",
+      "ai manger",
+      "mange"
+     ],
+     "answer": "ai mangé",
+     "accept": [],
+     "hint": "Auxiliary in the present + past participle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15t5haq1sctgqr",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct passé composé: 'Elle ___ au cinéma samedi.'",
+     "options": [
+      "est allée",
+      "a allé",
+      "est allé",
+      "a allée"
+     ],
+     "answer": "est allée",
+     "accept": [],
+     "hint": "Aller uses être, and the participle agrees with the subject.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hcef29132yeer",
+     "subject": "fre",
+     "type": "short",
+     "q": "Write the past participle of 'faire'.",
+     "options": [],
+     "answer": "fait",
+     "accept": [],
+     "hint": "It is irregular and short.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rugdg6prgmz92",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'Last weekend I watched a film.'",
+     "options": [],
+     "answer": "Le week-end dernier, j'ai regardé un film",
+     "accept": [
+      "Le week-end dernier j'ai regardé un film",
+      "le week-end dernier, j'ai regardé un film",
+      "Le weekend dernier, j'ai regardé un film",
+      "le weekend dernier j'ai regardé un film"
+     ],
+     "hint": "Use regarder in the passé composé.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jwxiida809qg",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which phrase means 'to be healthy, you must drink water'?",
+     "options": [
+      "Pour être en bonne santé, il faut boire de l'eau.",
+      "Pour être malade, il faut boire de l'eau.",
+      "Il ne faut pas boire de l'eau.",
+      "J'ai mal à la tête."
+     ],
+     "answer": "Pour être en bonne santé, il faut boire de l'eau.",
+     "accept": [],
+     "hint": "'En bonne santé' means healthy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5bsyhi1afuovs",
+     "subject": "fre",
+     "type": "open",
+     "q": "Write 2–3 sentences in French about your family and your home, using the present tense.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use j'ai, il y a, j'habite and some adjectives.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wummao11fe0cw",
+     "subject": "fre",
+     "type": "open",
+     "q": "Write 2–3 sentences in French describing what you did last weekend, using the passé composé and an opinion.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use j'ai + participle, and add 'c'était…'.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "geog": {
+   "topic": "Review: map skills, rivers and coasts",
+   "questions": [
+    {
+     "id": "r1wh0h1p54hnt4",
+     "subject": "geog",
+     "type": "mc",
+     "q": "On an Ordnance Survey-style map, what do contour lines join?",
+     "options": [
+      "Points of equal height",
+      "Points of equal temperature",
+      "Roads of the same type",
+      "Places with the same population"
+     ],
+     "answer": "Points of equal height",
+     "accept": [],
+     "hint": "They show the shape of the land.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnbz8yd12mqjme",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Contour lines that are very close together show:",
+     "options": [
+      "A steep slope",
+      "A gentle slope",
+      "Flat land",
+      "A river"
+     ],
+     "answer": "A steep slope",
+     "accept": [],
+     "hint": "Height changes quickly over a short distance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn2zso6efj8s5",
+     "subject": "geog",
+     "type": "mc",
+     "q": "In a six-figure grid reference, which numbers are given first?",
+     "options": [
+      "Eastings",
+      "Northings",
+      "Heights",
+      "Bearings"
+     ],
+     "answer": "Eastings",
+     "accept": [],
+     "hint": "Remember 'along the corridor, then up the stairs'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o22v041csnv5y",
+     "subject": "geog",
+     "type": "num",
+     "q": "On a 1:50 000 map, two places are 4 cm apart. What is the real distance in kilometres?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "1 cm on the map represents 50 000 cm.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yd2q233ud61h",
+     "subject": "geog",
+     "type": "short",
+     "q": "On a storm hydrograph, what is the time between peak rainfall and peak discharge called?",
+     "options": [],
+     "answer": "lag time",
+     "accept": [
+      "the lag time",
+      "lag"
+     ],
+     "hint": "It measures the delay before the river responds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f0c25rgc9wl2",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which of these would make a river's lag time shorter?",
+     "options": [
+      "A large urban area with concrete surfaces",
+      "Dense forest in the drainage basin",
+      "Gentle slopes",
+      "Permeable soils"
+     ],
+     "answer": "A large urban area with concrete surfaces",
+     "accept": [],
+     "hint": "Think about how quickly water reaches the channel.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c20jq11csj714",
+     "subject": "geog",
+     "type": "short",
+     "q": "What is the name for the area of land drained by a river and its tributaries?",
+     "options": [],
+     "answer": "drainage basin",
+     "accept": [
+      "a drainage basin",
+      "river basin",
+      "catchment area",
+      "catchment"
+     ],
+     "hint": "Its edge is the watershed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw30f4hl584jj",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which landform is mainly found in the upper course of a river?",
+     "options": [
+      "Waterfall",
+      "Delta",
+      "Levée",
+      "Ox-bow lake"
+     ],
+     "answer": "Waterfall",
+     "accept": [],
+     "hint": "The upper course has steep gradients and vertical erosion.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3btbhgmd9066",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which process forms a plunge pool beneath a waterfall?",
+     "options": [
+      "Hydraulic action and abrasion",
+      "Deposition of silt",
+      "Longshore drift",
+      "Freeze-thaw on the river bed"
+     ],
+     "answer": "Hydraulic action and abrasion",
+     "accept": [],
+     "hint": "Falling water and rocks wear away the base.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3xwhvht8kfby",
+     "subject": "geog",
+     "type": "mc",
+     "q": "On a meander, where does erosion mainly occur?",
+     "options": [
+      "On the outside bend",
+      "On the inside bend",
+      "Equally on both sides",
+      "Only at the mouth of the river"
+     ],
+     "answer": "On the outside bend",
+     "accept": [],
+     "hint": "The water flows fastest and deepest there.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5mcdnj5mav76",
+     "subject": "geog",
+     "type": "short",
+     "q": "What landform is created when a meander is cut off from the main river channel?",
+     "options": [],
+     "answer": "ox-bow lake",
+     "accept": [
+      "oxbow lake",
+      "an ox-bow lake",
+      "an oxbow lake"
+     ],
+     "hint": "It is a curved lake left behind.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsbe34e11ikzrs",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which process moves sediment along a coastline in a zig-zag pattern?",
+     "options": [
+      "Longshore drift",
+      "Hydraulic action",
+      "Attrition",
+      "Solution"
+     ],
+     "answer": "Longshore drift",
+     "accept": [],
+     "hint": "It depends on the angle of the prevailing wind.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17tm7za1wy4vc0",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What is the correct order of landforms as a headland erodes?",
+     "options": [
+      "Crack, cave, arch, stack, stump",
+      "Arch, cave, crack, stump, stack",
+      "Stack, arch, cave, crack, stump",
+      "Cave, stack, crack, arch, stump"
+     ],
+     "answer": "Crack, cave, arch, stack, stump",
+     "accept": [],
+     "hint": "Erosion starts with a small weakness.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g0p7aawu5ec6",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which depositional landform is a ridge of sand or shingle extending from the coast into the sea?",
+     "options": [
+      "Spit",
+      "Stack",
+      "Wave-cut platform",
+      "Cliff"
+     ],
+     "answer": "Spit",
+     "accept": [],
+     "hint": "It often has a curved, hooked end.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rixgrla9nu2sl",
+     "subject": "geog",
+     "type": "open",
+     "q": "Explain how a waterfall forms and retreats upstream.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Mention hard and soft rock, undercutting and collapse.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r71tzzm1smskl",
+     "subject": "geog",
+     "type": "open",
+     "q": "Explain why constructive waves build beaches while destructive waves erode them.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare the strength of the swash and the backwash.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "hist": {
+   "topic": "Review: the peace settlement, the League of Nations and Hitler's early foreign policy",
+   "questions": [
+    {
+     "id": "r1cy01ctg9hr2l",
+     "subject": "hist",
+     "type": "num",
+     "q": "In which year was the Treaty of Versailles signed?",
+     "options": [],
+     "answer": "1919",
+     "accept": [],
+     "hint": "It was signed the year after the fighting ended.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18sngvt1pxdtqk",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which clause of the Treaty of Versailles made Germany accept blame for the war?",
+     "options": [
+      "Article 231 (the War Guilt Clause)",
+      "Article 10",
+      "The Fourteen Points",
+      "The Locarno clause"
+     ],
+     "answer": "Article 231 (the War Guilt Clause)",
+     "accept": [],
+     "hint": "This clause allowed reparations to be demanded.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dh2kic1qtz0ye",
+     "subject": "hist",
+     "type": "mc",
+     "q": "What was the maximum size of the German army under the Treaty of Versailles?",
+     "options": [
+      "100,000 men",
+      "500,000 men",
+      "1 million men",
+      "10,000 men"
+     ],
+     "answer": "100,000 men",
+     "accept": [],
+     "hint": "The figure was set to stop Germany attacking its neighbours.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr25gpflsbsxn",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which leader most wanted a harsh treaty to make sure Germany could never threaten France again?",
+     "options": [
+      "The French prime minister",
+      "The American president",
+      "The British prime minister",
+      "The Italian king"
+     ],
+     "answer": "The French prime minister",
+     "accept": [],
+     "hint": "Think about which country suffered most damage on its own soil.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlu9xq1axibh9",
+     "subject": "hist",
+     "type": "short",
+     "q": "What was the name of the area of Germany that had to be demilitarised under the treaty?",
+     "options": [],
+     "answer": "Rhineland",
+     "accept": [
+      "the Rhineland"
+     ],
+     "hint": "It bordered France.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19jcd7hgjnyjr",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which major power never joined the League of Nations?",
+     "options": [
+      "The USA",
+      "Britain",
+      "France",
+      "Italy"
+     ],
+     "answer": "The USA",
+     "accept": [],
+     "hint": "Its own Senate voted against membership.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvfp93t1kmk62h",
+     "subject": "hist",
+     "type": "mc",
+     "q": "What was 'collective security'?",
+     "options": [
+      "Members acting together to stop an aggressor",
+      "Each country building its own army",
+      "A trade agreement",
+      "A plan to rebuild Germany"
+     ],
+     "answer": "Members acting together to stop an aggressor",
+     "accept": [],
+     "hint": "It relied on all members cooperating.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgco2m616cz5ru",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which crisis of 1931 showed the League's weakness in East Asia?",
+     "options": [
+      "The Manchurian Crisis",
+      "The Abyssinian Crisis",
+      "The Corfu Incident",
+      "The Saar plebiscite"
+     ],
+     "answer": "The Manchurian Crisis",
+     "accept": [],
+     "hint": "Japan invaded a region of China.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1swzb5h1g56pas",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Why did sanctions against Italy over Abyssinia (1935–36) fail?",
+     "options": [
+      "Oil was not included and the Suez Canal stayed open",
+      "Italy had no army",
+      "The USA enforced them strongly",
+      "Germany joined the League to help"
+     ],
+     "answer": "Oil was not included and the Suez Canal stayed open",
+     "accept": [],
+     "hint": "Think about what Italy needed most to fight a war.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf7aor4gdfvua",
+     "subject": "hist",
+     "type": "num",
+     "q": "In which year did German troops remilitarise the Rhineland?",
+     "options": [],
+     "answer": "1936",
+     "accept": [],
+     "hint": "It happened the same year the Abyssinian Crisis was ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x15uys1cvmi80",
+     "subject": "hist",
+     "type": "short",
+     "q": "What German word describes the union of Germany and Austria in 1938?",
+     "options": [],
+     "answer": "Anschluss",
+     "accept": [
+      "the Anschluss"
+     ],
+     "hint": "It was forbidden by the Treaty of Versailles.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r43p3sseoxzlq",
+     "subject": "hist",
+     "type": "mc",
+     "q": "What did the Munich Agreement of 1938 allow Germany to take?",
+     "options": [
+      "The Sudetenland",
+      "Poland",
+      "The Saar",
+      "Danzig"
+     ],
+     "answer": "The Sudetenland",
+     "accept": [],
+     "hint": "It was a region of Czechoslovakia with many German speakers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16bxiq91s1t8dy",
+     "subject": "hist",
+     "type": "short",
+     "q": "What is the name of the British and French policy of giving in to some of Hitler's demands to avoid war?",
+     "options": [],
+     "answer": "appeasement",
+     "accept": [
+      "Appeasement"
+     ],
+     "hint": "It comes from a word meaning 'to calm'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9dk71j14cq4hl",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which statement best describes how Germany reacted to the Treaty of Versailles?",
+     "options": [
+      "Many Germans saw it as a 'Diktat' – a dictated peace",
+      "Most Germans welcomed it",
+      "Germany helped write it",
+      "It was ignored in Germany"
+     ],
+     "answer": "Many Germans saw it as a 'Diktat' – a dictated peace",
+     "accept": [],
+     "hint": "Germany was not invited to negotiate.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e21lzzf21si0",
+     "subject": "hist",
+     "type": "open",
+     "q": "Explain two reasons why the League of Nations was weak in the 1930s.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about membership, armed forces and decision-making.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxeceyhlf86ok",
+     "subject": "hist",
+     "type": "open",
+     "q": "'Appeasement was a sensible policy in 1938.' How far do you agree? Give reasons for both sides.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider British rearmament, public opinion and Hitler's aims.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Term 1 review: number, algebra basics, coordinate geometry and angles",
+   "questions": [
+    {
+     "id": "rvt3vlkxr0yu7",
+     "subject": "math",
+     "type": "num",
+     "q": "Write 0.000 52 in standard form as a × 10ⁿ. What is the value of n?",
+     "options": [],
+     "answer": "-4",
+     "accept": [],
+     "hint": "Count how many places the decimal point moves to get 5.2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "renrh1r1skt4bj",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 3.6 × 10⁵ ÷ (1.2 × 10²). Give your answer as an ordinary number.",
+     "options": [],
+     "answer": "3000",
+     "accept": [],
+     "hint": "Divide the numbers and subtract the powers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx1izpv8fiznq",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the highest common factor (HCF) of 36 and 60.",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "List the prime factors of each number.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk1nguk13qost1",
+     "subject": "math",
+     "type": "num",
+     "q": "Increase 80 by 15%.",
+     "options": [],
+     "answer": "92",
+     "accept": [],
+     "hint": "Multiply by 1.15.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hdwz2nmub4fw",
+     "subject": "math",
+     "type": "num",
+     "q": "Round 0.047 82 to 2 significant figures.",
+     "options": [],
+     "answer": "0.048",
+     "accept": [],
+     "hint": "The first significant figure is the 4.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qe5i451cmzzdj",
+     "subject": "math",
+     "type": "short",
+     "q": "Simplify 3a + 5b − a + 2b.",
+     "options": [],
+     "answer": "2a + 7b",
+     "accept": [
+      "2a+7b",
+      "7b + 2a"
+     ],
+     "hint": "Collect like terms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1er8fs51so6brq",
+     "subject": "math",
+     "type": "short",
+     "q": "Expand and simplify (x + 4)(x − 3).",
+     "options": [],
+     "answer": "x² + x − 12",
+     "accept": [
+      "x^2 + x - 12",
+      "x²+x−12",
+      "x^2+x-12",
+      "x² + x - 12"
+     ],
+     "hint": "Multiply each term in the first bracket by each in the second.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rckm26b3pxa6s",
+     "subject": "math",
+     "type": "short",
+     "q": "Factorise fully 6x² + 9x.",
+     "options": [],
+     "answer": "3x(2x + 3)",
+     "accept": [
+      "3x(2x+3)"
+     ],
+     "hint": "Find the highest common factor of both terms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj4ym1ruwy8v3",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve 5x − 7 = 2x + 8.",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Get the x terms on one side.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xsfa6jef4bah",
+     "subject": "math",
+     "type": "short",
+     "q": "Make r the subject of A = πr².",
+     "options": [],
+     "answer": "r = √(A/π)",
+     "accept": [
+      "√(A/π)",
+      "r=√(A/π)",
+      "r = sqrt(A/π)"
+     ],
+     "hint": "Divide by π, then take the square root.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vue00111o88x5",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the gradient of the line through (1, 3) and (4, 12).",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Gradient = change in y ÷ change in x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv38sctkkicz6",
+     "subject": "math",
+     "type": "mc",
+     "q": "What is the y-intercept of the line y = 2x − 5?",
+     "options": [
+      "−5",
+      "2",
+      "5",
+      "−2"
+     ],
+     "answer": "−5",
+     "accept": [],
+     "hint": "Compare with y = mx + c.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t1o23116ovfu4",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the x-coordinate of the midpoint of the line segment from (2, 7) to (8, 1).",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Average the two x-coordinates.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dvjf6p1am2fzz",
+     "subject": "math",
+     "type": "num",
+     "q": "Two angles on a straight line are 3x and 2x. Find x.",
+     "options": [],
+     "answer": "36",
+     "accept": [],
+     "hint": "Angles on a straight line add up to 180°.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs8lafaac3l7t",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the size of each interior angle of a regular hexagon, in degrees.",
+     "options": [],
+     "answer": "120",
+     "accept": [],
+     "hint": "Each exterior angle is 360° ÷ 6.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14z5h6x1ojrhy1",
+     "subject": "math",
+     "type": "mc",
+     "q": "A line is parallel to y = 4x + 1. What is its gradient?",
+     "options": [
+      "4",
+      "1",
+      "−1/4",
+      "−4"
+     ],
+     "answer": "4",
+     "accept": [],
+     "hint": "Parallel lines have the same steepness.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "phys": {
+   "topic": "Review: motion, forces, momentum and energy",
+   "questions": [
+    {
+     "id": "r1azf87ls03ol8",
+     "subject": "phys",
+     "type": "num",
+     "q": "A car travels 150 m in 6 s. Calculate its average speed in m/s.",
+     "options": [],
+     "answer": "25",
+     "accept": [],
+     "hint": "Speed = distance ÷ time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r84rjke1ywxczy",
+     "subject": "phys",
+     "type": "num",
+     "q": "A cyclist accelerates from 2 m/s to 10 m/s in 4 s. Calculate the acceleration in m/s².",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "a = (v − u) ÷ t.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pjzejqkkj5wa",
+     "subject": "phys",
+     "type": "mc",
+     "q": "On a distance–time graph, what does a horizontal line show?",
+     "options": [
+      "The object is stationary",
+      "Constant speed",
+      "Constant acceleration",
+      "Deceleration"
+     ],
+     "answer": "The object is stationary",
+     "accept": [],
+     "hint": "The distance is not changing.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrvp9ov97rhq6",
+     "subject": "phys",
+     "type": "mc",
+     "q": "On a speed–time graph, what does the area under the line represent?",
+     "options": [
+      "Distance travelled",
+      "Acceleration",
+      "Force",
+      "Mass"
+     ],
+     "answer": "Distance travelled",
+     "accept": [],
+     "hint": "Speed × time gives…",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2rs0hq10lrqps",
+     "subject": "phys",
+     "type": "num",
+     "q": "A resultant force of 30 N acts on a 6 kg mass. Calculate the acceleration in m/s².",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Use F = ma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rta8mwe19qn9y1",
+     "subject": "phys",
+     "type": "num",
+     "q": "Calculate the weight of a 50 kg student on Earth, where g = 10 N/kg. Give your answer in newtons.",
+     "options": [],
+     "answer": "500",
+     "accept": [],
+     "hint": "W = mg.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtqumpcfn7wge",
+     "subject": "phys",
+     "type": "mc",
+     "q": "A skydiver falls at terminal velocity. Which statement is true?",
+     "options": [
+      "Air resistance equals weight",
+      "Air resistance is greater than weight",
+      "There is no air resistance",
+      "Weight is zero"
+     ],
+     "answer": "Air resistance equals weight",
+     "accept": [],
+     "hint": "At terminal velocity the resultant force is zero.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhunarun3t6mf",
+     "subject": "phys",
+     "type": "num",
+     "q": "Calculate the momentum of a 1200 kg car moving at 15 m/s, in kg m/s.",
+     "options": [],
+     "answer": "18000",
+     "accept": [],
+     "hint": "p = mv.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ffc928136kpv1",
+     "subject": "phys",
+     "type": "short",
+     "q": "State the principle that says total momentum before a collision equals total momentum after, if no external forces act.",
+     "options": [],
+     "answer": "conservation of momentum",
+     "accept": [
+      "principle of conservation of momentum",
+      "the conservation of momentum"
+     ],
+     "hint": "Momentum is neither created nor destroyed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3kvbt912ms3s9",
+     "subject": "phys",
+     "type": "num",
+     "q": "A force of 400 N acts on a ball for 0.05 s. Calculate the impulse in N s.",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Impulse = force × time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tqniol1kyh70c",
+     "subject": "phys",
+     "type": "num",
+     "q": "Calculate the kinetic energy of a 2 kg ball moving at 3 m/s, in joules.",
+     "options": [],
+     "answer": "9",
+     "accept": [],
+     "hint": "KE = ½mv².",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjzd3rs1n52kzn",
+     "subject": "phys",
+     "type": "num",
+     "q": "A 5 kg box is lifted 2 m. Calculate the gain in gravitational potential energy in J (g = 10 N/kg).",
+     "options": [],
+     "answer": "100",
+     "accept": [],
+     "hint": "GPE = mgh.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ezelicbxxovb",
+     "subject": "phys",
+     "type": "num",
+     "q": "A motor transfers 600 J of energy usefully out of 800 J supplied. Calculate its efficiency as a percentage.",
+     "options": [],
+     "answer": "75",
+     "accept": [],
+     "hint": "Efficiency = useful output ÷ total input × 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp5vnst1q2wx1k",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which of these is a renewable energy resource?",
+     "options": [
+      "Wind",
+      "Coal",
+      "Natural gas",
+      "Uranium"
+     ],
+     "answer": "Wind",
+     "accept": [],
+     "hint": "Renewable resources will not run out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvqq0w41ia46v2",
+     "subject": "phys",
+     "type": "num",
+     "q": "A machine does 3000 J of work in 10 s. Calculate its power in watts.",
+     "options": [],
+     "answer": "300",
+     "accept": [],
+     "hint": "Power = work done ÷ time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1at3cpdwwo5w",
+     "subject": "phys",
+     "type": "open",
+     "q": "Describe the energy transfers when a ball is dropped from a height, bounces, and does not return to its starting height.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about gravitational potential, kinetic and thermal energy.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych": {
+   "topic": "Review: memory and forgetting and experimental research methods",
+   "questions": [
+    {
+     "id": "r3bs1du1lwbnx4",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In the multi-store model of memory, what are the three stores?",
+     "options": [
+      "Sensory register, short-term memory, long-term memory",
+      "Encoding, storage, retrieval",
+      "Episodic, semantic, procedural",
+      "Central executive, phonological loop, visuo-spatial sketchpad"
+     ],
+     "answer": "Sensory register, short-term memory, long-term memory",
+     "accept": [],
+     "hint": "Information flows through these one after another.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16xoy261njiuaa",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is the typical capacity of short-term memory?",
+     "options": [
+      "About 7 ± 2 items",
+      "Unlimited",
+      "About 2 items",
+      "About 100 items"
+     ],
+     "answer": "About 7 ± 2 items",
+     "accept": [],
+     "hint": "It is often called 'the magic number'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqqrab1yxjhbj",
+     "subject": "psych",
+     "type": "mc",
+     "q": "According to the multi-store model, how does information move from short-term to long-term memory?",
+     "options": [
+      "Through rehearsal",
+      "Through forgetting",
+      "Through attention only",
+      "Through dreaming"
+     ],
+     "answer": "Through rehearsal",
+     "accept": [],
+     "hint": "Repeating information keeps it active.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru8g6hby3mv3j",
+     "subject": "psych",
+     "type": "short",
+     "q": "Which type of long-term memory stores skills such as riding a bike?",
+     "options": [],
+     "answer": "procedural memory",
+     "accept": [
+      "procedural"
+     ],
+     "hint": "These are memories of 'how to' do things.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vmhorr9kr7u7",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Remembering a holiday you went on last year is an example of which type of memory?",
+     "options": [
+      "Episodic",
+      "Procedural",
+      "Sensory",
+      "Iconic"
+     ],
+     "answer": "Episodic",
+     "accept": [],
+     "hint": "It is a personal event with a time and place.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yr8bno1kvo21r",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is retroactive interference?",
+     "options": [
+      "New learning disrupts recall of old information",
+      "Old learning disrupts recall of new information",
+      "Forgetting caused by brain injury",
+      "Forgetting because of no cues"
+     ],
+     "answer": "New learning disrupts recall of old information",
+     "accept": [],
+     "hint": "'Retro' means backwards.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhi3ft71p84igv",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Forgetting because the right cues are missing at recall is called:",
+     "options": [
+      "Retrieval failure",
+      "Decay",
+      "Displacement",
+      "Rehearsal"
+     ],
+     "answer": "Retrieval failure",
+     "accept": [],
+     "hint": "The memory is stored but cannot be accessed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tx82f1mup5yy",
+     "subject": "psych",
+     "type": "short",
+     "q": "In an experiment, what name is given to the variable that the researcher changes?",
+     "options": [],
+     "answer": "independent variable",
+     "accept": [
+      "the independent variable",
+      "IV"
+     ],
+     "hint": "It is the one the researcher manipulates.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1566yc01u8lg7u",
+     "subject": "psych",
+     "type": "short",
+     "q": "What name is given to the variable that is measured in an experiment?",
+     "options": [],
+     "answer": "dependent variable",
+     "accept": [
+      "the dependent variable",
+      "DV"
+     ],
+     "hint": "It 'depends' on the change made.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i4qpd1yr66jm",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which experimental design uses the same participants in every condition?",
+     "options": [
+      "Repeated measures",
+      "Independent groups",
+      "Matched pairs",
+      "Random allocation"
+     ],
+     "answer": "Repeated measures",
+     "accept": [],
+     "hint": "Each participant does all the conditions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xoqzgiuqctr9",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is counterbalancing used to reduce?",
+     "options": [
+      "Order effects",
+      "Researcher bias",
+      "Ethical issues",
+      "Sampling bias"
+     ],
+     "answer": "Order effects",
+     "accept": [],
+     "hint": "It matters when participants do more than one condition.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhmo51ohzl4tn",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which sampling method gives every member of the target population an equal chance of being chosen?",
+     "options": [
+      "Random sampling",
+      "Opportunity sampling",
+      "Volunteer sampling",
+      "Snowball sampling"
+     ],
+     "answer": "Random sampling",
+     "accept": [],
+     "hint": "Think about drawing names from a hat.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rimi9xt100e3d7",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A researcher tells participants about the study afterwards and answers their questions. Which ethical guideline is this?",
+     "options": [
+      "Debriefing",
+      "Informed consent",
+      "Confidentiality",
+      "Right to withdraw"
+     ],
+     "answer": "Debriefing",
+     "accept": [],
+     "hint": "It happens at the end of the study.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18vw0961se2qyk",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which is a weakness of a laboratory experiment?",
+     "options": [
+      "Low ecological validity",
+      "No control of variables",
+      "Cause and effect cannot be found",
+      "It cannot be replicated"
+     ],
+     "answer": "Low ecological validity",
+     "accept": [],
+     "hint": "Consider how realistic the setting is.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yxzny2b703yz",
+     "subject": "psych",
+     "type": "open",
+     "q": "A researcher wants to test whether background music affects how many words students recall. Write a directional hypothesis for this study.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Name the IV and DV and predict the direction of the difference.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14qvdn24j8z2e",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain one strength and one weakness of the multi-store model of memory.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about supporting evidence and whether it is too simple.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
