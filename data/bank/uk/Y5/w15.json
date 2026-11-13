@@ -1,0 +1,1553 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y5",
+ "academic_week": 15,
+ "subjects": {
+  "bss": {
+   "topic": "Revisão do 1º trimestre: mapas, regiões e início da colonização",
+   "questions": [
+    {
+     "id": "r1gj2aip4qzs8x",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quais são os quatro pontos cardeais?",
+     "options": [
+      "Norte, Sul, Leste e Oeste",
+      "Nordeste, Sudeste, Noroeste e Sudoeste",
+      "Direita, esquerda, frente e trás",
+      "Acima, abaixo, dentro e fora"
+     ],
+     "answer": "Norte, Sul, Leste e Oeste",
+     "accept": [],
+     "hint": "São usados na rosa dos ventos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9aiv8n1mvdzk6",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Para que serve a legenda de um mapa?",
+     "options": [
+      "Explicar o significado dos símbolos e cores",
+      "Mostrar o título do livro",
+      "Indicar a data de hoje",
+      "Contar quantas cidades existem"
+     ],
+     "answer": "Explicar o significado dos símbolos e cores",
+     "accept": [],
+     "hint": "Ela 'traduz' o mapa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r779l19qz5v6y",
+     "subject": "bss",
+     "type": "num",
+     "q": "Quantas regiões oficiais tem o Brasil?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Lembre de Norte, Nordeste…",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dlizwk1rtlj6x",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em qual região do Brasil fica o estado de São Paulo?",
+     "options": [
+      "Sudeste",
+      "Sul",
+      "Nordeste",
+      "Centro-Oeste"
+     ],
+     "answer": "Sudeste",
+     "accept": [],
+     "hint": "É a mesma região do Rio de Janeiro e de Minas Gerais.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roq9fnf1o8rfmt",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é a maior região do Brasil em área?",
+     "options": [
+      "Norte",
+      "Sudeste",
+      "Sul",
+      "Nordeste"
+     ],
+     "answer": "Norte",
+     "accept": [],
+     "hint": "É onde fica grande parte da Floresta Amazônica.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz6bl0xf6r3uj",
+     "subject": "bss",
+     "type": "short",
+     "q": "O sol nasce em qual ponto cardeal?",
+     "options": [],
+     "answer": "Leste",
+     "accept": [
+      "leste",
+      "o leste",
+      "oriente",
+      "nascente"
+     ],
+     "hint": "É também chamado de nascente ou oriente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmvzoacr3m0xj",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em que ano a frota de Pedro Álvares Cabral chegou ao território que hoje é o Brasil?",
+     "options": [
+      "1500",
+      "1492",
+      "1822",
+      "1600"
+     ],
+     "answer": "1500",
+     "accept": [],
+     "hint": "Foi no início do século XVI.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13l8jk4uy1zcs",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quem já vivia nas terras do Brasil quando os portugueses chegaram?",
+     "options": [
+      "Povos indígenas",
+      "Ninguém",
+      "Apenas espanhóis",
+      "Imigrantes italianos"
+     ],
+     "answer": "Povos indígenas",
+     "accept": [],
+     "hint": "Eram muitos povos, com línguas e costumes diferentes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14b1q23c1byah",
+     "subject": "bss",
+     "type": "short",
+     "q": "Qual árvore deu nome ao Brasil e foi a primeira riqueza explorada pelos portugueses?",
+     "options": [],
+     "answer": "pau-brasil",
+     "accept": [
+      "pau brasil",
+      "o pau-brasil"
+     ],
+     "hint": "Sua madeira produzia tinta vermelha.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r802mhgoiu1pu",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que foram as capitanias hereditárias?",
+     "options": [
+      "Faixas de terra entregues pelo rei de Portugal a donatários",
+      "Cidades indígenas",
+      "Navios portugueses",
+      "Escolas da época colonial"
+     ],
+     "answer": "Faixas de terra entregues pelo rei de Portugal a donatários",
+     "accept": [],
+     "hint": "Hereditária quer dizer que passava de pai para filho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh1huvn19669ag",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual produto passou a ser muito cultivado no litoral do Nordeste no início da colonização?",
+     "options": [
+      "Cana-de-açúcar",
+      "Café",
+      "Soja",
+      "Algodão de exportação"
+     ],
+     "answer": "Cana-de-açúcar",
+     "accept": [],
+     "hint": "Dela se fazia um produto doce muito valioso na Europa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rguwh1b13iyzhz",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes eventos aconteceu primeiro?",
+     "options": [
+      "Chegada da frota de Cabral",
+      "Criação das capitanias hereditárias",
+      "Fundação da cidade de Salvador",
+      "Plantio de café no Sudeste"
+     ],
+     "answer": "Chegada da frota de Cabral",
+     "accept": [],
+     "hint": "Organize em uma linha do tempo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rupzplnj7li5l",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Coloque na ordem certa: (A) capitanias hereditárias, (B) chegada dos portugueses, (C) exploração do pau-brasil.",
+     "options": [
+      "B, C, A",
+      "A, B, C",
+      "C, A, B",
+      "B, A, C"
+     ],
+     "answer": "B, C, A",
+     "accept": [],
+     "hint": "Primeiro chegaram, depois exploraram, depois organizaram as terras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yq2gv5ejx1lp",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em uma linha do tempo, os acontecimentos são organizados:",
+     "options": [
+      "Em ordem cronológica",
+      "Em ordem alfabética",
+      "Por cor",
+      "Por tamanho"
+     ],
+     "answer": "Em ordem cronológica",
+     "accept": [],
+     "hint": "Cronos = tempo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjsn6585mokr7",
+     "subject": "bss",
+     "type": "open",
+     "q": "Explique, com suas palavras, uma mudança que a chegada dos portugueses trouxe para os povos indígenas.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em terras, costumes ou doenças.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs9an8r2ox5ta",
+     "subject": "bss",
+     "type": "open",
+     "q": "Descreva como você usaria um mapa e os pontos cardeais para explicar a um colega onde fica a sua casa em relação à escola.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use palavras como norte, sul, leste, oeste e legenda.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Term 1 review: relative clauses, parenthesis and cohesion",
+   "questions": [
+    {
+     "id": "r1alq5k41o04a5x",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence contains a relative clause?",
+     "options": [
+      "The dog that lives next door barks loudly.",
+      "The dog barks loudly.",
+      "The dog barks loudly every night.",
+      "Loudly, the dog barks."
+     ],
+     "answer": "The dog that lives next door barks loudly.",
+     "accept": [],
+     "hint": "Look for 'who', 'which', 'that', 'where' or 'whose'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e4pmhu1jtdi0e",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the correct relative pronoun: 'The girl ___ bike was stolen called the police.'",
+     "options": [
+      "whose",
+      "who",
+      "which",
+      "where"
+     ],
+     "answer": "whose",
+     "accept": [],
+     "hint": "It shows possession.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1barvof1s17o4e",
+     "subject": "en",
+     "type": "short",
+     "q": "Fill in the relative pronoun: 'This is the park ___ we played football.'",
+     "options": [],
+     "answer": "where",
+     "accept": [],
+     "hint": "It refers to a place.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11ifu9211f4znq",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which relative pronoun is best for things, not people?",
+     "options": [
+      "which",
+      "who",
+      "whose",
+      "whom"
+     ],
+     "answer": "which",
+     "accept": [],
+     "hint": "'Who' is for people.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gc1pkobwf6h5",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence uses brackets for parenthesis correctly?",
+     "options": [
+      "My aunt (who lives in Wales) is visiting.",
+      "My (aunt who) lives in Wales is visiting.",
+      "My aunt who (lives) in Wales is visiting.",
+      "(My aunt who lives in Wales is visiting.)"
+     ],
+     "answer": "My aunt (who lives in Wales) is visiting.",
+     "accept": [],
+     "hint": "The sentence should still make sense without the brackets.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5arfis1pvurnd",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which punctuation can NOT be used for parenthesis?",
+     "options": [
+      "full stops",
+      "brackets",
+      "dashes",
+      "commas"
+     ],
+     "answer": "full stops",
+     "accept": [],
+     "hint": "Parenthesis needs a pair of marks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2wj9dznoh6nb",
+     "subject": "en",
+     "type": "short",
+     "q": "What is the name for extra information added to a sentence using brackets, dashes or commas?",
+     "options": [],
+     "answer": "parenthesis",
+     "accept": [
+      "parentheses"
+     ],
+     "hint": "It starts with 'p'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xvl4a4jp202l",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is a modal verb?",
+     "options": [
+      "might",
+      "running",
+      "quickly",
+      "happy"
+     ],
+     "answer": "might",
+     "accept": [],
+     "hint": "Modal verbs show how likely something is.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqc4scc1fcw697",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which modal verb shows the highest certainty?",
+     "options": [
+      "will",
+      "might",
+      "could",
+      "may"
+     ],
+     "answer": "will",
+     "accept": [],
+     "hint": "Which one sounds most definite?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10p5g201cc83dk",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is an adverb of possibility?",
+     "options": [
+      "perhaps",
+      "beautiful",
+      "jumped",
+      "table"
+     ],
+     "answer": "perhaps",
+     "accept": [],
+     "hint": "It tells how likely something is.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pyc8ef12xxsuo",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is a cohesive device that links paragraphs?",
+     "options": [
+      "Later that day,",
+      "The cat",
+      "red",
+      "because of"
+     ],
+     "answer": "Later that day,",
+     "accept": [],
+     "hint": "It connects time between paragraphs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9xrtnsm9si07",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the best cohesive word: 'It rained all morning. ___, the match was cancelled.'",
+     "options": [
+      "As a result",
+      "Although",
+      "Meanwhile",
+      "Before"
+     ],
+     "answer": "As a result",
+     "accept": [],
+     "hint": "Which shows cause and effect?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rq02ijw9vgzq",
+     "subject": "en",
+     "type": "mc",
+     "q": "In 'Mr Patel, who teaches music, plays the violin', what is the role of 'who teaches music'?",
+     "options": [
+      "It is a relative clause giving extra information",
+      "It is the main clause",
+      "It is a modal verb",
+      "It is a fronted adverbial"
+     ],
+     "answer": "It is a relative clause giving extra information",
+     "accept": [],
+     "hint": "Can you remove it and keep a full sentence?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14etwv4249an6",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence uses dashes for parenthesis correctly?",
+     "options": [
+      "The castle – built in 1200 – stands on a hill.",
+      "The castle built – in 1200 stands on a hill.",
+      "– The castle built in 1200 stands on a hill.",
+      "The castle built in 1200 stands – on a hill."
+     ],
+     "answer": "The castle – built in 1200 – stands on a hill.",
+     "accept": [],
+     "hint": "The dashes go around the extra information.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3bem50ag6qsf",
+     "subject": "en",
+     "type": "open",
+     "q": "Write one sentence about a hobby that includes a relative clause and a modal verb.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use 'who', 'which' or 'that' and a word like 'could' or 'might'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f08hdn1pco87",
+     "subject": "en",
+     "type": "open",
+     "q": "Write two sentences about a trip and link them with a cohesive device. Underline or name the device you used.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Try words like 'however', 'afterwards' or 'as a result'.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_read": {
+   "topic": "Term 1 review: retrieval, inference and genre",
+   "questions": [
+    {
+     "id": "r1btb9922tmbzq",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is a retrieval question?",
+     "options": [
+      "A question whose answer can be found directly in the text",
+      "A question asking for your opinion",
+      "A question about the author's life",
+      "A question with no answer"
+     ],
+     "answer": "A question whose answer can be found directly in the text",
+     "accept": [],
+     "hint": "'Retrieve' means to fetch.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1io0buj2bxiba",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'Zara pulled her coat tighter and watched her breath float away like smoke.' What can you infer?",
+     "options": [
+      "It is cold",
+      "It is a hot day",
+      "Zara is cooking",
+      "Zara is at the beach"
+     ],
+     "answer": "It is cold",
+     "accept": [],
+     "hint": "What makes breath look like smoke?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs99rc4uw5buo",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'The museum opens at 9 a.m. and closes at 5 p.m. every day except Monday.' On which day is the museum closed?",
+     "options": [
+      "Monday",
+      "Sunday",
+      "Friday",
+      "Saturday"
+     ],
+     "answer": "Monday",
+     "accept": [],
+     "hint": "Look for the word 'except'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i7131j1wes12w",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'Tom slammed the door and stomped up the stairs without a word.' How is Tom feeling?",
+     "options": [
+      "Angry",
+      "Sleepy",
+      "Excited",
+      "Calm"
+     ],
+     "answer": "Angry",
+     "accept": [],
+     "hint": "Think about the verbs 'slammed' and 'stomped'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4u2qaz1s41nlb",
+     "subject": "en_read",
+     "type": "short",
+     "q": "What is the word for a reading skill where you use clues to work out something the text doesn't say directly?",
+     "options": [],
+     "answer": "inference",
+     "accept": [
+      "inferring",
+      "infer"
+     ],
+     "hint": "It is linked to the verb 'infer'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rphxw111eqgzrb",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which feature is most typical of a non-chronological report?",
+     "options": [
+      "Subheadings and facts",
+      "A villain",
+      "Rhyming lines",
+      "Speech marks throughout"
+     ],
+     "answer": "Subheadings and facts",
+     "accept": [],
+     "hint": "Think of an information text about an animal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nmpieb1j858yt",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which genre usually begins with 'Once upon a time'?",
+     "options": [
+      "Fairy tale",
+      "Newspaper report",
+      "Instructions",
+      "Biography"
+     ],
+     "answer": "Fairy tale",
+     "accept": [],
+     "hint": "Think of traditional stories.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf2qtzmrtyd83",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which genre uses imperative verbs like 'Mix', 'Cut' and 'Place'?",
+     "options": [
+      "Instructions",
+      "Diary",
+      "Poem",
+      "Myth"
+     ],
+     "answer": "Instructions",
+     "accept": [],
+     "hint": "These verbs are commands.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r191vder17jkgs8",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "A newspaper report usually includes:",
+     "options": [
+      "A headline and the 5 Ws",
+      "A moral at the end",
+      "Chapters",
+      "A list of ingredients"
+     ],
+     "answer": "A headline and the 5 Ws",
+     "accept": [],
+     "hint": "Who, what, where, when, why.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vhehcj1ox55zh",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'Leo checked his watch for the fifth time and tapped his foot.' What can you infer?",
+     "options": [
+      "Leo is impatient",
+      "Leo is asleep",
+      "Leo is lost in a forest",
+      "Leo is singing"
+     ],
+     "answer": "Leo is impatient",
+     "accept": [],
+     "hint": "Why do people keep checking the time?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l07dmxmgi1te",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "When answering an inference question, what should you include?",
+     "options": [
+      "Evidence from the text",
+      "Only your opinion",
+      "The page number only",
+      "A new story"
+     ],
+     "answer": "Evidence from the text",
+     "accept": [],
+     "hint": "Use a quotation to prove your idea.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcx50251p83oqd",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which is written in the first person and records personal feelings?",
+     "options": [
+      "A diary",
+      "An encyclopedia entry",
+      "A recipe",
+      "A timetable"
+     ],
+     "answer": "A diary",
+     "accept": [],
+     "hint": "It uses 'I' and 'my'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3ldbjv1sj7oj7",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'The sky turned black, and the birds fell silent.' What is the author most likely preparing the reader for?",
+     "options": [
+      "Something dramatic, like a storm",
+      "A birthday party",
+      "A quiet nap",
+      "A cooking lesson"
+     ],
+     "answer": "Something dramatic, like a storm",
+     "accept": [],
+     "hint": "What could cause this change in mood?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p02rz6hvp8yc",
+     "subject": "en_read",
+     "type": "short",
+     "q": "What do we call a story that explains natural events and often includes gods or magical creatures?",
+     "options": [],
+     "answer": "myth",
+     "accept": [
+      "a myth",
+      "myths"
+     ],
+     "hint": "It is often from ancient cultures.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1psgklp1ooxxsr",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Compare two genres you read this term. Write one similarity and one difference.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about purpose, layout and language.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqgvmc2nk8y6",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Read: 'Maya smiled, but her hands were shaking as she stepped onto the stage.' What can you infer about Maya? Use evidence.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Look at the contrast between her smile and her hands.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_spell": {
+   "topic": "Term 1 spelling review",
+   "questions": [
+    {
+     "id": "r1ya87qpcduvic",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: suspi_ _ous",
+     "options": [],
+     "answer": "suspicious",
+     "accept": [],
+     "hint": "This ending sounds like 'shus'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkl757o1olwgdr",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: nutri_ _ous",
+     "options": [],
+     "answer": "nutritious",
+     "accept": [],
+     "hint": "Think of the root word 'nutrition'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r34oa0h14ytpt4",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which spelling is correct?",
+     "options": [
+      "essential",
+      "essencial",
+      "esential",
+      "essentiel"
+     ],
+     "answer": "essential",
+     "accept": [],
+     "hint": "Think of the root word 'essence'... but the ending is -tial.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r136zblhg122bs",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: thor_ _gh",
+     "options": [],
+     "answer": "thorough",
+     "accept": [],
+     "hint": "It has the letters 'ough' at the end.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdo04p7g3h1ni",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word has a silent 'n'?",
+     "options": [
+      "solemn",
+      "sunny",
+      "dinner",
+      "window"
+     ],
+     "answer": "solemn",
+     "accept": [],
+     "hint": "Listen to the last sound.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fcwtj31ukonuu",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which ending completes the word 'offi___'?",
+     "options": [
+      "cial",
+      "tial",
+      "shal",
+      "sial"
+     ],
+     "answer": "cial",
+     "accept": [],
+     "hint": "Think of the root word 'office'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt7wm891q9c3nz",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which ending completes the word 'par___' (meaning 'partly')?",
+     "options": [
+      "tial",
+      "cial",
+      "shal",
+      "sial"
+     ],
+     "answer": "tial",
+     "accept": [],
+     "hint": "Think of the root word 'part'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1caedra1r7hf61",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word is spelt correctly?",
+     "options": [
+      "innocent",
+      "innocant",
+      "inocent",
+      "innosent"
+     ],
+     "answer": "innocent",
+     "accept": [],
+     "hint": "Think of 'innocence'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqi3g601kcia60",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word has a silent letter?",
+     "options": [
+      "knight",
+      "nice",
+      "night",
+      "note"
+     ],
+     "answer": "knight",
+     "accept": [],
+     "hint": "Which word has a letter you can't hear at the start?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6zpd4z1mcto0k",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words.",
+     "options": [],
+     "answer": "commitee → committee; nutritous → nutritious; thurough → thorough; essencial → essential; confidance → confidence",
+     "accept": [],
+     "hint": "Check double letters and the endings -tious, -tial and -ence.",
+     "text": "Our class commitee planned a nutritous picnic for the whole school. We checked the weather in a thurough way and packed essencial supplies like water and fruit. Everyone was full of confidance that the day would be a success, and we did achieve our goal.",
+     "errors": [
+      {
+       "wrong": "commitee",
+       "right": "committee"
+      },
+      {
+       "wrong": "nutritous",
+       "right": "nutritious"
+      },
+      {
+       "wrong": "thurough",
+       "right": "thorough"
+      },
+      {
+       "wrong": "essencial",
+       "right": "essential"
+      },
+      {
+       "wrong": "confidance",
+       "right": "confidence"
+      }
+     ]
+    },
+    {
+     "id": "r1kupsre1kzfvx5",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct spelling of the word that means 'a feeling of being sure of yourself'.",
+     "options": [
+      "confidence",
+      "confidance",
+      "confedence",
+      "confidense"
+     ],
+     "answer": "confidence",
+     "accept": [],
+     "hint": "Think of the adjective 'confident'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxp7n281qoouim",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct spelling of the noun formed from 'observe'.",
+     "options": [
+      "observance",
+      "observence",
+      "observants",
+      "obsurvance"
+     ],
+     "answer": "observance",
+     "accept": [],
+     "hint": "Think of the adjective 'observant'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmu84at1l11sf2",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct spelling of the verb meaning 'to succeed in reaching a goal'.",
+     "options": [
+      "achieve",
+      "acheive",
+      "achive",
+      "acheeve"
+     ],
+     "answer": "achieve",
+     "accept": [],
+     "hint": "Remember: i before e except after c.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17duwyd12uts0",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct spelling of the word for 'a group of people chosen to make decisions'.",
+     "options": [
+      "committee",
+      "comittee",
+      "commitee",
+      "comitee"
+     ],
+     "answer": "committee",
+     "accept": [],
+     "hint": "It has three sets of double letters.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lnt7zks8emaa",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct spelling of the word meaning 'certain, without doubt'.",
+     "options": [
+      "definite",
+      "definate",
+      "defenite",
+      "definit"
+     ],
+     "answer": "definite",
+     "accept": [],
+     "hint": "Look for a smaller word meaning 'limited' inside it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4z22fi1klovvm",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 4 misspelled words.",
+     "options": [],
+     "answer": "suspicous → suspicious; definate → definite; solem → solemn; acheive → achieve",
+     "accept": [],
+     "hint": "Look for silent letters, i before e, and the -cious ending.",
+     "text": "The detective gave the stranger a suspicous look. It was definate that something was wrong. In a solem voice, he asked the man why he was standing outside the old house. The man said he wanted to acheive his dream of becoming an artist and was only sketching the building.",
+     "errors": [
+      {
+       "wrong": "suspicous",
+       "right": "suspicious"
+      },
+      {
+       "wrong": "definate",
+       "right": "definite"
+      },
+      {
+       "wrong": "solem",
+       "right": "solemn"
+      },
+      {
+       "wrong": "acheive",
+       "right": "achieve"
+      }
+     ]
+    }
+   ]
+  },
+  "ipc": {
+   "topic": "Term 1 review: space, AD 900 and the active Earth",
+   "questions": [
+    {
+     "id": "rbqw8sxv2tgtq",
+     "subject": "ipc",
+     "type": "num",
+     "q": "How many planets are in our Solar System?",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "Pluto is now called a dwarf planet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cmrfwsm53xp",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which is the largest planet in our Solar System?",
+     "options": [
+      "Jupiter",
+      "Earth",
+      "Mars",
+      "Neptune"
+     ],
+     "answer": "Jupiter",
+     "accept": [],
+     "hint": "It is a gas giant.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgyt9fhuo3gix",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What is at the centre of our Solar System?",
+     "options": [
+      "The Sun",
+      "The Earth",
+      "The Moon",
+      "Mars"
+     ],
+     "answer": "The Sun",
+     "accept": [],
+     "hint": "All the planets orbit it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3ucr8bduw5px",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Why would astronauts on Mars need special suits?",
+     "options": [
+      "The air is thin and has very little oxygen",
+      "Mars is covered in water",
+      "Mars is too bright",
+      "There is too much gravity"
+     ],
+     "answer": "The air is thin and has very little oxygen",
+     "accept": [],
+     "hint": "Think about what humans need to breathe.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra3thms1dof322",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Around AD 900, which civilisation built great cities like Baghdad as a centre of learning?",
+     "options": [
+      "The Islamic civilisation (Abbasid caliphate)",
+      "The Aztecs",
+      "The Romans",
+      "The Victorians"
+     ],
+     "answer": "The Islamic civilisation (Abbasid caliphate)",
+     "accept": [],
+     "hint": "It had the House of Wisdom.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc25h261dopef2",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Around AD 900, which civilisation in Central America built stone pyramids and used a calendar?",
+     "options": [
+      "The Maya",
+      "The Vikings",
+      "The Egyptians",
+      "The Greeks"
+     ],
+     "answer": "The Maya",
+     "accept": [],
+     "hint": "They lived in what is now Mexico and Guatemala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryt0king0uvn6",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which group from Scandinavia was sailing and trading across Europe around AD 900?",
+     "options": [
+      "The Vikings",
+      "The Incas",
+      "The Aztecs",
+      "The Tudors"
+     ],
+     "answer": "The Vikings",
+     "accept": [],
+     "hint": "They were famous for longships.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlr2tgt1xrkq9z",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What is the hot, central part of the Earth called?",
+     "options": [
+      "The core",
+      "The crust",
+      "The mantle",
+      "The atmosphere"
+     ],
+     "answer": "The core",
+     "accept": [],
+     "hint": "It is made mostly of iron and nickel.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1btalniqhs5bv",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which layer of the Earth do we live on?",
+     "options": [
+      "The crust",
+      "The core",
+      "The mantle",
+      "The outer core"
+     ],
+     "answer": "The crust",
+     "accept": [],
+     "hint": "It is the thinnest, outer layer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15czpaz1p1c8ca",
+     "subject": "ipc",
+     "type": "short",
+     "q": "What are the giant moving pieces of the Earth's crust called?",
+     "options": [],
+     "answer": "tectonic plates",
+     "accept": [
+      "plates",
+      "tectonic plate"
+     ],
+     "hint": "They move very slowly.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8muk1o49l3d",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What happens when tectonic plates suddenly move against each other?",
+     "options": [
+      "An earthquake",
+      "A rainbow",
+      "A tide",
+      "An eclipse"
+     ],
+     "answer": "An earthquake",
+     "accept": [],
+     "hint": "The ground shakes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqvpc131pagozz",
+     "subject": "ipc",
+     "type": "short",
+     "q": "What is melted rock called when it comes out of a volcano?",
+     "options": [],
+     "answer": "lava",
+     "accept": [],
+     "hint": "Underground it is called magma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roeii8ce1j463",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Where do many volcanoes and earthquakes happen?",
+     "options": [
+      "Near the edges of tectonic plates",
+      "Only in deserts",
+      "Only at the North Pole",
+      "In the middle of every ocean equally"
+     ],
+     "answer": "Near the edges of tectonic plates",
+     "accept": [],
+     "hint": "Think of the 'Ring of Fire'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbrgvm916ywavi",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Choose one civilisation from around AD 900 and describe one thing it was good at.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about buildings, learning, trade or exploration.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1662pe7sxe5vz",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Reflect on this term: which learning goal did you improve most, and how do you know?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about something you can do now that you couldn't before.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wj69b8qk4cmx",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which planet in our Solar System has a reddish colour because of iron oxide (rust) in its soil?",
+     "options": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Saturn"
+     ],
+     "answer": "Mars",
+     "accept": [],
+     "hint": "It was the planet we studied in our space mission unit.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Term 1 review: number, calculation, perimeter and area",
+   "questions": [
+    {
+     "id": "rl6xp2yipvp1l",
+     "subject": "math",
+     "type": "mc",
+     "q": "What is the value of the digit 7 in 374,512?",
+     "options": [
+      "70,000",
+      "7,000",
+      "700,000",
+      "700"
+     ],
+     "answer": "70,000",
+     "accept": [],
+     "hint": "Count the places from the right.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl5kkmd1y4t3ty",
+     "subject": "math",
+     "type": "num",
+     "q": "Round 46,782 to the nearest thousand.",
+     "options": [],
+     "answer": "47000",
+     "accept": [],
+     "hint": "Look at the hundreds digit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryb5to215zq1q9",
+     "subject": "math",
+     "type": "num",
+     "q": "Round 238,450 to the nearest 10,000.",
+     "options": [],
+     "answer": "240000",
+     "accept": [],
+     "hint": "Look at the thousands digit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xuc5v5104sjer",
+     "subject": "math",
+     "type": "num",
+     "q": "The temperature is -4 °C. It rises by 9 degrees. What is the new temperature in °C?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Count up from -4 on a number line.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ut5v51tnkbae",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which number is the smallest?",
+     "options": [
+      "-8",
+      "-3",
+      "0",
+      "2"
+     ],
+     "answer": "-8",
+     "accept": [],
+     "hint": "On a number line, it is furthest to the left.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1izf0ah199unjv",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 4,567 + 3,858.",
+     "options": [],
+     "answer": "8425",
+     "accept": [],
+     "hint": "Use column addition and remember to carry.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sx9gq812wioq6",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 7,003 − 2,468.",
+     "options": [],
+     "answer": "4535",
+     "accept": [],
+     "hint": "Use column subtraction and exchange carefully.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruci2ay134jyon",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 2,345 × 6.",
+     "options": [],
+     "answer": "14070",
+     "accept": [],
+     "hint": "Multiply each digit by 6, starting with the ones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxuiynulcyhas",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 1,236 ÷ 4.",
+     "options": [],
+     "answer": "309",
+     "accept": [],
+     "hint": "Use short division.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rafj5a210wxklt",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which of these is a factor of 36?",
+     "options": [
+      "9",
+      "8",
+      "5",
+      "7"
+     ],
+     "answer": "9",
+     "accept": [],
+     "hint": "Which divides 36 with no remainder?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pispmx1911mgz",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which number is a prime number?",
+     "options": [
+      "13",
+      "15",
+      "21",
+      "27"
+     ],
+     "answer": "13",
+     "accept": [],
+     "hint": "A prime has exactly two factors.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq5kijl1ez9upb",
+     "subject": "math",
+     "type": "num",
+     "q": "A rectangle is 12 cm long and 5 cm wide. What is its perimeter in cm?",
+     "options": [],
+     "answer": "34",
+     "accept": [],
+     "hint": "Add all four sides.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qn0lsw1akg222",
+     "subject": "math",
+     "type": "num",
+     "q": "A rectangle is 9 m long and 7 m wide. What is its area in m²?",
+     "options": [],
+     "answer": "63",
+     "accept": [],
+     "hint": "Area = length × width.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlwazgbddqz0",
+     "subject": "math",
+     "type": "num",
+     "q": "A square has a perimeter of 36 cm. What is its area in cm²?",
+     "options": [],
+     "answer": "81",
+     "accept": [],
+     "hint": "First find the length of one side.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri2hz1z9cuix1",
+     "subject": "math",
+     "type": "num",
+     "q": "A garden is 15 m by 8 m. A path of area 20 m² is paved. How many m² of the garden are NOT paved?",
+     "options": [],
+     "answer": "100",
+     "accept": [],
+     "hint": "Find the total area first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwslns376afjc",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain how you would check the answer to 1,236 ÷ 4 using the inverse operation.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Which operation undoes division?",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
