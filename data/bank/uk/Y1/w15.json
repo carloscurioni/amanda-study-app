@@ -1340,6 +1340,1031 @@
      "errors": []
     }
    ]
+  },
+  "math": {
+   "topic": "Review: numbers to 20, addition, subtraction and shapes",
+   "questions": [
+    {
+     "id": "rfq07ag59ufsa",
+     "subject": "math",
+     "type": "num",
+     "q": "Count on: 7, 8, 9, ... What number comes next?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Say the numbers out loud and keep going.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwalzin50ewpo",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which number is bigger: 14 or 11?",
+     "options": [
+      "14",
+      "11"
+     ],
+     "answer": "14",
+     "accept": [],
+     "hint": "Look at the ones: 4 ones or 1 one?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra1ksmqqwhlln",
+     "subject": "math",
+     "type": "num",
+     "q": "What number is one less than 16?",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Count back one step.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrq8p5p1mojwos",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which number comes between 17 and 19?",
+     "options": [
+      "16",
+      "18",
+      "20"
+     ],
+     "answer": "18",
+     "accept": [],
+     "hint": "Count from 17 up to 19.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18f1t11tkgr2j",
+     "subject": "math",
+     "type": "num",
+     "q": "6 + 4 = ?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Hold 6 in your head and count on 4.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i2n2qqur5rc9",
+     "subject": "math",
+     "type": "num",
+     "q": "3 + ___ = 10. What is the missing number?",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Count up from 3 until you reach 10.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs3vovq9pod43",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which pair makes 10?",
+     "options": [
+      "5 and 4",
+      "8 and 2",
+      "6 and 3"
+     ],
+     "answer": "8 and 2",
+     "accept": [],
+     "hint": "Add each pair and check.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1stqk7mizcux8",
+     "subject": "math",
+     "type": "num",
+     "q": "10 + 5 = ?",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "10 and 5 more is a teen number.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18ie8ir1fha3d7",
+     "subject": "math",
+     "type": "num",
+     "q": "9 + 6 = ?",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Make 10 first: 9 + 1, then add the rest.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1eoutd71y281w9",
+     "subject": "math",
+     "type": "num",
+     "q": "12 - 4 = ?",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "Count back 4 from 12.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxgf6s2iu2q4v",
+     "subject": "math",
+     "type": "num",
+     "q": "20 - 10 = ?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Take away one ten.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ts4wrg5777xb",
+     "subject": "math",
+     "type": "short",
+     "q": "Mia has 8 apples. She eats 3. How many apples are left?",
+     "options": [],
+     "answer": "5",
+     "accept": [
+      "five",
+      "5 apples"
+     ],
+     "hint": "Take away the apples she ate.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvqkwormy6mc4",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which 2D shape has 3 sides?",
+     "options": [
+      "triangle",
+      "square",
+      "circle"
+     ],
+     "answer": "triangle",
+     "accept": [],
+     "hint": "Count the straight sides.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r162m3c0pymolj",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which 2D shape has 4 sides that are all the same length?",
+     "options": [
+      "rectangle",
+      "square",
+      "triangle"
+     ],
+     "answer": "square",
+     "accept": [],
+     "hint": "Think of a shape where every side matches.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18hg7yc7qwhc3",
+     "subject": "math",
+     "type": "mc",
+     "q": "A football is shaped like which 3D shape?",
+     "options": [
+      "cube",
+      "cone",
+      "sphere"
+     ],
+     "answer": "sphere",
+     "accept": [],
+     "hint": "It is round all over and can roll any way.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc9tm2wj8g9b",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which 3D shape has 6 square faces, like a dice?",
+     "options": [
+      "cylinder",
+      "cube",
+      "pyramid"
+     ],
+     "answer": "cube",
+     "accept": [],
+     "hint": "Think of a box where every face is a square.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Revisão do 1º período: nome, alfabeto, rimas e sílabas",
+   "questions": [
+    {
+     "id": "r1fvbenjag4f5q",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual letra vem logo depois do A no alfabeto?",
+     "options": [
+      "C",
+      "B",
+      "D"
+     ],
+     "answer": "B",
+     "accept": [],
+     "hint": "Cante o alfabeto bem devagar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqr4r0jcl4y0x",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual letra vem antes do E no alfabeto?",
+     "options": [
+      "D",
+      "F",
+      "C"
+     ],
+     "answer": "D",
+     "accept": [],
+     "hint": "Fale: A, B, C... e veja quem chega antes do E.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nyzxx2g3sce8",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Com qual letra começa a palavra BOLA?",
+     "options": [
+      "P",
+      "B",
+      "D"
+     ],
+     "answer": "B",
+     "accept": [],
+     "hint": "Fale BO-LA e escute o primeiro som.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri72qf71eri5ry",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Com qual letra começa a palavra MACACO?",
+     "options": [
+      "N",
+      "M",
+      "W"
+     ],
+     "answer": "M",
+     "accept": [],
+     "hint": "Feche a boca para falar o primeiro som.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxgv1qh3z27f5",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual é a última letra do alfabeto?",
+     "options": [],
+     "answer": "Z",
+     "accept": [
+      "z",
+      "zê",
+      "a letra Z"
+     ],
+     "hint": "É a letra de ZEBRA.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e8b3b5fp82dl",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Quantas letras tem a palavra SOL?",
+     "options": [
+      "2",
+      "3",
+      "4"
+     ],
+     "answer": "3",
+     "accept": [],
+     "hint": "Aponte e conte cada letra: S, O, L.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nd0zmr1yzacao",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Quantas sílabas tem a palavra GATO?",
+     "options": [
+      "1",
+      "2",
+      "3"
+     ],
+     "answer": "2",
+     "accept": [],
+     "hint": "Bata palmas: GA-TO.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1obf669162rizb",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Quantas sílabas tem a palavra BONECA?",
+     "options": [
+      "2",
+      "3",
+      "4"
+     ],
+     "answer": "3",
+     "accept": [],
+     "hint": "Bata palmas: BO-NE-CA.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r75ldsv91q1r",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Quantas sílabas tem a palavra PÃO?",
+     "options": [
+      "1",
+      "2",
+      "3"
+     ],
+     "answer": "1",
+     "accept": [],
+     "hint": "Fale bem devagar e bata uma palma a cada pedacinho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r70sv7y15w9dcf",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a primeira sílaba da palavra JANELA?",
+     "options": [
+      "NE",
+      "LA",
+      "JA"
+     ],
+     "answer": "JA",
+     "accept": [],
+     "hint": "Fale JA-NE-LA e pare no primeiro pedaço.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r190d7n91c5bfh0",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra rima com PÃO?",
+     "options": [
+      "MÃO",
+      "PÉ",
+      "PATO"
+     ],
+     "answer": "MÃO",
+     "accept": [],
+     "hint": "Escute o final: pÃO...",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tje8dwyxy00y",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra rima com JANELA?",
+     "options": [
+      "JARRA",
+      "PANELA",
+      "JACARÉ"
+     ],
+     "answer": "PANELA",
+     "accept": [],
+     "hint": "Procure a palavra que termina com o mesmo som: -ELA.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r153p0ox11jwzzc",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra rima com GATINHO?",
+     "options": [
+      "GALO",
+      "RATINHO",
+      "GATO"
+     ],
+     "answer": "RATINHO",
+     "accept": [],
+     "hint": "Escute o final: -INHO.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r625pd09l9u7w",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete a rima: \"O sapo pulou no rio, e sentiu muito ___.\"",
+     "options": [
+      "frio",
+      "calor",
+      "medo"
+     ],
+     "answer": "frio",
+     "accept": [],
+     "hint": "Procure a palavra que termina com o mesmo som de RIO.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ytuz24117ojcg",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destes é um nome de pessoa, que começa com letra maiúscula?",
+     "options": [
+      "mesa",
+      "Ana",
+      "bola"
+     ],
+     "answer": "Ana",
+     "accept": [],
+     "hint": "Nomes de pessoas começam com letra grande.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rinkr4bmdqfda",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Ao escrever seu nome, a primeira letra deve ser:",
+     "options": [
+      "maiúscula",
+      "minúscula",
+      "um número"
+     ],
+     "answer": "maiúscula",
+     "accept": [],
+     "hint": "Pense na letra grande que começa os nomes.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Revisão do 1º período: histórias e poemas preferidos",
+   "questions": [
+    {
+     "id": "r1k5v024278uc6",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O cachorro Bolinha correu atrás da bola.\" Quem correu atrás da bola?",
+     "options": [
+      "o gato",
+      "Bolinha",
+      "a menina"
+     ],
+     "answer": "Bolinha",
+     "accept": [],
+     "hint": "Procure o nome do cachorro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rer6ozfnpmdhs",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Lia plantou uma semente. Ela regou todos os dias. Nasceu uma flor.\" O que nasceu?",
+     "options": [
+      "uma árvore",
+      "uma flor",
+      "um sapo"
+     ],
+     "answer": "uma flor",
+     "accept": [],
+     "hint": "Leia a última frase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvdn5sn11c94la",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"De manhã, o galo cantou. Depois, o sol apareceu.\" O que aconteceu primeiro?",
+     "options": [
+      "O sol apareceu",
+      "O galo cantou",
+      "A lua apareceu"
+     ],
+     "answer": "O galo cantou",
+     "accept": [],
+     "hint": "Procure a palavra DE MANHÃ.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ixae2gddia03",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Tito perdeu o chapéu. Ele procurou na cama e achou debaixo da mesa.\" Onde estava o chapéu?",
+     "options": [
+      "na cama",
+      "debaixo da mesa",
+      "no armário"
+     ],
+     "answer": "debaixo da mesa",
+     "accept": [],
+     "hint": "Leia o final da frase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ci7r8s1gmuwfb",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O passarinho caiu do ninho e piou bem alto.\" Como você acha que o passarinho estava?",
+     "options": [
+      "assustado",
+      "com sono",
+      "com fome de bolo"
+     ],
+     "answer": "assustado",
+     "accept": [],
+     "hint": "Pense em como você ficaria se caísse.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdz7cuo1ehp0c2",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Nina ganhou um balão vermelho e sorriu.\" Como Nina se sentiu?",
+     "options": [
+      "triste",
+      "feliz",
+      "brava"
+     ],
+     "answer": "feliz",
+     "accept": [],
+     "hint": "O que a gente faz quando sorri?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d43uwkuhafc1",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Como começam muitas histórias de contos de fadas?",
+     "options": [
+      "Era uma vez",
+      "Fim",
+      "Tchau"
+     ],
+     "answer": "Era uma vez",
+     "accept": [],
+     "hint": "São três palavras que abrem a história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn1hbyfnd8b8o",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Para recontar uma história, o que vem primeiro?",
+     "options": [
+      "o fim",
+      "o meio",
+      "o começo"
+     ],
+     "answer": "o começo",
+     "accept": [],
+     "hint": "Pense na ordem: começo, meio e fim.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rni5woh1lnvya8",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quem são os personagens de uma história?",
+     "options": [
+      "quem aparece e faz as coisas",
+      "as páginas do livro",
+      "as cores do desenho"
+     ],
+     "answer": "quem aparece e faz as coisas",
+     "accept": [],
+     "hint": "Pense nos bichos e nas pessoas da história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xpd78h3tds9l",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"A tartaruga andou devagar, devagar, e chegou primeiro.\" Como a tartaruga andou?",
+     "options": [
+      "rápido",
+      "pulando",
+      "devagar"
+     ],
+     "answer": "devagar",
+     "accept": [],
+     "hint": "Veja a palavra que se repete.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nn5xcj1hw9iu1",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o poema: \"Lá vem a chuva, / plim, plim, plim, / molhando a flor / do meu jardim.\" O que a chuva molha?",
+     "options": [
+      "a casa",
+      "a flor",
+      "o gato"
+     ],
+     "answer": "a flor",
+     "accept": [],
+     "hint": "Leia o terceiro verso.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv92xpaw6ll5h",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No poema \"Lá vem a chuva, / plim, plim, plim, / molhando a flor / do meu jardim\", qual palavra rima com PLIM?",
+     "options": [
+      "flor",
+      "jardim",
+      "chuva"
+     ],
+     "answer": "jardim",
+     "accept": [],
+     "hint": "Escute o final das palavras: -IM.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15sl1zz57kkl6",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "No poema \"Lá vem a chuva, / plim, plim, plim\", qual palavra se repete três vezes?",
+     "options": [],
+     "answer": "plim",
+     "accept": [
+      "PLIM",
+      "plim plim plim"
+     ],
+     "hint": "Leia o segundo verso.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15c9cu2j70ayi",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Para declamar um poema bem, você deve:",
+     "options": [
+      "falar devagar e bem alto",
+      "falar muito rápido",
+      "falar de boca fechada"
+     ],
+     "answer": "falar devagar e bem alto",
+     "accept": [],
+     "hint": "Quem escuta precisa entender cada palavra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i6fpk71wjrrnv",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O sapo Juca pulou na lagoa. Splash!\" Onde o sapo pulou?",
+     "options": [
+      "na cama",
+      "na lagoa",
+      "na árvore"
+     ],
+     "answer": "na lagoa",
+     "accept": [],
+     "hint": "Leia o final da primeira frase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7ndhql1k2yc5",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Qual foi a sua história preferida deste período? Conte quem era o personagem principal.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Lembre o nome do personagem e uma coisa que ele fez.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_ort": {
+   "topic": "Revisão do 1º período: vogais e famílias silábicas",
+   "questions": [
+    {
+     "id": "r4m0evx8i6we6",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está escrita certo?",
+     "options": [
+      "pato",
+      "bato",
+      "patu"
+     ],
+     "answer": "pato",
+     "accept": [],
+     "hint": "Fale PA-TO e escute cada som.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlgmx171te0mx4",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Junte as sílabas e escreva a palavra inteira: MA + LA",
+     "options": [],
+     "answer": "mala",
+     "accept": [
+      "MALA"
+     ],
+     "hint": "Leia uma sílaba e depois a outra, bem juntinho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r166bgob1r33nw",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Junte as sílabas e escreva a palavra inteira: TA + TU",
+     "options": [],
+     "answer": "tatu",
+     "accept": [
+      "TATU"
+     ],
+     "hint": "É um bicho que tem casca dura e cava buracos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jfe7yf11om4us",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Junte as sílabas e escreva a palavra inteira: DA + DO",
+     "options": [],
+     "answer": "dado",
+     "accept": [
+      "DADO"
+     ],
+     "hint": "Junte DA com DO.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbb96ey78afum",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual sílaba falta? CA _ _ (é onde você mora)",
+     "options": [
+      "SA",
+      "ZA",
+      "CO"
+     ],
+     "answer": "SA",
+     "accept": [],
+     "hint": "A palavra é CASA.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "recjm76pl1udn",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: VA _ _ (animal que dá leite)",
+     "options": [],
+     "answer": "vaca",
+     "accept": [
+      "VACA"
+     ],
+     "hint": "A última sílaba é da família do C: CA, CO, CU.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri1x7d21cxi5yz",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: SA _ _ (animal que pula e coaxa)",
+     "options": [],
+     "answer": "sapo",
+     "accept": [
+      "SAPO"
+     ],
+     "hint": "A última sílaba é da família do P.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsicjh110j65ox",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra começa com a mesma sílaba de FACA?",
+     "options": [
+      "FADA",
+      "VACA",
+      "FOCA"
+     ],
+     "answer": "FADA",
+     "accept": [],
+     "hint": "Fale FA-CA e escute o primeiro pedaço.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12glk021dpqrlw",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Quantas sílabas tem a palavra LUA?",
+     "options": [
+      "1",
+      "2",
+      "3"
+     ],
+     "answer": "2",
+     "accept": [],
+     "hint": "Bata palmas: LU-A.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg7h8y17dl1l7",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra é da família do T: TA, TE, TI, TO, TU?",
+     "options": [
+      "tatu",
+      "dado",
+      "mala"
+     ],
+     "answer": "tatu",
+     "accept": [],
+     "hint": "Procure a palavra que começa com TA.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1410rpnstsf4v",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual vogal falta? C _ S A",
+     "options": [
+      "A",
+      "O",
+      "U"
+     ],
+     "answer": "A",
+     "accept": [],
+     "hint": "A palavra é onde você mora.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a9dm521qp0wo3",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Troque a primeira sílaba de VACA por FA. Que palavra aparece?",
+     "options": [
+      "FACA",
+      "FOCA",
+      "FADA"
+     ],
+     "answer": "FACA",
+     "accept": [],
+     "hint": "Tire o VA e coloque FA no lugar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roprmi5uyvrkv",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra rima com BOLA?",
+     "options": [
+      "MOLA",
+      "MALA",
+      "BOCA"
+     ],
+     "answer": "MOLA",
+     "accept": [],
+     "hint": "Escute o final: -OLA.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ylh2proxskg3",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 4 palavras escritas errado.",
+     "options": [],
+     "answer": "patu → pato; caza → casa; bolla → bola; dadu → dado",
+     "accept": [],
+     "hint": "Leia devagar e olhe as palavras que você estudou.",
+     "text": "O patu e o tatu foram brincar na caza da vaca. O pato levou uma bolla azul e o sapo levou um dadu. A vaca guardou a faca na mala e fez um bolo. À noite, a lua brilhou no céu bem bonita.",
+     "errors": [
+      {
+       "wrong": "patu",
+       "right": "pato"
+      },
+      {
+       "wrong": "caza",
+       "right": "casa"
+      },
+      {
+       "wrong": "bolla",
+       "right": "bola"
+      },
+      {
+       "wrong": "dadu",
+       "right": "dado"
+      }
+     ]
+    },
+    {
+     "id": "r325as91u4nd",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual destas palavras está escrita do jeito certo?",
+     "options": [
+      "pola",
+      "bola",
+      "bóla"
+     ],
+     "answer": "bola",
+     "accept": [],
+     "hint": "O som do começo é BO.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ywzuja5hu8c7",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado.",
+     "options": [],
+     "answer": "vacca → vaca; sappo → sapo; tattu → tatu; faka → faca; lúa → lua",
+     "accept": [],
+     "hint": "Olhe com cuidado os nomes dos bichos e das coisas.",
+     "text": "Na fazenda, a vacca comeu capim e o sappo pulou na lagoa. O tattu cavou um buraco perto da mala velha. A faka ficou na cozinha da casa. De noite, a lúa apareceu e todos foram dormir.",
+     "errors": [
+      {
+       "wrong": "vacca",
+       "right": "vaca"
+      },
+      {
+       "wrong": "sappo",
+       "right": "sapo"
+      },
+      {
+       "wrong": "tattu",
+       "right": "tatu"
+      },
+      {
+       "wrong": "faka",
+       "right": "faca"
+      },
+      {
+       "wrong": "lúa",
+       "right": "lua"
+      }
+     ]
+    }
+   ]
   }
  },
  "books": []

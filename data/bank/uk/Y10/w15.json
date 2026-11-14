@@ -5031,5 +5031,918 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Caderno Amarelo",
+   "premise": "No último mês do primeiro período, Bento, Lia e Joana, do Clube de Leitura da biblioteca, escrevem e analisam crônicas, contos e poemas, revisando narrador, estrutura da narrativa e figuras de linguagem até o simulado com um texto inédito.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A fila da padaria",
+     "synopsis": "Desafiado a escrever um texto próprio para o Clube de Leitura, Bento transforma a fila da padaria do bairro numa crônica e aprende o que faz esse gênero ser o que é.",
+     "text": "Bento tinha quinze anos e uma mania que os amigos achavam engraçada: anotava num caderno pequeno, de capa amarela, frases que ouvia na rua. Uma conversa no ponto de ônibus, um grito de vendedor, uma bronca de mãe no supermercado. A turma chamava aquilo de “caderno de guardados”.\nNa última quarta-feira antes das provas do primeiro período, a professora Rosana, que coordenava o Clube de Leitura na biblioteca, fechou o livro que estava lendo e lançou um desafio.\n— Semana que vem, cada um traz um texto seu. Pode ser conto, crônica ou poema. Depois a gente analisa tudo como se fosse um texto inédito de prova. Vale para revisar e vale para perder o medo.\nLia, a melhor amiga de Bento, já sabia que ia escrever um conto. Joana, mais tímida, disse baixinho que talvez tentasse um poema. Bento não tinha ideia nenhuma.\nA ideia apareceu no dia seguinte, às sete da manhã, na fila da padaria da esquina. Bento abriu o caderno e começou a observar. Na frente dele, um senhor de chinelo contava a mesma piada que contava todos os dias, e a moça do caixa ria como se fosse a primeira vez. Um menino de uniforme contava moedas, uma por uma, para levar dois pães. Uma mulher falava ao telefone sobre o preço do tomate, e todo mundo, sem querer, opinava sobre o tomate também.\nBento voltou para casa e escreveu de uma vez só. Chamou o texto de “A fila que conversa”. Começava assim: “Na padaria da minha rua, ninguém compra só pão. Compra também dois minutos de conversa, uma piada repetida e a notícia de que o tomate subiu de novo”. E terminava com uma frase de que ele gostou muito: “Toda fila é uma pequena cidade, com seus moradores, suas leis e seus palhaços”.\nNa quarta seguinte, ele leu o texto em voz alta. Ficou vermelho no começo, mas a turma riu nos lugares certos.\n— É crônica — disse Lia, assim que ele terminou. — Você partiu de um fato do dia a dia e chegou numa reflexão.\n— E a linguagem é parecida com a fala — completou Joana. — Parece que você está conversando com a gente.\nA professora Rosana concordou e escreveu no quadro as marcas que eles tinham encontrado: assunto do cotidiano, texto curto, narrador que observa e comenta, tom leve, às vezes bem-humorado, e uma reflexão no final.\n— Muitas crônicas nasceram nos jornais — explicou ela. — O nome vem de uma palavra grega ligada ao tempo. O cronista olha para o próprio tempo e para o que quase ninguém repara.\n— Então eu sou cronista? — perguntou Bento, desconfiado.\n— Hoje você foi — respondeu a professora, sorrindo.\nNaquela noite, Bento abriu o caderno amarelo e escreveu na primeira página, com letra caprichada: “Guardar frases também é um jeito de escrever”. Depois ficou pensando no que Lia traria na semana seguinte.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como a turma chama o caderno de capa amarela de Bento?",
+       "options": [
+        "Caderno de piadas",
+        "Diário secreto",
+        "Caderno de crônicas",
+        "Caderno de guardados"
+       ],
+       "answer": "Caderno de guardados",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é o desafio proposto pela professora Rosana?",
+       "options": [
+        "Ler um romance inteiro",
+        "Decorar um poema famoso",
+        "Trazer um texto próprio para analisar",
+        "Escrever uma carta para o jornal"
+       ],
+       "answer": "Trazer um texto próprio para analisar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, em que lugar Bento encontra o assunto do seu texto?",
+       "options": [],
+       "answer": "Na padaria",
+       "accept": [
+        "padaria",
+        "fila da padaria",
+        "na fila da padaria",
+        "a padaria"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é o título do texto escrito por Bento?",
+       "options": [
+        "A fila que conversa",
+        "Toda fila é uma cidade",
+        "O preço do tomate",
+        "O caderno amarelo"
+       ],
+       "answer": "A fila que conversa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo Lia, por que o texto de Bento é uma crônica?",
+       "options": [
+        "Tem rimas em todas as estrofes",
+        "Parte de um fato do dia a dia e chega a uma reflexão",
+        "Conta uma aventura num lugar inventado",
+        "Apresenta argumentos com dados e números"
+       ],
+       "answer": "Parte de um fato do dia a dia e chega a uma reflexão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Joana quer dizer ao comentar que o texto parece uma conversa?",
+       "options": [
+        "Que a linguagem é próxima da fala do dia a dia",
+        "Que o texto é escrito em forma de diálogo teatral",
+        "Que Bento copiou frases das pessoas",
+        "Que o texto foi gravado e não escrito"
+       ],
+       "answer": "Que a linguagem é próxima da fala do dia a dia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase “Toda fila é uma pequena cidade” sugere?",
+       "options": [
+        "Que a padaria fica longe do centro",
+        "Que as filas são sempre muito longas",
+        "Que Bento não gosta de esperar",
+        "Que a fila reúne pessoas diferentes convivendo como numa comunidade"
+       ],
+       "answer": "Que a fila reúne pessoas diferentes convivendo como numa comunidade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Bento passou a se interessar mais pelo que acontece à sua volta depois desse desafio?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Quem conta o conto",
+     "synopsis": "Lia apresenta um conto de suspense narrado em primeira pessoa, e o clube descobre o que muda quando se troca o narrador de uma história.",
+     "text": "Lia chegou à biblioteca com três folhas grampeadas e um sorriso de quem guardava um segredo. O conto dela se chamava “A chave do 302”.\nA história era narrada por uma menina de doze anos. Num sábado de chuva, ela encontrava uma chave antiga, presa a um chaveiro de madeira com o número 302, caída na escada do prédio. Ninguém no prédio dizia ser o dono. A menina passava a semana investigando: perguntava ao porteiro, deixava bilhetes no elevador, desconfiava da vizinha do quinto andar. No final, descobria que a chave era da própria avó, que tinha morado no apartamento 302 quando era jovem e guardava aquela lembrança no bolso do casaco havia cinquenta anos.\nQuando Lia terminou de ler, Joana bateu palmas devagar.\n— Eu não esperava que fosse a avó!\nA professora Rosana pediu que eles identificassem os elementos da narrativa. Bento foi ao quadro: personagens, a menina, a avó, o porteiro e a vizinha; espaço, o prédio, sobretudo a escada e o elevador; tempo, uma semana de chuva; conflito, descobrir de quem era a chave.\n— E quem conta a história? — perguntou a professora.\n— A própria menina — respondeu Lia. — Narradora-personagem, em primeira pessoa.\n— Então vamos fazer uma experiência. Reescreva o primeiro parágrafo em terceira pessoa, com um narrador que sabe tudo, até o que as personagens pensam.\nLia pegou o lápis e, depois de alguns minutos, leu: “A menina encontrou a chave na escada. Não sabia que, três andares acima, a avó procurava aquela mesma chave no bolso do casaco, com o coração apertado”.\nHouve um silêncio na mesa.\n— Estragou a surpresa — disse Bento. — Agora o leitor já sabe que é da avó.\n— Exatamente — disse a professora. — O narrador onisciente sabe o que todos sentem e pensam. A narradora-personagem só sabe o que vê, ouve e imagina. Por isso, no conto da Lia, o leitor descobre as coisas junto com ela.\nJoana levantou a mão, meio sem jeito.\n— Mas o narrador em terceira pessoa também poderia esconder a informação, não poderia?\n— Poderia, se fosse um narrador observador, que conta só o que se vê de fora. Toda escolha de narrador é uma escolha sobre o que o leitor vai saber e quando.\nLia passou o resto da tarde riscando e reescrevendo. Experimentou o narrador observador, depois voltou para a primeira pessoa. No fim, manteve a versão original, mas acrescentou uma frase no último parágrafo: “Naquele dia eu entendi que algumas chaves não abrem portas, abrem lembranças”.\n— Agora sim — ela disse, satisfeita. — Antes eu escolhi a primeira pessoa sem pensar. Agora eu sei por quê.\nNa saída, Bento anotou no caderno amarelo: “O narrador é o dono das portas: decide quais o leitor pode abrir”. Joana, ao lado dele, apertava contra o peito uma folha dobrada em quatro. Era o poema dela, e ela ainda não tinha coragem de mostrar.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual número está gravado no chaveiro encontrado pela menina?",
+       "options": [
+        "203",
+        "302",
+        "320",
+        "502"
+       ],
+       "answer": "302",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, em que parte do prédio a chave é encontrada?",
+       "options": [],
+       "answer": "Na escada",
+       "accept": [
+        "escada",
+        "a escada",
+        "na escada do prédio"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, a quem pertence a chave no final do conto de Lia?",
+       "options": [
+        "Ao porteiro",
+        "À vizinha do quinto andar",
+        "À avó da menina",
+        "Ao pai da menina"
+       ],
+       "answer": "À avó da menina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que tipo de narrador Lia usa na versão original do conto?",
+       "options": [
+        "Narrador onisciente em terceira pessoa",
+        "Narrador observador em terceira pessoa",
+        "Narradora-personagem em primeira pessoa",
+        "Não há narrador, só diálogo"
+       ],
+       "answer": "Narradora-personagem em primeira pessoa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Bento diz que a versão em terceira pessoa “estragou a surpresa”?",
+       "options": [
+        "Porque o texto ficou longo demais",
+        "Porque o narrador revela logo que a chave é da avó",
+        "Porque a menina deixa de aparecer na história",
+        "Porque o final passou a ser triste"
+       ],
+       "answer": "Porque o narrador revela logo que a chave é da avó",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é o conflito do conto “A chave do 302”?",
+       "options": [
+        "Fugir de um prédio em chamas",
+        "Descobrir de quem é a chave",
+        "Consertar o elevador quebrado",
+        "Convencer a avó a se mudar"
+       ],
+       "answer": "Descobrir de quem é a chave",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase “algumas chaves não abrem portas, abrem lembranças” mostra sobre o conto?",
+       "options": [
+        "Que a chave tem um valor afetivo ligado ao passado",
+        "Que a chave estava quebrada",
+        "Que a menina perdeu a memória",
+        "Que a porta do 302 nunca existiu"
+       ],
+       "answer": "Que a chave tem um valor afetivo ligado ao passado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Joana ainda não teve coragem de mostrar o poema dela?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: O poema sem rima",
+     "synopsis": "Joana finalmente lê seu poema sobre um varal, com medo de que não seja poesia por não rimar, e o clube descobre o verso livre, o eu lírico e as figuras de linguagem.",
+     "text": "Joana demorou para desdobrar a folha. Quando finalmente o fez, avisou antes de começar:\n— Não rima. Acho que não é um poema de verdade.\n— Lê primeiro — pediu a professora Rosana. — Depois a gente decide.\nJoana respirou fundo e leu:\n“Minha mãe estende as camisas / como quem escreve uma frase: / uma palavra azul, outra branca, / e um ponto final de meia. // O vento chega sem pedir licença / e lê tudo em voz alta, / balançando as mangas / como braços que se despedem. // À tarde, recolho a frase inteira, / seca, dobrada, quieta. / Ninguém percebe, / mas a casa ficou com cheiro de sol.”\nNinguém disse nada por alguns segundos. Depois Lia falou:\n— Joana, isso é lindo.\nA professora copiou o poema no quadro, verso por verso, e começou as perguntas.\n— Quantas estrofes?\n— Três — respondeu Bento.\n— E quantos versos em cada uma?\n— Quatro. Doze versos no total.\n— Muito bem. Agora, a rima. Joana tem razão: não há rimas regulares. Isso tem nome: verso livre. Muitos poetas escrevem assim. O que faz um texto ser poema não é só a rima, é o trabalho com o ritmo, com as imagens e com o som das palavras.\nJoana ergueu os olhos pela primeira vez desde o início da leitura.\nEm seguida, a professora pediu que procurassem as figuras de linguagem. Lia encontrou a primeira: “como quem escreve uma frase” era uma comparação, porque aproximava duas coisas usando a palavra “como”. Bento achou a segunda: o vento que “lê tudo em voz alta” era uma personificação, já que dava ao vento uma ação humana.\n— E a frase de roupas? — perguntou a professora. — As camisas viram palavras, a meia vira ponto final. Não há “como” aqui.\n— Metáfora — disse Joana, surpresa com a própria voz.\n— E “cheiro de sol”? Sol tem cheiro?\n— Não — riu Bento. — Mistura o olfato com uma coisa que a gente vê e sente na pele.\n— Isso se chama sinestesia: a mistura de sentidos.\nPor último, a professora falou de algo que deixou Joana pensativa.\n— Quem fala no poema é o eu lírico. Pode ser parecido com a autora, mas não é a mesma pessoa. O eu lírico é uma voz criada dentro do texto.\n— Então eu posso escrever sobre um varal que não é o da minha casa?\n— Pode. E pode escrever sobre o da sua casa sem que o poema seja um diário.\nNo fim do encontro, a professora perguntou se Joana deixaria o poema no mural da biblioteca. Ela hesitou, olhou para Lia, olhou para Bento e disse que sim.\nNa saída, ela parou diante do mural e leu o próprio texto de novo, agora em letra de quadro, como se fosse de outra pessoa. Gostou. Bento, discreto, anotou no caderno amarelo: “Rima é só uma das músicas possíveis”.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Joana acha que seu texto não é um poema de verdade?",
+       "options": [
+        "Porque não tem rima",
+        "Porque é muito curto",
+        "Porque fala de roupas",
+        "Porque foi escrito à mão"
+       ],
+       "answer": "Porque não tem rima",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, sobre o que é o poema de Joana?",
+       "options": [
+        "Um varal de roupas",
+        "Uma viagem de trem",
+        "Uma noite de chuva",
+        "Um jardim abandonado"
+       ],
+       "answer": "Um varal de roupas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quantas estrofes tem o poema de Joana?",
+       "options": [],
+       "answer": "três",
+       "accept": [
+        "3",
+        "tres",
+        "três estrofes",
+        "3 estrofes"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que nome a professora dá aos versos sem rimas regulares?",
+       "options": [],
+       "answer": "Verso livre",
+       "accept": [
+        "versos livres",
+        "verso livre",
+        "o verso livre"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que figura de linguagem aparece em “O vento [...] lê tudo em voz alta”?",
+       "options": [
+        "Personificação",
+        "Comparação",
+        "Hipérbole",
+        "Sinestesia"
+       ],
+       "answer": "Personificação",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que “cheiro de sol” é um exemplo de sinestesia?",
+       "options": [
+        "Porque mistura sensações de sentidos diferentes",
+        "Porque compara usando a palavra “como”",
+        "Porque exagera de propósito",
+        "Porque repete o mesmo som no início das palavras"
+       ],
+       "answer": "Porque mistura sensações de sentidos diferentes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a professora quer dizer quando explica que o eu lírico não é a autora?",
+       "options": [
+        "Que Joana não escreveu o poema sozinha",
+        "Que a voz do poema é criada dentro do texto",
+        "Que todo poema deve ser escrito em terceira pessoa",
+        "Que o poema não pode falar de coisas reais"
+       ],
+       "answer": "Que a voz do poema é criada dentro do texto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Joana gostou do poema ao lê-lo no mural, “como se fosse de outra pessoa”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O guarda-chuva esquecido",
+     "synopsis": "A professora traz um conto inédito para o clube analisar como numa prova, e Bento e Joana discordam sobre qual é o clímax da história.",
+     "text": "Na quarta seguinte, a professora Rosana entregou a cada um uma folha com um conto curto, sem nome de autor.\n— Texto inédito — anunciou. — Ninguém aqui leu antes. É assim que vai ser na prova.\nO conto se chamava “O guarda-chuva”. Contava a história de Teodoro, um senhor de cabelos brancos que esperava o ônibus todas as manhãs no mesmo ponto, sempre com um guarda-chuva preto, fizesse sol ou chuva. E todas as manhãs ele o esquecia no banco. Clara, uma menina que esperava o ônibus da escola ali perto, corria atrás dele e devolvia o guarda-chuva. Ele agradecia com o mesmo aceno de chapéu. Isso durou um ano inteiro. Um dia, Teodoro não apareceu. Nem no dia seguinte, nem na semana seguinte. O guarda-chuva ficou no banco. Clara o levou para casa e passou a carregá-lo para a escola. Numa tarde de tempestade, ela o abriu pela primeira vez e um papel caiu do meio das varetas: “Obrigado por correr atrás de mim todos os dias. Era a melhor parte da minha manhã”.\nA professora pediu que eles dividissem o conto nas partes da narrativa.\nLia começou pela situação inicial: a rotina de Teodoro e Clara no ponto de ônibus. Depois veio a complicação: o dia em que Teodoro não aparece.\nFoi aí que a discussão começou.\n— O clímax é quando ele some — disse Bento. — É a hora de mais tensão. A gente fica preocupado.\n— Não é — discordou Joana, com uma firmeza que surpreendeu todo mundo. — O clímax é quando o bilhete cai. É ali que tudo muda de sentido. A gente descobre que o esquecimento talvez fosse de propósito.\n— Os dois estão defendendo uma ideia — disse a professora. — Numa prova, as duas leituras poderiam ganhar pontos, desde que vocês justifiquem com o texto. Qual trecho comprova o que dizem?\nJoana leu em voz alta a frase do bilhete. Explicou que, antes dele, a história parecia ser sobre um senhor distraído. Depois dele, passava a ser sobre amizade e solidão. O ponto de virada estava ali.\nBento pensou um pouco e concordou em parte.\n— Tá. O sumiço cria a tensão, mas o bilhete é o momento mais forte. Talvez o sumiço seja a complicação e o bilhete seja o clímax.\n— E o desfecho? — perguntou a professora.\nNinguém soube responder de primeira. O conto terminava com o bilhete. Não dizia o que tinha acontecido com Teodoro.\n— É um final aberto — disse Lia. — O leitor tem que imaginar.\n— Exatamente. E um final aberto não é um defeito. É uma escolha do autor. Ele confia no leitor.\nNa volta para casa, Bento começou a reparar nas pessoas do ponto de ônibus. Um rapaz com fone de ouvido, uma senhora com sacolas, uma criança dormindo no colo do pai. Pensou que cada um deles poderia ser o começo de um conto. Abriu o caderno amarelo e escreveu: “Clímax é o momento em que a história vira do avesso”.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como se chama o senhor do conto que a professora traz?",
+       "options": [],
+       "answer": "Teodoro",
+       "accept": [
+        "teodoro",
+        "seu Teodoro"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Teodoro esquece no banco todas as manhãs?",
+       "options": [
+        "Um guarda-chuva preto",
+        "Um chapéu",
+        "Um livro",
+        "Uma sacola de compras"
+       ],
+       "answer": "Um guarda-chuva preto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem devolve o objeto esquecido a Teodoro?",
+       "options": [
+        "O motorista do ônibus",
+        "Bento",
+        "A esposa de Teodoro",
+        "Clara, uma menina que espera o ônibus ali perto"
+       ],
+       "answer": "Clara, uma menina que espera o ônibus ali perto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde estava o bilhete escondido?",
+       "options": [
+        "No bolso do casaco",
+        "No meio das varetas do guarda-chuva",
+        "Debaixo do banco do ponto",
+        "Dentro da mochila de Clara"
+       ],
+       "answer": "No meio das varetas do guarda-chuva",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual parte da narrativa Lia identifica como a complicação?",
+       "options": [
+        "A rotina no ponto de ônibus",
+        "O bilhete que cai",
+        "A tempestade no fim da história",
+        "O dia em que Teodoro não aparece"
+       ],
+       "answer": "O dia em que Teodoro não aparece",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Joana defende que o clímax é o momento do bilhete?",
+       "options": [
+        "Porque é o trecho mais longo do conto",
+        "Porque é quando Teodoro volta",
+        "Porque é a primeira frase do conto",
+        "Porque ali a história muda de sentido"
+       ],
+       "answer": "Porque ali a história muda de sentido",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que o bilhete sugere sobre os esquecimentos de Teodoro?",
+       "options": [
+        "Que ele estava doente e não percebia",
+        "Que o guarda-chuva era de Clara",
+        "Que talvez ele esquecesse o guarda-chuva de propósito",
+        "Que ele queria se livrar do guarda-chuva"
+       ],
+       "answer": "Que talvez ele esquecesse o guarda-chuva de propósito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o autor do conto preferiu não contar o que aconteceu com Teodoro?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Crônica ou conto?",
+     "synopsis": "Um texto do jornal do bairro sobre um pombo que entrou no metrô divide o clube: é crônica ou conto? A turma descobre que as fronteiras entre os gêneros podem ser finas.",
+     "text": "Lia chegou agitada, com um recorte de jornal na mão.\n— Achei no jornalzinho do bairro. É de uma colunista que escreve toda semana. Mas eu não sei se é crônica ou conto.\nO texto se chamava “O passageiro de penas”. A colunista contava que, numa segunda-feira de manhã, um pombo tinha entrado no vagão do metrô em que ela estava. O pombo andava entre os pés das pessoas com uma calma de executivo atrasado. Uma senhora disse que ele ia descer na estação da Sé. Um rapaz apostou que ia para a Paulista. Durante três estações, desconhecidos que nunca se olhavam conversaram, riram e torceram pelo pombo. Quando as portas se abriram, ele desceu, sem pressa, na estação errada para todos os palpites. O texto terminava assim: “Precisamos de um pombo por semana para lembrar que estamos no mesmo vagão”.\n— É crônica — disse Bento logo. — Saiu no jornal, é do dia a dia, termina com uma reflexão. Igual à minha da padaria.\n— Mas tem personagens, tempo, espaço, conflito… — rebateu Lia. — Tem até uma pequena tensão: onde o pombo vai descer? Parece conto.\nJoana, que agora falava muito mais nos encontros, levantou outra questão.\n— E aconteceu de verdade? Porque, se for inventado, é conto, não é?\nA professora Rosana sorriu, como se estivesse esperando exatamente aquela pergunta.\n— Vocês três têm um pouco de razão. Existem crônicas que narram uma pequena história, com personagens e acontecimentos. Muita gente chama isso de crônica narrativa. O que pesa mais é o conjunto: o texto parte do cotidiano, está ligado ao tempo presente, tem tom de conversa com o leitor e quer provocar uma reflexão sobre a vida comum.\n— E se a colunista inventou o pombo? — insistiu Joana.\n— O cronista pode recriar, exagerar, enfeitar. O leitor da crônica não pede um documento; pede um olhar. Já o conto costuma construir um mundo fechado, com um conflito que se desenvolve até um clímax. No pombo, o mais importante não é o mistério da estação. É o que ele faz com as pessoas.\nBento folheou o caderno amarelo e leu uma anotação antiga: “Toda fila é uma pequena cidade”.\n— É a mesma coisa! — exclamou. — O vagão é a minha fila.\n— Então vocês já sabem o que responder se isso cair na prova — disse a professora. — Não basta dizer o nome do gênero. É preciso apontar as marcas no texto.\nPara treinar, ela propôs um jogo: cada um diria uma característica do texto e a qual gênero ela se aproximava mais. Lia ficou com as marcas do conto. Bento ficou com as da crônica. Joana, como juíza, decidia. No fim, o placar foi de cinco a três para a crônica.\n— Crônica narrativa — decretou Joana, batendo a caneta na mesa como um martelo.\nTodos riram. Lia guardou o recorte no meio do livro que estava lendo, como quem guarda uma folha seca. Na semana seguinte, porém, nenhum deles imaginava que a aula ia acontecer no escuro.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde Lia encontrou o texto “O passageiro de penas”?",
+       "options": [
+        "No jornal do bairro",
+        "Num livro da biblioteca",
+        "Num site de notícias",
+        "Na prova do ano anterior"
+       ],
+       "answer": "No jornal do bairro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que animal entra no vagão do metrô?",
+       "options": [],
+       "answer": "Um pombo",
+       "accept": [
+        "pombo",
+        "o pombo",
+        "pomba"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que as pessoas do vagão fazem enquanto o animal está ali?",
+       "options": [
+        "Conversam e dão palpites sobre onde ele vai descer",
+        "Chamam o segurança da estação",
+        "Tentam pegar o animal",
+        "Ignoram o animal e leem o celular"
+       ],
+       "answer": "Conversam e dão palpites sobre onde ele vai descer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual argumento Lia usa para dizer que o texto parece um conto?",
+       "options": [
+        "Foi publicado num jornal",
+        "Termina com uma reflexão",
+        "Usa linguagem próxima da fala",
+        "Tem personagens, tempo, espaço e conflito"
+       ],
+       "answer": "Tem personagens, tempo, espaço e conflito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que nome a professora dá à crônica que narra uma pequena história?",
+       "options": [
+        "Conto jornalístico",
+        "Crônica poética",
+        "Notícia literária",
+        "Crônica narrativa"
+       ],
+       "answer": "Crônica narrativa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Bento compara o vagão à fila da padaria?",
+       "options": [
+        "Porque os dois ficam no mesmo bairro",
+        "Porque nos dois lugares desconhecidos convivem como numa pequena comunidade",
+        "Porque em ambos alguém conta piadas",
+        "Porque os dois textos falam de comida"
+       ],
+       "answer": "Porque nos dois lugares desconhecidos convivem como numa pequena comunidade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, o que é mais importante no texto do pombo?",
+       "options": [
+        "Descobrir a estação em que ele desce",
+        "O efeito que o pombo provoca nas pessoas",
+        "Provar que o fato aconteceu de verdade",
+        "Descrever o metrô em detalhes"
+       ],
+       "answer": "O efeito que o pombo provoca nas pessoas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que a colunista termina dizendo que precisamos de “um pombo por semana”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Figuras no apagão",
+     "synopsis": "Uma tempestade apaga as luzes da biblioteca, e a professora transforma a escuridão num jogo em que os alunos caçam figuras de linguagem nas próprias falas.",
+     "text": "A tempestade começou no meio do encontro. Primeiro um vento forte balançou as janelas da biblioteca, depois veio a chuva grossa e, de repente, as luzes se apagaram. Ficou só a claridade cinzenta que entrava pelas janelas altas.\n— Está chovendo canivete! — disse Bento.\n— A biblioteca virou uma caverna — sussurrou Joana.\nUm trovão longo fez as estantes vibrarem.\n— O céu está resmungando — comentou Lia. — Deve estar de mau humor.\nA professora Rosana acendeu a lanterna do celular e apontou para o teto, deixando a mesa numa luz amarela e fraca.\n— Vocês perceberam o que acabaram de fazer? Em menos de um minuto, usaram três figuras de linguagem. Vamos aproveitar o escuro. Ninguém vai embora com essa chuva mesmo.\nEla propôs um jogo: cada um diria uma frase sobre a tempestade, e os outros teriam de descobrir a figura.\nBento começou pelo próprio exemplo.\n— “Está chovendo canivete” é uma expressão popular, mas também é um exagero. Ninguém acha que caem facas do céu.\n— Hipérbole — disse Lia. — O exagero de propósito para dar força.\n— E “a biblioteca virou uma caverna”? — perguntou a professora.\n— Metáfora — respondeu Joana. — Não tem “como”. A biblioteca simplesmente vira outra coisa.\n— Se eu dissesse “a biblioteca está escura como uma caverna”?\n— Aí é comparação — completou Bento. — Por causa do “como”.\nLia ficou com o céu resmungão.\n— Personificação, porque o céu ganhou humor de gente.\nDepois disso o jogo pegou fogo. Bento disse que já tinha avisado mil vezes que ia chover; Joana apontou outra hipérbole. Lia falou de um “silêncio barulhento” que tomou a sala entre um trovão e outro, e a professora explicou que juntar ideias opostas tinha um nome: antítese, ou, quando as duas aparecem coladas, paradoxo. Joana, inspirada, criou uma frase de propósito:\n— “Chuva, chuva, chuva na chapa do telhado.”\n— Repetição e aliteração! — disse Bento, rindo. — Esse som de “ch” parece a própria chuva.\nA professora aplaudiu.\n— Agora o mais importante. Na prova, não basta dar nome à figura. Vocês precisam explicar o efeito. Por que dizer que o céu resmunga, e não só que trovejou?\nLia pensou.\n— Porque assim o trovão parece uma pessoa irritada. Fica mais vivo, e o leitor quase ouve o resmungo.\n— Isso vale ponto — disse a professora.\nQuando as luzes voltaram, quarenta minutos depois, todos piscaram como se tivessem acordado. Joana já tinha enchido uma página inteira com as frases do jogo, cada uma com o nome da figura ao lado. Bento copiou a lista no caderno amarelo e acrescentou no final, sublinhado duas vezes: “Nomear a figura é achar a chave. Explicar o efeito é abrir a porta”.\n— Semana que vem é o simulado — lembrou a professora, apagando a lanterna. — Quarenta minutos, um texto inédito. Tragam a coragem.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que faz as luzes da biblioteca se apagarem?",
+       "options": [
+        "Uma obra no prédio",
+        "Um aluno que desligou o disjuntor",
+        "Uma tempestade",
+        "O fim do horário de aula"
+       ],
+       "answer": "Uma tempestade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual figura de linguagem aparece em “Está chovendo canivete”?",
+       "options": [
+        "Metáfora",
+        "Personificação",
+        "Hipérbole",
+        "Aliteração"
+       ],
+       "answer": "Hipérbole",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que figura Joana usa ao dizer que a biblioteca virou uma caverna?",
+       "options": [
+        "Comparação",
+        "Hipérbole",
+        "Metáfora",
+        "Antítese"
+       ],
+       "answer": "Metáfora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo Bento, o que transforma a frase de Joana numa comparação?",
+       "options": [
+        "O uso do verbo no passado",
+        "A repetição de um som",
+        "O uso da palavra “como”",
+        "O exagero da frase"
+       ],
+       "answer": "O uso da palavra “como”",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que figura Lia usa ao dizer que o céu está resmungando?",
+       "options": [],
+       "answer": "Personificação",
+       "accept": [
+        "personificação",
+        "prosopopeia",
+        "personificacao"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que efeito o som de “ch” na frase de Joana produz, segundo Bento?",
+       "options": [
+        "Deixa a frase mais triste",
+        "Mostra que Joana estava com frio",
+        "Imita o barulho da chuva",
+        "Torna a frase mais formal"
+       ],
+       "answer": "Imita o barulho da chuva",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Bento quer dizer com “Explicar o efeito é abrir a porta”?",
+       "options": [
+        "Que entender o efeito da figura é o que mostra a compreensão do texto",
+        "Que é preciso sair da sala quando falta luz",
+        "Que as figuras de linguagem são difíceis de encontrar",
+        "Que só os nomes das figuras contam na prova"
+       ],
+       "answer": "Que entender o efeito da figura é o que mostra a compreensão do texto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que a professora decidiu transformar o apagão num jogo em vez de encerrar o encontro?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: Quarenta minutos",
+     "synopsis": "No simulado, Bento enfrenta um poema inédito com o relógio correndo e usa tudo o que o clube aprendeu no período para escrever sua análise.",
+     "text": "No dia do simulado, a biblioteca estava silenciosa demais. A professora Rosana colocou um relógio grande em cima da mesa e distribuiu as folhas viradas para baixo.\n— Quarenta minutos. Um poema inédito e uma pergunta. Podem virar.\nO poema se chamava “Escada”. Tinha duas estrofes curtas: “Subo os degraus de dois em dois / quando a pressa me empurra. / Desço de um em um / quando a saudade me segura. // Entre o térreo e o último andar / mora a minha vida inteira: / cada degrau, um ano; / cada corrimão, alguém que me esperou.”\nA pergunta dizia: “Analise como o eu lírico apresenta a passagem do tempo no poema. Use trechos do texto para justificar sua resposta”.\nBento sentiu o estômago gelar. Por um minuto inteiro, ficou olhando para a folha sem ler nada. Depois lembrou do caderno amarelo, que estava na mochila, e das frases que tinha anotado durante o período. Não podia abri-lo, mas lembrava delas.\nRespirou e seguiu o método que a turma tinha montado junto. Primeiro, ler o poema duas vezes, uma para entender e outra para marcar. Segundo, perguntar quem fala e sobre o quê. Terceiro, procurar os recursos. Quarto, explicar o efeito de cada um.\nNa segunda leitura, ele circulou “pressa me empurra” e “saudade me segura”. Escreveu na margem: personificação, sentimentos agindo como pessoas. Sublinhou “cada degrau, um ano”: metáfora, a escada é a vida. Notou também a oposição entre subir e descer, entre a pressa e a saudade. Lembrou da antítese da tarde do apagão.\nEntão começou a escrever. Explicou que o eu lírico representa a vida como uma escada, em que cada degrau corresponde a um ano. Mostrou que a pressa e a saudade aparecem como forças que empurram e seguram, o que faz o leitor sentir o tempo no próprio corpo. Disse que a oposição entre subir de dois em dois e descer de um em um mostrava duas maneiras de viver o tempo: correndo para o futuro ou voltando devagar ao passado. Terminou com o último verso: o corrimão representava as pessoas que apoiaram o eu lírico pelo caminho.\nQuando a professora avisou que faltavam cinco minutos, Bento releu o texto, corrigiu duas vírgulas e colocou um ponto final que lhe pareceu definitivo.\nNa quarta seguinte, as folhas voltaram corrigidas. Ao lado do parágrafo de Bento sobre a pressa e a saudade, a professora tinha escrito: “Ótimo. Você não só nomeou a figura: explicou o efeito”. Lia tinha ido bem na estrutura. Joana tinha feito a melhor análise do último verso, e a professora leu um trecho dela em voz alta. Joana não ficou vermelha. Sorriu.\nPara comemorar o fim do período, a professora trouxe pão de queijo da padaria da esquina. Bento reconheceu o saquinho e riu sozinho.\n— Que foi? — perguntou Lia.\n— Nada. Essa padaria já virou crônica.\nAntes de ir embora, ele abriu o caderno amarelo numa página nova e escreveu: “Primeiro período: aprendi que todo texto tem uma porta. E que a chave quase sempre está nos detalhes”.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quantos minutos os alunos têm para fazer o simulado?",
+       "options": [],
+       "answer": "quarenta",
+       "accept": [
+        "40",
+        "quarenta minutos",
+        "40 minutos"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é o título do poema inédito do simulado?",
+       "options": [
+        "Elevador",
+        "Degrau",
+        "Escada",
+        "Corrimão"
+       ],
+       "answer": "Escada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é o primeiro passo do método que a turma montou?",
+       "options": [
+        "Escrever a conclusão",
+        "Contar as rimas",
+        "Ler o poema duas vezes",
+        "Procurar o nome do autor"
+       ],
+       "answer": "Ler o poema duas vezes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que figura Bento identifica em “pressa me empurra” e “saudade me segura”?",
+       "options": [
+        "Hipérbole",
+        "Comparação",
+        "Personificação",
+        "Aliteração"
+       ],
+       "answer": "Personificação",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a análise de Bento, o que a escada representa no poema?",
+       "options": [
+        "A vida do eu lírico",
+        "O prédio onde ele trabalha",
+        "O caminho até a escola",
+        "Uma dificuldade financeira"
+       ],
+       "answer": "A vida do eu lírico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo Bento, o que o corrimão representa no último verso?",
+       "options": [
+        "As pessoas que apoiaram o eu lírico",
+        "O medo de cair",
+        "A pressa de chegar ao topo",
+        "As lembranças tristes"
+       ],
+       "answer": "As pessoas que apoiaram o eu lírico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o comentário da professora deixa Bento contente?",
+       "options": [
+        "Porque ele tirou nota máxima em todas as questões",
+        "Porque mostra que ele explicou o efeito, e não só o nome da figura",
+        "Porque ela leu o texto dele em voz alta",
+        "Porque ele terminou antes de todo mundo"
+       ],
+       "answer": "Porque mostra que ele explicou o efeito, e não só o nome da figura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Joana não ficou vermelha desta vez quando a professora leu o trecho dela?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
