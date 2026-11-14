@@ -2367,5 +2367,866 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "A Mala de Histórias",
+   "premise": "A professora Lia traz uma mala azul com objetos das histórias e poemas do período. Cada dia, uma criança tira um objeto e reconta a história ou declama o poema.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A mala chega",
+     "synopsis": "A professora Lia traz uma mala misteriosa para a turma. Dentro dela há objetos das histórias do período.",
+     "text": "Na segunda-feira, a professora Lia entrou na sala com uma mala azul e velha.\nA mala tinha adesivos de estrelas e uma alça amarela.\n— O que tem aí dentro? — perguntou Bia, curiosa.\n— Coisas das histórias que lemos neste período — disse a professora. — Cada dia, uma criança tira um objeto e conta a história de novo.\nTeo levantou a mão bem alto. Ele queria ser o primeiro!\nA professora abriu a mala devagar. Teo enfiou a mão e tirou uma pena verde e comprida.\n— Eu sei! É a pena do papagaio Pipo, que vivia esquecendo as palavras!\nTeo contou a história: no começo, Pipo esquecia tudo; no meio, os amigos fizeram uma música para ele lembrar; no fim, Pipo cantou a música inteira na festa da floresta.\nA turma bateu palmas.\n— Muito bem, Teo! Você contou o começo, o meio e o fim — disse a professora.\nA mala azul voltou para o armário. Amanhã teria mais!",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor era a mala?",
+       "options": [
+        "azul",
+        "vermelha",
+        "verde"
+       ],
+       "answer": "azul",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem trouxe a mala para a sala?",
+       "options": [
+        "a professora Lia",
+        "a Bia",
+        "o Teo"
+       ],
+       "answer": "a professora Lia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Teo tirou da mala?",
+       "options": [
+        "uma pena verde",
+        "uma bola",
+        "um livro"
+       ],
+       "answer": "uma pena verde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do papagaio da história?",
+       "options": [],
+       "answer": "Pipo",
+       "accept": [
+        "o Pipo",
+        "papagaio Pipo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o problema do papagaio no começo da história?",
+       "options": [
+        "esquecia as palavras",
+        "não sabia voar",
+        "estava com fome"
+       ],
+       "answer": "esquecia as palavras",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como os amigos ajudaram o papagaio?",
+       "options": [
+        "fizeram uma música",
+        "deram um presente",
+        "fizeram um bolo"
+       ],
+       "answer": "fizeram uma música",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a professora elogiou Teo?",
+       "options": [
+        "porque ele contou o começo, o meio e o fim",
+        "porque ele chegou cedo",
+        "porque ele arrumou a sala"
+       ],
+       "answer": "porque ele contou o começo, o meio e o fim",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Teo levantou a mão bem alto?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O poema da chuva",
+     "synopsis": "Bia tira um guarda-chuva pequeno da mala e declama um poema que a turma aprendeu. Ela fica nervosa, mas consegue.",
+     "text": "Na terça-feira, foi a vez de Bia.\nEla tirou da mala um guarda-chuva pequenino, do tamanho de uma colher.\n— É do poema da chuva! — gritou Nina, lá do fundo.\nBia ficou vermelha. Declamar um poema na frente de todos dava um frio na barriga.\nA professora disse baixinho:\n— Respire fundo e fale devagar. A gente está aqui com você.\nBia respirou fundo e começou:\n\"Plic, ploc, cai a chuva,\nmolha a rua e o quintal.\nPlic, ploc, nasce a flor,\nque cheirinho especial!\"\nNo fim, a turma inteira repetiu \"plic, ploc\" batendo os pés no chão, como gotas de chuva.\nBia sorriu de orelha a orelha. O frio na barriga tinha passado.\n— Eu consegui! — disse ela.\n— Conseguiu, sim. E falou com ritmo, como um poema pede — disse a professora.\nBia guardou o guarda-chuvinha na mala com todo o cuidado.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de quem era a vez de tirar um objeto da mala?",
+       "options": [
+        "da Bia",
+        "do Teo",
+        "da Nina"
+       ],
+       "answer": "da Bia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que objeto Bia tirou da mala?",
+       "options": [
+        "um guarda-chuva pequeno",
+        "uma pena",
+        "uma bota"
+       ],
+       "answer": "um guarda-chuva pequeno",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem gritou que era o poema da chuva?",
+       "options": [],
+       "answer": "Nina",
+       "accept": [
+        "a Nina"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que som da chuva aparece no poema?",
+       "options": [
+        "plic, ploc",
+        "tic, tac",
+        "au, au"
+       ],
+       "answer": "plic, ploc",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a professora disse para Bia fazer?",
+       "options": [
+        "respirar fundo e falar devagar",
+        "falar bem rápido",
+        "sentar no chão"
+       ],
+       "answer": "respirar fundo e falar devagar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a turma fez no fim do poema?",
+       "options": [
+        "bateu os pés como gotas de chuva",
+        "foi para o recreio",
+        "cantou parabéns"
+       ],
+       "answer": "bateu os pés como gotas de chuva",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Bia se sentiu antes de declamar?",
+       "options": [
+        "nervosa",
+        "com sono",
+        "brava"
+       ],
+       "answer": "nervosa",
+       "accept": [],
+       "hint": "Pense no frio na barriga.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o frio na barriga da Bia passou?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A bota furada",
+     "synopsis": "Nina tira uma bota furada da mala e reconta a história do gigante que tinha medo de formigas. Ela mistura a ordem, e os colegas ajudam.",
+     "text": "Na quarta-feira, Nina tirou da mala uma bota enorme, com um furo na ponta.\n— É a bota do gigante Bento! — disse ela.\nNina começou a contar:\n— No fim, o gigante ficou amigo das formigas...\n— Espera! — disse Teo. — Isso é o fim. Começa pelo começo!\nNina riu e tentou de novo.\n— No começo, o gigante Bento tinha medo de formigas. Ele pulava e gritava quando via uma.\n— E no meio? — perguntou a professora.\n— No meio, uma formiga entrou pelo furo da bota dele. Bento ficou parado, morrendo de medo. Mas a formiga só queria sair dali!\n— E no fim?\n— No fim, Bento ajudou a formiga a sair e descobriu que ela era bem simpática. Os dois ficaram amigos.\nA turma aplaudiu.\n— Viram? Quando a gente conta na ordem, todo mundo entende — disse a professora.\nNina abraçou a bota furada antes de guardá-la.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que objeto Nina tirou da mala?",
+       "options": [
+        "uma bota furada",
+        "um chapéu",
+        "uma pena verde"
+       ],
+       "answer": "uma bota furada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do gigante?",
+       "options": [],
+       "answer": "Bento",
+       "accept": [
+        "o Bento",
+        "gigante Bento"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, do que o gigante tinha medo?",
+       "options": [
+        "de formigas",
+        "de cachorros",
+        "do escuro"
+       ],
+       "answer": "de formigas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por onde a formiga entrou na bota?",
+       "options": [
+        "pelo furo",
+        "pela janela",
+        "pelo bolso"
+       ],
+       "answer": "pelo furo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o erro de Nina ao começar a contar?",
+       "options": [
+        "começou pelo fim",
+        "esqueceu o nome do gigante",
+        "falou baixinho"
+       ],
+       "answer": "começou pelo fim",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a formiga queria?",
+       "options": [
+        "sair da bota",
+        "morder o gigante",
+        "comer o lanche"
+       ],
+       "answer": "sair da bota",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como termina a história do gigante?",
+       "options": [
+        "ele fica amigo da formiga",
+        "ele vai embora da cidade",
+        "ele joga a bota fora"
+       ],
+       "answer": "ele fica amigo da formiga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha importante contar uma história na ordem certa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A estrela de papel",
+     "synopsis": "Rafa tira uma estrela de papel da mala, mas não lembra a história. A turma ajuda com perguntas, e ele consegue recontar.",
+     "text": "Na quinta-feira, foi a vez do Rafa, o menino mais quietinho da turma.\nEle tirou da mala uma estrela de papel dourado.\nRafa olhou para a estrela, olhou para a turma... e não falou nada.\n— Não lembro a história — disse ele, bem baixinho.\nA professora sorriu.\n— Vamos ajudar o Rafa com perguntas. Quem era o personagem?\n— Uma menina chamada Lu! — lembrou Rafa.\n— E o que ela queria?\n— Ela queria pegar uma estrela do céu para dar para a avó.\n— E o que aconteceu?\nAgora Rafa já falava sozinho:\n— Ela subiu no telhado, mas a estrela estava longe demais. Então ela fez uma estrela de papel e deu para a avó. A avó colou na janela e disse que era a estrela mais bonita do mundo.\nA turma ficou em silêncio e depois aplaudiu bem forte.\nRafa segurou a estrela dourada e sorriu.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem tirou o objeto da mala?",
+       "options": [
+        "o Rafa",
+        "a Bia",
+        "o Teo"
+       ],
+       "answer": "o Rafa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor era a estrela de papel?",
+       "options": [
+        "dourada",
+        "azul",
+        "rosa"
+       ],
+       "answer": "dourada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da menina da história?",
+       "options": [],
+       "answer": "Lu",
+       "accept": [
+        "a Lu"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para quem a menina queria dar a estrela?",
+       "options": [
+        "para a avó",
+        "para a professora",
+        "para o irmão"
+       ],
+       "answer": "para a avó",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a professora ajudou o Rafa?",
+       "options": [
+        "fazendo perguntas",
+        "contando a história no lugar dele",
+        "mandando ele sentar"
+       ],
+       "answer": "fazendo perguntas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a avó colou a estrela?",
+       "options": [
+        "na janela",
+        "na porta",
+        "na geladeira"
+       ],
+       "answer": "na janela",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a menina fez uma estrela de papel?",
+       "options": [
+        "porque a estrela do céu estava longe demais",
+        "porque gostava de papel",
+        "porque a avó pediu"
+       ],
+       "answer": "porque a estrela do céu estava longe demais",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a turma ficou em silêncio antes de aplaudir?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O trava-língua do tatu",
+     "synopsis": "Teo tira um tatu de pano da mala e todos tentam falar um poema-trava-língua. A sala vira uma grande risada.",
+     "text": "Na sexta-feira, Teo pediu para tirar mais um objeto. A professora deixou, porque todos já tinham ido.\nEle tirou um tatu de pano, cinza e fofinho.\n— É o poema do tatu! — disseram todos juntos.\nEra um poema que enrolava a língua. A turma tinha aprendido de cor.\nTeo começou bem rápido:\n\"O tatu tá todo tonto,\nTonto tá o tatu.\nTatu tonto tropeçou\ne caiu no chão, cutu!\"\nNa terceira linha, a língua dele enrolou e saiu \"tratu tronto\".\nA sala inteira caiu na risada, até a professora.\n— Agora devagar — disse ela.\nTeo falou de novo, devagarinho, e acertou tudo.\nDepois, cada criança tentou. Bia acertou. Nina enrolou. Rafa falou tão devagar que parecia uma tartaruga, mas acertou também.\n— Poema bom é assim: dá vontade de falar de novo — disse a professora.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que dia da semana Teo tirou o tatu?",
+       "options": [
+        "sexta-feira",
+        "segunda-feira",
+        "quarta-feira"
+       ],
+       "answer": "sexta-feira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como era o tatu de pano?",
+       "options": [
+        "cinza e fofinho",
+        "verde e duro",
+        "amarelo e pequeno"
+       ],
+       "answer": "cinza e fofinho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como o tatu estava no poema?",
+       "options": [
+        "tonto",
+        "feliz",
+        "com fome"
+       ],
+       "answer": "tonto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu quando Teo falou rápido?",
+       "options": [
+        "a língua dele enrolou",
+        "ele esqueceu o poema",
+        "ele dormiu"
+       ],
+       "answer": "a língua dele enrolou",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a professora pediu para Teo fazer?",
+       "options": [
+        "falar devagar",
+        "falar mais alto",
+        "cantar"
+       ],
+       "answer": "falar devagar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem falou tão devagar que parecia uma tartaruga?",
+       "options": [],
+       "answer": "Rafa",
+       "accept": [
+        "o Rafa"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a turma conseguiu falar o poema junto?",
+       "options": [
+        "porque tinha aprendido de cor",
+        "porque estava escrito no quadro",
+        "porque o tatu ensinou"
+       ],
+       "answer": "porque tinha aprendido de cor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que um trava-língua faz as pessoas rirem?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: A mala sumiu",
+     "synopsis": "Na segunda-feira, a mala não está no armário. A turma procura pela escola e descobre onde ela foi parar.",
+     "text": "Na segunda-feira seguinte, a professora abriu o armário. A mala azul não estava lá!\n— Sumiu! — disse Bia, assustada.\nA turma saiu procurando. Olharam embaixo das mesas, atrás da cortina e até dentro da caixa de lápis.\nTeo lembrou de uma pista:\n— Na sexta, o seu Zé da limpeza passou aqui com o carrinho.\nEles foram até a salinha da limpeza. Lá estava a mala azul, ao lado de uma vassoura!\nSeu Zé coçou a cabeça.\n— Ah, achei que era uma mala esquecida. Guardei para ninguém levar.\nTodos riram de alívio.\n— Obrigada por cuidar dela, seu Zé — disse a professora.\nNina teve uma ideia:\n— Vamos contar uma história para o seu Zé, para agradecer!\nE contaram a história do gigante Bento, na ordem certinha: começo, meio e fim.\nSeu Zé riu muito da parte da formiga na bota.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a mala deveria estar?",
+       "options": [
+        "no armário",
+        "no carro",
+        "na biblioteca"
+       ],
+       "answer": "no armário",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a turma procurou primeiro?",
+       "options": [
+        "embaixo das mesas",
+        "no pátio",
+        "na cozinha"
+       ],
+       "answer": "embaixo das mesas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem lembrou da pista?",
+       "options": [],
+       "answer": "Teo",
+       "accept": [
+        "o Teo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a mala foi encontrada?",
+       "options": [
+        "na salinha da limpeza",
+        "no parquinho",
+        "na sala da diretora"
+       ],
+       "answer": "na salinha da limpeza",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que seu Zé guardou a mala?",
+       "options": [
+        "achou que era uma mala esquecida",
+        "queria ler as histórias",
+        "a professora pediu"
+       ],
+       "answer": "achou que era uma mala esquecida",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual história a turma contou para seu Zé?",
+       "options": [
+        "a do gigante Bento",
+        "a do papagaio Pipo",
+        "a da menina Lu"
+       ],
+       "answer": "a do gigante Bento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a turma se sentiu quando achou a mala?",
+       "options": [
+        "aliviada",
+        "brava",
+        "com medo"
+       ],
+       "answer": "aliviada",
+       "accept": [],
+       "hint": "Eles riram quando viram a mala.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que seu Zé não foi culpado pelo sumiço da mala?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A festa das histórias",
+     "synopsis": "No último dia do período, a turma faz uma festa e cada criança apresenta sua história ou poema preferido para as famílias.",
+     "text": "Chegou o último dia do período. A sala estava enfeitada com desenhos das histórias.\nAs famílias vieram assistir à Festa das Histórias.\nA mala azul ficou no meio da roda, aberta.\nTeo contou a história do papagaio Pipo e cantou a música dele.\nBia declamou o poema da chuva, sem nenhum frio na barriga. As famílias fizeram \"plic, ploc\" com os pés.\nNina contou a história do gigante Bento, na ordem certinha.\nRafa mostrou a estrela dourada e contou a história da Lu com voz firme. A mãe dele ficou com os olhos brilhando.\nNo fim, todos falaram juntos o trava-língua do tatu. Até as famílias enrolaram a língua!\nA professora fechou a mala.\n— No próximo período, ela volta com histórias novas — disse ela.\n— E a gente vai contar todas! — gritou Teo.\nSeu Zé, lá da porta, bateu palmas mais alto que todo mundo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem veio assistir à festa?",
+       "options": [
+        "as famílias",
+        "os bombeiros",
+        "outra turma"
+       ],
+       "answer": "as famílias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a mala ficou durante a festa?",
+       "options": [
+        "no meio da roda",
+        "no armário",
+        "na porta"
+       ],
+       "answer": "no meio da roda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual história Teo contou?",
+       "options": [
+        "a do papagaio Pipo",
+        "a do gigante Bento",
+        "a da menina Lu"
+       ],
+       "answer": "a do papagaio Pipo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Bia declamou o poema desta vez?",
+       "options": [
+        "sem frio na barriga",
+        "chorando",
+        "cochichando"
+       ],
+       "answer": "sem frio na barriga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que todos falaram juntos no fim?",
+       "options": [
+        "o trava-língua do tatu",
+        "o poema da chuva",
+        "a música do Pipo"
+       ],
+       "answer": "o trava-língua do tatu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que vai acontecer com a mala no próximo período?",
+       "options": [
+        "vai voltar com histórias novas",
+        "vai ser jogada fora",
+        "vai ficar com seu Zé"
+       ],
+       "answer": "vai voltar com histórias novas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a mãe do Rafa ficou com os olhos brilhando?",
+       "options": [
+        "porque ficou orgulhosa dele",
+        "porque estava com sono",
+        "porque estava com frio"
+       ],
+       "answer": "porque ficou orgulhosa dele",
+       "accept": [],
+       "hint": "Lembre como Rafa estava no capítulo 4.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Qual história ou poema da mala você mais gostou? Por quê?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }

@@ -1049,6 +1049,982 @@
      "errors": []
     }
    ]
+  },
+  "ipc": {
+   "topic": "Review: Buildings and From A to B units",
+   "questions": [
+    {
+     "id": "rry88nmg5bu8v",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which material is best for making a window?",
+     "options": [
+      "glass",
+      "wood",
+      "paper",
+      "cotton"
+     ],
+     "answer": "glass",
+     "accept": [],
+     "hint": "Think about which material you can see through.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr6y2tqt49s81",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which material is waterproof?",
+     "options": [
+      "plastic",
+      "paper",
+      "cardboard",
+      "wool"
+     ],
+     "answer": "plastic",
+     "accept": [],
+     "hint": "Which one keeps water out?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzdcf4b1rxp5cv",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which of these materials is strong enough to build the walls of a house?",
+     "options": [
+      "brick",
+      "tissue paper",
+      "jelly",
+      "fabric"
+     ],
+     "answer": "brick",
+     "accept": [],
+     "hint": "Walls must hold up the roof.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y72z0c18qnkvb",
+     "subject": "ipc",
+     "type": "short",
+     "q": "In the story of the three little pigs, which material did the house that did not blow down use? (one word)",
+     "options": [],
+     "answer": "bricks",
+     "accept": [
+      "brick"
+     ],
+     "hint": "It is hard and heavy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpqcf59ksg1cb",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which shape is often used to make a bridge or roof strong?",
+     "options": [
+      "triangle",
+      "circle",
+      "star",
+      "heart"
+     ],
+     "answer": "triangle",
+     "accept": [],
+     "hint": "Look at the shape of many roofs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ygvg1n1dnfuof",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which material is natural?",
+     "options": [
+      "wood",
+      "plastic",
+      "glass",
+      "nylon"
+     ],
+     "answer": "wood",
+     "accept": [],
+     "hint": "It comes from a tree.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwg29mt1hq23gg",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "A boat is made of a material that floats. What happens to a stone dropped in water?",
+     "options": [
+      "it sinks",
+      "it floats",
+      "it melts",
+      "it flies"
+     ],
+     "answer": "it sinks",
+     "accept": [],
+     "hint": "Stones are heavy for their size.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x5fehg1sl2lcg",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which of these will float in water?",
+     "options": [
+      "a cork",
+      "a coin",
+      "a key",
+      "a marble"
+     ],
+     "answer": "a cork",
+     "accept": [],
+     "hint": "It is very light for its size.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nq4sh9181xr5e",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which transport travels on rails?",
+     "options": [
+      "a train",
+      "a bus",
+      "a bicycle",
+      "a ship"
+     ],
+     "answer": "a train",
+     "accept": [],
+     "hint": "Think of a station with tracks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riw91idw10vbs",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which transport travels on water?",
+     "options": [
+      "a ferry",
+      "a lorry",
+      "a helicopter",
+      "a scooter"
+     ],
+     "answer": "a ferry",
+     "accept": [],
+     "hint": "It carries people across rivers and seas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro2pcy6eum2xo",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which transport flies in the air?",
+     "options": [
+      "an aeroplane",
+      "a tram",
+      "a canoe",
+      "a car"
+     ],
+     "answer": "an aeroplane",
+     "accept": [],
+     "hint": "It takes off from an airport.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rshflxa1042vdo",
+     "subject": "ipc",
+     "type": "short",
+     "q": "On a map, what do we call the small pictures or symbols that are explained in a box called a ___? (one word)",
+     "options": [],
+     "answer": "key",
+     "accept": [
+      "legend"
+     ],
+     "hint": "It helps you unlock what the symbols mean.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r53igmt13fa3da",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "On a compass, which direction is opposite to north?",
+     "options": [
+      "south",
+      "east",
+      "west",
+      "up"
+     ],
+     "answer": "south",
+     "accept": [],
+     "hint": "Think of the bottom of a map.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17dqwhy1e40ln1",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "A map of your classroom drawn from above is called a ___.",
+     "options": [
+      "bird's-eye view",
+      "side view",
+      "close-up",
+      "selfie"
+     ],
+     "answer": "bird's-eye view",
+     "accept": [],
+     "hint": "Imagine looking down like a flying bird.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17pvc4y13puhl4",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Choose one material and explain why it would be good for making a raincoat.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what a raincoat must do.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12jn6fz12t69rm",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Describe the best way to travel from your home to school and say why.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about distance, speed and safety.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Review: place value, addition, subtraction and money",
+   "questions": [
+    {
+     "id": "r1sjpi5wqxb2wz",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the value of the digit 4 in 47?",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "The 4 is in the tens place.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fm0839kmp91n",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which number has 6 tens and 3 ones?",
+     "options": [
+      "63",
+      "36",
+      "603",
+      "9"
+     ],
+     "answer": "63",
+     "accept": [],
+     "hint": "Tens come first, then ones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4xqzb75zl89m",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which sign makes this true? 58 ___ 85",
+     "options": [
+      "<",
+      ">",
+      "="
+     ],
+     "answer": "<",
+     "accept": [],
+     "hint": "Compare the tens first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtht715rl1sxk",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which list is in order from smallest to largest?",
+     "options": [
+      "19, 45, 54, 91",
+      "45, 19, 91, 54",
+      "91, 54, 45, 19",
+      "54, 45, 19, 91"
+     ],
+     "answer": "19, 45, 54, 91",
+     "accept": [],
+     "hint": "Look at the tens digits.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgbt8lhmfpcdm",
+     "subject": "math",
+     "type": "num",
+     "q": "What is 10 more than 67?",
+     "options": [],
+     "answer": "77",
+     "accept": [],
+     "hint": "Only the tens digit changes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdxmxzzloig5p",
+     "subject": "math",
+     "type": "num",
+     "q": "34 + 5 = ?",
+     "options": [],
+     "answer": "39",
+     "accept": [],
+     "hint": "Add the ones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13st50p1ek0eic",
+     "subject": "math",
+     "type": "num",
+     "q": "40 + 30 = ?",
+     "options": [],
+     "answer": "70",
+     "accept": [],
+     "hint": "4 tens and 3 tens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru3ch10iqzw6u",
+     "subject": "math",
+     "type": "num",
+     "q": "56 − 4 = ?",
+     "options": [],
+     "answer": "52",
+     "accept": [],
+     "hint": "Take away from the ones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xcazg516pcg06",
+     "subject": "math",
+     "type": "num",
+     "q": "25 + 13 = ?",
+     "options": [],
+     "answer": "38",
+     "accept": [],
+     "hint": "Add the tens, then the ones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10yfb0o1cdhswj",
+     "subject": "math",
+     "type": "num",
+     "q": "78 − 25 = ?",
+     "options": [],
+     "answer": "53",
+     "accept": [],
+     "hint": "Subtract the tens, then the ones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q55nz310bworp",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the missing number: 9 + ___ = 20",
+     "options": [],
+     "answer": "11",
+     "accept": [],
+     "hint": "Count on from 9 to 20.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5p7r3j9zlhdp",
+     "subject": "math",
+     "type": "num",
+     "q": "Mia has 47 stickers. She gives away 20. How many stickers does she have left?",
+     "options": [],
+     "answer": "27",
+     "accept": [],
+     "hint": "Take away 2 tens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ajgka5ceslz1",
+     "subject": "math",
+     "type": "num",
+     "q": "A pencil costs 35p and a rubber costs 20p. How much do they cost altogether, in pence?",
+     "options": [],
+     "answer": "55",
+     "accept": [],
+     "hint": "Add the two prices.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzhd95c1judo1m",
+     "subject": "math",
+     "type": "num",
+     "q": "Tom pays with a £1 coin (100p) for a drink that costs 60p. How much change does he get, in pence?",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "Count on from 60 to 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrhulh21alz3zy",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which coins make 50p?",
+     "options": [
+      "20p + 20p + 10p",
+      "20p + 10p + 10p",
+      "10p + 10p + 5p",
+      "50p + 10p"
+     ],
+     "answer": "20p + 20p + 10p",
+     "accept": [],
+     "hint": "Add each set of coins.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2834hq1jsu4h1",
+     "subject": "math",
+     "type": "num",
+     "q": "Leo has 3 coins: 20p, 10p and 5p. How much money does he have, in pence?",
+     "options": [],
+     "answer": "35",
+     "accept": [],
+     "hint": "Start with the biggest coin.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Revisão do 1º período: frases, pontuação e gêneros do dia a dia",
+   "questions": [
+    {
+     "id": "rsrd07dbbqnbt",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual nome deve ser escrito com letra maiúscula?",
+     "options": [
+      "Carolina",
+      "cadeira",
+      "caneta",
+      "cavalo"
+     ],
+     "answer": "Carolina",
+     "accept": [],
+     "hint": "Nome de pessoa começa com maiúscula.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x5xi10afbeki",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Que sinal fica no fim de uma pergunta?",
+     "options": [
+      "?",
+      "!",
+      "."
+     ],
+     "answer": "?",
+     "accept": [],
+     "hint": "Pense em: Você quer brincar",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pqqnvh1enxvx",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Que sinal combina com esta frase de susto: Que medo___",
+     "options": [
+      "!",
+      "?",
+      ","
+     ],
+     "answer": "!",
+     "accept": [],
+     "hint": "É uma frase de emoção.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vdov4j1j9qy6l",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase termina com o sinal correto?",
+     "options": [
+      "Hoje está chovendo.",
+      "Hoje está chovendo?",
+      "Hoje está chovendo,"
+     ],
+     "answer": "Hoje está chovendo.",
+     "accept": [],
+     "hint": "A frase conta uma informação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rkrfyvrd6n2u",
+     "subject": "pt",
+     "type": "short",
+     "q": "Escreva com letra maiúscula, do jeito certo, o nome da cidade: são paulo",
+     "options": [],
+     "answer": "São Paulo",
+     "accept": [
+      "Sao Paulo"
+     ],
+     "hint": "Nome de cidade começa com maiúscula em cada palavra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i44mm6bjw3qf",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual sinal separa os itens desta frase? Comprei pão___ leite e queijo.",
+     "options": [
+      ",",
+      ".",
+      "?"
+     ],
+     "answer": ",",
+     "accept": [],
+     "hint": "É o sinal que dá uma pausa curta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjr6dvtielj28",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é o texto curto que usamos para deixar um recado para alguém?",
+     "options": [
+      "bilhete",
+      "receita",
+      "poema"
+     ],
+     "answer": "bilhete",
+     "accept": [],
+     "hint": "Pode ficar preso na geladeira.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkjni1x17chdxp",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual texto usamos para chamar alguém para uma festa?",
+     "options": [
+      "convite",
+      "lista",
+      "notícia"
+     ],
+     "answer": "convite",
+     "accept": [],
+     "hint": "Ele chama as pessoas para vir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1eneuynn9wjbv",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que NÃO pode faltar num convite de aniversário?",
+     "options": [
+      "dia, hora e lugar da festa",
+      "o preço do bolo",
+      "a altura do aniversariante"
+     ],
+     "answer": "dia, hora e lugar da festa",
+     "accept": [],
+     "hint": "Os convidados precisam saber quando e onde ir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x4xjzh4ngyj8",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Como as palavras aparecem numa lista de compras?",
+     "options": [
+      "uma embaixo da outra",
+      "todas numa frase longa",
+      "em forma de pergunta"
+     ],
+     "answer": "uma embaixo da outra",
+     "accept": [],
+     "hint": "Pense em como fica fácil de ler no mercado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3xb6kr10jqdzp",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em um bilhete, onde costuma aparecer o nome de quem escreveu?",
+     "options": [
+      "no fim",
+      "no meio",
+      "no título"
+     ],
+     "answer": "no fim",
+     "accept": [],
+     "hint": "É como uma assinatura.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh29ws81d4gb98",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Leia o bilhete: \"Pedro, fui à padaria. Volto logo. Beijos, mamãe.\" Quem escreveu o bilhete?",
+     "options": [
+      "a mamãe",
+      "o Pedro",
+      "o padeiro"
+     ],
+     "answer": "a mamãe",
+     "accept": [],
+     "hint": "Veja quem assina no fim.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5ycez4is6nuc",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Leia o bilhete: \"Pedro, fui à padaria. Volto logo. Beijos, mamãe.\" Para onde a mamãe foi?",
+     "options": [
+      "à padaria",
+      "à escola",
+      "ao parque"
+     ],
+     "answer": "à padaria",
+     "accept": [],
+     "hint": "Procure o lugar no bilhete.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfkxhrxpo8kg6",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva um bilhete curto para um amigo, avisando que você vai levar um jogo para o recreio.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Não esqueça para quem é e quem escreve.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xn4vnrvfj5i4",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva uma lista com 4 coisas que você levaria para um piquenique.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Coloque uma palavra embaixo da outra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r56tw27r7ppqf",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra da frase deve começar com letra maiúscula? \"ontem choveu muito.\"",
+     "options": [
+      "ontem",
+      "choveu",
+      "muito"
+     ],
+     "answer": "ontem",
+     "accept": [],
+     "hint": "Toda frase começa com maiúscula.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Revisão do 1º período: estratégias de leitura",
+   "questions": [
+    {
+     "id": "r1cgyjerabr0t2",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Antes de ler um livro, olhamos a capa e o título para ___.",
+     "options": [
+      "imaginar sobre o que é a história",
+      "saber quantas páginas tem",
+      "descobrir o preço"
+     ],
+     "answer": "imaginar sobre o que é a história",
+     "accept": [],
+     "hint": "Isso se chama antecipar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfb8uuc2ytony",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Um livro se chama \"O Cachorro que Queria Voar\". Sobre o que deve ser a história?",
+     "options": [
+      "um cachorro que sonha em voar",
+      "um peixe no mar",
+      "uma festa de aniversário"
+     ],
+     "answer": "um cachorro que sonha em voar",
+     "accept": [],
+     "hint": "Use as palavras do título.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmkqzl31r9dufu",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quando procuramos uma informação que está escrita no texto, estamos ___.",
+     "options": [
+      "localizando",
+      "desenhando",
+      "inventando"
+     ],
+     "answer": "localizando",
+     "accept": [],
+     "hint": "A resposta está lá, é só achar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjszfmhhczhaz",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quando descobrimos algo que o texto não diz com todas as letras, estamos ___.",
+     "options": [
+      "inferindo",
+      "copiando",
+      "soletrando"
+     ],
+     "answer": "inferindo",
+     "accept": [],
+     "hint": "Usamos pistas do texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e793mtfxqomq",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Caio pegou o guarda-chuva antes de sair.\" O que podemos inferir?",
+     "options": [
+      "que estava chovendo ou ia chover",
+      "que era noite",
+      "que Caio estava com fome"
+     ],
+     "answer": "que estava chovendo ou ia chover",
+     "accept": [],
+     "hint": "Para que serve um guarda-chuva?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzgqrspnu2qx",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Lara bocejou e esfregou os olhos.\" Como Lara estava?",
+     "options": [
+      "com sono",
+      "com raiva",
+      "com fome"
+     ],
+     "answer": "com sono",
+     "accept": [],
+     "hint": "O que fazemos quando estamos cansados?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2feceo1j7bv5s",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O sorvete derreteu rapidinho na mão de Davi.\" Como estava o dia?",
+     "options": [
+      "quente",
+      "frio",
+      "chuvoso"
+     ],
+     "answer": "quente",
+     "accept": [],
+     "hint": "O que faz o sorvete derreter?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ecbtuchs8e9z",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Leia: \"A gata Mimi dormia na cesta azul.\" Qual é o nome da gata?",
+     "options": [],
+     "answer": "Mimi",
+     "accept": [
+      "a Mimi"
+     ],
+     "hint": "Procure o nome no texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6073u51aovzfl",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"A gata Mimi dormia na cesta azul.\" Onde a gata dormia?",
+     "options": [
+      "na cesta azul",
+      "na cama",
+      "no telhado"
+     ],
+     "answer": "na cesta azul",
+     "accept": [],
+     "hint": "Localize o lugar no texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtdymfe9g507x",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o conto: \"Júlia plantou uma semente no vaso. Todo dia ela regava. Depois de muitos dias, nasceu uma flor amarela.\" O que Júlia plantou?",
+     "options": [
+      "uma semente",
+      "uma árvore",
+      "uma flor de plástico"
+     ],
+     "answer": "uma semente",
+     "accept": [],
+     "hint": "Releia a primeira frase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wexgg01if5tht",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No mesmo conto, o que Júlia fazia todo dia?",
+     "options": [
+      "regava o vaso",
+      "pintava o vaso",
+      "mudava o vaso de lugar"
+     ],
+     "answer": "regava o vaso",
+     "accept": [],
+     "hint": "Procure \"todo dia\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1opvuf88rf0zb",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "No mesmo conto, de que cor era a flor que nasceu?",
+     "options": [],
+     "answer": "amarela",
+     "accept": [],
+     "hint": "Releia a última frase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1imphm21lqfgj2",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No mesmo conto, o que a história nos ensina?",
+     "options": [
+      "que cuidar faz as coisas crescerem",
+      "que plantas não precisam de água",
+      "que flores nascem num dia só"
+     ],
+     "answer": "que cuidar faz as coisas crescerem",
+     "accept": [],
+     "hint": "Pense no que Júlia fez todo dia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpgszhr109w0t2",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o conto: \"Gui achou um cachorrinho molhado na chuva. Levou para casa, secou com a toalha e deu leite.\" Como Gui é?",
+     "options": [
+      "carinhoso",
+      "bravo",
+      "preguiçoso"
+     ],
+     "answer": "carinhoso",
+     "accept": [],
+     "hint": "Veja o que ele fez pelo cachorrinho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r48y18g157qgm3",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "No conto do Gui, o que você acha que vai acontecer depois com o cachorrinho? Por quê?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use as pistas do texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9zkxf91olalgb",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Conte uma estratégia que ajuda você a entender melhor uma história.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em antecipar, localizar ou inferir.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
