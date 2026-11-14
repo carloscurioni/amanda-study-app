@@ -2301,5 +2301,871 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "Lia e a Caixa de Pistas",
+   "premise": "A menina Lia, o irmãozinho Téo e o cachorro Feijão resolvem pequenos mistérios do dia a dia usando pistas, mapas e bilhetes, sempre com a vizinha Dona Olga por perto.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O bilhete na janela",
+     "synopsis": "Lia encontra um bilhete misterioso na janela e segue as pistas até descobrir um presente da vizinha.",
+     "text": "Lia acordou cedo num sábado de sol. Na janela do quarto havia um papel dobrado, preso com um prendedor de roupa.\nEla abriu o papel e leu: \"Siga as folhas amarelas.\"\n— Que mistério! — disse Lia, chamando o irmãozinho Téo e o cachorro Feijão.\nNo quintal, havia folhas amarelas no chão, uma atrás da outra, formando um caminho. Os três seguiram as folhas pelo jardim, passaram pela goiabeira e chegaram até o portãozinho da casa ao lado.\nAli estava uma cesta coberta com um pano xadrez. Téo levantou o pano devagar. Dentro havia laranjas bem redondas e um cartão: \"Para os meus vizinhos detetives. Com carinho, Dona Olga.\"\nDona Olga apareceu na varanda, sorrindo.\n— Vocês leram as pistas direitinho! — disse ela.\nNaquela tarde, a mãe fez suco de laranja para todos, e Lia guardou o bilhete numa caixa. Na tampa, escreveu: \"Caixa de Pistas\".",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde estava o bilhete que Lia encontrou?",
+       "options": [
+        "Na janela do quarto",
+        "Debaixo da cama",
+        "Na porta da cozinha"
+       ],
+       "answer": "Na janela do quarto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que dizia o bilhete? Siga as folhas…",
+       "options": [],
+       "answer": "amarelas",
+       "accept": [
+        "folhas amarelas"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem é Feijão?",
+       "options": [
+        "O cachorro",
+        "O irmão de Lia",
+        "O gato da vizinha"
+       ],
+       "answer": "O cachorro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por qual árvore eles passaram?",
+       "options": [
+        "Goiabeira",
+        "Mangueira",
+        "Bananeira"
+       ],
+       "answer": "Goiabeira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que havia dentro da cesta?",
+       "options": [
+        "Laranjas",
+        "Bananas",
+        "Biscoitos"
+       ],
+       "answer": "Laranjas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem deixou o bilhete e a cesta?",
+       "options": [
+        "Dona Olga",
+        "A mãe de Lia",
+        "O Téo"
+       ],
+       "answer": "Dona Olga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Dona Olga chamou as crianças de \"detetives\"?",
+       "options": [
+        "Porque elas seguiram as pistas",
+        "Porque elas usavam lupas",
+        "Porque elas eram policiais"
+       ],
+       "answer": "Porque elas seguiram as pistas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia guardou o bilhete numa caixa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Pegadas na cozinha",
+     "synopsis": "Depois da chuva, aparecem pegadas de lama na cozinha, e as crianças usam as pistas para descobrir quem entrou.",
+     "text": "Choveu a manhã inteira. Quando a chuva parou, a mãe entrou na cozinha e levou um susto.\n— Quem sujou o chão? — perguntou ela.\nHavia pegadas de lama perto da porta do quintal. Lia pegou a Caixa de Pistas e olhou bem de perto.\n— As pegadas são pequenas e redondas — disse ela. — E têm quatro dedinhos.\n— Não são do meu sapato — disse Téo, mostrando os pés limpos.\nAs pegadas iam da porta até o corredor e depois subiam no tapete da sala. Lia seguiu o caminho sem fazer barulho.\nNo sofá, enroladinho, estava Feijão, dormindo. As patas dele estavam marrons de lama, e uma folha molhada estava grudada no rabo.\n— Achei o culpado! — riu Lia.\nFeijão abriu um olho e balançou o rabo. A mãe também riu. Depois, todos ajudaram a limpar o chão, e Feijão ganhou um banho morno.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como estava o tempo de manhã?",
+       "options": [
+        "Chovendo",
+        "Fazendo muito sol",
+        "Nevando"
+       ],
+       "answer": "Chovendo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde estavam as pegadas de lama primeiro?",
+       "options": [
+        "Perto da porta do quintal",
+        "No quarto de Lia",
+        "No banheiro"
+       ],
+       "answer": "Perto da porta do quintal",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como eram as pegadas?",
+       "options": [
+        "Pequenas e redondas, com quatro dedinhos",
+        "Grandes, de sapato",
+        "Compridas, de bota"
+       ],
+       "answer": "Pequenas e redondas, com quatro dedinhos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Téo mostrou que não foi ele?",
+       "options": [
+        "Mostrou os pés limpos",
+        "Chorou muito",
+        "Foi dormir"
+       ],
+       "answer": "Mostrou os pés limpos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Feijão estava dormindo?",
+       "options": [
+        "No sofá",
+        "Na cama da mãe",
+        "Na casinha"
+       ],
+       "answer": "No sofá",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que pista mostra que Feijão esteve lá fora?",
+       "options": [
+        "As patas sujas de lama",
+        "O pote de ração vazio",
+        "A coleira nova"
+       ],
+       "answer": "As patas sujas de lama",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu com Feijão no final?",
+       "options": [
+        "Ganhou um banho morno",
+        "Ficou de castigo no quintal",
+        "Foi passear na chuva"
+       ],
+       "answer": "Ganhou um banho morno",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia olhou as pegadas bem de perto antes de procurar o culpado?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A receita sem nome",
+     "synopsis": "Dona Olga perde o nome de uma receita, e Lia descobre qual bolo é lendo a lista de ingredientes.",
+     "text": "Dona Olga bateu na porta segurando um papel velho.\n— Esta é a receita do bolo da minha avó, mas a parte de cima rasgou. Não sei mais o nome do bolo!\nLia leu a lista em voz alta: \"Três cenouras médias, três ovos, óleo, açúcar, farinha de trigo e fermento. Cobertura: chocolate.\"\n— Cenoura! — gritou Téo. — É bolo de cenoura!\n— E tem cobertura de chocolate — completou Lia. — Esse bolo fica laranja por dentro e marrom por cima.\nDona Olga bateu palmas. Era isso mesmo! Ela lembrou que a avó fazia esse bolo nos dias de festa.\nNa cozinha, a mãe ajudou a ralar as cenouras. Lia mediu a farinha e Téo quebrou os ovos com cuidado. Feijão ficou sentado, olhando cada movimento.\nQuando o bolo saiu do forno, a casa toda ficou cheirosa. Dona Olga escreveu um nome novo no alto do papel: \"Bolo de Cenoura dos Detetives\".",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que estava faltando no papel de Dona Olga?",
+       "options": [
+        "O nome do bolo",
+        "Os ingredientes",
+        "O modo de fazer o suco"
+       ],
+       "answer": "O nome do bolo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de quem era a receita?",
+       "options": [
+        "Da avó de Dona Olga",
+        "Da mãe de Lia",
+        "De uma padaria"
+       ],
+       "answer": "Da avó de Dona Olga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas cenouras a receita pedia? Escreva o número.",
+       "options": [],
+       "answer": "três",
+       "accept": [
+        "3",
+        "tres"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era a cobertura do bolo?",
+       "options": [
+        "Chocolate",
+        "Morango",
+        "Coco"
+       ],
+       "answer": "Chocolate",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual ingrediente ajudou Téo a descobrir o nome do bolo?",
+       "options": [
+        "Cenoura",
+        "Ovo",
+        "Farinha"
+       ],
+       "answer": "Cenoura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Téo fez para ajudar?",
+       "options": [
+        "Quebrou os ovos",
+        "Ralou as cenouras",
+        "Lavou a louça"
+       ],
+       "answer": "Quebrou os ovos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Dona Olga ficou feliz?",
+       "options": [
+        "Porque descobriu de novo o nome do bolo da avó",
+        "Porque ganhou um bolo pronto",
+        "Porque achou dinheiro"
+       ],
+       "answer": "Porque descobriu de novo o nome do bolo da avó",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Dona Olga deu ao bolo o nome \"Bolo de Cenoura dos Detetives\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O barulho no sótão",
+     "synopsis": "Téo ouve um barulho estranho no sótão e imagina um monstro, mas as pistas mostram que era outra coisa.",
+     "text": "De noite, Téo correu para o quarto de Lia.\n— Tem um barulho lá em cima! Tic, tac, tic, tac. Acho que é um monstro!\nLia escutou. O som era sempre igual, bem certinho, sem parar.\n— Monstros não fazem barulho tão arrumadinho — disse ela. — Vamos olhar com o papai.\nO pai pegou uma lanterna e os três subiram a escadinha do sótão. Feijão ficou lá embaixo, latindo baixinho.\nNo sótão havia caixas, um baú e uma cadeira de balanço. Num canto, coberto por um lençol, estava um objeto alto. Lia puxou o lençol devagar.\nEra um relógio antigo de madeira, com um pêndulo dourado balançando de um lado para o outro.\n— Tic, tac! — riu o pai. — Era do vovô. Eu dei corda nele hoje à tarde para ver se ainda funcionava.\nTéo suspirou aliviado. No dia seguinte, eles levaram o relógio para a sala, e Téo passou a gostar do tic-tac.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que barulho Téo ouviu?",
+       "options": [
+        "Tic, tac",
+        "Toc, toc",
+        "Au, au"
+       ],
+       "answer": "Tic, tac",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Téo achou que era o barulho?",
+       "options": [
+        "Um monstro",
+        "Um passarinho",
+        "A chuva"
+       ],
+       "answer": "Um monstro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como era o som que Lia escutou?",
+       "options": [
+        "Sempre igual, sem parar",
+        "Alto e depois silencioso",
+        "Parecido com um grito"
+       ],
+       "answer": "Sempre igual, sem parar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o pai levou para subir ao sótão?",
+       "options": [
+        "Uma lanterna",
+        "Uma vassoura",
+        "Um guarda-chuva"
+       ],
+       "answer": "Uma lanterna",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que estava escondido debaixo do lençol? Um relógio…",
+       "options": [],
+       "answer": "antigo",
+       "accept": [
+        "relógio antigo",
+        "de madeira",
+        "relógio de madeira"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de quem era o relógio?",
+       "options": [
+        "Do vovô",
+        "De Dona Olga",
+        "Da escola"
+       ],
+       "answer": "Do vovô",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o relógio começou a fazer barulho naquele dia?",
+       "options": [
+        "O pai tinha dado corda nele à tarde",
+        "Feijão tinha mexido nele",
+        "Ele caiu da caixa"
+       ],
+       "answer": "O pai tinha dado corda nele à tarde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia disse que monstros não fazem barulho tão arrumadinho?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O carrinho desaparecido",
+     "synopsis": "O carrinho azul de Téo some, e as crianças seguem migalhas e marcas até encontrar o esconderijo.",
+     "text": "— Meu carrinho azul sumiu! — choramingou Téo depois do lanche.\nLia abriu a Caixa de Pistas e pegou a lupa de brinquedo.\n— Onde você brincou com ele por último?\n— Na mesa da cozinha, enquanto comia biscoito.\nNa cozinha, Lia viu migalhas de biscoito no chão. Elas iam da mesa até a lavanderia, como um caminho.\nNa lavanderia ficava a caminha de Feijão. Ao lado da caminha, havia uma meia, uma bolinha de tênis e um osso de borracha.\n— O Feijão gosta de esconder coisas aqui — lembrou Lia.\nEla levantou a almofada da caminha. Lá estava o carrinho azul, um pouquinho babado, junto com um pedaço de biscoito.\n— O Feijão queria o biscoito e levou o carrinho junto! — explicou Lia.\nTéo abraçou o carrinho. Depois, os dois fizeram uma caixa só para os brinquedos de Feijão, para ele não precisar pegar os brinquedos dos outros.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor era o carrinho de Téo?",
+       "options": [
+        "Azul",
+        "Vermelho",
+        "Verde"
+       ],
+       "answer": "Azul",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Téo estava comendo quando brincou com o carrinho?",
+       "options": [
+        "Biscoito",
+        "Pipoca",
+        "Maçã"
+       ],
+       "answer": "Biscoito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que pista Lia encontrou no chão da cozinha?",
+       "options": [
+        "Migalhas de biscoito",
+        "Pegadas de lama",
+        "Gotas de suco"
+       ],
+       "answer": "Migalhas de biscoito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, até onde as migalhas levavam?",
+       "options": [
+        "Até a lavanderia",
+        "Até o jardim",
+        "Até o quarto"
+       ],
+       "answer": "Até a lavanderia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde estava o carrinho?",
+       "options": [
+        "Debaixo da almofada da caminha de Feijão",
+        "Dentro da geladeira",
+        "Atrás do sofá"
+       ],
+       "answer": "Debaixo da almofada da caminha de Feijão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Feijão levou o carrinho?",
+       "options": [
+        "Ele queria o biscoito e levou o carrinho junto",
+        "Ele queria brincar de corrida",
+        "Téo pediu para ele guardar"
+       ],
+       "answer": "Ele queria o biscoito e levou o carrinho junto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que as crianças fizeram no final?",
+       "options": [
+        "Uma caixa para os brinquedos de Feijão",
+        "Uma bronca em Feijão",
+        "Um carrinho novo"
+       ],
+       "answer": "Uma caixa para os brinquedos de Feijão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que uma caixa só para os brinquedos de Feijão pode resolver o problema?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O mapa do parque",
+     "synopsis": "No parque, Lia e Téo usam um mapa com números para encontrar o lugar combinado com Dona Olga.",
+     "text": "No domingo, Dona Olga convidou as crianças para um piquenique no parque.\n— Encontro vocês no lugar número 5 do mapa — disse ela, e foi na frente.\nNa entrada do parque havia uma placa com um mapa. Cada lugar tinha um número: 1 era o lago dos patos, 2 era o parquinho, 3 era a fonte, 4 era a ponte de madeira e 5 era a árvore grande com a toalha xadrez.\n— Precisamos chegar no número 5 — leu Lia, apontando com o dedo.\nO caminho passava primeiro pelo lago. Téo jogou um pouco de grama para os patos, mas a mãe explicou que é melhor não alimentar os patos com pão. Depois passaram pela ponte de madeira, que fazia \"plec, plec\" a cada passo.\nLá adiante, embaixo de uma árvore enorme, estava a toalha xadrez. Dona Olga acenava, ao lado de uma cesta.\n— Chegamos! — gritou Téo.\nDentro da cesta havia sanduíches, frutas e, claro, um pedaço do Bolo de Cenoura dos Detetives.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem convidou as crianças para o piquenique?",
+       "options": [
+        "Dona Olga",
+        "O pai",
+        "Uma professora"
+       ],
+       "answer": "Dona Olga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde estava o mapa?",
+       "options": [
+        "Numa placa na entrada do parque",
+        "No celular da mãe",
+        "Dentro da cesta"
+       ],
+       "answer": "Numa placa na entrada do parque",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o lugar número 1 do mapa?",
+       "options": [
+        "O lago dos patos",
+        "O parquinho",
+        "A fonte"
+       ],
+       "answer": "O lago dos patos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o lugar número 4 do mapa?",
+       "options": [
+        "A ponte de madeira",
+        "A fonte",
+        "O parquinho"
+       ],
+       "answer": "A ponte de madeira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que barulho a ponte fazia?",
+       "options": [
+        "Plec, plec",
+        "Tic, tac",
+        "Splash"
+       ],
+       "answer": "Plec, plec",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Lia soube para onde ir?",
+       "options": [
+        "Leu os números no mapa",
+        "Seguiu os patos",
+        "Perguntou a um guarda"
+       ],
+       "answer": "Leu os números no mapa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual bolo estava na cesta? Bolo de…",
+       "options": [],
+       "answer": "cenoura",
+       "accept": [
+        "Cenoura dos Detetives",
+        "bolo de cenoura"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que é importante saber ler um mapa quando vamos a um lugar grande?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A festa surpresa",
+     "synopsis": "Lia junta as pistas da semana e descobre que todos estavam preparando uma festa surpresa — e ela também ajuda.",
+     "text": "Naquela semana, coisas estranhas aconteceram. A mãe escondeu um pacote atrás das costas. O pai falava baixinho ao telefone. Téo dava risadinhas sem motivo.\nLia abriu a Caixa de Pistas e anotou tudo. Depois, viu o calendário da cozinha. No sábado, alguém tinha desenhado um balão e escrito \"D.O. 70\".\n— D.O.… Dona Olga! — pensou Lia. — E 70 deve ser a idade dela!\nEla correu até a mãe.\n— É uma festa surpresa para a Dona Olga, não é?\nA mãe riu e colocou o dedo na boca: — Psiu! Você é uma ótima detetive. Quer ajudar?\nNo sábado, a família enfeitou a varanda com bandeirinhas. Lia escreveu o último bilhete do mistério: \"Siga as folhas amarelas.\" e prendeu na janela de Dona Olga.\nDona Olga seguiu as folhas e encontrou todos gritando: \"Surpresa!\" Ela ficou tão emocionada que guardou o bilhete no bolso.\n— Agora eu também tenho uma Caixa de Pistas — disse ela, sorrindo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a mãe escondia atrás das costas?",
+       "options": [
+        "Um pacote",
+        "Um bolo",
+        "Uma lanterna"
+       ],
+       "answer": "Um pacote",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Lia viu o desenho de um balão?",
+       "options": [
+        "No calendário da cozinha",
+        "No mapa do parque",
+        "Na porta da geladeira"
+       ],
+       "answer": "No calendário da cozinha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que estava escrito no calendário?",
+       "options": [],
+       "answer": "D.O. 70",
+       "accept": [
+        "DO 70",
+        "D. O. 70"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia achou que era o número 70?",
+       "options": [
+        "A idade de Dona Olga",
+        "O número da casa",
+        "O preço do presente"
+       ],
+       "answer": "A idade de Dona Olga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com o que a família enfeitou a varanda?",
+       "options": [
+        "Bandeirinhas",
+        "Flores de papel",
+        "Luzes de Natal"
+       ],
+       "answer": "Bandeirinhas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia escreveu no último bilhete?",
+       "options": [
+        "Siga as folhas amarelas",
+        "Feliz aniversário",
+        "Venha para a sala"
+       ],
+       "answer": "Siga as folhas amarelas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o pai falava baixinho ao telefone?",
+       "options": [
+        "Para Lia e Dona Olga não descobrirem a festa",
+        "Porque estava doente",
+        "Porque o bebê dormia"
+       ],
+       "answer": "Para Lia e Dona Olga não descobrirem a festa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia escolheu o mesmo bilhete do primeiro capítulo para a Dona Olga?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }

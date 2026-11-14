@@ -757,6 +757,996 @@
      "errors": []
     }
    ]
+  },
+  "en_spell": {
+   "topic": "Review: prefixes, -ly, -ture, -sure and homophones",
+   "questions": [
+    {
+     "id": "r2az9oe1aeoh6f",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word is spelt correctly?",
+     "options": [
+      "disagree",
+      "dissagree",
+      "disagre",
+      "disegree"
+     ],
+     "answer": "disagree",
+     "accept": [],
+     "hint": "Add the prefix to the root word without changing it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrwibkd1q8dtik",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Add the prefix mis- to the word 'spell' and write the new word.",
+     "options": [],
+     "answer": "misspell",
+     "accept": [],
+     "hint": "Keep every letter of the prefix and every letter of the root word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx1nhs2op14gk",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: inter_ _tional",
+     "options": [],
+     "answer": "international",
+     "accept": [],
+     "hint": "Think of the word 'nation' inside it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ufjbsdqi0gfa",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Add the suffix -ly to 'happy' and write the new word.",
+     "options": [],
+     "answer": "happily",
+     "accept": [],
+     "hint": "When a word ends in a consonant + y, the y changes before you add -ly.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwki94b1556g6u",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Add the suffix -ly to 'angry' and write the new word.",
+     "options": [],
+     "answer": "angrily",
+     "accept": [],
+     "hint": "Use the same rule as happy → happ…",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13dcxv714i3fjq",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word has the same ending spelling as 'adventure'?",
+     "options": [
+      "picture",
+      "measure",
+      "pleasure",
+      "closure"
+     ],
+     "answer": "picture",
+     "accept": [],
+     "hint": "Look for the word ending in -ture, not -sure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfaycc5pi0ftu",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: Be careful not to ___ the glass.",
+     "options": [
+      "break",
+      "brake"
+     ],
+     "answer": "break",
+     "accept": [],
+     "hint": "One of these is the part of a bike or car that makes it stop.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8d3vb61c2zrbs",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Choose the correct word: My little brother is ___ years old.",
+     "options": [
+      "eight",
+      "ate"
+     ],
+     "answer": "eight",
+     "accept": [],
+     "hint": "One of these is a number; the other is the past of 'eat'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tdu8p13d3v0j",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: begi_ _ing",
+     "options": [],
+     "answer": "beginning",
+     "accept": [],
+     "hint": "The last letter of 'begin' is doubled before -ing.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r54o2iflg6djb",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "What does the prefix 'inter-' mean in 'international'?",
+     "options": [
+      "between",
+      "again",
+      "not",
+      "before"
+     ],
+     "answer": "between",
+     "accept": [],
+     "hint": "Think about something that happens across many countries.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10xdlzu1qvig2f",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which prefix makes the opposite of 'appear'?",
+     "options": [
+      "dis",
+      "mis",
+      "re",
+      "inter"
+     ],
+     "answer": "dis",
+     "accept": [],
+     "hint": "It is the same prefix as in the opposite of 'agree'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mlepe31clouuo",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words.",
+     "options": [],
+     "answer": "tresure → treasure; begining → beginning; dissagree → disagree; happyly → happily; mistery → mystery",
+     "accept": [],
+     "hint": "",
+     "text": "Last summer we went on an adventure to a small island. We found an old map and began to look for tresure. At the begining we were lost, but we did not dissagree. We walked happyly along the beach and solved the mistery before eight o'clock.",
+     "errors": [
+      {
+       "wrong": "tresure",
+       "right": "treasure"
+      },
+      {
+       "wrong": "begining",
+       "right": "beginning"
+      },
+      {
+       "wrong": "dissagree",
+       "right": "disagree"
+      },
+      {
+       "wrong": "happyly",
+       "right": "happily"
+      },
+      {
+       "wrong": "mistery",
+       "right": "mystery"
+      }
+     ]
+    },
+    {
+     "id": "r9je5034rb6su",
+     "subject": "en_spell",
+     "type": "open",
+     "q": "Write one sentence that uses both 'break' and 'brake' correctly.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think of a bike and something that could get broken.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ou1277nn94y3",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which is the correct spelling of the word for hidden gold and jewels?",
+     "options": [
+      "treasure",
+      "treashure",
+      "tresure",
+      "treazure"
+     ],
+     "answer": "treasure",
+     "accept": [],
+     "hint": "It ends with -sure, like 'measure'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2koc6kpi5umd",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which is the correct spelling of the word for a puzzle that nobody can explain?",
+     "options": [
+      "mystery",
+      "mistery",
+      "mystry",
+      "mysterie"
+     ],
+     "answer": "mystery",
+     "accept": [],
+     "hint": "The first vowel sound is spelt with the letter y.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb2t8aofq14m8",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words in this diary entry.",
+     "options": [],
+     "answer": "internashional → international; brake → break; mispell → misspell; ate → eight; adventcher → adventure",
+     "accept": [],
+     "hint": "Some mistakes are homophones: real words used in the wrong place.",
+     "text": "My cousin came to stay with us for a week. She said our city felt internashional because people speak so many languages. We had a short brake from school, so we played a detective game. I tried not to mispell anything in my diary, and I wrote ate pages about our adventcher.",
+     "errors": [
+      {
+       "wrong": "internashional",
+       "right": "international"
+      },
+      {
+       "wrong": "brake",
+       "right": "break"
+      },
+      {
+       "wrong": "mispell",
+       "right": "misspell"
+      },
+      {
+       "wrong": "ate",
+       "right": "eight"
+      },
+      {
+       "wrong": "adventcher",
+       "right": "adventure"
+      }
+     ]
+    }
+   ]
+  },
+  "ipc": {
+   "topic": "Review: Footprints from the Past and Active Planet",
+   "questions": [
+    {
+     "id": "r1r6r7hhvm6w40",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What is a fossil?",
+     "options": [
+      "The remains or trace of a living thing from long ago, preserved in rock",
+      "A type of volcano",
+      "A shiny crystal found in caves",
+      "A layer inside the Earth"
+     ],
+     "answer": "The remains or trace of a living thing from long ago, preserved in rock",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a8vw9t8eu7zx",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which type of rock most often contains fossils?",
+     "options": [
+      "sedimentary",
+      "igneous",
+      "metamorphic"
+     ],
+     "answer": "sedimentary",
+     "accept": [],
+     "hint": "This rock forms from layers of mud and sand pressed together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx1j3mp101b527",
+     "subject": "ipc",
+     "type": "short",
+     "q": "What do we call a scientist who studies fossils?",
+     "options": [],
+     "answer": "palaeontologist",
+     "accept": [
+      "paleontologist",
+      "a palaeontologist",
+      "a paleontologist"
+     ],
+     "hint": "The word begins with 'palaeo-', meaning very old.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e5zsaeizygq3",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "How does igneous rock form?",
+     "options": [
+      "Molten rock cools and hardens",
+      "Layers of sand are pressed together",
+      "Shells pile up on the sea bed"
+     ],
+     "answer": "Molten rock cools and hardens",
+     "accept": [],
+     "hint": "Think about very hot, melted rock.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uiee721qu04za",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which part of an animal is most likely to become a fossil?",
+     "options": [
+      "bone",
+      "skin",
+      "muscle"
+     ],
+     "answer": "bone",
+     "accept": [],
+     "hint": "Hard parts last longer than soft parts.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru1s6fsgf5rdc",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "When did dinosaurs live?",
+     "options": [
+      "Millions of years ago",
+      "Hundreds of years ago",
+      "A few thousand years ago"
+     ],
+     "answer": "Millions of years ago",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oc95h6120ifqd",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Did people and dinosaurs live at the same time?",
+     "options": [
+      "No, the dinosaurs died out long before people existed",
+      "Yes, they lived together",
+      "Yes, but only in hot countries"
+     ],
+     "answer": "No, the dinosaurs died out long before people existed",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru06nca1rcr1m9",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "How do we know what dinosaurs looked like?",
+     "options": [
+      "By studying their fossils",
+      "From old photographs",
+      "From videos made long ago"
+     ],
+     "answer": "By studying their fossils",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11pgmol1o23zbw",
+     "subject": "ipc",
+     "type": "short",
+     "q": "What is the outer, rocky layer of the Earth called?",
+     "options": [],
+     "answer": "crust",
+     "accept": [
+      "the crust"
+     ],
+     "hint": "It is also the name for the outside of a loaf of bread.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtdt1kg18ufcdy",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which layer is at the very centre of the Earth?",
+     "options": [
+      "inner core",
+      "mantle",
+      "crust",
+      "outer core"
+     ],
+     "answer": "inner core",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmmoae5hp1z1v",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which layer lies between the crust and the core?",
+     "options": [
+      "mantle",
+      "inner core",
+      "atmosphere"
+     ],
+     "answer": "mantle",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd0bw0tjbgvvh",
+     "subject": "ipc",
+     "type": "short",
+     "q": "What do we call molten rock when it comes out of a volcano?",
+     "options": [],
+     "answer": "lava",
+     "accept": [],
+     "hint": "It is a short word with four letters.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpe66xdfjjthg",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What do we call molten rock while it is still underground?",
+     "options": [
+      "magma",
+      "lava",
+      "ash"
+     ],
+     "answer": "magma",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8o6n4d6zuf6a",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What are the giant moving pieces of the Earth's crust called?",
+     "options": [
+      "tectonic plates",
+      "fossils",
+      "craters"
+     ],
+     "answer": "tectonic plates",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r134jzjz6luejx",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which instrument do scientists use to measure earthquakes?",
+     "options": [
+      "seismometer",
+      "thermometer",
+      "telescope",
+      "barometer"
+     ],
+     "answer": "seismometer",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r41hc571i49cf6",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Why do you think people who live near a volcano should listen to warnings from scientists?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what can come out of a volcano when it erupts.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Review: place value and the four operations",
+   "questions": [
+    {
+     "id": "r1ve8qlv7u79py",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the value of the digit 7 in the number 472?",
+     "options": [],
+     "answer": "70",
+     "accept": [],
+     "hint": "Is the 7 in the ones, tens or hundreds column?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxj9b8yrthzs0",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which number is 400 + 30 + 6?",
+     "options": [
+      "436",
+      "463",
+      "346",
+      "4036"
+     ],
+     "answer": "436",
+     "accept": [],
+     "hint": "Put the hundreds, tens and ones in order.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1936w1bx0voos",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which symbol makes this true? 452 ___ 425",
+     "options": [
+      ">",
+      "<",
+      "="
+     ],
+     "answer": ">",
+     "accept": [],
+     "hint": "Compare the hundreds first, then the tens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b2o6wr2y0a7",
+     "subject": "math",
+     "type": "num",
+     "q": "Use the column method: 345 + 232 = ?",
+     "options": [],
+     "answer": "577",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rflx8ynv25l45",
+     "subject": "math",
+     "type": "num",
+     "q": "Use the column method: 468 + 257 = ?",
+     "options": [],
+     "answer": "725",
+     "accept": [],
+     "hint": "Remember to carry when a column adds up to 10 or more.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7iei52skixr8",
+     "subject": "math",
+     "type": "num",
+     "q": "Use the column method: 754 − 321 = ?",
+     "options": [],
+     "answer": "433",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mbgp2y1qu2mm6",
+     "subject": "math",
+     "type": "num",
+     "q": "Use the column method: 623 − 248 = ?",
+     "options": [],
+     "answer": "375",
+     "accept": [],
+     "hint": "You will need to exchange from the tens and the hundreds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15xir8u1cdgj93",
+     "subject": "math",
+     "type": "num",
+     "q": "What is 100 more than 586?",
+     "options": [],
+     "answer": "686",
+     "accept": [],
+     "hint": "Only the hundreds digit changes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nil4fe1wmp3qk",
+     "subject": "math",
+     "type": "num",
+     "q": "8 × 6 = ?",
+     "options": [],
+     "answer": "48",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8t8lkt1oh8tld",
+     "subject": "math",
+     "type": "num",
+     "q": "3 × 9 = ?",
+     "options": [],
+     "answer": "27",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd6to1p19d3cv",
+     "subject": "math",
+     "type": "num",
+     "q": "4 × 7 = ?",
+     "options": [],
+     "answer": "28",
+     "accept": [],
+     "hint": "Double 7, then double again.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzkizl6geqli2",
+     "subject": "math",
+     "type": "num",
+     "q": "56 ÷ 8 = ?",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Which number times 8 makes 56?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re5gt9lzwu5s3",
+     "subject": "math",
+     "type": "num",
+     "q": "32 ÷ 4 = ?",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1anh97myeur1o",
+     "subject": "math",
+     "type": "num",
+     "q": "Pencils come in packs of 8. Ruby buys 5 packs. How many pencils does she have?",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reepdrbehmg3l",
+     "subject": "math",
+     "type": "num",
+     "q": "A school has 356 boys and 278 girls. How many children are there altogether?",
+     "options": [],
+     "answer": "634",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bakscmsra1hk",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain how you know that 4 × 8 gives the same answer as 8 × 4.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about arranging dots in rows and columns.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Revisão: sílabas, pontuação, substantivos e gêneros do dia a dia",
+   "questions": [
+    {
+     "id": "rhs3f90ihz9n4",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Quantas sílabas tem a palavra \"borboleta\"?",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "answer": "4",
+     "accept": [],
+     "hint": "Bata palmas a cada pedacinho da palavra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t4yjab1xnni81",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a separação correta de \"cachorro\"?",
+     "options": [
+      "ca-chor-ro",
+      "cach-or-ro",
+      "ca-cho-rro"
+     ],
+     "answer": "ca-chor-ro",
+     "accept": [],
+     "hint": "Na separação, as letras RR ficam em sílabas diferentes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtxfmmea281qi",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas palavras tem só uma sílaba?",
+     "options": [
+      "pão",
+      "bola",
+      "janela",
+      "sapato"
+     ],
+     "answer": "pão",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8r3fz11yusyo6",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual é a última sílaba da palavra \"tomate\"?",
+     "options": [],
+     "answer": "te",
+     "accept": [],
+     "hint": "Fale a palavra devagar e preste atenção no final.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11ctpzm1phg46i",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Que sinal usamos no final de uma pergunta?",
+     "options": [
+      "ponto de interrogação",
+      "ponto final",
+      "vírgula",
+      "ponto de exclamação"
+     ],
+     "answer": "ponto de interrogação",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r39my68ax9vn",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase está pontuada corretamente?",
+     "options": [
+      "Qual é o seu nome?",
+      "Qual é o seu nome.",
+      "Qual é o seu nome,"
+     ],
+     "answer": "Qual é o seu nome?",
+     "accept": [],
+     "hint": "A frase está perguntando alguma coisa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r26xy5h1uota1n",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual sinal mostra surpresa ou alegria, como em \"Que legal\"?",
+     "options": [
+      "ponto de exclamação",
+      "ponto de interrogação",
+      "vírgula"
+     ],
+     "answer": "ponto de exclamação",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nf1v41h2d6ig",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas palavras é um substantivo?",
+     "options": [
+      "mesa",
+      "correr",
+      "bonito",
+      "depressa"
+     ],
+     "answer": "mesa",
+     "accept": [],
+     "hint": "Substantivo é o nome de pessoas, animais, lugares ou objetos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tdbf2ezddlqr",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas palavras é um substantivo próprio?",
+     "options": [
+      "Brasil",
+      "cidade",
+      "país",
+      "rio"
+     ],
+     "answer": "Brasil",
+     "accept": [],
+     "hint": "Substantivo próprio começa com letra maiúscula.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhqp7k01ua3v6m",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual é o plural de \"flor\"?",
+     "options": [],
+     "answer": "flores",
+     "accept": [],
+     "hint": "Palavras terminadas em R ganham mais de uma letra no plural.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r133zpnj19yzf5a",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é o feminino de \"menino\"?",
+     "options": [
+      "menina",
+      "meninos",
+      "menininho"
+     ],
+     "answer": "menina",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a450yt155w0ji",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Como se chama um texto curto para dar um recado a alguém?",
+     "options": [
+      "bilhete",
+      "receita",
+      "poema",
+      "notícia"
+     ],
+     "answer": "bilhete",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kmjz7khr5a7o",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que NÃO pode faltar num convite de aniversário?",
+     "options": [
+      "Data, horário e local da festa",
+      "A lista de ingredientes",
+      "O modo de preparo"
+     ],
+     "answer": "Data, horário e local da festa",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10idkche9zeer",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Numa receita, como se chama a parte que explica o passo a passo?",
+     "options": [
+      "modo de preparo",
+      "ingredientes",
+      "título"
+     ],
+     "answer": "modo de preparo",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bcqhgj1bclkte",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Numa receita, onde aparecem as quantidades, como \"2 xícaras de farinha\"?",
+     "options": [
+      "Nos ingredientes",
+      "No título",
+      "No modo de preparo"
+     ],
+     "answer": "Nos ingredientes",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uzkkyr175twda",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva um bilhete curto convidando um amigo para brincar no parque. Lembre de colocar para quem é e quem escreveu.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Comece com o nome do amigo e termine com o seu nome.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
