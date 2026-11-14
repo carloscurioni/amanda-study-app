@@ -3227,6 +3227,864 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Story Train",
+   "premise": "Mr Oak turns the classroom chairs into a pretend Story Train. To ride, each child retells a favourite story from the term or says a rhyme by heart, until the families come for the last stop.",
+   "chapters": [
+    {
+     "title": "Chapter 1: All aboard!",
+     "synopsis": "Mr Oak turns the chairs into a pretend Story Train. Mia pays for her ticket by retelling a favourite story about a hen and her red hat.",
+     "text": "On Monday, Mr Oak put the chairs in a long line.\n\"This is the Story Train,\" he said. \"To get a ticket, you must tell a story we read this term.\"\nMia put up her hand first. She sat in the front chair and held a paper ticket.\n\"My story is about Hetty the hen,\" she said.\n\"At the start, Hetty lost her red hat. In the middle, she looked in the barn, under the cart and by the pond. She asked the duck and the goat, but they did not know. At the end, she saw her hat on top of the scarecrow! The wind had blown it there.\"\nEveryone clapped.\n\"Well done, Mia,\" said Mr Oak. \"You told the start, the middle and the end.\"\nHe blew a little whistle. \"Toot toot! The Story Train will come back tomorrow.\"\nMia smiled. She was already thinking about the next story.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Mr Oak make with the chairs?",
+       "options": [
+        "a pretend train",
+        "a tall tower",
+        "a little boat"
+       ],
+       "answer": "a pretend train",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who told the first story?",
+       "options": [
+        "Mia",
+        "Mr Oak",
+        "the goat"
+       ],
+       "answer": "Mia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Hetty the hen lose?",
+       "options": [
+        "her red hat",
+        "her blue bag",
+        "her egg"
+       ],
+       "answer": "her red hat",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who did Hetty ask for help?",
+       "options": [
+        "the duck and the goat",
+        "the cat and the dog",
+        "the cow and the pig"
+       ],
+       "answer": "the duck and the goat",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, where was the hat at the end?",
+       "options": [],
+       "answer": "on the scarecrow",
+       "accept": [
+        "the scarecrow",
+        "scarecrow",
+        "on top of the scarecrow"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the hat get there?",
+       "options": [
+        "The wind blew it.",
+        "The duck took it.",
+        "Mia put it there."
+       ],
+       "answer": "The wind blew it.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Mr Oak say \"Well done\" to Mia?",
+       "options": [
+        "She told the start, the middle and the end.",
+        "She sat very still.",
+        "She blew the whistle."
+       ],
+       "answer": "She told the start, the middle and the end.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mia put up her hand first?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The rhyme carriage",
+     "synopsis": "Sam is nervous, but he says a rhyme he learnt by heart. Mr Oak shows the class how to hear the rhyming words.",
+     "text": "On Tuesday, the Story Train had a new carriage. It had a sign that said RHYMES.\n\"In this carriage, you say a rhyme you know by heart,\" said Mr Oak.\nSam's tummy felt wobbly. He liked rhymes, but he was a bit shy.\nMia gave him a thumbs up. Sam took a big breath and began:\n\"Little frog, little frog,\nSitting on a muddy log,\nJump up high and jump down low,\nSplash! Into the pond you go!\"\nThe class cheered. Sam's cheeks went pink, but he was happy.\n\"Listen,\" said Mr Oak. \"Frog and log sound the same at the end. High and low do not rhyme, but low and go do!\"\nThe children said the rhyme together and jumped like frogs.\n\"Toot toot!\" said Mr Oak. Sam felt brave and proud.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the sign on the new carriage say?",
+       "options": [
+        "RHYMES",
+        "STORIES",
+        "SONGS"
+       ],
+       "answer": "RHYMES",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Sam feel at the start?",
+       "options": [
+        "shy and wobbly",
+        "angry",
+        "sleepy"
+       ],
+       "answer": "shy and wobbly",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Mia help Sam?",
+       "options": [
+        "She gave him a thumbs up.",
+        "She said the rhyme for him.",
+        "She held his hand."
+       ],
+       "answer": "She gave him a thumbs up.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what animal is the rhyme about?",
+       "options": [],
+       "answer": "a frog",
+       "accept": [
+        "frog",
+        "the frog"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which word rhymes with frog?",
+       "options": [
+        "log",
+        "pond",
+        "high"
+       ],
+       "answer": "log",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which word rhymes with low?",
+       "options": [
+        "go",
+        "jump",
+        "muddy"
+       ],
+       "answer": "go",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Sam's cheeks go pink?",
+       "options": [
+        "He was shy but pleased.",
+        "He was cold.",
+        "He was ill."
+       ],
+       "answer": "He was shy but pleased.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Sam felt brave at the end?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The tiny boat",
+     "synopsis": "On a rainy day, Leo retells the story of a tiny boat that wanted to see the sea. The class guesses what happens next.",
+     "text": "On Wednesday, it rained and rained. The children could hear the rain on the windows.\n\"Rain makes me think of a story,\" said Leo. \"Can I get on the train?\"\nMr Oak gave him a ticket. Leo sat down.\n\"This is the story of Bob, the tiny paper boat,\" said Leo. \"At the start, Bob lived in a puddle. He wanted to see the big sea.\"\n\"Then what?\" asked Mia.\n\"In the middle, the rain came. The puddle became a stream. Bob sailed down the stream and into a river. A fish said hello and a bird flew over him.\"\nLeo stopped. \"Can you guess the end?\"\n\"He got to the sea!\" shouted Sam.\n\"Yes! At the end, Bob saw the big blue sea, and he was very happy.\"\nMr Oak smiled. \"Rain is good for paper boats and for stories. Toot toot!\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the weather like?",
+       "options": [
+        "rainy",
+        "sunny",
+        "snowy"
+       ],
+       "answer": "rainy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the name of the paper boat?",
+       "options": [],
+       "answer": "Bob",
+       "accept": [
+        "Bob the boat"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did the boat live at the start?",
+       "options": [
+        "in a puddle",
+        "in the sea",
+        "in a bath"
+       ],
+       "answer": "in a puddle",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the boat want?",
+       "options": [
+        "to see the big sea",
+        "to fly in the sky",
+        "to sleep"
+       ],
+       "answer": "to see the big sea",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the puddle become?",
+       "options": [
+        "a stream",
+        "a pond",
+        "a lake"
+       ],
+       "answer": "a stream",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who said hello to the boat?",
+       "options": [
+        "a fish",
+        "a frog",
+        "a duck"
+       ],
+       "answer": "a fish",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the boat feel at the end?",
+       "options": [
+        "very happy",
+        "scared",
+        "cross"
+       ],
+       "answer": "very happy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the rain made Leo think of this story?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The missing middle",
+     "synopsis": "Ava forgets the middle of her story. Picture cards with First, Next, Then and Last help her tell it all.",
+     "text": "On Thursday, it was Ava's turn. Her story was about a bear called Bramble who made a cake.\n\"At the start, Bramble wanted to make a cake for his friend,\" said Ava. \"And at the end... everyone ate the cake.\"\nAva frowned. \"Oh no. I forgot the middle!\"\nMr Oak held up four cards. They said First, Next, Then and Last.\n\"Let's use the cards,\" he said kindly.\nAva pointed to First. \"First, Bramble got the eggs and the flour.\"\nShe pointed to Next. \"Next, he mixed it all in a big bowl.\"\nShe pointed to Then. \"Then he put the cake in the oven, but he fell asleep and the cake got a bit burnt!\"\nEveryone giggled.\n\"Last, his friend said, 'I like it crunchy!' and they ate it together.\"\n\"That was the whole story,\" said Mr Oak. \"Toot toot!\"\nAva hugged the cards.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Ava's story about?",
+       "options": [
+        "a bear who made a cake",
+        "a cat who lost a ball",
+        "a boat on the sea"
+       ],
+       "answer": "a bear who made a cake",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the bear called?",
+       "options": [],
+       "answer": "Bramble",
+       "accept": [
+        "Bramble the bear"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what part of the story did Ava forget?",
+       "options": [
+        "the middle",
+        "the start",
+        "the title"
+       ],
+       "answer": "the middle",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many cards did Mr Oak hold up?",
+       "options": [],
+       "answer": "four",
+       "accept": [
+        "4"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which word was on the first card?",
+       "options": [
+        "First",
+        "Last",
+        "Then"
+       ],
+       "answer": "First",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the cake get burnt?",
+       "options": [
+        "Bramble fell asleep.",
+        "The oven broke.",
+        "Ava dropped it."
+       ],
+       "answer": "Bramble fell asleep.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the cards help Ava?",
+       "options": [
+        "They showed her the order of the story.",
+        "They told her a new story.",
+        "They were a present."
+       ],
+       "answer": "They showed her the order of the story.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Ava hugged the cards at the end?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Clap the moon",
+     "synopsis": "The class learns a new rhyme about the moon and claps the beat. Mia and Sam say it together in the rhyme carriage.",
+     "text": "On Friday, Mr Oak said, \"Today, the rhyme carriage is for two people.\"\nMia and Sam sat side by side. They had practised a moon rhyme at playtime.\n\"Clap with us!\" said Mia.\n\"Moon, moon, big and bright,\nShining on my bed at night.\nStars come out to play and peep,\nNow it's time to go to sleep.\"\nThe class clapped on every beat. Clap, clap, clap, clap.\nMia's voice was soft and Sam's voice was loud, but together they sounded just right.\n\"Which words rhyme?\" asked Mr Oak.\n\"Bright and night!\" said Leo.\n\"Peep and sleep!\" said Ava.\n\"Super listening,\" said Mr Oak.\nThen the whole class said the rhyme, very quietly, like a lullaby. Some children closed their eyes.\n\"Shh... toot toot,\" whispered Mr Oak, and everyone laughed softly.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many people were in the rhyme carriage?",
+       "options": [
+        "two",
+        "one",
+        "five"
+       ],
+       "answer": "two",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who said the rhyme together?",
+       "options": [
+        "Mia and Sam",
+        "Leo and Ava",
+        "Mr Oak and Leo"
+       ],
+       "answer": "Mia and Sam",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, when did Mia and Sam practise?",
+       "options": [
+        "at playtime",
+        "at home",
+        "at lunch"
+       ],
+       "answer": "at playtime",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the rhyme about?",
+       "options": [],
+       "answer": "the moon",
+       "accept": [
+        "moon",
+        "the moon and stars"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which word rhymes with bright?",
+       "options": [
+        "night",
+        "moon",
+        "stars"
+       ],
+       "answer": "night",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which word rhymes with peep?",
+       "options": [
+        "sleep",
+        "play",
+        "bed"
+       ],
+       "answer": "sleep",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Mr Oak whisper at the end?",
+       "options": [
+        "The rhyme was like a lullaby.",
+        "He had a sore throat.",
+        "The class was asleep."
+       ],
+       "answer": "The rhyme was like a lullaby.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the class clapped while saying the rhyme?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Practice time",
+     "synopsis": "The families are coming to see the Story Train. The children practise and help each other get ready.",
+     "text": "On Monday, Mr Oak had big news.\n\"On Friday, your families will come to ride the Story Train!\"\nThe children cheered. Then Sam went quiet.\n\"What if I forget my rhyme?\" he asked.\n\"Let's practise,\" said Mia. \"We can practise every day.\"\nAt playtime, Sam said his frog rhyme to Mia. At lunch, he said it to Leo. At home, he said it to his cat, Pickle. Pickle just yawned.\nAva practised her bear story with the First, Next, Then and Last cards. Leo drew a picture of Bob the boat to hold up.\nMr Oak made paper tickets for the families. Mia painted a big sign: STORY TRAIN.\nBy Thursday, Sam could say his rhyme with his eyes closed.\n\"I'm ready,\" he said.\n\"We are all ready,\" said Mr Oak. \"Toot toot!\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who will come on Friday?",
+       "options": [
+        "the families",
+        "a new teacher",
+        "a train driver"
+       ],
+       "answer": "the families",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Sam worried about?",
+       "options": [
+        "forgetting his rhyme",
+        "losing his ticket",
+        "the rain"
+       ],
+       "answer": "forgetting his rhyme",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of Sam's cat?",
+       "options": [],
+       "answer": "Pickle",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the cat do when Sam said his rhyme?",
+       "options": [
+        "It yawned.",
+        "It clapped.",
+        "It ran away."
+       ],
+       "answer": "It yawned.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Leo draw?",
+       "options": [
+        "Bob the boat",
+        "a frog",
+        "the moon"
+       ],
+       "answer": "Bob the boat",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Mia paint?",
+       "options": [
+        "a big sign",
+        "a train",
+        "a hat"
+       ],
+       "answer": "a big sign",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how do we know Sam learnt his rhyme well?",
+       "options": [
+        "He could say it with his eyes closed.",
+        "He sang it loudly.",
+        "He wrote it down."
+       ],
+       "answer": "He could say it with his eyes closed.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think practising every day helped Sam?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The last stop",
+     "synopsis": "The families ride the Story Train. Every child tells a story or says a rhyme, and the train rests until next term.",
+     "text": "On Friday, the families came in and sat at the back of the train.\nMia told the story of Hetty the hen and her red hat. Leo held up his picture and told the story of Bob the boat.\nAva used her cards. \"First... Next... Then... Last!\" Her dad clapped the loudest.\nThen it was Sam's turn. His tummy felt wobbly again, but only a little.\n\"Little frog, little frog...\" He said every word. At the end, everyone jumped like frogs, even the grown-ups!\nLast of all, the whole class said the moon rhyme softly.\nMr Oak blew his whistle one more time.\n\"This is the last stop for this term,\" he said. \"The Story Train will rest now. Next term, we will read new stories and find new rhymes.\"\n\"Toot toot!\" shouted all the children.\nSam smiled. He could not wait for the next ride.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did the families sit?",
+       "options": [
+        "at the back of the train",
+        "on the floor",
+        "outside"
+       ],
+       "answer": "at the back of the train",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who told the story of Hetty the hen?",
+       "options": [
+        "Mia",
+        "Leo",
+        "Sam"
+       ],
+       "answer": "Mia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Leo hold up?",
+       "options": [
+        "his picture",
+        "the cards",
+        "a hat"
+       ],
+       "answer": "his picture",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who clapped the loudest for Ava?",
+       "options": [
+        "her dad",
+        "Mr Oak",
+        "Sam"
+       ],
+       "answer": "her dad",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did everyone do at the end of Sam's rhyme?",
+       "options": [
+        "They jumped like frogs.",
+        "They went to sleep.",
+        "They sang a song."
+       ],
+       "answer": "They jumped like frogs.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which rhyme did the class say last?",
+       "options": [
+        "the moon rhyme",
+        "the frog rhyme",
+        "the hen rhyme"
+       ],
+       "answer": "the moon rhyme",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how was Sam different this time?",
+       "options": [
+        "He felt only a little wobbly.",
+        "He forgot his rhyme.",
+        "He did not come."
+       ],
+       "answer": "He felt only a little wobbly.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Which story or rhyme from the Story Train do you like best? Why?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
