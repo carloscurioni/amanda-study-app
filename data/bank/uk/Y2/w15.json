@@ -1,0 +1,1055 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y2",
+ "academic_week": 15,
+ "subjects": {
+  "bss": {
+   "topic": "Revisão do 1º período: eu, minha família e meu país",
+   "questions": [
+    {
+     "id": "r1m2c3ep1dvvm2l",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em uma linha do tempo, o que vem primeiro?",
+     "options": [
+      "O nascimento",
+      "O primeiro dia na escola",
+      "Aprender a andar de bicicleta"
+     ],
+     "answer": "O nascimento",
+     "accept": [],
+     "hint": "Pense no que acontece logo no começo da vida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r37qvnz11ee59b",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Uma linha do tempo serve para mostrar…",
+     "options": [
+      "a ordem em que as coisas aconteceram",
+      "o caminho até a escola",
+      "as cores do arco-íris"
+     ],
+     "answer": "a ordem em que as coisas aconteceram",
+     "accept": [],
+     "hint": "Pense em antes e depois.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mwzra0qk6yx6",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Lia aprendeu a andar com 1 ano e começou a ler com 6 anos. O que aconteceu antes?",
+     "options": [
+      "Aprender a andar",
+      "Começar a ler"
+     ],
+     "answer": "Aprender a andar",
+     "accept": [],
+     "hint": "Compare os números: qual é menor?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwwzin31qc1jbc",
+     "subject": "bss",
+     "type": "short",
+     "q": "Em uma árvore genealógica, a mãe do seu pai é sua…",
+     "options": [],
+     "answer": "avó",
+     "accept": [
+      "vó",
+      "vovó"
+     ],
+     "hint": "Ela também é mãe de alguém da sua família.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqtfnu259ve24",
+     "subject": "bss",
+     "type": "short",
+     "q": "O filho do seu tio é seu…",
+     "options": [],
+     "answer": "primo",
+     "accept": [],
+     "hint": "É alguém da sua idade, mais ou menos, de outra casa da família.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcaqxgh1odpfgq",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Na árvore genealógica, quem aparece na mesma linha que você?",
+     "options": [
+      "Seus irmãos",
+      "Seus avós",
+      "Seus pais"
+     ],
+     "answer": "Seus irmãos",
+     "accept": [],
+     "hint": "Quem é da mesma geração que você?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r69omzq1nnaed1",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destas fotos é a mais antiga?",
+     "options": [
+      "Foto do casamento dos avós",
+      "Foto do seu aniversário de 6 anos",
+      "Foto de ontem na escola"
+     ],
+     "answer": "Foto do casamento dos avós",
+     "accept": [],
+     "hint": "Quem nasceu primeiro na família?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3f76xi19w43qs",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes é um símbolo nacional do Brasil?",
+     "options": [
+      "A bandeira",
+      "O uniforme da escola",
+      "O mapa da cidade"
+     ],
+     "answer": "A bandeira",
+     "accept": [],
+     "hint": "É usado para representar o país inteiro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kb6xu61fnkepu",
+     "subject": "bss",
+     "type": "short",
+     "q": "Qual frase está escrita na bandeira do Brasil?",
+     "options": [],
+     "answer": "Ordem e Progresso",
+     "accept": [
+      "ordem e progresso"
+     ],
+     "hint": "São três palavras na faixa branca.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lmq136btfryn",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual cor NÃO aparece na bandeira do Brasil?",
+     "options": [
+      "Vermelho",
+      "Verde",
+      "Amarelo",
+      "Azul"
+     ],
+     "answer": "Vermelho",
+     "accept": [],
+     "hint": "Lembre da bandeira: o retângulo, o losango e o círculo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2xzzfi1bgbni2",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que aparece dentro do círculo azul da bandeira?",
+     "options": [
+      "Estrelas",
+      "Árvores",
+      "Flores"
+     ],
+     "answer": "Estrelas",
+     "accept": [],
+     "hint": "Lembre do céu à noite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpftfpv14dhcvi",
+     "subject": "bss",
+     "type": "mc",
+     "q": "A música que representa o Brasil se chama…",
+     "options": [
+      "Hino Nacional",
+      "Canção de Ninar",
+      "Parabéns a Você"
+     ],
+     "answer": "Hino Nacional",
+     "accept": [],
+     "hint": "Cantamos em eventos importantes, em pé.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbp6sqsnoqu0a",
+     "subject": "bss",
+     "type": "short",
+     "q": "Em que dia comemoramos a Independência do Brasil? (dia e mês)",
+     "options": [],
+     "answer": "7 de setembro",
+     "accept": [
+      "sete de setembro",
+      "07/09",
+      "7/9"
+     ],
+     "hint": "É no mês 9 do ano.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11gsq1q33abv9",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em que ano o Brasil ficou independente?",
+     "options": [
+      "1822",
+      "1500",
+      "2022"
+     ],
+     "answer": "1822",
+     "accept": [],
+     "hint": "Foi há pouco mais de 200 anos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3b6rcabd27st",
+     "subject": "bss",
+     "type": "mc",
+     "q": "A Independência quer dizer que o Brasil…",
+     "options": [
+      "deixou de ser governado por Portugal",
+      "mudou de nome",
+      "ganhou uma Copa"
+     ],
+     "answer": "deixou de ser governado por Portugal",
+     "accept": [],
+     "hint": "Antes, outro país mandava aqui.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdy1gd0ln7me5",
+     "subject": "bss",
+     "type": "open",
+     "q": "Conte uma coisa que você aprendeu sobre sua família neste período.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em uma foto, uma história ou alguém da árvore genealógica.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Review: sentence types, conjunctions and noun phrases",
+   "questions": [
+    {
+     "id": "rebatj81t22bmk",
+     "subject": "en",
+     "type": "mc",
+     "q": "What kind of sentence is this? 'Close the door.'",
+     "options": [
+      "command",
+      "question",
+      "statement",
+      "exclamation"
+     ],
+     "answer": "command",
+     "accept": [],
+     "hint": "Is someone being told to do something?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tps4gnt7zp46",
+     "subject": "en",
+     "type": "mc",
+     "q": "What kind of sentence is this? 'Where is my hat?'",
+     "options": [
+      "question",
+      "command",
+      "statement",
+      "exclamation"
+     ],
+     "answer": "question",
+     "accept": [],
+     "hint": "Look at the punctuation at the end.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwscu6c23uucn",
+     "subject": "en",
+     "type": "mc",
+     "q": "What kind of sentence is this? 'The cat is asleep.'",
+     "options": [
+      "statement",
+      "question",
+      "command",
+      "exclamation"
+     ],
+     "answer": "statement",
+     "accept": [],
+     "hint": "Does it simply tell you a fact?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fb8tlui303m1",
+     "subject": "en",
+     "type": "mc",
+     "q": "What kind of sentence is this? 'What a huge cake!'",
+     "options": [
+      "exclamation",
+      "question",
+      "statement",
+      "command"
+     ],
+     "answer": "exclamation",
+     "accept": [],
+     "hint": "It starts with 'What' but is not asking anything.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18f6ab17mi82f",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence is a question?",
+     "options": [
+      "Can you swim?",
+      "I can swim.",
+      "Swim to the side.",
+      "How fast you swim!"
+     ],
+     "answer": "Can you swim?",
+     "accept": [],
+     "hint": "Which one wants an answer?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd81r8i115ns1a",
+     "subject": "en",
+     "type": "short",
+     "q": "Which punctuation mark ends a question?",
+     "options": [],
+     "answer": "question mark",
+     "accept": [
+      "?",
+      "a question mark"
+     ],
+     "hint": "It has a curly top and a dot.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reut7a3orwd5h",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the best word: 'I like apples ___ I like pears.'",
+     "options": [
+      "and",
+      "because",
+      "when",
+      "if"
+     ],
+     "answer": "and",
+     "accept": [],
+     "hint": "You are joining two things you like.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i2x3r25xv7bv",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the best word: 'I wanted to play, ___ it was raining.'",
+     "options": [
+      "but",
+      "and",
+      "so",
+      "or"
+     ],
+     "answer": "but",
+     "accept": [],
+     "hint": "The second part stops the first from happening.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vt4dip8p0h4y",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the best word: 'Do you want milk ___ juice?'",
+     "options": [
+      "or",
+      "but",
+      "because",
+      "when"
+     ],
+     "answer": "or",
+     "accept": [],
+     "hint": "You are offering a choice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b6tluvgc3izd",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the best word: 'I wore my coat ___ it was cold.'",
+     "options": [
+      "because",
+      "or",
+      "but",
+      "if"
+     ],
+     "answer": "because",
+     "accept": [],
+     "hint": "The second part gives a reason.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rylirjt1comwrl",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the best word: 'You can go out ___ you finish your lunch.'",
+     "options": [
+      "if",
+      "or",
+      "but",
+      "and"
+     ],
+     "answer": "if",
+     "accept": [],
+     "hint": "It depends on something happening first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru70zc44b9ppk",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the best word: 'We sang a song ___ we waited for the bus.'",
+     "options": [
+      "while",
+      "or",
+      "but",
+      "if"
+     ],
+     "answer": "while",
+     "accept": [],
+     "hint": "Two things happen at the same time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rendwp813md29l",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is an expanded noun phrase?",
+     "options": [
+      "the small brown dog",
+      "the dog",
+      "dog",
+      "ran fast"
+     ],
+     "answer": "the small brown dog",
+     "accept": [],
+     "hint": "Look for describing words before the noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rbjpl8iliugf",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which adjective best fits? 'a ___ lion'",
+     "options": [
+      "fierce",
+      "quickly",
+      "jumped",
+      "under"
+     ],
+     "answer": "fierce",
+     "accept": [],
+     "hint": "You need a describing word for a noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6cm53o11szym3",
+     "subject": "en",
+     "type": "mc",
+     "q": "In 'the tall green tree', which word is the noun?",
+     "options": [
+      "tree",
+      "tall",
+      "green",
+      "the"
+     ],
+     "answer": "tree",
+     "accept": [],
+     "hint": "Which word names a thing?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11d7ghnzuh1rd",
+     "subject": "en",
+     "type": "open",
+     "q": "Write a statement about your favourite toy using two adjectives.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start with a capital letter and end with a full stop.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_read": {
+   "topic": "Review: classic stories, poems and non-fiction from Term 1",
+   "questions": [
+    {
+     "id": "r1b0cidqfm6n4c",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which word tells you what happened first?",
+     "options": [
+      "First",
+      "Finally",
+      "Then",
+      "Next"
+     ],
+     "answer": "First",
+     "accept": [],
+     "hint": "Look for the word that starts a story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rohih2387sju9",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which word is best for the end of a story?",
+     "options": [
+      "Finally",
+      "First",
+      "Next",
+      "Then"
+     ],
+     "answer": "Finally",
+     "accept": [],
+     "hint": "Which word tells you there is no more to come?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sedamjq1lbqo",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Put these in order: (A) Sam ate the cake. (B) Sam baked a cake. (C) Sam bought eggs. Which comes first?",
+     "options": [
+      "C",
+      "B",
+      "A"
+     ],
+     "answer": "C",
+     "accept": [],
+     "hint": "What do you need before you can bake?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbrxkq51f1gnz0",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Put these in order: (A) The egg hatched. (B) The hen laid an egg. (C) The chick grew. Which comes last?",
+     "options": [
+      "C",
+      "B",
+      "A"
+     ],
+     "answer": "C",
+     "accept": [],
+     "hint": "Think about how a chick grows up.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xa1vox34e1mb",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "When you retell a story, you should…",
+     "options": [
+      "tell what happened in the right order",
+      "read only the title",
+      "change the ending"
+     ],
+     "answer": "tell what happened in the right order",
+     "accept": [],
+     "hint": "Think about the beginning, middle and end.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rliurlb1ds2nzg",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What do we call the people or animals in a story?",
+     "options": [
+      "characters",
+      "pages",
+      "titles",
+      "settings"
+     ],
+     "answer": "characters",
+     "accept": [],
+     "hint": "They are the 'who' of the story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7qizal1b9qwjs",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is the setting of a story?",
+     "options": [
+      "where and when it happens",
+      "who wrote it",
+      "the last page",
+      "the title"
+     ],
+     "answer": "where and when it happens",
+     "accept": [],
+     "hint": "Think about the place in the story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6veaym1cbpr5z",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which pair of words rhymes?",
+     "options": [
+      "cat / hat",
+      "cat / cup",
+      "dog / dig",
+      "sun / sea"
+     ],
+     "answer": "cat / hat",
+     "accept": [],
+     "hint": "Listen to the ends of the words.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1re8enn1a3ad4o",
+     "subject": "en_read",
+     "type": "short",
+     "q": "Which word rhymes with 'moon'? spoon, map, leaf",
+     "options": [],
+     "answer": "spoon",
+     "accept": [],
+     "hint": "Say each word and listen to the ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dgbzmjb62dj1",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'Twinkle, little star, / shining near and shining far.' Which two words rhyme?",
+     "options": [
+      "star / far",
+      "little / near",
+      "shining / star",
+      "near / little"
+     ],
+     "answer": "star / far",
+     "accept": [],
+     "hint": "Look at the last word of each line.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx5axoj101aep5",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "A book that gives true facts is called…",
+     "options": [
+      "non-fiction",
+      "fiction",
+      "a poem",
+      "a fairy tale"
+     ],
+     "answer": "non-fiction",
+     "accept": [],
+     "hint": "It is the opposite of made-up stories.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjzrvoz1xcnmy",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Where would you look to find which page a topic is on?",
+     "options": [
+      "contents page",
+      "the cover",
+      "the last picture",
+      "the title"
+     ],
+     "answer": "contents page",
+     "accept": [],
+     "hint": "It is near the front of a non-fiction book.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf8tuzf1cxm70j",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "A glossary in a non-fiction book tells you…",
+     "options": [
+      "what tricky words mean",
+      "who the characters are",
+      "how the story ends"
+     ],
+     "answer": "what tricky words mean",
+     "accept": [],
+     "hint": "It is like a small dictionary.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g4172h21d743",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'Mia's lip wobbled and she looked at her broken kite.' How does Mia feel?",
+     "options": [
+      "sad",
+      "excited",
+      "sleepy",
+      "angry"
+     ],
+     "answer": "sad",
+     "accept": [],
+     "hint": "What does a wobbling lip often show?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a5m1j65l8sb5",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Read: 'Ben jumped up and down and cheered when he saw the snow.' How does Ben feel?",
+     "options": [
+      "happy",
+      "scared",
+      "bored",
+      "sad"
+     ],
+     "answer": "happy",
+     "accept": [],
+     "hint": "Think about why people cheer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r95kj8mlyvwoh",
+     "subject": "en_read",
+     "type": "open",
+     "q": "What is your favourite story from this term? Say why you like it.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about a character or a part that made you smile.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_spell": {
+   "topic": "Review: Term 1 spelling patterns",
+   "questions": [
+    {
+     "id": "rtuabpupfs5zu",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: bri_ _e (something that goes over a river)",
+     "options": [],
+     "answer": "bridge",
+     "accept": [],
+     "hint": "The sound at the end is spelled with three letters: one of them is silent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yzoqa37c9jwd",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word is spelled correctly?",
+     "options": [
+      "giant",
+      "jiant",
+      "gyant",
+      "giunt"
+     ],
+     "answer": "giant",
+     "accept": [],
+     "hint": "The letter g can make a 'j' sound before i.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgivkj0t2oikc",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letter and write the whole word: _nock (to tap on a door)",
+     "options": [],
+     "answer": "knock",
+     "accept": [],
+     "hint": "This word starts with a silent letter.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru5y2m71umiowc",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Write the plural of 'fly'.",
+     "options": [],
+     "answer": "flies",
+     "accept": [],
+     "hint": "Change the y to i first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r57pu5ii4djvk",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Add -er to 'happy' and write the new word.",
+     "options": [],
+     "answer": "happier",
+     "accept": [],
+     "hint": "Change the y to i before adding the ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7jzbvo8cwtp2",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word has a silent letter?",
+     "options": [
+      "knock",
+      "bottle",
+      "city",
+      "giant"
+     ],
+     "answer": "knock",
+     "accept": [],
+     "hint": "Say each word: which has a letter you cannot hear?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18qtkfrp3q1da",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "In which word does c make an 's' sound?",
+     "options": [
+      "city",
+      "cat",
+      "cup",
+      "cot"
+     ],
+     "answer": "city",
+     "accept": [],
+     "hint": "Look at the letter after the c.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrqu8xf16bzf47",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Write the plural of 'baby'.",
+     "options": [],
+     "answer": "babies",
+     "accept": [],
+     "hint": "It ends in y, just like 'fly'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzpqztcc0iaju",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: hed_ _ _ (a row of bushes)",
+     "options": [],
+     "answer": "hedge",
+     "accept": [],
+     "hint": "It ends like 'bridge'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hlgnnbl3vtyr",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words.",
+     "options": [],
+     "answer": "brige → bridge; sity → city; bottel → bottle; becos → because; flys → flies",
+     "accept": [],
+     "hint": "Check the words you learnt this term: endings, soft c and y to i.",
+     "text": "We walked across the old brige to the big sity. A tall man was selling lemonade in a glass bottel. My little brother said he was hungry becos he had skipped lunch. Two flys buzzed around his ice cream, but he still smiled and said it was the best day ever.",
+     "errors": [
+      {
+       "wrong": "brige",
+       "right": "bridge"
+      },
+      {
+       "wrong": "sity",
+       "right": "city"
+      },
+      {
+       "wrong": "bottel",
+       "right": "bottle"
+      },
+      {
+       "wrong": "becos",
+       "right": "because"
+      },
+      {
+       "wrong": "flys",
+       "right": "flies"
+      }
+     ]
+    },
+    {
+     "id": "r1pfb5b178ay27",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which spelling is correct for a busy place with lots of buildings and people?",
+     "options": [
+      "city",
+      "sity",
+      "citty",
+      "sitee"
+     ],
+     "answer": "city",
+     "accept": [],
+     "hint": "The letter c can make an 's' sound before i.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s9p8r5fjjzsj",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which spelling is correct for putting words on paper with a pencil?",
+     "options": [
+      "write",
+      "rite",
+      "wrighte",
+      "wriet"
+     ],
+     "answer": "write",
+     "accept": [],
+     "hint": "There is a silent letter at the start.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rklgswbyjut5o",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which spelling is correct for something you drink water from?",
+     "options": [
+      "bottle",
+      "bottel",
+      "botle",
+      "bottal"
+     ],
+     "answer": "bottle",
+     "accept": [],
+     "hint": "This ending is the most common one: -le.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5y0xtt1vmi3qa",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which spelling is correct for a long hole that trains go through?",
+     "options": [
+      "tunnel",
+      "tunnle",
+      "tunel",
+      "tunnal"
+     ],
+     "answer": "tunnel",
+     "accept": [],
+     "hint": "After n, this word uses -el.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri8ehm416txrnp",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which spelling is correct? 'I stayed in ___ I was ill.'",
+     "options": [
+      "because",
+      "becos",
+      "becuase",
+      "beecause"
+     ],
+     "answer": "because",
+     "accept": [],
+     "hint": "It ends with 'cause'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1imc4q114dpcgc",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word has the same silent letter at the start as 'knock'?",
+     "options": [
+      "knee",
+      "nest",
+      "note",
+      "neck"
+     ],
+     "answer": "knee",
+     "accept": [],
+     "hint": "Which word starts with k but you cannot hear it?",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
