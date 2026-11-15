@@ -3166,6 +3166,855 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Story Club",
+   "premise": "Nell starts a Story Club in the reading corner, where friends share stories, poems and true books and learn to retell them in order.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Story Club Begins",
+     "synopsis": "Nell starts a Story Club in the class reading corner, and her friend Omar retells a story about a greedy fox.",
+     "text": "On Monday, Nell put a sign on the reading corner. It said: STORY CLUB. ALL WELCOME.\nAt first, nobody came. Then Omar sat down on the big red cushion. \"What do we do?\" he asked.\n\"We tell our favourite stories,\" said Nell. \"But we must tell them in the right order. First, next, then, last.\"\nOmar thought hard. \"First, a fox saw some grapes high on a vine. Next, he jumped and jumped, but he could not reach them. Then he got very tired. Last, he walked away and said the grapes were probably sour anyway.\"\nNell clapped. \"That was perfect!\"\nTwo more children, Rosa and Kit, had been listening behind the bookshelf. They crept out.\n\"Can we join?\" asked Rosa.\n\"Of course,\" said Nell. \"Bring a story tomorrow.\"\nKit grinned. \"I will bring a poem instead. Is that allowed?\"\nNell smiled. \"Poems are allowed. Everything is allowed in Story Club.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Nell put her sign?",
+       "options": [
+        "On the reading corner",
+        "On the classroom door",
+        "On the playground gate"
+       ],
+       "answer": "On the reading corner",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who was the first child to sit down?",
+       "options": [
+        "Omar",
+        "Rosa",
+        "Kit"
+       ],
+       "answer": "Omar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour was the big cushion?",
+       "options": [
+        "Red",
+        "Blue",
+        "Green"
+       ],
+       "answer": "Red",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what fruit did the fox want?",
+       "options": [],
+       "answer": "grapes",
+       "accept": [
+        "the grapes"
+       ],
+       "hint": "Look at Omar's story.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the fox say about the grapes at the end?",
+       "options": [
+        "They were probably sour",
+        "They were too big",
+        "They were his favourite"
+       ],
+       "answer": "They were probably sour",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which four words did Nell say help us tell a story in order?",
+       "options": [
+        "First, next, then, last",
+        "Big, small, fast, slow",
+        "Who, what, where, why"
+       ],
+       "answer": "First, next, then, last",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Rosa and Kit come out from behind the bookshelf?",
+       "options": [
+        "They wanted to join the club",
+        "They had lost a book",
+        "They were playing hide and seek"
+       ],
+       "answer": "They wanted to join the club",
+       "accept": [],
+       "hint": "Think about what Rosa asked.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think nobody came to Story Club at first?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how it feels to try something new.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: Kit's Poem",
+     "synopsis": "Kit shares a poem about the rain, and the club learns how rhyming words make a poem fun to read aloud.",
+     "text": "On Tuesday, Kit stood on the red cushion with a crumpled piece of paper.\n\"This is my favourite poem,\" he said. \"I copied it out at home.\" He read it slowly:\n\"Pitter, patter, on the pane,\nHere comes the silver rain.\nSplish and splash in every lane,\nThen the sun comes out again.\"\n\"I love it!\" said Rosa. \"Pane, rain, lane and again all rhyme.\"\n\"And pitter, patter sounds just like real rain,\" added Omar.\nNell wrote the rhyming words on the club's little whiteboard. \"Poems are like songs without music,\" she said. \"You can hear the pattern.\"\nKit's ears went pink, but he was smiling. He was usually very shy in class.\n\"Can you read it again?\" asked Omar. \"With actions this time?\"\nSo Kit read it again. Everybody tapped their fingers on the floor for the rain and threw their arms up high for the sun.\nJust then, the bell rang. Nell looked at her friends. \"Tomorrow, let's find a true book,\" she said.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Kit's poem about?",
+       "options": [
+        "The rain",
+        "The sea",
+        "A cat"
+       ],
+       "answer": "The rain",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Kit stand to read?",
+       "options": [
+        "On the red cushion",
+        "On a chair",
+        "By the window"
+       ],
+       "answer": "On the red cushion",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which word rhymes with 'pane' and begins with 'r'?",
+       "options": [],
+       "answer": "rain",
+       "accept": [],
+       "hint": "Look at the second line of the poem.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Nell write on the whiteboard?",
+       "options": [
+        "The rhyming words",
+        "Kit's name",
+        "A list of books"
+       ],
+       "answer": "The rhyming words",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the children do with their fingers?",
+       "options": [
+        "Tapped them on the floor",
+        "Clicked them",
+        "Counted with them"
+       ],
+       "answer": "Tapped them on the floor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Nell say poems are like?",
+       "options": [
+        "Songs without music",
+        "Long stories",
+        "Lists of facts"
+       ],
+       "answer": "Songs without music",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Kit's ears go pink?",
+       "options": [
+        "He felt shy but happy",
+        "He was cold",
+        "He was angry"
+       ],
+       "answer": "He felt shy but happy",
+       "accept": [],
+       "hint": "Remember what kind of boy Kit usually is in class.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the children wanted to add actions to the poem?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what makes reading aloud more fun.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The True Book",
+     "synopsis": "Rosa brings a non-fiction book about frogs, and the club discovers how a true book is different from a story.",
+     "text": "On Wednesday, Rosa brought a big book with a green cover. It was called All About Frogs.\n\"This is a true book,\" she said. \"It is called non-fiction.\"\nShe showed the club the contents page at the front. \"You don't have to read it from the start. You can jump to the part you want.\"\nOmar wanted to know about tadpoles. Rosa turned to the right page. \"A frog lays lots of eggs called frogspawn. Tiny tadpoles hatch out. They grow back legs, then front legs. Last, the tail gets shorter and shorter, and the tadpole becomes a little frog.\"\n\"That is in order, just like a story!\" said Nell.\n\"Yes, but it really happens,\" said Rosa. \"And look, there are labels and a glossary.\"\nKit pointed at the glossary. \"What does amphibian mean?\"\nRosa read the answer. \"An animal that can live on land and in water.\"\nOmar's eyes were wide. \"I want to bring a true book too,\" he said.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Rosa's book about?",
+       "options": [
+        "Frogs",
+        "Birds",
+        "Space"
+       ],
+       "answer": "Frogs",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour was the book's cover?",
+       "options": [
+        "Green",
+        "Yellow",
+        "Purple"
+       ],
+       "answer": "Green",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the word for a true book?",
+       "options": [],
+       "answer": "non-fiction",
+       "accept": [
+        "nonfiction",
+        "non fiction"
+       ],
+       "hint": "Rosa says it near the start.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what are frog eggs called?",
+       "options": [],
+       "answer": "frogspawn",
+       "accept": [
+        "frog spawn"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which legs grow first on a tadpole?",
+       "options": [
+        "Back legs",
+        "Front legs",
+        "All four together"
+       ],
+       "answer": "Back legs",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what part of the book helps you jump to the page you want?",
+       "options": [
+        "The contents page",
+        "The glossary",
+        "The cover"
+       ],
+       "answer": "The contents page",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how is Rosa's book different from Omar's fox story?",
+       "options": [
+        "It tells about things that really happen",
+        "It has no pages",
+        "It is a poem"
+       ],
+       "answer": "It tells about things that really happen",
+       "accept": [],
+       "hint": "Think about what 'true book' means.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Omar now wants to bring a true book?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how he felt when he learned about tadpoles.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Missing Cushion",
+     "synopsis": "The red cushion disappears, and the club uses clues, like detectives in a story, to find it.",
+     "text": "On Thursday, the children ran to the reading corner. Then they stopped. The big red cushion was gone!\n\"Who took it?\" cried Omar.\n\"Let's be detectives,\" said Nell. \"Detectives look for clues.\"\nKit found the first clue: a red thread on the carpet near the door. Rosa found the second clue: a note on the art table. It said: Thank you for lending us the cushion. From Class 1.\n\"Class 1 borrowed it!\" said Omar. \"Mystery solved.\"\nThe club went next door. The younger children were sitting in a circle. Their teacher was reading them a story, and the smallest girl was sitting on the red cushion.\n\"She looks so happy,\" whispered Rosa.\nNell thought for a moment. \"We can share,\" she said. \"Today we can sit on the carpet.\"\nBack in their corner, the club sat in a circle on the carpet. It was not as soft, but it felt good.\nKit smiled. \"That was like a real mystery story. It had clues and an ending.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was missing from the reading corner?",
+       "options": [
+        "The red cushion",
+        "The whiteboard",
+        "The poem"
+       ],
+       "answer": "The red cushion",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who found the first clue?",
+       "options": [
+        "Kit",
+        "Rosa",
+        "Nell"
+       ],
+       "answer": "Kit",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what colour was the thread on the carpet?",
+       "options": [],
+       "answer": "red",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where was the note?",
+       "options": [
+        "On the art table",
+        "Under the door",
+        "Inside a book"
+       ],
+       "answer": "On the art table",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which class had borrowed the cushion?",
+       "options": [],
+       "answer": "Class 1",
+       "accept": [
+        "class one",
+        "1"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did the club sit at the end?",
+       "options": [
+        "On the carpet",
+        "On chairs",
+        "Outside"
+       ],
+       "answer": "On the carpet",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Nell decide to share the cushion?",
+       "options": [
+        "The little girl looked happy on it",
+        "The cushion was dirty",
+        "Class 1 would not give it back"
+       ],
+       "answer": "The little girl looked happy on it",
+       "accept": [],
+       "hint": "Think about what Rosa whispered.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think sitting on the carpet 'felt good' even though it was not soft?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what the club did for the younger children.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Omar's Big Fact",
+     "synopsis": "Omar brings a true book about the Moon, but mixes up the order of his facts and learns to fix it.",
+     "text": "On Friday, Omar carried a book about the Moon. He was very excited.\n\"The Moon goes around the Earth,\" he began. \"And astronauts walked on it. And it has no air. And it looks like it changes shape!\"\nThe others looked puzzled. \"Slow down,\" said Nell kindly. \"Your facts are good, but they are all jumbled up.\"\nOmar frowned. Then he looked at his book again. Each page had a heading at the top.\n\"I know,\" he said. \"I can use the headings to put my facts in order.\"\nHe tried again. \"First, what the Moon is. It is a big ball of rock that goes around the Earth. Next, what it is like. It has no air and lots of craters. Last, visiting the Moon. Astronauts went there in a rocket.\"\n\"Much better!\" said Rosa.\nOmar puffed out his chest. Then he had an idea. \"Next week, let's each make a poster about our favourite book.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Omar's book about?",
+       "options": [
+        "The Moon",
+        "The sea",
+        "Dinosaurs"
+       ],
+       "answer": "The Moon",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the Moon made of, according to Omar?",
+       "options": [
+        "Rock",
+        "Ice",
+        "Cheese"
+       ],
+       "answer": "Rock",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does the Moon have lots of on it?",
+       "options": [],
+       "answer": "craters",
+       "accept": [
+        "crater"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the others feel when Omar first told his facts?",
+       "options": [
+        "Puzzled",
+        "Bored",
+        "Scared"
+       ],
+       "answer": "Puzzled",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what helped Omar put his facts in order?",
+       "options": [
+        "The headings",
+        "The pictures",
+        "His friends' notes"
+       ],
+       "answer": "The headings",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did astronauts travel to the Moon?",
+       "options": [
+        "In a rocket",
+        "In a plane",
+        "In a balloon"
+       ],
+       "answer": "In a rocket",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does 'Omar puffed out his chest' show?",
+       "options": [
+        "He felt proud",
+        "He felt sick",
+        "He was out of breath"
+       ],
+       "answer": "He felt proud",
+       "accept": [],
+       "hint": "Think about how he felt after Rosa spoke.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Nell spoke 'kindly' to Omar?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how Omar might have felt.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Poster Day",
+     "synopsis": "The club makes posters about their favourite books, and Nell realises she has not chosen one yet.",
+     "text": "On Monday, the club spread big sheets of paper on the carpet. There were pens and glue everywhere.\nOmar drew the greedy fox and four boxes: first, next, then, last. Kit wrote his rain poem in silver pen and drew raindrops around it. Rosa drew the life cycle of a frog with arrows going round in a circle.\nNell's paper was still empty. She chewed the end of her pencil.\n\"What's wrong?\" asked Kit.\n\"I can't choose,\" said Nell. \"I like every story we have shared. They are all my favourites.\"\nRosa had an idea. \"Then make a poster about Story Club!\"\nNell's face lit up. She drew the reading corner, the red cushion and four smiling children. At the top, she wrote: STORY CLUB. ALL WELCOME.\nWhen their teacher saw the posters, she pinned them on the wall by the door. \"Everyone will see these,\" she said.\n\"Maybe more children will join,\" said Omar hopefully.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Omar draw?",
+       "options": [
+        "The greedy fox",
+        "A frog",
+        "The Moon"
+       ],
+       "answer": "The greedy fox",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour pen did Kit use for his poem?",
+       "options": [
+        "Silver",
+        "Gold",
+        "Black"
+       ],
+       "answer": "Silver",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Rosa draw?",
+       "options": [
+        "The life cycle of a frog",
+        "A rain cloud",
+        "A rocket"
+       ],
+       "answer": "The life cycle of a frog",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what did Nell chew while she was thinking?",
+       "options": [],
+       "answer": "her pencil",
+       "accept": [
+        "pencil",
+        "the pencil"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was Nell's paper empty?",
+       "options": [
+        "She could not choose a favourite",
+        "She had no pens",
+        "She was late"
+       ],
+       "answer": "She could not choose a favourite",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where were the posters pinned?",
+       "options": [
+        "On the wall by the door",
+        "On the window",
+        "In the hall"
+       ],
+       "answer": "On the wall by the door",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Rosa's idea help Nell?",
+       "options": [
+        "She could include every story she loved",
+        "She did not have to draw anything",
+        "Rosa drew it for her"
+       ],
+       "answer": "She could include every story she loved",
+       "accept": [],
+       "hint": "Think about why Nell felt stuck.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Omar hoped more children would join?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how the club has changed since the first day.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Everyone Is Welcome",
+     "synopsis": "New children arrive at Story Club, and the friends retell the whole term's adventures in order.",
+     "text": "On Tuesday, something wonderful happened. When the club arrived at the reading corner, three new children were already waiting. One of them was holding the red cushion.\n\"We saw your posters,\" said a tall boy called Leo. \"Can we join?\"\n\"And Class 1 sent the cushion back,\" said a girl with a ponytail.\nNell beamed. \"Welcome to Story Club! First, we will tell you everything that has happened so far.\"\nSo the friends took turns. Omar told how the club began and the story of the fox. Kit told about his rain poem. Rosa told about the frog book. Kit described the mystery of the missing cushion. Omar explained his Moon facts. Nell finished with Poster Day.\n\"First, next, then, last,\" said Leo. \"It sounds like a story itself!\"\nNell laughed. \"It is our story,\" she said. \"And it isn't finished yet.\"\nShe patted the red cushion. \"Who would like to go first today?\"\nSeven hands shot up at once.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many new children were waiting?",
+       "options": [
+        "Three",
+        "Two",
+        "Five"
+       ],
+       "answer": "Three",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was one new child holding?",
+       "options": [
+        "The red cushion",
+        "A poster",
+        "A poem"
+       ],
+       "answer": "The red cushion",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the new children find out about the club?",
+       "options": [
+        "They saw the posters",
+        "Their teacher told them",
+        "They heard Kit's poem"
+       ],
+       "answer": "They saw the posters",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the tall boy?",
+       "options": [],
+       "answer": "Leo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who told about the frog book?",
+       "options": [
+        "Rosa",
+        "Omar",
+        "Nell"
+       ],
+       "answer": "Rosa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Nell finish the retelling with?",
+       "options": [
+        "Poster Day",
+        "The fox story",
+        "The missing cushion"
+       ],
+       "answer": "Poster Day",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did seven hands shoot up at once?",
+       "options": [
+        "Everyone wanted to share a story",
+        "The teacher asked a question",
+        "They were waving goodbye"
+       ],
+       "answer": "Everyone wanted to share a story",
+       "accept": [],
+       "hint": "Count the old and new club members.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Nell said their story 'isn't finished yet'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what might happen in Story Club next.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }

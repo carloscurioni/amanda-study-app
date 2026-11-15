@@ -1747,6 +1747,513 @@
      "errors": []
     }
    ]
+  },
+  "pt_leit": {
+   "topic": "Revisão: localizar, inferir e antecipar",
+   "questions": [
+    {
+     "id": "r191ixbi1klfxeu",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Bia acordou cedo, colocou as botas e pegou o guarda-chuva.\" Como estava o tempo, provavelmente?",
+     "options": [
+      "Chuvoso",
+      "Ensolarado e seco",
+      "Com muita neve"
+     ],
+     "answer": "Chuvoso",
+     "accept": [],
+     "hint": "Pense nas coisas que Bia pegou.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17d9d3q9c828q",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Leia: \"O gato Fubá dormia todas as tardes em cima da geladeira.\" Onde Fubá dormia?",
+     "options": [],
+     "answer": "em cima da geladeira",
+     "accept": [
+      "na geladeira",
+      "geladeira"
+     ],
+     "hint": "Procure a palavra que diz o lugar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xchvf18y7q9r",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Téo correu para a janela quando ouviu o caminhão de sorvete.\" Por que Téo correu?",
+     "options": [
+      "Queria comprar sorvete",
+      "Estava com medo",
+      "Queria fechar a janela"
+     ],
+     "answer": "Queria comprar sorvete",
+     "accept": [],
+     "hint": "O que o caminhão vende?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iaf3ib1elehms",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quando procuramos uma informação que está escrita no texto, estamos…",
+     "options": [
+      "localizando",
+      "inventando",
+      "desenhando"
+     ],
+     "answer": "localizando",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7y1hfz31f5rv",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quando descobrimos algo que o texto não diz diretamente, usando pistas, estamos fazendo uma…",
+     "options": [
+      "inferência",
+      "rima",
+      "lista"
+     ],
+     "answer": "inferência",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7zw6gfzui342",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Leia: \"A festa de Lia começou às três horas e terminou às seis.\" A que horas a festa terminou?",
+     "options": [],
+     "answer": "às seis",
+     "accept": [
+      "seis",
+      "6",
+      "às 6",
+      "seis horas"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1td4peb2tsfuo",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Nina olhou o céu escuro e ouviu um trovão.\" O que deve acontecer a seguir?",
+     "options": [
+      "Vai chover",
+      "Vai nevar areia",
+      "O sol vai nascer"
+     ],
+     "answer": "Vai chover",
+     "accept": [],
+     "hint": "Antecipe usando as pistas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r95c2xs1o1bex",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Rafa apertava a mochila e olhava o portão da escola nova.\" Como Rafa provavelmente se sentia?",
+     "options": [
+      "Nervoso",
+      "Com sono",
+      "Bravo"
+     ],
+     "answer": "Nervoso",
+     "accept": [],
+     "hint": "Pense em como é o primeiro dia num lugar novo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jb7brp4by2h9",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Antes de ler um livro, olhar o título e a capa ajuda a…",
+     "options": [
+      "antecipar o assunto",
+      "saber o final com certeza",
+      "decorar o texto"
+     ],
+     "answer": "antecipar o assunto",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ga1vmq15uj29e",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Leia: \"O cachorro Pipoca tem orelhas compridas e pelo marrom.\" De que cor é o pelo de Pipoca?",
+     "options": [],
+     "answer": "marrom",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roe8vwf1r5s961",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Dona Lurdes regava as rosas, as margaridas e os girassóis.\" O que Dona Lurdes tem?",
+     "options": [
+      "Um jardim",
+      "Uma padaria",
+      "Uma piscina"
+     ],
+     "answer": "Um jardim",
+     "accept": [],
+     "hint": "As três palavras são nomes de quê?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r68wlz712c9mul",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Caio ficou com a boca cheia de água ao sentir o cheiro do bolo.\" O que \"ficou com a boca cheia de água\" quer dizer aqui?",
+     "options": [
+      "Ficou com vontade de comer",
+      "Bebeu muita água",
+      "Ficou triste"
+     ],
+     "answer": "Ficou com vontade de comer",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uvk19d1tc6zen",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Mesmo cansada, Júlia terminou a corrida e sorriu.\" O que podemos inferir sobre Júlia?",
+     "options": [
+      "Ela é persistente",
+      "Ela desistiu",
+      "Ela não gosta de correr"
+     ],
+     "answer": "Ela é persistente",
+     "accept": [],
+     "hint": "Ela parou no meio?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dofaa11lyqnbm",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Leia: \"Três patinhos nadavam no lago. Um saiu da água.\" Quantos patinhos ficaram no lago?",
+     "options": [],
+     "answer": "dois",
+     "accept": [
+      "2"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y0pn111f8j3a8",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Leia: \"Lucas encontrou uma caixa velha no sótão, com um mapa desenhado à mão dentro.\" O que você acha que Lucas vai fazer depois? Explique usando uma pista do texto.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que as pessoas fazem com um mapa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfb1uigsu9nt5",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Escolha uma estratégia de leitura (localizar, inferir ou antecipar) e explique como ela ajuda você a entender melhor um texto.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Lembre-se de quando você usou essa estratégia.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_ort": {
+   "topic": "Revisão: P/B, T/D, F/V, C/QU, G/GU, nasalização, R/RR e S/SS",
+   "questions": [
+    {
+     "id": "r1khrqcxx2u3cc",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está escrita corretamente?",
+     "options": [
+      "boneca",
+      "poneca",
+      "bonega"
+     ],
+     "answer": "boneca",
+     "accept": [],
+     "hint": "Fale em voz alta: a primeira letra vibra a garganta?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r58lox6wgmsq1",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: _ente (o que usamos para mastigar).",
+     "options": [],
+     "answer": "dente",
+     "accept": [],
+     "hint": "T ou D? Fale devagar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1el9ks7x17wy4",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: _ _eijo (alimento feito de leite).",
+     "options": [],
+     "answer": "queijo",
+     "accept": [],
+     "hint": "Antes de E, o som de K usa duas letras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q9yj1b4yk9ey",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é o plural correto de \"balão\"?",
+     "options": [
+      "balões",
+      "balãos",
+      "balães"
+     ],
+     "answer": "balões",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rudnro21tpwe5",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: cacho_ _o (animal que late).",
+     "options": [],
+     "answer": "cachorro",
+     "accept": [],
+     "hint": "Entre duas vogais, o som forte de R usa duas letras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmzadci1g3yff6",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: pá_ _aro (animal que voa).",
+     "options": [],
+     "answer": "pássaro",
+     "accept": [
+      "passaro"
+     ],
+     "hint": "Entre duas vogais, o som de S usa duas letras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11w4fopgicmi3",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Em qual palavra o R tem som forte, como em \"rato\"?",
+     "options": [
+      "cachorro",
+      "caro",
+      "pera"
+     ],
+     "answer": "cachorro",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6wykgn67limw",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra completa a frase? \"A menina ganhou uma ___ nova de presente.\"",
+     "options": [
+      "boneca",
+      "poneca",
+      "bonequa"
+     ],
+     "answer": "boneca",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpwvgq91dmqjq6",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Por que \"queijo\" se escreve com QU?",
+     "options": [
+      "Porque antes de E o som de K se escreve QU",
+      "Porque toda palavra começa com Q",
+      "Porque tem som de G"
+     ],
+     "answer": "Porque antes de E o som de K se escreve QU",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hq17zn17qs983",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Escreva a palavra no singular: estrelas.",
+     "options": [],
+     "answer": "estrela",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qd0nvm1rtiv8b",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado.",
+     "options": [],
+     "answer": "cachoro → cachorro; passaro → pássaro; poneca → boneca; fogete → foguete; sonbra → sombra",
+     "accept": [],
+     "hint": "",
+     "text": "No sábado, o meu cachoro correu atrás de um passaro no quintal. Depois, achou uma poneca da minha irmã debaixo da mesa. Na hora do lanche, comemos pão com queijo e vimos um fogete de brinquedo voar até a sonbra da árvore. Foi um dia muito divertido para toda a família.",
+     "errors": [
+      {
+       "wrong": "cachoro",
+       "right": "cachorro"
+      },
+      {
+       "wrong": "passaro",
+       "right": "pássaro"
+      },
+      {
+       "wrong": "poneca",
+       "right": "boneca"
+      },
+      {
+       "wrong": "fogete",
+       "right": "foguete"
+      },
+      {
+       "wrong": "sonbra",
+       "right": "sombra"
+      }
+     ]
+    },
+    {
+     "id": "rthcoft1aq0i83",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a escrita correta do nome do objeto que fecha o cinto?",
+     "options": [
+      "fivela",
+      "vivela",
+      "fifela"
+     ],
+     "answer": "fivela",
+     "accept": [],
+     "hint": "F ou V? Fale devagar e sinta a garganta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15yq5f2s1atde",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a escrita correta do brinquedo que vai até o espaço?",
+     "options": [
+      "foguete",
+      "fogete",
+      "foquete"
+     ],
+     "answer": "foguete",
+     "accept": [],
+     "hint": "Antes de E, o som de G forte precisa de uma ajudinha.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kau8ah186h0os",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a escrita correta da parte escura que aparece quando tapamos a luz?",
+     "options": [
+      "sombra",
+      "sonbra",
+      "sobra"
+     ],
+     "answer": "sombra",
+     "accept": [],
+     "hint": "Antes de B, usamos M ou N?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wx9bozij5zag",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a escrita correta do que brilha no céu à noite?",
+     "options": [
+      "estrela",
+      "estrella",
+      "istrela"
+     ],
+     "answer": "estrela",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15728d832yk10",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Complete a frase com a palavra escrita corretamente: \"O ___ cantou no galho da árvore.\"",
+     "options": [
+      "pássaro",
+      "pasaro",
+      "páçaro"
+     ],
+     "answer": "pássaro",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
