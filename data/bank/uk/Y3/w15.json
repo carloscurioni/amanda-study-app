@@ -2256,5 +2256,851 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "As Sete Estrelas da Biblioteca",
+   "premise": "Todo sábado, Téo e a amiga Bia encontram um bilhete escrito com caneta verde na biblioteca do bairro. Cada pista leva a uma estrelinha dourada com uma letra — e, para achá-las, eles precisam localizar informações, fazer inferências e prever o que vem a seguir.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O bilhete no livro de dinossauros",
+     "synopsis": "Téo encontra um bilhete misterioso dentro de um livro da biblioteca do bairro e, com a amiga Bia, decifra a primeira pista.",
+     "text": "Téo tinha oito anos e uma mania: todo sábado de manhã ia à biblioteca do bairro, uma casa amarela com janelas verdes e um jardim cheio de samambaias. Naquele sábado, ele pegou o livro de dinossauros de sempre, aquele de capa rasgada que já tinha lido umas dez vezes.\nQuando abriu na página do tiranossauro, um papel dobrado escorregou para o chão. Estava escrito com caneta verde, numa letra caprichada:\n\"Procure onde as histórias dormem de cabeça para baixo.\"\n— Bia, vem ver isto! — chamou Téo, baixinho, porque na biblioteca não se grita.\nBia, a vizinha dele, morava no mesmo prédio e adorava enigmas. Ela leu o bilhete duas vezes e franziu a testa.\n— Histórias são livros. Livros dormem nas estantes. Mas de cabeça para baixo?\nOs dois andaram entre as estantes. Todos os livros estavam em pé, bem arrumados, com as lombadas para fora. Nenhum estava de cabeça para baixo.\nFoi então que Téo viu seu Olavo, o bibliotecário, colocando um livro dentro de uma caixa de madeira perto da porta. Era a caixa de devolução. Os livros caíam lá dentro de qualquer jeito: de lado, abertos, alguns de ponta-cabeça.\n— É ali! — sussurrou Téo. — Os livros devolvidos ficam esperando, como se estivessem dormindo, até alguém guardá-los.\nEles pediram licença e olharam o fundo da caixa. Embaixo de um livro de receitas, havia uma estrelinha de papel dourado. No meio da estrela, alguém tinha desenhado uma letra: L.\nAtrás da estrela, outra mensagem em caneta verde: \"Muito bem. Esta é a primeira de sete. Volte no sábado.\"\nBia guardou a estrela no bolso com todo o cuidado.\n— Sete estrelas, sete letras — disse ela. — Alguém está brincando com a gente.\nTéo olhou ao redor. Quem será que escrevia com caneta verde?",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que dia da semana Téo costumava ir à biblioteca?",
+       "options": [
+        "No sábado",
+        "Na segunda-feira",
+        "No domingo"
+       ],
+       "answer": "No sábado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que cor era a tinta da caneta usada no bilhete?",
+       "options": [],
+       "answer": "verde",
+       "accept": [
+        "caneta verde"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em qual livro Téo encontrou o bilhete?",
+       "options": [
+        "No livro de dinossauros",
+        "No livro de receitas",
+        "No livro de poesias"
+       ],
+       "answer": "No livro de dinossauros",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Téo chamou Bia baixinho?",
+       "options": [
+        "Porque na biblioteca não se grita",
+        "Porque estava com dor de garganta",
+        "Porque Bia estava dormindo"
+       ],
+       "answer": "Porque na biblioteca não se grita",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que era o lugar onde \"as histórias dormem de cabeça para baixo\"?",
+       "options": [
+        "A caixa de devolução",
+        "A estante de dinossauros",
+        "O jardim de samambaias"
+       ],
+       "answer": "A caixa de devolução",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que letra estava desenhada na estrelinha dourada?",
+       "options": [],
+       "answer": "L",
+       "accept": [
+        "letra L"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, pela mensagem atrás da estrela, o que os amigos podem esperar que aconteça?",
+       "options": [
+        "Vão encontrar mais seis estrelas nos próximos sábados",
+        "A brincadeira acabou ali",
+        "Vão ganhar um livro de presente no mesmo dia"
+       ],
+       "answer": "Vão encontrar mais seis estrelas nos próximos sábados",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que alguém escolheu esconder pistas dentro de livros da biblioteca?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Onde o sol nasce dentro da sala",
+     "synopsis": "Uma nova pista fala do sol nascendo dentro da biblioteca, e Téo e Bia usam o que aprenderam sobre os pontos cardeais para achar a segunda estrela.",
+     "text": "No sábado seguinte, Téo e Bia chegaram antes de a biblioteca abrir. Ficaram sentados no muro baixo do jardim, balançando as pernas, até seu Olavo destrancar o portão.\nEm cima do balcão, preso com um clipe, havia um envelope com os nomes deles. Dentro, a caneta verde tinha escrito:\n\"Agora procure onde o sol nasce dentro da sala.\"\n— O sol não nasce dentro de sala nenhuma — reclamou Téo.\nBia, porém, sorriu. Na escola, ela tinha aprendido que o sol nasce do lado leste e se põe do lado oeste.\n— Se o sol nasce no leste, a pista quer dizer a parede leste da sala! A janela por onde a luz entra de manhã.\nEles olharam para as janelas. Às nove da manhã, só uma delas estava cheia de luz, desenhando quadrados claros no chão de madeira. Embaixo dela ficavam vasos de violetas e uma regadorinha de lata.\nDona Celeste, uma senhora que ajudava a cuidar das plantas, estava regando as violetas.\n— Será que foi ela quem escreveu os bilhetes? — cochichou Téo.\nBia pensou um pouco. Viu, na mesa, uma lista de compras de Dona Celeste. A letra dela era redonda e grande, e a caneta era azul.\n— Acho que não. A letra dos bilhetes é fininha e inclinada. E é sempre verde.\nOs dois procuraram com cuidado entre os vasos, sem derrubar nenhuma folha. Dentro de um pratinho vazio, encontraram a segunda estrela dourada. A letra era E.\n— L e E — disse Bia, juntando as duas estrelas na palma da mão. — Ainda não dá para saber a palavra.\nDona Celeste olhou para eles, curiosa, e sorriu.\n— Vocês estão parecendo dois detetives — comentou.\nTéo ficou vermelho. Detetive era exatamente o que ele queria ser.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde estava o envelope com os nomes de Téo e Bia?",
+       "options": [
+        "Em cima do balcão, preso com um clipe",
+        "Dentro da caixa de devolução",
+        "Embaixo do portão"
+       ],
+       "answer": "Em cima do balcão, preso com um clipe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que lado o sol nasce, segundo o que Bia aprendeu na escola?",
+       "options": [
+        "Leste",
+        "Oeste",
+        "Sul"
+       ],
+       "answer": "Leste",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que plantas ficavam embaixo da janela iluminada?",
+       "options": [],
+       "answer": "violetas",
+       "accept": [
+        "vasos de violetas",
+        "as violetas"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor era a caneta de Dona Celeste?",
+       "options": [
+        "Azul",
+        "Verde",
+        "Preta"
+       ],
+       "answer": "Azul",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia achou que Dona Celeste não tinha escrito os bilhetes?",
+       "options": [
+        "Porque a letra e a cor da caneta eram diferentes",
+        "Porque Dona Celeste não sabia escrever",
+        "Porque Dona Celeste tinha chegado atrasada"
+       ],
+       "answer": "Porque a letra e a cor da caneta eram diferentes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual letra estava na segunda estrela?",
+       "options": [],
+       "answer": "E",
+       "accept": [
+        "letra E"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase \"Téo ficou vermelho\" mostra sobre ele?",
+       "options": [
+        "Ficou envergonhado e contente com o elogio",
+        "Ficou com muita raiva",
+        "Pegou sol demais no jardim"
+       ],
+       "answer": "Ficou envergonhado e contente com o elogio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Você acha que foi uma boa ideia Bia comparar a letra dos bilhetes com a lista de compras? Por quê?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A adivinha da estante de poesia",
+     "synopsis": "Num sábado de chuva, a pista é uma adivinha em versos, e Téo e Bia precisam descobrir a resposta para achar a terceira estrela.",
+     "text": "O terceiro sábado amanheceu chuvoso. Téo chegou à biblioteca de capa de chuva amarela, pingando como um guarda-chuva. Bia veio logo atrás, com as galochas cheias de lama.\n— Sapatos no tapetinho, por favor — pediu seu Olavo, sem levantar os olhos do jornal.\nDesta vez, o bilhete estava colado na estante de poesia, com um pedacinho de fita. Era uma adivinha em versos:\n\"Grito na montanha, ela grita igual.\nFalo baixinho, ela fala também.\nNão tem boca, não tem corpo,\ne só responde quando chamo alguém.\nProcure meu nome numa capa azul.\"\nTéo leu em voz alta, bem devagar. Bia contou nos dedos as pistas.\n— Não tem boca, mas responde. Repete o que a gente fala. E aparece na montanha...\n— Um papagaio? — arriscou Téo.\n— Papagaio tem boca — riu Bia. — E tem corpo, com penas e tudo.\nTéo fechou os olhos e imaginou-se no alto de uma montanha, gritando \"olá\". Lá longe, ouviu de volta: \"olá... olá...\".\n— É o eco! — disse ele, tão animado que esqueceu de falar baixo. Seu Olavo fez \"psiu\" e os dois riram com a mão na boca.\nEles procuraram na estante de poesia um livro de capa azul com a palavra eco. Havia muitos livros azuis, então leram os títulos um por um, passando o dedo pelas lombadas. Na prateleira de baixo, encontraram \"Os Ecos da Serra\", um livrinho fino de poemas.\nEntre as páginas 10 e 11 estava a terceira estrela. A letra era I.\n— L, E, I — soletrou Bia. — Pode ser \"lei\"... ou o começo de uma palavra maior.\nLá fora, a chuva diminuiu. Téo guardou o bilhete da adivinha no caderno. Queria copiar a ideia e inventar suas próprias adivinhas em casa.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como estava o tempo no terceiro sábado?",
+       "options": [
+        "Chuvoso",
+        "Ensolarado e quente",
+        "Com neve"
+       ],
+       "answer": "Chuvoso",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde estava colado o bilhete?",
+       "options": [
+        "Na estante de poesia",
+        "Na porta de entrada",
+        "No balcão de seu Olavo"
+       ],
+       "answer": "Na estante de poesia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual foi o primeiro palpite de Téo para a adivinha?",
+       "options": [],
+       "answer": "papagaio",
+       "accept": [
+        "um papagaio"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era a resposta da adivinha?",
+       "options": [],
+       "answer": "eco",
+       "accept": [
+        "o eco"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o título do livro onde estava a estrela?",
+       "options": [
+        "Os Ecos da Serra",
+        "A Montanha Azul",
+        "Poemas da Chuva"
+       ],
+       "answer": "Os Ecos da Serra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual letra estava na terceira estrela?",
+       "options": [],
+       "answer": "I",
+       "accept": [
+        "letra I"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que seu Olavo fez \"psiu\" para Téo?",
+       "options": [
+        "Porque Téo falou alto demais na biblioteca",
+        "Porque Téo molhou o tapete",
+        "Porque Téo rasgou um livro"
+       ],
+       "answer": "Porque Téo falou alto demais na biblioteca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Téo quis copiar a ideia da adivinha e inventar as suas próprias?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O relógio que não anda",
+     "synopsis": "Sem Bia, que viajou, Téo leva o irmão Caio à biblioteca e descobre que até um irmão pequeno pode dar bons palpites.",
+     "text": "No quarto sábado, Bia tinha viajado para a casa da avó, no interior. Téo ficou chateado: detetive sozinho não tinha graça. A mãe, então, sugeriu que ele levasse o irmão, Caio, de cinco anos.\n— Ele vai atrapalhar — resmungou Téo.\nMas não havia outro jeito. Caio foi saltitando pela calçada, contando todos os cachorros que via.\nNa biblioteca, o bilhete verde estava dentro do livro de dinossauros, como da primeira vez:\n\"Vá até o relógio que não anda e olhe o que ele esconde.\"\nTéo pensou no relógio da parede, em cima do balcão. Mas aquele andava muito bem: o ponteiro dos segundos dava pulinhos, tique-taque, tique-taque.\n— Não é esse — disse Téo, desanimado.\nCaio puxou a manga da camiseta dele.\n— Téo, tem um relógio grandão lá no corredor. Ele está dormindo.\nTéo foi ver. No corredor que levava ao banheiro havia um relógio de madeira, alto como um adulto, com um pêndulo dourado parado. Os ponteiros marcavam três horas, mas já eram dez da manhã. Fazia tempo que ele não andava.\n— Caio, você é um gênio! — disse Téo, e o irmão estufou o peito de orgulho.\nNa parte de baixo do relógio havia uma portinha. Téo abriu com cuidado. Lá dentro, ao lado do pêndulo, estava a quarta estrela dourada, com a letra T.\n— L, E, I, T — Téo anotou no caderno. — Agora não pode ser \"lei\". A palavra é maior.\n— É \"leite\"! — gritou Caio.\n— Psiu! — fez seu Olavo, lá do balcão.\nTéo segurou o riso. \"Leite\" não tinha R nem A, pensou. Mas ainda faltavam três letras, e qualquer coisa podia acontecer.\nNa volta para casa, ele deixou Caio carregar a estrela. Afinal, quem tinha encontrado o relógio era ele.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia não foi à biblioteca?",
+       "options": [
+        "Porque viajou para a casa da avó",
+        "Porque estava de castigo",
+        "Porque a biblioteca estava fechada"
+       ],
+       "answer": "Porque viajou para a casa da avó",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos anos tinha Caio?",
+       "options": [],
+       "answer": "cinco",
+       "accept": [
+        "5",
+        "cinco anos",
+        "5 anos"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o relógio de cima do balcão não era o da pista?",
+       "options": [
+        "Porque ele estava funcionando",
+        "Porque era pequeno demais",
+        "Porque não tinha ponteiros"
+       ],
+       "answer": "Porque ele estava funcionando",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde ficava o relógio parado?",
+       "options": [
+        "No corredor que levava ao banheiro",
+        "No jardim",
+        "Em cima do balcão"
+       ],
+       "answer": "No corredor que levava ao banheiro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que horas marcavam os ponteiros do relógio parado?",
+       "options": [],
+       "answer": "três horas",
+       "accept": [
+        "3 horas",
+        "três",
+        "3"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Caio quis dizer com \"Ele está dormindo\"?",
+       "options": [
+        "Que o relógio estava parado",
+        "Que havia um gato dentro do relógio",
+        "Que o bibliotecário estava cochilando"
+       ],
+       "answer": "Que o relógio estava parado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Téo mudou de opinião sobre o irmão?",
+       "options": [
+        "No começo achou que Caio ia atrapalhar e depois o chamou de gênio",
+        "Sempre achou que Caio ajudaria muito",
+        "Ficou irritado com Caio o tempo todo"
+       ],
+       "answer": "No começo achou que Caio ia atrapalhar e depois o chamou de gênio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Téo deixou Caio carregar a estrela na volta para casa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A pista do mapa",
+     "synopsis": "Bia volta e, juntando o que já sabem, os dois tentam descobrir quem escreve os bilhetes enquanto procuram a quinta estrela no mapa da biblioteca.",
+     "text": "Bia voltou da viagem com uma sacola de goiabas para a família de Téo e muita vontade de saber das novidades. Téo contou tudo sobre o relógio, e Bia riu do palpite de Caio.\n— Leite! Até que fazia sentido.\nNaquele sábado, o bilhete dizia:\n\"Na parede, um mundo inteiro cabe num papel. Procure a ilha que não existe.\"\nNa parede do fundo havia um mapa-múndi enorme, meio desbotado, com os oceanos pintados de azul-claro. Bia logo entendeu: \"um mundo inteiro num papel\" era o mapa.\nEles procuraram ilhas. Encontraram as que conheciam das aulas, mas, no meio do oceano, perto da Linha do Equador, havia uma ilha pequenininha desenhada à mão, com caneta verde. Ao lado, alguém tinha escrito: \"Ilha dos Leitores\".\n— Essa ilha não existe de verdade! — disse Téo.\nAtrás do mapa, bem na altura da ilha, havia um envelope preso com fita. Dentro estava a quinta estrela, com a letra U.\nBia sentou no chão e abriu o caderno.\n— Vamos pensar como detetives. Quem escreve os bilhetes sabe onde fica cada coisa da biblioteca. Sabe que você sempre pega o livro de dinossauros. E consegue entrar aqui antes de abrir.\n— Só pode ser alguém que trabalha aqui — concluiu Téo.\n— E que usa caneta verde — completou Bia.\nOs dois olharam para o balcão. Seu Olavo estava lendo, como sempre. Na mesa dele havia um porta-lápis com canetas pretas, azuis e vermelhas. Nenhuma verde.\n— Não é ele — disse Téo, um pouco decepcionado.\n— Ou ele escondeu a caneta verde — respondeu Bia, apertando os olhos.\nTéo anotou as letras: L, E, I, T, U. Cinco estrelas. Faltavam duas. A palavra estava quase aparecendo, como uma ilha surgindo no meio da neblina.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Bia trouxe da viagem?",
+       "options": [
+        "Uma sacola de goiabas",
+        "Um livro novo",
+        "Uma caixa de canetas"
+       ],
+       "answer": "Uma sacola de goiabas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que era \"um mundo inteiro num papel\"?",
+       "options": [
+        "O mapa-múndi",
+        "Um livro de histórias",
+        "Um caderno de desenhos"
+       ],
+       "answer": "O mapa-múndi",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que nome estava escrito ao lado da ilha desenhada à mão?",
+       "options": [],
+       "answer": "Ilha dos Leitores",
+       "accept": [
+        "ilha dos leitores"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual letra estava na quinta estrela?",
+       "options": [],
+       "answer": "U",
+       "accept": [
+        "letra U"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que os amigos concluíram que o autor dos bilhetes trabalha na biblioteca?",
+       "options": [
+        "Porque ele conhece tudo ali e entra antes de abrir",
+        "Porque ele usa uniforme",
+        "Porque ele assinou o bilhete"
+       ],
+       "answer": "Porque ele conhece tudo ali e entra antes de abrir",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que cores de caneta havia no porta-lápis de seu Olavo?",
+       "options": [
+        "Preta, azul e vermelha",
+        "Verde e azul",
+        "Só verde"
+       ],
+       "answer": "Preta, azul e vermelha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Bia quis dizer com \"Ou ele escondeu a caneta verde\"?",
+       "options": [
+        "Que seu Olavo ainda podia ser o autor dos bilhetes",
+        "Que seu Olavo tinha perdido a caneta",
+        "Que a caneta verde era dela"
+       ],
+       "answer": "Que seu Olavo ainda podia ser o autor dos bilhetes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Quem você acha que está escrevendo os bilhetes? Que pistas do texto ajudam você a pensar isso?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Receita de bolo e uma palavra quase pronta",
+     "synopsis": "A sexta pista leva os amigos à seção de culinária, e com seis letras na mão eles tentam adivinhar a palavra secreta.",
+     "text": "O sexto bilhete cheirava a canela. Estava dentro do livro de dinossauros, dobrado em quatro, com uma manchinha marrom no canto.\n\"Vá até onde os livros ensinam a cozinhar. Procure o bolo que leva cenoura e chocolate.\"\n— Seção de culinária! — disseram os dois ao mesmo tempo.\nOs livros de receitas ficavam numa estante baixa, perto da janela. Havia livros de doces, de sopas, de comidas de vários países. Bia pegou o mais grosso, \"Doces da Vovó\", e procurou no sumário, o índice que fica no começo do livro.\n— Bolo de cenoura... página 42.\nNa página 42 havia uma foto de um bolo laranja coberto de chocolate. E, colada embaixo da foto, a sexta estrela, com a letra R.\n— L, E, I, T, U, R — leu Téo. — Leitur... Leitura! Só pode ser leitura!\n— Falta só o A — disse Bia, com os olhos brilhando. — Já sabemos a palavra, mas ainda não sabemos quem é o autor.\nTéo cheirou o bilhete de novo.\n— Canela... e esta mancha parece de bolo. Quem escreveu isto estava cozinhando.\nNesse momento, seu Olavo passou por eles carregando uma pilha de livros. Do bolso da camisa dele escapava um cheirinho doce, de bolo saído do forno. E, por um segundo, Téo viu: preso no bolso, havia algo verde. Uma tampa de caneta.\nTéo cutucou Bia com o cotovelo. Ela também tinha visto.\n— Vamos esperar a última pista — sussurrou Bia. — Detetive bom não acusa sem ter certeza.\nTéo concordou, mas passou a tarde inteira pensando no bolso de seu Olavo. Naquela noite, antes de dormir, ele previu o que aconteceria no próximo sábado e desenhou num papel: uma festa, um bolo de cenoura e sete estrelas douradas.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que cheirava o sexto bilhete?",
+       "options": [],
+       "answer": "canela",
+       "accept": [
+        "cheirava a canela"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde ficavam os livros de receitas?",
+       "options": [
+        "Numa estante baixa, perto da janela",
+        "Atrás do mapa",
+        "Dentro da caixa de devolução"
+       ],
+       "answer": "Numa estante baixa, perto da janela",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Bia procurou a página da receita?",
+       "options": [
+        "No sumário, no começo do livro",
+        "Na capa do livro",
+        "Na última página"
+       ],
+       "answer": "No sumário, no começo do livro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que página estava a receita de bolo de cenoura?",
+       "options": [],
+       "answer": "42",
+       "accept": [
+        "página 42"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual palavra Téo descobriu com as letras das estrelas?",
+       "options": [],
+       "answer": "leitura",
+       "accept": [
+        "Leitura"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que pista Téo viu no bolso de seu Olavo?",
+       "options": [
+        "Uma tampa de caneta verde",
+        "Uma estrela dourada",
+        "Um mapa desenhado"
+       ],
+       "answer": "Uma tampa de caneta verde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia preferiu esperar antes de acusar seu Olavo?",
+       "options": [
+        "Porque ainda não tinha certeza",
+        "Porque tinha medo dele",
+        "Porque achava que era Dona Celeste"
+       ],
+       "answer": "Porque ainda não tinha certeza",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Pelo desenho que Téo fez antes de dormir, o que você acha que vai acontecer no último sábado? Por quê?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A sétima estrela",
+     "synopsis": "No último sábado, a biblioteca prepara uma surpresa, a sétima estrela aparece e o mistério da caneta verde é finalmente resolvido.",
+     "text": "No sétimo sábado, a casa amarela estava diferente. Havia bandeirinhas coloridas no jardim e uma mesa comprida coberta com toalha xadrez. Em cima dela, um bolo de cenoura com cobertura de chocolate.\n— Eu sabia! — disse Téo, mostrando para Bia o desenho que tinha feito. — Festa e bolo de cenoura!\nNo portão, uma faixa explicava tudo: \"Biblioteca do Bairro: 50 anos de histórias\".\nDentro do livro de dinossauros, o último bilhete dizia apenas:\n\"A última estrela está com quem guarda todas as histórias.\"\nBia e Téo se olharam e foram direto ao balcão. Seu Olavo fechou o jornal, tirou do bolso uma caneta verde e, sorrindo, entregou a eles a sétima estrela. A letra era A.\n— Leitura — disse ele. — Foi isso que vocês fizeram nestes sete sábados. Leram bilhetes, mapas, adivinhas, receitas e até um relógio parado.\n— Por que o senhor escondeu as pistas? — perguntou Bia.\nSeu Olavo contou que muita gente entrava na biblioteca, ia direto a uma estante e ia embora. Ele queria que alguém conhecesse cada cantinho da casa antes da festa de aniversário.\n— E escolhi vocês dois porque nunca faltam a um sábado. Bom, quase nunca — completou, olhando para Bia, que riu.\nDona Celeste trouxe Caio pela mão. O menino correu até a mesa.\n— Eu achei o relógio! — anunciou para todo mundo.\nDurante a festa, seu Olavo fez um pedido: queria que Téo, Bia e Caio fossem os guias da biblioteca e mostrassem os cantinhos secretos para os visitantes.\nTéo segurou as sete estrelas e montou a palavra em cima da mesa: L-E-I-T-U-R-A.\nMais tarde, ele pegou uma caneta, mas não verde. Escolheu uma laranja, cor de bolo de cenoura, e escreveu o primeiro bilhete para a próxima criança que abrisse o livro de dinossauros.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que estava em cima da mesa comprida no jardim?",
+       "options": [
+        "Um bolo de cenoura com cobertura de chocolate",
+        "Uma pilha de livros de poesia",
+        "O mapa-múndi"
+       ],
+       "answer": "Um bolo de cenoura com cobertura de chocolate",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos anos a biblioteca estava completando?",
+       "options": [],
+       "answer": "50",
+       "accept": [
+        "50 anos",
+        "cinquenta",
+        "cinquenta anos"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem estava com a sétima estrela?",
+       "options": [
+        "Seu Olavo",
+        "Dona Celeste",
+        "Caio"
+       ],
+       "answer": "Seu Olavo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual letra estava na sétima estrela?",
+       "options": [],
+       "answer": "A",
+       "accept": [
+        "letra A"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que seu Olavo escondeu as pistas?",
+       "options": [
+        "Para que alguém conhecesse cada cantinho da biblioteca",
+        "Para testar se as crianças sabiam soletrar",
+        "Para que ninguém achasse o bolo"
+       ],
+       "answer": "Para que alguém conhecesse cada cantinho da biblioteca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que seu Olavo olhou para Bia ao dizer \"quase nunca\"?",
+       "options": [
+        "Porque ela tinha faltado um sábado ao viajar",
+        "Porque ela chegava sempre atrasada",
+        "Porque ela não gostava de ler"
+       ],
+       "answer": "Porque ela tinha faltado um sábado ao viajar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Téo fez no final da história?",
+       "options": [
+        "Escreveu um bilhete para a próxima criança",
+        "Devolveu as estrelas a seu Olavo",
+        "Escondeu a caneta verde"
+       ],
+       "answer": "Escreveu um bilhete para a próxima criança",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Téo escolheu continuar a brincadeira das pistas para outras crianças?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
