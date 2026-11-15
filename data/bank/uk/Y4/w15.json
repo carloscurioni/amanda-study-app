@@ -1522,6 +1522,824 @@
      "errors": []
     }
    ]
+  },
+  "pt": {
+   "topic": "Revisão: classes de palavras, pontuação e narrativa",
+   "questions": [
+    {
+     "id": "rdzsree63p9q7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas palavras é um substantivo?",
+     "options": [
+      "janela",
+      "bonita",
+      "correu",
+      "ela"
+     ],
+     "answer": "janela",
+     "accept": [],
+     "hint": "Substantivo dá nome a seres, objetos e lugares.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tjp44isudx2n",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"O gato preto dormiu no sofá\", qual palavra é um adjetivo?",
+     "options": [
+      "preto",
+      "gato",
+      "dormiu",
+      "sofá"
+     ],
+     "answer": "preto",
+     "accept": [],
+     "hint": "Procure a palavra que diz como é o gato.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpnvrl11n9c8h6",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"Lia pulou a corda no recreio\", qual palavra é o verbo?",
+     "options": [
+      "pulou",
+      "Lia",
+      "corda",
+      "recreio"
+     ],
+     "answer": "pulou",
+     "accept": [],
+     "hint": "Qual palavra mostra a ação?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjb70bd1alp9ha",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra é um pronome pessoal?",
+     "options": [
+      "nós",
+      "mesa",
+      "alegre",
+      "cantar"
+     ],
+     "answer": "nós",
+     "accept": [],
+     "hint": "Pronomes substituem os nomes das pessoas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vu5cec1lk950s",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destes é um substantivo próprio?",
+     "options": [
+      "Recife",
+      "cidade",
+      "rio",
+      "menino"
+     ],
+     "answer": "Recife",
+     "accept": [],
+     "hint": "Substantivos próprios começam com letra maiúscula.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rayygc31vbftex",
+     "subject": "pt",
+     "type": "short",
+     "q": "Troque o nome pelo pronome certo: \"Marcos e Tiago foram à praia.\" → \"___ foram à praia.\"",
+     "options": [],
+     "answer": "Eles",
+     "accept": [
+      "eles"
+     ],
+     "hint": "Marcos e Tiago são dois meninos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryw02991y7qiq9",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"As flores amarelas cresceram no jardim\", quantos substantivos há?",
+     "options": [
+      "Dois",
+      "Um",
+      "Três",
+      "Nenhum"
+     ],
+     "answer": "Dois",
+     "accept": [],
+     "hint": "Procure os nomes de coisas e lugares.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bqafhu1cegw6k",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase tem um verbo no passado?",
+     "options": [
+      "Ontem nós jogamos bola.",
+      "Amanhã nós jogaremos bola.",
+      "Agora nós jogamos bola todo dia.",
+      "Nós vamos jogar bola."
+     ],
+     "answer": "Ontem nós jogamos bola.",
+     "accept": [],
+     "hint": "Qual palavra indica que já aconteceu?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruf8qov1ya1sze",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual sinal de pontuação indica a fala de um personagem num diálogo?",
+     "options": [
+      "Travessão (—)",
+      "Ponto final (.)",
+      "Vírgula (,)",
+      "Parênteses ( )"
+     ],
+     "answer": "Travessão (—)",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11badcv1anbphb",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual sinal costuma vir antes da fala de um personagem, depois de verbos como \"disse\" ou \"perguntou\"?",
+     "options": [
+      "Dois-pontos (:)",
+      "Ponto de exclamação (!)",
+      "Reticências (...)",
+      "Vírgula (,)"
+     ],
+     "answer": "Dois-pontos (:)",
+     "accept": [],
+     "hint": "Ex.: A mãe disse__ — Venha jantar!",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13w35xzf250sc",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas falas está pontuada corretamente?",
+     "options": [
+      "— Você vem comigo? — perguntou Ana.",
+      "Você vem comigo — perguntou Ana?",
+      "— Você vem comigo. perguntou Ana?",
+      "Você vem comigo, perguntou Ana."
+     ],
+     "answer": "— Você vem comigo? — perguntou Ana.",
+     "accept": [],
+     "hint": "Pergunta termina com ponto de interrogação e a fala começa com travessão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rshs09ufv4g4b",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Que sinal de pontuação completa a fala: \"— Que susto ___ — gritou Davi.\"",
+     "options": [
+      "!",
+      "?",
+      ",",
+      ":"
+     ],
+     "answer": "!",
+     "accept": [],
+     "hint": "Ele gritou de susto: é uma emoção forte.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhhc3r91xsd2wy",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Quais são os elementos de uma narrativa?",
+     "options": [
+      "Personagens, tempo, lugar, enredo e narrador",
+      "Título, rima e estrofe",
+      "Ingredientes e modo de fazer",
+      "Data, saudação e assinatura"
+     ],
+     "answer": "Personagens, tempo, lugar, enredo e narrador",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rusiqnuvqkbfn",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na narrativa, como se chama a parte em que acontece o problema ou o momento de maior tensão?",
+     "options": [
+      "Conflito",
+      "Introdução",
+      "Título",
+      "Desfecho"
+     ],
+     "answer": "Conflito",
+     "accept": [],
+     "hint": "É quando algo dá errado para os personagens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dfbiv91xye4ow",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva um pequeno diálogo de duas falas entre dois amigos, usando travessão e pontuação corretos.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1itpbqu1qhuw53",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva uma frase com um substantivo, um adjetivo e um verbo e diga qual é cada um.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Revisão: ideia central, inferência e elementos da narrativa",
+   "questions": [
+    {
+     "id": "r1xatowa7pa732",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é a ideia central de um texto?",
+     "options": [
+      "A informação mais importante, sobre o que o texto fala",
+      "A primeira palavra do texto",
+      "O nome do autor",
+      "A última frase"
+     ],
+     "answer": "A informação mais importante, sobre o que o texto fala",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rn86db1bl3jv7",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é fazer uma inferência ao ler?",
+     "options": [
+      "Descobrir algo que o texto não diz diretamente, usando pistas",
+      "Copiar uma frase do texto",
+      "Contar as palavras do texto",
+      "Ler o título em voz alta"
+     ],
+     "answer": "Descobrir algo que o texto não diz diretamente, usando pistas",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnurfvbokwygd",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Joana acordou cedo, colocou as botas de chuva e pegou o guarda-chuva amarelo. Quando abriu a porta, viu poças por toda a rua.\" Como estava o tempo?",
+     "options": [
+      "Chuvoso",
+      "Ensolarado",
+      "Com neve",
+      "Muito seco"
+     ],
+     "answer": "Chuvoso",
+     "accept": [],
+     "hint": "Veja o que Joana vestiu e o que havia na rua.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bcy0g63vncp3",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Leia: \"Joana acordou cedo, colocou as botas de chuva e pegou o guarda-chuva amarelo. Quando abriu a porta, viu poças por toda a rua.\" De que cor era o guarda-chuva de Joana?",
+     "options": [],
+     "answer": "amarelo",
+     "accept": [
+      "amarela"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17t6zhf1jztonv",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Joana acordou cedo, colocou as botas de chuva e pegou o guarda-chuva amarelo. Quando abriu a porta, viu poças por toda a rua.\" Que pistas ajudam a descobrir que tinha chovido?",
+     "options": [
+      "As botas, o guarda-chuva e as poças",
+      "O nome Joana e a porta",
+      "Acordar cedo e abrir a porta",
+      "Não há pistas no texto"
+     ],
+     "answer": "As botas, o guarda-chuva e as poças",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr6o4191kffcfg",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O passarinho caiu do ninho. Bruno o pegou com cuidado, subiu na escada e o colocou de volta.\" Como Bruno pode ser descrito?",
+     "options": [
+      "Cuidadoso e gentil",
+      "Bravo e apressado",
+      "Medroso e preguiçoso",
+      "Distraído"
+     ],
+     "answer": "Cuidadoso e gentil",
+     "accept": [],
+     "hint": "Pense no que ele fez com o passarinho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh5etcc8xnamx",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"As abelhas voam de flor em flor. Elas recolhem o néctar e levam para a colmeia, onde fazem o mel.\" Qual é a ideia central?",
+     "options": [
+      "Como as abelhas fazem o mel",
+      "As cores das flores",
+      "O tamanho da colmeia",
+      "Por que as abelhas picam"
+     ],
+     "answer": "Como as abelhas fazem o mel",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmbx0bf16r4n55",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Lúcia olhou o relógio, pegou a mochila correndo e saiu sem tomar café.\" O que podemos inferir?",
+     "options": [
+      "Lúcia estava atrasada",
+      "Lúcia estava doente",
+      "Era domingo",
+      "Lúcia não gostava de café"
+     ],
+     "answer": "Lúcia estava atrasada",
+     "accept": [],
+     "hint": "Por que alguém sairia correndo sem comer?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1knxf6dn5jmpo",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em uma narrativa, os personagens são:",
+     "options": [
+      "Quem participa da história",
+      "O lugar onde a história acontece",
+      "O momento em que a história acontece",
+      "O final da história"
+     ],
+     "answer": "Quem participa da história",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgv3q8430jf2f",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Era uma vez, numa vila à beira do mar, um pescador muito velho.\" Qual é o lugar (espaço) da história?",
+     "options": [
+      "Uma vila à beira do mar",
+      "Uma floresta escura",
+      "Uma cidade grande",
+      "Um castelo"
+     ],
+     "answer": "Uma vila à beira do mar",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2syu16hk8v63",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Naquela noite de inverno, o vento soprava forte.\" Qual expressão indica o tempo da narrativa?",
+     "options": [
+      "Naquela noite de inverno",
+      "o vento",
+      "soprava",
+      "forte"
+     ],
+     "answer": "Naquela noite de inverno",
+     "accept": [],
+     "hint": "Quando a história acontece?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12ugapc1jdjwpc",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é a ordem mais comum das partes de uma narrativa?",
+     "options": [
+      "Introdução, conflito, clímax e desfecho",
+      "Desfecho, introdução, conflito e clímax",
+      "Clímax, desfecho, conflito e introdução",
+      "Conflito, desfecho, introdução e clímax"
+     ],
+     "answer": "Introdução, conflito, clímax e desfecho",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7k85cz153r7i7",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"— Eu mesma fiz este bolo! — contou a menina, com um sorriso enorme.\" Como a menina se sentia?",
+     "options": [
+      "Orgulhosa",
+      "Triste",
+      "Com medo",
+      "Com raiva"
+     ],
+     "answer": "Orgulhosa",
+     "accept": [],
+     "hint": "Veja o sorriso e o que ela fez sozinha.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qzbxi11vp5qyv",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quem narra a história em: \"Eu entrei na sala e logo vi o presente em cima da mesa.\"?",
+     "options": [
+      "Um narrador-personagem, que participa da história",
+      "Um narrador que só observa de fora",
+      "Ninguém narra",
+      "O leitor"
+     ],
+     "answer": "Um narrador-personagem, que participa da história",
+     "accept": [],
+     "hint": "Repare na palavra \"eu\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj1t2oi7f73a",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Leia: \"Pedro guardou o último pedaço de pizza na geladeira e escreveu um bilhete: 'Para a vovó'.\" O que você pode inferir sobre Pedro? Explique com uma pista do texto.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsa26akllwpso",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Leia: \"O cachorro latia sem parar perto da porta, olhando para a coleira pendurada.\" O que você acha que o cachorro queria? Por quê?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_ort": {
+   "topic": "Revisão: som de S, nasalidade, dígrafos e acentuação",
+   "questions": [
+    {
+     "id": "r7oxxmvu8jdol",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está escrita corretamente?",
+     "options": [
+      "piscina",
+      "pissina",
+      "picina",
+      "piçina"
+     ],
+     "answer": "piscina",
+     "accept": [],
+     "hint": "Nesta palavra, o som de S é feito com duas letras: SC.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rszz3z41kg6yz3",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: exce_ _o (algo que foge à regra)",
+     "options": [],
+     "answer": "exceção",
+     "accept": [],
+     "hint": "Depois do E, o som de S é feito com Ç, e no final há til.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqfaim3102iyox",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Em \"princesa\", o S tem som de:",
+     "options": [
+      "Z",
+      "S",
+      "X",
+      "CH"
+     ],
+     "answer": "Z",
+     "accept": [],
+     "hint": "S entre vogais soa como Z.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ix2stn35z58l",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Por que \"bombeiro\" se escreve com M antes do B?",
+     "options": [
+      "Antes de P e B usamos M",
+      "Antes de toda consoante usamos M",
+      "Porque a palavra é grande",
+      "Porque tem acento"
+     ],
+     "answer": "Antes de P e B usamos M",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15wmen1ym3bzw",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: elei_ões",
+     "options": [],
+     "answer": "eleições",
+     "accept": [],
+     "hint": "É o plural de eleição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10mfchz1muqcky",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual dígrafo aparece em \"palhaço\"?",
+     "options": [
+      "LH",
+      "AÇ",
+      "PA",
+      "AL"
+     ],
+     "answer": "LH",
+     "accept": [],
+     "hint": "Dígrafo: duas letras que fazem um só som.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3fzldg1w2epbm",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra tem o dígrafo NH?",
+     "options": [
+      "dinheiro",
+      "dinamite",
+      "bombeiro",
+      "piscina"
+     ],
+     "answer": "dinheiro",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11lr4z31cffpp5",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: ca_ _oeira (queda de água de um rio)",
+     "options": [],
+     "answer": "cachoeira",
+     "accept": [],
+     "hint": "O som é de X, mas aqui se escreve com duas letras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt34euk1mhpjbm",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Por que \"você\" tem acento circunflexo?",
+     "options": [
+      "É oxítona terminada em E com som fechado",
+      "É paroxítona",
+      "É proparoxítona",
+      "Tem dígrafo"
+     ],
+     "answer": "É oxítona terminada em E com som fechado",
+     "accept": [],
+     "hint": "Diga em voz alta: vo-CÊ.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry2k2y8iuzl1u",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Quantas letras e quantos sons tem a palavra \"palhaço\"?",
+     "options": [
+      "7 letras e 6 sons",
+      "7 letras e 7 sons",
+      "6 letras e 6 sons",
+      "8 letras e 6 sons"
+     ],
+     "answer": "7 letras e 6 sons",
+     "accept": [],
+     "hint": "LH é um só som.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5z2pw9p8vi3f",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Em qual palavra a nasalidade é marcada com til?",
+     "options": [
+      "eleições",
+      "bombeiro",
+      "dinheiro",
+      "princesa"
+     ],
+     "answer": "eleições",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rppyyc41ofsj7u",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual frase está escrita corretamente?",
+     "options": [
+      "Você viu o palhaço na piscina?",
+      "Voce viu o palhasso na piscina?",
+      "Você viu o palhaso na pissina?",
+      "Voçê viu o palhaço na picina?"
+     ],
+     "answer": "Você viu o palhaço na piscina?",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a471fk1jcgcjd",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra tem o som de S escrito com Ç?",
+     "options": [
+      "palhaço",
+      "princesa",
+      "piscina",
+      "dinheiro"
+     ],
+     "answer": "palhaço",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7gblgr26aa0",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 4 palavras escritas errado.",
+     "options": [],
+     "answer": "princeza → princesa; palhasso → palhaço; bonbeiro → bombeiro; pissina → piscina",
+     "accept": [],
+     "hint": "Lembre das regras: S entre vogais, Ç, M antes de B e SC.",
+     "text": "No sábado, a princeza foi passear perto da cachoeira. Lá encontrou um palhasso e um bonbeiro tomando suco de maracujá. Eles queriam ganhar dinheiro com um show na pissina do clube. A princesa riu e disse que você também podia participar.",
+     "errors": [
+      {
+       "wrong": "princeza",
+       "right": "princesa"
+      },
+      {
+       "wrong": "palhasso",
+       "right": "palhaço"
+      },
+      {
+       "wrong": "bonbeiro",
+       "right": "bombeiro"
+      },
+      {
+       "wrong": "pissina",
+       "right": "piscina"
+      }
+     ]
+    },
+    {
+     "id": "r1y0hd0vlnruyk",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado.",
+     "options": [],
+     "answer": "eleisões → eleições; excessão → exceção; maracuja → maracujá; Voce → Você; cachueira → cachoeira",
+     "accept": [],
+     "hint": "Confira os acentos, o Ç e o encontro OEI.",
+     "text": "Nas eleisões da turma, cada um podia votar uma vez. Sem nenhuma excessão! O Caio guardou o dinheiro da merenda e comprou um suco de maracuja. Depois, perguntou: — Voce viu a cachueira na foto? Era linda e muito alta.",
+     "errors": [
+      {
+       "wrong": "eleisões",
+       "right": "eleições"
+      },
+      {
+       "wrong": "excessão",
+       "right": "exceção"
+      },
+      {
+       "wrong": "maracuja",
+       "right": "maracujá"
+      },
+      {
+       "wrong": "Voce",
+       "right": "Você"
+      },
+      {
+       "wrong": "cachueira",
+       "right": "cachoeira"
+      }
+     ]
+    },
+    {
+     "id": "r18n0idyz9s1ec",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a forma correta de escrever o nome desta fruta tropical?",
+     "options": [
+      "maracujá",
+      "maracuja",
+      "maracujà",
+      "maracujã"
+     ],
+     "answer": "maracujá",
+     "accept": [],
+     "hint": "É oxítona terminada em A.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
