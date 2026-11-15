@@ -1317,6 +1317,1034 @@
      "errors": []
     }
    ]
+  },
+  "math": {
+   "topic": "Term 1 review: number, fractions and decimals",
+   "questions": [
+    {
+     "id": "r9jfta831d79w",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 4,736 + 2,589.",
+     "options": [],
+     "answer": "7325",
+     "accept": [],
+     "hint": "Line up the digits and carry when a column adds to 10 or more.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o4hrsluz5p6n",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 8,002 − 3,457.",
+     "options": [],
+     "answer": "4545",
+     "accept": [],
+     "hint": "You will need to exchange across several zeros.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzcsdv21ea6ctp",
+     "subject": "math",
+     "type": "num",
+     "q": "Use long multiplication to calculate 347 × 26.",
+     "options": [],
+     "answer": "9022",
+     "accept": [],
+     "hint": "Work out 347 × 6 and 347 × 20, then add.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlsqin81hyqcvp",
+     "subject": "math",
+     "type": "num",
+     "q": "Use short division to calculate 2,856 ÷ 7.",
+     "options": [],
+     "answer": "408",
+     "accept": [],
+     "hint": "How many 7s in 28? Then carry on digit by digit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x0z6a1eofjok",
+     "subject": "math",
+     "type": "num",
+     "q": "Use long division to calculate 4,128 ÷ 16.",
+     "options": [],
+     "answer": "258",
+     "accept": [],
+     "hint": "Start with how many 16s go into 41.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rl7dxyny4u1q",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 5 + 3 × (8 − 2).",
+     "options": [],
+     "answer": "23",
+     "accept": [],
+     "hint": "Brackets first, then multiplication, then addition.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f6w7hh9ux6fa",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which calculation gives 20?",
+     "options": [
+      "(2 + 3) × 4",
+      "2 + 3 × 4",
+      "2 × 3 + 4",
+      "2 + 3 + 4"
+     ],
+     "answer": "(2 + 3) × 4",
+     "accept": [],
+     "hint": "Remember the order of operations.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rivsbl1nyr4bg",
+     "subject": "math",
+     "type": "short",
+     "q": "Simplify 18/24 to its simplest form.",
+     "options": [],
+     "answer": "3/4",
+     "accept": [
+      "¾"
+     ],
+     "hint": "Find the highest common factor of 18 and 24.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17zaoj618kh4fz",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 2/3 + 1/4. Give your answer as a fraction.",
+     "options": [],
+     "answer": "11/12",
+     "accept": [],
+     "hint": "Find a common denominator first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rymcvncp4kfsk",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 3/5 × 2/7. Give your answer as a fraction.",
+     "options": [],
+     "answer": "6/35",
+     "accept": [],
+     "hint": "Multiply the numerators, then the denominators.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b45pff1sfmrxm",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 3/4 ÷ 3. Give your answer as a fraction.",
+     "options": [],
+     "answer": "1/4",
+     "accept": [],
+     "hint": "Dividing by 3 is the same as finding one third.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmcnrzk16pethe",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which of these is the largest?",
+     "options": [
+      "0.7",
+      "0.65",
+      "0.659",
+      "0.07"
+     ],
+     "answer": "0.7",
+     "accept": [],
+     "hint": "Compare the tenths digit first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10ungk21sslnz",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 6.4 × 3.",
+     "options": [],
+     "answer": "19.2",
+     "accept": [],
+     "hint": "Multiply 64 × 3, then think about the decimal point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1thwx271501el",
+     "subject": "math",
+     "type": "num",
+     "q": "Calculate 12.6 ÷ 4.",
+     "options": [],
+     "answer": "3.15",
+     "accept": [],
+     "hint": "Use short division and keep the decimal point in line.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3m9jcwaji8am",
+     "subject": "math",
+     "type": "num",
+     "q": "Write 3/8 as a decimal.",
+     "options": [],
+     "answer": "0.375",
+     "accept": [],
+     "hint": "Divide 3 by 8.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pwk9wfdzjw1t",
+     "subject": "math",
+     "type": "open",
+     "q": "Leo says 1/2 + 1/3 = 2/5. Explain his mistake and give the correct answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Can you add denominators directly?",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Revisão do 1º trimestre: pronomes, verbos e pontuação",
+   "questions": [
+    {
+     "id": "r1fx4uds1xf1n4a",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"Ela trouxe o livro para nós\", qual palavra é um pronome pessoal do caso reto?",
+     "options": [
+      "Ela",
+      "livro",
+      "trouxe",
+      "para"
+     ],
+     "answer": "Ela",
+     "accept": [],
+     "hint": "Pronome reto costuma ser o sujeito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l6yjs8s717gx",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase usa um pronome possessivo?",
+     "options": [
+      "Minha bicicleta é azul.",
+      "Ele saiu cedo.",
+      "Aquilo é estranho.",
+      "Alguém ligou."
+     ],
+     "answer": "Minha bicicleta é azul.",
+     "accept": [],
+     "hint": "Possessivo indica a quem algo pertence.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rexknna1bcsswn",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Este caderno aqui é meu\", a palavra \"Este\" é um pronome:",
+     "options": [
+      "demonstrativo",
+      "pessoal",
+      "indefinido",
+      "interrogativo"
+     ],
+     "answer": "demonstrativo",
+     "accept": [],
+     "hint": "Ele indica a posição de algo em relação a quem fala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdzjue2d9w8jr",
+     "subject": "pt",
+     "type": "short",
+     "q": "Substitua a expressão destacada por um pronome oblíquo: \"Encontrei O GATO no quintal.\" Escreva só o pronome.",
+     "options": [],
+     "answer": "o",
+     "accept": [
+      "O"
+     ],
+     "hint": "Pronome que substitui um substantivo masculino singular depois do verbo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4h2gijhi4y35",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase evita a repetição usando um pronome corretamente?",
+     "options": [
+      "Ana comprou um bolo e dividiu-o com os amigos.",
+      "Ana comprou um bolo e dividiu o bolo com os amigos.",
+      "Ana comprou um bolo e dividiu ele com eles bolo.",
+      "Ana comprou um bolo e o bolo dividiu."
+     ],
+     "answer": "Ana comprou um bolo e dividiu-o com os amigos.",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n9f90r166ys8u",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Se eu tivesse tempo, viajaria\", o verbo \"tivesse\" está no modo:",
+     "options": [
+      "subjuntivo",
+      "indicativo",
+      "imperativo",
+      "infinitivo"
+     ],
+     "answer": "subjuntivo",
+     "accept": [],
+     "hint": "Esse modo expressa hipótese ou desejo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ibvsz81idhp5r",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase está no modo imperativo?",
+     "options": [
+      "Feche a janela, por favor.",
+      "Eu fechei a janela.",
+      "Talvez ele feche a janela.",
+      "Ela fechava a janela."
+     ],
+     "answer": "Feche a janela, por favor.",
+     "accept": [],
+     "hint": "Imperativo expressa ordem ou pedido.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sky3hup0vquo",
+     "subject": "pt",
+     "type": "short",
+     "q": "Escreva o verbo \"cantar\" na 1ª pessoa do singular do pretérito perfeito do indicativo.",
+     "options": [],
+     "answer": "cantei",
+     "accept": [],
+     "hint": "Pense em algo que você fez ontem: \"Ontem eu…\"",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kgf011u6pxs7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Quando criança, eu brincava na praça todo dia\", o verbo indica:",
+     "options": [
+      "uma ação habitual no passado",
+      "uma ação futura",
+      "uma ordem",
+      "uma ação que acontece agora"
+     ],
+     "answer": "uma ação habitual no passado",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc84jnm5wjqkp",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com o verbo \"ir\" no futuro do presente: \"Amanhã nós ___ ao museu.\"",
+     "options": [],
+     "answer": "iremos",
+     "accept": [],
+     "hint": "Futuro do presente de \"nós\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15u4dtv1ahi43z",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase usa a vírgula corretamente?",
+     "options": [
+      "Comprei maçãs, peras e uvas.",
+      "Comprei, maçãs peras e uvas.",
+      "Comprei maçãs peras, e uvas.",
+      "Comprei maçãs, peras, e, uvas."
+     ],
+     "answer": "Comprei maçãs, peras e uvas.",
+     "accept": [],
+     "hint": "Vírgula separa itens de uma enumeração.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry2i3wb7dcbcq",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Por que há vírgula em \"Pedro, venha jantar!\"?",
+     "options": [
+      "Para separar o vocativo",
+      "Para separar o sujeito do verbo",
+      "Para indicar uma pergunta",
+      "Para separar dois verbos"
+     ],
+     "answer": "Para separar o vocativo",
+     "accept": [],
+     "hint": "Quem está sendo chamado?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jxdes2hpelaf",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase NÃO deveria ter vírgula?",
+     "options": [
+      "O menino, comeu o lanche.",
+      "Ontem à noite, choveu muito.",
+      "Sim, eu vou.",
+      "Lia, traga o livro."
+     ],
+     "answer": "O menino, comeu o lanche.",
+     "accept": [],
+     "hint": "Não se separa o sujeito do verbo com vírgula.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x6gvynn5cvcp",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Que sinal expressa melhor surpresa em \"Que lindo dia___\"?",
+     "options": [
+      "!",
+      "?",
+      ".",
+      ";"
+     ],
+     "answer": "!",
+     "accept": [],
+     "hint": "Pontuação expressiva.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rso66i1xjchge",
+     "subject": "pt",
+     "type": "mc",
+     "q": "As reticências em \"Abri a porta e... não havia ninguém\" criam um efeito de:",
+     "options": [
+      "suspense",
+      "ordem",
+      "dúvida gramatical",
+      "enumeração"
+     ],
+     "answer": "suspense",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1276wld1fr5n67",
+     "subject": "pt",
+     "type": "open",
+     "q": "Reescreva a frase corrigindo a pontuação e evitando a repetição: \"A Júlia chegou cedo a Júlia abriu a janela a Júlia sorriu\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use vírgulas e um pronome.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Revisão do 1º trimestre: estratégias de leitura e gêneros",
+   "questions": [
+    {
+     "id": "r1hrmm45mo7auu",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual gênero conta um fato do dia a dia com tom leve, pessoal e às vezes humorístico, geralmente publicado em jornal?",
+     "options": [
+      "Crônica",
+      "Notícia",
+      "Receita",
+      "Verbete"
+     ],
+     "answer": "Crônica",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvjjgot1cji0oe",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual gênero termina normalmente com uma moral e tem animais que falam?",
+     "options": [
+      "Fábula",
+      "Reportagem",
+      "Biografia",
+      "Carta"
+     ],
+     "answer": "Fábula",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nz80xi1jb56zq",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Uma notícia costuma responder a quais perguntas no primeiro parágrafo (lide)?",
+     "options": [
+      "O quê, quem, quando, onde, como e por quê",
+      "Só quem e quando",
+      "Só qual é a moral",
+      "Só o título"
+     ],
+     "answer": "O quê, quem, quando, onde, como e por quê",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4qp4flf9xtkv",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama o pequeno texto abaixo do título de uma notícia, que resume o assunto?",
+     "options": [],
+     "answer": "linha fina",
+     "accept": [
+      "subtítulo",
+      "a linha fina",
+      "o subtítulo"
+     ],
+     "hint": "Fica entre o título e o lide.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14mahmzp7boc7",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Ler rapidamente um texto só para ter uma ideia geral é uma estratégia chamada:",
+     "options": [
+      "leitura de skimming (leitura global)",
+      "leitura em voz alta",
+      "cópia",
+      "ditado"
+     ],
+     "answer": "leitura de skimming (leitura global)",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8l79mr13c0b2j",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Para encontrar uma data específica num texto longo, a melhor estratégia é:",
+     "options": [
+      "procurar só aquela informação (escaneamento)",
+      "ler tudo três vezes",
+      "ler só o título",
+      "ler o último parágrafo"
+     ],
+     "answer": "procurar só aquela informação (escaneamento)",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qi0w2p7xiez7",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Caio entrou em casa pingando, deixou o guarda-chuva quebrado na porta e pediu uma toalha.\" O que se pode inferir?",
+     "options": [
+      "Estava chovendo forte lá fora",
+      "Caio estava de férias",
+      "Caio voltou da piscina sem guarda-chuva",
+      "Era um dia de sol"
+     ],
+     "answer": "Estava chovendo forte lá fora",
+     "accept": [],
+     "hint": "Junte as pistas: pingando, guarda-chuva quebrado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n70gg114dnenr",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Bia olhou o relógio pela décima vez e batia o pé no chão.\" Como Bia provavelmente se sentia?",
+     "options": [
+      "Impaciente",
+      "Calma",
+      "Sonolenta",
+      "Envergonhada"
+     ],
+     "answer": "Impaciente",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iqtfons5531u",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O avô guardou a última fatia de bolo e escondeu o pote atrás das panelas.\" O que se pode inferir?",
+     "options": [
+      "Ele queria guardar o bolo só para alguém",
+      "Ele não gostava de bolo",
+      "O bolo estava estragado",
+      "Ele ia jogar o bolo fora"
+     ],
+     "answer": "Ele queria guardar o bolo só para alguém",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhtiv1arvpld5",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Inferir significa:",
+     "options": [
+      "descobrir algo que o texto não diz diretamente, usando pistas",
+      "copiar uma frase do texto",
+      "contar quantas palavras há",
+      "decorar o texto"
+     ],
+     "answer": "descobrir algo que o texto não diz diretamente, usando pistas",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rayl9u57s4vc7",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destas é uma informação explícita em \"A feira abre às sete horas na praça central\"?",
+     "options": [
+      "O horário de abertura da feira",
+      "Que a feira é a melhor da cidade",
+      "Que vai chover",
+      "Que a feira é cara"
+     ],
+     "answer": "O horário de abertura da feira",
+     "accept": [],
+     "hint": "Explícita é a que está escrita.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3y4v0p1744qc9",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Um poema e uma notícia sobre a chuva diferem principalmente porque:",
+     "options": [
+      "o poema explora sentimentos e sons; a notícia informa fatos",
+      "os dois só informam fatos",
+      "a notícia sempre rima",
+      "o poema sempre tem data e local"
+     ],
+     "answer": "o poema explora sentimentos e sons; a notícia informa fatos",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reaa56vcdatrf",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em qual gênero o narrador conta a vida de uma pessoa, em ordem cronológica, na 3ª pessoa?",
+     "options": [
+      "Biografia",
+      "Fábula",
+      "Poema",
+      "Anúncio"
+     ],
+     "answer": "Biografia",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnev3id1funm76",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Ao comparar dois contos com o mesmo tema, o mais importante é observar:",
+     "options": [
+      "semelhanças e diferenças entre personagens, conflito e final",
+      "apenas o número de páginas",
+      "só a cor da capa",
+      "apenas o primeiro parágrafo"
+     ],
+     "answer": "semelhanças e diferenças entre personagens, conflito e final",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8u3k2z12jgihy",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Leia: \"No dia da apresentação, Lucas chegou mais cedo, ensaiou baixinho e enxugou as mãos na calça várias vezes.\" Que sentimento de Lucas você infere? Cite duas pistas do texto.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Procure ações que mostram o que ele sente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sr042o1il6k34",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Escolha dois gêneros que você estudou (por exemplo, crônica e notícia) e explique uma diferença entre eles.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_ort": {
+   "topic": "Revisão do 1º trimestre: X, acentuação e hífen",
+   "questions": [
+    {
+     "id": "rr62t7s1hrloa4",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: pró_imo",
+     "options": [],
+     "answer": "próximo",
+     "accept": [],
+     "hint": "Aqui o X tem som de SS.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhgjq8f1rs1xlt",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Em qual palavra o X tem o mesmo som que em \"próximo\"?",
+     "options": [
+      "máximo",
+      "xícara",
+      "exame",
+      "táxi"
+     ],
+     "answer": "máximo",
+     "accept": [],
+     "hint": "Som de SS.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rgcuzi2g3fci",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Em qual palavra o X tem som de Z?",
+     "options": [
+      "exame",
+      "xadrez",
+      "táxi",
+      "próximo"
+     ],
+     "answer": "exame",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx1p1e677ks1a",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Por que \"também\" leva acento?",
+     "options": [
+      "É oxítona terminada em -em",
+      "É proparoxítona",
+      "Tem ditongo aberto",
+      "É monossílaba tônica em -a"
+     ],
+     "answer": "É oxítona terminada em -em",
+     "accept": [],
+     "hint": "Onde está a sílaba tônica?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ronm0hf9uiyof",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "\"História\" é acentuada porque é:",
+     "options": [
+      "paroxítona terminada em ditongo",
+      "oxítona terminada em -a",
+      "monossílaba",
+      "proparoxítona terminada em -o"
+     ],
+     "answer": "paroxítona terminada em ditongo",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rctq3kw472zuq",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está correta segundo o Acordo Ortográfico atual?",
+     "options": [
+      "ideia",
+      "idéia",
+      "idéa",
+      "ideía"
+     ],
+     "answer": "ideia",
+     "accept": [],
+     "hint": "Paroxítonas com ditongo aberto -ei perderam o acento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqx4xmn1b24e20",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Por que \"egoísta\" tem acento no í?",
+     "options": [
+      "O i tônico forma hiato com a vogal anterior",
+      "É uma proparoxítona",
+      "Termina em -a",
+      "É oxítona"
+     ],
+     "answer": "O i tônico forma hiato com a vogal anterior",
+     "accept": [],
+     "hint": "Separe as sílabas: e-go-ís-ta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt3zpe61c8tv5i",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual forma está correta?",
+     "options": [
+      "micro-ondas",
+      "microondas",
+      "micro ondas",
+      "micrô-ondas"
+     ],
+     "answer": "micro-ondas",
+     "accept": [],
+     "hint": "Prefixo terminado na mesma vogal que começa a palavra seguinte.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sx3gza1mzq6fq",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra com prefixo está correta?",
+     "options": [
+      "anti-inflamatório",
+      "antinflamatório",
+      "anti inflamatório",
+      "antiinflamatório"
+     ],
+     "answer": "anti-inflamatório",
+     "accept": [],
+     "hint": "Mesma regra de micro-ondas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xqinxvevax2q",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: anali_ar",
+     "options": [],
+     "answer": "analisar",
+     "accept": [],
+     "hint": "Vem de \"análise\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mpo1qkp50b8g",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: genti_eza",
+     "options": [],
+     "answer": "gentileza",
+     "accept": [],
+     "hint": "Substantivo abstrato derivado de adjetivo: -eza.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m2m4fez1ygxr",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual frase usa \"comprimento\" corretamente?",
+     "options": [
+      "O comprimento da mesa é de dois metros.",
+      "Dei um comprimento à professora.",
+      "Fiz um comprimento de mão ao vizinho.",
+      "Mandei comprimentos à família."
+     ],
+     "answer": "O comprimento da mesa é de dois metros.",
+     "accept": [],
+     "hint": "Comprimento = medida; cumprimento = saudação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmjup6c1rd2iiq",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra é proparoxítona e, por isso, acentuada?",
+     "options": [
+      "próximo",
+      "também",
+      "ideia",
+      "gentileza"
+     ],
+     "answer": "próximo",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15brtd11tkek0d",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado.",
+     "options": [],
+     "answer": "idéia → ideia; historia → história; egoista → egoísta; microondas → micro-ondas; prócima → próxima",
+     "accept": [],
+     "hint": "Revise acentos, hífen e o som do X.",
+     "text": "Ontem tive uma idéia: escrever uma historia sobre um robô egoista que morava dentro de um microondas. Na prócima semana, vou ler o texto para a turma e analisar as reações. Também quero medir o comprimento de cada capítulo para não ficar longo demais.",
+     "errors": [
+      {
+       "wrong": "idéia",
+       "right": "ideia"
+      },
+      {
+       "wrong": "historia",
+       "right": "história"
+      },
+      {
+       "wrong": "egoista",
+       "right": "egoísta"
+      },
+      {
+       "wrong": "microondas",
+       "right": "micro-ondas"
+      },
+      {
+       "wrong": "prócima",
+       "right": "próxima"
+      }
+     ]
+    },
+    {
+     "id": "rd5a9cs1ksseaw",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está escrita corretamente?",
+     "options": [
+      "exceção",
+      "excessão",
+      "esceção",
+      "exseção"
+     ],
+     "answer": "exceção",
+     "accept": [],
+     "hint": "Pense na palavra \"exceto\", da mesma família.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1eunug01ycmcko",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado no texto sobre o ditado.",
+     "options": [],
+     "answer": "gentilesa → gentileza; excessão → exceção; tambem → também; analizar → analisar; cumprimento → comprimento",
+     "accept": [],
+     "hint": "Uma das palavras existe, mas tem outro significado.",
+     "text": "A professora pediu, com muita gentilesa, que todos fizessem o ditado. Disse que não haveria excessão: tambem os atrasados deviam participar. Depois, cada aluno devia analizar os próprios erros e medir o cumprimento das frases escritas no caderno para comparar.",
+     "errors": [
+      {
+       "wrong": "gentilesa",
+       "right": "gentileza"
+      },
+      {
+       "wrong": "excessão",
+       "right": "exceção"
+      },
+      {
+       "wrong": "tambem",
+       "right": "também"
+      },
+      {
+       "wrong": "analizar",
+       "right": "analisar"
+      },
+      {
+       "wrong": "cumprimento",
+       "right": "comprimento"
+      }
+     ]
+    }
+   ]
   }
  },
  "books": []
