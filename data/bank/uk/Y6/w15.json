@@ -2347,5 +2347,889 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Baú dos Sete Textos",
+   "premise": "Nas férias na casa da avó, os irmãos Tiago e Bia encontram um baú com sete textos de gêneros diferentes, e cada um revela uma parte da história da família.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O baú do sótão",
+     "synopsis": "Num dia de chuva na casa da avó, Tiago e Bia encontram um baú com sete textos e leem uma fábula.",
+     "text": "Choveu a manhã inteira em Vale Azul, e Tiago já tinha contado todas as goteiras da varanda da avó Celeste. Eram onze. A irmã dele, Bia, tinha oito anos e uma pergunta para cada minuto do dia.\n— Vó, o que tem lá no sótão? — quis saber ela.\n— Poeira, aranhas e um baú que ninguém abre há muito tempo — respondeu a avó, sorrindo. — Se quiserem, podem subir. Mas com cuidado na escada.\nO sótão cheirava a madeira molhada. Embaixo de um lençol velho estava o baú, de ferro e couro. Dentro, os irmãos acharam sete envelopes amarelados, cada um com um número. No primeiro, alguém tinha escrito com letra caprichada: \"Sete textos, sete jeitos de contar. Leia na ordem.\"\nTiago abriu o envelope número 1 e leu em voz alta:\n\"O jabuti e o tucano. O tucano vivia rindo do jabuti, que andava devagar. Um dia, os dois apostaram quem chegaria primeiro ao pé de jabuticaba do outro lado do rio. O tucano voou, comeu frutas pelo caminho e cochilou num galho. O jabuti, sem parar, atravessou a ponte de pedras e chegou antes. Moral: quem é constante vai mais longe do que quem é apenas rápido.\"\n— Isso é uma fábula! — disse Bia. — Tem bicho que fala e tem moral no final.\n— E os animais representam jeitos de ser das pessoas — completou Tiago, lembrando da aula.\nBia olhou para o irmão, que sempre terminava a lição de casa correndo e cheia de erros, e deu uma risadinha. Tiago fingiu que não entendeu.\nQuando desceram, a avó já tinha preparado chocolate quente. Ela viu o envelope na mão deles e ficou em silêncio por um instante.\n— Então vocês acharam o baú do seu avô — disse, baixinho. — Amanhã vocês abrem o segundo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde fica a casa da avó Celeste?",
+       "options": [
+        "Vale Azul",
+        "Rio Claro",
+        "Serra Verde",
+        "Porto Alto"
+       ],
+       "answer": "Vale Azul",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas goteiras Tiago contou na varanda?",
+       "options": [],
+       "answer": "11",
+       "accept": [
+        "onze"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde os irmãos encontram o baú?",
+       "options": [
+        "No sótão",
+        "No porão",
+        "Na garagem",
+        "No quintal"
+       ],
+       "answer": "No sótão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos envelopes havia dentro do baú?",
+       "options": [],
+       "answer": "7",
+       "accept": [
+        "sete"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem ganhou a aposta da fábula?",
+       "options": [
+        "O jabuti",
+        "O tucano",
+        "Os dois empataram",
+        "Ninguém chegou"
+       ],
+       "answer": "O jabuti",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais pistas Bia usa para saber que o texto é uma fábula?",
+       "options": [
+        "Animais que falam e uma moral",
+        "Rimas e estrofes",
+        "Data e assinatura",
+        "Ingredientes e modo de preparo"
+       ],
+       "answer": "Animais que falam e uma moral",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia dá uma risadinha olhando para Tiago?",
+       "options": [
+        "Porque ele faz a lição correndo, como o tucano",
+        "Porque ele tem medo de aranhas",
+        "Porque ele leu a fábula errado",
+        "Porque ele derramou o chocolate"
+       ],
+       "answer": "Porque ele faz a lição correndo, como o tucano",
+       "accept": [],
+       "hint": "Pense em qual animal da fábula é apressado.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a avó ficou em silêncio ao ver o envelope?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A carta do navio",
+     "synopsis": "O segundo envelope traz uma carta antiga, e os irmãos descobrem quem a escreveu.",
+     "text": "Na manhã seguinte, o sol apareceu, mas Tiago e Bia só pensavam no baú. Logo depois do café, abriram o envelope número 2. Dentro havia uma folha fina, escrita a tinta azul.\n\"Santos, 3 de março de 1972.\nQuerida Celeste,\nHoje o navio partiu cedo e o mar estava calmo como o lago de Vale Azul. Meu trabalho aqui é cuidar das máquinas, e o barulho é tão grande que à noite ainda ouço o motor nos sonhos. Sinto falta do seu bolo e das conversas no banco da praça. Prometo voltar antes da festa de junho.\nUm abraço apertado,\nJoaquim.\"\n— É uma carta! — disse Bia. — Tem lugar, data, para quem é, a mensagem e a despedida.\n— E quem assina é o Joaquim — falou Tiago. — Era o nome do vovô.\nOs dois correram para a cozinha. A avó secava a louça e, ao ver a folha, sentou-se devagar.\n— Seu avô trabalhou num navio quando era moço — contou ela. — Ficava meses longe. Toda semana chegava uma carta. Eu guardava todas.\n— E ele voltou antes da festa de junho? — perguntou Bia.\nA avó riu.\n— Voltou no dia da festa, ainda com cheiro de óleo de máquina. Dançou a quadrilha inteira de botina.\nTiago ficou pensando como devia ser esperar uma semana inteira por uma notícia. Ele mandava mensagem para os amigos e recebia a resposta em segundos.\n— A carta demora, mas a gente guarda — disse a avó, como se adivinhasse o pensamento dele.\nNaquela tarde, Tiago escreveu uma carta de verdade, com data e despedida, para o melhor amigo, que morava em outra cidade. Bia desenhou um navio no envelope. Os dois combinaram de colocá-la no correio no dia seguinte, antes de abrir o terceiro texto.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que cidade a carta foi escrita?",
+       "options": [
+        "Santos",
+        "Vale Azul",
+        "Recife",
+        "Belém"
+       ],
+       "answer": "Santos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que ano a carta foi escrita?",
+       "options": [],
+       "answer": "1972",
+       "accept": [
+        "mil novecentos e setenta e dois"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o trabalho de Joaquim no navio?",
+       "options": [
+        "Cuidar das máquinas",
+        "Cozinhar",
+        "Pilotar o navio",
+        "Pescar"
+       ],
+       "answer": "Cuidar das máquinas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que Joaquim diz sentir falta?",
+       "options": [
+        "Do bolo e das conversas na praça",
+        "Do cachorro e do jardim",
+        "Das músicas do rádio",
+        "Do frio da serra"
+       ],
+       "answer": "Do bolo e das conversas na praça",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais partes Bia identifica na carta?",
+       "options": [
+        "Lugar, data, destinatário, mensagem e despedida",
+        "Título, rimas e estrofes",
+        "Manchete e lide",
+        "Personagens e moral"
+       ],
+       "answer": "Lugar, data, destinatário, mensagem e despedida",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quando o avô voltou para Vale Azul?",
+       "options": [],
+       "answer": "No dia da festa",
+       "accept": [
+        "no dia da festa de junho",
+        "dia da festa"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase \"A carta demora, mas a gente guarda\" quer dizer?",
+       "options": [
+        "Cartas são lentas, mas viram lembranças",
+        "Cartas se perdem com facilidade",
+        "É proibido jogar cartas fora",
+        "Mensagens rápidas são melhores"
+       ],
+       "answer": "Cartas são lentas, mas viram lembranças",
+       "accept": [],
+       "hint": "Compare a carta com as mensagens de Tiago.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Tiago decidiu escrever uma carta de verdade para o amigo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A notícia da enchente",
+     "synopsis": "Um recorte de jornal conta uma enchente antiga, e os irmãos aprendem a ler uma notícia.",
+     "text": "O envelope número 3 era mais grosso. Dentro havia um recorte de jornal, amarelo e quebradiço. Tiago o abriu sobre a mesa com muito cuidado.\n\"RIO PIRACEMA TRANSBORDA E ALAGA O CENTRO DE VALE AZUL\nVale Azul, 15 de janeiro de 1980 – Após três dias de chuva forte, o rio Piracema subiu dois metros na madrugada de ontem e invadiu as ruas do centro da cidade. Cerca de quarenta famílias deixaram suas casas e foram abrigadas na escola municipal. Ninguém se feriu. Moradores organizaram uma corrente de ajuda com roupas e comida. Segundo a prefeitura, a água deve baixar até o fim de semana.\"\n— Isso é uma notícia — disse Tiago. — A primeira parte, em letras grandes, é a manchete.\n— E o resto conta o que aconteceu, onde, quando e com quem — completou Bia, contando nos dedos.\nNo canto da foto, um rapaz carregava um saco de arroz nas costas, com a água pelos joelhos. Bia apertou os olhos.\n— Vó! Esse aqui não é o vovô?\nA avó colocou os óculos e sorriu.\n— É ele, sim. Naquele ano, ele já tinha deixado o navio e trabalhava na mercearia. Doou tudo o que podia para as famílias da escola.\n— Mas a notícia não fala o nome dele — reparou Tiago.\n— A notícia conta os fatos principais — explicou a avó. — As histórias das pessoas, muitas vezes, ficam só na memória de quem viveu.\nTiago pensou nisso por um tempo. Depois pegou o caderno e escreveu uma manchete sobre o próprio dia: \"Irmãos descobrem foto antiga do avô em jornal\". Bia achou exagerado, mas pediu para ele ler duas vezes.\nAntes de dormir, Tiago guardou o recorte de volta no envelope, ainda mais devagar do que quando o tinha aberto.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual rio transbordou?",
+       "options": [
+        "Piracema",
+        "Paraná",
+        "Tietê",
+        "São Francisco"
+       ],
+       "answer": "Piracema",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos dias de chuva forte vieram antes da enchente?",
+       "options": [],
+       "answer": "3",
+       "accept": [
+        "três"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas famílias, mais ou menos, deixaram suas casas?",
+       "options": [],
+       "answer": "40",
+       "accept": [
+        "quarenta",
+        "cerca de quarenta"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde as famílias foram abrigadas?",
+       "options": [
+        "Na escola municipal",
+        "Na igreja",
+        "Na mercearia",
+        "No ginásio"
+       ],
+       "answer": "Na escola municipal",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como se chama a parte da notícia em letras grandes?",
+       "options": [
+        "Manchete",
+        "Moral",
+        "Despedida",
+        "Estrofe"
+       ],
+       "answer": "Manchete",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o avô trabalhava em 1980?",
+       "options": [
+        "Na mercearia",
+        "No navio",
+        "Na prefeitura",
+        "Na escola"
+       ],
+       "answer": "Na mercearia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tiago guarda o recorte \"ainda mais devagar\"?",
+       "options": [
+        "Porque agora o recorte tem um valor especial para ele",
+        "Porque estava com sono",
+        "Porque a avó mandou",
+        "Porque o envelope estava rasgado"
+       ],
+       "answer": "Porque agora o recorte tem um valor especial para ele",
+       "accept": [],
+       "hint": "O que ele descobriu na foto?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Em sua opinião, por que a notícia não fala o nome do avô, mesmo ele aparecendo na foto?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O poema da chuva",
+     "synopsis": "O quarto envelope guarda um poema, e Bia descobre o que são versos e estrofes.",
+     "text": "Choveu de novo em Vale Azul, e desta vez ninguém reclamou. Era o dia do envelope número 4. Bia pediu para ler sozinha. Ela respirou fundo e começou:\n\"Chuva no telhado\nA chuva bate no telhado,\ntoca um samba devagar,\ne o quintal, todo molhado,\npõe as plantas pra dançar.\nO sapo canta na poça,\no vento assobia no portão,\ne a casa, mesmo tão nossa,\nvira um grande violão.\"\n— Que bonito! — disse a avó, encostada na porta.\n— Por que as linhas são tão curtas? — perguntou Bia.\n— Cada linha de um poema se chama verso — explicou Tiago, que tinha estudado aquilo na escola. — E cada grupo de versos é uma estrofe. Esse poema tem duas estrofes de quatro versos.\n— E telhado combina com molhado! — Bia bateu palmas. — É rima!\nTiago mostrou outra coisa: no poema, a chuva tocava samba e o vento assobiava, como se fossem pessoas.\n— A chuva não toca de verdade — disse ele. — O poeta faz a gente imaginar.\nBia ficou quieta, ouvindo o barulho no telhado. Ploc, ploc, ploc. Pela primeira vez, a chuva parecia mesmo uma música.\n— Quem escreveu, vó? — perguntou ela.\n— Seu avô. Ele dizia que não sabia escrever poesia, mas escrevia uma por ano, sempre num dia de chuva.\nNaquela noite, Bia fez seu primeiro poema. Tinha só uma estrofe e falava do cachorro da avó, o Farofa, que tinha medo de trovão. Rimava \"Farofa\" com \"sofá\", o que não era bem uma rima. Mas a avó prendeu o papel na geladeira mesmo assim.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem leu o poema em voz alta?",
+       "options": [
+        "Bia",
+        "Tiago",
+        "A avó",
+        "O avô"
+       ],
+       "answer": "Bia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o título do poema?",
+       "options": [
+        "Chuva no telhado",
+        "O sapo na poça",
+        "A casa violão",
+        "Samba do vento"
+       ],
+       "answer": "Chuva no telhado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas estrofes tem o poema do avô?",
+       "options": [],
+       "answer": "2",
+       "accept": [
+        "duas"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos versos tem cada estrofe?",
+       "options": [],
+       "answer": "4",
+       "accept": [
+        "quatro"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com qual palavra \"telhado\" rima no poema?",
+       "options": [
+        "molhado",
+        "devagar",
+        "dançar",
+        "portão"
+       ],
+       "answer": "molhado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quando o avô costumava escrever seus poemas?",
+       "options": [
+        "Num dia de chuva",
+        "No Natal",
+        "Nas férias de julho",
+        "No aniversário da avó"
+       ],
+       "answer": "Num dia de chuva",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a avó prende o poema de Bia na geladeira, mesmo com a rima imperfeita?",
+       "options": [
+        "Porque valoriza o esforço da neta",
+        "Porque a rima estava perfeita",
+        "Porque Tiago pediu",
+        "Porque queria corrigir depois"
+       ],
+       "answer": "Porque valoriza o esforço da neta",
+       "accept": [],
+       "hint": "Pense no que a avó sente pelos netos.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que, depois do poema, a chuva \"parecia mesmo uma música\" para Bia?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A receita perdida",
+     "synopsis": "O quinto texto é uma receita de bolo, e os irmãos aprendem que a ordem dos passos importa.",
+     "text": "O envelope número 5 tinha uma mancha de gordura num canto e cheirava, de leve, a canela.\n— Aposto que é comida — disse Bia.\nEra. Tiago leu:\n\"Bolo de fubá da Celeste\nIngredientes: 3 ovos, 2 xícaras de fubá, 1 xícara de açúcar, 1 xícara de leite, meia xícara de óleo, 1 colher de sopa de fermento e canela a gosto.\nModo de preparo: 1. Bata os ovos com o açúcar. 2. Junte o leite, o óleo e o fubá e misture bem. 3. Por último, acrescente o fermento, mexendo devagar. 4. Coloque na forma untada, salpique canela e leve ao forno médio por cerca de 40 minutos.\"\n— É uma receita — disse Tiago. — Tem a lista de ingredientes e os passos em ordem, com verbos de comando: bata, junte, coloque.\n— Vó, era o bolo que o vovô falava na carta! — lembrou Bia.\nA avó concordou e pegou o avental.\n— Ele escreveu a receita do jeito que eu ensinei. Vamos fazer?\nNa pressa, Bia quis jogar o fermento logo no começo.\n— Espera! — disse Tiago, apontando o papel. — Diz \"por último\".\nEles seguiram cada passo. A avó só ajudou com o forno quente. Enquanto o bolo assava, a cozinha ficou com cheiro de festa de junho.\nQuando ficou pronto, o bolo estava alto e dourado. Farofa, o cachorro, sentou ao lado da mesa com cara de quem também merecia um pedaço.\n— Ficou igualzinho ao meu — disse a avó, com os olhos brilhando.\nTiago percebeu que cada texto do baú era diferente: a fábula ensinava, a carta contava saudade, a notícia informava, o poema fazia sentir, e a receita mandava fazer. Mesmo assim, todos falavam da mesma pessoa.\nBia pediu a receita emprestada para copiar no caderno. Na margem, escreveu: \"Não pular o passo 3.\"",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que era a mancha no envelope número 5?",
+       "options": [
+        "Gordura",
+        "Tinta",
+        "Café",
+        "Água"
+       ],
+       "answer": "Gordura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos ovos a receita pede?",
+       "options": [],
+       "answer": "3",
+       "accept": [
+        "três"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que ingrediente deve entrar por último?",
+       "options": [
+        "O fermento",
+        "O açúcar",
+        "O fubá",
+        "Os ovos"
+       ],
+       "answer": "O fermento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, por quantos minutos, mais ou menos, o bolo fica no forno?",
+       "options": [],
+       "answer": "40",
+       "accept": [
+        "quarenta",
+        "cerca de 40"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais são as duas partes principais da receita?",
+       "options": [
+        "Ingredientes e modo de preparo",
+        "Manchete e lide",
+        "Versos e estrofes",
+        "Saudação e despedida"
+       ],
+       "answer": "Ingredientes e modo de preparo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Bia quase fez de errado?",
+       "options": [
+        "Colocar o fermento no começo",
+        "Esquecer os ovos",
+        "Deixar o bolo queimar",
+        "Usar sal em vez de açúcar"
+       ],
+       "answer": "Colocar o fermento no começo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Tiago, o que a receita faz, diferente dos outros textos?",
+       "options": [
+        "Manda fazer",
+        "Faz sentir",
+        "Informa fatos",
+        "Ensina uma moral"
+       ],
+       "answer": "Manda fazer",
+       "accept": [],
+       "hint": "Lembre-se dos verbos de comando.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que os olhos da avó brilharam quando ela provou o bolo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O diário de capa azul",
+     "synopsis": "O sexto envelope traz uma página de diário, e os irmãos comparam quem conta a história.",
+     "text": "O envelope número 6 não tinha a letra do avô. A letra era redonda, com bolinhas no lugar dos pingos dos is. Dentro havia uma página arrancada de um diário.\n\"Vale Azul, 20 de junho de 1965.\nQuerido diário,\nHoje foi a festa da escola e eu tropecei na quadrilha bem na frente de todo mundo. Quis sumir! Mas um menino novo, de cabelo arrepiado, me ajudou a levantar e disse que era o passo mais original da noite. Todo mundo riu, e eu ri também. Acho que ele se chama Joaquim. Amanhã eu conto mais.\nCeleste, 10 anos.\"\nBia arregalou os olhos.\n— Vó! Foi você que escreveu!\nA avó ficou vermelha como um tomate.\n— Achei que tinha perdido essa página há anos. Seu avô devia ter guardado escondido.\nTiago comparou o diário com a carta do envelope 2.\n— Os dois têm data e começam com \"querido\" ou \"querida\". Mas a carta é para outra pessoa ler. O diário é para a gente mesmo.\n— Por isso no diário dá para contar segredos — disse Bia.\n— E nos dois quem conta é \"eu\" — completou Tiago. — Tudo é contado pelo olhar de quem escreveu.\nA avó contou que, depois daquela festa, ela e Joaquim viraram melhores amigos. Muitos anos depois, se casaram na mesma praça da escola.\n— Então o primeiro passo de vocês foi um tombo — brincou Tiago.\nTodos riram, até Farofa latiu.\nMais tarde, Bia ganhou um caderno de capa azul da avó. Na primeira página, escreveu a data e \"Querido diário\". Depois, parou e pensou um bom tempo antes de continuar. Tinha muita coisa para contar sobre aquela semana.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como era a letra do envelope número 6?",
+       "options": [
+        "Redonda, com bolinhas nos pingos dos is",
+        "Fina e tremida",
+        "Toda em letras maiúsculas",
+        "Igual à do avô"
+       ],
+       "answer": "Redonda, com bolinhas nos pingos dos is",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que ano a página do diário foi escrita?",
+       "options": [],
+       "answer": "1965",
+       "accept": [
+        "mil novecentos e sessenta e cinco"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu com Celeste na festa da escola?",
+       "options": [
+        "Tropeçou na quadrilha",
+        "Perdeu o sapato",
+        "Ganhou um prêmio",
+        "Cantou no palco"
+       ],
+       "answer": "Tropeçou na quadrilha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos anos Celeste tinha quando escreveu o diário?",
+       "options": [],
+       "answer": "10",
+       "accept": [
+        "dez"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a diferença entre a carta e o diário, segundo Tiago?",
+       "options": [
+        "A carta é para outra pessoa; o diário é para quem escreve",
+        "A carta não tem data",
+        "O diário tem moral",
+        "A carta é escrita em versos"
+       ],
+       "answer": "A carta é para outra pessoa; o diário é para quem escreve",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem era o \"menino novo, de cabelo arrepiado\"?",
+       "options": [
+        "Joaquim, o avô",
+        "Tiago",
+        "O professor",
+        "Um primo de Celeste"
+       ],
+       "answer": "Joaquim, o avô",
+       "accept": [],
+       "hint": "Veja o nome escrito no diário.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a avó \"ficou vermelha como um tomate\"?",
+       "options": [
+        "Porque ficou envergonhada com o segredo revelado",
+        "Porque estava com febre",
+        "Porque estava com raiva",
+        "Porque correu muito"
+       ],
+       "answer": "Porque ficou envergonhada com o segredo revelado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô guardou a página do diário escondida por tantos anos?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A lenda da Pedra do Sino",
+     "synopsis": "O último envelope traz uma lenda da cidade e um pedido especial do avô.",
+     "text": "Era o último dia das férias em Vale Azul. Tiago e Bia subiram ao sótão uma última vez para buscar o envelope número 7. Dentro havia duas folhas.\nA primeira contava uma lenda:\n\"Dizem os antigos que, no alto do morro de Vale Azul, existe uma pedra que soa como um sino quando o vento sopra do sul. Contam que ela toca sempre que alguém da cidade parte para longe, para lembrar o caminho de volta. Quem ouve o sino, um dia retorna.\"\n— Isso é uma lenda — disse Tiago. — É uma história antiga, contada de geração em geração, que mistura o lugar de verdade com coisas fantásticas.\n— Então a pedra não toca de verdade? — perguntou Bia, um pouco decepcionada.\n— Ninguém sabe — respondeu a avó, piscando.\nA segunda folha era um bilhete do avô:\n\"Para quem encontrar o baú: guardei aqui sete jeitos de contar a nossa história. Agora é a sua vez. Escreva um texto e coloque no lugar deste.\"\nOs dois irmãos se olharam. Bia queria escrever uma fábula; Tiago, uma notícia. Discutiram um pouco e, no fim, combinaram fazer uma carta juntos, endereçada a quem abrisse o baú no futuro. Contaram da chuva, do bolo de fubá, da foto no jornal e do tombo na quadrilha.\nÀ tarde, subiram o morro com a avó. O vento soprava do sul. Lá de cima, dava para ver o rio Piracema brilhando e o telhado da casa.\nDe repente, ouviram um som fino, metálico, que vinha das pedras. Bia agarrou a mão do irmão.\n— Foi o sino!\nTiago não tinha certeza. Podia ser o vento numa fresta. Podia ser outra coisa. Mas, no carro, voltando para casa, ele percebeu que já estava contando os dias para as próximas férias.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde fica a pedra da lenda?",
+       "options": [
+        "No alto do morro",
+        "Na beira do rio",
+        "Na praça da escola",
+        "Dentro do sótão"
+       ],
+       "answer": "No alto do morro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que direção o vento precisa soprar para a pedra tocar?",
+       "options": [
+        "Do sul",
+        "Do norte",
+        "Do leste",
+        "Do oeste"
+       ],
+       "answer": "Do sul",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas folhas havia no envelope número 7?",
+       "options": [],
+       "answer": "2",
+       "accept": [
+        "duas"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o bilhete do avô pede?",
+       "options": [
+        "Que escrevam um texto e o coloquem no baú",
+        "Que vendam o baú",
+        "Que leiam tudo de novo",
+        "Que plantem uma árvore"
+       ],
+       "answer": "Que escrevam um texto e o coloquem no baú",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que tipo de texto os irmãos escrevem juntos?",
+       "options": [
+        "Uma carta",
+        "Uma fábula",
+        "Uma notícia",
+        "Uma receita"
+       ],
+       "answer": "Uma carta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Tiago explica o que é uma lenda?",
+       "options": [
+        "História antiga que mistura o real com o fantástico",
+        "Texto com ingredientes e passos",
+        "Texto com data e despedida",
+        "Relato de fatos com manchete"
+       ],
+       "answer": "História antiga que mistura o real com o fantástico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que Tiago ficou com vontade de voltar a Vale Azul?",
+       "options": [
+        "Ele já contava os dias para as próximas férias",
+        "Ele levou o baú para casa",
+        "Ele chorou no carro",
+        "Ele escreveu uma notícia"
+       ],
+       "answer": "Ele já contava os dias para as próximas férias",
+       "accept": [],
+       "hint": "Lembre-se do que a lenda diz sobre quem ouve o sino.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Você acha que a pedra tocou de verdade? Explique usando uma pista do capítulo.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
