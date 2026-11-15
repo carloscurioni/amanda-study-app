@@ -2342,5 +2342,901 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Clube da Lupa Amarela",
+   "premise": "Lia e Bento, dois vizinhos curiosos, formam um clube de detetives e resolvem pequenos mistérios da Rua das Hortênsias usando pistas, inferências e muita amizade.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O caso do vaso molhado",
+     "synopsis": "Lia e Bento fundam o Clube da Lupa Amarela e resolvem o primeiro mistério: quem regou as plantas da varanda de Dona Celeste.",
+     "text": "Na Rua das Hortênsias, todo mundo conhecia Lia e Bento. Ela tinha nove anos e uma lupa amarela que tinha ganhado da avó. Ele tinha oito anos, um caderno de capa azul e a mania de anotar tudo.\nNum sábado de manhã, os dois estavam sentados no muro quando Dona Celeste apareceu no portão, com cara de quem não estava entendendo nada.\n— Crianças, aconteceu uma coisa estranha. Eu viajei ontem e deixei as minhas samambaias secas. Hoje cheguei e elas estão todas regadas! A terra está molhadinha. Quem será que entrou na minha varanda?\nLia segurou a lupa como se fosse um troféu.\n— Deixa com a gente, Dona Celeste. Nós somos o Clube da Lupa Amarela.\n— Desde quando? — perguntou Bento, baixinho.\n— Desde agora — respondeu ela.\nOs dois foram até a varanda. Bento anotou tudo: os vasos estavam molhados, mas o chão em volta estava seco. A mangueira estava enrolada, empoeirada, no mesmo lugar de sempre. Não havia pegadas na entrada.\nLia olhou com a lupa para as folhas. Havia gotinhas brilhando em todas elas, até nas mais altas, perto do telhado.\n— Se alguém tivesse usado um regador, teria molhado o chão — disse Bento, coçando a cabeça.\nLia olhou para o céu. Depois olhou para a calçada, que tinha poças aqui e ali. Então ela riu.\n— Dona Celeste, a senhora estava fora de madrugada, não estava?\n— Estava, sim. Por quê?\n— Porque quem regou as suas plantas foi a chuva! Os vasos ficam na beirada da varanda, bem fora do telhado. O chão do meio fica coberto, por isso continuou seco. E olha as poças na rua!\nDona Celeste deu uma gargalhada e trouxe bolo de fubá para os dois detetives.\nNaquela tarde, Bento escreveu na primeira página do caderno: \"Caso 1: resolvido. Pistas pequenas também contam.\"",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que objeto Lia tinha ganhado da avó?",
+       "options": [
+        "Uma lupa amarela",
+        "Um caderno azul",
+        "Um regador",
+        "Uma lanterna"
+       ],
+       "answer": "Uma lupa amarela",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que plantas de Dona Celeste apareceram regadas?",
+       "options": [],
+       "answer": "samambaias",
+       "accept": [
+        "as samambaias"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como estava o chão em volta dos vasos?",
+       "options": [
+        "Seco",
+        "Molhado",
+        "Cheio de terra",
+        "Cheio de pegadas"
+       ],
+       "answer": "Seco",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Bento costumava fazer?",
+       "options": [
+        "Anotar tudo no caderno",
+        "Desenhar mapas",
+        "Contar piadas",
+        "Cuidar de plantas"
+       ],
+       "answer": "Anotar tudo no caderno",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que pista na calçada ajudou Lia a resolver o caso?",
+       "options": [
+        "As poças de água",
+        "Uma pegada de sapato",
+        "Um regador esquecido",
+        "Um bilhete"
+       ],
+       "answer": "As poças de água",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a mangueira empoeirada era uma pista importante?",
+       "options": [
+        "Mostrava que ninguém tinha usado a mangueira",
+        "Mostrava que a mangueira estava quebrada",
+        "Mostrava que alguém tinha escondido a mangueira",
+        "Mostrava que a chuva tinha sujado a mangueira"
+       ],
+       "answer": "Mostrava que ninguém tinha usado a mangueira",
+       "accept": [],
+       "hint": "Pense: se alguém tivesse usado a mangueira, ela ficaria com poeira?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a ideia central da história?",
+       "options": [
+        "Observar pequenas pistas ajuda a resolver mistérios",
+        "Plantas precisam de muita água",
+        "Viajar é sempre divertido",
+        "Bolo de fubá é o melhor bolo"
+       ],
+       "answer": "Observar pequenas pistas ajuda a resolver mistérios",
+       "accept": [],
+       "hint": "Releia a frase que Bento escreveu no caderno.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Bento perguntou \"Desde quando?\" quando Lia falou do clube?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O sumiço das meias",
+     "synopsis": "Meias desaparecem do varal da família de Bento, e o clube descobre que o \"ladrão\" tem quatro patas.",
+     "text": "Na segunda-feira, Bento chegou à escola com uma notícia.\n— Temos um caso novo. Lá em casa estão sumindo meias do varal. Só meias! E sempre uma de cada par.\nLia arregalou os olhos.\n— Um ladrão de meias? Isso é sério.\nDepois da aula, os dois foram até o quintal da casa de Bento. O varal ficava bem baixo, perto da cerca de madeira. Bento abriu o caderno e listou o que sabiam: as meias sumiam durante o dia; nunca sumiam camisetas nem toalhas; as meias que sumiam eram as mais coloridas.\nLia se ajoelhou com a lupa perto da cerca. No chão de terra havia marquinhas redondas, pequenas, com quatro pontinhos em cima de cada uma.\n— Bento, isso não é pegada de gente.\n— Será que é de um passarinho gigante? — ele brincou.\n— Passarinho tem pegada fininha, de três dedos. Isso aqui é de bicho de patinha redonda.\nEles também acharam um fiapo de lã vermelha preso numa tábua solta da cerca. A tábua tinha um buraco embaixo, do tamanho de uma bola de futebol.\nOs dois resolveram ficar de tocaia. Esconderam-se atrás de um vaso grande e esperaram. Esperaram tanto que Bento quase dormiu. De repente, uma cabecinha peluda passou pelo buraco da cerca. Era um filhote de cachorro marrom, de orelhas caídas! Ele deu um pulo, puxou uma meia listrada com os dentes e saiu correndo de volta.\nLia e Bento foram atrás e tocaram a campainha da casa vizinha. Um menino chamado Davi abriu a porta, e lá dentro, numa caminha, estava o filhote dormindo em cima de uma montanha de meias.\n— Ah, então é por isso que o Pingo está sempre tão feliz! — disse Davi, envergonhado.\nAs meias voltaram para casa, a tábua da cerca foi consertada e Bento ganhou um novo amigo para brincar no quintal.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que estava sumindo do varal?",
+       "options": [
+        "Meias",
+        "Camisetas",
+        "Toalhas",
+        "Lençóis"
+       ],
+       "answer": "Meias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais meias sumiam?",
+       "options": [
+        "As mais coloridas",
+        "As mais velhas",
+        "As brancas",
+        "As de lã"
+       ],
+       "answer": "As mais coloridas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que cor era o fiapo de lã preso na cerca?",
+       "options": [],
+       "answer": "vermelha",
+       "accept": [
+        "vermelho"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o nome do filhote?",
+       "options": [],
+       "answer": "Pingo",
+       "accept": [
+        "o Pingo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Lia percebeu que as pegadas não eram de passarinho?",
+       "options": [
+        "Eram redondas, de patinha, e não fininhas de três dedos",
+        "Eram grandes como as de uma pessoa",
+        "Tinham cheiro de cachorro",
+        "Estavam em cima do varal"
+       ],
+       "answer": "Eram redondas, de patinha, e não fininhas de três dedos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o filhote conseguia chegar ao varal?",
+       "options": [
+        "O varal era baixo e havia um buraco na cerca",
+        "Ele subia em uma escada",
+        "Davi o levava até lá",
+        "O portão ficava aberto"
+       ],
+       "answer": "O varal era baixo e havia um buraco na cerca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Davi provavelmente se sentiu ao ver as meias na caminha do Pingo?",
+       "options": [
+        "Envergonhado",
+        "Furioso",
+        "Com medo",
+        "Entediado"
+       ],
+       "answer": "Envergonhado",
+       "accept": [],
+       "hint": "Procure a palavra que descreve como Davi falou.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o Pingo levava as meias para a caminha dele?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A mensagem no banco da praça",
+     "synopsis": "Um bilhete misterioso aparece no banco da praça, e o clube precisa descobrir quem o escreveu e para quem.",
+     "text": "Na quarta-feira, Lia encontrou um papel dobrado embaixo do banco verde da praça. Estava escrito com letra caprichada:\n\"Para quem cuida dos patos: obrigado. Amanhã eu trago a surpresa. Do seu amigo do chapéu.\"\n— Um bilhete secreto! — exclamou Lia. — Bento, precisamos saber quem é o amigo do chapéu.\nBento abriu o caderno.\n— Primeiro: quem cuida dos patos? Todo dia de manhã, o seu Armando, que varre a praça, joga milho para eles.\n— E quem usa chapéu? — perguntou Lia, olhando em volta.\nHavia três pessoas na praça com chapéu. Uma moça de chapéu de palha passeava com um carrinho de bebê. Um homem de boné vermelho corria em volta do lago. E um senhor de chapéu cinza, sentado num banco, lia jornal.\nLia usou a lupa no bilhete. No canto do papel havia uma manchinha de tinta azul e uma pequena mancha de café.\n— A moça do carrinho está com as mãos ocupadas. O homem do boné está correndo, nem para para sentar — disse Bento.\n— E o senhor do chapéu cinza tem uma caneta azul no bolso e um copo de café do lado — completou Lia.\nOs dois se aproximaram com educação.\n— Com licença, o senhor deixou um bilhete no banco verde?\nO senhor sorriu, um pouco surpreso.\n— Deixei, sim. O seu Armando sempre guarda o meu lugar na sombra. Eu queria agradecer, mas sou tímido para falar.\nNo dia seguinte, Lia e Bento voltaram cedo à praça. O senhor do chapéu entregou ao seu Armando uma caixinha. Dentro havia um pequeno pato de madeira, entalhado à mão. O seu Armando ficou tão emocionado que até parou de varrer.\n— Às vezes — escreveu Bento no caderno —, o mistério não é um problema. É um presente esperando para ser entregue.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Lia encontrou o bilhete?",
+       "options": [
+        "Embaixo do banco verde da praça",
+        "Na caixa do correio",
+        "Dentro de um livro",
+        "Perto do lago"
+       ],
+       "answer": "Embaixo do banco verde da praça",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o nome do homem que varria a praça?",
+       "options": [],
+       "answer": "Armando",
+       "accept": [
+        "seu Armando",
+        "Seu Armando"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantas pessoas de chapéu estavam na praça?",
+       "options": [
+        "Três",
+        "Duas",
+        "Quatro",
+        "Uma"
+       ],
+       "answer": "Três",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que manchas Lia encontrou no bilhete?",
+       "options": [
+        "Tinta azul e café",
+        "Lama e grama",
+        "Chocolate e suco",
+        "Tinta vermelha e água"
+       ],
+       "answer": "Tinta azul e café",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o clube descartou o homem de boné vermelho?",
+       "options": [
+        "Ele estava correndo e nem parava para sentar",
+        "Ele estava com as mãos ocupadas",
+        "Ele não sabia escrever",
+        "Ele estava dormindo"
+       ],
+       "answer": "Ele estava correndo e nem parava para sentar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que presente o senhor do chapéu deu ao seu Armando?",
+       "options": [],
+       "answer": "um pato de madeira",
+       "accept": [
+        "pato de madeira",
+        "um pato",
+        "pato"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o senhor escreveu um bilhete em vez de agradecer falando?",
+       "options": [
+        "Porque era tímido",
+        "Porque estava sem voz",
+        "Porque não conhecia o seu Armando",
+        "Porque estava com pressa"
+       ],
+       "answer": "Porque era tímido",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "O que Bento quis dizer quando escreveu que o mistério pode ser \"um presente esperando para ser entregue\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O barulho no sótão",
+     "synopsis": "Na casa da avó de Lia, um barulho estranho no sótão assusta todos, até o clube descobrir de onde ele vem.",
+     "text": "No fim de semana, Lia e Bento foram dormir na casa da avó de Lia, que ficava no fim da rua. Era uma casa antiga, com escada de madeira que rangia e um sótão onde ninguém subia havia muito tempo.\nÀ noite, quando todos estavam deitados, ouviram: tec... tec... tec... E depois um arrastado: shhhhh.\nBento puxou o cobertor até o nariz.\n— Lia, você ouviu isso?\n— Ouvi. E detetive não fica com medo. Detetive fica curioso — respondeu ela, mesmo com o coração batendo rápido.\nNa manhã seguinte, com a luz do sol entrando pela janela, tudo parecia menos assustador. A avó deu uma lanterna para os dois e disse:\n— Podem subir, mas com cuidado.\nO sótão tinha caixas velhas, um baú, um espelho coberto com um lençol e muita poeira. Bento anotou: o barulho só acontecia à noite; o \"tec, tec\" parecia vir do canto perto da janela; o \"shhhh\" parecia algo sendo arrastado.\nLia apontou a lanterna para o canto. A janelinha do sótão tinha um vidro quebrado. Do lado de fora, um galho comprido da mangueira do quintal encostava no telhado.\n— O vento balança o galho, e ele bate na janela: tec, tec — explicou Lia.\n— E o shhhh? — perguntou Bento.\nLia examinou o chão com a lupa e encontrou pedacinhos de folhas secas e alguns gravetos levados para dentro de uma caixa aberta. Lá dentro, bem quietinha, havia uma família de passarinhos fazendo ninho!\n— Eles entram pelo vidro quebrado e arrastam os gravetos para dentro da caixa — sussurrou Lia.\nA avó subiu para ver e ficou encantada. Decidiram deixar o ninho onde estava até os filhotes crescerem. O pai de Lia apenas podou o galho para ele não bater mais na janela.\nNaquela noite, todos dormiram tranquilos. E, de manhã, em vez de barulhos assustadores, ouviram um piado bem fininho.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde ficava a casa da avó de Lia?",
+       "options": [
+        "No fim da rua",
+        "Em outra cidade",
+        "Perto da praça",
+        "Ao lado da escola"
+       ],
+       "answer": "No fim da rua",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quando o barulho acontecia?",
+       "options": [
+        "Só à noite",
+        "Só de manhã",
+        "À tarde",
+        "O dia todo"
+       ],
+       "answer": "Só à noite",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que objeto a avó deu para Lia e Bento subirem ao sótão?",
+       "options": [],
+       "answer": "uma lanterna",
+       "accept": [
+        "lanterna"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que fazia o barulho \"tec, tec\"?",
+       "options": [
+        "Um galho batendo na janela",
+        "Um rato no baú",
+        "A escada de madeira",
+        "O espelho caindo"
+       ],
+       "answer": "Um galho batendo na janela",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que havia dentro da caixa aberta?",
+       "options": [
+        "Um ninho de passarinhos",
+        "Um gato dormindo",
+        "Brinquedos antigos",
+        "Um rádio velho"
+       ],
+       "answer": "Um ninho de passarinhos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que tudo parecia menos assustador na manhã seguinte?",
+       "options": [
+        "Porque havia luz do sol",
+        "Porque os pais estavam acordados",
+        "Porque o barulho tinha parado para sempre",
+        "Porque Bento estava com sono"
+       ],
+       "answer": "Porque havia luz do sol",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase \"Detetive não fica com medo. Detetive fica curioso\" mostra sobre Lia?",
+       "options": [
+        "Que ela tentava ser corajosa mesmo assustada",
+        "Que ela nunca sentia medo",
+        "Que ela queria assustar Bento",
+        "Que ela não acreditava no barulho"
+       ],
+       "answer": "Que ela tentava ser corajosa mesmo assustada",
+       "accept": [],
+       "hint": "Repare no que acontecia com o coração dela.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a família decidiu deixar o ninho no sótão?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A bicicleta trocada",
+     "synopsis": "Bento volta da escola com a bicicleta errada, e o clube precisa encontrar o verdadeiro dono.",
+     "text": "Numa sexta-feira, Bento chegou em casa pedalando, todo feliz. Só quando foi guardar a bicicleta é que percebeu: aquela não era a dele!\nEra igualzinha: azul, com cesta na frente e uma buzina em forma de pato. Mas o banco estava mais alto, e havia um adesivo de estrela no guidão que ele nunca tinha colado.\n— Lia, socorro! Eu peguei a bicicleta de outra pessoa no bicicletário da escola!\nLia chegou correndo com a lupa.\n— Calma. Alguém deve estar com a sua. Vamos achar o dono desta.\nBento abriu o caderno e eles anotaram as pistas. O banco alto mostrava que o dono era mais alto que Bento. O adesivo de estrela era do clube de astronomia da escola. Na cesta havia um papel amassado: uma lista de compras com \"farinha, ovos e fermento\" e, no fim, escrito com outra letra: \"Não esquecer o treino de natação às 4!\".\n— Quem é mais alto, faz astronomia e nada às quatro horas? — pensou Lia em voz alta.\nNa segunda-feira, eles foram até a sala do clube de astronomia e perguntaram quem também fazia natação. Três alunos levantaram a mão. Mas só uma menina, a Yara, do quinto ano, estava andando a pé, com cara de preocupada.\n— Yara, a sua bicicleta tem uma buzina de pato? — perguntou Bento.\n— Tem! E a que eu levei para casa tem um chaveiro de dinossauro que não é meu.\n— O chaveiro é meu! — disse Bento, aliviado.\nOs dois trocaram as bicicletas e riram muito da confusão. A Yara contou que a mãe dela ia fazer um bolo e convidou o clube para provar.\nAntes de sair, Bento colou um adesivo com o seu nome debaixo do banco.\n— Prevenir é melhor que investigar — disse ele, todo orgulhoso.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor eram as duas bicicletas?",
+       "options": [
+        "Azul",
+        "Vermelha",
+        "Verde",
+        "Amarela"
+       ],
+       "answer": "Azul",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que formato tinha a buzina das bicicletas?",
+       "options": [],
+       "answer": "pato",
+       "accept": [
+        "de pato",
+        "um pato"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o banco mais alto mostrava sobre o dono da bicicleta?",
+       "options": [
+        "Que o dono era mais alto que Bento",
+        "Que o dono era mais novo",
+        "Que o dono era professor",
+        "Que o banco estava quebrado"
+       ],
+       "answer": "Que o dono era mais alto que Bento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que clube era o adesivo de estrela?",
+       "options": [
+        "De astronomia",
+        "De natação",
+        "De futebol",
+        "De leitura"
+       ],
+       "answer": "De astronomia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o nome da dona da bicicleta?",
+       "options": [],
+       "answer": "Yara",
+       "accept": [
+        "a Yara"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Yara estava andando a pé e com cara de preocupada?",
+       "options": [
+        "Porque estava com uma bicicleta que não era dela",
+        "Porque tinha perdido o treino",
+        "Porque estava atrasada para a aula",
+        "Porque a bicicleta dela estava furada"
+       ],
+       "answer": "Porque estava com uma bicicleta que não era dela",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, pela lista de compras, o que a família de Yara provavelmente ia fazer?",
+       "options": [
+        "Um bolo",
+        "Uma salada",
+        "Uma sopa",
+        "Um suco"
+       ],
+       "answer": "Um bolo",
+       "accept": [],
+       "hint": "Pense em receitas que usam farinha, ovos e fermento.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "O que Bento quis dizer com \"Prevenir é melhor que investigar\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O dia em que a lupa sumiu",
+     "synopsis": "A lupa amarela desaparece, e Lia precisa resolver o caso mais difícil de todos sem a sua ferramenta favorita.",
+     "text": "Uma manhã, Lia procurou a lupa amarela na mochila e não encontrou. Procurou na escrivaninha, embaixo da cama, dentro dos sapatos. Nada.\n— Bento, aconteceu o pior. Perdi a minha lupa!\n— Como vamos resolver mistérios sem lupa? — perguntou ele, assustado.\nLia respirou fundo.\n— A lupa ajuda a ver. Mas quem pensa somos nós. Vamos investigar do jeito antigo.\nBento abriu o caderno numa página nova. \"Caso 6: o sumiço da lupa.\" Eles fizeram perguntas. Quando foi a última vez que Lia usou a lupa? No dia anterior, no quintal, para olhar uma joaninha. E depois? Ela tinha ido lanchar e ajudado a mãe a guardar as compras.\nOs dois foram até o quintal e procuraram na grama. Encontraram a joaninha, mas não a lupa. Depois foram à cozinha. Lia tentou lembrar cada movimento: tirou o pão da sacola, guardou o leite na geladeira, colocou as maçãs na fruteira...\n— Espera — disse Bento. — Você guardou o leite com que mão?\nLia olhou para as próprias mãos.\n— Com a direita. Na esquerda eu estava segurando... a lupa!\nEla abriu a geladeira bem devagar. Lá estava a lupa amarela, gelada, deitada ao lado da manteiga.\nOs dois caíram na risada até a barriga doer. A mãe de Lia apareceu na porta.\n— Então era isso que estava brilhando ali dentro! Eu achei que fosse um pote de geleia.\nNaquela noite, Lia fez uma cordinha colorida para pendurar a lupa no pescoço. E Bento escreveu no caderno: \"A melhor ferramenta de um detetive é a memória e a calma. A lupa vem em segundo lugar.\"",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Lia procurou a lupa primeiro?",
+       "options": [
+        "Na mochila",
+        "Na geladeira",
+        "No quintal",
+        "Na praça"
+       ],
+       "answer": "Na mochila",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que inseto Lia estava observando no quintal?",
+       "options": [],
+       "answer": "joaninha",
+       "accept": [
+        "uma joaninha",
+        "a joaninha"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia fez depois de usar a lupa no quintal?",
+       "options": [
+        "Foi lanchar e ajudou a mãe a guardar as compras",
+        "Foi dormir",
+        "Foi à casa de Bento",
+        "Foi andar de bicicleta"
+       ],
+       "answer": "Foi lanchar e ajudou a mãe a guardar as compras",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a lupa estava?",
+       "options": [
+        "Na geladeira, ao lado da manteiga",
+        "Na fruteira",
+        "Embaixo da cama",
+        "Na grama do quintal"
+       ],
+       "answer": "Na geladeira, ao lado da manteiga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual pergunta de Bento ajudou a resolver o caso?",
+       "options": [
+        "Com que mão Lia guardou o leite",
+        "Onde estava a joaninha",
+        "Quem tinha comprado o pão",
+        "Quando a mãe chegou"
+       ],
+       "answer": "Com que mão Lia guardou o leite",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a mãe de Lia achou que a lupa era um pote de geleia?",
+       "options": [
+        "Porque ela viu algo brilhando dentro da geladeira",
+        "Porque a lupa estava cheia de geleia",
+        "Porque Lia disse isso a ela",
+        "Porque o pote estava vazio"
+       ],
+       "answer": "Porque ela viu algo brilhando dentro da geladeira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a ideia central da história?",
+       "options": [
+        "Calma e memória ajudam mais do que qualquer ferramenta",
+        "É preciso comprar uma lupa nova",
+        "Geladeiras guardam muitos segredos",
+        "Joaninhas são difíceis de encontrar"
+       ],
+       "answer": "Calma e memória ajudam mais do que qualquer ferramenta",
+       "accept": [],
+       "hint": "Leia a última frase do capítulo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia fez uma cordinha para pendurar a lupa no pescoço?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O grande caso da Rua das Hortênsias",
+     "synopsis": "Os vizinhos preparam uma surpresa secreta para o clube, e Lia e Bento juntam todas as pistas para descobrir o que está acontecendo.",
+     "text": "Durante uma semana inteira, coisas estranhas aconteceram na Rua das Hortênsias. Dona Celeste escondia uma sacola quando Lia passava. O seu Armando cochichava com o senhor do chapéu cinza na praça. Davi e a Yara pararam de conversar assim que Bento chegou perto. E a avó de Lia comprou, de uma vez, três pacotes de bexigas amarelas.\n— Tem alguma coisa acontecendo, Lia — disse Bento. — E todo mundo está escondendo da gente.\nEles abriram o caderno e fizeram uma lista. Pista 1: bexigas amarelas. Pista 2: Dona Celeste comprando farinha e ovos. Pista 3: o senhor do chapéu entalhando alguma coisa de madeira. Pista 4: todos perguntando, sem querer, o que eles iam fazer no sábado à tarde.\nLia pensou, pensou, e um sorriso foi aparecendo no rosto.\n— Amarelo é a cor da nossa lupa. Bolo precisa de farinha e ovos. E todo mundo quer saber se estaremos livres no sábado...\n— Uma festa? — perguntou Bento. — Mas não é aniversário de ninguém!\n— Não é aniversário — disse Lia. — Faz exatamente um mês que o clube resolveu o primeiro caso. O caso do vaso molhado!\nNo sábado, eles fingiram que não sabiam de nada. Quando chegaram à praça, todos os vizinhos gritaram: \"Surpresa!\". Havia bexigas amarelas, bolo de fubá, e o Pingo usava uma gravatinha. O senhor do chapéu entregou a eles uma placa de madeira com as palavras: \"Clube da Lupa Amarela — detetives da nossa rua\".\n— Vocês ajudaram cada um de nós — disse Dona Celeste. — Agora é a nossa vez de agradecer.\nBento abriu o caderno pela última página e escreveu, com a letra mais bonita que conseguiu: \"Caso 7: resolvido. O melhor mistério de todos foi descobrir quantos amigos nós temos.\"",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantos pacotes de bexigas a avó de Lia comprou?",
+       "options": [
+        "Três",
+        "Dois",
+        "Um",
+        "Cinco"
+       ],
+       "answer": "Três",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, de que cor eram as bexigas?",
+       "options": [],
+       "answer": "amarelas",
+       "accept": [
+        "amarela",
+        "amarelo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que todos perguntavam a Lia e Bento?",
+       "options": [
+        "O que eles iam fazer no sábado à tarde",
+        "Onde estava a lupa",
+        "Quem era o amigo do chapéu",
+        "Se eles gostavam de bolo"
+       ],
+       "answer": "O que eles iam fazer no sábado à tarde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o Pingo estava usando na festa?",
+       "options": [
+        "Uma gravatinha",
+        "Um chapéu",
+        "Uma meia",
+        "Um laço"
+       ],
+       "answer": "Uma gravatinha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que presente o senhor do chapéu entregou ao clube?",
+       "options": [
+        "Uma placa de madeira",
+        "Uma lupa nova",
+        "Um caderno azul",
+        "Um pato de madeira"
+       ],
+       "answer": "Uma placa de madeira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que os vizinhos escolheram bexigas amarelas?",
+       "options": [
+        "Porque amarelo é a cor da lupa do clube",
+        "Porque eram as mais baratas",
+        "Porque era a cor favorita de Dona Celeste",
+        "Porque combinavam com o bolo"
+       ],
+       "answer": "Porque amarelo é a cor da lupa do clube",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que estava sendo comemorado?",
+       "options": [
+        "Um mês do primeiro caso resolvido pelo clube",
+        "O aniversário de Lia",
+        "O aniversário de Bento",
+        "A chegada do Pingo"
+       ],
+       "answer": "Um mês do primeiro caso resolvido pelo clube",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia e Bento fingiram que não sabiam da festa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
