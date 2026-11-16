@@ -3964,6 +3964,888 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Keeper's Daughter",
+   "premise": "Two cousins on a small island find an old poem in a tin and use poems, leaflets, a diary, a newspaper and a map to uncover the forgotten story of a lighthouse keeper's daughter.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Tin in the Attic",
+     "synopsis": "While helping Gran clear the museum attic, Ines and her cousin Theo find a rusty tin holding an old poem that seems to describe their island.",
+     "text": "The Gullhaven Island Museum was really just Gran's front room, two corridors and an attic that nobody had properly opened in years. On the first wet Saturday of the holidays, Gran handed Ines and her cousin Theo a torch, two pairs of gloves and a roll of bin bags.\n\"Anything mouldy goes in the bags,\" she said. \"Anything interesting comes to me. And anything with spiders stays exactly where it is.\"\nTheo, who was eleven and claimed to be afraid of nothing, checked every corner twice for spiders.\nThe attic smelled of dust and old rain. Ines worked her way along the low beams, passing cracked picture frames, a broken spinning wheel and a box of glass fishing floats that clinked like quiet bells. Behind the floats, wedged under the eaves, was a flat tin with a picture of a ship painted on the lid. Most of the paint had flaked away, but the name of the ship was still readable: the Marigold.\n\"Theo,\" she called softly. \"Come and look at this.\"\nThe lid was stiff. It took both of them, pulling at opposite edges, before it gave way with a squeak. Inside lay a single sheet of thick paper, folded into quarters. The handwriting was neat and slanted, the ink faded to the colour of weak tea.\nInes read it aloud by torchlight:\n\"Where the white tower blinks its eye\nAnd gulls write circles in the sky,\nCount seven steps from the iron door,\nThen look beneath the oldest floor.\nWhat the sea took, the sea gave back;\nFollow the light along its track.\"\nFor a moment neither of them spoke. Rain drummed on the roof above their heads.\n\"It's a riddle,\" Theo said at last. \"A treasure riddle.\"\n\"It's a poem,\" Ines corrected him, but she was smiling. \"Though it might be both.\"\nThey carried the tin downstairs, carefully, as if it might break. Gran put on her reading glasses and studied the paper for a long time. She ran her thumb over the bottom corner, where someone had drawn a tiny star.\n\"I've never seen this before,\" she admitted. \"And I thought I knew every object in this house.\"\n\"The white tower must be the lighthouse,\" said Ines. \"A tower that blinks its eye. That's the beam turning round.\"\nTheo frowned. \"But the lighthouse hasn't got an iron door. It's got a blue wooden one. I've walked past it a hundred times.\"\n\"Maybe it didn't always,\" Ines said slowly. \"This paper looks really old.\"\nGran tapped the poem. \"Then you two have a research project for the holidays. Find out when this was written and what it means. Use proper evidence, mind. No guessing.\"\nThat night, Ines copied the poem into her notebook. Underneath she wrote three questions: Who wrote it? When? What did the sea give back?\nShe fell asleep with the notebook open on her chest, listening to the lighthouse beam sweep past her window, once every ten seconds, like a slow and patient eye.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where is the Gullhaven Island Museum?",
+       "options": [
+        "In Gran's house",
+        "Inside the lighthouse",
+        "Next to the harbour",
+        "In the village school"
+       ],
+       "answer": "In Gran's house",
+       "accept": [],
+       "hint": "Look at the first sentence.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what name is still readable on the lid of the tin?",
+       "options": [],
+       "answer": "Marigold",
+       "accept": [
+        "the Marigold"
+       ],
+       "hint": "It is the name of a ship.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Gran say should happen to anything with spiders?",
+       "options": [
+        "It stays where it is",
+        "It goes in the bin bags",
+        "It comes to her",
+        "It goes in the tin"
+       ],
+       "answer": "It stays where it is",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what small drawing is in the bottom corner of the paper?",
+       "options": [],
+       "answer": "a star",
+       "accept": [
+        "star",
+        "a tiny star"
+       ],
+       "hint": "Gran runs her thumb over it.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Ines think 'the white tower' means the lighthouse?",
+       "options": [
+        "Its eye 'blinks', like the turning beam",
+        "It is the tallest building in the village",
+        "Gran tells her the answer",
+        "The tin has a lighthouse on the lid"
+       ],
+       "answer": "Its eye 'blinks', like the turning beam",
+       "accept": [],
+       "hint": "Find the line she explains.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Theo doubt that the poem is about the lighthouse?",
+       "options": [
+        "The lighthouse door is wooden, not iron",
+        "The lighthouse is not white",
+        "There are no gulls on the island",
+        "The poem mentions a mountain"
+       ],
+       "answer": "The lighthouse door is wooden, not iron",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Theo checking every corner twice suggest about him?",
+       "options": [
+        "He is more nervous of spiders than he admits",
+        "He is looking for the tin",
+        "He is bored and wants to go home",
+        "He is very tidy"
+       ],
+       "answer": "He is more nervous of spiders than he admits",
+       "accept": [],
+       "hint": "Compare what he claims with what he does.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Gran asks the children to use 'proper evidence' rather than guessing?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what a museum needs to be true.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: What the Leaflet Says",
+     "synopsis": "Ines and Theo read a tourist leaflet about the lighthouse and discover a fact that changes how they understand the poem.",
+     "text": "On Monday the rain stopped, and the island looked freshly washed. Ines and Theo cycled to the harbour, where a rack of leaflets stood outside the ferry office. Most were about boat trips and seal-watching, but one had a photograph of the lighthouse on the front.\nGULLHAVEN LIGHTHOUSE: A GUIDE FOR VISITORS\nBuilt: 1868, from local granite, painted white in 1870.\nHeight: 26 metres, with 112 steps to the lantern room.\nThe light: The original oil lamp was replaced by an electric lamp in 1951. The light became fully automatic in 1989, and the last keeper left the island that year.\nDid you know? In 1931, a fire damaged the base of the tower. The original iron door was replaced with the wooden door you see today.\nVisiting: The tower is closed to the public for safety reasons. The Keeper's Cottage is now a café, open daily from 10 a.m.\nTheo jabbed the leaflet with his finger so hard it nearly tore. \"Iron door! There was an iron door!\"\n\"Before 1931,\" Ines said. She was already writing in her notebook. \"So the poem must have been written before 1931. That's evidence, not a guess.\"\n\"Unless someone wrote it later about the old days,\" Theo pointed out.\nInes paused. He was right; it was possible. She added a question mark next to her note. Good researchers, Gran always said, notice what they don't know as well as what they do.\nThey locked their bikes outside the Keeper's Cottage. Inside, the café was warm and smelled of toast. Photographs of the lighthouse covered the walls: the tower in snow, the tower in fog, the tower with a small crowd of people in long coats standing at its foot.\nThe owner, a tall man called Mr Pellow with flour on his apron, noticed them studying the pictures.\n\"Interested in the old light?\" he asked.\n\"We're researching the iron door,\" Theo said importantly.\nMr Pellow raised his eyebrows. \"Then you'll want the photo by the window. That's the only one I've got of the old door.\"\nThe photograph was small and brown with age. Below the tower stood a dark, heavy-looking door with studs across it, and beside it a girl of about twelve in a pinafore, holding a lantern. Someone had written beneath it in pencil: E.T., 1911.\nInes leaned so close her nose almost touched the glass. In the corner of the photograph, scratched into the stone beside the doorway, was a small shape. It was hard to be sure, but it looked like a star.\n\"Theo,\" she whispered. \"The star. It's the same as the one on the poem.\"\nTheo stared. \"So whoever E.T. was, she knew about the poem. Or she wrote it.\"\nMr Pellow brought them two hot chocolates they had not ordered. \"On the house, for historians,\" he said. \"If you're interested in 1911, the library has the old keepers' records. Mrs Quayle keeps them locked up, but she's kind to anyone who asks politely.\"\nInes wrote E.T. in large letters in her notebook and drew a circle round it. Then, under her list of questions, she added a fourth: Who was the girl with the lantern?",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, in what year was the lighthouse built?",
+       "options": [],
+       "answer": "1868",
+       "accept": [],
+       "hint": "Look at the first fact on the leaflet.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many steps lead to the lantern room?",
+       "options": [],
+       "answer": "112",
+       "accept": [
+        "112 steps"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was the iron door replaced?",
+       "options": [
+        "A fire damaged the base of the tower",
+        "It was too heavy to open",
+        "A storm blew it away",
+        "The keeper wanted a blue door"
+       ],
+       "answer": "A fire damaged the base of the tower",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the Keeper's Cottage used for now?",
+       "options": [
+        "A café",
+        "A museum",
+        "A library",
+        "A ferry office"
+       ],
+       "answer": "A café",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what initials are written under the old photograph?",
+       "options": [],
+       "answer": "E.T.",
+       "accept": [
+        "ET",
+        "E T"
+       ],
+       "hint": "They are written in pencil.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Ines add a question mark to her note about 1931?",
+       "options": [
+        "Theo shows the poem could have been written later about the past",
+        "She cannot read the leaflet's date",
+        "Mr Pellow says the leaflet is wrong",
+        "She forgets what year it was"
+       ],
+       "answer": "Theo shows the poem could have been written later about the past",
+       "accept": [],
+       "hint": "Think about Theo's point.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the star in the photograph suggest?",
+       "options": [
+        "The girl in the photo may be linked to the poem",
+        "The lighthouse was named after a star",
+        "The photograph was taken at night",
+        "Mr Pellow drew on the photo"
+       ],
+       "answer": "The girl in the photo may be linked to the poem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mr Pellow gives the children free hot chocolates?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what he calls them.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Elsie's Diary",
+     "synopsis": "In the library's locked archive, the cousins find a diary written by the keeper's daughter during a terrible storm in 1912.",
+     "text": "Mrs Quayle, the librarian, had silver hair, a cardigan the colour of moss and a key on a long green ribbon. When Ines explained, very politely, what they were researching, she smiled and unlocked a door marked ARCHIVE: STAFF ONLY.\n\"The lighthouse keepers' records,\" she said, lifting a cardboard box onto the table. \"Keeper's name in 1911 was Tregarth. Albert Tregarth. He had one daughter.\"\n\"E.T.,\" breathed Theo.\n\"Elsie Tregarth,\" said Mrs Quayle. \"And among the logbooks, there's something unusual. Her diary.\"\nThe diary was small, with a cracked red cover. Elsie's handwriting was the same neat, slanting hand as the poem. Ines felt a shiver run up her arms. They turned the pages until they reached one marked with a pressed seagull feather.\n14th March 1912\nThe storm began at teatime. By seven o'clock the wind was screaming round the tower like a thing alive, and Father said he had never heard the sea so angry. He went up to trim the lamp every hour. I carried the oil for him, step after step after step, until my legs shook.\nAt ten o'clock we saw a light out on the water where no light should be. Father looked through the glass and went pale. \"A ship,\" he said. \"She's too close to the Teeth.\" The Teeth are the black rocks off the north point. Every child on Gullhaven knows their name.\nFather could not leave the lamp. If the light went out, more ships might be lost. So he sent me running to the village to wake the lifeboat men. I have never run so fast. The rain was so hard it stung my face like gravel, and twice the wind knocked me flat.\nBy the time I reached the harbour my lantern had gone out and I was shouting with no voice left. But they heard me. Within minutes the lifeboat was launched.\nTen sailors were brought ashore before dawn. The ship was called the Marigold. She broke apart on the Teeth, and everything aboard was lost to the sea, except the men.\nMother wrapped me in three blankets and said I was the bravest girl in Cornwall, though I know we are not in Cornwall, and I was not brave. I was terrified the whole way.\nInes closed the diary gently. Nobody spoke.\n\"The Marigold,\" said Theo at last. \"That's the ship on the tin.\"\n\"So the tin came from the wreck,\" Ines said slowly. \"Or someone from the ship gave it to Elsie.\"\nMrs Quayle had been listening from the doorway. \"There's a newspaper report about that rescue in our collection,\" she said. \"Though I warn you, newspapers in those days didn't always tell the whole story.\"\nInes looked down at the diary again. She thought about a girl her own age running through the dark with no light, too frightened to feel brave. Then she looked at the line Elsie had written: everything aboard was lost to the sea.\n\"What the sea took,\" Ines murmured, \"the sea gave back.\"\nTheo's eyes went wide. \"Something from the Marigold. It washed up.\"\n\"Maybe,\" Ines said. \"But we need evidence. Tomorrow, the newspaper.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the name of the lighthouse keeper in 1911?",
+       "options": [],
+       "answer": "Albert Tregarth",
+       "accept": [
+        "Tregarth",
+        "Albert"
+       ],
+       "hint": "Mrs Quayle tells them.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what marks the page of the diary entry?",
+       "options": [],
+       "answer": "a seagull feather",
+       "accept": [
+        "seagull feather",
+        "a pressed seagull feather",
+        "feather"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what are 'the Teeth'?",
+       "options": [
+        "Black rocks off the north point",
+        "The steps of the lighthouse",
+        "A group of lifeboat men",
+        "Waves in a storm"
+       ],
+       "answer": "Black rocks off the north point",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why could Elsie's father not go to the village himself?",
+       "options": [
+        "He had to keep the lamp burning",
+        "He was injured in the storm",
+        "He did not know the way",
+        "He was asleep"
+       ],
+       "answer": "He had to keep the lamp burning",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many sailors were brought ashore?",
+       "options": [],
+       "answer": "ten",
+       "accept": [
+        "10",
+        "ten sailors"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the simile 'stung my face like gravel' show about the rain?",
+       "options": [
+        "It was hard and painful",
+        "It was warm and gentle",
+        "It was very quiet",
+        "It had stopped"
+       ],
+       "answer": "It was hard and painful",
+       "accept": [],
+       "hint": "Think about how gravel would feel.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Elsie say she 'was not brave'?",
+       "options": [
+        "She felt terrified the whole time",
+        "She did not reach the harbour",
+        "Her father did the running",
+        "She stayed at home"
+       ],
+       "answer": "She felt terrified the whole time",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mrs Quayle warns that old newspapers 'didn't always tell the whole story'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about who writes a report and why.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: Two Versions of One Night",
+     "synopsis": "The cousins compare a 1912 newspaper report with Elsie's diary and notice that one person has been left out of the story.",
+     "text": "The newspaper was kept flat in a plastic sleeve. Its pages were yellow and soft as cloth, and the print was tiny. Mrs Quayle found them a magnifying glass.\nTHE WESTERN COURIER, 16th March 1912\nHEROIC RESCUE OFF GULLHAVEN\nGallant Lifeboat Crew Saves Ten\nIn one of the fiercest gales in living memory, the brave men of the Gullhaven lifeboat rescued the entire crew of the cargo ship Marigold on Thursday night.\nThe vessel, carrying timber and general goods from the north, was driven onto the notorious rocks known locally as the Teeth shortly after ten o'clock.\nCoxswain Samuel Rowe, 54, who led the crew of eight oarsmen, described the conditions as \"the worst I have seen in forty years at sea\".\n\"We could barely see the bow of our own boat,\" he told this newspaper. \"But we knew there were men out there, and that was enough.\"\nThe ten sailors, cold but unhurt, were taken into homes in the village. The Marigold's cargo is believed to have been lost entirely.\nThe lighthouse keeper, Mr A. Tregarth, kept the light burning throughout the night.\nTheo read it twice, then sat back with his arms folded. \"That's not fair.\"\n\"What isn't?\" said Ines, although she already knew.\n\"Elsie isn't in it! Not even one line. She ran all the way in the storm, and they don't even mention her.\"\nInes laid the diary and the newspaper side by side. She took a pencil and made two columns in her notebook: DIARY and NEWSPAPER.\nIn the DIARY column she wrote: Elsie ran to wake the lifeboat men. Wind knocked her flat twice. Lantern went out. She felt terrified.\nIn the NEWSPAPER column she wrote: Lifeboat crew are heroes. Coxswain is quoted. Keeper kept the light burning. No mention of how the crew found out.\n\"Look,\" she said. \"Both texts agree on the main facts. The date, the time, the rocks, ten sailors saved. But the newspaper is written to make the lifeboat crew sound heroic. The headline says 'Heroic' and 'Gallant'. It only quotes one person, the man in charge.\"\n\"And Elsie's diary is all about how she felt,\" Theo said. \"It's personal.\"\n\"Exactly. The diary is first person and private. She never expected anyone else to read it. The newspaper is public, so it chooses what to include.\" Ines tapped the line about the cargo. \"And here's something else. The newspaper says the cargo was lost entirely. But the poem says the sea gave something back.\"\nMrs Quayle, who had been quietly sorting papers, looked up. \"There was a story my grandmother used to tell,\" she said. \"That after the Marigold sank, something washed up in a cove on the north side. Something nobody ever found again. I always thought it was just a tale.\"\n\"Which cove?\" asked Theo, already reaching for his coat.\n\"Nobody knows. That's rather the point of a tale.\" Mrs Quayle smiled. \"But the keepers made maps of the coastline. You'll find one in the bottom of that box.\"\nInes lifted out a folded sheet, stiff with age. At the very edge of the north coast, in pencil, someone had drawn a tiny star.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the newspaper?",
+       "options": [],
+       "answer": "The Western Courier",
+       "accept": [
+        "Western Courier"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the Marigold carrying?",
+       "options": [
+        "Timber and general goods",
+        "Passengers and post",
+        "Fish and salt",
+        "Coal and iron"
+       ],
+       "answer": "Timber and general goods",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who is the only person quoted in the newspaper?",
+       "options": [],
+       "answer": "Samuel Rowe",
+       "accept": [
+        "Coxswain Samuel Rowe",
+        "the coxswain",
+        "Rowe"
+       ],
+       "hint": "He led the lifeboat crew.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which detail do both the diary and the newspaper agree on?",
+       "options": [
+        "Ten sailors were saved",
+        "Elsie raised the alarm",
+        "The cargo washed up",
+        "The lantern went out"
+       ],
+       "answer": "Ten sailors were saved",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which words in the headlines show that the newspaper wants readers to admire the crew?",
+       "options": [
+        "Heroic and Gallant",
+        "Fiercest and gale",
+        "Cargo and timber",
+        "Rescue and ship"
+       ],
+       "answer": "Heroic and Gallant",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Ines describe the difference between the two texts?",
+       "options": [
+        "The diary is private and personal; the newspaper is public and chooses what to include",
+        "The diary is false and the newspaper is true",
+        "The newspaper is longer, so it is more reliable",
+        "Both texts were written by Elsie"
+       ],
+       "answer": "The diary is private and personal; the newspaper is public and chooses what to include",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is the star on the map important?",
+       "options": [
+        "It matches the star on the poem and in the photo",
+        "It shows where the lighthouse is",
+        "It marks the village library",
+        "It shows where the Teeth are"
+       ],
+       "answer": "It matches the star on the poem and in the photo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the newspaper left Elsie out of its report?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about who the reporter spoke to and what made a good headline.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Following the Map",
+     "synopsis": "Using the keeper's map and a tide table, Ines and Theo plan a safe trip to the north cove marked with a star.",
+     "text": "Gran listened to everything they had found without interrupting once. When they had finished, she spread the keeper's map on the kitchen table and weighed down the corners with mugs.\n\"The cove with the star is Pell's Hollow,\" she said. \"I went there as a girl. You can only get in at low tide. When the tide comes in, the water fills the whole cove right up to the cliff.\"\nTheo's face fell. \"So we can't go?\"\n\"I didn't say that. I said you can't go without planning properly.\" Gran pulled a thin booklet from a drawer. \"This is the tide table. Read it carefully.\"\nInes found the right page and ran her finger down the columns.\nTIDE TABLE: GULLHAVEN NORTH\nWednesday\nLow water: 11:40 a.m.\nHigh water: 5:52 p.m.\nSafety advice: Access to Pell's Hollow is only safe from two hours before low water until one hour after. Always check the weather forecast. Never visit alone. Tell someone where you are going and when you will return.\n\"So we can go in from 9:40,\" Ines worked out, \"and we have to be out by 12:40.\"\n\"Three hours,\" Gran said. \"And I'm coming with you. That's not negotiable.\"\nTheo pretended to groan, but Ines could see he was pleased.\nOn the map, the path to Pell's Hollow was drawn as a dotted line. The keeper had written instructions in tiny capitals along the edge:\nFROM THE IRON DOOR, WALK NORTH ALONG THE CLIFF PATH. PASS THE STANDING STONE ON YOUR LEFT. AT THE BROKEN WALL, TURN TOWARDS THE SEA. GO DOWN THE CUT STEPS. THE HOLLOW IS BELOW.\n\"Count seven steps from the iron door,\" Theo quoted. \"Seven steps! Maybe it means the cut steps going down.\"\n\"Or seven steps from the door of the lighthouse,\" said Ines. \"The poem could mean either. We'll have to test both.\"\nOn Wednesday morning the sky was pale and calm, and the forecast promised light winds. They packed sandwiches, a torch, a tape measure, Ines's notebook and a camera. Gran wrote a note for the fridge: Gone to Pell's Hollow with the children. Back by 1 p.m.\nThey began at the lighthouse. Ines stood with her back against the wooden door where the iron one had once been, and took seven ordinary steps forward. She stopped on bare grass. There was nothing there except a beetle and a dandelion.\n\"Not that, then,\" said Theo.\nThey followed the cliff path north. The standing stone appeared on their left, leaning slightly, as if it was tired. Further on, a broken wall ran out towards the edge, and beside it, worn into the rock, a narrow set of steps led down towards the sea.\nInes counted them as she went. \"One, two, three...\"\nAt the bottom of the seventh step, she stopped. The rock beneath her feet was flat and smooth, almost like a floor. And in the corner of it, half-hidden by seaweed, was a star.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the cove marked with a star?",
+       "options": [],
+       "answer": "Pell's Hollow",
+       "accept": [
+        "Pells Hollow"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, at what time is low water on Wednesday?",
+       "options": [],
+       "answer": "11:40 a.m.",
+       "accept": [
+        "11:40",
+        "11.40",
+        "11:40 am",
+        "eleven forty"
+       ],
+       "hint": "Check the tide table.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, according to the safety advice, when must visitors leave Pell's Hollow?",
+       "options": [
+        "One hour after low water",
+        "Two hours after low water",
+        "At high water",
+        "At midday exactly"
+       ],
+       "answer": "One hour after low water",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which landmark do they pass on their left?",
+       "options": [
+        "The standing stone",
+        "The broken wall",
+        "The ferry office",
+        "The Keeper's Cottage"
+       ],
+       "answer": "The standing stone",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Gran write a note for the fridge?",
+       "options": [
+        "The safety advice says to tell someone where you are going",
+        "She wants to remember to buy bread",
+        "Theo asked her to",
+        "The map tells her to"
+       ],
+       "answer": "The safety advice says to tell someone where you are going",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the simile 'leaning slightly, as if it was tired' suggest about the stone?",
+       "options": [
+        "It is old and tilted",
+        "It is moving",
+        "It is very small",
+        "It has just been built"
+       ],
+       "answer": "It is old and tilted",
+       "accept": [],
+       "hint": "Think about how a tired person stands.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ines's decision to 'test both' meanings show about her?",
+       "options": [
+        "She checks possibilities instead of assuming",
+        "She cannot make decisions",
+        "She does not trust Gran",
+        "She wants to finish quickly"
+       ],
+       "answer": "She checks possibilities instead of assuming",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Gran insists on coming with the children?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about the tide and the cliff.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Beneath the Oldest Floor",
+     "synopsis": "In Pell's Hollow, the cousins find what Elsie hid more than a century ago, along with a second, shorter poem.",
+     "text": "Gran checked her watch. \"Ten twenty. We have just over two hours. Use them well.\"\nInes knelt on the flat rock and brushed the seaweed aside. The star was carved deeply, much more carefully than the scratch on the lighthouse wall. Around it, the rock was cracked in a neat rectangle, as if a slab had been cut and fitted back into place.\n\"Then look beneath the oldest floor,\" Theo whispered. \"The rock is the floor! It's older than any house.\"\nThe slab was heavy. Gran and Theo pushed from one side while Ines pulled from the other, and slowly, with a grinding scrape, it slid aside. Underneath was a hollow the size of a shoebox, lined with smooth pebbles. And inside the hollow sat a small wooden chest, darkened by salt and time, bound with a thin strap of leather.\nNobody moved.\n\"Go on,\" said Gran softly. \"You found it.\"\nInes lifted the chest out. It was lighter than she expected. The strap crumbled when she touched it. Inside, wrapped in oilcloth, was a ship's bell no bigger than a teacup, a brass compass with a cracked glass face, and a folded piece of paper.\nThe bell had letters stamped round its rim: MARIGOLD.\n\"The sea gave back,\" Ines said, and her voice wobbled a little. \"These washed up from the wreck. Elsie found them and hid them here.\"\n\"But why hide them?\" asked Theo. \"Why not give them to someone?\"\nInes unfolded the paper. The same neat, slanting writing.\nFor whoever follows the light:\nThey wrote about the brave men, and they were brave.\nThey did not write about me, and that is all right.\nBut I wanted one small thing to be mine to keep:\na secret that only the sea and I would know.\nIf you have found it, you have followed my steps.\nTake care of them. — E.T., 1913\nFor a long while the only sound was the waves turning over pebbles at the far end of the cove.\n\"She wasn't upset that she was left out,\" Theo said quietly. \"Not really. She just wanted something that was hers.\"\n\"She was a bit upset,\" Ines said. \"Look, she says 'and that is all right', but she still mentions it first. If it didn't matter, she wouldn't have written it.\"\nTheo considered this. \"So she's saying it's fine, but maybe she's trying to make herself believe it.\"\n\"That's inference,\" said Gran, sounding pleased. \"Reading between the lines.\"\nInes photographed everything exactly where it had been found before they moved it. She measured the hollow and wrote the measurements in her notebook. Theo sketched the carving. Then Gran looked at her watch again.\n\"Twelve fifteen. Time to go.\"\nAlready the first thin fingers of water were sliding across the sand. They wrapped the chest in a jumper, climbed the seven steps and walked back along the cliff path without saying much. Behind them, the tide crept slowly into Pell's Hollow and covered the oldest floor once more.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what time is it when Gran first checks her watch?",
+       "options": [],
+       "answer": "ten twenty",
+       "accept": [
+        "10:20",
+        "10.20",
+        "twenty past ten"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is carved on the rock?",
+       "options": [
+        "A star",
+        "A ship",
+        "A bell",
+        "A lighthouse"
+       ],
+       "answer": "A star",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which object has MARIGOLD stamped on it?",
+       "options": [
+        "The ship's bell",
+        "The compass",
+        "The wooden chest",
+        "The oilcloth"
+       ],
+       "answer": "The ship's bell",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what year is written at the end of Elsie's note?",
+       "options": [],
+       "answer": "1913",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Theo decide 'the oldest floor' means?",
+       "options": [
+        "The rock of the cove",
+        "The floor of the lighthouse",
+        "The attic floor",
+        "The seabed"
+       ],
+       "answer": "The rock of the cove",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what evidence does Ines use to argue that Elsie was 'a bit upset'?",
+       "options": [
+        "Elsie mentions being left out first, even though she says it is all right",
+        "Elsie says she is angry",
+        "Elsie tore up the newspaper",
+        "Elsie refused to write any more"
+       ],
+       "answer": "Elsie mentions being left out first, even though she says it is all right",
+       "accept": [],
+       "hint": "Look at the order of her lines.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Ines photograph the objects before moving them?",
+       "options": [
+        "To record exactly where they were found",
+        "To post the photos online",
+        "Because Theo asked for a picture",
+        "Because the camera was new"
+       ],
+       "answer": "To record exactly where they were found",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Elsie wanted 'one small thing to be mine to keep'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Connect this to the newspaper report.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Labels for the Museum",
+     "synopsis": "Ines and Theo help Gran create a new exhibition and must decide how to tell Elsie's story fairly.",
+     "text": "For the rest of the holidays, the front room of the Gullhaven Island Museum was busier than it had been in years.\nGran cleared a glass case by the window. The bell, the compass and both of Elsie's poems were laid out on dark blue cloth. Mrs Quayle lent them a copy of the newspaper report and a photograph of Elsie's diary page. Mr Pellow brought over the old photo of the girl with the lantern and refused to take it back.\n\"It belongs with the rest of the story,\" he said.\nThe hardest job was writing the labels. Gran gave them a rule: each label had to be under fifty words, true, and interesting enough to make a visitor stop.\nTheo's first attempt was: THE BRAVEST GIRL ON GULLHAVEN, WHO SAVED TEN SAILORS SINGLE-HANDED.\nInes shook her head. \"She didn't save them single-handed. The lifeboat crew rowed out in the storm. That's in the evidence too.\"\n\"But the newspaper left her out!\"\n\"So we shouldn't do the same thing the other way round,\" Ines said. \"We tell the whole story. Everyone who helped.\"\nTheo sighed and crossed it out. They argued, rewrote and argued again. In the end, the main label read:\nON 14TH MARCH 1912, the cargo ship Marigold struck the rocks known as the Teeth. Keeper Albert Tregarth kept the light burning. His daughter Elsie ran through the storm to raise the alarm. The lifeboat crew rescued all ten sailors.\nInes counted the words twice. Exactly forty.\nUnderneath, in smaller letters, they added: Elsie hid these objects from the wreck in Pell's Hollow in 1913. They were found again by two young researchers more than a hundred years later.\n\"Researchers,\" Theo repeated, grinning. \"That's us.\"\nOn the last Saturday of the holidays, the exhibition opened. Gran had put a sign outside, and Mr Pellow had told everyone in the café, so a small crowd came: fishermen, families from the ferry, a teacher from the mainland, two children who pressed their noses against the glass exactly the way Ines had done in the café.\nA little girl in a yellow raincoat read the label slowly, her lips moving. Then she looked up at Ines.\n\"Was she scared?\" she asked. \"Elsie?\"\n\"Yes,\" said Ines. \"She wrote that she was terrified the whole way.\"\nThe girl thought about that. \"But she still went.\"\n\"She still went,\" Ines agreed.\nThat evening, after the visitors had gone, Ines sat at her window with her notebook. She looked at her list of questions from the very first night. Who wrote it? When? What did the sea give back? Who was the girl with the lantern? Every one of them now had an answer, and every answer had evidence beside it.\nAt the bottom of the page, she wrote one more line:\nSometimes the most important part of a story is the part someone forgot to write down.\nOutside, the lighthouse beam swept past once every ten seconds, steady and patient, the way it had for more than a century.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour is the cloth in the glass case?",
+       "options": [
+        "Dark blue",
+        "Red",
+        "White",
+        "Green"
+       ],
+       "answer": "Dark blue",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the maximum number of words allowed on each label?",
+       "options": [],
+       "answer": "fifty",
+       "accept": [
+        "50",
+        "under fifty",
+        "under 50"
+       ],
+       "hint": "Gran gives them a rule.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many words are in the final main label?",
+       "options": [],
+       "answer": "forty",
+       "accept": [
+        "40"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Ines reject Theo's first label?",
+       "options": [
+        "It is not true that Elsie saved the sailors single-handed",
+        "It is too short",
+        "It does not mention the bell",
+        "It is written in capital letters"
+       ],
+       "answer": "It is not true that Elsie saved the sailors single-handed",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Ines mean by 'we shouldn't do the same thing the other way round'?",
+       "options": [
+        "They should not leave out the lifeboat crew, as the newspaper left out Elsie",
+        "They should write the label backwards",
+        "They should not copy the newspaper's headline",
+        "They should start with the end of the story"
+       ],
+       "answer": "They should not leave out the lifeboat crew, as the newspaper left out Elsie",
+       "accept": [],
+       "hint": "Think back to the newspaper report.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the little girl's comment 'But she still went' show she has understood?",
+       "options": [
+        "Being brave can mean acting even when you are scared",
+        "Elsie was not really scared",
+        "The lifeboat was faster than Elsie",
+        "Elsie wanted to be famous"
+       ],
+       "answer": "Being brave can mean acting even when you are scared",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which detail links the ending back to the first chapter?",
+       "options": [
+        "The lighthouse beam sweeping past every ten seconds",
+        "The yellow raincoat",
+        "Mr Pellow's café",
+        "The newspaper headline"
+       ],
+       "answer": "The lighthouse beam sweeping past every ten seconds",
+       "accept": [],
+       "hint": "Look at the last paragraph of both chapters.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Ines writes that the most important part of a story can be 'the part someone forgot to write down'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what the newspaper missed.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
