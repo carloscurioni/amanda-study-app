@@ -2032,7 +2032,1938 @@
      "errors": []
     }
    ]
+  },
+  "pt": {
+   "topic": "Revisão do 1º trimestre: classes de palavras e gêneros jornalísticos",
+   "questions": [
+    {
+     "id": "rz3u19z1t6swli",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"A menina comprou dois livros novos\", qual palavra é um numeral?",
+     "options": [
+      "dois",
+      "menina",
+      "novos",
+      "comprou"
+     ],
+     "answer": "dois",
+     "accept": [],
+     "hint": "Procure a palavra que indica quantidade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "resjgm61utcxn6",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"O cachorro latiu alto\", qual é a classe da palavra \"O\"?",
+     "options": [
+      "Artigo",
+      "Pronome",
+      "Adjetivo",
+      "Numeral"
+     ],
+     "answer": "Artigo",
+     "accept": [],
+     "hint": "Ela vem antes do substantivo e o determina.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqywgl81am396w",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual é o substantivo na frase \"A chuva forte alagou a rua\" que indica o que alagou?",
+     "options": [],
+     "answer": "chuva",
+     "accept": [
+      "a chuva"
+     ],
+     "hint": "Quem praticou a ação de alagar?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rei5b471kov1pe",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra é um adjetivo em \"Os alunos curiosos visitaram o museu\"?",
+     "options": [
+      "curiosos",
+      "alunos",
+      "visitaram",
+      "museu"
+     ],
+     "answer": "curiosos",
+     "accept": [],
+     "hint": "Qual palavra dá uma característica a um substantivo?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pr235dq1tikl",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"Ela emprestou o caderno para mim\", as palavras \"Ela\" e \"mim\" são:",
+     "options": [
+      "Pronomes",
+      "Artigos",
+      "Numerais",
+      "Adjetivos"
+     ],
+     "answer": "Pronomes",
+     "accept": [],
+     "hint": "Elas substituem ou indicam pessoas do discurso.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14bz57mbkl6t2",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é o numeral ordinal na frase \"Lucas chegou em terceiro lugar\"?",
+     "options": [
+      "terceiro",
+      "lugar",
+      "chegou",
+      "em"
+     ],
+     "answer": "terceiro",
+     "accept": [],
+     "hint": "Ordinais indicam posição numa sequência.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gr19dq1gpmmfd",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual alternativa tem um substantivo coletivo?",
+     "options": [
+      "A matilha corria pelo campo.",
+      "O lobo corria pelo campo.",
+      "Ele corria pelo campo.",
+      "Corria rápido pelo campo."
+     ],
+     "answer": "A matilha corria pelo campo.",
+     "accept": [],
+     "hint": "Coletivo nomeia um conjunto de seres da mesma espécie.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry7w3vedlprvz",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual pontuação completa corretamente a frase \"Que dia lindo___\"?",
+     "options": [
+      "!",
+      "?",
+      ",",
+      ";"
+     ],
+     "answer": "!",
+     "accept": [],
+     "hint": "A frase expressa emoção, admiração.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g70jmlplb89",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Comprei maçãs, bananas e uvas\", para que servem as vírgulas?",
+     "options": [
+      "Separar itens de uma enumeração",
+      "Indicar uma pergunta",
+      "Marcar a fala de um personagem",
+      "Encerrar a frase"
+     ],
+     "answer": "Separar itens de uma enumeração",
+     "accept": [],
+     "hint": "Veja o que está entre as vírgulas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b3n6cyog9lbc",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual parte de uma notícia vem logo abaixo do título e o complementa?",
+     "options": [
+      "Linha fina (subtítulo)",
+      "Lide",
+      "Assinatura",
+      "Legenda"
+     ],
+     "answer": "Linha fina (subtítulo)",
+     "accept": [],
+     "hint": "É uma frase curta entre o título e o primeiro parágrafo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r145fpqprmjpej",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O primeiro parágrafo da notícia, que responde o quê, quem, quando e onde, se chama:",
+     "options": [
+      "Lide",
+      "Manchete",
+      "Corpo",
+      "Rodapé"
+     ],
+     "answer": "Lide",
+     "accept": [],
+     "hint": "É uma palavra de origem inglesa adaptada ao português.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15o79qqtumb7d",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual característica é típica de um relato pessoal?",
+     "options": [
+      "Narração em 1ª pessoa de fatos vividos",
+      "Linguagem totalmente impessoal",
+      "Presença de rimas",
+      "Personagens de animais falantes"
+     ],
+     "answer": "Narração em 1ª pessoa de fatos vividos",
+     "accept": [],
+     "hint": "Quem conta participou dos acontecimentos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r60ywj91vakcx4",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase é mais adequada para uma notícia?",
+     "options": [
+      "A biblioteca municipal reabriu nesta segunda-feira após reforma.",
+      "Eu adorei ver a biblioteca nova, foi incrível!",
+      "Era uma vez uma biblioteca encantada.",
+      "Você precisa visitar a biblioteca já!"
+     ],
+     "answer": "A biblioteca municipal reabriu nesta segunda-feira após reforma.",
+     "accept": [],
+     "hint": "Notícias usam linguagem objetiva e informam fatos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rceibg71d6o9ez",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual tempo verbal costuma predominar nos fatos narrados num relato?",
+     "options": [
+      "Pretérito (passado)",
+      "Futuro",
+      "Imperativo",
+      "Nenhum verbo"
+     ],
+     "answer": "Pretérito (passado)",
+     "accept": [],
+     "hint": "O relato conta algo que já aconteceu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj555touagvfk",
+     "subject": "pt",
+     "type": "open",
+     "q": "Reescreva a frase em linguagem de notícia, de forma objetiva: \"Gente, ontem choveu demais e a escola ficou toda alagada!\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Tire as marcas de emoção e de conversa e informe o fato.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17901me1st462l",
+     "subject": "pt",
+     "type": "open",
+     "q": "Transforme em relato pessoal (1ª pessoa) a frase: \"Os alunos do 7º ano visitaram uma fazenda e plantaram árvores.\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Conte como se você fosse um dos alunos.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Revisão do 1º trimestre: narrativas populares e poesia",
+   "questions": [
+    {
+     "id": "r1py56db1u1n1zk",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual gênero é uma narrativa curta, geralmente com animais que agem como pessoas, e termina com uma moral?",
+     "options": [
+      "Fábula",
+      "Lenda",
+      "Poema",
+      "Notícia"
+     ],
+     "answer": "Fábula",
+     "accept": [],
+     "hint": "Pense no ensinamento no final.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbztba91jq585a",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual gênero explica, de forma fantástica, a origem de algo e é transmitido oralmente de geração em geração?",
+     "options": [
+      "Lenda",
+      "Fábula",
+      "Relato",
+      "Reportagem"
+     ],
+     "answer": "Lenda",
+     "accept": [],
+     "hint": "Costuma estar ligado a um lugar ou povo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15jh7y05s64w7",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O conto popular costuma ter autoria:",
+     "options": [
+      "Desconhecida, transmitida pela tradição oral",
+      "Sempre de um único escritor famoso",
+      "De um jornalista",
+      "De um cientista"
+     ],
+     "answer": "Desconhecida, transmitida pela tradição oral",
+     "accept": [],
+     "hint": "Ele passa de boca em boca.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl8tcvq168hidi",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama cada linha de um poema?",
+     "options": [],
+     "answer": "verso",
+     "accept": [
+      "versos"
+     ],
+     "hint": "Não é estrofe.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uzrj5g10a7lnm",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama o conjunto de versos de um poema?",
+     "options": [],
+     "answer": "estrofe",
+     "accept": [
+      "estrofes"
+     ],
+     "hint": "É como um \"parágrafo\" do poema.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r123lb1tpb2uv4",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quando as palavras finais de dois versos têm sons parecidos, temos:",
+     "options": [
+      "Rima",
+      "Moral",
+      "Lide",
+      "Diálogo"
+     ],
+     "answer": "Rima",
+     "accept": [],
+     "hint": "Ex.: \"coração\" e \"canção\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fjyhbxdx60py",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na fábula da cigarra e da formiga, qual valor a formiga representa?",
+     "options": [
+      "Trabalho e prevenção",
+      "Preguiça",
+      "Mentira",
+      "Vaidade"
+     ],
+     "answer": "Trabalho e prevenção",
+     "accept": [],
+     "hint": "O que ela fez durante o verão?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxo82k7urkco8",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destas personagens é típica das lendas brasileiras?",
+     "options": [
+      "Curupira",
+      "Chapeuzinho Vermelho",
+      "Cinderela",
+      "Pinóquio"
+     ],
+     "answer": "Curupira",
+     "accept": [],
+     "hint": "É um protetor das matas com os pés virados para trás.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w5jibn122fgmf",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual expressão é um início típico de conto popular?",
+     "options": [
+      "Era uma vez...",
+      "Segundo dados oficiais...",
+      "Querido diário...",
+      "Prezado senhor..."
+     ],
+     "answer": "Era uma vez...",
+     "accept": [],
+     "hint": "Pense em como as histórias antigas começam.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxmk9z810vf1cr",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em \"O vento cantava na janela\", qual recurso poético aparece?",
+     "options": [
+      "Personificação",
+      "Rima",
+      "Onomatopeia",
+      "Numeral"
+     ],
+     "answer": "Personificação",
+     "accept": [],
+     "hint": "O vento faz algo próprio de pessoas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmusidy1nwwc6e",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual estratégia ajuda a descobrir o sentido de uma palavra desconhecida no texto?",
+     "options": [
+      "Observar o contexto da frase",
+      "Pular o parágrafo inteiro",
+      "Ler só o título",
+      "Contar as letras da palavra"
+     ],
+     "answer": "Observar o contexto da frase",
+     "accept": [],
+     "hint": "As palavras ao redor dão pistas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kyhdhrjiaue5",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é a principal diferença entre fábula e lenda?",
+     "options": [
+      "A fábula termina com uma moral; a lenda explica algo de forma fantástica",
+      "A lenda sempre rima",
+      "A fábula é sempre verdadeira",
+      "A lenda é escrita como notícia"
+     ],
+     "answer": "A fábula termina com uma moral; a lenda explica algo de forma fantástica",
+     "accept": [],
+     "hint": "Pense no objetivo de cada uma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgjzaiorivj2n",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No conto popular, o personagem esperto e pobre que vence o poderoso por astúcia costuma ser chamado de:",
+     "options": [
+      "Personagem malandro (trapaceiro)",
+      "Narrador observador",
+      "Eu lírico",
+      "Antagonista científico"
+     ],
+     "answer": "Personagem malandro (trapaceiro)",
+     "accept": [],
+     "hint": "Ele usa a inteligência, não a força.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlh0ae1je5eea",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama a \"voz\" que fala num poema?",
+     "options": [],
+     "answer": "eu lírico",
+     "accept": [
+      "eu-lírico",
+      "eu poético"
+     ],
+     "hint": "Não é o narrador, porque o poema não conta necessariamente uma história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2m3o1r1k892us",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Escolha dois gêneros lidos no trimestre (conto popular, fábula, lenda ou poema) e explique uma semelhança e uma diferença entre eles.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em autoria, personagens, forma e objetivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fc6ve21ctghk4",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Por que você acha que as lendas e os contos populares continuam sendo contados até hoje?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que eles ensinam e na cultura de um povo.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "sci": {
+   "topic": "Term 1 review: cells, particles and forces",
+   "questions": [
+    {
+     "id": "rr96gl151fs0h",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which part of a cell controls its activities and contains genetic material?",
+     "options": [
+      "Nucleus",
+      "Cell membrane",
+      "Cytoplasm",
+      "Cell wall"
+     ],
+     "answer": "Nucleus",
+     "accept": [],
+     "hint": "Think of the cell's 'control centre'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fixwv01tlzt76",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which structure is found in plant cells but not in animal cells?",
+     "options": [
+      "Cell wall",
+      "Nucleus",
+      "Cell membrane",
+      "Cytoplasm"
+     ],
+     "answer": "Cell wall",
+     "accept": [],
+     "hint": "It gives the plant cell a rigid shape.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pgmw521n2huzr",
+     "subject": "sci",
+     "type": "short",
+     "q": "In which organelle does photosynthesis take place?",
+     "options": [],
+     "answer": "chloroplast",
+     "accept": [
+      "chloroplasts"
+     ],
+     "hint": "It contains a green pigment.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kg2aktz9ry6f",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is the job of the cell membrane?",
+     "options": [
+      "Controls what enters and leaves the cell",
+      "Makes food by photosynthesis",
+      "Stores genetic information",
+      "Gives support like a wall"
+     ],
+     "answer": "Controls what enters and leaves the cell",
+     "accept": [],
+     "hint": "Think of a gatekeeper.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9m9mar1bxt68l",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In which state of matter are particles closely packed in a regular pattern and only vibrate?",
+     "options": [
+      "Solid",
+      "Liquid",
+      "Gas",
+      "Plasma"
+     ],
+     "answer": "Solid",
+     "accept": [],
+     "hint": "This state keeps a fixed shape.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rozslnz1i02nu1",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is the change of state from liquid to gas at the boiling point called?",
+     "options": [
+      "Boiling",
+      "Melting",
+      "Freezing",
+      "Condensing"
+     ],
+     "answer": "Boiling",
+     "accept": [],
+     "hint": "It happens throughout the liquid, not only at the surface.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxsl98qwbl61b",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why can gases be compressed easily?",
+     "options": [
+      "There are large spaces between particles",
+      "The particles are very heavy",
+      "The particles do not move",
+      "The particles are in a fixed pattern"
+     ],
+     "answer": "There are large spaces between particles",
+     "accept": [],
+     "hint": "Think about how far apart gas particles are.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r45orjsambrj2",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which method separates sand from water?",
+     "options": [
+      "Filtration",
+      "Evaporation",
+      "Chromatography",
+      "Distillation of salt"
+     ],
+     "answer": "Filtration",
+     "accept": [],
+     "hint": "Sand is insoluble.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ww6y8yhagyqt",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which method would you use to get salt crystals from salty water?",
+     "options": [
+      "Evaporation",
+      "Filtration",
+      "Magnetism",
+      "Sieving"
+     ],
+     "answer": "Evaporation",
+     "accept": [],
+     "hint": "Remove the water, keep the solid.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kb4s4n1lwxl66",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Chromatography is used to separate:",
+     "options": [
+      "Different dyes in an ink",
+      "Sand from gravel",
+      "Iron from sulfur",
+      "Oil from vinegar"
+     ],
+     "answer": "Different dyes in an ink",
+     "accept": [],
+     "hint": "Think of a filter-paper experiment with colours.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lsyxtpwrwm5k",
+     "subject": "sci",
+     "type": "short",
+     "q": "What is the unit of force?",
+     "options": [],
+     "answer": "newton",
+     "accept": [
+      "newtons",
+      "N"
+     ],
+     "hint": "It is named after a famous scientist.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqxt3tg1r6whve",
+     "subject": "sci",
+     "type": "num",
+     "q": "A box has a mass of 5 kg. Calculate its weight on Earth, using g = 10 N/kg. Give your answer in N.",
+     "options": [],
+     "answer": "50",
+     "accept": [],
+     "hint": "Weight = mass × gravitational field strength.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "refr1nm1ear5pr",
+     "subject": "sci",
+     "type": "num",
+     "q": "A force of 12 N pushes a trolley to the right and a force of 5 N pushes it to the left. What is the resultant force, in N?",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Forces in opposite directions are subtracted.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmoqnbj10cnxw4",
+     "subject": "sci",
+     "type": "mc",
+     "q": "A car moves at a steady speed. What can you say about the forces on it?",
+     "options": [
+      "They are balanced",
+      "Only friction acts",
+      "They are unbalanced",
+      "There are no forces"
+     ],
+     "answer": "They are balanced",
+     "accept": [],
+     "hint": "Steady speed means no change in motion.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xxrf781vcilyn",
+     "subject": "sci",
+     "type": "num",
+     "q": "A cyclist travels 300 m in 60 s. What is the average speed in m/s?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Speed = distance ÷ time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v2j5y7pueylq",
+     "subject": "sci",
+     "type": "open",
+     "q": "Explain, using the particle model, why a puddle disappears on a sunny day.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about particle energy and the change of state.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa": {
+   "topic": "Term 1 review: myself, family and school",
+   "questions": [
+    {
+     "id": "r1lxpz4o4b5l4f",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form of 'ser': Yo ___ estudiante.",
+     "options": [
+      "soy",
+      "eres",
+      "es",
+      "somos"
+     ],
+     "answer": "soy",
+     "accept": [],
+     "hint": "'Yo' is 'I'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ropjq8vwydpz3",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form of 'tener': Mi hermana ___ doce años.",
+     "options": [
+      "tiene",
+      "tengo",
+      "tienes",
+      "tenemos"
+     ],
+     "answer": "tiene",
+     "accept": [],
+     "hint": "'Mi hermana' is 'she'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4u6b68nsdauo",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'My name is Ana.' (Start with 'Me')",
+     "options": [],
+     "answer": "Me llamo Ana",
+     "accept": [
+      "me llamo Ana.",
+      "Me llamo Ana."
+     ],
+     "hint": "Use the verb 'llamarse'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15l9k2t1rym42t",
+     "subject": "spa",
+     "type": "mc",
+     "q": "How do you say 'I like football' in Spanish?",
+     "options": [
+      "Me gusta el fútbol",
+      "Me gustan el fútbol",
+      "Yo gusto el fútbol",
+      "Tengo el fútbol"
+     ],
+     "answer": "Me gusta el fútbol",
+     "accept": [],
+     "hint": "One thing liked → singular verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v8zhtwpatgy4",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete: Me ___ los perros.",
+     "options": [
+      "gustan",
+      "gusta",
+      "gusto",
+      "gustas"
+     ],
+     "answer": "gustan",
+     "accept": [],
+     "hint": "'Los perros' is plural.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tc5a6cl9kcs4",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'el abuelo' mean?",
+     "options": [
+      "The grandfather",
+      "The uncle",
+      "The brother",
+      "The cousin"
+     ],
+     "answer": "The grandfather",
+     "accept": [],
+     "hint": "Think of 'abuela' – the female form.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "risbl37701cbl",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into English: 'la hermana'",
+     "options": [],
+     "answer": "the sister",
+     "accept": [
+      "sister"
+     ],
+     "hint": "It is a family member.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rv9mu172zsq3",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct ending: Nosotros habl___ español.",
+     "options": [
+      "-amos",
+      "-o",
+      "-as",
+      "-an"
+     ],
+     "answer": "-amos",
+     "accept": [],
+     "hint": "'Nosotros' means 'we'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lwqd53j2pkoj",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form of 'estudiar': Tú ___ matemáticas.",
+     "options": [
+      "estudias",
+      "estudio",
+      "estudia",
+      "estudian"
+     ],
+     "answer": "estudias",
+     "accept": [],
+     "hint": "'Tú' forms usually end in -s.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryrd8r4iyddpx",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'el lunes' mean?",
+     "options": [
+      "Monday",
+      "Tuesday",
+      "Moon",
+      "Week"
+     ],
+     "answer": "Monday",
+     "accept": [],
+     "hint": "It's a day of the week.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kph4rul3if8t",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'the library' (school place)",
+     "options": [],
+     "answer": "la biblioteca",
+     "accept": [
+      "biblioteca"
+     ],
+     "hint": "It sounds a bit like 'bibliography'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f4clk21odm5b9",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which subject is 'las ciencias'?",
+     "options": [
+      "Science",
+      "History",
+      "Art",
+      "Music"
+     ],
+     "answer": "Science",
+     "accept": [],
+     "hint": "Look at the cognate.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gsukrk6ysoqi",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct sentence: 'I have brown eyes.'",
+     "options": [
+      "Tengo los ojos marrones.",
+      "Soy los ojos marrones.",
+      "Tengo los ojos marrón.",
+      "Tiene los ojos marrones."
+     ],
+     "answer": "Tengo los ojos marrones.",
+     "accept": [],
+     "hint": "In Spanish you 'have' eyes and adjectives agree in number.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pt7ybxhtfyow",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete: Mis padres ___ simpáticos.",
+     "options": [
+      "son",
+      "es",
+      "soy",
+      "eres"
+     ],
+     "answer": "son",
+     "accept": [],
+     "hint": "'Mis padres' means 'they'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2aengrmcojyp",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two sentences in Spanish about yourself: your age and one subject you like at school.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use 'Tengo … años' and 'Me gusta(n) …'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry8vjwd17zidnk",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two sentences in Spanish describing a member of your family (use 'ser' and 'tener').",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "E.g. 'Mi padre es…' and 'Tiene…'.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Caderno Verde de Pedra Funda",
+   "premise": "Nas férias na casa da tia-avó contadora de histórias, Lia e o primo Rafa ouvem contos populares, fábulas, lendas e poemas, e acabam se tornando contadores também.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A moça que vendia silêncio",
+     "synopsis": "Lia chega à cidade de Pedra Funda para passar as férias com a tia-avó Odete, que conta um conto popular sobre uma moça esperta.",
+     "text": "O ônibus parou na praça de Pedra Funda quando o sol já estava se escondendo atrás do morro. Lia desceu com a mochila nas costas e o primo Rafa logo atrás, reclamando do calor. Os dois iam passar duas semanas com a tia-avó Odete, que todos na família chamavam de \"a contadora\", porque ninguém sabia tantas histórias quanto ela.\nA casa da tia Odete ficava no fim de uma rua de pedras, com uma varanda cheia de vasos de samambaia e uma rede azul. Ela abraçou os dois sobrinhos com força, cheirando a café e a canela.\n— Vocês chegaram no dia certo — disse ela. — Hoje é noite de história.\nRafa revirou os olhos. Ele tinha doze anos, como Lia, e achava que histórias eram coisa de criança pequena. Lia, ao contrário, carregava na mochila um caderno verde onde a professora tinha pedido que ela anotasse tudo o que lesse nas férias: contos, fábulas, lendas e poemas. Era a revisão do trimestre, e ela queria fazer bonito.\nDepois do jantar, os três se sentaram na varanda. Tia Odete ajeitou o xale e começou:\n— Era uma vez, numa vila muito pobre, uma moça chamada Zefinha. O dono das terras da região era um homem rico e barulhento, que falava o dia inteiro e não deixava ninguém dormir. Um dia, Zefinha apareceu na porta dele com um pote de barro fechado e disse: \"Vendo silêncio\".\nO homem riu. \"Silêncio não se vende!\", gritou. Mas Zefinha explicou que, se ele ficasse um dia inteiro sem abrir a boca, o pote se encheria de silêncio, e quem bebesse dele dormiria em paz para sempre. O homem, que não dormia bem havia anos, pagou três moedas de ouro e passou o dia calado. Naquela noite, pela primeira vez, a vila inteira dormiu. E o homem também, porque estava cansado de tanto se segurar.\nNo dia seguinte, ele quis comprar outro pote. E Zefinha vendeu, e vendeu de novo, até juntar dinheiro para consertar o telhado de todas as casas da vila. Dizem que o homem ficou tão acostumado ao silêncio que aprendeu a escutar os outros.\nTia Odete parou. Rafa, que tinha fingido não prestar atenção, perguntou:\n— Mas o pote tinha alguma mágica?\n— O que você acha? — respondeu a tia, com um sorriso.\nLia abriu o caderno e escreveu: \"Conto popular. Autor desconhecido. Personagem esperta e pobre vence o poderoso usando a inteligência. Começa com 'Era uma vez'.\" Depois, embaixo, acrescentou uma pergunta para si mesma: \"Será que a esperteza é a verdadeira mágica?\"\nAntes de dormir, Rafa bateu na porta do quarto dela.\n— Amanhã ela conta outra? — perguntou, meio sem graça.\n— Conta — disse Lia. — E você vai querer ouvir.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a família chama a tia Odete?",
+       "options": [
+        "A contadora",
+        "A professora",
+        "A cozinheira",
+        "A viajante"
+       ],
+       "answer": "A contadora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é a cor do caderno de Lia?",
+       "options": [],
+       "answer": "verde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Zefinha diz que vende?",
+       "options": [
+        "Silêncio",
+        "Água mágica",
+        "Moedas",
+        "Telhados"
+       ],
+       "answer": "Silêncio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas moedas de ouro o homem rico pagou pelo primeiro pote?",
+       "options": [],
+       "answer": "três",
+       "accept": [
+        "3",
+        "tres"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Zefinha fez com o dinheiro que juntou?",
+       "options": [
+        "Consertou os telhados da vila",
+        "Comprou uma fazenda",
+        "Fugiu da vila",
+        "Guardou num pote"
+       ],
+       "answer": "Consertou os telhados da vila",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual característica de conto popular Lia anota no caderno?",
+       "options": [
+        "Autor desconhecido",
+        "Termina com rima",
+        "Fala de um fato real",
+        "É escrito em versos"
+       ],
+       "answer": "Autor desconhecido",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a pergunta de Rafa no final mostra sobre ele?",
+       "options": [
+        "Ele ficou interessado na história",
+        "Ele dormiu durante a história",
+        "Ele quer ir embora",
+        "Ele não gostou da tia"
+       ],
+       "answer": "Ele ficou interessado na história",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que tia Odete não respondeu diretamente se o pote tinha mágica?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A capivara e o tucano",
+     "synopsis": "Num passeio até a lagoa, tia Odete conta uma fábula, e Lia e Rafa discutem qual seria a moral da história.",
+     "text": "Na manhã seguinte, tia Odete levou os sobrinhos até a lagoa que ficava atrás da igreja. A água era escura e calma, e na margem havia capivaras tomando sol, bem paradas, como se fossem pedras com pelos.\n— Sabem que existe uma história sobre elas? — perguntou a tia, sentando-se num tronco caído.\nRafa já se ajeitou ao lado dela, sem reclamar desta vez. Lia abriu o caderno verde.\n— Havia, nesta mesma lagoa, uma capivara muito calma e um tucano muito vaidoso. O tucano vivia se exibindo: \"Vejam meu bico colorido! Ninguém aqui é tão bonito quanto eu!\". A capivara só mastigava capim e não dizia nada.\nUm dia, veio uma seca forte. A lagoa foi diminuindo, diminuindo, e as frutas das árvores secaram. O tucano voava de galho em galho procurando comida, mas passava tanto tempo se admirando no reflexo da água que chegava sempre atrasado: os outros pássaros já tinham comido tudo.\nA capivara, enquanto isso, tinha passado o tempo de chuva observando a lagoa. Sabia onde a água ficava mais funda e onde o capim continuava verde mesmo no calor. Quando viu o tucano fraco e triste num galho baixo, chamou:\n\"Venha comigo. Conheço um lugar.\"\nO tucano seguiu a capivara até um canto escondido da lagoa, onde havia uma figueira ainda carregada. Comeu até ficar satisfeito. Depois, envergonhado, perguntou: \"Por que você me ajudou, se eu nunca prestei atenção em você?\". E a capivara respondeu: \"Porque quem olha só para si não vê o caminho\".\nTia Odete ficou em silêncio, como fazia sempre no final.\n— E a moral? — perguntou Lia. — Toda fábula tem moral.\n— Qual vocês acham que é? — devolveu a tia.\nRafa pensou um pouco.\n— A vaidade não enche barriga — disse ele, e os três riram.\nLia escreveu outra coisa: \"Quem observa com paciência encontra o que os apressados não veem\". Depois, olhou para as duas frases e percebeu que as duas estavam certas. Uma fábula podia ensinar mais de uma coisa ao mesmo tempo, dependendo de qual personagem a gente acompanha.\nNo caderno, ela fez uma comparação com o conto da noite anterior. \"Conto popular: personagens humanos, esperteza vence o poder. Fábula: animais que falam e agem como pessoas, termina com uma moral.\" Desenhou ao lado uma capivara meio torta e um tucano de bico enorme.\nNa volta para casa, Rafa ficou para trás olhando as capivaras. Quando Lia perguntou o que ele estava fazendo, ele respondeu, sério:\n— Observando com paciência.\nEla riu tanto que quase deixou o caderno cair na lama.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde ficava a lagoa?",
+       "options": [
+        "Atrás da igreja",
+        "Ao lado da escola",
+        "No centro da praça",
+        "Na casa da tia"
+       ],
+       "answer": "Atrás da igreja",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o defeito do tucano?",
+       "options": [
+        "Vaidade",
+        "Preguiça",
+        "Medo",
+        "Gula"
+       ],
+       "answer": "Vaidade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que problema atingiu a lagoa?",
+       "options": [],
+       "answer": "seca",
+       "accept": [
+        "uma seca",
+        "a seca"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o tucano chegava atrasado à comida?",
+       "options": [
+        "Ficava se admirando no reflexo",
+        "Dormia demais",
+        "Tinha uma asa machucada",
+        "Morava longe"
+       ],
+       "answer": "Ficava se admirando no reflexo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que árvore carregada a capivara mostrou ao tucano?",
+       "options": [],
+       "answer": "figueira",
+       "accept": [
+        "uma figueira",
+        "a figueira"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual moral Rafa propõe?",
+       "options": [
+        "A vaidade não enche barriga",
+        "Devagar se vai ao longe",
+        "A união faz a força",
+        "Quem conta um conto aumenta um ponto"
+       ],
+       "answer": "A vaidade não enche barriga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia percebe ao comparar as duas morais?",
+       "options": [
+        "Uma fábula pode ensinar mais de uma coisa",
+        "Só a moral de Rafa estava certa",
+        "Fábulas não têm moral",
+        "A tia errou a história"
+       ],
+       "answer": "Uma fábula pode ensinar mais de uma coisa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Rafa disse que estava \"observando com paciência\" no final?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A lenda da Pedra Funda",
+     "synopsis": "Lia e Rafa sobem o morro e descobrem, pela boca de um velho barqueiro, a lenda que explica o nome da cidade.",
+     "text": "No terceiro dia, Lia quis saber por que a cidade se chamava Pedra Funda. Tia Odete disse que quem contava essa história melhor era seu Aurélio, um barqueiro que morava perto da cachoeira. Os primos foram até lá depois do almoço, subindo uma trilha de terra vermelha.\nSeu Aurélio estava consertando uma canoa. Tinha as mãos grossas e um chapéu de palha furado. Quando ouviu a pergunta, deu uma risada e apontou para cima. No alto do morro havia uma pedra enorme, com um buraco no meio, como se alguém tivesse enfiado um dedo gigante nela.\n— Dizem os antigos — começou ele — que, muito tempo atrás, não havia água por aqui. O chão era seco e as pessoas sofriam. Naquele tempo vivia na mata uma onça-d'água, um bicho grande, de pelo prateado, que só aparecia em noite de lua cheia.\nContam que uma menina chamada Maiara, que tinha a idade de vocês, subiu o morro sozinha para pedir ajuda à onça. Levou de presente a única coisa que tinha: uma cabaça vazia. A onça olhou para a cabaça, olhou para a menina e entendeu. Então, com uma patada, furou a pedra. Do buraco saiu tanta água que formou a cachoeira, a lagoa e o rio. A onça mergulhou no rio e nunca mais foi vista.\n— E até hoje — continuou seu Aurélio — em noite de lua cheia, quem fica quieto perto da cachoeira escuta um ronco grosso no meio da água. É a onça vigiando o rio.\nRafa olhou para a cachoeira, desconfiado.\n— Isso é verdade?\n— É lenda — respondeu o barqueiro. — Lenda não precisa ser verdade para ser importante. Ela explica de onde as coisas vieram e lembra o povo de cuidar delas.\nNo caminho de volta, Lia anotou no caderno: \"Lenda. Contada oralmente pelos mais velhos. Mistura um lugar real (a pedra, a cachoeira) com elementos fantásticos (a onça-d'água). Explica a origem de algo: o nome da cidade e o rio.\"\nDepois, desenhou uma tabela com três colunas: conto popular, fábula e lenda. Em cada coluna, escreveu os personagens, o lugar e a finalidade da história. Percebeu que a lenda era a única que falava de um lugar que ela podia ver com os próprios olhos.\n— Sabe o que eu acho? — disse Rafa, de repente. — O ronco na cachoeira deve ser só a água batendo nas pedras.\n— Pode ser — respondeu Lia. — Mas, se as pessoas acreditam na onça, ninguém joga lixo no rio.\nRafa ficou pensando nisso o resto do caminho. Naquela noite, era lua cheia. Ele não disse nada, mas Lia o viu na janela, olhando na direção da cachoeira por um tempo bem comprido.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem conta a lenda da Pedra Funda?",
+       "options": [
+        "Seu Aurélio, o barqueiro",
+        "Tia Odete",
+        "A professora de Lia",
+        "Rafa"
+       ],
+       "answer": "Seu Aurélio, o barqueiro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como era o pelo da onça-d'água?",
+       "options": [
+        "Prateado",
+        "Dourado",
+        "Preto",
+        "Pintado de branco"
+       ],
+       "answer": "Prateado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que presente Maiara levou para a onça?",
+       "options": [],
+       "answer": "uma cabaça vazia",
+       "accept": [
+        "cabaça",
+        "uma cabaça",
+        "cabaça vazia"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que saiu do buraco na pedra?",
+       "options": [
+        "Água",
+        "Fogo",
+        "Ouro",
+        "Pássaros"
+       ],
+       "answer": "Água",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que noite se escuta o ronco da onça?",
+       "options": [
+        "Noite de lua cheia",
+        "Noite de chuva",
+        "Noite de Natal",
+        "Qualquer noite"
+       ],
+       "answer": "Noite de lua cheia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual diferença Lia percebe entre a lenda e os outros gêneros?",
+       "options": [
+        "A lenda fala de um lugar que ela pode ver",
+        "A lenda tem moral no final",
+        "A lenda é escrita em versos",
+        "A lenda tem animais falantes"
+       ],
+       "answer": "A lenda fala de um lugar que ela pode ver",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo seu Aurélio, para que serve uma lenda?",
+       "options": [
+        "Explicar a origem das coisas e lembrar o povo de cuidar delas",
+        "Informar notícias recentes",
+        "Ensinar matemática",
+        "Divertir só as crianças pequenas"
+       ],
+       "answer": "Explicar a origem das coisas e lembrar o povo de cuidar delas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Rafa ficou olhando para a cachoeira na noite de lua cheia?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: Versos na feira",
+     "synopsis": "Na feira de sábado, os primos conhecem um poeta que vende folhetos de versos e descobrem como um poema é construído.",
+     "text": "Sábado era dia de feira em Pedra Funda. A praça se enchia de barracas com frutas, queijos, panelas de barro e redes coloridas. Tia Odete mandou os sobrinhos comprarem mangas e farinha, mas Lia e Rafa pararam no meio do caminho, atraídos por uma voz forte que saía de uma barraca de lona amarela.\nEra um senhor magro, de bigode branco, chamado seu Tonico. Na frente dele, presos num barbante, havia dezenas de folhetos com capas desenhadas. Ele lia em voz alta, com ritmo, quase cantando:\n\"Lá no alto da Pedra Funda / tem um rio a murmurar, / quem escuta com cuidado / ouve a onça a vigiar.\"\nAlgumas pessoas paravam para ouvir, riam, batiam palmas. Rafa cutucou Lia.\n— Ele está falando da lenda do seu Aurélio!\nSeu Tonico ouviu e sorriu.\n— Toda história boa vira verso um dia, menino. A lenda é do povo, e o poema também.\nLia perguntou se podia anotar os versos. O poeta deixou e ainda explicou como os escrevia.\n— Cada linha é um verso. Quatro versos juntos formam uma estrofe. Vê como \"murmurar\" combina com \"vigiar\"? Isso é rima. E repare no ritmo: dá para bater o pé enquanto lê.\nRafa bateu o pé e, para sua surpresa, deu certo.\n— E por que o rio \"murmura\"? Rio não fala — disse ele.\n— Aí está o segredo — respondeu seu Tonico. — Quando a gente dá ao rio uma ação de gente, como murmurar, está usando personificação. O poema não mente; ele mostra as coisas de outro jeito.\nLia escreveu tudo no caderno verde: \"Poema. Organizado em versos e estrofes. Pode ter rima e ritmo. Usa linguagem figurada, como a personificação. Quem fala no poema é o eu lírico\". Seu Tonico achou graça na palavra \"eu lírico\" e disse que nunca tinha ouvido aquilo na escola, mas que fazia sentido: no poema, quem fala não é exatamente ele, é uma voz que ele inventa.\nAntes de irem embora, Rafa comprou um folheto com o dinheiro que tinha guardado. Lia comprou outro. Esqueceram completamente as mangas e voltaram com a farinha e dois folhetos de versos.\nTia Odete olhou para a sacola, depois para os sobrinhos, e balançou a cabeça.\n— Pelo menos trouxeram comida para a cabeça — disse ela, rindo.\nNaquela tarde, sentado na rede, Rafa leu o folheto inteiro em voz alta, batendo o pé no chão da varanda. Lia ficou ouvindo, surpresa. O primo que achava histórias coisa de criança agora lia poesia para quem quisesse escutar.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que dia acontecia a feira?",
+       "options": [
+        "Sábado",
+        "Domingo",
+        "Segunda-feira",
+        "Quarta-feira"
+       ],
+       "answer": "Sábado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era a cor da lona da barraca do poeta?",
+       "options": [],
+       "answer": "amarela",
+       "accept": [
+        "amarelo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, sobre o que falavam os versos de seu Tonico?",
+       "options": [
+        "A lenda da onça e do rio",
+        "A fábula da capivara",
+        "A feira da cidade",
+        "O ônibus que chegou"
+       ],
+       "answer": "A lenda da onça e do rio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantos versos formam a estrofe que seu Tonico lê?",
+       "options": [
+        "Quatro",
+        "Dois",
+        "Seis",
+        "Oito"
+       ],
+       "answer": "Quatro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais palavras rimam na estrofe lida?",
+       "options": [
+        "murmurar e vigiar",
+        "Funda e rio",
+        "cuidado e onça",
+        "alto e escuta"
+       ],
+       "answer": "murmurar e vigiar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que recurso aparece quando o rio \"murmura\"?",
+       "options": [],
+       "answer": "personificação",
+       "accept": [
+        "personificacao",
+        "a personificação"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a fala da tia sobre \"comida para a cabeça\" mostra?",
+       "options": [
+        "Ela não ficou brava e valorizou os folhetos",
+        "Ela ficou muito irritada",
+        "Ela queria vender os folhetos",
+        "Ela não gosta de poesia"
+       ],
+       "answer": "Ela não ficou brava e valorizou os folhetos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Rafa mudou de opinião sobre histórias e poemas?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A noite da tempestade",
+     "synopsis": "Durante uma tempestade que deixa a cidade sem luz, Lia e Rafa decidem eles mesmos contar histórias e percebem o que aprenderam.",
+     "text": "Na segunda semana, o céu de Pedra Funda escureceu de repente no meio da tarde. Os trovões faziam as janelas tremerem, e a chuva caía tão forte que a rua de pedras virou um riacho. Logo depois, a luz acabou na cidade inteira.\nTia Odete acendeu duas velas e um lampião antigo. Os três se sentaram na sala, ouvindo o barulho da água no telhado.\n— Hoje quem conta são vocês — anunciou a tia.\nLia e Rafa se olharam, nervosos. Lia abriu o caderno verde à luz da vela, mas Rafa fechou-o com a mão.\n— Sem ler — disse ele. — Tem que ser como a tia faz. De cabeça.\nLia respirou fundo e escolheu uma fábula. Inventou uma história sobre um sapo que tinha medo de trovão e uma coruja que o ensinou a contar os segundos entre o relâmpago e o barulho, para saber se a tempestade estava longe ou perto. No final, disse a moral: \"Conhecer o que nos assusta diminui o medo\". Tia Odete aplaudiu devagar.\nDepois foi a vez de Rafa. Ele ficou quieto por um tempo e, de repente, começou: \"Era uma vez um menino da cidade grande que achava que histórias eram coisa de criança\". Lia segurou o riso. Rafa contou que o menino foi parar numa vila onde as pessoas pagavam as contas com histórias, e que ele, sem nenhuma para oferecer, passou fome por três dias. No quarto dia, ouviu uma velha contar um conto, depois outro, e foi juntando pedaços até conseguir criar o seu. Com a primeira história, comprou um pão. Com a segunda, um cobertor. Com a terceira, um lugar na roda de contadores.\n— Isso é um conto popular? — perguntou Lia.\n— Tem esperteza, tem um pobre que vence, tem \"era uma vez\" — respondeu Rafa, contando nos dedos. — Acho que é.\n— É um conto popular que ainda não ficou velho — disse tia Odete. — Daqui a cinquenta anos, alguém vai contar sem saber quem inventou.\nA chuva foi diminuindo. Lá fora, só se ouviam as goteiras e os sapos de verdade, coaxando no quintal. Lia pensou na tabela do caderno e percebeu uma coisa: todas aquelas histórias — o conto, a fábula, a lenda, os versos da feira — tinham nascido assim, numa sala escura, com alguém falando e alguém escutando.\nQuando a luz voltou, ninguém quis acender as lâmpadas. Ficaram mais um pouco à luz da vela, em silêncio. Lia lembrou do pote de Zefinha e sorriu. Talvez aquele fosse o tal silêncio que valia ouro.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu com a cidade durante a tempestade?",
+       "options": [
+        "Ficou sem luz",
+        "Foi inundada por completo",
+        "Ficou sem água",
+        "Teve um incêndio"
+       ],
+       "answer": "Ficou sem luz",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Rafa fechou o caderno de Lia?",
+       "options": [
+        "Queria que ela contasse de cabeça",
+        "Queria ler sozinho",
+        "Estava com raiva dela",
+        "O caderno ia molhar"
+       ],
+       "answer": "Queria que ela contasse de cabeça",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que animal tinha medo de trovão na fábula de Lia?",
+       "options": [
+        "Um sapo",
+        "Uma coruja",
+        "Um tucano",
+        "Uma capivara"
+       ],
+       "answer": "Um sapo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é a moral da fábula de Lia?",
+       "options": [
+        "Conhecer o que nos assusta diminui o medo",
+        "A vaidade não enche barriga",
+        "Quem espera sempre alcança",
+        "A pressa é inimiga da perfeição"
+       ],
+       "answer": "Conhecer o que nos assusta diminui o medo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que o menino da história de Rafa comprou com a primeira história?",
+       "options": [],
+       "answer": "um pão",
+       "accept": [
+        "pão"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem é, na verdade, o menino da história de Rafa?",
+       "options": [
+        "O próprio Rafa",
+        "Seu Aurélio",
+        "Seu Tonico",
+        "Um vizinho"
+       ],
+       "answer": "O próprio Rafa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que tia Odete quer dizer com \"um conto popular que ainda não ficou velho\"?",
+       "options": [
+        "Que a história pode passar de boca em boca e perder o autor",
+        "Que a história é ruim",
+        "Que só crianças vão gostar",
+        "Que é uma notícia"
+       ],
+       "answer": "Que a história pode passar de boca em boca e perder o autor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia lembrou do pote de silêncio de Zefinha no final do capítulo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O poema de Lia",
+     "synopsis": "Inspirada pela feira e pela tempestade, Lia tenta escrever seu primeiro poema, e Rafa a ajuda a encontrar as palavras.",
+     "text": "No dia seguinte à tempestade, a praça amanheceu com um cartaz pregado no coreto: \"Sarau de Pedra Funda — sábado à noite. Quem tiver uma história ou um poema, venha!\". Tia Odete leu o cartaz em voz alta e olhou para os sobrinhos com cara de quem já tinha decidido alguma coisa.\n— Vocês vão apresentar — disse ela.\nRafa logo escolheu recontar a história do menino que pagava as contas com contos. Lia, porém, queria fazer algo diferente: um poema. O problema era que ela nunca tinha escrito um.\nPassou a manhã inteira na rede, rabiscando o caderno verde. Escrevia uma linha, apagava, escrevia de novo. Tudo parecia duro e sem graça. \"A cidade é bonita / tem uma cachoeira\". Ela leu e fez careta.\nRafa apareceu com dois copos de suco e se sentou no chão da varanda.\n— Lembra do que o seu Tonico disse? O poema mostra as coisas de outro jeito.\n— Eu sei, mas como?\n— Faz a cidade fazer alguma coisa. Que nem o rio que murmura.\nLia pensou. Olhou para a rua de pedras ainda molhada, para as samambaias pingando, para o morro com a pedra furada lá no alto. Então escreveu:\n\"A rua acordou lavada / com cheiro de chão e de flor, / e a pedra lá no alto / guarda o rio com amor.\"\nLeu em voz alta. Rafa bateu o pé no chão, acompanhando o ritmo.\n— Funciona! — disse ele. — A rua \"acordou\". Isso é personificação. E \"flor\" rima com \"amor\".\nLia sorriu e continuou. Escreveu uma estrofe sobre a feira, com as barracas \"falando alto\" de tantas cores. Escreveu outra sobre a tempestade, em que o trovão \"batia na porta\" pedindo para entrar. E uma última sobre as noites na varanda, em que a voz da tia \"desenhava\" histórias no escuro.\nQuando terminou, eram quatro estrofes de quatro versos. Ela contou duas vezes para ter certeza.\n— Quem está falando no seu poema? — perguntou Rafa, imitando a professora. — É você?\nLia pensou um pouco.\n— É e não é. É uma menina que chegou na cidade e se apaixonou por ela. Um eu lírico.\nTia Odete, que ouvia tudo da cozinha, apareceu na porta enxugando as mãos no avental.\n— Leia de novo, inteiro — pediu.\nLia leu. Quando terminou, a tia não disse nada por alguns segundos, como fazia ao fim de cada história. Depois, só falou:\n— Esse vai para o sarau.\nLia guardou o caderno no peito, com o coração batendo rápido, como um tambor de feira.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde estava pregado o cartaz do sarau?",
+       "options": [
+        "No coreto da praça",
+        "Na porta da igreja",
+        "Na barraca de seu Tonico",
+        "Na casa da tia"
+       ],
+       "answer": "No coreto da praça",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia decidiu apresentar no sarau?",
+       "options": [
+        "Um poema",
+        "Uma fábula",
+        "Uma notícia",
+        "Uma lenda"
+       ],
+       "answer": "Um poema",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual conselho Rafa dá a Lia?",
+       "options": [
+        "Fazer a cidade fazer alguma coisa",
+        "Copiar um folheto do poeta",
+        "Desistir do poema",
+        "Escrever sem rimas"
+       ],
+       "answer": "Fazer a cidade fazer alguma coisa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais palavras rimam na primeira estrofe do poema de Lia?",
+       "options": [
+        "flor e amor",
+        "rua e pedra",
+        "lavada e alto",
+        "chão e rio"
+       ],
+       "answer": "flor e amor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o trovão faz na estrofe sobre a tempestade?",
+       "options": [
+        "Bate na porta pedindo para entrar",
+        "Canta na janela",
+        "Dorme no telhado",
+        "Foge para o morro"
+       ],
+       "answer": "Bate na porta pedindo para entrar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantas estrofes tem o poema de Lia?",
+       "options": [],
+       "answer": "quatro",
+       "accept": [
+        "4"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia quer dizer ao responder \"É e não é\"?",
+       "options": [
+        "A voz do poema é inspirada nela, mas é um eu lírico",
+        "Ela copiou o poema de alguém",
+        "Rafa escreveu o poema",
+        "A tia é quem fala no poema"
+       ],
+       "answer": "A voz do poema é inspirada nela, mas é um eu lírico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que tia Odete ficou alguns segundos em silêncio antes de comentar o poema?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O sarau de Pedra Funda",
+     "synopsis": "No último sábado das férias, a praça se enche para o sarau, e os primos se apresentam ao lado dos contadores que conheceram.",
+     "text": "No sábado à noite, a praça de Pedra Funda estava iluminada por lampiões pendurados nas árvores. Havia cadeiras de plástico, bancos de madeira e crianças sentadas no chão, perto do coreto. Seu Tonico tinha montado sua barraca amarela ao lado, e seu Aurélio veio do morro com o chapéu de palha furado e uma camisa limpa.\nLia sentia as mãos geladas. Rafa, ao lado dela, repetia baixinho o começo da sua história. Tia Odete estava na primeira fila, com o xale nos ombros, sorrindo como se já soubesse que tudo ia dar certo.\nO primeiro a se apresentar foi seu Aurélio. Contou a lenda da onça-d'água, do jeito que tinha contado aos primos, e na parte do ronco na cachoeira fez um som tão grosso com a garganta que as crianças da frente gritaram de susto e depois riram. Em seguida, seu Tonico leu seus versos com o pé batendo no tablado, e a plateia acompanhou batendo palmas no ritmo.\nEntão chamaram Rafa. Ele subiu no coreto, olhou para a plateia e, por um segundo, parecia que ia desistir. Mas olhou para Lia, respirou e começou: \"Era uma vez um menino da cidade grande que achava que histórias eram coisa de criança\". As pessoas riram nas partes engraçadas e ficaram quietas na parte em que o menino passava fome. Quando ele terminou dizendo que o menino tinha ganhado um lugar na roda de contadores, seu Aurélio levantou o chapéu em homenagem.\nPor último, foi a vez de Lia. Ela abriu o caderno verde, mas percebeu que não precisava dele. Sabia o poema de cor. Disse as quatro estrofes devagar, olhando para a rua de pedras, para o morro, para a barraca amarela e, no final, para a tia. Quando falou do trovão que batia na porta, alguém na plateia imitou o barulho, e todos riram. Quando falou da voz que desenhava histórias no escuro, tia Odete levou a mão ao peito.\nOs aplausos foram longos. Seu Tonico pediu licença para copiar o poema e prometeu que ele viraria folheto na próxima feira.\nNa manhã seguinte, o ônibus esperava na praça. Lia e Rafa abraçaram a tia Odete por muito tempo.\n— E agora? — perguntou Rafa. — Quem vai contar histórias para a gente?\n— Agora vocês contam — respondeu a tia. — Uma história só fica viva se alguém continuar contando.\nJá no ônibus, Lia abriu o caderno verde na última página e escreveu: \"Conto popular, fábula, lenda, poema. Gêneros diferentes, mas todos nasceram da mesma coisa: alguém que fala e alguém que escuta\". Rafa leu por cima do ombro dela e pegou o lápis.\nEmbaixo, com a letra torta, ele acrescentou: \"E da paciência de observar\".\nLia sorriu, fechou o caderno e ficou olhando pela janela até a pedra furada sumir atrás do morro.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que iluminava a praça no sábado à noite?",
+       "options": [
+        "Lampiões pendurados nas árvores",
+        "Fogos de artifício",
+        "Uma fogueira",
+        "Os faróis do ônibus"
+       ],
+       "answer": "Lampiões pendurados nas árvores",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem foi o primeiro a se apresentar no sarau?",
+       "options": [
+        "Seu Aurélio",
+        "Lia",
+        "Rafa",
+        "Seu Tonico"
+       ],
+       "answer": "Seu Aurélio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que as crianças gritaram de susto?",
+       "options": [
+        "Seu Aurélio imitou o ronco da onça",
+        "Começou a chover",
+        "A luz acabou",
+        "Um cachorro latiu"
+       ],
+       "answer": "Seu Aurélio imitou o ronco da onça",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lia não precisou do caderno para recitar?",
+       "options": [
+        "Sabia o poema de cor",
+        "Esqueceu o caderno em casa",
+        "Rafa leu por ela",
+        "O poema era curto demais"
+       ],
+       "answer": "Sabia o poema de cor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que seu Tonico prometeu fazer com o poema de Lia?",
+       "options": [
+        "Transformá-lo em folheto",
+        "Guardá-lo em segredo",
+        "Mandá-lo para um jornal",
+        "Cantá-lo no rádio"
+       ],
+       "answer": "Transformá-lo em folheto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo tia Odete, o que mantém uma história viva?",
+       "options": [
+        "Alguém continuar contando",
+        "Ser escrita num livro caro",
+        "Ter um final feliz",
+        "Ser verdadeira"
+       ],
+       "answer": "Alguém continuar contando",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, a frase que Rafa acrescentou no caderno lembra qual história das férias?",
+       "options": [
+        "A fábula da capivara e do tucano",
+        "A lenda da onça-d'água",
+        "O conto da moça que vendia silêncio",
+        "O poema da feira"
+       ],
+       "answer": "A fábula da capivara e do tucano",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que tia Odete levou a mão ao peito durante o poema de Lia?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
