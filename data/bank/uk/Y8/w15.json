@@ -2999,5 +2999,903 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Varal de Palavras",
+   "premise": "Três amigos do oitavo ano se preparam para um sarau de fim de trimestre e, escrevendo uma crônica, um poema e um conto, revisam tudo o que aprenderam sobre narrativa, crônica e poesia.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O cartaz amarelo",
+     "synopsis": "A professora Celina anuncia um sarau de fim de trimestre, e Bia, Tomás e Nina precisam escolher um gênero para apresentar.",
+     "text": "Na segunda-feira, o corredor do oitavo ano amanheceu com um cartaz amarelo colado na porta da sala. Em letras grandes, alguém tinha escrito: \"Sarau do Varal — última sexta do trimestre. Traga sua palavra.\"\nBia foi a primeira a ler. Ela tinha treze anos, cabelo preso num coque torto e o hábito de anotar frases bonitas no braço quando não encontrava papel. Logo atrás vinha Tomás, com o fone pendurado no pescoço, e Nina, que lia andando e quase trombou na porta.\n— Sarau? — perguntou Tomás. — Tipo gente lendo poema com luz baixa?\n— Tipo gente lendo o que escreveu — corrigiu Nina, sem tirar os olhos do livro.\nA professora Celina entrou na sala carregando uma caixa de sapatos cheia de prendedores de roupa coloridos. Colocou a caixa sobre a mesa e explicou o plano. Durante as duas semanas de revisão, cada aluno escolheria um dos gêneros estudados no trimestre: narrativa, crônica ou poema. O texto seria pendurado num varal estendido no pátio, e, na sexta do sarau, cada autor leria o seu em voz alta.\n— Mas não basta escrever — disse ela. — Quero que vocês saibam explicar por que o texto de vocês é uma crônica, um conto ou um poema. Quem lê bem também precisa justificar o que percebeu.\nTomás levantou a mão.\n— E se a gente não souber a diferença?\nA turma riu, mas a professora levou a pergunta a sério. Foi até o quadro e desenhou três colunas. Na primeira, escreveu \"narrativa\": personagens, tempo, espaço, enredo com conflito e desfecho, e um narrador que conta. Na segunda, \"crônica\": texto curto, ligado ao cotidiano, muitas vezes com humor ou reflexão, como se o autor conversasse com o leitor. Na terceira, \"poema\": versos e estrofes, ritmo, imagens, às vezes rima, às vezes não.\n— Percebam que as fronteiras não são muros — disse ela. — Uma crônica pode contar uma pequena história. Um poema pode narrar. O que importa é saber o que predomina.\nNo intervalo, os três se sentaram no banco perto da quadra. Bia já sabia o que queria: um conto, de preferência com mistério. Nina disse que escreveria um poema, mas sem rima, porque achava que rima deixava tudo com cara de cartão de aniversário. Tomás ficou calado, girando o fone nas mãos.\n— Eu não sei escrever nada — confessou, por fim.\n— Você conta histórias o tempo todo — respondeu Bia. — Ontem mesmo você passou dez minutos falando do motorista do ônibus que canta.\nTomás pensou. O motorista da linha das sete cantava músicas antigas, desafinado, e cumprimentava cada passageiro pelo nome. Era uma coisa pequena, do dia a dia. Era exatamente o tipo de assunto que a professora tinha escrito na coluna do meio.\n— Isso daria uma crônica? — perguntou ele.\n— Só tem um jeito de descobrir — disse Nina, finalmente fechando o livro.\nQuando o sinal tocou, Bia escreveu no braço, com caneta azul: \"Varal. Sexta. Palavra.\" Tomás, pela primeira vez, pegou o celular e abriu o bloco de notas. E Nina ficou olhando o cartaz amarelo, tentando imaginar como seria ouvir a própria voz dizendo um poema na frente de todo mundo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor era o cartaz colado na porta da sala?",
+       "options": [
+        "Amarelo",
+        "Azul",
+        "Verde",
+        "Vermelho"
+       ],
+       "answer": "Amarelo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, o que a professora Celina trouxe numa caixa de sapatos?",
+       "options": [],
+       "answer": "prendedores de roupa",
+       "accept": [
+        "prendedores",
+        "pregadores de roupa",
+        "prendedores coloridos"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais eram os três gêneros que os alunos podiam escolher?",
+       "options": [
+        "Narrativa, crônica e poema",
+        "Notícia, carta e receita",
+        "Fábula, lenda e mito",
+        "Peça, diário e biografia"
+       ],
+       "answer": "Narrativa, crônica e poema",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Nina não queria rimas no seu poema?",
+       "options": [
+        "Achava que rima deixava o texto com cara de cartão de aniversário",
+        "A professora proibiu rimas",
+        "Não conhecia nenhuma rima",
+        "Queria escrever em inglês"
+       ],
+       "answer": "Achava que rima deixava o texto com cara de cartão de aniversário",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que assunto Bia sugere para Tomás?",
+       "options": [
+        "O motorista do ônibus que canta",
+        "Um jogo de futebol",
+        "Uma viagem à praia",
+        "Um filme de terror"
+       ],
+       "answer": "O motorista do ônibus que canta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a professora quis dizer com 'as fronteiras não são muros'?",
+       "options": [
+        "Os gêneros se misturam, e é preciso ver o que predomina",
+        "O varal ficará no muro da escola",
+        "Os alunos podem sair da escola",
+        "Só existem três gêneros possíveis"
+       ],
+       "answer": "Os gêneros se misturam, e é preciso ver o que predomina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que Tomás começou a mudar de ideia?",
+       "options": [
+        "Ele abriu o bloco de notas do celular",
+        "Ele rasgou o cartaz",
+        "Ele pediu para trocar de turma",
+        "Ele escreveu no braço"
+       ],
+       "answer": "Ele abriu o bloco de notas do celular",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a professora pediu que os alunos também soubessem justificar o gênero dos seus textos?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O motorista que sabia nomes",
+     "synopsis": "Tomás observa o motorista da linha das sete e escreve sua primeira crônica, descobrindo o tom de conversa com o leitor.",
+     "text": "Na terça, Tomás pegou o ônibus das sete com uma missão: observar. Sentou no banco da frente, perto da catraca, e guardou o fone na mochila. Era a primeira vez em meses que ouvia o barulho real da cidade de manhã: buzinas, uma moto apressada, o chiado da porta abrindo.\nO motorista se chamava Seu Ademar. Tinha bigode grisalho e um rádio pequeno preso no painel, que nunca ligava, porque preferia cantar ele mesmo. A cada parada, dizia o nome de quem subia: \"Bom dia, dona Lurdes! Bom dia, menino do skate!\" Quando não sabia o nome, inventava um apelido, e ninguém parecia se importar.\nTomás anotou tudo no celular: o cheiro de pão que vinha da padaria da esquina, a senhora que sempre levava um vaso de planta no colo, o estudante que dormia encostado na janela e acordava exatamente no ponto certo, como se tivesse um alarme no ombro.\nÀ noite, ele mostrou as anotações para Bia e Nina por mensagem.\n\"Isso ainda não é crônica\", respondeu Nina. \"É uma lista.\"\n\"Então o que falta?\", escreveu Tomás.\n\"Falta você\", disse Bia. \"Fala com o leitor. Diz o que você pensou.\"\nTomás ficou um tempo olhando para a tela. Depois começou a escrever, apagou, começou de novo. Por volta das onze, mandou para as amigas o primeiro parágrafo:\n\"Você já reparou que quase ninguém sabe o nome de quem dirige o ônibus? A gente sobe, passa o cartão, procura um lugar e pronto. Na linha das sete, é o contrário: é o motorista que sabe o nome de todo mundo. E, se não sabe, inventa um. Eu, por exemplo, há três anos sou 'o rapaz do fone'. Nunca tinha percebido que tinha um nome dentro daquele ônibus.\"\nNina respondeu com um emoji de palmas. Bia mandou uma mensagem mais longa: \"Agora sim. Você começou com uma pergunta, falou direto com quem lê e contou uma coisa pequena que vira uma reflexão. Isso é crônica.\"\nNo dia seguinte, Tomás leu o parágrafo para a professora Celina no fim da aula. Ela pediu que ele explicasse por que achava que era uma crônica. Tomás respirou fundo e listou: o assunto vinha do cotidiano, o texto era curto, tinha um tom de conversa e terminava com uma ideia para pensar.\n— E o humor? — perguntou a professora.\n— O apelido \"rapaz do fone\" — disse ele. — É engraçado, mas também é meio triste. Eu passava a viagem inteira sem ouvir ninguém.\nA professora sorriu.\n— Isso tem nome: ironia. O texto parece leve, mas diz uma coisa séria. Continue.\nNaquela tarde, voltando para casa, Tomás desceu do ônibus e, antes de a porta fechar, virou-se para o motorista.\n— Até amanhã, Seu Ademar.\nO homem levantou as sobrancelhas, surpreso, e depois riu alto.\n— Até amanhã, rapaz do fone!\nTomás ficou parado na calçada, com a sensação de ter acabado de ganhar o final da sua crônica.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Tomás se sentou no ônibus?",
+       "options": [
+        "No banco da frente, perto da catraca",
+        "No fundo do ônibus",
+        "Em pé, no corredor",
+        "Ao lado da porta de trás"
+       ],
+       "answer": "No banco da frente, perto da catraca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o apelido que o motorista dava a Tomás?",
+       "options": [],
+       "answer": "rapaz do fone",
+       "accept": [
+        "o rapaz do fone"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o motorista não ligava o rádio?",
+       "options": [
+        "Preferia cantar ele mesmo",
+        "O rádio estava quebrado",
+        "Os passageiros reclamavam",
+        "Era proibido"
+       ],
+       "answer": "Preferia cantar ele mesmo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi a crítica de Nina às primeiras anotações de Tomás?",
+       "options": [
+        "Eram só uma lista",
+        "Estavam longas demais",
+        "Tinham muitas rimas",
+        "Eram tristes demais"
+       ],
+       "answer": "Eram só uma lista",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Tomás começa o primeiro parágrafo da crônica?",
+       "options": [
+        "Com uma pergunta ao leitor",
+        "Com uma rima",
+        "Com 'Era uma vez'",
+        "Com um diálogo entre personagens"
+       ],
+       "answer": "Com uma pergunta ao leitor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a professora chama de ironia no texto de Tomás?",
+       "options": [
+        "O apelido parece engraçado, mas revela que ele não ouvia ninguém",
+        "O motorista canta desafinado",
+        "O ônibus chega atrasado",
+        "Tomás escreve à noite"
+       ],
+       "answer": "O apelido parece engraçado, mas revela que ele não ouvia ninguém",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Tomás sente que 'ganhou o final' da crônica?",
+       "options": [
+        "Porque a conversa com o motorista fecha a reflexão do texto",
+        "Porque ganhou um prêmio",
+        "Porque o ônibus mudou de linha",
+        "Porque a professora escreveu o final"
+       ],
+       "answer": "Porque a conversa com o motorista fecha a reflexão do texto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Tomás guardou o fone na mochila naquela manhã?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: O poema sem rima",
+     "synopsis": "Nina escreve um poema em versos livres sobre a avó e aprende a defender suas escolhas de ritmo e imagem.",
+     "text": "Nina escrevia poemas desde os nove anos, mas nunca tinha mostrado nenhum para ninguém. Guardava todos num caderno de capa dura, com um elástico que estalava quando ela abria. Para o sarau, decidiu escrever sobre a avó, que morava sozinha numa casa com quintal e regava as plantas conversando com elas.\nNa quarta à tarde, sentada na cama, Nina escreveu:\n\"Minha avó fala com as samambaias\ncomo quem conversa com velhas amigas.\nPergunta se dormiram bem,\nreclama do sol,\nconta segredos que eu nunca ouvi.\nAs folhas respondem\nbalançando devagar,\ne eu juro que, às vezes,\nelas riem.\"\nLeu em voz baixa três vezes. Não tinha nenhuma rima, e ela gostava disso. Mas, quando mostrou para Bia no dia seguinte, a amiga franziu a testa.\n— É bonito. Mas é poema mesmo? Parece um texto cortado em pedaços.\nNina sentiu o rosto esquentar. Por um instante, quis guardar o caderno e desistir. Depois lembrou da aula e respondeu devagar:\n— É poema porque está em versos e estrofe. E tem ritmo, mesmo sem rima. Olha: \"pergunta se dormiram bem, reclama do sol\". São frases curtas, uma atrás da outra, como a voz da minha avó. Isso se chama verso livre.\nBia ficou em silêncio, relendo.\n— E as plantas rindo?\n— Personificação — disse Nina. — Dei uma ação humana para as folhas. Mas também é uma imagem: quem lê consegue ver as folhas balançando.\nTomás, que tinha chegado no meio da conversa, pegou o caderno com cuidado.\n— Por que \"eu juro\"? — perguntou. — Parece que você está falando com a gente.\nNina pensou nisso. Não tinha planejado, mas Tomás tinha razão: o eu lírico, a voz que fala no poema, se dirigia ao leitor como se pedisse que acreditassem nela.\n— Acho que é porque ninguém acredita em mim quando conto isso — disse, rindo.\nNa aula de sexta, a professora Celina pediu voluntários para ler rascunhos. Nina não levantou a mão, mas Bia levantou por ela. A turma ficou quieta enquanto ela lia, e no final alguém do fundo disse: \"Minha avó também faz isso\".\nA professora perguntou à turma qual era o efeito da quebra entre \"balançando devagar\" e \"e eu juro que, às vezes\". Um menino respondeu que a pausa criava expectativa, como se o leitor precisasse esperar para descobrir a surpresa. Outra aluna disse que a última palavra, \"riem\", ficava sozinha no fim, com mais força.\nNina anotou as duas respostas no caderno, ao lado do poema. Nunca tinha pensado que outras pessoas poderiam ler seus versos e encontrar coisas que ela mesma não tinha visto.\nNaquela noite, mandou uma foto do poema para a avó. A resposta chegou em áudio, com barulho de mangueira ao fundo:\n— As samambaias mandaram dizer que gostaram.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Nina guardava seus poemas?",
+       "options": [
+        "Num caderno de capa dura com elástico",
+        "No celular",
+        "Numa caixa de sapatos",
+        "No armário da escola"
+       ],
+       "answer": "Num caderno de capa dura com elástico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, com que plantas a avó de Nina conversa no poema?",
+       "options": [],
+       "answer": "samambaias",
+       "accept": [
+        "as samambaias"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi a dúvida de Bia sobre o texto?",
+       "options": [
+        "Se era mesmo um poema, já que parecia um texto cortado",
+        "Se a avó existia",
+        "Se estava escrito em inglês",
+        "Se era longo demais"
+       ],
+       "answer": "Se era mesmo um poema, já que parecia um texto cortado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que nome Nina dá ao tipo de verso sem rima e sem medida fixa?",
+       "options": [],
+       "answer": "verso livre",
+       "accept": [
+        "versos livres"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que recurso aparece em 'as folhas riem'?",
+       "options": [
+        "Personificação",
+        "Hipérbole",
+        "Onomatopeia",
+        "Comparação"
+       ],
+       "answer": "Personificação",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo um aluno, qual é o efeito da pausa antes de 'e eu juro que, às vezes'?",
+       "options": [
+        "Cria expectativa para a surpresa final",
+        "Deixa o poema engraçado",
+        "Mostra que o poema acabou",
+        "Esconde o assunto do poema"
+       ],
+       "answer": "Cria expectativa para a surpresa final",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Nina descobre ao ouvir os colegas?",
+       "options": [
+        "Que os leitores podem encontrar sentidos que o autor não planejou",
+        "Que poemas precisam rimar",
+        "Que ela não deve mais escrever",
+        "Que a avó não gosta de plantas"
+       ],
+       "answer": "Que os leitores podem encontrar sentidos que o autor não planejou",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Nina sentiu vontade de desistir quando Bia questionou o poema, e o que a fez continuar?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O narrador que mentia",
+     "synopsis": "Bia escreve um conto de mistério narrado em primeira pessoa e descobre que o narrador pode enganar o leitor.",
+     "text": "Bia queria um conto que deixasse todo mundo de boca aberta. Passou a semana lendo histórias de mistério e reparando em como os autores escondiam pistas. Na quinta, depois do jantar, escreveu o começo:\n\"Eu não peguei a chave da sala de música. Quero deixar isso claro desde já. Naquela tarde, eu estava na biblioteca, como sempre, devolvendo um livro sobre faróis. Foi lá que ouvi o primeiro barulho: um piano tocando sozinho, três andares acima.\"\nEla continuou por duas páginas. A narradora, uma menina chamada Lis, investigava quem tinha entrado na sala de música trancada. Interrogava o zelador, desconfiava de um colega que tocava violino e encontrava uma partitura molhada no corredor. No final, descobria-se que a própria Lis tinha a chave no bolso do casaco desde o início e só queria tocar escondida, porque tinha vergonha de errar na frente dos outros.\nNo dia seguinte, Bia mostrou o conto para Tomás e Nina no pátio. Tomás leu até o fim e jogou as mãos para cima.\n— Mas ela disse logo na primeira frase que não pegou a chave!\n— Exatamente — respondeu Bia, satisfeita. — Ela mentiu.\nNina releu o começo devagar.\n— \"Quero deixar isso claro desde já\" — leu em voz alta. — Quem precisa deixar claro uma coisa que ninguém perguntou? Isso era uma pista.\nBia confirmou. Ela tinha espalhado outras: Lis dizia que o casaco estava pesado, que preferia ficar sozinha na biblioteca, que sabia de cor o caminho até a sala de música.\nNa aula, a professora Celina gostou da ideia e aproveitou para revisar o foco narrativo. Explicou que, no narrador em primeira pessoa, quem conta participa da história e só mostra o que vê, pensa ou quer mostrar. Já o narrador em terceira pessoa fica de fora e pode ser observador ou onisciente, sabendo até o que os personagens sentem.\n— Um narrador em primeira pessoa pode não ser confiável — disse ela. — E quando o leitor percebe isso, a história muda de sentido.\nDepois, desenhou no quadro a estrutura do conto de Bia: situação inicial na biblioteca, conflito com o barulho do piano, clímax quando Lis é quase descoberta, desfecho com a revelação da chave.\nUm colega levantou a mão para reclamar que se sentiu enganado. A professora devolveu a pergunta para Bia:\n— Você enganou o leitor ou deu a ele chances de descobrir?\nBia pensou antes de responder.\n— Dei chances. Quem leu com atenção viu as pistas. Eu só não entreguei a resposta.\nA professora pediu que ela incluísse mais uma pista, sutil, na metade do conto, para que o final parecesse surpreendente, mas justo. Bia passou o recreio reescrevendo. Acrescentou uma cena em que Lis, ao ouvir o piano, sorria sem perceber, como se reconhecesse a música.\nQuando terminou, escreveu no braço, como sempre: \"Surpreender sem trapacear.\" Achou que aquela frase servia para contos de mistério e talvez para outras coisas também.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o nome da narradora do conto de Bia?",
+       "options": [
+        "Lis",
+        "Nina",
+        "Celina",
+        "Lurdes"
+       ],
+       "answer": "Lis",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a narradora diz que estava quando ouviu o piano?",
+       "options": [
+        "Na biblioteca",
+        "Na quadra",
+        "No refeitório",
+        "Em casa"
+       ],
+       "answer": "Na biblioteca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, onde estava escondida a chave da sala de música?",
+       "options": [],
+       "answer": "no bolso do casaco",
+       "accept": [
+        "bolso do casaco",
+        "no casaco",
+        "casaco"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lis queria tocar escondida?",
+       "options": [
+        "Tinha vergonha de errar na frente dos outros",
+        "Queria assustar a escola",
+        "Estava proibida de tocar",
+        "Queria roubar o piano"
+       ],
+       "answer": "Tinha vergonha de errar na frente dos outros",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que tipo de narrador participa da história e só mostra o que quer?",
+       "options": [
+        "Narrador em primeira pessoa",
+        "Narrador onisciente",
+        "Narrador observador",
+        "Não há narrador"
+       ],
+       "answer": "Narrador em primeira pessoa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a frase 'Quero deixar isso claro desde já' é uma pista?",
+       "options": [
+        "Porque ninguém tinha perguntado nada, e a defesa parece suspeita",
+        "Porque explica o final",
+        "Porque é uma rima",
+        "Porque foi dita pelo zelador"
+       ],
+       "answer": "Porque ninguém tinha perguntado nada, e a defesa parece suspeita",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Bia quer dizer com 'surpreender sem trapacear'?",
+       "options": [
+        "O final deve surpreender, mas o leitor precisa ter tido pistas",
+        "O conto não deve ter final",
+        "O narrador nunca pode mentir",
+        "A história deve ser engraçada"
+       ],
+       "answer": "O final deve surpreender, mas o leitor precisa ter tido pistas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Você acha que um narrador que mente torna a história melhor ou pior? Justifique com um exemplo do capítulo.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A chuva no varal",
+     "synopsis": "Uma tempestade molha os textos pendurados no pátio, e a turma precisa reescrevê-los, transformando o susto em uma nova crônica.",
+     "text": "Na segunda-feira da última semana, o varal finalmente foi montado no pátio. Era um fio comprido amarrado entre duas árvores, e os textos da turma balançavam nele, presos com os prendedores coloridos da professora Celina. Quem passava parava para ler. Um menino do sexto ano leu a crônica de Tomás inteira e depois perguntou quem era o tal Seu Ademar.\nNa terça, porém, o céu escureceu às duas da tarde. Primeiro veio o vento, que fez as folhas dançarem no fio. Depois, uma chuva pesada, de pingos grossos, desabou de uma vez. Quando a turma conseguiu correr até o pátio, metade dos textos já estava encharcada. A tinta das impressões escorria em listras azuis. O poema de Nina tinha virado uma mancha cinzenta, e só dava para ler a palavra \"riem\".\nBia segurou a própria folha, que pingava.\n— Pronto — disse. — Acabou o sarau.\nMas a professora Celina, com o cabelo molhado grudado na testa, olhou o varal e começou a rir.\n— Acabou nada. Vocês têm os arquivos no computador, não têm? E têm uma história nova acontecendo bem na frente de vocês.\nDe volta à sala, enquanto as folhas secavam penduradas nas cadeiras, ela propôs um desafio: cada um escreveria, em quinze minutos, um pequeno texto sobre o que tinha acabado de acontecer. Podia ser crônica, poema ou narrativa. A única regra era usar algum detalhe real da tarde.\nTomás escreveu sobre o menino do sexto ano que tinha perguntado por Seu Ademar, e sobre como um texto pode chegar a pessoas que o autor nem imagina. Bia escreveu uma narrativa curta em que os textos molhados conversavam entre si no varal, reclamando da tempestade. Nina, que sempre demorava para escrever, ficou parada olhando a folha manchada. No último minuto, escreveu apenas três versos:\n\"A chuva apagou meu poema.\nFicou só uma palavra.\nEra a mais importante.\"\nQuando ela leu em voz alta, a sala ficou quieta. Depois Tomás disse baixinho:\n— Isso é melhor que o original.\n— Não é melhor — corrigiu a professora. — É outro texto. Este poema só existe porque o primeiro existiu. Repararam que ele conversa com o anterior? Isso se chama intertextualidade.\nEla aproveitou para mostrar como os três textos daquela tarde tinham nascido do mesmo fato, mas eram muito diferentes. A crônica de Tomás refletia sobre os leitores. A narrativa de Bia criava personagens e diálogo, com humor. O poema de Nina condensava tudo em poucas palavras, com uma imagem forte.\n— Mesmo assunto, gêneros diferentes, efeitos diferentes — resumiu ela, escrevendo no quadro.\nNo fim da aula, a turma imprimiu tudo de novo. Desta vez, a professora trouxe sacos plásticos transparentes para proteger as folhas. E, por sugestão de Nina, a folha manchada com a palavra \"riem\" também foi pendurada no varal, no meio das outras, com um bilhete: \"Sobrevivente da tempestade\".",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde o varal foi montado?",
+       "options": [
+        "No pátio, entre duas árvores",
+        "Dentro da sala de aula",
+        "Na biblioteca",
+        "No portão da escola"
+       ],
+       "answer": "No pátio, entre duas árvores",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que palavra sobrou legível no poema molhado de Nina?",
+       "options": [],
+       "answer": "riem",
+       "accept": [
+        "Riem"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Bia reagiu ao ver os textos encharcados?",
+       "options": [
+        "Achou que o sarau tinha acabado",
+        "Começou a rir",
+        "Foi para casa",
+        "Culpou Tomás"
+       ],
+       "answer": "Achou que o sarau tinha acabado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era a única regra do desafio de quinze minutos?",
+       "options": [
+        "Usar algum detalhe real da tarde",
+        "Escrever com rima",
+        "Escrever em inglês",
+        "Usar exatamente cem palavras"
+       ],
+       "answer": "Usar algum detalhe real da tarde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que gênero Bia escolheu no desafio?",
+       "options": [
+        "Uma narrativa com textos que conversavam",
+        "Uma crônica sobre o ônibus",
+        "Um poema de três versos",
+        "Uma notícia de jornal"
+       ],
+       "answer": "Uma narrativa com textos que conversavam",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que nome a professora dá ao diálogo entre o novo poema de Nina e o anterior?",
+       "options": [],
+       "answer": "intertextualidade",
+       "accept": [
+        "intertexto"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a professora quis mostrar comparando os três textos da tarde?",
+       "options": [
+        "Um mesmo fato pode gerar gêneros e efeitos diferentes",
+        "Só a crônica fala do cotidiano",
+        "Poemas são sempre mais curtos e melhores",
+        "A chuva estragou todos os trabalhos"
+       ],
+       "answer": "Um mesmo fato pode gerar gêneros e efeitos diferentes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Nina quis pendurar a folha manchada no varal?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O ensaio geral",
+     "synopsis": "No ensaio do sarau, Tomás trava de nervoso, e a turma treina como ler em voz alta e interpretar textos com justificativa.",
+     "text": "Na quinta, véspera do sarau, a professora Celina marcou um ensaio geral no auditório. As cadeiras vazias pareciam muito mais numerosas do que na sala de aula. O palco era só um tablado de madeira com um microfone em cima de um pedestal que rangia.\nBia foi a primeira. Leu o conto com voz firme, fazendo pausas nas pistas, e a turma bateu palmas no final. Nina leu os dois poemas, o da avó e o da chuva, um depois do outro, e explicou em uma frase como eles se ligavam. Depois chamaram Tomás.\nEle subiu no tablado, ajeitou o microfone e abriu o celular. Leu a primeira linha — \"Você já reparou que quase ninguém sabe o nome de quem dirige o ônibus?\" — e parou. As mãos tremiam. As palavras na tela pareciam embaralhadas. Ele tentou de novo e a voz saiu fina, quase um sussurro.\n— Desculpa — murmurou, descendo do palco.\nNo corredor, Bia e Nina o encontraram sentado no chão, com o fone de volta nos ouvidos, mas sem música tocando.\n— Eu travo — disse ele. — Escrever é uma coisa. Falar na frente de todo mundo é outra.\nNina sentou ao lado dele.\n— Sabe o que eu faço? Leio o poema como se estivesse contando para uma pessoa só. Escolho alguém e falo com ela.\n— A sua crônica já é uma conversa — lembrou Bia. — Você escreveu \"você já reparou\". Então fala com um \"você\" de verdade.\nTomás tirou o fone. Pensou em Seu Ademar cumprimentando cada passageiro pelo nome, um de cada vez, sem pressa.\nQuando voltaram ao auditório, a professora tinha organizado uma atividade diferente. Distribuiu um poema curto de um autor desconhecido para a turma, sobre uma janela aberta numa manhã de domingo, e pediu interpretações. Mas avisou: toda interpretação precisava de uma justificativa no texto.\n— Eu acho que o poema é sobre liberdade — disse uma aluna.\n— Por quê? — perguntou a professora.\n— Porque a janela está aberta e o verso diz que \"o vento entra sem pedir licença\".\n— Ótimo. Viram? Opinião mais trecho do texto. Sem o trecho, é só palpite.\nOs alunos foram arriscando outras leituras: alguém achou que o poema falava de saudade, porque a casa estava vazia; outro, de descanso, porque era domingo. A professora aceitou todas que vinham com prova e recusou, rindo, a de um menino que achava que o poema era sobre futebol.\nNo fim do ensaio, Tomás pediu para tentar de novo. Subiu no tablado, procurou com os olhos a professora sentada na terceira fila e leu a crônica inteira olhando para ela, como se só houvesse uma passageira no ônibus. A voz tremeu no começo, depois firmou. Quando chegou à última frase, a turma aplaudiu mais alto do que para qualquer outro.\n— Amanhã vai ter muito mais gente — avisou Bia, na saída.\n— Eu sei — disse Tomás. — Mas vou falar com uma pessoa só.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde aconteceu o ensaio geral?",
+       "options": [
+        "No auditório",
+        "No pátio",
+        "Na biblioteca",
+        "Na quadra"
+       ],
+       "answer": "No auditório",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem leu primeiro no ensaio?",
+       "options": [
+        "Bia",
+        "Tomás",
+        "Nina",
+        "A professora"
+       ],
+       "answer": "Bia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu com Tomás na primeira tentativa?",
+       "options": [
+        "Ficou nervoso e não conseguiu continuar",
+        "Esqueceu o celular em casa",
+        "Leu o texto de Nina",
+        "Cantou em vez de ler"
+       ],
+       "answer": "Ficou nervoso e não conseguiu continuar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, segundo o verso citado, o vento entra sem pedir o quê?",
+       "options": [],
+       "answer": "licença",
+       "accept": [
+        "licenca"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual conselho Nina dá a Tomás?",
+       "options": [
+        "Ler como se falasse com uma pessoa só",
+        "Ler mais rápido",
+        "Decorar o texto",
+        "Desistir do sarau"
+       ],
+       "answer": "Ler como se falasse com uma pessoa só",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a interpretação sobre futebol foi recusada?",
+       "options": [
+        "Não tinha justificativa no texto",
+        "Era engraçada demais",
+        "Foi dita por um menino",
+        "Era longa demais"
+       ],
+       "answer": "Não tinha justificativa no texto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que liga o conselho das amigas à crônica de Tomás?",
+       "options": [
+        "A crônica já é escrita como uma conversa com 'você'",
+        "A crônica tem rimas",
+        "A crônica é sobre o auditório",
+        "A crônica foi escrita por Nina"
+       ],
+       "answer": "A crônica já é escrita como uma conversa com 'você'",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Que diferença você vê entre dar uma opinião sobre um texto e fazer uma interpretação justificada? Use um exemplo do capítulo.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A noite do varal",
+     "synopsis": "No sarau, os três amigos apresentam seus textos e recebem uma visita inesperada que dá um novo sentido à crônica de Tomás.",
+     "text": "Na sexta, o pátio estava irreconhecível. A professora Celina tinha pendurado pisca-piscas nas árvores, e o varal, agora protegido pelos sacos transparentes, brilhava como uma fileira de pequenas lanternas. Havia cadeiras de plástico para os pais, um tapete para os alunos menores e uma mesa com bolo de fubá e suco.\nA folha manchada, com a palavra \"riem\", estava bem no meio do varal. Várias pessoas paravam diante dela, liam o bilhete \"Sobrevivente da tempestade\" e sorriam.\nBia abriu o sarau. Leu o conto da sala de música, e, quando chegou à revelação da chave no bolso do casaco, ouviu um \"ahhh\" coletivo na plateia. Uma mãe na segunda fila comentou alto que tinha desconfiado desde a primeira frase. Bia achou aquilo o maior elogio possível.\nNina leu os dois poemas. Antes de começar, explicou em poucas palavras que eram textos em verso livre e que o segundo só existia por causa do primeiro. Na plateia, uma senhora de cabelo branco segurava um vaso de samambaia no colo. Era a avó de Nina, que tinha vindo de surpresa. Quando a neta leu o verso \"elas riem\", a avó levantou o vaso, e o pátio inteiro caiu na risada.\nTomás foi o último. Subiu no pequeno palco improvisado, respirou fundo e procurou alguém para quem falar. Ia escolher a professora Celina, mas, no fundo do pátio, perto do portão, viu um homem de bigode grisalho, ainda de uniforme, segurando um copo de suco.\nEra Seu Ademar.\nTomás descobriu depois que o menino do sexto ano, aquele que tinha lido a crônica no varal, era neto de uma passageira da linha das sete. Ela tinha contado ao motorista que havia um texto sobre ele na escola, e Seu Ademar, no fim do turno, passou por lá para ver.\nTomás leu a crônica inteira olhando para ele. Não tremeu nenhuma vez. Quando chegou à última frase — \"Descobri que, para alguém saber o seu nome, às vezes é preciso tirar o fone e dizer bom dia primeiro\" —, o motorista tirou o boné e fez uma reverência. A plateia aplaudiu de pé.\nDepois do sarau, os três amigos sentaram no banco perto da quadra, o mesmo do primeiro dia, com pratinhos de bolo no colo.\n— A gente começou o trimestre sem saber a diferença entre crônica e conto — disse Tomás.\n— Você começou — corrigiu Nina, rindo.\n— E terminou escrevendo uma — disse Bia.\nA professora Celina passou por eles recolhendo prendedores numa caixa de sapatos. Parou e perguntou o que cada um tinha aprendido. Bia respondeu que um bom mistério precisa ser justo com o leitor. Nina disse que um poema pode continuar crescendo depois de escrito, nas leituras dos outros. Tomás pensou um pouco e disse que as melhores histórias estavam no caminho de todo dia, só esperando alguém reparar nelas.\nA professora sorriu, guardou o último prendedor e entregou a cada um uma folha em branco.\n— Para o próximo trimestre — disse.\nBia, sem pensar duas vezes, escreveu algo no braço. Os outros dois pediram para ver, mas ela escondeu a mão no bolso. Afinal, todo bom narrador guarda alguma coisa para o próximo capítulo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a professora pendurou nas árvores para o sarau?",
+       "options": [
+        "Pisca-piscas",
+        "Bandeirinhas",
+        "Balões",
+        "Cartazes amarelos"
+       ],
+       "answer": "Pisca-piscas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que bolo foi servido no sarau?",
+       "options": [],
+       "answer": "bolo de fubá",
+       "accept": [
+        "fubá",
+        "de fubá"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem segurava um vaso de samambaia na plateia?",
+       "options": [
+        "A avó de Nina",
+        "A professora Celina",
+        "A mãe de Bia",
+        "Uma aluna do sexto ano"
+       ],
+       "answer": "A avó de Nina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem Tomás viu perto do portão?",
+       "options": [
+        "Seu Ademar",
+        "O zelador",
+        "O pai de Bia",
+        "O diretor"
+       ],
+       "answer": "Seu Ademar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Seu Ademar ficou sabendo da crônica?",
+       "options": [
+        "Uma passageira, avó do menino do sexto ano, contou a ele",
+        "Tomás o convidou",
+        "Leu no jornal",
+        "A professora telefonou"
+       ],
+       "answer": "Uma passageira, avó do menino do sexto ano, contou a ele",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia considerou o comentário da mãe na plateia um elogio?",
+       "options": [
+        "Mostrava que as pistas do conto eram justas",
+        "Mostrava que o conto era engraçado",
+        "Mostrava que o conto era curto",
+        "Mostrava que ninguém entendeu"
+       ],
+       "answer": "Mostrava que as pistas do conto eram justas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a última frase da crônica de Tomás revela sobre a mudança dele?",
+       "options": [
+        "Ele passou a se abrir para as pessoas ao redor",
+        "Ele decidiu ser motorista",
+        "Ele parou de escrever",
+        "Ele trocou de escola"
+       ],
+       "answer": "Ele passou a se abrir para as pessoas ao redor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Bia escondeu o que escreveu no braço no final? O que isso sugere sobre a história?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
