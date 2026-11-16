@@ -3896,6 +3896,894 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Lantern Society",
+   "premise": "Three Year 8 friends start receiving mysterious notes signed 'The Lantern' and, through a stormy evening, a missing trophy, a poetry slam and a ghost story, revisit Gothic writing, detective fiction and poetry before unmasking the note-writer.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Library After Dark",
+     "synopsis": "During a storm and a power cut, three friends find a mysterious note in the school library and follow its riddle to the old hall clock.",
+     "text": "The storm arrived at ten past four, just as the last bus pulled away without Tilly, Dev and Ros. By twenty past, the rain was hurling itself against the tall library windows like handfuls of gravel, and by half past, the lights went out.\nFor a moment nobody spoke. The library, which by day smelled of floor polish and warm radiators, became something else entirely. The bookshelves stretched up into a darkness that seemed to have no ceiling. Somewhere above them, a window rattled in its frame, and the long curtains breathed in and out as if the room itself were alive.\n\"Brilliant,\" said Dev, switching on his phone torch. \"Very Gothic. All we need now is a portrait with moving eyes.\"\n\"Don't,\" whispered Ros, who had read too many ghost stories over the summer.\nMr Pennick, the librarian, called from his office that he was phoning the caretaker and that they should stay exactly where they were. So they sat at the long oak table near the poetry section, and Tilly pulled a battered anthology towards her to pass the time.\nA folded square of thick cream paper slipped out from between the pages. It had been sealed with a blob of green wax pressed with the shape of a tiny lantern. Tilly broke the seal. The handwriting inside was neat and old-fashioned, in green ink.\nReaders of the dark, it began. If you are brave enough, go where the stone eyes watch the clock. What you find there is yours to keep. — The Lantern.\nThunder rolled across the playing fields. Ros gripped the edge of the table.\n\"Stone eyes,\" said Dev slowly. \"Statues? We haven't got any statues.\"\nTilly closed her eyes and pictured the school. The modern block was all glass and bright doors. But the old building, where the library was, had once been a Victorian hall. And above the great clock in the entrance corridor, carved into the stone arch, were two grinning gargoyles.\n\"The entrance hall,\" she said. \"The gargoyles above the clock. They look straight at it.\"\nThey crept along the corridor by torchlight. Their footsteps echoed far too loudly. Every shadow seemed to lean towards them, and when a door banged somewhere upstairs, Ros let out a squeak and then pretended she had sneezed.\nThe clock was still ticking, steady and indifferent, even without electricity. Dev shone the torch upwards. The gargoyles' stone eyes glinted wetly where rain had dripped through a crack in the roof. Below them, tucked behind the edge of the clock case, was a small envelope.\nInside were three bookmarks, each cut in the shape of a lantern, and a second line of green writing: Welcome to the Lantern Society. More challenges will follow.\nJust then the lights flickered back on. The corridor was suddenly ordinary again: notice boards, a lost PE bag, a poster about recycling. The gargoyles looked less like monsters and more like slightly grumpy old men.\n\"So,\" said Dev, grinning, \"who is the Lantern?\"\nNobody knew. But as they hurried back to the library, Tilly noticed that the green wax seal was still warm.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what time did the lights go out?",
+       "options": [
+        "Ten past four",
+        "Twenty past four",
+        "Half past four",
+        "Five o'clock"
+       ],
+       "answer": "Half past four",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what colour was the ink in the note?",
+       "options": [],
+       "answer": "green",
+       "accept": [
+        "green ink"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what shape was pressed into the wax seal?",
+       "options": [
+        "A key",
+        "A lantern",
+        "A clock",
+        "A raven"
+       ],
+       "answer": "A lantern",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what were the 'stone eyes' that watched the clock?",
+       "options": [],
+       "answer": "gargoyles",
+       "accept": [
+        "the gargoyles",
+        "two gargoyles"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which detail best creates a Gothic atmosphere in the library?",
+       "options": [
+        "The smell of floor polish",
+        "The curtains breathing in and out as if the room were alive",
+        "The poster about recycling",
+        "The lost PE bag"
+       ],
+       "answer": "The curtains breathing in and out as if the room were alive",
+       "accept": [],
+       "hint": "Look for personification that makes the room seem alive.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the corridor seem 'ordinary again' at the end?",
+       "options": [
+        "The storm has stopped",
+        "The lights have come back on",
+        "Mr Pennick has arrived",
+        "The friends have left the building"
+       ],
+       "answer": "The lights have come back on",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the still-warm wax seal suggest?",
+       "options": [
+        "The note was very old",
+        "The Lantern had been nearby very recently",
+        "The library heating was on",
+        "Tilly had melted it with her torch"
+       ],
+       "answer": "The Lantern had been nearby very recently",
+       "accept": [],
+       "hint": "Wax cools quickly. What does warmth tell you about time?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the writer describes the gargoyles as 'slightly grumpy old men' once the lights come on?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Case of the Vanishing Cup",
+     "synopsis": "The debating cup disappears from its cabinet, and Dev uses clues, rather than rumours, to work out where it has really gone.",
+     "text": "On Monday morning, the silver debating cup was gone. The glass cabinet outside the staffroom stood open, and in the space where the cup had shone for three years there was only a ring of dust.\nBy break time, the whole of Year 8 had a theory. Someone had sold it. Someone had stolen it for a dare. A boy called Marcus had been seen near the cabinet on Friday afternoon, and that, according to most people, settled the matter.\n\"It doesn't settle anything,\" said Dev. He had been reading detective stories all half-term and now carried a small notebook everywhere. \"Being near a place isn't proof. Lots of people walk past that cabinet.\"\nA second green note had appeared in Tilly's locker that morning: A good detective trusts evidence, not gossip. — The Lantern. So the three of them went to look.\nDev examined the cabinet the way his favourite fictional detectives did, slowly and without touching anything. \"Clue one,\" he said, \"the lock isn't broken. Whoever opened it had a key.\"\n\"Marcus doesn't have a key,\" said Ros.\n\"Exactly. Clue two.\" He pointed at the shelf. Sprinkled across the dust were tiny specks of gold glitter. \"Clue three: the cleaner's rota on the wall says this corridor was mopped on Friday at five. But there are dry footprints on the floor, so someone came after five, once the floor had dried.\"\nTilly frowned. \"Who would be in school after five on a Friday?\"\n\"The drama club,\" said Ros suddenly. \"They rehearse late on Fridays. They're doing that play about the king and the stolen crown.\"\nDev snapped his notebook shut. \"And who would need a shiny trophy on stage? And who would be covered in glitter?\"\nThey found Ms Achebe, the drama teacher, in the hall, painting a cardboard throne. On a table beside her, wrapped in a tea towel, was the debating cup, with a paper crown taped to its handle.\n\"Oh no,\" she said, when they explained. \"I borrowed it on Friday evening for our dress rehearsal. I asked the head of debating for the key and left a note in the cabinet.\" She frowned. \"At least, I thought I did.\"\nThe note turned up later, blown under the radiator by the draught from the corridor door.\nAt lunchtime, Dev told everyone what had really happened. A few people looked disappointed; a stolen cup made a better story. Marcus, however, came over and quietly thanked him.\n\"Everyone was staring at me all morning,\" he said. \"Thanks for actually checking.\"\nThat afternoon, a third note appeared, tucked into Dev's notebook while it lay on his desk. It said only: Well reasoned. The red herring was the boy by the cabinet. — The Lantern.\nDev read it twice. Nobody had touched his bag all day, he was sure of it. Or almost sure.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was left where the cup had stood?",
+       "options": [
+        "A green note",
+        "A ring of dust",
+        "A paper crown",
+        "A broken key"
+       ],
+       "answer": "A ring of dust",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what did Dev carry everywhere after half-term?",
+       "options": [],
+       "answer": "a notebook",
+       "accept": [
+        "notebook",
+        "a small notebook",
+        "small notebook"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what showed that the cabinet had been opened with a key?",
+       "options": [
+        "The glass was cracked",
+        "The lock was not broken",
+        "There were fingerprints",
+        "The door was closed"
+       ],
+       "answer": "The lock was not broken",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was sprinkled across the dusty shelf?",
+       "options": [],
+       "answer": "glitter",
+       "accept": [
+        "gold glitter",
+        "specks of glitter",
+        "specks of gold glitter"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who had borrowed the cup?",
+       "options": [
+        "Marcus",
+        "The head of debating",
+        "Ms Achebe",
+        "The cleaner"
+       ],
+       "answer": "Ms Achebe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the Lantern mean by calling Marcus a 'red herring'?",
+       "options": [
+        "He was the real thief",
+        "He was a clue that misled people",
+        "He helped the drama club",
+        "He wrote the notes"
+       ],
+       "answer": "He was a clue that misled people",
+       "accept": [],
+       "hint": "In detective fiction, a red herring points you the wrong way.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why were some people disappointed by the truth?",
+       "options": [
+        "They wanted the cup back",
+        "A stolen cup made a better story",
+        "They disliked the drama club",
+        "They had lost a bet"
+       ],
+       "answer": "A stolen cup made a better story",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Marcus thanked Dev quietly instead of in front of everyone?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Fog Poems",
+     "synopsis": "Ros is stuck on her poetry homework until a foggy morning and a challenge from the Lantern help her find her images.",
+     "text": "Ros hated poetry homework. Not poetry itself, exactly; she liked reading it. But whenever she had to write a poem, her ideas came out flat and heavy, like wet cardboard.\nThe task was simple to explain and impossible to do: write a poem of at least twelve lines about weather, using at least three techniques from this term. Metaphor, simile, personification, alliteration, enjambment. The list sat in her planner and stared at her.\nOn Wednesday morning she woke up to fog. It had swallowed the whole street. The lamp posts were faint grey pencil lines, and the trees at the end of the road had vanished completely, as if someone had rubbed them out. When the bus came, its headlights appeared first, two pale eyes floating towards her, and only later the rest of it.\nAt school, a green note was waiting inside her poetry anthology. Do not write about the fog, it said. Write as the fog. — The Lantern.\n\"Write as the fog?\" said Dev at break. \"What, like, 'I am grey, I am damp, please bring a towel'?\"\n\"No,\" said Tilly thoughtfully. \"Like the fog is the speaker. It's personification, but the whole poem is the voice.\"\nRos spent the whole of maths thinking about it, which was not ideal for her algebra. What would fog want? Where would it go? She remembered the trees being rubbed out, the lamp posts turned to pencil lines, the bus with its floating eyes.\nThat evening she wrote quickly, without stopping to cross things out.\nI am the rubber of the morning.\nI erase the trees, the rooftops and the road,\nleaving only a grey page\nfor you to walk across.\nShe stopped and read it aloud to her cat, who was not impressed but did not leave. The first line was a metaphor; she was almost sure. The line about the grey page ran on into the next one without a full stop, which was enjambment. She added a simile about the bus, its headlights like two lost moons, and a line full of soft sounds, silent, soaking, slow, for alliteration.\nThe final poem had fourteen lines. It wasn't perfect. The ending felt a little rushed. But when she read it again, she could see the street exactly as it had looked that morning, and that had never happened with one of her poems before.\nOn Thursday, Mr Pennick asked if she would pin it to the library's poetry wall. Ros went red and said yes before she could change her mind.\nBy the end of the day, someone had written underneath it in tiny green letters: Beautiful. The fog would be proud.\nRos looked around the library. Two Year 7s were doing homework by the window. A girl with a long plait was reading in the beanbag corner, half hidden behind a shelf. Mr Pennick was stamping books. Nobody looked like a mysterious note-writer.\nThen again, she thought, nobody ever does.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Ros say her ideas for poems usually came out like?",
+       "options": [
+        "Wet cardboard",
+        "Grey fog",
+        "Pencil lines",
+        "Lost moons"
+       ],
+       "answer": "Wet cardboard",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many lines did the poem need to have, at least?",
+       "options": [],
+       "answer": "twelve",
+       "accept": [
+        "12"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the Lantern's note tell Ros to do?",
+       "options": [
+        "Write about the rain",
+        "Write as the fog",
+        "Write a sonnet",
+        "Write without techniques"
+       ],
+       "answer": "Write as the fog",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, Ros compares the headlights to 'two lost moons'. Which technique is this?",
+       "options": [
+        "Metaphor",
+        "Simile",
+        "Alliteration",
+        "Enjambment"
+       ],
+       "answer": "Simile",
+       "accept": [],
+       "hint": "Look for the word 'like' or 'as'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many lines did Ros's final poem have?",
+       "options": [],
+       "answer": "fourteen",
+       "accept": [
+        "14"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where was Ros's poem displayed?",
+       "options": [
+        "On the classroom door",
+        "On the library's poetry wall",
+        "In the school newsletter",
+        "In the entrance hall"
+       ],
+       "answer": "On the library's poetry wall",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was this poem different for Ros from her earlier ones?",
+       "options": [
+        "It rhymed perfectly",
+        "She could picture the street exactly when she read it",
+        "Her teacher wrote it with her",
+        "It was very short"
+       ],
+       "answer": "She could picture the street exactly when she read it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the writer mentions the girl with a long plait reading in the beanbag corner?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Tale of the Grey Lady",
+     "synopsis": "At the club's Friday story evening, Tilly tells a Gothic tale with a twist, and the friends discuss what makes a story frightening.",
+     "text": "Mr Pennick allowed the Lantern Society, as they now secretly called themselves, to stay for the library's Friday story evening. Six students sat on cushions in a circle. A battery candle flickered in the middle, because real candles were against school rules.\n\"Tilly,\" said Mr Pennick, \"you signed up to tell a story.\"\nTilly took a breath and lowered her voice.\n\"Long ago, a girl called Elspeth was sent to live with her great-aunt in a house at the edge of the moor. It was the kind of house that seemed to have been built by someone who disliked visitors. It had narrow windows, a door that groaned, and corridors that ended suddenly in walls.\n\"Her great-aunt was kind but very old, and she gave Elspeth only one rule. 'Never go into the east wing after dark.'\n\"Of course, on the third night, Elspeth heard music coming from the east wing. A piano, playing the same few notes again and again. She took a candle and followed the sound. The corridor grew colder with every step. Her candle flame bent sideways, though she could feel no wind.\n\"At the end of the corridor was a room full of furniture covered in white sheets, like a crowd of silent ghosts. And on the wall hung a portrait of a woman in a grey dress, holding a sheet of music. Elspeth stepped closer. The woman in the painting had her face. Exactly her face.\n\"The music stopped.\n\"Behind her, a voice whispered, 'You came back.'\"\nTilly paused. Someone in the circle gasped. Dev, who had claimed he never got scared, was hugging a cushion.\n\"Elspeth ran,\" Tilly went on. \"She ran all the way to her great-aunt's room and told her everything. The old woman smiled sadly and said, 'That is a portrait of me, my dear, painted when I was your age. And the music is mine, too. I have been playing it every night, hoping one day someone in this family would come to listen.'\n\"The next evening, Elspeth went to the east wing again. This time she was not afraid. She sat beside her great-aunt at the piano, and together they played until the candles burned down.\"\nThere was a silence, and then everyone started talking at once.\n\"I thought it was going to be a ghost!\"\n\"The face being the same was so creepy.\"\n\"But it wasn't a ghost. It was just family.\"\nMr Pennick tapped his pen on his knee. \"So what made it frightening, if it wasn't really a ghost?\"\nThey listed the features together: the isolated house, the forbidden room, the candle in the dark, the cold corridor, the covered furniture, the portrait, the mysterious music. \"The setting does most of the work,\" said Ros. \"And not knowing. That's the scariest part.\"\n\"And the twist,\" added Dev, \"changes the fear into something sad. Or nice. Or both.\"\nOn the way out, Tilly found a green note pressed into the pocket of her coat. A twist should surprise the reader but still make sense. Yours did both. — The Lantern.\nShe had not taken her coat off all evening. Except, she remembered, for the five minutes when she had hung it on the hook by the beanbag corner.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, why was the candle a battery one?",
+       "options": [],
+       "answer": "school rules",
+       "accept": [
+        "real candles were against school rules",
+        "rules",
+        "because of school rules"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Elspeth's great-aunt live?",
+       "options": [
+        "In a city flat",
+        "At the edge of the moor",
+        "Beside the sea",
+        "In a village school"
+       ],
+       "answer": "At the edge of the moor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which part of the house was Elspeth told never to enter after dark?",
+       "options": [],
+       "answer": "the east wing",
+       "accept": [
+        "east wing"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the white sheets over the furniture look like?",
+       "options": [
+        "Clouds",
+        "A crowd of silent ghosts",
+        "Snow",
+        "Sails"
+       ],
+       "answer": "A crowd of silent ghosts",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who was the woman in the portrait?",
+       "options": [
+        "A ghost",
+        "Elspeth's mother",
+        "The great-aunt when she was young",
+        "A stranger"
+       ],
+       "answer": "The great-aunt when she was young",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which feature is NOT one of the Gothic features the group listed?",
+       "options": [
+        "The isolated house",
+        "The forbidden room",
+        "The portrait",
+        "A bright sunny garden"
+       ],
+       "answer": "A bright sunny garden",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the most likely reason Tilly found the note in her coat?",
+       "options": [
+        "Mr Pennick put it there during the story",
+        "Someone near the beanbag corner slipped it in when the coat was on the hook",
+        "It was there from the morning",
+        "Dev hid it as a joke"
+       ],
+       "answer": "Someone near the beanbag corner slipped it in when the coat was on the hook",
+       "accept": [],
+       "hint": "Think about when the coat was not with Tilly.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the friends say that 'not knowing' is the scariest part of a story?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Footprints in the Frost",
+     "synopsis": "Books keep moving around the library at lunchtime, and the friends follow a trail of clues to a quiet reader with a secret.",
+     "text": "For a whole week, something strange happened in the library. Every afternoon, Mr Pennick found books that had been taken from the shelves and put back in slightly the wrong places. Poetry turned up in the history section. A book of Victorian ghost stories appeared on the returns trolley without ever having been borrowed.\n\"It isn't a problem, exactly,\" Mr Pennick said, scratching his head. \"Nobody is damaging anything. But I'd like to know who is in here while I'm on lunch duty.\"\nThe library was supposed to be locked between twelve and one.\n\"A case,\" said Dev happily, taking out his notebook.\nOn Monday, the first frost of the year had covered the playground. It was still there at lunchtime in the shadow of the old building. When the friends walked round to the back of the library, they saw a line of small footprints in the white grass, leading from the side gate to the fire door.\n\"Small feet,\" said Tilly. \"Probably a Year 7.\"\nDev crouched down. \"And look. The prints come towards the door, but none go back. So whoever it is went in and stayed in, or left another way.\"\nRos noticed something else. The fire door, which was meant to be shut, had a folded piece of card wedged near the bottom so that it didn't quite close.\n\"So they come in this way at lunch,\" said Tilly. \"But why? Why not just come in when it's open?\"\nThey decided not to set a trap. Instead, on Tuesday, they simply went to the library at lunchtime and waited quietly between the shelves.\nAt ten past twelve, the fire door creaked. A small girl with a long plait slipped in, carrying a lunchbox and a thick book. She went straight to the beanbag corner, sat down, and began to read.\nRos recognised her at once. It was the girl from the poetry wall day.\n\"Hi,\" said Ros gently, stepping out. The girl jumped so violently that her book fell on the floor. \"It's all right. We're not going to tell anyone off. We just wondered.\"\nThe girl's name was Bea. She was in Year 7. Her lunchtime club had stopped running after half-term, and the playground was loud and crowded, and she did not really have anyone to sit with yet. The library was the only place that felt calm.\n\"I put the books back,\" she said anxiously. \"I just don't always know where they go.\"\nThey told Mr Pennick together. He listened, then nodded slowly.\n\"Fire doors are for emergencies,\" he said, \"so that has to stop. But the library will be open at lunch from tomorrow. I'll ask for a prefect to cover it. And Bea, if you'd like a job, I could use someone to help with the shelving.\"\nBea smiled for the first time.\nAs they left, Dev wrote in his notebook: Case closed. Motive: not mischief, but needing a quiet place. Then he paused, pen in the air.\n\"Did anyone else notice,\" he said, \"that the book she dropped was the same anthology where Tilly found the first note?\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which book appeared on the returns trolley without having been borrowed?",
+       "options": [
+        "A poetry anthology",
+        "A book of Victorian ghost stories",
+        "A history book",
+        "A detective novel"
+       ],
+       "answer": "A book of Victorian ghost stories",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, between which times was the library supposed to be locked?",
+       "options": [],
+       "answer": "twelve and one",
+       "accept": [
+        "12 and 1",
+        "between twelve and one",
+        "12 to 1",
+        "twelve to one"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the footprints in the frost suggest?",
+       "options": [
+        "Someone went in and did not come back out that way",
+        "Several people had run away",
+        "A teacher had walked past",
+        "Someone had only looked through the window"
+       ],
+       "answer": "Someone went in and did not come back out that way",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was wedged near the bottom of the fire door?",
+       "options": [],
+       "answer": "a piece of card",
+       "accept": [
+        "card",
+        "folded card",
+        "a folded piece of card",
+        "folded piece of card"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the name of the girl who had been coming into the library?",
+       "options": [],
+       "answer": "Bea",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Bea go to the library at lunchtime?",
+       "options": [
+        "To play a trick on Mr Pennick",
+        "Because it was the only place that felt calm",
+        "To finish her homework",
+        "To leave notes for the friends"
+       ],
+       "answer": "Because it was the only place that felt calm",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Dev's final question make the reader suspect?",
+       "options": [
+        "That Bea stole the anthology",
+        "That Bea might be connected to the Lantern notes",
+        "That Mr Pennick wrote the notes",
+        "That the anthology is valuable"
+       ],
+       "answer": "That Bea might be connected to the Lantern notes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the friends decided not to set a trap for the person in the library?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Poetry Slam",
+     "synopsis": "At the end-of-term poetry slam, each friend performs a poem in a different form and learns how structure and rhythm shape meaning.",
+     "text": "The end-of-term poetry slam was held in the hall, with a microphone that whistled whenever anyone stood too close. Each performer had three minutes. The audience could click their fingers to show they liked a line, which was quieter than clapping and, Dev said, much cooler.\nDev had decided to write a sonnet. \"Fourteen lines,\" he explained to anyone who would listen. \"And a twist at the end, called the volta. It's basically a detective story in a poem. You set it up, and then you turn it round.\"\nHis sonnet was about a lost football boot. For twelve lines it sounded like a tragic love poem, full of longing and despair. Then the final couplet revealed that the boot had been in the washing machine all along. The audience laughed and clicked their fingers so hard that the teacher had to wait before introducing the next person.\nTilly's poem was in free verse. It had no rhyme and no regular rhythm, and the lines were all different lengths. Some were one word long. Before she performed, she explained why.\n\"My poem is about my grandmother's kitchen,\" she said. \"She talks fast and then stops suddenly, and I wanted the lines to do that too.\"\nWhen she read it, the short lines made the audience pause exactly where she wanted them to. In the middle of one line she stopped completely, a full stop in the centre of the sentence, and let the silence sit there for a second before going on. Afterwards, Ms Achebe told her that the pause was called a caesura, and that she had used it perfectly.\nRos went last. She had been terrified all week. She performed a new version of her fog poem, this time with a regular rhythm, almost like a heartbeat, so that the fog seemed to creep forward step by step. She had also added a repeated line at the end of each stanza: and still I come.\nThe first time she said it, her voice shook. The second time it was steadier. By the fourth, the audience was whispering it with her.\nWhen she sat down, her hands were trembling, but she was smiling.\nThe judges, two teachers and a sixth-former, gave the prize to a Year 10 student who had written a powerful poem about moving countries. Nobody minded. It really was the best.\nBut as the hall emptied, Mr Pennick handed each of the three friends a small envelope. \"These were left on my desk,\" he said, \"with instructions to give them to you after the slam.\"\nInside each was a lantern-shaped card. Dev's said: A volta worthy of a detective. Tilly's said: Your silences spoke loudest. Ros's said: The fog came, and the hall listened.\nAnd on the back of all three, in the same green ink, the same line: Final challenge. Find me before the holidays. Every clue you need is already in your hands.\nDev looked at Tilly. Tilly looked at Ros. Ros looked down at the cards.\n\"Already in our hands,\" she said slowly. \"Then we need to look again at everything.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how could the audience show they liked a line?",
+       "options": [
+        "By stamping their feet",
+        "By clicking their fingers",
+        "By cheering",
+        "By raising their hands"
+       ],
+       "answer": "By clicking their fingers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the twist in a sonnet called?",
+       "options": [],
+       "answer": "the volta",
+       "accept": [
+        "volta"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Dev's sonnet really about?",
+       "options": [
+        "A lost love",
+        "A lost football boot",
+        "A washing machine",
+        "A detective"
+       ],
+       "answer": "A lost football boot",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which form did Tilly use for her poem?",
+       "options": [
+        "Sonnet",
+        "Haiku",
+        "Free verse",
+        "Limerick"
+       ],
+       "answer": "Free verse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name for the pause Tilly made in the middle of a line?",
+       "options": [],
+       "answer": "a caesura",
+       "accept": [
+        "caesura"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what repeated line did Ros add to her poem?",
+       "options": [
+        "I am the rubber of the morning",
+        "And still I come",
+        "Silent, soaking, slow",
+        "Two lost moons"
+       ],
+       "answer": "And still I come",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the audience whispering Ros's line suggest?",
+       "options": [
+        "They were bored",
+        "They had connected with her poem",
+        "They did not hear her",
+        "They were copying her by mistake"
+       ],
+       "answer": "They had connected with her poem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Tilly wanted the lines of her poem to stop suddenly, like her grandmother's speech?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Lantern Revealed",
+     "synopsis": "Using everything they have learned about Gothic settings, detection and poetry, the friends finally work out who the Lantern is.",
+     "text": "On the last Wednesday of term, the three friends spread everything on the long oak table in the library: seven green notes and three lantern-shaped cards.\n\"Right,\" said Dev, opening his notebook. \"A proper detective doesn't guess. We list what we know.\"\nThey worked through it together. The Lantern used old-fashioned handwriting and green ink. The Lantern knew the old building well enough to know about the gargoyles above the clock. The Lantern had left notes in the poetry anthology, in Tilly's locker, in Dev's notebook and in Tilly's coat while it hung by the beanbag corner.\n\"And the Lantern could get into the library when it was locked,\" said Tilly.\n\"Which Bea could,\" said Ros quietly. \"Through the fire door.\"\nThey were silent for a moment.\n\"But Bea can't have written the first note,\" said Dev. \"The first note was in October, before half-term. Bea said her lunch club only stopped after half-term. She wasn't sneaking in then.\"\n\"Unless,\" said Tilly, \"there are two of them.\"\nShe picked up the cards from the poetry slam. \"These were left on Mr Pennick's desk. He said so. And look.\" She held one up to the window. Faintly, in the corner, was the shape of a library stamp, the kind used to mark books, pressed into the card before the ink went on.\nRos's eyes widened. \"The wax seal. A tiny lantern. Mr Pennick has a lantern on his keyring. I've seen it.\"\n\"And green ink,\" said Dev, pointing at the pen pot on the issue desk, where a green fountain pen sat among the biros.\nThey turned around. Mr Pennick was standing in the doorway of his office, holding a mug of tea and trying very hard not to smile. Beside him, half hiding behind a trolley of books, was Bea.\n\"How long have you been there?\" asked Tilly.\n\"Long enough,\" said Mr Pennick. \"Well done. You reasoned it out from evidence. That's exactly what I hoped.\"\nHe explained. He had started the Lantern notes in October to encourage students to use the library more, hiding challenges in books he thought someone might open. Tilly, Dev and Ros had been the first to find one. After half-term, when Bea began helping with the shelving, she had discovered his secret and asked if she could help.\n\"She chose the hiding places,\" he said. \"The coat. The notebook. She's very quiet. Nobody ever notices her.\"\n\"I noticed,\" said Ros. \"I just didn't think.\"\nBea went pink. \"Your fog poem was my favourite,\" she said. \"That's why I wrote 'Beautiful' under it. That one was me.\"\nDev closed his notebook with a satisfied snap. \"The Lantern Society,\" he said, \"now has four members. If Bea wants.\"\nBea nodded so fast that her plait swung.\nOutside, the winter dark was already gathering, though it was barely four o'clock. Rain began to tap at the tall windows, and the curtains stirred. But the library did not feel Gothic any more. It felt warm, and full of stories, and exactly like the kind of place where a new term's mysteries might begin.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many green notes did the friends spread on the table?",
+       "options": [],
+       "answer": "seven",
+       "accept": [
+        "7",
+        "seven notes"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Dev say Bea could not have written the first note?",
+       "options": [
+        "Her handwriting was different",
+        "It was written before half-term, when she was not using the fire door",
+        "She was ill that day",
+        "She did not own green ink"
+       ],
+       "answer": "It was written before half-term, when she was not using the fire door",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what faint mark did Tilly find on the card?",
+       "options": [
+        "A fingerprint",
+        "A library stamp",
+        "A green wax seal",
+        "A lantern drawing"
+       ],
+       "answer": "A library stamp",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what does Mr Pennick have on his keyring?",
+       "options": [],
+       "answer": "a lantern",
+       "accept": [
+        "lantern",
+        "a tiny lantern",
+        "a small lantern"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Mr Pennick start the Lantern notes?",
+       "options": [
+        "To catch a thief",
+        "To encourage students to use the library more",
+        "To find a new library helper",
+        "To teach a poetry lesson"
+       ],
+       "answer": "To encourage students to use the library more",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Bea's role in the Lantern notes after half-term?",
+       "options": [
+        "She wrote all of them",
+        "She chose the hiding places",
+        "She delivered the cups",
+        "She only read them"
+       ],
+       "answer": "She chose the hiding places",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does the final paragraph change the Gothic setting from Chapter 1?",
+       "options": [
+        "The storm is now more frightening",
+        "The same rain and curtains now feel warm and welcoming",
+        "The library has been closed down",
+        "The gargoyles have been removed"
+       ],
+       "answer": "The same rain and curtains now feel warm and welcoming",
+       "accept": [],
+       "hint": "Compare the rain and the curtains with how they felt at the start of the story.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the writer ends the story with the idea that new mysteries might begin?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
