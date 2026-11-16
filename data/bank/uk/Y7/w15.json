@@ -1059,6 +1059,979 @@
      "errors": []
     }
    ]
+  },
+  "fre": {
+   "topic": "Term 1 review: myself, family and school",
+   "questions": [
+    {
+     "id": "r12ldwzjmnzsqf",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'Bonjour' mean in English?",
+     "options": [
+      "Goodbye",
+      "Hello",
+      "Thank you",
+      "Please"
+     ],
+     "answer": "Hello",
+     "accept": [],
+     "hint": "It is a greeting you use in the morning or daytime.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17qfr37hrdovt",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct form of 'avoir': J'___ douze ans.",
+     "options": [
+      "ai",
+      "as",
+      "a",
+      "avons"
+     ],
+     "answer": "ai",
+     "accept": [],
+     "hint": "Which form goes with 'je'?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l4vr181jff5sn",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct form of 'être': Nous ___ en classe.",
+     "options": [
+      "sommes",
+      "êtes",
+      "sont",
+      "suis"
+     ],
+     "answer": "sommes",
+     "accept": [],
+     "hint": "Think of the 'nous' form of 'to be'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6ad0iz131b6s2",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'my brother'",
+     "options": [],
+     "answer": "mon frère",
+     "accept": [
+      "mon frere"
+     ],
+     "hint": "Frère is masculine.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r38yejdhzuf2i",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'my sister'",
+     "options": [],
+     "answer": "ma sœur",
+     "accept": [
+      "ma soeur"
+     ],
+     "hint": "Sœur is feminine.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryt18epf2sus7",
+     "subject": "fre",
+     "type": "mc",
+     "q": "How do you say 'I like football' in French?",
+     "options": [
+      "J'aime le football",
+      "Je suis le football",
+      "J'ai le football",
+      "Je joue football"
+     ],
+     "answer": "J'aime le football",
+     "accept": [],
+     "hint": "Use the verb 'aimer'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mohm2m1nldor3",
+     "subject": "fre",
+     "type": "short",
+     "q": "Write the French number for 15.",
+     "options": [],
+     "answer": "quinze",
+     "accept": [],
+     "hint": "It comes after quatorze.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7pdwq1z0mxe4",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which word means 'grandmother'?",
+     "options": [
+      "la grand-mère",
+      "la tante",
+      "la cousine",
+      "la mère"
+     ],
+     "answer": "la grand-mère",
+     "accept": [],
+     "hint": "Think of 'grand' + 'mother'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rpmwrqa0xznu",
+     "subject": "fre",
+     "type": "short",
+     "q": "Conjugate 'jouer' for 'tu': Tu ___ au tennis.",
+     "options": [],
+     "answer": "joues",
+     "accept": [],
+     "hint": "-er verbs take -es with 'tu'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1toujgi92z3gi",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct ending: Ils regard___ la télé.",
+     "options": [
+      "-ent",
+      "-ons",
+      "-ez",
+      "-e"
+     ],
+     "answer": "-ent",
+     "accept": [],
+     "hint": "This is the 'ils' ending for -er verbs; it is silent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg0yja1zd7elx",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'Je déteste les maths' mean?",
+     "options": [
+      "I love maths",
+      "I hate maths",
+      "I study maths",
+      "I have maths"
+     ],
+     "answer": "I hate maths",
+     "accept": [],
+     "hint": "Déteste looks like an English word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqohxzb16imw50",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'the school' (use the article).",
+     "options": [],
+     "answer": "l'école",
+     "accept": [
+      "l'ecole",
+      "l' école"
+     ],
+     "hint": "École starts with a vowel.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rmme2hflzzs2",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which question means 'How old are you?'",
+     "options": [
+      "Tu as quel âge ?",
+      "Comment tu t'appelles ?",
+      "Où habites-tu ?",
+      "Ça va ?"
+     ],
+     "answer": "Tu as quel âge ?",
+     "accept": [],
+     "hint": "In French you 'have' years.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ujt441yitalb",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct sentence.",
+     "options": [
+      "Elle est grande.",
+      "Elle est grand.",
+      "Elle a grande.",
+      "Elle sont grande."
+     ],
+     "answer": "Elle est grande.",
+     "accept": [],
+     "hint": "Check the verb and the feminine adjective ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2jmvcsrg81yj",
+     "subject": "fre",
+     "type": "short",
+     "q": "Make this negative: 'Je parle anglais.' Write the whole sentence.",
+     "options": [],
+     "answer": "Je ne parle pas anglais.",
+     "accept": [
+      "je ne parle pas anglais",
+      "Je ne parle pas anglais"
+     ],
+     "hint": "Negatives wrap 'ne … pas' around the verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16i1bmisoyi2z",
+     "subject": "fre",
+     "type": "open",
+     "q": "Write two or three sentences in French about yourself: your name, your age and one thing you like.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use je m'appelle, j'ai … ans and j'aime.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "geog": {
+   "topic": "Term 1 review: map skills, weather and biomes",
+   "questions": [
+    {
+     "id": "r1s7jbhd3gaay3",
+     "subject": "geog",
+     "type": "mc",
+     "q": "When giving a grid reference, which do you read first?",
+     "options": [
+      "Northings (up the side)",
+      "Eastings (along the bottom)",
+      "The contour lines",
+      "The key"
+     ],
+     "answer": "Eastings (along the bottom)",
+     "accept": [],
+     "hint": "Remember: along the corridor, then up the stairs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqm901n1ear5i6",
+     "subject": "geog",
+     "type": "mc",
+     "q": "How many figures does a grid reference need to show one exact point inside a square, to the nearest tenth?",
+     "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+     ],
+     "answer": "6",
+     "accept": [],
+     "hint": "A four-figure reference only names the whole square.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7tpvtn1g0wn41",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which compass direction is opposite north-east?",
+     "options": [
+      "South-west",
+      "South-east",
+      "North-west",
+      "West"
+     ],
+     "answer": "South-west",
+     "accept": [],
+     "hint": "Turn halfway round the compass.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12lwzg5zrcsox",
+     "subject": "geog",
+     "type": "num",
+     "q": "On a map with scale 1:50,000, 1 cm represents how many metres on the ground?",
+     "options": [],
+     "answer": "500",
+     "accept": [],
+     "hint": "Divide 50,000 cm by 100 to change to metres.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hgrjdvimorai",
+     "subject": "geog",
+     "type": "num",
+     "q": "On a 1:25,000 map, two villages are 4 cm apart. How many kilometres apart are they in real life?",
+     "options": [],
+     "answer": "1",
+     "accept": [],
+     "hint": "1 cm = 25,000 cm = 250 m.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14v5g4f1157pw",
+     "subject": "geog",
+     "type": "mc",
+     "q": "On an OS map, what do contour lines that are very close together show?",
+     "options": [
+      "Flat land",
+      "A steep slope",
+      "A river",
+      "A forest"
+     ],
+     "answer": "A steep slope",
+     "accept": [],
+     "hint": "Close lines mean the height changes quickly.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r70qyn5e5ungx",
+     "subject": "geog",
+     "type": "mc",
+     "q": "On a climate graph, rainfall is usually shown as…",
+     "options": [
+      "a line",
+      "bars",
+      "a pie chart",
+      "dots"
+     ],
+     "answer": "bars",
+     "accept": [],
+     "hint": "Temperature is the other part of the graph.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rimei2n1yzbzxq",
+     "subject": "geog",
+     "type": "mc",
+     "q": "On a climate graph, temperature is usually shown as…",
+     "options": [
+      "bars",
+      "a line",
+      "shading",
+      "arrows"
+     ],
+     "answer": "a line",
+     "accept": [],
+     "hint": "It shows a smooth change month by month.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15zvk27m62p7h",
+     "subject": "geog",
+     "type": "num",
+     "q": "A town has 40 mm of rain in January, 35 mm in February and 25 mm in March. What is the total rainfall for these three months, in mm?",
+     "options": [],
+     "answer": "100",
+     "accept": [],
+     "hint": "Add the three months together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn4r40q15osnem",
+     "subject": "geog",
+     "type": "num",
+     "q": "A city's highest monthly average temperature is 28 °C and its lowest is 12 °C. What is the annual temperature range in °C?",
+     "options": [],
+     "answer": "16",
+     "accept": [],
+     "hint": "Range = highest minus lowest.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15tkqh3slnrzi",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which biome has high temperatures and high rainfall all year round?",
+     "options": [
+      "Tundra",
+      "Tropical rainforest",
+      "Hot desert",
+      "Taiga"
+     ],
+     "answer": "Tropical rainforest",
+     "accept": [],
+     "hint": "Think of the biome near the Equator with dense trees.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw5icim15obc4o",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which biome is very cold, with frozen ground called permafrost?",
+     "options": [
+      "Savanna",
+      "Tundra",
+      "Temperate forest",
+      "Tropical rainforest"
+     ],
+     "answer": "Tundra",
+     "accept": [],
+     "hint": "It is found near the Arctic.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfn7u0e1he5a8e",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which biome is a grassland with scattered trees and a wet and dry season?",
+     "options": [
+      "Savanna",
+      "Taiga",
+      "Tundra",
+      "Desert"
+     ],
+     "answer": "Savanna",
+     "accept": [],
+     "hint": "Large herds of grazing animals live here.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv5skp71atzu9d",
+     "subject": "geog",
+     "type": "short",
+     "q": "What is the name for water falling from the sky as rain, snow, sleet or hail?",
+     "options": [],
+     "answer": "precipitation",
+     "accept": [],
+     "hint": "It is a key word in the water cycle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfza92ambxl",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Why are hot deserts often very cold at night?",
+     "options": [
+      "Few clouds let heat escape",
+      "The Sun sets earlier",
+      "Wind blows from the sea",
+      "Rain cools the ground"
+     ],
+     "answer": "Few clouds let heat escape",
+     "accept": [],
+     "hint": "Clouds act like a blanket.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nnnftk1tgf6cj",
+     "subject": "geog",
+     "type": "open",
+     "q": "Explain one way a plant or animal is adapted to survive in a hot desert.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about water, heat or sand.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "hist": {
+   "topic": "Term 1 review: Norman and medieval England",
+   "questions": [
+    {
+     "id": "rj2cik0nonb64",
+     "subject": "hist",
+     "type": "num",
+     "q": "In which year did the Battle of Hastings take place?",
+     "options": [],
+     "answer": "1066",
+     "accept": [],
+     "hint": "It is the most famous date in English medieval history.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lhhbikj5jdnf",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Who won the Battle of Hastings?",
+     "options": [
+      "The Anglo-Saxons",
+      "The Normans",
+      "The Vikings",
+      "The Romans"
+     ],
+     "answer": "The Normans",
+     "accept": [],
+     "hint": "They came from northern France.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5frc8x9aeky2",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Where did the Normans come from?",
+     "options": [
+      "Normandy in France",
+      "Norway",
+      "Scotland",
+      "Spain"
+     ],
+     "answer": "Normandy in France",
+     "accept": [],
+     "hint": "The name gives a clue.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uy4jg8hk452e",
+     "subject": "hist",
+     "type": "mc",
+     "q": "What type of castle did the Normans build quickly after the conquest?",
+     "options": [
+      "Motte and bailey",
+      "Concentric castle",
+      "Hill fort",
+      "Stone keep only"
+     ],
+     "answer": "Motte and bailey",
+     "accept": [],
+     "hint": "It used a mound of earth and a wooden tower.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re59dw36ctkcj",
+     "subject": "hist",
+     "type": "short",
+     "q": "What was the name of the great survey of land and property the Normans completed in 1086?",
+     "options": [],
+     "answer": "Domesday Book",
+     "accept": [
+      "the Domesday Book",
+      "Domesday"
+     ],
+     "hint": "Its name was linked to the day of judgement.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h9mkvs1at139e",
+     "subject": "hist",
+     "type": "mc",
+     "q": "In the feudal system, who was at the top?",
+     "options": [
+      "The king",
+      "The barons",
+      "The knights",
+      "The peasants"
+     ],
+     "answer": "The king",
+     "accept": [],
+     "hint": "He owned all the land.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1atuyjvayrs32",
+     "subject": "hist",
+     "type": "mc",
+     "q": "In the feudal system, what did knights give in return for land?",
+     "options": [
+      "Military service",
+      "Taxes in gold",
+      "Crops only",
+      "Nothing"
+     ],
+     "answer": "Military service",
+     "accept": [],
+     "hint": "Think about what knights were trained to do.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7fhe1mjs644l",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which group made up most of the population in medieval England?",
+     "options": [
+      "Peasants",
+      "Barons",
+      "Bishops",
+      "Knights"
+     ],
+     "answer": "Peasants",
+     "accept": [],
+     "hint": "They farmed the land.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r138t7cuyfyyv",
+     "subject": "hist",
+     "type": "num",
+     "q": "In which year was Magna Carta agreed?",
+     "options": [],
+     "answer": "1215",
+     "accept": [],
+     "hint": "It was early in the thirteenth century.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh8xl60d182ad",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which king agreed to Magna Carta?",
+     "options": [
+      "King John",
+      "King Harold",
+      "King Alfred",
+      "King Henry VIII"
+     ],
+     "answer": "King John",
+     "accept": [],
+     "hint": "He quarrelled with his barons.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsjqw7ajkyyd9",
+     "subject": "hist",
+     "type": "mc",
+     "q": "What was the main importance of Magna Carta?",
+     "options": [
+      "It said the king must obey the law too",
+      "It ended the feudal system",
+      "It made England a republic",
+      "It created the first parliament"
+     ],
+     "answer": "It said the king must obey the law too",
+     "accept": [],
+     "hint": "Think about limiting the king's power.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p9zstarojsgl",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Why was the Church so powerful in medieval England?",
+     "options": [
+      "Most people believed it decided whether they went to heaven",
+      "It owned no land",
+      "It had a large army",
+      "It was run by the king's family"
+     ],
+     "answer": "Most people believed it decided whether they went to heaven",
+     "accept": [],
+     "hint": "Think about people's beliefs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15u8wsw5m9td4",
+     "subject": "hist",
+     "type": "short",
+     "q": "What was the name for the tax of one tenth of a person's produce paid to the Church?",
+     "options": [],
+     "answer": "tithe",
+     "accept": [
+      "a tithe"
+     ],
+     "hint": "It comes from an old word for 'tenth'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15e9k875t03zh",
+     "subject": "hist",
+     "type": "mc",
+     "q": "A source written by a Norman monk praises the Norman victory. What is the main problem with using it?",
+     "options": [
+      "It may be biased",
+      "It is too modern",
+      "It is a picture",
+      "It is not about 1066"
+     ],
+     "answer": "It may be biased",
+     "accept": [],
+     "hint": "Think about who wrote it and why.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r409u4h1ezjqb9",
+     "subject": "hist",
+     "type": "mc",
+     "q": "What is the Bayeux Tapestry?",
+     "options": [
+      "An embroidered cloth showing the Norman Conquest",
+      "A book of laws",
+      "A castle in Normandy",
+      "A medieval map"
+     ],
+     "answer": "An embroidered cloth showing the Norman Conquest",
+     "accept": [],
+     "hint": "It tells a story in pictures.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r148u188aabzz6",
+     "subject": "hist",
+     "type": "open",
+     "q": "Explain one reason why the Normans won the Battle of Hastings.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the armies, tactics or the English army's march from the north.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Term 1 review: number, algebra and sequences",
+   "questions": [
+    {
+     "id": "r2yc9y16he6j0",
+     "subject": "math",
+     "type": "num",
+     "q": "Work out 7 × 8 + 4.",
+     "options": [],
+     "answer": "60",
+     "accept": [],
+     "hint": "Multiply before you add.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ripdpyyv8nve8",
+     "subject": "math",
+     "type": "num",
+     "q": "Work out (12 − 4) × 3.",
+     "options": [],
+     "answer": "24",
+     "accept": [],
+     "hint": "Brackets first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hgopj01s2l4x5",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the highest common factor (HCF) of 18 and 24?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "List the factors of each number.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hyr4yor687ol",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the lowest common multiple (LCM) of 4 and 6?",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "List the multiples of each number.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i87fj11e0wcp6",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which of these is a prime number?",
+     "options": [
+      "21",
+      "27",
+      "29",
+      "33"
+     ],
+     "answer": "29",
+     "accept": [],
+     "hint": "A prime has exactly two factors.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5orqft3ujfqc",
+     "subject": "math",
+     "type": "num",
+     "q": "Work out −5 + 9.",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Start at −5 on a number line and move right.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdblpaxf9hc1h",
+     "subject": "math",
+     "type": "num",
+     "q": "Work out −3 × −4.",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "Two negatives multiplied give a positive.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19243w58fljjs",
+     "subject": "math",
+     "type": "num",
+     "q": "Round 3.476 to 1 decimal place.",
+     "options": [],
+     "answer": "3.5",
+     "accept": [],
+     "hint": "Look at the second decimal digit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jxsrs21anw11c",
+     "subject": "math",
+     "type": "num",
+     "q": "Simplify fully and give the coefficient of a: 3a + 5a − 2a.",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Collect the like terms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rmvift53p2d",
+     "subject": "math",
+     "type": "mc",
+     "q": "Simplify 4x + 3y − x + 2y.",
+     "options": [
+      "3x + 5y",
+      "5x + 5y",
+      "3x + y",
+      "8xy"
+     ],
+     "answer": "3x + 5y",
+     "accept": [],
+     "hint": "Collect the x terms and the y terms separately.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13f7v4r1dvivdg",
+     "subject": "math",
+     "type": "num",
+     "q": "If n = 5, work out the value of 3n − 4.",
+     "options": [],
+     "answer": "11",
+     "accept": [],
+     "hint": "Replace n with 5.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjqj7e766afow",
+     "subject": "math",
+     "type": "mc",
+     "q": "Expand 3(x + 4).",
+     "options": [
+      "3x + 4",
+      "3x + 12",
+      "x + 12",
+      "3x + 7"
+     ],
+     "answer": "3x + 12",
+     "accept": [],
+     "hint": "Multiply every term inside the bracket by 3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m144m1xoynrj",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve 2x + 5 = 17. What is x?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Subtract 5 from both sides first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r29vr2lnd8g9",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the next term in the sequence 3, 7, 11, 15, …?",
+     "options": [],
+     "answer": "19",
+     "accept": [],
+     "hint": "Find the difference between terms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uy79j2fstm2j",
+     "subject": "math",
+     "type": "mc",
+     "q": "What is the nth term of the sequence 5, 8, 11, 14, …?",
+     "options": [
+      "3n + 2",
+      "n + 3",
+      "3n + 5",
+      "5n + 3"
+     ],
+     "answer": "3n + 2",
+     "accept": [],
+     "hint": "The difference is 3; compare with the 3 times table.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm2fs6emsfsly",
+     "subject": "math",
+     "type": "num",
+     "q": "Using the nth term 4n − 1, what is the 10th term?",
+     "options": [],
+     "answer": "39",
+     "accept": [],
+     "hint": "Substitute n = 10.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []

@@ -3230,6 +3230,875 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Lantern Library",
+   "premise": "Three friends take on a term-long reading challenge from a travelling library van, reading a different genre each week and searching for the theme that connects them all.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Van with Green Wheels",
+     "synopsis": "A travelling library arrives in Brackenford with a challenge, and Noor reads a mystery that teaches her more than how to spot clues.",
+     "text": "Every Tuesday at four o'clock, a blue van with green wheels rattled into the village square of Brackenford. Painted on its side, in curly gold letters, were the words THE LANTERN LIBRARY.\nNoor Haddad was always first in the queue. This week, the librarian, Mrs Penhallow, leaned out of the hatch with a grin and a stack of cards.\n\"A challenge for the end of term,\" she announced. \"Each of you will read a different genre every week. On each card, write the genre and the big idea, or theme, of the book. At the end, find one theme that all your books share. The winners choose the next book I buy for the van.\"\nNoor's friend Felix groaned. \"Every week? I can barely finish one book a month.\"\nNoor chose a mystery called The Case of the Silent Clock. In it, a girl discovers that the clock in her town hall has stopped at exactly 3:15, and everyone blames the old caretaker. Noor read it under her duvet with a torch, writing down every clue: a muddy footprint, a missing key, a lie about the weather.\nBy Thursday she had guessed the real culprit, the mayor's nephew, two chapters before the detective did. But what surprised her most was the ending. The caretaker had known the truth all along but had stayed quiet to protect the boy, until the girl persuaded him that telling the truth was kinder in the end.\nOn her card, Noor wrote: Genre: mystery. Theme: honesty takes courage.\nShe slipped the card into her pocket, already wondering what next Tuesday would bring.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, on which day does the library van come to Brackenford?",
+       "options": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Saturday"
+       ],
+       "answer": "Tuesday",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what colour are the wheels of the van?",
+       "options": [],
+       "answer": "green",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what must the children write on each card?",
+       "options": [
+        "The author and the price",
+        "The genre and the theme",
+        "Their favourite character",
+        "The number of pages"
+       ],
+       "answer": "The genre and the theme",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, at what time had the clock in the mystery stopped?",
+       "options": [],
+       "answer": "3:15",
+       "accept": [
+        "3.15",
+        "quarter past three",
+        "three fifteen"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who was the real culprit in Noor's book?",
+       "options": [
+        "The old caretaker",
+        "The detective",
+        "The mayor's nephew",
+        "The mayor"
+       ],
+       "answer": "The mayor's nephew",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why had the caretaker stayed quiet?",
+       "options": [
+        "He was afraid of the mayor",
+        "He wanted to protect the boy",
+        "He had forgotten what happened",
+        "He was the culprit"
+       ],
+       "answer": "He wanted to protect the boy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Felix's groan suggest about him?",
+       "options": [
+        "He loves reading quickly",
+        "He finds reading a lot of books hard",
+        "He has already read every book",
+        "He is angry with Noor"
+       ],
+       "answer": "He finds reading a lot of books hard",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Noor wrote that honesty \"takes courage\" rather than just \"honesty\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Girl Who Tamed the Wind",
+     "synopsis": "Felix reluctantly picks a myth and discovers why ancient stories were told.",
+     "text": "The next Tuesday, Felix stood in front of the shelves for so long that Mrs Penhallow offered him a chair.\n\"I want something short,\" he muttered.\nShe handed him a thin book with a silver cover: The Girl Who Tamed the Wind. \"A myth,\" she said. \"People told stories like this long before anyone wrote them down.\"\nFelix read it that evening, mainly so he could say he had. It told of a fishing village where a furious wind blew every boat onto the rocks. The villagers believed the wind was a giant bird whose nest had been destroyed. A girl called Essa climbed the highest cliff, alone, to rebuild the nest from driftwood and seaweed. When the bird returned and found its home, it folded its wings, and the sea grew calm. From that day, the story said, the wind blew gently in spring.\nFelix closed the book and frowned. He had expected to be bored, but something nagged at him.\nThe next morning, he found Noor at the school gate. \"Myths are weird,\" he said. \"They explain real things, like why the wind changes, but with magic.\"\n\"That's the point,\" said Noor. \"People wanted to understand nature. What's the theme?\"\nFelix thought about Essa climbing the cliff while everyone else hid indoors. \"Being brave even when you're scared,\" he said slowly. \"And maybe that if you look after nature, it looks after you.\"\nNoor raised her eyebrows. \"That's two themes, Felix. You're good at this.\"\nFelix pretended not to be pleased. On his card he wrote: Genre: myth. Theme: courage, and caring for nature.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Felix want a short book at first?",
+       "options": [
+        "He had a long journey",
+        "He did not expect to enjoy reading",
+        "Mrs Penhallow told him to",
+        "He wanted to win quickly"
+       ],
+       "answer": "He did not expect to enjoy reading",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what colour is the cover of Felix's book?",
+       "options": [],
+       "answer": "silver",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the girl in the myth?",
+       "options": [],
+       "answer": "Essa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the villagers believe the wind was?",
+       "options": [
+        "An angry sea god",
+        "A giant bird",
+        "A dragon",
+        "A lost ship"
+       ],
+       "answer": "A giant bird",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Essa use to rebuild the nest?",
+       "options": [
+        "Sticks and feathers",
+        "Driftwood and seaweed",
+        "Stones and sand",
+        "Rope and sails"
+       ],
+       "answer": "Driftwood and seaweed",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, according to Felix, what do myths often do?",
+       "options": [
+        "Give instructions for cooking",
+        "Explain real things in nature using magic",
+        "Describe modern cities",
+        "Report true news"
+       ],
+       "answer": "Explain real things in nature using magic",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Felix 'pretending not to be pleased' tell us?",
+       "options": [
+        "He was secretly proud",
+        "He was upset with Noor",
+        "He did not hear her",
+        "He wanted to stop reading"
+       ],
+       "answer": "He was secretly proud",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the people in the myth needed a story to explain the wind?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Rain on the Roof",
+     "synopsis": "A storm threatens the van's books, and Rafi finds that his adventure diary has a lot in common with what happens next.",
+     "text": "On the third Tuesday, the sky turned the colour of a bruise. Rafi, who lived above the bakery, had just borrowed an adventure diary called Ten Days on the Ice when the first drops hammered on the roof of the van.\nThen came a drip. And another. Water was trickling through a crack above the poetry shelf.\n\"The books!\" cried Mrs Penhallow.\nNoor, Felix and Rafi did not wait to be asked. Felix held an umbrella over the hatch. Noor passed books down the line, and Rafi carried them in a plastic crate across the square to the bakery, where his mum cleared a table for them. In twenty minutes, every book was safe and dry, though the three of them were soaked to the skin.\nThat night, Rafi opened his diary book. It was written by an imaginary explorer crossing a frozen sea with a small team. Each entry began with a date and was written in the first person, so Rafi felt as if he were there. On day six, a crack opened in the ice, and the team survived only because each person had a job: one tested the ice, one pulled the sledge, one kept the map dry.\nRafi laughed out loud. \"That's exactly what we did,\" he said to the empty room. \"Except with books instead of a sledge.\"\nThe next week, Mrs Penhallow had fixed the roof. She gave each of them a bookmark with a lantern on it. \"For the best rescue team in Brackenford,\" she said.\nOn his card, Rafi wrote: Genre: adventure diary. Theme: teamwork gets you through danger.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, where does Rafi live?",
+       "options": [],
+       "answer": "above the bakery",
+       "accept": [
+        "the bakery",
+        "over the bakery"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, above which shelf was the crack in the roof?",
+       "options": [
+        "The mystery shelf",
+        "The poetry shelf",
+        "The history shelf",
+        "The picture book shelf"
+       ],
+       "answer": "The poetry shelf",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Felix's job during the rescue?",
+       "options": [
+        "Carrying the crate",
+        "Passing books down the line",
+        "Holding an umbrella over the hatch",
+        "Clearing a table"
+       ],
+       "answer": "Holding an umbrella over the hatch",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many minutes did it take to save all the books?",
+       "options": [],
+       "answer": "20",
+       "accept": [
+        "twenty"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Rafi feel as if he were on the ice himself?",
+       "options": [
+        "The book had photographs",
+        "It was written in the first person",
+        "It was very short",
+        "Mrs Penhallow read it aloud"
+       ],
+       "answer": "It was written in the first person",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what gift did Mrs Penhallow give the children?",
+       "options": [
+        "A new book each",
+        "A bookmark with a lantern on it",
+        "A cake from the bakery",
+        "A free umbrella"
+       ],
+       "answer": "A bookmark with a lantern on it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Rafi laugh out loud?",
+       "options": [
+        "The book was a comedy",
+        "He noticed his own rescue was like the team in the book",
+        "Felix told him a joke",
+        "He dropped the book"
+       ],
+       "answer": "He noticed his own rescue was like the team in the book",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the author of the diary gave each explorer a different job?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Sea in a Shell",
+     "synopsis": "Noor reads poetry with her grandfather and learns how a poem can carry a memory.",
+     "text": "\"Poetry?\" said Noor, wrinkling her nose. \"Poems are short. It doesn't feel like reading.\"\n\"Short doesn't mean easy,\" said Mrs Penhallow, and handed her a collection called Salt and Stars.\nAt home, Noor's grandfather was sitting by the window. He had grown up in a town by the sea, far away, and he still kept a white shell on his windowsill. Noor read him the first poem aloud. It was about an old woman who held a shell to her ear:\n'The sea is folded in this shell,\nIt hums the songs I knew so well.'\nHer grandfather was quiet for a moment. Then he picked up his own shell and held it to Noor's ear. She heard a soft rushing, like waves far away.\n\"That poem is about me,\" he said, smiling. \"Not really me, but people like me. People who carry home inside something small.\"\nThey read the rest of the poems together. Noor noticed things she would have missed alone: how the poet compared the moon to a coin, how the lines about storms were short and sharp, and how two lines at the end of each verse rhymed. Her grandfather pointed out that the poem never said the woman was sad. \"It doesn't have to,\" he said. \"You feel it.\"\nNoor realised that poems did not tell you their theme. You had to find it, like a clue in a mystery.\nOn her card she wrote: Genre: poetry. Theme: memory and home. Then she added in small letters: Poems show, they don't tell.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the poetry collection called?",
+       "options": [],
+       "answer": "Salt and Stars",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Noor's grandfather keep on his windowsill?",
+       "options": [
+        "A photo of the sea",
+        "A white shell",
+        "A small boat",
+        "A jar of sand"
+       ],
+       "answer": "A white shell",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Noor's grandfather grow up?",
+       "options": [
+        "In the mountains",
+        "In a big city",
+        "In a town by the sea",
+        "In Brackenford"
+       ],
+       "answer": "In a town by the sea",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the poet compare the moon to?",
+       "options": [
+        "A coin",
+        "A lantern",
+        "A pearl",
+        "A plate"
+       ],
+       "answer": "A coin",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Noor notice about the lines about storms?",
+       "options": [
+        "They were long and slow",
+        "They were short and sharp",
+        "They did not rhyme at all",
+        "They were in capital letters"
+       ],
+       "answer": "They were short and sharp",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the grandfather mean by people who 'carry home inside something small'?",
+       "options": [
+        "They pack light when they travel",
+        "They keep objects that remind them of where they came from",
+        "They live in tiny houses",
+        "They collect shells to sell"
+       ],
+       "answer": "They keep objects that remind them of where they came from",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Noor's idea about poems change?",
+       "options": [
+        "She decides poems are too easy",
+        "She realises you must find a poem's theme yourself",
+        "She decides to stop reading",
+        "She thinks poems are the same as diaries"
+       ],
+       "answer": "She realises you must find a poem's theme yourself",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the poem made Noor's grandfather go quiet?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Unit Seven",
+     "synopsis": "Felix picks a science-fiction story about a lonely robot and spots a link with the myth he read weeks before.",
+     "text": "By the fifth Tuesday, Felix reached the van before Noor. Mrs Penhallow pretended to faint with surprise.\nHe chose a science-fiction novel called Unit Seven. It was set in the year 2310, on a space station orbiting Mars. Unit Seven was a cleaning robot that nobody noticed. Every night it polished the corridors while the crew slept, and every morning they walked past it without a word.\nOne day, a boy named Tobi arrived on the station with his parents. He was new, he didn't know anyone, and he started eating his lunch next to the robot because it was the only one who didn't stare at him. Slowly, Tobi taught Unit Seven to play chess, and Unit Seven taught Tobi every hidden route through the station. When an air leak trapped the crew in the science lab, it was Tobi and the robot who used one of those routes to reach the controls and seal the leak.\nFelix read the last page on the bus and missed his stop.\nAt the van the next week, he talked so fast that Rafi had to tell him to breathe. \"It's set in the future, with technology that doesn't exist yet. That's what makes it sci-fi. But listen: Essa in the myth was alone on the cliff, and Tobi and Unit Seven were alone too. The outsiders are the heroes in both.\"\nMrs Penhallow nodded. \"Different genres, similar theme. That's exactly the comparison I hoped for.\"\nFelix wrote: Genre: science fiction. Theme: friendship, and outsiders can be heroes.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Mrs Penhallow do when Felix arrived first?",
+       "options": [
+        "She gave him a prize",
+        "She pretended to faint",
+        "She closed the van",
+        "She asked if he was ill"
+       ],
+       "answer": "She pretended to faint",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, in what year is Unit Seven set?",
+       "options": [],
+       "answer": "2310",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Unit Seven's job?",
+       "options": [
+        "Cooking meals",
+        "Cleaning the corridors",
+        "Flying the station",
+        "Teaching children"
+       ],
+       "answer": "Cleaning the corridors",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Tobi first sit next to the robot?",
+       "options": [
+        "His parents told him to",
+        "It was the only one who didn't stare at him",
+        "It offered him food",
+        "He wanted to fix it"
+       ],
+       "answer": "It was the only one who didn't stare at him",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Tobi teach Unit Seven?",
+       "options": [
+        "To read",
+        "To play chess",
+        "To cook",
+        "To sing"
+       ],
+       "answer": "To play chess",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does missing his bus stop show about Felix?",
+       "options": [
+        "He was tired",
+        "He was completely absorbed in the book",
+        "He did not know the way",
+        "He wanted to visit Mars"
+       ],
+       "answer": "He was completely absorbed in the book",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what link does Felix find between the myth and the sci-fi story?",
+       "options": [
+        "Both are set in space",
+        "Both have outsiders as heroes",
+        "Both are about the sea",
+        "Both have robots"
+       ],
+       "answer": "Both have outsiders as heroes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the crew never spoke to Unit Seven before the leak?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Ant and the Acorn",
+     "synopsis": "Rafi reads fables with his little sister and learns how they differ from the other genres.",
+     "text": "Rafi's little sister, Lila, was six and wanted to join the challenge too. \"I can read!\" she insisted, so Mrs Penhallow found them a book of fables to share.\nThe first fable was called The Ant and the Acorn. An ant found an acorn far too heavy to carry. She asked a beetle, a mouse and a sparrow for help, but each one laughed and said, \"Why should I help you?\" So the ant rolled the acorn home alone, one tiny push at a time, which took her all day. That winter, the beetle, the mouse and the sparrow were hungry, and they came to her door. The ant shared her acorn anyway.\nAt the bottom of the page, in italic letters, was one line: Kindness given freely is never wasted.\n\"That's the moral,\" Rafi explained. \"Fables tell you the lesson at the end.\"\nLila frowned. \"Why don't all books do that?\"\nRafi thought about it. Noor's poem hadn't told them the theme. The mystery and the myth hadn't either. You had to work it out. \"I think fables are short and meant for teaching, so they say it clearly. Longer stories let you find it yourself.\"\nLila was more interested in the animals. \"The ant was brave to ask everyone,\" she said, \"and kind at the end.\"\n\"That's two themes,\" said Rafi. \"You sound like Felix.\"\nThat evening, he laid all their cards on the kitchen table. Honesty takes courage. Courage, caring for nature. Teamwork. Memory and home. Friendship. Kindness. He moved them around until a pattern began to appear.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of Rafi's sister?",
+       "options": [],
+       "answer": "Lila",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how old is Rafi's sister?",
+       "options": [],
+       "answer": "6",
+       "accept": [
+        "six"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which animal did the ant NOT ask for help?",
+       "options": [
+        "A beetle",
+        "A mouse",
+        "A sparrow",
+        "A rabbit"
+       ],
+       "answer": "A rabbit",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long did it take the ant to roll the acorn home?",
+       "options": [
+        "An hour",
+        "All day",
+        "A week",
+        "All winter"
+       ],
+       "answer": "All day",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where is the moral of the fable printed?",
+       "options": [
+        "In the title",
+        "At the bottom of the page",
+        "On the back cover",
+        "In the first line"
+       ],
+       "answer": "At the bottom of the page",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, according to Rafi, why do fables state their moral clearly?",
+       "options": [
+        "They are short and meant for teaching",
+        "Their authors are lazy",
+        "They are written for adults",
+        "They have no characters"
+       ],
+       "answer": "They are short and meant for teaching",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Rafi say Lila 'sounds like Felix'?",
+       "options": [
+        "She found two themes, as Felix did",
+        "She dislikes reading",
+        "She talks very fast",
+        "She likes science fiction"
+       ],
+       "answer": "She found two themes, as Felix did",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the ant shared her acorn with animals that had refused to help her?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Thread That Ties",
+     "synopsis": "The friends present their findings, discover the theme that links every book, and make an unexpected choice.",
+     "text": "On the last Tuesday of term, a small crowd gathered around the van. Mrs Penhallow had set out three chairs, and Noor, Felix and Rafi stood in front of a large sheet of card covered in arrows.\n\"We read six genres,\" Noor began. \"A mystery, a myth, an adventure diary, poetry, science fiction and fables.\"\n\"They're really different,\" said Felix. \"Myths explain nature. Sci-fi is set in the future. Diaries are written in the first person. Fables state the moral, but the others make you find it.\"\nRafi pointed to the centre of the card, where one word was circled in red. \"But one theme is in every book: courage. The girl in the mystery had to be brave to tell the truth. Essa climbed the cliff. The explorers crossed the ice. The woman in the poem was brave to remember. Tobi was brave to be friends with a robot. And the ant was brave to ask for help.\"\n\"And the kindness to share,\" added Lila from the front row.\nEveryone laughed, and Mrs Penhallow clapped loudest of all. \"You've won,\" she said. \"Which book shall I buy for the van?\"\nThe three friends looked at one another. They had talked about this all week.\n\"We don't want you to buy one,\" said Noor. \"We want to write one. A story with a bit of every genre in it, about a library van and a rescue in the rain.\"\nMrs Penhallow's eyes shone. \"Then I'll keep a space on the shelf,\" she said. \"Right at the front.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, when does the final presentation take place?",
+       "options": [
+        "On the first day of term",
+        "On the last Tuesday of term",
+        "On a Saturday",
+        "In the summer holidays"
+       ],
+       "answer": "On the last Tuesday of term",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many genres did the friends read?",
+       "options": [],
+       "answer": "6",
+       "accept": [
+        "six"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what colour was the circle around the shared theme?",
+       "options": [],
+       "answer": "red",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which theme did the friends find in every book?",
+       "options": [],
+       "answer": "courage",
+       "accept": [
+        "bravery"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Lila add from the front row?",
+       "options": [
+        "The kindness to share",
+        "The fear of storms",
+        "The love of robots",
+        "The magic of myths"
+       ],
+       "answer": "The kindness to share",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the friends choose as their prize?",
+       "options": [
+        "A new mystery book",
+        "To write their own book",
+        "A trip to the sea",
+        "A new van"
+       ],
+       "answer": "To write their own book",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mrs Penhallow's promise to keep a space 'right at the front' suggest?",
+       "options": [
+        "She thinks their book will be important",
+        "She has no other books",
+        "She wants to sell it",
+        "She is joking"
+       ],
+       "answer": "She thinks their book will be important",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the friends wanted their book to include a bit of every genre?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
