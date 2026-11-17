@@ -160,8 +160,23 @@ function safeEqual(a, b) {
 async function body(req, max = 12_000_000) {
   const len = Number(req.headers.get('content-length') || 0);
   if (len > max) throw new HttpError(413, 'Upload too large.');
-  try { return await req.json(); } catch { throw new HttpError(400, 'Invalid JSON.'); }
+  // Lê como texto para valer o limite também sem content-length (envio "chunked"); só aceita um objeto JSON.
+  let raw;
+  try { raw = await req.text(); } catch { throw new HttpError(400, 'Invalid JSON.'); }
+  if (raw.length > max) throw new HttpError(413, 'Upload too large.');
+  let v;
+  try { v = JSON.parse(raw); } catch { throw new HttpError(400, 'Invalid JSON.'); }
+  if (!v || typeof v !== 'object' || Array.isArray(v)) throw new HttpError(400, 'Invalid JSON.');
+  return v;
 }
+// Entradas do navegador que vão para os prompts: sempre listas e textos com tamanho limitado.
+const arr = v => (Array.isArray(v) ? v : []);
+const objs = v => arr(v).filter(x => x && typeof x === 'object');
+const clip = (v, n) => String(v ?? '').slice(0, n);
+const clipList = (v, k, n) => arr(v).slice(0, k).map(x => clip(x, n));
+const IMG_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+const imagesOf = (v, k) => objs(v).filter(img => typeof img.data === 'string' && img.data).slice(0, k)
+  .map(img => ({ type: IMG_TYPES.includes(img.type) ? img.type : 'image/jpeg', data: img.data }));
 const dir = env => {
   const stub = env.DIRECTORY.get(env.DIRECTORY.idFromName('directory'));
   return new Proxy({}, { get: (_, name) => async (...args) => {
@@ -175,7 +190,7 @@ const legacyStore = env => env.STORE.get(env.STORE.idFromName('familia'));
 const COOKIE = 'lumi_s';
 function getCookie(req, name) {
   const m = (req.headers.get('cookie') || '').match(new RegExp('(?:^|;\\s*)' + name + '=([^;]+)'));
-  return m ? decodeURIComponent(m[1]) : '';
+  try { return m ? decodeURIComponent(m[1]) : ''; } catch { return ''; }   // cookie malformado = sem sessão (não 500)
 }
 const sessionCookie = token => `${COOKIE}=${encodeURIComponent(token)}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${60 * 86400}`;
 const clearCookie = () => `${COOKIE}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0`;
@@ -192,10 +207,34 @@ Você é uma inteligência artificial (a mascote Lumi); nunca finja ser uma pess
 async function claude(env, ctx, { model, effort, system, content, schema, maxTokens }) {
   if (!env.ANTHROPIC_API_KEY) throw new HttpError(503, 'The Claude API key has not been set up on the server.');
   const childCap = Number(env.CHILD_DAILY_USD || 0.5), monthCap = Number(env.MONTHLY_USD || 40);
-  const ok = await dir(env).aiCheck(ctx.familyId, ctx.childId, childCap, monthCap);
+  // reserve=true: a chamada fica "em andamento" no Directory até ser registrada (ou liberada), para que muitas
+  // chamadas em paralelo não passem todas pelo limite antes de qualquer gasto ser gravado.
+  const ok = await dir(env).aiCheck(ctx.familyId, ctx.childId, childCap, monthCap, true);
   if (!ok.ok) throw new HttpError(429, ok.why === 'child'
     ? 'Lumi has worked really hard today! This child’s daily limit has been reached. It opens up again tomorrow. 🦉'
+    : ok.why === 'busy' ? 'Lumi is busy with lots of requests right now. Please try again in a minute. 🦉'
     : 'The app’s monthly usage limit has been reached. Please let the administrator know.');
+  const usdOf = u => { const [pin, pout] = PRICES[model] || [4, 20];
+    return ((u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) * 1.25 + (u.cache_read_input_tokens || 0) * 0.1) * pin / 1e6 + (u.output_tokens || 0) * pout / 1e6; };
+  let recorded = false;
+  try {
+    let data;
+    try { data = await claudeCall(env, model, effort, system, content, schema, maxTokens); }
+    catch (e) {   // erro no meio do stream: o que já foi gerado também é cobrado
+      if (e && e.usage) { await dir(env).aiRecord(ctx.familyId, ctx.childId, usdOf(e.usage), ok.ticket).catch(() => {}); recorded = true; }
+      throw e;
+    }
+    await dir(env).aiRecord(ctx.familyId, ctx.childId, usdOf(data.usage || {}), ok.ticket);
+    recorded = true;
+    if (data.stop_reason === 'refusal') throw new HttpError(502, 'Claude declined this request.');
+    if (data.stop_reason === 'max_tokens') throw new HttpError(502, 'Claude’s answer was too long. Try with fewer questions.');
+    const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
+    try { return JSON.parse(text); } catch { throw new HttpError(502, 'Claude’s answer came in an unexpected format.'); }
+  } finally {
+    if (!recorded && ok.ticket) await dir(env).aiRelease(ok.ticket).catch(() => {});
+  }
+}
+async function claudeCall(env, model, effort, system, content, schema, maxTokens) {
   // Streaming: a conexão recebe dados o tempo todo e não cai por tempo esgotado (erro 524) em respostas longas.
   const reqBody = JSON.stringify({
     model, max_tokens: maxTokens, system: system + CHILD_SAFETY, stream: true,
@@ -218,15 +257,7 @@ async function claude(env, ctx, { model, effort, system, content, schema, maxTok
     try { msg = JSON.parse(raw).error?.message || msg; } catch { /* mantém texto */ }
     throw new HttpError(502, `Claude replied ${res.status}: ${msg}`);
   }
-  const data = await readStream(res);
-  const u = data.usage || {};
-  const [pin, pout] = PRICES[model] || [4, 20];
-  const usd = ((u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) * 1.25 + (u.cache_read_input_tokens || 0) * 0.1) * pin / 1e6 + (u.output_tokens || 0) * pout / 1e6;
-  await dir(env).aiRecord(ctx.familyId, ctx.childId, usd);
-  if (data.stop_reason === 'refusal') throw new HttpError(502, 'Claude declined this request.');
-  if (data.stop_reason === 'max_tokens') throw new HttpError(502, 'Claude’s answer was too long. Try with fewer questions.');
-  const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
-  try { return JSON.parse(text); } catch { throw new HttpError(502, 'Claude’s answer came in an unexpected format.'); }
+  return readStream(res);
 }
 
 // Lê o stream SSE da API: junta só os pedaços de texto (ignora o raciocínio) e guarda uso e motivo de parada.
@@ -242,12 +273,13 @@ async function readStream(res) {
       const ev = buf.slice(0, i); buf = buf.slice(i + 2);
       const k = ev.indexOf('data: '); if (k < 0) continue;
       const line = ev.slice(k + 6);
-      if (line.includes('"text_delta"')) { const d = JSON.parse(line); text += d.delta.text; continue; }
-      if (line.includes('_delta') && !line.includes('"message_delta"')) continue;   // raciocínio/outros pedaços
-      const d = JSON.parse(line);
+      if (!line.includes('"text_delta"') && line.includes('_delta') && !line.includes('"message_delta"')) continue;   // raciocínio/outros pedaços (sem gastar CPU)
+      let d; try { d = JSON.parse(line); } catch { continue; }   // linha incompleta/estranha: ignora em vez de dar 500
+      if (!d || typeof d !== 'object') continue;
+      if (d.type === 'content_block_delta') { if (d.delta && d.delta.type === 'text_delta') text += d.delta.text || ''; continue; }   // raciocínio/outros pedaços: ignora
       if (d.type === 'message_start') usage = Object.assign({}, d.message && d.message.usage);
       else if (d.type === 'message_delta') { if (d.usage) Object.assign(usage, d.usage); if (d.delta && d.delta.stop_reason) stop = d.delta.stop_reason; }
-      else if (d.type === 'error') throw new HttpError(502, `Claude replied with an error: ${(d.error && d.error.message) || 'unknown'}`);
+      else if (d.type === 'error') { const e = new HttpError(502, `Claude replied with an error: ${(d.error && d.error.message) || 'unknown'}`); e.usage = usage; throw e; }
     }
   }
   return { content: [{ type: 'text', text }], usage, stop_reason: stop };
@@ -455,13 +487,14 @@ Regras de qualidade:
 }
 
 async function handlePlan(env, b, ctx) {
-  const days = (b.days || []).filter(d => DOWS.includes(d.dow) && d.n > 0);
+  const days = objs(b.days).filter(d => DOWS.includes(d.dow) && Number(d.n) > 0).slice(0, 7)
+    .map(d => ({ dow: d.dow, label: clip(d.label, 40), n: Math.min(40, Number(d.n)), read: d.read && typeof d.read === 'object' ? d.read : null }));
   const LEVELS = { below: 'mais fácil (cerca de 1 ano abaixo)', at: 'no nível do ano', above: 'acima (cerca de 1 ano acima)', way: 'bem acima (cerca de 2 anos acima)' };
   days.forEach(d => { d.read = d.read && READ_IDS.includes(d.read.subject) ? { subject: d.read.subject, level: LEVELS[d.read.level] || LEVELS.at } : null; });
   const reading = days.some(d => d.read);
   if (!days.length) throw new HttpError(400, 'No days with questions.');
   const total = days.reduce((a, d) => a + d.n, 0);
-  const images = (b.images || []).slice(0, 4);
+  const images = imagesOf(b.images, 4);
   const text = String(b.text || '').slice(0, 6000);
   if (!text.trim() && !images.length) throw new HttpError(400, 'Tell me what you’re learning (or send a photo).');
   const dayList = days.map(d => `- ${d.dow} (${d.label || d.dow}): ${d.n} perguntas${d.read ? ` · leitura do dia: ${d.read.subject} (nível: ${d.read.level}) — 3 dessas perguntas são sobre o capítulo` : ''}`).join('\n');
@@ -504,10 +537,11 @@ ${dayList}
 
 const READ_LEVELS_TXT = { below: 'mais fácil (cerca de 1 ano abaixo)', at: 'no nível do ano', above: 'acima (cerca de 1 ano acima)', way: 'bem acima (cerca de 2 anos acima)' };
 async function handlePlanOutline(env, b, ctx) {
-  const days = (b.days || []).filter(d => DOWS.includes(d.dow) && d.n > 0);
+  const days = objs(b.days).filter(d => DOWS.includes(d.dow) && Number(d.n) > 0).slice(0, 7)
+    .map(d => ({ dow: d.dow, label: clip(d.label, 40), n: Number(d.n), read: d.read && typeof d.read === 'object' ? d.read : null }));
   if (!days.length) throw new HttpError(400, 'No days with questions.');
   days.forEach(d => { d.read = d.read && READ_IDS.includes(d.read.subject) ? { subject: d.read.subject, level: READ_LEVELS_TXT[d.read.level] || READ_LEVELS_TXT.at } : null; });
-  const images = (b.images || []).slice(0, 4);
+  const images = imagesOf(b.images, 4);
   const text = String(b.text || '').slice(0, 6000);
   if (!text.trim() && !images.length) throw new HttpError(400, 'Tell me what you’re learning (or send a photo).');
   const reading = days.filter(d => d.read);
@@ -534,20 +568,21 @@ Tarefa (é só o ROTEIRO; as perguntas serão criadas depois, dia a dia):
   });
 }
 async function handlePlanDay(env, b, ctx) {
-  const d = b.day || {};
-  if (!DOWS.includes(d.dow) || !(d.n > 0)) throw new HttpError(400, 'Invalid day.');
+  const d0 = b.day && typeof b.day === 'object' ? b.day : {};
+  const d = { dow: d0.dow, n: d0.n, label: clip(d0.label, 40), read: d0.read && typeof d0.read === 'object' ? d0.read : null };
+  if (!DOWS.includes(d.dow) || !(Number(d.n) > 0)) throw new HttpError(400, 'Invalid day.');
   const n = Math.max(1, Math.min(40, Number(d.n)));
   const yn = yearNum(b);
   const read = d.read && READ_IDS.includes(d.read.subject) ? d.read : null;
   const rn = read ? Math.max(6, Math.min(8, Number(read.n) || 7)) : 0;   // perguntas sobre o texto do dia
   const per = Math.max(1, Math.min(6, Number(b.perSubject) || 2));          // perguntas por tema
   const readingOnly = !!(b.readingOnly && read);   // as matérias vêm do banco da semana (plan-pool); aqui só o capítulo
-  const topics = (b.topics || []).slice(0, 30).map(t => `- ${t.subject}: ${String(t.summary || '').slice(0, 600)}`).join('\n');
-  const focus = (b.focus || []).slice(0, 30).map(f => `- ${f.subject}: ${String(f.focus || '').slice(0, 200)}`).join('\n');
-  const spell = (b.topics || []).some(t => ['pt_ort', 'en_spell'].includes(t.subject));
+  const topics = objs(b.topics).slice(0, 30).map(t => `- ${clip(t.subject, 20)}: ${String(t.summary || '').slice(0, 600)}`).join('\n');
+  const focus = objs(b.focus).slice(0, 30).map(f => `- ${clip(f.subject, 20)}: ${String(f.focus || '').slice(0, 200)}`).join('\n');
+  const spell = objs(b.topics).some(t => ['pt_ort', 'en_spell'].includes(t.subject));
   const readBlock = read ? `- LEITURA DO DIA (${read.subject}, nível: ${READ_LEVELS_TXT[read.level] || READ_LEVELS_TXT.at}): escreva em "passage" o capítulo de hoje do livro "${String(b.book && b.book.title || '').slice(0, 120)}".
   Premissa: ${String(b.book && b.book.premise || '').slice(0, 600)}
-  ${b.book && b.book.before && b.book.before.length ? `Capítulos anteriores: ${b.book.before.slice(-6).map(c => `${c.title}: ${c.synopsis}`).join(' | ').slice(0, 1500)}` : 'É o primeiro capítulo.'}
+  ${b.book && objs(b.book.before).length ? `Capítulos anteriores: ${objs(b.book.before).slice(-6).map(c => `${clip(c.title, 120)}: ${clip(c.synopsis, 400)}`).join(' | ').slice(0, 1500)}` : 'É o primeiro capítulo.'}
   Capítulo de hoje: "${String(b.book && b.book.chapter && b.book.chapter.title || '').slice(0, 120)}" — ${String(b.book && b.book.chapter && b.book.chapter.synopsis || '').slice(0, 500)}
   "title": "Nome do livro — Capítulo N: título". Tamanho: ${yn <= 2 ? '120–200' : yn <= 6 ? '250–400' : '400–600'} palavras, no idioma da matéria, parágrafos separados por \n.
   EXATAMENTE ${rn} das perguntas são sobre o capítulo (subject ${read.subject}), começando com "No capítulo…"/"In the chapter…": nunca peça resumo do capítulo; no máximo 1 "open" curta de inferência ou opinião ("Por que…?", "Como você acha que…?" / "Why…?", "How do you think…?"), as demais de compreensão ("mc" ou "short"), das mais literais às de inferência.` : '- Sem leitura hoje: "passage" com título e texto vazios.';
@@ -572,7 +607,7 @@ ${spell ? '- Se houver Ortografia ou Spelling, inclua UMA pergunta "proof" (caç
 // + perguntas extras para os extras, a revisão e os desafios da semana.
 async function handlePlanPool(env, b, ctx) {
   const subject = String(b.subject || ''); if (!SUBJECT_IDS.includes(subject)) throw new HttpError(400, 'Invalid subject.');
-  const days = (b.days || []).filter(d => DOWS.includes(d.dow)).slice(0, 7);
+  const days = objs(b.days).filter(d => DOWS.includes(d.dow)).slice(0, 7).map(d => ({ dow: d.dow, label: clip(d.label, 40), focus: d.focus }));
   if (!days.length) throw new HttpError(400, 'No days.');
   const per = Math.max(1, Math.min(6, Number(b.perDay) || 2));
   const spare = Math.max(0, Math.min(24, Number(b.spare) || 0));
@@ -596,14 +631,14 @@ ${b.repeatTopic ? '- ATENÇÃO: este assunto já foi estudado nas semanas anteri
 }
 async function handleMore(env, b, ctx) {
   const n = Math.max(1, Math.min(15, Number(b.n) || 5));  // (reforço também usa este limite)
-  const subjects = (b.subjects || []).filter(s => SUBJECT_IDS.includes(s));
+  const subjects = arr(b.subjects).filter(s => SUBJECT_IDS.includes(s));
   const content = [{ type: 'text', text: `Assuntos da semana:
 ${String(b.topics || '').slice(0, 3000) || '(revisão geral do conteúdo do ano escolar)'}
 ${subjects.length ? `\nUse só estas matérias: ${subjects.join(', ')}.` : '\nMisture as matérias da semana.'}
 ${String(b.topics || '').trim() ? 'IMPORTANTE: as perguntas têm que ser sobre os ASSUNTOS DA SEMANA listados acima (os mesmos conteúdos, com outros exemplos, números e palavras). Não traga conteúdos que não estão na lista. Só se uma matéria pedida não tiver assunto listado, faça uma revisão do conteúdo típico dela para o ano escolar.' : 'Sem assuntos da semana: faça uma revisão do conteúdo típico de cada matéria para o ano escolar.'}
 ${b.objectiveOnly ? '\nNÃO use o tipo "open" — só mc, short, num e proof (correção automática). Se houver Spelling/Ortografia, inclua 1 "proof".' : ''}
 ${Array.isArray(b.focus) && b.focus.length ? `\nREFORÇO: o estudante errou ou disse que não sabia estas perguntas. Crie perguntas NOVAS e parecidas (mesmo conteúdo, outros números/palavras/exemplos), começando pelas mais fáceis, para ele aprender de verdade:\n- ${b.focus.slice(0, 15).map(x => String(x).slice(0, 200)).join('\n- ')}` : ''}
-${b.exclude?.length ? `\nNão repita estas perguntas:\n- ${b.exclude.slice(0, 60).map(x => String(x).slice(0, 120)).join('\n- ')}` : ''}
+${arr(b.exclude).length ? `\nNão repita estas perguntas:\n- ${b.exclude.slice(0, 60).map(x => String(x).slice(0, 120)).join('\n- ')}` : ''}
 
 Crie exatamente ${n} perguntas novas, curtas e variadas.` }];
   return claude(env, ctx, {
@@ -615,13 +650,13 @@ Crie exatamente ${n} perguntas novas, curtas e variadas.` }];
 // Aulinha: explicação em partes + exemplos + macete + exercícios de prática.
 async function handleLesson(env, b, ctx) {
   const lang = b.lang === 'en' ? 'en' : 'pt';
-  const content = [{ type: 'text', text: `Matéria: ${b.subjectName || b.subject}
-${b.topic ? `Assunto pedido: ${String(b.topic).slice(0, 300)}\n` : ''}${b.q ? `Pergunta em que o estudante travou: ${String(b.q).slice(0, 600)}\n` : ''}${b.options?.length ? `Opções: ${b.options.join(' | ')}\n` : ''}${b.wrong ? `O que ele respondeu (errado): ${String(b.wrong).slice(0, 200)}\n` : ''}${b.context ? `Contexto (assuntos da semana / texto lido): ${String(b.context).slice(0, 2500)}\n` : ''}
+  const content = [{ type: 'text', text: `Matéria: ${clip(b.subjectName || b.subject, 80)}
+${b.topic ? `Assunto pedido: ${String(b.topic).slice(0, 300)}\n` : ''}${b.q ? `Pergunta em que o estudante travou: ${String(b.q).slice(0, 600)}\n` : ''}${arr(b.options).length ? `Opções: ${clipList(b.options, 6, 160).join(' | ')}\n` : ''}${b.wrong ? `O que ele respondeu (errado): ${String(b.wrong).slice(0, 200)}\n` : ''}${b.context ? `Contexto (assuntos da semana / texto lido): ${String(b.context).slice(0, 2500)}\n` : ''}
 Escreva, em ${LANG_NAME(lang)}, uma AULINHA da Lumi sobre o conteúdo por trás disso, para um estudante (${level(b)}) que disse que não sabe o assunto:
 - comece do zero, com linguagem simples e animada (sem infantilizar), frases curtas, como uma boa professora particular;
 - explique a regra ou o conceito passo a passo, mostre exemplos concretos e dê um macete para lembrar;
 - se for ortografia/acentuação, explique a regra (ex.: quando se usa acento agudo, por que "você" tem acento) e mostre palavras que seguem e que não seguem a regra;
-- ${b.done ? `ele já respondeu; pode usar a pergunta como exemplo e explicar a resposta certa (${b.answer || 'resposta livre'})` : 'NÃO dê a resposta da pergunta em que ele travou: explique com outros exemplos'};
+- ${b.done ? `ele já respondeu; pode usar a pergunta como exemplo e explicar a resposta certa (${clip(b.answer, 300) || 'resposta livre'})` : 'NÃO dê a resposta da pergunta em que ele travou: explique com outros exemplos'};
 - em "practice", 3 ou 4 exercícios curtos do MESMO conteúdo, do mais fácil ao mais difícil, para ele treinar na hora (${OBJ_TYPES_NOTE} "text" vazio, "errors" vazia, "accept" com variações aceitáveis).
 Fatos sempre corretos.` }];
   return claude(env, ctx, {
@@ -635,7 +670,7 @@ async function handleReading(env, b, ctx) {
   const n = yearNum(b);
   const LEVELS = { below: 'mais fácil (cerca de 1 ano abaixo do ano dele)', at: 'no nível do ano dele', above: 'acima (cerca de 1 ano acima)', way: 'bem acima (cerca de 2 anos acima)' };
   const rn = Math.max(6, Math.min(8, Number(b.n) || 7));
-  const prev = (Array.isArray(b.chapters) ? b.chapters : []).slice(-6).map((c, i) => `- ${String(c.title || '').slice(0, 120)}: ${String(c.summary || '').slice(0, 300)}`).join('\n');
+  const prev = objs(b.chapters).slice(-6).map((c, i) => `- ${String(c.title || '').slice(0, 120)}: ${String(c.summary || '').slice(0, 300)}`).join('\n');
   const content = [{ type: 'text', text: `Escreva o próximo capítulo de um livro original em ${LANG_NAME(lang)} para o estudante ler (${level(b)}).
 ${b.bookTitle && prev ? `É a continuação do livro "${String(b.bookTitle).slice(0, 120)}". Capítulos anteriores:\n${prev}\nMantenha personagens e mundo; avance a história e termine com um gancho.` : `Comece um livro novo${b.theme ? ` sobre: ${String(b.theme).slice(0, 200)}` : ''} (aventura, mistério, animais, amizade ou ciência — escolha algo envolvente para a idade). Este é o Capítulo 1.`}
 Nível de leitura: ${LEVELS[b.level] || LEVELS.at}. Tamanho: ${n <= 2 ? '150–250' : n <= 6 ? '300–450' : '450–650'} palavras.
@@ -648,9 +683,9 @@ Depois, EXATAMENTE ${rn} pergunta${rn > 1 ? 's' : ''} (subject: ${lang === 'en' 
 
 async function handleTutor(env, b, ctx) {
   const lang = b.lang === 'en' ? 'en' : 'pt';
-  const content = [{ type: 'text', text: `Pergunta (${b.subjectName || b.subject}): ${String(b.q || '').slice(0, 600)}
-${b.options?.length ? `Opções: ${b.options.join(' | ')}` : ''}
-${b.answer ? `Resposta correta (NÃO revele): ${b.answer}` : ''}
+  const content = [{ type: 'text', text: `Pergunta (${clip(b.subjectName || b.subject, 80)}): ${String(b.q || '').slice(0, 600)}
+${arr(b.options).length ? `Opções: ${clipList(b.options, 6, 160).join(' | ')}` : ''}
+${b.answer ? `Resposta correta (NÃO revele): ${clip(b.answer, 300)}` : ''}
 ${b.context ? `Contexto (texto lido / assuntos): ${String(b.context).slice(0, 2000)}\n` : ''}${b.attempt ? `O que o estudante respondeu até agora: ${String(b.attempt).slice(0, 300)}` : 'O estudante ainda não respondeu.'}
 
 Você é a Lumi, uma corujinha tutora gentil. Escreva em ${lang === 'en' ? 'English' : 'português'} de 1 a 3 frases curtas para um estudante (${level(b)}):
@@ -663,13 +698,13 @@ Se ela já respondeu errado, diga com carinho onde pensar de novo.` }];
 }
 
 async function handleGrade(env, b, ctx) {
-  const images = (b.images || []).slice(0, 6);
+  const images = imagesOf(b.images, 6);
   if (!images.length) throw new HttpError(400, 'Send a photo of the sheet.');
-  const qs = (b.questions || []).slice(0, 45);
-  const list = qs.map((q, i) => `${i + 1}. [${q.type}] ${q.q}${q.options?.length ? ` (opções: ${q.options.join(' | ')})` : ''} → resposta esperada: ${q.type === 'open' ? '(resposta livre)' : q.answer}${q.accept?.length ? ` (também aceitar: ${q.accept.join(', ')})` : ''}`).join('\n');
+  const qs = objs(b.questions).slice(0, 45);
+  const list = qs.map((q, i) => `${i + 1}. [${clip(q.type, 10)}] ${clip(q.q, 1500)}${arr(q.options).length ? ` (opções: ${clipList(q.options, 6, 160).join(' | ')})` : ''} → resposta esperada: ${q.type === 'open' ? '(resposta livre)' : clip(q.answer, 400)}${arr(q.accept).length ? ` (também aceitar: ${clipList(q.accept, 8, 120).join(', ')})` : ''}`).join('\n');
   const content = [
     ...images.flatMap((img, i) => [{ type: 'text', text: `Foto ${i + 1} da folha respondida:` }, { type: 'image', source: { type: 'base64', media_type: img.type || 'image/jpeg', data: img.data } }]),
-    { type: 'text', text: `Esta é a folha impressa "${b.title || ''}" respondida à mão por um estudante (${level(b)}). As perguntas, na ordem impressa:
+    { type: 'text', text: `Esta é a folha impressa "${clip(b.title, 160)}" respondida à mão por um estudante (${level(b)}). As perguntas, na ordem impressa:
 ${list}
 
 Para cada número, transcreva em "read" o que ela escreveu ou marcou e dê o veredito:
@@ -689,14 +724,14 @@ Em "message", 1–2 frases encorajadoras da Lumi, in British English.` },
 const LANG_NAME = l => (l === 'en' ? 'English' : 'português do Brasil');
 async function handleExplain(env, b, ctx) {
   const lang = b.lang === 'en' ? 'en' : 'pt';
-  const content = [{ type: 'text', text: `Matéria: ${b.subjectName || b.subject}
+  const content = [{ type: 'text', text: `Matéria: ${clip(b.subjectName || b.subject, 80)}
 Pergunta que o estudante está estudando: ${String(b.q || '').slice(0, 600)}
-${b.options?.length ? `Opções: ${b.options.join(' | ')}` : ''}
+${arr(b.options).length ? `Opções: ${clipList(b.options, 6, 160).join(' | ')}` : ''}
 ${b.context ? `Contexto (assuntos da semana e texto lido): ${String(b.context).slice(0, 2500)}` : ''}
 
 Explique, em ${LANG_NAME(lang)}, o CONTEÚDO por trás desta pergunta para um estudante (${level(b)}), como uma mini-aula:
 o conceito, por que ele importa e um exemplo do dia a dia.
-${b.done ? `Ela já respondeu. A resposta correta é: ${b.answer || '(resposta livre)'}. Pode explicar por que essa resposta está certa.` : 'Ela ainda NÃO respondeu: explique o conceito sem dar a resposta desta pergunta (use outro exemplo).'}
+${b.done ? `Ela já respondeu. A resposta correta é: ${clip(b.answer, 300) || '(resposta livre)'}. Pode explicar por que essa resposta está certa.` : 'Ela ainda NÃO respondeu: explique o conceito sem dar a resposta desta pergunta (use outro exemplo).'}
 Fatos sempre corretos. Linguagem simples e animada, sem infantilizar.` }];
   return claude(env, ctx, {
     model: env.MODEL_EXPLAIN || env.MODEL_FAST || 'claude-haiku-5-5', effort: 'medium',
@@ -704,9 +739,9 @@ Fatos sempre corretos. Linguagem simples e animada, sem infantilizar.` }];
   });
 }
 async function handleCheckOpen(env, b, ctx) {
-  const items = (b.items || []).slice(0, 20);
+  const items = objs(b.items).slice(0, 20);
   if (!items.length) return { results: [] };
-  const list = items.map((x, i) => `${i + 1}. (${x.subjectName || x.subject}; responder em ${LANG_NAME(x.lang)})
+  const list = items.map((x, i) => `${i + 1}. (${clip(x.subjectName || x.subject, 80)}; responder em ${LANG_NAME(x.lang)})
 Pergunta: ${String(x.q).slice(0, 500)}
 ${x.expected ? `Resposta esperada pelo gabarito: ${String(x.expected).slice(0, 200)}\n` : ''}Resposta do estudante: ${String(x.answer || '').slice(0, 1200) || '(em branco)'}`).join('\n\n');
   const content = [{ type: 'text', text: `Corrija estas respostas livres de um estudante (${level(b)}).
@@ -735,7 +770,7 @@ async function handleChallenge(env, b, ctx) {
   const content = [{ type: 'text', text: `A student (${level(b)}) disagrees with the automatic marking of this question. Decide fairly whether the student's answer should be ACCEPTED as correct.
 Subject: ${String(b.subjectName || b.subject || '').slice(0, 80)}
 Question (${String(b.type || '').slice(0, 10)}): ${String(b.q || '').slice(0, 800)}
-${(b.options || []).length ? `Options: ${b.options.slice(0, 6).map(x => String(x).slice(0, 120)).join(' | ')}\n` : ''}Answer key: ${String(b.answer || '').slice(0, 300) || '(free answer)'}${(b.accept || []).length ? ` (also accepted: ${b.accept.slice(0, 8).join(', ')})` : ''}
+${arr(b.options).length ? `Options: ${clipList(b.options, 6, 120).join(' | ')}\n` : ''}Answer key: ${String(b.answer || '').slice(0, 300) || '(free answer)'}${arr(b.accept).length ? ` (also accepted: ${clipList(b.accept, 8, 120).join(', ')})` : ''}
 Student's answer: ${String(b.given || '').slice(0, 600) || '(blank)'}
 ${b.why ? `Student's reason: ${String(b.why).slice(0, 300)}\n` : ''}${b.context ? `Context (text read / topics): ${String(b.context).slice(0, 2500)}\n` : ''}
 Rules:
@@ -873,6 +908,7 @@ async function handleBankBook(env, b, ctx) {
   const a = bookArgs(b);
   const B = await bankEnsure(env, ctx.url, b.yearId, a.week);
   const have = await B.book(a.ckey); if (have) return { book: Object.assign({ key: a.ckey }, have) };
+  if (await B.bookExists(a.ckey)) throw new HttpError(409, 'Book unavailable.');   // oculto pelo admin: não paga o Claude à toa
   const row = await curriculumRow(env, ctx.url, b.yearId, a.subject, a.level, a.week);
   const content = [{ type: 'text', text: `${SHARED_NOTE}
 
@@ -953,6 +989,8 @@ async function api(req, env, url) {
 
   // ---- daqui para baixo, precisa estar logado ----
   const token = getCookie(req, COOKIE);
+  // Sair funciona mesmo com a sessão já vencida (sempre apaga o cookie)
+  if (path === '/api/auth/logout' && m === 'POST') { await D.logout(token); return json({ ok: true }, 200, { 'set-cookie': clearCookie() }); }
   const me = await D.auth(token);
   if (!me) throw new HttpError(401, 'Session expired. Please log in again.');
   const familyId = me.family.id;
@@ -960,10 +998,9 @@ async function api(req, env, url) {
   const need = cond => { if (!cond) throw new HttpError(403, 'Not allowed.'); };
 
   if (path === '/api/auth/me' && m === 'GET') return json({ parent: me.parent, family: { id: me.family.id, name: me.family.name }, children: me.children, ai: !!env.ANTHROPIC_API_KEY, tts: !!env.GOOGLE_TTS_API_KEY });
-  if (path === '/api/auth/logout' && m === 'POST') { await D.logout(token); return json({ ok: true }, 200, { 'set-cookie': clearCookie() }); }
   if (path === '/api/auth/verify' && m === 'POST') { const b = await body(req, 5_000); return json(await D.verifyPassword(me.parent.id, b.password, token)); }
   if (path === '/api/auth/lock' && m === 'POST') return json(await D.lockSession(token));
-  if (path === '/api/auth/password' && m === 'POST') { const b = await body(req, 5_000); return json(await D.changePassword(me.parent.id, b.old, b.new)); }
+  if (path === '/api/auth/password' && m === 'POST') { const b = await body(req, 5_000); return json(await D.changePassword(me.parent.id, b.old, b.new, token)); }
 
   // Família: crianças, responsáveis, uso, convite para outro responsável, exportar e apagar
   if (path === '/api/family' && m === 'GET') return json({ parents: await D.familyParents(familyId), usage: await D.familyUsage(familyId) });
@@ -989,8 +1026,8 @@ async function api(req, env, url) {
     return json({ link: `${url.origin}/?convite=${r.token}`, expires: r.expires });
   }
   if (path === '/api/family/export' && m === 'GET') {
-    const out = { family: me.family.name, exportedAt: new Date().toISOString(), children: [] };
-    for (const c of me.children) out.children.push({ ...c, data: await childStore(env, c.id).load() });
+    const out = { family: me.family.name, exportedAt: new Date().toISOString(), parents: await D.familyParents(familyId), children: [] };
+    for (const c of me.children) { const S = childStore(env, c.id); out.children.push({ ...c, data: await S.load(), notes: await S.notes() }); }
     return json(out);
   }
   if (path === '/api/family' && m === 'DELETE') {
@@ -1016,7 +1053,8 @@ async function api(req, env, url) {
     }
     return json({ ok: true, id: r.id, emailed });
   }
-  if (path === '/api/report' && m === 'POST') { const b = await body(req, 10_000); return json(await D.report(familyId, b.childId, b.kind, b.text)); }
+  const ownKid = id => (me.children.some(c => c.id === id) ? id : null);   // só grava criança da própria família
+  if (path === '/api/report' && m === 'POST') { const b = await body(req, 10_000); return json(await D.report(familyId, ownKid(b.childId), b.kind, b.text)); }
 
   // Dados de cada criança (só da própria família)
   const stM = path.match(/^\/api\/children\/([A-Za-z0-9_-]+)\/state$/);
@@ -1100,11 +1138,11 @@ async function api(req, env, url) {
     const year = YEAR_LABELS[child.year] ? child.year : 'Y5';
     const week = Math.max(1, Math.min(37, Number(b.week) || 1));
     const B = await bankEnsure(env, url, year, week);
-    const keys = (Array.isArray(b.subjects) ? b.subjects : []).slice(0, 30).filter(x => SUBJECT_IDS.includes(x.subject))
+    const keys = objs(b.subjects).slice(0, 30).filter(x => SUBJECT_IDS.includes(x.subject))
       .map(x => ({ slot: x.subject + (bankLevel(x) ? '-' + bankLevel(x) : ''), ckey: qKey(BANK_CURRICULUM, year, x.subject, bankLevel(x), week), need: Math.max(0, Math.min(80, Number(x.need) || 0)) }));
-    const books = (Array.isArray(b.books) ? b.books : []).slice(0, 4).filter(x => BANK_READ_IDS.includes(x.subject))
+    const books = objs(b.books).slice(0, 4).filter(x => BANK_READ_IDS.includes(x.subject))
       .map(x => ({ subject: x.subject, ckey: bookKey(BANK_CURRICULUM, year, x.subject, bankLevel(x), week, x.readLevel) }));
-    const exclude = (Array.isArray(b.exclude) ? b.exclude : []).slice(0, 600).map(String);
+    const exclude = arr(b.exclude).slice(0, 600).map(String);
     const r = await B.draw(child.id + '|' + week, keys, books.map(x => x.ckey), exclude);
     return json({ year, week,
       questions: Object.fromEntries(keys.map(k => [k.slot, r.questions[k.ckey] || []])),
@@ -1115,7 +1153,7 @@ async function api(req, env, url) {
     const b = await body(req, 5_000);
     const id = String(b.id || '').slice(0, 120); if (!id) throw new HttpError(400, 'Invalid item.');
     const r = await bankStub(env).report(id, familyId, isAdmin);
-    await D.report(familyId, b.childId, 'banco', `Question bank item ${id}:${String(b.text || '').slice(0, 800)}`).catch(() => {});
+    await D.report(familyId, ownKid(b.childId), 'banco', `Question bank item ${id}:${String(b.text || '').slice(0, 800)}`).catch(() => {});
     return json(r);
   }
 
@@ -1250,10 +1288,15 @@ async function seedCurriculum(env, url, force) {
   await C.seed([], idx.version);
   return { ok: true, rows, ...(await C.stats()) };
 }
+let CUR_CHECK_AT = 0;   // última conferência da versão publicada do currículo (nesta instância)
 async function curriculum(env, url) {
   const C = env.CURRICULUM.get(env.CURRICULUM.idFromName('curriculum'));
   const st = await C.stats();
-  if (!st.rows) await seedCurriculum(env, url, false);   // primeira vez: carrega sozinho
+  if (!st.rows) { await seedCurriculum(env, url, false); CUR_CHECK_AT = Date.now(); }   // primeira vez: carrega sozinho
+  else if (Date.now() - CUR_CHECK_AT > 300_000) {   // e de novo quando a versão publicada muda (seedCurriculum pula se for a mesma)
+    CUR_CHECK_AT = Date.now();
+    try { await seedCurriculum(env, url, false); } catch (e) { console.error('curriculum reload', e); }
+  }
   return C;
 }
 

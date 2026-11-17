@@ -77,6 +77,7 @@ Cada família tem uma conta (e-mail e senha dos pais). Cada criança tem um perf
    - **📖 Leitura diária:** cada dia começa com um capítulo do **livro da semana**, escrito pela Lumi.
      - **Cada dia tem um texto**, em português ou em inglês: com as duas línguas, os dias alternam (sábado português, domingo inglês…), e a história continua de um dia para o outro.
      - Depois do capítulo: de 6 a 8 perguntas de compreensão (sem resumo).
+     - **Opcional:** a criança pode concluir o dia sem a leitura. Ao tocar **✔ Concluir** com a leitura incompleta, a Lumi pergunta se quer pular; as perguntas do texto não feitas ficam fora da nota (⏭️) e as moedas do dia são pagas normalmente. Em **Ajustes → Daily reading for the child**, os pais podem voltar a deixar a leitura **obrigatória**.
    - **🚫 Sem aula nesta semana:** em Minha semana, cada matéria tem esse botão; a matéria fica fora das perguntas da semana, do "Mixed" dos extras e do ⚡ desafio, e volta na semana seguinte.
      - **📖 Texto extra** (nos Extras): vem no idioma que não foi o do texto do dia.
      - O botão **🔊** lê o capítulo em voz alta, e **🖨️ Imprimir** (no topo do texto) imprime só a leitura em A4.

@@ -104,6 +104,7 @@ export class Bank extends DurableObject {
     }
     return out;
   }
+  async bookExists(ckey) { return [...this.sql.exec('SELECT 1 FROM bank_books WHERE ckey = ?', ckey)].length > 0; }
   async book(ckey) { const r = [...this.sql.exec(`SELECT payload, status FROM bank_books WHERE ckey = ?`, ckey)][0]; return r && r.status === 'ok' ? JSON.parse(r.payload) : null; }
   // Roteiro do livro (título, premissa e sinopse dos 7 capítulos): só grava se ainda não existir
   async bookHeader(ckey, subject, raw) {

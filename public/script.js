@@ -50,6 +50,7 @@ const DEFAULT_SETTINGS = {
   readQ: { pt: 'auto', en: 'auto' }, // perguntas do texto do dia, por idioma: 'auto' (6–8 pelo ano e nível de leitura) ou 6–8
   minPerDay: 3, maxPerDay: 30, countMode: 'auto', perSubject: 2,   // (antigos: não são mais usados)
   dailyReading: true,     // todo dia tem um texto (capítulo do "livro da semana") com resumo e perguntas
+  readingOptional: true,  // a criança pode concluir o dia sem a leitura (as perguntas do texto não feitas ficam fora da nota)
   readLevel: 'at',        // nível padrão do texto diário
   autoVoice: false,       // a Lumi NÃO lê sozinha: o áudio só toca no 🔊 (pedido do Carlos, 24/10)
   workshopCoins: 3,       // moedas por atividade concluída na Oficina de palavras
@@ -318,7 +319,14 @@ function isCorrect(q, ans) {
   // Ortografia/Spelling: acento e grafia contam sempre (vale para perguntas do Claude, da aulinha e do gerador)
   if (SUBJ[q.subject] && SUBJ[q.subject].kind === 'spelling' && q.type !== 'mc') return list.some(a => norm(a, true) === norm(ans, true));
   if (SUBJ[q.subject] && SUBJ[q.subject].kind === 'math' && list.some(a => mathCanon(a) === mathCanon(ans))) return true;
-  return list.some(a => norm(a, q.strict) === norm(ans, q.strict));
+  // artigo: aceita sem artigo ("Amazon" = "the Amazon"), mas se os dois têm artigo, ele precisa ser o mesmo ("a apple" ≠ "an apple")
+  const art = x => (norm(x, true).normalize('NFD').replace(/[̀-ͯ]/g, '').match(/^(the|an|a|os|as|o) /) || [])[1] || '';
+  const same = a => norm(a, q.strict) === norm(ans, q.strict) && (!art(a) || !art(ans) || art(a) === art(ans));
+  if (q.type === 'mc') {
+    if (list.some(a => norm(a, true) === norm(ans, true))) return true;
+    if ((q.options || []).filter(o => norm(o, q.strict) === norm(ans, q.strict)).length > 1) return false;   // opções que só diferem no artigo/acento
+  }
+  return list.some(same);
 }
 // Respostas algébricas (Add Maths, IB): ignora espaços e variações de símbolos. Ex.: "x<-1 or x>4" = "x < −1 ou x > 4".
 function mathCanon(s) {
@@ -380,6 +388,11 @@ function normalizeState(s) {
   merged.settings.spinCoins = Object.assign({ small: 15, big: 50 }, ss.spinCoins || {});
   merged.spin = Object.assign({ days: {}, log: [], pending: null }, merged.spin || {});
   merged.dare = Object.assign({ lastAt: null, snoozeUntil: null, days: {} }, merged.dare || {});
+  // registros por dia só valem por pouco tempo: apaga os de mais de 60 dias (o estado inteiro vai ao servidor a cada mudança)
+  const cut = new Date(Date.now() - 60 * 864e5).toISOString().slice(0, 10);
+  const prune = o => { if (o && typeof o === 'object') Object.keys(o).forEach(d => { if (/^\d{4}-\d{2}-\d{2}$/.test(d) && d < cut) delete o[d]; }); };
+  prune(merged.dare.days); prune(merged.spin.days); prune(merged.extras); prune(merged.workshop); if (merged.tt) prune(merged.tt.days);
+  if (merged.quests && merged.quests.hist) prune(merged.quests.hist);
   if (!ss.autoVoiceV2) { merged.settings.autoVoice = false; merged.settings.autoVoiceV2 = true; }   // desliga o áudio automático de quem já tinha
   merged.equipped = Object.assign(base.equipped, (s && s.equipped) || {});
   merged.practice = Object.assign({ pt: [], en: [] }, merged.practice || {});
@@ -478,6 +491,7 @@ function mergeStates(localRaw, remoteRaw) {
   M.extras = Object.assign({}, R.extras); Object.entries(L.extras || {}).forEach(([d, v]) => { M.extras[d] = { sets: Math.max(v.sets || 0, (M.extras[d] || {}).sets || 0) }; });
   M.workshop = Object.assign({}, R.workshop); Object.entries(L.workshop || {}).forEach(([d, v]) => { M.workshop[d] = Math.max(v || 0, M.workshop[d] || 0); });
   if (L.extra && (!R.extra || (L.extra.date || '') >= (R.extra.date || ''))) M.extra = L.extra;
+  if (L.extraPending || R.extraPending) { const m = new Map(); [...(L.extraPending || []), ...(R.extraPending || [])].forEach(x => { const k = x && (x.date + '|' + ((x.questions || [])[0] || {}).id); if (x && !m.has(k)) m.set(k, x); }); M.extraPending = [...m.values()].slice(-5); }
   if (L.qHist || R.qHist) { const m = new Map(); [...(L.qHist || []), ...(R.qHist || [])].forEach(h => { if (h && h.start && !m.has(h.start)) m.set(h.start, h); }); M.qHist = [...m.values()].sort((a, b) => (a.start < b.start ? 1 : -1)).slice(0, QHIST_WEEKS); }
   if (L.extraHist || R.extraHist) { const m = new Map(); [...(R.extraHist || []), ...(L.extraHist || [])].forEach(h => { if (h && h.k && !m.has(h.k)) m.set(h.k, h); }); M.extraHist = [...m.values()].sort((a, b) => (a.d < b.d ? -1 : a.d > b.d ? 1 : 0)).slice(-400); }
   ['pt', 'en'].forEach(k => { M.practice[k] = [...new Set([...(L.practice[k] || []), ...(R.practice[k] || [])])].slice(0, 30); });
@@ -497,7 +511,15 @@ function mergeStates(localRaw, remoteRaw) {
     Object.entries(hl).forEach(([d, ids]) => { M.quests.hist[d] = [...new Set([...(M.quests.hist[d] || []), ...ids])]; });
   }
   // 🎡 roleta: giros usados/ganhos por dia = o maior dos dois; histórico unido por id; prêmio pendente de mostrar fica
-  M.spin = { days: Object.assign({}, R.spin.days), log: byId(L.spin.log, R.spin.log).sort((a, b) => (a.at < b.at ? 1 : -1)).slice(0, 40), pending: L.spin.pending || R.spin.pending || null };
+  M.spin = { days: Object.assign({}, R.spin.days), log: byId(L.spin.log, R.spin.log).sort((a, b) => (a.at < b.at ? 1 : -1)).slice(0, 40), pending: L.spin.pending || R.spin.pending || null,
+    granted: [...new Set([...(R.spin.granted || []), ...(L.spin.granted || [])])].slice(-60) };
+  // ⏱️ tabuada: recordes e rodadas pagas = o maior; erros frequentes = o maior; histórico unido
+  if (L.tt || R.tt) {
+    const a = L.tt || {}, b = R.tt || {}, maxMap = (x, y) => { const o = Object.assign({}, y || {}); Object.entries(x || {}).forEach(([k, v]) => { o[k] = Math.max(Number(v) || 0, Number(o[k]) || 0); }); return o; };
+    const hk = h => `${h.date}|${h.mode}|${h.table}|${h.score}|${h.total}|${h.avgMs}`, hm = new Map();
+    [...(b.history || []), ...(a.history || [])].forEach(h => { if (h && !hm.has(hk(h))) hm.set(hk(h), h); });
+    M.tt = { best: maxMap(a.best, b.best), weak: maxMap(a.weak, b.weak), days: maxMap(a.days, b.days), history: [...hm.values()].sort((x, y) => (x.date < y.date ? -1 : x.date > y.date ? 1 : 0)).slice(-50) };
+  }
   Object.entries(L.spin.days || {}).forEach(([d, v]) => { const r = M.spin.days[d] || {}; M.spin.days[d] = { used: Math.max(v.used || 0, r.used || 0), earned: Math.max(v.earned || 0, r.earned || 0) }; });
   if (M.spin.pending && M.spin.log.some(x => x.id === M.spin.pending.id && x.shown)) M.spin.pending = null;
   // ⚡ desafio da Lumi: último horário = o mais recente; por dia: contagem maior, leitura feita em qualquer aparelho, lista unida por id
@@ -571,6 +593,14 @@ async function pushState() {
       S = mergeStates(S, e.data.state); persistLocal(); Server.status = 'ok'; Server.again = true;
       applyTheme(); renderMascotMini(); renderCoins();
       if (!['work', 'check', 'selfcheck'].includes(currentScreen)) show(currentScreen);
+      else if (currentScreen === 'work' && $('#modal').classList.contains('hidden')) {
+        // a tela da tarefa guarda referências ao estado antigo: redesenha (mesmo tema e parte) para seguir no estado novo
+        const a = document.activeElement, card = a && a.closest ? a.closest('.q') : null, qid = card ? card.dataset.qid : null;
+        const pos = a && typeof a.selectionStart === 'number' ? a.selectionStart : null;
+        renderWork();
+        const ni = qid && $(`#scr-work .q[data-qid="${qid}"] [data-in]`);
+        if (ni) { ni.focus({ preventScroll: true }); if (pos != null) try { ni.setSelectionRange(pos, pos); } catch (err) { /* ignora */ } }
+      }
       toast('🔄 Merged with changes from another device');
     } else if (e.status === 401) {
       Server.status = 'auth'; Server.me = null; VIEW.auth = { mode: 'login' }; show('login'); toast('Your session has expired. Please log in again.');
@@ -651,11 +681,12 @@ async function fileToJpeg(file, max = 1600, quality = 0.82) {
 // Tela de espera com a Lumi (as chamadas ao Claude podem levar alguns segundos)
 function showLoading(msgs) {
   let i = 0;
-  const c = openModal(`<div class="modal-body celebrate"><div class="owl-big thinking">${mascotSVG(S.equipped, 'think')}</div>
-    <p id="ld-msg" style="font-weight:800">${esc(msgs[0])}</p><div class="dots"><i></i><i></i><i></i></div></div>`);
-  $('#modal').onclick = null;
+  const c = openModal(`<div class="modal-body celebrate" role="status" aria-live="polite"><div class="owl-big thinking">${mascotSVG(S.equipped, 'think')}</div>
+    <p id="ld-msg" style="font-weight:800">${esc(msgs[0])}</p><div class="dots"><i></i><i></i><i></i></div></div>`, { locked: true });
+  const md = $('#modal'), gen = md._gen;
   const timer = setInterval(() => { i = (i + 1) % msgs.length; const m = $('#ld-msg', c); if (m) m.textContent = msgs[i]; }, 3500);
-  return () => { clearInterval(timer); $('#modal')._onClose = null; closeModal(); };
+  // só fecha se o modal aberto ainda for o de "carregando" (não fecha uma comemoração aberta depois)
+  return () => { clearInterval(timer); if (md._gen === gen && !md.classList.contains('hidden')) { md._onClose = null; closeModal(); } };
 }
 
 /* ---------- Telas de conta: primeiro acesso, login, convite, nova senha, perfis ---------- */
@@ -1223,6 +1254,7 @@ function hatchModal(kind, prize, n) {
     <div class="modal-foot" id="hatch-f" style="justify-content:center"></div>`);
   const stage = $('#egg-stage', m);
   const reveal = () => {
+    if (!m.contains(stage) || $('#modal').classList.contains('hidden')) return;   // fechou antes de chocar (o prêmio já está guardado)
     const info = prizeInfo(prize);
     const rar = info.rar ? RARITY[info.rar] : null;
     stage.innerHTML = `<div class="hatch-prize ${info.rar || 'mascot'}">${info.pic}</div>`;
@@ -1424,7 +1456,9 @@ function ttsFetch(text, lang) {
       .then(r => { if (!r.ok) throw Object.assign(new Error('tts ' + r.status), { status: r.status }); return r.blob(); })
       .then(b => URL.createObjectURL(b))
       .catch(e => { TTS_CACHE.delete(k); throw e; }));
-    if (TTS_CACHE.size > 60) TTS_CACHE.delete(TTS_CACHE.keys().next().value);
+    if (TTS_CACHE.size > 60) { const old = TTS_CACHE.keys().next().value; const p = TTS_CACHE.get(old); TTS_CACHE.delete(old);
+      // libera o áudio antigo (depois de um tempo, caso ainda esteja tocando)
+      p.then(url => setTimeout(() => { if (!talkAudio || talkAudio.src !== url) URL.revokeObjectURL(url); }, 60000)).catch(() => {}); }
   }
   return TTS_CACHE.get(k);
 }
@@ -2116,7 +2150,7 @@ function grantMissingDayCoins() {
   let got = 0;
   Object.values(w.days).forEach(d => {
     if (d.status !== 'done' || d.coinsAt || !d.result || d.rec) return;
-    const doneOn = String(d.result.at || '').slice(0, 10);
+    const doneOn = d.result.day || (d.result.at ? ymd(new Date(d.result.at)) : '');
     if (!doneOn) { d.coinsAt = today(); return; }
     const amt = doneOn && doneOn <= d.date ? dc : Math.round(dc / 2);
     if (addCoins(amt, `${DOW_FULL[d.dow]} task ${fmtDM(d.date)}`,'day-' + d.date)) { d.coinsAt = today(); d.coins = amt; got += amt; }
@@ -2221,17 +2255,30 @@ function applyTheme() {
 }
 
 /* ---------- Modais e avisos ---------- */
-function openModal(html, { wide = false, onClose } = {}) {
+// locked: não fecha com Esc nem tocando fora (carregando, jogos cronometrados). Cada abertura ganha um número (m._gen).
+function openModal(html, { wide = false, onClose, locked = false } = {}) {
   const m = $('#modal'), c = $('#modal-card');
+  if (m.classList.contains('hidden')) m._returnFocus = document.activeElement;
   c.className = 'modal-card' + (wide ? ' wide' : '');
   c.innerHTML = html;
   m.classList.remove('hidden');
-  m.onclick = e => { if (e.target === m) closeModal(); };
+  m._gen = (m._gen || 0) + 1; m._locked = !!locked;
+  m.onclick = e => { if (e.target === m && !m._locked) closeModal(); };
   m._onClose = onClose;
+  const h = $('h3', c); if (h) { h.id = 'modal-title'; m.setAttribute('aria-labelledby', 'modal-title'); } else m.removeAttribute('aria-labelledby');
+  const scr = $('#screens'); if (scr) scr.inert = true;
+  requestAnimationFrame(() => { if (m.classList.contains('hidden') || c.contains(document.activeElement)) return;
+    const f = $('[autofocus], input:not([readonly]):not([type=hidden]), textarea, select, button.primary, button', c); if (f) f.focus({ preventScroll: true }); });
   $$('[data-close]', c).forEach(b => b.onclick = closeModal);
   return c;
 }
-function closeModal() { const m = $('#modal'); m.classList.add('hidden'); if (m._onClose) { const f = m._onClose; m._onClose = null; f(); } }
+function closeModal() {
+  const m = $('#modal'); m.classList.add('hidden'); m._locked = false;
+  const scr = $('#screens'); if (scr) scr.inert = false;
+  if (m._onClose) { const f = m._onClose; m._onClose = null; f(); }
+  if (m.classList.contains('hidden') && m._returnFocus && document.contains(m._returnFocus)) { try { m._returnFocus.focus({ preventScroll: true }); } catch (e) {} }
+  if (m.classList.contains('hidden')) m._returnFocus = null;
+}
 function confirmBox(title, text, okLabel = 'Confirm', danger = false) {
   return new Promise(res => {
     const c = openModal(`<div class="modal-head"><h3>${title}</h3></div><div class="modal-body"><p>${text}</p></div>
@@ -2455,6 +2502,7 @@ async function startReading(lang) {
   const same = book && book.title === r.bookTitle;
   S.books[lang] = { title: r.bookTitle, chapters: (same ? book.chapters : []).concat([{ title: r.title, summary: r.summary }]).slice(-12) };
   noteExtraHist(qs);
+  stashExtra();
   S.extra = { date: t, paid, group: 'book', status: 'todo', passage: { subject, title: `${r.bookTitle} — ${r.title}`, text: r.text },
     questions: qs.map((q, j) => Object.assign({ lang: SUBJ[q.subject].lang }, q, { id: `x-${j}-${uid()}` })), answers: {}, result: null };
   save();
@@ -2512,6 +2560,7 @@ async function startExtras(group) {
   if (qs.length < 2) qs = localExtras(size, group.subjects);
   if (!qs.length) { say('I couldn’t create extras for this subject right now. Try another one! 🙂', { mood: 'think' }); return; }
   noteExtraHist(qs.slice(0, size));
+  stashExtra();
   S.extra = { date: t, paid, group: group.id, review: group.review || null, status: 'todo', questions: qs.slice(0, size).map((q, j) => Object.assign({ lang: SUBJ[q.subject].lang }, q, { id: `x-${j}-${uid()}` })), answers: {}, result: null };
   save();
   VIEW.wp = null; VIEW.work = { kind: 'extra' };
@@ -3104,19 +3153,21 @@ function openTimesTables() {
 }
 function runTimesTables(mode, table, missed) {
   const facts = ttFacts(mode, table, missed);
-  const secs = ttSeconds(); const res = []; let i = 0, timer = null, started = 0, locked = false;
+  const secs = ttSeconds(); const res = []; let i = 0, timer = null, nextT = null, started = 0, locked = false, alive = true, finished = false;
   const m = openModal(`<div class="modal-head"><h3>⏱️ ${mode === 'check' ? 'Times tables check' : mode === 'table' ? `The ${table} times table` : 'Facts to practise'}</h3><button class="btn small" data-quit>Stop</button></div>
     <div class="modal-body tt-play"><div class="tt-top"><span id="tt-n"></span><span id="tt-score"></span></div>
       <div class="tt-bar"><i id="tt-bar"></i></div>
       <div class="tt-q" id="tt-q"></div>
       <div class="tt-ans"><input id="tt-in" readonly inputmode="none" tabindex="-1" autocomplete="off" maxlength="3" aria-label="Answer"></div>
       <div class="tt-fb" id="tt-fb"></div>
-      <div class="tt-pad">${[1, 2, 3, 4, 5, 6, 7, 8, 9, '⌫', 0, '✔'].map(k => `<button type="button" data-k="${k}">${k}</button>`).join('')}</div></div>`, { wide: true });
+      <div class="tt-pad">${[1, 2, 3, 4, 5, 6, 7, 8, 9, '⌫', 0, '✔'].map(k => `<button type="button" data-k="${k}">${k}</button>`).join('')}</div></div>`, { wide: true, locked: true,
+    onClose: () => { const had = alive; alive = false; stop(); document.removeEventListener('keydown', onKey); if (had && res.length) finish(); } });
   const inp = $('#tt-in', m), bar = $('#tt-bar', m);
-  const stop = () => { clearTimeout(timer); timer = null; cancelAnimationFrame(VIEW.ttRaf); };
+  const stop = () => { clearTimeout(timer); timer = null; clearTimeout(nextT); nextT = null; cancelAnimationFrame(VIEW.ttRaf); };
   const tick = () => { const left = Math.max(0, 1 - (performance.now() - started) / (secs * 1000)); bar.style.width = (left * 100) + '%'; bar.classList.toggle('low', left < .34); if (left > 0 && !locked) VIEW.ttRaf = requestAnimationFrame(tick); };
   const show = () => {
-    if (i >= facts.length) { finish(); return; }
+    if (!alive) return;
+    if (i >= facts.length) { alive = false; finish(); return; }
     const [a, b] = facts[i]; locked = false;
     $('#tt-n', m).textContent = `${i + 1} / ${facts.length}`; $('#tt-score', m).textContent = `✓ ${res.filter(r => r.ok).length}`;
     $('#tt-q', m).textContent = `${a} × ${b} =`; $('#tt-fb', m).textContent = ''; $('#tt-fb', m).className = 'tt-fb';
@@ -3125,14 +3176,15 @@ function runTimesTables(mode, table, missed) {
     timer = setTimeout(() => answer(true), secs * 1000);
   };
   const answer = (timeout = false) => {
-    if (locked) return; locked = true; stop();
+    if (locked || !alive) return; locked = true; stop();
     const [a, b] = facts[i]; const v = inp.value.trim(); const ok = !timeout && Number(v) === a * b && v !== '';
     res.push({ a, b, given: v, ok, ms: Math.round(performance.now() - started), timeout });
     const fb = $('#tt-fb', m); fb.className = 'tt-fb ' + (ok ? 'ok' : 'bad');
     fb.textContent = ok ? '✓' : `${timeout ? '⏰ ' : ''}${a} × ${b} = ${a * b}`;
-    i++; setTimeout(show, ok ? 450 : 1300);
+    i++; nextT = setTimeout(show, ok ? 450 : 1300);
   };
   const finish = () => {
+    if (finished) return; finished = true; alive = false;
     stop(); document.removeEventListener('keydown', onKey);
     const st = ttState(); const t = today(); const score = res.filter(r => r.ok).length;
     res.forEach(r => { const k = `${Math.min(r.a, r.b)}x${Math.max(r.a, r.b)}`; st.weak[k] = r.ok ? Math.max(0, (st.weak[k] || 0) - 1) : (st.weak[k] || 0) + 1; if (!st.weak[k]) delete st.weak[k]; });
@@ -3158,14 +3210,14 @@ function runTimesTables(mode, table, missed) {
   });
   // teclado físico (computador/tablet com teclado): números, apagar e Enter — sem abrir o teclado do celular
   const onKey = e => {
-    if (!document.body.contains(m)) { document.removeEventListener('keydown', onKey); return; }
+    if (!alive) { document.removeEventListener('keydown', onKey); return; }
     if (/^\d$/.test(e.key)) { if (inp.value.length < 3 && !locked) inp.value += e.key; e.preventDefault(); }
     else if (e.key === 'Backspace') { inp.value = inp.value.slice(0, -1); e.preventDefault(); }
     else if (e.key === 'Enter') { if (inp.value) answer(); e.preventDefault(); }
   };
   document.addEventListener('keydown', onKey);
-  $('[data-quit]', m).onclick = () => { stop(); i = facts.length; document.removeEventListener('keydown', onKey); closeModal(); if (res.length) finish(); };
-  setTimeout(show, 300);
+  $('[data-quit]', m).onclick = () => closeModal();   // onClose para o jogo e paga o que já foi feito (uma vez)
+  nextT = setTimeout(show, 300);
 }
 /* ---------- 🙋 Challenge the marking ----------
    After finishing, a question marked wrong gets "🙋 I think I’m right". Lumi checks again (Claude); if the child is right, the
@@ -3231,8 +3283,16 @@ function pendingChallenges() {
   const out = [];
   const scan = (obj, kind, label) => Object.entries(obj.challenges || {}).forEach(([qid, ch]) => { if (ch.status !== 'parent') return; const q = (obj.questions || []).find(x => x.id === qid); if (q) out.push({ obj, kind, q, ch, label }); });
   if (S.week) Object.values(S.week.days).forEach(d => scan(d, 'day', `${DOW_LABEL[d.dow]} ${fmtDM(d.date)}`));
+  if (S.recovery && S.recovery.days) Object.values(S.recovery.days).forEach(d => scan(d, 'day', `⏳ ${DOW_LABEL[d.dow]} ${fmtDM(d.date)}`));
   if (S.extra) scan(S.extra, 'extra', 'Extras');
+  (S.extraPending || []).forEach(x => scan(x, 'extra', `Extras ${fmtDM(x.date)}`));
   return out;
+}
+// Antes de trocar a rodada de extras: guarda a antiga se ainda tiver contestação esperando os pais.
+function stashExtra() {
+  const has = x => x && Object.values(x.challenges || {}).some(ch => ch.status === 'parent');
+  S.extraPending = (S.extraPending || []).filter(has);
+  if (has(S.extra)) S.extraPending = S.extraPending.concat(S.extra).slice(-5);
 }
 function collectDraft() { $$('#scr-setup textarea[data-sid]').forEach(ta => { VIEW.draftTopics[ta.dataset.sid] = ta.value; }); }
 async function generateFromSetup(editing) {
@@ -3279,6 +3339,7 @@ function workCtx() {
 }
 // Correção: usa o veredito da foto/autocorreção quando existir; senão compara com o gabarito.
 function verdict(c, q) {
+  if (c.obj && isSkipped(c, q)) return null;   // leitura opcional pulada: sem nota
   const v = c.verdicts && c.verdicts[q.id];
   if (v === 'ok') return true;
   if (v === 'bad') return false;
@@ -3313,11 +3374,16 @@ function workThemes(c) {
 }
 const themeAnswered = (c, t) => t.idxs.filter(i => answered(c.questions[i], c.answers[c.questions[i].id])).length;
 const themeDone = (c, t) => themeAnswered(c, t) === t.idxs.length;
-// próximo tema que ainda falta, na sequência (a partir do tema atual)
-function nextTheme(c, themes, fromId) {
+// Leitura opcional: no dia (e na recuperação), as perguntas do texto do dia podem ficar sem fazer.
+const readingOptional = () => S.settings.readingOptional !== false;
+function isOptQ(c, q) { return c.kind === 'day' && readingOptional() && dayPassages(c.obj).some(x => x.subject === q.subject); }
+const isSkipped = (c, q) => !!(c.obj.skipped && c.obj.skipped.includes(q.id));
+const optTheme = (c, t) => !!t.reading && c.kind === 'day' && readingOptional();
+// próximo tema que ainda falta, na sequência (a partir do tema atual); reqOnly: ignora a leitura opcional
+function nextTheme(c, themes, fromId, reqOnly = false) {
   const k = themes.findIndex(t => t.id === fromId);
   const order = k < 0 ? themes : [...themes.slice(k + 1), ...themes.slice(0, k)];
-  return order.find(t => !themeDone(c, t)) || null;
+  return order.find(t => !themeDone(c, t) && !(reqOnly && optTheme(c, t))) || null;
 }
 function firstOpenPage(c, t) { const pages = workPages(c, t.idxs); const k = pages.findIndex(p => p.some(i => !answered(c.questions[i], c.answers[c.questions[i].id]))); return k < 0 ? 0 : k; }
 function openTheme(id) {
@@ -3336,6 +3402,7 @@ function renderHub(c, themes) {
   const canQty = false;   // a quantidade vem das 3 variáveis (por tema e por texto)
   const paper = c.kind === 'day' && !c.rec && !c.done;
   const next = nextTheme(c, themes, null);
+  const nextReq = nextTheme(c, themes, null, true);
   const started = c.questions.some(q => answered(q, c.answers[q.id]));
   VIEW.curPages = [];
   const card = t => {
@@ -3345,7 +3412,7 @@ function renderHub(c, themes) {
     const topic = themeTopic(c, t.id);
     return `<button type="button" class="theme-card ${a === n ? 'done' : ''} ${!c.done && next && next.id === t.id ? 'next' : ''}" data-theme="${t.id}" style="--subj:${sb.color}">
       <span class="tc-top"><span class="tc-ic">${t.reading ? '📖' : sb.icon}</span><span class="tc-name">${esc(t.reading ? (sb.lang === 'en' ? 'Today\'s reading' : 'Leitura do dia') : sb.name)}</span><span class="tc-st">${st}</span></span>
-      <span class="tc-meta">${t.reading ? 'text + ' : ''}${n} ${n === 1 ? 'question' : 'questions'}</span>
+      <span class="tc-meta">${t.reading ? 'text + ' : ''}${n} ${n === 1 ? 'question' : 'questions'}${optTheme(c, t) && !c.done ? ' · optional' : ''}${optTheme(c, t) && c.done && t.idxs.every(i => isSkipped(c, c.questions[i])) ? ' · skipped' : ''}</span>
       ${topic ? `<span class="tc-topic">${esc(topic)}</span>` : ''}
       <span class="tc-bar"><i style="width:${n ? a / n * 100 : 0}%"></i></span></button>`;
   };
@@ -3360,12 +3427,13 @@ function renderHub(c, themes) {
     ${!c.done && next ? `<div class="hub-go-wrap"><button type="button" class="btn primary big hub-go" data-theme="${next.id}">▶ ${started ? 'Continue' : 'Start'}: ${next.reading ? '📖' : (SUBJ[next.id] || {}).icon || ''} ${esc(next.reading ? (SUBJ[next.id].lang === 'en' ? 'Reading' : 'Leitura') : (SUBJ[next.id] || {}).name || next.id)}</button>
       <span class="tiny muted">${started ? 'or pick another topic 👇' : 'in order — or pick a topic 👇'}</span></div>` : ''}
     ${!c.done && !next ? `<div class="hub-go-wrap"><span class="hub-all">🎉 All topics answered! Check them and tap <b>✔ Finish</b>.</span></div>` : ''}
+    ${!c.done && next && !nextReq && started ? `<div class="hub-go-wrap"><span class="hub-all">🎉 All topics answered! 📖 The reading is optional: do it for practice, or tap <b>✔ Finish</b>.</span></div>` : ''}
     <div class="theme-grid">${themes.map(card).join('')}</div>
     <div class="work-foot">
       <button class="btn home-btn" data-act="back" aria-label="Back to Home">🏠 <span class="lbl">Home</span></button>
       <button class="btn" data-act="print" aria-label="Print">🖨️ <span class="lbl">Print</span></button>
       <button class="btn" data-act="key">🔑 Answer key</button>
-      ${c.done ? '' : `<button class="btn ${next ? '' : 'primary'}" data-act="finish">✔ Finish</button>`}
+      ${c.done ? '' : `<button class="btn ${nextReq ? '' : 'primary'}" data-act="finish">✔ Finish</button>`}
     </div></div>`;
   $$('[data-theme]', el).forEach(b => b.onclick = () => openTheme(b.dataset.theme));
   $('[data-act=back]', el).onclick = () => { save(); show('home'); };
@@ -3401,7 +3469,7 @@ function renderWork() {
       <button type="button" class="btn small" data-pg="1" ${last ? 'disabled' : ''} aria-label="Next part">▸</button></div>` : '';
   const paper = c.kind === 'day' && !c.rec && !c.done;
   const sbT = hub ? (SUBJ[th.id] || { icon: '❓', name: th.id, color: '#7b5cf0' }) : null;
-  const nxt = hub && !c.done ? nextTheme(c, themes, th.id) : null;
+  const nxt = hub && !c.done ? (nextTheme(c, themes, th.id, !optTheme(c, th)) || null) : null;
   const lastBtn = c.done ? (hub ? '<button class="btn primary" data-act="themes">🗂️ Topics</button>' : '')
     : nxt ? `<button class="btn primary" data-act="nexttheme" data-nt="${nxt.id}">${nxt.reading ? '📖' : (SUBJ[nxt.id] || {}).icon || ''} Next topic ▸</button>`
     : '<button class="btn primary" data-act="finish">✔ Finish</button>';
@@ -3463,6 +3531,7 @@ function questionCard(q, i, c, num = i) {
     const note = c.obj.notes && c.obj.notes[q.id];
     if (ok === true) { stateCls = 'state-ok'; mark = '✓'; }
     else if (ok === false) { stateCls = 'state-bad'; mark = '✗'; expected = q.type === 'proof' ? (note ? `<div class="expected">🦉 ${esc(note)}</div>` : '') : `<div class="expected">${q.lang === 'pt' ? 'Resposta' : 'Answer'}: ${esc(q.answer)}${note ? ` · ${esc(note)}` : ''}</div>`; }
+    else if (isSkipped(c, q)) mark = '⏭️';
     else { const pm = c.marks[q.id]; mark = pm === 'ok' ? '✓ parents' : pm === 'no' ? '↺ parents' : '📝'; if (pm === 'ok') stateCls = 'state-ok'; }
     if (q.type === 'open' && ok !== null) {
       const pm = c.marks[q.id];
@@ -3588,10 +3657,20 @@ function openGabarito(c, th = null) {
 }
 async function finishWork(c) {
   hideBubble();
-  const missing = c.questions.filter(q => !answered(q, c.answers[q.id])).length;
+  // se o estado foi juntado com outro aparelho, c pode apontar para objetos antigos: usa o atual, com as respostas deste aparelho
+  const fresh = workCtx();
+  if (fresh && fresh.obj !== c.obj && workKey(fresh) === workKey(c)) { Object.keys(c.answers || {}).forEach(k => { if (fresh.answers[k] == null || fresh.answers[k] === '') fresh.answers[k] = c.answers[k]; }); c = fresh; }
+  const unans = c.questions.filter(q => !answered(q, c.answers[q.id]));
+  const optLeft = unans.filter(q => isOptQ(c, q));
+  const missing = unans.length - optLeft.length;
+  if (!missing && optLeft.length) {
+    const ok = await confirmBox('📖 Skip the reading?', `The reading is optional. Finish without the <b>${optLeft.length}</b> reading question${optLeft.length > 1 ? 's' : ''}? They won’t count against you.`, 'Finish without it');
+    if (!ok) { const th = workThemes(c).find(t => t.reading); if (th && VIEW.wp) { VIEW.wp.theme = th.id; VIEW.wp.page = firstOpenPage(c, th); save(); renderWork(); } return; }
+    c.obj.skipped = optLeft.map(q => q.id);
+  } else if (c.obj.skipped) delete c.obj.skipped;
   if (missing) {
     say(`<b>${missing}</b> question${missing > 1 ? 's' : ''} left. Tap 💡 if you need help!`, { mood: 'think' });
-    const first = c.questions.find(q => !answered(q, c.answers[q.id]));
+    const first = unans.find(q => !isOptQ(c, q));
     const fi = c.questions.indexOf(first);
     const th = VIEW.wp && VIEW.wp.theme !== 'all' ? workThemes(c).find(t => t.idxs.includes(fi)) : null;
     if (th) { VIEW.wp.theme = th.id; VIEW.wp.page = workPages(c, th.idxs).findIndex(p => p.includes(fi)); renderWork(); }
@@ -3722,8 +3801,10 @@ function explainContent(q, c) { return openLesson(q, c); }
 // Marca o dia (ou extras) como concluído e comemora. via: screen | photo | self
 function trackMistakes(c) {
   c.questions.forEach(q => {
+    if (isSkipped(c, q)) return;
     const v = verdict(c, q);
     if (q.type === 'proof') {
+      if (v === true) return;   // corrigido como certo (ex.: pela foto)
       const a = proofAns(c.answers[q.id]);
       const missedW = q.errors.filter(e => !(a[e.idx] != null && proofEq(a[e.idx], e.right))).map(e => e.right);
       if (missedW.length) notePractice(q.lang, missedW);
@@ -3738,12 +3819,13 @@ function trackMistakes(c) {
 function completeWork(c, via, extraMsg = '') {
   c.verdicts = c.obj.verdicts || c.verdicts || {};
   try { trackMistakes(c); } catch (e) { console.warn(e); }
-  const obj = c.questions.filter(q => verdict(c, q) !== null);   // objetivas + livres já corrigidas
+  const counted = c.questions.filter(q => !isSkipped(c, q));     // leitura pulada fica fora da nota
+  const obj = counted.filter(q => verdict(c, q) !== null);       // objetivas + livres já corrigidas
   const correct = obj.filter(q => verdict(c, q) === true).length;
-  const open = c.questions.length - obj.length;                  // livres que ficam para os pais
+  const open = counted.length - obj.length;                      // livres que ficam para os pais
   c.obj.status = 'done';
   c.obj.via = via;
-  c.obj.result = { correct, total: obj.length, open, at: new Date().toISOString() };
+  c.obj.result = { correct, total: obj.length, open, at: new Date().toISOString(), day: today() };
   if (c.kind === 'extra') {
     const t = today();
     const coins = c.obj.paid ? correct * S.settings.extraPerCorrect : 0;
@@ -4001,7 +4083,7 @@ async function gradeByPhoto(d) {
   d.verdicts = {}; d.notes = {};
   (r.results || []).forEach(x => {
     const q = d.questions[x.number - 1]; if (!q) return;
-    if (x.read) d.answers[q.id] = x.read;
+    if (x.read && q.type !== 'proof') d.answers[q.id] = x.read;   // caça-erros guarda as correções como objeto: não sobrescreve com texto
     d.verdicts[q.id] = x.verdict === 'ok' ? 'ok' : 'bad';
     if (x.note) d.notes[q.id] = x.note;
   });
@@ -4802,16 +4884,19 @@ async function dareStart(reading) {
         : `<input type="text" id="dare-in" ${q.type === 'num' ? 'inputmode="decimal"' : ''} autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${pt ? 'Sua resposta' : 'Your answer'}">`}
       <p class="tiny muted" style="margin:6px 0 0">One try · no hints or mini-lesson · you never lose coins.</p>
       <div id="dare-out"></div></div>
-    <div class="modal-foot"><button class="btn" id="dare-skip">Skip</button><span class="grow"></span><button class="btn primary" id="dare-go">Answer ⚡</button></div>`);
-  let pick = null;
+    <div class="modal-foot"><button class="btn" id="dare-skip">Skip</button><span class="grow"></span><button class="btn primary" id="dare-go">Answer ⚡</button></div>`,
+    { onClose: () => { if (!recorded) dareRecord({ id, at: new Date().toISOString(), subject: q.subject, q: q.q, answer: q.answer, result: 'skipped', reading, coins: 0 }); recorded = true; end(); } });
+  let pick = null, recorded = false;
   $$('[data-dopt]', m).forEach(b => b.onclick = () => { pick = b.dataset.dopt; $$('[data-dopt]', m).forEach(x => x.classList.toggle('sel', x === b)); });
   const inp = $('#dare-in', m); if (inp) { inp.focus(); inp.onkeydown = e => { if (e.key === 'Enter') $('#dare-go', m).click(); }; }
   const end = () => { VIEW.dareActive = false; };
-  $('#dare-skip', m).onclick = () => { dareRecord({ id, at: new Date().toISOString(), subject: q.subject, q: q.q, answer: q.answer, result: 'skipped', reading, coins: 0 }); closeModal(); end(); };
+  $('#dare-skip', m).onclick = () => closeModal();   // onClose registra como pulado
   $('#dare-go', m).onclick = () => {
     const given = q.type === 'mc' ? pick : (inp ? inp.value.trim() : '');
     if (!given) { toast(pt ? 'Escolha ou escreva uma resposta. 🙂' : 'Pick or write an answer. 🙂'); return; }
+    if (recorded) return;
     const ok = isCorrect(q, given) === true;
+    recorded = true;
     dareRecord({ id, at: new Date().toISOString(), subject: q.subject, q: q.q, answer: q.answer, given, result: ok ? 'right' : 'wrong', reading, coins: ok ? coins : 0 });
     $$('[data-dopt]', m).forEach(b => { b.disabled = true; if (norm(b.dataset.dopt) === norm(q.answer)) b.classList.add('ok'); else if (b.dataset.dopt === pick && !ok) b.classList.add('bad'); });
     if (inp) inp.disabled = true;
@@ -5435,6 +5520,7 @@ function pSettings(box) {
       <div class="field">${rqSelect('pt', '📖 Questions on the Portuguese text', 's-rqpt')}</div>
       <div class="field">${rqSelect('en', '📖 Questions on the English text', 's-rqen')}</div>
       <label class="field">Daily reading (chapter of the week’s book)<select id="s-dread"><option value="1" ${st.dailyReading ? 'selected' : ''}>On</option><option value="0" ${!st.dailyReading ? 'selected' : ''}>Off</option></select></label>
+      <label class="field">Daily reading for the child<select id="s-ropt"><option value="1" ${st.readingOptional !== false ? 'selected' : ''}>Optional (can finish the day without it)</option><option value="0" ${st.readingOptional === false ? 'selected' : ''}>Required</option></select></label>
       <label class="field">Default reading level<select id="s-rlevel">${READ_LEVELS.map(([k, l]) => `<option value="${k}" ${(st.readLevel || 'at') === k ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
       <label class="field">Lumi reads the mini-lessons aloud<select id="s-avoice"><option value="1" ${st.autoVoice ? 'selected' : ''}>Yes, automatically</option><option value="0" ${!st.autoVoice ? 'selected' : ''}>Only with 🔊</option></select></label>
       <label class="field">Answer key<select id="s-gab"><option value="1" ${st.gabaritoAfterFinish ? 'selected' : ''}>Unlocks after finishing</option><option value="0" ${!st.gabaritoAfterFinish ? 'selected' : ''}>Always available</option></select></label>
@@ -5462,7 +5548,7 @@ function pSettings(box) {
       spinOn: $('#s-spin').value === '1', spinCoins: { small: clamp(num('#s-spins', spinCoins('small')), 1, 1000), big: clamp(num('#s-spinb', spinCoins('big')), 1, 1000) },
       perTheme: clamp(num('#s-ptheme', perTheme()), 1, 6), readQ: { pt: $('#s-rqpt').value === 'auto' ? 'auto' : Number($('#s-rqpt').value), en: $('#s-rqen').value === 'auto' ? 'auto' : Number($('#s-rqen').value) },
       workshopCoins: clamp(num('#s-wkc', st.workshopCoins ?? 3), 0, 50), workshopPerDay: clamp(num('#s-wkd', st.workshopPerDay ?? 5), 0, 20),
-      dailyReading: $('#s-dread').value === '1',
+      dailyReading: $('#s-dread').value === '1', readingOptional: $('#s-ropt').value === '1',
       readLevel: $('#s-rlevel').value, autoVoice: $('#s-avoice').value === '1',
       gabaritoAfterFinish: $('#s-gab').value === '1', voice: $('#s-voice').value === '1',
       naturalVoice: $('#s-nvoice').value === '1', deviceVoice: { pt: $('#s-dv-pt').value, en: $('#s-dv-en').value },
@@ -5730,7 +5816,16 @@ function init() {
   });
   let rt = null;
   window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (currentScreen === 'work') fitGrid($('#sheet')); const k = $('#key-grid'); if (k && !$('#modal').classList.contains('hidden')) fitGrid(k, { colMin: 200 }); }, 120); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#modal').classList.contains('hidden')) closeModal(); });
+  document.addEventListener('keydown', e => {
+    const md = $('#modal'); if (md.classList.contains('hidden')) return;
+    if (e.key === 'Escape' && !md._locked) closeModal();
+    else if (e.key === 'Tab') {   // mantém o foco dentro do modal
+      const f = $$('a[href], button:not([disabled]), input:not([disabled]):not([tabindex="-1"]), select, textarea, [tabindex]:not([tabindex="-1"])', $('#modal-card')).filter(x => x.offsetParent !== null);
+      if (!f.length) return; const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); }
+      else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
+    }
+  });
 
   boot();
 }

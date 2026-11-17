@@ -16,6 +16,12 @@ const enc = new TextEncoder();
 export class AppError extends Error { constructor(status, message) { super(message); this.status = status; } }
 
 const now = () => new Date().toISOString();
+// Dia do uso do Claude no horário de São Paulo (o limite diário vira à meia-noite das famílias, não às 21 h)
+const SP_DAY = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit' });
+const usageDay = () => { try { return SP_DAY.format(new Date()); } catch { return new Date(Date.now() - 3 * 3600000).toISOString().slice(0, 10); } };
+const AI_INFLIGHT_MAX = 24;      // chamadas ao Claude em andamento ao mesmo tempo por criança
+const AI_INFLIGHT_USD = 0.005;   // reserva por chamada em andamento, somada ao gasto já gravado
+const AI_INFLIGHT_TTL = 5 * 60000;
 const addMs = ms => new Date(Date.now() + ms).toISOString();
 const b64url = bytes => btoa(String.fromCharCode(...bytes)).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 const randomToken = (n = 32) => b64url(crypto.getRandomValues(new Uint8Array(n)));
@@ -126,11 +132,14 @@ export class Directory extends DurableObject {
     if (!d.consent) throw new AppError(400, 'You need to accept the privacy notice.');
     const familyId = newId(), parentId = newId(), childId = newId();
     const salt = newSalt(), pinSalt = newSalt();
+    const passHash = await pbkdf2(String(d.password), salt, PBKDF2_ITER), pinHash = await pbkdf2(String(d.childPin), pinSalt, PIN_ITER);
+    // de novo depois dos awaits: dois pedidos ao mesmo tempo não criam dois administradores
+    if (this.status().accounts > 0) throw new AppError(409, 'The app has already been set up.');
     this.sql.exec('INSERT INTO families (id, name, created) VALUES (?, ?, ?)', familyId, cleanText(d.familyName) || 'My family', now());
     this.sql.exec('INSERT INTO parents (id, family_id, name, email, pass_hash, pass_salt, role, consent_at, consent_version, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-      parentId, familyId, cleanText(d.parentName) || 'Parent', email, await pbkdf2(d.password, salt, PBKDF2_ITER), salt, 'admin', now(), 'v1', now());
+      parentId, familyId, cleanText(d.parentName) || 'Parent', email, passHash, salt, 'admin', now(), 'v1', now());
     this.sql.exec('INSERT INTO children (id, family_id, name, year, avatar, pin_hash, pin_salt, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
-      childId, familyId, cleanText(d.childName, 30) || 'Child', YEARS.includes(d.childYear) ? d.childYear : 'Y5', AVATARS.includes(d.childAvatar) ? d.childAvatar : '🦉', await pbkdf2(String(d.childPin), pinSalt, PIN_ITER), pinSalt, now());
+      childId, familyId, cleanText(d.childName, 30) || 'Child', YEARS.includes(d.childYear) ? d.childYear : 'Y5', AVATARS.includes(d.childAvatar) ? d.childAvatar : '🦉', pinHash, pinSalt, now());
     return { token: await this.newSession(parentId, familyId), childId };
   }
 
@@ -139,9 +148,10 @@ export class Directory extends DurableObject {
     email = cleanEmail(email);
     const k = 'login:' + email;
     if (this.throttled(k)) throw new AppError(429, 'Too many attempts. Wait 15 minutes and try again.');
+    this.fail(k, 5, 15);   // conta a tentativa ANTES do hash (assíncrono): tentativas em paralelo não escapam do bloqueio
     const p = this.one('SELECT * FROM parents WHERE email = ?', email);
     const hash = p ? await pbkdf2(String(password || ''), p.pass_salt, PBKDF2_ITER) : await pbkdf2('x', newSalt(), PBKDF2_ITER);
-    if (!p || !sameString(hash, p.pass_hash)) { this.fail(k, 5, 15); throw new AppError(401, 'Incorrect e-mail or password.'); }
+    if (!p || !sameString(hash, p.pass_hash)) { throw new AppError(401, 'Incorrect e-mail or password.'); }
     const fam = this.one('SELECT status FROM families WHERE id = ?', p.family_id);
     if (fam && fam.status !== 'active' && p.role !== 'admin') throw new AppError(403, 'This account is paused. Please contact the administrator.');
     this.clearFail(k);
@@ -150,17 +160,22 @@ export class Directory extends DurableObject {
   async verifyPassword(parentId, password, token) {
     const k = 'verify:' + parentId;
     if (this.throttled(k)) throw new AppError(429, 'Too many attempts. Wait 15 minutes.');
+    this.fail(k, 5, 15);   // conta antes do hash (ver login)
     const p = this.one('SELECT pass_hash, pass_salt FROM parents WHERE id = ?', parentId);
     const ok = !!p && sameString(await pbkdf2(String(password || ''), p.pass_salt, PBKDF2_ITER), p.pass_hash);
-    if (!ok) this.fail(k, 5, 15); else this.clearFail(k);
+    if (ok) this.clearFail(k);
     if (ok && token) this.sql.exec('UPDATE sessions SET unlocked_until = ? WHERE token_hash = ?', addMs(15 * 60000), await sha256Hex(token));
     return { ok };
   }
-  async changePassword(parentId, oldPw, newPw) {
+  async changePassword(parentId, oldPw, newPw, keepToken) {
     if (!(await this.verifyPassword(parentId, oldPw)).ok) throw new AppError(401, 'Current password is incorrect.');
     checkPassword(newPw);
     const salt = newSalt();
-    this.sql.exec('UPDATE parents SET pass_hash = ?, pass_salt = ? WHERE id = ?', await pbkdf2(newPw, salt, PBKDF2_ITER), salt, parentId);
+    const hash = await pbkdf2(String(newPw), salt, PBKDF2_ITER);
+    const keep = keepToken ? await sha256Hex(keepToken) : '';
+    this.sql.exec('UPDATE parents SET pass_hash = ?, pass_salt = ? WHERE id = ?', hash, salt, parentId);
+    // senha nova: as outras sessões deste responsável (outros aparelhos) saem; a atual continua
+    this.sql.exec('DELETE FROM sessions WHERE parent_id = ? AND token_hash != ?', parentId, keep);
     return { ok: true };
   }
 
@@ -189,7 +204,10 @@ export class Directory extends DurableObject {
     if (!inv) throw new AppError(410, 'This link has expired or has already been used. Ask for a new one.');
     checkPassword(d.password);
     const salt = newSalt();
-    const hash = await pbkdf2(d.password, salt, PBKDF2_ITER);
+    const hash = await pbkdf2(String(d.password), salt, PBKDF2_ITER);
+    // de novo depois do await: dois pedidos ao mesmo tempo não usam o mesmo convite duas vezes
+    const fresh = this.one('SELECT used_at, expires FROM invites WHERE token_hash = ?', inv.token_hash);
+    if (!fresh || fresh.used_at || fresh.expires < now()) throw new AppError(410, 'This link has expired or has already been used. Ask for a new one.');
     let parentId, familyId;
     if (inv.kind === 'reset') {
       parentId = inv.parent_id;
@@ -225,11 +243,13 @@ export class Directory extends DurableObject {
     return c;
   }
   async addChild(familyId, d) {
-    if (this.one('SELECT COUNT(*) AS n FROM children WHERE family_id = ?', familyId).n >= 8) throw new AppError(400, 'Limit of 8 children per family.');
     checkPin(d.pin);
     const id = newId(), salt = newSalt();
+    const pinHash = await pbkdf2(String(d.pin), salt, PIN_ITER);
+    // conferido depois do await: pedidos em paralelo não passam do limite
+    if (this.one('SELECT COUNT(*) AS n FROM children WHERE family_id = ?', familyId).n >= 8) throw new AppError(400, 'Limit of 8 children per family.');
     this.sql.exec('INSERT INTO children (id, family_id, name, year, avatar, pin_hash, pin_salt, created) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
-      id, familyId, cleanText(d.name, 30) || 'Child', YEARS.includes(d.year) ? d.year : 'Y5', AVATARS.includes(d.avatar) ? d.avatar : '🦉', await pbkdf2(String(d.pin), salt, PIN_ITER), salt, now());
+      id, familyId, cleanText(d.name, 30) || 'Child', YEARS.includes(d.year) ? d.year : 'Y5', AVATARS.includes(d.avatar) ? d.avatar : '🦉', pinHash, salt, now());
     return { id };
   }
   async updateChild(familyId, childId, d) {
@@ -249,8 +269,9 @@ export class Directory extends DurableObject {
     const c = this.ownChild(familyId, childId);
     const k = 'pin:' + childId;
     if (this.throttled(k)) throw new AppError(429, 'Too many attempts. Wait 10 minutes or ask a grown-up for help.');
+    this.fail(k, 8, 10);   // conta antes do hash (ver login)
     const ok = sameString(await pbkdf2(String(pin || ''), c.pin_salt, PIN_ITER), c.pin_hash);
-    if (!ok) { this.fail(k, 8, 10); throw new AppError(401, 'Incorrect PIN.'); }
+    if (!ok) throw new AppError(401, 'Incorrect PIN.');
     this.clearFail(k);
     return { ok: true };
   }
@@ -280,23 +301,39 @@ export class Directory extends DurableObject {
   familyParents(familyId) { return this.all('SELECT id, name, email, role, last_login FROM parents WHERE family_id = ? ORDER BY created', familyId); }
 
   /* ---------- uso do Claude (controle de custo) ---------- */
-  aiCheck(familyId, childId, childCapUsd, monthCapUsd) {
-    const day = now().slice(0, 10), month = day.slice(0, 7);
+  // Chamadas em andamento (só em memória: se o objeto reiniciar, a conta recomeça, o que é seguro).
+  // Sem isso, dezenas de pedidos em paralelo passariam pelo limite antes de qualquer gasto ser gravado.
+  inflight() {
+    if (!this._inflight) this._inflight = new Map();
+    const old = Date.now() - AI_INFLIGHT_TTL;
+    for (const [t, v] of this._inflight) if (v.at < old) this._inflight.delete(t);
+    return this._inflight;
+  }
+  aiCheck(familyId, childId, childCapUsd, monthCapUsd, reserve = false) {
+    const day = usageDay(), month = day.slice(0, 7);
     const fam = this.one('SELECT child_daily_usd FROM families WHERE id = ?', familyId);
     const cap = fam && fam.child_daily_usd != null ? fam.child_daily_usd : childCapUsd;
+    const pend = this.inflight();
+    const mine = [...pend.values()].filter(v => v.child === childId).length;
     const today = this.one('SELECT usd FROM usage WHERE day = ? AND child_id = ?', day, childId);
-    if (today && today.usd >= cap) return { ok: false, why: 'child' };
+    if ((today ? today.usd : 0) + mine * AI_INFLIGHT_USD >= cap) return { ok: false, why: 'child' };
     const m = this.one('SELECT COALESCE(SUM(usd), 0) AS s FROM usage WHERE day LIKE ?', month + '%');
-    if (m.s >= monthCapUsd) return { ok: false, why: 'month' };
-    return { ok: true };
+    if (m.s + pend.size * AI_INFLIGHT_USD >= monthCapUsd) return { ok: false, why: 'month' };
+    if (!reserve) return { ok: true };
+    if (mine >= AI_INFLIGHT_MAX) return { ok: false, why: 'busy' };
+    const ticket = randomToken(12);
+    pend.set(ticket, { child: childId, at: Date.now() });
+    return { ok: true, ticket };
   }
-  aiRecord(familyId, childId, usd) {
-    const day = now().slice(0, 10);
+  aiRelease(ticket) { if (ticket) this.inflight().delete(String(ticket)); return { ok: true }; }
+  aiRecord(familyId, childId, usd, ticket) {
+    if (ticket) this.inflight().delete(String(ticket));
+    const day = usageDay();
     this.sql.exec(`INSERT INTO usage (day, child_id, family_id, calls, usd) VALUES (?, ?, ?, 1, ?)
       ON CONFLICT(day, child_id) DO UPDATE SET calls = calls + 1, usd = usd + excluded.usd`, day, childId, familyId, usd);
   }
   familyUsage(familyId) {
-    const month = now().slice(0, 7), day = now().slice(0, 10);
+    const day = usageDay(), month = day.slice(0, 7);
     return this.all(`SELECT c.id, c.name, COALESCE(SUM(CASE WHEN u.day = ? THEN u.usd END), 0) AS today_usd, COALESCE(SUM(u.usd), 0) AS month_usd, COALESCE(SUM(u.calls), 0) AS month_calls
       FROM children c LEFT JOIN usage u ON u.child_id = c.id AND u.day LIKE ? WHERE c.family_id = ? GROUP BY c.id ORDER BY c.created`, day, month + '%', familyId);
   }
@@ -310,7 +347,7 @@ export class Directory extends DurableObject {
 
   /* ---------- administrador ---------- */
   adminOverview() {
-    const month = now().slice(0, 7), day = now().slice(0, 10);
+    const day = usageDay(), month = day.slice(0, 7);
     const families = this.all('SELECT * FROM families ORDER BY created').map(f => ({
       ...f,
       parents: this.familyParents(f.id),
