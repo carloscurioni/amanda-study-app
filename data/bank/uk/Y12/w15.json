@@ -1,0 +1,1042 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y12",
+ "academic_week": 15,
+ "subjects": {
+  "bio-hl": {
+   "topic": "Review: molecules and cells",
+   "questions": [
+    {
+     "id": "r5lyhav1mtc3z9",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which observation is best explained by cohesion between water molecules?",
+     "options": [
+      "Salt dissolves easily in water",
+      "Water has a low viscosity",
+      "Water can be pulled up xylem vessels under tension",
+      "Ice floats on liquid water"
+     ],
+     "answer": "Water can be pulled up xylem vessels under tension",
+     "accept": [],
+     "hint": "Cohesion is attraction between molecules of the same substance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m7gwj31t2f4kd",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which polysaccharide has β-1,4 glycosidic bonds that produce straight chains linked by hydrogen bonds?",
+     "options": [
+      "amylose",
+      "amylopectin",
+      "glycogen",
+      "cellulose"
+     ],
+     "answer": "cellulose",
+     "accept": [],
+     "hint": "It is a structural polysaccharide in plant cell walls.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2yrkw019pfe2o",
+     "subject": "bio",
+     "type": "short",
+     "q": "Which level of protein structure is stabilised by interactions between R-groups, such as disulfide bridges and ionic bonds?",
+     "options": [],
+     "answer": "tertiary",
+     "accept": [
+      "tertiary structure",
+      "the tertiary structure"
+     ],
+     "hint": "It describes the overall three-dimensional folding of a single polypeptide.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riczp9dw8cfd6",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which statement describes a saturated fatty acid?",
+     "options": [
+      "It always has a cis double bond",
+      "It is always liquid at room temperature",
+      "It has no carbon–carbon double bonds",
+      "It has one carbon–carbon double bond"
+     ],
+     "answer": "It has no carbon–carbon double bonds",
+     "accept": [],
+     "hint": "Saturated means every carbon holds as many hydrogens as possible.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnvhl7y1k6udab",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What does it mean that the two strands of DNA are antiparallel?",
+     "options": [
+      "They run in opposite directions, one 5′→3′ and the other 3′→5′",
+      "They contain different sugars",
+      "They run in the same direction",
+      "They never form hydrogen bonds"
+     ],
+     "answer": "They run in opposite directions, one 5′→3′ and the other 3′→5′",
+     "accept": [],
+     "hint": "Think about the orientation of the sugar-phosphate backbones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrbkosky3n5ov",
+     "subject": "bio",
+     "type": "num",
+     "q": "An enzyme-catalysed reaction releases 12 cm³ of oxygen in 4 minutes. Calculate the mean rate in cm³ min⁻¹.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Rate = amount of product ÷ time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cbmysu9rzsxi",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What is the effect of a non-competitive inhibitor on an enzyme-catalysed reaction?",
+     "options": [
+      "Its effect disappears at high substrate concentration",
+      "It lowers Vmax, and increasing substrate concentration cannot overcome it",
+      "It raises Vmax",
+      "It has no effect on Vmax"
+     ],
+     "answer": "It lowers Vmax, and increasing substrate concentration cannot overcome it",
+     "accept": [],
+     "hint": "It binds away from the active site and changes its shape.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ral72wz3jk7y0",
+     "subject": "bio",
+     "type": "mc",
+     "q": "In end-product inhibition of a metabolic pathway, where does the end product bind?",
+     "options": [
+      "to the DNA coding for the enzyme",
+      "to the active site of the last enzyme in the pathway",
+      "to the substrate of the first reaction",
+      "to an allosteric site on an enzyme early in the pathway"
+     ],
+     "answer": "to an allosteric site on an enzyme early in the pathway",
+     "accept": [],
+     "hint": "The aim is to stop the whole pathway at its start.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r517sg1mmbs7u",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the type of nuclear division that produces four genetically different haploid nuclei.",
+     "options": [],
+     "answer": "meiosis",
+     "accept": [],
+     "hint": "It involves two divisions and crossing over.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsq82grd5527a",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which observation supports the endosymbiotic theory for the origin of mitochondria?",
+     "options": [
+      "Mitochondria have their own 70S ribosomes and circular DNA",
+      "Mitochondria are produced by the Golgi apparatus",
+      "Mitochondria have a cell wall made of cellulose",
+      "Mitochondria are found in all prokaryotes"
+     ],
+     "answer": "Mitochondria have their own 70S ribosomes and circular DNA",
+     "accept": [],
+     "hint": "Compare mitochondria with bacteria.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5hnovrbe81un",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Experiments with sterilised broth in swan-necked flasks provided evidence against which idea?",
+     "options": [
+      "spontaneous generation of life",
+      "natural selection",
+      "endosymbiosis",
+      "cell theory"
+     ],
+     "answer": "spontaneous generation of life",
+     "accept": [],
+     "hint": "Microorganisms only appeared when the neck was broken.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c784o61indmdq",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which molecule is thought to have been both a store of genetic information and a catalyst in the earliest cells?",
+     "options": [
+      "RNA",
+      "protein",
+      "cellulose",
+      "DNA"
+     ],
+     "answer": "RNA",
+     "accept": [],
+     "hint": "Some forms of this molecule act as ribozymes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15z2cwb1001sw3",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the enzyme that retroviruses use to make DNA from an RNA template.",
+     "options": [],
+     "answer": "reverse transcriptase",
+     "accept": [
+      "reverse-transcriptase"
+     ],
+     "hint": "Its name describes the opposite of normal transcription.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1teiuu5jbzxaa",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which feature is shared by all viruses?",
+     "options": [
+      "genetic material enclosed in a protein capsid",
+      "a plasma membrane",
+      "ribosomes",
+      "cytoplasm"
+     ],
+     "answer": "genetic material enclosed in a protein capsid",
+     "accept": [],
+     "hint": "Viruses lack the structures needed for their own metabolism.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh4a1loaprn5e",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What happens at the end of the lytic cycle of a bacteriophage?",
+     "options": [
+      "The host cell bursts and releases new virus particles",
+      "The host cell divides normally for many generations",
+      "Viral DNA integrates into the host chromosome",
+      "The virus forms a spore"
+     ],
+     "answer": "The host cell bursts and releases new virus particles",
+     "accept": [],
+     "hint": "Lysis means splitting.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxnuc8fjw14c",
+     "subject": "bio",
+     "type": "open",
+     "q": "Discuss whether viruses should be classified as living organisms.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare viruses with the functions of life and with cell theory, then reach a conclusion.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bio-sl": {
+   "topic": "Review: molecules and cells",
+   "questions": [
+    {
+     "id": "r5d7kdd1uz6ngf",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which type of bond forms between neighbouring water molecules?",
+     "options": [
+      "peptide bond",
+      "ionic bond",
+      "hydrogen bond",
+      "covalent bond"
+     ],
+     "answer": "hydrogen bond",
+     "accept": [],
+     "hint": "Think of the attraction between the slightly positive H of one molecule and the slightly negative O of another.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1exk7v5ogexfk",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the monomer that is joined to form starch and glycogen.",
+     "options": [],
+     "answer": "alpha-glucose",
+     "accept": [
+      "α-glucose",
+      "glucose",
+      "alpha glucose",
+      "a-glucose"
+     ],
+     "hint": "It is a hexose monosaccharide.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13z3mcl2u4ov6",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which type of reaction joins two monosaccharides to form a disaccharide?",
+     "options": [
+      "oxidation",
+      "denaturation",
+      "condensation",
+      "hydrolysis"
+     ],
+     "answer": "condensation",
+     "accept": [],
+     "hint": "A water molecule is released.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xl29511u9z73u",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Why do phospholipids form a bilayer in water?",
+     "options": [
+      "They are entirely hydrophobic",
+      "They are entirely hydrophilic",
+      "They form peptide bonds with water",
+      "They have hydrophilic phosphate heads and hydrophobic hydrocarbon tails"
+     ],
+     "answer": "They have hydrophilic phosphate heads and hydrophobic hydrocarbon tails",
+     "accept": [],
+     "hint": "Consider which part of the molecule is attracted to water.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qvd82yqxersh",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the bond that links amino acids in a polypeptide.",
+     "options": [],
+     "answer": "peptide bond",
+     "accept": [
+      "peptide",
+      "a peptide bond",
+      "peptide bonds"
+     ],
+     "hint": "It forms between the amine group of one amino acid and the carboxyl group of another.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4ycdquzkbetv",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which nitrogenous base is found in RNA but not in DNA?",
+     "options": [
+      "thymine",
+      "adenine",
+      "guanine",
+      "uracil"
+     ],
+     "answer": "uracil",
+     "accept": [],
+     "hint": "In RNA it pairs with adenine.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r28hrqq145m7hb",
+     "subject": "bio",
+     "type": "num",
+     "q": "A DNA sample contains 22% adenine. What percentage of its bases are cytosine?",
+     "options": [],
+     "answer": "28",
+     "accept": [],
+     "hint": "Use complementary base pairing: A = T and C = G, and all bases add up to 100%.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r116jct8jrb4nz",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Explain what happens to an enzyme at temperatures well above its optimum.",
+     "options": [
+      "The enzyme is used up in the reaction",
+      "The substrate becomes denatured but the enzyme is unchanged",
+      "Bonds holding its shape break, the active site changes and the substrate can no longer bind",
+      "Molecules move more slowly and collide less"
+     ],
+     "answer": "Bonds holding its shape break, the active site changes and the substrate can no longer bind",
+     "accept": [],
+     "hint": "Think about the tertiary structure of the protein.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ahohfw4utjwv",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which statement describes competitive inhibition?",
+     "options": [
+      "The inhibitor permanently destroys the enzyme’s primary structure",
+      "The inhibitor increases the rate of the reaction",
+      "The inhibitor binds to a site away from the active site",
+      "The inhibitor has a similar shape to the substrate and binds to the active site"
+     ],
+     "answer": "The inhibitor has a similar shape to the substrate and binds to the active site",
+     "accept": [],
+     "hint": "Competition is for the same place on the enzyme.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16rume13oucw",
+     "subject": "bio",
+     "type": "num",
+     "q": "A drawing of a mitochondrion is 30 mm long. The actual length is 15 μm. Calculate the magnification.",
+     "options": [],
+     "answer": "2000",
+     "accept": [],
+     "hint": "Convert both lengths to the same unit, then use image size ÷ actual size.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rformp3wkwuz",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which structure is found in prokaryotic cells?",
+     "options": [
+      "a nucleus with a nuclear membrane",
+      "rough endoplasmic reticulum",
+      "mitochondria",
+      "70S ribosomes"
+     ],
+     "answer": "70S ribosomes",
+     "accept": [],
+     "hint": "Prokaryotes lack membrane-bound organelles.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s448oy1uw1mb",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the passive movement of water across a partially permeable membrane towards a higher solute concentration.",
+     "options": [],
+     "answer": "osmosis",
+     "accept": [],
+     "hint": "It does not require energy from ATP.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riurxe71cq9p35",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which type of membrane transport requires energy from ATP?",
+     "options": [
+      "active transport using pump proteins",
+      "osmosis",
+      "facilitated diffusion through channel proteins",
+      "simple diffusion"
+     ],
+     "answer": "active transport using pump proteins",
+     "accept": [],
+     "hint": "Look for movement against a concentration gradient.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkot401o80s01",
+     "subject": "bio",
+     "type": "mc",
+     "q": "In which phase of mitosis do sister chromatids separate and move to opposite poles?",
+     "options": [
+      "telophase",
+      "anaphase",
+      "prophase",
+      "metaphase"
+     ],
+     "answer": "anaphase",
+     "accept": [],
+     "hint": "It comes straight after the chromosomes line up at the equator.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19zg97815yfz6j",
+     "subject": "bio",
+     "type": "num",
+     "q": "In a root tip sample of 400 cells, 32 are in mitosis. Calculate the mitotic index as a percentage.",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "Divide the cells in mitosis by the total number of cells.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wenyqxar9cmf",
+     "subject": "bio",
+     "type": "open",
+     "q": "Explain how the properties of water allow sweating to cool the body.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about hydrogen bonds and the energy needed to change state.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bus-hl": {
+   "topic": "Term 1 review: introduction to business and human resources",
+   "questions": [
+    {
+     "id": "r189tlt1jn0r42",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which business activity belongs to the tertiary sector?",
+     "options": [
+      "coal mining",
+      "steel production",
+      "retail banking",
+      "forestry"
+     ],
+     "answer": "retail banking",
+     "accept": [],
+     "hint": "This sector provides services.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdpkkv8bxipmv",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which activity is the best example of the quaternary sector?",
+     "options": [
+      "research and development",
+      "restaurant service",
+      "furniture manufacturing",
+      "oil extraction"
+     ],
+     "answer": "research and development",
+     "accept": [],
+     "hint": "This sector is knowledge-based.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n38vq01pjaxkc",
+     "subject": "bus",
+     "type": "mc",
+     "q": "A new data protection law forces an online retailer to change how it stores customer information. In a STEEPLE analysis this is a:",
+     "options": [
+      "social factor",
+      "ecological factor",
+      "technological factor",
+      "legal factor"
+     ],
+     "answer": "legal factor",
+     "accept": [],
+     "hint": "Ask what kind of external change caused it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r114zyix16kz1q2",
+     "subject": "bus",
+     "type": "mc",
+     "q": "In a SWOT analysis, a large competitor opening nearby would be classified as:",
+     "options": [
+      "a threat",
+      "an opportunity",
+      "a strength",
+      "a weakness"
+     ],
+     "answer": "a threat",
+     "accept": [],
+     "hint": "It is external and potentially harmful.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbu4lmm80ngfg",
+     "subject": "bus",
+     "type": "short",
+     "q": "Which Ansoff strategy involves selling more of existing products in existing markets?",
+     "options": [],
+     "answer": "market penetration",
+     "accept": [
+      "market penetration strategy"
+     ],
+     "hint": "It is the lowest-risk quadrant.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp7tjcg1jqd4vm",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which is a typical example of stakeholder conflict?",
+     "options": [
+      "The government collects taxes",
+      "Suppliers want to be paid on time",
+      "Shareholders want higher dividends while employees want higher wages",
+      "Customers and shareholders both want the firm to survive"
+     ],
+     "answer": "Shareholders want higher dividends while employees want higher wages",
+     "accept": [],
+     "hint": "Look for two groups whose aims compete for the same resources.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u4zvthxz0i0p",
+     "subject": "bus",
+     "type": "mc",
+     "q": "A supermarket chain gets lower unit costs by ordering in very large quantities. This is an example of:",
+     "options": [
+      "purchasing economies of scale",
+      "technical diseconomies",
+      "diseconomies of scale",
+      "external economies of scale"
+     ],
+     "answer": "purchasing economies of scale",
+     "accept": [],
+     "hint": "Think about bulk buying.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rixjk61108yt67",
+     "subject": "bus",
+     "type": "num",
+     "q": "A firm had an average workforce of 70 and 14 employees left during the year. Calculate the labour turnover rate (%).",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Leavers ÷ average workforce × 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmd18hv1uwfxy",
+     "subject": "bus",
+     "type": "mc",
+     "q": "What is delayering?",
+     "options": [
+      "Adding new layers of middle management",
+      "Moving production abroad",
+      "Removing one or more levels of hierarchy from an organisation",
+      "Reducing the number of products sold"
+     ],
+     "answer": "Removing one or more levels of hierarchy from an organisation",
+     "accept": [],
+     "hint": "Think of the shape of the organisation chart.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10fx2gz1dphhc5",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which leadership style involves the leader making decisions without consulting employees?",
+     "options": [
+      "laissez-faire",
+      "paternalistic",
+      "democratic",
+      "autocratic"
+     ],
+     "answer": "autocratic",
+     "accept": [],
+     "hint": "Power is concentrated in one person.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i76qqi1p1tq0k",
+     "subject": "bus",
+     "type": "mc",
+     "q": "When two firms with very different values and ways of working merge, the resulting problems are known as:",
+     "options": [
+      "workforce planning",
+      "delegation",
+      "job enlargement",
+      "culture clash"
+     ],
+     "answer": "culture clash",
+     "accept": [],
+     "hint": "It relates to organisational culture.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd3jrwq1jzqlo3",
+     "subject": "bus",
+     "type": "short",
+     "q": "Name the form of industrial action in which employees collectively stop working.",
+     "options": [],
+     "answer": "strike",
+     "accept": [
+      "a strike",
+      "strike action",
+      "strikes"
+     ],
+     "hint": "It is the most extreme form of collective action.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtbqswkgryxys",
+     "subject": "bus",
+     "type": "mc",
+     "q": "What is meant by a “work-to-rule”?",
+     "options": [
+      "Employees work extra unpaid hours",
+      "Managers lock employees out of the workplace",
+      "Employees refuse all work",
+      "Employees do only the minimum required by their contracts"
+     ],
+     "answer": "Employees do only the minimum required by their contracts",
+     "accept": [],
+     "hint": "Rules are followed exactly, and nothing more.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rawhca1uxh72h",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which is an example of a non-financial reward?",
+     "options": [
+      "profit-related pay",
+      "a performance bonus",
+      "job enrichment",
+      "commission"
+     ],
+     "answer": "job enrichment",
+     "accept": [],
+     "hint": "It does not involve money.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ruadrarqi5uxk",
+     "subject": "bus",
+     "type": "mc",
+     "q": "What does the IB command term “discuss” require?",
+     "options": [
+      "The precise meaning of a term",
+      "A numerical answer showing working",
+      "A considered and balanced review including a range of arguments, ending with a conclusion",
+      "A brief account without reasons"
+     ],
+     "answer": "A considered and balanced review including a range of arguments, ending with a conclusion",
+     "accept": [],
+     "hint": "It is typical of 10-mark questions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtngqmrx6kllh",
+     "subject": "bus",
+     "type": "open",
+     "q": "Explain how a culture clash after a merger could affect employee motivation. [4]",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider values, ways of working and how staff feel about change.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bus-sl": {
+   "topic": "Term 1 review: introduction to business and human resources",
+   "questions": [
+    {
+     "id": "r8qesv87ark59",
+     "subject": "bus",
+     "type": "mc",
+     "q": "In which sector of the economy does manufacturing take place?",
+     "options": [
+      "tertiary sector",
+      "quaternary sector",
+      "secondary sector",
+      "primary sector"
+     ],
+     "answer": "secondary sector",
+     "accept": [],
+     "hint": "It involves turning raw materials into finished goods.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13zirbd4b8bw4",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which business activity belongs to the primary sector?",
+     "options": [
+      "software consulting",
+      "fishing",
+      "car assembly",
+      "hairdressing"
+     ],
+     "answer": "fishing",
+     "accept": [],
+     "hint": "This sector extracts natural resources.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ir53hwfmkdvy",
+     "subject": "bus",
+     "type": "short",
+     "q": "In a SWOT analysis, what does the letter T stand for?",
+     "options": [],
+     "answer": "Threats",
+     "accept": [
+      "threat",
+      "threats"
+     ],
+     "hint": "It is an external factor that could harm the business.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ji1bjpx3hor5",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which elements of a SWOT analysis are internal to the business?",
+     "options": [
+      "Strengths and weaknesses",
+      "Opportunities and threats",
+      "Strengths and opportunities",
+      "Weaknesses and threats"
+     ],
+     "answer": "Strengths and weaknesses",
+     "accept": [],
+     "hint": "Internal factors are under the firm’s control.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e9rr311cuqfxj",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which of the following is NOT one of the factors in a STEEPLE analysis?",
+     "options": [
+      "Competitive",
+      "Technological",
+      "Legal",
+      "Ethical"
+     ],
+     "answer": "Competitive",
+     "accept": [],
+     "hint": "List the seven letters and what each represents.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ezre2z18ftinm",
+     "subject": "bus",
+     "type": "mc",
+     "q": "According to the Ansoff matrix, selling existing products in new markets is called:",
+     "options": [
+      "product development",
+      "diversification",
+      "market penetration",
+      "market development"
+     ],
+     "answer": "market development",
+     "accept": [],
+     "hint": "The product stays the same; the customers change.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1avmosh122h9nx",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which Ansoff strategy usually carries the highest risk?",
+     "options": [
+      "market development",
+      "diversification",
+      "market penetration",
+      "product development"
+     ],
+     "answer": "diversification",
+     "accept": [],
+     "hint": "It combines two unknowns.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qc9hcgl2b89d",
+     "subject": "bus",
+     "type": "short",
+     "q": "Which Ansoff strategy involves launching new products in existing markets?",
+     "options": [],
+     "answer": "product development",
+     "accept": [
+      "product development strategy"
+     ],
+     "hint": "The customers stay the same.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rfofmb1k8dk5d",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which of these is an internal stakeholder?",
+     "options": [
+      "suppliers",
+      "the government",
+      "employees",
+      "the local community"
+     ],
+     "answer": "employees",
+     "accept": [],
+     "hint": "Internal stakeholders are members of the organisation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wuw72lr43i70",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which feature describes a privately held company?",
+     "options": [
+      "Owners have unlimited liability",
+      "It is owned by the government",
+      "Owners have limited liability and shares are not sold to the general public",
+      "Shares are traded on the stock exchange"
+     ],
+     "answer": "Owners have limited liability and shares are not sold to the general public",
+     "accept": [],
+     "hint": "Think about who can buy the shares.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12vdsh6x2sn07",
+     "subject": "bus",
+     "type": "mc",
+     "q": "What is the main aim of a social enterprise?",
+     "options": [
+      "To be run by the government",
+      "To achieve social or environmental goals, reinvesting most of its surplus",
+      "To maximise dividends for shareholders",
+      "To avoid paying any tax"
+     ],
+     "answer": "To achieve social or environmental goals, reinvesting most of its surplus",
+     "accept": [],
+     "hint": "Profit is a means, not the end.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlp8uelgvai5x",
+     "subject": "bus",
+     "type": "mc",
+     "q": "In motivation theory, which of these is a hygiene factor rather than a motivator?",
+     "options": [
+      "responsibility",
+      "achievement",
+      "working conditions",
+      "recognition"
+     ],
+     "answer": "working conditions",
+     "accept": [],
+     "hint": "Hygiene factors prevent dissatisfaction but do not motivate on their own.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rscpmvg11f5xf6",
+     "subject": "bus",
+     "type": "mc",
+     "q": "What is the likely effect of widening managers’ spans of control?",
+     "options": [
+      "A taller structure with more levels",
+      "Slower communication",
+      "More managers are needed",
+      "A flatter organisational structure with fewer levels of hierarchy"
+     ],
+     "answer": "A flatter organisational structure with fewer levels of hierarchy",
+     "accept": [],
+     "hint": "Each manager now supervises more people.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16rey0hnqydz1",
+     "subject": "bus",
+     "type": "num",
+     "q": "A business employed an average of 80 workers last year and 12 left. Calculate the labour turnover rate (%).",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Divide the number who left by the average number employed, then multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ygcmg6sebr4j",
+     "subject": "bus",
+     "type": "mc",
+     "q": "What does the IB command term “define” require?",
+     "options": [
+      "Break down to bring out the essential elements",
+      "Give the precise meaning of a word, phrase or concept",
+      "Give a balanced review with a conclusion",
+      "Give a detailed account including reasons"
+     ],
+     "answer": "Give the precise meaning of a word, phrase or concept",
+     "accept": [],
+     "hint": "It is usually worth 2 marks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17fasjt13jixka",
+     "subject": "bus",
+     "type": "open",
+     "q": "Explain two advantages of a flat organisational structure for a small business. [4]",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about communication and the cost of management.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}

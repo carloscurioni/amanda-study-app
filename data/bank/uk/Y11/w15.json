@@ -5028,5 +5028,897 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Clube das Quatro Escolas",
+   "premise": "Três amigos do primeiro ano criam um clube de estudos antes do simulado e, a cada semana, vivem na prática uma escola literária: escrevem cantigas, encenam uma farsa, compõem um soneto e uma carta de viagem, revisando Trovadorismo, Humanismo, Classicismo e Quinhentismo.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A cantiga da janela",
+     "synopsis": "A professora Dora desafia o Clube das Quatro Escolas a escrever cantigas de amigo. Lívia, com saudade da irmã que viajou, escreve uma cantiga com paralelismo e refrão.",
+     "text": "Na sala de leitura, a professora Dora colou no quadro um cartaz escrito à mão: “Desafio da semana: escrevam como um trovador.” Lívia, Tomás e Rafa se entreolharam. Faltavam três semanas para o simulado, e os três tinham acabado de fundar o que chamavam, meio de brincadeira, de Clube das Quatro Escolas: Trovadorismo, Humanismo, Classicismo e Quinhentismo.\n— Escrever como trovador como? — perguntou Rafa, girando a caneta. — Com alaúde e tudo?\n— Quase — respondeu a professora. — Lembrem que as cantigas nasceram para ser cantadas. Texto e música andavam juntos. Quero uma cantiga de amigo até sexta.\nTomás franziu a testa.\n— De amigo é aquela em que o poeta fala como mulher, né?\n— Isso. O trovador era homem, mas o eu lírico é feminino. Uma moça que sofre pela ausência do amado e, muitas vezes, conversa com a mãe, com as amigas ou com a natureza.\nLívia ficou quieta o resto da aula. Naquela semana, a irmã mais velha dela, Bia, tinha viajado para estudar em outra cidade, e a casa parecia grande demais. À noite, olhando a rua molhada pela janela, ela pensou que talvez a saudade fosse a mesma em qualquer século. Pegou o caderno e começou:\n“Ai, chuva que cais na ribeira, / dize-me se vem a minha irmã. / E ela tarda, e eu à janela. // Ai, chuva que cais no caminho, / dize-me se volta a minha irmã. / E ela tarda, e eu à janela.”\nLeu em voz baixa e sorriu. Tinha feito de propósito: as estrofes repetiam a mesma ideia, trocando só algumas palavras, e o último verso voltava sempre igual.\nNa sexta, cada um leu sua cantiga. Rafa tinha escrito sobre um namorado que partira para o mar, bem ao estilo medieval, e Tomás confessou que só conseguira duas estrofes. Quando Lívia terminou, a sala ficou em silêncio.\n— Vocês perceberam o que ela usou? — perguntou a professora Dora.\n— Paralelismo — disse Tomás. — As estrofes andam em pares, quase iguais.\n— E o refrão — completou Rafa. — “E ela tarda, e eu à janela.”\n— Exato. E reparem: Lívia trocou o amado pela irmã. A cantiga de amigo tradicional fala de amor, mas o que move o poema dela é o mesmo sentimento: a espera e a saudade. Por isso a linguagem simples e a natureza como confidente funcionam tão bem.\n— E a cantiga de amor? — quis saber Rafa. — Qual é a diferença mesmo?\n— Na de amor, o eu lírico é masculino e se dirige a uma dama idealizada, a quem chama de “senhor”. Ele sofre a coita amorosa e se coloca como vassalo dela, servindo sem esperar nada em troca. O ambiente é a corte, não o campo.\nNo caminho de volta, Lívia mandou para a irmã uma foto do caderno. A resposta chegou minutos depois: “Chego no feriado. Pode guardar a janela pra mim.”\nLívia guardou o caderno na mochila e pensou que, no fim das contas, a cantiga tinha funcionado: alguém do outro lado da chuva tinha respondido.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o desafio da semana proposto pela professora Dora?",
+       "options": [
+        "Escrever uma carta de viagem",
+        "Escrever uma cantiga de amigo",
+        "Encenar uma farsa",
+        "Escrever um soneto"
+       ],
+       "answer": "Escrever uma cantiga de amigo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da irmã que viajou para estudar em outra cidade?",
+       "options": [],
+       "answer": "Bia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, como é o eu lírico da cantiga de amigo?",
+       "options": [
+        "Infantil",
+        "Coletivo",
+        "Masculino",
+        "Feminino"
+       ],
+       "answer": "Feminino",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual verso funciona como refrão na cantiga de Lívia?",
+       "options": [
+        "“Ai, chuva que cais no caminho,”",
+        "“Ai, chuva que cais na ribeira,”",
+        "“dize-me se vem a minha irmã.”",
+        "“E ela tarda, e eu à janela.”"
+       ],
+       "answer": "“E ela tarda, e eu à janela.”",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que recurso Tomás identifica nas estrofes de Lívia?",
+       "options": [
+        "Metonímia",
+        "Hipérbole",
+        "Paralelismo",
+        "Antítese"
+       ],
+       "answer": "Paralelismo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como a professora descreve a relação do eu lírico com a dama na cantiga de amor?",
+       "options": [
+        "Ele a trata como amiga de infância",
+        "Ele conversa com ela no campo",
+        "Ele se coloca como vassalo que a serve",
+        "Ele a critica com ironia"
+       ],
+       "answer": "Ele se coloca como vassalo que a serve",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a cantiga de Lívia funciona mesmo trocando o amado pela irmã?",
+       "options": [
+        "Porque usa versos decassílabos",
+        "Porque descreve a vida na corte",
+        "Porque critica a sociedade da época",
+        "Porque mantém a espera e a saudade, que movem a cantiga de amigo"
+       ],
+       "answer": "Porque mantém a espera e a saudade, que movem a cantiga de amigo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Lívia sente que a cantiga “tinha funcionado” quando a irmã responde?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Versos no mural",
+     "synopsis": "Versos anônimos sobre os pães de queijo aparecem no mural, seguidos de outro papel ofensivo. O clube discute escárnio e maldizer, e Rafa faz as pazes com o cantineiro.",
+     "text": "Na segunda-feira, o mural do corredor amanheceu com um papel novo, preso com fita crepe torta. Em letra de forma, dizia:\n“Há na cantina um pão tão discreto, / tão leve, tão fino, tão bem-educado, / que quando o procuro já foi retirado: / é pão de queijo de espírito, não de concreto.”\nOs alunos riam ao passar. Ninguém sabia quem tinha escrito, mas todo mundo entendia o recado: os pães de queijo andavam pequenos demais.\n— Isso é cantiga de escárnio pura — disse Tomás, tirando uma foto. — Critica sem dizer quem, com ironia e duplo sentido.\n— Ninguém é nomeado — concordou Lívia. — Mas qualquer um entende de quem se fala.\nRafa ficou estranhamente calado.\nNa terça, apareceu outro papel ao lado do primeiro. Esse não tinha graça nenhuma. Chamava o cantineiro pelo nome, seu Odair, e o xingava de mão de vaca, em versos tortos e agressivos. Antes do intervalo, a coordenação já tinha retirado o papel.\nNa reunião do clube, a professora Dora puxou o assunto.\n— Vocês viram os dois papéis. O que muda de um para o outro, do ponto de vista literário?\n— O segundo é de maldizer — respondeu Lívia. — A crítica é direta, o alvo é nomeado e a linguagem fica grosseira.\n— E o primeiro?\n— Escárnio — disse Tomás. — A crítica vem disfarçada. A graça está justamente no que fica subentendido.\n— Os trovadores faziam as duas coisas — explicou a professora. — As cantigas satíricas mostram outro lado da Idade Média: brigas, costumes, gente da corte sendo ridicularizada. Mas reparem que o escárnio exige mais habilidade. É preciso fazer o leitor completar o sentido.\nFoi aí que Rafa levantou a mão, vermelho.\n— O primeiro fui eu.\nSilêncio. Tomás quase derrubou a garrafa d’água.\n— Eu só queria treinar escárnio — continuou Rafa. — Não imaginei que alguém fosse escrever o outro. Seu Odair não merecia aquilo.\nA professora pensou um pouco.\n— Então você aprendeu duas coisas: como funciona a sátira e que um texto sai das nossas mãos e passa a ter vida própria. O que pretende fazer?\nNo dia seguinte, Rafa foi até a cantina. Seu Odair ouviu tudo com os braços cruzados e, para surpresa de Rafa, começou a rir.\n— O do pão de espírito eu até gostei — disse. — O outro, não. E sabe por que o pão diminuiu? O fornecedor aumentou o preço e eu não quis aumentar o de vocês.\nRafa saiu de lá com um pão de queijo de tamanho honesto e uma ideia. Na sexta, o mural ganhou um terceiro papel, assinado pelo Clube das Quatro Escolas:\n“Seu Odair, que segura o preço / mesmo quando o queijo sobe, / merece aplauso e merece apreço: / quem cuida da gente, ninguém esquece.”\nNão era uma cantiga medieval perfeita. Mas, dessa vez, ninguém precisou retirar nada do mural.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, sobre o que o primeiro papel do mural fazia piada?",
+       "options": [
+        "O horário do intervalo",
+        "O tamanho dos pães de queijo",
+        "O preço do suco",
+        "A fila da cantina"
+       ],
+       "answer": "O tamanho dos pães de queijo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do cantineiro?",
+       "options": [],
+       "answer": "Seu Odair",
+       "accept": [
+        "Odair"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que tipo de cantiga Tomás reconhece no primeiro papel?",
+       "options": [
+        "Cantiga de amor",
+        "Cantiga de maldizer",
+        "Cantiga de amigo",
+        "Cantiga de escárnio"
+       ],
+       "answer": "Cantiga de escárnio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo Lívia, quais características tem o segundo papel?",
+       "options": [
+        "Vassalagem amorosa e dama idealizada",
+        "Eu lírico feminino e refrão",
+        "Ironia sutil e nenhum nome citado",
+        "Crítica direta, alvo nomeado e linguagem grosseira"
+       ],
+       "answer": "Crítica direta, alvo nomeado e linguagem grosseira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quem confessa ter escrito o primeiro papel?",
+       "options": [],
+       "answer": "Rafa",
+       "accept": [
+        "Rafael"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que os pães de queijo tinham diminuído?",
+       "options": [
+        "A escola mandou reduzir o tamanho",
+        "Seu Odair queria lucrar mais",
+        "A cantina mudou a receita",
+        "O fornecedor aumentou o preço e seu Odair não quis repassar o aumento"
+       ],
+       "answer": "O fornecedor aumentou o preço e seu Odair não quis repassar o aumento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a professora diz que o escárnio exige mais habilidade?",
+       "options": [
+        "Porque o alvo precisa ser nomeado",
+        "Porque usa versos decassílabos",
+        "Porque o leitor precisa completar o sentido do que fica subentendido",
+        "Porque precisa ser cantado com música"
+       ],
+       "answer": "Porque o leitor precisa completar o sentido do que fica subentendido",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Rafa decidiu conversar com seu Odair em vez de ficar calado?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: O cronista do grêmio",
+     "synopsis": "Tomás vira o cronista da festa de cinquenta anos da escola. Ao descobrir como escreviam os cronistas do Humanismo, troca a lista de diretores pela história das pessoas comuns.",
+     "text": "Tomás nunca tinha ganhado uma eleição na vida, nem para representante de turma. Por isso foi uma surpresa quando o grêmio o escolheu como cronista oficial da festa de cinquenta anos da escola.\n— Cronista? — repetiu ele no clube. — Vou escrever crônica de jornal, sobre o cotidiano?\n— Não exatamente — respondeu a professora Dora, animada. — Querem um relato histórico da escola. E isso tem tudo a ver com a nossa próxima escola literária.\nTomás passou a semana na secretaria, entre caixas de atas amareladas e fotos sem legenda. No sábado, levou ao clube a primeira versão. Lia-se ali uma sequência de nomes e datas: o primeiro diretor, a segunda diretora, a reforma do prédio, a visita de uma autoridade, a inauguração da quadra.\n— Ficou certinho — disse Lívia, educada.\n— Ficou chato — corrigiu Rafa, menos educado.\nA professora pegou o texto e sorriu.\n— Ficou parecido com muito do que se escrevia antes do Humanismo: a história dos grandes, contada para agradar aos grandes. Agora pensem no que mudou no século XV. O primeiro grande cronista português fazia algo novo: consultava documentos, comparava versões, buscava a verdade dos fatos. E, principalmente, colocava o povo em cena. Em alguns trechos, a multidão da cidade aparece como personagem coletivo, decidindo o rumo dos acontecimentos.\n— O povo como protagonista — murmurou Tomás.\n— É o espírito do Humanismo — continuou ela. — Um período de transição. Deus ainda está no centro, mas o ser humano começa a ganhar espaço, a ser observado com curiosidade. É o caminho do teocentrismo para o antropocentrismo, que vai se completar no Renascimento.\nNa semana seguinte, Tomás voltou à secretaria, mas dessa vez com outra pergunta: quem mais estava lá? Encontrou a ata de uma enchente, numa noite de verão, quando pais, alunos e funcionários passaram horas tirando água das salas com baldes. Achou as assinaturas de um abaixo-assinado dos estudantes pedindo uma biblioteca. Conversou com dona Celina, a merendeira mais antiga, que se lembrava do dia em que a cozinha alimentou o bairro inteiro durante uma falta de luz.\nConferiu cada história em dois documentos antes de escrevê-la. Quando duas versões não batiam, registrou as duas.\nA nova crônica começava assim: “Não foi uma pessoa que construiu esta escola. Foi uma multidão de baldes, assinaturas e panelas.”\nNo dia da festa, Tomás leu o texto no pátio. Quando chegou à parte da enchente, um senhor de cabelos brancos na plateia levantou a mão, emocionado: era um dos pais que tinham carregado baldes naquela noite.\nDepois da leitura, Rafa deu um tapinha nas costas do amigo.\n— Admito. Não ficou chato.\n— Ficou humanista — corrigiu Lívia, rindo.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que função o grêmio deu a Tomás?",
+       "options": [
+        "Fotógrafo da festa",
+        "Cronista oficial da festa de cinquenta anos",
+        "Presidente do grêmio",
+        "Mestre de cerimônias"
+       ],
+       "answer": "Cronista oficial da festa de cinquenta anos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que havia na primeira versão do texto de Tomás?",
+       "options": [
+        "Histórias de alunos e funcionários",
+        "Entrevistas com os pais",
+        "Uma sequência de diretores, reformas e inaugurações",
+        "Poemas sobre a escola"
+       ],
+       "answer": "Uma sequência de diretores, reformas e inaugurações",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual era a função de dona Celina na escola?",
+       "options": [],
+       "answer": "merendeira",
+       "accept": [
+        "a merendeira",
+        "cozinheira",
+        "merendeira mais antiga"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, o que o cronista do Humanismo colocava em cena de forma nova?",
+       "options": [
+        "Deuses da mitologia",
+        "O povo como personagem coletivo",
+        "Apenas o rei e a nobreza",
+        "Damas idealizadas"
+       ],
+       "answer": "O povo como personagem coletivo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Tomás fazia quando duas versões de uma história não batiam?",
+       "options": [
+        "Escolhia a mais bonita",
+        "Deixava a história de fora",
+        "Inventava uma terceira",
+        "Registrava as duas"
+       ],
+       "answer": "Registrava as duas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como a professora define o Humanismo?",
+       "options": [
+        "O fim do Renascimento",
+        "Um período de transição do teocentrismo para o antropocentrismo",
+        "O auge do teocentrismo medieval",
+        "Uma escola literária brasileira do século XVI"
+       ],
+       "answer": "Um período de transição do teocentrismo para o antropocentrismo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase inicial da nova crônica revela sobre a mudança de Tomás?",
+       "options": [
+        "Que ele passou a valorizar a ação coletiva das pessoas comuns",
+        "Que ele preferiu escrever ficção",
+        "Que ele desistiu de pesquisar documentos",
+        "Que ele quis agradar à direção"
+       ],
+       "answer": "Que ele passou a valorizar a ação coletiva das pessoas comuns",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o senhor da plateia ficou emocionado ao ouvir a crônica de Tomás?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A farsa do intervalo",
+     "synopsis": "O clube apresenta no festival de teatro uma farsa curta com tipos sociais em redondilha maior. A plateia ri e se reconhece nos personagens.",
+     "text": "O festival de teatro da escola tinha uma regra curiosa naquele ano: as peças deviam durar, no máximo, o tempo de um intervalo. Quinze minutos, nem um segundo a mais.\n— Perfeito para uma farsa — disse a professora Dora quando o clube anunciou que ia participar. — O teatro do Humanismo português estava cheio delas: peças curtas, populares, que faziam rir e, ao mesmo tempo, criticavam os costumes da sociedade.\nRafa se ofereceu para escrever o texto. Na reunião seguinte, apareceu com três páginas e um sorriso suspeito.\n— Os personagens não têm nome — explicou. — São tipos. O Influenciador, que filma tudo e não vive nada. A Fiscal de Fila, que vigia todo mundo, mas fura a fila quando ninguém vê. E o Atrasado Eterno, que sempre tem uma desculpa nova.\nLívia leu as falas em voz alta e percebeu um ritmo.\n— Rafa, você escreveu tudo com o mesmo número de sílabas?\n— Sete sílabas poéticas — confirmou ele, orgulhoso. — Redondilha maior. A medida velha.\n— Igual à poesia palaciana — lembrou Tomás. — Aquela que já não dependia da música, feita para ser lida ou declamada nos salões.\n— Isso — disse a professora. — No Humanismo, a poesia se separa do canto, e o verso precisa ter ritmo próprio. A redondilha maior, de sete sílabas, e a menor, de cinco, dominavam a época. Vão continuar populares por séculos, aliás.\nMas Lívia ainda estava preocupada.\n— E se alguém achar que é sobre ele? A gente não quer outro problema como o do mural.\nA professora balançou a cabeça.\n— Essa é a diferença entre o tipo e a pessoa. O tipo representa um comportamento, um vício, um grupo social. Ninguém é nomeado. Os autores de farsas criticavam o fidalgo vaidoso, o juiz corrupto, o comerciante desonesto, mas não uma pessoa específica. A ideia era que cada espectador olhasse para o palco e pensasse: “Será que eu faço isso?”\nEnsaiaram a semana inteira. Tomás fez o Atrasado Eterno; Lívia, a Fiscal de Fila; Rafa ficou com o Influenciador, que passava a peça inteira tentando gravar um vídeo perfeito do pôr do sol e perdia o pôr do sol.\nNo dia da apresentação, o pátio estava lotado. Quando o Atrasado Eterno entrou correndo e disse “Meu despertador quebrou, / a culpa foi do vizinho!”, a plateia explodiu em risadas. Um menino do sétimo ano gritou:\n— Esse sou eu!\nE riu mais alto que todos.\nNo final, quando os três personagens descobriam que tinham perdido o próprio intervalo, a coordenadora do festival foi a primeira a aplaudir de pé.\n— Rir dos costumes para corrigi-los — comentou a professora, enquanto os três tiravam as fantasias. — É uma ideia antiga, mas continua funcionando.\nRafa guardou o roteiro na mochila com cuidado.\n— Quinze minutos — disse ele. — Nem um segundo a mais.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual era a regra do festival de teatro naquele ano?",
+       "options": [
+        "As peças deviam ser musicais",
+        "As peças deviam ter cinco atos",
+        "As peças deviam durar no máximo o tempo de um intervalo",
+        "Só professores podiam atuar"
+       ],
+       "answer": "As peças deviam durar no máximo o tempo de um intervalo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que tipo de peça o clube decide apresentar?",
+       "options": [
+        "Um monólogo",
+        "Uma ópera",
+        "Uma farsa",
+        "Uma tragédia"
+       ],
+       "answer": "Uma farsa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "num",
+       "q": "No capítulo, quantas sílabas poéticas tem a redondilha maior?",
+       "options": [],
+       "answer": "7",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem interpreta a Fiscal de Fila?",
+       "options": [
+        "Lívia",
+        "A professora Dora",
+        "Rafa",
+        "Tomás"
+       ],
+       "answer": "Lívia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, o que um tipo representa?",
+       "options": [
+        "Uma pessoa real com nome",
+        "Um deus da mitologia",
+        "Um comportamento, um vício ou um grupo social",
+        "Uma dama idealizada"
+       ],
+       "answer": "Um comportamento, um vício ou um grupo social",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como reage o menino do sétimo ano à fala do Atrasado Eterno?",
+       "options": [
+        "Grita “Esse sou eu!” e ri",
+        "Reclama com a coordenação",
+        "Pede para atuar na peça",
+        "Sai do pátio ofendido"
+       ],
+       "answer": "Grita “Esse sou eu!” e ri",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a reação do menino mostra que a farsa cumpriu seu objetivo?",
+       "options": [
+        "Porque ele decorou as falas",
+        "Porque ele se reconheceu no comportamento criticado e riu dele",
+        "Porque ele não entendeu a peça",
+        "Porque ele foi citado pelo nome"
+       ],
+       "answer": "Porque ele se reconheceu no comportamento criticado e riu dele",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Lívia temia que a peça causasse “outro problema como o do mural”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Catorze versos",
+     "synopsis": "Lívia escreve um soneto para os oitenta anos da avó e descobre que contar sílabas é só metade do trabalho. O clube revê as marcas do Classicismo.",
+     "text": "A avó de Lívia ia fazer oitenta anos, e a família inteira tinha uma tarefa. O primo faria o bolo, a tia cuidaria da música, e Lívia, “a escritora da família”, como diziam, ficou com o poema.\n— Vou fazer um soneto — anunciou no clube. — Bem clássico.\n— Catorze versos — recitou Tomás. — Dois quartetos e dois tercetos.\n— E decassílabos — completou Rafa. — A medida nova.\n— Exato — disse a professora Dora. — O soneto chegou a Portugal com o Classicismo, trazido da Itália, junto com o verso de dez sílabas. Os poetas da época queriam equilíbrio, clareza, forma perfeita. Imitavam os autores gregos e latinos e acreditavam que a razão devia organizar até os sentimentos.\n— Organizar sentimentos — riu Rafa. — Boa sorte.\nLívia passou a tarde contando sílabas nos dedos. Esquecia de juntar as vogais, contava a última sílaba quando não devia, apagava, recomeçava. Tomás sentou ao lado dela.\n— Lembra: a gente conta até a última sílaba tônica. E quando uma palavra termina em vogal e a próxima começa com vogal, elas costumam se juntar.\nRafa, enquanto isso, rabiscava a própria versão num guardanapo.\n— Olha: “É fogo frio, é riso que dá pena, / é tudo e nada, é longe estando perto.”\n— Isso é cheio de antíteses e paradoxos — observou a professora. — Muito classicista, aliás. Os poetas do período gostavam de mostrar as contradições do amor: tentavam explicá-lo pela razão e mostravam que ele não cabe numa definição.\nLívia parou de contar e olhou para o caderno.\n— É isso. O tempo da minha avó não cabe na razão.\nNaquela noite, o primeiro quarteto saiu inteiro:\n“Os oitenta anos cabem numa mão / que sabe o ponto exato do café, / que guarda na farinha a sua fé / o tempo que não cabe na razão.”\nContou cada verso duas vezes. Dez sílabas, até a última tônica. As rimas se abraçavam: mão com razão, por fora; café com fé, por dentro.\nOs tercetos demoraram mais três dias. No último verso, Lívia quis fechar o soneto com uma ideia forte, como faziam os poetas que estudava: uma conclusão que desse sentido a tudo o que vinha antes. Escreveu e apagou várias vezes até chegar a “e o que ela ensina dura mais que os anos”.\nNa festa, leu o soneto em pé, ao lado do bolo. A avó, que nunca tinha ouvido falar em decassílabo, pediu uma cópia e a colou na porta da geladeira, entre um ímã de abacaxi e a lista do mercado.\n— Forma perfeita — comentou Tomás depois, vendo a foto.\n— Lugar perfeito — corrigiu Rafa.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, para quem Lívia escreve o soneto?",
+       "options": [
+        "Para a irmã, Bia",
+        "Para o grêmio da escola",
+        "Para a professora Dora",
+        "Para a avó, que ia fazer oitenta anos"
+       ],
+       "answer": "Para a avó, que ia fazer oitenta anos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "num",
+       "q": "No capítulo, quantos versos tem um soneto?",
+       "options": [],
+       "answer": "14",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, de qual país o soneto chegou a Portugal, segundo a professora?",
+       "options": [
+        "Itália",
+        "Grécia",
+        "Espanha",
+        "França"
+       ],
+       "answer": "Itália",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, até onde Tomás diz que se contam as sílabas poéticas?",
+       "options": [
+        "Até a última sílaba tônica",
+        "Até a última sílaba da palavra",
+        "Até a primeira vírgula",
+        "Até a sílaba mais longa"
+       ],
+       "answer": "Até a última sílaba tônica",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que figuras de linguagem a professora aponta nos versos de Rafa?",
+       "options": [
+        "Antíteses e paradoxos",
+        "Metonímias",
+        "Onomatopeias",
+        "Aliterações"
+       ],
+       "answer": "Antíteses e paradoxos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde a avó coloca a cópia do soneto?",
+       "options": [
+        "Num porta-retrato",
+        "Dentro da carteira",
+        "No livro de receitas",
+        "Na porta da geladeira"
+       ],
+       "answer": "Na porta da geladeira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o verso “o tempo que não cabe na razão” combina com o Classicismo estudado pelo clube?",
+       "options": [
+        "Porque tem eu lírico feminino",
+        "Porque critica os costumes da sociedade",
+        "Porque usa linguagem medieval",
+        "Porque mostra a razão tentando organizar um sentimento que a ultrapassa"
+       ],
+       "answer": "Porque mostra a razão tentando organizar um sentimento que a ultrapassa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Rafa troca “forma perfeita” por “lugar perfeito” ao ver a foto?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: A carta da ilha",
+     "synopsis": "Numa excursão a uma ilha, Lívia escreve uma carta cheia de deslumbramento e descobre que repetiu, sem querer, a literatura informativa do Quinhentismo. Um guia local muda seu olhar.",
+     "text": "A excursão do primeiro ano foi para uma ilha do litoral, onde só se chegava de barco. Antes do embarque, a professora Dora entregou ao clube um envelope com a tarefa: “Escrevam uma carta a alguém que nunca viu este lugar. Descrevam tudo.”\nLívia escolheu a irmã, Bia. Sentou numa pedra perto do mangue e começou a escrever sem parar. Contou que a água era tão clara que dava para ver os peixes como num aquário, que as árvores eram tantas e tão verdes que nem cabiam no olhar, que havia caranguejos de todas as cores andando de lado, que o ar cheirava a sal e a fruta. Escreveu que, se alguém plantasse qualquer semente ali, ela certamente cresceria.\nÀ noite, na pousada, leu a carta para o grupo. Quando terminou, a professora estava sorrindo de um jeito misterioso.\n— Lívia, você acabou de escrever literatura informativa do século XVI.\n— Eu?\n— Reparem. Em 1500, o escrivão da frota portuguesa escreveu uma carta ao rei sobre a terra recém-avistada. Ela é chamada de certidão de nascimento do Brasil. E o que ele faz? Descreve tudo com deslumbramento, compara com o que conhece, exalta a abundância, imagina o que a terra pode render.\n— É o Quinhentismo — disse Tomás. — A literatura informativa, dos viajantes e cronistas.\n— Mas tem uma diferença — continuou a professora. — Para quem era aquela carta?\n— Para o rei — respondeu Rafa.\n— E o que interessava ao rei?\nRafa pensou.\n— Saber se havia riquezas. Ouro, prata. E se dava para explorar.\n— Exato. O olhar é de fora, de quem chega com interesses. Por isso esses textos têm enorme valor histórico, mas precisam ser lidos com senso crítico.\nNo dia seguinte, o guia da trilha foi seu Jairo, nascido na ilha, filho e neto de pescadores. Tomás perguntou como era o lugar antes da chegada dos turistas. Seu Jairo falou da época das tainhas, dos nomes que a família dava às marés, de uma árvore que o avô dele chamava de “a velha”, porque ela já estava lá quando o avô nasceu.\nNa volta, no barco, Tomás comentou com Lívia:\n— A sua carta é bonita. Mas a do seu Jairo seria outra. Ele não precisa se deslumbrar. Ele sabe o nome das coisas.\nLívia ficou olhando a ilha diminuir no horizonte. Pegou o caderno e acrescentou um P.S. à carta: “Hoje descobri que eu vi a ilha como visitante. Quem mora aqui vê outra coisa. Na próxima vez, quero ouvir mais do que descrever.”\n— Isso — disse a professora, que lia por cima do ombro dela — é a pergunta que todo bom leitor deve fazer a um texto informativo: quem está olhando, e o que ficou de fora?",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como se chegava à ilha da excursão?",
+       "options": [
+        "A pé, por uma ponte",
+        "De ônibus",
+        "De barco",
+        "De avião"
+       ],
+       "answer": "De barco",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, para quem Lívia escreve a carta?",
+       "options": [],
+       "answer": "Bia",
+       "accept": [
+        "a irmã",
+        "irmã",
+        "sua irmã",
+        "a irmã Bia"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, a quem foi enviada a carta de 1500 citada pela professora?",
+       "options": [
+        "Aos navegadores espanhóis",
+        "Aos jesuítas",
+        "Ao papa",
+        "Ao rei de Portugal"
+       ],
+       "answer": "Ao rei de Portugal",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo Rafa, o que interessava ao rei?",
+       "options": [
+        "Aprender a língua dos povos da terra",
+        "Receber poemas sobre a viagem",
+        "Saber se havia riquezas para explorar",
+        "Conhecer a culinária local"
+       ],
+       "answer": "Saber se havia riquezas para explorar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do guia da trilha?",
+       "options": [],
+       "answer": "Seu Jairo",
+       "accept": [
+        "Jairo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o avô de seu Jairo chamava uma árvore de “a velha”?",
+       "options": [
+        "Porque ela já estava lá quando o avô nasceu",
+        "Porque era a menor da ilha",
+        "Porque tinha folhas brancas",
+        "Porque estava quase morrendo"
+       ],
+       "answer": "Porque ela já estava lá quando o avô nasceu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Tomás quer dizer com “Ele sabe o nome das coisas”?",
+       "options": [
+        "Que a carta de Lívia tinha erros de ortografia",
+        "Que seu Jairo também escrevia cartas",
+        "Que quem vive no lugar o conhece por dentro, sem o olhar deslumbrado do visitante",
+        "Que seu Jairo estudou botânica na faculdade"
+       ],
+       "answer": "Que quem vive no lugar o conhece por dentro, sem o olhar deslumbrado do visitante",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que a professora considera importante perguntar “quem está olhando, e o que ficou de fora?” ao ler um texto informativo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O simulado",
+     "synopsis": "Antes do simulado, o clube faz uma rodada final de revisão e enfrenta a literatura de catequese. Depois da prova, a professora anuncia a próxima escola literária.",
+     "text": "No dia do simulado, o Clube das Quatro Escolas marcou encontro meia hora antes, no banco perto do portão. Ninguém tinha dormido muito.\n— Rodada final — anunciou Rafa, tirando do bolso uma pilha de fichas. — Eu leio, vocês respondem.\n— Cantiga com paralelismo, refrão e eu lírico feminino — leu ele.\n— Cantiga de amigo — responderam os dois juntos.\n— Teatro com tipos sociais, crítica aos costumes, redondilha maior.\n— Humanismo — disse Tomás. — Teatro popular.\n— Catorze versos, decassílabos, antíteses sobre o amor.\n— Soneto classicista — respondeu Lívia.\nRafa virou a última ficha e fez cara de suspense.\n— Literatura de catequese.\nOs dois ficaram quietos. Era o único assunto que o clube não tinha vivido na prática.\n— Eu sei essa — disse Tomás, devagar. — Também é do Quinhentismo. Foi produzida pelos jesuítas que vieram para o Brasil. Eles escreviam autos, poemas e até gramáticas.\n— Com que objetivo? — provocou Rafa.\n— Converter os indígenas ao catolicismo e ensinar a doutrina — respondeu Lívia. — Por isso os textos eram didáticos. Os autos mostravam o bem contra o mal de forma bem clara, quase sem meio-termo.\n— E as línguas? — insistiu Rafa.\n— Misturavam português, espanhol, latim e tupi — completou Tomás. — Para serem entendidos pelo público.\n— Então a diferença da informativa é... — começou Rafa.\n— A informativa descreve a terra para quem está na Europa — disse Lívia, lembrando da ilha. — A de catequese fala com quem já vive aqui, tentando mudar o jeito de pensar dessas pessoas.\n— E, de novo, é um olhar de fora — acrescentou Tomás. — Os povos indígenas aparecem sempre do ponto de vista de quem chegou.\nO sinal tocou. Entraram na sala em silêncio. A prova tinha quarenta questões, e a primeira trazia uma cantiga medieval que eles nunca tinham lido, com uma moça perguntando às ondas do mar pelo amigo que tinha partido. Lívia quase riu. Era a sua janela, em outra versão.\nUma semana depois, a professora Dora apareceu na reunião do clube com as notas. Os três tinham ido bem, mas ela não falou de números.\n— Sabem o que mais me agradou? Na questão dissertativa sobre a carta de 1500, vocês três perguntaram quem estava olhando e o que ficou de fora. Isso é ler de verdade.\nRafa se espreguiçou na cadeira.\n— E agora? O clube acabou?\nA professora tirou da bolsa um livro grosso, cheio de marcadores coloridos.\n— Agora? Agora vem o Barroco. E ele é cheio de contradições. Vocês vão adorar.\nLívia abriu o caderno numa página em branco e escreveu, no alto: “Clube das Cinco Escolas”.\nTomás olhou por cima do ombro dela e riu.\n— Vamos precisar de um nome maior.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde o clube se encontra antes do simulado?",
+       "options": [
+        "Na biblioteca",
+        "Na cantina",
+        "No banco perto do portão",
+        "Na sala de leitura"
+       ],
+       "answer": "No banco perto do portão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quem lê as fichas da rodada final?",
+       "options": [],
+       "answer": "Rafa",
+       "accept": [
+        "Rafael"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo Tomás, quem produziu a literatura de catequese no Brasil?",
+       "options": [
+        "Os poetas palacianos",
+        "Os trovadores",
+        "Os cronistas do rei",
+        "Os jesuítas"
+       ],
+       "answer": "Os jesuítas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual era o objetivo da literatura de catequese?",
+       "options": [
+        "Descrever a terra para o rei",
+        "Converter os indígenas e ensinar a doutrina católica",
+        "Criticar os costumes de Portugal",
+        "Divertir a corte portuguesa"
+       ],
+       "answer": "Converter os indígenas e ensinar a doutrina católica",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quais línguas apareciam nos textos de catequese, segundo Tomás?",
+       "options": [
+        "Apenas português",
+        "Português e francês",
+        "Português, espanhol, latim e tupi",
+        "Latim e grego"
+       ],
+       "answer": "Português, espanhol, latim e tupi",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Lívia reconhece na primeira questão da prova?",
+       "options": [
+        "A carta que escreveu na ilha",
+        "O soneto que fez para a avó",
+        "Uma fala da farsa do intervalo",
+        "Uma cantiga de amigo parecida com a que ela escreveu"
+       ],
+       "answer": "Uma cantiga de amigo parecida com a que ela escreveu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que mais agradou à professora nas respostas do clube?",
+       "options": [
+        "As notas mais altas da turma",
+        "A leitura crítica sobre quem olha e o que fica de fora",
+        "A letra caprichada",
+        "A rapidez para terminar a prova"
+       ],
+       "answer": "A leitura crítica sobre quem olha e o que fica de fora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Lívia escreve “Clube das Cinco Escolas” no caderno no final?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
