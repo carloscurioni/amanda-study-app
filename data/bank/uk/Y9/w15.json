@@ -3962,6 +3962,921 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Saltmarsh Gazette",
+   "premise": "Four Year 9 friends revive their school's forgotten magazine in the last two weeks of term, and each piece they write – a poem, a letter, an interview, a diary, a review – tests a different skill.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Room at the End of the Corridor",
+     "synopsis": "Imogen discovers the dusty office of the school's forgotten magazine and persuades three friends to bring it back for one last issue before the end of term.",
+     "text": "The office at the end of the English corridor had not been opened for six years, and it smelled like it. Imogen pushed the door with her shoulder and it groaned on its hinges, releasing a breath of dust, damp paper and something faintly like old oranges.\nGrey November light leaked through a single window. It fell across a desk buried under folders, a broken stapler and a mug with a brown ring dried inside it. On the wall, a faded poster announced, in proud capital letters, THE SALTMARSH GAZETTE – WRITTEN BY STUDENTS, FOR STUDENTS.\n\"This is where it happened,\" Imogen whispered, although there was nobody to disturb.\nMs Halloran, her English teacher, had mentioned the magazine only once, almost by accident, while handing back essays. \"We used to have a student paper,\" she had said, with a small sigh. \"It stopped when the last editors left. Nobody wanted to take it on.\" Imogen had not been able to stop thinking about it since.\nShe opened the nearest folder. Inside were old issues, their pages soft and curling at the corners. There were poems about the estuary, interviews with dinner staff, a furious article about the lack of bike racks and a review of a school concert that called the brass section \"brave rather than tuneful\". Imogen laughed out loud. These pages were alive. They sounded like real people.\nFootsteps came down the corridor. Rafael appeared in the doorway, followed by Kwame and Lin, all three looking doubtful.\n\"You said it was urgent,\" Kwame said. \"I left a perfectly good game of table tennis.\"\n\"Look,\" said Imogen, and held up the old issues like evidence in a courtroom.\nLin picked one up and turned it over carefully. She was the kind of person who noticed things: the font, the margins, the way a photograph had been cropped. \"The layout is terrible,\" she said. Then, after a moment, \"I love it.\"\nRafael was already reading a poem, his lips moving silently. Kwame pretended not to be interested for nearly a whole minute before he found the bike-rack article and started grinning.\n\"Term ends in two weeks,\" Imogen said. \"I want to make one issue. Just one. A poem, a letter, an interview, a review, some photographs. Everything we've studied this term, but real.\"\n\"Two weeks is nothing,\" said Kwame.\n\"Two weeks is fourteen days,\" said Imogen. \"That's two whole days each for seven pieces.\"\nRafael looked up from the poem. \"I'll write something,\" he said quietly.\nLin nodded. \"I'll do the pictures and the design.\"\nEveryone turned to Kwame. He sighed dramatically, then pulled the broken stapler towards him and examined it. \"Fine,\" he said. \"But somebody is buying a new stapler.\"\nAs they left, Imogen glanced back. The room still looked tired and grey, but the dust floating in the window light seemed, for a moment, almost like snow falling the wrong way – upwards, as if something were waking.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long had the office been closed?",
+       "options": [
+        "Six years",
+        "Six months",
+        "Two years",
+        "Ten years"
+       ],
+       "answer": "Six years",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the name of the old school magazine?",
+       "options": [
+        "The Saltmarsh Gazette",
+        "The Estuary Times",
+        "The Corridor Chronicle",
+        "The Student Voice"
+       ],
+       "answer": "The Saltmarsh Gazette",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which three senses does the opening paragraph mainly appeal to?",
+       "options": [
+        "Smell, sound and sight",
+        "Taste, touch and sound",
+        "Sight, taste and touch",
+        "Only sight"
+       ],
+       "answer": "Smell, sound and sight",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what job does Lin agree to do?",
+       "options": [
+        "Photographs and design",
+        "Writing poems",
+        "Interviewing staff",
+        "Editing the letter"
+       ],
+       "answer": "Photographs and design",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the simile 'like evidence in a courtroom' suggest about Imogen?",
+       "options": [
+        "She is trying to prove a point",
+        "She is in trouble",
+        "She is nervous about a test",
+        "She wants to hide the issues"
+       ],
+       "answer": "She is trying to prove a point",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Kwame really feel about the bike-rack article?",
+       "options": [
+        "He enjoys it",
+        "He finds it boring",
+        "He is offended by it",
+        "He does not read it"
+       ],
+       "answer": "He enjoys it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the final image of dust rising 'upwards' suggest?",
+       "options": [
+        "The magazine is coming back to life",
+        "The room will be cleaned",
+        "Winter is arriving early",
+        "Imogen is feeling ill"
+       ],
+       "answer": "The magazine is coming back to life",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Imogen says the old pages 'sounded like real people'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: What the Tide Keeps",
+     "synopsis": "Rafael struggles to write a poem about the estuary, and his friends help him find the extended metaphor that holds it together.",
+     "text": "Rafael had written eleven first lines and crossed out all of them. They lay on the desk in the Gazette office like small grey fish that had refused to swim.\n\"It's about the estuary,\" he explained when Imogen asked. \"The mudflats behind the sports field. My grandad used to take me there to watch the birds. I want to write about it, but every line sounds like a postcard.\"\nLin leaned over his shoulder. \"'The water is blue and beautiful,'\" she read. \"Yes. That is a postcard.\"\n\"Thanks,\" said Rafael.\n\"What does the tide actually do?\" asked Imogen. She remembered Ms Halloran asking the class this kind of question when they studied poetry in September: don't describe the thing, think about what it does.\nRafael frowned. \"It goes out. It comes back. It leaves things behind – shells, bits of rope, once a whole wooden chair. And it takes things away.\"\n\"So it's like…\" Kwame began, then stopped, embarrassed to be helping with a poem.\n\"Like memory,\" Rafael said slowly. \"It takes things and brings some of them back.\"\nFor the next hour he barely spoke. When he finally passed his notebook across the desk, the others read it together.\nWhat the Tide Keeps\nTwice a day the river forgets itself,\npulls back its silver sleeve and shows\nthe mud's brown handwriting, the gull-prints,\nthe rope that someone dropped in March.\nTwice a day it remembers, rushes in\nto fill the gaps with cold, bright questions.\nI stood here once beside a tall man\nwho named each bird as if he'd made it.\nThe tide has kept his voice, I think –\nreturns it on the turn, in pieces,\nthe way a shell returns the sea\nto anyone who holds it close enough.\nNobody spoke at first. Lin was the one who broke the silence. \"The tall man is your grandad,\" she said gently.\nRafael nodded.\n\"The 'mud's brown handwriting' is brilliant,\" said Imogen. \"It makes the mudflats look like a page you can read.\"\n\"And there are no full stops at the end of most lines,\" Kwame added, surprising himself. \"It keeps going. Like water.\"\n\"That's enjambment,\" Rafael said, smiling for the first time that afternoon. \"We did it in September.\"\n\"I know what it's called,\" said Kwame. \"I just didn't think it would ever be useful.\"\nImogen read the poem again. The whole thing, she realised, worked as one long comparison: the tide was memory from the first line to the last. That was what had been missing from the eleven crossed-out openings – not prettier words, but one idea carried all the way through.\n\"Can we put it on the front page?\" she asked.\nRafael hesitated. \"It's quite personal.\"\n\"That's why it's good,\" said Lin.\nIn the end he agreed, on one condition: no photograph of him next to it. Lin promised to photograph the mudflats instead, at low tide, when the river had forgotten itself.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many first lines had Rafael crossed out?",
+       "options": [
+        "Eleven",
+        "Seven",
+        "Three",
+        "Twelve"
+       ],
+       "answer": "Eleven",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who used to take Rafael to the estuary?",
+       "options": [
+        "His grandad",
+        "His father",
+        "Ms Halloran",
+        "His older sister"
+       ],
+       "answer": "His grandad",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Rafael decide the tide is like?",
+       "options": [
+        "Memory",
+        "A clock",
+        "A mirror",
+        "An argument"
+       ],
+       "answer": "Memory",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what technique does Kwame notice when lines run on without punctuation?",
+       "options": [],
+       "answer": "enjambment",
+       "accept": [
+        "Enjambment"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the phrase 'the mud's brown handwriting' turn the mudflats into?",
+       "options": [
+        "A page that can be read",
+        "A dirty floor",
+        "A painting",
+        "A map of the river"
+       ],
+       "answer": "A page that can be read",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Imogen realise was missing from Rafael's earlier attempts?",
+       "options": [
+        "One idea carried through the whole poem",
+        "Longer words",
+        "A rhyming pattern",
+        "A clear title"
+       ],
+       "answer": "One idea carried through the whole poem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Rafael not want a photograph of himself beside the poem?",
+       "options": [
+        "The poem feels very personal",
+        "He dislikes Lin's photos",
+        "The page has no space",
+        "He wants to stay anonymous for a prize"
+       ],
+       "answer": "The poem feels very personal",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the poet says the tide returns his grandad's voice 'in pieces'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Dear Head Teacher",
+     "synopsis": "The Gazette needs money for printing, so Kwame writes a persuasive letter to the head teacher using every technique he can remember.",
+     "text": "The problem with a magazine, Imogen discovered on Monday, was that it had to be printed. The school printer could manage black and white, but Lin's photographs of the mudflats deserved colour, and colour cost money.\n\"Forty pounds,\" Lin announced, after phoning the print shop in town. \"For a hundred copies.\"\n\"We don't have forty pounds,\" said Rafael.\n\"We don't,\" agreed Imogen. \"But the school does.\"\nThey all looked at Kwame. He was the best debater in Year 9, the person who had once argued so convincingly that homework should be banned that even the teacher had clapped.\n\"You want me to write to the head,\" he said.\n\"We want you to persuade the head,\" said Imogen.\nKwame opened his laptop. \"Right. Persuasive writing. Who's the audience?\"\n\"Mrs Achebe-Ward,\" said Lin. \"She's busy. She's fair. She likes evidence.\"\n\"Purpose?\"\n\"To get forty pounds.\"\n\"Then it has to be formal, short and impossible to say no to.\" He began typing, reading aloud as he went.\n\"Dear Mrs Achebe-Ward,\nI am writing on behalf of four Year 9 students who would like to revive The Saltmarsh Gazette, the school magazine that was last published six years ago.\nStudents at this school have a great deal to say. In a quick survey of our tutor group, twenty-three out of twenty-eight students said they would read a student magazine. Seventeen said they would like to contribute to one. Surely those voices deserve a place to be heard?\nA magazine would give students a real audience for their writing, encourage them to read beyond the curriculum and celebrate the people who make this school what it is.\nWe are asking for forty pounds to print one hundred colour copies of a single issue before the end of term. If the issue is not successful, we will not ask again. If it is, we hope it will be the first of many.\nThank you for considering our request.\nYours sincerely,\nKwame Asante, on behalf of the Gazette team\"\nHe stopped. \"Well?\"\n\"You used a rhetorical question,\" said Rafael, pointing at the screen.\n\"And a list of three,\" said Lin. \"A real audience, reading beyond the curriculum, celebrating people.\"\n\"And statistics,\" said Imogen. \"When did you do a survey?\"\n\"This morning, in registration,\" Kwame admitted. \"You can't persuade people with feelings alone. You need facts too.\"\nImogen read it again. What impressed her most was not the techniques but the tone. It was polite without grovelling, confident without being rude. The line about not asking again was clever: it made the request seem small and safe.\nThe reply came the next afternoon, in an envelope left on the Gazette desk. Mrs Achebe-Ward had agreed – on one condition. The issue must include an interview with someone in the school community whose work students usually did not notice.\n\"I know exactly who,\" said Kwame.\n\"Who?\" asked the others.\nBut he only tapped the side of his nose and refused to say any more.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how much money did the team need for printing?",
+       "options": [
+        "Forty pounds",
+        "Fourteen pounds",
+        "Four hundred pounds",
+        "Twenty-three pounds"
+       ],
+       "answer": "Forty pounds",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the team choose Kwame to write the letter?",
+       "options": [
+        "He was the best debater in Year 9",
+        "He had the neatest handwriting",
+        "He knew the head teacher well",
+        "He had a printer at home"
+       ],
+       "answer": "He was the best debater in Year 9",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many students in the survey said they would read a magazine?",
+       "options": [
+        "Twenty-three",
+        "Twenty-eight",
+        "Seventeen",
+        "One hundred"
+       ],
+       "answer": "Twenty-three",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which of these is the rhetorical question in Kwame's letter?",
+       "options": [
+        "Surely those voices deserve a place to be heard?",
+        "Who's the audience?",
+        "When did you do a survey?",
+        "Well?"
+       ],
+       "answer": "Surely those voices deserve a place to be heard?",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what tone does Imogen admire in the letter?",
+       "options": [
+        "Polite but confident",
+        "Angry and demanding",
+        "Funny and casual",
+        "Sad and pleading"
+       ],
+       "answer": "Polite but confident",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is the line 'we will not ask again' persuasive?",
+       "options": [
+        "It makes the request seem small and safe",
+        "It threatens the head teacher",
+        "It shows the team is giving up",
+        "It adds a statistic"
+       ],
+       "answer": "It makes the request seem small and safe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what condition does the head teacher set?",
+       "options": [
+        "Include an interview with an unnoticed member of the school",
+        "Print only fifty copies",
+        "Let a teacher edit the magazine",
+        "Pay the money back"
+       ],
+       "answer": "Include an interview with an unnoticed member of the school",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Kwame says you 'can't persuade people with feelings alone'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: Thirty-One Winters",
+     "synopsis": "Kwame interviews the school caretaker, and the team learns how to turn a conversation into a fair, well-structured article.",
+     "text": "Mr Brennan, the caretaker, had worked at the school for thirty-one years. He had fixed every radiator, unblocked every sink and, according to legend, once rescued a heron that had wandered into the sports hall. Yet most students only noticed him when something broke.\n\"He's perfect,\" Kwame said. \"Everyone sees him. Nobody knows him.\"\nThe interview took place in Mr Brennan's workshop, a narrow room full of labelled jars of screws. Kwame had prepared ten questions, but Imogen had warned him not to read them like a list. \"Listen to the answers,\" she said. \"The best question is usually the one you didn't plan.\"\nShe was right. Kwame's third question – \"What has changed most in thirty-one years?\" – produced a polite answer about computers. But then Mr Brennan added, almost to himself, \"The noise is the same, though. Two thousand feet on the stairs at ten past eleven. I'd know that sound anywhere.\"\nKwame put his pen down. \"Do you like it? The noise?\"\nMr Brennan thought about it. \"It means the building's working,\" he said. \"A school is just a big empty box until the bell goes.\"\nBack in the Gazette office, Kwame spread his notes across the desk. There were four pages of them, full of arrows and half-sentences.\n\"An article isn't a transcript,\" said Imogen. \"We can't print everything.\"\n\"Then how do I choose?\"\nLin, who was arranging photographs of the workshop jars, answered without looking up. \"Start with the most interesting thing. Hook the reader. Then give the facts. Then end with something that stays with them.\"\nSo they planned it together. The headline would be short: Thirty-One Winters. The opening would be the heron story, because it was surprising. The middle would give facts – the years he had worked, the number of keys on his ring, which was one hundred and four – mixed with short quotations in Mr Brennan's own words. The ending would be his line about the empty box.\n\"What about the bit where he says the new boilers are rubbish?\" asked Rafael.\nKwame hesitated. \"That's his opinion. Is it fair to print it?\"\nThey discussed it for some time. In the end they decided to keep it, but to present it clearly as his view – \"Mr Brennan is not a fan of the new boilers\" – rather than as a fact. It was, Imogen said, the difference between reporting and gossiping.\nWhen the draft was finished, Kwame took it back to the workshop so that Mr Brennan could check the quotations. The caretaker read it slowly, standing up, his glasses on the end of his nose.\n\"You've made me sound interesting,\" he said at last.\n\"You are interesting,\" said Kwame.\nMr Brennan folded the page carefully and put it in his top pocket. Then, without a word, he reached into a drawer and handed Kwame something heavy and metal: a brand-new stapler.\n\"Heard you needed one,\" he said.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long had Mr Brennan worked at the school?",
+       "options": [
+        "Thirty-one years",
+        "Twenty-one years",
+        "Thirteen years",
+        "Forty years"
+       ],
+       "answer": "Thirty-one years",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which animal did Mr Brennan once rescue, according to legend?",
+       "options": [
+        "A heron",
+        "A fox",
+        "A seagull",
+        "A cat"
+       ],
+       "answer": "A heron",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what advice does Imogen give Kwame before the interview?",
+       "options": [
+        "Listen to the answers",
+        "Ask only yes or no questions",
+        "Record everything on video",
+        "Keep the interview under five minutes"
+       ],
+       "answer": "Listen to the answers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many keys are on Mr Brennan's key ring?",
+       "options": [
+        "One hundred and four",
+        "Thirty-one",
+        "Two thousand",
+        "Ten"
+       ],
+       "answer": "One hundred and four",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, according to Lin, what should the opening of the article do?",
+       "options": [
+        "Hook the reader",
+        "List all the facts",
+        "Explain the headline",
+        "Thank the interviewee"
+       ],
+       "answer": "Hook the reader",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does the team handle Mr Brennan's comment about the boilers?",
+       "options": [
+        "Present it clearly as his opinion",
+        "Remove it completely",
+        "Print it as a fact",
+        "Ask the head teacher to decide"
+       ],
+       "answer": "Present it clearly as his opinion",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the gift of the stapler suggest about Mr Brennan?",
+       "options": [
+        "He has been paying attention and is grateful",
+        "He wants the team to fix things for him",
+        "He is annoyed by the article",
+        "He has too many staplers"
+       ],
+       "answer": "He has been paying attention and is grateful",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the team chose Mr Brennan's 'empty box' line for the ending of the article?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Lin's Diary, Thursday",
+     "synopsis": "In a private diary entry, Lin describes the disaster of losing all her photographs and how she found a way to rescue the magazine's pictures.",
+     "text": "Thursday, 9.47 p.m.\nWorst. Day. Ever. And I am not exaggerating, even though Kwame says I always exaggerate.\nThis morning I plugged my memory card into the Gazette laptop to move the photos across. All of them. The mudflats at low tide, the jars in Mr Brennan's workshop, the empty corridor with the light coming in sideways. Two weeks of work. The laptop made a little clicking noise, a message popped up saying the card could not be read, and then – nothing. The folder was empty. I stared at it for so long that the screen went dark.\nI didn't cry. Well. I cried a bit, in the toilets, quietly, which doesn't count.\nThe worst part was having to tell the others. Imogen went very pale and very calm, which is somehow scarier than shouting. Rafael said \"Oh no\" about nine times. Kwame tried to fix the card with a paperclip, which, for the record, does not work.\nThen Ms Halloran walked in. She looked at the empty folder, then at me, and said something I keep thinking about. She said, \"What did those photographs show? Not what they looked like – what did they show?\"\nI didn't understand at first. Then I did. The mudflats showed the poem's idea: something taken away and given back. The jars showed Mr Brennan: careful, patient, everything in its place. The corridor showed what the whole magazine is about – a space waiting for people.\nThe pictures were gone, but the ideas weren't.\nSo after school I went back out. The tide was low again (thank you, Moon!). The light was different from last time, colder and pinker, and honestly the new photo is better. A gull walked right across the frame and left a line of footprints, exactly like the \"gull-prints\" in Rafael's poem. I took forty pictures of that gull. It did not appreciate the attention.\nMr Brennan let me back into the workshop and even rearranged the jars \"so they look their best\". Kwame held a torch for the corridor shot and complained the whole time, but he stayed until it was finished.\nBy six o'clock I had everything again. Not the same photos – new ones. Some of them are better. One of them is worse. I am choosing to be fine about that.\nThings I have learned today:\n1. Always, always back up your files.\n2. Paperclips do not fix technology.\n3. If you know why you made something, you can make it again.\n4. Kwame is nicer than he pretends to be. (Do NOT tell him I wrote that.)\nTomorrow: the review. Imogen is writing it and she is already nervous, because Rafael has opinions about it. I can feel an argument coming. I am going to stay behind my camera and stay out of it.\nGoing to sleep now. Backing up the photos first. Twice.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what went wrong with Lin's photographs?",
+       "options": [
+        "The memory card could not be read",
+        "She left the camera on the bus",
+        "Kwame deleted them by mistake",
+        "The printer ruined them"
+       ],
+       "answer": "The memory card could not be read",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what object did Kwame use to try to fix the card?",
+       "options": [],
+       "answer": "a paperclip",
+       "accept": [
+        "paperclip",
+        "paper clip",
+        "a paper clip"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what question did Ms Halloran ask Lin?",
+       "options": [
+        "What did the photographs show?",
+        "Why didn't you back them up?",
+        "Who broke the laptop?",
+        "Can you borrow another camera?"
+       ],
+       "answer": "What did the photographs show?",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which line from Rafael's poem does the new gull photo match?",
+       "options": [
+        "Gull-prints",
+        "Silver sleeve",
+        "Cold, bright questions",
+        "A tall man"
+       ],
+       "answer": "Gull-prints",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which feature shows that this text is an informal diary?",
+       "options": [
+        "Short exclamations and private asides",
+        "Formal greetings and a signature",
+        "Headlines and quotations",
+        "A list of sources"
+       ],
+       "answer": "Short exclamations and private asides",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is Imogen being 'very calm' described as scarier than shouting?",
+       "options": [
+        "It shows how serious the problem is",
+        "Imogen never speaks",
+        "Calm people are always angry",
+        "Lin does not like quiet people"
+       ],
+       "answer": "It shows how serious the problem is",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the main lesson Lin learns, beyond backing up files?",
+       "options": [
+        "Knowing why you made something lets you make it again",
+        "Old cameras are better than new ones",
+        "Diaries should be kept secret",
+        "Teachers should fix technology"
+       ],
+       "answer": "Knowing why you made something lets you make it again",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Lin writes that Kwame is 'nicer than he pretends to be'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Brave Rather Than Tuneful",
+     "synopsis": "Imogen writes a review of the school play, and an argument with Rafael teaches her how to be honest and fair at the same time.",
+     "text": "The school play that term was an adaptation of an old sea legend, performed by Years 7 and 8 in the drama studio. Imogen went on Wednesday evening with a notebook and a borrowed pen, determined to write a review as sharp as the one she had found in the archive – the one that called the brass section \"brave rather than tuneful\".\nHer first draft was certainly sharp.\n\"The storm scene was chaotic, the lighting kept failing and the lead actor forgot his lines twice. The ship, made of cardboard, looked as if it might sink before the actors did.\"\nShe read it aloud in the Gazette office, expecting laughter. Kwame did laugh. Rafael did not.\n\"My cousin's in that play,\" he said. \"She's in Year 7. She was terrified for weeks.\"\n\"It's a review,\" said Imogen. \"Reviews are supposed to be honest.\"\n\"Honest isn't the same as mean.\"\nThe argument went round and round. Imogen felt hot and defensive. She had worked hard on those sentences; the cardboard-ship joke was the best line she had written all term. But a small, uncomfortable part of her knew Rafael had a point.\nLin, from behind her camera, said quietly, \"Who's going to read it?\"\nImogen stopped. Audience and purpose – the first things Ms Halloran always asked about. The readers would be students, parents and the actors themselves. The purpose was to tell people what the play was like, and whether it was worth seeing next year.\n\"The old review was funny,\" Lin went on, \"but it was about the school brass band. Grown-ups and older students. Not eleven-year-olds in their first play.\"\nImogen took the draft home that night and rewrote it. She did not remove the problems – that would have been dishonest. But she placed them in balance with what had worked, and she chose her words with more care.\n\"The storm scene was ambitious: when the lights flickered, it was hard to tell whether the problem was technical or deliberate, and the effect was oddly convincing. A cardboard ship rocked bravely through the waves, and if the lead actor lost his place once or twice, he recovered with the calm of a real sea captain. The real triumph was the chorus of Year 7 sailors, whose sea song was the moment the whole audience fell silent.\"\nThe next morning she gave it to Rafael without a word. He read it twice.\n\"'Rocked bravely,'\" he said, smiling. \"You kept the joke. Sort of.\"\n\"I kept the truth,\" said Imogen. \"I just thought about who it was for.\"\n\"My cousin was in the chorus,\" said Rafael.\n\"I know,\" said Imogen. \"That's not why I praised it. They really were the best thing in it.\"\nKwame looked between them. \"So nobody's arguing any more? Good. Because the print shop needs everything by Friday at four, and it's already Thursday.\"\nEveryone went quiet. Imogen looked at the calendar on the wall, then at the pile of unfinished pages on the desk.\nTwenty-four hours. Seven pieces. One magazine.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who performed the school play?",
+       "options": [
+        "Years 7 and 8",
+        "Year 9",
+        "The teachers",
+        "Years 10 and 11"
+       ],
+       "answer": "Years 7 and 8",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is Rafael upset by Imogen's first draft?",
+       "options": [
+        "His cousin is in the play",
+        "He wanted to write the review",
+        "He thinks it is too long",
+        "He loved the lighting"
+       ],
+       "answer": "His cousin is in the play",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what question from Lin makes Imogen stop and think?",
+       "options": [
+        "Who's going to read it?",
+        "Why did you go on Wednesday?",
+        "Where is your notebook?",
+        "Did you enjoy the play?"
+       ],
+       "answer": "Who's going to read it?",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which part of the play does Imogen's final review call 'the real triumph'?",
+       "options": [
+        "The chorus of Year 7 sailors",
+        "The cardboard ship",
+        "The lighting",
+        "The lead actor's speech"
+       ],
+       "answer": "The chorus of Year 7 sailors",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Imogen's second draft differ from her first?",
+       "options": [
+        "It balances problems with strengths",
+        "It removes all criticism",
+        "It is only about the lighting",
+        "It is written as a poem"
+       ],
+       "answer": "It balances problems with strengths",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Imogen mean by 'I kept the truth'?",
+       "options": [
+        "She still mentioned the real problems",
+        "She copied the old review",
+        "She told Rafael a secret",
+        "She checked the facts with the actors"
+       ],
+       "answer": "She still mentioned the real problems",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the effect of the final three short sentences?",
+       "options": [
+        "They create tension about the deadline",
+        "They describe the play's ending",
+        "They show Imogen is bored",
+        "They introduce a new character"
+       ],
+       "answer": "They create tension about the deadline",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Do you think Imogen's second review is better than the first? Why?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Four O'Clock",
+     "synopsis": "Racing against a deadline, the team plans, writes and checks the final pages, and a surprise from the archive arrives just as the magazine is printed.",
+     "text": "On Friday the Gazette office looked like the scene of a small explosion. Pages covered every surface. Lin's laptop balanced on a stack of old issues. Mr Brennan's new stapler sat in the middle of the desk like a trophy.\nImogen had written a list on the whiteboard:\n1. Editor's letter – NOT WRITTEN\n2. Index page – NOT DONE\n3. Final proofread – EVERYTHING\n\"Two hours,\" she said at lunchtime. \"We've got from half past one until half past three. Then Lin cycles to the print shop.\"\nKwame stared at the whiteboard. \"That's impossible.\"\n\"It's not impossible,\" said Rafael. \"It's a timed essay. We've done those all term.\"\nHe was right, Imogen thought. In timed English assessments, Ms Halloran always said the same three words: plan, write, check. Don't spend the whole time planning. Don't skip the checking. Leave ten minutes at the end.\nSo they divided the work. Imogen took the editor's letter. She gave herself ten minutes to plan, jotting down three ideas: why the Gazette had stopped, why they had brought it back, and who they wanted to hear from next. Then she wrote for twenty minutes without stopping, crossing nothing out.\nLin built the index page. Rafael and Kwame swapped articles and read each other's work line by line, a pencil in hand.\n\"You've spelled 'estuary' wrong,\" said Kwame.\n\"You've written 'there' instead of 'their' twice,\" said Rafael.\n\"That was a test,\" said Kwame. \"Well done.\"\nAt three o'clock Imogen read her letter aloud. It ended: \"This magazine belongs to everyone who has something to say. The door at the end of the English corridor is open. Please come in.\"\nFor a moment no one spoke. Then Lin said simply, \"Yes,\" and added the letter to the front pages.\nThey used the final ten minutes exactly as Ms Halloran advised: checking. They found a missing caption, a wrong date and a full stop in the middle of a headline. At 3.31 Lin put the memory stick in her pocket – backed up twice – and cycled away into the drizzle.\nOn Monday morning one hundred copies of The Saltmarsh Gazette sat in a box outside the library. By break, there were none left. Imogen saw Year 7s reading the play review in the corridor. She saw a teacher laughing at Kwame's interview. She saw Mr Brennan, in his workshop, pinning a copy to the wall.\nAt lunch, Ms Halloran came into the office holding an envelope. It was old, yellowed, addressed in faded ink to \"The Editors of The Saltmarsh Gazette – whoever you are\".\n\"I found it at the back of the archive,\" she said. \"The last editors left it six years ago. I think they hoped someone would come.\"\nImogen opened it carefully. Inside was a single sheet of paper and three words, written in the same proud capital letters as the old poster:\nKEEP IT GOING.\nShe looked up at the others. Rafael was already reaching for his notebook.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what time did Lin need to leave for the print shop?",
+       "options": [
+        "Half past three",
+        "Four o'clock",
+        "Half past one",
+        "Three o'clock"
+       ],
+       "answer": "Half past three",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which three words does Ms Halloran always say about timed assessments?",
+       "options": [
+        "Plan, write, check",
+        "Read, think, write",
+        "Start, stop, finish",
+        "Draft, edit, print"
+       ],
+       "answer": "Plan, write, check",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long did Imogen spend planning her editor's letter?",
+       "options": [
+        "Ten minutes",
+        "Twenty minutes",
+        "Two hours",
+        "Five minutes"
+       ],
+       "answer": "Ten minutes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which word had Rafael spelled wrong?",
+       "options": [
+        "Estuary",
+        "Their",
+        "Caption",
+        "Headline"
+       ],
+       "answer": "Estuary",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the team find during the final check?",
+       "options": [
+        "A missing caption, a wrong date and a misplaced full stop",
+        "A missing poem",
+        "A broken stapler",
+        "A photograph of Rafael"
+       ],
+       "answer": "A missing caption, a wrong date and a misplaced full stop",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how can we tell the magazine was a success?",
+       "options": [
+        "All the copies were gone by break",
+        "The head teacher wrote a review",
+        "It won a national prize",
+        "The print shop gave a discount"
+       ],
+       "answer": "All the copies were gone by break",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Rafael 'reaching for his notebook' at the end suggest?",
+       "options": [
+        "He is ready to start the next issue",
+        "He wants to write down the message",
+        "He is bored",
+        "He has forgotten his homework"
+       ],
+       "answer": "He is ready to start the next issue",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the last editors wrote 'Keep it going' instead of a longer letter?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
