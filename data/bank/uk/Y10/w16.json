@@ -4616,7 +4616,1406 @@
      "errors": []
     }
    ]
+  },
+  "sci": {
+   "topic": "Physics: energy stores, transfers and work done",
+   "questions": [
+    {
+     "id": "rp24jx81d2n7wc",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which of these is an energy store?",
+     "options": [
+      "Kinetic",
+      "Heating",
+      "Radiation",
+      "Electrical current"
+     ],
+     "answer": "Kinetic",
+     "accept": [],
+     "hint": "Stores hold energy; pathways move it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jypac41h2y59k",
+     "subject": "sci",
+     "type": "mc",
+     "q": "A stretched spring stores energy in which store?",
+     "options": [
+      "Elastic potential",
+      "Chemical",
+      "Thermal",
+      "Nuclear"
+     ],
+     "answer": "Elastic potential",
+     "accept": [],
+     "hint": "Think about objects that are deformed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1e0tklmo0w25x",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Food, fuels and batteries all store energy in which store?",
+     "options": [
+      "Chemical",
+      "Kinetic",
+      "Gravitational potential",
+      "Magnetic"
+     ],
+     "answer": "Chemical",
+     "accept": [],
+     "hint": "The energy is released by reactions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cavys51pmd9e4",
+     "subject": "sci",
+     "type": "short",
+     "q": "What is the unit of energy?",
+     "options": [],
+     "answer": "joule",
+     "accept": [
+      "joules",
+      "J"
+     ],
+     "hint": "It is named after a 19th-century physicist.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhx93tm1cb6if7",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which is NOT a way energy is transferred between stores?",
+     "options": [
+      "Evaporating",
+      "Mechanically",
+      "Electrically",
+      "By heating"
+     ],
+     "answer": "Evaporating",
+     "accept": [],
+     "hint": "There are four main pathways, including radiation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrpvoeelm63c7",
+     "subject": "sci",
+     "type": "mc",
+     "q": "State the law of conservation of energy.",
+     "options": [
+      "Energy cannot be created or destroyed, only transferred",
+      "Energy is always destroyed when it is used",
+      "Energy can be created by machines",
+      "Energy always stays in the same store"
+     ],
+     "answer": "Energy cannot be created or destroyed, only transferred",
+     "accept": [],
+     "hint": "Think about the total amount of energy in a closed system.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh10ditfsdb2w",
+     "subject": "sci",
+     "type": "mc",
+     "q": "A ball is dropped from a height. As it falls, energy is transferred from which store to which store?",
+     "options": [
+      "Gravitational potential to kinetic",
+      "Kinetic to gravitational potential",
+      "Chemical to elastic potential",
+      "Thermal to kinetic"
+     ],
+     "answer": "Gravitational potential to kinetic",
+     "accept": [],
+     "hint": "Its height decreases and its speed increases.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cpbyrs11c3d4v",
+     "subject": "sci",
+     "type": "mc",
+     "q": "When a car brakes and stops, most of its kinetic energy ends up in which store?",
+     "options": [
+      "Thermal store of the brakes and surroundings",
+      "Chemical store of the fuel",
+      "Elastic store of the tyres",
+      "Nuclear store of the car"
+     ],
+     "answer": "Thermal store of the brakes and surroundings",
+     "accept": [],
+     "hint": "Brakes work by friction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fip3hmt851i1",
+     "subject": "sci",
+     "type": "short",
+     "q": "Write the equation linking work done, force and distance moved along the line of the force.",
+     "options": [],
+     "answer": "W = F × d",
+     "accept": [
+      "work done = force × distance",
+      "W = Fd",
+      "W=Fd",
+      "W = F x d",
+      "work done = force x distance",
+      "W = F × s",
+      "W = Fs"
+     ],
+     "hint": "Multiply two quantities.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxljw8gwtxh9k",
+     "subject": "sci",
+     "type": "num",
+     "q": "A force of 20 N pushes a box 5 m along the floor. Calculate the work done in joules.",
+     "options": [],
+     "answer": "100",
+     "accept": [],
+     "hint": "Use work done = force × distance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sw9x6l1ond5fq",
+     "subject": "sci",
+     "type": "num",
+     "q": "A crane lifts a load with a force of 1500 N through a height of 12 m. Calculate the work done in joules.",
+     "options": [],
+     "answer": "18000",
+     "accept": [],
+     "hint": "Multiply the force by the distance moved.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qtm84v1gld6fo",
+     "subject": "sci",
+     "type": "num",
+     "q": "A student does 240 J of work pushing a trolley with a force of 60 N. Calculate the distance the trolley moved in metres.",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Rearrange: distance = work done ÷ force.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry7lurh116xsor",
+     "subject": "sci",
+     "type": "num",
+     "q": "A cyclist does 3.6 kJ of work travelling 90 m. Calculate the average force applied in newtons.",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "Convert kJ to J first, then divide by the distance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dhjef9humv4u",
+     "subject": "sci",
+     "type": "mc",
+     "q": "A motor transfers 500 J of energy. 350 J goes to the kinetic store of the load. The rest is wasted. How much energy is wasted, and where does it mostly go?",
+     "options": [
+      "150 J, to the thermal store of the surroundings",
+      "850 J, to the thermal store of the surroundings",
+      "150 J, it is destroyed",
+      "350 J, to the chemical store"
+     ],
+     "answer": "150 J, to the thermal store of the surroundings",
+     "accept": [],
+     "hint": "Energy is conserved: input = useful + wasted.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1clfek018apbd9",
+     "subject": "sci",
+     "type": "open",
+     "q": "Describe the energy transfers that take place when a battery-powered fan is switched on and running.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Start with the battery's store, name the pathway, and say where the useful and wasted energy go.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10ga4060baeb",
+     "subject": "sci",
+     "type": "open",
+     "q": "A pendulum swings for a while and eventually stops. Explain, using the idea of conservation of energy, why it stops even though energy is not destroyed.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about friction and air resistance, and what happens to the surroundings.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa": {
+   "topic": "Travel and transport: means of transport and journeys (por, para)",
+   "questions": [
+    {
+     "id": "rnf6d0qrhuexx",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct Spanish word for 'the train'.",
+     "options": [
+      "el tren",
+      "el coche",
+      "el barco",
+      "el avión"
+     ],
+     "answer": "el tren",
+     "accept": [],
+     "hint": "It looks similar to the English word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj8xm76189q625",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'on foot'.",
+     "options": [],
+     "answer": "a pie",
+     "accept": [
+      "a pié"
+     ],
+     "hint": "It uses the word for 'foot'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i06e011wj2g0k",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Complete the sentence: Voy al instituto ___ autobús.",
+     "options": [
+      "en",
+      "a",
+      "de",
+      "por"
+     ],
+     "answer": "en",
+     "accept": [],
+     "hint": "Most means of transport use the same preposition, except walking.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtwp1ij2v9u8e",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does 'un billete de ida y vuelta' mean?",
+     "options": [
+      "A return ticket",
+      "A single ticket",
+      "A timetable",
+      "A boarding pass"
+     ],
+     "answer": "A return ticket",
+     "accept": [],
+     "hint": "'Ida' is going; 'vuelta' is coming back.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r989vcqjklzjg",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'a single ticket' (one way).",
+     "options": [],
+     "answer": "un billete de ida",
+     "accept": [
+      "billete de ida",
+      "un billete sencillo",
+      "billete sencillo"
+     ],
+     "hint": "Think of 'ida y vuelta' and remove one part.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hb4ey3147dbxi",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which question asks 'What time does the train leave?'",
+     "options": [
+      "¿A qué hora sale el tren?",
+      "¿Cuánto cuesta el tren?",
+      "¿De dónde es el tren?",
+      "¿Dónde está el tren?"
+     ],
+     "answer": "¿A qué hora sale el tren?",
+     "accept": [],
+     "hint": "'Salir' means to leave.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rob7bre1igp6vi",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose por or para: Este regalo es ___ mi madre.",
+     "options": [
+      "para",
+      "por"
+     ],
+     "answer": "para",
+     "accept": [],
+     "hint": "Who is the gift intended for?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1z0c6m3oge3ym",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose por or para: Paseamos ___ el parque.",
+     "options": [
+      "por",
+      "para"
+     ],
+     "answer": "por",
+     "accept": [],
+     "hint": "This means moving through or around a place.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl3vj8cjeohww",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose por or para: Salgo ___ Madrid mañana.",
+     "options": [
+      "para",
+      "por"
+     ],
+     "answer": "para",
+     "accept": [],
+     "hint": "Think of destination.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rowbewe193l668",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose por or para: Gracias ___ tu ayuda.",
+     "options": [
+      "por",
+      "para"
+     ],
+     "answer": "por",
+     "accept": [],
+     "hint": "This is a fixed expression for thanking someone.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tz997bhsa7ot",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose por or para: Estudio mucho ___ aprobar el examen.",
+     "options": [
+      "para",
+      "por"
+     ],
+     "answer": "para",
+     "accept": [],
+     "hint": "It expresses purpose: 'in order to'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ozzu318tl1hc",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose por or para: Viajamos ___ la mañana.",
+     "options": [
+      "por",
+      "para"
+     ],
+     "answer": "por",
+     "accept": [],
+     "hint": "It refers to a part of the day.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc7iga21g7cyys",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: 'I go to school by bike.'",
+     "options": [],
+     "answer": "Voy al instituto en bici",
+     "accept": [
+      "Voy al colegio en bici",
+      "Voy al instituto en bicicleta",
+      "Voy al colegio en bicicleta",
+      "Voy a la escuela en bici",
+      "Voy a la escuela en bicicleta"
+     ],
+     "hint": "Use 'voy', 'al' and 'en'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r588wgp19ostyl",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Which sentence means 'I prefer to travel by plane because it is faster'?",
+     "options": [
+      "Prefiero viajar en avión porque es más rápido",
+      "Prefiero viajar en tren porque es más barato",
+      "Prefiero ir a pie porque es más sano",
+      "Prefiero viajar en avión pero es más lento"
+     ],
+     "answer": "Prefiero viajar en avión porque es más rápido",
+     "accept": [],
+     "hint": "Look for 'avión' and 'rápido'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r72ehn8g1uw4e",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write 2–3 sentences in Spanish describing how you usually travel to school and why. Use at least one opinion and one comparison (más ... que).",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Example structure: Normalmente voy ... porque ... Es más ... que ...",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a54f1t9ych3e",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write a short dialogue in Spanish (3–4 lines) buying a return train ticket to Sevilla and asking what time the train leaves.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use 'Quisiera...', 'de ida y vuelta' and '¿A qué hora...?'",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Menino que Veio de Avião",
+   "premise": "Davi, um adolescente paulistano, passa as férias em Caruaru e, com o tio-avô cordelista Severino e a prima Nina, aprende a métrica da sextilha, a xilogravura, a peleja e a função social do cordel, até publicar e declamar o próprio folheto.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A corda da feira",
+     "synopsis": "Davi, um garoto paulistano, passa as férias de julho com a avó em Caruaru e descobre, numa banca da feira, os folhetos pendurados num barbante e o tio-avô Severino, que declama versos para quem passa.",
+     "text": "Davi tinha quinze anos e uma certeza: férias boas eram férias com internet rápida. Por isso, quando a mãe anunciou que ele passaria julho inteiro na casa da avó Zefinha, em Caruaru, no agreste de Pernambuco, ele fez a cara mais emburrada que conseguiu.\nNo segundo dia, a avó o acordou cedo. — Hoje é dia de feira, menino. Quem não vai à feira não conhece a cidade.\nA feira era um mundo. Havia barracas de queijo coalho, de redes coloridas, de bonecos de barro, de panelas de alumínio que brilhavam ao sol. Havia um homem vendendo raízes para chá e uma mulher que gritava o preço da macaxeira como se cantasse. Davi andava devagar, tentando não perder a avó de vista, quando ouviu uma voz grave, ritmada, que se destacava do barulho.\n— Vou contar uma história / Que se passou no sertão / De um menino que sonhava / Com um verso em cada mão...\nUm senhor magro, de chapéu de palha e camisa de botão, segurava um livrinho fino e lia em voz alta, marcando o ritmo com a cabeça. Atrás dele, presos por pregadores num barbante esticado entre duas estacas, balançavam dezenas de folhetos de papel simples, cada um com uma capa em preto e branco: um vaqueiro, uma onça, uma moça na janela, um avião.\n— Esse é seu tio Severino — disse a avó, sorrindo. — Meu irmão mais velho. Poeta de cordel desde moço.\nDavi não sabia que tinha um tio poeta. Muito menos que existia uma coisa chamada cordel. O tio terminou a estrofe, recebeu uns aplausos tímidos, vendeu dois folhetos e só então olhou para o sobrinho-neto.\n— Então é você o paulista! Sabe por que isso aqui se chama cordel?\nDavi olhou para o barbante e arriscou: — Por causa da cordinha?\n— Na mosca! — riu Severino. — Lá em Portugal, há muito tempo, já se vendiam folhetos assim, pendurados em cordões. A gente aqui no Nordeste tomou o nome emprestado e fez a nossa própria poesia. Mas repare numa coisa: o cordel não nasceu para ficar quieto na prateleira. Ele nasceu para ser lido em voz alta, na feira, na calçada, no alpendre. Antigamente muita gente do sertão não sabia ler. Um lia, e vinte escutavam.\nDavi pegou um folheto. Era pequeno, do tamanho de uma mão aberta, com poucas páginas e o papel meio áspero. Na capa, um desenho de traços grossos mostrava um homem montado num jumento, debaixo de um sol enorme.\n— Esse desenho é feito como? — perguntou.\n— Isso é xilogravura — respondeu o tio, com um brilho nos olhos. — Desenho cavado na madeira. Mas essa conversa é longa. Se quiser saber, aparece amanhã lá em casa, no ateliê.\nNo caminho de volta, carregando um saco de queijo e três folhetos que a avó comprou, Davi percebeu que não tinha olhado o celular nem uma vez a manhã toda. E, pela primeira vez desde que chegara, estava curioso para que o dia seguinte chegasse logo.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde Davi passa as férias de julho?",
+       "options": [
+        "Em Caruaru, na casa da avó",
+        "Em Recife, na casa do tio",
+        "Em São Paulo, com a mãe",
+        "Em Portugal, numa viagem"
+       ],
+       "answer": "Em Caruaru, na casa da avó",
+       "accept": [],
+       "hint": "Releia o começo do capítulo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como os folhetos ficavam expostos na banca?",
+       "options": [
+        "Presos por pregadores num barbante",
+        "Empilhados numa caixa de madeira",
+        "Guardados numa estante de vidro",
+        "Espalhados sobre uma rede"
+       ],
+       "answer": "Presos por pregadores num barbante",
+       "accept": [],
+       "hint": "Observe a descrição da banca do tio.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do tio-avô poeta de Davi?",
+       "options": [],
+       "answer": "Severino",
+       "accept": [
+        "Tio Severino",
+        "Seu Severino"
+       ],
+       "hint": "É o irmão mais velho da avó.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo o tio, de onde vem o nome “cordel”?",
+       "options": [
+        "Dos cordões em que os folhetos eram pendurados",
+        "Do nome de um poeta antigo",
+        "De uma dança da feira",
+        "Do tipo de papel usado"
+       ],
+       "answer": "Dos cordões em que os folhetos eram pendurados",
+       "accept": [],
+       "hint": "Lembre-se do palpite de Davi.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o cordel era lido em voz alta antigamente, segundo o tio?",
+       "options": [
+        "Porque muita gente do sertão não sabia ler",
+        "Porque os folhetos eram caros demais",
+        "Porque era proibido ler sozinho",
+        "Porque os folhetos não tinham letras"
+       ],
+       "answer": "Porque muita gente do sertão não sabia ler",
+       "accept": [],
+       "hint": "Pense no que o tio diz sobre “um lia, e vinte escutavam”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como se chama a técnica do desenho “cavado na madeira” das capas?",
+       "options": [],
+       "answer": "Xilogravura",
+       "accept": [
+        "xilogravura"
+       ],
+       "hint": "A palavra começa com “xilo”, que quer dizer madeira.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra a mudança de atitude de Davi no fim do dia?",
+       "options": [
+        "Ele não olhou o celular e ficou ansioso pelo dia seguinte",
+        "Ele decidiu voltar para São Paulo mais cedo",
+        "Ele comprou todos os folhetos do tio",
+        "Ele pediu à avó para nunca mais ir à feira"
+       ],
+       "answer": "Ele não olhou o celular e ficou ansioso pelo dia seguinte",
+       "accept": [],
+       "hint": "Compare o começo com o último parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o autor começou a história com Davi emburrado e sem interesse pelas férias?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no efeito do contraste entre o início e o fim.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Sete sílabas",
+     "synopsis": "No ateliê, Severino ensina Davi a contar sílabas poéticas e a montar uma sextilha; depois de várias tentativas, o garoto escreve sua primeira estrofe.",
+     "text": "O ateliê do tio Severino era um quartinho nos fundos da casa, com uma mesa comprida, um rádio antigo, pilhas de papel e um cheiro forte de tinta e madeira. Na parede, pregados com tachinhas, havia dezenas de folhetos amarelados pelo tempo.\n— Antes da madeira, a palavra — disse o tio, puxando um banquinho para Davi. — O cordel tem regra, menino. Não é só rimar “amor” com “dor” e pronto.\nEle pegou um folheto e leu devagar, batendo na mesa a cada sílaba:\n— Vou / con / tar / u / ma his / tó... — e parou. — Sete. Na poesia a gente conta só até a última sílaba forte do verso. O que vem depois dela não entra. E quando uma palavra termina em vogal e a outra começa com vogal, elas podem se juntar numa sílaba só, como em “uma história”. Isso se chama sílaba poética, que é diferente da sílaba da gramática.\n— Então cada linha tem sete? — perguntou Davi.\n— A forma mais usada, sim. Verso de sete sílabas, a redondilha maior, que o povo canta desde muito antes do cordel. E a estrofe mais comum é a sextilha: seis versos. Agora o segredo: a rima fica no segundo, no quarto e no sexto verso. O primeiro, o terceiro e o quinto ficam livres.\nEle escreveu num papel de pão:\nVou contar uma história\nQue se passou no sertão\nDe um menino que sonhava\nCom um verso em cada mão\nGuardava o sol no seu peito\nQue brilhava sem razão\n— Viu? Sertão, mão, razão. Rima em B, que os estudiosos escrevem assim: A-B-C-B-D-B.\nDavi achou fácil. Pegou o lápis e, em cinco minutos, entregou ao tio:\nEu cheguei de São Paulo num avião\nPra passar as férias com a vó\n— Hum — fez Severino, contando nos dedos. — Seu primeiro verso tem onze sílabas. E “vó” não rima com nada ainda, porque você só escreveu dois versos. Paciência. Cordel é igual a cerca de arame: se um mourão fica torto, a cerca inteira entorta.\nDavi bufou, apagou, tentou de novo. E de novo. Descobriu que precisava trocar palavras longas por curtas, mudar a ordem das frases, procurar rimas em voz alta. “Sertão”, “feijão”, “chão”, “coração”. Na sexta tentativa, com a ponta do lápis já gasta, leu baixinho, contando:\nVim de longe, da cidade\nSem saber o que é sertão\nAchei que a feira era pouca\nQue era só poeira e chão\nMas um verso pendurado\nMe tomou o coração\nO tio ficou em silêncio. Contou de novo. Depois tirou o chapéu e o colocou sobre a mesa, como quem faz uma reverência.\n— Sete, sete, sete... Rima no lugar certo. Está aprovada, poeta.\nDavi riu, mas por dentro sentiu uma coisa nova, um orgulho diferente do de passar de fase num jogo. Tinha feito aquilo com as mãos e com a cabeça, sílaba por sílaba.\n— Amanhã — disse o tio, guardando o papel numa gaveta — a gente vai dar uma cara para esse verso. Traga paciência, que a madeira é ainda mais teimosa que a rima.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quantas sílabas poéticas tem a forma de verso mais usada no cordel, segundo o tio?",
+       "options": [
+        "Sete",
+        "Cinco",
+        "Dez",
+        "Doze"
+       ],
+       "answer": "Sete",
+       "accept": [],
+       "hint": "O título do capítulo dá uma pista.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como se chama a estrofe de seis versos explicada pelo tio?",
+       "options": [],
+       "answer": "Sextilha",
+       "accept": [
+        "sextilha",
+        "a sextilha"
+       ],
+       "hint": "A palavra lembra o número seis.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, em quais versos da sextilha fica a rima?",
+       "options": [
+        "No segundo, no quarto e no sexto",
+        "No primeiro, no terceiro e no quinto",
+        "Em todos os seis versos",
+        "Só no último verso"
+       ],
+       "answer": "No segundo, no quarto e no sexto",
+       "accept": [],
+       "hint": "Lembre-se do esquema A-B-C-B-D-B.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, até onde se contam as sílabas de um verso, segundo o tio?",
+       "options": [
+        "Até a última sílaba forte",
+        "Até a última letra",
+        "Até a primeira vírgula",
+        "Até a palavra que rima, sem contá-la"
+       ],
+       "answer": "Até a última sílaba forte",
+       "accept": [],
+       "hint": "O tio para de contar antes do fim de “história”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual era o problema da primeira tentativa de Davi?",
+       "options": [
+        "O primeiro verso tinha sílabas demais",
+        "Os versos não falavam do sertão",
+        "Ele escreveu em inglês",
+        "Ele copiou o verso do tio"
+       ],
+       "answer": "O primeiro verso tinha sílabas demais",
+       "accept": [],
+       "hint": "Veja o que o tio conta nos dedos.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que o tio quer dizer ao comparar o cordel a uma cerca de arame?",
+       "options": [
+        "Que um verso fora da regra estraga a estrofe toda",
+        "Que o cordel serve para proteger a casa",
+        "Que os poetas trabalham no campo",
+        "Que o cordel deve ser escrito ao ar livre"
+       ],
+       "answer": "Que um verso fora da regra estraga a estrofe toda",
+       "accept": [],
+       "hint": "Pense no que acontece com a cerca quando um mourão entorta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o tio coloca o chapéu sobre a mesa no final?",
+       "options": [
+        "Para mostrar respeito pelo verso de Davi",
+        "Porque estava com calor",
+        "Para cobrir o papel de pão",
+        "Porque ia sair para a feira"
+       ],
+       "answer": "Para mostrar respeito pelo verso de Davi",
+       "accept": [],
+       "hint": "O narrador compara o gesto a uma reverência.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Davi sentiu um orgulho “diferente do de passar de fase num jogo”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no esforço e nas tentativas.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A madeira e a goiva",
+     "synopsis": "Severino ensina Davi a fazer uma xilogravura para a capa do futuro folheto, e o garoto aprende, do jeito difícil, que a imagem sai ao contrário.",
+     "text": "Na manhã seguinte, o tio colocou sobre a mesa um pedaço de madeira clara, lisinha, do tamanho de um caderno pequeno.\n— Imburana — disse, passando a mão por cima como quem acaricia um bicho. — Madeira macia, boa de cortar. Tem gravador que usa cajá, outros usam até compensado. Cada um com seu jeito.\nAo lado da madeira, espalhou as ferramentas: umas hastes de metal com cabo de madeira e pontas de formatos diferentes, em V, em U, retas.\n— São as goivas. É com elas que a gente cava. E presta atenção na regra de ouro da xilogravura: o que você cava fica branco. O que fica em pé recebe tinta e sai preto no papel.\nDavi pensou um pouco. — Então eu tenho que tirar a madeira de tudo o que não é desenho?\n— Isso. A gente trabalha pelo avesso, menino. É por isso que o traço da xilogravura é grosso, forte, sem sombra delicada. Não dá para fazer fio de cabelo com goiva.\nDavi decidiu que a capa do seu futuro folheto mostraria um menino com um avião no céu e um mandacaru do lado. Desenhou a lápis direto na madeira, caprichando. Escreveu embaixo, em letras grandes: SERTÃO.\nO tio olhou e coçou o queixo, mas não disse nada.\nDurante duas horas, Davi cavou. A goiva escorregava, a madeira resistia nos nós, os dedos doíam. Duas vezes tirou um pedaço que não devia, e teve que transformar o erro numa nuvem. O tio só observava, de vez em quando corrigindo o ângulo da mão do sobrinho para a ferramenta não escapar na direção do corpo.\n— Sempre empurre para longe de você — repetia.\nQuando terminou, Severino espalhou tinta preta numa placa de vidro e passou o rolo de borracha até ele ficar uniforme. Rolou a tinta sobre a madeira, colocou por cima uma folha de papel e esfregou com as costas de uma colher de pau, em círculos, com cuidado.\n— Agora levanta devagar.\nDavi puxou o papel pela ponta. E lá estava: o menino, o mandacaru, o avião, as nuvens. Preto e branco, forte, bonito. E, embaixo, em letras enormes: OÃTRES.\n— Ah, não! — Davi bateu na testa. — Saiu ao contrário!\nO tio enfim gargalhou. — Tudo o que vai na madeira sai espelhado no papel. O avião, que você desenhou indo para a direita, agora voa para a esquerda. Com o desenho não tem problema. Mas letra... letra tem que ser feita de trás para a frente.\nDavi ficou chateado por um minuto. Depois olhou de novo a gravura e começou a rir também. Pegou outra folha, imprimiu mais uma vez e pendurou as duas no barbante do ateliê para secar.\n— Vou deixar assim mesmo — decidiu. — Fica como lembrança da primeira.\n— Aprendeu mais com esse erro do que com dez acertos — disse o tio. — A gente faz outra matriz amanhã, com o título certinho. E sabe de uma coisa? Muita xilogravura nasceu para ser capa de cordel e hoje está em parede de museu. A arte do povo também é arte.\nÀ noite, Davi mandou à mãe uma foto da gravura com a legenda: “Spoiler: as letras saem ao contrário.”",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da madeira que o tio coloca sobre a mesa?",
+       "options": [],
+       "answer": "Imburana",
+       "accept": [
+        "imburana",
+        "Umburana"
+       ],
+       "hint": "É a primeira palavra que o tio diz no capítulo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, como se chamam as ferramentas usadas para cavar a madeira?",
+       "options": [],
+       "answer": "Goivas",
+       "accept": [
+        "goivas",
+        "goiva",
+        "As goivas"
+       ],
+       "hint": "A palavra está no título do capítulo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a “regra de ouro”, o que acontece com a parte que é cavada na madeira?",
+       "options": [
+        "Fica branca no papel",
+        "Fica preta no papel",
+        "Fica colorida no papel",
+        "Some do desenho e do papel"
+       ],
+       "answer": "Fica branca no papel",
+       "accept": [],
+       "hint": "Pense no que recebe tinta e no que não recebe.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o traço da xilogravura costuma ser grosso e forte?",
+       "options": [
+        "Porque a goiva não permite detalhes muito finos",
+        "Porque a tinta é muito rala",
+        "Porque o papel é muito pequeno",
+        "Porque os compradores só gostam de traço grosso"
+       ],
+       "answer": "Porque a goiva não permite detalhes muito finos",
+       "accept": [],
+       "hint": "O tio fala de “fio de cabelo”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que o tio usa para pressionar o papel sobre a madeira com tinta?",
+       "options": [
+        "As costas de uma colher de pau",
+        "Uma prensa elétrica",
+        "As mãos molhadas",
+        "Um martelo"
+       ],
+       "answer": "As costas de uma colher de pau",
+       "accept": [],
+       "hint": "Releia a parte da impressão.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a palavra SERTÃO saiu errada no papel?",
+       "options": [
+        "Porque a imagem da madeira sai espelhada",
+        "Porque Davi escreveu com erro de ortografia",
+        "Porque a tinta borrou as letras",
+        "Porque o tio trocou a madeira"
+       ],
+       "answer": "Porque a imagem da madeira sai espelhada",
+       "accept": [],
+       "hint": "Veja o que acontece também com o avião.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase “A arte do povo também é arte” revela sobre o tio?",
+       "options": [
+        "Ele valoriza a cultura popular tanto quanto a arte de museu",
+        "Ele acha que museus não deveriam existir",
+        "Ele não gosta de xilogravura",
+        "Ele quer vender suas gravuras caro"
+       ],
+       "answer": "Ele valoriza a cultura popular tanto quanto a arte de museu",
+       "accept": [],
+       "hint": "Pense no que ele diz sobre capas de cordel e museus.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o tio viu o erro no desenho de Davi e não disse nada antes da impressão?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense na frase sobre aprender com o erro.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A peleja",
+     "synopsis": "A prima Nina chega para o fim de semana e desafia Davi para uma peleja em versos; os dois descobrem a diferença entre o cordel escrito e o repente improvisado.",
+     "text": "No sábado chegou a prima Nina, filha de uma sobrinha da avó, que morava em Campina Grande e tinha a mesma idade de Davi. Bastaram dez minutos para os dois descobrirem que competiam em tudo: quem subia mais rápido no pé de cajá, quem acertava mais pedrinhas na lata, quem comia mais cuscuz.\nÀ tarde, o tio Severino chamou os dois para o alpendre.\n— Já que vocês gostam tanto de briga, vou ensinar a briga mais bonita que existe: a peleja.\nExplicou que, no cordel, a peleja é a história de um desafio entre dois poetas, cada um tentando vencer o outro com versos mais espertos. — Muitas pelejas famosas foram escritas como se tivessem acontecido de verdade, mas foram inventadas no papel pelo poeta. O leitor se diverte torcendo para um lado.\n— E o repente? — perguntou Nina. — Meu avô gosta de ver os cantadores na televisão.\n— Aí é outra coisa, mas é parente — disse o tio. — O repentista canta de improviso, acompanhado da viola, na hora, sem papel. A cantoria é feita de dupla: um canta, o outro responde, e cada um tem que pegar a rima que o outro deixou. O cordel é escrito, pensado, revisado e impresso. O repente nasce e morre no ar, a não ser que alguém grave. Um é do papel, o outro é da voz. Mas os dois usam a mesma música das sete sílabas.\nEle propôs uma brincadeira: cada um escreveria uma sextilha provocando o outro, com quinze minutos de prazo. Depois leriam em voz alta, e a avó seria a juíza.\nDavi suou. Nina mordia o lápis. Quando o tempo acabou, Nina leu primeiro, com a mão na cintura:\nEsse primo paulistano\nChegou cheio de razão\nDiz que sabe muita coisa\nMas não sabe o que é baião\nSubiu no pé de cajá\nCaiu sentado no chão\nO alpendre explodiu em risadas. Até Davi riu, vermelho. Então se levantou e leu a sua:\nA priminha de Campina\nTem a língua de trovão\nMas quem perde no cuscuz\nNão pode cantar vitão...\nParou. — “Vitão” não existe, né?\n— Não existe — disse o tio, segurando o riso. — Rima forçada é o pecado mortal do poeta.\nDavi ficou desapontado, mas Nina, para surpresa de todos, sugeriu: — Troca por “Não pode ganhar o pão”.\nA avó bateu palmas e declarou empate técnico, com uma condição: os dois teriam de escrever juntos a próxima estrofe. Naquela noite, sentados no chão do alpendre, com uma lanterna e um caderno, os primos descobriram que rimar a dois era mais difícil que rimar sozinho, e muito mais divertido. A competição não tinha acabado, mas tinha mudado de lado: agora era os dois contra a métrica.\nAntes de dormir, Davi anotou no celular: “Peleja = desafio escrito. Repente = improviso cantado. Nina = rival perigosa.”",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, em que cidade mora a prima Nina?",
+       "options": [],
+       "answer": "Campina Grande",
+       "accept": [
+        "campina grande"
+       ],
+       "hint": "Veja o primeiro parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que é uma peleja no cordel, segundo o tio?",
+       "options": [
+        "A história de um desafio em versos entre dois poetas",
+        "Uma dança típica das festas juninas",
+        "Um tipo de madeira para xilogravura",
+        "Uma briga de verdade na feira"
+       ],
+       "answer": "A história de um desafio em versos entre dois poetas",
+       "accept": [],
+       "hint": "O tio a chama de “a briga mais bonita que existe”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a principal diferença entre o cordel e o repente?",
+       "options": [
+        "O cordel é escrito; o repente é improvisado e cantado",
+        "O cordel é cantado; o repente é escrito",
+        "O cordel usa viola; o repente usa sanfona",
+        "O cordel é em prosa; o repente é em verso"
+       ],
+       "answer": "O cordel é escrito; o repente é improvisado e cantado",
+       "accept": [],
+       "hint": "O tio diz que “um é do papel, o outro é da voz”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual instrumento acompanha o repentista?",
+       "options": [
+        "A viola",
+        "O piano",
+        "O tambor",
+        "A flauta"
+       ],
+       "answer": "A viola",
+       "accept": [],
+       "hint": "Releia a explicação do tio sobre a cantoria.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o problema da sextilha de Davi?",
+       "options": [
+        "Ele usou uma palavra que não existe só para rimar",
+        "Ela tinha sete versos",
+        "Ela não falava da prima",
+        "Ele esqueceu de ler em voz alta"
+       ],
+       "answer": "Ele usou uma palavra que não existe só para rimar",
+       "accept": [],
+       "hint": "Pense em “vitão”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quem foi a juíza da peleja entre os primos?",
+       "options": [],
+       "answer": "A avó",
+       "accept": [
+        "avó",
+        "Avó Zefinha",
+        "a avó Zefinha",
+        "Zefinha"
+       ],
+       "hint": "Alguém da família que estava no alpendre.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que a relação entre Davi e Nina mudou no fim?",
+       "options": [
+        "Eles passam a escrever juntos “contra a métrica”",
+        "Eles param de se falar",
+        "Davi volta para São Paulo",
+        "Nina rasga o caderno de Davi"
+       ],
+       "answer": "Eles passam a escrever juntos “contra a métrica”",
+       "accept": [],
+       "hint": "Releia o penúltimo parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Nina ajudou Davi a corrigir a rima, mesmo sendo sua rival?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que ela valoriza mais: ganhar ou o verso bem-feito.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O jornal do sertão",
+     "synopsis": "Quando a chuva volta depois de meses de seca, Severino escreve um folheto sobre a notícia, e Davi entende que o cordel já foi o jornal de muita gente.",
+     "text": "Na terça-feira, o céu de Caruaru amanheceu cinzento. Ao meio-dia, a primeira gota bateu no telhado de zinco do ateliê, depois outra, e logo uma chuva grossa, cheirosa, encheu o quintal de barulho. A avó saiu na porta com as mãos para cima. Os vizinhos também. Fazia meses que não chovia daquele jeito.\nO tio Severino, em vez de comemorar, sentou-se à mesa e começou a escrever.\n— O que o senhor está fazendo? — perguntou Davi.\n— Notícia, menino. Chuva assim tem que virar folheto.\nEnquanto escrevia, ele contou que, por muito tempo, o cordel foi o jornal do sertão. Quando não havia televisão em todas as casas e o jornal da capital não chegava às vilas, era nos folhetos que o povo ficava sabendo das coisas: uma enchente, a chegada de uma estrada, um crime famoso, a morte de alguém importante, até a ida do homem à Lua.\n— O poeta lia a notícia nos jornais ou ouvia no rádio e transformava em verso. Aí levava para a feira, lia em voz alta, e a notícia corria de boca em boca. Com rima é mais fácil de lembrar. Experimenta esquecer uma sextilha bem-feita!\nDavi pensou nos portais de notícia que lia no celular, nas manchetes que esquecia cinco minutos depois.\n— Mas o poeta não podia aumentar a história? Inventar coisa?\nO tio parou de escrever e olhou para ele com respeito. — Boa pergunta. Podia, e às vezes aumentava. O poeta dá a sua opinião, escolhe as palavras, puxa a emoção do leitor. Por isso quem lê cordel de notícia tem que lembrar que está lendo um ponto de vista, não a verdade inteira. Igual a hoje, não é?\nDavi concordou. Era exatamente como os vídeos que a turma da escola compartilhava.\nO folheto do tio, que ele chamou de “A chuva que voltou para o agreste”, tinha oito páginas. Ele explicou que folheto de cordel tem quase sempre um número de páginas múltiplo de quatro, porque é feito dobrando folhas grandes ao meio e depois ao meio de novo: oito, dezesseis, trinta e duas.\n— Oito é o mais comum para notícia. Rápido de fazer, barato de vender.\nDavi ajudou a revisar. Contava as sílabas com o dedo, como o tio tinha ensinado, e encontrou dois versos com oito sílabas. O tio corrigiu sem reclamar e ainda agradeceu.\nNa quinta, o folheto já estava impresso numa pequena gráfica do centro, com uma xilogravura de nuvens carregadas sobre um mandacaru. Na feira, o tio leu as primeiras estrofes em voz alta. Uma senhora parou, escutou tudo e comprou três: — Um para mim e dois para mandar para meus filhos em São Paulo, que eles vão gostar de saber que choveu.\nDavi achou curioso: a notícia ia viajar de ônibus, num papel dobrado, para chegar à mesma cidade de onde ele tinha vindo. Naquela noite escreveu para a mãe: “Choveu aqui. Saiu até no jornal. No jornal de cordel.”",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que acontecimento faz o tio começar a escrever um folheto?",
+       "options": [
+        "A chuva que volta depois de meses de seca",
+        "A chegada da prima Nina",
+        "Uma enchente que destruiu a feira",
+        "O aniversário da avó"
+       ],
+       "answer": "A chuva que volta depois de meses de seca",
+       "accept": [],
+       "hint": "Veja o primeiro parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o cordel foi chamado de “jornal do sertão”?",
+       "options": [
+        "Porque levava notícias a lugares onde jornais e televisão não chegavam",
+        "Porque era impresso pela mesma gráfica dos jornais",
+        "Porque era vendido só nas bancas de revista",
+        "Porque só falava de política"
+       ],
+       "answer": "Porque levava notícias a lugares onde jornais e televisão não chegavam",
+       "accept": [],
+       "hint": "O tio fala das vilas sem televisão.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo o tio, por que a notícia em verso é mais fácil de lembrar?",
+       "options": [
+        "Por causa da rima",
+        "Porque é mais curta que uma frase",
+        "Porque tem desenhos coloridos",
+        "Porque é lida bem devagar"
+       ],
+       "answer": "Por causa da rima",
+       "accept": [],
+       "hint": "Pense na sextilha “bem-feita”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quantas páginas tinha o folheto “A chuva que voltou para o agreste”?",
+       "options": [],
+       "answer": "Oito",
+       "accept": [
+        "8",
+        "oito páginas",
+        "8 páginas"
+       ],
+       "hint": "É o número mais comum para folheto de notícia.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o número de páginas de um folheto costuma ser múltiplo de quatro?",
+       "options": [
+        "Porque as folhas grandes são dobradas ao meio duas vezes",
+        "Porque cada estrofe ocupa quatro páginas",
+        "Porque a lei obriga",
+        "Porque o poeta escreve quatro versos por página"
+       ],
+       "answer": "Porque as folhas grandes são dobradas ao meio duas vezes",
+       "accept": [],
+       "hint": "Releia a explicação sobre a dobra das folhas.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como Davi ajuda o tio com o folheto?",
+       "options": [
+        "Encontrando versos com sílabas a mais",
+        "Desenhando a capa colorida",
+        "Vendendo os folhetos sozinho",
+        "Escrevendo todas as estrofes"
+       ],
+       "answer": "Encontrando versos com sílabas a mais",
+       "accept": [],
+       "hint": "Ele usa o que aprendeu no capítulo 2.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que o tio quer ensinar quando diz que o leitor está lendo “um ponto de vista, não a verdade inteira”?",
+       "options": [
+        "Que é preciso ler qualquer notícia com senso crítico",
+        "Que os cordéis são sempre mentirosos",
+        "Que só o jornal da capital diz a verdade",
+        "Que poetas não podem dar opinião"
+       ],
+       "answer": "Que é preciso ler qualquer notícia com senso crítico",
+       "accept": [],
+       "hint": "Davi compara com os vídeos da turma da escola.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que a senhora preferiu mandar um folheto aos filhos em vez de só contar a notícia por telefone?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no valor do objeto e da poesia.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Verso em perigo?",
+     "synopsis": "Ao ver as vendas da banca caírem, Davi e Nina propõem levar o cordel para a internet, e o tio precisa decidir entre tradição e mudança.",
+     "text": "No sábado seguinte, a banca do tio vendeu só quatro folhetos a manhã inteira. Davi contou. Severino fingiu que não se importava, mas na volta ficou calado no caminho todo.\nÀ noite, na mesa da cozinha, a avó explicou: — A feira mudou, meu filho. Os mais velhos que compravam cordel estão indo embora. Os mais novos ficam no celular.\nDavi sentiu uma pontada de culpa. Três semanas antes, ele mesmo era um desses mais novos. Nina, que tinha voltado para passar mais um fim de semana, cruzou os braços.\n— Então o cordel tem que ir para o celular — disse ela. — Simples.\nO tio franziu a testa. — Cordel é papel, é barbante, é voz na feira.\n— Mas, tio — Davi arriscou —, o senhor mesmo disse que o cordel nasceu para ser falado em voz alta. Um vídeo é uma voz. Só que chega mais longe. A senhora da chuva mandou o folheto pelo ônibus para São Paulo. Um vídeo chegaria em um segundo.\nHouve um silêncio comprido. A avó serviu mais café, como sempre fazia quando uma conversa ficava importante.\n— Tem outra coisa — continuou Nina, mexendo no celular. — Olha aqui: a literatura de cordel foi reconhecida como Patrimônio Cultural Imaterial do Brasil, em 2018. Isso quer dizer que o país inteiro considera que ela é importante e precisa ser protegida.\n— Eu sei disso — respondeu o tio, um pouco mais manso. — A gente comemorou muito aqui. Mas patrimônio imaterial não é coisa de museu, trancada numa vitrine. É coisa viva, que só continua existindo se o povo continuar fazendo. Vocês sabem por que chamam de imaterial?\n— Porque não é um objeto? — tentou Davi.\n— Isso. Não é o papel que é patrimônio. É o saber: o jeito de rimar, de declamar, de gravar a madeira, de vender na feira. Se só sobrar o papel, o cordel morreu.\nDavi entendeu que o tio não estava contra a mudança. Estava com medo de que a mudança apagasse o que era essencial.\n— Então a gente faz um acordo — propôs. — Os vídeos mostram o senhor declamando de verdade, com a voz, com o chapéu, aqui no alpendre. E no fim de cada vídeo a gente mostra a banca da feira, o barbante, a xilogravura. Quem gostar vai querer o folheto de papel.\nNina completou: — E cada folheto pode ter, na última página, um aviso para as pessoas virem conhecer a banca.\nO tio coçou o queixo, olhou para a irmã, olhou para os dois. — Vocês dois estão parecendo poetas de peleja. Um puxa a rima, o outro fecha.\nNa manhã seguinte, gravaram o primeiro vídeo. Severino errou duas vezes, porque não sabia para onde olhar, e na terceira esqueceu da câmera e declamou como fazia havia cinquenta anos. Ficou perfeito. Davi não tinha certeza se o vídeo ia fazer sucesso. Mas tinha certeza de outra coisa: tradição não é o contrário de mudança. Às vezes é a mudança que mantém a tradição viva.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quantos folhetos o tio vendeu na manhã de sábado?",
+       "options": [],
+       "answer": "Quatro",
+       "accept": [
+        "4",
+        "quatro folhetos",
+        "4 folhetos"
+       ],
+       "hint": "Davi contou.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a avó, por que as vendas caíram?",
+       "options": [
+        "Os compradores mais velhos estão indo embora e os jovens ficam no celular",
+        "O preço dos folhetos subiu muito",
+        "A feira foi transferida para outra cidade",
+        "O tio parou de escrever"
+       ],
+       "answer": "Os compradores mais velhos estão indo embora e os jovens ficam no celular",
+       "accept": [],
+       "hint": "Releia a fala da avó na cozinha.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a proposta de Nina para ajudar o cordel?",
+       "options": [
+        "Levar o cordel para o celular",
+        "Vender os folhetos mais baratos",
+        "Parar de usar xilogravura",
+        "Abrir uma loja em São Paulo"
+       ],
+       "answer": "Levar o cordel para o celular",
+       "accept": [],
+       "hint": "Ela diz que é “simples”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, em que ano a literatura de cordel foi reconhecida como Patrimônio Cultural Imaterial do Brasil?",
+       "options": [],
+       "answer": "2018",
+       "accept": [
+        "Em 2018"
+       ],
+       "hint": "Nina lê a informação no celular.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo o tio, por que o cordel é um patrimônio “imaterial”?",
+       "options": [
+        "Porque o que se protege é o saber, e não o objeto de papel",
+        "Porque os folhetos são muito leves",
+        "Porque ninguém pode tocar nos folhetos",
+        "Porque ele só existe na internet"
+       ],
+       "answer": "Porque o que se protege é o saber, e não o objeto de papel",
+       "accept": [],
+       "hint": "Veja a resposta de Davi e a explicação do tio.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a avó serve mais café durante a conversa?",
+       "options": [
+        "Porque ela faz isso quando a conversa fica importante",
+        "Porque o tio pediu",
+        "Porque estava frio",
+        "Porque Nina estava com sono"
+       ],
+       "answer": "Porque ela faz isso quando a conversa fica importante",
+       "accept": [],
+       "hint": "O narrador explica o hábito da avó.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que o tio compara Davi e Nina a “poetas de peleja”?",
+       "options": [
+        "Porque um começa a ideia e o outro a completa",
+        "Porque eles brigam o tempo todo",
+        "Porque eles cantam com viola",
+        "Porque eles escrevem sem rima"
+       ],
+       "answer": "Porque um começa a ideia e o outro a completa",
+       "accept": [],
+       "hint": "Lembre-se de como funciona a cantoria em dupla.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Você concorda com a conclusão de Davi de que “às vezes é a mudança que mantém a tradição viva”? Por quê?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Use um exemplo do capítulo ou da sua vida.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O folheto de Davi",
+     "synopsis": "No último dia de férias, Davi imprime o próprio folheto e o lê na feira; de volta a São Paulo, leva o cordel para a sala de aula.",
+     "text": "Faltavam três dias para a volta a São Paulo quando o tio entregou a Davi uma matriz nova de imburana, com o título gravado ao contrário, letra por letra, do jeito certo: O MENINO QUE VEIO DE AVIÃO.\n— Agora o miolo é com você — disse.\nDavi passou as noites seguintes escrevendo. Juntou a primeira sextilha, aquela do “verso pendurado”, com estrofes novas sobre a feira, a xilogravura de letras invertidas, a peleja com a prima e a chuva que voltou. Nina, por chamada de vídeo, revisava as rimas e cortava sem dó as palavras inventadas. A avó lia cada estrofe em voz alta para testar o ritmo. “Se tropeça na minha boca, está errado”, dizia. Quando o texto ficou pronto, tinha exatamente quarenta sextilhas, o bastante para encher dezesseis páginas.\nNa gráfica, Davi viu as folhas grandes saírem da máquina, foi dobrando uma por uma ao meio e ao meio de novo, e grampeou o primeiro exemplar com as próprias mãos. A capa tinha o menino, o mandacaru e o avião, agora voando na direção certa, porque o tio o ajudara a desenhar tudo ao contrário na madeira.\nNo sábado, último dia de feira, Severino pendurou o folheto do sobrinho-neto bem no meio do barbante.\n— Hoje quem declama é o autor.\nAs pernas de Davi tremeram. Havia gente passando, gritos de vendedores, um cachorro latindo. Ele abriu o folheto, respirou fundo e começou: “Vim de longe, da cidade / Sem saber o que é sertão...”. Na segunda estrofe, a voz firmou. Na quarta, algumas pessoas pararam. Na sexta, uma menina pequena começou a bater palmas no ritmo. Quando chegou na estrofe da peleja, um senhor riu alto da parte do cajá. No fim, vendeu onze folhetos e ganhou um aperto de mão de um vendedor de redes que disse: — Esse menino tem futuro.\nÀ noite, a avó fez cuscuz com ovo e bolo de macaxeira, e o tio lhe deu de presente uma goiva com cabo de madeira gasto.\n— Foi a minha primeira — disse. — Agora é sua. Mas tem uma condição: você vai ensinar alguém.\nEm São Paulo, duas semanas depois, a professora de Português anunciou que o próximo projeto seria sobre literatura popular brasileira. Davi levantou a mão antes mesmo de ela terminar a frase. No dia da apresentação, levou o barbante, os pregadores, a matriz de imburana, a goiva e um maço de folhetos. Pendurou tudo na lousa e explicou para a turma a sextilha, as sete sílabas, a rima no segundo, no quarto e no sexto verso, a imagem espelhada da xilogravura e a diferença entre peleja e repente.\nDepois, em grupos, os colegas tentaram escrever as próprias estrofes. Um deles, o mais quieto da sala, rimou “metrô” com “avô” e ficou com o rosto todo iluminado quando a sala aplaudiu.\nNaquela noite, Davi mandou um vídeo para o tio Severino: a turma inteira, de pé, declamando junta a sua primeira sextilha. A resposta chegou de madrugada, num áudio curto, com o barulho da feira ao fundo:\n— Condição cumprida, poeta.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o título do folheto de Davi?",
+       "options": [],
+       "answer": "O menino que veio de avião",
+       "accept": [
+        "O Menino que Veio de Avião",
+        "O MENINO QUE VEIO DE AVIÃO"
+       ],
+       "hint": "Está gravado na matriz que o tio entrega.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como a avó testava o ritmo das estrofes?",
+       "options": [
+        "Lendo cada estrofe em voz alta",
+        "Contando as letras de cada verso",
+        "Cantando com uma viola",
+        "Mostrando os versos aos vizinhos"
+       ],
+       "answer": "Lendo cada estrofe em voz alta",
+       "accept": [],
+       "hint": "Ela diz: “Se tropeça na minha boca, está errado”.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quantas sextilhas tinha o folheto de Davi?",
+       "options": [],
+       "answer": "Quarenta",
+       "accept": [
+        "40",
+        "40 sextilhas",
+        "quarenta sextilhas"
+       ],
+       "hint": "Releia o fim do segundo parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que desta vez o avião da capa voou na direção certa?",
+       "options": [
+        "Porque o desenho foi feito ao contrário na madeira",
+        "Porque Davi virou o papel depois de imprimir",
+        "Porque a capa foi feita no computador",
+        "Porque o tio desenhou outro avião"
+       ],
+       "answer": "Porque o desenho foi feito ao contrário na madeira",
+       "accept": [],
+       "hint": "Lembre-se do que Davi aprendeu no capítulo 3.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é a condição que o tio coloca ao dar a goiva de presente?",
+       "options": [
+        "Que Davi ensine alguém",
+        "Que Davi volte todo ano",
+        "Que Davi nunca venda seus folhetos",
+        "Que Davi escreva só sobre o sertão"
+       ],
+       "answer": "Que Davi ensine alguém",
+       "accept": [],
+       "hint": "A última fala do tio se refere a ela.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que Davi ficou mais seguro enquanto declamava na feira?",
+       "options": [
+        "Na segunda estrofe a voz dele firmou e as pessoas começaram a parar",
+        "Ele parou de ler na primeira estrofe",
+        "Ele pediu que o tio terminasse por ele",
+        "Ele leu bem baixo para ninguém ouvir"
+       ],
+       "answer": "Na segunda estrofe a voz dele firmou e as pessoas começaram a parar",
+       "accept": [],
+       "hint": "Veja a sequência das estrofes na feira.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que significa a frase final do tio, “Condição cumprida, poeta”?",
+       "options": [
+        "Que Davi ensinou o cordel à turma, como prometido",
+        "Que Davi vendeu todos os folhetos",
+        "Que o tio vai parar de escrever",
+        "Que Davi pode voltar à feira sozinho"
+       ],
+       "answer": "Que Davi ensinou o cordel à turma, como prometido",
+       "accept": [],
+       "hint": "Ligue a fala à condição do presente.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o colega mais quieto ficou com o rosto “todo iluminado” depois de rimar “metrô” com “avô”?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que Davi sentiu no capítulo 2.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
