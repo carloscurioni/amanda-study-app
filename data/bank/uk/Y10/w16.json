@@ -6016,6 +6016,915 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "The Understudy",
+   "premise": "A play in seven scenes set in a small seaside theatre, where a shy sweeper secretly knows every line, a missing lantern causes chaos, the lead actor faces a difficult choice and a real storm arrives on opening night.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Empty Stage",
+     "synopsis": "A week before opening night, the lead actor is missing, and nobody notices that the quiet boy sweeping the stage knows every line.",
+     "text": "(A small seaside theatre, a week before opening night. The stage is bare except for a ladder, a wooden chair and a broom. Rain drums on the roof. RAFI, sixteen, sweeps slowly. As he sweeps, his lips move: he is silently speaking every line of the play.)\n(Enter IMOGEN, the director, holding a fat script full of coloured tabs. She checks her watch.)\nIMOGEN: Ten past four. Ten past! Has anyone seen Felix?\nRAFI: (stopping, then sweeping faster) No, Miss Thrale. Not since Tuesday.\nIMOGEN: Seven days until we open The Storm Keeper, and my Storm Keeper is missing. Wonderful. Perhaps the storm has kept him.\n(Enter NOOR, the stage manager, wearing a headset that is not plugged into anything. She carries a clipboard.)\nNOOR: Lights are ready, sound is ready, Tess says the props table is ready. The only thing that isn't ready is—\nIMOGEN: Felix. Yes. Thank you, Noor.\nNOOR: Should we start without him? Someone could read in.\nIMOGEN: Who? Everyone else is on stage in that scene. (She waves a hand vaguely.) Rafi, keep sweeping, dear. We need that floor spotless.\n(RAFI nods and turns his back to them. Facing the audience, he mouths the first speech of the play perfectly, even adding the gestures. IMOGEN and NOOR, bent over the clipboard, see nothing.)\nNOOR: (reading) Act One, Scene One. The keeper climbs the tower and lights the lamp. He says, \"The sea has teeth tonight…\" Then what?\nRAFI: (under his breath) \"…and I have only a lantern to fight it.\"\nNOOR: Sorry, Rafi?\nRAFI: (quickly) Nothing. Dust. It's dusty in here.\n(He sneezes, loudly and unconvincingly.)\nIMOGEN: Bless you. Noor, ring Felix again.\n(NOOR taps her phone and holds it up. A pause. The rain grows louder.)\nNOOR: Straight to voicemail.\nIMOGEN: (sitting heavily on the wooden chair) In twenty years I have never cancelled a rehearsal.\n(The stage door bangs open. Enter FELIX, seventeen, soaked and grinning, a scarf wrapped twice around his neck.)\nFELIX: Don't cancel anything! The bus broke down by the harbour wall. I ran the last mile. (He bows dramatically, dripping.) The Storm Keeper has arrived.\nIMOGEN: (relieved, but trying to look stern) You are dripping on Rafi's clean floor.\nFELIX: Sorry, Rafi.\nRAFI: It's fine.\n(It is clearly not fine. RAFI looks at the puddle, then at FELIX, then back at his broom.)\nIMOGEN: Places, everyone. Felix, top of Scene One. From \"The sea has teeth tonight.\"\nFELIX: (climbing the ladder) The sea has teeth tonight… and I have… er… only a… candle?\nNOOR: (checking the script) Lantern.\nFELIX: Lantern! Only a lantern to fight it. I knew that.\n(Behind him, RAFI silently mouths the next three lines without a single mistake. He catches NOOR glancing his way and quickly sweeps a corner that is already clean.)\nIMOGEN: Good. Again, with feeling. And Rafi, dear, that will do for today. Thank you.\n(RAFI leans the broom against the wall and picks up his bag. At the door he pauses and looks back at the ladder, at the lamp, at the empty seats where an audience will soon sit.)\nRAFI: (quietly, to himself) \"…and I have only a lantern to fight it.\"\n(He exits. The lights fade on FELIX, high on the ladder, struggling to remember his next line.)",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is Rafi doing when the scene opens?",
+       "options": [
+        "Sweeping the stage",
+        "Painting the set",
+        "Reading a script",
+        "Fixing the lights"
+       ],
+       "answer": "Sweeping the stage",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what is the name of the play the company is rehearsing?",
+       "options": [],
+       "answer": "The Storm Keeper",
+       "accept": [
+        "Storm Keeper",
+        "the storm keeper"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why is Felix late?",
+       "options": [
+        "His bus broke down",
+        "He overslept",
+        "He was at another audition",
+        "He forgot the time"
+       ],
+       "answer": "His bus broke down",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, which word does Felix forget in his first line?",
+       "options": [],
+       "answer": "lantern",
+       "accept": [
+        "Lantern",
+        "a lantern"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what do the stage directions show the audience that Imogen and Noor do not notice?",
+       "options": [
+        "Rafi is silently speaking the lines perfectly",
+        "Felix is hiding outside",
+        "The ladder is broken",
+        "Rain is leaking onto the stage"
+       ],
+       "answer": "Rafi is silently speaking the lines perfectly",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Rafi pretend to sneeze?",
+       "options": [
+        "To cover up that he said a line aloud",
+        "Because he has a cold",
+        "To make Noor laugh",
+        "To get Imogen's attention"
+       ],
+       "answer": "To cover up that he said a line aloud",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, the audience knows something that most of the characters do not. What is this technique called?",
+       "options": [
+        "Dramatic irony",
+        "Flashback",
+        "Personification",
+        "Alliteration"
+       ],
+       "answer": "Dramatic irony",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the scene ends with Rafi repeating the line quietly to himself?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Lantern",
+     "synopsis": "The most important prop in the play disappears, and the whole company searches for it, but the audience already knows exactly where it is.",
+     "text": "(The next afternoon. A props table stands at the side of the stage, covered with labelled spaces: ROPE, MAP, BELL, LANTERN. Before anyone else arrives, WILF, the elderly caretaker, shuffles on with a duster and a tin of polish. He picks up the old brass lantern, frowns at its dull, green-spotted sides and tucks it under his arm. He exits, humming.)\n(Enter TESS, in charge of props. She stops dead at the table.)\nTESS: No. No, no, no.\n(Enter NOOR, reading her clipboard.)\nNOOR: Tess? You look like you've seen a ghost.\nTESS: Worse. I've seen nothing. The lantern's gone.\nNOOR: It can't be gone. The keeper holds it in every scene.\nTESS: I know! I put it there myself last night. I even drew round it in chalk. (She points at a chalk outline on the table.) Look. It's like a crime scene.\n(Enter FELIX, eating an apple.)\nFELIX: What's going on?\nTESS: Did you take the lantern home to practise with?\nFELIX: Why would I take a lantern home? I have a lamp in my bedroom.\nNOOR: (writing on her clipboard) Felix: no lantern. Suspect number one ruled out. Probably.\nFELIX: Probably?\n(Enter RAFI with the broom. Everyone turns to look at him.)\nRAFI: What?\nTESS: You were the last one here yesterday. You locked up.\nRAFI: I swept. I locked up. I didn't touch the props. I never touch the props.\nNOOR: (gently) Nobody is accusing you.\nTESS: I'm accusing everyone a little bit.\n(Enter IMOGEN, clapping her hands.)\nIMOGEN: Positions! We're running the lighthouse scene.\nTESS: We can't. There's no lantern.\nIMOGEN: (calmly, too calmly) There is always a lantern. Find me a lantern.\n(TESS searches frantically: under the table, inside a costume box, behind a curtain. She pulls out a saucepan, a lampshade and a garden gnome, holding each one up hopefully. IMOGEN shakes her head at every one.)\nFELIX: (taking the saucepan) I could pretend. \"The sea has teeth tonight, and I have only a… casserole dish.\"\n(NOOR laughs. TESS does not.)\nTESS: This isn't funny. Without it, the play doesn't make sense.\n(From offstage comes the sound of humming. Everyone freezes. Enter WILF, carrying the lantern. It now gleams gold under the work lights, every speck of green gone.)\nWILF: Afternoon, all. Somebody left this poor thing looking like it had been at the bottom of the harbour for fifty years. Couldn't have that. Not on opening week.\nTESS: (rushing over) You took it?\nWILF: Borrowed it. Gave it a bath. I even fitted a little battery candle inside, so it glows properly. (He hands it over proudly.) You can see your face in it now.\n(TESS holds the lantern up. Her reflection stretches across the brass. Slowly, she smiles.)\nTESS: It's beautiful, Wilf. But next time, leave a note.\nWILF: A note? I've been caretaker here since before any of you were born. The theatre knows where I am.\nNOOR: (writing) Mystery solved. Suspect: the caretaker. Motive: polish.\nIMOGEN: Wonderful. Now, places! Felix, up the ladder. Rafi, could you…\nRAFI: Sweep. Yes.\n(TESS places the lantern carefully inside its chalk outline. As the others take their places, RAFI glances at the shining lantern and, for just a moment, lifts his hand high, as if he were the keeper holding it up to the storm. Then he lowers it and picks up his broom. The lights fade.)",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which prop is missing from the table?",
+       "options": [
+        "The lantern",
+        "The bell",
+        "The map",
+        "The rope"
+       ],
+       "answer": "The lantern",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what did Tess use to draw round the lantern's space on the table?",
+       "options": [],
+       "answer": "chalk",
+       "accept": [
+        "Chalk",
+        "a chalk outline",
+        "chalk outline"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, who really took the lantern?",
+       "options": [
+        "Wilf",
+        "Felix",
+        "Rafi",
+        "Noor"
+       ],
+       "answer": "Wilf",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why did Wilf take the lantern?",
+       "options": [
+        "To polish it",
+        "To use it at home",
+        "To hide it as a joke",
+        "To lend it to another theatre"
+       ],
+       "answer": "To polish it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does the opening stage direction create dramatic irony?",
+       "options": [
+        "It shows the audience Wilf taking the lantern before anyone else arrives",
+        "It tells the audience that Tess is lying",
+        "It reveals that Felix is hiding a secret",
+        "It describes the stormy weather"
+       ],
+       "answer": "It shows the audience Wilf taking the lantern before anyone else arrives",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Felix joke about using instead of the lantern?",
+       "options": [
+        "A saucepan",
+        "A lampshade",
+        "A garden gnome",
+        "A torch"
+       ],
+       "answer": "A saucepan",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Rafi's gesture at the end suggest?",
+       "options": [
+        "He secretly wishes he could play the keeper",
+        "He wants to polish the lantern himself",
+        "He is angry with Wilf",
+        "He plans to take the lantern home"
+       ],
+       "answer": "He secretly wishes he could play the keeper",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the stage direction says Imogen speaks 'calmly, too calmly' when she hears the lantern is missing?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Lines in the Rain",
+     "synopsis": "Waiting for a late bus, Noor finally asks Rafi about the lines she has seen him whispering, and discovers his secret.",
+     "text": "(A bus shelter by the harbour, that evening. Rain falls in sheets. A streetlight flickers. NOOR sits on the bench, scrolling through her phone. Enter RAFI, hood up, running. He stops when he sees her.)\nRAFI: Oh. Hi.\nNOOR: Hi. The number twelve's late again.\nRAFI: It's always late.\n(He sits at the far end of the bench. A long pause. The rain fills the silence.)\nNOOR: Can I ask you something?\nRAFI: (too quickly) I didn't take the lantern.\nNOOR: I know you didn't. Wilf did. That's not my question.\n(She turns to face him.)\nNOOR: Yesterday, when Felix forgot \"lantern\", you said it before I'd found it in the script. And today, during the storm scene, your lips were moving. The whole time.\nRAFI: (looking at the rain) I talk to myself. It's a habit.\nNOOR: You were talking to yourself in Felix's lines.\n(RAFI says nothing. He pulls his hood further over his face.)\nNOOR: How many do you know?\nRAFI: (mumbling) Some.\nNOOR: How many, Rafi?\nRAFI: (after a pause) All of them. Every scene. Everyone's lines, actually. I sweep while you rehearse. You hear things over and over. They just… stick.\nNOOR: (amazed) That's two hours of play.\nRAFI: Two hours and ten minutes, with the interval.\nNOOR: Why didn't you audition? You'd have been brilliant.\nRAFI: I did audition. Last year. I forgot my first line in front of everyone. Somebody laughed. (He shrugs.) Sweeping is easier. Nobody laughs at a broom.\n(NOOR is quiet. She looks at the timetable on the shelter wall, then back at him.)\nNOOR: Test me. I mean, let me test you.\nRAFI: What?\nNOOR: (opening the script on her phone) Act Two, Scene Three. The keeper's speech to his daughter. Go.\nRAFI: Here? At a bus stop?\nNOOR: The bus is late. You said so yourself.\n(RAFI hesitates. Then he stands, faces the dark sea and begins. His voice is quiet at first, then steadier.)\nRAFI: \"Every night I climb those stairs and I think: tonight the sea will win. And every morning I come down and the ships are safe, and I've learned nothing, because I'm frightened all over again the next night. That's the job, little one. Not being brave. Climbing the stairs anyway.\"\n(Silence. The rain seems to soften. NOOR stares at her phone, then at him.)\nNOOR: Word perfect.\nRAFI: (sitting down fast, embarrassed) It's just remembering.\nNOOR: It wasn't just remembering. I believed you.\n(Headlights sweep across the shelter. A bus pulls up.)\nNOOR: That's mine. (She stands, then stops.) Tomorrow, after rehearsal. Here. I'll test you on every scene.\nRAFI: Why? Felix is playing the keeper.\nNOOR: Every play needs a backup plan. That's what a stage manager does. (She smiles.) Don't tell anyone. Not yet.\n(She exits. The bus pulls away. RAFI sits alone under the flickering light.)\nRAFI: (quietly) \"Climbing the stairs anyway.\"\n(Blackout.)",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, where does the scene take place?",
+       "options": [
+        "At a bus shelter by the harbour",
+        "In the green room",
+        "On the theatre stage",
+        "At a train station"
+       ],
+       "answer": "At a bus shelter by the harbour",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Rafi say as soon as Noor asks to ask him something?",
+       "options": [
+        "That he didn't take the lantern",
+        "That the bus is late",
+        "That he must go home",
+        "That he is tired"
+       ],
+       "answer": "That he didn't take the lantern",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, how many of the play's lines does Rafi know?",
+       "options": [],
+       "answer": "all of them",
+       "accept": [
+        "all",
+        "every line",
+        "everything",
+        "all of it"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why didn't Rafi audition this year?",
+       "options": [
+        "He forgot his first line last year and someone laughed",
+        "He was too busy",
+        "The director said no",
+        "He prefers working on props"
+       ],
+       "answer": "He forgot his first line last year and someone laughed",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the stage direction 'He pulls his hood further over his face' suggest about Rafi?",
+       "options": [
+        "He wants to hide",
+        "He is cold",
+        "He is angry",
+        "He is sleepy"
+       ],
+       "answer": "He wants to hide",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the speech Rafi performs, what does the keeper say his job really is?",
+       "options": [
+        "Climbing the stairs anyway",
+        "Never feeling frightened",
+        "Fighting the sea",
+        "Keeping the ships in harbour"
+       ],
+       "answer": "Climbing the stairs anyway",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Noor say 'Don't tell anyone. Not yet.'?",
+       "options": [
+        "She wants Rafi as a backup plan without upsetting anyone",
+        "She thinks Rafi is lying",
+        "She wants the part for herself",
+        "She is jealous of Felix"
+       ],
+       "answer": "She wants Rafi as a backup plan without upsetting anyone",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the stage direction says the rain 'seems to soften' after Rafi's speech?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Letter",
+     "synopsis": "Felix receives an exciting offer that clashes with opening night, while his friends secretly plan a party in his honour.",
+     "text": "(The green room, before rehearsal. A sagging sofa, a mirror ringed with bulbs, a kettle. Enter FELIX alone, holding an envelope. He checks that nobody is watching, then opens it and reads. As he reads, his face changes from excitement to worry.)\nFELIX: (aside, to the audience) A letter from the City Playhouse. They saw me in last year's show. They want me for their winter production. A real theatre, with seven hundred seats and a revolving stage. (He reads on, and his shoulders sag.) First rehearsal: Friday the twelfth, six o'clock. (He looks up.) Friday the twelfth is our opening night.\n(Voices offstage. FELIX stuffs the letter into his jacket pocket and throws himself onto the sofa, pretending to read a magazine. It is upside down. Enter TESS and NOOR, carrying a long paper banner rolled up between them.)\nTESS: Oh! Felix. You're early.\nFELIX: (too brightly) Am I? Just… relaxing. Reading.\nNOOR: (tilting her head) Your magazine's upside down.\nFELIX: It's a very modern magazine.\n(TESS and NOOR exchange a look and hide the banner behind their backs.)\nTESS: Right. Well. We're just… putting some things away. Nothing interesting.\nFELIX: Great. I love nothing interesting.\n(They shuffle to the corner and whisper, loudly enough for the audience to hear, but apparently not FELIX.)\nTESS: (whispering) Do you think he saw?\nNOOR: (whispering) He can't even read a magazine the right way up. We're fine.\nTESS: (whispering) The party's after the show on Friday. Wilf's making his famous lemon cake. And the banner says \"Our Storm Keeper: Star of the Harbour!\"\nNOOR: (whispering) He's going to be so happy.\n(On the sofa, FELIX touches the pocket with the letter in it. He stares at the ceiling.)\n(Enter IMOGEN, with her script and a box of biscuits.)\nIMOGEN: Felix! My keeper. I brought biscuits. You need your strength for Friday.\nFELIX: (weakly) Thanks, Miss Thrale.\nIMOGEN: Do you know, I've directed in this theatre for twenty years, and I've never had a keeper like you. When you climb that ladder, the whole town will hold its breath.\n(TESS and NOOR slip out with the banner, giggling. IMOGEN follows them, still talking about lighting cues. FELIX is alone again. He takes out the letter.)\nFELIX: (aside) Seven hundred seats. A real chance. And all they've planned is a party for me. A banner. A cake. (He folds the letter smaller and smaller.) If I go to the City Playhouse, I let them all down. If I stay, maybe nobody will ever offer me anything like this again.\n(He stands and looks at himself in the mirror.)\nFELIX: (to his reflection) What would the keeper do?\n(He thinks. Then he answers himself, quoting his own line.)\nFELIX: \"Not being brave. Climbing the stairs anyway.\"\n(He puts the letter back in his pocket and nods firmly.)\nFELIX: Tomorrow. I'll tell Miss Thrale tomorrow, before the dress rehearsal. The truth, all of it.\n(The lights fade on FELIX, alone in the green room, as voices laugh offstage and the kettle begins to whistle.)",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, who sent Felix the letter?",
+       "options": [
+        "The City Playhouse",
+        "Miss Thrale",
+        "His school",
+        "A television company"
+       ],
+       "answer": "The City Playhouse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, on what day and date is the City Playhouse's first rehearsal?",
+       "options": [],
+       "answer": "Friday the twelfth",
+       "accept": [
+        "Friday 12th",
+        "the twelfth",
+        "Friday the 12th",
+        "12th"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, Felix speaks his private thoughts directly to the audience. What is this convention called?",
+       "options": [
+        "An aside",
+        "A stage direction",
+        "A chorus",
+        "A prologue"
+       ],
+       "answer": "An aside",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Noor know Felix is not really reading?",
+       "options": [
+        "His magazine is upside down",
+        "His eyes are closed",
+        "He has no magazine",
+        "He is looking at his phone"
+       ],
+       "answer": "His magazine is upside down",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what are Tess and Noor secretly planning?",
+       "options": [
+        "A party after the show",
+        "A new play",
+        "A surprise audition",
+        "A trip to the city"
+       ],
+       "answer": "A party after the show",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why is the scene full of dramatic irony?",
+       "options": [
+        "Tess and Noor think they are hiding a secret from Felix, but the audience knows Felix has a bigger secret",
+        "Felix already knows about the party",
+        "Imogen has already read the letter",
+        "The audience does not know about the letter"
+       ],
+       "answer": "Tess and Noor think they are hiding a secret from Felix, but the audience knows Felix has a bigger secret",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Felix decide to do?",
+       "options": [
+        "Tell Miss Thrale the truth tomorrow",
+        "Throw the letter away",
+        "Leave without saying anything",
+        "Ask Rafi to take his place"
+       ],
+       "answer": "Tell Miss Thrale the truth tomorrow",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Imogen's praise makes Felix feel worse rather than better?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Dress Rehearsal",
+     "synopsis": "Felix tells the director the truth, and Noor reveals her backup plan just when the company needs it most.",
+     "text": "(The stage, the next day. The lighthouse set is finished: a painted tower, a ladder, the gleaming lantern at the top. IMOGEN sits in the front row with a notebook. FELIX stands centre stage, in costume, holding the letter.)\nIMOGEN: You wanted to talk to me before we begin? Quickly, Felix. Dress rehearsal in ten minutes.\nFELIX: (holding out the letter) I need you to read this.\n(IMOGEN reads. A long pause. Enter NOOR quietly at the side of the stage, clipboard in hand. She stops when she sees their faces.)\nIMOGEN: (slowly) The City Playhouse.\nFELIX: I didn't ask them. They just wrote. Their first rehearsal is on our opening night. If I miss it, they give the part to someone else.\nIMOGEN: (standing) And if you go, we have no keeper. Three days before we open.\nFELIX: I know. I'm sorry. I almost didn't tell you. I almost just… didn't turn up.\nIMOGEN: (turning away, upset) Twenty years. Twenty years, and I've never—\n(She stops. She looks at the painted lighthouse for a long moment. When she turns back, her voice is calmer.)\nIMOGEN: When I was your age, someone offered me a place at drama school in the city. I said no, because my little theatre needed me. I have wondered about that choice every day since.\nFELIX: You mean…\nIMOGEN: I mean go. Of course you must go. (She hands the letter back.) But it doesn't solve my problem.\nNOOR: (stepping forward) I might.\nIMOGEN and FELIX: (together) Noor?\nNOOR: Someone in this theatre knows every line of this play. Everyone's lines. Word perfect. I've been testing him at the bus stop all week.\nIMOGEN: Who?\n(NOOR looks towards the back of the stage. Enter RAFI, pushing his broom, unaware that he is the subject of the conversation. He stops when he sees all three staring at him.)\nRAFI: I swept already. Honestly.\nIMOGEN: Rafi. Climb the ladder, please.\nRAFI: (alarmed) The ladder? Why?\nIMOGEN: Act One, Scene One. From the top.\n(RAFI looks at NOOR. She nods. He looks at FELIX, who, after a moment, gives him a small, genuine smile and takes off the keeper's long coat. He holds it out.)\nFELIX: It'll be big on you. Roll up the sleeves.\n(RAFI puts on the coat. He climbs the ladder slowly. At the top, he lifts the gleaming lantern. His hand shakes. Silence.)\nRAFI: (in a small voice) The sea has teeth tonight…\n(He stops. IMOGEN leans forward. NOOR holds her breath. Then RAFI looks out into the darkness of the empty seats, and his voice grows.)\nRAFI: The sea has teeth tonight, and I have only a lantern to fight it!\n(He continues, and the lights shift around him as if the storm were real. Below, FELIX folds his arms and grins. IMOGEN puts down her pen.)\nIMOGEN: (quietly, to NOOR) How long have you known?\nNOOR: Long enough to have a backup plan.\nIMOGEN: (calling up) Rafi! Carry on to the end of the scene, and then keep going until I say stop.\n(RAFI keeps going. IMOGEN does not say stop. The lights fade as the sound of the storm rises.)",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Felix ask Imogen to read?",
+       "options": [
+        "The letter",
+        "A new script",
+        "The banner",
+        "Her notebook"
+       ],
+       "answer": "The letter",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what did Imogen turn down when she was young?",
+       "options": [
+        "A place at drama school in the city",
+        "A role in a film",
+        "A job as a caretaker",
+        "A part at the City Playhouse"
+       ],
+       "answer": "A place at drama school in the city",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Imogen finally tell Felix to do?",
+       "options": [
+        "Go to the City Playhouse",
+        "Stay for opening night",
+        "Decide after the show",
+        "Ask his family"
+       ],
+       "answer": "Go to the City Playhouse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, who suggests that Rafi could play the keeper?",
+       "options": [],
+       "answer": "Noor",
+       "accept": [
+        "noor"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Felix give Rafi?",
+       "options": [
+        "The keeper's long coat",
+        "The lantern",
+        "His script",
+        "His scarf"
+       ],
+       "answer": "The keeper's long coat",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the stage direction 'His hand shakes' show about Rafi?",
+       "options": [
+        "He is nervous",
+        "He is cold",
+        "The ladder is unsafe",
+        "The lantern is too heavy"
+       ],
+       "answer": "He is nervous",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how can we tell that Imogen is impressed by Rafi?",
+       "options": [
+        "She puts down her pen and never says stop",
+        "She leaves the theatre",
+        "She laughs at him",
+        "She asks Felix to stay"
+       ],
+       "answer": "She puts down her pen and never says stop",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Imogen tells Felix about the choice she made when she was young?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Blackout",
+     "synopsis": "On opening night a real storm cuts the power, and the backstage team must keep the show going in the dark.",
+     "text": "(Opening night. The dark wings at the side of the stage. Through a gap in the curtain, the audience can be heard settling. NOOR stands at a small desk with a lamp and a headset, which is now plugged in. TESS checks the props table. WILF sits on a stool beside a box of fuses. Behind the curtain, RAFI waits at the top of the ladder.)\nNOOR: (into her headset) Stand by lights. Stand by sound. Stand by curtain. (She takes a breath.) Go.\n(The curtain rises. Distant applause. RAFI's voice is heard from the stage: \"The sea has teeth tonight…\" The backstage team listen, frozen.)\nTESS: (whispering) He's doing it.\nWILF: (whispering) Course he is. That boy's been rehearsing with my broom for a year.\n(Time passes. NOOR calls cues under her breath. The storm scene begins, and recorded thunder rumbles from the speakers. Then a real crack of thunder sounds outside, much louder. Every light in the theatre goes out. Total darkness. A gasp from the audience.)\nNOOR: (into her headset, urgently) Lights? Lights! Nothing. The whole board's dead.\nTESS: (in the dark) Was that us? Did I break something?\nWILF: Not you, love. That's the real storm. I'd bet the power's gone in half the town.\nNOOR: We'll have to stop the show. I'll go out and tell them.\n(A pause. Then, from the stage, a single small light glows. It is the lantern: RAFI has switched on the little battery candle inside it. The glow lights up his face, high on the ladder.)\nRAFI: (onstage, steadily) \"The sea has teeth tonight, and I have only a lantern to fight it.\"\n(The audience falls completely silent. They think it is all part of the play.)\nTESS: (whispering, amazed) They think we planned it.\nWILF: (standing and grabbing two torches from beside the fuse box) Then let's make it look planned. Tess, with me.\n(WILF and TESS creep to the edge of the stage. WILF shines his torch through a blue sweet wrapper, making a cold, watery light. TESS sweeps her torch slowly across the backdrop, like the beam of a lighthouse.)\nNOOR: (into her headset, although nobody can hear) Lighthouse beam… go.\n(RAFI continues the scene. The young actor playing the keeper's daughter climbs up to join him, and they speak by lantern light. Outside, the storm roars, and it sounds exactly like the sound effects nobody can play.)\nNOOR: (to herself) This is either the worst night of my life or the best.\n(Just as RAFI speaks the last line of the act, \"Climbing the stairs anyway,\" the power returns. Every light blazes on at once. The audience bursts into applause, believing that the sudden light was the most dramatic effect of all.)\nWILF: (wiping his forehead) Interval. Thank goodness.\nTESS: (laughing shakily) We should do that every night.\nNOOR: (pulling off her headset) Absolutely not.\n(Through the gap in the curtain, the team can see RAFI on the ladder, blinking in the brightness, still holding the lantern. He looks into the wings and finds NOOR. She gives him a thumbs up. He lets out a breath he seems to have held for the whole act. Blackout.)",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is Noor's job on opening night?",
+       "options": [
+        "Calling the cues as stage manager",
+        "Playing the keeper's daughter",
+        "Selling tickets",
+        "Mending the fuses"
+       ],
+       "answer": "Calling the cues as stage manager",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what causes the blackout?",
+       "options": [
+        "A real storm",
+        "Tess breaking a cable",
+        "Wilf switching off the power",
+        "Rafi pressing the wrong switch"
+       ],
+       "answer": "A real storm",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is the first light to appear after the blackout?",
+       "options": [
+        "The lantern",
+        "A torch",
+        "The exit sign",
+        "A phone screen"
+       ],
+       "answer": "The lantern",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does the audience stay silent instead of panicking?",
+       "options": [
+        "They think the blackout is part of the play",
+        "They have fallen asleep",
+        "They have already left",
+        "They cannot hear anything"
+       ],
+       "answer": "They think the blackout is part of the play",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Wilf shine his torch through to make a watery light?",
+       "options": [
+        "A blue sweet wrapper",
+        "A sheet of paper",
+        "A glass of water",
+        "A scarf"
+       ],
+       "answer": "A blue sweet wrapper",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which line does Rafi speak just as the power returns?",
+       "options": [
+        "Climbing the stairs anyway",
+        "The sea has teeth tonight",
+        "Stand by lights",
+        "Lighthouse beam, go"
+       ],
+       "answer": "Climbing the stairs anyway",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why is the return of the lights an example of dramatic irony?",
+       "options": [
+        "The audience in the theatre thinks it is a planned effect, but we know it is pure luck",
+        "Rafi planned it all along",
+        "Noor switched the lights on herself",
+        "The actors do not notice the lights"
+       ],
+       "answer": "The audience in the theatre thinks it is a planned effect, but we know it is pure luck",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Noor says this is 'either the worst night of my life or the best'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Curtain Call",
+     "synopsis": "After the show the company celebrates, an unexpected visitor arrives, and Rafi's place in the theatre changes for good.",
+     "text": "(After the show. The stage is strewn with flowers and programmes. The banner hangs crookedly above the set. Someone has added a strip of paper underneath it, with RAFI written in thick marker. WILF cuts a lemon cake on the props table. TESS, NOOR and IMOGEN laugh together. RAFI stands a little apart, still wearing the keeper's coat.)\nIMOGEN: (raising a paper cup) To the Harbour Theatre's first ever accidental special effect!\nALL: To the blackout!\nTESS: (to RAFI) Did you plan the lantern? Be honest.\nRAFI: No. I couldn't see anything, and then I remembered Wilf had put a battery candle inside it. So I just switched it on early.\nWILF: Told you a polished lantern was important.\nNOOR: You kept going. In the dark. In front of two hundred people.\nRAFI: (shrugging, but smiling) The keeper doesn't stop because it's dark. That's the whole point of him.\n(A cough from the back of the auditorium. Everyone turns. FELIX walks down the aisle, a scarf wrapped twice around his neck and rain on his shoulders.)\nFELIX: Sorry I'm late. Again.\nIMOGEN: Felix! Your rehearsal—\nFELIX: Finished early. I caught the last train back and watched the second half from the back row. (He climbs onto the stage and turns to RAFI.) The bit after the interval, when you said goodbye to your daughter? Better than I ever did it.\nRAFI: (embarrassed) You don't have to say that.\nFELIX: I know I don't. That's why it's true.\n(He holds out his hand. RAFI shakes it. The others cheer.)\nTESS: So how was the City Playhouse?\nFELIX: Huge. Terrifying. Seven hundred empty seats staring at me. (He grins.) I forgot my first line.\nRAFI: (laughing) Everyone does, once.\n(WILF hands out slices of cake. The group drifts towards the green room, talking over each other about lighting cues, the storm and the moment the power came back. IMOGEN stays behind to switch off the work lights. She notices RAFI lingering at the foot of the ladder.)\nIMOGEN: Tomorrow, two-thirty matinee. Same again?\nRAFI: Maybe without the blackout.\nIMOGEN: Maybe. (She pauses at the door.) You know, Rafi, I'm going to need a new sweeper.\nRAFI: (alarmed) Did I do something wrong?\nIMOGEN: (smiling) No. You did something right. Sweepers don't usually get their names on the banner.\n(She exits. RAFI is alone on stage. He climbs the ladder one last time and sets the lantern down at the top, its small light still glowing. He looks out at the empty seats.)\nRAFI: (softly) \"Every night I climb those stairs…\"\n(He smiles, climbs down and exits. The stage is empty except for the lantern, shining on alone. Slow fade to black.)",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what has been added to the banner?",
+       "options": [
+        "Rafi's name",
+        "Felix's photo",
+        "The date of the show",
+        "A drawing of a lighthouse"
+       ],
+       "answer": "Rafi's name",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how did Rafi make the lantern glow during the blackout?",
+       "options": [
+        "He switched on the battery candle inside it",
+        "He borrowed a torch from Tess",
+        "Wilf passed him a lamp",
+        "Noor turned on the stage lights"
+       ],
+       "answer": "He switched on the battery candle inside it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how did Felix get back in time to see the second half?",
+       "options": [
+        "He caught the last train",
+        "His bus broke down",
+        "He ran along the harbour",
+        "Imogen drove him"
+       ],
+       "answer": "He caught the last train",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what happened to Felix at the City Playhouse?",
+       "options": [
+        "He forgot his first line",
+        "He was given the lead role",
+        "He fell off the stage",
+        "He lost his scarf"
+       ],
+       "answer": "He forgot his first line",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why is it meaningful that Felix forgot his first line?",
+       "options": [
+        "It mirrors what happened to Rafi at his first audition",
+        "It shows that Felix does not care",
+        "It means Felix will lose the part",
+        "It was planned as a joke"
+       ],
+       "answer": "It mirrors what happened to Rafi at his first audition",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Imogen mean when she says she needs 'a new sweeper'?",
+       "options": [
+        "Rafi will be an actor now",
+        "Rafi is losing his job",
+        "The broom is broken",
+        "Wilf is retiring"
+       ],
+       "answer": "Rafi will be an actor now",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what object is left alone on the stage at the very end?",
+       "options": [],
+       "answer": "the lantern",
+       "accept": [
+        "lantern",
+        "the lantern"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think the play ends with the lantern shining on an empty stage?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
