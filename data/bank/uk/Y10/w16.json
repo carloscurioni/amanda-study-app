@@ -1037,6 +1037,1042 @@
      "errors": []
     }
    ]
+  },
+  "comp": {
+   "topic": "Computer architecture: CPU, von Neumann model and fetch–decode–execute cycle",
+   "questions": [
+    {
+     "id": "ritqmoy1g3k854",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What does CPU stand for?",
+     "options": [
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Central Program Utility",
+      "Control Processing Unit"
+     ],
+     "answer": "Central Processing Unit",
+     "accept": [],
+     "hint": "Think about what the CPU does: it processes data at the centre of the computer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvuz6bht0aex3",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which component of the CPU carries out arithmetic and logical operations?",
+     "options": [
+      "ALU",
+      "Control unit",
+      "Program counter",
+      "Data bus"
+     ],
+     "answer": "ALU",
+     "accept": [],
+     "hint": "Its name includes the words 'arithmetic' and 'logic'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xldsbioyrxov",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which component of the CPU decodes instructions and sends control signals to other components?",
+     "options": [
+      "Control unit",
+      "ALU",
+      "Accumulator",
+      "Cache"
+     ],
+     "answer": "Control unit",
+     "accept": [],
+     "hint": "It coordinates and directs what the other parts do.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqsvjxb1tm45xl",
+     "subject": "comp",
+     "type": "short",
+     "q": "In the von Neumann model, data and instructions are stored together in the same ___. (one word)",
+     "options": [],
+     "answer": "memory",
+     "accept": [
+      "main memory",
+      "RAM"
+     ],
+     "hint": "Think about where programs are held while they run.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p40rx11kzhut3",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which register holds the address of the next instruction to be fetched?",
+     "options": [
+      "Program counter (PC)",
+      "Memory data register (MDR)",
+      "Current instruction register (CIR)",
+      "Accumulator (ACC)"
+     ],
+     "answer": "Program counter (PC)",
+     "accept": [],
+     "hint": "This register 'counts' through the program.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r183127ojwfdlf",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which register holds the address of the memory location currently being read from or written to?",
+     "options": [
+      "Memory address register (MAR)",
+      "Memory data register (MDR)",
+      "Program counter (PC)",
+      "Accumulator (ACC)"
+     ],
+     "answer": "Memory address register (MAR)",
+     "accept": [],
+     "hint": "Look for the register with 'address' in its name that connects to memory.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yuhpyt1w8t27p",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which register temporarily stores the data or instruction that has just been fetched from memory?",
+     "options": [
+      "Memory data register (MDR)",
+      "Memory address register (MAR)",
+      "Program counter (PC)",
+      "Control unit"
+     ],
+     "answer": "Memory data register (MDR)",
+     "accept": [],
+     "hint": "Its name refers to the data travelling to or from memory.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkuy4to1fqq0lt",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which register stores the results of calculations carried out by the ALU?",
+     "options": [
+      "Accumulator (ACC)",
+      "Program counter (PC)",
+      "Memory address register (MAR)",
+      "Current instruction register (CIR)"
+     ],
+     "answer": "Accumulator (ACC)",
+     "accept": [],
+     "hint": "It 'accumulates' results.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfpefpe1uttrih",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which bus is unidirectional, carrying signals only from the CPU to memory?",
+     "options": [
+      "Address bus",
+      "Data bus",
+      "Control bus",
+      "System clock"
+     ],
+     "answer": "Address bus",
+     "accept": [],
+     "hint": "The CPU tells memory where to look, but memory never sends a location back.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l2pwc5146k4sk",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which bus carries signals such as 'memory read' and 'memory write'?",
+     "options": [
+      "Control bus",
+      "Address bus",
+      "Data bus",
+      "Instruction bus"
+     ],
+     "answer": "Control bus",
+     "accept": [],
+     "hint": "These signals control what happens, rather than carrying data or locations.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rid6n9c1fgn9el",
+     "subject": "comp",
+     "type": "short",
+     "q": "Name the three stages of the cycle the CPU repeats to run a program, in order, separated by dashes.",
+     "options": [],
+     "answer": "fetch-decode-execute",
+     "accept": [
+      "fetch decode execute",
+      "fetch, decode, execute",
+      "fetch–decode–execute"
+     ],
+     "hint": "The first stage gets the instruction from memory.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwqfj1l1nqyel9",
+     "subject": "comp",
+     "type": "mc",
+     "q": "During the fetch stage, what happens immediately after the address in the PC is copied to the MAR?",
+     "options": [
+      "The PC is incremented by 1",
+      "The instruction is executed by the ALU",
+      "The result is stored in the ACC",
+      "The control unit decodes the instruction"
+     ],
+     "answer": "The PC is incremented by 1",
+     "accept": [],
+     "hint": "The PC must be ready to point to the following instruction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l7vuz41digd63",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which statement about the data bus is correct?",
+     "options": [
+      "It is bidirectional",
+      "It only carries addresses",
+      "It only carries signals from memory to the CPU",
+      "It connects the PC directly to the ALU"
+     ],
+     "answer": "It is bidirectional",
+     "accept": [],
+     "hint": "Data needs to travel both to and from memory.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjrd1n9r69v7s",
+     "subject": "comp",
+     "type": "num",
+     "q": "A CPU has a 16-bit address bus. How many different memory locations can it address? Give the number in full.",
+     "options": [],
+     "answer": "65536",
+     "accept": [],
+     "hint": "Each extra address line doubles the number of locations: work out 2 to the power of the number of lines.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r198azzwlods7w",
+     "subject": "comp",
+     "type": "open",
+     "q": "Describe what happens during the fetch stage of the fetch–decode–execute cycle. Refer to the registers and buses involved.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Mention the PC, MAR, address bus, data bus, MDR and CIR in the order they are used.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn1rax6y6kyo1",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain why the von Neumann model is described as a 'stored program' concept, and give one limitation of using a single bus for both data and instructions.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about where the program lives and what happens when data and instructions need to travel at the same time.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "econ": {
+   "topic": "The mixed economic system and government intervention in markets",
+   "questions": [
+    {
+     "id": "r17l4cnv1cgpeli",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What is a mixed economy?",
+     "options": [
+      "An economy where resources are allocated by both the private sector and the government",
+      "An economy where the government owns all resources",
+      "An economy with no government involvement",
+      "An economy that only trades with other countries"
+     ],
+     "answer": "An economy where resources are allocated by both the private sector and the government",
+     "accept": [],
+     "hint": "Think about which two sectors are 'mixed'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1md7n15b9wvf4",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A maximum price is set ___ the equilibrium price in order to have an effect.",
+     "options": [
+      "below",
+      "above",
+      "equal to",
+      "twice"
+     ],
+     "answer": "below",
+     "accept": [],
+     "hint": "A price ceiling is meant to make a product cheaper.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro983461izpqtm",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What is the most likely result of an effective maximum price?",
+     "options": [
+      "A shortage (excess demand)",
+      "A surplus (excess supply)",
+      "No change in quantity demanded",
+      "A rise in producer revenue"
+     ],
+     "answer": "A shortage (excess demand)",
+     "accept": [],
+     "hint": "At a lower price, compare how much people want to buy with how much firms want to sell.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzjhd3usabk1m",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A minimum wage is an example of which type of government intervention?",
+     "options": [
+      "Minimum price",
+      "Maximum price",
+      "Subsidy",
+      "Nationalisation"
+     ],
+     "answer": "Minimum price",
+     "accept": [],
+     "hint": "It sets a floor below which the price of labour cannot fall.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18xx79n1pf3ksq",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What is the most likely result of a minimum price set above equilibrium?",
+     "options": [
+      "A surplus (excess supply)",
+      "A shortage (excess demand)",
+      "A fall in quantity supplied",
+      "A rise in quantity demanded"
+     ],
+     "answer": "A surplus (excess supply)",
+     "accept": [],
+     "hint": "At a higher price, producers want to sell more but consumers want to buy less.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16hry7mrdc450",
+     "subject": "econ",
+     "type": "short",
+     "q": "A tax on spending, such as a tax on cigarettes, is called an ___ tax. (one word)",
+     "options": [],
+     "answer": "indirect",
+     "accept": [
+      "indirect tax"
+     ],
+     "hint": "It is paid to the government through the seller, not directly from income.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qgep8p19unus6",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What happens to the supply curve when the government places an indirect tax on a product?",
+     "options": [
+      "It shifts to the left",
+      "It shifts to the right",
+      "It does not move",
+      "It becomes a demand curve"
+     ],
+     "answer": "It shifts to the left",
+     "accept": [],
+     "hint": "A tax raises firms' costs of production.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x9t55sirul9b",
+     "subject": "econ",
+     "type": "short",
+     "q": "A payment from the government to producers to lower their costs and encourage output is called a ___. (one word)",
+     "options": [],
+     "answer": "subsidy",
+     "accept": [
+      "a subsidy",
+      "subsidies"
+     ],
+     "hint": "It is the opposite of a tax on production.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rlvrse18zmc5l",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What happens to the equilibrium price and quantity when a subsidy is given to producers?",
+     "options": [
+      "Price falls and quantity rises",
+      "Price rises and quantity falls",
+      "Both price and quantity fall",
+      "Both price and quantity rise"
+     ],
+     "answer": "Price falls and quantity rises",
+     "accept": [],
+     "hint": "The subsidy shifts supply to the right.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnukq1ljz63y8",
+     "subject": "econ",
+     "type": "short",
+     "q": "The transfer of a firm from the public sector to the private sector is called ___.",
+     "options": [],
+     "answer": "privatisation",
+     "accept": [
+      "privatization"
+     ],
+     "hint": "The firm becomes 'private'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uv7elx1hjw6rd",
+     "subject": "econ",
+     "type": "short",
+     "q": "The transfer of a firm from the private sector to the public sector is called ___.",
+     "options": [],
+     "answer": "nationalisation",
+     "accept": [
+      "nationalization"
+     ],
+     "hint": "The firm becomes owned by the nation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14avmuj1e9rqsc",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of the following is an example of regulation?",
+     "options": [
+      "A law banning the sale of alcohol to under-18s",
+      "A subsidy for electric cars",
+      "Selling a state-owned railway",
+      "A tax on sugary drinks"
+     ],
+     "answer": "A law banning the sale of alcohol to under-18s",
+     "accept": [],
+     "hint": "Regulation uses rules and laws rather than money.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10t3i95e3owmd",
+     "subject": "econ",
+     "type": "mc",
+     "q": "The government places a tax of $2 per unit on a good. The price paid by consumers rises from $10 to $11.50. How much of the tax is paid by consumers per unit?",
+     "options": [
+      "$1.50",
+      "$0.50",
+      "$2.00",
+      "$11.50"
+     ],
+     "answer": "$1.50",
+     "accept": [],
+     "hint": "Compare the old and new prices paid by consumers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6jzkezy1gfyd",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain two reasons why a government might subsidise public transport.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about external benefits, such as less pollution and congestion, and about helping people on low incomes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v02bg9amsr64",
+     "subject": "econ",
+     "type": "open",
+     "q": "Analyse why a maximum price on rented housing might lead to a shortage of homes to rent.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use demand and supply: what happens to the quantity landlords want to supply and the quantity tenants demand at the lower price?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rixv91bf837w",
+     "subject": "econ",
+     "type": "open",
+     "q": "Discuss whether privatisation of a state-owned water company is likely to benefit consumers.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider efficiency and investment on one side, and higher prices or a private monopoly on the other, then reach a judgement.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Summary writing: selecting relevant points",
+   "questions": [
+    {
+     "id": "r1yu089oc2eqwx",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the main purpose of a summary?",
+     "options": [
+      "To give the key points of a text briefly in your own words",
+      "To copy the most interesting sentences",
+      "To give your opinion on the text",
+      "To add new information to the text"
+     ],
+     "answer": "To give the key points of a text briefly in your own words",
+     "accept": [],
+     "hint": "A summary is shorter than the original and focuses on the main ideas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14c6d693ifjy",
+     "subject": "en",
+     "type": "mc",
+     "q": "Before choosing points for a summary, what should you check first?",
+     "options": [
+      "The focus of the question",
+      "The number of paragraphs",
+      "The author's name",
+      "The title's font"
+     ],
+     "answer": "The focus of the question",
+     "accept": [],
+     "hint": "Only points that match what the question asks for will gain marks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kgfp49gj52ud",
+     "subject": "en",
+     "type": "mc",
+     "q": "A summary task asks for 'the benefits of urban gardens'. Which point is relevant?",
+     "options": [
+      "Urban gardens give residents fresh vegetables",
+      "Urban gardens were first recorded long ago",
+      "Some gardens have wooden fences",
+      "The writer visited a garden last summer"
+     ],
+     "answer": "Urban gardens give residents fresh vegetables",
+     "accept": [],
+     "hint": "Look for a point that is a benefit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkec8f21vugpzs",
+     "subject": "en",
+     "type": "mc",
+     "q": "A summary task asks for 'the difficulties of living in space'. Which point is NOT relevant?",
+     "options": [
+      "Astronauts can see beautiful views of Earth",
+      "Muscles weaken in low gravity",
+      "Astronauts are far from their families",
+      "Sleep is often disturbed"
+     ],
+     "answer": "Astronauts can see beautiful views of Earth",
+     "accept": [],
+     "hint": "Which option is a positive rather than a difficulty?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpj62wy178w35m",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which of these should you leave out of a summary?",
+     "options": [
+      "Examples and repetitions",
+      "Key points",
+      "Facts that answer the question",
+      "Main ideas"
+     ],
+     "answer": "Examples and repetitions",
+     "accept": [],
+     "hint": "A summary keeps only what is essential.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6rgxb61wrcdxy",
+     "subject": "en",
+     "type": "mc",
+     "q": "Why should you use your own words in a summary where possible?",
+     "options": [
+      "To show you understand the text",
+      "To make the summary longer",
+      "To add your opinion",
+      "To change the meaning"
+     ],
+     "answer": "To show you understand the text",
+     "accept": [],
+     "hint": "Copying long phrases does not prove understanding.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgcmpt1h5ijz9",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is the best way to organise points in a summary?",
+     "options": [
+      "Group similar points together in a logical order",
+      "List them in random order",
+      "Put the shortest points first",
+      "Start with your opinion"
+     ],
+     "answer": "Group similar points together in a logical order",
+     "accept": [],
+     "hint": "A reader should be able to follow the ideas smoothly.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqocust1amyww0",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which connective best links two similar points in a summary?",
+     "options": [
+      "Furthermore",
+      "However",
+      "In contrast",
+      "Despite this"
+     ],
+     "answer": "Furthermore",
+     "accept": [],
+     "hint": "You need a word that adds another point, not one that contrasts.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp350bs1862z69",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which connective best introduces a contrasting point?",
+     "options": [
+      "However",
+      "Moreover",
+      "Also",
+      "In addition"
+     ],
+     "answer": "However",
+     "accept": [],
+     "hint": "You need a word that shows a change of direction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ufchusuuowye",
+     "subject": "en",
+     "type": "mc",
+     "q": "Original: 'The trip was ruined by heavy rain, freezing wind and a broken-down coach.' Which is the best concise summary point?",
+     "options": [
+      "Bad weather and transport problems spoiled the trip",
+      "The trip was ruined by heavy rain, freezing wind and a broken-down coach",
+      "It rained",
+      "The coach was old and needed new tyres"
+     ],
+     "answer": "Bad weather and transport problems spoiled the trip",
+     "accept": [],
+     "hint": "Look for an option that groups the details into general ideas without copying.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc4lutmn6bv2b",
+     "subject": "en",
+     "type": "mc",
+     "q": "Grouping 'apples, oranges and bananas' as 'fruit' is an example of which summary skill?",
+     "options": [
+      "Generalising",
+      "Quoting",
+      "Describing",
+      "Exaggerating"
+     ],
+     "answer": "Generalising",
+     "accept": [],
+     "hint": "You replace a list of specific items with one general term.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rcmv0a1bqnah9",
+     "subject": "en",
+     "type": "mc",
+     "q": "A text says: 'Scientists warn that, although plastic is cheap, it lasts for centuries and harms sea life.' If the summary focus is 'problems with plastic', which part is relevant?",
+     "options": [
+      "It lasts for centuries and harms sea life",
+      "Plastic is cheap",
+      "Scientists warn",
+      "Although"
+     ],
+     "answer": "It lasts for centuries and harms sea life",
+     "accept": [],
+     "hint": "'Cheap' is an advantage, not a problem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r164ntw71yx4i35",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which of these is a common mistake in summary writing?",
+     "options": [
+      "Including your own opinions",
+      "Using connectives",
+      "Grouping similar points",
+      "Keeping to the word limit"
+     ],
+     "answer": "Including your own opinions",
+     "accept": [],
+     "hint": "A summary reports the text's ideas, not yours.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrlvrq9svd49",
+     "subject": "en",
+     "type": "mc",
+     "q": "What should you do if your summary is over the word limit?",
+     "options": [
+      "Remove less important details and combine points",
+      "Write in smaller handwriting",
+      "Delete the final paragraph only",
+      "Add more examples"
+     ],
+     "answer": "Remove less important details and combine points",
+     "accept": [],
+     "hint": "Think about which details are not essential to the focus.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a5tht019v4y8j",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain how you would identify relevant points in a long article before writing a summary.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about re-reading the question, underlining, and checking each point against the focus.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ib12v71kud6ec",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain why organising points logically makes a summary more effective for the reader.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider clarity, flow and how easily the reader can follow the ideas.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_lit": {
+   "topic": "Drama: conventions — stage directions, dialogue and dramatic irony",
+   "questions": [
+    {
+     "id": "r1b0o1a4i882mc",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What are stage directions?",
+     "options": [
+      "Instructions in a script about actions, setting or how lines are spoken",
+      "The lines spoken by characters",
+      "The list of characters at the start",
+      "Reviews of the play"
+     ],
+     "answer": "Instructions in a script about actions, setting or how lines are spoken",
+     "accept": [],
+     "hint": "They tell actors and directors what to do, not what to say.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r3j9p1a3ds0p",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "How are stage directions usually set out in a printed play?",
+     "options": [
+      "In italics or brackets",
+      "In bold capital letters",
+      "As footnotes at the end",
+      "In speech marks"
+     ],
+     "answer": "In italics or brackets",
+     "accept": [],
+     "hint": "They need to look different from the spoken lines.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj1h07s10fgklo",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "What term is used for a conversation between two or more characters in a play?",
+     "options": [],
+     "answer": "dialogue",
+     "accept": [
+      "dialog"
+     ],
+     "hint": "It comes from a Greek word meaning 'conversation'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzfzpgbfa9ell",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is dramatic irony?",
+     "options": [
+      "When the audience knows something a character does not",
+      "When a character says the opposite of what they mean",
+      "When a play has a sad ending",
+      "When two characters argue"
+     ],
+     "answer": "When the audience knows something a character does not",
+     "accept": [],
+     "hint": "Think about the gap between what the audience knows and what a character knows.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6kefnz44y7fo",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is a soliloquy?",
+     "options": [
+      "A speech in which a character alone on stage speaks their thoughts aloud",
+      "A conversation between two characters",
+      "A short remark to the audience that others cannot hear",
+      "A song at the end of a scene"
+     ],
+     "answer": "A speech in which a character alone on stage speaks their thoughts aloud",
+     "accept": [],
+     "hint": "The word comes from Latin 'solus', meaning alone.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c7h7843teyhg",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is an aside?",
+     "options": [
+      "A brief remark to the audience that other characters on stage do not hear",
+      "A long speech by a character alone",
+      "A change of scenery",
+      "A stage direction about lighting"
+     ],
+     "answer": "A brief remark to the audience that other characters on stage do not hear",
+     "accept": [],
+     "hint": "It is shorter than a soliloquy and other characters are present.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1famk191yvjr5h",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What is a monologue?",
+     "options": [
+      "A long speech by one character, which others on stage may hear",
+      "A conversation between three characters",
+      "A silent scene",
+      "The final line of a play"
+     ],
+     "answer": "A long speech by one character, which others on stage may hear",
+     "accept": [],
+     "hint": "'Mono' means one.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14dr1iy1ddqyu4",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "A stage direction reads: '(She slams the door and the lights snap to black.)' What does this most suggest?",
+     "options": [
+      "A sudden, dramatic end to the scene",
+      "A calm, peaceful moment",
+      "A comic misunderstanding",
+      "The start of a flashback"
+     ],
+     "answer": "A sudden, dramatic end to the scene",
+     "accept": [],
+     "hint": "Think about the effect of 'slams' and 'snap'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rksmczg11frtnh",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "In a play, the audience has seen a character hide a stolen letter. Another character says, 'I trust you completely.' What technique is being used?",
+     "options": [
+      "Dramatic irony",
+      "Soliloquy",
+      "Alliteration",
+      "Flashback"
+     ],
+     "answer": "Dramatic irony",
+     "accept": [],
+     "hint": "The audience knows more than the speaker.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlrz2x0148rkei",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Why is a play script mainly written in dialogue rather than description?",
+     "options": [
+      "Because it is meant to be performed and heard",
+      "Because playwrights dislike description",
+      "Because it is shorter to print",
+      "Because readers prefer speech"
+     ],
+     "answer": "Because it is meant to be performed and heard",
+     "accept": [],
+     "hint": "Think about how an audience experiences a play.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2d5kcgysnz1",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What does the term 'tension' mean in drama?",
+     "options": [
+      "A feeling of suspense or anxiety the audience experiences",
+      "The number of actors on stage",
+      "A type of stage set",
+      "A comic interruption"
+     ],
+     "answer": "A feeling of suspense or anxiety the audience experiences",
+     "accept": [],
+     "hint": "It keeps the audience on the edge of their seats.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1okzpso1xlpksu",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which is the most likely effect of dramatic irony on an audience?",
+     "options": [
+      "It builds tension as they wait for the truth to come out",
+      "It makes the audience forget the plot",
+      "It ends the play quickly",
+      "It removes all suspense"
+     ],
+     "answer": "It builds tension as they wait for the truth to come out",
+     "accept": [],
+     "hint": "Think about how it feels to know a secret that a character does not.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl1sltj4yxsz",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Stage directions that describe a character 'nervously twisting a ring' mainly help to show what?",
+     "options": [
+      "The character's inner feelings",
+      "The time of day",
+      "The location of the scene",
+      "The play's genre"
+     ],
+     "answer": "The character's inner feelings",
+     "accept": [],
+     "hint": "Actions can reveal emotions without words.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1slactwuwymy0",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Explain how a playwright can use stage directions to create atmosphere at the start of a scene.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about lighting, sound, setting and how characters move or are positioned.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12mla5l1680rfe",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Analyse how dramatic irony can make an audience feel sympathy for a character.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider how it feels to watch a character trust someone or walk into danger without knowing what we know.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7iixtt1eg1xa8",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Explain why it is important to think about performance when analysing a play, rather than treating it only as a text to read.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider tone of voice, movement, pauses, staging and the live audience.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
