@@ -2073,6 +2073,2549 @@
      "errors": []
     }
    ]
+  },
+  "fmath": {
+   "topic": "Laws of logarithms",
+   "questions": [
+    {
+     "id": "r1o5u0md29m8ik",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Write 2^5 = 32 in logarithmic form.",
+     "options": [],
+     "answer": "log₂ 32 = 5",
+     "accept": [
+      "log2 32 = 5",
+      "log_2 32 = 5",
+      "log2(32)=5",
+      "log₂32=5"
+     ],
+     "hint": "The base stays the base; the logarithm is the power.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xjmyim1uxsy3e",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Write log₃ 81 = 4 in index form.",
+     "options": [],
+     "answer": "3^4 = 81",
+     "accept": [
+      "3⁴ = 81",
+      "3^4=81",
+      "3⁴=81"
+     ],
+     "hint": "Raise the base to the value of the logarithm.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3tmg421ysdhn",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Find the value of log₅ 125.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "What power of 5 gives 125?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r2l6wpm0idw8",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Find the value of log₂ (1/8).",
+     "options": [],
+     "answer": "-3",
+     "accept": [],
+     "hint": "A reciprocal means a negative power.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra9gwo5j597qd",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "Which expression is equal to log a + log b?",
+     "options": [
+      "log (ab)",
+      "log (a + b)",
+      "log a × log b",
+      "log (a/b)"
+     ],
+     "answer": "log (ab)",
+     "accept": [],
+     "hint": "Adding logs corresponds to multiplying the numbers inside.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2mh692s5opy",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "Which expression is equal to log (x/y)?",
+     "options": [
+      "log x − log y",
+      "log x ÷ log y",
+      "log (x − y)",
+      "log y − log x"
+     ],
+     "answer": "log x − log y",
+     "accept": [],
+     "hint": "Division inside becomes subtraction outside.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgqzbc8loh0x7",
+     "subject": "fmath",
+     "type": "mc",
+     "q": "Which expression is equal to log (x³)?",
+     "options": [
+      "3 log x",
+      "(log x)³",
+      "log 3 + log x",
+      "log 3x"
+     ],
+     "answer": "3 log x",
+     "accept": [],
+     "hint": "A power inside the log can move to the front.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r0f4jq6nlp0q",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Find the value of log₇ 1.",
+     "options": [],
+     "answer": "0",
+     "accept": [],
+     "hint": "Any non-zero number to the power of what equals 1?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h1rvba1525d66",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Simplify log₄ 4 + log₉ 9.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "log of the base to that same base is a simple value.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19quv9f1arsjw0",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Express log 6 + log 5 as a single logarithm.",
+     "options": [],
+     "answer": "log 30",
+     "accept": [
+      "log30",
+      "log(30)"
+     ],
+     "hint": "Use the product law.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxp2v9fsvidnz",
+     "subject": "fmath",
+     "type": "short",
+     "q": "Express 2 log 3 + log 4 as a single logarithm.",
+     "options": [],
+     "answer": "log 36",
+     "accept": [
+      "log36",
+      "log(36)"
+     ],
+     "hint": "Use the power law first, then the product law.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r48si4h1pomftt",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Find the exact value of log₂ 40 − log₂ 5.",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Combine into one logarithm using the quotient law.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfj6a9yuogylo",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Evaluate log₃ 18 + log₃ 4.5.",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Combine first: 18 × 4.5 is a power of 3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rki0siu16m55ip",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Solve log₂ x = 6.",
+     "options": [],
+     "answer": "64",
+     "accept": [],
+     "hint": "Rewrite the equation in index form.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13g4t64pka26f",
+     "subject": "fmath",
+     "type": "num",
+     "q": "Solve log₃ (x + 1) + log₃ 2 = 2.",
+     "options": [],
+     "answer": "3.5",
+     "accept": [
+      "7/2"
+     ],
+     "hint": "Combine the logs, then convert to index form.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yrpirt195vjdm",
+     "subject": "fmath",
+     "type": "open",
+     "q": "Show that log₂ 8 + log₂ 4 = log₂ 32, explaining which law you use at each step.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "You can either evaluate each log or combine them using the product law.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "fre": {
+   "topic": "Travel and transport (en, à and prepositions with places)",
+   "questions": [
+    {
+     "id": "rmf95j214kh0ek",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct French for 'by train'.",
+     "options": [
+      "en train",
+      "à train",
+      "au train",
+      "dans train"
+     ],
+     "answer": "en train",
+     "accept": [],
+     "hint": "Most vehicles you sit inside use the same short preposition.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4wl7k91sw8hfo",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct French for 'on foot'.",
+     "options": [
+      "à pied",
+      "en pied",
+      "au pied",
+      "par pied"
+     ],
+     "answer": "à pied",
+     "accept": [],
+     "hint": "This one is an exception to the rule for vehicles.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g4h7pj1hjliii",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: Je vais ___ France cet été.",
+     "options": [
+      "en",
+      "au",
+      "aux",
+      "à"
+     ],
+     "answer": "en",
+     "accept": [],
+     "hint": "France is a feminine country.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r764zsh1oeybv5",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: Ma famille habite ___ Brésil.",
+     "options": [
+      "au",
+      "en",
+      "aux",
+      "à"
+     ],
+     "answer": "au",
+     "accept": [],
+     "hint": "Brésil is a masculine country.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r102l19s1rc8qwy",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: Nous allons ___ États-Unis en avion.",
+     "options": [
+      "aux",
+      "au",
+      "en",
+      "à"
+     ],
+     "answer": "aux",
+     "accept": [],
+     "hint": "États-Unis is plural.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1swae2w1m3a28g",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: Elle travaille ___ Paris.",
+     "options": [
+      "à",
+      "en",
+      "au",
+      "aux"
+     ],
+     "answer": "à",
+     "accept": [],
+     "hint": "Cities use a different preposition from countries.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjtqy2pkmbhvw",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'a return ticket'.",
+     "options": [],
+     "answer": "un aller-retour",
+     "accept": [
+      "un billet aller-retour",
+      "aller-retour",
+      "un aller retour"
+     ],
+     "hint": "It is literally 'a going-return'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9hv0zv1vcrpfb",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'the ticket'.",
+     "options": [],
+     "answer": "le billet",
+     "accept": [
+      "le ticket"
+     ],
+     "hint": "It is a masculine noun beginning with b.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wiorwat1hgf8",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'un aller simple' mean?",
+     "options": [
+      "a single ticket",
+      "a return ticket",
+      "a season ticket",
+      "a cheap ticket"
+     ],
+     "answer": "a single ticket",
+     "accept": [],
+     "hint": "'Aller' means going, 'simple' means only one way.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qv9elp181ic2e",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which question asks 'What time does the train leave?'",
+     "options": [
+      "À quelle heure part le train ?",
+      "Où est le train ?",
+      "Combien coûte le train ?",
+      "Pourquoi prends-tu le train ?"
+     ],
+     "answer": "À quelle heure part le train ?",
+     "accept": [],
+     "hint": "Look for the words meaning 'at what time'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1igtuh0lmti5z",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'I go to school by bike.'",
+     "options": [],
+     "answer": "Je vais à l'école à vélo",
+     "accept": [
+      "Je vais à l'école en vélo",
+      "je vais à l’école à vélo"
+     ],
+     "hint": "Use 'aller' and the word for bicycle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlfu54xi1pb4f",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: Je prends le bus ___ c'est moins cher.",
+     "options": [
+      "parce que",
+      "mais",
+      "donc",
+      "quand"
+     ],
+     "answer": "parce que",
+     "accept": [],
+     "hint": "You need a word meaning 'because'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1384xfmsqf6qb",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: Ils voyagent ___ Portugal et ___ Espagne.",
+     "options": [
+      "au … en",
+      "en … au",
+      "au … au",
+      "en … en"
+     ],
+     "answer": "au … en",
+     "accept": [],
+     "hint": "Portugal is masculine; Espagne is feminine.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bsz8jg1tmoueo",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'Two return tickets to Lyon, please.'",
+     "options": [],
+     "answer": "Deux allers-retours pour Lyon, s'il vous plaît",
+     "accept": [
+      "Deux billets aller-retour pour Lyon, s'il vous plaît",
+      "Deux allers-retours pour Lyon s'il vous plaît",
+      "Deux aller-retour pour Lyon, s'il vous plaît"
+     ],
+     "hint": "Remember 'please' in the polite form.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r449zkovly7qk",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which sentence is correct?",
+     "options": [
+      "L'année dernière, je suis allé au Canada en avion.",
+      "L'année dernière, je suis allé en Canada à avion.",
+      "L'année dernière, j'ai allé au Canada en avion.",
+      "L'année dernière, je suis allé aux Canada en avion."
+     ],
+     "answer": "L'année dernière, je suis allé au Canada en avion.",
+     "accept": [],
+     "hint": "Check the auxiliary verb for 'aller' and the gender of Canada.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvasdjbpsz8mj",
+     "subject": "fre",
+     "type": "open",
+     "q": "Write 2–3 sentences in French describing how you usually travel to school and why.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use 'je vais … en/à …' and 'parce que'.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "geog": {
+   "topic": "Coastal management: hard and soft engineering (detailed specific examples)",
+   "questions": [
+    {
+     "id": "r14xq98t5h4hci",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which of these is a hard engineering coastal defence?",
+     "options": [
+      "sea wall",
+      "beach nourishment",
+      "managed retreat",
+      "dune regeneration"
+     ],
+     "answer": "sea wall",
+     "accept": [],
+     "hint": "Hard engineering means building artificial structures.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yr73beauqwrg",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which of these is a soft engineering strategy?",
+     "options": [
+      "beach nourishment",
+      "groynes",
+      "rock armour",
+      "sea wall"
+     ],
+     "answer": "beach nourishment",
+     "accept": [],
+     "hint": "Soft engineering works with natural processes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg1gin01owhmoi",
+     "subject": "geog",
+     "type": "short",
+     "q": "What name is given to wooden or rock barriers built at right angles to the beach to trap sediment?",
+     "options": [],
+     "answer": "groynes",
+     "accept": [
+      "groyne",
+      "groins"
+     ],
+     "hint": "They interrupt longshore drift.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lrt09ljcsx91",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What process do groynes mainly interrupt?",
+     "options": [
+      "longshore drift",
+      "freeze-thaw weathering",
+      "hydraulic action",
+      "solution"
+     ],
+     "answer": "longshore drift",
+     "accept": [],
+     "hint": "It is the movement of sediment along the coast.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw284oivya1cm",
+     "subject": "geog",
+     "type": "short",
+     "q": "What is the name for large boulders placed at the foot of a cliff or in front of a sea wall to absorb wave energy?",
+     "options": [],
+     "answer": "rock armour",
+     "accept": [
+      "riprap",
+      "rip-rap",
+      "rock armor"
+     ],
+     "hint": "It 'armours' the coast with rocks.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13359obk8fz1w",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What does beach nourishment involve?",
+     "options": [
+      "adding sand or shingle to a beach",
+      "building a concrete wall",
+      "letting the sea flood the land",
+      "planting trees on cliffs"
+     ],
+     "answer": "adding sand or shingle to a beach",
+     "accept": [],
+     "hint": "The beach is 'fed' with material.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kjwpoz18uf4z3",
+     "subject": "geog",
+     "type": "mc",
+     "q": "What is managed retreat?",
+     "options": [
+      "allowing an area of coast to flood or erode in a controlled way",
+      "moving sand along the beach by lorry",
+      "building a new sea wall further inland only",
+      "removing all people from the coast immediately"
+     ],
+     "answer": "allowing an area of coast to flood or erode in a controlled way",
+     "accept": [],
+     "hint": "The defences are not maintained and the land is allowed to change.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kd13q18x69k5",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Why is a curved (recurved) sea wall better than a flat vertical wall?",
+     "options": [
+      "it reflects wave energy back out to sea",
+      "it is cheaper to build",
+      "it lets sand pass through",
+      "it never needs repairs"
+     ],
+     "answer": "it reflects wave energy back out to sea",
+     "accept": [],
+     "hint": "Think about where the wave goes after hitting the curve.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r32319r1ilhchi",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which is a disadvantage of groynes?",
+     "options": [
+      "they can starve beaches further down the coast of sediment",
+      "they make beaches wider",
+      "they are invisible",
+      "they increase longshore drift"
+     ],
+     "answer": "they can starve beaches further down the coast of sediment",
+     "accept": [],
+     "hint": "Think about what happens downdrift of the structure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7rgubj1rbn0fb",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which is a main disadvantage of beach nourishment?",
+     "options": [
+      "it must be repeated regularly because sand is removed",
+      "it is very ugly",
+      "it stops all tourism",
+      "it creates salt marsh"
+     ],
+     "answer": "it must be repeated regularly because sand is removed",
+     "accept": [],
+     "hint": "The sea keeps moving the added material.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cs22gl1pk2svv",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which habitat is often created by managed retreat?",
+     "options": [
+      "salt marsh",
+      "coral reef",
+      "rainforest",
+      "desert"
+     ],
+     "answer": "salt marsh",
+     "accept": [],
+     "hint": "Low-lying land flooded by the tide becomes a wetland.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryuclgf1lc6unt",
+     "subject": "geog",
+     "type": "short",
+     "q": "What is the name of the analysis that compares the costs of a scheme with the value of what it protects?",
+     "options": [],
+     "answer": "cost-benefit analysis",
+     "accept": [
+      "cost benefit analysis",
+      "cost-benefit"
+     ],
+     "hint": "The keyword combines two opposite ideas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r77udfq1x788b6",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which strategy is usually most expensive per metre to build?",
+     "options": [
+      "sea wall",
+      "managed retreat",
+      "dune regeneration",
+      "beach nourishment"
+     ],
+     "answer": "sea wall",
+     "accept": [],
+     "hint": "Large amounts of concrete are needed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tt7mwq1hgg1wy",
+     "subject": "geog",
+     "type": "mc",
+     "q": "A stretch of coast has only farmland and a few isolated houses. Which option is most likely to be chosen?",
+     "options": [
+      "managed retreat",
+      "a new sea wall",
+      "rock armour along the whole coast",
+      "a large set of groynes"
+     ],
+     "answer": "managed retreat",
+     "accept": [],
+     "hint": "Compare the cost of defences with the value of the land.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fdn5rj1fg3mlz",
+     "subject": "geog",
+     "type": "open",
+     "q": "Compare hard and soft engineering as approaches to coastal management.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider cost, effectiveness, appearance and impact on the environment.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlvss9j1yzte47",
+     "subject": "geog",
+     "type": "open",
+     "q": "Evaluate a coastal management scheme you have studied. Was it successful?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Name the strategies used, give one success and one problem, then reach a judgement.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "hist": {
+   "topic": "Appeasement: was it justified?",
+   "questions": [
+    {
+     "id": "rsyl2al1it1ipf",
+     "subject": "hist",
+     "type": "mc",
+     "q": "What was appeasement?",
+     "options": [
+      "giving in to some demands to avoid war",
+      "declaring war immediately",
+      "forming a military alliance with Germany",
+      "refusing all negotiations"
+     ],
+     "answer": "giving in to some demands to avoid war",
+     "accept": [],
+     "hint": "To 'appease' someone is to calm them down.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ripo2kjrqhudp",
+     "subject": "hist",
+     "type": "short",
+     "q": "Which British Prime Minister is most associated with appeasement in 1937–1939?",
+     "options": [],
+     "answer": "Chamberlain",
+     "accept": [
+      "Neville Chamberlain"
+     ],
+     "hint": "He signed the Munich Agreement.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1638lhzh08ukm",
+     "subject": "hist",
+     "type": "short",
+     "q": "In which year was the Munich Agreement signed?",
+     "options": [],
+     "answer": "1938",
+     "accept": [],
+     "hint": "It came one year before the start of the Second World War.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r4pvlzbhn2sk",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which territory was handed to Germany by the Munich Agreement?",
+     "options": [
+      "the Sudetenland",
+      "the Rhineland",
+      "Danzig",
+      "Austria"
+     ],
+     "answer": "the Sudetenland",
+     "accept": [],
+     "hint": "It was part of Czechoslovakia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1584vep1umcy7f",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which event in 1936 did Britain and France allow without military response?",
+     "options": [
+      "the remilitarisation of the Rhineland",
+      "the invasion of Poland",
+      "the Anschluss",
+      "the Nazi-Soviet Pact"
+     ],
+     "answer": "the remilitarisation of the Rhineland",
+     "accept": [],
+     "hint": "German troops marched into a demilitarised zone.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrx8m6e1gnekid",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which of these was a reason for appeasement?",
+     "options": [
+      "British public opinion feared another war",
+      "Britain had the world's largest air force",
+      "Germany was already defeated",
+      "the League of Nations was very strong"
+     ],
+     "answer": "British public opinion feared another war",
+     "accept": [],
+     "hint": "Remember the memory of 1914–1918.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcyk8ma1igbxqk",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Why did some British people think the Treaty of Versailles had been too harsh on Germany?",
+     "options": [
+      "they felt Germany had some fair grievances",
+      "they wanted Germany to have colonies",
+      "they wanted war with France",
+      "they supported the Nazi Party"
+     ],
+     "answer": "they felt Germany had some fair grievances",
+     "accept": [],
+     "hint": "Think about the sense of fairness some people had.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pdw8wcsqmoss",
+     "subject": "hist",
+     "type": "short",
+     "q": "What term describes building up a country's armed forces again?",
+     "options": [],
+     "answer": "rearmament",
+     "accept": [
+      "rearming"
+     ],
+     "hint": "It is one of the keywords for this topic.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lb8xwux3zw2m",
+     "subject": "hist",
+     "type": "mc",
+     "q": "How could appeasement be said to have helped Britain militarily?",
+     "options": [
+      "it bought time to rearm",
+      "it gave Britain new colonies",
+      "it destroyed the German army",
+      "it ended conscription"
+     ],
+     "answer": "it bought time to rearm",
+     "accept": [],
+     "hint": "Think about the year gained between Munich and the war.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13610t1s91j3d",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which event in March 1939 showed that appeasement had failed?",
+     "options": [
+      "Germany occupied the rest of Czechoslovakia",
+      "Germany joined the League of Nations",
+      "Hitler resigned",
+      "Britain invaded Germany"
+     ],
+     "answer": "Germany occupied the rest of Czechoslovakia",
+     "accept": [],
+     "hint": "It broke the promise made at Munich.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl8gqn7q34a02",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which country was NOT invited to the Munich conference, which worried it greatly?",
+     "options": [
+      "the USSR",
+      "Italy",
+      "France",
+      "Germany"
+     ],
+     "answer": "the USSR",
+     "accept": [],
+     "hint": "This country later signed a pact with Germany.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1trb1xf16bjwvl",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which argument is AGAINST appeasement?",
+     "options": [
+      "it encouraged Hitler to make more demands",
+      "it gave Britain time to build fighter planes",
+      "it reflected public opinion",
+      "it kept the Empire united"
+     ],
+     "answer": "it encouraged Hitler to make more demands",
+     "accept": [],
+     "hint": "Think about how each success affected Hitler.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l8arqd1v48izk",
+     "subject": "hist",
+     "type": "mc",
+     "q": "Which statement best describes how historians' views of appeasement have changed?",
+     "options": [
+      "early critics called it cowardly; later historians stressed the limits Chamberlain faced",
+      "all historians have always praised it",
+      "all historians have always seen it as treason",
+      "historians have never written about it"
+     ],
+     "answer": "early critics called it cowardly; later historians stressed the limits Chamberlain faced",
+     "accept": [],
+     "hint": "Interpretations often change as new evidence becomes available.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19vpk4s1ld498o",
+     "subject": "hist",
+     "type": "open",
+     "q": "Explain two reasons why Britain followed a policy of appeasement.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the economy, the military, public opinion and attitudes to Versailles.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10rcghdyn4e0p",
+     "subject": "hist",
+     "type": "open",
+     "q": "'Appeasement was a sensible policy at the time.' How far do you agree? Give arguments for and against.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Balance time to rearm against encouraging Hitler, then make a judgement.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q053y0jn0cw5",
+     "subject": "hist",
+     "type": "open",
+     "q": "Why did the failure of appeasement in 1939 lead Britain to declare war?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the guarantee given to Poland.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Linear inequalities and regions on graphs",
+   "questions": [
+    {
+     "id": "r1nc2dzuueo2f1",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve 3x + 4 < 19.",
+     "options": [],
+     "answer": "x < 5",
+     "accept": [
+      "x<5"
+     ],
+     "hint": "Solve it like an equation, keeping the inequality sign.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nq5wsh18we3ny",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve 5x − 2 ≥ 13.",
+     "options": [],
+     "answer": "x ≥ 3",
+     "accept": [
+      "x>=3",
+      "x ≥3"
+     ],
+     "hint": "Add 2 first, then divide.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryigepf1pvzon7",
+     "subject": "math",
+     "type": "mc",
+     "q": "On a number line, how do you show x > 2?",
+     "options": [
+      "open circle at 2, arrow to the right",
+      "filled circle at 2, arrow to the right",
+      "open circle at 2, arrow to the left",
+      "filled circle at 2, arrow to the left"
+     ],
+     "answer": "open circle at 2, arrow to the right",
+     "accept": [],
+     "hint": "2 itself is not included.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxy130dmphmd",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which inequality has a filled (solid) circle on a number line?",
+     "options": [
+      "x ≤ 4",
+      "x < 4",
+      "x > 4",
+      "x ≠ 4"
+     ],
+     "answer": "x ≤ 4",
+     "accept": [],
+     "hint": "A solid circle means the number is included.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rld1izcnzkx4c",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve −2x > 8.",
+     "options": [],
+     "answer": "x < -4",
+     "accept": [
+      "x<-4",
+      "x < −4"
+     ],
+     "hint": "What happens to the sign when you divide by a negative?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrg9i981rt5uqg",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve 7 − x ≤ 3.",
+     "options": [],
+     "answer": "x ≥ 4",
+     "accept": [
+      "x>=4"
+     ],
+     "hint": "Be careful when the x term is negative.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcyz3371rfmbco",
+     "subject": "math",
+     "type": "short",
+     "q": "List the integers n such that −2 < n ≤ 3.",
+     "options": [],
+     "answer": "-1, 0, 1, 2, 3",
+     "accept": [
+      "-1,0,1,2,3",
+      "−1, 0, 1, 2, 3"
+     ],
+     "hint": "−2 is not included, but 3 is.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s6oy4a13z7hew",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve 1 < 2x + 3 ≤ 11.",
+     "options": [],
+     "answer": "-1 < x ≤ 4",
+     "accept": [
+      "-1<x≤4",
+      "−1 < x ≤ 4"
+     ],
+     "hint": "Do the same operation to all three parts.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7t8jh21yu3uy9",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the largest integer that satisfies 4x − 1 < 18?",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Solve first, then pick the biggest whole number below the bound.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ye1oex1ilfzb7",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve 3(x − 2) > x + 4.",
+     "options": [],
+     "answer": "x > 5",
+     "accept": [
+      "x>5"
+     ],
+     "hint": "Expand the bracket, then collect x terms on one side.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq8zxhvxpj3sz",
+     "subject": "math",
+     "type": "mc",
+     "q": "When shading the region y < 2x + 1, what type of boundary line is drawn?",
+     "options": [
+      "dashed line",
+      "solid line",
+      "no line",
+      "double line"
+     ],
+     "answer": "dashed line",
+     "accept": [],
+     "hint": "Points on the line are not included in a strict inequality.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2egpjuihw73y",
+     "subject": "math",
+     "type": "mc",
+     "q": "Does the point (1, 5) satisfy y > 3x + 1?",
+     "options": [
+      "yes",
+      "no"
+     ],
+     "answer": "yes",
+     "accept": [],
+     "hint": "Substitute x = 1 and compare with y.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1775gwk1aydpzn",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which inequality describes the region to the left of the line x = 3, including the line?",
+     "options": [
+      "x ≤ 3",
+      "x ≥ 3",
+      "y ≤ 3",
+      "x < 3"
+     ],
+     "answer": "x ≤ 3",
+     "accept": [],
+     "hint": "Left means smaller x values; 'including' means a solid line.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ralqk51xpgy31",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which point lies in the region x ≥ 0, y ≥ 0 and x + y ≤ 4?",
+     "options": [
+      "(1, 2)",
+      "(3, 3)",
+      "(−1, 2)",
+      "(5, 0)"
+     ],
+     "answer": "(1, 2)",
+     "accept": [],
+     "hint": "Check each condition for each point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpf2bg4ing62z",
+     "subject": "math",
+     "type": "num",
+     "q": "How many points with integer coordinates satisfy x > 0, y > 0 and x + y < 4?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "List the possible pairs carefully.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17rpvmw8zqm0a",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain why the inequality sign must be reversed when you multiply or divide both sides by a negative number. Use an example.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Try 2 < 5 and multiply both sides by −1.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "phys": {
+   "topic": "Pressure in solids and liquids",
+   "questions": [
+    {
+     "id": "r18ove30k8c27q",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What is the SI unit of pressure?",
+     "options": [
+      "pascal (Pa)",
+      "newton (N)",
+      "joule (J)",
+      "watt (W)"
+     ],
+     "answer": "pascal (Pa)",
+     "accept": [],
+     "hint": "1 of these units equals 1 N/m².",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pcg9uir51sev",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which equation links pressure, force and area?",
+     "options": [
+      "p = F/A",
+      "p = F × A",
+      "p = A/F",
+      "p = F + A"
+     ],
+     "answer": "p = F/A",
+     "accept": [],
+     "hint": "Pressure is force spread over an area.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzuspvi1b4ife8",
+     "subject": "phys",
+     "type": "num",
+     "q": "A force of 600 N acts on an area of 3 m². Calculate the pressure in Pa.",
+     "options": [],
+     "answer": "200",
+     "accept": [],
+     "hint": "Divide the force by the area.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m1vtg51o01lxb",
+     "subject": "phys",
+     "type": "num",
+     "q": "A box exerts a pressure of 50 Pa on the floor over an area of 0.4 m². Calculate its weight in N.",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Rearrange p = F/A to find F.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18703ddyl9zbc",
+     "subject": "phys",
+     "type": "num",
+     "q": "A force of 20 N is applied over an area of 0.0005 m². Calculate the pressure in Pa.",
+     "options": [],
+     "answer": "40000",
+     "accept": [
+      "40 000",
+      "40,000"
+     ],
+     "hint": "Dividing by a small number gives a large answer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17kyt4w1lu83fs",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Why are drawing pins pointed?",
+     "options": [
+      "a small area gives a large pressure",
+      "a small area gives a small pressure",
+      "a large area gives a large pressure",
+      "the point reduces the force"
+     ],
+     "answer": "a small area gives a large pressure",
+     "accept": [],
+     "hint": "Think about p = F/A with a tiny A.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqveoe81axtvvv",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Why do snowshoes stop a person sinking into snow?",
+     "options": [
+      "they increase the area, reducing the pressure",
+      "they reduce the person's weight",
+      "they increase the pressure",
+      "they reduce the area"
+     ],
+     "answer": "they increase the area, reducing the pressure",
+     "accept": [],
+     "hint": "The force stays the same; what changes?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ldrjoz1o974vv",
+     "subject": "phys",
+     "type": "mc",
+     "q": "How does pressure in a liquid change as depth increases?",
+     "options": [
+      "it increases",
+      "it decreases",
+      "it stays the same",
+      "it becomes zero"
+     ],
+     "answer": "it increases",
+     "accept": [],
+     "hint": "More liquid is pressing down from above.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19uodz9ltry2y",
+     "subject": "phys",
+     "type": "mc",
+     "q": "In which direction does pressure act at a point in a liquid?",
+     "options": [
+      "equally in all directions",
+      "only downwards",
+      "only upwards",
+      "only sideways"
+     ],
+     "answer": "equally in all directions",
+     "accept": [],
+     "hint": "Think of water spurting from holes in the side of a bottle.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10iwsxo46koxl",
+     "subject": "phys",
+     "type": "short",
+     "q": "In Δp = ρgΔh, what does the symbol ρ represent?",
+     "options": [],
+     "answer": "density",
+     "accept": [
+      "the density of the liquid",
+      "density of the liquid"
+     ],
+     "hint": "It is measured in kg/m³.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ynbiy8acz64w",
+     "subject": "phys",
+     "type": "num",
+     "q": "Water has a density of 1000 kg/m³ and g = 10 N/kg. Calculate the pressure change 5 m below the surface, in Pa.",
+     "options": [],
+     "answer": "50000",
+     "accept": [
+      "50 000",
+      "50,000"
+     ],
+     "hint": "Multiply density × g × depth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rijveyv1pac2gg",
+     "subject": "phys",
+     "type": "num",
+     "q": "Calculate the pressure due to 0.2 m of oil of density 800 kg/m³ (g = 10 N/kg), in Pa.",
+     "options": [],
+     "answer": "1600",
+     "accept": [
+      "1 600",
+      "1,600"
+     ],
+     "hint": "Use Δp = ρgΔh.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w4yob412jxme5",
+     "subject": "phys",
+     "type": "num",
+     "q": "At what depth in seawater (ρ = 1030 kg/m³, g = 10 N/kg) is the pressure due to the water 206 000 Pa? Give your answer in m.",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Rearrange to Δh = Δp ÷ (ρg).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16ydpol1yudqy3",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Why is a dam built thicker at the bottom than at the top?",
+     "options": [
+      "water pressure is greater at greater depth",
+      "water is lighter at the bottom",
+      "the top needs to be flexible",
+      "pressure is greatest at the surface"
+     ],
+     "answer": "water pressure is greater at greater depth",
+     "accept": [],
+     "hint": "Think about how Δp depends on Δh.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwegq47ln2ng2",
+     "subject": "phys",
+     "type": "num",
+     "q": "A block weighing 120 N has faces measuring 0.2 m × 0.3 m and 0.1 m × 0.2 m. What is the maximum pressure it can exert on a table, in Pa?",
+     "options": [],
+     "answer": "6000",
+     "accept": [
+      "6 000",
+      "6,000"
+     ],
+     "hint": "Maximum pressure occurs when the smallest face is in contact.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r198syd1f6jnh6",
+     "subject": "phys",
+     "type": "open",
+     "q": "Explain why a sharp knife cuts more easily than a blunt knife, even when the same force is used.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare the area of contact and use p = F/A.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych": {
+   "topic": "Sleep and dreams: key concepts",
+   "questions": [
+    {
+     "id": "r1svsjg0qnxhne",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What does REM stand for?",
+     "options": [
+      "rapid eye movement",
+      "regular energy mode",
+      "rest and empty mind",
+      "relaxed eye muscles"
+     ],
+     "answer": "rapid eye movement",
+     "accept": [],
+     "hint": "It describes what the eyes do in this stage.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9dqdee1n7mba1",
+     "subject": "psych",
+     "type": "short",
+     "q": "Which piece of equipment records electrical activity in the brain during sleep?",
+     "options": [],
+     "answer": "EEG",
+     "accept": [
+      "electroencephalogram",
+      "an EEG",
+      "electroencephalograph"
+     ],
+     "hint": "It is a three-letter abbreviation from the keywords.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxaja1v84k3n0",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is a circadian rhythm?",
+     "options": [
+      "a biological cycle lasting about 24 hours",
+      "a cycle lasting about 90 minutes",
+      "a yearly cycle",
+      "a cycle lasting one week"
+     ],
+     "answer": "a biological cycle lasting about 24 hours",
+     "accept": [],
+     "hint": "'Circa diem' means 'about a day'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbqrkqeifoim7",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which is the main example of a circadian rhythm?",
+     "options": [
+      "the sleep-wake cycle",
+      "the menstrual cycle",
+      "the stages of a single dream",
+      "hibernation"
+     ],
+     "answer": "the sleep-wake cycle",
+     "accept": [],
+     "hint": "It repeats every day and night.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dy3jll1y5yp9d",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Roughly how long is one full sleep cycle in adults?",
+     "options": [
+      "about 90 minutes",
+      "about 10 minutes",
+      "about 4 hours",
+      "about 24 hours"
+     ],
+     "answer": "about 90 minutes",
+     "accept": [],
+     "hint": "Several of these cycles happen in one night.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ycc3t11s6nk1l",
+     "subject": "psych",
+     "type": "mc",
+     "q": "During which type of sleep do most vivid dreams occur?",
+     "options": [
+      "REM sleep",
+      "stage 1 NREM sleep",
+      "deep NREM sleep",
+      "while falling asleep"
+     ],
+     "answer": "REM sleep",
+     "accept": [],
+     "hint": "Brain activity in this stage looks similar to being awake.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1caeau7lxkutz",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which stage of sleep is the deepest and hardest to wake from?",
+     "options": [
+      "deep NREM sleep (slow-wave sleep)",
+      "REM sleep",
+      "stage 1",
+      "being drowsy"
+     ],
+     "answer": "deep NREM sleep (slow-wave sleep)",
+     "accept": [],
+     "hint": "It shows slow, high-amplitude brain waves.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmptty066n665",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is characteristic of the body's muscles during REM sleep?",
+     "options": [
+      "they are largely paralysed",
+      "they are very tense",
+      "they move constantly",
+      "they are warmer than when awake"
+     ],
+     "answer": "they are largely paralysed",
+     "accept": [],
+     "hint": "This stops us acting out our dreams.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4ys3xr1u94mv1",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What kind of brain waves are typical of deep NREM sleep?",
+     "options": [
+      "delta waves",
+      "beta waves",
+      "alpha waves",
+      "gamma waves"
+     ],
+     "answer": "delta waves",
+     "accept": [],
+     "hint": "They are the slowest waves.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ppl7jpts1tr1",
+     "subject": "psych",
+     "type": "short",
+     "q": "What term is used for external cues, such as daylight, that reset the body clock?",
+     "options": [],
+     "answer": "zeitgebers",
+     "accept": [
+      "zeitgeber",
+      "exogenous zeitgebers"
+     ],
+     "hint": "It is a German word meaning 'time givers'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r742igsbil61j",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which hormone, released when it gets dark, makes us feel sleepy?",
+     "options": [
+      "melatonin",
+      "adrenaline",
+      "insulin",
+      "cortisol"
+     ],
+     "answer": "melatonin",
+     "accept": [],
+     "hint": "It is produced by the pineal gland.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r8pys1jim7r1",
+     "subject": "psych",
+     "type": "mc",
+     "q": "How does the pattern of sleep stages change through the night?",
+     "options": [
+      "REM periods get longer and deep sleep gets shorter",
+      "deep sleep gets longer and REM disappears",
+      "the pattern never changes",
+      "only REM occurs after midnight"
+     ],
+     "answer": "REM periods get longer and deep sleep gets shorter",
+     "accept": [],
+     "hint": "Most deep sleep happens early in the night.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15sqsvgestbab",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Why does jet lag happen?",
+     "options": [
+      "the body clock is out of step with local time",
+      "the plane reduces oxygen permanently",
+      "people sleep too much on planes",
+      "melatonin stops being produced"
+     ],
+     "answer": "the body clock is out of step with local time",
+     "accept": [],
+     "hint": "Think about crossing time zones quickly.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14pcxcp1lhikhb",
+     "subject": "psych",
+     "type": "open",
+     "q": "Describe the differences between REM and NREM sleep.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider brain activity, eye movements, muscles and dreaming.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx3odht1gg2oqz",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain how light helps to control the sleep-wake cycle.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Mention the body clock and melatonin.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzl7qvf1t1ufap",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In a typical night, roughly how many sleep cycles does an adult complete?",
+     "options": [
+      "4 to 6",
+      "1",
+      "15 to 20",
+      "about 50"
+     ],
+     "answer": "4 to 6",
+     "accept": [],
+     "hint": "Divide a night of about 8 hours by the length of one cycle.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Concordância verbal",
+   "questions": [
+    {
+     "id": "rdb5fs01h33w8y",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete com a concordância correta: \"Os alunos ___ cedo.\"",
+     "options": [
+      "chegaram",
+      "chegou",
+      "chegamos",
+      "chega"
+     ],
+     "answer": "chegaram",
+     "accept": [],
+     "hint": "O verbo concorda com o núcleo do sujeito em número e pessoa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8103tn1sekey7",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"___ muitos problemas na reunião.\" (sentido de existir)",
+     "options": [
+      "Houve",
+      "Houveram",
+      "Haviam",
+      "Hão"
+     ],
+     "answer": "Houve",
+     "accept": [],
+     "hint": "No sentido de existir, o verbo haver é impessoal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pe01kdfp5wmb",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"A professora e os alunos ___ da excursão.\"",
+     "options": [
+      "gostaram",
+      "gostou",
+      "gostamos",
+      "gosta"
+     ],
+     "answer": "gostaram",
+     "accept": [],
+     "hint": "Sujeito composto anteposto ao verbo leva o verbo ao plural.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2tw6tq83pv00",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase está correta segundo a norma-padrão?",
+     "options": [
+      "Devia haver mais vagas.",
+      "Deviam haver mais vagas.",
+      "Deviam ter havido mais vagas.",
+      "Devem haverem mais vagas."
+     ],
+     "answer": "Devia haver mais vagas.",
+     "accept": [],
+     "hint": "O auxiliar acompanha a impessoalidade do verbo haver.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv6o20t15fz9jx",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Eu e minha irmã ___ ao cinema ontem.\"",
+     "options": [
+      "fomos",
+      "foram",
+      "foi",
+      "fui"
+     ],
+     "answer": "fomos",
+     "accept": [],
+     "hint": "Se o sujeito composto inclui \"eu\", o verbo vai para a 1ª pessoa do plural.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "repggi4yd5gzk",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Tu e teu primo ___ convidados.\" (concordância mais usual)",
+     "options": [
+      "foram",
+      "fomos",
+      "foi",
+      "fui"
+     ],
+     "answer": "foram",
+     "accept": [
+      "fostes"
+     ],
+     "hint": "Com 2ª e 3ª pessoas, o mais comum hoje é a 3ª pessoa do plural.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf0xofg1ef14tj",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Mais de um aluno ___ a prova.\"",
+     "options": [
+      "fez",
+      "fizeram",
+      "fazem",
+      "fizemos"
+     ],
+     "answer": "fez",
+     "accept": [],
+     "hint": "Com \"mais de um\", o verbo normalmente concorda com o numeral \"um\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5r13j51d4sg6n",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Vende-se ___.\"",
+     "options": [
+      "casa",
+      "casas"
+     ],
+     "answer": "casa",
+     "accept": [],
+     "hint": "Com a partícula apassivadora, o verbo concorda com o sujeito paciente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1doj5hpj58dy0",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase está correta?",
+     "options": [
+      "Alugam-se apartamentos.",
+      "Aluga-se apartamentos.",
+      "Alugam-se apartamento.",
+      "Alugou-se apartamentos."
+     ],
+     "answer": "Alugam-se apartamentos.",
+     "accept": [],
+     "hint": "Transforme em voz passiva: apartamentos são alugados.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bvh7oj17ptftf",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Precisa-se ___ funcionários.\"",
+     "options": [
+      "de",
+      "dos"
+     ],
+     "answer": "de",
+     "accept": [],
+     "hint": "Com verbo transitivo indireto + se, o verbo fica no singular e há preposição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3uvk8t15brtwj",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"A maioria dos estudantes ___ o novo horário.\"",
+     "options": [
+      "aprovou",
+      "aprovaram",
+      "ambas são aceitas"
+     ],
+     "answer": "ambas são aceitas",
+     "accept": [],
+     "hint": "Com expressão partitiva seguida de plural, a gramática aceita duas concordâncias.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrp4clv1cczrab",
+     "subject": "pt",
+     "type": "short",
+     "q": "Corrija o verbo destacado: \"FAZEM três meses que ele se mudou.\" Escreva só a forma correta.",
+     "options": [],
+     "answer": "Faz",
+     "accept": [
+      "faz"
+     ],
+     "hint": "Pense na impessoalidade do verbo indicando tempo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ropc904y1ojgx",
+     "subject": "pt",
+     "type": "short",
+     "q": "Corrija o verbo destacado: \"HAVIAM várias pessoas na fila.\" Escreva só a forma correta.",
+     "options": [],
+     "answer": "Havia",
+     "accept": [
+      "havia"
+     ],
+     "hint": "Substitua por \"existiam\" e veja qual verbo é impessoal.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uuha5p4r0h2i",
+     "subject": "pt",
+     "type": "short",
+     "q": "Corrija o verbo destacado: \"Já SOAVA as seis horas quando saímos.\" Escreva só a forma correta.",
+     "options": [],
+     "answer": "soavam",
+     "accept": [
+      "Soavam"
+     ],
+     "hint": "Com os verbos dar, bater e soar, o verbo concorda com o número de horas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r164907a8ot3jo",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique por que a frase \"Existem muitas dúvidas\" está correta, mas \"Houveram muitas dúvidas\" não está.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare o comportamento dos verbos existir e haver.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpyguvyi1fcjf",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"___ dois anos que não nos vemos.\"",
+     "options": [
+      "Faz",
+      "Fazem",
+      "Fizeram",
+      "Fazemos"
+     ],
+     "answer": "Faz",
+     "accept": [],
+     "hint": "Quando indica tempo decorrido, esse verbo não tem sujeito.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_lit": {
+   "topic": "Literatura de cordel e cultura popular nordestina",
+   "questions": [
+    {
+     "id": "r4q61mi1q1idmq",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em que região do Brasil a literatura de cordel é mais tradicional?",
+     "options": [
+      "Nordeste",
+      "Sul",
+      "Centro-Oeste",
+      "Norte"
+     ],
+     "answer": "Nordeste",
+     "accept": [],
+     "hint": "É uma marca da cultura popular dessa região.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwqc5rwggy1dz",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "De onde vem o nome \"cordel\"?",
+     "options": [
+      "dos cordões onde os folhetos eram pendurados para venda",
+      "de um instrumento musical",
+      "do nome de um poeta",
+      "de uma dança típica"
+     ],
+     "answer": "dos cordões onde os folhetos eram pendurados para venda",
+     "accept": [],
+     "hint": "Pense em como os folhetos ficavam expostos nas feiras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rblryo3io69za",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Como se chama a estrofe de seis versos muito usada no cordel?",
+     "options": [],
+     "answer": "sextilha",
+     "accept": [
+      "sextilhas"
+     ],
+     "hint": "O nome vem do número seis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u6dy4m5hl1ki",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Quantas sílabas poéticas tem, em geral, cada verso da sextilha de cordel?",
+     "options": [
+      "sete",
+      "dez",
+      "doze",
+      "cinco"
+     ],
+     "answer": "sete",
+     "accept": [],
+     "hint": "É a redondilha maior.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2mn67s173me41",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Que nome recebe o verso de sete sílabas poéticas?",
+     "options": [],
+     "answer": "redondilha maior",
+     "accept": [
+      "redondilha"
+     ],
+     "hint": "O de cinco sílabas é a redondilha menor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1puyj4yhb172m",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Na sextilha clássica do cordel, quais versos rimam entre si?",
+     "options": [
+      "o 2º, o 4º e o 6º",
+      "o 1º e o 2º",
+      "todos os versos",
+      "nenhum verso"
+     ],
+     "answer": "o 2º, o 4º e o 6º",
+     "accept": [],
+     "hint": "Os versos ímpares ficam livres.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k3ig1hvk1v9j",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Qual técnica de gravura em madeira costuma ilustrar as capas dos folhetos de cordel?",
+     "options": [],
+     "answer": "xilogravura",
+     "accept": [
+      "xilogravuras"
+     ],
+     "hint": "\"Xilo\" significa madeira.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vp00hq7f7pra",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Como é feita a xilogravura?",
+     "options": [
+      "entalhando a imagem em madeira e usando-a como carimbo",
+      "pintando diretamente no papel com pincel",
+      "fotografando uma paisagem",
+      "recortando papel colorido"
+     ],
+     "answer": "entalhando a imagem em madeira e usando-a como carimbo",
+     "accept": [],
+     "hint": "A matriz é de madeira e recebe tinta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rryxuz87snu4w",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual é uma característica marcante do cordel?",
+     "options": [
+      "linguagem simples e oral, feita para ser lida em voz alta",
+      "vocabulário raro e erudito",
+      "ausência de rima",
+      "textos só em prosa"
+     ],
+     "answer": "linguagem simples e oral, feita para ser lida em voz alta",
+     "accept": [],
+     "hint": "Era recitado em feiras e praças.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r389ucz1r4mdrx",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual destes temas é comum no cordel?",
+     "options": [
+      "histórias de valentia, humor e acontecimentos do dia a dia",
+      "manuais técnicos de engenharia",
+      "receitas médicas",
+      "contratos comerciais"
+     ],
+     "answer": "histórias de valentia, humor e acontecimentos do dia a dia",
+     "accept": [],
+     "hint": "Pense na função de entreter e informar o povo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzo2u3ebzmj51",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Como se chama o poeta que escreve cordel?",
+     "options": [
+      "cordelista",
+      "cronista",
+      "romancista",
+      "dramaturgo"
+     ],
+     "answer": "cordelista",
+     "accept": [],
+     "hint": "A palavra deriva de \"cordel\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roai43a1miky67",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Por que se diz que o cordel tem forte ligação com a oralidade?",
+     "options": [
+      "porque era recitado e cantado em público, ajudando a memorizar",
+      "porque nunca foi impresso",
+      "porque é escrito só em língua estrangeira",
+      "porque não tem ritmo"
+     ],
+     "answer": "porque era recitado e cantado em público, ajudando a memorizar",
+     "accept": [],
+     "hint": "Rima e métrica facilitam lembrar o texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d1322t16cy7ib",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Leia: \"Vou contar uma história / que se deu lá no sertão / de um menino valente / com coragem e coração\". Que palavras rimam?",
+     "options": [
+      "sertão e coração",
+      "história e menino",
+      "contar e valente",
+      "menino e coragem"
+     ],
+     "answer": "sertão e coração",
+     "accept": [],
+     "hint": "Observe o fim do 2º e do 4º versos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1loghkd1in4osz",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em 2018, o cordel foi reconhecido no Brasil como:",
+     "options": [
+      "Patrimônio Cultural Imaterial",
+      "Patrimônio Natural da Humanidade",
+      "gênero proibido",
+      "língua oficial"
+     ],
+     "answer": "Patrimônio Cultural Imaterial",
+     "accept": [],
+     "hint": "O reconhecimento valoriza uma tradição viva, não um objeto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp7ewo35v3rrr",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Explique por que o cordel pode ser considerado uma expressão da cultura popular.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em quem produz, quem lê, onde circula e de que fala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkj3f871i108k6",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Analise como a métrica e a rima contribuem para o efeito do cordel no público.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Considere ritmo, musicalidade e memorização.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_red": {
+   "topic": "Artigo de opinião: tese e argumentos",
+   "questions": [
+    {
+     "id": "r1i5swi2c796j3",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual é o principal objetivo de um artigo de opinião?",
+     "options": [
+      "defender um ponto de vista e convencer o leitor",
+      "narrar uma história de ficção",
+      "informar de forma neutra",
+      "descrever um lugar"
+     ],
+     "answer": "defender um ponto de vista e convencer o leitor",
+     "accept": [],
+     "hint": "É um gênero argumentativo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14003nj1osmn9p",
+     "subject": "pt_red",
+     "type": "short",
+     "q": "Como se chama a ideia central que o autor defende no artigo de opinião?",
+     "options": [],
+     "answer": "tese",
+     "accept": [
+      "a tese"
+     ],
+     "hint": "É uma das palavras-chave desta semana.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n2nc26106j7v9",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Onde a tese costuma aparecer no artigo de opinião?",
+     "options": [
+      "na introdução",
+      "só na conclusão",
+      "no título apenas",
+      "em nenhuma parte"
+     ],
+     "answer": "na introdução",
+     "accept": [],
+     "hint": "O leitor precisa saber logo o que será defendido.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw8jb018n9w9b",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual destas frases é uma tese?",
+     "options": [
+      "As escolas deveriam incluir educação financeira no currículo.",
+      "Hoje choveu em várias cidades.",
+      "O Brasil tem 26 estados e um Distrito Federal.",
+      "O que é educação financeira?"
+     ],
+     "answer": "As escolas deveriam incluir educação financeira no currículo.",
+     "accept": [],
+     "hint": "Uma tese é uma afirmação discutível, não um fato.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d7k4971cvnrr3",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual é a diferença entre tese e argumento?",
+     "options": [
+      "a tese é o que se defende; o argumento é a razão que a sustenta",
+      "são a mesma coisa",
+      "o argumento é sempre a conclusão",
+      "a tese é um dado estatístico"
+     ],
+     "answer": "a tese é o que se defende; o argumento é a razão que a sustenta",
+     "accept": [],
+     "hint": "Um responde \"o quê?\", o outro responde \"por quê?\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jrfuqyorpxni",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Que tipo de argumento usa números e pesquisas?",
+     "options": [
+      "argumento por dados estatísticos",
+      "argumento por exemplificação pessoal",
+      "argumento por comparação",
+      "argumento por ironia"
+     ],
+     "answer": "argumento por dados estatísticos",
+     "accept": [],
+     "hint": "Pense em porcentagens e levantamentos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15e8pokk2swql",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "\"Segundo especialistas em saúde, dormir pouco prejudica a memória.\" Que tipo de argumento é esse?",
+     "options": [
+      "argumento de autoridade",
+      "argumento por exemplo",
+      "argumento por analogia",
+      "contra-argumento"
+     ],
+     "answer": "argumento de autoridade",
+     "accept": [],
+     "hint": "Recorre a quem tem conhecimento reconhecido no assunto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r157xibb18zm7s1",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "\"Assim como um atleta precisa treinar, um leitor precisa ler todos os dias.\" Que tipo de argumento é esse?",
+     "options": [
+      "argumento por comparação (analogia)",
+      "argumento de autoridade",
+      "dado estatístico",
+      "definição"
+     ],
+     "answer": "argumento por comparação (analogia)",
+     "accept": [],
+     "hint": "Observe a expressão \"assim como\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk1xes43r3qhs",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "O que é contra-argumentação?",
+     "options": [
+      "apresentar uma ideia contrária e refutá-la",
+      "repetir a tese",
+      "mudar de opinião no meio do texto",
+      "citar o título"
+     ],
+     "answer": "apresentar uma ideia contrária e refutá-la",
+     "accept": [],
+     "hint": "Antecipa o que o leitor poderia objetar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ratbjcw1q6mt1b",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual conectivo introduz bem uma ideia de oposição?",
+     "options": [
+      "no entanto",
+      "além disso",
+      "portanto",
+      "por exemplo"
+     ],
+     "answer": "no entanto",
+     "accept": [],
+     "hint": "Procure o que indica contraste.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw9qd9k12jejve",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual conectivo introduz uma conclusão?",
+     "options": [
+      "portanto",
+      "entretanto",
+      "embora",
+      "além disso"
+     ],
+     "answer": "portanto",
+     "accept": [],
+     "hint": "Indica consequência ou fechamento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1smjtll1pjig81",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Em que pessoa gramatical o artigo de opinião é frequentemente escrito para parecer mais objetivo?",
+     "options": [
+      "3ª pessoa",
+      "2ª pessoa",
+      "só 1ª pessoa do singular",
+      "não há pessoa"
+     ],
+     "answer": "3ª pessoa",
+     "accept": [],
+     "hint": "A impessoalidade dá ar de objetividade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r102imav1fim2vg",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual problema enfraquece um argumento?",
+     "options": [
+      "generalização sem provas, como \"todo mundo sabe que…\"",
+      "uso de dados confiáveis",
+      "exemplo concreto",
+      "explicação de causa e consequência"
+     ],
+     "answer": "generalização sem provas, como \"todo mundo sabe que…\"",
+     "accept": [],
+     "hint": "Pense em afirmações que não podem ser comprovadas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wgle7o1s1taij",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "O que se espera da conclusão de um artigo de opinião?",
+     "options": [
+      "retomar a tese e reforçar o posicionamento",
+      "apresentar um tema totalmente novo",
+      "contar uma piada",
+      "fazer só uma pergunta sem resposta"
+     ],
+     "answer": "retomar a tese e reforçar o posicionamento",
+     "accept": [],
+     "hint": "O texto deve fechar o raciocínio.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r37se6m1gqa4wi",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Formule uma tese clara sobre o tema \"uso de celulares nas escolas\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Escreva uma única frase que tome posição e possa ser defendida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8c20iy3fyq9b",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Escreva um parágrafo argumentativo (3 a 5 frases) defendendo que a leitura deve ser incentivada desde a infância.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Comece com um tópico frasal, dê um argumento e uma prova ou exemplo.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
