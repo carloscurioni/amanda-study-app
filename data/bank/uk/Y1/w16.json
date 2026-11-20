@@ -3206,6 +3206,865 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "Rosie and the Problem Solvers",
+   "premise": "Rosie, her little brother Sam and their dog Biscuit face a small problem in each story, notice how they feel, and work out a clever way to solve it.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Kite in the Tree",
+     "synopsis": "Rosie's new kite gets stuck in a tall tree, and Grandpa helps her find a way to get it down.",
+     "text": "Rosie had a new kite. It was yellow with a long blue tail.\nShe ran across the park with her little brother Sam and their dog Biscuit. The wind pulled the kite up, up, up.\nThen the wind blew hard. The kite flew into a tall tree and got stuck on a branch.\n\"Oh no!\" said Rosie. Her eyes filled with tears. \"My kite is stuck!\"\nSam tried to jump for the string, but the branch was too high. Biscuit barked at the tree.\nGrandpa came over. \"Let's think,\" he said. \"What do we have that is long?\"\nRosie looked around. She saw Grandpa's garden rake by the bench.\nGrandpa held the rake up high. Very gently, he wiggled the branch. The kite slid down into Rosie's arms.\n\"Thank you, Grandpa!\" Rosie smiled a big smile.\nThat afternoon, she flew her kite far away from the trees.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour was Rosie's kite?",
+       "options": [
+        "Yellow",
+        "Red",
+        "Green"
+       ],
+       "answer": "Yellow",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did the kite get stuck?",
+       "options": [
+        "In a tall tree",
+        "On a roof",
+        "In a pond"
+       ],
+       "answer": "In a tall tree",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the dog?",
+       "options": [],
+       "answer": "Biscuit",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the problem?",
+       "options": [
+        "The kite got stuck in a tree",
+        "Biscuit ran away",
+        "It started to rain"
+       ],
+       "answer": "The kite got stuck in a tree",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Rosie feel when the kite got stuck?",
+       "options": [
+        "Sad",
+        "Happy",
+        "Sleepy"
+       ],
+       "answer": "Sad",
+       "accept": [],
+       "hint": "Look at what happened to her eyes.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Grandpa use to get the kite down?",
+       "options": [
+        "A rake",
+        "A ladder",
+        "A rope"
+       ],
+       "answer": "A rake",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Rosie fly her kite far away from the trees at the end?",
+       "options": [
+        "So it would not get stuck again",
+        "Because the trees were noisy",
+        "Because Grandpa went home"
+       ],
+       "answer": "So it would not get stuck again",
+       "accept": [],
+       "hint": "Think about what went wrong before.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Grandpa said \"Let's think\" instead of trying to jump?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Missing Shoe",
+     "synopsis": "Sam cannot find one of his shoes before school, and Rosie solves the mystery.",
+     "text": "It was a school morning. Sam had one red shoe on his foot. The other red shoe was missing!\n\"Where is my shoe?\" cried Sam. \"We will be late!\" He felt worried and cross.\nRosie wanted to help. \"Let's look carefully,\" she said.\nThey looked under the bed. They found a sock and a toy car, but no shoe.\nThey looked in the toy box. They found a teddy and a ball, but no shoe.\nThen Rosie heard a little noise. Chew, chew, chew.\nShe peeped into Biscuit's basket. There was Biscuit, chewing on a red lace!\n\"Biscuit! You have Sam's shoe!\" laughed Rosie.\nThe shoe was a bit wet, but it was fine. Sam put it on and hugged his sister.\nMum put a shoe box by the door. \"Now shoes go in here every night,\" she said.\nBiscuit wagged his tail and looked a little sorry.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour were Sam's shoes?",
+       "options": [
+        "Red",
+        "Blue",
+        "Black"
+       ],
+       "answer": "Red",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the problem?",
+       "options": [
+        "Sam could not find his shoe",
+        "Sam lost his bag",
+        "Rosie was ill"
+       ],
+       "answer": "Sam could not find his shoe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did they find under the bed?",
+       "options": [
+        "A sock and a toy car",
+        "A teddy and a ball",
+        "A book and a hat"
+       ],
+       "answer": "A sock and a toy car",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Sam feel when his shoe was missing?",
+       "options": [
+        "Worried",
+        "Excited",
+        "Proud"
+       ],
+       "answer": "Worried",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who had taken the shoe?",
+       "options": [],
+       "answer": "Biscuit",
+       "accept": [
+        "the dog",
+        "Biscuit the dog"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what noise did Rosie hear?",
+       "options": [
+        "Chew, chew, chew",
+        "Woof, woof",
+        "Tap, tap, tap"
+       ],
+       "answer": "Chew, chew, chew",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how will the shoe box stop the problem from happening again?",
+       "options": [
+        "The shoes will be kept safe in one place",
+        "Biscuit will sleep in it",
+        "It makes the shoes dry"
+       ],
+       "answer": "The shoes will be kept safe in one place",
+       "accept": [],
+       "hint": "Think about where Biscuit found the shoe.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Biscuit looked a little sorry at the end?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Rainy Picnic",
+     "synopsis": "Rain spoils the plan for a picnic in the park, so the family has a picnic indoors.",
+     "text": "On Saturday, Rosie and Sam were going to have a picnic in the park.\nMum made jam sandwiches. Rosie packed apples and a big bottle of water. Sam packed his teddy.\nThen they heard a sound. Pitter, patter, pitter, patter. Rosie looked out of the window. It was raining!\n\"Our picnic is ruined,\" said Sam. He sat on the floor and folded his arms.\nRosie felt sad too. Then she had an idea.\n\"We can have a picnic inside!\" she said.\nShe spread the picnic blanket on the living room floor. Sam put his teddy on a cushion. Biscuit lay down next to the basket.\nThey ate the sandwiches and the apples. They listened to the rain on the window. It sounded like music.\n\"This is the best picnic ever,\" said Sam with jam on his nose.\nEveryone laughed, even Mum.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kind of sandwiches did Mum make?",
+       "options": [
+        "Jam",
+        "Cheese",
+        "Egg"
+       ],
+       "answer": "Jam",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Sam pack?",
+       "options": [
+        "His teddy",
+        "His ball",
+        "His kite"
+       ],
+       "answer": "His teddy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the problem?",
+       "options": [
+        "It was raining",
+        "The sandwiches fell",
+        "Biscuit ate the apples"
+       ],
+       "answer": "It was raining",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Sam do when he saw the rain?",
+       "options": [
+        "He sat down and folded his arms",
+        "He jumped in puddles",
+        "He went to sleep"
+       ],
+       "answer": "He sat down and folded his arms",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who had the idea for an indoor picnic?",
+       "options": [],
+       "answer": "Rosie",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did they put the picnic blanket?",
+       "options": [
+        "On the living room floor",
+        "In the garden",
+        "On the bed"
+       ],
+       "answer": "On the living room floor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Sam feel at the end?",
+       "options": [
+        "Happy",
+        "Cross",
+        "Scared"
+       ],
+       "answer": "Happy",
+       "accept": [],
+       "hint": "Listen to what he says about the picnic.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the rain sounded like music to them at the end?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Wobbly Tower",
+     "synopsis": "Sam's block tower keeps falling down until Rosie shows him how to build a strong bottom.",
+     "text": "Sam wanted to build the tallest tower in the world.\nHe put one block on top of another. One, two, three, four, five. Crash! The tower fell down.\nSam tried again. One, two, three, four. Crash! It fell again.\n\"It's no good!\" said Sam. His face went red. \"I give up!\"\nRosie sat down next to him. \"Don't give up,\" she said kindly. \"Let's look at the bottom of your tower.\"\nThe bottom was only one block wide. It was very wobbly.\n\"A tower needs strong feet,\" said Rosie. She put four big blocks in a square on the floor.\nSam put the next blocks on top, slowly and carefully. The tower grew taller and taller. It did not wobble at all.\n\"Look! It's taller than Biscuit!\" shouted Sam.\nBiscuit sniffed it, but he did not knock it over. Sam was very proud.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Sam want to build?",
+       "options": [
+        "The tallest tower in the world",
+        "A big car",
+        "A house for Biscuit"
+       ],
+       "answer": "The tallest tower in the world",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kept happening to the tower?",
+       "options": [
+        "It fell down",
+        "It got wet",
+        "It was too small"
+       ],
+       "answer": "It fell down",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Sam feel when he said \"I give up\"?",
+       "options": [
+        "Cross",
+        "Calm",
+        "Sleepy"
+       ],
+       "answer": "Cross",
+       "accept": [],
+       "hint": "His face went red.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was the tower wobbly?",
+       "options": [
+        "The bottom was only one block wide",
+        "The blocks were wet",
+        "Biscuit kept pushing it"
+       ],
+       "answer": "The bottom was only one block wide",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many big blocks did Rosie put on the floor?",
+       "options": [],
+       "answer": "4",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Rosie say a tower needs?",
+       "options": [
+        "Strong feet",
+        "More colours",
+        "A roof"
+       ],
+       "answer": "Strong feet",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Sam feel at the end?",
+       "options": [
+        "Proud",
+        "Sad",
+        "Bored"
+       ],
+       "answer": "Proud",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "What do you think Sam learned in this chapter?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Ball Under the Sofa",
+     "synopsis": "Biscuit's ball rolls under the sofa, and Rosie and Sam work together to get it back.",
+     "text": "Biscuit loved his green ball. He chased it all around the house.\nOne day, the ball rolled under the sofa. Biscuit pushed his nose under, but he could not reach it.\nHe whined and lay down with his head on his paws. He looked very sad.\n\"Poor Biscuit,\" said Sam. He tried to reach the ball with his hand, but his arm was too short.\nRosie tried too. She could touch the ball, but it rolled further away.\n\"We need something long and flat,\" said Rosie.\nSam ran to get his school ruler. Rosie lay on her tummy. She slid the ruler under the sofa and gently pulled. Out came the green ball, with a bit of dust on it!\nSam threw the ball across the room. Biscuit jumped up and ran after it, wagging his tail.\n\"Teamwork!\" said Rosie, and they gave each other a high five.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour was Biscuit's ball?",
+       "options": [
+        "Green",
+        "Red",
+        "Yellow"
+       ],
+       "answer": "Green",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did the ball roll?",
+       "options": [
+        "Under the sofa",
+        "Into the garden",
+        "Under the bed"
+       ],
+       "answer": "Under the sofa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Biscuit feel when he lost his ball?",
+       "options": [
+        "Sad",
+        "Angry",
+        "Excited"
+       ],
+       "answer": "Sad",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why could Sam not get the ball?",
+       "options": [
+        "His arm was too short",
+        "He was too tired",
+        "He did not want to"
+       ],
+       "answer": "His arm was too short",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what did Sam bring to help?",
+       "options": [],
+       "answer": "A ruler",
+       "accept": [
+        "ruler",
+        "school ruler",
+        "his ruler",
+        "his school ruler"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was on the ball when it came out?",
+       "options": [
+        "Dust",
+        "Mud",
+        "Water"
+       ],
+       "answer": "Dust",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Rosie say \"Teamwork!\"?",
+       "options": [
+        "They solved the problem together",
+        "They won a game",
+        "Biscuit did a trick"
+       ],
+       "answer": "They solved the problem together",
+       "accept": [],
+       "hint": "Who helped to get the ball back?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "How do you think Biscuit felt when he got his ball back? How do you know?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Birthday Card",
+     "synopsis": "Rosie forgets to get a present for Gran's birthday and makes something special instead.",
+     "text": "It was Gran's birthday. Everyone was going to her house for tea.\nSam had a packet of flower seeds for Gran. Mum had a cake.\nRosie gasped. \"I forgot to get Gran a present!\" Her tummy felt funny. She felt worried and a bit embarrassed.\n\"We leave in one hour,\" said Mum. \"What could you do?\"\nRosie thought hard. Gran loved birds. Gran loved bright colours.\nRosie got paper, crayons and glue. She drew a big red bird on the front of a card. She stuck on some feathers from her craft box. Inside she wrote, \"Happy Birthday, Gran! Love from Rosie.\"\nAt Gran's house, Gran opened the card. She smiled and her eyes went shiny.\n\"You made this just for me,\" said Gran. \"It is beautiful. I will put it on my shelf.\"\nRosie felt warm and happy inside.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, whose birthday was it?",
+       "options": [
+        "Gran's",
+        "Sam's",
+        "Mum's"
+       ],
+       "answer": "Gran's",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Mum bring?",
+       "options": [
+        "A cake",
+        "Flowers",
+        "A book"
+       ],
+       "answer": "A cake",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Rosie's problem?",
+       "options": [
+        "She forgot to get a present",
+        "She lost her shoes",
+        "She was ill"
+       ],
+       "answer": "She forgot to get a present",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Rosie feel when she remembered?",
+       "options": [
+        "Worried",
+        "Proud",
+        "Sleepy"
+       ],
+       "answer": "Worried",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what animal did Rosie draw on the card?",
+       "options": [],
+       "answer": "A bird",
+       "accept": [
+        "bird",
+        "a red bird",
+        "red bird"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Rosie draw a bird?",
+       "options": [
+        "Gran loved birds",
+        "Birds are easy to draw",
+        "Sam asked her to"
+       ],
+       "answer": "Gran loved birds",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where will Gran put the card?",
+       "options": [
+        "On her shelf",
+        "In a drawer",
+        "In the bin"
+       ],
+       "answer": "On her shelf",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Gran liked the card so much?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Dark Bedroom",
+     "synopsis": "Sam is scared of the dark at bedtime, and Rosie finds a kind way to help him.",
+     "text": "It was bedtime. Mum switched off the big light and said goodnight.\nSam lay in bed. The room was very dark. He saw a big shape in the corner. Was it a monster?\n\"Rosie!\" whispered Sam. \"I'm scared.\"\nRosie came in. She switched on the light. The big shape was only Sam's coat on a hook!\nSam still felt a bit scared. \"It's so dark,\" he said.\nRosie had an idea. She went to her room and came back with her star night light. It made little yellow stars on the ceiling.\n\"You can borrow it,\" she said. \"The stars will keep you company.\"\nSam looked at the stars. The coat looked like a coat again. Biscuit curled up at the end of his bed.\n\"Thank you, Rosie,\" said Sam with a big yawn.\nSoon, he was fast asleep.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what time of day was it?",
+       "options": [
+        "Bedtime",
+        "Lunchtime",
+        "Morning"
+       ],
+       "answer": "Bedtime",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Sam think the shape in the corner was?",
+       "options": [
+        "A monster",
+        "A cat",
+        "A tree"
+       ],
+       "answer": "A monster",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Sam feel in the dark?",
+       "options": [
+        "Scared",
+        "Happy",
+        "Hungry"
+       ],
+       "answer": "Scared",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the shape really?",
+       "options": [],
+       "answer": "A coat",
+       "accept": [
+        "coat",
+        "Sam's coat",
+        "his coat",
+        "a coat on a hook"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Rosie bring to help Sam?",
+       "options": [
+        "Her star night light",
+        "A torch",
+        "A teddy"
+       ],
+       "answer": "Her star night light",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour were the stars on the ceiling?",
+       "options": [
+        "Yellow",
+        "Blue",
+        "Pink"
+       ],
+       "answer": "Yellow",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how do we know Sam was not scared at the end?",
+       "options": [
+        "He fell fast asleep",
+        "He cried",
+        "He ran to Mum"
+       ],
+       "answer": "He fell fast asleep",
+       "accept": [],
+       "hint": "What did Sam do at the very end?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Rosie let Sam borrow her night light?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
