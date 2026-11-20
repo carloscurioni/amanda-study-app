@@ -1257,7 +1257,1842 @@
      "errors": []
     }
    ]
+  },
+  "math": {
+   "topic": "Multiplication as equal groups",
+   "questions": [
+    {
+     "id": "ryy06ad1fged9l",
+     "subject": "math",
+     "type": "num",
+     "q": "There are 2 plates with 5 grapes on each plate. How many grapes are there altogether?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Count in fives for each plate.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnozj0o1c7uwz4",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which is the same as 4 + 4 + 4?",
+     "options": [
+      "3 + 4",
+      "4 × 4",
+      "3 × 4",
+      "4 + 3"
+     ],
+     "answer": "3 × 4",
+     "accept": [],
+     "hint": "Count how many 4s are added.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcnavt61ltam0i",
+     "subject": "math",
+     "type": "num",
+     "q": "5 + 5 + 5 = ?",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Count in fives: 5, 10, …",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bajyx2p290hn",
+     "subject": "math",
+     "type": "short",
+     "q": "Fill in the missing word: in equal groups, every group has the ___ number of things.",
+     "options": [],
+     "answer": "same",
+     "accept": [
+      "the same"
+     ],
+     "hint": "Think about what 'equal' means.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6r0oe61rbjlbl",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which of these shows equal groups?",
+     "options": [
+      "1 bag with 2 sweets and 1 bag with 5 sweets",
+      "3 bags with 2 sweets in each bag",
+      "1 bag with 1 sweet and 1 bag with 3 sweets"
+     ],
+     "answer": "3 bags with 2 sweets in each bag",
+     "accept": [],
+     "hint": "Look for groups that all match.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7om1001x424pu",
+     "subject": "math",
+     "type": "num",
+     "q": "What is 3 lots of 10?",
+     "options": [],
+     "answer": "30",
+     "accept": [],
+     "hint": "Count in tens three times.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzndv811pv74n",
+     "subject": "math",
+     "type": "num",
+     "q": "2 × 6 = ?",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "This is 6 lots of 2, or 2 lots of 6.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vxt3z317x8tww",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which multiplication sentence matches 2 + 2 + 2 + 2 + 2?",
+     "options": [
+      "2 × 2 = 4",
+      "4 × 2 = 8",
+      "5 + 2 = 7",
+      "5 × 2 = 10"
+     ],
+     "answer": "5 × 2 = 10",
+     "accept": [],
+     "hint": "Count how many 2s there are.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1unndal1frxuxc",
+     "subject": "math",
+     "type": "num",
+     "q": "A hand has 5 fingers. How many fingers are there on 4 hands?",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Count in fives four times.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj0rnxt1du2d5f",
+     "subject": "math",
+     "type": "num",
+     "q": "3 + 3 + 3 + 3 = ? × 3. What is the missing number?",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "How many 3s are being added?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2amojtx2ho14",
+     "subject": "math",
+     "type": "num",
+     "q": "There are 6 pairs of socks. A pair is 2 socks. How many socks are there altogether?",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "Count in twos six times.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iy9u401qasg8h",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which symbol means 'multiply'?",
+     "options": [
+      "+",
+      "×",
+      "=",
+      "−"
+     ],
+     "answer": "×",
+     "accept": [],
+     "hint": "It looks like a small cross.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17y3kt15df9jr",
+     "subject": "math",
+     "type": "num",
+     "q": "10 × 4 = ?",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "Count in tens four times.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rux985m1tc8z5q",
+     "subject": "math",
+     "type": "num",
+     "q": "A bike has 2 wheels. How many wheels are there on 7 bikes?",
+     "options": [],
+     "answer": "14",
+     "accept": [],
+     "hint": "Count in twos seven times.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ydkdh61fivy1a",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which addition is the same as 5 × 3?",
+     "options": [
+      "3 + 5 + 3",
+      "5 + 5",
+      "3 + 3 + 3 + 3 + 3",
+      "5 + 3"
+     ],
+     "answer": "3 + 3 + 3 + 3 + 3",
+     "accept": [],
+     "hint": "5 × 3 means 5 lots of 3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12atswv1i1ib6t",
+     "subject": "math",
+     "type": "open",
+     "q": "Imagine 4 boxes with 2 cakes in each box. Write a repeated addition and a multiplication sentence for it, and say how many cakes there are.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Add one 2 for each box.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Receita: ingredientes e modo de preparo",
+   "questions": [
+    {
+     "id": "r1md7cvck58rd2",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em uma receita, a parte que diz tudo o que vamos usar se chama:",
+     "options": [
+      "ingredientes",
+      "título",
+      "modo de preparo"
+     ],
+     "answer": "ingredientes",
+     "accept": [],
+     "hint": "É a lista do que você precisa separar antes de começar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r121w5sjavnigi",
+     "subject": "pt",
+     "type": "mc",
+     "q": "A parte da receita que ensina os passos para fazer a comida se chama:",
+     "options": [
+      "ingredientes",
+      "título",
+      "modo de preparo"
+     ],
+     "answer": "modo de preparo",
+     "accept": [],
+     "hint": "Pense em 'como fazer'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re5boeeckdsja",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destes é um ingrediente de um bolo?",
+     "options": [
+      "tigela",
+      "forno",
+      "colher",
+      "farinha"
+     ],
+     "answer": "farinha",
+     "accept": [],
+     "hint": "Ingrediente é algo que vai dentro da comida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3l4y3i1efmxq9",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Para que serve uma receita?",
+     "options": [
+      "Para contar uma história de aventura",
+      "Para convidar os amigos para uma festa",
+      "Para ensinar a preparar uma comida"
+     ],
+     "answer": "Para ensinar a preparar uma comida",
+     "accept": [],
+     "hint": "Pense em quando usamos uma receita na cozinha.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs7gn931nf6t25",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em '2 xícaras de leite', o que '2 xícaras' mostra?",
+     "options": [
+      "o modo de preparo",
+      "o título",
+      "a quantidade"
+     ],
+     "answer": "a quantidade",
+     "accept": [],
+     "hint": "Responde à pergunta 'quanto?'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvzrh6e7wnoc8",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas frases é um passo do modo de preparo?",
+     "options": [
+      "3 ovos",
+      "1 xícara de açúcar",
+      "Misture os ovos com o açúcar.",
+      "Bolo de cenoura"
+     ],
+     "answer": "Misture os ovos com o açúcar.",
+     "accept": [],
+     "hint": "Procure a frase que manda fazer alguma coisa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1umasav1945nim",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas é uma quantidade?",
+     "options": [
+      "misture bem",
+      "bolo de milho",
+      "1 colher de sopa"
+     ],
+     "answer": "1 colher de sopa",
+     "accept": [],
+     "hint": "Quantidade tem número e medida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r94ear91j2ec3r",
+     "subject": "pt",
+     "type": "mc",
+     "q": "No modo de preparo, as palavras dão ordens. Qual destas palavras dá uma ordem?",
+     "options": [
+      "mesa",
+      "bata",
+      "ovo",
+      "quente"
+     ],
+     "answer": "bata",
+     "accept": [],
+     "hint": "Qual palavra diz o que fazer?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13yy4rb15gqi65",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual é a parte da receita que mostra o nome da comida?",
+     "options": [],
+     "answer": "título",
+     "accept": [
+      "o título",
+      "titulo",
+      "nome da receita"
+     ],
+     "hint": "Fica bem no começo, em cima de tudo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tsx5mo1nmja1g",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Por que os passos do modo de preparo costumam ter números?",
+     "options": [
+      "Para a receita ficar mais bonita",
+      "Para seguirmos a ordem certa",
+      "Para contar os ingredientes"
+     ],
+     "answer": "Para seguirmos a ordem certa",
+     "accept": [],
+     "hint": "O que acontece se fizermos os passos fora de ordem?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1npkri4ijly9u",
+     "subject": "pt",
+     "type": "num",
+     "q": "Leia: 'Ingredientes: 1 banana, 1 copo de leite, 1 colher de mel.' Quantos ingredientes diferentes há?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Conte as coisas que vão na receita.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r0bxys1tnn0kr",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Para fazer uma salada de frutas, qual passo vem primeiro?",
+     "options": [
+      "Lavar as frutas",
+      "Comer a salada",
+      "Servir em potinhos"
+     ],
+     "answer": "Lavar as frutas",
+     "accept": [],
+     "hint": "O que fazemos antes de cortar as frutas?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cmtmnsbmddl3",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em qual parte da receita fica a lista 'farinha, ovos, leite'?",
+     "options": [
+      "no modo de preparo",
+      "nos ingredientes",
+      "no título"
+     ],
+     "answer": "nos ingredientes",
+     "accept": [],
+     "hint": "É uma lista de coisas, não de ações.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r81etgk14r6yae",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com a palavra que dá ordem (do verbo aquecer): '___ o forno.'",
+     "options": [],
+     "answer": "Aqueça",
+     "accept": [
+      "aqueça",
+      "preaqueça"
+     ],
+     "hint": "Pense em como a mamãe diria: '… o forno, por favor!'",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ilba5l57o1m5",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva uma receita bem simples de suco: dois ingredientes e dois passos do modo de preparo.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Primeiro a lista, depois o que fazer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lmf345105lthm",
+     "subject": "pt",
+     "type": "open",
+     "q": "Por que é importante usar as quantidades certas de uma receita?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que acontece se colocar sal demais.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Poemas de José Paulo Paes: brincar com as palavras",
+   "questions": [
+    {
+     "id": "rkqifgt1ov4och",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual palavra rima com 'janela'?",
+     "options": [
+      "porta",
+      "casa",
+      "panela"
+     ],
+     "answer": "panela",
+     "accept": [],
+     "hint": "Ouça o final das palavras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmhlfxw10f1ybt",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual palavra rima com 'gato'?",
+     "options": [
+      "bola",
+      "sapato",
+      "cachorro"
+     ],
+     "answer": "sapato",
+     "accept": [],
+     "hint": "Qual termina com o mesmo som?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lkxgll4feqs6",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é um poema?",
+     "options": [
+      "uma lista de compras",
+      "um texto escrito em versos",
+      "uma receita"
+     ],
+     "answer": "um texto escrito em versos",
+     "accept": [],
+     "hint": "Pense em como o texto fica arrumado na página.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c1os464t4qnc",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama cada linha de um poema?",
+     "options": [],
+     "answer": "verso",
+     "accept": [
+      "versos",
+      "o verso"
+     ],
+     "hint": "Começa com a letra V.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqkuf9911pq1gd",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: 'O sapo saltou no sapato.' Qual som se repete bastante?",
+     "options": [
+      "M",
+      "S",
+      "L"
+     ],
+     "answer": "S",
+     "accept": [],
+     "hint": "Leia em voz alta e ouça o começo das palavras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d2ppnpjz9rom",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual palavra está escondida dentro de 'girassol'?",
+     "options": [
+      "lua",
+      "sol",
+      "mar"
+     ],
+     "answer": "sol",
+     "accept": [],
+     "hint": "Olhe o final da palavra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m0u5zh94q5p8",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual palavra está escondida dentro de 'sapato'?",
+     "options": [
+      "pato",
+      "rato",
+      "gato"
+     ],
+     "answer": "pato",
+     "accept": [],
+     "hint": "Tire o 'sa' do começo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mv7jiw1nchtbl",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Um grupo de versos em um poema se chama:",
+     "options": [
+      "estrofe",
+      "parágrafo",
+      "capítulo"
+     ],
+     "answer": "estrofe",
+     "accept": [],
+     "hint": "É como um 'parágrafo' do poema.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7k7f6o1ecnnqa",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destas palavras imita um som?",
+     "options": [
+      "tique-taque",
+      "mesa",
+      "azul"
+     ],
+     "answer": "tique-taque",
+     "accept": [],
+     "hint": "Qual delas parece um barulho?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rl3txgzo4cd6",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual palavra completa o trava-língua 'O rato roeu a ___ do rei de Roma'?",
+     "options": [
+      "roupa",
+      "mesa",
+      "bola"
+     ],
+     "answer": "roupa",
+     "accept": [],
+     "hint": "Repare que quase tudo começa com R.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "romwafe16dqq68",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que quem escreve poemas gosta de repetir sons parecidos?",
+     "options": [
+      "Para deixar o texto mais curto",
+      "Para ensinar a fazer um bolo",
+      "Para brincar com a música das palavras"
+     ],
+     "answer": "Para brincar com a música das palavras",
+     "accept": [],
+     "hint": "Leia um poema em voz alta e ouça.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jitkcoxplut1",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual par de palavras NÃO rima?",
+     "options": [
+      "pão e mão",
+      "sol e mar",
+      "flor e cor"
+     ],
+     "answer": "sol e mar",
+     "accept": [],
+     "hint": "Compare o final de cada par.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgchfgbx6san8",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Troque a primeira letra de 'mala' por B. Que palavra aparece?",
+     "options": [],
+     "answer": "bala",
+     "accept": [],
+     "hint": "Só a primeira letra muda.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfcu34073y1j5",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: 'Pula, pula, pipoca, pula na panela!' Qual palavra se repete?",
+     "options": [
+      "panela",
+      "pipoca",
+      "pula"
+     ],
+     "answer": "pula",
+     "accept": [],
+     "hint": "Conte quantas vezes cada palavra aparece.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c8k14n1h49yyc",
+     "subject": "pt_leit",
+     "type": "num",
+     "q": "Leia o poeminha:\nO gato pulou no muro,\nviu a lua no escuro.\nQuantos versos tem esse poema?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Conte as linhas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvegwh37zcciw",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Invente um verso que termine com uma palavra que rime com 'bola'.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em palavras que terminam com '-ola'.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_ort": {
+   "topic": "L no fim da sílaba com som de U",
+   "questions": [
+    {
+     "id": "r1e9ynet1rcg3me",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: so_ (a estrela que brilha de dia)",
+     "options": [],
+     "answer": "sol",
+     "accept": [],
+     "hint": "Termina com a letra que soa como U.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12my7eyh5q2jt",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: pape_ (usamos para escrever e desenhar)",
+     "options": [],
+     "answer": "papel",
+     "accept": [],
+     "hint": "O som final parece U, mas a letra é outra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14oynwyhajd94",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a forma correta?",
+     "options": [
+      "azul",
+      "azu",
+      "azuu"
+     ],
+     "answer": "azul",
+     "accept": [],
+     "hint": "É a cor do céu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj0yzrl4i4ljq",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: fun_ _ (serve para passar líquido para uma garrafa)",
+     "options": [],
+     "answer": "funil",
+     "accept": [],
+     "hint": "Faltam duas letras: uma vogal e uma consoante.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bmy7rnvbx1iw",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está escrita corretamente?",
+     "options": [
+      "calsa",
+      "calça",
+      "cauça"
+     ],
+     "answer": "calça",
+     "accept": [],
+     "hint": "Roupa que vestimos nas pernas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v6rvvs1lee2h",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: anz_ _ (usado para pescar)",
+     "options": [],
+     "answer": "anzol",
+     "accept": [],
+     "hint": "Termina parecido com 'sol'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ta34jif29wj9",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Na palavra 'sal', a letra L tem som parecido com qual letra?",
+     "options": [
+      "S",
+      "A",
+      "U"
+     ],
+     "answer": "U",
+     "accept": [],
+     "hint": "Fale 'sal' devagar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1voyfd6ur0c88",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: sa_to (um pulo bem alto)",
+     "options": [],
+     "answer": "salto",
+     "accept": [],
+     "hint": "A letra que falta soa como U.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wmaecsi908sk",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: pa_co (lugar onde os artistas se apresentam)",
+     "options": [],
+     "answer": "palco",
+     "accept": [],
+     "hint": "A letra que falta soa como U.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10f905t1v3bmyb",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra completa a frase? 'Coloque um pouco de ___ na comida.'",
+     "options": [
+      "sall",
+      "sau",
+      "sal"
+     ],
+     "answer": "sal",
+     "accept": [],
+     "hint": "Termina com a letra que soa como U.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rck5qe21iumact",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Em qual palavra o L tem som de U?",
+     "options": [
+      "bola",
+      "lua",
+      "sol"
+     ],
+     "answer": "sol",
+     "accept": [],
+     "hint": "Procure o L no fim da sílaba.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvcxs0odl49d9",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra tem L no fim de uma sílaba?",
+     "options": [
+      "lata",
+      "palco",
+      "pato"
+     ],
+     "answer": "palco",
+     "accept": [],
+     "hint": "Separe as sílabas: pal-co.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reyi4azekxcf6",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Escolha a frase escrita corretamente:",
+     "options": [
+      "O céu está azu.",
+      "O céu está azul.",
+      "O céu está asul."
+     ],
+     "answer": "O céu está azul.",
+     "accept": [],
+     "hint": "Lembre da cor do céu escrita com L.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1616c2v1jqt3vt",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado.",
+     "options": [],
+     "answer": "soul → sol; anzou → anzol; cauça → calça; pauco → palco; papeu → papel",
+     "accept": [],
+     "hint": "Procure palavras em que o som de U deveria ser escrito com L.",
+     "text": "Na praia, o soul estava forte. Vovô pegou o anzou e foi pescar. Eu vesti minha cauça azul e subi no pauco de areia para cantar. Depois, desenhei um peixe num papeu e mostrei para todo mundo. Que dia feliz!",
+     "errors": [
+      {
+       "wrong": "soul",
+       "right": "sol"
+      },
+      {
+       "wrong": "anzou",
+       "right": "anzol"
+      },
+      {
+       "wrong": "cauça",
+       "right": "calça"
+      },
+      {
+       "wrong": "pauco",
+       "right": "palco"
+      },
+      {
+       "wrong": "papeu",
+       "right": "papel"
+      }
+     ]
+    },
+    {
+     "id": "r1m9kn651b4bez8",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 4 palavras escritas errado.",
+     "options": [],
+     "answer": "aneu → anel; funiu → funil; sau → sal; azu → azul",
+     "accept": [],
+     "hint": "Olhe o final das palavras: o som de U pode ser escrito com L.",
+     "text": "Minha irmã ganhou um aneu dourado de aniversário. Ela pulou de alegria! Mamãe usou um funiu para encher a garrafa de suco e colocou uma pitada de sau na pipoca. Depois, comemos um pastel quentinho. O céu estava azu e bonito.",
+     "errors": [
+      {
+       "wrong": "aneu",
+       "right": "anel"
+      },
+      {
+       "wrong": "funiu",
+       "right": "funil"
+      },
+      {
+       "wrong": "sau",
+       "right": "sal"
+      },
+      {
+       "wrong": "azu",
+       "right": "azul"
+      }
+     ]
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "A Caixa das Rimas",
+   "premise": "Lila encontra no sótão a caixa de jogos de palavras do avô e, a cada dia, descobre uma nova brincadeira: rimas, trava-línguas, palavras escondidas, sons e versos.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A caixa no sótão",
+     "synopsis": "Lila encontra uma caixa cheia de cartões com palavras e descobre que algumas palavras rimam.",
+     "text": "Num sábado de chuva, Lila subiu ao sótão com o vovô Bento. Lá em cima, atrás de um baú velho, ela achou uma caixa azul com uma etiqueta: \"Caixa das Rimas\".\nDentro havia muitos cartões. Em cada cartão estava escrita uma palavra: gato, pato, mão, pão, flor, cor.\n— Vovô, para que servem estes cartões? — perguntou Lila.\n— Era o meu jogo preferido quando eu era menino — disse o vovô. — Você precisa achar as palavras que terminam com o mesmo som.\nLila leu em voz alta: \"gato… pato\". Os dois terminavam em \"ato\"! Ela juntou os cartões e riu.\nDepois juntou \"mão\" com \"pão\" e \"flor\" com \"cor\". O vovô bateu palmas.\n— Agora você sabe o que é rima — disse ele.\nPirulito, o gato da casa, pulou na caixa e espalhou tudo.\n— O gato bagunçou o sapato do pato! — inventou Lila, e os dois caíram na risada.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Lila achou a caixa?",
+       "options": [
+        "no jardim",
+        "na escola",
+        "no sótão"
+       ],
+       "answer": "no sótão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem estava com Lila?",
+       "options": [
+        "o vovô Bento",
+        "a tia",
+        "a professora"
+       ],
+       "answer": "o vovô Bento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor era a caixa?",
+       "options": [
+        "vermelha",
+        "azul",
+        "verde"
+       ],
+       "answer": "azul",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que havia escrito em cada cartão?",
+       "options": [
+        "um desenho",
+        "uma palavra",
+        "um número"
+       ],
+       "answer": "uma palavra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual palavra Lila juntou com 'gato'?",
+       "options": [
+        "pato",
+        "flor",
+        "mão"
+       ],
+       "answer": "pato",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do gato da casa?",
+       "options": [],
+       "answer": "Pirulito",
+       "accept": [
+        "o Pirulito"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que 'flor' e 'cor' ficaram juntas?",
+       "options": [
+        "porque começam com a mesma letra",
+        "porque terminam com o mesmo som",
+        "porque são nomes de bichos"
+       ],
+       "answer": "porque terminam com o mesmo som",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o vovô gostava tanto desse jogo quando era menino?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Trava-línguas no café da manhã",
+     "synopsis": "No café da manhã, Lila e o vovô brincam de falar frases difíceis bem depressa.",
+     "text": "Na manhã seguinte, Lila achou um cartão diferente na caixa. Não tinha uma palavra só, tinha uma frase inteira: \"Três tigres tristes tomam trigo\".\n— Isso é um trava-língua — explicou o vovô, passando manteiga no pão. — É uma frase feita para enrolar a língua. Tente falar bem rápido!\nLila tentou:\n— Três tigres trist… tristes… tomam tigo!\nTodo mundo riu, até a mamãe, que estava fazendo o café.\n— Muitas palavras começam com o mesmo som, por isso a língua tropeça — disse o vovô.\nLila treinou devagar, depois um pouco mais rápido. Na quinta vez, ela conseguiu falar a frase inteira sem errar!\n— Agora é a minha vez de inventar um — disse ela. Pensou, pensou e falou:\n— Pirulito pula o pote de pipoca!\nO gato, ouvindo o seu nome, pulou mesmo no pote. As pipocas voaram pela cozinha, e a brincadeira terminou com todos varrendo o chão.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que estava escrito no novo cartão?",
+       "options": [
+        "um número",
+        "uma palavra só",
+        "uma frase inteira"
+       ],
+       "answer": "uma frase inteira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como se chama uma frase feita para enrolar a língua?",
+       "options": [
+        "trava-língua",
+        "receita",
+        "bilhete"
+       ],
+       "answer": "trava-língua",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o vovô fazia enquanto explicava?",
+       "options": [
+        "lavava a louça",
+        "passava manteiga no pão",
+        "lia o jornal"
+       ],
+       "answer": "passava manteiga no pão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem estava fazendo o café?",
+       "options": [
+        "o vovô",
+        "Lila",
+        "a mamãe"
+       ],
+       "answer": "a mamãe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em qual tentativa Lila acertou a frase toda?",
+       "options": [
+        "na quinta",
+        "na primeira",
+        "na segunda"
+       ],
+       "answer": "na quinta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a língua tropeça nos trava-línguas?",
+       "options": [
+        "porque as palavras são muito compridas",
+        "porque muitas palavras começam com o mesmo som",
+        "porque a frase é em outra língua"
+       ],
+       "answer": "porque muitas palavras começam com o mesmo som",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a brincadeira terminou?",
+       "options": [
+        "com todos dormindo",
+        "com todos varrendo o chão",
+        "com Lila indo para a escola"
+       ],
+       "answer": "com todos varrendo o chão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lila conseguiu falar a frase sem errar depois de treinar?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Palavras escondidas",
+     "synopsis": "Lila descobre que algumas palavras grandes têm palavras pequenas escondidas dentro delas.",
+     "text": "À tarde, o sol voltou, e Lila foi ao jardim com o vovô. Ele apontou para uma flor amarela e alta.\n— Sabe o nome dela? É girassol. E tem um segredo: dentro de \"girassol\" mora outra palavra.\nLila olhou para a flor, depois olhou para o céu.\n— Sol! Tem \"sol\" dentro de \"girassol\"!\n— Isso mesmo. Muitas palavras guardam palavrinhas escondidas — disse o vovô.\nLila correu até a caixa e começou a caçar. Em \"sapato\" ela achou \"pato\". Em \"soldado\" achou \"sol\" de novo. Em \"camaleão\" achou \"leão\".\n— Um leão dentro de um camaleão! — gritou ela. — Que bicho apertado!\nO vovô gargalhou tanto que precisou sentar no banco.\nAntes do jantar, Lila escreveu uma lista no caderno com todas as palavras escondidas que encontrou. Eram sete! Ela guardou a lista dentro da Caixa das Rimas, para não perder.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual flor o vovô mostrou?",
+       "options": [
+        "rosa",
+        "margarida",
+        "girassol"
+       ],
+       "answer": "girassol",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual palavra estava escondida em 'girassol'?",
+       "options": [
+        "assar",
+        "sol",
+        "gira"
+       ],
+       "answer": "sol",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual palavra Lila achou em 'sapato'?",
+       "options": [
+        "pato",
+        "mato",
+        "sapo"
+       ],
+       "answer": "pato",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual bicho estava escondido em 'camaleão'?",
+       "options": [
+        "leão",
+        "cama",
+        "cão"
+       ],
+       "answer": "leão",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "num",
+       "q": "No capítulo, quantas palavras escondidas Lila encontrou ao todo?",
+       "options": [],
+       "answer": "7",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Lila guardou a lista?",
+       "options": [
+        "dentro da Caixa das Rimas",
+        "debaixo do travesseiro",
+        "na mochila"
+       ],
+       "answer": "dentro da Caixa das Rimas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o vovô precisou sentar no banco?",
+       "options": [
+        "porque riu muito",
+        "porque estava chovendo",
+        "porque estava com sono"
+       ],
+       "answer": "porque riu muito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lila disse que o leão estava 'apertado'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A música da chuva",
+     "synopsis": "Durante uma tempestade, Lila descobre palavras que imitam sons.",
+     "text": "Na segunda-feira, choveu de novo. Lila ficou na janela, ouvindo.\n— Vovô, a chuva fala! Ela faz ploc, ploc, ploc no telhado.\n— Muito bem! Palavras que imitam sons são muito divertidas — disse o vovô. — Escute mais.\nLila fechou os olhos. O relógio da sala fazia tique-taque. O trovão fazia bum! A porta do armário fazia nhec quando abria. E Pirulito, com medo do trovão, fazia miau bem baixinho.\nLila pegou um papel e escreveu cada som, um embaixo do outro:\n\"Ploc, ploc, faz a chuva,\ntique-taque, faz o relógio,\nbum, faz o trovão,\nmiau, faz meu gato no colo.\"\n— Você escreveu um poema de sons! — disse o vovô.\nQuando a chuva parou, tudo ficou em silêncio. Lila sentiu falta da música. Então ela pegou duas colheres e fez a sua própria chuva na mesa: ploc, ploc, ploc.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que som a chuva fazia no telhado?",
+       "options": [
+        "nhec",
+        "bum",
+        "ploc"
+       ],
+       "answer": "ploc",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que fazia tique-taque?",
+       "options": [
+        "a porta",
+        "o gato",
+        "o relógio"
+       ],
+       "answer": "o relógio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que som fazia o trovão?",
+       "options": [
+        "ploc",
+        "miau",
+        "bum"
+       ],
+       "answer": "bum",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que fazia 'nhec'?",
+       "options": [
+        "a cadeira",
+        "a janela",
+        "a porta do armário"
+       ],
+       "answer": "a porta do armário",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Pirulito se sentia com o trovão?",
+       "options": [
+        "com medo",
+        "com fome",
+        "alegre"
+       ],
+       "answer": "com medo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lila escreveu no papel?",
+       "options": [
+        "um poema de sons",
+        "uma receita",
+        "uma carta"
+       ],
+       "answer": "um poema de sons",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lila usou para fazer a própria chuva?",
+       "options": [
+        "duas colheres",
+        "um copo de água",
+        "um tambor"
+       ],
+       "answer": "duas colheres",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lila sentiu falta da chuva quando ela parou?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A letra que muda tudo",
+     "synopsis": "Lila descobre que trocar uma só letra pode transformar uma palavra em outra.",
+     "text": "Na terça-feira, a mamãe arrumava uma mala para uma viagem curta. Lila olhou para a mala e teve uma ideia.\n— Vovô, e se eu trocar a primeira letra de \"mala\"?\nEla pegou os cartões e começou: trocou o M pelo B, e \"mala\" virou \"bala\". Trocou o B pelo F, e virou \"fala\". Trocou o F pelo G, e virou \"gala\".\n— Uma letra só muda tudo! — disse Lila, espantada.\nO vovô entrou no jogo:\n— E \"gato\"? Se eu trocar o G pelo R?\n— Rato! — respondeu Lila. — E com P vira pato, e com M vira mato!\nLogo a mesa estava cheia de cartões. Uma mala, uma bala, um rato, um pato. Parecia uma feira de palavras.\nQuando a mamãe fechou a mala de verdade, Lila deu a ela um cartão escrito \"bala\".\n— Para a viagem ficar mais doce — disse a menina. A mamãe sorriu e guardou o cartão no bolso.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a mamãe estava arrumando?",
+       "options": [
+        "uma mala",
+        "a cozinha",
+        "o jardim"
+       ],
+       "answer": "uma mala",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que palavra apareceu quando Lila trocou o M de 'mala' por B?",
+       "options": [],
+       "answer": "bala",
+       "accept": [
+        "a bala"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, 'bala' virou 'fala' com qual letra?",
+       "options": [
+        "F",
+        "G",
+        "P"
+       ],
+       "answer": "F",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem perguntou sobre a palavra 'gato'?",
+       "options": [
+        "a mamãe",
+        "o vovô",
+        "Lila"
+       ],
+       "answer": "o vovô",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que palavra apareceu ao trocar o G de 'gato' por R?",
+       "options": [
+        "pato",
+        "rato",
+        "mato"
+       ],
+       "answer": "rato",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com o que a mesa cheia de cartões parecia?",
+       "options": [
+        "uma sala de aula",
+        "uma feira de palavras",
+        "uma festa de aniversário"
+       ],
+       "answer": "uma feira de palavras",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que cartão Lila deu para a mamãe?",
+       "options": [
+        "bala",
+        "mala",
+        "fala"
+       ],
+       "answer": "bala",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lila quis que a viagem da mamãe ficasse 'mais doce'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: Um presente de versos",
+     "synopsis": "Lila escreve um poema com rimas e repetições para o aniversário da amiga Duda.",
+     "text": "Na quarta-feira, Lila lembrou: o aniversário da amiga Duda seria no sábado!\n— Não tenho dinheiro para comprar presente — disse, triste.\n— Você tem uma caixa cheia de palavras — lembrou o vovô.\nLila sentou à mesa e começou a escrever. Ela queria rimas, sons divertidos e uma palavra que se repetisse, como uma música. Depois de riscar muitas vezes, o poema ficou assim:\n\"Duda, Duda, minha amiga,\nri tão alto que dá barriga.\nDuda, Duda, pula corda,\npula tanto que até acorda!\"\nLila leu para o vovô em voz alta.\n— Gostei da repetição do nome. Parece até uma cantiga — disse ele.\nLila desenhou estrelas em volta do poema e pintou a folha de amarelo, a cor preferida da Duda. Depois dobrou o papel em quatro e colocou num envelope.\n— Este presente ninguém mais tem igual — disse ela, orgulhosa.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de quem era o aniversário?",
+       "options": [
+        "da mamãe",
+        "da Duda",
+        "do vovô"
+       ],
+       "answer": "da Duda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que dia seria a festa?",
+       "options": [
+        "na quarta-feira",
+        "no sábado",
+        "no domingo"
+       ],
+       "answer": "no sábado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o vovô lembrou que Lila tinha?",
+       "options": [
+        "uma caixa cheia de palavras",
+        "um brinquedo novo",
+        "dinheiro guardado"
+       ],
+       "answer": "uma caixa cheia de palavras",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que palavra se repete no poema?",
+       "options": [
+        "barriga",
+        "Duda",
+        "corda"
+       ],
+       "answer": "Duda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual palavra rima com 'amiga' no poema?",
+       "options": [
+        "acorda",
+        "corda",
+        "barriga"
+       ],
+       "answer": "barriga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor Lila pintou a folha?",
+       "options": [
+        "amarelo",
+        "azul",
+        "verde"
+       ],
+       "answer": "amarelo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lila escolheu essa cor?",
+       "options": [
+        "porque o vovô pediu",
+        "porque era a única tinta da casa",
+        "porque era a cor preferida da Duda"
+       ],
+       "answer": "porque era a cor preferida da Duda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que um poema pode ser um presente especial?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A noite dos poemas",
+     "synopsis": "No sábado, Lila apresenta seu poema na festa e convida todos a brincar com as palavras.",
+     "text": "No sábado, a festa da Duda estava cheia de balões. Na hora dos presentes, Lila entregou o envelope amarelo, com as mãos tremendo um pouco.\n— Lê em voz alta! — pediu Duda.\nLila respirou fundo e leu o poema. Quando chegou em \"pula tanto que até acorda\", todas as crianças riram e bateram palmas. Duda deu um abraço tão apertado que Lila quase caiu.\n— Você me ensina a fazer rimas? — perguntou um menino chamado Téo.\nLila teve uma ideia. Ela tinha levado a Caixa das Rimas na mochila! Espalhou os cartões no chão, e as crianças começaram a brincar: juntaram rimas, falaram trava-línguas e caçaram palavras escondidas.\nAté a mãe da Duda entrou na brincadeira.\nQuando o vovô foi buscar Lila, ela estava cansada e feliz.\n— Vovô, a sua caixa fez a festa ficar mais alegre — disse ela.\n— Agora a caixa é sua — respondeu ele, com uma piscadinha.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como estava enfeitada a festa?",
+       "options": [
+        "com bandeirinhas",
+        "com flores",
+        "com balões"
+       ],
+       "answer": "com balões",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem pediu para Lila ler o poema em voz alta?",
+       "options": [
+        "Téo",
+        "o vovô",
+        "Duda"
+       ],
+       "answer": "Duda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Lila estava ao entregar o envelope?",
+       "options": [
+        "com as mãos tremendo um pouco",
+        "com sono",
+        "rindo muito"
+       ],
+       "answer": "com as mãos tremendo um pouco",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que as crianças fizeram quando Lila leu o poema?",
+       "options": [
+        "ficaram caladas",
+        "riram e bateram palmas",
+        "foram embora"
+       ],
+       "answer": "riram e bateram palmas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chamava o menino que quis aprender a fazer rimas?",
+       "options": [],
+       "answer": "Téo",
+       "accept": [
+        "Teo",
+        "o Téo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde estava a Caixa das Rimas?",
+       "options": [
+        "no sótão",
+        "na casa da Duda",
+        "na mochila de Lila"
+       ],
+       "answer": "na mochila de Lila",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o vovô disse no final?",
+       "options": [
+        "que a caixa agora era de Lila",
+        "que era hora de jogar a caixa fora",
+        "que a caixa estava velha"
+       ],
+       "answer": "que a caixa agora era de Lila",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o vovô deu a caixa para Lila?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
