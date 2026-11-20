@@ -3109,6 +3109,866 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "Grandpa's Story Box",
+   "premise": "Ivy and Sam stay with Grandpa Ned, who tells a fable from his story box each night; the children find each moral, compare the fables and spot the lessons in their own days.",
+   "chapters": [
+    {
+     "title": "Chapter 1: Grandpa's Story Box",
+     "synopsis": "Ivy and Sam visit Grandpa Ned, who tells them the fable of the lion and the mouse.",
+     "text": "On Friday night, Ivy and her little brother Sam went to stay with Grandpa Ned. After dinner, Grandpa took out an old wooden box.\n\"This is my story box,\" he said. \"Every night I will tell you a fable. A fable is a short story with animals, and it always teaches a lesson.\"\nHe opened the box and took out a tiny clay lion.\n\"Once, a big lion was sleeping in the sun. A little mouse ran over his nose by mistake. The lion woke up and caught the mouse in his huge paw.\n'Please let me go!' squeaked the mouse. 'One day I might help you.'\nThe lion laughed. How could a tiny mouse help a king? But he let the mouse go.\"\nSam yawned. \"What happens next?\"\n\"Tomorrow,\" smiled Grandpa, and he closed the box.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who did Ivy and Sam go to stay with?",
+       "options": [
+        "Grandpa Ned",
+        "Aunt Rosa",
+        "their teacher"
+       ],
+       "answer": "Grandpa Ned",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Grandpa take out after dinner?",
+       "options": [
+        "a book",
+        "an old wooden box",
+        "a toy car"
+       ],
+       "answer": "an old wooden box",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is a fable, according to Grandpa?",
+       "options": [
+        "a long poem",
+        "a short story with animals that teaches a lesson",
+        "a song about kings"
+       ],
+       "answer": "a short story with animals that teaches a lesson",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where was the lion sleeping?",
+       "options": [
+        "in a cave",
+        "in the sun",
+        "by a river"
+       ],
+       "answer": "in the sun",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the mouse wake the lion?",
+       "options": [
+        "it sang loudly",
+        "it ran over his nose",
+        "it pulled his tail"
+       ],
+       "answer": "it ran over his nose",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the lion laugh?",
+       "options": [
+        "the mouse told a joke",
+        "he did not think a tiny mouse could help him",
+        "he was very happy"
+       ],
+       "answer": "he did not think a tiny mouse could help him",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Grandpa stop the story?",
+       "options": [
+        "he forgot the end",
+        "he wanted them to wait until tomorrow",
+        "the box broke"
+       ],
+       "answer": "he wanted them to wait until tomorrow",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the lion let the mouse go?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Net in the Forest",
+     "synopsis": "Grandpa finishes the fable, and Ivy works out its moral.",
+     "text": "The next night, Ivy and Sam sat on the rug. Grandpa opened the story box again.\n\"Some days later, hunters set a strong net in the forest. The lion walked into it. He pulled and roared, but the ropes held him tight.\nThe little mouse heard the roar. She ran to the lion and began to bite the ropes with her sharp teeth. Snip, snip, snip! Soon there was a big hole, and the lion stepped out free.\n'You laughed at me,' said the mouse, 'but now you see that even a small mouse can help a lion.'\"\nGrandpa looked at the children. \"So, what is the moral? What lesson does the story teach?\"\nIvy thought hard. \"Little friends can be great friends,\" she said. \"And being kind comes back to you.\"\n\"Perfect,\" said Grandpa. Sam gave his big sister a high five.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the hunters set in the forest?",
+       "options": [
+        "a trap door",
+        "a strong net",
+        "a fence"
+       ],
+       "answer": "a strong net",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the lion do when he was caught?",
+       "options": [
+        "he slept",
+        "he pulled and roared",
+        "he called the hunters"
+       ],
+       "answer": "he pulled and roared",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the mouse know the lion needed help?",
+       "options": [
+        "she heard him roar",
+        "a bird told her",
+        "she saw the hunters"
+       ],
+       "answer": "she heard him roar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the mouse use to free the lion?",
+       "options": [
+        "her sharp teeth",
+        "a knife",
+        "her tail"
+       ],
+       "answer": "her sharp teeth",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what word does Grandpa use for the lesson a fable teaches?",
+       "options": [],
+       "answer": "moral",
+       "accept": [
+        "the moral"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which moral did Ivy say?",
+       "options": [
+        "Slow and steady wins the race",
+        "Little friends can be great friends",
+        "Never tell lies"
+       ],
+       "answer": "Little friends can be great friends",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Sam feel about Ivy's answer?",
+       "options": [
+        "proud and happy",
+        "cross",
+        "bored"
+       ],
+       "answer": "proud and happy",
+       "accept": [],
+       "hint": "Think about the high five.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the lion was glad he had been kind to the mouse?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: A Race in the Garden",
+     "synopsis": "Grandpa tells the fable of the tortoise and the hare, and the children compare it with the lion and the mouse.",
+     "text": "On Sunday morning, it was sunny. Grandpa took a clay tortoise and a clay hare out of the box.\n\"A hare loved to boast that he was the fastest animal. A tortoise said, 'Let's have a race.' The hare ran far ahead, then lay down for a nap. The tortoise walked slowly but never stopped. When the hare woke up, the tortoise was crossing the finish line!\"\n\"The moral is: slow and steady wins the race,\" said Grandpa.\nIvy put the clay lion next to the hare. \"The lion and the hare are a bit the same,\" she said. \"They were both big and proud.\"\n\"And the mouse and the tortoise were both small,\" added Sam. \"But they won in the end!\"\nGrandpa clapped. \"You are comparing fables. That is what clever readers do.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the weather like on Sunday morning?",
+       "options": [
+        "rainy",
+        "sunny",
+        "snowy"
+       ],
+       "answer": "sunny",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the hare love to boast about?",
+       "options": [
+        "being the fastest",
+        "being the biggest",
+        "being the cleverest"
+       ],
+       "answer": "being the fastest",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the hare do during the race?",
+       "options": [
+        "he ran the whole way",
+        "he took a nap",
+        "he got lost"
+       ],
+       "answer": "he took a nap",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who won the race?",
+       "options": [
+        "the hare",
+        "the tortoise",
+        "the lion"
+       ],
+       "answer": "the tortoise",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the moral of the tortoise and the hare?",
+       "options": [
+        "Slow and steady wins the race",
+        "Little friends can be great friends",
+        "Share your food"
+       ],
+       "answer": "Slow and steady wins the race",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Ivy say the lion and the hare are the same?",
+       "options": [
+        "they were both small",
+        "they were both big and proud",
+        "they both liked to sleep"
+       ],
+       "answer": "they were both big and proud",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Grandpa say clever readers do?",
+       "options": [
+        "read very fast",
+        "compare fables",
+        "only read short stories"
+       ],
+       "answer": "compare fables",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the small animals win in both fables?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: Sam Gets Stuck",
+     "synopsis": "Sam's kite gets stuck in a tree, and a small helper saves the day, just like in the fable.",
+     "text": "After lunch, Sam flew his red kite in the garden. Suddenly the wind blew hard, and the kite got stuck high up in the apple tree.\n\"Grandpa, can you reach it?\" asked Sam. Grandpa stretched up, but he was not tall enough. Ivy tried a broom, but it was too short.\nThen Pickle, Grandpa's small dog, began to bark. She ran to the shed and came back pulling a long garden rake.\n\"Clever girl!\" said Grandpa. He used the rake to lift the kite down gently.\nSam hugged Pickle. \"You are like the mouse in the fable,\" he said. \"You are little, but you helped us.\"\nIvy giggled. \"And Grandpa is the lion!\"\nGrandpa gave a big, silly roar, and Pickle wagged her tail.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour was Sam's kite?",
+       "options": [
+        "blue",
+        "red",
+        "yellow"
+       ],
+       "answer": "red",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did the kite get stuck?",
+       "options": [
+        "on the roof",
+        "in the apple tree",
+        "in a bush"
+       ],
+       "answer": "in the apple tree",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why couldn't Ivy reach the kite?",
+       "options": [
+        "the broom was too short",
+        "she was asleep",
+        "she was scared"
+       ],
+       "answer": "the broom was too short",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of Grandpa's dog?",
+       "options": [],
+       "answer": "Pickle",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Pickle bring back from the shed?",
+       "options": [
+        "a ladder",
+        "a garden rake",
+        "a ball"
+       ],
+       "answer": "a garden rake",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Sam say Pickle is like the mouse?",
+       "options": [
+        "she is grey",
+        "she is little but she helped",
+        "she likes cheese"
+       ],
+       "answer": "she is little but she helped",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Grandpa give a silly roar?",
+       "options": [
+        "he was angry",
+        "he was playing at being the lion",
+        "he hurt his hand"
+       ],
+       "answer": "he was playing at being the lion",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Sam remembered the fable when Pickle helped?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Grasshopper Who Played",
+     "synopsis": "Grandpa tells the fable of the ant and the grasshopper, and the children find a different kind of moral.",
+     "text": "That evening, Grandpa took a clay ant and a clay grasshopper from the box.\n\"All summer, the ant worked hard. She carried seeds to her home to keep for winter. The grasshopper just sang and played. 'Why work?' he said. 'There is lots of food now.'\nThen winter came. The ground was cold and there was no food. The ant had plenty, but the grasshopper was hungry.\"\n\"What is the moral this time?\" asked Grandpa.\nSam frowned. \"Get things ready before you need them?\"\n\"Yes!\" said Grandpa.\nIvy was quiet. \"This moral is different,\" she said. \"In the lion and the mouse, the big animal learned a lesson. Here, it is the one who did not plan.\"\n\"Good thinking,\" said Grandpa. \"Every fable teaches its own lesson.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the ant do all summer?",
+       "options": [
+        "she slept",
+        "she worked and carried seeds",
+        "she sang songs"
+       ],
+       "answer": "she worked and carried seeds",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the grasshopper do all summer?",
+       "options": [
+        "he sang and played",
+        "he built a house",
+        "he helped the ant"
+       ],
+       "answer": "he sang and played",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happened when winter came?",
+       "options": [
+        "there was lots of food",
+        "there was no food on the cold ground",
+        "the grasshopper moved away"
+       ],
+       "answer": "there was no food on the cold ground",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who was hungry in winter?",
+       "options": [
+        "the ant",
+        "the grasshopper",
+        "the lion"
+       ],
+       "answer": "the grasshopper",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what moral does Sam suggest?",
+       "options": [
+        "Get things ready before you need them",
+        "Slow and steady wins the race",
+        "Never boast"
+       ],
+       "answer": "Get things ready before you need them",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who learns the lesson in this fable, according to Ivy?",
+       "options": [
+        "the big animal",
+        "the one who did not plan",
+        "the hunters"
+       ],
+       "answer": "the one who did not plan",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Grandpa say about every fable?",
+       "options": [
+        "it is about lions",
+        "it teaches its own lesson",
+        "it is very long"
+       ],
+       "answer": "it teaches its own lesson",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the ant kept seeds for winter?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Ivy Helps a Friend",
+     "synopsis": "Ivy thinks about the morals when her friend needs help at the park.",
+     "text": "On Monday afternoon, Grandpa took the children to the park. Ivy saw a girl called Nora sitting alone by the swings. Nora was new in town.\n\"Let's play,\" said Ivy. Nora smiled shyly, and soon they were laughing on the slide.\nLater, Ivy dropped her water bottle, and it rolled under a bench. Ivy could not reach it, but Nora had small, thin arms. She slid her hand under the bench and pulled the bottle out.\n\"Thank you!\" said Ivy.\n\"Thank you for playing with me,\" said Nora.\nOn the way home, Ivy said, \"Grandpa, it happened again. I was kind to Nora, and then she helped me.\"\n\"Just like the lion and the mouse,\" said Grandpa. \"Kindness comes back to you.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Grandpa take the children?",
+       "options": [
+        "to the beach",
+        "to the park",
+        "to the shops"
+       ],
+       "answer": "to the park",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the name of the girl sitting alone?",
+       "options": [],
+       "answer": "Nora",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was Nora sitting alone?",
+       "options": [
+        "she was new in town",
+        "she was sad about a toy",
+        "she was waiting for her dad"
+       ],
+       "answer": "she was new in town",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Ivy drop?",
+       "options": [
+        "her hat",
+        "her water bottle",
+        "her book"
+       ],
+       "answer": "her water bottle",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why could Nora reach the bottle?",
+       "options": [
+        "she had small, thin arms",
+        "she used a stick",
+        "she was very tall"
+       ],
+       "answer": "she had small, thin arms",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Nora say thank you to Ivy?",
+       "options": [
+        "for the water",
+        "for playing with her",
+        "for a present"
+       ],
+       "answer": "for playing with her",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which fable is like Ivy's day?",
+       "options": [
+        "The Ant and the Grasshopper",
+        "The Lion and the Mouse",
+        "The Tortoise and the Hare"
+       ],
+       "answer": "The Lion and the Mouse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "How do you think Nora felt when Ivy asked her to play? Why?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: A Fable of Our Own",
+     "synopsis": "On their last night, Ivy and Sam make up their own fable with a moral.",
+     "text": "It was the last night at Grandpa's house. \"Tonight,\" said Grandpa, \"you tell me a fable.\"\nIvy and Sam whispered together. Then Sam began.\n\"Once, a big elephant could not find water. A little bird flew high in the sky and saw a pond. She showed the elephant the way.\"\nIvy went on. \"The elephant drank and drank. Then he said, 'Thank you. I will carry you on my back when your wings are tired.' And they were friends forever.\"\n\"And the moral is,\" they said together, \"everyone can help, big or small!\"\nGrandpa smiled and opened the story box. He gave them the tiny clay lion and mouse.\n\"Keep these,\" he said softly, with a twinkle in his eye. \"Now you are storytellers too.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Grandpa ask the children to do?",
+       "options": [
+        "tell him a fable",
+        "go to bed early",
+        "clean the box"
+       ],
+       "answer": "tell him a fable",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what could the elephant not find?",
+       "options": [
+        "food",
+        "water",
+        "his home"
+       ],
+       "answer": "water",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the bird find the pond?",
+       "options": [
+        "she flew high and saw it",
+        "she smelled it",
+        "the elephant told her"
+       ],
+       "answer": "she flew high and saw it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the elephant promise to do?",
+       "options": [
+        "build a nest",
+        "carry the bird when her wings were tired",
+        "sing a song"
+       ],
+       "answer": "carry the bird when her wings were tired",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the moral of the children's fable?",
+       "options": [
+        "Everyone can help, big or small",
+        "Slow and steady wins the race",
+        "Do not boast"
+       ],
+       "answer": "Everyone can help, big or small",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Grandpa give the children?",
+       "options": [
+        "a new kite",
+        "the clay lion and mouse",
+        "a book"
+       ],
+       "answer": "the clay lion and mouse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which fable is the children's story most like?",
+       "options": [
+        "The Lion and the Mouse",
+        "The Ant and the Grasshopper",
+        "none of them"
+       ],
+       "answer": "The Lion and the Mouse",
+       "accept": [],
+       "hint": "Think about a big animal and a small helper.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Grandpa called Ivy and Sam storytellers?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }

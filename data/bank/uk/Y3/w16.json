@@ -1,0 +1,1032 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y3",
+ "academic_week": 16,
+ "subjects": {
+  "bss": {
+   "topic": "Visões do espaço: frontal, oblíqua e vertical",
+   "questions": [
+    {
+     "id": "r1npb8lh1pr5r2y",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quando olhamos um objeto bem de frente, na altura dos olhos, que visão é essa?",
+     "options": [
+      "visão frontal",
+      "visão vertical",
+      "visão oblíqua"
+     ],
+     "answer": "visão frontal",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqcc25c8imar7",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quando olhamos um objeto de cima para baixo, como um passarinho voando, que visão é essa?",
+     "options": [
+      "visão frontal",
+      "visão vertical",
+      "visão oblíqua"
+     ],
+     "answer": "visão vertical",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nw442k1673ada",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quando olhamos um objeto de cima, mas meio de lado, inclinado, que visão é essa?",
+     "options": [
+      "visão oblíqua",
+      "visão frontal",
+      "visão vertical"
+     ],
+     "answer": "visão oblíqua",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nw2xzlja051o",
+     "subject": "bss",
+     "type": "short",
+     "q": "Complete: a visão de cima para baixo também é chamada de visão ___ (de pássaro).",
+     "options": [],
+     "answer": "vertical",
+     "accept": [
+      "visão vertical"
+     ],
+     "hint": "Pense em como o passarinho enxerga lá do alto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhrfx4t1677684",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Um copo visto de cima (visão vertical) parece com qual forma?",
+     "options": [
+      "um círculo",
+      "um triângulo",
+      "um quadrado"
+     ],
+     "answer": "um círculo",
+     "accept": [],
+     "hint": "Imagine a boca do copo vista lá do alto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ulwtgzq8uuuv",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Uma caixa de sapatos vista de cima parece com qual forma?",
+     "options": [
+      "um retângulo",
+      "um círculo",
+      "um triângulo"
+     ],
+     "answer": "um retângulo",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16lzhus2f6ag",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Uma bola vista de frente parece com qual forma?",
+     "options": [
+      "um círculo",
+      "um quadrado",
+      "um retângulo"
+     ],
+     "answer": "um círculo",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbkfnmk29ihfs",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Uma pessoa está em pé na frente de uma casa, olhando a porta e as janelas. Que visão ela tem?",
+     "options": [
+      "visão frontal",
+      "visão vertical",
+      "visão oblíqua"
+     ],
+     "answer": "visão frontal",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1eu1oap1pvq5xd",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Uma foto tirada de um avião, mostrando os telhados das casas, é uma visão:",
+     "options": [
+      "vertical",
+      "frontal",
+      "de baixo"
+     ],
+     "answer": "vertical",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw8ster5e8s8u",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Uma foto tirada do alto de um prédio, mostrando a rua inclinada, com os telhados e um pouco das paredes, é uma visão:",
+     "options": [
+      "oblíqua",
+      "frontal",
+      "vertical"
+     ],
+     "answer": "oblíqua",
+     "accept": [],
+     "hint": "Dá para ver o telhado e também um lado da casa?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16zz187q4q45y",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual visão é usada para fazer mapas e plantas de uma casa?",
+     "options": [
+      "visão vertical",
+      "visão frontal",
+      "visão oblíqua"
+     ],
+     "answer": "visão vertical",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18d9mg4t6yt6b",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Na visão vertical de uma mesa, o que conseguimos ver?",
+     "options": [
+      "só o tampo da mesa",
+      "só as pernas da mesa",
+      "a mesa por baixo"
+     ],
+     "answer": "só o tampo da mesa",
+     "accept": [],
+     "hint": "Lembre-se: olhamos de cima.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rye40lama2wg7",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Na visão frontal de uma estante, o que aparece melhor?",
+     "options": [
+      "as prateleiras e os livros",
+      "o teto da estante",
+      "o chão embaixo dela"
+     ],
+     "answer": "as prateleiras e os livros",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5jnkui1a1e58x",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em qual visão conseguimos ver o telhado E a parede da frente de uma casa ao mesmo tempo?",
+     "options": [
+      "oblíqua",
+      "frontal",
+      "vertical"
+     ],
+     "answer": "oblíqua",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raya6ff16cmrzf",
+     "subject": "bss",
+     "type": "open",
+     "q": "Explique como seria o desenho do seu estojo visto de cima (visão vertical).",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na forma e no que aparece por cima.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwlwmmj1xm9d23",
+     "subject": "bss",
+     "type": "open",
+     "q": "Por que um mapa da escola é desenhado em visão vertical e não em visão frontal?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que conseguimos ver de cima.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Word families and root words",
+   "questions": [
+    {
+     "id": "rh7gvpw103q2zn",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word belongs to the same word family as 'help'?",
+     "options": [
+      "helpful",
+      "hello",
+      "heap"
+     ],
+     "answer": "helpful",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rubpa9fsjwhmj",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the root word in 'playful'?",
+     "options": [
+      "play",
+      "ful",
+      "lay"
+     ],
+     "answer": "play",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcbxlzv25a1z",
+     "subject": "en",
+     "type": "short",
+     "q": "What is the root word in 'unhappy'?",
+     "options": [],
+     "answer": "happy",
+     "accept": [],
+     "hint": "Take away the part at the start.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1473nv117oaohn",
+     "subject": "en",
+     "type": "short",
+     "q": "What is the root word in 'teacher'?",
+     "options": [],
+     "answer": "teach",
+     "accept": [],
+     "hint": "Take away the ending.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gatcz5349orb",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is NOT in the 'light' word family?",
+     "options": [
+      "lightning",
+      "lighthouse",
+      "listen"
+     ],
+     "answer": "listen",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcvgk0sdja78n",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which group is a word family?",
+     "options": [
+      "sign, signal, signature",
+      "sign, sing, song",
+      "sign, sit, six"
+     ],
+     "answer": "sign, signal, signature",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjqm0cu1rvsxlg",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is in the 'kind' word family?",
+     "options": [
+      "unkind",
+      "kitchen",
+      "king"
+     ],
+     "answer": "unkind",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1luul5a18g9hwo",
+     "subject": "en",
+     "type": "mc",
+     "q": "'Care', 'careful' and 'careless' are a word family. What do they all share?",
+     "options": [
+      "the root word 'care'",
+      "the ending '-less'",
+      "the letter 'z'"
+     ],
+     "answer": "the root word 'care'",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17rl0s71nmo6cy",
+     "subject": "en",
+     "type": "short",
+     "q": "Add '-er' to 'farm' to make a word for a person. Write the word.",
+     "options": [],
+     "answer": "farmer",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bpchll1o55bp1",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word means 'full of joy' and comes from the root 'joy'?",
+     "options": [
+      "joyful",
+      "enjoy",
+      "joyless"
+     ],
+     "answer": "joyful",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tqotmi1ncaj8h",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word means 'without hope'?",
+     "options": [
+      "hopeless",
+      "hopeful",
+      "hoping"
+     ],
+     "answer": "hopeless",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hxhkd4kkuuzs",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does 'rewrite' mean?",
+     "options": [
+      "to write again",
+      "to not write",
+      "to write badly"
+     ],
+     "answer": "to write again",
+     "accept": [],
+     "hint": "Think about what 're-' adds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpbeun31811nua",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is in the same family as 'act'?",
+     "options": [
+      "action",
+      "ache",
+      "ant"
+     ],
+     "answer": "action",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rerac051gk8yct",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which root word links 'sunny', 'sunshine' and 'sunset'?",
+     "options": [
+      "sun",
+      "shine",
+      "set"
+     ],
+     "answer": "sun",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvt2epg13h3nw9",
+     "subject": "en",
+     "type": "open",
+     "q": "'Friend', 'friendly' and 'friendship' are a word family. Explain how their meanings are linked.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riz6aou11ffxgp",
+     "subject": "en",
+     "type": "open",
+     "q": "Choose a root word and write two other words from its family. Explain how they are related.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_read": {
+   "topic": "Fables: identifying the moral — Aesop's fables",
+   "questions": [
+    {
+     "id": "r1n9zbrpty10mi",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is a fable?",
+     "options": [
+      "a short story that teaches a lesson",
+      "a list of facts",
+      "a poem about the sea"
+     ],
+     "answer": "a short story that teaches a lesson",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jrarnv116qgoo",
+     "subject": "en_read",
+     "type": "short",
+     "q": "What do we call the lesson that a fable teaches?",
+     "options": [],
+     "answer": "moral",
+     "accept": [
+      "the moral",
+      "a moral"
+     ],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d91xou1aqvg57",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Who are the main characters in most fables?",
+     "options": [
+      "animals that talk",
+      "robots",
+      "kings and queens only"
+     ],
+     "answer": "animals that talk",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdzzj641pn515n",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Aesop is famous for telling which kind of stories?",
+     "options": [
+      "fables",
+      "fairy tales about castles",
+      "adventure novels"
+     ],
+     "answer": "fables",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtrg8kv1ty89df",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "In 'The Tortoise and the Hare', who wins the race?",
+     "options": [
+      "the tortoise",
+      "the hare",
+      "nobody"
+     ],
+     "answer": "the tortoise",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vlcg6v11qbdk3",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is the moral of 'The Tortoise and the Hare'?",
+     "options": [
+      "Slow and steady wins the race",
+      "Always run fast",
+      "Never sleep"
+     ],
+     "answer": "Slow and steady wins the race",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf74mjlg0dlg1",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "In 'The Lion and the Mouse', how does the mouse help the lion?",
+     "options": [
+      "it chews the net to free him",
+      "it brings him food",
+      "it fights the hunters"
+     ],
+     "answer": "it chews the net to free him",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmrp31m14i53sc",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is the moral of 'The Lion and the Mouse'?",
+     "options": [
+      "Little friends can be great friends",
+      "Lions are always kind",
+      "Never go into the forest"
+     ],
+     "answer": "Little friends can be great friends",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8f6toz64g57p",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "In 'The Ant and the Grasshopper', what does the ant do in summer?",
+     "options": [
+      "collects food for winter",
+      "plays music",
+      "sleeps all day"
+     ],
+     "answer": "collects food for winter",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oyhxmn13ccnqw",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is the moral of 'The Ant and the Grasshopper'?",
+     "options": [
+      "Prepare today for what you need tomorrow",
+      "Music is bad",
+      "Ants are stronger than grasshoppers"
+     ],
+     "answer": "Prepare today for what you need tomorrow",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yu7p8u1rfxqfz",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "In 'The Boy Who Cried Wolf', why does nobody come at the end?",
+     "options": [
+      "he had lied before",
+      "they could not hear him",
+      "they were asleep"
+     ],
+     "answer": "he had lied before",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfn770l1j9vawf",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What is the moral of 'The Boy Who Cried Wolf'?",
+     "options": [
+      "People may not believe a liar, even when he tells the truth",
+      "Wolves are friendly",
+      "Always shout loudly"
+     ],
+     "answer": "People may not believe a liar, even when he tells the truth",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru6h9mhenrhp8",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "The hare and the lion are alike because both are…",
+     "options": [
+      "proud and think they are better",
+      "very small",
+      "kind to everyone"
+     ],
+     "answer": "proud and think they are better",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry2u7nx1gog1en",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "The tortoise and the mouse are alike because both are…",
+     "options": [
+      "small but succeed in the end",
+      "fast runners",
+      "lazy"
+     ],
+     "answer": "small but succeed in the end",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r197mjqo1u70hnw",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Compare the hare and the grasshopper. How are they similar?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what each one did instead of working or trying hard.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hem8j21ctvunp",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Which fable moral do you think is most useful at school? Explain why.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_spell": {
+   "topic": "The /k/ sound spelt ch (Greek origin)",
+   "questions": [
+    {
+     "id": "r12h12pta29kbt",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word is spelt correctly?",
+     "options": [
+      "school",
+      "skool",
+      "schol"
+     ],
+     "answer": "school",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzmhus1iselc4",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "In 'echo', which letters make the /k/ sound?",
+     "options": [
+      "ch",
+      "ec",
+      "ho"
+     ],
+     "answer": "ch",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kgxqx914r557w",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Many words with 'ch' making a /k/ sound come from which language?",
+     "options": [
+      "Greek",
+      "French",
+      "Spanish"
+     ],
+     "answer": "Greek",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r39jkthlpyy3w",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: sc _ _ eme (a plan)",
+     "options": [],
+     "answer": "scheme",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6cxwui1hdjqi3",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: a _ _ e (a dull pain)",
+     "options": [],
+     "answer": "ache",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r181fzfo1qeccmx",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: an _ _ or (it stops a ship drifting)",
+     "options": [],
+     "answer": "anchor",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj57eqg8vbs",
+     "subject": "en_spell",
+     "type": "short",
+     "q": "Fill in the missing letters and write the whole word: _ _ emist (a person who sells medicines)",
+     "options": [],
+     "answer": "chemist",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cmrmso1wwoigt",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word means a person in a story?",
+     "options": [
+      "character",
+      "chorus",
+      "chemist"
+     ],
+     "answer": "character",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj82hbyqzogzs",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which word means a big group of musicians playing together?",
+     "options": [
+      "orchestra",
+      "anchor",
+      "scheme"
+     ],
+     "answer": "orchestra",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rruwgx7954ye2",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which sentence is spelt correctly?",
+     "options": [
+      "The echo came back from the cave.",
+      "The ecko came back from the cave.",
+      "The echoe came back from the cave."
+     ],
+     "answer": "The echo came back from the cave.",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q9ac6ysgjpkn",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "In which word does 'ch' NOT make a /k/ sound?",
+     "options": [
+      "chair",
+      "chorus",
+      "school"
+     ],
+     "answer": "chair",
+     "accept": [],
+     "hint": "Say each word aloud.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dcryqx12a6zgp",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words.",
+     "options": [],
+     "answer": "skool → school; orkestra → orchestra; ecko → echo; karacter → character; ankor → anchor",
+     "accept": [],
+     "hint": "",
+     "text": "On Monday our skool went on a trip to hear an orkestra. The music was so loud that it made an ecko in the hall. My favourite karacter in the story they played was a sailor who lost his ankor at sea. Afterwards everyone sang the chorus together.",
+     "errors": [
+      {
+       "wrong": "skool",
+       "right": "school"
+      },
+      {
+       "wrong": "orkestra",
+       "right": "orchestra"
+      },
+      {
+       "wrong": "ecko",
+       "right": "echo"
+      },
+      {
+       "wrong": "karacter",
+       "right": "character"
+      },
+      {
+       "wrong": "ankor",
+       "right": "anchor"
+      }
+     ]
+    },
+    {
+     "id": "r693vymiju6bc",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which spelling of the word for a group singing together is correct?",
+     "options": [
+      "chorus",
+      "korus",
+      "chorous"
+     ],
+     "answer": "chorus",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oesoz9v6bc8g",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which spelling of the body part where food goes is correct?",
+     "options": [
+      "stomach",
+      "stomack",
+      "stumach"
+     ],
+     "answer": "stomach",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8rjbln1t1bora",
+     "subject": "en_spell",
+     "type": "mc",
+     "q": "Which spelling of a big group of musicians is correct?",
+     "options": [
+      "orchestra",
+      "orkestra",
+      "orchestrer"
+     ],
+     "answer": "orchestra",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yx40bpsmymt9",
+     "subject": "en_spell",
+     "type": "proof",
+     "q": "Spot the mistakes: find and fix the 5 misspelled words in this story.",
+     "options": [],
+     "answer": "stomack → stomach; kemist → chemist; corus → chorus; skeme → scheme; akhe → ache",
+     "accept": [],
+     "hint": "",
+     "text": "Tom had a stomack ache after lunch, so his mum took him to the kemist. The kind lady gave him some medicine and told him to rest. Later he felt better and joined the corus at school. His teacher had a new skeme to help the choir sing well, and they practised until the akhe in his tummy was forgotten.",
+     "errors": [
+      {
+       "wrong": "stomack",
+       "right": "stomach"
+      },
+      {
+       "wrong": "kemist",
+       "right": "chemist"
+      },
+      {
+       "wrong": "corus",
+       "right": "chorus"
+      },
+      {
+       "wrong": "skeme",
+       "right": "scheme"
+      },
+      {
+       "wrong": "akhe",
+       "right": "ache"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "books": []
+}
