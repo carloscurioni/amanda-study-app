@@ -3242,6 +3242,913 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Lantern Stone",
+   "premise": "Oren Thistle, a shy baker's apprentice, sets out with a talkative crow named Bramble to return a glowing stone to the Mountain of Echoes before his village's water runs dry, and discovers courage, patience and kindness along the way.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Knock at Dawn",
+     "synopsis": "A mysterious traveller asks Oren, a shy baker's apprentice, to carry a glowing stone back to the Mountain of Echoes, and he finally agrees.",
+     "text": "In the village of Lowbrook, where the chimneys leaned like tired old men and the river hummed past the mill, Oren Thistle rose before the sun every day to knead bread. He liked the warm, quiet bakery. He liked knowing exactly what would happen next.\nThat was why the knock at dawn frightened him. Three slow taps rattled the bakery door. When Oren opened it, a tall woman in a cloak the colour of storm clouds stood on the step. Rain dripped from her hood, and in her gloved hand something glowed like a captured star.\n\"My name is Marla Greycloak,\" she said. \"This is the Lantern Stone. It was stolen from the Mountain of Echoes, and since it left, the valley's spring has grown weaker every year. It must be returned before midwinter.\"\n\"Why are you telling me?\" Oren asked. \"I bake loaves. I have never been further than the market at Hillford.\"\nMarla smiled. \"The stone glows brightest for honest hands. Yesterday you returned a coin a merchant dropped, even though nobody saw. I have an injured leg and cannot climb. Will you go?\"\nOren thought of the cold, misty road and the stories of wolves in the Whispering Wood. He thought of his warm oven. Then he looked at the well in the square, its water now only a trickle, and at the children queuing with buckets.\nA small black crow hopped onto the windowsill. \"I am Bramble,\" it croaked. \"I know the way, mostly. I will come too, if you bring cake.\"\nOren laughed in spite of himself. That night he packed a loaf, a knife, a blanket and the Lantern Stone, wrapped in cloth. At first light he stepped onto the road, his heart thumping, and did not look back.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Oren's job?",
+       "options": [
+        "Baker's apprentice",
+        "Blacksmith",
+        "Farmer",
+        "Shepherd"
+       ],
+       "answer": "Baker's apprentice",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the glowing object Marla carries?",
+       "options": [],
+       "answer": "the Lantern Stone",
+       "accept": [
+        "Lantern Stone",
+        "lantern stone"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where must the stone be returned?",
+       "options": [
+        "The Mountain of Echoes",
+        "The market at Hillford",
+        "The Whispering Wood",
+        "The village well"
+       ],
+       "answer": "The Mountain of Echoes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why can't Marla make the journey herself?",
+       "options": [
+        "She has an injured leg",
+        "She is afraid of wolves",
+        "She must run the bakery",
+        "She has lost the map"
+       ],
+       "answer": "She has an injured leg",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what problem has the village been having since the stone was stolen?",
+       "options": [
+        "The water is drying up",
+        "The bread will not rise",
+        "The crops are burning",
+        "The bridge has fallen"
+       ],
+       "answer": "The water is drying up",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Marla choose Oren?",
+       "options": [
+        "He is honest",
+        "He is the strongest",
+        "He owns a map",
+        "He is her nephew"
+       ],
+       "answer": "He is honest",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the words 'his heart thumping' suggest about Oren as he leaves?",
+       "options": [
+        "He is nervous but brave",
+        "He is angry with Marla",
+        "He is bored",
+        "He is very tired"
+       ],
+       "answer": "He is nervous but brave",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Oren agrees to go on the quest even though he likes his quiet life?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Whispering Wood",
+     "synopsis": "Oren and Bramble lose the path in a dark forest, and Oren finds the way out by noticing small clues around him.",
+     "text": "By the second afternoon, the road narrowed and disappeared beneath the Whispering Wood. The trees were enormous, their trunks twisted like wrung-out cloths, and their branches knitted together so tightly that the daylight turned a dim, watery green. Every breath of wind made the leaves murmur, as if the forest were sharing secrets about the travellers.\n\"Which way?\" Oren asked.\nBramble fluffed his feathers. \"Left. Or possibly right. Trees all look the same from inside.\"\nThey walked for hours. Twice they passed the same mushroom ring, pale as a circle of teacups. Oren's legs ached and the light was fading. A low howl drifted from somewhere far behind them, and Bramble hid inside Oren's hood.\nOren wanted to sit down and cry. Instead, he made himself stop and think, the way he did when a batch of dough refused to rise. What did he know? His grandmother had told him that moss often grows thicker on the shady side of trees. He also remembered that streams always run downhill, and Lowbrook's river flowed north towards the mountains.\nHe knelt and listened. Under the whispering leaves came a thin silver sound: water. Following it, they found a stream chattering over smooth stones. They walked beside it, and slowly the trees grew further apart. At last they stepped out onto a hillside glowing orange in the sunset. Far ahead, a white peak rose above the clouds.\n\"The Mountain of Echoes,\" breathed Bramble. \"I knew we would find it.\"\n\"You said left or right,\" Oren reminded him, smiling.\nThat night they camped by the stream. The Lantern Stone glowed softly in Oren's bag, a little brighter than before, and for the first time Oren felt that he might be the right person for this journey after all.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does the light look inside the wood?",
+       "options": [
+        "Dim and green",
+        "Bright and golden",
+        "Red and fiery",
+        "Completely black"
+       ],
+       "answer": "Dim and green",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do they pass twice?",
+       "options": [
+        "A mushroom ring",
+        "A fallen bridge",
+        "A wooden hut",
+        "A stone statue"
+       ],
+       "answer": "A mushroom ring",
+       "accept": [],
+       "hint": "It tells them they are walking in circles.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, where does Bramble hide when he hears the howl?",
+       "options": [],
+       "answer": "in Oren's hood",
+       "accept": [
+        "Oren's hood",
+        "the hood",
+        "hood"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what sound helps Oren find the way out?",
+       "options": [
+        "Running water",
+        "Church bells",
+        "A wolf's howl",
+        "Birdsong"
+       ],
+       "answer": "Running water",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, the trunks are 'twisted like wrung-out cloths'. What kind of language is this?",
+       "options": [
+        "A simile",
+        "A rhyme",
+        "A question",
+        "An instruction"
+       ],
+       "answer": "A simile",
+       "accept": [],
+       "hint": "Look for the word 'like'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Oren solve the problem of being lost?",
+       "options": [
+        "He stops, thinks and uses what he knows",
+        "He climbs the tallest tree",
+        "Bramble flies up and looks",
+        "He waits until morning"
+       ],
+       "answer": "He stops, thinks and uses what he knows",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the Lantern Stone glow a little brighter at the end?",
+       "options": [
+        "Oren is growing more confident",
+        "It is getting dark",
+        "It is near water",
+        "Bramble touched it"
+       ],
+       "answer": "Oren is growing more confident",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the writer made the forest seem to 'whisper' secrets?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Keeper of the Ford",
+     "synopsis": "A grumpy river keeper will only let them cross if Oren answers his riddle, and Oren uses patience rather than guessing.",
+     "text": "At the foot of the hills, a wide grey river blocked the way. The only crossing was a line of flat stepping stones called the Old Ford, and on the first stone sat a creature as large as a haystack. Its skin was rough and green like river weed, and its eyes were small and suspicious.\n\"I am the Keeper,\" it rumbled. \"Nobody crosses without answering my riddle. Answer wrongly, and you go back the way you came.\"\nBramble whispered, \"Last year a knight guessed seven times and fell in the river.\"\nOren swallowed. \"I am ready.\"\nThe Keeper cleared its throat with a sound like rocks rolling. \"The more you take, the more you leave behind. What am I?\"\nBramble immediately squawked, \"Money! Cake! Socks!\"\n\"Three wrong answers from your bird,\" said the Keeper, looking pleased. \"Two more and you are finished.\"\nOren put his hand gently over Bramble's beak. He did not want to rush. He thought about the words carefully. Taking something but leaving something behind. He looked back at the muddy bank, where his boots had pressed a neat line of marks all the way from the hills.\n\"Footsteps,\" he said. \"The more steps you take, the more footprints you leave behind.\"\nThe Keeper was silent for a long moment. Then, unexpectedly, it began to laugh, a deep, bubbling laugh that sent ripples across the water. \"Correct! Nobody has answered in nine years. Most travellers shout the first thing in their heads.\"\nIt shuffled aside, and Oren and Bramble hopped from stone to stone across the river. On the far bank, Oren turned to wave. The Keeper waved back with a huge webbed hand.\n\"You could have just let me keep guessing,\" Bramble grumbled.\n\"Then we would still be on the other side,\" said Oren.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what blocks the way?",
+       "options": [
+        "A wide river",
+        "A high wall",
+        "A deep hole",
+        "A locked gate"
+       ],
+       "answer": "A wide river",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the crossing?",
+       "options": [],
+       "answer": "the Old Ford",
+       "accept": [
+        "Old Ford",
+        "old ford"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the Keeper's skin look like?",
+       "options": [
+        "Rough and green like river weed",
+        "Smooth and white like snow",
+        "Shiny like a fish",
+        "Hairy like a bear"
+       ],
+       "answer": "Rough and green like river weed",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the answer to the Keeper's riddle?",
+       "options": [],
+       "answer": "footsteps",
+       "accept": [
+        "footprints",
+        "steps"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what helps Oren work out the answer?",
+       "options": [
+        "The marks his boots left in the mud",
+        "A clue from Bramble",
+        "A book in his bag",
+        "The shape of the stones"
+       ],
+       "answer": "The marks his boots left in the mud",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Oren cover Bramble's beak?",
+       "options": [
+        "To stop him using up their guesses",
+        "Because Bramble is cold",
+        "To keep him from flying away",
+        "Because Bramble is singing"
+       ],
+       "answer": "To stop him using up their guesses",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does the Keeper feel when Oren answers correctly?",
+       "options": [
+        "Surprised and amused",
+        "Furious",
+        "Frightened",
+        "Sad"
+       ],
+       "answer": "Surprised and amused",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think most travellers fail to answer the Keeper's riddle?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Town of Bells",
+     "synopsis": "In a busy town, a young thief steals Oren's bag, and Oren chooses kindness over anger when he catches her.",
+     "text": "Two days later they reached Carrowmere, a town built on a steep hill where every rooftop had a bell. When the wind blew, the whole town chimed like a giant music box. After so many quiet nights under the stars, the noise and colour made Oren dizzy: stalls piled with oranges, carts rattling over cobbles, merchants calling out prices.\nOren stopped to buy honey cakes for Bramble. As he counted his coins, he felt a sharp tug. His bag was gone! A small figure in a patched green coat was racing away through the crowd.\n\"The stone!\" gasped Bramble, and flew after the thief.\nOren ran, dodging baskets and a startled goat. Bramble swooped low, cawing, and pointed the way down a narrow alley. At the end, trapped against a wall, stood a thin girl of about ten, clutching the bag. Her face was smudged with soot, and she looked more scared than Oren had ever felt in the Whispering Wood.\n\"Please don't call the guards,\" she whispered. \"I only wanted something to sell. My brother and I haven't eaten since yesterday.\"\nOren's anger melted like butter in a warm pan. He knelt down. \"What's your name?\"\n\"Ivy.\"\nOren took the bag gently, checked that the Lantern Stone was safe, and then pulled out the rest of his loaf and the honey cakes. \"These are for you and your brother.\"\nBramble made a squawk of protest about the cakes, but Oren ignored him.\nIvy stared at the food, then at Oren. \"Nobody's ever given me anything,\" she said quietly. Before she ran off, she told him a secret: \"The Frozen Pass is dangerous at night. Cross it at noon, when the sun melts the ice on the path.\"\nAs the bells of Carrowmere rang out above them, the Lantern Stone glowed brighter still.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does every rooftop in Carrowmere have?",
+       "options": [
+        "A bell",
+        "A flag",
+        "A chimney pot",
+        "A weather vane"
+       ],
+       "answer": "A bell",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Oren buying when his bag is stolen?",
+       "options": [
+        "Honey cakes",
+        "Oranges",
+        "A new map",
+        "Warm boots"
+       ],
+       "answer": "Honey cakes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who helps Oren chase the thief?",
+       "options": [
+        "Bramble",
+        "Marla",
+        "A town guard",
+        "The Keeper"
+       ],
+       "answer": "Bramble",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the thief's name?",
+       "options": [],
+       "answer": "Ivy",
+       "accept": [
+        "ivy"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the thief steal the bag?",
+       "options": [
+        "She and her brother were hungry",
+        "She wanted the stone for herself",
+        "Someone paid her to",
+        "She thought it was hers"
+       ],
+       "answer": "She and her brother were hungry",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what useful advice does the thief give Oren?",
+       "options": [
+        "Cross the Frozen Pass at noon",
+        "Never trust the Keeper",
+        "Avoid the Whispering Wood",
+        "Follow the river north"
+       ],
+       "answer": "Cross the Frozen Pass at noon",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, 'Oren's anger melted like butter in a warm pan.' What does this tell us?",
+       "options": [
+        "His anger disappeared quickly",
+        "He was cooking",
+        "He became angrier",
+        "He felt very hot"
+       ],
+       "answer": "His anger disappeared quickly",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the Lantern Stone glows brighter at the end of the chapter?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Frozen Pass",
+     "synopsis": "Oren and Bramble climb a dangerous icy pass, and Oren's courage and care save his friend when a storm strikes.",
+     "text": "The Frozen Pass was a narrow ledge carved into the side of the mountain. On one side, the rock rose straight up like a wall; on the other, it dropped away into swirling white nothing. The air was so cold it stung Oren's nose, and his breath hung in front of him like smoke.\nRemembering Ivy's advice, they waited in a cave until noon. Sure enough, as the sun climbed, the thick ice on the path softened into slush, and they began to climb.\nFor an hour all went well. Then the sky darkened. Grey clouds tumbled over the peak, and a howling wind flung snow sideways into their faces. Bramble, who was flying just ahead, was caught by a sudden gust and tossed against the cliff. He dropped onto the ledge and lay still, one wing bent at an awkward angle.\n\"Bramble!\" Oren crawled forward on his hands and knees. The crow's eyes blinked open. \"Go on without me,\" he croaked weakly. \"The stone matters more.\"\n\"Don't be silly,\" Oren said. He tucked Bramble inside his coat, against his warm chest, and wrapped his scarf around them both. He could hardly see. Each step was a careful decision: test the ground, move one foot, then the other. He kept one hand on the cliff wall and counted his steps out loud to stay calm, just as he counted when he was measuring flour.\nAt last the path widened onto a flat, sheltered plateau. The storm began to blow itself out, and pale stars appeared. Oren sank down behind a boulder, shaking with cold and relief.\nFrom inside his coat came a muffled voice. \"Oren?\"\n\"Yes?\"\n\"Thank you. And I'm sorry about all the cake I complained about.\"\nOren laughed, and the Lantern Stone shone so brightly that it lit up the snow around them like a golden pool.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the Frozen Pass?",
+       "options": [
+        "A narrow ledge on the mountain",
+        "A frozen lake",
+        "A tunnel through the rock",
+        "A bridge of ice"
+       ],
+       "answer": "A narrow ledge on the mountain",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do they wait in a cave until noon?",
+       "options": [
+        "So the ice on the path melts",
+        "So Bramble can sleep",
+        "Because of wolves outside",
+        "To eat their lunch"
+       ],
+       "answer": "So the ice on the path melts",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens to Bramble?",
+       "options": [
+        "The wind throws him against the cliff",
+        "He flies away to find help",
+        "He falls into the river",
+        "He gets lost in the clouds"
+       ],
+       "answer": "The wind throws him against the cliff",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, where does Oren put Bramble to keep him warm?",
+       "options": [],
+       "answer": "inside his coat",
+       "accept": [
+        "his coat",
+        "in his coat",
+        "coat"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Oren do to stay calm?",
+       "options": [
+        "Counts his steps out loud",
+        "Sings a song",
+        "Closes his eyes",
+        "Talks to the stone"
+       ],
+       "answer": "Counts his steps out loud",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, 'his breath hung in front of him like smoke'. What does this help the reader imagine?",
+       "options": [
+        "How cold the air is",
+        "How tired Oren is",
+        "That there is a fire",
+        "That Oren is ill"
+       ],
+       "answer": "How cold the air is",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Bramble's apology show?",
+       "options": [
+        "He is grateful and has changed",
+        "He is still hungry",
+        "He wants to go home",
+        "He is angry with Oren"
+       ],
+       "answer": "He is grateful and has changed",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "How has Oren changed since he left the bakery in Chapter 1? Give one example.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Guardian of Echoes",
+     "synopsis": "At the top of the mountain, a stone dragon tests Oren with a question, and his honest answer earns its trust.",
+     "text": "The summit of the Mountain of Echoes was a ring of tall black stones, and in the centre stood an empty stone bowl. Beside it, curled like a sleeping cat, lay a dragon made entirely of grey rock. Lichen grew on its back, and its closed eyes were as large as cartwheels.\nAs Oren stepped into the circle, the dragon's eyes slid open. They were the deep blue of a winter sky.\n\"Who brings the Lantern Stone?\" it asked. Its voice bounced off the rocks: stone, stone, stone.\n\"My name is Oren Thistle. I'm a baker's apprentice from Lowbrook.\"\n\"A baker?\" The echo repeated it: baker, baker. \"Heroes come here with swords and boasts. Why should I believe a baker is worthy?\"\nOren's mouth went dry. He could say he was brave. He could say he had defeated monsters. But that would not be true.\n\"I'm not a hero,\" he said. \"I was frightened almost the whole way. I got lost in the wood. A girl stole my bag. My friend was hurt, and I nearly gave up in the storm. But I kept going, because the children in my village need water.\"\nFor a moment there was no echo at all. Then the dragon lowered its great head until its stony nose almost touched Oren's.\n\"The thief who took the stone was a famous warrior,\" it said softly. \"He wanted its power for himself. You have carried it for others. That is why it shines so brightly in your hands.\"\nOren unwrapped the stone. It blazed like a small sun. He placed it in the bowl, and at once a deep rumble ran through the mountain. Far below, the sound of rushing water rose from the rocks as hidden springs burst into life.\nBramble, peeping out from Oren's coat, whispered, \"Did we really do it?\"\n\"We did,\" said Oren, and the mountain echoed: did it, did it, did it.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the dragon made of?",
+       "options": [
+        "Grey rock",
+        "Ice",
+        "Gold",
+        "Fire"
+       ],
+       "answer": "Grey rock",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour are the dragon's eyes?",
+       "options": [
+        "Deep blue",
+        "Bright red",
+        "Green",
+        "Black"
+       ],
+       "answer": "Deep blue",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, where does Oren place the Lantern Stone?",
+       "options": [],
+       "answer": "in the stone bowl",
+       "accept": [
+        "the stone bowl",
+        "the bowl",
+        "bowl",
+        "stone bowl"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the dragon say most heroes bring with them?",
+       "options": [
+        "Swords and boasts",
+        "Gifts and gold",
+        "Maps and lanterns",
+        "Food and water"
+       ],
+       "answer": "Swords and boasts",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who had stolen the stone in the first place?",
+       "options": [
+        "A famous warrior",
+        "The Keeper",
+        "Ivy",
+        "Marla"
+       ],
+       "answer": "A famous warrior",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens after the stone is returned?",
+       "options": [
+        "Hidden springs burst into life",
+        "The dragon flies away",
+        "The mountain falls down",
+        "It starts to snow"
+       ],
+       "answer": "Hidden springs burst into life",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the dragon trust Oren?",
+       "options": [
+        "He tells the truth and carried the stone for others",
+        "He fights the dragon bravely",
+        "He offers it bread",
+        "He knows the dragon's name"
+       ],
+       "answer": "He tells the truth and carried the stone for others",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Oren decides not to pretend to be a great hero?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Road Home",
+     "synopsis": "Oren returns to Lowbrook, sees the changes his quest has made and realises how much he has grown.",
+     "text": "The journey home felt shorter, as journeys home always do. Bramble's wing healed slowly, so he rode on Oren's shoulder and gave directions that were, for once, mostly correct.\nAt the Frozen Pass, the ice had cracked and melted into a dozen sparkling waterfalls. In Carrowmere, the bells rang as they passed, and Ivy ran out of a bakery doorway with flour on her nose. \"I've got a job!\" she shouted. \"The baker said anyone who could carry a loaf that fast deserved one.\" Oren laughed and promised to send her his best recipe.\nAt the Old Ford, the river was higher and faster than before. The Keeper was waiting on its stone. \"Another riddle?\" it rumbled hopefully.\n\"Only if you'll let me answer slowly,\" said Oren.\n\"I would not have it any other way,\" said the Keeper, and asked one about an egg. Oren solved it before they reached the far bank.\nThe Whispering Wood no longer seemed frightening. Now its murmuring leaves sounded almost friendly, and the stream led them straight through.\nWhen Lowbrook's leaning chimneys finally appeared, Oren heard something wonderful: splashing. The village well was overflowing, and the children who had once queued with empty buckets were chasing each other through puddles. Marla Greycloak stood by the bakery door, leaning on her stick.\n\"You did it,\" she said.\n\"We did it,\" Oren corrected, nodding at Bramble.\nThat evening, Oren baked as usual. The kneading, the waiting, the warm smell of bread were all the same. But Oren was not. He knew now that he could find his way when he was lost, think clearly when he was afraid and be kind even when he was angry.\nAs he slid the last loaf into the oven, Bramble hopped onto the table. \"So,\" he said. \"Where do we go next?\"\nOren smiled. For the first time in his life, he did not know what would happen next, and he did not mind at all.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Bramble travel on the way home?",
+       "options": [
+        "On Oren's shoulder",
+        "Flying ahead",
+        "Inside a basket",
+        "In Oren's hood"
+       ],
+       "answer": "On Oren's shoulder",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what has happened to the ice at the Frozen Pass?",
+       "options": [
+        "It has melted into waterfalls",
+        "It has grown thicker",
+        "It has turned to stone",
+        "It has turned blue"
+       ],
+       "answer": "It has melted into waterfalls",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, where does Ivy now work?",
+       "options": [],
+       "answer": "in a bakery",
+       "accept": [
+        "a bakery",
+        "bakery",
+        "the bakery"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the Keeper's new riddle about?",
+       "options": [
+        "An egg",
+        "A footstep",
+        "A bell",
+        "A star"
+       ],
+       "answer": "An egg",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Oren hear as he arrives in Lowbrook?",
+       "options": [
+        "Splashing water",
+        "Bells ringing",
+        "Wolves howling",
+        "Thunder"
+       ],
+       "answer": "Splashing water",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Oren say 'We did it' instead of 'I did it'?",
+       "options": [
+        "He knows Bramble helped him",
+        "He is being rude to Marla",
+        "He forgot what happened",
+        "He wants to share the reward"
+       ],
+       "answer": "He knows Bramble helped him",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the main idea of the ending?",
+       "options": [
+        "Oren's life looks the same but he has changed inside",
+        "Oren is going to stop baking",
+        "Oren never wants another adventure",
+        "Marla becomes a baker"
+       ],
+       "answer": "Oren's life looks the same but he has changed inside",
+       "accept": [],
+       "hint": "Compare the last line with Chapter 1.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the Whispering Wood no longer seems frightening to Oren on the way home?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
