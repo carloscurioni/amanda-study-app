@@ -3167,6 +3167,885 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Journals of Captain Ada Finch",
+   "premise": "Milo and his grandad discover the old journals of Captain Ada Finch, a sea explorer from their small town, and read one every Saturday, using her dates and places to piece together her voyage to the icy Whitecap Islands and the story of her whole life.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Tin Box",
+     "synopsis": "Milo and his grandad find an old tin box of journals at the town museum and learn who wrote them: an explorer called Captain Ada Finch.",
+     "text": "On a wet Saturday in October, Milo helped his grandad tidy the back room of the Harrowby Town Museum. Grandad had looked after the museum for twenty years, and he said there were still boxes nobody had opened.\nBehind a pile of old fishing nets, Milo found a tin box painted dark green. The lid was stiff with rust. When Grandad finally prised it open, they saw five small notebooks tied with string, a brass compass and a faded photograph of a woman in a thick coat standing on the deck of a ship.\n\"Well, I never,\" said Grandad, peering at the first page. \"These belong to Captain Ada Finch.\"\nMilo had seen that name on a plaque by the harbour, but he had never known who she was. Grandad pulled up two chairs and explained.\n\"Ada Finch was born here in Harrowby on 12th May 1868. Her father was a fisherman, and she learned to read the tides before she could ride a bicycle. When she was seventeen, in 1885, she went to sea for the first time as a ship's cook. Twenty years later, she was captain of her own ship, the Kestrel.\"\n\"And these are her journals?\" Milo asked.\n\"Explorers wrote everything down,\" said Grandad. \"Dates, places, the weather, what they ate. A journal was their memory. Without it, nobody back home would ever know what they had seen.\"\nMilo opened the first notebook carefully. The ink was brown and the writing was small and neat. At the top of the page it said: 3rd March 1906, Port Merrow.\n\"Can we read them?\" he asked.\nGrandad smiled. \"One journal every Saturday. That way we'll make them last.\"\nMilo put the compass in his pocket for safekeeping, and for the first time he could remember, he couldn't wait for next Saturday.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where do Milo and Grandad find the tin box?",
+       "options": [
+        "In the back room of the town museum",
+        "In Grandad's attic",
+        "On a ship",
+        "Under the harbour"
+       ],
+       "answer": "In the back room of the town museum",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, in which town was Ada Finch born?",
+       "options": [],
+       "answer": "Harrowby",
+       "accept": [
+        "harrowby"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, on what date was Ada Finch born?",
+       "options": [],
+       "answer": "12th May 1868",
+       "accept": [
+        "12 May 1868",
+        "12th of May 1868",
+        "May 12 1868"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Ada's first job at sea?",
+       "options": [
+        "Ship's cook",
+        "Captain",
+        "Fisherman",
+        "Map maker"
+       ],
+       "answer": "Ship's cook",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the name of Ada's ship?",
+       "options": [],
+       "answer": "the Kestrel",
+       "accept": [
+        "Kestrel"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which of these was NOT inside the tin box?",
+       "options": [
+        "A map of the world",
+        "Five notebooks",
+        "A brass compass",
+        "A photograph"
+       ],
+       "answer": "A map of the world",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Grandad say explorers wrote journals?",
+       "options": [
+        "So people at home would know what they had seen",
+        "To sell them to museums",
+        "Because they were bored",
+        "To send letters to the king"
+       ],
+       "answer": "So people at home would know what they had seen",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Grandad wants to read only one journal every Saturday?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: Leaving Port Merrow",
+     "synopsis": "The first journal describes the Kestrel setting sail from Port Merrow in March 1906 and a frightening storm on the fourth day.",
+     "text": "The next Saturday, Milo and Grandad sat by the museum window and read the first journal aloud, taking turns.\n\"3rd March 1906, Port Merrow. Cold and bright. We have loaded forty barrels of fresh water, salted fish, oats, and enough lamp oil for three months. My crew is eleven people, and every one of them has sailed with me before. Our aim is to reach the Whitecap Islands in the far north and draw the first true map of their coast.\"\nMilo stopped. \"The first true map? Didn't anyone know what they looked like?\"\n\"Only roughly,\" said Grandad. \"Sailors had seen them from far away. Nobody had walked along the shore and measured it.\"\nMilo read on. \"4th March 1906. We left the harbour at dawn with the tide. The whole town came to wave. My mother gave me a jar of plum jam and told me to come home thinner but wiser.\"\nGrandad laughed. \"That sounds like a Harrowby mother.\"\nThe next entries were short: good wind, a pod of whales, a seagull that stole a biscuit from the cook. Then the handwriting changed. It was bigger and rushed, as if the pen had been shaking.\n\"7th March 1906. Storm since midnight. Waves taller than the mast. We tied ourselves to the rails so that nobody would be washed overboard. The young sailor Tobias was sick all night, but he never let go of the rope. By noon the wind dropped. We have lost two barrels of water but no people. I thank the sea for that.\"\nMilo looked up. \"She thanked the sea? Even after it nearly sank them?\"\n\"Explorers respected the sea,\" said Grandad. \"It could carry them or it could swallow them. Ada knew that better than most.\"\nMilo copied the three dates into his own notebook: 3rd March, 4th March, 7th March. He was beginning to feel like an explorer himself.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, from which port did the Kestrel set sail?",
+       "options": [],
+       "answer": "Port Merrow",
+       "accept": [
+        "Merrow"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many people were in Ada's crew?",
+       "options": [
+        "Eleven",
+        "Seven",
+        "Twenty",
+        "Forty"
+       ],
+       "answer": "Eleven",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which islands was Ada trying to reach?",
+       "options": [],
+       "answer": "the Whitecap Islands",
+       "accept": [
+        "Whitecap Islands",
+        "Whitecap"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Ada's mother give her?",
+       "options": [
+        "A jar of plum jam",
+        "A new compass",
+        "A warm coat",
+        "A map"
+       ],
+       "answer": "A jar of plum jam",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, on which date did the storm happen?",
+       "options": [
+        "7th March 1906",
+        "3rd March 1906",
+        "4th March 1906",
+        "12th May 1906"
+       ],
+       "answer": "7th March 1906",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, put these in order. Which happened FIRST?",
+       "options": [
+        "They loaded barrels of water",
+        "They left the harbour at dawn",
+        "They saw a pod of whales",
+        "The storm began"
+       ],
+       "answer": "They loaded barrels of water",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was Ada's handwriting bigger and rushed on 7th March?",
+       "options": [
+        "She was writing during or just after a frightening storm",
+        "She had a new pen",
+        "She was in a good mood",
+        "Her glasses were broken"
+       ],
+       "answer": "She was writing during or just after a frightening storm",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Ada thanked the sea after the storm?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Whitecap Islands",
+     "synopsis": "Ada reaches the Whitecap Islands and begins mapping the coast, with Milo using her dates to work out how long the journey took.",
+     "text": "The second journal had a picture of a mountain glued inside the cover, drawn in pencil. Underneath, Ada had written: The view from the ship, 19th March 1906.\n\"19th March 1906. Land! At first light, the lookout shouted from the top of the mast. Three islands, white with snow, rising out of a grey sea. The tallest peak I have named Mount Merrow, after our home port. The air smells of ice and salt.\"\n\"How long did it take them to get there?\" asked Grandad, with a twinkle in his eye.\nMilo checked his notebook. \"They left on the 4th of March and saw land on the 19th. So… fifteen days.\"\n\"Spot on. You're reading like a real historian.\"\nMilo turned the page. \"21st March 1906. We rowed ashore at a small bay with black stones. I have called it Kettle Bay because the steam from our cooking pot was the only warm thing for miles. We set up two tents and a flagpole. Tomorrow we begin to measure the coast.\"\nThe entries after that were full of numbers. Ada and her crew walked along the shore every day with a long chain to measure distances. Each evening she drew what they had measured. A small sketch of the coastline grew a little bigger on every page, like a puzzle being finished piece by piece.\n\"30th March 1906. Nine days of measuring. Fourteen miles of coast drawn. Tobias found a nest of eider ducks and did not take a single egg, because I told him the mothers needed them more than we did. He is becoming a good explorer.\"\nMilo traced the little map with his finger. \"She was really patient.\"\n\"Mapping is slow work,\" said Grandad. \"But a good map can keep sailors safe for a hundred years.\"\nMilo noticed that Ada's handwriting was neat again. The storm was far behind them now.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, on what date did the crew first see the Whitecap Islands?",
+       "options": [],
+       "answer": "19th March 1906",
+       "accept": [
+        "19 March 1906",
+        "19th March",
+        "19 March"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many islands did the lookout see?",
+       "options": [
+        "Three",
+        "Two",
+        "Five",
+        "One"
+       ],
+       "answer": "Three",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what did Ada name the tallest peak?",
+       "options": [],
+       "answer": "Mount Merrow",
+       "accept": [
+        "Merrow"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what did Ada call the bay where they rowed ashore?",
+       "options": [],
+       "answer": "Kettle Bay",
+       "accept": [
+        "Kettle"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many days did the journey from the harbour to the islands take?",
+       "options": [
+        "Fifteen",
+        "Nine",
+        "Nineteen",
+        "Four"
+       ],
+       "answer": "Fifteen",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the crew use to measure distances along the shore?",
+       "options": [
+        "A long chain",
+        "A ruler",
+        "A rope ladder",
+        "A telescope"
+       ],
+       "answer": "A long chain",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tobias leaving the eggs alone tell us about him?",
+       "options": [
+        "He is learning to respect nature",
+        "He does not like eggs",
+        "He is scared of ducks",
+        "He is lazy"
+       ],
+       "answer": "He is learning to respect nature",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Ada named places after things from home and from daily life?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Missing Page",
+     "synopsis": "Milo discovers that a page is missing from the third journal and uses the dates around it to work out what might have happened.",
+     "text": "The third journal began cheerfully. \"2nd April 1906. Sunshine at last. We reached the second island by rowing boat and found hot springs bubbling between the rocks. The crew took turns warming their feet.\"\nMilo read on happily until he turned a page and stopped. \"Grandad, there's a page missing.\"\nGrandad leaned over. Someone had torn a page out neatly, close to the stitching. The entry before it was dated 5th April. The entry after it was dated 9th April.\n\"So we don't know what happened on the 6th, 7th and 8th,\" Milo said. \"That's three whole days.\"\n\"Then let's be detectives,\" said Grandad. \"What clues does the next entry give us?\"\nMilo read slowly. \"9th April 1906. Back at Kettle Bay. Tobias's ankle is strapped and he is cross about it. We will not try the ice bridge again. I have marked it on the map as DANGER, and I hope every captain who reads this map will listen.\"\nMilo thought hard. \"An ice bridge... a strapped ankle... a danger sign. I think they tried to cross some ice, and Tobias slipped and hurt his foot.\"\n\"That's a good inference,\" said Grandad. \"You used the clues on the page to work out something the writer didn't tell us directly.\"\n\"But why would Ada tear the page out?\"\nGrandad shrugged. \"Perhaps she wrote it in a panic and was embarrassed later. Perhaps the page got wet and she threw it away. We may never know for sure. Historians have to be honest about what they don't know.\"\nMilo found the map in the back of the journal. On a narrow strip between two islands, in red ink, was the word DANGER and a tiny drawing of a cracked line.\nHe wrote in his notebook: 6th to 8th April: missing. Probably an accident on the ice bridge. Then he added one more word: probably. A good detective, he decided, was careful with that word.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the crew find on the second island?",
+       "options": [
+        "Hot springs",
+        "A village",
+        "A shipwreck",
+        "A cave of bats"
+       ],
+       "answer": "Hot springs",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the date of the entry just BEFORE the missing page?",
+       "options": [],
+       "answer": "5th April",
+       "accept": [
+        "5 April",
+        "5th April 1906",
+        "5 April 1906"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which days are missing from the journal?",
+       "options": [
+        "6th, 7th and 8th April",
+        "2nd to 5th April",
+        "9th and 10th April",
+        "19th to 21st March"
+       ],
+       "answer": "6th, 7th and 8th April",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what had happened to Tobias by 9th April?",
+       "options": [
+        "His ankle was strapped",
+        "He had gone home",
+        "He had found treasure",
+        "He had become captain"
+       ],
+       "answer": "His ankle was strapped",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what word did Ada write on the map in red ink?",
+       "options": [],
+       "answer": "DANGER",
+       "accept": [
+        "danger"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Milo infer happened on the missing days?",
+       "options": [
+        "Tobias hurt his foot crossing an ice bridge",
+        "The ship sank",
+        "They found gold",
+        "A storm destroyed the tents"
+       ],
+       "answer": "Tobias hurt his foot crossing an ice bridge",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Milo add the word \"probably\" to his notes?",
+       "options": [
+        "Because he cannot be completely sure what happened",
+        "Because Grandad told him to write neatly",
+        "Because he likes long words",
+        "Because Ada used it"
+       ],
+       "answer": "Because he cannot be completely sure what happened",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Ada might have torn the page out of her journal?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Long Way Home",
+     "synopsis": "The fourth journal follows the Kestrel home in May 1906, including a surprise visit to a fishing village where Ada swaps maps for food.",
+     "text": "\"This one's thinner,\" said Milo, holding up the fourth journal. \"Maybe they were too tired to write much.\"\n\"Or they were too busy sailing,\" said Grandad. \"Let's see.\"\n\"1st May 1906. The map of the Whitecap coast is finished: thirty-one miles, three islands, nine bays. We sail for home tomorrow. The crew sang all evening. Tobias, who can now walk without a stick, sang loudest.\"\nMilo grinned. He was glad Tobias's ankle had healed.\n\"2nd May 1906. Left Kettle Bay. I looked back until Mount Merrow was only a white dot.\"\nThe next entries described fog so thick that the crew could not see the front of their own ship, and a week of calm when there was no wind at all. Food began to run low. Then came a happier entry.\n\"14th May 1906. We anchored at the fishing village of Sallowmouth. The people here had never seen a ship from so far south. I traded a copy of our new map for fresh bread, eggs and a sack of potatoes. The headwoman said the map would help their boats avoid the rocks near the islands. It is the best trade I have ever made.\"\n\"She gave away her map?\" Milo asked, surprised. \"After all that work?\"\n\"A copy,\" said Grandad. \"And think about it. What good is a map if it stays in a drawer? Ada wanted it to be useful.\"\nMilo nodded slowly. He flipped forward. \"20th May 1906. Harrowby in sight. Someone on the harbour wall is waving a red scarf. I think it is my mother.\"\nMilo closed the journal and counted on his fingers. \"They left on the 4th of March and got home on the 20th of May. That's about two and a half months away.\"\n\"Eleven weeks,\" said Grandad. \"And every day written down.\"\nMilo looked at the brass compass on the table. It suddenly felt much heavier, full of all those miles.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many bays were on the finished map?",
+       "options": [
+        "Nine",
+        "Three",
+        "Thirty-one",
+        "Eleven"
+       ],
+       "answer": "Nine",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, on what date did the Kestrel leave Kettle Bay for home?",
+       "options": [],
+       "answer": "2nd May 1906",
+       "accept": [
+        "2 May 1906",
+        "2nd May",
+        "2 May"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the name of the fishing village where they anchored?",
+       "options": [],
+       "answer": "Sallowmouth",
+       "accept": [
+        "sallowmouth"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Ada trade for bread, eggs and potatoes?",
+       "options": [
+        "A copy of her new map",
+        "The brass compass",
+        "Lamp oil",
+        "Her red scarf"
+       ],
+       "answer": "A copy of her new map",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which of these happened LAST?",
+       "options": [
+        "Harrowby came into sight",
+        "They anchored at Sallowmouth",
+        "They sailed through thick fog",
+        "They left Kettle Bay"
+       ],
+       "answer": "Harrowby came into sight",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, about how long was the whole voyage?",
+       "options": [
+        "Eleven weeks",
+        "Eleven days",
+        "Six months",
+        "One year"
+       ],
+       "answer": "Eleven weeks",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Ada call the map trade \"the best trade I have ever made\"?",
+       "options": [
+        "Her map would help keep the village's boats safe",
+        "She got a lot of money",
+        "She wanted to get rid of the map",
+        "The potatoes were delicious"
+       ],
+       "answer": "Her map would help keep the village's boats safe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the person on the harbour wall was waving a red scarf?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Last Journal",
+     "synopsis": "The final journal is different: it is written years later, when Ada is older, and tells what she did with the rest of her life.",
+     "text": "The fifth journal had a blue cover instead of a brown one, and the writing inside was shakier.\n\"This was written much later,\" said Grandad, pointing to the first date. \"Look: 1st January 1930.\"\nMilo did the sum in his head. \"If she was born in 1868, she was sixty-one, nearly sixty-two.\"\n\"Exactly. Let's hear what she says.\"\n\"1st January 1930. A new year, and I am an old woman with too many memories and not enough shelves. My granddaughter asked me today to tell her the story of my life in order, from the beginning. So I shall write it here, simply, so that it does not get muddled.\"\nWhat followed was a list. Milo read it slowly, and Grandad wrote each line on a sheet of paper.\n\"1868: born in Harrowby. 1885: first went to sea as a cook. 1898: became first mate, the second in command. 1905: became captain of the Kestrel. 1906: mapped the Whitecap Islands. 1912: taught navigation at the harbour school. 1924: gave the Kestrel to the town as a training ship for young sailors.\"\n\"She taught other people,\" said Milo. \"So they could be explorers too.\"\n\"That's right. And the Kestrel trained sailors for many years after that.\"\nThe last entry in the journal was short.\n\"I have one wish left. I would like the town to keep a small museum, so that children can see that people from a little place like Harrowby can go a very long way.\"\nMilo looked around the room: the fishing nets, the dusty glass cases, the old photographs on the walls. Then he looked at Grandad.\n\"Is that why this museum exists?\"\nGrandad nodded. \"It opened in 1931, a year after she wrote that. Ada didn't live to see the opening day, but her granddaughter cut the ribbon.\"\nMilo was quiet for a long time. Then he said, \"We should finish what she started.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the date of the first entry in the fifth journal?",
+       "options": [],
+       "answer": "1st January 1930",
+       "accept": [
+        "1 January 1930",
+        "1st Jan 1930"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who asked Ada to tell the story of her life in order?",
+       "options": [
+        "Her granddaughter",
+        "Her mother",
+        "Tobias",
+        "The headwoman"
+       ],
+       "answer": "Her granddaughter",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, in which year did Ada become captain of the Kestrel?",
+       "options": [],
+       "answer": "1905",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Ada do in 1912?",
+       "options": [
+        "Taught navigation at the harbour school",
+        "Mapped the Whitecap Islands",
+        "Went to sea as a cook",
+        "Opened the museum"
+       ],
+       "answer": "Taught navigation at the harbour school",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which event in Ada's life came FIRST?",
+       "options": [
+        "Becoming first mate",
+        "Becoming captain",
+        "Teaching navigation",
+        "Giving the Kestrel to the town"
+       ],
+       "answer": "Becoming first mate",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, in which year did the museum open?",
+       "options": [],
+       "answer": "1931",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Ada want the town to have a museum?",
+       "options": [
+        "To show children from a small place that they can go far",
+        "To store her old fishing nets",
+        "To make money from visitors",
+        "Because her granddaughter wanted a job"
+       ],
+       "answer": "To show children from a small place that they can go far",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "What do you think Milo means when he says, \"We should finish what she started\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Ada Finch Day",
+     "synopsis": "Milo uses everything he has learned to make a timeline of Ada's life for a new museum display, which opens on her birthday.",
+     "text": "For the next three weeks, Milo spent every Saturday at the museum. He and Grandad cleared out a glass case near the front door, polished the brass compass until it shone and pinned the faded photograph of Ada on a dark green board.\n\"Every good display tells a story,\" said Grandad. \"What story do you want to tell?\"\nMilo knew straight away. \"Her life, in order. A timeline. Then anyone can follow it, even little children.\"\nHe cut a long strip of card and drew a line across it. At the left end he wrote 1868 and at the right end 1931. Then, using his notebook and Ada's own list, he added every important event in the right place: her birth, her first voyage as a cook, becoming first mate, becoming captain, the Whitecap voyage, teaching at the harbour school, giving away the Kestrel and the opening of the museum.\nUnder 1906, he added a small box with extra details from the journals: Left Port Merrow 4th March. Storm 7th March. Saw land 19th March. Home 20th May.\n\"You've used her journals like a real biographer,\" said Grandad. \"A biographer is someone who writes the true story of another person's life.\"\n\"I left the missing page as a question mark,\" Milo said. \"Because we don't really know.\"\n\"That,\" said Grandad, \"is the most honest thing on the whole board.\"\nThey opened the new display on 12th May, Ada's birthday. Children from Milo's school came, and so did people from the harbour. A girl in Year 2 asked who Tobias was. An old fisherman said his grandfather had trained on the Kestrel.\nAt the end of the day, Grandad handed Milo the green tin box. It was empty now, but it was clean, and the lid opened easily.\n\"What's this for?\" Milo asked.\n\"For your journals,\" said Grandad. \"Every explorer needs one.\"\nThat night, Milo wrote his first entry: 12th May. Harrowby. Today I told someone's story. Tomorrow, I start my own.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many weeks did Milo spend preparing the display?",
+       "options": [
+        "Three",
+        "One",
+        "Five",
+        "Eleven"
+       ],
+       "answer": "Three",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which two years are at the ends of Milo's timeline?",
+       "options": [
+        "1868 and 1931",
+        "1885 and 1906",
+        "1906 and 1930",
+        "1868 and 1906"
+       ],
+       "answer": "1868 and 1931",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, on what date did the new display open?",
+       "options": [],
+       "answer": "12th May",
+       "accept": [
+        "12 May",
+        "May 12",
+        "12th of May"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was that date chosen?",
+       "options": [
+        "It was Ada's birthday",
+        "It was the day the ship came home",
+        "It was the first day of the holidays",
+        "It was Grandad's birthday"
+       ],
+       "answer": "It was Ada's birthday",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Grandad say a biographer is?",
+       "options": [
+        "Someone who writes the true story of another person's life",
+        "Someone who draws maps of the coast",
+        "Someone who looks after a museum",
+        "Someone who sails a ship"
+       ],
+       "answer": "Someone who writes the true story of another person's life",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Milo show the missing page on the timeline?",
+       "options": [
+        "As a question mark",
+        "With a red DANGER sign",
+        "He left it out completely",
+        "With a drawing of the ice bridge"
+       ],
+       "answer": "As a question mark",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Grandad give Milo the empty tin box?",
+       "options": [
+        "So Milo can keep his own journals in it",
+        "Because the museum doesn't need it",
+        "To store the compass",
+        "As a lunch box"
+       ],
+       "answer": "So Milo can keep his own journals in it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "What do you think Milo means when he writes, \"Tomorrow, I start my own\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
