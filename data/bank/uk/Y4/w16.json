@@ -2264,5 +2264,909 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Caderno Verde das Lendas",
+   "premise": "Lia e o irmão Davi viajam com a Tia Rosa, uma contadora de histórias, para recolher lendas do Brasil. Na Amazônia ouvem sobre a Iara e o Boto; no interior de Minas, sobre a Mula sem cabeça, e vão comparando tudo num caderno verde.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O canto no rio",
+     "synopsis": "Lia e Davi viajam de barco pela Amazônia com a Tia Rosa e ouvem do barqueiro a lenda da Iara. À noite, um som bonito no rio deixa Davi assustado, mas tem uma explicação.",
+     "text": "Lia tinha nove anos e um caderno de capa verde onde anotava tudo. O irmão, Davi, tinha oito e não largava a lanterna. Naquelas férias, os dois foram viajar com a Tia Rosa, que era contadora de histórias e queria recolher lendas de diferentes regiões do Brasil.\nA primeira parada foi a Amazônia. Eles subiram num barco de madeira que descia um rio largo e escuro, com a floresta dos dois lados. O barqueiro, seu Dico, tinha mãos fortes e uma risada que ecoava na água.\n— Vocês já ouviram falar da Iara? — perguntou ele, quando o sol começou a se pôr.\nAs crianças balançaram a cabeça. Seu Dico contou que a Iara era a Mãe-d'Água, uma moça muito bonita, metade mulher e metade peixe, com cabelos longos e escuros. Ela vivia no fundo dos rios e, no fim da tarde, sentava numa pedra para pentear os cabelos e cantar.\n— O canto dela é tão lindo que os pescadores ficam encantados — explicou ele. — Quem segue a voz é levado para o fundo do rio e nunca mais volta.\nLia anotou tudo no caderno: \"Iara — Região Norte — vive nos rios — metade mulher, metade peixe — encanta com o canto.\"\nNaquela noite, deitado na rede, Davi ouviu um som fino e bonito vindo da água. Ele apertou a lanterna e acordou a irmã.\n— Lia! É a Iara cantando!\nOs dois foram até a beira do barco, devagar. Davi apontou a lanterna para o rio. Lá estava seu Dico, sentado na proa, tocando uma flauta de bambu.\n— Desculpem — riu o barqueiro. — Toco para espantar o sono.\nDavi ficou vermelho, mas depois riu também. Antes de dormir, Lia escreveu mais uma linha: \"Às vezes, um som de verdade faz a gente lembrar de uma lenda.\"",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era a profissão da Tia Rosa?",
+       "options": [
+        "Contadora de histórias",
+        "Professora de ciências",
+        "Pescadora",
+        "Médica"
+       ],
+       "answer": "Contadora de histórias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que região do Brasil foi a primeira parada da viagem?",
+       "options": [
+        "Amazônia",
+        "Litoral do Sul",
+        "Sertão do Nordeste",
+        "Pantanal"
+       ],
+       "answer": "Amazônia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o nome do barqueiro?",
+       "options": [],
+       "answer": "Dico",
+       "accept": [
+        "seu Dico",
+        "Seu Dico"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como seu Dico descreveu a Iara?",
+       "options": [
+        "Metade mulher e metade peixe",
+        "Um cavalo sem cabeça",
+        "Um peixe gigante com chifres",
+        "Uma velha que mora na mata"
+       ],
+       "answer": "Metade mulher e metade peixe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que acontece, segundo a lenda, com quem segue o canto da Iara?",
+       "options": [
+        "É levado para o fundo do rio",
+        "Fica rico",
+        "Vira um peixe dourado",
+        "Ganha uma voz bonita"
+       ],
+       "answer": "É levado para o fundo do rio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de onde vinha de verdade o som que Davi ouviu à noite?",
+       "options": [
+        "Da flauta de bambu de seu Dico",
+        "De um pássaro da floresta",
+        "Do rádio do barco",
+        "De um peixe pulando"
+       ],
+       "answer": "Da flauta de bambu de seu Dico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi ficou vermelho?",
+       "options": [
+        "Porque ficou com vergonha de ter achado que era a Iara",
+        "Porque pegou muito sol",
+        "Porque estava com febre",
+        "Porque correu muito"
+       ],
+       "answer": "Porque ficou com vergonha de ter achado que era a Iara",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Davi pensou logo que o som era a Iara?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre o que ele tinha ouvido no fim da tarde.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O rapaz de chapéu branco",
+     "synopsis": "Numa festa da comunidade ribeirinha, as crianças ouvem a lenda do Boto e desconfiam de um moço de roupa branca e chapéu. No fim, descobrem quem ele é.",
+     "text": "No dia seguinte, o barco parou numa comunidade ribeirinha, com casas de madeira sobre palafitas. Era noite de festa: havia fogueira, bandeirinhas e um forró animado num barracão perto do rio.\nDona Benta Maria, uma senhora de tranças brancas, sentou ao lado das crianças e contou a lenda do Boto.\n— O boto-cor-de-rosa vive nos rios da Amazônia. Mas, em noite de festa, ele sai da água e vira um rapaz elegante, todo de branco, com um chapéu na cabeça.\n— Por que o chapéu? — perguntou Davi.\n— Para esconder o furinho que o boto tem no alto da cabeça, por onde respira — explicou ela. — Ele dança muito bem, encanta as moças e, antes de o sol nascer, volta correndo para o rio e vira boto de novo.\nLia escreveu depressa: \"Boto — Região Norte — vive nos rios — vira rapaz de branco — encanta dançando — nunca tira o chapéu.\"\nPouco depois, entrou no barracão um moço de camisa branca e chapéu de palha claro. Dançava tão bem que todo mundo abriu roda. Davi cutucou a irmã.\n— É ele! E não tira o chapéu!\nAs crianças passaram a festa vigiando o moço. Quando a música parou, ele subiu no palco e pegou uma sanfona. Então tirou o chapéu para enxugar a testa. Não havia furinho nenhum, só um cabelo todo bagunçado.\n— Boa noite! Eu sou o Joca, o sanfoneiro! — disse ele, e a festa recomeçou.\nTia Rosa riu e explicou que muitas pessoas da região se vestem de branco nas festas por causa do calor. Lia fechou o caderno, satisfeita. Agora tinha duas lendas das águas, e uma ideia começava a nascer na cabeça dela.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como eram as casas da comunidade ribeirinha?",
+       "options": [
+        "De madeira, sobre palafitas",
+        "De tijolo, com dois andares",
+        "De pedra, no alto do morro",
+        "De palha, no meio do deserto"
+       ],
+       "answer": "De madeira, sobre palafitas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quem contou a lenda do Boto?",
+       "options": [],
+       "answer": "Dona Benta Maria",
+       "accept": [
+        "Benta Maria"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que o boto se transforma em noite de festa?",
+       "options": [
+        "Num rapaz elegante vestido de branco",
+        "Numa moça de cabelos longos",
+        "Num pássaro colorido",
+        "Num cavalo veloz"
+       ],
+       "answer": "Num rapaz elegante vestido de branco",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o Boto usa chapéu, segundo a lenda?",
+       "options": [
+        "Para esconder o furinho por onde respira",
+        "Para se proteger do sol",
+        "Para parecer mais alto",
+        "Para guardar peixes"
+       ],
+       "answer": "Para esconder o furinho por onde respira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quando o Boto volta para o rio?",
+       "options": [
+        "Antes de o sol nascer",
+        "Ao meio-dia",
+        "Quando chove",
+        "Depois de uma semana"
+       ],
+       "answer": "Antes de o sol nascer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que instrumento o moço de chapéu tocou no palco?",
+       "options": [],
+       "answer": "sanfona",
+       "accept": [
+        "a sanfona",
+        "acordeão"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que as crianças desconfiaram do moço?",
+       "options": [
+        "Ele estava de branco, dançava bem e não tirava o chapéu",
+        "Ele tinha saído do rio molhado",
+        "Ele falava com os peixes",
+        "Ele não sabia dançar"
+       ],
+       "answer": "Ele estava de branco, dançava bem e não tirava o chapéu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Que ideia você acha que estava nascendo na cabeça de Lia no fim do capítulo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no caderno dela e nas duas lendas que ela já tinha.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A tabela das águas",
+     "synopsis": "Lia monta no caderno uma tabela para comparar a Iara e o Boto. Ela e Davi descobrem semelhanças e diferenças entre os dois seres lendários.",
+     "text": "Na viagem de volta pelo rio, choveu a manhã inteira. Sem poder ficar na proa, Lia abriu o caderno verde em cima de um caixote e desenhou uma tabela com três colunas: \"O que comparar\", \"Iara\" e \"Boto\".\n— Para que isso? — perguntou Davi, bocejando.\n— Para ver no que eles são parecidos e no que são diferentes — respondeu ela. — A Tia Rosa disse que comparar ajuda a entender as lendas.\nOs dois começaram pela primeira linha: \"Onde vive\". Nas duas colunas, Lia escreveu \"nos rios da Amazônia\".\n— Igual! — disse Davi, já interessado.\nNa linha \"Como é\", a resposta mudou. A Iara era metade mulher e metade peixe. O Boto era um animal de verdade, o boto-cor-de-rosa, que virava um rapaz.\n— Então a Iara é sempre meio peixe, e o Boto muda de forma — concluiu Davi.\nNa linha \"Como encanta as pessoas\", Lia pensou um pouco. A Iara encantava com o canto. O Boto encantava dançando nas festas.\n— Os dois encantam, mas de jeitos diferentes — disse ela, sublinhando a palavra \"encantam\".\nPor último, a linha \"Quando aparece\". A Iara cantava no fim da tarde, sentada numa pedra. O Boto aparecia em noites de festa e sumia antes do amanhecer.\nTia Rosa espiou por cima do ombro da sobrinha e sorriu.\n— Vocês descobriram uma coisa importante. Muitas lendas da Amazônia falam dos rios, porque o rio é o centro da vida das pessoas de lá: é estrada, é comida, é casa.\nDavi olhou para a água barrenta lá fora. De repente, o rio parecia ainda maior e mais cheio de segredos. Lia deixou duas linhas em branco no fim da tabela. Ainda faltava uma lenda, e ela vinha de bem longe dali.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que as crianças não puderam ficar na proa do barco?",
+       "options": [
+        "Porque choveu a manhã inteira",
+        "Porque estava muito quente",
+        "Porque o barco estava parado",
+        "Porque estavam de castigo"
+       ],
+       "answer": "Porque choveu a manhã inteira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantas colunas tinha a tabela de Lia?",
+       "options": [
+        "Três",
+        "Duas",
+        "Quatro",
+        "Cinco"
+       ],
+       "answer": "Três",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que a Iara e o Boto são iguais?",
+       "options": [
+        "Os dois vivem nos rios da Amazônia",
+        "Os dois são metade peixe",
+        "Os dois aparecem de dia",
+        "Os dois usam chapéu"
+       ],
+       "answer": "Os dois vivem nos rios da Amazônia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a Iara encanta as pessoas?",
+       "options": [
+        "Com o canto",
+        "Com a dança",
+        "Com presentes",
+        "Com fogo"
+       ],
+       "answer": "Com o canto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como o Boto encanta as pessoas?",
+       "options": [
+        "Dançando nas festas",
+        "Cantando numa pedra",
+        "Pulando alto no rio",
+        "Contando histórias"
+       ],
+       "answer": "Dançando nas festas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a Tia Rosa, por que muitas lendas da Amazônia falam dos rios?",
+       "options": [
+        "Porque o rio é o centro da vida das pessoas de lá",
+        "Porque lá não existem florestas",
+        "Porque os rios são pequenos",
+        "Porque ninguém mora perto dos rios"
+       ],
+       "answer": "Porque o rio é o centro da vida das pessoas de lá",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lia deixou duas linhas em branco no fim da tabela?",
+       "options": [
+        "Porque ainda faltava comparar outra lenda",
+        "Porque o lápis acabou",
+        "Porque Davi pediu",
+        "Porque a tabela estava errada"
+       ],
+       "answer": "Porque ainda faltava comparar outra lenda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Você acha que fazer uma tabela é um bom jeito de comparar lendas? Por quê?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que Lia e Davi descobriram ao preencher as linhas.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A lenda que galopa",
+     "synopsis": "A viagem continua num sítio do interior do Sudeste, onde Vô Tonico conta a lenda da Mula sem cabeça. As crianças percebem que ela é bem diferente das lendas das águas.",
+     "text": "Depois da Amazônia, Tia Rosa levou as crianças para um sítio no interior de Minas Gerais. Ali não havia rio largo, e sim morros, pastos, um curral e uma igrejinha branca lá no alto.\nO dono do sítio era o Vô Tonico, um senhor de bigode grosso que fazia o melhor pão de queijo do mundo, segundo Davi. Depois do jantar, com todos em volta do fogão a lenha, ele baixou a voz.\n— Aqui no interior, a lenda mais conhecida é a da Mula sem cabeça.\nDavi chegou mais perto da irmã.\n— Dizem que ela era uma mulher que recebeu um castigo e virou uma mula — continuou o avô. — No lugar da cabeça, sai fogo do pescoço. Ela galopa pelos campos nas noites de quinta para sexta-feira, e as ferraduras fazem um barulho de metal que assusta todo mundo.\n— E dá para parar ela? — perguntou Lia.\n— Contam que, se alguém tirar o freio de ferro que ela usa, o encanto se quebra e ela volta a ser gente.\nLia abriu o caderno na tabela e escreveu uma nova coluna: \"Mula sem cabeça — Sudeste e outras regiões — vive nos campos — mula com fogo no lugar da cabeça — assusta, não encanta — noite de quinta para sexta.\"\n— Essa é bem diferente — comentou ela. — A Iara e o Boto atraem as pessoas. A Mula faz todo mundo fugir.\n— E elas são da água, e essa é da terra — completou Davi.\nTia Rosa piscou para os dois.\n— Repararam no dia de hoje?\nAs crianças olharam o calendário pendurado na parede da cozinha. Era quinta-feira. Lá fora, o vento balançava as árvores, e Davi decidiu que dormiria com a lanterna acesa.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para onde Tia Rosa levou as crianças depois da Amazônia?",
+       "options": [
+        "Para um sítio no interior de Minas Gerais",
+        "Para uma praia do Nordeste",
+        "Para uma cidade no Sul",
+        "Para uma ilha no mar"
+       ],
+       "answer": "Para um sítio no interior de Minas Gerais",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chamava o dono do sítio?",
+       "options": [],
+       "answer": "Vô Tonico",
+       "accept": [
+        "Tonico"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que sai do pescoço da Mula sem cabeça?",
+       "options": [
+        "Fogo",
+        "Água",
+        "Fumaça colorida",
+        "Flores"
+       ],
+       "answer": "Fogo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que noites a Mula sem cabeça galopa?",
+       "options": [
+        "De quinta para sexta-feira",
+        "De sábado para domingo",
+        "Só no Natal",
+        "Em noites de chuva"
+       ],
+       "answer": "De quinta para sexta-feira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como se quebra o encanto da Mula, segundo o avô?",
+       "options": [
+        "Tirando o freio de ferro que ela usa",
+        "Cantando uma música",
+        "Jogando água nela",
+        "Dando pão de queijo para ela"
+       ],
+       "answer": "Tirando o freio de ferro que ela usa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual diferença Lia percebeu entre a Mula e as lendas das águas?",
+       "options": [
+        "A Iara e o Boto atraem; a Mula faz as pessoas fugirem",
+        "A Mula canta e a Iara dança",
+        "A Mula vive no rio e o Boto na terra",
+        "Não há diferença nenhuma"
+       ],
+       "answer": "A Iara e o Boto atraem; a Mula faz as pessoas fugirem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi decidiu dormir com a lanterna acesa?",
+       "options": [
+        "Porque era quinta-feira, a noite da Mula na lenda",
+        "Porque faltou luz no sítio",
+        "Porque queria ler",
+        "Porque tinha medo do escuro desde bebê"
+       ],
+       "answer": "Porque era quinta-feira, a noite da Mula na lenda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Tia Rosa perguntou às crianças se elas tinham reparado no dia de hoje?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que o avô disse sobre quando a Mula aparece.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Barulho de cascos",
+     "synopsis": "Na noite de quinta-feira, as crianças ouvem cascos de metal no pasto. Com a ajuda do Vô Tonico, descobrem que é a égua Estrela, que fugiu do curral.",
+     "text": "Já passava da meia-noite quando Davi acordou com um barulho lá fora: tlec, tlec, tlec. Era som de cascos batendo nas pedras do caminho, com um tilintar de metal.\n— Lia! — sussurrou ele. — A Mula sem cabeça!\nLia sentou na cama com o coração aos pulos. O barulho passou perto da janela e foi na direção do pasto. Ela respirou fundo e lembrou de uma coisa que a Tia Rosa sempre dizia: \"Primeiro a gente observa, depois a gente conclui.\"\n— Vamos olhar pela janela. Só olhar — decidiu ela.\nDavi acendeu a lanterna e apontou para fora. A luz mostrou um vulto grande andando no escuro. Tinha patas, rabo... e cabeça! Uma cabeça com uma mancha branca bem no meio da testa.\n— Tem cabeça — disse Lia, aliviada. — E não tem fogo nenhum.\nNesse momento, a porta da cozinha rangeu. Era o Vô Tonico, de chinelo e casaco por cima do pijama, segurando um lampião.\n— Ouvi a Estrela — resmungou ele. — Essa égua aprendeu a abrir a porteira do curral com o focinho!\nAs crianças pediram para ajudar. Vestiram os casacos e seguiram o avô até o pasto. Davi iluminava o caminho, e Lia segurava um balde de milho. Quando a égua ouviu o milho chacoalhar, veio trotando, e as ferraduras fizeram de novo aquele som de metal.\n— Foi esse o barulho que vocês ouviram — explicou o avô, rindo. — Ferradura em pedra.\nDe volta para a cama, Davi estava orgulhoso de ter ajudado. Lia abriu o caderno e escreveu: \"A lenda fala de ferraduras e de noite escura. Talvez as pessoas antigas também ouvissem cavalos no escuro e imaginassem coisas.\" Depois apagou a luz e dormiu sem medo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que barulho acordou Davi?",
+       "options": [
+        "Cascos batendo nas pedras do caminho",
+        "Um trovão",
+        "Um galo cantando",
+        "Uma porta batendo"
+       ],
+       "answer": "Cascos batendo nas pedras do caminho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que conselho da Tia Rosa Lia lembrou?",
+       "options": [
+        "Primeiro a gente observa, depois a gente conclui",
+        "Nunca saia da cama à noite",
+        "Sempre grite quando tiver medo",
+        "Feche os olhos e conte até dez"
+       ],
+       "answer": "Primeiro a gente observa, depois a gente conclui",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a lanterna mostrou na cabeça do animal?",
+       "options": [
+        "Uma mancha branca na testa",
+        "Uma chama de fogo",
+        "Um chapéu de palha",
+        "Um freio de ouro"
+       ],
+       "answer": "Uma mancha branca na testa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o nome da égua?",
+       "options": [],
+       "answer": "Estrela",
+       "accept": [
+        "a Estrela"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como a égua tinha fugido?",
+       "options": [
+        "Abriu a porteira do curral com o focinho",
+        "Pulou a cerca",
+        "Alguém esqueceu a porteira aberta",
+        "Quebrou a parede do curral"
+       ],
+       "answer": "Abriu a porteira do curral com o focinho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia usou para chamar a égua?",
+       "options": [
+        "Um balde de milho",
+        "Um apito",
+        "Uma cenoura",
+        "Uma corda"
+       ],
+       "answer": "Um balde de milho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia pensou sobre a origem da lenda?",
+       "options": [
+        "Que as pessoas antigas talvez ouvissem cavalos no escuro e imaginassem coisas",
+        "Que a Mula sem cabeça existe de verdade",
+        "Que o avô inventou a lenda naquela noite",
+        "Que a lenda veio da Amazônia"
+       ],
+       "answer": "Que as pessoas antigas talvez ouvissem cavalos no escuro e imaginassem coisas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia conseguiu dormir sem medo no fim do capítulo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que ela descobriu sobre o barulho.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O cartaz das três lendas",
+     "synopsis": "De volta à cidade, Lia e Davi preparam um cartaz para a feira de cultura da escola. Eles organizam as comparações e discutem como apresentar cada lenda.",
+     "text": "Quando as férias acabaram, a professora Marta anunciou a Feira de Cultura Brasileira. Cada dupla apresentaria um trabalho sobre o folclore. Lia e Davi estudavam na mesma escola e pediram para fazer juntos.\n— Já temos tudo no caderno verde! — disse Lia.\nNum sábado, espalharam uma cartolina enorme no chão da sala. Lia queria fazer uma tabela grande, igual à do caderno. Davi queria desenhar os três seres lendários bem coloridos.\n— Por que não os dois? — sugeriu Tia Rosa, que tinha vindo ajudar.\nEles dividiram a cartolina. Em cima, Davi desenhou a Iara numa pedra, penteando os cabelos; o Boto de chapéu branco, dançando; e a Mula sem cabeça galopando, com fogo saindo do pescoço. Embaixo, Lia fez a tabela com as linhas \"Onde vive\", \"Região\", \"Como é\", \"O que faz\" e \"Quando aparece\".\nEnquanto pintava, Davi parou de repente.\n— Lia, e se a gente colocar uma linha \"Atrai ou assusta?\"\n— Boa! — respondeu ela. — A Iara atrai, o Boto atrai e a Mula assusta.\nTia Rosa sugeriu mais uma coisa: um cantinho chamado \"O que essas lendas ensinam\". As crianças pensaram juntas. A Iara e o Boto lembravam que o rio pode ser perigoso e que é preciso respeitar a água. A Mula sem cabeça fazia as crianças do interior voltarem cedo para casa e não andarem sozinhas pelos campos à noite.\n— As lendas são como conselhos contados de um jeito divertido — resumiu Tia Rosa.\nNo fim da tarde, o cartaz estava pronto. Davi colou uma ferradura de papel prateado no canto, e Lia colou uma pequena flauta de papel, em homenagem ao seu Dico. Os dois olharam o trabalho, orgulhosos. Só faltava uma coisa: ensaiar a apresentação, e Davi tremia só de pensar em falar na frente da turma.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que evento a professora Marta anunciou?",
+       "options": [
+        "A Feira de Cultura Brasileira",
+        "Uma excursão ao zoológico",
+        "Um campeonato de futebol",
+        "Uma prova de matemática"
+       ],
+       "answer": "A Feira de Cultura Brasileira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde as crianças fizeram o cartaz?",
+       "options": [
+        "No chão da sala",
+        "Na escola",
+        "No sítio do avô",
+        "No barco"
+       ],
+       "answer": "No chão da sala",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como as crianças resolveram a diferença de ideias para o cartaz?",
+       "options": [
+        "Dividiram a cartolina: desenhos em cima e tabela embaixo",
+        "Tiraram a sorte",
+        "Fizeram só a tabela",
+        "Pediram para a professora escolher"
+       ],
+       "answer": "Dividiram a cartolina: desenhos em cima e tabela embaixo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que nova linha Davi sugeriu para a tabela?",
+       "options": [
+        "Atrai ou assusta?",
+        "Qual é a mais antiga?",
+        "Qual é a mais bonita?",
+        "Quem inventou?"
+       ],
+       "answer": "Atrai ou assusta?",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo as crianças, o que a Iara e o Boto lembram?",
+       "options": [
+        "Que o rio pode ser perigoso e é preciso respeitar a água",
+        "Que é bom dançar em festas",
+        "Que os peixes falam",
+        "Que não se deve cantar à noite"
+       ],
+       "answer": "Que o rio pode ser perigoso e é preciso respeitar a água",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lia colou uma flauta de papel no cartaz?",
+       "options": [
+        "Em homenagem ao seu Dico",
+        "Porque a Iara tocava flauta",
+        "Porque a professora pediu",
+        "Porque sobrou papel"
+       ],
+       "answer": "Em homenagem ao seu Dico",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Tia Rosa quis dizer com \"as lendas são como conselhos contados de um jeito divertido\"?",
+       "options": [
+        "Que as lendas ensinam cuidados de forma interessante",
+        "Que as lendas são sempre engraçadas",
+        "Que as lendas são verdadeiras",
+        "Que só adultos entendem lendas"
+       ],
+       "answer": "Que as lendas ensinam cuidados de forma interessante",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Que outro conselho você acha que uma lenda poderia ensinar às crianças? Explique.",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em perigos ou cuidados do dia a dia.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A lenda do caderno verde",
+     "synopsis": "Na Feira de Cultura, Davi vence o nervosismo e apresenta o cartaz com Lia. No final, a turma inventa junto uma lenda nova.",
+     "text": "No dia da feira, o pátio da escola estava cheio de cartazes, fantasias e cheiro de pipoca. Lia e Davi colocaram o cartaz num cavalete e esperaram a vez deles. Davi suava frio.\n— E se eu esquecer tudo? — cochichou ele.\n— Você não vai esquecer. Você viveu tudo isso — respondeu Lia. — É só contar como aconteceu.\nQuando a professora Marta chamou, Lia começou explicando a tabela. Mostrou que a Iara e o Boto são lendas da Região Norte, ligadas aos rios, e que a Mula sem cabeça é contada no interior de várias regiões, ligada aos campos.\nEntão foi a vez de Davi. Ele olhou para a turma, respirou fundo e contou a história da flauta de seu Dico, do moço de chapéu branco que era sanfoneiro e da égua Estrela galopando no escuro. A turma riu nas partes certas e ficou em silêncio nas partes de suspense. Davi nem percebeu que o nervosismo tinha ido embora.\n— Então vocês acham que as lendas não existem? — perguntou um colega, o Rafa.\nDavi pensou um pouco.\n— Acho que os seres não existem, mas as lendas existem, sim. Elas fazem parte da cultura do Brasil e mostram como as pessoas de cada lugar vivem e o que elas temem.\nA professora gostou tanto da resposta que propôs uma brincadeira: a turma inteira ia inventar uma lenda nova, sobre a própria escola. Em poucos minutos nasceu o \"Guardião do Caderno Verde\", um ser que vive na biblioteca, tem asas de papel e só aparece para quem anota as histórias que ouve.\nNa volta para casa, Tia Rosa abraçou os sobrinhos.\n— Agora vocês também são contadores de histórias.\nNaquela noite, Lia abriu o caderno numa página nova e escreveu o título com letras caprichadas: \"Próxima viagem: lendas do Sul.\" Davi, ao lado, já estava separando a lanterna.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Davi se sentia antes da apresentação?",
+       "options": [
+        "Nervoso",
+        "Entediado",
+        "Com sono",
+        "Bravo"
+       ],
+       "answer": "Nervoso",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que conselho Lia deu a Davi?",
+       "options": [
+        "É só contar como aconteceu",
+        "Leia tudo do papel",
+        "Fale bem rápido",
+        "Não olhe para a turma"
+       ],
+       "answer": "É só contar como aconteceu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo Lia, a que ambiente a Mula sem cabeça está ligada?",
+       "options": [
+        "Aos campos",
+        "Aos rios",
+        "Ao mar",
+        "Às cavernas"
+       ],
+       "answer": "Aos campos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual colega perguntou se as lendas existem?",
+       "options": [],
+       "answer": "Rafa",
+       "accept": [
+        "o Rafa"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Davi respondeu sobre as lendas?",
+       "options": [
+        "Os seres não existem, mas as lendas fazem parte da cultura",
+        "Todas as lendas são mentiras sem valor",
+        "Os seres lendários existem de verdade",
+        "Ele não sabia responder"
+       ],
+       "answer": "Os seres não existem, mas as lendas fazem parte da cultura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde vive o \"Guardião do Caderno Verde\" que a turma inventou?",
+       "options": [
+        "Na biblioteca",
+        "No pátio",
+        "No rio",
+        "No sítio do avô"
+       ],
+       "answer": "Na biblioteca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que Lia e Davi querem continuar pesquisando lendas?",
+       "options": [
+        "Lia escreveu \"Próxima viagem: lendas do Sul\" e Davi separou a lanterna",
+        "Eles jogaram o caderno fora",
+        "Eles disseram que nunca mais viajariam",
+        "Eles pediram outro cartaz"
+       ],
+       "answer": "Lia escreveu \"Próxima viagem: lendas do Sul\" e Davi separou a lanterna",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o nervosismo de Davi foi embora durante a apresentação?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre o conselho que Lia deu antes.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
