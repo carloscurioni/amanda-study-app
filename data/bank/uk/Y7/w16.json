@@ -1782,7 +1782,1856 @@
      "errors": []
     }
    ]
+  },
+  "math": {
+   "topic": "Fractions: equivalence, comparing and simplifying",
+   "questions": [
+    {
+     "id": "r1u7ckzsd5otuf",
+     "subject": "math",
+     "type": "num",
+     "q": "Write 6/8 in its simplest form.",
+     "options": [],
+     "answer": "3/4",
+     "accept": [],
+     "hint": "Find the biggest number that divides both 6 and 8.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xwtiuamypd6l",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which fraction is equivalent to 2/3?",
+     "options": [
+      "4/6",
+      "3/4",
+      "2/6",
+      "3/2"
+     ],
+     "answer": "4/6",
+     "accept": [],
+     "hint": "Multiply the numerator and denominator by the same number.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hds9tq1kefz22",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the missing numerator: 3/5 = ?/20",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "What do you multiply 5 by to get 20?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q9ndt917bfoy",
+     "subject": "math",
+     "type": "num",
+     "q": "Find the missing denominator: 7/9 = 28/?",
+     "options": [],
+     "answer": "36",
+     "accept": [],
+     "hint": "What was 7 multiplied by to make 28?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwaot23an7sjs",
+     "subject": "math",
+     "type": "short",
+     "q": "In the fraction 5/12, what is the number 5 called?",
+     "options": [],
+     "answer": "numerator",
+     "accept": [],
+     "hint": "It is the top number of the fraction.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb9zedf12x7ild",
+     "subject": "math",
+     "type": "num",
+     "q": "Write 15/35 in its simplest form.",
+     "options": [],
+     "answer": "3/7",
+     "accept": [],
+     "hint": "Both numbers are in the 5 times table.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jun1u7y5cqt7",
+     "subject": "math",
+     "type": "num",
+     "q": "Write 45/60 in its simplest form.",
+     "options": [],
+     "answer": "3/4",
+     "accept": [],
+     "hint": "Try dividing both numbers by 15.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r124kq3516vvs2b",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which fraction is larger: 3/5 or 5/8?",
+     "options": [
+      "3/5",
+      "5/8",
+      "They are equal"
+     ],
+     "answer": "5/8",
+     "accept": [],
+     "hint": "Rewrite both with a denominator of 40.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc1vwrkhjy5p",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which symbol makes this statement true? 7/10 __ 2/3",
+     "options": [
+      "<",
+      ">",
+      "="
+     ],
+     "answer": ">",
+     "accept": [],
+     "hint": "Use a common denominator of 30.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roh9mdi1q8w5i4",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the lowest common denominator of 1/4 and 1/6?",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "Find the smallest number in both the 4 and 6 times tables.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qviud839kymu",
+     "subject": "math",
+     "type": "mc",
+     "q": "Put these fractions in order from smallest to largest: 1/2, 2/5, 3/4",
+     "options": [
+      "2/5, 1/2, 3/4",
+      "1/2, 2/5, 3/4",
+      "3/4, 1/2, 2/5",
+      "2/5, 3/4, 1/2"
+     ],
+     "answer": "2/5, 1/2, 3/4",
+     "accept": [],
+     "hint": "Convert them all to twentieths.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ragauay15t8wow",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which fraction is NOT equivalent to 1/3?",
+     "options": [
+      "3/9",
+      "4/12",
+      "5/16",
+      "6/18"
+     ],
+     "answer": "5/16",
+     "accept": [],
+     "hint": "For each one, check whether the denominator is exactly 3 times the numerator.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfaoorp6jwp3z",
+     "subject": "math",
+     "type": "num",
+     "q": "Write 32/48 in its simplest form.",
+     "options": [],
+     "answer": "2/3",
+     "accept": [],
+     "hint": "The highest common factor of 32 and 48 is 16.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15dirtau1jy52",
+     "subject": "math",
+     "type": "mc",
+     "q": "Put these fractions in order from largest to smallest: 5/6, 3/4, 7/9",
+     "options": [
+      "5/6, 7/9, 3/4",
+      "7/9, 5/6, 3/4",
+      "5/6, 3/4, 7/9",
+      "3/4, 7/9, 5/6"
+     ],
+     "answer": "5/6, 7/9, 3/4",
+     "accept": [],
+     "hint": "Use a common denominator of 36.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1803yk09fl631",
+     "subject": "math",
+     "type": "num",
+     "q": "Which fraction lies exactly halfway between 1/4 and 1/2? Give your answer in its simplest form.",
+     "options": [],
+     "answer": "3/8",
+     "accept": [],
+     "hint": "Write both fractions as eighths first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq39ge81f5kb8e",
+     "subject": "math",
+     "type": "open",
+     "q": "Nadia says 4/9 is bigger than 3/7 because 4 is bigger than 3. Is her answer correct? Is her reasoning correct? Explain.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare the fractions using a common denominator, then think about whether comparing numerators alone always works.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Verbo: conceito, pessoa e número",
+   "questions": [
+    {
+     "id": "r1fan6t4pt5ive",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas palavras é um verbo?",
+     "options": [
+      "correr",
+      "rápido",
+      "mesa",
+      "feliz"
+     ],
+     "answer": "correr",
+     "accept": [],
+     "hint": "Verbo indica ação, estado ou fenômeno e pode ser conjugado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17fgm7urtbuyj",
+     "subject": "pt",
+     "type": "short",
+     "q": "Na frase \"Nós cantamos no coral\", qual é o verbo?",
+     "options": [],
+     "answer": "cantamos",
+     "accept": [],
+     "hint": "Procure a palavra que indica o que o sujeito faz.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm1zw2w1jhhlqz",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Eles estudam muito\", o verbo está em qual pessoa e número?",
+     "options": [
+      "3ª pessoa do plural",
+      "1ª pessoa do plural",
+      "3ª pessoa do singular",
+      "2ª pessoa do singular"
+     ],
+     "answer": "3ª pessoa do plural",
+     "accept": [],
+     "hint": "Observe o pronome que acompanha o verbo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a8s3o1m4tlhd",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Choveu a noite toda\", o verbo indica:",
+     "options": [
+      "fenômeno da natureza",
+      "ação",
+      "estado"
+     ],
+     "answer": "fenômeno da natureza",
+     "accept": [],
+     "hint": "Pense em quem pratica a ação: existe alguém?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rduu1321yo734j",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"A menina está cansada\", o verbo indica:",
+     "options": [
+      "estado",
+      "ação",
+      "fenômeno da natureza"
+     ],
+     "answer": "estado",
+     "accept": [],
+     "hint": "O verbo mostra algo que a menina faz ou como ela se encontra?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13om0wo1bh7gry",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"O goleiro defendeu o pênalti\", o verbo indica:",
+     "options": [
+      "ação",
+      "estado",
+      "fenômeno da natureza"
+     ],
+     "answer": "ação",
+     "accept": [],
+     "hint": "O goleiro fez alguma coisa?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g7fen713optvy",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com o verbo \"falar\" no presente: Nós ___ inglês na escola.",
+     "options": [],
+     "answer": "falamos",
+     "accept": [],
+     "hint": "Pense na terminação da 1ª pessoa do plural.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lqklul164o8uv",
+     "subject": "pt",
+     "type": "short",
+     "q": "Passe a frase \"Ele corre no parque\" para o plural (Eles…). Escreva só o verbo.",
+     "options": [],
+     "answer": "correm",
+     "accept": [],
+     "hint": "O verbo concorda com o sujeito no plural.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9jk2am1u2mfuk",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em qual frase o verbo está no singular?",
+     "options": [
+      "Tu sabes a resposta.",
+      "Os alunos chegaram cedo.",
+      "Vocês viajam amanhã.",
+      "Nós lemos o livro."
+     ],
+     "answer": "Tu sabes a resposta.",
+     "accept": [],
+     "hint": "Veja quantas pessoas fazem a ação em cada frase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hhvll5iauqou",
+     "subject": "pt",
+     "type": "short",
+     "q": "Em \"Vós partis hoje\", o verbo está no singular ou no plural?",
+     "options": [],
+     "answer": "plural",
+     "accept": [],
+     "hint": "\"Vós\" se refere a quantas pessoas?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iezmx1jwkvp5",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destes verbos indica um fenômeno da natureza?",
+     "options": [
+      "trovejar",
+      "parecer",
+      "escrever",
+      "permanecer"
+     ],
+     "answer": "trovejar",
+     "accept": [],
+     "hint": "Pense no que acontece no céu durante uma tempestade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jdlbqt122iucw",
+     "subject": "pt",
+     "type": "mc",
+     "q": "\"Escrevo\" está em qual pessoa e número?",
+     "options": [
+      "1ª pessoa do singular",
+      "3ª pessoa do singular",
+      "1ª pessoa do plural",
+      "2ª pessoa do singular"
+     ],
+     "answer": "1ª pessoa do singular",
+     "accept": [],
+     "hint": "Qual pronome combina com \"escrevo\"?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbwpxnv1fbipve",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com o verbo \"ser\" no presente: Tu ___ muito gentil.",
+     "options": [],
+     "answer": "és",
+     "accept": [
+      "es"
+     ],
+     "hint": "É a forma do verbo \"ser\" usada com \"tu\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqo0uavtvn17g",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em qual frase o verbo NÃO concorda com o sujeito?",
+     "options": [
+      "O time venceram o jogo.",
+      "As flores murcharam.",
+      "Nós saímos cedo.",
+      "Você parece feliz."
+     ],
+     "answer": "O time venceram o jogo.",
+     "accept": [],
+     "hint": "Veja se o sujeito está no singular ou no plural e compare com o verbo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19ridxt1lwoyhm",
+     "subject": "pt",
+     "type": "short",
+     "q": "Na frase \"Amanheceu nublado e as crianças pareciam tristes\", qual verbo indica estado?",
+     "options": [],
+     "answer": "pareciam",
+     "accept": [],
+     "hint": "Um dos verbos é um fenômeno da natureza; o outro mostra como as crianças estavam.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj1e7801mnpblj",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva uma frase com um verbo de ação na 3ª pessoa do plural e indique qual é o verbo.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use um sujeito como \"os meninos\" ou \"elas\" e pense em algo que eles fazem.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Narrativa de aventura: A ilha perdida (Maria José Dupré)",
+   "questions": [
+    {
+     "id": "r4of7bwyc4fua",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destas é uma característica típica da narrativa de aventura?",
+     "options": [
+      "Personagens enfrentam perigos e desafios",
+      "O texto é escrito em versos com rimas",
+      "Há instruções passo a passo",
+      "O autor dá opinião sobre um produto"
+     ],
+     "answer": "Personagens enfrentam perigos e desafios",
+     "accept": [],
+     "hint": "Pense no que deixa uma aventura emocionante.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlp3ka1bflzgv",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No livro \"A ilha perdida\", quem são os protagonistas?",
+     "options": [
+      "Dois irmãos",
+      "Uma família de pescadores",
+      "Um grupo de cientistas",
+      "Um rei e sua filha"
+     ],
+     "answer": "Dois irmãos",
+     "accept": [],
+     "hint": "São dois meninos da mesma família.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1enmxxnalmcw6",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No livro \"A ilha perdida\", onde fica a ilha que os meninos querem explorar?",
+     "options": [
+      "No meio de um rio",
+      "No meio do oceano",
+      "Num lago congelado",
+      "Dentro de uma caverna"
+     ],
+     "answer": "No meio de um rio",
+     "accept": [],
+     "hint": "Os meninos estão passando férias numa fazenda.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2zol5rlj7vfh",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No livro \"A ilha perdida\", como os meninos chegam até a ilha?",
+     "options": [
+      "De canoa",
+      "De avião",
+      "De navio",
+      "De helicóptero"
+     ],
+     "answer": "De canoa",
+     "accept": [],
+     "hint": "É um barco pequeno, movido a remo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt5iqgs1q8m6m4",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No livro \"A ilha perdida\", quem um dos meninos encontra vivendo na ilha?",
+     "options": [
+      "Um homem que vive isolado, cercado de animais",
+      "Um grupo de piratas",
+      "Uma equipe de exploradores",
+      "Um rei e seus soldados"
+     ],
+     "answer": "Um homem que vive isolado, cercado de animais",
+     "accept": [],
+     "hint": "É alguém que escolheu viver longe das cidades.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sbjgl81iqykxl",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é o enredo de uma narrativa?",
+     "options": [
+      "A sequência de acontecimentos da história",
+      "O lugar onde a história acontece",
+      "O nome de quem escreveu",
+      "A lista de personagens"
+     ],
+     "answer": "A sequência de acontecimentos da história",
+     "accept": [],
+     "hint": "Pense no \"o que acontece\" da história.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r171kmvn1h8gctw",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em uma narrativa de aventura, o que é o clímax?",
+     "options": [
+      "O momento de maior tensão",
+      "A apresentação dos personagens",
+      "O título da história",
+      "A descrição do cenário"
+     ],
+     "answer": "O momento de maior tensão",
+     "accept": [],
+     "hint": "É quando o leitor fica mais ansioso para saber o que vai acontecer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5kj0xv19p3x4x",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é a ordem mais comum das partes de um enredo?",
+     "options": [
+      "Situação inicial, conflito, clímax, desfecho",
+      "Clímax, situação inicial, desfecho, conflito",
+      "Desfecho, conflito, situação inicial, clímax",
+      "Conflito, desfecho, clímax, situação inicial"
+     ],
+     "answer": "Situação inicial, conflito, clímax, desfecho",
+     "accept": [],
+     "hint": "Comece pela apresentação e termine com a solução.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1docy29gvoe6c",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama a parte final da narrativa, em que o conflito é resolvido?",
+     "options": [],
+     "answer": "desfecho",
+     "accept": [
+      "desenlace",
+      "conclusão"
+     ],
+     "hint": "Começa com a letra D.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dtp638zlz746",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o trecho: \"A água subia depressa e a canoa balançava sem parar.\" Que efeito esse trecho causa no leitor?",
+     "options": [
+      "Suspense",
+      "Humor",
+      "Tédio",
+      "Saudade"
+     ],
+     "answer": "Suspense",
+     "accept": [],
+     "hint": "Os personagens estão seguros ou em perigo?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hby5xa1i27lsl",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destes é um desafio típico de uma narrativa de aventura?",
+     "options": [
+      "Sobreviver em um lugar desconhecido",
+      "Escolher a cor de uma camiseta",
+      "Arrumar o quarto",
+      "Copiar uma receita"
+     ],
+     "answer": "Sobreviver em um lugar desconhecido",
+     "accept": [],
+     "hint": "Procure a opção com mais perigo e mistério.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkthffn1fybxuh",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Como se chama o personagem principal de uma narrativa?",
+     "options": [],
+     "answer": "protagonista",
+     "accept": [
+      "herói",
+      "heroína"
+     ],
+     "hint": "É o oposto de antagonista.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7x60lhkakmwb",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Eu remei com toda a força até a margem.\" Que tipo de narrador conta esse trecho?",
+     "options": [
+      "Narrador-personagem (1ª pessoa)",
+      "Narrador observador (3ª pessoa)",
+      "Não há narrador",
+      "Narrador em 2ª pessoa"
+     ],
+     "answer": "Narrador-personagem (1ª pessoa)",
+     "accept": [],
+     "hint": "Observe o pronome \"eu\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9rg4xf1ky60we",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que uma tempestade que faz o rio encher é um bom desafio numa narrativa de aventura?",
+     "options": [
+      "Porque coloca os personagens em perigo e exige decisões rápidas",
+      "Porque deixa a história mais curta",
+      "Porque apresenta o autor",
+      "Porque elimina o conflito"
+     ],
+     "answer": "Porque coloca os personagens em perigo e exige decisões rápidas",
+     "accept": [],
+     "hint": "Pense no que o desafio provoca nos personagens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj62m9q1pei1fj",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Por que você acha que muitas narrativas de aventura têm personagens jovens como protagonistas?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em como o leitor da sua idade se sente ao ler.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ia83xr1nko1sp",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Se você ficasse preso numa ilha no meio de um rio, qual seria o seu maior desafio? Explique.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em comida, abrigo, segurança e em como pedir ajuda.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "sci": {
+   "topic": "Speed and distance-time graphs",
+   "questions": [
+    {
+     "id": "r1mjohkd1f03llq",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which formula is used to calculate speed?",
+     "options": [
+      "speed = distance ÷ time",
+      "speed = distance × time",
+      "speed = time ÷ distance",
+      "speed = distance + time"
+     ],
+     "answer": "speed = distance ÷ time",
+     "accept": [],
+     "hint": "Speed tells you how far something goes in each unit of time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r37vewv18iljue",
+     "subject": "sci",
+     "type": "num",
+     "q": "A cyclist travels 60 m in 12 s. What is her average speed in m/s?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Divide the distance by the time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rza70c0b2qoja",
+     "subject": "sci",
+     "type": "num",
+     "q": "A car travels 150 km in 3 hours. What is its average speed in km/h?",
+     "options": [],
+     "answer": "50",
+     "accept": [],
+     "hint": "How many kilometres does it travel in one hour?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "romsivm99ayd4",
+     "subject": "sci",
+     "type": "short",
+     "q": "What is the SI unit of speed? Write it in words or as a symbol.",
+     "options": [],
+     "answer": "m/s",
+     "accept": [
+      "metres per second",
+      "meters per second",
+      "ms-1",
+      "m s-1"
+     ],
+     "hint": "Think of the SI units for distance and time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmwbddj1lv74et",
+     "subject": "sci",
+     "type": "num",
+     "q": "A runner moves at a steady 4 m/s for 25 s. How far does she travel, in metres?",
+     "options": [],
+     "answer": "100",
+     "accept": [],
+     "hint": "Rearrange the formula: distance = speed × time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzgmn8xp6d1m6",
+     "subject": "sci",
+     "type": "num",
+     "q": "A train travels 240 km at a steady 80 km/h. How many hours does the journey take?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "time = distance ÷ speed",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv5iokg3btjbs",
+     "subject": "sci",
+     "type": "mc",
+     "q": "On a distance-time graph, what does a horizontal (flat) line show?",
+     "options": [
+      "The object is stationary",
+      "The object is moving at a constant speed",
+      "The object is speeding up",
+      "The object is slowing down"
+     ],
+     "answer": "The object is stationary",
+     "accept": [],
+     "hint": "Is the distance changing as time passes?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqx38i7dki7us",
+     "subject": "sci",
+     "type": "mc",
+     "q": "On a distance-time graph, what does a straight, sloping line show?",
+     "options": [
+      "Constant speed",
+      "Stationary object",
+      "Speeding up",
+      "Slowing down"
+     ],
+     "answer": "Constant speed",
+     "accept": [],
+     "hint": "A straight line has the same gradient everywhere.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwzvq6q1r3mjkf",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Two straight lines are drawn on the same distance-time graph. What does the steeper line show?",
+     "options": [
+      "A faster speed",
+      "A slower speed",
+      "A longer journey time",
+      "The object has stopped"
+     ],
+     "answer": "A faster speed",
+     "accept": [],
+     "hint": "Steeper means more distance covered in the same time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm3jvbe686qa2",
+     "subject": "sci",
+     "type": "short",
+     "q": "What does the gradient of a distance-time graph represent?",
+     "options": [],
+     "answer": "speed",
+     "accept": [
+      "the speed",
+      "velocity"
+     ],
+     "hint": "Gradient = change in distance ÷ change in time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9f87m2t98836",
+     "subject": "sci",
+     "type": "num",
+     "q": "A distance-time graph is a straight line from (0 s, 0 m) to (20 s, 100 m). What is the speed in m/s?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Work out the gradient of the line.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i1etlu11mcfd0",
+     "subject": "sci",
+     "type": "mc",
+     "q": "On a distance-time graph, the line curves and gets steeper over time. What is the object doing?",
+     "options": [
+      "Speeding up",
+      "Slowing down",
+      "Stationary",
+      "Moving at constant speed"
+     ],
+     "answer": "Speeding up",
+     "accept": [],
+     "hint": "A steeper gradient means a greater speed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b4j6w41laft9b",
+     "subject": "sci",
+     "type": "num",
+     "q": "A bus travels 30 km in 30 minutes. What is its average speed in km/h?",
+     "options": [],
+     "answer": "60",
+     "accept": [],
+     "hint": "How far would it go in a whole hour at the same rate?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt3l19q1xzod83",
+     "subject": "sci",
+     "type": "num",
+     "q": "Convert 18 km/h into m/s.",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "1 km = 1000 m and 1 hour = 3600 s.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wpdpeu4q7035",
+     "subject": "sci",
+     "type": "num",
+     "q": "A walker covers 1200 m in 10 minutes, rests for 5 minutes, then walks 600 m in 5 minutes. What is her average speed for the whole trip, in m/s?",
+     "options": [],
+     "answer": "1.5",
+     "accept": [],
+     "hint": "Use total distance ÷ total time, including the rest, and convert minutes to seconds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nb3piexhr7q2",
+     "subject": "sci",
+     "type": "open",
+     "q": "Explain why the average speed for a car journey is usually different from the speed shown on the speedometer at any one moment.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about traffic lights, junctions and changes of speed during the trip.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "A Ilha das Garças",
+   "premise": "Nas férias, Tomás e a prima Bia passam uma semana na casa do avô Lauro, à beira de um grande rio, e a cada dia enfrentam um novo desafio na misteriosa Ilha das Garças, onde um farol antigo guarda um segredo.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A travessia",
+     "synopsis": "Tomás e a prima Bia atravessam o grande rio com o avô Lauro rumo à Ilha das Garças, mas o motor do barco para no meio do caminho.",
+     "text": "O barco do avô Lauro se chamava Teimoso, e fazia jus ao nome: o motor tossia, engasgava e só pegava na terceira puxada da corda. Tomás, de doze anos, segurava a borda com as duas mãos. A prima Bia, um ano mais velha, ria do medo dele e apontava para o meio do rio, onde uma mancha verde-escura surgia na névoa.\n— Aquela é a Ilha das Garças — disse o avô. — Ninguém mora lá há trinta anos, desde que o farol foi desligado.\nOs dois primos tinham chegado à casa do avô na noite anterior para passar uma semana de férias à beira do grande rio. Bia trouxera um caderno de capa dura para anotar tudo; Tomás trouxera uma lanterna e a vontade de não parecer medroso.\nA água estava calma, cor de chá, e as garças brancas voavam baixo, como se acompanhassem o barco. No meio do caminho, porém, o motor parou de vez. O silêncio foi tão repentino que Tomás ouviu o próprio coração. A correnteza começou a empurrar o Teimoso para longe da ilha, em direção a um trecho cheio de troncos caídos.\n— Calma — disse o avô, sem levantar a voz. — Bia, os remos estão embaixo do banco. Tomás, fique na frente do barco, de olho nos troncos, e me avise.\nBia pegou os remos e entregou um ao avô. Os dois começaram a remar, mas a correnteza era forte. Tomás, na proa, gritava:\n— Tronco à esquerda! Agora à direita! Cuidado, tem um galho enorme ali!\nCada aviso fazia o barco desviar por pouco. Os braços de Bia ardiam, e o suor escorria pela testa do avô. Aos poucos, eles saíram do trecho perigoso e chegaram a uma área de água mais mansa, perto da margem da ilha.\nFoi então que Tomás teve uma ideia. De manhã, ele tinha visto o avô mexer no motor e reparara numa pequena alavanca vermelha, a do combustível.\n— Vô, a alavanca vermelha! Ela está fechada!\nO avô olhou, abriu a alavanca e puxou a corda. Na primeira tentativa, o Teimoso roncou e voltou a funcionar.\n— Quem diria — riu o avô. — O vigia dos troncos também é mecânico.\nMinutos depois, a proa encostou na areia da Ilha das Garças. Os três desceram cansados e molhados, mas com um sorriso enorme. Bia abriu o caderno e escreveu: \"Dia 1: a travessia. Desafio: a correnteza. Solução: trabalho em equipe.\"\nTomás olhou para o alto. Entre as árvores, aparecia a ponta enferrujada de um farol antigo. Ele ainda não sabia, mas aquela torre guardava um segredo que ia mudar as férias dos dois.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o nome do barco do avô?",
+       "options": [
+        "Teimoso",
+        "Valente",
+        "Garça Branca",
+        "Correnteza"
+       ],
+       "answer": "Teimoso",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da ilha que eles visitam?",
+       "options": [],
+       "answer": "Ilha das Garças",
+       "accept": [
+        "das Garças",
+        "Garças"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Bia trouxe para as férias?",
+       "options": [
+        "Um caderno de capa dura",
+        "Uma lanterna",
+        "Uma vara de pescar",
+        "Um mapa"
+       ],
+       "answer": "Um caderno de capa dura",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o primeiro grande problema durante a travessia?",
+       "options": [
+        "O motor parou no meio do rio",
+        "Começou a chover forte",
+        "O barco furou",
+        "Os remos caíram na água"
+       ],
+       "answer": "O motor parou no meio do rio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era a tarefa de Tomás enquanto os outros remavam?",
+       "options": [
+        "Avisar sobre os troncos no caminho",
+        "Tirar água do barco",
+        "Segurar a lanterna",
+        "Consertar o motor"
+       ],
+       "answer": "Avisar sobre os troncos no caminho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era a cor da alavanca do combustível?",
+       "options": [],
+       "answer": "vermelha",
+       "accept": [
+        "vermelho"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase do avô \"O vigia dos troncos também é mecânico\" mostra?",
+       "options": [
+        "Que ele ficou orgulhoso de Tomás",
+        "Que ele estava bravo com Tomás",
+        "Que Tomás trabalhava numa oficina",
+        "Que o avô não confiava no neto"
+       ],
+       "answer": "Que ele ficou orgulhoso de Tomás",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô falou com calma, sem levantar a voz, quando o motor parou?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O mapa do faroleiro",
+     "synopsis": "Num dia de chuva, Bia encontra um mapa antigo desenhado pelo último faroleiro da ilha, e os primos descobrem o que significam seus símbolos.",
+     "text": "No segundo dia, amanheceu chovendo. O rio estava cinzento, e o avô avisou que ninguém ia atravessar com aquele tempo. Tomás bufou e se jogou no sofá. Bia, que não conseguia ficar parada, foi explorar o sótão da casa.\nLá em cima, entre caixas de jornais velhos e uma bicicleta sem pneus, havia um baú de madeira com as iniciais \"J. F.\" gravadas na tampa. Dentro dele, Bia encontrou um casaco de lã, uma bússola enferrujada e uma folha de papel dobrada em quatro, amarelada pelo tempo.\n— Tomás! Vem ver isto!\nEra um mapa da Ilha das Garças, desenhado à mão. Tinha o contorno da ilha, o farol na ponta norte e uma linha tracejada que saía da praia e serpenteava entre as árvores. Ao longo da linha havia símbolos estranhos: um peixe, três pontinhos, uma pena e um círculo com uma cruz no meio.\nOs dois desceram correndo e mostraram o mapa ao avô. Ele ficou um tempo em silêncio, passando o dedo sobre o papel.\n— Isto era do Juvêncio, o último faroleiro — disse. — Ele era meu amigo. Quando o farol foi desligado, ele se mudou para a cidade e deixou algumas coisas aqui comigo.\n— E o que significam os desenhos? — perguntou Tomás.\n— Não sei — respondeu o avô. — Mas o Juvêncio adorava charadas.\nOs primos passaram a tarde inteira tentando decifrar o mapa. Bia anotava hipóteses no caderno; Tomás riscava as que não faziam sentido. O peixe era fácil: devia ser o lugar onde o faroleiro pescava. Os três pontinhos deixaram os dois confusos por uma hora, até que Tomás olhou pela janela e viu três pedras grandes na margem do rio.\n— Pedras! Três pedras juntas!\nA pena demorou mais. Bia lembrou que as garças perdem penas perto dos ninhos e concluiu que ali devia ser um lugar onde as aves se reuniam. Restava o círculo com a cruz.\n— Na legenda dos mapas, um X marca o lugar de um tesouro — disse Tomás.\n— Ou — respondeu Bia, virando a bússola enferrujada na mão — é a rosa dos ventos, mostrando o norte.\nO avô sorriu e apontou para o canto do mapa. Embaixo do círculo, quase apagada, havia uma letra pequena: \"N\".\n— A Bia tem razão — disse ele.\nNo fim da tarde, a chuva parou. O céu ficou laranja e as garças voltaram a voar sobre o rio. Bia guardou o mapa dentro do caderno e escreveu: \"Dia 2: o mapa. Desafio: decifrar símbolos. Solução: observar e testar ideias.\"\nTomás, deitado no tapete, já planejava o dia seguinte. Agora eles sabiam o caminho até o farol.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que eles não atravessaram o rio?",
+       "options": [
+        "Porque estava chovendo",
+        "Porque o barco quebrou",
+        "Porque o avô estava doente",
+        "Porque era noite"
+       ],
+       "answer": "Porque estava chovendo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que parte da casa Bia encontra o baú?",
+       "options": [],
+       "answer": "no sótão",
+       "accept": [
+        "sótão",
+        "o sótão"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, além do mapa, o que havia dentro do baú?",
+       "options": [
+        "Um casaco de lã e uma bússola",
+        "Moedas de ouro e uma chave",
+        "Livros e cartas",
+        "Uma lanterna e uma corda"
+       ],
+       "answer": "Um casaco de lã e uma bússola",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o nome do último faroleiro?",
+       "options": [],
+       "answer": "Juvêncio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Tomás descobriu que significavam os três pontinhos?",
+       "options": [
+        "Três pedras grandes na margem",
+        "Três ninhos de garça",
+        "Três árvores altas",
+        "Três barcos"
+       ],
+       "answer": "Três pedras grandes na margem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o círculo com a cruz realmente indicava?",
+       "options": [
+        "O norte, como uma rosa dos ventos",
+        "O lugar de um tesouro",
+        "A casa do avô",
+        "Um lugar perigoso"
+       ],
+       "answer": "O norte, como uma rosa dos ventos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o trabalho dos primos para decifrar o mapa mostra sobre eles?",
+       "options": [
+        "Que são persistentes e trabalham bem juntos",
+        "Que desistem fácil",
+        "Que não gostam de desafios",
+        "Que preferem trabalhar sozinhos"
+       ],
+       "answer": "Que são persistentes e trabalham bem juntos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o faroleiro desenhou o mapa com símbolos em vez de escrever as explicações?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A tempestade",
+     "synopsis": "Seguindo o mapa pela ilha, os primos são surpreendidos por uma tempestade e precisam encontrar abrigo e um jeito de avisar o avô.",
+     "text": "No terceiro dia, o sol voltou e o Teimoso levou os três até a ilha sem nenhum engasgo. O avô ficou na praia, consertando a rede de pesca, e deixou os netos seguirem a trilha do mapa.\n— Duas horas, no máximo — avisou ele. — E não saiam do caminho.\nA trilha começava atrás de um coqueiro torto. Bia ia na frente com o mapa; Tomás vinha atrás, com a lanterna presa no cinto, embora fosse dia. Logo encontraram o primeiro símbolo: um remanso de água parada onde peixinhos prateados nadavam em círculos.\n— O peixe! — comemorou Tomás.\nMais adiante, chegaram às três pedras, enormes e cobertas de musgo. Bia marcou um sinal no caderno. Foi quando Tomás percebeu que o céu tinha escurecido de repente. Um vento frio passou pelas folhas, e um trovão rolou ao longe.\n— Temos que voltar — disse Bia.\nMas era tarde. Em poucos minutos, a chuva desabou com tanta força que mal dava para enxergar a trilha. A terra virou lama, e os raios clareavam o céu.\n— Ali! — gritou Tomás, apontando para uma construção baixa entre as árvores.\nEra uma cabana de pescadores abandonada, com telhado de palha e uma porta torta. Os dois entraram ensopados. Dentro, cheirava a madeira molhada, mas o telhado aguentava. Sentaram-se num banco e ficaram ouvindo a tempestade.\n— O vô deve estar preocupado — disse Bia, mordendo o lábio.\nTomás pensou um pouco. Lembrou que o avô, quando era jovem, ajudava o faroleiro a fazer sinais de luz para os barcos. Três piscadas curtas queriam dizer \"estamos bem\".\nEle tirou a lanterna do cinto, foi até a janela que dava para a praia e começou a piscar: curta, curta, curta. Pausa. Curta, curta, curta. Repetiu várias vezes, até o braço cansar.\nDepois de alguns minutos, lá longe, uma luz amarela piscou de volta, três vezes. Era o avô, com a lanterna do barco.\nBia deu um abraço apertado no primo.\n— Viu? A lanterna não era tão inútil assim.\nA tempestade passou tão rápido quanto chegou. Quando os dois saíram da cabana, notaram desenhos na parede de madeira: dezenas de garças pintadas em branco, uma ao lado da outra, com datas embaixo de cada uma. Bia copiou algumas no caderno.\nNa praia, o avô os esperava com duas toalhas e um sermão curto:\n— Da próxima vez, olhem para o céu antes de entrar na mata.\nÀ noite, Bia escreveu: \"Dia 3: a tempestade. Desafio: abrigo e comunicação. Solução: manter a calma e usar o que se tem.\"",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o avô fez enquanto os netos seguiam a trilha?",
+       "options": [
+        "Consertou a rede de pesca",
+        "Pescou no barco",
+        "Dormiu na praia",
+        "Voltou para casa"
+       ],
+       "answer": "Consertou a rede de pesca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quanto tempo o avô deu aos netos para explorar?",
+       "options": [],
+       "answer": "duas horas",
+       "accept": [
+        "2 horas"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde os primos encontraram o símbolo do peixe?",
+       "options": [
+        "Num remanso de água parada",
+        "Numa pedra pintada",
+        "Numa árvore",
+        "Dentro da cabana"
+       ],
+       "answer": "Num remanso de água parada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde os primos se abrigaram da chuva?",
+       "options": [
+        "Numa cabana de pescadores abandonada",
+        "No farol",
+        "Embaixo das três pedras",
+        "Dentro do barco"
+       ],
+       "answer": "Numa cabana de pescadores abandonada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que significavam três piscadas curtas de luz?",
+       "options": [
+        "Estamos bem",
+        "Socorro",
+        "Venha nos buscar",
+        "Estamos perdidos"
+       ],
+       "answer": "Estamos bem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que os primos viram nas paredes da cabana depois da tempestade?",
+       "options": [
+        "Garças pintadas com datas",
+        "Mapas de outras ilhas",
+        "Nomes de pescadores",
+        "Desenhos de barcos"
+       ],
+       "answer": "Garças pintadas com datas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase de Bia sobre a lanterna sugere?",
+       "options": [
+        "Que antes ela achava que Tomás não ia precisar da lanterna",
+        "Que a lanterna estava quebrada",
+        "Que ela queria a lanterna para si",
+        "Que a lanterna era dela"
+       ],
+       "answer": "Que antes ela achava que Tomás não ia precisar da lanterna",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô deu apenas um \"sermão curto\" em vez de ficar muito bravo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A garça ferida",
+     "synopsis": "Perto do símbolo da pena, os primos encontram uma garça presa numa linha de pesca e precisam libertá-la sem machucá-la.",
+     "text": "O quarto dia começou com um céu tão azul que parecia pintado. Dessa vez, o avô foi junto pela trilha. Ele queria ver com os próprios olhos o lugar da pena, o terceiro símbolo do mapa.\nDepois das três pedras, a trilha descia até uma lagoa rasa cercada de árvores altas. Nos galhos, havia dezenas de ninhos feitos de gravetos, e o barulho das aves era tão forte que os três precisaram falar alto.\n— É um ninhal — explicou o avô. — Um lugar onde as garças fazem seus ninhos todos os anos.\nBia estava encantada, anotando tudo, quando Tomás puxou a manga dela.\n— Olha ali, na beira da água.\nUma garça jovem se debatia perto de um tronco. Uma de suas patas estava enrolada num emaranhado de linha de pesca, presa a um galho. Cada vez que ela tentava voar, a linha apertava mais.\nTomás quis correr até ela, mas o avô o segurou pelo ombro.\n— Devagar. Se ela se assustar, pode se machucar ainda mais. E o bico de uma garça é afiado.\nO avô tirou o casaco e entregou a Bia.\n— Você vai cobrir a cabeça dela com cuidado. No escuro, ela se acalma. Tomás, você segura o corpo, sem apertar as asas. Eu corto a linha.\nOs três se aproximaram bem devagar, quase sem respirar. Bia jogou o casaco por cima da cabeça da ave. Por um segundo, a garça se agitou; depois ficou imóvel. Tomás a abraçou de leve, sentindo o coração dela bater rápido, como o dele no primeiro dia de barco.\nCom um canivete pequeno, o avô cortou a linha, fio por fio, até soltar a pata. Depois examinou a perna com cuidado.\n— Não quebrou. Só ficou marcada.\nEles levaram a garça para um ponto aberto da margem. Bia tirou o casaco devagar, e todos se afastaram. A ave piscou, deu dois passos meio tortos, abriu as asas brancas e voou até um galho alto, onde outras garças a esperavam.\nTomás sentiu os olhos arderem e fingiu que era o sol.\nNo caminho de volta, Bia segurava o pedaço de linha cortada.\n— Vô, esta linha parece nova.\nO avô franziu a testa.\n— Pescar no ninhal é proibido. Alguém andou por aqui sem respeitar as regras.\nBia guardou a linha num saquinho, para jogar no lixo certo. No caderno, escreveu: \"Dia 4: a garça. Desafio: salvar sem machucar. Solução: paciência e cuidado.\"\nAntes de dormir, Tomás ficou pensando nas garças pintadas na cabana e nas datas embaixo de cada uma. Será que o faroleiro também cuidava daquelas aves?",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem acompanhou os primos pela trilha?",
+       "options": [
+        "O avô",
+        "Ninguém",
+        "O faroleiro",
+        "Um pescador"
+       ],
+       "answer": "O avô",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chama o lugar onde as garças fazem ninhos?",
+       "options": [],
+       "answer": "ninhal",
+       "accept": [
+        "um ninhal"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que a garça não conseguia voar?",
+       "options": [
+        "A pata estava enrolada numa linha de pesca",
+        "A asa estava quebrada",
+        "Ela era muito pequena",
+        "Estava presa numa rede"
+       ],
+       "answer": "A pata estava enrolada numa linha de pesca",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o avô segurou Tomás quando ele quis correr até a garça?",
+       "options": [
+        "Para a ave não se assustar e se machucar mais",
+        "Porque a lagoa era funda",
+        "Porque havia cobras ali",
+        "Porque queria tirar uma foto"
+       ],
+       "answer": "Para a ave não se assustar e se machucar mais",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para que Bia cobriu a cabeça da garça com o casaco?",
+       "options": [
+        "Para que ela se acalmasse no escuro",
+        "Para aquecê-la",
+        "Para escondê-la das outras aves",
+        "Para levá-la para casa"
+       ],
+       "answer": "Para que ela se acalmasse no escuro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que deixou o avô preocupado no caminho de volta?",
+       "options": [
+        "A linha era nova, sinal de pesca proibida no ninhal",
+        "A garça ainda estava ferida",
+        "O barco estava longe",
+        "Ia chover de novo"
+       ],
+       "answer": "A linha era nova, sinal de pesca proibida no ninhal",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra a frase \"Tomás sentiu os olhos arderem e fingiu que era o sol\"?",
+       "options": [
+        "Que ele ficou emocionado, mas não quis demonstrar",
+        "Que o sol estava muito forte",
+        "Que ele estava doente",
+        "Que ele estava com sono"
+       ],
+       "answer": "Que ele ficou emocionado, mas não quis demonstrar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Bia decidiu guardar a linha em vez de deixá-la na lagoa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A maré do mangue",
+     "synopsis": "Explorando a ponta sul da ilha, os primos perdem a noção do tempo e a maré sobe, escondendo a trilha de volta.",
+     "text": "O avô explicou no café da manhã que, naquele trecho, o rio estava tão perto do mar que subia e descia com a maré.\n— Na ponta sul da ilha há um mangue — disse. — Na maré baixa, dá para andar entre as raízes. Na maré alta, a água cobre tudo.\nEle tinha uma consulta no médico da cidade e deixou os netos com uma vizinha, dona Zuleica, que morava perto do cais. Ela tinha uma canoa e conhecia a ilha como a palma da mão. Levou os dois até a praia da ilha às nove horas e combinou:\n— Ao meio-dia, estou aqui de novo. A maré começa a subir às onze. Não se esqueçam.\nTomás e Bia foram direto para o mangue. Era um lugar estranho e bonito: as árvores pareciam andar sobre pernas finas, e milhares de caranguejos vermelhos corriam para dentro de buracos na lama. Bia desenhava tudo no caderno, Tomás contava caranguejos, e nenhum dos dois olhou o relógio.\nQuando Tomás finalmente olhou, eram onze e meia. A lama já tinha sumido. Uma água escura cobria o chão e chegava aos tornozelos.\n— Bia, a trilha!\nA trilha por onde tinham vindo havia desaparecido. Tudo era água e raízes, e cada direção parecia igual.\nBia sentiu o estômago gelar, mas respirou fundo e abriu o caderno.\n— Calma. Quando a gente entrou, o sol estava nas nossas costas. Eu anotei.\nTomás olhou para cima. O sol do quase meio-dia estava alto, difícil de usar. Então ele lembrou de outra coisa: os desenhos de Bia. Ela tinha desenhado uma árvore enorme, com um ninho de joão-de-barro no tronco, logo na entrada do mangue.\n— Se a gente achar aquela árvore, acha a saída!\nOs dois subiram numa raiz mais alta e olharam em volta. Ao longe, acima das copas menores, viram um tronco grosso e, nele, uma bolinha de barro.\n— Ali!\nCaminharam devagar, testando cada passo com um galho, porque a água já passava dos joelhos. Seguraram as mãos um do outro quando o chão ficava escorregadio. Depois de vinte minutos que pareceram horas, chegaram à grande árvore e, logo depois, à areia firme da praia.\nDona Zuleica estava lá, de braços cruzados, com a canoa pronta.\n— Vocês me deram um susto! Mais meia hora e a água estaria na cintura.\nNo barco, os primos pediram desculpas e prometeram usar alarme no relógio dali em diante.\nÀ noite, Bia escreveu: \"Dia 5: a maré. Desafio: encontrar o caminho. Solução: registrar o percurso e não entrar em pânico.\"\nEmbaixo, Tomás acrescentou, com a letra torta: \"E olhar o relógio.\"",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o rio subia e descia naquele trecho?",
+       "options": [
+        "Porque ficava perto do mar e sofria efeito da maré",
+        "Porque chovia todos os dias",
+        "Porque havia uma represa",
+        "Porque o vento empurrava a água"
+       ],
+       "answer": "Porque ficava perto do mar e sofria efeito da maré",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da vizinha que leva os primos à ilha?",
+       "options": [],
+       "answer": "dona Zuleica",
+       "accept": [
+        "Zuleica"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, a que horas a maré começaria a subir?",
+       "options": [
+        "Às onze horas",
+        "Às nove horas",
+        "Ao meio-dia",
+        "Às três da tarde"
+       ],
+       "answer": "Às onze horas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que animais corriam para dentro dos buracos na lama?",
+       "options": [
+        "Caranguejos vermelhos",
+        "Lagartos",
+        "Sapos",
+        "Garças"
+       ],
+       "answer": "Caranguejos vermelhos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que ajudou os primos a encontrar a saída do mangue?",
+       "options": [
+        "O desenho de uma árvore com ninho de joão-de-barro",
+        "A bússola do faroleiro",
+        "Um sinal de lanterna",
+        "As pegadas na lama"
+       ],
+       "answer": "O desenho de uma árvore com ninho de joão-de-barro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que os primos testavam cada passo com um galho?",
+       "options": [
+        "Para não escorregar nem cair num buraco escondido pela água",
+        "Para espantar os caranguejos",
+        "Para medir a profundidade do mar",
+        "Para marcar o caminho"
+       ],
+       "answer": "Para não escorregar nem cair num buraco escondido pela água",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase de Tomás \"E olhar o relógio\" revela?",
+       "options": [
+        "Que ele reconheceu o erro que os dois cometeram",
+        "Que ele ganhou um relógio novo",
+        "Que ele queria ir embora mais cedo",
+        "Que ele não gostou do passeio"
+       ],
+       "answer": "Que ele reconheceu o erro que os dois cometeram",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que as anotações de Bia foram tão importantes nesta aventura?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O barco à deriva",
+     "synopsis": "Numa manhã de vento, o Teimoso desaparece do cais, e os primos ajudam o avô a encontrar e trazer o barco de volta.",
+     "text": "No sexto dia, Tomás acordou com o avô batendo à porta do quarto.\n— O Teimoso sumiu!\nOs primos pularam da cama e correram até o cais. Onde o barco deveria estar, havia apenas uma corda partida, balançando na água. O vento tinha soprado forte durante a noite, e a amarra velha não aguentou.\n— Ele não pode ter ido longe — disse o avô, embora parecesse preocupado. — A correnteza desce para o lado do canavial.\nDona Zuleica emprestou a canoa. Os três embarcaram com remos, uma corda nova e garrafas de água. O avô remava atrás; Tomás e Bia, na frente, vasculhavam as margens.\nDurante uma hora, viram apenas capim, troncos e uma família de capivaras tomando sol. Bia começou a desanimar.\n— E se ele afundou?\n— Barco de madeira não afunda fácil — respondeu o avô. — Mas pode ter batido em alguma coisa.\nFoi Tomás quem notou primeiro. Num trecho onde o rio fazia uma curva, havia um tapete enorme de aguapés, plantas que boiam na água. No meio delas, quase escondida, aparecia uma ponta azul.\n— É ele! É o Teimoso!\nO barco estava preso entre os aguapés, inclinado, com um pouco de água dentro. O problema era chegar até ele: as plantas eram tão densas que a canoa não passava.\nO avô pensou e teve uma ideia. Ele amarrou a corda nova na cintura de Tomás, que era o mais leve, e pediu que o neto engatinhasse por cima de um tronco caído que chegava perto do barco.\n— Se escorregar, a gente puxa. Vai devagar.\nTomás atravessou o tronco centímetro por centímetro, com o coração na boca. Quando alcançou o Teimoso, passou a ponta da corda pela argola da proa e deu um nó bem apertado, do jeito que o avô tinha ensinado na primeira noite.\n— Pronto!\nDo outro lado, Bia e o avô puxaram juntos. O barco rangeu, se soltou dos aguapés e deslizou até a canoa. Bia tirou a água de dentro com uma lata, e o avô verificou o casco.\n— Só um arranhão. O Teimoso é teimoso até para se perder.\nA volta foi lenta: a canoa rebocava o barco rio acima, contra a correnteza. Os três se revezaram nos remos, cantando para marcar o ritmo. Chegaram ao cais no fim da tarde, exaustos e queimados de sol.\nNaquela noite, o avô trocou todas as amarras do cais. Bia escreveu no caderno: \"Dia 6: o barco perdido. Desafio: resgatar sem chegar perto. Solução: criatividade e confiança.\"\nAntes de apagar a luz, o avô disse:\n— Amanhã é o último dia. Acho que está na hora de vocês conhecerem o farol por dentro.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu com o Teimoso durante a noite?",
+       "options": [
+        "A amarra partiu e o barco foi levado pela correnteza",
+        "Alguém roubou o barco",
+        "O barco afundou no cais",
+        "O motor pegou fogo"
+       ],
+       "answer": "A amarra partiu e o barco foi levado pela correnteza",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem emprestou a canoa para a busca?",
+       "options": [
+        "Dona Zuleica",
+        "Um pescador",
+        "O faroleiro",
+        "A mãe de Bia"
+       ],
+       "answer": "Dona Zuleica",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que animais os primos viram tomando sol na margem?",
+       "options": [],
+       "answer": "capivaras",
+       "accept": [
+        "capivara"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, como se chamam as plantas que boiam e prenderam o barco?",
+       "options": [],
+       "answer": "aguapés",
+       "accept": [
+        "aguapé"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que foi Tomás quem atravessou o tronco?",
+       "options": [
+        "Porque era o mais leve",
+        "Porque era o mais velho",
+        "Porque sabia nadar melhor",
+        "Porque queria se exibir"
+       ],
+       "answer": "Porque era o mais leve",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para que serviu a corda amarrada na cintura de Tomás?",
+       "options": [
+        "Para puxá-lo de volta se ele escorregasse",
+        "Para medir a distância",
+        "Para amarrar os aguapés",
+        "Para pendurar a lanterna"
+       ],
+       "answer": "Para puxá-lo de volta se ele escorregasse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que os três cantavam na volta?",
+       "options": [
+        "Para manter o ritmo das remadas",
+        "Para espantar as capivaras",
+        "Para chamar dona Zuleica",
+        "Para comemorar o aniversário do avô"
+       ],
+       "answer": "Para manter o ritmo das remadas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô confiou em Tomás para uma tarefa tão arriscada?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O segredo do farol",
+     "synopsis": "No último dia de férias, os primos finalmente entram no farol e descobrem o que o faroleiro guardava lá dentro.",
+     "text": "No sétimo dia, o Teimoso, com amarras novas e um arranhão no casco, levou os três até a ponta norte da Ilha das Garças. Bia segurava o mapa; Tomás, a bússola enferrujada do baú, que agora ele sabia usar.\nO farol era uma torre branca e descascada, com uma porta de ferro trancada por um cadeado grosso.\n— E agora? — perguntou Tomás. — Não temos a chave.\nO avô sorriu e tirou do bolso uma chave comprida, presa num barbante.\n— O Juvêncio me deu, antes de ir embora. Disse que um dia alguém ia merecer abrir esta porta.\nO cadeado rangeu, mas abriu. Lá dentro, uma escada em caracol subia até o alto. Os degraus eram de ferro e ecoavam a cada passo. No meio da subida, havia uma pequena sala com uma mesa, uma cadeira e uma estante. Na estante, enfileirados, estavam dezenas de cadernos de capa preta.\nBia abriu o primeiro com as mãos trêmulas. Em cada página, com letra caprichada, o faroleiro tinha anotado: a data, o tempo, a altura do rio e, principalmente, quantos ninhos de garça havia no ninhal naquele ano.\n— As garças pintadas na cabana! — exclamou Tomás. — Cada uma era um ano!\nO avô folheou os cadernos em silêncio. Os números mostravam que, ano após ano, o ninhal tinha crescido. Nas últimas páginas, porém, o faroleiro escrevera uma preocupação: \"Se um dia ninguém cuidar desta ilha, as garças podem ir embora.\"\nBia pensou na linha de pesca nova, na lagoa.\n— Vô, alguém está pescando no ninhal. Se ninguém fizer nada, o que o Juvêncio temia vai acontecer.\nOs três subiram até o topo. Lá de cima, a vista era enorme: o rio largo e brilhante, o mangue ao sul, o canavial e, no meio das árvores, as manchas brancas das garças nos ninhos.\n— O que a gente pode fazer? — perguntou Tomás.\nO avô pensou um pouco.\n— A cidade tem uma associação de moradores que cuida do rio. Se levarmos estes cadernos, eles terão provas de que esta ilha é um ninhal importante. Talvez consigam protegê-la e colocar placas proibindo a pesca aqui.\nNo fim da tarde, eles desceram com uma caixa de cadernos e a promessa de voltar nas próximas férias. No barco, Tomás percebeu que já não sentia medo da correnteza.\nNaquela noite, Bia escreveu a última anotação: \"Dia 7: o farol. Desafio: decidir o que fazer com o que descobrimos. Solução: cuidar daquilo que amamos.\"\nEla fechou o caderno e o entregou ao primo.\n— Nas próximas férias, quem escreve é você.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que ponta da ilha fica o farol?",
+       "options": [
+        "Na ponta norte",
+        "Na ponta sul",
+        "No centro da ilha",
+        "Na margem oeste"
+       ],
+       "answer": "Na ponta norte",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem tinha a chave do farol?",
+       "options": [
+        "O avô",
+        "Bia",
+        "Dona Zuleica",
+        "Tomás"
+       ],
+       "answer": "O avô",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era a cor da capa dos cadernos do faroleiro?",
+       "options": [],
+       "answer": "preta",
+       "accept": [
+        "preto"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o faroleiro anotava principalmente nos cadernos?",
+       "options": [
+        "Quantos ninhos de garça havia no ninhal",
+        "Os nomes dos barcos que passavam",
+        "Receitas de peixe",
+        "Histórias de piratas"
+       ],
+       "answer": "Quantos ninhos de garça havia no ninhal",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Tomás descobre sobre as garças pintadas na cabana?",
+       "options": [
+        "Cada garça representava um ano",
+        "Eram desenhos de crianças",
+        "Mostravam o caminho do mapa",
+        "Eram o nome de cada ave"
+       ],
+       "answer": "Cada garça representava um ano",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual é o plano do avô para proteger a ilha?",
+       "options": [
+        "Levar os cadernos à associação de moradores que cuida do rio",
+        "Morar no farol",
+        "Vender o barco",
+        "Espantar as garças"
+       ],
+       "answer": "Levar os cadernos à associação de moradores que cuida do rio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra o fato de Tomás já não sentir medo da correnteza?",
+       "options": [
+        "Que ele mudou e ficou mais confiante durante as férias",
+        "Que o rio ficou mais calmo",
+        "Que ele dormiu na viagem",
+        "Que o barco ficou mais rápido"
+       ],
+       "answer": "Que ele mudou e ficou mais confiante durante as férias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Bia entregou o caderno para Tomás no final?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
