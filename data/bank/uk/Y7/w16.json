@@ -1,0 +1,753 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y7",
+ "academic_week": 16,
+ "subjects": {
+  "bss": {
+   "topic": "Estrutura da Terra e placas tectônicas",
+   "questions": [
+    {
+     "id": "rk4s58kl2dxxw",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é a camada mais externa da Terra, onde vivemos?",
+     "options": [
+      "Crosta",
+      "Manto",
+      "Núcleo externo",
+      "Núcleo interno"
+     ],
+     "answer": "Crosta",
+     "accept": [],
+     "hint": "É a camada mais fina, como a casca de uma fruta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raoevftmjpo8t",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é a camada mais central e mais quente da Terra?",
+     "options": [
+      "Núcleo",
+      "Crosta",
+      "Manto",
+      "Litosfera"
+     ],
+     "answer": "Núcleo",
+     "accept": [],
+     "hint": "Pense no \"caroço\" do planeta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sx1vum1klbbfn",
+     "subject": "bss",
+     "type": "short",
+     "q": "Qual camada da Terra fica entre a crosta e o núcleo?",
+     "options": [],
+     "answer": "manto",
+     "accept": [
+      "o manto"
+     ],
+     "hint": "É a camada mais grossa, de rocha muito quente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtuj7pu1q9pbzl",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Como é o núcleo externo da Terra?",
+     "options": [
+      "Líquido, formado principalmente por ferro e níquel",
+      "Sólido, formado por granito",
+      "Gasoso, formado por oxigênio",
+      "Feito de água salgada"
+     ],
+     "answer": "Líquido, formado principalmente por ferro e níquel",
+     "accept": [],
+     "hint": "O núcleo interno é sólido; o externo é diferente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvs92c01tybel7",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que são placas tectônicas?",
+     "options": [
+      "Grandes blocos da litosfera que se movem lentamente",
+      "Montanhas muito altas",
+      "Camadas de gelo nos polos",
+      "Rochas que caem do espaço"
+     ],
+     "answer": "Grandes blocos da litosfera que se movem lentamente",
+     "accept": [],
+     "hint": "A superfície da Terra é dividida como um quebra-cabeça.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r8paji1di1rez",
+     "subject": "bss",
+     "type": "short",
+     "q": "Em qual placa tectônica está todo o território do Brasil?",
+     "options": [],
+     "answer": "Placa Sul-Americana",
+     "accept": [
+      "Sul-Americana",
+      "Placa Sul Americana",
+      "Sul Americana"
+     ],
+     "hint": "O nome da placa lembra o continente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdpgegu1jafsgd",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que o Brasil tem poucos terremotos fortes?",
+     "options": [
+      "Porque fica no meio de uma placa, longe das bordas",
+      "Porque não tem montanhas",
+      "Porque está perto da Linha do Equador",
+      "Porque o clima é quente"
+     ],
+     "answer": "Porque fica no meio de uma placa, longe das bordas",
+     "accept": [],
+     "hint": "Pense em onde as placas se encontram.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri70yfhl029i6",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Onde acontece a maioria dos terremotos e vulcões do planeta?",
+     "options": [
+      "Nas bordas das placas tectônicas",
+      "No centro dos continentes",
+      "Nos polos",
+      "Nos desertos"
+     ],
+     "answer": "Nas bordas das placas tectônicas",
+     "accept": [],
+     "hint": "É onde as placas se empurram, se afastam ou deslizam.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r108167u1ftf0mj",
+     "subject": "bss",
+     "type": "mc",
+     "q": "A Cordilheira dos Andes se formou pelo encontro de quais placas?",
+     "options": [
+      "Placa de Nazca e Placa Sul-Americana",
+      "Placa Africana e Placa Euro-Asiática",
+      "Placa do Pacífico e Placa Antártica",
+      "Placa Indo-Australiana e Placa Africana"
+     ],
+     "answer": "Placa de Nazca e Placa Sul-Americana",
+     "accept": [],
+     "hint": "Os Andes ficam no oeste da América do Sul, perto do Oceano Pacífico.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lvlo351ezt2xh",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Comparada à crosta continental, a crosta oceânica é:",
+     "options": [
+      "Mais fina",
+      "Mais grossa",
+      "Do mesmo tamanho",
+      "Inexistente"
+     ],
+     "answer": "Mais fina",
+     "accept": [],
+     "hint": "Embaixo dos oceanos a \"casca\" da Terra é diferente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxx0yvqtqs4w",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que faz as placas tectônicas se moverem?",
+     "options": [
+      "Correntes de convecção no manto",
+      "O vento forte",
+      "As marés dos oceanos",
+      "A rotação da Lua"
+     ],
+     "answer": "Correntes de convecção no manto",
+     "accept": [],
+     "hint": "O calor de dentro da Terra movimenta a rocha quente do manto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwgfmss1gpe6ub",
+     "subject": "bss",
+     "type": "short",
+     "q": "Qual é o nome do supercontinente que reunia todos os continentes há cerca de 200 milhões de anos?",
+     "options": [],
+     "answer": "Pangeia",
+     "accept": [
+      "Pangea",
+      "Pangéia"
+     ],
+     "hint": "O nome vem do grego e significa \"toda a terra\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xmvsjn1wb716u",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é a velocidade aproximada do movimento das placas tectônicas?",
+     "options": [
+      "Alguns centímetros por ano",
+      "Alguns metros por dia",
+      "Vários quilômetros por hora",
+      "Não se movem"
+     ],
+     "answer": "Alguns centímetros por ano",
+     "accept": [],
+     "hint": "É mais ou menos a velocidade com que suas unhas crescem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfejaxf1hk6lry",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Num limite divergente, as placas:",
+     "options": [
+      "Se afastam uma da outra",
+      "Se chocam de frente",
+      "Deslizam lado a lado",
+      "Ficam paradas"
+     ],
+     "answer": "Se afastam uma da outra",
+     "accept": [],
+     "hint": "\"Divergir\" quer dizer ir para lados opostos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkvskvt1ozgcm",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual frase sobre terremotos no Brasil é verdadeira?",
+     "options": [
+      "Acontecem, mas geralmente são fracos",
+      "Nunca aconteceram",
+      "São os mais fortes do mundo",
+      "Acontecem só no litoral"
+     ],
+     "answer": "Acontecem, mas geralmente são fracos",
+     "accept": [],
+     "hint": "Mesmo no meio de uma placa há pequenos tremores.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roeacynjedp5z",
+     "subject": "bss",
+     "type": "open",
+     "q": "Explique por que o Chile tem muito mais terremotos do que o Brasil, usando a ideia de placas tectônicas.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare onde cada país fica em relação às bordas das placas.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "comp": {
+   "topic": "Binary: why computers use 0s and 1s",
+   "questions": [
+    {
+     "id": "r1smorf88qse6f",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Why do computers use binary?",
+     "options": [
+      "Their circuits have two states: on and off",
+      "Binary numbers are bigger",
+      "It uses less electricity to count to ten",
+      "Computers cannot store letters"
+     ],
+     "answer": "Their circuits have two states: on and off",
+     "accept": [],
+     "hint": "Think about what a switch can do.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tm9i6y7nmkc",
+     "subject": "comp",
+     "type": "short",
+     "q": "What is a single binary digit (a 0 or a 1) called?",
+     "options": [],
+     "answer": "bit",
+     "accept": [
+      "a bit"
+     ],
+     "hint": "It is short for \"binary digit\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r231le2x5cb3o",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Binary is a number system with base:",
+     "options": [
+      "2",
+      "8",
+      "10",
+      "16"
+     ],
+     "answer": "2",
+     "accept": [],
+     "hint": "Count how many different digits binary uses.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re4uqqux2huh",
+     "subject": "comp",
+     "type": "num",
+     "q": "Convert the binary number 101 to denary.",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Use the place values 4, 2 and 1.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9ruhzq1r2m5k6",
+     "subject": "comp",
+     "type": "num",
+     "q": "Convert the binary number 1010 to denary.",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Use the place values 8, 4, 2 and 1.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riaa18p11qffyq",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In binary, which number comes straight after 0111?",
+     "options": [
+      "1000",
+      "0112",
+      "1110",
+      "0110"
+     ],
+     "answer": "1000",
+     "accept": [],
+     "hint": "Add 1 and carry, just like 0999 + 1 in denary.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrrwt6wn3indd",
+     "subject": "comp",
+     "type": "short",
+     "q": "Write the denary number 6 in binary using 3 bits.",
+     "options": [],
+     "answer": "110",
+     "accept": [],
+     "hint": "Which of 4, 2 and 1 add up to 6?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1698pohm0nwx7",
+     "subject": "comp",
+     "type": "num",
+     "q": "Convert the binary number 1111 to denary.",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Add up all four place values.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16hxp6w5s5fb6",
+     "subject": "comp",
+     "type": "short",
+     "q": "Write the denary number 9 in binary using 4 bits.",
+     "options": [],
+     "answer": "1001",
+     "accept": [],
+     "hint": "Which of 8, 4, 2 and 1 add up to 9?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gzqvh53qfvs",
+     "subject": "comp",
+     "type": "num",
+     "q": "How many different values can be stored using 3 bits?",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "Each extra bit doubles the number of patterns.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1clxu8c1rp7ay7",
+     "subject": "comp",
+     "type": "num",
+     "q": "How many bits are there in one byte?",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "It is the same as the number of values 3 bits can make.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dbytpfi9rjs1",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What are the place values of a 4-bit binary number, from left to right?",
+     "options": [
+      "8, 4, 2, 1",
+      "1, 2, 4, 8",
+      "1000, 100, 10, 1",
+      "4, 3, 2, 1"
+     ],
+     "answer": "8, 4, 2, 1",
+     "accept": [],
+     "hint": "Each place is double the one to its right.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raz07f7579jz7",
+     "subject": "comp",
+     "type": "num",
+     "q": "Convert the binary number 10000 to denary.",
+     "options": [],
+     "answer": "16",
+     "accept": [],
+     "hint": "The fifth place value is double 8.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18x6ze8qcr89o",
+     "subject": "comp",
+     "type": "short",
+     "q": "Write the denary number 12 in binary using 4 bits.",
+     "options": [],
+     "answer": "1100",
+     "accept": [],
+     "hint": "Start with the biggest place value that fits.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4cv117ep7wm7",
+     "subject": "comp",
+     "type": "num",
+     "q": "Convert the binary number 11001 to denary.",
+     "options": [],
+     "answer": "25",
+     "accept": [],
+     "hint": "The place values are 16, 8, 4, 2 and 1.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qh0vjkqtcnq6",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain why it is easier for an electronic circuit to store binary than denary.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "How many different states would a circuit need for denary?",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Non-fiction writing: purpose, audience and form",
+   "questions": [
+    {
+     "id": "r1e4c1bo1yv33ej",
+     "subject": "en",
+     "type": "mc",
+     "q": "In non-fiction writing, what does \"purpose\" mean?",
+     "options": [
+      "The reason the text was written",
+      "The people who will read the text",
+      "The layout of the text",
+      "The length of the text"
+     ],
+     "answer": "The reason the text was written",
+     "accept": [],
+     "hint": "Ask: why did the writer write it?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a1ce7l13uicft",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does \"audience\" mean when we talk about a text?",
+     "options": [
+      "The people the text is written for",
+      "The main idea of the text",
+      "The writer of the text",
+      "The title of the text"
+     ],
+     "answer": "The people the text is written for",
+     "accept": [],
+     "hint": "Ask: who is it for?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtviohm1fbmgmn",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does \"form\" mean when we talk about a text?",
+     "options": [
+      "The type of text, such as a letter or leaflet",
+      "The feeling the text creates",
+      "The reason for writing",
+      "The number of paragraphs"
+     ],
+     "answer": "The type of text, such as a letter or leaflet",
+     "accept": [],
+     "hint": "Ask: what kind of text is it?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13igjwu1cdz6f6",
+     "subject": "en",
+     "type": "mc",
+     "q": "A leaflet saying \"Visit Sunny Bay Zoo this summer – you won't regret it!\" is mainly written to:",
+     "options": [
+      "persuade",
+      "instruct",
+      "entertain with a story",
+      "recount events"
+     ],
+     "answer": "persuade",
+     "accept": [],
+     "hint": "The writer wants you to do something.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrt8clb11tpfwo",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the main purpose of a recipe?",
+     "options": [
+      "To instruct",
+      "To persuade",
+      "To argue",
+      "To describe a person"
+     ],
+     "answer": "To instruct",
+     "accept": [],
+     "hint": "It tells you how to make something step by step.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvf1au7v65zb6",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which form is most suitable for complaining to a company about a broken product?",
+     "options": [
+      "A formal letter or email",
+      "A poem",
+      "A diary entry",
+      "A comic strip"
+     ],
+     "answer": "A formal letter or email",
+     "accept": [],
+     "hint": "The reader is a business, not a friend.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cjip2o749v8r",
+     "subject": "en",
+     "type": "short",
+     "q": "What word describes the attitude or feeling created by a writer's choice of words, for example formal, chatty or serious?",
+     "options": [],
+     "answer": "tone",
+     "accept": [],
+     "hint": "We use the same word for the sound of someone's voice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19fg1j81u04xj8",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which opening is most suitable for a guide about brushing teeth written for 6-year-olds?",
+     "options": [
+      "Did you know your teeth love a good brush?",
+      "Dental hygiene necessitates regular maintenance.",
+      "Fluoride compounds reduce enamel demineralisation.",
+      "Oral care is an obligation for all citizens."
+     ],
+     "answer": "Did you know your teeth love a good brush?",
+     "accept": [],
+     "hint": "Young children need simple, friendly words.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p32z2hs7qze9",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence is the most formal way to say \"Hey, the trip was awesome!\"?",
+     "options": [
+      "The school trip was a great success.",
+      "The trip was sooo good!!",
+      "Wow, what a cool trip, guys!",
+      "That trip rocked, no joke."
+     ],
+     "answer": "The school trip was a great success.",
+     "accept": [],
+     "hint": "Formal writing avoids slang and exclamations.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qyefef63d9or",
+     "subject": "en",
+     "type": "mc",
+     "q": "Imperative verbs such as \"Mix\", \"Turn\" and \"Press\" are a key feature of which kind of text?",
+     "options": [
+      "Instructions",
+      "Biographies",
+      "Newspaper reports",
+      "Diaries"
+     ],
+     "answer": "Instructions",
+     "accept": [],
+     "hint": "These verbs tell the reader what to do.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ry6t4h1ffmaxl",
+     "subject": "en",
+     "type": "short",
+     "q": "What is the name for a non-fiction text that tells the story of a real person's life, written by someone else?",
+     "options": [],
+     "answer": "biography",
+     "accept": [
+      "a biography"
+     ],
+     "hint": "If the person writes it themselves, it has \"auto\" at the start.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhn8kow1infgd",
+     "subject": "en",
+     "type": "mc",
+     "q": "Why might a writer use a rhetorical question in a persuasive speech?",
+     "options": [
+      "To make the audience think and agree",
+      "To give exact facts and figures",
+      "To list steps in order",
+      "To show who said something"
+     ],
+     "answer": "To make the audience think and agree",
+     "accept": [],
+     "hint": "The writer does not expect a real answer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rggiaegy3010p",
+     "subject": "en",
+     "type": "mc",
+     "q": "Who is the most likely audience for a magazine article called \"10 Easy Skateboard Tricks for Beginners\"?",
+     "options": [
+      "Young people who are new to skateboarding",
+      "Professional skateboarders",
+      "Parents planning a holiday",
+      "Scientists studying wheels"
+     ],
+     "answer": "Young people who are new to skateboarding",
+     "accept": [],
+     "hint": "Look closely at the words \"easy\" and \"beginners\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w97wo71rfbs39",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which feature would you expect in a newspaper report?",
+     "options": [
+      "A headline and the 5 Ws (who, what, where, when, why)",
+      "Rhyme and rhythm",
+      "A list of ingredients",
+      "\"Dear Diary\" at the start"
+     ],
+     "answer": "A headline and the 5 Ws (who, what, where, when, why)",
+     "accept": [],
+     "hint": "Think about what you see at the top of a news story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl5p2tcpfxn75",
+     "subject": "en",
+     "type": "open",
+     "q": "Rewrite this sentence for a formal report to parents: \"Our canteen serves loads of yummy grub.\"",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Replace the slang with standard, polite words.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc1m5f61h2232p",
+     "subject": "en",
+     "type": "open",
+     "q": "A road safety leaflet is written for 7-year-olds and another for adults. Give two ways the writing would be different.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about vocabulary, sentence length and pictures or tone.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
