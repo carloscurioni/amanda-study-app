@@ -1,0 +1,979 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y11",
+ "academic_week": 16,
+ "subjects": {
+  "bio": {
+   "topic": "Mitosis, meiosis and stem cells",
+   "questions": [
+    {
+     "id": "r10sg7sn7amp1h",
+     "subject": "bio",
+     "type": "num",
+     "q": "How many daughter cells are produced when one body cell divides by mitosis?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Think of one cell splitting into copies of itself.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r62ypbj1fdzoom",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which statement best describes the cells produced by mitosis?",
+     "options": [
+      "They are genetically identical to the parent cell",
+      "They have half the number of chromosomes",
+      "They are all genetically different",
+      "They are always gametes"
+     ],
+     "answer": "They are genetically identical to the parent cell",
+     "accept": [],
+     "hint": "Mitosis is used for growth and repair, so the new cells must match the old ones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjy9oss13zicqp",
+     "subject": "bio",
+     "type": "short",
+     "q": "Name the type of cell division that produces gametes.",
+     "options": [],
+     "answer": "meiosis",
+     "accept": [],
+     "hint": "It takes place in the testes and ovaries.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re38f1jsfy1ti",
+     "subject": "bio",
+     "type": "num",
+     "q": "A human body cell contains 46 chromosomes. How many chromosomes are found in a human sperm cell?",
+     "options": [],
+     "answer": "23",
+     "accept": [],
+     "hint": "Gametes contain one set of chromosomes, not two.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5n79ov147e1wb",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Which of these is NOT a role of mitosis?",
+     "options": [
+      "Producing gametes",
+      "Growth of an organism",
+      "Repair of damaged tissue",
+      "Asexual reproduction"
+     ],
+     "answer": "Producing gametes",
+     "accept": [],
+     "hint": "Which process needs cells with half the usual number of chromosomes?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6ri4maj28u38",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What happens to the DNA in a cell before it divides by mitosis?",
+     "options": [
+      "It is copied (replicated)",
+      "It is halved",
+      "It is broken down",
+      "It leaves the nucleus permanently"
+     ],
+     "answer": "It is copied (replicated)",
+     "accept": [],
+     "hint": "Each new cell needs a full set of chromosomes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reiq5m34hme68",
+     "subject": "bio",
+     "type": "short",
+     "q": "Meiosis is described as a ___ division because the chromosome number is halved. Write the missing word.",
+     "options": [],
+     "answer": "reduction",
+     "accept": [],
+     "hint": "The number of chromosomes goes down.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rncz2q01yxe829",
+     "subject": "bio",
+     "type": "num",
+     "q": "How many gametes are produced from one cell that divides by meiosis?",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Meiosis involves two divisions in a row.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2qw7z1cbhlzk",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Why does meiosis produce genetic variation?",
+     "options": [
+      "Each gamete receives a different combination of chromosomes",
+      "Each gamete is a copy of the parent cell",
+      "Gametes have twice as many chromosomes",
+      "Meiosis only happens in plants"
+     ],
+     "answer": "Each gamete receives a different combination of chromosomes",
+     "accept": [],
+     "hint": "Think about how chromosomes are shared out between the new cells.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lcfv2g1jgsyd5",
+     "subject": "bio",
+     "type": "mc",
+     "q": "Where are adult stem cells found in humans?",
+     "options": [
+      "Bone marrow",
+      "Red blood cells",
+      "Tooth enamel",
+      "Hair"
+     ],
+     "answer": "Bone marrow",
+     "accept": [],
+     "hint": "This tissue makes new blood cells throughout life.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bpdf0155y0um",
+     "subject": "bio",
+     "type": "mc",
+     "q": "In plants, where are stem cells found?",
+     "options": [
+      "Meristems",
+      "Xylem vessels",
+      "Guard cells",
+      "Root hair cells only"
+     ],
+     "answer": "Meristems",
+     "accept": [],
+     "hint": "Look for the regions of a plant that keep growing, such as root and shoot tips.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xybu3l1cyvlzk",
+     "subject": "bio",
+     "type": "short",
+     "q": "What is the name of the process by which a stem cell becomes a specialised cell?",
+     "options": [],
+     "answer": "differentiation",
+     "accept": [
+      "cell differentiation"
+     ],
+     "hint": "The cell becomes different from the original unspecialised cell.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rim3yd81yypepm",
+     "subject": "bio",
+     "type": "mc",
+     "q": "What is the main advantage of embryonic stem cells compared with adult stem cells?",
+     "options": [
+      "They can differentiate into almost any type of cell",
+      "They never divide",
+      "They are always easy to obtain",
+      "They cannot be rejected"
+     ],
+     "answer": "They can differentiate into almost any type of cell",
+     "accept": [],
+     "hint": "Adult stem cells can only form a limited range of cells.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o5cwyj1jd21rn",
+     "subject": "bio",
+     "type": "num",
+     "q": "A cell divides by mitosis once every 24 hours, and every new cell also divides. Starting with one cell, how many cells will there be after 3 days?",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "The number of cells doubles each time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rg7y2xk110pkm5",
+     "subject": "bio",
+     "type": "open",
+     "q": "Explain why gametes must be produced by meiosis rather than mitosis for sexual reproduction to work.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what happens to the chromosome number at fertilisation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv90bc319ip1yn",
+     "subject": "bio",
+     "type": "open",
+     "q": "Evaluate the use of embryonic stem cells to treat diseases.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Give benefits and concerns (ethical and medical), then reach a judgement.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bss": {
+   "topic": "Climas do Brasil e massas de ar",
+   "questions": [
+    {
+     "id": "r1du1s6e1dkxxr2",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual tipo climático predomina na Amazônia?",
+     "options": [
+      "Equatorial",
+      "Semiárido",
+      "Subtropical",
+      "Tropical de altitude"
+     ],
+     "answer": "Equatorial",
+     "accept": [],
+     "hint": "Pense na região perto da linha do Equador, quente e muito chuvosa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjbxxwv1havg41",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual característica é típica do clima semiárido do Nordeste?",
+     "options": [
+      "Chuvas escassas e irregulares",
+      "Neve frequente no inverno",
+      "Chuvas abundantes o ano todo",
+      "Temperaturas muito baixas"
+     ],
+     "answer": "Chuvas escassas e irregulares",
+     "accept": [],
+     "hint": "É o clima do Sertão, com longos períodos de seca.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yr5x2i1ijz04w",
+     "subject": "bss",
+     "type": "short",
+     "q": "Em qual região do Brasil predomina o clima subtropical?",
+     "options": [],
+     "answer": "Sul",
+     "accept": [
+      "Região Sul",
+      "Sul do Brasil"
+     ],
+     "hint": "É a região mais distante da linha do Equador.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19awqkm1ntq9wb",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual massa de ar quente e úmida se forma sobre a Amazônia?",
+     "options": [
+      "Equatorial continental (mEc)",
+      "Polar atlântica (mPa)",
+      "Tropical continental (mTc)",
+      "Tropical atlântica (mTa)"
+     ],
+     "answer": "Equatorial continental (mEc)",
+     "accept": [],
+     "hint": "Ela se forma sobre o continente, numa área de floresta e muita umidade.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1b4oyuq1qhnt6u",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quais são as características da massa Polar atlântica (mPa)?",
+     "options": [
+      "Fria e úmida",
+      "Quente e seca",
+      "Quente e úmida",
+      "Fria e seca, vinda do Pacífico"
+     ],
+     "answer": "Fria e úmida",
+     "accept": [],
+     "hint": "Ela se forma sobre o oceano, no sul do continente.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r36q6qv1tofn82",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chama a queda brusca de temperatura que às vezes ocorre na Amazônia quando a massa Polar atlântica avança até lá?",
+     "options": [],
+     "answer": "friagem",
+     "accept": [
+      "a friagem"
+     ],
+     "hint": "O nome vem da sensação de frio repentino.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz9zuouehgez4",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em um climograma, o que geralmente representam as barras verticais?",
+     "options": [
+      "A precipitação (chuva) de cada mês",
+      "A temperatura de cada mês",
+      "A altitude da cidade",
+      "A umidade do ar em cada hora"
+     ],
+     "answer": "A precipitação (chuva) de cada mês",
+     "accept": [],
+     "hint": "A linha costuma representar outra variável.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o9qazx1rk5enh",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é a característica principal do clima tropical típico do Brasil Central?",
+     "options": [
+      "Verão chuvoso e inverno seco",
+      "Chuva bem distribuída o ano todo",
+      "Inverno com neve",
+      "Seca durante todo o ano"
+     ],
+     "answer": "Verão chuvoso e inverno seco",
+     "accept": [],
+     "hint": "Pense nas duas estações bem marcadas do Cerrado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz63qel1d14m81",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que o clima tropical de altitude tem temperaturas mais amenas que o tropical típico?",
+     "options": [
+      "Porque ocorre em áreas mais elevadas",
+      "Porque fica mais perto do Equador",
+      "Porque recebe a massa Equatorial continental",
+      "Porque não recebe chuva"
+     ],
+     "answer": "Porque ocorre em áreas mais elevadas",
+     "accept": [],
+     "hint": "A temperatura diminui conforme se sobe.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kree4g9fdcn7",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual massa de ar, quente e úmida, se forma sobre o oceano Atlântico e atua no litoral leste do Brasil?",
+     "options": [
+      "Tropical atlântica (mTa)",
+      "Tropical continental (mTc)",
+      "Polar atlântica (mPa)",
+      "Equatorial continental (mEc)"
+     ],
+     "answer": "Tropical atlântica (mTa)",
+     "accept": [],
+     "hint": "Ela se forma na zona tropical, sobre o mar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbtyskm9w38sq",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é a característica da massa Tropical continental (mTc)?",
+     "options": [
+      "Quente e seca",
+      "Fria e úmida",
+      "Quente e úmida",
+      "Fria e seca"
+     ],
+     "answer": "Quente e seca",
+     "accept": [],
+     "hint": "Ela se forma sobre uma área continental no interior da América do Sul, longe do mar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx3wvp5q24ky2",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chama a chuva provocada pelo encontro de uma massa de ar fria com uma massa de ar quente?",
+     "options": [],
+     "answer": "frontal",
+     "accept": [
+      "chuva frontal",
+      "chuvas frontais"
+     ],
+     "hint": "O nome vem da 'frente' que se forma entre as duas massas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1epxb3ihz07o",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que a temperatura média anual de Porto Alegre é menor que a de Manaus?",
+     "options": [
+      "Porque Porto Alegre está em maior latitude",
+      "Porque Porto Alegre está mais perto do Equador",
+      "Porque Manaus fica no litoral",
+      "Porque Manaus recebe a massa Polar atlântica com mais frequência"
+     ],
+     "answer": "Porque Porto Alegre está em maior latitude",
+     "accept": [],
+     "hint": "Compare a distância de cada cidade até a linha do Equador.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwlgkea1ekfnao",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Um climograma mostra temperaturas entre 25 °C e 28 °C o ano inteiro e mais de 2.000 mm de chuva por ano. Que clima ele representa?",
+     "options": [
+      "Equatorial",
+      "Subtropical",
+      "Semiárido",
+      "Tropical de altitude"
+     ],
+     "answer": "Equatorial",
+     "accept": [],
+     "hint": "Calor constante e muita chuva.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dwrxs382dyo",
+     "subject": "bss",
+     "type": "open",
+     "q": "Explique como a atuação da massa Polar atlântica influencia o inverno nas regiões Sul e Sudeste.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em temperatura, frentes frias e geadas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvmjmxz2ugkv9",
+     "subject": "bss",
+     "type": "open",
+     "q": "Explique por que as chuvas no Sertão nordestino são escassas e irregulares.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Considere como as massas de ar chegam à região e o papel do relevo.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "bus": {
+   "topic": "Analysis of accounts: profitability ratios",
+   "questions": [
+    {
+     "id": "r199b2yyhmm9t0",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which formula is used to calculate the gross profit margin?",
+     "options": [
+      "(Gross profit ÷ Revenue) × 100",
+      "(Revenue ÷ Gross profit) × 100",
+      "(Gross profit ÷ Capital employed) × 100",
+      "(Cost of sales ÷ Revenue) × 100"
+     ],
+     "answer": "(Gross profit ÷ Revenue) × 100",
+     "accept": [],
+     "hint": "A margin compares a profit figure with sales.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf6v3oj1qpi5e7",
+     "subject": "bus",
+     "type": "num",
+     "q": "A business has revenue of $200,000 and gross profit of $80,000. Calculate its gross profit margin (%).",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "Divide gross profit by revenue, then multiply by 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdlpqga1aojsl6",
+     "subject": "bus",
+     "type": "num",
+     "q": "A business has revenue of $500,000 and profit of $50,000. Calculate its profit margin (%).",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Profit ÷ revenue × 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmjqp7zj8tsl7",
+     "subject": "bus",
+     "type": "num",
+     "q": "A business makes a profit of $60,000 and has capital employed of $400,000. Calculate its ROCE (%).",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Profit ÷ capital employed × 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx6k5vkmcp8fp",
+     "subject": "bus",
+     "type": "mc",
+     "q": "What does return on capital employed (ROCE) measure?",
+     "options": [
+      "How efficiently a business uses its capital to generate profit",
+      "How quickly a business can pay its short-term debts",
+      "How much stock a business holds",
+      "How many customers a business has"
+     ],
+     "answer": "How efficiently a business uses its capital to generate profit",
+     "accept": [],
+     "hint": "Think about the money invested in the business.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16vw8k5rd20hh",
+     "subject": "bus",
+     "type": "short",
+     "q": "Gross profit = revenue minus ___. Write the missing term.",
+     "options": [],
+     "answer": "cost of sales",
+     "accept": [
+      "cost of goods sold",
+      "COGS"
+     ],
+     "hint": "These are the direct costs of the products sold.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry27jo3vzt6ox",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which change is most likely to increase a business's gross profit margin?",
+     "options": [
+      "Finding a cheaper supplier of materials",
+      "An increase in rent",
+      "Paying higher wages to office staff",
+      "Spending more on advertising"
+     ],
+     "answer": "Finding a cheaper supplier of materials",
+     "accept": [],
+     "hint": "Gross profit is affected only by revenue and direct costs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rljevk23879ie",
+     "subject": "bus",
+     "type": "mc",
+     "q": "A firm's gross profit margin stays the same, but its profit margin falls. What is the most likely reason?",
+     "options": [
+      "Its expenses (overheads) have increased",
+      "Its selling price has risen",
+      "Its cost of sales has fallen",
+      "Its revenue has doubled"
+     ],
+     "answer": "Its expenses (overheads) have increased",
+     "accept": [],
+     "hint": "What is subtracted between gross profit and profit?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxlq3plnah8ec",
+     "subject": "bus",
+     "type": "num",
+     "q": "A shop has revenue of $80,000 and cost of sales of $50,000. Calculate its gross profit margin (%).",
+     "options": [],
+     "answer": "37.5",
+     "accept": [],
+     "hint": "First work out gross profit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re9f2vy1kbdb74",
+     "subject": "bus",
+     "type": "num",
+     "q": "A business has a gross profit margin of 25% and revenue of $120,000. Calculate its gross profit in dollars.",
+     "options": [],
+     "answer": "30000",
+     "accept": [],
+     "hint": "25% of revenue.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s4f9kd1ezzsp5",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Which stakeholder group is most likely to use ROCE when deciding whether to invest in a company?",
+     "options": [
+      "Shareholders",
+      "Local residents",
+      "Suppliers of raw materials",
+      "Government tax inspectors"
+     ],
+     "answer": "Shareholders",
+     "accept": [],
+     "hint": "Who wants a return on the money they put in?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mt8bgx1595w3d",
+     "subject": "bus",
+     "type": "mc",
+     "q": "Why should a business compare its profitability ratios with previous years or with competitors?",
+     "options": [
+      "A single ratio means little on its own",
+      "Ratios never change",
+      "It makes the ratios more accurate",
+      "It is required for every sale"
+     ],
+     "answer": "A single ratio means little on its own",
+     "accept": [],
+     "hint": "Is 12% good or bad? It depends on what you compare it with.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlyrrpkbxa8wr",
+     "subject": "bus",
+     "type": "short",
+     "q": "Using ratios to assess a business's performance is called ___ analysis. Write the missing word.",
+     "options": [],
+     "answer": "ratio",
+     "accept": [],
+     "hint": "The word is in the name of the figures being used.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wt22l61fosrd4",
+     "subject": "bus",
+     "type": "num",
+     "q": "A business has a ROCE of 12% and capital employed of $250,000. Calculate its profit in dollars.",
+     "options": [],
+     "answer": "30000",
+     "accept": [],
+     "hint": "Rearrange the ROCE formula.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5bzg741dxgrk0",
+     "subject": "bus",
+     "type": "open",
+     "q": "Explain one limitation of using profitability ratios to judge a business's performance.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what the figures do not show, or how old they are.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r23z55amh5imx",
+     "subject": "bus",
+     "type": "open",
+     "q": "A company's ROCE fell from 14% last year to 8% this year. Analyse two possible reasons for this fall.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider changes in profit and changes in capital employed.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "chem": {
+   "topic": "Alcohols: manufacture of ethanol and its uses",
+   "questions": [
+    {
+     "id": "rtq1yfkexryor",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Which raw material is used to make ethanol by fermentation?",
+     "options": [
+      "Sugar (glucose) from plants",
+      "Ethene from crude oil",
+      "Natural gas",
+      "Limestone"
+     ],
+     "answer": "Sugar (glucose) from plants",
+     "accept": [],
+     "hint": "Fermentation uses a renewable resource.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3fn6pugkknh9",
+     "subject": "chem",
+     "type": "short",
+     "q": "Name the microorganism used to ferment sugar into ethanol.",
+     "options": [],
+     "answer": "yeast",
+     "accept": [],
+     "hint": "It is also used to make bread rise.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r167v07t1y5np19",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Which conditions are used for fermentation?",
+     "options": [
+      "About 30 °C and no oxygen",
+      "About 300 °C and high pressure",
+      "Room temperature with plenty of oxygen",
+      "About 100 °C with a nickel catalyst"
+     ],
+     "answer": "About 30 °C and no oxygen",
+     "accept": [],
+     "hint": "Living cells carry out this reaction, and it is anaerobic.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhc9201fa9dg7",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Why is fermentation not carried out at a high temperature such as 80 °C?",
+     "options": [
+      "The enzymes in yeast would be denatured",
+      "The ethanol would freeze",
+      "The sugar would turn into ethene",
+      "The reaction would need more oxygen"
+     ],
+     "answer": "The enzymes in yeast would be denatured",
+     "accept": [],
+     "hint": "Yeast relies on proteins that are damaged by heat.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbs38ly75v48e",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What are the products of the fermentation of glucose?",
+     "options": [
+      "Ethanol and carbon dioxide",
+      "Ethanol and water",
+      "Ethene and oxygen",
+      "Carbon dioxide and water"
+     ],
+     "answer": "Ethanol and carbon dioxide",
+     "accept": [],
+     "hint": "One product is a gas that makes bubbles.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6yfeda18jm1tg",
+     "subject": "chem",
+     "type": "num",
+     "q": "Glucose ferments: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂. How many moles of ethanol are produced from 1 mole of glucose?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Read the number in front of ethanol in the equation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re3jmc2pqucnv",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Which catalyst is used in the hydration of ethene to make ethanol?",
+     "options": [
+      "Phosphoric acid",
+      "Iron",
+      "Yeast",
+      "Nickel"
+     ],
+     "answer": "Phosphoric acid",
+     "accept": [],
+     "hint": "It is an acid catalyst.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rraja4t1k59j1y",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Which conditions are used for the catalytic addition of steam to ethene?",
+     "options": [
+      "About 300 °C and 6000 kPa (60 atm)",
+      "About 30 °C and normal pressure",
+      "About 1000 °C and low pressure",
+      "About 0 °C and 6000 kPa (60 atm)"
+     ],
+     "answer": "About 300 °C and 6000 kPa (60 atm)",
+     "accept": [],
+     "hint": "It needs a high temperature and a high pressure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17bt1ib11ru0d",
+     "subject": "chem",
+     "type": "short",
+     "q": "The ethene used to make ethanol is obtained by ___ long-chain alkanes from crude oil. Write the missing word.",
+     "options": [],
+     "answer": "cracking",
+     "accept": [
+      "catalytic cracking"
+     ],
+     "hint": "This process breaks large molecules into smaller ones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtemjyu1td63o8",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What is one advantage of making ethanol by fermentation?",
+     "options": [
+      "It uses a renewable raw material",
+      "It is a fast, continuous process",
+      "It produces very pure ethanol",
+      "It needs a high pressure"
+     ],
+     "answer": "It uses a renewable raw material",
+     "accept": [],
+     "hint": "Where does the sugar come from?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1okvc5am52gce",
+     "subject": "chem",
+     "type": "mc",
+     "q": "What is one advantage of making ethanol by hydration of ethene?",
+     "options": [
+      "It is fast and produces pure ethanol",
+      "It uses a renewable raw material",
+      "It works at low temperature",
+      "It needs no catalyst"
+     ],
+     "answer": "It is fast and produces pure ethanol",
+     "accept": [],
+     "hint": "Compare the speed and purity of the two methods.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16l0xnt6x1lgz",
+     "subject": "chem",
+     "type": "short",
+     "q": "Which separation method is used to obtain concentrated ethanol from the fermentation mixture?",
+     "options": [],
+     "answer": "fractional distillation",
+     "accept": [
+      "distillation"
+     ],
+     "hint": "It separates liquids with different boiling points.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m5wpvm1dhng4e",
+     "subject": "chem",
+     "type": "num",
+     "q": "Calculate the relative formula mass (Mr) of ethanol, C₂H₅OH. (Ar: C = 12, H = 1, O = 16)",
+     "options": [],
+     "answer": "46",
+     "accept": [],
+     "hint": "Count every atom: 2 C, 6 H and 1 O.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r195hxkig5p498",
+     "subject": "chem",
+     "type": "num",
+     "q": "Balance the equation for the complete combustion of ethanol: C₂H₅OH + __O₂ → 2CO₂ + 3H₂O. What number goes in the gap?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Count the oxygen atoms on the right, then subtract the one already in ethanol.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dsngbntyyyvn",
+     "subject": "chem",
+     "type": "mc",
+     "q": "Ethanol made by fermentation can be called a biofuel. Why?",
+     "options": [
+      "It is made from plant material",
+      "It does not produce carbon dioxide when burned",
+      "It comes from crude oil",
+      "It cannot burn"
+     ],
+     "answer": "It is made from plant material",
+     "accept": [],
+     "hint": "'Bio' refers to living things.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2jc3rc1qmxhkr",
+     "subject": "chem",
+     "type": "open",
+     "q": "Compare the manufacture of ethanol by fermentation and by the catalytic addition of steam to ethene.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider raw materials, conditions, rate, purity and whether the process is batch or continuous.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
