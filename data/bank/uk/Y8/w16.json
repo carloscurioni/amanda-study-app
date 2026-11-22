@@ -1,0 +1,783 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y8",
+ "academic_week": 16,
+ "subjects": {
+  "bss": {
+   "topic": "Expansão marítima portuguesa e a chegada de Cabral",
+   "questions": [
+    {
+     "id": "r1364fn3uaiitn",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual produto do Oriente os portugueses mais buscavam com as Grandes Navegações?",
+     "options": [
+      "Especiarias",
+      "Café",
+      "Batata",
+      "Algodão americano"
+     ],
+     "answer": "Especiarias",
+     "accept": [],
+     "hint": "Pense em pimenta, cravo e canela.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfme3we180hqgb",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual era o principal destino comercial que motivou a expansão marítima portuguesa?",
+     "options": [
+      "As Índias",
+      "A Groenlândia",
+      "A Austrália",
+      "O Polo Norte"
+     ],
+     "answer": "As Índias",
+     "accept": [],
+     "hint": "Era de lá que vinham as especiarias.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrqdb6u19zmk99",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual embarcação leve, com velas que permitiam navegar contra o vento, foi muito usada pelos portugueses?",
+     "options": [
+      "Caravela",
+      "Galera romana",
+      "Jangada",
+      "Submarino"
+     ],
+     "answer": "Caravela",
+     "accept": [],
+     "hint": "Ela tinha velas triangulares chamadas latinas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2hhiw1h95k4a",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual instrumento ajudava os navegadores a calcular a latitude pela posição dos astros?",
+     "options": [
+      "Astrolábio",
+      "Telescópio",
+      "Termômetro",
+      "Barômetro"
+     ],
+     "answer": "Astrolábio",
+     "accept": [],
+     "hint": "O nome tem a ver com 'astros'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl85cxwbuyga9",
+     "subject": "bss",
+     "type": "short",
+     "q": "Em que ano a frota de Pedro Álvares Cabral chegou ao território que hoje é o Brasil?",
+     "options": [],
+     "answer": "1500",
+     "accept": [
+      "em 1500"
+     ],
+     "hint": "Foi no fim do século XV, virando para o XVI.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "retjkw816o3mb6",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em que dia e mês de 1500 a frota de Cabral avistou terra no litoral brasileiro?",
+     "options": [
+      "22 de abril",
+      "7 de setembro",
+      "15 de novembro",
+      "12 de outubro"
+     ],
+     "answer": "22 de abril",
+     "accept": [],
+     "hint": "Foi em um mês do outono no hemisfério sul.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnomcq51yqhy3b",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual foi o primeiro ponto de terra avistado pela frota de Cabral?",
+     "options": [
+      "Monte Pascoal",
+      "Pão de Açúcar",
+      "Pico da Neblina",
+      "Corcovado"
+     ],
+     "answer": "Monte Pascoal",
+     "accept": [],
+     "hint": "O nome lembra uma festa cristã celebrada naquela época do ano.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xmzgk419ty380",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em que atual estado brasileiro a frota de Cabral desembarcou em 1500?",
+     "options": [
+      "Bahia",
+      "São Paulo",
+      "Rio de Janeiro",
+      "Pernambuco"
+     ],
+     "answer": "Bahia",
+     "accept": [],
+     "hint": "Fica no litoral do Nordeste, onde hoje está Porto Seguro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r493kcg1dmdvve",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Para onde a frota de Cabral seguiu viagem depois de passar pelo Brasil?",
+     "options": [
+      "Índias",
+      "Inglaterra",
+      "Antártida",
+      "México"
+     ],
+     "answer": "Índias",
+     "accept": [],
+     "hint": "Era o destino comercial principal da expedição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jx5unt9jkeyj",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual documento escrito em 1500 descreveu ao rei de Portugal a terra e os povos indígenas encontrados?",
+     "options": [
+      "Carta de Caminha",
+      "Tratado de Tordesilhas",
+      "Lei Áurea",
+      "Constituição de 1824"
+     ],
+     "answer": "Carta de Caminha",
+     "accept": [],
+     "hint": "Foi escrito pelo escrivão da frota.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m9oa16185j2ju",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual acordo de 1494 dividiu entre Portugal e Espanha as terras descobertas e por descobrir?",
+     "options": [
+      "Tratado de Tordesilhas",
+      "Tratado de Versalhes",
+      "Tratado de Madri",
+      "Carta de Caminha"
+     ],
+     "answer": "Tratado de Tordesilhas",
+     "accept": [],
+     "hint": "O nome vem de uma cidade espanhola.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf2l08ugbzxyz",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual nome os portugueses deram primeiro à terra encontrada em 1500?",
+     "options": [
+      "Ilha de Vera Cruz",
+      "Nova Lisboa",
+      "Terra do Ouro",
+      "Ilha das Especiarias"
+     ],
+     "answer": "Ilha de Vera Cruz",
+     "accept": [],
+     "hint": "Eles acharam que era uma ilha e usaram um símbolo cristão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rivkz0ekqndyq",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes NÃO foi um motivo da expansão marítima portuguesa?",
+     "options": [
+      "Conseguir petróleo para fábricas",
+      "Buscar especiarias",
+      "Expandir a fé cristã",
+      "Encontrar metais preciosos"
+     ],
+     "answer": "Conseguir petróleo para fábricas",
+     "accept": [],
+     "hint": "Pense no que existia no século XV.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12tuolk1vvi4rc",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que Portugal saiu na frente nas Grandes Navegações?",
+     "options": [
+      "Tinha posição atlântica, estabilidade política e investimento em navegação",
+      "Tinha a maior população da Europa",
+      "Já tinha colônias na América desde o ano 1000",
+      "Era o único país com portos"
+     ],
+     "answer": "Tinha posição atlântica, estabilidade política e investimento em navegação",
+     "accept": [],
+     "hint": "Pense na localização do país no mapa da Europa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp41of117mbuq9",
+     "subject": "bss",
+     "type": "open",
+     "q": "Por que a busca por uma rota marítima para as Índias era tão importante para os comerciantes europeus no século XV?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no preço das especiarias e em quem controlava as rotas por terra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13wlcdlc0pb29",
+     "subject": "bss",
+     "type": "open",
+     "q": "A Carta de Caminha mostra o olhar dos portugueses sobre os indígenas. Por que é importante lembrar que os indígenas também tinham sua própria visão desse encontro?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em quem escreveu o documento e em quem já vivia na terra.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "comp": {
+   "topic": "Searching algorithms: linear search",
+   "questions": [
+    {
+     "id": "r1ftmzcvhv5hfc",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What does a linear search do?",
+     "options": [
+      "Checks each item in a list one by one",
+      "Splits the list in half each time",
+      "Sorts the list first",
+      "Only checks the last item"
+     ],
+     "answer": "Checks each item in a list one by one",
+     "accept": [],
+     "hint": "'Linear' means in a line.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra5krexnga154",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Where does a linear search usually start?",
+     "options": [
+      "At the first item",
+      "In the middle",
+      "At a random item",
+      "At the largest item"
+     ],
+     "answer": "At the first item",
+     "accept": [],
+     "hint": "It goes in order from the beginning.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p963d4rxlxlz",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Does a list need to be sorted before a linear search?",
+     "options": [
+      "No",
+      "Yes, always",
+      "Only if it has numbers",
+      "Only if it has words"
+     ],
+     "answer": "No",
+     "accept": [],
+     "hint": "It checks every item anyway.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1trxnje1871akj",
+     "subject": "comp",
+     "type": "mc",
+     "q": "When does a linear search stop?",
+     "options": [
+      "When the item is found or the list ends",
+      "After checking three items",
+      "When it reaches the middle",
+      "Never"
+     ],
+     "answer": "When the item is found or the list ends",
+     "accept": [],
+     "hint": "There are two possible reasons.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12m1lwdsse45",
+     "subject": "comp",
+     "type": "num",
+     "q": "A linear search looks for 7 in the list [3, 9, 7, 2, 5]. How many comparisons does it make before finding 7?",
+     "options": [],
+     "answer": "3",
+     "accept": [],
+     "hint": "Count each item it checks, including 7.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s4fllf11t3ne7",
+     "subject": "comp",
+     "type": "num",
+     "q": "A linear search looks for 10 in the list [4, 8, 1, 6]. 10 is not there. How many comparisons does it make?",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "It must check every item.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rakujkselfq5",
+     "subject": "comp",
+     "type": "num",
+     "q": "What is the largest number of comparisons a linear search could make on a list of 50 items?",
+     "options": [],
+     "answer": "50",
+     "accept": [],
+     "hint": "Think about the worst case.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oc3o7xk7gdna",
+     "subject": "comp",
+     "type": "num",
+     "q": "What is the smallest number of comparisons a linear search could make on a list of 50 items?",
+     "options": [],
+     "answer": "1",
+     "accept": [],
+     "hint": "Think about the best case.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru5lng31jrsd1i",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In Python, which loop is most useful for checking every item in a list?",
+     "options": [
+      "for item in my_list:",
+      "while False:",
+      "if item in:",
+      "def item:"
+     ],
+     "answer": "for item in my_list:",
+     "accept": [],
+     "hint": "You want to repeat once for each item.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8etjlmuq50di",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In Python, which operator compares two values to see if they are equal?",
+     "options": [
+      "==",
+      "=",
+      "!=",
+      "<>"
+     ],
+     "answer": "==",
+     "accept": [],
+     "hint": "A single '=' assigns a value.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rajumrd85f6va",
+     "subject": "comp",
+     "type": "short",
+     "q": "In Python, what keyword is used to send a value back from a function?",
+     "options": [],
+     "answer": "return",
+     "accept": [],
+     "hint": "It ends the function and gives back a result.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lndx7vfswsmo",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A linear search function returns -1. What does this usually mean?",
+     "options": [
+      "The item was not found",
+      "The item is the first one",
+      "The list is empty",
+      "The list is sorted"
+     ],
+     "answer": "The item was not found",
+     "accept": [],
+     "hint": "-1 can't be a real position in a list.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdv1ke317r48o3",
+     "subject": "comp",
+     "type": "num",
+     "q": "In Python, the list is names = ['Ana', 'Leo', 'Mia', 'Raj']. What index does a linear search return for 'Mia'?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "Python indexes start at 0.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1klpjl0rv1bvd",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is the output of this code? nums = [5, 2, 8]; found = False; for n in nums: if n == 8: found = True; print(found)",
+     "options": [
+      "True",
+      "False",
+      "8",
+      "2"
+     ],
+     "answer": "True",
+     "accept": [],
+     "hint": "Is 8 in the list?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cdxmo41tfmddj",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Why might a linear search be slow for a very large list?",
+     "options": [
+      "It may need to check every item",
+      "It always checks the list twice",
+      "It only works with words",
+      "It deletes items as it goes"
+     ],
+     "answer": "It may need to check every item",
+     "accept": [],
+     "hint": "Think about a list of one million items.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10mgvl91ghby4m",
+     "subject": "comp",
+     "type": "open",
+     "q": "Describe, in steps, how a linear search would find the word 'cat' in the list ['dog', 'fish', 'cat', 'bird'].",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Say what happens at each item.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Writing articles for magazines and newspapers",
+   "questions": [
+    {
+     "id": "r1w4ubvb1aylg0f",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is a headline?",
+     "options": [
+      "The title of an article",
+      "The last paragraph of an article",
+      "A list of sources",
+      "A picture caption"
+     ],
+     "answer": "The title of an article",
+     "accept": [],
+     "hint": "It is printed in large letters at the top.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r107oew41tp4nwr",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is a standfirst?",
+     "options": [
+      "A short introduction under the headline",
+      "The writer's signature",
+      "A picture at the end",
+      "An advert next to the article"
+     ],
+     "answer": "A short introduction under the headline",
+     "accept": [],
+     "hint": "It comes straight after the headline.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2xcfi9nvt5f6",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the job of a subheading in an article?",
+     "options": [
+      "To break the text into sections",
+      "To end the article",
+      "To list the writer's friends",
+      "To give the price of the magazine"
+     ],
+     "answer": "To break the text into sections",
+     "accept": [],
+     "hint": "It helps readers find their way.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yqxour8qsizo",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does 'readership' mean?",
+     "options": [
+      "The people who read a publication",
+      "The person who prints the paper",
+      "The length of an article",
+      "The editor's opinion"
+     ],
+     "answer": "The people who read a publication",
+     "accept": [],
+     "hint": "Think of the word 'reader'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "romvcft1ptvdbp",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which headline uses alliteration?",
+     "options": [
+      "Super Students Save Swimming Pool",
+      "Pool Saved by Local Students",
+      "Students and the Pool",
+      "A Story About a Pool"
+     ],
+     "answer": "Super Students Save Swimming Pool",
+     "accept": [],
+     "hint": "Look for repeated starting sounds.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qc9lhp18zls1h",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which headline uses a pun?",
+     "options": [
+      "Bakery Rises to the Challenge",
+      "Bakery Opens New Shop",
+      "New Bakery in Town",
+      "Bakery Sells Bread"
+     ],
+     "answer": "Bakery Rises to the Challenge",
+     "accept": [],
+     "hint": "Think about what bread does in the oven.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro2dges1pdnzmo",
+     "subject": "en",
+     "type": "mc",
+     "q": "Why do newspaper headlines often use the present tense?",
+     "options": [
+      "To make the news feel immediate",
+      "Because the past tense is not allowed",
+      "To make the headline longer",
+      "To confuse the reader"
+     ],
+     "answer": "To make the news feel immediate",
+     "accept": [],
+     "hint": "Compare 'Team Wins Cup' with 'Team Won Cup'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cn98gi35cr4r",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which question words should the first paragraph of a news article usually answer?",
+     "options": [
+      "Who, what, where, when, why",
+      "Which, whose, how many",
+      "Is, are, can",
+      "Only 'how'"
+     ],
+     "answer": "Who, what, where, when, why",
+     "accept": [],
+     "hint": "These are often called the 5 Ws.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re2gu53fmz3my",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which opening would best engage a teenage readership in a magazine about gaming?",
+     "options": [
+      "Ever wished you could build your own game world?",
+      "This article concerns the topic of games.",
+      "Games exist.",
+      "The following text will discuss several matters."
+     ],
+     "answer": "Ever wished you could build your own game world?",
+     "accept": [],
+     "hint": "Which one speaks directly to the reader?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz9mz17oog7vh",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is an example of direct address?",
+     "options": [
+      "You won't believe what happened next.",
+      "The council met on Tuesday.",
+      "It was a sunny day.",
+      "Experts studied the data."
+     ],
+     "answer": "You won't believe what happened next.",
+     "accept": [],
+     "hint": "Look for the word 'you'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rldp2nuxhi2qs",
+     "subject": "en",
+     "type": "short",
+     "q": "What do we call words placed inside speech marks from a real person in an article?",
+     "options": [],
+     "answer": "quotation",
+     "accept": [
+      "quote",
+      "a quote",
+      "quotations",
+      "a quotation",
+      "quotes"
+     ],
+     "hint": "Journalists use them to add a witness's voice.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb83yu61chg1j6",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which feature is more typical of a magazine article than a newspaper report?",
+     "options": [
+      "A chatty, informal tone",
+      "Only facts with no opinion",
+      "A list of court dates",
+      "No headline"
+     ],
+     "answer": "A chatty, informal tone",
+     "accept": [],
+     "hint": "Magazines often feel like a friend talking.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd4nxyx1mutb41",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which subheading best fits a section about saving money on school trips?",
+     "options": [
+      "Smart Ways to Save",
+      "The End",
+      "Paragraph Three",
+      "Introduction to Paragraphs"
+     ],
+     "answer": "Smart Ways to Save",
+     "accept": [],
+     "hint": "A good subheading tells you what the section is about.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh5psfulagtpm",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence would work best as a standfirst for an article about a school garden?",
+     "options": [
+      "Students at one city school have turned a dusty car park into a buzzing garden.",
+      "Gardens.",
+      "The end of the garden story.",
+      "Click here for more."
+     ],
+     "answer": "Students at one city school have turned a dusty car park into a buzzing garden.",
+     "accept": [],
+     "hint": "A standfirst gives a quick taste of the story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dch2pu1j2reoh",
+     "subject": "en",
+     "type": "open",
+     "q": "Write a headline and a one-sentence standfirst for an article about a new skate park opening in your town.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Make the headline short and catchy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8b1grhbczokm",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain how a writer could change an article about healthy eating so that it engages children aged 8 instead of adults.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about vocabulary, tone and examples.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
