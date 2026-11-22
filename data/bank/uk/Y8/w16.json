@@ -4003,6 +4003,885 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Prologue Boy",
+   "premise": "In a playhouse in Elizabethan London, thirteen-year-old Kit Ashby is chosen to speak the sonnet prologue of a new tragedy about two feuding families, and learns how people of his time thought about love, family, honour and fate.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Boy at the Gate",
+     "synopsis": "Kit Ashby arrives at the Lantern Playhouse, watches his first prologue and is chosen to speak the prologue of a new tragedy.",
+     "text": "The bell of the ferry was still ringing when Kit Ashby stepped onto the muddy bank of the river. He was thirteen, he had one spare shirt in a cloth bundle, and he carried a letter from his uncle addressed to Master Elias Thorne of the Lantern Playhouse.\nThe Lantern was a round wooden building with a thatched roof and a flag flying from its top. Kit knew what the flag meant: a play would be performed that afternoon. Outside the gate, apple sellers shouted, dogs barked and a crowd of apprentices pushed forward to pay their penny to stand in the yard.\nA tall man with ink on his fingers read the letter twice. \"Your uncle says you have a good memory and a clear voice,\" said Master Thorne. \"We shall see. Boys here do not only sweep floors. Boys play the women's parts, because no woman may act on a public stage. Can you speak verse?\"\n\"I can read, sir,\" said Kit, \"and I can learn.\"\nThat afternoon Kit watched his first play from behind the stage curtain. Before the story began, an actor in a black cloak walked to the front of the stage. The noisy crowd fell quiet. In a few lines, the actor told them where the play was set, who the main characters were, and even hinted at how it would end.\n\"Why does he give the story away?\" Kit whispered to an older boy called Ned, who was pinning on a long skirt for his role as a queen.\n\"That's the prologue,\" said Ned. \"It's like a door into the play. It calms the crowd, tells them what to expect and makes them want to stay. Master Thorne says a good prologue catches an audience the way a net catches fish.\"\nWhen the play was over, Master Thorne gathered the company together. He held up a bundle of new pages. \"Our next play is a tragedy about two feuding families,\" he announced. \"It opens with a prologue of fourteen lines. I need a speaker who can stand alone in front of two thousand people and not shake.\"\nThe actors looked at each other. The man in the black cloak had a cold and was losing his voice. Ned was already playing a lady. Master Thorne's eyes moved slowly around the room and stopped on Kit.\n\"You,\" he said. \"The new boy. Read this.\"\nKit took the first page. His hands trembled, but he read the opening line slowly and clearly. When he looked up, Master Thorne was nodding.\n\"Not bad,\" said the playwright. \"Not good yet, but not bad. Tomorrow, you begin to learn what a sonnet is.\"\nKit slept that night on a pile of costumes, too excited to close his eyes for long.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how old is Kit?",
+       "options": [],
+       "answer": "13",
+       "accept": [],
+       "hint": "Look at the first paragraph.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the flag on top of the playhouse mean?",
+       "options": [
+        "The playhouse was closed",
+        "A play would be performed that afternoon",
+        "A royal visitor was coming",
+        "Food was being sold inside"
+       ],
+       "answer": "A play would be performed that afternoon",
+       "accept": [],
+       "hint": "Kit knew its meaning as soon as he saw it.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who played the women's parts in the plays?",
+       "options": [],
+       "answer": "boys",
+       "accept": [
+        "the boys",
+        "boy actors",
+        "young boys"
+       ],
+       "hint": "Think about what Ned is wearing for his role.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, Master Thorne says a good prologue catches an audience the way…",
+       "options": [
+        "a cat catches mice",
+        "a net catches fish",
+        "a hook catches a coat",
+        "a cup catches rain"
+       ],
+       "answer": "a net catches fish",
+       "accept": [],
+       "hint": "Ned repeats what Master Thorne says.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which of these did the prologue NOT do?",
+       "options": [
+        "Say where the play was set",
+        "Tell the audience the actors' real names",
+        "Introduce the main characters",
+        "Hint at how the story would end"
+       ],
+       "answer": "Tell the audience the actors' real names",
+       "accept": [],
+       "hint": "Reread the paragraph about the actor in the black cloak.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kind of play is Master Thorne's next play?",
+       "options": [
+        "A comedy about a foolish king",
+        "A tragedy about two feuding families",
+        "A history of a great battle",
+        "An adventure about sailors"
+       ],
+       "answer": "A tragedy about two feuding families",
+       "accept": [],
+       "hint": "Listen to his announcement to the company.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Master Thorne most likely choose Kit?",
+       "options": [
+        "Kit's uncle had paid him money",
+        "The usual speaker was losing his voice and Kit read clearly",
+        "Kit was the oldest boy in the company",
+        "Kit asked loudly to be chosen"
+       ],
+       "answer": "The usual speaker was losing his voice and Kit read clearly",
+       "accept": [],
+       "hint": "Think about what was wrong with the other actors, and how Kit read.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Kit could not sleep for long that night?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what had just happened to him on his very first day.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: Fourteen Lines",
+     "synopsis": "Master Thorne teaches Kit the shape of a sonnet: fourteen lines, iambic pentameter, three quatrains and a closing couplet.",
+     "text": "The next morning, before the other actors arrived, Master Thorne sat Kit down on an upturned barrel in the empty yard. Pigeons walked along the galleries above them.\n\"A sonnet,\" said the playwright, \"is a poem of exactly fourteen lines. Count them.\" He handed Kit the prologue.\nKit counted. \"Fourteen, sir.\"\n\"Good. Now listen to the rhythm.\" Master Thorne tapped the barrel as he spoke the first line: \"In old Verlaine, where furnaces burn bright.\" Tap-TAP, tap-TAP, tap-TAP, tap-TAP, tap-TAP. \"Ten syllables, five beats. A soft sound, then a strong one, five times over. We call it iambic pentameter. It sounds like a heartbeat, which is why it suits a play about love.\"\nKit tapped along with him and counted ten syllables. It was strange: the line felt like walking.\nThen Master Thorne showed him the rhymes. He wrote letters at the end of each line with a stick of charcoal. \"Bright rhymes with night, so both are A. Feud rhymes with strewed, so both are B. The first four lines make a group called a quatrain, rhyming A-B-A-B. There are three quatrains, each with new rhymes, and then…\" He pointed at the last two lines. \"A couplet. Two lines that rhyme together, G-G. The couplet is like the lock on a box. It closes the poem.\"\n\"Why fourteen lines?\" asked Kit. \"Why not twelve, or twenty?\"\nMaster Thorne laughed. \"Because poets in Italy made sonnets long ago, and our English poets borrowed the form and changed the rhyme pattern to suit our language. Every fine young gentleman in London writes sonnets to the lady he admires. So when the audience hears a sonnet at the start of a love story, they know at once what kind of story it will be.\"\nKit spent the whole morning walking up and down the yard, muttering. By noon he could say the first quatrain without looking. By the afternoon, his tongue was tripping over the second.\n\"A daughter and a son, from either side,\" he said, and stopped. \"Sir, I keep saying 'from every side'.\"\n\"Then you have broken the rhythm,\" said Master Thorne. \"Count the syllables and the wrong word will stand out like a stone in a shoe.\"\nKit counted. \"Every\" had one syllable too many. He tried again, slowly, tapping each beat. This time the line had ten syllables and five beats. It fitted.\nAt the end of the day, Ned found him sitting on the barrel, still tapping. \"You look like a woodpecker,\" Ned said, grinning.\n\"I'm learning a heartbeat,\" said Kit, and for the first time, Master Thorne smiled at him properly.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many lines does a sonnet have?",
+       "options": [],
+       "answer": "14",
+       "accept": [],
+       "hint": "Kit counts them at the start.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many syllables are in each line of the prologue?",
+       "options": [],
+       "answer": "10",
+       "accept": [],
+       "hint": "Master Thorne counts them as he taps the barrel.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what name does Master Thorne give to the rhythm of the lines?",
+       "options": [],
+       "answer": "iambic pentameter",
+       "accept": [
+        "iambic pentameter rhythm"
+       ],
+       "hint": "It is a two-word name; the second word contains 'penta', meaning five.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is a quatrain?",
+       "options": [
+        "A pair of rhyming lines",
+        "A group of four lines",
+        "A line with ten syllables",
+        "A poem of fourteen lines"
+       ],
+       "answer": "A group of four lines",
+       "accept": [],
+       "hint": "Look at how Master Thorne describes the first group of lines.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which letters show the rhyme of the final couplet?",
+       "options": [
+        "ABAB",
+        "GG",
+        "CDCD",
+        "ABBA"
+       ],
+       "answer": "GG",
+       "accept": [],
+       "hint": "The couplet comes after three quatrains, each with new rhymes.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does a sonnet suit the start of a love story?",
+       "options": [
+        "Sonnets are the shortest kind of poem",
+        "Audiences connect sonnets with love poems written to admired ladies",
+        "Sonnets are always funny",
+        "Only Italians are allowed to write sonnets"
+       ],
+       "answer": "Audiences connect sonnets with love poems written to admired ladies",
+       "accept": [],
+       "hint": "Think about who writes sonnets in London and about whom.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Master Thorne compare the couplet to the lock on a box?",
+       "options": [
+        "It is the hardest part to remember",
+        "It closes and completes the poem",
+        "It hides a secret message",
+        "It is spoken more quietly"
+       ],
+       "answer": "It closes and completes the poem",
+       "accept": [],
+       "hint": "Think about what a lock does to a box.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Master Thorne smiled at Kit properly for the first time at the end?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how hard Kit worked and what he said about the heartbeat.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Meg's News",
+     "synopsis": "Meg, the wardrobe keeper's daughter, tells Kit her father has arranged her marriage, and Kit learns how Elizabethans saw family duty.",
+     "text": "The costume room of the Lantern was Kit's favourite place. It smelled of wool, candle wax and the lavender that kept the moths away. It belonged, in all but name, to Meg Hollis, the wardrobe keeper's daughter, who was fourteen and could sew a hem faster than anyone in London.\nKit usually found her singing, but today she sat silent with a velvet sleeve in her lap.\n\"What's wrong?\" he asked.\n\"My father has found me a husband,\" Meg said. \"A cloth merchant's son from across the river. He is seventeen and his family is rich. The fathers have agreed everything: the money, the date, the house. I have never even seen his face.\"\nKit didn't know what to say. In his village, it was the same. Parents chose who their children married, especially if there was land or money involved. A good marriage could lift a whole family up; a bad one could ruin it.\n\"Can't you say no?\" he asked at last.\nMeg gave him a look. \"A daughter who disobeys her father brings shame on the whole family. The priest says so, my aunt says so, everyone says so. Father says the world is like a ladder: God at the top, then the Queen, then the lords, then fathers, then wives and children. Everyone has a rung. If you climb off yours, the whole ladder wobbles.\"\n\"But is your father unkind?\"\n\"No,\" said Meg, and her voice softened. \"He thinks he is protecting me. The merchant's family will keep me fed and warm. He says love will grow afterwards, like a plant after planting. Maybe he is right. My mother hardly knew him when they married, and they were happy.\"\nThat evening, Kit took Meg's story to Master Thorne, who was scribbling in his small room above the stage.\n\"It's the same as our play,\" Kit said. \"Fathers deciding everything. Children expected to obey.\"\nThe playwright put down his pen. \"Exactly. Our audience knows this world, Kit. Most of them married, or will marry, the person their families chose. So when two young lovers in a play defy their fathers, the audience feels two things at once. They feel for the lovers, and they feel afraid, because breaking the order of things is dangerous. That tension is what keeps them watching.\"\nKit thought about the line in the prologue: Their fathers' word would force them to divide. Before, it had just been words to memorise. Now, it sounded like Meg.\nBack in the costume room, he found her singing again, quietly.\n\"I've decided,\" she said, threading a needle. \"I'll ask Father if I may at least meet the merchant's son before the wedding. A daughter may ask. Asking is not disobeying.\"\nKit grinned. \"That sounds like something a heroine would say.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how old is Meg?",
+       "options": [],
+       "answer": "14",
+       "accept": [],
+       "hint": "Look at the first paragraph.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who chose Meg's future husband?",
+       "options": [
+        "Her mother",
+        "Her father",
+        "Meg herself",
+        "Master Thorne"
+       ],
+       "answer": "Her father",
+       "accept": [],
+       "hint": "Look at Meg's first piece of news.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Meg's father compare the world to?",
+       "options": [
+        "A ship",
+        "A ladder",
+        "A tree",
+        "A river"
+       ],
+       "answer": "A ladder",
+       "accept": [],
+       "hint": "Everyone in it has a 'rung'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Meg say happens when a daughter disobeys her father?",
+       "options": [
+        "She is sent away to sea",
+        "She brings shame on the whole family",
+        "She must become an actor",
+        "Nothing at all happens"
+       ],
+       "answer": "She brings shame on the whole family",
+       "accept": [],
+       "hint": "Reread what the priest and her aunt say.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Meg's father think the marriage is good for her?",
+       "options": [
+        "The merchant's son is a famous actor",
+        "The merchant's family will keep her fed and warm",
+        "She will move to Italy",
+        "The merchant's son has written her sonnets"
+       ],
+       "answer": "The merchant's family will keep her fed and warm",
+       "accept": [],
+       "hint": "Meg says he thinks he is protecting her.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Master Thorne say the audience feels afraid when young lovers defy their fathers?",
+       "options": [
+        "The actors fight with real swords",
+        "Breaking the order of things was seen as dangerous",
+        "The playhouse is dark and cold",
+        "The audience cannot understand verse"
+       ],
+       "answer": "Breaking the order of things was seen as dangerous",
+       "accept": [],
+       "hint": "Think about the ladder Meg described.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how have Kit's feelings about the prologue line changed by the end?",
+       "options": [
+        "He has forgotten it completely",
+        "It now feels real because it reminds him of Meg",
+        "He thinks it is funny now",
+        "He wants it cut from the play"
+       ],
+       "answer": "It now feels real because it reminds him of Meg",
+       "accept": [],
+       "hint": "Before, it was only words to memorise.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Meg decides that asking is not the same as disobeying?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about the rules of her world and what she still wants.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: Trouble by the Bridge",
+     "synopsis": "Kit witnesses a street fight between servants of two feuding families and learns how honour turns old quarrels into violence.",
+     "text": "On Thursday, Master Thorne sent Kit across the river to buy ink and paper. On his way back through the narrow streets near the bridge, he heard shouting.\nTwo groups of men in different-coloured coats faced each other outside a tavern. On one side were servants of the Pellam family, who wore blue. On the other were servants of the Garrards, in green. Kit had heard about them: two rich brewing families who had hated each other for so long that nobody could remember how the quarrel had started.\n\"Your master waters his ale!\" shouted a man in green.\n\"Your master is a cheat and his father was a cheat!\" replied a man in blue.\nThen a hand went to a sword hilt, and suddenly blades were flashing. Shoppers screamed and pulled their children into doorways. A basket of eggs was trampled. A boy no older than Kit was knocked into the gutter.\nKit pressed himself against a wall, clutching the paper to his chest. What shocked him most was that none of the fighters were Pellams or Garrards themselves. They were servants and apprentices, fighting for the honour of masters who were at home eating supper.\nAt last the night watchmen arrived, waving lanterns and long wooden staffs. The fighters scattered. One of the men in blue was holding his arm.\nWhen Kit got back to the Lantern, he told Master Thorne everything, the words tumbling out.\nThe playwright listened carefully. \"Honour,\" he said. \"To a gentleman, his family's good name is worth more than gold. An insult to the family is an insult to every servant who wears its colours. So a quarrel between two old men becomes a war in the street.\"\n\"But it's stupid,\" said Kit. \"The servants don't even know why they're fighting.\"\n\"That,\" said Master Thorne, \"is the point of our play.\" He picked up the prologue and read the first quatrain aloud. \"Two families, a feud, broken glass in every street. The audience will recognise it at once, because they see it with their own eyes. A feud doesn't stay in one house. It spreads like fire through dry straw.\"\nKit looked at the line: And every street with broken glass is strewed. He thought of the trampled eggs and the boy in the gutter.\n\"Sir,\" he said slowly, \"when I say that line, should I sound angry?\"\n\"Not angry,\" said Master Thorne. \"Tired. As if the whole town is sick of it. Try it.\"\nKit tried. The first time, it sounded like a complaint. The second time, he imagined the mothers pulling their children into doorways, and his voice dropped and slowed.\nThe actors who were mending props nearby stopped working and looked up.\n\"That,\" said Master Thorne softly, \"is how you make two thousand people listen.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why was Kit crossing the river?",
+       "options": [
+        "To visit his uncle",
+        "To buy ink and paper",
+        "To deliver a costume",
+        "To watch a fight"
+       ],
+       "answer": "To buy ink and paper",
+       "accept": [],
+       "hint": "Look at the first sentence.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what colour did the Pellam servants wear?",
+       "options": [],
+       "answer": "blue",
+       "accept": [
+        "blue coats"
+       ],
+       "hint": "The Garrards wore green.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what business were the two families in?",
+       "options": [
+        "Glassmaking",
+        "Brewing",
+        "Cloth selling",
+        "Printing"
+       ],
+       "answer": "Brewing",
+       "accept": [],
+       "hint": "One servant accuses the other's master of watering his ale.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who stopped the fight?",
+       "options": [
+        "Master Thorne",
+        "The night watchmen",
+        "Soldiers on horses",
+        "Kit"
+       ],
+       "answer": "The night watchmen",
+       "accept": [],
+       "hint": "They arrived with lanterns and long wooden staffs.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what shocked Kit most about the fighters?",
+       "options": [
+        "They were all women",
+        "They were servants, not members of the families",
+        "They were actors from another playhouse",
+        "They were younger than him"
+       ],
+       "answer": "They were servants, not members of the families",
+       "accept": [],
+       "hint": "Where were the masters while the fight happened?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Master Thorne say a family's good name is worth to a gentleman?",
+       "options": [
+        "Less than a horse",
+        "More than gold",
+        "The same as a house",
+        "Nothing at all"
+       ],
+       "answer": "More than gold",
+       "accept": [],
+       "hint": "He is explaining the idea of honour.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Master Thorne want Kit to say the line in a tired voice?",
+       "options": [
+        "Because Kit has a cold",
+        "To show the whole town is sick of the feud",
+        "To make the audience laugh",
+        "Because the line is too long"
+       ],
+       "answer": "To show the whole town is sick of the feud",
+       "accept": [],
+       "hint": "Think about how ordinary people felt during the fight.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the actors stopped working and looked up at the end?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how Kit's second try was different from his first.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Eyes Like Stars",
+     "synopsis": "At rehearsal, Master Thorne mocks a speech full of tired love-poetry comparisons, and Kit learns the difference between copied love and real feeling.",
+     "text": "Rehearsals for the new tragedy began the following week. The young lover in the play was acted by Robin Fairweather, a handsome actor of nineteen who loved nothing more than a mirror.\nIn his first scene, Robin's character was in love, or believed he was, with a lady who ignored him. Robin threw himself across the stage, sighing.\n\"Her eyes are stars, her lips are rubies red, her cheeks are roses and her brow is snow,\" he groaned. \"Without her smile, I wish that I were dead!\"\nThe actors watching from the gallery giggled. Master Thorne let him finish, then clapped slowly.\n\"Wonderful,\" he said dryly. \"You've used every tired comparison in London. Kit, what's wrong with that speech?\"\nKit went red. \"Nothing, sir? It's very… poetic.\"\n\"It's poetic in the way a painted cake is delicious,\" said Master Thorne. \"Listen. Long ago, an Italian poet wrote hundreds of sonnets about a lady he loved from afar. He called her eyes stars and her skin snow, and he suffered beautifully because she would never be his. Now every lovesick young man in England copies him. The lover sighs, the lady is cold and perfect, and nothing ever happens.\"\n\"So it's fake love?\" asked Kit.\n\"It's love from a book,\" said the playwright. \"In our play, this young man thinks he is in love because he has read too many sonnets. Then he meets the girl from the other family, and suddenly he talks to her like a real person. The audience must hear the difference. First, a poem copied from others. Then, a feeling of his own.\"\nRobin looked offended. \"So I'm supposed to be silly?\"\n\"In this scene, yes,\" said Master Thorne. \"Later, you will break their hearts.\"\nThat night, Kit lay on the costume pile and thought about it. He realised the prologue also spoke about love, but in a different way. It didn't praise anyone's eyes. It said: But hearts, like molten glass, are shaped too soon. That wasn't a copy of anything. It was a picture of something real: something hot and soft and easily bent, that would harden into one shape forever.\nHe took a scrap of paper and, by the light of a candle stub, tried to write a couplet of his own about Meg. After many tries, he had two lines:\nShe asked to see his face before the day,\nFor even love should have a word to say.\nHe counted the syllables twice. Ten and ten. The rhyme was true, and the beats fitted.\nIn the morning, he showed it to Meg. She read it twice and laughed. \"It's terrible,\" she said, but she was smiling as she folded the paper carefully and put it in her sewing box.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how old is Robin?",
+       "options": [],
+       "answer": "19",
+       "accept": [],
+       "hint": "Look at the first paragraph.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Robin's character compare the lady's eyes to?",
+       "options": [
+        "Rubies",
+        "Stars",
+        "Roses",
+        "Snow"
+       ],
+       "answer": "Stars",
+       "accept": [],
+       "hint": "Each part of her face gets a different comparison.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did the actors in the gallery react to Robin's speech?",
+       "options": [
+        "They cried",
+        "They giggled",
+        "They cheered loudly",
+        "They walked out"
+       ],
+       "answer": "They giggled",
+       "accept": [],
+       "hint": "Look just after Robin finishes speaking.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did these tired comparisons first come from, according to Master Thorne?",
+       "options": [
+        "A song sung by sailors",
+        "An Italian poet's sonnets about a lady he loved from afar",
+        "A book of cooking recipes",
+        "An old English law"
+       ],
+       "answer": "An Italian poet's sonnets about a lady he loved from afar",
+       "accept": [],
+       "hint": "He tells a story from long ago.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Master Thorne mean by \"love from a book\"?",
+       "options": [
+        "Love letters written in a diary",
+        "Love copied from poems rather than truly felt",
+        "A story about a library",
+        "A marriage arranged by parents"
+       ],
+       "answer": "Love copied from poems rather than truly felt",
+       "accept": [],
+       "hint": "Think about why the young man believes he is in love.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what change must the audience notice in the young lover?",
+       "options": [
+        "He becomes angry with his father",
+        "He moves from copied poetry to his own real feelings",
+        "He stops speaking in verse completely",
+        "He decides to leave the town"
+       ],
+       "answer": "He moves from copied poetry to his own real feelings",
+       "accept": [],
+       "hint": "What happens when he meets the girl from the other family?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Kit think the line about molten glass is different from Robin's speech?",
+       "options": [
+        "It is longer and has more rhymes",
+        "It is a fresh image of something real, not a copied comparison",
+        "It is spoken by a girl",
+        "It is funnier"
+       ],
+       "answer": "It is a fresh image of something real, not a copied comparison",
+       "accept": [],
+       "hint": "Think about what molten glass is like.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Meg kept the couplet even though she called it terrible?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about who the couplet was about and how it might make her feel.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Written in the Stars",
+     "synopsis": "Master Thorne explains dramatic irony and Elizabethan beliefs about fate, and Kit performs the prologue at the final rehearsal.",
+     "text": "Two days before the first performance, Kit asked the question that had bothered him since his first afternoon at the Lantern.\n\"Sir, the prologue tells everyone how the play ends. The lovers die and the families make peace. Why would anyone stay to watch if they already know?\"\nMaster Thorne was mending a wooden crown with glue. He didn't look up. \"Do you know how the story of the Spanish Armada ends, Kit?\"\n\"Yes, sir. The Spanish ships were wrecked and scattered by storms.\"\n\"And yet the ballad singers in the market still draw a crowd every time they sing about it. Knowing the end doesn't stop people listening. It changes how they listen.\" He set the crown down. \"When the audience knows the lovers are doomed, every happy moment becomes painful. They see the young man laugh, and they want to shout, 'Don't trust it!' They see a letter go astray and they groan, because they know what it means. The characters can't see the danger, but the audience can. That is called dramatic irony. It turns two thousand people into worried friends.\"\nKit thought about it. \"Like watching someone walk towards a hole in the road that they can't see.\"\n\"Exactly like that.\"\n\"And the line about the stars,\" Kit went on. \"The stars have written how their tale must end. Do people really believe that?\"\n\"Many do,\" said Master Thorne. \"Go down to the market and you'll find men who read the stars for a penny. Even great lords pay astrologers to choose lucky days for weddings and journeys. People believe the heavens shape our lives, and that some things are fated and cannot be escaped. Others say we choose our own path. Our play lets the audience argue about it all the way home. Were the lovers destroyed by the stars, by their own hasty choices, or by their fathers' hatred?\"\n\"Which is it?\"\nThe playwright smiled. \"If I told you, nobody would need to watch the play.\"\nThat evening there was a full rehearsal. Kit stood alone at the front of the empty stage in a borrowed black cloak that was too big for him. Ned, Robin, Meg and the other actors sat in the galleries pretending to be the audience. Some of them threw nutshells to make it realistic.\nKit took a breath and began. He felt the rhythm under the words like a horse beneath a rider. He made the first quatrain tired, the second tender and the third quiet and heavy, as though he already grieved. When he reached the couplet, he lifted his head and spoke straight to the galleries, inviting them in.\nFor a moment, nobody moved. Then Ned stood up and whistled through his fingers.\n\"Not bad,\" said Master Thorne, and Kit knew by now that this was high praise.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was Master Thorne mending?",
+       "options": [
+        "A black cloak",
+        "A wooden crown",
+        "A sword",
+        "A ladder"
+       ],
+       "answer": "A wooden crown",
+       "accept": [],
+       "hint": "He was using glue.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what example does Master Thorne use to show that people enjoy stories when they already know the ending?",
+       "options": [
+        "Children playing in the street",
+        "Ballad singers singing about the Spanish Armada",
+        "A sermon in church",
+        "A fight outside a tavern"
+       ],
+       "answer": "Ballad singers singing about the Spanish Armada",
+       "accept": [],
+       "hint": "Think about the market.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name for when the audience knows something the characters do not?",
+       "options": [],
+       "answer": "dramatic irony",
+       "accept": [
+        "irony"
+       ],
+       "hint": "It is a two-word term; the first word is connected to plays.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did some great lords pay astrologers to do?",
+       "options": [
+        "Write sonnets for their ladies",
+        "Choose lucky days for weddings and journeys",
+        "Teach their children to read",
+        "Build new playhouses"
+       ],
+       "answer": "Choose lucky days for weddings and journeys",
+       "accept": [],
+       "hint": "Astrologers read the stars.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did some actors throw during the rehearsal?",
+       "options": [
+        "Eggs",
+        "Nutshells",
+        "Flowers",
+        "Coins"
+       ],
+       "answer": "Nutshells",
+       "accept": [],
+       "hint": "They wanted the rehearsal to feel realistic.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Kit speak the third quatrain?",
+       "options": [
+        "Fast and cheerful",
+        "Quiet and heavy",
+        "Loud and angry",
+        "In a whisper he could hardly hear"
+       ],
+       "answer": "Quiet and heavy",
+       "accept": [],
+       "hint": "Look at how he changed his voice for each quatrain.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Master Thorne refuse to say what destroyed the lovers?",
+       "options": [
+        "He has not finished writing the play",
+        "He wants the audience to think and argue about it themselves",
+        "He has forgotten",
+        "He thinks Kit is too young to know"
+       ],
+       "answer": "He wants the audience to think and argue about it themselves",
+       "accept": [],
+       "hint": "Look at what he says the play lets the audience do.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think \"Not bad\" from Master Thorne felt like high praise to Kit?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think back to the first time Master Thorne said these words in Chapter 1.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Two Thousand Faces",
+     "synopsis": "On the opening day Kit speaks the full prologue to a packed playhouse, and Meg meets the young man her father has chosen.",
+     "text": "On the afternoon of the first performance, the flag flew above the Lantern and the trumpet sounded three times. Kit peeped through a gap in the curtain and his stomach turned over. The yard was packed with standing apprentices, sailors and market women cracking nuts. Above them, in the galleries, sat merchants and their wives on cushions, and in the best seats near the stage, a few gentlemen in feathered hats who had paid extra to be seen.\nMeg squeezed his arm. She was wearing her best blue dress. \"I have news,\" she whispered. \"Father said yes. The merchant's son and his mother are coming to watch the play today. I'll meet him afterwards.\"\n\"Is that good?\"\n\"I don't know yet. But it's mine to find out.\"\nThen Master Thorne's hand was on Kit's back. \"Go,\" he said.\nKit walked out alone. The noise of the crowd hit him like a wave. Somebody shouted, \"Speak up, little crow!\" because of his black cloak, and people laughed. Kit's mouth was dry. For a terrible second, he couldn't remember the first word.\nThen he remembered the barrel and the tapping, the soft sound and the strong sound. He let the heartbeat carry him.\n\"In old Verlaine, where furnaces burn bright, / Two glassmaking families keep a feud; / Their fathers' quarrel rages day and night, / And every street with broken glass is strewed.\"\nThe laughter died. He went on, through the daughter and the son, the fathers' word, the hearts like molten glass. He felt the crowd lean towards him. By the third quatrain, the market women had stopped cracking nuts.\n\"The stars have written how their tale must end: / In sorrow, yet in peace for both their names; / For grief alone the broken bond will mend, / And cool at last the old and bitter flames.\"\nThen he lifted his head for the couplet, the lock on the box.\n\"So sit, good friends, and hear with patient ear / The story that our players bring you here.\"\nHe bowed and walked off. Behind him, the crowd roared and stamped, and the play began.\nLater, when the lovers had died and the two families had joined hands at last, Kit heard something he had never heard before: two thousand people completely silent. Then, slowly, the applause came, rolling like thunder.\nAfterwards, in the costume room, Meg was pink and smiling. \"He's shy,\" she said. \"He has ink on his fingers, like Master Thorne, and he asked me what I thought of the play before he said a word about himself.\"\n\"And what did you tell him?\"\n\"That the fathers in the story should have listened to their children.\" She laughed. \"His mother looked shocked. But he agreed.\"\nMaster Thorne appeared in the doorway holding a new bundle of pages. \"Kit Ashby,\" he said. \"Our next play is a comedy. It begins with a prologue. Are you ready?\"\nKit grinned and held out his hand for the pages.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "num",
+       "q": "In the chapter, how many times did the trumpet sound?",
+       "options": [],
+       "answer": "3",
+       "accept": [],
+       "hint": "Look at the first sentence.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who had paid extra to sit near the stage?",
+       "options": [
+        "Market women",
+        "Gentlemen in feathered hats",
+        "Sailors",
+        "Apprentices"
+       ],
+       "answer": "Gentlemen in feathered hats",
+       "accept": [],
+       "hint": "They wanted to be seen.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did someone call Kit \"little crow\"?",
+       "options": [
+        "He had a croaky voice",
+        "He was wearing a black cloak",
+        "He was eating seeds",
+        "He was standing on one leg"
+       ],
+       "answer": "He was wearing a black cloak",
+       "accept": [],
+       "hint": "Think about what crows look like.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what helped Kit remember the first word?",
+       "options": [
+        "Reading the lines from a page",
+        "Remembering the rhythm he had tapped on the barrel",
+        "Meg whispering from behind the curtain",
+        "Hearing the trumpet again"
+       ],
+       "answer": "Remembering the rhythm he had tapped on the barrel",
+       "accept": [],
+       "hint": "Think back to Chapter 2.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what showed that the market women were listening closely by the third quatrain?",
+       "options": [
+        "They threw flowers",
+        "They stopped cracking nuts",
+        "They started singing",
+        "They left the yard"
+       ],
+       "answer": "They stopped cracking nuts",
+       "accept": [],
+       "hint": "What were they doing at the start?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the merchant's son do that Meg noticed?",
+       "options": [
+        "He gave her a ring",
+        "He asked her opinion of the play before talking about himself",
+        "He recited a sonnet about her eyes",
+        "He argued with her father"
+       ],
+       "answer": "He asked her opinion of the play before talking about himself",
+       "accept": [],
+       "hint": "Look at what Meg says in the costume room.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Meg's answer to the merchant's son suggest about her?",
+       "options": [
+        "She wants to become an actor",
+        "She believes young people's views should be heard",
+        "She disliked the play",
+        "She will obey without ever speaking up"
+       ],
+       "answer": "She believes young people's views should be heard",
+       "accept": [],
+       "hint": "Think about what she told him the fathers should have done.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the crowd was completely silent at the end of the tragedy?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how the prologue prepared them and how they felt about the lovers.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
