@@ -5016,5 +5016,890 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "Luz e Sombra no Pátio",
+   "premise": "Três amigos do primeiro ano preparam um sarau barroco e cada um estuda uma vertente do poeta baiano apelidado de Boca do Inferno: a lírica, a religiosa e a satírica. Entre antíteses, argumentos e uma sátira que mira o alvo errado, eles descobrem o conflito que une as três faces do poeta.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: Três faces de um poeta",
+     "synopsis": "A professora Celeste apresenta o poeta baiano do Barroco e propõe um sarau. Lia, Tomás e Rafa sorteiam qual vertente cada um vai estudar.",
+     "text": "Na segunda-feira, a professora Celeste entrou na sala do primeiro ano carregando uma caixa de papelão velha e um sorriso de quem prepara uma armadilha. Escreveu na lousa, em letras grandes: \"Luz e sombra. Pecado e perdão. Riso e veneno.\"\n— Essas três duplas resumem o poeta que vamos estudar — disse ela. — Um baiano do século XVII, que viveu entre Salvador e Portugal e ganhou um apelido nada simpático: Boca do Inferno.\nA turma riu. Rafa, que sentava no fundo, levantou a cabeça pela primeira vez na manhã.\nA professora explicou que o Barroco nasceu de um tempo dividido. De um lado, a Contrarreforma lembrava as pessoas do pecado, da morte e da salvação da alma. De outro, o mundo oferecia prazeres, riquezas e beleza. O artista barroco vivia preso entre esses dois polos, e por isso a sua linguagem era cheia de antíteses, paradoxos e jogos de palavras.\n— O nosso poeta escreveu em três direções — continuou. — Há a poesia lírica, que fala do amor e da passagem do tempo; a poesia religiosa, em que o eu lírico conversa com Deus, arrependido; e a poesia satírica, que zomba dos vícios da Bahia colonial. Três faces, um mesmo homem.\nEntão ela abriu a caixa. Dentro havia três papéis dobrados.\n— Daqui a seis semanas faremos um sarau barroco no pátio. Cada grupo vai estudar uma vertente e escrever um poema original no estilo dela. Nada de copiar: quero ver vocês pensando como barrocos.\nLia, Tomás e Rafa formavam um trio desde o fundamental. Lia era a que anotava tudo com canetas coloridas; Tomás, o que fazia perguntas que ninguém esperava; Rafa, o que fazia piadas na hora errada. Cada um puxou um papel.\nLia abriu o dela e leu em voz alta:\n— Lírica.\nTomás olhou o seu e franziu a testa:\n— Religiosa. Logo eu, que só vou à missa no Natal.\nRafa desdobrou o último devagar, como quem abre um bilhete premiado, e soltou uma gargalhada.\n— Satírica! Professora, a senhora sorteou certo.\n— Cuidado — respondeu Celeste, sem tirar o sorriso. — A sátira é a vertente mais divertida e também a mais perigosa. O poeta pagou caro por ela.\nNa saída, os três se sentaram na escada da biblioteca. Lia desenhou um triângulo no caderno e escreveu uma vertente em cada ponta.\n— Se é o mesmo poeta, deve haver alguma coisa que liga as três — disse ela.\n— O conflito — arriscou Tomás. — A professora falou que o barroco vive dividido.\nRafa já rabiscava rimas no braço da cadeira.\n— Eu só sei que vou ser o Boca do Inferno da escola.\nLia fechou o caderno e encarou o amigo.\n— Então começa estudando, Boca. Sexta-feira cada um traz a primeira versão.\nRafa bateu continência, e os três desceram a escada rindo, sem imaginar quanto aquela brincadeira ainda ia render.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual apelido do poeta a professora menciona?",
+       "options": [
+        "Boca do Inferno",
+        "Bruxo do Cosme Velho",
+        "Poeta dos Escravos",
+        "Príncipe dos Poetas"
+       ],
+       "answer": "Boca do Inferno",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, em que século viveu o poeta estudado?",
+       "options": [
+        "Século XVI",
+        "Século XVII",
+        "Século XVIII",
+        "Século XIX"
+       ],
+       "answer": "Século XVII",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual vertente Tomás sorteou?",
+       "options": [
+        "Lírica",
+        "Religiosa",
+        "Satírica",
+        "Épica"
+       ],
+       "answer": "Religiosa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual movimento religioso a professora cita como pano de fundo do Barroco?",
+       "options": [],
+       "answer": "Contrarreforma",
+       "accept": [
+        "a Contrarreforma",
+        "Contra-Reforma"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, sobre o que fala a poesia lírica do autor?",
+       "options": [
+        "O amor e a passagem do tempo",
+        "Os vícios da Bahia",
+        "O arrependimento diante de Deus",
+        "As batalhas coloniais"
+       ],
+       "answer": "O amor e a passagem do tempo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a linguagem barroca é cheia de antíteses?",
+       "options": [
+        "Porque o artista vivia dividido entre polos opostos",
+        "Porque era proibido usar metáforas",
+        "Porque imitava a poesia indígena",
+        "Porque os poemas eram feitos para crianças"
+       ],
+       "answer": "Porque o artista vivia dividido entre polos opostos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a fala da professora sobre a sátira ser 'perigosa' sugere?",
+       "options": [
+        "Que o poeta sofreu consequências pelo que escreveu",
+        "Que a sátira era escrita em latim",
+        "Que Rafa vai perder o sarau",
+        "Que a sátira não rimava"
+       ],
+       "answer": "Que o poeta sofreu consequências pelo que escreveu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que a professora escolheu sortear as vertentes em vez de deixar cada aluno escolher?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O relógio de Lia",
+     "synopsis": "Lia tenta escrever um poema lírico e descobre o tema da fugacidade do tempo. Com a avó, entende o carpe diem barroco e o cultismo.",
+     "text": "Lia passou três noites olhando para uma página em branco. Sabia tudo o que a apostila dizia sobre a lírica barroca: o amor como conflito, a beleza que se desfaz, o convite para aproveitar a juventude antes que o tempo a leve. Mas, quando tentava escrever, saía um poema de cartão de aniversário.\nNo sábado, foi visitar a avó Nair, que morava num apartamento cheio de plantas e de relógios antigos. Enquanto a avó regava uma orquídea, Lia reclamou do poema.\n— Escreve sobre o quê? — perguntou a avó.\n— Sobre o tempo que passa e leva a beleza. Só que fica tudo muito óbvio.\nA avó apontou para a orquídea. Na véspera, a flor estava perfeita; agora uma pétala começava a escurecer nas bordas.\n— Óbvio é dizer que a flor murcha. Barroco é sofrer porque ela murcha enquanto você ainda está olhando para ela.\nLia ficou parada. Lembrou da aula: a professora Celeste tinha falado que os poetas barrocos comparavam a beleza da moça à flor, ao sol, à luz, e logo depois mostravam a noite, a sombra, a cinza. A antítese não era enfeite; era o próprio drama.\nEla abriu o caderno e escreveu: \"Na tua face a rosa amanhece / e já, na mesma face, anoitece\". Gostou do som. Depois acrescentou: \"goza o jardim enquanto é jardim, / que o tempo é jardineiro sem fim\".\n— Isso é o carpe diem — disse a avó, lendo por cima do ombro. — Aproveite o dia.\n— Mas no Barroco é um carpe diem triste — respondeu Lia, animada. — Não é só \"aproveite\". É \"aproveite porque tudo vai acabar\".\nNos dias seguintes, Lia caprichou nas imagens. Encheu o poema de cores, de metáforas preciosas, de inversões na ordem das palavras. Na sexta-feira, leu a versão para os amigos.\nTomás coçou a cabeça.\n— É bonito, mas eu me perdi lá pela quarta linha.\nA professora Celeste, que passava pelo corredor, pediu para ler. Sorriu.\n— Você descobriu o cultismo, Lia: o jogo de palavras, as imagens rebuscadas, a ordem invertida. É muito barroco. Mas o cultismo em excesso esconde a ideia. Tente equilibrar: mantenha a antítese entre o dia e a noite, e corte alguns enfeites.\nLia passou o fim de semana cortando. Cada palavra retirada doía um pouco, como a pétala escura da orquídea. No domingo, o poema tinha dois versos a menos e uma força que antes não tinha.\nEla mandou uma foto do caderno para a avó. A resposta chegou em um minuto: uma foto da orquídea, já sem a pétala, e a legenda \"o jardineiro passou por aqui\".",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem Lia visita no sábado?",
+       "options": [
+        "A avó",
+        "A professora",
+        "Tomás",
+        "A tia"
+       ],
+       "answer": "A avó",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual planta a avó estava regando?",
+       "options": [],
+       "answer": "orquídea",
+       "accept": [
+        "uma orquídea",
+        "a orquídea"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é o problema de Lia no início?",
+       "options": [
+        "Seus poemas saíam óbvios, como de cartão de aniversário",
+        "Ela não sabia rimar em português",
+        "Ela perdeu o caderno",
+        "Ela não queria participar do sarau"
+       ],
+       "answer": "Seus poemas saíam óbvios, como de cartão de aniversário",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual expressão latina a avó usa para 'aproveite o dia'?",
+       "options": [],
+       "answer": "carpe diem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que nome a professora dá ao estilo de imagens rebuscadas e ordem invertida das palavras?",
+       "options": [
+        "Cultismo",
+        "Conceptismo",
+        "Realismo",
+        "Arcadismo"
+       ],
+       "answer": "Cultismo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que antítese aparece nos versos de Lia?",
+       "options": [
+        "Amanhecer e anoitecer",
+        "Céu e inferno",
+        "Riqueza e pobreza",
+        "Mar e sertão"
+       ],
+       "answer": "Amanhecer e anoitecer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a legenda da avó, 'o jardineiro passou por aqui', quer dizer?",
+       "options": [
+        "Que o tempo levou a pétala, como no poema",
+        "Que um jardineiro de verdade visitou a casa",
+        "Que a avó trocou de planta",
+        "Que Lia deveria apagar o poema"
+       ],
+       "answer": "Que o tempo levou a pétala, como no poema",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que cortar palavras deixou o poema de Lia mais forte?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A discussão de Tomás",
+     "synopsis": "Tomás não sabe como escrever um poema religioso até perceber que o eu lírico barroco argumenta com Deus. Ele descobre o conceptismo.",
+     "text": "Tomás tinha um problema sério: achava que poesia religiosa era uma oração rimada, e orações rimadas lhe davam sono. Na biblioteca, folheava a apostila com cara de quem lê bula de remédio.\n— Escuta isso — disse Lia, sentando-se ao lado dele. — A professora falou que, nos sonetos religiosos, o eu lírico não só pede perdão. Ele discute com Deus.\nTomás levantou a sobrancelha.\n— Discute como?\n— Ele argumenta. Diz que pecou muito, sim, mas que isso dá a Deus uma chance maior de mostrar misericórdia. Quanto maior o pecado, maior a glória do perdão.\nTomás largou a apostila.\n— Isso é quase um advogado tentando ganhar a causa.\nNa aula seguinte, ele levou a ideia para a professora Celeste. Ela confirmou, animada.\n— É o conceptismo, Tomás. Enquanto o cultismo brinca com as palavras e as imagens, o conceptismo brinca com as ideias: raciocínios engenhosos, comparações lógicas, paradoxos. O pecador barroco vive o conflito entre a culpa e a esperança, e usa a inteligência para se aproximar do perdão.\n— Então o poema pode ter um argumento — disse Tomás, mais para si mesmo do que para ela.\n— Deve ter.\nNaquela noite, ele pensou num caso concreto. Lembrou da ovelha perdida da parábola que ouvira na infância: o pastor deixa as outras e vai buscar a que se desgarrou. Se a ovelha fosse esperta, pensou, diria ao pastor: \"Se você não me buscar, perde uma ovelha e a fama de bom pastor\".\nRiu sozinho no quarto. Era isso. Escreveu o primeiro quarteto: o eu lírico confessa que se afastou do rebanho. No segundo, admite a culpa sem desculpas. Nos tercetos, vira o jogo: lembra ao pastor que a alegria de encontrar a ovelha perdida é maior do que a de contar as que ficaram.\nQuando terminou, contou as sílabas nos dedos, como a professora ensinara, e ajustou dois versos que estavam compridos demais.\nNa sexta, leu para o trio. Rafa ficou em silêncio, coisa rara.\n— Cara, você fez Deus perder um debate.\n— Não — corrigiu Tomás. — O eu lírico não vence. Ele se humilha e, ao mesmo tempo, argumenta. É as duas coisas juntas. Isso é o barroco: o pecador está no chão, mas a cabeça não para de pensar.\nLia anotou a frase com a caneta roxa, a das ideias importantes.\nTomás guardou o poema na mochila com um cuidado que ninguém tinha visto nele antes. Talvez a poesia religiosa não desse tanto sono assim.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Tomás pensava inicialmente da poesia religiosa?",
+       "options": [
+        "Que era uma oração rimada e chata",
+        "Que era a mais difícil de rimar",
+        "Que era proibida na escola",
+        "Que era sempre satírica"
+       ],
+       "answer": "Que era uma oração rimada e chata",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo Lia, o que o eu lírico faz nos sonetos religiosos além de pedir perdão?",
+       "options": [
+        "Discute com Deus",
+        "Ataca a Igreja",
+        "Fala de amor",
+        "Descreve a natureza"
+       ],
+       "answer": "Discute com Deus",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual estilo barroco 'brinca com as ideias', segundo a professora?",
+       "options": [],
+       "answer": "conceptismo",
+       "accept": [
+        "o conceptismo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que imagem Tomás usa no poema?",
+       "options": [
+        "A ovelha perdida",
+        "A rosa que murcha",
+        "O navio mercante",
+        "O relógio parado"
+       ],
+       "answer": "A ovelha perdida",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é o argumento central do eu lírico de Tomás?",
+       "options": [
+        "Encontrar a ovelha perdida traz mais alegria ao pastor",
+        "A ovelha não tem culpa de nada",
+        "O pastor deveria esquecer a ovelha",
+        "Todas as ovelhas são iguais"
+       ],
+       "answer": "Encontrar a ovelha perdida traz mais alegria ao pastor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que forma poética Tomás escreve, com quartetos e tercetos?",
+       "options": [
+        "Soneto",
+        "Haicai",
+        "Cordel",
+        "Ode"
+       ],
+       "answer": "Soneto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase 'o pecador está no chão, mas a cabeça não para de pensar' mostra sobre o barroco?",
+       "options": [
+        "A união de humildade e raciocínio engenhoso",
+        "Que o pecador desiste de pensar",
+        "Que a fé não importa",
+        "Que a culpa desaparece"
+       ],
+       "answer": "A união de humildade e raciocínio engenhoso",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Tomás mudou de opinião sobre a poesia religiosa?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: A cantina de Rafa",
+     "synopsis": "Rafa escreve uma sátira sobre a cantina da escola e faz a turma rir. A professora explica que a sátira barroca mirava a sociedade da Bahia colonial.",
+     "text": "Rafa não teve dificuldade nenhuma para começar. Em uma tarde escreveu uma sátira inteira sobre a cantina da escola: o pão de queijo que já nascia frio, o suco \"natural\" que vinha de pacote, o preço que subia mais rápido do que a nota de matemática dele. Tinha rimas engraçadas, trocadilhos e um refrão que a turma decorou em um dia.\nNo intervalo, alguém leu o poema em voz alta perto da fila do lanche. Houve gargalhadas. Rafa se sentiu o próprio Boca do Inferno.\nNa aula de Literatura, a professora Celeste pediu para ouvir. Riu em dois versos, ficou séria em outros dois, e então fez uma pergunta que Rafa não esperava:\n— De quem é a culpa pelo pão de queijo frio?\n— Ué... da cantina.\n— E quem é a cantina? — insistiu ela.\nRafa abriu a boca e não respondeu.\nA professora foi até a lousa e desenhou um mapa simples: Salvador no século XVII, capital da colônia, cheia de engenhos, igrejas e navios.\n— O nosso poeta satirizava uma cidade inteira — explicou. — Ele mirava os comerciantes que vinham de fora, compravam o açúcar barato e vendiam caro tudo o que chegava nos navios. Zombava das autoridades que enriqueciam no cargo, dos falsos fidalgos que inventavam linhagens nobres, dos religiosos que pregavam uma coisa e faziam outra. A sátira dele era uma lente sobre os vícios de uma sociedade.\n— Então ele também atacava pessoas — disse Rafa, defendendo-se.\n— Às vezes, sim, e por isso arrumou muitos inimigos. Mas o que fez dele um grande poeta não foi o insulto. Foi mostrar como a Bahia colonial funcionava: quem ganhava, quem perdia, quem fingia ser o que não era.\nLia levantou a mão.\n— Professora, então a sátira tem um lado moral? Ela ri para corrigir?\n— Muitas vezes, sim. A sátira exagera para revelar. Mas exagero sem alvo vira só deboche.\nRafa voltou para casa pensativo. Releu o poema e notou que todo o humor caía sobre uma figura só: o cantineiro, seu Arlindo, um senhor simpático que sempre guardava um salgado para quem chegava atrasado. No poema, ele era ganancioso, preguiçoso e mal-humorado. Nada daquilo era verdade.\nRafa mandou uma mensagem no grupo do trio: \"Acho que fiz uma sátira contra a pessoa errada.\"\nTomás respondeu primeiro: \"Quem decide o preço do lanche?\"\nLia completou: \"E quem compra o pão de queijo congelado?\"\nRafa ficou olhando para a tela por um bom tempo. Pela primeira vez, a piada não parecia tão engraçada.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual é o assunto da sátira de Rafa?",
+       "options": [
+        "A cantina da escola",
+        "A biblioteca",
+        "O time de futebol",
+        "O ônibus escolar"
+       ],
+       "answer": "A cantina da escola",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que pergunta a professora faz a Rafa?",
+       "options": [
+        "De quem é a culpa pelo pão de queijo frio?",
+        "Quantos versos tem o poema?",
+        "Quem escreveu o refrão?",
+        "Por que você não rimou?"
+       ],
+       "answer": "De quem é a culpa pelo pão de queijo frio?",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual cidade a professora desenha como capital da colônia no século XVII?",
+       "options": [],
+       "answer": "Salvador",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual produto os comerciantes compravam barato na Bahia, segundo a professora?",
+       "options": [
+        "Açúcar",
+        "Ouro",
+        "Café",
+        "Borracha"
+       ],
+       "answer": "Açúcar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual destes NÃO aparece como alvo da sátira do poeta, segundo a professora?",
+       "options": [
+        "Os indígenas das aldeias",
+        "Os falsos fidalgos",
+        "As autoridades que enriqueciam no cargo",
+        "Os religiosos que pregavam uma coisa e faziam outra"
+       ],
+       "answer": "Os indígenas das aldeias",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do cantineiro?",
+       "options": [],
+       "answer": "seu Arlindo",
+       "accept": [
+        "Arlindo"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Rafa percebe que fez 'uma sátira contra a pessoa errada'?",
+       "options": [
+        "Porque atacou o cantineiro, que não decide os problemas da cantina",
+        "Porque o poema não tinha rimas",
+        "Porque a professora proibiu o poema",
+        "Porque copiou outro autor"
+       ],
+       "answer": "Porque atacou o cantineiro, que não decide os problemas da cantina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que a professora diz que 'exagero sem alvo vira só deboche'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: O preço da língua",
+     "synopsis": "O poema de Rafa chega ao seu Arlindo, que fica magoado. Rafa pede desculpas e aprende sobre as consequências que o poeta sofreu.",
+     "text": "Na segunda-feira, Rafa chegou à cantina e encontrou uma folha impressa presa no balcão com fita adesiva. Era o poema dele. Alguém tinha imprimido e colado ali, talvez de brincadeira. Seu Arlindo não estava sorrindo. Entregou o troco sem dizer uma palavra e não guardou salgado para ninguém.\nRafa passou a manhã inteira com um nó no estômago. No intervalo, esperou a fila acabar e se aproximou do balcão.\n— Seu Arlindo, fui eu que escrevi aquilo.\nO cantineiro tirou os óculos e limpou as lentes no avental, devagar.\n— Eu sei, menino. Tem o seu nome embaixo.\n— Era para uma aula sobre sátira. Mas eu errei o alvo. O senhor não tem culpa do preço, nem do pão congelado.\nSeu Arlindo ficou um tempo calado. Depois soltou um suspiro.\n— O preço quem decide é a empresa que aluga a cantina. O pão vem da fábrica deles. Eu só esquento. Já reclamei muitas vezes, sabe? Ninguém escuta.\nRafa arrancou a folha do balcão e a dobrou até ficar do tamanho de uma moeda.\n— Desculpa.\n— Desculpado. Mas escreve direito da próxima vez — respondeu o cantineiro, e pela primeira vez no dia quase sorriu.\nÀ tarde, Rafa contou tudo à professora Celeste. Ela ouviu com atenção e então contou uma parte da história que ainda não tinha mostrado à turma.\n— O nosso poeta também pagou pelo que escreveu. As sátiras dele irritaram tanta gente poderosa em Salvador que ele acabou degredado para Angola, do outro lado do Atlântico. Anos depois, pôde voltar ao Brasil, mas não à Bahia. Morreu em Recife.\n— Por causa de poemas? — perguntou Rafa.\n— Por causa de poemas que diziam o que muitos não queriam ouvir. A palavra tem força, Rafa. Por isso a sátira exige responsabilidade: saber quem você está criticando e por quê.\nRafa pensou no seu Arlindo limpando os óculos no avental.\n— Professora, dá para fazer sátira sem machucar quem não merece?\n— Dá. Os melhores satíricos miram quem tem poder, não quem está do lado de baixo do balcão. Eles riem de um sistema, de uma hipocrisia, de um vício coletivo.\nNaquela noite, Rafa não escreveu nada. Ficou só pensando. Na mensagem do grupo, contou o que tinha acontecido. Lia mandou um coração. Tomás mandou uma frase: \"Até o Boca do Inferno teve que atravessar o oceano. Você só teve que atravessar a cantina.\"\nRafa riu, pela primeira vez desde de manhã. E começou a imaginar uma nova sátira, desta vez com o alvo certo.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Rafa encontra preso no balcão da cantina?",
+       "options": [
+        "O seu poema impresso",
+        "Um aviso de preço novo",
+        "Um bilhete da professora",
+        "Uma lista de lanches"
+       ],
+       "answer": "O seu poema impresso",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como seu Arlindo reage inicialmente?",
+       "options": [
+        "Fica sério e não sorri",
+        "Ri do poema",
+        "Expulsa Rafa da cantina",
+        "Reclama com a diretora"
+       ],
+       "answer": "Fica sério e não sorri",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem decide o preço dos lanches, segundo seu Arlindo?",
+       "options": [
+        "A empresa que aluga a cantina",
+        "A professora Celeste",
+        "Os alunos",
+        "O próprio seu Arlindo"
+       ],
+       "answer": "A empresa que aluga a cantina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, para qual lugar o poeta foi degredado por causa das sátiras?",
+       "options": [],
+       "answer": "Angola",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, em que cidade o poeta morreu, segundo a professora?",
+       "options": [],
+       "answer": "Recife",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, quem os melhores satíricos miram?",
+       "options": [
+        "Quem tem poder",
+        "Os mais pobres",
+        "Os próprios amigos",
+        "Os professores"
+       ],
+       "answer": "Quem tem poder",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase de Tomás compara?",
+       "options": [
+        "O exílio do poeta com o pedido de desculpas de Rafa",
+        "A Bahia com São Paulo",
+        "A sátira com a lírica",
+        "O oceano com a escola inteira"
+       ],
+       "answer": "O exílio do poeta com o pedido de desculpas de Rafa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Rafa não escreveu nada naquela noite?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: A cidade que vende tudo",
+     "synopsis": "Rafa reescreve a sátira mirando o sistema, como o poeta fazia com a Bahia colonial. O trio descobre que as três vertentes se encontram.",
+     "text": "Durante uma semana, Rafa fez algo que nunca tinha feito: pesquisou antes de rimar. Leu na apostila sobre a Salvador do século XVII, a cidade onde o açúcar dos engenhos saía em navios rumo à Europa e de onde voltavam tecidos, vinhos e objetos de luxo vendidos a preços altos. Descobriu que o poeta comparava a cidade de antes, mais simples, com a cidade rica e ao mesmo tempo empobrecida do seu tempo. A riqueza passava pela Bahia, mas ia embora com os navios.\n— É como se a cidade fosse um porto de passagem do próprio dinheiro — disse Rafa no intervalo.\n— E a escola? — perguntou Lia.\nRafa sorriu. Tinha a resposta pronta.\n— A escola é um pequeno porto também. Tudo é terceirizado, tudo vem de fora, tudo tem um preço. A cantina, a máquina de lanches, o uniforme, as excursões. Quem decide nunca aparece. Quem atende leva a culpa.\nO novo poema não tinha nenhum nome. O eu lírico era um aluno que conversava com a própria escola, como o poeta conversava com a Bahia. No começo, lembrava a escola de antigamente, com o pátio de terra e a pipoca da festa junina. Depois, mostrava a escola de agora, brilhante e cara, onde até o ar-condicionado parecia ter etiqueta. O refrão perguntava, em tom de falsa inocência, quem lucrava com o pão de queijo frio.\nTomás leu e apontou um verso.\n— Aqui você usou antítese: \"tão rica de vitrines, tão pobre de recreio\".\n— E aqui tem um raciocínio que vira do avesso — completou Lia. — Isso é conceptismo, igual ao meu amigo advogado religioso aqui.\nTomás fez uma reverência.\nFoi nesse momento que Lia abriu o caderno no triângulo que tinha desenhado no primeiro dia. Ligou as três pontas com a caneta roxa.\n— Olha só. No meu poema, a beleza passa e eu sofro com isso. No do Tomás, o pecador sofre, mas tenta ganhar o perdão com a razão. No do Rafa, a cidade parece rica, mas está vazia por dentro. Em todos, tem uma coisa que parece uma e é outra.\n— Aparência e essência — disse Tomás, lembrando da apostila.\n— Contraste — completou Rafa. — O poeta não era três pessoas. Era uma pessoa olhando o mundo dividido de três jeitos.\nOs três ficaram em silêncio, satisfeitos e um pouco surpresos com eles mesmos.\nNo dia seguinte, Rafa levou o poema novo à cantina antes de entregá-lo à professora. Seu Arlindo leu tudo, devagar, mexendo os lábios. No final, ergueu os olhos.\n— Esse aqui eu colava no balcão.\nRafa saiu da cantina mais leve do que entrou, com um pão de queijo, ainda frio, embrulhado num guardanapo.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Rafa faz pela primeira vez antes de escrever?",
+       "options": [
+        "Pesquisa",
+        "Pede ajuda à avó",
+        "Copia um poema",
+        "Desiste do sarau"
+       ],
+       "answer": "Pesquisa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que saía de Salvador nos navios rumo à Europa?",
+       "options": [
+        "Açúcar",
+        "Vinho",
+        "Tecidos",
+        "Ouro"
+       ],
+       "answer": "Açúcar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem é o eu lírico do novo poema de Rafa?",
+       "options": [
+        "Um aluno que conversa com a escola",
+        "O cantineiro",
+        "Um comerciante",
+        "A professora"
+       ],
+       "answer": "Um aluno que conversa com a escola",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que recurso Tomás identifica no verso 'tão rica de vitrines, tão pobre de recreio'?",
+       "options": [],
+       "answer": "antítese",
+       "accept": [
+        "a antítese"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que o novo poema de Rafa NÃO tem, ao contrário do primeiro?",
+       "options": [
+        "Nomes de pessoas",
+        "Refrão",
+        "Rimas",
+        "Antíteses"
+       ],
+       "answer": "Nomes de pessoas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual oposição Tomás aponta como comum às três vertentes?",
+       "options": [
+        "Aparência e essência",
+        "Prosa e verso",
+        "Campo e cidade",
+        "Infância e velhice"
+       ],
+       "answer": "Aparência e essência",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a fala de seu Arlindo, 'Esse aqui eu colava no balcão', mostra?",
+       "options": [
+        "Que a nova sátira mira o alvo certo",
+        "Que ele quer se vingar de Rafa",
+        "Que ele não entendeu o poema",
+        "Que ele vai sair da cantina"
+       ],
+       "answer": "Que a nova sátira mira o alvo certo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o novo poema de Rafa é melhor como sátira do que o primeiro?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: Luz e sombra no pátio",
+     "synopsis": "No sarau barroco, o trio apresenta os três poemas. A plateia percebe o contraste que une as vertentes, e a professora fecha o estudo com uma surpresa.",
+     "text": "O pátio estava decorado com velas elétricas, tecidos dourados e uma faixa pintada pelos alunos do primeiro ano: \"Sarau Barroco — luz e sombra\". As cadeiras de plástico estavam todas ocupadas. Na primeira fila, a avó Nair segurava um vaso com uma orquídea nova. Ao fundo, de avental, seu Arlindo assistia encostado na porta da cantina.\nA professora Celeste abriu a noite explicando o desafio: três alunos, três vertentes, um único poeta como inspiração. Pediu à plateia que prestasse atenção no que se repetia entre os poemas.\nLia foi a primeira. A voz tremeu no primeiro verso e se firmou no segundo. Falou da rosa que amanhece e anoitece na mesma face, do tempo jardineiro, do convite triste para aproveitar o jardim. Quando terminou, a avó levantou a orquídea como se fosse um troféu.\nTomás subiu em seguida, com as mãos nos bolsos para disfarçar o nervosismo. Leu o soneto da ovelha perdida devagar, marcando bem a virada dos tercetos. Na última estrofe, quando o eu lírico lembrava ao pastor a alegria do reencontro, um silêncio curioso tomou conta do pátio. Depois vieram os aplausos.\nPor último, Rafa. Antes de começar, ele disse uma frase que não estava no roteiro:\n— Escrevi duas versões deste poema. A primeira mirava a pessoa errada. Esta mira o lugar certo.\nE leu a sátira da escola que vende tudo. A plateia riu nas rimas, ficou séria nas antíteses e explodiu no refrão sobre o pão de queijo frio. Lá no fundo, seu Arlindo aplaudiu de pé.\nQuando o trio voltou ao palco junto, a professora fez uma pergunta ao público:\n— O que os três poemas têm em comum?\nUma menina do nono ano levantou a mão.\n— Todos falam de uma coisa bonita que esconde outra coisa. A rosa esconde a noite, o pecador esconde a esperança, a escola rica esconde um recreio pobre.\n— Exatamente — disse Celeste. — O Barroco é a arte do conflito. O nosso poeta foi lírico, religioso e satírico, mas sempre olhou o mundo como um lugar dividido entre a aparência e a essência, o prazer e a morte, o pecado e o perdão.\nEntão ela pegou a velha caixa de papelão do primeiro dia e a entregou aos três.\n— Para vocês guardarem.\nDentro havia três papéis novos. Lia abriu o seu: \"Lírica, religiosa e satírica: você também consegue escrever as três.\" Os de Tomás e Rafa diziam a mesma coisa.\n— Isso é uma armadilha — disse Rafa.\n— É um convite — respondeu a professora. — Como todo bom poema barroco, as duas coisas ao mesmo tempo.\nO trio desceu do palco rindo. Na saída, seu Arlindo estendeu a Rafa um guardanapo. Dentro, um pão de queijo. Desta vez, quentinho.",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual era o nome escrito na faixa do pátio?",
+       "options": [],
+       "answer": "Sarau Barroco",
+       "accept": [
+        "Sarau Barroco — luz e sombra",
+        "Sarau Barroco: luz e sombra"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem se apresenta primeiro?",
+       "options": [
+        "Lia",
+        "Tomás",
+        "Rafa",
+        "A professora"
+       ],
+       "answer": "Lia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a avó Nair segura na primeira fila?",
+       "options": [
+        "Um vaso com uma orquídea",
+        "Um caderno roxo",
+        "Uma caixa de papelão",
+        "Uma vela elétrica"
+       ],
+       "answer": "Um vaso com uma orquídea",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Rafa diz antes de ler o poema?",
+       "options": [
+        "Que escreveu duas versões e a primeira mirava a pessoa errada",
+        "Que não terminou o poema",
+        "Que o poema era do seu Arlindo",
+        "Que ia ler em latim"
+       ],
+       "answer": "Que escreveu duas versões e a primeira mirava a pessoa errada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, segundo a menina do nono ano, o que os três poemas têm em comum?",
+       "options": [
+        "Uma coisa bonita que esconde outra",
+        "Todos falam de comida",
+        "Todos são sonetos",
+        "Todos são sobre amor"
+       ],
+       "answer": "Uma coisa bonita que esconde outra",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que estava escrito nos papéis da caixa?",
+       "options": [
+        "Que eles também conseguem escrever as três vertentes",
+        "O nome de um novo poeta",
+        "A nota final do trabalho",
+        "Um convite para outro sarau"
+       ],
+       "answer": "Que eles também conseguem escrever as três vertentes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que significa o pão de queijo 'quentinho' no final?",
+       "options": [
+        "Que a relação entre Rafa e seu Arlindo foi restaurada",
+        "Que a cantina trocou de empresa",
+        "Que Rafa vai trabalhar na cantina",
+        "Que o sarau foi cancelado"
+       ],
+       "answer": "Que a relação entre Rafa e seu Arlindo foi restaurada",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que a professora chama o papel de 'armadilha' e 'convite' ao mesmo tempo, como um poema barroco?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
