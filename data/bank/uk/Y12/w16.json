@@ -5151,6 +5151,2568 @@
      "errors": []
     }
    ]
+  },
+  "math-hl": {
+   "topic": "Transformations, modulus functions and inequalities (SL 2.11, AHL 2.15, 2.16)",
+   "questions": [
+    {
+     "id": "r1bihv8buca8on",
+     "subject": "math",
+     "type": "mc",
+     "q": "The graph of y = f(x) is translated by the vector (3, 0). Which is the equation of the new graph?",
+     "options": [
+      "y = f(x − 3)",
+      "y = f(x + 3)",
+      "y = f(x) + 3",
+      "y = f(x) − 3"
+     ],
+     "answer": "y = f(x − 3)",
+     "accept": [],
+     "hint": "A horizontal translation changes the input x, and the sign works 'the opposite way'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmrbs0a1skkdgk",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which transformation maps y = f(x) onto y = f(2x)?",
+     "options": [
+      "Horizontal stretch, scale factor 1/2",
+      "Horizontal stretch, scale factor 2",
+      "Vertical stretch, scale factor 2",
+      "Vertical stretch, scale factor 1/2"
+     ],
+     "answer": "Horizontal stretch, scale factor 1/2",
+     "accept": [],
+     "hint": "Changes inside the bracket act on x and are the inverse of what you might expect.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tx8y371wckx4l",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which transformation maps y = f(x) onto y = −f(x)?",
+     "options": [
+      "Reflection in the x-axis",
+      "Reflection in the y-axis",
+      "Reflection in the line y = x",
+      "Rotation of 90° about the origin"
+     ],
+     "answer": "Reflection in the x-axis",
+     "accept": [],
+     "hint": "Every y-value changes sign while x stays the same.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1udhn8x1jalmgg",
+     "subject": "math",
+     "type": "short",
+     "q": "The point (4, −6) lies on y = f(x). Write down the coordinates of its image on y = |f(x)|.",
+     "options": [],
+     "answer": "(4, 6)",
+     "accept": [
+      "(4,6)",
+      "4, 6"
+     ],
+     "hint": "The modulus only affects points below the x-axis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pza9qrpmdkjz",
+     "subject": "math",
+     "type": "short",
+     "q": "The point (2, 7) lies on y = f(x). Write down the coordinates of another point that must lie on y = f(|x|).",
+     "options": [],
+     "answer": "(−2, 7)",
+     "accept": [
+      "(-2, 7)",
+      "(-2,7)",
+      "(−2,7)"
+     ],
+     "hint": "For x ≥ 0 the graph is unchanged; then that part is reflected in the y-axis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13nu3dmtbtpi0",
+     "subject": "math",
+     "type": "num",
+     "q": "Solve |x − 3| = 5 and give the sum of the two solutions.",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Consider x − 3 = 5 and x − 3 = −5.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rueqh3h27i230",
+     "subject": "math",
+     "type": "num",
+     "q": "The graph of y = x² is translated by (0, 2) and then stretched vertically by scale factor 3. Find the y-intercept of the resulting graph.",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Apply the transformations in order: first y = x² + 2, then multiply the whole function by 3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fwpssk1db8oyr",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve the inequality |2x − 1| < 7.",
+     "options": [],
+     "answer": "−3 < x < 4",
+     "accept": [
+      "-3 < x < 4",
+      "-3<x<4",
+      "−3<x<4"
+     ],
+     "hint": "Rewrite as −7 < 2x − 1 < 7.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx6u8x6lkl9z1",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve the inequality |x + 2| ≥ 3.",
+     "options": [],
+     "answer": "x ≤ −5 or x ≥ 1",
+     "accept": [
+      "x ≤ -5 or x ≥ 1",
+      "x <= -5 or x >= 1",
+      "x ≥ 1 or x ≤ −5",
+      "x ≥ 1 or x ≤ -5"
+     ],
+     "hint": "The distance from x to −2 is at least 3, so there are two separate regions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gibp3718j9or5",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve (x − 1)(x − 4) < 0.",
+     "options": [],
+     "answer": "1 < x < 4",
+     "accept": [
+      "1<x<4"
+     ],
+     "hint": "Sketch the parabola: where is it below the x-axis?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwwpabr85s0hg",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve x² − x − 6 > 0.",
+     "options": [],
+     "answer": "x < −2 or x > 3",
+     "accept": [
+      "x < -2 or x > 3",
+      "x<-2 or x>3",
+      "x > 3 or x < −2",
+      "x > 3 or x < -2"
+     ],
+     "hint": "Factorise first, then decide where the parabola is above the x-axis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r1nd3vbka4pw",
+     "subject": "math",
+     "type": "mc",
+     "q": "f(x) has a root at x = a. Which feature does the graph of y = 1/f(x) have at x = a?",
+     "options": [
+      "A vertical asymptote",
+      "A horizontal asymptote",
+      "A root",
+      "A maximum point"
+     ],
+     "answer": "A vertical asymptote",
+     "accept": [],
+     "hint": "What happens to 1 divided by a number that gets closer and closer to zero?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8qriwz1p6ky3x",
+     "subject": "math",
+     "type": "mc",
+     "q": "For f(x) = x² + 1, which statement about the graph of y = 1/f(x) is true?",
+     "options": [
+      "It has a maximum point at (0, 1)",
+      "It has a minimum point at (0, 1)",
+      "It has a vertical asymptote at x = 0",
+      "It passes through the origin"
+     ],
+     "answer": "It has a maximum point at (0, 1)",
+     "accept": [],
+     "hint": "Where f has a minimum, 1/f has... ?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzxb547fw2sdy",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve |x − 1| = |2x + 4|.",
+     "options": [],
+     "answer": "x = −5 or x = −1",
+     "accept": [
+      "x = -5 or x = -1",
+      "-5, -1",
+      "−5, −1",
+      "x = −1 or x = −5",
+      "x = -1 or x = -5"
+     ],
+     "hint": "Solve x − 1 = 2x + 4 and x − 1 = −(2x + 4), then check both.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r131mcm71nd5ay2",
+     "subject": "math",
+     "type": "short",
+     "q": "Solve x³ − 4x > 0.",
+     "options": [],
+     "answer": "−2 < x < 0 or x > 2",
+     "accept": [
+      "-2 < x < 0 or x > 2",
+      "x > 2 or −2 < x < 0",
+      "x > 2 or -2 < x < 0"
+     ],
+     "hint": "Factorise fully into three linear factors and use a sign diagram.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2e607518s907n",
+     "subject": "math",
+     "type": "open",
+     "q": "Describe a sequence of transformations that maps the graph of y = f(x) onto the graph of y = 3 − f(2x).",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Rewrite as y = −f(2x) + 3 and deal with the inside of the bracket first.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math-sl": {
+   "topic": "Statistics: sampling and presenting data (SL 4.1, 4.2)",
+   "questions": [
+    {
+     "id": "rsobrnlztw4ks",
+     "subject": "math",
+     "type": "mc",
+     "q": "A researcher wants to know the average height of all 16-year-olds in a city. What is the group 'all 16-year-olds in the city' called?",
+     "options": [
+      "The population",
+      "The sample",
+      "The sampling frame",
+      "The outlier"
+     ],
+     "answer": "The population",
+     "accept": [],
+     "hint": "It is the whole group the conclusion is about.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6aahbg17twhua",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which sampling technique gives every member of the population an equal chance of being chosen, independently of each other?",
+     "options": [
+      "Simple random sampling",
+      "Convenience sampling",
+      "Quota sampling",
+      "Systematic sampling"
+     ],
+     "answer": "Simple random sampling",
+     "accept": [],
+     "hint": "Think of drawing names from a hat.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcn3j8v1b6n73f",
+     "subject": "math",
+     "type": "mc",
+     "q": "A teacher chooses every 10th name on an alphabetical list of students. Which sampling technique is this?",
+     "options": [
+      "Systematic",
+      "Stratified",
+      "Convenience",
+      "Quota"
+     ],
+     "answer": "Systematic",
+     "accept": [],
+     "hint": "The selection follows a fixed interval.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h3xk2j1mgekkf",
+     "subject": "math",
+     "type": "mc",
+     "q": "A town is divided into age groups and a random sample is taken from each group in proportion to its size. Which sampling technique is this?",
+     "options": [
+      "Stratified",
+      "Systematic",
+      "Convenience",
+      "Cluster"
+     ],
+     "answer": "Stratified",
+     "accept": [],
+     "hint": "The population is split into layers (strata) first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxnl3cq1ntf32f",
+     "subject": "math",
+     "type": "mc",
+     "q": "A survey is done by asking the first 30 people who walk into a shopping centre. Which sampling technique is this?",
+     "options": [
+      "Convenience",
+      "Simple random",
+      "Stratified",
+      "Systematic"
+     ],
+     "answer": "Convenience",
+     "accept": [],
+     "hint": "The people chosen are simply the easiest to reach.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrgettskrmgky",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which sampling technique chooses a fixed number of people from each group, but not at random?",
+     "options": [
+      "Quota",
+      "Stratified",
+      "Simple random",
+      "Systematic"
+     ],
+     "answer": "Quota",
+     "accept": [],
+     "hint": "It is similar to stratified sampling, but the interviewer decides who to ask.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rma3zq06k85f7",
+     "subject": "math",
+     "type": "num",
+     "q": "A school has 600 students: 240 in Year 12 and 360 in Year 13. A stratified sample of 50 students is taken. How many Year 12 students should be in the sample?",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Find the fraction of the school that is in Year 12.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "reunu3vuhgr2q",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which type of data is most suitable for a histogram?",
+     "options": [
+      "Continuous data",
+      "Categorical data",
+      "Ranked opinions",
+      "Names of countries"
+     ],
+     "answer": "Continuous data",
+     "accept": [],
+     "hint": "The bars touch because the classes join up with no gaps.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kma3uq1lakwdg",
+     "subject": "math",
+     "type": "num",
+     "q": "A box plot shows Q1 = 12 and Q3 = 20. Find the interquartile range.",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "The IQR is the width of the box.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13myf9j5m7t6i",
+     "subject": "math",
+     "type": "num",
+     "q": "A data set has Q1 = 12 and Q3 = 20. Using the rule 'more than 1.5 × IQR above Q3', find the value above which a data point is an outlier.",
+     "options": [],
+     "answer": "32",
+     "accept": [],
+     "hint": "Work out 1.5 × IQR and add it to Q3.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnioaxbaaol",
+     "subject": "math",
+     "type": "num",
+     "q": "A data set has Q1 = 40 and Q3 = 52. Find the value below which a data point is an outlier.",
+     "options": [],
+     "answer": "22",
+     "accept": [],
+     "hint": "Subtract 1.5 × IQR from Q1.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r198s5y09mv34z",
+     "subject": "math",
+     "type": "num",
+     "q": "A cumulative frequency graph shows data for 80 students. At what cumulative frequency should you read across to estimate the median?",
+     "options": [],
+     "answer": "40",
+     "accept": [],
+     "hint": "The median is the middle of the data.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jwlk08ki68lb",
+     "subject": "math",
+     "type": "num",
+     "q": "A cumulative frequency graph shows data for 120 runners. At what cumulative frequency should you read across to estimate the upper quartile?",
+     "options": [],
+     "answer": "90",
+     "accept": [],
+     "hint": "The upper quartile is three-quarters of the way through the data.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr2sbl47nponz",
+     "subject": "math",
+     "type": "num",
+     "q": "For the data 3, 5, 7, 8, 9, 12, 30, find the interquartile range.",
+     "options": [],
+     "answer": "7",
+     "accept": [],
+     "hint": "Find the median, then the medians of the lower and upper halves (not including the middle value).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r103u4zq2dr9xv",
+     "subject": "math",
+     "type": "mc",
+     "q": "A website asks its visitors to fill in a survey about how many hours people spend online each day. What is the main problem with the results?",
+     "options": [
+      "The sample is biased towards people who use the internet a lot",
+      "The sample is too stratified",
+      "The data is categorical",
+      "The population is too small"
+     ],
+     "answer": "The sample is biased towards people who use the internet a lot",
+     "accept": [],
+     "hint": "Who is most likely to see and answer the survey?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d01uzu1j8cunt",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain why a stratified sample might give a more reliable picture than a simple random sample when surveying the opinions of students from different year groups.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what could happen to the proportions of each year group in a random sample.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "phys-hl": {
+   "topic": "C.1 Simple harmonic motion",
+   "questions": [
+    {
+     "id": "r1632gh016uamia",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which condition defines simple harmonic motion?",
+     "options": [
+      "Acceleration is proportional to displacement and directed towards the equilibrium position",
+      "Acceleration is constant and directed downwards",
+      "Velocity is proportional to displacement",
+      "Displacement is proportional to time"
+     ],
+     "answer": "Acceleration is proportional to displacement and directed towards the equilibrium position",
+     "accept": [],
+     "hint": "Think about the equation a = −ω²x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs4hus5cdrnf",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Where is the speed of an object in SHM greatest?",
+     "options": [
+      "At the equilibrium position",
+      "At maximum displacement",
+      "Halfway between equilibrium and maximum displacement",
+      "The speed is the same everywhere"
+     ],
+     "answer": "At the equilibrium position",
+     "accept": [],
+     "hint": "Where has all the potential energy been converted?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12aewhk1voc9y9",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Where is the magnitude of the acceleration of an object in SHM greatest?",
+     "options": [
+      "At maximum displacement",
+      "At the equilibrium position",
+      "Halfway between equilibrium and maximum displacement",
+      "It is constant"
+     ],
+     "answer": "At maximum displacement",
+     "accept": [],
+     "hint": "Acceleration is proportional to displacement.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j7z6yc1i9n06m",
+     "subject": "phys",
+     "type": "short",
+     "q": "What is the name for the maximum displacement of an oscillator from its equilibrium position?",
+     "options": [],
+     "answer": "amplitude",
+     "accept": [],
+     "hint": "It is given the symbol x₀.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhmg61v1at6jn8",
+     "subject": "phys",
+     "type": "num",
+     "q": "Calculate the period of a simple pendulum of length 1.0 m. Use g = 9.81 m s⁻² and give your answer in seconds to 2 significant figures.",
+     "options": [],
+     "answer": "2.0",
+     "accept": [
+      "2"
+     ],
+     "hint": "Use T = 2π√(L/g).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1egk9zyqm13my",
+     "subject": "phys",
+     "type": "num",
+     "q": "A 0.50 kg mass oscillates on a spring of spring constant 20 N m⁻¹. Calculate the period in seconds, to 2 significant figures.",
+     "options": [],
+     "answer": "0.99",
+     "accept": [],
+     "hint": "Use T = 2π√(m/k).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxf3y1uprbu70",
+     "subject": "phys",
+     "type": "num",
+     "q": "An oscillator has angular frequency ω = 4.0 rad s⁻¹. Calculate the magnitude of its acceleration, in m s⁻², when its displacement is 0.050 m.",
+     "options": [],
+     "answer": "0.80",
+     "accept": [
+      "0.8"
+     ],
+     "hint": "Use a = −ω²x and ignore the sign.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs1m0cc99b829",
+     "subject": "phys",
+     "type": "num",
+     "q": "An oscillator has a period of 0.50 s. Calculate its angular frequency in rad s⁻¹, to 3 significant figures.",
+     "options": [],
+     "answer": "12.6",
+     "accept": [],
+     "hint": "ω = 2π/T.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rkh405qgptvx",
+     "subject": "phys",
+     "type": "num",
+     "q": "An object in SHM has ω = 10 rad s⁻¹ and amplitude 0.030 m. Calculate its maximum speed in m s⁻¹.",
+     "options": [],
+     "answer": "0.30",
+     "accept": [
+      "0.3"
+     ],
+     "hint": "Maximum speed = ωx₀.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19ycbgs9o66xt",
+     "subject": "phys",
+     "type": "mc",
+     "q": "The length of a simple pendulum is made four times larger. What happens to its period?",
+     "options": [
+      "It doubles",
+      "It quadruples",
+      "It halves",
+      "It stays the same"
+     ],
+     "answer": "It doubles",
+     "accept": [],
+     "hint": "The period depends on the square root of the length.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r189wx5z1o3p337",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What is the phase difference between the displacement and the velocity of an object in SHM?",
+     "options": [
+      "π/2 rad",
+      "π rad",
+      "2π rad",
+      "0 rad"
+     ],
+     "answer": "π/2 rad",
+     "accept": [],
+     "hint": "When displacement is at its maximum, what is the velocity?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w75cz61xxk9vs",
+     "subject": "phys",
+     "type": "num",
+     "q": "An object in SHM has ω = 5.0 rad s⁻¹ and amplitude 0.10 m. Calculate its speed in m s⁻¹ when its displacement is 0.060 m.",
+     "options": [],
+     "answer": "0.40",
+     "accept": [
+      "0.4"
+     ],
+     "hint": "Use v = ω√(x₀² − x²).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10jvbtx1cc9x2i",
+     "subject": "phys",
+     "type": "num",
+     "q": "A 0.20 kg mass oscillates with ω = 10 rad s⁻¹ and amplitude 0.050 m. Calculate the total energy of the oscillation in joules.",
+     "options": [],
+     "answer": "0.025",
+     "accept": [],
+     "hint": "Use E = ½mω²x₀².",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lkscx155r78j",
+     "subject": "phys",
+     "type": "mc",
+     "q": "An object in SHM is at displacement x = x₀/2. What fraction of the total energy is kinetic energy?",
+     "options": [
+      "3/4",
+      "1/2",
+      "1/4",
+      "1"
+     ],
+     "answer": "3/4",
+     "accept": [],
+     "hint": "Kinetic energy is proportional to x₀² − x².",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r99mfrx7aldow",
+     "subject": "phys",
+     "type": "mc",
+     "q": "The displacement of an oscillator is x = x₀ sin(ωt + φ). At t = 0 the oscillator is at its maximum positive displacement. What is the phase angle φ?",
+     "options": [
+      "π/2",
+      "0",
+      "π",
+      "3π/2"
+     ],
+     "answer": "π/2",
+     "accept": [],
+     "hint": "For which angle is sin equal to 1?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvadbi518y43li",
+     "subject": "phys",
+     "type": "open",
+     "q": "Explain why a simple pendulum only moves with simple harmonic motion when its amplitude is small.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare the restoring force with the displacement for small and large angles.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "phys-sl": {
+   "topic": "C.1 Simple harmonic motion",
+   "questions": [
+    {
+     "id": "r19kpexlxo2ddy",
+     "subject": "phys",
+     "type": "mc",
+     "q": "In simple harmonic motion, in which direction does the restoring force act?",
+     "options": [
+      "Towards the equilibrium position",
+      "Away from the equilibrium position",
+      "Always downwards",
+      "In the direction of the velocity"
+     ],
+     "answer": "Towards the equilibrium position",
+     "accept": [],
+     "hint": "It always tries to bring the object back.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bfhhecx14dq",
+     "subject": "phys",
+     "type": "short",
+     "q": "What is the name for the time taken for one complete oscillation?",
+     "options": [],
+     "answer": "period",
+     "accept": [],
+     "hint": "Its symbol is T.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13tmxuc8k294i",
+     "subject": "phys",
+     "type": "num",
+     "q": "An oscillator has a period of 0.25 s. Calculate its frequency in Hz.",
+     "options": [],
+     "answer": "4",
+     "accept": [
+      "4.0"
+     ],
+     "hint": "f = 1/T.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpqe1e799p8i",
+     "subject": "phys",
+     "type": "mc",
+     "q": "For an object in SHM, what does a graph of acceleration against displacement look like?",
+     "options": [
+      "A straight line through the origin with a negative gradient",
+      "A straight line through the origin with a positive gradient",
+      "A horizontal line",
+      "A sine curve"
+     ],
+     "answer": "A straight line through the origin with a negative gradient",
+     "accept": [],
+     "hint": "Look at the equation a = −ω²x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm4e6f1uvthi0",
+     "subject": "phys",
+     "type": "num",
+     "q": "Calculate the period of a simple pendulum of length 0.25 m. Use g = 9.81 m s⁻² and give your answer in seconds to 2 significant figures.",
+     "options": [],
+     "answer": "1.0",
+     "accept": [
+      "1"
+     ],
+     "hint": "Use T = 2π√(L/g).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1og00tl1s4ltz6",
+     "subject": "phys",
+     "type": "num",
+     "q": "Calculate the length, in metres, of a simple pendulum with a period of 2.0 s. Use g = 9.81 m s⁻² and give your answer to 2 significant figures.",
+     "options": [],
+     "answer": "0.99",
+     "accept": [],
+     "hint": "Rearrange T = 2π√(L/g) to make L the subject.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9xja78b45wt",
+     "subject": "phys",
+     "type": "num",
+     "q": "A 2.0 kg mass oscillates on a spring of spring constant 50 N m⁻¹. Calculate the period in seconds, to 3 significant figures.",
+     "options": [],
+     "answer": "1.26",
+     "accept": [],
+     "hint": "Use T = 2π√(m/k).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tctxh915ikf18",
+     "subject": "phys",
+     "type": "mc",
+     "q": "The mass on a spring is increased by a factor of 4. What happens to the period of oscillation?",
+     "options": [
+      "It doubles",
+      "It quadruples",
+      "It halves",
+      "It stays the same"
+     ],
+     "answer": "It doubles",
+     "accept": [],
+     "hint": "The period depends on the square root of the mass.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r199hfqkd5yids",
+     "subject": "phys",
+     "type": "mc",
+     "q": "The period of a simple pendulum does NOT depend on which quantity (for small oscillations)?",
+     "options": [
+      "The mass of the bob",
+      "The length of the string",
+      "The gravitational field strength",
+      "The planet it is on"
+     ],
+     "answer": "The mass of the bob",
+     "accept": [],
+     "hint": "Look at which quantities appear in T = 2π√(L/g).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7zvdfr1wle6g1",
+     "subject": "phys",
+     "type": "num",
+     "q": "An oscillator has a period of π seconds. Calculate its angular frequency in rad s⁻¹.",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "ω = 2π/T.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11tfwmz195yfeo",
+     "subject": "phys",
+     "type": "num",
+     "q": "An oscillator has frequency 2.0 Hz. Calculate the magnitude of its acceleration, in m s⁻², when its displacement is 0.010 m. Give your answer to 3 significant figures.",
+     "options": [],
+     "answer": "1.58",
+     "accept": [],
+     "hint": "First find ω = 2πf, then use a = −ω²x.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5j57dz1hlbonm",
+     "subject": "phys",
+     "type": "mc",
+     "q": "At which position does an object in SHM have its maximum kinetic energy?",
+     "options": [
+      "At the equilibrium position",
+      "At maximum displacement",
+      "At half the amplitude",
+      "Kinetic energy is constant"
+     ],
+     "answer": "At the equilibrium position",
+     "accept": [],
+     "hint": "Where is the object moving fastest?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vwso4b1tg9kn9",
+     "subject": "phys",
+     "type": "short",
+     "q": "The displacement–time graph of an object in SHM has the shape of which type of curve?",
+     "options": [],
+     "answer": "sinusoidal",
+     "accept": [
+      "sine",
+      "sine curve",
+      "sinusoid",
+      "cosine",
+      "sine wave"
+     ],
+     "hint": "It is the same shape as the graph of a trigonometric function.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1od1ow0kll1o9",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which of these motions is NOT simple harmonic motion?",
+     "options": [
+      "A ball bouncing up and down on a hard floor",
+      "A mass oscillating on a spring",
+      "A pendulum swinging through a small angle",
+      "Liquid oscillating in a U-tube"
+     ],
+     "answer": "A ball bouncing up and down on a hard floor",
+     "accept": [],
+     "hint": "Is the acceleration of a ball in the air proportional to its displacement?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkx8tqg22aq7t",
+     "subject": "phys",
+     "type": "num",
+     "q": "An oscillator has an amplitude of 5.0 cm. What total distance, in cm, does it travel in one complete period?",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "In one oscillation it goes from one extreme to the other and back again.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdopneu1cd84eo",
+     "subject": "phys",
+     "type": "open",
+     "q": "Explain why the acceleration of a mass oscillating on a spring is zero at the equilibrium position.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about the resultant force on the mass at that point.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych-hl": {
+   "topic": "Sociocultural approach: social identity and social cognitive theory",
+   "questions": [
+    {
+     "id": "r1b47cmcxpx9zz",
+     "subject": "psych",
+     "type": "mc",
+     "q": "According to social identity theory, where does part of a person's self-esteem come from?",
+     "options": [
+      "The groups they belong to",
+      "Their genes",
+      "Rewards from parents only",
+      "Their personality type"
+     ],
+     "answer": "The groups they belong to",
+     "accept": [],
+     "hint": "Social identity is the part of the self-concept linked to groups.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r09wp518fu2su",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In social identity theory, what is the term for a group that a person sees themselves as belonging to?",
+     "options": [
+      "In-group",
+      "Out-group",
+      "Reference model",
+      "Control group"
+     ],
+     "answer": "In-group",
+     "accept": [],
+     "hint": "'In' suggests membership.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r26z3e211nwcuy",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is in-group favouritism?",
+     "options": [
+      "Treating members of one's own group more positively than others",
+      "Copying the behaviour of a role model",
+      "Rejecting one's own group",
+      "Treating all groups equally"
+     ],
+     "answer": "Treating members of one's own group more positively than others",
+     "accept": [],
+     "hint": "Think about who gets the better treatment.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i71mv81y975ly",
+     "subject": "psych",
+     "type": "short",
+     "q": "In social identity theory, what is the name of the first process, in which people sort themselves and others into groups?",
+     "options": [],
+     "answer": "social categorisation",
+     "accept": [
+      "social categorization",
+      "categorisation",
+      "categorization"
+     ],
+     "hint": "It comes from the word 'category'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwkeugfh8cawc",
+     "subject": "psych",
+     "type": "short",
+     "q": "In social identity theory, what is the name of the process in which a person adopts the identity, norms and values of their group?",
+     "options": [],
+     "answer": "social identification",
+     "accept": [
+      "identification"
+     ],
+     "hint": "The person comes to identify with the group.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra1bnypmsnzps",
+     "subject": "psych",
+     "type": "mc",
+     "q": "According to social identity theory, why do people compare their in-group with out-groups?",
+     "options": [
+      "To achieve positive distinctiveness and raise self-esteem",
+      "To learn new behaviours by imitation",
+      "To reduce cognitive dissonance",
+      "To avoid making any decisions"
+     ],
+     "answer": "To achieve positive distinctiveness and raise self-esteem",
+     "accept": [],
+     "hint": "What do people gain if their group 'wins' the comparison?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rklt6s5wret90",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In the minimal group experiments (Tajfel et al., 1971), boys were put into groups on a trivial basis. How did they tend to allocate points?",
+     "options": [
+      "In a way that maximised the difference in favour of their own group",
+      "Equally between both groups",
+      "In favour of the other group",
+      "Completely at random"
+     ],
+     "answer": "In a way that maximised the difference in favour of their own group",
+     "accept": [],
+     "hint": "Even meaningless groups produced a clear bias.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t2x2r4zpm5yu",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which statement best describes social cognitive theory?",
+     "options": [
+      "Behaviour can be learned by observing others and the consequences of their actions",
+      "Behaviour is controlled only by genes",
+      "Behaviour is learned only through direct punishment",
+      "Groups always behave more aggressively than individuals"
+     ],
+     "answer": "Behaviour can be learned by observing others and the consequences of their actions",
+     "accept": [],
+     "hint": "It is an extension of learning theory that includes thinking.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1suhw6gbayz21",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In the Bobo doll experiment (Bandura, Ross and Ross, 1961), which children were most likely to hit the doll?",
+     "options": [
+      "Children who had watched an aggressive adult model",
+      "Children who had watched a non-aggressive model",
+      "Children who had seen no model",
+      "Children who had been told not to touch the doll"
+     ],
+     "answer": "Children who had watched an aggressive adult model",
+     "accept": [],
+     "hint": "Think about which condition provided a behaviour to imitate.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c0fl431le93hw",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which of these is NOT one of the four processes needed for observational learning in social cognitive theory?",
+     "options": [
+      "Conformity",
+      "Attention",
+      "Retention",
+      "Motivation"
+     ],
+     "answer": "Conformity",
+     "accept": [],
+     "hint": "The four are attention, retention, reproduction and motivation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1icf0am1ej9x17",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A child sees an older sibling praised for tidying up and then starts tidying up too. What is this an example of?",
+     "options": [
+      "Vicarious reinforcement",
+      "Direct punishment",
+      "Social categorisation",
+      "Classical conditioning"
+     ],
+     "answer": "Vicarious reinforcement",
+     "accept": [],
+     "hint": "The reward was experienced by someone else.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16m2d1a601hs4",
+     "subject": "psych",
+     "type": "short",
+     "q": "In social cognitive theory, what term means a person's belief in their own ability to succeed at a task?",
+     "options": [],
+     "answer": "self-efficacy",
+     "accept": [
+      "self efficacy"
+     ],
+     "hint": "It begins with 'self-'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mgpd58196lm5d",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which is a common criticism of the Bobo doll experiment?",
+     "options": [
+      "Low ecological validity, because a Bobo doll is designed to be hit",
+      "It used too many participants",
+      "It was carried out over many years",
+      "It only studied adults"
+     ],
+     "answer": "Low ecological validity, because a Bobo doll is designed to be hit",
+     "accept": [],
+     "hint": "Would hitting a toy designed to bounce back show real-life aggression?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3c7f131vuok1",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which is a common criticism of the minimal group experiments?",
+     "options": [
+      "The tasks were artificial, so results may not generalise to real group conflict",
+      "They had no control over variables",
+      "They used only female participants",
+      "They were done in natural settings"
+     ],
+     "answer": "The tasks were artificial, so results may not generalise to real group conflict",
+     "accept": [],
+     "hint": "Think about how similar allocating points is to real life.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwlypj019o0mjf",
+     "subject": "psych",
+     "type": "open",
+     "q": "Evaluate one study that supports social identity theory.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Describe the aim, method and findings briefly, then give at least one strength and one limitation.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz92uhu1uavddr",
+     "subject": "psych",
+     "type": "short",
+     "q": "In social cognitive theory, what is the person whose behaviour is observed and imitated called?",
+     "options": [],
+     "answer": "model",
+     "accept": [
+      "a model",
+      "role model"
+     ],
+     "hint": "It could be a parent, a friend or a celebrity.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych-sl": {
+   "topic": "Sociocultural approach: social identity and social cognitive theory",
+   "questions": [
+    {
+     "id": "r18daxjc1bnubxh",
+     "subject": "psych",
+     "type": "mc",
+     "q": "According to social identity theory, what is a person's social identity?",
+     "options": [
+      "The part of their self-concept that comes from group membership",
+      "Their personal memories",
+      "Their physical appearance",
+      "Their intelligence score"
+     ],
+     "answer": "The part of their self-concept that comes from group membership",
+     "accept": [],
+     "hint": "It is linked to the groups we belong to.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i9lmirg0hdp",
+     "subject": "psych",
+     "type": "short",
+     "q": "In social identity theory, what is the term for a group that a person does NOT belong to?",
+     "options": [],
+     "answer": "out-group",
+     "accept": [
+      "outgroup",
+      "out group"
+     ],
+     "hint": "It is the opposite of the in-group.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n00g5bp933fj",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is the correct order of the three processes in social identity theory?",
+     "options": [
+      "Categorisation, identification, comparison",
+      "Comparison, categorisation, identification",
+      "Identification, comparison, categorisation",
+      "Attention, retention, motivation"
+     ],
+     "answer": "Categorisation, identification, comparison",
+     "accept": [],
+     "hint": "First people sort, then they join, then they compare.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1thyftz1u12y0y",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In social identity theory, what does 'positive distinctiveness' mean?",
+     "options": [
+      "Seeing one's own group as different from and better than other groups",
+      "Wanting to be exactly like the out-group",
+      "Having no group membership",
+      "Imitating a role model"
+     ],
+     "answer": "Seeing one's own group as different from and better than other groups",
+     "accept": [],
+     "hint": "It is the aim of social comparison.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1amz74w8c4uy7",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which behaviour can social identity theory help to explain?",
+     "options": [
+      "Prejudice towards out-groups",
+      "Remembering a phone number",
+      "Reflex actions",
+      "Colour vision"
+     ],
+     "answer": "Prejudice towards out-groups",
+     "accept": [],
+     "hint": "Think about how groups treat each other.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9r0g1z19f4ihs",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Why are the minimal group experiments called 'minimal'?",
+     "options": [
+      "The groups were based on trivial criteria with no history or contact between members",
+      "Very few participants took part",
+      "They lasted only a few minutes",
+      "Only a minimum of ethical rules were followed"
+     ],
+     "answer": "The groups were based on trivial criteria with no history or contact between members",
+     "accept": [],
+     "hint": "What was the smallest possible reason to form a group?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd8j1ctdmwait",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In the Bobo doll experiment, what was the main independent variable?",
+     "options": [
+      "Whether the children watched an aggressive or a non-aggressive model",
+      "The age of the Bobo doll",
+      "The number of toys in the room",
+      "The time of day"
+     ],
+     "answer": "Whether the children watched an aggressive or a non-aggressive model",
+     "accept": [],
+     "hint": "What did the researchers change between groups?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4norofbvprpu",
+     "subject": "psych",
+     "type": "short",
+     "q": "In social cognitive theory, learning by watching others is called ___ learning.",
+     "options": [],
+     "answer": "observational",
+     "accept": [
+      "vicarious"
+     ],
+     "hint": "It comes from the verb 'observe'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv3yf4m94hvyf",
+     "subject": "psych",
+     "type": "mc",
+     "q": "In social cognitive theory, what is reciprocal determinism?",
+     "options": [
+      "Behaviour, personal factors and the environment all influence each other",
+      "Genes decide all behaviour",
+      "Only the environment affects behaviour",
+      "Behaviour has no causes"
+     ],
+     "answer": "Behaviour, personal factors and the environment all influence each other",
+     "accept": [],
+     "hint": "'Reciprocal' means going in both directions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t2v3x4wwyi53",
+     "subject": "psych",
+     "type": "mc",
+     "q": "According to social cognitive theory, which model is a child most likely to imitate?",
+     "options": [
+      "A model similar to them who is rewarded",
+      "A model they cannot see clearly",
+      "A model who is punished",
+      "A model from a very different group"
+     ],
+     "answer": "A model similar to them who is rewarded",
+     "accept": [],
+     "hint": "Think about identification and consequences.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a4c5goiyutzo",
+     "subject": "psych",
+     "type": "short",
+     "q": "In the retention stage of observational learning, the observed behaviour must be stored in ___.",
+     "options": [],
+     "answer": "memory",
+     "accept": [
+      "long-term memory"
+     ],
+     "hint": "Without this, the behaviour cannot be repeated later.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r178gjme1mwdsad",
+     "subject": "psych",
+     "type": "mc",
+     "q": "A student sees a classmate get detention for cheating and decides not to cheat. What is this an example of?",
+     "options": [
+      "Vicarious punishment",
+      "Vicarious reinforcement",
+      "Self-efficacy",
+      "Social comparison"
+     ],
+     "answer": "Vicarious punishment",
+     "accept": [],
+     "hint": "The consequence happened to someone else, and it was negative.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3hjshd160os6n",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is a strength of laboratory experiments such as the Bobo doll study?",
+     "options": [
+      "Variables can be controlled, so cause and effect can be established",
+      "They always have high ecological validity",
+      "They have no ethical issues",
+      "They study behaviour over many years"
+     ],
+     "answer": "Variables can be controlled, so cause and effect can be established",
+     "accept": [],
+     "hint": "Think about what a laboratory allows researchers to do.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq0ffcr79y7nh",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What is an ethical concern about the Bobo doll experiment?",
+     "options": [
+      "Children were exposed to aggressive behaviour that they might copy",
+      "The children were paid too much",
+      "The children were too old to take part",
+      "The data were published"
+     ],
+     "answer": "Children were exposed to aggressive behaviour that they might copy",
+     "accept": [],
+     "hint": "Could the study have harmed the participants in any way?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wpjf9t1ga72k8",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which of these is an explanation from the sociocultural approach?",
+     "options": [
+      "Teenagers adopt the slang of their friendship group to fit in",
+      "A hormone increases aggression",
+      "Brain damage affects memory",
+      "Genes influence height"
+     ],
+     "answer": "Teenagers adopt the slang of their friendship group to fit in",
+     "accept": [],
+     "hint": "The sociocultural approach focuses on groups and culture.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r179pnds1u3zifu",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain how social cognitive theory could explain why a teenager starts a new habit they have seen on social media.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use the four processes of observational learning and the idea of reinforcement.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Simbolismo: Cruz e Sousa e Alphonsus de Guimaraens",
+   "questions": [
+    {
+     "id": "r1ebk7gt13lfi52",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual publicação de 1893 é considerada o marco inicial do Simbolismo no Brasil?",
+     "options": [
+      "Missal e Broquéis, de Cruz e Sousa",
+      "Os Lusíadas, de Camões",
+      "Macunaíma, de Mário de Andrade",
+      "Iracema, de José de Alencar"
+     ],
+     "answer": "Missal e Broquéis, de Cruz e Sousa",
+     "accept": [],
+     "hint": "Pense no principal poeta simbolista brasileiro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11m1tde1c6xs1m",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O Simbolismo surge como reação principalmente a qual estilo, com sua objetividade e rigor formal?",
+     "options": [
+      "Parnasianismo",
+      "Arcadismo",
+      "Modernismo",
+      "Trovadorismo"
+     ],
+     "answer": "Parnasianismo",
+     "accept": [],
+     "hint": "É o movimento da 'arte pela arte' que valorizava a descrição precisa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rye18wq11bcxxq",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que o Simbolismo valoriza mais?",
+     "options": [
+      "A sugestão, o mistério e o mundo interior",
+      "A descrição objetiva da realidade",
+      "A crítica social direta",
+      "O nacionalismo e o índio"
+     ],
+     "answer": "A sugestão, o mistério e o mundo interior",
+     "accept": [],
+     "hint": "Os simbolistas preferiam sugerir em vez de nomear.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rubju7kr5yidt",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual figura de linguagem mistura sensações de sentidos diferentes, como em \"voz macia\"?",
+     "options": [],
+     "answer": "sinestesia",
+     "accept": [
+      "a sinestesia"
+     ],
+     "hint": "Voz é percebida pela audição; macia, pelo tato.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vrshiu1bt2d3l",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em qual expressão há sinestesia?",
+     "options": [
+      "Um perfume doce e claro",
+      "Uma casa grande e velha",
+      "Um homem alto e forte",
+      "Uma rua longa e estreita"
+     ],
+     "answer": "Um perfume doce e claro",
+     "accept": [],
+     "hint": "Procure a expressão que junta olfato, paladar e visão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr3bz5cb5o26x",
+     "subject": "pt",
+     "type": "short",
+     "q": "Como se chama a repetição de sons consonantais, muito usada pelos simbolistas para criar musicalidade?",
+     "options": [],
+     "answer": "aliteração",
+     "accept": [
+      "aliteracao"
+     ],
+     "hint": "Ocorre, por exemplo, com o som de 'v' em \"vozes veladas, veludosas vozes\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18xvxiflsousf",
+     "subject": "pt",
+     "type": "short",
+     "q": "Como se chama a repetição de sons vocálicos em um verso?",
+     "options": [],
+     "answer": "assonância",
+     "accept": [
+      "assonancia"
+     ],
+     "hint": "Diferente da aliteração, envolve vogais.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ram1jz610ue3e2",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Por qual apelido Cruz e Sousa ficou conhecido?",
+     "options": [
+      "Cisne Negro",
+      "Poeta dos Escravos",
+      "Boca do Inferno",
+      "Príncipe dos Poetas"
+     ],
+     "answer": "Cisne Negro",
+     "accept": [],
+     "hint": "O apelido junta uma ave elegante e uma cor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f5b2qf1h2ztc2",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Que cor aparece de forma obsessiva na poesia de Cruz e Sousa, associada a formas alvas, luares e neblinas?",
+     "options": [
+      "Branco",
+      "Vermelho",
+      "Verde",
+      "Amarelo"
+     ],
+     "answer": "Branco",
+     "accept": [],
+     "hint": "Pense em palavras como 'alvas', 'neves' e 'luares'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzzelyn18drkdm",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destes poemas é de Alphonsus de Guimaraens?",
+     "options": [
+      "Ismália",
+      "Navio Negreiro",
+      "Canção do Exílio",
+      "Os Sapos"
+     ],
+     "answer": "Ismália",
+     "accept": [],
+     "hint": "O poema fala de uma moça que enlouquece numa torre.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7ajrwmfph9q1",
+     "subject": "pt",
+     "type": "mc",
+     "q": "No poema \"Ismália\", o que a personagem vê no céu e no mar?",
+     "options": [
+      "Uma lua no céu e outra no mar",
+      "Um navio no céu e outro no mar",
+      "Uma estrela no céu e outra no mar",
+      "Um anjo no céu e outro no mar"
+     ],
+     "answer": "Uma lua no céu e outra no mar",
+     "accept": [],
+     "hint": "É algo que se reflete na água à noite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iyfjoyoaz2ur",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Quais temas são mais frequentes na poesia de Alphonsus de Guimaraens?",
+     "options": [
+      "A morte da amada e a religiosidade mística",
+      "A vida urbana e as máquinas",
+      "A política e a abolição",
+      "O humor e o cotidiano"
+     ],
+     "answer": "A morte da amada e a religiosidade mística",
+     "accept": [],
+     "hint": "Pense em um poeta melancólico e muito religioso.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hszd8cxkt3o",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O uso de letras maiúsculas em substantivos comuns, como \"Dor\" e \"Luz\", serve no Simbolismo para:",
+     "options": [
+      "dar a essas palavras um valor absoluto e abstrato",
+      "indicar nomes de pessoas",
+      "marcar o início de cada verso",
+      "mostrar que são palavras estrangeiras"
+     ],
+     "answer": "dar a essas palavras um valor absoluto e abstrato",
+     "accept": [],
+     "hint": "A palavra deixa de ser algo comum e vira uma ideia elevada.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r97rjglicgo4b",
+     "subject": "pt",
+     "type": "short",
+     "q": "Qual poeta francês, autor de \"As Flores do Mal\", é uma das principais influências do Simbolismo?",
+     "options": [],
+     "answer": "Baudelaire",
+     "accept": [
+      "Charles Baudelaire"
+     ],
+     "hint": "Ele é considerado um precursor do Simbolismo francês.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5xmvo41jrs3o4",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual recurso NÃO contribui diretamente para a musicalidade de um poema simbolista?",
+     "options": [
+      "Linguagem objetiva e informativa",
+      "Aliteração",
+      "Assonância",
+      "Ritmo marcado"
+     ],
+     "answer": "Linguagem objetiva e informativa",
+     "accept": [],
+     "hint": "Musicalidade tem a ver com som.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnr8hvj132u98e",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique como a sinestesia e a musicalidade ajudam o Simbolismo a sugerir sensações e estados de espírito em vez de descrevê-los.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no efeito que os sons e a mistura de sentidos causam no leitor.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_lit-hl": {
+   "topic": "O Estrangeiro: o absurdo — NS: A Metamorfose, alienação",
+   "questions": [
+    {
+     "id": "rzerumdudxksl",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em qual cidade se passa a maior parte de \"O Estrangeiro\", de Albert Camus?",
+     "options": [
+      "Argel",
+      "Paris",
+      "Lisboa",
+      "Roma"
+     ],
+     "answer": "Argel",
+     "accept": [],
+     "hint": "A cidade fica no norte da África, então colônia francesa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1991f48rqn6jo",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O romance começa com Meursault dizendo que a mãe morreu. O que ele afirma não saber?",
+     "options": [
+      "Se ela morreu hoje ou ontem",
+      "Onde ela morava",
+      "Quem vai ao enterro",
+      "Por que ela morreu"
+     ],
+     "answer": "Se ela morreu hoje ou ontem",
+     "accept": [],
+     "hint": "A dúvida é sobre o tempo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16l6xdna5rhc",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual é o tipo de narrador de \"O Estrangeiro\"?",
+     "options": [
+      "Narrador em primeira pessoa, protagonista",
+      "Narrador em terceira pessoa, onisciente",
+      "Narrador em segunda pessoa",
+      "Vários narradores alternados"
+     ],
+     "answer": "Narrador em primeira pessoa, protagonista",
+     "accept": [],
+     "hint": "Quem conta a história é o próprio Meursault.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13ocuo367b6c",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Como Meursault explica, no julgamento, o motivo de ter atirado?",
+     "options": [
+      "Foi por causa do sol",
+      "Foi por vingança",
+      "Foi para defender Marie",
+      "Foi por dinheiro"
+     ],
+     "answer": "Foi por causa do sol",
+     "accept": [],
+     "hint": "A resposta faz o tribunal rir, porque parece absurda.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rffk6d92b1rew",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual comportamento de Meursault pesa muito contra ele no julgamento?",
+     "options": [
+      "Não ter chorado no enterro da mãe",
+      "Ter mentido sobre o nome",
+      "Ter fugido da cidade",
+      "Ter um advogado famoso"
+     ],
+     "answer": "Não ter chorado no enterro da mãe",
+     "accept": [],
+     "hint": "O tribunal julga seu caráter tanto quanto o crime.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15rbhvy10kkubk",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Para Camus, o que é o absurdo?",
+     "options": [
+      "O confronto entre a busca humana por sentido e o silêncio do mundo",
+      "A falta de lógica nas leis",
+      "Um tipo de humor exagerado",
+      "A loucura de um personagem"
+     ],
+     "answer": "O confronto entre a busca humana por sentido e o silêncio do mundo",
+     "accept": [],
+     "hint": "O absurdo nasce de uma relação entre o ser humano e o universo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpphq0417c6pks",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Qual ensaio filosófico de Camus, publicado em 1942, discute o absurdo a partir de um mito grego?",
+     "options": [],
+     "answer": "O Mito de Sísifo",
+     "accept": [
+      "Mito de Sísifo",
+      "O Mito de Sisifo"
+     ],
+     "hint": "O personagem do mito empurra uma pedra montanha acima para sempre.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro2dbmj1nwo29b",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual característica marca a voz narrativa de Meursault?",
+     "options": [
+      "Frases curtas e tom neutro, com poucos comentários sobre sentimentos",
+      "Frases longas e muito emotivas",
+      "Linguagem arcaica e rebuscada",
+      "Diálogos constantes com o leitor"
+     ],
+     "answer": "Frases curtas e tom neutro, com poucos comentários sobre sentimentos",
+     "accept": [],
+     "hint": "Pense em como ele relata até a morte da mãe.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtfpia11uedzpt",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual é um desafio típico de ler \"O Estrangeiro\" em tradução?",
+     "options": [
+      "Recriar o tom e o ritmo seco do francês, como o afeto da palavra 'maman'",
+      "Entender a numeração dos capítulos",
+      "Encontrar o nome do autor",
+      "Saber o ano da história"
+     ],
+     "answer": "Recriar o tom e o ritmo seco do francês, como o afeto da palavra 'maman'",
+     "accept": [],
+     "hint": "O tradutor precisa escolher entre 'mamãe', 'mãe' ou manter o original.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl84x4c1q981ro",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual é a profissão de Gregor Samsa em \"A Metamorfose\", de Franz Kafka?",
+     "options": [
+      "Caixeiro-viajante",
+      "Médico",
+      "Professor",
+      "Soldado"
+     ],
+     "answer": "Caixeiro-viajante",
+     "accept": [],
+     "hint": "Ele vive viajando para vender mercadorias.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rc3ypaeazrql",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Logo depois de acordar transformado em inseto, qual é a principal preocupação de Gregor?",
+     "options": [
+      "Ter perdido o trem e o horário do trabalho",
+      "Encontrar um médico",
+      "Fugir de casa",
+      "Escrever uma carta à irmã"
+     ],
+     "answer": "Ter perdido o trem e o horário do trabalho",
+     "accept": [],
+     "hint": "Isso mostra o que dominava a vida dele.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rurkq21tti9zl",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O que o pai de Gregor atira nele, causando um ferimento que nunca sara?",
+     "options": [
+      "Uma maçã",
+      "Uma pedra",
+      "Um livro",
+      "Uma cadeira"
+     ],
+     "answer": "Uma maçã",
+     "accept": [],
+     "hint": "É uma fruta que fica presa nas costas de Gregor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wjjp2w17sm94l",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Como a família reage depois da morte de Gregor?",
+     "options": [
+      "Sente alívio e faz planos para o futuro",
+      "Fica em luto por anos",
+      "Vende a casa e se separa",
+      "Culpa a empregada"
+     ],
+     "answer": "Sente alívio e faz planos para o futuro",
+     "accept": [],
+     "hint": "Observe o passeio que fazem no final.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14mt35ocsu6zy",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual leitura sobre alienação em \"A Metamorfose\" é mais coerente com o texto?",
+     "options": [
+      "Gregor já era tratado como fonte de dinheiro, e a transformação só torna visível seu isolamento",
+      "Gregor sempre foi o centro do amor da família",
+      "A transformação aproxima Gregor da família",
+      "A alienação aparece apenas no trabalho do pai"
+     ],
+     "answer": "Gregor já era tratado como fonte de dinheiro, e a transformação só torna visível seu isolamento",
+     "accept": [],
+     "hint": "Pense na relação da família com Gregor antes da transformação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcl5j3518g8jep",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em \"O Estrangeiro\", o que Meursault diz sentir no final, ao se abrir para a 'terna indiferença do mundo'?",
+     "options": [
+      "Que foi e ainda é feliz",
+      "Que se arrepende de tudo",
+      "Que acredita em Deus",
+      "Que quer fugir da prisão"
+     ],
+     "answer": "Que foi e ainda é feliz",
+     "accept": [],
+     "hint": "É uma conclusão surpreendente para alguém condenado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2e2o6q3m0wvf",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Compare como Meursault e Gregor Samsa vivem a alienação em relação à sociedade e à família.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em como cada um é visto pelos outros e em como cada um reage a isso.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_lit-sl": {
+   "topic": "O Estrangeiro (Camus): absurdo e narração em primeira pessoa",
+   "questions": [
+    {
+     "id": "r2erlb3iastbx",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em que país, na época colônia francesa, se passa \"O Estrangeiro\"?",
+     "options": [
+      "Argélia",
+      "Marrocos",
+      "Egito",
+      "Senegal"
+     ],
+     "answer": "Argélia",
+     "accept": [],
+     "hint": "A capital desse país dá nome à cidade de Argel.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rot3cem151vxlj",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em que ano \"O Estrangeiro\" foi publicado?",
+     "options": [
+      "1942",
+      "1899",
+      "1968",
+      "1915"
+     ],
+     "answer": "1942",
+     "accept": [],
+     "hint": "Foi durante a Segunda Guerra Mundial.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12oq15h151zejp",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O que Meursault faz no dia seguinte ao enterro da mãe?",
+     "options": [
+      "Vai à praia, reencontra Marie e vai ao cinema",
+      "Fica em casa de luto",
+      "Volta ao asilo",
+      "Viaja para Paris"
+     ],
+     "answer": "Vai à praia, reencontra Marie e vai ao cinema",
+     "accept": [],
+     "hint": "Mais tarde, isso será usado contra ele.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r103hi7x1vevg9k",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Quando Marie pergunta se Meursault a ama, o que ele responde?",
+     "options": [
+      "Que isso não quer dizer nada, mas que parece que não",
+      "Que a ama muito",
+      "Que vai pensar",
+      "Que só ama a mãe"
+     ],
+     "answer": "Que isso não quer dizer nada, mas que parece que não",
+     "accept": [],
+     "hint": "Ele responde com sinceridade, sem fingir sentimentos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrhfn511h6jp23",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual vizinho de Meursault vive com um cachorro velho que maltrata, mas sofre quando o perde?",
+     "options": [
+      "Salamano",
+      "Raymond",
+      "Masson",
+      "Céleste"
+     ],
+     "answer": "Salamano",
+     "accept": [],
+     "hint": "O outro vizinho, Raymond, é quem o envolve no conflito da praia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rks6hfq1yp4bc2",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Onde acontece o crime cometido por Meursault?",
+     "options": [
+      "Numa praia",
+      "Num café",
+      "Num escritório",
+      "Num trem"
+     ],
+     "answer": "Numa praia",
+     "accept": [],
+     "hint": "O calor e a luz são muito importantes na cena.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18h6sfjxc19o1",
+     "subject": "pt_lit",
+     "type": "num",
+     "q": "Em quantas partes o romance \"O Estrangeiro\" está dividido?",
+     "options": [],
+     "answer": "2",
+     "accept": [],
+     "hint": "A divisão acontece logo depois do crime.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hl6uqn1fgxzg0",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Do que trata principalmente a segunda parte do romance?",
+     "options": [
+      "Da prisão e do julgamento de Meursault",
+      "Da infância de Meursault",
+      "Da viagem de Meursault a Paris",
+      "Do casamento com Marie"
+     ],
+     "answer": "Da prisão e do julgamento de Meursault",
+     "accept": [],
+     "hint": "Pense no que acontece depois do crime.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmaicu9kda79b",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual é a sentença de Meursault?",
+     "options": [
+      "Pena de morte",
+      "Prisão perpétua",
+      "Absolvição",
+      "Multa"
+     ],
+     "answer": "Pena de morte",
+     "accept": [],
+     "hint": "É a pena mais grave possível.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sahehbiradv6",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Como Meursault reage à visita do capelão na prisão?",
+     "options": [
+      "Fica furioso e rejeita o consolo religioso",
+      "Aceita rezar com ele",
+      "Pede para ser batizado",
+      "Pede ajuda para fugir"
+     ],
+     "answer": "Fica furioso e rejeita o consolo religioso",
+     "accept": [],
+     "hint": "É o único momento em que ele perde a calma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r85p3ds1h1t7mx",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual frase define melhor o absurdo para Camus?",
+     "options": [
+      "É o choque entre o desejo humano de sentido e um mundo que não responde",
+      "É tudo que não tem graça",
+      "É uma regra jurídica injusta",
+      "É uma doença mental"
+     ],
+     "answer": "É o choque entre o desejo humano de sentido e um mundo que não responde",
+     "accept": [],
+     "hint": "O absurdo está na relação, não só no ser humano ou só no mundo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj89oa51xnpohd",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual efeito tem a narração em primeira pessoa com poucos comentários emocionais?",
+     "options": [
+      "O leitor precisa interpretar sozinho os sentimentos de Meursault",
+      "O leitor sabe tudo o que todos pensam",
+      "A história fica cheia de suspense policial",
+      "O narrador explica a moral da história"
+     ],
+     "answer": "O leitor precisa interpretar sozinho os sentimentos de Meursault",
+     "accept": [],
+     "hint": "O narrador mostra os fatos, mas quase não os comenta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2zblhn1af605p",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O título original, \"L'Étranger\", pode significar tanto 'estrangeiro' quanto 'estranho'. Que efeito essa ambiguidade tem?",
+     "options": [
+      "Sugere que Meursault é alguém de fora das regras e dos sentimentos esperados pela sociedade",
+      "Mostra que Meursault nasceu em outro país",
+      "Indica que o livro foi traduzido",
+      "Não tem nenhum efeito"
+     ],
+     "answer": "Sugere que Meursault é alguém de fora das regras e dos sentimentos esperados pela sociedade",
+     "accept": [],
+     "hint": "Meursault mora no lugar onde nasceu, então em que sentido ele é 'de fora'?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru6ouii16bvr8q",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Por que muitos leitores dizem que Meursault é condenado mais por seu comportamento do que pelo crime?",
+     "options": [
+      "Porque o julgamento se concentra em sua indiferença, como não chorar no enterro da mãe",
+      "Porque ele não cometeu crime nenhum",
+      "Porque o juiz era seu inimigo",
+      "Porque ele fugiu da prisão"
+     ],
+     "answer": "Porque o julgamento se concentra em sua indiferença, como não chorar no enterro da mãe",
+     "accept": [],
+     "hint": "Observe o que a promotoria mais destaca.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rck7oa97f3mvy",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual estratégia ajuda a discutir a leitura de um romance em tradução?",
+     "options": [
+      "Comparar como diferentes traduções resolvem a mesma frase",
+      "Ignorar que o livro foi traduzido",
+      "Ler apenas o resumo",
+      "Considerar só o nome do tradutor"
+     ],
+     "answer": "Comparar como diferentes traduções resolvem a mesma frase",
+     "accept": [],
+     "hint": "As escolhas do tradutor mudam o tom do texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15fh8tpq84ncg",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Meursault é um personagem indiferente ou apenas honesto demais? Discuta com base no romance.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em momentos em que ele se recusa a mentir ou a fingir sentimentos.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_red": {
+   "topic": "Artigo de opinião",
+   "questions": [
+    {
+     "id": "r3dxihs1329x0t",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual é o principal objetivo de um artigo de opinião?",
+     "options": [
+      "Defender um ponto de vista sobre um tema",
+      "Narrar uma história de ficção",
+      "Informar um fato sem opinar",
+      "Ensinar uma receita"
+     ],
+     "answer": "Defender um ponto de vista sobre um tema",
+     "accept": [],
+     "hint": "O próprio nome do gênero dá uma pista.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1km2hnbf4edo5",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Onde um artigo de opinião costuma ser publicado?",
+     "options": [
+      "Em jornais, revistas e sites, assinado pelo autor",
+      "Em bulas de remédio",
+      "Em dicionários",
+      "Em manuais de instrução"
+     ],
+     "answer": "Em jornais, revistas e sites, assinado pelo autor",
+     "accept": [],
+     "hint": "Pense em textos que circulam na imprensa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz292jpfrghs",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual é a diferença entre artigo de opinião e editorial?",
+     "options": [
+      "O artigo é assinado e expressa a opinião do autor; o editorial expressa a opinião do veículo",
+      "O editorial é sempre ficção",
+      "O artigo não pode ter argumentos",
+      "Não há nenhuma diferença"
+     ],
+     "answer": "O artigo é assinado e expressa a opinião do autor; o editorial expressa a opinião do veículo",
+     "accept": [],
+     "hint": "Pense em quem assume a autoria de cada um.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrowwbmf0i5ct",
+     "subject": "pt_red",
+     "type": "short",
+     "q": "Como se chama a ideia central que o autor defende em um texto argumentativo?",
+     "options": [],
+     "answer": "tese",
+     "accept": [
+      "a tese"
+     ],
+     "hint": "Costuma aparecer já na introdução.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q6cqx01ylqlv3",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual é a estrutura mais comum de um artigo de opinião?",
+     "options": [
+      "Introdução com a tese, desenvolvimento com argumentos e conclusão",
+      "Apresentação, conflito, clímax e desfecho",
+      "Lista de ingredientes e modo de preparo",
+      "Saudação, corpo e despedida"
+     ],
+     "answer": "Introdução com a tese, desenvolvimento com argumentos e conclusão",
+     "accept": [],
+     "hint": "Lembre que é um texto dissertativo-argumentativo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7hhzgf1mxhweg",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "\"Segundo uma pesquisa, 7 em cada 10 estudantes dormem menos do que deveriam.\" Que tipo de argumento é esse?",
+     "options": [
+      "Argumento por dados ou evidências",
+      "Argumento por analogia",
+      "Argumento de autoridade",
+      "Argumento por exemplificação"
+     ],
+     "answer": "Argumento por dados ou evidências",
+     "accept": [],
+     "hint": "O trecho usa números.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmkexsz1hr6k80",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "\"Especialistas em sono afirmam que adolescentes precisam de 8 a 10 horas de descanso.\" Que tipo de argumento é esse?",
+     "options": [
+      "Argumento de autoridade",
+      "Argumento por dados",
+      "Argumento por analogia",
+      "Argumento por exemplificação"
+     ],
+     "answer": "Argumento de autoridade",
+     "accept": [],
+     "hint": "O texto se apoia em quem entende do assunto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t7g23f1a9a3ys",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Quando o autor conta um caso concreto para ilustrar sua tese, que tipo de argumento está usando?",
+     "options": [
+      "Argumento por exemplificação",
+      "Argumento de autoridade",
+      "Argumento por dados",
+      "Argumento por causa e consequência"
+     ],
+     "answer": "Argumento por exemplificação",
+     "accept": [],
+     "hint": "Um caso concreto funciona como exemplo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rff2wqgkt3wzd",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "O que é usar um contra-argumento em um artigo de opinião?",
+     "options": [
+      "Apresentar uma opinião contrária e mostrar por que ela é fraca",
+      "Mudar de opinião no meio do texto",
+      "Repetir a tese com outras palavras",
+      "Concordar com todos os lados"
+     ],
+     "answer": "Apresentar uma opinião contrária e mostrar por que ela é fraca",
+     "accept": [],
+     "hint": "É uma forma de antecipar o que o leitor poderia objetar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmldygu16rjd5d",
+     "subject": "pt_red",
+     "type": "short",
+     "q": "Como se chamam palavras como \"portanto\", \"contudo\" e \"além disso\", que ligam ideias e orientam a argumentação?",
+     "options": [],
+     "answer": "conectivos",
+     "accept": [
+      "operadores argumentativos",
+      "conjunções",
+      "elementos coesivos",
+      "conectores"
+     ],
+     "hint": "Elas conectam partes do texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ehh9b11myhl5j",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Que ideia o conectivo \"contudo\" expressa?",
+     "options": [
+      "Oposição",
+      "Conclusão",
+      "Adição",
+      "Tempo"
+     ],
+     "answer": "Oposição",
+     "accept": [],
+     "hint": "Tem o mesmo sentido de \"mas\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbs8zkc1lyn1z3",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Que ideia o conectivo \"portanto\" expressa?",
+     "options": [
+      "Conclusão",
+      "Oposição",
+      "Comparação",
+      "Finalidade"
+     ],
+     "answer": "Conclusão",
+     "accept": [],
+     "hint": "Costuma aparecer no último parágrafo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmcakji16qflk8",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual destes títulos é mais adequado para um artigo de opinião?",
+     "options": [
+      "Celular na sala de aula: proibir não é a solução",
+      "Escola recebe novos computadores",
+      "Previsão do tempo para amanhã",
+      "Horário de funcionamento da biblioteca"
+     ],
+     "answer": "Celular na sala de aula: proibir não é a solução",
+     "accept": [],
+     "hint": "Procure o título que já mostra uma posição.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j8oy3b1pp1jjw",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual destas frases apresenta uma tese?",
+     "options": [
+      "As escolas deveriam ensinar educação financeira desde cedo",
+      "A escola tem quatro andares",
+      "O recreio começa às dez horas",
+      "Hoje choveu na cidade"
+     ],
+     "answer": "As escolas deveriam ensinar educação financeira desde cedo",
+     "accept": [],
+     "hint": "A tese é uma afirmação que pode ser defendida e discutida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r195ca4d3mh313",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual registro de linguagem é mais adequado em um artigo de opinião publicado em jornal?",
+     "options": [
+      "Norma-padrão, clara e objetiva, podendo usar a primeira pessoa",
+      "Gírias e abreviações de internet",
+      "Linguagem técnica incompreensível",
+      "Apenas frases em outra língua"
+     ],
+     "answer": "Norma-padrão, clara e objetiva, podendo usar a primeira pessoa",
+     "accept": [],
+     "hint": "O texto precisa convencer um público amplo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j57mbd1kzb7ro",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Escreva um parágrafo de introdução para um artigo de opinião sobre o uso de celulares nas escolas, deixando clara a sua tese.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Apresente o tema, mostre por que ele é importante e termine com a sua posição.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
