@@ -1520,6 +1520,1005 @@
      "errors": []
     }
    ]
+  },
+  "comp-hl": {
+   "topic": "B3.1 OOP for a single class: classes, objects and encapsulation",
+   "questions": [
+    {
+     "id": "rv3hxie1b0iehd",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which statement best describes the relationship between a class and an object?",
+     "options": [
+      "An object is an instance created from a class",
+      "A class is an instance created from an object",
+      "They are two names for the same thing",
+      "An object defines the methods a class may use"
+     ],
+     "answer": "An object is an instance created from a class",
+     "accept": [],
+     "hint": "One blueprint, many houses.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rchb464hpsgca",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which of the following is an instance variable rather than a local variable?",
+     "options": [
+      "An attribute declared inside the class but outside any method",
+      "A variable declared inside a for loop",
+      "A parameter of a method",
+      "A variable declared inside the main method"
+     ],
+     "answer": "An attribute declared inside the class but outside any method",
+     "accept": [],
+     "hint": "Instance variables belong to each object.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqae4s517mmxt0",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which access modifier allows a member to be accessed from any other class?",
+     "options": [
+      "public",
+      "private",
+      "protected",
+      "final"
+     ],
+     "answer": "public",
+     "accept": [],
+     "hint": "It is the least restrictive modifier.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqu3el21y5e441",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the term for a method that changes the value of a private attribute, often called setX.",
+     "options": [],
+     "answer": "Mutator",
+     "accept": [
+      "mutator",
+      "setter",
+      "a mutator",
+      "mutator method"
+     ],
+     "hint": "It is the partner of an accessor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rf5h23b1qh06jr",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Consider this class:\n\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n\n    public double getBalance() { return balance; }\n\n    public void deposit(double amount) {\n        if (amount > 0) { balance = balance + amount; }\n    }\n}\n\nWhy does the constructor use this.owner = owner?",
+     "options": [
+      "To distinguish the attribute from the parameter with the same name",
+      "To make owner public",
+      "To create a second object",
+      "To call the deposit method"
+     ],
+     "answer": "To distinguish the attribute from the parameter with the same name",
+     "accept": [],
+     "hint": "Two variables called owner are in scope.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt10i7kbdhqpn",
+     "subject": "comp",
+     "type": "num",
+     "q": "Consider this class:\n\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n\n    public double getBalance() { return balance; }\n\n    public void deposit(double amount) {\n        if (amount > 0) { balance = balance + amount; }\n    }\n}\n\nThe following code runs:\nBankAccount x = new BankAccount(\"Ola\", 200);\nBankAccount y = x;\ny.deposit(75);\nx.deposit(25",
+     "options": [],
+     "answer": "300",
+     "accept": [
+      "300.0"
+     ],
+     "hint": "x and y refer to the same object in memory.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12rsbcrvo2nfv",
+     "subject": "comp",
+     "type": "num",
+     "q": "Consider this class:\n\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n\n    public double getBalance() { return balance; }\n\n    public void deposit(double amount) {\n        if (amount > 0) { balance = balance + amount; }\n    }\n}\n\nThe following code runs:\nBankAccount p = new BankAccount(\"Ida\", 50);\nBankAccount q = new BankAccount(\"Ida\", 50);\nq.d",
+     "options": [],
+     "answer": "50",
+     "accept": [
+      "50.0"
+     ],
+     "hint": "p and q are two separate instances.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru0qr91x9hyxf",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A class has a private attribute temperature and a method setTemperature(double t) that rejects values below -273.15. Which OOP principle does this best demonstrate?",
+     "options": [
+      "Encapsulation",
+      "Inheritance",
+      "Recursion",
+      "Polymorphism"
+     ],
+     "answer": "Encapsulation",
+     "accept": [],
+     "hint": "The class protects its own data from invalid values.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yjzrq8tvw4dk",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which is the best reason to provide a getter but no setter for an attribute?",
+     "options": [
+      "To make the attribute read-only from outside the class",
+      "To make the program run faster",
+      "To allow any class to change it",
+      "To turn the attribute into a method"
+     ],
+     "answer": "To make the attribute read-only from outside the class",
+     "accept": [],
+     "hint": "Think about what outside code can and cannot do.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10mqsv91b1146b",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A class Counter has a private int count and a method increment(). What is the most likely effect of increment()?",
+     "options": [
+      "It adds 1 to count for that object",
+      "It adds 1 to count for every Counter object",
+      "It creates a new Counter",
+      "It makes count public"
+     ],
+     "answer": "It adds 1 to count for that object",
+     "accept": [],
+     "hint": "Instance attributes belong to one object.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rijltivdl05i2",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In a UML class diagram, what does a minus sign (-) before an attribute indicate?",
+     "options": [
+      "The attribute is private",
+      "The attribute is public",
+      "The attribute is a method",
+      "The attribute is negative"
+     ],
+     "answer": "The attribute is private",
+     "accept": [],
+     "hint": "A plus sign (+) means the opposite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rseofdqn5719o",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which statement about constructors is correct?",
+     "options": [
+      "A constructor has no return type and has the same name as the class",
+      "A constructor must return the new object with a return statement",
+      "A class can never have more than one constructor",
+      "A constructor must be private"
+     ],
+     "answer": "A constructor has no return type and has the same name as the class",
+     "accept": [],
+     "hint": "Look at BankAccount's constructor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dzh0vnfooy7e",
+     "subject": "comp",
+     "type": "open",
+     "q": "Construct a Java class Thermometer with a private double attribute reading, a constructor that sets it, and a getter. Write the class.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Follow the structure of the BankAccount class.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vjp15l41suq",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain how encapsulation can reduce errors when a large team of programmers works on the same system.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about who can change an object's data and how.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fsy4ib1m9xc97",
+     "subject": "comp",
+     "type": "open",
+     "q": "Compare a class and an object, using a real-world example to illustrate your answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Give one similarity or link and one difference.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bxalh813h4ign",
+     "subject": "comp",
+     "type": "open",
+     "q": "Evaluate the decision to make every attribute in a class public in order to save time when coding.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider one benefit and at least two risks before reaching a judgement.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "comp-sl": {
+   "topic": "B3.1 OOP for a single class: classes, objects and encapsulation",
+   "questions": [
+    {
+     "id": "r1dzwpjw1i5iy6q",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In object-oriented programming, what is a class?",
+     "options": [
+      "A template that defines the attributes and methods of objects",
+      "A single variable that stores a number",
+      "A loop that repeats a block of code",
+      "A file that stores program output"
+     ],
+     "answer": "A template that defines the attributes and methods of objects",
+     "accept": [],
+     "hint": "Think of a blueprint for a house.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tazd5j11ietss",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is an object?",
+     "options": [
+      "A specific instance of a class",
+      "A keyword that ends a program",
+      "A type of loop",
+      "A comment in the code"
+     ],
+     "answer": "A specific instance of a class",
+     "accept": [],
+     "hint": "One class can be used to create many of these.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rsvbnk1d1z6qy",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In a class Student, which of these is most likely to be an attribute?",
+     "options": [
+      "name",
+      "printReport()",
+      "calculateAverage()",
+      "new"
+     ],
+     "answer": "name",
+     "accept": [],
+     "hint": "Attributes store data; methods perform actions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv1wuugomuv5d",
+     "subject": "comp",
+     "type": "mc",
+     "q": "In a class Student, which of these is most likely to be a method?",
+     "options": [
+      "calculateAverage()",
+      "age",
+      "studentID",
+      "grade"
+     ],
+     "answer": "calculateAverage()",
+     "accept": [],
+     "hint": "Look for something that performs an action.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqhr4h0aan6nd",
+     "subject": "comp",
+     "type": "short",
+     "q": "What is the name of the special method that is called automatically when a new object is created?",
+     "options": [],
+     "answer": "Constructor",
+     "accept": [
+      "constructor",
+      "a constructor",
+      "the constructor"
+     ],
+     "hint": "In Java it has the same name as the class.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2etlc31751k0z",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which Java keyword is used to create a new instance of a class?",
+     "options": [
+      "new",
+      "class",
+      "static",
+      "void"
+     ],
+     "answer": "new",
+     "accept": [],
+     "hint": "It appears before the constructor call, e.g. ___ Student(...).",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1s8n5hg1ixb4nw",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which access modifier makes an attribute visible only inside its own class?",
+     "options": [
+      "private",
+      "public",
+      "static",
+      "final"
+     ],
+     "answer": "private",
+     "accept": [],
+     "hint": "This is the modifier used to hide data.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx2jznqiyo7ms",
+     "subject": "comp",
+     "type": "short",
+     "q": "What term describes bundling data with the methods that act on it and restricting direct access to that data?",
+     "options": [],
+     "answer": "Encapsulation",
+     "accept": [
+      "encapsulation"
+     ],
+     "hint": "It comes from the idea of putting something inside a capsule.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r177qd93z98ipa",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Consider this class:\n\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n\n    public double getBalance() { return balance; }\n\n    public void deposit(double amount) {\n        if (amount > 0) { balance = balance + amount; }\n    }\n}\n\nWhich line would cause a compilation error if written in a different class?",
+     "options": [
+      "acc.balance = 500;",
+      "acc.deposit(50);",
+      "double b = acc.getBalance();",
+      "BankAccount acc = new BankAccount(\"Rae\", 100);"
+     ],
+     "answer": "acc.balance = 500;",
+     "accept": [],
+     "hint": "Check which members are private.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl7umv39te83w",
+     "subject": "comp",
+     "type": "num",
+     "q": "Consider this class:\n\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount(String owner, double balance) {\n        this.owner = owner;\n        this.balance = balance;\n    }\n\n    public double getBalance() { return balance; }\n\n    public void deposit(double amount) {\n        if (amount > 0) { balance = balance + amount; }\n    }\n}\n\nAn object is created with new BankAccount(\"Tomo\", 120). Then deposit(30) and deposit(-50) are called. What does getB",
+     "options": [],
+     "answer": "150",
+     "accept": [
+      "150.0"
+     ],
+     "hint": "Look carefully at the condition inside deposit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ahe52r71ryir",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What does the keyword this refer to inside a method or constructor?",
+     "options": [
+      "The current object",
+      "The parent class",
+      "The main method",
+      "The last object created in the program"
+     ],
+     "answer": "The current object",
+     "accept": [],
+     "hint": "It helps tell an attribute apart from a parameter with the same name.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u6mdqhgnutg1",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is the main purpose of an accessor (getter) method?",
+     "options": [
+      "To return the value of a private attribute",
+      "To delete an object",
+      "To create a new class",
+      "To change the access modifier of an attribute"
+     ],
+     "answer": "To return the value of a private attribute",
+     "accept": [],
+     "hint": "getBalance() is an example.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2cpd6w4qm0zc",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Two objects, a and b, are both created from the class Dog. Which statement is true?",
+     "options": [
+      "Each object has its own copy of the instance attributes",
+      "They must have identical attribute values",
+      "Changing a's attributes always changes b's",
+      "Only one of them can call methods"
+     ],
+     "answer": "Each object has its own copy of the instance attributes",
+     "accept": [],
+     "hint": "Think about two different dogs with different names.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ir1l63mobvjg",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain one advantage of making the balance attribute private and providing a deposit method instead of letting other classes change balance directly.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what deposit checks before changing the balance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r461e9o5uyncu",
+     "subject": "comp",
+     "type": "open",
+     "q": "A program models library books. Suggest two attributes and one method for a Book class, and state the purpose of the method.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what every book has and something a library might do with it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hys51s1nlr72l",
+     "subject": "comp",
+     "type": "open",
+     "q": "Outline why a programmer might create several objects from one class rather than writing separate code for each item.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about reuse and consistency.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "econ-hl": {
+   "topic": "Business objectives and CSR — HL: costs and revenues",
+   "questions": [
+    {
+     "id": "rp6993f1tdiohe",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which condition gives the profit-maximizing level of output?",
+     "options": [
+      "MC = MR",
+      "AC = AR",
+      "TR = TC",
+      "MC = AC"
+     ],
+     "answer": "MC = MR",
+     "accept": [],
+     "hint": "Produce until the extra cost equals the extra revenue.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj8zm6y178bhea",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Revenue maximization occurs at the output where:",
+     "options": [
+      "MR = 0",
+      "MC = MR",
+      "AC = AR",
+      "MC = 0"
+     ],
+     "answer": "MR = 0",
+     "accept": [],
+     "hint": "Total revenue stops rising at this point.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rou3uz51cdv5r8",
+     "subject": "econ",
+     "type": "short",
+     "q": "What term describes a firm aiming for a satisfactory level of profit rather than the maximum?",
+     "options": [],
+     "answer": "Satisficing",
+     "accept": [
+      "satisficing"
+     ],
+     "hint": "It combines 'satisfy' and 'suffice'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16ibxc7kplnon",
+     "subject": "econ",
+     "type": "num",
+     "q": "A firm sells 40 units at a price of $15 each. Calculate total revenue in dollars.",
+     "options": [],
+     "answer": "600",
+     "accept": [],
+     "hint": "Total revenue = price × quantity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bg86dj1en4x50",
+     "subject": "econ",
+     "type": "num",
+     "q": "A firm's total revenue is $900 when it sells 60 units. Calculate average revenue in dollars.",
+     "options": [],
+     "answer": "15",
+     "accept": [],
+     "hint": "Average revenue = total revenue ÷ quantity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1npccdq11117bd",
+     "subject": "econ",
+     "type": "num",
+     "q": "Total revenue rises from $500 to $560 when output rises from 20 to 23 units. Calculate marginal revenue in dollars per unit.",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Marginal revenue = change in TR ÷ change in quantity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ra7xi8z8o6f1t",
+     "subject": "econ",
+     "type": "mc",
+     "q": "For a firm with a downward-sloping demand curve, which is correct?",
+     "options": [
+      "MR lies below AR",
+      "MR equals AR at every output",
+      "MR lies above AR",
+      "AR is horizontal"
+     ],
+     "answer": "MR lies below AR",
+     "accept": [],
+     "hint": "To sell an extra unit, the price on all units must fall.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rssac4gh58obt",
+     "subject": "econ",
+     "type": "mc",
+     "q": "The law of diminishing marginal returns applies:",
+     "options": [
+      "In the short run, when a variable factor is added to a fixed factor",
+      "Only in the long run when all factors are variable",
+      "Only to firms in perfect competition",
+      "Only when demand falls"
+     ],
+     "answer": "In the short run, when a variable factor is added to a fixed factor",
+     "accept": [],
+     "hint": "Think about adding more workers to the same machine.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gmh4ii1mljldf",
+     "subject": "econ",
+     "type": "num",
+     "q": "A café with one coffee machine has a total product of 30 drinks per hour with 2 workers and 36 drinks per hour with 3 workers. Calculate the marginal product of the third worker in drinks per hour.",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Marginal product = change in total product ÷ change in workers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nqzhcy1yditdt",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Diminishing marginal returns cause the short-run marginal cost curve to:",
+     "options": [
+      "Rise after a certain level of output",
+      "Fall continuously",
+      "Stay horizontal",
+      "Become vertical"
+     ],
+     "answer": "Rise after a certain level of output",
+     "accept": [],
+     "hint": "Each extra unit needs more of the variable factor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx9qd1l71byc8",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which statement about the MC and AC curves is correct?",
+     "options": [
+      "MC cuts AC at the minimum point of AC",
+      "MC cuts AC at the maximum point of AC",
+      "MC never meets AC",
+      "MC is always above AC"
+     ],
+     "answer": "MC cuts AC at the minimum point of AC",
+     "accept": [],
+     "hint": "When the marginal is below the average, the average falls.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rod8j0419g3v0f",
+     "subject": "econ",
+     "type": "num",
+     "q": "A firm has total fixed costs of $200 and total variable costs of $400 at an output of 50 units. Calculate average total cost in dollars.",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "ATC = (TFC + TVC) ÷ Q.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18uv1d2xtvogo",
+     "subject": "econ",
+     "type": "mc",
+     "q": "At the current output a firm's MR is $8 and MC is $11. To increase profit it should:",
+     "options": [
+      "Reduce output",
+      "Increase output",
+      "Keep output unchanged",
+      "Raise output until MC is $20"
+     ],
+     "answer": "Reduce output",
+     "accept": [],
+     "hint": "The last unit adds more to cost than to revenue.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "radg25m17p0v6m",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which is an example of corporate social responsibility?",
+     "options": [
+      "Investing in renewable energy beyond legal requirements",
+      "Raising prices during a shortage",
+      "Reducing staff safety training",
+      "Avoiding tax through loopholes"
+     ],
+     "answer": "Investing in renewable energy beyond legal requirements",
+     "accept": [],
+     "hint": "CSR goes beyond the law.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dyqkvn13ophu4",
+     "subject": "econ",
+     "type": "open",
+     "q": "Using a diagram you could draw, explain why the short-run average cost curve is U-shaped.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Link spreading fixed costs and the law of diminishing marginal returns.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15hugsx1wmnpb3",
+     "subject": "econ",
+     "type": "open",
+     "q": "Evaluate the view that firms should always aim to maximize profit rather than revenue or growth.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider stakeholders, the separation of ownership and control, and the long run.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "econ-sl": {
+   "topic": "Alternative business objectives and corporate social responsibility",
+   "questions": [
+    {
+     "id": "rmil18zutp6p8",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What is the traditional assumption about the main objective of firms in economic theory?",
+     "options": [
+      "Profit maximization",
+      "Revenue maximization",
+      "Growth maximization",
+      "Satisficing"
+     ],
+     "answer": "Profit maximization",
+     "accept": [],
+     "hint": "It is the objective used in standard models of the firm.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r155f7qdq2j0ln",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A firm that aims to sell as much as possible in value terms, even if profit is lower, is pursuing:",
+     "options": [
+      "Revenue maximization",
+      "Profit maximization",
+      "Satisficing",
+      "Cost minimization"
+     ],
+     "answer": "Revenue maximization",
+     "accept": [],
+     "hint": "Revenue is price × quantity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzqq6doic72n8",
+     "subject": "econ",
+     "type": "short",
+     "q": "What term describes a firm aiming for a satisfactory level of profit rather than the maximum, to keep several stakeholders content?",
+     "options": [],
+     "answer": "Satisficing",
+     "accept": [
+      "satisficing"
+     ],
+     "hint": "It combines 'satisfy' and 'suffice'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq1458hiffsgq",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What does CSR stand for?",
+     "options": [
+      "Corporate social responsibility",
+      "Consumer spending rate",
+      "Cost of sales ratio",
+      "Competitive supply response"
+     ],
+     "answer": "Corporate social responsibility",
+     "accept": [],
+     "hint": "It concerns a firm's behaviour towards society and the environment.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uv3db44yt5b3",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which is an example of corporate social responsibility?",
+     "options": [
+      "Reducing packaging waste beyond what the law requires",
+      "Raising prices when demand increases",
+      "Paying the legal minimum wage only",
+      "Increasing advertising spending"
+     ],
+     "answer": "Reducing packaging waste beyond what the law requires",
+     "accept": [],
+     "hint": "CSR goes beyond legal obligations.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rnfxpw11g8k7r",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which group is most likely to favour growth maximization over profit maximization?",
+     "options": [
+      "Managers whose pay and status rise with firm size",
+      "Shareholders who want high dividends now",
+      "Government tax inspectors",
+      "Consumers looking for lower prices"
+     ],
+     "answer": "Managers whose pay and status rise with firm size",
+     "accept": [],
+     "hint": "Think about the principal–agent problem.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13k7h8vbdioyy",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Why might a firm aim for growth in market share in the short run?",
+     "options": [
+      "To gain market power and economies of scale in the long run",
+      "Because growth always maximizes short-run profit",
+      "Because it is required by law",
+      "To reduce its number of customers"
+     ],
+     "answer": "To gain market power and economies of scale in the long run",
+     "accept": [],
+     "hint": "Think about the benefits of being large.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8vistd1x6mo2j",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Satisficing is most likely to occur when:",
+     "options": [
+      "Ownership and control are separated and stakeholders have different goals",
+      "A firm is run by a single owner who wants maximum profit",
+      "The firm has no competitors",
+      "The firm has no employees"
+     ],
+     "answer": "Ownership and control are separated and stakeholders have different goals",
+     "accept": [],
+     "hint": "Think about managers, shareholders and workers wanting different things.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xaidc81iw4vgf",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A firm with CSR goals might choose to:",
+     "options": [
+      "Pay suppliers in low-income countries a fair price",
+      "Hide information about pollution",
+      "Avoid paying taxes",
+      "Cut safety training to lower costs"
+     ],
+     "answer": "Pay suppliers in low-income countries a fair price",
+     "accept": [],
+     "hint": "CSR is about ethical behaviour.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17xz9dt80u6z7",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which is a possible reason why CSR can increase a firm's long-run profit?",
+     "options": [
+      "It can improve brand reputation and customer loyalty",
+      "It always lowers costs immediately",
+      "It removes all competition",
+      "It allows the firm to ignore regulations"
+     ],
+     "answer": "It can improve brand reputation and customer loyalty",
+     "accept": [],
+     "hint": "Think about how consumers react to ethical firms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjgwvpbenstsd",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which statement about revenue maximization is correct?",
+     "options": [
+      "Output is higher than at the profit-maximizing level",
+      "Output is always lower than at the profit-maximizing level",
+      "Price is always higher than at the profit-maximizing level",
+      "It means the firm makes a loss"
+     ],
+     "answer": "Output is higher than at the profit-maximizing level",
+     "accept": [],
+     "hint": "To sell more, a firm usually lowers price and expands output.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q38wnc1iln2hm",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A large charity-linked café sets prices to cover costs and fund local projects. Its objective is closest to:",
+     "options": [
+      "Satisficing with CSR goals",
+      "Pure profit maximization",
+      "Revenue maximization",
+      "Predatory pricing"
+     ],
+     "answer": "Satisficing with CSR goals",
+     "accept": [],
+     "hint": "It does not seek the highest possible profit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsnsigt1b0h8zy",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain why a firm might choose revenue maximization rather than profit maximization.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about market share, managers' rewards or economies of scale.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsnvq3jirpwda",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain one reason why a firm might engage in corporate social responsibility.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider both ethical reasons and business reasons.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1afb1s91x9z95b",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain how the separation of ownership and control can lead firms to pursue objectives other than profit maximization.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Who owns the firm and who makes day-to-day decisions?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1deg8ypd44x7u",
+     "subject": "econ",
+     "type": "open",
+     "q": "Evaluate the view that firms should always aim to maximize profit.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider shareholders, other stakeholders and the long run before reaching a judgement.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
