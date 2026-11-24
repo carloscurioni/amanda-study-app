@@ -1759,6 +1759,2568 @@
      "errors": []
     }
    ]
+  },
+  "comp-sl": {
+   "topic": "Theme A practice: computer fundamentals and networks",
+   "questions": [
+    {
+     "id": "r10uix3014puar4",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which component of the CPU performs arithmetic and logical operations?",
+     "options": [
+      "ALU",
+      "Control unit",
+      "MAR",
+      "Cache"
+     ],
+     "answer": "ALU",
+     "accept": [],
+     "hint": "Think of the unit named after the operations it carries out.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjj6a5t1hednwb",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which register holds the address of the next instruction to be fetched?",
+     "options": [
+      "Program counter",
+      "MDR",
+      "Accumulator",
+      "CIR"
+     ],
+     "answer": "Program counter",
+     "accept": [],
+     "hint": "It 'counts' through the program.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o7w4r7ok97d8",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which type of primary memory is volatile?",
+     "options": [
+      "RAM",
+      "ROM",
+      "Flash ROM",
+      "EPROM"
+     ],
+     "answer": "RAM",
+     "accept": [],
+     "hint": "Volatile memory loses its contents when power is removed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raz1vlmjydzf9",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the term for small, very fast memory located on or near the CPU that stores frequently used data.",
+     "options": [],
+     "answer": "cache",
+     "accept": [
+      "cache memory"
+     ],
+     "hint": "It sits between the registers and RAM in the memory hierarchy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xjvbx91x18dar",
+     "subject": "comp",
+     "type": "mc",
+     "q": "What is the output of an XOR gate when both inputs are 1?",
+     "options": [
+      "0",
+      "1",
+      "Undefined",
+      "Same as AND"
+     ],
+     "answer": "0",
+     "accept": [],
+     "hint": "XOR is true only when the inputs differ.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kfyjy81956e04",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which Boolean expression is equivalent to NOT (A AND B)?",
+     "options": [
+      "(NOT A) OR (NOT B)",
+      "(NOT A) AND (NOT B)",
+      "A OR B",
+      "NOT A AND B"
+     ],
+     "answer": "(NOT A) OR (NOT B)",
+     "accept": [],
+     "hint": "Apply De Morgan's law.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1njaj8l1o3ce19",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which of the following is a function of an operating system?",
+     "options": [
+      "Memory management",
+      "Compiling source code into a web page",
+      "Designing the user's database tables",
+      "Encrypting every email by default"
+     ],
+     "answer": "Memory management",
+     "accept": [],
+     "hint": "Think of resources the OS allocates between programs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjl06vw1gsajm1",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the term for the OS technique that uses secondary storage as an extension of RAM.",
+     "options": [],
+     "answer": "virtual memory",
+     "accept": [
+      "paging"
+     ],
+     "hint": "Pages are swapped between RAM and disk.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkiliwiasphhn",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which network type typically covers a single building or campus?",
+     "options": [
+      "LAN",
+      "WAN",
+      "PAN",
+      "The Internet"
+     ],
+     "answer": "LAN",
+     "accept": [],
+     "hint": "The L stands for a small area.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bx6sxs1t056qx",
+     "subject": "comp",
+     "type": "mc",
+     "q": "At which layer of the OSI model does IP addressing operate?",
+     "options": [
+      "Network layer",
+      "Data link layer",
+      "Transport layer",
+      "Application layer"
+     ],
+     "answer": "Network layer",
+     "accept": [],
+     "hint": "Routing between networks happens at this layer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7i6ses1qs44c4",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which protocol provides reliable, connection-oriented delivery of data?",
+     "options": [
+      "TCP",
+      "UDP",
+      "IP",
+      "Ethernet"
+     ],
+     "answer": "TCP",
+     "accept": [],
+     "hint": "It uses acknowledgements and retransmission.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ran4o0fkh3yky",
+     "subject": "comp",
+     "type": "short",
+     "q": "State the name of the device that forwards data packets between different networks.",
+     "options": [],
+     "answer": "router",
+     "accept": [
+      "a router"
+     ],
+     "hint": "It reads IP addresses to choose a path.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6mmigvz9h3lq",
+     "subject": "comp",
+     "type": "mc",
+     "q": "Which security measure converts plaintext into ciphertext?",
+     "options": [
+      "Encryption",
+      "Firewall",
+      "Compression",
+      "Authentication"
+     ],
+     "answer": "Encryption",
+     "accept": [],
+     "hint": "Only someone with the key can read the result.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ecognkid4put",
+     "subject": "comp",
+     "type": "mc",
+     "q": "A user receives a fake email asking them to enter their password on a lookalike website. This is an example of:",
+     "options": [
+      "Phishing",
+      "A denial-of-service attack",
+      "A worm",
+      "Packet switching"
+     ],
+     "answer": "Phishing",
+     "accept": [],
+     "hint": "It relies on tricking the user, not on breaking the system.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bwlhkm1v2qm1r",
+     "subject": "comp",
+     "type": "open",
+     "q": "Describe two differences between a VPN and a standard public internet connection.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about encryption and the 'tunnel' through which data travels.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11ztejb6nbnb2",
+     "subject": "comp",
+     "type": "open",
+     "q": "Explain why packet switching makes efficient use of network bandwidth.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider how packets from many users share the same links and can take different routes.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "econ-hl": {
+   "topic": "Development strategies: trade-oriented approaches",
+   "questions": [
+    {
+     "id": "r1aaq3k51dnzj2q",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Import substitution industrialisation (ISI) aims mainly to:",
+     "options": [
+      "Replace imported manufactured goods with domestic production",
+      "Increase exports of primary commodities",
+      "Remove all tariffs immediately",
+      "Attract only tourism"
+     ],
+     "answer": "Replace imported manufactured goods with domestic production",
+     "accept": [],
+     "hint": "The name describes the strategy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tj27celwhkx4",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which policy tool is most closely associated with ISI?",
+     "options": [
+      "High tariffs on manufactured imports",
+      "Export subsidies with free trade",
+      "Abolishing quotas",
+      "Floating the currency freely"
+     ],
+     "answer": "High tariffs on manufactured imports",
+     "accept": [],
+     "hint": "ISI protects infant industries from foreign competition.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r41jfs619ktw1y",
+     "subject": "econ",
+     "type": "short",
+     "q": "State the argument used to justify protecting new domestic firms until they can achieve economies of scale.",
+     "options": [],
+     "answer": "infant industry argument",
+     "accept": [
+      "infant industry"
+     ],
+     "hint": "Think of the 'age' of the firms being protected.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rflnjmdet9qg4",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Export promotion focuses on:",
+     "options": [
+      "Producing goods for which the country has a comparative advantage for world markets",
+      "Reducing all trade to zero",
+      "Producing only for the domestic market",
+      "Banning foreign direct investment"
+     ],
+     "answer": "Producing goods for which the country has a comparative advantage for world markets",
+     "accept": [],
+     "hint": "Growth is driven by selling abroad.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lvxm6b2gm9n3",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of the following is a common criticism of ISI?",
+     "options": [
+      "Protected firms may become inefficient",
+      "It always leads to large trade surpluses",
+      "It eliminates government spending",
+      "It lowers prices for consumers"
+     ],
+     "answer": "Protected firms may become inefficient",
+     "accept": [],
+     "hint": "Consider the effect of having no foreign competition.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzi7h6jv3gxvv",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Many Latin American economies used ISI most widely in which period?",
+     "options": [
+      "1950s–1970s",
+      "1880s–1900s",
+      "2010s–2020s",
+      "Only after 2000"
+     ],
+     "answer": "1950s–1970s",
+     "accept": [],
+     "hint": "It was popular in the post-war decades, before the debt crisis of the 1980s.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mvmdp1vkt4wy",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which event in the 1980s led many Latin American countries to move away from ISI?",
+     "options": [
+      "The debt crisis",
+      "The invention of the internet",
+      "The creation of the euro",
+      "The end of the gold rush"
+     ],
+     "answer": "The debt crisis",
+     "accept": [],
+     "hint": "It is often called the 'lost decade'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd1c4gh4fzghy",
+     "subject": "econ",
+     "type": "short",
+     "q": "State the term for a country spreading its production and exports across a wider range of goods and services.",
+     "options": [],
+     "answer": "diversification",
+     "accept": [
+      "economic diversification"
+     ],
+     "hint": "It reduces the risk of relying on one commodity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10s6wclngophz",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Over-dependence on primary commodity exports exposes an economy mainly to:",
+     "options": [
+      "Volatile export revenues",
+      "Guaranteed rising terms of trade",
+      "Zero exchange rate risk",
+      "Lower unemployment in all cases"
+     ],
+     "answer": "Volatile export revenues",
+     "accept": [],
+     "hint": "Commodity prices rise and fall sharply.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3lcxw3qrh8lr",
+     "subject": "econ",
+     "type": "mc",
+     "q": "The Prebisch–Singer hypothesis suggests that, over the long run, the terms of trade of primary commodity exporters tend to:",
+     "options": [
+      "Deteriorate",
+      "Improve steadily",
+      "Remain constant",
+      "Become irrelevant"
+     ],
+     "answer": "Deteriorate",
+     "accept": [],
+     "hint": "Compare the income elasticity of demand for primary vs manufactured goods.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15ysb2k1osrupm",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Fair trade schemes typically guarantee producers:",
+     "options": [
+      "A minimum price for their product",
+      "A fixed exchange rate",
+      "Free education for all workers",
+      "Unlimited export quotas"
+     ],
+     "answer": "A minimum price for their product",
+     "accept": [],
+     "hint": "It protects farmers when world prices fall.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12r709u1mhcp42",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which is a limitation of fair trade as a development strategy?",
+     "options": [
+      "It covers only a small share of world trade",
+      "It always raises world prices for all producers",
+      "It removes the need for certification",
+      "It bans exports to rich countries"
+     ],
+     "answer": "It covers only a small share of world trade",
+     "accept": [],
+     "hint": "Think about its scale relative to total exports.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgmxkfbubycfv",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain how export promotion can contribute to economic growth in a developing country.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Link exports to aggregate demand, economies of scale and foreign exchange earnings.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18ij1471ih7ojv",
+     "subject": "econ",
+     "type": "open",
+     "q": "Evaluate the use of import substitution as a strategy for economic development.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh protection of infant industries and jobs against inefficiency, higher prices and limited markets.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm7oyhsi9omy8",
+     "subject": "econ",
+     "type": "open",
+     "q": "Using a Latin American example of your choice, discuss the advantages and disadvantages of relying on commodity exports.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider price volatility, Dutch disease and the potential for diversification.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gp37rkyc61fp",
+     "subject": "econ",
+     "type": "open",
+     "q": "Discuss whether diversification is more effective than fair trade in reducing poverty in developing economies.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare the scale and long-term effects of each approach; reach a reasoned judgement.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "econ-sl": {
+   "topic": "Development strategies: trade-oriented approaches",
+   "questions": [
+    {
+     "id": "rnmh3zf8txabi",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which strategy encourages a country to produce manufactured goods at home instead of buying them from abroad?",
+     "options": [
+      "Import substitution",
+      "Export promotion",
+      "Fair trade",
+      "Microfinance"
+     ],
+     "answer": "Import substitution",
+     "accept": [],
+     "hint": "Imports are 'substituted' by local goods.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5tbidzqlmtun",
+     "subject": "econ",
+     "type": "mc",
+     "q": "A government places a tariff on imported cars to help a new local car industry grow. This is an example of:",
+     "options": [
+      "Import substitution",
+      "Export promotion",
+      "Trade liberalisation",
+      "Deregulation"
+     ],
+     "answer": "Import substitution",
+     "accept": [],
+     "hint": "The policy protects domestic production from imports.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjg1okb1dn8l07",
+     "subject": "econ",
+     "type": "short",
+     "q": "Give the abbreviation for import substitution industrialisation.",
+     "options": [],
+     "answer": "ISI",
+     "accept": [],
+     "hint": "Use the first letter of each word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw0cfrw1anzwdk",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which is an example of an export promotion policy?",
+     "options": [
+      "Creating export processing zones",
+      "Raising import quotas on all goods",
+      "Banning foreign investment",
+      "Nationalising all exporters"
+     ],
+     "answer": "Creating export processing zones",
+     "accept": [],
+     "hint": "These zones attract firms that produce for world markets.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrhk9ea52vdh4",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Export-led growth relies mainly on increasing:",
+     "options": [
+      "Demand from foreign markets",
+      "Government spending on defence",
+      "Import tariffs",
+      "Domestic savings only"
+     ],
+     "answer": "Demand from foreign markets",
+     "accept": [],
+     "hint": "Exports are an injection into the circular flow.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rea19p71af6q8z",
+     "subject": "econ",
+     "type": "mc",
+     "q": "One advantage of export promotion is that it can:",
+     "options": [
+      "Earn foreign exchange",
+      "Guarantee stable commodity prices",
+      "Remove all competition",
+      "Reduce the size of markets"
+     ],
+     "answer": "Earn foreign exchange",
+     "accept": [],
+     "hint": "Exports bring in foreign currency.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kzlzeo1pyg1z",
+     "subject": "econ",
+     "type": "mc",
+     "q": "One disadvantage of ISI is that:",
+     "options": [
+      "Consumers may pay higher prices",
+      "Exports always rise",
+      "Firms face more competition",
+      "Tariff revenue falls to zero"
+     ],
+     "answer": "Consumers may pay higher prices",
+     "accept": [],
+     "hint": "Protected domestic firms face less pressure to cut costs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ritetuv3uxbuo",
+     "subject": "econ",
+     "type": "short",
+     "q": "State the term for when a country relies on producing and exporting a wide variety of goods rather than one main product.",
+     "options": [],
+     "answer": "diversification",
+     "accept": [
+      "economic diversification"
+     ],
+     "hint": "The opposite of relying on a single commodity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn0orfm1kdnre6",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Why can dependence on a single commodity be risky?",
+     "options": [
+      "Its price can fall sharply on world markets",
+      "It always leads to inflation of zero",
+      "It cannot be exported",
+      "It never earns revenue"
+     ],
+     "answer": "Its price can fall sharply on world markets",
+     "accept": [],
+     "hint": "Think about what happens to export earnings when prices fall.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1eb2g3s1n2zg3t",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which of these is a primary commodity?",
+     "options": [
+      "Copper",
+      "Smartphones",
+      "Cars",
+      "Banking services"
+     ],
+     "answer": "Copper",
+     "accept": [],
+     "hint": "Primary goods come directly from natural resources.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8oug7d1bd7iur",
+     "subject": "econ",
+     "type": "mc",
+     "q": "What does fair trade certification aim to provide for small producers?",
+     "options": [
+      "A minimum price and a social premium",
+      "Free shipping worldwide",
+      "Higher import tariffs in their own country",
+      "A guaranteed government job"
+     ],
+     "answer": "A minimum price and a social premium",
+     "accept": [],
+     "hint": "The premium is often invested in the community.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15i9pvysypw02",
+     "subject": "econ",
+     "type": "mc",
+     "q": "Which statement about fair trade is correct?",
+     "options": [
+      "It accounts for a small share of global trade",
+      "It replaces all other trade",
+      "It sets world market prices",
+      "It only applies to manufactured goods"
+     ],
+     "answer": "It accounts for a small share of global trade",
+     "accept": [],
+     "hint": "Think about how often you see the label compared with other products.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c8mbs97taw75",
+     "subject": "econ",
+     "type": "short",
+     "q": "In the 1980s, many Latin American countries faced a crisis linked to large foreign loans. State the name of this crisis.",
+     "options": [],
+     "answer": "debt crisis",
+     "accept": [
+      "the debt crisis",
+      "Latin American debt crisis"
+     ],
+     "hint": "It was caused by borrowing that became hard to repay.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1odeldz1l0qi3v",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain one advantage and one disadvantage of import substitution for a developing country.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about jobs in new industries and the effect of protection on efficiency or prices.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k7c9rh1cfqeba",
+     "subject": "econ",
+     "type": "open",
+     "q": "Explain why diversification can make a developing economy less vulnerable to external shocks.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider what happens if the price of one export suddenly falls.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r353wy91t0zyix",
+     "subject": "econ",
+     "type": "open",
+     "q": "Evaluate fair trade as a way of improving the incomes of small farmers.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider who benefits, certification costs and the scale of fair trade markets.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en-hl": {
+   "topic": "Paper 2 essay structures: point-by-point and block",
+   "questions": [
+    {
+     "id": "rhnzi2drnl8ql",
+     "subject": "en",
+     "type": "mc",
+     "q": "In a point-by-point comparative essay, each body paragraph usually:",
+     "options": [
+      "Discusses both texts in relation to one idea",
+      "Discusses only one text",
+      "Lists quotations without analysis",
+      "Summarises the plot of one text"
+     ],
+     "answer": "Discusses both texts in relation to one idea",
+     "accept": [],
+     "hint": "The comparison happens inside every paragraph.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5psa0f194rl40",
+     "subject": "en",
+     "type": "mc",
+     "q": "In a block structure, the writer:",
+     "options": [
+      "Discusses one text fully, then the other",
+      "Alternates between texts sentence by sentence",
+      "Writes only an introduction and conclusion",
+      "Avoids comparison entirely"
+     ],
+     "answer": "Discusses one text fully, then the other",
+     "accept": [],
+     "hint": "Each text gets its own 'block'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r870a7g5kpun9",
+     "subject": "en",
+     "type": "short",
+     "q": "Which essay structure (point-by-point or block) is generally considered better at keeping comparison sustained throughout the essay?",
+     "options": [],
+     "answer": "point-by-point",
+     "accept": [
+      "point by point"
+     ],
+     "hint": "Think about where the comparison happens in each paragraph.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt7f70ii7b5um",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the main risk of using a block structure in Paper 2?",
+     "options": [
+      "The essay becomes two separate analyses",
+      "It is too comparative",
+      "It forbids quotations",
+      "It is always too short"
+     ],
+     "answer": "The essay becomes two separate analyses",
+     "accept": [],
+     "hint": "Examiners reward comparison and contrast.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kh9is9zgr32",
+     "subject": "en",
+     "type": "mc",
+     "q": "If you use a block structure, how can you make it more comparative?",
+     "options": [
+      "Refer back to the first text explicitly in the second block",
+      "Avoid mentioning the first text again",
+      "Remove the conclusion",
+      "Write the blocks in different languages"
+     ],
+     "answer": "Refer back to the first text explicitly in the second block",
+     "accept": [],
+     "hint": "Use linking phrases that look back.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ee84fy1akwdic",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which connective best signals contrast between two works?",
+     "options": [
+      "Whereas",
+      "Furthermore",
+      "Similarly",
+      "In addition"
+     ],
+     "answer": "Whereas",
+     "accept": [],
+     "hint": "Look for the word that introduces a difference.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q7a5cx1hsqlsc",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which connective best signals similarity?",
+     "options": [
+      "Likewise",
+      "However",
+      "Conversely",
+      "Nevertheless"
+     ],
+     "answer": "Likewise",
+     "accept": [],
+     "hint": "It means 'in the same way'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6ia25q1x3bfs4",
+     "subject": "en",
+     "type": "mc",
+     "q": "What should a thesis in a Paper 2 essay do?",
+     "options": [
+      "Make a clear comparative argument answering the question",
+      "Summarise both plots",
+      "List all the literary devices",
+      "Give the author's biography"
+     ],
+     "answer": "Make a clear comparative argument answering the question",
+     "accept": [],
+     "hint": "It answers the question and links both works.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1snp4dtvp5eov",
+     "subject": "en",
+     "type": "short",
+     "q": "In a PEEL paragraph, what does the second E usually stand for?",
+     "options": [],
+     "answer": "explanation",
+     "accept": [
+      "explain",
+      "evaluation"
+     ],
+     "hint": "P–E–E–L: point, evidence, ..., link.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ress5au1k47044",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which topic sentence is most suitable for a point-by-point paragraph?",
+     "options": [
+      "Both works use setting to reflect the protagonists' isolation, though in contrasting ways.",
+      "The first novel is set in a village.",
+      "This essay will talk about two books.",
+      "I liked the second work more."
+     ],
+     "answer": "Both works use setting to reflect the protagonists' isolation, though in contrasting ways.",
+     "accept": [],
+     "hint": "It should name a shared focus and hint at comparison.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5jsljx99phu9",
+     "subject": "en",
+     "type": "mc",
+     "q": "A question asks how two works present conflict between generations. A good point-by-point plan would organise paragraphs by:",
+     "options": [
+      "Aspects of the conflict, such as causes, language and resolution",
+      "Chapter numbers of the first work",
+      "Biographical facts about the authors",
+      "Alphabetical order of characters"
+     ],
+     "answer": "Aspects of the conflict, such as causes, language and resolution",
+     "accept": [],
+     "hint": "Each paragraph tackles one aspect across both works.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtleq8qglcv16",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which criterion in Paper 2 focuses on how well the essay is organised and how ideas are connected?",
+     "options": [
+      "Coherence, focus and organisation",
+      "Knowledge only",
+      "Spelling accuracy only",
+      "Length"
+     ],
+     "answer": "Coherence, focus and organisation",
+     "accept": [],
+     "hint": "Think of the criterion about structure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv0digosgktm8",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain when a block structure might be a sensible choice for a Paper 2 essay.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider questions where the works are very different, or where a staged argument helps.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtyul78pf7axz",
+     "subject": "en",
+     "type": "open",
+     "q": "Write a topic sentence and a linking sentence for a point-by-point paragraph comparing how two works use symbolism.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "The topic sentence should name both works' use of a symbol; the link should return to the question.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxpa395uka9x8",
+     "subject": "en",
+     "type": "mc",
+     "q": "A hybrid structure in a comparative essay usually means:",
+     "options": [
+      "Mixing point-by-point paragraphs with short focused sections on each work",
+      "Writing half the essay in note form",
+      "Using no paragraphs",
+      "Comparing three works instead of two"
+     ],
+     "answer": "Mixing point-by-point paragraphs with short focused sections on each work",
+     "accept": [],
+     "hint": "It combines features of both structures.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry5yfloeismqf",
+     "subject": "en",
+     "type": "open",
+     "q": "Evaluate the strengths and weaknesses of point-by-point and block structures for a question on the representation of power in two works.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Weigh sustained comparison against depth of analysis, and reach a judgement.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en-sl": {
+   "topic": "Paper 2 essay structures: point-by-point and block",
+   "questions": [
+    {
+     "id": "rkdlsjqssdg5u",
+     "subject": "en",
+     "type": "mc",
+     "q": "In a point-by-point comparative essay, each body paragraph usually:",
+     "options": [
+      "Discusses both texts in relation to one idea",
+      "Discusses only one text",
+      "Lists quotations without analysis",
+      "Summarises the plot of one text"
+     ],
+     "answer": "Discusses both texts in relation to one idea",
+     "accept": [],
+     "hint": "The comparison happens inside every paragraph.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5h1t5g1bh9axr",
+     "subject": "en",
+     "type": "mc",
+     "q": "In a block structure, the writer:",
+     "options": [
+      "Discusses one text fully, then the other",
+      "Alternates between texts sentence by sentence",
+      "Writes only an introduction and conclusion",
+      "Avoids comparison entirely"
+     ],
+     "answer": "Discusses one text fully, then the other",
+     "accept": [],
+     "hint": "Each text gets its own 'block'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd85ubn2mixi",
+     "subject": "en",
+     "type": "short",
+     "q": "Which essay structure (point-by-point or block) is generally considered better at keeping comparison sustained throughout the essay?",
+     "options": [],
+     "answer": "point-by-point",
+     "accept": [
+      "point by point"
+     ],
+     "hint": "Think about where the comparison happens in each paragraph.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ra11k91cfjuod",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the main risk of using a block structure in Paper 2?",
+     "options": [
+      "The essay becomes two separate analyses",
+      "It is too comparative",
+      "It forbids quotations",
+      "It is always too short"
+     ],
+     "answer": "The essay becomes two separate analyses",
+     "accept": [],
+     "hint": "Examiners reward comparison and contrast.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1iq4sqou524lz",
+     "subject": "en",
+     "type": "mc",
+     "q": "If you use a block structure, how can you make it more comparative?",
+     "options": [
+      "Refer back to the first text explicitly in the second block",
+      "Avoid mentioning the first text again",
+      "Remove the conclusion",
+      "Write the blocks in different languages"
+     ],
+     "answer": "Refer back to the first text explicitly in the second block",
+     "accept": [],
+     "hint": "Use linking phrases that look back.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryatwjjrden65",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which connective best signals contrast between two works?",
+     "options": [
+      "Whereas",
+      "Furthermore",
+      "Similarly",
+      "In addition"
+     ],
+     "answer": "Whereas",
+     "accept": [],
+     "hint": "Look for the word that introduces a difference.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o54emm1lzs3ej",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which connective best signals similarity?",
+     "options": [
+      "Likewise",
+      "However",
+      "Conversely",
+      "Nevertheless"
+     ],
+     "answer": "Likewise",
+     "accept": [],
+     "hint": "It means 'in the same way'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwvc6zt1s7w9en",
+     "subject": "en",
+     "type": "mc",
+     "q": "What should a thesis in a Paper 2 essay do?",
+     "options": [
+      "Make a clear comparative argument answering the question",
+      "Summarise both plots",
+      "List all the literary devices",
+      "Give the author's biography"
+     ],
+     "answer": "Make a clear comparative argument answering the question",
+     "accept": [],
+     "hint": "It answers the question and links both works.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfa996g13y9iw2",
+     "subject": "en",
+     "type": "short",
+     "q": "In a PEEL paragraph, what does the second E usually stand for?",
+     "options": [],
+     "answer": "explanation",
+     "accept": [
+      "explain",
+      "evaluation"
+     ],
+     "hint": "P–E–E–L: point, evidence, ..., link.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkpykd8erbrz",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which topic sentence is most suitable for a point-by-point paragraph?",
+     "options": [
+      "Both works use setting to reflect the protagonists' isolation, though in contrasting ways.",
+      "The first novel is set in a village.",
+      "This essay will talk about two books.",
+      "I liked the second work more."
+     ],
+     "answer": "Both works use setting to reflect the protagonists' isolation, though in contrasting ways.",
+     "accept": [],
+     "hint": "It should name a shared focus and hint at comparison.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fi3ph816uktpg",
+     "subject": "en",
+     "type": "mc",
+     "q": "A question asks how two works present conflict between generations. A good point-by-point plan would organise paragraphs by:",
+     "options": [
+      "Aspects of the conflict, such as causes, language and resolution",
+      "Chapter numbers of the first work",
+      "Biographical facts about the authors",
+      "Alphabetical order of characters"
+     ],
+     "answer": "Aspects of the conflict, such as causes, language and resolution",
+     "accept": [],
+     "hint": "Each paragraph tackles one aspect across both works.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17xjo0djko2zh",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which criterion in Paper 2 focuses on how well the essay is organised and how ideas are connected?",
+     "options": [
+      "Coherence, focus and organisation",
+      "Knowledge only",
+      "Spelling accuracy only",
+      "Length"
+     ],
+     "answer": "Coherence, focus and organisation",
+     "accept": [],
+     "hint": "Think of the criterion about structure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kt9hmxjlx1b5",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain when a block structure might be a sensible choice for a Paper 2 essay.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider questions where the works are very different, or where a staged argument helps.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qqblyzhiqhr4",
+     "subject": "en",
+     "type": "open",
+     "q": "Write a topic sentence and a linking sentence for a point-by-point paragraph comparing how two works use symbolism.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "The topic sentence should name both works' use of a symbol; the link should return to the question.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10ov9sbl7mki6",
+     "subject": "en",
+     "type": "mc",
+     "q": "Where should the strongest comparative point usually go in a Paper 2 essay?",
+     "options": [
+      "Early in the body, or built up to near the end",
+      "Only in the conclusion",
+      "In the title",
+      "Nowhere; all points are equal"
+     ],
+     "answer": "Early in the body, or built up to near the end",
+     "accept": [],
+     "hint": "Think about how essays build an argument.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rfgr76iq4i5j",
+     "subject": "en",
+     "type": "short",
+     "q": "What is the name for the final paragraph that answers the question and draws the comparison together?",
+     "options": [],
+     "answer": "conclusion",
+     "accept": [
+      "the conclusion"
+     ],
+     "hint": "It closes the essay.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_lit-hl": {
+   "topic": "Paper 2 question types and choosing works",
+   "questions": [
+    {
+     "id": "r13vk9r9i5ipp4",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "How many works do you write about in an English A Literature Paper 2 essay?",
+     "options": [
+      "Two",
+      "One",
+      "Three",
+      "Four"
+     ],
+     "answer": "Two",
+     "accept": [],
+     "hint": "It is a comparative essay.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ayjiot1p4iyd7",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "The works you use in Paper 2 must be:",
+     "options": [
+      "Works studied in the course that were not used for Paper 1",
+      "Any works you have read",
+      "Unseen texts given in the exam",
+      "Only poems"
+     ],
+     "answer": "Works studied in the course that were not used for Paper 1",
+     "accept": [],
+     "hint": "Think about which works you bring to the exam.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ru8o66h1ezyz9z",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Paper 2 questions are generally:",
+     "options": [
+      "General and conceptual, not about specific works",
+      "About one named novel",
+      "Always about poetry",
+      "About authors' biographies"
+     ],
+     "answer": "General and conceptual, not about specific works",
+     "accept": [],
+     "hint": "They must apply to many possible works.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nrnp6a3bmzjz",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "State the type of essay required in Paper 2 (one word).",
+     "options": [],
+     "answer": "comparative",
+     "accept": [
+      "comparison"
+     ],
+     "hint": "You must discuss similarities and differences.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12tyjn3m5yiq8",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "A question like 'Discuss how two works present a character who changes' focuses mainly on:",
+     "options": [
+      "Characterisation",
+      "Setting only",
+      "Publishing history",
+      "Rhyme scheme"
+     ],
+     "answer": "Characterisation",
+     "accept": [],
+     "hint": "Look at the key noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uzgvhd1wb2g6n",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "A question like 'How do two works use time and its passing?' focuses mainly on:",
+     "options": [
+      "Structure and narrative technique",
+      "The author's nationality",
+      "Book cover design",
+      "Vocabulary lists"
+     ],
+     "answer": "Structure and narrative technique",
+     "accept": [],
+     "hint": "Time is often shaped through structure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1d61zjmsijup8",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "When choosing works for a question, the most important factor is:",
+     "options": [
+      "Whether both works offer rich, comparable material for the question",
+      "Which work is shorter",
+      "Which author is more famous",
+      "Which work you read most recently"
+     ],
+     "answer": "Whether both works offer rich, comparable material for the question",
+     "accept": [],
+     "hint": "You need enough to compare in depth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpwod75qa4u6k",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What should you do first when you read the Paper 2 questions?",
+     "options": [
+      "Identify the key terms and what the question really asks",
+      "Start writing immediately",
+      "Choose the longest question",
+      "Copy the question several times"
+     ],
+     "answer": "Identify the key terms and what the question really asks",
+     "accept": [],
+     "hint": "Underline the focus words.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r67qy4410hrd0w",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "A quick plan for Paper 2 should include:",
+     "options": [
+      "A thesis, paragraph topics and key evidence from both works",
+      "A full rough draft",
+      "Only a list of quotations",
+      "The plot of each work in detail"
+     ],
+     "answer": "A thesis, paragraph topics and key evidence from both works",
+     "accept": [],
+     "hint": "Think about what keeps the essay focused.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uc6akrzexcoc",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "In the exam there are no texts provided, so supporting references to the works must come from your _____. (one word)",
+     "options": [],
+     "answer": "memory",
+     "accept": [
+      "recall"
+     ],
+     "hint": "You need to prepare quotations in advance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15ycynjxk37wc",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which of these is a question about genre and form?",
+     "options": [
+      "How do the conventions of the form shape the presentation of conflict in two works?",
+      "Who is your favourite character?",
+      "When did each author live?",
+      "How long is each work?"
+     ],
+     "answer": "How do the conventions of the form shape the presentation of conflict in two works?",
+     "accept": [],
+     "hint": "Look for words like 'form' and 'conventions'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt7wxjpvwn3x7",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "If a question mentions 'the reader's response', your essay should focus on:",
+     "options": [
+      "How the works shape the audience's reactions",
+      "The author's private life",
+      "Sales figures",
+      "Only the plot"
+     ],
+     "answer": "How the works shape the audience's reactions",
+     "accept": [],
+     "hint": "Think about effects on the audience.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtqmxxv1hdiyxx",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Explain how you would decide which two works to use for a question about the presentation of a community.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider how strongly each work presents a community and whether they allow comparison and contrast.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh6831yxbg2au",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Write a thesis statement for a Paper 2 question on how two works present loss.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Make a comparative claim that answers the question and points to how each work presents loss.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w7h4ia10322mn",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "State how long (in hours and minutes) the Paper 2 exam lasts.",
+     "options": [],
+     "answer": "1 hour 45 minutes",
+     "accept": [
+      "1h45",
+      "1 h 45 min",
+      "105 minutes"
+     ],
+     "hint": "Both HL and SL have the same time.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1aowgaa2wnpp2",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Evaluate the importance of planning time in Paper 2 and how it affects the quality of comparison.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about thesis clarity, balance between works and coherent structure.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_lit-sl": {
+   "topic": "Paper 2 question types and choosing works",
+   "questions": [
+    {
+     "id": "r3q4xgk1b375sh",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "How many works do you write about in an English A Literature Paper 2 essay?",
+     "options": [
+      "Two",
+      "One",
+      "Three",
+      "Four"
+     ],
+     "answer": "Two",
+     "accept": [],
+     "hint": "It is a comparative essay.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhub61i1cgp1i8",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "The works you use in Paper 2 must be:",
+     "options": [
+      "Works studied in the course that were not used for Paper 1",
+      "Any works you have read",
+      "Unseen texts given in the exam",
+      "Only poems"
+     ],
+     "answer": "Works studied in the course that were not used for Paper 1",
+     "accept": [],
+     "hint": "Think about which works you bring to the exam.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdgioh41e8s7ue",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Paper 2 questions are generally:",
+     "options": [
+      "General and conceptual, not about specific works",
+      "About one named novel",
+      "Always about poetry",
+      "About authors' biographies"
+     ],
+     "answer": "General and conceptual, not about specific works",
+     "accept": [],
+     "hint": "They must apply to many possible works.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1coot11ha1qgs",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "State the type of essay required in Paper 2 (one word).",
+     "options": [],
+     "answer": "comparative",
+     "accept": [
+      "comparison"
+     ],
+     "hint": "You must discuss similarities and differences.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rw24x2e1i3s5wt",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "A question like 'Discuss how two works present a character who changes' focuses mainly on:",
+     "options": [
+      "Characterisation",
+      "Setting only",
+      "Publishing history",
+      "Rhyme scheme"
+     ],
+     "answer": "Characterisation",
+     "accept": [],
+     "hint": "Look at the key noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtr1tbgwiv2cy",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "A question like 'How do two works use time and its passing?' focuses mainly on:",
+     "options": [
+      "Structure and narrative technique",
+      "The author's nationality",
+      "Book cover design",
+      "Vocabulary lists"
+     ],
+     "answer": "Structure and narrative technique",
+     "accept": [],
+     "hint": "Time is often shaped through structure.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i9h2r71qc4tdl",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "When choosing works for a question, the most important factor is:",
+     "options": [
+      "Whether both works offer rich, comparable material for the question",
+      "Which work is shorter",
+      "Which author is more famous",
+      "Which work you read most recently"
+     ],
+     "answer": "Whether both works offer rich, comparable material for the question",
+     "accept": [],
+     "hint": "You need enough to compare in depth.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mtke8ax4knub",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "What should you do first when you read the Paper 2 questions?",
+     "options": [
+      "Identify the key terms and what the question really asks",
+      "Start writing immediately",
+      "Choose the longest question",
+      "Copy the question several times"
+     ],
+     "answer": "Identify the key terms and what the question really asks",
+     "accept": [],
+     "hint": "Underline the focus words.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w2coev161w8ar",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "A quick plan for Paper 2 should include:",
+     "options": [
+      "A thesis, paragraph topics and key evidence from both works",
+      "A full rough draft",
+      "Only a list of quotations",
+      "The plot of each work in detail"
+     ],
+     "answer": "A thesis, paragraph topics and key evidence from both works",
+     "accept": [],
+     "hint": "Think about what keeps the essay focused.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryz7hng3ilkpf",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "In the exam there are no texts provided, so supporting references to the works must come from your _____. (one word)",
+     "options": [],
+     "answer": "memory",
+     "accept": [
+      "recall"
+     ],
+     "hint": "You need to prepare quotations in advance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bvutw81rn65fn",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which of these is a question about genre and form?",
+     "options": [
+      "How do the conventions of the form shape the presentation of conflict in two works?",
+      "Who is your favourite character?",
+      "When did each author live?",
+      "How long is each work?"
+     ],
+     "answer": "How do the conventions of the form shape the presentation of conflict in two works?",
+     "accept": [],
+     "hint": "Look for words like 'form' and 'conventions'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpds6xmqlyr78",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "If a question mentions 'the reader's response', your essay should focus on:",
+     "options": [
+      "How the works shape the audience's reactions",
+      "The author's private life",
+      "Sales figures",
+      "Only the plot"
+     ],
+     "answer": "How the works shape the audience's reactions",
+     "accept": [],
+     "hint": "Think about effects on the audience.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhwmy9g1swxdjy",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Explain how you would decide which two works to use for a question about the presentation of a community.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider how strongly each work presents a community and whether they allow comparison and contrast.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rwbwaiz89m0pv",
+     "subject": "en_lit",
+     "type": "open",
+     "q": "Write a thesis statement for a Paper 2 question on how two works present loss.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Make a comparative claim that answers the question and points to how each work presents loss.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rctqfuwnlaw5k",
+     "subject": "en_lit",
+     "type": "mc",
+     "q": "Which approach best balances an essay between two works?",
+     "options": [
+      "Give each work similar attention in every paragraph",
+      "Write mostly about the work you like",
+      "Mention the second work only in the conclusion",
+      "Avoid quotations from one work"
+     ],
+     "answer": "Give each work similar attention in every paragraph",
+     "accept": [],
+     "hint": "Balance is part of good comparison.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o7y1nq1f8ptib",
+     "subject": "en_lit",
+     "type": "short",
+     "q": "What do we call the short sentence at the end of the introduction that states your main argument?",
+     "options": [],
+     "answer": "thesis",
+     "accept": [
+      "thesis statement"
+     ],
+     "hint": "It is the heart of your essay.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "fre-hl": {
+   "topic": "Vocabulary bank: identities and experiences",
+   "questions": [
+    {
+     "id": "r1oigymk1cl7niz",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the French word for 'identity'.",
+     "options": [
+      "l'identité",
+      "l'entité",
+      "l'idée",
+      "l'identifiant"
+     ],
+     "answer": "l'identité",
+     "accept": [],
+     "hint": "It looks very similar to the English word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdlptff170yru1",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct translation of 'to feel at home'.",
+     "options": [
+      "se sentir chez soi",
+      "se sentir à la maison de",
+      "être en maison",
+      "rester sa maison"
+     ],
+     "answer": "se sentir chez soi",
+     "accept": [],
+     "hint": "'Chez' means 'at the home of'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2pbdti1l8fkgy",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'a mother tongue' (with the indefinite article).",
+     "options": [],
+     "answer": "une langue maternelle",
+     "accept": [
+      "langue maternelle"
+     ],
+     "hint": "'Mère' gives the adjective.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rso70841w0k76h",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'avoir le mal du pays' mean?",
+     "options": [
+      "to be homesick",
+      "to be seasick",
+      "to dislike a country",
+      "to travel a lot"
+     ],
+     "answer": "to be homesick",
+     "accept": [],
+     "hint": "'Le pays' is the country you come from.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rh2mqlv1nrb85m",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: 'Elle a grandi ___ deux cultures.'",
+     "options": [
+      "entre",
+      "sur",
+      "par",
+      "chez"
+     ],
+     "answer": "entre",
+     "accept": [],
+     "hint": "Which preposition means 'between'?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r143i79i1va8tfh",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does the idiom 'avoir un coup de foudre' mean?",
+     "options": [
+      "to fall in love at first sight",
+      "to be struck by bad luck",
+      "to be very angry",
+      "to make a quick decision"
+     ],
+     "answer": "to fall in love at first sight",
+     "accept": [],
+     "hint": "'La foudre' is lightning – think of something sudden.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q5oh27djjvwd",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the French word for 'belonging' (the feeling).",
+     "options": [
+      "l'appartenance",
+      "l'appartement",
+      "l'apparence",
+      "l'apprentissage"
+     ],
+     "answer": "l'appartenance",
+     "accept": [],
+     "hint": "Be careful with false friends: one of these is a flat.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jotf38x3zjut",
+     "subject": "fre",
+     "type": "short",
+     "q": "Give the French noun for 'experience' (with the definite article).",
+     "options": [],
+     "answer": "l'expérience",
+     "accept": [
+      "expérience",
+      "une expérience"
+     ],
+     "hint": "Watch the accent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1uh3kls3it2iv",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'tomber dans les pommes' mean?",
+     "options": [
+      "to faint",
+      "to go shopping",
+      "to fall in love",
+      "to make a mistake"
+     ],
+     "answer": "to faint",
+     "accept": [],
+     "hint": "It has nothing to do with fruit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c9v3hrt503it",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the best word to complete: 'Ce voyage a été une expérience ___ : j'ai beaucoup appris.'",
+     "options": [
+      "enrichissante",
+      "ennuyeuse",
+      "enrichi",
+      "riche de"
+     ],
+     "answer": "enrichissante",
+     "accept": [],
+     "hint": "You need an adjective agreeing with a feminine noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri5vumx3cmfz3",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'les valeurs' mean in 'les valeurs familiales'?",
+     "options": [
+      "values",
+      "valleys",
+      "valuables",
+      "validity"
+     ],
+     "answer": "values",
+     "accept": [],
+     "hint": "Think of beliefs and principles.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvsmwmv102pikc",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which expression means 'to stand out from the crowd'?",
+     "options": [
+      "se démarquer",
+      "se dépêcher",
+      "se débrouiller",
+      "se démaquiller"
+     ],
+     "answer": "se démarquer",
+     "accept": [],
+     "hint": "It contains 'marque' – leaving your mark.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19uwsucnlp6s1",
+     "subject": "fre",
+     "type": "open",
+     "q": "En 2–3 phrases, décrivez un aspect de votre identité culturelle. Utilisez au moins une expression idiomatique.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Write in French; you could use 'se sentir chez soi' or 'avoir le mal du pays'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lxtoq51uwm5c1",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'être tiraillé entre deux cultures' mean?",
+     "options": [
+      "to be torn between two cultures",
+      "to be tired of two cultures",
+      "to celebrate two cultures",
+      "to ignore two cultures"
+     ],
+     "answer": "to be torn between two cultures",
+     "accept": [],
+     "hint": "'Tirer' means to pull.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl2xpkenania",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the best synonym for 'le dépaysement'.",
+     "options": [
+      "le sentiment d'être dans un lieu étranger",
+      "le retour au pays",
+      "la nostalgie d'un ami",
+      "le paysage"
+     ],
+     "answer": "le sentiment d'être dans un lieu étranger",
+     "accept": [],
+     "hint": "Think 'out of one's country'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y7mhwl1hbw8u4",
+     "subject": "fre",
+     "type": "open",
+     "q": "Rédigez un court paragraphe (4–5 phrases) sur une expérience qui a changé votre façon de voir le monde. Utilisez deux expressions idiomatiques et le passé composé et l'imparfait.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use the imperfect for background and the passé composé for events.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "fre-sl": {
+   "topic": "Vocabulary bank: identities and experiences",
+   "questions": [
+    {
+     "id": "rfwyq8xzrjnpo",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the French word for 'identity'.",
+     "options": [
+      "l'identité",
+      "l'entité",
+      "l'idée",
+      "l'identifiant"
+     ],
+     "answer": "l'identité",
+     "accept": [],
+     "hint": "It looks very similar to the English word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10d5whidjpdva",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the correct translation of 'to feel at home'.",
+     "options": [
+      "se sentir chez soi",
+      "se sentir à la maison de",
+      "être en maison",
+      "rester sa maison"
+     ],
+     "answer": "se sentir chez soi",
+     "accept": [],
+     "hint": "'Chez' means 'at the home of'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkpy38p67vvub",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'a mother tongue' (with the indefinite article).",
+     "options": [],
+     "answer": "une langue maternelle",
+     "accept": [
+      "langue maternelle"
+     ],
+     "hint": "'Mère' gives the adjective.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wtf3al1kmtnge",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'avoir le mal du pays' mean?",
+     "options": [
+      "to be homesick",
+      "to be seasick",
+      "to dislike a country",
+      "to travel a lot"
+     ],
+     "answer": "to be homesick",
+     "accept": [],
+     "hint": "'Le pays' is the country you come from.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r69yougniolub",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Complete: 'Elle a grandi ___ deux cultures.'",
+     "options": [
+      "entre",
+      "sur",
+      "par",
+      "chez"
+     ],
+     "answer": "entre",
+     "accept": [],
+     "hint": "Which preposition means 'between'?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r886ul12obqpo",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does the idiom 'avoir un coup de foudre' mean?",
+     "options": [
+      "to fall in love at first sight",
+      "to be struck by bad luck",
+      "to be very angry",
+      "to make a quick decision"
+     ],
+     "answer": "to fall in love at first sight",
+     "accept": [],
+     "hint": "'La foudre' is lightning – think of something sudden.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10hy8lc9yjuzs",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the French word for 'belonging' (the feeling).",
+     "options": [
+      "l'appartenance",
+      "l'appartement",
+      "l'apparence",
+      "l'apprentissage"
+     ],
+     "answer": "l'appartenance",
+     "accept": [],
+     "hint": "Be careful with false friends: one of these is a flat.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i2ox87gl4454",
+     "subject": "fre",
+     "type": "short",
+     "q": "Give the French noun for 'experience' (with the definite article).",
+     "options": [],
+     "answer": "l'expérience",
+     "accept": [
+      "expérience",
+      "une expérience"
+     ],
+     "hint": "Watch the accent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvhjt1p74eups",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'tomber dans les pommes' mean?",
+     "options": [
+      "to faint",
+      "to go shopping",
+      "to fall in love",
+      "to make a mistake"
+     ],
+     "answer": "to faint",
+     "accept": [],
+     "hint": "It has nothing to do with fruit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryxnewk118qic4",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Choose the best word to complete: 'Ce voyage a été une expérience ___ : j'ai beaucoup appris.'",
+     "options": [
+      "enrichissante",
+      "ennuyeuse",
+      "enrichi",
+      "riche de"
+     ],
+     "answer": "enrichissante",
+     "accept": [],
+     "hint": "You need an adjective agreeing with a feminine noun.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1slusai1xkvw02",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'les valeurs' mean in 'les valeurs familiales'?",
+     "options": [
+      "values",
+      "valleys",
+      "valuables",
+      "validity"
+     ],
+     "answer": "values",
+     "accept": [],
+     "hint": "Think of beliefs and principles.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dz7a8k19mee2x",
+     "subject": "fre",
+     "type": "mc",
+     "q": "Which expression means 'to stand out from the crowd'?",
+     "options": [
+      "se démarquer",
+      "se dépêcher",
+      "se débrouiller",
+      "se démaquiller"
+     ],
+     "answer": "se démarquer",
+     "accept": [],
+     "hint": "It contains 'marque' – leaving your mark.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfs18nlqir18e",
+     "subject": "fre",
+     "type": "open",
+     "q": "En 2–3 phrases, décrivez un aspect de votre identité culturelle. Utilisez au moins une expression idiomatique.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Write in French; you could use 'se sentir chez soi' or 'avoir le mal du pays'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlwvg1b1bdf7sv",
+     "subject": "fre",
+     "type": "mc",
+     "q": "What does 'se faire des amis' mean?",
+     "options": [
+      "to make friends",
+      "to lose friends",
+      "to visit friends",
+      "to argue with friends"
+     ],
+     "answer": "to make friends",
+     "accept": [],
+     "hint": "'Faire' is 'to make'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q0zw2atcjcsh",
+     "subject": "fre",
+     "type": "short",
+     "q": "Translate into French: 'I feel proud' (masculine or feminine).",
+     "options": [],
+     "answer": "je me sens fier",
+     "accept": [
+      "je me sens fière",
+      "je suis fier",
+      "je suis fière"
+     ],
+     "hint": "Use the reflexive verb 'se sentir'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bbp6r3mp4svw",
+     "subject": "fre",
+     "type": "open",
+     "q": "En 2–3 phrases, racontez une expérience à l'étranger ou dans une nouvelle école. Utilisez le passé composé.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use 'je suis allé(e)' or 'j'ai découvert'.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "geog-hl": {
+   "topic": "Paper 2 Section B: infographic and visual stimulus analysis",
+   "questions": [
+    {
+     "id": "r13f0x27wy6a86",
+     "subject": "geog",
+     "type": "mc",
+     "q": "When describing a trend in an infographic, you should first:",
+     "options": [
+      "State the overall pattern, then support it with data",
+      "List every number shown",
+      "Explain causes before describing",
+      "Give your opinion"
+     ],
+     "answer": "State the overall pattern, then support it with data",
+     "accept": [],
+     "hint": "Describe before you explain.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10prn1ltiwgeo",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which command term requires you to give a detailed account of a pattern without explaining why?",
+     "options": [
+      "Describe",
+      "Explain",
+      "Evaluate",
+      "Justify"
+     ],
+     "answer": "Describe",
+     "accept": [],
+     "hint": "It is about 'what', not 'why'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bw9b1veampax",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which command term requires reasons or causes?",
+     "options": [
+      "Explain",
+      "Outline",
+      "Identify",
+      "State"
+     ],
+     "answer": "Explain",
+     "accept": [],
+     "hint": "Look for the word that asks 'why'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r38ynv9wyrg2l",
+     "subject": "geog",
+     "type": "mc",
+     "q": "A good description of data in a Paper 2 answer should include:",
+     "options": [
+      "Specific figures with units",
+      "Only adjectives such as 'big'",
+      "Only the title of the infographic",
+      "No numbers"
+     ],
+     "answer": "Specific figures with units",
+     "accept": [],
+     "hint": "Quantify your answer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y5bktt1wdacmn",
+     "subject": "geog",
+     "type": "num",
+     "q": "An infographic shows that urban population in a country rose from 40 million to 50 million. Calculate the percentage increase.",
+     "options": [],
+     "answer": "25",
+     "accept": [],
+     "hint": "Change ÷ original × 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re0lyyeqa6try",
+     "subject": "geog",
+     "type": "num",
+     "q": "A graph shows CO₂ emissions of 8 tonnes per person in Country A and 2 tonnes per person in Country B. How many times higher is A than B?",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "Divide the larger value by the smaller.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qs934umc4qcl",
+     "subject": "geog",
+     "type": "mc",
+     "q": "An infographic shows that the share of renewable energy rose from 10% to 30% of electricity generation. Which statement is accurate?",
+     "options": [
+      "It rose by 20 percentage points",
+      "It rose by 20%",
+      "It tripled in absolute energy",
+      "It rose by 300%"
+     ],
+     "answer": "It rose by 20 percentage points",
+     "accept": [],
+     "hint": "Distinguish percentage points from percentage change.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10g5uk11r4l8kn",
+     "subject": "geog",
+     "type": "num",
+     "q": "Following on: by what percentage did the share of renewable energy increase when it rose from 10% to 30%?",
+     "options": [],
+     "answer": "200",
+     "accept": [],
+     "hint": "Change ÷ original × 100.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhhv8redutham",
+     "subject": "geog",
+     "type": "mc",
+     "q": "Which feature of an infographic should you check before interpreting the data?",
+     "options": [
+      "The scale, units and source",
+      "The colour scheme only",
+      "The font",
+      "The number of icons"
+     ],
+     "answer": "The scale, units and source",
+     "accept": [],
+     "hint": "A misleading axis can change your reading.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6yiti4o3j1py",
+     "subject": "geog",
+     "type": "mc",
+     "q": "An infographic shows two variables rising together. What can you safely conclude?",
+     "options": [
+      "There is a correlation, but not necessarily causation",
+      "One variable causes the other",
+      "The data is wrong",
+      "There is no relationship"
+     ],
+     "answer": "There is a correlation, but not necessarily causation",
+     "accept": [],
+     "hint": "Be careful about cause and effect.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jpxrkf1j0q1un",
+     "subject": "geog",
+     "type": "mc",
+     "q": "A data value that is very different from the general pattern is called:",
+     "options": [
+      "An anomaly",
+      "A median",
+      "A trend line",
+      "A choropleth"
+     ],
+     "answer": "An anomaly",
+     "accept": [],
+     "hint": "Mention these in your description.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i7x5dd14gfo4u",
+     "subject": "geog",
+     "type": "short",
+     "q": "Name the type of map that uses shading of areas to show different values of a variable.",
+     "options": [],
+     "answer": "choropleth",
+     "accept": [
+      "choropleth map"
+     ],
+     "hint": "Darker shading usually means a higher value.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1caw37h1pbuti5",
+     "subject": "geog",
+     "type": "mc",
+     "q": "To link an infographic about migration to a core concept, which term would be most relevant?",
+     "options": [
+      "Push and pull factors",
+      "Plate tectonics",
+      "Longshore drift",
+      "Weathering"
+     ],
+     "answer": "Push and pull factors",
+     "accept": [],
+     "hint": "Think about why people move.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kmh40991wls4",
+     "subject": "geog",
+     "type": "mc",
+     "q": "An infographic on population pyramids shows a wide base and narrow top. This suggests:",
+     "options": [
+      "High birth rates and a youthful population",
+      "An ageing population",
+      "Zero births",
+      "Equal numbers at all ages"
+     ],
+     "answer": "High birth rates and a youthful population",
+     "accept": [],
+     "hint": "The base shows the youngest age groups.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "retbp7dpkt9mp",
+     "subject": "geog",
+     "type": "open",
+     "q": "An infographic shows that one region produces 60% of a resource but consumes only 15% of it. Explain two possible consequences of this pattern.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about trade, dependency, power and global interactions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r121f5dj1qe5p31",
+     "subject": "geog",
+     "type": "open",
+     "q": "Suggest two limitations of using a single infographic as evidence in a geography answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider source, date, scale, missing data and simplification.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
