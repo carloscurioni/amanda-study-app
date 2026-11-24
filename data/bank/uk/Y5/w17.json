@@ -1056,7 +1056,1923 @@
      ]
     }
    ]
+  },
+  "ipc": {
+   "topic": "Active Planet — International & exit point: living with hazards",
+   "questions": [
+    {
+     "id": "r1jwtz68kdsr8c",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What is a natural hazard?",
+     "options": [
+      "A natural event that can harm people or property",
+      "A rule for staying safe at school",
+      "A type of weather forecast",
+      "A map of a city"
+     ],
+     "answer": "A natural event that can harm people or property",
+     "accept": [],
+     "hint": "Think of earthquakes, floods and volcanoes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1r1q9suw8al5g",
+     "subject": "ipc",
+     "type": "short",
+     "q": "Complete the earthquake safety action: Drop, Cover and ___ On.",
+     "options": [],
+     "answer": "Hold",
+     "accept": [
+      "hold"
+     ],
+     "hint": "It means grip something sturdy so you stay under cover.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r66oebl31npvc",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What does the word 'preparedness' mean?",
+     "options": [
+      "Being ready before something happens",
+      "Cleaning up after a disaster",
+      "Measuring how strong an earthquake is",
+      "Moving to a new country"
+     ],
+     "answer": "Being ready before something happens",
+     "accept": [],
+     "hint": "Look at the start of the word: 'prepare'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w987qci1nrmm",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which country holds a national Disaster Prevention Day every year on 1 September, with drills in schools?",
+     "options": [
+      "Japan",
+      "Brazil",
+      "Egypt",
+      "Canada"
+     ],
+     "answer": "Japan",
+     "accept": [],
+     "hint": "This island country sits where several tectonic plates meet.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r135ot1l1h4dwkf",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "You are on a beach and the sea suddenly pulls far back from the shore. What is the safest thing to do?",
+     "options": [
+      "Move quickly to high ground",
+      "Walk out to look at the sea floor",
+      "Stay and take photos",
+      "Wait in the water"
+     ],
+     "answer": "Move quickly to high ground",
+     "accept": [],
+     "hint": "This can be a warning sign of a tsunami.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1q32uzf1nzlfga",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Why do many coastal villages in Bangladesh have raised concrete cyclone shelters?",
+     "options": [
+      "To keep people safe from strong winds and flooding",
+      "To store rice for the market",
+      "To use as football pitches",
+      "To watch the stars"
+     ],
+     "answer": "To keep people safe from strong winds and flooding",
+     "accept": [],
+     "hint": "Cyclones bring storm surges of sea water.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlbulz10k04oh",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "A lot of land in the Netherlands is below sea level. How do people there protect it from flooding?",
+     "options": [
+      "With dykes, dams and storm barriers",
+      "With extra volcanoes",
+      "By planting cactus",
+      "By moving every house each year"
+     ],
+     "answer": "With dykes, dams and storm barriers",
+     "accept": [],
+     "hint": "Think of walls and gates that hold back water.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2vcwfk9mnxq",
+     "subject": "ipc",
+     "type": "short",
+     "q": "A drawing of an area that shows which places are most at risk from a hazard is called a hazard ___.",
+     "options": [],
+     "answer": "map",
+     "accept": [
+      "Map"
+     ],
+     "hint": "It is a picture of an area seen from above, like in an atlas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sb63wn1rdhldu",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which item is LEAST useful in an emergency kit?",
+     "options": [
+      "A video game console",
+      "A torch",
+      "Bottled water",
+      "A first-aid kit"
+     ],
+     "answer": "A video game console",
+     "accept": [],
+     "hint": "Which one needs lots of electricity and does not keep you safe?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rftd6gbxe4tsw",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Why are tall buildings in earthquake zones often designed to bend and sway a little?",
+     "options": [
+      "So they do not crack and fall when the ground shakes",
+      "So they look more modern",
+      "So they can be moved easily",
+      "So they get more sunlight"
+     ],
+     "answer": "So they do not crack and fall when the ground shakes",
+     "accept": [],
+     "hint": "A stiff object snaps more easily than a flexible one.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlto7hn1eji3ur",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Scientists watch active volcanoes closely. Which of these can be a warning sign of an eruption?",
+     "options": [
+      "An increase in small earthquakes under the volcano",
+      "More birds singing in the morning",
+      "The volcano getting colder",
+      "Less rain than usual"
+     ],
+     "answer": "An increase in small earthquakes under the volcano",
+     "accept": [],
+     "hint": "Moving magma pushes and cracks the rock underground.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1isaoww1fy281r",
+     "subject": "ipc",
+     "type": "short",
+     "q": "During a fire or earthquake drill, the place outside where everyone meets to be counted is called the assembly ___.",
+     "options": [],
+     "answer": "point",
+     "accept": [
+      "area",
+      "Point"
+     ],
+     "hint": "It is a fixed spot where the teacher checks the register.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10nf0kv3ae3a6",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Two countries have earthquakes of the same strength. Why might fewer people be hurt in one of them?",
+     "options": [
+      "It has stronger buildings and warning systems",
+      "It has more mountains",
+      "It has hotter weather",
+      "It has more rivers"
+     ],
+     "answer": "It has stronger buildings and warning systems",
+     "accept": [],
+     "hint": "Think about what money and planning can pay for.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12h0dpy143oxno",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "You are designing a hazard safety guide for younger children. Which feature would help them most?",
+     "options": [
+      "Short, numbered steps with clear headings",
+      "Very long paragraphs with no pictures",
+      "Difficult scientific words",
+      "Tiny writing to fit more in"
+     ],
+     "answer": "Short, numbered steps with clear headings",
+     "accept": [],
+     "hint": "Think about what is easy to read quickly in an emergency.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvgz9n012ww2gz",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Choose one hazard (earthquake, flood, volcano or cyclone). Explain two ways a family could prepare for it.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what to do before, during and after the hazard.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd8qmeyd9iadx",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Looking back at the Active Planet unit, which fact surprised you the most and why?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about earthquakes, volcanoes, tsunamis and how people live with them.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "Comparing and ordering fractions",
+   "questions": [
+    {
+     "id": "r1ij5buk10zqkl0",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which fraction is greater: 3/8 or 5/8?",
+     "options": [
+      "3/8",
+      "5/8",
+      "They are equal"
+     ],
+     "answer": "5/8",
+     "accept": [],
+     "hint": "The denominators are the same, so compare the numerators.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15bbcp654z40x",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which symbol makes this true? 2/5 ___ 4/10",
+     "options": [
+      "<",
+      ">",
+      "="
+     ],
+     "answer": "=",
+     "accept": [],
+     "hint": "Double the numerator and the denominator of 2/5.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wlvt8d18i5ln",
+     "subject": "math",
+     "type": "num",
+     "q": "1/2 = ?/10. What is the missing numerator?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "What do you multiply 2 by to get 10?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rln4rm011th2c7",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which fraction is smaller: 2/3 or 7/12?",
+     "options": [
+      "2/3",
+      "7/12",
+      "They are equal"
+     ],
+     "answer": "7/12",
+     "accept": [],
+     "hint": "Change 2/3 into twelfths.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r87suvjwak6ad",
+     "subject": "math",
+     "type": "num",
+     "q": "3/5 = ?/20. What is the missing numerator?",
+     "options": [],
+     "answer": "12",
+     "accept": [],
+     "hint": "What do you multiply 5 by to get 20? Do the same to the top.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r174r11dc5tgs",
+     "subject": "math",
+     "type": "mc",
+     "q": "Order these fractions from smallest to largest: 1/2, 3/8, 3/4",
+     "options": [
+      "3/8, 1/2, 3/4",
+      "1/2, 3/8, 3/4",
+      "3/4, 1/2, 3/8",
+      "3/8, 3/4, 1/2"
+     ],
+     "answer": "3/8, 1/2, 3/4",
+     "accept": [],
+     "hint": "Write them all as eighths.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1urm45tffiwi7",
+     "subject": "math",
+     "type": "mc",
+     "q": "Order these fractions from largest to smallest: 5/6, 2/3, 7/12",
+     "options": [
+      "5/6, 2/3, 7/12",
+      "7/12, 2/3, 5/6",
+      "2/3, 5/6, 7/12",
+      "5/6, 7/12, 2/3"
+     ],
+     "answer": "5/6, 2/3, 7/12",
+     "accept": [],
+     "hint": "Write them all as twelfths.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dyiend18gnbgf",
+     "subject": "math",
+     "type": "mc",
+     "q": "A number line from 0 to 1 is split into 8 equal parts. At which mark is 1/4?",
+     "options": [
+      "The 2nd mark",
+      "The 4th mark",
+      "The 1st mark",
+      "The 6th mark"
+     ],
+     "answer": "The 2nd mark",
+     "accept": [],
+     "hint": "How many eighths make one quarter?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13a7pb3u0c1xi",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which fraction is exactly halfway between 0 and 1 on a number line?",
+     "options": [
+      "4/8",
+      "3/8",
+      "5/8",
+      "2/3"
+     ],
+     "answer": "4/8",
+     "accept": [],
+     "hint": "Halfway is the same as one half.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r133oam71lxgiu2",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which fraction lies between 1/2 and 3/4?",
+     "options": [
+      "5/8",
+      "3/8",
+      "7/8",
+      "1/4"
+     ],
+     "answer": "5/8",
+     "accept": [],
+     "hint": "Write 1/2 and 3/4 as eighths first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rug9233htm4ms",
+     "subject": "math",
+     "type": "mc",
+     "q": "Ana ate 3/10 of a pizza and Leo ate 2/5 of the same pizza. Who ate more?",
+     "options": [
+      "Leo",
+      "Ana",
+      "They ate the same"
+     ],
+     "answer": "Leo",
+     "accept": [],
+     "hint": "Change 2/5 into tenths.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rngvltvpmwk5u",
+     "subject": "math",
+     "type": "num",
+     "q": "What is the smallest whole number you can write in the box so that ?/12 is greater than 3/4?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "First write 3/4 as twelfths.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ridchty11zjzju",
+     "subject": "math",
+     "type": "mc",
+     "q": "True or false: 5/9 is greater than 2/3.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": "False",
+     "accept": [],
+     "hint": "Change 2/3 into ninths.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rj0c6sb1tki2ty",
+     "subject": "math",
+     "type": "mc",
+     "q": "Order from smallest to largest: 7/10, 3/5, 1/2, 4/5",
+     "options": [
+      "1/2, 3/5, 7/10, 4/5",
+      "3/5, 1/2, 4/5, 7/10",
+      "1/2, 7/10, 3/5, 4/5",
+      "4/5, 7/10, 3/5, 1/2"
+     ],
+     "answer": "1/2, 3/5, 7/10, 4/5",
+     "accept": [],
+     "hint": "Turn every fraction into tenths.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u6yn6q1sf2ull",
+     "subject": "math",
+     "type": "open",
+     "q": "Explain, using equivalent fractions, why 7/8 is greater than 3/4.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Can you write 3/4 with a denominator of 8?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r86aa9m4nmgfm",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which fraction is greater: 3/4 or 5/8?",
+     "options": [
+      "3/4",
+      "5/8",
+      "They are equal"
+     ],
+     "answer": "3/4",
+     "accept": [],
+     "hint": "Write both fractions with a denominator of 8.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Tempos verbais: presente, pretérito e futuro",
+   "questions": [
+    {
+     "id": "r1wfne5u1pdfpu1",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Eu estudo matemática todos os dias\", o verbo está em qual tempo?",
+     "options": [
+      "Presente",
+      "Pretérito",
+      "Futuro"
+     ],
+     "answer": "Presente",
+     "accept": [],
+     "hint": "\"Todos os dias\" fala de algo que acontece sempre.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l6qpg91nwmg8e",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Ontem nós visitamos a vovó\", o verbo está em qual tempo?",
+     "options": [
+      "Presente",
+      "Pretérito",
+      "Futuro"
+     ],
+     "answer": "Pretérito",
+     "accept": [],
+     "hint": "Repare na palavra \"ontem\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1udpxv710bddue",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Amanhã ela viajará para o litoral\", o verbo está em qual tempo?",
+     "options": [
+      "Presente",
+      "Pretérito",
+      "Futuro"
+     ],
+     "answer": "Futuro",
+     "accept": [],
+     "hint": "Repare na palavra \"amanhã\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rlrd6c61jqz1yb",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra indica que a ação vai acontecer no futuro?",
+     "options": [
+      "amanhã",
+      "ontem",
+      "antigamente",
+      "agora"
+     ],
+     "answer": "amanhã",
+     "accept": [],
+     "hint": "Pense no dia que ainda não chegou.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgwz5ojxbdh57",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com o verbo \"correr\" no pretérito: \"Ontem ele ___ no parque.\"",
+     "options": [],
+     "answer": "correu",
+     "accept": [],
+     "hint": "A terminação é parecida com \"comeu\" e \"bebeu\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4tevwy8clk3",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com o verbo \"cantar\" no futuro: \"Na festa, nós ___ juntos.\"",
+     "options": [],
+     "answer": "cantaremos",
+     "accept": [],
+     "hint": "O futuro de \"nós\" termina em -remos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lyg8kx1lf16s1",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com o verbo \"ler\" no presente: \"Agora eu ___ um livro de aventura.\"",
+     "options": [],
+     "answer": "leio",
+     "accept": [],
+     "hint": "Como se diz com \"eu\": eu ___, tu lês, ele lê.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14okci2uzr92e",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destas frases está no pretérito?",
+     "options": [
+      "A professora explicou a lição.",
+      "A professora explica a lição.",
+      "A professora explicará a lição."
+     ],
+     "answer": "A professora explicou a lição.",
+     "accept": [],
+     "hint": "Procure a ação que já terminou.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1crgn5bcgdmm8",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com o verbo \"partir\" no futuro: \"Amanhã cedo eles ___ de ônibus.\"",
+     "options": [],
+     "answer": "partirão",
+     "accept": [],
+     "hint": "O futuro de \"eles\" termina em -rão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxphicn164n46w",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"No ano passado, eu ___ à praia com minha família.\"",
+     "options": [
+      "fui",
+      "vou",
+      "irei"
+     ],
+     "answer": "fui",
+     "accept": [],
+     "hint": "\"No ano passado\" já aconteceu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w63pze1vog6a3",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase mistura os tempos verbais sem coerência?",
+     "options": [
+      "Ontem eu acordo cedo e tomei café.",
+      "Ontem eu acordei cedo e tomei café.",
+      "Hoje eu acordo cedo e tomo café.",
+      "Amanhã eu acordarei cedo e tomarei café."
+     ],
+     "answer": "Ontem eu acordo cedo e tomei café.",
+     "accept": [],
+     "hint": "Veja se os dois verbos combinam com a palavra de tempo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ap0luk1ta1kav",
+     "subject": "pt",
+     "type": "short",
+     "q": "Corrija o verbo para o texto ficar coerente: \"Ontem a turma visita o museu e adorou.\" Escreva só o verbo corrigido.",
+     "options": [],
+     "answer": "visitou",
+     "accept": [],
+     "hint": "\"Ontem\" e \"adorou\" mostram que tudo já aconteceu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro06ksefqe8c9",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é a forma correta do verbo \"fazer\" no pretérito com \"eu\"? \"Ontem eu ___ um bolo.\"",
+     "options": [
+      "fiz",
+      "fazi",
+      "faço",
+      "farei"
+     ],
+     "answer": "fiz",
+     "accept": [],
+     "hint": "É um verbo irregular, que muda bastante.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ft40ug3s1ips",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Nós estaremos prontos às oito horas\", o verbo está em qual tempo?",
+     "options": [
+      "Futuro",
+      "Presente",
+      "Pretérito"
+     ],
+     "answer": "Futuro",
+     "accept": [],
+     "hint": "A ação ainda não aconteceu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fcaysu3mfnia",
+     "subject": "pt",
+     "type": "short",
+     "q": "Complete com o verbo \"beber\" no presente: \"Todo dia o cachorro ___ água fresca.\"",
+     "options": [],
+     "answer": "bebe",
+     "accept": [],
+     "hint": "É algo que acontece sempre, com \"ele\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r176txd3138856j",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva duas frases sobre as suas férias: uma no pretérito (o que você fez) e outra no futuro (o que você fará).",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use palavras como \"ontem\", \"no ano passado\" e \"no próximo ano\".",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Inferência: sentido de palavras pelo contexto",
+   "questions": [
+    {
+     "id": "r1we0jn41kzlg3f",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Depois da corrida, o menino estava tão exausto que deitou no chão e dormiu.\" O que quer dizer \"exausto\"?",
+     "options": [
+      "Muito cansado",
+      "Muito feliz",
+      "Muito bravo",
+      "Muito rápido"
+     ],
+     "answer": "Muito cansado",
+     "accept": [],
+     "hint": "O que faz alguém deitar no chão e dormir depois de correr?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vfuvpsgq27xw",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"A sopa estava escaldante; precisei esperar ela esfriar.\" O que quer dizer \"escaldante\"?",
+     "options": [
+      "Muito quente",
+      "Muito salgada",
+      "Muito fria",
+      "Muito grossa"
+     ],
+     "answer": "Muito quente",
+     "accept": [],
+     "hint": "Por que alguém precisa esperar a sopa esfriar?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ieqm2o1tx73ca",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O cachorro era tão dócil que deixava as crianças fazerem carinho nele.\" O que quer dizer \"dócil\"?",
+     "options": [
+      "Manso",
+      "Bravo",
+      "Barulhento",
+      "Doente"
+     ],
+     "answer": "Manso",
+     "accept": [],
+     "hint": "Que tipo de cachorro deixa as crianças chegarem perto?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18ph7vvi0quxf",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Ela ficou perplexa: não entendia como o bolo tinha sumido da mesa.\" O que quer dizer \"perplexa\"?",
+     "options": [
+      "Confusa e espantada",
+      "Com muita fome",
+      "Tranquila",
+      "Orgulhosa"
+     ],
+     "answer": "Confusa e espantada",
+     "accept": [],
+     "hint": "Repare na parte \"não entendia\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1shzlmv1f57lm0",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"Depois de três dias de chuva, o rio transbordou e alagou a rua.\" O que quer dizer \"transbordou\"?",
+     "options": [
+      "A água passou das margens",
+      "O rio secou",
+      "O rio ficou limpo",
+      "O rio mudou de nome"
+     ],
+     "answer": "A água passou das margens",
+     "accept": [],
+     "hint": "Como a água chegou até a rua?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xx30561sllwos",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O baú era tão pesado que foram necessários três adultos para erguê-lo.\" O que quer dizer \"erguê-lo\"?",
+     "options": [
+      "Levantá-lo",
+      "Abri-lo",
+      "Pintá-lo",
+      "Escondê-lo"
+     ],
+     "answer": "Levantá-lo",
+     "accept": [],
+     "hint": "O que é difícil fazer com uma coisa pesada?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19yijh1xpxw6n",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia: \"O gigante tinha uma voz estrondosa, que fazia tremer as janelas.\" O que quer dizer \"estrondosa\"?",
+     "options": [
+      "Muito forte e alta",
+      "Muito baixa",
+      "Muito doce",
+      "Muito rouca e fraca"
+     ],
+     "answer": "Muito forte e alta",
+     "accept": [],
+     "hint": "Que tipo de voz faz uma janela tremer?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6ge9eb5dbiwh",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Quais pistas ajudam mais a descobrir o sentido de uma palavra desconhecida em um texto?",
+     "options": [
+      "As palavras e frases ao redor dela",
+      "O número da página",
+      "A cor da capa do livro",
+      "O tamanho da letra"
+     ],
+     "answer": "As palavras e frases ao redor dela",
+     "accept": [],
+     "hint": "Isso se chama contexto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1307i6czj59fu",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Depois de adivinhar o sentido de uma palavra pelo contexto, onde você pode confirmar se acertou?",
+     "options": [
+      "No dicionário",
+      "No calendário",
+      "No mapa",
+      "No relógio"
+     ],
+     "answer": "No dicionário",
+     "accept": [],
+     "hint": "É o livro que explica o significado das palavras.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o6w01llabh4c",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "No dicionário, as palavras estão em ordem alfabética. Qual destas aparece primeiro?",
+     "options": [
+      "bacia",
+      "barco",
+      "beijo",
+      "bola"
+     ],
+     "answer": "bacia",
+     "accept": [],
+     "hint": "Compare a segunda letra e, se for igual, a terceira.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7w33gei27w1d",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "A palavra \"manga\" pode ser uma fruta ou uma parte da roupa. Em \"Arregacei a manga para lavar a louça\", \"manga\" é:",
+     "options": [
+      "Parte da roupa",
+      "Uma fruta",
+      "Um tipo de prato",
+      "Uma torneira"
+     ],
+     "answer": "Parte da roupa",
+     "accept": [],
+     "hint": "O que a gente arregaça antes de molhar as mãos?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r104ku5d20jsem",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em \"O meu avô tem um coração de ouro\", o que a expressão quer dizer?",
+     "options": [
+      "Ele é muito bondoso",
+      "O coração dele é feito de metal",
+      "Ele é muito rico",
+      "Ele está doente"
+     ],
+     "answer": "Ele é muito bondoso",
+     "accept": [],
+     "hint": "É um sentido figurado: o ouro é algo muito valioso.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r88jyg7fpxik",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em \"Choveu canivetes ontem à noite\", o que a expressão quer dizer?",
+     "options": [
+      "Choveu muito forte",
+      "Caíram facas do céu",
+      "Não choveu nada",
+      "Choveu bem fraquinho"
+     ],
+     "answer": "Choveu muito forte",
+     "accept": [],
+     "hint": "Não é para entender ao pé da letra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1u5quk11v7w38o",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em \"A notícia caiu como uma bomba na escola\", o que a expressão quer dizer?",
+     "options": [
+      "A notícia causou grande surpresa",
+      "Uma bomba caiu na escola",
+      "A notícia foi esquecida",
+      "A notícia era muito pequena"
+     ],
+     "answer": "A notícia causou grande surpresa",
+     "accept": [],
+     "hint": "Pense no susto que um barulho enorme causa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roc4iu3opeav2",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em \"Fiquei com a pulga atrás da orelha quando ele sorriu daquele jeito\", como a pessoa ficou?",
+     "options": [
+      "Desconfiada",
+      "Com coceira",
+      "Com sono",
+      "Alegre"
+     ],
+     "answer": "Desconfiada",
+     "accept": [],
+     "hint": "É uma expressão: algo parecia estranho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jg7pau9p0tly",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Leia: \"O sol estava tímido naquela manhã, escondido atrás das nuvens.\" Explique o que quer dizer o sol estar \"tímido\" e quais pistas da frase você usou.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em como uma pessoa tímida se comporta.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Caderno das Palavras Escondidas",
+   "premise": "Lia, de 10 anos, encontra o caderno antigo em que o avô anotava palavras desconhecidas e passa a caçar palavras novas, descobrindo o sentido de cada uma pelas pistas do contexto antes de conferir no dicionário.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O caderno no fundo da caixa",
+     "synopsis": "Lia ajuda o avô a arrumar o quarto dos fundos e encontra um caderno antigo cheio de palavras. A primeira delas, \"alvoroço\", ela descobre sozinha olhando pela janela.",
+     "text": "Num sábado chuvoso, o avô Germano chamou Lia para arrumar o quarto dos fundos. Havia caixas de papelão por todo lado, cheirando a poeira e a guardado.\n— Cuidado com essa aí, que é das antigas — avisou ele.\nDentro da caixa, embaixo de uns discos, Lia achou um caderno de capa azul, gasta nos cantos. Na primeira página estava escrito, com letra caprichada: \"Caderno das Palavras Escondidas\".\n— O que é isso, vô?\n— Quando eu tinha a sua idade, toda vez que eu lia uma palavra que não conhecia, anotava aqui. Mas tinha uma regra: antes de olhar no dicionário, eu precisava adivinhar o sentido pelas pistas da frase.\nLia folheou o caderno. Cada página tinha uma palavra, uma frase copiada de algum livro e dois espaços: \"Meu palpite\" e \"O dicionário diz\". Mas as últimas páginas estavam em branco.\n— Você parou de anotar?\n— A vida foi ficando corrida — disse o avô, coçando a barba. — Quer continuar por mim?\nNesse instante, um barulho enorme veio do quintal. Lia correu até a janela. Os pombos que dormiam no telhado tinham levantado voo todos de uma vez, batendo as asas, esbarrando uns nos outros. Bolacha, o cachorro da família, latia sem parar, girando em volta de si mesmo. As galinhas da vizinha cacarejavam do outro lado do muro.\n— Que alvoroço! — riu o avô.\nLia pegou o lápis. \"Alvoroço\" era uma palavra nova. Ela olhou de novo para o quintal: barulho, bichos correndo, ninguém parado no lugar.\nNa primeira página em branco, escreveu: \"Palpite: confusão, agitação, muita bagunça com barulho\".\nO avô trouxe o dicionário grosso da estante. Lia achou a palavra e leu em voz alta:\n— \"Agitação, tumulto, gritaria.\"\n— Acertou de primeira — disse o avô, orgulhoso.\nLia sorriu e fechou o caderno com cuidado. Agora ele era dos dois.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia e o avô estavam fazendo no sábado?",
+       "options": [
+        "Arrumando o quarto dos fundos",
+        "Cozinhando um bolo",
+        "Passeando no parque",
+        "Lavando o carro"
+       ],
+       "answer": "Arrumando o quarto dos fundos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o título escrito na primeira página do caderno?",
+       "options": [],
+       "answer": "Caderno das Palavras Escondidas",
+       "accept": [
+        "Caderno das Palavras Escondidas",
+        "Palavras Escondidas"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era a regra do avô antes de olhar no dicionário?",
+       "options": [
+        "Adivinhar o sentido pelas pistas da frase",
+        "Copiar a palavra três vezes",
+        "Perguntar para a professora",
+        "Desenhar a palavra"
+       ],
+       "answer": "Adivinhar o sentido pelas pistas da frase",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do cachorro da família?",
+       "options": [],
+       "answer": "Bolacha",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia viu pela janela?",
+       "options": [
+        "Pombos voando, o cachorro latindo e galinhas cacarejando",
+        "Um arco-íris no céu",
+        "O carteiro chegando",
+        "Uma árvore caindo"
+       ],
+       "answer": "Pombos voando, o cachorro latindo e galinhas cacarejando",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais pistas ajudaram Lia a entender a palavra \"alvoroço\"?",
+       "options": [
+        "O barulho e os bichos agitados no quintal",
+        "A cor da capa do caderno",
+        "O cheiro de poeira das caixas",
+        "A letra do avô"
+       ],
+       "answer": "O barulho e os bichos agitados no quintal",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o avô quis dizer ao falar que \"a vida foi ficando corrida\"?",
+       "options": [
+        "Ele foi ficando sem tempo",
+        "Ele começou a correr maratonas",
+        "Ele mudou de cidade",
+        "Ele perdeu o caderno"
+       ],
+       "answer": "Ele foi ficando sem tempo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô ficou orgulhoso quando Lia acertou o sentido da palavra?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: Negócio fechado na feira",
+     "synopsis": "Na feira de domingo, Lia escuta uma palavra estranha numa conversa entre uma freguesa e um feirante. Observando a cena, ela descobre o que é pechinchar.",
+     "text": "No domingo de manhã, Lia foi à feira com o avô. Ela levava o caderno azul dentro da sacola, junto com as bananas.\n— Feira é o melhor lugar para caçar palavras — disse o avô. — Todo mundo fala alto e fala muito.\nNa barraca de frutas, uma senhora de chapéu de palha segurava um abacaxi e conversava com o feirante, um moço de avental verde.\n— Quanto está o abacaxi?\n— Oito reais, freguesa.\n— Oito? Está muito caro. Faz por cinco?\n— Cinco não dá. Faço por sete.\n— Seis, e eu levo dois.\nO moço coçou a cabeça, olhou para os abacaxis, olhou para a senhora e deu risada.\n— A senhora sabe mesmo pechinchar, hein? Fechado: dois por doze.\nLia arregalou os olhos. Pechinchar? Ela abriu o caderno ali mesmo, em cima de uma caixa de laranjas, e pensou. A senhora tinha pedido um preço menor. O moço tinha baixado um pouco. Ela tinha baixado mais um pouco. No fim, os dois concordaram com um preço mais barato que o primeiro.\nEscreveu: \"Palpite: conversar para conseguir pagar menos\".\n— E então? — perguntou o avô, espiando por cima do ombro dela.\n— Acho que é tipo uma negociação de preço.\n— Vamos confirmar quando chegarmos em casa.\nNo caminho de volta, Lia resolveu testar a palavra nova. Na barraca de pastel, perguntou:\n— Moço, se eu levar três, faz um desconto?\nO pasteleiro riu e colocou um pastel de queijo a mais no pacote.\n— Para a pequena negociante, um de brinde!\nEm casa, o dicionário confirmou: pechinchar é \"pedir abatimento no preço; regatear\". Lia anotou também a palavra \"regatear\", que nem conhecia. Agora eram duas palavras pelo preço de uma.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, aonde Lia foi com o avô no domingo?",
+       "options": [
+        "À feira",
+        "Ao cinema",
+        "À praia",
+        "À biblioteca"
+       ],
+       "answer": "À feira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual fruta a senhora de chapéu queria comprar?",
+       "options": [],
+       "answer": "abacaxi",
+       "accept": [
+        "Abacaxi",
+        "o abacaxi",
+        "abacaxis"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual era o primeiro preço do abacaxi?",
+       "options": [
+        "Oito reais",
+        "Cinco reais",
+        "Seis reais",
+        "Doze reais"
+       ],
+       "answer": "Oito reais",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a senhora fez para conseguir um preço melhor?",
+       "options": [
+        "Pediu valores menores e ofereceu levar dois",
+        "Reclamou com o dono da feira",
+        "Foi embora sem comprar",
+        "Trocou o abacaxi por laranjas"
+       ],
+       "answer": "Pediu valores menores e ofereceu levar dois",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Lia descobriu o sentido de \"pechinchar\"?",
+       "options": [
+        "Observando a conversa sobre o preço",
+        "Perguntando ao feirante",
+        "Lendo uma placa",
+        "Ouvindo no rádio"
+       ],
+       "answer": "Observando a conversa sobre o preço",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o pasteleiro chamou Lia de \"pequena negociante\"?",
+       "options": [
+        "Porque ela pediu desconto",
+        "Porque ela vendia pastéis",
+        "Porque ela era muito alta",
+        "Porque ela trabalhava na feira"
+       ],
+       "answer": "Porque ela pediu desconto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia quis dizer com \"duas palavras pelo preço de uma\"?",
+       "options": [
+        "Aprendeu duas palavras ao procurar só uma",
+        "Pagou por duas palavras",
+        "Comprou dois dicionários",
+        "Ganhou dois pastéis"
+       ],
+       "answer": "Aprendeu duas palavras ao procurar só uma",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia quis testar a palavra nova logo na barraca de pastel?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: Choveu canivetes",
+     "synopsis": "Uma tempestade forte deixa Lia e o primo Davi presos em casa. O avô usa uma expressão engraçada, e Lia aprende o que é sentido figurado.",
+     "text": "Na quarta-feira, o primo Davi veio passar a tarde na casa do avô. Davi tinha oito anos e achava que sabia tudo.\nDe repente, o céu ficou escuro como se fosse noite. Um trovão sacudiu os vidros, e a chuva começou a cair com tanta força que não dava para ver o outro lado da rua. A água descia pela calçada como um rio pequeno.\nO avô olhou pela janela e assobiou.\n— Rapaz, está chovendo canivetes!\nDavi deu um pulo da cadeira, assustado.\n— Canivetes? Daqueles que cortam? Vô, ninguém pode sair lá fora!\nLia começou a rir, mas logo parou. Ela também nunca tinha ouvido aquela expressão. Pegou o caderno azul e pensou com calma. Não havia nenhuma faquinha caindo do céu, só água, muita água, caindo com muita força.\n— Davi, olha lá fora. Está caindo canivete de verdade?\nO primo encostou o nariz no vidro.\n— Não... só chuva. Chuva forte demais.\n— Então acho que \"chover canivetes\" quer dizer chover muito, muito forte.\nO avô bateu palmas.\n— Isso mesmo. Isso se chama sentido figurado. A gente usa uma imagem exagerada para dizer uma coisa de um jeito mais forte. Ninguém acredita que caem canivetes. Mas todo mundo entende que a chuva está brava.\nLia escreveu no caderno: \"Chover canivetes: chover muito forte. Sentido figurado: não é para entender ao pé da letra\".\n— E \"ao pé da letra\" também é figurado? — perguntou Davi, desconfiado.\n— É sim — disse o avô. — Quer dizer \"exatamente como está escrito\".\nDavi pensou um pouco e sorriu.\n— Então eu estou morrendo de fome. Mas é figurado, tá? É só fome mesmo.\nO avô foi para a cozinha fazer pipoca. Lá fora, a chuva continuava, mas dentro de casa ninguém tinha mais medo de canivete nenhum.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do primo de Lia?",
+       "options": [],
+       "answer": "Davi",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantos anos Davi tinha?",
+       "options": [
+        "Oito",
+        "Dez",
+        "Seis",
+        "Doze"
+       ],
+       "answer": "Oito",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como estava o tempo naquela tarde?",
+       "options": [
+        "Uma tempestade com trovões e chuva forte",
+        "Sol forte e calor",
+        "Neve e frio",
+        "Neblina sem chuva"
+       ],
+       "answer": "Uma tempestade com trovões e chuva forte",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi ficou assustado com a frase do avô?",
+       "options": [
+        "Entendeu que caíam canivetes de verdade",
+        "Tinha medo de trovão",
+        "Queria ir embora",
+        "Perdeu a pipoca"
+       ],
+       "answer": "Entendeu que caíam canivetes de verdade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que quer dizer \"chover canivetes\"?",
+       "options": [
+        "Chover muito forte",
+        "Chover fraquinho",
+        "Cair granizo pequeno",
+        "Parar de chover"
+       ],
+       "answer": "Chover muito forte",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo o avô, o que é sentido figurado?",
+       "options": [
+        "Usar uma imagem exagerada para dizer algo de um jeito mais forte",
+        "Escrever palavras com figuras",
+        "Explicar tudo exatamente como é",
+        "Inventar palavras que não existem"
+       ],
+       "answer": "Usar uma imagem exagerada para dizer algo de um jeito mais forte",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Davi mostrou que tinha aprendido ao dizer \"estou morrendo de fome\"?",
+       "options": [
+        "Que também sabia usar sentido figurado",
+        "Que estava doente",
+        "Que não gostava de pipoca",
+        "Que queria ir para casa"
+       ],
+       "answer": "Que também sabia usar sentido figurado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que, no final, ninguém tinha mais medo de canivete?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O vizinho ranzinza",
+     "synopsis": "Lia ouve a mãe chamar o vizinho seu Otávio de ranzinza e entende a palavra pelo jeito dele. Mas uma bola perdida mostra que o vizinho é mais do que parece.",
+     "text": "Seu Otávio morava na casa ao lado e nunca sorria. Se as crianças faziam barulho, ele aparecia no portão de cara fechada. Se as folhas da mangueira caíam no quintal dele, ele reclamava. Se Bolacha latia, ele batia na parede.\n— Esse seu Otávio é muito ranzinza — suspirou a mãe de Lia um dia, depois de ouvir mais uma reclamação.\nLia anotou a palavra no caderno azul e pensou no vizinho. Cara fechada, reclamação, nada de sorriso.\n\"Palpite: pessoa mal-humorada, que reclama de tudo\", escreveu.\nO dicionário confirmou: \"que está sempre de mau humor; rabugento\". Mais uma palavra nova de presente: rabugento.\nNo sábado seguinte, Lia e Davi jogavam bola no quintal. Davi chutou forte demais, e a bola voou por cima do muro e caiu bem no meio das roseiras do seu Otávio.\nOs dois se olharam, apavorados.\n— Você vai lá — disse Davi.\n— A bola é sua — disse Lia.\nNo fim, foram os dois juntos. Tocaram a campainha e esperaram, com o coração aos pulos. O portão abriu devagar. Seu Otávio segurava a bola numa mão e uma rosa quebrada na outra.\n— Desculpa, seu Otávio — falou Lia, quase sem voz. — Foi sem querer.\nO vizinho ficou um tempo calado. Depois, para surpresa dos dois, soltou um riso curto.\n— Quando eu era menino, quebrei a vidraça da vizinha com uma bola de meia. Passei uma semana varrendo a calçada dela para pagar.\nEle devolveu a bola e entregou a rosa para Lia.\n— Coloque na água. Ainda dura uns dias.\nNo caminho de volta, Davi cochichou:\n— Ele não é tão ranzinza assim.\nLia concordou. À noite, ela escreveu no caderno, embaixo da palavra: \"Às vezes uma pessoa parece ranzinza, mas tem o coração mole\". E desenhou uma rosa pequenininha ao lado.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do vizinho?",
+       "options": [],
+       "answer": "seu Otávio",
+       "accept": [
+        "Otávio",
+        "Seu Otávio"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem chamou o vizinho de ranzinza?",
+       "options": [
+        "A mãe de Lia",
+        "O avô",
+        "Davi",
+        "A professora"
+       ],
+       "answer": "A mãe de Lia",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais pistas ajudaram Lia a entender \"ranzinza\"?",
+       "options": [
+        "A cara fechada e as reclamações do vizinho",
+        "As rosas do jardim",
+        "O barulho da chuva",
+        "O latido do Bolacha"
+       ],
+       "answer": "A cara fechada e as reclamações do vizinho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual outra palavra nova o dicionário trouxe?",
+       "options": [
+        "Rabugento",
+        "Alegre",
+        "Pechinchar",
+        "Alvoroço"
+       ],
+       "answer": "Rabugento",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a bola caiu?",
+       "options": [
+        "Nas roseiras do seu Otávio",
+        "Na rua",
+        "No telhado",
+        "Na piscina"
+       ],
+       "answer": "Nas roseiras do seu Otávio",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que quer dizer \"com o coração aos pulos\"?",
+       "options": [
+        "Muito nervosos",
+        "Muito cansados",
+        "Muito alegres",
+        "Com sono"
+       ],
+       "answer": "Muito nervosos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o vizinho contou a história da vidraça quebrada?",
+       "options": [
+        "Para mostrar que também já fez algo parecido quando criança",
+        "Para dar uma bronca nas crianças",
+        "Para pedir dinheiro",
+        "Para reclamar da vizinha"
+       ],
+       "answer": "Para mostrar que também já fez algo parecido quando criança",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "O que você acha que Lia quis dizer quando escreveu que o vizinho tem \"o coração mole\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Esbaforido",
+     "synopsis": "Bolacha foge pelo portão aberto, e Davi sai correndo atrás dele. Quando o primo volta, Lia descobre o sentido de uma palavra que estava lendo no livro da escola.",
+     "text": "Naquela tarde, Lia lia um livro da escola na varanda. Numa das páginas, apareceu uma frase que a fez parar: \"O mensageiro chegou ao castelo esbaforido, depois de atravessar a floresta a pé\".\nEsbaforido. Ela repetiu a palavra baixinho, achando o som engraçado. Ia pegar o caderno azul quando ouviu um grito.\n— O Bolacha fugiu!\nO portão tinha ficado aberto, e o cachorro saíra disparado pela rua atrás de um gato. Davi, que estava no quintal, correu atrás dele sem nem calçar o tênis direito.\nLia avisou o avô, e os dois ficaram no portão, aflitos, olhando para a esquina. Os minutos pareciam horas.\nFinalmente, Davi apareceu no fim da rua, puxando Bolacha pela coleira. O primo estava vermelho, com o cabelo grudado na testa de suor. Respirava tão rápido que mal conseguia falar.\n— Ele... foi... até a praça... — disse Davi, parando a cada palavra para puxar o ar.\nO avô trouxe um copo de água e mandou o menino sentar.\nLia olhou para o primo, depois para o livro aberto na varanda, e teve uma ideia. O mensageiro tinha atravessado a floresta a pé. Davi tinha corrido até a praça. Os dois chegaram cansados, sem fôlego.\nEla abriu o caderno e escreveu: \"Esbaforido. Palpite: sem fôlego, ofegante, de tanto correr\".\nO dicionário confirmou: \"ofegante; que respira com dificuldade por cansaço ou pressa\".\n— Você estava esbaforido, Davi — disse Lia, mostrando o caderno.\n— Eu estava é morto de cansaço — respondeu ele, ainda bufando.\n— Isso é sentido figurado — riram Lia e o avô ao mesmo tempo.\nBolacha, deitado aos pés de Davi, abanava o rabo como se nada tivesse acontecido. O avô consertou o trinco do portão naquela mesma noite.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia estava fazendo na varanda?",
+       "options": [
+        "Lendo um livro da escola",
+        "Desenhando",
+        "Dormindo",
+        "Brincando com o cachorro"
+       ],
+       "answer": "Lendo um livro da escola",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Bolacha fugiu?",
+       "options": [
+        "Correu atrás de um gato pelo portão aberto",
+        "Ficou com medo de trovão",
+        "Quis ir à feira",
+        "Seguiu o carteiro"
+       ],
+       "answer": "Correu atrás de um gato pelo portão aberto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, até onde Bolacha foi?",
+       "options": [],
+       "answer": "praça",
+       "accept": [
+        "a praça",
+        "até a praça",
+        "à praça"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Davi estava quando voltou?",
+       "options": [
+        "Vermelho, suado e sem fôlego",
+        "Rindo e tranquilo",
+        "Chorando de tristeza",
+        "Molhado de chuva"
+       ],
+       "answer": "Vermelho, suado e sem fôlego",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que quer dizer \"esbaforido\"?",
+       "options": [
+        "Ofegante, sem fôlego",
+        "Muito feliz",
+        "Com frio",
+        "Com fome"
+       ],
+       "answer": "Ofegante, sem fôlego",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que ajudou Lia a entender a palavra do livro?",
+       "options": [
+        "Comparar o mensageiro com Davi depois da corrida",
+        "Perguntar à professora",
+        "Ver um filme",
+        "Ouvir o avô ler"
+       ],
+       "answer": "Comparar o mensageiro com Davi depois da corrida",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que quer dizer \"os minutos pareciam horas\"?",
+       "options": [
+        "A espera parecia muito longa",
+        "O relógio estava quebrado",
+        "Já era de noite",
+        "Eles esperaram várias horas"
+       ],
+       "answer": "A espera parecia muito longa",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô consertou o trinco do portão naquela mesma noite?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: A palavra de dois sentidos",
+     "synopsis": "Uma frase da professora deixa Lia confusa porque a palavra \"pena\" tem mais de um sentido. Com a ajuda do contexto e do dicionário, ela resolve o mistério.",
+     "text": "Na segunda-feira, a professora Helena leu para a turma uma história sobre um passarinho que tinha caído do ninho.\n— A menina encontrou o filhote no chão e sentiu pena dele — leu a professora.\nLia franziu a testa. Pena? Pena era aquela coisa leve que cobre o corpo dos pássaros. Como alguém podia sentir uma pena?\nEla levantou a mão.\n— Professora, a menina sentiu a pena do passarinho? Encostou nela?\nAlguns colegas riram, mas a professora não. Ela sorriu e escreveu duas frases na lousa:\n\"O vento levou uma pena branca do pombo.\"\n\"Fiquei com pena do cachorrinho molhado na chuva.\"\n— A palavra é a mesma — explicou. — Mas o sentido muda conforme a frase. É o contexto que nos diz qual é o certo.\nLia olhou para a primeira frase: vento, pombo, branca. Era a pena do pássaro, com certeza. Na segunda: cachorrinho molhado, chuva, alguém triste por ele. Não era coisa nenhuma de pássaro. Era um sentimento.\n— Na segunda frase, pena quer dizer ficar triste pelo que está acontecendo com alguém? — arriscou Lia.\n— Exatamente. Vamos confirmar?\nA professora pegou o dicionário da sala, e Lia leu para todos. No verbete \"pena\" havia vários sentidos, numerados um embaixo do outro: \"1. cada uma das peças que cobrem o corpo das aves\" e, mais abaixo, \"sentimento de tristeza pelo sofrimento de alguém; dó\".\n— Os dicionários colocam vários sentidos em uma mesma palavra — disse a professora. — Quem escolhe o certo é o leitor, olhando o contexto.\nÀ tarde, Lia mostrou o caderno ao avô. Na página nova, tinha desenhado uma pena de passarinho de um lado e um cachorrinho triste do outro.\n— Uma palavra, duas caras — disse ela.\nO avô achou o título tão bom que pediu para copiar no caderno dele também.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da professora?",
+       "options": [],
+       "answer": "Helena",
+       "accept": [
+        "professora Helena"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, sobre o que era a história que a professora leu?",
+       "options": [
+        "Um passarinho que caiu do ninho",
+        "Um cachorro que fugiu",
+        "Uma feira de domingo",
+        "Uma tempestade"
+       ],
+       "answer": "Um passarinho que caiu do ninho",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Lia ficou confusa com a frase da história?",
+       "options": [
+        "Achou que pena era só a do pássaro",
+        "Não conhecia a palavra ninho",
+        "Não ouviu a professora",
+        "Não gostava de passarinhos"
+       ],
+       "answer": "Achou que pena era só a do pássaro",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a professora fez para explicar a palavra?",
+       "options": [
+        "Escreveu duas frases na lousa com sentidos diferentes",
+        "Mostrou um passarinho de verdade",
+        "Mandou todos para casa",
+        "Contou outra história"
+       ],
+       "answer": "Escreveu duas frases na lousa com sentidos diferentes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, na frase \"Fiquei com pena do cachorrinho molhado na chuva\", o que quer dizer \"pena\"?",
+       "options": [
+        "Tristeza pelo sofrimento de alguém",
+        "Parte do corpo de uma ave",
+        "Um tipo de caneta",
+        "Um castigo"
+       ],
+       "answer": "Tristeza pelo sofrimento de alguém",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo a professora, quem escolhe o sentido certo de uma palavra?",
+       "options": [
+        "O leitor, olhando o contexto",
+        "O autor do dicionário",
+        "O colega ao lado",
+        "Quem tem a letra mais bonita"
+       ],
+       "answer": "O leitor, olhando o contexto",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia quis dizer com \"Uma palavra, duas caras\"?",
+       "options": [
+        "A palavra tem dois sentidos diferentes",
+        "A palavra tem duas letras",
+        "Ela desenhou dois rostos",
+        "A palavra é difícil de falar"
+       ],
+       "answer": "A palavra tem dois sentidos diferentes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a professora não riu da pergunta de Lia?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: Um caderno para cada um",
+     "synopsis": "O caderno azul chega à última página, e Lia tem uma ideia para que as palavras escondidas continuem sendo caçadas. Um arco-íris ajuda a fechar a história.",
+     "text": "Numa tarde de domingo, Lia abriu o caderno azul e levou um susto. Só restava uma página em branco.\n— Vô, o caderno vai acabar!\nO avô Germano tirou os óculos e olhou para a neta com calma.\n— Cadernos acabam. Palavras, não.\nLia não ficou muito convencida. Foi para o quintal pensar, sentada no degrau, com Bolacha ao lado. Tinha chovido de manhã, e agora o sol aparecia de novo. De repente, no céu, surgiu um arco-íris enorme, com todas as cores bem fortes.\n— Davi, vem ver! — gritou ela.\nO primo chegou correndo, mas, quando os dois olharam de novo, as cores já estavam sumindo. Em poucos segundos, o arco-íris tinha desaparecido.\n— Que pena — disse Davi. — Foi tão rápido.\nO avô, que vinha logo atrás, comentou:\n— A beleza do arco-íris é efêmera.\nLia sorriu. Era a palavra perfeita para a última página. Ela pensou nas pistas: o arco-íris apareceu, brilhou e sumiu em segundos. Algo que dura pouco.\nEscreveu: \"Efêmero. Palpite: que dura muito pouco tempo\". O dicionário confirmou: \"passageiro, de curta duração\".\nMas, ao fechar o caderno, Lia teve uma ideia.\n— Vô, e se o Davi também tivesse um caderno? E se cada um tivesse o seu?\nNo dia seguinte, o avô voltou da papelaria com dois cadernos novos: um verde para Davi e um amarelo para Lia. Na primeira página de cada um, ele escreveu com a mesma letra caprichada de antigamente: \"Caderno das Palavras Escondidas — volume 2\".\n— As regras são as mesmas — disse ele. — Primeiro o palpite, depois o dicionário.\nDavi já foi anotando a primeira palavra: \"alvoroço\", que tinha ouvido da prima a semana inteira.\nLia guardou o caderno azul de volta na caixa, com cuidado. Ele estava cheio. Mas, como o avô tinha dito, as palavras continuavam por aí, escondidas, esperando alguém para encontrá-las.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantas páginas em branco restavam no caderno azul?",
+       "options": [
+        "Uma",
+        "Cinco",
+        "Dez",
+        "Nenhuma"
+       ],
+       "answer": "Uma",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que o avô respondeu quando Lia disse que o caderno ia acabar?",
+       "options": [
+        "Cadernos acabam. Palavras, não.",
+        "Vamos jogar o caderno fora.",
+        "Compre outro amanhã.",
+        "Nunca mais anote palavras."
+       ],
+       "answer": "Cadernos acabam. Palavras, não.",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que apareceu no céu depois da chuva?",
+       "options": [
+        "Um arco-íris",
+        "Um avião",
+        "Uma estrela",
+        "Um balão"
+       ],
+       "answer": "Um arco-íris",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual foi a última palavra anotada no caderno azul?",
+       "options": [],
+       "answer": "efêmero",
+       "accept": [
+        "Efêmero",
+        "efêmera"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual pista ajudou Lia a entender \"efêmero\"?",
+       "options": [
+        "O arco-íris sumiu em poucos segundos",
+        "O arco-íris era muito grande",
+        "O avô estava de óculos",
+        "Bolacha estava no quintal"
+       ],
+       "answer": "O arco-íris sumiu em poucos segundos",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi a ideia de Lia?",
+       "options": [
+        "Que cada um tivesse o seu próprio caderno",
+        "Vender o caderno azul",
+        "Parar de anotar palavras",
+        "Escrever um livro de receitas"
+       ],
+       "answer": "Que cada um tivesse o seu próprio caderno",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi escolheu \"alvoroço\" como primeira palavra?",
+       "options": [
+        "Tinha ouvido a prima falar a palavra a semana inteira",
+        "Leu no dicionário por acaso",
+        "O avô mandou",
+        "Era a palavra mais curta"
+       ],
+       "answer": "Tinha ouvido a prima falar a palavra a semana inteira",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que o avô escreveu \"volume 2\" nos cadernos novos?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
