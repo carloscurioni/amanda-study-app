@@ -3351,6 +3351,1757 @@
      "errors": []
     }
    ]
+  },
+  "phys": {
+   "topic": "Kinetic particle model: states of matter and Brownian motion",
+   "questions": [
+    {
+     "id": "rg9ofq01vxygam",
+     "subject": "phys",
+     "type": "mc",
+     "q": "In which state of matter are particles closely packed in a regular pattern?",
+     "options": [
+      "solid",
+      "liquid",
+      "gas"
+     ],
+     "answer": "solid",
+     "accept": [],
+     "hint": "Think of the particles in an ice cube.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10rit8t1ey9hp5",
+     "subject": "phys",
+     "type": "mc",
+     "q": "How do particles move in a liquid?",
+     "options": [
+      "They slide past each other",
+      "They only vibrate in fixed positions",
+      "They move freely at high speed far apart",
+      "They do not move"
+     ],
+     "answer": "They slide past each other",
+     "accept": [],
+     "hint": "Liquids can flow and take the shape of their container.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yyz9t2miu3tl",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which state of matter has particles that are far apart and move randomly at high speed?",
+     "options": [
+      "gas",
+      "liquid",
+      "solid"
+     ],
+     "answer": "gas",
+     "accept": [],
+     "hint": "This state fills any container it is in.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzsibxrn2t7ps",
+     "subject": "phys",
+     "type": "short",
+     "q": "Name the state of matter that has a fixed volume but no fixed shape.",
+     "options": [],
+     "answer": "liquid",
+     "accept": [
+      "a liquid"
+     ],
+     "hint": "It takes the shape of its container.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13pm9x2h9yprq",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Why can a gas be compressed easily?",
+     "options": [
+      "There are large spaces between its particles",
+      "Its particles are very small",
+      "Its particles are vibrating",
+      "Its particles attract strongly"
+     ],
+     "answer": "There are large spaces between its particles",
+     "accept": [],
+     "hint": "Think about the distance between particles.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19c8g7uaqoqo3",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What happens to the average speed of gas particles when the temperature increases?",
+     "options": [
+      "It increases",
+      "It decreases",
+      "It stays the same"
+     ],
+     "answer": "It increases",
+     "accept": [],
+     "hint": "Temperature is linked to the kinetic energy of particles.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrpszk51fzigg9",
+     "subject": "phys",
+     "type": "short",
+     "q": "What name is given to the random, zigzag movement of small visible particles, such as smoke particles, in air?",
+     "options": [],
+     "answer": "Brownian motion",
+     "accept": [
+      "brownian movement"
+     ],
+     "hint": "It is named after a scientist who saw pollen grains moving in water.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmdnb7ewzo6zj",
+     "subject": "phys",
+     "type": "mc",
+     "q": "In a smoke cell experiment, what is seen through the microscope?",
+     "options": [
+      "Bright specks of smoke moving randomly",
+      "Air molecules moving in straight lines",
+      "Smoke particles staying still",
+      "Smoke particles moving in circles"
+     ],
+     "answer": "Bright specks of smoke moving randomly",
+     "accept": [],
+     "hint": "Air molecules are too small to see.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfcg37h1jjxsou",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What causes the smoke particles to move randomly in a smoke cell?",
+     "options": [
+      "Collisions with fast-moving air molecules",
+      "Gravity pulling them down",
+      "Light from the lamp pushing them",
+      "Attraction between smoke particles"
+     ],
+     "answer": "Collisions with fast-moving air molecules",
+     "accept": [],
+     "hint": "Something invisible is hitting them from all directions.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13d1rmep79rha",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Why are the air molecules in a smoke cell not visible?",
+     "options": [
+      "They are far too small",
+      "They are transparent only in light",
+      "They move too slowly",
+      "They are absorbed by the smoke"
+     ],
+     "answer": "They are far too small",
+     "accept": [],
+     "hint": "Compare their size with smoke particles.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1591z4vtxfagd",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which statement about Brownian motion is correct?",
+     "options": [
+      "It is evidence that air is made of moving particles",
+      "It shows that gases have a fixed shape",
+      "It proves particles in solids flow",
+      "It shows that smoke particles are alive"
+     ],
+     "answer": "It is evidence that air is made of moving particles",
+     "accept": [],
+     "hint": "What does the observation tell us about something we cannot see?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7khdjr1ywg53m",
+     "subject": "phys",
+     "type": "mc",
+     "q": "What happens to the motion of the smoke particles if the air in the smoke cell is heated?",
+     "options": [
+      "It becomes more rapid",
+      "It becomes slower",
+      "It stops"
+     ],
+     "answer": "It becomes more rapid",
+     "accept": [],
+     "hint": "Hotter air molecules have more kinetic energy.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rfrl3yeewd21",
+     "subject": "phys",
+     "type": "mc",
+     "q": "Which word best describes the forces between particles in a gas?",
+     "options": [
+      "very weak",
+      "very strong",
+      "moderate, holding them in a lattice"
+     ],
+     "answer": "very weak",
+     "accept": [],
+     "hint": "Gas particles spread out to fill a container.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10itssh1wwmynr",
+     "subject": "phys",
+     "type": "open",
+     "q": "Describe the arrangement and motion of particles in a solid and in a gas.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Mention spacing, pattern and how the particles move.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk7bnz71b1kldm",
+     "subject": "phys",
+     "type": "open",
+     "q": "Explain how the kinetic particle model accounts for the pressure exerted by a gas on the walls of its container.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about particles colliding with the walls.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vncrzbgmpm0k",
+     "subject": "phys",
+     "type": "open",
+     "q": "Explain why the small, light particles in a smoke cell show Brownian motion, but a large heavy object in air does not appear to.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Consider how many collisions hit each side at once and how they balance.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "psych": {
+   "topic": "Restoration theory of sleep",
+   "questions": [
+    {
+     "id": "rx2auzu8atdbj",
+     "subject": "psych",
+     "type": "mc",
+     "q": "According to restoration theory, what is the main function of sleep?",
+     "options": [
+      "To restore and repair the body and brain",
+      "To keep animals safe from predators",
+      "To save energy at night only",
+      "To help us dream"
+     ],
+     "answer": "To restore and repair the body and brain",
+     "accept": [],
+     "hint": "The name of the theory gives a clue.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8306qe1oxdn8k",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which stage of sleep is linked to body repair in restoration theory?",
+     "options": [
+      "deep (slow-wave) sleep",
+      "REM sleep",
+      "light stage 1 sleep"
+     ],
+     "answer": "deep (slow-wave) sleep",
+     "accept": [],
+     "hint": "This is the hardest stage to wake someone from.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rysws5r8roncy",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which stage of sleep is linked to restoring the brain in restoration theory?",
+     "options": [
+      "REM sleep",
+      "stage 1 sleep",
+      "stage 2 sleep"
+     ],
+     "answer": "REM sleep",
+     "accept": [],
+     "hint": "This stage involves rapid eye movements and dreaming.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn389vv1hiuihq",
+     "subject": "psych",
+     "type": "short",
+     "q": "Name the hormone released during deep sleep that helps tissue growth and repair.",
+     "options": [],
+     "answer": "growth hormone",
+     "accept": [
+      "GH",
+      "human growth hormone"
+     ],
+     "hint": "Its name describes what it does.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c8vs44ziv0u0",
+     "subject": "psych",
+     "type": "mc",
+     "q": "What happens to the body during deep sleep, according to restoration theory?",
+     "options": [
+      "Cells and tissues are repaired",
+      "Muscles become more active",
+      "Body temperature rises sharply",
+      "The brain stops working"
+     ],
+     "answer": "Cells and tissues are repaired",
+     "accept": [],
+     "hint": "Think about recovery after a busy day.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rl4dh1c1lkexqt",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which of these would restoration theory predict?",
+     "options": [
+      "People sleep more deeply after heavy exercise",
+      "People sleep less after heavy exercise",
+      "Exercise has no effect on sleep",
+      "People dream less after exercise"
+     ],
+     "answer": "People sleep more deeply after heavy exercise",
+     "accept": [],
+     "hint": "More use of the body means more repair is needed.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jc7jgv1n1so9m",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Why does restoration theory predict that babies spend a lot of time in REM sleep?",
+     "options": [
+      "Their brains are developing quickly",
+      "They need to hide from danger",
+      "They are not tired",
+      "They use little energy"
+     ],
+     "answer": "Their brains are developing quickly",
+     "accept": [],
+     "hint": "Link REM sleep to the brain.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtguvz71tcstdr",
+     "subject": "psych",
+     "type": "short",
+     "q": "What term describes going without sleep for a long period of time?",
+     "options": [],
+     "answer": "sleep deprivation",
+     "accept": [
+      "sleep loss"
+     ],
+     "hint": "It is often studied to test sleep theories.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryimbaipdiy54",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which effect of sleep deprivation supports restoration theory?",
+     "options": [
+      "Poor concentration and memory",
+      "Better reaction times",
+      "Faster tissue growth",
+      "Stronger immune system"
+     ],
+     "answer": "Poor concentration and memory",
+     "accept": [],
+     "hint": "If sleep restores the brain, what happens without it?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjg59619h1v2a",
+     "subject": "psych",
+     "type": "mc",
+     "q": "After sleep deprivation, people often show 'REM rebound'. What does this mean?",
+     "options": [
+      "They spend more time in REM sleep when they sleep again",
+      "They stop having REM sleep",
+      "They wake up during REM",
+      "They have REM sleep while awake"
+     ],
+     "answer": "They spend more time in REM sleep when they sleep again",
+     "accept": [],
+     "hint": "The brain tries to catch up.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rq0zf561gu48i7",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Which finding is a weakness of restoration theory?",
+     "options": [
+      "Some repair also happens during relaxed wakefulness",
+      "Growth hormone is released in deep sleep",
+      "People feel tired after no sleep",
+      "Babies sleep a lot"
+     ],
+     "answer": "Some repair also happens during relaxed wakefulness",
+     "accept": [],
+     "hint": "A weakness challenges the idea that sleep is needed for repair.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re6cyga1ge9299",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Why is research on sleep-deprived animals a problem for evaluating the theory?",
+     "options": [
+      "Results may not generalise to humans and raise ethical concerns",
+      "Animals do not sleep",
+      "Animals always sleep more than humans",
+      "It is too cheap to run"
+     ],
+     "answer": "Results may not generalise to humans and raise ethical concerns",
+     "accept": [],
+     "hint": "Think about generalisation and ethics.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o33pix1c9c7z2",
+     "subject": "psych",
+     "type": "mc",
+     "q": "Many sleep deprivation studies use small samples. Why is this a limitation?",
+     "options": [
+      "Findings may not apply to the wider population",
+      "The results are always correct",
+      "It makes the study unethical",
+      "It increases validity"
+     ],
+     "answer": "Findings may not apply to the wider population",
+     "accept": [],
+     "hint": "Think about generalisability.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1odsmdg1mdvbe4",
+     "subject": "psych",
+     "type": "open",
+     "q": "Describe what restoration theory suggests happens to the body and the brain during sleep.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Mention both deep sleep and REM sleep.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x8yy1z1e116wc",
+     "subject": "psych",
+     "type": "open",
+     "q": "Explain one piece of evidence that supports restoration theory.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "You could use growth hormone, sleep deprivation or REM rebound.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ijscxe1w4x7x3",
+     "subject": "psych",
+     "type": "open",
+     "q": "Evaluate restoration theory as an explanation of why we sleep.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Give a strength, a weakness and a brief judgement.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Concordância nominal",
+   "questions": [
+    {
+     "id": "rpv8y914a6hdu",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete com a concordância correta: \"Comprei duas blusas ___.\"",
+     "options": [
+      "vermelhas",
+      "vermelha",
+      "vermelho"
+     ],
+     "answer": "vermelhas",
+     "accept": [],
+     "hint": "O adjetivo concorda em gênero e número com o substantivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdfvhh917y342i",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase está correta?",
+     "options": [
+      "As meninas estavam animadas.",
+      "As meninas estavam animada.",
+      "As meninas estavam animados."
+     ],
+     "answer": "As meninas estavam animadas.",
+     "accept": [],
+     "hint": "Observe o gênero e o número de \"meninas\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j1dg0wnah2kj",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Uma moça agradecendo deve dizer:",
+     "options": [
+      "Muito obrigada.",
+      "Muito obrigado.",
+      "Muito obrigados."
+     ],
+     "answer": "Muito obrigada.",
+     "accept": [],
+     "hint": "\"Obrigado\" concorda com quem fala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xfp9ft1bwag42",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Ela ficou ___ cansada depois da corrida.\"",
+     "options": [
+      "meio",
+      "meia",
+      "meios"
+     ],
+     "answer": "meio",
+     "accept": [],
+     "hint": "Aqui a palavra significa \"um pouco\" e modifica um adjetivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rub75n8doiv2i",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Comi ___ pizza no jantar.\"",
+     "options": [
+      "meia",
+      "meio",
+      "meias"
+     ],
+     "answer": "meia",
+     "accept": [],
+     "hint": "Aqui a palavra significa \"metade\" e acompanha um substantivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oca29w19juddx",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Havia ___ pessoas na fila.\"",
+     "options": [
+      "bastantes",
+      "bastante"
+     ],
+     "answer": "bastantes",
+     "accept": [],
+     "hint": "Quando significa \"muitas\" e acompanha substantivo, a palavra varia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry20foe6cm54o",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Os alunos estudaram ___ para a prova.\"",
+     "options": [
+      "bastante",
+      "bastantes"
+     ],
+     "answer": "bastante",
+     "accept": [],
+     "hint": "Aqui a palavra modifica um verbo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fjjve378wk79",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Seguem ___ as cópias dos documentos.\"",
+     "options": [
+      "anexas",
+      "anexo",
+      "anexos"
+     ],
+     "answer": "anexas",
+     "accept": [],
+     "hint": "\"Anexo\" é adjetivo e concorda com o substantivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rquyrlyckvxs3",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"___ ao e-mail, enviei as fotos.\"",
+     "options": [
+      "Anexo",
+      "Anexa",
+      "Anexas"
+     ],
+     "answer": "Anexo",
+     "accept": [],
+     "hint": "Observe se há um substantivo para concordar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r32ow951u5j3j5",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase está de acordo com a norma-padrão?",
+     "options": [
+      "É proibida a entrada de animais.",
+      "É proibido a entrada de animais.",
+      "É proibidos a entrada de animais."
+     ],
+     "answer": "É proibida a entrada de animais.",
+     "accept": [],
+     "hint": "Com artigo antes do substantivo, a expressão concorda com ele.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roi0opc142pz88",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Estudei a língua e a literatura ___.\" (concordância com os dois termos)",
+     "options": [
+      "portuguesas",
+      "portuguesa",
+      "português"
+     ],
+     "answer": "portuguesas",
+     "accept": [],
+     "hint": "Quando o adjetivo vem depois e se refere a ambos, pode ir para o plural.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6zv0tfwvu3g5",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Elas ___ resolveram o problema.\"",
+     "options": [
+      "mesmas",
+      "mesmo",
+      "mesma"
+     ],
+     "answer": "mesmas",
+     "accept": [],
+     "hint": "Com o sentido de \"próprias\", a palavra concorda com o pronome.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvvxr4p12gqzjl",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique a diferença de sentido e de concordância entre \"meio\" em \"meio triste\" e \"meia\" em \"meia laranja\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na classe da palavra em cada caso.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gubkbuc0oku1",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva uma frase usando \"bastante\" que varia e outra usando \"bastante\" que não varia, explicando por quê.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Uma acompanha substantivo e a outra, verbo ou adjetivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5qtjn3yeai6b",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete: \"Já é meio-dia e ___.\" (indicando 12h30)",
+     "options": [
+      "meia",
+      "meio",
+      "meias"
+     ],
+     "answer": "meia",
+     "accept": [],
+     "hint": "Pense na palavra \"hora\", que fica subentendida, e no gênero dela.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5t1sby1n6kxj6",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase sobre bebida está de acordo com a norma-padrão?",
+     "options": [
+      "Água é bom para a saúde.",
+      "Água é boa para a saúde.",
+      "Água são boas para a saúde."
+     ],
+     "answer": "Água é bom para a saúde.",
+     "accept": [],
+     "hint": "Sem artigo antes do substantivo, a expressão fica invariável.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_lit": {
+   "topic": "Texto dramático: rubrica, diálogo, ato e cena",
+   "questions": [
+    {
+     "id": "r67xytz1ohgigz",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Como se chama o gênero de texto escrito para ser encenado no palco?",
+     "options": [
+      "texto dramático",
+      "texto narrativo",
+      "texto lírico"
+     ],
+     "answer": "texto dramático",
+     "accept": [],
+     "hint": "Pense em teatro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15d1n3v1cf47wh",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Como se chamam as indicações do autor sobre cenário, gestos e tom de voz, geralmente entre parênteses ou em itálico?",
+     "options": [],
+     "answer": "rubrica",
+     "accept": [
+      "rubricas",
+      "didascália",
+      "didascálias"
+     ],
+     "hint": "Elas não são faladas pelos atores.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fvk21m1kur9i8",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "No texto dramático, a história avança principalmente por meio de:",
+     "options": [
+      "diálogos entre as personagens",
+      "descrições do narrador",
+      "versos rimados"
+     ],
+     "answer": "diálogos entre as personagens",
+     "accept": [],
+     "hint": "Normalmente não há narrador.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r397em1l54cxi",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual é a maior divisão de uma peça de teatro?",
+     "options": [
+      "ato",
+      "cena",
+      "fala"
+     ],
+     "answer": "ato",
+     "accept": [],
+     "hint": "Ele pode ter várias partes menores dentro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgt25mqjgrwic",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Em geral, o que marca a mudança de uma cena para outra?",
+     "options": [
+      "entrada ou saída de personagens",
+      "mudança de rima",
+      "fala do narrador"
+     ],
+     "answer": "entrada ou saída de personagens",
+     "accept": [],
+     "hint": "Pense em quem está no palco.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13cnkza12nmj2u",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Leia: \"MARTA (abrindo a janela, irritada): — Quem está fazendo esse barulho?\". O trecho entre parênteses é:",
+     "options": [
+      "uma rubrica",
+      "uma fala",
+      "um ato"
+     ],
+     "answer": "uma rubrica",
+     "accept": [],
+     "hint": "Ele indica como a personagem age.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8tbaoy1yi1u9g",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Leia o mesmo trecho: \"MARTA (abrindo a janela, irritada): — Quem está fazendo esse barulho?\". O que a rubrica revela?",
+     "options": [
+      "a emoção e o gesto da personagem",
+      "o final da peça",
+      "o nome do autor"
+     ],
+     "answer": "a emoção e o gesto da personagem",
+     "accept": [],
+     "hint": "Veja as palavras \"abrindo\" e \"irritada\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15ht1cm1leutln",
+     "subject": "pt_lit",
+     "type": "short",
+     "q": "Como se chama a fala longa em que uma personagem, sozinha, expressa seus pensamentos em voz alta?",
+     "options": [],
+     "answer": "monólogo",
+     "accept": [
+      "solilóquio"
+     ],
+     "hint": "O prefixo significa \"um só\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgook6d7mro2q",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "No texto dramático, como o leitor sabe quem está falando?",
+     "options": [
+      "o nome da personagem aparece antes da fala",
+      "o narrador avisa",
+      "a fala vem entre aspas"
+     ],
+     "answer": "o nome da personagem aparece antes da fala",
+     "accept": [],
+     "hint": "Observe o início de cada linha de diálogo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16qdmzk13hmju4",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual destes elementos pertence à encenação, e não ao texto falado?",
+     "options": [
+      "iluminação e cenário",
+      "fala da protagonista",
+      "diálogo entre duas personagens"
+     ],
+     "answer": "iluminação e cenário",
+     "accept": [],
+     "hint": "Pense no que o público vê, mas ninguém diz.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8pflmh13a8eg1",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Leia: \"(Luz baixa. Ouve-se a chuva. JOÃO entra devagar, molhado.)\". Que clima a rubrica cria?",
+     "options": [
+      "de tensão ou tristeza",
+      "de festa alegre",
+      "de competição esportiva"
+     ],
+     "answer": "de tensão ou tristeza",
+     "accept": [],
+     "hint": "Observe luz, som e movimento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnlotxf1036udb",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "Qual é a principal diferença entre um conto e uma peça de teatro?",
+     "options": [
+      "a peça é feita para ser encenada",
+      "o conto não tem personagens",
+      "a peça nunca tem conflito"
+     ],
+     "answer": "a peça é feita para ser encenada",
+     "accept": [],
+     "hint": "Pense no destino de cada texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1l6mpve1c0i76x",
+     "subject": "pt_lit",
+     "type": "mc",
+     "q": "O que é um aparte no teatro?",
+     "options": [
+      "uma fala dirigida ao público que as outras personagens fingem não ouvir",
+      "uma pausa entre atos",
+      "a lista de personagens"
+     ],
+     "answer": "uma fala dirigida ao público que as outras personagens fingem não ouvir",
+     "accept": [],
+     "hint": "É um comentário \"secreto\" no palco.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k85h8gr96wco",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Por que as rubricas são importantes para quem vai encenar uma peça?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no trabalho de atores, diretor e cenógrafo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqy3dny1mcmw28",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Explique como o diálogo pode revelar o conflito entre duas personagens num texto dramático.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que as falas mostram sem um narrador.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c8ria1akhm4d",
+     "subject": "pt_lit",
+     "type": "open",
+     "q": "Leia: \"ANA (sorrindo, mas com os olhos cheios d'água): — Estou ótima.\" Explique o contraste entre a rubrica e a fala.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Compare o que ela diz com o que demonstra.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_red": {
+   "topic": "Tipos de argumento: autoridade, exemplificação, dados e causa-consequência",
+   "questions": [
+    {
+     "id": "rlo4g20pfjj5v",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "\"Segundo a Organização Mundial da Saúde, dormir pouco prejudica a memória.\" Que tipo de argumento é esse?",
+     "options": [
+      "autoridade",
+      "exemplificação",
+      "causa e consequência"
+     ],
+     "answer": "autoridade",
+     "accept": [],
+     "hint": "O texto cita uma fonte reconhecida.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r73qg12nqha4o",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "\"Em uma pesquisa com mil estudantes, 60% disseram usar o celular antes de dormir.\" Que tipo de argumento é esse?",
+     "options": [
+      "dados estatísticos",
+      "autoridade",
+      "exemplificação"
+     ],
+     "answer": "dados estatísticos",
+     "accept": [],
+     "hint": "Observe os números.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12h5lw1hpxcfr",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "\"Quando as cidades plantam mais árvores, as ruas ficam mais frescas.\" Que tipo de argumento é esse?",
+     "options": [
+      "causa e consequência",
+      "autoridade",
+      "dados estatísticos"
+     ],
+     "answer": "causa e consequência",
+     "accept": [],
+     "hint": "Uma ação leva a um resultado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1cudwx71saei9x",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "\"Um bairro que criou hortas comunitárias reduziu o lixo orgânico.\" Que tipo de argumento é esse?",
+     "options": [
+      "exemplificação",
+      "autoridade",
+      "dados estatísticos"
+     ],
+     "answer": "exemplificação",
+     "accept": [],
+     "hint": "Um caso concreto ilustra a ideia.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdoc7b21fiuavq",
+     "subject": "pt_red",
+     "type": "short",
+     "q": "Como se chama o argumento que se apoia na opinião de um especialista ou instituição reconhecida?",
+     "options": [],
+     "answer": "argumento de autoridade",
+     "accept": [
+      "autoridade",
+      "de autoridade"
+     ],
+     "hint": "Pense em quem tem credibilidade no assunto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wob94ugxj2ye",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual cuidado é essencial ao usar um argumento de autoridade?",
+     "options": [
+      "citar fonte confiável e ligada ao tema",
+      "citar qualquer pessoa famosa",
+      "inventar a fonte"
+     ],
+     "answer": "citar fonte confiável e ligada ao tema",
+     "accept": [],
+     "hint": "A credibilidade depende da fonte.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjgvtoykfio4g",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual é o principal risco do argumento por exemplificação?",
+     "options": [
+      "generalizar a partir de um único caso",
+      "usar números demais",
+      "citar especialistas"
+     ],
+     "answer": "generalizar a partir de um único caso",
+     "accept": [],
+     "hint": "Um exemplo prova tudo?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dwyse1zcupvu",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual conectivo é mais adequado para introduzir uma consequência?",
+     "options": [
+      "portanto",
+      "embora",
+      "por exemplo"
+     ],
+     "answer": "portanto",
+     "accept": [],
+     "hint": "Ele indica conclusão ou resultado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13e0gho1c5tctq",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual expressão introduz melhor um argumento de autoridade?",
+     "options": [
+      "De acordo com especialistas,",
+      "Por outro lado,",
+      "Em resumo,"
+     ],
+     "answer": "De acordo com especialistas,",
+     "accept": [],
+     "hint": "Ela indica a origem da informação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3nodgm109kdhe",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Para um texto sobre o desperdício de alimentos, qual argumento seria do tipo dados?",
+     "options": [
+      "Cerca de um terço dos alimentos produzidos no mundo é desperdiçado.",
+      "Minha vizinha joga comida fora.",
+      "Desperdiçar é feio."
+     ],
+     "answer": "Cerca de um terço dos alimentos produzidos no mundo é desperdiçado.",
+     "accept": [],
+     "hint": "Procure a informação numérica.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pfen8f1ep1uxc",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Qual destas frases é apenas opinião, sem argumento?",
+     "options": [
+      "Eu acho que ler é chato.",
+      "Pesquisas mostram que a leitura amplia o vocabulário.",
+      "Quem lê mais escreve melhor, pois conhece mais estruturas."
+     ],
+     "answer": "Eu acho que ler é chato.",
+     "accept": [],
+     "hint": "Um argumento apresenta uma razão ou prova.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2742se1xw0kof",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Para defender a redução do uso de plástico, qual seria um argumento de causa e consequência?",
+     "options": [
+      "O plástico descartado chega aos oceanos e prejudica os animais marinhos.",
+      "Uma praia ficou limpa depois de um mutirão.",
+      "Um biólogo diz que o plástico é ruim."
+     ],
+     "answer": "O plástico descartado chega aos oceanos e prejudica os animais marinhos.",
+     "accept": [],
+     "hint": "Procure a relação entre ação e efeito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roqizug1z025ew",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Escreva um argumento de causa e consequência sobre o tema \"uso excessivo de telas por adolescentes\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Mostre uma ação e o efeito que ela provoca.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rijjdc41n2u3ef",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Escreva um argumento por exemplificação, com um caso inventado, para defender o transporte por bicicleta nas cidades.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use um caso concreto e ligue-o à tese.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgw9oyg1x04w22",
+     "subject": "pt_red",
+     "type": "open",
+     "q": "Explique por que combinar diferentes tipos de argumento torna uma redação mais convincente.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em credibilidade, concretude e lógica.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4svw401to4w3",
+     "subject": "pt_red",
+     "type": "mc",
+     "q": "Ao escolher argumentos para uma redação, o mais importante é que eles:",
+     "options": [
+      "sejam relevantes para o tema e a tese",
+      "sejam os mais longos possíveis",
+      "não tenham ligação com a tese"
+     ],
+     "answer": "sejam relevantes para o tema e a tese",
+     "accept": [],
+     "hint": "O argumento sustenta o ponto de vista.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "sci": {
+   "topic": "Biology: photosynthesis and leaf structure",
+   "questions": [
+    {
+     "id": "r1idzeus121j3e3",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which is the correct word equation for photosynthesis?",
+     "options": [
+      "carbon dioxide + water → glucose + oxygen",
+      "glucose + oxygen → carbon dioxide + water",
+      "oxygen + water → glucose + carbon dioxide"
+     ],
+     "answer": "carbon dioxide + water → glucose + oxygen",
+     "accept": [],
+     "hint": "Plants take in a gas and water and release oxygen.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmajftx5qxijw",
+     "subject": "sci",
+     "type": "short",
+     "q": "Name the green pigment that absorbs light for photosynthesis.",
+     "options": [],
+     "answer": "chlorophyll",
+     "accept": [],
+     "hint": "It is found inside chloroplasts.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9kifjc1j7h3b4",
+     "subject": "sci",
+     "type": "short",
+     "q": "In which organelle does photosynthesis take place?",
+     "options": [],
+     "answer": "chloroplast",
+     "accept": [
+      "chloroplasts"
+     ],
+     "hint": "It contains the green pigment.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wawytb55dw80",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which gas is released as a by-product of photosynthesis?",
+     "options": [
+      "oxygen",
+      "carbon dioxide",
+      "nitrogen"
+     ],
+     "answer": "oxygen",
+     "accept": [],
+     "hint": "Pondweed produces bubbles of this gas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvciy19vmolme",
+     "subject": "sci",
+     "type": "short",
+     "q": "Name the pores on the lower surface of a leaf that let gases in and out.",
+     "options": [],
+     "answer": "stomata",
+     "accept": [
+      "stoma"
+     ],
+     "hint": "They are controlled by guard cells.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd6dkh61tnp9bn",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which leaf layer contains the most chloroplasts?",
+     "options": [
+      "palisade mesophyll",
+      "spongy mesophyll",
+      "lower epidermis"
+     ],
+     "answer": "palisade mesophyll",
+     "accept": [],
+     "hint": "It is near the top of the leaf, where light is strongest.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbtoxfa1bwfbs7",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why are leaves usually thin?",
+     "options": [
+      "Gases diffuse a short distance",
+      "To store more water",
+      "To keep the leaf warm",
+      "To hold more starch"
+     ],
+     "answer": "Gases diffuse a short distance",
+     "accept": [],
+     "hint": "Think about carbon dioxide reaching the cells.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxitnr311v2xgj",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why do leaves have a large surface area?",
+     "options": [
+      "To absorb more light",
+      "To lose more glucose",
+      "To reduce gas exchange",
+      "To store minerals"
+     ],
+     "answer": "To absorb more light",
+     "accept": [],
+     "hint": "Light is needed for photosynthesis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4a27wc24859o",
+     "subject": "sci",
+     "type": "mc",
+     "q": "What is a limiting factor?",
+     "options": [
+      "The factor in shortest supply that limits the rate",
+      "Any factor that speeds up the rate",
+      "A factor that stops respiration",
+      "A chemical made in photosynthesis"
+     ],
+     "answer": "The factor in shortest supply that limits the rate",
+     "accept": [],
+     "hint": "Increasing it would increase the rate.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1taz6pc1n8xuso",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which is NOT a limiting factor of photosynthesis?",
+     "options": [
+      "oxygen concentration",
+      "light intensity",
+      "carbon dioxide concentration",
+      "temperature"
+     ],
+     "answer": "oxygen concentration",
+     "accept": [],
+     "hint": "Oxygen is a product, not a raw material.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m89w7wlq6j26",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Why does the rate of photosynthesis fall at very high temperatures?",
+     "options": [
+      "Enzymes are denatured",
+      "There is too much light",
+      "Chlorophyll turns into glucose",
+      "Stomata produce more carbon dioxide"
+     ],
+     "answer": "Enzymes are denatured",
+     "accept": [],
+     "hint": "Photosynthesis is controlled by enzymes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1y5tsw2oh3v52",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In a pondweed experiment, the lamp is moved closer. What happens to the number of bubbles per minute (if light is limiting)?",
+     "options": [
+      "It increases",
+      "It decreases",
+      "It stays the same"
+     ],
+     "answer": "It increases",
+     "accept": [],
+     "hint": "Closer lamp means higher light intensity.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqrymkh12r7ftz",
+     "subject": "sci",
+     "type": "mc",
+     "q": "In the pondweed experiment, what is the independent variable when investigating light intensity?",
+     "options": [
+      "distance of the lamp",
+      "number of bubbles",
+      "type of pondweed"
+     ],
+     "answer": "distance of the lamp",
+     "accept": [],
+     "hint": "It is the factor you change.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcd42av9fpm3x",
+     "subject": "sci",
+     "type": "mc",
+     "q": "Which test shows that a leaf has made starch?",
+     "options": [
+      "Iodine solution turns blue-black",
+      "Iodine solution turns orange",
+      "Benedict's solution turns red"
+     ],
+     "answer": "Iodine solution turns blue-black",
+     "accept": [],
+     "hint": "Starch reacts with iodine.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdq76fvgodzue",
+     "subject": "sci",
+     "type": "open",
+     "q": "Explain why the rate of photosynthesis stops increasing at high light intensity even if the light gets brighter.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Another factor becomes limiting.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3gc2n8wv2vye",
+     "subject": "sci",
+     "type": "open",
+     "q": "Describe how two features of a leaf are adapted for photosynthesis.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Choose features linked to light or gas exchange.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "spa": {
+   "topic": "Past holidays (preterite of irregular verbs: ir, ser, hacer, tener)",
+   "questions": [
+    {
+     "id": "rde3sye1wtjdst",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: \"El verano pasado (yo) ___ a la playa.\"",
+     "options": [
+      "fui",
+      "fue",
+      "fuimos"
+     ],
+     "answer": "fui",
+     "accept": [],
+     "hint": "Yo form of ir in the preterite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w3zbrgpp8klp",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: \"¿Adónde ___ tú de vacaciones?\"",
+     "options": [
+      "fuiste",
+      "fui",
+      "fueron"
+     ],
+     "answer": "fuiste",
+     "accept": [],
+     "hint": "Tú form of ir in the preterite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r169fhus1snm1jc",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: \"Mis padres ___ a Portugal en julio.\"",
+     "options": [
+      "fueron",
+      "fue",
+      "fuimos"
+     ],
+     "answer": "fueron",
+     "accept": [],
+     "hint": "Ellos form of ir in the preterite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tty5rj1osk98z",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: \"I did\" (preterite of hacer).",
+     "options": [],
+     "answer": "hice",
+     "accept": [
+      "yo hice"
+     ],
+     "hint": "It is irregular and has no accent.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mufdcp1svooia",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: \"Ayer mi hermana ___ los deberes.\"",
+     "options": [
+      "hizo",
+      "hice",
+      "hicieron"
+     ],
+     "answer": "hizo",
+     "accept": [],
+     "hint": "Ella form of hacer; note the spelling change.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ro7vpjvrdjw1r",
+     "subject": "spa",
+     "type": "short",
+     "q": "Translate into Spanish: \"I had\" (preterite of tener).",
+     "options": [],
+     "answer": "tuve",
+     "accept": [
+      "yo tuve"
+     ],
+     "hint": "The stem changes to tuv-.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14q8wckqlfct",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: \"Nosotros ___ un viaje muy largo.\"",
+     "options": [
+      "tuvimos",
+      "tuvieron",
+      "tuve"
+     ],
+     "answer": "tuvimos",
+     "accept": [],
+     "hint": "Nosotros form of tener in the preterite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kfyia8zau8b3",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: \"El hotel ___ fantástico.\" (ser, preterite)",
+     "options": [
+      "fue",
+      "fui",
+      "fueron"
+     ],
+     "answer": "fue",
+     "accept": [],
+     "hint": "Ser and ir share the same preterite forms.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ungf0y1lsa486",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"Fui a la playa con mi familia\" mean?",
+     "options": [
+      "I went to the beach with my family",
+      "I go to the beach with my family",
+      "I will go to the beach with my family"
+     ],
+     "answer": "I went to the beach with my family",
+     "accept": [],
+     "hint": "Fui is a past tense form.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ei6o4g1axy4in",
+     "subject": "spa",
+     "type": "mc",
+     "q": "What does \"el viaje\" mean?",
+     "options": [
+      "the trip",
+      "the hotel",
+      "the beach"
+     ],
+     "answer": "the trip",
+     "accept": [],
+     "hint": "It is what you take to travel somewhere.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjd3z2nvdeztx",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: \"¿Qué ___ vosotros en Madrid?\"",
+     "options": [
+      "hicisteis",
+      "hicimos",
+      "hizo"
+     ],
+     "answer": "hicisteis",
+     "accept": [],
+     "hint": "Vosotros form of hacer in the preterite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7f2ugu5jxh0f",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the correct form: \"Mis amigos ___ que volver temprano.\"",
+     "options": [
+      "tuvieron",
+      "tuvimos",
+      "tuvo"
+     ],
+     "answer": "tuvieron",
+     "accept": [],
+     "hint": "Ellos form of tener in the preterite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ofke7cp1kk6",
+     "subject": "spa",
+     "type": "mc",
+     "q": "In \"Fue un viaje increíble\", which verb is \"fue\"?",
+     "options": [
+      "ser",
+      "ir",
+      "hacer"
+     ],
+     "answer": "ser",
+     "accept": [],
+     "hint": "It describes what the trip was like.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pt3ac0ju6yho",
+     "subject": "spa",
+     "type": "mc",
+     "q": "Choose the best translation: \"We went by plane.\"",
+     "options": [
+      "Fuimos en avión.",
+      "Fueron en avión.",
+      "Vamos en avión."
+     ],
+     "answer": "Fuimos en avión.",
+     "accept": [],
+     "hint": "Nosotros, past tense of ir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13nb4bv5ezwbh",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two sentences in Spanish about a past holiday using \"fui\" and \"hice\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Say where you went and what you did.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yi6h5hqlpl48",
+     "subject": "spa",
+     "type": "open",
+     "q": "Write two or three sentences in Spanish describing a holiday, using \"tuve\" and giving an opinion with \"fue\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "For example: tuve un problema… / fue divertido…",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
