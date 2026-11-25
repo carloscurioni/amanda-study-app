@@ -3135,6 +3135,875 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "Dot the Spotty Penguin",
+   "premise": "Dot is the only penguin on her island with orange spots. In seven short adventures she tries to hide what makes her different, then discovers that her spots are part of who she is.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Spotty Penguin",
+     "synopsis": "Dot is a little penguin with orange spots. She wishes she looked like all the other penguins.",
+     "text": "On a cold, icy island lived a big family of penguins.\nAll the penguins were black and white. All except one.\nHer name was Dot. Dot was black and white too, but she had big orange spots all over her tummy.\n\"Look at Dot!\" said a young penguin. \"She looks like a fish!\" The other penguins giggled.\nThey did not mean to be unkind, but Dot felt a little sad.\nDot waddled to the edge of the ice. She looked at her face in the cold, clear water.\n\"Why can't I be the same as everybody else?\" she asked.\nHer best friend Puff, a small grey seal, popped his head out of the water.\n\"I like your spots,\" said Puff. \"They are like little suns.\"\nDot smiled a tiny smile. But that night, she still wished her spots would go away.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour were most of the penguins?",
+       "options": [
+        "Black and white",
+        "Orange",
+        "Grey"
+       ],
+       "answer": "Black and white",
+       "accept": [],
+       "hint": "Think about all the other penguins.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour were Dot's spots?",
+       "options": [
+        "Orange",
+        "Blue",
+        "Pink"
+       ],
+       "answer": "Orange",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where were Dot's spots?",
+       "options": [
+        "On her tummy",
+        "On her feet",
+        "On her head"
+       ],
+       "answer": "On her tummy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did a young penguin say Dot looked like?",
+       "options": [
+        "A fish",
+        "A bird",
+        "A rock"
+       ],
+       "answer": "A fish",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kind of animal is Puff?",
+       "options": [
+        "A seal",
+        "A penguin",
+        "A whale"
+       ],
+       "answer": "A seal",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Puff say Dot's spots were like?",
+       "options": [
+        "Little suns",
+        "Little stars",
+        "Little stones"
+       ],
+       "answer": "Little suns",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Dot feel when the penguins giggled?",
+       "options": [
+        "Sad",
+        "Excited",
+        "Angry"
+       ],
+       "answer": "Sad",
+       "accept": [],
+       "hint": "Look at what happened after they giggled.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Dot wanted to be the same as everybody else?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about how the giggling made her feel.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Snow Coat",
+     "synopsis": "Dot tries to hide her spots under snow, but the snow slides off when she swims.",
+     "text": "In the morning, Dot had an idea.\n\"If I cover my spots with snow, I will look just like everybody else!\"\nShe rolled in the soft white snow. Roll, roll, roll! Soon her tummy was all white.\nDot walked proudly to the other penguins. Nobody giggled. Nobody even looked.\n\"It worked!\" thought Dot.\nThen the big penguins said, \"Time to swim!\" They all jumped into the sea. Splash!\nDot jumped in too. The water was cold and fast. Swish, swish went the water around her.\nWhen Dot climbed out, she looked down. The snow was gone! Her orange spots were back.\nPuff swam up next to her. \"The sea washed your snow coat away,\" he said kindly.\nDot sighed. \"Hiding is very hard work,\" she said.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Dot use to cover her spots?",
+       "options": [
+        "Snow",
+        "Mud",
+        "Leaves"
+       ],
+       "answer": "Snow",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Dot do in the snow?",
+       "options": [
+        "She rolled in it",
+        "She dug a hole",
+        "She built a snowman"
+       ],
+       "answer": "She rolled in it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour was Dot's tummy after rolling?",
+       "options": [
+        "White",
+        "Orange",
+        "Black"
+       ],
+       "answer": "White",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the big penguins say?",
+       "options": [
+        "Time to swim!",
+        "Time to sleep!",
+        "Time to eat!"
+       ],
+       "answer": "Time to swim!",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happened to the snow in the sea?",
+       "options": [
+        "It washed away",
+        "It turned to ice",
+        "It got bigger"
+       ],
+       "answer": "It washed away",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who swam up next to Dot?",
+       "options": [
+        "Puff",
+        "A big penguin",
+        "A fish"
+       ],
+       "answer": "Puff",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Dot think her idea worked at first?",
+       "options": [
+        "Nobody giggled",
+        "She found a fish",
+        "Puff clapped"
+       ],
+       "answer": "Nobody giggled",
+       "accept": [],
+       "hint": "What did the other penguins NOT do?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Dot said that hiding is very hard work?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: At the Back of the Line",
+     "synopsis": "Dot hides at the back on fishing day and catches nothing. Puff shares his fish with her.",
+     "text": "It was fishing day. All the penguins stood in a long line by the sea.\nDot did not want anyone to see her spots. So she stood at the very back of the line.\nOne by one, the penguins dived in and caught shiny silver fish.\nBy the time Dot dived in, the fish had all swum away. She did not catch a single one.\nDot sat on the ice. Her tummy rumbled. Grumble, grumble!\nPuff came out of the water with two fish. \"One for me and one for you,\" he said.\n\"Thank you, Puff,\" said Dot. \"You are a good friend.\"\n\"Why were you at the back?\" asked Puff.\n\"So nobody would look at my spots,\" said Dot quietly.\nPuff thought for a moment. \"But when you hide, you miss all the fun,\" he said.\nDot ate her fish and thought about what Puff said.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what day was it?",
+       "options": [
+        "Fishing day",
+        "Swimming day",
+        "Birthday"
+       ],
+       "answer": "Fishing day",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Dot stand?",
+       "options": [
+        "At the very back of the line",
+        "At the front of the line",
+        "On a rock"
+       ],
+       "answer": "At the very back of the line",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour were the fish?",
+       "options": [
+        "Silver",
+        "Orange",
+        "Green"
+       ],
+       "answer": "Silver",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many fish did Dot catch?",
+       "options": [
+        "None",
+        "One",
+        "Two"
+       ],
+       "answer": "None",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what sound did Dot's tummy make?",
+       "options": [
+        "Grumble, grumble",
+        "Splash, splash",
+        "Swish, swish"
+       ],
+       "answer": "Grumble, grumble",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many fish did Puff bring?",
+       "options": [
+        "Two",
+        "One",
+        "Five"
+       ],
+       "answer": "Two",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Dot not catch any fish?",
+       "options": [
+        "The fish had swum away",
+        "She was asleep",
+        "The sea was frozen"
+       ],
+       "answer": "The fish had swum away",
+       "accept": [],
+       "hint": "Think about when Dot dived in.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Puff shared his fish with Dot?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Big Snowstorm",
+     "synopsis": "In a snowstorm, the penguins get lost. They can see Dot's orange spots and follow her home.",
+     "text": "One afternoon, the sky turned dark. The wind blew hard. Whoosh!\nA big snowstorm came. Snow was everywhere. Everything was white, white, white.\nThe penguins could not see where to go. \"Where are we?\" they cried. \"Which way is home?\"\nDot knew the way home. But how could the others follow her in all that snow?\nThen a young penguin shouted, \"I can see orange! I can see Dot's spots!\"\nThe black and white penguins were hard to see in the snow. But Dot's bright spots were easy to see.\n\"Follow Dot!\" called the penguins.\nDot walked slowly and carefully. Step, step, step. All the penguins walked behind her.\nAt last, they reached their warm, safe home.\n\"Thank you, Dot!\" they all said. \"Your spots saved us!\"\nFor the first time, Dot felt proud of her spots.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what came in the afternoon?",
+       "options": [
+        "A big snowstorm",
+        "A rainbow",
+        "A big ship"
+       ],
+       "answer": "A big snowstorm",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what sound did the wind make?",
+       "options": [
+        "Whoosh",
+        "Splash",
+        "Grumble"
+       ],
+       "answer": "Whoosh",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what could the penguins not see?",
+       "options": [
+        "The way home",
+        "The sea",
+        "The sun"
+       ],
+       "answer": "The way home",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who knew the way home?",
+       "options": [
+        "Dot",
+        "Puff",
+        "The big penguins"
+       ],
+       "answer": "Dot",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the young penguin see?",
+       "options": [
+        "Orange spots",
+        "A fish",
+        "A light"
+       ],
+       "answer": "Orange spots",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Dot walk?",
+       "options": [
+        "Slowly and carefully",
+        "Very fast",
+        "Backwards"
+       ],
+       "answer": "Slowly and carefully",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why were Dot's spots easy to see?",
+       "options": [
+        "They were bright in the white snow",
+        "They were very small",
+        "They glowed in the dark"
+       ],
+       "answer": "They were bright in the white snow",
+       "accept": [],
+       "hint": "Think about the colour of the snow.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Dot felt proud at the end of the chapter?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Grandpa Flint",
+     "synopsis": "Dot talks with wise old Grandpa Flint, who tells her that her spots are part of who she is.",
+     "text": "The next day, Dot visited Grandpa Flint. He was the oldest penguin on the island.\nGrandpa Flint had a bent beak and a very loud voice.\n\"Grandpa,\" said Dot, \"I used to wish my spots would go away. Now I am not so sure.\"\nGrandpa Flint laughed a big, loud laugh. \"Look at my beak, Dot. It is bent!\"\n\"Does that make you sad?\" asked Dot.\n\"Not one bit,\" said Grandpa. \"My bent beak is part of me. Your spots are part of you.\"\nHe put his flipper around her. \"If we were all the same, the world would be very boring.\"\nDot thought about the snowstorm. She thought about Puff and the little suns.\n\"Being different is not bad,\" said Dot slowly. \"It is just... me.\"\n\"That's right,\" said Grandpa Flint, and he gave her a warm hug.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who did Dot visit?",
+       "options": [
+        "Grandpa Flint",
+        "Puff",
+        "A big fish"
+       ],
+       "answer": "Grandpa Flint",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who was the oldest penguin on the island?",
+       "options": [
+        "Grandpa Flint",
+        "Dot",
+        "Puff"
+       ],
+       "answer": "Grandpa Flint",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was different about Grandpa Flint's beak?",
+       "options": [
+        "It was bent",
+        "It was orange",
+        "It was very long"
+       ],
+       "answer": "It was bent",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what kind of voice did Grandpa Flint have?",
+       "options": [
+        "A very loud voice",
+        "A tiny voice",
+        "A squeaky voice"
+       ],
+       "answer": "A very loud voice",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Grandpa say the world would be if everyone was the same?",
+       "options": [
+        "Very boring",
+        "Very funny",
+        "Very cold"
+       ],
+       "answer": "Very boring",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Grandpa give Dot at the end?",
+       "options": [
+        "A warm hug",
+        "A fish",
+        "A present"
+       ],
+       "answer": "A warm hug",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did Grandpa talk about his bent beak?",
+       "options": [
+        "To show that being different is OK",
+        "To make Dot laugh at him",
+        "Because it hurt"
+       ],
+       "answer": "To show that being different is OK",
+       "accept": [],
+       "hint": "What lesson did he want Dot to learn?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Grandpa Flint is a good friend for Dot to talk to?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: A New Game",
+     "synopsis": "Dot is easy to find in hide-and-seek, so the friends invent a new game where her spots help.",
+     "text": "Puff and the young penguins were playing hide-and-seek.\n\"Can I play?\" asked Dot.\nDot hid behind a big lump of ice. But her orange spots peeped out.\n\"Found you!\" shouted Puff straight away. Everybody laughed, and this time Dot laughed too.\n\"I am not very good at hiding,\" said Dot. \"But I have an idea for a new game!\"\nDot stood on a tall rock. \"I am the lighthouse!\" she said. \"Everyone swims out to sea. When I flap my flippers, swim back to me as fast as you can!\"\nThe penguins swam far away. Dot flapped. Flap, flap! They could all see her bright spots, and they raced back.\n\"This is the best game ever!\" said a young penguin.\nThey called it Lighthouse, and they played it again and again until the sun went down.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what game were the friends playing first?",
+       "options": [
+        "Hide-and-seek",
+        "Football",
+        "Tag"
+       ],
+       "answer": "Hide-and-seek",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where did Dot hide?",
+       "options": [
+        "Behind a big lump of ice",
+        "Under the water",
+        "In a cave"
+       ],
+       "answer": "Behind a big lump of ice",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who found Dot?",
+       "options": [
+        "Puff",
+        "Grandpa Flint",
+        "A young penguin"
+       ],
+       "answer": "Puff",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Dot stand on?",
+       "options": [
+        "A tall rock",
+        "A boat",
+        "A fish"
+       ],
+       "answer": "A tall rock",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what was the name of the new game?",
+       "options": [],
+       "answer": "Lighthouse",
+       "accept": [
+        "lighthouse",
+        "The Lighthouse"
+       ],
+       "hint": "Dot said 'I am the ...!'",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Dot do to tell everyone to swim back?",
+       "options": [
+        "She flapped her flippers",
+        "She sang a song",
+        "She jumped in the sea"
+       ],
+       "answer": "She flapped her flippers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Dot feel when Puff found her?",
+       "options": [
+        "She laughed",
+        "She cried",
+        "She ran away"
+       ],
+       "answer": "She laughed",
+       "accept": [],
+       "hint": "Compare this with how she felt in Chapter 1.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Dot's spots were useful in the new game?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Spot Day",
+     "synopsis": "The penguins hold a Spot Day to celebrate what makes each of them special, and Dot is happy to be herself.",
+     "text": "\"Let's have a party!\" said Puff. \"We can call it Spot Day!\"\nOn Spot Day, everyone had to share one thing that made them different.\nGrandpa Flint showed his bent beak. A young penguin showed that she could hop on one foot.\nAnother penguin sang a funny, squeaky song. Puff showed his one curly whisker.\n\"Everybody is different!\" said Dot in surprise. \"I never noticed before.\"\nThen it was Dot's turn. She stood up tall and puffed out her spotty tummy.\n\"These are my spots,\" she said. \"They are like little suns. I used to hide them. Now I love them.\"\nAll the penguins clapped their flippers. Puff did a happy flip in the water. Splash!\nThat night, Dot looked at her face in the clear water again.\nThis time, she did not wish for anything. She just smiled a big smile.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what was the party called?",
+       "options": [
+        "Spot Day",
+        "Fish Day",
+        "Snow Day"
+       ],
+       "answer": "Spot Day",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, whose idea was the party?",
+       "options": [
+        "Puff's",
+        "Dot's",
+        "Grandpa Flint's"
+       ],
+       "answer": "Puff's",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did everyone have to share?",
+       "options": [
+        "One thing that made them different",
+        "A fish",
+        "A song"
+       ],
+       "answer": "One thing that made them different",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Puff show?",
+       "options": [
+        "His one curly whisker",
+        "His bent beak",
+        "His spots"
+       ],
+       "answer": "His one curly whisker",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did the penguins do after Dot spoke?",
+       "options": [
+        "They clapped their flippers",
+        "They went to sleep",
+        "They swam away"
+       ],
+       "answer": "They clapped their flippers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Dot do when she looked in the water?",
+       "options": [
+        "She smiled a big smile",
+        "She cried",
+        "She made a wish"
+       ],
+       "answer": "She smiled a big smile",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Dot learn at the party?",
+       "options": [
+        "Everybody is different",
+        "Spots wash off",
+        "Fish are tasty"
+       ],
+       "answer": "Everybody is different",
+       "accept": [],
+       "hint": "What did Dot say in surprise?",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Dot did not make a wish at the end of the story?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }

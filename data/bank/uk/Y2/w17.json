@@ -1009,6 +1009,978 @@
      ]
     }
    ]
+  },
+  "ipc": {
+   "topic": "Chocolate: where cacao grows — hot places near the equator",
+   "questions": [
+    {
+     "id": "r1upzox41uhajrl",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What is the equator?",
+     "options": [
+      "An imaginary line around the middle of the Earth",
+      "A river in Africa",
+      "A very tall mountain"
+     ],
+     "answer": "An imaginary line around the middle of the Earth",
+     "accept": [],
+     "hint": "Think about a belt around a ball.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmztzfj1h96u93",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What is a globe?",
+     "options": [
+      "A round model of the Earth",
+      "A flat drawing of a town",
+      "A kind of compass"
+     ],
+     "answer": "A round model of the Earth",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfbbqy41bqvbdv",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "What is the weather usually like in places near the equator?",
+     "options": [
+      "Hot",
+      "Freezing",
+      "Snowy"
+     ],
+     "answer": "Hot",
+     "accept": [],
+     "hint": "The Sun shines strongly there all year.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt1ir70y46y2p",
+     "subject": "ipc",
+     "type": "short",
+     "q": "Chocolate is made from the beans of which plant?",
+     "options": [],
+     "answer": "cacao",
+     "accept": [
+      "cacao tree",
+      "cocoa",
+      "cacao plant",
+      "cocoa tree"
+     ],
+     "hint": "It starts with 'ca…'",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11edlou16lg48i",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Where do cacao trees grow best?",
+     "options": [
+      "In hot, wet places near the equator",
+      "In cold, icy places",
+      "In dry deserts"
+     ],
+     "answer": "In hot, wet places near the equator",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rejk83m1bb3eq8",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which country in Africa grows lots of cacao?",
+     "options": [
+      "Ghana",
+      "Iceland",
+      "Norway"
+     ],
+     "answer": "Ghana",
+     "accept": [],
+     "hint": "Look for the country that is hot all year.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16vxha5f6kba6",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Bahia is a place that grows cacao. Which country is Bahia in?",
+     "options": [
+      "Brazil",
+      "England",
+      "Canada"
+     ],
+     "answer": "Brazil",
+     "accept": [],
+     "hint": "It is the country where São Paulo is too.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rars4iq5atid2",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "On which continent is Ghana?",
+     "options": [
+      "Africa",
+      "Europe",
+      "Asia"
+     ],
+     "answer": "Africa",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tfkgq4179pctm",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "On which continent is Brazil?",
+     "options": [
+      "South America",
+      "Africa",
+      "Europe"
+     ],
+     "answer": "South America",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmej33a3dich8",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "The equator splits the Earth into two halves. What are the halves called?",
+     "options": [
+      "The northern and southern hemispheres",
+      "The hot and cold sides",
+      "The day and night halves"
+     ],
+     "answer": "The northern and southern hemispheres",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1jyuqnb15wctwg",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Why can't cacao trees grow outside in England?",
+     "options": [
+      "It is too cold",
+      "It is too hot",
+      "There is no soil"
+     ],
+     "answer": "It is too cold",
+     "accept": [],
+     "hint": "Cacao trees need warmth all year.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r14owjqe1ghcc3s",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Where do cacao pods grow on the tree?",
+     "options": [
+      "On the trunk and big branches",
+      "Under the ground",
+      "Only on the leaves"
+     ],
+     "answer": "On the trunk and big branches",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10r3o0fgqqi44",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Which of these places is the coldest?",
+     "options": [
+      "The North Pole",
+      "The equator",
+      "Ghana"
+     ],
+     "answer": "The North Pole",
+     "accept": [],
+     "hint": "The poles are the furthest places from the equator.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpuy4wvnw44it",
+     "subject": "ipc",
+     "type": "mc",
+     "q": "Cacao trees like to grow in the shade of taller trees. What kind of forest is hot, wet and full of tall trees?",
+     "options": [
+      "A rainforest",
+      "A pine forest",
+      "A snowy forest"
+     ],
+     "answer": "A rainforest",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kzxazijx7ckn",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Ghana and Bahia are far apart. What is the same about the weather in both places?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about where they are on the globe.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r4u5i4eekiqul",
+     "subject": "ipc",
+     "type": "open",
+     "q": "Imagine you are planting a cacao farm. Would you choose a place near the equator or near the North Pole? Explain why.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "math": {
+   "topic": "The 2 times table: odd and even numbers",
+   "questions": [
+    {
+     "id": "rwanvl81roynld",
+     "subject": "math",
+     "type": "num",
+     "q": "2 × 3 = ?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "Count in twos: 2, 4, …",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rur6pwppw2bsv",
+     "subject": "math",
+     "type": "num",
+     "q": "2 × 5 = ?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ocbavv48pukh",
+     "subject": "math",
+     "type": "num",
+     "q": "7 × 2 = ?",
+     "options": [],
+     "answer": "14",
+     "accept": [],
+     "hint": "Double 7.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16th4pqemwc",
+     "subject": "math",
+     "type": "num",
+     "q": "2 × 10 = ?",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rbpxok91tpemx5",
+     "subject": "math",
+     "type": "num",
+     "q": "What is double 8?",
+     "options": [],
+     "answer": "16",
+     "accept": [],
+     "hint": "Double means 2 lots of.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1bzappmj7ex5a",
+     "subject": "math",
+     "type": "num",
+     "q": "2 × 12 = ?",
+     "options": [],
+     "answer": "24",
+     "accept": [],
+     "hint": "Think of 2 × 10 and 2 × 2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r123sw9x9xwpzc",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which number is even?",
+     "options": [
+      "8",
+      "7",
+      "5",
+      "9"
+     ],
+     "answer": "8",
+     "accept": [],
+     "hint": "Even numbers end in 0, 2, 4, 6 or 8.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r78hr2cfscqld",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which number is odd?",
+     "options": [
+      "13",
+      "12",
+      "14",
+      "20"
+     ],
+     "answer": "13",
+     "accept": [],
+     "hint": "Can it be shared into 2 equal groups?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt0h5c4ri6b83",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which number is a multiple of 2?",
+     "options": [
+      "18",
+      "15",
+      "11",
+      "9"
+     ],
+     "answer": "18",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g2mcxy1m0cm3f",
+     "subject": "math",
+     "type": "num",
+     "q": "Count in twos: 2, 4, 6, 8, ___. What comes next?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1whv4dx2xkvwm",
+     "subject": "math",
+     "type": "num",
+     "q": "There are 9 pairs of socks. How many socks is that?",
+     "options": [],
+     "answer": "18",
+     "accept": [],
+     "hint": "A pair is 2.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rll7hws1cemjvt",
+     "subject": "math",
+     "type": "num",
+     "q": "☐ × 2 = 16. What number goes in the box?",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "How many twos make 16?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1w7cbbj1re1udw",
+     "subject": "math",
+     "type": "num",
+     "q": "Share 12 sweets equally between 2 children. How many does each child get?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsldp901o6jts0",
+     "subject": "math",
+     "type": "mc",
+     "q": "Is 15 odd or even?",
+     "options": [
+      "Odd",
+      "Even"
+     ],
+     "answer": "Odd",
+     "accept": [],
+     "hint": "Look at the last digit.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m877et1uhcugr",
+     "subject": "math",
+     "type": "mc",
+     "q": "Ben says, 'All multiples of 2 are even.' Is he right?",
+     "options": [
+      "Yes",
+      "No"
+     ],
+     "answer": "Yes",
+     "accept": [],
+     "hint": "List some multiples of 2 and check.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rixi94nrjimm",
+     "subject": "math",
+     "type": "open",
+     "q": "Mia has 11 stickers. Can she share them equally with her brother? Explain how you know.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Is 11 odd or even?",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Sinônimos e antônimos",
+   "questions": [
+    {
+     "id": "rtkmhrdnalj2z",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que é um sinônimo?",
+     "options": [
+      "Uma palavra de sentido parecido",
+      "Uma palavra de sentido oposto",
+      "Uma palavra muito comprida"
+     ],
+     "answer": "Uma palavra de sentido parecido",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fodp191w7fnrg",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que é um antônimo?",
+     "options": [
+      "Uma palavra de sentido oposto",
+      "Uma palavra de sentido parecido",
+      "O nome de uma pessoa"
+     ],
+     "answer": "Uma palavra de sentido oposto",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xgvrf21x25cem",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra é sinônimo de \"feliz\"?",
+     "options": [
+      "contente",
+      "triste",
+      "bravo"
+     ],
+     "answer": "contente",
+     "accept": [],
+     "hint": "Qual palavra quer dizer quase a mesma coisa?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oc4hfz1j7vem",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra é sinônimo de \"bonito\"?",
+     "options": [
+      "lindo",
+      "feio",
+      "sujo"
+     ],
+     "answer": "lindo",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18jl1tzfpuzcg",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra é sinônimo de \"rápido\"?",
+     "options": [
+      "veloz",
+      "lento",
+      "pesado"
+     ],
+     "answer": "veloz",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hbfe157oat9j",
+     "subject": "pt",
+     "type": "short",
+     "q": "Escreva o antônimo de \"quente\".",
+     "options": [],
+     "answer": "frio",
+     "accept": [
+      "gelado"
+     ],
+     "hint": "Pense no tempo de inverno.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nimqceydgofx",
+     "subject": "pt",
+     "type": "short",
+     "q": "Escreva o antônimo de \"dia\".",
+     "options": [],
+     "answer": "noite",
+     "accept": [],
+     "hint": "Quando a Lua aparece?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd7ztowdwvt87",
+     "subject": "pt",
+     "type": "short",
+     "q": "Escreva o antônimo de \"alto\".",
+     "options": [],
+     "answer": "baixo",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgbvw8efq2w7o",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é o antônimo de \"cheio\"?",
+     "options": [
+      "vazio",
+      "lotado",
+      "grande"
+     ],
+     "answer": "vazio",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rmth2su1t67fwi",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual é o antônimo de \"abrir\"?",
+     "options": [
+      "fechar",
+      "destrancar",
+      "entrar"
+     ],
+     "answer": "fechar",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6r059615cmd3h",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"O cachorro é muito esperto\", qual palavra pode trocar \"esperto\" sem mudar o sentido?",
+     "options": [
+      "inteligente",
+      "bobo",
+      "preguiçoso"
+     ],
+     "answer": "inteligente",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1c69scynukxj1",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"A sala está limpa\", qual palavra deixa a frase com sentido oposto?",
+     "options": [
+      "suja",
+      "arrumada",
+      "bonita"
+     ],
+     "answer": "suja",
+     "accept": [],
+     "hint": "Procure o contrário de limpa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1h1ajhov3n3vi",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual par de palavras é de sinônimos?",
+     "options": [
+      "casa e lar",
+      "grande e pequeno",
+      "subir e descer"
+     ],
+     "answer": "casa e lar",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhccpp11y2ta50",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual par de palavras é de antônimos?",
+     "options": [
+      "entrar e sair",
+      "começar e iniciar",
+      "falar e dizer"
+     ],
+     "answer": "entrar e sair",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g6hh9pu9ixbs",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete com o antônimo: \"A tartaruga é lenta, mas o coelho é ___.\"",
+     "options": [
+      "rápido",
+      "devagar",
+      "calmo"
+     ],
+     "answer": "rápido",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rn5hdwx1f0ws65",
+     "subject": "pt",
+     "type": "open",
+     "q": "Escreva uma frase usando a palavra \"alegre\" e outra frase usando um antônimo de \"alegre\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Um antônimo de alegre pode ser triste.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Bilhetes, convites e avisos da escola",
+   "questions": [
+    {
+     "id": "r1wpszygb3if5m",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Para que serve um convite?",
+     "options": [
+      "Para chamar alguém para uma festa ou evento",
+      "Para contar uma história",
+      "Para ensinar uma receita"
+     ],
+     "answer": "Para chamar alguém para uma festa ou evento",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15q61yc72qvt",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Para que serve um aviso da escola?",
+     "options": [
+      "Para informar algo importante",
+      "Para contar uma piada",
+      "Para chamar para brincar"
+     ],
+     "answer": "Para informar algo importante",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rx3otpwomqm0n",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Um bilhete é um texto...",
+     "options": [
+      "curto, com um recado para alguém",
+      "muito longo, com capítulos",
+      "com rimas, como um poema"
+     ],
+     "answer": "curto, com um recado para alguém",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pn1p281eskzxf",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o convite: \"Venha para a festa de aniversário da Lia! Dia 10 de maio, às 15 horas, no salão do prédio. Traga sua alegria!\" Que tipo de texto é esse?",
+     "options": [
+      "Convite",
+      "Aviso",
+      "Receita"
+     ],
+     "answer": "Convite",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pbjvkknegkwj",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o convite: \"Venha para a festa de aniversário da Lia! Dia 10 de maio, às 15 horas, no salão do prédio. Traga sua alegria!\" Qual é o dia da festa?",
+     "options": [
+      "10 de maio",
+      "15 de maio",
+      "10 de junho"
+     ],
+     "answer": "10 de maio",
+     "accept": [],
+     "hint": "Procure a data no texto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16b97o01mtbhew",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o convite: \"Venha para a festa de aniversário da Lia! Dia 10 de maio, às 15 horas, no salão do prédio. Traga sua alegria!\" A que horas começa a festa?",
+     "options": [
+      "Às 15 horas",
+      "Às 10 horas",
+      "Às 18 horas"
+     ],
+     "answer": "Às 15 horas",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5nx7kk11xshel",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o convite: \"Venha para a festa de aniversário da Lia! Dia 10 de maio, às 15 horas, no salão do prédio. Traga sua alegria!\" Onde vai ser a festa?",
+     "options": [
+      "No salão do prédio",
+      "Na escola",
+      "No parque"
+     ],
+     "answer": "No salão do prédio",
+     "accept": [],
+     "hint": "Procure a palavra que diz o local.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18fytelvq0cfh",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o aviso: \"Atenção, pais! Na sexta-feira, dia 6, não haverá aula por causa da reunião de professores.\" Para quem é esse aviso?",
+     "options": [
+      "Para os pais",
+      "Para os professores",
+      "Para o diretor"
+     ],
+     "answer": "Para os pais",
+     "accept": [],
+     "hint": "Veja a primeira palavra depois de Atenção.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r57l9lt13uzbzu",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o aviso: \"Atenção, pais! Na sexta-feira, dia 6, não haverá aula por causa da reunião de professores.\" Por que não haverá aula na sexta?",
+     "options": [
+      "Por causa da reunião de professores",
+      "Porque é feriado",
+      "Porque vai chover"
+     ],
+     "answer": "Por causa da reunião de professores",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv7xbls1um8d25",
+     "subject": "pt_leit",
+     "type": "num",
+     "q": "Leia o aviso: \"Atenção, pais! Na sexta-feira, dia 6, não haverá aula por causa da reunião de professores.\" Qual é o número do dia da sexta-feira?",
+     "options": [],
+     "answer": "6",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rguv8ve1dw4p5g",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o bilhete: \"Mãe, fui jogar bola na casa do Davi. Volto às 18 horas. Beijos, Teo.\" Quem escreveu o bilhete?",
+     "options": [
+      "Teo",
+      "A mãe",
+      "Davi"
+     ],
+     "answer": "Teo",
+     "accept": [],
+     "hint": "Quem assina no final?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rakf6qh7a0buy",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o bilhete: \"Mãe, fui jogar bola na casa do Davi. Volto às 18 horas. Beijos, Teo.\" Para quem é o bilhete?",
+     "options": [
+      "Para a mãe",
+      "Para o Davi",
+      "Para a professora"
+     ],
+     "answer": "Para a mãe",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1a2wtxm15yxah1",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o bilhete: \"Mãe, fui jogar bola na casa do Davi. Volto às 18 horas. Beijos, Teo.\" Onde Teo foi?",
+     "options": [
+      "Na casa do Davi",
+      "Na escola",
+      "No mercado"
+     ],
+     "answer": "Na casa do Davi",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpzj13053s60m",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Leia o bilhete: \"Mãe, fui jogar bola na casa do Davi. Volto às 18 horas. Beijos, Teo.\" A que horas Teo vai voltar?",
+     "options": [
+      "Às 18 horas",
+      "Às 15 horas",
+      "Às 10 horas"
+     ],
+     "answer": "Às 18 horas",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcudeukukgcpe",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que um convite precisa ter para as pessoas chegarem na hora certa?",
+     "options": [
+      "Data, hora e local",
+      "Só um desenho bonito",
+      "O nome de um livro"
+     ],
+     "answer": "Data, hora e local",
+     "accept": [],
+     "hint": "",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6d73u5dp7oo3",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Escreva um bilhete curto para um amigo, contando onde você vai estar no sábado.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Lembre de dizer para quem é, o recado e quem escreveu.",
+     "text": "",
+     "errors": []
+    }
+   ]
   }
  },
  "books": []
