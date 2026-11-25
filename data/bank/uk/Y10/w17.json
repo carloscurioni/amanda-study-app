@@ -5983,6 +5983,895 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "The Weaver's Diary",
+   "premise": "In the summer of 1945, sixteen-year-old usher Nora reads her mother's diary from 1912 and writes a play that makes a post-war audience see the past, and themselves, differently.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Usher and the Diary",
+     "synopsis": "In July 1945, sixteen-year-old Nora works as an usher while the town waits for the election result. Her mother gives her a diary she wrote in 1912.",
+     "text": "Kelsworth smelled of coal smoke and wet stone that July of 1945, but for once the streets felt hopeful. The war in Europe had ended in May, and posters for the general election still peeled from the walls of the Lyric Theatre, where sixteen-year-old Nora Hale worked as an usher.\nEvery evening she showed people to their seats with a torch and a polite smile. She liked watching the audience more than the plays. There were soldiers home on leave, still in uniform; women who had built aeroplane parts in the factories; old men who complained that the tea was weak because sugar was rationed. Everyone, Nora thought, seemed to be waiting for something.\n\"They're waiting for the result,\" said Mr Penrose, the manager, as he counted ticket stubs. \"The votes of the lads still serving overseas have to come home before they can count them all. Three weeks of waiting! Mind you, after six years of war, three weeks is nothing.\"\n\"What do you think will happen?\" Nora asked.\nMr Penrose shrugged. \"People want things to be different this time. After the last war they were promised homes fit for heroes. Plenty of them got a cold room and no job instead. They won't be fooled twice.\"\nWhen Nora got home, her mother was sitting at the kitchen table with a biscuit tin full of papers. Edith Hale had worked at Thorne's Mill since she was a girl. Her hands were rough and quick, and she rarely talked about the past.\n\"I was clearing the cupboard,\" she said, pushing a small book with a cracked green cover across the table. \"That's mine. I wrote it the year I was fifteen. Nineteen twelve.\"\nNora opened it carefully. The handwriting was round and neat, and the first page said: The Diary of Edith, aged 15. KEEP OUT! She laughed. \"Can I read it?\"\nHer mother hesitated, then nodded. \"You're always telling me you want to write plays. Well, here's a world you've never seen. No votes for women, no pension worth the name, no doctor unless you could pay. People said that was just how things were.\" She tapped the cover. \"Read it, and then you tell me whether things have really changed.\"\nThat night Nora sat on her bed with the diary on her knees. Through the thin wall she could hear her brother Tom, back from the army only a week, coughing in his sleep. Outside, a lorry rumbled past a poster that said, in bold letters, A FAIRER FUTURE FOR ALL.\nNora turned to the first entry. The date at the top was the tenth of April, 1912.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what job does Nora do at the Lyric Theatre?",
+       "options": [
+        "Usher",
+        "Actor",
+        "Cleaner",
+        "Ticket seller"
+       ],
+       "answer": "Usher",
+       "accept": [],
+       "hint": "Think about the torch she carries.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, in which month of 1945 had the war in Europe ended?",
+       "options": [],
+       "answer": "May",
+       "accept": [
+        "in May"
+       ],
+       "hint": "Look at the first paragraph.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why do people have to wait three weeks for the election result?",
+       "options": [
+        "Votes from soldiers overseas had to be brought home",
+        "The theatre was closed",
+        "The posters had not been printed",
+        "Nobody had voted yet"
+       ],
+       "answer": "Votes from soldiers overseas had to be brought home",
+       "accept": [],
+       "hint": "Mr Penrose explains this while counting ticket stubs.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Mr Penrose say people were promised after the last war?",
+       "options": [
+        "Homes fit for heroes",
+        "Free theatre tickets",
+        "More sugar",
+        "A new railway"
+       ],
+       "answer": "Homes fit for heroes",
+       "accept": [],
+       "hint": "He contrasts it with a cold room and no job.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, in which year did Edith write her diary?",
+       "options": [],
+       "answer": "1912",
+       "accept": [
+        "nineteen twelve"
+       ],
+       "hint": "She was fifteen at the time.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which of these does Edith say did not exist for her in 1912?",
+       "options": [
+        "Votes for women",
+        "Mills",
+        "Rent",
+        "Diaries"
+       ],
+       "answer": "Votes for women",
+       "accept": [],
+       "hint": "Listen to her list of what was missing.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the poster suggest about the mood of 1945?",
+       "options": [
+        "Many people hoped for a fairer society",
+        "People wanted the war to continue",
+        "Nobody cared about the election",
+        "People wanted to return to 1912"
+       ],
+       "answer": "Many people hoped for a fairer society",
+       "accept": [],
+       "hint": "Read the poster's words carefully.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Edith asks Nora to decide for herself whether things have really changed?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what Edith wants Nora to learn from the diary.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Unsinkable Dinner",
+     "synopsis": "Edith's diary describes serving at a mill owner's dinner party in April 1912, where he boasts about an unsinkable ship and a peaceful future.",
+     "text": "10th April 1912. Today I did not go to the mill. Mrs Briggs, the housekeeper at the big house on Hill Road, needed extra girls to carry plates for Mr Thorne's dinner party, and she pays a shilling more than the weaving shed. Mother said I must go, because the rent is due and Father's chest is bad again.\nI have never seen so many candles. The dining room had silver forks in rows, and the ladies wore dresses that would cost more than our whole street earns in a month. I had to stand by the wall in a borrowed apron and not look at anybody. Mrs Briggs says a good servant is like furniture: useful and silent.\nMr Thorne talked the whole evening. He is a big man with a gold watch chain, and he likes the sound of his own voice better than any music. He said the great new liner had sailed from Southampton today, and that she is so well built she can never sink. \"That is what modern industry can do, gentlemen,\" he said. \"Unsinkable.\" Everybody clapped.\nThen a guest asked about the trouble in Europe, and Mr Thorne laughed. \"War? Nonsense. Nobody sensible wants a war. Trade will keep us all at peace.\" He raised his glass. \"The future belongs to men who work hard and mind their own business.\"\nI thought: his business is the mill, and the mill is full of people. Is it really only his own business, then? But furniture does not ask questions, so I took the soup bowls away.\nLater, in the kitchen, Mrs Briggs gave us the leftover bread. Cook said Mr Thorne is putting the weavers' piece rates down from next month, so that his profits stay up. Annie from the carding room started to cry, because she has three little brothers. Mrs Briggs told her to dry her eyes, as crying never paid any rent.\nMiss Clara Thorne came into the kitchen to fetch her shawl. She is my age exactly. She looked at Annie and then at me, as if she had never thought that the girls who carried her plates had families of their own. She did not say anything, but she left a whole cake on the table when she went.\nI walked home at midnight. The mill chimney was black against the stars. I am too tired to write more, but I want to remember Mr Thorne's word. Unsinkable. It sounded so certain.\nNora put the diary down. She knew, as everyone in 1945 knew, what had happened to that liner only five days later. She knew, too, that just two years after that dinner the whole of Europe had gone to war. The man with the gold chain had been completely sure of himself and completely wrong.\nFor the first time, Nora felt she was reading something that was both a diary and a play. The people inside it could not see what she could see.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Edith work at the dinner party instead of at the mill?",
+       "options": [
+        "It paid more and the rent was due",
+        "She had been dismissed from the mill",
+        "She wanted to see the dresses",
+        "Mr Thorne invited her as a guest"
+       ],
+       "answer": "It paid more and the rent was due",
+       "accept": [],
+       "hint": "Look at what Mrs Briggs pays and what Mother says.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, from which port does Mr Thorne say the new liner sailed?",
+       "options": [],
+       "answer": "Southampton",
+       "accept": [],
+       "hint": "It is named in his speech about the ship.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what word does Mr Thorne use to describe the liner?",
+       "options": [
+        "Unsinkable",
+        "Beautiful",
+        "Expensive",
+        "Dangerous"
+       ],
+       "answer": "Unsinkable",
+       "accept": [],
+       "hint": "Edith wants to remember this word.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Mrs Briggs compare a good servant to?",
+       "options": [
+        "Furniture",
+        "A clock",
+        "A candle",
+        "A dog"
+       ],
+       "answer": "Furniture",
+       "accept": [],
+       "hint": "She says it is 'useful and silent'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what change is Mr Thorne planning for the weavers?",
+       "options": [
+        "Lower piece rates",
+        "A longer holiday",
+        "A new canteen",
+        "Higher wages"
+       ],
+       "answer": "Lower piece rates",
+       "accept": [],
+       "hint": "Cook mentions it in the kitchen.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Clara leaving a cake on the table suggest about her?",
+       "options": [
+        "She is beginning to notice the servants' lives",
+        "She does not like cake",
+        "She wants Edith to lose her job",
+        "She is angry with Mrs Briggs"
+       ],
+       "answer": "She is beginning to notice the servants' lives",
+       "accept": [],
+       "hint": "Think about how she looks at Annie.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Mr Thorne's speech create dramatic irony for Nora?",
+       "options": [
+        "She knows his confident predictions turned out to be wrong",
+        "She thinks he is telling a joke",
+        "She has met him at the theatre",
+        "She cannot understand his words"
+       ],
+       "answer": "She knows his confident predictions turned out to be wrong",
+       "accept": [],
+       "hint": "Think about what happened in 1912 and 1914.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Edith asks herself whether the mill is really only Mr Thorne's 'own business'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about who works in the mill.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: What the Audience Knows",
+     "synopsis": "Nora talks to her brother about dramatic irony and the hopes of returning soldiers. When the election result arrives, she starts planning a play set in 1912 for a 1945 audience.",
+     "text": "The next afternoon Nora found Tom on the back step, polishing his boots out of habit even though he no longer needed to.\n\"Listen to this,\" she said, and read him Mr Thorne's speech about the unsinkable liner and the peace that trade would bring.\nTom gave a short laugh. \"He'd have made a fine general. Every officer I met was certain about something, right up until it went wrong.\"\n\"That's what I keep thinking about,\" Nora said. \"When I read it, I know more than he does. I know about the ship. I know about 1914. He sounds so clever and he's so blind.\"\n\"There's a word for that, isn't there? You learnt it at school.\"\n\"Dramatic irony,\" Nora said. \"When the audience knows something the characters don't.\"\nTom put the boot down. \"Well, the whole country is the audience now. Everybody my age has seen what happens when men like that are left in charge of everything. My sergeant's father worked down a pit in 1912. Twelve hours underground and nothing at all when he got hurt. The lads in my unit used to talk at night about what they'd do differently. Nobody wanted to come home to the same old thing.\"\nNora thought about the people she showed to their seats: the factory women who had done men's jobs and been proud of it, the soldiers who had shared everything they had with strangers. Six years of war had pushed rich and poor into the same shelters and the same ration queues. Perhaps that had taught them something that 1912 never learned.\nOn the twenty-sixth of July the result was announced at last. Mr Penrose turned the theatre wireless up loud in the foyer, and the cleaners stopped mopping to listen. The country had voted for a new government in a landslide, a government that promised a free health service, new homes and help for people who were old, sick or out of work. Some people in the foyer cheered. One old gentleman in a bowler hat muttered that it would all end in ruin, and stalked out.\nThat night Nora took her school exercise book from the drawer and wrote at the top of a clean page: A Play Set in 1912, for People Living in 1945.\nUnderneath she wrote three rules for herself. The characters must not know what is coming. The audience must know. And the audience must leave the theatre asking what they are going to do about it.\nHer mother looked over her shoulder. \"You're going to put Mr Thorne on a stage?\"\n\"Not him exactly,\" said Nora. \"Someone like him. Someone who is sure he only has to look after himself.\"\nEdith was quiet for a moment. Then she said, \"You'd better read the rest of the diary first. Especially the part about Lily.\"",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what is Tom doing when Nora finds him?",
+       "options": [
+        "Polishing his boots",
+        "Reading a newspaper",
+        "Mending a fence",
+        "Writing a letter"
+       ],
+       "answer": "Polishing his boots",
+       "accept": [],
+       "hint": "He does it out of habit from the army.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what term does Nora use for when the audience knows more than the characters?",
+       "options": [],
+       "answer": "dramatic irony",
+       "accept": [
+        "irony"
+       ],
+       "hint": "She learnt it at school.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what did the men in Tom's unit talk about at night?",
+       "options": [
+        "Not going back to the old way of life",
+        "Becoming generals",
+        "Moving to another country",
+        "Buying new boots"
+       ],
+       "answer": "Not going back to the old way of life",
+       "accept": [],
+       "hint": "Tom says nobody wanted 'the same old thing'.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, on what day of July is the election result announced?",
+       "options": [],
+       "answer": "26th",
+       "accept": [
+        "26",
+        "twenty-sixth",
+        "the twenty-sixth",
+        "26 July",
+        "26th July"
+       ],
+       "hint": "Look at the paragraph about the wireless.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which promise of the new government is mentioned?",
+       "options": [
+        "A free health service",
+        "Cheaper theatre tickets",
+        "A new king",
+        "An end to all taxes"
+       ],
+       "answer": "A free health service",
+       "accept": [],
+       "hint": "Read what the wireless announces.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Nora think the war changed the way rich and poor lived?",
+       "options": [
+        "It put them in the same shelters and ration queues",
+        "It made the rich even richer",
+        "It kept them completely apart",
+        "It made everyone move to the country"
+       ],
+       "answer": "It put them in the same shelters and ration queues",
+       "accept": [],
+       "hint": "Think about shared experiences during the war.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, which of these is one of Nora's three rules for her play?",
+       "options": [
+        "The characters must not know what is coming",
+        "The play must be very short",
+        "Everyone in the play must be rich",
+        "The play must have a happy ending"
+       ],
+       "answer": "The characters must not know what is coming",
+       "accept": [],
+       "hint": "Look at what she writes under the title.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Nora wants her audience to leave 'asking what they are going to do about it'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what a 1945 audience could still change.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Girl Who Asked",
+     "synopsis": "The diary tells how Edith's friend Lily asked for fair pay and was dismissed, and how hard life was for poor workers and women in 1912.",
+     "text": "14th May 1912. Lily Marsh is my best friend in the whole mill. She can mend a broken thread faster than anyone, and she sings under her breath so the overlooker won't hear. Today she did something brave, or something foolish. I still do not know which.\nThe new piece rates were pinned up on the mill gate this morning, just as Cook had said. For the same cloth we will now get less money. The women in the weaving shed stood in front of the notice and nobody spoke. Then Lily said, loud enough for everyone to hear, \"We should ask for the old rate back. All of us together.\"\nBy dinner time, half the shed had agreed. Lily went with two other girls to the office to speak to Mr Thorne. They were gone only ten minutes. When they came back, the other two were crying and Lily's face was white.\n\"He says we are lucky to have work at all,\" she told me. \"He says if we don't like it, there are plenty of girls who will take our places. And he has finished me. I'm not to come back tomorrow.\"\nThe other two girls kept their jobs because they said sorry. Lily would not say sorry. She said she had only asked for what was fair.\n20th May 1912. Lily has been to every mill in Kelsworth, and none of them will take her. Her mother thinks Mr Thorne has spoken to the other owners. If you are ill or out of work there is very little help, only the parish or the charity ladies, who ask you a hundred questions and make you feel like a thief before they give you anything.\nIn the market square on Saturday there was a woman selling a newspaper about votes for women. Some men threw orange peel at her. One shouted that women should stay in the kitchen where they belonged. Lily bought a paper with her last penny. \"If we had the vote,\" she said, \"men like Mr Thorne would have to listen to us.\" I said that we are only fifteen, and girls, and poor, so nobody has to listen to us at all.\n\"That's exactly what I mean,\" said Lily.\n2nd June 1912. Lily has gone to her aunt's in another town to look for work in service. She left me her ribbon, and I tied it inside the cover of this diary.\nAt the mill the new rates are just the way things are now, and nobody talks about them. But I keep thinking of the notice on the gate. Mr Thorne did not lose one penny when he dismissed Lily. He gained some. It is as if he pulled the first link of a chain, but he will never see the end of it.\nNora closed the diary and sat very still. She had always thought of history as kings and battles. Now history had a face: a girl with a ribbon, a notice on a gate, and a man who would never think of her again.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, where are the new piece rates pinned up?",
+       "options": [
+        "On the mill gate",
+        "In the church",
+        "At the theatre",
+        "In Mr Thorne's dining room"
+       ],
+       "answer": "On the mill gate",
+       "accept": [],
+       "hint": "The women stand in front of the notice.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Lily suggest the women should do?",
+       "options": [
+        "Ask for the old rate back, all together",
+        "Leave the mill at once",
+        "Write to the newspaper",
+        "Work longer hours"
+       ],
+       "answer": "Ask for the old rate back, all together",
+       "accept": [],
+       "hint": "Read what she says loudly in the weaving shed.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, how many other girls go with Lily to the office?",
+       "options": [],
+       "answer": "two",
+       "accept": [
+        "2"
+       ],
+       "hint": "Count the girls who come back crying.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why do the other girls keep their jobs?",
+       "options": [
+        "They said sorry",
+        "They were Mr Thorne's relatives",
+        "They worked faster than Lily",
+        "They promised to leave town"
+       ],
+       "answer": "They said sorry",
+       "accept": [],
+       "hint": "Compare them with Lily.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why can Lily not find work at other mills, according to her mother?",
+       "options": [
+        "Mr Thorne may have spoken to the other owners",
+        "There are no other mills in Kelsworth",
+        "Lily is too young to work",
+        "The other mills have closed"
+       ],
+       "answer": "Mr Thorne may have spoken to the other owners",
+       "accept": [],
+       "hint": "Look at the entry for 20th May.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what does Lily buy with her last penny?",
+       "options": [],
+       "answer": "a newspaper",
+       "accept": [
+        "newspaper",
+        "a paper",
+        "paper"
+       ],
+       "hint": "It is sold in the market square.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Edith's image of the chain suggest?",
+       "options": [
+        "One person's action can have consequences he never sees",
+        "Mr Thorne owns many chains",
+        "The mill gate is locked with a chain",
+        "Lily wears a chain necklace"
+       ],
+       "answer": "One person's action can have consequences he never sees",
+       "accept": [],
+       "hint": "Think about what follows from Lily's dismissal.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Lily refuses to say sorry?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what she believes she asked for.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Two Audiences",
+     "synopsis": "Nora drafts her play and learns from the theatre manager how a 1945 audience will see it. Her mother says the ending is too easy.",
+     "text": "By the middle of August Nora had filled half her exercise book. She wrote in the theatre during the long middle act of the evening show, crouched on the stairs with her torch.\nHer play took place on one night only: the night of a dinner party in April 1912. There was a rich mill owner called Mr Ashby, who was not exactly Mr Thorne but sounded very like him. There was his wife, who thought servants were a kind of weather, always there and never worth mentioning. There was his daughter, Rose. And there was a maid called Bess, who carried plates and said almost nothing until the end.\n\"Let me see,\" said Mr Penrose one evening, holding out his hand. Nora gave him the book nervously. He read standing up, under the foyer light, and now and then made a noise in his throat that might have been a laugh.\n\"This line,\" he said at last. \"'Mark my words, there will be no war, and that ship cannot sink.' You've put both in the same sentence.\"\n\"Is it too much?\"\n\"It's wonderful. The audience will groan. They'll know he's a fool from the first scene. And then, here's the trick: they'll start to wonder what else he's wrong about.\" He tapped the page. \"Remember who'll be sitting in those seats. People who lived through one war as children and another as grown-ups. People who remember the hungry years in between, when the mills closed and men queued for work that wasn't there. They don't need a lecture. They need to recognise something.\"\n\"Recognise what?\"\n\"Themselves. And the people they used to be. The ones who said, that's just how things are.\"\nNora thought about that all the way home. An audience in 1912, she realised, would have seen Mr Ashby as a respectable gentleman giving sensible advice. An audience in 1945 would see a man walking cheerfully towards a cliff. The words were the same; only the audience had changed.\nMr Penrose had offered her the church hall on the last Saturday of September. The Lyric's actors would read the parts for nothing, he said, because they were tired of doing comedies.\nHer mother read the draft at the kitchen table that night, a cup of tea going cold beside her. When she reached the end, she frowned.\n\"Your Bess tells Mr Ashby he's a wicked man and walks out,\" she said. \"Then everyone feels better.\"\n\"Isn't that good?\"\n\"It's too easy. In real life the Mr Ashbys never heard what we thought of them. And it wasn't one wicked man, Nora. It was all of us agreeing not to ask questions. The customers who wanted cheap cloth, the shopkeepers who wouldn't give credit, and me, keeping my head down so I wouldn't lose my place like Lily did.\"\nNora felt her cheeks go hot. \"Then how should it end?\"\nEdith picked up the diary and turned to the last pages. \"Read about Miss Clara first,\" she said. \"She's the one who surprised me.\"",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, where does Nora write her play during the evening show?",
+       "options": [
+        "On the theatre stairs",
+        "On the stage",
+        "In the church hall",
+        "At the mill"
+       ],
+       "answer": "On the theatre stairs",
+       "accept": [],
+       "hint": "She uses her torch to see.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how long does the action of Nora's play last?",
+       "options": [
+        "One night",
+        "One week",
+        "One year",
+        "Many years"
+       ],
+       "answer": "One night",
+       "accept": [],
+       "hint": "Think about the dinner party.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what is the name of the maid in Nora's play?",
+       "options": [],
+       "answer": "Bess",
+       "accept": [],
+       "hint": "She says almost nothing until the end.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Mr Penrose like the line about the war and the ship?",
+       "options": [
+        "The audience will know Mr Ashby is wrong",
+        "It is the funniest joke in the play",
+        "It is very short",
+        "It is true"
+       ],
+       "answer": "The audience will know Mr Ashby is wrong",
+       "accept": [],
+       "hint": "Remember what Nora learnt about dramatic irony.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Mr Penrose say the audience needs?",
+       "options": [
+        "To recognise themselves",
+        "A long lecture",
+        "More comedies",
+        "Cheaper seats"
+       ],
+       "answer": "To recognise themselves",
+       "accept": [],
+       "hint": "He says they do not need a lecture.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Nora think a 1912 audience would have seen Mr Ashby?",
+       "options": [
+        "As a respectable gentleman giving sensible advice",
+        "As a fool walking towards a cliff",
+        "As a dangerous criminal",
+        "As a poor mill worker"
+       ],
+       "answer": "As a respectable gentleman giving sensible advice",
+       "accept": [],
+       "hint": "Compare the two audiences she imagines.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Edith think the ending is too easy?",
+       "options": [
+        "It blames one man instead of everyone who kept quiet",
+        "It is too long",
+        "It has too many characters",
+        "It is set in the wrong year"
+       ],
+       "answer": "It blames one man instead of everyone who kept quiet",
+       "accept": [],
+       "hint": "Listen to who she says agreed not to ask questions.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Edith includes herself in the list of people who kept quiet?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about her fear of losing her job.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Threads, Not Bricks",
+     "synopsis": "In the last diary entry, the mill owner's daughter visits Edith's home and admits she no longer agrees with her father. Nora rethinks her ending.",
+     "text": "3rd October 1912. Something strange happened today. Miss Clara Thorne came down our street. She had left her carriage at the corner and was walking in her good boots through the puddles, with her maid trotting behind holding an umbrella.\nShe knocked on our door. Mother nearly dropped the kettle. Miss Clara asked if I was the girl who had worked at the dinner party in April, and if I knew a girl called Lily Marsh.\nI said yes, Lily was my friend, and she had been dismissed for asking for the old rate.\nMiss Clara sat down on our only good chair. She said she had heard her father talking about \"that troublesome Marsh girl\" and laughing that no one in the town would employ her now. She said she had not been able to stop thinking about it.\n\"I asked him why he did it,\" she said. \"He told me it was business, and that young ladies should not concern themselves with business. He said a man has to look after himself and his own family, and if everybody did that, everything would be fine.\"\n\"Do you think that's true, miss?\" I asked. I don't know where I found the courage.\nShe looked round our kitchen: the damp patch on the wall, Father's medicine bottle, the one lamp. \"I used to,\" she said. \"I don't think I do now. The dress I wore that night was made from cloth that girls like Lily wove. I never once thought about them. And yet they were part of my evening as much as the candles were.\"\nBefore she left she gave Mother an envelope with Lily's new address in it. She had found it out from Mrs Briggs. She said she was going to write to Lily, and that she was sorry.\n\"It is a little bit everyone's fault,\" she said at the door. \"That's what I've worked out. Father thinks every person is separate, like the bricks in a wall. But we're more like the threads in cloth. Pull one and the whole piece moves.\"\nAfter she had gone, Mother said, \"Mark my words, that one will be in trouble with her father.\" I think Mother is probably right. But I also think that Miss Clara is younger than her father in more than years. She can still change her mind. He never will.\nI have written to Lily too. I told her that somebody up on Hill Road said sorry.\nNora read the entry twice, then a third time. Her mother had said the ending was too easy, and now she understood why. The important moment was not a servant shouting at a rich man. It was a young person, someone who had everything, realising that her comfortable life was stitched together from other people's lives.\nShe took out her pencil and crossed out the last two pages of her play.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, who comes to visit Edith's house?",
+       "options": [
+        "Clara Thorne",
+        "Mr Thorne",
+        "Mrs Briggs",
+        "Lily Marsh"
+       ],
+       "answer": "Clara Thorne",
+       "accept": [],
+       "hint": "She leaves her carriage at the corner.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, whose new address is in the envelope Clara gives to Edith's mother?",
+       "options": [],
+       "answer": "Lily's",
+       "accept": [
+        "Lily",
+        "Lily Marsh",
+        "Lily Marsh's"
+       ],
+       "hint": "Clara found it out from Mrs Briggs.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what did Mr Thorne tell Clara that young ladies should not concern themselves with?",
+       "options": [
+        "Business",
+        "Music",
+        "Dresses",
+        "Cooking"
+       ],
+       "answer": "Business",
+       "accept": [],
+       "hint": "It is the reason he gave for dismissing Lily.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Clara notice in Edith's kitchen?",
+       "options": [
+        "A damp patch, a medicine bottle and one lamp",
+        "Silver forks and candles",
+        "A piano and a painting",
+        "A new carpet"
+       ],
+       "answer": "A damp patch, a medicine bottle and one lamp",
+       "accept": [],
+       "hint": "She looks round the room before answering.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Clara say people are more like?",
+       "options": [
+        "Threads in cloth",
+        "Bricks in a wall",
+        "Candles on a table",
+        "Stars in the sky"
+       ],
+       "answer": "Threads in cloth",
+       "accept": [],
+       "hint": "Think about what happens when you pull one.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does Clara's father see people, in her words?",
+       "options": [
+        "As separate, like bricks in a wall",
+        "As one big family",
+        "As threads in cloth",
+        "As friends"
+       ],
+       "answer": "As separate, like bricks in a wall",
+       "accept": [],
+       "hint": "It is the opposite of Clara's image.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Edith mean when she says Clara is 'younger than her father in more than years'?",
+       "options": [
+        "Clara can still change her mind",
+        "Clara looks very young",
+        "Clara is not really his daughter",
+        "Clara is younger than Edith"
+       ],
+       "answer": "Clara can still change her mind",
+       "accept": [],
+       "hint": "Read the sentences that follow.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Nora crosses out the last two pages of her play?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Think about what she now sees as the most important moment.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Who Made This?",
+     "synopsis": "Nora's play is performed in the church hall with a new, quieter ending, and she meets someone from the diary.",
+     "text": "The church hall smelt of floor polish and damp coats. By seven o'clock on the last Saturday of September every chair was full, and people were standing along the back wall. Nora recognised faces from the Lyric: the factory women, a few men still in uniform, and the old gentleman in the bowler hat who had stormed out of the foyer on the day of the election result.\nTom sat in the front row with their mother. Beside them was a grey-haired woman in a neat blue coat whom Nora had never met. Her mother had written to her a month earlier, at an address copied from a very old envelope.\nThe lights went down. The actors read from scripts, but within a minute nobody noticed. Mr Ashby boomed about his unsinkable ship and the impossibility of war, and the audience laughed and groaned exactly as Mr Penrose had promised. When he announced that he would be cutting the weavers' rates, the laughing stopped. Somebody at the back muttered, \"Same as ever.\"\nThen came the new ending. Bess did not shout at anyone. She simply laid a length of cloth on the dinner table, among the silver forks. Rose picked it up and turned it over in her hands.\n\"Who made this?\" Rose asked.\n\"Nobody you'd know, miss,\" said Bess.\nRose looked at her father, then at her mother, and then slowly she turned to look out at the audience. \"Who made this?\" she asked again, and the actress held the question in the air for a long time.\nThe curtain was only a bedsheet on a wire, but when it closed nobody clapped at first. The hall was so quiet that Nora could hear the rain on the roof. Then Tom started clapping, and everyone joined in, and some people stood up.\nAfterwards the old gentleman in the bowler hat stopped beside Nora. \"Very clever, young lady,\" he said stiffly. \"Of course, things are quite different now.\"\n\"Are they?\" Nora asked politely. He opened his mouth, closed it again, and went out into the rain, frowning. She thought he might still be thinking about it tomorrow. That was enough.\nHer mother came over, holding the arm of the woman in the blue coat. Both of them had red eyes.\n\"Nora,\" said Edith, \"this is Mrs Lily Dawes. You've read about her.\"\nLily took Nora's hands in hers. They were rough and quick, just like her mother's. \"Your mother tells me my ribbon is still in that diary,\" she said. \"I gave it to her when I was fifteen.\"\n\"It's still tied inside the cover,\" Nora said.\n\"Good,\" said Lily. \"In 1912 nobody listened to girls like us. Tonight there was a whole hall full of people listening. Don't waste that.\"\nNora, her mother and Lily walked home together under one umbrella, and they did not talk much. They did not need to. The play had been about the past, but every one of them knew it had really been about tomorrow.",
+     "questions": [
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, where is Nora's play performed?",
+       "options": [
+        "In a church hall",
+        "At the Lyric Theatre",
+        "In the mill",
+        "In a school"
+       ],
+       "answer": "In a church hall",
+       "accept": [],
+       "hint": "Think about the smell of floor polish.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what colour is the coat of the woman sitting beside Nora's mother?",
+       "options": [],
+       "answer": "blue",
+       "accept": [],
+       "hint": "Look at the second paragraph.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does Bess lay on the dinner table?",
+       "options": [
+        "A length of cloth",
+        "A newspaper",
+        "A ribbon",
+        "A gold watch"
+       ],
+       "answer": "A length of cloth",
+       "accept": [],
+       "hint": "It is something made in the mill.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "short",
+       "q": "In the chapter, what question does Rose ask twice?",
+       "options": [],
+       "answer": "Who made this?",
+       "accept": [
+        "who made this",
+        "Who made this"
+       ],
+       "hint": "She asks it about the cloth.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, how does the audience react at first when the curtain closes?",
+       "options": [
+        "They are completely silent",
+        "They laugh loudly",
+        "They leave at once",
+        "They boo the actors"
+       ],
+       "answer": "They are completely silent",
+       "accept": [],
+       "hint": "Nora can hear the rain on the roof.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, what does the old gentleman claim after the play?",
+       "options": [
+        "That things are quite different now",
+        "That the play was too long",
+        "That he wrote the play himself",
+        "That he knew Mr Thorne"
+       ],
+       "answer": "That things are quite different now",
+       "accept": [],
+       "hint": "Nora answers him with a question.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "mc",
+       "q": "In the chapter, why does Rose turn to look at the audience?",
+       "options": [
+        "To make the audience ask themselves the question",
+        "Because she has forgotten her lines",
+        "To look for her mother",
+        "Because the lights went out"
+       ],
+       "answer": "To make the audience ask themselves the question",
+       "accept": [],
+       "hint": "Remember Nora's third rule for her play.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_lit",
+       "type": "open",
+       "q": "Why do you think Lily tells Nora 'Don't waste that'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Compare who was listened to in 1912 and in 1945.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
