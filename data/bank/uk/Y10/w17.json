@@ -5104,5 +5104,885 @@
    ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_lit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Relógio da Pensão",
+   "premise": "Peça teatral em sete cenas: numa pensão antiga, a chegada de uma jovem violinista faz parar um relógio centenário e revela uma carta esquecida, que reaproxima uma dona de pensão de uma amiga de infância.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A chegada",
+     "synopsis": "Numa noite de chuva, uma jovem violinista chega a uma pensão lotada e acaba ganhando o sótão. Quando seu nome é escrito no livro de registros, o velho relógio da sala para.",
+     "text": "PERSONAGENS: DONA EULÁLIA, dona da pensão, sessenta e poucos anos; TOMÁS, seu neto, quinze anos; SEU ARISTIDES, hóspede antigo, relojoeiro aposentado; BIA, jovem violinista.\nATO I — CENA 1\n(Sala de entrada de uma pensão antiga numa cidade pequena. À esquerda, um balcão de madeira com um grosso livro de registros. Ao fundo, um relógio de pêndulo alto. Chove forte lá fora. É noite. DONA EULÁLIA confere contas no balcão. TOMÁS, sentado na escada, joga uma bolinha de papel para cima.)\nDONA EULÁLIA (sem levantar os olhos) — Tomás, essa bolinha vai acabar dentro do meu café.\nTOMÁS — Vó, ninguém vai chegar com essa chuva. Posso ir dormir?\nDONA EULÁLIA — Pensão de verdade fica de porta aberta até as dez. Foi assim com seu avô e vai ser assim comigo.\n(Ouvem-se três batidas fortes na porta. TOMÁS dá um pulo. DONA EULÁLIA ajeita os óculos.)\nTOMÁS (baixinho) — Viu? Assombração.\nDONA EULÁLIA — Assombração não bate na porta, menino. Abre.\n(TOMÁS abre a porta. Entra BIA, encharcada, abraçada a um estojo de violino. Ela sacode um guarda-chuva quebrado.)\nBIA — Boa noite! Desculpem o estado. O ônibus quebrou na estrada e eu vim andando desde a ponte. Ainda tem quarto?\nDONA EULÁLIA (fechando o livro) — Minha filha, sinto muito. Estou com a casa cheia por causa do festival da semana que vem.\nBIA (desanimada, olhando para a chuva) — Entendo... Será que tem outra pensão por aqui?\nTOMÁS — A mais perto fica do outro lado da cidade. E a ponte alaga quando chove assim.\n(Pausa. Desce a escada, devagar, SEU ARISTIDES, de pijama listrado e chinelos, com uma lupa pendurada no pescoço.)\nSEU ARISTIDES — Que barulheira é essa? Uma pessoa não pode nem sonhar com engrenagens em paz?\nDONA EULÁLIA — Chegou uma moça, Aristides. E eu não tenho quarto.\nSEU ARISTIDES (examinando o estojo de BIA com a lupa) — Violino?\nBIA — Violino. Vim tocar no festival, se alguém deixar.\nSEU ARISTIDES (pensativo) — Eulália, e o sótão? Tem a cama de armar e a janela redonda. Eu mesmo dormi lá no meu primeiro inverno aqui.\nDONA EULÁLIA — O sótão está cheio de caixas, Aristides!\nTOMÁS (levantando-se, animado) — Eu tiro as caixas! Agora mesmo!\nDONA EULÁLIA (olha para o neto, depois para BIA, e suspira) — Está bem. Mas é provisório. E nada de barulho depois das dez.\nBIA (sorrindo pela primeira vez) — Prometo tocar baixinho. Bem baixinho.\n(TOMÁS pega a mala de BIA e sobe a escada correndo. SEU ARISTIDES vai atrás, resmungando sobre os joelhos. DONA EULÁLIA abre o livro e escreve o nome da nova hóspede. Nesse instante, o relógio de pêndulo para. O silêncio é estranho. Todos se viram para ele.)\nTOMÁS (do alto da escada) — Vó... o relógio parou.\nDONA EULÁLIA (séria) — Esse relógio não para há trinta anos.\n(BIA aperta o estojo contra o peito. A luz se apaga lentamente.)\nFIM DA CENA 1",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde se passa a cena?",
+       "options": [
+        "Na sala de entrada de uma pensão",
+        "Numa estação de ônibus",
+        "No palco de um teatro",
+        "Numa praça da cidade"
+       ],
+       "answer": "Na sala de entrada de uma pensão",
+       "accept": [],
+       "hint": "Releia a primeira rubrica.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que instrumento Bia carrega no estojo?",
+       "options": [],
+       "answer": "violino",
+       "accept": [],
+       "hint": "Seu Aristides pergunta sobre ele.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Bia chega a pé e molhada?",
+       "options": [
+        "O ônibus quebrou na estrada",
+        "Ela perdeu o último trem",
+        "Ela gosta de andar na chuva",
+        "Ela se perdeu na floresta"
+       ],
+       "answer": "O ônibus quebrou na estrada",
+       "accept": [],
+       "hint": "Veja a primeira fala dela.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Dona Eulália diz que não tem quarto?",
+       "options": [
+        "A pensão está cheia por causa do festival",
+        "A pensão vai fechar para reforma",
+        "Ela não aceita músicos",
+        "Os quartos estão sem luz"
+       ],
+       "answer": "A pensão está cheia por causa do festival",
+       "accept": [],
+       "hint": "Ela explica o motivo ao fechar o livro.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, que parte da casa Seu Aristides sugere para Bia dormir?",
+       "options": [],
+       "answer": "sótão",
+       "accept": [],
+       "hint": "Fica no alto e tem uma janela redonda.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o trecho \"(Ouvem-se três batidas fortes na porta. TOMÁS dá um pulo.)\" é um exemplo de:",
+       "options": [
+        "rubrica",
+        "fala de personagem",
+        "título do ato",
+        "lista de personagens"
+       ],
+       "answer": "rubrica",
+       "accept": [],
+       "hint": "São indicações para a encenação, entre parênteses.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que o fim da cena, com o relógio parando, provoca no leitor ou na plateia?",
+       "options": [
+        "Suspense e curiosidade",
+        "Vontade de rir",
+        "Tédio",
+        "Raiva de Bia"
+       ],
+       "answer": "Suspense e curiosidade",
+       "accept": [],
+       "hint": "Pense no silêncio e na luz se apagando.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que a autora escolheu terminar a cena com o relógio parando no momento em que o nome de Bia é escrito?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: O relógio parado",
+     "synopsis": "Na manhã seguinte, Seu Aristides tenta consertar o relógio e descobre o que travava o mecanismo: um envelope antigo com o nome de Dona Eulália.",
+     "text": "ATO I — CENA 2\n(A mesma sala, na manhã seguinte. O sol entra pela janela. O relógio de pêndulo está aberto; a portinhola de vidro pende para o lado. SEU ARISTIDES, ajoelhado sobre uma toalha, organiza ferramentas minúsculas: chaves, pinças, uma lata de óleo. TOMÁS observa de longe, desconfiado.)\nTOMÁS — Seu Aristides, e se for um sinal? Ela chegou e o relógio parou. Isso não é coincidência.\nSEU ARISTIDES (sem tirar os olhos do mecanismo) — Coincidência é o nome que a gente dá para o que ainda não entendeu. Me passa a pinça fina.\nTOMÁS (entregando a pinça com a ponta dos dedos) — E se tiver alguma coisa aí dentro?\nSEU ARISTIDES — Sempre tem alguma coisa aí dentro, rapaz. Chama-se engrenagem.\n(Entra BIA, descendo a escada de meias, com o cabelo preso de qualquer jeito. Carrega uma xícara.)\nBIA — Bom dia. Dormi como uma pedra. Aquele sótão tem cheiro de livro velho.\nTOMÁS (apontando o relógio) — E esse aqui tem cheiro de mistério. Parou quando você chegou.\nBIA (rindo, mas sem graça) — Então a culpa é minha?\nSEU ARISTIDES — Culpa de ninguém. Um relógio de pêndulo é simples: o peso desce, as engrenagens giram, o pêndulo marca o compasso. Se ele para, é porque alguma coisa está segurando o movimento. (Ele aproxima a lupa. Pausa longa.) Ora, vejam só.\n(SEU ARISTIDES puxa, com a pinça, um papel dobrado várias vezes, amarelado, preso entre o peso e a parede do relógio. Ele o desdobra com cuidado. É um envelope.)\nTOMÁS (aproximando-se, de olhos arregalados) — Falei que tinha alguma coisa!\nBIA — Tem um nome escrito.\nSEU ARISTIDES (lendo devagar) — \"Para Eulália. Guardar até o festival.\"\n(Silêncio. SEU ARISTIDES fecha o envelope sem abrir. Depois, com a ponta do dedo, empurra o pêndulo. O tique-taque volta a encher a sala.)\nSEU ARISTIDES — Pronto. O papel escorregou e travou o peso. Talvez tenha ficado escondido aí muito tempo e só agora resolveu cair. Coisas velhas também se cansam.\n(Entra DONA EULÁLIA, com um avental florido e uma bandeja de pães. Para ao ouvir o relógio.)\nDONA EULÁLIA — Ele voltou! Aristides, você é um mágico.\nSEU ARISTIDES — Mágico, não. Relojoeiro. E isso aqui é seu. (Entrega o envelope.)\n(DONA EULÁLIA reconhece a letra. Fica pálida. Coloca a bandeja sobre o balcão sem olhar.)\nDONA EULÁLIA (com a voz baixa) — Eu conheço essa letra.\nTOMÁS — De quem é, vó?\nDONA EULÁLIA (guardando o envelope no bolso do avental) — Depois eu leio. Agora o café esfria. Sentem-se.\n(Todos se sentam, mas ninguém tira os olhos do bolso do avental. O relógio bate oito vezes.)\nFIM DA CENA 2",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, em que momento do dia acontece a cena?",
+       "options": [
+        "Na manhã seguinte",
+        "Na mesma noite de chuva",
+        "No fim da tarde",
+        "Uma semana depois"
+       ],
+       "answer": "Na manhã seguinte",
+       "accept": [],
+       "hint": "Releia a primeira rubrica.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Seu Aristides está fazendo quando a cena começa?",
+       "options": [
+        "Consertando o relógio",
+        "Lendo o jornal",
+        "Preparando o café",
+        "Tirando caixas do sótão"
+       ],
+       "answer": "Consertando o relógio",
+       "accept": [],
+       "hint": "Veja as ferramentas sobre a toalha.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que travava o relógio?",
+       "options": [
+        "Um envelope dobrado preso perto do peso",
+        "Uma engrenagem quebrada",
+        "Falta de corda",
+        "Um inseto dentro do mecanismo"
+       ],
+       "answer": "Um envelope dobrado preso perto do peso",
+       "accept": [],
+       "hint": "Ele usou a pinça para tirar.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, para quem estava endereçado o envelope? Escreva o nome.",
+       "options": [],
+       "answer": "Eulália",
+       "accept": [],
+       "hint": "Seu Aristides lê em voz alta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, como Tomás explica a parada do relógio antes do conserto?",
+       "options": [
+        "Acha que é um sinal ligado à chegada de Bia",
+        "Acha que acabou a pilha",
+        "Acha que o avô desligou",
+        "Acha que a chuva molhou o relógio"
+       ],
+       "answer": "Acha que é um sinal ligado à chegada de Bia",
+       "accept": [],
+       "hint": "Ele não acredita em coincidência.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, a rubrica \"(Fica pálida. Coloca a bandeja sobre o balcão sem olhar.)\" mostra que Dona Eulália está:",
+       "options": [
+        "Emocionada e abalada",
+        "Com sono",
+        "Irritada com Aristides",
+        "Distraída com o café"
+       ],
+       "answer": "Emocionada e abalada",
+       "accept": [],
+       "hint": "Pense no que ela acabou de reconhecer.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Dona Eulália guarda o envelope sem ler na frente de todos?",
+       "options": [
+        "Porque o assunto é pessoal e a emocionou",
+        "Porque não sabe ler",
+        "Porque o envelope está vazio",
+        "Porque está com pressa de sair"
+       ],
+       "answer": "Porque o assunto é pessoal e a emocionou",
+       "accept": [],
+       "hint": "Observe a voz baixa dela.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Seu Aristides diz que \"coincidência é o nome que a gente dá para o que ainda não entendeu\"? O que isso revela sobre ele?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A carta",
+     "synopsis": "À noite, na cozinha, Dona Eulália lê a carta para Tomás e conta a história de uma amizade interrompida por uma briga boba.",
+     "text": "ATO I — CENA 3\n(Cozinha da pensão, à noite. Uma lâmpada amarela sobre a mesa. Panelas penduradas na parede. DONA EULÁLIA está sentada, com o envelope aberto à sua frente. TOMÁS entra devagar, de pijama.)\nTOMÁS — Vó? Não consegui dormir. Fiquei pensando na carta.\nDONA EULÁLIA (sem se virar) — Nem eu, meu filho. Senta aqui.\n(TOMÁS puxa uma cadeira. DONA EULÁLIA tira os óculos do bolso, coloca-os e desdobra a folha. Lê em voz alta, devagar, como quem tem medo das palavras.)\nDONA EULÁLIA (lendo) — \"Eulália, vou embora amanhã cedo e não tive coragem de bater na sua porta. Sei que você ainda está zangada comigo por causa do vestido do baile. Eu também estou zangada, mas comigo mesma. Prometo que um dia eu volto. Volto no festival em que o relógio da pensão fizer cem anos. Me espere na praça, perto do coreto. Sua amiga de sempre, Lurdes.\"\n(Silêncio. O relógio da sala, ao longe, faz tique-taque.)\nTOMÁS — Vó... quem é Lurdes?\nDONA EULÁLIA (dobrando a carta com cuidado) — A minha melhor amiga. A gente cresceu juntas nesta rua. Subia no muro, roubava goiaba do vizinho, inventava peças de teatro no quintal. Ela era sempre a rainha. Eu, sempre o dragão.\nTOMÁS (rindo) — Você, de dragão?\nDONA EULÁLIA — Um dragão muito respeitado. (Pausa. O sorriso some.) Aí veio o baile da cidade. Eu tinha costurado um vestido azul, e ela apareceu com um igualzinho. Achei que tinha me copiado de propósito. Falei coisas feias na frente de todo mundo. Ela foi embora da cidade uma semana depois, para trabalhar longe. Nunca mais soube dela.\nTOMÁS — E por que a carta estava dentro do relógio?\nDONA EULÁLIA (olhando para o teto, pensando) — Seu avô. Só pode ter sido ele. Lurdes deve ter entregado a carta a ele naquela madrugada. Eu estava tão brava que ele achou melhor guardar para depois. E guardou no lugar mais seguro da casa. Aquele homem nunca jogava nada fora, mas também nunca lembrava onde tinha guardado.\nTOMÁS (fazendo contas nos dedos) — E quantos anos o relógio tem?\nDONA EULÁLIA (levanta-se, vai até a porta e olha para a sala escura. Volta devagar.) — Seu bisavô comprou o relógio quando inaugurou a pensão. A placa está ali na lateral. (Pausa.) Ele faz cem anos neste festival, Tomás.\n(TOMÁS arregala os olhos. DONA EULÁLIA se senta de novo e segura a mão do neto.)\nTOMÁS — Então ela pode vir!\nDONA EULÁLIA — Ou pode ter esquecido. Já faz tanto tempo.\nTOMÁS — Quem escreve \"amiga de sempre\" não esquece, vó.\n(DONA EULÁLIA ri, com os olhos molhados. Guarda a carta no bolso, perto do coração. Apaga a lâmpada.)\nDONA EULÁLIA (no escuro) — Vai dormir, dragãozinho.\nFIM DA CENA 3",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, em que lugar da pensão acontece a cena?",
+       "options": [
+        "Na cozinha",
+        "No sótão",
+        "No quintal",
+        "Na sala de entrada"
+       ],
+       "answer": "Na cozinha",
+       "accept": [],
+       "hint": "Releia a rubrica inicial.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome de quem escreveu a carta?",
+       "options": [],
+       "answer": "Lurdes",
+       "accept": [],
+       "hint": "Está na assinatura.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que as duas amigas brigaram?",
+       "options": [
+        "Apareceram no baile com vestidos iguais",
+        "Uma quebrou o relógio da outra",
+        "Disputaram um papel numa peça",
+        "Uma se mudou sem avisar"
+       ],
+       "answer": "Apareceram no baile com vestidos iguais",
+       "accept": [],
+       "hint": "Dona Eulália conta sobre o baile da cidade.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quando Lurdes prometeu voltar?",
+       "options": [
+        "No festival em que o relógio fizesse cem anos",
+        "No próximo aniversário de Eulália",
+        "Quando terminasse a faculdade",
+        "No Natal seguinte"
+       ],
+       "answer": "No festival em que o relógio fizesse cem anos",
+       "accept": [],
+       "hint": "Está escrito na carta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, quem Dona Eulália acredita que escondeu a carta no relógio?",
+       "options": [
+        "O avô de Tomás",
+        "Seu Aristides",
+        "A própria Lurdes",
+        "Um hóspede desconhecido"
+       ],
+       "answer": "O avô de Tomás",
+       "accept": [],
+       "hint": "Ela diz que \"só pode ter sido ele\".",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, a rubrica \"Lê em voz alta, devagar, como quem tem medo das palavras\" orienta principalmente:",
+       "options": [
+        "O jeito como a atriz deve falar o texto",
+        "O cenário da cozinha",
+        "A mudança de ato",
+        "A entrada de um novo personagem"
+       ],
+       "answer": "O jeito como a atriz deve falar o texto",
+       "accept": [],
+       "hint": "Rubricas também indicam tom de voz.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a fala \"Quem escreve 'amiga de sempre' não esquece\" mostra sobre Tomás?",
+       "options": [
+        "Ele tem esperança e quer animar a avó",
+        "Ele está zombando da avó",
+        "Ele não acredita na carta",
+        "Ele quer ir dormir logo"
+       ],
+       "answer": "Ele tem esperança e quer animar a avó",
+       "accept": [],
+       "hint": "Veja a reação dela logo depois.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que Dona Eulália se arrepende da briga com Lurdes depois de tantos anos?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O ensaio",
+     "synopsis": "Bia ensaia no sótão e uma vizinha reclama do som. Tomás tenta resolver a situação e uma valsa antiga acaba mudando o humor de todos.",
+     "text": "ATO I — CENA 4\n(O sótão da pensão, à tarde. Teto inclinado, caixas empilhadas num canto, uma janela redonda aberta. BIA, em pé, toca violino de olhos fechados. Uma estante de partitura balança a cada movimento do arco. De repente, uma voz vem de fora.)\nDONA FILÓ (de fora, aos gritos) — Ô de cima! Isso aí é música ou é gato brigando?\n(BIA para de tocar, assustada. Vai até a janela redonda.)\nBIA — Desculpe, senhora! Estou ensaiando para o festival!\nDONA FILÓ (de fora) — Pois ensaia mais baixo! Tenho sesta às duas há quarenta anos e não é agora que vou mudar!\n(TOMÁS sobe a escada do sótão, ofegante, com um copo de suco na mão.)\nTOMÁS — É a Dona Filó, a vizinha da casa amarela. Ela reclama de tudo. Do galo, do sino da igreja, do vento.\nBIA (sentando-se numa caixa, desanimada) — Faltam cinco dias para o festival, Tomás. Se eu não ensaiar, vou passar vergonha.\nTOMÁS (pensando, andando de um lado para o outro) — Espera. Minha avó diz que a Dona Filó já foi a melhor dançarina da cidade. Dançava valsa no coreto, todo domingo.\nBIA — E daí?\nTOMÁS — E daí que ninguém reclama da música que ama.\n(TOMÁS vai até a janela e se debruça.)\nTOMÁS (gritando para fora) — Dona Filó! A senhora lembra da \"Valsa da Beira-Rio\"?\n(Pausa longa. Ouve-se uma janela se abrindo do lado de fora.)\nDONA FILÓ (de fora, desconfiada) — Lembro. Por quê?\nTOMÁS (cochichando para BIA) — Você sabe tocar uma valsa?\nBIA (cochichando de volta) — Sei tocar qualquer valsa, se você cantarolar o começo.\n(TOMÁS cantarola, desafinado, uma melodia simples. BIA escuta, fecha os olhos e começa a tocar, suave. A música sai pela janela redonda. Silêncio do lado de fora. Depois, de longe, alguém cantarola junto.)\nDONA FILÓ (de fora, com a voz diferente, mais doce) — Não é assim que termina. O final sobe, menina. Sobe!\n(BIA sorri e repete a frase final, subindo a melodia. Ouve-se um aplauso solitário vindo da casa amarela.)\nDONA FILÓ (de fora) — Está bem, está bem. Faz assim: ensaia no quintal, às quatro, depois da minha sesta. E toca essa valsa todo dia. É a condição.\nBIA (debruçada na janela) — Combinado!\n(BIA e TOMÁS batem as mãos no ar, comemorando. TOMÁS derruba o copo de suco em cima de uma caixa.)\nTOMÁS — Ai! As caixas da vó!\nBIA (rindo, ajudando a secar) — Pelo menos a vizinha está feliz.\n(Do lado de fora, DONA FILÓ continua cantarolando a valsa. A luz cai lentamente sobre o sótão.)\nFIM DA CENA 4",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde Bia está ensaiando no começo da cena?",
+       "options": [
+        "No sótão",
+        "Na praça",
+        "Na cozinha",
+        "No coreto"
+       ],
+       "answer": "No sótão",
+       "accept": [],
+       "hint": "Veja a descrição do teto inclinado.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Dona Filó reclama do ensaio?",
+       "options": [
+        "O som atrapalha a sesta dela",
+        "Ela não gosta de violino em nenhum horário",
+        "O violino está desafinado",
+        "Bia está tocando à noite"
+       ],
+       "answer": "O som atrapalha a sesta dela",
+       "accept": [],
+       "hint": "Ela fala de um costume de quarenta anos.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Tomás descobre sobre o passado de Dona Filó?",
+       "options": [
+        "Ela foi uma grande dançarina de valsa",
+        "Ela foi professora de música",
+        "Ela foi dona da pensão",
+        "Ela tocava violino"
+       ],
+       "answer": "Ela foi uma grande dançarina de valsa",
+       "accept": [],
+       "hint": "Ele ouviu isso da avó.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da música que Tomás pergunta se Dona Filó lembra?",
+       "options": [],
+       "answer": "Valsa da Beira-Rio",
+       "accept": [],
+       "hint": "Ele grita o nome pela janela.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, Dona Filó fala sempre \"de fora\". O que isso indica para a encenação?",
+       "options": [
+        "A atriz não aparece no palco, só se ouve a voz",
+        "A personagem está atrasada",
+        "A personagem é uma narradora",
+        "A cena acontece na rua"
+       ],
+       "answer": "A atriz não aparece no palco, só se ouve a voz",
+       "accept": [],
+       "hint": "Pense em onde ela está em relação ao sótão.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual acordo é feito no final?",
+       "options": [
+        "Bia vai ensaiar no quintal às quatro e tocar a valsa todo dia",
+        "Bia vai parar de ensaiar",
+        "Dona Filó vai dançar no festival",
+        "Tomás vai pagar o suco"
+       ],
+       "answer": "Bia vai ensaiar no quintal às quatro e tocar a valsa todo dia",
+       "accept": [],
+       "hint": "Dona Filó diz qual é a condição.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que a voz de Dona Filó fica \"mais doce\" quando ouve a valsa?",
+       "options": [
+        "A música desperta lembranças boas",
+        "Ela ficou com sono",
+        "Ela quer comprar o violino",
+        "Ela está com medo de Bia"
+       ],
+       "answer": "A música desperta lembranças boas",
+       "accept": [],
+       "hint": "Lembre-se do que ela fazia no coreto.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que a estratégia de Tomás funcionou melhor do que simplesmente pedir desculpas?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A goteira",
+     "synopsis": "Durante uma tempestade, o teto do sótão começa a pingar e todos correm para salvar o violino e as caixas, numa noite de confusão e risadas.",
+     "text": "ATO I — CENA 5\n(O sótão, de madrugada. Trovões. A luz de um relâmpago atravessa a janela redonda. BIA dorme na cama de armar. Ouve-se um pingo. Depois outro. Depois muitos. Uma goteira cai bem em cima do estojo do violino.)\nBIA (acordando de um salto) — Não, não, não! O violino!\n(BIA agarra o estojo e o abraça. Mais goteiras aparecem em pontos diferentes do teto. Ela grita para baixo.)\nBIA — Tomás! Dona Eulália! Está chovendo aqui dentro!\n(Barulho de passos na escada. Entra TOMÁS, de pijama e lanterna, seguido de DONA EULÁLIA com uma panela em cada mão e SEU ARISTIDES, de touca de dormir, carregando um balde.)\nDONA EULÁLIA — Panelas embaixo das goteiras! Rápido!\nSEU ARISTIDES (procurando onde colocar o balde) — Esta casa tem mais furos que um queijo suíço!\n(Os três correm pelo sótão. TOMÁS ilumina o teto com a lanterna. DONA EULÁLIA posiciona as panelas. Os pingos fazem sons diferentes em cada uma: um grave, um agudo, um metálico.)\nBIA (parando, encantada, ainda abraçada ao estojo) — Escutem. Parece uma música.\nSEU ARISTIDES — Música? Parece é uma inundação. (Ele pisa numa poça, escorrega e cai sentado numa caixa.) Ai! Minha dignidade!\n(TOMÁS começa a rir. DONA EULÁLIA tenta ficar séria, mas também ri. BIA ri tanto que precisa se sentar.)\nDONA EULÁLIA (enxugando as lágrimas de riso) — Aristides, está machucado?\nSEU ARISTIDES (levantando-se com esforço, ajeitando a touca) — Só o orgulho. E o orgulho, a gente conserta com café.\nTOMÁS (apontando a lanterna para um canto) — Vó, a telha ali está fora do lugar. Dá para ver o céu!\nDONA EULÁLIA — Amanhã a gente chama alguém.\nTOMÁS — Amanhã vai molhar tudo. Tem uma lona no quartinho. Eu subo na escada e cubro por dentro.\nDONA EULÁLIA (hesitando) — Com cuidado. E o Aristides segura a escada.\n(TOMÁS sai e volta com uma lona azul. Sobe numa escada baixa enquanto SEU ARISTIDES a segura com as duas mãos. BIA ilumina com a lanterna. DONA EULÁLIA prende a lona com pregadores de roupa. Os pingos diminuem até parar.)\nSEU ARISTIDES — Engenharia de emergência. Aprovada.\n(Todos se sentam no chão, molhados e cansados, cercados de panelas. Ouve-se só a chuva lá fora, agora mais fraca.)\nDONA EULÁLIA (olhando o teto) — Esta casa é velha, mas é teimosa. Como eu.\nBIA (baixinho, olhando para os três) — Sabe que eu nunca me senti tão em casa num lugar? E olha que está chovendo dentro dele.\n(TOMÁS joga a lanterna para cima e a pega no ar. A luz gira pelo sótão. Escuridão.)\nFIM DA CENA 5",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que acorda Bia de madrugada?",
+       "options": [
+        "Uma goteira caindo no estojo do violino",
+        "O relógio batendo as horas",
+        "Dona Filó gritando",
+        "Um gato no telhado"
+       ],
+       "answer": "Uma goteira caindo no estojo do violino",
+       "accept": [],
+       "hint": "Releia a primeira rubrica.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Dona Eulália traz para resolver o problema?",
+       "options": [
+        "Panelas",
+        "Toalhas",
+        "Guarda-chuvas",
+        "Um martelo"
+       ],
+       "answer": "Panelas",
+       "accept": [],
+       "hint": "Ela entra com uma em cada mão.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Bia percebe nos sons dos pingos?",
+       "options": [
+        "Que parecem uma música",
+        "Que estão cada vez mais fortes",
+        "Que vêm da cozinha",
+        "Que vão quebrar o violino"
+       ],
+       "answer": "Que parecem uma música",
+       "accept": [],
+       "hint": "Cada panela faz um som diferente.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, qual acontecimento faz todos rirem?",
+       "options": [
+        "Seu Aristides escorrega e cai sentado numa caixa",
+        "Tomás derruba a lanterna",
+        "Bia toca uma valsa",
+        "Dona Eulália dança"
+       ],
+       "answer": "Seu Aristides escorrega e cai sentado numa caixa",
+       "accept": [],
+       "hint": "Ele fala sobre a própria dignidade.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, o que Tomás usa para cobrir a telha fora do lugar?",
+       "options": [],
+       "answer": "lona",
+       "accept": [],
+       "hint": "É azul e estava no quartinho.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, rubricas como \"Os três correm pelo sótão\" e \"Sobe numa escada baixa\" servem principalmente para indicar:",
+       "options": [
+        "As ações e movimentos dos atores",
+        "O que os personagens pensam em segredo",
+        "O título da peça",
+        "A opinião do autor sobre a chuva"
+       ],
+       "answer": "As ações e movimentos dos atores",
+       "accept": [],
+       "hint": "Pense no que o diretor precisa saber.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que a fala final de Bia revela sobre ela?",
+       "options": [
+        "Ela se sente acolhida por aquelas pessoas",
+        "Ela quer ir embora da pensão",
+        "Ela está brava com a goteira",
+        "Ela não gosta de chuva"
+       ],
+       "answer": "Ela se sente acolhida por aquelas pessoas",
+       "accept": [],
+       "hint": "Ela fala em se sentir em casa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que uma cena com um problema (a goteira) acabou aproximando os personagens?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O convite",
+     "synopsis": "Tomás traz o folheto do festival, mas Bia confessa que tem medo de palco. Com a ajuda de todos, ela decide se inscrever, com uma condição.",
+     "text": "ATO I — CENA 6\n(O quintal da pensão, às quatro da tarde. Um varal com lençóis, uma mangueira enrolada, uma cadeira de vime. BIA toca a \"Valsa da Beira-Rio\". Do outro lado do muro, aparece a cabeça de DONA FILÓ, com um lenço florido, balançando no ritmo. TOMÁS entra correndo com um papel colorido na mão.)\nTOMÁS — Bia! Bia! Saiu o folheto do festival! Inscrição para músicos até amanhã ao meio-dia!\n(BIA para de tocar. DONA FILÓ resmunga e desaparece atrás do muro.)\nBIA (pegando o folheto, lendo sem vontade) — \"Noite de música no coreto.\" Que bonito.\nTOMÁS — Bonito? É perfeito! Você veio para isso!\nBIA (devolvendo o folheto) — Eu vim para ver. E, quem sabe, tocar numa esquina, para quem passasse.\nTOMÁS (confuso) — Mas você toca muito bem.\n(BIA senta-se na cadeira de vime e guarda o arco com cuidado. Pausa.)\nBIA — No ano passado, fiz uma audição para uma orquestra. Entrei no palco, vi as luzes, vi a banca de jurados... e minhas mãos travaram. Não saiu uma nota. Fiquei parada um minuto inteiro. Depois pedi desculpas e saí.\n(TOMÁS fica sem saber o que dizer. Entram DONA EULÁLIA, com uma bacia de roupa, e SEU ARISTIDES, com o jornal debaixo do braço.)\nDONA EULÁLIA — Que caras são essas? Parece velório de passarinho.\nTOMÁS — A Bia não quer tocar no festival. Tem medo de palco.\nSEU ARISTIDES (sentando-se no degrau, abrindo o jornal sem ler) — Sabe, menina, todo relógio treme um pouco antes de bater a hora. A mola se estica, as engrenagens rangem. Mas ele bate assim mesmo. É para isso que ele existe.\nBIA (sorrindo, triste) — O senhor transforma tudo em relógio.\nSEU ARISTIDES — Porque tudo é relógio.\nDONA EULÁLIA (pondo a bacia no chão e sentando-se ao lado de BIA) — Eu tinha um medo danado de falar em público. No dia em que inaugurei a pensão depois da reforma, tinha que fazer um discurso. Tremia tanto que derrubei o bolo.\nTOMÁS — Você nunca me contou isso!\nDONA EULÁLIA — Porque derrubei o bolo, menino. Não é coisa que se conte. (Para BIA.) Mas fiz o discurso. Olhando para uma pessoa só, a que eu mais confiava. O resto sumiu.\n(BIA olha para TOMÁS. Pensa. Respira fundo.)\nBIA — Eu toco. Mas com uma condição: o Tomás fica do meu lado, virando as páginas da partitura. Se eu travar, olho para ele.\nTOMÁS (endireitando-se, orgulhoso) — Eu não sei ler partitura.\nBIA — Eu aceno quando for para virar.\nTOMÁS — Combinado!\nDONA EULÁLIA (pegando o folheto e uma caneta do bolso do avental) — Então vamos inscrever logo, antes que alguém mude de ideia.\n(Do outro lado do muro, a cabeça de DONA FILÓ reaparece.)\nDONA FILÓ — E toquem a valsa no festival! Quero dançar!\n(Todos riem. BIA ergue o violino e volta a tocar. A luz se fecha sobre o quintal.)\nFIM DA CENA 6",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, em que lugar e hora se passa a cena?",
+       "options": [
+        "No quintal, às quatro da tarde",
+        "No sótão, de madrugada",
+        "Na praça, à noite",
+        "Na cozinha, de manhã"
+       ],
+       "answer": "No quintal, às quatro da tarde",
+       "accept": [],
+       "hint": "Lembre-se do acordo com Dona Filó.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que notícia Tomás traz?",
+       "options": [
+        "As inscrições para músicos do festival terminam amanhã",
+        "O festival foi cancelado",
+        "Lurdes mandou outra carta",
+        "O telhado foi consertado"
+       ],
+       "answer": "As inscrições para músicos do festival terminam amanhã",
+       "accept": [],
+       "hint": "Está no folheto colorido.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que aconteceu com Bia na audição do ano anterior?",
+       "options": [
+        "As mãos travaram e ela não tocou nenhuma nota",
+        "Ela quebrou uma corda do violino",
+        "Ela chegou atrasada",
+        "Ela ganhou o primeiro lugar"
+       ],
+       "answer": "As mãos travaram e ela não tocou nenhuma nota",
+       "accept": [],
+       "hint": "Ela conta isso sentada na cadeira de vime.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, com que objeto Seu Aristides compara o medo de Bia?",
+       "options": [
+        "Um relógio antes de bater a hora",
+        "Uma panela no fogo",
+        "Um violino desafinado",
+        "Uma porta emperrada"
+       ],
+       "answer": "Um relógio antes de bater a hora",
+       "accept": [],
+       "hint": "Pense na profissão dele.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, que dica Dona Eulália dá a partir da própria experiência?",
+       "options": [
+        "Olhar para uma só pessoa de confiança",
+        "Fechar os olhos o tempo todo",
+        "Tocar muito rápido",
+        "Não olhar para ninguém"
+       ],
+       "answer": "Olhar para uma só pessoa de confiança",
+       "accept": [],
+       "hint": "Ela conta sobre o discurso e o bolo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quem vai virar as páginas da partitura de Bia?",
+       "options": [],
+       "answer": "Tomás",
+       "accept": [],
+       "hint": "É a condição que ela coloca.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, a fala de Seu Aristides \"todo relógio treme um pouco antes de bater a hora\" é um exemplo de:",
+       "options": [
+        "Comparação usada para encorajar",
+        "Rubrica de cenário",
+        "Lista de personagens",
+        "Indicação de fim de cena"
+       ],
+       "answer": "Comparação usada para encorajar",
+       "accept": [],
+       "hint": "Ele fala de um objeto para falar de uma pessoa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que contar a própria história de medo ajudou Dona Eulália a convencer Bia?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: O festival",
+     "synopsis": "Na noite do festival, Bia sobe ao coreto e enfrenta o medo. Quando a valsa termina, uma senhora desconhecida se aproxima de Dona Eulália.",
+     "text": "ATO II — CENA ÚNICA\n(A praça da cidade, à noite. No centro, um coreto enfeitado com bandeirinhas e lâmpadas penduradas. Barracas de pipoca e de doces nas laterais. Gente conversando. DONA EULÁLIA, de vestido azul e xale, olha para todos os lados, inquieta. SEU ARISTIDES está ao seu lado, de terno, com um cravo na lapela. DONA FILÓ, de sapatos de dança, alonga os tornozelos.)\nSEU ARISTIDES — Eulália, você já olhou para aquela barraca de pipoca umas vinte vezes.\nDONA EULÁLIA (fingindo indiferença) — Estou só vendo o movimento.\nSEU ARISTIDES — Hum. O movimento tem cabelo branco e chapéu, por acaso?\n(DONA EULÁLIA lhe dá um tapinha no braço. Um apresentador, de fora, anuncia.)\nVOZ DO APRESENTADOR (de fora) — E agora, no coreto, uma violinista que chegou à nossa cidade numa noite de chuva: Bia!\n(Aplausos. BIA sobe os degraus do coreto com o violino. TOMÁS vem atrás, segurando a partitura como se fosse um tesouro. Ela se posiciona. Ergue o arco. As luzes do coreto se acendem todas de uma vez. BIA congela. Silêncio longo. Alguém tosse na plateia.)\nTOMÁS (cochichando, aflito) — Bia... olha para mim.\n(BIA vira a cabeça devagar e olha para TOMÁS. Ele faz uma careta engraçada, de dragão, com as mãos em garra. BIA solta uma risada curta. Respira. Começa a tocar.)\n(A \"Valsa da Beira-Rio\" enche a praça. DONA FILÓ é a primeira a dançar, sozinha, girando com os braços abertos. Depois, outros casais se juntam. SEU ARISTIDES estende a mão para DONA EULÁLIA, que hesita e aceita. Na última frase, BIA faz a melodia subir, como DONA FILÓ ensinou. Aplausos fortes. BIA abraça o violino; TOMÁS pula no coreto.)\n(Enquanto a plateia aplaude, uma SENHORA de cabelo branco e chapéu de palha se aproxima de DONA EULÁLIA. Para a um passo dela. As duas se olham.)\nSENHORA — Desculpe a pergunta... O relógio da pensão já fez cem anos?\n(DONA EULÁLIA leva a mão à boca. Seu xale escorrega do ombro.)\nDONA EULÁLIA (com a voz falhando) — Lurdes?\nLURDES — Eu prometi, não prometi? Achei que você nem tinha lido a carta.\nDONA EULÁLIA — Eu li semana passada. Estava dentro do relógio. Trinta anos dentro do relógio.\nLURDES (rindo e chorando ao mesmo tempo) — Coisa do seu marido, aposto.\nDONA EULÁLIA — Coisa dele. (Pausa.) Lurdes, sobre o vestido...\nLURDES (segurando as mãos da amiga) — Eu costurei igual porque achei o seu o mais bonito do mundo. Nunca tive coragem de dizer.\n(As duas se abraçam. TOMÁS desce do coreto correndo, com BIA logo atrás.)\nTOMÁS — Vó! É ela? É a rainha?\nLURDES (olhando para DONA EULÁLIA, surpresa) — Você contou da rainha?\nDONA EULÁLIA (enxugando os olhos) — E do dragão.\n(Todos riem. Ao longe, bem fraco, ouve-se o relógio da pensão batendo as horas. Um, dois, três... BIA ergue o violino e recomeça a valsa. A cortina se fecha devagar.)\nFIM",
+     "questions": [
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, onde acontece a cena?",
+       "options": [
+        "Na praça da cidade, perto do coreto",
+        "No quintal da pensão",
+        "No sótão",
+        "Na cozinha"
+       ],
+       "answer": "Na praça da cidade, perto do coreto",
+       "accept": [],
+       "hint": "Releia a primeira rubrica.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que acontece quando as luzes do coreto se acendem?",
+       "options": [
+        "Bia congela e fica em silêncio",
+        "Bia derruba o violino",
+        "Tomás sai correndo",
+        "A plateia vai embora"
+       ],
+       "answer": "Bia congela e fica em silêncio",
+       "accept": [],
+       "hint": "O medo de palco volta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que Tomás faz para ajudar Bia?",
+       "options": [
+        "Faz uma careta engraçada de dragão",
+        "Toca a música no lugar dela",
+        "Pede para a plateia sair",
+        "Apaga as luzes"
+       ],
+       "answer": "Faz uma careta engraçada de dragão",
+       "accept": [],
+       "hint": "Lembre-se do papel de Eulália nas brincadeiras de infância.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "short",
+       "q": "No capítulo, quem é a primeira pessoa a dançar a valsa?",
+       "options": [],
+       "answer": "Dona Filó",
+       "accept": [],
+       "hint": "Ela foi a melhor dançarina da cidade.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, por que Lurdes tinha costurado um vestido igual ao de Eulália?",
+       "options": [
+        "Achava o vestido de Eulália o mais bonito",
+        "Queria provocar a amiga",
+        "Foi um engano da costureira",
+        "Ganhou o tecido de presente"
+       ],
+       "answer": "Achava o vestido de Eulália o mais bonito",
+       "accept": [],
+       "hint": "Ela explica segurando as mãos da amiga.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, a peça muda de \"ATO I\" para \"ATO II\". O que essa mudança marca na história?",
+       "options": [
+        "Uma nova etapa, com outro lugar e o desfecho",
+        "Que os personagens mudaram de nome",
+        "Que a peça recomeça do início",
+        "Que só há narração a partir daí"
+       ],
+       "answer": "Uma nova etapa, com outro lugar e o desfecho",
+       "accept": [],
+       "hint": "Compare o cenário com o das cenas anteriores.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "mc",
+       "q": "No capítulo, o que o som do relógio da pensão batendo ao longe, no final, sugere?",
+       "options": [
+        "Que o tempo de espera terminou e a promessa se cumpriu",
+        "Que o relógio quebrou de novo",
+        "Que a festa acabou mal",
+        "Que Bia precisa voltar para casa"
+       ],
+       "answer": "Que o tempo de espera terminou e a promessa se cumpriu",
+       "accept": [],
+       "hint": "Pense no papel do relógio ao longo da peça.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_lit",
+       "type": "open",
+       "q": "Por que você acha que o autor fez Bia e Dona Eulália enfrentarem um medo na mesma noite?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
