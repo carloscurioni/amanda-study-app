@@ -1,0 +1,761 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y3",
+ "academic_week": 17,
+ "subjects": {
+  "bss": {
+   "topic": "Plantas e mapas simples: legenda e símbolos",
+   "questions": [
+    {
+     "id": "rfl165b7ghb31",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que é uma planta, em geografia?",
+     "options": [
+      "um desenho de um lugar visto de cima",
+      "uma foto de um lugar visto de lado",
+      "um desenho de uma flor"
+     ],
+     "answer": "um desenho de um lugar visto de cima",
+     "accept": [],
+     "hint": "Pense em como um passarinho veria a sala voando bem alto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xr8ps812u6k85",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em uma planta, de que ponto de vista o lugar é desenhado?",
+     "options": [
+      "de cima",
+      "de lado",
+      "de baixo"
+     ],
+     "answer": "de cima",
+     "accept": [],
+     "hint": "Imagine olhar o chão de um lugar bem alto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1v5v7zrm43nky",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que é a legenda de um mapa?",
+     "options": [
+      "a explicação do que cada símbolo significa",
+      "o nome de quem desenhou o mapa",
+      "a data em que o mapa foi feito"
+     ],
+     "answer": "a explicação do que cada símbolo significa",
+     "accept": [],
+     "hint": "Ela ajuda você a \"ler\" os desenhos do mapa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ocargqpj2281",
+     "subject": "bss",
+     "type": "short",
+     "q": "Como se chama o pequeno desenho que representa alguma coisa no mapa, como uma árvore ou uma casa?",
+     "options": [],
+     "answer": "símbolo",
+     "accept": [
+      "simbolo",
+      "símbolos",
+      "um símbolo"
+     ],
+     "hint": "É algo que \"está no lugar\" de outra coisa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ld7ofh1kw3hc2",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Na planta de uma sala de aula, vários retângulos pequenos em fileiras provavelmente representam:",
+     "options": [
+      "as carteiras",
+      "o teto",
+      "as janelas"
+     ],
+     "answer": "as carteiras",
+     "accept": [],
+     "hint": "Pense no que fica arrumado em fileiras no chão da sala.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7lasb01hj3sbw",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Na legenda de muitos mapas, a cor azul costuma representar:",
+     "options": [
+      "água, como rios e lagos",
+      "florestas",
+      "estradas"
+     ],
+     "answer": "água, como rios e lagos",
+     "accept": [],
+     "hint": "Pense na cor do mar nos desenhos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kwvqluifzsvb",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Na legenda de muitos mapas, a cor verde costuma representar:",
+     "options": [
+      "matas e parques",
+      "rios",
+      "prédios"
+     ],
+     "answer": "matas e parques",
+     "accept": [],
+     "hint": "Pense na cor das folhas das árvores.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1t568wv1mlw18i",
+     "subject": "bss",
+     "type": "short",
+     "q": "Em que parte do mapa você procura para saber o que significa cada símbolo?",
+     "options": [],
+     "answer": "legenda",
+     "accept": [
+      "a legenda",
+      "na legenda"
+     ],
+     "hint": "Costuma ficar num quadrinho no canto do mapa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rrbimm6yseq2n",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que usamos símbolos em vez de escrever o nome de tudo no mapa?",
+     "options": [
+      "para o mapa ficar mais simples de ler",
+      "para esconder informações",
+      "porque é proibido escrever no mapa"
+     ],
+     "answer": "para o mapa ficar mais simples de ler",
+     "accept": [],
+     "hint": "Imagine um mapa com palavras escritas em todos os cantinhos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re1tqw0bifgdf",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Rafa está desenhando a planta da escola. Qual símbolo é mais fácil de entender para mostrar o bebedouro?",
+     "options": [
+      "uma gota de água",
+      "uma estrela",
+      "um quadrado preto"
+     ],
+     "answer": "uma gota de água",
+     "accept": [],
+     "hint": "Um bom símbolo lembra a coisa que representa.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18x2pm71irh2c6",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Uma planta mostra o lugar de que tamanho, comparado com o lugar de verdade?",
+     "options": [
+      "menor",
+      "do mesmo tamanho",
+      "maior"
+     ],
+     "answer": "menor",
+     "accept": [],
+     "hint": "Pense se a planta da escola caberia numa folha de papel.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1mpl2ia1srurt3",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes lugares é melhor representado por uma planta?",
+     "options": [
+      "a sala de aula",
+      "o Brasil inteiro",
+      "o planeta Terra"
+     ],
+     "answer": "a sala de aula",
+     "accept": [],
+     "hint": "A planta mostra lugares pequenos com muitos detalhes.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18xovi41ab1da4",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que precisa aparecer em uma legenda?",
+     "options": [
+      "cada símbolo e o seu significado",
+      "o nome de todos os alunos",
+      "a hora do recreio"
+     ],
+     "answer": "cada símbolo e o seu significado",
+     "accept": [],
+     "hint": "A legenda liga um desenho a uma explicação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3zdh4i1dw0j7v",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Na planta de uma casa, onde costuma aparecer a porta?",
+     "options": [
+      "como uma abertura na parede",
+      "como um círculo no meio do quarto",
+      "como uma árvore no jardim"
+     ],
+     "answer": "como uma abertura na parede",
+     "accept": [],
+     "hint": "Pense por onde as pessoas entram e saem de um cômodo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcjzdfk1wz86kr",
+     "subject": "bss",
+     "type": "open",
+     "q": "Imagine a planta do seu quarto. Escolha dois objetos e diga que símbolo você usaria para cada um.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em formas simples que lembrem cada objeto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr1u5sw1jpg8kb",
+     "subject": "bss",
+     "type": "open",
+     "q": "Por que um mapa sem legenda pode ser difícil de entender?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no que você faria se visse um símbolo que não conhece.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Prefixes to change meaning",
+   "questions": [
+    {
+     "id": "r1i8elyf1757fas",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is a prefix?",
+     "options": [
+      "letters added to the start of a word",
+      "letters added to the end of a word",
+      "a type of full stop"
+     ],
+     "answer": "letters added to the start of a word",
+     "accept": [],
+     "hint": "Think about where 'pre' happens: before.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r82jria1wxvpn",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word has a prefix?",
+     "options": [
+      "superstar",
+      "starfish",
+      "starry"
+     ],
+     "answer": "superstar",
+     "accept": [],
+     "hint": "Look for extra letters added before the word 'star'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15angr6nzvh39",
+     "subject": "en",
+     "type": "short",
+     "q": "What is the root word in 'superhero'?",
+     "options": [],
+     "answer": "hero",
+     "accept": [
+      "Hero"
+     ],
+     "hint": "Take away the prefix and see what word is left.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2jj8h2pchvxb",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does the prefix 'super-' mean?",
+     "options": [
+      "above or more than",
+      "against",
+      "self"
+     ],
+     "answer": "above or more than",
+     "accept": [],
+     "hint": "Think about what makes a superhero different from a hero.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r198tjaw17v4k33",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does the prefix 'anti-' mean?",
+     "options": [
+      "against",
+      "self",
+      "again"
+     ],
+     "answer": "against",
+     "accept": [],
+     "hint": "Think about what an anti-slip mat does to slipping.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tf6ss3j5a20g",
+     "subject": "en",
+     "type": "mc",
+     "q": "What does the prefix 'auto-' mean?",
+     "options": [
+      "self or own",
+      "under",
+      "before"
+     ],
+     "answer": "self or own",
+     "accept": [],
+     "hint": "An automatic door opens without anyone pushing it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fev9vkad7bpt",
+     "subject": "en",
+     "type": "short",
+     "q": "Add the prefix 'super' to 'market' and write the new word.",
+     "options": [],
+     "answer": "supermarket",
+     "accept": [
+      "Supermarket"
+     ],
+     "hint": "Join the two parts with no space.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10598ymb4xhdx",
+     "subject": "en",
+     "type": "short",
+     "q": "Add the prefix 'auto' to 'graph' and write the new word.",
+     "options": [],
+     "answer": "autograph",
+     "accept": [
+      "Autograph"
+     ],
+     "hint": "Join the two parts with no space.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rud36zxj66jby",
+     "subject": "en",
+     "type": "mc",
+     "q": "If you turn something anticlockwise, which way does it go?",
+     "options": [
+      "the opposite way to a clock's hands",
+      "the same way as a clock's hands",
+      "straight up"
+     ],
+     "answer": "the opposite way to a clock's hands",
+     "accept": [],
+     "hint": "Remember what 'anti-' means.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r168uiwf1w986g3",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which prefix completes the word for a liquid that stops a car's water from freezing: ___freeze?",
+     "options": [
+      "anti",
+      "super",
+      "auto"
+     ],
+     "answer": "anti",
+     "accept": [],
+     "hint": "The liquid works against the freezing.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rp1ynew1jr3pw3",
+     "subject": "en",
+     "type": "mc",
+     "q": "An autobiography is a book about someone's life written by...",
+     "options": [
+      "that person",
+      "a friend",
+      "a teacher"
+     ],
+     "answer": "that person",
+     "accept": [],
+     "hint": "Remember what 'auto-' means.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rgh949duw5gmk",
+     "subject": "en",
+     "type": "mc",
+     "q": "Choose the correct word: The shop sold food, toys and clothes — it was a huge ___.",
+     "options": [
+      "supermarket",
+      "antimarket",
+      "automarket"
+     ],
+     "answer": "supermarket",
+     "accept": [],
+     "hint": "Which prefix means 'bigger or more than'?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rop39czn9g9ak",
+     "subject": "en",
+     "type": "short",
+     "q": "Which prefix can you add to 'pilot' to name a system that flies a plane by itself?",
+     "options": [],
+     "answer": "auto",
+     "accept": [
+      "auto-"
+     ],
+     "hint": "The system works on its own.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfcg8bj1q2fbfh",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word does NOT have a prefix?",
+     "options": [
+      "antelope",
+      "anticlockwise",
+      "superstar"
+     ],
+     "answer": "antelope",
+     "accept": [],
+     "hint": "Try removing the first letters: is a real word left?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r181j8gf13e9vx0",
+     "subject": "en",
+     "type": "mc",
+     "q": "'Supersonic' means faster than the speed of sound. Which part of the word means 'more than'?",
+     "options": [
+      "super",
+      "sonic",
+      "nic"
+     ],
+     "answer": "super",
+     "accept": [],
+     "hint": "Look at the start of the word.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rpgfp336ew026",
+     "subject": "en",
+     "type": "open",
+     "q": "Explain how adding 'anti-' changes the meaning of 'clockwise'.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about which way a clock's hands move.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en_read": {
+   "topic": "Stories from other cultures: Anansi tales",
+   "questions": [
+    {
+     "id": "r1l371031f6m2am",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "What kind of animal is Anansi in most traditional tales?",
+     "options": [
+      "a spider",
+      "a tortoise",
+      "a lion"
+     ],
+     "answer": "a spider",
+     "accept": [],
+     "hint": "He has eight legs and spins webs.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r17w8f9ilml7bp",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Where in the world do Anansi stories first come from?",
+     "options": [
+      "West Africa",
+      "South America",
+      "Northern Europe"
+     ],
+     "answer": "West Africa",
+     "accept": [],
+     "hint": "They began with storytellers in countries such as Ghana.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz1jxvmem5rsi",
+     "subject": "en_read",
+     "type": "short",
+     "q": "What do we call a character who uses clever tricks to get what they want?",
+     "options": [],
+     "answer": "trickster",
+     "accept": [
+      "a trickster"
+     ],
+     "hint": "The word comes from 'trick'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1kl075j5e6y48",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which word best describes Anansi?",
+     "options": [
+      "cunning",
+      "shy",
+      "lazy-minded"
+     ],
+     "answer": "cunning",
+     "accept": [],
+     "hint": "He always has a clever plan.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1j2jnvb1xruzsd",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "How were folk tales like the Anansi stories first shared?",
+     "options": [
+      "by being told aloud from person to person",
+      "by being printed in newspapers",
+      "by being shown on television"
+     ],
+     "answer": "by being told aloud from person to person",
+     "accept": [],
+     "hint": "Think about how stories travelled long before books.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1p7a1ikb1gjcp",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "In a famous tale, Anansi makes a deal with the Sky God to win...",
+     "options": [
+      "all the stories in the world",
+      "a golden crown",
+      "a new house"
+     ],
+     "answer": "all the stories in the world",
+     "accept": [],
+     "hint": "That is why these tales are sometimes called 'spider stories'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r3i247z18vc7ml",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "To win the stories, Anansi has to capture dangerous creatures. Which of these is one of them?",
+     "options": [
+      "a python",
+      "a polar bear",
+      "a kangaroo"
+     ],
+     "answer": "a python",
+     "accept": [],
+     "hint": "Think of an animal that lives in a warm forest.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6etjl71fh86ex",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "In 'Anansi and the Pot of Wisdom', what does Anansi want to do with the wisdom?",
+     "options": [
+      "keep it all for himself",
+      "share it with everyone",
+      "give it back to the Sky God"
+     ],
+     "answer": "keep it all for himself",
+     "accept": [],
+     "hint": "Think about whether Anansi is generous in this story.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13fr23r6xj5bn",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "How does the story of the Pot of Wisdom end?",
+     "options": [
+      "the pot breaks and wisdom spreads around the world",
+      "Anansi becomes king",
+      "the pot is buried for ever"
+     ],
+     "answer": "the pot breaks and wisdom spreads around the world",
+     "accept": [],
+     "hint": "The ending explains why everyone has a little wisdom.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkoibgg15emeuh",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Anansi tales travelled across the sea and are still told today in which region?",
+     "options": [
+      "the Caribbean",
+      "Antarctica",
+      "the Arctic"
+     ],
+     "answer": "the Caribbean",
+     "accept": [],
+     "hint": "Think of warm islands where many people have West African roots.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10w9brjlq3gmu",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Why do many Anansi tales take place in forests, villages and farms?",
+     "options": [
+      "they show the places where the storytellers lived",
+      "spiders can only live in forests",
+      "the stories were written in a big city"
+     ],
+     "answer": "they show the places where the storytellers lived",
+     "accept": [],
+     "hint": "A story's setting often reflects the culture it comes from.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rdupk391e5yqjw",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Which of these is a typical feature of a folk tale?",
+     "options": [
+      "a lesson or moral",
+      "a table of contents",
+      "a list of facts"
+     ],
+     "answer": "a lesson or moral",
+     "accept": [],
+     "hint": "Think about what the listener should learn.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1i16f6v6ty8nc",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Anansi's tricks sometimes go wrong for him. What lesson does this often teach?",
+     "options": [
+      "being greedy can get you into trouble",
+      "always run as fast as you can",
+      "never talk to animals"
+     ],
+     "answer": "being greedy can get you into trouble",
+     "accept": [],
+     "hint": "Think about why his plans fail.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rbzbhus9i4s7",
+     "subject": "en_read",
+     "type": "mc",
+     "q": "Anansi is small but often beats much bigger animals. What does he use instead of strength?",
+     "options": [
+      "his cleverness",
+      "his loud voice",
+      "his sharp teeth"
+     ],
+     "answer": "his cleverness",
+     "accept": [],
+     "hint": "A trickster wins with ideas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rem8gkxthn0th",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Why do you think a small spider makes a good trickster hero?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about how a small creature must survive among big ones.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r79notr1dwu88n",
+     "subject": "en_read",
+     "type": "open",
+     "q": "Would you like Anansi as a friend? Give one reason.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about his good and bad qualities.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
