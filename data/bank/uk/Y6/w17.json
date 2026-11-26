@@ -1,0 +1,262 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y6",
+ "academic_week": 17,
+ "subjects": {
+  "bss": {
+   "topic": "Constituição de 1988: cidadania, direitos e deveres",
+   "questions": [
+    {
+     "id": "r5c5m411r7ohhg",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que é uma Constituição?",
+     "options": [
+      "A lei mais importante de um país, que organiza o Estado e garante direitos",
+      "Um livro de histórias antigas",
+      "Uma lista de compras do governo",
+      "Um jornal diário"
+     ],
+     "answer": "A lei mais importante de um país, que organiza o Estado e garante direitos",
+     "accept": [],
+     "hint": "Todas as outras leis precisam respeitá-la.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rjl97t1iw1j7m",
+     "subject": "bss",
+     "type": "num",
+     "q": "Em que ano foi promulgada a Constituição brasileira atual?",
+     "options": [],
+     "answer": "1988",
+     "accept": [],
+     "hint": "Ela tem o ano no próprio nome: \"Constituição de ...\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ancq5b1qugxqe",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Como a Constituição de 1988 ficou conhecida?",
+     "options": [
+      "Constituição Cidadã",
+      "Constituição Imperial",
+      "Constituição Secreta",
+      "Constituição Militar"
+     ],
+     "answer": "Constituição Cidadã",
+     "accept": [],
+     "hint": "O apelido tem a ver com cidadania e direitos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rxz09ta1u6fnnt",
+     "subject": "bss",
+     "type": "mc",
+     "q": "A Constituição de 1988 foi feita logo depois de qual período da história do Brasil?",
+     "options": [
+      "Ditadura militar",
+      "Brasil Colônia",
+      "Império",
+      "Era dos descobrimentos"
+     ],
+     "answer": "Ditadura militar",
+     "accept": [],
+     "hint": "Foi um período em que muitos direitos e liberdades foram limitados.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8nfwx81xgh8ga",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Quem escreveu e votou a Constituição de 1988?",
+     "options": [
+      "Uma Assembleia Nacional Constituinte, formada por representantes eleitos",
+      "Um único rei",
+      "Os alunos das escolas",
+      "Um país estrangeiro"
+     ],
+     "answer": "Uma Assembleia Nacional Constituinte, formada por representantes eleitos",
+     "accept": [],
+     "hint": "Os representantes foram escolhidos pelo voto do povo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r182cf381pdp80i",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes é um DIREITO garantido pela Constituição?",
+     "options": [
+      "Educação",
+      "Pagar impostos",
+      "Votar em todas as eleições",
+      "Cumprir as leis"
+     ],
+     "answer": "Educação",
+     "accept": [],
+     "hint": "Direito é algo que a pessoa pode receber ou exigir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1co8fll1bymygc",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes é um DEVER do cidadão?",
+     "options": [
+      "Respeitar as leis",
+      "Ter acesso à saúde",
+      "Ter liberdade de expressão",
+      "Ter moradia"
+     ],
+     "answer": "Respeitar as leis",
+     "accept": [],
+     "hint": "Dever é uma responsabilidade que a pessoa precisa cumprir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqwhhu2fs61pf",
+     "subject": "bss",
+     "type": "mc",
+     "q": "A Constituição diz que todos são iguais perante a lei. Isso significa que:",
+     "options": [
+      "as leis valem para todas as pessoas, sem discriminação",
+      "só os adultos têm direitos",
+      "cada pessoa faz a sua própria lei",
+      "os ricos têm mais direitos"
+     ],
+     "answer": "as leis valem para todas as pessoas, sem discriminação",
+     "accept": [],
+     "hint": "Pense na palavra \"igualdade\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r13ofhpo1d7b1gk",
+     "subject": "bss",
+     "type": "short",
+     "q": "Qual é o nome do regime em que o povo escolhe seus governantes pelo voto?",
+     "options": [],
+     "answer": "democracia",
+     "accept": [
+      "Democracia"
+     ],
+     "hint": "A palavra vem do grego e quer dizer \"governo do povo\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ribsfj2r3e8lh",
+     "subject": "bss",
+     "type": "num",
+     "q": "Segundo a Constituição, a partir de quantos anos o voto é permitido (opcional) no Brasil?",
+     "options": [],
+     "answer": "16",
+     "accept": [],
+     "hint": "É dois anos antes da idade em que o voto se torna obrigatório.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8qdzf61gsp2ra",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Para quem o voto é OBRIGATÓRIO no Brasil?",
+     "options": [
+      "Pessoas alfabetizadas de 18 a 70 anos",
+      "Crianças de 10 anos",
+      "Só pessoas com mais de 70 anos",
+      "Ninguém"
+     ],
+     "answer": "Pessoas alfabetizadas de 18 a 70 anos",
+     "accept": [],
+     "hint": "Para jovens de 16 e 17 anos e idosos acima de 70, o voto é opcional.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1f310me63in5e",
+     "subject": "bss",
+     "type": "mc",
+     "q": "A Constituição divide o poder em três. Quais são eles?",
+     "options": [
+      "Executivo, Legislativo e Judiciário",
+      "Escolar, Familiar e Esportivo",
+      "Norte, Sul e Centro",
+      "Rei, Ministro e Soldado"
+     ],
+     "answer": "Executivo, Legislativo e Judiciário",
+     "accept": [],
+     "hint": "Um governa, outro faz as leis e outro julga.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rcv6oros462xi",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual poder tem a função principal de fazer as leis?",
+     "options": [
+      "Legislativo",
+      "Executivo",
+      "Judiciário"
+     ],
+     "answer": "Legislativo",
+     "accept": [],
+     "hint": "\"Legislar\" quer dizer criar leis.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ctxdwfe0rxei",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que significa ser cidadão?",
+     "options": [
+      "Ter direitos e deveres e participar da vida da sociedade",
+      "Morar em uma cidade grande",
+      "Ter muito dinheiro",
+      "Trabalhar no governo"
+     ],
+     "answer": "Ter direitos e deveres e participar da vida da sociedade",
+     "accept": [],
+     "hint": "Cidadania não depende de onde a pessoa mora.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r11ycw9bvkecnf",
+     "subject": "bss",
+     "type": "open",
+     "q": "Explique por que a Constituição de 1988 é considerada um marco da democracia no Brasil.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense no período que veio antes dela e nos direitos que ela garantiu.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rorgxzp17kti6u",
+     "subject": "bss",
+     "type": "open",
+     "q": "Dê um exemplo de um direito e de um dever que fazem parte do seu dia a dia e explique cada um.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na escola, na rua e em casa.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}
