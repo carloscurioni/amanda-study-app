@@ -1,0 +1,512 @@
+{
+ "version": 1,
+ "curriculum": "uk",
+ "year": "Y4",
+ "academic_week": 17,
+ "subjects": {
+  "bss": {
+   "topic": "Formas de relevo: montanhas, planaltos, planícies e depressões",
+   "questions": [
+    {
+     "id": "r1uqs09h1m53qfw",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que é relevo?",
+     "options": [
+      "o conjunto das formas da superfície da Terra",
+      "a quantidade de chuva de um lugar",
+      "o tipo de vegetação de uma região"
+     ],
+     "answer": "o conjunto das formas da superfície da Terra",
+     "accept": [],
+     "hint": "Pense nas partes altas e baixas do terreno.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2xm4h7rntmwv",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual forma de relevo é muito alta e tem encostas íngremes?",
+     "options": [
+      "montanha",
+      "planície",
+      "depressão"
+     ],
+     "answer": "montanha",
+     "accept": [],
+     "hint": "Escalar essa forma de relevo dá bastante trabalho.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1oaeouwp646vd",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Como é uma planície?",
+     "options": [
+      "um terreno plano e baixo, geralmente perto de rios ou do mar",
+      "um terreno muito alto e pontudo",
+      "um buraco no meio de montanhas"
+     ],
+     "answer": "um terreno plano e baixo, geralmente perto de rios ou do mar",
+     "accept": [],
+     "hint": "Pense em um lugar onde os rios deixam areia e barro.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r10z495q14en1bn",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Como é um planalto?",
+     "options": [
+      "um terreno elevado e com a parte de cima mais ou menos plana",
+      "um terreno abaixo do nível do mar",
+      "uma praia de areia"
+     ],
+     "answer": "um terreno elevado e com a parte de cima mais ou menos plana",
+     "accept": [],
+     "hint": "O nome junta 'plano' e 'alto'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rc93a6u1wjwekl",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O que é uma depressão no relevo?",
+     "options": [
+      "uma área mais baixa que os terrenos ao seu redor",
+      "a montanha mais alta de um país",
+      "uma ilha no meio do mar"
+     ],
+     "answer": "uma área mais baixa que os terrenos ao seu redor",
+     "accept": [],
+     "hint": "Pense em algo afundado em relação ao que está em volta.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd25k2pejr1cf",
+     "subject": "bss",
+     "type": "short",
+     "q": "A cidade de São Paulo fica em qual forma de relevo?",
+     "options": [],
+     "answer": "planalto",
+     "accept": [
+      "um planalto",
+      "Planalto Atlântico"
+     ],
+     "hint": "É um terreno alto e quase plano, bem acima do nível do mar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n3xb1cop587z",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual serra separa a cidade de São Paulo do litoral paulista?",
+     "options": [
+      "Serra do Mar",
+      "Serra da Canastra",
+      "Serra Gaúcha"
+     ],
+     "answer": "Serra do Mar",
+     "accept": [],
+     "hint": "Quem desce de São Paulo para a praia passa por ela.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1hmhu2b1uaz6z2",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Ao descer de São Paulo até Santos, o terreno vai...",
+     "options": [
+      "do planalto até a planície do litoral",
+      "da planície até o planalto",
+      "de uma montanha até outra montanha"
+     ],
+     "answer": "do planalto até a planície do litoral",
+     "accept": [],
+     "hint": "Santos fica à beira-mar, bem mais baixo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rqyw1tz3cy033",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual é o ponto mais alto do Brasil?",
+     "options": [
+      "Pico da Neblina",
+      "Pão de Açúcar",
+      "Morro do Corcovado"
+     ],
+     "answer": "Pico da Neblina",
+     "accept": [],
+     "hint": "Fica no norte do Brasil, quase sempre coberto por nuvens.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1czclih1cutvte",
+     "subject": "bss",
+     "type": "mc",
+     "q": "O Pantanal é uma grande área plana e baixa que alaga na época das chuvas. Que forma de relevo ele é?",
+     "options": [
+      "planície",
+      "montanha",
+      "planalto"
+     ],
+     "answer": "planície",
+     "accept": [],
+     "hint": "Terreno plano e baixo, onde a água se espalha.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12ac2dw11qcb04",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual destes lugares fica em uma planície?",
+     "options": [
+      "uma praia à beira-mar",
+      "o alto de um pico",
+      "o topo de uma serra"
+     ],
+     "answer": "uma praia à beira-mar",
+     "accept": [],
+     "hint": "Procure o lugar mais baixo e plano.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lamnr6iogzsm",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Em qual forma de relevo os rios costumam depositar areia e barro?",
+     "options": [
+      "planície",
+      "montanha",
+      "pico"
+     ],
+     "answer": "planície",
+     "accept": [],
+     "hint": "A água corre devagar em terrenos baixos e planos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19bqu6pda2q22",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Por que muitas cidades foram construídas em planícies e planaltos?",
+     "options": [
+      "porque é mais fácil construir casas e estradas em terrenos planos",
+      "porque lá nunca chove",
+      "porque não existem rios nesses lugares"
+     ],
+     "answer": "porque é mais fácil construir casas e estradas em terrenos planos",
+     "accept": [],
+     "hint": "Pense em como seria construir uma rua numa encosta íngreme.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvss9efbe049x",
+     "subject": "bss",
+     "type": "mc",
+     "q": "Qual frase compara corretamente o planalto e a planície?",
+     "options": [
+      "os dois são planos, mas o planalto é mais alto",
+      "os dois são muito pontudos",
+      "a planície é sempre mais alta que o planalto"
+     ],
+     "answer": "os dois são planos, mas o planalto é mais alto",
+     "accept": [],
+     "hint": "Lembre o que cada nome quer dizer.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1x3ll0b1n3fbbq",
+     "subject": "bss",
+     "type": "open",
+     "q": "Imagine que você vai de carro de São Paulo até a praia. Descreva como o relevo muda pelo caminho.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Use as palavras planalto, serra e planície.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r9ivrl01x9jbp5",
+     "subject": "bss",
+     "type": "open",
+     "q": "Por que o relevo pode atrapalhar ou ajudar a construção de uma estrada? Dê um exemplo.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em subidas, curvas e terrenos planos.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "en": {
+   "topic": "Precise instructions and procedural texts",
+   "questions": [
+    {
+     "id": "r4a8r0f64j3u0",
+     "subject": "en",
+     "type": "mc",
+     "q": "What is the main purpose of a procedural text?",
+     "options": [
+      "to tell the reader how to do or make something",
+      "to tell a made-up story",
+      "to describe a person's life"
+     ],
+     "answer": "to tell the reader how to do or make something",
+     "accept": [],
+     "hint": "Think of a recipe or a set of game rules.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz6b6ul7gsd7u",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which of these is a procedural text?",
+     "options": [
+      "a recipe for banana bread",
+      "a fairy tale about a dragon",
+      "a poem about the sea"
+     ],
+     "answer": "a recipe for banana bread",
+     "accept": [],
+     "hint": "Which one has steps to follow?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd78hrw18wrf4a",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which sentence is written as an instruction (using an imperative verb)?",
+     "options": [
+      "Pour the water into the jug.",
+      "The water was in the jug.",
+      "I like water."
+     ],
+     "answer": "Pour the water into the jug.",
+     "accept": [],
+     "hint": "Instructions usually start with a bossy verb.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15f2ht9ut51c7",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which section usually comes first in a set of instructions?",
+     "options": [
+      "a list of what you will need",
+      "the final step",
+      "a warning at the very end"
+     ],
+     "answer": "a list of what you will need",
+     "accept": [],
+     "hint": "You need to get everything ready before you start.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1k8eb4ekeetbk",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which adverb makes this instruction more precise? 'Stir the mixture ___ so it doesn't spill.'",
+     "options": [
+      "gently",
+      "loudly",
+      "yesterday"
+     ],
+     "answer": "gently",
+     "accept": [],
+     "hint": "Think about how you stir something without splashing it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rsrzbir1bfm4sk",
+     "subject": "en",
+     "type": "short",
+     "q": "Find the adverb in this instruction: 'Carefully cut the paper along the dotted line.'",
+     "options": [],
+     "answer": "Carefully",
+     "accept": [
+      "carefully"
+     ],
+     "hint": "It tells you how to cut.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1gt4mcyixbvpd",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which instruction is the most precise?",
+     "options": [
+      "Bake the cake for 25 minutes at 180°C.",
+      "Bake the cake for a while.",
+      "Put the cake in somewhere hot."
+     ],
+     "answer": "Bake the cake for 25 minutes at 180°C.",
+     "accept": [],
+     "hint": "Look for exact numbers.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6yqbbq2yeyla",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which word is a time connective that helps put steps in order?",
+     "options": [
+      "Next",
+      "Blue",
+      "Happy"
+     ],
+     "answer": "Next",
+     "accept": [],
+     "hint": "It tells you when to do something.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16yhgjj1uo8fte",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which of these is a warning for the reader?",
+     "options": [
+      "Be careful: the pan will be very hot!",
+      "You will need two eggs.",
+      "Step 3: add the flour."
+     ],
+     "answer": "Be careful: the pan will be very hot!",
+     "accept": [],
+     "hint": "A warning helps keep the reader safe.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "resff2p1dzkrhj",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which of these is a helpful tip?",
+     "options": [
+      "Tip: wet your hands so the dough doesn't stick.",
+      "Step 1: wash your hands.",
+      "Banana bread is tasty."
+     ],
+     "answer": "Tip: wet your hands so the dough doesn't stick.",
+     "accept": [],
+     "hint": "A tip gives extra advice to make the task easier.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1byur6829w7a5",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which adverb best completes this instruction? 'Hold the glass ___ with both hands.'",
+     "options": [
+      "firmly",
+      "quickly",
+      "sadly"
+     ],
+     "answer": "firmly",
+     "accept": [],
+     "hint": "You don't want to drop it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r40j1qu5gl5l1",
+     "subject": "en",
+     "type": "mc",
+     "q": "Why are numbered steps useful in instructions?",
+     "options": [
+      "they show the reader the order to do things",
+      "they make the text longer",
+      "they tell the reader a story"
+     ],
+     "answer": "they show the reader the order to do things",
+     "accept": [],
+     "hint": "Think about what would happen if you did the steps in the wrong order.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnawhzp17wr6ji",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which instruction is clearer for a reader?",
+     "options": [
+      "Fold the paper in half from top to bottom.",
+      "Fold it.",
+      "Do the paper thing."
+     ],
+     "answer": "Fold the paper in half from top to bottom.",
+     "accept": [],
+     "hint": "A clear instruction says exactly what and how.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1lxlorn11t7ls7",
+     "subject": "en",
+     "type": "mc",
+     "q": "Which is the best title for a procedural text?",
+     "options": [
+      "How to Plant a Sunflower Seed",
+      "The Sunflower Who Could Talk",
+      "My Favourite Flower"
+     ],
+     "answer": "How to Plant a Sunflower Seed",
+     "accept": [],
+     "hint": "Procedural titles often start with 'How to'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs2p3rk10ntwg1",
+     "subject": "en",
+     "type": "open",
+     "q": "Rewrite this instruction to make it more precise, adding an adverb and an exact amount: 'Add some water to the paint.'",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Say how much water and how to add it.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rigwyi410tlls0",
+     "subject": "en",
+     "type": "open",
+     "q": "Write one tip or one warning for someone learning to ride a bike.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what could go wrong or what makes it easier.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  }
+ },
+ "books": []
+}

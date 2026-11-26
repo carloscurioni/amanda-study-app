@@ -1746,7 +1746,1387 @@
      "errors": []
     }
    ]
+  },
+  "pt_leit": {
+   "topic": "Lendas indígenas: a mandioca e a vitória-régia",
+   "questions": [
+    {
+     "id": "r1qwjz0y14ry3d5",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que uma lenda indígena costuma explicar?",
+     "options": [
+      "a origem de plantas, animais ou coisas da natureza",
+      "como funciona um computador",
+      "as regras de um jogo de futebol"
+     ],
+     "answer": "a origem de plantas, animais ou coisas da natureza",
+     "accept": [],
+     "hint": "Pense nas lendas da mandioca e da vitória-régia: o que elas contam?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1qm8mrm1t0hnj9",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Como as lendas indígenas foram passadas de geração em geração por muito tempo?",
+     "options": [
+      "contadas em voz alta pelos mais velhos",
+      "enviadas por e-mail",
+      "impressas em jornais"
+     ],
+     "answer": "contadas em voz alta pelos mais velhos",
+     "accept": [],
+     "hint": "Pense em como os avós contam histórias para os netos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r80v40r1h283ld",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na lenda da mandioca, qual é o nome da menina?",
+     "options": [
+      "Mani",
+      "Naiá",
+      "Jaci"
+     ],
+     "answer": "Mani",
+     "accept": [],
+     "hint": "O nome dela aparece dentro da palavra mandioca.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1sfzgt6oaon0r",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na lenda, onde a menina Mani foi enterrada?",
+     "options": [
+      "dentro da oca onde morava",
+      "no alto de uma montanha",
+      "na beira do mar"
+     ],
+     "answer": "dentro da oca onde morava",
+     "accept": [],
+     "hint": "A palavra mandioca lembra 'casa de Mani'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "riggmfvnozjy6",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Na lenda, que planta nasceu no lugar onde Mani foi enterrada?",
+     "options": [],
+     "answer": "mandioca",
+     "accept": [
+      "a mandioca"
+     ],
+     "hint": "É uma raiz usada para fazer farinha e tapioca.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7kkvb01ew858v",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "De acordo com a lenda, de onde vem a palavra mandioca?",
+     "options": [
+      "de Mani + oca, a casa de Mani",
+      "de mão + doce",
+      "de mandar + ir"
+     ],
+     "answer": "de Mani + oca, a casa de Mani",
+     "accept": [],
+     "hint": "Oca é a casa de muitos povos indígenas.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ryfw618ftz3lz",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Na lenda da vitória-régia, por quem a jovem Naiá era apaixonada?",
+     "options": [
+      "pela Lua",
+      "pelo Sol",
+      "por um peixe"
+     ],
+     "answer": "pela Lua",
+     "accept": [],
+     "hint": "Ela olhava para o céu todas as noites.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rjbi7c5lvgkmu",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Na lenda, qual é o nome indígena da Lua?",
+     "options": [],
+     "answer": "Jaci",
+     "accept": [],
+     "hint": "Começa com a letra J.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "royfzm9k1856f",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que Naiá entrou no lago, na lenda?",
+     "options": [
+      "achou que o reflexo da Lua na água era a própria Lua",
+      "queria pescar",
+      "estava com calor"
+     ],
+     "answer": "achou que o reflexo da Lua na água era a própria Lua",
+     "accept": [],
+     "hint": "Pense no que aparece na água parada à noite.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tnlgoc1axgzzi",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em que a Lua transformou Naiá, no fim da lenda?",
+     "options": [
+      "numa grande flor das águas, a vitória-régia",
+      "numa árvore alta",
+      "num pássaro colorido"
+     ],
+     "answer": "numa grande flor das águas, a vitória-régia",
+     "accept": [],
+     "hint": "O nome da lenda já dá uma pista.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvu51dd6bneg3",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Por que a vitória-régia é chamada de 'estrela das águas' na lenda?",
+     "options": [
+      "porque Naiá queria virar estrela e virou uma flor que brilha no lago",
+      "porque ela cai do céu",
+      "porque só nasce no deserto"
+     ],
+     "answer": "porque Naiá queria virar estrela e virou uma flor que brilha no lago",
+     "accept": [],
+     "hint": "Lembre o que Naiá mais desejava.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs8t8af1dxrd2e",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destas frases é um bom começo para uma lenda?",
+     "options": [
+      "Há muito tempo, quando ainda não existia a mandioca...",
+      "Ontem, no supermercado...",
+      "Receita: misture dois ovos..."
+     ],
+     "answer": "Há muito tempo, quando ainda não existia a mandioca...",
+     "accept": [],
+     "hint": "Lendas falam de um tempo bem antigo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfz5pxaghh81p",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que as lendas da mandioca e da vitória-régia têm em comum?",
+     "options": [
+      "as duas explicam como surgiu uma planta",
+      "as duas se passam numa cidade grande",
+      "as duas falam de um carro"
+     ],
+     "answer": "as duas explicam como surgiu uma planta",
+     "accept": [],
+     "hint": "Compare o final das duas histórias.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wr49jzqjl5d4",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual atitude mostra respeito pelas culturas indígenas?",
+     "options": [
+      "ouvir e aprender com as histórias desses povos",
+      "rir das histórias dos outros povos",
+      "dizer que só existe uma forma certa de viver"
+     ],
+     "answer": "ouvir e aprender com as histórias desses povos",
+     "accept": [],
+     "hint": "Pense em como você gostaria que tratassem as histórias da sua família.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rd6011trgwgjh",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Por que você acha que os povos indígenas criavam lendas para explicar a origem das plantas?",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense na importância das plantas para a vida e a alimentação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rb0p1qn5saznv",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Se você fosse criar uma lenda, que coisa da natureza você explicaria? Conte como ela começaria.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Escolha algo como o arco-íris, a chuva ou uma fruta.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_ort": {
+   "topic": "A letra Z",
+   "questions": [
+    {
+     "id": "rmdo29bq3d0f0",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: _ero (o número que vem antes do um).",
+     "options": [],
+     "answer": "zero",
+     "accept": [],
+     "hint": "Tem som de Z no começo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r18gbvo71skfo17",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está escrita corretamente?",
+     "options": [
+      "azul",
+      "asul",
+      "açul"
+     ],
+     "answer": "azul",
+     "accept": [],
+     "hint": "É a cor do céu, com som de Z no meio.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs2tqpywiri62",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: bu_ina (o som que o carro faz).",
+     "options": [],
+     "answer": "buzina",
+     "accept": [],
+     "hint": "Bi-bi! O som do meio é de Z.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rexesupxjn2ww",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Doze ovos formam uma...",
+     "options": [
+      "dúzia",
+      "dúsia",
+      "dúcia"
+     ],
+     "answer": "dúzia",
+     "accept": [],
+     "hint": "A palavra tem som de Z antes do 'ia'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rz1pxk81xf1ip7",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: vi_inho (quem mora na casa ao lado).",
+     "options": [],
+     "answer": "vizinho",
+     "accept": [],
+     "hint": "Lembre a palavra 'vizinhança'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yhi6h1rrims8",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra vem de 'belo' e se escreve com Z?",
+     "options": [
+      "beleza",
+      "belesa",
+      "beleça"
+     ],
+     "answer": "beleza",
+     "accept": [],
+     "hint": "Palavras que dizem 'como a coisa é', vindas de adjetivos, costumam terminar em -eza.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yvy871aospv3",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: pra_er (como em 'Muito ___ em conhecer você!').",
+     "options": [],
+     "answer": "prazer",
+     "accept": [],
+     "hint": "O som do meio é de Z e a letra também.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1yc5rwk1lix0e2",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Em qual palavra a letra S tem som de Z?",
+     "options": [
+      "casa",
+      "sapo",
+      "sol"
+     ],
+     "answer": "casa",
+     "accept": [],
+     "hint": "O S entre duas vogais costuma ter som de Z.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "royv1z61c8weg",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual par de palavras tem o mesmo som de Z, mas letras diferentes?",
+     "options": [
+      "mesa e beleza",
+      "sapo e zebra",
+      "sol e zero"
+     ],
+     "answer": "mesa e beleza",
+     "accept": [],
+     "hint": "Procure as palavras em que o som de Z aparece entre vogais.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ymahmvs8uqim",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra se escreve com S, mesmo tendo som de Z?",
+     "options": [
+      "rosa",
+      "zero",
+      "azul"
+     ],
+     "answer": "rosa",
+     "accept": [],
+     "hint": "É o nome de uma flor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rixwq4q3rlp24",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual frase está escrita corretamente?",
+     "options": [
+      "Meu vizinho tem um carro azul.",
+      "Meu visinho tem um carro asul.",
+      "Meu vizinho tem um carro asul."
+     ],
+     "answer": "Meu vizinho tem um carro azul.",
+     "accept": [],
+     "hint": "Confira as duas palavras com som de Z.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19giolzu58c70",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado.",
+     "options": [],
+     "answer": "batisado → batizado; visinha → vizinha; cosinha → cozinha; dúsia → dúzia; belesa → beleza",
+     "accept": [],
+     "hint": "Procure palavras com som de Z escritas com S.",
+     "text": "No sábado, fomos ao batisado do bebê da nossa visinha. Na cosinha, havia uma dúsia de bolos lindos. Que belesa! A mesa tinha uma toalha azul e flores cor-de-rosa. Foi um grande prazer ver toda a família reunida.",
+     "errors": [
+      {
+       "wrong": "batisado",
+       "right": "batizado"
+      },
+      {
+       "wrong": "visinha",
+       "right": "vizinha"
+      },
+      {
+       "wrong": "cosinha",
+       "right": "cozinha"
+      },
+      {
+       "wrong": "dúsia",
+       "right": "dúzia"
+      },
+      {
+       "wrong": "belesa",
+       "right": "beleza"
+      }
+     ]
+    },
+    {
+     "id": "r1mj744wg44zcw",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: co_inha (o lugar da casa onde ficam o fogão e a geladeira).",
+     "options": [],
+     "answer": "cozinha",
+     "accept": [],
+     "hint": "O som que falta é de Z, igual ao de 'azul'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r175e5zt7tdd1i",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a forma certa de escrever o nome do fecho da mochila?",
+     "options": [
+      "zíper",
+      "síper",
+      "zipér"
+     ],
+     "answer": "zíper",
+     "accept": [],
+     "hint": "Ela começa com a mesma letra de 'zebra'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r12otwlq495j4t",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Como se escreve a festa em que o bebê recebe o nome?",
+     "options": [
+      "batizado",
+      "batisado",
+      "batissado"
+     ],
+     "answer": "batizado",
+     "accept": [],
+     "hint": "Pense no verbo 'batizar'.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15g2qux1qoqhop",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 4 palavras escritas errado.",
+     "options": [],
+     "answer": "visinho → vizinho; síper → zíper; praser → prazer; bussina → buzina",
+     "accept": [],
+     "hint": "Procure palavras com som de Z escritas com S ou com dois S.",
+     "text": "O ônibus azul parou na esquina. Meu visinho correu, mas o síper da mochila abriu e os lápis caíram no chão. Ele contou: zero, um, dois, três... Que praser foi ajudar! No fim, o motorista tocou a bussina para nos agradecer, e todos riram juntos.",
+     "errors": [
+      {
+       "wrong": "visinho",
+       "right": "vizinho"
+      },
+      {
+       "wrong": "síper",
+       "right": "zíper"
+      },
+      {
+       "wrong": "praser",
+       "right": "prazer"
+      },
+      {
+       "wrong": "bussina",
+       "right": "buzina"
+      }
+     ]
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "As Lendas da Dona Araci",
+   "premise": "Nas férias na casa da avó, Lia e o irmão Davi participam de uma roda de histórias na biblioteca da cidade. A cada dia, a contadora dona Araci apresenta uma lenda indígena que explica a origem de algo, e as crianças aprendem a valorizar as histórias e a cultura dos povos indígenas.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: A roda de histórias",
+     "synopsis": "Lia e o irmão Davi passam as férias na casa da avó, perto de um rio. Na biblioteca da cidade, conhecem dona Araci, que conta a lenda da mandioca.",
+     "text": "Nas férias de julho, Lia e o irmão mais novo, Davi, foram passar uns dias na casa da vó Lurdes, numa cidadezinha à beira de um rio largo e calmo. Logo no primeiro dia, Lia reclamou:\n— Aqui não tem nada para fazer!\nA avó sorriu e levou os dois até a pequena biblioteca da praça. Lá, numa sala cheia de almofadas, havia uma roda de crianças sentadas no chão. No meio, estava dona Araci, uma senhora de cabelos brancos e voz suave.\n— Hoje vou contar uma lenda que aprendi com a minha avó, que era indígena — disse ela. — Lendas são histórias antigas que explicam como as coisas surgiram.\nE começou: há muito tempo, numa aldeia, nasceu uma menina de pele muito clara, chamada Mani. Ela era alegre e todos a amavam. Mas, quando fez um ano, Mani adoeceu e partiu, sem que ninguém soubesse por quê. A família, com muita saudade, enterrou a menina dentro da oca onde moravam e regava o lugar todos os dias.\nUm dia, ali brotou uma planta diferente. Quando cavaram a terra, encontraram uma raiz grossa, marrom por fora e branquinha por dentro, como a pele de Mani. Deram a ela o nome de mandioca, que quer dizer \"casa de Mani\".\n— E é dessa raiz que se faz a farinha e a tapioca — completou dona Araci.\nDavi arregalou os olhos.\n— A tapioca que a vó faz no café da manhã?\nTodos riram. Na volta para casa, Lia ia calada, pensando na menina Mani. Antes de dormir, ela perguntou à avó:\n— Vó, amanhã tem mais história?\n— Tem, sim. Dona Araci conta uma por dia.\nLia sorriu. Talvez as férias não fossem tão sem graça assim.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para onde Lia e Davi foram nas férias?",
+       "options": [
+        "para a casa da vó Lurdes",
+        "para uma praia",
+        "para uma fazenda de amigos"
+       ],
+       "answer": "para a casa da vó Lurdes",
+       "accept": [],
+       "hint": "Releia o primeiro parágrafo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da senhora que conta as histórias?",
+       "options": [],
+       "answer": "dona Araci",
+       "accept": [
+        "Araci"
+       ],
+       "hint": "Ela tem cabelos brancos e voz suave.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde acontecia a roda de histórias?",
+       "options": [
+        "na biblioteca da praça",
+        "na escola",
+        "na beira do rio"
+       ],
+       "answer": "na biblioteca da praça",
+       "accept": [],
+       "hint": "A avó levou as crianças até lá.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com quem dona Araci aprendeu a lenda?",
+       "options": [
+        "com a avó dela",
+        "com um professor",
+        "num livro da biblioteca"
+       ],
+       "answer": "com a avó dela",
+       "accept": [],
+       "hint": "Ela conta isso antes de começar a lenda.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como era a raiz que brotou na oca?",
+       "options": [
+        "marrom por fora e branca por dentro",
+        "vermelha e doce",
+        "verde e cheia de espinhos"
+       ],
+       "answer": "marrom por fora e branca por dentro",
+       "accept": [],
+       "hint": "Ela lembrava a pele de Mani.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que quer dizer a palavra mandioca, segundo a lenda?",
+       "options": [
+        "casa de Mani",
+        "raiz da floresta",
+        "comida da aldeia"
+       ],
+       "answer": "casa de Mani",
+       "accept": [],
+       "hint": "Pense em onde Mani foi enterrada.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Lia se sente no começo e no fim?",
+       "options": [
+        "entediada no começo e animada no fim",
+        "feliz no começo e triste no fim",
+        "com medo o tempo todo"
+       ],
+       "answer": "entediada no começo e animada no fim",
+       "accept": [],
+       "hint": "Compare a reclamação dela com a última pergunta à avó.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a família regava todos os dias o lugar onde Mani foi enterrada?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense na saudade que eles sentiam.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A estrela das águas",
+     "synopsis": "Dona Araci conta a lenda da vitória-régia, a história de Naiá, que sonhava virar estrela. À noite, Lia e Davi vão ao rio ver a flor.",
+     "text": "No dia seguinte, Lia chegou cedo à biblioteca e escolheu a almofada mais perto de dona Araci. Davi sentou ao lado, abraçado aos joelhos.\n— Hoje a lenda é de uma flor que mora na água — anunciou a contadora.\nHá muito tempo, contava-se numa aldeia que Jaci, a Lua, às vezes descia atrás das montanhas e levava as moças mais bonitas para o céu, transformando-as em estrelas. Uma jovem chamada Naiá sonhava com isso. Toda noite, ela subia nos morros e esticava os braços para alcançar a Lua, mas a Lua estava sempre longe demais.\nUma noite, Naiá chegou à beira de um lago. A água estava tão parada que parecia um espelho, e lá dentro brilhava a Lua, redonda e prateada.\n— Jaci veio me buscar! — pensou ela.\nNaiá se inclinou para tocar a Lua e caiu no lago. Não voltou mais. Jaci, comovida, quis recompensar aquela moça tão corajosa. Como não podia levá-la para o céu, transformou Naiá numa estrela das águas: uma flor enorme, de folhas redondas como bandejas, que se abre à noite para receber a luz da Lua. Era a vitória-régia.\nQuando a história acabou, Davi levantou a mão.\n— Essa flor existe de verdade?\n— Existe, sim — respondeu dona Araci. — Ela vive nos rios e lagos da Amazônia. E aqui no rio da cidade há um viveiro com algumas.\nNaquela noite, a vó Lurdes levou os netos até o viveiro. Com uma lanterna, eles viram as folhas gigantes boiando e uma flor branca se abrindo devagar.\n— Parece mesmo uma estrela — sussurrou Lia.\nDavi não disse nada. Ficou só olhando, com a boca aberta, até a avó chamar para ir embora.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, sobre o que é a lenda de hoje?",
+       "options": [
+        "uma flor que mora na água",
+        "um peixe que fala",
+        "uma árvore gigante"
+       ],
+       "answer": "uma flor que mora na água",
+       "accept": [],
+       "hint": "Dona Araci anuncia isso logo no começo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da jovem da lenda?",
+       "options": [],
+       "answer": "Naiá",
+       "accept": [
+        "Naia"
+       ],
+       "hint": "O nome começa com N.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Naiá mais desejava?",
+       "options": [
+        "ser levada pela Lua e virar estrela",
+        "aprender a nadar",
+        "morar em outra aldeia"
+       ],
+       "answer": "ser levada pela Lua e virar estrela",
+       "accept": [],
+       "hint": "Ela esticava os braços para o céu.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Naiá viu dentro do lago?",
+       "options": [
+        "o reflexo da Lua",
+        "um peixe dourado",
+        "uma pedra brilhante"
+       ],
+       "answer": "o reflexo da Lua",
+       "accept": [],
+       "hint": "A água parada parecia um espelho.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como são as folhas da vitória-régia?",
+       "options": [
+        "redondas como bandejas",
+        "finas como agulhas",
+        "pequenas como moedas"
+       ],
+       "answer": "redondas como bandejas",
+       "accept": [],
+       "hint": "Releia a parte da transformação.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a vitória-régia vive na natureza?",
+       "options": [
+        "nos rios e lagos da Amazônia",
+        "no alto das montanhas",
+        "no deserto"
+       ],
+       "answer": "nos rios e lagos da Amazônia",
+       "accept": [],
+       "hint": "Dona Araci responde a pergunta de Davi.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi fica de boca aberta no viveiro?",
+       "options": [
+        "porque está encantado com a flor",
+        "porque está com sono",
+        "porque está com medo do escuro"
+       ],
+       "answer": "porque está encantado com a flor",
+       "accept": [],
+       "hint": "Pense no que ele viu se abrindo devagar.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a Lua quis transformar Naiá numa flor em vez de deixá-la sumir para sempre?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que a Lua sentiu ao ver o que aconteceu.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: O caroço da noite",
+     "synopsis": "Num dia de chuva, dona Araci conta uma lenda sobre como a noite surgiu. Davi, que tem medo do escuro, começa a ver a noite de outro jeito.",
+     "text": "No terceiro dia, choveu forte. Lia achou que a roda de histórias seria cancelada, mas a biblioteca estava aberta e cheia de crianças com capas de chuva.\nDavi estava emburrado. Na noite anterior, tinha acordado assustado no escuro e chamado a avó.\n— Eu não gosto da noite — confessou ele para dona Araci.\nA contadora sorriu.\n— Então hoje vou contar como a noite chegou ao mundo, numa lenda que muitos povos indígenas contam de jeitos diferentes.\nHá muito tempo, dizia a lenda, só existia o dia. O sol brilhava sem parar, e ninguém conseguia descansar direito. A filha da Cobra Grande, que morava no fundo do rio, casou-se com um rapaz de uma aldeia. Ela estava sempre cansada e disse:\n— A noite está guardada com o meu pai. Sem ela, não consigo dormir.\nO rapaz mandou três ajudantes buscarem a noite. A Cobra Grande entregou a eles um caroço de tucumã bem fechado e avisou:\n— Não abram no caminho!\nMas, no meio da viagem, os ajudantes ouviram barulhinhos dentro do caroço: cri-cri, uh-uh, coaxar de sapos. A curiosidade foi maior. Eles abriram o caroço e a escuridão escapou, espalhando-se por toda a floresta. Desde então, o mundo tem dia e noite, e todos podem descansar.\n— E os barulhinhos? — perguntou Davi.\n— Eram os bichos da noite: grilos, corujas e sapos — explicou dona Araci. — Eles saíram junto com a escuridão.\nNaquela noite, Davi deitou e ficou quieto, prestando atenção. Lá fora, um grilo cantava e um sapo coaxava perto do rio.\n— Lia, está ouvindo? São os bichos do caroço.\nPela primeira vez nas férias, Davi dormiu sem chamar a avó.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como estava o tempo no terceiro dia?",
+       "options": [
+        "chovia forte",
+        "fazia muito sol",
+        "ventava e nevava"
+       ],
+       "answer": "chovia forte",
+       "accept": [],
+       "hint": "As crianças chegaram de capa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi estava emburrado?",
+       "options": [
+        "porque tinha acordado assustado no escuro",
+        "porque perdeu um brinquedo",
+        "porque brigou com Lia"
+       ],
+       "answer": "porque tinha acordado assustado no escuro",
+       "accept": [],
+       "hint": "Releia o que aconteceu na noite anterior.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como era o mundo antes da noite, segundo a lenda?",
+       "options": [
+        "só existia o dia",
+        "só existia a chuva",
+        "só existia o inverno"
+       ],
+       "answer": "só existia o dia",
+       "accept": [],
+       "hint": "O sol brilhava sem parar.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, dentro de que caroço a noite estava guardada?",
+       "options": [],
+       "answer": "tucumã",
+       "accept": [
+        "caroço de tucumã",
+        "um caroço de tucumã"
+       ],
+       "hint": "É o caroço de uma fruta de palmeira.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que os ajudantes abriram o caroço?",
+       "options": [
+        "porque ficaram curiosos com os barulhinhos",
+        "porque estavam com fome",
+        "porque a Cobra Grande mandou"
+       ],
+       "answer": "porque ficaram curiosos com os barulhinhos",
+       "accept": [],
+       "hint": "Eles ouviram sons lá dentro.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que eram os barulhinhos do caroço?",
+       "options": [
+        "os bichos da noite",
+        "o barulho da chuva",
+        "os ajudantes cantando"
+       ],
+       "answer": "os bichos da noite",
+       "accept": [],
+       "hint": "Dona Araci explica a Davi.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que mostra que Davi mudou no fim?",
+       "options": [
+        "ele dormiu sem chamar a avó",
+        "ele foi brincar na chuva",
+        "ele pediu outra história"
+       ],
+       "answer": "ele dormiu sem chamar a avó",
+       "accept": [],
+       "hint": "Releia a última frase.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a lenda ajudou Davi a perder um pouco do medo do escuro?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que ele passou a ouvir à noite.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O fogo da onça",
+     "synopsis": "Dona Araci conta uma lenda sobre como as pessoas conseguiram o fogo. Lia descobre que lendas diferentes têm um jeito parecido de começar e de terminar.",
+     "text": "Na quarta manhã, Lia levou um caderno para a biblioteca.\n— Para que isso? — quis saber Davi.\n— Vou anotar as lendas para não esquecer.\nDona Araci achou a ideia ótima e começou a contar. Há muito tempo, as pessoas comiam tudo cru e passavam frio nas noites da floresta. Só uma onça-pintada conhecia o fogo e o guardava na sua toca, longe de todos.\nUm dia, um menino se perdeu na mata. A onça o encontrou, mas, em vez de assustá-lo, levou o menino para a toca. Lá, ele viu uma coisa que nunca tinha visto: chamas quentinhas, que iluminavam a escuridão e assavam a carne.\nO menino ficou uns tempos com a onça e aprendeu a cuidar do fogo. Quando voltou para a aldeia, contou tudo. Os homens foram até a toca e levaram um pedaço de brasa para casa. Desde então, as pessoas sabem fazer fogo, cozinhar e se aquecer. E a onça, dizem, ficou com os olhos brilhando como brasa, lembrando o fogo que um dia foi só dela.\nEnquanto dona Araci falava, Lia escrevia rápido. No fim, ela leu o caderno e franziu a testa.\n— Dona Araci, todas as lendas começam com \"há muito tempo\"!\n— Muito bem observado — respondeu a contadora. — E terminam como?\nLia pensou um pouco.\n— Terminam explicando alguma coisa que existe até hoje: a mandioca, a vitória-régia, a noite, o fogo...\n— Isso mesmo. É por isso que essas histórias são chamadas de lendas de origem. Elas contam como algo começou.\nLia sublinhou a palavra \"origem\" no caderno, duas vezes. Davi, ao lado, desenhou uma onça com olhos amarelos e brilhantes.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia levou para a biblioteca?",
+       "options": [
+        "um caderno",
+        "um livro de receitas",
+        "uma lanterna"
+       ],
+       "answer": "um caderno",
+       "accept": [],
+       "hint": "Ela queria anotar as lendas.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como as pessoas viviam antes de conhecer o fogo?",
+       "options": [
+        "comiam tudo cru e passavam frio",
+        "moravam em prédios",
+        "viviam dentro do rio"
+       ],
+       "answer": "comiam tudo cru e passavam frio",
+       "accept": [],
+       "hint": "Releia o começo da lenda.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, que animal guardava o fogo?",
+       "options": [],
+       "answer": "onça-pintada",
+       "accept": [
+        "onça",
+        "a onça",
+        "a onça-pintada"
+       ],
+       "hint": "É um grande felino da floresta.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a onça fez quando encontrou o menino perdido?",
+       "options": [
+        "levou o menino para a toca",
+        "fugiu dele",
+        "levou o menino de volta à aldeia"
+       ],
+       "answer": "levou o menino para a toca",
+       "accept": [],
+       "hint": "Ela não o assustou.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como os olhos da onça ficaram, segundo a lenda?",
+       "options": [
+        "brilhando como brasa",
+        "azuis como o céu",
+        "fechados para sempre"
+       ],
+       "answer": "brilhando como brasa",
+       "accept": [],
+       "hint": "Eles lembram o fogo.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia percebeu sobre o começo das lendas?",
+       "options": [
+        "todas começam com 'há muito tempo'",
+        "todas começam com uma música",
+        "todas começam com 'era uma vez um rei'"
+       ],
+       "answer": "todas começam com 'há muito tempo'",
+       "accept": [],
+       "hint": "Ela leu o caderno e franziu a testa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que essas histórias são chamadas de lendas de origem?",
+       "options": [
+        "porque contam como algo começou",
+        "porque são muito curtas",
+        "porque foram escritas ontem"
+       ],
+       "answer": "porque contam como algo começou",
+       "accept": [],
+       "hint": "Lia sublinhou essa palavra.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a onça dividiu o fogo com o menino em vez de escondê-lo?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em como ela tratou o menino desde o início.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: Muitos povos, muitas histórias",
+     "synopsis": "Um menino da roda diz que conhece outra versão da lenda da noite. Dona Araci explica que existem muitos povos indígenas, cada um com sua língua e suas histórias.",
+     "text": "Na quinta manhã, um menino novo apareceu na roda. Chamava-se Cauê e tinha vindo visitar os primos. Quando dona Araci lembrou a lenda do caroço da noite, ele levantou a mão.\n— Na minha aldeia, minha avó conta essa história de um jeito diferente.\nAlgumas crianças cochicharam. Lia achou que dona Araci fosse dizer que o menino estava errado, mas ela abriu um sorriso enorme.\n— Que maravilha! Conte para nós, Cauê.\nCauê contou que, na versão da avó dele, a noite estava guardada numa cabaça, e quem a deixou escapar foi um macaco muito curioso. Todos riram da trapalhada do macaco.\n— Então qual é a certa? — perguntou Davi.\n— As duas — respondeu dona Araci. — No Brasil vivem muitos povos indígenas diferentes, cada um com sua língua, seus costumes e suas histórias. As lendas passam de avó para neto, de boca em boca, e cada povo conta do seu jeito.\nCauê ensinou algumas palavras da língua da família dele, e as crianças tentaram repetir. Ninguém acertou de primeira, e todos acharam graça, inclusive Cauê.\nDepois, ele contou que na aldeia as crianças estudam na escola, jogam futebol e também aprendem a pescar com os mais velhos.\n— Igual a mim! Eu também jogo futebol! — disse Davi, animado.\nNa saída, Lia e Cauê ficaram conversando na porta da biblioteca. Ela mostrou o caderno de lendas, e ele escreveu, com a letra caprichada, a versão do macaco curioso.\n— Agora seu caderno tem as duas histórias — disse ele.\nLia guardou o caderno na mochila com todo o cuidado. Parecia que ele tinha ficado mais valioso.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome do menino novo na roda?",
+       "options": [],
+       "answer": "Cauê",
+       "accept": [
+        "Caue"
+       ],
+       "hint": "Ele veio visitar os primos.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia achou que dona Araci ia fazer?",
+       "options": [
+        "dizer que Cauê estava errado",
+        "encerrar a roda",
+        "contar uma lenda nova"
+       ],
+       "answer": "dizer que Cauê estava errado",
+       "accept": [],
+       "hint": "Mas dona Araci sorriu.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde a noite estava guardada na versão da avó de Cauê?",
+       "options": [
+        "numa cabaça",
+        "num caroço de tucumã",
+        "numa caverna"
+       ],
+       "answer": "numa cabaça",
+       "accept": [],
+       "hint": "É diferente da versão de dona Araci.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem deixou a noite escapar na versão de Cauê?",
+       "options": [
+        "um macaco curioso",
+        "três ajudantes",
+        "uma onça"
+       ],
+       "answer": "um macaco curioso",
+       "accept": [],
+       "hint": "Todos riram da trapalhada dele.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que existem versões diferentes da mesma lenda?",
+       "options": [
+        "porque há muitos povos, e cada um conta do seu jeito",
+        "porque alguém copiou errado",
+        "porque as lendas são novas"
+       ],
+       "answer": "porque há muitos povos, e cada um conta do seu jeito",
+       "accept": [],
+       "hint": "Dona Araci explica isso a Davi.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Davi descobre que tem em comum com Cauê?",
+       "options": [
+        "os dois jogam futebol",
+        "os dois moram na mesma rua",
+        "os dois têm medo de sapo"
+       ],
+       "answer": "os dois jogam futebol",
+       "accept": [],
+       "hint": "Davi fica animado com isso.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o caderno parece mais valioso para Lia no fim?",
+       "options": [
+        "porque agora tem uma história escrita por um novo amigo",
+        "porque ela comprou um caderno novo",
+        "porque ele tem uma capa dourada"
+       ],
+       "answer": "porque agora tem uma história escrita por um novo amigo",
+       "accept": [],
+       "hint": "Pense no que Cauê escreveu nele.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que dona Araci ficou feliz em ouvir a versão de Cauê?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que ela pensa sobre as histórias de cada povo.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: A lenda das pedrinhas do rio",
+     "synopsis": "Dona Araci desafia as crianças a criarem sua própria lenda de origem. Lia e Davi inventam uma história para explicar as pedrinhas coloridas do rio.",
+     "text": "No sexto dia, dona Araci não contou nenhuma lenda.\n— Hoje são vocês que vão contar — disse. — Cada dupla vai criar uma lenda de origem. Lembrem: ela começa num tempo antigo e termina explicando algo que existe até hoje.\nLia e Davi ficaram juntos. No começo, não tinham nenhuma ideia. Davi olhou pela janela e viu o rio brilhando no sol.\n— E as pedrinhas coloridas do rio? Ninguém sabe de onde elas vêm!\nLia abriu o caderno e os dois começaram a escrever.\n\"Há muito tempo, o rio era cinzento e triste. Não tinha peixes nem flores, e as crianças não queriam brincar perto dele. Um dia, uma menina chamada Potira decidiu alegrar o rio. Ela juntou as cores mais bonitas que encontrou: o vermelho do urucum, o amarelo do sol da manhã, o verde das folhas e o azul do céu. Colocou tudo num cesto e jogou no rio, cantando. As cores afundaram e viraram pedrinhas. O rio ficou tão feliz que começou a brilhar, e os peixes voltaram. Desde então, quem encontra uma pedrinha colorida no rio deve devolvê-la à água, para o rio continuar alegre.\"\nQuando chegou a vez deles, Lia leu e Davi fez os gestos: jogou o cesto imaginário e fingiu ser um peixe nadando. As crianças bateram palmas.\n— Vocês usaram tudo o que uma lenda precisa — elogiou dona Araci. — Um tempo antigo, um problema, uma personagem que muda as coisas e uma explicação para o que existe hoje.\nNa volta para casa, Davi pegou uma pedrinha vermelha na margem do rio. Olhou para Lia, pensou um pouco e jogou a pedrinha de volta na água.\n— Para o rio continuar alegre — disse ele, muito sério.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que foi diferente na roda do sexto dia?",
+       "options": [
+        "as crianças criaram as próprias lendas",
+        "dona Araci contou duas lendas",
+        "a roda aconteceu no rio"
+       ],
+       "answer": "as crianças criaram as próprias lendas",
+       "accept": [],
+       "hint": "Dona Araci não contou nenhuma lenda.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde Davi teve a ideia para a lenda?",
+       "options": [
+        "olhando o rio pela janela",
+        "lendo um livro",
+        "sonhando à noite"
+       ],
+       "answer": "olhando o rio pela janela",
+       "accept": [],
+       "hint": "O rio brilhava no sol.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como era o rio no começo da lenda de Lia e Davi?",
+       "options": [
+        "cinzento e triste",
+        "cheio de peixes",
+        "verde e alegre"
+       ],
+       "answer": "cinzento e triste",
+       "accept": [],
+       "hint": "Releia o começo da lenda que eles escreveram.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual é o nome da menina da lenda inventada?",
+       "options": [],
+       "answer": "Potira",
+       "accept": [
+        "Potíra"
+       ],
+       "hint": "Ela quis alegrar o rio.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de onde veio o vermelho que a menina juntou?",
+       "options": [
+        "do urucum",
+        "do sol da manhã",
+        "das folhas"
+       ],
+       "answer": "do urucum",
+       "accept": [],
+       "hint": "Cada cor veio de um lugar da natureza.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a lenda inventada explica?",
+       "options": [
+        "a origem das pedrinhas coloridas do rio",
+        "a origem da chuva",
+        "a origem dos peixes dourados"
+       ],
+       "answer": "a origem das pedrinhas coloridas do rio",
+       "accept": [],
+       "hint": "Pense na ideia de Davi.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi devolve a pedrinha ao rio?",
+       "options": [
+        "porque quer seguir o que a lenda deles ensina",
+        "porque a pedrinha era feia",
+        "porque a avó mandou"
+       ],
+       "answer": "porque quer seguir o que a lenda deles ensina",
+       "accept": [],
+       "hint": "Releia o final da lenda que eles criaram.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Davi ficou tão sério ao devolver a pedrinha?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em como ele se sentiu sobre a própria lenda.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: Tapioca de despedida",
+     "synopsis": "No último dia, a vó Lurdes faz tapioca para a despedida na biblioteca. As crianças descobrem palavras indígenas que usam todos os dias.",
+     "text": "Chegou o último dia das férias. Lia acordou com cheiro de tapioca vindo da cozinha. A vó Lurdes estava preparando uma bandeja enorme.\n— É para a despedida da roda de histórias — explicou ela.\nNa biblioteca, as crianças fizeram uma grande mesa com almofadas em volta. Cauê trouxe uma cesta de beijus que a tia dele tinha feito. Quando dona Araci viu a tapioca, deu uma risada.\n— Olhem só! A Mani veio nos visitar.\nTodos se lembraram da primeira lenda. Lia explicou para as crianças novas:\n— A tapioca é feita da mandioca, e a mandioca, na lenda, nasceu na casa de Mani.\nDona Araci, então, propôs uma última brincadeira.\n— Muitas palavras que vocês falam todos os dias vêm de línguas indígenas, como o tupi. Quem adivinha alguma?\n— Tapioca! — gritou Davi, de boca cheia.\n— Muito bem. E também pipoca, mandioca, jabuticaba, capivara, tatu...\n— Pipoca também? — espantou-se Lia.\n— Também. As histórias e as palavras dos povos indígenas estão por toda parte, até no cinema.\nAs crianças riram e passaram a tarde caçando palavras. Davi escreveu uma lista no caderno da irmã, com letras tortas, mas cheias de orgulho.\nNa hora de ir embora, Lia abraçou dona Araci.\n— Obrigada pelas histórias. Vou contar todas para a minha turma.\n— Então elas vão continuar viajando — respondeu a contadora. — É assim que uma lenda vive: de boca em boca.\nNo carro, a caminho de casa, Davi dormiu abraçado ao caderno. Lia olhou pela janela. A lua cheia brilhava sobre o rio, e ela imaginou, lá embaixo, uma flor branca se abrindo devagar.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, com que cheiro Lia acordou?",
+       "options": [
+        "cheiro de tapioca",
+        "cheiro de bolo de chocolate",
+        "cheiro de chuva"
+       ],
+       "answer": "cheiro de tapioca",
+       "accept": [],
+       "hint": "Vinha da cozinha da avó.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Cauê levou para a despedida?",
+       "options": [
+        "uma cesta de beijus",
+        "um livro de lendas",
+        "uma bola de futebol"
+       ],
+       "answer": "uma cesta de beijus",
+       "accept": [],
+       "hint": "A tia dele tinha feito.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que dona Araci disse que a Mani veio visitar?",
+       "options": [
+        "porque a tapioca é feita de mandioca",
+        "porque uma menina nova chegou",
+        "porque choveu"
+       ],
+       "answer": "porque a tapioca é feita de mandioca",
+       "accept": [],
+       "hint": "Lembre a primeira lenda do livro.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que língua indígena vêm muitas palavras que usamos?",
+       "options": [
+        "tupi",
+        "inglês",
+        "latim"
+       ],
+       "answer": "tupi",
+       "accept": [],
+       "hint": "Dona Araci cita o nome da língua.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual destas palavras dona Araci diz que vem de língua indígena?",
+       "options": [
+        "pipoca",
+        "bicicleta",
+        "computador"
+       ],
+       "answer": "pipoca",
+       "accept": [],
+       "hint": "Lia ficou espantada com essa.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo dona Araci, como uma lenda continua viva?",
+       "options": [
+        "sendo contada de boca em boca",
+        "ficando guardada numa gaveta",
+        "sendo esquecida"
+       ],
+       "answer": "sendo contada de boca em boca",
+       "accept": [],
+       "hint": "Ela responde ao abraço de Lia.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Lia imagina ao ver a lua sobre o rio?",
+       "options": [
+        "uma vitória-régia se abrindo",
+        "uma onça bebendo água",
+        "um macaco curioso"
+       ],
+       "answer": "uma vitória-régia se abrindo",
+       "accept": [],
+       "hint": "Pense na flor branca da segunda lenda.",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Lia quer contar as lendas para a turma dela?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que dona Araci disse sobre as lendas viajarem.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
