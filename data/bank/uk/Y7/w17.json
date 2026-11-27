@@ -3952,6 +3952,902 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Night in the Whispering Wood",
+   "premise": "When the Year 7 drama club at Fernhill Academy stages its summer play, four plot strands tangle together: two best friends fall out over a part, a quiet boy builds a forest that keeps falling down, a little sister causes chaos in the costume cupboard, and a storm threatens to cancel everything.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Cast List",
+     "synopsis": "The Year 7 drama club at Fernhill Academy holds auditions for a summer play, and best friends Priya and Jonah fall out when the cast list goes up.",
+     "text": "Every June, the drama club at Fernhill Academy put on a play called The Night in the Whispering Wood. It was an old play that the club's teacher, Mr Abara, had written himself many years ago, and every Year 7 student wanted to be in it.\nThe story was full of tangled plots. A queen of the forest argued with her own reflection. Two lost travellers wandered in circles. A clumsy baker tried to bake a cake for a wedding that kept being cancelled. Mr Abara liked to say that the play was \"four stories wearing one coat\".\nPriya Mehta had been practising for weeks. She wanted the part of the Queen of the Wood more than anything. Her best friend, Jonah Price, wanted it too, even though everyone told him the queen was usually played by a girl.\n\"It doesn't say that anywhere in the script,\" Jonah said on the morning of the auditions. \"Mr Abara said anyone can play anyone.\"\nPriya laughed, but her stomach felt tight. She had never competed against Jonah before. They had sat next to each other since primary school, swapped lunches every Friday and shared the same terrible jokes.\nThe auditions took place in the school hall after lunch. Priya's hands shook as she read the queen's speech about the moon, but by the final line her voice was strong and clear. Jonah went next. He was loud and funny, and he made the queen sound grumpy, which made Mr Abara laugh so hard he had to take off his glasses.\nThe next morning, a crowd gathered around the noticeboard outside the drama studio. Priya squeezed to the front and read the list twice to make sure.\nQueen of the Wood: Priya Mehta.\nThe Baker: Jonah Price.\nShe turned around, beaming, but Jonah was already walking away down the corridor.\n\"Jonah! Wait!\" she called.\nHe stopped but did not turn round. \"Congratulations,\" he said, in a flat voice that did not sound like congratulations at all. \"I'm the baker. I get to drop a cake. Brilliant.\"\n\"The baker is the funniest part in the whole play,\" Priya said.\n\"Then you play it,\" Jonah replied, and he disappeared into his maths lesson.\nAt lunch, Priya sat alone at their usual table. The Friday swap did not happen. She stared at her sandwich and wondered how getting the thing she wanted most could make her feel so miserable.\nOn the way home, she passed the noticeboard again. Under the cast list, someone had added a small note in Mr Abara's handwriting: First rehearsal Monday. Every part matters. Every person matters.\nPriya read it three times. Then she went home and started learning her lines, hoping that by Monday Jonah would be ready to talk.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the name of the play the drama club performs?",
+       "options": [
+        "The Night in the Whispering Wood",
+        "The Queen of the Moon",
+        "Four Stories in One Coat",
+        "The Baker's Wedding"
+       ],
+       "answer": "The Night in the Whispering Wood",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who wrote the play?",
+       "options": [],
+       "answer": "Mr Abara",
+       "accept": [
+        "Abara",
+        "the teacher",
+        "Mr. Abara"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which part does Jonah get?",
+       "options": [
+        "The Baker",
+        "The Queen of the Wood",
+        "A lost traveller",
+        "The narrator"
+       ],
+       "answer": "The Baker",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what did Priya and Jonah usually do every Friday?",
+       "options": [
+        "Swap lunches",
+        "Walk home together",
+        "Watch a film",
+        "Practise lines"
+       ],
+       "answer": "Swap lunches",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mr Abara mean when he says the play is \"four stories wearing one coat\"?",
+       "options": [
+        "It has several plot strands joined into one play",
+        "It is about a magic coat",
+        "It is four separate plays",
+        "It is performed in winter"
+       ],
+       "answer": "It has several plot strands joined into one play",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Jonah feel when he sees the cast list?",
+       "options": [
+        "Disappointed and hurt",
+        "Delighted",
+        "Bored",
+        "Confused about the rules"
+       ],
+       "answer": "Disappointed and hurt",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which word best describes Priya at the end?",
+       "options": [
+        "Determined",
+        "Angry",
+        "Careless",
+        "Boastful"
+       ],
+       "answer": "Determined",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mr Abara added the note \"Every part matters. Every person matters\" under the cast list?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Falling Forest",
+     "synopsis": "Quiet Felix leads the stage crew as they build a forest set, and when the cardboard trees keep collapsing he finds a clever solution.",
+     "text": "While the actors rehearsed in the hall, the stage crew worked in the art room. There were five of them, and their leader was Felix Hartley, a quiet boy who hardly ever spoke in lessons but who could build almost anything.\nMr Abara had given them one job: \"Make me a forest. A forest that feels alive.\"\nFelix had filled half a sketchbook with ideas. His favourite was a ring of tall trees made from cardboard tubes and painted sheets, with branches that could move when someone pulled a string from behind the curtain. He called it the Whispering Ring.\nFor a week, the crew cut, glued and painted. Amira mixed seven shades of green. Tom and Grace wrapped the tubes in brown paper and drew bark on them with charcoal. Little Sami, the youngest, glued on hundreds of paper leaves without complaining once.\nOn Friday afternoon, they carried the first three trees into the hall to show the cast. Felix tied the strings, took a deep breath and pulled.\nThe branches swayed beautifully for exactly two seconds. Then the first tree leaned to the left, knocked into the second, and all three toppled onto the stage like giant dominoes. Paper leaves floated everywhere. Jonah, who was standing nearby, burst out laughing, and so did half the cast.\nFelix's face turned bright red. He said nothing. He simply picked up a broken tree and carried it back to the art room.\nAmira found him there ten minutes later, staring at the bent tubes.\n\"They're too light at the bottom,\" Felix muttered. \"They need something heavy and straight inside them. Something we can stand up.\"\n\"Like what?\" asked Amira.\nFelix looked slowly around the art room, and his eyes stopped on the storage cupboard. Inside, leaning in a dusty corner, was a bundle of old metal curtain poles left over from when the hall had new curtains fitted.\n\"Like those,\" he said.\nThe crew spent the whole of the next week rebuilding. They slid the poles inside the cardboard tubes and fixed each one into a bucket filled with sand, which they hid under a skirt of painted cloth. The trees were heavier now, but they stood perfectly straight.\nAt the next rehearsal, Felix carried the trees in one at a time. Nobody laughed this time. When he pulled the strings, the branches rustled and swayed, and the hall suddenly seemed darker and stranger, as if a real wood had grown up between the chairs.\nPriya stopped in the middle of her speech and stared.\n\"It's like being inside the story,\" she whispered.\nMr Abara clapped slowly. \"That,\" he said, \"is a forest that feels alive.\"\nFelix did not say anything, but for the rest of the afternoon he could not stop smiling.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who is the leader of the stage crew?",
+       "options": [],
+       "answer": "Felix",
+       "accept": [
+        "Felix Hartley"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Felix call his design for the trees?",
+       "options": [
+        "The Whispering Ring",
+        "The Moving Wood",
+        "The Green Circle",
+        "The Forest Wall"
+       ],
+       "answer": "The Whispering Ring",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens when Felix first pulls the strings?",
+       "options": [
+        "The trees fall over like dominoes",
+        "The strings snap",
+        "The lights go out",
+        "Nothing moves at all"
+       ],
+       "answer": "The trees fall over like dominoes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Felix use to make the trees stronger?",
+       "options": [
+        "Old metal curtain poles",
+        "Wooden broom handles",
+        "Plastic pipes",
+        "Rolled-up newspapers"
+       ],
+       "answer": "Old metal curtain poles",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what are the buckets under the trees filled with?",
+       "options": [],
+       "answer": "sand",
+       "accept": [
+        "Sand"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Felix react when everyone laughs at the fallen trees?",
+       "options": [
+        "He goes quiet and leaves to work out the problem",
+        "He shouts at the cast",
+        "He gives up on the forest",
+        "He laughs along loudly"
+       ],
+       "answer": "He goes quiet and leaves to work out the problem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which word best describes Felix as a character?",
+       "options": [
+        "Inventive",
+        "Lazy",
+        "Boastful",
+        "Careless"
+       ],
+       "answer": "Inventive",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Felix could not stop smiling at the end of the chapter, even though he said nothing?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Mask Muddle",
+     "synopsis": "Jonah's little sister Mila sneaks into rehearsals and mixes up all the masks, causing chaos, until Mr Abara gives her a job of her own.",
+     "text": "Jonah's little sister, Mila, was eight years old and completely obsessed with the play. Their mum worked late on Tuesdays, so Mila had to wait at school until Jonah's rehearsal finished. She was supposed to sit quietly in the library. She almost never did.\nOn the third Tuesday, Mila slipped into the costume cupboard at the back of the hall. It was the most wonderful place she had ever seen. There were cloaks covered in sequins, crowns made from wire and glitter, and a whole shelf of masks: owls, foxes, moths and one enormous painted moon.\nEach mask had a name label stuck inside it, but Mila did not notice the labels. She only noticed that the owl mask was much too plain for the queen's servant and the fox mask was far too grand for a traveller. So, very helpfully, she swapped them all around.\nThen she tiptoed back out and sat in the front row as if nothing had happened.\nTen minutes later, the rehearsal fell apart. One of the travellers came on stage wearing the moon mask and could not see where he was going. He walked straight into Felix's trees. The queen's servant appeared as a fox and the forest moths came on as owls. Priya, who was supposed to say a gentle speech to the moths, started giggling so much that she could not get the words out.\n\"Who has been in the costume cupboard?\" Mr Abara asked, in his most serious voice.\nEveryone turned to look at Mila, whose cheeks were covered in glitter.\nJonah groaned. \"Mila! You can't just change things!\"\nMila's eyes filled with tears. \"I was only trying to make it better,\" she said in a tiny voice.\nFor a moment, nobody spoke. Then Priya, who had not exchanged more than two words with Jonah for weeks, walked over and knelt down next to Mila.\n\"You know,\" Priya said, \"the masks you chose were actually quite funny. You just need to tell people first.\"\nMr Abara rubbed his chin thoughtfully. \"Mila, how would you like a proper job? Every play needs a props keeper. Someone who knows where every mask, crown and cake is, and makes sure they are in the right place at the right time.\"\nMila wiped her nose on her sleeve and nodded so hard her bunches bounced.\nBy the end of the afternoon, she had made a chart with every mask, every actor and every scene. She stuck it on the cupboard door with a sign that said: Props Keeper. Ask before touching.\nAs they walked home, Jonah glanced at his sister. \"That was nice of Priya,\" he said quietly, mostly to himself.\nMila looked up at him. \"Are you still cross with her?\"\nJonah did not answer, but he kicked a stone along the pavement for a long time, thinking.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how old is Mila?",
+       "options": [],
+       "answer": "eight",
+       "accept": [
+        "8",
+        "eight years old"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Mila stay at school on Tuesdays?",
+       "options": [
+        "Her mum works late",
+        "She has a music lesson",
+        "She is in the play",
+        "Her bus is late"
+       ],
+       "answer": "Her mum works late",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mila do in the costume cupboard?",
+       "options": [
+        "She swaps the masks around",
+        "She hides the crowns",
+        "She breaks a cloak",
+        "She paints a new moon"
+       ],
+       "answer": "She swaps the masks around",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens to the traveller wearing the moon mask?",
+       "options": [
+        "He walks into the trees",
+        "He falls off the stage",
+        "He forgets his lines",
+        "He loses his shoe"
+       ],
+       "answer": "He walks into the trees",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what job does Mr Abara give Mila?",
+       "options": [
+        "Props keeper",
+        "Prompter",
+        "Lighting assistant",
+        "Ticket seller"
+       ],
+       "answer": "Props keeper",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Priya treat Mila after the muddle?",
+       "options": [
+        "Kindly, by comforting and encouraging her",
+        "Angrily, by telling her off",
+        "Coldly, by ignoring her",
+        "Unfairly, by blaming Jonah"
+       ],
+       "answer": "Kindly, by comforting and encouraging her",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Jonah kicking a stone for a long time suggest?",
+       "options": [
+        "He is thinking about his feelings towards Priya",
+        "He is angry with Mila",
+        "He wants to play football",
+        "He is late for dinner"
+       ],
+       "answer": "He is thinking about his feelings towards Priya",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mr Abara chose to give Mila a job instead of sending her back to the library?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Secret Prompter",
+     "synopsis": "Priya keeps forgetting her longest speech, and mysterious notes start appearing to help her, until she discovers who has been writing them.",
+     "text": "With two weeks to go, Priya had a problem. She knew almost all of her lines, but the queen's long speech in the second act refused to stay in her head. It was twenty-two lines about the seasons, and every time she reached the part about autumn, her mind went completely blank.\n\"Take your time,\" Mr Abara said kindly, after she stopped for the fourth time in one rehearsal. But Priya could see the rest of the cast shuffling their feet, and her face burned.\nThat evening, she practised in front of the bathroom mirror until her little brother banged on the door. She practised on the bus. She even practised in her sleep, according to her mum. Still, autumn would not come.\nThe next morning, Priya opened her locker and found a folded piece of paper inside. On it, in neat capital letters, someone had written:\nAUTUMN = APPLES, ASHES, AWAY.\nUnderneath was a tiny drawing of an apple, a bonfire and a bird flying off.\nPriya frowned, then read the speech again. The autumn section began with apples falling, moved on to smoke from bonfires and ended with birds flying south. Three words, all starting with A, in exactly the right order. When she tried the speech in the corridor, the lines followed each other like beads on a string.\nThe next day, another note appeared. This one helped with winter. The day after that, there was one for spring. Each note had the same neat capitals and the same tiny drawings.\n\"Who's doing this?\" Priya asked Felix, who shrugged. She asked Amira, who looked blank. She even asked Mila, who said, \"I'm the props keeper, not the post office.\"\nOn Thursday, Priya arrived at school twenty minutes early and hid behind the water fountain opposite her locker. After a few minutes, footsteps came down the empty corridor. Someone stopped at her locker, glanced over his shoulder and slid a folded note through the gap.\nIt was Jonah.\nPriya stepped out. Jonah jumped so high he nearly dropped his bag.\n\"You,\" she said.\nJonah stared at the floor. \"I learnt the queen's speech, you know. Before the auditions. I made up those tricks to remember it.\" He shrugged. \"Seemed a waste not to use them.\"\nPriya felt something warm spread through her chest. \"I thought you were still angry with me.\"\n\"I was,\" Jonah admitted. \"But then you were nice to Mila. And honestly, being the baker is quite fun. I get to throw flour at people.\"\nPriya laughed, and Jonah laughed too, and suddenly it was as if the last few weeks had never happened.\nThat Friday, the lunch swap was back. Priya traded her samosa for Jonah's cheese sandwich, and in the afternoon she performed the whole seasons speech without a single mistake.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which part of the queen's speech does Priya keep forgetting?",
+       "options": [
+        "The part about autumn",
+        "The part about summer",
+        "The opening line",
+        "The final bow"
+       ],
+       "answer": "The part about autumn",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, how many lines long is the queen's speech about the seasons?",
+       "options": [],
+       "answer": "22",
+       "accept": [
+        "twenty-two"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what words are written on the first note?",
+       "options": [
+        "Apples, ashes, away",
+        "Leaves, rain, wind",
+        "Moon, stars, night",
+        "Snow, ice, cold"
+       ],
+       "answer": "Apples, ashes, away",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Priya hide to find out who is leaving the notes?",
+       "options": [
+        "Behind the water fountain",
+        "In the costume cupboard",
+        "Under the stage",
+        "Inside the library"
+       ],
+       "answer": "Behind the water fountain",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who has been leaving the notes?",
+       "options": [],
+       "answer": "Jonah",
+       "accept": [
+        "Jonah Price"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how did Jonah know the tricks for remembering the speech?",
+       "options": [
+        "He had learnt the speech himself before the auditions",
+        "Mr Abara told him",
+        "He found them in a book",
+        "Mila made them up"
+       ],
+       "answer": "He had learnt the speech himself before the auditions",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the return of the lunch swap show?",
+       "options": [
+        "Priya and Jonah are friends again",
+        "Priya is hungry",
+        "Jonah wants a new role",
+        "The rehearsal is cancelled"
+       ],
+       "answer": "Priya and Jonah are friends again",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Jonah left the notes secretly instead of helping Priya face to face?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Storm",
+     "synopsis": "A week before the show, a storm floods the school hall, and the club must decide whether to cancel or find a new stage.",
+     "text": "Exactly one week before opening night, the sky over Fernhill turned the colour of a bruise. By lunchtime, rain was hammering against the windows so hard that the teachers had to raise their voices to be heard. By home time, thunder was rolling over the playing fields and the drains in the car park were overflowing.\nThe drama club met in the hall as usual, but they had only been rehearsing for ten minutes when Mila tugged Mr Abara's sleeve.\n\"The floor is wet,\" she said.\nShe was right. A thin sheet of water was creeping under the fire doors at the back of the hall. Within minutes it had spread across the floor and was soaking into the bottom of the curtains.\n\"Everyone off the floor! Chairs onto the stage!\" Mr Abara shouted.\nFor half an hour, the whole club worked together. Felix and his crew lifted the trees onto tables. Priya and Jonah carried armfuls of costumes up to the music room. Mila clutched her props chart to her chest and directed everyone as if she had been doing it all her life: \"Masks on the top shelf! Crowns in the blue box! Not the cake, Jonah, the cake is fragile!\"\nThey saved almost everything. But when the rain finally stopped and the caretaker came to look, he shook his head.\n\"The floor will need to dry out properly,\" he said. \"Two weeks at least. Nobody is performing in here next Friday.\"\nThe club gathered in the music room, damp and silent. Some of the youngest actors were close to tears. Even Mr Abara looked tired.\n\"I'm afraid we may have to cancel,\" he said quietly.\nNobody moved. Then Felix, who never spoke in meetings, cleared his throat.\n\"The play is called The Night in the Whispering Wood,\" he said slowly. \"What if we did it in a real wood?\"\nEveryone turned to look at him.\n\"The park behind the school,\" Felix went on, going pink. \"There's that circle of oak trees near the pond. If we did it in the evening, as it got dark, the trees would be the set. We'd only need our trees for the gaps.\"\nThere was a pause. Then Priya said, \"That's brilliant.\"\n\"We'd need lights,\" said Amira.\n\"And chairs for the audience,\" said Grace.\n\"And permission,\" said Mr Abara, but he was smiling for the first time that afternoon. \"I'll ask the head teacher and the park keeper first thing tomorrow.\"\nThe next morning, the whole club waited outside his office. When Mr Abara came out, he did not say anything at first. He just held up a piece of paper with a large official stamp on it.\nA cheer echoed down the corridor. The Night in the Whispering Wood was going outside.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long before opening night does the storm happen?",
+       "options": [
+        "One week",
+        "One day",
+        "One month",
+        "Two days"
+       ],
+       "answer": "One week",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who first notices that the floor is wet?",
+       "options": [],
+       "answer": "Mila",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where do Priya and Jonah carry the costumes?",
+       "options": [
+        "To the music room",
+        "To the art room",
+        "To the library",
+        "To the car park"
+       ],
+       "answer": "To the music room",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why can the club not use the hall?",
+       "options": [
+        "The floor needs at least two weeks to dry",
+        "The roof has fallen in",
+        "The head teacher has banned the play",
+        "The stage has been sold"
+       ],
+       "answer": "The floor needs at least two weeks to dry",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Felix suggest?",
+       "options": [
+        "Performing in the circle of oak trees in the park",
+        "Cancelling the play",
+        "Moving the play to next year",
+        "Performing in the music room"
+       ],
+       "answer": "Performing in the circle of oak trees in the park",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Mila change compared with Chapter 3?",
+       "options": [
+        "She has become organised and responsible",
+        "She has become shy and silent",
+        "She causes more trouble",
+        "She has left the club"
+       ],
+       "answer": "She has become organised and responsible",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the piece of paper with an official stamp show?",
+       "options": [
+        "The club has permission to perform in the park",
+        "The play has been cancelled",
+        "The hall is now dry",
+        "The tickets have sold out"
+       ],
+       "answer": "The club has permission to perform in the park",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think it is important that Felix, who never spoke in meetings, is the one who comes up with the idea?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: Jam Jar Lanterns",
+     "synopsis": "At the outdoor dress rehearsal, the borrowed lights fail, and the whole club works together to light the wood with jam jar lanterns.",
+     "text": "The dress rehearsal took place in the park on Thursday evening, the night before the show. The circle of oak trees looked even better than Felix had imagined. Its branches met overhead like the roof of a green cathedral, and the pond reflected the pink sky. Felix's crew had placed their painted trees in the gaps, so the circle felt complete.\nMr Abara had borrowed four stage lights from a theatre in town. They stood on tall metal stands, connected by long orange cables to a generator that hummed behind a bush.\n\"Places, everyone!\" Mr Abara called, as the sun dipped below the rooftops.\nThe first scene went perfectly. The travellers wandered in circles, getting more and more lost. Jonah, as the baker, dropped his cake exactly on cue and covered himself in flour. Then Priya stepped into the centre of the circle for her first speech as the queen, and the generator gave a loud cough, a splutter and a final sad bang.\nEvery light went out.\nIn the sudden darkness, someone screamed, then giggled. The park was very quiet. Somewhere a duck quacked crossly on the pond.\n\"Is it broken?\" Priya asked.\nThe caretaker, who had come to help, shone a torch on the generator and sighed. \"It's finished. It won't be fixed by tomorrow.\"\nFor a horrible moment, it felt like the storm all over again. Then Mila's voice came out of the darkness.\n\"Mum keeps jam jars,\" she said. \"Hundreds of them. She makes jam every summer.\"\n\"And my grandad has a box of tea lights from the restaurant,\" said Amira.\n\"We've got battery candles at home,\" said Grace. \"The safe kind.\"\nFelix was already thinking aloud. \"If we hang jars from the lower branches with string, and put a battery light in each one, the whole circle would glow. We could hold some too, as part of the scene.\"\nMr Abara looked at the eager faces around him, lit only by the caretaker's torch. \"Battery lights only,\" he said firmly. \"No real flames in a wood. But yes. Let's try it.\"\nThe next morning, the whole club arrived at school carrying bags that clinked. By lunchtime, there were over two hundred clean jam jars lined up in the art room. Felix's crew tied string around every neck. Mila checked each one off on a new chart.\nAt four o'clock, they carried them to the park and began hanging them from the branches. As the sky darkened, they switched on the lights one by one.\nThe circle of oaks began to glow, softly and warmly, as if it were full of fireflies. Nobody spoke. Even Jonah, who always had a joke ready, just stood and stared.\n\"It's better than the stage lights,\" Priya whispered.\nMr Abara nodded. \"Much better,\" he said.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, when does the dress rehearsal take place?",
+       "options": [
+        "Thursday evening, the night before the show",
+        "Friday morning",
+        "Monday afternoon",
+        "A week before the show"
+       ],
+       "answer": "Thursday evening, the night before the show",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what powers the borrowed stage lights?",
+       "options": [
+        "A generator",
+        "The school's electricity",
+        "Solar panels",
+        "Batteries"
+       ],
+       "answer": "A generator",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, at what moment do the lights go out?",
+       "options": [
+        "When Priya steps forward for her first speech",
+        "When Jonah drops the cake",
+        "At the very end of the play",
+        "Before the rehearsal starts"
+       ],
+       "answer": "When Priya steps forward for her first speech",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Mila's family have so many jam jars?",
+       "options": [
+        "Her mum makes jam every summer",
+        "They run a shop",
+        "Mila collects them",
+        "They were given by the school"
+       ],
+       "answer": "Her mum makes jam every summer",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what rule does Mr Abara insist on for the lanterns?",
+       "options": [
+        "Battery lights only, no real flames",
+        "Only teachers may hang them",
+        "Only twenty jars",
+        "They must be painted green"
+       ],
+       "answer": "Battery lights only, no real flames",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the circle of oaks compared to?",
+       "options": [
+        "The roof of a green cathedral",
+        "A giant umbrella",
+        "A castle wall",
+        "A spider's web"
+       ],
+       "answer": "The roof of a green cathedral",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the jam jar plan show about the club?",
+       "options": [
+        "They solve problems by working together",
+        "They give up easily",
+        "They rely only on Mr Abara",
+        "They prefer to work alone"
+       ],
+       "answer": "They solve problems by working together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the author makes Jonah, who always has a joke ready, stand silently and stare at the lanterns?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: Opening Night",
+     "synopsis": "On the night of the performance, Jonah forgets a line and Priya helps him, and all the plot strands come together in the glowing wood.",
+     "text": "By seven o'clock on Friday evening, every chair from the school canteen had been carried into the park and arranged in a curve facing the circle of oaks. By half past seven, every chair was full, and people were sitting on picnic blankets behind them. Parents, grandparents, teachers and even a few curious dog walkers had come to see the play in the wood.\nBehind a large bush that served as the backstage area, the cast huddled together in their costumes. Priya's crown kept slipping. Jonah's apron was already dusted with flour. Mila stood beside her props table with a clipboard, a head torch and an expression of great seriousness.\n\"Remember,\" Mr Abara whispered, \"every part matters. Every person matters. Now go and enjoy it.\"\nAs the last light faded from the sky, Felix gave a signal, and the crew switched on the jam jar lanterns one by one. A soft gasp rose from the audience as the circle began to glow.\nThe play began. The travellers got lost to the sound of real owls hooting in the trees. The forest moths fluttered around in the right masks, thanks to Mila. Priya's seasons speech flowed perfectly, and when she reached autumn she pictured a tiny apple, a bonfire and a bird, and smiled.\nThen came the baker's big scene. Jonah marched into the circle carrying the wedding cake, ready for his funniest speech. He opened his mouth, and nothing came out. His mind was completely empty. The silence stretched. Somebody in the audience coughed.\nPriya, waiting at the edge of the circle, saw his face. Without thinking, she stepped forward as the queen.\n\"Baker!\" she said grandly, making it up as she went. \"Is that a cake for the wedding? Tell me, what flavour is it?\"\nJonah blinked. Then his eyes lit up. \"Lemon, Your Majesty,\" he said, \"with just a little bit of disaster on top!\" And he slipped on a pile of flour, sending the cake flying into the air.\nThe audience roared with laughter. Jonah remembered every line after that, and the rest of the play rushed by in a blur of light, laughter and rustling branches.\nAt the end, the whole club came into the circle to bow. Mr Abara called out the names of the stage crew, and the audience cheered loudly for Felix, who turned the colour of a ripe tomato. Then he called Mila forward as the props keeper, and she bowed so low that her head torch fell off.\nLater, as everyone packed up, Jonah found Priya sitting under the oak trees.\n\"You saved me,\" he said.\n\"You saved me first,\" she replied. \"Apples, ashes, away.\"\nThey sat together for a while, watching the lanterns glow among the leaves, until Mila came to tell them it was time to take the jars down.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does the audience sit?",
+       "options": [
+        "On canteen chairs and picnic blankets",
+        "On the school stage",
+        "In the music room",
+        "On the pond bank only"
+       ],
+       "answer": "On canteen chairs and picnic blankets",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is used as the backstage area?",
+       "options": [
+        "A large bush",
+        "A tent",
+        "The caretaker's van",
+        "A tree house"
+       ],
+       "answer": "A large bush",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Priya picture to help her remember the autumn lines?",
+       "options": [
+        "An apple, a bonfire and a bird",
+        "The moon and stars",
+        "A cake and flour",
+        "Masks and crowns"
+       ],
+       "answer": "An apple, a bonfire and a bird",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what goes wrong in the baker's big scene?",
+       "options": [
+        "Jonah forgets his lines",
+        "The cake is missing",
+        "The lanterns go out",
+        "Priya falls over"
+       ],
+       "answer": "Jonah forgets his lines",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what flavour does Jonah say the cake is?",
+       "options": [],
+       "answer": "lemon",
+       "accept": [
+        "Lemon"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Priya help Jonah?",
+       "options": [
+        "She improvises a question as the queen",
+        "She whispers the script to him",
+        "She asks Mr Abara to stop the play",
+        "She takes over his part"
+       ],
+       "answer": "She improvises a question as the queen",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Priya mean when she says \"You saved me first\"?",
+       "options": [
+        "Jonah's notes helped her learn her speech earlier",
+        "Jonah rescued her from the storm",
+        "Jonah caught her when she fell",
+        "Jonah gave her his part"
+       ],
+       "answer": "Jonah's notes helped her learn her speech earlier",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the author ends the story with Priya and Jonah sitting together under the trees instead of with the applause?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
