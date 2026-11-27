@@ -3245,6 +3245,915 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Ghost of Gloomwater Hall",
+   "premise": "Eleven-year-old Pip Marchbanks moves into a creaky gothic mansion and befriends Sir Barnaby Crumpet, a three-hundred-year-old ghost who is hopeless at haunting but brilliant at jokes.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Ghost Who Tripped",
+     "synopsis": "Pip Marchbanks moves into gloomy Gloomwater Hall and, on her first stormy night, meets a ghost who is very bad at haunting.",
+     "text": "Gloomwater Hall stood at the end of a long, crooked lane, its towers poking at the low grey clouds like bony fingers. Rain hammered the windows. Ivy clung to every wall, and the iron gate gave a long, rusty shriek as Pip Marchbanks pushed it open.\n\"Charming,\" said her dad, peering up at a stone gargoyle with no nose.\nInside, the hall smelled of dust and old candles. Portraits of stern, pale faces lined the staircase, and their painted eyes seemed to follow Pip as she climbed. Her cat, Soot, hissed at the shadows and refused to leave her arms.\nAt midnight, Pip woke to a sound. Clank. Drag. Clank. Drag. Something was coming along the corridor. The candle by her bed flickered, though no window was open, and the air turned as cold as a cellar.\nThe door creaked open. A shimmering figure floated in, wearing a ruffled collar and heavy chains around his wrists.\n\"Beware!\" he moaned. \"I am Sir Barnaby Crumpet, and I have haunted this hall for three hundred years! Tremble, mortal, tremb—\"\nHis chain caught on the bedpost. He tumbled forwards, passed straight through the rug and ended up with only his head sticking out of the floorboards.\nSoot stopped hissing. Pip tried very hard not to laugh, and failed.\n\"This is most undignified,\" muttered the head.\nPip climbed out of bed and helped him untangle his chain, which was difficult, because her hands kept going through it. Then she offered him a biscuit from the tin on her bedside table. He could not eat it, of course, but he sniffed it sadly.\n\"Nobody has offered me a biscuit since 1726,\" he said.\nBy the time the storm had calmed, they had agreed on two rules: no clanking after ten o'clock, and no hiding in the bathroom mirror. Pip fell asleep smiling. Gloomwater Hall, she decided, might not be so gloomy after all.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the name of the old house?",
+       "options": [
+        "Gloomwater Hall",
+        "Crumpet Castle",
+        "Ravenmoor Manor",
+        "Stormgate House"
+       ],
+       "answer": "Gloomwater Hall",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of Pip's cat?",
+       "options": [],
+       "answer": "Soot",
+       "accept": [
+        "soot"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the weather like when Pip arrives?",
+       "options": [
+        "Rainy and stormy",
+        "Hot and sunny",
+        "Snowy and calm",
+        "Foggy but dry"
+       ],
+       "answer": "Rainy and stormy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what sound does Pip hear at midnight?",
+       "options": [
+        "Clanking and dragging",
+        "Singing",
+        "A dog barking",
+        "Footsteps on the roof"
+       ],
+       "answer": "Clanking and dragging",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens when Sir Barnaby tries to scare Pip?",
+       "options": [
+        "His chain catches and he falls through the floor",
+        "He disappears into the mirror",
+        "He sings a song",
+        "He blows out every candle"
+       ],
+       "answer": "His chain catches and he falls through the floor",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which detail helps build a spooky atmosphere?",
+       "options": [
+        "The candle flickers though no window is open",
+        "Pip eats a biscuit",
+        "Dad makes a joke",
+        "Soot falls asleep"
+       ],
+       "answer": "The candle flickers though no window is open",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does the author make Sir Barnaby trip over his chain?",
+       "options": [
+        "To add humour to a frightening moment",
+        "To show he is very strong",
+        "To explain how ghosts are made",
+        "To make Pip angry"
+       ],
+       "answer": "To add humour to a frightening moment",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Sir Barnaby is sad when Pip offers him a biscuit?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Cousin Who Didn't Believe",
+     "synopsis": "Pip's cousin Hugo laughs at the idea of ghosts, so Sir Barnaby tries to scare him, with unexpected results.",
+     "text": "Cousin Hugo arrived on Saturday with a smartphone in one hand and a smirk on his face.\n\"Ghosts aren't real,\" he announced, before he had even taken off his coat. \"It's all science. Draughts and old pipes.\"\nThat night, Sir Barnaby floated into Pip's room, rubbing his see-through hands together. \"A non-believer! Leave him to me. I shall perform my famous Wailing Waltz.\"\n\"Maybe start smaller,\" Pip suggested.\nThey made a plan. Pip would lead Hugo to the library, the darkest room in the hall, where tall shelves leaned over the reading table and the fire had burned down to orange embers. Sir Barnaby would do the rest.\nAt eleven o'clock, the library was perfectly still. A grandfather clock ticked like a slow heartbeat. Fog pressed against the windows, turning the garden into a blank, white nothing. Hugo shone his phone torch around and yawned loudly.\nThen a book slid off a shelf by itself. Thump.\nHugo's torch wobbled. \"Old shelves,\" he said, a little too quickly.\nA cold breeze swept across the room. The embers in the fireplace hissed. From somewhere high above came a long, low moan: \"Huuuugo…\"\nHugo swallowed. \"Very funny, Pip.\"\n\"I'm standing right next to you,\" said Pip.\nSir Barnaby was building up to his grand finale when Soot, who had been asleep on top of the bookcase, woke up, stretched, and leapt down right onto Hugo's shoulders with a loud \"MRROW!\"\nHugo screamed, dropped his phone and ran out of the library so fast that one of his slippers stayed behind.\nSir Barnaby sank into an armchair, or rather, a little bit through it. \"Three hundred years of practice,\" he sighed, \"and I am beaten by a cat.\"\nPip patted the air near his shoulder. \"You were very good,\" she said. \"The moaning was excellent.\"\nThe next morning, Hugo said he had slept wonderfully. He also asked to swap bedrooms.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Hugo believe about ghosts?",
+       "options": [
+        "They aren't real",
+        "They live in libraries",
+        "They only appear at noon",
+        "They are friendly"
+       ],
+       "answer": "They aren't real",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which room do Pip and Sir Barnaby choose for the haunting?",
+       "options": [
+        "The library",
+        "The kitchen",
+        "The attic",
+        "The garden shed"
+       ],
+       "answer": "The library",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the grandfather clock's ticking compared to?",
+       "options": [
+        "A slow heartbeat",
+        "Raindrops",
+        "A marching band",
+        "A dripping tap"
+       ],
+       "answer": "A slow heartbeat",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the first strange thing that happens in the library?",
+       "options": [
+        "A book slides off a shelf",
+        "The lights turn on",
+        "A window smashes",
+        "The clock stops"
+       ],
+       "answer": "A book slides off a shelf",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what finally makes Hugo run away?",
+       "options": [
+        "Soot jumps onto his shoulders",
+        "Sir Barnaby appears in the mirror",
+        "The fire goes out",
+        "Pip shouts at him"
+       ],
+       "answer": "Soot jumps onto his shoulders",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Hugo leave behind?",
+       "options": [
+        "One of his slippers",
+        "His coat",
+        "His phone charger",
+        "A book"
+       ],
+       "answer": "One of his slippers",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Hugo asking to swap bedrooms suggest?",
+       "options": [
+        "He was more frightened than he admits",
+        "He wants a bigger room",
+        "He dislikes Pip",
+        "He wants to be near the cat"
+       ],
+       "answer": "He was more frightened than he admits",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the author describes the fog and the dying fire before anything strange happens?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: The Eyes in the Portrait",
+     "synopsis": "Pip notices that one portrait's eyes really do move, and discovers a hidden passage behind it.",
+     "text": "Pip had always thought the portraits on the stairs only seemed to watch her. On Tuesday, she found out that one of them really did.\nIt was a painting of a thin woman in a black dress, holding a candle. Pip was walking past it after school when the woman's eyes slid sideways. Pip froze. The eyes slid back.\nHer heart thumped. The staircase was silent except for the rain dripping from a broken gutter outside. She looked around for Sir Barnaby, but he was nowhere to be seen.\n\"Hello?\" she whispered to the painting.\nThe eyes blinked. Then, from behind the canvas, a muffled voice said, \"Oh, bother.\"\nPip grabbed the edge of the heavy gold frame and pulled. With a groan of old hinges, the whole portrait swung outwards like a door. Behind it was a narrow stone passage, cobwebbed and black, and there, peering through two neat holes cut in the canvas, was Sir Barnaby.\n\"I was practising,\" he said with dignity. \"Spying eyes are very traditional.\"\nPip pointed her torch into the passage. The walls glistened with damp, and the air smelled of mushrooms and old paper. Steps twisted downwards into darkness.\n\"Where does it go?\" she asked.\nSir Barnaby's face became serious, and for the first time he looked like a proper ghost: pale, ancient and sad. \"To my old study,\" he said. \"I have not been down there in a very long time.\"\nTogether they crept down the steps. At the bottom was a tiny room with a dusty desk, a cracked inkpot and a leather diary. A spider had built an enormous web across the chair.\n\"I used to write jokes here,\" said Sir Barnaby quietly. \"Terrible ones. My family never laughed.\"\nPip opened the diary. The first page said: Why did the skeleton not go to the ball? Because he had no BODY to go with.\nPip laughed so loudly that it echoed up the passage. Sir Barnaby glowed a little brighter.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the woman in the portrait holding?",
+       "options": [
+        "A candle",
+        "A book",
+        "A cat",
+        "A key"
+       ],
+       "answer": "A candle",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Pip see the portrait do?",
+       "options": [
+        "Its eyes move",
+        "It falls off the wall",
+        "It speaks a poem",
+        "It changes colour"
+       ],
+       "answer": "Its eyes move",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, who is hiding behind the portrait?",
+       "options": [],
+       "answer": "Sir Barnaby",
+       "accept": [
+        "Barnaby",
+        "Sir Barnaby Crumpet",
+        "the ghost"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is behind the portrait?",
+       "options": [
+        "A narrow stone passage",
+        "A safe full of gold",
+        "A window",
+        "A cupboard of coats"
+       ],
+       "answer": "A narrow stone passage",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Sir Barnaby say he used to write in his study?",
+       "options": [
+        "Jokes",
+        "Poems",
+        "Letters to the king",
+        "Recipes"
+       ],
+       "answer": "Jokes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which words help create a gothic atmosphere in the passage?",
+       "options": [
+        "Cobwebbed, black and damp",
+        "Bright, warm and sunny",
+        "Modern, clean and tidy",
+        "Loud, busy and crowded"
+       ],
+       "answer": "Cobwebbed, black and damp",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Sir Barnaby glow brighter at the end?",
+       "options": [
+        "Pip's laugh makes him happy",
+        "He is getting angry",
+        "The torch shines on him",
+        "He is about to vanish"
+       ],
+       "answer": "Pip's laugh makes him happy",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Sir Barnaby has not visited his old study for a long time?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Howl in the Chimney",
+     "synopsis": "A terrible howling fills the hall at night, and Pip bravely tracks down where it comes from.",
+     "text": "The howling began on the coldest night of the year.\nIt rose from somewhere deep inside the walls, long and hollow, like a wolf lost in a tunnel. It faded, then rose again, louder. The windows rattled in their frames. Soot crawled under the bed and would not come out.\nPip sat up, clutching her blanket. Even Sir Barnaby looked nervous. He had drifted halfway into the wardrobe.\n\"That,\" he whispered, \"is not me.\"\n\"Then who is it?\"\n\"I have no idea, and I would prefer not to find out.\"\nPip thought about this. She was scared, but she was also curious, and curiosity usually won. She pulled on her dressing gown, took her torch and stepped into the corridor.\nThe howling grew louder near the great hall. Moonlight fell through the tall windows in silver stripes, and the suits of armour cast long, sharp shadows across the floor. Pip's slippers made no sound on the stone. Behind her, a faint glow told her that Sir Barnaby had decided, after all, not to let her go alone.\nThe noise was coming from the enormous fireplace. Pip knelt down and shone her torch up the chimney. Soot drifted onto her nose. Far above, something moved.\nThe wind gusted. HOOOOOWL.\nAnd then Pip saw it: a broken metal cowl at the top of the chimney, swinging in the wind, and beneath it a large, untidy nest. As the wind rushed across the gap, it made the howling sound, just like blowing across the top of a bottle. Two round yellow eyes blinked down at her. An owl.\n\"It's just the wind,\" Pip called back. \"And a very annoyed owl.\"\nSir Barnaby floated closer and peered up. \"Well,\" he said, \"I knew that all along.\"\n\"You were hiding in the wardrobe.\"\n\"I was inspecting it.\"\nThe next day, Dad called a chimney sweep, who fixed the cowl and left the owl's nest safely where it was.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the howling compared to?",
+       "options": [
+        "A wolf lost in a tunnel",
+        "A baby crying",
+        "A train whistle",
+        "A singing bird"
+       ],
+       "answer": "A wolf lost in a tunnel",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Soot hide?",
+       "options": [
+        "Under the bed",
+        "In the wardrobe",
+        "Up the chimney",
+        "Behind a portrait"
+       ],
+       "answer": "Under the bed",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where is Sir Barnaby when the howling starts?",
+       "options": [
+        "Halfway into the wardrobe",
+        "In the library",
+        "On the roof",
+        "In the kitchen"
+       ],
+       "answer": "Halfway into the wardrobe",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Pip decide to investigate?",
+       "options": [
+        "Her curiosity is stronger than her fear",
+        "Her dad tells her to",
+        "Sir Barnaby dares her",
+        "She wants to find the cat"
+       ],
+       "answer": "Her curiosity is stronger than her fear",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what causes the howling?",
+       "options": [
+        "Wind blowing past a broken chimney cowl",
+        "A real wolf",
+        "Sir Barnaby practising",
+        "Water in the pipes"
+       ],
+       "answer": "Wind blowing past a broken chimney cowl",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what bird is living in the chimney?",
+       "options": [],
+       "answer": "an owl",
+       "accept": [
+        "owl",
+        "Owl"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Sir Barnaby's claim that he was 'inspecting' the wardrobe show?",
+       "options": [
+        "He doesn't want to admit he was scared",
+        "He is interested in furniture",
+        "He wants a new home",
+        "He has lost something"
+       ],
+       "answer": "He doesn't want to admit he was scared",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the author describes moonlight and shadows as Pip walks to the great hall?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: The Grey Lady",
+     "synopsis": "A truly terrifying ghost visits Gloomwater Hall, but Pip discovers she has a secret of her own.",
+     "text": "She arrived without a sound, which was somehow worse than clanking.\nPip was reading by the fire when the flames shrank to blue and the room went icy. Frost crept across the inside of the window in feathery patterns. When Pip looked up, a tall lady in a long grey gown was standing in the doorway. Her face was pale as candle wax, and her hair floated around her as though she were underwater.\n\"Where,\" she said in a voice like wind through dead leaves, \"is Barnaby Crumpet?\"\nSir Barnaby appeared beside Pip with a nervous little pop. \"Lady Morwenna! What a… delightful surprise.\"\nLady Morwenna was the Grey Lady of Hollowmere Abbey, three valleys away. According to Sir Barnaby, she was the most frightening ghost in the county. She had once made a whole choir faint in the middle of a hymn.\n\"I have come to inspect your haunting,\" she said. \"There are rumours, Barnaby. Rumours of biscuits.\"\nFor the rest of the evening, Lady Morwenna taught lessons. How to make doors creak at exactly the right moment. How to let a single cold finger brush the back of someone's neck. How to whisper a name so that it seemed to come from inside the walls. Sir Barnaby took notes with a quill that kept falling through his fingers.\nPip watched from the sofa. She noticed something the ghosts did not. Whenever Lady Morwenna described the empty abbey, her voice grew quieter, and she kept glancing at the cosy fire and the biscuit tin.\n\"Do people ever visit Hollowmere?\" Pip asked.\nThe Grey Lady was silent for a long moment. \"No,\" she said at last. \"They are all too frightened.\"\nPip held out the biscuit tin. Lady Morwenna stared at it as though it were a poisonous snake. Then, very slowly, she leaned down and sniffed a custard cream.\nThe frost on the window began to melt.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of the Grey Lady?",
+       "options": [],
+       "answer": "Lady Morwenna",
+       "accept": [
+        "Morwenna",
+        "lady morwenna"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does the Grey Lady haunt?",
+       "options": [
+        "Hollowmere Abbey",
+        "Gloomwater Hall",
+        "A lighthouse",
+        "A village school"
+       ],
+       "answer": "Hollowmere Abbey",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens to the fire when she arrives?",
+       "options": [
+        "The flames shrink and turn blue",
+        "It goes out completely",
+        "It grows huge and orange",
+        "It starts to smoke"
+       ],
+       "answer": "The flames shrink and turn blue",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is her voice compared to?",
+       "options": [
+        "Wind through dead leaves",
+        "A creaking door",
+        "A ringing bell",
+        "Running water"
+       ],
+       "answer": "Wind through dead leaves",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why has she come to Gloomwater Hall?",
+       "options": [
+        "To inspect Sir Barnaby's haunting",
+        "To find a lost ring",
+        "To ask for help with a storm",
+        "To visit Pip's dad"
+       ],
+       "answer": "To inspect Sir Barnaby's haunting",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what clue shows that Lady Morwenna is lonely?",
+       "options": [
+        "Her voice grows quiet when she talks about the empty abbey",
+        "She shouts at Sir Barnaby",
+        "She makes the frost thicker",
+        "She leaves very quickly"
+       ],
+       "answer": "Her voice grows quiet when she talks about the empty abbey",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the melting frost at the end suggest?",
+       "options": [
+        "Lady Morwenna is beginning to feel warmer and happier",
+        "The fire has gone out",
+        "Winter is over",
+        "Sir Barnaby is angry"
+       ],
+       "answer": "Lady Morwenna is beginning to feel warmer and happier",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think nobody visits Hollowmere Abbey, and how might this make Lady Morwenna feel?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Night of the Ghost Tour",
+     "synopsis": "To raise money to fix the leaking roof, Gloomwater Hall holds a ghost tour, and Sir Barnaby must face a real audience.",
+     "text": "The roof of Gloomwater Hall leaked in fourteen places. Dad had buckets in every corridor and a frown that never went away.\n\"It costs a fortune to fix,\" he said, staring at the drips. \"I don't know what to do.\"\nPip had an idea. \"A ghost tour,\" she said. \"On Halloween. People will pay to be scared.\"\nDad laughed. \"But we haven't got any ghosts.\"\nPip and Sir Barnaby exchanged a look.\nOn Halloween night, forty visitors gathered in the great hall. Pip had lit candles in every window, so that the hall glowed against the dark hills. Mist curled across the lawn. Somewhere in the woods, an owl, the same annoyed owl, hooted on cue.\nBut ten minutes before the tour began, Sir Barnaby was hiding in the coal cellar.\n\"I cannot do it,\" he groaned. \"Forty people! What if I trip? What if they laugh?\"\nPip sat down on a sack of coal. \"What if they laugh in a good way?\"\nHe peered at her through the gloom.\n\"You're not the scariest ghost,\" Pip said gently. \"But you're the funniest. Lady Morwenna can do scary. You can do something nobody else can.\"\nThe tour began in the library. The visitors whispered and clutched each other as the candles flickered and a book slid from a shelf. Then Sir Barnaby rose through the floor, chains rattling, and boomed: \"BEWARE! I am Sir Barnaby Crumpet! And I have come to tell you… a joke!\"\nThere was a stunned silence.\n\"Why don't ghosts like the rain? Because it dampens their spirits!\"\nOne child giggled. Then another. Soon the whole room was laughing, and Sir Barnaby was glowing like a lantern. He told jokes on the staircase, in the great hall and from inside a suit of armour.\nBy midnight, the donation box was full. Dad stared at it, then at the shimmering figure taking a bow on the stairs, and sat down very suddenly on the bottom step.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many places does the roof leak?",
+       "options": [
+        "Fourteen",
+        "Four",
+        "Forty",
+        "Seven"
+       ],
+       "answer": "Fourteen",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Pip suggest a ghost tour?",
+       "options": [
+        "To raise money to fix the roof",
+        "To scare Hugo",
+        "To find the owl",
+        "To celebrate her birthday"
+       ],
+       "answer": "To raise money to fix the roof",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, on which night is the ghost tour held?",
+       "options": [
+        "Halloween",
+        "New Year's Eve",
+        "Bonfire Night",
+        "Midsummer"
+       ],
+       "answer": "Halloween",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where is Sir Barnaby hiding before the tour?",
+       "options": [
+        "The coal cellar",
+        "The library",
+        "The chimney",
+        "The garden"
+       ],
+       "answer": "The coal cellar",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is Sir Barnaby afraid of?",
+       "options": [
+        "That he will trip and people will laugh at him",
+        "That the roof will fall",
+        "That Lady Morwenna will come",
+        "That the owl will bite him"
+       ],
+       "answer": "That he will trip and people will laugh at him",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Pip help Sir Barnaby feel braver?",
+       "options": [
+        "She tells him his humour is something special",
+        "She promises to do the tour herself",
+        "She gives him a new chain",
+        "She locks the cellar door"
+       ],
+       "answer": "She tells him his humour is something special",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Dad sit down suddenly at the end?",
+       "options": [
+        "He realises the ghost is real",
+        "He is tired of counting money",
+        "He has hurt his foot",
+        "He wants to tell a joke"
+       ],
+       "answer": "He realises the ghost is real",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the audience laughs instead of running away when Sir Barnaby tells a joke?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Last Joke",
+     "synopsis": "Sir Barnaby reveals the reason he has never been able to rest, and Pip helps him find what he has been missing.",
+     "text": "After the ghost tour, Sir Barnaby was quieter than usual. He spent long hours in his secret study, floating above the diary.\n\"What's wrong?\" Pip asked one evening.\nHe sighed, and the candle flames bowed. \"Ghosts stay behind when something is left unfinished. For three hundred years I have wondered what mine was. Now I think I know.\" He turned the diary's last page with great effort. It was blank except for one line in faded ink: Why did the ghost cross the road?\n\"I never finished it,\" he said. \"I could never think of a good enough ending.\"\nPip read the line again. Outside, the wind moaned softly across the moor, and rain tapped on the little window high in the wall. For the first time, the sound did not seem frightening to her. It sounded like the hall breathing.\n\"Maybe,\" Pip said slowly, \"it doesn't need a perfect ending. Maybe it just needs someone to laugh at it.\"\nShe picked up an old pen from the desk, dipped it in the cracked inkpot, which still held a little ink, and wrote underneath: To get to the other side!\nSir Barnaby read it. His lip trembled. \"That is the oldest joke in the world.\"\n\"I know,\" said Pip. \"That's why it's funny.\"\nAnd Sir Barnaby laughed. He laughed so hard that his chains jingled like bells and his whole body shone with golden light, brighter than any candle in the hall. Pip had to shield her eyes.\nWhen the light faded, he was still there, but he looked different: lighter, younger, as though a heavy coat had been taken off his shoulders.\n\"I could go now, I think,\" he said, \"if I wanted to.\"\n\"Do you want to?\"\nHe looked around the tiny study, then up towards the house above, where Dad was whistling, Soot was purring, and the biscuit tin was waiting.\n\"Not yet,\" said Sir Barnaby Crumpet. \"I have a great many more jokes to tell.\"",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where does Sir Barnaby spend his time after the tour?",
+       "options": [
+        "In his secret study",
+        "In the coal cellar",
+        "On the roof",
+        "At Hollowmere Abbey"
+       ],
+       "answer": "In his secret study",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Sir Barnaby say ghosts stay behind?",
+       "options": [
+        "Something is left unfinished",
+        "They like old houses",
+        "They are afraid of the dark",
+        "They are waiting for a party"
+       ],
+       "answer": "Something is left unfinished",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is written on the last page of the diary?",
+       "options": [
+        "Why did the ghost cross the road?",
+        "Beware the Grey Lady",
+        "The key is under the stairs",
+        "Happy birthday, Pip"
+       ],
+       "answer": "Why did the ghost cross the road?",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what ending does Pip write for the joke?",
+       "options": [],
+       "answer": "To get to the other side",
+       "accept": [
+        "to get to the other side",
+        "the other side"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Pip now feel about the sound of the wind and rain?",
+       "options": [
+        "It no longer seems frightening",
+        "It makes her want to leave",
+        "It gives her a headache",
+        "It makes her cry"
+       ],
+       "answer": "It no longer seems frightening",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what happens when Sir Barnaby laughs?",
+       "options": [
+        "He shines with golden light",
+        "He disappears forever",
+        "The diary catches fire",
+        "Soot runs away"
+       ],
+       "answer": "He shines with golden light",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does it suggest when Sir Barnaby looks 'as though a heavy coat had been taken off his shoulders'?",
+       "options": [
+        "He feels free and at peace",
+        "He is cold",
+        "He has lost his clothes",
+        "He is getting older"
+       ],
+       "answer": "He feels free and at peace",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Sir Barnaby decides to stay at Gloomwater Hall instead of leaving?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
