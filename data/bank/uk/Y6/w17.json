@@ -1319,7 +1319,1932 @@
      "errors": []
     }
    ]
+  },
+  "math": {
+   "topic": "Ratio",
+   "questions": [
+    {
+     "id": "r1db3cat4dnnpe",
+     "subject": "math",
+     "type": "mc",
+     "q": "A bag has 3 red counters and 5 blue counters. What is the ratio of red to blue?",
+     "options": [
+      "3:5",
+      "5:3",
+      "3:8",
+      "8:3"
+     ],
+     "answer": "3:5",
+     "accept": [],
+     "hint": "Red comes first in the ratio.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ywsepjhe4jvl",
+     "subject": "math",
+     "type": "mc",
+     "q": "A class has 12 girls and 15 boys. What is the ratio of boys to girls in its simplest form?",
+     "options": [
+      "5:4",
+      "4:5",
+      "15:12",
+      "3:4"
+     ],
+     "answer": "5:4",
+     "accept": [],
+     "hint": "Write boys first, then divide both numbers by the same factor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rk7km4fpewrhz",
+     "subject": "math",
+     "type": "short",
+     "q": "Write the ratio 10:15 in its simplest form.",
+     "options": [],
+     "answer": "2:3",
+     "accept": [
+      "2 : 3"
+     ],
+     "hint": "Find the highest common factor of 10 and 15.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ij2t7d1xvr7ar",
+     "subject": "math",
+     "type": "mc",
+     "q": "Which ratio is equivalent to 4:6?",
+     "options": [
+      "6:9",
+      "6:8",
+      "8:10",
+      "2:4"
+     ],
+     "answer": "6:9",
+     "accept": [],
+     "hint": "Simplify each ratio and compare.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rnpfr8ua5upgt",
+     "subject": "math",
+     "type": "num",
+     "q": "A drink is made with 1 part juice to 4 parts water. How many parts are there altogether?",
+     "options": [],
+     "answer": "5",
+     "accept": [],
+     "hint": "Add the parts together.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r112uypl89lak7",
+     "subject": "math",
+     "type": "num",
+     "q": "A recipe uses 2 cups of flour for every 1 cup of sugar. How many cups of sugar are needed for 8 cups of flour?",
+     "options": [],
+     "answer": "4",
+     "accept": [],
+     "hint": "How many groups of 2 cups of flour are there?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xjq151kss989",
+     "subject": "math",
+     "type": "mc",
+     "q": "At a party, the ratio of children to adults is 6:1. Which statement is true?",
+     "options": [
+      "There are 6 children for every adult",
+      "There are 6 adults for every child",
+      "There are 6 people altogether",
+      "There are 7 children for every adult"
+     ],
+     "answer": "There are 6 children for every adult",
+     "accept": [],
+     "hint": "Read the ratio in the order the words are written.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rinuam9yawy51",
+     "subject": "math",
+     "type": "num",
+     "q": "The ratio of cats to dogs at an animal shelter is 3:2. There are 12 cats. How many dogs are there?",
+     "options": [],
+     "answer": "8",
+     "accept": [],
+     "hint": "Work out what one part is worth first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o4edeu15tvz2d",
+     "subject": "math",
+     "type": "num",
+     "q": "Paint is mixed in the ratio blue : yellow = 2 : 3. If 15 litres of yellow paint are used, how many litres of blue paint are needed?",
+     "options": [],
+     "answer": "10",
+     "accept": [],
+     "hint": "Find how many litres one part of the ratio represents.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rccgx4220y609",
+     "subject": "math",
+     "type": "num",
+     "q": "Share £30 in the ratio 1:2. How much is the larger share in pounds?",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "Add the parts to find how many equal shares there are.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "roqwniw12uhy1r",
+     "subject": "math",
+     "type": "num",
+     "q": "Mia and Leo share 35 stickers in the ratio 3:4. How many stickers does Leo get?",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "There are 7 parts in total.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1wdxrgm1x9b8ud",
+     "subject": "math",
+     "type": "num",
+     "q": "On a map, 1 cm represents 3 km. Two villages are 7 cm apart on the map. How many kilometres apart are they in real life?",
+     "options": [],
+     "answer": "21",
+     "accept": [],
+     "hint": "Each centimetre stands for the same distance.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1fx0bx5ab7a7r",
+     "subject": "math",
+     "type": "num",
+     "q": "A recipe for 4 people uses 300 g of pasta. How many grams of pasta are needed for 10 people?",
+     "options": [],
+     "answer": "750",
+     "accept": [],
+     "hint": "Find the amount for 2 people first.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r182wm6z1izt9nt",
+     "subject": "math",
+     "type": "num",
+     "q": "A box has 5 apples for every 2 pears. There are 28 pieces of fruit in the box. How many apples are there?",
+     "options": [],
+     "answer": "20",
+     "accept": [],
+     "hint": "How many pieces of fruit are in each group of 5 apples and 2 pears?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rksn3iv1m7nmdv",
+     "subject": "math",
+     "type": "num",
+     "q": "The ratio of red beads to green beads is 2:5. There are 21 more green beads than red beads. How many red beads are there?",
+     "options": [],
+     "answer": "14",
+     "accept": [],
+     "hint": "The difference between the parts is 3 parts.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1ppa8qz1ak9ak4",
+     "subject": "math",
+     "type": "open",
+     "q": "Ana says that the ratio 2:3 is the same as the ratio 3:2. Is she right? Explain your answer.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Think about what the order of the numbers in a ratio means.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt": {
+   "topic": "Predicado e verbos de ligação",
+   "questions": [
+    {
+     "id": "r1yxzvk1f5kd4x",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual destes é um verbo de ligação?",
+     "options": [
+      "estar",
+      "correr",
+      "pular",
+      "escrever"
+     ],
+     "answer": "estar",
+     "accept": [],
+     "hint": "Verbos de ligação não indicam ação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16y2ngqppfha8",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"A menina está feliz\", qual é o verbo de ligação?",
+     "options": [
+      "está",
+      "menina",
+      "feliz",
+      "A"
+     ],
+     "answer": "está",
+     "accept": [],
+     "hint": "Procure o verbo que liga o sujeito a uma característica.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rt55u1u9y4fl1",
+     "subject": "pt",
+     "type": "short",
+     "q": "Na frase \"O céu ficou escuro\", qual é o predicativo do sujeito?",
+     "options": [],
+     "answer": "escuro",
+     "accept": [],
+     "hint": "Que característica o céu passou a ter?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rr37i3vtq2uek",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em qual frase o verbo é de ação?",
+     "options": [
+      "O cachorro correu no parque.",
+      "O cachorro parece cansado.",
+      "O cachorro é grande.",
+      "O cachorro está sujo."
+     ],
+     "answer": "O cachorro correu no parque.",
+     "accept": [],
+     "hint": "Procure o verbo que mostra algo sendo feito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rclrx01vp9s26",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"Os alunos pareciam animados\", o predicativo do sujeito é:",
+     "options": [
+      "animados",
+      "alunos",
+      "pareciam",
+      "Os alunos"
+     ],
+     "answer": "animados",
+     "accept": [],
+     "hint": "É a palavra que diz como os alunos estavam.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r8ehiv816uquzg",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O que o predicativo do sujeito faz na oração?",
+     "options": [
+      "Indica uma característica ou um estado do sujeito",
+      "Indica onde a ação aconteceu",
+      "Indica quem praticou a ação",
+      "Indica quando a ação aconteceu"
+     ],
+     "answer": "Indica uma característica ou um estado do sujeito",
+     "accept": [],
+     "hint": "Lembre-se de que ele aparece depois do verbo de ligação.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rvgempzxg7ska",
+     "subject": "pt",
+     "type": "short",
+     "q": "Na frase \"Meu avô continua forte\", qual é o verbo de ligação?",
+     "options": [],
+     "answer": "continua",
+     "accept": [],
+     "hint": "É o verbo da frase.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rglkx30jvuhm0",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual frase tem verbo de ligação?",
+     "options": [
+      "A professora permaneceu calma.",
+      "A professora corrigiu as provas.",
+      "A professora abriu a janela.",
+      "A professora chegou cedo."
+     ],
+     "answer": "A professora permaneceu calma.",
+     "accept": [],
+     "hint": "Procure a frase que mostra um estado da professora.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r15up57wjhk51l",
+     "subject": "pt",
+     "type": "short",
+     "q": "Na frase \"A sopa está quente\", qual é o sujeito?",
+     "options": [],
+     "answer": "A sopa",
+     "accept": [
+      "sopa",
+      "a sopa"
+     ],
+     "hint": "De quem se fala na frase?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rhxiizxfh1zz",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Na frase \"As crianças ficaram contentes com o passeio\", qual é o predicado?",
+     "options": [
+      "ficaram contentes com o passeio",
+      "As crianças",
+      "contentes",
+      "com o passeio"
+     ],
+     "answer": "ficaram contentes com o passeio",
+     "accept": [],
+     "hint": "O predicado é tudo o que se diz sobre o sujeito.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rs61y2ryfvm7t",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Complete com um verbo de ligação: \"O dia ___ ensolarado.\"",
+     "options": [
+      "estava",
+      "correu",
+      "comeu",
+      "cantou"
+     ],
+     "answer": "estava",
+     "accept": [],
+     "hint": "O verbo deve ligar o dia a uma característica.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rv94i9kclvwx1",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Qual palavra é o predicativo do sujeito em \"A prova foi difícil\"?",
+     "options": [
+      "difícil",
+      "prova",
+      "foi",
+      "A prova"
+     ],
+     "answer": "difícil",
+     "accept": [],
+     "hint": "Como foi a prova?",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r7dt9u1jmckwe",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em \"Lucas é meu amigo\", o predicativo do sujeito é:",
+     "options": [
+      "meu amigo",
+      "Lucas",
+      "é",
+      "amigo Lucas"
+     ],
+     "answer": "meu amigo",
+     "accept": [],
+     "hint": "O predicativo pode ter mais de uma palavra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r2v5apzos0jp8",
+     "subject": "pt",
+     "type": "mc",
+     "q": "O verbo \"virar\" pode ser de ligação. Em qual frase ele é verbo de ligação?",
+     "options": [
+      "A lagarta virou borboleta.",
+      "Ele virou a página do livro.",
+      "O carro virou na esquina.",
+      "Ela virou o copo na pia."
+     ],
+     "answer": "A lagarta virou borboleta.",
+     "accept": [],
+     "hint": "Procure a frase em que virar significa \"tornar-se\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o89ew110os77h",
+     "subject": "pt",
+     "type": "mc",
+     "q": "Em qual frase o verbo \"ficar\" NÃO é verbo de ligação?",
+     "options": [
+      "Ela ficou em casa.",
+      "Ela ficou nervosa.",
+      "Ela ficou feliz.",
+      "Ela ficou cansada."
+     ],
+     "answer": "Ela ficou em casa.",
+     "accept": [],
+     "hint": "Veja qual frase indica um lugar, e não um estado.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1m35hvb1x3cqan",
+     "subject": "pt",
+     "type": "open",
+     "q": "Explique a diferença entre os verbos das frases \"O menino é rápido\" e \"O menino corre depressa\".",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em qual verbo mostra uma ação e qual liga o sujeito a uma característica.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_leit": {
+   "topic": "Biografias de cientistas brasileiros: Oswaldo Cruz e Bertha Lutz",
+   "questions": [
+    {
+     "id": "r1aj5fru82j7tn",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "O que é uma biografia?",
+     "options": [
+      "Um texto que conta a história da vida de uma pessoa, escrito por outra pessoa",
+      "Um texto em que a própria pessoa conta sua vida",
+      "Uma história inventada com personagens mágicos",
+      "Um texto que ensina a fazer uma receita"
+     ],
+     "answer": "Um texto que conta a história da vida de uma pessoa, escrito por outra pessoa",
+     "accept": [],
+     "hint": "Pense em quem escreve e sobre quem se escreve.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r697o1yg573ea",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual é a diferença entre biografia e autobiografia?",
+     "options": [
+      "Na autobiografia, a própria pessoa conta a sua vida",
+      "A autobiografia é sempre inventada",
+      "A biografia só fala de pessoas vivas",
+      "Não há nenhuma diferença"
+     ],
+     "answer": "Na autobiografia, a própria pessoa conta a sua vida",
+     "accept": [],
+     "hint": "O prefixo \"auto\" quer dizer \"de si mesmo\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xyssv81miip8x",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual era a profissão de Oswaldo Cruz?",
+     "options": [
+      "Médico sanitarista",
+      "Engenheiro",
+      "Pintor",
+      "Jogador de futebol"
+     ],
+     "answer": "Médico sanitarista",
+     "accept": [],
+     "hint": "Ele trabalhou para melhorar a saúde da população.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r16zkeam18hajyg",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Oswaldo Cruz nasceu em 1872. Em que século foi isso?",
+     "options": [
+      "Século XIX",
+      "Século XVIII",
+      "Século XX",
+      "Século XXI"
+     ],
+     "answer": "Século XIX",
+     "accept": [],
+     "hint": "Os anos de 1801 a 1900 formam um século.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "raruu551dgaxen",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Contra quais doenças Oswaldo Cruz organizou campanhas no Rio de Janeiro no início do século XX?",
+     "options": [
+      "Febre amarela, peste bubônica e varíola",
+      "Gripe, catapora e sarampo",
+      "Dengue, zika e chikungunya",
+      "Malária, tétano e caxumba"
+     ],
+     "answer": "Febre amarela, peste bubônica e varíola",
+     "accept": [],
+     "hint": "Uma delas era combatida com vacina, outra com o combate aos ratos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1pbhebee0ypsv",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Para combater a febre amarela, o que as equipes de Oswaldo Cruz procuravam eliminar?",
+     "options": [
+      "Os mosquitos que transmitem a doença",
+      "Os gatos das ruas",
+      "As árvores das praças",
+      "Os rios da cidade"
+     ],
+     "answer": "Os mosquitos que transmitem a doença",
+     "accept": [],
+     "hint": "A doença passa de uma pessoa para outra pela picada de um inseto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r6t5k0fslkt5m",
+     "subject": "pt_leit",
+     "type": "short",
+     "q": "Qual revolta aconteceu no Rio de Janeiro em 1904, quando a vacinação contra a varíola se tornou obrigatória?",
+     "options": [],
+     "answer": "Revolta da Vacina",
+     "accept": [
+      "A Revolta da Vacina"
+     ],
+     "hint": "O nome da revolta lembra o motivo da confusão.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1g2gqnu1o7ouvc",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual importante instituição de pesquisa em saúde leva hoje o nome de Oswaldo Cruz?",
+     "options": [
+      "Fundação Oswaldo Cruz (Fiocruz)",
+      "Instituto Butantan",
+      "Museu Paulista",
+      "Biblioteca Nacional"
+     ],
+     "answer": "Fundação Oswaldo Cruz (Fiocruz)",
+     "accept": [],
+     "hint": "O nome da instituição tem o nome dele.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tycvr47ygegj",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Bertha Lutz era cientista de qual área?",
+     "options": [
+      "Biologia",
+      "Astronomia",
+      "Química de combustíveis",
+      "Arquitetura"
+     ],
+     "answer": "Biologia",
+     "accept": [],
+     "hint": "Ela estudava seres vivos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1rgvfqxl6q0ym",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Que grupo de animais Bertha Lutz mais estudou?",
+     "options": [
+      "Anfíbios, como sapos e rãs",
+      "Aves, como papagaios",
+      "Peixes do mar",
+      "Insetos, como formigas"
+     ],
+     "answer": "Anfíbios, como sapos e rãs",
+     "accept": [],
+     "hint": "São animais que vivem parte da vida na água e parte em terra.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rm24mh11lpckwk",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Além da ciência, por qual causa Bertha Lutz ficou conhecida?",
+     "options": [
+      "A luta pelos direitos das mulheres, como o direito de votar",
+      "A construção de estradas",
+      "A criação de times de futebol",
+      "A defesa do fim das escolas"
+     ],
+     "answer": "A luta pelos direitos das mulheres, como o direito de votar",
+     "accept": [],
+     "hint": "Pense numa conquista das brasileiras em 1932.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1tiwkmicpynk7",
+     "subject": "pt_leit",
+     "type": "num",
+     "q": "Bertha Lutz nasceu em 1894, e as mulheres conquistaram o direito ao voto no Brasil em 1932. Quantos anos se passaram entre esses dois acontecimentos?",
+     "options": [],
+     "answer": "38",
+     "accept": [],
+     "hint": "Faça uma subtração entre os dois anos.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1n6uqqb1lsisop",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Qual destes acontecimentos veio PRIMEIRO na linha do tempo?",
+     "options": [
+      "O nascimento de Oswaldo Cruz (1872)",
+      "O nascimento de Bertha Lutz (1894)",
+      "A Revolta da Vacina (1904)",
+      "A conquista do voto feminino no Brasil (1932)"
+     ],
+     "answer": "O nascimento de Oswaldo Cruz (1872)",
+     "accept": [],
+     "hint": "Compare os anos e procure o menor.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rszm9g71t1tvrj",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em 1945, Bertha Lutz participou da conferência que criou qual organização internacional?",
+     "options": [
+      "A ONU (Organização das Nações Unidas)",
+      "A FIFA",
+      "O Comitê Olímpico",
+      "A Cruz Vermelha"
+     ],
+     "answer": "A ONU (Organização das Nações Unidas)",
+     "accept": [],
+     "hint": "Essa organização foi criada logo depois da Segunda Guerra Mundial.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rldxvaw1lnj7xn",
+     "subject": "pt_leit",
+     "type": "mc",
+     "q": "Em uma biografia, quais palavras ajudam a mostrar a ordem dos acontecimentos?",
+     "options": [
+      "Primeiro, depois, anos mais tarde, por fim",
+      "Bonito, alegre, triste, enorme",
+      "Eu, tu, ele, nós",
+      "Mas, porém, contudo, todavia"
+     ],
+     "answer": "Primeiro, depois, anos mais tarde, por fim",
+     "accept": [],
+     "hint": "Procure palavras ligadas ao tempo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rtmc466bsvs14",
+     "subject": "pt_leit",
+     "type": "open",
+     "q": "Na sua opinião, qual contribuição de Oswaldo Cruz ou de Bertha Lutz foi mais importante para o Brasil? Explique.",
+     "options": [],
+     "answer": "",
+     "accept": [],
+     "hint": "Pense em como a vida das pessoas mudou por causa do trabalho dessa pessoa.",
+     "text": "",
+     "errors": []
+    }
+   ]
+  },
+  "pt_ort": {
+   "topic": "Terminações -oe/-ue e -oi/-ui em verbos",
+   "questions": [
+    {
+     "id": "r1baw3dr1e55w6y",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual é a forma correta? \"Espero que você ___ estudando.\" (continuar)",
+     "options": [
+      "continue",
+      "continui",
+      "continuie"
+     ],
+     "answer": "continue",
+     "accept": [],
+     "hint": "Verbos em -uar terminam com E no subjuntivo.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1xmyp721dwchy7",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete com o verbo perdoar: \"Peço que ela me ___.\"",
+     "options": [],
+     "answer": "perdoe",
+     "accept": [],
+     "hint": "Verbos em -oar terminam com E nessa forma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ry7kcxk18i58kw",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual palavra está escrita corretamente? \"Minha tia ___ uma bicicleta.\" (possuir)",
+     "options": [
+      "possui",
+      "possue",
+      "pussui"
+     ],
+     "answer": "possui",
+     "accept": [],
+     "hint": "Verbos em -uir terminam com I nessa forma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r5n25om1tvr0rr",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "\"A onda sempre ___ o castelo de areia.\" (destruir)",
+     "options": [
+      "destrói",
+      "destroe",
+      "distrói"
+     ],
+     "answer": "destrói",
+     "accept": [],
+     "hint": "Lembre-se do acento no ditongo aberto.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1vgbmos1iif07r",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Escreva o verbo construir no presente: \"O pássaro ___ o ninho com galhos.\"",
+     "options": [],
+     "answer": "constrói",
+     "accept": [],
+     "hint": "É parecido com o verbo destruir e também tem acento.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1o105pj18wzgj0",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "\"Espero que o time ___ bem no jogo.\" (atuar)",
+     "options": [
+      "atue",
+      "atui",
+      "atoe"
+     ],
+     "answer": "atue",
+     "accept": [],
+     "hint": "O verbo termina em -uar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1nfq8bskkw6vl",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Escolha a forma correta: \"Que a sorte o ___ na viagem!\" (abençoar)",
+     "options": [
+      "abençoe",
+      "abençoi",
+      "abençõe"
+     ],
+     "answer": "abençoe",
+     "accept": [],
+     "hint": "Verbos em -oar terminam com E nessa forma.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "ri8v2uh1sqsvit",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "\"Não quero que essa notícia te ___.\" (magoar)",
+     "options": [
+      "magoe",
+      "magoi",
+      "magõe"
+     ],
+     "answer": "magoe",
+     "accept": [],
+     "hint": "O verbo termina em -oar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r66hgsx1cvndm6",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete com o verbo efetuar: \"É preciso que o cliente ___ o pagamento.\"",
+     "options": [],
+     "answer": "efetue",
+     "accept": [],
+     "hint": "O verbo termina em -uar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "re8v9r71cv9vk9",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "\"O clima ___ no humor das pessoas.\" (influir)",
+     "options": [
+      "influi",
+      "influe",
+      "inflúe"
+     ],
+     "answer": "influi",
+     "accept": [],
+     "hint": "O verbo termina em -uir.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rfml07c1kt8t87",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Verbos terminados em -oar e -uar, em frases como \"Espero que ele…\", terminam com:",
+     "options": [
+      "-oe e -ue, com E",
+      "-oi e -ui, com I",
+      "-oa e -ua, com A",
+      "-oo e -uo, com O"
+     ],
+     "answer": "-oe e -ue, com E",
+     "accept": [],
+     "hint": "Pense em \"perdoe\" e \"continue\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r19161yyzw7ru0",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Verbos terminados em -uir, na frase \"Ele…\" (presente), terminam com:",
+     "options": [
+      "-ui, com I",
+      "-ue, com E",
+      "-ua, com A",
+      "-uo, com O"
+     ],
+     "answer": "-ui, com I",
+     "accept": [],
+     "hint": "Pense em \"possui\" e \"influi\".",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rkeitnmsiusz6",
+     "subject": "pt_ort",
+     "type": "short",
+     "q": "Complete e escreva a palavra inteira: \"Espero que ele me perd_ _.\"",
+     "options": [],
+     "answer": "perdoe",
+     "accept": [],
+     "hint": "O verbo é perdoar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "r1dzo0e11lzhv",
+     "subject": "pt_ort",
+     "type": "mc",
+     "q": "Qual destas palavras está escrita ERRADO?",
+     "options": [
+      "continui",
+      "destrói",
+      "possui",
+      "perdoe"
+     ],
+     "answer": "continui",
+     "accept": [],
+     "hint": "Lembre-se da regra dos verbos em -uar.",
+     "text": "",
+     "errors": []
+    },
+    {
+     "id": "rzzxbv31ennmxv",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado.",
+     "options": [],
+     "answer": "continui → continue; destroi → destrói; constroi → constrói; possue → possui; magoi → magoe",
+     "accept": [],
+     "hint": "",
+     "text": "Espero que você continui lendo este bilhete. A chuva forte sempre destroi a nossa horta, mas o vovô diz que constroi outra num instante. Ele possue muita paciência e pede que ninguém se magoi com o estrago. Peço que você me perdoe por não ter avisado antes.",
+     "errors": [
+      {
+       "wrong": "continui",
+       "right": "continue"
+      },
+      {
+       "wrong": "destroi",
+       "right": "destrói"
+      },
+      {
+       "wrong": "constroi",
+       "right": "constrói"
+      },
+      {
+       "wrong": "possue",
+       "right": "possui"
+      },
+      {
+       "wrong": "magoi",
+       "right": "magoe"
+      }
+     ]
+    },
+    {
+     "id": "rf0awm98lmvhk",
+     "subject": "pt_ort",
+     "type": "proof",
+     "q": "Caça-erros: encontre e corrija as 5 palavras escritas errado no texto sobre o jogo.",
+     "options": [],
+     "answer": "atui → atue; efetui → efetue; abençoi → abençoe; influe → influi; destroe → destrói",
+     "accept": [],
+     "hint": "",
+     "text": "O treinador pediu que cada jogador atui com atenção e efetui os passes com calma. Antes do jogo, ele disse: \"Que a torcida nos abençoi!\" A chuva influe no gramado, mas o time possui garra. Quem destroe a confiança do grupo acaba perdendo a partida.",
+     "errors": [
+      {
+       "wrong": "atui",
+       "right": "atue"
+      },
+      {
+       "wrong": "efetui",
+       "right": "efetue"
+      },
+      {
+       "wrong": "abençoi",
+       "right": "abençoe"
+      },
+      {
+       "wrong": "influe",
+       "right": "influi"
+      },
+      {
+       "wrong": "destroe",
+       "right": "destrói"
+      }
+     ]
+    }
+   ]
   }
  },
- "books": []
+ "books": [
+  {
+   "subject": "pt_leit",
+   "level": "",
+   "read_level": "at",
+   "title": "O Caderno de Capa Verde",
+   "premise": "Para a feira de ciências, Davi e a prima Marina decidem escrever a biografia de Iolanda Ferraz, uma tia-bisavó botânica de quem quase ninguém se lembrava. Com cartas, fotos, visitas e entrevistas, eles montam, fato por fato, a linha do tempo de uma vida dedicada às plantas.",
+   "chapters": [
+    {
+     "title": "Capítulo 1: O baú da avó Celina",
+     "synopsis": "Davi e a prima Marina precisam escrever uma biografia para a feira da escola e encontram, no baú da avó, o caderno de uma tia-bisavó cientista.",
+     "text": "A professora Renata tinha sido clara: cada dupla do 6º ano deveria escrever a biografia de alguém que tivesse ajudado a cidade ou o país. A apresentação seria na feira de ciências, dali a um mês.\nDavi e a prima Marina passaram a tarde de sábado discutindo sem chegar a lugar nenhum. Marina queria um astronauta. Davi queria um jogador de futebol. A avó Celina, que costurava na sala, ouviu tudo e riu baixinho.\n— Por que vocês não escrevem sobre alguém da família?\n— Ninguém da família fez nada importante, vó — disse Davi, e logo se arrependeu.\nA avó não se ofendeu. Levantou-se, foi até o quarto e voltou arrastando um baú de madeira escura. Lá dentro havia toalhas bordadas, cartas amarradas com barbante e um caderno grosso, de capa verde, com folhas secas grudadas entre as páginas.\n— Este caderno era da minha tia Iolanda Ferraz — explicou a avó. — Ela foi botânica, estudava plantas. Muita gente na cidade ainda lembra dela.\nMarina abriu a primeira página com cuidado. Em letra caprichada estava escrito: \"Iolanda Ferraz, nascida em 1901, na Vila do Ipê.\"\n— Uma cientista na família! — exclamou ela. — Por que ninguém nunca contou?\n— Ninguém nunca perguntou — respondeu a avó.\nDavi pegou uma folha de papel e desenhou uma linha comprida. Na ponta da esquerda, escreveu: 1901 — nascimento.\n— Toda biografia começa assim — disse ele. — Com uma linha do tempo.\nNaquela noite, os dois combinaram: iam descobrir, fato por fato, a história de Iolanda Ferraz.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para qual evento os alunos do 6º ano deveriam preparar uma biografia?",
+       "options": [
+        "A feira de ciências",
+        "A festa junina",
+        "O campeonato de futebol",
+        "A semana do livro"
+       ],
+       "answer": "A feira de ciências",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem Marina queria escolher no começo?",
+       "options": [
+        "Um astronauta",
+        "Um jogador de futebol",
+        "Uma cantora",
+        "Um pintor"
+       ],
+       "answer": "Um astronauta",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a avó Celina estava fazendo quando ouviu a conversa?",
+       "options": [
+        "Costurando",
+        "Cozinhando",
+        "Lendo jornal",
+        "Regando plantas"
+       ],
+       "answer": "Costurando",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor era a capa do caderno encontrado no baú?",
+       "options": [
+        "Verde",
+        "Azul",
+        "Vermelha",
+        "Marrom"
+       ],
+       "answer": "Verde",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que ano Iolanda Ferraz nasceu?",
+       "options": [],
+       "answer": "1901",
+       "accept": [
+        "em 1901"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Iolanda Ferraz estudava?",
+       "options": [
+        "Plantas",
+        "Estrelas",
+        "Rochas",
+        "Animais marinhos"
+       ],
+       "answer": "Plantas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi se arrependeu do que disse sobre a família?",
+       "options": [
+        "Porque percebeu que tinha falado algo injusto sem conhecer a história da família",
+        "Porque a avó ficou muito brava com ele",
+        "Porque Marina começou a chorar",
+        "Porque a professora o ouviu"
+       ],
+       "answer": "Porque percebeu que tinha falado algo injusto sem conhecer a história da família",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que a avó respondeu \"Ninguém nunca perguntou\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que acontece com as histórias de família quando ninguém se interessa por elas.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 2: A menina que desenhava folhas",
+     "synopsis": "Lendo cartas antigas, Davi e Marina descobrem como era a infância de Iolanda e aprendem a separar fatos importantes de simples curiosidades.",
+     "text": "No domingo, as cartas amarradas com barbante viraram o centro da mesa da cozinha. Eram cartas que Iolanda tinha escrito para uma amiga quando era criança.\nNa carta de 1912, ela contava que tinha onze anos e que passava as tardes no quintal desenhando folhas de mangueira, de café e de ipê. \"Meu pai diz que menina não precisa saber o nome científico das plantas\", escreveu. \"Mas eu quero saber mesmo assim.\"\nMarina leu em voz alta e ficou indignada.\n— Imagina alguém dizendo que você não pode estudar uma coisa porque é menina!\nNa carta de 1914, Iolanda contava que tinha ganhado um livro de botânica de uma professora da vila. Era o único livro de ciências da casa, e ela o lia à luz de lamparina.\nDavi anotava tudo. A lista ficou enorme: o nome do cachorro dela, o bolo preferido, a cor do vestido da festa da padroeira, o livro de botânica, os desenhos de folhas.\n— Não dá para colocar tudo isso na biografia — disse Marina. — A professora falou que precisamos escolher os fatos importantes.\n— Mas como a gente sabe o que é importante?\nMarina pensou um pouco.\n— Importante é o que ajuda a explicar quem ela se tornou. O bolo preferido é curiosidade. O livro de botânica é importante, porque foi assim que ela começou a estudar.\nDavi riscou o cachorro, o bolo e o vestido. Na linha do tempo, acrescentou: 1912 — desenha plantas no quintal; 1914 — ganha o primeiro livro de botânica.\n— Parece pouco — disse ele.\n— É o começo — respondeu Marina. — Toda cientista já foi uma criança curiosa.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para quem Iolanda escrevia as cartas quando era criança?",
+       "options": [
+        "Para uma amiga",
+        "Para o pai",
+        "Para a professora",
+        "Para um primo"
+       ],
+       "answer": "Para uma amiga",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, quantos anos Iolanda tinha na carta de 1912?",
+       "options": [],
+       "answer": "onze",
+       "accept": [
+        "11",
+        "onze anos",
+        "11 anos"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem deu a Iolanda o livro de botânica?",
+       "options": [
+        "Uma professora da vila",
+        "O pai dela",
+        "A amiga das cartas",
+        "O padre da vila"
+       ],
+       "answer": "Uma professora da vila",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Iolanda lia o livro à noite?",
+       "options": [
+        "À luz de lamparina",
+        "Com uma lanterna elétrica",
+        "Na janela, com a luz da lua",
+        "Na biblioteca da vila"
+       ],
+       "answer": "À luz de lamparina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual fato Marina considerou uma simples curiosidade?",
+       "options": [
+        "O bolo preferido de Iolanda",
+        "O livro de botânica",
+        "Os desenhos de folhas",
+        "O interesse pelos nomes das plantas"
+       ],
+       "answer": "O bolo preferido de Iolanda",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual foi o critério de Marina para escolher os fatos importantes?",
+       "options": [
+        "Escolher o que ajuda a explicar quem Iolanda se tornou",
+        "Escolher os fatos mais engraçados",
+        "Escolher só o que aparece na primeira carta",
+        "Escolher os fatos mais curtos"
+       ],
+       "answer": "Escolher o que ajuda a explicar quem Iolanda se tornou",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a frase do pai de Iolanda mostra sobre aquela época?",
+       "options": [
+        "Que muitas pessoas achavam que meninas não precisavam estudar ciências",
+        "Que o pai dela era professor de botânica",
+        "Que todas as meninas estudavam plantas",
+        "Que era proibido desenhar folhas"
+       ],
+       "answer": "Que muitas pessoas achavam que meninas não precisavam estudar ciências",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Iolanda continuou estudando plantas mesmo depois do que o pai disse?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que ela escreveu na carta: \"Mas eu quero saber mesmo assim\".",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 3: A data errada",
+     "synopsis": "Uma foto e uma carta parecem contar datas diferentes sobre a viagem de Iolanda para estudar na capital, e os primos usam pistas para descobrir a ordem certa.",
+     "text": "Na terça-feira, Davi chegou à casa da avó com um problema.\n— Olha esta foto — disse, mostrando um retrato amarelado. — Atrás está escrito: \"Iolanda na estação, partindo para a capital, 1925\". Mas nesta carta ela já escreve da capital, contando das aulas. E a carta é de 1923!\nMarina franziu a testa. Se a carta era de 1923, Iolanda já estava na capital antes de 1925. Alguma coisa estava errada.\nOs dois espalharam tudo pela mesa. Na carta de 1923, Iolanda contava que era a única moça da turma de Ciências Naturais e que os colegas, no começo, riam dela. Depois pararam de rir, porque ela tirava as melhores notas.\n— Vó, a senhora sabe quando ela foi estudar? — perguntou Marina.\nA avó Celina pegou a foto, colocou os óculos e sorriu.\n— Essa letra atrás da foto não é dela. É da minha mãe, que escreveu muitos anos depois. Ela devia estar enganada.\nDavi não ficou satisfeito. Uma biografia precisava de provas. Então os dois procuraram mais pistas. No caderno verde, encontraram uma anotação: \"Primeiro dia de aula na capital. Março de 1922.\" E, numa carta de 1925, Iolanda contava que voltaria à Vila do Ipê nas férias, de trem.\n— Já sei! — disse Marina. — A foto não é da primeira viagem. É de uma volta das férias, em 1925.\nDavi corrigiu a linha do tempo: 1922 — muda-se para a capital e começa a estudar Ciências Naturais; 1923 — é a única moça da turma.\n— Às vezes uma data escrita está errada — disse ele. — Por isso a gente precisa comparar várias fontes.\nA avó aplaudiu, orgulhosa.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que ano estava escrito atrás da foto da estação?",
+       "options": [
+        "1925",
+        "1923",
+        "1922",
+        "1901"
+       ],
+       "answer": "1925",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Iolanda contava na carta de 1923?",
+       "options": [
+        "Que era a única moça da turma de Ciências Naturais",
+        "Que estava se casando",
+        "Que tinha desistido de estudar",
+        "Que tinha comprado um cachorro"
+       ],
+       "answer": "Que era a única moça da turma de Ciências Naturais",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que os colegas pararam de rir de Iolanda?",
+       "options": [
+        "Porque ela tirava as melhores notas",
+        "Porque a professora brigou com eles",
+        "Porque ela mudou de turma",
+        "Porque ela contava piadas"
+       ],
+       "answer": "Porque ela tirava as melhores notas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de quem era a letra escrita atrás da foto?",
+       "options": [
+        "Da mãe da avó Celina",
+        "Da própria Iolanda",
+        "Da professora Renata",
+        "Do pai de Iolanda"
+       ],
+       "answer": "Da mãe da avó Celina",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que ano Iolanda teve o primeiro dia de aula na capital?",
+       "options": [],
+       "answer": "1922",
+       "accept": [
+        "em 1922",
+        "março de 1922"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que pista ajudou Marina a entender a foto de 1925?",
+       "options": [
+        "Uma carta em que Iolanda dizia que voltaria à vila nas férias, de trem",
+        "Um bilhete escrito pela avó Celina",
+        "Um jornal antigo da capital",
+        "O desenho de uma estação no caderno"
+       ],
+       "answer": "Uma carta em que Iolanda dizia que voltaria à vila nas férias, de trem",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que Davi não aceitou apenas a explicação da avó?",
+       "options": [
+        "Porque achava que uma biografia precisava de provas",
+        "Porque não gostava da avó",
+        "Porque queria terminar logo a tarefa",
+        "Porque a avó não sabia ler"
+       ],
+       "answer": "Porque achava que uma biografia precisava de provas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que é importante comparar várias fontes ao escrever uma biografia?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre o que aconteceu com a data escrita atrás da foto.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 4: O herbário escondido",
+     "synopsis": "Os primos visitam o museu da cidade e descobrem que a coleção de plantas secas organizada por Iolanda ainda é usada por pesquisadores.",
+     "text": "No caderno verde, uma palavra aparecia muitas vezes: herbário. Davi procurou no dicionário e leu em voz alta: \"coleção de plantas secas, organizadas e identificadas para estudo\".\n— Será que o herbário dela ainda existe? — perguntou Marina.\nA avó lembrou que Iolanda tinha trabalhado no Museu de Ciências da cidade. No sábado seguinte, os três pegaram o ônibus até lá.\nUma pesquisadora de jaleco branco, chamada Helena, recebeu os visitantes. Quando ouviu o nome Iolanda Ferraz, os olhos dela brilharam.\n— Vocês são parentes dela? Venham comigo!\nEla os levou a uma sala fria, cheia de armários de metal. Abriu uma gaveta e tirou uma folha grande de papel grosso. Nela havia um galho seco preso com fitas, e embaixo uma etiqueta: \"Coletado por I. Ferraz, Serra da Vila do Ipê, 1934\".\n— Entre 1930 e 1937, ela fez dezenas de expedições pelas serras da região — explicou Helena. — Juntou mais de três mil plantas. Cada uma tem a data, o lugar e uma descrição. Até hoje, estudantes usam essa coleção para comparar como a vegetação mudou.\nMarina estava de boca aberta. Davi fazia as contas.\n— Três mil plantas... É como se ela tivesse coletado mais ou menos uma por dia, durante oito anos!\nHelena riu.\n— E viajava a cavalo, com cadernos e prensas de madeira. Não era nada fácil.\nNa volta, no ônibus, Davi acrescentou à linha do tempo: 1930 a 1937 — expedições pelas serras; monta um herbário com mais de três mil plantas.\n— Agora sim estamos chegando a uma contribuição de verdade — disse Marina, olhando pela janela as árvores da avenida.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que é um herbário, segundo o dicionário?",
+       "options": [
+        "Uma coleção de plantas secas, organizadas e identificadas para estudo",
+        "Uma loja que vende chás",
+        "Um jardim com flores coloridas",
+        "Um livro de receitas com ervas"
+       ],
+       "answer": "Uma coleção de plantas secas, organizadas e identificadas para estudo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como os três foram até o Museu de Ciências?",
+       "options": [
+        "De ônibus",
+        "De carro",
+        "De trem",
+        "A pé"
+       ],
+       "answer": "De ônibus",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, qual era o nome da pesquisadora que recebeu os visitantes?",
+       "options": [],
+       "answer": "Helena",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, que ano estava na etiqueta da planta que Helena mostrou?",
+       "options": [
+        "1934",
+        "1922",
+        "1901",
+        "1937"
+       ],
+       "answer": "1934",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quantas plantas Iolanda juntou no herbário?",
+       "options": [
+        "Mais de três mil",
+        "Cerca de trezentas",
+        "Exatamente cem",
+        "Mais de dez mil"
+       ],
+       "answer": "Mais de três mil",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, como Iolanda viajava nas expedições?",
+       "options": [
+        "A cavalo",
+        "De avião",
+        "De barco",
+        "De bicicleta"
+       ],
+       "answer": "A cavalo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, por que o herbário ainda é útil para os estudantes de hoje?",
+       "options": [
+        "Porque permite comparar como a vegetação mudou ao longo do tempo",
+        "Porque as plantas secas ainda podem ser plantadas",
+        "Porque é bonito para enfeitar a sala",
+        "Porque substitui todos os livros de biologia"
+       ],
+       "answer": "Porque permite comparar como a vegetação mudou ao longo do tempo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Marina disse que agora estavam \"chegando a uma contribuição de verdade\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense em quem usa o herbário até hoje.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 5: A planta que ninguém conhecia",
+     "synopsis": "Uma antiga aluna de Iolanda conta aos primos como a botânica descobriu uma espécie nova de planta e a batizou em homenagem à sua vila.",
+     "text": "Helena tinha dado uma dica: na rua de trás do museu morava dona Zuleica, que tinha sido aluna de Iolanda. Os primos escreveram uma carta pedindo uma entrevista, e ela respondeu no mesmo dia: \"Venham tomar um café\".\nDona Zuleica tinha noventa e poucos anos, cabelos muito brancos e uma voz firme. Sobre a mesa, havia um vaso com uma flor pequena, de pétalas lilases.\n— Vocês sabem o que é isto? — perguntou ela.\nOs dois balançaram a cabeça.\n— É a flor que a professora Iolanda descobriu. Em 1938, numa expedição, ela encontrou uma planta que não aparecia em nenhum livro. Passou meses comparando, desenhando, escrevendo para outros cientistas. No fim, provou que era uma espécie nova.\n— E que nome ela deu? — quis saber Marina.\n— Ela poderia ter colocado o próprio nome, como muitos faziam. Mas escolheu homenagear a Vila do Ipê. Chamou a planta de \"ipeana\", em honra ao lugar onde tinha começado a desenhar folhas.\nDavi anotou tudo, e depois fez uma pergunta que tinha preparado:\n— Como ela era como pessoa?\nDona Zuleica sorriu.\n— Exigente. Não aceitava resposta sem prova. Mas também era paciente. Uma vez, quando eu errei a classificação de uma planta, ela não brigou. Disse: \"Errar é o primeiro passo de quem procura\".\nNa saída, a senhora deu aos primos uma muda da flor lilás num copinho de plástico.\n— Para a feira de vocês.\nEm casa, a linha do tempo ganhou mais um ponto: 1938 — descobre uma espécie nova e a batiza em homenagem à Vila do Ipê.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quem deu a dica de que dona Zuleica morava perto do museu?",
+       "options": [
+        "Helena",
+        "A avó Celina",
+        "A professora Renata",
+        "Marina"
+       ],
+       "answer": "Helena",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que cor eram as pétalas da flor sobre a mesa?",
+       "options": [
+        "Lilases",
+        "Amarelas",
+        "Vermelhas",
+        "Brancas"
+       ],
+       "answer": "Lilases",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que ano Iolanda encontrou a planta que não aparecia em nenhum livro?",
+       "options": [],
+       "answer": "1938",
+       "accept": [
+        "em 1938"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Iolanda fez para provar que a planta era uma espécie nova?",
+       "options": [
+        "Comparou, desenhou e escreveu para outros cientistas durante meses",
+        "Mostrou a planta para o pai",
+        "Plantou a flor no quintal",
+        "Perguntou para os colegas da turma"
+       ],
+       "answer": "Comparou, desenhou e escreveu para outros cientistas durante meses",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em homenagem a que Iolanda deu nome à planta?",
+       "options": [
+        "À Vila do Ipê",
+        "A ela mesma",
+        "À amiga das cartas",
+        "Ao Museu de Ciências"
+       ],
+       "answer": "À Vila do Ipê",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Iolanda disse quando dona Zuleica errou a classificação de uma planta?",
+       "options": [
+        "\"Errar é o primeiro passo de quem procura\"",
+        "\"Faça tudo de novo agora\"",
+        "\"Você nunca vai ser cientista\"",
+        "\"Isso não tem importância\""
+       ],
+       "answer": "\"Errar é o primeiro passo de quem procura\"",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a escolha do nome da planta mostra sobre Iolanda?",
+       "options": [
+        "Que ela tinha carinho pelo lugar onde cresceu",
+        "Que ela não gostava do próprio nome",
+        "Que ela tinha esquecido a sua infância",
+        "Que ela queria ficar famosa"
+       ],
+       "answer": "Que ela tinha carinho pelo lugar onde cresceu",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que entrevistar dona Zuleica foi importante para a biografia?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que os documentos não contavam sobre Iolanda.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 6: O que conta mais?",
+     "synopsis": "Ao descobrir que Iolanda criou hortas escolares e formou professoras, os primos discutem qual foi a maior contribuição dela.",
+     "text": "Faltava uma semana para a feira, e o caderno verde ainda guardava surpresas. Nas últimas páginas, Iolanda tinha colado recortes de jornal dos anos 1940 e 1950.\nUm deles dizia: \"Botânica ensina professoras a criar hortas nas escolas\". Outro: \"Mais de cem escolas da região já têm horta e jardim de plantas nativas\".\nDavi leu duas vezes.\n— Ela saiu do museu para ensinar nas escolas?\nA avó Celina confirmou.\n— A partir de 1945, ela passou a percorrer a região dando cursos para professoras. Dizia que não adiantava conhecer as plantas se as crianças não aprendessem a cuidar delas. Muitas escolas onde ela passou ainda têm horta até hoje.\nMarina e Davi sentaram para escrever a conclusão da biografia, e logo começaram a discutir.\n— A maior contribuição foi a espécie nova — disse Davi. — Foi uma descoberta científica!\n— Não, foi o herbário — respondeu Marina. — Ele é usado até hoje por pesquisadores.\n— E as hortas? Ensinar milhares de crianças também é importante.\nOs dois ficaram em silêncio por um tempo. Então a avó, sem tirar os olhos da costura, disse:\n— Vocês não precisam escolher só uma. Uma vida tem muitas partes.\nMarina teve uma ideia. Em vez de uma única conclusão, eles fariam um quadro com três colunas: \"Para a ciência\", \"Para a cidade\" e \"Para as crianças\". Em cada coluna, colocariam uma contribuição e uma prova de que ela era verdadeira.\nDavi gostou tanto que fez o quadro em cartolina naquela mesma tarde. Na linha do tempo, escreveu: 1945 em diante — forma professoras e espalha hortas pelas escolas da região.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, de que décadas eram os recortes de jornal colados no caderno?",
+       "options": [
+        "Dos anos 1940 e 1950",
+        "Dos anos 1910 e 1920",
+        "Dos anos 1980 e 1990",
+        "Dos anos 2000"
+       ],
+       "answer": "Dos anos 1940 e 1950",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, segundo os jornais, o que Iolanda ensinava às professoras?",
+       "options": [
+        "A criar hortas nas escolas",
+        "A dar aulas de música",
+        "A escrever biografias",
+        "A construir museus"
+       ],
+       "answer": "A criar hortas nas escolas",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, a partir de que ano Iolanda passou a dar cursos para professoras?",
+       "options": [],
+       "answer": "1945",
+       "accept": [
+        "em 1945"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual contribuição Davi achava a mais importante?",
+       "options": [
+        "A descoberta da espécie nova",
+        "O herbário",
+        "As hortas nas escolas",
+        "As cartas da infância"
+       ],
+       "answer": "A descoberta da espécie nova",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual contribuição Marina defendia primeiro?",
+       "options": [
+        "O herbário",
+        "A espécie nova",
+        "As hortas nas escolas",
+        "O caderno verde"
+       ],
+       "answer": "O herbário",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, quais eram as três colunas do quadro de Marina?",
+       "options": [
+        "Para a ciência, para a cidade e para as crianças",
+        "Infância, juventude e velhice",
+        "Cartas, fotos e jornais",
+        "Começo, meio e fim"
+       ],
+       "answer": "Para a ciência, para a cidade e para as crianças",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que a avó quis dizer com \"Uma vida tem muitas partes\"?",
+       "options": [
+        "Que uma pessoa pode ter várias contribuições importantes ao mesmo tempo",
+        "Que a biografia deveria ser dividida em capítulos curtos",
+        "Que Iolanda tinha morado em muitas casas",
+        "Que os primos deviam parar de trabalhar"
+       ],
+       "answer": "Que uma pessoa pode ter várias contribuições importantes ao mesmo tempo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Iolanda dizia que não adiantava conhecer as plantas se as crianças não aprendessem a cuidar delas?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Pense no que acontece com a natureza quando as pessoas não sabem cuidar dela.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Capítulo 7: A linha do tempo na feira",
+     "synopsis": "No dia da feira, Davi e Marina apresentam a biografia de Iolanda Ferraz e percebem que a história dela ainda continua.",
+     "text": "No dia da feira, o ginásio da escola estava cheio de cartazes, maquetes e vulcões de bicarbonato. A mesa de Davi e Marina era simples: o caderno verde, uma foto antiga, o quadro de três colunas e, no meio, a muda de flor lilás que dona Zuleica tinha dado.\nAtrás da mesa, pendurada na parede, estava a linha do tempo completa, feita em papel pardo:\n1901 — nasce na Vila do Ipê.\n1914 — ganha o primeiro livro de botânica.\n1922 — muda-se para a capital para estudar Ciências Naturais.\n1930 a 1937 — monta um herbário com mais de três mil plantas.\n1938 — descobre uma espécie nova.\n1945 em diante — forma professoras e espalha hortas pelas escolas.\n1979 — morre, aos 78 anos, na Vila do Ipê.\nOs visitantes paravam, liam e faziam perguntas. Um menino do 3º ano quis saber se a flor lilás era de verdade. Uma mãe perguntou se Iolanda tinha sido famosa.\n— Não muito — respondeu Marina. — Mas o trabalho dela continua sendo usado. Isso é mais importante do que ser famosa.\nNo fim da tarde, a professora Renata se aproximou com a avó Celina, que tinha vindo de surpresa. Leu tudo em silêncio e depois perguntou:\n— O que vocês aprenderam fazendo esta biografia?\nDavi pensou um pouco antes de responder.\n— Que toda pessoa tem uma história, mas é preciso procurar provas para contar direito. E que, às vezes, alguém importante está bem perto da gente.\nA avó Celina enxugou os olhos com a ponta do lenço. Marina pegou a muda de flor e a entregou à avó.\n— Para o quintal, vó. Assim a história da tia Iolanda continua crescendo.",
+     "questions": [
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, onde aconteceu a feira?",
+       "options": [
+        "No ginásio da escola",
+        "No Museu de Ciências",
+        "Na praça da cidade",
+        "Na casa da avó"
+       ],
+       "answer": "No ginásio da escola",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, em que tipo de papel foi feita a linha do tempo?",
+       "options": [
+        "Papel pardo",
+        "Cartolina azul",
+        "Papel de seda",
+        "Jornal velho"
+       ],
+       "answer": "Papel pardo",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "short",
+       "q": "No capítulo, em que ano Iolanda morreu, segundo a linha do tempo?",
+       "options": [],
+       "answer": "1979",
+       "accept": [
+        "em 1979"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, qual acontecimento aparece logo depois de \"1922\" na linha do tempo?",
+       "options": [
+        "A montagem do herbário, de 1930 a 1937",
+        "A descoberta da espécie nova",
+        "O primeiro livro de botânica",
+        "Os cursos para professoras"
+       ],
+       "answer": "A montagem do herbário, de 1930 a 1937",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que um menino do 3º ano quis saber?",
+       "options": [
+        "Se a flor lilás era de verdade",
+        "Se Iolanda tinha sido famosa",
+        "Quanto custava o caderno verde",
+        "Quem tinha feito o vulcão"
+       ],
+       "answer": "Se a flor lilás era de verdade",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, para Marina, o que era mais importante do que ser famosa?",
+       "options": [
+        "Ter um trabalho que continua sendo usado",
+        "Ganhar prêmios",
+        "Aparecer nos jornais",
+        "Ter muitos amigos"
+       ],
+       "answer": "Ter um trabalho que continua sendo usado",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "mc",
+       "q": "No capítulo, o que Marina quis dizer ao entregar a muda à avó e falar que a história \"continua crescendo\"?",
+       "options": [
+        "Que o exemplo de Iolanda continua vivo na família",
+        "Que a flor ficaria enorme",
+        "Que eles iam escrever outra biografia",
+        "Que a avó deveria virar botânica"
+       ],
+       "answer": "Que o exemplo de Iolanda continua vivo na família",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "pt_leit",
+       "type": "open",
+       "q": "Por que você acha que Davi disse que \"às vezes, alguém importante está bem perto da gente\"?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "Lembre como Davi pensava sobre a família no primeiro capítulo.",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
 }
