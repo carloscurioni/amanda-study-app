@@ -3970,6 +3970,899 @@
      ]
     }
    ]
+  },
+  {
+   "subject": "en_read",
+   "level": "",
+   "read_level": "at",
+   "title": "The Line on Harbour Lane",
+   "premise": "In a Cornish seaside town, two rival bakeries face each other across a painted line. When thirteen-year-old Mira Castell becomes secret friends with Tobin Hale, the two of them uncover how their grandparents' friendship turned into a forty-year feud, and try to heal it.",
+   "chapters": [
+    {
+     "title": "Chapter 1: The Line on the Pavement",
+     "synopsis": "Mira Castell explains the old feud between her family's bakery and the Hale bakery across the street, and is surprised when Tobin Hale rescues her runaway dog.",
+     "text": "On Harbour Lane in the seaside town of Penwick, there are two bakeries, and they face each other like two cats on a wall. On one side is Castell's, with its blue door and its smell of cinnamon. On the other side is Hale's, with its red door and its smell of warm rye. Between them, painted across the cobbles in faded white, is a line.\nNobody remembers who painted it. My grandmother, Nonna Bea, says the Hales did. Old Mr Hale says the Castells did. Everyone agrees on one thing: no Castell crosses to the Hale side, and no Hale crosses to ours.\nI am Mira Castell, I am thirteen, and I have spent my whole life on the blue side of that line. I know the rules the way I know my times tables. We do not buy their bread. We do not say good morning. If a Hale walks into the newsagent's, we wait outside until they leave. My cousin Dario says the Hales once tried to steal our sourdough starter. My mum says that is nonsense, but she still frowns when their delivery van parks too close.\nOn Saturday morning, everything went wrong. I was carrying a tray of almond buns out to the window display when Biscuit, our scruffy little terrier, shot out of the door after a seagull. He raced straight across the white line, under the wheels of a passing bicycle, and into the road beside Hale's.\nI screamed his name. I stood frozen at the line, the tray shaking in my hands, because my feet simply would not cross it.\nThen a boy burst out of the red door. He was about my age, with flour on his nose and an apron that was far too big for him. He dived, scooped Biscuit up just as a van came round the corner, and stumbled back onto the pavement.\nFor a moment we stared at each other across the line. He was holding my dog. I was holding a tray of buns. Neither of us knew the rules for this.\n'I think he's yours,' the boy said finally, and he leaned over the white paint and held Biscuit out to me. He did not step across. He just stretched.\n'Thank you,' I whispered. It felt like a strange word to say to a Hale, like a word in a foreign language.\n'I'm Tobin,' he said. Then, from inside his shop, a deep voice shouted his name, and he flinched and ran back through the red door.\nI carried Biscuit home. Nonna Bea was waiting with her arms folded. 'Was that a Hale boy?' she asked, her voice as cold as the fridge.\n'He saved Biscuit,' I said.\nShe sniffed. 'Then he wanted something,' she replied, and she turned back to her dough.\nBut that night, lying in bed, I kept thinking about how Tobin had leaned over the line instead of crossing it. It was as if he respected the rule and broke it at the same time. And I wondered, for the first time in my life, what would happen if somebody actually stepped over.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the name of the town where the story takes place?",
+       "options": [
+        "Penwick",
+        "Harbour Lane",
+        "Castell",
+        "Penhallow"
+       ],
+       "answer": "Penwick",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what colour is the door of the Castells' bakery?",
+       "options": [
+        "Blue",
+        "Red",
+        "White",
+        "Green"
+       ],
+       "answer": "Blue",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of Mira's dog?",
+       "options": [],
+       "answer": "Biscuit",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does Biscuit run out of the bakery?",
+       "options": [
+        "He chases a seagull",
+        "He hears a bicycle bell",
+        "He smells the rye bread",
+        "He is frightened by a van"
+       ],
+       "answer": "He chases a seagull",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Tobin give Biscuit back to Mira?",
+       "options": [
+        "He leans over the line without crossing it",
+        "He carries him into Castell's",
+        "He leaves him at the newsagent's",
+        "He asks Dario to take him"
+       ],
+       "answer": "He leans over the line without crossing it",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Nonna Bea's reaction suggest about her attitude to the Hales?",
+       "options": [
+        "She distrusts them completely",
+        "She secretly admires them",
+        "She has never heard of them",
+        "She is afraid of Tobin's dog"
+       ],
+       "answer": "She distrusts them completely",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the white line on the cobbles mainly symbolise?",
+       "options": [
+        "The division and conflict between the two families",
+        "The border of the town",
+        "A road safety marking",
+        "The route of the delivery van"
+       ],
+       "answer": "The division and conflict between the two families",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mira could not make her feet cross the line, even when her dog was in danger?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 2: The Recipe Book",
+     "synopsis": "Mira meets Tobin by chance at the library, where they discover they share a love of baking and learn a surprising clue about how the feud began.",
+     "text": "The Penwick library is the only place in town where Castells and Hales are both allowed to go, mostly because nobody in either family reads very much except me. On Tuesday after school, I went to return a book about bread from around the world, and there, at the table by the window, was Tobin Hale.\nHe was reading the very book I had wanted to borrow next: a fat, battered volume called The Baker's Companion. When he saw me, he went pink and half closed it, as if he had been caught stealing.\nI should have walked away. Every rule I had ever been taught told me to walk away. Instead, I heard myself say, 'Page ninety-two has the best plaited loaf.'\nHe looked up. 'Page ninety-four,' he corrected. 'Ninety-two is the one with too much salt.'\nWe argued about it for ten minutes. Then we argued about whether butter or oil made a softer bun, and whether you should ever put raisins in anything, which he said was a crime. By the time the librarian coughed at us, I had laughed more than I had in weeks.\n'Your grandad shouts a lot,' I said carefully.\nTobin shrugged. 'He's not angry with me. He's angry with the whole world. He says your family ruined his life.'\n'My nonna says the same about yours.'\nWe looked at each other, and something in Tobin's face changed. 'Do you actually know why?' he asked. 'Because I've asked, and nobody will tell me. They just say, you know what they did.'\nI realised I had never asked. I had simply grown up inside the feud, the way a fish grows up inside water, without noticing it was there.\nTobin flipped The Baker's Companion to the very back. Tucked inside the cover was an old newspaper cutting, yellow and soft as tissue. The headline read: WEDDING CAKE DISASTER AT PENWICK HALL. Underneath was a blurry photograph of a huge cake leaning sideways like a melting snowman, and two young bakers standing on either side of it, pointing at each other.\nOne of them, I was almost sure, was Nonna Bea. The other had Tobin's ears.\n'That's my grandad,' Tobin breathed. 'They made a cake together? They worked together?'\nThe article was only half there; the rest had been torn away. All we could read was: the two apprentice bakers, once the best of friends, each blamed the other for the collapse.\nBest of friends. I read the words three times.\nWhen we left the library, we walked out of different doors, because someone might be watching. But at the corner of Harbour Lane, Tobin turned and held up the book. 'Next Tuesday?' he mouthed.\nI nodded. It was a tiny nod, but it felt like the bravest thing I had ever done.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where do Mira and Tobin meet?",
+       "options": [
+        "At the library",
+        "At the harbour",
+        "At school",
+        "At the newsagent's"
+       ],
+       "answer": "At the library",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the title of the book Tobin is reading?",
+       "options": [],
+       "answer": "The Baker's Companion",
+       "accept": [
+        "Baker's Companion"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which ingredient does Tobin say it is a crime to use?",
+       "options": [
+        "Raisins",
+        "Butter",
+        "Salt",
+        "Oil"
+       ],
+       "answer": "Raisins",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do Mira and Tobin find inside the back cover of the book?",
+       "options": [
+        "An old newspaper cutting",
+        "A secret recipe",
+        "A letter from Nonna Bea",
+        "A photograph of Biscuit"
+       ],
+       "answer": "An old newspaper cutting",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the newspaper reveal about Nonna Bea and Tobin's grandad?",
+       "options": [
+        "They were once best friends",
+        "They were once married",
+        "They had never met",
+        "They won a prize together"
+       ],
+       "answer": "They were once best friends",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mira mean when she compares herself to a fish growing up inside water?",
+       "options": [
+        "She never noticed the feud because it was always around her",
+        "She has always wanted to live by the sea",
+        "She feels she cannot breathe at home",
+        "She is a strong swimmer"
+       ],
+       "answer": "She never noticed the feud because it was always around her",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why do Mira and Tobin leave the library by different doors?",
+       "options": [
+        "They are afraid someone will see them together",
+        "The librarian tells them to",
+        "They live in different directions",
+        "They have had an argument"
+       ],
+       "answer": "They are afraid someone will see them together",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mira describes her tiny nod as 'the bravest thing I had ever done'?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 3: Flour Wars",
+     "synopsis": "At the Penwick summer fair, the two families compete in the baking contest, and an argument between Dario and Tobin turns into a public fight.",
+     "text": "Every August, the Penwick summer fair fills the field behind the church with bunting, brass bands and, most importantly, the Grand Baking Contest. For as long as anyone can remember, either Castell's or Hale's has won it. The two families treat it less like a contest and more like a battle.\nThis year, the theme was 'Bread of the Sea', and our family had built a loaf shaped like a lighthouse, with a beam of golden sugar shining from the top. My cousin Dario had stayed up until two in the morning to finish it, and he guarded it like a soldier.\nThe Hales had made a huge crusty whale, its tail curling up over the edge of the table. I had to admit, secretly, that it was magnificent.\nTobin and I had agreed, the Tuesday before, that we would not even look at each other at the fair. It was safer. So I kept my eyes on our lighthouse and tried not to notice him across the tent, rearranging the whale's tail for the hundredth time.\nThe trouble started when the judges reached the Hale table. Dario muttered something to his friend about the whale looking like a burnt potato. He said it just loudly enough.\nTobin's older sister, Fern, whirled round. 'At least ours isn't leaning,' she snapped. 'Your lighthouse looks like it's had a long night.'\nDario stepped forward. Fern stepped forward. Suddenly half the tent was watching. Dario grabbed a bag of flour from the table, maybe just to wave it, maybe not, but it split open in his hands, and a white cloud exploded over Fern, over the whale, and over Tobin, who had rushed forward to pull his sister back.\nFor a second, there was total silence. Tobin stood there, white from head to toe, blinking flour out of his eyelashes like a startled ghost.\nThen everyone was shouting at once. Old Mr Hale roared that it was typical of a Castell. Nonna Bea shouted back that the Hales had always been troublemakers. Dario was dragged away by my uncle. Fern was crying with anger. Someone knocked the table, and the lighthouse finally did lean, slowly, sadly, until its sugar beam snapped off.\nIn all that noise, I caught Tobin's eye. He did not look angry. He looked tired, as if he had seen this same argument a thousand times and already knew how it ended.\nThe judges, nervous and covered in flour themselves, gave first prize to a lady from the next village who had made a simple seaweed loaf.\nThat evening, our kitchen was full of furious voices. Everyone agreed the Hales had started it. Nobody mentioned what Dario had said first.\nI sat on the stairs with Biscuit and thought about the newspaper cutting. Two best friends, pointing at each other over a broken cake. It was happening again, I realised, only this time it was our generation, and the cake was a lighthouse.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is the theme of this year's baking contest?",
+       "options": [
+        "Bread of the Sea",
+        "Bread of the World",
+        "Summer Fruits",
+        "Harbour Lights"
+       ],
+       "answer": "Bread of the Sea",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what shape is the Castells' loaf?",
+       "options": [
+        "A lighthouse",
+        "A whale",
+        "A boat",
+        "A seagull"
+       ],
+       "answer": "A lighthouse",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is the name of Tobin's older sister?",
+       "options": [],
+       "answer": "Fern",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Dario say that starts the argument?",
+       "options": [
+        "That the whale looks like a burnt potato",
+        "That the Hales stole their recipe",
+        "That Fern cannot bake",
+        "That the judges are unfair"
+       ],
+       "answer": "That the whale looks like a burnt potato",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who wins the baking contest?",
+       "options": [
+        "A lady from the next village",
+        "The Castells",
+        "The Hales",
+        "Dario and Fern together"
+       ],
+       "answer": "A lady from the next village",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tobin's tired expression suggest about the feud?",
+       "options": [
+        "It is an old, repeating pattern that never changes",
+        "He finds it exciting",
+        "He is about to start a new argument",
+        "He did not notice the fight"
+       ],
+       "answer": "It is an old, repeating pattern that never changes",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what is significant about the fact that 'Nobody mentioned what Dario had said first'?",
+       "options": [
+        "The Castells ignore their own share of the blame",
+        "Dario has gone home early",
+        "Nobody heard what Dario said",
+        "The Hales apologised to Dario"
+       ],
+       "answer": "The Castells ignore their own share of the blame",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Mira connects the broken lighthouse with the old newspaper photograph?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 4: The Storm",
+     "synopsis": "A violent storm floods Hale's bakery, and when Nonna Bea refuses to help, Mira secretly crosses the line for the first time to help Tobin save the ovens.",
+     "text": "The storm arrived in the middle of the night in September. I woke to the sound of the wind howling down Harbour Lane like an angry choir and the windows rattling in their frames. Biscuit was trembling under my bed.\nWhen I looked out, the street had become a river. Seawater had poured over the harbour wall and was rushing down the hill, swirling round the lamp posts. Our side of the lane sits slightly higher, so the water only lapped at our step. But the Hale side was lower, and I could see brown water creeping under their red door.\nLights came on in their windows. I saw shapes moving inside, frantically lifting sacks onto shelves. Then I saw Tobin's face at the window, pale and scared.\nI ran downstairs. Mum, my uncle and Nonna Bea were in the kitchen in their dressing gowns, watching through the glass.\n'Their ovens will be ruined,' my uncle said quietly. 'If the water reaches the electrics, that's the end of their business.'\nMum reached for her coat. 'We have sandbags in the yard. We could take them over.'\n'No.' Nonna Bea's voice was like a slammed door. 'Nobody from this family crosses that line. Not tonight, not ever. They made their choice forty years ago.'\nMum hesitated. My uncle looked at the floor. And Nonna Bea, satisfied, went back upstairs.\nI stood in the hallway with my heart thumping. I thought about Tobin leaning over the line with Biscuit in his arms. I thought about the word friends in the newspaper. Then I pulled on my wellies, grabbed two sandbags from the yard, and stepped out into the storm.\nThe wind nearly knocked me over. The water was icy round my ankles. When I reached the white line, now invisible under the flood, I did not even stop to think. I just kept walking.\nTobin opened the door before I knocked. His mouth fell open. 'Mira? You can't be here!'\n'Then stop wasting time,' I said, and pushed the sandbags at him.\nWe worked for an hour, stacking bags against the doorway, lifting flour sacks onto tables, and pulling plugs out of the walls. Fern worked beside us without a word. Old Mr Hale was upstairs with a twisted ankle, shouting instructions down the stairs, and he did not know who the extra pair of hands belonged to.\nBy the time the tide turned, the water had stopped just below the ovens. We had saved them.\nTobin and I sat on the floury steps, soaked and shivering. 'Why did you come?' he asked.\nI thought about it for a long time. 'Because if it were us,' I said, 'I'd want someone to come.'\nWhen I crept home at dawn, the kitchen light was on. Mum was sitting at the table, waiting. She looked at my wet clothes, and she did not shout. She just put the kettle on, and when she handed me my tea, she squeezed my hand.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, in which month does the storm arrive?",
+       "options": [
+        "September",
+        "August",
+        "October",
+        "December"
+       ],
+       "answer": "September",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why is the Hale bakery in more danger than Castell's?",
+       "options": [
+        "Its side of the lane is lower",
+        "Its door is broken",
+        "It is closer to the church",
+        "It has no windows"
+       ],
+       "answer": "Its side of the lane is lower",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mum suggest taking to the Hales?",
+       "options": [
+        "Sandbags",
+        "Buckets",
+        "Blankets",
+        "Bread"
+       ],
+       "answer": "Sandbags",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how does Nonna Bea respond to the idea of helping?",
+       "options": [
+        "She forbids anyone to cross the line",
+        "She offers to go herself",
+        "She calls the fire brigade",
+        "She says she will think about it"
+       ],
+       "answer": "She forbids anyone to cross the line",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which part of the bakery do Mira and Tobin manage to save from the water?",
+       "options": [],
+       "answer": "the ovens",
+       "accept": [
+        "ovens",
+        "oven"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why does old Mr Hale not know that Mira is helping?",
+       "options": [
+        "He is upstairs with a twisted ankle",
+        "He is asleep",
+        "He is away at the harbour",
+        "Mira is wearing a disguise"
+       ],
+       "answer": "He is upstairs with a twisted ankle",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mum's silent reaction at dawn suggest?",
+       "options": [
+        "She is proud of what Mira did",
+        "She is too angry to speak",
+        "She did not notice Mira had gone",
+        "She plans to tell Nonna Bea"
+       ],
+       "answer": "She is proud of what Mira did",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the writer makes the white line invisible under the flood at the moment Mira crosses it?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 5: Found Out",
+     "synopsis": "The families discover that Mira and Tobin have been meeting, both are forbidden to see each other again, and Mira confronts Nonna Bea about the feud.",
+     "text": "Secrets in a small town are like flour: however carefully you handle them, they get everywhere. It took exactly four days for someone to tell Nonna Bea that a Castell girl had been seen leaving Hale's at dawn, and only one more for someone to mention the library on Tuesdays.\nI came home from school to find the whole family waiting in the kitchen, as if for a trial. Nonna Bea sat at the head of the table, very straight, her hands flat on the wood.\n'Is it true?' she asked.\nThere was no point lying. 'Yes,' I said. 'Tobin is my friend.'\nDario laughed out loud. My uncle shook his head. But Nonna Bea did not laugh or shout. She just looked suddenly old, older than I had ever seen her.\n'You will not see that boy again,' she said. 'You will not go to the library on Tuesdays. You will come straight home from school.'\nAcross the street, I found out later, the same scene was happening in the Hale kitchen, only louder. Tobin was banned from the library too, and from walking down our end of the lane.\nThat night, I could not sleep. At midnight I heard the kettle, and I went down to find Nonna Bea alone at the table, a cup of tea going cold in front of her.\nI sat opposite her. For a while neither of us spoke. Then I said, 'I saw the newspaper. The wedding cake at Penwick Hall. You and Mr Hale were best friends.'\nShe went very still. 'Where did you see that?'\n'Does it matter? Is it true?'\nFor a long moment, I thought she would send me to bed. Instead, she sighed, and the sigh seemed to come from somewhere deep inside her.\n'We were apprentices together,' she said. 'Arthur Hale and I. We were going to open a bakery together one day, the finest in Cornwall. That wedding cake was our first big order. Five tiers. And on the day, it collapsed in front of two hundred guests.'\n'Whose fault was it?'\n'His,' she said at once. Then she paused. 'That is what I have told myself for forty years. He said it was mine. We both said terrible things. He opened his bakery on one side of the lane, and I opened mine on the other, just to prove I could do it without him.'\n'And the line?'\nNonna Bea almost smiled. 'Your grandfather painted it, the summer after. He said if we were going to behave like children, we should have a proper playground rule.'\nI stared at her. All those years of rules, and it had begun as a joke that nobody was laughing at any more.\n'Nonna,' I said gently, 'do you miss him? Your friend?'\nShe did not answer. She picked up her cold tea, put it down again, and went upstairs. But at the door, she stopped, and without turning round, she said, 'Every single day.'",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does the writer compare secrets in a small town to?",
+       "options": [
+        "Flour",
+        "Water",
+        "Seagulls",
+        "Bread"
+       ],
+       "answer": "Flour",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how long does it take for someone to tell Nonna Bea about Mira leaving Hale's at dawn?",
+       "options": [
+        "Four days",
+        "One day",
+        "A week",
+        "A month"
+       ],
+       "answer": "Four days",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what punishment does Nonna Bea give Mira?",
+       "options": [
+        "She must not see Tobin or go to the library on Tuesdays",
+        "She must work in the bakery every weekend",
+        "She must give Biscuit away",
+        "She must apologise to Dario"
+       ],
+       "answer": "She must not see Tobin or go to the library on Tuesdays",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, what is Tobin's grandad's first name?",
+       "options": [],
+       "answer": "Arthur",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, how many tiers did the wedding cake have?",
+       "options": [
+        "Five",
+        "Three",
+        "Four",
+        "Seven"
+       ],
+       "answer": "Five",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who painted the white line on the lane?",
+       "options": [
+        "Mira's grandfather",
+        "Arthur Hale",
+        "Nonna Bea",
+        "The town council"
+       ],
+       "answer": "Mira's grandfather",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Nonna Bea's final reply, 'Every single day', reveal?",
+       "options": [
+        "She still loves and misses her old friend",
+        "She is still angry every day",
+        "She wants to close the bakery",
+        "She has forgiven nobody"
+       ],
+       "answer": "She still loves and misses her old friend",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Nonna Bea has kept the feud going for forty years, even though she misses her friend?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 6: The Missing Note",
+     "synopsis": "Mira and Tobin secretly exchange notes hidden in a library book, but when a note goes missing, a misunderstanding makes Mira believe Tobin has betrayed her.",
+     "text": "Being banned from the library did not stop us from using it. My friend Priya went every Wednesday, and Tobin's friend Sam went every Thursday, so we had a postal system. Mira wrote a note, Priya slipped it inside The Baker's Companion on the third shelf, Sam collected it, and the next day Tobin's reply would come back the same way.\nIn my first note, I told him everything Nonna Bea had said: the apprenticeship, the five-tier cake, the line painted as a joke. His reply came back covered in exclamation marks. My grandad has a photo of the two of them in his wallet! I always thought it was an old girlfriend!\nFor three weeks, the notes went back and forth. We started making a plan. The Penwick Winter Festival was coming in December, and every year there was a lantern parade down Harbour Lane, right over the white line. If we could just get Nonna Bea and Arthur Hale standing in the same place, at the same time, maybe something would happen.\nThen, one Thursday, Priya came back with an empty envelope.\n'There was nothing in the book,' she said. 'Sam said Tobin never sent a reply.'\nThe next week, nothing again. And the week after that, I saw Fern Hale in the newsagent's. She looked straight at me and said, loudly enough for the whole shop to hear, 'Some people should learn to mind their own families.'\nMy face burned all the way home. I told myself it meant nothing, but the doubt crept in like the floodwater under a door. Maybe Tobin had told his family everything. Maybe he had shown them my notes and they had all laughed. Maybe Nonna Bea was right, and a Hale always wanted something.\nI stopped writing. When Priya asked if she should check the book, I said no.\nTwo weeks later, Dario came into the kitchen with a crumpled piece of paper. 'Found this in your coat pocket,' he said, grinning. 'Planning a little lantern party, are we?'\nIt was Tobin's note. The missing note. I grabbed it and read it with shaking hands. Sam had been ill, it explained, so Tobin had given the note to Fern to put in the library book. But Fern must have dropped it, or given it to someone, and somehow it had ended up in my coat pocket on the cloakroom peg at the fair committee meeting, where Dario had found it.\nAt the bottom, Tobin had written: Fern knows. She's furious, but she won't tell. She said she's sick of the fighting too, she just can't say it out loud yet.\nSo Fern's words in the newsagent's had not been a cruel joke at all. They had been a warning, said in the only way she knew how.\nI felt terrible. I had doubted Tobin as easily as Nonna Bea had doubted Arthur Hale. Two weeks of silence, all because of one lost piece of paper.\nThat evening I wrote the longest note of my life. It began with one word, in capital letters: SORRY.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where are the secret notes hidden?",
+       "options": [
+        "Inside The Baker's Companion at the library",
+        "Under the white line",
+        "In the bakery window",
+        "Inside Biscuit's collar"
+       ],
+       "answer": "Inside The Baker's Companion at the library",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, which friend carries Tobin's notes?",
+       "options": [
+        "Sam",
+        "Priya",
+        "Dario",
+        "Fern"
+       ],
+       "answer": "Sam",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Tobin's grandad keep in his wallet?",
+       "options": [
+        "A photo of himself and Nonna Bea",
+        "The torn newspaper cutting",
+        "A recipe for rye bread",
+        "A note from Mira"
+       ],
+       "answer": "A photo of himself and Nonna Bea",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which festival in December are Mira and Tobin planning around?",
+       "options": [],
+       "answer": "the Penwick Winter Festival",
+       "accept": [
+        "Penwick Winter Festival",
+        "Winter Festival",
+        "the Winter Festival"
+       ],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, who finds the missing note in Mira's coat pocket?",
+       "options": [
+        "Dario",
+        "Priya",
+        "Mum",
+        "Nonna Bea"
+       ],
+       "answer": "Dario",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, why did the note go missing?",
+       "options": [
+        "Sam was ill, so Fern carried it and it was lost",
+        "The librarian threw it away",
+        "Tobin forgot to write it",
+        "Dario stole it from the library"
+       ],
+       "answer": "Sam was ill, so Fern carried it and it was lost",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what parallel does Mira draw between herself and Nonna Bea?",
+       "options": [
+        "Both doubted a friend too easily",
+        "Both love baking bread",
+        "Both are afraid of storms",
+        "Both keep secrets from Dario"
+       ],
+       "answer": "Both doubted a friend too easily",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think Fern chose to warn Mira in such an unfriendly way instead of speaking to her kindly?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    },
+    {
+     "title": "Chapter 7: The Bridge Cake",
+     "synopsis": "At the Winter Festival, Mira and Tobin present a cake they have baked together, the grandparents finally talk, and the white line is painted over.",
+     "text": "On the night of the Penwick Winter Festival, Harbour Lane glowed with paper lanterns. Children carried them on sticks, shaped like stars, fish and lighthouses, and the brass band played carols that wobbled in the cold air.\nTobin and I had been baking for two weeks, in secret, in Priya's mum's kitchen. Fern had helped. So, to everyone's astonishment, had Dario, after I showed him the note and the newspaper cutting. 'I still think raisins are fine,' he had grumbled, 'but I suppose forty years is long enough.'\nWhat we made was a cake shaped like a bridge. One end was iced in Castell blue, with a tiny sugar Biscuit sitting on it. The other end was Hale red, with a tiny sugar whale. And in the middle, where the two colours met, we had piped two words in white icing: Best Friends.\nWe carried it out on a board and set it down on a table exactly on top of the white line.\nPeople started to gather. Then the whispers began, and both families came out of their doors. Nonna Bea, wrapped in her best coat. Arthur Hale, leaning on a walking stick, his ankle still not quite healed. They stopped on opposite sides of the table and stared at the cake, and then, slowly, at each other.\nNobody breathed.\n'This is your doing,' Arthur Hale said to Tobin, but his voice was not angry. It was shaky.\n'It's both of ours,' Tobin said, and he stood next to me.\nNonna Bea looked at the words in white icing for a long time. Then she said, very quietly, 'It was the bottom tier, Arthur. The wedding cake. I made the bottom tier too soft. I knew it the moment it started to lean, and I was too proud to say so.'\nArthur Hale blinked. 'I put the columns in crooked,' he said. 'I was in a hurry. I've known that for forty years, Bea.'\nAnd then, to the amazement of the whole street, the two of them started to laugh. It was rusty, cracked laughter, as if it had not been used for a long time. Arthur Hale took the old photograph out of his wallet and held it up, and Nonna Bea put her hand over her mouth.\nNobody ate the cake straight away. We were all too busy watching them.\nThe next morning, something happened that Penwick still talks about. Nonna Bea and Arthur Hale came out onto Harbour Lane with two tins of paint, one blue and one red, and together they painted over the white line until it was gone. Where it had been, they painted a row of little loaves, alternating red and blue, all the way across the cobbles.\nThe bakeries are still two bakeries. Nonna Bea still says Hale rye is too heavy, and Arthur Hale still says Castell buns are too sweet. But now they say it to each other's faces, over a cup of tea, and they are usually smiling.\nAs for Tobin and me, we are working on a new recipe. We cannot agree about the raisins. We probably never will. But that, I have learned, is a very different thing from a feud.",
+     "questions": [
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what shape is the cake that Mira and Tobin bake?",
+       "options": [
+        "A bridge",
+        "A lighthouse",
+        "A whale",
+        "A heart"
+       ],
+       "answer": "A bridge",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, where do Mira and Tobin bake the cake in secret?",
+       "options": [
+        "In Priya's mum's kitchen",
+        "In Castell's bakery",
+        "In Hale's bakery",
+        "At the library"
+       ],
+       "answer": "In Priya's mum's kitchen",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "short",
+       "q": "In the chapter, which two words are piped on the middle of the cake?",
+       "options": [],
+       "answer": "Best Friends",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Nonna Bea admit about the wedding cake?",
+       "options": [
+        "She made the bottom tier too soft",
+        "She dropped the top tier",
+        "She forgot the icing",
+        "She used too much salt"
+       ],
+       "answer": "She made the bottom tier too soft",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Arthur Hale admit about the wedding cake?",
+       "options": [
+        "He put the columns in crooked",
+        "He baked it too long",
+        "He chose the wrong flavour",
+        "He arrived late to the wedding"
+       ],
+       "answer": "He put the columns in crooked",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what do the grandparents paint where the white line used to be?",
+       "options": [
+        "A row of red and blue loaves",
+        "A bridge",
+        "Their names",
+        "A lighthouse"
+       ],
+       "answer": "A row of red and blue loaves",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "mc",
+       "q": "In the chapter, what does Mira mean when she says disagreeing about raisins is 'a very different thing from a feud'?",
+       "options": [
+        "Friends can disagree without hating each other",
+        "Raisins are not important to bakers",
+        "She will never bake with Tobin again",
+        "The feud will start again soon"
+       ],
+       "answer": "Friends can disagree without hating each other",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      },
+      {
+       "subject": "en_read",
+       "type": "open",
+       "q": "Why do you think the writer chose a hopeful ending instead of a tragic one for a story about love and conflict?",
+       "options": [],
+       "answer": "",
+       "accept": [],
+       "hint": "",
+       "text": "",
+       "errors": []
+      }
+     ]
+    }
+   ]
   }
  ]
 }
